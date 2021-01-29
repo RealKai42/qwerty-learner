@@ -66,17 +66,18 @@ function TypingPage() {
 
   return (
     <div className="container flex mx-auto flex-col items-center justify-center">
-      <button onClick={onChangeStart}>{isStart ? '暂停' : '开始'}</button>
-      <span>快捷键 Enter 开始</span>
-      <div>
+      {/* <button onClick={onChangeStart}>{isStart ? '暂停' : '开始'}</button>
+      <span>快捷键 Enter 开始</span> */}
+      {/* <div>
         <select value={selectDict} onChange={onChangeDict}>
           <option value="cet4">CET-4</option>
           <option value="cet6">CET-6</option>
         </select>
-      </div>
-      <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
+      </div> */}
       <Word key={`word-${dict[order].name}`} word={dict[order].name} onFinish={onFinish} isStart={isStart} />
       <Translation key={`trans-${dict[order].name}`} trans={dict[order].trans[0]} />
+
+      <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
     </div>
   )
 }

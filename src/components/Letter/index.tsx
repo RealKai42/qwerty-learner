@@ -1,5 +1,4 @@
 import React from 'react'
-import style from './index.module.css'
 
 export type LetterState = 'normal' | 'correct' | 'error'
 
@@ -8,19 +7,19 @@ const Letter: React.FC<LetterProps> = ({ letter, state }) => {
 
   switch (state) {
     case 'normal':
-      stateClassName = style.normal
+      stateClassName = 'text-gray-600'
       break
     case 'correct':
-      stateClassName = style.correct
+      stateClassName = 'text-green-600'
       break
     case 'error':
-      stateClassName = style.error
+      stateClassName = 'text-red-600'
       break
     default:
-      stateClassName = style.normal
+      stateClassName = 'text-indigo-600'
   }
 
-  return <span className={`${style.letter} ${stateClassName}`}>{letter}</span>
+  return <span className={`m-0 p-0 text-5xl font-serif text-extrabold ${stateClassName}`}>{letter}</span>
 }
 
 export default Letter

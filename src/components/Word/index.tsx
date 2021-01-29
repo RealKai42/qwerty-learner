@@ -70,7 +70,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
   }
 
   return (
-    <div>
+    <div className="py-4">
       {word.split('').map((t, index) => {
         return <Letter key={`${index}-${t}`} letter={t} state={getState(index)} />
       })}
