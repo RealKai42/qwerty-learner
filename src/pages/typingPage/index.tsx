@@ -9,7 +9,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import cet4Dict from 'assets/CET4_N.json'
 import cet6Dict from 'assets/CET6_N.json'
 
-function App() {
+function TypingPage() {
   const [order, setOrder] = useState(0)
   const [selectDict, setSelectDic] = useState('cet4')
   const [dict, setDict] = useState(cet4Dict)
@@ -82,6 +82,6 @@ function App() {
   )
 }
 
-App.propTypes = {}
+TypingPage.propTypes = {}
 
-export default App
+export default TypingPage
