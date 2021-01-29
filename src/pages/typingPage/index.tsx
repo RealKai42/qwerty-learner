@@ -1,5 +1,5 @@
 import React, { ChangeEvent, useCallback, useEffect, useState } from 'react'
-import styles from './App.module.css'
+import styles from './index.module.css'
 import Word from 'components/Word'
 import Translation from 'components/Translation'
 import Speed from 'components/Speed'
