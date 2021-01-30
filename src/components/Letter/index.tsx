@@ -19,7 +19,7 @@ const Letter: React.FC<LetterProps> = ({ letter, state }) => {
       stateClassName = 'text-indigo-600'
   }
 
-  return <span className={`m-0 p-0 text-5xl font-serif text-extrabold ${stateClassName}`}>{letter}</span>
+  return <span className={`m-0 p-0 text-5xl font-mono font-normal ${stateClassName}`}>{letter}</span>
 }
 
 export default Letter
