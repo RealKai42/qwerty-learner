@@ -21,7 +21,7 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart }) => {
       <InfoBox info={inputCount + ''} description="输入数" />
       <InfoBox info={speed + ''} description="速度" />
       <InfoBox info={errorNumber + ''} description="错误数" />
-      <InfoBox info={inputCount + ''} description="正确数" />
+      <InfoBox info={correctCount + ''} description="正确数" />
       <InfoBox info={correctRate + ''} description="正确率" />
     </div>
   )
