@@ -1,6 +1,6 @@
 import React from 'react'
 
-export type LetterState = 'normal' | 'correct' | 'error'
+export type LetterState = 'normal' | 'correct' | 'wrong'
 
 const Letter: React.FC<LetterProps> = ({ letter, state }) => {
   let stateClassName = ''
@@ -12,11 +12,11 @@ const Letter: React.FC<LetterProps> = ({ letter, state }) => {
     case 'correct':
       stateClassName = 'text-green-600'
       break
-    case 'error':
+    case 'wrong':
       stateClassName = 'text-red-600'
       break
     default:
-      stateClassName = 'text-indigo-600'
+      stateClassName = 'text-gray-600'
   }
 
   return <span className={`m-0 p-0 text-5xl font-mono font-normal ${stateClassName}`}>{letter}</span>
