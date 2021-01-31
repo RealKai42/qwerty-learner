@@ -20,7 +20,7 @@ type WordType = {
 }
 
 const App: React.FC = () => {
-  const chapterLength = 15
+  const chapterLength = 20
 
   const [order, setOrder] = useState<number>(0)
   const [selectDict, setSelectDic] = useState<string>('cet4')
