@@ -1,8 +1,9 @@
 import React from 'react'
 import style from './index.module.css'
 
-const Loading = (props) => {
-  const { message } = props
+export type LoadingProps = { message?: String }
+
+const Loading: React.FC<LoadingProps> = ({ message }) => {
   return (
     <div className={style.overlay}>
       <div className={style['child-div']}>
@@ -12,7 +13,5 @@ const Loading = (props) => {
     </div>
   )
 }
-
-Loading.propTypes = {}
 
 export default Loading

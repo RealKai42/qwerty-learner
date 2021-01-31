@@ -7,12 +7,25 @@ import Word from 'components/Word'
 import Translation from 'components/Translation'
 import Speed from 'components/Speed'
 import Modals from 'components/Modals'
+import Loading from 'components/Loading'
 import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
 
-import cet4Dict from 'assets/CET4_N.json'
-import cet6Dict from 'assets/CET6_N.json'
+import cet4 from 'assets/CET4_N.json'
+
+const dicts: any = {
+  cet4: ['CET-4', ''],
+  cet6: ['CET-6', './dicts/CET6.json'],
+  gmat: ['GMAT', './dicts/GMAT.json'],
+  gre: ['GRE', './dicts/GRE.json'],
+  ielts: ['IELTS', './dicts/IELTS.json'],
+  kaoyan: ['考研', './dicts/KaoYan.json'],
+  level4: ['专四', './dicts/Level4.json'],
+  level8: ['专八', './dicts/Level8.json'],
+  sat: ['SAT', './dicts/SAT.json'],
+  toefl: ['TOEFL', './dicts/TOEFL.json'],
+}
 
 type WordType = {
   name: string
@@ -23,8 +36,9 @@ const App: React.FC = () => {
   const chapterLength = 20
 
   const [order, setOrder] = useState<number>(0)
+  const [isLoading, setIsLoading] = useState<boolean>(false)
   const [selectDict, setSelectDic] = useState<string>('cet4')
-  const [dict, setDict] = useState<Array<WordType>>(cet4Dict)
+  const [dict, setDict] = useState<Array<WordType>>(cet4)
 
   const [inputCount, setInputCount] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
@@ -109,20 +123,21 @@ const App: React.FC = () => {
 
   const onChangeDict = (e: ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value
+    setIsLoading(true)
     setSelectDic(value)
 
-    switch (value) {
-      case 'cet4':
-        setDict(cet4Dict)
-        setWordList(cet4Dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
-        break
-      case 'cet6':
-        setDict(cet6Dict)
-        setWordList(cet6Dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
-        break
-      default:
-        setDict(cet4Dict)
-        setWordList(cet4Dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
+    if (value === 'cet4') {
+      setDict(cet4)
+      setChapter(0)
+      setIsLoading(false)
+    } else {
+      fetch(dicts[value][1])
+        .then((response) => response.json())
+        .then((data) => {
+          setDict(data)
+          setChapter(0)
+          setIsLoading(false)
+        })
     }
   }
 
@@ -139,16 +154,16 @@ const App: React.FC = () => {
           secondButtonOnclick={modalSecondBtnOnclick}
         />
       )}
+      {isLoading && <Loading />}
       <div className="h-screen w-full pb-4 flex flex-col items-center">
         <Header>
           <div>
             <select value={selectDict} onChange={onChangeDict}>
-              <option value="cet4" key="cet4">
-                CET-4
-              </option>
-              <option value="cet6" key="cet6">
-                CET-6
-              </option>
+              {Object.keys(dicts).map((key) => (
+                <option value={key} key={key}>
+                  {dicts[key][0]}
+                </option>
+              ))}
             </select>
           </div>
 
@@ -189,8 +204,7 @@ const App: React.FC = () => {
         <Main>
           <div className="container flex mx-auto flex-col items-center justify-center">
             <Word key={`word-${wordList[order].name}`} word={wordList[order].name} onFinish={onFinish} isStart={isStart} />
-            <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans[0]} />
-
+            <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />
             <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
           </div>
         </Main>
