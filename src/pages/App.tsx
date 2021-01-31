@@ -97,6 +97,19 @@ const App: React.FC = () => {
     }
   }, [isStart])
 
+  // When users turn to other tabs or apps, we will stop the timer.
+  useEffect(() => {
+    const onBlur = () => {
+      if (isStart) {
+        setIsStart(false)
+      }
+    }
+    if (isStart) {
+      window.addEventListener('blur', onBlur)
+    }
+    return () => window.removeEventListener('blur', onBlur)
+  })
+
   useEffect(() => {
     setChapterListLength(Math.ceil(dict.length / chapterLength))
   }, [dict])
