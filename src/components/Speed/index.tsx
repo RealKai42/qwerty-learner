@@ -10,7 +10,6 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart }) => {
   const speed = (correctCount / (time === 0 ? 1 : time)).toFixed(2)
   const secondsStirng = seconds < 10 ? '0' + seconds : seconds + ''
   const minutesStirng = minutes < 10 ? '0' + minutes : minutes + ''
-  const errorNumber = inputCount - correctCount
   useEffect(() => {
     isStart ? start() : pause()
   }, [isStart, start, pause])
@@ -20,7 +19,6 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart }) => {
       <InfoBox info={`${minutesStirng}:${secondsStirng}`} description="时间" />
       <InfoBox info={inputCount + ''} description="输入数" />
       <InfoBox info={speed + ''} description="速度" />
-      <InfoBox info={errorNumber + ''} description="错误数" />
       <InfoBox info={correctCount + ''} description="正确数" />
       <InfoBox info={correctRate + ''} description="正确率" />
     </div>
