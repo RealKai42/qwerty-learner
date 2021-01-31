@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useRef, useCallback, useLayoutEffect } from 'react'
 import Letter, { LetterState } from '../Letter'
 import { isLegal } from '../../utils/utils'
+import useSounds from 'hooks/useSounds'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) => {
   word = word.replaceAll(' ', '_')
   const [inputWord, setInputWord] = useState('')
   const [statesList, setStatesList] = useState<LetterState[]>([])
   const [isFinish, setIsFinish] = useState(false)
+  const [playKeySound, playBeepSound, playHintSound] = useSounds()
 
   const onKeydown = useCallback((e) => {
     const char = e.key
@@ -15,8 +17,9 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
       e.preventDefault()
     }
 
-    if (isLegal(char)) setInputWord((value) => (value += char))
-    else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
+    if (isLegal(char)) {
+      setInputWord((value) => (value += char))
+    } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
   }, [])
 
   useEffect(() => {
@@ -40,20 +43,24 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
     const statesList: LetterState[] = []
 
     for (let i = 0; i < wordLength && i < inputWordLength; i++) {
-      if (word[i] === inputWord[i]) statesList.push('correct')
-      else {
+      if (word[i] === inputWord[i]) {
+        statesList.push('correct')
+        playKeySound()
+      } else {
         hasWrong = true
         statesList.push('wrong')
         setInputWord('')
+        playBeepSound()
         break
       }
     }
 
     if (!hasWrong && inputWordLength >= wordLength) {
+      playHintSound()
       setIsFinish(true)
     }
     setStatesList(statesList)
-  }, [inputWord, word])
+  }, [inputWord, word, playKeySound, playBeepSound, playHintSound])
 
   return (
     <div className="py-4">
