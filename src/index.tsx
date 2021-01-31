@@ -4,10 +4,13 @@ import './index.css'
 import App from './pages/App'
 import './icon'
 import reportWebVitals from './reportWebVitals'
+import { CookiesProvider } from 'react-cookie'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CookiesProvider>
+      <App />
+    </CookiesProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 )

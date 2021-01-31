@@ -11,6 +11,7 @@ import Loading from 'components/Loading'
 import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
+import { useCookies } from 'react-cookie'
 
 import cet4 from 'assets/CET4_N.json'
 
@@ -37,7 +38,7 @@ const App: React.FC = () => {
 
   const [order, setOrder] = useState<number>(0)
   const [isLoading, setIsLoading] = useState<boolean>(false)
-  const [selectDict, setSelectDic] = useState<string>('cet4')
+  const [dictName, setDictName] = useState<string>('cet4')
   const [dict, setDict] = useState<Array<WordType>>(cet4)
 
   const [inputCount, setInputCount] = useState<number>(0)
@@ -47,6 +48,8 @@ const App: React.FC = () => {
   const [chapterListLength, setChapterListLength] = useState<number>(10)
   const [chapter, setChapter] = useState<number>(0)
   const [wordList, setWordList] = useState<Array<WordType>>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
+
+  const [cookies, setCookies] = useCookies()
 
   const {
     modalState,
@@ -66,6 +69,25 @@ const App: React.FC = () => {
   })
 
   useEffect(() => {
+    // 首次加载时，读取 cookies
+    const cookieDict = cookies.dict
+    const cookieChapter = parseInt(cookies.chapter)
+    if (cookieDict && cookieChapter) {
+      setModalMessage('提示', `您上次练习到字典 ${dicts[cookieDict][0]} 章节 ${cookieChapter}，是否继续？`, '继续上次练习', '从头开始')
+      setModalHandler(
+        () => {
+          changeDict(cookieDict, cookieChapter)
+          setModalState(false)
+        },
+        () => {
+          setModalState(false)
+        },
+      )
+      setModalState(true)
+    }
+  }, [])
+
+  useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
       if (isLegal(e.key)) setInputCount((count) => count + 1)
     }
@@ -82,6 +104,11 @@ const App: React.FC = () => {
   useEffect(() => {
     setWordList(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
   }, [dict, chapter])
+
+  useEffect(() => {
+    setCookies('chapter', chapter, { path: '/' })
+    setCookies('dict', dictName, { path: '/' })
+  }, [dictName, chapter, setCookies])
 
   const onFinish = () => {
     if (order === wordList.length - 1) {
@@ -121,21 +148,20 @@ const App: React.FC = () => {
     }
   }
 
-  const onChangeDict = (e: ChangeEvent<HTMLSelectElement>) => {
-    const value = e.target.value
+  const changeDict = (dictName: string, chaper: number = 0) => {
     setIsLoading(true)
-    setSelectDic(value)
+    setDictName(dictName)
 
-    if (value === 'cet4') {
+    if (dictName === 'cet4') {
       setDict(cet4)
-      setChapter(0)
+      setChapter(chaper)
       setIsLoading(false)
     } else {
-      fetch(dicts[value][1])
+      fetch(dicts[dictName][1])
         .then((response) => response.json())
         .then((data) => {
           setDict(data)
-          setChapter(0)
+          setChapter(chaper)
           setIsLoading(false)
         })
     }
@@ -158,7 +184,7 @@ const App: React.FC = () => {
       <div className="h-screen w-full pb-4 flex flex-col items-center">
         <Header>
           <div>
-            <select value={selectDict} onChange={onChangeDict}>
+            <select value={dictName} onChange={(e) => changeDict(e.target.value)}>
               {Object.keys(dicts).map((key) => (
                 <option value={key} key={key}>
                   {dicts[key][0]}
