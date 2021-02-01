@@ -19,7 +19,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
         e.preventDefault()
       }
 
-      if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.shiftKey && !e.metaKey) {
+      if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         setInputWord((value) => (value += char))
         playKeySound()
       } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
