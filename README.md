@@ -45,6 +45,7 @@ https://qwerty-learner.vercel.app/
 - 考研英语
 - 专业四级英语
 - 专业八级英语
+- Coder Dict 程序员常用词
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出，亦或者直接联系我
 <br />

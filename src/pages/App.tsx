@@ -26,6 +26,7 @@ const dicts: any = {
   kaoyan: ['考研', './dicts/KaoYan.json'],
   level4: ['专四', './dicts/Level4.json'],
   level8: ['专八', './dicts/Level8.json'],
+  coder: ['Coder Dict', './dicts/it-words.json'],
   sat: ['SAT', './dicts/SAT.json'],
   toefl: ['TOEFL', './dicts/TOEFL.json'],
   jsArray: ['js-array', './dicts/js-array.json'],
