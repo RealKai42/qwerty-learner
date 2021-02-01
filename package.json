@@ -31,6 +31,7 @@
     "postcss": "^7",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
+    "react-app-polyfill": "^2.0.0",
     "react-cookie": "^4.0.3",
     "react-dom": "^17.0.1",
     "react-hotkeys-hook": "^3.0.3",
