@@ -26,6 +26,15 @@ const dicts: any = {
   level8: ['专八', './dicts/Level8.json'],
   sat: ['SAT', './dicts/SAT.json'],
   toefl: ['TOEFL', './dicts/TOEFL.json'],
+  jsArray: ['js-array', './dicts/js-array.json'],
+  jsDate: ['js-date', './dicts/js-date.json'],
+  jsGlobal: ['js-global', './dicts/js-global.json'],
+  jsMapSet: ['js-map-set', './dicts/js-map-set.json'],
+  jsMath: ['js-math', './dicts/js-math.json'],
+  jsNumber: ['js-number', './dicts/js-number.json'],
+  jsObject: ['js-object', './dicts/js-object.json'],
+  jsPromise: ['js-promise', './dicts/js-promise.json'],
+  jsString: ['js-string', './dicts/js-string.json'],
 }
 
 type WordType = {
