@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useCallback, useLayoutEffect } from 'react'
+import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
 import Letter, { LetterState } from '../Letter'
 import { isLegal } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
@@ -19,7 +19,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
         e.preventDefault()
       }
 
-      if (isLegal(char)) {
+      if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.shiftKey && !e.metaKey) {
         setInputWord((value) => (value += char))
         playKeySound()
       } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
@@ -45,6 +45,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
+      setHasWrong(false)
     }
   }, [hasWrong, playBeepSound])
 
