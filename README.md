@@ -47,6 +47,12 @@ https://qwerty-learner.vercel.app/
 - 专业八级英语
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出，亦或者直接联系我
+<br />
+<br />
+
+## 📗 API 词库
+
+- JS 相关 API，Array、Date、Global、Map 等...
 
 <br />
 <br />
