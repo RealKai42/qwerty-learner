@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
 import Letter, { LetterState } from '../Letter'
-import { isLegal } from '../../utils/utils'
+import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) => {
@@ -18,7 +18,9 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
         // 防止用户惯性按空格导致页面跳动
         e.preventDefault()
       }
-
+      if (isChineseSymbol(char)) {
+        alert('您正在使用中文输入法输入，请关闭输入法')
+      }
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         setInputWord((value) => (value += char))
         playKeySound()
