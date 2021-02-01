@@ -1,7 +1,7 @@
 import useSound from 'use-sound'
-import clickSoundFileUrl from '../assets/click.wav'
-import beepSoundFileUrl from '../assets/beep.wav'
-import hintSoundFileUrl from '../assets/hint.wav'
+import clickSoundFileUrl from 'assets/click.wav'
+import beepSoundFileUrl from 'assets/beep.wav'
+import hintSoundFileUrl from 'assets/hint.wav'
 
 export type PlayFunction = ReturnType<typeof useSound>[0]
 

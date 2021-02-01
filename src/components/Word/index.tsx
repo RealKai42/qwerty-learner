@@ -8,19 +8,24 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
   const [inputWord, setInputWord] = useState('')
   const [statesList, setStatesList] = useState<LetterState[]>([])
   const [isFinish, setIsFinish] = useState(false)
+  const [hasWrong, setHasWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
 
-  const onKeydown = useCallback((e) => {
-    const char = e.key
-    if (char === ' ') {
-      // 防止用户惯性按空格导致页面跳动
-      e.preventDefault()
-    }
+  const onKeydown = useCallback(
+    (e) => {
+      const char = e.key
+      if (char === ' ') {
+        // 防止用户惯性按空格导致页面跳动
+        e.preventDefault()
+      }
 
-    if (isLegal(char)) {
-      setInputWord((value) => (value += char))
-    } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
-  }, [])
+      if (isLegal(char)) {
+        setInputWord((value) => (value += char))
+        playKeySound()
+      } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
+    },
+    [playKeySound],
+  )
 
   useEffect(() => {
     if (isStart && !isFinish) window.addEventListener('keydown', onKeydown)
@@ -32,9 +37,16 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
 
   useEffect(() => {
     if (isFinish) {
+      playHintSound()
       onFinish()
     }
-  }, [isFinish])
+  }, [isFinish, playHintSound])
+
+  useEffect(() => {
+    if (hasWrong) {
+      playBeepSound()
+    }
+  }, [hasWrong, playBeepSound])
 
   useLayoutEffect(() => {
     let hasWrong = false,
@@ -45,22 +57,20 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
     for (let i = 0; i < wordLength && i < inputWordLength; i++) {
       if (word[i] === inputWord[i]) {
         statesList.push('correct')
-        playKeySound()
       } else {
         hasWrong = true
         statesList.push('wrong')
         setInputWord('')
-        playBeepSound()
+        setHasWrong(true)
         break
       }
     }
 
     if (!hasWrong && inputWordLength >= wordLength) {
-      playHintSound()
       setIsFinish(true)
     }
     setStatesList(statesList)
-  }, [inputWord, word, playKeySound, playBeepSound, playHintSound])
+  }, [inputWord, word])
 
   return (
     <div className="py-4">
@@ -77,3 +87,8 @@ export type WordProps = {
   isStart: boolean
 }
 export default Word
+
+/**
+ * Warning: Can't perform a React state update on an unmounted component.
+ * 为 use-sound 未解决的 bug
+ */
