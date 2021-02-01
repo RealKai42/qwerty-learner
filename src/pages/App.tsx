@@ -80,7 +80,7 @@ const App: React.FC = () => {
     setIsStart((isStart) => !isStart)
   })
 
-  useHotkeys('shift+m', toggleSound, [sound])
+  useHotkeys('ctrl+m', toggleSound, [sound])
 
   useEffect(() => {
     // 首次加载时，读取 cookies
@@ -242,7 +242,7 @@ const App: React.FC = () => {
               <FontAwesomeIcon icon={sound ? 'volume-up' : 'volume-mute'} fixedWidth />
             </button>
             <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-              <span className="py-1 px-3 text-gray-500 text-xs">开关声音（Shift + M）</span>
+              <span className="py-1 px-3 text-gray-500 text-xs">开关声音（Ctrl + M）</span>
             </div>
           </div>
 
