@@ -228,8 +228,8 @@ const App: React.FC = () => {
             </select>
           </div>
 
-          <div className="group relative ml-auto">
-            <button className="text-indigo-400 text-lg" onClick={toggleSound}>
+          <div className="group relative">
+            <button className={`${sound ? 'text-indigo-400' : 'text-gray-400'} text-lg`} onClick={toggleSound}>
               <FontAwesomeIcon icon={sound ? 'volume-up' : 'volume-mute'} fixedWidth />
             </button>
             <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">

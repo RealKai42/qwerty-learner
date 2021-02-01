@@ -1,11 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useSoundState } from 'components/AppSettings'
-import { useHotkeys } from 'react-hotkeys-hook'
 
 const Header: React.FC = ({ children }) => {
-  const [sound, toggleSound] = useSoundState()
-  useHotkeys('shift+m', toggleSound, [sound])
   return (
     <nav className="w-full container mx-auto px-0 py-6">
       <div className="w-full flex items-center justify-between">

@@ -26,7 +26,7 @@ export function useSoundState(): [status: boolean, toggle: () => void] {
 }
 
 const defaultSettings: AppSettings = {
-  sound: false,
+  sound: true,
 }
 
 export const AppSettingsProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
