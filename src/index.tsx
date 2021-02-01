@@ -6,11 +6,14 @@ import './icon'
 import reportWebVitals from './reportWebVitals'
 import { CookiesProvider } from 'react-cookie'
 import 'react-app-polyfill/stable'
+import { AppSettingsProvider } from 'components/AppSettings'
 
 ReactDOM.render(
   <React.StrictMode>
     <CookiesProvider>
-      <App />
+      <AppSettingsProvider>
+        <App />
+      </AppSettingsProvider>
     </CookiesProvider>
   </React.StrictMode>,
   document.getElementById('root'),

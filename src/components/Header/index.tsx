@@ -1,7 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useSoundState } from 'components/AppSettings'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 const Header: React.FC = ({ children }) => {
+  const [sound, toggleSound] = useSoundState()
+  useHotkeys('shift+m', toggleSound, [sound])
   return (
     <nav className="w-full container mx-auto px-0 py-6">
       <div className="w-full flex items-center justify-between">
@@ -9,15 +13,7 @@ const Header: React.FC = ({ children }) => {
           <FontAwesomeIcon icon={['far', 'keyboard']} className="h-10 fill-current text-indigo-700 pr-2" />
           Qwerty Learner
         </a>
-        <div className="flex w-1/2 justify-end content-center items-center space-x-3">
-          {children}
-          {/* <a href="#/" className="px-4 py-2 text-indigo-500 font-bold no-underline ">
-            Active
-          </a>
-          <a href="#/" className="px-4 py-2 text-indigo-400 no-underline ">
-            Link
-          </a> */}
-        </div>
+        <div className="flex w-1/2 justify-end content-center items-center space-x-3">{children}</div>
       </div>
     </nav>
   )

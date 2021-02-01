@@ -12,6 +12,8 @@ import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
 import { useCookies } from 'react-cookie'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useSoundState } from 'components/AppSettings'
 
 import cet4 from 'assets/CET4_N.json'
 
@@ -50,6 +52,7 @@ const App: React.FC = () => {
   const [wordList, setWordList] = useState<Array<WordType>>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
 
   const [cookies, setCookies] = useCookies()
+  const [sound, toggleSound] = useSoundState()
 
   const {
     modalState,
@@ -67,6 +70,8 @@ const App: React.FC = () => {
   useHotkeys('enter', () => {
     setIsStart((isStart) => !isStart)
   })
+
+  useHotkeys('shift+m', toggleSound, [sound])
 
   useEffect(() => {
     // 首次加载时，读取 cookies
@@ -221,6 +226,15 @@ const App: React.FC = () => {
                 )
               })}
             </select>
+          </div>
+
+          <div className="group relative ml-auto">
+            <button className="text-indigo-400 text-lg" onClick={toggleSound}>
+              <FontAwesomeIcon icon={sound ? 'volume-up' : 'volume-mute'} fixedWidth />
+            </button>
+            <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
+              <span className="py-1 px-3 text-gray-500 text-xs">开关声音（Shift + M）</span>
+            </div>
           </div>
 
           <div className="group relative">
