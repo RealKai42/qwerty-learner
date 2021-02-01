@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Qwerty Learner
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@headlessui/react.svg" alt="License"></a>
+</p>
 
-In the project directory, you can run:
+<div align=center>
+<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/Screenshot.png"/>
+</div>
 
-### `yarn start`
+## 📸 在线访问
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://qwerty-learner.vercel.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ 设计思想
 
-### `yarn test`
+软件设计的目标群体为以英语作为主要工作语言的键盘工作者。部分人会出现输入母语时的打字速度快于英语的情况，因为多年的母语输入练就了非常坚固的肌肉记忆 💪，而英语输入的肌肉记忆相对较弱，易出现输入英语时“提笔忘字”的现象。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+同时为了巩固英语技能，也需要持续的背诵单词 📕，本软件将英语单词的记忆与英语键盘输入的肌肉记忆的锻炼相结合，可以在背诵单词的同时巩固肌肉记忆。
 
-### `yarn build`
+为了避免造成错误的肌肉记忆，设计上如果用户单词输入错误则需要重新输入单词，尽可能确保用户维持正确的肌肉记忆。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+软件也对需要机考英语的人群有一定的帮助。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📕 词库列表
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- CET-4
+- CET-6
+- GMAT
+- GRE
+- IELTS
+- SAT
+- TOEFL
+- 考研英语
+- 专业四级英语
+- 专业八级英语
 
-### `yarn eject`
+如果您需要背诵其他词库，欢迎在 Issue 中提出，亦或者直接联系我
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🎙 功能与建议
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+目前项目处于开发初期，新功能正在持续添加中，如果你对软件有任何功能与建议，欢迎联系我
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+如果你也喜欢本软件的设计思想，欢迎提交 pr，非常感谢你对我们的支持！
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 📩 联系方式
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ZHANG.Kaiyi42@gmail.com
