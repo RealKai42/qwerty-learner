@@ -38,7 +38,6 @@
     "react-scripts": "4.0.1",
     "react-timer-hook": "^2.0.7",
     "source-map-explorer": "^2.5.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.0.3",
     "use-sound": "^2.0.1",
     "web-vitals": "^0.2.4"
@@ -88,5 +87,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
 }
