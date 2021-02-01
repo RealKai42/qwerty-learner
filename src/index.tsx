@@ -5,11 +5,14 @@ import App from './pages/App'
 import './icon'
 import reportWebVitals from './reportWebVitals'
 import { CookiesProvider } from 'react-cookie'
+import { AppSettingsProvider } from 'components/AppSettings'
 
 ReactDOM.render(
   <React.StrictMode>
     <CookiesProvider>
-      <App />
+      <AppSettingsProvider>
+        <App />
+      </AppSettingsProvider>
     </CookiesProvider>
   </React.StrictMode>,
   document.getElementById('root'),
