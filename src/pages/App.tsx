@@ -144,29 +144,35 @@ const App: React.FC = () => {
       if (chapter === chapterListLength - 1) {
         setModalState(true)
         setModalMessage('提示', '您已完成最后一个章节', '重复本章节', '重置到第一章节')
+        setIsStart(false)
         setModalHandler(
           () => {
             setOrder(0)
             setModalState(false)
+            setIsStart(true)
           },
           () => {
             setChapter(0)
             setOrder(0)
             setModalState(false)
+            setIsStart(true)
           },
         )
       } else {
         setModalState(true)
         setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节')
+        setIsStart(false)
         setModalHandler(
           () => {
             setOrder(0)
             setChapter(chapter + 1)
             setModalState(false)
+            setIsStart(true)
           },
           () => {
             setOrder(0)
             setModalState(false)
+            setIsStart(true)
           },
         )
       }
