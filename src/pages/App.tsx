@@ -108,7 +108,7 @@ const App: React.FC = () => {
       window.addEventListener('blur', onBlur)
     }
     return () => window.removeEventListener('blur', onBlur)
-  })
+  }, [isStart])
 
   useEffect(() => {
     setChapterListLength(Math.ceil(dict.length / chapterLength))
