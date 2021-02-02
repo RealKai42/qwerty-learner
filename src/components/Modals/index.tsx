@@ -13,6 +13,9 @@ type ModalsProps = {
   secondButtonClassName?: string
   firstButtonOnclick: (e: MouseEvent) => void
   secondButtonOnclick: (e: MouseEvent) => void
+  thirdButton?: string
+  thirdButtonOnclick?: (e: MouseEvent) => void
+  thirdButtonHotkey?: string
 }
 
 const Modals: React.FC<ModalsProps> = ({
@@ -25,6 +28,9 @@ const Modals: React.FC<ModalsProps> = ({
   secondButtonClassName,
   firstButtonOnclick,
   secondButtonOnclick,
+  thirdButton,
+  thirdButtonOnclick,
+  thirdButtonHotkey = '',
 }) => {
   useHotkeys('enter', () => {
     const e: MouseEvent = (null as unknown) as MouseEvent
@@ -34,6 +40,11 @@ const Modals: React.FC<ModalsProps> = ({
   useHotkeys('shift+enter', () => {
     const e: MouseEvent = (null as unknown) as MouseEvent
     secondButtonOnclick(e)
+  })
+
+  useHotkeys(thirdButtonHotkey, () => {
+    const e: MouseEvent = (null as unknown) as MouseEvent
+    if (thirdButtonOnclick) thirdButtonOnclick(e)
   })
 
   return (
@@ -117,6 +128,21 @@ const Modals: React.FC<ModalsProps> = ({
                     <span className="py-1 px-3 text-gray-500 text-xs">快捷键 Shift + Enter</span>
                   </div>
                 </div>
+
+                {thirdButton && thirdButtonOnclick && (
+                  <div className="group relative">
+                    <button
+                      type="button"
+                      className={`mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm ${secondButtonClassName}`}
+                      onClick={thirdButtonOnclick}
+                    >
+                      {thirdButton}
+                    </button>
+                    <div className="invisible group-hover:visible absolute bottom-full left-1/2 w-40 -ml-20 pl-3 flex items-center justify-center">
+                      <span className="py-1 px-3 text-gray-500 text-xs">快捷键 {thirdButtonHotkey}</span>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           )}

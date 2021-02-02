@@ -63,6 +63,7 @@ const App: React.FC = () => {
 
   const [cookies, setCookies] = useCookies()
   const [sound, toggleSound] = useSoundState()
+  const [wordVisible, setWordVisible] = useState<boolean>(true)
 
   const {
     modalState,
@@ -70,8 +71,12 @@ const App: React.FC = () => {
     content: modalContent,
     firstButton: modalFirstBtn,
     secondButton: modalSecondBtn,
+    thirdButton: modalThirdBtn,
+    thirdBtnHotkey,
+    setThirdBtnHotkey,
     firstButtonOnclick: modalFirstBtnOnclick,
     secondButtonOnclick: modalSecondBtnOnclick,
+    thirdButtonOnclick: modalThirdBtnOnclick,
     setModalState,
     setMessage: setModalMessage,
     setHandler: setModalHandler,
@@ -88,6 +93,9 @@ const App: React.FC = () => {
   )
 
   useHotkeys('ctrl+m', toggleSound, [sound])
+  useHotkeys('ctrl+v', () => {
+    setWordVisible((visibleWord) => !visibleWord)
+  })
 
   useEffect(() => {
     // 首次加载时，读取 cookies
@@ -159,12 +167,20 @@ const App: React.FC = () => {
       // 用户完成当前章节
       if (chapter === chapterListLength - 1) {
         setModalState(true)
-        setModalMessage('提示', '您已完成最后一个章节', '重复本章节', '重置到第一章节')
-        setModalHandler(modalHandlerGenerator(chapter, 0, false), modalHandlerGenerator(0, 0, false))
+        setModalMessage('提示', '您已完成最后一个章节', '重复本章节', '重置到第一章节', '默写本章节')
+        setThirdBtnHotkey('v')
+        setModalHandler(modalHandlerGenerator(chapter, 0, false), modalHandlerGenerator(0, 0, false), () => {
+          modalHandlerGenerator(chapter, 0, false)()
+          setWordVisible(false)
+        })
       } else {
         setModalState(true)
-        setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节')
-        setModalHandler(modalHandlerGenerator(chapter + 1, 0, false), modalHandlerGenerator(chapter, 0, false))
+        setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节', '默写本章节')
+        setThirdBtnHotkey('v')
+        setModalHandler(modalHandlerGenerator(chapter + 1, 0, false), modalHandlerGenerator(chapter, 0, false), () => {
+          modalHandlerGenerator(chapter, 0, false)()
+          setWordVisible(false)
+        })
       }
     } else {
       setOrder((order) => order + 1)
@@ -200,8 +216,11 @@ const App: React.FC = () => {
           content={modalContent}
           firstButton={modalFirstBtn}
           secondButton={modalSecondBtn}
+          thirdButton={modalThirdBtn}
+          thirdButtonHotkey={thirdBtnHotkey}
           firstButtonOnclick={modalFirstBtnOnclick}
           secondButtonOnclick={modalSecondBtnOnclick}
+          thirdButtonOnclick={modalThirdBtnOnclick}
         />
       )}
       {isLoading && <Loading />}
@@ -258,6 +277,21 @@ const App: React.FC = () => {
 
           <div className="group relative">
             <button
+              className={`${wordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+              onClick={(e) => {
+                setWordVisible(!wordVisible)
+                e.currentTarget.blur()
+              }}
+            >
+              <FontAwesomeIcon icon={wordVisible ? 'eye' : 'eye-slash'} fixedWidth />
+            </button>
+            <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
+              <span className="py-1 px-3 text-gray-500 text-xs">开关英语显示（Ctrl + V）</span>
+            </div>
+          </div>
+
+          <div className="group relative">
+            <button
               className={`${
                 isStart ? 'bg-gray-300' : 'bg-indigo-400'
               }  text-white text-lg  w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
@@ -275,7 +309,13 @@ const App: React.FC = () => {
 
         <Main>
           <div className="container flex mx-auto flex-col items-center justify-center">
-            <Word key={`word-${wordList[order].name}`} word={wordList[order].name} onFinish={onFinish} isStart={isStart} />
+            <Word
+              key={`word-${wordList[order].name}`}
+              word={wordList[order].name}
+              onFinish={onFinish}
+              isStart={isStart}
+              wordVisible={wordVisible}
+            />
             <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />
             <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
           </div>

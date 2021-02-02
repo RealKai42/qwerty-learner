@@ -3,7 +3,7 @@ import Letter, { LetterState } from '../Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   word = word.replaceAll(' ', '_')
   const [inputWord, setInputWord] = useState('')
   const [statesList, setStatesList] = useState<LetterState[]>([])
@@ -78,7 +78,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart }) 
   return (
     <div className="py-4">
       {word.split('').map((t, index) => {
-        return <Letter key={`${index}-${t}`} letter={t} state={statesList[index]} />
+        return <Letter key={`${index}-${t}`} visible={wordVisible} letter={t} state={statesList[index]} />
       })}
     </div>
   )
@@ -88,6 +88,7 @@ export type WordProps = {
   word: string
   onFinish: Function
   isStart: boolean
+  wordVisible: boolean
 }
 export default Word
 
