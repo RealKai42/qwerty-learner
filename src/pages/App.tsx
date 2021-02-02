@@ -110,9 +110,15 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
-      if (isLegal(e.key)) setInputCount((count) => count + 1)
+      if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        if (isStart) {
+          setInputCount((count) => count + 1)
+        } else {
+          setIsStart(true)
+        }
+      }
     }
-    if (isStart) window.addEventListener('keydown', onKeydown)
+    window.addEventListener('keydown', onKeydown)
     return () => {
       window.removeEventListener('keydown', onKeydown)
     }
