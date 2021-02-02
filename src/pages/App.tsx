@@ -67,6 +67,7 @@ const App: React.FC = () => {
   const [cookies, setCookies] = useCookies()
   const [sound, toggleSound] = useSoundState()
   const [wordVisible, setWordVisible] = useState<boolean>(true)
+  const [showPhonetic, setShowPhonetic] = useState<boolean>(true)
 
   const {
     modalState,
@@ -95,9 +96,21 @@ const App: React.FC = () => {
     [modalState],
   )
 
-  useHotkeys('ctrl+m', toggleSound, [sound])
-  useHotkeys('ctrl+v', () => {
+  useHotkeys(
+    'ctrl+m',
+    (e) => {
+      e.preventDefault()
+      toggleSound()
+    },
+    [sound],
+  )
+  useHotkeys('ctrl+v', (e) => {
+    e.preventDefault()
     setWordVisible((visibleWord) => !visibleWord)
+  })
+  useHotkeys('ctrl+p', (e) => {
+    e.preventDefault()
+    setShowPhonetic((showPhonetic) => !showPhonetic)
   })
 
   useEffect(() => {
@@ -295,6 +308,21 @@ const App: React.FC = () => {
 
           <div className="group relative">
             <button
+              className={`${showPhonetic ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+              onClick={(e) => {
+                setShowPhonetic(!showPhonetic)
+                e.currentTarget.blur()
+              }}
+            >
+              <FontAwesomeIcon icon="assistive-listening-systems" fixedWidth />
+            </button>
+            <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
+              <span className="py-1 px-3 text-gray-500 text-xs">开关音标显示（Ctrl + P）</span>
+            </div>
+          </div>
+
+          <div className="group relative">
+            <button
               className={`${
                 isStart ? 'bg-gray-300' : 'bg-indigo-400'
               }  text-white text-lg  w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
@@ -320,7 +348,7 @@ const App: React.FC = () => {
               wordVisible={wordVisible}
             />
 
-            {(wordList[order].usphone || wordList[order].ukphone) && (
+            {showPhonetic && (wordList[order].usphone || wordList[order].ukphone) && (
               <Phonetic usphone={wordList[order].usphone} ukphone={wordList[order].ukphone} />
             )}
             <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />

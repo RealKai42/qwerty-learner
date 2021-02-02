@@ -7,7 +7,7 @@ export type PhoneticProps = {
 
 const Phonetic: React.FC<PhoneticProps> = ({ usphone, ukphone }) => {
   return (
-    <div className="text-sm font-normal text-gray-600 text-center space-x-5">
+    <div className="pt-1 text-sm font-normal text-gray-600 text-center space-x-5">
       {usphone.length > 1 && <span>{`US: [${usphone}]`}</span>}
       {ukphone.length > 1 && <span>{`UK:[${ukphone}]`}</span>}
     </div>
