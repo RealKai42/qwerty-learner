@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, ChangeEvent } from 'react'
+import React, { useEffect, useState, useCallback, ChangeEvent, MouseEvent } from 'react'
 import _ from 'lodash'
 import Header from 'components/Header'
 import Main from 'components/Main'
@@ -206,7 +206,13 @@ const App: React.FC = () => {
       <div className="h-screen w-full pb-4 flex flex-col items-center">
         <Header>
           <div>
-            <select value={dictName} onChange={(e) => changeDict(e.target.value)}>
+            <select
+              value={dictName}
+              onChange={(e) => {
+                changeDict(e.target.value)
+                e.target.blur()
+              }}
+            >
               {Object.keys(dicts).map((key) => (
                 <option value={key} key={key}>
                   {dicts[key][0]}
@@ -218,8 +224,9 @@ const App: React.FC = () => {
           <div>
             <select
               value={chapter}
-              onChange={(e: ChangeEvent<HTMLSelectElement>) => {
+              onChange={(e) => {
                 setChapter(parseInt(e.target.value))
+                e.target.blur()
               }}
             >
               {_.range(chapterListLength).map((i) => {
@@ -233,7 +240,13 @@ const App: React.FC = () => {
           </div>
 
           <div className="group relative">
-            <button className={`${sound ? 'text-indigo-400' : 'text-gray-400'} text-lg`} onClick={toggleSound}>
+            <button
+              className={`${sound ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+              onClick={(e) => {
+                toggleSound()
+                e.currentTarget.blur()
+              }}
+            >
               <FontAwesomeIcon icon={sound ? 'volume-up' : 'volume-mute'} fixedWidth />
             </button>
             <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
@@ -246,7 +259,7 @@ const App: React.FC = () => {
               className={`${
                 isStart ? 'bg-gray-300' : 'bg-indigo-400'
               }  text-white text-lg  w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
-              onClick={() => {
+              onClick={(e) => {
                 setIsStart((isStart) => !isStart)
               }}
             >
