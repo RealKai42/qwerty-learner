@@ -39,6 +39,7 @@ https://qwerty-learner.vercel.app/
 - JS API 背诵
 - 速度、正确率等显示
 - 默写模式
+- 音标显示
 
 <br />
 <br />
