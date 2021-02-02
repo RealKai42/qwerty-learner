@@ -8,6 +8,7 @@ import Translation from 'components/Translation'
 import Speed from 'components/Speed'
 import Modals from 'components/Modals'
 import Loading from 'components/Loading'
+import Phonetic from 'components/Phonetic'
 import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
@@ -19,16 +20,16 @@ import cet4 from 'assets/CET4_N.json'
 
 const dicts: any = {
   cet4: ['CET-4', ''],
-  cet6: ['CET-6', './dicts/CET6.json'],
-  gmat: ['GMAT', './dicts/GMAT.json'],
-  gre: ['GRE', './dicts/GRE.json'],
-  ielts: ['IELTS', './dicts/IELTS.json'],
-  kaoyan: ['考研', './dicts/KaoYan.json'],
-  level4: ['专四', './dicts/Level4.json'],
-  level8: ['专八', './dicts/Level8.json'],
+  cet6: ['CET-6', './dicts/CET6_N.json'],
+  gmat: ['GMAT', './dicts/GMAT_N.json'],
+  gre: ['GRE', './dicts/GRE_N.json'],
+  ielts: ['IELTS', './dicts/IELTS_N.json'],
+  kaoyan: ['考研', './dicts/KaoYan_N.json'],
+  level4: ['专四', './dicts/Level4_N.json'],
+  level8: ['专八', './dicts/Level8_N.json'],
+  sat: ['SAT', './dicts/SAT_N.json'],
+  toefl: ['TOEFL', './dicts/TOEFL_N.json'],
   coder: ['Coder Dict', './dicts/it-words.json'],
-  sat: ['SAT', './dicts/SAT.json'],
-  toefl: ['TOEFL', './dicts/TOEFL.json'],
   jsArray: ['js-array', './dicts/js-array.json'],
   jsDate: ['js-date', './dicts/js-date.json'],
   jsGlobal: ['js-global', './dicts/js-global.json'],
@@ -43,6 +44,8 @@ const dicts: any = {
 type WordType = {
   name: string
   trans: string[]
+  usphone: string
+  ukphone: string
 }
 
 const App: React.FC = () => {
@@ -316,6 +319,10 @@ const App: React.FC = () => {
               isStart={isStart}
               wordVisible={wordVisible}
             />
+
+            {(wordList[order].usphone || wordList[order].ukphone) && (
+              <Phonetic usphone={wordList[order].usphone} ukphone={wordList[order].ukphone} />
+            )}
             <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />
             <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
           </div>

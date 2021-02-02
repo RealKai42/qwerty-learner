@@ -76,7 +76,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   }, [inputWord, word])
 
   return (
-    <div className="py-4">
+    <div className="pt-4 pb-1">
       {word.split('').map((t, index) => {
         return (
           <Letter
