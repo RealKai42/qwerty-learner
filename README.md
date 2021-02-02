@@ -33,6 +33,16 @@ https://qwerty-learner.vercel.app/
 <br />
 <br />
 
+## 🛠 功能列表
+
+- 英语词典背诵
+- JS API 背诵
+- 速度、正确率等显示
+- 默写模式
+
+<br />
+<br />
+
 ## 📕 词库列表
 
 - CET-4
