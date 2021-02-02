@@ -78,7 +78,14 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   return (
     <div className="py-4">
       {word.split('').map((t, index) => {
-        return <Letter key={`${index}-${t}`} visible={wordVisible} letter={t} state={statesList[index]} />
+        return (
+          <Letter
+            key={`${index}-${t}`}
+            visible={statesList[index] === 'correct' ? true : wordVisible}
+            letter={t}
+            state={statesList[index]}
+          />
+        )
       })}
     </div>
   )

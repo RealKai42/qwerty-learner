@@ -5,7 +5,7 @@ export type LetterState = 'normal' | 'correct' | 'wrong'
 const Letter: React.FC<LetterProps> = ({ letter, state, visible }) => {
   let stateClassName = ''
 
-  const defaultClassName = visible ? 'text-gray-600' : 'text-transparent'
+  const defaultClassName = 'text-gray-600'
   switch (state) {
     case 'normal':
       stateClassName = defaultClassName
@@ -20,7 +20,11 @@ const Letter: React.FC<LetterProps> = ({ letter, state, visible }) => {
       stateClassName = defaultClassName
   }
 
-  return <span className={`m-0 p-0 text-5xl font-mono font-normal ${stateClassName}`}>{letter}</span>
+  return (
+    <span className={`m-0 p-0 text-5xl font-mono font-normal ${stateClassName}`} style={{ paddingRight: '0.2rem' }}>
+      {visible ? letter : '_'}
+    </span>
+  )
 }
 
 export default Letter
