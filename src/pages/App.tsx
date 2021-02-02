@@ -67,7 +67,7 @@ const App: React.FC = () => {
   const [cookies, setCookies] = useCookies()
   const [sound, toggleSound] = useSoundState()
   const [wordVisible, setWordVisible] = useState<boolean>(true)
-  const [showPhonetic, setShowPhonetic] = useState<boolean>(true)
+  const [showPhonetic, setShowPhonetic] = useState<boolean>(false)
 
   const {
     modalState,
