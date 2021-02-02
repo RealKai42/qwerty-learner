@@ -77,9 +77,15 @@ const App: React.FC = () => {
     setHandler: setModalHandler,
   } = useModals(false, '提示')
 
-  useHotkeys('enter', () => {
-    setIsStart((isStart) => !isStart)
-  })
+  useHotkeys(
+    'enter',
+    () => {
+      if (modalState === false) {
+        setIsStart((isStart) => !isStart)
+      }
+    },
+    [modalState],
+  )
 
   useHotkeys('ctrl+m', toggleSound, [sound])
 
@@ -138,43 +144,25 @@ const App: React.FC = () => {
     setCookies('dict', dictName, { path: '/' })
   }, [dictName, chapter, setCookies])
 
+  const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
+    return () => {
+      setOrder(order)
+      setChapter(chapter)
+      setModalState(modalState)
+    }
+  }
+
   const onFinish = () => {
     if (order === wordList.length - 1) {
       // 用户完成当前章节
       if (chapter === chapterListLength - 1) {
         setModalState(true)
         setModalMessage('提示', '您已完成最后一个章节', '重复本章节', '重置到第一章节')
-        setIsStart(false)
-        setModalHandler(
-          () => {
-            setOrder(0)
-            setModalState(false)
-            setIsStart(true)
-          },
-          () => {
-            setChapter(0)
-            setOrder(0)
-            setModalState(false)
-            setIsStart(true)
-          },
-        )
+        setModalHandler(modalHandlerGenerator(chapter, 0, false), modalHandlerGenerator(0, 0, false))
       } else {
         setModalState(true)
         setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节')
-        setIsStart(false)
-        setModalHandler(
-          () => {
-            setOrder(0)
-            setChapter(chapter + 1)
-            setModalState(false)
-            setIsStart(true)
-          },
-          () => {
-            setOrder(0)
-            setModalState(false)
-            setIsStart(true)
-          },
-        )
+        setModalHandler(modalHandlerGenerator(chapter + 1, 0, false), modalHandlerGenerator(chapter, 0, false))
       }
     } else {
       setOrder((order) => order + 1)
