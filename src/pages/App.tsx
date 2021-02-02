@@ -102,7 +102,7 @@ const App: React.FC = () => {
     const cookieDict = cookies.dict
     const cookieChapter = parseInt(cookies.chapter)
     if (cookieDict && cookieChapter) {
-      setModalMessage('提示', `您上次练习到字典 ${dicts[cookieDict][0]} 章节 ${cookieChapter}，是否继续？`, '继续上次练习', '从头开始')
+      setModalMessage('提示', `您上次练习到字典 ${dicts[cookieDict][0]} 章节 ${cookieChapter + 1}，是否继续？`, '继续上次练习', '从头开始')
       setModalHandler(
         () => {
           changeDict(cookieDict, cookieChapter)
@@ -253,7 +253,7 @@ const App: React.FC = () => {
               {_.range(chapterListLength).map((i) => {
                 return (
                   <option value={i} key={i}>
-                    Chap. {i}
+                    Chap. {i + 1}
                   </option>
                 )
               })}
