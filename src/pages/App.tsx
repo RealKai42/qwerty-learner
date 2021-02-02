@@ -118,14 +118,6 @@ const App: React.FC = () => {
         }
       }
     }
-    window.addEventListener('keydown', onKeydown)
-    return () => {
-      window.removeEventListener('keydown', onKeydown)
-    }
-  }, [isStart])
-
-  // When users turn to other tabs or apps, we will stop the timer.
-  useEffect(() => {
     const onBlur = () => {
       if (isStart) {
         setIsStart(false)
@@ -134,7 +126,11 @@ const App: React.FC = () => {
     if (isStart) {
       window.addEventListener('blur', onBlur)
     }
-    return () => window.removeEventListener('blur', onBlur)
+    window.addEventListener('keydown', onKeydown)
+    return () => {
+      window.removeEventListener('keydown', onKeydown)
+      window.removeEventListener('blur', onBlur)
+    }
   }, [isStart])
 
   useEffect(() => {
@@ -172,7 +168,7 @@ const App: React.FC = () => {
       }
     } else {
       setOrder((order) => order + 1)
-      setCorrectCount((count) => (count += dict[order].name.length))
+      setCorrectCount((count) => count + dict[order].name.trim().length)
     }
   }
 
