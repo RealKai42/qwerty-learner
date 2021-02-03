@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './pages/App'
+import Typing from './pages/Typing'
 import './icon'
 import reportWebVitals from './reportWebVitals'
 import { CookiesProvider } from 'react-cookie'
@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <CookiesProvider>
       <AppSettingsProvider>
-        <App />
+        <Typing />
       </AppSettingsProvider>
     </CookiesProvider>
   </React.StrictMode>,

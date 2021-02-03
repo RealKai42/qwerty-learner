@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, ChangeEvent, MouseEvent } from 'react'
+import React, { useEffect, useState, useCallback, ChangeEvent, MouseEvent, useReducer } from 'react'
 import _ from 'lodash'
 import Header from 'components/Header'
 import Main from 'components/Main'
@@ -14,7 +14,9 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
 import { useCookies } from 'react-cookie'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useSoundState } from 'components/AppSettings'
+import { switcherReducer } from './Switcher/hooks/useSwitcherState'
+import { useAppSettings } from 'components/AppSettings'
+import Switcher from './Switcher'
 
 import cet4 from 'assets/CET4_N.json'
 
@@ -65,9 +67,14 @@ const App: React.FC = () => {
   const [wordList, setWordList] = useState<Array<WordType>>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
 
   const [cookies, setCookies] = useCookies()
-  const [sound, toggleSound] = useSoundState()
-  const [wordVisible, setWordVisible] = useState<boolean>(true)
-  const [showPhonetic, setShowPhonetic] = useState<boolean>(false)
+
+  const appSettings = useAppSettings()
+
+  const [switcherState, switcherStateDispatch] = useReducer(switcherReducer, {
+    sound: appSettings.sound,
+    wordVisible: true,
+    phonetic: false,
+  })
 
   const {
     modalState,
@@ -95,23 +102,6 @@ const App: React.FC = () => {
     },
     [modalState],
   )
-
-  useHotkeys(
-    'ctrl+m',
-    (e) => {
-      e.preventDefault()
-      toggleSound()
-    },
-    [sound],
-  )
-  useHotkeys('ctrl+v', (e) => {
-    e.preventDefault()
-    setWordVisible((visibleWord) => !visibleWord)
-  })
-  useHotkeys('ctrl+p', (e) => {
-    e.preventDefault()
-    setShowPhonetic((showPhonetic) => !showPhonetic)
-  })
 
   useEffect(() => {
     // 首次加载时，读取 cookies
@@ -196,7 +186,7 @@ const App: React.FC = () => {
         setThirdBtnHotkey('v')
         setModalHandler(modalHandlerGenerator(chapter, 0, false), modalHandlerGenerator(0, 0, false), () => {
           modalHandlerGenerator(chapter, 0, false)()
-          setWordVisible(false)
+          switcherStateDispatch({ type: 'wordVisible', state: false })
         })
       } else {
         setModalState(true)
@@ -204,7 +194,7 @@ const App: React.FC = () => {
         setThirdBtnHotkey('v')
         setModalHandler(modalHandlerGenerator(chapter + 1, 0, false), modalHandlerGenerator(chapter, 0, false), () => {
           modalHandlerGenerator(chapter, 0, false)()
-          setWordVisible(false)
+          switcherStateDispatch({ type: 'wordVisible', state: false })
         })
       }
     } else {
@@ -284,52 +274,7 @@ const App: React.FC = () => {
               })}
             </select>
           </div>
-
-          <div className="group relative">
-            <button
-              className={`${sound ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
-              onClick={(e) => {
-                toggleSound()
-                e.currentTarget.blur()
-              }}
-            >
-              <FontAwesomeIcon icon={sound ? 'volume-up' : 'volume-mute'} fixedWidth />
-            </button>
-            <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-              <span className="py-1 px-3 text-gray-500 text-xs">开关声音（Ctrl + M）</span>
-            </div>
-          </div>
-
-          <div className="group relative">
-            <button
-              className={`${wordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
-              onClick={(e) => {
-                setWordVisible(!wordVisible)
-                e.currentTarget.blur()
-              }}
-            >
-              <FontAwesomeIcon icon={wordVisible ? 'eye' : 'eye-slash'} fixedWidth />
-            </button>
-            <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-              <span className="py-1 px-3 text-gray-500 text-xs">开关英语显示（Ctrl + V）</span>
-            </div>
-          </div>
-
-          <div className="group relative">
-            <button
-              className={`${showPhonetic ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
-              onClick={(e) => {
-                setShowPhonetic(!showPhonetic)
-                e.currentTarget.blur()
-              }}
-            >
-              <FontAwesomeIcon icon="assistive-listening-systems" fixedWidth />
-            </button>
-            <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-              <span className="py-1 px-3 text-gray-500 text-xs">开关音标显示（Ctrl + P）</span>
-            </div>
-          </div>
-
+          <Switcher state={switcherState} dispatch={switcherStateDispatch} />
           <div className="group relative">
             <button
               className={`${
@@ -356,10 +301,10 @@ const App: React.FC = () => {
                 word={wordList[order].name}
                 onFinish={onFinish}
                 isStart={isStart}
-                wordVisible={wordVisible}
+                wordVisible={switcherState.wordVisible}
               />
 
-              {showPhonetic && (wordList[order].usphone || wordList[order].ukphone) && (
+              {switcherState.phonetic && (wordList[order].usphone || wordList[order].ukphone) && (
                 <Phonetic usphone={wordList[order].usphone} ukphone={wordList[order].ukphone} />
               )}
               <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />
