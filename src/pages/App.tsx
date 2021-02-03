@@ -117,11 +117,18 @@ const App: React.FC = () => {
     // 首次加载时，读取 cookies
     const cookieDict = cookies.dict
     const cookieChapter = parseInt(cookies.chapter)
+    const cookieOrder = parseInt(cookies.order)
     if (cookieDict && cookieChapter) {
-      setModalMessage('提示', `您上次练习到字典 ${dicts[cookieDict][0]} 章节 ${cookieChapter + 1}，是否继续？`, '继续上次练习', '从头开始')
+      setModalMessage(
+        '提示',
+        `您上次练习到字典 ${dicts[cookieDict][0]} 章节 ${cookieChapter + 1} 第${cookieOrder + 1}个单词 ，是否继续？`,
+        '继续上次练习',
+        '从头开始',
+      )
       setModalHandler(
         () => {
           changeDict(cookieDict, cookieChapter)
+          setOrder(cookieOrder)
           setModalState(false)
         },
         () => {
@@ -163,12 +170,14 @@ const App: React.FC = () => {
 
   useEffect(() => {
     setWordList(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
+    setOrder(0)
   }, [dict, chapter])
 
   useEffect(() => {
     setCookies('chapter', chapter, { path: '/' })
     setCookies('dict', dictName, { path: '/' })
-  }, [dictName, chapter, setCookies])
+    setCookies('order', order, { path: '/' })
+  }, [dictName, chapter, order, setCookies])
 
   const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
     return () => {
