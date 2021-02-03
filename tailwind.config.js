@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     borderRadius: {
-      'large': '0.75rem',
-      'lg':'0.5rem',
+      large: '0.75rem',
+      lg: '0.5rem',
     },
   },
   variants: {
