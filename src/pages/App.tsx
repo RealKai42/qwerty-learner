@@ -348,19 +348,23 @@ const App: React.FC = () => {
         </Header>
 
         <Main>
-          <div className="container flex mx-auto flex-col items-center justify-center">
-            <Word
-              key={`word-${wordList[order].name}`}
-              word={wordList[order].name}
-              onFinish={onFinish}
-              isStart={isStart}
-              wordVisible={wordVisible}
-            />
+          <div className="container h-full relative flex mx-auto flex-col items-center">
+            <div className="h-1/3"></div>
+            <div>
+              <Word
+                key={`word-${wordList[order].name}`}
+                word={wordList[order].name}
+                onFinish={onFinish}
+                isStart={isStart}
+                wordVisible={wordVisible}
+              />
 
-            {showPhonetic && (wordList[order].usphone || wordList[order].ukphone) && (
-              <Phonetic usphone={wordList[order].usphone} ukphone={wordList[order].ukphone} />
-            )}
-            <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />
+              {showPhonetic && (wordList[order].usphone || wordList[order].ukphone) && (
+                <Phonetic usphone={wordList[order].usphone} ukphone={wordList[order].ukphone} />
+              )}
+              <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />
+            </div>
+
             <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
           </div>
         </Main>
