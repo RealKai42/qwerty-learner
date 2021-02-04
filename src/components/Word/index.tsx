@@ -60,14 +60,12 @@ const Word: React.FC<WordProps> = ({
   }, [isFinish, playHintSound])
 
   useEffect(() => {
-    console.log(statesList[statesList.length - 1])
     if (statesList[statesList.length - 1] === 'wrong') {
       playBeepSound()
     }
   }, [statesList, playBeepSound])
 
   useEffect(() => {
-    console.log(statesList)
     if (enableBackspace && enableBlocking) {
       for (let inputState of statesList) {
         if (inputState === 'wrong') {
