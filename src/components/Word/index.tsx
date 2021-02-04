@@ -47,7 +47,6 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
-      setHasWrong(false)
       if (!enableBackspace) {
         setHasWrong(false)
       }
