@@ -65,6 +65,7 @@ const App: React.FC = () => {
   const [chapter, setChapter] = useState<number>(0)
   const [wordList, setWordList] = useState<Array<WordType>>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
   const [enableBackspace, setEnableBackspace] = useState<boolean>(true)
+  const [enableBlocking, setEnableBlocking] = useState<boolean>(false)
 
   const [cookies, setCookies] = useCookies()
 
@@ -303,6 +304,7 @@ const App: React.FC = () => {
                 isStart={isStart}
                 wordVisible={switcherState.wordVisible}
                 enableBackspace={enableBackspace}
+                enableBlocking={enableBlocking}
               />
 
               {switcherState.phonetic && (wordList[order].usphone || wordList[order].ukphone) && (
