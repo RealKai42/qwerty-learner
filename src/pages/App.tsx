@@ -213,20 +213,21 @@ const App: React.FC = () => {
     }
   }
 
-  const changeDict = (dictName: string, chaper: number = 0) => {
+  const changeDict = (dictName: string, chaperInput: number = 0) => {
     setIsLoading(true)
     setDictName(dictName)
 
     if (dictName === 'cet4') {
+      setChapter(chaperInput)
       setDict(cet4)
-      setChapter(chaper)
+
       setIsLoading(false)
     } else {
       fetch(dicts[dictName][1])
         .then((response) => response.json())
         .then((data) => {
+          setChapter(chaperInput)
           setDict(data)
-          setChapter(chaper)
           setIsLoading(false)
         })
     }
@@ -255,7 +256,7 @@ const App: React.FC = () => {
             <select
               value={dictName}
               onChange={(e) => {
-                changeDict(e.target.value)
+                changeDict(e.target.value, 0)
                 e.target.blur()
               }}
             >
