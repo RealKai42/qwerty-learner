@@ -19,10 +19,10 @@ export function useAppSettings(): AppSettings {
   return settings
 }
 
-export function useSetSoundState(): (state: boolean) => void {
+export function useSetSoundState(): [status: boolean, setSound: (state: boolean) => void] {
   const { settings, dispatch } = useContext(AppSettingsContext)
   const setSound = useCallback((state: boolean) => dispatch({ ...settings, sound: state }), [settings, dispatch])
-  return setSound
+  return [settings.sound, setSound]
 }
 
 const defaultSettings: AppSettings = {

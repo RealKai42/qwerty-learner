@@ -1,33 +1,38 @@
 import React, { Dispatch, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { switcherState, switcherActions } from './hooks/useSwitcherState'
-import { useSetSoundState } from 'components/AppSettings'
+import { switcherStateType, switcherDispatchType } from './useSwitcherState'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export type SwitcherPropsType = {
-  state: switcherState
-  dispatch: Dispatch<switcherActions>
+  state: switcherStateType
+  dispatch: switcherDispatchType
 }
 
 const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
-  const setSound = useSetSoundState()
-
-  useEffect(() => {
-    setSound(state.sound)
-  }, [state, setSound])
-
-  useHotkeys('ctrl+m', (e) => {
-    e.preventDefault()
-    dispatch({ type: 'toggleSound' })
-  })
-  useHotkeys('ctrl+v', (e) => {
-    e.preventDefault()
-    dispatch({ type: 'toggleWordVisible' })
-  })
-  useHotkeys('ctrl+p', (e) => {
-    e.preventDefault()
-    dispatch({ type: 'togglePhonetic' })
-  })
+  useHotkeys(
+    'ctrl+m',
+    (e) => {
+      e.preventDefault()
+      dispatch('sound')
+    },
+    [dispatch],
+  )
+  useHotkeys(
+    'ctrl+v',
+    (e) => {
+      e.preventDefault()
+      dispatch('wordVisible')
+    },
+    [dispatch],
+  )
+  useHotkeys(
+    'ctrl+p',
+    (e) => {
+      e.preventDefault()
+      dispatch('phonetic')
+    },
+    [dispatch],
+  )
 
   return (
     <div className="flex items-center justify-center space-x-3">
@@ -35,7 +40,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         <button
           className={`${state.sound ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
-            dispatch({ type: 'sound', state: !state.sound })
+            dispatch('sound')
             e.currentTarget.blur()
           }}
         >
@@ -49,7 +54,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         <button
           className={`${state.wordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
-            dispatch({ type: 'wordVisible', state: !state.wordVisible })
+            dispatch('wordVisible')
             e.currentTarget.blur()
           }}
         >
@@ -63,7 +68,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         <button
           className={`${state.phonetic ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
-            dispatch({ type: 'phonetic', state: !state.phonetic })
+            dispatch('phonetic')
             e.currentTarget.blur()
           }}
         >

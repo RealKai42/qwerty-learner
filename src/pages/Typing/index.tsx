@@ -14,7 +14,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
 import { useCookies } from 'react-cookie'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { switcherReducer } from './Switcher/hooks/useSwitcherState'
+import useSwitcherState from './Switcher/useSwitcherState'
 import { useAppSettings } from 'components/AppSettings'
 import Switcher from './Switcher'
 
@@ -68,13 +68,7 @@ const App: React.FC = () => {
 
   const [cookies, setCookies] = useCookies()
 
-  const appSettings = useAppSettings()
-
-  const [switcherState, switcherStateDispatch] = useReducer(switcherReducer, {
-    sound: appSettings.sound,
-    wordVisible: true,
-    phonetic: false,
-  })
+  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
 
   const {
     modalState,
@@ -186,7 +180,7 @@ const App: React.FC = () => {
         setThirdBtnHotkey('v')
         setModalHandler(modalHandlerGenerator(chapter, 0, false), modalHandlerGenerator(0, 0, false), () => {
           modalHandlerGenerator(chapter, 0, false)()
-          switcherStateDispatch({ type: 'wordVisible', state: false })
+          switcherStateDispatch('wordVisible', false)
         })
       } else {
         setModalState(true)
@@ -194,7 +188,7 @@ const App: React.FC = () => {
         setThirdBtnHotkey('v')
         setModalHandler(modalHandlerGenerator(chapter + 1, 0, false), modalHandlerGenerator(chapter, 0, false), () => {
           modalHandlerGenerator(chapter, 0, false)()
-          switcherStateDispatch({ type: 'wordVisible', state: false })
+          switcherStateDispatch('wordVisible', false)
         })
       }
     } else {
