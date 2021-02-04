@@ -64,6 +64,7 @@ const App: React.FC = () => {
   const [chapterListLength, setChapterListLength] = useState<number>(10)
   const [chapter, setChapter] = useState<number>(0)
   const [wordList, setWordList] = useState<Array<WordType>>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
+  // 这是 enableBackspace
   const [enableBackspace, setEnableBackspace] = useState<boolean>(true)
   const [enableBlocking, setEnableBlocking] = useState<boolean>(true)
 
