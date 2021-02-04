@@ -3,7 +3,7 @@ import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true, enableBackspace = false }) => {
   word = word.replaceAll(' ', '_')
   const [inputWord, setInputWord] = useState('')
   const [statesList, setStatesList] = useState<LetterState[]>([])
@@ -48,6 +48,9 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     if (hasWrong) {
       playBeepSound()
       setHasWrong(false)
+      if (!enableBackspace) {
+        setHasWrong(false)
+      }
     }
   }, [hasWrong, playBeepSound])
 
@@ -63,9 +66,13 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       } else {
         hasWrong = true
         statesList.push('wrong')
-        setInputWord('')
-        setHasWrong(true)
-        break
+        if (!enableBackspace) {
+          setInputWord('')
+          setHasWrong(true)
+          break
+        } else {
+          setHasWrong(true)
+        }
       }
     }
 
@@ -96,6 +103,7 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
+  enableBackspace?: boolean
 }
 export default Word
 
