@@ -13,7 +13,6 @@ import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
 import { useCookies } from 'react-cookie'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { switcherReducer } from './Switcher/hooks/useSwitcherState'
 import { useAppSettings } from 'components/AppSettings'
 import Switcher from './Switcher'
@@ -65,6 +64,8 @@ const App: React.FC = () => {
   const [chapterListLength, setChapterListLength] = useState<number>(10)
   const [chapter, setChapter] = useState<number>(0)
   const [wordList, setWordList] = useState<Array<WordType>>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
+  const [enableBackspace, setEnableBackspace] = useState<boolean>(true)
+  const [enableBlocking, setEnableBlocking] = useState<boolean>(true)
 
   const [cookies, setCookies] = useCookies()
 
@@ -302,6 +303,8 @@ const App: React.FC = () => {
                 onFinish={onFinish}
                 isStart={isStart}
                 wordVisible={switcherState.wordVisible}
+                enableBackspace={enableBackspace}
+                enableBlocking={enableBlocking}
               />
 
               {switcherState.phonetic && (wordList[order].usphone || wordList[order].ukphone) && (
