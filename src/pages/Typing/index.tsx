@@ -79,8 +79,8 @@ const App: React.FC = () => {
       )
       setModalHandler(
         () => {
-          setOrder(cookieOrder)
           changeDict(cookieDict, cookieChapter)
+          setOrder(cookieOrder)
           setModalState(false)
         },
         () => {
