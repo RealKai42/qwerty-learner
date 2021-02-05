@@ -1,20 +1,20 @@
 import { useState } from 'react'
 import { useSetSoundState } from 'components/AppSettings'
 
-export type switcherStateType = {
+export type SwitcherStateType = {
   phonetic: boolean
   wordVisible: boolean
   sound: boolean
 }
 
-export type switcherDispatchType = (type: string, newStatus?: boolean) => void
+export type SwitcherDispatchType = (type: string, newStatus?: boolean) => void
 
-const useSwitcherState = (initialState: { phonetic: boolean; wordVisible: boolean }): [switcherStateType, switcherDispatchType] => {
+const useSwitcherState = (initialState: { phonetic: boolean; wordVisible: boolean }): [SwitcherStateType, SwitcherDispatchType] => {
   const [phonetic, setPhonetic] = useState(initialState.phonetic)
   const [wordVisible, setWordVisible] = useState(initialState.wordVisible)
   const [sound, setSound] = useSetSoundState()
 
-  const dispatch: switcherDispatchType = (type, newStatus) => {
+  const dispatch: SwitcherDispatchType = (type, newStatus) => {
     switch (type) {
       case 'phonetic':
         newStatus === undefined ? setPhonetic(!phonetic) : setPhonetic(newStatus)

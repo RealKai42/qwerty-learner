@@ -1,11 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { switcherStateType, switcherDispatchType } from '../hooks/useSwitcherState'
+import { SwitcherStateType, SwitcherDispatchType } from '../hooks/useSwitcherState'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export type SwitcherPropsType = {
-  state: switcherStateType
-  dispatch: switcherDispatchType
+  state: SwitcherStateType
+  dispatch: SwitcherDispatchType
 }
 
 const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {

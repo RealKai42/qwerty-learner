@@ -17,7 +17,7 @@ import DictSwitcher from './DictSwitcher'
 import { dictList, useWordList } from './hooks/useWordList'
 import { useLocalStorage } from 'react-use'
 
-type localStorage = {
+type LocalStorage = {
   dictName: string
   chapter: number
   order: number
@@ -33,7 +33,7 @@ const App: React.FC = () => {
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
 
-  const [localStorage, setLocalStorage] = useLocalStorage<localStorage>('Dict')
+  const [localStorage, setLocalStorage] = useLocalStorage<LocalStorage>('Dict')
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const [dictName, chapter, chapterListLength, wordList, wordListDispatch] = useWordList(chapterLength)
 

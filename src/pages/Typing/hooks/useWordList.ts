@@ -31,11 +31,11 @@ export type WordType = {
   ukphone: string
 }
 
-export type wordListDispatchType = (type: string, payload?: any, callback?: any) => void
+export type WordListDispatchType = (type: string, payload?: any, callback?: any) => void
 
 export const useWordList = (
   InputchapterLength: number,
-): [dictName: string, chapter: number, chapterListLength: number, wordList: WordType[], dispatch: wordListDispatchType] => {
+): [dictName: string, chapter: number, chapterListLength: number, wordList: WordType[], dispatch: WordListDispatchType] => {
   const [chapterLength, ,] = useState(InputchapterLength)
   const [dictName, setDictName] = useState<string>('cet4')
   const [chapter, setChapter] = useState<number>(0)
@@ -43,7 +43,7 @@ export const useWordList = (
   const [wordList, setWordList] = useState<WordType[]>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
   const [chapterListLength, setChapterListLength] = useState<number>(Math.ceil(cet4.length / chapterLength))
 
-  const dispatch: wordListDispatchType = useCallback(
+  const dispatch: WordListDispatchType = useCallback(
     (type, payload, callback) => {
       switch (type) {
         case 'setDictName':
