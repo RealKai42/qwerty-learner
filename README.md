@@ -71,10 +71,11 @@ https://qwerty-learner.vercel.app/
 
 ## 🎙 功能与建议
 
-目前项目处于开发初期，新功能正在持续添加中，如果你对软件有任何功能与建议，欢迎联系我
+目前项目处于开发初期，新功能正在持续添加中，如果你对软件有任何功能与建议，欢迎在 Issues 中提出
+
+项目的进展与未来计划在 [Issue](!https://github.com/Kaiyiwing/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Qwerty Learner 的未来感兴趣，欢迎参与讨论。
 
 如果你也喜欢本软件的设计思想，欢迎提交 pr，非常感谢你对我们的支持！
-
 <br />
 <br />
 
