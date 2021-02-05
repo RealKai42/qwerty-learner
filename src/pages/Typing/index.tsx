@@ -67,7 +67,6 @@ const App: React.FC = () => {
 
   useEffect(() => {
     // 首次加载时，读取 cookies
-    console.log(localStorage)
     if (localStorage) {
       const cookieDict = localStorage.dictName
       const cookieChapter = localStorage.chapter
@@ -107,9 +106,8 @@ const App: React.FC = () => {
         setIsStart(false)
       }
     }
-    if (isStart) {
-      window.addEventListener('blur', onBlur)
-    }
+
+    window.addEventListener('blur', onBlur)
     window.addEventListener('keydown', onKeydown)
     return () => {
       window.removeEventListener('keydown', onKeydown)
