@@ -31,17 +31,12 @@ export type WordType = {
   ukphone: string
 }
 
-export type WordListState = {
-  dictName: string
-  chapter: number
-  chapterListLength: number
-}
 export type wordListDispatchType = (type: string, payload?: any, callback?: any) => void
 
 export const useWordList = (
   InputchapterLength: number,
 ): [dictName: string, chapter: number, chapterListLength: number, wordList: WordType[], dispatch: wordListDispatchType] => {
-  const [chapterLength, setChapterLength] = useState(InputchapterLength)
+  const [chapterLength, ,] = useState(InputchapterLength)
   const [dictName, setDictName] = useState<string>('cet4')
   const [chapter, setChapter] = useState<number>(0)
   const [dict, setDict] = useState(cet4)

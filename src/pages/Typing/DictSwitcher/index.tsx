@@ -1,4 +1,4 @@
-import { WordListState, dictList } from '../hooks/useWordList'
+import { dictList } from '../hooks/useWordList'
 import _ from 'lodash'
 
 export type DictSwitcherPropsType = {
