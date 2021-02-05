@@ -4,17 +4,14 @@ import './index.css'
 import Typing from './pages/Typing'
 import './icon'
 import reportWebVitals from './reportWebVitals'
-import { CookiesProvider } from 'react-cookie'
 import 'react-app-polyfill/stable'
 import { AppSettingsProvider } from 'components/AppSettings'
 
 ReactDOM.render(
   <React.StrictMode>
-    <CookiesProvider>
-      <AppSettingsProvider>
-        <Typing />
-      </AppSettingsProvider>
-    </CookiesProvider>
+    <AppSettingsProvider>
+      <Typing />
+    </AppSettingsProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 )

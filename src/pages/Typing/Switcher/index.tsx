@@ -1,6 +1,6 @@
 import React, { Dispatch, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { switcherStateType, switcherDispatchType } from './useSwitcherState'
+import { switcherStateType, switcherDispatchType } from '../hooks/useSwitcherState'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export type SwitcherPropsType = {

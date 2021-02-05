@@ -12,42 +12,16 @@ import Phonetic from 'components/Phonetic'
 import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
-import { useCookies } from 'react-cookie'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import useSwitcherState from './Switcher/useSwitcherState'
-import { useAppSettings } from 'components/AppSettings'
+import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
+import DictSwitcher from './DictSwitcher'
+import { dictList, useWordList } from './hooks/useWordList'
+import { useLocalStorage } from 'react-use'
 
-import cet4 from 'assets/CET4_N.json'
-
-const dicts: any = {
-  cet4: ['CET-4', ''],
-  cet6: ['CET-6', './dicts/CET6_N.json'],
-  gmat: ['GMAT', './dicts/GMAT_N.json'],
-  gre: ['GRE', './dicts/GRE_N.json'],
-  ielts: ['IELTS', './dicts/IELTS_N.json'],
-  kaoyan: ['考研', './dicts/KaoYan_N.json'],
-  level4: ['专四', './dicts/Level4_N.json'],
-  level8: ['专八', './dicts/Level8_N.json'],
-  sat: ['SAT', './dicts/SAT_N.json'],
-  toefl: ['TOEFL', './dicts/TOEFL_N.json'],
-  coder: ['Coder Dict', './dicts/it-words.json'],
-  jsArray: ['js-array', './dicts/js-array.json'],
-  jsDate: ['js-date', './dicts/js-date.json'],
-  jsGlobal: ['js-global', './dicts/js-global.json'],
-  jsMapSet: ['js-map-set', './dicts/js-map-set.json'],
-  jsMath: ['js-math', './dicts/js-math.json'],
-  jsNumber: ['js-number', './dicts/js-number.json'],
-  jsObject: ['js-object', './dicts/js-object.json'],
-  jsPromise: ['js-promise', './dicts/js-promise.json'],
-  jsString: ['js-string', './dicts/js-string.json'],
-}
-
-type WordType = {
-  name: string
-  trans: string[]
-  usphone: string
-  ukphone: string
+type localStorage = {
+  dictName: string
+  chapter: number
+  order: number
 }
 
 const App: React.FC = () => {
@@ -55,20 +29,14 @@ const App: React.FC = () => {
 
   const [order, setOrder] = useState<number>(0)
   const [isLoading, setIsLoading] = useState<boolean>(false)
-  const [dictName, setDictName] = useState<string>('cet4')
-  const [dict, setDict] = useState<Array<WordType>>(cet4)
 
   const [inputCount, setInputCount] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
 
-  const [chapterListLength, setChapterListLength] = useState<number>(10)
-  const [chapter, setChapter] = useState<number>(0)
-  const [wordList, setWordList] = useState<Array<WordType>>(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
-
-  const [cookies, setCookies] = useCookies()
-
+  const [localStorage, setLocalStorage] = useLocalStorage<localStorage>('Dict')
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
+  const [dictName, chapter, chapterListLength, wordList, wordListDispatch] = useWordList(chapterLength)
 
   const {
     modalState,
@@ -99,20 +67,21 @@ const App: React.FC = () => {
 
   useEffect(() => {
     // 首次加载时，读取 cookies
-    const cookieDict = cookies.dict
-    const cookieChapter = parseInt(cookies.chapter)
-    const cookieOrder = parseInt(cookies.order)
-    if (cookieDict && cookieChapter) {
+    console.log(localStorage)
+    if (localStorage) {
+      const cookieDict = localStorage.dictName
+      const cookieChapter = localStorage.chapter
+      const cookieOrder = localStorage.order
       setModalMessage(
         '提示',
-        `您上次练习到字典 ${dicts[cookieDict][0]} 章节 ${cookieChapter + 1} 第${cookieOrder + 1}个单词 ，是否继续？`,
+        `您上次练习到字典 ${dictList[cookieDict][0]} 章节 ${cookieChapter + 1} 第${cookieOrder + 1}个单词 ，是否继续？`,
         '继续上次练习',
         '从头开始',
       )
       setModalHandler(
         () => {
-          changeDict(cookieDict, cookieChapter)
           setOrder(cookieOrder)
+          changeDict(cookieDict, cookieChapter)
           setModalState(false)
         },
         () => {
@@ -149,24 +118,17 @@ const App: React.FC = () => {
   }, [isStart])
 
   useEffect(() => {
-    setChapterListLength(Math.ceil(dict.length / chapterLength))
-  }, [dict])
-
-  useEffect(() => {
-    setWordList(dict.slice(chapter * chapterLength, (chapter + 1) * chapterLength))
-    setOrder(0)
-  }, [dict, chapter])
-
-  useEffect(() => {
-    setCookies('chapter', chapter, { path: '/' })
-    setCookies('dict', dictName, { path: '/' })
-    setCookies('order', order, { path: '/' })
-  }, [dictName, chapter, order, setCookies])
+    setLocalStorage({
+      dictName,
+      chapter,
+      order: order,
+    })
+  }, [dictName, chapter, order, setLocalStorage])
 
   const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
     return () => {
       setOrder(order)
-      setChapter(chapter)
+      wordListDispatch('setChapter', chapter)
       setModalState(modalState)
     }
   }
@@ -193,28 +155,31 @@ const App: React.FC = () => {
       }
     } else {
       setOrder((order) => order + 1)
-      setCorrectCount((count) => count + dict[order].name.trim().length)
+      setCorrectCount((count) => count + wordList[order].name.trim().length)
     }
   }
 
-  const changeDict = (dictName: string, chaper: number = 0) => {
-    setIsLoading(true)
-    setDictName(dictName)
+  const changeDict = useCallback(
+    (dictName: string, chapter?: number) => {
+      setOrder(0)
+      setIsLoading(true)
+      wordListDispatch('setDictName', dictName, () => {
+        setIsLoading(false)
+        if (chapter !== undefined) {
+          wordListDispatch('setChapter', chapter)
+        }
+      })
+    },
+    [wordListDispatch],
+  )
 
-    if (dictName === 'cet4') {
-      setDict(cet4)
-      setChapter(chaper)
-      setIsLoading(false)
-    } else {
-      fetch(dicts[dictName][1])
-        .then((response) => response.json())
-        .then((data) => {
-          setDict(data)
-          setChapter(chaper)
-          setIsLoading(false)
-        })
-    }
-  }
+  const changeChapter = useCallback(
+    (chapter: number) => {
+      setOrder(0)
+      wordListDispatch('setChapter', chapter)
+    },
+    [wordListDispatch],
+  )
 
   return (
     <>
@@ -235,39 +200,13 @@ const App: React.FC = () => {
       {isLoading && <Loading />}
       <div className="h-screen w-full pb-4 flex flex-col items-center">
         <Header>
-          <div>
-            <select
-              value={dictName}
-              onChange={(e) => {
-                changeDict(e.target.value)
-                e.target.blur()
-              }}
-            >
-              {Object.keys(dicts).map((key) => (
-                <option value={key} key={key}>
-                  {dicts[key][0]}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <select
-              value={chapter}
-              onChange={(e) => {
-                setChapter(parseInt(e.target.value))
-                e.target.blur()
-              }}
-            >
-              {_.range(chapterListLength).map((i) => {
-                return (
-                  <option value={i} key={i}>
-                    Chap. {i + 1}
-                  </option>
-                )
-              })}
-            </select>
-          </div>
+          <DictSwitcher
+            dictName={dictName}
+            chapter={chapter}
+            chapterListLength={chapterListLength}
+            changeDict={changeDict}
+            changeChapter={changeChapter}
+          />
           <Switcher state={switcherState} dispatch={switcherStateDispatch} />
           <div className="group relative">
             <button
