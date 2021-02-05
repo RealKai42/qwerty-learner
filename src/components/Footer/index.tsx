@@ -18,4 +18,4 @@ const Footer: React.FC = () => {
   )
 }
 
-export default Footer
+export default React.memo(Footer)
