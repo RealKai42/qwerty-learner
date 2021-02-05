@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent } from 'react'
+import { useState, MouseEvent } from 'react'
 
 export const useModals = (initialState: boolean, initialTitle: string) => {
   const [modalState, setModalState] = useState<boolean>(initialState)

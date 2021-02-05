@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
-import Letter, { LetterState } from '../Letter'
+import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
 
@@ -42,6 +42,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       playHintSound()
       onFinish()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFinish, playHintSound])
 
   useEffect(() => {
@@ -76,7 +77,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   }, [inputWord, word])
 
   return (
-    <div className="pt-4 pb-1">
+    <div className="pt-4 pb-1 flex items-center justify-center">
       {word.split('').map((t, index) => {
         return (
           <Letter
