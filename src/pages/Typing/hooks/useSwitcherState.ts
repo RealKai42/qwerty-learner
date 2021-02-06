@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useSetSoundState } from 'components/AppSettings'
+import { useSetSoundState } from 'store/AppState'
 
 export type SwitcherStateType = {
   phonetic: boolean
