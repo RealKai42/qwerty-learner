@@ -20,6 +20,10 @@ export type UseWordListResult = {
   setChapterNumber: (index: number) => void
 }
 
+/**
+ * Use word lists from the current selected dictionary.
+ * When the data is loading, this returns `undefined`.
+ */
 export function useWordList(): UseWordListResult | undefined {
   const selectedDictionary = useSelectedDictionary()
   const [currentChapter, setCurrentChapter] = useState<number>(0)

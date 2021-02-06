@@ -5,6 +5,10 @@ export type Dictionary = {
   length: number
 }
 
+/**
+ * Built-in dictionaries in an array.
+ * Why arrays? Because it keeps the order across browsers.
+ */
 export const dictionaries: Dictionary[] = [
   { id: 'cet4', name: 'CET-4', url: '', length: 2607 },
   { id: 'cet6', name: 'CET-6', url: './dicts/CET6_N.json', length: 2345 },
@@ -28,4 +32,7 @@ export const dictionaries: Dictionary[] = [
   { id: 'jsString', name: 'js-string', url: './dicts/js-string.json', length: 32 },
 ]
 
+/**
+ * An object-map from dictionary IDs to dictionary themselves.
+ */
 export const idDictionaryMap: Record<string, Dictionary> = Object.fromEntries(dictionaries.map((dict) => [dict.id, dict]))
