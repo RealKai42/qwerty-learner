@@ -14,4 +14,4 @@ const Loading: React.FC<LoadingProps> = ({ message }) => {
   )
 }
 
-export default Loading
+export default React.memo(Loading)

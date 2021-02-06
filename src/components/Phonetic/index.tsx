@@ -14,4 +14,4 @@ const Phonetic: React.FC<PhoneticProps> = ({ usphone, ukphone }) => {
   )
 }
 
-export default Phonetic
+export default React.memo(Phonetic)

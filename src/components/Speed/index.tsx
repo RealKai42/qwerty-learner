@@ -4,7 +4,6 @@ import InfoBox from './InfoBox'
 
 const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart }) => {
   const { seconds, minutes, hours, days, start, pause } = useStopwatch({ autoStart: false })
-
   const correctRate = (correctCount / (inputCount === 0 ? 1 : inputCount)).toFixed(2)
   const time = seconds + minutes * 60 + hours * 60 * 60 + days * 12 * 60 * 60
   const speed = (correctCount / (time === 0 ? 1 : time)).toFixed(2)
@@ -31,4 +30,4 @@ export type SpeedProps = {
   isStart: boolean
 }
 
-export default Speed
+export default React.memo(Speed)

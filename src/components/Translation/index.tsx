@@ -10,4 +10,4 @@ export type TranslationProps = {
   trans: string
 }
 
-export default Translation
+export default React.memo(Translation)

@@ -11,7 +11,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ info, description }) => {
   )
 }
 
-export default InfoBox
+export default React.memo(InfoBox)
 
 export type InfoBoxProps = {
   info: string

@@ -27,7 +27,7 @@ const Letter: React.FC<LetterProps> = ({ letter, state, visible }) => {
   )
 }
 
-export default Letter
+export default React.memo(Letter)
 
 export type LetterProps = {
   letter: string
