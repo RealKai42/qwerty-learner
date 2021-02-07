@@ -162,6 +162,10 @@ const App: React.FC = () => {
     (dictName: string) => {
       setOrder(0)
       setIsLoading(true)
+      // Need to stop the game, in order to prevent pronounce wrong word.
+      // Besides, it makes sense because users are about to stop when they change dict/chapter.
+      // Otherwise, introduce a new parameter to allow pronunciation begin.
+      setIsStart(false)
       wordListDispatch('setDictName', dictName, () => {
         setIsLoading(false)
       })
@@ -172,6 +176,7 @@ const App: React.FC = () => {
   const changeChapter = useCallback(
     (chapter: number) => {
       setOrder(0)
+      setIsStart(false) // Same story as above.
       wordListDispatch('setChapter', chapter)
     },
     [wordListDispatch],

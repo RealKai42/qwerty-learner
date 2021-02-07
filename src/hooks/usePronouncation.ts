@@ -1,17 +1,21 @@
 import { useAppSettings } from 'components/AppSettings'
 import { noop } from 'lodash'
+import { useEffect, useState } from 'react'
 
 declare type PronounceFunction = () => void
 
 const pronunciationApi = 'http://dict.youdao.com/dictvoice?audio='
 
-export default function usepronunciationSound(word: string): [PronounceFunction] {
-  // SAFETY: We are trying to build an hook here.
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function usePronunciationSound(word: string): PronounceFunction {
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
   const { pronunciation } = useAppSettings()
   const pronounceFunction = () => {
-    var audio = new Audio(pronunciationApi + word)
-    audio.play()
+    audio?.pause()
+    setAudio(new Audio(pronunciationApi + word))
   }
-  return pronunciation ? [pronounceFunction] : [noop]
+
+  useEffect(() => {
+    audio?.play()
+  }, [audio])
+  return pronunciation ? pronounceFunction : noop
 }
