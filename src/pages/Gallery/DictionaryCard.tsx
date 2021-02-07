@@ -8,7 +8,7 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const setDictionary = useSetDictionary()
   return (
     <button
-      className="relative p-4 w-48 bg-gray-50 border border-gray-300 shadow-lg rounded-md text-left overflow-hidden"
+      className="relative p-4 w-48 bg-gray-50 border border-gray-300 shadow-lg rounded-md text-left overflow-hidden focus:outline-none "
       onClick={setDictionary.bind(null, dictionary.id)}
     >
       <p className="mb-1 text-xl text-gray-800">{dictionary.name}</p>
