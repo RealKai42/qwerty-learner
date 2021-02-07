@@ -62,7 +62,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         <button
           className={`${state.pronunciation ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
-            dispatch('sound')
+            dispatch('pronunciation')
             e.currentTarget.blur()
           }}
         >
