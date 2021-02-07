@@ -79,6 +79,10 @@ https://qwerty-learner.vercel.app/
 <br />
 <br />
 
-## 📩 联系方式
+## ☕️ Buy me a coffe
 
-ZHANG.Kaiyi42@gmail.com
+非常感谢大家使用 Qwerty Learner, 目前该网站由三个人用业余时间在维护，我们希望在未来购买独立的域名(目前使用 vercel 部署)，并购买服务器以方便国内用户访问与云同步存储数据。
+
+如果您喜欢我们软件，非常感谢您对我们未来的支持!
+
+<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png"/>
