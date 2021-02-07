@@ -179,7 +179,6 @@ const App: React.FC = () => {
 
   return (
     <>
-      {/* {console.log(wordList, order, wordList[order])} */}
       {modalState && (
         <Modals
           state={modalState}

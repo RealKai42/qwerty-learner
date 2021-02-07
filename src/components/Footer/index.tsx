@@ -1,20 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Donate from 'components/Donate'
 
 const Footer: React.FC = () => {
+  const [showDonate, setShowDonate] = useState<boolean>(false)
   return (
-    <div className="w-full text-sm text-center pb-1 ease-in" onClick={(e) => e.currentTarget.blur()}>
-      <a href="https://github.com/Kaiyiwing/qwerty-learner">
-        <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 mr-3" />
-      </a>
-      <a href="mailto:ZHANG.Kaiyi42@gmail.com" onClick={(e) => e.currentTarget.blur()}>
-        <FontAwesomeIcon icon={['fas', 'envelope']} className="text-gray-500 mr-3" />
-      </a>
+    <>
+      {showDonate && <Donate state={showDonate} buttonOnclick={() => setShowDonate(false)} />}
+      <div className="w-full text-sm text-center pb-1 ease-in" onClick={(e) => e.currentTarget.blur()}>
+        <a href="https://github.com/Kaiyiwing/qwerty-learner">
+          <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 mr-3" />
+        </a>
 
-      <a className="text-gray-500 no-underline hover:no-underline" href="#/" onClick={(e) => e.currentTarget.blur()}>
-        @ Qwerty Learner
-      </a>
-    </div>
+        <a
+          href="/#"
+          onClick={(e) => {
+            setShowDonate(true)
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon={['fas', 'coffee']} className="text-gray-500 mr-3" />
+        </a>
+
+        <a href="mailto:ZHANG.Kaiyi42@gmail.com" onClick={(e) => e.currentTarget.blur()}>
+          <FontAwesomeIcon icon={['fas', 'envelope']} className="text-gray-500 mr-3" />
+        </a>
+        <a className="text-gray-500 no-underline hover:no-underline" href="#/" onClick={(e) => e.currentTarget.blur()}>
+          @ Qwerty Learner
+        </a>
+      </div>
+    </>
   )
 }
 

@@ -8,7 +8,19 @@ import {
   faEye,
   faEyeSlash,
   faAssistiveListeningSystems,
+  faCoffee,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faKeyboard, faBookReader, faGithub, faEnvelope, faVolumeUp, faVolumeMute, faEye, faEyeSlash, faAssistiveListeningSystems)
+library.add(
+  faKeyboard,
+  faBookReader,
+  faGithub,
+  faEnvelope,
+  faVolumeUp,
+  faVolumeMute,
+  faEye,
+  faEyeSlash,
+  faAssistiveListeningSystems,
+  faCoffee,
+)
