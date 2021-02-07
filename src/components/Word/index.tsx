@@ -7,6 +7,7 @@ import style from './index.module.css'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   word = word.replace(new RegExp(' ', 'g'), '_')
+
   const [inputWord, setInputWord] = useState('')
   const [statesList, setStatesList] = useState<LetterState[]>([])
   const [isFinish, setIsFinish] = useState(false)
@@ -19,6 +20,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       if (char === ' ') {
         // 防止用户惯性按空格导致页面跳动
         e.preventDefault()
+        setInputWord((value) => (value += '_'))
+        playKeySound()
       }
       if (isChineseSymbol(char)) {
         alert('您正在使用中文输入法输入，请关闭输入法')
