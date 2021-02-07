@@ -1,12 +1,14 @@
 import React from 'react'
 import Layout from 'components/Layout'
-import DictionaryCard from './DictionaryCard'
+import DictionaryGroup from './DictionaryGroup'
 import Header from 'components/Header'
 import { NavLink } from 'react-router-dom'
 import { useDictionaries } from 'store/AppState'
+import { groupBy } from 'lodash'
 
 const GalleryPage: React.FC = () => {
-  const [dictionaries, setDictionary] = useDictionaries()
+  const dictionaries = useDictionaries()
+  const groups = Object.entries(groupBy(dictionaries, (dict) => dict.category))
   return (
     <Layout>
       <Header>
@@ -14,11 +16,11 @@ const GalleryPage: React.FC = () => {
           返回练习
         </NavLink>
       </Header>
-      <main className="mt-auto mb-auto grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
-        {dictionaries.map((dict) => (
-          <DictionaryCard key={dict.id} dictionary={dict} onClick={setDictionary} />
+      <div className="mt-auto mb-auto space-y-4">
+        {groups.map(([name, items]) => (
+          <DictionaryGroup key={name} title={name} dictionaries={items} />
         ))}
-      </main>
+      </div>
     </Layout>
   )
 }

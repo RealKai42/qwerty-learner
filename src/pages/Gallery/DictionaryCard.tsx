@@ -1,20 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { noop } from 'lodash'
 import React from 'react'
 import { Dictionary } from 'resources/dictionary'
-import { useSelectedDictionary } from 'store/AppState'
+import { useSelectedDictionary, useSetDictionary } from 'store/AppState'
 
-const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary, onClick = noop }) => {
+const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const selectedDictionary = useSelectedDictionary()
+  const setDictionary = useSetDictionary()
   return (
-    <button className="p-4 bg-indigo-50 shadow-lg rounded-md text-left" onClick={() => onClick(dictionary.id)}>
-      <div className="flex items-center">
-        <p className="text-xl text-gray-900">{dictionary.name}</p>
-        {selectedDictionary.id === dictionary.id ? (
-          <FontAwesomeIcon className="ml-auto text-2xl text-green-600" icon={['fas', 'check-circle']} fixedWidth />
-        ) : null}
-      </div>
+    <button
+      className="relative p-4 bg-gray-50 border border-gray-300 shadow-lg rounded-md text-left overflow-hidden"
+      onClick={setDictionary.bind(null, dictionary.id)}
+    >
+      <p className="text-xl text-gray-900">{dictionary.name}</p>
       <p className="font-bold text-gray-600">{dictionary.length} 词</p>
+      {selectedDictionary.id === dictionary.id ? (
+        <FontAwesomeIcon
+          className="absolute -right-4 -bottom-4 text-6xl text-green-500 opacity-60"
+          icon={['fas', 'check-circle']}
+          fixedWidth
+        />
+      ) : null}
     </button>
   )
 }
@@ -23,7 +28,6 @@ DictionaryCard.displayName = 'DictionaryCard'
 
 export type DictionaryCardProps = {
   dictionary: Dictionary
-  onClick?: (id: string) => void
 }
 
 export default DictionaryCard

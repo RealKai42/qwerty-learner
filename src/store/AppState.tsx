@@ -1,4 +1,5 @@
-import React, { useCallback, useContext, useState } from 'react'
+import React, { useCallback, useContext } from 'react'
+import { useLocalStorage } from 'react-use'
 import { dictionaries, Dictionary } from 'resources/dictionary'
 
 export type PronunciationType = 'us' | 'uk' | false
@@ -40,17 +41,19 @@ export function useSetSoundState(): [status: boolean, setSound: (state: boolean)
 /**
  * Use all available dictionaries.
  */
-export function useDictionaries(): [Dictionary[], (id: string) => void] {
+export function useDictionaries(): Dictionary[] {
+  const { state } = useContext(AppStateContext)
+  return state.dictionaries
+}
+
+export function useSetDictionary(): (id: string) => void {
   const { state, dispatch } = useContext(AppStateContext)
-  return [
-    state.dictionaries,
-    (id: string) => {
-      const found = dictionaries.find((dict) => dict.id === id)
-      if (found !== undefined) {
-        dispatch({ ...state, selectedDictionary: found })
-      }
-    },
-  ]
+  return (id: string) => {
+    const found = dictionaries.find((dict) => dict.id === id)
+    if (found !== undefined) {
+      dispatch({ ...state, selectedDictionary: found })
+    }
+  }
 }
 
 /**
@@ -75,6 +78,6 @@ const defaultState: AppState = {
 }
 
 export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
-  const [state, setState] = useState<AppState>(defaultState)
-  return <AppStateContext.Provider value={{ state: state, dispatch: setState }}>{children}</AppStateContext.Provider>
+  const [state, setState] = useLocalStorage<AppState>('state', defaultState)
+  return <AppStateContext.Provider value={{ state: state!, dispatch: setState }}>{children}</AppStateContext.Provider>
 }
