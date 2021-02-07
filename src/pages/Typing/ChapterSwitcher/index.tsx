@@ -1,13 +1,12 @@
 import _ from 'lodash'
 
-export type DictSwitcherPropsType = {
-  dictName: string
+export type ChapterSwitcherPropsType = {
   chapter: number
   chapterListLength: number
   changeChapter: (index: number) => void
 }
 
-const DictSwitcher: React.FC<DictSwitcherPropsType> = ({ chapter, chapterListLength, changeChapter }) => {
+const ChapterSwitcher: React.FC<ChapterSwitcherPropsType> = ({ chapter, chapterListLength, changeChapter }) => {
   return (
     <div className="flex items-center justify-center space-x-3">
       <div>
@@ -31,4 +30,4 @@ const DictSwitcher: React.FC<DictSwitcherPropsType> = ({ chapter, chapterListLen
   )
 }
 
-export default DictSwitcher
+export default ChapterSwitcher

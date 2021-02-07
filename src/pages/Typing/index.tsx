@@ -13,7 +13,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'hooks/useModals'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
-import DictSwitcher from './DictSwitcher'
+import ChapterSwitcher from './ChapterSwitcher'
 import { useWordList } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
@@ -150,8 +150,7 @@ const App: React.FC = () => {
               选择词典
             </NavLink>
             <PronunciationSwitcher state={pronunciation.toString()} changeState={changePronuciation} />
-            <DictSwitcher
-              dictName={wordList.dictName}
+            <ChapterSwitcher
               chapter={wordList.chapter}
               chapterListLength={wordList.chapterListLength}
               changeChapter={wordList.setChapterNumber}
