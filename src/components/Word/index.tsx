@@ -2,7 +2,6 @@ import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
 import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
-import { motion } from 'framer-motion'
 import style from './index.module.css'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {

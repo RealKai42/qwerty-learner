@@ -1,6 +1,5 @@
 import React, { MouseEvent } from 'react'
 import { Transition } from '@headlessui/react'
-import { useHotkeys } from 'react-hotkeys-hook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import alipay from 'assets/alipay.png'
 
