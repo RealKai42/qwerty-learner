@@ -85,4 +85,4 @@ https://qwerty-learner.vercel.app/
 
 如果您喜欢我们软件，非常感谢您对我们未来的支持!
 
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png"/>
+<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
