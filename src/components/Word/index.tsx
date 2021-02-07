@@ -3,6 +3,7 @@ import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
 import style from './index.module.css'
+import usepronunciationSound from 'hooks/usePronouncation'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   word = word.replace(new RegExp(' ', 'g'), '_')
@@ -12,6 +13,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
+  const [playPronounce] = usepronunciationSound(word)
 
   const onKeydown = useCallback(
     (e) => {
@@ -58,6 +60,14 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       }, 300)
     }
   }, [hasWrong, playBeepSound])
+
+  useLayoutEffect(() => {
+    if (inputWord.length === 0) {
+      playPronounce()
+    }
+    // SAFETY: Don't depend on `playPronounce`! It will cost audio play again and again.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inputWord])
 
   useLayoutEffect(() => {
     let hasWrong = false,

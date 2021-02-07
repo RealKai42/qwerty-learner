@@ -33,6 +33,14 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     },
     [dispatch],
   )
+  useHotkeys(
+    'ctrl+n',
+    (e) => {
+      e.preventDefault()
+      dispatch('pronunciation')
+    },
+    [dispatch],
+  )
 
   return (
     <div className="flex items-center justify-center space-x-3">
@@ -48,6 +56,20 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         </button>
         <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
           <span className="py-1 px-3 text-gray-500 text-xs">开关声音（Ctrl + M）</span>
+        </div>
+      </div>
+      <div className="group relative">
+        <button
+          className={`${state.pronunciation ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          onClick={(e) => {
+            dispatch('sound')
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon={state.pronunciation ? 'microphone' : 'microphone-slash'} fixedWidth />
+        </button>
+        <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
+          <span className="py-1 px-3 text-gray-500 text-xs">开关发音（Ctrl + N）</span>
         </div>
       </div>
       <div className="group relative">

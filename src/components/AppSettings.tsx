@@ -5,6 +5,7 @@ import React, { useCallback, useContext, useState } from 'react'
  */
 export type AppSettings = {
   sound: boolean
+  pronunciation: boolean
 }
 
 export type AppSettingsContextData = {
@@ -25,8 +26,15 @@ export function useSetSoundState(): [status: boolean, setSound: (state: boolean)
   return [settings.sound, setSound]
 }
 
+export function useSetPronunciationState(): [status: boolean, setpronunciation: (state: boolean) => void] {
+  const { settings, dispatch } = useContext(AppSettingsContext)
+  const setpronunciation = useCallback((state: boolean) => dispatch({ ...settings, pronunciation: state }), [settings, dispatch])
+  return [settings.pronunciation, setpronunciation]
+}
+
 const defaultSettings: AppSettings = {
   sound: true,
+  pronunciation: true,
 }
 
 export const AppSettingsProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
