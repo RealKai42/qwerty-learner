@@ -78,7 +78,8 @@ const App: React.FC = () => {
       )
       setModalHandler(
         () => {
-          changeDict(cookieDict, cookieChapter)
+          changeDict(cookieDict)
+          changeChapter(cookieChapter)
           setOrder(cookieOrder)
           setModalState(false)
         },
@@ -158,14 +159,11 @@ const App: React.FC = () => {
   }
 
   const changeDict = useCallback(
-    (dictName: string, chapter?: number) => {
+    (dictName: string) => {
       setOrder(0)
       setIsLoading(true)
       wordListDispatch('setDictName', dictName, () => {
         setIsLoading(false)
-        if (chapter !== undefined) {
-          wordListDispatch('setChapter', chapter)
-        }
       })
     },
     [wordListDispatch],
@@ -181,6 +179,7 @@ const App: React.FC = () => {
 
   return (
     <>
+      {/* {console.log(wordList, order, wordList[order])} */}
       {modalState && (
         <Modals
           state={modalState}
