@@ -8,11 +8,12 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const setDictionary = useSetDictionary()
   return (
     <button
-      className="relative p-4 bg-gray-50 border border-gray-300 shadow-lg rounded-md text-left overflow-hidden"
+      className="relative p-4 w-48 bg-gray-50 border border-gray-300 shadow-lg rounded-md text-left overflow-hidden"
       onClick={setDictionary.bind(null, dictionary.id)}
     >
-      <p className="text-xl text-gray-900">{dictionary.name}</p>
-      <p className="font-bold text-gray-600">{dictionary.length} 词</p>
+      <p className="mb-1 text-xl text-gray-800">{dictionary.name}</p>
+      <p className="mb-1 text-xs text-gray-900">{dictionary.description}</p>
+      <p className="text-sm font-bold text-gray-600">{dictionary.length} 词</p>
       {selectedDictionary.id === dictionary.id ? (
         <FontAwesomeIcon
           className="absolute -right-4 -bottom-4 text-6xl text-green-500 opacity-60"

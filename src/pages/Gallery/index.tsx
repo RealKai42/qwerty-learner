@@ -16,7 +16,7 @@ const GalleryPage: React.FC = () => {
           返回练习
         </NavLink>
       </Header>
-      <div className="mt-auto mb-auto space-y-4">
+      <div className="p-4 mt-auto mb-auto max-w-screen-xl max-h-full space-y-4 overflow-y-auto">
         {groups.map(([name, items]) => (
           <DictionaryGroup key={name} title={name} dictionaries={items} />
         ))}
