@@ -2,9 +2,11 @@ import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
 import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
+import { motion } from 'framer-motion'
+import style from './index.module.css'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
-  word = word.replaceAll(' ', '_')
+  word = word.replace(new RegExp(' ', 'g'), '_')
   const [inputWord, setInputWord] = useState('')
   const [statesList, setStatesList] = useState<LetterState[]>([])
   const [isFinish, setIsFinish] = useState(false)
@@ -48,7 +50,10 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
-      setHasWrong(false)
+      setTimeout(() => {
+        setInputWord('')
+        setHasWrong(false)
+      }, 300)
     }
   }, [hasWrong, playBeepSound])
 
@@ -64,7 +69,6 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       } else {
         hasWrong = true
         statesList.push('wrong')
-        setInputWord('')
         setHasWrong(true)
         break
       }
@@ -77,7 +81,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   }, [inputWord, word])
 
   return (
-    <div className="pt-4 pb-1 flex items-center justify-center">
+    <div className={`pt-4 pb-1 flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
       {word.split('').map((t, index) => {
         return (
           <Letter
