@@ -53,9 +53,9 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 <br />
 <br />
 
-### 音标显示
+### 音标显示、发音功能
 
-方便用户在记忆单词时，同时记忆读音。未来也会支持单词自动发音的功能
+方便用户在记忆单词时，同时记忆读音与音标。
 
 <div align=center>
 <img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/phonetic.jpeg"/>
