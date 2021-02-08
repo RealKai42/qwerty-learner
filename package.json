@@ -2,7 +2,7 @@
   "name": "qwerty-learner",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kaiyiwing.github.io/qwerty-learner",
+  "homepage": ".",
   "dependencies": {
     "@craco/craco": "^6.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

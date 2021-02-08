@@ -25,6 +25,9 @@ const Footer: React.FC = () => {
         <a href="mailto:ZHANG.Kaiyi42@gmail.com" onClick={(e) => e.currentTarget.blur()}>
           <FontAwesomeIcon icon={['fas', 'envelope']} className="text-gray-500 mr-3" />
         </a>
+        <a href="https://kaiyiwing.gitee.io/qwerty-learner/" className="text-gray-500">
+          国内访问
+        </a>
         <a className="text-gray-500 no-underline hover:no-underline" href="#/" onClick={(e) => e.currentTarget.blur()}>
           @ Qwerty Learner
         </a>
