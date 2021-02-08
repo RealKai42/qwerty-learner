@@ -9,13 +9,25 @@ const pronunciationApi = 'http://dict.youdao.com/dictvoice?audio='
 export default function usePronunciationSound(word: string): PronounceFunction {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
   const { pronunciation } = useAppSettings()
-  const pronounceFunction = () => {
+  const ukPronounceFunction = () => {
     audio?.pause()
-    setAudio(new Audio(pronunciationApi + word))
+    setAudio(new Audio(pronunciationApi + word + '&type=1'))
+  }
+
+  const usPronounceFunction = () => {
+    audio?.pause()
+    setAudio(new Audio(pronunciationApi + word + '&type=2'))
   }
 
   useEffect(() => {
     audio?.play()
   }, [audio])
-  return pronunciation ? pronounceFunction : noop
+  switch (pronunciation) {
+    case false:
+      return noop
+    case 'uk':
+      return ukPronounceFunction
+    case 'us':
+      return usPronounceFunction
+  }
 }
