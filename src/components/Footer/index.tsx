@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
 
         <div className="group relative inline-block">
           <a href="https://kaiyiwing.gitee.io/qwerty-learner/" className="text-gray-500  mr-3" title="墙内节点">
-            🇨🇳
+            🇨🇳🇨🇳
           </a>
           <div className="invisible group-hover:visible absolute bottom-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
             <span className="py-1 px-3 text-gray-500 text-xs">墙内镜像</span>
