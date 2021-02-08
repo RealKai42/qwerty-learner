@@ -20,4 +20,4 @@ jobs:
           gitee-username: KaiyiWing
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           gitee-repo: qwerty-learner
-          branch: master
+          branch: gh-pages
