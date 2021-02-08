@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import cet4 from 'assets/CET4_T.json'
-import { useSelectedDictionary } from 'store/AppState'
+import { useSelectedChapter, useSelectedDictionary } from 'store/AppState'
 import useSWR from 'swr'
 
 export type Word = {
@@ -26,7 +25,7 @@ export type UseWordListResult = {
  */
 export function useWordList(): UseWordListResult | undefined {
   const selectedDictionary = useSelectedDictionary()
-  const [currentChapter, setCurrentChapter] = useState<number>(0)
+  const [currentChapter, setCurrentChapter] = useSelectedChapter()
   const { data: wordList } = useSWR([selectedDictionary.id, selectedDictionary.url], fetchWordList)
 
   return wordList === undefined

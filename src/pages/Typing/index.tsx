@@ -13,7 +13,6 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'hooks/useModals'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
-import ChapterSwitcher from './ChapterSwitcher'
 import { useWordList } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
@@ -146,21 +145,24 @@ const App: React.FC = () => {
       ) : (
         <Layout>
           <Header>
-            <NavLink className="bg-indigo-400 text-white text-lg px-6 py-1 rounded-lg focus:outline-none" to="/gallery">
-              选择词典
-            </NavLink>
+            <div className="group relative">
+              <NavLink
+                className="text-lg px-4 py-1 rounded-lg transition-colors duration-150 ease-in-out focus:outline-none hover:bg-indigo-400 hover:text-white"
+                to="/gallery"
+              >
+                {wordList.dictName} 第 {wordList.chapter + 1} 章
+              </NavLink>
+              <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
+                <span className="py-1 px-3 text-gray-500 text-xs">切换</span>
+              </div>
+            </div>
             <PronunciationSwitcher state={pronunciation.toString()} changeState={changePronuciation} />
-            <ChapterSwitcher
-              chapter={wordList.chapter}
-              chapterListLength={wordList.chapterListLength}
-              changeChapter={wordList.setChapterNumber}
-            />
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
             <div className="group relative">
               <button
                 className={`${
                   isStart ? 'bg-gray-300' : 'bg-indigo-400'
-                }  text-white text-lg  w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
+                }  text-white text-lg w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
                 onClick={(e) => {
                   setIsStart((isStart) => !isStart)
                 }}

@@ -18,6 +18,10 @@ export type AppState = {
    */
   selectedDictionary: Dictionary
   pronunciation: PronunciationType
+  /**
+   * The selected chapter number.
+   */
+  selectedChapter: number
 }
 
 export type AppStateData = {
@@ -51,7 +55,9 @@ export function useSetDictionary(): (id: string) => void {
   return (id: string) => {
     const found = dictionaries.find((dict) => dict.id === id)
     if (found !== undefined) {
-      dispatch({ ...state, selectedDictionary: found })
+      // TODO: remove magic number here.
+      const lastChapterNumber = Math.floor(found.length / 20)
+      dispatch({ ...state, selectedDictionary: found, selectedChapter: Math.min(state.selectedChapter, lastChapterNumber) })
     }
   }
 }
@@ -69,12 +75,20 @@ export function useSetPronunciationState(): [status: PronunciationType, setpronu
   const setpronunciation = useCallback((pronunciation: PronunciationType) => dispatch({ ...state, pronunciation }), [state, dispatch])
   return [state.pronunciation, setpronunciation]
 }
+/**
+ * Use the current selected chapter.
+ */
+export function useSelectedChapter(): [number, (chapter: number) => void] {
+  const { state, dispatch } = useContext(AppStateContext)
+  return [state.selectedChapter, (selectedChapter: number): void => dispatch({ ...state, selectedChapter })]
+}
 
 const defaultState: AppState = {
   sound: true,
   dictionaries,
   selectedDictionary: dictionaries[0],
   pronunciation: 'us',
+  selectedChapter: 0,
 }
 
 export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
