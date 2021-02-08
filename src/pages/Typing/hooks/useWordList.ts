@@ -22,6 +22,8 @@ export const dictList: any = {
   jsObject: ['js-object', './dicts/js-object.json'],
   jsPromise: ['js-promise', './dicts/js-promise.json'],
   jsString: ['js-string', './dicts/js-string.json'],
+  nodePath: ['Node-path', './dicts/Node-path.json'],
+  nodeFs: ['Node-fs', './dicts/Node-fs.json'],
 }
 
 export type WordType = {

@@ -104,6 +104,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 ## 📗 API 词库
 
 - JS 相关 API，Array、Date、Global、Map 等...
+- Node.js 相关 API，fs、path 等...
 
 <br />
 <br />
