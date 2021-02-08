@@ -33,14 +33,6 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     },
     [dispatch],
   )
-  useHotkeys(
-    'ctrl+n',
-    (e) => {
-      e.preventDefault()
-      dispatch('pronunciation')
-    },
-    [dispatch],
-  )
 
   return (
     <div className="flex items-center justify-center space-x-3">

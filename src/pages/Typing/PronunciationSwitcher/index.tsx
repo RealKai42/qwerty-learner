@@ -14,9 +14,9 @@ const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state
             e.target.blur()
           }}
         >
-          <option value="false">关闭发音</option>
-          <option value="us">美式发音</option>
-          <option value="uk">英式发音</option>
+          <option value="false">关闭</option>
+          <option value="us">美音</option>
+          <option value="uk">英音</option>
         </select>
       </div>
     </div>

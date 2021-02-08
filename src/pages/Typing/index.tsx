@@ -38,7 +38,7 @@ const App: React.FC = () => {
   const [localStorage, setLocalStorage] = useLocalStorage<LocalStorage>('Dict')
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const [dictName, chapter, chapterListLength, wordList, wordListDispatch] = useWordList(chapterLength)
-  const [pronuncition, pronuncitionDispatch] = usePronunciation()
+  const [pronunciation, pronunciationDispatch] = usePronunciation()
   const {
     modalState,
     title: modalTitle,
@@ -183,11 +183,11 @@ const App: React.FC = () => {
     },
     [wordListDispatch],
   )
-  const changeState = useCallback(
+  const changePronuciation = useCallback(
     (state: string) => {
-      pronuncitionDispatch(state)
+      pronunciationDispatch(state)
     },
-    [pronuncitionDispatch],
+    [pronunciationDispatch],
   )
 
   return (
@@ -216,7 +216,7 @@ const App: React.FC = () => {
             changeDict={changeDict}
             changeChapter={changeChapter}
           />
-          <PronunciationSwitcher state={pronuncition.toString()} changeState={changeState} />
+          <PronunciationSwitcher state={pronunciation.toString()} changeState={changePronuciation} />
           <Switcher state={switcherState} dispatch={switcherStateDispatch} />
           <div className="group relative">
             <button
