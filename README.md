@@ -16,7 +16,11 @@
 
 ## 📸 在线访问
 
-https://qwerty-learner.vercel.app/
+Vercel: https://qwerty-learner.vercel.app/  
+GitHub Pages: https://kaiyiwing.github.io/qwerty-learner/  
+Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
+
+国内用户建议使用 Gitee 访问
 
 <br />
 
