@@ -1,17 +1,17 @@
 import { useState, useCallback } from 'react'
-import cet4 from 'assets/CET4_N.json'
+import cet4 from 'assets/CET4_T.json'
 
 export const dictList: any = {
   cet4: ['CET-4', ''],
-  cet6: ['CET-6', './dicts/CET6_N.json'],
-  gmat: ['GMAT', './dicts/GMAT_N.json'],
-  gre: ['GRE', './dicts/GRE_N.json'],
-  ielts: ['IELTS', './dicts/IELTS_N.json'],
-  kaoyan: ['考研', './dicts/KaoYan_N.json'],
-  level4: ['专四', './dicts/Level4_N.json'],
-  level8: ['专八', './dicts/Level8_N.json'],
-  sat: ['SAT', './dicts/SAT_N.json'],
-  toefl: ['TOEFL', './dicts/TOEFL_N.json'],
+  cet6: ['CET-6', './dicts/CET6_T.json'],
+  gmat: ['GMAT', './dicts/GMAT_T.json'],
+  gre: ['GRE', './dicts/GRE_T.json'],
+  ielts: ['IELTS', './dicts/IELTS_T.json'],
+  kaoyan: ['考研', './dicts/KaoYan_T.json'],
+  level4: ['专四', './dicts/Level4_T.json'],
+  level8: ['专八', './dicts/Level8_T.json'],
+  sat: ['SAT', './dicts/SAT_T.json'],
+  toefl: ['TOEFL', './dicts/TOEFL_T.json'],
   coder: ['Coder Dict', './dicts/it-words.json'],
   jsArray: ['js-array', './dicts/js-array.json'],
   jsDate: ['js-date', './dicts/js-date.json'],
