@@ -30,17 +30,51 @@ https://qwerty-learner.vercel.app/
 
 软件也对需要机考英语的人群有一定的帮助。
 
+**For Coder**：
+
+内置了程序员工作常用单词的词库，方便练习工作中常用的单词、提高输入速度。也内置了 JS API 的练习，帮助以 JS 为主要工作语言的程序员练习常用的 API，其他语言的 API 正在逐步添加中...
+
+<div align=center>
+<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/coder.png"/>
+</div>
+
 <br />
 <br />
 
 ## 🛠 功能列表
 
-- 英语词典背诵
-- JS API 背诵
-- 速度、正确率等显示
-- 默写模式
-- 音标显示
+### 词库
 
+内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及 JS API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库，目前使用的词库来自于开源项目：https://github.com/kajweb/dict
+<br />
+<br />
+
+### 音标显示
+
+方便用户在记忆单词时，同时记忆读音。未来也会支持单词自动发音的功能
+
+<div align=center>
+<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/phonetic.jpeg"/>
+</div>
+<br />
+<br />
+### 默写模式
+
+在用户完成一个章节的练习后，会弹出选项是否默写本章，方便用户巩固本章学习的单词。
+
+<div align=center>
+<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/dictation.png"/>
+</div>
+<br />
+<br />
+
+### 速度、正确率显示
+
+量化用户输入的速度和输入的正确率，让用户有感知的了解自己技能的提升
+
+<div align=center>
+<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/speed.jpeg"/>
+</div>
 <br />
 <br />
 
