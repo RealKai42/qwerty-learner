@@ -36,7 +36,7 @@ export function useSetPronunciationState(): [status: pronunciationType, setpronu
 
 const defaultSettings: AppSettings = {
   sound: true,
-  pronunciation: 'uk',
+  pronunciation: 'us',
 }
 
 export const AppSettingsProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
