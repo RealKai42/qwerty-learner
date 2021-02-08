@@ -12,21 +12,21 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 mr-3" />
         </a>
 
-        <a
-          href="/#"
+        <span
+          className="cursor-pointer"
           onClick={(e) => {
             setShowDonate(true)
             e.currentTarget.blur()
           }}
         >
           <FontAwesomeIcon icon={['fas', 'coffee']} className="text-gray-500 mr-3" />
-        </a>
+        </span>
 
         <a href="mailto:ZHANG.Kaiyi42@gmail.com" onClick={(e) => e.currentTarget.blur()}>
           <FontAwesomeIcon icon={['fas', 'envelope']} className="text-gray-500 mr-3" />
         </a>
 
-        <div className="group relative inline-block">
+        <div className="group relative inline-block ">
           <a href="https://kaiyiwing.gitee.io/qwerty-learner/" className="text-gray-500  mr-3" title="墙内节点">
             🇨🇳
           </a>
@@ -34,9 +34,15 @@ const Footer: React.FC = () => {
             <span className="py-1 px-3 text-gray-500 text-xs">墙内镜像</span>
           </div>
         </div>
-        <a className="text-gray-500 no-underline hover:no-underline" href="#/" onClick={(e) => e.currentTarget.blur()}>
+        <span
+          className="text-gray-500 cursor-pointer no-underline hover:no-underline "
+          onClick={(e) => {
+            setShowDonate(true)
+            e.currentTarget.blur()
+          }}
+        >
           @ Qwerty Learner
-        </a>
+        </span>
       </div>
     </>
   )
