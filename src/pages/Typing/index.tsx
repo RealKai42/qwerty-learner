@@ -8,6 +8,7 @@ import Speed from 'components/Speed'
 import Modals from 'components/Modals'
 import Loading from 'components/Loading'
 import Phonetic from 'components/Phonetic'
+import PronunciationSwitcher from './PronunciationSwitcher'
 import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'utils/hooks'
@@ -16,6 +17,7 @@ import Switcher from './Switcher'
 import DictSwitcher from './DictSwitcher'
 import { dictList, useWordList } from './hooks/useWordList'
 import { useLocalStorage } from 'react-use'
+import usePronunciation from './hooks/usePronunciation'
 
 type LocalStorage = {
   dictName: string
@@ -36,7 +38,7 @@ const App: React.FC = () => {
   const [localStorage, setLocalStorage] = useLocalStorage<LocalStorage>('Dict')
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const [dictName, chapter, chapterListLength, wordList, wordListDispatch] = useWordList(chapterLength)
-
+  const [pronuncition, pronuncitionDispatch] = usePronunciation()
   const {
     modalState,
     title: modalTitle,
@@ -162,6 +164,10 @@ const App: React.FC = () => {
     (dictName: string) => {
       setOrder(0)
       setIsLoading(true)
+      // Need to stop the game, in order to prevent pronounce wrong word.
+      // Besides, it makes sense because users are about to stop when they change dict/chapter.
+      // Otherwise, introduce a new parameter to allow pronunciation begin.
+      setIsStart(false)
       wordListDispatch('setDictName', dictName, () => {
         setIsLoading(false)
       })
@@ -172,9 +178,16 @@ const App: React.FC = () => {
   const changeChapter = useCallback(
     (chapter: number) => {
       setOrder(0)
+      setIsStart(false) // Same story as above.
       wordListDispatch('setChapter', chapter)
     },
     [wordListDispatch],
+  )
+  const changeState = useCallback(
+    (state: string) => {
+      pronuncitionDispatch(state)
+    },
+    [pronuncitionDispatch],
   )
 
   return (
@@ -203,6 +216,7 @@ const App: React.FC = () => {
             changeDict={changeDict}
             changeChapter={changeChapter}
           />
+          <PronunciationSwitcher state={pronuncition.toString()} changeState={changeState} />
           <Switcher state={switcherState} dispatch={switcherStateDispatch} />
           <div className="group relative">
             <button

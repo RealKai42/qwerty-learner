@@ -24,6 +24,7 @@ const useSwitcherState = (initialState: { phonetic: boolean; wordVisible: boolea
         break
       case 'sound':
         newStatus === undefined ? setSound(!sound) : setSound(newStatus)
+        break
     }
   }
 

@@ -9,6 +9,8 @@ import {
   faEyeSlash,
   faAssistiveListeningSystems,
   faCoffee,
+  faMicrophone,
+  faMicrophoneSlash,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -23,4 +25,6 @@ library.add(
   faEyeSlash,
   faAssistiveListeningSystems,
   faCoffee,
+  faMicrophone,
+  faMicrophoneSlash,
 )
