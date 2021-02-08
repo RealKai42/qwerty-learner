@@ -1,7 +1,8 @@
 {
-  "name": "newkeybr",
+  "name": "qwerty-learner",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Kaiyiwing/qwerty-learner",
   "dependencies": {
     "@craco/craco": "^6.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
