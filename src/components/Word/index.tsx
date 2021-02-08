@@ -61,13 +61,13 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     }
   }, [hasWrong, playBeepSound])
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (isStart && inputWord.length === 0) {
       playPronounce()
     }
     // SAFETY: Don't depend on `playPronounce`! It will cost audio play again and again.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isStart, hasWrong, word])
+  }, [isStart, word, inputWord])
 
   useLayoutEffect(() => {
     let hasWrong = false,
