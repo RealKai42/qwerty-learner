@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 declare type PronounceFunction = () => void
 
-const pronunciationApi = 'http://dict.youdao.com/dictvoice?audio='
+const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
 
 export default function usePronunciationSound(word: string): PronounceFunction {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
