@@ -1,0 +1,23 @@
+name: Gitee Pages Action
+
+on: page_build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        with:
+          source-repo: git@github.com:Kaiyiwing/qwerty-learner.git
+          destination-repo: git@gitee.com:KaiyiWing/qwerty-learner.git
+
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          gitee-username: KaiyiWing
+          gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          gitee-repo: qwerty-learner
+          branch: master
