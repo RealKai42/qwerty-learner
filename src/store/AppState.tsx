@@ -1,3 +1,4 @@
+import { omit } from 'lodash'
 import React, { useCallback, useContext } from 'react'
 import { useLocalStorage } from 'react-use'
 import { dictionaries, Dictionary } from 'resources/dictionary'
@@ -92,6 +93,18 @@ const defaultState: AppState = {
 }
 
 export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
-  const [state, setState] = useLocalStorage<AppState>('state', defaultState)
+  const [state, setState] = useLocalStorage<AppState>('state', defaultState, options)
   return <AppStateContext.Provider value={{ state: state!, dispatch: setState }}>{children}</AppStateContext.Provider>
+}
+
+const options = {
+  raw: false,
+  serializer(state: AppState): string {
+    return JSON.stringify(omit(state, 'dictionaries'))
+  },
+  deserializer(source: string): AppState {
+    const state: AppState = JSON.parse(source)
+    state.dictionaries = dictionaries
+    return state
+  },
 }
