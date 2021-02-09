@@ -8,6 +8,9 @@
 
 <p align="center">
   <a href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@headlessui/react.svg" alt="License"></a>
+  <a><img src="https://travis-ci.com/Kaiyiwing/qwerty-learner.svg?branch=master" alt="Build State"></a>
+  <a><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
+  <a><img src="https://img.shields.io/badge/Powerd%20by-React-blue"/></a>
 </p>
 
 <div align=center>
@@ -49,13 +52,13 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 ### 词库
 
-内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及 JS API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库，目前使用的词库来自于开源项目：https://github.com/kajweb/dict
+内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及 JS API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库。
 <br />
 <br />
 
-### 音标显示
+### 音标显示、发音功能
 
-方便用户在记忆单词时，同时记忆读音。未来也会支持单词自动发音的功能
+方便用户在记忆单词时，同时记忆读音与音标。
 
 <div align=center>
 <img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/phonetic.jpeg"/>
@@ -96,6 +99,11 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 - 专业四级英语
 - 专业八级英语
 - Coder Dict 程序员常用词
+- 高考
+- 中考
+- 商务英语
+- BEC
+- 人教版英语 3-9 年级
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出。
 <br />
@@ -113,7 +121,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 目前项目处于开发初期，新功能正在持续添加中，如果你对软件有任何功能与建议，欢迎在 Issues 中提出
 
-项目的进展与未来计划在 [Issue](!https://github.com/Kaiyiwing/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Qwerty Learner 的未来感兴趣，欢迎参与讨论。
+项目的进展与未来计划在 [Issue](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Qwerty Learner 的未来感兴趣，欢迎参与讨论。
 
 如果你也喜欢本软件的设计思想，欢迎提交 pr，非常感谢你对我们的支持！
 <br />
@@ -123,7 +131,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 如果您对本项目感兴趣，我们非常欢迎参与到项目的贡献中，我们会尽可能地提供帮助
 
-在贡献前，希望您阅读 [Issue #42](!https://github.com/Kaiyiwing/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区其他未列入的工作，我们也非常欢迎您实现自己的想法。
+在贡献前，希望您阅读 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区其他未列入的工作，我们也非常欢迎您实现自己的想法。
 
 如果您确定了想要参与的工作，希望在有基本进展后提交 draft pr，我们可以在 draft pr 上进行讨论，也有利于听取其他 collaborator 的意见。
 
@@ -139,3 +147,56 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 如果您喜欢我们软件，非常感谢您对我们未来的支持!
 
 <img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
+
+## 🎁 鸣谢
+
+### 灵感来源
+
+[Keybr](https://www.keybr.com/)  
+以算法著称，功能非常完善的打字网站，根据用户输入每个字母的正确率与速度生成“伪英语”来帮助用户集中锻炼个别输入较慢的字母。并可以根据用户的输入记录生成完整的分析报告。
+
+也是本项目的核心灵感来源，Keybr 更多针对英语为母语的用户。在我使用 Keybr 练习打字时，觉得虽然生成的伪英语能够练习输入不顺畅的个别字母，但并不能提升非母语用户对单词的掌握，于是有了本项目。
+
+[Typing Academy](https://www.typing.academy)  
+非常优秀的打字练习网站  
+其优秀的 UI 风格，以及对速度、正确率的展示极大的影响了本项目的 UI 设计
+
+[react-code-game](https://github.com/webzhd/react-code-game)  
+一个非常酷的开源项目，使用 ts 实现，可以在练习打字的同时练习 js 内置 api，项目中添加代码 api 的想法便来源自此项目。
+<br/><br/>
+
+### 开源项目
+
+[React](https://github.com/facebook/react) & [CRA](https://github.com/facebook/create-react-app)  
+完整和详细的文档对初学者非常友好，React 系的文档是我目前自学过程中读过最棒的文档，几乎解决使用中大部分问题。非常感谢 React 对开源世界的贡献，为我们搭建了很好的基础，让初学者也能构建非常棒的软件。
+
+[Tailwindcss](https://tailwindcss.com/docs)  
+如果没有 tailwind，这个项目还有再拖一阵子，tailwind 的设计思路解决了 css 入门选手对写复杂 css 的恐惧，让新手以一个非常舒适的方式去设计 UI。
+<br/><br/>
+
+### 数据来源
+
+字典数据来自于[kajweb](https://github.com/kajweb/dict)，项目爬取了常见的字典，也是这个项目让我看到了实现本项目的希望。
+
+语音数据来源于[有道词典](https://www.youdao.com/)开放 API，感谢有道的贡献让我们这种小项目也可以用上非常专业的发音资源，感谢有道团队以及考神团队为中国教育与中外交流做出的重要贡献。
+
+JS API 来自于[react-code-game](https://github.com/webzhd/react-code-game) ，感谢项目对 JS API 的爬取与预处理。
+<br/><br/>
+
+### 感谢支持
+
+感谢[云谦](https://github.com/sorrycc)、[大圣](https://github.com/shengxinjing) 在项目只有十几个 star 时关注了项目，给项目推进下去的动力。
+
+<br/>
+
+也感谢在项目初期跟我讨论 idea、提供建议并时不时 Push 一下我的朋友们，没有你们这个 idea 可能还得再拖一年（🐶
+
+感谢 [Pear Mini](https://github.com/pearmini) ，最开始跟我讨论 idea 给我项目支持，也是他的项目让我相信即使是一个学生的 idea 实现出来也可以很酷。 他的 [Gossip](https://github.com/pearmini/gossip) 项目完全是 Next Generation Slides 级别的创意！
+
+感谢 [AZ](https://github.com/sailist)，鼓励我把 idea 实现出来（虽然我还是拖了很久），他无与伦比的行动力影响了我。他是一个非常酷的 lib maker，写了很多非常棒的 python 库，例如中文语音识别的框架[ASRFrame](https://github.com/sailist/ASRFrame)
+
+感谢 [Luyu Cheng](https://github.com/chengluyu)，我认识的最酷的前端大佬，给项目与我的前端自学提供了无尽的帮助。在项目初期帮助我进行技术选型，在开发阶段帮我解决技术问题，为我不知道如何实现的 feature 提供技术思路，也为项目贡献了很多非常受欢迎的 feature。
+
+## 🌟 Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Kaiyiwing/qwerty-learner.svg)](https://starchart.cc/Kaiyiwing/qwerty-learner)

@@ -24,6 +24,23 @@ export const dictList: any = {
   jsString: ['js-string', './dicts/js-string.json'],
   nodePath: ['Node-path', './dicts/Node-path.json'],
   nodeFs: ['Node-fs', './dicts/Node-fs.json'],
+  chuzhong: ['中考', './dicts/ChuZhongluan_2_T.json'],
+  gaozhong: ['高考', './dicts/GaoZhongluan_2_T.json'],
+  shangwu: ['商务英语', './dicts/BEC_2_T.json'],
+  bec: ['BEC', './dicts/BEC_3_T.json'],
+  san1: ['三年级上', './dicts/PEPXiaoXue3_1_T.json'],
+  san2: ['三年级下', './dicts/PEPXiaoXue3_2_T.json'],
+  si1: ['四年级上', './dicts/PEPXiaoXue4_1_T.json'],
+  si2: ['四年级下', './dicts/PEPXiaoXue4_2_T.json'],
+  wu1: ['五年级上', './dicts/PEPXiaoXue5_1_T.json'],
+  wu2: ['五年级下', './dicts/PEPXiaoXue5_2_T.json'],
+  liu1: ['六年级上', './dicts/PEPXiaoXue6_1_T.json'],
+  liu2: ['六年级下', './dicts/PEPXiaoXue6_2_T.json'],
+  qi1: ['七年级上', './dicts/PEPChuZhong7_1_T.json'],
+  qi2: ['七年级下', './dicts/PEPChuZhong7_2_T.json'],
+  ba1: ['八年级上', './dicts/PEPChuZhong8_1_T.json'],
+  ba2: ['八年级下', './dicts/PEPChuZhong8_2_T.json'],
+  jiu: ['九年级', './dicts/PEPChuZhong9_1_T.json'],
 }
 
 export type WordType = {
