@@ -1,200 +1,152 @@
 [
     {
-        "name": "public boolean add(E e)",
+        "name": "offerLast()",
         "trans": [
-            "链表末尾添加元素，返回是否成功，成功为 true，失败为 false。"
+            "public boolean offerLast(E e):尾部插入元素，返回是否成功，成功为 true，失败为 false。"
         ]
     },
     {
-        "name": "public void add(int index, E element)",
+        "name": "clear()",
         "trans": [
-            "向指定位置插入元素。"
+            "public void clear():清空链表。"
         ]
     },
     {
-        "name": "public boolean addAll(Collection extends E> c)",
+        "name": "removeFirst()",
         "trans": [
-            "将一个集合的所有元素添加到链表后面，返回是否成功，成功为 true，失败为 false。"
+            "public E removeFirst():删除并返回第一个元素。"
         ]
     },
     {
-        "name": "public boolean addAll(int index, Collection extends E> c)",
+        "name": "removeLast()",
         "trans": [
-            "将一个集合的所有元素添加到链表的指定位置后面，返回是否成功，成功为 true，失败为 false。"
+            "public E removeLast():删除并返回最后一个元素。"
         ]
     },
     {
-        "name": "public void addFirst(E e)",
+        "name": "remove()",
         "trans": [
-            "元素添加到头部。"
+            "public boolean remove(Object o):删除某一元素，返回是否成功，成功为 true，失败为 false。"
         ]
     },
     {
-        "name": "public void addLast(E e)",
+        "name": "remove()",
         "trans": [
-            "元素添加到尾部。"
+            "public E remove(int index):删除指定位置的元素。"
         ]
     },
     {
-        "name": "public boolean offer(E e)",
+        "name": "poll()",
         "trans": [
-            "向链表末尾添加元素，返回是否成功，成功为 true，失败为 false。"
+            "public E poll():删除并返回第一个元素。"
         ]
     },
     {
-        "name": "public boolean offerFirst(E e)",
+        "name": "remove()",
         "trans": [
-            "头部插入元素，返回是否成功，成功为 true，失败为 false。"
+            "public E remove():删除并返回第一个元素。"
         ]
     },
     {
-        "name": "public boolean offerLast(E e)",
+        "name": "contains()",
         "trans": [
-            "尾部插入元素，返回是否成功，成功为 true，失败为 false。"
+            "public boolean contains(Object o):判断是否含有某一元素。"
         ]
     },
     {
-        "name": "public void clear()",
+        "name": "get()",
         "trans": [
-            "清空链表。"
+            "public E get(int index):返回指定位置的元素。"
         ]
     },
     {
-        "name": "public E removeFirst()",
+        "name": "getFirst()",
         "trans": [
-            "删除并返回第一个元素。"
+            "public E getFirst():返回第一个元素。"
         ]
     },
     {
-        "name": "public E removeLast()",
+        "name": "getLast()",
         "trans": [
-            "删除并返回最后一个元素。"
+            "public E getLast():返回最后一个元素。"
         ]
     },
     {
-        "name": "public boolean remove(Object o)",
+        "name": "indexOf()",
         "trans": [
-            "删除某一元素，返回是否成功，成功为 true，失败为 false。"
+            "public int indexOf(Object o):查找指定元素从前往后第一次出现的索引。"
         ]
     },
     {
-        "name": "public E remove(int index)",
+        "name": "lastIndexOf()",
         "trans": [
-            "删除指定位置的元素。"
+            "public int lastIndexOf(Object o):查找指定元素最后一次出现的索引。"
         ]
     },
     {
-        "name": "public E poll()",
+        "name": "peek()",
         "trans": [
-            "删除并返回第一个元素。"
+            "public E peek():返回第一个元素。"
         ]
     },
     {
-        "name": "public E remove()",
+        "name": "element()",
         "trans": [
-            "删除并返回第一个元素。"
+            "public E element():返回第一个元素。"
         ]
     },
     {
-        "name": "public boolean contains(Object o)",
+        "name": "peekFirst()",
         "trans": [
-            "判断是否含有某一元素。"
+            "public E peekFirst():返回头部元素。"
         ]
     },
     {
-        "name": "public E get(int index)",
+        "name": "peekLast()",
         "trans": [
-            "返回指定位置的元素。"
+            "public E peekLast():返回尾部元素。"
         ]
     },
     {
-        "name": "public E getFirst()",
+        "name": "set()",
         "trans": [
-            "返回第一个元素。"
+            "public E set(int index, E element):设置指定位置的元素。"
         ]
     },
     {
-        "name": "public E getLast()",
+        "name": "clone()",
         "trans": [
-            "返回最后一个元素。"
+            "public Object clone():克隆该列表。"
         ]
     },
     {
-        "name": "public int indexOf(Object o)",
+        "name": "descendingIterator()",
         "trans": [
-            "查找指定元素从前往后第一次出现的索引。"
+            "public Iterator descendingIterator():返回倒序迭代器。"
         ]
     },
     {
-        "name": "public int lastIndexOf(Object o)",
+        "name": "size()",
         "trans": [
-            "查找指定元素最后一次出现的索引。"
+            "public int size():返回链表元素个数。"
         ]
     },
     {
-        "name": "public E peek()",
+        "name": "listIterator()",
         "trans": [
-            "返回第一个元素。"
+            "public ListIterator listIterator(int index):返回从指定位置开始到末尾的迭代器。"
         ]
     },
     {
-        "name": "public E element()",
+        "name": "toArray()",
         "trans": [
-            "返回第一个元素。"
+            "public Object[] toArray():返回一个由链表元素组成的数组。"
         ]
     },
     {
-        "name": "public E peekFirst()",
+        "name": "toArray()",
         "trans": [
-            "返回头部元素。"
-        ]
-    },
-    {
-        "name": "public E peekLast()",
-        "trans": [
-            "返回尾部元素。"
-        ]
-    },
-    {
-        "name": "public E set(int index, E element)",
-        "trans": [
-            "设置指定位置的元素。"
-        ]
-    },
-    {
-        "name": "public Object clone()",
-        "trans": [
-            "克隆该列表。"
-        ]
-    },
-    {
-        "name": "public Iterator descendingIterator()",
-        "trans": [
-            "返回倒序迭代器。"
-        ]
-    },
-    {
-        "name": "public int size()",
-        "trans": [
-            "返回链表元素个数。"
-        ]
-    },
-    {
-        "name": "public ListIterator listIterator(int index)",
-        "trans": [
-            "返回从指定位置开始到末尾的迭代器。"
-        ]
-    },
-    {
-        "name": "public Object[] toArray()",
-        "trans": [
-            "返回一个由链表元素组成的数组。"
-        ]
-    },
-    {
-        "name": "public  T[] toArray(T[] a)",
-        "trans": [
-            "返回一个由链表元素转换类型而成的数组。"
+            "public  T[] toArray(T[] a):返回一个由链表元素转换类型而成的数组。"
         ]
     }
 ]
