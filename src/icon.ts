@@ -12,6 +12,7 @@ import {
   faMicrophone,
   faMicrophoneSlash,
   faMoon,
+  faSun,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -29,4 +30,5 @@ library.add(
   faMicrophone,
   faMicrophoneSlash,
   faMoon,
+  faSun,
 )
