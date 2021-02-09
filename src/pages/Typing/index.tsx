@@ -124,6 +124,23 @@ const App: React.FC = () => {
     [pronunciationDispatch],
   )
 
+  const switchTips = useCallback(
+    (hasWrong: boolean, isFinish: boolean) => {
+      if (!switcherState.wordVisible) {
+        if (hasWrong && !isFinish) {
+          switcherStateDispatch('phonetic', true)
+        } else if (!hasWrong && isFinish && !switcherState.userPhonetic) {
+          switcherStateDispatch('phonetic', false)
+        }
+      }
+    },
+    [switcherState, switcherStateDispatch],
+  )
+
+  const changeUserPhoneticState = useCallback(() => {
+    switcherStateDispatch('userPhonetic', !switcherState.userPhonetic)
+  }, [switcherState, switcherStateDispatch])
+
   return (
     <>
       {modalState && (
@@ -156,8 +173,8 @@ const App: React.FC = () => {
                 <span className="py-1 px-3 text-gray-500 text-xs">切换</span>
               </div>
             </div>
-            <PronunciationSwitcher state={pronunciation.toString()} changeState={changePronuciation} />
-            <Switcher state={switcherState} dispatch={switcherStateDispatch} />
+            <PronunciationSwitcher state={pronunciation.toString()} changePronuciationState={changePronuciation} />
+            <Switcher state={switcherState} dispatch={switcherStateDispatch} changeUserPhoneticState={changeUserPhoneticState} />
             <div className="group relative">
               <button
                 className={`${
@@ -184,6 +201,7 @@ const App: React.FC = () => {
                   onFinish={onFinish}
                   isStart={isStart}
                   wordVisible={switcherState.wordVisible}
+                  switchTips={switchTips}
                 />
                 {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                   <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
