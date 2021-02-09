@@ -144,3 +144,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 如果您喜欢我们软件，非常感谢您对我们未来的支持!
 
 <img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Kaiyiwing/qwerty-learner.svg)](https://starchart.cc/Kaiyiwing/qwerty-learner)
