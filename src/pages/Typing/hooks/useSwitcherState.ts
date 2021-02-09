@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useSetSoundState } from 'store/AppState'
+import { useSetSoundState, useDarkMode } from 'store/AppState'
 
 export type SwitcherStateType = {
   phonetic: boolean
@@ -20,35 +20,24 @@ const useSwitcherState = (initialState: {
   const [wordVisible, setWordVisible] = useState(initialState.wordVisible)
   const [sound, setSound] = useSetSoundState()
   const [userPhonetic, setUserPhonetic] = useState(initialState.phonetic)
-  const [darkMode, setDarkMode] = useState(
-    initialState.darkMode ??
-      (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)),
-  )
+  const [darkMode, setDarkMode] = useDarkMode()
 
   const dispatch: SwitcherDispatchType = (type, newStatus) => {
     switch (type) {
       case 'phonetic':
-        newStatus === undefined ? setPhonetic(!phonetic) : setPhonetic(newStatus)
+        setPhonetic(newStatus ?? !phonetic)
         break
       case 'wordVisible':
-        newStatus === undefined ? setWordVisible(!wordVisible) : setWordVisible(newStatus)
+        setWordVisible(newStatus ?? !wordVisible)
         break
       case 'sound':
-        newStatus === undefined ? setSound(!sound) : setSound(newStatus)
+        setSound(newStatus ?? !sound)
         break
       case 'userPhonetic':
-        newStatus === undefined ? setUserPhonetic(!userPhonetic) : setUserPhonetic(newStatus)
+        setUserPhonetic(newStatus ?? !userPhonetic)
         break
       case 'darkMode':
-        const newDarkMode = newStatus ?? !darkMode
-        setDarkMode(newDarkMode)
-        if (newDarkMode) {
-          localStorage.theme = 'dark'
-          document.documentElement.classList.add('dark')
-        } else {
-          localStorage.theme = 'light'
-          document.documentElement.classList.remove('dark')
-        }
+        setDarkMode(newStatus ?? !darkMode)
     }
   }
   return [{ phonetic, wordVisible, sound, darkMode, userPhonetic }, dispatch]

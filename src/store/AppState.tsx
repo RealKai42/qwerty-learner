@@ -23,6 +23,10 @@ export type AppState = {
    * The selected chapter number.
    */
   selectedChapter: number
+  /**
+   * Whether dark mode is enabled
+   */
+  darkMode: boolean
 }
 
 export type AppStateData = {
@@ -71,11 +75,12 @@ export function useSelectedDictionary(): Dictionary {
   return state.selectedDictionary
 }
 
-export function useSetPronunciationState(): [status: PronunciationType, setpronunciation: (state: PronunciationType) => void] {
+export function useSetPronunciationState(): [status: PronunciationType, setPronunciation: (state: PronunciationType) => void] {
   const { state, dispatch } = useContext(AppStateContext)
-  const setpronunciation = useCallback((pronunciation: PronunciationType) => dispatch({ ...state, pronunciation }), [state, dispatch])
-  return [state.pronunciation, setpronunciation]
+  const setPronunciation = useCallback((pronunciation: PronunciationType) => dispatch({ ...state, pronunciation }), [state, dispatch])
+  return [state.pronunciation, setPronunciation]
 }
+
 /**
  * Use the current selected chapter.
  */
@@ -84,12 +89,29 @@ export function useSelectedChapter(): [number, (chapter: number) => void] {
   return [state.selectedChapter, (selectedChapter: number): void => dispatch({ ...state, selectedChapter })]
 }
 
+/**
+ * Dark Mode
+ */
+export function useDarkMode(): [darkMode: boolean, setDarkMode: (state: boolean) => void] {
+  const { state, dispatch } = useContext(AppStateContext)
+  const setDarkMode = useCallback(
+    (darkMode: boolean) => {
+      dispatch({ ...state, darkMode })
+      darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
+    },
+    [state, dispatch],
+  )
+
+  return [state.darkMode, setDarkMode]
+}
+
 const defaultState: AppState = {
   sound: true,
   dictionaries,
   selectedDictionary: dictionaries[0],
   pronunciation: 'us',
   selectedChapter: 0,
+  darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
 }
 
 export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {

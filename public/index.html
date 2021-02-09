@@ -35,10 +35,8 @@
     <title>Qwerty Learner</title>
     <script>
       // Dark mode init
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      if (('state' in localStorage && JSON.parse(localStorage.state).darkMode) || (!('state' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
       }
     </script>
   </head>
