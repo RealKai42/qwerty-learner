@@ -6,7 +6,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 export type SwitcherPropsType = {
   state: SwitcherStateType
   dispatch: SwitcherDispatchType
-  changeUserPhoneticState: any
+  changeUserPhoneticState: () => void
 }
 
 const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch, changeUserPhoneticState }) => {

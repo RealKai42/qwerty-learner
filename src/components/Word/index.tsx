@@ -115,7 +115,7 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
-  switchTips: any
+  switchTips: (hasWrong: boolean, isFinish: boolean) => void
 }
 export default Word
 

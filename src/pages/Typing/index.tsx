@@ -184,6 +184,7 @@ const App: React.FC = () => {
     },
     [wordListDispatch],
   )
+
   const changePronuciation = useCallback(
     (state: string) => {
       pronunciationDispatch(state)
@@ -234,7 +235,7 @@ const App: React.FC = () => {
             changeDict={changeDict}
             changeChapter={changeChapter}
           />
-          <PronunciationSwitcher state={pronunciation.toString()} changeState={changePronuciation} />
+          <PronunciationSwitcher state={pronunciation.toString()} changePronuciationState={changePronuciation} />
           <Switcher state={switcherState} dispatch={switcherStateDispatch} changeUserPhoneticState={changeUserPhoneticState} />
           <div className="group relative">
             <button
