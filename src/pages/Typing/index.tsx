@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useCallback } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Header from 'components/Header'
 import Main from 'components/Main'
-import Footer from 'components/Footer'
 import Word from 'components/Word'
 import Translation from 'components/Translation'
 import Speed from 'components/Speed'
@@ -11,33 +10,23 @@ import Phonetic from 'components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
 import { isLegal } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
-import { useModals } from 'utils/hooks'
+import { useModals } from 'hooks/useModals'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
-import DictSwitcher from './DictSwitcher'
-import { dictList, useWordList } from './hooks/useWordList'
-import { useLocalStorage } from 'react-use'
+import { useWordList } from './hooks/useWordList'
+import Layout from '../../components/Layout'
+import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 
-type LocalStorage = {
-  dictName: string
-  chapter: number
-  order: number
-}
-
 const App: React.FC = () => {
-  const chapterLength = 20
-
   const [order, setOrder] = useState<number>(0)
-  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const [inputCount, setInputCount] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
 
-  const [localStorage, setLocalStorage] = useLocalStorage<LocalStorage>('Dict')
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
-  const [dictName, chapter, chapterListLength, wordList, wordListDispatch] = useWordList(chapterLength)
+  const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
 
   const {
@@ -68,34 +57,6 @@ const App: React.FC = () => {
   )
 
   useEffect(() => {
-    // 首次加载时，读取 cookies
-    if (localStorage) {
-      const cookieDict = localStorage.dictName
-      const cookieChapter = localStorage.chapter
-      const cookieOrder = localStorage.order
-      setModalMessage(
-        '提示',
-        `您上次练习到字典 ${dictList[cookieDict][0]} 章节 ${cookieChapter + 1} 第${cookieOrder + 1}个单词 ，是否继续？`,
-        '继续上次练习',
-        '从头开始',
-      )
-      setModalHandler(
-        () => {
-          changeDict(cookieDict)
-          changeChapter(cookieChapter)
-          setOrder(cookieOrder)
-          setModalState(false)
-        },
-        () => {
-          setModalState(false)
-        },
-      )
-      setModalState(true)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
       if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         if (isStart) {
@@ -119,71 +80,42 @@ const App: React.FC = () => {
     }
   }, [isStart])
 
-  useEffect(() => {
-    setLocalStorage({
-      dictName,
-      chapter,
-      order: order,
-    })
-  }, [dictName, chapter, order, setLocalStorage])
-
   const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
     return () => {
       setOrder(order)
-      wordListDispatch('setChapter', chapter)
+      wordList?.setChapterNumber(chapter)
       setModalState(modalState)
     }
   }
 
   const onFinish = () => {
-    if (order === wordList.length - 1) {
+    if (wordList === undefined) {
+      return
+    }
+    if (order === wordList.words.length - 1) {
       // 用户完成当前章节
-      if (chapter === chapterListLength - 1) {
+      if (wordList.chapter === wordList.chapterListLength - 1) {
         setModalState(true)
         setModalMessage('提示', '您已完成最后一个章节', '重复本章节', '重置到第一章节', '默写本章节')
         setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(chapter, 0, false), modalHandlerGenerator(0, 0, false), () => {
-          modalHandlerGenerator(chapter, 0, false)()
+        setModalHandler(modalHandlerGenerator(wordList.chapter, 0, false), modalHandlerGenerator(0, 0, false), () => {
+          modalHandlerGenerator(wordList.chapter, 0, false)()
           switcherStateDispatch('wordVisible', false)
         })
       } else {
         setModalState(true)
         setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节', '默写本章节')
         setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(chapter + 1, 0, false), modalHandlerGenerator(chapter, 0, false), () => {
-          modalHandlerGenerator(chapter, 0, false)()
+        setModalHandler(modalHandlerGenerator(wordList.chapter + 1, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
+          modalHandlerGenerator(wordList.chapter, 0, false)()
           switcherStateDispatch('wordVisible', false)
         })
       }
     } else {
       setOrder((order) => order + 1)
-      setCorrectCount((count) => count + wordList[order].name.trim().length)
+      setCorrectCount((count) => count + wordList.words[order].name.trim().length)
     }
   }
-
-  const changeDict = useCallback(
-    (dictName: string) => {
-      setOrder(0)
-      setIsLoading(true)
-      // Need to stop the game, in order to prevent pronounce wrong word.
-      // Besides, it makes sense because users are about to stop when they change dict/chapter.
-      // Otherwise, introduce a new parameter to allow pronunciation begin.
-      setIsStart(false)
-      wordListDispatch('setDictName', dictName, () => {
-        setIsLoading(false)
-      })
-    },
-    [wordListDispatch],
-  )
-
-  const changeChapter = useCallback(
-    (chapter: number) => {
-      setOrder(0)
-      setIsStart(false) // Same story as above.
-      wordListDispatch('setChapter', chapter)
-    },
-    [wordListDispatch],
-  )
 
   const changePronuciation = useCallback(
     (state: string) => {
@@ -225,60 +157,62 @@ const App: React.FC = () => {
           thirdButtonOnclick={modalThirdBtnOnclick}
         />
       )}
-      {isLoading && <Loading />}
-      <div className="h-screen w-full pb-4 flex flex-col items-center">
-        <Header>
-          <DictSwitcher
-            dictName={dictName}
-            chapter={chapter}
-            chapterListLength={chapterListLength}
-            changeDict={changeDict}
-            changeChapter={changeChapter}
-          />
-          <PronunciationSwitcher state={pronunciation.toString()} changePronuciationState={changePronuciation} />
-          <Switcher state={switcherState} dispatch={switcherStateDispatch} changeUserPhoneticState={changeUserPhoneticState} />
-          <div className="group relative">
-            <button
-              className={`${
-                isStart ? 'bg-gray-300' : 'bg-indigo-400'
-              }  text-white text-lg  w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
-              onClick={(e) => {
-                setIsStart((isStart) => !isStart)
-              }}
-            >
-              {isStart ? 'Pause' : 'Start'}
-            </button>
-            <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-              <span className="py-1 px-3 text-gray-500 text-xs">快捷键 Enter</span>
+      {wordList === undefined ? (
+        <Loading />
+      ) : (
+        <Layout>
+          <Header>
+            <div className="group relative">
+              <NavLink
+                className="text-lg px-4 py-1 rounded-lg transition-colors duration-150 ease-in-out focus:outline-none hover:bg-indigo-400 hover:text-white"
+                to="/gallery"
+              >
+                {wordList.dictName} 第 {wordList.chapter + 1} 章
+              </NavLink>
+              <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-0 flex items-center justify-center">
+                <span className="py-1 px-3 text-gray-500 text-xs">词典章节切换</span>
+              </div>
             </div>
-          </div>
-        </Header>
-
-        <Main>
-          <div className="container h-full relative flex mx-auto flex-col items-center">
-            <div className="h-1/3"></div>
-            <div>
-              <Word
-                key={`word-${wordList[order].name}`}
-                word={wordList[order].name}
-                onFinish={onFinish}
-                isStart={isStart}
-                wordVisible={switcherState.wordVisible}
-                switchTips={switchTips}
-              />
-
-              {switcherState.phonetic && (wordList[order].usphone || wordList[order].ukphone) && (
-                <Phonetic usphone={wordList[order].usphone} ukphone={wordList[order].ukphone} />
-              )}
-              <Translation key={`trans-${wordList[order].name}`} trans={wordList[order].trans.join('；')} />
+            <PronunciationSwitcher state={pronunciation.toString()} changePronuciationState={changePronuciation} />
+            <Switcher state={switcherState} dispatch={switcherStateDispatch} changeUserPhoneticState={changeUserPhoneticState} />
+            <div className="group relative">
+              <button
+                className={`${
+                  isStart ? 'bg-gray-300' : 'bg-indigo-400'
+                }  text-white text-lg w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
+                onClick={(e) => {
+                  setIsStart((isStart) => !isStart)
+                }}
+              >
+                {isStart ? 'Pause' : 'Start'}
+              </button>
+              <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
+                <span className="py-1 px-3 text-gray-500 text-xs">快捷键 Enter</span>
+              </div>
             </div>
-
-            <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
-          </div>
-        </Main>
-
-        <Footer />
-      </div>
+          </Header>
+          <Main>
+            <div className="container h-full relative flex mx-auto flex-col items-center">
+              <div className="h-1/3"></div>
+              <div>
+                <Word
+                  key={`word-${wordList.words[order].name}`}
+                  word={wordList.words[order].name}
+                  onFinish={onFinish}
+                  isStart={isStart}
+                  wordVisible={switcherState.wordVisible}
+                  switchTips={switchTips}
+                />
+                {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
+                  <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
+                )}
+                <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
+              </div>
+              <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
+            </div>
+          </Main>
+        </Layout>
+      )}
     </>
   )
 }

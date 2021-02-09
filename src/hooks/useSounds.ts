@@ -3,7 +3,7 @@ import clickSoundFileUrl from 'assets/click.wav'
 import beepSoundFileUrl from 'assets/beep.wav'
 import hintSoundFileUrl from 'assets/hint.wav'
 import { noop } from 'lodash'
-import { useAppSettings } from 'components/AppSettings'
+import { useAppSettings } from 'store/AppState'
 
 export type PlayFunction = ReturnType<typeof useSound>[0]
 

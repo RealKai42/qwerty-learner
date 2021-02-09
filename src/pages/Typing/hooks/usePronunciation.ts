@@ -1,8 +1,8 @@
-import { useSetPronunciationState, pronunciationType } from 'components/AppSettings'
+import { useSetPronunciationState, PronunciationType } from 'store/AppState'
 
 export type SwitcherDispatchType = (newStatus?: string) => void
 
-const usePronunciation = (): [pronunciationType, SwitcherDispatchType] => {
+const usePronunciation = (): [PronunciationType, SwitcherDispatchType] => {
   const [pronunciation, setPronunciation] = useSetPronunciationState()
 
   const dispatch: SwitcherDispatchType = (newStatus) => {
