@@ -83,8 +83,6 @@ export const dictionaries: Dictionary[] = [
   },
 ]
 
-console.log(dictionaries)
-
 /**
  * An object-map from dictionary IDs to dictionary themselves.
  */
