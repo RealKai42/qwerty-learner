@@ -33,6 +33,14 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     },
     [dispatch],
   )
+  useHotkeys(
+    'ctrl+d',
+    (e) => {
+      e.preventDefault()
+      dispatch('darkMode')
+    },
+    [dispatch],
+  )
 
   return (
     <div className="flex items-center justify-center space-x-3">
@@ -89,7 +97,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon="moon" fixedWidth />
         </button>
         <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 text-xs">开关深色模式</span>
+          <span className="py-1 px-3 text-gray-500 text-xs">开关深色模式（Ctrl + D）</span>
         </div>
       </div>
     </div>
