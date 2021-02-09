@@ -117,7 +117,7 @@ const App: React.FC = () => {
     }
   }
 
-  const changePronuciation = useCallback(
+  const changePronunciation = useCallback(
     (state: string) => {
       pronunciationDispatch(state)
     },
@@ -173,7 +173,7 @@ const App: React.FC = () => {
                 <span className="py-1 px-3 text-gray-500 text-xs">词典章节切换</span>
               </div>
             </div>
-            <PronunciationSwitcher state={pronunciation.toString()} changePronuciationState={changePronuciation} />
+            <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
             <Switcher state={switcherState} dispatch={switcherStateDispatch} changeUserPhoneticState={changeUserPhoneticState} />
             <div className="group relative">
               <button

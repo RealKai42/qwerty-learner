@@ -1,9 +1,9 @@
 export type PronunciationSwitcherPropsType = {
   state: string
-  changePronuciationState: (state: string) => void
+  changePronunciationState: (state: string) => void
 }
 
-const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state, changePronuciationState }) => {
+const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state, changePronunciationState }) => {
   return (
     <div className="flex items-center justify-center space-x-3">
       <div>
@@ -11,7 +11,7 @@ const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state
           className="dark:bg-gray-800 dark:text-white dark:text-opacity-60 transition-colors duration-300"
           value={state}
           onChange={(e) => {
-            changePronuciationState(e.target.value)
+            changePronunciationState(e.target.value)
             e.target.blur()
           }}
         >
