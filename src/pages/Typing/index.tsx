@@ -221,8 +221,8 @@ const App: React.FC = () => {
           <div className="group relative">
             <button
               className={`${
-                isStart ? 'bg-gray-300' : 'bg-indigo-400'
-              }  text-white text-lg  w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
+                isStart ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
+              } text-white dark:text-opacity-80 transition-colors duration-300 text-lg w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
               onClick={(e) => {
                 setIsStart((isStart) => !isStart)
               }}
@@ -230,7 +230,7 @@ const App: React.FC = () => {
               {isStart ? 'Pause' : 'Start'}
             </button>
             <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-              <span className="py-1 px-3 text-gray-500 text-xs">快捷键 Enter</span>
+              <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">快捷键 Enter</span>
             </div>
           </div>
         </Header>

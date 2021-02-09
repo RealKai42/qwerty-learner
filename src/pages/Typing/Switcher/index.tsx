@@ -55,7 +55,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon={state.sound ? 'volume-up' : 'volume-mute'} fixedWidth />
         </button>
         <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 text-xs">开关声音（Ctrl + M）</span>
+          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关声音（Ctrl + M）</span>
         </div>
       </div>
       <div className="group relative">
@@ -69,7 +69,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon={state.wordVisible ? 'eye' : 'eye-slash'} fixedWidth />
         </button>
         <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 text-xs">开关英语显示（Ctrl + V）</span>
+          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关英语显示（Ctrl + V）</span>
         </div>
       </div>
       <div className="group relative">
@@ -83,7 +83,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon="assistive-listening-systems" fixedWidth />
         </button>
         <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 text-xs">开关音标显示（Ctrl + P）</span>
+          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关音标显示（Ctrl + P）</span>
         </div>
       </div>
       <div className="group relative">
@@ -97,7 +97,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon="moon" fixedWidth />
         </button>
         <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 text-xs">开关深色模式（Ctrl + D）</span>
+          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关深色模式（Ctrl + D）</span>
         </div>
       </div>
     </div>

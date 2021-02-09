@@ -8,6 +8,7 @@ const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state
     <div className="flex items-center justify-center space-x-3">
       <div>
         <select
+          className="dark:bg-gray-800 dark:text-white dark:text-opacity-60 transition-colors duration-300"
           value={state}
           onChange={(e) => {
             changeState(e.target.value)

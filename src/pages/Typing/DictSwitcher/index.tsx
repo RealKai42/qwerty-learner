@@ -14,6 +14,7 @@ const DictSwitcher: React.FC<DictSwitcherPropsType> = ({ dictName, chapter, chap
     <div className="flex items-center justify-center space-x-3">
       <div>
         <select
+          className="dark:bg-gray-800 dark:text-white dark:text-opacity-60 transition-colors duration-300"
           value={dictName}
           onChange={(e) => {
             changeDict(e.target.value)
@@ -30,6 +31,7 @@ const DictSwitcher: React.FC<DictSwitcherPropsType> = ({ dictName, chapter, chap
 
       <div>
         <select
+          className="dark:bg-gray-800 dark:text-white dark:text-opacity-60 transition-colors duration-300"
           value={chapter}
           onChange={(e) => {
             changeChapter(parseInt(e.target.value))

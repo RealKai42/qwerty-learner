@@ -2,7 +2,6 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: 'class',
   theme: {
-    extend: {},
     borderRadius: {
       large: '0.75rem',
       lg: '0.5rem',
@@ -12,6 +11,8 @@ module.exports = {
   variants: {
     extend: {
       visibility: ['hover', 'group-hover'],
+      textOpacity: ['dark'],
+      backgroundOpacity: ['dark'],
     },
   },
   plugins: [],

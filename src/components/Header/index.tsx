@@ -9,7 +9,7 @@ const Header: React.FC = ({ children }) => {
           <FontAwesomeIcon icon={['far', 'keyboard']} className="h-10 fill-current text-indigo-700 pr-2" />
           Qwerty Learner
         </a>
-        <div className="flex bg-white justify-end content-center items-center space-x-3 card rounded-large w-auto on inline-block element p-4">
+        <div className="flex bg-white dark:bg-gray-800 transition-colors duration-300 justify-end content-center items-center space-x-3 card rounded-large w-auto on inline-block element p-4">
           {children}
         </div>
       </div>

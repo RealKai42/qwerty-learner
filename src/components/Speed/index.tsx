@@ -14,7 +14,7 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart }) => {
   }, [isStart, start, pause])
 
   return (
-    <div className="w-3/5 flex bg-white mt-auto rounded-large card p-4 py-10 opacity-45">
+    <div className="w-3/5 flex bg-white dark:bg-gray-800 transition-colors duration-300 mt-auto rounded-large card p-4 py-10 opacity-45">
       <InfoBox info={`${minutesStirng}:${secondsStirng}`} description="时间" />
       <InfoBox info={inputCount + ''} description="输入数" />
       <InfoBox info={speed + ''} description="速度" />

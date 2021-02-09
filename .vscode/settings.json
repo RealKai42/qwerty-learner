@@ -3,5 +3,6 @@
     "source.fixAll.eslint": true
   },
   "css.lint.unknownAtRules": "ignore",
+  "css.validate": false,
   "files.eol": "\n"
 }
