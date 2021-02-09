@@ -1,7 +1,14 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: 'class',
   theme: {
+    extend: {
+      colors: {
+        'blue-gray': colors.blueGray,
+      },
+    },
     borderRadius: {
       large: '0.75rem',
       lg: '0.5rem',

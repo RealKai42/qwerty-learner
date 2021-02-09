@@ -164,13 +164,13 @@ const App: React.FC = () => {
           <Header>
             <div className="group relative">
               <NavLink
-                className="text-lg px-4 py-1 rounded-lg transition-colors duration-150 ease-in-out focus:outline-none hover:bg-indigo-400 hover:text-white"
+                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-opacity-100"
                 to="/gallery"
               >
                 {wordList.dictName} 第 {wordList.chapter + 1} 章
               </NavLink>
               <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-0 flex items-center justify-center">
-                <span className="py-1 px-3 text-gray-500 text-xs">词典章节切换</span>
+                <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">词典章节切换</span>
               </div>
             </div>
             <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
