@@ -83,7 +83,7 @@ export const dictionaries: Dictionary[] = [
   },
   {
     id: 'javeArrayList',
-    name: 'JAVA: ArrayList',
+    name: 'Java: ArrayList',
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-arraylist.json',
@@ -91,7 +91,7 @@ export const dictionaries: Dictionary[] = [
   },
   {
     id: 'javaCharacter',
-    name: 'JAVA: Character',
+    name: 'Java: Character',
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-character.json',
@@ -99,7 +99,7 @@ export const dictionaries: Dictionary[] = [
   },
   {
     id: 'javaHashmap',
-    name: 'JAVA: Hashmap',
+    name: 'Java: Hashmap',
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-hashmap.json',
@@ -107,7 +107,7 @@ export const dictionaries: Dictionary[] = [
   },
   {
     id: 'javaLinkedList',
-    name: 'JAVA: LinkedList',
+    name: 'Java: LinkedList',
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-linkedlist.json',
@@ -115,7 +115,7 @@ export const dictionaries: Dictionary[] = [
   },
   {
     id: 'javaString',
-    name: 'JAVA: String',
+    name: 'Java: String',
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-string.json',
@@ -123,7 +123,7 @@ export const dictionaries: Dictionary[] = [
   },
   {
     id: 'javaStringBuffer',
-    name: 'JAVA: StringBuffer',
+    name: 'Java: StringBuffer',
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-stringBuffer.json',
