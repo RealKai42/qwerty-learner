@@ -169,8 +169,8 @@ const App: React.FC = () => {
               >
                 {wordList.dictName} 第 {wordList.chapter + 1} 章
               </NavLink>
-              <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-                <span className="py-1 px-3 text-gray-500 text-xs">切换</span>
+              <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-0 flex items-center justify-center">
+                <span className="py-1 px-3 text-gray-500 text-xs">词典章节切换</span>
               </div>
             </div>
             <PronunciationSwitcher state={pronunciation.toString()} changePronuciationState={changePronuciation} />
