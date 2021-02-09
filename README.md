@@ -152,7 +152,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 ### 灵感来源
 
-[Keyber](https://www.keybr.com/)  
+[Keybr](https://www.keybr.com/)  
 以算法著称，功能非常完善的打字网站，根据用户输入每个字母的正确率与速度生成“伪英语”来帮助用户集中锻炼个别输入较慢的字母。并可以根据用户的输入记录生成完整的分析报告。
 
 也是本项目的核心灵感来源，Keybr 更多针对英语为母语的用户。在我使用 Keybr 练习打字时，觉得虽然生成的伪英语能够练习输入不顺畅的个别字母，但并不能提升非母语用户对单词的掌握，于是有了本项目。
