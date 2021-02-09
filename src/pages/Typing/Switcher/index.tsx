@@ -33,7 +33,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch, changeCurrentP
       dispatch('phonetic')
       changeCurrentPhoneticState()
     },
-    [dispatch],
+    [dispatch, changeCurrentPhoneticState],
   )
 
   return (
