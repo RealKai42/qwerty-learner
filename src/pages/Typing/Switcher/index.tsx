@@ -78,6 +78,20 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <span className="py-1 px-3 text-gray-500 text-xs">开关音标显示（Ctrl + P）</span>
         </div>
       </div>
+      <div className="group relative">
+        <button
+          className={`${state.darkMode ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          onClick={(e) => {
+            dispatch('darkMode')
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon="moon" fixedWidth />
+        </button>
+        <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
+          <span className="py-1 px-3 text-gray-500 text-xs">开关深色模式</span>
+        </div>
+      </div>
     </div>
   )
 }

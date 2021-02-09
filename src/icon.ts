@@ -11,6 +11,7 @@ import {
   faCoffee,
   faMicrophone,
   faMicrophoneSlash,
+  faMoon,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -27,4 +28,5 @@ library.add(
   faCoffee,
   faMicrophone,
   faMicrophoneSlash,
+  faMoon,
 )
