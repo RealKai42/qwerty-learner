@@ -39,6 +39,8 @@ const App: React.FC = () => {
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const [dictName, chapter, chapterListLength, wordList, wordListDispatch] = useWordList(chapterLength)
   const [pronunciation, pronunciationDispatch] = usePronunciation()
+
+  const [currentPhoneticState, setCurrentPhoneticState] = useState<boolean>(switcherState.phonetic)
   const {
     modalState,
     title: modalTitle,
@@ -190,6 +192,21 @@ const App: React.FC = () => {
     [pronunciationDispatch],
   )
 
+  const switchTips = useCallback(
+    (hasWrong: boolean, isFinish: boolean) => {
+      if (hasWrong && !isFinish) {
+        switcherStateDispatch('phonetic', true)
+      } else if (!hasWrong && isFinish && !currentPhoneticState) {
+        switcherStateDispatch('phonetic', false)
+      }
+    },
+    [currentPhoneticState, switcherStateDispatch],
+  )
+
+  const changeCurrentPhoneticState = useCallback(() => {
+    setCurrentPhoneticState((values) => !values)
+  }, [setCurrentPhoneticState])
+
   return (
     <>
       {modalState && (
@@ -217,7 +234,7 @@ const App: React.FC = () => {
             changeChapter={changeChapter}
           />
           <PronunciationSwitcher state={pronunciation.toString()} changeState={changePronuciation} />
-          <Switcher state={switcherState} dispatch={switcherStateDispatch} />
+          <Switcher state={switcherState} dispatch={switcherStateDispatch} changeCurrentPhoneticState={changeCurrentPhoneticState} />
           <div className="group relative">
             <button
               className={`${
@@ -245,6 +262,7 @@ const App: React.FC = () => {
                 onFinish={onFinish}
                 isStart={isStart}
                 wordVisible={switcherState.wordVisible}
+                switchTips={switchTips}
               />
 
               {switcherState.phonetic && (wordList[order].usphone || wordList[order].ukphone) && (

@@ -5,7 +5,7 @@ import useSounds from 'hooks/useSounds'
 import style from './index.module.css'
 import usePronunciationSound from 'hooks/usePronouncation'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true, switchTips }) => {
   word = word.replace(new RegExp(' ', 'g'), '_')
 
   const [inputWord, setInputWord] = useState('')
@@ -46,20 +46,22 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   useEffect(() => {
     if (isFinish) {
       playHintSound()
+      switchTips(hasWrong, isFinish)
       onFinish()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isFinish, playHintSound])
+  }, [isFinish, hasWrong, switchTips, playHintSound])
 
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
+      switchTips(hasWrong, isFinish)
       setTimeout(() => {
         setInputWord('')
         setHasWrong(false)
       }, 300)
     }
-  }, [hasWrong, playBeepSound])
+  }, [hasWrong, isFinish, switchTips, playBeepSound])
 
   useEffect(() => {
     if (isStart && inputWord.length === 0) {
@@ -113,6 +115,7 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
+  switchTips: any
 }
 export default Word
 
