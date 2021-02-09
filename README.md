@@ -96,6 +96,11 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 - 专业四级英语
 - 专业八级英语
 - Coder Dict 程序员常用词
+- 高考
+- 中考
+- 商务英语
+- BEC
+- 人教版英语 3-9 年级
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出。
 <br />
