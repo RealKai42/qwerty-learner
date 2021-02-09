@@ -39,6 +39,7 @@ const App: React.FC = () => {
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const [dictName, chapter, chapterListLength, wordList, wordListDispatch] = useWordList(chapterLength)
   const [pronunciation, pronunciationDispatch] = usePronunciation()
+
   const {
     modalState,
     title: modalTitle,
@@ -183,12 +184,30 @@ const App: React.FC = () => {
     },
     [wordListDispatch],
   )
+
   const changePronuciation = useCallback(
     (state: string) => {
       pronunciationDispatch(state)
     },
     [pronunciationDispatch],
   )
+
+  const switchTips = useCallback(
+    (hasWrong: boolean, isFinish: boolean) => {
+      if (!switcherState.wordVisible) {
+        if (hasWrong && !isFinish) {
+          switcherStateDispatch('phonetic', true)
+        } else if (!hasWrong && isFinish && !switcherState.userPhonetic) {
+          switcherStateDispatch('phonetic', false)
+        }
+      }
+    },
+    [switcherState, switcherStateDispatch],
+  )
+
+  const changeUserPhoneticState = useCallback(() => {
+    switcherStateDispatch('userPhonetic', !switcherState.userPhonetic)
+  }, [switcherState, switcherStateDispatch])
 
   return (
     <>
@@ -216,8 +235,8 @@ const App: React.FC = () => {
             changeDict={changeDict}
             changeChapter={changeChapter}
           />
-          <PronunciationSwitcher state={pronunciation.toString()} changeState={changePronuciation} />
-          <Switcher state={switcherState} dispatch={switcherStateDispatch} />
+          <PronunciationSwitcher state={pronunciation.toString()} changePronuciationState={changePronuciation} />
+          <Switcher state={switcherState} dispatch={switcherStateDispatch} changeUserPhoneticState={changeUserPhoneticState} />
           <div className="group relative">
             <button
               className={`${
@@ -245,6 +264,7 @@ const App: React.FC = () => {
                 onFinish={onFinish}
                 isStart={isStart}
                 wordVisible={switcherState.wordVisible}
+                switchTips={switchTips}
               />
 
               {switcherState.phonetic && (wordList[order].usphone || wordList[order].ukphone) && (

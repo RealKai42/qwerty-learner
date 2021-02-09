@@ -5,8 +5,8 @@ export type DictSwitcherPropsType = {
   dictName: string
   chapter: number
   chapterListLength: number
-  changeDict: any
-  changeChapter: any
+  changeDict: (dictName: string) => void
+  changeChapter: (chapter: number) => void
 }
 
 const DictSwitcher: React.FC<DictSwitcherPropsType> = ({ dictName, chapter, chapterListLength, changeDict, changeChapter }) => {
