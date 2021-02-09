@@ -24,7 +24,7 @@ const GalleryPage: React.FC = () => {
           返回练习
         </NavLink>
       </Header>
-      <div className="mt-auto mb-auto flex max-w-screen-lg space-x-4 overflow-y-auto">
+      <div className="mt-auto mb-auto flex w-auto space-x-4 overflow-y-auto">
         <div className="bg-indigo-50 rounded-lg p-6 space-y-2 overflow-y-auto">
           <h2 className="sticky top-0 mb-4 font-bold text-lg text-gray-700 text-shadow z-10">词典选择</h2>
           {groups.map(([name, items]) => (

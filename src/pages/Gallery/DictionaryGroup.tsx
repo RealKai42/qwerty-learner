@@ -6,7 +6,7 @@ const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }
   return (
     <section>
       <h3 className="mb-2 text-sm font-bold text-gray-600">{title}</h3>
-      <main className="flex flex-col space-y-4">
+      <main className="grid gap-4 sm:grid-cols-1 md:grid-cols-2">
         {dictionaries.map((dict) => (
           <DictionaryCard key={dict.id} dictionary={dict} />
         ))}
