@@ -118,7 +118,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 目前项目处于开发初期，新功能正在持续添加中，如果你对软件有任何功能与建议，欢迎在 Issues 中提出
 
-项目的进展与未来计划在 [Issue](!https://github.com/Kaiyiwing/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Qwerty Learner 的未来感兴趣，欢迎参与讨论。
+项目的进展与未来计划在 [Issue](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Qwerty Learner 的未来感兴趣，欢迎参与讨论。
 
 如果你也喜欢本软件的设计思想，欢迎提交 pr，非常感谢你对我们的支持！
 <br />
@@ -128,7 +128,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 如果您对本项目感兴趣，我们非常欢迎参与到项目的贡献中，我们会尽可能地提供帮助
 
-在贡献前，希望您阅读 [Issue #42](!https://github.com/Kaiyiwing/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区其他未列入的工作，我们也非常欢迎您实现自己的想法。
+在贡献前，希望您阅读 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区其他未列入的工作，我们也非常欢迎您实现自己的想法。
 
 如果您确定了想要参与的工作，希望在有基本进展后提交 draft pr，我们可以在 draft pr 上进行讨论，也有利于听取其他 collaborator 的意见。
 
