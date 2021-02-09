@@ -1,4 +1,4 @@
-import { useAppSettings } from 'components/AppSettings'
+import { useAppSettings } from 'store/AppState'
 import { noop } from 'lodash'
 import { useEffect, useState } from 'react'
 

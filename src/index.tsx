@@ -1,17 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Typing from './pages/Typing'
 import './icon'
 import reportWebVitals from './reportWebVitals'
 import 'react-app-polyfill/stable'
-import { AppSettingsProvider } from 'components/AppSettings'
+import { AppStateProvider } from 'store/AppState'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import GalleryPage from './pages/Gallery'
+import TypingPage from './pages/Typing'
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppSettingsProvider>
-      <Typing />
-    </AppSettingsProvider>
+    <AppStateProvider>
+      <Router>
+        <Switch>
+          <Route path="/gallery">
+            <GalleryPage />
+          </Route>
+          <Route path="/">
+            <TypingPage />
+          </Route>
+        </Switch>
+      </Router>
+    </AppStateProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 )

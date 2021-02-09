@@ -1,0 +1,50 @@
+[
+    {
+        "name": "isLetter()",
+        "trans": [
+            "isLetter():是否是一个字母"
+        ]
+    },
+    {
+        "name": "isDigit()",
+        "trans": [
+            "isDigit():是否是一个数字字符"
+        ]
+    },
+    {
+        "name": "isWhitespace()",
+        "trans": [
+            "isWhitespace():是否是一个空白字符"
+        ]
+    },
+    {
+        "name": "isUpperCase()",
+        "trans": [
+            "isUpperCase():是否是大写字母"
+        ]
+    },
+    {
+        "name": "isLowerCase()",
+        "trans": [
+            "isLowerCase():是否是小写字母"
+        ]
+    },
+    {
+        "name": "toUpperCase()",
+        "trans": [
+            "toUpperCase():指定字母的大写形式"
+        ]
+    },
+    {
+        "name": "toLowerCase()",
+        "trans": [
+            "toLowerCase():指定字母的小写形式"
+        ]
+    },
+    {
+        "name": "toString()",
+        "trans": [
+            "toString():返回字符的字符串形式，字符串的长度仅为1"
+        ]
+    }
+]

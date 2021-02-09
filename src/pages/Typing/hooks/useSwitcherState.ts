@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import { useSetSoundState } from 'components/AppSettings'
+import { useSetSoundState } from 'store/AppState'
 
 export type SwitcherStateType = {
   phonetic: boolean
   wordVisible: boolean
   sound: boolean
+  userPhonetic: boolean
   darkMode: boolean
 }
 
@@ -18,6 +19,7 @@ const useSwitcherState = (initialState: {
   const [phonetic, setPhonetic] = useState(initialState.phonetic)
   const [wordVisible, setWordVisible] = useState(initialState.wordVisible)
   const [sound, setSound] = useSetSoundState()
+  const [userPhonetic, setUserPhonetic] = useState(initialState.phonetic)
   const [darkMode, setDarkMode] = useState(
     initialState.darkMode ??
       (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)),
@@ -34,6 +36,9 @@ const useSwitcherState = (initialState: {
       case 'sound':
         newStatus === undefined ? setSound(!sound) : setSound(newStatus)
         break
+      case 'userPhonetic':
+        newStatus === undefined ? setUserPhonetic(!userPhonetic) : setUserPhonetic(newStatus)
+        break
       case 'darkMode':
         const newDarkMode = newStatus ?? !darkMode
         setDarkMode(newDarkMode)
@@ -44,11 +49,9 @@ const useSwitcherState = (initialState: {
           localStorage.theme = 'light'
           document.documentElement.classList.remove('dark')
         }
-        break
     }
   }
-
-  return [{ phonetic, wordVisible, sound, darkMode }, dispatch]
+  return [{ phonetic, wordVisible, sound, darkMode, userPhonetic }, dispatch]
 }
 
 export default useSwitcherState

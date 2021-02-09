@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <>
       {showDonate && <Donate state={showDonate} buttonOnclick={() => setShowDonate(false)} />}
-      <div className="w-full text-sm text-center pb-1 ease-in" onClick={(e) => e.currentTarget.blur()}>
+      <div className="w-full text-sm text-center mt-4 pb-1 ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner">
           <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 dark:text-gray-400 mr-3" />
         </a>
