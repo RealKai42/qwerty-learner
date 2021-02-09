@@ -87,7 +87,7 @@ export const dictionaries: Dictionary[] = [
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-arraylist.json',
-    length: 32,
+    length: 25,
   },
   {
     id: 'javaCharacter',
@@ -95,7 +95,7 @@ export const dictionaries: Dictionary[] = [
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-character.json',
-    length: 32,
+    length: 8,
   },
   {
     id: 'javaHashmap',
@@ -103,7 +103,7 @@ export const dictionaries: Dictionary[] = [
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-hashmap.json',
-    length: 32,
+    length: 22,
   },
   {
     id: 'javaLinkedList',
@@ -111,7 +111,7 @@ export const dictionaries: Dictionary[] = [
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-linkedlist.json',
-    length: 32,
+    length: 25,
   },
   {
     id: 'javaString',
@@ -119,7 +119,7 @@ export const dictionaries: Dictionary[] = [
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-string.json',
-    length: 32,
+    length: 48,
   },
   {
     id: 'javaStringBuffer',
@@ -127,7 +127,7 @@ export const dictionaries: Dictionary[] = [
     description: 'JavaScript API 词典',
     category: '代码练习',
     url: './dicts/java-stringBuffer.json',
-    length: 32,
+    length: 20,
   },
 
   {
@@ -136,7 +136,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版三年级上册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue3_1_T.json',
-    length: 4464,
+    length: 64,
   },
   {
     id: 'san2',
@@ -144,7 +144,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版三年级下册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue3_2_T.json',
-    length: 4464,
+    length: 72,
   },
   {
     id: 'si1',
@@ -152,7 +152,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版四年级上册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue4_1_T.json',
-    length: 4464,
+    length: 84,
   },
   {
     id: 'si2',
@@ -160,7 +160,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版四年级下册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue4_2_T.json',
-    length: 4464,
+    length: 104,
   },
   {
     id: 'wu1',
@@ -168,7 +168,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版五年级上册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue5_1_T.json',
-    length: 4464,
+    length: 131,
   },
   {
     id: 'wu2',
@@ -176,7 +176,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版五年级下册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue5_2_T.json',
-    length: 4464,
+    length: 156,
   },
   {
     id: 'liu1',
@@ -184,7 +184,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版六年级上册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue6_1_T.json',
-    length: 4464,
+    length: 130,
   },
   {
     id: 'liu2',
@@ -192,7 +192,7 @@ export const dictionaries: Dictionary[] = [
     description: '人教版六年级下册',
     category: '少儿英语',
     url: './dicts/PEPXiaoXue6_2_T.json',
-    length: 4464,
+    length: 108,
   },
   {
     id: 'qi1',

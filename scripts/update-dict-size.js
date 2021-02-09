@@ -13,8 +13,10 @@ const dictSizeMap = Object.fromEntries(
 const sourceFilePath = path.join(__dirname, '..', 'src', 'resources', 'dictionary.ts')
 fs.writeFileSync(
   sourceFilePath,
-  fs.readFileSync(sourceFilePath, { encoding: 'utf-8' }).replace(/dicts\/([\w-]+.json)', length: \d+/gm, (original, dictFileName) => {
-    console.log(dictFileName)
-    return dictSizeMap[dictFileName] ? `dicts/${dictFileName}', length: ${dictSizeMap[dictFileName]}` : original
-  }),
+  fs
+    .readFileSync(sourceFilePath, { encoding: 'utf-8' })
+    .replace(/dicts\/([a-zA-Z0-9_-]+.json)',([\n\s]+)length: \d+/gm, (original, dictFileName, whiteSpace) => {
+      console.log(dictFileName)
+      return dictSizeMap[dictFileName] ? `dicts/${dictFileName}',${whiteSpace}length: ${dictSizeMap[dictFileName]}` : original
+    }),
 )
