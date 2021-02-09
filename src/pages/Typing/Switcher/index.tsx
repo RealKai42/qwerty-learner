@@ -6,10 +6,10 @@ import { useHotkeys } from 'react-hotkeys-hook'
 export type SwitcherPropsType = {
   state: SwitcherStateType
   dispatch: SwitcherDispatchType
-  changeCurrentPhoneticState: any
+  changeUserPhoneticState: any
 }
 
-const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch, changeCurrentPhoneticState }) => {
+const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch, changeUserPhoneticState }) => {
   useHotkeys(
     'ctrl+m',
     (e) => {
@@ -31,9 +31,9 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch, changeCurrentP
     (e) => {
       e.preventDefault()
       dispatch('phonetic')
-      changeCurrentPhoneticState()
+      changeUserPhoneticState()
     },
-    [dispatch, changeCurrentPhoneticState],
+    [dispatch, changeUserPhoneticState],
   )
 
   return (
@@ -71,7 +71,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch, changeCurrentP
           className={`${state.phonetic ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             dispatch('phonetic')
-            changeCurrentPhoneticState()
+            changeUserPhoneticState()
             e.currentTarget.blur()
           }}
         >
