@@ -11,7 +11,9 @@ const ChapterGroup: React.FC<ChapterGroupProps> = ({ count }) => {
         <button
           className="relative p-4 w-36 bg-gray-50 border border-gray-300 shadow-lg rounded-md text-left overflow-hidden focus:outline-none"
           onClick={() => setSelectedChapter(index)}
+          key={index}
         >
+          {/* todo: 部分字典的最后一个章节并非20词  */}
           <p className="text-lg text-gray-800  w-full ">Chapter {index + 1}</p>
           <p className="text-sm font-bold text-gray-600">20 词</p>
           {selectedChapter === index ? (
