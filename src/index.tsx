@@ -12,7 +12,7 @@ import TypingPage from './pages/Typing'
 ReactDOM.render(
   <React.StrictMode>
     <AppStateProvider>
-      <Router>
+      <Router basename="/qwerty-learner">
         <Switch>
           <Route path="/gallery">
             <GalleryPage />
