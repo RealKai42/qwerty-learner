@@ -9,7 +9,7 @@ export type Word = {
   ukphone: string
 }
 
-const numWordsPerChapter = 20
+const numWordsPerChapter = 2
 
 export type UseWordListResult = {
   dictName: string

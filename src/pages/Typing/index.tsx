@@ -85,6 +85,7 @@ const App: React.FC = () => {
       setOrder(order)
       wordList?.setChapterNumber(chapter)
       setModalState(modalState)
+      setIsStart(true)
     }
   }
 
@@ -93,6 +94,7 @@ const App: React.FC = () => {
       return
     }
     if (order === wordList.words.length - 1) {
+      setIsStart(false)
       // 用户完成当前章节
       if (wordList.chapter === wordList.chapterListLength - 1) {
         setModalState(true)
@@ -101,6 +103,7 @@ const App: React.FC = () => {
         setModalHandler(modalHandlerGenerator(wordList.chapter, 0, false), modalHandlerGenerator(0, 0, false), () => {
           modalHandlerGenerator(wordList.chapter, 0, false)()
           switcherStateDispatch('wordVisible', false)
+          setIsStart(true)
         })
       } else {
         setModalState(true)
@@ -109,6 +112,7 @@ const App: React.FC = () => {
         setModalHandler(modalHandlerGenerator(wordList.chapter + 1, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
           modalHandlerGenerator(wordList.chapter, 0, false)()
           switcherStateDispatch('wordVisible', false)
+          setIsStart(true)
         })
       }
     } else {
