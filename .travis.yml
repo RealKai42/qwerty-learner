@@ -5,7 +5,7 @@ cache:
   directories:
     - node_modules
 env:
-  - CI=false DEPLOY_ENV='travis'
+  - CI=false DEPLOY_ENV=travis
 script:
   - yarn build
 deploy:
