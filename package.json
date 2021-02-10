@@ -79,6 +79,12 @@
       "prettier --write"
     ]
   },
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
