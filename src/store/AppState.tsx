@@ -12,12 +12,17 @@ export type AppState = {
   sound: boolean
   /**
    * Avaiable dictionaries.
+   * This field should not be written to `localStorage`.
    */
   dictionaries: Dictionary[]
   /**
    * The selected dictionary.
    */
   selectedDictionary: Dictionary
+  /**
+   * Which type of pronunciation is used.
+   * Available options: `"us"`, `"uk"` and `false`.
+   */
   pronunciation: PronunciationType
   /**
    * The selected chapter number.
@@ -36,7 +41,10 @@ export type AppStateData = {
 
 const AppStateContext = React.createContext<AppStateData>({} as AppStateData)
 
-export function useAppSettings(): AppState {
+/**
+ * Get the global app state.
+ */
+export function useAppState(): AppState {
   const { state } = useContext(AppStateContext)
   return state
 }

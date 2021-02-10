@@ -3,12 +3,12 @@ import clickSoundFileUrl from 'assets/click.wav'
 import beepSoundFileUrl from 'assets/beep.wav'
 import hintSoundFileUrl from 'assets/hint.wav'
 import { noop } from 'lodash'
-import { useAppSettings } from 'store/AppState'
+import { useAppState } from 'store/AppState'
 
 export type PlayFunction = ReturnType<typeof useSound>[0]
 
 export default function useKeySound(): [PlayFunction, PlayFunction, PlayFunction] {
-  const { sound } = useAppSettings()
+  const { sound } = useAppState()
   const [playClickSound] = useSound(clickSoundFileUrl)
   const [playBeepSound] = useSound(beepSoundFileUrl)
   const [playSuccessSound] = useSound(hintSoundFileUrl)
