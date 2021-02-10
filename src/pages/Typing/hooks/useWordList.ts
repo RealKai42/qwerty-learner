@@ -27,7 +27,6 @@ export function useWordList(): UseWordListResult | undefined {
   const selectedDictionary = useSelectedDictionary()
   const [currentChapter, setCurrentChapter] = useSelectedChapter()
   const { data: wordList } = useSWR([selectedDictionary.id, selectedDictionary.url], fetchWordList)
-
   return wordList === undefined
     ? undefined
     : {

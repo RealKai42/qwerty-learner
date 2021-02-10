@@ -5,7 +5,7 @@ import useSounds from 'hooks/useSounds'
 import style from './index.module.css'
 import usePronunciationSound from 'hooks/usePronouncation'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true, switchTips }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   word = word.replace(new RegExp(' ', 'g'), '_')
 
   const [inputWord, setInputWord] = useState('')
@@ -46,22 +46,21 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   useEffect(() => {
     if (isFinish) {
       playHintSound()
-      switchTips(hasWrong, isFinish)
+
       onFinish()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isFinish, hasWrong, switchTips, playHintSound])
+  }, [isFinish, hasWrong, playHintSound])
 
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
-      switchTips(hasWrong, isFinish)
       setTimeout(() => {
         setInputWord('')
         setHasWrong(false)
       }, 300)
     }
-  }, [hasWrong, isFinish, switchTips, playBeepSound])
+  }, [hasWrong, isFinish, playBeepSound])
 
   useEffect(() => {
     if (isStart && inputWord.length === 0) {
@@ -96,6 +95,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
 
   return (
     <div className={`pt-4 pb-1 flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
+      {/* {console.log(inputWord, word)} */}
       {word.split('').map((t, index) => {
         return (
           <Letter
@@ -115,7 +115,6 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
-  switchTips: (hasWrong: boolean, isFinish: boolean) => void
 }
 export default Word
 

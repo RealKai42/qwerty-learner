@@ -5,7 +5,6 @@ export type SwitcherStateType = {
   phonetic: boolean
   wordVisible: boolean
   sound: boolean
-  userPhonetic: boolean
   darkMode: boolean
 }
 
@@ -19,7 +18,6 @@ const useSwitcherState = (initialState: {
   const [phonetic, setPhonetic] = useState(initialState.phonetic)
   const [wordVisible, setWordVisible] = useState(initialState.wordVisible)
   const [sound, setSound] = useSetSoundState()
-  const [userPhonetic, setUserPhonetic] = useState(initialState.phonetic)
   const [darkMode, setDarkMode] = useDarkMode()
 
   const dispatch: SwitcherDispatchType = (type, newStatus) => {
@@ -33,14 +31,11 @@ const useSwitcherState = (initialState: {
       case 'sound':
         setSound(newStatus ?? !sound)
         break
-      case 'userPhonetic':
-        setUserPhonetic(newStatus ?? !userPhonetic)
-        break
       case 'darkMode':
         setDarkMode(newStatus ?? !darkMode)
     }
   }
-  return [{ phonetic, wordVisible, sound, darkMode, userPhonetic }, dispatch]
+  return [{ phonetic, wordVisible, sound, darkMode }, dispatch]
 }
 
 export default useSwitcherState
