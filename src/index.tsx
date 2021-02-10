@@ -13,6 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <AppStateProvider>
       <Router basename={process.env.DEPLOY_ENV === 'travis' ? 'qwerty-learner' : ''}>
+        {console.log(process.env.DEPLOY_ENV)}
         <Switch>
           <Route path="/gallery">
             <GalleryPage />
