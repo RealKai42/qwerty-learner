@@ -12,7 +12,7 @@ import TypingPage from './pages/Typing'
 ReactDOM.render(
   <React.StrictMode>
     <AppStateProvider>
-      <Router basename={process.env.REACT_APP_DEPLOY_ENV === 'travis' ? 'qwerty-learner' : ''}>
+      <Router basename={process.env.REACT_APP_DEPLOY_ENV === 'travis' ? '/qwerty-learner' : ''}>
         <Switch>
           <Route path="/gallery">
             <GalleryPage />
