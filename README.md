@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@headlessui/react.svg" alt="License"></a>
+  <a href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/github/license/KaiyiWing/qwerty-learner" alt="License"></a>
   <a><img src="https://travis-ci.com/Kaiyiwing/qwerty-learner.svg?branch=master" alt="Build State"></a>
   <a><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
   <a><img src="https://img.shields.io/badge/Powerd%20by-React-blue"/></a>
