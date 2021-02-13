@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const ChapterGroup: React.FC<ChapterGroupProps> = ({ count }) => {
   const [selectedChapter, setSelectedChapter] = useSelectedChapter()
   return (
-    <main className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <main className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mr-4">
       {range(count).map((index) => (
         <button
-          className="relative p-4 bg-gray-50 dark:bg-gray-700 dark:bg-opacity-10 border border-gray-300 dark:border-gray-500 shadow-lg rounded-md text-left overflow-hidden focus:outline-none"
+          className="relative p-4 w-36 bg-gray-50 dark:bg-gray-700 dark:bg-opacity-10 border border-gray-300 dark:border-gray-500 shadow-lg rounded-md text-left overflow-hidden focus:outline-none"
           onClick={() => setSelectedChapter(index)}
           key={index}
         >
