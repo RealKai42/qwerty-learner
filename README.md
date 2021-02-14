@@ -24,6 +24,12 @@ GitHub Pages: https://kaiyiwing.github.io/qwerty-learner/
 Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 国内用户建议使用 Gitee 访问
+<br/>
+<br/>
+
+项目已发布 VSCode 插件版，一键启动、随时开始练习  
+[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)  
+[GitHub](https://github.com/Kaiyiwing/qwerty-learner-vscode)
 
 <br />
 
