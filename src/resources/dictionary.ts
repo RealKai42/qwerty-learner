@@ -29,6 +29,8 @@ export const dictionaries: Dictionary[] = [
     length: 4464,
   },
   { id: 'toefl', name: 'TOEFL', description: '托福考试常见词', category: '英语学习', url: './dicts/TOEFL_T.json', length: 4264 },
+  { id: 'bec2', name: '商务英语', description: '商务英语常见词', category: '英语学习', url: './dicts/BEC_2_T.json', length: 2753 },
+  { id: 'bec3', name: 'BEC', description: 'BEC考试常见词', category: '英语学习', url: './dicts/BEC_3.json', length: 4264 },
   { id: 'coder', name: 'Coder Dict', description: '程序员常见单词词库', category: '代码练习', url: './dicts/it-words.json', length: 1700 },
   { id: 'jsArray', name: 'JS: Array', description: 'JavaScript API 词典', category: '代码练习', url: './dicts/js-array.json', length: 36 },
   { id: 'jsDate', name: 'JS: Date', description: 'JavaScript API 词典', category: '代码练习', url: './dicts/js-date.json', length: 34 },
