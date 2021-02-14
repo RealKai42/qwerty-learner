@@ -25,20 +25,24 @@ const GalleryPage: React.FC = () => {
         </NavLink>
       </Header>
       <div className="mt-auto mb-auto flex w-auto space-x-4 overflow-y-auto">
-        <div className="bg-indigo-50 dark:bg-blue-gray-800 rounded-lg p-6 space-y-2 overflow-y-auto">
+        <div className="bg-indigo-50 dark:bg-blue-gray-800 rounded-lg p-6 space-y-2 overflow-y-auto flex flex-col">
           <h2 className="sticky top-0 mb-4 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
             词典选择
           </h2>
-          {groups.map(([name, items]) => (
-            <DictionaryGroup key={name} title={name} dictionaries={items} />
-          ))}
+          <div className="overflow-y-auto">
+            {groups.map(([name, items]) => (
+              <DictionaryGroup key={name} title={name} dictionaries={items} />
+            ))}
+          </div>
         </div>
-        <div className="p-6 overflow-y-auto bg-indigo-50 dark:bg-blue-gray-800 rounded-lg">
+        <div className="p-6 overflow-y-auto bg-indigo-50 dark:bg-blue-gray-800 rounded-lg flex flex-col">
           <h2 className="sticky top-0 mb-4 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
             章节选择
           </h2>
           {/* TODO: remove magic number here. */}
-          <ChapterGroup count={Math.ceil(selectedDictionary.length / 20)} />
+          <div className="overflow-y-auto">
+            <ChapterGroup count={Math.ceil(selectedDictionary.length / 20)} />
+          </div>
         </div>
       </div>
     </Layout>
