@@ -1,14 +1,13 @@
 import React, { MouseEvent } from 'react'
 import { Transition } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import alipay from 'assets/alipay.png'
 
 type DonateProps = {
   state: boolean
   buttonOnclick: (e: MouseEvent) => void
 }
 
-const Donate: React.FC<DonateProps> = ({ state, buttonOnclick }) => {
+const Donate: React.FC<DonateProps> = ({ state, buttonOnclick, children }) => {
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
       <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -53,21 +52,7 @@ const Donate: React.FC<DonateProps> = ({ state, buttonOnclick }) => {
                     <FontAwesomeIcon icon="coffee" className="h-10 w-10 stroke-current text-yellow-500" />
                   </div>
 
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
-                      Buy me a coffee
-                    </h3>
-                    <div className="mt-2 ">
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
-                        非常感谢大家使用 Qwerty Learner,
-                        目前该网站由三个人用业余时间在维护，我们希望在未来购买独立的域名(目前使用vercel部署)，并购买服务器以方便国内用户访问与云同步存储数据。
-                      </p>
-                      <br />
-                      <p className="text-sm text-gray-700 dark:text-gray-200">如果您喜欢我们软件，非常感谢您对我们未来的支持!</p>
-                      <br />
-                      <img className="w-2/6 ml-1 " src={alipay} alt="alipay" />
-                    </div>
-                  </div>
+                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">{children}</div>
                 </div>
               </div>
 
