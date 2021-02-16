@@ -183,7 +183,7 @@ const App: React.FC = () => {
               <div className="h-1/3"></div>
               <div>
                 <Word
-                  key={`word-${wordList.words[order].name}`}
+                  key={`word-${wordList.words[order].name}-${order}`}
                   word={wordList.words[order].name}
                   onFinish={onFinish}
                   isStart={isStart}
