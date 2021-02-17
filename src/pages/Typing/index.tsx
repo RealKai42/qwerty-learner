@@ -98,9 +98,9 @@ const App: React.FC = () => {
       // 用户完成当前章节
       if (wordList.chapter === wordList.chapterListLength - 1) {
         setModalState(true)
-        setModalMessage('提示', '您已完成最后一个章节', '重复本章节', '重置到第一章节', '默写本章节')
+        setModalMessage('提示', '您已完成最后一个章节', '重置到第一章节', '重复本章节', '默写本章节')
         setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(wordList.chapter, 0, false), modalHandlerGenerator(0, 0, false), () => {
+        setModalHandler(modalHandlerGenerator(0, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
           modalHandlerGenerator(wordList.chapter, 0, false)()
           switcherStateDispatch('wordVisible', false)
           setIsStart(true)
