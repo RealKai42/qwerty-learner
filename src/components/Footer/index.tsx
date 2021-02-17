@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         </Donate>
       )}
       <div className="w-full text-sm text-center mt-4 pb-1 ease-in" onClick={(e) => e.currentTarget.blur()}>
-        <a href="https://github.com/Kaiyiwing/qwerty-learner">
+        <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 dark:text-gray-400 mr-3" />
         </a>
 
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
           <img src={vscLogo} className="svg-inline--fa fill-current text-gray-500" alt="visual studio code" />
         </span>
 
-        <a href="mailto:ZHANG.Kaiyi42@gmail.com" onClick={(e) => e.currentTarget.blur()}>
+        <a href="mailto:ZHANG.Kaiyi42@gmail.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
           <FontAwesomeIcon icon={['fas', 'envelope']} className="text-gray-500 dark:text-gray-400 mr-3" />
         </a>
 
