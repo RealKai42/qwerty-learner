@@ -30,26 +30,23 @@ const Footer: React.FC = () => {
             </>
           ) : (
             <>
-              {' '}
-              <>
-                <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
-                  VSCode 摸🐟插件
-                </h3>
-                <div className="mt-2 ">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    我们根据大家的建议开发了 VSCode 插件，支持一键启动，随时开始背单词。
-                    可以在任意文件中一键开启，开启后单词显示在状态栏中，且插件会拦截用户对文档的输入，不会影响到原始文档。
-                  </p>
-                  <br /> <br />
-                  <a className="underline mr-5" href="https://github.com/Kaiyiwing/qwerty-learner-vscode">
-                    GitHub 项目
-                  </a>
-                  <a className="underline" href="https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner">
-                    VSCode 插件链接
-                  </a>
-                  <br />
-                </div>
-              </>
+              <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
+                VSCode 摸🐟插件
+              </h3>
+              <div className="mt-2 ">
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  我们根据大家的建议开发了 VSCode 插件，支持一键启动，随时开始背单词。
+                  可以在任意文件中一键开启，开启后单词显示在状态栏中，且插件会拦截用户对文档的输入，不会影响到原始文档。
+                </p>
+                <br /> <br />
+                <a className="underline mr-5 dark:text-gray-300" href="https://github.com/Kaiyiwing/qwerty-learner-vscode">
+                  GitHub 项目
+                </a>
+                <a className="underline dark:text-gray-300" href="https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner">
+                  VSCode 插件链接
+                </a>
+                <br />
+              </div>
             </>
           )}
         </Donate>
