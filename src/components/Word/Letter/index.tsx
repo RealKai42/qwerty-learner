@@ -21,7 +21,10 @@ const Letter: React.FC<LetterProps> = ({ letter, state, visible }) => {
   }
 
   return (
-    <span className={`m-0 p-0 text-5xl font-mono font-normal transition-colors ${stateClassName}`} style={{ paddingRight: '0.2rem' }}>
+    <span
+      className={`m-0 p-0 text-5xl font-mono font-normal  ${stateClassName}`}
+      style={{ paddingRight: '0.2rem', transitionDuration: '0ms' }}
+    >
       {visible ? letter : '_'}
     </span>
   )
