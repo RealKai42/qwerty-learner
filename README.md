@@ -140,7 +140,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 如果您对本项目感兴趣，我们非常欢迎参与到项目的贡献中，我们会尽可能地提供帮助
 
-在贡献前，希望您阅读 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区其他未列入的工作，我们也非常欢迎您实现自己的想法。
+在贡献前，希望您阅读 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区 Label 为 "Help Wanted" 的工作，我们也非常欢迎您实现自己的想法。
 
 如果您确定了想要参与的工作，希望在有基本进展后提交 draft pr，我们可以在 draft pr 上进行讨论，也有利于听取其他 collaborator 的意见。
 
