@@ -147,15 +147,20 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 再次感谢您对项目的贡献！🎉
 
 <br />
-<br />
 
-## ☕️ Buy me a coffe
+## ☕️ Buy us a coffe
 
 非常感谢大家使用 Qwerty Learner, 目前该网站由三个人用业余时间在维护，我们希望在未来购买独立的域名(目前使用 vercel 部署)，并购买服务器以方便国内用户访问与云同步存储数据。
 
 如果您喜欢我们软件，非常感谢您对我们未来的支持!
 
 <img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
+
+## 👨‍💻 Contributors
+
+<a href="https://github.com/Kaiyiwing/qwerty-learner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Kaiyiwing/qwerty-learner" />
+</a>
 
 ## 🎁 鸣谢
 
