@@ -17,7 +17,7 @@ export default function usePronunciationSound(word: string): PronounceFunction {
   useEffect(() => {
     audio?.play()
     return () => {
-      // Pause the audio when unmount
+      // Pause the audio when unMount
       audio?.pause()
     }
   }, [audio, word])

@@ -16,7 +16,7 @@ const Donate: React.FC<DonateProps> = ({ state, buttonOnclick, children }) => {
           enter="ease-out duration-30"
           enterFrom="opacity-0 "
           enterTo="opacity-100 "
-          leave="esae-in duration-200"
+          leave="ease-in duration-200"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
