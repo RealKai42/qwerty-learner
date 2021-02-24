@@ -11,7 +11,7 @@ export type AppState = {
    */
   sound: boolean
   /**
-   * Avaiable dictionaries.
+   * Available dictionaries.
    * This field should not be written to `localStorage`.
    */
   dictionaries: Dictionary[]

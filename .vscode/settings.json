@@ -4,5 +4,15 @@
   },
   "css.lint.unknownAtRules": "ignore",
   "css.validate": false,
-  "files.eol": "\n"
+  "files.eol": "\n",
+  "cSpell.words": [
+    "alipay",
+    "esae",
+    "fontawesome",
+    "fortawesome",
+    "headlessui",
+    "ukphone",
+    "usphone",
+    "vercel"
+  ]
 }
