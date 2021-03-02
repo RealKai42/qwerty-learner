@@ -16,7 +16,7 @@ const Tooltip: React.FC<
   }[placement]
 
   return (
-    <div className="group relative">
+    <div className="relative">
       <div onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)}>
         {children}
       </div>
