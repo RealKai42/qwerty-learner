@@ -2,6 +2,7 @@ import React, { MouseEvent } from 'react'
 import { Transition } from '@headlessui/react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Tooltip from 'components/Tooltip'
 
 type ModalsProps = {
   state: boolean
@@ -103,7 +104,7 @@ const Modals: React.FC<ModalsProps> = ({
               </div>
 
               <div className="bg-gray-50 dark:bg-gray-700 dark:bg-opacity-10 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                <div className="group relative">
+                <Tooltip content="快捷键 Enter" placement="top">
                   <button
                     type="button"
                     className={`w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white dark:text-opacity-80 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm ${firstButtonClassName}`}
@@ -111,12 +112,9 @@ const Modals: React.FC<ModalsProps> = ({
                   >
                     {firstButton}
                   </button>
-                  <div className="invisible group-hover:visible absolute bottom-full left-1/2 w-40 -ml-20 pl-2 flex items-center justify-center">
-                    <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">快捷键 Enter</span>
-                  </div>
-                </div>
+                </Tooltip>
 
-                <div className="group relative">
+                <Tooltip content="快捷键 Shift + Enter" placement="top">
                   <button
                     type="button"
                     className={`mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-500 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-base font-medium text-gray-700 dark:text-white dark:text-opacity-60 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm ${
@@ -126,13 +124,10 @@ const Modals: React.FC<ModalsProps> = ({
                   >
                     {secondButton}
                   </button>
-                  <div className="invisible group-hover:visible absolute bottom-full left-1/2 w-40 -ml-20 pl-3 flex items-center justify-center">
-                    <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">快捷键 Shift + Enter</span>
-                  </div>
-                </div>
+                </Tooltip>
 
                 {thirdButton && thirdButtonOnclick && (
-                  <div className="group relative">
+                  <Tooltip content={`快捷键 ${thirdButtonHotkey}`} placement="top">
                     <button
                       type="button"
                       className={`mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-500 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-base font-medium text-gray-700 dark:text-white dark:text-opacity-60 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm ${
@@ -142,10 +137,7 @@ const Modals: React.FC<ModalsProps> = ({
                     >
                       {thirdButton}
                     </button>
-                    <div className="invisible group-hover:visible absolute bottom-full left-1/2 w-40 -ml-20 pl-3 flex items-center justify-center">
-                      <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">快捷键 {thirdButtonHotkey}</span>
-                    </div>
-                  </div>
+                  </Tooltip>
                 )}
               </div>
             </div>

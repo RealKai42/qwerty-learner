@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SwitcherStateType, SwitcherDispatchType } from '../hooks/useSwitcherState'
 import { useHotkeys } from 'react-hotkeys-hook'
+import Tooltip from 'components/Tooltip'
 
 export type SwitcherPropsType = {
   state: SwitcherStateType
@@ -44,7 +45,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
 
   return (
     <div className="flex items-center justify-center space-x-3">
-      <div className="group relative">
+      <Tooltip content="开关声音（Ctrl + M）">
         <button
           className={`${state.sound ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -54,11 +55,8 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         >
           <FontAwesomeIcon icon={state.sound ? 'volume-up' : 'volume-mute'} fixedWidth />
         </button>
-        <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关声音（Ctrl + M）</span>
-        </div>
-      </div>
-      <div className="group relative">
+      </Tooltip>
+      <Tooltip content="开关英语显示（Ctrl + V）">
         <button
           className={`${state.wordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -68,11 +66,8 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         >
           <FontAwesomeIcon icon={state.wordVisible ? 'eye' : 'eye-slash'} fixedWidth />
         </button>
-        <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关英语显示（Ctrl + V）</span>
-        </div>
-      </div>
-      <div className="group relative">
+      </Tooltip>
+      <Tooltip content="开关音标显示（Ctrl + P）">
         <button
           className={`${state.phonetic ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -82,11 +77,8 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         >
           <FontAwesomeIcon icon="assistive-listening-systems" fixedWidth />
         </button>
-        <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关音标显示（Ctrl + P）</span>
-        </div>
-      </div>
-      <div className="group relative">
+      </Tooltip>
+      <Tooltip content="开关深色模式（Ctrl + D）">
         <button
           className={`text-indigo-400 text-lg focus:outline-none`}
           onClick={(e) => {
@@ -96,10 +88,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
         >
           <FontAwesomeIcon icon={state.darkMode ? 'moon' : 'sun'} fixedWidth />
         </button>
-        <div className="invisible group-hover:visible absolute top-full left-1/2 w-44 -ml-20 pt-2 flex items-center justify-center">
-          <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">开关深色模式（Ctrl + D）</span>
-        </div>
-      </div>
+      </Tooltip>
     </div>
   )
 }
