@@ -17,6 +17,7 @@ import { useWordList } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
+import Tooltip from 'components/Tooltip'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -149,20 +150,17 @@ const App: React.FC = () => {
       ) : (
         <Layout>
           <Header>
-            <div className="group relative">
+            <Tooltip content="词典章节切换">
               <NavLink
-                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-opacity-100"
+                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-white dark:hover:text-opacity-100"
                 to="/gallery"
               >
                 {wordList.dictName} 第 {wordList.chapter + 1} 章
               </NavLink>
-              <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-0 flex items-center justify-center">
-                <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">词典章节切换</span>
-              </div>
-            </div>
+            </Tooltip>
             <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
-            <div className="group relative">
+            <Tooltip content="快捷键 Enter">
               <button
                 className={`${
                   isStart ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
@@ -173,10 +171,7 @@ const App: React.FC = () => {
               >
                 {isStart ? 'Pause' : 'Start'}
               </button>
-              <div className="invisible group-hover:visible absolute top-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-                <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">快捷键 Enter</span>
-              </div>
-            </div>
+            </Tooltip>
           </Header>
           <Main>
             <div className="container h-full relative flex mx-auto flex-col items-center">
