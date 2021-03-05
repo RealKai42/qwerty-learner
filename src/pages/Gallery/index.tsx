@@ -7,6 +7,7 @@ import { useDictionaries, useSelectedDictionary } from 'store/AppState'
 import { groupBy } from 'lodash'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ChapterGroup from './ChapterGroup'
+import Tooltip from 'components/Tooltip'
 
 const GalleryPage: React.FC = () => {
   const dictionaries = useDictionaries()
@@ -20,9 +21,11 @@ const GalleryPage: React.FC = () => {
   return (
     <Layout>
       <Header>
-        <NavLink className="bg-indigo-400 text-white dark:text-opacity-80 text-lg px-6 py-1 rounded-lg focus:outline-none" to="/">
-          返回练习
-        </NavLink>
+        <Tooltip content="快捷键 Enter or Esc">
+          <NavLink className="bg-indigo-400 text-white dark:text-opacity-80 text-lg px-6 py-1 rounded-lg focus:outline-none" to="/">
+            返回练习
+          </NavLink>
+        </Tooltip>
       </Header>
       <div className="mt-auto mb-auto flex w-auto space-x-4 overflow-y-auto">
         <div className="bg-indigo-50 dark:bg-blue-gray-800 rounded-lg p-6 space-y-2 overflow-y-auto flex flex-col">
