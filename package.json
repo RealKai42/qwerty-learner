@@ -49,6 +49,7 @@
     "start": "craco start",
     "build": "CI=false craco build",
     "test": "craco test",
+    "lint": "eslint .",
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
