@@ -7,6 +7,7 @@ import usePronunciationSound from 'hooks/usePronunciation'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   word = word.replace(new RegExp(' ', 'g'), '_')
+  word = word.replace(new RegExp('…', 'g'), '..')
 
   const [inputWord, setInputWord] = useState('')
   const [statesList, setStatesList] = useState<LetterState[]>([])
