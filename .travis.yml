@@ -7,6 +7,7 @@ cache:
 env:
   - CI=false REACT_APP_DEPLOY_ENV=travis
 script:
+  - yarn lint
   - yarn build
 deploy:
   provider: pages
