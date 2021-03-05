@@ -49,6 +49,7 @@
     "start": "craco start",
     "build": "CI=false craco build",
     "test": "craco test",
+    "lint": "eslint .",
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
@@ -63,6 +64,7 @@
       "react-app/jest",
       "plugin:prettier/recommended"
     ],
+    "ignorePatterns": ["build/*"],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
@@ -71,7 +73,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && eslint . --fix"
     }
   },
   "lint-staged": {
