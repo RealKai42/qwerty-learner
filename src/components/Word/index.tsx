@@ -5,8 +5,13 @@ import useSounds from 'hooks/useSounds'
 import style from './index.module.css'
 import usePronunciationSound from 'hooks/usePronunciation'
 
+const EXPLICIT_SPACE = '␣'
+
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
-  word = word.replace(new RegExp(' ', 'g'), '_')
+  // Used in `usePronunciationSound`.
+  const originalWord = word
+
+  word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
   word = word.replace(new RegExp('…', 'g'), '..')
 
   const [inputWord, setInputWord] = useState('')
@@ -14,7 +19,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
-  const playPronounce = usePronunciationSound(word)
+  const playPronounce = usePronunciationSound(originalWord)
 
   const onKeydown = useCallback(
     (e) => {
@@ -22,7 +27,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       if (char === ' ') {
         // 防止用户惯性按空格导致页面跳动
         e.preventDefault()
-        setInputWord((value) => (value += '_'))
+        setInputWord((value) => (value += EXPLICIT_SPACE))
         playKeySound()
       }
       if (isChineseSymbol(char)) {

@@ -7,8 +7,6 @@ declare type PronounceFunction = () => void
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
 
 export default function usePronunciationSound(word: string): PronounceFunction {
-  word = word.replace(new RegExp('_', 'g'), ' ')
-
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
   const { pronunciation } = useAppState()
   const ukPronounceFunction = () => setAudio(new Audio(pronunciationApi + word + '&type=1'))
