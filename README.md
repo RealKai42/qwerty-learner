@@ -18,7 +18,7 @@
 </p>
 
 <div align=center>
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/Screenshot.png"/>
+<img  src="docs/Screenshot.png"/>
 </div>
 
 ## 📸 在线访问

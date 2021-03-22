@@ -179,7 +179,8 @@ const App: React.FC = () => {
               <div>
                 <Word
                   key={`word-${wordList.words[order].name}-${order}`}
-                  word={wordList.words[order].name}
+                  // word={wordList.words[order].name}
+                  word={'melatonin'}
                   onFinish={onFinish}
                   isStart={isStart}
                   wordVisible={switcherState.wordVisible}
@@ -187,7 +188,8 @@ const App: React.FC = () => {
                 {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                   <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
                 )}
-                <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
+                {/* <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} /> */}
+                <Translation key={`trans-${wordList.words[order].name}`} trans={'褪黑激素'} />
               </div>
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
             </div>
