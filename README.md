@@ -1,3 +1,7 @@
+<div align=center>
+<img  src="src/assets/logo.svg"/>
+</div>
+
 <h1 align="center">
   Qwerty Learner
 </h1>
@@ -196,6 +200,10 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 JS API 来自于[react-code-game](https://github.com/webzhd/react-code-game) ，感谢项目对 JS API 的爬取与预处理。
 <br/><br/>
+
+### 项目 Icon
+
+感谢[libregd](https://github.com/libregd)提供图标设计，给项目贡献了多个好看的图标设计方案，同时也在项目的进行中提供了设计、建议、未来规划等诸多支持
 
 ### 感谢支持
 
