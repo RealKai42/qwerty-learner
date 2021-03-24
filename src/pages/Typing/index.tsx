@@ -63,7 +63,9 @@ const App: React.FC = () => {
         if (isStart) {
           setInputCount((count) => count + 1)
         } else {
-          setIsStart(true)
+          if (document.activeElement?.nodeName === 'BODY') {
+            setIsStart(true)
+          }
         }
       }
     }
@@ -72,12 +74,18 @@ const App: React.FC = () => {
         setIsStart(false)
       }
     }
+    const hjOnclick = () => {
+      setIsStart(false)
+    }
 
     window.addEventListener('blur', onBlur)
     window.addEventListener('keydown', onKeydown)
+    document.getElementsByClassName('_hj_feedback_container')[0]?.addEventListener('click', hjOnclick)
+
     return () => {
       window.removeEventListener('keydown', onKeydown)
       window.removeEventListener('blur', onBlur)
+      document.getElementsByClassName('_hj_feedback_container')[0]?.removeEventListener('click', hjOnclick)
     }
   }, [isStart])
 
