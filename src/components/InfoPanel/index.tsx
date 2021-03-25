@@ -54,7 +54,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color
               <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
                   <div
-                    className={`mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md dark:bg-opacity-70 ${color} `}
+                    className={`mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md dark:bg-opacity-70 ${color} sm:mx-0 sm:h-10 sm:w-10 `}
                   >
                     <FontAwesomeIcon icon={icon} className={`h-10 w-10 stroke-current  ${iconColor}`} />
                   </div>

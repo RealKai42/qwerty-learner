@@ -8,7 +8,7 @@ import Modals from 'components/Modals'
 import Loading from 'components/Loading'
 import Phonetic from 'components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
-import { isLegal } from 'utils/utils'
+import { isLegal, IsDesktop } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'hooks/useModals'
 import useSwitcherState from './hooks/useSwitcherState'
@@ -18,6 +18,7 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
+import InfoPanel from 'components/InfoPanel'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -29,6 +30,8 @@ const App: React.FC = () => {
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
+
+  const [showDeviceInfo, setShowDeviceInfo] = useState(false)
 
   const {
     modalState,
@@ -46,6 +49,13 @@ const App: React.FC = () => {
     setMessage: setModalMessage,
     setHandler: setModalHandler,
   } = useModals(false, '提示')
+
+  useEffect(() => {
+    // 检测用户设备
+    if (!IsDesktop()) {
+      setShowDeviceInfo(true)
+    }
+  }, [])
 
   useHotkeys(
     'enter',
@@ -201,6 +211,29 @@ const App: React.FC = () => {
             </div>
           </Main>
         </Layout>
+      )}
+      {showDeviceInfo && (
+        <InfoPanel
+          state={showDeviceInfo}
+          icon="exclamation"
+          color="bg-red-300"
+          btnColor="bg-red-400"
+          iconColor="text-red-500"
+          buttonOnclick={() => setShowDeviceInfo(!showDeviceInfo)}
+        >
+          <>
+            <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
+              暂未适配移动端
+            </h3>
+            <div className="mt-2 ">
+              <br />
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Qwerty Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad
+                等平板电脑设备，可以使用外接键盘使用本软件。
+              </p>
+            </div>
+          </>
+        </InfoPanel>
       )}
     </>
   )
