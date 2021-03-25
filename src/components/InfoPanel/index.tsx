@@ -25,9 +25,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 transition-opacity" aria-hidden="true">
-            <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
-          </div>
+          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
         </Transition>
         <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
           &#8203;
@@ -43,7 +41,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color
         >
           {(ref) => (
             <div
-              className="inline-block align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:pb-8 "
+              className="inline-block align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full "
               ref={ref}
               role="dialog"
               aria-modal="true"
