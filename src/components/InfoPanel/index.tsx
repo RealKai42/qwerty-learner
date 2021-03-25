@@ -2,12 +2,12 @@ import React, { MouseEvent } from 'react'
 import { Transition } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-type DonateProps = {
+type InfoPanelProps = {
   state: boolean
   buttonOnclick: (e: MouseEvent) => void
 }
 
-const Donate: React.FC<DonateProps> = ({ state, buttonOnclick, children }) => {
+const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, children }) => {
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
       <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -73,4 +73,4 @@ const Donate: React.FC<DonateProps> = ({ state, buttonOnclick, children }) => {
   )
 }
 
-export default Donate
+export default InfoPanel
