@@ -8,10 +8,22 @@ const Footer: React.FC = () => {
   const [showModal, setShowModal] = useState<boolean>(false)
   const [content, setShowContent] = useState('donate')
 
+  const icon = content === 'donate' ? 'coffee' : 'terminal'
+  const color = content === 'donate' ? 'bg-yellow-100' : 'bg-blue-300'
+  const btnColor = content === 'donate' ? 'bg-yellow-300' : 'bg-blue-400'
+  const iconColor = content === 'donate' ? 'text-yellow-500' : 'text-blue-600'
+
   return (
     <>
       {showModal && (
-        <InfoPanel state={showModal} buttonOnclick={() => setShowModal(false)}>
+        <InfoPanel
+          state={showModal}
+          icon={icon}
+          color={color}
+          btnColor={btnColor}
+          iconColor={iconColor}
+          buttonOnclick={() => setShowModal(false)}
+        >
           {content === 'donate' ? (
             <>
               <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">

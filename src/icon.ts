@@ -14,6 +14,7 @@ import {
   faMoon,
   faSun,
   faCheckCircle,
+  faTerminal,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -33,4 +34,5 @@ library.add(
   faMoon,
   faSun,
   faCheckCircle,
+  faTerminal,
 )
