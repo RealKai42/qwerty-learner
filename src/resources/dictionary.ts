@@ -140,6 +140,14 @@ export const dictionaries: Dictionary[] = [
     length: 575,
   },
   {
+    id: 'csharpList',
+    name: 'C#: List API',
+    description: 'C# List API',
+    category: '代码练习',
+    url: './dicts/csharp-list.json',
+    length: 36,
+  },
+  {
     id: 'san1',
     name: '三年级上',
     description: '人教版三年级上册',
