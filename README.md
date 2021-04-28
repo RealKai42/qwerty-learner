@@ -125,6 +125,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 - Node.js API. [@chrysalis1215](https://github.com/chrysalis1215)
 - Java API. [@darkSheep](https://github.com/SFAfreshman)
 - Linux Command. [@归谜](https://github.com/vhxubo)
+- C#: List API [@nidbCN](https://github.com/nidbCN)
 
 目前 API 相关词库主要依赖于社区贡献，如果您想贡献自己需要的 API 词库，建议参考 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/40) [pr #67](https://github.com/Kaiyiwing/qwerty-learner/pull/67) 贡献词典。
 
