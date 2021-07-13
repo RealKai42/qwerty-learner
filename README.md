@@ -49,7 +49,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 **For Coder**：
 
-内置了程序员工作常用单词的词库，方便练习工作中常用的单词、提高输入速度。也内置了 JS API 的练习，帮助以 JS 为主要工作语言的程序员练习常用的 API，其他语言的 API 正在逐步添加中...
+内置了程序员工作常用单词的词库，方便练习工作中常用的单词、提高输入速度。也内置了诸多语言的 API 的练习，帮助以程序员快速熟悉常用的 API，更多语言的 API 正在逐步添加中...
 
 <div align=center>
 <img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/coder.png"/>
@@ -95,6 +95,13 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 </div>
 <br />
 <br />
+
+## 🏆 荣誉
+
+- Github 全球趋势榜上榜项目
+- V2EX 全站热搜项目
+- Gitee 全站推荐项目
+- [少数派首页推荐](https://sspai.com/post/67535)
 
 ## 📕 词库列表
 
