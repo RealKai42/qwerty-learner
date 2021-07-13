@@ -175,7 +175,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
   <img src="https://contrib.rocks/image?repo=Kaiyiwing/qwerty-learner" />
 </a>
 
-## 🎁 鸣谢
+## 🎁 大感谢
 
 ### 灵感来源
 
