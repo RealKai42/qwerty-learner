@@ -24,3 +24,18 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+
+.word-sound {
+  position: absolute;
+  width: 40px;
+  height: 56px;
+  top: 28px;
+  transform: translateY(-50%);
+  right: -55px;
+  cursor: pointer;
+  fill: theme('colors.gray.600');
+}
+.dark .word-sound {
+  fill: theme('colors.gray.50');
+  opacity: 0.8;
+}

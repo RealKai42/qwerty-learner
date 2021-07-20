@@ -13,9 +13,6 @@ const usePronunciation = (): [PronunciationType, SwitcherDispatchType] => {
       case 'us':
         setPronunciation('us')
         break
-      case 'false':
-        setPronunciation(false)
-        break
     }
   }
 
