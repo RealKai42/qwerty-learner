@@ -1,5 +1,5 @@
 <div align=center>
-  <img src="assets/logo.svg"/>
+  <img src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/src/assets/logo.svg"/>
 </div>
 
 <h1 align="center">
