@@ -36,7 +36,7 @@ We have deployed QWERTY Learner on many platforms. You can try QWERTY Learner in
 - GitHub Pages: https://kaiyiwing.github.io/qwerty-learner/.
 - Gitee Pages (recommended for people in mainland China): https://kaiyiwing.gitee.io/qwerty-learner/.
 
-The project also has a Visual Studio Code plugin. With a single click and you will be able to practice anytime.
+QWERTY Learner also has a Visual Studio Code plugin. With a single click and you will be able to practice anytime.
 
 - Plugin: [VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)
 - Project: [GitHub](https://github.com/Kaiyiwing/qwerty-learner-vscode)
@@ -63,7 +63,7 @@ QWERTY Learner is also helpful for developers. It has built-in dictionaries of w
 
 ### Built-in Dictionaries
 
-QWERTY Learner has many built-in dictionaries (word banks) for different purposes (examination, learning, and . Besides, it also provides dictionaries for developers learning APIs and common words and phrases used by programming languages and libraries.
+QWERTY Learner has many built-in dictionaries (word banks) for different purposes (examination, learning, and grading). Besides, it also provides dictionaries for developers learning APIs and common words and phrases used by programming languages and libraries.
 
 Our goal is to be the best solution for word memorization and typing practice. Therefore, contribution of more dictionaries is welcome.
 
@@ -124,7 +124,9 @@ There are also many other unlisted vocabularies. If you need more vocabularies, 
 - Linux Command. Thanks to [@Riddler](https://github.com/vhxubo).
 - C# List API. Thanks to [@nidbCN](https://github.com/nidbCN).
 
-If you want to contribute your own API thesaurus, please have a look at [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/40) [pr #67](https://github. com/Kaiyiwing/qwerty-learner/pull/67) in order to learn how to contribute.
+If you want to contribute your own API thesaurus, please have a look at [issue #40](https://github.com/Kaiyiwing/qwerty-learner/issues/40) and [PR #67][67] in order to learn how to contribute.
+
+[67]: https://github.com/Kaiyiwing/qwerty-learner/pull/67
 
 ## 🎙 Suggestions
 
