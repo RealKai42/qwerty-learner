@@ -28,8 +28,6 @@ export default function usePronunciationSound(word: string) {
 
     const unListens: Array<() => void> = []
 
-    setIsPlaying(true)
-
     unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
     unListens.push(addHowlListener(sound, 'end', () => setIsPlaying(false)))
     unListens.push(addHowlListener(sound, 'pause', () => setIsPlaying(false)))
