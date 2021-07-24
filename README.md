@@ -7,6 +7,10 @@
 </h1>
 
 <p align="center">
+  <a href="./docs/README_EN.md">English</a> 
+</p>
+
+<p align="center">
   为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
 </p>
 
