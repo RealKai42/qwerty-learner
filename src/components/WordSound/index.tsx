@@ -18,9 +18,10 @@ const WordSound: React.FC<WordSoundProps> = React.memo(({ word, inputWord, ...re
 
   useEffect(() => {
     if (inputWord.length === 0) {
+      stop()
       play()
     }
-  }, [play, inputWord])
+  }, [play, inputWord, stop])
 
   useEffect(() => {
     return stop
