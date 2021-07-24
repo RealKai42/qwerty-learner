@@ -73,10 +73,9 @@ const App: React.FC = () => {
       if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         if (isStart) {
           setInputCount((count) => count + 1)
-        } else {
-          setIsStart(true)
         }
       }
+      setIsStart(true)
     }
     const onBlur = () => {
       if (isStart) {
