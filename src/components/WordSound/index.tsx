@@ -11,9 +11,10 @@ const WordSound: React.FC<WordSoundProps> = React.memo(({ word, inputWord, ...re
     'ctrl+j',
     (e) => {
       e.preventDefault()
+      stop()
       play()
     },
-    [play],
+    [play, stop],
   )
 
   useEffect(() => {
@@ -28,8 +29,9 @@ const WordSound: React.FC<WordSoundProps> = React.memo(({ word, inputWord, ...re
   }, [word, stop])
 
   const handleClickSoundIcon = useCallback(() => {
+    stop()
     play()
-  }, [play])
+  }, [play, stop])
 
   useEffect(() => {
     const soundIcon = soundIconRef.current
