@@ -1,3 +1,4 @@
+import { Howl } from 'howler'
 import { useEffect, useState } from 'react'
 import { PronunciationType, useAppState } from 'store/AppState'
 import useSound from 'use-sound'
@@ -35,6 +36,7 @@ export default function usePronunciationSound(word: string) {
 
     return () => {
       unListens.forEach((unListen) => unListen())
+      ;(sound as Howl).unload()
     }
   }, [sound])
 
