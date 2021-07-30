@@ -25,3 +25,15 @@ export function addHowlListener(howl: Howl, ...args: Parameters<Howl['on']>) {
 
   return () => howl.off(...args)
 }
+
+export function classNames(...classNames: Array<string | void | null>) {
+  const finallyClassNames: string[] = []
+
+  for (const className of classNames) {
+    if (className) {
+      finallyClassNames.push(className.trim())
+    }
+  }
+
+  return finallyClassNames.join(' ')
+}
