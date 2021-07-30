@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useImperativeHandle, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import VolumeIcon from './volume-icons/VolumeIcon'
 import VolumeLowIcon from './volume-icons/VolumeLowIcon'
 import VolumeMediumIcon from './volume-icons/VolumeMediumIcon'
@@ -6,30 +6,8 @@ import VolumeHighIcon from './volume-icons/VolumeHieghIcon'
 
 const volumeIcons = [VolumeIcon, VolumeLowIcon, VolumeMediumIcon, VolumeHighIcon]
 
-export const SoundIcon = React.forwardRef<SoundIconRef, SoundIconProps>(({ duration = 500, ...rest }, ref) => {
+export const SoundIcon = React.memo<SoundIconProps>(({ duration = 500, animated = false, ...rest }, ref) => {
   const [animationFrameIndex, setAnimationFrameIndex] = useState(0)
-  const [animated, setAnimated] = useState(false)
-
-  const playAnimation = useCallback(() => {
-    if (animated) {
-      return
-    }
-    setAnimationFrameIndex(0)
-    setAnimated(true)
-  }, [animated])
-  const stopAnimation = useCallback(() => {
-    setAnimationFrameIndex(0)
-    setAnimated(false)
-  }, [])
-
-  useImperativeHandle(
-    ref,
-    () => ({
-      playAnimation,
-      stopAnimation,
-    }),
-    [playAnimation, stopAnimation],
-  )
 
   useEffect(() => {
     if (animated) {
@@ -44,12 +22,23 @@ export const SoundIcon = React.forwardRef<SoundIconRef, SoundIconProps>(({ durat
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [animated, animationFrameIndex])
 
+  useEffect(() => {
+    if (!animated) {
+      const timer = setTimeout(() => {
+        setAnimationFrameIndex(0)
+      }, duration)
+      return () => clearTimeout(timer)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [animated])
+
   const Icon = volumeIcons[animationFrameIndex]
 
   return <Icon {...rest} />
 })
 
 export type SoundIconProps = {
+  animated?: boolean
   duration?: number
 } & Omit<React.SVGProps<SVGSVGElement>, 'ref'>
 
