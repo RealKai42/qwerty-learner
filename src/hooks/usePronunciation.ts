@@ -6,7 +6,7 @@ import { HookOptions } from 'use-sound/dist/types'
 import { addHowlListener } from '../utils/utils'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
-function generateWordSoundSrc(word: string, pronunciation: PronunciationType) {
+function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>) {
   switch (pronunciation) {
     case 'uk':
       return `${pronunciationApi}${word}&type=1`
@@ -19,7 +19,7 @@ export default function usePronunciationSound(word: string) {
   const { pronunciation } = useAppState()
   const [isPlaying, setIsPlaying] = useState(false)
 
-  const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciation), {
+  const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciation as Exclude<PronunciationType, false>), {
     html5: true,
     format: ['mp3'],
   } as HookOptions)

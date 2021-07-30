@@ -19,7 +19,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
-  const { pronunciation, sound } = useAppState()
+  const { pronunciation } = useAppState()
 
   const onKeydown = useCallback(
     (e) => {
@@ -95,6 +95,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     setStatesList(statesList)
   }, [inputWord, word])
 
+  const playWordSound = pronunciation !== false
+
   return (
     <div className="flex justify-center pt-4 pb-1">
       <div className="relative">
@@ -111,7 +113,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
             )
           })}
         </div>
-        {pronunciation && sound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
+        {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
       </div>
     </div>
   )
