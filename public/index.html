@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
   <head>
+    <!-- dataFlux 跟踪代码 -->
+    <script src="https://static.dataflux.cn/browser-sdk/v2/dataflux-rum.js" type="text/javascript"></script>
+    <script>
+      window.DATAFLUX_RUM &&
+        window.DATAFLUX_RUM.init({
+          applicationId: 'appid_1dd74a99e7e74499877348f46fb8f965',
+          datakitOrigin: '<DATAKIT ORIGIN>',
+          env: 'production',
+          version: '1.0.0',
+          trackInteractions: true,
+        })
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FTEQXFKNF"></script>
     <script>
