@@ -45,7 +45,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
 
   return (
     <div className="flex items-center justify-center space-x-3">
-      <Tooltip content="开关声音（Ctrl + M）">
+      <Tooltip content="开关键盘声音（Ctrl + M）">
         <button
           className={`${state.sound ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {

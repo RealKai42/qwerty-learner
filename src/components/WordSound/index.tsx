@@ -34,7 +34,7 @@ const WordSound: React.FC<WordSoundProps> = React.memo(({ word, className, input
   }, [play, stop])
 
   return (
-    <Tooltip content="开关声音（Ctrl + M）" className={className}>
+    <Tooltip content="朗读发音（Ctrl + J）" className={className}>
       <SoundIcon animated={isPlaying} {...rest} onClick={handleClickSoundIcon} />
     </Tooltip>
   )
