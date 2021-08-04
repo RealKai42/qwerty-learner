@@ -15,6 +15,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/howler": "^2.2.3",
     "@types/jest": "^26.0.15",
     "@types/lodash": "^4.14.168",
     "@types/node": "^12.0.0",
@@ -26,6 +27,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "howler": "^2.2.3",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "lodash": "^4.17.20",
@@ -42,12 +44,12 @@
     "source-map-explorer": "^2.5.2",
     "swr": "^0.4.1",
     "typescript": "^4.0.3",
-    "use-sound": "^2.0.1",
+    "use-sound": "^4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "craco start",
-    "build": "CI=false craco build",
+    "build": "cross-env CI=false craco build",
     "test": "craco test",
     "lint": "eslint .",
     "eject": "react-scripts eject",
@@ -64,7 +66,9 @@
       "react-app/jest",
       "plugin:prettier/recommended"
     ],
-    "ignorePatterns": ["build/*"],
+    "ignorePatterns": [
+      "build/*"
+    ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
@@ -101,6 +105,7 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7",
+    "cross-env": "^7.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
 }

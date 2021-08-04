@@ -1,6 +1,14 @@
+<div align=center>
+<img  src="src/assets/logo.svg"/>
+</div>
+
 <h1 align="center">
   Qwerty Learner
 </h1>
+
+<p align="center">
+  <a href="./docs/README_EN.md">English</a> 
+</p>
 
 <p align="center">
   为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
@@ -14,12 +22,12 @@
 </p>
 
 <div align=center>
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/Screenshot.png"/>
+<img  src="docs/Screenshot.png"/>
 </div>
 
 ## 📸 在线访问
 
-Vercel: https://qwerty-learner.vercel.app/ ，https://qwerty.kaiyi.cool/  
+Vercel: https://qwerty.kaiyi.cool/ , https://qwerty-learner.vercel.app/  
 GitHub Pages: https://kaiyiwing.github.io/qwerty-learner/  
 Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
@@ -45,7 +53,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 **For Coder**：
 
-内置了程序员工作常用单词的词库，方便练习工作中常用的单词、提高输入速度。也内置了 JS API 的练习，帮助以 JS 为主要工作语言的程序员练习常用的 API，其他语言的 API 正在逐步添加中...
+内置了程序员工作常用单词的词库，方便练习工作中常用的单词、提高输入速度。也内置了诸多语言的 API 的练习，帮助以程序员快速熟悉常用的 API，更多语言的 API 正在逐步添加中...
 
 <div align=center>
 <img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/coder.png"/>
@@ -58,7 +66,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 ### 词库
 
-内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及 JS API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库。
+内置了常用的 CET-4 、CET-6 、GMAT 、GRE 、IELTS 、SAT 、TOEFL 、考研英语、专业四级英语、专业八级英语，也有程序员常见英语单词以及多种编程语言 API 等词库。 尽可能满足大部分用户对单词记忆的需求，也非常欢迎社区贡献更多的词库。
 <br />
 <br />
 
@@ -92,6 +100,13 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 <br />
 <br />
 
+## 🏆 荣誉
+
+- Github 全球趋势榜上榜项目
+- V2EX 全站热搜项目
+- Gitee 全站推荐项目
+- [少数派首页推荐](https://sspai.com/post/67535)
+
 ## 📕 词库列表
 
 - CET-4
@@ -120,6 +135,8 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 - JavaScript API. [@sdu-gyf](https://github.com/sdu-gyf)
 - Node.js API. [@chrysalis1215](https://github.com/chrysalis1215)
 - Java API. [@darkSheep](https://github.com/SFAfreshman)
+- Linux Command. [@归谜](https://github.com/vhxubo)
+- C#: List API [@nidbCN](https://github.com/nidbCN)
 
 目前 API 相关词库主要依赖于社区贡献，如果您想贡献自己需要的 API 词库，建议参考 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/40) [pr #67](https://github.com/Kaiyiwing/qwerty-learner/pull/67) 贡献词典。
 
@@ -162,7 +179,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
   <img src="https://contrib.rocks/image?repo=Kaiyiwing/qwerty-learner" />
 </a>
 
-## 🎁 鸣谢
+## 🎁 大感谢
 
 ### 灵感来源
 
@@ -196,6 +213,10 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 JS API 来自于[react-code-game](https://github.com/webzhd/react-code-game) ，感谢项目对 JS API 的爬取与预处理。
 <br/><br/>
+
+### 项目 Icon
+
+感谢[libregd](https://github.com/libregd)提供图标设计，给项目贡献了多个好看的图标设计方案，同时也在项目的进行中提供了设计、建议、未来规划等诸多支持
 
 ### 感谢支持
 

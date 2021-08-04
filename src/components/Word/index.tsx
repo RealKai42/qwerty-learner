@@ -3,10 +3,15 @@ import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
 import style from './index.module.css'
-import usePronunciationSound from 'hooks/usePronunciation'
+import WordSound from 'components/WordSound'
+import { useAppState } from '../../store/AppState'
+
+const EXPLICIT_SPACE = '␣'
 
 const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
-  word = word.replace(new RegExp(' ', 'g'), '_')
+  const originWord = word
+
+  word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
   word = word.replace(new RegExp('…', 'g'), '..')
 
   const [inputWord, setInputWord] = useState('')
@@ -14,7 +19,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
-  const playPronounce = usePronunciationSound(word)
+  const { pronunciation } = useAppState()
 
   const onKeydown = useCallback(
     (e) => {
@@ -22,7 +27,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       if (char === ' ') {
         // 防止用户惯性按空格导致页面跳动
         e.preventDefault()
-        setInputWord((value) => (value += '_'))
+        setInputWord((value) => (value += EXPLICIT_SPACE))
         playKeySound()
       }
       if (isChineseSymbol(char)) {
@@ -56,20 +61,16 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         setInputWord('')
         setHasWrong(false)
       }, 300)
+
+      return () => {
+        clearTimeout(timer)
+      }
     }
   }, [hasWrong, isFinish, playBeepSound])
-
-  useEffect(() => {
-    if (isStart && inputWord.length === 0) {
-      playPronounce()
-    }
-    // SAFETY: Don't depend on `playPronounce`! It will cost audio play again and again.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isStart, word, inputWord])
 
   useLayoutEffect(() => {
     let hasWrong = false,
@@ -94,19 +95,26 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     setStatesList(statesList)
   }, [inputWord, word])
 
+  const playWordSound = pronunciation !== false
+
   return (
-    <div className={`pt-4 pb-1 flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
-      {/* {console.log(inputWord, word)} */}
-      {word.split('').map((t, index) => {
-        return (
-          <Letter
-            key={`${index}-${t}`}
-            visible={statesList[index] === 'correct' ? true : wordVisible}
-            letter={t}
-            state={statesList[index]}
-          />
-        )
-      })}
+    <div className="flex justify-center pt-4 pb-1">
+      <div className="relative">
+        <div className={`flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
+          {/* {console.log(inputWord, word)} */}
+          {word.split('').map((t, index) => {
+            return (
+              <Letter
+                key={`${index}-${t}`}
+                visible={statesList[index] === 'correct' ? true : wordVisible}
+                letter={t}
+                state={statesList[index]}
+              />
+            )
+          })}
+        </div>
+        {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
+      </div>
     </div>
   )
 }
@@ -118,8 +126,3 @@ export type WordProps = {
   wordVisible: boolean
 }
 export default Word
-
-/**
- * Warning: Can't perform a React state update on an unmounted component.
- * 为 use-sound 未解决的 bug
- */

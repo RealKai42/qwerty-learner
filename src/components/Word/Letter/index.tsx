@@ -2,33 +2,30 @@ import React from 'react'
 
 export type LetterState = 'normal' | 'correct' | 'wrong'
 
-const Letter: React.FC<LetterProps> = ({ letter, state, visible }) => {
-  let stateClassName = ''
+const EXPLICIT_SPACE = '␣'
 
-  const defaultClassName = 'text-gray-600 dark:text-white dark:text-opacity-80'
-  switch (state) {
-    case 'normal':
-      stateClassName = defaultClassName
-      break
-    case 'correct':
-      stateClassName = 'text-green-600 dark:text-green-400'
-      break
-    case 'wrong':
-      stateClassName = 'text-red-600 dark:text-red-400'
-      break
-    default:
-      stateClassName = defaultClassName
-  }
-
-  return (
-    <span
-      className={`m-0 p-0 text-5xl font-mono font-normal  ${stateClassName}`}
-      style={{ paddingRight: '0.2rem', transitionDuration: '0ms' }}
-    >
-      {visible ? letter : '_'}
-    </span>
-  )
+const stateClassNameMap: Record<string, Record<LetterState, string>> = {
+  true: {
+    normal: 'text-gray-400',
+    correct: 'text-green-400 dark:text-green-700',
+    wrong: 'text-red-400 dark:text-red-600',
+  },
+  false: {
+    normal: 'text-gray-600 dark:text-gray-50',
+    correct: 'text-green-600 dark:text-green-400',
+    wrong: 'text-red-600 dark:text-red-400',
+  },
 }
+
+const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible }) => (
+  <span
+    className={`m-0 p-0 text-5xl font-mono font-normal ${
+      stateClassNameMap[((letter === EXPLICIT_SPACE) as unknown) as string][state]
+    } pr-0.8 duration-0 dark:text-opacity-80`}
+  >
+    {visible ? letter : '_'}
+  </span>
+)
 
 export default React.memo(Letter)
 

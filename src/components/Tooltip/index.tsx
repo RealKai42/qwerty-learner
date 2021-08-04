@@ -1,13 +1,7 @@
 import { useState } from 'react'
+import { classNames } from '../../utils/utils'
 
-const Tooltip: React.FC<
-  React.PropsWithChildren<{
-    /** 显示文本 */
-    content: string
-    /** 位置 */
-    placement?: 'top' | 'bottom'
-  }>
-> = ({ children, content, placement = 'top' }) => {
+const Tooltip: React.FC<React.PropsWithChildren<TooltipProps>> = ({ children, content, className, placement = 'top' }) => {
   const [visible, setVisible] = useState(false)
 
   const placementClasses = {
@@ -16,7 +10,7 @@ const Tooltip: React.FC<
   }[placement]
 
   return (
-    <div className="relative">
+    <div className={classNames('relative', className)}>
       <div onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)}>
         {children}
       </div>
@@ -31,6 +25,14 @@ const Tooltip: React.FC<
       </div>
     </div>
   )
+}
+
+export type TooltipProps = {
+  /** 显示文本 */
+  content: string
+  /** 位置 */
+  placement?: 'top' | 'bottom'
+  className?: string
 }
 
 export default Tooltip

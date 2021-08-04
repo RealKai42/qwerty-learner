@@ -30,7 +30,7 @@ export const dictionaries: Dictionary[] = [
   },
   { id: 'toefl', name: 'TOEFL', description: '托福考试常见词', category: '英语学习', url: './dicts/TOEFL_T.json', length: 4264 },
   { id: 'bec2', name: '商务英语', description: '商务英语常见词', category: '英语学习', url: './dicts/BEC_2_T.json', length: 2753 },
-  { id: 'bec3', name: 'BEC', description: 'BEC考试常见词', category: '英语学习', url: './dicts/BEC_3.json', length: 4264 },
+  { id: 'bec3', name: 'BEC', description: 'BEC考试常见词', category: '英语学习', url: './dicts/BEC_3_T.json', length: 2825 },
   { id: 'coder', name: 'Coder Dict', description: '程序员常见单词词库', category: '代码练习', url: './dicts/it-words.json', length: 1700 },
   { id: 'jsArray', name: 'JS: Array', description: 'JavaScript API 词典', category: '代码练习', url: './dicts/js-array.json', length: 36 },
   { id: 'jsDate', name: 'JS: Date', description: 'JavaScript API 词典', category: '代码练习', url: './dicts/js-date.json', length: 34 },
@@ -131,7 +131,22 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/java-stringBuffer.json',
     length: 20,
   },
-
+  {
+    id: 'linuxCommand',
+    name: 'Linux',
+    description: 'Linux Command',
+    category: '代码练习',
+    url: './dicts/linux-command.json',
+    length: 575,
+  },
+  {
+    id: 'csharpList',
+    name: 'C#: List API',
+    description: 'C# List API',
+    category: '代码练习',
+    url: './dicts/csharp-list.json',
+    length: 36,
+  },
   {
     id: 'san1',
     name: '三年级上',

@@ -8,6 +8,12 @@ module.exports = {
       colors: {
         'blue-gray': colors.blueGray,
       },
+      transitionDuration: {
+        0: '0ms',
+      },
+      padding: {
+        0.8: '0.2rem',
+      },
     },
     borderRadius: {
       large: '0.75rem',
