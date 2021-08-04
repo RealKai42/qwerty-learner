@@ -9,7 +9,7 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const setDictionary = useSetDictionary()
   useEffect(() => {
     if (selectedDictionary.id === dictionary.id) {
-      buttonRef.current?.scrollIntoView()
+      buttonRef.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

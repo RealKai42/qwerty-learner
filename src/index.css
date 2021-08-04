@@ -36,3 +36,16 @@ body,
 .text-shadow {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+.customized-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background: inherit;
+}
+
+.customized-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.customized-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}

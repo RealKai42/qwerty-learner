@@ -5,7 +5,7 @@ export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, o
   const buttonRef = useRef<HTMLButtonElement>(null)
   useEffect(() => {
     if (selected) {
-      buttonRef.current?.scrollIntoView()
+      buttonRef.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
