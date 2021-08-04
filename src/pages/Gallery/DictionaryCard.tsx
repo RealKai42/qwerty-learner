@@ -8,8 +8,11 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const selectedDictionary = useSelectedDictionary()
   const setDictionary = useSetDictionary()
   useEffect(() => {
-    if (selectedDictionary.id === dictionary.id) {
-      buttonRef.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    if (selectedDictionary.id === dictionary.id && buttonRef.current !== null) {
+      const button = buttonRef.current
+      const container = button.parentElement?.parentElement?.parentElement
+      const halfHeight = button.getBoundingClientRect().height / 2
+      container?.scrollTo({ top: Math.max(button.offsetTop - container.offsetTop - halfHeight, 0), behavior: 'smooth' })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

@@ -4,8 +4,11 @@ import React, { useEffect, useRef } from 'react'
 export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, onClick }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
   useEffect(() => {
-    if (selected) {
-      buttonRef.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    if (selected && buttonRef.current !== null) {
+      const button = buttonRef.current
+      const container = button.parentElement?.parentElement
+      const halfHeight = button.getBoundingClientRect().height / 2
+      container?.scrollTo({ top: Math.max(button.offsetTop - container.offsetTop - halfHeight, 0), behavior: 'smooth' })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
