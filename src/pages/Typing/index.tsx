@@ -73,12 +73,9 @@ const App: React.FC = () => {
       if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         if (isStart) {
           setInputCount((count) => count + 1)
-        } else {
-          if (document.activeElement?.nodeName === 'BODY') {
-            setIsStart(true)
-          }
         }
       }
+      setIsStart(true)
     }
     const onBlur = () => {
       if (isStart) {
@@ -195,19 +192,22 @@ const App: React.FC = () => {
           <Main>
             <div className="container h-full relative flex mx-auto flex-col items-center">
               <div className="h-1/3"></div>
-              <div>
-                <Word
-                  key={`word-${wordList.words[order].name}-${order}`}
-                  word={wordList.words[order].name}
-                  onFinish={onFinish}
-                  isStart={isStart}
-                  wordVisible={switcherState.wordVisible}
-                />
-                {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
-                  <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
-                )}
-                <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
-              </div>
+              {!isStart && <h3 className="pb-4 text-xl text-gray-600 dark:text-gray-50 animate-pulse">按任意键开始</h3>}
+              {isStart && (
+                <div>
+                  <Word
+                    key={`word-${wordList.words[order].name}-${order}`}
+                    word={wordList.words[order].name}
+                    onFinish={onFinish}
+                    isStart={isStart}
+                    wordVisible={switcherState.wordVisible}
+                  />
+                  {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
+                    <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
+                  )}
+                  <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
+                </div>
+              )}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
             </div>
           </Main>
