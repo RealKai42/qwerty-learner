@@ -29,10 +29,10 @@ const GalleryPage: React.FC = () => {
       </Header>
       <div className="mt-auto mb-auto flex w-auto space-x-4 overflow-y-auto">
         <div className="bg-indigo-50 dark:bg-blue-gray-800 rounded-lg p-6 space-y-2 overflow-y-auto flex flex-col">
-          <h2 className="sticky top-0 mb-4 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
+          <h2 className="sticky top-0 mb-2 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
             词典选择
           </h2>
-          <div className="overflow-y-auto">
+          <div className="overflow-y-auto customized-scrollbar">
             {groups.map(([name, items]) => (
               <DictionaryGroup key={name} title={name} dictionaries={items} />
             ))}
@@ -43,7 +43,7 @@ const GalleryPage: React.FC = () => {
             章节选择
           </h2>
           {/* TODO: remove magic number here. */}
-          <div className="overflow-y-auto">
+          <div className="overflow-y-auto customized-scrollbar">
             <ChapterGroup count={Math.ceil(selectedDictionary.length / 20)} />
           </div>
         </div>
