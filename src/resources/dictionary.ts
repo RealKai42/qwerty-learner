@@ -251,6 +251,38 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPChuZhong9_1_T.json',
     length: 551,
   },
+  {
+    id: 'nce1',
+    name: '新概念英语-1',
+    description: '新概念英语第一册',
+    category: '新概念英语',
+    url: './dicts/NCE_1.json',
+    length: 900,
+  },
+  {
+    id: 'nce2',
+    name: '新概念英语-2',
+    description: '新概念英语第二册',
+    category: '新概念英语',
+    url: './dicts/NCE_2.json',
+    length: 858,
+  },
+  {
+    id: 'nce3',
+    name: '新概念英语-3',
+    description: '新概念英语第三册',
+    category: '新概念英语',
+    url: './dicts/NCE_3.json',
+    length: 1052,
+  },
+  {
+    id: 'nce4',
+    name: '新概念英语-4',
+    description: '新概念英语第四册',
+    category: '新概念英语',
+    url: './dicts/NCE_4.json',
+    length: 784,
+  },
 ]
 
 /**
