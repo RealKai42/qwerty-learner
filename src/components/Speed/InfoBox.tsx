@@ -2,7 +2,7 @@ import React from 'react'
 
 const InfoBox: React.FC<InfoBoxProps> = ({ info, description }) => {
   return (
-    <div className="flex flex-grow flex-col items-center justify-center">
+    <div className="flex flex-1 flex-col items-center justify-center">
       <span className="font-bold w-4/5 text-center text-xl text-gray-600 dark:text-gray-400 transition-colors duration-300 pb-2 border-b">
         {info}
       </span>
