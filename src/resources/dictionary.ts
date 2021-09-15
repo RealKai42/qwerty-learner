@@ -84,6 +84,14 @@ export const dictionaries: Dictionary[] = [
     length: 32,
   },
   {
+    id: 'python-builtin',
+    name: 'Python: Built-in',
+    description: 'Python Built-in API',
+    category: '代码练习',
+    url: './dicts/python-builtin.json',
+    length: 65,
+  },
+  {
     id: 'javeArrayList',
     name: 'Java: ArrayList',
     description: 'JavaScript API 词典',
