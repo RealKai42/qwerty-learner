@@ -515,6 +515,22 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_11_T.json',
     length: 330,
   },
+  {
+    id: 'aulaBook1Unit0',
+    name: 'libro1 Unidad0',
+    description: 'AULA 第一本第0章',
+    category: '西语学习',
+    url: './dicts/AULAInternacional1_0.json',
+    length: 55,
+  },
+  {
+    id: 'aulaBook1Unit1',
+    name: 'libro1 Unidad1',
+    description: 'AULA 第一本第1章(未完成）',
+    category: '西语学习',
+    url: './dicts/AULAInternacional1_1.json',
+    length: 0,
+  },
 ]
 
 /**
