@@ -515,6 +515,14 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_11_T.json',
     length: 330,
   },
+  {
+    id: 'SATen',
+    name: 'SAT英英',
+    description: 'SAT英英',
+    category: '英语学习',
+    url: './dicts/SATen.json',
+    length: 2683,
+  },
 ]
 
 /**
