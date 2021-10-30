@@ -523,6 +523,14 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/SATen.json',
     length: 2683,
   },
+  {
+    id: 'japnese001',
+    name: 'japanese common word',
+    description: '日语常用单词',
+    category: '日语学习',
+    url: './dicts/Japanesebasicword.json',
+    length: 100,
+  },
 ]
 
 /**
