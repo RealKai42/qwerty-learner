@@ -531,6 +531,46 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/Japanesebasicword.json',
     length: 100,
   },
+  {
+    id: 'japnese002',
+    name: 'japanese N5',
+    description: '日语N5',
+    category: '日语学习',
+    url: './dicts/JapVocabList.N5.json',
+    length: 670,
+  },
+  {
+    id: 'japnese003',
+    name: 'japanese N4',
+    description: '日语N4',
+    category: '日语学习',
+    url: './dicts/JapVocabList.N4.json',
+    length: 635,
+  },
+  {
+    id: 'japnese004',
+    name: 'japanese N3',
+    description: '日语N3',
+    category: '日语学习',
+    url: './dicts/JapVocabList.N3.json',
+    length: 1830,
+  },
+  {
+    id: 'japnese005',
+    name: 'japanese N2',
+    description: '日语N2',
+    category: '日语学习',
+    url: './dicts/JapVocabList.N2.json',
+    length: 1836,
+  },
+  {
+    id: 'japnese006',
+    name: 'japanese N1',
+    description: '日语N1',
+    category: '日语学习',
+    url: './dicts/JapVocabList.N1.json',
+    length: 3477,
+  },
 ]
 
 /**
