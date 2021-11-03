@@ -12,6 +12,8 @@ function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronunciation
       return `${pronunciationApi}${word}&type=1`
     case 'us':
       return `${pronunciationApi}${word}&type=2`
+    case 'jap':
+      return `${pronunciationApi}${word}&le=jap`
   }
 }
 
