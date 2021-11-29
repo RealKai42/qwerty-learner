@@ -1,0 +1,4002 @@
+[
+  {
+    "name": "comme",
+    "trans": ["as"]
+  },
+  {
+    "name": "je",
+    "trans": ["I"]
+  },
+  {
+    "name": "son",
+    "trans": ["his"]
+  },
+  {
+    "name": "que",
+    "trans": ["that"]
+  },
+  {
+    "name": "il",
+    "trans": ["he"]
+  },
+  {
+    "name": "était",
+    "trans": ["was"]
+  },
+  {
+    "name": "pour",
+    "trans": ["for"]
+  },
+  {
+    "name": "sur",
+    "trans": ["on"]
+  },
+  {
+    "name": "sont",
+    "trans": ["are"]
+  },
+  {
+    "name": "avec",
+    "trans": ["with"]
+  },
+  {
+    "name": "ils",
+    "trans": ["they"]
+  },
+  {
+    "name": "être",
+    "trans": ["be"]
+  },
+  {
+    "name": "à",
+    "trans": ["at"]
+  },
+  {
+    "name": "un",
+    "trans": ["one"]
+  },
+  {
+    "name": "avoir",
+    "trans": ["have"]
+  },
+  {
+    "name": "ce",
+    "trans": ["this"]
+  },
+  {
+    "name": "à partir de",
+    "trans": ["from"]
+  },
+  {
+    "name": "par",
+    "trans": ["by"]
+  },
+  {
+    "name": "chaud",
+    "trans": ["hot"]
+  },
+  {
+    "name": "mot",
+    "trans": ["word"]
+  },
+  {
+    "name": "mais",
+    "trans": ["but"]
+  },
+  {
+    "name": "que",
+    "trans": ["what"]
+  },
+  {
+    "name": "certains",
+    "trans": ["some"]
+  },
+  {
+    "name": "est",
+    "trans": ["is"]
+  },
+  {
+    "name": "il",
+    "trans": ["it"]
+  },
+  {
+    "name": "vous",
+    "trans": ["you"]
+  },
+  {
+    "name": "ou",
+    "trans": ["or"]
+  },
+  {
+    "name": "eu",
+    "trans": ["had"]
+  },
+  {
+    "name": "la",
+    "trans": ["the"]
+  },
+  {
+    "name": "de",
+    "trans": ["of"]
+  },
+  {
+    "name": "à",
+    "trans": ["to"]
+  },
+  {
+    "name": "et",
+    "trans": ["and"]
+  },
+  {
+    "name": "un",
+    "trans": ["a"]
+  },
+  {
+    "name": "dans",
+    "trans": ["in"]
+  },
+  {
+    "name": "nous",
+    "trans": ["we"]
+  },
+  {
+    "name": "boîte",
+    "trans": ["can"]
+  },
+  {
+    "name": "dehors",
+    "trans": ["out"]
+  },
+  {
+    "name": "autre",
+    "trans": ["other"]
+  },
+  {
+    "name": "étaient",
+    "trans": ["were"]
+  },
+  {
+    "name": "qui",
+    "trans": ["which"]
+  },
+  {
+    "name": "faire",
+    "trans": ["do"]
+  },
+  {
+    "name": "leur",
+    "trans": ["their"]
+  },
+  {
+    "name": "temps",
+    "trans": ["time"]
+  },
+  {
+    "name": "si",
+    "trans": ["if"]
+  },
+  {
+    "name": "volonté",
+    "trans": ["will"]
+  },
+  {
+    "name": "comment",
+    "trans": ["how"]
+  },
+  {
+    "name": "dit",
+    "trans": ["said"]
+  },
+  {
+    "name": "un",
+    "trans": ["an"]
+  },
+  {
+    "name": "chaque",
+    "trans": ["each"]
+  },
+  {
+    "name": "dire",
+    "trans": ["tell"]
+  },
+  {
+    "name": "ne",
+    "trans": ["does"]
+  },
+  {
+    "name": "ensemble",
+    "trans": ["set"]
+  },
+  {
+    "name": "trois",
+    "trans": ["three"]
+  },
+  {
+    "name": "vouloir",
+    "trans": ["want"]
+  },
+  {
+    "name": "air",
+    "trans": ["air"]
+  },
+  {
+    "name": "bien",
+    "trans": ["well"]
+  },
+  {
+    "name": "aussi",
+    "trans": ["also"]
+  },
+  {
+    "name": "jouer",
+    "trans": ["play"]
+  },
+  {
+    "name": "petit",
+    "trans": ["small"]
+  },
+  {
+    "name": "fin",
+    "trans": ["end"]
+  },
+  {
+    "name": "mettre",
+    "trans": ["put"]
+  },
+  {
+    "name": "maison",
+    "trans": ["home"]
+  },
+  {
+    "name": "lire",
+    "trans": ["read"]
+  },
+  {
+    "name": "main",
+    "trans": ["hand"]
+  },
+  {
+    "name": "port",
+    "trans": ["port"]
+  },
+  {
+    "name": "grand",
+    "trans": ["large"]
+  },
+  {
+    "name": "épeler",
+    "trans": ["spell"]
+  },
+  {
+    "name": "ajouter",
+    "trans": ["add"]
+  },
+  {
+    "name": "même",
+    "trans": ["even"]
+  },
+  {
+    "name": "terre",
+    "trans": ["land"]
+  },
+  {
+    "name": "ici",
+    "trans": ["here"]
+  },
+  {
+    "name": "il faut",
+    "trans": ["must"]
+  },
+  {
+    "name": "grand",
+    "trans": ["big"]
+  },
+  {
+    "name": "haut",
+    "trans": ["high"]
+  },
+  {
+    "name": "tel",
+    "trans": ["such"]
+  },
+  {
+    "name": "suivre",
+    "trans": ["follow"]
+  },
+  {
+    "name": "acte",
+    "trans": ["act"]
+  },
+  {
+    "name": "pourquoi",
+    "trans": ["why"]
+  },
+  {
+    "name": "interroger",
+    "trans": ["ask"]
+  },
+  {
+    "name": "hommes",
+    "trans": ["men"]
+  },
+  {
+    "name": "changement",
+    "trans": ["change"]
+  },
+  {
+    "name": "est allé",
+    "trans": ["went"]
+  },
+  {
+    "name": "lumière",
+    "trans": ["light"]
+  },
+  {
+    "name": "genre",
+    "trans": ["kind"]
+  },
+  {
+    "name": "de",
+    "trans": ["off"]
+  },
+  {
+    "name": "besoin",
+    "trans": ["need"]
+  },
+  {
+    "name": "maison",
+    "trans": ["house"]
+  },
+  {
+    "name": "image",
+    "trans": ["picture"]
+  },
+  {
+    "name": "essayer",
+    "trans": ["try"]
+  },
+  {
+    "name": "nous",
+    "trans": ["us"]
+  },
+  {
+    "name": "encore",
+    "trans": ["again"]
+  },
+  {
+    "name": "animal",
+    "trans": ["animal"]
+  },
+  {
+    "name": "point",
+    "trans": ["point"]
+  },
+  {
+    "name": "mère",
+    "trans": ["mother"]
+  },
+  {
+    "name": "monde",
+    "trans": ["world"]
+  },
+  {
+    "name": "près de",
+    "trans": ["near"]
+  },
+  {
+    "name": "construire",
+    "trans": ["build"]
+  },
+  {
+    "name": "soi",
+    "trans": ["self"]
+  },
+  {
+    "name": "terre",
+    "trans": ["earth"]
+  },
+  {
+    "name": "père",
+    "trans": ["father"]
+  },
+  {
+    "name": "tout",
+    "trans": ["any"]
+  },
+  {
+    "name": "nouveau",
+    "trans": ["new"]
+  },
+  {
+    "name": "travail",
+    "trans": ["work"]
+  },
+  {
+    "name": "partie",
+    "trans": ["part"]
+  },
+  {
+    "name": "prendre",
+    "trans": ["take"]
+  },
+  {
+    "name": "obtenir",
+    "trans": ["get"]
+  },
+  {
+    "name": "lieu",
+    "trans": ["place"]
+  },
+  {
+    "name": "fabriqué",
+    "trans": ["made"]
+  },
+  {
+    "name": "vivre",
+    "trans": ["live"]
+  },
+  {
+    "name": "où",
+    "trans": ["where"]
+  },
+  {
+    "name": "après",
+    "trans": ["after"]
+  },
+  {
+    "name": "arrière",
+    "trans": ["back"]
+  },
+  {
+    "name": "peu",
+    "trans": ["little"]
+  },
+  {
+    "name": "seulement",
+    "trans": ["only"]
+  },
+  {
+    "name": "tour",
+    "trans": ["round"]
+  },
+  {
+    "name": "homme",
+    "trans": ["man"]
+  },
+  {
+    "name": "année",
+    "trans": ["year"]
+  },
+  {
+    "name": "est venu",
+    "trans": ["came"]
+  },
+  {
+    "name": "montrer",
+    "trans": ["show"]
+  },
+  {
+    "name": "tous",
+    "trans": ["every"]
+  },
+  {
+    "name": "bon",
+    "trans": ["good"]
+  },
+  {
+    "name": "moi",
+    "trans": ["me"]
+  },
+  {
+    "name": "donner",
+    "trans": ["give"]
+  },
+  {
+    "name": "notre",
+    "trans": ["our"]
+  },
+  {
+    "name": "sous",
+    "trans": ["under"]
+  },
+  {
+    "name": "nom",
+    "trans": ["name"]
+  },
+  {
+    "name": "très",
+    "trans": ["very"]
+  },
+  {
+    "name": "par",
+    "trans": ["through"]
+  },
+  {
+    "name": "juste",
+    "trans": ["just"]
+  },
+  {
+    "name": "forme",
+    "trans": ["form"]
+  },
+  {
+    "name": "phrase",
+    "trans": ["sentence"]
+  },
+  {
+    "name": "grand",
+    "trans": ["great"]
+  },
+  {
+    "name": "penser",
+    "trans": ["think"]
+  },
+  {
+    "name": "dire",
+    "trans": ["say"]
+  },
+  {
+    "name": "aider",
+    "trans": ["help"]
+  },
+  {
+    "name": "faible",
+    "trans": ["low"]
+  },
+  {
+    "name": "ligne",
+    "trans": ["line"]
+  },
+  {
+    "name": "différer",
+    "trans": ["differ"]
+  },
+  {
+    "name": "tour",
+    "trans": ["turn"]
+  },
+  {
+    "name": "la cause",
+    "trans": ["cause"]
+  },
+  {
+    "name": "beaucoup",
+    "trans": ["much"]
+  },
+  {
+    "name": "signifier",
+    "trans": ["mean"]
+  },
+  {
+    "name": "avant",
+    "trans": ["before"]
+  },
+  {
+    "name": "déménagement",
+    "trans": ["move"]
+  },
+  {
+    "name": "droit",
+    "trans": ["right"]
+  },
+  {
+    "name": "garçon",
+    "trans": ["boy"]
+  },
+  {
+    "name": "vieux",
+    "trans": ["old"]
+  },
+  {
+    "name": "trop",
+    "trans": ["too"]
+  },
+  {
+    "name": "même",
+    "trans": ["same"]
+  },
+  {
+    "name": "elle",
+    "trans": ["she"]
+  },
+  {
+    "name": "tous",
+    "trans": ["all"]
+  },
+  {
+    "name": "là",
+    "trans": ["there"]
+  },
+  {
+    "name": "quand",
+    "trans": ["when"]
+  },
+  {
+    "name": "jusqu’à",
+    "trans": ["up"]
+  },
+  {
+    "name": "utiliser",
+    "trans": ["use"]
+  },
+  {
+    "name": "votre",
+    "trans": ["your"]
+  },
+  {
+    "name": "manière",
+    "trans": ["way"]
+  },
+  {
+    "name": "sur",
+    "trans": ["about"]
+  },
+  {
+    "name": "beaucoup",
+    "trans": ["many"]
+  },
+  {
+    "name": "puis",
+    "trans": ["then"]
+  },
+  {
+    "name": "les",
+    "trans": ["them"]
+  },
+  {
+    "name": "écrire",
+    "trans": ["write"]
+  },
+  {
+    "name": "voudrais",
+    "trans": ["would"]
+  },
+  {
+    "name": "comme",
+    "trans": ["like"]
+  },
+  {
+    "name": "si",
+    "trans": ["so"]
+  },
+  {
+    "name": "ces",
+    "trans": ["these"]
+  },
+  {
+    "name": "son",
+    "trans": ["her"]
+  },
+  {
+    "name": "long",
+    "trans": ["long"]
+  },
+  {
+    "name": "faire",
+    "trans": ["make"]
+  },
+  {
+    "name": "chose",
+    "trans": ["thing"]
+  },
+  {
+    "name": "voir",
+    "trans": ["see"]
+  },
+  {
+    "name": "lui",
+    "trans": ["him"]
+  },
+  {
+    "name": "deux",
+    "trans": ["two"]
+  },
+  {
+    "name": "a",
+    "trans": ["has"]
+  },
+  {
+    "name": "regarder",
+    "trans": ["look"]
+  },
+  {
+    "name": "plus",
+    "trans": ["more"]
+  },
+  {
+    "name": "jour",
+    "trans": ["day"]
+  },
+  {
+    "name": "pourrait",
+    "trans": ["could"]
+  },
+  {
+    "name": "aller",
+    "trans": ["go"]
+  },
+  {
+    "name": "venir",
+    "trans": ["come"]
+  },
+  {
+    "name": "fait",
+    "trans": ["did"]
+  },
+  {
+    "name": "nombre",
+    "trans": ["number"]
+  },
+  {
+    "name": "son",
+    "trans": ["sound"]
+  },
+  {
+    "name": "aucun",
+    "trans": ["no"]
+  },
+  {
+    "name": "plus",
+    "trans": ["most"]
+  },
+  {
+    "name": "personnes",
+    "trans": ["people"]
+  },
+  {
+    "name": "ma",
+    "trans": ["my"]
+  },
+  {
+    "name": "sur",
+    "trans": ["over"]
+  },
+  {
+    "name": "savoir",
+    "trans": ["know"]
+  },
+  {
+    "name": "eau",
+    "trans": ["water"]
+  },
+  {
+    "name": "que",
+    "trans": ["than"]
+  },
+  {
+    "name": "appel",
+    "trans": ["call"]
+  },
+  {
+    "name": "première",
+    "trans": ["first"]
+  },
+  {
+    "name": "qui",
+    "trans": ["who"]
+  },
+  {
+    "name": "peut",
+    "trans": ["may"]
+  },
+  {
+    "name": "vers le bas",
+    "trans": ["down"]
+  },
+  {
+    "name": "côté",
+    "trans": ["side"]
+  },
+  {
+    "name": "été",
+    "trans": ["been"]
+  },
+  {
+    "name": "maintenant",
+    "trans": ["now"]
+  },
+  {
+    "name": "trouver",
+    "trans": ["find"]
+  },
+  {
+    "name": "tête",
+    "trans": ["head"]
+  },
+  {
+    "name": "supporter",
+    "trans": ["stand"]
+  },
+  {
+    "name": "propre",
+    "trans": ["own"]
+  },
+  {
+    "name": "page",
+    "trans": ["page"]
+  },
+  {
+    "name": "devrait",
+    "trans": ["should"]
+  },
+  {
+    "name": "pays",
+    "trans": ["country"]
+  },
+  {
+    "name": "trouvé",
+    "trans": ["found"]
+  },
+  {
+    "name": "réponse",
+    "trans": ["answer"]
+  },
+  {
+    "name": "école",
+    "trans": ["school"]
+  },
+  {
+    "name": "croître",
+    "trans": ["grow"]
+  },
+  {
+    "name": "étude",
+    "trans": ["study"]
+  },
+  {
+    "name": "encore",
+    "trans": ["still"]
+  },
+  {
+    "name": "apprendre",
+    "trans": ["learn"]
+  },
+  {
+    "name": "usine",
+    "trans": ["plant"]
+  },
+  {
+    "name": "couvercle",
+    "trans": ["cover"]
+  },
+  {
+    "name": "nourriture",
+    "trans": ["food"]
+  },
+  {
+    "name": "soleil",
+    "trans": ["sun"]
+  },
+  {
+    "name": "quatre",
+    "trans": ["four"]
+  },
+  {
+    "name": "entre",
+    "trans": ["between"]
+  },
+  {
+    "name": "état",
+    "trans": ["state"]
+  },
+  {
+    "name": "garder",
+    "trans": ["keep"]
+  },
+  {
+    "name": "œil",
+    "trans": ["eye"]
+  },
+  {
+    "name": "jamais",
+    "trans": ["never"]
+  },
+  {
+    "name": "dernier",
+    "trans": ["last"]
+  },
+  {
+    "name": "laisser",
+    "trans": ["let"]
+  },
+  {
+    "name": "pensée",
+    "trans": ["thought"]
+  },
+  {
+    "name": "ville",
+    "trans": ["city"]
+  },
+  {
+    "name": "arbre",
+    "trans": ["tree"]
+  },
+  {
+    "name": "traverser",
+    "trans": ["cross"]
+  },
+  {
+    "name": "ferme",
+    "trans": ["farm"]
+  },
+  {
+    "name": "dur",
+    "trans": ["hard"]
+  },
+  {
+    "name": "début",
+    "trans": ["start"]
+  },
+  {
+    "name": "puissance",
+    "trans": ["might"]
+  },
+  {
+    "name": "histoire",
+    "trans": ["story"]
+  },
+  {
+    "name": "scie",
+    "trans": ["saw"]
+  },
+  {
+    "name": "loin",
+    "trans": ["far"]
+  },
+  {
+    "name": "mer",
+    "trans": ["sea"]
+  },
+  {
+    "name": "tirer",
+    "trans": ["draw"]
+  },
+  {
+    "name": "gauche",
+    "trans": ["left"]
+  },
+  {
+    "name": "tard",
+    "trans": ["late"]
+  },
+  {
+    "name": "courir",
+    "trans": ["run"]
+  },
+  {
+    "name": "needs a context",
+    "trans": ["don’t"]
+  },
+  {
+    "name": "tandis que",
+    "trans": ["while"]
+  },
+  {
+    "name": "presse",
+    "trans": ["press"]
+  },
+  {
+    "name": "proche",
+    "trans": ["close"]
+  },
+  {
+    "name": "nuit",
+    "trans": ["night"]
+  },
+  {
+    "name": "réel",
+    "trans": ["real"]
+  },
+  {
+    "name": "vie",
+    "trans": ["life"]
+  },
+  {
+    "name": "peu",
+    "trans": ["few"]
+  },
+  {
+    "name": "nord",
+    "trans": ["north"]
+  },
+  {
+    "name": "livre",
+    "trans": ["book"]
+  },
+  {
+    "name": "porter",
+    "trans": ["carry"]
+  },
+  {
+    "name": "a pris",
+    "trans": ["took"]
+  },
+  {
+    "name": "science",
+    "trans": ["science"]
+  },
+  {
+    "name": "manger",
+    "trans": ["eat"]
+  },
+  {
+    "name": "chambre",
+    "trans": ["room"]
+  },
+  {
+    "name": "ami",
+    "trans": ["friend"]
+  },
+  {
+    "name": "a commencé",
+    "trans": ["began"]
+  },
+  {
+    "name": "idée",
+    "trans": ["idea"]
+  },
+  {
+    "name": "poisson",
+    "trans": ["fish"]
+  },
+  {
+    "name": "montagne",
+    "trans": ["mountain"]
+  },
+  {
+    "name": "Arrêtez",
+    "trans": ["stop"]
+  },
+  {
+    "name": "une fois",
+    "trans": ["once"]
+  },
+  {
+    "name": "base",
+    "trans": ["base"]
+  },
+  {
+    "name": "entendre",
+    "trans": ["hear"]
+  },
+  {
+    "name": "cheval",
+    "trans": ["horse"]
+  },
+  {
+    "name": "coupe",
+    "trans": ["cut"]
+  },
+  {
+    "name": "sûr",
+    "trans": ["sure"]
+  },
+  {
+    "name": "regarder",
+    "trans": ["watch"]
+  },
+  {
+    "name": "couleur",
+    "trans": ["color"]
+  },
+  {
+    "name": "face",
+    "trans": ["face"]
+  },
+  {
+    "name": "bois",
+    "trans": ["wood"]
+  },
+  {
+    "name": "principal",
+    "trans": ["main"]
+  },
+  {
+    "name": "ouvert",
+    "trans": ["open"]
+  },
+  {
+    "name": "paraître",
+    "trans": ["seem"]
+  },
+  {
+    "name": "ensemble",
+    "trans": ["together"]
+  },
+  {
+    "name": "suivant",
+    "trans": ["next"]
+  },
+  {
+    "name": "blanc",
+    "trans": ["white"]
+  },
+  {
+    "name": "enfants",
+    "trans": ["children"]
+  },
+  {
+    "name": "commencer",
+    "trans": ["begin"]
+  },
+  {
+    "name": "eu",
+    "trans": ["got"]
+  },
+  {
+    "name": "marcher",
+    "trans": ["walk"]
+  },
+  {
+    "name": "exemple",
+    "trans": ["example"]
+  },
+  {
+    "name": "facilité",
+    "trans": ["ease"]
+  },
+  {
+    "name": "papier",
+    "trans": ["paper"]
+  },
+  {
+    "name": "groupe",
+    "trans": ["group"]
+  },
+  {
+    "name": "toujours",
+    "trans": ["always"]
+  },
+  {
+    "name": "musique",
+    "trans": ["music"]
+  },
+  {
+    "name": "ceux",
+    "trans": ["those"]
+  },
+  {
+    "name": "tous les deux",
+    "trans": ["both"]
+  },
+  {
+    "name": "marque",
+    "trans": ["mark"]
+  },
+  {
+    "name": "souvent",
+    "trans": ["often"]
+  },
+  {
+    "name": "lettre",
+    "trans": ["letter"]
+  },
+  {
+    "name": "jusqu’à ce que",
+    "trans": ["until"]
+  },
+  {
+    "name": "mile",
+    "trans": ["mile"]
+  },
+  {
+    "name": "rivière",
+    "trans": ["river"]
+  },
+  {
+    "name": "voiture",
+    "trans": ["car"]
+  },
+  {
+    "name": "pieds",
+    "trans": ["feet"]
+  },
+  {
+    "name": "soins",
+    "trans": ["care"]
+  },
+  {
+    "name": "deuxième",
+    "trans": ["second"]
+  },
+  {
+    "name": "assez",
+    "trans": ["enough"]
+  },
+  {
+    "name": "plaine",
+    "trans": ["plain"]
+  },
+  {
+    "name": "fille",
+    "trans": ["girl"]
+  },
+  {
+    "name": "habituel",
+    "trans": ["usual"]
+  },
+  {
+    "name": "jeune",
+    "trans": ["young"]
+  },
+  {
+    "name": "prêt",
+    "trans": ["ready"]
+  },
+  {
+    "name": "au-dessus",
+    "trans": ["above"]
+  },
+  {
+    "name": "jamais",
+    "trans": ["ever"]
+  },
+  {
+    "name": "rouge",
+    "trans": ["red"]
+  },
+  {
+    "name": "liste",
+    "trans": ["list"]
+  },
+  {
+    "name": "bien que",
+    "trans": ["though"]
+  },
+  {
+    "name": "sentir",
+    "trans": ["feel"]
+  },
+  {
+    "name": "parler",
+    "trans": ["talk"]
+  },
+  {
+    "name": "oiseau",
+    "trans": ["bird"]
+  },
+  {
+    "name": "bientôt",
+    "trans": ["soon"]
+  },
+  {
+    "name": "corps",
+    "trans": ["body"]
+  },
+  {
+    "name": "chien",
+    "trans": ["dog"]
+  },
+  {
+    "name": "famille",
+    "trans": ["family"]
+  },
+  {
+    "name": "direct",
+    "trans": ["direct"]
+  },
+  {
+    "name": "pose",
+    "trans": ["pose"]
+  },
+  {
+    "name": "laisser",
+    "trans": ["leave"]
+  },
+  {
+    "name": "chanson",
+    "trans": ["song"]
+  },
+  {
+    "name": "mesurer",
+    "trans": ["measure"]
+  },
+  {
+    "name": "porte",
+    "trans": ["door"]
+  },
+  {
+    "name": "produit",
+    "trans": ["product"]
+  },
+  {
+    "name": "noir",
+    "trans": ["black"]
+  },
+  {
+    "name": "court",
+    "trans": ["short"]
+  },
+  {
+    "name": "chiffre",
+    "trans": ["numeral"]
+  },
+  {
+    "name": "classe",
+    "trans": ["class"]
+  },
+  {
+    "name": "vent",
+    "trans": ["wind"]
+  },
+  {
+    "name": "question",
+    "trans": ["question"]
+  },
+  {
+    "name": "arriver",
+    "trans": ["happen"]
+  },
+  {
+    "name": "complète",
+    "trans": ["complete"]
+  },
+  {
+    "name": "navire",
+    "trans": ["ship"]
+  },
+  {
+    "name": "zone",
+    "trans": ["area"]
+  },
+  {
+    "name": "moitié",
+    "trans": ["half"]
+  },
+  {
+    "name": "rock",
+    "trans": ["rock"]
+  },
+  {
+    "name": "ordre",
+    "trans": ["order"]
+  },
+  {
+    "name": "feu",
+    "trans": ["fire"]
+  },
+  {
+    "name": "sud",
+    "trans": ["south"]
+  },
+  {
+    "name": "problème",
+    "trans": ["problem"]
+  },
+  {
+    "name": "pièce",
+    "trans": ["piece"]
+  },
+  {
+    "name": "dit",
+    "trans": ["told"]
+  },
+  {
+    "name": "savait",
+    "trans": ["knew"]
+  },
+  {
+    "name": "passer",
+    "trans": ["pass"]
+  },
+  {
+    "name": "depuis",
+    "trans": ["since"]
+  },
+  {
+    "name": "haut",
+    "trans": ["top"]
+  },
+  {
+    "name": "ensemble",
+    "trans": ["whole"]
+  },
+  {
+    "name": "roi",
+    "trans": ["king"]
+  },
+  {
+    "name": "rue",
+    "trans": ["street"]
+  },
+  {
+    "name": "pouce",
+    "trans": ["inch"]
+  },
+  {
+    "name": "multiplier",
+    "trans": ["multiply"]
+  },
+  {
+    "name": "rien",
+    "trans": ["nothing"]
+  },
+  {
+    "name": "cours",
+    "trans": ["course"]
+  },
+  {
+    "name": "rester",
+    "trans": ["stay"]
+  },
+  {
+    "name": "roue",
+    "trans": ["wheel"]
+  },
+  {
+    "name": "plein",
+    "trans": ["full"]
+  },
+  {
+    "name": "force",
+    "trans": ["force"]
+  },
+  {
+    "name": "bleu",
+    "trans": ["blue"]
+  },
+  {
+    "name": "objet",
+    "trans": ["object"]
+  },
+  {
+    "name": "décider",
+    "trans": ["decide"]
+  },
+  {
+    "name": "surface",
+    "trans": ["surface"]
+  },
+  {
+    "name": "profond",
+    "trans": ["deep"]
+  },
+  {
+    "name": "lune",
+    "trans": ["moon"]
+  },
+  {
+    "name": "île",
+    "trans": ["island"]
+  },
+  {
+    "name": "pied",
+    "trans": ["foot"]
+  },
+  {
+    "name": "système",
+    "trans": ["system"]
+  },
+  {
+    "name": "occupé",
+    "trans": ["busy"]
+  },
+  {
+    "name": "test",
+    "trans": ["test"]
+  },
+  {
+    "name": "record",
+    "trans": ["record"]
+  },
+  {
+    "name": "bateau",
+    "trans": ["boat"]
+  },
+  {
+    "name": "commun",
+    "trans": ["common"]
+  },
+  {
+    "name": "or",
+    "trans": ["gold"]
+  },
+  {
+    "name": "possible",
+    "trans": ["possible"]
+  },
+  {
+    "name": "plan",
+    "trans": ["plane"]
+  },
+  {
+    "name": "place",
+    "trans": ["stead"]
+  },
+  {
+    "name": "sec",
+    "trans": ["dry"]
+  },
+  {
+    "name": "se demander",
+    "trans": ["wonder"]
+  },
+  {
+    "name": "rire",
+    "trans": ["laugh"]
+  },
+  {
+    "name": "mille",
+    "trans": ["thousand"]
+  },
+  {
+    "name": "il ya",
+    "trans": ["ago"]
+  },
+  {
+    "name": "ran",
+    "trans": ["ran"]
+  },
+  {
+    "name": "vérifier",
+    "trans": ["check"]
+  },
+  {
+    "name": "jeu",
+    "trans": ["game"]
+  },
+  {
+    "name": "forme",
+    "trans": ["shape"]
+  },
+  {
+    "name": "assimiler",
+    "trans": ["equate"]
+  },
+  {
+    "name": "chaud",
+    "trans": ["hot"]
+  },
+  {
+    "name": "manquer",
+    "trans": ["miss"]
+  },
+  {
+    "name": "apporté",
+    "trans": ["brought"]
+  },
+  {
+    "name": "chaleur",
+    "trans": ["heat"]
+  },
+  {
+    "name": "neige",
+    "trans": ["snow"]
+  },
+  {
+    "name": "pneu",
+    "trans": ["tire"]
+  },
+  {
+    "name": "apporter",
+    "trans": ["bring"]
+  },
+  {
+    "name": "oui",
+    "trans": ["yes"]
+  },
+  {
+    "name": "lointain",
+    "trans": ["distant"]
+  },
+  {
+    "name": "remplir",
+    "trans": ["fill"]
+  },
+  {
+    "name": "est",
+    "trans": ["east"]
+  },
+  {
+    "name": "peindre",
+    "trans": ["paint"]
+  },
+  {
+    "name": "langue",
+    "trans": ["language"]
+  },
+  {
+    "name": "entre",
+    "trans": ["among"]
+  },
+  {
+    "name": "unité",
+    "trans": ["unit"]
+  },
+  {
+    "name": "puissance",
+    "trans": ["power"]
+  },
+  {
+    "name": "ville",
+    "trans": ["town"]
+  },
+  {
+    "name": "fin",
+    "trans": ["fine"]
+  },
+  {
+    "name": "certain",
+    "trans": ["certain"]
+  },
+  {
+    "name": "voler",
+    "trans": ["fly"]
+  },
+  {
+    "name": "tomber",
+    "trans": ["fall"]
+  },
+  {
+    "name": "conduire",
+    "trans": ["lead"]
+  },
+  {
+    "name": "cri",
+    "trans": ["cry"]
+  },
+  {
+    "name": "sombre",
+    "trans": ["dark"]
+  },
+  {
+    "name": "machine",
+    "trans": ["machine"]
+  },
+  {
+    "name": "Note",
+    "trans": ["note"]
+  },
+  {
+    "name": "patienter",
+    "trans": ["wait"]
+  },
+  {
+    "name": "plan",
+    "trans": ["plan"]
+  },
+  {
+    "name": "figure",
+    "trans": ["figure"]
+  },
+  {
+    "name": "étoile",
+    "trans": ["star"]
+  },
+  {
+    "name": "boîte",
+    "trans": ["box"]
+  },
+  {
+    "name": "nom",
+    "trans": ["noun"]
+  },
+  {
+    "name": "domaine",
+    "trans": ["field"]
+  },
+  {
+    "name": "reste",
+    "trans": ["rest"]
+  },
+  {
+    "name": "correct",
+    "trans": ["correct"]
+  },
+  {
+    "name": "capable",
+    "trans": ["able"]
+  },
+  {
+    "name": "livre",
+    "trans": ["pound"]
+  },
+  {
+    "name": "Terminé",
+    "trans": ["done"]
+  },
+  {
+    "name": "beauté",
+    "trans": ["beauty"]
+  },
+  {
+    "name": "entraînement",
+    "trans": ["drive"]
+  },
+  {
+    "name": "résisté",
+    "trans": ["stood"]
+  },
+  {
+    "name": "contenir",
+    "trans": ["contain"]
+  },
+  {
+    "name": "avant",
+    "trans": ["front"]
+  },
+  {
+    "name": "enseigner",
+    "trans": ["teach"]
+  },
+  {
+    "name": "semaine",
+    "trans": ["week"]
+  },
+  {
+    "name": "finale",
+    "trans": ["final"]
+  },
+  {
+    "name": "donné",
+    "trans": ["gave"]
+  },
+  {
+    "name": "vert",
+    "trans": ["green"]
+  },
+  {
+    "name": "oh",
+    "trans": ["oh"]
+  },
+  {
+    "name": "rapide",
+    "trans": ["quick"]
+  },
+  {
+    "name": "développer",
+    "trans": ["develop"]
+  },
+  {
+    "name": "océan",
+    "trans": ["ocean"]
+  },
+  {
+    "name": "chaud",
+    "trans": ["warm"]
+  },
+  {
+    "name": "gratuit",
+    "trans": ["free"]
+  },
+  {
+    "name": "minute",
+    "trans": ["minute"]
+  },
+  {
+    "name": "fort",
+    "trans": ["strong"]
+  },
+  {
+    "name": "spécial",
+    "trans": ["special"]
+  },
+  {
+    "name": "esprit",
+    "trans": ["mind"]
+  },
+  {
+    "name": "derrière",
+    "trans": ["behind"]
+  },
+  {
+    "name": "clair",
+    "trans": ["clear"]
+  },
+  {
+    "name": "queue",
+    "trans": ["tail"]
+  },
+  {
+    "name": "produire",
+    "trans": ["produce"]
+  },
+  {
+    "name": "fait",
+    "trans": ["fact"]
+  },
+  {
+    "name": "espace",
+    "trans": ["space"]
+  },
+  {
+    "name": "entendu",
+    "trans": ["heard"]
+  },
+  {
+    "name": "meilleur",
+    "trans": ["best"]
+  },
+  {
+    "name": "heure",
+    "trans": ["hour"]
+  },
+  {
+    "name": "mieux",
+    "trans": ["better"]
+  },
+  {
+    "name": "vrai",
+    "trans": ["TRUE"]
+  },
+  {
+    "name": "pendant",
+    "trans": ["during"]
+  },
+  {
+    "name": "cent",
+    "trans": ["hundred"]
+  },
+  {
+    "name": "cinq",
+    "trans": ["five"]
+  },
+  {
+    "name": "rappeler",
+    "trans": ["remember"]
+  },
+  {
+    "name": "étape",
+    "trans": ["step"]
+  },
+  {
+    "name": "tôt",
+    "trans": ["early"]
+  },
+  {
+    "name": "tenir",
+    "trans": ["hold"]
+  },
+  {
+    "name": "ouest",
+    "trans": ["west"]
+  },
+  {
+    "name": "sol",
+    "trans": ["ground"]
+  },
+  {
+    "name": "intérêt",
+    "trans": ["interest"]
+  },
+  {
+    "name": "atteindre",
+    "trans": ["reach"]
+  },
+  {
+    "name": "rapide",
+    "trans": ["fast"]
+  },
+  {
+    "name": "verbe",
+    "trans": ["verb"]
+  },
+  {
+    "name": "chanter",
+    "trans": ["sing"]
+  },
+  {
+    "name": "écouter",
+    "trans": ["listen"]
+  },
+  {
+    "name": "six",
+    "trans": ["six"]
+  },
+  {
+    "name": "table",
+    "trans": ["table"]
+  },
+  {
+    "name": "Voyage",
+    "trans": ["travel"]
+  },
+  {
+    "name": "moins",
+    "trans": ["less"]
+  },
+  {
+    "name": "matin",
+    "trans": ["morning"]
+  },
+  {
+    "name": "dix",
+    "trans": ["ten"]
+  },
+  {
+    "name": "simple",
+    "trans": ["simple"]
+  },
+  {
+    "name": "plusieurs",
+    "trans": ["several"]
+  },
+  {
+    "name": "voyelle",
+    "trans": ["vowel"]
+  },
+  {
+    "name": "vers",
+    "trans": ["toward"]
+  },
+  {
+    "name": "guerre",
+    "trans": ["war"]
+  },
+  {
+    "name": "poser",
+    "trans": ["lay"]
+  },
+  {
+    "name": "contre",
+    "trans": ["against"]
+  },
+  {
+    "name": "modèle",
+    "trans": ["pattern"]
+  },
+  {
+    "name": "lent",
+    "trans": ["slow"]
+  },
+  {
+    "name": "centre",
+    "trans": ["center"]
+  },
+  {
+    "name": "amour",
+    "trans": ["love"]
+  },
+  {
+    "name": "personne",
+    "trans": ["person"]
+  },
+  {
+    "name": "argent",
+    "trans": ["money"]
+  },
+  {
+    "name": "servir",
+    "trans": ["serve"]
+  },
+  {
+    "name": "apparaître",
+    "trans": ["appear"]
+  },
+  {
+    "name": "route",
+    "trans": ["road"]
+  },
+  {
+    "name": "carte",
+    "trans": ["map"]
+  },
+  {
+    "name": "pluie",
+    "trans": ["rain"]
+  },
+  {
+    "name": "règle",
+    "trans": ["rule"]
+  },
+  {
+    "name": "gouverner",
+    "trans": ["govern"]
+  },
+  {
+    "name": "tirer",
+    "trans": ["pull"]
+  },
+  {
+    "name": "froid",
+    "trans": ["cold"]
+  },
+  {
+    "name": "avis",
+    "trans": ["notice"]
+  },
+  {
+    "name": "voix",
+    "trans": ["voice"]
+  },
+  {
+    "name": "énergie",
+    "trans": ["energy"]
+  },
+  {
+    "name": "chasse",
+    "trans": ["hunt"]
+  },
+  {
+    "name": "probable",
+    "trans": ["probable"]
+  },
+  {
+    "name": "lit",
+    "trans": ["bed"]
+  },
+  {
+    "name": "frère",
+    "trans": ["brother"]
+  },
+  {
+    "name": "œuf",
+    "trans": ["egg"]
+  },
+  {
+    "name": "tour",
+    "trans": ["ride"]
+  },
+  {
+    "name": "cellule",
+    "trans": ["cell"]
+  },
+  {
+    "name": "croire",
+    "trans": ["believe"]
+  },
+  {
+    "name": "peut-être",
+    "trans": ["perhaps"]
+  },
+  {
+    "name": "choisir",
+    "trans": ["pick"]
+  },
+  {
+    "name": "soudain",
+    "trans": ["sudden"]
+  },
+  {
+    "name": "compter",
+    "trans": ["count"]
+  },
+  {
+    "name": "carré",
+    "trans": ["square"]
+  },
+  {
+    "name": "raison",
+    "trans": ["reason"]
+  },
+  {
+    "name": "longueur",
+    "trans": ["length"]
+  },
+  {
+    "name": "représenter",
+    "trans": ["represent"]
+  },
+  {
+    "name": "art",
+    "trans": ["art"]
+  },
+  {
+    "name": "sujet",
+    "trans": ["subject"]
+  },
+  {
+    "name": "région",
+    "trans": ["region"]
+  },
+  {
+    "name": "taille",
+    "trans": ["size"]
+  },
+  {
+    "name": "varier",
+    "trans": ["vary"]
+  },
+  {
+    "name": "régler",
+    "trans": ["settle"]
+  },
+  {
+    "name": "parler",
+    "trans": ["speak"]
+  },
+  {
+    "name": "poids",
+    "trans": ["weight"]
+  },
+  {
+    "name": "général",
+    "trans": ["general"]
+  },
+  {
+    "name": "glace",
+    "trans": ["ice"]
+  },
+  {
+    "name": "question",
+    "trans": ["matter"]
+  },
+  {
+    "name": "cercle",
+    "trans": ["circle"]
+  },
+  {
+    "name": "paire",
+    "trans": ["pair"]
+  },
+  {
+    "name": "inclure",
+    "trans": ["include"]
+  },
+  {
+    "name": "fracture",
+    "trans": ["divide"]
+  },
+  {
+    "name": "syllabe",
+    "trans": ["syllable"]
+  },
+  {
+    "name": "feutre",
+    "trans": ["felt"]
+  },
+  {
+    "name": "grandiose",
+    "trans": ["grand"]
+  },
+  {
+    "name": "balle",
+    "trans": ["ball"]
+  },
+  {
+    "name": "encore",
+    "trans": ["yet"]
+  },
+  {
+    "name": "vague",
+    "trans": ["wave"]
+  },
+  {
+    "name": "tomber",
+    "trans": ["drop"]
+  },
+  {
+    "name": "cœur",
+    "trans": ["heart"]
+  },
+  {
+    "name": "h",
+    "trans": ["am"]
+  },
+  {
+    "name": "présent",
+    "trans": ["present"]
+  },
+  {
+    "name": "lourd",
+    "trans": ["heavy"]
+  },
+  {
+    "name": "danse",
+    "trans": ["dance"]
+  },
+  {
+    "name": "moteur",
+    "trans": ["engine"]
+  },
+  {
+    "name": "position",
+    "trans": ["position"]
+  },
+  {
+    "name": "bras",
+    "trans": ["arm"]
+  },
+  {
+    "name": "large",
+    "trans": ["wide"]
+  },
+  {
+    "name": "voile",
+    "trans": ["sail"]
+  },
+  {
+    "name": "matériel",
+    "trans": ["material"]
+  },
+  {
+    "name": "fraction",
+    "trans": ["fraction"]
+  },
+  {
+    "name": "forêt",
+    "trans": ["forest"]
+  },
+  {
+    "name": "s’asseoir",
+    "trans": ["sit"]
+  },
+  {
+    "name": "course",
+    "trans": ["race"]
+  },
+  {
+    "name": "fenêtre",
+    "trans": ["window"]
+  },
+  {
+    "name": "magasin",
+    "trans": ["store"]
+  },
+  {
+    "name": "été",
+    "trans": ["summer"]
+  },
+  {
+    "name": "train",
+    "trans": ["train"]
+  },
+  {
+    "name": "sommeil",
+    "trans": ["sleep"]
+  },
+  {
+    "name": "prouver",
+    "trans": ["prove"]
+  },
+  {
+    "name": "seul",
+    "trans": ["lone"]
+  },
+  {
+    "name": "jambe",
+    "trans": ["leg"]
+  },
+  {
+    "name": "exercice",
+    "trans": ["exercise"]
+  },
+  {
+    "name": "mur",
+    "trans": ["wall"]
+  },
+  {
+    "name": "capture",
+    "trans": ["catch"]
+  },
+  {
+    "name": "monture",
+    "trans": ["mount"]
+  },
+  {
+    "name": "souhaiter",
+    "trans": ["wish"]
+  },
+  {
+    "name": "ciel",
+    "trans": ["sky"]
+  },
+  {
+    "name": "conseil",
+    "trans": ["board"]
+  },
+  {
+    "name": "joie",
+    "trans": ["joy"]
+  },
+  {
+    "name": "hiver",
+    "trans": ["winter"]
+  },
+  {
+    "name": "sat",
+    "trans": ["sat"]
+  },
+  {
+    "name": "écrit",
+    "trans": ["written"]
+  },
+  {
+    "name": "sauvage",
+    "trans": ["wild"]
+  },
+  {
+    "name": "instrument",
+    "trans": ["instrument"]
+  },
+  {
+    "name": "conservé",
+    "trans": ["kept"]
+  },
+  {
+    "name": "verre",
+    "trans": ["glass"]
+  },
+  {
+    "name": "herbe",
+    "trans": ["grass"]
+  },
+  {
+    "name": "vache",
+    "trans": ["cow"]
+  },
+  {
+    "name": "emploi",
+    "trans": ["job"]
+  },
+  {
+    "name": "bord",
+    "trans": ["edge"]
+  },
+  {
+    "name": "signe",
+    "trans": ["sign"]
+  },
+  {
+    "name": "visite",
+    "trans": ["visit"]
+  },
+  {
+    "name": "passé",
+    "trans": ["past"]
+  },
+  {
+    "name": "doux",
+    "trans": ["soft"]
+  },
+  {
+    "name": "amusement",
+    "trans": ["fun"]
+  },
+  {
+    "name": "clair",
+    "trans": ["bright"]
+  },
+  {
+    "name": "gaz",
+    "trans": ["gas"]
+  },
+  {
+    "name": "temps",
+    "trans": ["weather"]
+  },
+  {
+    "name": "mois",
+    "trans": ["month"]
+  },
+  {
+    "name": "million",
+    "trans": ["million"]
+  },
+  {
+    "name": "porter",
+    "trans": ["bear"]
+  },
+  {
+    "name": "finition",
+    "trans": ["finish"]
+  },
+  {
+    "name": "heureux",
+    "trans": ["happy"]
+  },
+  {
+    "name": "espoir",
+    "trans": ["hope"]
+  },
+  {
+    "name": "fleur",
+    "trans": ["flower"]
+  },
+  {
+    "name": "vêtir",
+    "trans": ["clothe"]
+  },
+  {
+    "name": "étrange",
+    "trans": ["strange"]
+  },
+  {
+    "name": "disparu",
+    "trans": ["gone"]
+  },
+  {
+    "name": "commerce",
+    "trans": ["trade"]
+  },
+  {
+    "name": "mélodie",
+    "trans": ["melody"]
+  },
+  {
+    "name": "voyage",
+    "trans": ["trip"]
+  },
+  {
+    "name": "bureau",
+    "trans": ["office"]
+  },
+  {
+    "name": "recevoir",
+    "trans": ["receive"]
+  },
+  {
+    "name": "rangée",
+    "trans": ["row"]
+  },
+  {
+    "name": "bouche",
+    "trans": ["mouth"]
+  },
+  {
+    "name": "exact",
+    "trans": ["exact"]
+  },
+  {
+    "name": "symbole",
+    "trans": ["symbol"]
+  },
+  {
+    "name": "mourir",
+    "trans": ["die"]
+  },
+  {
+    "name": "moins",
+    "trans": ["least"]
+  },
+  {
+    "name": "difficulté",
+    "trans": ["trouble"]
+  },
+  {
+    "name": "cri",
+    "trans": ["shout"]
+  },
+  {
+    "name": "sauf",
+    "trans": ["except"]
+  },
+  {
+    "name": "écrit",
+    "trans": ["wrote"]
+  },
+  {
+    "name": "semence",
+    "trans": ["seed"]
+  },
+  {
+    "name": "ton",
+    "trans": ["tone"]
+  },
+  {
+    "name": "joindre",
+    "trans": ["join"]
+  },
+  {
+    "name": "suggérer",
+    "trans": ["suggest"]
+  },
+  {
+    "name": "propre",
+    "trans": ["clean"]
+  },
+  {
+    "name": "pause",
+    "trans": ["break"]
+  },
+  {
+    "name": "dame",
+    "trans": ["lady"]
+  },
+  {
+    "name": "cour",
+    "trans": ["yard"]
+  },
+  {
+    "name": "augmenter",
+    "trans": ["rise"]
+  },
+  {
+    "name": "mauvais",
+    "trans": ["bad"]
+  },
+  {
+    "name": "coup",
+    "trans": ["blow"]
+  },
+  {
+    "name": "huile",
+    "trans": ["oil"]
+  },
+  {
+    "name": "sang",
+    "trans": ["blood"]
+  },
+  {
+    "name": "toucher",
+    "trans": ["touch"]
+  },
+  {
+    "name": "a augmenté",
+    "trans": ["grew"]
+  },
+  {
+    "name": "cent",
+    "trans": ["cent"]
+  },
+  {
+    "name": "mélanger",
+    "trans": ["mix"]
+  },
+  {
+    "name": "équipe",
+    "trans": ["team"]
+  },
+  {
+    "name": "fil",
+    "trans": ["wire"]
+  },
+  {
+    "name": "coût",
+    "trans": ["cost"]
+  },
+  {
+    "name": "perdu",
+    "trans": ["lost"]
+  },
+  {
+    "name": "brun",
+    "trans": ["brown"]
+  },
+  {
+    "name": "porter",
+    "trans": ["wear"]
+  },
+  {
+    "name": "jardin",
+    "trans": ["garden"]
+  },
+  {
+    "name": "égal",
+    "trans": ["equal"]
+  },
+  {
+    "name": "expédié",
+    "trans": ["sent"]
+  },
+  {
+    "name": "choisir",
+    "trans": ["choose"]
+  },
+  {
+    "name": "est tombé",
+    "trans": ["fell"]
+  },
+  {
+    "name": "s’adapter",
+    "trans": ["fit"]
+  },
+  {
+    "name": "débit",
+    "trans": ["flow"]
+  },
+  {
+    "name": "juste",
+    "trans": ["fair"]
+  },
+  {
+    "name": "banque",
+    "trans": ["bank"]
+  },
+  {
+    "name": "recueillir",
+    "trans": ["collect"]
+  },
+  {
+    "name": "sauver",
+    "trans": ["save"]
+  },
+  {
+    "name": "contrôle",
+    "trans": ["control"]
+  },
+  {
+    "name": "décimal",
+    "trans": ["decimal"]
+  },
+  {
+    "name": "oreille",
+    "trans": ["ear"]
+  },
+  {
+    "name": "autre",
+    "trans": ["else"]
+  },
+  {
+    "name": "tout à fait",
+    "trans": ["quite"]
+  },
+  {
+    "name": "cassé",
+    "trans": ["broke"]
+  },
+  {
+    "name": "cas",
+    "trans": ["case"]
+  },
+  {
+    "name": "milieu",
+    "trans": ["middle"]
+  },
+  {
+    "name": "tuer",
+    "trans": ["kill"]
+  },
+  {
+    "name": "fils",
+    "trans": ["son"]
+  },
+  {
+    "name": "lac",
+    "trans": ["lake"]
+  },
+  {
+    "name": "moment",
+    "trans": ["moment"]
+  },
+  {
+    "name": "échelle",
+    "trans": ["scale"]
+  },
+  {
+    "name": "fort",
+    "trans": ["loud"]
+  },
+  {
+    "name": "printemps",
+    "trans": ["spring"]
+  },
+  {
+    "name": "observer",
+    "trans": ["observe"]
+  },
+  {
+    "name": "enfant",
+    "trans": ["child"]
+  },
+  {
+    "name": "droit",
+    "trans": ["straight"]
+  },
+  {
+    "name": "consonne",
+    "trans": ["consonant"]
+  },
+  {
+    "name": "nation",
+    "trans": ["nation"]
+  },
+  {
+    "name": "dictionnaire",
+    "trans": ["dictionary"]
+  },
+  {
+    "name": "lait",
+    "trans": ["milk"]
+  },
+  {
+    "name": "vitesse",
+    "trans": ["speed"]
+  },
+  {
+    "name": "méthode",
+    "trans": ["method"]
+  },
+  {
+    "name": "organe",
+    "trans": ["organ"]
+  },
+  {
+    "name": "payer",
+    "trans": ["pay"]
+  },
+  {
+    "name": "âge",
+    "trans": ["age"]
+  },
+  {
+    "name": "section",
+    "trans": ["section"]
+  },
+  {
+    "name": "robe",
+    "trans": ["dress"]
+  },
+  {
+    "name": "nuage",
+    "trans": ["cloud"]
+  },
+  {
+    "name": "surprise",
+    "trans": ["surprise"]
+  },
+  {
+    "name": "calme",
+    "trans": ["quiet"]
+  },
+  {
+    "name": "pierre",
+    "trans": ["stone"]
+  },
+  {
+    "name": "minuscule",
+    "trans": ["tiny"]
+  },
+  {
+    "name": "montée",
+    "trans": ["climb"]
+  },
+  {
+    "name": "frais",
+    "trans": ["cool"]
+  },
+  {
+    "name": "conception",
+    "trans": ["design"]
+  },
+  {
+    "name": "pauvres",
+    "trans": ["poor"]
+  },
+  {
+    "name": "lot",
+    "trans": ["lot"]
+  },
+  {
+    "name": "expérience",
+    "trans": ["experiment"]
+  },
+  {
+    "name": "bas",
+    "trans": ["bottom"]
+  },
+  {
+    "name": "clé",
+    "trans": ["key"]
+  },
+  {
+    "name": "fer",
+    "trans": ["iron"]
+  },
+  {
+    "name": "unique",
+    "trans": ["single"]
+  },
+  {
+    "name": "bâton",
+    "trans": ["stick"]
+  },
+  {
+    "name": "plat",
+    "trans": ["flat"]
+  },
+  {
+    "name": "vingt",
+    "trans": ["twenty"]
+  },
+  {
+    "name": "peau",
+    "trans": ["skin"]
+  },
+  {
+    "name": "sourire",
+    "trans": ["smile"]
+  },
+  {
+    "name": "pli",
+    "trans": ["crease"]
+  },
+  {
+    "name": "trou",
+    "trans": ["hole"]
+  },
+  {
+    "name": "sauter",
+    "trans": ["jump"]
+  },
+  {
+    "name": "bébé",
+    "trans": ["baby"]
+  },
+  {
+    "name": "huit",
+    "trans": ["eight"]
+  },
+  {
+    "name": "village",
+    "trans": ["village"]
+  },
+  {
+    "name": "se rencontrent",
+    "trans": ["meet"]
+  },
+  {
+    "name": "racine",
+    "trans": ["root"]
+  },
+  {
+    "name": "acheter",
+    "trans": ["buy"]
+  },
+  {
+    "name": "augmenter",
+    "trans": ["raise"]
+  },
+  {
+    "name": "résoudre",
+    "trans": ["solve"]
+  },
+  {
+    "name": "métal",
+    "trans": ["metal"]
+  },
+  {
+    "name": "si",
+    "trans": ["whether"]
+  },
+  {
+    "name": "pousser",
+    "trans": ["push"]
+  },
+  {
+    "name": "sept",
+    "trans": ["seven"]
+  },
+  {
+    "name": "paragraphe",
+    "trans": ["paragraph"]
+  },
+  {
+    "name": "troisième",
+    "trans": ["third"]
+  },
+  {
+    "name": "doit",
+    "trans": ["shall"]
+  },
+  {
+    "name": "en attente",
+    "trans": ["held"]
+  },
+  {
+    "name": "cheveux",
+    "trans": ["hair"]
+  },
+  {
+    "name": "décrire",
+    "trans": ["describe"]
+  },
+  {
+    "name": "cuisinier",
+    "trans": ["cook"]
+  },
+  {
+    "name": "étage",
+    "trans": ["floor"]
+  },
+  {
+    "name": "chaque",
+    "trans": ["either"]
+  },
+  {
+    "name": "résultat",
+    "trans": ["result"]
+  },
+  {
+    "name": "brûler",
+    "trans": ["burn"]
+  },
+  {
+    "name": "colline",
+    "trans": ["hill"]
+  },
+  {
+    "name": "coffre-fort",
+    "trans": ["safe"]
+  },
+  {
+    "name": "chat",
+    "trans": ["cat"]
+  },
+  {
+    "name": "siècle",
+    "trans": ["century"]
+  },
+  {
+    "name": "envisager",
+    "trans": ["consider"]
+  },
+  {
+    "name": "type",
+    "trans": ["type"]
+  },
+  {
+    "name": "droit",
+    "trans": ["law"]
+  },
+  {
+    "name": "peu",
+    "trans": ["bit"]
+  },
+  {
+    "name": "côte",
+    "trans": ["coast"]
+  },
+  {
+    "name": "copie",
+    "trans": ["copy"]
+  },
+  {
+    "name": "phrase",
+    "trans": ["phrase"]
+  },
+  {
+    "name": "silencieux",
+    "trans": ["silent"]
+  },
+  {
+    "name": "haut",
+    "trans": ["tall"]
+  },
+  {
+    "name": "sable",
+    "trans": ["sand"]
+  },
+  {
+    "name": "sol",
+    "trans": ["soil"]
+  },
+  {
+    "name": "rouleau",
+    "trans": ["roll"]
+  },
+  {
+    "name": "température",
+    "trans": ["temperature"]
+  },
+  {
+    "name": "doigt",
+    "trans": ["finger"]
+  },
+  {
+    "name": "industrie",
+    "trans": ["industry"]
+  },
+  {
+    "name": "valeur",
+    "trans": ["value"]
+  },
+  {
+    "name": "lutte",
+    "trans": ["fight"]
+  },
+  {
+    "name": "mensonge",
+    "trans": ["lie"]
+  },
+  {
+    "name": "battre",
+    "trans": ["beat"]
+  },
+  {
+    "name": "exciter",
+    "trans": ["excite"]
+  },
+  {
+    "name": "naturel",
+    "trans": ["natural"]
+  },
+  {
+    "name": "vue",
+    "trans": ["view"]
+  },
+  {
+    "name": "sens",
+    "trans": ["sense"]
+  },
+  {
+    "name": "capital",
+    "trans": ["capital"]
+  },
+  {
+    "name": "ne sera pas",
+    "trans": ["won’t"]
+  },
+  {
+    "name": "chaise",
+    "trans": ["chair"]
+  },
+  {
+    "name": "danger",
+    "trans": ["danger"]
+  },
+  {
+    "name": "fruit",
+    "trans": ["fruit"]
+  },
+  {
+    "name": "riche",
+    "trans": ["rich"]
+  },
+  {
+    "name": "épais",
+    "trans": ["thick"]
+  },
+  {
+    "name": "soldat",
+    "trans": ["soldier"]
+  },
+  {
+    "name": "processus",
+    "trans": ["process"]
+  },
+  {
+    "name": "fonctionner",
+    "trans": ["operate"]
+  },
+  {
+    "name": "pratique",
+    "trans": ["practice"]
+  },
+  {
+    "name": "séparé",
+    "trans": ["separate"]
+  },
+  {
+    "name": "difficile",
+    "trans": ["difficult"]
+  },
+  {
+    "name": "médecin",
+    "trans": ["doctor"]
+  },
+  {
+    "name": "s’il vous plaît",
+    "trans": ["please"]
+  },
+  {
+    "name": "protéger",
+    "trans": ["protect"]
+  },
+  {
+    "name": "midi",
+    "trans": ["noon"]
+  },
+  {
+    "name": "récolte",
+    "trans": ["crop"]
+  },
+  {
+    "name": "moderne",
+    "trans": ["modern"]
+  },
+  {
+    "name": "élément",
+    "trans": ["element"]
+  },
+  {
+    "name": "frapper",
+    "trans": ["hit"]
+  },
+  {
+    "name": "étudiant",
+    "trans": ["student"]
+  },
+  {
+    "name": "coin",
+    "trans": ["corner"]
+  },
+  {
+    "name": "partie",
+    "trans": ["party"]
+  },
+  {
+    "name": "alimentation",
+    "trans": ["supply"]
+  },
+  {
+    "name": "dont",
+    "trans": ["whose"]
+  },
+  {
+    "name": "localiser",
+    "trans": ["locate"]
+  },
+  {
+    "name": "anneau",
+    "trans": ["ring"]
+  },
+  {
+    "name": "caractère",
+    "trans": ["character"]
+  },
+  {
+    "name": "insecte",
+    "trans": ["insect"]
+  },
+  {
+    "name": "pris",
+    "trans": ["caught"]
+  },
+  {
+    "name": "période",
+    "trans": ["period"]
+  },
+  {
+    "name": "indiquer",
+    "trans": ["indicate"]
+  },
+  {
+    "name": "radio",
+    "trans": ["radio"]
+  },
+  {
+    "name": "rayon",
+    "trans": ["spoke"]
+  },
+  {
+    "name": "atome",
+    "trans": ["atom"]
+  },
+  {
+    "name": "humain",
+    "trans": ["human"]
+  },
+  {
+    "name": "histoire",
+    "trans": ["history"]
+  },
+  {
+    "name": "effet",
+    "trans": ["effect"]
+  },
+  {
+    "name": "électrique",
+    "trans": ["electric"]
+  },
+  {
+    "name": "attendre",
+    "trans": ["expect"]
+  },
+  {
+    "name": "os",
+    "trans": ["bone"]
+  },
+  {
+    "name": "rail",
+    "trans": ["rail"]
+  },
+  {
+    "name": "imaginer",
+    "trans": ["imagine"]
+  },
+  {
+    "name": "fournir",
+    "trans": ["provide"]
+  },
+  {
+    "name": "se mettre d’accord",
+    "trans": ["agree"]
+  },
+  {
+    "name": "ainsi",
+    "trans": ["thus"]
+  },
+  {
+    "name": "doux",
+    "trans": ["gentle"]
+  },
+  {
+    "name": "femme",
+    "trans": ["woman"]
+  },
+  {
+    "name": "capitaine",
+    "trans": ["captain"]
+  },
+  {
+    "name": "deviner",
+    "trans": ["guess"]
+  },
+  {
+    "name": "nécessaire",
+    "trans": ["necessary"]
+  },
+  {
+    "name": "net",
+    "trans": ["sharp"]
+  },
+  {
+    "name": "aile",
+    "trans": ["wing"]
+  },
+  {
+    "name": "créer",
+    "trans": ["create"]
+  },
+  {
+    "name": "voisin",
+    "trans": ["neighbor"]
+  },
+  {
+    "name": "lavage",
+    "trans": ["wash"]
+  },
+  {
+    "name": "chauve-souris",
+    "trans": ["bat"]
+  },
+  {
+    "name": "plutôt",
+    "trans": ["rather"]
+  },
+  {
+    "name": "foule",
+    "trans": ["crowd"]
+  },
+  {
+    "name": "blé",
+    "trans": ["corn"]
+  },
+  {
+    "name": "comparer",
+    "trans": ["compare"]
+  },
+  {
+    "name": "poème",
+    "trans": ["poem"]
+  },
+  {
+    "name": "chaîne",
+    "trans": ["string"]
+  },
+  {
+    "name": "cloche",
+    "trans": ["bell"]
+  },
+  {
+    "name": "dépendre",
+    "trans": ["depend"]
+  },
+  {
+    "name": "viande",
+    "trans": ["meat"]
+  },
+  {
+    "name": "rub",
+    "trans": ["rub"]
+  },
+  {
+    "name": "tube",
+    "trans": ["tube"]
+  },
+  {
+    "name": "célèbre",
+    "trans": ["famous"]
+  },
+  {
+    "name": "dollar",
+    "trans": ["dollar"]
+  },
+  {
+    "name": "courant",
+    "trans": ["stream"]
+  },
+  {
+    "name": "peur",
+    "trans": ["fear"]
+  },
+  {
+    "name": "vue",
+    "trans": ["sight"]
+  },
+  {
+    "name": "mince",
+    "trans": ["thin"]
+  },
+  {
+    "name": "triangle",
+    "trans": ["triangle"]
+  },
+  {
+    "name": "planète",
+    "trans": ["planet"]
+  },
+  {
+    "name": "se dépêcher",
+    "trans": ["hurry"]
+  },
+  {
+    "name": "chef",
+    "trans": ["chief"]
+  },
+  {
+    "name": "colonie",
+    "trans": ["colony"]
+  },
+  {
+    "name": "horloge",
+    "trans": ["clock"]
+  },
+  {
+    "name": "mine",
+    "trans": ["mine"]
+  },
+  {
+    "name": "lien",
+    "trans": ["tie"]
+  },
+  {
+    "name": "entrer",
+    "trans": ["enter"]
+  },
+  {
+    "name": "majeur",
+    "trans": ["major"]
+  },
+  {
+    "name": "frais",
+    "trans": ["fresh"]
+  },
+  {
+    "name": "recherche",
+    "trans": ["search"]
+  },
+  {
+    "name": "envoyer",
+    "trans": ["send"]
+  },
+  {
+    "name": "jaune",
+    "trans": ["yellow"]
+  },
+  {
+    "name": "pistolet",
+    "trans": ["gun"]
+  },
+  {
+    "name": "permettre",
+    "trans": ["allow"]
+  },
+  {
+    "name": "impression",
+    "trans": ["print"]
+  },
+  {
+    "name": "mort",
+    "trans": ["dead"]
+  },
+  {
+    "name": "place",
+    "trans": ["spot"]
+  },
+  {
+    "name": "désert",
+    "trans": ["desert"]
+  },
+  {
+    "name": "costume",
+    "trans": ["suit"]
+  },
+  {
+    "name": "courant",
+    "trans": ["current"]
+  },
+  {
+    "name": "ascenseur",
+    "trans": ["lift"]
+  },
+  {
+    "name": "rose",
+    "trans": ["rose"]
+  },
+  {
+    "name": "arriver",
+    "trans": ["arrive"]
+  },
+  {
+    "name": "maître",
+    "trans": ["master"]
+  },
+  {
+    "name": "piste",
+    "trans": ["track"]
+  },
+  {
+    "name": "mère",
+    "trans": ["parent"]
+  },
+  {
+    "name": "rivage",
+    "trans": ["shore"]
+  },
+  {
+    "name": "division",
+    "trans": ["division"]
+  },
+  {
+    "name": "feuille",
+    "trans": ["sheet"]
+  },
+  {
+    "name": "substance",
+    "trans": ["substance"]
+  },
+  {
+    "name": "favoriser",
+    "trans": ["favor"]
+  },
+  {
+    "name": "relier",
+    "trans": ["connect"]
+  },
+  {
+    "name": "poste",
+    "trans": ["post"]
+  },
+  {
+    "name": "passer",
+    "trans": ["spend"]
+  },
+  {
+    "name": "corde",
+    "trans": ["chord"]
+  },
+  {
+    "name": "graisse",
+    "trans": ["fat"]
+  },
+  {
+    "name": "heureux",
+    "trans": ["glad"]
+  },
+  {
+    "name": "original",
+    "trans": ["original"]
+  },
+  {
+    "name": "part",
+    "trans": ["share"]
+  },
+  {
+    "name": "station",
+    "trans": ["station"]
+  },
+  {
+    "name": "papa",
+    "trans": ["dad"]
+  },
+  {
+    "name": "pain",
+    "trans": ["bread"]
+  },
+  {
+    "name": "charger",
+    "trans": ["charge"]
+  },
+  {
+    "name": "propre",
+    "trans": ["proper"]
+  },
+  {
+    "name": "bar",
+    "trans": ["bar"]
+  },
+  {
+    "name": "proposition",
+    "trans": ["offer"]
+  },
+  {
+    "name": "segment",
+    "trans": ["segment"]
+  },
+  {
+    "name": "esclave",
+    "trans": ["slave"]
+  },
+  {
+    "name": "canard",
+    "trans": ["duck"]
+  },
+  {
+    "name": "instant",
+    "trans": ["instant"]
+  },
+  {
+    "name": "marché",
+    "trans": ["market"]
+  },
+  {
+    "name": "degré",
+    "trans": ["degree"]
+  },
+  {
+    "name": "peupler",
+    "trans": ["populate"]
+  },
+  {
+    "name": "poussin",
+    "trans": ["chick"]
+  },
+  {
+    "name": "cher",
+    "trans": ["dear"]
+  },
+  {
+    "name": "ennemi",
+    "trans": ["enemy"]
+  },
+  {
+    "name": "répondre",
+    "trans": ["reply"]
+  },
+  {
+    "name": "boisson",
+    "trans": ["drink"]
+  },
+  {
+    "name": "se produire",
+    "trans": ["occur"]
+  },
+  {
+    "name": "support",
+    "trans": ["support"]
+  },
+  {
+    "name": "discours",
+    "trans": ["speech"]
+  },
+  {
+    "name": "nature",
+    "trans": ["nature"]
+  },
+  {
+    "name": "gamme",
+    "trans": ["range"]
+  },
+  {
+    "name": "vapeur",
+    "trans": ["steam"]
+  },
+  {
+    "name": "mouvement",
+    "trans": ["motion"]
+  },
+  {
+    "name": "chemin",
+    "trans": ["path"]
+  },
+  {
+    "name": "liquide",
+    "trans": ["liquid"]
+  },
+  {
+    "name": "enregistrer",
+    "trans": ["log"]
+  },
+  {
+    "name": "signifiait",
+    "trans": ["meant"]
+  },
+  {
+    "name": "quotient",
+    "trans": ["quotient"]
+  },
+  {
+    "name": "dents",
+    "trans": ["teeth"]
+  },
+  {
+    "name": "coquille",
+    "trans": ["shell"]
+  },
+  {
+    "name": "cou",
+    "trans": ["neck"]
+  },
+  {
+    "name": "oxygène",
+    "trans": ["oxygen"]
+  },
+  {
+    "name": "sucre",
+    "trans": ["sugar"]
+  },
+  {
+    "name": "décès",
+    "trans": ["death"]
+  },
+  {
+    "name": "assez",
+    "trans": ["pretty"]
+  },
+  {
+    "name": "compétence",
+    "trans": ["skill"]
+  },
+  {
+    "name": "femmes",
+    "trans": ["women"]
+  },
+  {
+    "name": "saison",
+    "trans": ["season"]
+  },
+  {
+    "name": "solution",
+    "trans": ["solution"]
+  },
+  {
+    "name": "aimant",
+    "trans": ["magnet"]
+  },
+  {
+    "name": "argent",
+    "trans": ["silver"]
+  },
+  {
+    "name": "merci",
+    "trans": ["thank"]
+  },
+  {
+    "name": "branche",
+    "trans": ["branch"]
+  },
+  {
+    "name": "rencontre",
+    "trans": ["match"]
+  },
+  {
+    "name": "suffixe",
+    "trans": ["suffix"]
+  },
+  {
+    "name": "particulièrement",
+    "trans": ["especially"]
+  },
+  {
+    "name": "figue",
+    "trans": ["fig"]
+  },
+  {
+    "name": "peur",
+    "trans": ["afraid"]
+  },
+  {
+    "name": "énorme",
+    "trans": ["huge"]
+  },
+  {
+    "name": "sœur",
+    "trans": ["sister"]
+  },
+  {
+    "name": "acier",
+    "trans": ["steel"]
+  },
+  {
+    "name": "discuter",
+    "trans": ["discuss"]
+  },
+  {
+    "name": "avant",
+    "trans": ["forward"]
+  },
+  {
+    "name": "similaire",
+    "trans": ["similar"]
+  },
+  {
+    "name": "guider",
+    "trans": ["guide"]
+  },
+  {
+    "name": "expérience",
+    "trans": ["experience"]
+  },
+  {
+    "name": "score",
+    "trans": ["score"]
+  },
+  {
+    "name": "pomme",
+    "trans": ["apple"]
+  },
+  {
+    "name": "acheté",
+    "trans": ["bought"]
+  },
+  {
+    "name": "LED",
+    "trans": ["led"]
+  },
+  {
+    "name": "pas",
+    "trans": ["pitch"]
+  },
+  {
+    "name": "manteau",
+    "trans": ["coat"]
+  },
+  {
+    "name": "masse",
+    "trans": ["mass"]
+  },
+  {
+    "name": "carte",
+    "trans": ["card"]
+  },
+  {
+    "name": "bande",
+    "trans": ["band"]
+  },
+  {
+    "name": "corde",
+    "trans": ["rope"]
+  },
+  {
+    "name": "glissement",
+    "trans": ["slip"]
+  },
+  {
+    "name": "gagner",
+    "trans": ["win"]
+  },
+  {
+    "name": "rêver",
+    "trans": ["dream"]
+  },
+  {
+    "name": "soirée",
+    "trans": ["evening"]
+  },
+  {
+    "name": "condition",
+    "trans": ["condition"]
+  },
+  {
+    "name": "alimentation",
+    "trans": ["feed"]
+  },
+  {
+    "name": "outil",
+    "trans": ["tool"]
+  },
+  {
+    "name": "total",
+    "trans": ["total"]
+  },
+  {
+    "name": "de base",
+    "trans": ["basic"]
+  },
+  {
+    "name": "odeur",
+    "trans": ["smell"]
+  },
+  {
+    "name": "vallée",
+    "trans": ["valley"]
+  },
+  {
+    "name": "ni",
+    "trans": ["nor"]
+  },
+  {
+    "name": "double",
+    "trans": ["double"]
+  },
+  {
+    "name": "siège",
+    "trans": ["seat"]
+  },
+  {
+    "name": "continuer",
+    "trans": ["continue"]
+  },
+  {
+    "name": "bloc",
+    "trans": ["block"]
+  },
+  {
+    "name": "graphique",
+    "trans": ["chart"]
+  },
+  {
+    "name": "chapeau",
+    "trans": ["hat"]
+  },
+  {
+    "name": "vendre",
+    "trans": ["sell"]
+  },
+  {
+    "name": "succès",
+    "trans": ["success"]
+  },
+  {
+    "name": "entreprise",
+    "trans": ["company"]
+  },
+  {
+    "name": "soustraire",
+    "trans": ["subtract"]
+  },
+  {
+    "name": "événement",
+    "trans": ["event"]
+  },
+  {
+    "name": "particulier",
+    "trans": ["particular"]
+  },
+  {
+    "name": "accord",
+    "trans": ["deal"]
+  },
+  {
+    "name": "baignade",
+    "trans": ["swim"]
+  },
+  {
+    "name": "terme",
+    "trans": ["term"]
+  },
+  {
+    "name": "opposé",
+    "trans": ["opposite"]
+  },
+  {
+    "name": "femme",
+    "trans": ["wife"]
+  },
+  {
+    "name": "chaussure",
+    "trans": ["shoe"]
+  },
+  {
+    "name": "épaule",
+    "trans": ["shoulder"]
+  },
+  {
+    "name": "propagation",
+    "trans": ["spread"]
+  },
+  {
+    "name": "organiser",
+    "trans": ["arrange"]
+  },
+  {
+    "name": "camp",
+    "trans": ["camp"]
+  },
+  {
+    "name": "inventer",
+    "trans": ["invent"]
+  },
+  {
+    "name": "coton",
+    "trans": ["cotton"]
+  },
+  {
+    "name": "né",
+    "trans": ["born"]
+  },
+  {
+    "name": "déterminer",
+    "trans": ["determine"]
+  },
+  {
+    "name": "litre",
+    "trans": ["quart"]
+  },
+  {
+    "name": "neuf",
+    "trans": ["nine"]
+  },
+  {
+    "name": "camion",
+    "trans": ["truck"]
+  },
+  {
+    "name": "bruit",
+    "trans": ["noise"]
+  },
+  {
+    "name": "niveau",
+    "trans": ["level"]
+  },
+  {
+    "name": "chance",
+    "trans": ["chance"]
+  },
+  {
+    "name": "recueillir",
+    "trans": ["gather"]
+  },
+  {
+    "name": "boutique",
+    "trans": ["shop"]
+  },
+  {
+    "name": "tronçon",
+    "trans": ["stretch"]
+  },
+  {
+    "name": "jeter",
+    "trans": ["throw"]
+  },
+  {
+    "name": "éclat",
+    "trans": ["shine"]
+  },
+  {
+    "name": "propriété",
+    "trans": ["property"]
+  },
+  {
+    "name": "colonne",
+    "trans": ["column"]
+  },
+  {
+    "name": "molécule",
+    "trans": ["molecule"]
+  },
+  {
+    "name": "sélectionner",
+    "trans": ["select"]
+  },
+  {
+    "name": "mal",
+    "trans": ["wrong"]
+  },
+  {
+    "name": "gris",
+    "trans": ["gray"]
+  },
+  {
+    "name": "répétition",
+    "trans": ["repeat"]
+  },
+  {
+    "name": "exiger",
+    "trans": ["require"]
+  },
+  {
+    "name": "large",
+    "trans": ["broad"]
+  },
+  {
+    "name": "préparer",
+    "trans": ["prepare"]
+  },
+  {
+    "name": "sel",
+    "trans": ["salt"]
+  },
+  {
+    "name": "nez",
+    "trans": ["nose"]
+  },
+  {
+    "name": "pluriel",
+    "trans": ["plural"]
+  },
+  {
+    "name": "colère",
+    "trans": ["anger"]
+  },
+  {
+    "name": "revendication",
+    "trans": ["claim"]
+  },
+  {
+    "name": "continent",
+    "trans": ["continent"]
+  }
+]
