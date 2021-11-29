@@ -604,6 +604,14 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/JapVocabList.N5.json',
     length: 670,
   },
+  {
+    id: 'French1',
+    name: 'French',
+    description: '1000 most common word French',
+    category: 'English-French',
+    url: './dicts/english-french/1000 Most Common French Words.json',
+    length: 1000,
+  },
 ]
 
 /**
