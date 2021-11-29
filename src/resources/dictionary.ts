@@ -584,7 +584,7 @@ export const dictionaries: Dictionary[] = [
     name: 'French',
     description: '1000 most common word French',
     category: 'English-French',
-    url: './dicts/english-french/1000 Most Common French Words.json',
+    url: './dicts/English-French/1000 Most Common French Words.json',
     length: 1000,
   },
 ]
