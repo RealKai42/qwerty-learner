@@ -232,8 +232,8 @@ export const dictionaries: Dictionary[] = [
     name: '七年级下',
     description: '人教版七年级下册',
     category: '人教版英语',
-    url: './dicts/PEPChuZhong7_1_T.json',
-    length: 392,
+    url: './dicts/PEPChuZhong7_2_T.json',
+    length: 492,
   },
   {
     id: 'ba1',
