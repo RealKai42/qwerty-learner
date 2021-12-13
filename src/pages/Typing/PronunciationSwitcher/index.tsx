@@ -19,6 +19,8 @@ const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state
           <option value="us">美音</option>
           <option value="uk">英音</option>
           <option value="jap">日语</option>
+          <option value="fr">法语</option>
+          <option value="ko">韩语</option>
         </select>
       </div>
     </div>

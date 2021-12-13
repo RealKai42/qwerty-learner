@@ -26,7 +26,7 @@ const App: React.FC = () => {
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
 
-  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
+  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false, transVisible: true })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
 
@@ -205,7 +205,13 @@ const App: React.FC = () => {
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                     <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
                   )}
-                  <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
+                  {switcherState.transVisible && (
+                    <Translation
+                      transVisible={switcherState.transVisible}
+                      key={`trans-${wordList.words[order].name}`}
+                      trans={wordList.words[order].trans.join('；')}
+                    />
+                  )}
                 </div>
               )}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />

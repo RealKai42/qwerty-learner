@@ -42,6 +42,14 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     },
     [dispatch],
   )
+  useHotkeys(
+    'ctrl+c',
+    (e) => {
+      e.preventDefault()
+      dispatch('transVisible')
+    },
+    [dispatch],
+  )
 
   return (
     <div className="flex items-center justify-center space-x-3">
@@ -87,6 +95,17 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           }}
         >
           <FontAwesomeIcon icon={state.darkMode ? 'moon' : 'sun'} fixedWidth />
+        </button>
+      </Tooltip>
+      <Tooltip content="开关翻译显示（Ctrl + C）">
+        <button
+          className={`${state.transVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          onClick={(e) => {
+            dispatch('transVisible')
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon={state.transVisible ? 'eye' : 'eye-slash'} fixedWidth />
         </button>
       </Tooltip>
     </div>

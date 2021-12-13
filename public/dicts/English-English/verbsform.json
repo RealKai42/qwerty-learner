@@ -1,0 +1,1146 @@
+[
+  {
+    "name": "dug",
+    "trans": ["dig(past form)"]
+  },
+  {
+    "name": "dug",
+    "trans": ["dig(past participle)"]
+  },
+  {
+    "name": "chose",
+    "trans": ["choose(past form)"]
+  },
+  {
+    "name": "chosen",
+    "trans": ["choose(past participle)"]
+  },
+  {
+    "name": "dealt",
+    "trans": ["deal(past form)"]
+  },
+  {
+    "name": "dealt",
+    "trans": ["deal(past participle)"]
+  },
+  {
+    "name": "brought",
+    "trans": ["bring(past form)"]
+  },
+  {
+    "name": "brought",
+    "trans": ["bring(past participle)"]
+  },
+  {
+    "name": "strung",
+    "trans": ["string(past form)"]
+  },
+  {
+    "name": "strung",
+    "trans": ["string(past participle)"]
+  },
+  {
+    "name": "hit",
+    "trans": ["hit(past form)"]
+  },
+  {
+    "name": "hit",
+    "trans": ["hit(past participle)"]
+  },
+  {
+    "name": "left",
+    "trans": ["leave(past form)"]
+  },
+  {
+    "name": "left",
+    "trans": ["leave(past participle)"]
+  },
+  {
+    "name": "strode",
+    "trans": ["stride(past form)"]
+  },
+  {
+    "name": "stridden",
+    "trans": ["stride(past participle)"]
+  },
+  {
+    "name": "mistook",
+    "trans": ["mistake(past form)"]
+  },
+  {
+    "name": "mistaken",
+    "trans": ["mistake(past participle)"]
+  },
+  {
+    "name": "sought",
+    "trans": ["seek(past form)"]
+  },
+  {
+    "name": "sought",
+    "trans": ["seek(past participle)"]
+  },
+  {
+    "name": "swung",
+    "trans": ["swing(past form)"]
+  },
+  {
+    "name": "swung",
+    "trans": ["swing(past participle)"]
+  },
+  {
+    "name": "made",
+    "trans": ["make(past form)"]
+  },
+  {
+    "name": "made",
+    "trans": ["make(past participle)"]
+  },
+  {
+    "name": "ate",
+    "trans": ["eat(past form)"]
+  },
+  {
+    "name": "eaten",
+    "trans": ["eat(past participle)"]
+  },
+  {
+    "name": "awakened",
+    "trans": ["awaken(past form)"]
+  },
+  {
+    "name": "awakened",
+    "trans": ["awaken(past participle)"]
+  },
+  {
+    "name": "caught",
+    "trans": ["catch(past form)"]
+  },
+  {
+    "name": "caught",
+    "trans": ["catch(past participle)"]
+  },
+  {
+    "name": "fell",
+    "trans": ["fall(past form)"]
+  },
+  {
+    "name": "fallen",
+    "trans": ["fall(past participle)"]
+  },
+  {
+    "name": "wrote",
+    "trans": ["write(past form)"]
+  },
+  {
+    "name": "written",
+    "trans": ["write(past participle)"]
+  },
+  {
+    "name": "sang",
+    "trans": ["sing(past form)"]
+  },
+  {
+    "name": "sung",
+    "trans": ["sing(past participle)"]
+  },
+  {
+    "name": "thrust",
+    "trans": ["thrust(past form)"]
+  },
+  {
+    "name": "thrust",
+    "trans": ["thrust(past participle)"]
+  },
+  {
+    "name": "put",
+    "trans": ["put(past form)"]
+  },
+  {
+    "name": "put",
+    "trans": ["put(past participle)"]
+  },
+  {
+    "name": "wring",
+    "trans": ["wring(past form)"]
+  },
+  {
+    "name": "wrung",
+    "trans": ["wring(past participle)"]
+  },
+  {
+    "name": "strove (or strived)",
+    "trans": ["strive(past form)"]
+  },
+  {
+    "name": "striven (or strived)",
+    "trans": ["strive(past participle)"]
+  },
+  {
+    "name": "slew",
+    "trans": ["slay(past form)"]
+  },
+  {
+    "name": "slain",
+    "trans": ["slay(past participle)"]
+  },
+  {
+    "name": "swore",
+    "trans": ["swear(past form)"]
+  },
+  {
+    "name": "sworn",
+    "trans": ["swear(past participle)"]
+  },
+  {
+    "name": "sprang (or sprung)",
+    "trans": ["spring(past form)"]
+  },
+  {
+    "name": "sprung",
+    "trans": ["spring(past participle)"]
+  },
+  {
+    "name": "awoke (or awaked)",
+    "trans": ["awake(past form)"]
+  },
+  {
+    "name": "awaked (or awoken)",
+    "trans": ["awake(past participle)"]
+  },
+  {
+    "name": "wound",
+    "trans": ["wind(past form)"]
+  },
+  {
+    "name": "wound",
+    "trans": ["wind(past participle)"]
+  },
+  {
+    "name": "struck",
+    "trans": ["strike(past form)"]
+  },
+  {
+    "name": "struck",
+    "trans": ["strike(past participle)"]
+  },
+  {
+    "name": "lighted (or lit)",
+    "trans": ["light(past form)"]
+  },
+  {
+    "name": "lighted (or lit)",
+    "trans": ["light(past participle)"]
+  },
+  {
+    "name": "laid",
+    "trans": ["lay(past form)"]
+  },
+  {
+    "name": "laid",
+    "trans": ["lay(past participle)"]
+  },
+  {
+    "name": "bound",
+    "trans": ["bind(past form)"]
+  },
+  {
+    "name": "bound",
+    "trans": ["bind(past participle)"]
+  },
+  {
+    "name": "cast",
+    "trans": ["cast(past form)"]
+  },
+  {
+    "name": "cast",
+    "trans": ["cast(past participle)"]
+  },
+  {
+    "name": "rode",
+    "trans": ["ride(past form)"]
+  },
+  {
+    "name": "ridden",
+    "trans": ["ride(past participle)"]
+  },
+  {
+    "name": "sent",
+    "trans": ["send(past form)"]
+  },
+  {
+    "name": "sent",
+    "trans": ["send(past participle)"]
+  },
+  {
+    "name": "shook",
+    "trans": ["shake(past form)"]
+  },
+  {
+    "name": "shaken",
+    "trans": ["shake(past participle)"]
+  },
+  {
+    "name": "began",
+    "trans": ["begin(past form)"]
+  },
+  {
+    "name": "begun",
+    "trans": ["begin(past participle)"]
+  },
+  {
+    "name": "did",
+    "trans": ["do(past form)"]
+  },
+  {
+    "name": "done",
+    "trans": ["do(past participle)"]
+  },
+  {
+    "name": "felt",
+    "trans": ["feel(past form)"]
+  },
+  {
+    "name": "felt",
+    "trans": ["feel(past participle)"]
+  },
+  {
+    "name": "leaped (or leapt)",
+    "trans": ["leap(past form)"]
+  },
+  {
+    "name": "leaped (or leapt)",
+    "trans": ["leap(past participle)"]
+  },
+  {
+    "name": "burst",
+    "trans": ["burst(past form)"]
+  },
+  {
+    "name": "burst",
+    "trans": ["burst(past participle)"]
+  },
+  {
+    "name": "drank",
+    "trans": ["drink(past form)"]
+  },
+  {
+    "name": "drunk",
+    "trans": ["drink(past participle)"]
+  },
+  {
+    "name": "saw",
+    "trans": ["see(past form)"]
+  },
+  {
+    "name": "seen",
+    "trans": ["see(past participle)"]
+  },
+  {
+    "name": "got",
+    "trans": ["get(past form)"]
+  },
+  {
+    "name": "got (or gotten)",
+    "trans": ["get(past participle)"]
+  },
+  {
+    "name": "sped (or speeded)",
+    "trans": ["speed(past form)"]
+  },
+  {
+    "name": "sped (or speeded)",
+    "trans": ["speed(past participle)"]
+  },
+  {
+    "name": "stood",
+    "trans": ["stand(past form)"]
+  },
+  {
+    "name": "stood",
+    "trans": ["stand(past participle)"]
+  },
+  {
+    "name": "froze",
+    "trans": ["freeze(past form)"]
+  },
+  {
+    "name": "frozen",
+    "trans": ["freeze(past participle)"]
+  },
+  {
+    "name": "thought",
+    "trans": ["think(past form)"]
+  },
+  {
+    "name": "thought",
+    "trans": ["think(past participle)"]
+  },
+  {
+    "name": "taught",
+    "trans": ["teach(past form)"]
+  },
+  {
+    "name": "taught",
+    "trans": ["teach(past participle)"]
+  },
+  {
+    "name": "split",
+    "trans": ["split(past form)"]
+  },
+  {
+    "name": "split",
+    "trans": ["split(past participle)"]
+  },
+  {
+    "name": "swept",
+    "trans": ["sweep(past form)"]
+  },
+  {
+    "name": "swept",
+    "trans": ["sweep(past participle)"]
+  },
+  {
+    "name": "bit",
+    "trans": ["bite(past form)"]
+  },
+  {
+    "name": "bitten",
+    "trans": ["bite(past participle)"]
+  },
+  {
+    "name": "forbade",
+    "trans": ["forbid(past form)"]
+  },
+  {
+    "name": "forbidden",
+    "trans": ["forbid(past participle)"]
+  },
+  {
+    "name": "overcame",
+    "trans": ["overcome(past form)"]
+  },
+  {
+    "name": "overcome",
+    "trans": ["overcome(past participle)"]
+  },
+  {
+    "name": "met",
+    "trans": ["meet(past form)"]
+  },
+  {
+    "name": "met",
+    "trans": ["meet(past participle)"]
+  },
+  {
+    "name": "threw",
+    "trans": ["throw(past form)"]
+  },
+  {
+    "name": "thrown",
+    "trans": ["throw(past participle)"]
+  },
+  {
+    "name": "slid",
+    "trans": ["slide(past form)"]
+  },
+  {
+    "name": "slide",
+    "trans": ["slide(past participle)"]
+  },
+  {
+    "name": "meant",
+    "trans": ["mean(past form)"]
+  },
+  {
+    "name": "meant",
+    "trans": ["mean(past participle)"]
+  },
+  {
+    "name": "grew",
+    "trans": ["grow(past form)"]
+  },
+  {
+    "name": "grown",
+    "trans": ["grow(past participle)"]
+  },
+  {
+    "name": "cut",
+    "trans": ["cut(past form)"]
+  },
+  {
+    "name": "cut",
+    "trans": ["cut(past participle)"]
+  },
+  {
+    "name": "forgot",
+    "trans": ["forget(past form)"]
+  },
+  {
+    "name": "forgotten",
+    "trans": ["forget(past participle)"]
+  },
+  {
+    "name": "gave",
+    "trans": ["give(past form)"]
+  },
+  {
+    "name": "given",
+    "trans": ["give(past participle)"]
+  },
+  {
+    "name": "bade",
+    "trans": ["bid (to order, invite)(past form)"]
+  },
+  {
+    "name": "bidden",
+    "trans": ["bid (to order, invite)(past participle)"]
+  },
+  {
+    "name": "went",
+    "trans": ["go(past form)"]
+  },
+  {
+    "name": "gone",
+    "trans": ["go(past participle)"]
+  },
+  {
+    "name": "held",
+    "trans": ["hold(past form)"]
+  },
+  {
+    "name": "held",
+    "trans": ["hold(past participle)"]
+  },
+  {
+    "name": "told",
+    "trans": ["tell(past form)"]
+  },
+  {
+    "name": "told",
+    "trans": ["tell(past participle)"]
+  },
+  {
+    "name": "forgave",
+    "trans": ["forgive(past form)"]
+  },
+  {
+    "name": "forgiven",
+    "trans": ["forgive(past participle)"]
+  },
+  {
+    "name": "lost",
+    "trans": ["lose(past form)"]
+  },
+  {
+    "name": "lost",
+    "trans": ["lose(past participle)"]
+  },
+  {
+    "name": "lent",
+    "trans": ["lend(past form)"]
+  },
+  {
+    "name": "lent",
+    "trans": ["lend(past participle)"]
+  },
+  {
+    "name": "ran",
+    "trans": ["run(past form)"]
+  },
+  {
+    "name": "run",
+    "trans": ["run(past participle)"]
+  },
+  {
+    "name": "rose",
+    "trans": ["rise(past form)"]
+  },
+  {
+    "name": "risen",
+    "trans": ["rise(past participle)"]
+  },
+  {
+    "name": "spread",
+    "trans": ["spread(past form)"]
+  },
+  {
+    "name": "spread",
+    "trans": ["spread(past participle)"]
+  },
+  {
+    "name": "stuck",
+    "trans": ["stick(past form)"]
+  },
+  {
+    "name": "stuck",
+    "trans": ["stick(past participle)"]
+  },
+  {
+    "name": "tore",
+    "trans": ["tear(past form)"]
+  },
+  {
+    "name": "torn",
+    "trans": ["tear(past participle)"]
+  },
+  {
+    "name": "found",
+    "trans": ["find(past form)"]
+  },
+  {
+    "name": "found",
+    "trans": ["find(past participle)"]
+  },
+  {
+    "name": "flew",
+    "trans": ["fly(past form)"]
+  },
+  {
+    "name": "flown",
+    "trans": ["fly(past participle)"]
+  },
+  {
+    "name": "shed",
+    "trans": ["shed(past form)"]
+  },
+  {
+    "name": "shed",
+    "trans": ["shed(past participle)"]
+  },
+  {
+    "name": "slunk",
+    "trans": ["slink(past form)"]
+  },
+  {
+    "name": "slunk",
+    "trans": ["slink(past participle)"]
+  },
+  {
+    "name": "ground",
+    "trans": ["grind(past form)"]
+  },
+  {
+    "name": "ground",
+    "trans": ["grind(past participle)"]
+  },
+  {
+    "name": "knelt (or kneeled)",
+    "trans": ["kneel(past form)"]
+  },
+  {
+    "name": "knelt (or kneeled)",
+    "trans": ["kneel(past participle)"]
+  },
+  {
+    "name": "bore",
+    "trans": ["bear (to carry)(past form)"]
+  },
+  {
+    "name": "borne",
+    "trans": ["bear (to carry)(past participle)"]
+  },
+  {
+    "name": "arose",
+    "trans": ["arise(past form)"]
+  },
+  {
+    "name": "arisen",
+    "trans": ["arise(past participle)"]
+  },
+  {
+    "name": "drove",
+    "trans": ["drive(past form)"]
+  },
+  {
+    "name": "driven",
+    "trans": ["drive(past participle)"]
+  },
+  {
+    "name": "sold",
+    "trans": ["sell(past form)"]
+  },
+  {
+    "name": "sold",
+    "trans": ["sell(past participle)"]
+  },
+  {
+    "name": "drew",
+    "trans": ["draw(past form)"]
+  },
+  {
+    "name": "drawn",
+    "trans": ["draw(past participle)"]
+  },
+  {
+    "name": "slept",
+    "trans": ["sleep(past form)"]
+  },
+  {
+    "name": "slept",
+    "trans": ["sleep(past participle)"]
+  },
+  {
+    "name": "spoke",
+    "trans": ["speak(past form)"]
+  },
+  {
+    "name": "spoken",
+    "trans": ["speak(past participle)"]
+  },
+  {
+    "name": "bid",
+    "trans": ["bid (to offer)(past form)"]
+  },
+  {
+    "name": "bid",
+    "trans": ["bid (to offer)(past participle)"]
+  },
+  {
+    "name": "shot",
+    "trans": ["shoot(past form)"]
+  },
+  {
+    "name": "shot",
+    "trans": ["shoot(past participle)"]
+  },
+  {
+    "name": "hung",
+    "trans": ["hang (to suspend)(past form)"]
+  },
+  {
+    "name": "hung",
+    "trans": ["hang (to suspend)(past participle)"]
+  },
+  {
+    "name": "fought",
+    "trans": ["fight(past form)"]
+  },
+  {
+    "name": "fought",
+    "trans": ["fight(past participle)"]
+  },
+  {
+    "name": "read",
+    "trans": ["read(past form)"]
+  },
+  {
+    "name": "read",
+    "trans": ["read(past participle)"]
+  },
+  {
+    "name": "wept",
+    "trans": ["weep(past form)"]
+  },
+  {
+    "name": "wept",
+    "trans": ["weep(past participle)"]
+  },
+  {
+    "name": "clung",
+    "trans": ["cling(past form)"]
+  },
+  {
+    "name": "clung",
+    "trans": ["cling(past participle)"]
+  },
+  {
+    "name": "shut",
+    "trans": ["shut(past form)"]
+  },
+  {
+    "name": "shut",
+    "trans": ["shut(past participle)"]
+  },
+  {
+    "name": "beat",
+    "trans": ["beat(past form)"]
+  },
+  {
+    "name": "beaten (or beat)",
+    "trans": ["beat(past participle)"]
+  },
+  {
+    "name": "became",
+    "trans": ["become(past form)"]
+  },
+  {
+    "name": "become",
+    "trans": ["become(past participle)"]
+  },
+  {
+    "name": "heard",
+    "trans": ["hear(past form)"]
+  },
+  {
+    "name": "heard",
+    "trans": ["hear(past participle)"]
+  },
+  {
+    "name": "quit",
+    "trans": ["quit(past form)"]
+  },
+  {
+    "name": "quit",
+    "trans": ["quit(past participle)"]
+  },
+  {
+    "name": "bled",
+    "trans": ["bleed(past form)"]
+  },
+  {
+    "name": "bled",
+    "trans": ["bleed(past participle)"]
+  },
+  {
+    "name": "swam",
+    "trans": ["swim(past form)"]
+  },
+  {
+    "name": "swum",
+    "trans": ["swim(past participle)"]
+  },
+  {
+    "name": "proved",
+    "trans": ["prove(past form)"]
+  },
+  {
+    "name": "proved (or proven)",
+    "trans": ["prove(past participle)"]
+  },
+  {
+    "name": "spun",
+    "trans": ["spin(past form)"]
+  },
+  {
+    "name": "spun",
+    "trans": ["spin(past participle)"]
+  },
+  {
+    "name": "sat",
+    "trans": ["sit(past form)"]
+  },
+  {
+    "name": "sat",
+    "trans": ["sit(past participle)"]
+  },
+  {
+    "name": "knew",
+    "trans": ["know(past form)"]
+  },
+  {
+    "name": "known",
+    "trans": ["know(past participle)"]
+  },
+  {
+    "name": "bred",
+    "trans": ["breed(past form)"]
+  },
+  {
+    "name": "bred",
+    "trans": ["breed(past participle)"]
+  },
+  {
+    "name": "spent",
+    "trans": ["spend(past form)"]
+  },
+  {
+    "name": "spent",
+    "trans": ["spend(past participle)"]
+  },
+  {
+    "name": "kept",
+    "trans": ["keep(past form)"]
+  },
+  {
+    "name": "kept",
+    "trans": ["keep(past participle)"]
+  },
+  {
+    "name": "stole",
+    "trans": ["steal(past form)"]
+  },
+  {
+    "name": "stolen",
+    "trans": ["steal(past participle)"]
+  },
+  {
+    "name": "let",
+    "trans": ["let(past form)"]
+  },
+  {
+    "name": "let",
+    "trans": ["let(past participle)"]
+  },
+  {
+    "name": "led",
+    "trans": ["lead(past form)"]
+  },
+  {
+    "name": "led",
+    "trans": ["lead(past participle)"]
+  },
+  {
+    "name": "dived (or dove)",
+    "trans": ["dive(past form)"]
+  },
+  {
+    "name": "dived",
+    "trans": ["dive(past participle)"]
+  },
+  {
+    "name": "paid",
+    "trans": ["pay(past form)"]
+  },
+  {
+    "name": "paid",
+    "trans": ["pay(past participle)"]
+  },
+  {
+    "name": "stank (or stunk)",
+    "trans": ["stink(past form)"]
+  },
+  {
+    "name": "stunk",
+    "trans": ["stink(past participle)"]
+  },
+  {
+    "name": "fed",
+    "trans": ["feed(past form)"]
+  },
+  {
+    "name": "fed",
+    "trans": ["feed(past participle)"]
+  },
+  {
+    "name": "hid",
+    "trans": ["hide(past form)"]
+  },
+  {
+    "name": "hidden",
+    "trans": ["hide(past participle)"]
+  },
+  {
+    "name": "crept",
+    "trans": ["creep(past form)"]
+  },
+  {
+    "name": "crept",
+    "trans": ["creep(past participle)"]
+  },
+  {
+    "name": "said",
+    "trans": ["say(past form)"]
+  },
+  {
+    "name": "said",
+    "trans": ["say(past participle)"]
+  },
+  {
+    "name": "bet",
+    "trans": ["bet(past form)"]
+  },
+  {
+    "name": "bet",
+    "trans": ["bet(past participle)"]
+  },
+  {
+    "name": "took",
+    "trans": ["take(past form)"]
+  },
+  {
+    "name": "taken",
+    "trans": ["take(past participle)"]
+  },
+  {
+    "name": "broke",
+    "trans": ["break(past form)"]
+  },
+  {
+    "name": "broken",
+    "trans": ["break(past participle)"]
+  },
+  {
+    "name": "bore",
+    "trans": ["bear (to give birth)(past form)"]
+  },
+  {
+    "name": "born",
+    "trans": ["bear (to give birth)(past participle)"]
+  },
+  {
+    "name": "sank",
+    "trans": ["sink(past form)"]
+  },
+  {
+    "name": "sunk",
+    "trans": ["sink(past participle)"]
+  },
+  {
+    "name": "throve (or thrived)",
+    "trans": ["thrive(past form)"]
+  },
+  {
+    "name": "throve (or thriven)",
+    "trans": ["thrive(past participle)"]
+  },
+  {
+    "name": "rang",
+    "trans": ["ring(past form)"]
+  },
+  {
+    "name": "rung",
+    "trans": ["ring(past participle)"]
+  },
+  {
+    "name": "shrank (or shrunk)",
+    "trans": ["shrink(past form)"]
+  },
+  {
+    "name": "shrunk",
+    "trans": ["shrink(past participle)"]
+  },
+  {
+    "name": "strewed",
+    "trans": ["strew(past form)"]
+  },
+  {
+    "name": "strewn",
+    "trans": ["strew(past participle)"]
+  },
+  {
+    "name": "hanged",
+    "trans": ["hang (to execute)(past form)"]
+  },
+  {
+    "name": "hanged",
+    "trans": ["hang (to execute)(past participle)"]
+  },
+  {
+    "name": "forsook",
+    "trans": ["forsake(past form)"]
+  },
+  {
+    "name": "forsaken",
+    "trans": ["forsake(past participle)"]
+  },
+  {
+    "name": "won",
+    "trans": ["win(past form)"]
+  },
+  {
+    "name": "won",
+    "trans": ["win(past participle)"]
+  },
+  {
+    "name": "fled",
+    "trans": ["flee(past form)"]
+  },
+  {
+    "name": "fled",
+    "trans": ["flee(past participle)"]
+  },
+  {
+    "name": "hurt",
+    "trans": ["hurt(past form)"]
+  },
+  {
+    "name": "hurt",
+    "trans": ["hurt(past participle)"]
+  },
+  {
+    "name": "spit (or spat)",
+    "trans": ["spit(past form)"]
+  },
+  {
+    "name": "spit (or spat)",
+    "trans": ["spit(past participle)"]
+  },
+  {
+    "name": "came",
+    "trans": ["come(past form)"]
+  },
+  {
+    "name": "come",
+    "trans": ["come(past participle)"]
+  },
+  {
+    "name": "slung",
+    "trans": ["sling(past form)"]
+  },
+  {
+    "name": "slung",
+    "trans": ["sling(past participle)"]
+  },
+  {
+    "name": "dreamed (or dreamt)",
+    "trans": ["dream(past form)"]
+  },
+  {
+    "name": "dreamed (or dreamt)",
+    "trans": ["dream(past participle)"]
+  },
+  {
+    "name": "lay",
+    "trans": ["lie(past form)"]
+  },
+  {
+    "name": "lain",
+    "trans": ["lie(past participle)"]
+  },
+  {
+    "name": "knitted (or knit)",
+    "trans": ["knit(past form)"]
+  },
+  {
+    "name": "knitted (or knit)",
+    "trans": ["knit(past participle)"]
+  },
+  {
+    "name": "woke (or waked)",
+    "trans": ["wake(past form)"]
+  },
+  {
+    "name": "waked (or woken)",
+    "trans": ["wake(past participle)"]
+  },
+  {
+    "name": "swelled",
+    "trans": ["swell(past form)"]
+  },
+  {
+    "name": "swelled (or swollen)",
+    "trans": ["swell(past participle)"]
+  },
+  {
+    "name": "had",
+    "trans": ["have(past form)"]
+  },
+  {
+    "name": "had",
+    "trans": ["have(past participle)"]
+  },
+  {
+    "name": "set",
+    "trans": ["set(past form)"]
+  },
+  {
+    "name": "set",
+    "trans": ["set(past participle)"]
+  },
+  {
+    "name": "blew",
+    "trans": ["blow(past form)"]
+  },
+  {
+    "name": "blown",
+    "trans": ["blow(past participle)"]
+  },
+  {
+    "name": "bought",
+    "trans": ["buy(past form)"]
+  },
+  {
+    "name": "bought",
+    "trans": ["buy(past participle)"]
+  }
+]
