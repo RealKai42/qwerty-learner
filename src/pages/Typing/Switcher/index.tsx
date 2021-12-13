@@ -105,7 +105,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={state.transVisible ? 'eye' : 'eye-slash'} fixedWidth />
+          <FontAwesomeIcon icon={state.transVisible ? 'building' : 'bookmark'} fixedWidth />
         </button>
       </Tooltip>
     </div>
