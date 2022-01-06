@@ -46,7 +46,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, addSpeedCor
 
   useEffect(() => {
     if (isStart && !isFinish) window.addEventListener('keydown', onKeydown)
-
+    if (!isStart || isFinish) window.removeEventListener('keydown', onKeydown)
     return () => {
       window.removeEventListener('keydown', onKeydown)
     }

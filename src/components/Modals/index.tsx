@@ -44,6 +44,7 @@ const Modals: React.FC<ModalsProps> = ({
   })
 
   useHotkeys(thirdButtonHotkey, (event) => {
+    event.stopPropagation()
     const button = document.getElementById('thirdButton') as HTMLButtonElement
     button.click()
   })

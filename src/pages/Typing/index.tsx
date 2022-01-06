@@ -76,7 +76,7 @@ const App: React.FC = () => {
           setInputCount((count) => count + 1)
         }
       }
-      setIsStart(true)
+      if (!modalState) setIsStart(true)
     }
     const onBlur = () => {
       if (isStart) {
@@ -96,7 +96,7 @@ const App: React.FC = () => {
       window.removeEventListener('blur', onBlur)
       document.getElementsByClassName('_hj_feedback_container')[0]?.removeEventListener('click', hjOnclick)
     }
-  }, [isStart])
+  }, [isStart, modalState])
 
   const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
     return () => {
