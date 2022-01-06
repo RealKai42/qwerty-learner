@@ -18,16 +18,16 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
+import { useAutoMode } from '../../store/AppState'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
-
   const [inputCount, setInputCount] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
-
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
+  const [isAuto] = useAutoMode()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
 
   const {
@@ -60,12 +60,13 @@ const App: React.FC = () => {
 
   useHotkeys(
     'enter',
-    () => {
-      if (modalState === false) {
-        setIsStart((isStart) => !isStart)
+    (e) => {
+      e.preventDefault()
+      if (isStart && !isAuto && !modalState) {
+        onFinish()
       }
     },
-    [modalState],
+    [isStart, isAuto, modalState, order, wordList],
   )
 
   useEffect(() => {
@@ -105,7 +106,6 @@ const App: React.FC = () => {
       setIsStart(true)
     }
   }
-
   const onFinish = () => {
     if (wordList === undefined) {
       return
@@ -134,7 +134,6 @@ const App: React.FC = () => {
       }
     } else {
       setOrder((order) => order + 1)
-      setCorrectCount((count) => count + wordList.words[order].name.trim().length)
     }
   }
 
@@ -144,7 +143,9 @@ const App: React.FC = () => {
     },
     [pronunciationDispatch],
   )
-
+  const addCorrectCount = (number: number) => {
+    setCorrectCount((correctCount) => correctCount + number)
+  }
   return (
     <>
       {modalState && (
@@ -199,6 +200,7 @@ const App: React.FC = () => {
                     key={`word-${wordList.words[order].name}-${order}`}
                     word={wordList.words[order].name}
                     onFinish={onFinish}
+                    addSpeedCorrectCount={addCorrectCount}
                     isStart={isStart}
                     wordVisible={switcherState.wordVisible}
                   />

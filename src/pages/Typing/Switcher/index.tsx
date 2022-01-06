@@ -42,7 +42,14 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     },
     [dispatch],
   )
-
+  useHotkeys(
+    'ctrl+x',
+    (e) => {
+      e.preventDefault()
+      dispatch('autoMode')
+    },
+    [dispatch],
+  )
   return (
     <div className="flex items-center justify-center space-x-3">
       <Tooltip content="开关键盘声音（Ctrl + M）">
@@ -87,6 +94,17 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           }}
         >
           <FontAwesomeIcon icon={state.darkMode ? 'moon' : 'sun'} fixedWidth />
+        </button>
+      </Tooltip>
+      <Tooltip content="开关自动模式（Ctrl + X）">
+        <button
+          className={`text-indigo-400 text-lg focus:outline-none`}
+          onClick={(e) => {
+            dispatch('autoMode')
+            e.currentTarget.blur()
+          }}
+        >
+          {state.autoMode ? 'Auto' : 'Manual'}
         </button>
       </Tooltip>
     </div>

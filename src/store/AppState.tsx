@@ -32,6 +32,10 @@ export type AppState = {
    * Whether dark mode is enabled
    */
   darkMode: boolean
+  /**
+   * Whether auto mode is enabled
+   */
+  autoMode: boolean
 }
 
 export type AppStateData = {
@@ -113,6 +117,21 @@ export function useDarkMode(): [darkMode: boolean, setDarkMode: (state: boolean)
   return [state.darkMode, setDarkMode]
 }
 
+/**
+ * Auto Mode
+ */
+export function useAutoMode(): [autoMode: boolean, setAutoMode: (state: boolean) => void] {
+  const { state, dispatch } = useContext(AppStateContext)
+  const setAutoMode = useCallback(
+    (autoMode: boolean) => {
+      dispatch({ ...state, autoMode })
+    },
+    [state, dispatch],
+  )
+
+  return [state.autoMode, setAutoMode]
+}
+
 const defaultState: AppState = {
   sound: true,
   dictionaries,
@@ -120,6 +139,7 @@ const defaultState: AppState = {
   pronunciation: 'us',
   selectedChapter: 0,
   darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
+  autoMode: true,
 }
 
 export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {

@@ -4,23 +4,26 @@ import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from 'hooks/useSounds'
 import style from './index.module.css'
 import WordSound from 'components/WordSound'
-import { useAppState } from '../../store/AppState'
+import { useAppState, useAutoMode } from '../../store/AppState'
 
 const EXPLICIT_SPACE = '␣'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, addSpeedCorrectCount, isStart, wordVisible = true }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
   word = word.replace(new RegExp('…', 'g'), '..')
 
   const [inputWord, setInputWord] = useState('')
+  const [oldInputLength, setOldInputLength] = useState<number>(0)
   const [statesList, setStatesList] = useState<LetterState[]>([])
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
+  const [correctWordCount, setCorrectWordCount] = useState<number>(0)
+  const [wrongWordCount, setWrongWordCount] = useState<number>(0)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
   const { pronunciation } = useAppState()
-
+  const [isAuto] = useAutoMode()
   const onKeydown = useCallback(
     (e) => {
       const char = e.key
@@ -64,17 +67,19 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       const timer = setTimeout(() => {
         setInputWord('')
         setHasWrong(false)
+        if (!isAuto) {
+          setWrongWordCount((wrongCount) => wrongCount + 1)
+        }
       }, 300)
 
       return () => {
         clearTimeout(timer)
       }
     }
-  }, [hasWrong, isFinish, playBeepSound])
+  }, [hasWrong, isFinish, playBeepSound, isAuto])
 
   useLayoutEffect(() => {
-    let hasWrong = false,
-      wordLength = word.length,
+    let wordLength = word.length,
       inputWordLength = inputWord.length
     const statesList: LetterState[] = []
 
@@ -82,18 +87,37 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       if (word[i] === inputWord[i]) {
         statesList.push('correct')
       } else {
-        hasWrong = true
         statesList.push('wrong')
         setHasWrong(true)
         break
       }
     }
-
-    if (!hasWrong && inputWordLength >= wordLength) {
-      setIsFinish(true)
+    if (inputWordLength > oldInputLength) {
+      addSpeedCorrectCount(1)
+      setOldInputLength(inputWordLength)
     }
     setStatesList(statesList)
+    // eslint-disable-next-line
   }, [inputWord, word])
+
+  useEffect(() => {
+    if (!hasWrong && inputWord.length >= word.length) {
+      if (isAuto) {
+        setIsFinish(true)
+      } else {
+        let timer = setTimeout(() => {
+          setInputWord('')
+          setOldInputLength(0)
+          if (!isAuto) {
+            setCorrectWordCount((correctCount) => correctCount + 1)
+          }
+        }, 100)
+        return () => {
+          clearTimeout(timer)
+        }
+      }
+    }
+  }, [inputWord.length, word.length, hasWrong, isAuto])
 
   const playWordSound = pronunciation !== false
 
@@ -112,6 +136,10 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
               />
             )
           })}
+          <div>
+            <p className={'align-super text-indigo-400'}>{correctWordCount > 0 && correctWordCount}</p>
+            <p className={'align-sub   text-red-400'}>{wrongWordCount > 0 && wrongWordCount}</p>
+          </div>
         </div>
         {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
       </div>
@@ -122,6 +150,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
 export type WordProps = {
   word: string
   onFinish: Function
+  addSpeedCorrectCount: Function
   isStart: boolean
   wordVisible: boolean
 }

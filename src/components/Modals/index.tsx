@@ -34,18 +34,18 @@ const Modals: React.FC<ModalsProps> = ({
   thirdButtonHotkey = '',
 }) => {
   useHotkeys('enter', () => {
-    const e: MouseEvent = (null as unknown) as MouseEvent
-    firstButtonOnclick(e)
+    const button = document.getElementById('firstButton') as HTMLButtonElement
+    button.click()
   })
 
   useHotkeys('shift+enter', () => {
-    const e: MouseEvent = (null as unknown) as MouseEvent
-    secondButtonOnclick(e)
+    const button = document.getElementById('secondButton') as HTMLButtonElement
+    button.click()
   })
 
-  useHotkeys(thirdButtonHotkey, () => {
-    const e: MouseEvent = (null as unknown) as MouseEvent
-    if (thirdButtonOnclick) thirdButtonOnclick(e)
+  useHotkeys(thirdButtonHotkey, (event) => {
+    const button = document.getElementById('thirdButton') as HTMLButtonElement
+    button.click()
   })
 
   return (
@@ -107,6 +107,7 @@ const Modals: React.FC<ModalsProps> = ({
                 <Tooltip content="快捷键 Enter">
                   <button
                     type="button"
+                    id={'firstButton'}
                     className={`w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white dark:text-opacity-80 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto sm:text-sm ${firstButtonClassName}`}
                     onClick={firstButtonOnclick}
                   >
@@ -117,6 +118,7 @@ const Modals: React.FC<ModalsProps> = ({
                 <Tooltip content="快捷键 Shift + Enter">
                   <button
                     type="button"
+                    id={'secondButton'}
                     className={`mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-500 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-base font-medium text-gray-700 dark:text-white dark:text-opacity-60 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm ${
                       secondButtonClassName ?? ''
                     }`}
@@ -130,6 +132,7 @@ const Modals: React.FC<ModalsProps> = ({
                   <Tooltip content={`快捷键 ${thirdButtonHotkey}`}>
                     <button
                       type="button"
+                      id={'thirdButton'}
                       className={`mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-500 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-base font-medium text-gray-700 dark:text-white dark:text-opacity-60 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm ${
                         secondButtonClassName ?? ''
                       }`}
