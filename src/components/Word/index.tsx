@@ -80,6 +80,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, addSpeedCor
 
   useLayoutEffect(() => {
     let wordLength = word.length,
+      hasWrong = false,
       inputWordLength = inputWord.length
     const statesList: LetterState[] = []
 
@@ -87,12 +88,13 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, addSpeedCor
       if (word[i] === inputWord[i]) {
         statesList.push('correct')
       } else {
+        hasWrong = true
         statesList.push('wrong')
         setHasWrong(true)
         break
       }
     }
-    if (inputWordLength > oldInputLength) {
+    if (!hasWrong && inputWordLength > oldInputLength) {
       addSpeedCorrectCount(1)
       setOldInputLength(inputWordLength)
     }
