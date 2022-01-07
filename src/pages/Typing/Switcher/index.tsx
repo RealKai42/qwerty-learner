@@ -96,7 +96,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon={state.darkMode ? 'moon' : 'sun'} fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关自动模式（Ctrl + X）">
+      <Tooltip content={`开关自动模式（Ctrl + X）${state.autoMode ? '' : 'Manual 模式用 Enter 切换单词'}`}>
         <button
           className={`text-indigo-400 text-lg focus:outline-none`}
           onClick={(e) => {
