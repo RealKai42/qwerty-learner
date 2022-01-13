@@ -76,7 +76,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, addSpeedCor
         clearTimeout(timer)
       }
     }
-  }, [hasWrong, isFinish, playBeepSound, isAuto])
+    // eslint-disable-next-line
+  }, [hasWrong])
 
   useLayoutEffect(() => {
     let wordLength = word.length,
@@ -119,7 +120,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, addSpeedCor
         }
       }
     }
-  }, [inputWord.length, word.length, hasWrong, isAuto])
+    // eslint-disable-next-line
+  }, [inputWord])
 
   const playWordSound = pronunciation !== false
 

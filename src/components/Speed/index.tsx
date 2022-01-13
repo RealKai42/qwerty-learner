@@ -11,7 +11,8 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart }) => {
   const minutesString = minutes < 10 ? '0' + minutes : minutes + ''
   useEffect(() => {
     isStart ? start() : pause()
-  }, [isStart, start, pause])
+    // eslint-disable-next-line
+  }, [isStart])
 
   return (
     <div className="w-3/5 flex bg-white dark:bg-gray-800 transition-colors duration-300 mt-auto rounded-large card p-4 py-10 opacity-45">
@@ -29,5 +30,5 @@ export type SpeedProps = {
   inputCount: number
   isStart: boolean
 }
-
+Speed.displayName = 'Speed'
 export default React.memo(Speed)
