@@ -21,6 +21,14 @@ export const dictionaries: Dictionary[] = [
   { id: 'level4', name: '专四', description: '英语专业四级词库', category: '英语学习', url: './dicts/Level4luan_2_T.json', length: 4025 },
   { id: 'level8', name: '专八', description: '英语专业八级词库', category: '英语学习', url: './dicts/Level8luan_2_T.json', length: 12197 },
   {
+    id: 'gaokao3500',
+    name: '高考 3500 词',
+    description: '高考常见词 3500',
+    category: '英语学习',
+    url: './dicts/GaoKao_3500.json',
+    length: 3876,
+  },
+  {
     id: 'sat',
     name: 'SAT',
     description: '美国 SAT 考试词库',
