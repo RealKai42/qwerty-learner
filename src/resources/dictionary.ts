@@ -1,4 +1,4 @@
-export type Dictionary = {
+﻿export type Dictionary = {
   id: string
   name: string
   description: string
@@ -98,6 +98,70 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-builtin.json',
     length: 65,
+  },
+  {
+    id: 'python-array',
+    name: 'Python: array',
+    description: 'Python array API ',
+    category: '代码练习',
+    url: './dicts/python-array.json',
+    length: 11,
+  },
+  {
+    id: 'python-date',
+    name: 'Python: date',
+    description: 'Python date API ',
+    category: '代码练习',
+    url: './dicts/python-date.json',
+    length: 39,
+  },
+  {
+    id: 'python-file',
+    name: 'Python: file',
+    description: 'Python file API ',
+    category: '代码练习',
+    url: './dicts/python-file.json',
+    length: 21,
+  },
+  {
+    id: 'python-class',
+    name: 'Python: class',
+    description: 'Python class API ',
+    category: '代码练习',
+    url: './dicts/python-class.json',
+    length: 13,
+  },
+  {
+    id: 'python-set',
+    name: 'Python: set',
+    description: 'Python set API ',
+    category: '代码练习',
+    url: './dicts/python-set.json',
+    length: 29,
+  },
+  {
+    id: 'python-math',
+    name: 'Python: math',
+    description: 'Python math API ',
+    category: '代码练习',
+    url: './dicts/python-math.json',
+    length: 37,
+  },
+  {
+    id: 'python-string',
+    name: 'Python: string',
+    description: 'Python string API ',
+    category: '代码练习',
+    url: './dicts/python-string.json',
+    length: 40,
+  },
+  {
+    id: 'python-system',
+    name: 'Python: system',
+    description: 'Python system API ',
+    category: '代码练习',
+    url: './dicts/python-sys.json',
+    length: 24,
   },
   {
     id: 'javeArrayList',
