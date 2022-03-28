@@ -124,6 +124,22 @@ export const dictionaries: Dictionary[] = [
     length: 21,
   },
   {
+    id: 'python-class',
+    name: 'Python: class',
+    description: 'Python class API ',
+    category: '代码练习',
+    url: './dicts/python-class.json',
+    length: 13,
+  },
+  {
+    id: 'python-set',
+    name: 'Python: set',
+    description: 'Python set API ',
+    category: '代码练习',
+    url: './dicts/python-set.json',
+    length: 29,
+  },
+  {
     id: 'python-math',
     name: 'Python: math',
     description: 'Python math API ',
