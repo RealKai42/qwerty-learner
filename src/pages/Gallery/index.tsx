@@ -42,9 +42,8 @@ const GalleryPage: React.FC = () => {
           <h2 className="sticky top-0 mb-4 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
             章节选择
           </h2>
-          {/* TODO: remove magic number here. */}
           <div className="overflow-y-auto customized-scrollbar">
-            <ChapterGroup count={Math.ceil(selectedDictionary.length / 20)} />
+            <ChapterGroup totalWords={selectedDictionary.length} />
           </div>
         </div>
       </div>

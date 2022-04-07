@@ -68,9 +68,7 @@ export function useSetDictionary(): (id: string) => void {
   return (id: string) => {
     const found = dictionaries.find((dict) => dict.id === id)
     if (found !== undefined) {
-      // TODO: remove magic number here.
-      const lastChapterNumber = Math.floor(found.length / 20)
-      dispatch({ ...state, selectedDictionary: found, selectedChapter: Math.min(state.selectedChapter, lastChapterNumber) })
+      dispatch({ ...state, selectedDictionary: found, selectedChapter: 0 })
     }
   }
 }
