@@ -1,7 +1,7 @@
 import cet4 from 'assets/CET4_T.json'
 import { shuffle } from 'lodash'
 import { useMemo } from 'react'
-import { useSelectedChapter, useSelectedDictionary } from 'store/AppState'
+import { useSelectedChapter, useSelectedDictionary, useRandomState } from 'store/AppState'
 import useSWR from 'swr'
 
 export type Word = {
@@ -27,13 +27,14 @@ export type UseWordListResult = {
  */
 export function useWordList(): UseWordListResult | undefined {
   const selectedDictionary = useSelectedDictionary()
+  const [random] = useRandomState()
   const [currentChapter, setCurrentChapter] = useSelectedChapter()
   const { data: wordList } = useSWR([selectedDictionary.id, selectedDictionary.url], fetchWordList)
-  const words = useMemo(() => wordList?.words.slice(currentChapter * numWordsPerChapter, (currentChapter + 1) * numWordsPerChapter), [
-    wordList,
-    currentChapter,
-  ])
-  const shuffleWords = useMemo(() => shuffle(words), [words])
+  const words = useMemo(
+    () => (wordList ? wordList.words.slice(currentChapter * numWordsPerChapter, (currentChapter + 1) * numWordsPerChapter) : []),
+    [wordList, currentChapter],
+  )
+  const shuffleWords = useMemo(() => (random ? shuffle(words) : words), [random, words])
   return wordList === undefined
     ? undefined
     : {
