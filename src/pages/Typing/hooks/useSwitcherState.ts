@@ -6,6 +6,7 @@ export type SwitcherStateType = {
   wordVisible: boolean
   sound: boolean
   darkMode: boolean
+  loop: boolean
 }
 
 export type SwitcherDispatchType = (type: string, newStatus?: boolean) => void
@@ -13,10 +14,12 @@ export type SwitcherDispatchType = (type: string, newStatus?: boolean) => void
 const useSwitcherState = (initialState: {
   phonetic: boolean
   wordVisible: boolean
+  loop: boolean
   darkMode?: boolean
 }): [SwitcherStateType, SwitcherDispatchType] => {
   const [phonetic, setPhonetic] = useState(initialState.phonetic)
   const [wordVisible, setWordVisible] = useState(initialState.wordVisible)
+  const [loop, setLoop] = useState(initialState.loop)
   const [sound, setSound] = useSetSoundState()
   const [darkMode, setDarkMode] = useDarkMode()
 
@@ -33,9 +36,12 @@ const useSwitcherState = (initialState: {
         break
       case 'darkMode':
         setDarkMode(newStatus ?? !darkMode)
+        break
+      case 'loop':
+        setLoop(newStatus ?? !loop)
     }
   }
-  return [{ phonetic, wordVisible, sound, darkMode }, dispatch]
+  return [{ phonetic, wordVisible, sound, darkMode, loop }, dispatch]
 }
 
 export default useSwitcherState

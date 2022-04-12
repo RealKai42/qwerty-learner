@@ -26,7 +26,7 @@ const App: React.FC = () => {
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
 
-  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
+  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false, loop: false })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
 
@@ -108,6 +108,10 @@ const App: React.FC = () => {
 
   const onFinish = () => {
     if (wordList === undefined) {
+      return
+    }
+    if (switcherState.loop) {
+      setCorrectCount((count) => count + wordList.words[order].name.trim().length)
       return
     }
     if (order === wordList.words.length - 1) {
@@ -200,6 +204,7 @@ const App: React.FC = () => {
                     word={wordList.words[order].name}
                     onFinish={onFinish}
                     isStart={isStart}
+                    isLoop={switcherState.loop}
                     wordVisible={switcherState.wordVisible}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (

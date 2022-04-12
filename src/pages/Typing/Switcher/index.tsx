@@ -42,6 +42,14 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     },
     [dispatch],
   )
+  useHotkeys(
+    'ctrl+l',
+    (e) => {
+      e.preventDefault()
+      dispatch('loop')
+    },
+    [dispatch],
+  )
 
   return (
     <div className="flex items-center justify-center space-x-3">
@@ -87,6 +95,17 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           }}
         >
           <FontAwesomeIcon icon={state.darkMode ? 'moon' : 'sun'} fixedWidth />
+        </button>
+      </Tooltip>
+      <Tooltip content="开关循环模式（Ctrl + L）">
+        <button
+          className={`${state.loop ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          onClick={(e) => {
+            dispatch('loop')
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon="repeat" fixedWidth />
         </button>
       </Tooltip>
     </div>

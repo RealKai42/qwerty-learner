@@ -16,6 +16,7 @@ import {
   faCheckCircle,
   faTerminal,
   faExclamation,
+  faRepeat,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -37,4 +38,5 @@ library.add(
   faCheckCircle,
   faTerminal,
   faExclamation,
+  faRepeat,
 )

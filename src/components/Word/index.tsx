@@ -8,7 +8,7 @@ import { useAppState } from '../../store/AppState'
 
 const EXPLICIT_SPACE = '␣'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, isLoop, wordVisible = true }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -42,17 +42,19 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   )
 
   useEffect(() => {
-    if (isStart && !isFinish) window.addEventListener('keydown', onKeydown)
-
+    if (isStart && (!isFinish || isLoop)) {
+      setIsFinish(false)
+      window.addEventListener('keydown', onKeydown)
+    }
     return () => {
       window.removeEventListener('keydown', onKeydown)
     }
-  }, [isStart, isFinish, onKeydown])
+  }, [isStart, isFinish, onKeydown, isLoop])
 
   useEffect(() => {
     if (isFinish) {
       playHintSound()
-
+      setInputWord('')
       onFinish()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -124,5 +126,6 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
+  isLoop: boolean
 }
 export default Word
