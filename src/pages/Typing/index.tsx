@@ -27,7 +27,7 @@ const App: React.FC = () => {
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
 
-  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false, loop: false })
+  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
