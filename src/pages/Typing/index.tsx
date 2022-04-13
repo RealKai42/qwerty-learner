@@ -18,6 +18,7 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
+import { useRandomState } from 'store/AppState'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -29,6 +30,7 @@ const App: React.FC = () => {
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false, loop: false })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
+  const [random] = useRandomState()
 
   const {
     modalState,
@@ -46,6 +48,11 @@ const App: React.FC = () => {
     setMessage: setModalMessage,
     setHandler: setModalHandler,
   } = useModals(false, '提示')
+
+  useEffect(() => {
+    // reset order when random change
+    setOrder(0)
+  }, [random])
 
   useEffect(() => {
     // 检测用户设备
