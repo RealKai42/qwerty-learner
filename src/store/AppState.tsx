@@ -29,6 +29,10 @@ export type AppState = {
    */
   selectedChapter: number
   /**
+   * Whether random word is enabled
+   */
+  random: boolean
+  /**
    * Whether dark mode is enabled
    */
   darkMode: boolean
@@ -53,6 +57,12 @@ export function useSetSoundState(): [status: boolean, setSound: (state: boolean)
   const { state, dispatch } = useContext(AppStateContext)
   const setSound = useCallback((sound: boolean) => dispatch({ ...state, sound }), [state, dispatch])
   return [state.sound, setSound]
+}
+
+export function useRandomState(): [status: boolean, setRandom: (state: boolean) => void] {
+  const { state, dispatch } = useContext(AppStateContext)
+  const setRandom = useCallback((random: boolean) => dispatch({ ...state, random }), [state, dispatch])
+  return [state.random, setRandom]
 }
 
 /**
@@ -117,6 +127,7 @@ const defaultState: AppState = {
   selectedDictionary: dictionaries[0],
   pronunciation: 'us',
   selectedChapter: 0,
+  random: false,
   darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
 }
 

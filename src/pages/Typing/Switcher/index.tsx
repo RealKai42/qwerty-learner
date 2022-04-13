@@ -35,6 +35,14 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     [dispatch],
   )
   useHotkeys(
+    'ctrl+u',
+    (e) => {
+      e.preventDefault()
+      dispatch('random')
+    },
+    [dispatch],
+  )
+  useHotkeys(
     'ctrl+d',
     (e) => {
       e.preventDefault()
@@ -53,6 +61,17 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
 
   return (
     <div className="flex items-center justify-center space-x-3">
+      <Tooltip content="开关单词乱序（Ctrl + U）">
+        <button
+          className={`${state.random ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          onClick={(e) => {
+            dispatch('random')
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon="random" fixedWidth />
+        </button>
+      </Tooltip>
       <Tooltip content="开关键盘声音（Ctrl + M）">
         <button
           className={`${state.sound ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
