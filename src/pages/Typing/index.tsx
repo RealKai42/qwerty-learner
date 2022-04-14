@@ -117,6 +117,10 @@ const App: React.FC = () => {
     if (wordList === undefined) {
       return
     }
+    if (switcherState.loop) {
+      setCorrectCount((count) => count + wordList.words[order].name.trim().length)
+      return
+    }
     if (order === wordList.words.length - 1) {
       setIsStart(false)
       // 用户完成当前章节
@@ -207,6 +211,7 @@ const App: React.FC = () => {
                     word={wordList.words[order].name}
                     onFinish={onFinish}
                     isStart={isStart}
+                    isLoop={switcherState.loop}
                     wordVisible={switcherState.wordVisible}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
