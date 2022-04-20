@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  qwertlearner:
+  qwertylearner:
     image: "node:14"
     user: "root"
     working_dir: "/app/qwerty-learner"
@@ -25,7 +25,6 @@ services:
         pwd
         echo '查看输出:...'
         cat nohup.out
-        yarn start &
         tail -f /dev/null
     tty: true
     stdin_open: true

@@ -1,13 +1,13 @@
-# 运行下面的命令, 构建qwert-learner镜像
-# docker build -t qwertleanerapp .
-# 下面的命令运行镜像, 访问localhost:8990访问应用, 8090可修改成你未占有的端口
-# docker run -d -p 8990:3000 --name qwertleanerapp qwertleanerapp:latest
+# 运行下面的命令, 构建qwerty-learner镜像
+# docker build -t qwertylearner .
+# 下面的命令运行镜像, 访问localhost:8990访问应用, 8990可修改成你未占有的端口
+# docker run -d -p 8990:3000 --name qwertylearnerapp qwertylearner:latest
 
 FROM node:14
 
 MAINTAINER sevenyoungairye<lel.ng.top@gmail.com>
 
-WORKDIR /app/qwert-learn
+WORKDIR /app/qwerty-learner
 
 COPY package*.json .
 
