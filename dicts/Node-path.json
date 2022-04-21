@@ -1,0 +1,18 @@
+[
+    { "name": "path.basename()", "trans": ["path.basename() 方法会返回参数 path 的最后一部分，类似于 Unix 的 basename 命令。"] },
+    { "name": "path.delimiter", "trans": ["提供平台特定的路径定界符：'; 用于 Windows', ': 用于 POSIX' "] },
+    { "name": "path.dirname()", "trans": ["path.dirname() 方法会返回 path 的目录名，类似于 Unix 的 dirname 命令。 尾部的目录分隔符会被忽略"] },
+    { "name": "path.extname()", "trans": ["path.extname() 方法会返回 path 的扩展名，即 path 的最后一部分中从最后一次出现 .（句点）字符直到字符串结束。 如果在 path 的最后一部分中没有 .，或者如果 path 的基本名称（参见 path.basename()）除了第一个字符以外没有 .，则返回空字符串。"] },
+    { "name": "path.format()", "trans": ["path.format() 方法从对象返回路径字符串。 与 path.parse() 相反。"] },
+    { "name": "path.isAbsolute()", "trans": ["path.isAbsolute() 方法检测 path 是否为绝对路径。"] },
+    { "name": "path.join()", "trans": ["path.join() 方法会将所有给定的 path 片段连接到一起（使用平台特定的分隔符作为定界符），然后规范化生成的路径。长度为零的 path 片段会被忽略。 如果连接后的路径字符串为长度为零的字符串，则返回 '.'，表示当前工作目录。  "] },
+    { "name": "path.normalize()", "trans": ["path.normalize() 方法规范化给定的 path，解析 '..' 和 '.' 片段。  "] },
+    { "name": "path.parse()", "trans": ["path.parse() 方法会返回一个对象，其属性表示 path 的有效元素。 尾部的目录分隔符会被忽略。"] },
+    { "name": "path.posix", "trans": ["path.posix 属性提供对 path 方法的 POSIX 特定实现的访问。"] },
+    { "name": "path.relative()", "trans": ["path.relative() 方法根据当前工作目录返回 from 到 to 的相对路径。 如果 from 和 to 各自解析到相同的路径（分别调用 path.resolve() 之后），则返回零长度的字符串。"] },
+    { "name": "path.resolve()", "trans": ["path.resolve() 方法会将路径或路径片段的序列解析为绝对路径。    "] },
+    { "name": "path.sep", "trans": ["提供平台特定的路径片段分隔符：Windows 上是 /\\; POSIX 上是 /。  "] },
+    { "name": "path.toNamespacedPath()", "trans": ["仅在 Windows 系统上，返回给定 path 的等效名称空间前缀路径。 如果 path 不是字符串，则将返回 path 而不进行修改。 "] },
+    { "name": "path.win32", "trans": ["path.win32 属性提供对特定于 Windows 的 path 方法的实现的访问。"] }
+  ]
+  

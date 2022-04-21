@@ -1,0 +1,80 @@
+[
+  {
+    "name": "__call__(self, args, kwargs)",
+    "trans": [
+      "该方法的功能类似于在类中重载 () 运算符，使得类实例对象可以像调用普通函数那样，以“对象名()”的形式使用"
+    ]
+  },
+  {
+    "name": "__cmp__(self, other)",
+    "trans": [
+      "对象比较"
+    ]
+  },
+  {
+    "name": "__del__(self)",
+    "trans": [
+      "析构方法, 删除一个对象"
+    ]
+  },
+  {
+    "name": "__delattr__(self, name)",
+    "trans": [
+      "用于删除对象的属性"
+    ]
+  },
+  {
+    "name": "__getattr__(self, name)",
+    "trans": [
+      "内置方法，当使用点号获取实例属性时，如果属性不存在就自动调用__getattr__方法"
+    ]
+  },
+  {
+    "name": "__getattribute__(self, name)",
+    "trans": [
+      "属性访问拦截器"
+    ]
+  },
+  {
+    "name": "__index__(self)",
+    "trans": [
+      "对象被作为索引使用的时候"
+    ]
+  },
+  {
+    "name": "__init__(self, args)",
+    "trans": [
+      "构造函数"
+    ]
+  },
+  {
+    "name": "__new__(cls)",
+    "trans": [
+      "负责创建类实例的静态方法"
+    ]
+  },
+  {
+    "name": "__nonzero__(self)",
+    "trans": [
+      "通常在用类进行判断和将类转换成布尔值时调用"
+    ]
+  },
+  {
+    "name": "__repr__(self)",
+    "trans": [
+      "转化为供解释器读取的形式"
+    ]
+  },
+  {
+    "name": "__setattr__(self, name, attr)",
+    "trans": [
+      "用于设置属性值，该属性不一定是存在的"
+    ]
+  },
+  {
+    "name": "__str__(self)",
+    "trans": [
+      "用于将值转化为适于人阅读的形式"
+    ]
+  }
+]
