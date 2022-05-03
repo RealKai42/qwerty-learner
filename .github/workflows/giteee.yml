@@ -1,9 +1,6 @@
 name: Gitee Pages Action
 
-on:
-  push:
-    branches: [master]
-  workflow_dispatch:
+on: [push]
 
 jobs:
   build:
