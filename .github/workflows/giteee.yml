@@ -1,6 +1,6 @@
 name: Gitee Pages Action
 
-on: [push]
+on: page_build
 
 jobs:
   build:
