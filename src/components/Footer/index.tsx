@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                 VSCode 摸🐟插件
               </h3>
               <div className="mt-2 ">
-                <p className="text-gray-500 text-sm dark:text-gray-400">
+                <p className="text-sm text-gray-500  dark:text-gray-400">
                   我们根据大家的建议开发了 VSCode 插件，支持一键启动，随时开始背单词。
                   可以在任意文件中一键开启，开启后单词显示在状态栏中，且插件会拦截用户对文档的输入，不会影响到原始文档。
                 </p>
