@@ -1,0 +1,2538 @@
+[
+  {
+    "name": "kaijou",
+    "trans": ["assembly hall or meeting place--会場"]
+  },
+  {
+    "name": "ikiru",
+    "trans": ["to live--生きる"]
+  },
+  {
+    "name": "pasokon",
+    "trans": ["personal computer--パソコン"]
+  },
+  {
+    "name": "kare",
+    "trans": ["he,boyfriend--彼"]
+  },
+  {
+    "name": "bikkuri suru",
+    "trans": ["to be surprised--びっくり・する"]
+  },
+  {
+    "name": "yoshuu",
+    "trans": ["preparation for a lesson--予習"]
+  },
+  {
+    "name": "dame",
+    "trans": ["no good--だめ"]
+  },
+  {
+    "name": "kagami",
+    "trans": ["mirror--鏡"]
+  },
+  {
+    "name": "gomi",
+    "trans": ["rubbish--ごみ"]
+  },
+  {
+    "name": "o-tobai",
+    "trans": ["motorcycle--オートバイ"]
+  },
+  {
+    "name": "utsukushii",
+    "trans": ["beautiful--美しい"]
+  },
+  {
+    "name": "kibun",
+    "trans": ["mood--気分"]
+  },
+  {
+    "name": "oiwai",
+    "trans": ["congratulation--お祝い"]
+  },
+  {
+    "name": "kangofu",
+    "trans": ["female nurse--看護婦"]
+  },
+  {
+    "name": "unten suru",
+    "trans": ["to drive--運転"]
+  },
+  {
+    "name": "omote",
+    "trans": ["the front--表"]
+  },
+  {
+    "name": "kuukou",
+    "trans": ["airport--空港"]
+  },
+  {
+    "name": "hiruma",
+    "trans": ["daytime,during the day--昼間"]
+  },
+  {
+    "name": "koutougakkou",
+    "trans": ["high school--高等学校"]
+  },
+  {
+    "name": "kayou",
+    "trans": ["to commute--通う"]
+  },
+  {
+    "name": "atsumaru",
+    "trans": ["to gather--集る"]
+  },
+  {
+    "name": "tsukeru",
+    "trans": ["to soak,to pickle--漬ける"]
+  },
+  {
+    "name": "mizuumi",
+    "trans": ["lake--湖"]
+  },
+  {
+    "name": "suberu",
+    "trans": ["to slide,to slip--滑る"]
+  },
+  {
+    "name": "aa",
+    "trans": ["like that--ああ"]
+  },
+  {
+    "name": "tamani",
+    "trans": ["occasionally--たまに"]
+  },
+  {
+    "name": "keshiki",
+    "trans": ["scene,landscape--景色"]
+  },
+  {
+    "name": "odori",
+    "trans": ["a dance--踊り"]
+  },
+  {
+    "name": "akusesarī",
+    "trans": ["accessory--アクセサリー"]
+  },
+  {
+    "name": "umai",
+    "trans": ["delicious--うまい"]
+  },
+  {
+    "name": "amerika",
+    "trans": ["America--アメリカ"]
+  },
+  {
+    "name": "sutereo",
+    "trans": ["stereo--ステレオ"]
+  },
+  {
+    "name": "yubiwa",
+    "trans": ["finger ring--指輪"]
+  },
+  {
+    "name": "sotsugyou",
+    "trans": ["graduation--卒業"]
+  },
+  {
+    "name": "tadashii",
+    "trans": ["correct--正しい"]
+  },
+  {
+    "name": "sumi",
+    "trans": ["corner,nook--隅"]
+  },
+  {
+    "name": "kaigi",
+    "trans": ["meeting--会議"]
+  },
+  {
+    "name": "kawari",
+    "trans": ["substitute,alternate--代わり"]
+  },
+  {
+    "name": "kisha",
+    "trans": ["steam train--汽車"]
+  },
+  {
+    "name": "igaku",
+    "trans": ["medical science--医学"]
+  },
+  {
+    "name": "asu",
+    "trans": ["tomorrow--明日"]
+  },
+  {
+    "name": "omatsuri",
+    "trans": ["festival--お祭り"]
+  },
+  {
+    "name": "zuibun",
+    "trans": ["extremely--ずいぶん"]
+  },
+  {
+    "name": "saikin",
+    "trans": ["latest,nowadays--最近"]
+  },
+  {
+    "name": "yameru",
+    "trans": ["to stop--止める"]
+  },
+  {
+    "name": "utsuru",
+    "trans": ["to move house or transfer--移る"]
+  },
+  {
+    "name": "nokoru",
+    "trans": ["to remain--残る"]
+  },
+  {
+    "name": "musuko",
+    "trans": ["(humble) son--息子"]
+  },
+  {
+    "name": "okuru",
+    "trans": ["to send--送る"]
+  },
+  {
+    "name": "sangyou",
+    "trans": ["industry--産業"]
+  },
+  {
+    "name": "ugoku",
+    "trans": ["to move--動く"]
+  },
+  {
+    "name": "warau",
+    "trans": ["to laugh,to smile--笑う"]
+  },
+  {
+    "name": "keredo/keredomo",
+    "trans": ["however--けれど/けれども"]
+  },
+  {
+    "name": "baai",
+    "trans": ["situation--場合"]
+  },
+  {
+    "name": "reji",
+    "trans": ["register--レジ"]
+  },
+  {
+    "name": "hieru",
+    "trans": ["to grow cold--冷える"]
+  },
+  {
+    "name": "seki",
+    "trans": ["seat--席"]
+  },
+  {
+    "name": "ueru",
+    "trans": ["to plant,to grow--植える"]
+  },
+  {
+    "name": "shikaru",
+    "trans": ["a particular--しかる"]
+  },
+  {
+    "name": "seiyou",
+    "trans": ["western countries--西洋"]
+  },
+  {
+    "name": "shachou",
+    "trans": ["company president--社長"]
+  },
+  {
+    "name": "tanoshimu",
+    "trans": ["to enjoy oneself--楽む"]
+  },
+  {
+    "name": "konsa-to",
+    "trans": ["concert--コンサート"]
+  },
+  {
+    "name": "yatto",
+    "trans": ["at last--やっと"]
+  },
+  {
+    "name": "omou",
+    "trans": ["to think,to feel--思う"]
+  },
+  {
+    "name": "jimusho",
+    "trans": ["office--事務所"]
+  },
+  {
+    "name": "sandaru",
+    "trans": ["sandal--サンダル"]
+  },
+  {
+    "name": "enryo suru",
+    "trans": ["to be reserved, to be restrained--遠慮"]
+  },
+  {
+    "name": "mottomo",
+    "trans": ["extremely--もっとも"]
+  },
+  {
+    "name": "shousetsu",
+    "trans": ["novel--小説"]
+  },
+  {
+    "name": "fuben",
+    "trans": ["inconvenience--不便"]
+  },
+  {
+    "name": "kinu",
+    "trans": ["silk--絹"]
+  },
+  {
+    "name": "naosu",
+    "trans": ["to fix,to repair--直す"]
+  },
+  {
+    "name": "senpai",
+    "trans": ["senior--先輩"]
+  },
+  {
+    "name": "netsu",
+    "trans": ["fever--熱"]
+  },
+  {
+    "name": "kibishii",
+    "trans": ["strict--厳しい"]
+  },
+  {
+    "name": "ningyou",
+    "trans": ["doll, figure--人形"]
+  },
+  {
+    "name": "fukuzatsu",
+    "trans": ["complexity,complication--複雑"]
+  },
+  {
+    "name": "jamu",
+    "trans": ["jam--ジャム"]
+  },
+  {
+    "name": "oku",
+    "trans": ["one hundred million--億"]
+  },
+  {
+    "name": "anshin",
+    "trans": ["relief--安心"]
+  },
+  {
+    "name": "sekai",
+    "trans": ["the world--世界"]
+  },
+  {
+    "name": "denpou",
+    "trans": ["telegram--電報"]
+  },
+  {
+    "name": "tekisuto",
+    "trans": ["text,text book--テキスト"]
+  },
+  {
+    "name": "zannen",
+    "trans": ["disappointment--残念"]
+  },
+  {
+    "name": "chekku suru",
+    "trans": ["to check--チェック・する"]
+  },
+  {
+    "name": "komakai",
+    "trans": ["small, fine--細かい"]
+  },
+  {
+    "name": "kanashii",
+    "trans": ["sad--悲しい"]
+  },
+  {
+    "name": "yaku",
+    "trans": ["to bake,to grill--焼く"]
+  },
+  {
+    "name": "kougi",
+    "trans": ["lecture--講義"]
+  },
+  {
+    "name": "hakkiri",
+    "trans": ["clearly--はっきり"]
+  },
+  {
+    "name": "hikidashi",
+    "trans": ["drawer,drawing out--引き出し"]
+  },
+  {
+    "name": "purezento",
+    "trans": ["present--プレゼント"]
+  },
+  {
+    "name": "korekara",
+    "trans": ["after this--これから"]
+  },
+  {
+    "name": "tenin",
+    "trans": ["shop assistant--店員"]
+  },
+  {
+    "name": "hikari",
+    "trans": ["light--光"]
+  },
+  {
+    "name": "irassharu",
+    "trans": ["(respectful) to be,to come or to go--いらっしゃる"]
+  },
+  {
+    "name": "dansei",
+    "trans": ["male--男性"]
+  },
+  {
+    "name": "nodo",
+    "trans": ["throat--のど"]
+  },
+  {
+    "name": "otosu",
+    "trans": ["to drop--落す"]
+  },
+  {
+    "name": "sonnani",
+    "trans": ["so much,like that--そんなに"]
+  },
+  {
+    "name": "homeru",
+    "trans": ["to praise--ほめる"]
+  },
+  {
+    "name": "sawagu",
+    "trans": ["to make noise,to be excited--騒ぐ"]
+  },
+  {
+    "name": "sumu",
+    "trans": ["to finish--済む"]
+  },
+  {
+    "name": "ryokan",
+    "trans": ["Japanese hotel--旅館"]
+  },
+  {
+    "name": "oyogikata",
+    "trans": ["way of swimming--泳ぎ方"]
+  },
+  {
+    "name": "ude",
+    "trans": ["arm--腕"]
+  },
+  {
+    "name": "annai suru",
+    "trans": ["to guide--案内"]
+  },
+  {
+    "name": "daigakusei",
+    "trans": ["university student--大学生"]
+  },
+  {
+    "name": "hi",
+    "trans": ["fire--火"]
+  },
+  {
+    "name": "kenka suru",
+    "trans": ["to quarrel--けんか・する"]
+  },
+  {
+    "name": "juubun",
+    "trans": ["enough--十分"]
+  },
+  {
+    "name": "renraku",
+    "trans": ["contact--連絡"]
+  },
+  {
+    "name": "gochisou",
+    "trans": ["a feast--ごちそう"]
+  },
+  {
+    "name": "nureru",
+    "trans": ["to get wet--ぬれる"]
+  },
+  {
+    "name": "kenkyuu",
+    "trans": ["research--研究"]
+  },
+  {
+    "name": "tsukamaeru",
+    "trans": ["to seize--捕まえる"]
+  },
+  {
+    "name": "kimeru",
+    "trans": ["to decide--決める"]
+  },
+  {
+    "name": "tooru",
+    "trans": ["to go through--通る"]
+  },
+  {
+    "name": "ippai",
+    "trans": ["full--いっぱい"]
+  },
+  {
+    "name": "okoru",
+    "trans": ["to get angry,to be angry--怒る"]
+  },
+  {
+    "name": "su-tsu",
+    "trans": ["suit--スーツ"]
+  },
+  {
+    "name": "untenshu",
+    "trans": ["driver--運転手"]
+  },
+  {
+    "name": "jama",
+    "trans": ["hindrance,intrusion--じゃま"]
+  },
+  {
+    "name": "juudou",
+    "trans": ["judo--柔道"]
+  },
+  {
+    "name": "kureru",
+    "trans": ["to give--くれる"]
+  },
+  {
+    "name": "aida",
+    "trans": ["a space--間"]
+  },
+  {
+    "name": "ika",
+    "trans": ["less than--以下"]
+  },
+  {
+    "name": "kimi",
+    "trans": ["(informal) You (used by men towards women)--君"]
+  },
+  {
+    "name": "shima",
+    "trans": ["island--島"]
+  },
+  {
+    "name": "kitto",
+    "trans": ["surely--きっと"]
+  },
+  {
+    "name": "ochiru",
+    "trans": ["to fall or drop--落る"]
+  },
+  {
+    "name": "okage",
+    "trans": ["owing to--おかげ"]
+  },
+  {
+    "name": "shouchi suru",
+    "trans": ["to consent--承知"]
+  },
+  {
+    "name": "bunpou",
+    "trans": ["grammar--文法"]
+  },
+  {
+    "name": "shuppatsu suru",
+    "trans": ["to depart--出発"]
+  },
+  {
+    "name": "kamau",
+    "trans": ["to mind--かまう"]
+  },
+  {
+    "name": "akanbou",
+    "trans": ["baby--赤ん坊"]
+  },
+  {
+    "name": "kinjo",
+    "trans": ["neighbourhood--近所"]
+  },
+  {
+    "name": "anaunsa-",
+    "trans": ["announcer--アナウンサー"]
+  },
+  {
+    "name": "tasu",
+    "trans": ["to add a number--足す"]
+  },
+  {
+    "name": "shoukai",
+    "trans": ["introduction--紹介"]
+  },
+  {
+    "name": "isshoukenmei",
+    "trans": ["with utmost effort--一生懸命"]
+  },
+  {
+    "name": "harau",
+    "trans": ["to pay--払う"]
+  },
+  {
+    "name": "yureru",
+    "trans": ["to shake,to sway--揺れる"]
+  },
+  {
+    "name": "to",
+    "trans": ["metropolitan--都"]
+  },
+  {
+    "name": "oto",
+    "trans": ["sound,note--音"]
+  },
+  {
+    "name": "sorosoro",
+    "trans": ["gradually,soon--そろそろ"]
+  },
+  {
+    "name": "mousu",
+    "trans": ["(humble) to be called,to say--申す"]
+  },
+  {
+    "name": "shakai",
+    "trans": ["society,public--社会"]
+  },
+  {
+    "name": "un",
+    "trans": ["(informal) yes--うん"]
+  },
+  {
+    "name": "ishi",
+    "trans": ["stone--石"]
+  },
+  {
+    "name": "soreni",
+    "trans": ["moreover--それに"]
+  },
+  {
+    "name": "kaji",
+    "trans": ["fire--火事"]
+  },
+  {
+    "name": "keshigomu",
+    "trans": ["eraser--消しゴム"]
+  },
+  {
+    "name": "hodo",
+    "trans": ["extent--ほど"]
+  },
+  {
+    "name": "nikki",
+    "trans": ["journal--日記"]
+  },
+  {
+    "name": "bungaku",
+    "trans": ["literature--文学"]
+  },
+  {
+    "name": "sofuto",
+    "trans": ["soft--ソフト"]
+  },
+  {
+    "name": "minato",
+    "trans": ["harbour--港"]
+  },
+  {
+    "name": "shinbunsha",
+    "trans": ["newspaper company--新聞社"]
+  },
+  {
+    "name": "sarada",
+    "trans": ["salad--サラダ"]
+  },
+  {
+    "name": "mannaka",
+    "trans": ["middle--真中"]
+  },
+  {
+    "name": "mairu",
+    "trans": ["(humble) to go,to come--参る"]
+  },
+  {
+    "name": "koshou suru",
+    "trans": ["to break-down--故障"]
+  },
+  {
+    "name": "uso",
+    "trans": ["a lie--うそ"]
+  },
+  {
+    "name": "subarashii",
+    "trans": ["wonderful--すばらしい"]
+  },
+  {
+    "name": "katsu",
+    "trans": ["to win--勝つ"]
+  },
+  {
+    "name": "wariai",
+    "trans": ["rate,ratio,percentage--割合"]
+  },
+  {
+    "name": "kowasu",
+    "trans": ["to break--壊す"]
+  },
+  {
+    "name": "sukurīn",
+    "trans": ["screen--スクリーン"]
+  },
+  {
+    "name": "jiyuu",
+    "trans": ["freedom--自由"]
+  },
+  {
+    "name": "daiji",
+    "trans": ["important,valuable,serious matter--大事"]
+  },
+  {
+    "name": "tsugou",
+    "trans": ["circumstances,convenience--都合"]
+  },
+  {
+    "name": "kyouiku",
+    "trans": ["education--教育"]
+  },
+  {
+    "name": "chuui",
+    "trans": ["caution--注意"]
+  },
+  {
+    "name": "sagasu",
+    "trans": ["to look for--探す"]
+  },
+  {
+    "name": "shusseki suru",
+    "trans": ["to attend--出席"]
+  },
+  {
+    "name": "gijutsu",
+    "trans": ["art,technology,skill--技術"]
+  },
+  {
+    "name": "kimono",
+    "trans": ["kimono--着物"]
+  },
+  {
+    "name": "jiko",
+    "trans": ["accident--事故"]
+  },
+  {
+    "name": "oideninaru",
+    "trans": ["(respectful) to be--おいでになる"]
+  },
+  {
+    "name": "uriba",
+    "trans": ["place where things are sold--売り場"]
+  },
+  {
+    "name": "kikai",
+    "trans": ["opportunity--機会"]
+  },
+  {
+    "name": "futsuu",
+    "trans": ["usually, or a train that stops at every station--普通"]
+  },
+  {
+    "name": "moshi",
+    "trans": ["if--もし"]
+  },
+  {
+    "name": "riyuu",
+    "trans": ["reason--理由"]
+  },
+  {
+    "name": "aruko-ru",
+    "trans": ["alcohol--アルコール"]
+  },
+  {
+    "name": "inai",
+    "trans": ["within--以内"]
+  },
+  {
+    "name": "yotei",
+    "trans": ["arrangement--予定"]
+  },
+  {
+    "name": "housou suru",
+    "trans": ["to broadcast--放送"]
+  },
+  {
+    "name": "tashika",
+    "trans": ["definite--確か"]
+  },
+  {
+    "name": "kyuu",
+    "trans": ["urgent, steep--急"]
+  },
+  {
+    "name": "kesshite",
+    "trans": ["never--決して"]
+  },
+  {
+    "name": "yorokobu",
+    "trans": ["to be delighted--喜ぶ"]
+  },
+  {
+    "name": "shuukan",
+    "trans": ["custom,manners--習慣"]
+  },
+  {
+    "name": "chuugakkou",
+    "trans": ["junior high school,middle school--中学校"]
+  },
+  {
+    "name": "tana",
+    "trans": ["shelves--棚"]
+  },
+  {
+    "name": "kubi",
+    "trans": ["neck--首"]
+  },
+  {
+    "name": "oshiire",
+    "trans": ["closet--押し入れ"]
+  },
+  {
+    "name": "koukou",
+    "trans": ["high school--高校"]
+  },
+  {
+    "name": "sou",
+    "trans": ["really--そう"]
+  },
+  {
+    "name": "kakeru",
+    "trans": ["to hang something--掛ける"]
+  },
+  {
+    "name": "shimin",
+    "trans": ["citizen--市民"]
+  },
+  {
+    "name": "manga",
+    "trans": ["comic--漫画"]
+  },
+  {
+    "name": "kotae",
+    "trans": ["response--答"]
+  },
+  {
+    "name": "futoru",
+    "trans": ["to become fat--太る"]
+  },
+  {
+    "name": "okonau",
+    "trans": ["to do--行う"]
+  },
+  {
+    "name": "kumo",
+    "trans": ["cloud--雲"]
+  },
+  {
+    "name": "basho",
+    "trans": ["location--場所"]
+  },
+  {
+    "name": "ryouhou",
+    "trans": ["both sides--両方"]
+  },
+  {
+    "name": "youji",
+    "trans": ["things to do--用事"]
+  },
+  {
+    "name": "kachou",
+    "trans": ["section manager--課長"]
+  },
+  {
+    "name": "sashiageru",
+    "trans": ["(polite) to give--差し上げる"]
+  },
+  {
+    "name": "konpyūta/konpyūtā",
+    "trans": ["computer--コンピュータ/コンピューター"]
+  },
+  {
+    "name": "kokoro",
+    "trans": ["core,heart--心"]
+  },
+  {
+    "name": "piano",
+    "trans": ["piano--ピアノ"]
+  },
+  {
+    "name": "oya",
+    "trans": ["parents--親"]
+  },
+  {
+    "name": "muri",
+    "trans": ["impossible--無理"]
+  },
+  {
+    "name": "shiraberu",
+    "trans": ["to investigate--調べる"]
+  },
+  {
+    "name": "gasu",
+    "trans": ["petrol--ガス"]
+  },
+  {
+    "name": "reibou",
+    "trans": ["air conditioning--冷房"]
+  },
+  {
+    "name": "nedan",
+    "trans": ["price--ねだん"]
+  },
+  {
+    "name": "nakunaru",
+    "trans": ["to die--亡くなる"]
+  },
+  {
+    "name": "sorehodo",
+    "trans": ["to that extent--それほど"]
+  },
+  {
+    "name": "naoru",
+    "trans": ["to be cured,to heal--治る"]
+  },
+  {
+    "name": "kenkyuushitsu",
+    "trans": ["study room,laboratory--研究室"]
+  },
+  {
+    "name": "wake",
+    "trans": ["meaning,reason--訳"]
+  },
+  {
+    "name": "sandoicchi",
+    "trans": ["sandwich--サンドイッチ"]
+  },
+  {
+    "name": "fueru",
+    "trans": ["to increase--増える"]
+  },
+  {
+    "name": "nemui",
+    "trans": ["sleepy--眠い"]
+  },
+  {
+    "name": "hikaru",
+    "trans": ["to shine,to glitter--光る"]
+  },
+  {
+    "name": "arubaito",
+    "trans": ["part-time job--アルバイト"]
+  },
+  {
+    "name": "kusa",
+    "trans": ["grass--草"]
+  },
+  {
+    "name": "henji",
+    "trans": ["reply--返事"]
+  },
+  {
+    "name": "sen",
+    "trans": ["line--線"]
+  },
+  {
+    "name": "sugiru",
+    "trans": ["to exceed--過ぎる"]
+  },
+  {
+    "name": "katai",
+    "trans": ["hard--堅/硬/固い"]
+  },
+  {
+    "name": "kuuki",
+    "trans": ["air,atmosphere--空気"]
+  },
+  {
+    "name": "seisan suru",
+    "trans": ["to produce--生産"]
+  },
+  {
+    "name": "kanarazu",
+    "trans": ["certainly,necessarily--必ず"]
+  },
+  {
+    "name": "mataha",
+    "trans": ["or,otherwise--または"]
+  },
+  {
+    "name": "dentou",
+    "trans": ["electric light--電灯"]
+  },
+  {
+    "name": "hanami",
+    "trans": ["cherry-blossom viewing--花見"]
+  },
+  {
+    "name": "senaka",
+    "trans": ["back of the body--背中"]
+  },
+  {
+    "name": "inaka",
+    "trans": ["countryside--田舎"]
+  },
+  {
+    "name": "oreru",
+    "trans": ["to break or be folded--折れる"]
+  },
+  {
+    "name": "okujou",
+    "trans": ["rooftop--屋上"]
+  },
+  {
+    "name": "aku",
+    "trans": ["to open, to become empty--空く"]
+  },
+  {
+    "name": "kondo",
+    "trans": ["now,next time--今度"]
+  },
+  {
+    "name": "biru",
+    "trans": ["building or bill--ビル"]
+  },
+  {
+    "name": "uchi",
+    "trans": ["within--うち"]
+  },
+  {
+    "name": "haisha",
+    "trans": ["dentist--歯医者"]
+  },
+  {
+    "name": "suteru",
+    "trans": ["to throw away--捨てる"]
+  },
+  {
+    "name": "yasashii",
+    "trans": ["kind--優しい"]
+  },
+  {
+    "name": "ijimeru",
+    "trans": ["to tease--いじめる"]
+  },
+  {
+    "name": "sabishii",
+    "trans": ["lonely--寂しい"]
+  },
+  {
+    "name": "taifuu",
+    "trans": ["typhoon--台風"]
+  },
+  {
+    "name": "hakobu",
+    "trans": ["to transport--運ぶ"]
+  },
+  {
+    "name": "taoreru",
+    "trans": ["to break down--倒れる"]
+  },
+  {
+    "name": "yahari/yappari",
+    "trans": ["as I thought,absolutely--やはり/やっぱり"]
+  },
+  {
+    "name": "budou",
+    "trans": ["grapes--ぶどう"]
+  },
+  {
+    "name": "omocha",
+    "trans": ["toy--おもちゃ"]
+  },
+  {
+    "name": "youi",
+    "trans": ["preparation--用意"]
+  },
+  {
+    "name": "jinkou",
+    "trans": ["population--人口"]
+  },
+  {
+    "name": "suugaku",
+    "trans": ["mathematics,arithmetic--数学"]
+  },
+  {
+    "name": "gasorin",
+    "trans": ["petrol--ガソリン"]
+  },
+  {
+    "name": "kotori",
+    "trans": ["small bird--小鳥"]
+  },
+  {
+    "name": "sutto",
+    "trans": ["straight,all of a sudden--すっと"]
+  },
+  {
+    "name": "norikaeru",
+    "trans": ["to change between buses or trains--乗り換える"]
+  },
+  {
+    "name": "riyou",
+    "trans": ["utilization--利用"]
+  },
+  {
+    "name": "atsumeru",
+    "trans": ["to collect something--集める"]
+  },
+  {
+    "name": "nyuugaku suru",
+    "trans": ["to enter school or university--入学"]
+  },
+  {
+    "name": "shibaraku",
+    "trans": ["little while--しばらく"]
+  },
+  {
+    "name": "ossharu",
+    "trans": ["(respectful) to say--おっしゃる"]
+  },
+  {
+    "name": "yoroshii",
+    "trans": ["(respectful) OK,all right--よろしい"]
+  },
+  {
+    "name": "majime",
+    "trans": ["serious--まじめ"]
+  },
+  {
+    "name": "suidou",
+    "trans": ["water supply--水道"]
+  },
+  {
+    "name": "tatami",
+    "trans": ["Japanese straw mat--畳"]
+  },
+  {
+    "name": "sakki",
+    "trans": ["some time ago--さっき"]
+  },
+  {
+    "name": "hi",
+    "trans": ["day, sun--日"]
+  },
+  {
+    "name": "hatsuon",
+    "trans": ["pronunciation--発音"]
+  },
+  {
+    "name": "honyaku",
+    "trans": ["translation--翻訳"]
+  },
+  {
+    "name": "ito",
+    "trans": ["thread--糸"]
+  },
+  {
+    "name": "kiken",
+    "trans": ["danger--危険"]
+  },
+  {
+    "name": "narubeku",
+    "trans": ["as much as possible--なるべく"]
+  },
+  {
+    "name": "ura",
+    "trans": ["reverse side--裏"]
+  },
+  {
+    "name": "tochuu",
+    "trans": ["on the way--途中"]
+  },
+  {
+    "name": "okashii",
+    "trans": ["strange or funny--おかしい"]
+  },
+  {
+    "name": "asai",
+    "trans": ["shallow,superficial--浅い"]
+  },
+  {
+    "name": "hen",
+    "trans": ["strange--変"]
+  },
+  {
+    "name": "saisho",
+    "trans": ["beginning,first--最初"]
+  },
+  {
+    "name": "haiken suru",
+    "trans": ["(humble) to look at--拝見"]
+  },
+  {
+    "name": "you",
+    "trans": ["use--用"]
+  },
+  {
+    "name": "tsutaeru",
+    "trans": ["to report--伝える"]
+  },
+  {
+    "name": "sorede",
+    "trans": ["because of that--それで"]
+  },
+  {
+    "name": "mieru",
+    "trans": ["to be in sight--見える"]
+  },
+  {
+    "name": "otaku",
+    "trans": ["(polite) your house--お宅"]
+  },
+  {
+    "name": "tariru",
+    "trans": ["to be enough--足りる"]
+  },
+  {
+    "name": "nioi",
+    "trans": ["a smell--におい"]
+  },
+  {
+    "name": "otsuri",
+    "trans": ["change from purchase, balance--おつり"]
+  },
+  {
+    "name": "shiken",
+    "trans": ["examination--試験"]
+  },
+  {
+    "name": "moushiageru",
+    "trans": ["(humble) to say,to tell--申し上げる"]
+  },
+  {
+    "name": "saraishuu",
+    "trans": ["the week after next--さ来週"]
+  },
+  {
+    "name": "sagaru",
+    "trans": ["to get down,to descend--下る"]
+  },
+  {
+    "name": "hikoujou",
+    "trans": ["airport--飛行場"]
+  },
+  {
+    "name": "kougyou",
+    "trans": ["the manufacturing industry--工業"]
+  },
+  {
+    "name": "tera",
+    "trans": ["temple--寺"]
+  },
+  {
+    "name": "fune",
+    "trans": ["ship--舟"]
+  },
+  {
+    "name": "nuru",
+    "trans": ["to paint,to plaster--塗る"]
+  },
+  {
+    "name": "utsu",
+    "trans": ["to hit--打つ"]
+  },
+  {
+    "name": "chikara",
+    "trans": ["strength,power--力"]
+  },
+  {
+    "name": "tokuni",
+    "trans": ["particularly,especially--特に"]
+  },
+  {
+    "name": "ji",
+    "trans": ["character--字"]
+  },
+  {
+    "name": "iken",
+    "trans": ["opinion--意見"]
+  },
+  {
+    "name": "naru",
+    "trans": ["to sound--鳴る"]
+  },
+  {
+    "name": "komu",
+    "trans": ["to be crowded--込む"]
+  },
+  {
+    "name": "katachi",
+    "trans": ["shape--形"]
+  },
+  {
+    "name": "hayashi",
+    "trans": ["woods,forester--林"]
+  },
+  {
+    "name": "owari",
+    "trans": ["the end--終わり"]
+  },
+  {
+    "name": "nemuru",
+    "trans": ["to sleep--眠る"]
+  },
+  {
+    "name": "futon",
+    "trans": ["Japanese bedding, futon--布団"]
+  },
+  {
+    "name": "konogoro",
+    "trans": ["these days,nowadays--このごろ"]
+  },
+  {
+    "name": "yunyuu suru",
+    "trans": ["to import--輸入"]
+  },
+  {
+    "name": "yogoreru",
+    "trans": ["to get dirty--汚れる"]
+  },
+  {
+    "name": "garasu",
+    "trans": ["a glass pane--ガラス"]
+  },
+  {
+    "name": "nasaru",
+    "trans": ["(respectful) to do--なさる"]
+  },
+  {
+    "name": "kisetsu",
+    "trans": ["season--季節"]
+  },
+  {
+    "name": "tateru",
+    "trans": ["to stand something up--立てる"]
+  },
+  {
+    "name": "hisashiburi",
+    "trans": ["after a long time--久しぶり"]
+  },
+  {
+    "name": "kome",
+    "trans": ["uncooked rice--米"]
+  },
+  {
+    "name": "kēki",
+    "trans": ["cake--ケーキ"]
+  },
+  {
+    "name": "seikatsu suru",
+    "trans": ["to live--生活"]
+  },
+  {
+    "name": "wakareru",
+    "trans": ["to separate--別れる"]
+  },
+  {
+    "name": "wasuremono",
+    "trans": ["lost article--忘れ物"]
+  },
+  {
+    "name": "kowai",
+    "trans": ["frightening--怖い"]
+  },
+  {
+    "name": "nyuuin suru",
+    "trans": ["to hospitalise--入院"]
+  },
+  {
+    "name": "suri",
+    "trans": ["pickpocket--すり"]
+  },
+  {
+    "name": "shoutai suru",
+    "trans": ["to invite--招待"]
+  },
+  {
+    "name": "su-tsukēsu",
+    "trans": ["suitcase--スーツケース"]
+  },
+  {
+    "name": "nebou",
+    "trans": ["sleeping in late--寝坊"]
+  },
+  {
+    "name": "mochiron",
+    "trans": ["of course--もちろん"]
+  },
+  {
+    "name": "kun",
+    "trans": ["suffix for familiar young male--君"]
+  },
+  {
+    "name": "rusu",
+    "trans": ["absence--留守"]
+  },
+  {
+    "name": "suruto",
+    "trans": ["then--すると"]
+  },
+  {
+    "name": "shinamono",
+    "trans": ["goods--品物"]
+  },
+  {
+    "name": "nageru",
+    "trans": ["to throw or cast away--投げる"]
+  },
+  {
+    "name": "tsuma",
+    "trans": ["(humble) wife--妻"]
+  },
+  {
+    "name": "fakkusu",
+    "trans": ["fax--ファックス"]
+  },
+  {
+    "name": "odoroku",
+    "trans": ["to be surprised--驚く"]
+  },
+  {
+    "name": "kawaru",
+    "trans": ["to change--変わる"]
+  },
+  {
+    "name": "tatoeba",
+    "trans": ["for example--例えば"]
+  },
+  {
+    "name": "orei",
+    "trans": ["expression of gratitude--お礼"]
+  },
+  {
+    "name": "tsureru",
+    "trans": ["to lead--連れる"]
+  },
+  {
+    "name": "tokoya",
+    "trans": ["barber--とこや"]
+  },
+  {
+    "name": "keizai",
+    "trans": ["finance,economy--経済"]
+  },
+  {
+    "name": "koudou",
+    "trans": ["auditorium--講堂"]
+  },
+  {
+    "name": "seiji",
+    "trans": ["politics,government--政治"]
+  },
+  {
+    "name": "jishin",
+    "trans": ["earthquake--地震"]
+  },
+  {
+    "name": "beru",
+    "trans": ["bell--ベル"]
+  },
+  {
+    "name": "mousugu",
+    "trans": ["soon--もうすぐ"]
+  },
+  {
+    "name": "doubutsuen",
+    "trans": ["zoo--動物園"]
+  },
+  {
+    "name": "wareru",
+    "trans": ["to break--割れる"]
+  },
+  {
+    "name": "yoru",
+    "trans": ["to visit--寄る"]
+  },
+  {
+    "name": "ageru",
+    "trans": ["to give--あげる"]
+  },
+  {
+    "name": "pāto",
+    "trans": ["part time--パート"]
+  },
+  {
+    "name": "tazuneru",
+    "trans": ["to ask--尋ねる"]
+  },
+  {
+    "name": "ke",
+    "trans": ["hair or fur--毛"]
+  },
+  {
+    "name": "sukkari",
+    "trans": ["completely--すっかり"]
+  },
+  {
+    "name": "hijouni",
+    "trans": ["extremely--非常に"]
+  },
+  {
+    "name": "tsuru",
+    "trans": ["to fish--釣る"]
+  },
+  {
+    "name": "houritsu",
+    "trans": ["law--法律"]
+  },
+  {
+    "name": "shitaku suru",
+    "trans": ["to prepare--支度"]
+  },
+  {
+    "name": "soudan suru",
+    "trans": ["to discuss--相談"]
+  },
+  {
+    "name": "yakunitatsu",
+    "trans": ["to be helpful--役に立つ"]
+  },
+  {
+    "name": "fumu",
+    "trans": ["to step on--踏む"]
+  },
+  {
+    "name": "handobaggu",
+    "trans": ["handbag　--ハンドバッグ"]
+  },
+  {
+    "name": "daitai",
+    "trans": ["generally--大体"]
+  },
+  {
+    "name": "kangaeru",
+    "trans": ["to consider--考える"]
+  },
+  {
+    "name": "toutou",
+    "trans": ["finally, after all--とうとう"]
+  },
+  {
+    "name": "mukashi",
+    "trans": ["olden days, former--昔"]
+  },
+  {
+    "name": "oru",
+    "trans": ["to break or to fold--折る"]
+  },
+  {
+    "name": "chittomo",
+    "trans": ["not at all (used with a negative verb)--ちっとも"]
+  },
+  {
+    "name": "kabe",
+    "trans": ["wall--壁"]
+  },
+  {
+    "name": "tooku",
+    "trans": ["distant--遠く"]
+  },
+  {
+    "name": "kagaku",
+    "trans": ["science--科学"]
+  },
+  {
+    "name": "sobo",
+    "trans": ["grandmother--祖母"]
+  },
+  {
+    "name": "aisatsusuru",
+    "trans": ["to greet--あいさつ-する"]
+  },
+  {
+    "name": "akachan",
+    "trans": ["infant--あかちゃん"]
+  },
+  {
+    "name": "saigo",
+    "trans": ["last,end--最後"]
+  },
+  {
+    "name": "uketsuke",
+    "trans": ["receipt--受付"]
+  },
+  {
+    "name": "tsuzuku",
+    "trans": ["to be continued--続く"]
+  },
+  {
+    "name": "kyousou",
+    "trans": ["competition--競争"]
+  },
+  {
+    "name": "yubi",
+    "trans": ["finger--指"]
+  },
+  {
+    "name": "todokeru",
+    "trans": ["to reach--届ける"]
+  },
+  {
+    "name": "ijou",
+    "trans": ["more than,this is all--以上"]
+  },
+  {
+    "name": "geshuku",
+    "trans": ["lodging--下宿"]
+  },
+  {
+    "name": "odoru",
+    "trans": ["to dance--踊る"]
+  },
+  {
+    "name": "hikidasu",
+    "trans": ["to withdraw--引き出す"]
+  },
+  {
+    "name": "dorobou",
+    "trans": ["thief--泥棒"]
+  },
+  {
+    "name": "kuraberu",
+    "trans": ["to compare--比べる"]
+  },
+  {
+    "name": "yaseru",
+    "trans": ["to become thin--痩せる"]
+  },
+  {
+    "name": "shourai",
+    "trans": ["future,prospects--将来"]
+  },
+  {
+    "name": "tenisu",
+    "trans": ["tennis--テニス"]
+  },
+  {
+    "name": "nusumu",
+    "trans": ["to steal--盗む"]
+  },
+  {
+    "name": "goranninaru",
+    "trans": ["(respectful) to see--ごらんになる"]
+  },
+  {
+    "name": "esukare-tā",
+    "trans": ["escalator--エスカレーター"]
+  },
+  {
+    "name": "kokusai",
+    "trans": ["international--国際"]
+  },
+  {
+    "name": "hiruyasumi",
+    "trans": ["noon break--昼休み"]
+  },
+  {
+    "name": "kyaku",
+    "trans": ["guest,customer--客"]
+  },
+  {
+    "name": "chiri",
+    "trans": ["geography--地理"]
+  },
+  {
+    "name": "momen",
+    "trans": ["cotton--木綿"]
+  },
+  {
+    "name": "shiai",
+    "trans": ["match,game--試合"]
+  },
+  {
+    "name": "tenrankai",
+    "trans": ["exhibition--展覧会"]
+  },
+  {
+    "name": "boku",
+    "trans": ["I (used by males)--僕"]
+  },
+  {
+    "name": "kakkou",
+    "trans": ["appearance--かっこう"]
+  },
+  {
+    "name": "otto",
+    "trans": ["husband--夫"]
+  },
+  {
+    "name": "afurika",
+    "trans": ["Africa--アフリカ"]
+  },
+  {
+    "name": "anzen",
+    "trans": ["safety--安全"]
+  },
+  {
+    "name": "ka-ten",
+    "trans": ["curtain--カーテン"]
+  },
+  {
+    "name": "shinpai suru",
+    "trans": ["to worry--心配"]
+  },
+  {
+    "name": "nigeru",
+    "trans": ["to escape--逃げる"]
+  },
+  {
+    "name": "tanoshimi",
+    "trans": ["joy--楽しみ"]
+  },
+  {
+    "name": "kimochi",
+    "trans": ["feeling,mood--気持ち"]
+  },
+  {
+    "name": "ojousan",
+    "trans": ["young lady--お嬢さん"]
+  },
+  {
+    "name": "rekishi",
+    "trans": ["history--歴史"]
+  },
+  {
+    "name": "norimono",
+    "trans": ["vehicle--乗り物"]
+  },
+  {
+    "name": "nesshin",
+    "trans": ["enthusiasm--ねっしん"]
+  },
+  {
+    "name": "hige",
+    "trans": ["beard--ひげ"]
+  },
+  {
+    "name": "taitei",
+    "trans": ["usually--たいてい"]
+  },
+  {
+    "name": "genin",
+    "trans": ["cause,source--原因"]
+  },
+  {
+    "name": "kudasaru",
+    "trans": ["(respectful) to give--くださる"]
+  },
+  {
+    "name": "kami",
+    "trans": ["hair--髪"]
+  },
+  {
+    "name": "sonna",
+    "trans": ["that sort of--そんな"]
+  },
+  {
+    "name": "itasu",
+    "trans": ["(humble) to do--致す"]
+  },
+  {
+    "name": "kaiwa",
+    "trans": ["conversation--会話"]
+  },
+  {
+    "name": "kimaru",
+    "trans": ["to be decided--決る"]
+  },
+  {
+    "name": "okosu",
+    "trans": ["to wake--起す"]
+  },
+  {
+    "name": "zenzen",
+    "trans": ["not entirely (used in a negative sentence)--ぜんぜん"]
+  },
+  {
+    "name": "kanai",
+    "trans": ["housewife--家内"]
+  },
+  {
+    "name": "ten",
+    "trans": ["point,dot--点"]
+  },
+  {
+    "name": "kaeru",
+    "trans": ["to change--変える"]
+  },
+  {
+    "name": "okurimono",
+    "trans": ["gift--贈り物"]
+  },
+  {
+    "name": "chan",
+    "trans": ["suffix for familiar female person--ちゃん"]
+  },
+  {
+    "name": "kyoumi",
+    "trans": ["an interest--興味"]
+  },
+  {
+    "name": "chuushajou",
+    "trans": ["parking lot--駐車場"]
+  },
+  {
+    "name": "dougu",
+    "trans": ["tool,means--道具"]
+  },
+  {
+    "name": "nareru",
+    "trans": ["to grow accustomed to--慣れる"]
+  },
+  {
+    "name": "kega suru",
+    "trans": ["to injure--けが・する"]
+  },
+  {
+    "name": "sawaru",
+    "trans": ["to touch--触る"]
+  },
+  {
+    "name": "yushutsu suru",
+    "trans": ["to export--輸出"]
+  },
+  {
+    "name": "keisatsu",
+    "trans": ["police--警察"]
+  },
+  {
+    "name": "utsusu",
+    "trans": ["to copy or photograph--写す"]
+  },
+  {
+    "name": "kankei",
+    "trans": ["relationship--関係"]
+  },
+  {
+    "name": "gozonji",
+    "trans": ["knowing,acquaintance--ご存じ"]
+  },
+  {
+    "name": "hirou",
+    "trans": ["to pick up,to gather--拾う"]
+  },
+  {
+    "name": "yakusoku",
+    "trans": ["promise--約束"]
+  },
+  {
+    "name": "kyuukou",
+    "trans": ["speedy, express--急行"]
+  },
+  {
+    "name": "kantan",
+    "trans": ["simple--簡単"]
+  },
+  {
+    "name": "mazu",
+    "trans": ["first of all--まず"]
+  },
+  {
+    "name": "josei",
+    "trans": ["woman--女性"]
+  },
+  {
+    "name": "ukeru",
+    "trans": ["to take a lesson or test--受ける"]
+  },
+  {
+    "name": "ajia",
+    "trans": ["Asia--アジア"]
+  },
+  {
+    "name": "tame",
+    "trans": ["in order to--為"]
+  },
+  {
+    "name": "buchou",
+    "trans": ["head of a section--部長"]
+  },
+  {
+    "name": "teinei",
+    "trans": ["polite--丁寧"]
+  },
+  {
+    "name": "au",
+    "trans": ["to match--合う"]
+  },
+  {
+    "name": "susumu",
+    "trans": ["to make progress--進む"]
+  },
+  {
+    "name": "agaru",
+    "trans": ["to rise--上る"]
+  },
+  {
+    "name": "makeru",
+    "trans": ["to lose--負ける"]
+  },
+  {
+    "name": "saka",
+    "trans": ["slope,hill--坂"]
+  },
+  {
+    "name": "ureshii",
+    "trans": ["glad--うれしい"]
+  },
+  {
+    "name": "yoyaku",
+    "trans": ["reservation--予約"]
+  },
+  {
+    "name": "shitagi",
+    "trans": ["underwear--下着"]
+  },
+  {
+    "name": "chuusha",
+    "trans": ["injection--注射"]
+  },
+  {
+    "name": "maniau",
+    "trans": ["to be in time for--間に合う"]
+  },
+  {
+    "name": "saraigetsu",
+    "trans": ["the month after next--さ来月"]
+  },
+  {
+    "name": "sutēki",
+    "trans": ["steak--ステーキ"]
+  },
+  {
+    "name": "mitsukaru",
+    "trans": ["to be discovered--見つかる"]
+  },
+  {
+    "name": "keikaku suru",
+    "trans": ["to plan--計画"]
+  },
+  {
+    "name": "mukaeru",
+    "trans": ["to go out to meet--迎える"]
+  },
+  {
+    "name": "kanojo",
+    "trans": ["she,girlfriend--彼女"]
+  },
+  {
+    "name": "igai",
+    "trans": ["with the exception of--以外"]
+  },
+  {
+    "name": "kamu",
+    "trans": ["to bite,to chew--噛む"]
+  },
+  {
+    "name": "miso",
+    "trans": ["bean paste--味噌"]
+  },
+  {
+    "name": "ha",
+    "trans": ["leaf--葉"]
+  },
+  {
+    "name": "koujou",
+    "trans": ["factory--工場"]
+  },
+  {
+    "name": "kazaru",
+    "trans": ["to decorate--飾る"]
+  },
+  {
+    "name": "tsuki",
+    "trans": ["moon--つき"]
+  },
+  {
+    "name": "koumuin",
+    "trans": ["government worker--公務員"]
+  },
+  {
+    "name": "kikoeru",
+    "trans": ["to be heard--聞こえる"]
+  },
+  {
+    "name": "naruhodo",
+    "trans": ["now I understand--なるほど"]
+  },
+  {
+    "name": "itadaku",
+    "trans": ["(humble) to receive--いただく"]
+  },
+  {
+    "name": "chi",
+    "trans": ["blood--血"]
+  },
+  {
+    "name": "tekitou",
+    "trans": ["suitability--適当"]
+  },
+  {
+    "name": "tsutsumu",
+    "trans": ["to wrap--包む"]
+  },
+  {
+    "name": "niru",
+    "trans": ["to be similar--似る"]
+  },
+  {
+    "name": "undou suru",
+    "trans": ["to exercise--運動"]
+  },
+  {
+    "name": "mori",
+    "trans": ["forest--森"]
+  },
+  {
+    "name": "shinsetsu",
+    "trans": ["kindness--親切"]
+  },
+  {
+    "name": "tebukuro",
+    "trans": ["glove--手袋"]
+  },
+  {
+    "name": "kougai",
+    "trans": ["outskirts--郊外"]
+  },
+  {
+    "name": "nigai",
+    "trans": ["bitter--苦い"]
+  },
+  {
+    "name": "hoshi",
+    "trans": ["star--星"]
+  },
+  {
+    "name": "tsumori",
+    "trans": ["intention--つもり"]
+  },
+  {
+    "name": "dakara",
+    "trans": ["so,therefore--だから"]
+  },
+  {
+    "name": "koukousei",
+    "trans": ["high school student--高校生"]
+  },
+  {
+    "name": "mawaru",
+    "trans": ["to go around--回る"]
+  },
+  {
+    "name": "ukagau",
+    "trans": ["to visit--うかがう"]
+  },
+  {
+    "name": "anna",
+    "trans": ["such--あんな"]
+  },
+  {
+    "name": "katazukeru",
+    "trans": ["to tidy up--片付ける"]
+  },
+  {
+    "name": "shiraseru",
+    "trans": ["to notify--知らせる"]
+  },
+  {
+    "name": "juusho",
+    "trans": ["an address,a residence--住所"]
+  },
+  {
+    "name": "kaigan",
+    "trans": ["coast--海岸"]
+  },
+  {
+    "name": "sodateru",
+    "trans": ["to rear,to bring up--育てる"]
+  },
+  {
+    "name": "shumi",
+    "trans": ["hobby--趣味"]
+  },
+  {
+    "name": "tokubetsu",
+    "trans": ["special--特別"]
+  },
+  {
+    "name": "kou",
+    "trans": ["this way--こう"]
+  },
+  {
+    "name": "mitsukeru",
+    "trans": ["to discover--見つける"]
+  },
+  {
+    "name": "tsuku",
+    "trans": ["to be attached--付く"]
+  },
+  {
+    "name": "asobi",
+    "trans": ["play--遊び"]
+  },
+  {
+    "name": "sakan",
+    "trans": ["popularity,prosperous--盛ん"]
+  },
+  {
+    "name": "shokuryouhin",
+    "trans": ["groceries--食料品"]
+  },
+  {
+    "name": "hidoi",
+    "trans": ["awful--ひどい"]
+  },
+  {
+    "name": "morau",
+    "trans": ["to receive--もらう"]
+  },
+  {
+    "name": "gasorinsutando",
+    "trans": ["petrol station--ガソリンスタンド"]
+  },
+  {
+    "name": "nikaidate",
+    "trans": ["two storied--二階建て"]
+  },
+  {
+    "name": "yu",
+    "trans": ["hot water--湯"]
+  },
+  {
+    "name": "kureru",
+    "trans": ["to get dark,to come to an end--暮れる"]
+  },
+  {
+    "name": "torikaeru",
+    "trans": ["to exchange--取り替える"]
+  },
+  {
+    "name": "omimai",
+    "trans": ["calling on someone who is ill,enquiry--お見舞い"]
+  },
+  {
+    "name": "shokuji suru",
+    "trans": ["to have a meal--食事"]
+  },
+  {
+    "name": "omiyage",
+    "trans": ["souvenir--お土産"]
+  },
+  {
+    "name": "tomeru",
+    "trans": ["to stop something--止める"]
+  },
+  {
+    "name": "nakanaka",
+    "trans": ["considerably--中々"]
+  },
+  {
+    "name": "karera",
+    "trans": ["they--彼ら"]
+  },
+  {
+    "name": "wakasu",
+    "trans": ["to boil,to heat--沸かす"]
+  },
+  {
+    "name": "shippai",
+    "trans": ["failure,mistake--失敗"]
+  },
+  {
+    "name": "waku",
+    "trans": ["to boil, to grow hot,to get excited--沸く"]
+  },
+  {
+    "name": "naku",
+    "trans": ["to weep--泣く"]
+  },
+  {
+    "name": "junbi suru",
+    "trans": ["to prepare--準備"]
+  },
+  {
+    "name": "tazuneru",
+    "trans": ["to visit--訪ねる"]
+  },
+  {
+    "name": "omoidasu",
+    "trans": ["to remember--思い出す"]
+  },
+  {
+    "name": "keiken suru",
+    "trans": ["to experience--経験"]
+  },
+  {
+    "name": "guai",
+    "trans": ["condition,health--具合"]
+  },
+  {
+    "name": "yawarakai",
+    "trans": ["soft--柔らかい"]
+  },
+  {
+    "name": "ko",
+    "trans": ["child--子"]
+  },
+  {
+    "name": "naoru",
+    "trans": ["to be fixed,to be repaired--直る"]
+  },
+  {
+    "name": "jidai",
+    "trans": ["era--時代"]
+  },
+  {
+    "name": "kowareru",
+    "trans": ["to be broken--壊れる"]
+  },
+  {
+    "name": "mina",
+    "trans": ["everybody--皆"]
+  },
+  {
+    "name": "oriru",
+    "trans": ["to get off--下りる"]
+  },
+  {
+    "name": "ayamaru",
+    "trans": ["to apologize--謝る"]
+  },
+  {
+    "name": "bijutsukan",
+    "trans": ["art gallery--美術館"]
+  },
+  {
+    "name": "yakeru",
+    "trans": ["to burn,to be roasted--焼ける"]
+  },
+  {
+    "name": "shi",
+    "trans": ["city--市"]
+  },
+  {
+    "name": "wa-puro",
+    "trans": ["word processor--ワープロ"]
+  },
+  {
+    "name": "mushi",
+    "trans": ["insect--虫"]
+  },
+  {
+    "name": "tsuzukeru",
+    "trans": ["to continue--続ける"]
+  },
+  {
+    "name": "koutsuu",
+    "trans": ["traffic,transportation--交通"]
+  },
+  {
+    "name": "tetsudau",
+    "trans": ["to assist--手伝う"]
+  },
+  {
+    "name": "bunka",
+    "trans": ["culture--文化"]
+  },
+  {
+    "name": "kaeri",
+    "trans": ["return--帰り"]
+  },
+  {
+    "name": "isogu",
+    "trans": ["to hurry--急ぐ"]
+  },
+  {
+    "name": "hotondo",
+    "trans": ["mostly--ほとんど"]
+  },
+  {
+    "name": "hitsuyou",
+    "trans": ["necessary--必要"]
+  },
+  {
+    "name": "sofu",
+    "trans": ["grandfather--祖父"]
+  },
+  {
+    "name": "jinja",
+    "trans": ["Shinto shrine--神社"]
+  },
+  {
+    "name": "boueki",
+    "trans": ["trade--貿易"]
+  },
+  {
+    "name": "betsu",
+    "trans": ["different--別"]
+  },
+  {
+    "name": "tenkiyohou",
+    "trans": ["weather forecast--天気予報"]
+  },
+  {
+    "name": "tokkyuu",
+    "trans": ["limited express train (faster than an express train)--特急"]
+  },
+  {
+    "name": "kanemochi/okanemochi",
+    "trans": ["rich man--お・金持ち"]
+  },
+  {
+    "name": "hiraku",
+    "trans": ["to open an event--開く"]
+  },
+  {
+    "name": "ichido",
+    "trans": ["once--一度"]
+  },
+  {
+    "name": "dekirudake",
+    "trans": ["as much as possible--できるだけ"]
+  },
+  {
+    "name": "okureru",
+    "trans": ["to be late--遅れる"]
+  },
+  {
+    "name": "hajimeru",
+    "trans": ["to begin--始める"]
+  },
+  {
+    "name": "a",
+    "trans": ["Ah--あ"]
+  },
+  {
+    "name": "taipu",
+    "trans": ["type,style--タイプ"]
+  },
+  {
+    "name": "repo-to/ripo-to",
+    "trans": ["report--レポート/リポート"]
+  },
+  {
+    "name": "konya",
+    "trans": ["tonight--今夜"]
+  },
+  {
+    "name": "bai",
+    "trans": ["double--倍"]
+  },
+  {
+    "name": "furidasu",
+    "trans": ["to start to rain--降り出す"]
+  },
+  {
+    "name": "mawari",
+    "trans": ["surroundings--周り"]
+  },
+  {
+    "name": "suku",
+    "trans": ["to become empty--すく"]
+  },
+  {
+    "name": "setsumei",
+    "trans": ["explanation--説明"]
+  },
+  {
+    "name": "bangumi",
+    "trans": ["television or radio program--番組"]
+  },
+  {
+    "name": "kisoku",
+    "trans": ["regulations--規則"]
+  },
+  {
+    "name": "taiin suru",
+    "trans": ["to leave hospital--退院"]
+  },
+  {
+    "name": "suiei",
+    "trans": ["swimming--水泳"]
+  },
+  {
+    "name": "kouchou",
+    "trans": ["headmaster--校長"]
+  },
+  {
+    "name": "hazukashii",
+    "trans": ["embarrassed--恥ずかしい"]
+  },
+  {
+    "name": "jiten",
+    "trans": ["dictionary--辞典"]
+  },
+  {
+    "name": "hikkosu",
+    "trans": ["to move house--引っ越す"]
+  },
+  {
+    "name": "danbou",
+    "trans": ["heating--暖房"]
+  },
+  {
+    "name": "fukushuu",
+    "trans": ["revision--復習"]
+  },
+  {
+    "name": "meshiagaru",
+    "trans": ["(polite) to eat--召し上がる"]
+  },
+  {
+    "name": "kawaku",
+    "trans": ["to get dry--乾く"]
+  },
+  {
+    "name": "sensou",
+    "trans": ["war--戦争"]
+  },
+  {
+    "name": "tomaru",
+    "trans": ["to lodge at--泊まる"]
+  },
+  {
+    "name": "kenbutsu",
+    "trans": ["sightseeing--見物"]
+  },
+  {
+    "name": "kyoukai",
+    "trans": ["church--教会"]
+  },
+  {
+    "name": "sugoi",
+    "trans": ["terrific--凄い"]
+  },
+  {
+    "name": "eda",
+    "trans": ["branch, twig--枝"]
+  },
+  {
+    "name": "mukau",
+    "trans": ["to face--向かう"]
+  },
+  {
+    "name": "yamu",
+    "trans": ["to stop--止む"]
+  },
+  {
+    "name": "tateru",
+    "trans": ["to build--建てる"]
+  },
+  {
+    "name": "yume",
+    "trans": ["dream--夢"]
+  },
+  {
+    "name": "shikata",
+    "trans": ["method--仕方"]
+  },
+  {
+    "name": "shikkari",
+    "trans": ["firmly,steadily--しっかり"]
+  },
+  {
+    "name": "sewa suru",
+    "trans": ["to look after--世話"]
+  },
+  {
+    "name": "fukai",
+    "trans": ["deep--深い"]
+  },
+  {
+    "name": "mezurashii",
+    "trans": ["rare--珍しい"]
+  },
+  {
+    "name": "koto",
+    "trans": ["thing,matter--こと"]
+  },
+  {
+    "name": "suna",
+    "trans": ["sand--砂"]
+  },
+  {
+    "name": "hantai",
+    "trans": ["opposition--反対"]
+  },
+  {
+    "name": "ki",
+    "trans": ["spirit,mood--気"]
+  },
+  {
+    "name": "musume",
+    "trans": ["(humble) daughter--娘"]
+  },
+  {
+    "name": "kaigishitsu",
+    "trans": ["meeting room--会議室"]
+  },
+  {
+    "name": "daibu",
+    "trans": ["greatly--大分"]
+  },
+  {
+    "name": "shougakkou",
+    "trans": ["elementary school--小学校"]
+  },
+  {
+    "name": "nakunaru",
+    "trans": ["to disappear,to get lost--無くなる"]
+  },
+  {
+    "name": "inoru",
+    "trans": ["to pray--祈る"]
+  },
+  {
+    "name": "erabu",
+    "trans": ["to choose--選ぶ"]
+  },
+  {
+    "name": "aji",
+    "trans": ["flavour--味"]
+  },
+  {
+    "name": "hazu",
+    "trans": ["it should be so--はず"]
+  },
+  {
+    "name": "dondon",
+    "trans": ["more and more--どんどん"]
+  },
+  {
+    "name": "machigaeru",
+    "trans": ["to make a mistake--間違える"]
+  },
+  {
+    "name": "sageru",
+    "trans": ["to hang,to lower,to move back--下げる"]
+  },
+  {
+    "name": "goshujin",
+    "trans": ["(honorable) your husband--御主人"]
+  },
+  {
+    "name": "konoaida",
+    "trans": ["the other day,recently--このあいだ"]
+  },
+  {
+    "name": "zehi",
+    "trans": ["without fail--ぜひ"]
+  },
+  {
+    "name": "modoru",
+    "trans": ["to turn back--戻る"]
+  }
+]

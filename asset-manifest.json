@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e07fb9ac.chunk.css",
+    "main.js": "./static/js/main.c7568bad.chunk.js",
+    "runtime-main.js": "./static/js/runtime-main.34b30200.js",
+    "static/js/2.3b0c0dae.chunk.js": "./static/js/2.3b0c0dae.chunk.js",
+    "static/js/3.c58baffe.chunk.js": "./static/js/3.c58baffe.chunk.js",
+    "static/js/4.7140dc0f.chunk.js": "./static/js/4.7140dc0f.chunk.js",
+    "index.html": "./index.html",
+    "static/js/2.3b0c0dae.chunk.js.LICENSE.txt": "./static/js/2.3b0c0dae.chunk.js.LICENSE.txt",
+    "static/js/3.c58baffe.chunk.js.LICENSE.txt": "./static/js/3.c58baffe.chunk.js.LICENSE.txt",
+    "static/media/alipay.32d63d80.png": "./static/media/alipay.32d63d80.png",
+    "static/media/beep.822816e8.wav": "./static/media/beep.822816e8.wav",
+    "static/media/click.63538193.wav": "./static/media/click.63538193.wav",
+    "static/media/hint.9fd5c4fa.wav": "./static/media/hint.9fd5c4fa.wav",
+    "static/media/logo.dc84501b.svg": "./static/media/logo.dc84501b.svg",
+    "static/media/vsc-logo.fefcea66.svg": "./static/media/vsc-logo.fefcea66.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.34b30200.js",
+    "static/js/2.3b0c0dae.chunk.js",
+    "static/css/main.e07fb9ac.chunk.css",
+    "static/js/main.c7568bad.chunk.js"
+  ]
+}

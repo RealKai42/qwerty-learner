@@ -1,0 +1,134 @@
+[
+    {
+        "name": "clear()",
+        "trans": [
+            "clear():删除 hashMap 中的所有键值对"
+        ]
+    },
+    {
+        "name": "clone()",
+        "trans": [
+            "clone():复制一份 hashMap"
+        ]
+    },
+    {
+        "name": "isEmpty()",
+        "trans": [
+            "isEmpty():判断 hashMap 是否为空"
+        ]
+    },
+    {
+        "name": "size()",
+        "trans": [
+            "size():计算 hashMap 中键值对的数量"
+        ]
+    },
+    {
+        "name": "put()",
+        "trans": [
+            "put():将键值对添加到 hashMap 中"
+        ]
+    },
+    {
+        "name": "putAll()",
+        "trans": [
+            "putAll():将所有键值对添加到 hashMap 中"
+        ]
+    },
+    {
+        "name": "putIfAbsent()",
+        "trans": [
+            "putIfAbsent():如果 hashMap 中不存在指定的键，则将指定的键值对插入到 hashMap 中。"
+        ]
+    },
+    {
+        "name": "remove()",
+        "trans": [
+            "remove():删除 hashMap 中指定键 key 的映射关系"
+        ]
+    },
+    {
+        "name": "containsKey()",
+        "trans": [
+            "containsKey():检查 hashMap 中是否存在指定的 key 对应的映射关系。"
+        ]
+    },
+    {
+        "name": "containsValue()",
+        "trans": [
+            "containsValue():检查 hashMap 中是否存在指定的 value 对应的映射关系。"
+        ]
+    },
+    {
+        "name": "replace()",
+        "trans": [
+            "replace():替换 hashMap 中是指定的 key 对应的 value。"
+        ]
+    },
+    {
+        "name": "replaceAll()",
+        "trans": [
+            "replaceAll():将 hashMap 中的所有映射关系替换成给定的函数所执行的结果。"
+        ]
+    },
+    {
+        "name": "get()",
+        "trans": [
+            "get():获取指定 key 对应对 value"
+        ]
+    },
+    {
+        "name": "getOrDefault()",
+        "trans": [
+            "getOrDefault():获取指定 key 对应对 value，如果找不到 key ，则返回设置的默认值"
+        ]
+    },
+    {
+        "name": "forEach()",
+        "trans": [
+            "forEach():对 hashMap 中的每个映射执行指定的操作。"
+        ]
+    },
+    {
+        "name": "entrySet()",
+        "trans": [
+            "entrySet():返回 hashMap 中所有映射项的集合集合视图。"
+        ]
+    },
+    {
+        "name": "keySet()",
+        "trans": [
+            "keySet():返回 hashMap 中所有 key 组成的集合视图。"
+        ]
+    },
+    {
+        "name": "values()",
+        "trans": [
+            "values():返回 hashMap 中存在的所有 value 值。"
+        ]
+    },
+    {
+        "name": "merge()",
+        "trans": [
+            "merge():添加键值对到 hashMap 中"
+        ]
+    },
+    {
+        "name": "compute()",
+        "trans": [
+            "compute():对 hashMap 中指定 key 的值进行重新计算"
+        ]
+    },
+    {
+        "name": "computeIfAbsent()",
+        "trans": [
+            "computeIfAbsent():对 hashMap 中指定 key 的值进行重新计算，如果不存在这个 key，则添加到 hasMap 中"
+        ]
+    },
+    {
+        "name": "computeIfPresent()",
+        "trans": [
+            "computeIfPresent():对 hashMap 中指定 key 的值进行重新计算，前提是该 key 存在于 hashMap 中。"
+        ]
+    }
+]
