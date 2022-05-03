@@ -24,9 +24,6 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build
-  sync2Gitee:
-    runs-on: ubuntu-latest
-    steps:
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         env:
