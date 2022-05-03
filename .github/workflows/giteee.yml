@@ -1,7 +1,6 @@
 name: Gitee Pages Action
 
 on: [push]
-  workflow_dispatch:
 
 jobs:
   build:
