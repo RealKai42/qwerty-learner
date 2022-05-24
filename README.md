@@ -105,6 +105,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 - V2EX 全站热搜项目
 - Gitee 全站推荐项目
 - [少数派首页推荐](https://sspai.com/post/67535)
+- Gitee 最有价值开源项目([GVP](https://gitee.com/gvp))
 
 ## 📕 词库列表
 
