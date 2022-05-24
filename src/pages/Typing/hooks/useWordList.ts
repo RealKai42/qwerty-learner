@@ -54,9 +54,44 @@ type WordList = {
 async function fetchWordList(id: string, url: string): Promise<WordList> {
   if (id === 'cet4') {
     return { words: cet4, totalChapters: Math.ceil(cet4.length / numWordsPerChapter) }
+  } else if (id === 'youdao') {
+    const { total, wordConfig } = await fetchYoudaoList()
+    return wordConfig
   } else {
     const response = await fetch(url)
     const words: Word[] = await response.json()
     return { words, totalChapters: Math.ceil(words.length / numWordsPerChapter) }
+  }
+}
+type YoudaoResp = {
+  data: {
+    total: number
+    itemList: Item[]
+  }
+}
+type Item = {
+  word: string
+  trans: string
+  phonetic: string
+}
+
+async function fetchYoudaoList() {
+  const response = await fetch('https://mahoo12138.cn/api/youdao/words', {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+      Accept: 'application/json',
+    },
+  })
+  const { data }: YoudaoResp = await response.json()
+  const words = data.itemList.map((item) => ({
+    name: item.word,
+    trans: item.trans.split(';'),
+    usphone: item.phonetic,
+    ukphone: item.phonetic,
+  }))
+  return {
+    total: data.total,
+    wordConfig: { words, totalChapters: Math.ceil(words.length / numWordsPerChapter) },
   }
 }
