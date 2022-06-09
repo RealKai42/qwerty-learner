@@ -1,10 +1,18 @@
 [
   {
-    "name": "a (an)",
-    "usphone": "ə, eɪ(ən)",
+    "name": "a",
+    "usphone": "ə, eɪ",
     "ukphone": "",
     "trans": [
       "art. 一（个、件……）"
+    ]
+  },
+  {
+    "name": "an",
+    "usphone": "æn; ən",
+    "ukphone": "",
+    "trans": [
+      "art. 一（个、件……）用于元音前"
     ]
   },
   {
@@ -760,8 +768,8 @@
     ]
   },
   {
-    "name": "afterward(s)",
-    "usphone": "ˈɑːftəwəd(z)",
+    "name": "afterward",
+    "usphone": "ˈɑːftəwəd",
     "ukphone": "",
     "trans": [
       "ad. 后来"
@@ -1184,11 +1192,11 @@
     ]
   },
   {
-    "name": "ａ.m./A.M.",
+    "name": "ａ.m.",
     "usphone": "",
     "ukphone": "",
     "trans": [
-      "n. 午前，上午"
+      "n. 午前，上午【小写】"
     ]
   },
   {
@@ -1216,11 +1224,19 @@
     ]
   },
   {
-    "name": "ambassador (ambassadress)",
+    "name": "ambassador ambassadress",
     "usphone": "æmˈbæsədə(r)",
     "ukphone": "",
     "trans": [
       "n.大使"
+    ]
+  },
+  {
+    "name": "ambassadress",
+    "usphone": "æmˈbæsədres",
+    "ukphone": "",
+    "trans": [
+      "n.大使夫人；女大使"
     ]
   },
   {
@@ -1872,11 +1888,11 @@
     ]
   },
   {
-    "name": "arise (arose, arisen)",
+    "name": "arise arose arisen",
     "usphone": "əˈraɪz",
     "ukphone": "",
     "trans": [
-      "vi. 起来，升起；出现"
+      "vi. 起来，升起；出现 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -2448,11 +2464,11 @@
     ]
   },
   {
-    "name": "awake (awoke, awoken)",
+    "name": "awake awoke awoken",
     "usphone": "əˈweɪk",
     "ukphone": "",
     "trans": [
-      "v. 唤醒 a. 醒着的"
+      "v. 唤醒, adj. 醒着的 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -2544,7 +2560,7 @@
     ]
   },
   {
-    "name": "backward(s)",
+    "name": "backward",
     "usphone": "ˈbækwəd",
     "ukphone": "",
     "trans": [
@@ -2568,11 +2584,11 @@
     ]
   },
   {
-    "name": "bad (worse, worst)",
+    "name": "bad worse worst",
     "usphone": "bæd",
     "ukphone": "",
     "trans": [
-      "a. 坏的；有害的，不利的；严重的"
+      "adj. 坏的；有害的，不利的；严重的【比较级 最高级】"
     ]
   },
   {
@@ -3016,11 +3032,11 @@
     ]
   },
   {
-    "name": "beat (beat, beaten)",
+    "name": "beat beat beaten",
     "usphone": "biːt",
     "ukphone": "",
     "trans": [
-      "v. 敲打；跳动；打赢 n. （音乐）节拍"
+      "v. 敲打；跳动；打赢 n. （音乐）节拍 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -3048,7 +3064,7 @@
     ]
   },
   {
-    "name": "become (became, be come)",
+    "name": "become",
     "usphone": "bɪˈkʌm",
     "ukphone": "",
     "trans": [
@@ -3136,11 +3152,11 @@
     ]
   },
   {
-    "name": "begin(began,begun)",
+    "name": "begin began begun",
     "usphone": "bɪˈɡɪn",
     "ukphone": "",
     "trans": [
-      " v.开始,着手"
+      "v.开始,着手【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -3264,11 +3280,11 @@
     ]
   },
   {
-    "name": "bend (bent, bent)",
+    "name": "bend bent bent",
     "usphone": "bend",
     "ukphone": "",
     "trans": [
-      "vt. 使弯曲"
+      "adj. 弯曲的，变形的；vt. 使弯曲 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -3320,7 +3336,7 @@
     ]
   },
   {
-    "name": "best（good, well 的最 高级）",
+    "name": "best",
     "usphone": "best",
     "ukphone": "",
     "trans": [
@@ -3328,15 +3344,15 @@
     ]
   },
   {
-    "name": "best--seller",
-    "usphone": "best- ˈselə(r)",
+    "name": "bestseller",
+    "usphone": "ˌbestˈselə(r)",
     "ukphone": "",
     "trans": [
       "n. 畅销书"
     ]
   },
   {
-    "name": "better (good, well 的 比较级)",
+    "name": "better",
     "usphone": "ˈbetə(r)",
     "ukphone": "",
     "trans": [
@@ -3512,11 +3528,11 @@
     ]
   },
   {
-    "name": "bite (bit, bitten)",
+    "name": "bite bit bitten",
     "usphone": "baɪt",
     "ukphone": "",
     "trans": [
-      "v. 咬；叮"
+      "v. 咬；叮 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -3624,11 +3640,11 @@
     ]
   },
   {
-    "name": "blow (blew, blown)",
+    "name": "blow blew blown",
     "usphone": "bləʊ",
     "ukphone": "",
     "trans": [
-      "v. 吹；刮风；吹气"
+      "v. 吹；刮风；吹气 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -3656,8 +3672,8 @@
     ]
   },
   {
-    "name": "boat--race",
-    "usphone": "bəʊt-reɪs",
+    "name": "boatrace",
+    "usphone": "bəʊtˈreɪs",
     "ukphone": "",
     "trans": [
       "n. 划船比赛"
@@ -3672,8 +3688,8 @@
     ]
   },
   {
-    "name": "body--building",
-    "usphone": "ˈbɔdɪ-ˈbɪldɪŋ",
+    "name": "bodybuilding",
+    "usphone": "ˈbɒdibɪldɪŋ",
     "ukphone": "",
     "trans": [
       "n. 健美"
@@ -4032,11 +4048,11 @@
     ]
   },
   {
-    "name": "break (broke, bro ken)",
+    "name": "break broke broken",
     "usphone": "breɪk",
     "ukphone": "",
     "trans": [
-      "v. 打破（断，碎）；损坏，撕开"
+      "v. 打破（断，碎）；损坏，撕开 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -4152,11 +4168,11 @@
     ]
   },
   {
-    "name": "bring (brought, brought)",
+    "name": "bring brought brought",
     "usphone": "brɪŋ",
     "ukphone": "",
     "trans": [
-      "vt. 拿来，带来，取来"
+      "vt. 拿来，带来，取来 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -4200,7 +4216,7 @@
     ]
   },
   {
-    "name": "broadcast（broadcast, broadcast或--ed,--ed）",
+    "name": "broadcast",
     "usphone": "ˈbrɔːdkɑːst",
     "ukphone": "",
     "trans": [
@@ -4312,11 +4328,11 @@
     ]
   },
   {
-    "name": "build (built, built)",
+    "name": "build built built",
     "usphone": "bɪld",
     "ukphone": "",
     "trans": [
-      "v. 建筑；造"
+      "v. 建筑；造 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -4384,7 +4400,7 @@
     ]
   },
   {
-    "name": "burn (--ed, --ed 或 burnt, burnt)",
+    "name": "burn",
     "usphone": "bɜːn",
     "ukphone": "",
     "trans": [
@@ -4440,7 +4456,7 @@
     ]
   },
   {
-    "name": "businessman (pl. businessmen)",
+    "name": "businessman",
     "usphone": "ˈbɪznɪsmæn",
     "ukphone": "",
     "trans": [
@@ -4448,7 +4464,7 @@
     ]
   },
   {
-    "name": "businesswoman (businesswomen)",
+    "name": "businesswoman",
     "usphone": "ˈbɪznɪswʊmæn",
     "ukphone": "",
     "trans": [
@@ -4512,11 +4528,11 @@
     ]
   },
   {
-    "name": "buy (bought,bought)",
+    "name": "buy bought bought",
     "usphone": "baɪ",
     "ukphone": "",
     "trans": [
-      "vt. 买"
+      "vt. 买【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -4552,7 +4568,7 @@
     ]
   },
   {
-    "name": "café",
+    "name": "cafe",
     "usphone": "ˈkæfeɪ; (US) kæˈfeɪ",
     "ukphone": "",
     "trans": [
@@ -4640,7 +4656,7 @@
     ]
   },
   {
-    "name": "can (could) canˈt = can not modal",
+    "name": "can",
     "usphone": "ken, kæn",
     "ukphone": "",
     "trans": [
@@ -4920,7 +4936,7 @@
     ]
   },
   {
-    "name": "cast (cast, cast)",
+    "name": "cast",
     "usphone": "kɑːst; (US) kæst",
     "ukphone": "",
     "trans": [
@@ -4968,11 +4984,11 @@
     ]
   },
   {
-    "name": "catch(caught,caught)",
+    "name": "catch caught caught",
     "usphone": "kætʃ",
     "ukphone": "",
     "trans": [
-      "v. 接住；捉住；赶上；染上（疾病）"
+      "v. 接住；捉住；赶上；染上（疾病） 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -5136,11 +5152,19 @@
     ]
   },
   {
-    "name": "centre (美 center )",
-    "usphone": "",
+    "name": "centre",
+    "usphone": "ˈsentə(r)",
     "ukphone": "",
     "trans": [
-      "n. 中心，中央"
+      "n. 中心，中央(英)"
+    ]
+  },
+  {
+    "name": "center",
+    "usphone": "ˈsentə(r)",
+    "ukphone": "",
+    "trans": [
+      "n. 中心，中央(美)"
     ]
   },
   {
@@ -5192,11 +5216,11 @@
     ]
   },
   {
-    "name": "chain store(s)",
+    "name": "chain store",
     "usphone": "tʃeɪn stɔː(r)",
     "ukphone": "",
     "trans": [
-      "连锁店"
+      "连锁店【空格符号】"
     ]
   },
   {
@@ -5216,7 +5240,7 @@
     ]
   },
   {
-    "name": "chairwoman (pl. chairwomen)",
+    "name": "chairwoman",
     "usphone": "ˈtʃɛəˌwumən",
     "ukphone": "",
     "trans": [
@@ -5512,11 +5536,19 @@
     ]
   },
   {
-    "name": "child (复children)",
+    "name": "child",
     "usphone": "tʃaɪld",
     "ukphone": "",
     "trans": [
       "n. 孩子，儿童"
+    ]
+  },
+  {
+    "name": "children",
+    "usphone": "ˈtʃɪldrən",
+    "ukphone": "",
+    "trans": [
+      "n. 孩子们，儿童们"
     ]
   },
   {
@@ -5592,11 +5624,11 @@
     ]
   },
   {
-    "name": "choose (chose, chosen)",
+    "name": "choose chose chosen",
     "usphone": "tʃuːz",
     "ukphone": "",
     "trans": [
-      "vt. 选择"
+      "vt. 选择 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -6096,7 +6128,7 @@
     ]
   },
   {
-    "name": "cold--blooded",
+    "name": "coldblooded",
     "usphone": "kəʊld blʌdɪd",
     "ukphone": "",
     "trans": [
@@ -6152,11 +6184,19 @@
     ]
   },
   {
-    "name": "colour (美color)",
+    "name": "colour",
     "usphone": "ˈkʌlə",
     "ukphone": "",
     "trans": [
-      "n. 颜色 vt.给…着色，涂色"
+      "n. 颜色 vt.给…着色，涂色【英】"
+    ]
+  },
+  {
+    "name": "color",
+    "usphone": "ˈkʌlə",
+    "ukphone": "",
+    "trans": [
+      "n. 颜色 vt.给…着色，涂色【美】"
     ]
   },
   {
@@ -6176,11 +6216,11 @@
     ]
   },
   {
-    "name": "come (came, come)",
+    "name": "come came come",
     "usphone": "kʌm",
     "ukphone": "",
     "trans": [
-      "vi. 来，来到"
+      "vi. 来，来到 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -7024,7 +7064,7 @@
     ]
   },
   {
-    "name": "cost (cost, cost)",
+    "name": "cost",
     "usphone": "kɔst; (US) kɔːst",
     "ukphone": "",
     "trans": [
@@ -7180,7 +7220,7 @@
     "usphone": "ˈkəʊ ˈwɜːkə(r)",
     "ukphone": "",
     "trans": [
-      "n. 合作者；同事"
+      "n. 合作者；同事【连字符】"
     ]
   },
   {
@@ -7264,11 +7304,11 @@
     ]
   },
   {
-    "name": "criterion (pl. criteria)",
+    "name": "criterion criteria",
     "usphone": "kraɪˈtɪərɪən",
     "ukphone": "",
     "trans": [
-      "n. 标准，准则，原则"
+      "n. 标准，准则，原则【单数 复数】"
     ]
   },
   {
@@ -7456,7 +7496,7 @@
     ]
   },
   {
-    "name": "cut (cut, cut)",
+    "name": "cut",
     "usphone": "kʌt",
     "ukphone": "",
     "trans": [
@@ -7808,11 +7848,11 @@
     ]
   },
   {
-    "name": "defence (美defense)",
+    "name": "defence defences",
     "usphone": "diˈfens",
     "ukphone": "",
     "trans": [
-      "n. & v. 防御；防务"
+      "n. & v. 防御；防务【单数 复数】"
     ]
   },
   {
@@ -7912,7 +7952,7 @@
     ]
   },
   {
-    "name": "department(缩Dept.)",
+    "name": "department",
     "usphone": "dɪˈpɑːtmənt",
     "ukphone": "",
     "trans": [
@@ -7920,11 +7960,11 @@
     ]
   },
   {
-    "name": "department -store",
+    "name": "department-store",
     "usphone": "dɪˈpɑːtmənt-stɔː(r)",
     "ukphone": "",
     "trans": [
-      "n. 百货商场"
+      "n. 百货商场【连字符】"
     ]
   },
   {
@@ -8120,11 +8160,19 @@
     ]
   },
   {
-    "name": "dialogue (美 dialog)",
-    "usphone": "ˈdaɪəlɔɡ; (US) ˈdaɪəlɔːɡ",
+    "name": "dialogue",
+    "usphone": "ˈdaɪəlɔɡ",
     "ukphone": "",
     "trans": [
-      "n. 对话"
+      "n. 对话【英】"
+    ]
+  },
+  {
+    "name": "dialog",
+    "usphone": "ˈdaɪəlɔɡ",
+    "ukphone": "",
+    "trans": [
+      "n. 对话【美】"
     ]
   },
   {
@@ -8216,11 +8264,11 @@
     ]
   },
   {
-    "name": "dig (dug, dug)",
+    "name": "dig dug dug",
     "usphone": "dɪɡ",
     "ukphone": "",
     "trans": [
-      "v. 挖（洞沟）,掘"
+      "v. 挖（洞沟）,掘 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -8276,7 +8324,7 @@
     "usphone": "ˈdainiŋ-rʊm",
     "ukphone": "",
     "trans": [
-      "食堂，饭厅"
+      "食堂，饭厅【连字符】"
     ]
   },
   {
@@ -8664,7 +8712,7 @@
     ]
   },
   {
-    "name": "do (did, done) donˈt=do not",
+    "name": "do",
     "usphone": "dʊ, duː",
     "ukphone": "",
     "trans": [
@@ -8808,7 +8856,7 @@
     ]
   },
   {
-    "name": "Dr(缩) = Doctor",
+    "name": "doctor",
     "usphone": "",
     "ukphone": "",
     "trans": [
@@ -8832,11 +8880,11 @@
     ]
   },
   {
-    "name": "draw (drew, drawn)",
+    "name": "draw drew drawn",
     "usphone": "drɔː",
     "ukphone": "",
     "trans": [
-      "v. 绘画；绘制；拉，拖；提取（金钱）"
+      "v. 绘画；绘制；拉，拖；提取（金钱） 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -8864,7 +8912,7 @@
     ]
   },
   {
-    "name": "dream (dreamt, dreamt 或--ed, --ed)",
+    "name": "dream",
     "usphone": "driːm",
     "ukphone": "",
     "trans": [
@@ -8904,19 +8952,19 @@
     ]
   },
   {
-    "name": "drink(drank,drunk)",
+    "name": "drink drank drunk",
     "usphone": "drɪŋk",
     "ukphone": "",
     "trans": [
-      "v. 喝，饮"
+      "v. 喝，饮 【一般现在 过去式 过去分词】"
     ]
   },
   {
-    "name": "drive(drove,driven)",
+    "name": "drive drove driven",
     "usphone": "draɪv",
     "ukphone": "",
     "trans": [
-      "v. 驾驶，开（车）；驱赶"
+      "v. 驾驶，开（车）；驱赶 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -9200,7 +9248,7 @@
     ]
   },
   {
-    "name": "easy--going",
+    "name": "easygoing",
     "usphone": "ˈiːzɪ-ˈɡəʊɪŋ",
     "ukphone": "",
     "trans": [
@@ -9208,11 +9256,11 @@
     ]
   },
   {
-    "name": "eat (ate, eaten)",
+    "name": "eat ate eaten",
     "usphone": "iːt",
     "ukphone": "",
     "trans": [
-      "v. 吃"
+      "v. 吃 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -9304,7 +9352,7 @@
     ]
   },
   {
-    "name": "Egypt*",
+    "name": "Egypt",
     "usphone": "ˈiːdʒɪpt",
     "ukphone": "",
     "trans": [
@@ -9448,7 +9496,7 @@
     ]
   },
   {
-    "name": "e-mail/email",
+    "name": "email",
     "usphone": "iː- meɪl",
     "ukphone": "",
     "trans": [
@@ -9592,7 +9640,7 @@
     ]
   },
   {
-    "name": "England*",
+    "name": "England",
     "usphone": "ˈɪŋɡlənd",
     "ukphone": "",
     "trans": [
@@ -9608,11 +9656,11 @@
     ]
   },
   {
-    "name": "English -speaking",
+    "name": "English-speaking",
     "usphone": "ˈɪŋɡlɪʃ-spiːk",
     "ukphone": "",
     "trans": [
-      "a.说英语的"
+      "a.说英语的【连字符】"
     ]
   },
   {
@@ -9816,7 +9864,7 @@
     ]
   },
   {
-    "name": "Europe*",
+    "name": "Europe",
     "usphone": "ˈjʊərəp",
     "ukphone": "",
     "trans": [
@@ -10288,8 +10336,8 @@
     ]
   },
   {
-    "name": "f (缩) =female (或 =foot,feet)",
-    "usphone": "ef",
+    "name": "female",
+    "usphone": "ˈfiːmeɪl",
     "ukphone": "",
     "trans": [
       "n. 女(的)；雌(的)； 英尺"
@@ -10616,19 +10664,19 @@
     ]
   },
   {
-    "name": "feed (fed, fed)",
+    "name": "feed fed fed",
     "usphone": "fiːd",
     "ukphone": "",
     "trans": [
-      "vt. 喂（养）；饲（养）"
+      "vt. 喂（养）；饲（养） 【一般现在 过去式 过去分词】"
     ]
   },
   {
-    "name": "feel (felt, felt)",
+    "name": "feel felt felt",
     "usphone": "fiːl",
     "ukphone": "",
     "trans": [
-      "v.& link 感觉，觉得；摸，触"
+      "v.& link 感觉，觉得；摸，触 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -11152,11 +11200,11 @@
     ]
   },
   {
-    "name": "fly (flew, flown)",
+    "name": "fly flew flown",
     "usphone": "flaɪ",
     "ukphone": "",
     "trans": [
-      "vi. （鸟、飞机）飞；（人乘飞机）飞行；（旗子等）飘动 vt. 空运（乘客，货物等）；放（风筝、飞机模型等）"
+      "vi. （鸟、飞机）飞；（人乘飞机）飞行；（旗子等）飘动 vt. 空运（乘客，货物等）；放（风筝、飞机模型等） 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -11248,11 +11296,11 @@
     ]
   },
   {
-    "name": "foot (复 feet)",
+    "name": "foot feet",
     "usphone": "fʊt",
     "ukphone": "",
     "trans": [
-      "n. 足，脚；英尺"
+      "n. 足，脚；英尺【单数 复数】"
     ]
   },
   {
@@ -11504,7 +11552,7 @@
     ]
   },
   {
-    "name": "France*",
+    "name": "France",
     "usphone": "fræns",
     "ukphone": "",
     "trans": [
@@ -12032,15 +12080,15 @@
     ]
   },
   {
-    "name": "get (got , got)",
+    "name": "get got got",
     "usphone": "ɡet",
     "ukphone": "",
     "trans": [
-      "vt. 成为；得到；具有；到达"
+      "vt. 成为；得到；具有；到达 【一般现在 过去式 过去分词】"
     ]
   },
   {
-    "name": "get--together",
+    "name": "gettogether",
     "usphone": "ɡet-təˈɡeðə(r)",
     "ukphone": "",
     "trans": [
@@ -12080,11 +12128,11 @@
     ]
   },
   {
-    "name": "give (gave, given)",
+    "name": "give gave given",
     "usphone": "ɡɪv",
     "ukphone": "",
     "trans": [
-      "vt. 给,递给,付出,给予"
+      "vt. 给,递给,付出,给予 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -12160,11 +12208,11 @@
     ]
   },
   {
-    "name": "go (went, gone)",
+    "name": "go went gone",
     "usphone": "ɡəʊ",
     "ukphone": "",
     "trans": [
-      "vi. 去；走；驶；通到；到达 n. 尝试（做某事）"
+      "vi. 去；走；驶；通到；到达 n. 尝试（做某事） 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -12224,11 +12272,11 @@
     ]
   },
   {
-    "name": "good (better ,best)",
+    "name": "good better best",
     "usphone": "ɡʊd",
     "ukphone": "",
     "trans": [
-      "a. 好；良好"
+      "a. 好；良好【比较级 最高级】"
     ]
   },
   {
@@ -12236,7 +12284,7 @@
     "usphone": "ɡʊd- baɪ",
     "ukphone": "",
     "trans": [
-      "int. 再见；再会"
+      "int. 再见；再会【连字符】"
     ]
   },
   {
@@ -12256,11 +12304,11 @@
     ]
   },
   {
-    "name": "goose (复 geese)",
+    "name": "goose geese",
     "usphone": "ɡuːs",
     "ukphone": "",
     "trans": [
-      "n. 鹅"
+      "n. 鹅【单数 复数】"
     ]
   },
   {
@@ -12560,11 +12608,11 @@
     ]
   },
   {
-    "name": "grow (grew, grown)",
+    "name": "grow grew grown",
     "usphone": "ɡrəʊ",
     "ukphone": "",
     "trans": [
-      "v. 生长；发育；种植；变成"
+      "v. 生长；发育；种植；变成 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -12816,11 +12864,11 @@
     ]
   },
   {
-    "name": "hang (hung, hung)",
+    "name": "hang hung hung",
     "usphone": "hæŋ",
     "ukphone": "",
     "trans": [
-      "v.悬挂，吊着；把……吊起"
+      "v.悬挂，吊着；把……吊起 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -12856,11 +12904,19 @@
     ]
   },
   {
-    "name": "harbour (美harbor)",
-    "usphone": "ˈhɑ:bə",
+    "name": "harbour",
+    "usphone": "ˈhɑːbə(r)",
     "ukphone": "",
     "trans": [
-      "n. 港口"
+      "n. 港口【英】"
+    ]
+  },
+  {
+    "name": "harbor",
+    "usphone": "ˈhɑːbə(r)",
+    "ukphone": "",
+    "trans": [
+      "n. 港口【美】"
     ]
   },
   {
@@ -12960,11 +13016,11 @@
     ]
   },
   {
-    "name": "have (has, had, had)",
+    "name": "have has had had",
     "usphone": "hæv",
     "ukphone": "",
     "trans": [
-      "vt.有；吃；喝；进行；经受"
+      "vt.有；吃；喝；进行；经受【一般现在 第三人称单数 过去式 过去分词】"
     ]
   },
   {
@@ -13064,11 +13120,11 @@
     ]
   },
   {
-    "name": "hear (heard, heard)",
+    "name": "hear heard heard",
     "usphone": "hɪə(r)",
     "ukphone": "",
     "trans": [
-      "v. 听见；听说,得知"
+      "v. 听见；听说,得知【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -13272,11 +13328,11 @@
     ]
   },
   {
-    "name": "hide (hid, hidden)",
+    "name": "hide hid hidden",
     "usphone": "haɪd",
     "ukphone": "",
     "trans": [
-      "v. 把…藏起来，隐藏"
+      "v. 把…藏起来，隐藏【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -13368,11 +13424,11 @@
     ]
   },
   {
-    "name": "hit (hit, hit)",
+    "name": "hit hit hit",
     "usphone": "hɪt",
     "ukphone": "",
     "trans": [
-      "n.& vt. 打,撞,击中"
+      "n.& vt. 打,撞,击中【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -13392,7 +13448,7 @@
     ]
   },
   {
-    "name": "hold (held, held)",
+    "name": "hold held held",
     "usphone": "həʊld",
     "ukphone": "",
     "trans": [
@@ -13480,11 +13536,19 @@
     ]
   },
   {
-    "name": "honour (美honor)",
+    "name": "honour",
     "usphone": "ˈɔnə",
     "ukphone": "",
     "trans": [
-      "n. 荣誉，光荣 vt. 尊敬，给予荣誉"
+      "n. 荣誉，光荣 vt. 尊敬，给予荣誉【英】"
+    ]
+  },
+  {
+    "name": "honor",
+    "usphone": "ˈɔnə",
+    "ukphone": "",
+    "trans": [
+      "n. 荣誉，光荣 vt. 尊敬，给予荣誉【美】"
     ]
   },
   {
@@ -13688,11 +13752,19 @@
     ]
   },
   {
-    "name": "humour (美humor)",
-    "usphone": "ˈhju:mə",
+    "name": "humour",
+    "usphone": "ˈhjuːmə(r)",
     "ukphone": "",
     "trans": [
-      "n.幽默,幽默感"
+      "n.幽默,幽默感【英】"
+    ]
+  },
+  {
+    "name": "humor",
+    "usphone": "ˈhjuːmə(r)",
+    "ukphone": "",
+    "trans": [
+      "n.幽默,幽默感【美】"
     ]
   },
   {
@@ -13752,11 +13824,11 @@
     ]
   },
   {
-    "name": "hurt (hurt, hurt)",
+    "name": "hurt hurt hurt",
     "usphone": "hɜːt",
     "ukphone": "",
     "trans": [
-      "vt. 伤害，受伤；伤人感情"
+      "vt. 伤害，受伤；伤人感情 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -13792,11 +13864,11 @@
     ]
   },
   {
-    "name": "ice--cream",
+    "name": "ice-cream",
     "usphone": "aɪs- kriːm",
     "ukphone": "",
     "trans": [
-      "n. 冰淇淋"
+      "n. 冰淇淋【连字符】"
     ]
   },
   {
@@ -14808,11 +14880,11 @@
     ]
   },
   {
-    "name": "keep (kept, kept)",
+    "name": "keep kept kept",
     "usphone": "kiːp",
     "ukphone": "",
     "trans": [
-      "v. 保持；保存；继续不断 vt. 培育，饲养"
+      "v. 保持；保存；继续不断 vt. 培育，饲养 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -14916,7 +14988,7 @@
     "usphone": "kaɪnd- ˈhɑ:tid",
     "ukphone": "",
     "trans": [
-      "a. 好心的"
+      "a. 好心的【连字符】"
     ]
   },
   {
@@ -14992,11 +15064,11 @@
     ]
   },
   {
-    "name": "know(knew,known)",
+    "name": "know knew known",
     "usphone": "nəʊ",
     "ukphone": "",
     "trans": [
-      "v. 知道，了解；认识；懂得"
+      "v. 知道，了解；认识；懂得 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -15016,15 +15088,23 @@
     ]
   },
   {
-    "name": "labour (美labor)",
+    "name": "labour",
     "usphone": "ˈleɪbə(r)",
     "ukphone": "",
     "trans": [
-      "n. 劳动"
+      "n. 劳动【英】"
     ]
   },
   {
-    "name": "labourer (laborer)",
+    "name": "labor",
+    "usphone": "ˈleɪbə(r)",
+    "ukphone": "",
+    "trans": [
+      "n. 劳动【美】"
+    ]
+  },
+  {
+    "name": "labourer",
     "usphone": "ˈleibərə",
     "ukphone": "",
     "trans": [
@@ -15232,11 +15312,11 @@
     ]
   },
   {
-    "name": "lay (laid, laid)",
+    "name": "lay laid laid",
     "usphone": "leɪ",
     "ukphone": "",
     "trans": [
-      "vt. 放，搁"
+      "vt. 放，搁 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -15248,11 +15328,11 @@
     ]
   },
   {
-    "name": "lead (led, led)",
+    "name": "lead led led",
     "usphone": "liːd",
     "ukphone": "",
     "trans": [
-      "v. 领导，带领 n. 铅"
+      "v. 领导，带领 n. 铅 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -15272,11 +15352,11 @@
     ]
   },
   {
-    "name": "leaf (复 leaves)",
+    "name": "leaf leaves",
     "usphone": "liːf",
     "ukphone": "",
     "trans": [
-      "n. （树，菜）叶"
+      "n. （树，菜）叶【单数 复数】"
     ]
   },
   {
@@ -15296,7 +15376,7 @@
     ]
   },
   {
-    "name": "learn (learnt, learnt；--ed --ed)",
+    "name": "learn",
     "usphone": "lɜːn",
     "ukphone": "",
     "trans": [
@@ -15328,11 +15408,11 @@
     ]
   },
   {
-    "name": "leave (left, left)",
+    "name": "leave left left",
     "usphone": "liːv",
     "ukphone": "",
     "trans": [
-      "v. 离开;把…留下，剩下"
+      "v. 离开;把…留下，剩下 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -15356,7 +15436,7 @@
     "usphone": "left- ˈ hændid",
     "ukphone": "",
     "trans": [
-      "a. 惯用左手的"
+      "a. 惯用左手的【连字符】"
     ]
   },
   {
@@ -15372,7 +15452,7 @@
     "usphone": "left-wɪŋ",
     "ukphone": "",
     "trans": [
-      "n. 左翼的"
+      "n. 左翼的【连字符】"
     ]
   },
   {
@@ -15408,11 +15488,11 @@
     ]
   },
   {
-    "name": "lend (lent, lent)",
+    "name": "lend lent lent",
     "usphone": "lend",
     "ukphone": "",
     "trans": [
-      "vt.借(出),把…借给"
+      "vt.借(出),把…借给 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -15424,11 +15504,11 @@
     ]
   },
   {
-    "name": "less（little的比较级）",
+    "name": "less",
     "usphone": "les",
     "ukphone": "",
     "trans": [
-      "a.& ad. 少于,小于"
+      "a.& ad. 少于,小于（little的比较级）"
     ]
   },
   {
@@ -15440,7 +15520,7 @@
     ]
   },
   {
-    "name": "let (let, let)",
+    "name": "let",
     "usphone": "let",
     "ukphone": "",
     "trans": [
@@ -15460,7 +15540,7 @@
     "usphone": "ˈletə(r)- bɔks",
     "ukphone": "",
     "trans": [
-      "n. 信箱"
+      "n. 信箱【连字符】"
     ]
   },
   {
@@ -15528,19 +15608,19 @@
     ]
   },
   {
-    "name": "lie (lay, lain)",
+    "name": "lie lay lain",
     "usphone": "laɪ",
     "ukphone": "",
     "trans": [
-      "v. 躺;卧;平放;位于n.& vi. 谎言; 说谎"
+      "v. 躺;卧;平放;位于n.& vi. 谎言; 说谎 【一般现在 过去式 过去分词】"
     ]
   },
   {
-    "name": "life (复lives)",
+    "name": "life lives",
     "usphone": "laɪf",
     "ukphone": "",
     "trans": [
-      "n. 生命；生涯；生活；人生；生物"
+      "n. 生命；生涯；生活；人生；生物【单数 复数】"
     ]
   },
   {
@@ -15672,11 +15752,19 @@
     ]
   },
   {
-    "name": "litre (美liter)",
+    "name": "litre",
     "usphone": "liːtə(r)",
     "ukphone": "",
     "trans": [
-      "n. 升； 公升"
+      "n. 升； 公升【英】"
+    ]
+  },
+  {
+    "name": "liter",
+    "usphone": "liːtə(r)",
+    "ukphone": "",
+    "trans": [
+      "n. 升； 公升【美】"
     ]
   },
   {
@@ -15688,11 +15776,11 @@
     ]
   },
   {
-    "name": "little (less, least)",
+    "name": "little less least",
     "usphone": "ˈlɪt(ə)l",
     "ukphone": "",
     "trans": [
-      "a.小的,少的 ad. 很少地, 稍许 n.没有多少,一点"
+      "a.小的,少的 ad. 很少地, 稍许 n.没有多少,一点【比较级 最高级】"
     ]
   },
   {
@@ -15816,11 +15904,11 @@
     ]
   },
   {
-    "name": "lose (lost, lost)",
+    "name": "lose lost lost",
     "usphone": "luːz",
     "ukphone": "",
     "trans": [
-      "vt. 失去，丢失"
+      "vt. 失去，丢失 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -16032,11 +16120,11 @@
     ]
   },
   {
-    "name": "make (made,made)",
+    "name": "make made made",
     "usphone": "meɪk",
     "ukphone": "",
     "trans": [
-      "vt.制造,做;使得 n. 样式；制造"
+      "vt.制造,做;使得 n. 样式；制造 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -16048,11 +16136,11 @@
     ]
   },
   {
-    "name": "man (复men)",
+    "name": "man men",
     "usphone": "mæn",
     "ukphone": "",
     "trans": [
-      "n. 成年男人;人类"
+      "n. 成年男人;人类【单数 复数】"
     ]
   },
   {
@@ -16084,7 +16172,7 @@
     "usphone": "mæn- meɪd",
     "ukphone": "",
     "trans": [
-      "a. 人造的，人工的"
+      "a. 人造的，人工的【连字符】"
     ]
   },
   {
@@ -16104,11 +16192,11 @@
     ]
   },
   {
-    "name": "many (more, most)",
+    "name": "many more most",
     "usphone": "ˈmenɪ",
     "ukphone": "",
     "trans": [
-      "pron. 许多人（或物）a. 许多的"
+      "pron. 许多人（或物）a. 许多的【比较级 最高级】"
     ]
   },
   {
@@ -16328,11 +16416,11 @@
     ]
   },
   {
-    "name": "mean(meant,meant)",
+    "name": "mean meant meant",
     "usphone": "miːn",
     "ukphone": "",
     "trans": [
-      "vt.意思,意指"
+      "vt.意思,意指 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -16424,11 +16512,11 @@
     ]
   },
   {
-    "name": "meet (met, met)",
+    "name": "meet met met",
     "usphone": "miːt",
     "ukphone": "",
     "trans": [
-      "vt./ n. 遇见，见到 会；集会"
+      "vt./ n. 遇见，见到 会；集会 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -16600,11 +16688,19 @@
     ]
   },
   {
-    "name": "metre (美meter)",
+    "name": "metre",
     "usphone": "ˈmi:tə",
     "ukphone": "",
     "trans": [
-      "n. 米，公尺"
+      "n. 米，公尺【英】"
+    ]
+  },
+  {
+    "name": "meter",
+    "usphone": "ˈmi:tə",
+    "ukphone": "",
+    "trans": [
+      "n. 米，公尺【美】"
     ]
   },
   {
@@ -16652,7 +16748,7 @@
     "usphone": "mɪd- ˈɔːtəm",
     "ukphone": "",
     "trans": [
-      "n. 中秋"
+      "n. 中秋【连字符】"
     ]
   },
   {
@@ -16864,11 +16960,11 @@
     ]
   },
   {
-    "name": "mistake (mistook, mistaken)",
+    "name": "mistake mistook mistaken",
     "usphone": "mɪsˈteɪk",
     "ukphone": "",
     "trans": [
-      "n. 错误 vt. 弄错"
+      "n. 错误 vt. 弄错 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -16880,7 +16976,7 @@
     ]
   },
   {
-    "name": "misunderstand (-stood, -stood)",
+    "name": "misunderstand",
     "usphone": "mɪsʌndəˈstænd",
     "ukphone": "",
     "trans": [
@@ -16904,8 +17000,8 @@
     ]
   },
   {
-    "name": "mm (缩) = millimetre",
-    "usphone": "ˈmiliˌmi:tə(r)",
+    "name": "millimetre",
+    "usphone": "ˈmɪlimiːtə(r)",
     "ukphone": "",
     "trans": [
       "n. 毫米"
@@ -17064,11 +17160,11 @@
     ]
   },
   {
-    "name": "more（much或many 的比较级）",
+    "name": "more",
     "usphone": "mɔː(r)",
     "ukphone": "",
     "trans": [
-      "a./ ad.另外的；附加的；较多的再；另外；而且；更 n. 更多的量；另外的一些"
+      "a./ ad.另外的；附加的；较多的再；另外；而且；更 n. 更多的量；另外的一些（much或many 的比较级）"
     ]
   },
   {
@@ -17104,7 +17200,7 @@
     ]
   },
   {
-    "name": "most (much或many 的最高级)",
+    "name": "most",
     "usphone": "məʊst; (US) mɔːst",
     "ukphone": "",
     "trans": [
@@ -17168,7 +17264,7 @@
     ]
   },
   {
-    "name": "mountain(s)",
+    "name": "mountain",
     "usphone": "ˈmaʊntɪn(z)",
     "ukphone": "",
     "trans": [
@@ -17192,11 +17288,11 @@
     ]
   },
   {
-    "name": "mouse (复mice)",
+    "name": "mouse mice",
     "usphone": "maʊs",
     "ukphone": "",
     "trans": [
-      "n. 鼠，耗子；（计算机）鼠标"
+      "n. 鼠，耗子；（计算机）鼠标【单数 复数】"
     ]
   },
   {
@@ -17256,7 +17352,7 @@
     ]
   },
   {
-    "name": "Mr. (mister)",
+    "name": "Mr.",
     "usphone": "ˈmɪstə(r)",
     "ukphone": "",
     "trans": [
@@ -17264,7 +17360,7 @@
     ]
   },
   {
-    "name": "Mrs. (mistress)",
+    "name": "Mrs.",
     "usphone": "ˈmɪsɪz",
     "ukphone": "",
     "trans": [
@@ -17280,11 +17376,11 @@
     ]
   },
   {
-    "name": "much (more，most)",
+    "name": "much more most",
     "usphone": "mʌtʃ",
     "ukphone": "",
     "trans": [
-      "a. 许多的，大量的 ad. 非常；更加 n. 许多，大量，非常"
+      "a. 许多的，大量的 ad. 非常；更加 n. 许多，大量，非常【比较级 最高级】"
     ]
   },
   {
@@ -17576,19 +17672,27 @@
     ]
   },
   {
-    "name": "neighbour (美neighbor)",
+    "name": "neighbour",
     "usphone": "ˈneɪbə(r)",
     "ukphone": "",
     "trans": [
-      "n. 邻居，邻人"
+      "n. 邻居，邻人【英】"
     ]
   },
   {
-    "name": "neighbourhood (美neighborhood)",
+    "name": "neighbor",
+    "usphone": "ˈneɪbə(r)",
+    "ukphone": "",
+    "trans": [
+      "n. 邻居，邻人 【美】"
+    ]
+  },
+  {
+    "name": "neighbourhood",
     "usphone": "ˈneibəhud",
     "ukphone": "",
     "trans": [
-      "n. 四邻；邻近地区"
+      "n. 四邻；邻近地区 (美neighborhood)"
     ]
   },
   {
@@ -17732,7 +17836,7 @@
     "usphone": "naɪt-klʌb",
     "ukphone": "",
     "trans": [
-      "n. 夜总会"
+      "n. 夜总会【连字符】"
     ]
   },
   {
@@ -17776,7 +17880,7 @@
     ]
   },
   {
-    "name": "No.(缩) = number",
+    "name": "number",
     "usphone": "ˈnʌmbə(r)",
     "ukphone": "",
     "trans": [
@@ -17844,7 +17948,7 @@
     "usphone": "nʌn-stɔp",
     "ukphone": "",
     "trans": [
-      "a.& ad.不停的,不断地"
+      "a.& ad.不停的,不断地【连字符】"
     ]
   },
   {
@@ -17852,7 +17956,7 @@
     "usphone": "nɔn-ˈvaɪələnt",
     "ukphone": "",
     "trans": [
-      "a. 非暴力的"
+      "a. 非暴力的【连字符】"
     ]
   },
   {
@@ -18160,7 +18264,7 @@
     ]
   },
   {
-    "name": "Oceania*",
+    "name": "Oceania",
     "usphone": "",
     "ukphone": "",
     "trans": [
@@ -18304,7 +18408,7 @@
     ]
   },
   {
-    "name": "Olympic(s)",
+    "name": "Olympic",
     "usphone": "əˈlɪmpɪk",
     "ukphone": "",
     "trans": [
@@ -18552,15 +18656,23 @@
     ]
   },
   {
-    "name": "organise(美organize)",
-    "usphone": "ˈɔ:gənaiz",
+    "name": "organise",
+    "usphone": "ˈɔːrɡənaɪz",
     "ukphone": "",
     "trans": [
-      "vt. 组织"
+      "vt. 组织【英】"
     ]
   },
   {
-    "name": "organiser (organizer)",
+    "name": "organize",
+    "usphone": "ˈɔːrɡənaɪz",
+    "ukphone": "",
+    "trans": [
+      "vt. 组织【美】"
+    ]
+  },
+  {
+    "name": "organiser",
     "usphone": "ˈɔ:gənaizə",
     "ukphone": "",
     "trans": [
@@ -18736,7 +18848,7 @@
     ]
   },
   {
-    "name": "outward(s)",
+    "name": "outward",
     "usphone": "ˈaʊtwəd",
     "ukphone": "",
     "trans": [
@@ -18832,11 +18944,11 @@
     ]
   },
   {
-    "name": "ox (复oxen)",
+    "name": "ox oxen",
     "usphone": "ɔks",
     "ukphone": "",
     "trans": [
-      "n. 牛；公牛"
+      "n. 牛；公牛【单数 复数】"
     ]
   },
   {
@@ -19148,7 +19260,7 @@
     "usphone": "pɑːt -taɪm",
     "ukphone": "",
     "trans": [
-      "a.& ad. 兼职的； 部分时间的（地）"
+      "a.& ad. 兼职的； 部分时间的（地）【连字符】"
     ]
   },
   {
@@ -19272,19 +19384,19 @@
     ]
   },
   {
-    "name": "P.E.(缩) =physical education",
+    "name": "P.E.",
     "usphone": "piːiː",
     "ukphone": "",
     "trans": [
-      "体育"
+      "体育(缩) =physical education"
     ]
   },
   {
-    "name": "P.C.(缩) =personal computer",
+    "name": "P.C.",
     "usphone": "piːsiː",
     "ukphone": "",
     "trans": [
-      "个人电脑"
+      "个人电脑(缩) =personal computer"
     ]
   },
   {
@@ -19364,7 +19476,7 @@
     "usphone": "ˈpens(ə)l -bɔks",
     "ukphone": "",
     "trans": [
-      "n. 铅笔盒"
+      "n. 铅笔盒【连字符】"
     ]
   },
   {
@@ -19372,7 +19484,7 @@
     "usphone": "pen- friend",
     "ukphone": "",
     "trans": [
-      "n. 笔友"
+      "n. 笔友【连字符】"
     ]
   },
   {
@@ -19576,7 +19688,7 @@
     ]
   },
   {
-    "name": "phenomenon (pl. phenomena)",
+    "name": "phenomenon",
     "usphone": "fɪˈnɔmɪnən; (US) -nɔn-",
     "ukphone": "",
     "trans": [
@@ -19596,7 +19708,7 @@
     "usphone": "fəʊn-buːð",
     "ukphone": "",
     "trans": [
-      "n. 公用电话间"
+      "n. 公用电话间【连字符】"
     ]
   },
   {
@@ -19788,7 +19900,7 @@
     "usphone": "pɪŋ-pɔɡ",
     "ukphone": "",
     "trans": [
-      "n. 乒乓球"
+      "n. 乒乓球【连字符】"
     ]
   },
   {
@@ -20008,7 +20120,7 @@
     ]
   },
   {
-    "name": "p.m./pm, P.M. /PM",
+    "name": "p.m.",
     "usphone": "piːem",
     "ukphone": "",
     "trans": [
@@ -20072,11 +20184,19 @@
     ]
   },
   {
-    "name": "the North (South) Pole",
-    "usphone": "ðə nɔːθpəʊ",
+    "name": "the North Pole",
+    "usphone": "ðə ˌnɔːθ ˈpəʊl",
     "ukphone": "",
     "trans": [
-      "（地球的）极，极地 北（南）极"
+      "（地球的）极，极地 北极"
+    ]
+  },
+  {
+    "name": "the South Pole",
+    "usphone": "ðə ˌsaʊθ ˈpəʊl",
+    "ukphone": "",
+    "trans": [
+      "（地球的）极，极地 南极"
     ]
   },
   {
@@ -20088,7 +20208,7 @@
     ]
   },
   {
-    "name": "policeman (复-men)",
+    "name": "policeman",
     "usphone": "pəˈliːsmən",
     "ukphone": "",
     "trans": [
@@ -20440,7 +20560,7 @@
     ]
   },
   {
-    "name": "practice(s)e",
+    "name": "practice",
     "usphone": "ˈpræktɪs",
     "ukphone": "",
     "trans": [
@@ -20848,11 +20968,11 @@
     ]
   },
   {
-    "name": "programme (美program)",
+    "name": "programme",
     "usphone": "",
     "ukphone": "",
     "trans": [
-      "n. 节目；项目"
+      "n. 节目；项目 (美program)"
     ]
   },
   {
@@ -21136,7 +21256,7 @@
     ]
   },
   {
-    "name": "put (put, put)",
+    "name": "put",
     "usphone": "pʊt",
     "ukphone": "",
     "trans": [
@@ -21536,7 +21656,7 @@
     ]
   },
   {
-    "name": "read (read, read)",
+    "name": "read",
     "usphone": "riːd",
     "ukphone": "",
     "trans": [
@@ -21576,11 +21696,19 @@
     ]
   },
   {
-    "name": "realise (美realize)",
+    "name": "realise",
     "usphone": "ˈrɪəlaɪz",
     "ukphone": "",
     "trans": [
-      "vt.认识到,实现"
+      "vt.认识到,实现【英】"
+    ]
+  },
+  {
+    "name": "realize",
+    "usphone": "ˈriːəlaɪz",
+    "ukphone": "",
+    "trans": [
+      "vt.认识到,实现 【美】"
     ]
   },
   {
@@ -21680,11 +21808,19 @@
     ]
   },
   {
-    "name": "recognise (美recognize)",
+    "name": "recognise",
     "usphone": "ˈrekəɡnaɪz",
     "ukphone": "",
     "trans": [
-      "vt.认出"
+      "vt.认出【英】"
+    ]
+  },
+  {
+    "name": "recognize",
+    "usphone": "ˈrekəɡnaɪz",
+    "ukphone": "",
+    "trans": [
+      "vt.认出【美】"
     ]
   },
   {
@@ -22424,7 +22560,7 @@
     ]
   },
   {
-    "name": "rid (rid, rid / ridded, ridded)",
+    "name": "rid",
     "usphone": "rɪd",
     "ukphone": "",
     "trans": [
@@ -22448,11 +22584,11 @@
     ]
   },
   {
-    "name": "ride (rode, ridden)",
+    "name": "ride rode ridden",
     "usphone": "raɪd",
     "ukphone": "",
     "trans": [
-      "v. 骑（马、自行车）；乘车 n. 乘车旅行"
+      "v. 骑（马、自行车）；乘车 n. 乘车旅行 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -22468,7 +22604,7 @@
     "usphone": "raɪt-hænd",
     "ukphone": "",
     "trans": [
-      "a. 惯用右手的"
+      "a. 惯用右手的【连字符】"
     ]
   },
   {
@@ -22476,15 +22612,15 @@
     "usphone": "raɪt-wɪŋ",
     "ukphone": "",
     "trans": [
-      "n. 右翼"
+      "n. 右翼【连字符】"
     ]
   },
   {
-    "name": "ring (rang, rung)",
+    "name": "ring rang rung",
     "usphone": "rɪŋ",
     "ukphone": "",
     "trans": [
-      "v. （钟、铃等）响；打电话 n. 电话，铃声 n. 环形物（如环、圈、戒指等）"
+      "v. （钟、铃等）响；打电话 n. 电话，铃声 n. 环形物（如环、圈、戒指等） 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -22492,7 +22628,7 @@
     "usphone": "rɪŋ-rəʊd",
     "ukphone": "",
     "trans": [
-      "n. 环形公路"
+      "n. 环形公路【连字符】"
     ]
   },
   {
@@ -22520,11 +22656,11 @@
     ]
   },
   {
-    "name": "rise (rose, risen)",
+    "name": "rise rose risen",
     "usphone": "raɪz",
     "ukphone": "",
     "trans": [
-      "vi. 上升，上涨"
+      "vi. 上升，上涨 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -22784,11 +22920,11 @@
     ]
   },
   {
-    "name": "run (ran, run)",
+    "name": "run ran run",
     "usphone": "rʌn",
     "ukphone": "",
     "trans": [
-      "vi. 跑，奔跑；（颜色）褪色"
+      "vi. 跑，奔跑；（颜色）褪色 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23072,11 +23208,11 @@
     ]
   },
   {
-    "name": "say (said, said)",
+    "name": "say said said",
     "usphone": "seɪ",
     "ukphone": "",
     "trans": [
-      "vt. 说，讲"
+      "vt. 说，讲 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23136,7 +23272,7 @@
     ]
   },
   {
-    "name": "sceptical (AmE skeptical)",
+    "name": "sceptical",
     "usphone": "ˈskeptɪkl",
     "ukphone": "",
     "trans": [
@@ -23188,7 +23324,7 @@
     "usphone": "skuːl-",
     "ukphone": "",
     "trans": [
-      "n.(英)学校毕业生"
+      "n.(英)学校毕业生【连字符】"
     ]
   },
   {
@@ -23440,11 +23576,11 @@
     ]
   },
   {
-    "name": "see (saw, seen)",
+    "name": "see saw seen",
     "usphone": "siː",
     "ukphone": "",
     "trans": [
-      "vt. 看见，看到；领会；拜会"
+      "vt. 看见，看到；领会；拜会 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23464,11 +23600,11 @@
     ]
   },
   {
-    "name": "seek (sought, sought)",
+    "name": "seek sought sought",
     "usphone": "siːk",
     "ukphone": "",
     "trans": [
-      "vt.试图;探寻"
+      "vt.试图;探寻 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23484,7 +23620,7 @@
     "usphone": "siː-sɔː",
     "ukphone": "",
     "trans": [
-      "n. 跷跷板（游戏）"
+      "n. 跷跷板（游戏）【连字符】"
     ]
   },
   {
@@ -23536,11 +23672,11 @@
     ]
   },
   {
-    "name": "sell (sold, sold)",
+    "name": "sell sold sold",
     "usphone": "sel",
     "ukphone": "",
     "trans": [
-      "v. 卖，售"
+      "v. 卖，售 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23552,11 +23688,11 @@
     ]
   },
   {
-    "name": "send (sent, sent)",
+    "name": "send sent sent",
     "usphone": "send",
     "ukphone": "",
     "trans": [
-      "v. 打发，派遣；送，邮寄"
+      "v. 打发，派遣；送，邮寄 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23660,7 +23796,7 @@
     "usphone": "ˈsɜːvɪs-tʃɑːdʒ",
     "ukphone": "",
     "trans": [
-      "n. 服务费,小费"
+      "n. 服务费,小费【连字符】"
     ]
   },
   {
@@ -23672,11 +23808,11 @@
     ]
   },
   {
-    "name": "set (set, set)",
+    "name": "set set set",
     "usphone": "set",
     "ukphone": "",
     "trans": [
-      "vt. 释放，安置 n. 装备，设备"
+      "vt. 释放，安置 n. 装备，设备 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23752,7 +23888,7 @@
     ]
   },
   {
-    "name": "sew (sewed, sewn 或sewed)",
+    "name": "sew",
     "usphone": "səʊ",
     "ukphone": "",
     "trans": [
@@ -23792,19 +23928,19 @@
     ]
   },
   {
-    "name": "shake (shook, shak en)",
+    "name": "shake shook shaken",
     "usphone": "ʃeɪk",
     "ukphone": "",
     "trans": [
-      "v. （使）动摇，震动"
+      "v. （使）动摇，震动 【一般现在 过去式 过去分词】"
     ]
   },
   {
-    "name": "shall (should)",
+    "name": "shall should",
     "usphone": "ʃæl, ʃ(ə)l",
     "ukphone": "",
     "trans": [
-      "v. aux. （表示将来）将要，会；……好吗"
+      "v. aux. （表示将来）将要，会；……好吗 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -23880,15 +24016,15 @@
     ]
   },
   {
-    "name": "pencil- sharpener",
+    "name": "pencil-sharpener",
     "usphone": "ˈpens(ə)l-ˈʃɑːpənə(r)",
     "ukphone": "",
     "trans": [
-      "转笔刀"
+      "转笔刀【连字符】"
     ]
   },
   {
-    "name": "shave (shaved, shaved 或 shaven)",
+    "name": "shave",
     "usphone": "ʃeɪv",
     "ukphone": "",
     "trans": [
@@ -23912,7 +24048,7 @@
     ]
   },
   {
-    "name": "sheep (复sheep)",
+    "name": "sheep",
     "usphone": "ʃiːp",
     "ukphone": "",
     "trans": [
@@ -23928,11 +24064,11 @@
     ]
   },
   {
-    "name": "shelf (复 shelves)",
+    "name": "shelf shelves",
     "usphone": "ʃelf",
     "ukphone": "",
     "trans": [
-      "n. 架子；搁板；格层；礁；陆架"
+      "n. 架子；搁板；格层；礁；陆架【单数 复数】"
     ]
   },
   {
@@ -23952,7 +24088,7 @@
     ]
   },
   {
-    "name": "shine (shone, shone 或-d, -d)",
+    "name": "shine",
     "usphone": "ʃaɪn",
     "ukphone": "",
     "trans": [
@@ -24080,131 +24216,115 @@
     ]
   },
   {
-    "name": "short wave",
-    "usphone": "ʃɔːt",
+    "name": "shortwave",
+    "usphone": "ˈʃɔːtˈweɪv",
     "ukphone": "",
     "trans": [
-      ""
+      "n. 短波"
     ]
   },
   {
-    "name": "[weɪv]",
-    "usphone": "n. 短波",
+    "name": "shoot",
+    "usphone": "[ʃɔt]",
     "ukphone": "",
     "trans": [
-      "shot"
+      "n. 射击，开枪，开炮，射击声；子弹"
     ]
   },
   {
-    "name": "[ʃɔt]",
-    "usphone": "n. 射击，开枪，开炮，射击声；子弹",
+    "name": "should",
+    "usphone": "[ʃɔt]",
     "ukphone": "",
     "trans": [
-      "should"
+      "v. mod. 应当，应该，会 v. aux.会,应该（shall的过去时态）"
     ]
   },
   {
-    "name": "[ʃɔt]",
-    "usphone": "v. mod. 应当，应该，会 v. aux.会,应该（shall的过去时态）",
+    "name": "shoulder",
+    "usphone": "[ˈʃəʊldə(r)]",
     "ukphone": "",
     "trans": [
-      "shoulder"
+      "n. 肩膀,(道路的)路肩"
     ]
   },
   {
-    "name": "[ˈʃəʊldə(r)]",
-    "usphone": "n. 肩膀,(道路的)路肩",
+    "name": "shout",
+    "usphone": "[ˈʃəʊldə(r)]",
     "ukphone": "",
     "trans": [
-      "shout"
+      "n.& v. 喊，高声呼喊"
     ]
   },
   {
-    "name": "[ˈʃəʊldə(r)]",
-    "usphone": "n.& v. 喊，高声呼喊",
+    "name": "show",
+    "usphone": "[ʃəʊ]",
     "ukphone": "",
     "trans": [
-      "show"
+      "n. 展示,展览（会）;演出show"
     ]
   },
   {
-    "name": "[ʃəʊ]",
-    "usphone": "n. 展示,展览（会）;演出",
+    "name": "shower",
+    "usphone": "[ˈʃaʊə(r)]",
     "ukphone": "",
     "trans": [
-      "show"
+      "n. 阵雨；淋浴"
     ]
   },
   {
-    "name": "[ʃəʊ]",
-    "usphone": "(showed, shown 或 showed) v. 给…看,出示,显示",
+    "name": "shrink",
+    "usphone": "[ʃrɪŋk]",
     "ukphone": "",
     "trans": [
-      "shower"
+      "v. 缩小，收缩，减少"
     ]
   },
   {
-    "name": "[ˈʃaʊə(r)]",
-    "usphone": "n. 阵雨；淋浴",
+    "name": "shut",
+    "usphone": "[ʃʌt]",
     "ukphone": "",
     "trans": [
-      "shrink (shrank, shrunk / shrunk, shrunken)"
+      "v. / n. 关上，封闭；禁闭；"
     ]
   },
   {
-    "name": "[ʃrɪŋk]",
-    "usphone": "v. 缩小，收缩，减少",
+    "name": "shuttle",
+    "usphone": "[ˈʃʌt(ə)l]",
     "ukphone": "",
     "trans": [
-      "shut (shut, shut)"
+      "vn. 合拢 （往返与两个定点之间的）（火车汽车飞机）班车/机"
     ]
   },
   {
-    "name": "[ʃʌt]",
-    "usphone": "v. / n. 关上，封闭；禁闭；",
+    "name": "shy",
+    "usphone": "[ʃaɪ]",
     "ukphone": "",
     "trans": [
-      "shuttle"
+      "a. 害羞的"
     ]
   },
   {
-    "name": "[ˈʃʌt(ə)l]",
-    "usphone": "vn. 合拢 （往返与两个定点之间的）（火车汽车飞机）班车/机",
+    "name": "sick",
+    "usphone": "[sɪk]",
     "ukphone": "",
     "trans": [
-      "shyv"
+      "a.有病的,患病的"
     ]
   },
   {
-    "name": "[ʃaɪ]",
-    "usphone": "a. 害羞的",
+    "name": "sickness",
+    "usphone": "[ˈsɪknɪs]",
     "ukphone": "",
     "trans": [
-      "sick"
+      "n. 疾病,（想）呕吐"
     ]
   },
   {
-    "name": "[sɪk]",
-    "usphone": "a.有病,患病的,（想）呕吐",
+    "name": "side",
+    "usphone": "[saɪd]",
     "ukphone": "",
     "trans": [
-      "sickness"
-    ]
-  },
-  {
-    "name": "[ˈsɪknɪs]",
-    "usphone": "n. 疾病",
-    "ukphone": "",
-    "trans": [
-      "side"
-    ]
-  },
-  {
-    "name": "[ˈsɪknɪs]",
-    "usphone": "n. 边，旁边，面，侧面",
-    "ukphone": "",
-    "trans": [
-      "sideroad (AmE sidewalk) n.人行道"
+      "n. 边，旁边，面，侧面"
     ]
   },
   {
@@ -24212,7 +24332,7 @@
     "usphone": "ˈsaɪdweɪz",
     "ukphone": "",
     "trans": [
-      "n. 岔路，旁路"
+      "n.人行道 n. 岔路，旁路"
     ]
   },
   {
@@ -24340,7 +24460,7 @@
     "usphone": "ˈsɪmp(ə)l maɪndɪ",
     "ukphone": "",
     "trans": [
-      "a.纯朴,头脑简单"
+      "a.纯朴,头脑简单【连字符】"
     ]
   },
   {
@@ -24376,11 +24496,11 @@
     ]
   },
   {
-    "name": "sing (sang, sung)",
+    "name": "sing sang sung",
     "usphone": "sɪŋ",
     "ukphone": "",
     "trans": [
-      "v. 唱，唱歌"
+      "v. 唱，唱歌 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -24408,11 +24528,11 @@
     ]
   },
   {
-    "name": "sink (sank, sunk)",
+    "name": "sink sank sunk",
     "usphone": "sɪŋk",
     "ukphone": "",
     "trans": [
-      "vi. 下沉；消沉"
+      "vi. 下沉；消沉 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -24440,11 +24560,11 @@
     ]
   },
   {
-    "name": "sit (sat, sat)",
+    "name": "sit sat sat",
     "usphone": "sɪt",
     "ukphone": "",
     "trans": [
-      "vi. 坐"
+      "vi. 坐 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -24632,11 +24752,11 @@
     ]
   },
   {
-    "name": "sleep (slept, slept)",
+    "name": "sleep slept slept",
     "usphone": "sliːp",
     "ukphone": "",
     "trans": [
-      "vi. 睡觉"
+      "vi. 睡觉 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -24720,7 +24840,7 @@
     ]
   },
   {
-    "name": "smell (smelt, smelt 或-ed,-ed)",
+    "name": "smell",
     "usphone": "smel",
     "ukphone": "",
     "trans": [
@@ -24968,163 +25088,163 @@
     ]
   },
   {
-    "name": "soft sɔft; (US) sɔːft]",
-    "usphone": "a. 软的，柔和的",
-    "ukphone": "",
+    "name": "soft",
+    "usphone": "sɒft",
+    "ukphone": "sɔːft",
     "trans": [
-      "software"
+      "a. 软的，柔和的"
     ]
   },
   {
-    "name": "[sɔft; (US) sɔːft]",
-    "usphone": "n. 软件",
+    "name": "software",
+    "usphone": "software",
     "ukphone": "",
     "trans": [
-      "soft drink"
+      "n. 软件"
     ]
   },
   {
-    "name": "[sɔft drɪŋk]",
-    "usphone": "n. (不含酒精)清凉饮料",
+    "name": "softdrink",
+    "usphone": "[sɔft drɪŋk]",
     "ukphone": "",
     "trans": [
-      "softball"
+      "n. (不含酒精)清凉饮料"
     ]
   },
   {
-    "name": "[ˈsɔftbɔːl]",
-    "usphone": "n. 垒球",
+    "name": "softball",
+    "usphone": "[ˈsɔftbɔːl]",
     "ukphone": "",
     "trans": [
-      "soil"
+      "n. 垒球"
     ]
   },
   {
-    "name": "[sɔɪl]",
-    "usphone": "n. 土壤，土地",
+    "name": "soil",
+    "usphone": "[sɔɪl]",
     "ukphone": "",
     "trans": [
-      "solar"
+      "n. 土壤，土地"
     ]
   },
   {
-    "name": "[ˈsəʊlə(r)]",
-    "usphone": "a. 太阳的",
+    "name": "solar",
+    "usphone": "[ˈsəʊlə(r)]",
     "ukphone": "",
     "trans": [
-      "soldier"
+      "a. 太阳的"
     ]
   },
   {
-    "name": "[ˈsəʊldʒə(r)]",
-    "usphone": "n. 士兵，战士",
+    "name": "soldier",
+    "usphone": "[ˈsəʊldʒə(r)]",
     "ukphone": "",
     "trans": [
-      "solid"
+      "n. 士兵，战士"
     ]
   },
   {
-    "name": "[ˈsɔlɪd]",
-    "usphone": "a. 结实的,固体的 n.固体",
+    "name": "solid",
+    "usphone": "[ˈsɔlɪd]",
     "ukphone": "",
     "trans": [
-      "some"
+      "a. 结实的,固体的 n.固体"
     ]
   },
   {
-    "name": "[sʌm]",
-    "usphone": "a. 一些，若干；有些；某一 pron. 若干，一些",
+    "name": "some",
+    "usphone": "[sʌm]",
     "ukphone": "",
     "trans": [
-      "somebody"
+      "a. 一些，若干；有些；某一 pron. 若干，一些"
     ]
   },
   {
-    "name": "[ˈsʌmbʌdɪ; ˈsʌmbədɪ]",
-    "usphone": "pron. 某人；有人；有名气的人",
+    "name": "somebody",
+    "usphone": "[ˈsʌmbʌdɪ; ˈsʌmbədɪ]",
     "ukphone": "",
     "trans": [
-      "someone"
+      "pron. 某人；有人；有名气的人"
     ]
   },
   {
-    "name": "[ˈsʌmwʌn]",
-    "usphone": "pron. 某一个人",
+    "name": "someone",
+    "usphone": "[ˈsʌmwʌn]",
     "ukphone": "",
     "trans": [
-      "something"
+      "pron. 某一个人"
     ]
   },
   {
-    "name": "[ˈsʌmθɪŋ]",
-    "usphone": "pron. 某事；某物",
+    "name": "something",
+    "usphone": "[ˈsʌmθɪŋ]",
     "ukphone": "",
     "trans": [
-      "sometimes"
+      "pron. 某事；某物"
     ]
   },
   {
-    "name": "[ˈsʌmtaɪmz]",
-    "usphone": "ad. 有时",
+    "name": "sometimes",
+    "usphone": "[ˈsʌmtaɪmz]",
     "ukphone": "",
     "trans": [
-      "somewhere"
+      "ad. 有时"
     ]
   },
   {
-    "name": "[ˈsʌmtaɪmz]",
-    "usphone": "ad. 在某处",
+    "name": "somewhere",
+    "usphone": "[ˈsʌmtaɪmz]",
     "ukphone": "",
     "trans": [
-      "son"
+      "ad. 在某处"
     ]
   },
   {
-    "name": "[sʌn]",
-    "usphone": "n. 儿子",
+    "name": "son",
+    "usphone": "[sʌn]",
     "ukphone": "",
     "trans": [
-      "song"
+      "n. 儿子"
     ]
   },
   {
-    "name": "[sʌn]",
-    "usphone": "n. 歌唱；歌曲",
+    "name": "song",
+    "usphone": "[sʌn]",
     "ukphone": "",
     "trans": [
-      "soon"
+      "n. 歌唱；歌曲"
     ]
   },
   {
-    "name": "[sʌn]",
-    "usphone": "ad. 不久,很快,一会儿",
+    "name": "soon",
+    "usphone": "[sʌn]",
     "ukphone": "",
     "trans": [
-      "sorrow"
+      "ad. 不久,很快,一会儿"
     ]
   },
   {
-    "name": "[ˈsɔrəʊ]",
-    "usphone": "n. 悲伤，悲痛",
+    "name": "sorrow",
+    "usphone": "[ˈsɔrəʊ]",
     "ukphone": "",
     "trans": [
-      "sorry"
+      "n. 悲伤，悲痛"
     ]
   },
   {
-    "name": "[ˈsɔrɪ]",
-    "usphone": "a. 对不起,抱歉;难过的",
+    "name": "sorry",
+    "usphone": "[ˈsɔrɪ]",
     "ukphone": "",
     "trans": [
-      "sort"
+      "a. 对不起,抱歉;难过的"
     ]
   },
   {
-    "name": "[sɔːt]",
-    "usphone": "v",
+    "name": "sort",
+    "usphone": "[sɔːt]",
     "ukphone": "",
     "trans": [
-      "t. 把…分类，拣选 n. 种类，类别"
+      "vt. 把…分类，拣选 n. 种类，类别"
     ]
   },
   {
@@ -25208,7 +25328,7 @@
     ]
   },
   {
-    "name": "sow (sowed, sown 或-ed)",
+    "name": "sow",
     "usphone": "səʊ",
     "ukphone": "",
     "trans": [
@@ -25248,7 +25368,7 @@
     ]
   },
   {
-    "name": "Spain*",
+    "name": "Spain",
     "usphone": "speɪn",
     "ukphone": "",
     "trans": [
@@ -25280,11 +25400,11 @@
     ]
   },
   {
-    "name": "speak (spoke, spoken)",
+    "name": "speak spoke spoken",
     "usphone": "ˈspærəʊ",
     "ukphone": "",
     "trans": [
-      "v. 说，讲；谈话；发言"
+      "v. 说，讲；谈话；发言 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -25360,11 +25480,11 @@
     ]
   },
   {
-    "name": "spend (spent, spent)",
+    "name": "spend spent spent",
     "usphone": "ˈspelɪŋ",
     "ukphone": "",
     "trans": [
-      "v. 度过；花费（钱、时间等）"
+      "v. 度过；花费（钱、时间等） 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -25424,7 +25544,7 @@
     ]
   },
   {
-    "name": "spoken man/ woman (pl. spokemen/ women)",
+    "name": "spokesman",
     "usphone": "ˈspəʊkən mæn",
     "ukphone": "",
     "trans": [
@@ -25616,11 +25736,11 @@
     ]
   },
   {
-    "name": "stand (stood, stood)",
+    "name": "stand stood stood",
     "usphone": "stænd",
     "ukphone": "",
     "trans": [
-      "v. 站；立；起立；坐落；经受；持久"
+      "v. 站；立；起立；坐落；经受；持久 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -25696,7 +25816,7 @@
     ]
   },
   {
-    "name": "statesman/ woman (pl. statesmen/ women)",
+    "name": "statesman",
     "usphone": "ˈsteɪtsmən",
     "ukphone": "",
     "trans": [
@@ -25752,11 +25872,11 @@
     ]
   },
   {
-    "name": "steal (stole, stolen)",
+    "name": "steal stole stolen",
     "usphone": "stiːl",
     "ukphone": "",
     "trans": [
-      "vt. 偷, 窃取"
+      "vt. 偷, 窃取 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -25796,7 +25916,7 @@
     "usphone": "step-ˈmʌðə(r)",
     "ukphone": "",
     "trans": [
-      "n. 继母"
+      "n. 继母【连字符】"
     ]
   },
   {
@@ -25816,11 +25936,11 @@
     ]
   },
   {
-    "name": "stick (stuck, stuck)",
+    "name": "stick stuck stuck",
     "usphone": "stɪk",
     "ukphone": "",
     "trans": [
-      "vi. 粘住，钉住；坚持n. 木棒（棍）,枝条"
+      "vi. 粘住，钉住；坚持n. 木棒（棍）,枝条 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -26040,7 +26160,7 @@
     ]
   },
   {
-    "name": "strike (struck, struck 或stricken)",
+    "name": "strike",
     "usphone": "straɪk",
     "ukphone": "",
     "trans": [
@@ -26560,11 +26680,11 @@
     ]
   },
   {
-    "name": "swear (swore, sworn)",
+    "name": "swear swore sworn",
     "usphone": "sweə(r)",
     "ukphone": "",
     "trans": [
-      "v.咒骂.,诅咒"
+      "v.咒骂.,诅咒 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -26584,11 +26704,11 @@
     ]
   },
   {
-    "name": "sweep(swept,swept)",
+    "name": "sweep swept swept",
     "usphone": "swiːp",
     "ukphone": "",
     "trans": [
-      "v. 扫除，扫"
+      "v. 扫除，扫 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -26600,11 +26720,11 @@
     ]
   },
   {
-    "name": "swell (swelled, swollen)",
+    "name": "swell swelled swollen",
     "usphone": "swel",
     "ukphone": "",
     "trans": [
-      "v. 肿胀"
+      "v. 肿胀 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -26624,11 +26744,11 @@
     ]
   },
   {
-    "name": "swim (swam, swum)",
+    "name": "swim swam swum",
     "usphone": "swɪm",
     "ukphone": "",
     "trans": [
-      "vi. 游泳,游"
+      "vi. 游泳,游 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -26776,11 +26896,11 @@
     ]
   },
   {
-    "name": "take (took, taken)",
+    "name": "take took taken",
     "usphone": "teɪk",
     "ukphone": "",
     "trans": [
-      "vt. 拿；拿走；做；服用；乘坐；花费"
+      "vt. 拿；拿走；做；服用；乘坐；花费 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -26936,7 +27056,7 @@
     ]
   },
   {
-    "name": "teach(taught,taught)",
+    "name": "teach taught taught",
     "usphone": "tiː",
     "ukphone": "",
     "trans": [
@@ -27048,11 +27168,11 @@
     ]
   },
   {
-    "name": "telephone-booth / telephone-box",
+    "name": "telephone-booth",
     "usphone": "",
     "ukphone": "",
     "trans": [
-      "n. 公用电话间"
+      "n. 公用电话间（也可写作 / telephone-box）【连字符】"
     ]
   },
   {
@@ -27072,11 +27192,11 @@
     ]
   },
   {
-    "name": "tell (told, told)",
+    "name": "tell told told",
     "usphone": "tel",
     "ukphone": "",
     "trans": [
-      "vt.告诉,讲述,吩咐"
+      "vt.告诉,讲述,吩咐 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -27280,11 +27400,19 @@
     ]
   },
   {
-    "name": "theatre (美theater)",
+    "name": "theatre",
     "usphone": "ˈθiətə",
     "ukphone": "",
     "trans": [
-      "n. 剧场，戏院"
+      "n. 剧场，戏院 【英】"
+    ]
+  },
+  {
+    "name": "theater",
+    "usphone": "ˈθiətə",
+    "ukphone": "",
+    "trans": [
+      "n. 剧场，戏院 【美】"
     ]
   },
   {
@@ -27408,11 +27536,11 @@
     ]
   },
   {
-    "name": "thief (复thieves)",
+    "name": "thief thieves",
     "usphone": "θiːf",
     "ukphone": "",
     "trans": [
-      "n. 窃贼, 小偷"
+      "n. 窃贼, 小偷【单数 复数】"
     ]
   },
   {
@@ -27432,11 +27560,11 @@
     ]
   },
   {
-    "name": "think(thought, thought)",
+    "name": "think thought thought",
     "usphone": "θɪŋk",
     "ukphone": "",
     "trans": [
-      "v. 想；认为；考虑"
+      "v. 想；认为；考虑 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -27592,11 +27720,11 @@
     ]
   },
   {
-    "name": "throw(threw,thrown)",
+    "name": "throw threw thrown",
     "usphone": "θrəʊ",
     "ukphone": "",
     "trans": [
-      "v.投,掷,扔"
+      "v.投,掷,扔 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -27912,11 +28040,11 @@
     ]
   },
   {
-    "name": "tooth (复 teeth)",
+    "name": "tooth teeth",
     "usphone": "tuːθ",
     "ukphone": "",
     "trans": [
-      "n. 牙齿"
+      "n. 牙齿【单数 复数】"
     ]
   },
   {
@@ -28032,7 +28160,7 @@
     ]
   },
   {
-    "name": "toward(s)",
+    "name": "toward",
     "usphone": "təˈwɔːd",
     "ukphone": "",
     "trans": [
@@ -28480,11 +28608,11 @@
     ]
   },
   {
-    "name": "TV(缩) = television",
+    "name": "TV",
     "usphone": "‚tiːˈviː",
     "ukphone": "",
     "trans": [
-      "n. 电视机"
+      "n. 电视机 television的缩写"
     ]
   },
   {
@@ -28608,11 +28736,19 @@
     ]
   },
   {
-    "name": "tyre (美tire)",
+    "name": "tyre",
     "usphone": "taɪə",
     "ukphone": "",
     "trans": [
-      "n. 轮胎"
+      "n. 轮胎【英】"
+    ]
+  },
+  {
+    "name": "tire",
+    "usphone": "ˈtaɪər",
+    "ukphone": "",
+    "trans": [
+      "n. 轮胎【美】"
     ]
   },
   {
@@ -28624,11 +28760,11 @@
     ]
   },
   {
-    "name": "U.K./ UK(缩) = United Kingdom",
+    "name": "U.K.",
     "usphone": "juː ˈkeɪ",
     "ukphone": "",
     "trans": [
-      "n.英国，联合王国"
+      "n.英国，联合王国（缩写）"
     ]
   },
   {
@@ -28640,11 +28776,11 @@
     ]
   },
   {
-    "name": "U.N./ UN(缩) = the United Nations",
+    "name": "U.N.",
     "usphone": "juː ˈən",
     "ukphone": "",
     "trans": [
-      "n. 联合国"
+      "n. 联合国（缩写）"
     ]
   },
   {
@@ -28736,11 +28872,11 @@
     ]
   },
   {
-    "name": "understand (understood, understood)",
+    "name": "understand understood understood",
     "usphone": "ʌndəˈstænd",
     "ukphone": "",
     "trans": [
-      "v. 懂得;明白;理解"
+      "v. 懂得;明白;理解 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -28752,11 +28888,11 @@
     ]
   },
   {
-    "name": "undertake (undertook, undertaken)",
+    "name": "undertake undertook undertaken",
     "usphone": "ʌndəˈteɪk",
     "ukphone": "",
     "trans": [
-      "v. 承担，从事，负责"
+      "v. 承担，从事，负责 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -29088,7 +29224,7 @@
     ]
   },
   {
-    "name": "U.S.A./USA(缩) = the United States of America",
+    "name": "U.S.A.",
     "usphone": "juː es ˈeɪ",
     "ukphone": "",
     "trans": [
@@ -29616,7 +29752,7 @@
     ]
   },
   {
-    "name": "waiting -room",
+    "name": "waiting-room",
     "usphone": "ˈweɪtɪŋ- rʊm",
     "ukphone": "",
     "trans": [
@@ -29632,7 +29768,7 @@
     ]
   },
   {
-    "name": "wake (woke, woken)",
+    "name": "wake woke woken",
     "usphone": "weɪk",
     "ukphone": "",
     "trans": [
@@ -29768,11 +29904,11 @@
     ]
   },
   {
-    "name": "washing -machine",
+    "name": "washing-machine",
     "usphone": "ˈwɔʃɪŋ- məˈʃiːn",
     "ukphone": "",
     "trans": [
-      "n. 洗衣机"
+      "n. 洗衣机【连字符】"
     ]
   },
   {
@@ -29904,11 +30040,11 @@
     ]
   },
   {
-    "name": "wear (wore, worn)",
+    "name": "wear wore worn",
     "usphone": "weə(r)",
     "ukphone": "",
     "trans": [
-      "v. 穿，戴"
+      "v. 穿，戴 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -30296,7 +30432,7 @@
     ]
   },
   {
-    "name": "will (would)",
+    "name": "will",
     "usphone": "wɪl",
     "ukphone": "",
     "trans": [
@@ -30328,11 +30464,11 @@
     ]
   },
   {
-    "name": "win (won, won)",
+    "name": "win won won",
     "usphone": "wɪn",
     "ukphone": "",
     "trans": [
-      "n. 获胜，赢得"
+      "n. 获胜，赢得 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -30344,11 +30480,11 @@
     ]
   },
   {
-    "name": "wind(wound,wound)",
+    "name": "wind wound wound",
     "usphone": "wɪnd",
     "ukphone": "",
     "trans": [
-      "vt. 缠，连带；蜿蜒，弯曲"
+      "vt. 缠，连带；蜿蜒，弯曲 【一般现在 过去式 过去分词】"
     ]
   },
   {
@@ -30488,19 +30624,19 @@
     ]
   },
   {
-    "name": "wolf（复wolves）",
+    "name": "wolf wolves",
     "usphone": "wʊlf",
     "ukphone": "",
     "trans": [
-      "n. 狼"
+      "n. 狼【单数 复数】"
     ]
   },
   {
-    "name": "woman ( 复women)",
+    "name": "woman women",
     "usphone": "ˈwʊmən",
     "ukphone": "",
     "trans": [
-      "n.妇女女人"
+      "n.妇女女人【单数 复数】"
     ]
   },
   {
@@ -30944,11 +31080,11 @@
     ]
   },
   {
-    "name": "zebra -crossing",
+    "name": "zebra-crossing",
     "usphone": "ˈzebrə-ˈkrɔsɪŋ",
     "ukphone": "",
     "trans": [
-      "人行横道线（斑马线）"
+      "人行横道线（斑马线）【连字符】"
     ]
   },
   {
@@ -30968,11 +31104,11 @@
     ]
   },
   {
-    "name": "zip code(美) =postcode",
+    "name": "zipcode",
     "usphone": "zɪp kəʊd",
     "ukphone": "",
     "trans": [
-      "(英)邮政区号"
+      "(英)邮政区号，也可写作 postcode"
     ]
   },
   {
