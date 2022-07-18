@@ -1,0 +1,74 @@
+[
+  {
+    "name": "ALTER TABLE",
+    "trans": [
+      "ALTER TABLE 用来更新现存表的模式。可以用 CREATE TABLE 来创建一个新表。"
+    ]
+  },
+  {
+    "name": "COMMIT",
+    "trans": [
+      "COMMIT 用来将事务写入数据库。"
+    ]
+  },
+  {
+    "name": "CREATE INDEX",
+    "trans": [
+      "CREATE INDEX 用来为一列或多列创建索引。"
+    ]
+  },
+  {
+    "name": "CREATE TABLE",
+    "trans": [
+      "CREATE TABLE 用来创建新的数据库表。可以用 ALTER TABLE 来更新一个现存表的模式。"
+    ]
+  },
+  {
+    "name": "CREATE VIEW",
+    "trans": [
+      "CREATE VIEW 用来创建一个或多个表的视图。"
+    ]
+  },
+  {
+    "name": "DELETE",
+    "trans": [
+      "DELETE 用来从表中删除一行或多行。"
+    ]
+  },
+  {
+    "name": "DROP",
+    "trans": [
+      "DROP 用来永久性地删除数据库对象（表、视图和索引等）"
+    ]
+  },
+  {
+    "name": "INSERT",
+    "trans": [
+      "INSERT 用来对表添加一个新行。"
+    ]
+  },
+  {
+    "name": "INSERT SELECT",
+    "trans": [
+      "INSERT SELECT 用来将 SELECT 的结果插入到表中。"
+    ]
+  },
+  {
+    "name": "ROLLBACK",
+    "trans": [
+      "ROLLBACK 用来撤销事务块。"
+    ]
+  },
+  {
+    "name": "SELECT",
+    "trans": [
+      "SELECT 用来从一个或多个表（或视图）中检索数据。"
+    ]
+  },
+  {
+    "name": "UPDATE",
+    "trans": [
+      "UPDATE 用来对表中的一行或多行进行更新。"
+    ]
+  }
+]
