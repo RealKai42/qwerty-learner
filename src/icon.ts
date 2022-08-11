@@ -18,6 +18,7 @@ import {
   faExclamation,
   faRandom,
   faRepeat,
+  faRotate,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -41,4 +42,5 @@ library.add(
   faExclamation,
   faRandom,
   faRepeat,
+  faRotate,
 )
