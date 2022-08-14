@@ -117,8 +117,9 @@ const App: React.FC = () => {
     if (wordList === undefined) {
       return
     }
+    // 优先更新数据
+    setCorrectCount((count) => count + wordList.words[order].name.trim().length)
     if (switcherState.loop) {
-      setCorrectCount((count) => count + wordList.words[order].name.trim().length)
       return
     }
     if (order === wordList.words.length - 1) {
@@ -145,7 +146,6 @@ const App: React.FC = () => {
       }
     } else {
       setOrder((order) => order + 1)
-      setCorrectCount((count) => count + wordList.words[order].name.trim().length)
     }
   }
 
