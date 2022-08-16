@@ -83,7 +83,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon="repeat" fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关循环播放单词">
+      <Tooltip content="开关循环播放单词发音">
         <button
           className={`${state.soundLoop ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
