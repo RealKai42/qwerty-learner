@@ -18,17 +18,23 @@ function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronunciation
 }
 
 export default function usePronunciationSound(word: string) {
-  const { pronunciation } = useAppState()
+  const { pronunciation, soundLoop } = useAppState()
   const [isPlaying, setIsPlaying] = useState(false)
 
   const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciation as Exclude<PronunciationType, false>), {
     html5: true,
     format: ['mp3'],
+    loop: soundLoop,
   } as HookOptions)
 
   useEffect(() => {
     if (!sound) return
+    sound.loop(soundLoop)
+    return () => {}
+  }, [soundLoop])
 
+  useEffect(() => {
+    if (!sound) return
     const unListens: Array<() => void> = []
 
     unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
@@ -37,6 +43,7 @@ export default function usePronunciationSound(word: string) {
     unListens.push(addHowlListener(sound, 'playerror', () => setIsPlaying(false)))
 
     return () => {
+      setIsPlaying(false)
       unListens.forEach((unListen) => unListen())
       ;(sound as Howl).unload()
     }

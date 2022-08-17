@@ -44,6 +44,10 @@ export type AppState = {
    * Whether dark mode is enabled
    */
   darkMode: boolean
+  /**
+   * loop play sound until word spells right
+   */
+  soundLoop: boolean
 }
 
 export type AppStateData = {
@@ -77,6 +81,12 @@ export function useSetLoopState(): [status: boolean, setLoop: (state: boolean) =
   const { state, dispatch } = useContext(AppStateContext)
   const setLoop = useCallback((loop: boolean) => dispatch({ ...state, loop }), [state, dispatch])
   return [state.loop, setLoop]
+}
+
+export function useSetSoundLoopState(): [status: boolean, setLoop: (state: boolean) => void] {
+  const { state, dispatch } = useContext(AppStateContext)
+  const setSoundLoop = useCallback((soundLoop: boolean) => dispatch({ ...state, soundLoop }), [state, dispatch])
+  return [state.soundLoop, setSoundLoop]
 }
 
 export function usePhoneticState(): [status: boolean, setPhonetic: (state: boolean) => void] {
@@ -151,6 +161,7 @@ const defaultState: AppState = {
   loop: false,
   phonetic: true,
   darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
+  soundLoop: false,
 }
 
 export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
