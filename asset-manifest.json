@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.8ed35d37.chunk.css",
-    "main.js": "./static/js/main.c56f8be0.chunk.js",
+    "main.js": "./static/js/main.bf831abf.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.34b30200.js",
-    "static/js/2.3b0c0dae.chunk.js": "./static/js/2.3b0c0dae.chunk.js",
+    "static/js/2.64d0f8d9.chunk.js": "./static/js/2.64d0f8d9.chunk.js",
     "static/js/3.c58baffe.chunk.js": "./static/js/3.c58baffe.chunk.js",
     "static/js/4.7140dc0f.chunk.js": "./static/js/4.7140dc0f.chunk.js",
     "index.html": "./index.html",
-    "static/js/2.3b0c0dae.chunk.js.LICENSE.txt": "./static/js/2.3b0c0dae.chunk.js.LICENSE.txt",
+    "static/js/2.64d0f8d9.chunk.js.LICENSE.txt": "./static/js/2.64d0f8d9.chunk.js.LICENSE.txt",
     "static/js/3.c58baffe.chunk.js.LICENSE.txt": "./static/js/3.c58baffe.chunk.js.LICENSE.txt",
     "static/media/alipay.32d63d80.png": "./static/media/alipay.32d63d80.png",
     "static/media/beep.822816e8.wav": "./static/media/beep.822816e8.wav",
@@ -18,8 +18,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.34b30200.js",
-    "static/js/2.3b0c0dae.chunk.js",
+    "static/js/2.64d0f8d9.chunk.js",
     "static/css/main.8ed35d37.chunk.css",
-    "static/js/main.c56f8be0.chunk.js"
+    "static/js/main.bf831abf.chunk.js"
   ]
 }
