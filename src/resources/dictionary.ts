@@ -646,7 +646,7 @@ export const dictionaries: Dictionary[] = [
   {
     id: 'ieltsWang3',
     name: '雅思王C3',
-    description: '雅思王-雅思听力特别名词语料库',
+    description: '雅思听力特别名词语料库',
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_3.json',
     length: 1135,
@@ -654,7 +654,7 @@ export const dictionaries: Dictionary[] = [
   {
     id: 'ieltsWang4',
     name: '雅思王C4',
-    description: '雅思王-雅思听力形容词副词语料库',
+    description: '雅思听力形容词副词语料库',
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_4.json',
     length: 346,
@@ -662,7 +662,7 @@ export const dictionaries: Dictionary[] = [
   {
     id: 'ieltsWang5',
     name: '雅思王C5',
-    description: '雅思王-吞音连读混合训练语料库',
+    description: '吞音连读混合训练语料库',
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_5.json',
     length: 1569,
@@ -670,7 +670,7 @@ export const dictionaries: Dictionary[] = [
   {
     id: 'ieltsWang11',
     name: '雅思王C11',
-    description: '雅思王-综合测试',
+    description: '综合测试',
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_11.json',
     length: 1738,
