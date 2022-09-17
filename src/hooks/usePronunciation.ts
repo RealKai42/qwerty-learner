@@ -31,6 +31,7 @@ export default function usePronunciationSound(word: string) {
     if (!sound) return
     sound.loop(soundLoop)
     return () => {}
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [soundLoop])
 
   useEffect(() => {
