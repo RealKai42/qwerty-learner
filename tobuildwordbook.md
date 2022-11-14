@@ -1,4 +1,4 @@
-## 如何做出自己的词单
+## 如何导入自己的词单
 > 这是一种方法 有更方便的可以继续分享
 
 ### 制作 csv
@@ -26,6 +26,7 @@ name | trans
 
 使用`apple`的 `number表格` 删除B列，保留`[翻译]`这一列，同时务必确保只有`name`和 `trans`这两列
 保存导出为`csv`格式
+
 ### STEP3 csv to json
 
 工具：`https://csvjson.com/csv2json`
