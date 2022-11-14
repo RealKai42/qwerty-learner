@@ -99,6 +99,10 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 <br />
 <br />
 
+### 如何添加属于自己的生词本
+
+[点击我生成属于自己的生词本](./tobuildwordbook.md)
+
 ## 🏆 荣誉
 
 - Github 全球趋势榜上榜项目
