@@ -101,7 +101,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 
 ### 如何导入属于自己的生词本
 
-[导入属于自己的生词本的方法](./tobuildwordbook.md)
+[导入属于自己的生词本的方法](./docs/tobuildwordbook.md)
 
 ## 🏆 荣誉
 
