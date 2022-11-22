@@ -131,6 +131,7 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 - 人教版英语 3-9 年级
 - 王陆雅思王听力语料库 [@Saigyouji_WKKun](https://github.com/ggehuliang)
 - 日语常见词、N1 ～ N5 [@xiaojia](https://github.com/wetery)
+- CEFR词单 A等级-B等级 持续更新中[@poshoi](https://github.com/poshoi)
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出。
 <br />

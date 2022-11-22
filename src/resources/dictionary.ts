@@ -20,6 +20,7 @@ export const dictionaries: Dictionary[] = [
   { id: 'kaoyan', name: '考研', description: '研究生英语入学考试词库', category: '英语学习', url: './dicts/KaoYan_3_T.json', length: 3728 },
   { id: 'level4', name: '专四', description: '英语专业四级词库', category: '英语学习', url: './dicts/Level4luan_2_T.json', length: 4025 },
   { id: 'level8', name: '专八', description: '英语专业八级词库', category: '英语学习', url: './dicts/Level8luan_2_T.json', length: 12197 },
+  { id: 'cefr1', name: 'CEFR-1', description: 'CEFR A1-A2等级 简单词', category: 'CEFR', url: './dicts/CEFR_1.json', length: 761 },
   {
     id: 'gaokao3500',
     name: '高考 3500 词',
