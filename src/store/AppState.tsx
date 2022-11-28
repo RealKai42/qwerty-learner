@@ -48,6 +48,10 @@ export type AppState = {
    * loop play sound until word spells right
    */
   soundLoop: boolean
+  /**
+   * each chapter word count
+   */
+  chapterWordCount: number
 }
 
 export type AppStateData = {
@@ -151,6 +155,12 @@ export function useDarkMode(): [darkMode: boolean, setDarkMode: (state: boolean)
   return [state.darkMode, setDarkMode]
 }
 
+export function useChapterWordCountState(): [status: number, setChapterWordCount: (state: number) => void] {
+  const { state, dispatch } = useContext(AppStateContext)
+  const setChapterWordCount = useCallback((chapterWordCount: number) => dispatch({ ...state, chapterWordCount }), [state, dispatch])
+  return [state.chapterWordCount, setChapterWordCount]
+}
+
 const defaultState: AppState = {
   sound: true,
   dictionaries,
@@ -162,6 +172,7 @@ const defaultState: AppState = {
   phonetic: true,
   darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
   soundLoop: false,
+  chapterWordCount: 20,
 }
 
 export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {

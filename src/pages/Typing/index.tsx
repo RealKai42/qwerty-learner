@@ -8,6 +8,7 @@ import Modals from 'components/Modals'
 import Loading from 'components/Loading'
 import Phonetic from 'components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
+import ChapterWordCountSwitcher from './ChapterWordCountSwitcher'
 import { isLegal, IsDesktop } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useModals } from 'hooks/useModals'
@@ -17,6 +18,7 @@ import { useWordList } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
+import useChapterWordCountState from './hooks/useChapterWordCount'
 import Tooltip from 'components/Tooltip'
 import { useRandomState } from 'store/AppState'
 
@@ -30,6 +32,7 @@ const App: React.FC = () => {
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
+  const [chapterWordCount, chapterWordCountDispatch] = useChapterWordCountState()
   const [random] = useRandomState()
 
   const {
@@ -156,6 +159,13 @@ const App: React.FC = () => {
     [pronunciationDispatch],
   )
 
+  const changeChapterWordCount = useCallback(
+    (state: number) => {
+      chapterWordCountDispatch(state)
+    },
+    [chapterWordCountDispatch],
+  )
+
   return (
     <>
       {modalState && (
@@ -186,6 +196,7 @@ const App: React.FC = () => {
               </NavLink>
             </Tooltip>
             <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
+            <ChapterWordCountSwitcher state={chapterWordCount} changeChapterWordCountState={changeChapterWordCount} />
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
             <Tooltip content="快捷键 Enter">
               <button

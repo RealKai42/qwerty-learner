@@ -1,7 +1,7 @@
 import cet4 from 'assets/CET4_T.json'
 import { shuffle } from 'lodash'
 import { useMemo } from 'react'
-import { useSelectedChapter, useSelectedDictionary, useRandomState } from 'store/AppState'
+import { useSelectedChapter, useSelectedDictionary, useRandomState, useChapterWordCountState } from 'store/AppState'
 import useSWR from 'swr'
 
 export type Word = {
@@ -10,8 +10,6 @@ export type Word = {
   usphone: string
   ukphone: string
 }
-
-const numWordsPerChapter = 20
 
 export type UseWordListResult = {
   dictName: string
@@ -30,9 +28,10 @@ export function useWordList(): UseWordListResult | undefined {
   const [random] = useRandomState()
   const [currentChapter, setCurrentChapter] = useSelectedChapter()
   const { data: wordList } = useSWR([selectedDictionary.id, selectedDictionary.url], fetchWordList)
+  const [numWordsPerChapter] = useChapterWordCountState()
   const words = useMemo(
     () => (wordList ? wordList.words.slice(currentChapter * numWordsPerChapter, (currentChapter + 1) * numWordsPerChapter) : []),
-    [wordList, currentChapter],
+    [wordList, currentChapter, numWordsPerChapter],
   )
   const shuffleWords = useMemo(() => (random ? shuffle(words) : words), [random, words])
   return wordList === undefined
@@ -51,7 +50,7 @@ type WordList = {
   totalChapters: number
 }
 
-async function fetchWordList(id: string, url: string): Promise<WordList> {
+async function fetchWordList(id: string, url: string, numWordsPerChapter: number): Promise<WordList> {
   if (id === 'cet4') {
     return { words: cet4, totalChapters: Math.ceil(cet4.length / numWordsPerChapter) }
   } else {
