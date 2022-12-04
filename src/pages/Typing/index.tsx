@@ -212,6 +212,7 @@ const App: React.FC = () => {
                   <Word
                     key={`word-${wordList.words[order].name}-${order}`}
                     word={wordList.words[order].name}
+                    wordDict={wordList.words[order]}
                     onFinish={onFinish}
                     isStart={isStart}
                     isLoop={switcherState.loop}

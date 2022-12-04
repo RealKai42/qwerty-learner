@@ -8,7 +8,14 @@ import { useAppState } from '../../store/AppState'
 
 const EXPLICIT_SPACE = '␣'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, isLoop, wordVisible = true }) => {
+export type WordDict = {
+  name: string
+  trans: string[]
+  usphone: string
+  ukphone: string
+}
+
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', wordDict = { trans: [] }, onFinish, isStart, isLoop, wordVisible = true }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -98,6 +105,13 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
   }, [inputWord, word])
 
   const playWordSound = pronunciation !== false
+  const pronWord = () => {
+    if (pronunciation !== 'jap') {
+      return originWord
+    }
+    const japWord = wordDict?.trans[0].split('--')[1]
+    return japWord === undefined ? originWord : japWord
+  }
 
   return (
     <div className="flex justify-center pt-4 pb-1">
@@ -115,7 +129,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
             )
           })}
         </div>
-        {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
+        {playWordSound && <WordSound word={pronWord()} inputWord={inputWord} className={`${style['word-sound']}`} />}
       </div>
     </div>
   )
@@ -123,6 +137,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
 
 export type WordProps = {
   word: string
+  wordDict: WordDict
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
