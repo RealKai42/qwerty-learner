@@ -185,7 +185,9 @@ const App: React.FC = () => {
                 {wordList.dictName} 第 {wordList.chapter + 1} 章
               </NavLink>
             </Tooltip>
-            <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
+            <Tooltip content="发音切换">
+              <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
+            </Tooltip>
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
             <Tooltip content="快捷键 Enter">
               <button
