@@ -23,7 +23,7 @@ const GalleryPage: React.FC = () => {
       <Header>
         <Tooltip content="快捷键 Enter or Esc">
           <NavLink className="bg-indigo-400 text-white dark:text-opacity-80 text-lg px-6 py-1 rounded-lg focus:outline-none" to="/">
-            返回练习
+            完成选择
           </NavLink>
         </Tooltip>
       </Header>
