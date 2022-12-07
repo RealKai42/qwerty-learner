@@ -8,7 +8,7 @@ const WordSound: React.FC<WordSoundProps> = React.memo(({ word, className, input
   const { play, stop, isPlaying } = usePronunciationSound(word)
 
   useHotkeys(
-    'ctrl+j',
+    'meta+j',
     (e) => {
       e.preventDefault()
       stop()
@@ -34,7 +34,7 @@ const WordSound: React.FC<WordSoundProps> = React.memo(({ word, className, input
   }, [play, stop])
 
   return (
-    <Tooltip content="朗读发音（Ctrl + J）" className={className}>
+    <Tooltip content="朗读发音（Ctrl/Cmd + J）" className={className}>
       <SoundIcon animated={isPlaying} {...rest} onClick={handleClickSoundIcon} />
     </Tooltip>
   )

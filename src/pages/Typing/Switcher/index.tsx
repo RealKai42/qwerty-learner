@@ -11,7 +11,7 @@ export type SwitcherPropsType = {
 
 const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
   useHotkeys(
-    'ctrl+m',
+    'meta+m',
     (e) => {
       e.preventDefault()
       dispatch('sound')
@@ -19,7 +19,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     [dispatch],
   )
   useHotkeys(
-    'ctrl+v',
+    'meta+v',
     (e) => {
       e.preventDefault()
       dispatch('wordVisible')
@@ -27,7 +27,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     [dispatch],
   )
   useHotkeys(
-    'ctrl+p',
+    'meta+p',
     (e) => {
       e.preventDefault()
       dispatch('phonetic')
@@ -35,7 +35,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     [dispatch],
   )
   useHotkeys(
-    'ctrl+u',
+    'meta+u',
     (e) => {
       e.preventDefault()
       dispatch('random')
@@ -43,7 +43,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     [dispatch],
   )
   useHotkeys(
-    'ctrl+d',
+    'meta+d',
     (e) => {
       e.preventDefault()
       dispatch('darkMode')
@@ -51,7 +51,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
     [dispatch],
   )
   useHotkeys(
-    'ctrl+l',
+    'meta+l',
     (e) => {
       e.preventDefault()
       dispatch('loop')
@@ -61,7 +61,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
 
   return (
     <div className="flex items-center justify-center space-x-3">
-      <Tooltip content="开关单词乱序（Ctrl + U）">
+      <Tooltip content="开关单词乱序（Ctrl/Cmd + U）">
         <button
           className={`${state.random ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -72,7 +72,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon="random" fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关单个单词循环（Ctrl + L）">
+      <Tooltip content="开关单个单词循环（Ctrl/Cmd + L）">
         <button
           className={`${state.loop ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -94,7 +94,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon={'rotate'} fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关键盘声音（Ctrl + M）">
+      <Tooltip content="开关键盘声音（Ctrl/Cmd + M）">
         <button
           className={`${state.sound ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -105,7 +105,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon={state.sound ? 'volume-up' : 'volume-mute'} fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关英语显示（Ctrl + V）">
+      <Tooltip content="开关英语显示（Ctrl/Cmd + V）">
         <button
           className={`${state.wordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -116,7 +116,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon={state.wordVisible ? 'eye' : 'eye-slash'} fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关音标显示（Ctrl + P）">
+      <Tooltip content="开关音标显示（Ctrl/Cmd + P）">
         <button
           className={`${state.phonetic ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
@@ -127,7 +127,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
           <FontAwesomeIcon icon="assistive-listening-systems" fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关深色模式（Ctrl + D）">
+      <Tooltip content="开关深色模式（Ctrl/Cmd + D）">
         <button
           className={`text-indigo-400 text-lg focus:outline-none`}
           onClick={(e) => {
