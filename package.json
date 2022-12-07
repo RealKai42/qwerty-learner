@@ -27,6 +27,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "firebase": "^9.14.0",
     "howler": "^2.2.3",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
