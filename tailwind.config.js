@@ -29,5 +29,4 @@ module.exports = {
     },
   },
   plugins: [],
-  safelist: ['bg-indigo-200', 'bg-indigo-300', 'bg-indigo-500', 'dark:bg-indigo-300', 'dark:bg-indigo-400', 'dark:bg-indigo-500'],
 }
