@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export type ProgressProps = {
   order: number
@@ -6,8 +6,8 @@ export type ProgressProps = {
 }
 
 const Progress: React.FC<ProgressProps> = ({ order, wordsLength }) => {
-  const [progress, setProgress] = React.useState<number>(0)
-  const [phase, setPhase] = React.useState<number>(0)
+  const [progress, setProgress] = useState<number>(0)
+  const [phase, setPhase] = useState<number>(0)
 
   const colorSwitcher: { [key: number]: string } = {
     0: 'bg-indigo-200 dark:bg-indigo-300',
@@ -16,11 +16,11 @@ const Progress: React.FC<ProgressProps> = ({ order, wordsLength }) => {
   }
 
   useEffect(() => {
-    const calcResult = Math.floor((order / wordsLength) * 100)
-    setProgress(calcResult > 100 ? 100 : calcResult)
-    const colorPhase = Math.floor(progress / 33.4)
+    const newProgress = Math.floor((order / wordsLength) * 100)
+    setProgress(newProgress)
+    const colorPhase = Math.floor(newProgress / 33.4)
     setPhase(colorPhase)
-  }, [order, wordsLength, progress])
+  }, [order, wordsLength])
 
   return (
     <div className="relative pt-1 w-1/4 mt-auto">
@@ -28,7 +28,7 @@ const Progress: React.FC<ProgressProps> = ({ order, wordsLength }) => {
         <div
           style={{ width: `${progress}%` }}
           className={`rounded-large shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center transition-all duration-300 ${
-            colorSwitcher[phase] ?? 0
+            colorSwitcher[phase] ?? 'bg-indigo-200 dark:bg-indigo-300'
           }`}
         ></div>
       </div>
