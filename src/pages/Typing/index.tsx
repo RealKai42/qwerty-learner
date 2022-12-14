@@ -19,6 +19,7 @@ import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
 import { useRandomState } from 'store/AppState'
+import Progress from './Progress'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -222,6 +223,7 @@ const App: React.FC = () => {
                   <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
                 </div>
               )}
+              {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
             </div>
           </Main>
