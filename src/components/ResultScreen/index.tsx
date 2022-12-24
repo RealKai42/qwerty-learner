@@ -90,9 +90,11 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                 leaveTo="opacity-0"
               >
                 <div className="flex-col text-white mt-28">
-                  <div className="flex justify-center text-3xl gap-10">
-                    <span>{dictName}</span>
-                    <span>第{(chapter as number) + 1}章</span>
+                  <div className="text-3xl grid grid-cols-2 gap-20">
+                    <div className="flex justify-end">
+                      <span>{dictName}</span>
+                    </div>
+                    <span>第 {(chapter as number) + 1} 章</span>
                   </div>
                   <div className="flex justify-center font-mono text-9xl mt-5 font-bold">Chapter cleared</div>
                   <div className="flex justify-center text-2xl mt-5">已完成本章节</div>
