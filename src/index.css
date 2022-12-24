@@ -49,3 +49,11 @@ body,
 .customized-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
+.rounded-full {
+  border-radius: 1.25rem;
+}
+
+.animate-longpulse {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

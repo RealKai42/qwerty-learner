@@ -4,13 +4,11 @@ import Main from 'components/Main'
 import Word from 'components/Word'
 import Translation from 'components/Translation'
 import Speed from 'components/Speed'
-import Modals from 'components/Modals'
 import Loading from 'components/Loading'
 import Phonetic from 'components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
 import { isLegal, IsDesktop } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
-import { useModals } from 'hooks/useModals'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
 import { useWordList } from './hooks/useWordList'
@@ -20,6 +18,7 @@ import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
 import { useRandomState } from 'store/AppState'
 import Progress from './Progress'
+import ResultScreen from 'components/ResultScreen'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -32,23 +31,8 @@ const App: React.FC = () => {
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
-
-  const {
-    modalState,
-    title: modalTitle,
-    content: modalContent,
-    firstButton: modalFirstBtn,
-    secondButton: modalSecondBtn,
-    thirdButton: modalThirdBtn,
-    thirdBtnHotkey,
-    setThirdBtnHotkey,
-    firstButtonOnclick: modalFirstBtnOnclick,
-    secondButtonOnclick: modalSecondBtnOnclick,
-    thirdButtonOnclick: modalThirdBtnOnclick,
-    setModalState,
-    setMessage: setModalMessage,
-    setHandler: setModalHandler,
-  } = useModals(false, '提示')
+  const [resultscreenState, setResultscreenState] = useState<boolean>(false)
+  const [resetChapterFlag, setResetChapterFlag] = useState<boolean>(false)
 
   useEffect(() => {
     // reset order when random change
@@ -69,11 +53,11 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (modalState === false) {
+      if (resultscreenState === false) {
         setIsStart((isStart) => !isStart)
       }
     },
-    [modalState],
+    [resultscreenState],
   )
 
   useEffect(() => {
@@ -105,15 +89,6 @@ const App: React.FC = () => {
     }
   }, [isStart])
 
-  const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
-    return () => {
-      setOrder(order)
-      wordList?.setChapterNumber(chapter)
-      setModalState(modalState)
-      setIsStart(true)
-    }
-  }
-
   const onFinish = () => {
     if (wordList === undefined) {
       return
@@ -127,23 +102,10 @@ const App: React.FC = () => {
       setIsStart(false)
       // 用户完成当前章节
       if (wordList.chapter === wordList.chapterListLength - 1) {
-        setModalState(true)
-        setModalMessage('提示', '您已完成最后一个章节', '重置到第一章节', '重复本章节', '默写本章节')
-        setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(0, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
-          modalHandlerGenerator(wordList.chapter, 0, false)()
-          switcherStateDispatch('wordVisible', false)
-          setIsStart(true)
-        })
+        setResultscreenState(true)
+        setResetChapterFlag(true)
       } else {
-        setModalState(true)
-        setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节', '默写本章节')
-        setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(wordList.chapter + 1, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
-          modalHandlerGenerator(wordList.chapter, 0, false)()
-          switcherStateDispatch('wordVisible', false)
-          setIsStart(true)
-        })
+        setResultscreenState(true)
       }
     } else {
       setOrder((order) => order + 1)
@@ -159,18 +121,27 @@ const App: React.FC = () => {
 
   return (
     <>
-      {modalState && (
-        <Modals
-          state={modalState}
-          title={modalTitle}
-          content={modalContent}
-          firstButton={modalFirstBtn}
-          secondButton={modalSecondBtn}
-          thirdButton={modalThirdBtn}
-          thirdButtonHotkey={thirdBtnHotkey}
-          firstButtonOnclick={modalFirstBtnOnclick}
-          secondButtonOnclick={modalSecondBtnOnclick}
-          thirdButtonOnclick={modalThirdBtnOnclick}
+      {resultscreenState && (
+        <ResultScreen
+          show={resultscreenState}
+          correctCount={correctCount}
+          inputCount={inputCount}
+          setOrder={setOrder}
+          setIsStart={setIsStart}
+          setResultscreenState={setResultscreenState}
+          AddChapter={() => {
+            wordList?.setChapterNumber(wordList.chapter + 1)
+          }}
+          ResetChapter={() => {
+            wordList?.setChapterNumber(0)
+          }}
+          resetChapterFlag={resetChapterFlag}
+          setResetChapterFlag={setResetChapterFlag}
+          setInvisible={() => {
+            switcherStateDispatch('wordVisible', false)
+          }}
+          dictName={wordList?.dictName}
+          chapter={wordList?.chapter}
         />
       )}
       {wordList === undefined ? (
