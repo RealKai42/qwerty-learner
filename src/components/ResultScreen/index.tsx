@@ -63,7 +63,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
       <Transition
         appear={true}
         show={show}
-        enter="ease-in duration-100"
+        enter="ease-in duration-200"
         enterFrom="opacity-0 "
         enterTo="opacity-100 "
         leave="ease-in duration-100"
