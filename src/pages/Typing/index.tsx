@@ -4,13 +4,11 @@ import Main from 'components/Main'
 import Word from 'components/Word'
 import Translation from 'components/Translation'
 import Speed from 'components/Speed'
-import Modals from 'components/Modals'
 import Loading from 'components/Loading'
 import Phonetic from 'components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
 import { isLegal, IsDesktop } from 'utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
-import { useModals } from 'hooks/useModals'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
 import { useWordList } from './hooks/useWordList'
@@ -20,35 +18,37 @@ import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
 import { useRandomState } from 'store/AppState'
 import Progress from './Progress'
+import ResultScreen from 'components/ResultScreen'
+import { useStopwatch } from 'react-timer-hook'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
-
   const [inputCount, setInputCount] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
-
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
+  //updated for ResultScreen
+  const [correctFlag, setCorrectFlag] = useState<number[]>([])
+  const [inputCountLastTime, setInputCountLastTime] = useState<number>(0)
+  const [incorrectWords, setIncorrectWords] = useState<string[]>([])
+  const [incorrectTranslations, setIncorrectTranslations] = useState<string[]>([])
+  //combine dictName and 'chapter+1' to get the chapter name
+  /*   const [dictNameCombined, setDictNameCombined] = useState<string>('') */
+  //copied from Speed
+  const { seconds, minutes, hours, days, start, pause } = useStopwatch({ autoStart: false })
+  const time = seconds + minutes * 60 + hours * 60 * 60 + days * 12 * 60 * 60
+  const secondsStirng = seconds < 10 ? '0' + seconds : seconds + ''
+  const minutesStirng = minutes < 10 ? '0' + minutes : minutes + ''
+  const timeString = minutesStirng + ':' + secondsStirng
+  const speed = (correctCount / (time === 0 ? 1 : time)).toFixed(2)
+  useEffect(() => {
+    isStart ? start() : pause()
+  }, [isStart, start, pause])
 
-  const {
-    modalState,
-    title: modalTitle,
-    content: modalContent,
-    firstButton: modalFirstBtn,
-    secondButton: modalSecondBtn,
-    thirdButton: modalThirdBtn,
-    thirdBtnHotkey,
-    setThirdBtnHotkey,
-    firstButtonOnclick: modalFirstBtnOnclick,
-    secondButtonOnclick: modalSecondBtnOnclick,
-    thirdButtonOnclick: modalThirdBtnOnclick,
-    setModalState,
-    setMessage: setModalMessage,
-    setHandler: setModalHandler,
-  } = useModals(false, '提示')
+  const [ResultScreenState, setResultScreenState] = useState<boolean>(false)
 
   useEffect(() => {
     // reset order when random change
@@ -69,11 +69,11 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (modalState === false) {
+      if (ResultScreenState === false) {
         setIsStart((isStart) => !isStart)
       }
     },
-    [modalState],
+    [ResultScreenState],
   )
 
   useEffect(() => {
@@ -105,21 +105,32 @@ const App: React.FC = () => {
     }
   }, [isStart])
 
-  const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
-    return () => {
-      setOrder(order)
-      wordList?.setChapterNumber(chapter)
-      setModalState(modalState)
-      setIsStart(true)
-    }
-  }
-
   const onFinish = () => {
     if (wordList === undefined) {
       return
     }
     // 优先更新数据
     setCorrectCount((count) => count + wordList.words[order].name.trim().length)
+    // 更新正确率
+
+    if (inputCount - inputCountLastTime === wordList.words[order].name.trim().length) {
+      setCorrectFlag((correctFlag) => [...correctFlag, 0])
+    } else if (inputCount - inputCountLastTime - wordList.words[order].name.trim().length < 3) {
+      setCorrectFlag((correctFlag) => [...correctFlag, 1])
+      //store incorrect words to incorrectWords
+      setIncorrectWords((incorrectWords) => [...incorrectWords, wordList.words[order].name])
+      //store incorrect translations to incorrectTranslations
+      setIncorrectTranslations((incorrectTranslations) => [...incorrectTranslations, wordList.words[order].trans.join(', ')])
+    } else {
+      setCorrectFlag((correctFlag) => [...correctFlag, 2])
+      //store incorrect words to incorrectWords
+      setIncorrectWords((incorrectWords) => [...incorrectWords, wordList.words[order].name])
+      //store incorrect translations to incorrectTranslations
+      setIncorrectTranslations((incorrectTranslations) => [...incorrectTranslations, wordList.words[order].trans.join(', ')])
+    }
+
+    setInputCountLastTime(inputCount)
+
     if (switcherState.loop) {
       return
     }
@@ -127,23 +138,9 @@ const App: React.FC = () => {
       setIsStart(false)
       // 用户完成当前章节
       if (wordList.chapter === wordList.chapterListLength - 1) {
-        setModalState(true)
-        setModalMessage('提示', '您已完成最后一个章节', '重置到第一章节', '重复本章节', '默写本章节')
-        setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(0, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
-          modalHandlerGenerator(wordList.chapter, 0, false)()
-          switcherStateDispatch('wordVisible', false)
-          setIsStart(true)
-        })
+        setResultScreenState(true)
       } else {
-        setModalState(true)
-        setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节', '默写本章节')
-        setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(wordList.chapter + 1, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
-          modalHandlerGenerator(wordList.chapter, 0, false)()
-          switcherStateDispatch('wordVisible', false)
-          setIsStart(true)
-        })
+        setResultScreenState(true)
       }
     } else {
       setOrder((order) => order + 1)
@@ -157,21 +154,39 @@ const App: React.FC = () => {
     [pronunciationDispatch],
   )
 
+  const addChapter = useCallback(() => {
+    if (wordList === undefined) {
+      return
+    }
+    wordList.setChapterNumber(wordList.chapter + 1)
+  }, [wordList])
+
+  const setInvisible = useCallback(() => {
+    switcherStateDispatch('wordVisible', false)
+  }, [switcherStateDispatch])
+
   return (
     <>
-      {modalState && (
-        <Modals
-          state={modalState}
-          title={modalTitle}
-          content={modalContent}
-          firstButton={modalFirstBtn}
-          secondButton={modalSecondBtn}
-          thirdButton={modalThirdBtn}
-          thirdButtonHotkey={thirdBtnHotkey}
-          firstButtonOnclick={modalFirstBtnOnclick}
-          secondButtonOnclick={modalSecondBtnOnclick}
-          thirdButtonOnclick={modalThirdBtnOnclick}
-        />
+      {ResultScreenState && (
+        <ResultScreen
+          resetOrder={() => {
+            setOrder(0)
+          }}
+          setStart={() => {
+            setIsStart(true)
+          }}
+          setInvisible={setInvisible}
+          addChapter={addChapter}
+          setResultScreenState={setResultScreenState}
+          speed={speed}
+          timeString={timeString}
+          correctFlag={correctFlag}
+          setCorrectFlag={setCorrectFlag}
+          incorrectWords={incorrectWords}
+          setIncorrectWords={setIncorrectWords}
+          incorrectTranslations={incorrectTranslations}
+          setIncorrectTranslations={setIncorrectTranslations}
+        ></ResultScreen>
       )}
       {wordList === undefined ? (
         <Loading />

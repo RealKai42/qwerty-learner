@@ -49,3 +49,7 @@ body,
 .customized-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
+.rounded-xl {
+  border-radius: 1rem;
+}
