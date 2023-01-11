@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Transition } from '@headlessui/react'
 import { useWordList } from 'pages/Typing/hooks/useWordList'
 import { useState, useEffect } from 'react'
@@ -176,9 +177,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         leaveTo="opacity-0"
       >
         <div className="flex items-center justify-center h-screen">
-          <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 dark:text-white rounded-large shadow-lg fixed flex flex-col overflow-hidden">
-            <div className="text-center mt-5 font-sans font-semibold text-2xl">{dictNameCombined}</div>
-            <div className="flex gap-10 md:gap-8 sm:gap-6 mt-1 mx-14">
+          <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 dark:text-white rounded-xl shadow-lg fixed flex flex-col overflow-hidden">
+            <div className="text-center mt-10 font-sans font-semibold text-2xl">{dictNameCombined}</div>
+            {/* <div className="flex gap-10 md:gap-8 sm:gap-6 mt-1 mx-14">
               <div className="flex flex-col text-center">
                 <div className={`font-mono text-5xl ${correctRateColor}`}>{correctRate}%</div>
                 <div className="">正确率</div>
@@ -186,52 +187,133 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
               <div className="overflow-hidden h-6 w-full rounded-large bg-green-100 mt-4">
                 <div className="flex">{progressUnits}</div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="flex flex-row gap-2 mt-3 overflow-hidden mx-7">
-              <div className="rounded-xl bg-gray-100 w-2/3 mx-5 px-4 py-3">
-                <div className="overflow-y-auto customized-scrollbar grid grid-cols-2 h-96 gap-3">
-                  <div className="w-full h-44 rounded-lg bg-white">
-                    <div className="flex flex-col pt-10 gap-2 overflow-hidden">
-                      <div className="text-5xl font-mono w-full text-center">{speed}</div>
-                      <div className="w-full text-center font-semibold">每秒输入数</div>
-                    </div>
-                  </div>
-                  <div className="w-full h-44 rounded-lg bg-white">
-                    <div className="flex flex-col pt-10 gap-2 overflow-hidden">
-                      <div className="text-5xl font-mono w-full text-center">{timeString}</div>
-                      <div className="w-full text-center font-semibold">章节耗时</div>
-                    </div>
-                  </div>
-                  {wordCards}
+            <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-7">
+              <div className="flex flex-col gap-3 flex-grow-0 w-40 px-6">
+                <div>
+                  <svg className="w-32 h-32">
+                    <circle
+                      className="text-indigo-200"
+                      stroke-width="10"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="3.5rem"
+                      cx="4rem"
+                      cy="4rem"
+                    />
+                    <text x="4rem" y="3.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="2.25rem">
+                      85%
+                    </text>
+                    <text x="4rem" y="5.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.25rem">
+                      正确率
+                    </text>
+                    <circle
+                      className="text-indigo-500"
+                      stroke-width="10"
+                      stroke-dasharray="25.12rem"
+                      stroke-dashoffset="10rem"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="3.5rem"
+                      cx="4rem"
+                      cy="4rem"
+                      transform="rotate(-90 4rem 4rem)"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg className="w-32 h-32">
+                    <circle
+                      className="text-indigo-200"
+                      stroke-width="10"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="3.5rem"
+                      cx="4rem"
+                      cy="4rem"
+                    />
+                    <text x="4rem" y="3.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="2.25rem">
+                      85%
+                    </text>
+                    <text x="4rem" y="5.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.25rem">
+                      正确率
+                    </text>
+                    <circle
+                      className="text-indigo-500"
+                      stroke-width="10"
+                      stroke-dasharray="25.12rem"
+                      stroke-dashoffset="10rem"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="3.5rem"
+                      cx="4rem"
+                      cy="4rem"
+                      transform="rotate(-90 4rem 4rem)"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <svg className="w-32 h-32">
+                    <circle
+                      className="text-indigo-200"
+                      stroke-width="10"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="3.5rem"
+                      cx="4rem"
+                      cy="4rem"
+                    />
+                    <text x="4rem" y="3.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="2.25rem">
+                      85%
+                    </text>
+                    <text x="4rem" y="5.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.25rem">
+                      正确率
+                    </text>
+                    <circle
+                      className="text-indigo-500"
+                      stroke-width="10"
+                      stroke-dasharray="25.12rem"
+                      stroke-dashoffset="10rem"
+                      stroke="currentColor"
+                      fill="transparent"
+                      r="3.5rem"
+                      cx="4rem"
+                      cy="4rem"
+                      transform="rotate(-90 4rem 4rem)"
+                    />
+                  </svg>
                 </div>
               </div>
-              <div className="flex flex-col flex-auto font-sans gap-2 mt-5">
-                <div className="text-xl w-full text-center">共有 {incorrectCount + multiIncorrectCount} 个单词出现错误</div>
-                <div className="text-xl w-full text-center">其中 {multiIncorrectCount} 个单词多次出错</div>
-                <button className="rounded-lg px-3 py-1.5 mt-3 mx-auto hover:bg-indigo-300 transition-colors duration-100 text-lg font-semibold  bg-indigo-200">
-                  一键加入单词簿
-                </button>
-                <div className="text-xl mt-10 font-bold text-center">下一章节</div>
-                <div className="text-3xl mt-5 font-bold text-center">{nextChapter}</div>
+              <div className="rounded-xl bg-indigo-50 flex-grow mx-10 px-6 py-5">
+                <div className="flex flex-row gap-4 flex-wrap overflow-y-auto customized-scrollbar h-96">
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white w-auto h-12 px-5 py-1 flex flex-row gap-3">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="w-full flex justify-end mt-2 gap-5 px-5 text-xl">
+            <div className="w-full flex justify-center mt-2 gap-5 px-5 text-xl">
               <button
-                className="rounded-large bg-gray-300 hover:bg-gray-400 px-6 py-2 font-semibold transition-colors duration-100"
+                className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400"
                 onClick={invisibleButtonHandler}
               >
                 默写本章
               </button>
               <button
-                className="rounded-large bg-gray-300 hover:bg-gray-400 px-6 py-2 font-semibold transition-colors duration-100"
+                className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400 "
                 onClick={repeatButtonHandler}
               >
                 重复本章
               </button>
               <button
-                className={`rounded-large bg-green-400 hover:bg-green-500 px-6 py-2 font-semibold transition-colors duration-100 ${disabledClassName}`}
+                className={`rounded-md bg-indigo-400 hover:bg-indigo-600 px-6 py-2 font-semibold transition-colors duration-100 ${disabledClassName}`}
                 onClick={nextButtonHandler}
                 disabled={lastChapter()}
               >
