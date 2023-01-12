@@ -54,6 +54,11 @@ body,
   border-radius: 1rem;
 }
 
+.rounded-b-xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
 .bg-indigo-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(247, 245, 255, var(--tw-bg-opacity));

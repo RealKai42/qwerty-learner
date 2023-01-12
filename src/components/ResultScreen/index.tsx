@@ -189,128 +189,248 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
               </div>
             </div> */}
 
-            <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-7">
+            <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-10">
               <div className="flex flex-col gap-3 flex-grow-0 w-40 px-6">
                 <div>
-                  <svg className="w-32 h-32">
+                  <svg className="w-28 h-28">
                     <circle
                       className="text-indigo-200"
-                      stroke-width="10"
+                      stroke-width="8"
                       stroke="currentColor"
                       fill="transparent"
-                      r="3.5rem"
-                      cx="4rem"
-                      cy="4rem"
+                      r="3.1rem"
+                      cx="3.5rem"
+                      cy="3.5rem"
                     />
-                    <text x="4rem" y="3.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="2.25rem">
+                    <text x="3.5rem" y="3.2rem" textAnchor="middle" dominantBaseline="middle" fontSize="2rem">
                       85%
                     </text>
-                    <text x="4rem" y="5.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.25rem">
+                    <text x="3.5rem" y="4.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1rem">
                       正确率
                     </text>
                     <circle
-                      className="text-indigo-500"
-                      stroke-width="10"
+                      className="text-indigo-400"
+                      stroke-width="8"
                       stroke-dasharray="25.12rem"
                       stroke-dashoffset="10rem"
                       stroke="currentColor"
                       fill="transparent"
-                      r="3.5rem"
-                      cx="4rem"
-                      cy="4rem"
+                      r="3.1rem"
+                      cx="3.5rem"
+                      cy="3.5rem"
                       transform="rotate(-90 4rem 4rem)"
                     />
                   </svg>
                 </div>
                 <div>
-                  <svg className="w-32 h-32">
+                  <svg className="w-28 h-28">
                     <circle
                       className="text-indigo-200"
-                      stroke-width="10"
+                      stroke-width="8"
                       stroke="currentColor"
                       fill="transparent"
-                      r="3.5rem"
-                      cx="4rem"
-                      cy="4rem"
+                      r="3.1rem"
+                      cx="3.5rem"
+                      cy="3.5rem"
                     />
-                    <text x="4rem" y="3.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="2.25rem">
+                    <text x="3.5rem" y="3.2rem" textAnchor="middle" dominantBaseline="middle" fontSize="2rem">
                       85%
                     </text>
-                    <text x="4rem" y="5.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.25rem">
+                    <text x="3.5rem" y="4.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1rem">
                       正确率
                     </text>
                     <circle
                       className="text-indigo-500"
-                      stroke-width="10"
+                      stroke-width="8"
                       stroke-dasharray="25.12rem"
                       stroke-dashoffset="10rem"
                       stroke="currentColor"
                       fill="transparent"
-                      r="3.5rem"
-                      cx="4rem"
-                      cy="4rem"
+                      r="3.1rem"
+                      cx="3.5rem"
+                      cy="3.5rem"
                       transform="rotate(-90 4rem 4rem)"
                     />
                   </svg>
                 </div>
                 <div>
-                  <svg className="w-32 h-32">
+                  <svg className="w-28 h-28">
                     <circle
                       className="text-indigo-200"
-                      stroke-width="10"
+                      stroke-width="8"
                       stroke="currentColor"
                       fill="transparent"
-                      r="3.5rem"
-                      cx="4rem"
-                      cy="4rem"
+                      r="3.1rem"
+                      cx="3.5rem"
+                      cy="3.5rem"
                     />
-                    <text x="4rem" y="3.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="2.25rem">
+                    <text x="3.5rem" y="3.2rem" textAnchor="middle" dominantBaseline="middle" fontSize="2rem">
                       85%
                     </text>
-                    <text x="4rem" y="5.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.25rem">
+                    <text x="3.5rem" y="4.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="1rem">
                       正确率
                     </text>
                     <circle
                       className="text-indigo-500"
-                      stroke-width="10"
+                      stroke-width="8"
                       stroke-dasharray="25.12rem"
                       stroke-dashoffset="10rem"
                       stroke="currentColor"
                       fill="transparent"
-                      r="3.5rem"
-                      cx="4rem"
-                      cy="4rem"
+                      r="3.1rem"
+                      cx="3.5rem"
+                      cy="3.5rem"
                       transform="rotate(-90 4rem 4rem)"
                     />
                   </svg>
                 </div>
               </div>
-              <div className="rounded-xl bg-indigo-50 flex-grow mx-10 px-6 py-5">
-                <div className="flex flex-row gap-4 flex-wrap overflow-y-auto customized-scrollbar h-96">
+              <div className="rounded-xl bg-indigo-50 flex-grow mx-6 overflow-hidden">
+                <div className="mx-6 my-4 flex flex-row gap-4 flex-wrap overflow-y-auto customized-scrollbar h-72 content-start">
                   <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
                     <div className="font-mono text-3xl">test</div>
                     <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
                   </div>
-                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white w-auto h-12 px-5 py-1 flex flex-row gap-3">
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
                     <div className="font-mono text-3xl">test</div>
                     <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-500 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-600 pt-2" size="lg" />
+                  </div>
+                  <div className="border-indigo-300 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100">
+                    <div className="font-mono text-3xl">test</div>
+                    <FontAwesomeIcon icon={['fas', 'circle-check']} className="text-indigo-400 pt-2" size="lg" />
+                  </div>
+                </div>
+                <div className="bg-indigo-200 w-full h-10 rounded-b-lg flex flex-row px-4">
+                  <FontAwesomeIcon icon={['fas', 'triangle-exclamation']} className="text-indigo-600 pt-2" size="lg" />
+                  <div className="font-semibold text-lg ml-2 pt-1">错误太多，再来一次如何！</div>
+                  <div className="ml-auto flex flex-row gap-5 items-center text-lg font-semibold">
+                    <div>已选 12/13</div>
+                    <div className="text-indigo-600">加入单词簿</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="w-full flex justify-center mt-2 gap-5 px-5 text-xl">
+            <div className="w-full flex justify-center mt-10 gap-5 px-5 text-xl">
               <button
                 className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400"
                 onClick={invisibleButtonHandler}
               >
-                默写本章
+                默写本章节
               </button>
               <button
                 className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400 "
                 onClick={repeatButtonHandler}
               >
-                重复本章
+                重复本章节
               </button>
               <button
                 className={`rounded-md bg-indigo-400 hover:bg-indigo-600 px-6 py-2 font-semibold transition-colors duration-100 ${disabledClassName}`}
