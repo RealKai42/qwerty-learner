@@ -31,18 +31,15 @@ const App: React.FC = () => {
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
   //updated for ResultScreen
-  const [correctFlag, setCorrectFlag] = useState<number[]>([])
   const [inputCountLastTime, setInputCountLastTime] = useState<number>(0)
   const [incorrectWords, setIncorrectWords] = useState<string[]>([])
   const [incorrectTranslations, setIncorrectTranslations] = useState<string[]>([])
-  //combine dictName and 'chapter+1' to get the chapter name
-  /*   const [dictNameCombined, setDictNameCombined] = useState<string>('') */
   //copied from Speed
   const { seconds, minutes, hours, days, start, pause } = useStopwatch({ autoStart: false })
   const time = seconds + minutes * 60 + hours * 60 * 60 + days * 12 * 60 * 60
   const secondsStirng = seconds < 10 ? '0' + seconds : seconds + ''
   const minutesStirng = minutes < 10 ? '0' + minutes : minutes + ''
-  const timeString = minutesStirng + ':' + secondsStirng
+  const timeString = minutesStirng + 'm:' + secondsStirng + 's'
   const speed = (correctCount / (time === 0 ? 1 : time)).toFixed(2)
   useEffect(() => {
     isStart ? start() : pause()
@@ -114,15 +111,12 @@ const App: React.FC = () => {
     // 更新正确率
 
     if (inputCount - inputCountLastTime === wordList.words[order].name.trim().length) {
-      setCorrectFlag((correctFlag) => [...correctFlag, 0])
     } else if (inputCount - inputCountLastTime - wordList.words[order].name.trim().length < 3) {
-      setCorrectFlag((correctFlag) => [...correctFlag, 1])
       //store incorrect words to incorrectWords
       setIncorrectWords((incorrectWords) => [...incorrectWords, wordList.words[order].name])
       //store incorrect translations to incorrectTranslations
       setIncorrectTranslations((incorrectTranslations) => [...incorrectTranslations, wordList.words[order].trans.join(', ')])
     } else {
-      setCorrectFlag((correctFlag) => [...correctFlag, 2])
       //store incorrect words to incorrectWords
       setIncorrectWords((incorrectWords) => [...incorrectWords, wordList.words[order].name])
       //store incorrect translations to incorrectTranslations
@@ -180,8 +174,6 @@ const App: React.FC = () => {
           setResultScreenState={setResultScreenState}
           speed={speed}
           timeString={timeString}
-          correctFlag={correctFlag}
-          setCorrectFlag={setCorrectFlag}
           incorrectWords={incorrectWords}
           setIncorrectWords={setIncorrectWords}
           incorrectTranslations={incorrectTranslations}
