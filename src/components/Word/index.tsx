@@ -8,7 +8,7 @@ import { useAppState } from '../../store/AppState'
 
 const EXPLICIT_SPACE = '␣'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, isLoop, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, isLoop, wordVisible = true, setIsCorrectTable }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -18,6 +18,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
   const [statesList, setStatesList] = useState<LetterState[]>([])
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
+  const [everWrong, setEverWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
   const { pronunciation } = useAppState()
 
@@ -40,6 +41,11 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
     },
     [playKeySound],
   )
+
+  //useEffect set everWrong to false when word change
+  useEffect(() => {
+    setEverWrong(false)
+  }, [word])
 
   useEffect(() => {
     if (isStart && (!isFinish || isLoop)) {
@@ -87,6 +93,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
         hasWrong = true
         statesList.push('wrong')
         setHasWrong(true)
+        setEverWrong(true)
         break
       }
     }
@@ -96,6 +103,21 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
     }
     setStatesList(statesList)
   }, [inputWord, word])
+
+  useEffect(() => {
+    if (isFinish) {
+      //if everWrong, add a false using setIsCorrectTable
+      if (everWrong) {
+        setIsCorrectTable((prev: boolean[]) => {
+          return [...prev, false]
+        })
+      } else {
+        setIsCorrectTable((prev: boolean[]) => {
+          return [...prev, true]
+        })
+      }
+    }
+  }, [isFinish, everWrong])
 
   const playWordSound = pronunciation !== false
 
@@ -127,5 +149,6 @@ export type WordProps = {
   isStart: boolean
   wordVisible: boolean
   isLoop: boolean
+  setIsCorrectTable: Function
 }
 export default Word

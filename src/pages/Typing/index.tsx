@@ -31,21 +31,22 @@ const App: React.FC = () => {
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
   //updated for ResultScreen
-  const [inputCountLastTime, setInputCountLastTime] = useState<number>(0)
+  const [resultScreenState, setResultScreenState] = useState<boolean>(false)
   const [incorrectWords, setIncorrectWords] = useState<string[]>([])
   const [incorrectTranslations, setIncorrectTranslations] = useState<string[]>([])
-  //copied from Speed
+  const [isCorrectTable, setIsCorrectTable] = useState<boolean[]>([]) //table for recording correct or not, changed by Word.tsx
+
+  //copied from Speed, generate speed for ResultScreen
   const { seconds, minutes, hours, days, start, pause } = useStopwatch({ autoStart: false })
   const time = seconds + minutes * 60 + hours * 60 * 60 + days * 12 * 60 * 60
   const secondsStirng = seconds < 10 ? '0' + seconds : seconds + ''
   const minutesStirng = minutes < 10 ? '0' + minutes : minutes + ''
   const timeString = minutesStirng + 'm:' + secondsStirng + 's'
   const speed = (correctCount / (time === 0 ? 1 : time)).toFixed(2)
+
   useEffect(() => {
     isStart ? start() : pause()
   }, [isStart, start, pause])
-
-  const [ResultScreenState, setResultScreenState] = useState<boolean>(false)
 
   useEffect(() => {
     // reset order when random change
@@ -66,21 +67,23 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (ResultScreenState === false) {
+      if (resultScreenState === false) {
         setIsStart((isStart) => !isStart)
       }
     },
-    [ResultScreenState],
+    [resultScreenState],
   )
 
   useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
-      if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-        if (isStart) {
-          setInputCount((count) => count + 1)
+      if (!resultScreenState) {
+        if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+          if (isStart) {
+            setInputCount((count) => count + 1)
+          }
         }
+        setIsStart(true)
       }
-      setIsStart(true)
     }
     const onBlur = () => {
       if (isStart) {
@@ -100,7 +103,7 @@ const App: React.FC = () => {
       window.removeEventListener('blur', onBlur)
       document.getElementsByClassName('_hj_feedback_container')[0]?.removeEventListener('click', hjOnclick)
     }
-  }, [isStart])
+  }, [isStart, resultScreenState])
 
   const onFinish = () => {
     if (wordList === undefined) {
@@ -109,33 +112,13 @@ const App: React.FC = () => {
     // 优先更新数据
     setCorrectCount((count) => count + wordList.words[order].name.trim().length)
     // 更新正确率
-
-    if (inputCount - inputCountLastTime === wordList.words[order].name.trim().length) {
-    } else if (inputCount - inputCountLastTime - wordList.words[order].name.trim().length < 3) {
-      //store incorrect words to incorrectWords
-      setIncorrectWords((incorrectWords) => [...incorrectWords, wordList.words[order].name])
-      //store incorrect translations to incorrectTranslations
-      setIncorrectTranslations((incorrectTranslations) => [...incorrectTranslations, wordList.words[order].trans.join(', ')])
-    } else {
-      //store incorrect words to incorrectWords
-      setIncorrectWords((incorrectWords) => [...incorrectWords, wordList.words[order].name])
-      //store incorrect translations to incorrectTranslations
-      setIncorrectTranslations((incorrectTranslations) => [...incorrectTranslations, wordList.words[order].trans.join(', ')])
-    }
-
-    setInputCountLastTime(inputCount)
-
     if (switcherState.loop) {
       return
     }
     if (order === wordList.words.length - 1) {
       setIsStart(false)
       // 用户完成当前章节
-      if (wordList.chapter === wordList.chapterListLength - 1) {
-        setResultScreenState(true)
-      } else {
-        setResultScreenState(true)
-      }
+      setResultScreenState(true)
     } else {
       setOrder((order) => order + 1)
     }
@@ -147,6 +130,23 @@ const App: React.FC = () => {
     },
     [pronunciationDispatch],
   )
+
+  //update incorrectWords and incorrectTranslations based on isCorrectTable, useEffect
+  useEffect(() => {
+    if (wordList === undefined) {
+      return
+    }
+    const incorrectWords: string[] = []
+    const incorrectTranslations: string[] = []
+    for (let i = 0; i < isCorrectTable.length; i++) {
+      if (!isCorrectTable[i]) {
+        incorrectWords.push(wordList.words[i].name)
+        incorrectTranslations.push(wordList.words[i].trans.join(', '))
+      }
+    }
+    setIncorrectWords(incorrectWords)
+    setIncorrectTranslations(incorrectTranslations)
+  }, [isCorrectTable])
 
   const addChapter = useCallback(() => {
     if (wordList === undefined) {
@@ -161,7 +161,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      {ResultScreenState && (
+      {resultScreenState && (
         <ResultScreen
           resetOrder={() => {
             setOrder(0)
@@ -178,6 +178,7 @@ const App: React.FC = () => {
           setIncorrectWords={setIncorrectWords}
           incorrectTranslations={incorrectTranslations}
           setIncorrectTranslations={setIncorrectTranslations}
+          setIsCorrectTable={setIsCorrectTable}
         ></ResultScreen>
       )}
       {wordList === undefined ? (
@@ -223,6 +224,7 @@ const App: React.FC = () => {
                     isStart={isStart}
                     isLoop={switcherState.loop}
                     wordVisible={switcherState.wordVisible}
+                    setIsCorrectTable={setIsCorrectTable}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                     <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />

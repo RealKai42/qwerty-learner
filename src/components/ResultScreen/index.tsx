@@ -16,6 +16,7 @@ type ResultScreenProps = {
   setInvisible: React.Dispatch<React.SetStateAction<boolean>>
   resetOrder: () => void
   setStart: React.Dispatch<React.SetStateAction<boolean>>
+  setIsCorrectTable: React.Dispatch<React.SetStateAction<boolean[]>>
 }
 
 const ResultScreen: React.FC<ResultScreenProps> = ({
@@ -30,6 +31,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
   setInvisible,
   resetOrder,
   setStart,
+  setIsCorrectTable,
 }) => {
   const [chapterLength, setChapterLength] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
@@ -117,6 +119,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     setResultScreenState(false)
     setIncorrectWords([])
     setIncorrectTranslations([])
+    setIsCorrectTable([])
     resetOrder()
     setStart(true)
   }
@@ -125,6 +128,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     setResultScreenState(false)
     setIncorrectWords([])
     setIncorrectTranslations([])
+    setIsCorrectTable([])
     resetOrder()
     setStart(true)
     setInvisible(true)
@@ -134,6 +138,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     setResultScreenState(false)
     setIncorrectWords([])
     setIncorrectTranslations([])
+    setIsCorrectTable([])
     addChapter()
     resetOrder()
     setStart(true)
@@ -191,7 +196,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                       r="3.1rem"
                       cx="3.5rem"
                       cy="3.5rem"
-                      transform="rotate(-90 3.5rem 3.5rem)"
+                      transform={`rotate(-90 ${3.5 * rootFontSize} ${3.5 * rootFontSize})`}
                     />
                   </svg>
                 </div>
