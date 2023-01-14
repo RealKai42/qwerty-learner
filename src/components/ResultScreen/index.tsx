@@ -37,10 +37,10 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [correctRate, setCorrectRate] = useState<number>(0)
   const [rootFontSize, setRootFontSize] = useState<number>(16)
-  //collectList, boolean array
   const [collectList, setCollectList] = useState<boolean[]>([])
-  //useState mistakeLevel, 0/1/2/3
   const [mistakeLevel, setMistakeLevel] = useState<number>(0)
+  //this is for svg fill color switch
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
 
   const wordList = useWordList()
 
@@ -49,6 +49,12 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     const root = document.documentElement
     const fontSize = parseInt(window.getComputedStyle(root).getPropertyValue('font-size'))
     setRootFontSize(fontSize)
+  }, [])
+
+  useEffect(() => {
+    //detect dark mode
+    const darkMode = document.documentElement.classList.contains('dark')
+    setIsDarkMode(darkMode)
   }, [])
 
   //initialize collectList
@@ -153,7 +159,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
 
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
-      <div className="absolute inset-0 bg-gray-300 opacity-80"></div>
+      <div className="absolute inset-0 bg-gray-300 dark:bg-gray-600 opacity-80"></div>
       <Transition
         show={true}
         enter="ease-in duration-300"
@@ -164,8 +170,8 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         leaveTo="opacity-0"
       >
         <div className="flex items-center justify-center h-screen">
-          <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 dark:text-white rounded-xl shadow-lg fixed flex flex-col overflow-hidden">
-            <div className="text-center mt-10 font-sans font-semibold text-2xl">{dictNameCombined}</div>
+          <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 rounded-xl shadow-lg fixed flex flex-col overflow-hidden">
+            <div className="text-center mt-10 font-sans font-semibold text-2xl dark:text-white">{dictNameCombined}</div>
 
             <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-10">
               <div className="flex flex-col gap-3 flex-grow-0 w-40 px-6">
@@ -175,7 +181,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                       className="text-indigo-200"
                       stroke-width="8"
                       stroke="currentColor"
-                      fill="transparent"
+                      fill={isDarkMode ? 'white' : 'transparent'}
                       r="3.1rem"
                       cx="3.5rem"
                       cy="3.5rem"
@@ -206,7 +212,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                       className="text-indigo-200"
                       stroke-width="8"
                       stroke="currentColor"
-                      fill="transparent"
+                      fill={isDarkMode ? 'white' : 'transparent'}
                       r="3.1rem"
                       cx="3.5rem"
                       cy="3.5rem"
@@ -225,7 +231,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                       className="text-indigo-200"
                       stroke-width="8"
                       stroke="currentColor"
-                      fill="transparent"
+                      fill={isDarkMode ? 'white' : 'transparent'}
                       r="3.1rem"
                       cx="3.5rem"
                       cy="3.5rem"
