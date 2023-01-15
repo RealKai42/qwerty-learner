@@ -37,11 +37,10 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
   const [chapterLength, setChapterLength] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [correctRate, setCorrectRate] = useState<number>(0)
-  const [rootFontSize, setRootFontSize] = useState<number>(16)
+  const [rootFontSize, setRootFontSize] = useState<number>(16) //for svg circle rotate parameter
   const [collectList, setCollectList] = useState<boolean[]>([])
   const [mistakeLevel, setMistakeLevel] = useState<number>(0)
-  //this is for svg fill color switch
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false)
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false) //for svg fill color switch
 
   const wordList = useWordList()
 
@@ -60,10 +59,8 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
 
   //initialize collectList
   useEffect(() => {
-    //initialize collectList, length equals to incorrectWords.length, default all true
     const collectList = new Array(incorrectWords.length).fill(true)
     setCollectList(collectList)
-    //update mistakeLevel based on corectRate, 0:100%, 1:90%, 2:70%, 3:50%
     if (correctRate >= 90) {
       setMistakeLevel(0)
     } else if (correctRate >= 70) {
@@ -82,7 +79,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
 
   useEffect(() => {
     setCorrectRate(Math.floor((correctCount / chapterLength) * 100))
-  }, [correctCount, chapterLength])
+  }, [correctCount, chapterLength]) //update correctRate
 
   const dictNameCombined: string = wordList ? `${wordList.dictName}  第${wordList.chapter + 1}章` : ' '
 
@@ -92,31 +89,38 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     } else {
       return false
     }
-  }
+  } //check if it is the last chapter
 
-  const conclusionIcon = () => {
+  const conclusion = () => {
     switch (mistakeLevel) {
       case 0:
-        return <FontAwesomeIcon icon={['fas', 'heart']} className="text-indigo-600 pt-2" size="lg" />
+        return (
+          <>
+            <FontAwesomeIcon icon={['fas', 'heart']} className="text-indigo-600 pt-2" size="lg" />
+            <div className="font-semibold text-lg ml-2 pt-1">表现不错！只错了 {incorrectWords.length} 个单词</div>
+          </>
+        )
       case 1:
-        return <FontAwesomeIcon icon={['fas', 'thumbs-up']} className="text-indigo-600 pt-2" size="lg" />
+        return (
+          <>
+            <FontAwesomeIcon icon={['fas', 'thumbs-up']} className="text-indigo-600 pt-2" size="lg" />
+            <div className="font-semibold text-lg ml-2 pt-1">有些小问题哦，下一次可以做得更好！</div>
+          </>
+        )
       case 2:
-        return <FontAwesomeIcon icon={['fas', 'exclamation-triangle']} className="text-indigo-600 pt-2" size="lg" />
+        return (
+          <>
+            <FontAwesomeIcon icon={['fas', 'exclamation-triangle']} className="text-indigo-600 pt-2" size="lg" />
+            <div className="font-semibold text-lg ml-2 pt-1">错误太多，再来一次如何？</div>
+          </>
+        )
       default:
-        return <FontAwesomeIcon icon={['fas', 'exclamation-triangle']} className="text-indigo-600 pt-2" size="lg" />
-    }
-  }
-
-  const conclusionText = () => {
-    switch (mistakeLevel) {
-      case 0:
-        return <div className="font-semibold text-lg ml-2 pt-1">表现不错！只错了 {incorrectWords.length} 个单词</div>
-      case 1:
-        return <div className="font-semibold text-lg ml-2 pt-1">有些小问题哦，下一次可以做得更好！</div>
-      case 2:
-        return <div className="font-semibold text-lg ml-2 pt-1">错误太多，再来一次如何？</div>
-      default:
-        return <div className="font-semibold text-lg ml-2 pt-1">错误太多，再来一次如何？</div>
+        return (
+          <>
+            <FontAwesomeIcon icon={['fas', 'exclamation-triangle']} className="text-indigo-600 pt-2" size="lg" />
+            <div className="font-semibold text-lg ml-2 pt-1">错误太多，再来一次如何？</div>
+          </>
+        )
     }
   }
 
@@ -286,10 +290,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                   })}
                 </div>
                 <div className="bg-indigo-200 w-full h-10 rounded-b-lg flex flex-row px-4">
-                  <>
-                    {conclusionIcon()}
-                    {conclusionText()}
-                  </>
+                  <>{conclusion()}</>
                   <div className="ml-auto flex flex-row gap-5 items-center text-lg font-semibold">
                     <div>
                       已选 {collectList.filter((item) => item).length}/{incorrectWords.length}

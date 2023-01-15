@@ -19,7 +19,6 @@ import Tooltip from 'components/Tooltip'
 import { useRandomState } from 'store/AppState'
 import Progress from './Progress'
 import ResultScreen from 'components/ResultScreen'
-import { useStopwatch } from 'react-timer-hook'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -30,23 +29,14 @@ const App: React.FC = () => {
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
-  //updated for ResultScreen
+  //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
   const [incorrectWords, setIncorrectWords] = useState<string[]>([])
   const [incorrectTranslations, setIncorrectTranslations] = useState<string[]>([])
   const [isCorrectTable, setIsCorrectTable] = useState<boolean[]>([]) //table for recording correct or not, changed by Word.tsx
-
-  //copied from Speed, generate speed for ResultScreen
-  const { seconds, minutes, hours, days, start, pause } = useStopwatch({ autoStart: false })
-  const time = seconds + minutes * 60 + hours * 60 * 60 + days * 12 * 60 * 60
-  const secondsStirng = seconds < 10 ? '0' + seconds : seconds + ''
-  const minutesStirng = minutes < 10 ? '0' + minutes : minutes + ''
-  const timeString = minutesStirng + 'm:' + secondsStirng + 's'
-  const speed = (correctCount / (time === 0 ? 1 : time)).toFixed(2)
-
-  useEffect(() => {
-    isStart ? start() : pause()
-  }, [isStart, start, pause])
+  //states for getting speed and time without using react-timer-hook again
+  const [speedFromSpeed, setSpeedFromSpeed] = useState<string>('')
+  const [timeStringFromSpeed, setTimeStringFromSpeed] = useState<string>('')
 
   useEffect(() => {
     // reset order when random change
@@ -131,7 +121,6 @@ const App: React.FC = () => {
     [pronunciationDispatch],
   )
 
-  //update incorrectWords and incorrectTranslations based on isCorrectTable, useEffect
   useEffect(() => {
     if (wordList === undefined) {
       return
@@ -146,18 +135,18 @@ const App: React.FC = () => {
     }
     setIncorrectWords(incorrectWords)
     setIncorrectTranslations(incorrectTranslations)
-  }, [isCorrectTable])
+  }, [isCorrectTable]) //when Word.tsx detect a mistake, isCorrectTable will change, and trigger incorrectWords and incorrectTranslations to storage.
 
   const addChapter = useCallback(() => {
     if (wordList === undefined) {
       return
     }
     wordList.setChapterNumber(wordList.chapter + 1)
-  }, [wordList])
+  }, [wordList]) //function prop for button in ResultScreen to add chapter
 
   const setInvisible = useCallback(() => {
     switcherStateDispatch('wordVisible', false)
-  }, [switcherStateDispatch])
+  }, [switcherStateDispatch]) //similar to addChapter, for button in ResultScreen to set word invisible
 
   return (
     <>
@@ -172,8 +161,8 @@ const App: React.FC = () => {
           setInvisible={setInvisible}
           addChapter={addChapter}
           setResultScreenState={setResultScreenState}
-          speed={speed}
-          timeString={timeString}
+          speed={speedFromSpeed}
+          timeString={timeStringFromSpeed}
           incorrectWords={incorrectWords}
           setIncorrectWords={setIncorrectWords}
           incorrectTranslations={incorrectTranslations}
@@ -233,7 +222,13 @@ const App: React.FC = () => {
                 </div>
               )}
               {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
-              <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
+              <Speed
+                correctCount={correctCount}
+                inputCount={inputCount}
+                isStart={isStart}
+                setSpeedFromSpeed={setSpeedFromSpeed}
+                setTimeStringFromSpeed={setTimeStringFromSpeed}
+              />
             </div>
           </Main>
         </Layout>
