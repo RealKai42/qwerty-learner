@@ -3,6 +3,7 @@ import { Transition } from '@headlessui/react'
 import Tooltip from 'components/Tooltip'
 import { useWordList } from 'pages/Typing/hooks/useWordList'
 import { useState, useEffect } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 type ResultScreenProps = {
   speed: string
@@ -150,6 +151,23 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     setStart(true)
   }
 
+  useHotkeys('enter', () => {
+    //if last chapter, do nothing
+    if (lastChapter()) {
+      return
+    } else {
+      nextButtonHandler()
+    }
+  })
+
+  useHotkeys('space', () => {
+    repeatButtonHandler()
+  })
+
+  useHotkeys('shift+space', () => {
+    invisibleButtonHandler()
+  })
+
   //wordCard onlick handler, change the index of collectList value to opposite, MouseEventHandler
   const wordCardOnClickHandler = (index: number) => {
     const newCollectList = [...collectList]
@@ -246,7 +264,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                 </div>
               </div>
               <div className="rounded-xl bg-indigo-50 flex-grow mx-6 overflow-hidden">
-                <div className="flex flex-row gap-4 flex-wrap overflow-y-auto customized-scrollbar h-80 content-start ml-8 mr-1 pt-9">
+                <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pt-9">
                   {incorrectWords.map((word, index) => {
                     return (
                       <Tooltip content={`${incorrectTranslations[index]}`}>
@@ -287,25 +305,31 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
             </div>
 
             <div className="w-full flex justify-center mt-10 gap-5 px-5 text-xl">
-              <button
-                className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400"
-                onClick={invisibleButtonHandler}
-              >
-                默写本章节
-              </button>
-              <button
-                className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400 "
-                onClick={repeatButtonHandler}
-              >
-                重复本章节
-              </button>
-              <button
-                className={`rounded-md bg-indigo-400 hover:bg-indigo-600 px-6 py-2 font-semibold transition-colors duration-100 ${disabledClassName}`}
-                onClick={nextButtonHandler}
-                disabled={lastChapter()}
-              >
-                下一章节
-              </button>
+              <Tooltip content="快捷键：shift + enter">
+                <button
+                  className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400"
+                  onClick={invisibleButtonHandler}
+                >
+                  默写本章节
+                </button>
+              </Tooltip>
+              <Tooltip content="快捷键：space">
+                <button
+                  className="rounded-md bg-white hover:bg-indigo-200 px-6 py-2 font-semibold transition-colors duration-100 border-solid border-2 border-indigo-400 "
+                  onClick={repeatButtonHandler}
+                >
+                  重复本章节
+                </button>
+              </Tooltip>
+              <Tooltip content="快捷键：enter">
+                <button
+                  className={`rounded-md bg-indigo-400 hover:bg-indigo-600 px-6 py-2 font-semibold transition-colors duration-100 ${disabledClassName}`}
+                  onClick={nextButtonHandler}
+                  disabled={lastChapter()}
+                >
+                  下一章节
+                </button>
+              </Tooltip>
             </div>
           </div>
         </div>
