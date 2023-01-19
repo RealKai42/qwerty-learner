@@ -34,7 +34,10 @@ const App: React.FC = () => {
   const [incorrectWords, setIncorrectWords] = useState<string[]>([])
   const [incorrectTranslations, setIncorrectTranslations] = useState<string[]>([])
   const [isCorrectTable, setIsCorrectTable] = useState<boolean[]>([]) //table for recording correct or not, changed by Word.tsx
-  //states for getting speed and time without using react-timer-hook again
+  //whether one words' input is correct is judged in Word.tsx, so setIsCorrectTable will be called in Word.tsx as a prop
+
+  //states for getting speed and time without using react-timer-hook again in Typing.tsx
+  //when speed is updated in Speed.tsx as normal, it will also update speedFromSpeed and timeStringFromSpeed through props
   const [speedFromSpeed, setSpeedFromSpeed] = useState<string>('')
   const [timeStringFromSpeed, setTimeStringFromSpeed] = useState<string>('')
 
@@ -148,26 +151,46 @@ const App: React.FC = () => {
     switcherStateDispatch('wordVisible', false)
   }, [switcherStateDispatch]) //similar to addChapter, for button in ResultScreen to set word invisible
 
+  const repeatButtonHandler = () => {
+    setResultScreenState(false)
+    setIncorrectWords([])
+    setIncorrectTranslations([])
+    setIsCorrectTable([])
+    setOrder(0)
+    setIsStart(true)
+  }
+
+  const invisibleButtonHandler = () => {
+    setResultScreenState(false)
+    setIncorrectWords([])
+    setIncorrectTranslations([])
+    setIsCorrectTable([])
+    setOrder(0)
+    setIsStart(true)
+    setInvisible()
+  }
+
+  const nextButtonHandler = () => {
+    setResultScreenState(false)
+    setIncorrectWords([])
+    setIncorrectTranslations([])
+    setIsCorrectTable([])
+    addChapter()
+    setOrder(0)
+    setIsStart(true)
+  }
+
   return (
     <>
       {resultScreenState && (
         <ResultScreen
-          resetOrder={() => {
-            setOrder(0)
-          }}
-          setStart={() => {
-            setIsStart(true)
-          }}
-          setInvisible={setInvisible}
-          addChapter={addChapter}
-          setResultScreenState={setResultScreenState}
           speed={speedFromSpeed}
           timeString={timeStringFromSpeed}
           incorrectWords={incorrectWords}
-          setIncorrectWords={setIncorrectWords}
           incorrectTranslations={incorrectTranslations}
-          setIncorrectTranslations={setIncorrectTranslations}
-          setIsCorrectTable={setIsCorrectTable}
+          repeatButtonHandler={repeatButtonHandler}
+          invisibleButtonHandler={invisibleButtonHandler}
+          nextButtonHandler={nextButtonHandler}
         ></ResultScreen>
       )}
       {wordList === undefined ? (

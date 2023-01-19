@@ -9,30 +9,20 @@ type ResultScreenProps = {
   speed: string
   timeString: string
   incorrectWords: string[]
-  setIncorrectWords: React.Dispatch<React.SetStateAction<string[]>>
   incorrectTranslations: string[]
-  setIncorrectTranslations: React.Dispatch<React.SetStateAction<string[]>>
-  setResultScreenState: React.Dispatch<React.SetStateAction<boolean>>
-  addChapter: () => void
-  setInvisible: React.Dispatch<React.SetStateAction<boolean>>
-  resetOrder: () => void
-  setStart: React.Dispatch<React.SetStateAction<boolean>>
-  setIsCorrectTable: React.Dispatch<React.SetStateAction<boolean[]>>
+  repeatButtonHandler: () => void
+  invisibleButtonHandler: () => void
+  nextButtonHandler: () => void
 }
 
 const ResultScreen: React.FC<ResultScreenProps> = ({
   speed,
   timeString,
   incorrectWords,
-  setIncorrectWords,
   incorrectTranslations,
-  setIncorrectTranslations,
-  setResultScreenState,
-  addChapter,
-  setInvisible,
-  resetOrder,
-  setStart,
-  setIsCorrectTable,
+  repeatButtonHandler,
+  invisibleButtonHandler,
+  nextButtonHandler,
 }) => {
   const [chapterLength, setChapterLength] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
@@ -65,10 +55,8 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
       setMistakeLevel(0)
     } else if (correctRate >= 70) {
       setMistakeLevel(1)
-    } else if (correctRate >= 50) {
-      setMistakeLevel(2)
     } else {
-      setMistakeLevel(3)
+      setMistakeLevel(2)
     }
   }, [incorrectWords, correctRate])
 
@@ -114,46 +102,10 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
             <div className="font-semibold text-lg ml-2 pt-1">错误太多，再来一次如何？</div>
           </>
         )
-      default:
-        return (
-          <>
-            <FontAwesomeIcon icon={['fas', 'exclamation-triangle']} className="text-indigo-600 pt-2" size="lg" />
-            <div className="font-semibold text-lg ml-2 pt-1">错误太多，再来一次如何？</div>
-          </>
-        )
     }
   }
 
   const disabledClassName: string = lastChapter() ? 'cursor-not-allowed opacity-50' : ''
-
-  const repeatButtonHandler = () => {
-    setResultScreenState(false)
-    setIncorrectWords([])
-    setIncorrectTranslations([])
-    setIsCorrectTable([])
-    resetOrder()
-    setStart(true)
-  }
-
-  const invisibleButtonHandler = () => {
-    setResultScreenState(false)
-    setIncorrectWords([])
-    setIncorrectTranslations([])
-    setIsCorrectTable([])
-    resetOrder()
-    setStart(true)
-    setInvisible(true)
-  }
-
-  const nextButtonHandler = () => {
-    setResultScreenState(false)
-    setIncorrectWords([])
-    setIncorrectTranslations([])
-    setIsCorrectTable([])
-    addChapter()
-    resetOrder()
-    setStart(true)
-  }
 
   useHotkeys('enter', () => {
     //if last chapter, do nothing
