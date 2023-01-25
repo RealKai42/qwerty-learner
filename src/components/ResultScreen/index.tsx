@@ -124,13 +124,6 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     invisibleButtonHandler()
   })
 
-  //wordCard onlick handler, change the index of collectList value to opposite, MouseEventHandler
-  const wordCardOnClickHandler = (index: number) => {
-    const newCollectList = [...collectList]
-    newCollectList[index] = !newCollectList[index]
-    setCollectList(newCollectList)
-  }
-
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
       <div className="absolute inset-0 bg-gray-300 dark:bg-gray-600 opacity-80"></div>
@@ -148,7 +141,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
             <div className="text-center mt-10 font-sans font-semibold text-2xl dark:text-white">{dictNameCombined}</div>
 
             <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-10">
-              <div className="flex flex-col gap-3 flex-grow-0 w-40 px-6">
+              <div className="flex flex-col gap-3 flex-grow-0 w-40 px-4">
                 <div>
                   <svg className="w-28 h-28">
                     <circle
@@ -228,14 +221,8 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                           className={`${
                             collectList[index] ? 'border-indigo-600' : 'border-indigo-300'
                           } border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100`}
-                          onClick={(e) => wordCardOnClickHandler(index)}
                         >
                           <div className="font-mono text-3xl">{word}</div>
-                          <FontAwesomeIcon
-                            icon={['fas', 'circle-check']}
-                            className={`${collectList[index] ? 'text-indigo-600' : 'text-indigo-300'} pt-2`}
-                            size="lg"
-                          />
                         </div>
                       </Tooltip>
                     )
@@ -243,16 +230,6 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                 </div>
                 <div className="bg-indigo-200 w-full h-10 rounded-b-lg flex flex-row px-4">
                   <>{conclusion()}</>
-                  <div className="ml-auto flex flex-row gap-5 items-center text-lg font-semibold">
-                    <div>
-                      已选 {collectList.filter((item) => item).length}/{incorrectWords.length}
-                    </div>
-                    <Tooltip content="即将上线，敬请期待">
-                      <div className="text-indigo-500 hover:text-indigo-700 transition-colors duration-100 cursor-not-allowed">
-                        加入单词簿
-                      </div>
-                    </Tooltip>
-                  </div>
                 </div>
               </div>
             </div>
