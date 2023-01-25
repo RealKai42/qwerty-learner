@@ -144,7 +144,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         leaveTo="opacity-0"
       >
         <div className="flex items-center justify-center h-screen">
-          <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 rounded-xl shadow-lg fixed flex flex-col overflow-hidden">
+          <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 rounded-3xl shadow-lg fixed flex flex-col overflow-hidden">
             <div className="text-center mt-10 font-sans font-semibold text-2xl dark:text-white">{dictNameCombined}</div>
 
             <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-10">
@@ -220,7 +220,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                 </div>
               </div>
               <div className="rounded-xl bg-indigo-50 flex-grow mx-6 overflow-hidden">
-                <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pt-9">
+                <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pr-7 pt-9">
                   {incorrectWords.map((word, index) => {
                     return (
                       <Tooltip content={`${incorrectTranslations[index]}`}>
