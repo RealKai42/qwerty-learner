@@ -8,7 +8,7 @@ import { useAppState } from '../../store/AppState'
 
 const EXPLICIT_SPACE = '␣'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, isLoop, wordVisible = true, setIsCorrectTable }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, isLoop, wordVisible = true }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -61,7 +61,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
     if (isFinish) {
       playHintSound()
       setInputWord('')
-      onFinish()
+      onFinish(everWrong)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFinish, hasWrong, playHintSound])
@@ -104,28 +104,12 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
     setStatesList(statesList)
   }, [inputWord, word])
 
-  useEffect(() => {
-    if (isFinish) {
-      //if everWrong, add a false using setIsCorrectTable
-      if (everWrong) {
-        setIsCorrectTable((prev: boolean[]) => {
-          return [...prev, false]
-        })
-      } else {
-        setIsCorrectTable((prev: boolean[]) => {
-          return [...prev, true]
-        })
-      }
-    }
-  }, [isFinish, everWrong])
-
   const playWordSound = pronunciation !== false
 
   return (
     <div className="flex justify-center pt-4 pb-1">
       <div className="relative">
         <div className={`flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
-          {/* {console.log(inputWord, word)} */}
           {word.split('').map((t, index) => {
             return (
               <Letter
@@ -149,6 +133,5 @@ export type WordProps = {
   isStart: boolean
   wordVisible: boolean
   isLoop: boolean
-  setIsCorrectTable: Function
 }
 export default Word

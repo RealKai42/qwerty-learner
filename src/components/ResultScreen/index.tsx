@@ -5,21 +5,27 @@ import { useWordList } from 'pages/Typing/hooks/useWordList'
 import { useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-type ResultScreenProps = {
+export type IncorrectInfo = {
+  word: string
+  translation: string
+}
+export type ResultSpeedInfo = {
   speed: string
-  timeString: string
-  incorrectWords: string[]
-  incorrectTranslations: string[]
+  minute: number
+  second: number
+}
+
+type ResultScreenProps = {
+  incorrectInfo: IncorrectInfo[]
+  speedInfo: ResultSpeedInfo
   repeatButtonHandler: () => void
   invisibleButtonHandler: () => void
   nextButtonHandler: () => void
 }
 
-const ResultScreen: React.FC<ResultScreenProps> = ({
-  speed,
-  timeString,
-  incorrectWords,
-  incorrectTranslations,
+export const ResultScreen: React.FC<ResultScreenProps> = ({
+  speedInfo,
+  incorrectInfo,
   repeatButtonHandler,
   invisibleButtonHandler,
   nextButtonHandler,
@@ -40,9 +46,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
 
   const correctRate = useMemo(() => {
     const chapterLength = wordList?.words.length || 0
-    const correctCount = chapterLength - incorrectWords.length
+    const correctCount = chapterLength - incorrectInfo.length
     return Math.floor((correctCount / chapterLength) * 100)
-  }, [wordList, incorrectWords])
+  }, [wordList, incorrectInfo])
 
   const rootFontSize = useMemo(() => {
     const root = document.documentElement
@@ -59,6 +65,13 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     }
   }, [correctRate])
 
+  const timeString = useMemo(() => {
+    const { minute, second } = speedInfo
+    const minuteString = minute < 10 ? '0' + minute : minute + ''
+    const secondString = second < 10 ? '0' + second : second + ''
+    return `${minuteString}:${secondString}`
+  }, [speedInfo])
+
   const conclusion = () => {
     let content
     switch (mistakeLevel) {
@@ -66,7 +79,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         content = (
           <>
             <FontAwesomeIcon icon={['fas', 'heart']} className="text-indigo-600 pt-2" size="lg" />
-            <span className="text-base font-medium text-gray-700 ml-2 pt-1">表现不错！只错了 {incorrectWords.length} 个单词</span>
+            <span className="text-base font-medium text-gray-700 ml-2 leading-10 inline-block align-middle">
+              表现不错！只错了 {incorrectInfo.length} 个单词
+            </span>
           </>
         )
         break
@@ -84,7 +99,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         content = (
           <>
             <FontAwesomeIcon icon={['fas', 'exclamation-triangle']} className="text-indigo-600 pt-2" size="lg" />
-            <div className="text-base font-medium text-gray-700 ml-2 pt-1">错误太多，再来一次如何？</div>
+            <div className="text-base font-medium text-gray-700 ml-2 leading-10 inline-block align-middle">错误太多，再来一次如何？</div>
           </>
         )
         break
@@ -191,7 +206,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                       cy="3.5rem"
                     />
                     <text x="3.5rem" y="3.25rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.2rem">
-                      {speed}个/s
+                      {speedInfo.speed}个/s
                     </text>
                     <text x="3.5rem" y="4.75rem" textAnchor="middle" dominantBaseline="middle" fontSize="0.95rem">
                       输入字符
@@ -201,13 +216,13 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
               </div>
               <div className="rounded-xl bg-indigo-50 flex-grow mx-6 overflow-visible z-10">
                 <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pr-7 pt-9 z-20">
-                  {incorrectWords.map((word, index) => {
+                  {incorrectInfo.map((info) => {
                     return (
-                      <Tooltip content={`${incorrectTranslations[index]}`}>
+                      <Tooltip content={`${info.translation}`}>
                         <div
                           className={`border-indigo-400 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100`}
                         >
-                          <div className="font-mono font-light text-gray-600 text-3xl">{word}</div>
+                          <div className="font-mono font-light text-gray-600 text-3xl">{info.word}</div>
                         </div>
                       </Tooltip>
                     )

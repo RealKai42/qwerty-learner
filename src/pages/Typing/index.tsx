@@ -18,7 +18,7 @@ import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
 import { useRandomState } from 'store/AppState'
 import Progress from './Progress'
-import ResultScreen from 'components/ResultScreen'
+import { ResultScreen, IncorrectInfo, ResultSpeedInfo } from 'components/ResultScreen'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -29,17 +29,11 @@ const App: React.FC = () => {
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
+
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
-  const [incorrectWords, setIncorrectWords] = useState<string[]>([])
-  const [incorrectTranslations, setIncorrectTranslations] = useState<string[]>([])
-  const [isCorrectTable, setIsCorrectTable] = useState<boolean[]>([]) //table for recording correct or not, changed by Word.tsx
-  //whether one words' input is correct is judged in Word.tsx, so setIsCorrectTable will be called in Word.tsx as a prop
-
-  //states for getting speed and time without using react-timer-hook again in Typing.tsx
-  //when speed is updated in Speed.tsx as normal, it will also update speedFromSpeed and timeStringFromSpeed through props
-  const [speedFromSpeed, setSpeedFromSpeed] = useState<string>('')
-  const [timeStringFromSpeed, setTimeStringFromSpeed] = useState<string>('')
+  const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
+  const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
 
   useEffect(() => {
     // reset order when random change
@@ -98,12 +92,17 @@ const App: React.FC = () => {
     }
   }, [isStart, resultScreenState])
 
-  const onFinish = () => {
+  const onFinish = (everWrong: boolean) => {
     if (wordList === undefined) {
       return
     }
     // 优先更新数据
     setCorrectCount((count) => count + wordList.words[order].name.trim().length)
+    // 记录错误数据
+    if (everWrong) {
+      setIncorrectInfo((prev) => [...prev, { word: wordList.words[order].name, translation: wordList.words[order].trans.join('；') }])
+    }
+
     // 更新正确率
     if (switcherState.loop) {
       return
@@ -124,22 +123,6 @@ const App: React.FC = () => {
     [pronunciationDispatch],
   )
 
-  useEffect(() => {
-    if (wordList === undefined) {
-      return
-    }
-    const incorrectWords: string[] = []
-    const incorrectTranslations: string[] = []
-    for (let i = 0; i < isCorrectTable.length; i++) {
-      if (!isCorrectTable[i]) {
-        incorrectWords.push(wordList.words[i].name)
-        incorrectTranslations.push(wordList.words[i].trans.join(', '))
-      }
-    }
-    setIncorrectWords(incorrectWords)
-    setIncorrectTranslations(incorrectTranslations)
-  }, [isCorrectTable]) //when Word.tsx detect a mistake, isCorrectTable will change, and trigger incorrectWords and incorrectTranslations to storage.
-
   const addChapter = useCallback(() => {
     if (wordList === undefined) {
       return
@@ -153,18 +136,14 @@ const App: React.FC = () => {
 
   const repeatButtonHandler = () => {
     setResultScreenState(false)
-    setIncorrectWords([])
-    setIncorrectTranslations([])
-    setIsCorrectTable([])
+    setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
   }
 
   const invisibleButtonHandler = () => {
     setResultScreenState(false)
-    setIncorrectWords([])
-    setIncorrectTranslations([])
-    setIsCorrectTable([])
+    setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
     setInvisible()
@@ -172,9 +151,7 @@ const App: React.FC = () => {
 
   const nextButtonHandler = () => {
     setResultScreenState(false)
-    setIncorrectWords([])
-    setIncorrectTranslations([])
-    setIsCorrectTable([])
+    setIncorrectInfo([])
     addChapter()
     setOrder(0)
     setIsStart(true)
@@ -184,10 +161,8 @@ const App: React.FC = () => {
     <>
       {resultScreenState && (
         <ResultScreen
-          speed={speedFromSpeed}
-          timeString={timeStringFromSpeed}
-          incorrectWords={incorrectWords}
-          incorrectTranslations={incorrectTranslations}
+          incorrectInfo={incorrectInfo}
+          speedInfo={speedInfo}
           repeatButtonHandler={repeatButtonHandler}
           invisibleButtonHandler={invisibleButtonHandler}
           nextButtonHandler={nextButtonHandler}
@@ -236,7 +211,6 @@ const App: React.FC = () => {
                     isStart={isStart}
                     isLoop={switcherState.loop}
                     wordVisible={switcherState.wordVisible}
-                    setIsCorrectTable={setIsCorrectTable}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                     <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
@@ -245,13 +219,7 @@ const App: React.FC = () => {
                 </div>
               )}
               {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
-              <Speed
-                correctCount={correctCount}
-                inputCount={inputCount}
-                isStart={isStart}
-                setSpeedFromSpeed={setSpeedFromSpeed}
-                setTimeStringFromSpeed={setTimeStringFromSpeed}
-              />
+              <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
             </div>
           </Main>
         </Layout>

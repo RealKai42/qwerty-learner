@@ -1,8 +1,9 @@
+import { ResultSpeedInfo } from 'components/ResultScreen'
 import React, { useEffect } from 'react'
 import { useStopwatch } from 'react-timer-hook'
 import InfoBox from './InfoBox'
 
-const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart, setSpeedFromSpeed, setTimeStringFromSpeed }) => {
+const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart, setSpeedInfo }) => {
   const { seconds, minutes, hours, days, start, pause } = useStopwatch({ autoStart: false })
   const correctRate = (correctCount / (inputCount === 0 ? 1 : inputCount)).toFixed(2)
   const time = seconds + minutes * 60 + hours * 60 * 60 + days * 12 * 60 * 60
@@ -14,9 +15,8 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart, setSpe
   }, [isStart, start, pause])
 
   useEffect(() => {
-    setSpeedFromSpeed(speed)
-    setTimeStringFromSpeed(minutesStirng + 'm:' + secondsStirng + 's')
-  }, [speed, minutesStirng, secondsStirng]) //update speed and timeString states in Typing.tsx
+    setSpeedInfo({ speed, minute: minutes, second: seconds })
+  }, [speed, minutes, seconds])
 
   return (
     <div className="w-3/5 flex bg-white dark:bg-gray-800 transition-colors duration-300 mt-auto rounded-large card p-4 py-10 opacity-45">
@@ -33,8 +33,7 @@ export type SpeedProps = {
   correctCount: number
   inputCount: number
   isStart: boolean
-  setSpeedFromSpeed: React.Dispatch<React.SetStateAction<string>>
-  setTimeStringFromSpeed: React.Dispatch<React.SetStateAction<string>>
+  setSpeedInfo: React.Dispatch<React.SetStateAction<ResultSpeedInfo>>
 }
 
 export default React.memo(Speed)
