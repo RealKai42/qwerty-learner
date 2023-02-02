@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Transition } from '@headlessui/react'
 import Tooltip from 'components/Tooltip'
 import { useWordList } from 'pages/Typing/hooks/useWordList'
-import { useState, useEffect } from 'react'
+import { useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 type ResultScreenProps = {
@@ -24,60 +24,40 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
   invisibleButtonHandler,
   nextButtonHandler,
 }) => {
-  const [chapterLength, setChapterLength] = useState<number>(0)
-  const [correctCount, setCorrectCount] = useState<number>(0)
-  const [correctRate, setCorrectRate] = useState<number>(0)
-  const [rootFontSize, setRootFontSize] = useState<number>(16) //for svg circle rotate parameter
-  const [collectList, setCollectList] = useState<boolean[]>([])
-  const [mistakeLevel, setMistakeLevel] = useState<number>(0)
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false) //for svg fill color switch
-
   const wordList = useWordList()
 
-  //useEffect detect and update the root font size
-  useEffect(() => {
-    const root = document.documentElement
-    const fontSize = parseInt(window.getComputedStyle(root).getPropertyValue('font-size'))
-    setRootFontSize(fontSize)
-  }, [])
-
-  useEffect(() => {
-    //detect dark mode
-    const darkMode = document.documentElement.classList.contains('dark')
-    setIsDarkMode(darkMode)
-  }, [])
-
-  //initialize collectList
-  useEffect(() => {
-    const collectList = new Array(incorrectWords.length).fill(true)
-    setCollectList(collectList)
-    if (correctRate >= 90) {
-      setMistakeLevel(0)
-    } else if (correctRate >= 70) {
-      setMistakeLevel(1)
-    } else {
-      setMistakeLevel(2)
-    }
-  }, [incorrectWords, correctRate])
-
-  useEffect(() => {
-    setChapterLength(wordList?.words.length || 0)
-    setCorrectCount((wordList?.words.length || 0) - incorrectWords.length)
-  }, [wordList, incorrectWords])
-
-  useEffect(() => {
-    setCorrectRate(Math.floor((correctCount / chapterLength) * 100))
-  }, [correctCount, chapterLength]) //update correctRate
-
-  const dictNameCombined: string = wordList ? `${wordList.dictName}  第${wordList.chapter + 1}章` : ' '
-
-  const lastChapter = () => {
+  const isLastChapter = useMemo(() => {
     if (wordList) {
       return wordList.chapter === wordList.chapterListLength - 1
     } else {
       return false
     }
-  } //check if it is the last chapter
+  }, [wordList])
+
+  const isDarkMode = useMemo(() => {
+    return document.documentElement.classList.contains('dark')
+  }, [])
+
+  const correctRate = useMemo(() => {
+    const chapterLength = wordList?.words.length || 0
+    const correctCount = chapterLength - incorrectWords.length
+    return Math.floor((correctCount / chapterLength) * 100)
+  }, [wordList, incorrectWords])
+
+  const rootFontSize = useMemo(() => {
+    const root = document.documentElement
+    return parseInt(window.getComputedStyle(root).getPropertyValue('font-size'))
+  }, [])
+
+  const mistakeLevel = useMemo(() => {
+    if (correctRate >= 85) {
+      return 0
+    } else if (correctRate >= 70) {
+      return 1
+    } else {
+      return 2
+    }
+  }, [correctRate])
 
   const conclusion = () => {
     let content
@@ -112,11 +92,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     return <div className="h-10">{content}</div>
   }
 
-  const disabledClassName: string = lastChapter() ? 'cursor-not-allowed opacity-50' : ''
-
   useHotkeys('enter', () => {
     //if last chapter, do nothing
-    if (lastChapter()) {
+    if (isLastChapter) {
       return
     } else {
       nextButtonHandler()
@@ -127,7 +105,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     repeatButtonHandler()
   })
 
-  useHotkeys('shift+space', () => {
+  useHotkeys('shift+enter', () => {
     invisibleButtonHandler()
   })
 
@@ -146,7 +124,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         <div className="flex items-center justify-center h-screen">
           <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 rounded-3xl shadow-lg fixed flex flex-col overflow-hidden">
             <div className="text-center mt-10 text-base font-sans font-normal text-gray-700 text-2xl dark:text-white">
-              {dictNameCombined}
+              {wordList ? `${wordList.dictName}  第${wordList.chapter + 1}章` : ' '}
             </div>
 
             <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-10">
@@ -227,9 +205,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                     return (
                       <Tooltip content={`${incorrectTranslations[index]}`}>
                         <div
-                          className={`${
-                            collectList[index] ? 'border-indigo-600' : 'border-indigo-300'
-                          } border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100`}
+                          className={`border-indigo-400 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100`}
                         >
                           <div className="font-mono font-light text-gray-600 text-3xl">{word}</div>
                         </div>
@@ -262,9 +238,11 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
               </Tooltip>
               <Tooltip content="快捷键：enter">
                 <button
-                  className={`rounded-md bg-indigo-400 hover:bg-indigo-600 px-6 py-2 h-12 text-base font-bold text-white transition-colors duration-100 ${disabledClassName}`}
+                  className={`rounded-md bg-indigo-400 hover:bg-indigo-600 px-6 py-2 h-12 text-base font-bold text-white transition-colors duration-100 ${
+                    isLastChapter ? 'cursor-not-allowed opacity-50' : ''
+                  }`}
                   onClick={nextButtonHandler}
-                  disabled={lastChapter()}
+                  disabled={isLastChapter}
                 >
                   下一章节
                 </button>
