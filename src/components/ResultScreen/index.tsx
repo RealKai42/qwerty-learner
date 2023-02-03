@@ -108,7 +108,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({
   }
 
   useHotkeys('enter', () => {
-    //if last chapter, do nothing
+    // If this is the last chapter, do nothing.
     if (isLastChapter) {
       return
     } else {
