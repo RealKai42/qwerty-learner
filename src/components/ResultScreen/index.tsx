@@ -9,6 +9,7 @@ export type IncorrectInfo = {
   word: string
   translation: string
 }
+
 export type ResultSpeedInfo = {
   speed: string
   minute: number
