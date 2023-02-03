@@ -46,7 +46,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({
   }, [])
 
   const correctRate = useMemo(() => {
-    const chapterLength = wordList?.words.length || 0
+    const chapterLength = wordList?.words.length ?? 0
     const correctCount = chapterLength - incorrectInfo.length
     return Math.floor((correctCount / chapterLength) * 100)
   }, [wordList, incorrectInfo])
