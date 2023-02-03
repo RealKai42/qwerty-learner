@@ -18,7 +18,7 @@ import usePronunciation from './hooks/usePronunciation'
 import Tooltip from 'components/Tooltip'
 import { useRandomState } from 'store/AppState'
 import Progress from './Progress'
-import { ResultScreen, IncorrectInfo, ResultSpeedInfo } from 'components/ResultScreen'
+import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from 'components/ResultScreen'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)

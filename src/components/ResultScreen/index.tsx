@@ -25,7 +25,7 @@ type ResultScreenProps = {
   nextButtonHandler: () => void
 }
 
-export const ResultScreen: React.FC<ResultScreenProps> = ({
+const ResultScreen: React.FC<ResultScreenProps> = ({
   speedInfo,
   incorrectInfo,
   repeatButtonHandler,
