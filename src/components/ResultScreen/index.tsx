@@ -4,6 +4,7 @@ import Tooltip from 'components/Tooltip'
 import { useWordList } from 'pages/Typing/hooks/useWordList'
 import { useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import ConclusionBar from './ConclusionBar'
 
 export type IncorrectInfo = {
   word: string
@@ -73,41 +74,6 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({
     return `${minuteString}:${secondString}`
   }, [speedInfo])
 
-  const conclusion = () => {
-    let content
-    switch (mistakeLevel) {
-      case 0:
-        content = (
-          <>
-            <FontAwesomeIcon icon={['fas', 'heart']} className="text-indigo-600 pt-2" size="lg" />
-            <span className="text-base font-medium text-gray-700 ml-2 leading-10 inline-block align-middle">
-              表现不错！只错了 {incorrectInfo.length} 个单词
-            </span>
-          </>
-        )
-        break
-      case 1:
-        content = (
-          <div className="">
-            <FontAwesomeIcon icon={['fas', 'thumbs-up']} className="text-indigo-600 leading-10 " size="lg" />
-            <div className="text-base font-medium text-gray-700 ml-2 leading-10 inline-block align-middle">
-              有些小问题哦，下一次可以做得更好！
-            </div>
-          </div>
-        )
-        break
-      case 2:
-        content = (
-          <>
-            <FontAwesomeIcon icon={['fas', 'exclamation-triangle']} className="text-indigo-600 pt-2" size="lg" />
-            <div className="text-base font-medium text-gray-700 ml-2 leading-10 inline-block align-middle">错误太多，再来一次如何？</div>
-          </>
-        )
-        break
-    }
-    return <div className="h-10">{content}</div>
-  }
-
   useHotkeys('enter', () => {
     // If this is the last chapter, do nothing.
     if (isLastChapter) {
@@ -139,7 +105,7 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({
       >
         <div className="flex items-center justify-center h-screen">
           <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 rounded-3xl shadow-lg fixed flex flex-col overflow-hidden">
-            <div className="text-center mt-10 text-base font-sans font-normal text-gray-700 text-2xl dark:text-white">
+            <div className="text-center mt-10 font-sans font-normal text-gray-700 text-2xl dark:text-white">
               {wordList ? `${wordList.dictName}  第${wordList.chapter + 1}章` : ' '}
             </div>
 
@@ -229,8 +195,10 @@ export const ResultScreen: React.FC<ResultScreenProps> = ({
                     )
                   })}
                 </div>
-                <div className="bg-indigo-200 w-full rounded-b-lg flex flex-row justify-start align-center px-4">
-                  <>{conclusion()}</>
+                <div className="bg-indigo-200 w-full rounded-b-xl flex flex-row justify-start align-center px-4">
+                  <>
+                    <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={incorrectInfo.length} />
+                  </>
                 </div>
               </div>
             </div>
