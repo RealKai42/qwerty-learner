@@ -1,5 +1,6 @@
 import { clamp } from 'lodash'
 import { useMemo } from 'react'
+import classNames from 'classnames'
 
 export type RemarkRingProps = {
   remark: string
@@ -29,7 +30,9 @@ export default function RemarkRing({ remark, caption, percentage = null, size = 
   }, [percentage, size])
   return (
     <div
-      className="flex-shrink-0 relative flex flex-col items-center justify-center rounded-full border-8 border-indigo-200 bg-transparent dark:bg-white"
+      className={classNames(
+        'flex-shrink-0 relative flex flex-col items-center justify-center rounded-full border-8 border-indigo-200 dark:border-gray-700 bg-transparent',
+      )}
       style={{
         width: `${size}rem`,
         height: `${size}rem`,
@@ -37,15 +40,15 @@ export default function RemarkRing({ remark, caption, percentage = null, size = 
     >
       {percentage !== null && (
         <div
-          className="absolute -inset-2 rounded-full border-8 border-indigo-400 bg-transparent"
+          className="absolute -inset-2 rounded-full border-8 border-indigo-400 dark:border-indigo-500 bg-transparent"
           style={{
             clipPath: `path("${clipPath}")`,
           }}
           aria-hidden
         />
       )}
-      <span className="text-xl text-gray-800 tabular-nums">{remark}</span>
-      <span className="text-sm text-gray-600 font-medium">{caption}</span>
+      <span className="text-xl text-gray-800 dark:text-gray-300 tabular-nums">{remark}</span>
+      <span className="text-sm text-gray-600 dark:text-gray-500 font-medium">{caption}</span>
     </div>
   )
 }

@@ -44,20 +44,11 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     }
   }, [wordList])
 
-  const isDarkMode = useMemo(() => {
-    return document.documentElement.classList.contains('dark')
-  }, [])
-
   const correctRate = useMemo(() => {
     const chapterLength = wordList?.words.length ?? 0
     const correctCount = chapterLength - incorrectInfo.length
     return Math.floor((correctCount / chapterLength) * 100)
   }, [wordList, incorrectInfo])
-
-  const rootFontSize = useMemo(() => {
-    const root = document.documentElement
-    return parseInt(window.getComputedStyle(root).getPropertyValue('font-size'))
-  }, [])
 
   const mistakeLevel = useMemo(() => {
     if (correctRate >= 85) {
