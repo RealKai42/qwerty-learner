@@ -67,3 +67,17 @@ body,
   --tw-bg-opacity: 1;
   background-color: rgba(247, 245, 255, var(--tw-bg-opacity));
 }
+
+@layer components {
+  .word-chip {
+    @apply border-indigo-400 border-solid border-2 rounded-md bg-white
+      hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3
+      cursor-pointer transition-colors duration-100;
+  }
+
+  .word-chip-tooltip {
+    @apply flex items-center justify-center pointer-events-none py-1 px-2
+      bg-white dark:bg-gray-700 rounded-lg shadow-md text-gray-500
+      dark:text-gray-300 text-xs whitespace-nowrap;
+  }
+}

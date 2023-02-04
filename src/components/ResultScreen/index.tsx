@@ -5,6 +5,7 @@ import { useWordList } from 'pages/Typing/hooks/useWordList'
 import { useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'
+import WordChip from './WordChip'
 
 export type IncorrectInfo = {
   word: string
@@ -183,22 +184,12 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
               </div>
               <div className="rounded-xl bg-indigo-50 flex-grow mx-6 overflow-visible z-10">
                 <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pr-7 pt-9 z-20">
-                  {incorrectInfo.map((info) => {
-                    return (
-                      <Tooltip content={`${info.translation}`}>
-                        <div
-                          className={`border-indigo-400 border-solid border-2 rounded-md bg-white hover:bg-indigo-100 w-auto h-12 px-5 py-1 flex flex-row gap-3 cursor-pointer transition-colors duration-100`}
-                        >
-                          <div className="font-mono font-light text-gray-600 text-3xl">{info.word}</div>
-                        </div>
-                      </Tooltip>
-                    )
-                  })}
+                  {incorrectInfo.map((info) => (
+                    <WordChip key={info.word} mistake={info} />
+                  ))}
                 </div>
                 <div className="bg-indigo-200 w-full rounded-b-xl flex flex-row justify-start align-center px-4">
-                  <>
-                    <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={incorrectInfo.length} />
-                  </>
+                  <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={incorrectInfo.length} />
                 </div>
               </div>
             </div>
