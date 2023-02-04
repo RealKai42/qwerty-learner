@@ -5,6 +5,7 @@ import { useWordList } from 'pages/Typing/hooks/useWordList'
 import { useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'
+import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 
 export type IncorrectInfo = {
@@ -112,75 +113,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
 
             <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-10">
               <div className="flex flex-col gap-3 flex-grow-0 w-40 px-4">
-                <div>
-                  <svg className="w-28 h-28">
-                    <circle
-                      className="text-indigo-200"
-                      stroke-width="8"
-                      stroke="currentColor"
-                      fill={isDarkMode ? 'white' : 'transparent'}
-                      r="3.1rem"
-                      cx="3.5rem"
-                      cy="3.5rem"
-                    />
-                    <text x="3.5rem" y="3.2rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.6rem">
-                      {correctRate}%
-                    </text>
-                    <text x="3.5rem" y="4.5rem" textAnchor="middle" dominantBaseline="middle" fontSize="0.95rem">
-                      正确率
-                    </text>
-                    <circle
-                      className="text-indigo-400"
-                      stroke-width="8"
-                      stroke-dasharray="19.6rem"
-                      stroke-dashoffset={`${(100 - correctRate) * (19.6 / 100)}rem`}
-                      stroke="currentColor"
-                      fill="transparent"
-                      r="3.1rem"
-                      cx="3.5rem"
-                      cy="3.5rem"
-                      transform={`rotate(-90 ${3.5 * rootFontSize} ${3.5 * rootFontSize})`}
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <svg className="w-28 h-28">
-                    <circle
-                      className="text-indigo-200"
-                      stroke-width="8"
-                      stroke="currentColor"
-                      fill={isDarkMode ? 'white' : 'transparent'}
-                      r="3.1rem"
-                      cx="3.5rem"
-                      cy="3.5rem"
-                    />
-                    <text x="3.5rem" y="3.25rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.2rem">
-                      {timeString}
-                    </text>
-                    <text x="3.5rem" y="4.75rem" textAnchor="middle" dominantBaseline="middle" fontSize="0.95rem">
-                      章节耗时
-                    </text>
-                  </svg>
-                </div>
-                <div>
-                  <svg className="w-28 h-28">
-                    <circle
-                      className="text-indigo-200"
-                      stroke-width="8"
-                      stroke="currentColor"
-                      fill={isDarkMode ? 'white' : 'transparent'}
-                      r="3.1rem"
-                      cx="3.5rem"
-                      cy="3.5rem"
-                    />
-                    <text x="3.5rem" y="3.25rem" textAnchor="middle" dominantBaseline="middle" fontSize="1.2rem">
-                      {speedInfo.speed}个/s
-                    </text>
-                    <text x="3.5rem" y="4.75rem" textAnchor="middle" dominantBaseline="middle" fontSize="0.95rem">
-                      输入字符
-                    </text>
-                  </svg>
-                </div>
+                <RemarkRing remark={`${correctRate}%`} caption="正确率" percentage={correctRate} />
+                <RemarkRing remark={timeString} caption="章节耗时" />
+                <RemarkRing remark={`${speedInfo.speed}个/s`} caption="输入字符" />
               </div>
               <div className="rounded-xl bg-indigo-50 flex-grow mx-6 overflow-visible z-10">
                 <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pr-7 pt-9 z-20">

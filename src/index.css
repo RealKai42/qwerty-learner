@@ -68,6 +68,10 @@ body,
   background-color: rgba(247, 245, 255, var(--tw-bg-opacity));
 }
 
+.rounded-full {
+  border-radius: 100%;
+}
+
 @layer components {
   .word-chip {
     @apply border-indigo-400 border-solid border-2 rounded-md bg-white

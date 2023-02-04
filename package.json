@@ -107,6 +107,6 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7",
     "cross-env": "^7.0.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
