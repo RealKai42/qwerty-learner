@@ -19,14 +19,18 @@ export type RemarkRingProps = {
 const rootFontSize = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue('font-size'))
 
 export default function RemarkRing({ remark, caption, percentage = null, size = 7 }: RemarkRingProps) {
-  const clipPath = useMemo(() => {
+  const clipPath = useMemo((): string | undefined => {
     if (percentage === null) {
-      return null
+      return undefined
     }
     const clamped = clamp(percentage, 0, 100)
+    if (clamped === 100) {
+      return undefined
+    }
     const alpha = Math.PI * 2 * (clamped / 100)
     const r = (rootFontSize * size) / 2
-    return `M ${r},0 A ${r},${r} 0 ${clamped > 50 ? 1 : 0},1 ${r + Math.sin(alpha) * r},${r + -Math.cos(alpha) * r} L ${r},${r} Z`
+    const path = `M ${r},0 A ${r},${r} 0 ${clamped > 50 ? 1 : 0},1 ${r + Math.sin(alpha) * r},${r + -Math.cos(alpha) * r} L ${r},${r} Z`
+    return `path("${path}")`
   }, [percentage, size])
   return (
     <div
@@ -41,9 +45,7 @@ export default function RemarkRing({ remark, caption, percentage = null, size = 
       {percentage !== null && (
         <div
           className="absolute -inset-2 rounded-full border-8 border-indigo-400 dark:border-indigo-500 bg-transparent"
-          style={{
-            clipPath: `path("${clipPath}")`,
-          }}
+          style={{ clipPath }}
           aria-hidden
         />
       )}
