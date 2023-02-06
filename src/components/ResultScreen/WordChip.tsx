@@ -19,7 +19,7 @@ export default function WordChip({ mistake: { word, translation } }: WordChipPro
   return (
     <>
       <div ref={refs.setReference} className="word-chip" {...getReferenceProps()}>
-        <div className="font-mono font-light text-gray-600 md:text-3xl sm:text-2xl">{word}</div>
+        <span>{word}</span>
       </div>
       {showTranslation && (
         <div
