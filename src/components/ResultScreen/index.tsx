@@ -96,18 +96,17 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         leaveTo="opacity-0"
       >
         <div className="flex items-center justify-center h-screen">
-          <div className="w-3/5 h-2/3 card bg-white dark:bg-gray-800 rounded-3xl shadow-lg fixed flex flex-col overflow-hidden">
-            <div className="text-center mt-10 font-sans font-normal text-gray-900 sm:text-xl md:text-2xl dark:text-white">
-              {wordList ? `${wordList.dictName}  第${wordList.chapter + 1}章` : ' '}
+          <div className="w-[90vw] md:w-4/5 lg:w-3/5 px-10 pt-10 pb-14 card bg-white dark:bg-gray-800 rounded-3xl shadow-lg fixed flex flex-col overflow-hidden">
+            <div className="text-center font-sans font-normal text-gray-900 text-xl md:text-2xl dark:text-gray-400">
+              {wordList ? `${wordList.dictName}  第 ${wordList.chapter + 1} 章` : ' '}
             </div>
-
-            <div className="flex flex-row gap-2 mt-10 overflow-hidden mx-10">
-              <div className="flex flex-col gap-3 flex-grow-0 w-40 px-4 lg:px-4 md:px-2 sm:px-1">
+            <div className="flex flex-row gap-2 mt-10 overflow-hidden">
+              <div className="flex flex-col gap-3 flex-grow-0 flex-shrink-0 px-4 lg:px-4 md:px-2 sm:px-1">
                 <RemarkRing remark={`${correctRate}%`} caption="正确率" percentage={correctRate} />
                 <RemarkRing remark={timeString} caption="章节耗时" />
                 <RemarkRing remark={`${speedInfo.speed}个/s`} caption="输入字符" />
               </div>
-              <div className="rounded-xl bg-indigo-50 dark:bg-gray-700 flex-grow mx-6 overflow-visible z-10">
+              <div className="rounded-xl bg-indigo-50 dark:bg-gray-700 flex-1 mx-6 overflow-visible z-10">
                 <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pr-7 pt-9 z-20">
                   {incorrectInfo.map((info) => (
                     <WordChip key={info.word} mistake={info} />
@@ -118,7 +117,6 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
                 </div>
               </div>
             </div>
-
             <div className="w-full flex justify-center mt-10 gap-5 px-5 text-xl">
               <Tooltip content="快捷键：shift + enter">
                 <button
