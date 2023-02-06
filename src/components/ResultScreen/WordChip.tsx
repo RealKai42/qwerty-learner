@@ -18,7 +18,7 @@ export default function WordChip({ mistake: { word, translation } }: WordChipPro
   const { getReferenceProps, getFloatingProps } = useInteractions([hover, role])
   return (
     <>
-      <div ref={refs.setReference} className="word-chip dark:bg-gray-200" {...getReferenceProps()}>
+      <div ref={refs.setReference} className="word-chip" {...getReferenceProps()}>
         <div className="font-mono font-light text-gray-600 md:text-3xl sm:text-2xl">{word}</div>
       </div>
       {showTranslation && (
