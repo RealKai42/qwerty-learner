@@ -16,7 +16,7 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart, setSpe
 
   useEffect(() => {
     setSpeedInfo({ speed, minute: minutes, second: seconds })
-  }, [speed, minutes, seconds])
+  }, [speed, minutes, seconds, setSpeedInfo])
 
   return (
     <div className="w-3/5 flex bg-white dark:bg-gray-800 transition-colors duration-300 mt-auto rounded-large card p-4 py-10 opacity-45">

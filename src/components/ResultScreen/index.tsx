@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Transition } from '@headlessui/react'
 import Tooltip from 'components/Tooltip'
 import { useWordList } from 'pages/Typing/hooks/useWordList'
