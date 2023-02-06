@@ -19,6 +19,11 @@ import {
   faRandom,
   faRepeat,
   faRotate,
+  faCircleCheck,
+  faCheck,
+  faTriangleExclamation,
+  faHeart,
+  faThumbsUp,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -43,4 +48,9 @@ library.add(
   faRandom,
   faRepeat,
   faRotate,
+  faCircleCheck,
+  faCheck,
+  faTriangleExclamation,
+  faHeart,
+  faThumbsUp,
 )

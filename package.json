@@ -5,6 +5,7 @@
   "homepage": ".",
   "dependencies": {
     "@craco/craco": "^6.0.0",
+    "@floating-ui/react": "^0.19.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
@@ -22,6 +23,7 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "autoprefixer": "^9",
+    "classnames": "^2.3.2",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -106,6 +108,6 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7",
     "cross-env": "^7.0.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

@@ -49,3 +49,46 @@ body,
 .customized-scrollbar::-webkit-scrollbar-track {
   background: transparent;
 }
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.75rem;
+}
+
+.bg-indigo-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(247, 245, 255, var(--tw-bg-opacity));
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+@layer components {
+  .word-chip {
+    @apply border-indigo-400 dark:border-blue-gray-800 border-solid border-2
+      rounded-md bg-white
+    dark:bg-blue-gray-700 hover:bg-indigo-100 dark:hover:bg-blue-gray-600
+      w-auto h-10 md:h-12 px-2 md:px-5 py-0.5 md:py-1 flex flex-row
+      cursor-pointer transition-colors duration-100
+      items-center justify-center;
+  }
+
+  .word-chip > span {
+    @apply font-mono font-light text-gray-600 dark:text-gray-300 text-2xl md:text-3xl;
+  }
+
+  .word-chip-tooltip {
+    @apply flex items-center justify-center pointer-events-none py-1 px-2
+      bg-white dark:bg-gray-800 rounded-lg shadow-md text-gray-500
+      dark:text-gray-300 text-xs whitespace-nowrap;
+  }
+}
