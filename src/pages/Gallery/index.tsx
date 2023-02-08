@@ -1,13 +1,13 @@
 import React from 'react'
-import Layout from 'components/Layout'
+import Layout from '@/components/Layout'
 import DictionaryGroup from './DictionaryGroup'
-import Header from 'components/Header'
+import Header from '@/components/Header'
 import { NavLink, useHistory } from 'react-router-dom'
-import { useDictionaries, useSelectedDictionary } from 'store/AppState'
+import { useDictionaries, useSelectedDictionary } from '@/store/AppState'
 import { groupBy } from 'lodash'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ChapterGroup from './ChapterGroup'
-import Tooltip from 'components/Tooltip'
+import Tooltip from '@/components/Tooltip'
 
 const GalleryPage: React.FC = () => {
   const dictionaries = useDictionaries()

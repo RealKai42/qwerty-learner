@@ -1,6 +1,6 @@
 import { Transition } from '@headlessui/react'
-import Tooltip from 'components/Tooltip'
-import { useWordList } from 'pages/Typing/hooks/useWordList'
+import Tooltip from '@/components/Tooltip'
+import { useWordList } from '@/pages/Typing/hooks/useWordList'
 import { useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'

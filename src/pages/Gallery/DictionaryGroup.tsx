@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dictionary } from 'resources/dictionary'
+import { Dictionary } from '@/resources/dictionary'
 import DictionaryCard from './DictionaryCard'
 
 const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }) => {
