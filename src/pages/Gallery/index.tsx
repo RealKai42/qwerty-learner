@@ -28,7 +28,7 @@ const GalleryPage: React.FC = () => {
         </Tooltip>
       </Header>
       <div className="mt-auto mb-auto flex w-auto space-x-4 overflow-y-auto">
-        <div className="bg-indigo-50 dark:bg-blue-gray-800 rounded-lg p-6 space-y-2 overflow-y-auto flex flex-col">
+        <div className="bg-indigo-50 dark:bg-slate-800 rounded-lg p-6 space-y-2 overflow-y-auto flex flex-col">
           <h2 className="sticky top-0 mb-2 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
             词典选择
           </h2>
@@ -38,7 +38,7 @@ const GalleryPage: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="p-6 overflow-y-auto bg-indigo-50 dark:bg-blue-gray-800 rounded-lg flex flex-col">
+        <div className="p-6 overflow-y-auto bg-indigo-50 dark:bg-slate-800 rounded-lg flex flex-col">
           <h2 className="sticky top-0 mb-4 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
             章节选择
           </h2>
