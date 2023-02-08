@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "@craco/craco": "^6.0.0",
     "@floating-ui/react": "^0.19.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
@@ -27,8 +26,8 @@
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "howler": "^2.2.3",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
@@ -40,7 +39,6 @@
     "react-dom": "^17.0.1",
     "react-hotkeys-hook": "^3.0.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
     "react-timer-hook": "^2.0.7",
     "react-use": "^17.1.0",
     "source-map-explorer": "^2.5.2",
@@ -51,11 +49,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "start": "craco start",
-    "build": "cross-env CI=false craco build",
-    "test": "craco test",
+    "start": "vite",
+    "build": "cross-env CI=false vite build",
+    "test": "echo \"No tests\"",
     "lint": "eslint .",
-    "eject": "react-scripts eject",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
@@ -110,6 +107,7 @@
     "@types/react-router-dom": "^5.1.7",
     "@vitejs/plugin-react": "^3.1.0",
     "cross-env": "^7.0.3",
+    "eslint-config-react-app": "^7.0.1",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.1",
     "vite-plugin-svgr": "^2.4.0"
