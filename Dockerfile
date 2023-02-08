@@ -5,7 +5,7 @@
 
 FROM node:14
 
-MAINTAINER sevenyoungairye<lel.ng.top@gmail.com>
+LABEL maintainer="sevenyoungairye <lel.ng.top@gmail.com>"
 
 WORKDIR /app/qwerty-learner
 
