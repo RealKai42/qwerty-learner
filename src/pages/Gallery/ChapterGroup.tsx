@@ -1,6 +1,6 @@
 import React from 'react'
 import { range } from 'lodash'
-import { useSelectedChapter } from 'store/AppState'
+import { useSelectedChapter } from '@/store/AppState'
 import ChapterButton from './ChapterButton'
 
 const ChapterGroup: React.FC<ChapterGroupProps> = ({ totalWords }) => {

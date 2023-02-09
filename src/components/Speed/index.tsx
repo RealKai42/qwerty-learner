@@ -1,4 +1,4 @@
-import { ResultSpeedInfo } from 'components/ResultScreen'
+import { ResultSpeedInfo } from '@/components/ResultScreen'
 import React, { useEffect } from 'react'
 import { useStopwatch } from 'react-timer-hook'
 import InfoBox from './InfoBox'

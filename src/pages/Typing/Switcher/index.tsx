@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SwitcherStateType, SwitcherDispatchType } from '../hooks/useSwitcherState'
 import { useHotkeys } from 'react-hotkeys-hook'
-import Tooltip from 'components/Tooltip'
+import Tooltip from '@/components/Tooltip'
 
 export type SwitcherPropsType = {
   state: SwitcherStateType

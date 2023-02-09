@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
 import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
-import useSounds from 'hooks/useSounds'
+import useSounds from '@/hooks/useSounds'
 import style from './index.module.css'
-import WordSound from 'components/WordSound'
+import WordSound from '@/components/WordSound'
 import { useAppState } from '../../store/AppState'
 
 const EXPLICIT_SPACE = '␣'

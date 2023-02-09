@@ -1,7 +1,7 @@
 import { omit } from 'lodash'
 import React, { useCallback, useContext } from 'react'
 import { useLocalStorage } from 'react-use'
-import { dictionaries, Dictionary } from 'resources/dictionary'
+import { dictionaries, Dictionary } from '@/resources/dictionary'
 
 export type PronunciationType = 'us' | 'uk' | 'jap' | false
 

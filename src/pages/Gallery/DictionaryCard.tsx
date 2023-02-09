@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef } from 'react'
-import { Dictionary } from 'resources/dictionary'
-import { useSelectedDictionary, useSetDictionary } from 'store/AppState'
+import { Dictionary } from '@/resources/dictionary'
+import { useSelectedDictionary, useSetDictionary } from '@/store/AppState'
 
 const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)

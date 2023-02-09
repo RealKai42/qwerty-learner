@@ -2,7 +2,7 @@ import React, { MouseEvent } from 'react'
 import { Transition } from '@headlessui/react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Tooltip from 'components/Tooltip'
+import Tooltip from '@/components/Tooltip'
 
 type ModalsProps = {
   state: boolean

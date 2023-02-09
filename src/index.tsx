@@ -4,7 +4,7 @@ import './index.css'
 import './icon'
 import reportWebVitals from './reportWebVitals'
 import 'react-app-polyfill/stable'
-import { AppStateProvider } from 'store/AppState'
+import { AppStateProvider } from '@/store/AppState'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'
 import TypingPage from './pages/Typing'
@@ -12,7 +12,7 @@ import TypingPage from './pages/Typing'
 ReactDOM.render(
   <React.StrictMode>
     <AppStateProvider>
-      <Router basename={process.env.REACT_APP_DEPLOY_ENV === 'travis' ? '/qwerty-learner' : ''}>
+      <Router basename={REACT_APP_DEPLOY_ENV === 'travis' ? '/qwerty-learner' : ''}>
         <Switch>
           <Route path="/gallery">
             <GalleryPage />
