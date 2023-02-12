@@ -29,6 +29,14 @@ export const dictionaries: Dictionary[] = [
     length: 3893,
   },
   {
+    id: 'SHjuniormiddleOxford',
+    name: '上海初中牛津词汇',
+    description: '上海初中牛津词汇',
+    category: '英语学习',
+    url: './dicts/OxfordVocabulary_juniorMiddleSH.json',
+    length: 1270,
+  },
+  {
     id: 'sat',
     name: 'SAT',
     description: '美国 SAT 考试词库',
