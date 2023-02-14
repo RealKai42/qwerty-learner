@@ -132,7 +132,8 @@ const App: React.FC = () => {
 
   const setDictation = useCallback(
     (option) => {
-      switcherStateDispatch('wordVisible', option)
+      switcherStateDispatch('wordVisible', !option)
+      //dictation mode being set to 'true' indicates that the word is invisible.
     },
     [switcherStateDispatch],
   )
@@ -149,7 +150,7 @@ const App: React.FC = () => {
     setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
-    setDictation(false)
+    setDictation(true)
   }
 
   const nextButtonHandler = () => {
@@ -158,7 +159,7 @@ const App: React.FC = () => {
     addChapter()
     setOrder(0)
     setIsStart(true)
-    setDictation(true)
+    setDictation(false)
   }
 
   return (
