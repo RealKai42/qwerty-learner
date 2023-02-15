@@ -1,6 +1,6 @@
-import { SoundIcon, SoundIconProps } from 'components/SoundIcon'
-import Tooltip from 'components/Tooltip'
-import usePronunciationSound from 'hooks/usePronunciation'
+import { SoundIcon, SoundIconProps } from '@/components/SoundIcon'
+import Tooltip from '@/components/Tooltip'
+import usePronunciationSound from '@/hooks/usePronunciation'
 import React, { useEffect, useCallback } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 

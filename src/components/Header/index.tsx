@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { ReactComponent as Logo } from 'assets/logo.svg'
+import { ReactComponent as Logo } from '@/assets/logo.svg'
 
 const Header: React.FC = ({ children }) => {
   return (

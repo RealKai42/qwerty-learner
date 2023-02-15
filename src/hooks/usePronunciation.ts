@@ -1,6 +1,6 @@
 import { Howl } from 'howler'
 import { useEffect, useState } from 'react'
-import { PronunciationType, useAppState } from 'store/AppState'
+import { PronunciationType, useAppState } from '@/store/AppState'
 import useSound from 'use-sound'
 import { HookOptions } from 'use-sound/dist/types'
 import { addHowlListener } from '../utils/utils'

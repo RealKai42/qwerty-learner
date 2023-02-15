@@ -1,4 +1,4 @@
-import { useSetPronunciationState, PronunciationType } from 'store/AppState'
+import { useSetPronunciationState, PronunciationType } from '@/store/AppState'
 
 export type SwitcherDispatchType = (newStatus?: string) => void
 

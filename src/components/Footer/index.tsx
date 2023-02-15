@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import InfoPanel from 'components/InfoPanel'
-import alipay from 'assets/alipay.png'
-import vscLogo from 'assets/vsc-logo.svg'
+import InfoPanel from '@/components/InfoPanel'
+import alipay from '@/assets/alipay.png'
+import vscLogo from '@/assets/vsc-logo.svg'
 
 const Footer: React.FC = () => {
   const [showModal, setShowModal] = useState<boolean>(false)

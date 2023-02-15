@@ -1,53 +1,39 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import Header from 'components/Header'
-import Main from 'components/Main'
-import Word from 'components/Word'
-import Translation from 'components/Translation'
-import Speed from 'components/Speed'
-import Modals from 'components/Modals'
-import Loading from 'components/Loading'
-import Phonetic from 'components/Phonetic'
+import Header from '@/components/Header'
+import Main from '@/components/Main'
+import Word from '@/components/Word'
+import Translation from '@/components/Translation'
+import Speed from '@/components/Speed'
+import Loading from '@/components/Loading'
+import Phonetic from '@/components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
-import { isLegal, IsDesktop } from 'utils/utils'
+import { isLegal, IsDesktop } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
-import { useModals } from 'hooks/useModals'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
 import { useWordList } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
-import Tooltip from 'components/Tooltip'
-import { useRandomState } from 'store/AppState'
+import Tooltip from '@/components/Tooltip'
+import { useRandomState } from '@/store/AppState'
+import Progress from './Progress'
+import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
-
   const [inputCount, setInputCount] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
-
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
 
-  const {
-    modalState,
-    title: modalTitle,
-    content: modalContent,
-    firstButton: modalFirstBtn,
-    secondButton: modalSecondBtn,
-    thirdButton: modalThirdBtn,
-    thirdBtnHotkey,
-    setThirdBtnHotkey,
-    firstButtonOnclick: modalFirstBtnOnclick,
-    secondButtonOnclick: modalSecondBtnOnclick,
-    thirdButtonOnclick: modalThirdBtnOnclick,
-    setModalState,
-    setMessage: setModalMessage,
-    setHandler: setModalHandler,
-  } = useModals(false, '提示')
+  //props for ResultScreen
+  const [resultScreenState, setResultScreenState] = useState<boolean>(false)
+  const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
+  const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
 
   useEffect(() => {
     // reset order when random change
@@ -68,21 +54,23 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (modalState === false) {
+      if (resultScreenState === false) {
         setIsStart((isStart) => !isStart)
       }
     },
-    [modalState],
+    [resultScreenState],
   )
 
   useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
-      if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-        if (isStart) {
-          setInputCount((count) => count + 1)
+      if (!resultScreenState) {
+        if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+          if (isStart) {
+            setInputCount((count) => count + 1)
+          }
         }
+        setIsStart(true)
       }
-      setIsStart(true)
     }
     const onBlur = () => {
       if (isStart) {
@@ -102,48 +90,27 @@ const App: React.FC = () => {
       window.removeEventListener('blur', onBlur)
       document.getElementsByClassName('_hj_feedback_container')[0]?.removeEventListener('click', hjOnclick)
     }
-  }, [isStart])
+  }, [isStart, resultScreenState])
 
-  const modalHandlerGenerator = (chapter: number, order: number, modalState: boolean) => {
-    return () => {
-      setOrder(order)
-      wordList?.setChapterNumber(chapter)
-      setModalState(modalState)
-      setIsStart(true)
-    }
-  }
-
-  const onFinish = () => {
+  const onFinish = (everWrong: boolean) => {
     if (wordList === undefined) {
       return
     }
     // 优先更新数据
     setCorrectCount((count) => count + wordList.words[order].name.trim().length)
+    // 记录错误数据
+    if (everWrong) {
+      setIncorrectInfo((prev) => [...prev, { word: wordList.words[order].name, translation: wordList.words[order].trans.join('；') }])
+    }
+
+    // 更新正确率
     if (switcherState.loop) {
       return
     }
     if (order === wordList.words.length - 1) {
       setIsStart(false)
       // 用户完成当前章节
-      if (wordList.chapter === wordList.chapterListLength - 1) {
-        setModalState(true)
-        setModalMessage('提示', '您已完成最后一个章节', '重置到第一章节', '重复本章节', '默写本章节')
-        setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(0, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
-          modalHandlerGenerator(wordList.chapter, 0, false)()
-          switcherStateDispatch('wordVisible', false)
-          setIsStart(true)
-        })
-      } else {
-        setModalState(true)
-        setModalMessage('提示', '您已完成本章节', '下一章节', '重复本章节', '默写本章节')
-        setThirdBtnHotkey('v')
-        setModalHandler(modalHandlerGenerator(wordList.chapter + 1, 0, false), modalHandlerGenerator(wordList.chapter, 0, false), () => {
-          modalHandlerGenerator(wordList.chapter, 0, false)()
-          switcherStateDispatch('wordVisible', false)
-          setIsStart(true)
-        })
-      }
+      setResultScreenState(true)
     } else {
       setOrder((order) => order + 1)
     }
@@ -156,21 +123,55 @@ const App: React.FC = () => {
     [pronunciationDispatch],
   )
 
+  const addChapter = useCallback(() => {
+    if (wordList === undefined) {
+      return
+    }
+    wordList.setChapterNumber(wordList.chapter + 1)
+  }, [wordList])
+
+  const setDictation = useCallback(
+    (option) => {
+      switcherStateDispatch('wordVisible', !option)
+      //dictation mode being set to 'true' indicates that the word is invisible.
+    },
+    [switcherStateDispatch],
+  )
+
+  const repeatButtonHandler = () => {
+    setResultScreenState(false)
+    setIncorrectInfo([])
+    setOrder(0)
+    setIsStart(true)
+  }
+
+  const invisibleButtonHandler = () => {
+    setResultScreenState(false)
+    setIncorrectInfo([])
+    setOrder(0)
+    setIsStart(true)
+    setDictation(true)
+  }
+
+  const nextButtonHandler = () => {
+    setResultScreenState(false)
+    setIncorrectInfo([])
+    addChapter()
+    setOrder(0)
+    setIsStart(true)
+    setDictation(false)
+  }
+
   return (
     <>
-      {modalState && (
-        <Modals
-          state={modalState}
-          title={modalTitle}
-          content={modalContent}
-          firstButton={modalFirstBtn}
-          secondButton={modalSecondBtn}
-          thirdButton={modalThirdBtn}
-          thirdButtonHotkey={thirdBtnHotkey}
-          firstButtonOnclick={modalFirstBtnOnclick}
-          secondButtonOnclick={modalSecondBtnOnclick}
-          thirdButtonOnclick={modalThirdBtnOnclick}
-        />
+      {resultScreenState && (
+        <ResultScreen
+          incorrectInfo={incorrectInfo}
+          speedInfo={speedInfo}
+          repeatButtonHandler={repeatButtonHandler}
+          invisibleButtonHandler={invisibleButtonHandler}
+          nextButtonHandler={nextButtonHandler}
+        ></ResultScreen>
       )}
       {wordList === undefined ? (
         <Loading />
@@ -222,7 +223,8 @@ const App: React.FC = () => {
                   <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
                 </div>
               )}
-              <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} />
+              {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
+              <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
             </div>
           </Main>
         </Layout>

@@ -2,7 +2,7 @@ version: "3"
 
 services:
   qwertylearner:
-    image: "node:14"
+    image: "node:16"
     user: "root"
     working_dir: "/app/qwerty-learner"
     ports:

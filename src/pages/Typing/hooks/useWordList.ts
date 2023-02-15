@@ -1,7 +1,7 @@
-import cet4 from 'assets/CET4_T.json'
+import cet4 from '@/assets/CET4_T.json'
 import { shuffle } from 'lodash'
 import { useMemo } from 'react'
-import { useSelectedChapter, useSelectedDictionary, useRandomState } from 'store/AppState'
+import { useSelectedChapter, useSelectedDictionary, useRandomState } from '@/store/AppState'
 import useSWR from 'swr'
 
 export type Word = {

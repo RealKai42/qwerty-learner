@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
 import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
-import useSounds from 'hooks/useSounds'
+import useSounds from '@/hooks/useSounds'
 import style from './index.module.css'
-import WordSound from 'components/WordSound'
+import WordSound from '@/components/WordSound'
 import { useAppState } from '../../store/AppState'
 
 const EXPLICIT_SPACE = '␣'
@@ -18,6 +18,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
   const [statesList, setStatesList] = useState<LetterState[]>([])
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
+  const [everWrong, setEverWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
   const { pronunciation } = useAppState()
 
@@ -41,6 +42,11 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
     [playKeySound],
   )
 
+  //useEffect set everWrong to false when word change
+  useEffect(() => {
+    setEverWrong(false)
+  }, [word])
+
   useEffect(() => {
     if (isStart && (!isFinish || isLoop)) {
       setIsFinish(false)
@@ -55,7 +61,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
     if (isFinish) {
       playHintSound()
       setInputWord('')
-      onFinish()
+      onFinish(everWrong)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFinish, hasWrong, playHintSound])
@@ -87,6 +93,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
         hasWrong = true
         statesList.push('wrong')
         setHasWrong(true)
+        setEverWrong(true)
         break
       }
     }
@@ -103,7 +110,6 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
     <div className="flex justify-center pt-4 pb-1">
       <div className="relative">
         <div className={`flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
-          {/* {console.log(inputWord, word)} */}
           {word.split('').map((t, index) => {
             return (
               <Letter
