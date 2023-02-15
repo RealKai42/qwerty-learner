@@ -208,7 +208,7 @@ const App: React.FC = () => {
               <div className="h-1/3"></div>
               {!isStart && <h3 className="pb-4 text-xl text-gray-600 dark:text-gray-50 animate-pulse">按任意键开始</h3>}
               {isStart && (
-                <div>
+                <div className="flex flex-col items-center">
                   <Word
                     key={`word-${wordList.words[order].name}-${order}`}
                     word={wordList.words[order].name}
