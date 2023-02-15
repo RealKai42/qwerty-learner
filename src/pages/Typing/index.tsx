@@ -128,11 +128,15 @@ const App: React.FC = () => {
       return
     }
     wordList.setChapterNumber(wordList.chapter + 1)
-  }, [wordList]) //function prop for button in ResultScreen to add chapter
+  }, [wordList])
 
-  const setInvisible = useCallback(() => {
-    switcherStateDispatch('wordVisible', false)
-  }, [switcherStateDispatch]) //similar to addChapter, for button in ResultScreen to set word invisible
+  const setDictation = useCallback(
+    (option) => {
+      switcherStateDispatch('wordVisible', !option)
+      //dictation mode being set to 'true' indicates that the word is invisible.
+    },
+    [switcherStateDispatch],
+  )
 
   const repeatButtonHandler = () => {
     setResultScreenState(false)
@@ -146,7 +150,7 @@ const App: React.FC = () => {
     setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
-    setInvisible()
+    setDictation(true)
   }
 
   const nextButtonHandler = () => {
@@ -155,6 +159,7 @@ const App: React.FC = () => {
     addChapter()
     setOrder(0)
     setIsStart(true)
+    setDictation(false)
   }
 
   return (
