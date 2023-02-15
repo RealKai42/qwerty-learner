@@ -179,7 +179,7 @@ const App: React.FC = () => {
           <Header>
             <Tooltip content="词典章节切换">
               <NavLink
-                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-white dark:hover:text-opacity-100"
+                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-white dark:hover:text-opacity-100 block"
                 to="/gallery"
               >
                 {wordList.dictName} 第 {wordList.chapter + 1} 章
