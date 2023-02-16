@@ -112,6 +112,14 @@ const Footer: React.FC = () => {
         >
           @ Qwerty Learner
         </span>
+        <a
+          className="text-gray-500 dark:text-gray-400 cursor-pointer no-underline hover:no-underline pl-2"
+          href="https://beian.miit.gov.cn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          鲁ICP备2022030649号
+        </a>
       </div>
     </>
   )
