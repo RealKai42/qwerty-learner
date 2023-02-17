@@ -1,14 +1,25 @@
-import React, { useEffect, useState, useCallback, useLayoutEffect } from 'react'
+import React, { useEffect, useState, useCallback, useLayoutEffect, useRef } from 'react'
 import Letter, { LetterState } from './Letter'
 import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from '@/hooks/useSounds'
 import style from './index.module.css'
 import WordSound from '@/components/WordSound'
 import { useAppState } from '../../store/AppState'
+import { WordStat } from '@/utils/statInfo'
+import dayjs from 'dayjs'
 
 const EXPLICIT_SPACE = '␣'
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, isLoop, wordVisible = true }) => {
+const initialStatInfo = {
+  headword: '',
+  timeStart: '',
+  timeEnd: '',
+  countInput: 0,
+  countCorrect: 0,
+  countTypo: 0,
+}
+
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -21,6 +32,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
   const [everWrong, setEverWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
   const { pronunciation } = useAppState()
+
+  const wordStat = useRef<WordStat>(initialStatInfo)
 
   const onKeydown = useCallback(
     (e) => {
@@ -37,38 +50,49 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         setInputWord((value) => (value += char))
         playKeySound()
+
+        wordStat.current.countInput += 1
       } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
     },
     [playKeySound],
   )
 
-  //useEffect set everWrong to false when word change
+  // useEffect when word change
   useEffect(() => {
     setEverWrong(false)
+    wordStat.current = { ...initialStatInfo }
+    wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
   }, [word])
 
   useEffect(() => {
-    if (isStart && (!isFinish || isLoop)) {
-      setIsFinish(false)
+    if (isStart && !isFinish) {
       window.addEventListener('keydown', onKeydown)
     }
     return () => {
       window.removeEventListener('keydown', onKeydown)
     }
-  }, [isStart, isFinish, onKeydown, isLoop])
+  }, [isStart, isFinish, onKeydown])
 
+  // when finished the word
   useEffect(() => {
     if (isFinish) {
+      // prepare wordStat
+      wordStat.current.timeEnd = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+      wordStat.current.headword = originWord
+      wordStat.current.countCorrect = wordStat.current.countInput - wordStat.current.countTypo
+
       playHintSound()
       setInputWord('')
-      onFinish(everWrong)
+      onFinish(everWrong, wordStat.current)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFinish, hasWrong, playHintSound])
 
+  // when has wrong
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
+      wordStat.current.countTypo += 1
       const timer = setTimeout(() => {
         setInputWord('')
         setHasWrong(false)
@@ -78,8 +102,9 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, is
         clearTimeout(timer)
       }
     }
-  }, [hasWrong, isFinish, playBeepSound])
+  }, [hasWrong, playBeepSound])
 
+  // update words state
   useLayoutEffect(() => {
     let hasWrong = false,
       wordLength = word.length,
@@ -132,6 +157,5 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
-  isLoop: boolean
 }
 export default Word

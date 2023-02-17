@@ -19,6 +19,9 @@ import Tooltip from '@/components/Tooltip'
 import { useRandomState } from '@/store/AppState'
 import Progress from './Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
+import mixpanel from 'mixpanel-browser'
+import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
+import dayjs from 'dayjs'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -92,7 +95,7 @@ const App: React.FC = () => {
     }
   }, [isStart, resultScreenState])
 
-  const onFinish = (everWrong: boolean) => {
+  const onFinish = (everWrong: boolean, wordStat: WordStat) => {
     if (wordList === undefined) {
       return
     }
@@ -103,12 +106,44 @@ const App: React.FC = () => {
       setIncorrectInfo((prev) => [...prev, { word: wordList.words[order].name, translation: wordList.words[order].trans.join('；') }])
     }
 
-    // 更新正确率
-    if (switcherState.loop) {
-      return
+    const wordStatUpload: WordStatUpload = {
+      ...wordStat,
+      order: order + 1,
+      chapter: (wordList.chapter + 1).toString(),
+      wordlist: wordList.dictName,
+      modeDictation: !switcherState.wordVisible,
+      modeDark: switcherState.darkMode,
+      modeShuffle: switcherState.random,
+      enabledKeyboardSound: switcherState.sound,
+      enabledPhotonicsSymbol: switcherState.phonetic,
+      pronunciationAuto: pronunciation !== false,
+      pronunciationOption: pronunciation === false ? 'none' : pronunciation,
     }
+    mixpanel.track('Word', wordStatUpload)
+    // 更新正确率
     if (order === wordList.words.length - 1) {
       setIsStart(false)
+
+      // 上传埋点数据
+      const chapterStatUpload: ChapterStatUpload = {
+        timeEnd: dayjs.utc().format('YYYY-MM-DD HH:mm:ss'),
+        duration: speedInfo.second + speedInfo.minute * 60,
+        countInput: inputCount,
+        countTypo: inputCount - correctCount,
+        countCorrect: correctCount,
+        chapter: (wordList.chapter + 1).toString(),
+        wordlist: wordList.dictName,
+        modeDictation: !switcherState.wordVisible,
+        modeDark: switcherState.darkMode,
+        modeShuffle: switcherState.random,
+        enabledKeyboardSound: switcherState.sound,
+        enabledPhotonicsSymbol: switcherState.phonetic,
+        pronunciationAuto: pronunciation !== false,
+        pronunciationOption: pronunciation === false ? 'none' : pronunciation,
+      }
+
+      mixpanel.track('Chapter', chapterStatUpload)
+
       // 用户完成当前章节
       setResultScreenState(true)
     } else {
@@ -214,7 +249,6 @@ const App: React.FC = () => {
                     word={wordList.words[order].name}
                     onFinish={onFinish}
                     isStart={isStart}
-                    isLoop={switcherState.loop}
                     wordVisible={switcherState.wordVisible}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
