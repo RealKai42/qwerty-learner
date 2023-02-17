@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from '@/assets/logo.svg'
 const Header: React.FC = ({ children }) => {
   return (
     <nav className="w-full container mx-auto px-10 py-6">
-      <div className="w-full flex items-center justify-between">
+      <div className="w-full flex items-center justify-between flex-col lg:flex-row space-y-3 lg:space-y-0">
         <NavLink className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" to="/">
           <Logo className="w-16 h-16 mr-3" />
           Qwerty Learner
