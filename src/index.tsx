@@ -12,7 +12,7 @@ import mixpanel from 'mixpanel-browser'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 
-mixpanel.init('5474177127e4767124c123b2d7846e2a', { debug: true })
+mixpanel.init('bdc492847e9340eeebd53cc35f321691')
 dayjs.extend(utc)
 
 ReactDOM.render(
