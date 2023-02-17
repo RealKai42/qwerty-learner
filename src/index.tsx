@@ -8,6 +8,12 @@ import { AppStateProvider } from '@/store/AppState'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'
 import TypingPage from './pages/Typing'
+import mixpanel from 'mixpanel-browser'
+import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
+
+mixpanel.init('bdc492847e9340eeebd53cc35f321691')
+dayjs.extend(utc)
 
 ReactDOM.render(
   <React.StrictMode>

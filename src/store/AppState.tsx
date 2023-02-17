@@ -33,10 +33,6 @@ export type AppState = {
    */
   random: boolean
   /**
-   * Whether loop single word is enabled
-   */
-  loop: boolean
-  /**
    * Whether show phonetic is enabled
    */
   phonetic: boolean
@@ -75,12 +71,6 @@ export function useRandomState(): [status: boolean, setRandom: (state: boolean) 
   const { state, dispatch } = useContext(AppStateContext)
   const setRandom = useCallback((random: boolean) => dispatch({ ...state, random }), [state, dispatch])
   return [state.random, setRandom]
-}
-
-export function useSetLoopState(): [status: boolean, setLoop: (state: boolean) => void] {
-  const { state, dispatch } = useContext(AppStateContext)
-  const setLoop = useCallback((loop: boolean) => dispatch({ ...state, loop }), [state, dispatch])
-  return [state.loop, setLoop]
 }
 
 export function useSetSoundLoopState(): [status: boolean, setLoop: (state: boolean) => void] {
@@ -158,7 +148,6 @@ const defaultState: AppState = {
   pronunciation: 'us',
   selectedChapter: 0,
   random: false,
-  loop: false,
   phonetic: true,
   darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
   soundLoop: false,

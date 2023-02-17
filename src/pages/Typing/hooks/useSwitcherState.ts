@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useSetSoundState, useDarkMode, useRandomState, useSetLoopState, usePhoneticState, useSetSoundLoopState } from '@/store/AppState'
+import { useSetSoundState, useDarkMode, useRandomState, usePhoneticState, useSetSoundLoopState } from '@/store/AppState'
 
 export type SwitcherStateType = {
   phonetic: boolean
@@ -7,7 +7,6 @@ export type SwitcherStateType = {
   sound: boolean
   random: boolean
   darkMode: boolean
-  loop: boolean
   soundLoop: boolean
 }
 
@@ -20,8 +19,6 @@ const useSwitcherState = (initialState: {
 }): [SwitcherStateType, SwitcherDispatchType] => {
   const [phonetic, setPhonetic] = usePhoneticState()
   const [wordVisible, setWordVisible] = useState(initialState.wordVisible)
-  // const [loop, setLoop] = useState(initialState.loop)
-  const [loop, setLoop] = useSetLoopState()
   const [sound, setSound] = useSetSoundState()
   const [random, setRandom] = useRandomState()
   const [darkMode, setDarkMode] = useDarkMode()
@@ -44,15 +41,12 @@ const useSwitcherState = (initialState: {
       case 'darkMode':
         setDarkMode(newStatus ?? !darkMode)
         break
-      case 'loop':
-        setLoop(newStatus ?? !loop)
-        break
       case 'soundLoop':
         setSoundLoop(newStatus ?? !soundLoop)
         break
     }
   }
-  return [{ phonetic, wordVisible, sound, random, darkMode, loop, soundLoop }, dispatch]
+  return [{ phonetic, wordVisible, sound, random, darkMode, soundLoop }, dispatch]
 }
 
 export default useSwitcherState
