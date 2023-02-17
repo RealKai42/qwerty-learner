@@ -180,7 +180,7 @@ const App: React.FC = () => {
           <Header>
             <Tooltip content="词典章节切换">
               <NavLink
-                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-white dark:hover:text-opacity-100"
+                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-white dark:hover:text-opacity-100 block"
                 to="/gallery"
               >
                 {wordList.dictName} 第 {wordList.chapter + 1} 章
@@ -208,7 +208,7 @@ const App: React.FC = () => {
               <div className="h-1/3"></div>
               {!isStart && <h3 className="pb-4 text-xl text-gray-600 dark:text-gray-50 animate-pulse">按任意键开始</h3>}
               {isStart && (
-                <div>
+                <div className="flex flex-col items-center">
                   <Word
                     key={`word-${wordList.words[order].name}-${order}`}
                     word={wordList.words[order].name}
