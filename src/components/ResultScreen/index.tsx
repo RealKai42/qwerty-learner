@@ -96,7 +96,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
         leaveTo="opacity-0"
       >
         <div className="flex items-center justify-center h-screen">
-          <div className="w-[90vw] md:w-4/5 lg:w-3/5 px-10 pt-10 pb-14 card bg-white dark:bg-gray-800 rounded-3xl shadow-lg fixed flex flex-col overflow-hidden">
+          <div className="max-w-6xl w-[90vw] md:w-4/5 lg:w-3/5 px-10 pt-10 pb-14 card bg-white dark:bg-gray-800 rounded-3xl shadow-lg fixed flex flex-col overflow-hidden">
             <div className="text-center font-sans font-normal text-gray-900 text-xl md:text-2xl dark:text-gray-400">
               {wordList ? `${wordList.dictName}  第 ${wordList.chapter + 1} 章` : ' '}
             </div>
