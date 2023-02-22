@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+env:
+  REACT_APP_DEPLOY_ENV: pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -31,11 +33,3 @@ jobs:
         with:
           source-repo: git@github.com:Kaiyiwing/qwerty-learner.git
           destination-repo: git@gitee.com:KaiyiWing/qwerty-learner.git
-
-      - name: Build Gitee Pages
-        uses: yanglbme/gitee-pages-action@main
-        with:
-          gitee-username: KaiyiWing
-          gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          gitee-repo: qwerty-learner
-          branch: gh-pages

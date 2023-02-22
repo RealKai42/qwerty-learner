@@ -18,7 +18,7 @@ dayjs.extend(utc)
 ReactDOM.render(
   <React.StrictMode>
     <AppStateProvider>
-      <Router basename={REACT_APP_DEPLOY_ENV === 'travis' ? '/qwerty-learner' : ''}>
+      <Router basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
         <Switch>
           <Route path="/gallery">
             <GalleryPage />

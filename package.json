@@ -53,7 +53,7 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "cross-env CI=false vite build",
+    "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",
     "lint": "eslint .",
     "analyze": "source-map-explorer 'build/static/js/*.js'"
