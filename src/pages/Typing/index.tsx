@@ -7,7 +7,7 @@ import Speed from '@/components/Speed'
 import Loading from '@/components/Loading'
 import Phonetic from '@/components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
-import { isLegal, IsDesktop } from '@/utils/utils'
+import { isLegal, IsDesktop, languageCategory } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
@@ -30,6 +30,7 @@ const App: React.FC = () => {
   const [isStart, setIsStart] = useState<boolean>(false)
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
+  const [language, setLanguage] = useState<string>('en')
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
 
@@ -37,6 +38,10 @@ const App: React.FC = () => {
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
   const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
   const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
+
+  useEffect(() => {
+    setLanguage(wordList?.language || 'en')
+  }, [wordList])
 
   useEffect(() => {
     // reset order when random change
@@ -245,6 +250,7 @@ const App: React.FC = () => {
               {isStart && (
                 <div className="flex flex-col items-center">
                   <Word
+                    language={language}
                     key={`word-${wordList.words[order].name}-${order}`}
                     word={wordList.words[order].name}
                     onFinish={onFinish}

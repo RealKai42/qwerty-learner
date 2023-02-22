@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useCallback, useLayoutEffect, useRef } from 'react'
 import Letter, { LetterState } from './Letter'
-import { isLegal, isChineseSymbol } from '../../utils/utils'
 import useSounds from '@/hooks/useSounds'
 import style from './index.module.css'
 import WordSound from '@/components/WordSound'
 import { useAppState } from '../../store/AppState'
 import { WordStat } from '@/utils/statInfo'
 import dayjs from 'dayjs'
+import { languageCategory } from '@/utils/utils'
+import DIH from '../../pages/Typing/Input_handler/Direct_input_handler/index' //DirectInputHandler
+import IIH from '../../pages/Typing/Input_handler/Indirect_input_handler/index' //IndirectInputHandler
 
 const EXPLICIT_SPACE = '␣'
 
@@ -19,7 +21,7 @@ const initialStatInfo = {
   countTypo: 0,
 }
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -35,7 +37,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
 
   const wordStat = useRef<WordStat>(initialStatInfo)
 
-  const onKeydown = useCallback(
+  /*   const onKeydown = useCallback(
+    // 抽离时要改
     (e) => {
       const char = e.key
       if (char === ' ') {
@@ -55,7 +58,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
     },
     [playKeySound],
-  )
+  ) */
 
   // useEffect when word change
   useEffect(() => {
@@ -63,15 +66,6 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     wordStat.current = { ...initialStatInfo }
     wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
   }, [word])
-
-  useEffect(() => {
-    if (isStart && !isFinish) {
-      window.addEventListener('keydown', onKeydown)
-    }
-    return () => {
-      window.removeEventListener('keydown', onKeydown)
-    }
-  }, [isStart, isFinish, onKeydown])
 
   // when finished the word
   useEffect(() => {
@@ -132,23 +126,30 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   const playWordSound = pronunciation !== false
 
   return (
-    <div className="flex justify-center pt-4 pb-1">
-      <div className="relative">
-        <div className={`flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
-          {word.split('').map((t, index) => {
-            return (
-              <Letter
-                key={`${index}-${t}`}
-                visible={statesList[index] === 'correct' ? true : wordVisible}
-                letter={t}
-                state={statesList[index]}
-              />
-            )
-          })}
+    <>
+      <div className="flex justify-center pt-4 pb-1">
+        <div className="relative">
+          <div className={`flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
+            {word.split('').map((t, index) => {
+              return (
+                <Letter
+                  key={`${index}-${t}`}
+                  visible={statesList[index] === 'correct' ? true : wordVisible}
+                  letter={t}
+                  state={statesList[index]}
+                />
+              )
+            })}
+          </div>
+          {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
         </div>
-        {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
       </div>
-    </div>
+      {languageCategory.direct.includes(language) ? (
+        <DIH isStart={isStart} isFinish={isFinish} setInputWord={setInputWord} playKeySound={playKeySound} />
+      ) : (
+        <IIH setInputWord={setInputWord} playKeySound={playKeySound} />
+      )}
+    </>
   )
 }
 
@@ -157,5 +158,6 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
+  language: string
 }
 export default Word
