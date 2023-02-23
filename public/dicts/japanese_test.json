@@ -1,0 +1,38 @@
+[
+    {
+        "name": "こんにちは",
+        "trans": [
+            "hello"
+        ]
+    },
+    {
+        "name": "ありがとう",
+        "trans": [
+            "thank you"
+        ]
+    },
+    {
+        "name": "はい",
+        "trans": [
+            "yes"
+        ]
+    },
+    {
+        "name": "いいえ",
+        "trans": [
+            "no"
+        ]
+    },
+    {
+        "name": "さようなら",
+        "trans": [
+            "goodbye"
+        ]
+    },
+    {
+        "name": "おはよう",
+        "trans": [
+            "good morning"
+        ]
+    }
+]

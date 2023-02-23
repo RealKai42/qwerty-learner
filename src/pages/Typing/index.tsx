@@ -41,6 +41,17 @@ const App: React.FC = () => {
 
   useEffect(() => {
     setLanguage(wordList?.language || 'en')
+    //update pronunciation based on language using changePronunciation
+    //use switch case
+    switch (wordList?.language) {
+      case 'en':
+        changePronunciation('us')
+        break
+      //other case, the parameter is the wordList.language
+      default:
+        changePronunciation(wordList?.language || 'us')
+        break
+    }
   }, [wordList])
 
   useEffect(() => {

@@ -1,0 +1,38 @@
+[
+    {
+        "name": "안녕하세요",
+        "trans": [
+            "hello"
+        ]
+    },
+    {
+        "name": "감사합니다",
+        "trans": [
+            "thank you"
+        ]
+    },
+    {
+        "name": "예",
+        "trans": [
+            "yes"
+        ]
+    },
+    {
+        "name": "아니요",
+        "trans": [
+            "no"
+        ]
+    },
+    {
+        "name": "안녕히 계세요",
+        "trans": [
+            "goodbye"
+        ]
+    },
+    {
+        "name": "좋은 아침",
+        "trans": [
+            "good morning"
+        ]
+    }
+]
