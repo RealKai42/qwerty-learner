@@ -7,7 +7,7 @@ import Speed from '@/components/Speed'
 import Loading from '@/components/Loading'
 import Phonetic from '@/components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
-import { isLegal, IsDesktop, languageCategory } from '@/utils/utils'
+import { isLegal, IsDesktop } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
@@ -41,18 +41,19 @@ const App: React.FC = () => {
 
   useEffect(() => {
     setLanguage(wordList?.language || 'en')
-    //update pronunciation based on language using changePronunciation
-    //use switch case
-    switch (wordList?.language) {
+  }, [wordList])
+
+  useEffect(() => {
+    switch (language) {
       case 'en':
         changePronunciation('us')
         break
       //other case, the parameter is the wordList.language
       default:
-        changePronunciation(wordList?.language || 'us')
+        changePronunciation(language || 'us')
         break
     }
-  }, [wordList])
+  }, [language])
 
   useEffect(() => {
     // reset order when random change
