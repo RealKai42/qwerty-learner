@@ -12,8 +12,17 @@ function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronunciation
       return `${pronunciationApi}${word}&type=1`
     case 'us':
       return `${pronunciationApi}${word}&type=2`
-    case 'jap':
+    case 'romaji':
       return `${pronunciationApi}${word}&le=jap`
+    case 'zh':
+      return `${pronunciationApi}${word}&le=zh`
+    case 'jp':
+      return `${pronunciationApi}${word}&le=jap`
+    case 'ko':
+      return `${pronunciationApi}${word}&le=ko`
+    //unknown whether zh pronunciation api is available
+    //check api for ko/jp later
+    //jp and zh are correct
   }
 }
 

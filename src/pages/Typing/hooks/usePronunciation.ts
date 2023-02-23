@@ -13,11 +13,20 @@ const usePronunciation = (): [PronunciationType, SwitcherDispatchType] => {
       case 'us':
         setPronunciation('us')
         break
-      case 'jap':
-        setPronunciation('jap')
+      case 'romaji':
+        setPronunciation('romaji')
         break
       case 'false':
         setPronunciation(false)
+        break
+      case 'zh':
+        setPronunciation('zh')
+        break
+      case 'jp':
+        setPronunciation('jp')
+        break
+      case 'ko':
+        setPronunciation('ko')
         break
     }
   }

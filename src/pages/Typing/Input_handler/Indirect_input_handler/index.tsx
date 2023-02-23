@@ -1,12 +1,30 @@
 import { useEffect, useRef, useState } from 'react'
 
 export type IIHProps = {
+  language: string
   setInputWord: (value: string | ((prevValue: string) => string)) => void
   playKeySound: () => void
 }
 
+//multiple regexp expressions for different target languages
+//for zh, jp, ko
+//a function, give a language, return a regexp
+const getRegexp = (language: string) => {
+  switch (language) {
+    case 'zh':
+      return /[\u4e00-\u9fa5]/g
+    case 'jp':
+      return /[\u3040-\u309f\u30a0-\u30ff\uff66-\uff9f]/g
+    case 'ko':
+      return /[\uac00-\ud7a3]/g
+    default:
+      //for english
+      return /[a-zA-Z]/g
+  }
+}
+
 //const Indirect_input_handler = () => {
-const Indirect_input_handler: React.FC<IIHProps> = ({ setInputWord, playKeySound }) => {
+const Indirect_input_handler: React.FC<IIHProps> = ({ language, setInputWord, playKeySound }) => {
   const inputRef = useRef<HTMLInputElement>(null)
   //const [inputValueUnprocessed, setInputValue] = useState('')
   const [unprocessedInput, setUnprocessedInput] = useState('')
@@ -19,7 +37,9 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ setInputWord, playKeySound
   //process input
   useEffect(() => {
     //regexp to save only chinese characters
-    const regexp = /[\u4e00-\u9fa5]/g
+    //const regexp = /[\u4e00-\u9fa5]/g
+    //dynamicly get regexp using getRegexp function
+    const regexp = getRegexp(language)
     //extract chinese characters
     const extracted = unprocessedInput.match(regexp)?.join('') || ''
     //add to bottom of processedInput

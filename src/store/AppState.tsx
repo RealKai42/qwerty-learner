@@ -3,7 +3,8 @@ import React, { useCallback, useContext } from 'react'
 import { useLocalStorage } from 'react-use'
 import { dictionaries, Dictionary } from '@/resources/dictionary'
 
-export type PronunciationType = 'us' | 'uk' | 'jap' | false
+//export type PronunciationType = 'us' | 'uk' | 'jap' | false
+export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ko' | 'jp' | false
 
 export type AppState = {
   /**

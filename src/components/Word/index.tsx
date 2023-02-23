@@ -147,7 +147,7 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
       {languageCategory.direct.includes(language) ? (
         <DIH isStart={isStart} isFinish={isFinish} setInputWord={setInputWord} playKeySound={playKeySound} />
       ) : (
-        <IIH setInputWord={setInputWord} playKeySound={playKeySound} />
+        <IIH language={language} setInputWord={setInputWord} playKeySound={playKeySound} />
       )}
     </>
   )
