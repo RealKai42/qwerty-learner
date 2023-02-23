@@ -18,12 +18,18 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ setInputWord, playKeySound
 
   //process input
   useEffect(() => {
-    //regexp to extract legal part
-    const extracted = unprocessedInput.replace(/[^[\u4e00-\u9fa5]+/g, '')
+    //regexp to save only chinese characters
+    const regexp = /[\u4e00-\u9fa5]/g
+    //extract chinese characters
+    const extracted = unprocessedInput.match(regexp)?.join('') || ''
     //add to bottom of processedInput
     setProcessedInput((prev) => prev + extracted)
     //clear unprocessedInput
     setUnprocessedInput('')
+    //reget focus on input again
+    if (inputRef.current) {
+      inputRef.current.focus()
+    }
   }, [unprocessedInput])
 
   useEffect(() => {

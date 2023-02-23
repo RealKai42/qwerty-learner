@@ -50,6 +50,15 @@ export const dictionaries: Dictionary[] = [
     language: 'en',
   },
   {
+    id: 'zhtest',
+    name: '中文测试',
+    description: '中文测试词库',
+    category: '测试',
+    url: './dicts/chinese_test.json',
+    length: 6,
+    language: 'zh',
+  },
+  {
     id: 'ielts',
     name: 'IELTS',
     description: '雅思词库',
