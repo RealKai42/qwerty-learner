@@ -9,6 +9,7 @@ import dayjs from 'dayjs'
 import { languageCategory } from '@/utils/utils'
 import DIH from '../../pages/Typing/Input_handler/Direct_input_handler/index' //DirectInputHandler
 import IIH from '../../pages/Typing/Input_handler/Indirect_input_handler/index' //IndirectInputHandler
+import { has } from 'lodash'
 
 const EXPLICIT_SPACE = '␣'
 
@@ -147,7 +148,7 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
       {languageCategory.direct.includes(language) ? (
         <DIH isStart={isStart} isFinish={isFinish} setInputWord={setInputWord} playKeySound={playKeySound} />
       ) : (
-        <IIH language={language} setInputWord={setInputWord} playKeySound={playKeySound} />
+        <IIH hasWrong={hasWrong} language={language} setInputWord={setInputWord} playKeySound={playKeySound} />
       )}
     </>
   )

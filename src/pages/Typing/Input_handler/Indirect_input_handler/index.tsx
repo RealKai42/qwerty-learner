@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 
 export type IIHProps = {
   language: string
+  hasWrong: boolean
   setInputWord: (value: string | ((prevValue: string) => string)) => void
   playKeySound: () => void
 }
@@ -23,10 +24,8 @@ const getRegexp = (language: string) => {
   }
 }
 
-//const Indirect_input_handler = () => {
-const Indirect_input_handler: React.FC<IIHProps> = ({ language, setInputWord, playKeySound }) => {
+const Indirect_input_handler: React.FC<IIHProps> = ({ language, hasWrong, setInputWord, playKeySound }) => {
   const inputRef = useRef<HTMLInputElement>(null)
-  //const [inputValueUnprocessed, setInputValue] = useState('')
   const [unprocessedInput, setUnprocessedInput] = useState('')
   const [processedInput, setProcessedInput] = useState('')
 
@@ -34,10 +33,15 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ language, setInputWord, pl
     setUnprocessedInput(e.target.value)
   }
 
+  useEffect(() => {
+    if (hasWrong) {
+      setProcessedInput('')
+    }
+  }, [hasWrong])
+
   //process input
   useEffect(() => {
     //regexp to save only chinese characters
-    //const regexp = /[\u4e00-\u9fa5]/g
     //dynamicly get regexp using getRegexp function
     const regexp = getRegexp(language)
     //extract chinese characters
@@ -72,14 +76,21 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ language, setInputWord, pl
   }, [])
 
   return (
-    <input
-      ref={inputRef}
-      className=""
-      style={{ opacity: 0, height: 0, width: 0, transform: 'translateY(4em)' }}
-      tabIndex={-1}
-      value={unprocessedInput}
-      onChange={handleOnchange}
-    />
+    <>
+      <input
+        ref={inputRef}
+        className=""
+        style={{
+          opacity: 0,
+          height: 0,
+          width: 0,
+          transform: 'translateY(4em)',
+        }}
+        tabIndex={-1}
+        value={unprocessedInput}
+        onChange={handleOnchange}
+      />
+    </>
   )
 }
 
