@@ -134,6 +134,7 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
             {word.split('').map((t, index) => {
               return (
                 <Letter
+                  language={language}
                   key={`${index}-${t}`}
                   visible={statesList[index] === 'correct' ? true : wordVisible}
                   letter={t}

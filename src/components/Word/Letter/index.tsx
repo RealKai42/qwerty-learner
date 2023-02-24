@@ -17,9 +17,21 @@ const stateClassNameMap: Record<string, Record<LetterState, string>> = {
   },
 }
 
-const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible }) => (
+//for different language, the font className is different
+//language == 'zh', font className is 'font-monoSans'
+//else 'font-mono'
+//a function to return the font className
+const getFontClassName = (language: string) => {
+  if (language === 'zh') {
+    return 'font-monoSans'
+  } else {
+    return 'font-mono'
+  }
+}
+
+const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible, language }) => (
   <span
-    className={`m-0 p-0 text-5xl font-mono font-normal ${
+    className={`m-0 p-0 text-5xl ${getFontClassName(language)} font-normal ${
       stateClassNameMap[((letter === EXPLICIT_SPACE) as unknown) as string][state]
     } pr-0.8 duration-0 dark:text-opacity-80`}
   >
@@ -33,4 +45,5 @@ export type LetterProps = {
   letter: string
   state: LetterState
   visible: boolean
+  language: string
 }

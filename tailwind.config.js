@@ -3,6 +3,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sansSC: ['Noto Sans SC', 'sans-serif'],
+      },
       transitionDuration: {
         0: '0ms',
       },
