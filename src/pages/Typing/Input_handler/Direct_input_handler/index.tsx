@@ -31,6 +31,7 @@ const DirectInputHandler: React.FC<DIHProps> = ({ isStart, isFinish, setInputWor
         //wordStat.current.countInput += 1
       } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [playKeySound],
   )
 

@@ -54,6 +54,7 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ language, hasWrong, setInp
     if (inputRef.current) {
       inputRef.current.focus()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [unprocessedInput])
 
   useEffect(() => {
@@ -61,7 +62,7 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ language, hasWrong, setInp
       setInputWord(processedInput)
       playKeySound() //keysound will be played no matter the input is correct or not originally, so here we play it without checking
     }
-  }, [processedInput])
+  }, [processedInput, playKeySound, setInputWord])
 
   useEffect(() => {
     const handleKeyDown = () => {

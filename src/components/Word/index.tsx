@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useLayoutEffect, useRef } from 'react'
+import React, { useEffect, useState, useLayoutEffect, useRef } from 'react'
 import Letter, { LetterState } from './Letter'
 import useSounds from '@/hooks/useSounds'
 import style from './index.module.css'
@@ -9,7 +9,6 @@ import dayjs from 'dayjs'
 import { languageCategory } from '@/utils/utils'
 import DIH from '../../pages/Typing/Input_handler/Direct_input_handler/index' //DirectInputHandler
 import IIH from '../../pages/Typing/Input_handler/Indirect_input_handler/index' //IndirectInputHandler
-import { has } from 'lodash'
 
 const EXPLICIT_SPACE = '␣'
 

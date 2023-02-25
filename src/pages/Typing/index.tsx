@@ -53,6 +53,7 @@ const App: React.FC = () => {
         changePronunciation(language || 'us')
         break
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language])
 
   useEffect(() => {
