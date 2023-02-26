@@ -22,10 +22,15 @@ const stateClassNameMap: Record<string, Record<LetterState, string>> = {
 //else 'font-mono'
 //a function to return the font className
 const getFontClassName = (language: string) => {
-  if (language === 'zh') {
-    return 'font-monoSans'
-  } else {
-    return 'font-mono'
+  switch (language) {
+    case 'zh':
+      return 'font-sansSC'
+    case 'jp':
+      return 'font-sansJP'
+    case 'ko':
+      return 'font-sansKR'
+    default:
+      return 'font-mono'
   }
 }
 

@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sansSC: ['Noto Sans SC', 'sans-serif'],
+        sansJP: ['Noto Sans JP', 'sans-serif'],
+        sansKR: ['Noto Sans KR', 'sans-serif'],
       },
       transitionDuration: {
         0: '0ms',
