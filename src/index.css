@@ -52,21 +52,21 @@ body,
 
 @layer components {
   .word-chip {
-    @apply border-indigo-400 dark:border-slate-800 border-solid border-2
-      rounded-md bg-white
-    dark:bg-slate-700 hover:bg-indigo-100 dark:hover:bg-slate-600
-      w-auto h-10 md:h-12 px-2 md:px-5 py-0.5 md:py-1 flex flex-row
-      cursor-pointer transition-colors duration-100
-      items-center justify-center;
+    @apply flex h-10 w-auto cursor-pointer
+      flex-row items-center
+    justify-center rounded-md border-2
+      border-solid border-indigo-400 bg-white px-2 py-0.5 transition-colors duration-100 hover:bg-indigo-100 dark:border-slate-800
+      dark:bg-slate-700 dark:hover:bg-slate-600 md:h-12
+      md:px-5 md:py-1;
   }
 
   .word-chip > span {
-    @apply font-mono font-light text-gray-600 dark:text-gray-300 text-2xl md:text-3xl;
+    @apply font-mono text-2xl font-light text-gray-600 dark:text-gray-300 md:text-3xl;
   }
 
   .word-chip-tooltip {
-    @apply flex items-center justify-center pointer-events-none py-1 px-2
-      bg-white dark:bg-gray-800 rounded-lg shadow-md text-gray-500
-      dark:text-gray-300 text-xs whitespace-nowrap;
+    @apply pointer-events-none flex items-center justify-center whitespace-nowrap rounded-lg
+      bg-white py-1 px-2 text-xs text-gray-500
+      shadow-md dark:bg-gray-800 dark:text-gray-300;
   }
 }

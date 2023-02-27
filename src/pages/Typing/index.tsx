@@ -215,7 +215,7 @@ const App: React.FC = () => {
           <Header>
             <Tooltip content="词典章节切换">
               <NavLink
-                className="text-lg px-4 py-1 rounded-lg transition-colors duration-300 ease-in-out focus:outline-none dark:text-white dark:text-opacity-60 hover:bg-indigo-400 hover:text-white dark:hover:text-opacity-100 block"
+                className="block rounded-lg px-4 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
                 to="/gallery"
               >
                 {wordList.dictName} 第 {wordList.chapter + 1} 章
@@ -229,7 +229,7 @@ const App: React.FC = () => {
               <button
                 className={`${
                   isStart ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
-                }  text-white dark:text-opacity-80 transition-colors duration-300 text-lg w-20 px-6 py-1 rounded-lg focus:outline-none flex items-center justify-center`}
+                }  flex w-20 items-center justify-center rounded-lg px-6 py-1 text-lg text-white transition-colors duration-300 focus:outline-none dark:text-opacity-80`}
                 onClick={(e) => {
                   setIsStart((isStart) => !isStart)
                 }}
@@ -239,9 +239,9 @@ const App: React.FC = () => {
             </Tooltip>
           </Header>
           <Main>
-            <div className="container h-full relative flex mx-auto flex-col items-center">
+            <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="h-1/3"></div>
-              {!isStart && <h3 className="pb-4 text-xl text-gray-600 dark:text-gray-50 animate-pulse">按任意键开始</h3>}
+              {!isStart && <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>}
               {isStart && (
                 <div className="flex flex-col items-center">
                   <Word
