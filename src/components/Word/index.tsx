@@ -6,9 +6,7 @@ import WordSound from '@/components/WordSound'
 import { useAppState } from '../../store/AppState'
 import { WordStat } from '@/utils/statInfo'
 import dayjs from 'dayjs'
-import { languageCategory } from '@/utils/utils'
-import DIH from '../../pages/Typing/Input_handler/Direct_input_handler/index' //DirectInputHandler
-import IIH from '../../pages/Typing/Input_handler/Indirect_input_handler/index' //IndirectInputHandler
+import InputHandler from '@/pages/Typing/Input_handler'
 
 const EXPLICIT_SPACE = '␣'
 
@@ -36,29 +34,6 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
   const { pronunciation } = useAppState()
 
   const wordStat = useRef<WordStat>(initialStatInfo)
-
-  /*   const onKeydown = useCallback(
-    // 抽离时要改
-    (e) => {
-      const char = e.key
-      if (char === ' ') {
-        // 防止用户惯性按空格导致页面跳动
-        e.preventDefault()
-        setInputWord((value) => (value += EXPLICIT_SPACE))
-        playKeySound()
-      }
-      if (isChineseSymbol(char)) {
-        alert('您正在使用中文输入法输入，请关闭输入法')
-      }
-      if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-        setInputWord((value) => (value += char))
-        playKeySound()
-
-        wordStat.current.countInput += 1
-      } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
-    },
-    [playKeySound],
-  ) */
 
   // useEffect when word change
   useEffect(() => {
@@ -145,11 +120,14 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
           {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
         </div>
       </div>
-      {languageCategory.direct.includes(language) ? (
-        <DIH isStart={isStart} isFinish={isFinish} setInputWord={setInputWord} playKeySound={playKeySound} />
-      ) : (
-        <IIH hasWrong={hasWrong} language={language} setInputWord={setInputWord} playKeySound={playKeySound} />
-      )}
+      <InputHandler
+        language={language}
+        isStart={isStart}
+        isFinish={isFinish}
+        setInputWord={setInputWord}
+        playKeySound={playKeySound}
+        hasWrong={hasWrong}
+      />
     </>
   )
 }

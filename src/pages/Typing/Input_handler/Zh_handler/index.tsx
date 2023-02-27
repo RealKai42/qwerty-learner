@@ -7,10 +7,7 @@ export type IIHProps = {
   playKeySound: () => void
 }
 
-//multiple regexp expressions for different target languages
-//for zh, jp, ko
-//a function, give a language, return a regexp
-const getRegexp = (language: string) => {
+/* const getRegexp = (language: string) => {
   switch (language) {
     case 'zh':
       return /[\u4e00-\u9fa5]/g
@@ -22,7 +19,7 @@ const getRegexp = (language: string) => {
       //for english
       return /[a-zA-Z]/g
   }
-}
+} */
 
 const Indirect_input_handler: React.FC<IIHProps> = ({ language, hasWrong, setInputWord, playKeySound }) => {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -41,16 +38,15 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ language, hasWrong, setInp
 
   //process input
   useEffect(() => {
-    //regexp to save only chinese characters
-    //dynamicly get regexp using getRegexp function
-    const regexp = getRegexp(language)
+    //chinaese characters
+    const regexp = /[\u4e00-\u9fa5]/g
     //extract chinese characters
     const extracted = unprocessedInput.match(regexp)?.join('') || ''
     //add to bottom of processedInput
     setProcessedInput((prev) => prev + extracted)
     //clear unprocessedInput
     setUnprocessedInput('')
-    //reget focus on input again
+    //get focus on input again
     if (inputRef.current) {
       inputRef.current.focus()
     }
