@@ -5,12 +5,13 @@ export type DIHProps = {
   isStart: boolean
   isFinish: boolean
   setInputWord: (value: string | ((prevValue: string) => string)) => void
+  setInputCount: Function
   playKeySound: () => void
 }
 
 const EXPLICIT_SPACE = '␣'
 
-const DirectInputHandler: React.FC<DIHProps> = ({ isStart, isFinish, setInputWord, playKeySound }) => {
+const DirectInputHandler: React.FC<DIHProps> = ({ isStart, isFinish, setInputWord, playKeySound, setInputCount }) => {
   const onKeydown = useCallback(
     // 抽离时要改
     (e) => {
@@ -26,6 +27,7 @@ const DirectInputHandler: React.FC<DIHProps> = ({ isStart, isFinish, setInputWor
       }
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         setInputWord((value) => (value += char))
+        setInputCount((value: number) => value + 1)
         playKeySound()
 
         //wordStat.current.countInput += 1

@@ -19,7 +19,7 @@ const initialStatInfo = {
   countTypo: 0,
 }
 
-const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, isStart, wordVisible = true, setInputCount }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -125,6 +125,7 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
         isStart={isStart}
         isFinish={isFinish}
         setInputWord={setInputWord}
+        setInputCount={setInputCount}
         playKeySound={playKeySound}
         hasWrong={hasWrong}
       />
@@ -138,5 +139,7 @@ export type WordProps = {
   isStart: boolean
   wordVisible: boolean
   language: string
+  //setInputCount is dispatch function
+  setInputCount: Function
 }
 export default Word

@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 
 export type IIHProps = {
-  language: string
   hasWrong: boolean
   setInputWord: (value: string | ((prevValue: string) => string)) => void
+  setInputCount: Function
   playKeySound: () => void
 }
 
@@ -21,13 +21,14 @@ export type IIHProps = {
   }
 } */
 
-const Indirect_input_handler: React.FC<IIHProps> = ({ language, hasWrong, setInputWord, playKeySound }) => {
+const Indirect_input_handler: React.FC<IIHProps> = ({ hasWrong, setInputWord, setInputCount, playKeySound }) => {
   const inputRef = useRef<HTMLInputElement>(null)
   const [unprocessedInput, setUnprocessedInput] = useState('')
   const [processedInput, setProcessedInput] = useState('')
 
   const handleOnchange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUnprocessedInput(e.target.value)
+    setInputCount((prev: number) => prev + e.target.value.length)
   }
 
   useEffect(() => {
@@ -39,7 +40,9 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ language, hasWrong, setInp
   //process input
   useEffect(() => {
     //chinaese characters
-    const regexp = /[\u4e00-\u9fa5]/g
+    //const regexp = /[\u4e00-\u9fa5]/g
+    //plus common characters like space, comma, period, etc
+    const regexp = /[\u4e00-\u9fa5a-zA-Z0-9\s，。?]/g
     //extract chinese characters
     const extracted = unprocessedInput.match(regexp)?.join('') || ''
     //add to bottom of processedInput

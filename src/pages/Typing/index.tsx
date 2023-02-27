@@ -7,7 +7,7 @@ import Speed from '@/components/Speed'
 import Loading from '@/components/Loading'
 import Phonetic from '@/components/Phonetic'
 import PronunciationSwitcher from './PronunciationSwitcher'
-import { isLegal, IsDesktop } from '@/utils/utils'
+import { IsDesktop } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
@@ -85,11 +85,11 @@ const App: React.FC = () => {
   useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
       if (!resultScreenState) {
-        if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        /* if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
           if (isStart) {
             setInputCount((count) => count + 1)
           }
-        }
+        } */
         setIsStart(true)
       }
     }
@@ -270,6 +270,7 @@ const App: React.FC = () => {
                     onFinish={onFinish}
                     isStart={isStart}
                     wordVisible={switcherState.wordVisible}
+                    setInputCount={setInputCount}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                     <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />

@@ -7,18 +7,36 @@ export type Input_handlerProps = {
   isStart: boolean
   isFinish: boolean
   setInputWord: (value: string | ((prevValue: string) => string)) => void
+  //dispatch
+  setInputCount: Function
   hasWrong: boolean
   playKeySound: () => void
   //place needed props for all input handlers here
 }
 
-const InputHandler: React.FC<Input_handlerProps> = ({ language, isStart, isFinish, setInputWord, playKeySound, hasWrong }) => {
+const InputHandler: React.FC<Input_handlerProps> = ({
+  language,
+  isStart,
+  isFinish,
+  setInputWord,
+  playKeySound,
+  setInputCount,
+  hasWrong,
+}) => {
   //render En_handler or IIH based on language, using switch
   switch (language) {
     case 'en':
-      return <EnHandler isStart={isStart} isFinish={isFinish} setInputWord={setInputWord} playKeySound={playKeySound} />
+      return (
+        <EnHandler
+          isStart={isStart}
+          isFinish={isFinish}
+          setInputWord={setInputWord}
+          playKeySound={playKeySound}
+          setInputCount={setInputCount}
+        />
+      )
     case 'zh':
-      return <ZhHandler language={language} hasWrong={hasWrong} setInputWord={setInputWord} playKeySound={playKeySound} />
+      return <ZhHandler hasWrong={hasWrong} setInputWord={setInputWord} playKeySound={playKeySound} setInputCount={setInputCount} />
     /* more cases */
     default:
       return <></>
