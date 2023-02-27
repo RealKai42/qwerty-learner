@@ -55,7 +55,7 @@ export const dictionaries: Dictionary[] = [
     description: '中文测试词库',
     category: '测试',
     url: './dicts/chinese_test.json',
-    length: 6,
+    length: 27,
     language: 'zh',
   },
   {
@@ -64,7 +64,7 @@ export const dictionaries: Dictionary[] = [
     description: '日文测试词库',
     category: '测试',
     url: './dicts/japanese_test.json',
-    length: 6,
+    length: 20,
     language: 'jp',
   },
   {
@@ -73,7 +73,7 @@ export const dictionaries: Dictionary[] = [
     description: '韩文测试词库',
     category: '测试',
     url: './dicts/korean_test.json',
-    length: 6,
+    length: 20,
     language: 'ko',
   },
   {
