@@ -61,7 +61,7 @@ body,
   }
 
   .word-chip > span {
-    @apply font-mono font-light text-gray-600 dark:text-gray-300 text-2xl md:text-3xl;
+    @apply font-light text-gray-600 dark:text-gray-300 text-2xl md:text-3xl;
   }
 
   .word-chip-tooltip {

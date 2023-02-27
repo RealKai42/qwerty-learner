@@ -219,6 +219,7 @@ const App: React.FC = () => {
     <>
       {resultScreenState && (
         <ResultScreen
+          language={language}
           incorrectInfo={incorrectInfo}
           speedInfo={speedInfo}
           repeatButtonHandler={repeatButtonHandler}
