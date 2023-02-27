@@ -2,5 +2,5 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 yarn run lint-staged
-eslint . --fix
-prettier --write .
+yarn run eslint . --fix
+yarn run prettier --write .
