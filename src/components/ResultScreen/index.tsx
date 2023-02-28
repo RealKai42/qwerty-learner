@@ -19,7 +19,6 @@ export type ResultSpeedInfo = {
 }
 
 type ResultScreenProps = {
-  language: string
   incorrectInfo: IncorrectInfo[]
   speedInfo: ResultSpeedInfo
   repeatButtonHandler: () => void
@@ -28,7 +27,6 @@ type ResultScreenProps = {
 }
 
 const ResultScreen: React.FC<ResultScreenProps> = ({
-  language,
   speedInfo,
   incorrectInfo,
   repeatButtonHandler,
@@ -111,7 +109,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
               <div className="rounded-xl bg-indigo-50 dark:bg-gray-700 flex-1 mx-6 overflow-visible z-10">
                 <div className="flex flex-row gap-4 flex-wrap overflow-y-auto overflow-x-hidden customized-scrollbar h-80 content-start ml-8 mr-1 pr-7 pt-9 z-20">
                   {incorrectInfo.map((info) => (
-                    <WordChip key={info.word} mistake={info} language={language} />
+                    <WordChip key={info.word} mistake={info} />
                   ))}
                 </div>
                 <div className="bg-indigo-200 dark:bg-indigo-400 w-full rounded-b-xl flex flex-row justify-start align-center px-4">

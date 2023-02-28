@@ -1,30 +1,24 @@
 import { useEffect, useRef, useState } from 'react'
+import { useAtom } from 'jotai'
+import { inputCountAtom } from '../..'
 
 export type IIHProps = {
   hasWrong: boolean
   setInputWord: (value: string | ((prevValue: string) => string)) => void
-  setInputCount: Function
+  //setInputCount: Function
   playKeySound: () => void
 }
 
-/* const getRegexp = (language: string) => {
-  switch (language) {
-    case 'zh':
-      return /[\u4e00-\u9fa5]/g
-    case 'jp':
-      return /[\u3040-\u309f\u30a0-\u30ff\uff66-\uff9f]/g
-    case 'ko':
-      return /[\uac00-\ud7a3]/g
-    default:
-      //for english
-      return /[a-zA-Z]/g
-  }
-} */
-
-const Indirect_input_handler: React.FC<IIHProps> = ({ hasWrong, setInputWord, setInputCount, playKeySound }) => {
+const Indirect_input_handler: React.FC<IIHProps> = ({
+  hasWrong,
+  setInputWord,
+  //setInputCount,
+  playKeySound,
+}) => {
   const inputRef = useRef<HTMLInputElement>(null)
   const [unprocessedInput, setUnprocessedInput] = useState('')
   const [processedInput, setProcessedInput] = useState('')
+  const [, setInputCount] = useAtom(inputCountAtom)
 
   const handleOnchange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUnprocessedInput(e.target.value)
@@ -37,19 +31,11 @@ const Indirect_input_handler: React.FC<IIHProps> = ({ hasWrong, setInputWord, se
     }
   }, [hasWrong])
 
-  //process input
   useEffect(() => {
-    //chinaese characters
-    //const regexp = /[\u4e00-\u9fa5]/g
-    //plus common characters like space, comma, period, etc
     const regexp = /[\u4e00-\u9fa5a-zA-Z0-9\s，。?]/g
-    //extract chinese characters
     const extracted = unprocessedInput.match(regexp)?.join('') || ''
-    //add to bottom of processedInput
     setProcessedInput((prev) => prev + extracted)
-    //clear unprocessedInput
     setUnprocessedInput('')
-    //get focus on input again
     if (inputRef.current) {
       inputRef.current.focus()
     }

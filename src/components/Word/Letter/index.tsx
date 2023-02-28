@@ -1,4 +1,6 @@
 import React from 'react'
+import { useAtom } from 'jotai'
+import { languageAtom } from '../../../pages/Typing'
 
 export type LetterState = 'normal' | 'correct' | 'wrong'
 
@@ -34,15 +36,24 @@ const getFontClassName = (language: string) => {
   }
 }
 
-const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible, language }) => (
-  <span
-    className={`m-0 p-0 text-5xl ${getFontClassName(language)} font-normal ${
-      stateClassNameMap[((letter === EXPLICIT_SPACE) as unknown) as string][state]
-    } pr-0.8 duration-0 dark:text-opacity-80`}
-  >
-    {visible ? letter : '_'}
-  </span>
-)
+const Letter: React.FC<LetterProps> = ({
+  letter,
+  state = 'normal',
+  visible,
+  //language
+}) => {
+  const [language] = useAtom(languageAtom)
+
+  return (
+    <span
+      className={`m-0 p-0 text-5xl ${getFontClassName(language)} font-normal ${
+        stateClassNameMap[((letter === EXPLICIT_SPACE) as unknown) as string][state]
+      } pr-0.8 duration-0 dark:text-opacity-80`}
+    >
+      {visible ? letter : '_'}
+    </span>
+  )
+}
 
 export default React.memo(Letter)
 
@@ -50,5 +61,5 @@ export type LetterProps = {
   letter: string
   state: LetterState
   visible: boolean
-  language: string
+  //language: string
 }

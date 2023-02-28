@@ -23,14 +23,21 @@ import mixpanel from 'mixpanel-browser'
 import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
 import dayjs from 'dayjs'
 
+import { atom, useAtom } from 'jotai'
+
+export const inputCountAtom = atom<number>(0)
+export const languageAtom = atom<string>('en')
+
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
-  const [inputCount, setInputCount] = useState<number>(0)
+
+  const [inputCount, setInputCount] = useAtom(inputCountAtom)
+  const [language, setLanguage] = useAtom(languageAtom)
+
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
-  const [language, setLanguage] = useState<string>('en')
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
 
@@ -41,14 +48,18 @@ const App: React.FC = () => {
 
   useEffect(() => {
     setLanguage(wordList?.language || 'en')
-  }, [wordList])
+    console.log('wordList?.language', wordList?.language)
+  }, [wordList?.language])
+
+  useEffect(() => {
+    console.log('language', language)
+  }, [language])
 
   useEffect(() => {
     switch (language) {
       case 'en':
         changePronunciation('us')
         break
-      //other case, the parameter is the wordList.language
       default:
         changePronunciation(language || 'us')
         break
@@ -85,11 +96,6 @@ const App: React.FC = () => {
   useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
       if (!resultScreenState) {
-        /* if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-          if (isStart) {
-            setInputCount((count) => count + 1)
-          }
-        } */
         setIsStart(true)
       }
     }
@@ -219,7 +225,6 @@ const App: React.FC = () => {
     <>
       {resultScreenState && (
         <ResultScreen
-          language={language}
           incorrectInfo={incorrectInfo}
           speedInfo={speedInfo}
           repeatButtonHandler={repeatButtonHandler}
@@ -264,13 +269,11 @@ const App: React.FC = () => {
               {isStart && (
                 <div className="flex flex-col items-center">
                   <Word
-                    language={language}
                     key={`word-${wordList.words[order].name}-${order}`}
                     word={wordList.words[order].name}
                     onFinish={onFinish}
                     isStart={isStart}
                     wordVisible={switcherState.wordVisible}
-                    setInputCount={setInputCount}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                     <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />

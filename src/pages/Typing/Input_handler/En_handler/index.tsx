@@ -1,17 +1,25 @@
 import { useEffect, useCallback } from 'react'
 import { isLegal, isChineseSymbol } from '@/utils/utils'
+import { useAtom } from 'jotai'
+import { inputCountAtom } from '../..'
 // DIH: Direct_input_handler
 export type DIHProps = {
   isStart: boolean
   isFinish: boolean
   setInputWord: (value: string | ((prevValue: string) => string)) => void
-  setInputCount: Function
+  //setInputCount: Function
   playKeySound: () => void
 }
 
 const EXPLICIT_SPACE = '␣'
 
-const DirectInputHandler: React.FC<DIHProps> = ({ isStart, isFinish, setInputWord, playKeySound, setInputCount }) => {
+const DirectInputHandler: React.FC<DIHProps> = ({
+  isStart,
+  isFinish,
+  setInputWord,
+  playKeySound,
+  //setInputCount
+}) => {
   const onKeydown = useCallback(
     // 抽离时要改
     (e) => {
@@ -36,6 +44,8 @@ const DirectInputHandler: React.FC<DIHProps> = ({ isStart, isFinish, setInputWor
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [playKeySound],
   )
+
+  const [, setInputCount] = useAtom(inputCountAtom)
 
   useEffect(() => {
     if (isStart && !isFinish) {

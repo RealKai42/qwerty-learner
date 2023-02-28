@@ -19,7 +19,7 @@ const initialStatInfo = {
   countTypo: 0,
 }
 
-const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, isStart, wordVisible = true, setInputCount }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -108,7 +108,6 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
             {word.split('').map((t, index) => {
               return (
                 <Letter
-                  language={language}
                   key={`${index}-${t}`}
                   visible={statesList[index] === 'correct' ? true : wordVisible}
                   letter={t}
@@ -120,15 +119,7 @@ const Word: React.FC<WordProps> = ({ language, word = 'defaultWord', onFinish, i
           {playWordSound && <WordSound word={originWord} inputWord={inputWord} className={`${style['word-sound']}`} />}
         </div>
       </div>
-      <InputHandler
-        language={language}
-        isStart={isStart}
-        isFinish={isFinish}
-        setInputWord={setInputWord}
-        setInputCount={setInputCount}
-        playKeySound={playKeySound}
-        hasWrong={hasWrong}
-      />
+      <InputHandler isStart={isStart} isFinish={isFinish} setInputWord={setInputWord} playKeySound={playKeySound} hasWrong={hasWrong} />
     </>
   )
 }
@@ -138,8 +129,5 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
-  language: string
-  //setInputCount is dispatch function
-  setInputCount: Function
 }
 export default Word

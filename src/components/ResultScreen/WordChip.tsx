@@ -1,13 +1,15 @@
 import type { IncorrectInfo } from './index'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
 import { useState } from 'react'
+import { useAtom } from 'jotai'
+import { languageAtom } from '../../pages/Typing'
 
 export type WordChipProps = {
   mistake: IncorrectInfo
-  language: string
 }
 
-export default function WordChip({ mistake: { word, translation }, language }: WordChipProps) {
+export default function WordChip({ mistake: { word, translation } }: WordChipProps) {
+  const [language] = useAtom(languageAtom)
   const [showTranslation, setShowTranslation] = useState(false)
   const { x, y, strategy, refs, context } = useFloating({
     open: showTranslation,
