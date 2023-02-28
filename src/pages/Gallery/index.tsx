@@ -22,27 +22,27 @@ const GalleryPage: React.FC = () => {
     <Layout>
       <Header>
         <Tooltip content="快捷键 Enter or Esc">
-          <NavLink className="bg-indigo-400 text-white dark:text-opacity-80 text-lg px-6 py-1 rounded-lg focus:outline-none" to="/">
+          <NavLink className="rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white focus:outline-none dark:text-opacity-80" to="/">
             完成选择
           </NavLink>
         </Tooltip>
       </Header>
       <div className="mt-auto mb-auto flex w-auto space-x-4 overflow-y-auto">
-        <div className="bg-indigo-50 dark:bg-slate-800 rounded-lg p-6 space-y-2 overflow-y-auto flex flex-col">
-          <h2 className="sticky top-0 mb-2 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
+        <div className="flex flex-col space-y-2 overflow-y-auto rounded-lg bg-indigo-50 p-6 dark:bg-slate-800">
+          <h2 className="text-shadow sticky top-0 z-10 mb-2 text-lg font-bold text-gray-700 dark:text-white dark:text-opacity-70">
             词典选择
           </h2>
-          <div className="overflow-y-auto customized-scrollbar">
+          <div className="customized-scrollbar overflow-y-auto">
             {groups.map(([name, items]) => (
               <DictionaryGroup key={name} title={name} dictionaries={items} />
             ))}
           </div>
         </div>
-        <div className="p-6 overflow-y-auto bg-indigo-50 dark:bg-slate-800 rounded-lg flex flex-col">
-          <h2 className="sticky top-0 mb-4 font-bold text-lg text-gray-700 dark:text-white dark:text-opacity-70 text-shadow z-10">
+        <div className="flex flex-col overflow-y-auto rounded-lg bg-indigo-50 p-6 dark:bg-slate-800">
+          <h2 className="text-shadow sticky top-0 z-10 mb-4 text-lg font-bold text-gray-700 dark:text-white dark:text-opacity-70">
             章节选择
           </h2>
-          <div className="overflow-y-auto customized-scrollbar">
+          <div className="customized-scrollbar overflow-y-auto">
             <ChapterGroup totalWords={selectedDictionary.length} />
           </div>
         </div>

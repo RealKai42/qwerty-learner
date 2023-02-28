@@ -12,31 +12,14 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@headlessui/react": "^0.2.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/howler": "^2.2.3",
-    "@types/jest": "^26.0.15",
-    "@types/lodash": "^4.14.168",
-    "@types/mixpanel-browser": "^2.38.1",
-    "@types/node": "16",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
     "autoprefixer": "^10.4.13",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
     "eslint": "^7.18.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
     "howler": "^2.2.3",
-    "husky": "^4.3.8",
-    "lint-staged": "^10.5.3",
     "lodash": "^4.17.20",
     "mixpanel-browser": "^2.45.0",
     "postcss": "^8.4.21",
-    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-app-polyfill": "^2.0.0",
     "react-dom": "^17.0.1",
@@ -56,7 +39,9 @@
     "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",
     "lint": "eslint .",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "plugins": [
@@ -76,11 +61,6 @@
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
       "prettier/prettier": "error"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && eslint . --fix"
     }
   },
   "lint-staged": {
@@ -107,10 +87,28 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/howler": "^2.2.3",
+    "@types/jest": "^26.0.15",
+    "@types/lodash": "^4.14.168",
+    "@types/mixpanel-browser": "^2.38.1",
+    "@types/node": "16",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.7",
     "@vitejs/plugin-react": "^3.1.0",
     "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.3",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.1",
     "vite-plugin-svgr": "^2.4.0"

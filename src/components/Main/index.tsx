@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Main: React.FC = ({ children }) => {
-  return <div className="container h-full mx-auto pb-20 flex flex-col flex-1 items-center justify-center">{children}</div>
+  return <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">{children}</div>
 }
 
 export default Main

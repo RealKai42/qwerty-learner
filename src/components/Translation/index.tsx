@@ -2,7 +2,7 @@ import React from 'react'
 
 const Translation: React.FC<TranslationProps> = ({ trans }) => {
   return (
-    <div className="pt-5 pb-4 text-lg font-sans dark:text-white dark:text-opacity-80 transition-colors duration-300 max-w-4xl">{trans}</div>
+    <div className="max-w-4xl pt-5 pb-4 font-sans text-lg transition-colors duration-300 dark:text-white dark:text-opacity-80">{trans}</div>
   )
 }
 

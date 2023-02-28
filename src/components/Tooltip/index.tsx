@@ -17,9 +17,9 @@ const Tooltip: React.FC<React.PropsWithChildren<TooltipProps>> = ({ children, co
       <div
         className={`${
           visible ? 'opacity-100' : 'opacity-0'
-        } ${placementClasses} absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center pointer-events-none transition-opacity`}
+        } ${placementClasses} pointer-events-none absolute left-1/2 flex -translate-x-1/2 transform items-center justify-center transition-opacity`}
       >
-        <span className="py-1 px-2 bg-white dark:bg-gray-700 rounded-lg shadow-md text-gray-500 dark:text-gray-300 text-xs whitespace-nowrap">
+        <span className="whitespace-nowrap rounded-lg bg-white py-1 px-2 text-xs text-gray-500 shadow-md dark:bg-gray-700 dark:text-gray-300">
           {content}
         </span>
       </div>

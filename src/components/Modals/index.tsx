@@ -34,23 +34,23 @@ const Modals: React.FC<ModalsProps> = ({
   thirdButtonHotkey = '',
 }) => {
   useHotkeys('enter', () => {
-    const e: MouseEvent = (null as unknown) as MouseEvent
+    const e: MouseEvent = null as unknown as MouseEvent
     firstButtonOnclick(e)
   })
 
   useHotkeys('shift+enter', () => {
-    const e: MouseEvent = (null as unknown) as MouseEvent
+    const e: MouseEvent = null as unknown as MouseEvent
     secondButtonOnclick(e)
   })
 
   useHotkeys(thirdButtonHotkey, () => {
-    const e: MouseEvent = (null as unknown) as MouseEvent
+    const e: MouseEvent = null as unknown as MouseEvent
     if (thirdButtonOnclick) thirdButtonOnclick(e)
   })
 
   return (
-    <div className="fixed z-10 inset-0 overflow-y-auto">
-      <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div className="fixed inset-0 z-10 overflow-y-auto">
+      <div className="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
         <Transition
           show={state}
           enter="ease-out duration-30"
@@ -65,7 +65,7 @@ const Modals: React.FC<ModalsProps> = ({
           </div>
         </Transition>
 
-        <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
+        <span className="hidden sm:inline-block sm:h-screen sm:align-middle" aria-hidden="true">
           &#8203;
         </span>
 
@@ -80,7 +80,7 @@ const Modals: React.FC<ModalsProps> = ({
         >
           {(ref) => (
             <div
-              className="inline-block align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+              className="inline-block transform overflow-hidden rounded-lg bg-white text-left align-bottom shadow-xl transition-all dark:bg-gray-800 sm:my-8 sm:w-full sm:max-w-lg sm:align-middle"
               ref={ref}
               role="dialog"
               aria-modal="true"
@@ -88,12 +88,12 @@ const Modals: React.FC<ModalsProps> = ({
             >
               <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
-                  <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 dark:bg-indigo-900 sm:mx-0 sm:h-10 sm:w-10">
+                  <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 sm:mx-0 sm:h-10 sm:w-10">
                     <FontAwesomeIcon icon="book-reader" className="h-10 w-10 stroke-current text-indigo-500 dark:text-indigo-400" />
                   </div>
 
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
+                    <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
                       {title}
                     </h3>
                     <div className="mt-2">
@@ -103,11 +103,11 @@ const Modals: React.FC<ModalsProps> = ({
                 </div>
               </div>
 
-              <div className="bg-gray-50 dark:bg-gray-700 dark:bg-opacity-10 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse sm:space-x-3 sm:space-x-reverse">
+              <div className="bg-gray-50 px-4 py-3 dark:bg-gray-700 dark:bg-opacity-10 sm:flex sm:flex-row-reverse sm:space-x-3 sm:space-x-reverse sm:px-6">
                 <Tooltip content="快捷键 Enter">
                   <button
                     type="button"
-                    className={`w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white dark:text-opacity-80 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto sm:text-sm ${firstButtonClassName}`}
+                    className={`inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:text-opacity-80 sm:w-auto sm:text-sm ${firstButtonClassName}`}
                     onClick={firstButtonOnclick}
                   >
                     {firstButton}
@@ -117,7 +117,7 @@ const Modals: React.FC<ModalsProps> = ({
                 <Tooltip content="快捷键 Shift + Enter">
                   <button
                     type="button"
-                    className={`mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-500 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-base font-medium text-gray-700 dark:text-white dark:text-opacity-60 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm ${
+                    className={`mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:border-gray-500 dark:bg-gray-800 dark:text-white dark:text-opacity-60 dark:hover:bg-gray-700 sm:mt-0 sm:w-auto sm:text-sm ${
                       secondButtonClassName ?? ''
                     }`}
                     onClick={secondButtonOnclick}
@@ -130,7 +130,7 @@ const Modals: React.FC<ModalsProps> = ({
                   <Tooltip content={`快捷键 ${thirdButtonHotkey}`}>
                     <button
                       type="button"
-                      className={`mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-gray-500 shadow-sm px-4 py-2 bg-white dark:bg-gray-800 text-base font-medium text-gray-700 dark:text-white dark:text-opacity-60 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm ${
+                      className={`mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:border-gray-500 dark:bg-gray-800 dark:text-white dark:text-opacity-60 dark:hover:bg-gray-700 sm:mt-0 sm:w-auto sm:text-sm ${
                         secondButtonClassName ?? ''
                       }`}
                       onClick={thirdButtonOnclick}

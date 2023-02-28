@@ -110,7 +110,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ state, dispatch }) => {
       </Tooltip>
       <Tooltip content="开关深色模式（Ctrl + D）">
         <button
-          className={`text-indigo-400 text-lg focus:outline-none`}
+          className={`text-lg text-indigo-400 focus:outline-none`}
           onClick={(e) => {
             dispatch('darkMode')
             e.currentTarget.blur()

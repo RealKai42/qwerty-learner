@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
         >
           {content === 'donate' ? (
             <>
-              <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
+              <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
                 Buy me a coffee
               </h3>
               <div className="mt-2 ">
@@ -37,12 +37,12 @@ const Footer: React.FC = () => {
                 <br />
                 <p className="text-sm text-gray-700 dark:text-gray-200">如果您喜欢我们软件，非常感谢您对我们未来的支持!</p>
                 <br />
-                <img className="w-2/6 ml-1 " src={alipay} alt="alipay" />
+                <img className="ml-1 w-2/6 " src={alipay} alt="alipay" />
               </div>
             </>
           ) : (
             <>
-              <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
+              <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
                 VSCode 摸🐟插件
               </h3>
               <div className="mt-2 ">
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   可以在任意文件中一键开启，开启后单词显示在状态栏中，且插件会拦截用户对文档的输入，不会影响到原始文档。
                 </p>
                 <br /> <br />
-                <a className="underline mr-5 dark:text-gray-300" href="https://github.com/Kaiyiwing/qwerty-learner-vscode">
+                <a className="mr-5 underline dark:text-gray-300" href="https://github.com/Kaiyiwing/qwerty-learner-vscode">
                   GitHub 项目
                 </a>
                 <a className="underline dark:text-gray-300" href="https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner">
@@ -63,9 +63,9 @@ const Footer: React.FC = () => {
           )}
         </InfoPanel>
       )}
-      <div className="w-full text-sm text-center mt-4 pb-1 ease-in" onClick={(e) => e.currentTarget.blur()}>
+      <div className="mt-4 w-full pb-1 text-center text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 dark:text-gray-400 mr-3" />
+          <FontAwesomeIcon icon={['fab', 'github']} className="mr-3 text-gray-500 dark:text-gray-400" />
         </a>
 
         <span
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={['fas', 'coffee']} className="text-gray-500 dark:text-gray-400 mr-3" />
+          <FontAwesomeIcon icon={['fas', 'coffee']} className="mr-3 text-gray-500 dark:text-gray-400" />
         </span>
 
         <span
@@ -91,19 +91,19 @@ const Footer: React.FC = () => {
         </span>
 
         <a href="mailto:ZHANG.Kaiyi42@gmail.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-          <FontAwesomeIcon icon={['fas', 'envelope']} className="text-gray-500 dark:text-gray-400 mr-3" />
+          <FontAwesomeIcon icon={['fas', 'envelope']} className="mr-3 text-gray-500 dark:text-gray-400" />
         </a>
 
         <div className="group relative inline-block ">
-          <a href="https://kaiyiwing.gitee.io/qwerty-learner/" className="text-gray-500 dark:text-gray-400 mr-3" title="中国大陆节点">
+          <a href="https://kaiyiwing.gitee.io/qwerty-learner/" className="mr-3 text-gray-500 dark:text-gray-400" title="中国大陆节点">
             🇨🇳
           </a>
-          <div className="invisible group-hover:visible absolute bottom-full left-1/2 w-40 -ml-20 pt-2 flex items-center justify-center">
-            <span className="py-1 px-3 text-gray-500 dark:text-gray-400 text-xs">中国大陆镜像</span>
+          <div className="invisible absolute bottom-full left-1/2 -ml-20 flex w-40 items-center justify-center pt-2 group-hover:visible">
+            <span className="py-1 px-3 text-xs text-gray-500 dark:text-gray-400">中国大陆镜像</span>
           </div>
         </div>
         <span
-          className="text-gray-500 dark:text-gray-400 cursor-pointer no-underline hover:no-underline "
+          className="cursor-pointer text-gray-500 no-underline hover:no-underline dark:text-gray-400 "
           onClick={(e) => {
             setShowContent('donate')
             setShowModal(true)
@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
           @ Qwerty Learner
         </span>
         <a
-          className="text-gray-500 dark:text-gray-400 cursor-pointer no-underline hover:no-underline pl-2"
+          className="cursor-pointer pl-2 text-gray-500 no-underline hover:no-underline dark:text-gray-400"
           href="https://beian.miit.gov.cn"
           target="_blank"
           rel="noreferrer"

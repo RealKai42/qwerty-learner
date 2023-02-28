@@ -14,8 +14,8 @@ type InfoPanelProps = {
 
 const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color, iconColor, btnColor, children }) => {
   return (
-    <div className="fixed z-10 inset-0 overflow-y-auto">
-      <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div className="fixed inset-0 z-10 overflow-y-auto">
+      <div className="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
         <Transition
           show={state}
           enter="ease-out duration-30"
@@ -27,7 +27,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color
         >
           <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
         </Transition>
-        <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
+        <span className="hidden sm:inline-block sm:h-screen sm:align-middle" aria-hidden="true">
           &#8203;
         </span>
         <Transition
@@ -41,7 +41,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color
         >
           {(ref) => (
             <div
-              className="inline-block align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full "
+              className="inline-block transform overflow-hidden rounded-lg bg-white text-left align-bottom shadow-xl transition-all dark:bg-gray-800 sm:my-8 sm:w-full sm:max-w-lg sm:align-middle "
               ref={ref}
               role="dialog"
               aria-modal="true"
@@ -50,7 +50,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color
               <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
                   <div
-                    className={`mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-md dark:bg-opacity-70 ${color} sm:mx-0 sm:h-10 sm:w-10 `}
+                    className={`mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-md dark:bg-opacity-70 ${color} sm:mx-0 sm:h-10 sm:w-10 `}
                   >
                     <FontAwesomeIcon icon={icon} className={`h-5 w-5 stroke-current  ${iconColor}`} />
                   </div>
@@ -59,10 +59,10 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ state, buttonOnclick, icon, color
                 </div>
               </div>
 
-              <div className="bg-gray-50 dark:bg-gray-700 dark:bg-opacity-10 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <div className="bg-gray-50 px-4 py-3 dark:bg-gray-700 dark:bg-opacity-10 sm:flex sm:flex-row-reverse sm:px-6">
                 <button
                   type="button"
-                  className={`w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 ${btnColor} dark:bg-opacity-70 text-base font-medium text-white dark:text-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm `}
+                  className={`inline-flex w-full justify-center rounded-md border border-transparent px-4 py-2 shadow-sm ${btnColor} text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:bg-opacity-70 dark:text-opacity-80 sm:ml-3 sm:w-auto sm:text-sm `}
                   onClick={buttonOnclick}
                 >
                   {'关闭'}

@@ -1,12 +1,11 @@
-version: "3"
+version: '3'
 
 services:
   qwertylearner:
-    image: "node:16"
-    user: "root"
-    working_dir: "/app/qwerty-learner"
-    ports:
-      [8990:3000]
+    image: 'node:16'
+    user: 'root'
+    working_dir: '/app/qwerty-learner'
+    ports: [8990:3000]
     volumes:
       - $PWD/:/app/qwerty-learner
     command:
