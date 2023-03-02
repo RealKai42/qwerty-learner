@@ -206,6 +206,7 @@ const App: React.FC = () => {
           repeatButtonHandler={repeatButtonHandler}
           invisibleButtonHandler={invisibleButtonHandler}
           nextButtonHandler={nextButtonHandler}
+          exitButtonHandler={repeatButtonHandler}
         ></ResultScreen>
       )}
       {wordList === undefined ? (
