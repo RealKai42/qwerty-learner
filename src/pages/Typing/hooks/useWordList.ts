@@ -18,6 +18,7 @@ export type UseWordListResult = {
   chapter: number
   chapterListLength: number
   words: Word[]
+  language: string
   setChapterNumber: (index: number) => void
 }
 
@@ -42,6 +43,7 @@ export function useWordList(): UseWordListResult | undefined {
         chapter: currentChapter,
         chapterListLength: wordList.totalChapters,
         words: shuffleWords,
+        language: selectedDictionary.language,
         setChapterNumber: setCurrentChapter,
       }
 }

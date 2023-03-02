@@ -1,9 +1,21 @@
+import { Lang_Pron_Map } from '@/utils/utils'
+import React, { useEffect } from 'react'
+
 export type PronunciationSwitcherPropsType = {
   state: string
+  language: string
   changePronunciationState: (state: string) => void
 }
 
-const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state, changePronunciationState }) => {
+const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state, language, changePronunciationState }) => {
+  const pronListData = Lang_Pron_Map.find((item) => item.language === language)
+  const pronList = pronListData?.pronunciation || []
+  const pronNameList = pronListData?.pronName || []
+
+  useEffect(() => {
+    changePronunciationState(pronList[0])
+  }, [language])
+
   return (
     <div className="flex items-center justify-center space-x-3">
       <div>
@@ -16,9 +28,11 @@ const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state
           }}
         >
           <option value="false">关闭</option>
-          <option value="us">美音</option>
-          <option value="uk">英音</option>
-          <option value="jap">日语</option>
+          {pronList.map((pron, index) => (
+            <option key={pron} value={pron}>
+              {pronNameList[index]}
+            </option>
+          ))}
         </select>
       </div>
     </div>

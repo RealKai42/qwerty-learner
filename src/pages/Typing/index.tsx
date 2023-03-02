@@ -32,6 +32,7 @@ const App: React.FC = () => {
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
+  const [language, setLanguage] = useState<string>('en')
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
@@ -42,6 +43,10 @@ const App: React.FC = () => {
     // reset order when random change
     setOrder(0)
   }, [random])
+
+  useEffect(() => {
+    setLanguage(wordList?.language || 'en')
+  }, [wordList?.language])
 
   useEffect(() => {
     // 检测用户设备
@@ -222,7 +227,7 @@ const App: React.FC = () => {
               </NavLink>
             </Tooltip>
             <Tooltip content="发音切换">
-              <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
+              <PronunciationSwitcher state={pronunciation.toString()} language={language} changePronunciationState={changePronunciation} />
             </Tooltip>
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
             <Tooltip content="快捷键 Enter">

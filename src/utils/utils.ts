@@ -6,6 +6,29 @@ export const isChineseSymbol = (val: string): boolean =>
     val,
   )
 
+export const Lang_Pron_Map = [
+  {
+    language: 'en',
+    pronunciation: ['us', 'uk'],
+    pronName: ['美音', '英音'],
+  },
+  {
+    language: 'romaji',
+    pronunciation: ['romaji'],
+    pronName: ['罗马音'],
+  },
+  {
+    language: 'zh',
+    pronunciation: ['zh'],
+    pronName: ['普通话'],
+  },
+  {
+    language: 'ja',
+    pronunciation: ['ja'],
+    pronName: ['日语'],
+  },
+]
+
 export const IsDesktop = () => {
   const userAgentInfo = navigator.userAgent
   const Agents = ['Android', 'iPhone', 'SymbianOS', 'Windows Phone', 'iPad', 'iPod']
