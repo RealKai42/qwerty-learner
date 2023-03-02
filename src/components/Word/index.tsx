@@ -35,27 +35,22 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
 
   const wordStat = useRef<WordStat>(initialStatInfo)
 
-  const onKeydown = useCallback(
-    (e) => {
-      const char = e.key
-      if (char === ' ') {
-        // 防止用户惯性按空格导致页面跳动
-        e.preventDefault()
-        setInputWord((value) => (value += EXPLICIT_SPACE))
-        playKeySound()
-      }
-      if (isChineseSymbol(char)) {
-        alert('您正在使用中文输入法输入，请关闭输入法')
-      }
-      if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-        setInputWord((value) => (value += char))
-        playKeySound()
+  const onKeydown = useCallback((e) => {
+    const char = e.key
+    if (char === ' ') {
+      // 防止用户惯性按空格导致页面跳动
+      e.preventDefault()
+      setInputWord((value) => (value += EXPLICIT_SPACE))
+    }
+    if (isChineseSymbol(char)) {
+      alert('您正在使用中文输入法输入，请关闭输入法')
+    }
+    if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+      setInputWord((value) => (value += char))
 
-        wordStat.current.countInput += 1
-      } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
-    },
-    [playKeySound],
-  )
+      wordStat.current.countInput += 1
+    } else if (char === 'Backspace') setInputWord((value) => value.substr(0, value.length - 1))
+  }, [])
 
   // useEffect when word change
   useEffect(() => {
@@ -114,6 +109,9 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     for (let i = 0; i < wordLength && i < inputWordLength; i++) {
       if (word[i] === inputWord[i]) {
         statesList.push('correct')
+        if (inputWordLength < wordLength) {
+          playKeySound()
+        }
       } else {
         hasWrong = true
         statesList.push('wrong')
