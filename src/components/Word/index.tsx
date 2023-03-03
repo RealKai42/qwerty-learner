@@ -109,7 +109,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     for (let i = 0; i < wordLength && i < inputWordLength; i++) {
       if (word[i] === inputWord[i]) {
         statesList.push('correct')
-        if (inputWordLength < wordLength) {
+        if (i === inputWordLength - 1) {
           playKeySound()
         }
       } else {
