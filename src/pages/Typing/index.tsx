@@ -247,13 +247,19 @@ const App: React.FC = () => {
                   <Word
                     key={`word-${wordList.words[order].name}-${order}`}
                     word={wordList.words[order].name}
+                    wordDict={wordList.words[order]}
                     onFinish={onFinish}
                     isStart={isStart}
                     wordVisible={switcherState.wordVisible}
                   />
-                  {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
-                    <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
-                  )}
+                  {switcherState.phonetic &&
+                    (wordList.words[order].usphone || wordList.words[order].ukphone || wordList.words[order].japphone) && (
+                      <Phonetic
+                        usphone={wordList.words[order].usphone}
+                        ukphone={wordList.words[order].ukphone}
+                        japphone={wordList.words[order].japphone}
+                      />
+                    )}
                   <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
                 </div>
               )}

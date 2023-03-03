@@ -1,402 +1,502 @@
 [
-  {
-    "name": "ohayou gozaimasu",
-    "trans": ["Good morning--おはようございます"]
-  },
-  {
-    "name": "konnichiwa",
-    "trans": ["Hello/ good afternoon--こんにちは"]
-  },
-  {
-    "name": "konbanwa",
-    "trans": ["Good evening--こんばんは"]
-  },
-  {
-    "name": "oyasuminasai",
-    "trans": ["Goodnight--おやすみなさい"]
-  },
-  {
-    "name": "arigatou gozaimasu",
-    "trans": ["Thank you--ありがとうございます"]
-  },
-  {
-    "name": "sumimasen",
-    "trans": ["Excuse me/ sorry--すみません"]
-  },
-  {
-    "name": "gomennasai",
-    "trans": ["Sorry--ごめんなさい"]
-  },
-  {
-    "name": "hai",
-    "trans": ["Yes--はい"]
-  },
-  {
-    "name": "iie",
-    "trans": ["No--いいえ"]
-  },
-  {
-    "name": "watashi",
-    "trans": ["I/me--わたし"]
-  },
-  {
-    "name": "anata",
-    "trans": ["You--あなた"]
-  },
-  {
-    "name": "okaasan",
-    "trans": ["Mother--お母さん"]
-  },
-  {
-    "name": "otousan",
-    "trans": ["Father--お父さん"]
-  },
-  {
-    "name": "ojiisan",
-    "trans": ["Grandfather--お爺さん"]
-  },
-  {
-    "name": "obaasan",
-    "trans": ["Grandmother--お婆さん"]
-  },
-  {
-    "name": "ojisan",
-    "trans": ["Uncle--おじさん"]
-  },
-  {
-    "name": "obasan",
-    "trans": ["Aunt--おばさん"]
-  },
-  {
-    "name": "oniisan",
-    "trans": ["Older brother--お兄さん"]
-  },
-  {
-    "name": "oneesan",
-    "trans": ["Older sister--お姉さん"]
-  },
-  {
-    "name": "otouto",
-    "trans": ["Younger brother--弟"]
-  },
-  {
-    "name": "imouto",
-    "trans": ["Younger sister--妹"]
-  },
-  {
-    "name": "ichi",
-    "trans": ["One--一"]
-  },
-  {
-    "name": "ni",
-    "trans": ["Two--二"]
-  },
-  {
-    "name": "san",
-    "trans": ["Three--三"]
-  },
-  {
-    "name": "shi/yon",
-    "trans": ["Four--四"]
-  },
-  {
-    "name": "go",
-    "trans": ["Five--五"]
-  },
-  {
-    "name": "roku",
-    "trans": ["Six--六"]
-  },
-  {
-    "name": "shichi/nana",
-    "trans": ["Seven--七"]
-  },
-  {
-    "name": "hachi",
-    "trans": ["Eight--八"]
-  },
-  {
-    "name": "kyuu",
-    "trans": ["Nine--九"]
-  },
-  {
-    "name": "juu",
-    "trans": ["Ten--十"]
-  },
-  {
-    "name": "ichigatsu",
-    "trans": ["January--一月"]
-  },
-  {
-    "name": "nigatsu",
-    "trans": ["February--二月"]
-  },
-  {
-    "name": "sangatsu",
-    "trans": ["March--三月"]
-  },
-  {
-    "name": "shigatsu",
-    "trans": ["April--四月"]
-  },
-  {
-    "name": "gogatsu",
-    "trans": ["May--五月"]
-  },
-  {
-    "name": "rokugatsu",
-    "trans": ["June--六月"]
-  },
-  {
-    "name": "shichigatsu",
-    "trans": ["July--七月"]
-  },
-  {
-    "name": "hachigatsu",
-    "trans": ["August--八月"]
-  },
-  {
-    "name": "kugatsu",
-    "trans": ["September--九月"]
-  },
-  {
-    "name": "juugatsu",
-    "trans": ["October--十月"]
-  },
-  {
-    "name": "juuichigatsu",
-    "trans": ["November--十一月"]
-  },
-  {
-    "name": "juunigatsu",
-    "trans": ["December--十二月"]
-  },
-  {
-    "name": "getsuyoubi",
-    "trans": ["Monday--月曜日"]
-  },
-  {
-    "name": "kayoubi",
-    "trans": ["Tuesday--火曜日"]
-  },
-  {
-    "name": "suiyoubi",
-    "trans": ["Wednesday--水曜日"]
-  },
-  {
-    "name": "mokuyoubi",
-    "trans": ["Thursday--木曜日"]
-  },
-  {
-    "name": "kinyoubi",
-    "trans": ["Friday--金曜日"]
-  },
-  {
-    "name": "doyoubi",
-    "trans": ["Saturday--土曜日"]
-  },
-  {
-    "name": "nichiyoubi",
-    "trans": ["Sunday--日曜日"]
-  },
-  {
-    "name": "kinou",
-    "trans": ["Yesterday--昨日"]
-  },
-  {
-    "name": "kyou",
-    "trans": ["Today--今日"]
-  },
-  {
-    "name": "ashita",
-    "trans": ["Tomorrow--明日"]
-  },
-  {
-    "name": "asa",
-    "trans": ["Morning--朝"]
-  },
-  {
-    "name": "hiru",
-    "trans": ["Noon--昼"]
-  },
-  {
-    "name": "yuugata",
-    "trans": ["Evening--夕方"]
-  },
-  {
-    "name": "yoru",
-    "trans": ["Night--夜"]
-  },
-  {
-    "name": "tanoshii",
-    "trans": ["Happy--楽しい"]
-  },
-  {
-    "name": "kanashii",
-    "trans": ["Sad--悲しい"]
-  },
-  {
-    "name": "takai",
-    "trans": ["High/expensive--高い"]
-  },
-  {
-    "name": "hikui",
-    "trans": ["Low--低い"]
-  },
-  {
-    "name": "yasui",
-    "trans": ["Cheap--安い"]
-  },
-  {
-    "name": "hayai",
-    "trans": ["Fast/early--早い"]
-  },
-  {
-    "name": "osoi",
-    "trans": ["Slow--遅い"]
-  },
-  {
-    "name": "isogashii",
-    "trans": ["Busy--忙しい"]
-  },
-  {
-    "name": "oishii",
-    "trans": ["Delicious--美味しい"]
-  },
-  {
-    "name": "mazui",
-    "trans": ["Awful--不味い"]
-  },
-  {
-    "name": "amai",
-    "trans": ["Sweet--甘い"]
-  },
-  {
-    "name": "shoppai",
-    "trans": ["Salty--塩っぱい"]
-  },
-  {
-    "name": "suppai",
-    "trans": ["Sour--酸っぱい"]
-  },
-  {
-    "name": "nigai",
-    "trans": ["Bitter--苦い"]
-  },
-  {
-    "name": "karai",
-    "trans": ["Hot/ spicy--辛い"]
-  },
-  {
-    "name": "atsui",
-    "trans": ["Hot--熱い"]
-  },
-  {
-    "name": "atatakai",
-    "trans": ["Warm--暖かい"]
-  },
-  {
-    "name": "tsumetai",
-    "trans": ["Cold--冷たい"]
-  },
-  {
-    "name": "akarui",
-    "trans": ["Bright--明るい"]
-  },
-  {
-    "name": "kurai",
-    "trans": ["Dark--暗い"]
-  },
-  {
-    "name": "",
-    "trans": ["To do--する"]
-  },
-  {
-    "name": "miru",
-    "trans": ["To see--見る"]
-  },
-  {
-    "name": "kiku",
-    "trans": ["To listen--聞く"]
-  },
-  {
-    "name": "hanasu",
-    "trans": ["To talk/speak--話す"]
-  },
-  {
-    "name": "iu",
-    "trans": ["To say--言う"]
-  },
-  {
-    "name": "kaku",
-    "trans": ["To write--書く"]
-  },
-  {
-    "name": "taberu",
-    "trans": ["To eat--食べる"]
-  },
-  {
-    "name": "nomu",
-    "trans": ["To drink--飲む"]
-  },
-  {
-    "name": "aruku",
-    "trans": ["To walk--歩く"]
-  },
-  {
-    "name": "hashiru",
-    "trans": ["To run--走る"]
-  },
-  {
-    "name": "suwaru",
-    "trans": ["To sit--座る"]
-  },
-  {
-    "name": "tatsu",
-    "trans": ["To stand--立つ"]
-  },
-  {
-    "name": "tabemono",
-    "trans": ["Food--食べ物"]
-  },
-  {
-    "name": "nomimono",
-    "trans": ["Drinks--飲み物"]
-  },
-  {
-    "name": "gohan",
-    "trans": ["Rice/meal--ご飯"]
-  },
-  {
-    "name": "mizu",
-    "trans": ["Water/cold water--水"]
-  },
-  {
-    "name": "oyu",
-    "trans": ["Hot water--お湯"]
-  },
-  {
-    "name": "niku",
-    "trans": ["Meat--肉"]
-  },
-  {
-    "name": "yasai",
-    "trans": ["Vegetable--野菜"]
-  },
-  {
-    "name": "sakana",
-    "trans": ["Fish--魚"]
-  },
-  {
-    "name": "ramen",
-    "trans": ["Ramen--ラーメン"]
-  },
-  {
-    "name": "sushi",
-    "trans": ["Sushi--寿司"]
-  },
-  {
-    "name": "onigiri",
-    "trans": ["Onigiri--おにぎり"]
-  }
+ {
+   "name": "ohayou gozaimasu",
+   "trans": ["Good morning"],
+   "japphone": "おはようございます"
+ },
+ {
+   "name": "konnichiwa",
+   "trans": ["Hello/ good afternoon"],
+   "japphone": "こんにちは"
+ },
+ {
+   "name": "konbanwa",
+   "trans": ["Good evening"],
+   "japphone": "こんばんは"
+ },
+ {
+   "name": "oyasuminasai",
+   "trans": ["Goodnight"],
+   "japphone": "おやすみなさい"
+ },
+ {
+   "name": "arigatou gozaimasu",
+   "trans": ["Thank you"],
+   "japphone": "ありがとうございます"
+ },
+ {
+   "name": "sumimasen",
+   "trans": ["Excuse me/ sorry"],
+   "japphone": "すみません"
+ },
+ {
+   "name": "gomennasai",
+   "trans": ["Sorry"],
+   "japphone": "ごめんなさい"
+ },
+ {
+   "name": "hai",
+   "trans": ["Yes"],
+   "japphone": "はい"
+ },
+ {
+   "name": "iie",
+   "trans": ["No"],
+   "japphone": "いいえ"
+ },
+ {
+   "name": "watashi",
+   "trans": ["I/me"],
+   "japphone": "わたし"
+ },
+ {
+   "name": "anata",
+   "trans": ["You"],
+   "japphone": "あなた"
+ },
+ {
+   "name": "okaasan",
+   "trans": ["Mother"],
+   "japphone": "お母さん"
+ },
+ {
+   "name": "otousan",
+   "trans": ["Father"],
+   "japphone": "お父さん"
+ },
+ {
+   "name": "ojiisan",
+   "trans": ["Grandfather"],
+   "japphone": "お爺さん"
+ },
+ {
+   "name": "obaasan",
+   "trans": ["Grandmother"],
+   "japphone": "お婆さん"
+ },
+ {
+   "name": "ojisan",
+   "trans": ["Uncle"],
+   "japphone": "おじさん"
+ },
+ {
+   "name": "obasan",
+   "trans": ["Aunt"],
+   "japphone": "おばさん"
+ },
+ {
+   "name": "oniisan",
+   "trans": ["Older brother"],
+   "japphone": "お兄さん"
+ },
+ {
+   "name": "oneesan",
+   "trans": ["Older sister"],
+   "japphone": "お姉さん"
+ },
+ {
+   "name": "otouto",
+   "trans": ["Younger brother"],
+   "japphone": "弟"
+ },
+ {
+   "name": "imouto",
+   "trans": ["Younger sister"],
+   "japphone": "妹"
+ },
+ {
+   "name": "ichi",
+   "trans": ["One"],
+   "japphone": "一"
+ },
+ {
+   "name": "ni",
+   "trans": ["Two"],
+   "japphone": "二"
+ },
+ {
+   "name": "san",
+   "trans": ["Three"],
+   "japphone": "三"
+ },
+ {
+   "name": "shi/yon",
+   "trans": ["Four"],
+   "japphone": "四"
+ },
+ {
+   "name": "go",
+   "trans": ["Five"],
+   "japphone": "五"
+ },
+ {
+   "name": "roku",
+   "trans": ["Six"],
+   "japphone": "六"
+ },
+ {
+   "name": "nana",
+   "trans": ["Seven"],
+   "japphone": "七"
+ },
+ {
+   "name": "hachi",
+   "trans": ["Eight"],
+   "japphone": "八"
+ },
+ {
+   "name": "kyuu",
+   "trans": ["Nine"],
+   "japphone": "九"
+ },
+ {
+   "name": "juu",
+   "trans": ["Ten"],
+   "japphone": "十"
+ },
+ {
+   "name": "ichigatsu",
+   "trans": ["January"],
+   "japphone": "一月"
+ },
+ {
+   "name": "nigatsu",
+   "trans": ["February"],
+   "japphone": "二月"
+ },
+ {
+   "name": "sangatsu",
+   "trans": ["March"],
+   "japphone": "三月"
+ },
+ {
+   "name": "shigatsu",
+   "trans": ["April"],
+   "japphone": "四月"
+ },
+ {
+   "name": "gogatsu",
+   "trans": ["May"],
+   "japphone": "五月"
+ },
+ {
+   "name": "rokugatsu",
+   "trans": ["June"],
+   "japphone": "六月"
+ },
+ {
+   "name": "shichigatsu",
+   "trans": ["July"],
+   "japphone": "七月"
+ },
+ {
+   "name": "hachigatsu",
+   "trans": ["August"],
+   "japphone": "八月"
+ },
+ {
+   "name": "kugatsu",
+   "trans": ["September"],
+   "japphone": "九月"
+ },
+ {
+   "name": "juugatsu",
+   "trans": ["October"],
+   "japphone": "十月"
+ },
+ {
+   "name": "juuichigatsu",
+   "trans": ["November"],
+   "japphone": "十一月"
+ },
+ {
+   "name": "juunigatsu",
+   "trans": ["December"],
+   "japphone": "十二月"
+ },
+ {
+   "name": "getsuyoubi",
+   "trans": ["Monday"],
+   "japphone": "月曜日"
+ },
+ {
+   "name": "kayoubi",
+   "trans": ["Tuesday"],
+   "japphone": "火曜日"
+ },
+ {
+   "name": "suiyoubi",
+   "trans": ["Wednesday"],
+   "japphone": "水曜日"
+ },
+ {
+   "name": "mokuyoubi",
+   "trans": ["Thursday"],
+   "japphone": "木曜日"
+ },
+ {
+   "name": "kinyoubi",
+   "trans": ["Friday"],
+   "japphone": "金曜日"
+ },
+ {
+   "name": "doyoubi",
+   "trans": ["Saturday"],
+   "japphone": "土曜日"
+ },
+ {
+   "name": "nichiyoubi",
+   "trans": ["Sunday"],
+   "japphone": "日曜日"
+ },
+ {
+   "name": "kinou",
+   "trans": ["Yesterday"],
+   "japphone": "昨日"
+ },
+ {
+   "name": "kyou",
+   "trans": ["Today"],
+   "japphone": "今日"
+ },
+ {
+   "name": "ashita",
+   "trans": ["Tomorrow"],
+   "japphone": "明日"
+ },
+ {
+   "name": "asa",
+   "trans": ["Morning"],
+   "japphone": "朝"
+ },
+ {
+   "name": "hiru",
+   "trans": ["Noon"],
+   "japphone": "昼"
+ },
+ {
+   "name": "yuugata",
+   "trans": ["Evening"],
+   "japphone": "夕方"
+ },
+ {
+   "name": "yoru",
+   "trans": ["Night"],
+   "japphone": "夜"
+ },
+ {
+   "name": "tanoshii",
+   "trans": ["Happy"],
+   "japphone": "楽しい"
+ },
+ {
+   "name": "kanashii",
+   "trans": ["Sad"],
+   "japphone": "悲しい"
+ },
+ {
+   "name": "takai",
+   "trans": ["High/expensive"],
+   "japphone": "高い"
+ },
+ {
+   "name": "hikui",
+   "trans": ["Low"],
+   "japphone": "低い"
+ },
+ {
+   "name": "yasui",
+   "trans": ["Cheap"],
+   "japphone": "安い"
+ },
+ {
+   "name": "hayai",
+   "trans": ["Fast/early"],
+   "japphone": "早い"
+ },
+ {
+   "name": "osoi",
+   "trans": ["Slow"],
+   "japphone": "遅い"
+ },
+ {
+   "name": "isogashii",
+   "trans": ["Busy"],
+   "japphone": "忙しい"
+ },
+ {
+   "name": "oishii",
+   "trans": ["Delicious"],
+   "japphone": "美味しい"
+ },
+ {
+   "name": "mazui",
+   "trans": ["Awful"],
+   "japphone": "不味い"
+ },
+ {
+   "name": "amai",
+   "trans": ["Sweet"],
+   "japphone": "甘い"
+ },
+ {
+   "name": "shoppai",
+   "trans": ["Salty"],
+   "japphone": "塩っぱい"
+ },
+ {
+   "name": "suppai",
+   "trans": ["Sour"],
+   "japphone": "酸っぱい"
+ },
+ {
+   "name": "nigai",
+   "trans": ["Bitter"],
+   "japphone": "苦い"
+ },
+ {
+   "name": "karai",
+   "trans": ["Hot/ spicy"],
+   "japphone": "辛い"
+ },
+ {
+   "name": "atsui",
+   "trans": ["Hot"],
+   "japphone": "熱い"
+ },
+ {
+   "name": "atatakai",
+   "trans": ["Warm"],
+   "japphone": "暖かい"
+ },
+ {
+   "name": "tsumetai",
+   "trans": ["Cold"],
+   "japphone": "冷たい"
+ },
+ {
+   "name": "akarui",
+   "trans": ["Bright"],
+   "japphone": "明るい"
+ },
+ {
+   "name": "kurai",
+   "trans": ["Dark"],
+   "japphone": "暗い"
+ },
+ {
+   "name": "",
+   "trans": ["To do"],
+   "japphone": "する"
+ },
+ {
+   "name": "miru",
+   "trans": ["To see"],
+   "japphone": "見る"
+ },
+ {
+   "name": "kiku",
+   "trans": ["To listen"],
+   "japphone": "聞く"
+ },
+ {
+   "name": "hanasu",
+   "trans": ["To talk/speak"],
+   "japphone": "話す"
+ },
+ {
+   "name": "iu",
+   "trans": ["To say"],
+   "japphone": "言う"
+ },
+ {
+   "name": "kaku",
+   "trans": ["To write"],
+   "japphone": "書く"
+ },
+ {
+   "name": "taberu",
+   "trans": ["To eat"],
+   "japphone": "食べる"
+ },
+ {
+   "name": "nomu",
+   "trans": ["To drink"],
+   "japphone": "飲む"
+ },
+ {
+   "name": "aruku",
+   "trans": ["To walk"],
+   "japphone": "歩く"
+ },
+ {
+   "name": "hashiru",
+   "trans": ["To run"],
+   "japphone": "走る"
+ },
+ {
+   "name": "suwaru",
+   "trans": ["To sit"],
+   "japphone": "座る"
+ },
+ {
+   "name": "tatsu",
+   "trans": ["To stand"],
+   "japphone": "立つ"
+ },
+ {
+   "name": "tabemono",
+   "trans": ["Food"],
+   "japphone": "食べ物"
+ },
+ {
+   "name": "nomimono",
+   "trans": ["Drinks"],
+   "japphone": "飲み物"
+ },
+ {
+   "name": "gohan",
+   "trans": ["Rice/meal"],
+   "japphone": "ご飯"
+ },
+ {
+   "name": "mizu",
+   "trans": ["Water/cold water"],
+   "japphone": "水"
+ },
+ {
+   "name": "oyu",
+   "trans": ["Hot water"],
+   "japphone": "お湯"
+ },
+ {
+   "name": "niku",
+   "trans": ["Meat"],
+   "japphone": "肉"
+ },
+ {
+   "name": "yasai",
+   "trans": ["Vegetable"],
+   "japphone": "野菜"
+ },
+ {
+   "name": "sakana",
+   "trans": ["Fish"],
+   "japphone": "さかな"
+ },
+ {
+   "name": "ramen",
+   "trans": ["Ramen"],
+   "japphone": "ラーメン"
+ },
+ {
+   "name": "sushi",
+   "trans": ["Sushi"],
+   "japphone": "寿司"
+ },
+ {
+   "name": "onigiri",
+   "trans": ["Onigiri"],
+   "japphone": "おにぎり"
+ }
 ]
