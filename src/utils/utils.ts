@@ -1,3 +1,4 @@
+import { LanguageType, PronunciationType } from './../store/AppState'
 import { Howl } from 'howler'
 
 export const isLegal = (val: string): boolean => /^[a-z_A-Z_._(_)_{_}_<_>_+_0-9'"!,='@#$%`:~^&*?\-;[\]\\/]$/.test(val)
@@ -6,12 +7,23 @@ export const isChineseSymbol = (val: string): boolean =>
     val,
   )
 
-export const LANG_PRON_MAP = {
+export type PronunciationConfig = {
+  name: string
+  pron: Exclude<PronunciationType, false>
+}
+
+export type LanguagePronunciationMapConfig = {
+  defaultPronIndex: number
+  pronunciation: PronunciationConfig[]
+}
+
+export type LanguagePronunciationMap = {
+  [key in LanguageType]: LanguagePronunciationMapConfig
+}
+
+export const LANG_PRON_MAP: LanguagePronunciationMap = {
   en: {
-    defaultPron: {
-      name: '美音',
-      pron: 'us',
-    },
+    defaultPronIndex: 0,
     pronunciation: [
       {
         name: '美音',
@@ -24,10 +36,7 @@ export const LANG_PRON_MAP = {
     ],
   },
   romaji: {
-    defaultPron: {
-      name: '罗马音',
-      pron: 'romaji',
-    },
+    defaultPronIndex: 0,
     pronunciation: [
       {
         name: '罗马音',
@@ -36,10 +45,7 @@ export const LANG_PRON_MAP = {
     ],
   },
   zh: {
-    defaultPron: {
-      name: '普通话',
-      pron: 'zh',
-    },
+    defaultPronIndex: 0,
     pronunciation: [
       {
         name: '普通话',
@@ -48,10 +54,7 @@ export const LANG_PRON_MAP = {
     ],
   },
   ja: {
-    defaultPron: {
-      name: '日语',
-      pron: 'ja',
-    },
+    defaultPronIndex: 0,
     pronunciation: [
       {
         name: '日语',

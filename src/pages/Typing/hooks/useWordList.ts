@@ -20,7 +20,7 @@ export type UseWordListResult = {
   chapterListLength: number
   words: Word[]
   language: LanguageType
-  defaultPron: string
+  defaultPronIndex?: number
   setChapterNumber: (index: number) => void
 }
 
@@ -46,7 +46,7 @@ export function useWordList(): UseWordListResult | undefined {
         chapterListLength: wordList.totalChapters,
         words: shuffleWords,
         language: selectedDictionary.language,
-        defaultPron: selectedDictionary.defaultPron,
+        defaultPronIndex: selectedDictionary.defaultPronIndex,
         setChapterNumber: setCurrentChapter,
       }
 }

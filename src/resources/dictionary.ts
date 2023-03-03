@@ -8,7 +8,7 @@ export type Dictionary = {
   url: string
   length: number
   language: LanguageType
-  defaultPron: string //override default pronunciation when not null
+  defaultPronIndex?: number //override default pronunciation when not undefined
 }
 
 /**
@@ -24,7 +24,6 @@ export const dictionaries: Dictionary[] = [
     url: '',
     length: 2607,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'cet6',
@@ -34,7 +33,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/CET6_T.json',
     length: 2345,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'gmat',
@@ -44,7 +42,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/GMAT_3_T.json',
     length: 3047,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'gre',
@@ -54,28 +51,25 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/GRE_3_T.json',
     length: 6515,
     language: 'en',
-    defaultPron: '',
   },
-  {
-    id: 'zhtest',
-    name: '中文测试',
-    description: '中文测试词库',
-    category: '测试',
-    url: './dicts/chinese_test.json',
-    length: 27,
-    language: 'zh',
-    defaultPron: '',
-  },
-  {
-    id: 'jptest',
-    name: '日文测试',
-    description: '日文测试词库',
-    category: '测试',
-    url: './dicts/japanese_test.json',
-    length: 20,
-    language: 'ja',
-    defaultPron: '',
-  },
+  // {
+  //   id: 'zhtest',
+  //   name: '中文测试',
+  //   description: '中文测试词库',
+  //   category: '测试',
+  //   url: './dicts/chinese_test.json',
+  //   length: 27,
+  //   language: 'zh',
+  // },
+  // {
+  //   id: 'jptest',
+  //   name: '日文测试',
+  //   description: '日文测试词库',
+  //   category: '测试',
+  //   url: './dicts/japanese_test.json',
+  //   length: 20,
+  //   language: 'ja',
+  // },
   {
     id: 'ielts',
     name: 'IELTS',
@@ -84,7 +78,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/IELTS_3_T.json',
     length: 3575,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'kaoyan',
@@ -94,7 +87,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/KaoYan_3_T.json',
     length: 3728,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'level4',
@@ -104,7 +96,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/Level4luan_2_T.json',
     length: 4025,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'level8',
@@ -114,7 +105,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/Level8luan_2_T.json',
     length: 12197,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'gaokao3500',
@@ -124,7 +114,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/GaoKao_3500.json',
     length: 3893,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'SHjuniormiddleOxford',
@@ -134,7 +123,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/OxfordVocabulary_juniorMiddleSH.json',
     length: 1270,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'sat',
@@ -144,7 +132,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/SAT_3_T.json',
     length: 4464,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'toefl',
@@ -154,7 +141,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/TOEFL_3_T.json',
     length: 4264,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'bec2',
@@ -164,7 +150,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BEC_2_T.json',
     length: 2753,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'bec3',
@@ -174,7 +159,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BEC_3_T.json',
     length: 2825,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'PTE_junior',
@@ -184,7 +168,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PTE_junior.json',
     length: 2651,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'PTE_senior',
@@ -194,7 +177,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PTE_senior.json',
     length: 3170,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'PTE_FIB_R_junior',
@@ -204,7 +186,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PTE_FIB_R_junior.json',
     length: 941,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'PTE_FIB_R_senior',
@@ -214,7 +195,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PTE_FIB_R_senior.json',
     length: 1272,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'PTE_WFD',
@@ -224,7 +204,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PTE_WFD.json',
     length: 1212,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'PTE_FIB_L',
@@ -234,7 +213,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PTE_FIB_L.json',
     length: 646,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'coder',
@@ -244,7 +222,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/it-words.json',
     length: 1700,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsArray',
@@ -254,7 +231,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-array.json',
     length: 36,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsDate',
@@ -264,7 +240,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-date.json',
     length: 34,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsGlobal',
@@ -274,7 +249,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-global.json',
     length: 9,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsMapSet',
@@ -284,7 +258,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-map-set.json',
     length: 16,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsMath',
@@ -294,7 +267,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-math.json',
     length: 38,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsNumber',
@@ -304,7 +276,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-number.json',
     length: 22,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsObject',
@@ -314,7 +285,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-object.json',
     length: 37,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsPromise',
@@ -324,7 +294,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-promise.json',
     length: 9,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jsString',
@@ -334,7 +303,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/js-string.json',
     length: 32,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-builtin',
@@ -344,7 +312,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-builtin.json',
     length: 65,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-array',
@@ -354,7 +321,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-array.json',
     length: 11,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-date',
@@ -364,7 +330,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-date.json',
     length: 39,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-file',
@@ -374,7 +339,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-file.json',
     length: 21,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-class',
@@ -384,7 +348,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-class.json',
     length: 13,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-set',
@@ -394,7 +357,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-set.json',
     length: 29,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-math',
@@ -404,7 +366,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-math.json',
     length: 37,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-string',
@@ -414,7 +375,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-string.json',
     length: 40,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'python-system',
@@ -424,7 +384,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/python-sys.json',
     length: 24,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'javeArrayList',
@@ -434,7 +393,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/java-arraylist.json',
     length: 25,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'javaCharacter',
@@ -444,7 +402,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/java-character.json',
     length: 8,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'javaHashmap',
@@ -454,7 +411,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/java-hashmap.json',
     length: 22,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'javaLinkedList',
@@ -464,7 +420,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/java-linkedlist.json',
     length: 25,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'javaString',
@@ -474,7 +429,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/java-string.json',
     length: 48,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'javaStringBuffer',
@@ -484,7 +438,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/java-stringBuffer.json',
     length: 20,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'linuxCommand',
@@ -494,7 +447,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/linux-command.json',
     length: 575,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'csharpList',
@@ -504,7 +456,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/csharp-list.json',
     length: 36,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'sql-lower-case',
@@ -514,7 +465,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/SQL_statement_lower-case.json',
     length: 12,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'sql-upper-case',
@@ -524,7 +474,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/SQL_statement_upper-case.json',
     length: 12,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'san1',
@@ -534,7 +483,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue3_1_T.json',
     length: 64,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'san2',
@@ -544,7 +492,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue3_2_T.json',
     length: 72,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'si1',
@@ -554,7 +501,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue4_1_T.json',
     length: 84,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'si2',
@@ -564,7 +510,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue4_2_T.json',
     length: 104,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'wu1',
@@ -574,7 +519,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue5_1_T.json',
     length: 131,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'wu2',
@@ -584,7 +528,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue5_2_T.json',
     length: 156,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'liu1',
@@ -594,7 +537,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue6_1_T.json',
     length: 130,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'liu2',
@@ -604,7 +546,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPXiaoXue6_2_T.json',
     length: 108,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'qi1',
@@ -614,7 +555,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPChuZhong7_1_T.json',
     length: 392,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'qi2',
@@ -624,7 +564,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPChuZhong7_2_T.json',
     length: 492,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'ba1',
@@ -634,7 +573,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPChuZhong8_1_T.json',
     length: 419,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'ba2',
@@ -644,7 +582,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPChuZhong8_2_T.json',
     length: 466,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'jiu',
@@ -654,7 +591,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPChuZhong9_1_T.json',
     length: 551,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong1',
@@ -664,7 +600,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_1_T.json',
     length: 311,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong2',
@@ -674,7 +609,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_2_T.json',
     length: 319,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong3',
@@ -684,7 +618,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_3_T.json',
     length: 366,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong4',
@@ -694,7 +627,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_4_T.json',
     length: 307,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong5',
@@ -704,7 +636,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_5_T.json',
     length: 357,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong6',
@@ -714,7 +645,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_6_T.json',
     length: 391,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong7',
@@ -724,7 +654,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_7_T.json',
     length: 384,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong8',
@@ -734,7 +663,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_8_T.json',
     length: 420,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong9',
@@ -744,7 +672,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_9_T.json',
     length: 352,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong10',
@@ -754,7 +681,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_10_T.json',
     length: 361,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'renjiaogaozhong11',
@@ -764,7 +690,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/PEPGaoZhong_11_T.json',
     length: 309,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'nce1',
@@ -774,7 +699,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/NCE_1.json',
     length: 900,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'nce2',
@@ -784,7 +708,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/NCE_2.json',
     length: 858,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'nce3',
@@ -794,7 +717,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/NCE_3.json',
     length: 1052,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'nce4',
@@ -804,7 +726,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/NCE_4.json',
     length: 784,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'waiyan1',
@@ -814,7 +735,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/WaiYanSheChuZhong_1_T.json',
     length: 629,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'waiyan2',
@@ -824,7 +744,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/WaiYanSheChuZhong_2_T.json',
     length: 438,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'waiyan3',
@@ -834,7 +753,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/WaiYanSheChuZhong_3_T.json',
     length: 320,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'waiyan4',
@@ -844,7 +762,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/WaiYanSheChuZhong_4_T.json',
     length: 266,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'waiyan5',
@@ -854,7 +771,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/WaiYanSheChuZhong_5_T.json',
     length: 381,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'waiyan6',
@@ -864,7 +780,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/WaiYanSheChuZhong_6_T.json',
     length: 128,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi1',
@@ -874,7 +789,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_1_T.json',
     length: 226,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi2',
@@ -884,7 +798,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_2_T.json',
     length: 244,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi3',
@@ -894,7 +807,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_3_T.json',
     length: 295,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi4',
@@ -904,7 +816,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_4_T.json',
     length: 336,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi5',
@@ -914,7 +825,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_5_T.json',
     length: 327,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi6',
@@ -924,7 +834,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_6_T.json',
     length: 271,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi7',
@@ -934,7 +843,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_7_T.json',
     length: 334,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi8',
@@ -944,7 +852,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_8_T.json',
     length: 364,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi9',
@@ -954,7 +861,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_9_T.json',
     length: 299,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi10',
@@ -964,7 +870,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_10_T.json',
     length: 267,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'beishi11',
@@ -974,7 +879,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/BeiShiGaoZhong_11_T.json',
     length: 330,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'SATen',
@@ -984,7 +888,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/SATen.json',
     length: 2681,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: '4000_Essential_English_Words1',
@@ -994,7 +897,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/4000_Essential_English_Words-meaning.json',
     length: 3600,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: '4000_Essential_English_Words2',
@@ -1004,7 +906,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/4000_Essential_English_Words-sentence.json',
     length: 3600,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'suffix word',
@@ -1014,7 +915,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/suffix word.json',
     length: 126,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'word roots1',
@@ -1024,7 +924,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/word roots1.json',
     length: 368,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'ieltsWang3',
@@ -1034,7 +933,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/IELTS_WANG_3.json',
     length: 1135,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'ieltsWang4',
@@ -1044,7 +942,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/IELTS_WANG_4.json',
     length: 346,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'ieltsWang5',
@@ -1054,7 +951,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/IELTS_WANG_5.json',
     length: 1569,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'ieltsWang11',
@@ -1064,7 +960,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/IELTS_WANG_11.json',
     length: 1738,
     language: 'en',
-    defaultPron: '',
   },
   {
     id: 'japanese001',
@@ -1074,7 +969,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/Japanesebasicword.json',
     length: 100,
     language: 'romaji',
-    defaultPron: '',
   },
   {
     id: 'japanese006',
@@ -1084,7 +978,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/JapVocabList.N1.json',
     length: 3477,
     language: 'romaji',
-    defaultPron: '',
   },
   {
     id: 'japanese005',
@@ -1094,7 +987,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/JapVocabList.N2.json',
     length: 1836,
     language: 'romaji',
-    defaultPron: '',
   },
   {
     id: 'japanese004',
@@ -1104,7 +996,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/JapVocabList.N3.json',
     length: 1830,
     language: 'romaji',
-    defaultPron: '',
   },
   {
     id: 'japanese003',
@@ -1114,7 +1005,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/JapVocabList.N4.json',
     length: 635,
     language: 'romaji',
-    defaultPron: '',
   },
   {
     id: 'japanese002',
@@ -1124,7 +1014,6 @@ export const dictionaries: Dictionary[] = [
     url: './dicts/JapVocabList.N5.json',
     length: 670,
     language: 'romaji',
-    defaultPron: '',
   },
 ]
 

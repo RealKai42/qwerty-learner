@@ -16,7 +16,7 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 import Tooltip from '@/components/Tooltip'
-import { LanguageType, useRandomState } from '@/store/AppState'
+import { PronunciationType, useRandomState } from '@/store/AppState'
 import Progress from './Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
 import mixpanel from 'mixpanel-browser'
@@ -32,7 +32,6 @@ const App: React.FC = () => {
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
-  const [language, setLanguage] = useState<LanguageType>('en')
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
@@ -43,10 +42,6 @@ const App: React.FC = () => {
     // reset order when random change
     setOrder(0)
   }, [random])
-
-  useEffect(() => {
-    setLanguage(wordList?.language || 'en')
-  }, [wordList?.language])
 
   useEffect(() => {
     // 检测用户设备
@@ -157,7 +152,7 @@ const App: React.FC = () => {
   }
 
   const changePronunciation = useCallback(
-    (state: string) => {
+    (state: PronunciationType) => {
       pronunciationDispatch(state)
     },
     [pronunciationDispatch],
@@ -228,10 +223,13 @@ const App: React.FC = () => {
             </Tooltip>
             <Tooltip content="发音切换">
               <PronunciationSwitcher
-                state={pronunciation.toString()}
-                language={language}
+                state={pronunciation}
+                languageConfig={{
+                  // todo: use 'en' as default language maybe cause some unexpected error, add 'none'/null in the future
+                  language: wordList?.language || 'en',
+                  defaultPronIndex: wordList.defaultPronIndex,
+                }}
                 changePronunciationState={changePronunciation}
-                defaultPron={wordList.defaultPron}
               />
             </Tooltip>
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
