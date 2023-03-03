@@ -1,10 +1,14 @@
-﻿export type Dictionary = {
+﻿import { LanguageType } from '@/store/AppState'
+
+export type Dictionary = {
   id: string
   name: string
   description: string
   category: string
   url: string
   length: number
+  language: LanguageType
+  defaultPronIndex?: number //override default pronunciation when not undefined
 }
 
 /**
@@ -12,14 +16,96 @@
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaries: Dictionary[] = [
-  { id: 'cet4', name: 'CET-4', description: '大学英语四级词库', category: '英语学习', url: '', length: 2607 },
-  { id: 'cet6', name: 'CET-6', description: '大学英语六级词库', category: '英语学习', url: './dicts/CET6_T.json', length: 2345 },
-  { id: 'gmat', name: 'GMAT', description: 'GMAT 词库', category: '英语学习', url: './dicts/GMAT_3_T.json', length: 3047 },
-  { id: 'gre', name: 'GRE', description: 'GRE 词库', category: '英语学习', url: './dicts/GRE_3_T.json', length: 6515 },
-  { id: 'ielts', name: 'IELTS', description: '雅思词库', category: '英语学习', url: './dicts/IELTS_3_T.json', length: 3575 },
-  { id: 'kaoyan', name: '考研', description: '研究生英语入学考试词库', category: '英语学习', url: './dicts/KaoYan_3_T.json', length: 3728 },
-  { id: 'level4', name: '专四', description: '英语专业四级词库', category: '英语学习', url: './dicts/Level4luan_2_T.json', length: 4025 },
-  { id: 'level8', name: '专八', description: '英语专业八级词库', category: '英语学习', url: './dicts/Level8luan_2_T.json', length: 12197 },
+  {
+    id: 'cet4',
+    name: 'CET-4',
+    description: '大学英语四级词库',
+    category: '英语学习',
+    url: '',
+    length: 2607,
+    language: 'en',
+  },
+  {
+    id: 'cet6',
+    name: 'CET-6',
+    description: '大学英语六级词库',
+    category: '英语学习',
+    url: './dicts/CET6_T.json',
+    length: 2345,
+    language: 'en',
+  },
+  {
+    id: 'gmat',
+    name: 'GMAT',
+    description: 'GMAT 词库',
+    category: '英语学习',
+    url: './dicts/GMAT_3_T.json',
+    length: 3047,
+    language: 'en',
+  },
+  {
+    id: 'gre',
+    name: 'GRE',
+    description: 'GRE 词库',
+    category: '英语学习',
+    url: './dicts/GRE_3_T.json',
+    length: 6515,
+    language: 'en',
+  },
+  // {
+  //   id: 'zhtest',
+  //   name: '中文测试',
+  //   description: '中文测试词库',
+  //   category: '测试',
+  //   url: './dicts/chinese_test.json',
+  //   length: 27,
+  //   language: 'zh',
+  // },
+  // {
+  //   id: 'jptest',
+  //   name: '日文测试',
+  //   description: '日文测试词库',
+  //   category: '测试',
+  //   url: './dicts/japanese_test.json',
+  //   length: 20,
+  //   language: 'ja',
+  // },
+  {
+    id: 'ielts',
+    name: 'IELTS',
+    description: '雅思词库',
+    category: '英语学习',
+    url: './dicts/IELTS_3_T.json',
+    length: 3575,
+    language: 'en',
+  },
+  {
+    id: 'kaoyan',
+    name: '考研',
+    description: '研究生英语入学考试词库',
+    category: '英语学习',
+    url: './dicts/KaoYan_3_T.json',
+    length: 3728,
+    language: 'en',
+  },
+  {
+    id: 'level4',
+    name: '专四',
+    description: '英语专业四级词库',
+    category: '英语学习',
+    url: './dicts/Level4luan_2_T.json',
+    length: 4025,
+    language: 'en',
+  },
+  {
+    id: 'level8',
+    name: '专八',
+    description: '英语专业八级词库',
+    category: '英语学习',
+    url: './dicts/Level8luan_2_T.json',
+    length: 12197,
+    language: 'en',
+  },
   {
     id: 'gaokao3500',
     name: '高考 3500 词',
@@ -27,6 +113,7 @@ export const dictionaries: Dictionary[] = [
     category: '英语学习',
     url: './dicts/GaoKao_3500.json',
     length: 3893,
+    language: 'en',
   },
   {
     id: 'SHjuniormiddleOxford',
@@ -35,6 +122,7 @@ export const dictionaries: Dictionary[] = [
     category: '英语学习',
     url: './dicts/OxfordVocabulary_juniorMiddleSH.json',
     length: 1270,
+    language: 'en',
   },
   {
     id: 'sat',
@@ -43,11 +131,35 @@ export const dictionaries: Dictionary[] = [
     category: '英语学习',
     url: './dicts/SAT_3_T.json',
     length: 4464,
+    language: 'en',
   },
-  { id: 'toefl', name: 'TOEFL', description: '托福考试常见词', category: '英语学习', url: './dicts/TOEFL_3_T.json', length: 4264 },
-  { id: 'bec2', name: '商务英语', description: '商务英语常见词', category: '英语学习', url: './dicts/BEC_2_T.json', length: 2753 },
-  { id: 'bec3', name: 'BEC', description: 'BEC考试常见词', category: '英语学习', url: './dicts/BEC_3_T.json', length: 2825 },
-
+  {
+    id: 'toefl',
+    name: 'TOEFL',
+    description: '托福考试常见词',
+    category: '英语学习',
+    url: './dicts/TOEFL_3_T.json',
+    length: 4264,
+    language: 'en',
+  },
+  {
+    id: 'bec2',
+    name: '商务英语',
+    description: '商务英语常见词',
+    category: '英语学习',
+    url: './dicts/BEC_2_T.json',
+    length: 2753,
+    language: 'en',
+  },
+  {
+    id: 'bec3',
+    name: 'BEC',
+    description: 'BEC考试常见词',
+    category: '英语学习',
+    url: './dicts/BEC_3_T.json',
+    length: 2825,
+    language: 'en',
+  },
   {
     id: 'PTE_junior',
     name: 'PTE 基础词汇',
@@ -55,6 +167,7 @@ export const dictionaries: Dictionary[] = [
     category: 'PTE',
     url: './dicts/PTE_junior.json',
     length: 2651,
+    language: 'en',
   },
   {
     id: 'PTE_senior',
@@ -63,6 +176,7 @@ export const dictionaries: Dictionary[] = [
     category: 'PTE',
     url: './dicts/PTE_senior.json',
     length: 3170,
+    language: 'en',
   },
   {
     id: 'PTE_FIB_R_junior',
@@ -71,6 +185,7 @@ export const dictionaries: Dictionary[] = [
     category: 'PTE',
     url: './dicts/PTE_FIB_R_junior.json',
     length: 941,
+    language: 'en',
   },
   {
     id: 'PTE_FIB_R_senior',
@@ -79,6 +194,7 @@ export const dictionaries: Dictionary[] = [
     category: 'PTE',
     url: './dicts/PTE_FIB_R_senior.json',
     length: 1272,
+    language: 'en',
   },
   {
     id: 'PTE_WFD',
@@ -87,6 +203,7 @@ export const dictionaries: Dictionary[] = [
     category: 'PTE',
     url: './dicts/PTE_WFD.json',
     length: 1212,
+    language: 'en',
   },
   {
     id: 'PTE_FIB_L',
@@ -95,11 +212,35 @@ export const dictionaries: Dictionary[] = [
     category: 'PTE',
     url: './dicts/PTE_FIB_L.json',
     length: 646,
+    language: 'en',
   },
-
-  { id: 'coder', name: 'Coder Dict', description: '程序员常见单词词库', category: '代码练习', url: './dicts/it-words.json', length: 1700 },
-  { id: 'jsArray', name: 'JS: Array', description: 'JavaScript API 词典', category: '代码练习', url: './dicts/js-array.json', length: 36 },
-  { id: 'jsDate', name: 'JS: Date', description: 'JavaScript API 词典', category: '代码练习', url: './dicts/js-date.json', length: 34 },
+  {
+    id: 'coder',
+    name: 'Coder Dict',
+    description: '程序员常见单词词库',
+    category: '代码练习',
+    url: './dicts/it-words.json',
+    length: 1700,
+    language: 'en',
+  },
+  {
+    id: 'jsArray',
+    name: 'JS: Array',
+    description: 'JavaScript API 词典',
+    category: '代码练习',
+    url: './dicts/js-array.json',
+    length: 36,
+    language: 'en',
+  },
+  {
+    id: 'jsDate',
+    name: 'JS: Date',
+    description: 'JavaScript API 词典',
+    category: '代码练习',
+    url: './dicts/js-date.json',
+    length: 34,
+    language: 'en',
+  },
   {
     id: 'jsGlobal',
     name: 'JS: Global',
@@ -107,6 +248,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/js-global.json',
     length: 9,
+    language: 'en',
   },
   {
     id: 'jsMapSet',
@@ -115,8 +257,17 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/js-map-set.json',
     length: 16,
+    language: 'en',
   },
-  { id: 'jsMath', name: 'JS: Math', description: 'JavaScript API 词典', category: '代码练习', url: './dicts/js-math.json', length: 38 },
+  {
+    id: 'jsMath',
+    name: 'JS: Math',
+    description: 'JavaScript API 词典',
+    category: '代码练习',
+    url: './dicts/js-math.json',
+    length: 38,
+    language: 'en',
+  },
   {
     id: 'jsNumber',
     name: 'JS: Number',
@@ -124,6 +275,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/js-number.json',
     length: 22,
+    language: 'en',
   },
   {
     id: 'jsObject',
@@ -132,6 +284,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/js-object.json',
     length: 37,
+    language: 'en',
   },
   {
     id: 'jsPromise',
@@ -140,6 +293,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/js-promise.json',
     length: 9,
+    language: 'en',
   },
   {
     id: 'jsString',
@@ -148,6 +302,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/js-string.json',
     length: 32,
+    language: 'en',
   },
   {
     id: 'python-builtin',
@@ -156,6 +311,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-builtin.json',
     length: 65,
+    language: 'en',
   },
   {
     id: 'python-array',
@@ -164,6 +320,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-array.json',
     length: 11,
+    language: 'en',
   },
   {
     id: 'python-date',
@@ -172,6 +329,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-date.json',
     length: 39,
+    language: 'en',
   },
   {
     id: 'python-file',
@@ -180,6 +338,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-file.json',
     length: 21,
+    language: 'en',
   },
   {
     id: 'python-class',
@@ -188,6 +347,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-class.json',
     length: 13,
+    language: 'en',
   },
   {
     id: 'python-set',
@@ -196,6 +356,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-set.json',
     length: 29,
+    language: 'en',
   },
   {
     id: 'python-math',
@@ -204,6 +365,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-math.json',
     length: 37,
+    language: 'en',
   },
   {
     id: 'python-string',
@@ -212,6 +374,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-string.json',
     length: 40,
+    language: 'en',
   },
   {
     id: 'python-system',
@@ -220,6 +383,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/python-sys.json',
     length: 24,
+    language: 'en',
   },
   {
     id: 'javeArrayList',
@@ -228,6 +392,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/java-arraylist.json',
     length: 25,
+    language: 'en',
   },
   {
     id: 'javaCharacter',
@@ -236,6 +401,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/java-character.json',
     length: 8,
+    language: 'en',
   },
   {
     id: 'javaHashmap',
@@ -244,6 +410,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/java-hashmap.json',
     length: 22,
+    language: 'en',
   },
   {
     id: 'javaLinkedList',
@@ -252,6 +419,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/java-linkedlist.json',
     length: 25,
+    language: 'en',
   },
   {
     id: 'javaString',
@@ -260,6 +428,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/java-string.json',
     length: 48,
+    language: 'en',
   },
   {
     id: 'javaStringBuffer',
@@ -268,6 +437,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/java-stringBuffer.json',
     length: 20,
+    language: 'en',
   },
   {
     id: 'linuxCommand',
@@ -276,6 +446,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/linux-command.json',
     length: 575,
+    language: 'en',
   },
   {
     id: 'csharpList',
@@ -284,6 +455,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/csharp-list.json',
     length: 36,
+    language: 'en',
   },
   {
     id: 'sql-lower-case',
@@ -292,6 +464,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/SQL_statement_lower-case.json',
     length: 12,
+    language: 'en',
   },
   {
     id: 'sql-upper-case',
@@ -300,6 +473,7 @@ export const dictionaries: Dictionary[] = [
     category: '代码练习',
     url: './dicts/SQL_statement_upper-case.json',
     length: 12,
+    language: 'en',
   },
   {
     id: 'san1',
@@ -308,6 +482,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue3_1_T.json',
     length: 64,
+    language: 'en',
   },
   {
     id: 'san2',
@@ -316,6 +491,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue3_2_T.json',
     length: 72,
+    language: 'en',
   },
   {
     id: 'si1',
@@ -324,6 +500,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue4_1_T.json',
     length: 84,
+    language: 'en',
   },
   {
     id: 'si2',
@@ -332,6 +509,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue4_2_T.json',
     length: 104,
+    language: 'en',
   },
   {
     id: 'wu1',
@@ -340,6 +518,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue5_1_T.json',
     length: 131,
+    language: 'en',
   },
   {
     id: 'wu2',
@@ -348,6 +527,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue5_2_T.json',
     length: 156,
+    language: 'en',
   },
   {
     id: 'liu1',
@@ -356,6 +536,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue6_1_T.json',
     length: 130,
+    language: 'en',
   },
   {
     id: 'liu2',
@@ -364,6 +545,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPXiaoXue6_2_T.json',
     length: 108,
+    language: 'en',
   },
   {
     id: 'qi1',
@@ -372,6 +554,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPChuZhong7_1_T.json',
     length: 392,
+    language: 'en',
   },
   {
     id: 'qi2',
@@ -380,6 +563,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPChuZhong7_2_T.json',
     length: 492,
+    language: 'en',
   },
   {
     id: 'ba1',
@@ -388,6 +572,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPChuZhong8_1_T.json',
     length: 419,
+    language: 'en',
   },
   {
     id: 'ba2',
@@ -396,6 +581,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPChuZhong8_2_T.json',
     length: 466,
+    language: 'en',
   },
   {
     id: 'jiu',
@@ -404,6 +590,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPChuZhong9_1_T.json',
     length: 551,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong1',
@@ -412,6 +599,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_1_T.json',
     length: 311,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong2',
@@ -420,6 +608,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_2_T.json',
     length: 319,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong3',
@@ -428,6 +617,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_3_T.json',
     length: 366,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong4',
@@ -436,6 +626,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_4_T.json',
     length: 307,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong5',
@@ -444,6 +635,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_5_T.json',
     length: 357,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong6',
@@ -452,6 +644,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_6_T.json',
     length: 391,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong7',
@@ -460,6 +653,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_7_T.json',
     length: 384,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong8',
@@ -468,6 +662,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_8_T.json',
     length: 420,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong9',
@@ -476,6 +671,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_9_T.json',
     length: 352,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong10',
@@ -484,6 +680,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_10_T.json',
     length: 361,
+    language: 'en',
   },
   {
     id: 'renjiaogaozhong11',
@@ -492,6 +689,7 @@ export const dictionaries: Dictionary[] = [
     category: '人教版英语',
     url: './dicts/PEPGaoZhong_11_T.json',
     length: 309,
+    language: 'en',
   },
   {
     id: 'nce1',
@@ -500,6 +698,7 @@ export const dictionaries: Dictionary[] = [
     category: '新概念英语',
     url: './dicts/NCE_1.json',
     length: 900,
+    language: 'en',
   },
   {
     id: 'nce2',
@@ -508,6 +707,7 @@ export const dictionaries: Dictionary[] = [
     category: '新概念英语',
     url: './dicts/NCE_2.json',
     length: 858,
+    language: 'en',
   },
   {
     id: 'nce3',
@@ -516,6 +716,7 @@ export const dictionaries: Dictionary[] = [
     category: '新概念英语',
     url: './dicts/NCE_3.json',
     length: 1052,
+    language: 'en',
   },
   {
     id: 'nce4',
@@ -524,6 +725,7 @@ export const dictionaries: Dictionary[] = [
     category: '新概念英语',
     url: './dicts/NCE_4.json',
     length: 784,
+    language: 'en',
   },
   {
     id: 'waiyan1',
@@ -532,6 +734,7 @@ export const dictionaries: Dictionary[] = [
     category: '外研版英语',
     url: './dicts/WaiYanSheChuZhong_1_T.json',
     length: 629,
+    language: 'en',
   },
   {
     id: 'waiyan2',
@@ -540,6 +743,7 @@ export const dictionaries: Dictionary[] = [
     category: '外研版英语',
     url: './dicts/WaiYanSheChuZhong_2_T.json',
     length: 438,
+    language: 'en',
   },
   {
     id: 'waiyan3',
@@ -548,6 +752,7 @@ export const dictionaries: Dictionary[] = [
     category: '外研版英语',
     url: './dicts/WaiYanSheChuZhong_3_T.json',
     length: 320,
+    language: 'en',
   },
   {
     id: 'waiyan4',
@@ -556,6 +761,7 @@ export const dictionaries: Dictionary[] = [
     category: '外研版英语',
     url: './dicts/WaiYanSheChuZhong_4_T.json',
     length: 266,
+    language: 'en',
   },
   {
     id: 'waiyan5',
@@ -564,6 +770,7 @@ export const dictionaries: Dictionary[] = [
     category: '外研版英语',
     url: './dicts/WaiYanSheChuZhong_5_T.json',
     length: 381,
+    language: 'en',
   },
   {
     id: 'waiyan6',
@@ -572,6 +779,7 @@ export const dictionaries: Dictionary[] = [
     category: '外研版英语',
     url: './dicts/WaiYanSheChuZhong_6_T.json',
     length: 128,
+    language: 'en',
   },
   {
     id: 'beishi1',
@@ -580,6 +788,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_1_T.json',
     length: 226,
+    language: 'en',
   },
   {
     id: 'beishi2',
@@ -588,6 +797,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_2_T.json',
     length: 244,
+    language: 'en',
   },
   {
     id: 'beishi3',
@@ -596,6 +806,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_3_T.json',
     length: 295,
+    language: 'en',
   },
   {
     id: 'beishi4',
@@ -604,6 +815,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_4_T.json',
     length: 336,
+    language: 'en',
   },
   {
     id: 'beishi5',
@@ -612,6 +824,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_5_T.json',
     length: 327,
+    language: 'en',
   },
   {
     id: 'beishi6',
@@ -620,6 +833,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_6_T.json',
     length: 271,
+    language: 'en',
   },
   {
     id: 'beishi7',
@@ -628,6 +842,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_7_T.json',
     length: 334,
+    language: 'en',
   },
   {
     id: 'beishi8',
@@ -636,6 +851,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_8_T.json',
     length: 364,
+    language: 'en',
   },
   {
     id: 'beishi9',
@@ -644,6 +860,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_9_T.json',
     length: 299,
+    language: 'en',
   },
   {
     id: 'beishi10',
@@ -652,6 +869,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_10_T.json',
     length: 267,
+    language: 'en',
   },
   {
     id: 'beishi11',
@@ -660,6 +878,7 @@ export const dictionaries: Dictionary[] = [
     category: '北师大版英语',
     url: './dicts/BeiShiGaoZhong_11_T.json',
     length: 330,
+    language: 'en',
   },
   {
     id: 'SATen',
@@ -668,6 +887,7 @@ export const dictionaries: Dictionary[] = [
     category: 'en2en',
     url: './dicts/SATen.json',
     length: 2681,
+    language: 'en',
   },
   {
     id: '4000_Essential_English_Words1',
@@ -676,6 +896,7 @@ export const dictionaries: Dictionary[] = [
     category: 'en2en',
     url: './dicts/4000_Essential_English_Words-meaning.json',
     length: 3600,
+    language: 'en',
   },
   {
     id: '4000_Essential_English_Words2',
@@ -684,6 +905,7 @@ export const dictionaries: Dictionary[] = [
     category: 'en2en',
     url: './dicts/4000_Essential_English_Words-sentence.json',
     length: 3600,
+    language: 'en',
   },
   {
     id: 'suffix word',
@@ -692,6 +914,7 @@ export const dictionaries: Dictionary[] = [
     category: 'en2en',
     url: './dicts/suffix word.json',
     length: 126,
+    language: 'en',
   },
   {
     id: 'word roots1',
@@ -700,6 +923,7 @@ export const dictionaries: Dictionary[] = [
     category: 'en2en',
     url: './dicts/word roots1.json',
     length: 368,
+    language: 'en',
   },
   {
     id: 'ieltsWang3',
@@ -708,6 +932,7 @@ export const dictionaries: Dictionary[] = [
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_3.json',
     length: 1135,
+    language: 'en',
   },
   {
     id: 'ieltsWang4',
@@ -716,6 +941,7 @@ export const dictionaries: Dictionary[] = [
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_4.json',
     length: 346,
+    language: 'en',
   },
   {
     id: 'ieltsWang5',
@@ -724,6 +950,7 @@ export const dictionaries: Dictionary[] = [
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_5.json',
     length: 1569,
+    language: 'en',
   },
   {
     id: 'ieltsWang11',
@@ -732,6 +959,7 @@ export const dictionaries: Dictionary[] = [
     category: '雅思王听力语料库',
     url: './dicts/IELTS_WANG_11.json',
     length: 1738,
+    language: 'en',
   },
   {
     id: 'japanese001',
@@ -740,8 +968,8 @@ export const dictionaries: Dictionary[] = [
     category: '日语学习',
     url: './dicts/Japanesebasicword.json',
     length: 100,
+    language: 'romaji',
   },
-
   {
     id: 'japanese006',
     name: 'N1',
@@ -749,6 +977,7 @@ export const dictionaries: Dictionary[] = [
     category: '日语学习',
     url: './dicts/JapVocabList.N1.json',
     length: 3477,
+    language: 'romaji',
   },
   {
     id: 'japanese005',
@@ -757,6 +986,7 @@ export const dictionaries: Dictionary[] = [
     category: '日语学习',
     url: './dicts/JapVocabList.N2.json',
     length: 1836,
+    language: 'romaji',
   },
   {
     id: 'japanese004',
@@ -765,6 +995,7 @@ export const dictionaries: Dictionary[] = [
     category: '日语学习',
     url: './dicts/JapVocabList.N3.json',
     length: 1830,
+    language: 'romaji',
   },
   {
     id: 'japanese003',
@@ -773,6 +1004,7 @@ export const dictionaries: Dictionary[] = [
     category: '日语学习',
     url: './dicts/JapVocabList.N4.json',
     length: 635,
+    language: 'romaji',
   },
   {
     id: 'japanese002',
@@ -781,6 +1013,7 @@ export const dictionaries: Dictionary[] = [
     category: '日语学习',
     url: './dicts/JapVocabList.N5.json',
     length: 670,
+    language: 'romaji',
   },
 ]
 
