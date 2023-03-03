@@ -6,28 +6,60 @@ export const isChineseSymbol = (val: string): boolean =>
     val,
   )
 
-export const Lang_Pron_Map = [
-  {
-    language: 'en',
-    pronunciation: ['us', 'uk'],
-    pronName: ['美音', '英音'],
+export const LANG_PRON_MAP = {
+  en: {
+    defaultPron: {
+      name: '美音',
+      pron: 'us',
+    },
+    pronunciation: [
+      {
+        name: '美音',
+        pron: 'us',
+      },
+      {
+        name: '英音',
+        pron: 'uk',
+      },
+    ],
   },
-  {
-    language: 'romaji',
-    pronunciation: ['romaji'],
-    pronName: ['罗马音'],
+  romaji: {
+    defaultPron: {
+      name: '罗马音',
+      pron: 'romaji',
+    },
+    pronunciation: [
+      {
+        name: '罗马音',
+        pron: 'romaji',
+      },
+    ],
   },
-  {
-    language: 'zh',
-    pronunciation: ['zh'],
-    pronName: ['普通话'],
+  zh: {
+    defaultPron: {
+      name: '普通话',
+      pron: 'zh',
+    },
+    pronunciation: [
+      {
+        name: '普通话',
+        pron: 'zh',
+      },
+    ],
   },
-  {
-    language: 'ja',
-    pronunciation: ['ja'],
-    pronName: ['日语'],
+  ja: {
+    defaultPron: {
+      name: '日语',
+      pron: 'ja',
+    },
+    pronunciation: [
+      {
+        name: '日语',
+        pron: 'ja',
+      },
+    ],
   },
-]
+}
 
 export const IsDesktop = () => {
   const userAgentInfo = navigator.userAgent

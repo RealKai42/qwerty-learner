@@ -3,6 +3,7 @@ import { shuffle } from 'lodash'
 import { useMemo } from 'react'
 import { useSelectedChapter, useSelectedDictionary, useRandomState } from '@/store/AppState'
 import useSWR from 'swr'
+import { LanguageType } from '@/store/AppState'
 
 export type Word = {
   name: string
@@ -18,7 +19,8 @@ export type UseWordListResult = {
   chapter: number
   chapterListLength: number
   words: Word[]
-  language: string
+  language: LanguageType
+  defaultPron: string
   setChapterNumber: (index: number) => void
 }
 
@@ -44,6 +46,7 @@ export function useWordList(): UseWordListResult | undefined {
         chapterListLength: wordList.totalChapters,
         words: shuffleWords,
         language: selectedDictionary.language,
+        defaultPron: selectedDictionary.defaultPron,
         setChapterNumber: setCurrentChapter,
       }
 }

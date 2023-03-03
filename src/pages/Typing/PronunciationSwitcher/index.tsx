@@ -1,19 +1,25 @@
-import { Lang_Pron_Map } from '@/utils/utils'
+import { LanguageType } from '@/store/AppState'
+import { LANG_PRON_MAP } from '@/utils/utils'
 import React, { useEffect } from 'react'
 
 export type PronunciationSwitcherPropsType = {
   state: string
-  language: string
+  language: LanguageType
+  defaultPron: string | null // defaultPron 可以是 null
   changePronunciationState: (state: string) => void
 }
 
-const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state, language, changePronunciationState }) => {
-  const pronListData = Lang_Pron_Map.find((item) => item.language === language)
-  const pronList = pronListData?.pronunciation || []
-  const pronNameList = pronListData?.pronName || []
-
+const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state, language, defaultPron, changePronunciationState }) => {
   useEffect(() => {
-    changePronunciationState(pronList[0])
+    // 如果 defaultPron 是 null，使用 LANG_PRON_MAP[language].defaultPron.pron 作为默认参数
+    //const defaultPronunciation = defaultPron === null ? LANG_PRON_MAP[language].defaultPron.pron : defaultPron
+    let defaultPronunciation
+    if (defaultPron === '') {
+      defaultPronunciation = LANG_PRON_MAP[language].defaultPron.pron
+    } else {
+      defaultPronunciation = defaultPron
+    }
+    changePronunciationState(defaultPronunciation as string)
   }, [language])
 
   return (
@@ -28,9 +34,9 @@ const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state
           }}
         >
           <option value="false">关闭</option>
-          {pronList.map((pron, index) => (
-            <option key={pron} value={pron}>
-              {pronNameList[index]}
+          {LANG_PRON_MAP[language].pronunciation.map((pron, index) => (
+            <option key={index} value={pron.pron}>
+              {pron.name}
             </option>
           ))}
         </select>

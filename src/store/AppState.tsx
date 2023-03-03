@@ -5,7 +5,7 @@ import { dictionaries, Dictionary } from '@/resources/dictionary'
 
 export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | false
 
-//export type LanguageType = 'en' | 'ja'
+export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja'
 
 export type AppState = {
   /**
