@@ -6,7 +6,7 @@ const Header: React.FC = ({ children }) => {
   return (
     <nav className="container mx-auto w-full px-10 py-6">
       <div className="flex w-full flex-col items-center justify-between space-y-3 lg:flex-row lg:space-y-0">
-        <NavLink className="flex items-center text-2xl font-bold text-indigo-400 no-underline hover:no-underline lg:text-4xl" to="/">
+        <NavLink className="flex items-center text-2xl font-bold text-indigo-400 no-underline hover:no-underline lg:text-4xl" to="/home">
           <Logo className="mr-3 h-16 w-16" />
           Qwerty Learner
         </NavLink>

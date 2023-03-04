@@ -15,14 +15,14 @@ const GalleryPage: React.FC = () => {
   const groups = Object.entries(groupBy(dictionaries, (dict) => dict.category))
   const history = useHistory()
   useHotkeys('enter,esc', () => {
-    history.push('/')
+    history.push('/home')
   })
 
   return (
     <Layout>
       <Header>
         <Tooltip content="快捷键 Enter or Esc">
-          <NavLink className="rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white focus:outline-none dark:text-opacity-80" to="/">
+          <NavLink className="rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white focus:outline-none dark:text-opacity-80" to="/home">
             完成选择
           </NavLink>
         </Tooltip>
