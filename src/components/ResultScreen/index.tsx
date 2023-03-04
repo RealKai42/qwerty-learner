@@ -6,6 +6,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export type IncorrectInfo = {
   word: string
@@ -24,6 +25,7 @@ type ResultScreenProps = {
   repeatButtonHandler: () => void
   invisibleButtonHandler: () => void
   nextButtonHandler: () => void
+  exitButtonHandler: () => void
 }
 
 const ResultScreen: React.FC<ResultScreenProps> = ({
@@ -32,6 +34,7 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
   repeatButtonHandler,
   invisibleButtonHandler,
   nextButtonHandler,
+  exitButtonHandler,
 }) => {
   const wordList = useWordList()
 
@@ -100,6 +103,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
               {wordList ? `${wordList.dictName}  第 ${wordList.chapter + 1} 章` : ' '}
             </div>
+            <button className="absolute top-5 right-7" onClick={exitButtonHandler}>
+              <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
+            </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
                 <RemarkRing remark={`${correctRate}%`} caption="正确率" percentage={correctRate} />
