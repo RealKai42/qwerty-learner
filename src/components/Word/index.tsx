@@ -131,7 +131,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', wordDict = { japphone
 
   const playWordSound = pronunciation !== false
   const pronWord = () => {
-    if (pronunciation !== 'jap') {
+    if (pronunciation !== 'romaji') {
       return originWord
     }
     const japWord = wordDict?.japphone
