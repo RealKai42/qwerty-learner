@@ -6,6 +6,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export type IncorrectInfo = {
   word: string
@@ -85,10 +86,6 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
     invisibleButtonHandler()
   })
 
-  useHotkeys('esc', () => {
-    exitButtonHandler()
-  })
-
   return (
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div className="absolute inset-0 bg-gray-300 opacity-80 dark:bg-gray-600"></div>
@@ -106,6 +103,9 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
               {wordList ? `${wordList.dictName}  第 ${wordList.chapter + 1} 章` : ' '}
             </div>
+            <button className="absolute top-5 right-7" onClick={exitButtonHandler}>
+              <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
+            </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
                 <RemarkRing remark={`${correctRate}%`} caption="正确率" percentage={correctRate} />
@@ -124,14 +124,6 @@ const ResultScreen: React.FC<ResultScreenProps> = ({
               </div>
             </div>
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
-              <Tooltip content="快捷键：esc">
-                <button
-                  className="h-12 overflow-hidden rounded-md border-2 border-solid border-gray-300 bg-white px-6 py-2 text-sm font-normal text-gray-700 transition-colors duration-100 hover:bg-indigo-200 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:text-sm md:text-base"
-                  onClick={exitButtonHandler}
-                >
-                  返回
-                </button>
-              </Tooltip>
               <Tooltip content="快捷键：shift + enter">
                 <button
                   className="h-12 overflow-hidden rounded-md border-2 border-solid border-gray-300 bg-white px-6 py-2 text-sm font-normal text-gray-700 transition-colors duration-100 hover:bg-indigo-200 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:text-sm md:text-base"
