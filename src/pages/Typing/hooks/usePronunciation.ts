@@ -1,6 +1,6 @@
 import { useSetPronunciationState, PronunciationType } from '@/store/AppState'
 
-export type SwitcherDispatchType = (newStatus?: string) => void
+export type SwitcherDispatchType = (newStatus: PronunciationType) => void
 
 const usePronunciation = (): [PronunciationType, SwitcherDispatchType] => {
   const [pronunciation, setPronunciation] = useSetPronunciationState()
@@ -13,10 +13,16 @@ const usePronunciation = (): [PronunciationType, SwitcherDispatchType] => {
       case 'us':
         setPronunciation('us')
         break
-      case 'jap':
-        setPronunciation('jap')
+      case 'romaji':
+        setPronunciation('romaji')
         break
-      case 'false':
+      case 'zh':
+        setPronunciation('zh')
+        break
+      case 'ja':
+        setPronunciation('ja')
+        break
+      case false:
         setPronunciation(false)
         break
     }

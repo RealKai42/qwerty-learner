@@ -16,7 +16,7 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 import Tooltip from '@/components/Tooltip'
-import { useRandomState } from '@/store/AppState'
+import { PronunciationType, useRandomState } from '@/store/AppState'
 import Progress from './Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
 import mixpanel from 'mixpanel-browser'
@@ -152,7 +152,7 @@ const App: React.FC = () => {
   }
 
   const changePronunciation = useCallback(
-    (state: string) => {
+    (state: PronunciationType) => {
       pronunciationDispatch(state)
     },
     [pronunciationDispatch],
@@ -222,7 +222,15 @@ const App: React.FC = () => {
               </NavLink>
             </Tooltip>
             <Tooltip content="发音切换">
-              <PronunciationSwitcher state={pronunciation.toString()} changePronunciationState={changePronunciation} />
+              <PronunciationSwitcher
+                state={pronunciation}
+                languageConfig={{
+                  // todo: use 'en' as default language maybe cause some unexpected error, add 'none'/null in the future
+                  language: wordList?.language || 'en',
+                  defaultPronIndex: wordList.defaultPronIndex,
+                }}
+                changePronunciationState={changePronunciation}
+              />
             </Tooltip>
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
             <Tooltip content="快捷键 Enter">
