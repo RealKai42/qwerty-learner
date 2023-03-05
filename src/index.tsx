@@ -23,7 +23,7 @@ ReactDOM.render(
           <Route path="/gallery">
             <GalleryPage />
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
             <TypingPage />
           </Route>
           <Redirect to="/home" />
