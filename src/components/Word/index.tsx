@@ -19,7 +19,7 @@ const initialStatInfo = {
   countTypo: 0,
 }
 
-const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true }) => {
+const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wordVisible = true, setSkipState }) => {
   const originWord = word
 
   word = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
@@ -32,6 +32,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   const [everWrong, setEverWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useSounds()
   const { pronunciation } = useAppState()
+  const [wrongRepeat, setWrongRepeat] = useState(0)
 
   const wordStat = useRef<WordStat>(initialStatInfo)
 
@@ -55,6 +56,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   // useEffect when word change
   useEffect(() => {
     setEverWrong(false)
+    //reset wrongRepeat to 0 when word change
+    setWrongRepeat(0)
     wordStat.current = { ...initialStatInfo }
     wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
   }, [word])
@@ -88,6 +91,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     if (hasWrong) {
       playBeepSound()
       wordStat.current.countTypo += 1
+      setWrongRepeat((value) => value + 1) // wrongRepeat + 1 when has wrong
       const timer = setTimeout(() => {
         setInputWord('')
         setHasWrong(false)
@@ -98,6 +102,13 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       }
     }
   }, [hasWrong, playBeepSound])
+
+  //if wrongRepeat reaches 4, set skipState to true
+  useEffect(() => {
+    if (wrongRepeat >= 4) {
+      setSkipState(true)
+    }
+  }, [wrongRepeat, setSkipState])
 
   // update words state
   useLayoutEffect(() => {
@@ -155,5 +166,6 @@ export type WordProps = {
   onFinish: Function
   isStart: boolean
   wordVisible: boolean
+  setSkipState: Function
 }
 export default Word
