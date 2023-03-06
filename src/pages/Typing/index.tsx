@@ -11,7 +11,7 @@ import { isLegal, IsDesktop } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import useSwitcherState from './hooks/useSwitcherState'
 import Switcher from './Switcher'
-import { useWordList } from './hooks/useWordList'
+import { useWordList, Word as WordType } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
@@ -32,6 +32,7 @@ const App: React.FC = () => {
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
+  const [wordsQueue, setWordsQueue] = useState<WordType[]>([])
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
@@ -65,6 +66,13 @@ const App: React.FC = () => {
   )
 
   useEffect(() => {
+    //copy wordsQueue to wordsQueue
+    if (wordList !== undefined) {
+      setWordsQueue([...wordList.words])
+    }
+  }, [wordList?.words])
+
+  useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
       if (!resultScreenState) {
         if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
@@ -95,15 +103,32 @@ const App: React.FC = () => {
     }
   }, [isStart, resultScreenState])
 
+  const skipWord = useCallback(() => {
+    //skip current word and add it to the end of the wordQueue
+    //store the wordsQueue[order] in a temp variable, then remove it from the queue, then add it to the end of the queue
+    if (wordsQueue.length > 0) {
+      const temp = wordsQueue[order]
+      setWordsQueue((prev) => {
+        const newWordsQueue = [...prev]
+        newWordsQueue.splice(order, 1)
+        return newWordsQueue
+      })
+      setWordsQueue((prev) => [...prev, temp])
+    }
+  }, [order, wordsQueue])
+  // then all depending on wordsQueue[order] will have to move to wordQueue[order]
+
   const onFinish = (everWrong: boolean, wordStat: WordStat) => {
     if (wordList === undefined) {
       return
     }
     // 优先更新数据
-    setCorrectCount((count) => count + wordList.words[order].name.trim().length)
+    //setCorrectCount((count) => count + wordsQueue[order].name.trim().length)
+    setCorrectCount((count) => count + wordsQueue[order].name.trim().length)
     // 记录错误数据
     if (everWrong) {
-      setIncorrectInfo((prev) => [...prev, { word: wordList.words[order].name, translation: wordList.words[order].trans.join('；') }])
+      //setIncorrectInfo((prev) => [...prev, { word: wordsQueue[order].name, translation: wordsQueue[order].trans.join('；') }])
+      setIncorrectInfo((prev) => [...prev, { word: wordsQueue[order].name, translation: wordsQueue[order].trans.join('；') }])
     }
 
     const wordStatUpload: WordStatUpload = {
@@ -121,7 +146,7 @@ const App: React.FC = () => {
     }
     mixpanel.track('Word', wordStatUpload)
     // 更新正确率
-    if (order === wordList.words.length - 1) {
+    if (order === wordsQueue.length - 1) {
       setIsStart(false)
 
       // 上传埋点数据
@@ -246,6 +271,24 @@ const App: React.FC = () => {
                 {isStart ? 'Pause' : 'Start'}
               </button>
             </Tooltip>
+            <Tooltip content="快捷键 Enter">
+              <button
+                className={`${
+                  isStart ? 'bg-orange-400' : 'bg-gray-300'
+                }  flex w-0 items-center justify-center rounded-lg py-1 text-lg text-white transition-all duration-200 focus:outline-none dark:text-opacity-80`}
+                style={{
+                  width: isStart ? '80px' : '0px',
+                  opacity: isStart ? '1' : '0',
+                  visibility: isStart ? 'visible' : 'hidden',
+                }}
+                onClick={(e) => {
+                  //setIsStart((isStart) => !isStart)
+                  skipWord()
+                }}
+              >
+                Skip
+              </button>
+            </Tooltip>
           </Header>
           <Main>
             <div className="container relative mx-auto flex h-full flex-col items-center">
@@ -254,19 +297,19 @@ const App: React.FC = () => {
               {isStart && (
                 <div className="flex flex-col items-center">
                   <Word
-                    key={`word-${wordList.words[order].name}-${order}`}
-                    word={wordList.words[order].name}
+                    key={`word-${wordsQueue[order].name}-${order}`}
+                    word={wordsQueue[order].name}
                     onFinish={onFinish}
                     isStart={isStart}
                     wordVisible={switcherState.wordVisible}
                   />
-                  {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
-                    <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
+                  {switcherState.phonetic && (wordsQueue[order].usphone || wordsQueue[order].ukphone) && (
+                    <Phonetic usphone={wordsQueue[order].usphone} ukphone={wordsQueue[order].ukphone} />
                   )}
-                  <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
+                  <Translation key={`trans-${wordsQueue[order].name}`} trans={wordsQueue[order].trans.join('；')} />
                 </div>
               )}
-              {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
+              {isStart && <Progress order={order} wordsLength={wordsQueue.length} />}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
             </div>
           </Main>
