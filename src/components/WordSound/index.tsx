@@ -1,10 +1,10 @@
 import { SoundIcon, SoundIconProps } from '@/components/SoundIcon'
 import Tooltip from '@/components/Tooltip'
 import usePronunciationSound from '@/hooks/usePronunciation'
-import React, { useEffect, useCallback } from 'react'
+import { useEffect, useCallback } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-const WordSound: React.FC<WordSoundProps> = React.memo(({ word, className, inputWord, ...rest }) => {
+const WordSound = ({ word, className, inputWord, ...rest }: WordSoundProps) => {
   const { play, stop, isPlaying } = usePronunciationSound(word)
 
   useHotkeys(
@@ -38,7 +38,7 @@ const WordSound: React.FC<WordSoundProps> = React.memo(({ word, className, input
       <SoundIcon animated={isPlaying} {...rest} onClick={handleClickSoundIcon} />
     </Tooltip>
   )
-})
+}
 
 export type WordSoundProps = {
   word: string

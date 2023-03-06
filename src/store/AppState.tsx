@@ -1,5 +1,5 @@
 import { omit } from 'lodash'
-import React, { useCallback, useContext } from 'react'
+import React, { ReactNode, useCallback, useContext } from 'react'
 import { useLocalStorage } from 'react-use'
 import { dictionaries, Dictionary } from '@/resources/dictionary'
 
@@ -155,8 +155,9 @@ const defaultState: AppState = {
   soundLoop: false,
 }
 
-export const AppStateProvider: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+export const AppStateProvider = ({ children }: { children: ReactNode }) => {
   const [state, setState] = useLocalStorage<AppState>('state', defaultState, options)
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   return <AppStateContext.Provider value={{ state: state!, dispatch: setState }}>{children}</AppStateContext.Provider>
 }
 

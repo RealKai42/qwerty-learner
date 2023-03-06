@@ -32,12 +32,13 @@ export function useWordList(): UseWordListResult | undefined {
   const selectedDictionary = useSelectedDictionary()
   const [random] = useRandomState()
   const [currentChapter, setCurrentChapter] = useSelectedChapter()
-  const { data: wordList } = useSWR([selectedDictionary.id, selectedDictionary.url], fetchWordList)
+  const { data: wordList } = useSWR([selectedDictionary.url, selectedDictionary.id], ([url, id]) => wordListFetcher(url, id))
   const words = useMemo(
     () => (wordList ? wordList.words.slice(currentChapter * numWordsPerChapter, (currentChapter + 1) * numWordsPerChapter) : []),
     [wordList, currentChapter],
   )
   const shuffleWords = useMemo(() => (random ? shuffle(words) : words), [random, words])
+
   return wordList === undefined
     ? undefined
     : {
@@ -56,7 +57,7 @@ type WordList = {
   totalChapters: number
 }
 
-async function fetchWordList(id: string, url: string): Promise<WordList> {
+async function wordListFetcher(url: string, id: string): Promise<WordList> {
   if (id === 'cet4') {
     return { words: cet4, totalChapters: Math.ceil(cet4.length / numWordsPerChapter) }
   } else {

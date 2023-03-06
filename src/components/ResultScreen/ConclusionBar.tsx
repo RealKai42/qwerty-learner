@@ -1,6 +1,14 @@
+import { IconProp, SizeProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const ICON_MAPPER = [
+type IconMapper = {
+  icon: IconProp
+  className: string
+  size: SizeProp
+  text: (mistakeCount: number) => string
+}
+
+const ICON_MAPPER: IconMapper[] = [
   {
     icon: ['fas', 'heart'],
     className: 'text-indigo-600',
@@ -26,7 +34,7 @@ const ConclusionBar = ({ mistakeLevel, mistakeCount }: ConclusionBarProps) => {
 
   return (
     <div className="flex h-10 flex-row items-center">
-      <FontAwesomeIcon icon={icon as any} className={className} size={size as any} />
+      <FontAwesomeIcon icon={icon} className={className} size={size} />
       <span className="ml-2 inline-block align-middle text-sm font-medium leading-10 text-gray-700 sm:text-sm md:text-base">
         {text(mistakeCount)}
       </span>

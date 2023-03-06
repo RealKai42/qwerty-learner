@@ -1,4 +1,5 @@
 import { useState, MouseEvent } from 'react'
+import { noop } from 'lodash'
 
 export const useModals = (initialState: boolean, initialTitle: string) => {
   const [modalState, setModalState] = useState<boolean>(initialState)
@@ -7,9 +8,9 @@ export const useModals = (initialState: boolean, initialTitle: string) => {
   const [firstButton, setFirstButton] = useState('')
   const [secondButton, setSecondButton] = useState('')
   const [thirdButton, setThirdButton] = useState('')
-  const [firstButtonOnclick, setFirstButtonOnclick] = useState<(e: MouseEvent) => void>(() => {})
-  const [secondButtonOnclick, setSecondButtonOnclick] = useState<(e: MouseEvent) => void>(() => {})
-  const [thirdButtonOnclick, setThirdButtonOnclick] = useState<(e: MouseEvent) => void>(() => {})
+  const [firstButtonOnclick, setFirstButtonOnclick] = useState<(e: MouseEvent) => void>(noop)
+  const [secondButtonOnclick, setSecondButtonOnclick] = useState<(e: MouseEvent) => void>(noop)
+  const [thirdButtonOnclick, setThirdButtonOnclick] = useState<(e: MouseEvent) => void>(noop)
   const [thirdBtnHotkey, setThirdBtnHotkey] = useState('')
 
   const setMessage = (title: string, content: string, firstButton: string, secondButton: string, thirdButton?: string) => {

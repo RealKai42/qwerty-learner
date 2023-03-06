@@ -6,7 +6,7 @@ import VolumeHighIcon from './volume-icons/VolumeHieghIcon'
 
 const volumeIcons = [VolumeIcon, VolumeLowIcon, VolumeMediumIcon, VolumeHighIcon]
 
-export const SoundIcon = React.memo<SoundIconProps>(({ duration = 500, animated = false, ...rest }, ref) => {
+export const SoundIcon = ({ duration = 500, animated = false, ...rest }: SoundIconProps) => {
   const [animationFrameIndex, setAnimationFrameIndex] = useState(0)
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export const SoundIcon = React.memo<SoundIconProps>(({ duration = 500, animated 
   const Icon = volumeIcons[animationFrameIndex]
 
   return <Icon {...rest} />
-})
+}
 
 export type SoundIconProps = {
   animated?: boolean

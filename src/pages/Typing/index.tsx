@@ -80,18 +80,13 @@ const App: React.FC = () => {
         setIsStart(false)
       }
     }
-    const hjOnclick = () => {
-      setIsStart(false)
-    }
 
     window.addEventListener('blur', onBlur)
     window.addEventListener('keydown', onKeydown)
-    document.getElementsByClassName('_hj_feedback_container')[0]?.addEventListener('click', hjOnclick)
 
     return () => {
       window.removeEventListener('keydown', onKeydown)
       window.removeEventListener('blur', onBlur)
-      document.getElementsByClassName('_hj_feedback_container')[0]?.removeEventListener('click', hjOnclick)
     }
   }, [isStart, resultScreenState])
 
@@ -166,7 +161,7 @@ const App: React.FC = () => {
   }, [wordList])
 
   const setDictation = useCallback(
-    (option) => {
+    (option: boolean) => {
       switcherStateDispatch('wordVisible', !option)
       //dictation mode being set to 'true' indicates that the word is invisible.
     },
@@ -239,7 +234,7 @@ const App: React.FC = () => {
                 className={`${
                   isStart ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
                 }  flex w-20 items-center justify-center rounded-lg px-6 py-1 text-lg text-white transition-colors duration-300 focus:outline-none dark:text-opacity-80`}
-                onClick={(e) => {
+                onClick={() => {
                   setIsStart((isStart) => !isStart)
                 }}
               >

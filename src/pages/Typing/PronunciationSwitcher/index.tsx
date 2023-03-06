@@ -15,8 +15,9 @@ const PronunciationSwitcher: React.FC<PronunciationSwitcherPropsType> = ({ state
   const { language, defaultPronIndex } = languageConfig
   useEffect(() => {
     // 如果 defaultPron 是 undefined LANG_PRON_MAP[language].defaultPron.pron 作为默认参数
-    let pronIndex = defaultPronIndex || LANG_PRON_MAP[language].defaultPronIndex
+    const pronIndex = defaultPronIndex || LANG_PRON_MAP[language].defaultPronIndex
     changePronunciationState(LANG_PRON_MAP[language].pronunciation[pronIndex].pron)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language])
 
   return (

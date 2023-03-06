@@ -4,6 +4,7 @@ import { PronunciationType, useAppState } from '@/store/AppState'
 import useSound from 'use-sound'
 import { HookOptions } from 'use-sound/dist/types'
 import { addHowlListener } from '../utils/utils'
+import { noop } from 'lodash'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
 function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>) {
@@ -34,7 +35,7 @@ export default function usePronunciationSound(word: string) {
   useEffect(() => {
     if (!sound) return
     sound.loop(soundLoop)
-    return () => {}
+    return noop
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [soundLoop])
 

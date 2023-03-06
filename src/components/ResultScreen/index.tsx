@@ -19,23 +19,23 @@ export type ResultSpeedInfo = {
   second: number
 }
 
-type ResultScreenProps = {
-  incorrectInfo: IncorrectInfo[]
+interface ResultScreenProps {
   speedInfo: ResultSpeedInfo
+  incorrectInfo: IncorrectInfo[]
   repeatButtonHandler: () => void
   invisibleButtonHandler: () => void
   nextButtonHandler: () => void
   exitButtonHandler: () => void
 }
 
-const ResultScreen: React.FC<ResultScreenProps> = ({
+const ResultScreen = ({
   speedInfo,
   incorrectInfo,
   repeatButtonHandler,
   invisibleButtonHandler,
   nextButtonHandler,
   exitButtonHandler,
-}) => {
+}: ResultScreenProps) => {
   const wordList = useWordList()
 
   const isLastChapter = useMemo(() => {

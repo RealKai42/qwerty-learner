@@ -101,8 +101,8 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
 
   // update words state
   useLayoutEffect(() => {
-    let hasWrong = false,
-      wordLength = word.length,
+    let hasWrong = false
+    const wordLength = word.length,
       inputWordLength = inputWord.length
     const statesList: LetterState[] = []
 
@@ -125,6 +125,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
       setIsFinish(true)
     }
     setStatesList(statesList)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputWord, word])
 
   const playWordSound = pronunciation !== false
@@ -152,7 +153,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
 
 export type WordProps = {
   word: string
-  onFinish: Function
+  onFinish: (everWrong: boolean, wordStat: WordStat) => void
   isStart: boolean
   wordVisible: boolean
 }

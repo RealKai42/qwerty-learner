@@ -10,13 +10,16 @@ const Speed: React.FC<SpeedProps> = ({ correctCount, inputCount, isStart, setSpe
   const speed = (correctCount / (time === 0 ? 1 : time)).toFixed(2)
   const secondsStirng = seconds < 10 ? '0' + seconds : seconds + ''
   const minutesStirng = minutes < 10 ? '0' + minutes : minutes + ''
+
   useEffect(() => {
     isStart ? start() : pause()
-  }, [isStart, start, pause])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isStart])
 
   useEffect(() => {
     setSpeedInfo({ speed, minute: minutes, second: seconds })
-  }, [speed, minutes, seconds, setSpeedInfo])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [speed, minutes, seconds])
 
   return (
     <div className="card opacity-45 mt-auto flex w-3/5 rounded-large bg-white p-4 py-10 transition-colors duration-300 dark:bg-gray-800">

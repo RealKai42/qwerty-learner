@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '@/components/Layout'
 import DictionaryGroup from './DictionaryGroup'
 import Header from '@/components/Header'
-import { NavLink, useHistory } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { useDictionaries, useSelectedDictionary } from '@/store/AppState'
 import { groupBy } from 'lodash'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -13,9 +13,9 @@ const GalleryPage: React.FC = () => {
   const dictionaries = useDictionaries()
   const selectedDictionary = useSelectedDictionary()
   const groups = Object.entries(groupBy(dictionaries, (dict) => dict.category))
-  const history = useHistory()
+  const navigate = useNavigate()
   useHotkeys('enter,esc', () => {
-    history.push('/')
+    navigate('/')
   })
 
   return (
