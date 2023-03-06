@@ -35,7 +35,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
 
   const wordStat = useRef<WordStat>(initialStatInfo)
 
-  const onKeydown = useCallback((e) => {
+  const onKeydown = useCallback((e: KeyboardEvent) => {
     const char = e.key
     if (char === ' ') {
       // 防止用户惯性按空格导致页面跳动
