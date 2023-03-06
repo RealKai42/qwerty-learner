@@ -5,7 +5,7 @@ import './icon'
 import reportWebVitals from './reportWebVitals'
 import 'react-app-polyfill/stable'
 import { AppStateProvider } from '@/store/AppState'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'
 import TypingPage from './pages/Typing'
 import mixpanel from 'mixpanel-browser'
@@ -23,9 +23,10 @@ ReactDOM.render(
           <Route path="/gallery">
             <GalleryPage />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <TypingPage />
           </Route>
+          <Redirect to="/" />
         </Switch>
       </Router>
     </AppStateProvider>
