@@ -5041,8 +5041,8 @@
  },
  {
    "name": "kanegoto",
-   "trans": ["prediction, promise, prognostication"],
-   "japphone": "予言"
+   "trans": ["prediction, promise, prognostication,予言"],
+   "japphone": "かねごと"
  },
  {
    "name": "kyakkan",
@@ -5121,8 +5121,8 @@
  },
  {
    "name": "orosoka",
-   "trans": ["neglect, negligence, carelessness"],
-   "japphone": "疎か"
+   "trans": ["neglect, negligence, carelessness,疎か"],
+   "japphone": "おろそか"
  },
  {
    "name": "ryuutsuu",
@@ -5165,9 +5165,9 @@
    "japphone": "遭難"
  },
  {
-   "name": "kazuke",
+   "name": "hiduke",
    "trans": ["date, dating"],
-   "japphone": "日付"
+   "japphone": "日付 "
  },
  {
    "name": "suiden",
@@ -5250,7 +5250,7 @@
    "japphone": "成り立つ"
  },
  {
-   "name": "jigyou",
+   "name": "chikei",
    "trans": ["terrain, geographical features, topography"],
    "japphone": "地形"
  },
@@ -5281,8 +5281,8 @@
  },
  {
    "name": "dake",
-   "trans": ["only, just, as"],
-   "japphone": "丈"
+   "trans": ["only, just, as,丈"],
+   "japphone": "だけ"
  },
  {
    "name": "sedai",
@@ -5291,8 +5291,8 @@
  },
  {
    "name": "tobari",
-   "trans": ["curtain"],
-   "japphone": "帳"
+   "trans": ["curtain,帳"],
+   "japphone": "とばり"
  },
  {
    "name": "chikusan",
@@ -5371,8 +5371,8 @@
  },
  {
    "name": "gyoku",
-   "trans": ["king (shogi)"],
-   "japphone": "玉"
+   "trans": ["king (shogi),玉"],
+   "japphone": "ぎょく"
  },
  {
    "name": "takusan",
@@ -5396,7 +5396,7 @@
  },
  {
    "name": "kottouhin",
-   "trans": ["curio"],
+   "trans": ["curio,antique"],
    "japphone": "骨董品"
  },
  {
@@ -5457,7 +5457,7 @@
  {
    "name": "sahodo",
    "trans": ["(not) very, (not) much"],
-   "japphone": "左程"
+   "japphone": "然程"
  },
  {
    "name": "tachiyoru",
@@ -5521,8 +5521,8 @@
  },
  {
    "name": "sharaku",
-   "trans": ["frank, open hearted"],
-   "japphone": "洒落"
+   "trans": ["frank, open hearted,洒落"],
+   "japphone": "しゃらく"
  },
  {
    "name": "bungo",
@@ -5730,7 +5730,7 @@
    "japphone": "偽造"
  },
  {
-   "name": "gougi",
+   "name": "tsuyoki",
    "trans": ["great, grand"],
    "japphone": "強気"
  },
