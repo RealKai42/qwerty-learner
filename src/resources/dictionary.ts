@@ -1015,6 +1015,15 @@ export const dictionaries: Dictionary[] = [
     length: 670,
     language: 'romaji',
   },
+  {
+    id: 'Hanzi001',
+    name: '3000汉字学习',
+    description: '中文学习',
+    category: 'En-CH',
+    url: './dicts/Hanzi.json',
+    length: 3000,
+    language: 'zh',
+  },
 ]
 
 /**
