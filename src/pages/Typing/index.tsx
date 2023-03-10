@@ -102,7 +102,7 @@ const App: React.FC = () => {
     }
     if (order < wordList.words.length - 1) {
       setOrder((order) => order + 1)
-      //reset to false when skip
+      // reset to false when skip
       setSkipState(false)
     }
   }, [order, wordList?.words])
@@ -160,9 +160,10 @@ const App: React.FC = () => {
       setResultScreenState(true)
     } else {
       setOrder((order) => order + 1)
-      //if user finished the word without skipping, then set skipState to false
-      setSkipState(false)
     }
+
+    // if user finished the word without skipping, then set skipState to false
+    setSkipState(false)
   }
 
   const changePronunciation = useCallback(

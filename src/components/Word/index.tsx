@@ -56,7 +56,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
   // useEffect when word change
   useEffect(() => {
     setEverWrong(false)
-    //reset wrongRepeat to 0 when word change
+    // reset wrongRepeat to 0 when word change
     setWrongRepeat(0)
     wordStat.current = { ...initialStatInfo }
     wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
@@ -103,7 +103,7 @@ const Word: React.FC<WordProps> = ({ word = 'defaultWord', onFinish, isStart, wo
     }
   }, [hasWrong, playBeepSound])
 
-  //if wrongRepeat reaches 4, set skipState to true
+  // if wrongRepeat reaches 4, set skipState to true
   useEffect(() => {
     if (wrongRepeat >= 4) {
       setSkipState(true)
