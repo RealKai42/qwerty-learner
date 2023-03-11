@@ -17,6 +17,7 @@
     "dayjs": "^1.11.7",
     "eslint": "^8.35.0",
     "howler": "^2.2.3",
+    "jotai": "^2.0.3",
     "lodash": "^4.17.20",
     "mixpanel-browser": "^2.45.0",
     "postcss": "^8.4.21",
