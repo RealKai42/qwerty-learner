@@ -1,7 +1,7 @@
 import { atomWithStorage } from 'jotai/utils'
 import { atom } from 'jotai'
 import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
-import { PronunciationType } from '@/typings'
+import { PronunciationType, PhoneticType } from '@/typings'
 import { idDictionaryMap } from '@/resources/dictionary'
 
 export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
@@ -31,7 +31,7 @@ export const hintSoundsConfigAtom = atomWithStorage('hintSoundsConfig', {
 export const pronunciationConfigAtom = atomWithStorage('pronunciation', {
   isOpen: true,
   volume: 1,
-  type: PronunciationType.us,
+  type: 'us' as PronunciationType,
   isLoop: false,
 })
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)
@@ -42,7 +42,7 @@ export const randomConfigAtom = atomWithStorage('randomConfig', {
 
 export const phoneticConfigAtom = atomWithStorage('phoneticConfig', {
   isOpen: true,
-  type: PronunciationType.us,
+  type: 'us' as PhoneticType,
 })
 
 export const darkModeAtom = atomWithStorage('darkMode', window.matchMedia('(prefers-color-scheme: dark)').matches)

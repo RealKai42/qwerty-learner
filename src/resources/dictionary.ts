@@ -1,4 +1,4 @@
-﻿import { LanguageType } from '@/store/AppState'
+﻿import { LanguageType } from '@/typings/index'
 
 export type Dictionary = {
   id: string

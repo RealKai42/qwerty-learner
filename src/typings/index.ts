@@ -4,17 +4,6 @@ export type SoundResource = {
   filename: string
 }
 
-export enum PronunciationType {
-  'us',
-  'uk',
-  'romaji',
-  'zh',
-  'ja',
-}
-
-export enum PhoneticType {
-  'us',
-  'uk',
-  'romaji',
-  'zh',
-}
+export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja'
+export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja'
+export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja'

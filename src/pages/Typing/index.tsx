@@ -6,7 +6,7 @@ import Translation from '@/components/Translation'
 import Speed from '@/components/Speed'
 import Loading from '@/components/Loading'
 import Phonetic from '@/components/Phonetic'
-import PronunciationSwitcher from './PronunciationSwitcher'
+import PronunciationSwitcher from './components/PronunciationSwitcher'
 import { isLegal, IsDesktop } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import useSwitcherState from './hooks/useSwitcherState'
@@ -16,8 +16,8 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import usePronunciation from './hooks/usePronunciation'
 import Tooltip from '@/components/Tooltip'
-import { PronunciationType, useRandomState } from '@/store/AppState'
-import Progress from './Progress'
+import { useRandomState } from '@/store/AppState'
+import Progress from './components/Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
 import mixpanel from 'mixpanel-browser'
 import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
@@ -30,7 +30,7 @@ const App: React.FC = () => {
   const [isStart, setIsStart] = useState<boolean>(false)
   const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
   const wordList = useWordList()
-  const [pronunciation, pronunciationDispatch] = usePronunciation()
+  const [pronunciation] = usePronunciation()
   const [random] = useRandomState()
 
   //props for ResultScreen
@@ -146,13 +146,6 @@ const App: React.FC = () => {
     }
   }
 
-  const changePronunciation = useCallback(
-    (state: PronunciationType) => {
-      pronunciationDispatch(state)
-    },
-    [pronunciationDispatch],
-  )
-
   const addChapter = useCallback(() => {
     if (wordList === undefined) {
       return
@@ -218,15 +211,7 @@ const App: React.FC = () => {
               </NavLink>
             </Tooltip>
             <Tooltip content="发音切换">
-              <PronunciationSwitcher
-                state={pronunciation}
-                languageConfig={{
-                  // todo: use 'en' as default language maybe cause some unexpected error, add 'none'/null in the future
-                  language: wordList?.language || 'en',
-                  defaultPronIndex: wordList.defaultPronIndex,
-                }}
-                changePronunciationState={changePronunciation}
-              />
+              <PronunciationSwitcher />
             </Tooltip>
             <Switcher state={switcherState} dispatch={switcherStateDispatch} />
             <Tooltip content="快捷键 Enter">
