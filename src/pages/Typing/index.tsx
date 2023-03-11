@@ -9,28 +9,23 @@ import Phonetic from '@/components/Phonetic'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import { isLegal, IsDesktop } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
-import useSwitcherState from './hooks/useSwitcherState'
-import Switcher from './Switcher'
+import Switcher from './components/Switcher'
 import { useWordList } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
-import usePronunciation from './hooks/usePronunciation'
 import Tooltip from '@/components/Tooltip'
 import { useRandomState } from '@/store/AppState'
 import Progress from './components/Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
-import mixpanel from 'mixpanel-browser'
-import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
-import dayjs from 'dayjs'
+import { WordStat } from '@/utils/statInfo'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
   const [inputCount, setInputCount] = useState<number>(0)
   const [correctCount, setCorrectCount] = useState<number>(0)
   const [isStart, setIsStart] = useState<boolean>(false)
-  const [switcherState, switcherStateDispatch] = useSwitcherState({ wordVisible: true, phonetic: false })
+  const [wordVisible, setWordVisible] = useState<boolean>(true)
   const wordList = useWordList()
-  const [pronunciation] = usePronunciation()
   const [random] = useRandomState()
 
   //props for ResultScreen
@@ -101,43 +96,9 @@ const App: React.FC = () => {
       setIncorrectInfo((prev) => [...prev, { word: wordList.words[order].name, translation: wordList.words[order].trans.join('；') }])
     }
 
-    const wordStatUpload: WordStatUpload = {
-      ...wordStat,
-      order: order + 1,
-      chapter: (wordList.chapter + 1).toString(),
-      wordlist: wordList.dictName,
-      modeDictation: !switcherState.wordVisible,
-      modeDark: switcherState.darkMode,
-      modeShuffle: switcherState.random,
-      enabledKeyboardSound: switcherState.sound,
-      enabledPhotonicsSymbol: switcherState.phonetic,
-      pronunciationAuto: pronunciation !== false,
-      pronunciationOption: pronunciation === false ? 'none' : pronunciation,
-    }
-    mixpanel.track('Word', wordStatUpload)
     // 更新正确率
     if (order === wordList.words.length - 1) {
       setIsStart(false)
-
-      // 上传埋点数据
-      const chapterStatUpload: ChapterStatUpload = {
-        timeEnd: dayjs.utc().format('YYYY-MM-DD HH:mm:ss'),
-        duration: speedInfo.second + speedInfo.minute * 60,
-        countInput: inputCount,
-        countTypo: inputCount - correctCount,
-        countCorrect: correctCount,
-        chapter: (wordList.chapter + 1).toString(),
-        wordlist: wordList.dictName,
-        modeDictation: !switcherState.wordVisible,
-        modeDark: switcherState.darkMode,
-        modeShuffle: switcherState.random,
-        enabledKeyboardSound: switcherState.sound,
-        enabledPhotonicsSymbol: switcherState.phonetic,
-        pronunciationAuto: pronunciation !== false,
-        pronunciationOption: pronunciation === false ? 'none' : pronunciation,
-      }
-
-      mixpanel.track('Chapter', chapterStatUpload)
 
       // 用户完成当前章节
       setResultScreenState(true)
@@ -153,13 +114,10 @@ const App: React.FC = () => {
     wordList.setChapterNumber(wordList.chapter + 1)
   }, [wordList])
 
-  const setDictation = useCallback(
-    (option: boolean) => {
-      switcherStateDispatch('wordVisible', !option)
-      //dictation mode being set to 'true' indicates that the word is invisible.
-    },
-    [switcherStateDispatch],
-  )
+  const setDictation = useCallback((option: boolean) => {
+    setWordVisible(!option)
+    //dictation mode being set to 'true' indicates that the word is invisible.
+  }, [])
 
   const repeatButtonHandler = () => {
     setResultScreenState(false)
@@ -213,7 +171,7 @@ const App: React.FC = () => {
             <Tooltip content="发音切换">
               <PronunciationSwitcher />
             </Tooltip>
-            <Switcher state={switcherState} dispatch={switcherStateDispatch} />
+            <Switcher wordVisible={wordVisible} setWordVisible={setWordVisible} />
             <Tooltip content="快捷键 Enter">
               <button
                 className={`${
@@ -238,11 +196,11 @@ const App: React.FC = () => {
                     word={wordList.words[order].name}
                     onFinish={onFinish}
                     isStart={isStart}
-                    wordVisible={switcherState.wordVisible}
+                    wordVisible={wordVisible}
                   />
-                  {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
+                  {/* {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                     <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
-                  )}
+                  )} */}
                   <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
                 </div>
               )}

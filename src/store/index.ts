@@ -45,6 +45,6 @@ export const phoneticConfigAtom = atomWithStorage('phoneticConfig', {
   type: 'us' as PhoneticType,
 })
 
-export const darkModeAtom = atomWithStorage('darkMode', window.matchMedia('(prefers-color-scheme: dark)').matches)
+export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.matchMedia('(prefers-color-scheme: dark)').matches)
 
 export const isInDevModeAtom = atom(false)

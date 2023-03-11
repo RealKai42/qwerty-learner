@@ -2,6 +2,7 @@ import { PronunciationType } from '@/typings/index'
 import { LANG_PRON_MAP } from '@/resources/soundResource'
 import { useAtomValue, useAtom } from 'jotai'
 import { currentDictInfoAtom, pronunciationConfigAtom } from '@/store'
+import { useCallback } from 'react'
 
 const PronunciationSwitcher = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
@@ -17,8 +18,7 @@ const PronunciationSwitcher = () => {
   //   // eslint-disable-next-line react-hooks/exhaustive-deps
   // }, [language])
 
-  const setPron = (newState: PronunciationType | boolean) => {
-    console.log(newState)
+  const setPron = useCallback((newState: PronunciationType | boolean) => {
     if (typeof newState === 'boolean') {
       setPronunciationConfig((old) => ({
         ...old,
@@ -31,7 +31,8 @@ const PronunciationSwitcher = () => {
         type: newState,
       }))
     }
-  }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className="flex items-center justify-center space-x-3">
