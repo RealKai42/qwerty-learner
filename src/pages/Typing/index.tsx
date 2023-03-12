@@ -11,10 +11,11 @@ import { useWordList } from './hooks/useWordList'
 import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import Tooltip from '@/components/Tooltip'
-import { useRandomState } from '@/store/AppState'
 import Progress from './components/Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
 import CurrentWord from './components/CurrentWord'
+import { useAtom, useAtomValue } from 'jotai'
+import { currentChapterAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -23,7 +24,9 @@ const App: React.FC = () => {
   const [isStart, setIsStart] = useState<boolean>(false)
   const [wordVisible, setWordVisible] = useState<boolean>(true)
   const wordList = useWordList()
-  const [random] = useRandomState()
+  const randomConfig = useAtomValue(randomConfigAtom)
+  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
@@ -33,7 +36,7 @@ const App: React.FC = () => {
   useEffect(() => {
     // reset order when random change
     setOrder(0)
-  }, [random])
+  }, [randomConfig.isOpen])
 
   useEffect(() => {
     // 检测用户设备
@@ -85,14 +88,14 @@ const App: React.FC = () => {
       return
     }
     // 优先更新数据
-    setCorrectCount((count) => count + wordList.words[order].name.trim().length)
+    setCorrectCount((count) => count + wordList[order].name.trim().length)
     // 记录错误数据
     if (everWrong) {
-      setIncorrectInfo((prev) => [...prev, { word: wordList.words[order].name, translation: wordList.words[order].trans.join('；') }])
+      setIncorrectInfo((prev) => [...prev, { word: wordList[order].name, translation: wordList[order].trans.join('；') }])
     }
 
     // 更新正确率
-    if (order === wordList.words.length - 1) {
+    if (order === wordList.length - 1) {
       setIsStart(false)
 
       // 用户完成当前章节
@@ -106,7 +109,8 @@ const App: React.FC = () => {
     if (wordList === undefined) {
       return
     }
-    wordList.setChapterNumber(wordList.chapter + 1)
+    setCurrentChapter((old) => old + 1)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordList])
 
   const setDictation = useCallback((option: boolean) => {
@@ -160,7 +164,7 @@ const App: React.FC = () => {
                 className="block rounded-lg px-4 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
                 to="/gallery"
               >
-                {wordList.dictName} 第 {wordList.chapter + 1} 章
+                {currentDictInfo.name} 第 {currentChapter + 1} 章
               </NavLink>
             </Tooltip>
             <Tooltip content="发音切换">
@@ -184,8 +188,8 @@ const App: React.FC = () => {
             <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="h-1/3"></div>
               {!isStart && <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>}
-              {true && <CurrentWord word={wordList.words[order]} onFinish={onFinish} isStart={isStart} wordVisible={wordVisible} />}
-              {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
+              {isStart && <CurrentWord word={wordList[order]} onFinish={onFinish} isStart={isStart} wordVisible={wordVisible} />}
+              {isStart && <Progress order={order} wordsLength={wordList.length} />}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
             </div>
           </Main>

@@ -1,9 +1,10 @@
+import { useAtomValue } from 'jotai'
 import cet4 from '@/assets/CET4_T.json'
 import { shuffle } from 'lodash'
 import { useMemo } from 'react'
-import { useSelectedChapter, useSelectedDictionary, useRandomState } from '@/store/AppState'
 import useSWR from 'swr'
-import { LanguageType } from '@/store/AppState'
+import { LanguageType } from '@/typings/index'
+import { randomConfigAtom, currentDictInfoAtom, currentChapterAtom } from '@/store'
 
 export type Word = {
   name: string
@@ -28,28 +29,18 @@ export type UseWordListResult = {
  * Use word lists from the current selected dictionary.
  * When the data is loading, this returns `undefined`.
  */
-export function useWordList(): UseWordListResult | undefined {
-  const selectedDictionary = useSelectedDictionary()
-  const [random] = useRandomState()
-  const [currentChapter, setCurrentChapter] = useSelectedChapter()
-  const { data: wordList } = useSWR([selectedDictionary.url, selectedDictionary.id], ([url, id]) => wordListFetcher(url, id))
+export function useWordList(): Word[] | undefined {
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const currentChapter = useAtomValue(currentChapterAtom)
+  const randomConfig = useAtomValue(randomConfigAtom)
+  const { data: wordList } = useSWR([currentDictInfo.url, currentDictInfo.id], ([url, id]) => wordListFetcher(url, id))
   const words = useMemo(
     () => (wordList ? wordList.words.slice(currentChapter * numWordsPerChapter, (currentChapter + 1) * numWordsPerChapter) : []),
     [wordList, currentChapter],
   )
-  const shuffleWords = useMemo(() => (random ? shuffle(words) : words), [random, words])
+  const shuffleWords = useMemo(() => (randomConfig.isOpen ? shuffle(words) : words), [randomConfig.isOpen, words])
 
-  return wordList === undefined
-    ? undefined
-    : {
-        dictName: selectedDictionary.name,
-        chapter: currentChapter,
-        chapterListLength: wordList.totalChapters,
-        words: shuffleWords,
-        language: selectedDictionary.language,
-        defaultPronIndex: selectedDictionary.defaultPronIndex,
-        setChapterNumber: setCurrentChapter,
-      }
+  return wordList === undefined ? undefined : shuffleWords
 }
 
 type WordList = {

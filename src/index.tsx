@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import './icon'
 import 'react-app-polyfill/stable'
-import { AppStateProvider } from '@/store/AppState'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'
 import TypingPage from './pages/Typing'
@@ -20,13 +19,11 @@ const root = createRoot(container!)
 
 root.render(
   <React.StrictMode>
-    <AppStateProvider>
-      <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
-        <Routes>
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/" element={<TypingPage />} />
-        </Routes>
-      </BrowserRouter>
-    </AppStateProvider>
+    <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
+      <Routes>
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/" element={<TypingPage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 )

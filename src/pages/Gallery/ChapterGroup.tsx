@@ -1,10 +1,12 @@
 import React from 'react'
 import { range } from 'lodash'
-import { useSelectedChapter } from '@/store/AppState'
 import ChapterButton from './ChapterButton'
+import { useAtom } from 'jotai'
+import { currentChapterAtom } from '@/store'
 
 const ChapterGroup: React.FC<ChapterGroupProps> = ({ totalWords }) => {
-  const [selectedChapter, setSelectedChapter] = useSelectedChapter()
+  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
+
   const chapterCount = Math.ceil(totalWords / 20)
   return (
     <main className="mr-4 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -13,17 +15,17 @@ const ChapterGroup: React.FC<ChapterGroupProps> = ({ totalWords }) => {
           <ChapterButton
             wordCount={totalWords % 20 || 20}
             key={index}
-            selected={selectedChapter === index}
+            selected={currentChapter === index}
             index={index}
-            onClick={() => setSelectedChapter(index)}
+            onClick={() => setCurrentChapter(index)}
           />
         ) : (
           <ChapterButton
             wordCount={20}
             key={index}
-            selected={selectedChapter === index}
+            selected={currentChapter === index}
             index={index}
-            onClick={() => setSelectedChapter(index)}
+            onClick={() => setCurrentChapter(index)}
           />
         ),
       )}
