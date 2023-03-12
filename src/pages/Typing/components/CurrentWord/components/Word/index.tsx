@@ -1,6 +1,6 @@
 import { useMemo, useState, useCallback, useEffect, useLayoutEffect } from 'react'
 import Letter from './Letter'
-import useSounds from '@/hooks/useSounds'
+import useKeySounds from '@/hooks/useKeySounds'
 import { LetterState } from './Letter'
 import { isChineseSymbol, isLegal } from '@/utils/utils'
 import style from './index.module.css'
@@ -27,7 +27,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   const [isFinish, setIsFinish] = useState(false)
   const [hasWrong, setHasWrong] = useState(false)
   const [everWrong, setEverWrong] = useState(false)
-  const [playKeySound, playBeepSound, playHintSound] = useSounds()
+  const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
 
   const onKeydown = useCallback((e: KeyboardEvent) => {
     const char = e.key
