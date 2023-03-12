@@ -184,7 +184,7 @@ const App: React.FC = () => {
             <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="h-1/3"></div>
               {!isStart && <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>}
-              {isStart && <CurrentWord word={wordList.words[order]} onFinish={onFinish} isStart={isStart} wordVisible={wordVisible} />}
+              {true && <CurrentWord word={wordList.words[order]} onFinish={onFinish} isStart={isStart} wordVisible={wordVisible} />}
               {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
             </div>

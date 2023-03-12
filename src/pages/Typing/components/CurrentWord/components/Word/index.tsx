@@ -3,6 +3,8 @@ import Letter from './Letter'
 import useSounds from '@/hooks/useSounds'
 import { LetterState } from './Letter'
 import { isChineseSymbol, isLegal } from '@/utils/utils'
+import style from './index.module.css'
+import WordSound from '../WordSound'
 
 export type WordProps = {
   word: string
@@ -123,7 +125,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   return (
     <div className="flex justify-center pt-4 pb-1">
       <div className="relative">
-        <div className={`flex items-center justify-center `}>
+        <div className={`flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
           {displayWord.split('').map((t, index) => {
             return (
               <Letter
@@ -135,6 +137,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
             )
           })}
         </div>
+        <WordSound word={word} inputWord={inputWord} />
       </div>
     </div>
   )
