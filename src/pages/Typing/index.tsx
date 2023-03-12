@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Header from '@/components/Header'
-import Main from '@/components/Main'
 import Speed from '@/components/Speed'
 import Loading from '@/components/Loading'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
@@ -184,7 +183,7 @@ const App: React.FC = () => {
               </button>
             </Tooltip>
           </Header>
-          <Main>
+          <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
             <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="h-1/3"></div>
               {!isStart && <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>}
@@ -192,7 +191,7 @@ const App: React.FC = () => {
               {isStart && <Progress order={order} wordsLength={wordList.length} />}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
             </div>
-          </Main>
+          </div>
         </Layout>
       )}
     </>

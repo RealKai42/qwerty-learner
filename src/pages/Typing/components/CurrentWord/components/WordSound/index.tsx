@@ -1,4 +1,4 @@
-import { SoundIcon, SoundIconProps } from '@/components/SoundIcon'
+import { SoundIcon, SoundIconProps } from '../SoundIcon'
 import Tooltip from '@/components/Tooltip'
 import usePronunciationSound from '@/hooks/usePronunciation'
 import { useAtomValue } from 'jotai'
