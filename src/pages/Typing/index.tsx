@@ -22,6 +22,7 @@ import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/Resul
 import mixpanel from 'mixpanel-browser'
 import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
 import dayjs from 'dayjs'
+import StarCard from '@/components/StarCard'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -199,6 +200,7 @@ const App: React.FC = () => {
 
   return (
     <>
+      <StarCard />
       {resultScreenState && (
         <ResultScreen
           incorrectInfo={incorrectInfo}
