@@ -1,11 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import Main from '@/components/Main'
-import Word from '@/components/Word'
-import Translation from '@/components/Translation'
 import Speed from '@/components/Speed'
 import Loading from '@/components/Loading'
-import Phonetic from '@/components/Phonetic'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import { isLegal, IsDesktop } from '@/utils/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -17,7 +14,7 @@ import Tooltip from '@/components/Tooltip'
 import { useRandomState } from '@/store/AppState'
 import Progress from './components/Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
-import { WordStat } from '@/utils/statInfo'
+import CurrentWord from './components/CurrentWord'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -52,8 +49,8 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (resultScreenState === false) {
-        setIsStart((isStart) => !isStart)
+      if (resultScreenState === false && !isStart) {
+        setIsStart((old) => (old ? old : true))
       }
     },
     [resultScreenState],
@@ -67,13 +64,11 @@ const App: React.FC = () => {
             setInputCount((count) => count + 1)
           }
         }
-        setIsStart(true)
+        setIsStart((old) => (old ? old : true))
       }
     }
     const onBlur = () => {
-      if (isStart) {
-        setIsStart(false)
-      }
+      setIsStart((old) => (old ? false : old))
     }
 
     window.addEventListener('blur', onBlur)
@@ -85,7 +80,7 @@ const App: React.FC = () => {
     }
   }, [isStart, resultScreenState])
 
-  const onFinish = (everWrong: boolean, wordStat: WordStat) => {
+  const onFinish = (everWrong: boolean) => {
     if (wordList === undefined) {
       return
     }
@@ -189,21 +184,7 @@ const App: React.FC = () => {
             <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="h-1/3"></div>
               {!isStart && <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>}
-              {isStart && (
-                <div className="flex flex-col items-center">
-                  <Word
-                    key={`word-${wordList.words[order].name}-${order}`}
-                    word={wordList.words[order].name}
-                    onFinish={onFinish}
-                    isStart={isStart}
-                    wordVisible={wordVisible}
-                  />
-                  {/* {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
-                    <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
-                  )} */}
-                  <Translation key={`trans-${wordList.words[order].name}`} trans={wordList.words[order].trans.join('；')} />
-                </div>
-              )}
+              {isStart && <CurrentWord word={wordList.words[order]} onFinish={onFinish} isStart={isStart} wordVisible={wordVisible} />}
               {isStart && <Progress order={order} wordsLength={wordList.words.length} />}
               <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
             </div>

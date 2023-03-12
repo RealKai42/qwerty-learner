@@ -6,8 +6,8 @@ export type ProgressProps = {
 }
 
 const Progress: React.FC<ProgressProps> = ({ order, wordsLength }) => {
-  const [progress, setProgress] = useState<number>(0)
-  const [phase, setPhase] = useState<number>(0)
+  const [progress, setProgress] = useState(0)
+  const [phase, setPhase] = useState(0)
 
   const colorSwitcher: { [key: number]: string } = {
     0: 'bg-indigo-200 dark:bg-indigo-300',
