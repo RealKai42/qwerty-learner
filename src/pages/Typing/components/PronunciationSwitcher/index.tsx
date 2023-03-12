@@ -2,21 +2,21 @@ import { PronunciationType } from '@/typings/index'
 import { LANG_PRON_MAP } from '@/resources/soundResource'
 import { useAtomValue, useAtom } from 'jotai'
 import { currentDictInfoAtom, pronunciationConfigAtom } from '@/store'
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 
 const PronunciationSwitcher = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
   const pronunciationList = LANG_PRON_MAP[currentDictInfo.language].pronunciation
 
-  // todo: 自动设置默认的 pron，可能不应该在这个 component 里面设置
-  // const { language, defaultPronIndex } = languageConfig
-  // useEffect(() => {
-  //   // 如果 defaultPron 是 undefined LANG_PRON_MAP[language].defaultPron.pron 作为默认参数
-  //   const pronIndex = defaultPronIndex || LANG_PRON_MAP[language].defaultPronIndex
-  //   changePronunciationState(LANG_PRON_MAP[language].pronunciation[pronIndex].pron)
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [language])
+  useEffect(() => {
+    const pronIndex = currentDictInfo.defaultPronIndex || LANG_PRON_MAP[currentDictInfo.language].defaultPronIndex
+    setPronunciationConfig((old) => ({
+      ...old,
+      type: LANG_PRON_MAP[currentDictInfo.language].pronunciation[pronIndex].pron,
+    }))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentDictInfo.language])
 
   const setPron = useCallback((newState: PronunciationType | boolean) => {
     if (typeof newState === 'boolean') {
