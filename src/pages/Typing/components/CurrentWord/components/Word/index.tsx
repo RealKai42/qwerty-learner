@@ -5,6 +5,8 @@ import { LetterState } from './Letter'
 import { isChineseSymbol, isLegal } from '@/utils/utils'
 import style from './index.module.css'
 import WordSound from '../WordSound'
+import { useAtomValue } from 'jotai'
+import { pronunciationIsOpenAtom } from '@/store'
 
 export type WordProps = {
   word: string
@@ -28,6 +30,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   const [hasWrong, setHasWrong] = useState(false)
   const [everWrong, setEverWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
+  const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
 
   const onKeydown = useCallback((e: KeyboardEvent) => {
     const char = e.key
@@ -137,7 +140,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
             )
           })}
         </div>
-        <WordSound word={word} inputWord={inputWord} />
+        {pronunciationIsOpen && <WordSound word={word} inputWord={inputWord} />}
       </div>
     </div>
   )
