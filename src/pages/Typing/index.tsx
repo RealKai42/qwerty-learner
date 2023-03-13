@@ -35,6 +35,7 @@ const App: React.FC = () => {
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
   const [value] = useLocalStorage('star')
+  const [skipState, setSkipState] = useState<boolean>(false)
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
@@ -107,6 +108,17 @@ const App: React.FC = () => {
     }
   }, [isStart, resultScreenState])
 
+  const skipWord = useCallback(() => {
+    if (wordList === undefined) {
+      return
+    }
+    if (order < wordList.words.length - 1) {
+      setOrder((order) => order + 1)
+      // reset to false when skip
+      setSkipState(false)
+    }
+  }, [order, wordList?.words])
+
   const onFinish = (everWrong: boolean, wordStat: WordStat) => {
     if (wordList === undefined) {
       return
@@ -161,6 +173,9 @@ const App: React.FC = () => {
     } else {
       setOrder((order) => order + 1)
     }
+
+    // if user finished the word without skipping, then set skipState to false
+    setSkipState(false)
   }
 
   const changePronunciation = useCallback(
@@ -259,6 +274,24 @@ const App: React.FC = () => {
                 {isStart ? 'Pause' : 'Start'}
               </button>
             </Tooltip>
+            <Tooltip content="跳过该词">
+              {/* because of the low frecruency of the function, the button doesn't need a hotkey */}
+              <button
+                className={`${
+                  skipState ? 'bg-orange-400' : 'bg-gray-300'
+                }  flex w-0 items-center justify-center rounded-lg py-1 text-lg text-white transition-all duration-300 focus:outline-none dark:text-opacity-80`}
+                style={{
+                  width: skipState ? '80px' : '0px',
+                  opacity: skipState ? '1' : '0',
+                  visibility: skipState ? 'visible' : 'hidden',
+                }}
+                onClick={(e) => {
+                  skipWord()
+                }}
+              >
+                Skip
+              </button>
+            </Tooltip>
           </Header>
           <Main>
             <div className="container relative mx-auto flex h-full flex-col items-center">
@@ -272,6 +305,7 @@ const App: React.FC = () => {
                     onFinish={onFinish}
                     isStart={isStart}
                     wordVisible={switcherState.wordVisible}
+                    setSkipState={setSkipState}
                   />
                   {switcherState.phonetic && (wordList.words[order].usphone || wordList.words[order].ukphone) && (
                     <Phonetic usphone={wordList.words[order].usphone} ukphone={wordList.words[order].ukphone} />
