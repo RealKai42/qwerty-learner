@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Transition } from '@headlessui/react'
-import starbar from '@/assets/starbar.png'
+import starbar from '@/assets/starbar.svg'
 import { useEffect, useRef, useState } from 'react'
 import { useLocalStorage } from 'react-use'
 
@@ -58,10 +58,7 @@ const StarCard: React.FC<StarCardProps> = ({ setShow }) => {
         </span>
         {wantStar ? (
           <>
-            <div className="flex">
-              <img src={starbar} alt="" className="" />
-              <span className="px-6">点亮它，谢谢！</span>
-            </div>
+            <img src={starbar} className="svg-inline--fa fill-current text-3xl" alt="" />
             <span className="w-full">
               收藏快捷键<span className="text-indigo-600">cmd + d</span>{' '}
             </span>

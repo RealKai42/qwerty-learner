@@ -40,6 +40,8 @@ const App: React.FC = () => {
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
   const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
   const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
+
+  //props for StarCard
   const [showStar, setShowStar] = useState(false)
 
   useEffect(() => {
