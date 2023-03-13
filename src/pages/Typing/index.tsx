@@ -23,6 +23,7 @@ import mixpanel from 'mixpanel-browser'
 import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
 import dayjs from 'dayjs'
 import StarCard from '@/components/StarCard'
+import { useLocalStorage } from 'react-use'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -33,11 +34,19 @@ const App: React.FC = () => {
   const wordList = useWordList()
   const [pronunciation, pronunciationDispatch] = usePronunciation()
   const [random] = useRandomState()
+  const [value] = useLocalStorage('star')
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
   const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
   const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
+  const [showStar, setShowStar] = useState(false)
+
+  useEffect(() => {
+    if (resultScreenState) {
+      setShowStar(true)
+    }
+  }, [resultScreenState])
 
   useEffect(() => {
     // reset order when random change
@@ -200,7 +209,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <StarCard />
+      {!value && showStar && <StarCard setShow={setShowStar} />}
       {resultScreenState && (
         <ResultScreen
           incorrectInfo={incorrectInfo}
