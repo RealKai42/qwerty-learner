@@ -7,6 +7,8 @@ import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useAtomValue } from 'jotai'
+import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 
 export type IncorrectInfo = {
   word: string
@@ -37,17 +39,15 @@ const ResultScreen = ({
   exitButtonHandler,
 }: ResultScreenProps) => {
   const wordList = useWordList()
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const currentChapter = useAtomValue(currentChapterAtom)
 
   const isLastChapter = useMemo(() => {
-    if (wordList) {
-      return wordList.chapter === wordList.chapterListLength - 1
-    } else {
-      return false
-    }
-  }, [wordList])
+    return currentChapter >= currentDictInfo.length - 1
+  }, [currentChapter, currentDictInfo])
 
   const correctRate = useMemo(() => {
-    const chapterLength = wordList?.words.length ?? 0
+    const chapterLength = wordList?.length ?? 0
     const correctCount = chapterLength - incorrectInfo.length
     return Math.floor((correctCount / chapterLength) * 100)
   }, [wordList, incorrectInfo])
@@ -101,7 +101,7 @@ const ResultScreen = ({
         <div className="flex h-screen items-center justify-center">
           <div className="card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white px-10 pt-10 pb-14 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
-              {wordList ? `${wordList.dictName}  第 ${wordList.chapter + 1} 章` : ' '}
+              {wordList ? `${currentDictInfo.name}  第 ${currentChapter + 1} 章` : ' '}
             </div>
             <button className="absolute top-5 right-7" onClick={exitButtonHandler}>
               <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />

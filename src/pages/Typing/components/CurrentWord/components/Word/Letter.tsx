@@ -1,8 +1,7 @@
 import React from 'react'
+import { EXPLICIT_SPACE } from '@/constants'
 
 export type LetterState = 'normal' | 'correct' | 'wrong'
-
-const EXPLICIT_SPACE = '␣'
 
 const stateClassNameMap: Record<string, Record<LetterState, string>> = {
   true: {

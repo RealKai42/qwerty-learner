@@ -1,4 +1,4 @@
-import { LanguageType, PronunciationType } from './../store/AppState'
+import { LanguageType, PronunciationType } from '@/typings'
 import { Howl } from 'howler'
 
 export const isLegal = (val: string): boolean => /^[a-z_A-Z_._(_)_{_}_<_>_+_0-9'"!,='@#$%`:~^&*?\-;[\]\\/]$/.test(val)

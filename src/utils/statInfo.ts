@@ -1,4 +1,4 @@
-import { PronunciationType } from '@/store/AppState'
+import { PronunciationType } from '@/typings'
 
 export type WordStat = {
   headword: string

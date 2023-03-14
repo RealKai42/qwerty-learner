@@ -14,7 +14,19 @@ import Progress from './components/Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
 import CurrentWord from './components/CurrentWord'
 import { useAtom, useAtomValue } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom, isShowSkipAtom, randomConfigAtom } from '@/store'
+import {
+  currentChapterAtom,
+  currentDictInfoAtom,
+  isOpenDarkModeAtom,
+  isShowSkipAtom,
+  keySoundsConfigAtom,
+  phoneticConfigAtom,
+  pronunciationConfigAtom,
+  randomConfigAtom,
+} from '@/store'
+import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
+import mixpanel from 'mixpanel-browser'
+import dayjs from 'dayjs'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -27,6 +39,11 @@ const App: React.FC = () => {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [isShowSkip, setIsShowSkip] = useAtom(isShowSkipAtom)
+
+  const isDarkMode = useAtomValue(isOpenDarkModeAtom)
+  const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
+  const phoneticConfig = useAtomValue(phoneticConfigAtom)
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
@@ -96,7 +113,7 @@ const App: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [order, wordList])
 
-  const onFinish = (everWrong: boolean) => {
+  const onFinish = (everWrong: boolean, wordStat: WordStat) => {
     if (wordList === undefined) {
       return
     }
@@ -107,9 +124,44 @@ const App: React.FC = () => {
       setIncorrectInfo((prev) => [...prev, { word: wordList[order].name, translation: wordList[order].trans.join('；') }])
     }
 
+    const wordStatUpload: WordStatUpload = {
+      ...wordStat,
+      order: order + 1,
+      chapter: (currentChapter + 1).toString(),
+      wordlist: currentDictInfo.name,
+      modeDictation: !wordVisible,
+      modeDark: isDarkMode,
+      modeShuffle: randomConfig.isOpen,
+      enabledKeyboardSound: keySoundsConfig.isOpen,
+      enabledPhotonicsSymbol: phoneticConfig.isOpen,
+      pronunciationAuto: pronunciationConfig.isOpen,
+      pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
+    }
+    mixpanel.track('Word', wordStatUpload)
+
     // 更新正确率
     if (order === wordList.length - 1) {
       setIsStart(false)
+
+      // 上传埋点数据
+      const chapterStatUpload: ChapterStatUpload = {
+        timeEnd: dayjs.utc().format('YYYY-MM-DD HH:mm:ss'),
+        duration: speedInfo.second + speedInfo.minute * 60,
+        countInput: inputCount,
+        countTypo: inputCount - correctCount,
+        countCorrect: correctCount,
+        chapter: (currentChapter + 1).toString(),
+        wordlist: currentDictInfo.name,
+        modeDictation: !wordVisible,
+        modeDark: isDarkMode,
+        modeShuffle: randomConfig.isOpen,
+        enabledKeyboardSound: keySoundsConfig.isOpen,
+        enabledPhotonicsSymbol: phoneticConfig.isOpen,
+        pronunciationAuto: pronunciationConfig.isOpen,
+        pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
+      }
+
+      mixpanel.track('Chapter', chapterStatUpload)
 
       // 用户完成当前章节
       setResultScreenState(true)

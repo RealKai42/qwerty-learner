@@ -1,5 +1,6 @@
 import { phoneticConfigAtom } from '@/store'
 import { Word } from '@/typings'
+import { WordStat } from '@/utils/statInfo'
 import { useAtomValue } from 'jotai'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
@@ -7,7 +8,7 @@ import { default as WordComponent } from './components/Word'
 
 export type CurrentWordProps = {
   word: Word
-  onFinish: (everWrong: boolean) => void
+  onFinish: (everWrong: boolean, wordStat: WordStat) => void
   isStart: boolean
   wordVisible: boolean
 }

@@ -1,4 +1,4 @@
-import { useMemo, useState, useCallback, useEffect, useLayoutEffect } from 'react'
+import { useMemo, useState, useCallback, useEffect, useLayoutEffect, useRef } from 'react'
 import Letter from './Letter'
 import useKeySounds from '@/hooks/useKeySounds'
 import { LetterState } from './Letter'
@@ -7,15 +7,25 @@ import style from './index.module.css'
 import WordSound from '../WordSound'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { isShowSkipAtom, pronunciationIsOpenAtom } from '@/store'
+import { WordStat } from '@/utils/statInfo'
+import dayjs from 'dayjs'
+import { EXPLICIT_SPACE } from '@/constants'
 
 export type WordProps = {
   word: string
-  onFinish: (everWrong: boolean) => void
+  onFinish: (everWrong: boolean, wordStat: WordStat) => void
   isStart: boolean
   wordVisible: boolean
 }
 
-const EXPLICIT_SPACE = '␣'
+const initialStatInfo = {
+  headword: '',
+  timeStart: '',
+  timeEnd: '',
+  countInput: 0,
+  countCorrect: 0,
+  countTypo: 0,
+}
 
 export default function Word({ word, isStart, onFinish, wordVisible }: WordProps) {
   const displayWord = useMemo(() => {
@@ -34,6 +44,8 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   const [wrongRepeat, setWrongRepeat] = useState(0)
   const setIsShowSkip = useSetAtom(isShowSkipAtom)
 
+  const wordStat = useRef<WordStat>(initialStatInfo)
+
   const onKeydown = useCallback((e: KeyboardEvent) => {
     const char = e.key
     if (char === ' ') {
@@ -45,7 +57,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
     } else if (char === 'Backspace') {
       setInputWord((value) => value.substr(0, value.length - 1))
     } else if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-      // todo: 是否需要引入 isLegal 判断
+      wordStat.current.countInput += 1
       setInputWord((value) => (value += char))
     }
   }, [])
@@ -55,6 +67,8 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
     setEverWrong(false)
     // reset wrongRepeat to 0 when word change
     setWrongRepeat(0)
+    wordStat.current = { ...initialStatInfo }
+    wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
   }, [word])
 
   useEffect(() => {
@@ -70,6 +84,11 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   // when finished the word
   useEffect(() => {
     if (isFinish) {
+      // prepare wordStat
+      wordStat.current.timeEnd = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+      wordStat.current.headword = word
+      wordStat.current.countCorrect = wordStat.current.countInput - wordStat.current.countTypo
+
       playHintSound()
       // reset state
       setInputWord('')
@@ -78,7 +97,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
       setHasWrong(false)
       setEverWrong(false)
 
-      onFinish(everWrong)
+      onFinish(everWrong, wordStat.current)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFinish])
@@ -114,7 +133,6 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
     }
 
     if (!hasWrong && inputWordLength >= wordLength) {
-      console.log('finish')
       setIsFinish(true)
     }
     setStatesList(statesList)
@@ -125,6 +143,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
+      wordStat.current.countTypo += 1
       setWrongRepeat((value) => value + 1) // wrongRepeat + 1 when has wrong
       const timer = setTimeout(() => {
         setInputWord('')
