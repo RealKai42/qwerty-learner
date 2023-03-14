@@ -200,7 +200,7 @@ const App: React.FC = () => {
               </button>
             </Tooltip>
             <Tooltip content="跳过该词">
-              {/* because of the low frecruency of the function, the button doesn't need a hotkey */}
+              {/* because of the low frequency of the function, the button doesn't need a hotkey */}
               <button
                 className={`${
                   isShowSkip ? 'bg-orange-400' : 'bg-gray-300'
@@ -210,9 +210,7 @@ const App: React.FC = () => {
                   opacity: isShowSkip ? '1' : '0',
                   visibility: isShowSkip ? 'visible' : 'hidden',
                 }}
-                onClick={(e) => {
-                  skipWord()
-                }}
+                onClick={skipWord}
               >
                 Skip
               </button>
