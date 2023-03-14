@@ -161,6 +161,15 @@ export const dictionaries: Dictionary[] = [
     language: 'en',
   },
   {
+    id: 'pets3',
+    name: 'PETS-3',
+    description: '全国英语等级考试常考词汇',
+    category: '英语学习',
+    url: './dicts/PETS_3.json',
+    length: 1942,
+    language: 'en',
+  },
+  {
     id: 'PTE_junior',
     name: 'PTE 基础词汇',
     description: '',

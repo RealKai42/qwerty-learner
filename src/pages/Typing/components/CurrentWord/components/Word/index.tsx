@@ -5,8 +5,8 @@ import { LetterState } from './Letter'
 import { isChineseSymbol, isLegal } from '@/utils/utils'
 import style from './index.module.css'
 import WordSound from '../WordSound'
-import { useAtomValue } from 'jotai'
-import { pronunciationIsOpenAtom } from '@/store'
+import { useAtomValue, useSetAtom } from 'jotai'
+import { isShowSkipAtom, pronunciationIsOpenAtom } from '@/store'
 
 export type WordProps = {
   word: string
@@ -31,6 +31,8 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   const [everWrong, setEverWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
+  const [wrongRepeat, setWrongRepeat] = useState(0)
+  const setIsShowSkip = useSetAtom(isShowSkipAtom)
 
   const onKeydown = useCallback((e: KeyboardEvent) => {
     const char = e.key
@@ -51,6 +53,8 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   // useEffect when word change
   useEffect(() => {
     setEverWrong(false)
+    // reset wrongRepeat to 0 when word change
+    setWrongRepeat(0)
   }, [word])
 
   useEffect(() => {
@@ -78,6 +82,14 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFinish])
+
+  // if wrongRepeat reaches 4, set skipState to true
+  useEffect(() => {
+    if (wrongRepeat >= 4) {
+      setIsShowSkip(true)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wrongRepeat])
 
   // update words state
   useLayoutEffect(() => {
@@ -113,6 +125,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   useEffect(() => {
     if (hasWrong) {
       playBeepSound()
+      setWrongRepeat((value) => value + 1) // wrongRepeat + 1 when has wrong
       const timer = setTimeout(() => {
         setInputWord('')
         setHasWrong(false)

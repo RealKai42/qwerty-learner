@@ -14,7 +14,7 @@ import Progress from './components/Progress'
 import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
 import CurrentWord from './components/CurrentWord'
 import { useAtom, useAtomValue } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
+import { currentChapterAtom, currentDictInfoAtom, isShowSkipAtom, randomConfigAtom } from '@/store'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -26,6 +26,7 @@ const App: React.FC = () => {
   const randomConfig = useAtomValue(randomConfigAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const [isShowSkip, setIsShowSkip] = useAtom(isShowSkipAtom)
 
   //props for ResultScreen
   const [resultScreenState, setResultScreenState] = useState<boolean>(false)
@@ -82,6 +83,19 @@ const App: React.FC = () => {
     }
   }, [isStart, resultScreenState])
 
+  const skipWord = useCallback(() => {
+    if (wordList === undefined) {
+      return
+    }
+    // todo: bug, when user skip the last word of the chapter, the result screen will not show
+    if (order < wordList.length - 1) {
+      setOrder((order) => order + 1)
+      // reset to false when skip
+      setIsShowSkip(false)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [order, wordList])
+
   const onFinish = (everWrong: boolean) => {
     if (wordList === undefined) {
       return
@@ -102,6 +116,9 @@ const App: React.FC = () => {
     } else {
       setOrder((order) => order + 1)
     }
+
+    // if user finished the word without skipping, then set skipState to false
+    setIsShowSkip(false)
   }
 
   const addChapter = useCallback(() => {
@@ -180,6 +197,24 @@ const App: React.FC = () => {
                 }}
               >
                 {isStart ? 'Pause' : 'Start'}
+              </button>
+            </Tooltip>
+            <Tooltip content="跳过该词">
+              {/* because of the low frecruency of the function, the button doesn't need a hotkey */}
+              <button
+                className={`${
+                  isShowSkip ? 'bg-orange-400' : 'bg-gray-300'
+                }  flex w-0 items-center justify-center rounded-lg py-1 text-lg text-white transition-all duration-300 focus:outline-none dark:text-opacity-80`}
+                style={{
+                  width: isShowSkip ? '80px' : '0px',
+                  opacity: isShowSkip ? '1' : '0',
+                  visibility: isShowSkip ? 'visible' : 'hidden',
+                }}
+                onClick={(e) => {
+                  skipWord()
+                }}
+              >
+                Skip
               </button>
             </Tooltip>
           </Header>
