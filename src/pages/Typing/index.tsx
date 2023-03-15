@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Header from '@/components/Header'
-import Speed from '@/components/Speed'
+import Speed from './components/Speed'
 import Loading from '@/components/Loading'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import { isLegal, IsDesktop } from '@/utils/utils'
