@@ -126,7 +126,7 @@ const ResultScreen = ({
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
               <Tooltip content="快捷键：shift + enter">
                 <button
-                  className="h-12 overflow-hidden rounded-md border-2 border-solid border-gray-300 bg-white px-6 py-2 text-sm font-normal text-gray-700 transition-colors duration-100 hover:bg-indigo-200 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:text-sm md:text-base"
+                  className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
                   onClick={invisibleButtonHandler}
                 >
                   默写本章节
@@ -134,7 +134,7 @@ const ResultScreen = ({
               </Tooltip>
               <Tooltip content="快捷键：space">
                 <button
-                  className="h-12 overflow-hidden rounded-md border-2 border-solid border-gray-300 bg-white px-6 py-2 text-sm font-normal text-gray-700 transition-colors duration-100 hover:bg-indigo-200 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:text-sm md:text-base"
+                  className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
                   onClick={repeatButtonHandler}
                 >
                   重复本章节
@@ -142,9 +142,7 @@ const ResultScreen = ({
               </Tooltip>
               <Tooltip content="快捷键：enter">
                 <button
-                  className={`h-12 overflow-hidden rounded-md bg-indigo-400 px-6 py-2 text-sm font-bold text-white transition-colors duration-100 hover:bg-indigo-600 sm:text-sm md:text-base ${
-                    isLastChapter ? 'cursor-not-allowed opacity-50' : ''
-                  }`}
+                  className={`btn-primary { isLastChapter ? 'cursor-not-allowed opacity-50' : ''} h-12 text-base font-bold `}
                   onClick={nextButtonHandler}
                   disabled={isLastChapter}
                 >
