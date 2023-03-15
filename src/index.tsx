@@ -12,10 +12,11 @@ import utc from 'dayjs/plugin/utc'
 import { useAtomValue } from 'jotai'
 import { isOpenDarkModeAtom } from '@/store'
 
-// mixpanel.init('bdc492847e9340eeebd53cc35f321691')
+// for prod
+mixpanel.init('bdc492847e9340eeebd53cc35f321691')
 
 // for dev
-mixpanel.init('5474177127e4767124c123b2d7846e2a')
+// mixpanel.init('5474177127e4767124c123b2d7846e2a')
 dayjs.extend(utc)
 
 const container = document.getElementById('root')
