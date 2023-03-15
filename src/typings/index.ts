@@ -1,3 +1,5 @@
+export * from './statInfo'
+
 export type SoundResource = {
   key: string
   name: string

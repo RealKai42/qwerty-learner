@@ -11,7 +11,7 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import Tooltip from '@/components/Tooltip'
 import Progress from './components/Progress'
-import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from '@/components/ResultScreen'
+import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from './components/ResultScreen'
 import CurrentWord from './components/CurrentWord'
 import { useAtom, useAtomValue } from 'jotai'
 import {
@@ -24,7 +24,7 @@ import {
   pronunciationConfigAtom,
   randomConfigAtom,
 } from '@/store'
-import { ChapterStatUpload, WordStat, WordStatUpload } from '@/utils/statInfo'
+import { ChapterStatUpload, WordStat, WordStatUpload } from '@/typings'
 import mixpanel from 'mixpanel-browser'
 import dayjs from 'dayjs'
 

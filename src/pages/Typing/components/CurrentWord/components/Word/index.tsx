@@ -7,7 +7,7 @@ import style from './index.module.css'
 import WordSound from '../WordSound'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { isShowSkipAtom, pronunciationIsOpenAtom } from '@/store'
-import { WordStat } from '@/utils/statInfo'
+import { WordStat } from '@/typings'
 import dayjs from 'dayjs'
 import { EXPLICIT_SPACE } from '@/constants'
 
