@@ -1,13 +1,16 @@
 import { atomWithStorage } from 'jotai/utils'
 import { atom } from 'jotai'
 import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
-import { PronunciationType, PhoneticType } from '@/typings'
+import { PronunciationType, PhoneticType, Dictionary } from '@/typings'
 import { idDictionaryMap } from '@/resources/dictionary'
+import { CHAPTER_LENGTH } from '@/constants'
 
 export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
-export const currentDictInfoAtom = atom((get) => {
+export const currentDictInfoAtom = atom<Dictionary>((get) => {
   const id = get(currentDictIdAtom)
-  return idDictionaryMap[id] || null
+  const dict = idDictionaryMap[id]
+  const dictionary = { ...dict, chapterCount: Math.ceil(dict.length / CHAPTER_LENGTH) }
+  return dictionary || null
 })
 
 export const currentChapterAtom = atomWithStorage('currentChapter', 1)

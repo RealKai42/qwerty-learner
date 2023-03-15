@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef } from 'react'
-import { Dictionary } from '@/resources/dictionary'
+import { DictionaryResource } from '@/typings'
 import { useAtom } from 'jotai'
 import { currentDictIdAtom } from '@/store'
 
@@ -41,7 +41,7 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
 DictionaryCard.displayName = 'DictionaryCard'
 
 export type DictionaryCardProps = {
-  dictionary: Dictionary
+  dictionary: DictionaryResource
 }
 
 export default DictionaryCard

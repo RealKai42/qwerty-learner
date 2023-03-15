@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dictionary } from '@/resources/dictionary'
+import { DictionaryResource } from '@/typings'
 import DictionaryCard from './DictionaryCard'
 
 const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }) => {
@@ -19,4 +19,4 @@ const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }
 
 export default DictionaryGroup
 
-export type DictionaryGroupProps = { title: string; dictionaries: Dictionary[] }
+export type DictionaryGroupProps = { title: string; dictionaries: DictionaryResource[] }

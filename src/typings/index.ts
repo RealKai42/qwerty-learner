@@ -1,10 +1,5 @@
 export * from './statInfo'
-
-export type SoundResource = {
-  key: string
-  name: string
-  filename: string
-}
+export * from './resource'
 
 export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja'
 export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja'

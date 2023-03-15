@@ -1,4 +1,4 @@
-import { SoundResource, PronunciationType, LanguageType } from '@/typings'
+import { SoundResource, LanguagePronunciationMap } from '@/typings'
 
 export const SOUND_URL_PREFIX = './sounds/'
 
@@ -8,20 +8,6 @@ export const keySoundResources: SoundResource[] = [{ key: '1', name: '声音1', 
 export const wrongSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'beep.wav' }]
 
 export const correctSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'correct.wav' }]
-
-export type PronunciationConfig = {
-  name: string
-  pron: PronunciationType
-}
-
-export type LanguagePronunciationMapConfig = {
-  defaultPronIndex: number
-  pronunciation: PronunciationConfig[]
-}
-
-export type LanguagePronunciationMap = {
-  [key in LanguageType]: LanguagePronunciationMapConfig
-}
 
 export const LANG_PRON_MAP: LanguagePronunciationMap = {
   en: {
