@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import './icon'
 import 'react-app-polyfill/stable'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'
 import TypingPage from './pages/Typing'
 import mixpanel from 'mixpanel-browser'
@@ -32,8 +32,9 @@ function Root() {
     <React.StrictMode>
       <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
         <Routes>
+          <Route index element={<TypingPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/" element={<TypingPage />} />
+          <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>
