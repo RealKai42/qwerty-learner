@@ -69,4 +69,8 @@ body,
       bg-white py-1 px-2 text-xs text-gray-500
       shadow-md dark:bg-gray-800 dark:text-gray-300;
   }
+
+  .btn-primary {
+    @apply flex items-center justify-center rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white focus:outline-none dark:text-opacity-80;
+  }
 }

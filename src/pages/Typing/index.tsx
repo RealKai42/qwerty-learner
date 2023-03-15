@@ -241,9 +241,7 @@ const App: React.FC = () => {
             <Switcher wordVisible={wordVisible} setWordVisible={setWordVisible} />
             <Tooltip content="快捷键 Enter">
               <button
-                className={`${
-                  isStart ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
-                }  flex w-20 items-center justify-center rounded-lg px-6 py-1 text-lg text-white transition-colors duration-300 focus:outline-none dark:text-opacity-80`}
+                className={`${isStart ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'}  btn-primary w-20 transition-colors duration-300`}
                 onClick={() => {
                   setIsStart((isStart) => !isStart)
                 }}
@@ -255,13 +253,8 @@ const App: React.FC = () => {
               {/* because of the low frequency of the function, the button doesn't need a hotkey */}
               <button
                 className={`${
-                  isShowSkip ? 'bg-orange-400' : 'bg-gray-300'
-                }  flex w-0 items-center justify-center rounded-lg py-1 text-lg text-white transition-all duration-300 focus:outline-none dark:text-opacity-80`}
-                style={{
-                  width: isShowSkip ? '80px' : '0px',
-                  opacity: isShowSkip ? '1' : '0',
-                  visibility: isShowSkip ? 'visible' : 'hidden',
-                }}
+                  isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+                } btn-primary transition-all duration-300 `}
                 onClick={skipWord}
               >
                 Skip
