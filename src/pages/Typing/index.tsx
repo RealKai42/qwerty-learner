@@ -69,8 +69,8 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (resultScreenState === false && !isStart) {
-        setIsStart((old) => (old ? old : true))
+      if (resultScreenState === false) {
+        setIsStart((old) => !old)
       }
     },
     [resultScreenState],
@@ -78,6 +78,9 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const onKeydown = (e: KeyboardEvent) => {
+      if (e.key === 'Enter') {
+        return
+      }
       if (!resultScreenState) {
         if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
           if (isStart) {
