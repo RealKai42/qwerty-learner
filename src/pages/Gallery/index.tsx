@@ -2,20 +2,21 @@ import React from 'react'
 import Layout from '@/components/Layout'
 import DictionaryGroup from './DictionaryGroup'
 import Header from '@/components/Header'
-import { NavLink, useHistory } from 'react-router-dom'
-import { useDictionaries, useSelectedDictionary } from '@/store/AppState'
+import { NavLink, useNavigate } from 'react-router-dom'
 import { groupBy } from 'lodash'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ChapterGroup from './ChapterGroup'
 import Tooltip from '@/components/Tooltip'
+import { dictionaries } from '@/resources/dictionary'
+import { useAtomValue } from 'jotai'
+import { currentDictInfoAtom } from '@/store'
 
 const GalleryPage: React.FC = () => {
-  const dictionaries = useDictionaries()
-  const selectedDictionary = useSelectedDictionary()
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const groups = Object.entries(groupBy(dictionaries, (dict) => dict.category))
-  const history = useHistory()
+  const navigate = useNavigate()
   useHotkeys('enter,esc', () => {
-    history.push('/')
+    navigate('/')
   })
 
   return (
@@ -43,7 +44,7 @@ const GalleryPage: React.FC = () => {
             章节选择
           </h2>
           <div className="customized-scrollbar overflow-y-auto">
-            <ChapterGroup totalWords={selectedDictionary.length} />
+            <ChapterGroup totalWords={currentDictInfo.length} />
           </div>
         </div>
       </div>

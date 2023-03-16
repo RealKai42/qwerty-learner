@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { classNames } from '../../utils/utils'
 
-const Tooltip: React.FC<React.PropsWithChildren<TooltipProps>> = ({ children, content, className, placement = 'top' }) => {
+const Tooltip = ({ children, content, className, placement = 'top' }: TooltipProps) => {
   const [visible, setVisible] = useState(false)
 
   const placementClasses = {
@@ -28,6 +28,7 @@ const Tooltip: React.FC<React.PropsWithChildren<TooltipProps>> = ({ children, co
 }
 
 export type TooltipProps = {
+  children: ReactNode
   /** 显示文本 */
   content: string
   /** 位置 */

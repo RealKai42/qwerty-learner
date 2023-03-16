@@ -1,41 +1,46 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React, { useEffect } from 'react'
+import { createRoot } from 'react-dom/client'
 import './index.css'
 import './icon'
-import reportWebVitals from './reportWebVitals'
 import 'react-app-polyfill/stable'
-import { AppStateProvider } from '@/store/AppState'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'
 import TypingPage from './pages/Typing'
 import mixpanel from 'mixpanel-browser'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
+import { useAtomValue } from 'jotai'
+import { isOpenDarkModeAtom } from '@/store'
 
+// for prod
 mixpanel.init('bdc492847e9340eeebd53cc35f321691')
+
+// for dev
+// mixpanel.init('5474177127e4767124c123b2d7846e2a')
+
 dayjs.extend(utc)
 
-ReactDOM.render(
-  <React.StrictMode>
-    <AppStateProvider>
-      <Router basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
-        <Switch>
-          <Route path="/gallery">
-            <GalleryPage />
-          </Route>
-          <Route exact path="/">
-            <TypingPage />
-          </Route>
-          <Redirect to="/" />
-        </Switch>
-      </Router>
-    </AppStateProvider>
-  </React.StrictMode>,
-  document.getElementById('root'),
-)
+const container = document.getElementById('root')
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = createRoot(container!)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals(console.log)
-reportWebVitals()
+function Root() {
+  const darkMode = useAtomValue(isOpenDarkModeAtom)
+  useEffect(() => {
+    darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
+  }, [darkMode])
+
+  return (
+    <React.StrictMode>
+      <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
+        <Routes>
+          <Route index element={<TypingPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/*" element={<Navigate to="/" />} />
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
+  )
+}
+
+root.render(<Root />)

@@ -4,34 +4,34 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "@floating-ui/react": "^0.19.1",
+    "@floating-ui/react": "^0.20.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@headlessui/react": "^0.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.13",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^10.4.13",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
-    "eslint": "^7.18.0",
+    "eslint": "^8.35.0",
     "howler": "^2.2.3",
+    "jotai": "^2.0.3",
     "lodash": "^4.17.20",
     "mixpanel-browser": "^2.45.0",
     "postcss": "^8.4.21",
-    "react": "^17.0.1",
-    "react-app-polyfill": "^2.0.0",
-    "react-dom": "^17.0.1",
-    "react-hotkeys-hook": "^3.0.3",
-    "react-router-dom": "^5.2.0",
-    "react-timer-hook": "^2.0.7",
+    "react": "^18.2.0",
+    "react-app-polyfill": "^3.0.0",
+    "react-dom": "^18.2.0",
+    "react-hotkeys-hook": "^4.3.7",
+    "react-router-dom": "^6.8.2",
+    "react-timer-hook": "^3.0.5",
     "react-use": "^17.1.0",
     "source-map-explorer": "^2.5.2",
-    "swr": "^0.4.1",
+    "swr": "^2.0.4",
     "typescript": "^4.0.3",
-    "use-sound": "^4.0.1",
-    "web-vitals": "^0.2.4"
+    "use-sound": "^4.0.1"
   },
   "scripts": {
     "dev": "vite",
@@ -43,37 +43,11 @@
     "prettier": "prettier --write .",
     "prepare": "husky install"
   },
-  "eslintConfig": {
-    "plugins": [
-      "react",
-      "react-hooks",
-      "prettier"
-    ],
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:prettier/recommended"
-    ],
-    "ignorePatterns": [
-      "build/*"
-    ],
-    "rules": {
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "prettier/prettier": "error"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
   },
-  "prettier/prettier": [
-    "error",
-    {
-      "endOfLine": "auto"
-    }
-  ],
   "browserslist": {
     "production": [
       ">0.2%",
@@ -87,22 +61,18 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "@types/howler": "^2.2.3",
-    "@types/jest": "^26.0.15",
     "@types/lodash": "^4.14.168",
     "@types/mixpanel-browser": "^2.38.1",
-    "@types/node": "16",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
+    "@types/node": "18.14.6",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "@types/react-router-dom": "^5.1.7",
     "@vitejs/plugin-react": "^3.1.0",
     "cross-env": "^7.0.3",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.7.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",

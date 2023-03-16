@@ -1,21 +1,10 @@
-﻿import { LanguageType } from '@/store/AppState'
-
-export type Dictionary = {
-  id: string
-  name: string
-  description: string
-  category: string
-  url: string
-  length: number
-  language: LanguageType
-  defaultPronIndex?: number //override default pronunciation when not undefined
-}
+﻿import { DictionaryResource } from '@/typings/index'
 
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
  */
-export const dictionaries: Dictionary[] = [
+export const dictionaries: DictionaryResource[] = [
   {
     id: 'cet4',
     name: 'CET-4',
@@ -1029,4 +1018,4 @@ export const dictionaries: Dictionary[] = [
 /**
  * An object-map from dictionary IDs to dictionary themselves.
  */
-export const idDictionaryMap: Record<string, Dictionary> = Object.fromEntries(dictionaries.map((dict) => [dict.id, dict]))
+export const idDictionaryMap: Record<string, DictionaryResource> = Object.fromEntries(dictionaries.map((dict) => [dict.id, dict]))

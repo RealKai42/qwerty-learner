@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './index.module.css'
 
-export type LoadingProps = { message?: String }
+export type LoadingProps = { message?: string }
 
 const Loading: React.FC<LoadingProps> = ({ message }) => {
   return (
