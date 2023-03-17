@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Logo } from '@/assets/logo.svg'
 
-const Header: React.FC = ({ children }) => {
+const Header: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <nav className="container mx-auto w-full px-10 py-6">
       <div className="flex w-full flex-col items-center justify-between space-y-3 lg:flex-row lg:space-y-0">

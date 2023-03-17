@@ -1,9 +1,11 @@
+import { useAtomValue } from 'jotai'
 import cet4 from '@/assets/CET4_T.json'
 import { shuffle } from 'lodash'
 import { useMemo } from 'react'
-import { useSelectedChapter, useSelectedDictionary, useRandomState } from '@/store/AppState'
 import useSWR from 'swr'
-import { LanguageType } from '@/store/AppState'
+import { LanguageType } from '@/typings/index'
+import { randomConfigAtom, currentDictInfoAtom, currentChapterAtom } from '@/store'
+import { CHAPTER_LENGTH } from '@/constants'
 
 export type Word = {
   name: string
@@ -11,8 +13,6 @@ export type Word = {
   usphone: string
   ukphone: string
 }
-
-const numWordsPerChapter = 20
 
 export type UseWordListResult = {
   dictName: string
@@ -28,40 +28,27 @@ export type UseWordListResult = {
  * Use word lists from the current selected dictionary.
  * When the data is loading, this returns `undefined`.
  */
-export function useWordList(): UseWordListResult | undefined {
-  const selectedDictionary = useSelectedDictionary()
-  const [random] = useRandomState()
-  const [currentChapter, setCurrentChapter] = useSelectedChapter()
-  const { data: wordList } = useSWR([selectedDictionary.id, selectedDictionary.url], fetchWordList)
+export function useWordList(): Word[] | undefined {
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const currentChapter = useAtomValue(currentChapterAtom)
+  const randomConfig = useAtomValue(randomConfigAtom)
+  const { data: wordList } = useSWR([currentDictInfo.url, currentDictInfo.id], ([url, id]) => wordListFetcher(url, id))
+
   const words = useMemo(
-    () => (wordList ? wordList.words.slice(currentChapter * numWordsPerChapter, (currentChapter + 1) * numWordsPerChapter) : []),
+    () => (wordList ? wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH) : []),
     [wordList, currentChapter],
   )
-  const shuffleWords = useMemo(() => (random ? shuffle(words) : words), [random, words])
-  return wordList === undefined
-    ? undefined
-    : {
-        dictName: selectedDictionary.name,
-        chapter: currentChapter,
-        chapterListLength: wordList.totalChapters,
-        words: shuffleWords,
-        language: selectedDictionary.language,
-        defaultPronIndex: selectedDictionary.defaultPronIndex,
-        setChapterNumber: setCurrentChapter,
-      }
+  const shuffleWords = useMemo(() => (randomConfig.isOpen ? shuffle(words) : words), [randomConfig.isOpen, words])
+
+  return wordList === undefined ? undefined : shuffleWords
 }
 
-type WordList = {
-  words: Word[]
-  totalChapters: number
-}
-
-async function fetchWordList(id: string, url: string): Promise<WordList> {
+async function wordListFetcher(url: string, id: string): Promise<Word[]> {
   if (id === 'cet4') {
-    return { words: cet4, totalChapters: Math.ceil(cet4.length / numWordsPerChapter) }
+    return cet4
   } else {
     const response = await fetch(url)
     const words: Word[] = await response.json()
-    return { words, totalChapters: Math.ceil(words.length / numWordsPerChapter) }
+    return words
   }
 }

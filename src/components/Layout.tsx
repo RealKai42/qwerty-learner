@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 
-const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({ children }) => (
+const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
   <div className="flex h-screen w-full flex-col items-center pb-4">
     {children}
     <Footer />
@@ -11,5 +11,3 @@ const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({ children }) =>
 Layout.displayName = 'Layout'
 
 export default Layout
-
-export type LayoutProps = {}

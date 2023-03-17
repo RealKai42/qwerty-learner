@@ -5,5 +5,22 @@
   "css.lint.unknownAtRules": "ignore",
   "css.validate": false,
   "files.eol": "\n",
-  "cSpell.words": ["alipay", "esae", "fontawesome", "fortawesome", "headlessui", "romaji", "ukphone", "usphone", "vercel", "wordlist"]
+  "search.exclude": {
+    "**/public/dicts/": true,
+    "**/assets/CET4_T.json": true
+  },
+  "cSpell.words": [
+    "alipay",
+    "esae",
+    "fontawesome",
+    "fortawesome",
+    "headlessui",
+    "romaji",
+    "svgr",
+    "tailwindcss",
+    "ukphone",
+    "usphone",
+    "vercel",
+    "wordlist"
+  ]
 }

@@ -1,0 +1,17 @@
+.word-sound {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translateY(calc(-50% - 23px));
+  right: -55px;
+  cursor: pointer;
+  fill: theme('colors.gray.600');
+}
+.word-sound .prefix__icon {
+  width: 40px;
+  height: 40px;
+}
+.dark .word-sound {
+  fill: theme('colors.gray.50');
+  opacity: 0.8;
+}

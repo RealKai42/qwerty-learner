@@ -8,7 +8,7 @@ type StarCardProps = {
   setShow: (e: boolean) => void
 }
 
-const StarCard: React.FC<StarCardProps> = ({ setShow }) => {
+export default function StarCard({ setShow }: StarCardProps) {
   const [wantStar, setWantStar] = useState(false)
   const [second, setSecond] = useState(3)
   const [_, setValue] = useLocalStorage('star')
@@ -86,5 +86,3 @@ const StarCard: React.FC<StarCardProps> = ({ setShow }) => {
     </Transition>
   )
 }
-
-export default StarCard
