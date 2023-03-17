@@ -113,12 +113,12 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
   // update words state
   useLayoutEffect(() => {
     let hasWrong = false
-    const wordLength = word.length,
+    const wordLength = displayWord.length,
       inputWordLength = inputWord.length
     const statesList: LetterState[] = []
 
     for (let i = 0; i < wordLength && i < inputWordLength; i++) {
-      if (word[i] === inputWord[i]) {
+      if (displayWord[i] === inputWord[i]) {
         statesList.push('correct')
         if (i === inputWordLength - 1) {
           playKeySound()
@@ -137,7 +137,7 @@ export default function Word({ word, isStart, onFinish, wordVisible }: WordProps
     }
     setStatesList(statesList)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [inputWord, word])
+  }, [inputWord, displayWord])
 
   // when has wrong
   useEffect(() => {
