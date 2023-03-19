@@ -69,7 +69,7 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (resultScreenState === false) {
+      if (!resultScreenState) {
         setIsStart((old) => !old)
       }
     },
@@ -87,11 +87,11 @@ const App: React.FC = () => {
             setInputCount((count) => count + 1)
           }
         }
-        setIsStart((old) => (old ? old : true))
+        setIsStart(true)
       }
     }
     const onBlur = () => {
-      setIsStart((old) => (old ? false : old))
+      setIsStart(false)
     }
 
     window.addEventListener('blur', onBlur)
