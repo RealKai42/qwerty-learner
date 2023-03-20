@@ -90,11 +90,11 @@ const App: React.FC = () => {
             setInputCount((count) => count + 1)
           }
         }
-        setIsStart((old) => (old ? old : true))
+        setIsStart(true)
       }
     }
     const onBlur = () => {
-      setIsStart((old) => (old ? false : old))
+      setIsStart(false)
     }
 
     window.addEventListener('blur', onBlur)
