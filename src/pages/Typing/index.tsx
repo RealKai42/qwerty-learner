@@ -17,6 +17,7 @@ import { useAtom, useAtomValue } from 'jotai'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
+  isChapterEndAtom,
   isOpenDarkModeAtom,
   isShowSkipAtom,
   keySoundsConfigAtom,
@@ -28,7 +29,6 @@ import { ChapterStatUpload, WordStat, WordStatUpload } from '@/typings'
 import mixpanel from 'mixpanel-browser'
 import dayjs from 'dayjs'
 import StarCard from '@/components/StarCard'
-import { useLocalStorage } from 'react-use'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -42,26 +42,16 @@ const App: React.FC = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [isShowSkip, setIsShowSkip] = useAtom(isShowSkipAtom)
 
-  const [value] = useLocalStorage('star')
-
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
 
+  const [isChapterEnd, setIsChapterEnd] = useAtom(isChapterEndAtom)
+
   //props for ResultScreen
-  const [resultScreenState, setResultScreenState] = useState<boolean>(false)
   const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
   const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
-
-  //props for StarCard
-  const [showStar, setShowStar] = useState(true)
-
-  useEffect(() => {
-    if (resultScreenState) {
-      setShowStar(true)
-    }
-  }, [resultScreenState])
 
   useEffect(() => {
     // reset order when random change
@@ -82,11 +72,11 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (resultScreenState === false) {
+      if (!isChapterEnd) {
         setIsStart((old) => !old)
       }
     },
-    [resultScreenState],
+    [isChapterEnd],
   )
 
   useEffect(() => {
@@ -94,7 +84,7 @@ const App: React.FC = () => {
       if (e.key === 'Enter') {
         return
       }
-      if (!resultScreenState) {
+      if (!isChapterEnd) {
         if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
           if (isStart) {
             setInputCount((count) => count + 1)
@@ -114,7 +104,7 @@ const App: React.FC = () => {
       window.removeEventListener('keydown', onKeydown)
       window.removeEventListener('blur', onBlur)
     }
-  }, [isStart, resultScreenState])
+  }, [isStart, isChapterEnd])
 
   const skipWord = useCallback(() => {
     if (wordList === undefined) {
@@ -155,7 +145,7 @@ const App: React.FC = () => {
     }
     mixpanel.track('Word', wordStatUpload)
 
-    // 更新正确率
+    // 用户完成当前章节
     if (order === wordList.length - 1) {
       setIsStart(false)
 
@@ -179,8 +169,7 @@ const App: React.FC = () => {
 
       mixpanel.track('Chapter', chapterStatUpload)
 
-      // 用户完成当前章节
-      setResultScreenState(true)
+      setIsChapterEnd(true)
     } else {
       setOrder((order) => order + 1)
     }
@@ -203,33 +192,33 @@ const App: React.FC = () => {
   }, [])
 
   const repeatButtonHandler = () => {
-    setResultScreenState(false)
     setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
+    setIsChapterEnd(false)
   }
 
   const invisibleButtonHandler = () => {
-    setResultScreenState(false)
     setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
+    setIsChapterEnd(false)
     setDictation(true)
   }
 
   const nextButtonHandler = () => {
-    setResultScreenState(false)
     setIncorrectInfo([])
     addChapter()
     setOrder(0)
     setIsStart(true)
+    setIsChapterEnd(false)
     setDictation(false)
   }
 
   return (
     <>
-      {!value && showStar && <StarCard setShow={setShowStar} />}
-      {resultScreenState && (
+      {<StarCard />}
+      {isChapterEnd && (
         <ResultScreen
           incorrectInfo={incorrectInfo}
           speedInfo={speedInfo}
@@ -237,7 +226,7 @@ const App: React.FC = () => {
           invisibleButtonHandler={invisibleButtonHandler}
           nextButtonHandler={nextButtonHandler}
           exitButtonHandler={repeatButtonHandler}
-        ></ResultScreen>
+        />
       )}
       {wordList === undefined ? (
         <Loading />

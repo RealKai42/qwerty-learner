@@ -14,6 +14,10 @@ module.exports = {
         lg: '0.5rem',
         md: '0.375rem',
       },
+      width: {
+        150: '37.5rem',
+        160: '40rem',
+      },
     },
   },
   variants: {
