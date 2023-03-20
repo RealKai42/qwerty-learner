@@ -4,6 +4,7 @@ import starBar from '@/assets/starBar.svg'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { dismissStartCardDateAtom, isChapterEndAtom } from '@/store'
 import { useAtom, useAtomValue } from 'jotai'
+import { recordStarAction } from '@/utils'
 
 export default function StarCard() {
   const [countdown, setCountdown] = useState(3)
@@ -22,11 +23,13 @@ export default function StarCard() {
   const onClickCloseStar = useCallback(() => {
     setIsShow(false)
     setDismissStartCardDate(new Date())
+    recordStarAction('dismiss')
   }, [setIsShow, setDismissStartCardDate])
 
   const onClickWantStar = useCallback(() => {
     setIsCounting(true)
     setDismissStartCardDate(new Date())
+    recordStarAction('star')
   }, [setDismissStartCardDate])
 
   useEffect(() => {

@@ -1,6 +1,6 @@
 import { phoneticConfigAtom } from '@/store'
 import { Word } from '@/typings'
-import { WordStat } from '@/utils/statInfo'
+import { WordStat } from '@/typings'
 import { useAtomValue } from 'jotai'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'

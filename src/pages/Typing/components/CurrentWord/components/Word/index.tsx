@@ -2,7 +2,7 @@ import { useMemo, useState, useCallback, useEffect, useLayoutEffect, useRef } fr
 import Letter from './Letter'
 import useKeySounds from '@/hooks/useKeySounds'
 import { LetterState } from './Letter'
-import { isChineseSymbol, isLegal } from '@/utils/utils'
+import { isChineseSymbol, isLegal } from '@/utils'
 import style from './index.module.css'
 import WordSound from '../WordSound'
 import { useAtomValue, useSetAtom } from 'jotai'
