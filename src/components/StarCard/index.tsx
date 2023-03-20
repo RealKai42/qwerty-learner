@@ -23,8 +23,10 @@ export default function StarCard() {
   const onClickCloseStar = useCallback(() => {
     setIsShow(false)
     setDismissStartCardDate(new Date())
-    recordStarAction('dismiss')
-  }, [setIsShow, setDismissStartCardDate])
+    if (!isCounting) {
+      recordStarAction('dismiss')
+    }
+  }, [setIsShow, setDismissStartCardDate, isCounting])
 
   const onClickWantStar = useCallback(() => {
     setIsCounting(true)
