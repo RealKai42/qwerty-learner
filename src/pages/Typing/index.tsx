@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import Speed from './components/Speed'
 import Loading from '@/components/Loading'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
-import { isLegal, IsDesktop } from '@/utils/utils'
+import { isLegal, IsDesktop } from '@/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Switcher from './components/Switcher'
 import { useWordList } from './hooks/useWordList'
@@ -17,6 +17,7 @@ import { useAtom, useAtomValue } from 'jotai'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
+  isChapterEndAtom,
   isOpenDarkModeAtom,
   isShowSkipAtom,
   keySoundsConfigAtom,
@@ -27,6 +28,7 @@ import {
 import { ChapterStatUpload, WordStat, WordStatUpload } from '@/typings'
 import mixpanel from 'mixpanel-browser'
 import dayjs from 'dayjs'
+import StarCard from '@/components/StarCard'
 
 const App: React.FC = () => {
   const [order, setOrder] = useState<number>(0)
@@ -45,8 +47,9 @@ const App: React.FC = () => {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
 
+  const [isChapterEnd, setIsChapterEnd] = useAtom(isChapterEndAtom)
+
   //props for ResultScreen
-  const [resultScreenState, setResultScreenState] = useState<boolean>(false)
   const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
   const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
 
@@ -69,11 +72,11 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (!resultScreenState) {
+      if (!isChapterEnd) {
         setIsStart((old) => !old)
       }
     },
-    [resultScreenState],
+    [isChapterEnd],
   )
 
   useEffect(() => {
@@ -81,7 +84,7 @@ const App: React.FC = () => {
       if (e.key === 'Enter') {
         return
       }
-      if (!resultScreenState) {
+      if (!isChapterEnd) {
         if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
           if (isStart) {
             setInputCount((count) => count + 1)
@@ -101,7 +104,7 @@ const App: React.FC = () => {
       window.removeEventListener('keydown', onKeydown)
       window.removeEventListener('blur', onBlur)
     }
-  }, [isStart, resultScreenState])
+  }, [isStart, isChapterEnd])
 
   const skipWord = useCallback(() => {
     if (wordList === undefined) {
@@ -142,7 +145,7 @@ const App: React.FC = () => {
     }
     mixpanel.track('Word', wordStatUpload)
 
-    // 更新正确率
+    // 用户完成当前章节
     if (order === wordList.length - 1) {
       setIsStart(false)
 
@@ -166,8 +169,7 @@ const App: React.FC = () => {
 
       mixpanel.track('Chapter', chapterStatUpload)
 
-      // 用户完成当前章节
-      setResultScreenState(true)
+      setIsChapterEnd(true)
     } else {
       setOrder((order) => order + 1)
     }
@@ -190,32 +192,33 @@ const App: React.FC = () => {
   }, [])
 
   const repeatButtonHandler = () => {
-    setResultScreenState(false)
     setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
+    setIsChapterEnd(false)
   }
 
   const invisibleButtonHandler = () => {
-    setResultScreenState(false)
     setIncorrectInfo([])
     setOrder(0)
     setIsStart(true)
+    setIsChapterEnd(false)
     setDictation(true)
   }
 
   const nextButtonHandler = () => {
-    setResultScreenState(false)
     setIncorrectInfo([])
     addChapter()
     setOrder(0)
     setIsStart(true)
+    setIsChapterEnd(false)
     setDictation(false)
   }
 
   return (
     <>
-      {resultScreenState && (
+      {<StarCard />}
+      {isChapterEnd && (
         <ResultScreen
           incorrectInfo={incorrectInfo}
           speedInfo={speedInfo}
@@ -223,7 +226,7 @@ const App: React.FC = () => {
           invisibleButtonHandler={invisibleButtonHandler}
           nextButtonHandler={nextButtonHandler}
           exitButtonHandler={repeatButtonHandler}
-        ></ResultScreen>
+        />
       )}
       {wordList === undefined ? (
         <Loading />
