@@ -1,6 +1,6 @@
 import { SoundResource, LanguagePronunciationMap } from '@/typings'
 
-export const SOUND_URL_PREFIX = './sounds/'
+export const SOUND_URL_PREFIX = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner/sounds' : './sounds/'
 
 // will add more sound resource and add config ui in the future
 export const keySoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'click.wav' }]
