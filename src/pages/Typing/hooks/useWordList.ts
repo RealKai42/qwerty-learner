@@ -44,10 +44,12 @@ export function useWordList(): Word[] | undefined {
 }
 
 async function wordListFetcher(url: string, id: string): Promise<Word[]> {
+  const URL_PREFIX: string = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''
+
   if (id === 'cet4') {
     return cet4
   } else {
-    const response = await fetch(url)
+    const response = await fetch(URL_PREFIX + url)
     const words: Word[] = await response.json()
     return words
   }
