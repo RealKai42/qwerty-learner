@@ -53,8 +53,14 @@ export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.m
 export const isShowSkipAtom = atom(false)
 
 export const isChapterEndAtom = atom(false)
-export const dismissStartCardDateAtom = atomWithStorage<Date | null>('dismissStartCardDate', null)
-// for dev test
-// export const dismissStartCardDateAtom = atom<Date | null>(null)
 
 export const isInDevModeAtom = atom(false)
+
+let dismissStartCardDateAtom
+if (process.env.NODE_ENV === 'production') {
+  dismissStartCardDateAtom = atomWithStorage<Date | null>('dismissStartCardDate', null)
+} else {
+  // for dev test
+  dismissStartCardDateAtom = atom<Date | null>(null)
+}
+export { dismissStartCardDateAtom }

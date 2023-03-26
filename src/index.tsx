@@ -11,12 +11,15 @@ import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import { useAtomValue } from 'jotai'
 import { isOpenDarkModeAtom } from '@/store'
+import process from 'process'
 
-// for prod
-mixpanel.init('bdc492847e9340eeebd53cc35f321691')
-
-// for dev
-// mixpanel.init('5474177127e4767124c123b2d7846e2a', { debug: true })
+if (process.env.NODE_ENV === 'production') {
+  // for prod
+  mixpanel.init('bdc492847e9340eeebd53cc35f321691')
+} else {
+  // for dev
+  mixpanel.init('5474177127e4767124c123b2d7846e2a', { debug: true })
+}
 
 dayjs.extend(utc)
 
