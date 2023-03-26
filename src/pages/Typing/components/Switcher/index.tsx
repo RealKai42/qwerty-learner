@@ -33,7 +33,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
     setPronunciationConfig((old) => ({ ...old, isLoop: !old.isLoop }))
   }
   const changeWordVisibleState = () => {
-    setWordVisible(!wordVisible)
+    setWordVisible((old) => !old)
   }
 
   useHotkeys(
