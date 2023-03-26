@@ -1,6 +1,7 @@
 import type { IncorrectInfo } from './index'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
+import usePronunciationSound from '@/hooks/usePronunciation'
 
 export type WordChipProps = {
   mistake: IncorrectInfo
@@ -16,9 +17,16 @@ export default function WordChip({ mistake: { word, translation } }: WordChipPro
   const hover = useHover(context)
   const role = useRole(context, { role: 'tooltip' })
   const { getReferenceProps, getFloatingProps } = useInteractions([hover, role])
+  const { play, stop } = usePronunciationSound(word)
+
+  const onClickWord = useCallback(() => {
+    stop()
+    play()
+  }, [play, stop])
+
   return (
     <>
-      <div ref={refs.setReference} className="word-chip" {...getReferenceProps()}>
+      <div ref={refs.setReference} className="word-chip select-none" {...getReferenceProps()} onClick={onClickWord}>
         <span>{word}</span>
       </div>
       {showTranslation && (
