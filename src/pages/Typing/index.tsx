@@ -217,7 +217,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      {<StarCard />}
+      <StarCard />
       {isChapterEnd && (
         <ResultScreen
           incorrectInfo={incorrectInfo}
