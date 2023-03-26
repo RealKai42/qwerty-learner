@@ -2,23 +2,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Transition } from '@headlessui/react'
 import starBar from '@/assets/starBar.svg'
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { dismissStartCardDateAtom, isChapterEndAtom } from '@/store'
-import { useAtom, useAtomValue } from 'jotai'
+import { dismissStartCardDateAtom } from '@/store'
+import { useAtom } from 'jotai'
 import { recordStarAction } from '@/utils'
 
 export default function StarCard() {
-  const [countdown, setCountdown] = useState(3)
+  const [countdown, setCountdown] = useState(5)
   const [isCounting, setIsCounting] = useState(false)
   const [dismissStartCardDate, setDismissStartCardDate] = useAtom(dismissStartCardDateAtom)
-  const isChapterEnd = useAtomValue(isChapterEndAtom)
   const [isShow, setIsShow] = useState(false)
 
   useEffect(() => {
-    if (isChapterEnd && dismissStartCardDate === null) {
+    if (dismissStartCardDate === null) {
       setIsShow(true)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isChapterEnd])
+  }, [])
 
   const onClickCloseStar = useCallback(() => {
     setIsShow(false)
@@ -37,7 +36,7 @@ export default function StarCard() {
   useEffect(() => {
     let countdownId: number
     if (isCounting && countdown > 0) {
-      countdownId = setInterval(() => {
+      countdownId = window.setInterval(() => {
         setCountdown((prevCount) => prevCount - 1)
       }, 1000)
     }

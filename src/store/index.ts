@@ -1,5 +1,5 @@
 import { atomWithStorage } from 'jotai/utils'
-import { atom } from 'jotai'
+import { atom, SetStateAction, WritableAtom } from 'jotai'
 import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
 import { PronunciationType, PhoneticType, Dictionary } from '@/typings'
 import { idDictionaryMap } from '@/resources/dictionary'
@@ -53,8 +53,14 @@ export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.m
 export const isShowSkipAtom = atom(false)
 
 export const isChapterEndAtom = atom(false)
-export const dismissStartCardDateAtom = atomWithStorage<Date | null>('dismissStartCardDate', null)
-// for dev test
-// export const dismissStartCardDateAtom = atom<Date | null>(null)
 
 export const isInDevModeAtom = atom(false)
+
+let dismissStartCardDateAtom: WritableAtom<Date | null, [SetStateAction<Date | null>], void>
+if (process.env.NODE_ENV === 'production') {
+  dismissStartCardDateAtom = atomWithStorage<Date | null>('dismissStartCardDate', null)
+} else {
+  // for dev test
+  dismissStartCardDateAtom = atom<Date | null>(null)
+}
+export { dismissStartCardDateAtom }
