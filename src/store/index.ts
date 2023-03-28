@@ -1,9 +1,9 @@
 import { atomWithStorage } from 'jotai/utils'
-import { atom, SetStateAction, WritableAtom } from 'jotai'
+import { atom } from 'jotai'
 import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
 import { PronunciationType, PhoneticType, Dictionary, InfoPanelState } from '@/typings'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { CHAPTER_LENGTH } from '@/constants'
+import { CHAPTER_LENGTH, DISMISS_START_CARD_DATE_KEY } from '@/constants'
 
 export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
 export const currentDictInfoAtom = atom<Dictionary>((get) => {
@@ -62,11 +62,7 @@ export const infoPanelStateAtom = atom<InfoPanelState>({
   community: false,
 })
 
-let dismissStartCardDateAtom: WritableAtom<Date | null, [SetStateAction<Date | null>], void>
-if (process.env.NODE_ENV === 'production') {
-  dismissStartCardDateAtom = atomWithStorage<Date | null>('dismissStartCardDate', null)
-} else {
-  // for dev test
-  dismissStartCardDateAtom = atom<Date | null>(new Date())
-}
-export { dismissStartCardDateAtom }
+export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_START_CARD_DATE_KEY, null)
+
+// for dev test
+//   dismissStartCardDateAtom = atom<Date | null>(new Date())

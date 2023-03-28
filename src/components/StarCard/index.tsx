@@ -1,22 +1,24 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Transition } from '@headlessui/react'
 import starBar from '@/assets/starBar.svg'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react'
 import { dismissStartCardDateAtom } from '@/store'
-import { useAtom } from 'jotai'
+import { useSetAtom } from 'jotai'
 import { recordStarAction } from '@/utils'
+import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
 
 export default function StarCard() {
   const [countdown, setCountdown] = useState(5)
   const [isCounting, setIsCounting] = useState(false)
-  const [dismissStartCardDate, setDismissStartCardDate] = useAtom(dismissStartCardDateAtom)
+  const setDismissStartCardDate = useSetAtom(dismissStartCardDateAtom)
   const [isShow, setIsShow] = useState(false)
 
-  useEffect(() => {
-    if (dismissStartCardDate === null) {
+  useLayoutEffect(() => {
+    // 直接使用 jotai 的 dismissStartCardDate 其值先是默认值，然后才是 localStorage 中的值
+    const value = window.localStorage.getItem(DISMISS_START_CARD_DATE_KEY) as Date | null
+    if (value === null) {
       setIsShow(true)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const onClickCloseStar = useCallback(() => {
