@@ -5,6 +5,7 @@ import alipay from '@/assets/alipay.png'
 import weChat from '@/assets/weChat.png'
 import weChatGroup from '@/assets/weChat-group.png'
 import vscLogo from '@/assets/vsc-logo.svg'
+import { recordOpenInfoPanelAction } from '@/utils'
 
 interface ModalState {
   donate: boolean
@@ -12,7 +13,7 @@ interface ModalState {
   community: boolean
 }
 
-type ModalType = 'donate' | 'vsc' | 'community'
+export type InfoPanelType = 'donate' | 'vsc' | 'community'
 
 const Footer: React.FC = () => {
   const [modalState, setModalState] = useState<ModalState>({
@@ -21,7 +22,8 @@ const Footer: React.FC = () => {
     community: false,
   })
 
-  const handleOpenModal = useCallback((modalType: ModalType) => {
+  const handleOpenModal = useCallback((modalType: InfoPanelType) => {
+    recordOpenInfoPanelAction(modalType)
     setModalState((state) => {
       return {
         ...state,
@@ -30,7 +32,7 @@ const Footer: React.FC = () => {
     })
   }, [])
 
-  const handleCloseModal = useCallback((modalType: ModalType) => {
+  const handleCloseModal = useCallback((modalType: InfoPanelType) => {
     setModalState((state) => {
       return {
         ...state,
