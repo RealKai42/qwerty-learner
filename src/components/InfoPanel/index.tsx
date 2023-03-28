@@ -63,7 +63,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon, 
                     className={`${btnColor}  mt-3 inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus:outline-none  dark:bg-opacity-70 dark:text-opacity-80 sm:ml-3 sm:mt-0 sm:w-auto  sm:w-auto sm:text-sm`}
                     onClick={() => onClose()}
                   >
-                    Cancel
+                    关闭
                   </button>
                 </div>
               </Dialog.Panel>

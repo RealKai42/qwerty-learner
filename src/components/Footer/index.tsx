@@ -3,19 +3,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import InfoPanel from '@/components/InfoPanel'
 import alipay from '@/assets/alipay.png'
 import weChat from '@/assets/weChat.png'
+import weChatGroup from '@/assets/weChat-group.png'
 import vscLogo from '@/assets/vsc-logo.svg'
 
 interface ModalState {
   donate: boolean
   vsc: boolean
+  community: boolean
 }
 
-type ModalType = 'donate' | 'vsc'
+type ModalType = 'donate' | 'vsc' | 'community'
 
 const Footer: React.FC = () => {
   const [modalState, setModalState] = useState<ModalState>({
     donate: false,
     vsc: false,
+    community: false,
   })
 
   const handleOpenModal = useCallback((modalType: ModalType) => {
@@ -89,11 +92,49 @@ const Footer: React.FC = () => {
           <br />
         </InfoPanel>
       )}
+      {modalState.community && (
+        <InfoPanel
+          openState={modalState.community}
+          title="用户反馈社群"
+          icon={['fab', 'weixin']}
+          btnColor="bg-cyan-400"
+          iconColor="text-cyan-600"
+          iconBackgroundColor="bg-cyan-300"
+          onClose={() => handleCloseModal('community')}
+        >
+          <p className="text-sm text-gray-500  dark:text-gray-400">
+            Qwerty Learner 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
+            <br />
+            加入我们的用户社群后，您可以与我们的开发团队进行沟通，分享您的使用体验和建议，帮助我们改进产品，同时也能够及时了解我们的最新动态和更新内容。
+            <br />
+            <br />
+          </p>
+          <p className="text-sm text-gray-700 dark:text-gray-200">
+            我们深信，与用户的良好互动和反馈是推动我们不断前进和提高的重要因素。因此，我们诚挚邀请您加入我们的社群，与我们一起打造更好的
+            「Qwerty Learner」！
+          </p>
+          <br />
+          <p className="text-sm text-gray-500  dark:text-gray-400">再次感谢您的支持和关注！</p>
+          <br />
+          <img className="ml-1 w-2/6 " src={weChatGroup} alt="alipay" />
+          <br />
+        </InfoPanel>
+      )}
 
       <div className="mt-4 w-full pb-1 text-center text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={['fab', 'github']} className="mr-3 text-gray-500 dark:text-gray-400" />
         </a>
+
+        <span
+          className="cursor-pointer"
+          onClick={(e) => {
+            handleOpenModal('community')
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon={['fab', 'weixin']} className="mr-3 text-gray-500 dark:text-gray-400" />
+        </span>
 
         <span
           className="cursor-pointer"
@@ -115,7 +156,7 @@ const Footer: React.FC = () => {
           <img src={vscLogo} className="svg-inline--fa fill-current text-gray-500" alt="visual studio code" />
         </span>
 
-        <a href="mailto:ZHANG.Kaiyi42@gmail.com" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
+        <a href="mailto:me@kaiyi.cool" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
           <FontAwesomeIcon icon={['fas', 'envelope']} className="mr-3 text-gray-500 dark:text-gray-400" />
         </a>
 
