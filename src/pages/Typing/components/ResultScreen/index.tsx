@@ -138,7 +138,7 @@ const ResultScreen = ({
                   <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={incorrectInfo.length} />
                 </div>
               </div>
-              <div className="ml-2 flex flex-col items-center justify-end text-xl">
+              <div className="ml-2 flex flex-col items-center justify-end gap-2 text-xl">
                 <span
                   className="cursor-pointer"
                   onClick={(e) => {
@@ -146,7 +146,7 @@ const ResultScreen = ({
                     e.currentTarget.blur()
                   }}
                 >
-                  <FontAwesomeIcon icon={['fas', 'coffee']} className=" w-10 text-gray-500 dark:text-gray-400" />
+                  <FontAwesomeIcon icon={['fas', 'coffee']} className="text-gray-500 dark:text-gray-400" />
                 </span>
                 <span
                   className="cursor-pointer"
@@ -155,8 +155,11 @@ const ResultScreen = ({
                     e.currentTarget.blur()
                   }}
                 >
-                  <FontAwesomeIcon icon={['fab', 'weixin']} className=" w-10 text-gray-500 dark:text-gray-400" />
+                  <FontAwesomeIcon icon={['fab', 'weixin']} className="text-gray-500 dark:text-gray-400" />
                 </span>
+                <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 dark:text-gray-400" />
+                </a>
               </div>
             </div>
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
