@@ -13,9 +13,9 @@ import { infoPanelStateAtom } from '@/store'
 const Footer: React.FC = () => {
   const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
 
-  const handleOpenModal = useCallback(
+  const handleOpenInfoPanel = useCallback(
     (modalType: InfoPanelType) => {
-      recordOpenInfoPanelAction(modalType)
+      recordOpenInfoPanelAction(modalType, 'footer')
       setInfoPanelState((state) => {
         return {
           ...state,
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
     [setInfoPanelState],
   )
 
-  const handleCloseModal = useCallback(
+  const handleCloseInfoPanel = useCallback(
     (modalType: InfoPanelType) => {
       setInfoPanelState((state) => {
         return {
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           btnColor="bg-yellow-300"
           iconColor="text-yellow-500"
           iconBackgroundColor="bg-yellow-100"
-          onClose={() => handleCloseModal('donate')}
+          onClose={() => handleCloseInfoPanel('donate')}
         >
           <p className="text-sm text-gray-500 dark:text-gray-300">
             非常感谢大家使用 Qwerty Learner, 目前该网站使用业余时间在维护， 为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
           btnColor="bg-blue-400"
           iconColor="text-blue-600"
           iconBackgroundColor="bg-blue-300"
-          onClose={() => handleCloseModal('vsc')}
+          onClose={() => handleCloseInfoPanel('vsc')}
         >
           <p className="text-sm text-gray-500  dark:text-gray-400">
             我们根据大家的建议开发了 VSCode 插件，支持一键启动，随时开始背单词。
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
           btnColor="bg-cyan-400"
           iconColor="text-cyan-600"
           iconBackgroundColor="bg-cyan-300"
-          onClose={() => handleCloseModal('community')}
+          onClose={() => handleCloseInfoPanel('community')}
         >
           <p className="text-sm text-gray-500  dark:text-gray-400">
             Qwerty Learner 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
         <span
           className="cursor-pointer"
           onClick={(e) => {
-            handleOpenModal('community')
+            handleOpenInfoPanel('community')
             e.currentTarget.blur()
           }}
         >
@@ -138,7 +138,7 @@ const Footer: React.FC = () => {
         <span
           className="cursor-pointer"
           onClick={(e) => {
-            handleOpenModal('donate')
+            handleOpenInfoPanel('donate')
             e.currentTarget.blur()
           }}
         >
@@ -148,7 +148,7 @@ const Footer: React.FC = () => {
         <span
           className="mr-3 cursor-pointer"
           onClick={(e) => {
-            handleOpenModal('vsc')
+            handleOpenInfoPanel('vsc')
             e.currentTarget.blur()
           }}
         >
@@ -170,7 +170,7 @@ const Footer: React.FC = () => {
         <span
           className="cursor-pointer text-gray-500 no-underline hover:no-underline dark:text-gray-400 "
           onClick={(e) => {
-            handleOpenModal('donate')
+            handleOpenInfoPanel('donate')
             e.currentTarget.blur()
           }}
         >
