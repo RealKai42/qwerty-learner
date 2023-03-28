@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import InfoPanel from '@/components/InfoPanel'
 import alipay from '@/assets/alipay.png'
@@ -6,46 +6,43 @@ import weChat from '@/assets/weChat.png'
 import weChatGroup from '@/assets/weChat-group.png'
 import vscLogo from '@/assets/vsc-logo.svg'
 import { recordOpenInfoPanelAction } from '@/utils'
-
-interface ModalState {
-  donate: boolean
-  vsc: boolean
-  community: boolean
-}
-
-export type InfoPanelType = 'donate' | 'vsc' | 'community'
+import { InfoPanelType } from '@/typings'
+import { useAtom } from 'jotai'
+import { infoPanelStateAtom } from '@/store'
 
 const Footer: React.FC = () => {
-  const [modalState, setModalState] = useState<ModalState>({
-    donate: false,
-    vsc: false,
-    community: false,
-  })
+  const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
 
-  const handleOpenModal = useCallback((modalType: InfoPanelType) => {
-    recordOpenInfoPanelAction(modalType)
-    setModalState((state) => {
-      return {
-        ...state,
-        [modalType]: true,
-      }
-    })
-  }, [])
+  const handleOpenModal = useCallback(
+    (modalType: InfoPanelType) => {
+      recordOpenInfoPanelAction(modalType)
+      setInfoPanelState((state) => {
+        return {
+          ...state,
+          [modalType]: true,
+        }
+      })
+    },
+    [setInfoPanelState],
+  )
 
-  const handleCloseModal = useCallback((modalType: InfoPanelType) => {
-    setModalState((state) => {
-      return {
-        ...state,
-        [modalType]: false,
-      }
-    })
-  }, [])
+  const handleCloseModal = useCallback(
+    (modalType: InfoPanelType) => {
+      setInfoPanelState((state) => {
+        return {
+          ...state,
+          [modalType]: false,
+        }
+      })
+    },
+    [setInfoPanelState],
+  )
 
   return (
     <>
-      {modalState.donate && (
+      {infoPanelState.donate && (
         <InfoPanel
-          openState={modalState.donate}
+          openState={infoPanelState.donate}
           title="Buy us a coffee"
           icon="coffee"
           btnColor="bg-yellow-300"
@@ -70,9 +67,9 @@ const Footer: React.FC = () => {
           </div>
         </InfoPanel>
       )}
-      {modalState.vsc && (
+      {infoPanelState.vsc && (
         <InfoPanel
-          openState={modalState.vsc}
+          openState={infoPanelState.vsc}
           title="VSCode 摸🐟插件"
           icon="terminal"
           btnColor="bg-blue-400"
@@ -94,9 +91,9 @@ const Footer: React.FC = () => {
           <br />
         </InfoPanel>
       )}
-      {modalState.community && (
+      {infoPanelState.community && (
         <InfoPanel
-          openState={modalState.community}
+          openState={infoPanelState.community}
           title="用户反馈社群"
           icon={['fab', 'weixin']}
           btnColor="bg-cyan-400"

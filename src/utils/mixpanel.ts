@@ -1,4 +1,4 @@
-import { InfoPanelType } from '@/components/Footer'
+import { InfoPanelType } from '@/typings'
 import mixpanel from 'mixpanel-browser'
 
 export type starAction = 'star' | 'dismiss'
