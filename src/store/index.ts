@@ -61,6 +61,6 @@ if (process.env.NODE_ENV === 'production') {
   dismissStartCardDateAtom = atomWithStorage<Date | null>('dismissStartCardDate', null)
 } else {
   // for dev test
-  dismissStartCardDateAtom = atom<Date | null>(null)
+  dismissStartCardDateAtom = atom<Date | null>(new Date())
 }
 export { dismissStartCardDateAtom }

@@ -1,68 +1,95 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import InfoPanel from '@/components/InfoPanel'
 import alipay from '@/assets/alipay.png'
+import weChat from '@/assets/weChat.png'
 import vscLogo from '@/assets/vsc-logo.svg'
 
-const Footer: React.FC = () => {
-  const [showModal, setShowModal] = useState<boolean>(false)
-  const [content, setShowContent] = useState('donate')
+interface ModalState {
+  donate: boolean
+  vsc: boolean
+}
 
-  const icon = content === 'donate' ? 'coffee' : 'terminal'
-  const color = content === 'donate' ? 'bg-yellow-100' : 'bg-blue-300'
-  const btnColor = content === 'donate' ? 'bg-yellow-300' : 'bg-blue-400'
-  const iconColor = content === 'donate' ? 'text-yellow-500' : 'text-blue-600'
+type ModalType = 'donate' | 'vsc'
+
+const Footer: React.FC = () => {
+  const [modalState, setModalState] = useState<ModalState>({
+    donate: false,
+    vsc: false,
+  })
+
+  const handleOpenModal = useCallback((modalType: ModalType) => {
+    setModalState((state) => {
+      return {
+        ...state,
+        [modalType]: true,
+      }
+    })
+  }, [])
+
+  const handleCloseModal = useCallback((modalType: ModalType) => {
+    setModalState((state) => {
+      return {
+        ...state,
+        [modalType]: false,
+      }
+    })
+  }, [])
 
   return (
     <>
-      {showModal && (
+      {modalState.donate && (
         <InfoPanel
-          state={showModal}
-          icon={icon}
-          color={color}
-          btnColor={btnColor}
-          iconColor={iconColor}
-          buttonOnclick={() => setShowModal(false)}
+          openState={modalState.donate}
+          title="Buy us a coffee"
+          icon="coffee"
+          btnColor="bg-yellow-300"
+          iconColor="text-yellow-500"
+          iconBackgroundColor="bg-yellow-100"
+          onClose={() => handleCloseModal('donate')}
         >
-          {content === 'donate' ? (
-            <>
-              <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
-                Buy me a coffee
-              </h3>
-              <div className="mt-2 ">
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  非常感谢大家使用 Qwerty Learner,
-                  目前该网站使用业余时间在维护，我们希望在未来购买独立的域名(目前使用vercel部署)，并购买服务器以方便国内用户访问与云同步存储数据。
-                </p>
-                <br />
-                <p className="text-sm text-gray-700 dark:text-gray-200">如果您喜欢我们软件，非常感谢您对我们未来的支持!</p>
-                <br />
-                <img className="ml-1 w-2/6 " src={alipay} alt="alipay" />
-              </div>
-            </>
-          ) : (
-            <>
-              <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
-                VSCode 摸🐟插件
-              </h3>
-              <div className="mt-2 ">
-                <p className="text-sm text-gray-500  dark:text-gray-400">
-                  我们根据大家的建议开发了 VSCode 插件，支持一键启动，随时开始背单词。
-                  可以在任意文件中一键开启，开启后单词显示在状态栏中，且插件会拦截用户对文档的输入，不会影响到原始文档。
-                </p>
-                <br /> <br />
-                <a className="mr-5 underline dark:text-gray-300" href="https://github.com/Kaiyiwing/qwerty-learner-vscode">
-                  GitHub 项目
-                </a>
-                <a className="underline dark:text-gray-300" href="https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner">
-                  VSCode 插件链接
-                </a>
-                <br />
-              </div>
-            </>
-          )}
+          <p className="text-sm text-gray-500 dark:text-gray-300">
+            非常感谢大家使用 Qwerty Learner, 目前该网站使用业余时间在维护， 为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
+            <br />
+            您的捐款将有助于我们支付网站的运营成本，改进网站的功能和设计，并提高用户体验。
+            <br />
+          </p>
+          <br />
+          <p className="text-sm text-gray-700 dark:text-gray-200">
+            我们相信，共同的努力可以让 Qwerty Learner 成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
+          </p>
+          <br />
+          <div className="flex w-full justify-start">
+            <img src={alipay} alt="alipay" className="mx-4 w-1/3" />
+            <img src={weChat} alt="weChat" className="mx-4 w-1/3" />
+          </div>
         </InfoPanel>
       )}
+      {modalState.vsc && (
+        <InfoPanel
+          openState={modalState.vsc}
+          title="VSCode 摸🐟插件"
+          icon="terminal"
+          btnColor="bg-blue-400"
+          iconColor="text-blue-600"
+          iconBackgroundColor="bg-blue-300"
+          onClose={() => handleCloseModal('vsc')}
+        >
+          <p className="text-sm text-gray-500  dark:text-gray-400">
+            我们根据大家的建议开发了 VSCode 插件，支持一键启动，随时开始背单词。
+            可以在任意文件中一键开启，开启后单词显示在状态栏中，且插件会拦截用户对文档的输入，不会影响到原始文档。
+          </p>
+          <br /> <br />
+          <a className="mr-5 underline dark:text-gray-300" href="https://github.com/Kaiyiwing/qwerty-learner-vscode">
+            GitHub 项目
+          </a>
+          <a className="underline dark:text-gray-300" href="https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner">
+            VSCode 插件链接
+          </a>
+          <br />
+        </InfoPanel>
+      )}
+
       <div className="mt-4 w-full pb-1 text-center text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={['fab', 'github']} className="mr-3 text-gray-500 dark:text-gray-400" />
@@ -71,8 +98,7 @@ const Footer: React.FC = () => {
         <span
           className="cursor-pointer"
           onClick={(e) => {
-            setShowContent('donate')
-            setShowModal(true)
+            handleOpenModal('donate')
             e.currentTarget.blur()
           }}
         >
@@ -82,8 +108,7 @@ const Footer: React.FC = () => {
         <span
           className="mr-3 cursor-pointer"
           onClick={(e) => {
-            setShowContent('vscode')
-            setShowModal(true)
+            handleOpenModal('vsc')
             e.currentTarget.blur()
           }}
         >
@@ -105,8 +130,7 @@ const Footer: React.FC = () => {
         <span
           className="cursor-pointer text-gray-500 no-underline hover:no-underline dark:text-gray-400 "
           onClick={(e) => {
-            setShowContent('donate')
-            setShowModal(true)
+            handleOpenModal('donate')
             e.currentTarget.blur()
           }}
         >
