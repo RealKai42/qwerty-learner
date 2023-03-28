@@ -1,14 +1,16 @@
 import { Transition } from '@headlessui/react'
 import Tooltip from '@/components/Tooltip'
 import { useWordList } from '@/pages/Typing/hooks/useWordList'
-import { useMemo } from 'react'
+import { useCallback, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useAtomValue } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom } from '@/store'
+import { useAtomValue, useSetAtom } from 'jotai'
+import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom } from '@/store'
+import { recordOpenInfoPanelAction } from '@/utils'
+import { InfoPanelType } from '@/typings'
 
 export type IncorrectInfo = {
   word: string
@@ -41,6 +43,7 @@ const ResultScreen = ({
   const wordList = useWordList()
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const currentChapter = useAtomValue(currentChapterAtom)
+  const setInfoPanelState = useSetAtom(infoPanelStateAtom)
 
   const isLastChapter = useMemo(() => {
     return currentChapter >= currentDictInfo.length - 1
@@ -86,6 +89,19 @@ const ResultScreen = ({
     invisibleButtonHandler()
   })
 
+  const handleOpenInfoPanel = useCallback(
+    (modalType: InfoPanelType) => {
+      recordOpenInfoPanelAction(modalType, 'resultScreen')
+      setInfoPanelState((state) => {
+        return {
+          ...state,
+          [modalType]: true,
+        }
+      })
+    },
+    [setInfoPanelState],
+  )
+
   return (
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div className="absolute inset-0 bg-gray-300 opacity-80 dark:bg-gray-600"></div>
@@ -112,7 +128,7 @@ const ResultScreen = ({
                 <RemarkRing remark={timeString} caption="章节耗时" />
                 <RemarkRing remark={`${speedInfo.speed}个/s`} caption="输入字符" />
               </div>
-              <div className="z-10 mx-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
+              <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
                 <div className="customized-scrollbar z-20 ml-8 mr-1 flex h-80 flex-row flex-wrap content-start gap-4 overflow-y-auto overflow-x-hidden pr-7 pt-9">
                   {incorrectInfo.map((info) => (
                     <WordChip key={info.word} mistake={info} />
@@ -121,6 +137,26 @@ const ResultScreen = ({
                 <div className="align-center flex w-full flex-row justify-start rounded-b-xl bg-indigo-200 px-4 dark:bg-indigo-400">
                   <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={incorrectInfo.length} />
                 </div>
+              </div>
+              <div className="ml-2 flex flex-col items-center justify-end text-xl">
+                <span
+                  className="cursor-pointer"
+                  onClick={(e) => {
+                    handleOpenInfoPanel('donate')
+                    e.currentTarget.blur()
+                  }}
+                >
+                  <FontAwesomeIcon icon={['fas', 'coffee']} className=" w-10 text-gray-500 dark:text-gray-400" />
+                </span>
+                <span
+                  className="cursor-pointer"
+                  onClick={(e) => {
+                    handleOpenInfoPanel('community')
+                    e.currentTarget.blur()
+                  }}
+                >
+                  <FontAwesomeIcon icon={['fab', 'weixin']} className=" w-10 text-gray-500 dark:text-gray-400" />
+                </span>
               </div>
             </div>
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">

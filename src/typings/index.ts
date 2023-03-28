@@ -11,3 +11,9 @@ export type Word = {
   usphone: string
   ukphone: string
 }
+
+export type InfoPanelType = 'donate' | 'vsc' | 'community'
+
+export type InfoPanelState = {
+  [key in InfoPanelType]: boolean
+}

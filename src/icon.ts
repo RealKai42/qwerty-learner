@@ -27,12 +27,13 @@ import {
   faTimes,
   faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faWeixin } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   faKeyboard,
   faBookReader,
   faGithub,
+  faWeixin,
   faEnvelope,
   faVolumeUp,
   faVolumeMute,
