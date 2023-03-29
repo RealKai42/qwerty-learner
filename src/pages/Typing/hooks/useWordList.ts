@@ -3,29 +3,20 @@ import cet4 from '@/assets/CET4_T.json'
 import { shuffle } from 'lodash'
 import { useMemo } from 'react'
 import useSWR from 'swr'
-import { LanguageType, Word } from '@/typings/index'
+import { Word } from '@/typings/index'
 import { randomConfigAtom, currentDictInfoAtom, currentChapterAtom } from '@/store'
 import { CHAPTER_LENGTH } from '@/constants'
 
 export type UseWordListResult = {
-  dictName: string
-  chapter: number
-  chapterListLength: number
-  words: Word[]
-  language: LanguageType
-  defaultPronIndex?: number
-  setChapterNumber: (index: number) => void
+  words: Word[] | undefined
+  isLoading: boolean
+  error: Error | undefined
 }
 
 /**
  * Use word lists from the current selected dictionary.
- * When the data is loading, this returns `undefined`.
  */
-export function useWordList(): {
-  words: Word[] | undefined
-  isLoading: boolean
-  error: Error | undefined
-} {
+export function useWordList(): UseWordListResult {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const currentChapter = useAtomValue(currentChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
