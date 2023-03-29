@@ -10,7 +10,7 @@ import { WordStat } from '@/typings'
 import dayjs from 'dayjs'
 import { EXPLICIT_SPACE } from '@/constants'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import HiddenTextarea, { WordUpdateObj } from '../HiddenTextarea'
+import HiddenTextarea, { WordUpdateAction } from '../HiddenTextarea'
 
 const initialStatInfo = {
   headword: '',
@@ -62,28 +62,35 @@ export default function Word({ word, onFinish }: WordProps) {
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
 
-  const updateInput = useCallback((updateObj: WordUpdateObj) => {
-    switch (updateObj.type) {
-      case 'add':
-        if (updateObj.value === ' ') {
-          updateObj.event.preventDefault()
-          setWordState((state) => ({
-            ...state,
-            inputWord: state.inputWord + EXPLICIT_SPACE,
-          }))
-        } else {
-          setWordState((state) => ({
-            ...state,
-            inputWord: state.inputWord + updateObj.value,
-          }))
-        }
+  const updateInput = useCallback(
+    (updateAction: WordUpdateAction) => {
+      switch (updateAction.type) {
+        case 'add':
+          if (wordState.hasWrong) {
+            return
+          }
 
-        break
+          if (updateAction.value === ' ') {
+            updateAction.event.preventDefault()
+            setWordState((state) => ({
+              ...state,
+              inputWord: state.inputWord + EXPLICIT_SPACE,
+            }))
+          } else {
+            setWordState((state) => ({
+              ...state,
+              inputWord: state.inputWord + updateAction.value,
+            }))
+          }
 
-      default:
-        console.warn('unknown update type', updateObj)
-    }
-  }, [])
+          break
+
+        default:
+          console.warn('unknown update type', updateAction)
+      }
+    },
+    [wordState.hasWrong],
+  )
 
   useEffect(() => {
     const inputLength = wordState.inputWord.length

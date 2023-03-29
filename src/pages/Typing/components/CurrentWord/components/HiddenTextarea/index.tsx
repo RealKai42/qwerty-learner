@@ -2,7 +2,7 @@ import { TypingContext } from '@/pages/Typing/store'
 import { FormEvent, useCallback, useContext, useEffect, useRef } from 'react'
 
 export type HiddenTextareaProps = {
-  updateInput: (updateObj: WordUpdateObj) => void
+  updateInput: (updateObj: WordUpdateAction) => void
 }
 
 export default function HiddenTextarea({ updateInput }: HiddenTextareaProps) {
@@ -48,27 +48,27 @@ export default function HiddenTextarea({ updateInput }: HiddenTextareaProps) {
       onBlur={onBlur}
       onInput={onInput}
       onCompositionStart={() => {
-        alert('您正在使用中文输入法输入，请关闭输入法')
+        alert('您正在使用输入法，请关闭输入法。')
       }}
     ></textarea>
   )
 }
 
-export type WordUpdateObj = WordAddObj | WordDeleteObj | WordCompositionObj
+export type WordUpdateAction = WordAddAction | WordDeleteAction | WordCompositionAction
 
-export type WordAddObj = {
+export type WordAddAction = {
   type: 'add'
   value: string
   event: FormEvent<HTMLTextAreaElement>
 }
 
-export type WordDeleteObj = {
+export type WordDeleteAction = {
   type: 'delete'
   length: number
 }
 
 // composition api is not ready yet
-export type WordCompositionObj = {
+export type WordCompositionAction = {
   type: 'composition'
   value: string
 }
