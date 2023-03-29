@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useReducer, useState } from 'react'
 import Header from '@/components/Header'
 import Speed from './components/Speed'
 import Loading from '@/components/Loading'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
-import { isLegal, IsDesktop } from '@/utils'
+import { IsDesktop } from '@/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Switcher from './components/Switcher'
 import { useWordList } from './hooks/useWordList'
@@ -11,15 +11,13 @@ import Layout from '../../components/Layout'
 import { NavLink } from 'react-router-dom'
 import Tooltip from '@/components/Tooltip'
 import Progress from './components/Progress'
-import ResultScreen, { IncorrectInfo, ResultSpeedInfo } from './components/ResultScreen'
+import ResultScreen from './components/ResultScreen'
 import CurrentWord from './components/CurrentWord'
-import { useAtom, useAtomValue } from 'jotai'
+import { useAtomValue } from 'jotai'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
-  isChapterEndAtom,
   isOpenDarkModeAtom,
-  isShowSkipAtom,
   keySoundsConfigAtom,
   phoneticConfigAtom,
   pronunciationConfigAtom,
@@ -29,34 +27,22 @@ import { ChapterStatUpload, WordStat, WordStatUpload } from '@/typings'
 import mixpanel from 'mixpanel-browser'
 import dayjs from 'dayjs'
 import StarCard from '@/components/StarCard'
+import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 
 const App: React.FC = () => {
-  const [order, setOrder] = useState<number>(0)
-  const [inputCount, setInputCount] = useState<number>(0)
-  const [correctCount, setCorrectCount] = useState<number>(0)
-  const [isStart, setIsStart] = useState<boolean>(false)
-  const [wordVisible, setWordVisible] = useState<boolean>(true)
-  const wordList = useWordList()
-  const randomConfig = useAtomValue(randomConfigAtom)
-  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
+  const [typingState, dispatch] = useReducer(typingReducer, initialState)
+  const [isLoading, setIsLoading] = useState<boolean>(true)
+  const { words } = useWordList()
+  const currentWord = typingState.chapterData.words[typingState.chapterData.index]
+
+  const currentChapter = useAtomValue(currentChapterAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const [isShowSkip, setIsShowSkip] = useAtom(isShowSkipAtom)
 
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
-
-  const [isChapterEnd, setIsChapterEnd] = useAtom(isChapterEndAtom)
-
-  //props for ResultScreen
-  const [incorrectInfo, setIncorrectInfo] = useState<IncorrectInfo[]>([])
-  const [speedInfo, setSpeedInfo] = useState<ResultSpeedInfo>({ speed: '', minute: 0, second: 0 })
-
-  useEffect(() => {
-    // reset order when random change
-    setOrder(0)
-  }, [randomConfig.isOpen])
+  const randomConfig = useAtomValue(randomConfigAtom)
 
   useEffect(() => {
     // 检测用户设备
@@ -72,93 +58,74 @@ const App: React.FC = () => {
   useHotkeys(
     'enter',
     () => {
-      if (!isChapterEnd) {
-        setIsStart((old) => !old)
-      }
+      dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
     },
-    [isChapterEnd],
+    { enableOnFormTags: true, preventDefault: true },
+    [],
   )
 
   useEffect(() => {
-    const onKeydown = (e: KeyboardEvent) => {
-      if (e.key === 'Enter') {
-        return
-      }
-      if (!isChapterEnd) {
-        if (isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-          if (isStart) {
-            setInputCount((count) => count + 1)
-          }
-        }
-        setIsStart(true)
-      }
+    if (words !== undefined) {
+      dispatch({
+        type: TypingStateActionType.SETUP_CHAPTER,
+        payload: words,
+      })
     }
-    const onBlur = () => {
-      setIsStart(false)
-    }
+  }, [words])
 
+  useEffect(() => {
+    if (typingState.chapterData.words?.length > 0) {
+      setIsLoading(false)
+    } else {
+      setIsLoading(true)
+    }
+  }, [typingState.chapterData.words])
+
+  useEffect(() => {
+    const onBlur = () => {
+      dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+    }
     window.addEventListener('blur', onBlur)
-    window.addEventListener('keydown', onKeydown)
 
     return () => {
-      window.removeEventListener('keydown', onKeydown)
       window.removeEventListener('blur', onBlur)
     }
-  }, [isStart, isChapterEnd])
+  }, [])
 
   const skipWord = useCallback(() => {
-    if (wordList === undefined) {
-      return
-    }
-    // todo: bug, when user skip the last word of the chapter, the result screen will not show
-    if (order < wordList.length - 1) {
-      setOrder((order) => order + 1)
-      // reset to false when skip
-      setIsShowSkip(false)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [order, wordList])
+    dispatch({ type: TypingStateActionType.SKIP_WORD })
+  }, [])
 
-  const onFinish = (everWrong: boolean, wordStat: WordStat) => {
-    if (wordList === undefined) {
-      return
-    }
-    // 优先更新数据
-    setCorrectCount((count) => count + wordList[order].name.trim().length)
-    // 记录错误数据
-    if (everWrong) {
-      setIncorrectInfo((prev) => [...prev, { word: wordList[order].name, translation: wordList[order].trans.join('；') }])
-    }
-
-    const wordStatUpload: WordStatUpload = {
-      ...wordStat,
-      order: order + 1,
-      chapter: (currentChapter + 1).toString(),
-      wordlist: currentDictInfo.name,
-      modeDictation: !wordVisible,
-      modeDark: isDarkMode,
-      modeShuffle: randomConfig.isOpen,
-      enabledKeyboardSound: keySoundsConfig.isOpen,
-      enabledPhotonicsSymbol: phoneticConfig.isOpen,
-      pronunciationAuto: pronunciationConfig.isOpen,
-      pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
-    }
-    mixpanel.track('Word', wordStatUpload)
-
-    // 用户完成当前章节
-    if (order === wordList.length - 1) {
-      setIsStart(false)
-
-      // 上传埋点数据
-      const chapterStatUpload: ChapterStatUpload = {
-        timeEnd: dayjs.utc().format('YYYY-MM-DD HH:mm:ss'),
-        duration: speedInfo.second + speedInfo.minute * 60,
-        countInput: inputCount,
-        countTypo: inputCount - correctCount,
-        countCorrect: correctCount,
+  const onFinish = (wordStat: WordStat) => {
+    if (typingState.chapterData.index < typingState.chapterData.words.length - 1) {
+      dispatch({ type: TypingStateActionType.NEXT_WORD })
+      const wordStatUpload: WordStatUpload = {
+        ...wordStat,
+        order: typingState.chapterData.index + 1,
         chapter: (currentChapter + 1).toString(),
         wordlist: currentDictInfo.name,
-        modeDictation: !wordVisible,
+        modeDictation: !typingState.isWordVisible,
+        modeDark: isDarkMode,
+        modeShuffle: randomConfig.isOpen,
+        enabledKeyboardSound: keySoundsConfig.isOpen,
+        enabledPhotonicsSymbol: phoneticConfig.isOpen,
+        pronunciationAuto: pronunciationConfig.isOpen,
+        pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
+      }
+      mixpanel.track('Word', wordStatUpload)
+    } else {
+      // 用户完成当前章节
+      dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
+
+      const chapterStatUpload: ChapterStatUpload = {
+        timeEnd: dayjs.utc().format('YYYY-MM-DD HH:mm:ss'),
+        duration: typingState.timerData.time,
+        countInput: typingState.chapterData.correctCount + typingState.chapterData.wrongCount,
+        countTypo: typingState.chapterData.wrongCount,
+        countCorrect: typingState.chapterData.correctCount,
+        chapter: (currentChapter + 1).toString(),
+        wordlist: currentDictInfo.name,
+        modeDictation: !typingState.isWordVisible,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
@@ -168,98 +135,55 @@ const App: React.FC = () => {
       }
 
       mixpanel.track('Chapter', chapterStatUpload)
-
-      setIsChapterEnd(true)
-    } else {
-      setOrder((order) => order + 1)
     }
-
-    // if user finished the word without skipping, then set skipState to false
-    setIsShowSkip(false)
   }
 
-  const addChapter = useCallback(() => {
-    if (wordList === undefined) {
-      return
+  useEffect(() => {
+    // 启动计时器
+    let intervalId: number
+    if (typingState.isTyping) {
+      intervalId = window.setInterval(() => {
+        dispatch({ type: TypingStateActionType.TICK_TIMER })
+      }, 1000)
     }
-    setCurrentChapter((old) => old + 1)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [wordList])
-
-  const setDictation = useCallback((option: boolean) => {
-    setWordVisible(!option)
-    //dictation mode being set to 'true' indicates that the word is invisible.
-  }, [])
-
-  const repeatButtonHandler = () => {
-    setIncorrectInfo([])
-    setOrder(0)
-    setIsStart(true)
-    setIsChapterEnd(false)
-  }
-
-  const invisibleButtonHandler = () => {
-    setIncorrectInfo([])
-    setOrder(0)
-    setIsStart(true)
-    setIsChapterEnd(false)
-    setDictation(true)
-  }
-
-  const nextButtonHandler = () => {
-    setIncorrectInfo([])
-    addChapter()
-    setOrder(0)
-    setIsStart(true)
-    setIsChapterEnd(false)
-    setDictation(false)
-  }
+    return () => clearInterval(intervalId)
+  }, [typingState.isTyping])
 
   return (
-    <>
+    <TypingContext.Provider value={{ state: typingState, dispatch }}>
       <StarCard />
-      {isChapterEnd && (
-        <ResultScreen
-          incorrectInfo={incorrectInfo}
-          speedInfo={speedInfo}
-          repeatButtonHandler={repeatButtonHandler}
-          invisibleButtonHandler={invisibleButtonHandler}
-          nextButtonHandler={nextButtonHandler}
-          exitButtonHandler={repeatButtonHandler}
-        />
-      )}
-      {wordList === undefined ? (
+      {typingState.isFinished && <ResultScreen />}
+      {isLoading ? (
         <Loading />
       ) : (
         <Layout>
           <Header>
             <Tooltip content="词典章节切换">
               <NavLink
-                className="block rounded-lg px-4 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
+                className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
                 to="/gallery"
               >
                 {currentDictInfo.name} 第 {currentChapter + 1} 章
               </NavLink>
             </Tooltip>
-            <Tooltip content="发音切换">
-              <PronunciationSwitcher />
-            </Tooltip>
-            <Switcher wordVisible={wordVisible} setWordVisible={setWordVisible} />
+            <PronunciationSwitcher />
+            <Switcher />
             <Tooltip content="快捷键 Enter">
               <button
-                className={`${isStart ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'}  btn-primary w-20 transition-colors duration-300`}
+                className={`${
+                  typingState.isTyping ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
+                }  btn-primary w-20 transition-colors duration-300`}
                 onClick={() => {
-                  setIsStart((isStart) => !isStart)
+                  dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
                 }}
               >
-                {isStart ? 'Pause' : 'Start'}
+                {typingState.isTyping ? 'Pause' : 'Start'}
               </button>
             </Tooltip>
             <Tooltip content="跳过该词">
-              {/* because of the low frequency of the function, the button doesn't need a hotkey */}
               <button
                 className={`${
-                  isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+                  typingState.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
                 } btn-primary transition-all duration-300 `}
                 onClick={skipWord}
               >
@@ -270,15 +194,24 @@ const App: React.FC = () => {
           <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
             <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="h-1/3"></div>
-              {!isStart && <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>}
-              {isStart && <CurrentWord word={wordList[order]} onFinish={onFinish} isStart={isStart} wordVisible={wordVisible} />}
-              {isStart && <Progress order={order} wordsLength={wordList.length} />}
-              <Speed correctCount={correctCount} inputCount={inputCount} isStart={isStart} setSpeedInfo={setSpeedInfo} />
+              {!typingState.isFinished && (
+                <>
+                  {typingState.isTyping ? (
+                    <>
+                      {currentWord && <CurrentWord word={currentWord} onFinish={onFinish} />}
+                      <Progress order={typingState.chapterData.index} wordsLength={typingState.chapterData.words.length} />
+                    </>
+                  ) : (
+                    <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>
+                  )}
+                  <Speed />
+                </>
+              )}
             </div>
           </div>
         </Layout>
       )}
-    </>
+    </TypingContext.Provider>
   )
 }
 

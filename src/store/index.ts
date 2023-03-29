@@ -35,6 +35,7 @@ export const pronunciationConfigAtom = atomWithStorage('pronunciation', {
   isOpen: true,
   volume: 1,
   type: 'us' as PronunciationType,
+  name: '美音',
   isLoop: false,
 })
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)
@@ -51,8 +52,6 @@ export const phoneticConfigAtom = atomWithStorage('phoneticConfig', {
 export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.matchMedia('(prefers-color-scheme: dark)').matches)
 
 export const isShowSkipAtom = atom(false)
-
-export const isChapterEndAtom = atom(false)
 
 export const isInDevModeAtom = atom(false)
 

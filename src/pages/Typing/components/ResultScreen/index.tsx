@@ -1,48 +1,23 @@
 import { Transition } from '@headlessui/react'
 import Tooltip from '@/components/Tooltip'
-import { useWordList } from '@/pages/Typing/hooks/useWordList'
-import { useCallback, useMemo } from 'react'
+import { useCallback, useContext, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useAtomValue, useSetAtom } from 'jotai'
+import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom } from '@/store'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { InfoPanelType } from '@/typings'
+import { TypingContext, TypingStateActionType } from '../../store'
 
-export type IncorrectInfo = {
-  word: string
-  translation: string
-}
+const ResultScreen = () => {
+  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+  const { state, dispatch } = useContext(TypingContext)!
 
-export type ResultSpeedInfo = {
-  speed: string
-  minute: number
-  second: number
-}
-
-interface ResultScreenProps {
-  speedInfo: ResultSpeedInfo
-  incorrectInfo: IncorrectInfo[]
-  repeatButtonHandler: () => void
-  invisibleButtonHandler: () => void
-  nextButtonHandler: () => void
-  exitButtonHandler: () => void
-}
-
-const ResultScreen = ({
-  speedInfo,
-  incorrectInfo,
-  repeatButtonHandler,
-  invisibleButtonHandler,
-  nextButtonHandler,
-  exitButtonHandler,
-}: ResultScreenProps) => {
-  const wordList = useWordList()
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const currentChapter = useAtomValue(currentChapterAtom)
+  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
 
   const isLastChapter = useMemo(() => {
@@ -50,10 +25,10 @@ const ResultScreen = ({
   }, [currentChapter, currentDictInfo])
 
   const correctRate = useMemo(() => {
-    const chapterLength = wordList?.length ?? 0
-    const correctCount = chapterLength - incorrectInfo.length
+    const chapterLength = state.chapterData.words.length
+    const correctCount = chapterLength - state.chapterData.wrongWordIndexes.length
     return Math.floor((correctCount / chapterLength) * 100)
-  }, [wordList, incorrectInfo])
+  }, [state.chapterData.words.length, state.chapterData.wrongWordIndexes])
 
   const mistakeLevel = useMemo(() => {
     if (correctRate >= 85) {
@@ -66,11 +41,29 @@ const ResultScreen = ({
   }, [correctRate])
 
   const timeString = useMemo(() => {
-    const { minute, second } = speedInfo
-    const minuteString = minute < 10 ? '0' + minute : minute + ''
-    const secondString = second < 10 ? '0' + second : second + ''
+    const seconds = state.timerData.time
+    const minutes = Math.floor(seconds / 60)
+    const minuteString = minutes < 10 ? '0' + minutes : minutes + ''
+    const secondString = seconds < 10 ? '0' + seconds : seconds + ''
     return `${minuteString}:${secondString}`
-  }, [speedInfo])
+  }, [state.timerData.time])
+
+  const repeatButtonHandler = () => {
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
+  }
+
+  const dictationButtonHandler = () => {
+    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER })
+  }
+
+  const nextButtonHandler = () => {
+    setCurrentChapter((old) => old + 1)
+    dispatch({ type: TypingStateActionType.NEXT_CHAPTER })
+  }
+
+  const exitButtonHandler = () => {
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
+  }
 
   useHotkeys('enter', () => {
     // If this is the last chapter, do nothing.
@@ -86,7 +79,7 @@ const ResultScreen = ({
   })
 
   useHotkeys('shift+enter', () => {
-    invisibleButtonHandler()
+    dictationButtonHandler()
   })
 
   const handleOpenInfoPanel = useCallback(
@@ -117,25 +110,25 @@ const ResultScreen = ({
         <div className="flex h-screen items-center justify-center">
           <div className="card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white px-10 pt-10 pb-14 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
-              {wordList ? `${currentDictInfo.name}  第 ${currentChapter + 1} 章` : ' '}
+              {`${currentDictInfo.name} 第 ${currentChapter + 1} 章`}
             </div>
             <button className="absolute top-5 right-7" onClick={exitButtonHandler}>
               <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
             </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
-                <RemarkRing remark={`${correctRate}%`} caption="正确率" percentage={correctRate} />
+                <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={correctRate} />
                 <RemarkRing remark={timeString} caption="章节耗时" />
-                <RemarkRing remark={`${speedInfo.speed}个/s`} caption="输入字符" />
+                <RemarkRing remark={state.timerData.wpm + ''} caption="WPM" />
               </div>
               <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
                 <div className="customized-scrollbar z-20 ml-8 mr-1 flex h-80 flex-row flex-wrap content-start gap-4 overflow-y-auto overflow-x-hidden pr-7 pt-9">
-                  {incorrectInfo.map((info) => (
-                    <WordChip key={info.word} mistake={info} />
+                  {state.chapterData.wrongWordIndexes.map((index) => (
+                    <WordChip key={`${index}-${state.chapterData.words[index].name}`} word={state.chapterData.words[index]} />
                   ))}
                 </div>
                 <div className="align-center flex w-full flex-row justify-start rounded-b-xl bg-indigo-200 px-4 dark:bg-indigo-400">
-                  <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={incorrectInfo.length} />
+                  <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={state.chapterData.wrongWordIndexes.length} />
                 </div>
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-2 text-xl">
@@ -166,7 +159,7 @@ const ResultScreen = ({
               <Tooltip content="快捷键：shift + enter">
                 <button
                   className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
-                  onClick={invisibleButtonHandler}
+                  onClick={dictationButtonHandler}
                 >
                   默写本章节
                 </button>
