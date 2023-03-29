@@ -37,7 +37,6 @@ const App: React.FC = () => {
 
   const currentChapter = useAtomValue(currentChapterAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const requestAnimationFrameRef = React.useRef<number>(0)
 
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
