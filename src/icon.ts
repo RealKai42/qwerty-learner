@@ -26,6 +26,7 @@ import {
   faThumbsUp,
   faTimes,
   faTimesCircle,
+  faEarthAmericas,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faWeixin } from '@fortawesome/free-brands-svg-icons'
 
@@ -58,4 +59,5 @@ library.add(
   faThumbsUp,
   faTimes,
   faTimesCircle,
+  faEarthAmericas,
 )

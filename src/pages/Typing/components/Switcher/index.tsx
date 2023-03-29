@@ -36,6 +36,12 @@ export default function Switcher() {
     }
   }
 
+  const changeTransVisibleState = () => {
+    if (dispatch) {
+      dispatch({ type: TypingStateActionType.TOGGLE_TRANS_VISIBLE })
+    }
+  }
+
   useHotkeys(
     'ctrl+m',
     (e) => {
@@ -77,6 +83,15 @@ export default function Switcher() {
     (e) => {
       e.preventDefault()
       changeDarkModeState()
+    },
+    { enableOnFormTags: true, preventDefault: true },
+    [],
+  )
+  useHotkeys(
+    'ctrl+t',
+    (e) => {
+      e.preventDefault()
+      changeTransVisibleState()
     },
     { enableOnFormTags: true, preventDefault: true },
     [],
@@ -126,6 +141,17 @@ export default function Switcher() {
           }}
         >
           <FontAwesomeIcon icon={state?.isWordVisible ? 'eye' : 'eye-slash'} fixedWidth />
+        </button>
+      </Tooltip>
+      <Tooltip content="开关释意显示（Ctrl + T）">
+        <button
+          className={`${state?.isTransVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          onClick={(e) => {
+            changeTransVisibleState()
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon="earth-americas" fixedWidth />
         </button>
       </Tooltip>
       <Tooltip content="开关音标显示（Ctrl + P）">

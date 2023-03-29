@@ -21,6 +21,7 @@ export type TypingState = {
   isFinished: boolean
   isShowSkip: boolean
   isWordVisible: boolean
+  isTransVisible: boolean
 }
 
 export const initialState: TypingState = {
@@ -40,6 +41,7 @@ export const initialState: TypingState = {
   isFinished: false,
   isShowSkip: false,
   isWordVisible: true,
+  isTransVisible: true,
 }
 
 export enum TypingStateActionType {
@@ -57,6 +59,7 @@ export enum TypingStateActionType {
   DICTATION_CHAPTER = 'DICTATION_CHAPTER',
   NEXT_CHAPTER = 'NEXT_CHAPTER',
   TOGGLE_WORD_VISIBLE = 'TOGGLE_WORD_VISIBLE',
+  TOGGLE_TRANS_VISIBLE = 'TOGGLE_TRANS_VISIBLE',
   TICK_TIMER = 'TICK_TIMER',
 }
 
@@ -75,6 +78,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.DICTATION_CHAPTER }
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
+  | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER }
 
 type Dispatch = (action: TypingStateAction) => void
@@ -197,6 +201,11 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
       return {
         ...state,
         isWordVisible: !state.isWordVisible,
+      }
+    case TypingStateActionType.TOGGLE_TRANS_VISIBLE:
+      return {
+        ...state,
+        isTransVisible: !state.isTransVisible,
       }
     case TypingStateActionType.TICK_TIMER: {
       const newTime = state.timerData.time + 1
