@@ -163,15 +163,13 @@ const App: React.FC = () => {
           <Header>
             <Tooltip content="词典章节切换">
               <NavLink
-                className="block rounded-lg px-4 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
+                className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
                 to="/gallery"
               >
                 {currentDictInfo.name} 第 {currentChapter + 1} 章
               </NavLink>
             </Tooltip>
-            <Tooltip content="发音切换">
-              <PronunciationSwitcher />
-            </Tooltip>
+            <PronunciationSwitcher />
             <Switcher />
             <Tooltip content="快捷键 Enter">
               <button

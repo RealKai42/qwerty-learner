@@ -124,7 +124,7 @@ const ResultScreen = () => {
               <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
                 <div className="customized-scrollbar z-20 ml-8 mr-1 flex h-80 flex-row flex-wrap content-start gap-4 overflow-y-auto overflow-x-hidden pr-7 pt-9">
                   {state.chapterData.wrongWordIndexes.map((index) => (
-                    <WordChip key={state.chapterData.words[index].name} word={state.chapterData.words[index]} />
+                    <WordChip key={`${index}-${state.chapterData.words[index].name}`} word={state.chapterData.words[index]} />
                   ))}
                 </div>
                 <div className="align-center flex w-full flex-row justify-start rounded-b-xl bg-indigo-200 px-4 dark:bg-indigo-400">
