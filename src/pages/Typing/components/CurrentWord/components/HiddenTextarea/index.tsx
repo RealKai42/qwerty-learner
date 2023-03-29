@@ -1,5 +1,5 @@
 import { TypingContext } from '@/pages/Typing/store'
-import { FormEvent, KeyboardEvent, useCallback, useContext, useEffect, useRef } from 'react'
+import { FormEvent, useCallback, useContext, useEffect, useRef } from 'react'
 
 export type HiddenTextareaProps = {
   updateInput: (updateObj: WordUpdateObj) => void
