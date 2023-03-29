@@ -9,7 +9,6 @@ export type ChapterData = {
   wrongWordIndexes: number[]
 }
 export type TimerData = {
-  startTime: Date
   time: number
   accuracy: number
   wpm: number
@@ -33,7 +32,6 @@ export const initialState: TypingState = {
     wrongWordIndexes: [],
   },
   timerData: {
-    startTime: new Date(),
     time: 0,
     accuracy: 0,
     wpm: 0,
@@ -201,8 +199,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
         isWordVisible: !state.isWordVisible,
       }
     case TypingStateActionType.TICK_TIMER: {
-      let newTime = Math.floor((Date.now() - state.timerData.startTime.getTime()) / 1000)
-      newTime = newTime === 0 ? 1 : newTime
+      const newTime = state.timerData.time + 1
       const inputSum =
         state.chapterData.correctCount + state.chapterData.wrongCount === 0
           ? 1

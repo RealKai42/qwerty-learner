@@ -141,15 +141,13 @@ const App: React.FC = () => {
 
   useEffect(() => {
     // 启动计时器
-    function tick() {
-      dispatch({ type: TypingStateActionType.TICK_TIMER })
-      requestAnimationFrameRef.current = requestAnimationFrame(tick)
-    }
+    let intervalId: number
     if (typingState.isTyping) {
-      tick()
+      intervalId = window.setInterval(() => {
+        dispatch({ type: TypingStateActionType.TICK_TIMER })
+      }, 1000)
     }
-
-    return () => cancelAnimationFrame(requestAnimationFrameRef.current)
+    return () => clearInterval(intervalId)
   }, [typingState.isTyping])
 
   return (
