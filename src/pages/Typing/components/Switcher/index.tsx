@@ -1,21 +1,19 @@
-import React from 'react'
+import { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Tooltip from '@/components/Tooltip'
 import { useAtom } from 'jotai'
 import { isOpenDarkModeAtom, keySoundsConfigAtom, randomConfigAtom, pronunciationConfigAtom, phoneticConfigAtom } from '@/store'
+import { TypingContext, TypingStateActionType } from '../../store'
 
-export type SwitcherPropsType = {
-  wordVisible: boolean
-  setWordVisible: React.Dispatch<React.SetStateAction<boolean>>
-}
-
-const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) => {
+export default function Switcher() {
   const [phoneticConfig, setPhoneticConfig] = useAtom(phoneticConfigAtom)
   const [keySoundConfig, setKeySoundConfig] = useAtom(keySoundsConfigAtom)
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
+
+  const { state, dispatch } = useContext(TypingContext) ?? {}
 
   const changePhoneticState = () => {
     setPhoneticConfig((old) => ({ ...old, isOpen: !old.isOpen }))
@@ -33,7 +31,9 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
     setPronunciationConfig((old) => ({ ...old, isLoop: !old.isLoop }))
   }
   const changeWordVisibleState = () => {
-    setWordVisible((old) => !old)
+    if (dispatch) {
+      dispatch({ type: TypingStateActionType.TOGGLE_WORD_VISIBLE })
+    }
   }
 
   useHotkeys(
@@ -42,6 +42,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
       e.preventDefault()
       changeKeySoundState()
     },
+    { enableOnFormTags: true, preventDefault: true },
     [],
   )
   useHotkeys(
@@ -50,6 +51,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
       e.preventDefault()
       changeWordVisibleState()
     },
+    { enableOnFormTags: true, preventDefault: true },
     [],
   )
   useHotkeys(
@@ -58,6 +60,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
       e.preventDefault()
       changePhoneticState()
     },
+    { enableOnFormTags: true, preventDefault: true },
     [],
   )
   useHotkeys(
@@ -66,6 +69,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
       e.preventDefault()
       changeRandomState()
     },
+    { enableOnFormTags: true, preventDefault: true },
     [],
   )
   useHotkeys(
@@ -74,6 +78,7 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
       e.preventDefault()
       changeDarkModeState()
     },
+    { enableOnFormTags: true, preventDefault: true },
     [],
   )
 
@@ -114,13 +119,13 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
       </Tooltip>
       <Tooltip content="开关英语显示（Ctrl + V）">
         <button
-          className={`${wordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeWordVisibleState()
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={wordVisible ? 'eye' : 'eye-slash'} fixedWidth />
+          <FontAwesomeIcon icon={state?.isWordVisible ? 'eye' : 'eye-slash'} fixedWidth />
         </button>
       </Tooltip>
       <Tooltip content="开关音标显示（Ctrl + P）">
@@ -148,5 +153,3 @@ const Switcher: React.FC<SwitcherPropsType> = ({ wordVisible, setWordVisible }) 
     </div>
   )
 }
-
-export default Switcher

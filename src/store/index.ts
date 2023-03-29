@@ -52,8 +52,6 @@ export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.m
 
 export const isShowSkipAtom = atom(false)
 
-export const isChapterEndAtom = atom(false)
-
 export const isInDevModeAtom = atom(false)
 
 export const infoPanelStateAtom = atom<InfoPanelState>({

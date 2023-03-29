@@ -1,22 +1,16 @@
-import { useMemo, useState, useCallback, useEffect, useLayoutEffect, useRef } from 'react'
+import { useMemo, useState, useCallback, useEffect, useRef, useContext } from 'react'
 import Letter from './Letter'
 import useKeySounds from '@/hooks/useKeySounds'
 import { LetterState } from './Letter'
-import { isChineseSymbol, isLegal } from '@/utils'
 import style from './index.module.css'
 import WordSound from '../WordSound'
-import { useAtomValue, useSetAtom } from 'jotai'
-import { isShowSkipAtom, pronunciationIsOpenAtom } from '@/store'
+import { useAtomValue } from 'jotai'
+import { pronunciationIsOpenAtom } from '@/store'
 import { WordStat } from '@/typings'
 import dayjs from 'dayjs'
 import { EXPLICIT_SPACE } from '@/constants'
-
-export type WordProps = {
-  word: string
-  onFinish: (everWrong: boolean, wordStat: WordStat) => void
-  isStart: boolean
-  wordVisible: boolean
-}
+import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
+import HiddenTextarea, { WordUpdateObj } from '../HiddenTextarea'
 
 const initialStatInfo = {
   headword: '',
@@ -27,153 +21,171 @@ const initialStatInfo = {
   countTypo: 0,
 }
 
-export default function Word({ word, isStart, onFinish, wordVisible }: WordProps) {
+type WordState = {
+  inputWord: string
+  statesList: LetterState[]
+  isFinish: boolean
+  hasWrong: boolean
+  wrongRepeat: number
+}
+
+const initialWordState: WordState = {
+  inputWord: '',
+  statesList: [],
+  isFinish: false,
+  hasWrong: false,
+  wrongRepeat: 0,
+}
+
+export type WordProps = {
+  word: string
+  onFinish: (wordStat: WordStat) => void
+}
+
+export default function Word({ word, onFinish }: WordProps) {
+  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+  const { state, dispatch } = useContext(TypingContext)!
+  const [wordState, setWordState] = useState<WordState>(initialWordState)
+  const wordStat = useRef<WordStat>(initialStatInfo)
+  const wordVisible = state.isWordVisible
+
   const displayWord = useMemo(() => {
+    // run only when word changes
     let wordString = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
     wordString = wordString.replace(new RegExp('…', 'g'), '..')
+    setWordState(() => ({ ...initialWordState, statesList: new Array(wordString.length).fill('normal') }))
+    wordStat.current = { ...initialStatInfo }
+    wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
     return wordString
   }, [word])
 
-  const [inputWord, setInputWord] = useState('')
-  const [statesList, setStatesList] = useState<LetterState[]>([])
-  const [isFinish, setIsFinish] = useState(false)
-  const [hasWrong, setHasWrong] = useState(false)
-  const [everWrong, setEverWrong] = useState(false)
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
-  const [wrongRepeat, setWrongRepeat] = useState(0)
-  const setIsShowSkip = useSetAtom(isShowSkipAtom)
 
-  const wordStat = useRef<WordStat>(initialStatInfo)
+  const updateInput = useCallback((updateObj: WordUpdateObj) => {
+    switch (updateObj.type) {
+      case 'add':
+        if (updateObj.value === ' ') {
+          updateObj.event.preventDefault()
+          setWordState((state) => ({
+            ...state,
+            inputWord: state.inputWord + EXPLICIT_SPACE,
+          }))
+        } else {
+          setWordState((state) => ({
+            ...state,
+            inputWord: state.inputWord + updateObj.value,
+          }))
+        }
 
-  const onKeydown = useCallback((e: KeyboardEvent) => {
-    const char = e.key
-    if (char === ' ') {
-      // 防止用户惯性按空格导致页面跳动
-      e.preventDefault()
-      setInputWord((value) => (value += EXPLICIT_SPACE))
-    } else if (isChineseSymbol(char)) {
-      alert('您正在使用中文输入法输入，请关闭输入法')
-    } else if (char === 'Backspace') {
-      setInputWord((value) => value.substr(0, value.length - 1))
-    } else if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
-      wordStat.current.countInput += 1
-      setInputWord((value) => (value += char))
+        break
+
+      default:
+        console.warn('unknown update type', updateObj)
     }
   }, [])
 
-  // useEffect when word change
   useEffect(() => {
-    setEverWrong(false)
-    // reset wrongRepeat to 0 when word change
-    setWrongRepeat(0)
-    wordStat.current = { ...initialStatInfo }
-    wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
-  }, [word])
-
-  useEffect(() => {
-    if (isStart && !isFinish) {
-      window.addEventListener('keydown', onKeydown)
+    const inputLength = wordState.inputWord.length
+    if (inputLength === 0) {
+      return
     }
-    return () => {
-      window.removeEventListener('keydown', onKeydown)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isStart])
 
-  // when finished the word
-  useEffect(() => {
-    if (isFinish) {
-      // prepare wordStat
-      wordStat.current.timeEnd = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
-      wordStat.current.headword = word
-      wordStat.current.countCorrect = wordStat.current.countInput - wordStat.current.countTypo
-
-      playHintSound()
-      // reset state
-      setInputWord('')
-      setStatesList([])
-      setIsFinish(false)
-      setHasWrong(false)
-      setEverWrong(false)
-
-      onFinish(everWrong, wordStat.current)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isFinish])
-
-  // if wrongRepeat reaches 4, set skipState to true
-  useEffect(() => {
-    if (wrongRepeat >= 4) {
-      setIsShowSkip(true)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [wrongRepeat])
-
-  // update words state
-  useLayoutEffect(() => {
-    let hasWrong = false
-    const wordLength = displayWord.length,
-      inputWordLength = inputWord.length
-    const statesList: LetterState[] = []
-
-    for (let i = 0; i < wordLength && i < inputWordLength; i++) {
-      if (displayWord[i] === inputWord[i]) {
-        statesList.push('correct')
-        if (i === inputWordLength - 1) {
-          playKeySound()
+    const inputChar = wordState.inputWord[inputLength - 1]
+    const correctChar = displayWord[inputLength - 1]
+    if (inputChar === correctChar) {
+      if (inputLength >= displayWord.length) {
+        const isAllCorrect = wordState.statesList.slice(0, -1).every((t) => t === 'correct')
+        if (isAllCorrect) {
+          setWordState((state) => ({
+            ...state,
+            statesList: state.statesList.map((t, i) => (i === inputLength - 1 ? 'correct' : t)),
+            isFinish: true,
+          }))
+          playHintSound()
         }
       } else {
-        hasWrong = true
-        statesList.push('wrong')
-        setHasWrong(true)
-        setEverWrong(true)
-        break
+        setWordState((state) => ({
+          ...state,
+          statesList: state.statesList.map((t, i) => (i === inputLength - 1 ? 'correct' : t)),
+        }))
+        playKeySound()
       }
-    }
 
-    if (!hasWrong && inputWordLength >= wordLength) {
-      setIsFinish(true)
-    }
-    setStatesList(statesList)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [inputWord, displayWord])
-
-  // when has wrong
-  useEffect(() => {
-    if (hasWrong) {
+      wordStat.current.countCorrect += 1
+      dispatch({ type: TypingStateActionType.INCREASE_CORRECT_COUNT })
+    } else {
+      setWordState((state) => ({
+        ...state,
+        statesList: state.statesList.map((t, i) => (i === inputLength - 1 ? 'wrong' : t)),
+        hasWrong: true,
+      }))
       playBeepSound()
+      dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
+      dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
       wordStat.current.countTypo += 1
-      setWrongRepeat((value) => value + 1) // wrongRepeat + 1 when has wrong
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wordState.inputWord, displayWord, dispatch])
+
+  useEffect(() => {
+    if (wordState.hasWrong) {
+      setWordState((state) => ({
+        ...state,
+        wrongRepeat: state.wrongRepeat + 1,
+      }))
+
       const timer = setTimeout(() => {
-        setInputWord('')
-        setHasWrong(false)
+        setWordState((state) => ({
+          ...state,
+          inputWord: '',
+          statesList: new Array(displayWord.length).fill('normal'),
+          hasWrong: false,
+        }))
       }, 300)
 
       return () => {
         clearTimeout(timer)
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hasWrong])
+  }, [wordState.hasWrong, displayWord.length])
+
+  useEffect(() => {
+    if (wordState.isFinish) {
+      // prepare wordStat
+      wordStat.current.timeEnd = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+      wordStat.current.headword = word
+      wordStat.current.countInput = wordStat.current.countCorrect + wordStat.current.countTypo
+      onFinish(wordStat.current)
+    }
+  }, [wordState.isFinish, word, onFinish])
+
+  useEffect(() => {
+    if (wordState.wrongRepeat >= 4) {
+      dispatch({ type: TypingStateActionType.SET_IS_SKIP, payload: true })
+    }
+  }, [wordState.wrongRepeat, dispatch])
 
   return (
-    <div className="flex justify-center pt-4 pb-1">
-      <div className="relative">
-        <div className={`flex items-center justify-center ${hasWrong ? style.wrong : ''}`}>
-          {displayWord.split('').map((t, index) => {
-            return (
-              <Letter
-                key={`${index}-${t}`}
-                letter={t}
-                visible={statesList[index] === 'correct' ? true : wordVisible}
-                state={statesList[index]}
-              />
-            )
-          })}
+    <>
+      <HiddenTextarea updateInput={updateInput} />
+      <div className="flex justify-center pt-4 pb-1">
+        <div className="relative">
+          <div className={`flex items-center justify-center ${wordState.hasWrong ? style.wrong : ''}`}>
+            {displayWord.split('').map((t, index) => {
+              return (
+                <Letter
+                  key={`${index}-${t}`}
+                  letter={t}
+                  visible={wordState.statesList[index] === 'correct' ? true : wordVisible}
+                  state={wordState.statesList[index]}
+                />
+              )
+            })}
+          </div>
+          {pronunciationIsOpen && <WordSound word={word} inputWord={wordState.inputWord} />}
         </div>
-        {pronunciationIsOpen && <WordSound word={word} inputWord={inputWord} />}
       </div>
-    </div>
+    </>
   )
 }
