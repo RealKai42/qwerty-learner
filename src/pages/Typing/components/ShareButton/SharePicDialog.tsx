@@ -10,6 +10,7 @@ import { TypingContext } from '../../store'
 import { useAtomValue } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import { recordShareAction } from '@/utils'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PIC_RATIO = 3
 const PIC_LIST = [Image1, Image2, Image3]
@@ -51,6 +52,8 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const currentChapter = useAtomValue(currentChapterAtom)
 
+  const dialogRef = useRef<HTMLDivElement>(null)
+
   const Pic = useMemo(() => PIC_LIST[Math.floor(randomChoose.picRandom * PIC_LIST.length)], [randomChoose.picRandom])
   const promote = useMemo(() => PROMOTE_LIST[Math.floor(randomChoose.promoteRandom * PROMOTE_LIST.length)], [randomChoose.promoteRandom])
 
@@ -71,10 +74,14 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
     }
   }
 
+  const handleClose = () => {
+    setShowState(false)
+  }
+
   return (
     <>
       <Transition.Root show={showState}>
-        <Dialog as="div" className="relative z-10" onClose={() => setShowState(false)}>
+        <Dialog as="div" className="relative z-10" onClose={handleClose} initialFocus={dialogRef}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -100,6 +107,9 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
               >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-large bg-white text-left shadow-xl transition-all">
                   <div className="flex flex-col items-center justify-center pl-20 pr-14 pt-20 pb-10">
+                    <button className="absolute top-5 right-7" onClick={handleClose}>
+                      <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
+                    </button>
                     <div className="h-152 w-116">
                       {imageURL ? (
                         <img src={imageURL} className="h-auto w-full" />
@@ -121,7 +131,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                         </div>
                       )}
                     </div>
-                    <button onClick={handleDownload} className="btn-primary mt-10 mr-9 h-10">
+                    <button onClick={handleDownload} ref={dialogRef} className="btn-primary mt-10 mr-9 h-10">
                       保存
                     </button>
                   </div>
