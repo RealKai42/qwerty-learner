@@ -16,7 +16,9 @@
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
     "eslint": "^8.35.0",
+    "file-saver": "^2.0.5",
     "howler": "^2.2.3",
+    "html-to-image": "^1.11.11",
     "jotai": "^2.0.3",
     "lodash": "^4.17.20",
     "mixpanel-browser": "^2.45.0",
@@ -81,6 +83,7 @@
     "prettier-plugin-tailwindcss": "^0.2.3",
     "tailwindcss": "^3.2.6",
     "vite": "^4.1.1",
-    "vite-plugin-svgr": "^2.4.0"
+    "vite-plugin-svgr": "^2.4.0",
+    "@types/file-saver": "^2.0.5"
   }
 }
