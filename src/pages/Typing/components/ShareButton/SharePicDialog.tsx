@@ -69,7 +69,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
 
   const handleDownload = () => {
     if (imageURL) {
-      saveAs(imageURL, 'qwerty-learner.png')
+      saveAs(imageURL, 'Qwerty-learner.png')
       recordShareAction('download')
     }
   }
