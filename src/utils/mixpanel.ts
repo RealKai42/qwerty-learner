@@ -18,3 +18,8 @@ export function recordOpenInfoPanelAction(type: InfoPanelType, location: openInf
   }
   mixpanel.track('openInfoPanel', props)
 }
+
+export type shareType = 'open' | 'download'
+export function recordShareAction(type: shareType) {
+  mixpanel.track('share', { type })
+}

@@ -11,6 +11,7 @@ import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom } from '@/s
 import { recordOpenInfoPanelAction } from '@/utils'
 import { InfoPanelType } from '@/typings'
 import { TypingContext, TypingStateActionType } from '../../store'
+import ShareButton from '../ShareButton'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -132,6 +133,7 @@ const ResultScreen = () => {
                 </div>
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-2 text-xl">
+                <ShareButton />
                 <span
                   className="cursor-pointer"
                   onClick={(e) => {
