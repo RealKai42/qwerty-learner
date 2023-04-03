@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import Speed from './components/Speed'
 import Loading from '@/components/Loading'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
-import { IsDesktop } from '@/utils'
+import { IsDesktop, isLegal } from '@/utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Switcher from './components/Switcher'
 import { useWordList } from './hooks/useWordList'
@@ -68,7 +68,7 @@ const App: React.FC = () => {
     if (!typingState.isTyping) {
       const onKeyDown = (e: KeyboardEvent) => {
         e.preventDefault()
-        if (e.key !== 'Enter') {
+        if (e.key !== 'Enter' && isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
         }
       }
