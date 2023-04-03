@@ -19,9 +19,7 @@ const Tooltip = ({ children, content, className, placement = 'top' }: TooltipPro
           visible ? 'opacity-100' : 'opacity-0'
         } ${placementClasses} pointer-events-none absolute left-1/2 flex -translate-x-1/2 transform items-center justify-center transition-opacity`}
       >
-        <span className="whitespace-nowrap rounded-lg bg-white py-1 px-2 text-xs text-gray-500 shadow-md dark:bg-gray-700 dark:text-gray-300">
-          {content}
-        </span>
+        <span className="tooltip">{content}</span>
       </div>
     </div>
   )

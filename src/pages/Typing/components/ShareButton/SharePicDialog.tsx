@@ -52,7 +52,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const currentChapter = useAtomValue(currentChapterAtom)
 
-  const dialogRef = useRef<HTMLDivElement>(null)
+  const dialogFocusRef = useRef<HTMLButtonElement>(null)
 
   const Pic = useMemo(() => PIC_LIST[Math.floor(randomChoose.picRandom * PIC_LIST.length)], [randomChoose.picRandom])
   const promote = useMemo(() => PROMOTE_LIST[Math.floor(randomChoose.promoteRandom * PROMOTE_LIST.length)], [randomChoose.promoteRandom])
@@ -81,7 +81,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
   return (
     <>
       <Transition.Root show={showState}>
-        <Dialog as="div" className="relative z-10" onClose={handleClose} initialFocus={dialogRef}>
+        <Dialog as="div" className="relative z-10" onClose={handleClose} initialFocus={dialogFocusRef}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -105,7 +105,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-large bg-white text-left shadow-xl transition-all">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-large bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
                   <div className="flex flex-col items-center justify-center pl-20 pr-14 pt-20 pb-10">
                     <button className="absolute top-5 right-7" onClick={handleClose}>
                       <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
@@ -131,7 +131,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                         </div>
                       )}
                     </div>
-                    <button onClick={handleDownload} ref={dialogRef} className="btn-primary mt-10 mr-9 h-10">
+                    <button onClick={handleDownload} ref={dialogFocusRef} className="btn-primary mt-10 mr-9 h-10">
                       保存
                     </button>
                   </div>
