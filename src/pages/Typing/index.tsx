@@ -65,6 +65,22 @@ const App: React.FC = () => {
   )
 
   useEffect(() => {
+    if (!typingState.isTyping) {
+      const onKeyDown = (e: KeyboardEvent) => {
+        e.preventDefault()
+        if (e.key !== 'Enter') {
+          dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
+        }
+      }
+      window.addEventListener('keydown', onKeyDown)
+
+      return () => {
+        window.removeEventListener('keydown', onKeyDown)
+      }
+    }
+  }, [typingState.isTyping])
+
+  useEffect(() => {
     if (words !== undefined) {
       dispatch({
         type: TypingStateActionType.SETUP_CHAPTER,
