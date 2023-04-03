@@ -67,8 +67,9 @@ const App: React.FC = () => {
   useEffect(() => {
     if (!typingState.isTyping) {
       const onKeyDown = (e: KeyboardEvent) => {
-        e.preventDefault()
-        if (e.key !== 'Enter' && isLegal(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        console.log(e.key)
+        if (e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
+          e.preventDefault()
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
         }
       }
