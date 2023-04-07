@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Tooltip from '@/components/Tooltip'
 import { useAtom } from 'jotai'
-import { isOpenDarkModeAtom, keySoundsConfigAtom, randomConfigAtom, pronunciationConfigAtom, phoneticConfigAtom } from '@/store'
+import { isOpenDarkModeAtom, randomConfigAtom, pronunciationConfigAtom, phoneticConfigAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
+import SoundSwitcher from '../SoundSwitcher'
 
 export default function Switcher() {
   const [phoneticConfig, setPhoneticConfig] = useAtom(phoneticConfigAtom)
-  const [keySoundConfig, setKeySoundConfig] = useAtom(keySoundsConfigAtom)
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
@@ -18,9 +18,7 @@ export default function Switcher() {
   const changePhoneticState = () => {
     setPhoneticConfig((old) => ({ ...old, isOpen: !old.isOpen }))
   }
-  const changeKeySoundState = () => {
-    setKeySoundConfig((old) => ({ ...old, isOpen: !old.isOpen }))
-  }
+
   const changeRandomState = () => {
     setRandomConfig((old) => ({ ...old, isOpen: !old.isOpen }))
   }
@@ -42,15 +40,6 @@ export default function Switcher() {
     }
   }
 
-  useHotkeys(
-    'ctrl+m',
-    (e) => {
-      e.preventDefault()
-      changeKeySoundState()
-    },
-    { enableOnFormTags: true, preventDefault: true },
-    [],
-  )
   useHotkeys(
     'ctrl+v',
     (e) => {
@@ -121,17 +110,7 @@ export default function Switcher() {
           <FontAwesomeIcon icon={'rotate'} fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关键盘声音（Ctrl + M）">
-        <button
-          className={`${keySoundConfig.isOpen ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
-          onClick={(e) => {
-            changeKeySoundState()
-            e.currentTarget.blur()
-          }}
-        >
-          <FontAwesomeIcon icon={keySoundConfig.isOpen ? 'volume-up' : 'volume-mute'} fixedWidth />
-        </button>
-      </Tooltip>
+      <SoundSwitcher />
       <Tooltip content="开关英语显示（Ctrl + V）">
         <button
           className={`${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}

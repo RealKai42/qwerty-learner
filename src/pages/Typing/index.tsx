@@ -218,7 +218,7 @@ const App: React.FC = () => {
                       <Progress order={typingState.chapterData.index} wordsLength={typingState.chapterData.words.length} />
                     </>
                   ) : (
-                    <h3 className="animate-pulse pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>
+                    <h3 className="animate-pulse select-none pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>
                   )}
                   <Speed />
                 </>

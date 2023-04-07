@@ -37,6 +37,10 @@ body,
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+.shadow-upper {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+}
+
 .customized-scrollbar::-webkit-scrollbar {
   width: 6px;
   background: inherit;
@@ -66,7 +70,7 @@ body,
 
   .word-chip-tooltip {
     @apply pointer-events-none flex items-center justify-center whitespace-nowrap rounded-lg
-      bg-white py-1 px-2 text-xs text-gray-500
+      bg-white px-2 py-1 text-xs text-gray-500
       shadow-md dark:bg-gray-800 dark:text-gray-300;
   }
 
@@ -75,6 +79,21 @@ body,
   }
 
   .tooltip {
-    @apply whitespace-nowrap rounded-lg bg-white py-1 px-2 text-xs text-gray-500 shadow-md dark:bg-gray-700 dark:text-gray-300;
+    @apply whitespace-nowrap rounded-lg bg-white px-2 py-1 text-xs text-gray-500 shadow-md dark:bg-gray-700 dark:text-gray-300;
+  }
+
+  .switch-root {
+    @apply relative inline-flex h-6 w-12 shrink-0 cursor-pointer items-center rounded-full border-3 border-transparent bg-gray-300 transition-colors duration-200 ease-in-out focus:outline-none;
+  }
+
+  .switch-root[data-headlessui-state='checked'] {
+    @apply bg-indigo-400;
+  }
+
+  .switch-thumb {
+    @apply pointer-events-none inline-block h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out;
+  }
+  [data-headlessui-state='checked'] .switch-thumb {
+    @apply translate-x-[25px];
   }
 }
