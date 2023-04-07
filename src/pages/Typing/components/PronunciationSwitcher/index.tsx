@@ -1,27 +1,36 @@
 import { LANG_PRON_MAP } from '@/resources/soundResource'
-import { useAtomValue, useSetAtom } from 'jotai'
+import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { currentDictInfoAtom, pronunciationConfigAtom } from '@/store'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Listbox } from '@headlessui/react'
 import classNames from 'classnames'
 
 const PronunciationSwitcher = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const setPronunciationConfig = useSetAtom(pronunciationConfigAtom)
-  const pronunciationList = LANG_PRON_MAP[currentDictInfo.language].pronunciation
+  const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
+  const pronunciationList = useMemo(() => LANG_PRON_MAP[currentDictInfo.language].pronunciation, [currentDictInfo.language])
+
   const itemList = [...pronunciationList, { pron: 'false', name: '关闭' }]
   const [selectedItem, setSelectedItem] = useState(itemList[0])
 
   useEffect(() => {
     const pronIndex = currentDictInfo.defaultPronIndex || LANG_PRON_MAP[currentDictInfo.language].defaultPronIndex
-    const defaultPron = LANG_PRON_MAP[currentDictInfo.language].pronunciation[pronIndex]
-    setPronunciationConfig((old) => ({
-      ...old,
-      type: defaultPron.pron,
-      name: defaultPron.name,
-    }))
-    setSelectedItem(defaultPron)
-  }, [currentDictInfo.defaultPronIndex, currentDictInfo.language, setPronunciationConfig])
+    const defaultPron = pronunciationList[pronIndex]
+
+    // only change the type and name, keep the isOpen state
+    const index = pronunciationList.findIndex((item) => item.pron === pronunciationConfig.type)
+    if (index !== -1) {
+      setSelectedItem(pronunciationList[index])
+      return
+    } else {
+      setPronunciationConfig((old) => ({
+        ...old,
+        type: defaultPron.pron,
+        name: defaultPron.name,
+      }))
+      setSelectedItem(defaultPron)
+    }
+  }, [currentDictInfo.defaultPronIndex, currentDictInfo.language, setPronunciationConfig, pronunciationList, pronunciationConfig.type])
 
   const setSelectedPron = useCallback(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
