@@ -29,7 +29,7 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
       <p className="text-sm font-bold text-gray-600 dark:text-white dark:text-opacity-60">{dictionary.length} 词</p>
       {currentDictId === dictionary.id ? (
         <FontAwesomeIcon
-          className="absolute -right-4 -bottom-4 text-6xl text-green-500 opacity-60 dark:text-green-300"
+          className="absolute -bottom-4 -right-4 text-6xl text-green-500 opacity-60 dark:text-green-300"
           icon={['fas', 'check-circle']}
           fixedWidth
         />

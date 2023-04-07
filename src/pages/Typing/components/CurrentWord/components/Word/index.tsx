@@ -176,7 +176,7 @@ export default function Word({ word, onFinish }: WordProps) {
   return (
     <>
       <HiddenTextarea updateInput={updateInput} />
-      <div className="flex justify-center pt-4 pb-1">
+      <div className="flex justify-center pb-1 pt-4">
         <div className="relative">
           <div className={`flex items-center justify-center ${wordState.hasWrong ? style.wrong : ''}`}>
             {displayWord.split('').map((t, index) => {

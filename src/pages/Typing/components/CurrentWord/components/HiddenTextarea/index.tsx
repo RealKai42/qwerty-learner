@@ -41,7 +41,7 @@ export default function HiddenTextarea({ updateInput }: HiddenTextareaProps) {
 
   return (
     <textarea
-      className="absolute top-0 left-0 m-0 h-0 w-0 appearance-none overflow-hidden border-0 p-0 focus:outline-none"
+      className="absolute left-0 top-0 m-0 h-0 w-0 appearance-none overflow-hidden border-0 p-0 focus:outline-none"
       ref={textareaRef}
       autoFocus
       spellCheck="false"

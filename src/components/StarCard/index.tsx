@@ -61,7 +61,7 @@ export default function StarCard() {
             </span>
           </div>
         ) : (
-          <div className="flex pt-6 pb-0">
+          <div className="flex pb-0 pt-6">
             <button
               onClick={onClickWantStar}
               className="rounded-lg bg-indigo-600 px-6 py-2 text-lg text-white transition-colors duration-300 focus:outline-none"
@@ -86,8 +86,8 @@ export default function StarCard() {
       leaveTo="translate-x-full -translate-y-full"
       className="fixed  inset-0 z-20 flex h-0 justify-center"
     >
-      <div className=" fixed top-4 right-1 flex w-150 flex-col items-center justify-evenly rounded-2xl bg-white p-12 shadow-2xl dark:bg-gray-800">
-        <div className="absolute top-3 right-3">
+      <div className=" fixed right-1 top-4 flex w-150 flex-col items-center justify-evenly rounded-2xl bg-white p-12 shadow-2xl dark:bg-gray-800">
+        <div className="absolute right-3 top-3">
           {isCounting && (
             <span className="m-1.5">
               <span className="text-indigo-600">{countdown}s</span>

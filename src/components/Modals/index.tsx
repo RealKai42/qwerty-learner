@@ -50,7 +50,7 @@ const Modals: React.FC<ModalsProps> = ({
 
   return (
     <div className="fixed inset-0 z-10 overflow-y-auto">
-      <div className="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+      <div className="flex min-h-screen items-end justify-center px-4 pb-20 pt-4 text-center sm:block sm:p-0">
         <Transition
           show={state}
           enter="ease-out duration-30"
@@ -86,13 +86,13 @@ const Modals: React.FC<ModalsProps> = ({
               aria-modal="true"
               aria-labelledby="modal-headline"
             >
-              <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
                   <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-indigo-100 dark:bg-indigo-900 sm:mx-0 sm:h-10 sm:w-10">
                     <FontAwesomeIcon icon="book-reader" className="h-10 w-10 stroke-current text-indigo-500 dark:text-indigo-400" />
                   </div>
 
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                     <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white dark:text-opacity-70" id="modal-headline">
                       {title}
                     </h3>
