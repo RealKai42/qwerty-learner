@@ -13,7 +13,7 @@ export const currentDictInfoAtom = atom<Dictionary>((get) => {
   return dictionary || null
 })
 
-export const currentChapterAtom = atomWithStorage('currentChapter', 1)
+export const currentChapterAtom = atomWithStorage('currentChapter', 0)
 
 export const keySoundsConfigAtom = atomWithStorage('keySoundsConfig', {
   isOpen: true,

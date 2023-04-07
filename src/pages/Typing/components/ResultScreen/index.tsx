@@ -22,7 +22,7 @@ const ResultScreen = () => {
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
 
   const isLastChapter = useMemo(() => {
-    return currentChapter >= currentDictInfo.length - 1
+    return currentChapter >= currentDictInfo.chapterCount - 1
   }, [currentChapter, currentDictInfo])
 
   const correctRate = useMemo(() => {
@@ -49,30 +49,26 @@ const ResultScreen = () => {
     return `${minuteString}:${secondString}`
   }, [state.timerData.time])
 
-  const repeatButtonHandler = () => {
+  const repeatButtonHandler = useCallback(() => {
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
-  }
+  }, [dispatch])
 
-  const dictationButtonHandler = () => {
+  const dictationButtonHandler = useCallback(() => {
     dispatch({ type: TypingStateActionType.DICTATION_CHAPTER })
-  }
+  }, [dispatch])
 
-  const nextButtonHandler = () => {
-    setCurrentChapter((old) => old + 1)
-    dispatch({ type: TypingStateActionType.NEXT_CHAPTER })
-  }
-
-  const exitButtonHandler = () => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
-  }
-
-  useHotkeys('enter', () => {
-    // If this is the last chapter, do nothing.
-    if (isLastChapter) {
-      return
-    } else {
-      nextButtonHandler()
+  const nextButtonHandler = useCallback(() => {
+    if (!isLastChapter) {
+      setCurrentChapter((old) => old + 1)
+      dispatch({ type: TypingStateActionType.NEXT_CHAPTER })
     }
+  }, [dispatch, isLastChapter, setCurrentChapter])
+
+  const exitButtonHandler = useCallback(() => {
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
+  }, [dispatch])
+  useHotkeys('enter', () => {
+    nextButtonHandler()
   })
 
   useHotkeys('space', () => {
@@ -174,15 +170,16 @@ const ResultScreen = () => {
                   重复本章节
                 </button>
               </Tooltip>
-              <Tooltip content="快捷键：enter">
-                <button
-                  className={`btn-primary { isLastChapter ? 'cursor-not-allowed opacity-50' : ''} h-12 text-base font-bold `}
-                  onClick={nextButtonHandler}
-                  disabled={isLastChapter}
-                >
-                  下一章节
-                </button>
-              </Tooltip>
+              {!isLastChapter && (
+                <Tooltip content="快捷键：enter">
+                  <button
+                    className={`btn-primary { isLastChapter ? 'cursor-not-allowed opacity-50' : ''} h-12 text-base font-bold `}
+                    onClick={nextButtonHandler}
+                  >
+                    下一章节
+                  </button>
+                </Tooltip>
+              )}
             </div>
           </div>
         </div>

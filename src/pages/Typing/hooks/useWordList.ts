@@ -1,4 +1,4 @@
-import { useAtomValue } from 'jotai'
+import { useAtom, useAtomValue } from 'jotai'
 import cet4 from '@/assets/CET4_T.json'
 import { shuffle } from 'lodash'
 import { useMemo } from 'react'
@@ -18,8 +18,14 @@ export type UseWordListResult = {
  */
 export function useWordList(): UseWordListResult {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const currentChapter = useAtomValue(currentChapterAtom)
+  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+
+  // Reset current chapter to 0, when currentChapter is greater than chapterCount.
+  if (currentChapter >= currentDictInfo.chapterCount) {
+    setCurrentChapter(0)
+  }
+
   const { data: wordList, error, isLoading } = useSWR([currentDictInfo.url, currentDictInfo.id], ([url, id]) => wordListFetcher(url, id))
 
   const words = useMemo(
