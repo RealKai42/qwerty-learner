@@ -85,6 +85,9 @@ export default function Switcher() {
 
   return (
     <div className="flex items-center justify-center space-x-3">
+      <Tooltip content="音效设置">
+        <SoundSwitcher />
+      </Tooltip>
       <Tooltip content="开关单词乱序（Ctrl + U）">
         <button
           className={`${randomConfig.isOpen ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
@@ -95,9 +98,6 @@ export default function Switcher() {
         >
           <FontAwesomeIcon icon="random" fixedWidth />
         </button>
-      </Tooltip>
-      <Tooltip content="音效设置">
-        <SoundSwitcher />
       </Tooltip>
       <Tooltip content="开关英语显示（Ctrl + V）">
         <button
