@@ -34,8 +34,7 @@ export default function Switcher() {
 
   useHotkeys(
     'ctrl+v',
-    (e) => {
-      e.preventDefault()
+    () => {
       changeWordVisibleState()
     },
     { enableOnFormTags: true, preventDefault: true },
@@ -44,8 +43,7 @@ export default function Switcher() {
 
   useHotkeys(
     'ctrl+u',
-    (e) => {
-      e.preventDefault()
+    () => {
       changeRandomState()
     },
     { enableOnFormTags: true, preventDefault: true },
@@ -53,8 +51,7 @@ export default function Switcher() {
   )
   useHotkeys(
     'ctrl+d',
-    (e) => {
-      e.preventDefault()
+    () => {
       changeDarkModeState()
     },
     { enableOnFormTags: true, preventDefault: true },
@@ -62,8 +59,7 @@ export default function Switcher() {
   )
   useHotkeys(
     'ctrl+t',
-    (e) => {
-      e.preventDefault()
+    () => {
       changeTransVisibleState()
     },
     { enableOnFormTags: true, preventDefault: true },

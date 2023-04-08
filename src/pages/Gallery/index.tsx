@@ -15,9 +15,13 @@ const GalleryPage: React.FC = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const groups = Object.entries(groupBy(dictionaries, (dict) => dict.category))
   const navigate = useNavigate()
-  useHotkeys('enter,esc', () => {
-    navigate('/')
-  })
+  useHotkeys(
+    'enter,esc',
+    () => {
+      navigate('/')
+    },
+    { preventDefault: true },
+  )
 
   return (
     <Layout>
