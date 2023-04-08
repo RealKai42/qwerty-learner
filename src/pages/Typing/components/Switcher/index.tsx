@@ -3,20 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Tooltip from '@/components/Tooltip'
 import { useAtom } from 'jotai'
-import { isOpenDarkModeAtom, randomConfigAtom, phoneticConfigAtom } from '@/store'
+import { isOpenDarkModeAtom, randomConfigAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
 import SoundSwitcher from '../SoundSwitcher'
 
 export default function Switcher() {
-  const [phoneticConfig, setPhoneticConfig] = useAtom(phoneticConfigAtom)
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   const { state, dispatch } = useContext(TypingContext) ?? {}
-
-  const changePhoneticState = () => {
-    setPhoneticConfig((old) => ({ ...old, isOpen: !old.isOpen }))
-  }
 
   const changeRandomState = () => {
     setRandomConfig((old) => ({ ...old, isOpen: !old.isOpen }))
@@ -46,15 +41,7 @@ export default function Switcher() {
     { enableOnFormTags: true, preventDefault: true },
     [],
   )
-  useHotkeys(
-    'ctrl+p',
-    (e) => {
-      e.preventDefault()
-      changePhoneticState()
-    },
-    { enableOnFormTags: true, preventDefault: true },
-    [],
-  )
+
   useHotkeys(
     'ctrl+u',
     (e) => {
@@ -119,17 +106,6 @@ export default function Switcher() {
           }}
         >
           <FontAwesomeIcon icon="earth-americas" fixedWidth />
-        </button>
-      </Tooltip>
-      <Tooltip content="开关音标显示（Ctrl + P）">
-        <button
-          className={`${phoneticConfig.isOpen ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
-          onClick={(e) => {
-            changePhoneticState()
-            e.currentTarget.blur()
-          }}
-        >
-          <FontAwesomeIcon icon="assistive-listening-systems" fixedWidth />
         </button>
       </Tooltip>
       <Tooltip content="开关深色模式（Ctrl + D）">
