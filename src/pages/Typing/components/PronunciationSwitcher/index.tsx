@@ -96,9 +96,11 @@ const PronunciationSwitcher = () => {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel className="absolute left-1/2 z-10 mt-2 flex max-w-max -translate-x-1/2 px-4 ">
-              <div className="shadow-upper box-border flex w-60 select-none flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 drop-shadow transition duration-1000 ease-in-out">
+              <div className="shadow-upper box-border flex w-60 select-none flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 drop-shadow transition duration-1000 ease-in-out dark:bg-gray-800">
                 <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                  <span className="text-sm font-medium font-normal leading-5 text-gray-900">开关单词发音</span>
+                  <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                    开关单词发音
+                  </span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={pronunciationConfig.isOpen} onChange={onChangePronunciationIsOpen} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
@@ -111,7 +113,9 @@ const PronunciationSwitcher = () => {
                 {pronunciationConfig.isOpen && (
                   <>
                     <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                      <span className="text-sm font-medium font-normal leading-5 text-gray-900">开关循环发音</span>
+                      <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                        开关循环发音
+                      </span>
                       <div className="flex w-full flex-row items-center justify-between">
                         <Switch checked={pronunciationConfig.isLoop} onChange={onChangePronunciationIsLoop} className="switch-root">
                           <span aria-hidden="true" className="switch-thumb" />
@@ -122,7 +126,9 @@ const PronunciationSwitcher = () => {
                       </div>
                     </div>
                     <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                      <span className="text-sm font-medium font-normal leading-5 text-gray-900">单词发音口音</span>
+                      <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                        单词发音口音
+                      </span>
                       <div className="flex w-full flex-row items-center justify-between">
                         <Listbox value={pronunciationConfig.type} onChange={onChangePronunciationType}>
                           <div className="relative">
