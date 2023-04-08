@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Tooltip from '@/components/Tooltip'
 import { useAtom } from 'jotai'
-import { isOpenDarkModeAtom, randomConfigAtom, pronunciationConfigAtom, phoneticConfigAtom } from '@/store'
+import { isOpenDarkModeAtom, randomConfigAtom, phoneticConfigAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
 import SoundSwitcher from '../SoundSwitcher'
 
@@ -11,7 +11,6 @@ export default function Switcher() {
   const [phoneticConfig, setPhoneticConfig] = useAtom(phoneticConfigAtom)
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
-  const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
 
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
@@ -25,9 +24,7 @@ export default function Switcher() {
   const changeDarkModeState = () => {
     setIsOpenDarkMode((old) => !old)
   }
-  const changePronunciationLoopState = () => {
-    setPronunciationConfig((old) => ({ ...old, isLoop: !old.isLoop }))
-  }
+
   const changeWordVisibleState = () => {
     if (dispatch) {
       dispatch({ type: TypingStateActionType.TOGGLE_WORD_VISIBLE })
@@ -99,18 +96,9 @@ export default function Switcher() {
           <FontAwesomeIcon icon="random" fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关循环播放单词发音">
-        <button
-          className={`${pronunciationConfig.isLoop ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
-          onClick={(e) => {
-            changePronunciationLoopState()
-            e.currentTarget.blur()
-          }}
-        >
-          <FontAwesomeIcon icon={'rotate'} fixedWidth />
-        </button>
+      <Tooltip content="音效设置">
+        <SoundSwitcher />
       </Tooltip>
-      <SoundSwitcher />
       <Tooltip content="开关英语显示（Ctrl + V）">
         <button
           className={`${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
