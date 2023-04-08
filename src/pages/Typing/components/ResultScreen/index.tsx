@@ -67,17 +67,29 @@ const ResultScreen = () => {
   const exitButtonHandler = useCallback(() => {
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
   }, [dispatch])
-  useHotkeys('enter', () => {
-    nextButtonHandler()
-  })
+  useHotkeys(
+    'enter',
+    () => {
+      nextButtonHandler()
+    },
+    { preventDefault: true },
+  )
 
-  useHotkeys('space', () => {
-    repeatButtonHandler()
-  })
+  useHotkeys(
+    'space',
+    () => {
+      repeatButtonHandler()
+    },
+    { preventDefault: true },
+  )
 
-  useHotkeys('shift+enter', () => {
-    dictationButtonHandler()
-  })
+  useHotkeys(
+    'shift+enter',
+    () => {
+      dictationButtonHandler()
+    },
+    { preventDefault: true },
+  )
 
   const handleOpenInfoPanel = useCallback(
     (modalType: InfoPanelType) => {
