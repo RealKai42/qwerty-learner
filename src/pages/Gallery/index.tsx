@@ -28,7 +28,7 @@ const GalleryPage: React.FC = () => {
           </NavLink>
         </Tooltip>
       </Header>
-      <div className="mt-auto mb-auto flex w-auto space-x-4 overflow-y-auto">
+      <div className="mb-auto mt-auto flex w-auto space-x-4 overflow-y-auto">
         <div className="flex flex-col space-y-2 overflow-y-auto rounded-lg bg-indigo-50 p-6 dark:bg-slate-800">
           <h2 className="text-shadow sticky top-0 z-10 mb-2 text-lg font-bold text-gray-700 dark:text-white dark:text-opacity-70">
             词典选择

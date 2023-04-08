@@ -1,4 +1,4 @@
-import { TypingContext } from '@/pages/Typing/store'
+import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import { FormEvent, useCallback, useContext, useEffect, useRef } from 'react'
 
 export type HiddenTextareaProps = {
@@ -8,7 +8,7 @@ export type HiddenTextareaProps = {
 export default function HiddenTextarea({ updateInput }: HiddenTextareaProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null)
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(TypingContext)!
+  const { state, dispatch } = useContext(TypingContext)!
 
   useEffect(() => {
     if (!textareaRef.current) return
@@ -21,12 +21,8 @@ export default function HiddenTextarea({ updateInput }: HiddenTextareaProps) {
   }, [state.isTyping])
 
   const onBlur = useCallback(() => {
-    if (!textareaRef.current) return
-
-    if (state.isTyping) {
-      textareaRef.current.focus()
-    }
-  }, [state.isTyping])
+    dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+  }, [dispatch])
 
   const onInput = (e: FormEvent<HTMLTextAreaElement>) => {
     const nativeEvent = e.nativeEvent as InputEvent
@@ -41,7 +37,7 @@ export default function HiddenTextarea({ updateInput }: HiddenTextareaProps) {
 
   return (
     <textarea
-      className="absolute top-0 left-0 m-0 h-0 w-0 appearance-none overflow-hidden border-0 p-0 focus:outline-none"
+      className="absolute left-0 top-0 m-0 h-0 w-0 appearance-none overflow-hidden border-0 p-0 focus:outline-none"
       ref={textareaRef}
       autoFocus
       spellCheck="false"

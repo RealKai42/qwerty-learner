@@ -105,11 +105,11 @@ const ResultScreen = () => {
         leaveTo="opacity-0"
       >
         <div className="flex h-screen items-center justify-center">
-          <div className="card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white px-10 pt-10 pb-14 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
+          <div className="card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white px-10 pb-14 pt-10 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
               {`${currentDictInfo.name} 第 ${currentChapter + 1} 章`}
             </div>
-            <button className="absolute top-5 right-7" onClick={exitButtonHandler}>
+            <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
               <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
             </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">

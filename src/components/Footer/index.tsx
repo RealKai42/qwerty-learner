@@ -164,7 +164,7 @@ const Footer: React.FC = () => {
             🇨🇳
           </a>
           <div className="invisible absolute bottom-full left-1/2 -ml-20 flex w-40 items-center justify-center pt-2 group-hover:visible">
-            <span className="py-1 px-3 text-xs text-gray-500 dark:text-gray-400">中国大陆镜像</span>
+            <span className="px-3 py-1 text-xs text-gray-500 dark:text-gray-400">中国大陆镜像</span>
           </div>
         </div>
         <span

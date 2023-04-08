@@ -28,6 +28,7 @@ import {
   faTimesCircle,
   faEarthAmericas,
   faShareFromSquare,
+  faChevronDown,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faWeixin } from '@fortawesome/free-brands-svg-icons'
 
@@ -62,4 +63,5 @@ library.add(
   faTimesCircle,
   faEarthAmericas,
   faShareFromSquare,
+  faChevronDown,
 )

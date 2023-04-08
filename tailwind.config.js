@@ -30,6 +30,9 @@ module.exports = {
         120: '30rem',
         152: '38rem',
       },
+      borderWidth: {
+        3: '3px',
+      },
     },
   },
   variants: {

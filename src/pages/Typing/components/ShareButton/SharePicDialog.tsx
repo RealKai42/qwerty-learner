@@ -106,8 +106,8 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-large bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
-                  <div className="flex flex-col items-center justify-center pl-20 pr-14 pt-20 pb-10">
-                    <button className="absolute top-5 right-7" onClick={handleClose}>
+                  <div className="flex flex-col items-center justify-center pb-10 pl-20 pr-14 pt-20">
+                    <button className="absolute right-7 top-5" onClick={handleClose}>
                       <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
                     </button>
                     <div className="h-152 w-116">
@@ -131,7 +131,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                         </div>
                       )}
                     </div>
-                    <button onClick={handleDownload} ref={dialogFocusRef} className="btn-primary mt-10 mr-9 h-10">
+                    <button onClick={handleDownload} ref={dialogFocusRef} className="btn-primary mr-9 mt-10 h-10">
                       保存
                     </button>
                   </div>
@@ -151,19 +151,19 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
             <div className=" w-full ">
               <KeyboardPanel description={promote.word} />
               <div className="text-center text-xs text-gray-500">{promote.sentence}</div>
-              <div className="opacity-45 mx-4 mt-6 flex rounded-large bg-white py-3 px-4 shadow-xl">
+              <div className="opacity-45 mx-4 mt-6 flex rounded-large bg-white px-4 py-3 shadow-xl">
                 <DataBox data={state.timerData.time + ''} description="用时" />
                 <DataBox data={state.timerData.accuracy + '%'} description="正确率" />
                 <DataBox data={state.timerData.wpm + ''} description="WPM" />
               </div>
-              <div className="mt-4 ml-5 self-start text-base text-gray-800">{currentDictInfo.name}</div>
-              <div className="mt-2 ml-5 self-start text-xs text-gray-600">{`第 ${currentChapter + 1} 章`}</div>
+              <div className="ml-5 mt-4 self-start text-base text-gray-800">{currentDictInfo.name}</div>
+              <div className="ml-5 mt-2 self-start text-xs text-gray-600">{`第 ${currentChapter + 1} 章`}</div>
             </div>
-            <div className="mt-auto mb-3 ml-5">
+            <div className="mb-3 ml-5 mt-auto">
               <div className="text-xs">Qwerty.kaiyi.cool</div>
               <div className="mt-1 text-xs font-normal text-gray-400">为键盘工作者设计的单词与肌肉记忆锻炼软件</div>
             </div>
-            <div className="absolute bottom-10 -right-9 ">
+            <div className="absolute -right-9 bottom-10 ">
               <Pic className="w-48" />
             </div>
           </div>
@@ -195,10 +195,10 @@ function KeyboardPanel({ description }: { description: string }) {
 function KeyboardKey({ char }: { char: string }) {
   return (
     <div className="relative -mx-1 h-18 w-18">
-      <div className="absolute top-0 left-0 right-0 bottom-0">
+      <div className="absolute bottom-0 left-0 right-0 top-0">
         <KeyboardSvg className="h-full w-full" />
       </div>
-      <div className="absolute top-2.5 left-0 right-0 flex items-center justify-center">
+      <div className="absolute left-0 right-0 top-2.5 flex items-center justify-center">
         <span className="text-base font-normal text-white" style={{ fontSize: '20px', transform: 'rotateX(30deg) ' }}>
           {char}
         </span>
