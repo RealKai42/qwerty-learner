@@ -9,6 +9,8 @@ import { recordOpenInfoPanelAction } from '@/utils'
 import { InfoPanelType } from '@/typings'
 import { useAtom } from 'jotai'
 import { infoPanelStateAtom } from '@/store'
+import redBookLogo from '@/assets/redBook-black-logo.svg'
+import redBookCode from '@/assets/redBook-code.png'
 
 const Footer: React.FC = () => {
   const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
@@ -119,12 +121,48 @@ const Footer: React.FC = () => {
           <br />
         </InfoPanel>
       )}
+      {infoPanelState.redBook && (
+        <InfoPanel
+          openState={infoPanelState.redBook}
+          title="小红书社群"
+          icon="redBookLogo"
+          btnColor="bg-rose-500"
+          iconColor="#ff2e4d"
+          iconBackgroundColor="bg-rose-300"
+          onClose={() => handleCloseInfoPanel('redBook')}
+        >
+          <p className="text-sm text-gray-500  dark:text-gray-400">
+            Qwerty Learner 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
+            <br />
+            关注小红书后，您可以获得开发团队的最新动态和更新内容，反馈您的使用体验和建议，帮助我们改进产品。
+            <br />
+            <br />
+          </p>
+          <p className="text-sm text-gray-700 dark:text-gray-200">
+            我们深信，与用户的良好互动和反馈是推动我们不断前进和提高的重要因素。因此，我们诚挚邀请您关注我们的小红书账号，与我们一起打造更好的
+            「Qwerty Learner」！
+          </p>
+          <br />
+          <br />
+          <img className="ml-1 w-5/12 " src={redBookCode} alt="redBook" />
+          <p className="text-sm text-gray-500  dark:text-gray-400">Tips: 从小红书“我”的左上角点击 三 找到 扫一扫</p>
+          <br />
+        </InfoPanel>
+      )}
 
       <div className="mt-4 w-full pb-1 text-center text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={['fab', 'github']} className="mr-3 text-gray-500 dark:text-gray-400" />
         </a>
-
+        <span
+          className="mr-3 cursor-pointer"
+          onClick={(e) => {
+            handleOpenInfoPanel('redBook')
+            e.currentTarget.blur()
+          }}
+        >
+          <img src={redBookLogo} className="svg-inline--fa fill-current text-gray-500" alt="red book" style={{ fill: '#6B7280' }} />
+        </span>
         <span
           className="cursor-pointer"
           onClick={(e) => {
