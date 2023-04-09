@@ -13,12 +13,12 @@ const WordSound = ({ word, inputWord, ...rest }: WordSoundProps) => {
 
   useHotkeys(
     'ctrl+j',
-    (e) => {
-      e.preventDefault()
+    () => {
       stop()
       play()
     },
     [play, stop],
+    { enableOnFormTags: true, preventDefault: true },
   )
 
   useEffect(() => {

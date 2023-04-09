@@ -22,7 +22,7 @@ export type Word = {
   ukphone: string
 }
 
-export type InfoPanelType = 'donate' | 'vsc' | 'community'
+export type InfoPanelType = 'donate' | 'vsc' | 'community' | 'redBook'
 
 export type InfoPanelState = {
   [key in InfoPanelType]: boolean

@@ -59,6 +59,7 @@ export const infoPanelStateAtom = atom<InfoPanelState>({
   donate: false,
   vsc: false,
   community: false,
+  redBook: false,
 })
 
 export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_START_CARD_DATE_KEY, null)

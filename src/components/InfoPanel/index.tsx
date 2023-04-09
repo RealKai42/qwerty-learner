@@ -2,12 +2,13 @@ import React, { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import redBookLogo from '@/assets/redBook-color-logo.svg'
 
 type InfoPanelProps = {
   openState: boolean
   onClose: () => void
   title: string
-  icon: IconProp
+  icon: IconProp | 'redBookLogo'
   iconColor: string
   iconBackgroundColor: string
   btnColor: string
@@ -47,7 +48,11 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon, 
                     <div
                       className={`${iconBackgroundColor} mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-50 sm:mx-0 sm:h-10 sm:w-10`}
                     >
-                      <FontAwesomeIcon icon={icon} className={`h-5 w-5 stroke-current dark:bg-opacity-100  ${iconColor}`} />
+                      {icon !== 'redBookLogo' ? (
+                        <FontAwesomeIcon icon={icon} className={`h-5 w-5 stroke-current dark:bg-opacity-100  ${iconColor}`} />
+                      ) : (
+                        <img src={redBookLogo} alt="redBookLogo" className="h-6 w-6" />
+                      )}
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 dark:text-white">

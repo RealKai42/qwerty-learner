@@ -1,6 +1,6 @@
 import { useAtomValue } from 'jotai'
 import { Howl } from 'howler'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import useSound from 'use-sound'
 import { HookOptions } from 'use-sound/dist/types'
 import { addHowlListener } from '@/utils'
@@ -24,23 +24,22 @@ function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronunciation
   }
 }
 
-export default function usePronunciationSound(word: string) {
+export default function usePronunciationSound(word: string, isLoop?: boolean) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
-
+  const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
   const [isPlaying, setIsPlaying] = useState(false)
 
   const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type as Exclude<PronunciationType, false>), {
     html5: true,
     format: ['mp3'],
-    loop: pronunciationConfig.isLoop,
+    loop,
   } as HookOptions)
 
   useEffect(() => {
     if (!sound) return
-    sound.loop(pronunciationConfig.isLoop)
+    sound.loop(loop)
     return noop
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pronunciationConfig.isLoop])
+  }, [loop, sound])
 
   useEffect(() => {
     if (!sound) return
