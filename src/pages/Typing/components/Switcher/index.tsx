@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Tooltip from '@/components/Tooltip'
 import { useAtom } from 'jotai'
-import { isOpenDarkModeAtom, randomConfigAtom } from '@/store'
+import { isLoopSingleWordAtom, isOpenDarkModeAtom, randomConfigAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
 import SoundSwitcher from '../SoundSwitcher'
 
 export default function Switcher() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
+  const [isLoopSingleWord, setIsLoopSingleWord] = useAtom(isLoopSingleWordAtom)
 
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
@@ -30,6 +31,10 @@ export default function Switcher() {
     if (dispatch) {
       dispatch({ type: TypingStateActionType.TOGGLE_TRANS_VISIBLE })
     }
+  }
+
+  const changeLoopSingleWordState = () => {
+    setIsLoopSingleWord((old) => !old)
   }
 
   useHotkeys(
@@ -65,6 +70,14 @@ export default function Switcher() {
     { enableOnFormTags: true, preventDefault: true },
     [],
   )
+  useHotkeys(
+    'ctrl+l',
+    () => {
+      changeLoopSingleWordState()
+    },
+    { enableOnFormTags: true, preventDefault: true },
+    [],
+  )
 
   return (
     <div className="flex items-center justify-center space-x-3">
@@ -80,6 +93,17 @@ export default function Switcher() {
           }}
         >
           <FontAwesomeIcon icon="random" fixedWidth />
+        </button>
+      </Tooltip>
+      <Tooltip content="开关单个单词循环（Ctrl + L）">
+        <button
+          className={`${isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          onClick={(e) => {
+            changeLoopSingleWordState()
+            e.currentTarget.blur()
+          }}
+        >
+          <FontAwesomeIcon icon="repeat" fixedWidth />
         </button>
       </Tooltip>
       <Tooltip content="开关英语显示（Ctrl + V）">

@@ -44,6 +44,8 @@ export const randomConfigAtom = atomWithStorage('randomConfig', {
   isOpen: false,
 })
 
+export const isLoopSingleWordAtom = atom(false)
+
 export const phoneticConfigAtom = atomWithStorage('phoneticConfig', {
   isOpen: true,
   type: 'us' as PhoneticType,

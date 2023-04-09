@@ -16,6 +16,7 @@ export type ModeInfo = {
 
   enabledKeyboardSound: boolean
   enabledPhotonicsSymbol: boolean
+  enabledSingleWordLoop: boolean
 
   pronunciationAuto: boolean
   pronunciationOption: PronunciationType | 'none'
