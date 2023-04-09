@@ -13,7 +13,7 @@ export default function WordChip({ word }: { word: Word }) {
   const hover = useHover(context)
   const role = useRole(context, { role: 'tooltip' })
   const { getReferenceProps, getFloatingProps } = useInteractions([hover, role])
-  const { play, stop } = usePronunciationSound(word.name)
+  const { play, stop } = usePronunciationSound(word.name, false)
 
   const onClickWord = useCallback(() => {
     stop()
