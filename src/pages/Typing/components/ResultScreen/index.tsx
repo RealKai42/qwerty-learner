@@ -12,6 +12,7 @@ import { recordOpenInfoPanelAction } from '@/utils'
 import { InfoPanelType } from '@/typings'
 import { TypingContext, TypingStateActionType } from '../../store'
 import ShareButton from '../ShareButton'
+import redBookLogo from '@/assets/redBook-color-logo.svg'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -117,7 +118,7 @@ const ResultScreen = () => {
         leaveTo="opacity-0"
       >
         <div className="flex h-screen items-center justify-center">
-          <div className="card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white px-10 pb-14 pt-10 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
+          <div className="card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white pb-14 pl-10 pr-5 pt-10 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
               {`${currentDictInfo.name} 第 ${currentChapter + 1} 章`}
             </div>
@@ -140,27 +141,39 @@ const ResultScreen = () => {
                   <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={state.chapterData.wrongWordIndexes.length} />
                 </div>
               </div>
-              <div className="ml-2 flex flex-col items-center justify-end gap-2 text-xl">
+              <div className="ml-2 flex flex-col items-center justify-end gap-3.5 text-xl">
                 <ShareButton />
-                <span
-                  className="cursor-pointer"
+
+                <img
+                  src={redBookLogo}
+                  onClick={(e) => {
+                    handleOpenInfoPanel('redBook')
+                    e.currentTarget.blur()
+                  }}
+                  className="svg-inline--fa h-5 cursor-pointer fill-current text-gray-50"
+                  alt="red book"
+                  style={{ fill: '#6B7280' }}
+                />
+
+                <FontAwesomeIcon
+                  icon={['fas', 'coffee']}
                   onClick={(e) => {
                     handleOpenInfoPanel('donate')
                     e.currentTarget.blur()
                   }}
-                >
-                  <FontAwesomeIcon icon={['fas', 'coffee']} className="text-gray-500 dark:text-gray-400" />
-                </span>
-                <span
-                  className="cursor-pointer"
+                  className="cursor-pointer text-gray-500 dark:text-gray-400"
+                />
+
+                <FontAwesomeIcon
+                  icon={['fab', 'weixin']}
                   onClick={(e) => {
                     handleOpenInfoPanel('community')
                     e.currentTarget.blur()
                   }}
-                >
-                  <FontAwesomeIcon icon={['fab', 'weixin']} className="text-gray-500 dark:text-gray-400" />
-                </span>
-                <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
+                  className="cursor-pointer text-gray-500 dark:text-gray-400"
+                />
+
+                <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
                   <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 dark:text-gray-400" />
                 </a>
               </div>

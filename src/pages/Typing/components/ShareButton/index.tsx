@@ -11,8 +11,8 @@ export default function ShareButton() {
   const { x, y, strategy, refs, context } = useFloating({
     open: showTranslation,
     onOpenChange: setShowTranslation,
-    middleware: [offset(4), shift(), flip()],
-    placement: 'top',
+    middleware: [offset(11), shift(), flip()],
+    placement: 'top-start',
   })
   const hover = useHover(context)
   const role = useRole(context, { role: 'tooltip' })
@@ -39,8 +39,7 @@ export default function ShareButton() {
         ref={refs.setReference}
         {...getReferenceProps()}
         icon={['fas', 'share-from-square']}
-        className="cursor-pointer text-xl text-indigo-400"
-        size="lg"
+        className="ml-[2px] cursor-pointer text-xl text-indigo-400"
         onClick={onClickShare}
       />
 
