@@ -127,7 +127,7 @@ const ResultScreen = () => {
             </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
-                <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={correctRate} />
+                <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={state.timerData.accuracy} />
                 <RemarkRing remark={timeString} caption="章节耗时" />
                 <RemarkRing remark={state.timerData.wpm + ''} caption="WPM" />
               </div>
