@@ -17,6 +17,7 @@ import { useAtomValue } from 'jotai'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
+  isLoopSingleWordAtom,
   isOpenDarkModeAtom,
   keySoundsConfigAtom,
   phoneticConfigAtom,
@@ -43,6 +44,13 @@ const App: React.FC = () => {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+
+  const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
+  const [wordComponentKey, setWordComponentKey] = useState(0)
+
+  const reloadCurrentWordComponent = useCallback(() => {
+    setWordComponentKey((old) => old + 1)
+  }, [])
 
   useEffect(() => {
     // 检测用户设备
@@ -114,7 +122,13 @@ const App: React.FC = () => {
 
   const onFinish = (wordStat: WordStat) => {
     if (typingState.chapterData.index < typingState.chapterData.words.length - 1) {
-      dispatch({ type: TypingStateActionType.NEXT_WORD })
+      // 用户完成当前单词
+      if (isLoopSingleWord) {
+        dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
+        reloadCurrentWordComponent()
+      } else {
+        dispatch({ type: TypingStateActionType.NEXT_WORD })
+      }
       const wordStatUpload: WordStatUpload = {
         ...wordStat,
         order: typingState.chapterData.index + 1,
@@ -125,6 +139,7 @@ const App: React.FC = () => {
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
         enabledPhotonicsSymbol: phoneticConfig.isOpen,
+        enabledSingleWordLoop: isLoopSingleWord,
         pronunciationAuto: pronunciationConfig.isOpen,
         pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
       }
@@ -146,6 +161,7 @@ const App: React.FC = () => {
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
         enabledPhotonicsSymbol: phoneticConfig.isOpen,
+        enabledSingleWordLoop: isLoopSingleWord,
         pronunciationAuto: pronunciationConfig.isOpen,
         pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
       }
@@ -214,7 +230,7 @@ const App: React.FC = () => {
                 <>
                   {typingState.isTyping ? (
                     <>
-                      {currentWord && <CurrentWord word={currentWord} onFinish={onFinish} />}
+                      {currentWord && <CurrentWord word={currentWord} key={wordComponentKey} onFinish={onFinish} />}
                       <Progress order={typingState.chapterData.index} wordsLength={typingState.chapterData.words.length} />
                     </>
                   ) : (

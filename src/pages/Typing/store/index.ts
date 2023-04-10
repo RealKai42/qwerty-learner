@@ -4,6 +4,7 @@ import { createContext } from 'react'
 export type ChapterData = {
   words: Word[]
   index: number
+  wordCount: number
   correctCount: number
   wrongCount: number
   wrongWordIndexes: number[]
@@ -28,6 +29,7 @@ export const initialState: TypingState = {
   chapterData: {
     words: [],
     index: 0,
+    wordCount: 0,
     correctCount: 0,
     wrongCount: 0,
     wrongWordIndexes: [],
@@ -51,6 +53,7 @@ export enum TypingStateActionType {
   TOGGLE_IS_TYPING = 'TOGGLE_IS_TYPING',
   REPORT_WRONG_WORD = 'REPORT_WRONG_WORD',
   NEXT_WORD = 'NEXT_WORD',
+  LOOP_CURRENT_WORD = 'LOOP_CURRENT_WORD',
   FINISH_CHAPTER = 'FINISH_CHAPTER',
   INCREASE_CORRECT_COUNT = 'INCREASE_CORRECT_COUNT',
   INCREASE_WRONG_COUNT = 'INCREASE_WRONG_COUNT',
@@ -70,6 +73,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.TOGGLE_IS_TYPING }
   | { type: TypingStateActionType.REPORT_WRONG_WORD }
   | { type: TypingStateActionType.NEXT_WORD }
+  | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.INCREASE_CORRECT_COUNT }
   | { type: TypingStateActionType.INCREASE_WRONG_COUNT }
@@ -128,6 +132,16 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
         chapterData: {
           ...state.chapterData,
           index: state.chapterData.index + 1,
+          wordCount: state.chapterData.wordCount + 1,
+        },
+        isShowSkip: false,
+      }
+    case TypingStateActionType.LOOP_CURRENT_WORD:
+      return {
+        ...state,
+        chapterData: {
+          ...state.chapterData,
+          wordCount: state.chapterData.wordCount + 1,
         },
         isShowSkip: false,
       }
@@ -214,7 +228,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
           ? 1
           : state.chapterData.correctCount + state.chapterData.wrongCount
       const accuracy = Math.round((state.chapterData.correctCount / inputSum) * 100)
-      const wordNumber = state.isFinished ? state.chapterData.words.length : state.chapterData.index
+      const wordNumber = state.chapterData.wordCount || 0
       const wpm = Math.round((wordNumber / newTime) * 60)
 
       return {
