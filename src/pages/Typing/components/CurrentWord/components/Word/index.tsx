@@ -10,7 +10,7 @@ import { WordStat } from '@/typings'
 import dayjs from 'dayjs'
 import { EXPLICIT_SPACE } from '@/constants'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import HiddenTextarea, { WordUpdateAction } from '../HiddenTextarea'
+import InputHandler, { WordUpdateAction } from '../InputHandler'
 
 const initialStatInfo = {
   headword: '',
@@ -175,7 +175,7 @@ export default function Word({ word, onFinish }: WordProps) {
 
   return (
     <>
-      <HiddenTextarea updateInput={updateInput} />
+      <InputHandler updateInput={updateInput} />
       <div className="flex justify-center pb-1 pt-4">
         <div className="relative">
           <div className={`flex items-center justify-center ${wordState.hasWrong ? style.wrong : ''}`}>

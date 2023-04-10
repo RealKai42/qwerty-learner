@@ -219,7 +219,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/it-words.json',
     length: 1700,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsArray',
@@ -228,7 +228,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-array.json',
     length: 36,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsDate',
@@ -237,7 +237,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-date.json',
     length: 34,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsGlobal',
@@ -246,7 +246,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-global.json',
     length: 9,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsMapSet',
@@ -255,7 +255,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-map-set.json',
     length: 16,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsMath',
@@ -264,7 +264,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-math.json',
     length: 38,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsNumber',
@@ -273,7 +273,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-number.json',
     length: 22,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsObject',
@@ -282,7 +282,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-object.json',
     length: 37,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsPromise',
@@ -291,7 +291,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-promise.json',
     length: 9,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'jsString',
@@ -300,7 +300,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/js-string.json',
     length: 32,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-builtin',
@@ -309,7 +309,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-builtin.json',
     length: 65,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-array',
@@ -318,7 +318,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-array.json',
     length: 11,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-date',
@@ -327,7 +327,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-date.json',
     length: 39,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-file',
@@ -336,7 +336,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-file.json',
     length: 21,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-class',
@@ -345,7 +345,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-class.json',
     length: 13,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-set',
@@ -354,7 +354,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-set.json',
     length: 29,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-math',
@@ -363,7 +363,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-math.json',
     length: 37,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-string',
@@ -372,7 +372,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-string.json',
     length: 40,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'python-system',
@@ -381,7 +381,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/python-sys.json',
     length: 24,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'javeArrayList',
@@ -390,7 +390,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/java-arraylist.json',
     length: 25,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'javaCharacter',
@@ -399,7 +399,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/java-character.json',
     length: 8,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'javaHashmap',
@@ -408,7 +408,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/java-hashmap.json',
     length: 22,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'javaLinkedList',
@@ -417,7 +417,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/java-linkedlist.json',
     length: 25,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'javaString',
@@ -426,7 +426,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/java-string.json',
     length: 48,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'javaStringBuffer',
@@ -435,7 +435,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/java-stringBuffer.json',
     length: 20,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'linuxCommand',
@@ -444,7 +444,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/linux-command.json',
     length: 575,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'csharpList',
@@ -453,7 +453,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/csharp-list.json',
     length: 36,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'sql-lower-case',
@@ -462,7 +462,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/SQL_statement_lower-case.json',
     length: 12,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'sql-upper-case',
@@ -471,7 +471,7 @@ export const dictionaries: DictionaryResource[] = [
     category: '代码练习',
     url: '/dicts/SQL_statement_upper-case.json',
     length: 12,
-    language: 'en',
+    language: 'code',
   },
   {
     id: 'san1',
