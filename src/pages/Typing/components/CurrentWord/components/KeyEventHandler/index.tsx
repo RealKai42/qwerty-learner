@@ -1,8 +1,12 @@
+import { TypingContext } from '@/pages/Typing/store'
 import { isChineseSymbol, isLegal } from '@/utils'
-import { useCallback, useEffect } from 'react'
+import { useCallback, useContext, useEffect } from 'react'
 import { WordUpdateAction } from '../InputHandler'
 
 export default function KeyEventHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
+  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+  const { state } = useContext(TypingContext)!
+
   const onKeydown = useCallback(
     (e: KeyboardEvent) => {
       const char = e.key
@@ -20,11 +24,13 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
   )
 
   useEffect(() => {
+    if (!state.isTyping) return
+
     window.addEventListener('keydown', onKeydown)
     return () => {
       window.removeEventListener('keydown', onKeydown)
     }
-  })
+  }, [onKeydown, state.isTyping])
 
   return <></>
 }
