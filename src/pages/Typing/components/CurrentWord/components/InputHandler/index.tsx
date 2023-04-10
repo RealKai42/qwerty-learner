@@ -3,6 +3,7 @@ import { FormEvent, useMemo } from 'react'
 import { currentDictInfoAtom } from '@/store'
 import KeyEventHandler from '../KeyEventHandler'
 import TextAreaHandler from '../TextAreaHandler'
+import KeyEventHandlerDE from '../KeyEventHandlerDE'
 
 export default function InputHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
   const dictInfo = useAtomValue(currentDictInfoAtom)
@@ -12,7 +13,7 @@ export default function InputHandler({ updateInput }: { updateInput: (updateObj:
       case 'en':
         return <KeyEventHandler updateInput={updateInput} />
       case 'de':
-        return <KeyEventHandler updateInput={updateInput} />
+        return <KeyEventHandlerDE updateInput={updateInput} />
       case 'romaji':
         return <KeyEventHandler updateInput={updateInput} />
       case 'code':
