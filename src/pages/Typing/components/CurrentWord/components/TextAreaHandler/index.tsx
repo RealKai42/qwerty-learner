@@ -1,4 +1,4 @@
-import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
+import { TypingContext } from '@/pages/Typing/store'
 import { FormEvent, useCallback, useContext, useEffect, useRef } from 'react'
 import { WordUpdateAction } from '../InputHandler'
 
