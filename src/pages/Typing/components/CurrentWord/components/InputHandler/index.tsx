@@ -11,6 +11,8 @@ export default function InputHandler({ updateInput }: { updateInput: (updateObj:
     switch (dictInfo.language) {
       case 'en':
         return <KeyEventHandler updateInput={updateInput} />
+      case 'de':
+        return <KeyEventHandler updateInput={updateInput} />
       case 'romaji':
         return <KeyEventHandler updateInput={updateInput} />
       case 'code':

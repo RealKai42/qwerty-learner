@@ -36,6 +36,15 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  de: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '德语',
+        pron: 'de',
+      },
+    ],
+  },
   romaji: {
     defaultPronIndex: 0,
     pronunciation: [
