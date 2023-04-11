@@ -62,7 +62,6 @@ const App: React.FC = () => {
       }, 500)
     }
   }, [])
-
   useHotkeys(
     'enter',
     () => {
@@ -71,6 +70,16 @@ const App: React.FC = () => {
     { enableOnFormTags: true, preventDefault: true },
     [],
   )
+  useEffect(() => {
+    const onBlur = () => {
+      dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+    }
+    window.addEventListener('blur', onBlur)
+
+    return () => {
+      window.removeEventListener('blur', onBlur)
+    }
+  }, [])
 
   useEffect(() => {
     if (!typingState.isTyping) {
@@ -104,17 +113,6 @@ const App: React.FC = () => {
       setIsLoading(true)
     }
   }, [typingState.chapterData.words])
-
-  useEffect(() => {
-    const onBlur = () => {
-      dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
-    }
-    window.addEventListener('blur', onBlur)
-
-    return () => {
-      window.removeEventListener('blur', onBlur)
-    }
-  }, [])
 
   const skipWord = useCallback(() => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })
