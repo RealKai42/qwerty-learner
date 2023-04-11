@@ -7,7 +7,7 @@ import AdvancedSetting from './AdvancedSetting'
 import { TypingContext, TypingStateActionType } from '../../store'
 
 export default function Setting() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const { dispatch } = useContext(TypingContext) ?? {}
 
   function closeModal() {
