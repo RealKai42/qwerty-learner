@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
           <br />
           <p className="text-sm text-gray-500  dark:text-gray-400">再次感谢您的支持和关注！</p>
           <br />
-          <img className="ml-1 w-2/6 " src="https://qwerty.kaiyi.cool/weChat-group" alt="weChat-group" />
+          <img className="ml-1 w-2/6 " src="https://qwerty.kaiyi.cool/weChat-group.png" alt="weChat-group" />
           <br />
         </InfoPanel>
       )}
