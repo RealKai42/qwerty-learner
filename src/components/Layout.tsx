@@ -2,10 +2,10 @@ import React from 'react'
 import Footer from './Footer'
 
 const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <div className="flex h-screen w-full flex-col items-center pb-4">
+  <body className="flex h-screen w-full flex-col items-center pb-4">
     {children}
     <Footer />
-  </div>
+  </body>
 )
 
 Layout.displayName = 'Layout'
