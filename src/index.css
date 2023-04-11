@@ -116,4 +116,17 @@ body,
   .listbox-options-icon {
     @apply absolute inset-y-0 left-0 flex items-center pl-3 text-indigo-600;
   }
+
+  .slider {
+    @apply relative flex h-10 w-full cursor-pointer select-none items-center;
+  }
+  .slider > span:nth-child(1) {
+    @apply relative h-[5px] flex-grow rounded-full bg-gray-200;
+  }
+  .slider > span:nth-child(1) > span:nth-child(1) {
+    @apply absolute h-full rounded-full bg-indigo-400;
+  }
+  .slider > span:nth-child(2) {
+    @apply block h-4 w-4 cursor-pointer rounded-full border border-gray-200 bg-white drop-shadow-md;
+  }
 }

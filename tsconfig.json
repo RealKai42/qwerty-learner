@@ -26,7 +26,15 @@
       // "@/resources/*": ["resources/*"],
       // "@/store/*": ["store/*"],
       // "@/utils/*": ["utils/*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "camelCaseOnly"
+        }
+      }
+    ]
   },
   "include": ["src"]
 }
