@@ -150,7 +150,7 @@ const Footer: React.FC = () => {
         </InfoPanel>
       )}
 
-      <div className="mt-4 w-full pb-1 text-center text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
+      <footer className="mt-4 w-full pb-1 text-center text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={['fab', 'github']} className="mr-3 text-gray-500 dark:text-gray-400" />
         </a>
@@ -222,7 +222,7 @@ const Footer: React.FC = () => {
         >
           鲁ICP备2022030649号
         </a>
-      </div>
+      </footer>
     </>
   )
 }
