@@ -29,6 +29,8 @@ import {
   faEarthAmericas,
   faShareFromSquare,
   faChevronDown,
+  faGear,
+  faSliders,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faWeixin } from '@fortawesome/free-brands-svg-icons'
 
@@ -64,4 +66,6 @@ library.add(
   faEarthAmericas,
   faShareFromSquare,
   faChevronDown,
+  faGear,
+  faSliders,
 )

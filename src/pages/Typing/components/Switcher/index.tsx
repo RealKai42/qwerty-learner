@@ -6,6 +6,7 @@ import { useAtom } from 'jotai'
 import { isLoopSingleWordAtom, isOpenDarkModeAtom, randomConfigAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
 import SoundSwitcher from '../SoundSwitcher'
+import Setting from '../Setting'
 
 export default function Switcher() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
@@ -138,6 +139,10 @@ export default function Switcher() {
         >
           <FontAwesomeIcon icon={isOpenDarkMode ? 'moon' : 'sun'} fixedWidth />
         </button>
+      </Tooltip>
+
+      <Tooltip content="设置">
+        <Setting />
       </Tooltip>
     </div>
   )
