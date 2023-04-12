@@ -58,9 +58,9 @@ export default function Setting() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="flex w-200 flex-col overflow-hidden rounded-2xl bg-white p-0 shadow-xl">
-                  <div className="relative flex h-22 items-end justify-between rounded-t-lg border-b border-neutral-200 bg-stone-50 px-6 py-3">
-                    <span className="text-3xl font-bold text-gray-700">设置</span>
+                <Dialog.Panel className="flex w-200 flex-col overflow-hidden rounded-2xl bg-white p-0 shadow-xl dark:bg-gray-800">
+                  <div className="relative flex h-22 items-end justify-between rounded-t-lg border-b border-neutral-100 bg-stone-50 px-6 py-3 dark:border-neutral-700 dark:bg-gray-900">
+                    <span className="text-3xl font-bold text-gray-600">设置</span>
                     <FontAwesomeIcon
                       icon={['fas', 'times']}
                       className="absolute right-7 top-5 cursor-pointer text-gray-400"
@@ -71,28 +71,28 @@ export default function Setting() {
 
                   <Tab.Group vertical>
                     <div className="flex h-120 w-full ">
-                      <Tab.List className="flex h-full w-52 flex-col items-start space-y-3 border-r border-neutral-200 bg-stone-50 px-6 py-3">
+                      <Tab.List className="flex h-full w-52 flex-col items-start space-y-3  border-r border-neutral-100 bg-stone-50 px-6 py-3 dark:border-transparent dark:bg-gray-900">
                         <Tab
                           className={({ selected }) =>
                             classNames(
                               'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
-                              selected && 'bg-gray-200 bg-opacity-50',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
                             )
                           }
                         >
-                          <FontAwesomeIcon icon="ear-listen" className="mr-2" size="1x" />
-                          <span className="text-neutral-500">音效设置</span>
+                          <FontAwesomeIcon icon="ear-listen" className="mr-2 text-neutral-500  dark:text-neutral-300" size="1x" />
+                          <span className="text-neutral-500 dark:text-neutral-300 ">音效设置</span>
                         </Tab>
                         <Tab
                           className={({ selected }) =>
                             classNames(
                               'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
-                              selected && 'bg-gray-200 bg-opacity-50',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
                             )
                           }
                         >
-                          <FontAwesomeIcon icon="sliders" className="mr-2" size="1x" />
-                          <span className="text-neutral-500">高级设置</span>
+                          <FontAwesomeIcon icon="sliders" className="mr-2 text-neutral-500  dark:text-neutral-300" size="1x" />
+                          <span className="text-neutral-500 dark:text-neutral-300">高级设置</span>
                         </Tab>
                       </Tab.List>
 
@@ -100,7 +100,7 @@ export default function Setting() {
                         <Tab.Panel className="flex h-full w-full  focus:outline-none">
                           <SoundSetting />
                         </Tab.Panel>
-                        <Tab.Panel className="h-full w-full px-6 py-3 focus:outline-none">
+                        <Tab.Panel className="flex h-full focus:outline-none">
                           <AdvancedSetting />
                         </Tab.Panel>
                       </Tab.Panels>

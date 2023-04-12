@@ -94,7 +94,7 @@ export default function SoundSetting() {
               </Slider.Track>
               <Slider.Thumb />
             </Slider.Root>
-            <span className="ml-4 w-10 text-xs font-normal text-gray-800">{`${Math.floor(pronunciationConfig.volume * 100)}%`}</span>
+            <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(pronunciationConfig.volume * 100)}%`}</span>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ export default function SoundSetting() {
           }`}</span>
         </div>
         <div className={styles.block}>
-          <span className="font-medium text-gray-800">音量</span>
+          <span className={styles.blockLabel}>音量</span>
           <div className="flex h-5 w-full items-center justify-between">
             <Slider.Root
               defaultValue={[keySoundsConfig.volume * 100]}
@@ -124,7 +124,7 @@ export default function SoundSetting() {
               </Slider.Track>
               <Slider.Thumb />
             </Slider.Root>
-            <span className="ml-4 w-10 text-xs font-normal text-gray-800">{`${Math.floor(keySoundsConfig.volume * 100)}%`}</span>
+            <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(keySoundsConfig.volume * 100)}%`}</span>
           </div>
         </div>
       </div>
@@ -140,7 +140,7 @@ export default function SoundSetting() {
           }`}</span>
         </div>
         <div className={styles.block}>
-          <span className="font-medium text-gray-800">音量</span>
+          <span className={styles.blockLabel}>音量</span>
           <div className="flex h-5 w-full items-center justify-between">
             <Slider.Root
               defaultValue={[hintSoundsConfig.volume * 100]}
@@ -154,7 +154,7 @@ export default function SoundSetting() {
               </Slider.Track>
               <Slider.Thumb />
             </Slider.Root>
-            <span className="ml-4 w-10 text-xs font-normal text-gray-800">{`${Math.floor(hintSoundsConfig.volume * 100)}%`}</span>
+            <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(hintSoundsConfig.volume * 100)}%`}</span>
           </div>
         </div>
       </div>

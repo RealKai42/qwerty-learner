@@ -16,7 +16,7 @@
   @apply flex w-full flex-col items-start gap-2 py-0 pl-4;
 }
 .block-label {
-  @apply font-medium text-gray-800;
+  @apply font-medium text-gray-600;
 }
 .switch-block {
   composes: block;
