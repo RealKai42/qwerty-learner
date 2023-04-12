@@ -27,7 +27,7 @@ export default function Setting() {
         type="button"
         onClick={openModal}
         className={`flex items-center justify-center rounded p-[2px] py-[3px] text-lg text-indigo-400 outline-none transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white  ${
-          isOpen ? 'bg-indigo-400 text-white' : ''
+          isOpen && 'bg-indigo-400 text-white'
         }`}
       >
         <FontAwesomeIcon icon="gear" fixedWidth className="focus:outline-none" />
