@@ -136,7 +136,7 @@ export default function Word({ word, onFinish }: WordProps) {
       wordStat.current.countTypo += 1
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [wordState.inputWord, displayWord, dispatch])
+  }, [wordState.inputWord, displayWord, dispatch, isIgnoreCase])
 
   useEffect(() => {
     if (wordState.hasWrong) {
