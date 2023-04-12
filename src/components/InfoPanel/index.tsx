@@ -13,7 +13,6 @@ type InfoPanelProps = {
   iconBackgroundColor: string
   btnColor: string
   children: React.ReactNode
-  tmp: number
 }
 
 const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon, iconBackgroundColor, iconColor, btnColor, children }) => {
