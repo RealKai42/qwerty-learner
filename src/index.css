@@ -85,15 +85,48 @@ body,
   .switch-root {
     @apply relative inline-flex h-6 w-12 shrink-0 cursor-pointer items-center rounded-full border-3 border-transparent bg-gray-300 transition-colors duration-200 ease-in-out focus:outline-none;
   }
-
   .switch-root[data-headlessui-state='checked'] {
     @apply bg-indigo-400;
   }
-
   .switch-thumb {
     @apply pointer-events-none inline-block h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out;
   }
   [data-headlessui-state='checked'] .switch-thumb {
     @apply translate-x-[25px];
+  }
+
+  .listbox-button {
+    @apply relative w-40 cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none;
+  }
+  .listbox-button span:nth-of-type(1) {
+    @apply block truncate text-gray-900;
+  }
+  .listbox-button span:nth-of-type(2) {
+    @apply pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 focus:outline-none;
+  }
+  .listbox-options {
+    @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg  focus:outline-none;
+  }
+  .listbox-options > li {
+    @apply relative cursor-default select-none py-2 pl-10 pr-4 text-gray-900 ui-active:bg-indigo-100 ui-active:text-indigo-900;
+  }
+  .listbox-options > li > span:first-child {
+    @apply block truncate font-normal  ui-selected:font-medium;
+  }
+  .listbox-options-icon {
+    @apply absolute inset-y-0 left-0 flex items-center pl-3 text-indigo-600;
+  }
+
+  .slider {
+    @apply relative flex h-10 w-full cursor-pointer select-none items-center;
+  }
+  .slider > span:nth-child(1) {
+    @apply relative h-[5px] flex-grow rounded-full bg-gray-200;
+  }
+  .slider > span:nth-child(1) > span:nth-child(1) {
+    @apply absolute h-full rounded-full bg-indigo-400;
+  }
+  .slider > span:nth-child(2) {
+    @apply block h-4 w-4 cursor-pointer rounded-full border border-gray-200 bg-white drop-shadow-md;
   }
 }

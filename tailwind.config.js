@@ -23,9 +23,11 @@ module.exports = {
         116: '29rem',
         150: '37.5rem',
         160: '40rem',
+        200: '50rem',
       },
       height: {
         18: '4.5rem',
+        22: '5.5rem',
         112: '28rem',
         120: '30rem',
         152: '38rem',
@@ -42,5 +44,5 @@ module.exports = {
       backgroundOpacity: ['dark'],
     },
   },
-  plugins: [],
+  plugins: [require('@headlessui/tailwindcss')],
 }

@@ -4,7 +4,7 @@ import usePronunciationSound from '@/hooks/usePronunciation'
 import { useAtomValue } from 'jotai'
 import { useEffect, useCallback } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import style from './index.module.css'
+import styles from './index.module.css'
 import { pronunciationIsOpenAtom } from '@/store'
 
 const WordSound = ({ word, inputWord, ...rest }: WordSoundProps) => {
@@ -40,7 +40,7 @@ const WordSound = ({ word, inputWord, ...rest }: WordSoundProps) => {
   return (
     <>
       {pronunciationIsOpen && (
-        <Tooltip content="朗读发音（Ctrl + J）" className={`${style['word-sound']}`}>
+        <Tooltip content="朗读发音（Ctrl + J）" className={`${styles.wordSound}`}>
           <SoundIcon animated={isPlaying} {...rest} onClick={handleClickSoundIcon} />
         </Tooltip>
       )}
