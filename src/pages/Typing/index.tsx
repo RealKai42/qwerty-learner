@@ -119,7 +119,7 @@ const App: React.FC = () => {
   }, [])
 
   const onFinish = (wordStat: WordStat) => {
-    if (typingState.chapterData.index < typingState.chapterData.words.length - 1) {
+    if (typingState.chapterData.index < typingState.chapterData.words.length - 1 || isLoopSingleWord) {
       // 用户完成当前单词
       if (isLoopSingleWord) {
         dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
