@@ -5,7 +5,7 @@ import { LetterState } from './Letter'
 import style from './index.module.css'
 import WordSound from '../WordSound'
 import { useAtomValue } from 'jotai'
-import { pronunciationIsOpenAtom } from '@/store'
+import { isIgnoreCaseAtom, pronunciationIsOpenAtom } from '@/store'
 import { WordStat } from '@/typings'
 import dayjs from 'dayjs'
 import { EXPLICIT_SPACE } from '@/constants'
@@ -48,6 +48,7 @@ export default function Word({ word, onFinish }: WordProps) {
   const [wordState, setWordState] = useState<WordState>(initialWordState)
   const wordStat = useRef<WordStat>(initialStatInfo)
   const wordVisible = state.isWordVisible
+  const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
 
   const displayWord = useMemo(() => {
     // run only when word changes
@@ -100,7 +101,9 @@ export default function Word({ word, onFinish }: WordProps) {
 
     const inputChar = wordState.inputWord[inputLength - 1]
     const correctChar = displayWord[inputLength - 1]
-    if (inputChar === correctChar) {
+    const isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
+
+    if (isEqual) {
       if (inputLength >= displayWord.length) {
         const isAllCorrect = wordState.statesList.slice(0, -1).every((t) => t === 'correct')
         if (isAllCorrect) {
