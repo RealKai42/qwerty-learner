@@ -25,7 +25,10 @@ type WordState = {
   inputWord: string
   statesList: LetterState[]
   isFinish: boolean
+  // 是否出现输入错误
   hasWrong: boolean
+  // 记录是否已经出现过输入错误
+  hasMadeInputError: boolean
   wrongRepeat: number
 }
 
@@ -34,6 +37,7 @@ const initialWordState: WordState = {
   statesList: [],
   isFinish: false,
   hasWrong: false,
+  hasMadeInputError: false,
   wrongRepeat: 0,
 }
 
@@ -63,39 +67,36 @@ export default function Word({ word, onFinish }: WordProps) {
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
 
-  const updateInput = useCallback(
-    (updateAction: WordUpdateAction) => {
-      switch (updateAction.type) {
-        case 'add':
-          if (wordState.hasWrong) {
-            return
-          }
+  const updateInput = (updateAction: WordUpdateAction) => {
+    switch (updateAction.type) {
+      case 'add':
+        if (wordState.hasWrong) {
+          return
+        }
 
-          if (updateAction.value === ' ') {
-            updateAction.event.preventDefault()
-            setWordState((state) => ({
-              ...state,
-              inputWord: state.inputWord + EXPLICIT_SPACE,
-            }))
-          } else {
-            setWordState((state) => ({
-              ...state,
-              inputWord: state.inputWord + updateAction.value,
-            }))
-          }
+        if (updateAction.value === ' ') {
+          updateAction.event.preventDefault()
+          setWordState((state) => ({
+            ...state,
+            inputWord: state.inputWord + EXPLICIT_SPACE,
+          }))
+        } else {
+          setWordState((state) => ({
+            ...state,
+            inputWord: state.inputWord + updateAction.value,
+          }))
+        }
 
-          break
+        break
 
-        default:
-          console.warn('unknown update type', updateAction)
-      }
-    },
-    [wordState.hasWrong],
-  )
+      default:
+        console.warn('unknown update type', updateAction)
+    }
+  }
 
   useEffect(() => {
     const inputLength = wordState.inputWord.length
-    if (inputLength === 0) {
+    if (inputLength === 0 || displayWord.length === 0) {
       return
     }
 
@@ -129,6 +130,7 @@ export default function Word({ word, onFinish }: WordProps) {
         ...state,
         statesList: state.statesList.map((t, i) => (i === inputLength - 1 ? 'wrong' : t)),
         hasWrong: true,
+        hasMadeInputError: true,
       }))
       playBeepSound()
       dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
@@ -166,9 +168,15 @@ export default function Word({ word, onFinish }: WordProps) {
       wordStat.current.timeEnd = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
       wordStat.current.headword = word
       wordStat.current.countInput = wordStat.current.countCorrect + wordStat.current.countTypo
+
+      if (!wordState.hasMadeInputError) {
+        dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
+      }
+
       onFinish(wordStat.current)
     }
-  }, [wordState.isFinish, word, onFinish])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wordState.isFinish])
 
   useEffect(() => {
     if (wordState.wrongRepeat >= 4) {

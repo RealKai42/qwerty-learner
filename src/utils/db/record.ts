@@ -1,3 +1,5 @@
+import dayjs from 'dayjs'
+
 export interface IWordRecord {
   word: string
   timeStamp: number
@@ -8,7 +10,7 @@ export interface IWordRecord {
   // 正确次数中输入每个字母的时间差，可以据此计算出总时间
   timing: number[]
   // 出错的次数
-  errorCount: number
+  wrongCount: number
   // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 KeyCode
   mistakes: Mistakes
 }
@@ -24,24 +26,16 @@ export class WordRecord implements IWordRecord {
   dict: string
   chapter: number | null
   timing: number[]
-  errorCount: number
+  wrongCount: number
   mistakes: Mistakes
 
-  constructor(
-    word: string,
-    timeStamp: number,
-    chapter: number | null,
-    dict: string,
-    timing: number[],
-    errorCount: number,
-    mistakes: Mistakes,
-  ) {
+  constructor(word: string, chapter: number | null, dict: string, timing: number[], errorCount: number, mistakes: Mistakes) {
     this.word = word
-    this.timeStamp = timeStamp
+    this.timeStamp = dayjs.utc().unix()
     this.chapter = chapter
     this.dict = dict
     this.timing = timing
-    this.errorCount = errorCount
+    this.wrongCount = errorCount
     this.mistakes = mistakes
   }
 
@@ -61,13 +55,13 @@ export interface IChapterRecord {
   // 正确按键次数，输对一个字母即记录
   correctCount: number
   // 错误的按键次数。 出错会清空整个输入，但只记录一次错误
-  errorCount: number
+  wrongCount: number
   // 用户输入的单词总数，可能会使用循环等功能使输入总数大于 20
-  wordNumber: number
-  // 一次打对，未犯错，的单词数
-  correctWordCount: number
+  wordCount: number
+  // 一次打对未犯错的单词列表, 可以和 wordNumber 对比得出出错的单词 indexes
+  correctWordIndexes: number[]
   // 章节总单词数
-  totalWordCount: number
+  wordNumber: number
 }
 
 export class ChapterRecord implements IChapterRecord {
@@ -76,42 +70,41 @@ export class ChapterRecord implements IChapterRecord {
   timeStamp: number
   time: number
   correctCount: number
-  errorCount: number
+  wrongCount: number
+  wordCount: number
+  correctWordIndexes: number[]
   wordNumber: number
-  correctWordCount: number
-  totalWordCount: number
 
   constructor(
     dict: string,
     chapter: number | null,
-    timeStamp: number,
     time: number,
     correctCount: number,
-    errorCount: number,
+    wrongCount: number,
+    wordCount: number,
+    correctWordIndexes: number[],
     wordNumber: number,
-    correctWordCount: number,
-    totalWordCount: number,
   ) {
     this.dict = dict
     this.chapter = chapter
-    this.timeStamp = timeStamp
+    this.timeStamp = dayjs.utc().unix()
     this.time = time
     this.correctCount = correctCount
-    this.errorCount = errorCount
+    this.wrongCount = wrongCount
+    this.wordCount = wordCount
+    this.correctWordIndexes = correctWordIndexes
     this.wordNumber = wordNumber
-    this.correctWordCount = correctWordCount
-    this.totalWordCount = totalWordCount
   }
 
   get wpm() {
-    return Math.round((this.correctWordCount / this.time) * 60)
+    return Math.round((this.wordCount / this.time) * 60)
   }
 
   get inputAccuracy() {
-    return Math.round((this.correctCount / this.correctCount + this.errorCount) * 100)
+    return Math.round((this.correctCount / this.correctCount + this.wrongCount) * 100)
   }
 
   get wordAccuracy() {
-    return Math.round((this.correctWordCount / this.totalWordCount) * 100)
+    return Math.round((this.correctWordIndexes.length / this.wordNumber) * 100)
   }
 }

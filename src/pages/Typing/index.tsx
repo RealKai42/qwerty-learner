@@ -18,6 +18,7 @@ import { currentChapterAtom, currentDictInfoAtom, isLoopSingleWordAtom } from '@
 import { useMixPanelStatRecorder, WordStat } from '@/utils/mixpanel'
 import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
+import { useSaveChapterRecord } from '@/utils/db'
 
 const App: React.FC = () => {
   const [typingState, dispatch] = useReducer(typingReducer, initialState)
@@ -29,6 +30,7 @@ const App: React.FC = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
 
   const [wordStatRecorder, chapterStatRecorder] = useMixPanelStatRecorder()
+  const saveChapterRecord = useSaveChapterRecord()
 
   const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
@@ -119,6 +121,7 @@ const App: React.FC = () => {
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
 
       chapterStatRecorder(typingState)
+      saveChapterRecord(typingState)
     }
   }
 

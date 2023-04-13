@@ -84,7 +84,7 @@ export type ChapterStatUpload = ModeInfo & {
 
 export function useMixPanelStatRecorder() {
   const currentChapter = useAtomValue(currentChapterAtom)
-  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const { name: dictName } = useAtomValue(currentDictInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
   const keySoundsConfig = useAtomValue(keySoundsConfigAtom)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
@@ -98,7 +98,7 @@ export function useMixPanelStatRecorder() {
         ...wordStat,
         order: typingState.chapterData.index + 1,
         chapter: (currentChapter + 1).toString(),
-        wordlist: currentDictInfo.name,
+        wordlist: dictName,
         modeDictation: !typingState.isWordVisible,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
@@ -113,7 +113,7 @@ export function useMixPanelStatRecorder() {
     },
     [
       currentChapter,
-      currentDictInfo.name,
+      dictName,
       isDarkMode,
       isLoopSingleWord,
       keySoundsConfig.isOpen,
@@ -133,7 +133,7 @@ export function useMixPanelStatRecorder() {
         countTypo: typingState.chapterData.wrongCount,
         countCorrect: typingState.chapterData.correctCount,
         chapter: (currentChapter + 1).toString(),
-        wordlist: currentDictInfo.name,
+        wordlist: dictName,
         modeDictation: !typingState.isWordVisible,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
@@ -147,7 +147,7 @@ export function useMixPanelStatRecorder() {
     },
     [
       currentChapter,
-      currentDictInfo.name,
+      dictName,
       isDarkMode,
       isLoopSingleWord,
       keySoundsConfig.isOpen,

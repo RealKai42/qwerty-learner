@@ -4,10 +4,13 @@ import { createContext } from 'react'
 export type ChapterData = {
   words: Word[]
   index: number
+  // 用户输入的单词数
   wordCount: number
   correctCount: number
   wrongCount: number
   wrongWordIndexes: number[]
+  // 一次打对未犯错的单词索引
+  correctWordIndexes: number[]
 }
 export type TimerData = {
   time: number
@@ -33,6 +36,7 @@ export const initialState: TypingState = {
     correctCount: 0,
     wrongCount: 0,
     wrongWordIndexes: [],
+    correctWordIndexes: [],
   },
   timerData: {
     time: 0,
@@ -52,6 +56,7 @@ export enum TypingStateActionType {
   SET_IS_TYPING = 'SET_IS_TYPING',
   TOGGLE_IS_TYPING = 'TOGGLE_IS_TYPING',
   REPORT_WRONG_WORD = 'REPORT_WRONG_WORD',
+  REPORT_CORRECT_WORD = 'REPORT_CORRECT_WORD',
   NEXT_WORD = 'NEXT_WORD',
   LOOP_CURRENT_WORD = 'LOOP_CURRENT_WORD',
   FINISH_CHAPTER = 'FINISH_CHAPTER',
@@ -72,6 +77,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.SET_IS_TYPING; payload: boolean }
   | { type: TypingStateActionType.TOGGLE_IS_TYPING }
   | { type: TypingStateActionType.REPORT_WRONG_WORD }
+  | { type: TypingStateActionType.REPORT_CORRECT_WORD }
   | { type: TypingStateActionType.NEXT_WORD }
   | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
@@ -120,6 +126,23 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
           chapterData: {
             ...state.chapterData,
             wrongWordIndexes: [...state.chapterData.wrongWordIndexes, state.chapterData.index],
+          },
+        }
+      } else {
+        return state
+      }
+    }
+    case TypingStateActionType.REPORT_CORRECT_WORD: {
+      const prevWrongIndex = state.chapterData.wrongWordIndexes.indexOf(state.chapterData.index)
+      const prevCorrectIndex = state.chapterData.correctWordIndexes.indexOf(state.chapterData.index)
+
+      // 如果之前没有被记录过 出现错误或者正确
+      if (prevCorrectIndex === -1 && prevWrongIndex === -1) {
+        return {
+          ...state,
+          chapterData: {
+            ...state.chapterData,
+            correctWordIndexes: [...state.chapterData.correctWordIndexes, state.chapterData.index],
           },
         }
       } else {
