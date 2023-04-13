@@ -1,4 +1,3 @@
-export * from './statInfo'
 export * from './resource'
 
 export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de'
