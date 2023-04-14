@@ -12,12 +12,12 @@ export interface IWordRecord {
   // 出错的次数
   wrongCount: number
   // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 KeyCode
-  mistakes: Mistakes
+  mistakes: LetterMistakes
 }
 
-interface Mistakes {
+export interface LetterMistakes {
   // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 KeyCode
-  [index: number]: number[]
+  [index: number]: string[]
 }
 
 export class WordRecord implements IWordRecord {
@@ -27,15 +27,15 @@ export class WordRecord implements IWordRecord {
   chapter: number | null
   timing: number[]
   wrongCount: number
-  mistakes: Mistakes
+  mistakes: LetterMistakes
 
-  constructor(word: string, chapter: number | null, dict: string, timing: number[], errorCount: number, mistakes: Mistakes) {
+  constructor(word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: LetterMistakes) {
     this.word = word
     this.timeStamp = dayjs.utc().unix()
-    this.chapter = chapter
     this.dict = dict
+    this.chapter = chapter
     this.timing = timing
-    this.wrongCount = errorCount
+    this.wrongCount = wrongCount
     this.mistakes = mistakes
   }
 

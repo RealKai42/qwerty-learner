@@ -11,6 +11,8 @@ import dayjs from 'dayjs'
 import { EXPLICIT_SPACE } from '@/constants'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import InputHandler, { WordUpdateAction } from '../InputHandler'
+import { useSaveWordRecord, WordKeyLogger } from '@/utils/db'
+import { cloneDeep } from 'lodash'
 
 const initialStatInfo = {
   headword: '',
@@ -19,6 +21,11 @@ const initialStatInfo = {
   countInput: 0,
   countCorrect: 0,
   countTypo: 0,
+}
+
+const initialWordKeyLogger: WordKeyLogger = {
+  letterTimeArray: [],
+  letterMistake: {},
 }
 
 type WordState = {
@@ -50,17 +57,21 @@ export default function Word({ word, onFinish }: WordProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useState<WordState>(initialWordState)
-  const wordStat = useRef<WordStat>(initialStatInfo)
+  const wordStat = useRef<WordStat>(cloneDeep(initialStatInfo))
+  const wordKeyLogger = useRef<WordKeyLogger>(cloneDeep(initialWordKeyLogger))
   const wordVisible = state.isWordVisible
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
+
+  const saveWordRecord = useSaveWordRecord()
 
   const displayWord = useMemo(() => {
     // run only when word changes
     let wordString = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
     wordString = wordString.replace(new RegExp('…', 'g'), '..')
     setWordState(() => ({ ...initialWordState, statesList: new Array(wordString.length).fill('normal') }))
-    wordStat.current = { ...initialStatInfo }
+    wordStat.current = cloneDeep(initialStatInfo)
     wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+    wordKeyLogger.current = cloneDeep(initialWordKeyLogger)
     return wordString
   }, [word])
 
@@ -105,7 +116,11 @@ export default function Word({ word, onFinish }: WordProps) {
     const isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
 
     if (isEqual) {
+      // 输入正确时
+      wordKeyLogger.current.letterTimeArray.push(Date.now())
+
       if (inputLength >= displayWord.length) {
+        // 完成输入时
         const isAllCorrect = wordState.statesList.slice(0, -1).every((t) => t === 'correct')
         if (isAllCorrect) {
           setWordState((state) => ({
@@ -126,13 +141,24 @@ export default function Word({ word, onFinish }: WordProps) {
       wordStat.current.countCorrect += 1
       dispatch({ type: TypingStateActionType.INCREASE_CORRECT_COUNT })
     } else {
+      // 出错时
+      playBeepSound()
       setWordState((state) => ({
         ...state,
         statesList: state.statesList.map((t, i) => (i === inputLength - 1 ? 'wrong' : t)),
         hasWrong: true,
         hasMadeInputError: true,
       }))
-      playBeepSound()
+
+      // 更新 wordKeyLogger
+      if (wordKeyLogger.current.letterMistake[inputLength - 1]) {
+        wordKeyLogger.current.letterMistake[inputLength - 1].push(inputChar)
+      } else {
+        wordKeyLogger.current.letterMistake[inputLength - 1] = [inputChar]
+      }
+      // 重置时间记录 array
+      wordKeyLogger.current.letterTimeArray = []
+
       dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
       dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
       wordStat.current.countTypo += 1
@@ -173,6 +199,7 @@ export default function Word({ word, onFinish }: WordProps) {
         dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
       }
 
+      saveWordRecord(word, wordStat.current.countTypo, wordKeyLogger.current)
       onFinish(wordStat.current)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
