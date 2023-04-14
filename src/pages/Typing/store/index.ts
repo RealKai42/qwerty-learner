@@ -171,6 +171,10 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
     case TypingStateActionType.FINISH_CHAPTER:
       return {
         ...state,
+        chapterData: {
+          ...state.chapterData,
+          wordCount: state.chapterData.wordCount + 1,
+        },
         isTyping: false,
         isFinished: true,
       }

@@ -119,11 +119,18 @@ const App: React.FC = () => {
     } else {
       // 用户完成当前章节
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
+    }
+  }
+
+  useEffect(() => {
+    if (typingState.isFinished) {
+      // 当用户完成章节后，记录数据
 
       chapterStatRecorder(typingState)
       saveChapterRecord(typingState)
     }
-  }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [typingState.isFinished])
 
   useEffect(() => {
     // 启动计时器
