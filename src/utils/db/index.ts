@@ -35,7 +35,7 @@ export function useSaveChapterRecord() {
       } = typingState
       const chapterRecord = new ChapterRecord(
         dictID,
-        currentChapter,
+        currentChapter + 1,
         time,
         correctCount,
         wrongCount,
