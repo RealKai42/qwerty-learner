@@ -2,10 +2,10 @@ import { Dialog, Transition } from '@headlessui/react'
 import { toPng } from 'html-to-image'
 import { Fragment, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { saveAs } from 'file-saver'
-import { ReactComponent as KeyboardSvg } from '@/assets/sharePic/keyBackground.svg'
-import { ReactComponent as Image1 } from '@/assets/sharePic/image-1.svg'
-import { ReactComponent as Image2 } from '@/assets/sharePic/image-2.svg'
-import { ReactComponent as Image3 } from '@/assets/sharePic/image-3.svg'
+import keyboardSvg from '@/assets/sharePic/keyBackground.svg'
+import shareImage1 from '@/assets/sharePic/image-1.svg'
+import shareImage2 from '@/assets/sharePic/image-2.svg'
+import shareImage3 from '@/assets/sharePic/image-3.svg'
 import { TypingContext } from '../../store'
 import { useAtomValue } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
@@ -13,7 +13,7 @@ import { recordShareAction } from '@/utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PIC_RATIO = 3
-const PIC_LIST = [Image1, Image2, Image3]
+const PIC_LIST = [shareImage1, shareImage2, shareImage3]
 // 我知道有些有点怪，但怪的有趣(狗头)，powered by chatGPT
 const PROMOTE_LIST = [
   { word: '快人一手', sentence: '速度快得就像比别人多长了一只手' },
@@ -54,7 +54,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
 
   const dialogFocusRef = useRef<HTMLButtonElement>(null)
 
-  const Pic = useMemo(() => PIC_LIST[Math.floor(randomChoose.picRandom * PIC_LIST.length)], [randomChoose.picRandom])
+  const shareImage = useMemo(() => PIC_LIST[Math.floor(randomChoose.picRandom * PIC_LIST.length)], [randomChoose.picRandom])
   const promote = useMemo(() => PROMOTE_LIST[Math.floor(randomChoose.promoteRandom * PROMOTE_LIST.length)], [randomChoose.promoteRandom])
 
   useEffect(() => {
@@ -164,7 +164,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
               <div className="mt-1 text-xs font-normal text-gray-400">为键盘工作者设计的单词与肌肉记忆锻炼软件</div>
             </div>
             <div className="absolute -right-9 bottom-10 ">
-              <Pic className="w-48" />
+              <img src={shareImage} className="w-48" />
             </div>
           </div>
         </div>
@@ -196,7 +196,8 @@ function KeyboardKey({ char }: { char: string }) {
   return (
     <div className="relative -mx-1 h-18 w-18">
       <div className="absolute bottom-0 left-0 right-0 top-0">
-        <KeyboardSvg className="h-full w-full" />
+        <img src={keyboardSvg} className="h-full w-full" />
+        {/* <KeyboardSvg className="h-full w-full" /> */}
       </div>
       <div className="absolute left-0 right-0 top-2.5 flex items-center justify-center">
         <span className="text-base font-normal text-white" style={{ fontSize: '20px', transform: 'rotateX(30deg) ' }}>
