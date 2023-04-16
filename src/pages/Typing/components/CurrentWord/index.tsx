@@ -1,6 +1,6 @@
 import { phoneticConfigAtom } from '@/store'
 import { Word } from '@/typings'
-import { WordStat } from '@/typings'
+import { WordStat } from '@/utils/mixpanel'
 import { useAtomValue } from 'jotai'
 import { useContext } from 'react'
 import { TypingContext } from '../../store'
