@@ -81,7 +81,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
   return (
     <>
       <Transition.Root show={showState}>
-        <Dialog as="div" className="relative z-10" onClose={handleClose} initialFocus={dialogFocusRef}>
+        <Dialog as="div" className="relative z-50" onClose={handleClose} initialFocus={dialogFocusRef}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
