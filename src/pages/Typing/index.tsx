@@ -15,7 +15,7 @@ import ResultScreen from './components/ResultScreen'
 import CurrentWord from './components/CurrentWord'
 import { useAtomValue } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom, isLoopSingleWordAtom } from '@/store'
-import { useMixPanelStatRecorder, WordStat } from '@/utils/mixpanel'
+import { useMixPanelLogUploader, WordLog } from '@/utils/mixpanel'
 import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 import { useSaveChapterRecord } from '@/utils/db'
@@ -30,7 +30,7 @@ const App: React.FC = () => {
   const currentChapter = useAtomValue(currentChapterAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
 
-  const [wordStatRecorder, chapterStatRecorder] = useMixPanelStatRecorder()
+  const [wordLogUploader, chapterLogUploader] = useMixPanelLogUploader()
   const saveChapterRecord = useSaveChapterRecord()
 
   const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
@@ -106,7 +106,7 @@ const App: React.FC = () => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })
   }, [])
 
-  const onFinish = (wordStat: WordStat) => {
+  const onFinish = (wordLog: WordLog) => {
     if (typingState.chapterData.index < typingState.chapterData.words.length - 1 || isLoopSingleWord) {
       // 用户完成当前单词
       if (isLoopSingleWord) {
@@ -116,7 +116,7 @@ const App: React.FC = () => {
         dispatch({ type: TypingStateActionType.NEXT_WORD })
       }
 
-      wordStatRecorder(wordStat, typingState)
+      wordLogUploader(wordLog, typingState)
     } else {
       // 用户完成当前章节
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
@@ -126,7 +126,7 @@ const App: React.FC = () => {
   useEffect(() => {
     // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
     if (typingState.isFinished && !typingState.isSavingRecord) {
-      chapterStatRecorder(typingState)
+      chapterLogUploader(typingState)
       saveChapterRecord(typingState)
     }
 

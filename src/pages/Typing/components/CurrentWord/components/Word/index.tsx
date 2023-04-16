@@ -6,7 +6,7 @@ import style from './index.module.css'
 import WordSound from '../WordSound'
 import { useAtomValue } from 'jotai'
 import { isIgnoreCaseAtom, pronunciationIsOpenAtom } from '@/store'
-import { WordStat } from '@/utils/mixpanel'
+import { WordLog } from '@/utils/mixpanel'
 import dayjs from 'dayjs'
 import { EXPLICIT_SPACE } from '@/constants'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
@@ -50,14 +50,14 @@ const initialWordState: WordState = {
 
 export type WordProps = {
   word: string
-  onFinish: (wordStat: WordStat) => void
+  onFinish: (wordLog: WordLog) => void
 }
 
 export default function Word({ word, onFinish }: WordProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useState<WordState>(initialWordState)
-  const wordStat = useRef<WordStat>(cloneDeep(initialStatInfo))
+  const wordLog = useRef<WordLog>(cloneDeep(initialStatInfo))
   const wordKeyLogger = useRef<WordKeyLogger>(cloneDeep(initialWordKeyLogger))
   const wordVisible = state.isWordVisible
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
@@ -69,8 +69,8 @@ export default function Word({ word, onFinish }: WordProps) {
     let wordString = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
     wordString = wordString.replace(new RegExp('…', 'g'), '..')
     setWordState(() => ({ ...initialWordState, statesList: new Array(wordString.length).fill('normal') }))
-    wordStat.current = cloneDeep(initialStatInfo)
-    wordStat.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+    wordLog.current = cloneDeep(initialStatInfo)
+    wordLog.current.timeStart = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
     wordKeyLogger.current = cloneDeep(initialWordKeyLogger)
     return wordString
   }, [word])
@@ -138,7 +138,7 @@ export default function Word({ word, onFinish }: WordProps) {
         playKeySound()
       }
 
-      wordStat.current.countCorrect += 1
+      wordLog.current.countCorrect += 1
       dispatch({ type: TypingStateActionType.INCREASE_CORRECT_COUNT })
     } else {
       // 出错时
@@ -161,7 +161,7 @@ export default function Word({ word, onFinish }: WordProps) {
 
       dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
       dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
-      wordStat.current.countTypo += 1
+      wordLog.current.countTypo += 1
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.inputWord, displayWord, dispatch, isIgnoreCase])
@@ -190,18 +190,18 @@ export default function Word({ word, onFinish }: WordProps) {
 
   useEffect(() => {
     if (wordState.isFinish) {
-      // prepare wordStat
-      wordStat.current.timeEnd = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
-      wordStat.current.headword = word
-      wordStat.current.countInput = wordStat.current.countCorrect + wordStat.current.countTypo
+      // prepare wordLog
+      wordLog.current.timeEnd = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+      wordLog.current.headword = word
+      wordLog.current.countInput = wordLog.current.countCorrect + wordLog.current.countTypo
 
       if (!wordState.hasMadeInputError) {
         dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
       }
 
       dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
-      saveWordRecord(word, wordStat.current.countTypo, wordKeyLogger.current)
-      onFinish(wordStat.current)
+      saveWordRecord(word, wordLog.current.countTypo, wordKeyLogger.current)
+      onFinish(wordLog.current)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.isFinish])

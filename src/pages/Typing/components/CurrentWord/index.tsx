@@ -1,6 +1,6 @@
 import { phoneticConfigAtom } from '@/store'
 import { Word } from '@/typings'
-import { WordStat } from '@/utils/mixpanel'
+import { WordLog } from '@/utils/mixpanel'
 import { useAtomValue } from 'jotai'
 import { useContext } from 'react'
 import { TypingContext } from '../../store'
@@ -10,7 +10,7 @@ import { default as WordComponent } from './components/Word'
 
 export type CurrentWordProps = {
   word: Word
-  onFinish: (wordStat: WordStat) => void
+  onFinish: (wordLog: WordLog) => void
 }
 
 export default function CurrentWord({ word, onFinish }: CurrentWordProps) {

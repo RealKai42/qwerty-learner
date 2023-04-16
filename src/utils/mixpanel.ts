@@ -55,7 +55,7 @@ export type ModeInfo = {
   pronunciationOption: PronunciationType | 'none'
 }
 
-export type WordStat = {
+export type WordLog = {
   headword: string
   timeStart: string
   timeEnd: string
@@ -64,7 +64,7 @@ export type WordStat = {
   countTypo: number
 }
 
-export type WordStatUpload = WordStat &
+export type WordLogUpload = WordLog &
   ModeInfo & {
     order: number
     chapter: string
@@ -72,7 +72,7 @@ export type WordStatUpload = WordStat &
     isLoopSingleWord: boolean
   }
 
-export type ChapterStatUpload = ModeInfo & {
+export type ChapterLogUpload = ModeInfo & {
   chapter: string
   wordlist: string
   timeEnd: string
@@ -82,7 +82,7 @@ export type ChapterStatUpload = ModeInfo & {
   countTypo: number
 }
 
-export function useMixPanelStatRecorder() {
+export function useMixPanelLogUploader() {
   const currentChapter = useAtomValue(currentChapterAtom)
   const { name: dictName } = useAtomValue(currentDictInfoAtom)
   const isDarkMode = useAtomValue(isOpenDarkModeAtom)
@@ -92,10 +92,10 @@ export function useMixPanelStatRecorder() {
   const randomConfig = useAtomValue(randomConfigAtom)
   const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
 
-  const wordStatRecorder = useCallback(
-    (wordStat: WordStat, typingState: TypingState) => {
-      const props: WordStatUpload = {
-        ...wordStat,
+  const wordLogUploader = useCallback(
+    (wordLog: WordLog, typingState: TypingState) => {
+      const props: WordLogUpload = {
+        ...wordLog,
         order: typingState.chapterData.index + 1,
         chapter: (currentChapter + 1).toString(),
         wordlist: dictName,
@@ -124,9 +124,9 @@ export function useMixPanelStatRecorder() {
     ],
   )
 
-  const chapterStatRecorder = useCallback(
+  const chapterLogUploader = useCallback(
     (typingState: TypingState) => {
-      const props: ChapterStatUpload = {
+      const props: ChapterLogUpload = {
         timeEnd: dayjs.utc().format('YYYY-MM-DD HH:mm:ss'),
         duration: typingState.timerData.time,
         countInput: typingState.chapterData.correctCount + typingState.chapterData.wrongCount,
@@ -158,5 +158,5 @@ export function useMixPanelStatRecorder() {
     ],
   )
 
-  return [wordStatRecorder, chapterStatRecorder] as const
+  return [wordLogUploader, chapterLogUploader] as const
 }
