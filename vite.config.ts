@@ -9,7 +9,7 @@ import { getLastCommit } from 'git-last-commit'
 // https://vitejs.dev/config/
 export default defineConfig(async () => {
   const latestCommitHash = await new Promise<string>((resolve) => {
-    return getLastCommit((err, commit) => err ? "unknown" : resolve(commit.shortHash))
+    return getLastCommit((err, commit) => (err ? 'unknown' : resolve(commit.shortHash)))
   })
   return {
     plugins: [react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }), svgr()],
@@ -18,7 +18,7 @@ export default defineConfig(async () => {
     },
     define: {
       REACT_APP_DEPLOY_ENV: JSON.stringify(process.env.REACT_APP_DEPLOY_ENV),
-      LATEST_COMMIT_HASH: JSON.stringify(latestCommitHash + (process.env.NODE_ENV === 'production' ?  '' : ' (dev)')),
+      LATEST_COMMIT_HASH: JSON.stringify(latestCommitHash + (process.env.NODE_ENV === 'production' ? '' : ' (dev)')),
     },
     resolve: {
       alias: {
