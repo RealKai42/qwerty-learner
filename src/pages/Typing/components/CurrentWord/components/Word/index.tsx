@@ -199,6 +199,7 @@ export default function Word({ word, onFinish }: WordProps) {
         dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
       }
 
+      dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
       saveWordRecord(word, wordStat.current.countTypo, wordKeyLogger.current)
       onFinish(wordStat.current)
     }

@@ -1,8 +1,8 @@
-import { TypingState } from '@/pages/Typing/store'
+import { TypingContext, TypingState, TypingStateActionType } from '@/pages/Typing/store'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import Dexie, { Table } from 'dexie'
 import { useAtomValue } from 'jotai'
-import { useCallback } from 'react'
+import { useCallback, useContext } from 'react'
 import { WordRecord, ChapterRecord, IWordRecord, IChapterRecord, LetterMistakes } from './record'
 
 class RecordDB extends Dexie {
@@ -30,18 +30,20 @@ export function useSaveChapterRecord() {
   const saveChapterRecord = useCallback(
     (typingState: TypingState) => {
       const {
-        chapterData: { correctCount, wrongCount, wordCount, correctWordIndexes, words },
+        chapterData: { correctCount, wrongCount, wordCount, correctWordIndexes, words, wordRecordIds },
         timerData: { time },
       } = typingState
+
       const chapterRecord = new ChapterRecord(
         dictID,
-        currentChapter + 1,
+        currentChapter,
         time,
         correctCount,
         wrongCount,
         wordCount,
         correctWordIndexes,
         words.length,
+        wordRecordIds ?? [],
       )
       db.chapterRecords.add(chapterRecord)
     },
@@ -60,8 +62,10 @@ export function useSaveWordRecord() {
   const currentChapter = useAtomValue(currentChapterAtom)
   const { id: dictID } = useAtomValue(currentDictInfoAtom)
 
+  const { dispatch } = useContext(TypingContext) ?? {}
+
   const saveWordRecord = useCallback(
-    (word: string, errorCount: number, wordKeyLogger: WordKeyLogger) => {
+    async (word: string, errorCount: number, wordKeyLogger: WordKeyLogger) => {
       const { letterTimeArray, letterMistake } = wordKeyLogger
       const timing = []
       for (let i = 1; i < letterTimeArray.length; i++) {
@@ -70,9 +74,19 @@ export function useSaveWordRecord() {
       }
 
       const wordRecord = new WordRecord(word, dictID, currentChapter, timing, errorCount, letterMistake)
-      db.wordRecords.add(wordRecord)
+
+      let dbID = -1
+      try {
+        dbID = await db.wordRecords.add(wordRecord)
+      } catch (e) {
+        console.error(e)
+      }
+      if (dispatch) {
+        dbID > 0 && dispatch({ type: TypingStateActionType.ADD_WORD_RECORD_ID, payload: dbID })
+        dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: false })
+      }
     },
-    [currentChapter, dictID],
+    [currentChapter, dictID, dispatch],
   )
 
   return saveWordRecord

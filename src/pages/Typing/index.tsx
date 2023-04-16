@@ -19,9 +19,10 @@ import { useMixPanelStatRecorder, WordStat } from '@/utils/mixpanel'
 import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 import { useSaveChapterRecord } from '@/utils/db'
+import { cloneDeep } from 'lodash'
 
 const App: React.FC = () => {
-  const [typingState, dispatch] = useReducer(typingReducer, initialState)
+  const [typingState, dispatch] = useReducer(typingReducer, cloneDeep(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
   const currentWord = typingState.chapterData.words[typingState.chapterData.index]
@@ -123,14 +124,14 @@ const App: React.FC = () => {
   }
 
   useEffect(() => {
-    if (typingState.isFinished) {
-      // 当用户完成章节后，记录数据
-
+    // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
+    if (typingState.isFinished && !typingState.isSavingRecord) {
       chapterStatRecorder(typingState)
       saveChapterRecord(typingState)
     }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [typingState.isFinished])
+  }, [typingState.isFinished, typingState.isSavingRecord])
 
   useEffect(() => {
     // 启动计时器

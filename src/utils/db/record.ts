@@ -5,18 +5,18 @@ export interface IWordRecord {
   timeStamp: number
   // 正常章节为 dictKey, 其他功能则为对应的类型
   dict: string
-  // 用户可能是在 错题/其他类似组件中 进行的练习则为 null
+  // 用户可能是在 错题/其他类似组件中 进行的练习则为 null, start from 0
   chapter: number | null
   // 正确次数中输入每个字母的时间差，可以据此计算出总时间
   timing: number[]
   // 出错的次数
   wrongCount: number
-  // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 KeyCode
+  // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 e.key
   mistakes: LetterMistakes
 }
 
 export interface LetterMistakes {
-  // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 KeyCode
+  // 每个字母被错误输入成什么, index 为字母的索引, 数组内为错误的 e.key
   [index: number]: string[]
 }
 
@@ -62,6 +62,8 @@ export interface IChapterRecord {
   correctWordIndexes: number[]
   // 章节总单词数
   wordNumber: number
+  // 单词 record 的 id 列表
+  wordRecordIds: number[]
 }
 
 export class ChapterRecord implements IChapterRecord {
@@ -74,6 +76,7 @@ export class ChapterRecord implements IChapterRecord {
   wordCount: number
   correctWordIndexes: number[]
   wordNumber: number
+  wordRecordIds: number[]
 
   constructor(
     dict: string,
@@ -84,6 +87,7 @@ export class ChapterRecord implements IChapterRecord {
     wordCount: number,
     correctWordIndexes: number[],
     wordNumber: number,
+    wordRecordIds: number[],
   ) {
     this.dict = dict
     this.chapter = chapter
@@ -94,6 +98,7 @@ export class ChapterRecord implements IChapterRecord {
     this.wordCount = wordCount
     this.correctWordIndexes = correctWordIndexes
     this.wordNumber = wordNumber
+    this.wordRecordIds = wordRecordIds
   }
 
   get wpm() {

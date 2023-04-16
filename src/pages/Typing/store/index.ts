@@ -1,4 +1,5 @@
 import { Word } from '@/typings'
+import { cloneDeep } from 'lodash'
 import { createContext } from 'react'
 
 export type ChapterData = {
@@ -11,6 +12,8 @@ export type ChapterData = {
   wrongWordIndexes: number[]
   // 一次打对未犯错的单词索引
   correctWordIndexes: number[]
+  // 本章节用户输入的单词的 record id 列表
+  wordRecordIds: number[]
 }
 export type TimerData = {
   time: number
@@ -26,6 +29,8 @@ export type TypingState = {
   isShowSkip: boolean
   isWordVisible: boolean
   isTransVisible: boolean
+  // 是否正在保存数据
+  isSavingRecord: boolean
 }
 
 export const initialState: TypingState = {
@@ -37,6 +42,7 @@ export const initialState: TypingState = {
     wrongCount: 0,
     wrongWordIndexes: [],
     correctWordIndexes: [],
+    wordRecordIds: [],
   },
   timerData: {
     time: 0,
@@ -48,6 +54,7 @@ export const initialState: TypingState = {
   isShowSkip: false,
   isWordVisible: true,
   isTransVisible: true,
+  isSavingRecord: false,
 }
 
 export enum TypingStateActionType {
@@ -69,6 +76,8 @@ export enum TypingStateActionType {
   TOGGLE_WORD_VISIBLE = 'TOGGLE_WORD_VISIBLE',
   TOGGLE_TRANS_VISIBLE = 'TOGGLE_TRANS_VISIBLE',
   TICK_TIMER = 'TICK_TIMER',
+  ADD_WORD_RECORD_ID = 'ADD_WORD_RECORD_ID',
+  SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
 }
 
 export type TypingStateAction =
@@ -90,6 +99,8 @@ export type TypingStateAction =
   | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER }
+  | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
+  | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
 
 type Dispatch = (action: TypingStateAction) => void
 
@@ -213,31 +224,42 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
         }
       }
     }
-    case TypingStateActionType.REPEAT_CHAPTER:
-      return {
-        ...initialState,
-        chapterData: {
-          ...initialState.chapterData,
-          words: state.chapterData.words,
-        },
-        isTyping: true,
-      }
+    case TypingStateActionType.REPEAT_CHAPTER: {
+      const newState = cloneDeep(initialState)
 
-    case TypingStateActionType.DICTATION_CHAPTER:
       return {
-        ...initialState,
+        ...newState,
         chapterData: {
-          ...initialState.chapterData,
+          ...newState.chapterData,
           words: state.chapterData.words,
         },
         isTyping: true,
-        isWordVisible: false,
       }
-    case TypingStateActionType.NEXT_CHAPTER:
+    }
+
+    case TypingStateActionType.DICTATION_CHAPTER: {
+      const newState = cloneDeep(initialState)
+
       return {
-        ...initialState,
+        ...newState,
+        chapterData: {
+          ...newState.chapterData,
+          words: state.chapterData.words,
+        },
+        isTyping: true,
+        isWordVisible: true,
+      }
+    }
+
+    case TypingStateActionType.NEXT_CHAPTER: {
+      const newState = cloneDeep(initialState)
+
+      return {
+        ...newState,
         isTyping: true,
       }
+    }
+
     case TypingStateActionType.TOGGLE_WORD_VISIBLE:
       return {
         ...state,
@@ -266,6 +288,21 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
           accuracy,
           wpm,
         },
+      }
+    }
+    case TypingStateActionType.ADD_WORD_RECORD_ID: {
+      return {
+        ...state,
+        chapterData: {
+          ...state.chapterData,
+          wordRecordIds: [...state.chapterData.wordRecordIds, action.payload],
+        },
+      }
+    }
+    case TypingStateActionType.SET_IS_SAVING_RECORD: {
+      return {
+        ...state,
+        isSavingRecord: action.payload,
       }
     }
     default: {
