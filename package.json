@@ -84,6 +84,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "git-last-commit": "^1.0.1",
     "husky": "^8.0.0",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
