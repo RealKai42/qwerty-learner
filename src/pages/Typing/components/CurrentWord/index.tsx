@@ -1,6 +1,5 @@
 import { phoneticConfigAtom } from '@/store'
 import { Word } from '@/typings'
-import { WordLog } from '@/utils/mixpanel'
 import { useAtomValue } from 'jotai'
 import { useContext } from 'react'
 import { TypingContext } from '../../store'
@@ -8,12 +7,7 @@ import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import { default as WordComponent } from './components/Word'
 
-export type CurrentWordProps = {
-  word: Word
-  onFinish: (wordLog: WordLog) => void
-}
-
-export default function CurrentWord({ word, onFinish }: CurrentWordProps) {
+export default function CurrentWord({ word, onFinish }: { word: Word; onFinish: () => void }) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state } = useContext(TypingContext)!

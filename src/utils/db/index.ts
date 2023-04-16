@@ -65,15 +65,24 @@ export function useSaveWordRecord() {
   const { dispatch } = useContext(TypingContext) ?? {}
 
   const saveWordRecord = useCallback(
-    async (word: string, errorCount: number, wordKeyLogger: WordKeyLogger) => {
-      const { letterTimeArray, letterMistake } = wordKeyLogger
+    async ({
+      word,
+      wrongCount,
+      letterTimeArray,
+      letterMistake,
+    }: {
+      word: string
+      wrongCount: number
+      letterTimeArray: number[]
+      letterMistake: LetterMistakes
+    }) => {
       const timing = []
       for (let i = 1; i < letterTimeArray.length; i++) {
         const diff = letterTimeArray[i] - letterTimeArray[i - 1]
         timing.push(diff)
       }
 
-      const wordRecord = new WordRecord(word, dictID, currentChapter, timing, errorCount, letterMistake)
+      const wordRecord = new WordRecord(word, dictID, currentChapter, timing, wrongCount, letterMistake)
 
       let dbID = -1
       try {

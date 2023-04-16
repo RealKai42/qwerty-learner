@@ -23,6 +23,7 @@
     "file-saver": "^2.0.5",
     "howler": "^2.2.3",
     "html-to-image": "^1.11.11",
+    "immer": "^9.0.21",
     "jotai": "^2.0.3",
     "lodash": "^4.17.20",
     "mixpanel-browser": "^2.45.0",
@@ -37,6 +38,7 @@
     "source-map-explorer": "^2.5.2",
     "swr": "^2.0.4",
     "typescript": "^4.0.3",
+    "use-immer": "^0.9.0",
     "use-sound": "^4.0.1"
   },
   "scripts": {
