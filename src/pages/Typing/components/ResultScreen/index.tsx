@@ -46,7 +46,7 @@ const ResultScreen = () => {
     const seconds = state.timerData.time
     const minutes = Math.floor(seconds / 60)
     const minuteString = minutes < 10 ? '0' + minutes : minutes + ''
-    const secondString = seconds < 10 ? '0' + seconds : seconds + ''
+    const secondString = seconds % 60 < 10 ? '0' + seconds : seconds + ''
     return `${minuteString}:${secondString}`
   }, [state.timerData.time])
 
