@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useReducer, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import Speed from './components/Speed'
 import Loading from '@/components/Loading'
@@ -20,9 +20,10 @@ import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 import { useSaveChapterRecord } from '@/utils/db'
 import { cloneDeep } from 'lodash'
+import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
-  const [typingState, dispatch] = useReducer(typingReducer, cloneDeep(initialState))
+  const [typingState, dispatch] = useImmerReducer(typingReducer, cloneDeep(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
   const currentWord = typingState.chapterData.words[typingState.chapterData.index]
@@ -68,7 +69,7 @@ const App: React.FC = () => {
     return () => {
       window.removeEventListener('blur', onBlur)
     }
-  }, [])
+  }, [dispatch])
 
   useEffect(() => {
     if (!typingState.isTyping) {
@@ -84,7 +85,7 @@ const App: React.FC = () => {
         window.removeEventListener('keydown', onKeyDown)
       }
     }
-  }, [typingState.isTyping])
+  }, [typingState.isTyping, dispatch])
 
   useEffect(() => {
     if (words !== undefined) {
@@ -93,7 +94,7 @@ const App: React.FC = () => {
         payload: words,
       })
     }
-  }, [words])
+  }, [words, dispatch])
 
   useEffect(() => {
     if (typingState.chapterData.words?.length > 0) {
@@ -105,7 +106,7 @@ const App: React.FC = () => {
 
   const skipWord = useCallback(() => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })
-  }, [])
+  }, [dispatch])
 
   const onFinish = () => {
     if (typingState.chapterData.index < typingState.chapterData.words.length - 1 || isLoopSingleWord) {
@@ -141,7 +142,7 @@ const App: React.FC = () => {
       }, 1000)
     }
     return () => clearInterval(intervalId)
-  }, [typingState.isTyping])
+  }, [typingState.isTyping, dispatch])
 
   return (
     <TypingContext.Provider value={{ state: typingState, dispatch }}>
