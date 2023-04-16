@@ -64,6 +64,7 @@ export enum TypingStateActionType {
   TOGGLE_WORD_VISIBLE = 'TOGGLE_WORD_VISIBLE',
   TOGGLE_TRANS_VISIBLE = 'TOGGLE_TRANS_VISIBLE',
   TICK_TIMER = 'TICK_TIMER',
+  SET_WORD_INDEX = 'SET_WORD_INDEX',
 }
 
 export type TypingStateAction =
@@ -84,6 +85,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER }
+  | { type: TypingStateActionType.SET_WORD_INDEX; payload: number }
 
 type Dispatch = (action: TypingStateAction) => void
 
@@ -241,6 +243,14 @@ export const typingReducer = (state: TypingState, action: TypingStateAction): Ty
         },
       }
     }
+    case TypingStateActionType.SET_WORD_INDEX:
+      return {
+        ...state,
+        chapterData: {
+          ...state.chapterData,
+          index: action.payload,
+        },
+      }
     default: {
       return state
     }

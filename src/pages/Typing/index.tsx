@@ -29,12 +29,18 @@ import mixpanel from 'mixpanel-browser'
 import dayjs from 'dayjs'
 import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
+import SideWordList from './components/SideWordList'
 
 const App: React.FC = () => {
   const [typingState, dispatch] = useReducer(typingReducer, initialState)
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
   const currentWord = typingState.chapterData.words[typingState.chapterData.index]
+
+  const [isSideWindowVisible, setIsSideWindowVisible] = useState(false)
+  const handleWordClick = (index: number) => {
+    dispatch({ type: TypingStateActionType.SET_WORD_INDEX, payload: index })
+  }
 
   const currentChapter = useAtomValue(currentChapterAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
@@ -224,6 +230,13 @@ const App: React.FC = () => {
           <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
             <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="h-1/3"></div>
+              <SideWordList
+                words={typingState.chapterData.words}
+                index={typingState.chapterData.index}
+                isVisible={isSideWindowVisible}
+                setIsVisible={setIsSideWindowVisible}
+                onWordClick={handleWordClick}
+              />
               {!typingState.isFinished && (
                 <>
                   {typingState.isTyping ? (
