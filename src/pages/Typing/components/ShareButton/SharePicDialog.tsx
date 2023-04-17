@@ -203,7 +203,6 @@ function KeyboardKey({ char }: { char: string }) {
     <div className="relative -mx-1 h-18 w-18">
       <div className="absolute bottom-0 left-0 right-0 top-0">
         <img src={keyboardSvg} className="h-full w-full" />
-        {/* <KeyboardSvg className="h-full w-full" /> */}
       </div>
       <div className="absolute left-0 right-0 top-2.5 flex items-center justify-center">
         <span className="text-base font-normal text-white" style={{ fontSize: '20px', transform: 'rotateX(30deg) ' }}>

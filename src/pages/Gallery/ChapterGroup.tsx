@@ -11,7 +11,7 @@ const ChapterGroup: React.FC<ChapterGroupProps> = ({ totalWords }) => {
 
   return (
     <main className="mr-4 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {range(currentDictInfo.chapterCount).map((index) =>
+      {range(0, currentDictInfo.chapterCount, 1).map((index) =>
         index + 1 === currentDictInfo.chapterCount ? (
           <ChapterButton
             wordCount={totalWords % CHAPTER_LENGTH || CHAPTER_LENGTH}
