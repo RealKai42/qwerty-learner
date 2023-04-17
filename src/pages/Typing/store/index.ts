@@ -1,5 +1,4 @@
 import { Word } from '@/typings'
-import { cloneDeep } from '@/utils/cloneDeep'
 import { createContext } from 'react'
 
 export type ChapterData = {
@@ -165,24 +164,25 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       } else {
         state.chapterData.index = newIndex
       }
+      state.isShowSkip = false
       break
     }
     case TypingStateActionType.REPEAT_CHAPTER: {
-      const newState = cloneDeep(initialState)
+      const newState = structuredClone(initialState)
       newState.isTyping = true
       newState.chapterData.words = state.chapterData.words
       return newState
     }
 
     case TypingStateActionType.DICTATION_CHAPTER: {
-      const newState = cloneDeep(initialState)
+      const newState = structuredClone(initialState)
       newState.isTyping = true
       newState.chapterData.words = state.chapterData.words
       newState.isWordVisible = false
       return newState
     }
     case TypingStateActionType.NEXT_CHAPTER: {
-      const newState = cloneDeep(initialState)
+      const newState = structuredClone(initialState)
       newState.isTyping = true
       return newState
     }

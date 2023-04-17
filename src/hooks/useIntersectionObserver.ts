@@ -1,5 +1,8 @@
 import { RefObject, useEffect, useState } from 'react'
 
+/**
+ * source: https://usehooks-ts.com/react-hook/use-intersection-observer
+ */
 interface Args extends IntersectionObserverInit {
   freezeOnceVisible?: boolean
 }

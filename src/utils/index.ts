@@ -2,7 +2,7 @@ import { Howl } from 'howler'
 export * from './mixpanel'
 
 export const isLegal = (key: string): boolean => {
-  const banedKeys = [
+  const bannedKeys = [
     'Enter',
     'Backspace',
     'Delete',
@@ -19,7 +19,7 @@ export const isLegal = (key: string): boolean => {
     'Super',
     'OS',
   ]
-  if (banedKeys.includes(key)) return false
+  if (bannedKeys.includes(key)) return false
 
   return true
 }

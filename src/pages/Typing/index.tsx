@@ -19,11 +19,10 @@ import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 import { useSaveChapterRecord } from '@/utils/db'
-import { cloneDeep } from '@/utils/cloneDeep'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
-  const [typingState, dispatch] = useImmerReducer(typingReducer, cloneDeep(initialState))
+  const [typingState, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
   const currentWord = typingState.chapterData.words[typingState.chapterData.index]

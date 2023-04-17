@@ -11,7 +11,6 @@ import { EXPLICIT_SPACE } from '@/constants'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import InputHandler, { WordUpdateAction } from '../InputHandler'
 import { useSaveWordRecord } from '@/utils/db'
-import { cloneDeep } from '@/utils/cloneDeep'
 import { useImmer } from 'use-immer'
 import { LetterMistakes } from '@/utils/db/record'
 import { useMixPanelWordLogUploader } from '@/utils'
@@ -19,7 +18,7 @@ import { useMixPanelWordLogUploader } from '@/utils'
 type WordState = {
   displayWord: string
   inputWord: string
-  LetterStates: LetterState[]
+  letterStates: LetterState[]
   isFinished: boolean
   // 是否出现输入错误
   hasWrong: boolean
@@ -38,7 +37,7 @@ type WordState = {
 const initialWordState: WordState = {
   displayWord: '',
   inputWord: '',
-  LetterStates: [],
+  letterStates: [],
   isFinished: false,
   hasWrong: false,
   hasMadeInputWrong: false,
@@ -54,7 +53,7 @@ const initialWordState: WordState = {
 export default function Word({ word, onFinish }: { word: string; onFinish: () => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
-  const [wordState, setWordState] = useImmer<WordState>(cloneDeep(initialWordState))
+  const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
 
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
   const saveWordRecord = useSaveWordRecord()
@@ -66,9 +65,9 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
     // run only when word changes
     let wordString = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
     wordString = wordString.replace(new RegExp('…', 'g'), '..')
-    const newWordState = cloneDeep(initialWordState)
+    const newWordState = structuredClone(initialWordState)
     newWordState.displayWord = wordString
-    newWordState.LetterStates = new Array(wordString.length).fill('normal')
+    newWordState.letterStates = new Array(wordString.length).fill('normal')
     newWordState.startTime = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
     setWordState(newWordState)
   }, [word, setWordState])
@@ -118,14 +117,14 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
       if (inputLength >= wordState.displayWord.length) {
         // 完成输入时
         setWordState((state) => {
-          state.LetterStates[inputLength - 1] = 'correct'
+          state.letterStates[inputLength - 1] = 'correct'
           state.isFinished = true
           state.endTime = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
         })
         playHintSound()
       } else {
         setWordState((state) => {
-          state.LetterStates[inputLength - 1] = 'correct'
+          state.letterStates[inputLength - 1] = 'correct'
         })
         playKeySound()
       }
@@ -136,7 +135,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
       playBeepSound()
 
       setWordState((state) => {
-        state.LetterStates[inputLength - 1] = 'wrong'
+        state.letterStates[inputLength - 1] = 'wrong'
         state.hasWrong = true
         state.hasMadeInputWrong = true
         state.wrongCount += 1
@@ -159,7 +158,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
       const timer = setTimeout(() => {
         setWordState((state) => {
           state.inputWord = ''
-          state.LetterStates = new Array(state.LetterStates.length).fill('normal')
+          state.letterStates = new Array(state.letterStates.length).fill('normal')
           state.hasWrong = false
         })
       }, 300)
@@ -215,8 +214,8 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
                 <Letter
                   key={`${index}-${t}`}
                   letter={t}
-                  visible={wordState.LetterStates[index] === 'correct' ? true : state.isWordVisible}
-                  state={wordState.LetterStates[index]}
+                  visible={wordState.letterStates[index] === 'correct' ? true : state.isWordVisible}
+                  state={wordState.letterStates[index]}
                 />
               )
             })}
