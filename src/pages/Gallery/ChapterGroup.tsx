@@ -4,10 +4,15 @@ import ChapterButton from './ChapterButton'
 import { useAtom, useAtomValue } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import { CHAPTER_LENGTH } from '@/constants'
+import { useUpdateEffect } from 'react-use'
 
 const ChapterGroup: React.FC<ChapterGroupProps> = ({ totalWords }) => {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
+
+  useUpdateEffect(() => {
+    setCurrentChapter(0)
+  }, [currentDictInfo, setCurrentChapter])
 
   return (
     <main className="mr-4 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
