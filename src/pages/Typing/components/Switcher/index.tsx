@@ -96,7 +96,7 @@ export default function Switcher() {
           <FontAwesomeIcon icon={state?.isWordVisible ? 'eye' : 'eye-slash'} fixedWidth />
         </button>
       </Tooltip>
-      <Tooltip content="开关释意显示（Ctrl + T）">
+      <Tooltip content="开关释义显示（Ctrl + T）">
         <button
           className={`${state?.isTransVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
