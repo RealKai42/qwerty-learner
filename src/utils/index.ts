@@ -1,26 +1,26 @@
 import { Howl } from 'howler'
 export * from './mixpanel'
 
-export const isLegal = (key: string): boolean => {
-  const bannedKeys = [
-    'Enter',
-    'Backspace',
-    'Delete',
-    'Tab',
-    'CapsLock',
-    'Shift',
-    'Control',
-    'Alt',
-    'Meta',
-    'Escape',
-    'Fn',
-    'FnLock',
-    'Hyper',
-    'Super',
-    'OS',
-  ]
-  if (bannedKeys.includes(key)) return false
+const bannedKeys = [
+  'Enter',
+  'Backspace',
+  'Delete',
+  'Tab',
+  'CapsLock',
+  'Shift',
+  'Control',
+  'Alt',
+  'Meta',
+  'Escape',
+  'Fn',
+  'FnLock',
+  'Hyper',
+  'Super',
+  'OS',
+]
 
+export const isLegal = (key: string): boolean => {
+  if (bannedKeys.includes(key)) return false
   return true
 }
 
