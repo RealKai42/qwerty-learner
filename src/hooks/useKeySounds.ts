@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai'
 import useSound from 'use-sound'
 import { SOUND_URL_PREFIX } from '@/resources/soundResource'
-import { noop } from 'lodash'
+import noop from '@/utils/noop'
 import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
 
 export type PlayFunction = ReturnType<typeof useSound>[0]

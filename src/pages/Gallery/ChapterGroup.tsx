@@ -1,5 +1,5 @@
 import React from 'react'
-import { range } from 'lodash'
+import range from '@/utils/range'
 import ChapterButton from './ChapterButton'
 import { useAtom, useAtomValue } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
