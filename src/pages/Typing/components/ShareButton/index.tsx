@@ -1,8 +1,8 @@
 import { recordShareAction } from '@/utils'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useCallback, useMemo, useState } from 'react'
 import SharePicDialog from './SharePicDialog'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
+import { IconShare2 } from '@tabler/icons-react'
 
 export default function ShareButton() {
   const [isShowSharePanel, setIsShowSharePanel] = useState(false)
@@ -35,13 +35,16 @@ export default function ShareButton() {
     <>
       {isShowSharePanel && <SharePicDialog showState={isShowSharePanel} setShowState={setIsShowSharePanel} randomChoose={randomChoose} />}
 
-      <FontAwesomeIcon
+      <button
         ref={refs.setReference}
+        type="button"
         {...getReferenceProps()}
-        icon={['fas', 'share-from-square']}
-        className="ml-[2px] cursor-pointer text-xl text-indigo-400"
+        className="cursor-pointer text-xl text-indigo-400"
         onClick={onClickShare}
-      />
+        title="分享你的成绩给朋友"
+      >
+        <IconShare2 />
+      </button>
 
       {showTranslation && (
         <div
