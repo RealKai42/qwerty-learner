@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Dialog, Tab, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
 import SoundSetting from './SoundSetting'
 import AdvancedSetting from './AdvancedSetting'
 import { TypingContext, TypingStateActionType } from '../../store'
+import { IconSettings, IconEar, IconAdjustmentsHorizontal, IconX } from '@tabler/icons-react'
 
 export default function Setting() {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,7 +30,7 @@ export default function Setting() {
           isOpen && 'bg-indigo-400 text-white'
         }`}
       >
-        <FontAwesomeIcon icon="gear" fixedWidth className="focus:outline-none" />
+        <IconSettings className="h-6 w-6 focus:outline-none" />
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
@@ -61,12 +61,9 @@ export default function Setting() {
                 <Dialog.Panel className="flex w-200 flex-col overflow-hidden rounded-2xl bg-white p-0 shadow-xl dark:bg-gray-800">
                   <div className="relative flex h-22 items-end justify-between rounded-t-lg border-b border-neutral-100 bg-stone-50 px-6 py-3 dark:border-neutral-700 dark:bg-gray-900">
                     <span className="text-3xl font-bold text-gray-600">设置</span>
-                    <FontAwesomeIcon
-                      icon={['fas', 'times']}
-                      className="absolute right-7 top-5 cursor-pointer text-gray-400"
-                      size="lg"
-                      onClick={() => setIsOpen(false)}
-                    />
+                    <button type="button" onClick={() => setIsOpen(false)}>
+                      <IconX className="absolute right-7 top-5 cursor-pointer text-gray-400" />
+                    </button>
                   </div>
 
                   <Tab.Group vertical>
@@ -80,7 +77,7 @@ export default function Setting() {
                             )
                           }
                         >
-                          <FontAwesomeIcon icon="ear-listen" className="mr-2 text-neutral-500  dark:text-neutral-300" size="1x" />
+                          <IconEar className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300 ">音效设置</span>
                         </Tab>
                         <Tab
@@ -91,7 +88,7 @@ export default function Setting() {
                             )
                           }
                         >
-                          <FontAwesomeIcon icon="sliders" className="mr-2 text-neutral-500  dark:text-neutral-300" size="1x" />
+                          <IconAdjustmentsHorizontal className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">高级设置</span>
                         </Tab>
                       </Tab.List>

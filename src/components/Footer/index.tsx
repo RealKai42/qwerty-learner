@@ -1,5 +1,4 @@
 import React, { useCallback } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import InfoPanel from '@/components/InfoPanel'
 
 import vscLogo from '@/assets/vsc-logo.svg'
@@ -11,6 +10,7 @@ import redBookLogo from '@/assets/redBook-black-logo.svg'
 import redBookCode from '@/assets/redBook-code.jpg'
 import alipay from '@/assets/alipay.jpg'
 import weChat from '@/assets/weChat.jpg'
+import { IconBrandGithub, IconBrandWechat, IconCoffee, IconMail, IconTerminal2 } from '@tabler/icons-react'
 
 const Footer: React.FC = () => {
   const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         <InfoPanel
           openState={infoPanelState.donate}
           title="Buy us a coffee"
-          icon="coffee"
+          icon={IconCoffee}
           btnColor="bg-yellow-300"
           iconColor="text-yellow-500"
           iconBackgroundColor="bg-yellow-100"
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
         <InfoPanel
           openState={infoPanelState.vsc}
           title="VSCode 摸🐟插件"
-          icon="terminal"
+          icon={IconTerminal2}
           btnColor="bg-blue-400"
           iconColor="text-blue-600"
           iconBackgroundColor="bg-blue-300"
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
         <InfoPanel
           openState={infoPanelState.community}
           title="用户反馈社群"
-          icon={['fab', 'weixin']}
+          icon={IconBrandWechat}
           btnColor="bg-cyan-400"
           iconColor="text-cyan-600"
           iconBackgroundColor="bg-cyan-300"
@@ -151,53 +151,57 @@ const Footer: React.FC = () => {
       )}
 
       <footer
-        className="mt-4 flex w-full items-center justify-center pb-1 text-center text-sm ease-in"
+        className="mt-4 flex flex w-full items-center items-center justify-center justify-center pb-1 text-sm ease-in"
         onClick={(e) => e.currentTarget.blur()}
       >
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={['fab', 'github']} className="mr-3 text-gray-500 dark:text-gray-400" />
+          <IconBrandGithub className="mr-3 inline h-4 w-4 text-gray-500 dark:text-gray-400" />
         </a>
-        <span
-          className="mr-3 cursor-pointer"
+        <button
+          className="mr-3 h-4 w-4 cursor-pointer"
+          type="button"
           onClick={(e) => {
             handleOpenInfoPanel('redBook')
             e.currentTarget.blur()
           }}
         >
           <img src={redBookLogo} className="svg-inline--fa fill-current text-gray-500" alt="red book" style={{ fill: '#6B7280' }} />
-        </span>
-        <span
+        </button>
+        <button
           className="cursor-pointer"
+          type="button"
           onClick={(e) => {
             handleOpenInfoPanel('community')
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={['fab', 'weixin']} className="mr-3 text-gray-500 dark:text-gray-400" />
-        </span>
+          <IconBrandWechat className="mr-3 inline h-4 w-4 text-gray-500 dark:text-gray-400" />
+        </button>
 
-        <span
+        <button
           className="cursor-pointer"
+          type="button"
           onClick={(e) => {
             handleOpenInfoPanel('donate')
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={['fas', 'coffee']} className="mr-3 text-gray-500 dark:text-gray-400" />
-        </span>
+          <IconCoffee className="mr-3 inline h-4 w-4 text-gray-500 dark:text-gray-400" />
+        </button>
 
-        <span
-          className="mr-3 cursor-pointer"
+        <button
+          className="mr-3 h-4 w-4 cursor-pointer"
+          type="button"
           onClick={(e) => {
             handleOpenInfoPanel('vsc')
             e.currentTarget.blur()
           }}
         >
           <img src={vscLogo} className="svg-inline--fa fill-current text-gray-500" alt="visual studio code" />
-        </span>
+        </button>
 
         <a href="mailto:me@kaiyi.cool" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
-          <FontAwesomeIcon icon={['fas', 'envelope']} className="mr-3 text-gray-500 dark:text-gray-400" />
+          <IconMail className="mr-3 inline h-4 w-4 text-gray-500 dark:text-gray-400" />
         </a>
 
         <div className="group relative inline-block ">
@@ -208,15 +212,16 @@ const Footer: React.FC = () => {
             <span className="px-3 py-1 text-xs text-gray-500 dark:text-gray-400">中国大陆镜像</span>
           </div>
         </div>
-        <span
+        <button
           className="cursor-pointer text-gray-500 no-underline hover:no-underline dark:text-gray-400 "
+          type="button"
           onClick={(e) => {
             handleOpenInfoPanel('donate')
             e.currentTarget.blur()
           }}
         >
           @ Qwerty Learner
-        </span>
+        </button>
         <a
           className="cursor-pointer pl-2 text-gray-500 no-underline hover:no-underline dark:text-gray-400"
           href="https://beian.miit.gov.cn"

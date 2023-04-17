@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Tooltip from '@/components/Tooltip'
 import { useAtom } from 'jotai'
@@ -7,6 +6,7 @@ import { isLoopSingleWordAtom, isOpenDarkModeAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
 import SoundSwitcher from '../SoundSwitcher'
 import Setting from '../Setting'
+import { IconRepeat, IconEye, IconEyeOff, IconSun, IconMoon, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -82,7 +82,7 @@ export default function Switcher() {
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon="repeat" fixedWidth />
+          <IconRepeat />
         </button>
       </Tooltip>
       <Tooltip content="开关英语显示（Ctrl + V）">
@@ -93,7 +93,7 @@ export default function Switcher() {
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={state?.isWordVisible ? 'eye' : 'eye-slash'} fixedWidth />
+          {state?.isWordVisible ? <IconEye /> : <IconEyeOff />}
         </button>
       </Tooltip>
       <Tooltip content="开关释义显示（Ctrl + T）">
@@ -104,7 +104,7 @@ export default function Switcher() {
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon="earth-americas" fixedWidth />
+          {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
       <Tooltip content="开关深色模式（Ctrl + D）">
@@ -115,7 +115,7 @@ export default function Switcher() {
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={isOpenDarkMode ? 'moon' : 'sun'} fixedWidth />
+          {isOpenDarkMode ? <IconMoon /> : <IconSun />}
         </button>
       </Tooltip>
 

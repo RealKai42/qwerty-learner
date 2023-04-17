@@ -5,7 +5,6 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom } from '@/store'
 import { recordOpenInfoPanelAction } from '@/utils'
@@ -13,6 +12,7 @@ import { InfoPanelType } from '@/typings'
 import { TypingContext, TypingStateActionType } from '../../store'
 import ShareButton from '../ShareButton'
 import redBookLogo from '@/assets/redBook-color-logo.svg'
+import { IconX, IconCoffee, IconBrandWechat, IconBrandGithub } from '@tabler/icons-react'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -124,7 +124,7 @@ const ResultScreen = () => {
               {`${currentDictInfo.name} 第 ${currentChapter + 1} 章`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
-              <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
+              <IconX className="text-gray-400" />
             </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
@@ -156,26 +156,31 @@ const ResultScreen = () => {
                   style={{ fill: '#6B7280' }}
                 />
 
-                <FontAwesomeIcon
-                  icon={['fas', 'coffee']}
+                <button
                   onClick={(e) => {
                     handleOpenInfoPanel('donate')
                     e.currentTarget.blur()
                   }}
                   className="cursor-pointer text-gray-500 dark:text-gray-400"
-                />
+                  type="button"
+                  title="捐赠我们的项目"
+                >
+                  <IconCoffee />
+                </button>
 
-                <FontAwesomeIcon
-                  icon={['fab', 'weixin']}
+                <button
                   onClick={(e) => {
                     handleOpenInfoPanel('community')
                     e.currentTarget.blur()
                   }}
                   className="cursor-pointer text-gray-500 dark:text-gray-400"
-                />
+                  type="button"
+                >
+                  <IconBrandWechat />
+                </button>
 
                 <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
-                  <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 dark:text-gray-400" />
+                  <IconBrandGithub className="text-gray-500 dark:text-gray-400" />
                 </a>
               </div>
             </div>

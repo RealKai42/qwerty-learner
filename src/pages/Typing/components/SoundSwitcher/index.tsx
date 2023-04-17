@@ -1,8 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Fragment, useCallback } from 'react'
 import { Popover, Transition, Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
+import { IconVolume } from '@tabler/icons-react'
 
 export default function SoundSwitcher() {
   const [keySoundsConfig, setKeySoundsConfig] = useAtom(keySoundsConfigAtom)
@@ -34,7 +34,7 @@ export default function SoundSwitcher() {
               e.target.blur()
             }}
           >
-            <FontAwesomeIcon icon="volume-up" fixedWidth className="focus:outline-none" />
+            <IconVolume className="focus:outline-none" />
           </Popover.Button>
 
           <Transition

@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Transition } from '@headlessui/react'
 import starBar from '@/assets/starBar.svg'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react'
@@ -6,6 +5,7 @@ import { dismissStartCardDateAtom } from '@/store'
 import { useSetAtom } from 'jotai'
 import { recordStarAction } from '@/utils'
 import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
+import { IconCircleX } from '@tabler/icons-react'
 
 export default function StarCard() {
   const [countdown, setCountdown] = useState(5)
@@ -94,8 +94,8 @@ export default function StarCard() {
               后自动关闭
             </span>
           )}
-          <button onClick={onClickCloseStar}>
-            <FontAwesomeIcon icon={['fas', 'times-circle']} className="text-indigo-400" size="lg" />
+          <button type="button" onClick={onClickCloseStar}>
+            <IconCircleX className="text-indigo-400" />
           </button>
         </div>
         <span className="pb-4 text-xl text-gray-600 dark:text-gray-50">
