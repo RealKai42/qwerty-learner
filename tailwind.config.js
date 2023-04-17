@@ -15,6 +15,8 @@ module.exports = {
         md: '0.375rem',
       },
       width: {
+        3.5: '0.875rem',
+        5.5: '1.375rem',
         15: '3.75rem',
         18: '4.5rem',
         70: '17.5rem',
@@ -27,6 +29,8 @@ module.exports = {
         200: '50rem',
       },
       height: {
+        3.5: '0.875rem',
+        5.5: '1.375rem',
         15: '3.75rem',
         18: '4.5rem',
         22: '5.5rem',

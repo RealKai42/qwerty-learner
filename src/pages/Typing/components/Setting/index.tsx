@@ -4,7 +4,8 @@ import { Fragment, useContext, useState } from 'react'
 import SoundSetting from './SoundSetting'
 import AdvancedSetting from './AdvancedSetting'
 import { TypingContext, TypingStateActionType } from '../../store'
-import { IconSettings, IconEar, IconAdjustmentsHorizontal, IconX } from '@tabler/icons-react'
+import { IconEar, IconAdjustmentsHorizontal, IconX } from '@tabler/icons-react'
+import { Cog6ToothIcon } from '@heroicons/react/24/solid'
 
 export default function Setting() {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,7 +31,7 @@ export default function Setting() {
           isOpen && 'bg-indigo-400 text-white'
         }`}
       >
-        <IconSettings className="h-6 w-6 focus:outline-none" />
+        <Cog6ToothIcon className="icon" />
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>

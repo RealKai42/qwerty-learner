@@ -55,7 +55,7 @@ export default function StarCard() {
       <>
         {isCounting ? (
           <div className="flex flex-col items-center gap-4 pt-6">
-            <img src={starBar} className="svg-inline--fa fill-current text-4xl" alt="" />
+            <img src={starBar} className="fill-current text-4xl" alt="star project" />
             <span className="text-gray w-full text-center text-gray-400">
               收藏快捷键<span className="pl-2 text-indigo-600">cmd + d</span>
             </span>

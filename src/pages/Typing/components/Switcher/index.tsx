@@ -6,7 +6,8 @@ import { isLoopSingleWordAtom, isOpenDarkModeAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
 import SoundSwitcher from '../SoundSwitcher'
 import Setting from '../Setting'
-import { IconRepeat, IconEye, IconEyeOff, IconSun, IconMoon, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
+import { IconRepeatOnce, IconRepeatOff, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
+import { SunIcon, MoonIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -69,7 +70,7 @@ export default function Switcher() {
   )
 
   return (
-    <div className="flex items-center justify-center space-x-3">
+    <div className="flex items-center justify-center space-x-2">
       <Tooltip content="音效设置">
         <SoundSwitcher />
       </Tooltip>
@@ -82,7 +83,7 @@ export default function Switcher() {
             e.currentTarget.blur()
           }}
         >
-          <IconRepeat />
+          {isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
@@ -93,7 +94,7 @@ export default function Switcher() {
             e.currentTarget.blur()
           }}
         >
-          {state?.isWordVisible ? <IconEye /> : <IconEyeOff />}
+          {state?.isWordVisible ? <EyeIcon className="icon" /> : <EyeSlashIcon className="icon" />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + T）">
@@ -115,7 +116,7 @@ export default function Switcher() {
             e.currentTarget.blur()
           }}
         >
-          {isOpenDarkMode ? <IconMoon /> : <IconSun />}
+          {isOpenDarkMode ? <MoonIcon className="icon" /> : <SunIcon className="icon" />}
         </button>
       </Tooltip>
 

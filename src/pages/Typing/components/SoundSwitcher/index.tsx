@@ -2,7 +2,7 @@ import { Fragment, useCallback } from 'react'
 import { Popover, Transition, Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
-import { IconVolume } from '@tabler/icons-react'
+import { SpeakerWaveIcon } from '@heroicons/react/24/solid'
 
 export default function SoundSwitcher() {
   const [keySoundsConfig, setKeySoundsConfig] = useAtom(keySoundsConfigAtom)
@@ -34,7 +34,7 @@ export default function SoundSwitcher() {
               e.target.blur()
             }}
           >
-            <IconVolume className="h-6 w-6 focus:outline-none" />
+            <SpeakerWaveIcon className="icon" />
           </Popover.Button>
 
           <Transition
