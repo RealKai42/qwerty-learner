@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 import { NavLink } from 'react-router-dom'
-import { ReactComponent as Logo } from '@/assets/logo.svg'
+import logo from '@/assets/logo.svg'
 
 const Header: React.FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -10,7 +10,7 @@ const Header: React.FC<PropsWithChildren> = ({ children }) => {
           className="flex items-center text-2xl font-bold text-indigo-400 no-underline hover:no-underline lg:text-4xl"
           to="https://qwerty.kaiyi.cool/"
         >
-          <Logo className="mr-3 h-16 w-16" />
+          <img src={logo} className="mr-3 h-16 w-16" />
           <h1>Qwerty Learner</h1>
         </NavLink>
         <nav className="card on element flex w-auto content-center items-center justify-end space-x-3 rounded-large bg-white p-4 transition-colors duration-300 dark:bg-gray-800">

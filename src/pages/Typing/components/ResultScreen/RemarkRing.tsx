@@ -1,4 +1,4 @@
-import { clamp } from 'lodash'
+import clamp from '@/utils/clamp'
 import { useMemo } from 'react'
 import classNames from 'classnames'
 

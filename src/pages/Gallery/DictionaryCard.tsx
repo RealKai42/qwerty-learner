@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef } from 'react'
 import { DictionaryResource } from '@/typings'
-import { useAtom } from 'jotai'
-import { currentDictIdAtom } from '@/store'
+import { useAtom, useSetAtom } from 'jotai'
+import { currentChapterAtom, currentDictIdAtom } from '@/store'
 
 const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
+  const setCurrentChapter = useSetAtom(currentChapterAtom)
+
   useEffect(() => {
     if (currentDictId === dictionary.id && buttonRef.current !== null) {
       const button = buttonRef.current
@@ -22,6 +24,7 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
       className="relative w-48 overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10 "
       onClick={() => {
         setCurrentDictId(dictionary.id)
+        setCurrentChapter(0)
       }}
     >
       <p className="mb-1 text-xl text-gray-800 dark:text-white dark:text-opacity-80">{dictionary.name}</p>

@@ -1,15 +1,16 @@
 import React, { useCallback } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import InfoPanel from '@/components/InfoPanel'
-import alipay from '@/assets/alipay.png'
-import weChat from '@/assets/weChat.png'
+
 import vscLogo from '@/assets/vsc-logo.svg'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { InfoPanelType } from '@/typings'
 import { useAtom } from 'jotai'
 import { infoPanelStateAtom } from '@/store'
 import redBookLogo from '@/assets/redBook-black-logo.svg'
-import redBookCode from '@/assets/redBook-code.png'
+import redBookCode from '@/assets/redBook-code.jpg'
+import alipay from '@/assets/alipay.jpg'
+import weChat from '@/assets/weChat.jpg'
 
 const Footer: React.FC = () => {
   const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
@@ -116,7 +117,7 @@ const Footer: React.FC = () => {
           <br />
           <p className="text-sm text-gray-500  dark:text-gray-400">再次感谢您的支持和关注！</p>
           <br />
-          <img className="ml-1 w-2/6 " src="https://qwerty.kaiyi.cool/weChat-group.png" alt="weChat-group" />
+          <img className="ml-1 w-2/6 " src="https://qwerty.kaiyi.cool/weChat-group.jpg" alt="weChat-group" />
           <br />
         </InfoPanel>
       )}

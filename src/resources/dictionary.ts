@@ -10,7 +10,7 @@ export const dictionaries: DictionaryResource[] = [
     name: 'CET-4',
     description: '大学英语四级词库',
     category: '英语学习',
-    url: '',
+    url: '/dicts/CET4_T.json',
     length: 2607,
     language: 'en',
   },
