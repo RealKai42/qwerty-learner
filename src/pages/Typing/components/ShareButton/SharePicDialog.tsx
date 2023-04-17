@@ -3,9 +3,15 @@ import { toPng } from 'html-to-image'
 import { Fragment, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { saveAs } from 'file-saver'
 import keyboardSvg from '@/assets/sharePic/keyBackground.svg'
-import shareImage1 from '@/assets/sharePic/image-1.svg'
-import shareImage2 from '@/assets/sharePic/image-2.svg'
-import shareImage3 from '@/assets/sharePic/image-3.svg'
+import shareImage1 from '@/assets/sharePic/image-1.png'
+import shareImage2 from '@/assets/sharePic/image-2.png'
+import shareImage3 from '@/assets/sharePic/image-3.png'
+import shareImage4 from '@/assets/sharePic/image-4.png'
+import shareImage5 from '@/assets/sharePic/image-5.png'
+import shareImage6 from '@/assets/sharePic/image-6.png'
+import shareImage7 from '@/assets/sharePic/image-7.png'
+import shareImage8 from '@/assets/sharePic/image-8.png'
+import shareImage9 from '@/assets/sharePic/image-9.png'
 import { TypingContext } from '../../store'
 import { useAtomValue } from 'jotai'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
@@ -13,7 +19,7 @@ import { recordShareAction } from '@/utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PIC_RATIO = 3
-const PIC_LIST = [shareImage1, shareImage2, shareImage3]
+const PIC_LIST = [shareImage1, shareImage2, shareImage3, shareImage4, shareImage5, shareImage6, shareImage7, shareImage8, shareImage9]
 // 我知道有些有点怪，但怪的有趣(狗头)，powered by chatGPT
 const PROMOTE_LIST = [
   { word: '快人一手', sentence: '速度快得就像比别人多长了一只手' },
@@ -164,7 +170,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
               <div className="mt-1 text-xs font-normal text-gray-400">为键盘工作者设计的单词与肌肉记忆锻炼软件</div>
             </div>
             <div className="absolute -right-9 bottom-10 ">
-              <img src={shareImage} className="w-48" />
+              <img src={shareImage} className="w-48" width={186} height={122} />
             </div>
           </div>
         </div>
