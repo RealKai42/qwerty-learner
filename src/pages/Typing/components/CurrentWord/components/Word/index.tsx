@@ -11,7 +11,7 @@ import { EXPLICIT_SPACE } from '@/constants'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import InputHandler, { WordUpdateAction } from '../InputHandler'
 import { useSaveWordRecord } from '@/utils/db'
-import { cloneDeep } from 'lodash'
+import { cloneDeep } from '@/utils/cloneDeep'
 import { useImmer } from 'use-immer'
 import { LetterMistakes } from '@/utils/db/record'
 import { useMixPanelWordLogUploader } from '@/utils'
@@ -66,7 +66,6 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
     // run only when word changes
     let wordString = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
     wordString = wordString.replace(new RegExp('…', 'g'), '..')
-
     const newWordState = cloneDeep(initialWordState)
     newWordState.displayWord = wordString
     newWordState.LetterStates = new Array(wordString.length).fill('normal')

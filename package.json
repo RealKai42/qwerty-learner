@@ -68,7 +68,6 @@
   "devDependencies": {
     "@types/file-saver": "^2.0.5",
     "@types/howler": "^2.2.3",
-    "@types/lodash": "^4.14.168",
     "@types/mixpanel-browser": "^2.38.1",
     "@types/node": "18.14.6",
     "@types/react": "^18.0.28",

@@ -19,7 +19,7 @@ import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 import { useSaveChapterRecord } from '@/utils/db'
-import { cloneDeep } from 'lodash'
+import { cloneDeep } from '@/utils/cloneDeep'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {

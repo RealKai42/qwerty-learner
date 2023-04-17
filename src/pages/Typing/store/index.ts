@@ -1,5 +1,5 @@
 import { Word } from '@/typings'
-import { cloneDeep } from 'lodash'
+import { cloneDeep } from '@/utils/cloneDeep'
 import { createContext } from 'react'
 
 export type ChapterData = {
