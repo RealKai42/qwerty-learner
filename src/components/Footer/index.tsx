@@ -249,7 +249,7 @@ const Footer: React.FC = () => {
         >
           鲁ICP备2022030649号
         </a>
-        <span className="ml-2 select-none rounded bg-gray-200 px-1 py-0.5 text-xs text-gray-400 dark:text-gray-500">
+        <span className="ml-2 select-none rounded bg-gray-200 px-1 py-0.5 text-xs text-gray-400 dark:bg-gray-800 dark:text-gray-500">
           Build {LATEST_COMMIT_HASH}
         </span>
       </footer>
