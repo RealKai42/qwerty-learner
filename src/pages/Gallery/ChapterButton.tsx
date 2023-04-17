@@ -1,5 +1,5 @@
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import React, { useEffect, useRef } from 'react'
 import { useChapterStats } from './hooks/useChapterStats'
 
@@ -48,11 +48,7 @@ export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, w
       )}
 
       {selected ? (
-        <FontAwesomeIcon
-          className="absolute -bottom-4 -right-4 text-6xl text-green-500 opacity-60 dark:text-green-300"
-          icon={['fas', 'check-circle']}
-          fixedWidth
-        />
+        <CheckCircleIcon className="absolute -bottom-4 -right-4 h-18 w-18 text-6xl text-green-500 opacity-60 dark:text-green-300" />
       ) : null}
     </button>
   )

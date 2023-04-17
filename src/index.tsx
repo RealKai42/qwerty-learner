@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import './icon'
 import 'react-app-polyfill/stable'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'

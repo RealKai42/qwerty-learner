@@ -1,21 +1,30 @@
-import React, { Fragment } from 'react'
+import React, { ElementType, Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import classNames from 'classnames'
 import redBookLogo from '@/assets/redBook-color-logo.svg'
+import type { TablerIconsProps } from '@tabler/icons-react'
 
 type InfoPanelProps = {
   openState: boolean
   onClose: () => void
   title: string
-  icon: IconProp | 'redBookLogo'
+  icon: ElementType<TablerIconsProps> | 'redBookLogo'
   iconColor: string
   iconBackgroundColor: string
   btnColor: string
   children: React.ReactNode
 }
 
-const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon, iconBackgroundColor, iconColor, btnColor, children }) => {
+const InfoPanel: React.FC<InfoPanelProps> = ({
+  openState,
+  title,
+  onClose,
+  icon: Icon,
+  iconBackgroundColor,
+  iconColor,
+  btnColor,
+  children,
+}) => {
   return (
     <Transition.Root show={openState} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={() => onClose()}>
@@ -48,8 +57,8 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon, 
                     <div
                       className={`${iconBackgroundColor} mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-50 sm:mx-0 sm:h-10 sm:w-10`}
                     >
-                      {icon !== 'redBookLogo' ? (
-                        <FontAwesomeIcon icon={icon} className={`h-5 w-5 stroke-current dark:bg-opacity-100  ${iconColor}`} />
+                      {Icon !== 'redBookLogo' ? (
+                        <Icon className={classNames('h-6 w-6 stroke-current dark:bg-opacity-100', iconColor)} />
                       ) : (
                         <img src={redBookLogo} alt="redBookLogo" className="h-6 w-6" />
                       )}

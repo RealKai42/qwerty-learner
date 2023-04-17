@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useHotkeys } from 'react-hotkeys-hook'
 import Tooltip from '@/components/Tooltip'
 import { useAtom } from 'jotai'
@@ -7,6 +6,8 @@ import { isLoopSingleWordAtom, isOpenDarkModeAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
 import SoundSwitcher from '../SoundSwitcher'
 import Setting from '../Setting'
+import { IconRepeatOnce, IconRepeatOff, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
+import { SunIcon, MoonIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -69,53 +70,53 @@ export default function Switcher() {
   )
 
   return (
-    <div className="flex items-center justify-center space-x-3">
+    <div className="flex items-center justify-center space-x-2">
       <Tooltip content="音效设置">
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip content="开关单个单词循环（Ctrl + L）">
+      <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
         <button
-          className={`${isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeLoopSingleWordState()
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon="repeat" fixedWidth />
+          {isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
         </button>
       </Tooltip>
-      <Tooltip content="开关英语显示（Ctrl + V）">
+      <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
         <button
-          className={`${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeWordVisibleState()
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={state?.isWordVisible ? 'eye' : 'eye-slash'} fixedWidth />
+          {state?.isWordVisible ? <EyeIcon className="icon" /> : <EyeSlashIcon className="icon" />}
         </button>
       </Tooltip>
-      <Tooltip content="开关释义显示（Ctrl + T）">
+      <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + T）">
         <button
-          className={`${state?.isTransVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeTransVisibleState()
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon="earth-americas" fixedWidth />
+          {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
-      <Tooltip content="开关深色模式（Ctrl + D）">
+      <Tooltip className="h-7 w-7" content="开关深色模式（Ctrl + D）">
         <button
-          className={`text-lg text-indigo-400 focus:outline-none`}
+          className={`p-[2px] text-lg text-indigo-400 focus:outline-none`}
           onClick={(e) => {
             changeDarkModeState()
             e.currentTarget.blur()
           }}
         >
-          <FontAwesomeIcon icon={isOpenDarkMode ? 'moon' : 'sun'} fixedWidth />
+          {isOpenDarkMode ? <MoonIcon className="icon" /> : <SunIcon className="icon" />}
         </button>
       </Tooltip>
 
