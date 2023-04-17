@@ -74,9 +74,9 @@ export default function Switcher() {
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip content="开关单个单词循环（Ctrl + L）">
+      <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
         <button
-          className={`${isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeLoopSingleWordState()
             e.currentTarget.blur()
@@ -85,9 +85,9 @@ export default function Switcher() {
           <IconRepeat />
         </button>
       </Tooltip>
-      <Tooltip content="开关英语显示（Ctrl + V）">
+      <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
         <button
-          className={`${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeWordVisibleState()
             e.currentTarget.blur()
@@ -96,9 +96,9 @@ export default function Switcher() {
           {state?.isWordVisible ? <IconEye /> : <IconEyeOff />}
         </button>
       </Tooltip>
-      <Tooltip content="开关释义显示（Ctrl + T）">
+      <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + T）">
         <button
-          className={`${state?.isTransVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeTransVisibleState()
             e.currentTarget.blur()
@@ -107,9 +107,9 @@ export default function Switcher() {
           {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
-      <Tooltip content="开关深色模式（Ctrl + D）">
+      <Tooltip className="h-7 w-7" content="开关深色模式（Ctrl + D）">
         <button
-          className={`text-lg text-indigo-400 focus:outline-none`}
+          className={`p-[2px] text-lg text-indigo-400 focus:outline-none`}
           onClick={(e) => {
             changeDarkModeState()
             e.currentTarget.blur()
