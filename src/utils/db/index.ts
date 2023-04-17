@@ -1,5 +1,5 @@
 import { TypingContext, TypingState, TypingStateActionType } from '@/pages/Typing/store'
-import { currentChapterAtom, currentDictInfoAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom } from '@/store'
 import Dexie, { Table } from 'dexie'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext } from 'react'
@@ -12,8 +12,8 @@ class RecordDB extends Dexie {
   constructor() {
     super('RecordDB')
     this.version(1).stores({
-      wordRecords: '++id,word,timeStamp,dict,chapter,errorCount',
-      chapterRecords: '++id,timeStamp,dict,chapter,time',
+      wordRecords: '++id,word,timeStamp,dict,chapter,errorCount,[dict+chapter]',
+      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
     })
   }
 }
@@ -25,7 +25,7 @@ db.chapterRecords.mapToClass(ChapterRecord)
 
 export function useSaveChapterRecord() {
   const currentChapter = useAtomValue(currentChapterAtom)
-  const { id: dictID } = useAtomValue(currentDictInfoAtom)
+  const dictID = useAtomValue(currentDictIdAtom)
 
   const saveChapterRecord = useCallback(
     (typingState: TypingState) => {
@@ -60,7 +60,7 @@ export type WordKeyLogger = {
 
 export function useSaveWordRecord() {
   const currentChapter = useAtomValue(currentChapterAtom)
-  const { id: dictID } = useAtomValue(currentDictInfoAtom)
+  const dictID = useAtomValue(currentDictIdAtom)
 
   const { dispatch } = useContext(TypingContext) ?? {}
 

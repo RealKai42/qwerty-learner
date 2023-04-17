@@ -179,12 +179,12 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       newState.isTyping = true
       newState.chapterData.words = state.chapterData.words
       newState.isWordVisible = false
-      break
+      return newState
     }
     case TypingStateActionType.NEXT_CHAPTER: {
       const newState = cloneDeep(initialState)
       newState.isTyping = true
-      break
+      return newState
     }
 
     case TypingStateActionType.TOGGLE_WORD_VISIBLE:
