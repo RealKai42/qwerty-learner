@@ -27,6 +27,8 @@
 ...
 ]
 
+![dicFormat](./dicIndex.png)
+
 #### 1.1.0 如何将词典的源文件转换为目标文件格式？🔄
 
 由于词典的源文件格式、来源各异，我们无法为你提供统一的转换方法，但是我们可以提供一些思路：
@@ -49,10 +51,12 @@
 
 { id: 'xxx', name: 'xxx', description: 'xxx', category: 'xxx', url: './dicts/xxx.json', length: xxx },
 
+![dicIndex](./dicIndex.png)
+
 其中，id 需要是所有词典中唯一的，name 是展示给所有用户的词典名，description 是词典描述，category 是词典分类（你也许想要事先阅读所有已存在的词典分类，来为新的词典选择合适的分类），url 是词典的目标文件位置，length 是词典的单词数量
 
 ### 1.4 测试 🧪
 
-使用 yarn 指令安装依赖，然后使用 yarn start 启动项目，打开浏览器访问 'http://localhost:3000'。
+使用 yarn 指令安装依赖，然后使用 yarn start 启动项目，打开浏览器访问 'http://localhost:3000'
 
 如果你的词典已经成功导入，你将在词典列表中看到你的词典。🎉
