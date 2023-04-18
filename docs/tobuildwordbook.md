@@ -48,7 +48,7 @@
 
 ![dicIndex](./dicIndex.png)
 
-其中,    
+其中,  
 `id` 需要是所有词典中唯一的，  
 `name` 是展示给所有用户的词典名，  
 `description` 是词典描述，  
