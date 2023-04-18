@@ -14,7 +14,7 @@ import Progress from './components/Progress'
 import ResultScreen from './components/ResultScreen'
 import CurrentWord from './components/CurrentWord'
 import { useAtomValue } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom, isLoopSingleWordAtom } from '@/store'
+import { currentChapterAtom, currentDictInfoAtom, isLoopSingleWordAtom, randomConfigAtom } from '@/store'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
@@ -31,10 +31,10 @@ const App: React.FC = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
 
   const chapterLogUploader = useMixPanelChapterLogUploader(typingState)
-
   const saveChapterRecord = useSaveChapterRecord()
 
   const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
+  const randomConfig = useAtomValue(randomConfigAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
 
   const reloadCurrentWordComponent = useCallback(() => {
@@ -90,10 +90,11 @@ const App: React.FC = () => {
     if (words !== undefined) {
       dispatch({
         type: TypingStateActionType.SETUP_CHAPTER,
-        payload: words,
+        payload: { words, shouldShuffle: randomConfig.isOpen },
       })
     }
-  }, [words, dispatch])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [words])
 
   useEffect(() => {
     if (typingState.chapterData.words?.length > 0) {

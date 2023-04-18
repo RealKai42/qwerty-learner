@@ -492,6 +492,15 @@ export const dictionaries: DictionaryResource[] = [
     language: 'code',
   },
   {
+    id: 'childCode',
+    name: '少儿 Python',
+    description: '少儿 Python 常见词',
+    category: '少儿编程 beta',
+    url: '/dicts/Child_code.json',
+    length: 19,
+    language: 'en',
+  },
+  {
     id: 'san1',
     name: '三年级上',
     description: '人教版三年级上册',

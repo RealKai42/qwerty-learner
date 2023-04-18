@@ -29,7 +29,7 @@ export default function AdvancedSetting() {
     <div className={styles.tabContent}>
       <div className={styles.section}>
         <span className={styles.sectionLabel}>章节乱序</span>
-        <span className={styles.sectionDescription}>开启后，每次练习章节中单词会随机排序</span>
+        <span className={styles.sectionDescription}>开启后，每次练习章节中单词会随机排序。下一章节生效</span>
         <div className={styles.switchBlock}>
           <Switch checked={randomConfig.isOpen} onChange={onToggleRandom} className="switch-root">
             <span aria-hidden="true" className="switch-thumb" />

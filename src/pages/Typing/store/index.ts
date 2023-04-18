@@ -1,4 +1,5 @@
 import { Word } from '@/typings'
+import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
 
 export type ChapterData = {
@@ -80,7 +81,7 @@ export enum TypingStateActionType {
 }
 
 export type TypingStateAction =
-  | { type: TypingStateActionType.SETUP_CHAPTER; payload: Word[] }
+  | { type: TypingStateActionType.SETUP_CHAPTER; payload: { words: Word[]; shouldShuffle: boolean } }
   | { type: TypingStateActionType.SET_IS_SKIP; payload: boolean }
   | { type: TypingStateActionType.SET_IS_TYPING; payload: boolean }
   | { type: TypingStateActionType.TOGGLE_IS_TYPING }
@@ -92,8 +93,8 @@ export type TypingStateAction =
   | { type: TypingStateActionType.INCREASE_CORRECT_COUNT }
   | { type: TypingStateActionType.INCREASE_WRONG_COUNT }
   | { type: TypingStateActionType.SKIP_WORD }
-  | { type: TypingStateActionType.REPEAT_CHAPTER }
-  | { type: TypingStateActionType.DICTATION_CHAPTER }
+  | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
+  | { type: TypingStateActionType.DICTATION_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
@@ -106,7 +107,7 @@ type Dispatch = (action: TypingStateAction) => void
 export const typingReducer = (state: TypingState, action: TypingStateAction) => {
   switch (action.type) {
     case TypingStateActionType.SETUP_CHAPTER:
-      state.chapterData.words = action.payload
+      state.chapterData.words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
       break
     case TypingStateActionType.SET_IS_SKIP:
       state.isShowSkip = action.payload
@@ -170,14 +171,14 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.REPEAT_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
-      newState.chapterData.words = state.chapterData.words
+      newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       return newState
     }
 
     case TypingStateActionType.DICTATION_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
-      newState.chapterData.words = state.chapterData.words
+      newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       newState.isWordVisible = false
       return newState
     }
@@ -186,7 +187,6 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       newState.isTyping = true
       return newState
     }
-
     case TypingStateActionType.TOGGLE_WORD_VISIBLE:
       state.isWordVisible = !state.isWordVisible
       break
