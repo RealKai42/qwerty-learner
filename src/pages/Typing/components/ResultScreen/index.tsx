@@ -6,7 +6,7 @@ import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom } from '@/store'
+import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom } from '@/store'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { InfoPanelType } from '@/typings'
 import { TypingContext, TypingStateActionType } from '../../store'
@@ -21,6 +21,7 @@ const ResultScreen = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
+  const randomConfig = useAtomValue(randomConfigAtom)
 
   const isLastChapter = useMemo(() => {
     return currentChapter >= currentDictInfo.chapterCount - 1
@@ -52,12 +53,12 @@ const ResultScreen = () => {
   }, [state.timerData.time])
 
   const repeatButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
-  }, [dispatch])
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen])
 
   const dictationButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER })
-  }, [dispatch])
+    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen])
 
   const nextButtonHandler = useCallback(() => {
     if (!isLastChapter) {
@@ -67,7 +68,7 @@ const ResultScreen = () => {
   }, [dispatch, isLastChapter, setCurrentChapter])
 
   const exitButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: false })
   }, [dispatch])
   useHotkeys(
     'enter',
