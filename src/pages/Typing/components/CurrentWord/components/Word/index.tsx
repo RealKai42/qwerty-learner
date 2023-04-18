@@ -6,7 +6,7 @@ import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import { isIgnoreCaseAtom, pronunciationIsOpenAtom } from '@/store'
+import { isIgnoreCaseAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
 import { useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { LetterMistakes } from '@/utils/db/record'
@@ -55,6 +55,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
 
+  const isTextSelectable = useAtomValue(isTextSelectableAtom)
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
   const saveWordRecord = useSaveWordRecord()
   const wordLogUploader = useMixPanelWordLogUploader(state)
@@ -208,7 +209,9 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
       <InputHandler updateInput={updateInput} />
       <div className="flex justify-center pb-1 pt-4">
         <div className="relative">
-          <div className={`flex items-center justify-center ${wordState.hasWrong ? style.wrong : ''}`}>
+          <div
+            className={`flex items-center ${!isTextSelectable && 'select-none'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
+          >
             {wordState.displayWord.split('').map((t, index) => {
               return (
                 <Letter

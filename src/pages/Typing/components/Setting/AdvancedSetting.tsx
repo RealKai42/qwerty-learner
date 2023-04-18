@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, randomConfigAtom } from '@/store'
+import { isIgnoreCaseAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
 import { Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
@@ -7,6 +7,7 @@ import { useCallback } from 'react'
 export default function AdvancedSetting() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
+  const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -23,6 +24,13 @@ export default function AdvancedSetting() {
       setIsIgnoreCase(checked)
     },
     [setIsIgnoreCase],
+  )
+
+  const onToggleTextSelectable = useCallback(
+    (checked: boolean) => {
+      setIsTextSelectable(checked)
+    },
+    [setIsTextSelectable],
   )
 
   return (
@@ -48,6 +56,18 @@ export default function AdvancedSetting() {
           </Switch>
           <span className="text-right text-xs font-normal leading-tight text-gray-600">{`忽略大小写已${
             isIgnoreCase ? '开启' : '关闭'
+          }`}</span>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <span className={styles.sectionLabel}>是否允许选择文本</span>
+        <span className={styles.sectionDescription}>开启后，可以通过鼠标选择文本 </span>
+        <div className={styles.switchBlock}>
+          <Switch checked={isTextSelectable} onChange={onToggleTextSelectable} className="switch-root">
+            <span aria-hidden="true" className="switch-thumb" />
+          </Switch>
+          <span className="text-right text-xs font-normal leading-tight text-gray-600">{`选择文本已${
+            isTextSelectable ? '开启' : '关闭'
           }`}</span>
         </div>
       </div>
