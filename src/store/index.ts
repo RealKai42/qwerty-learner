@@ -41,9 +41,12 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   type: 'us' as PronunciationType,
   name: '美音',
   isLoop: false,
+  isTransRead: false,
   rate: 1,
 })
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)
+
+export const pronunciationIsTransReadAtom = atom((get) => get(pronunciationConfigAtom).isTransRead)
 
 export const randomConfigAtom = atomForConfig('randomConfig', {
   isOpen: false,

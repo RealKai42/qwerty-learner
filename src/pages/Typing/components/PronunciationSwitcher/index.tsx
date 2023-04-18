@@ -1,12 +1,10 @@
 import Tooltip from '@/components/Tooltip'
 import { LANG_PRON_MAP } from '@/resources/soundResource'
 import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
-import { PronunciationType, PRONUNCIATION_PHONETIC_MAP } from '@/typings'
-import { Listbox } from '@headlessui/react'
-import { Popover, Transition, Switch } from '@headlessui/react'
+import { PRONUNCIATION_PHONETIC_MAP, PronunciationType } from '@/typings'
+import { Listbox, Popover, Switch, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
-import { useCallback, useEffect, useMemo } from 'react'
-import { Fragment } from 'react'
+import { Fragment, useCallback, useEffect, useMemo } from 'react'
 import IconCheck from '~icons/tabler/check'
 import IconChevronDown from '~icons/tabler/chevron-down'
 
@@ -47,6 +45,16 @@ const PronunciationSwitcher = () => {
       setPronunciationConfig((old) => ({
         ...old,
         isOpen: value,
+      }))
+    },
+    [setPronunciationConfig],
+  )
+
+  const onChangePronunciationIsTransRead = useCallback(
+    (value: boolean) => {
+      setPronunciationConfig((old) => ({
+        ...old,
+        isTransRead: value,
       }))
     },
     [setPronunciationConfig],
@@ -142,6 +150,21 @@ const PronunciationSwitcher = () => {
                     }`}</span>
                   </div>
                 </div>
+                {window.speechSynthesis && (
+                  <div className="flex w-full  flex-col  items-start gap-2 py-0">
+                    <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                      开关释义发音
+                    </span>
+                    <div className="flex w-full flex-row items-center justify-between">
+                      <Switch checked={pronunciationConfig.isTransRead} onChange={onChangePronunciationIsTransRead} className="switch-root">
+                        <span aria-hidden="true" className="switch-thumb" />
+                      </Switch>
+                      <span className="text-right text-xs font-normal leading-tight text-gray-600">{`释义发音已${
+                        pronunciationConfig.isTransRead ? '开启' : '关闭'
+                      }`}</span>
+                    </div>
+                  </div>
+                )}
                 <Transition
                   show={pronunciationConfig.isOpen}
                   className="flex w-full flex-col items-center justify-center gap-4"
