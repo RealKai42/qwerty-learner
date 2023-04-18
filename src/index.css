@@ -124,6 +124,9 @@ body,
   .slider {
     @apply relative flex h-10 w-full cursor-pointer select-none items-center;
   }
+  .slider [data-disabled] {
+    @apply pointer-events-none opacity-50;
+  }
   .slider > span:nth-child(1) {
     @apply relative h-[5px] flex-grow rounded-full bg-gray-200;
   }

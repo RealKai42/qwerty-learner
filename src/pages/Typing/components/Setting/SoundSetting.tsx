@@ -88,6 +88,7 @@ export default function SoundSetting() {
               step={10}
               className="slider"
               onValueChange={onChangePronunciationVolume}
+              disabled={!pronunciationConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
@@ -118,6 +119,7 @@ export default function SoundSetting() {
               step={10}
               className="slider"
               onValueChange={onChangeKeySoundsVolume}
+              disabled={!keySoundsConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
@@ -148,6 +150,7 @@ export default function SoundSetting() {
               step={10}
               className="slider"
               onValueChange={onChangeHintSoundsVolume}
+              disabled={!hintSoundsConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
