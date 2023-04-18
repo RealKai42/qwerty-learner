@@ -82,22 +82,22 @@
 
 ```json
   {
-    id: 'cet4',
-    name: 'CET-4',
-    description: '大学英语四级词库',
-    category: '英语学习',
-    url: '/dicts/CET4_T.json',
-    length: 2607,
-    language: 'en',
+    "id": "cet4",
+    "name": "CET-4",
+    "description": "大学英语四级词库",
+    "category": "英语学习",
+    "url": "/dicts/CET4_T.json",
+    "length": 2607,
+    "language": "en",
   },
   {
-    id: 'cet6',
-    name: 'CET-6',
-    description: '大学英语六级词库',
-    category: '英语学习',
-    url: '/dicts/CET6_T.json',
-    length: 2345,
-    language: 'en',
+    "id": "cet6",
+    "name": "CET-6",
+    "description": "大学英语六级词库",
+    "category": "英语学习",
+    "url": "/dicts/CET6_T.json",
+    "length": 2345,
+    "language": "en",
   },
 ```
 
