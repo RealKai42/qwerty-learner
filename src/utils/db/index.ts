@@ -1,9 +1,9 @@
+import { WordRecord, ChapterRecord, IWordRecord, IChapterRecord, LetterMistakes } from './record'
 import { TypingContext, TypingState, TypingStateActionType } from '@/pages/Typing/store'
 import { currentChapterAtom, currentDictIdAtom } from '@/store'
 import Dexie, { Table } from 'dexie'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext } from 'react'
-import { WordRecord, ChapterRecord, IWordRecord, IChapterRecord, LetterMistakes } from './record'
 
 class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, number>

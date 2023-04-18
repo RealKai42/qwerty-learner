@@ -1,6 +1,6 @@
+import logo from '@/assets/logo.svg'
 import React, { PropsWithChildren } from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '@/assets/logo.svg'
 
 const Header: React.FC<PropsWithChildren> = ({ children }) => {
   return (

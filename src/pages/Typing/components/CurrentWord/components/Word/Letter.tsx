@@ -1,5 +1,5 @@
-import React from 'react'
 import { EXPLICIT_SPACE } from '@/constants'
+import React from 'react'
 
 export type LetterState = 'normal' | 'correct' | 'wrong'
 

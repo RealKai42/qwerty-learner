@@ -1,11 +1,11 @@
-import { phoneticConfigAtom } from '@/store'
-import { Word } from '@/typings'
-import { useAtomValue } from 'jotai'
-import { useContext } from 'react'
 import { TypingContext } from '../../store'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import { default as WordComponent } from './components/Word'
+import { phoneticConfigAtom } from '@/store'
+import { Word } from '@/typings'
+import { useAtomValue } from 'jotai'
+import { useContext } from 'react'
 
 export default function CurrentWord({ word, onFinish }: { word: Word; onFinish: () => void }) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)

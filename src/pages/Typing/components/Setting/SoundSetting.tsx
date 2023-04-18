@@ -1,9 +1,9 @@
+import styles from './index.module.css'
+import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
 import { Switch } from '@headlessui/react'
-import { useCallback } from 'react'
 import * as Slider from '@radix-ui/react-slider'
 import { useAtom } from 'jotai'
-import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
-import styles from './index.module.css'
+import { useCallback } from 'react'
 
 export default function SoundSetting() {
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)

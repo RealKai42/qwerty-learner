@@ -1,8 +1,8 @@
+import styles from './index.module.css'
 import { isIgnoreCaseAtom, randomConfigAtom } from '@/store'
 import { Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
-import styles from './index.module.css'
 
 export default function AdvancedSetting() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)

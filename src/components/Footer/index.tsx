@@ -1,17 +1,16 @@
-import React, { useCallback } from 'react'
-import InfoPanel from '@/components/InfoPanel'
-
-import vscLogo from '@/assets/vsc-logo.svg'
-import { recordOpenInfoPanelAction } from '@/utils'
-import { InfoPanelType } from '@/typings'
-import { useAtom } from 'jotai'
-import { infoPanelStateAtom } from '@/store'
+import alipay from '@/assets/alipay.jpg'
 import redBookLogo from '@/assets/redBook-black-logo.svg'
 import redBookCode from '@/assets/redBook-code.jpg'
-import alipay from '@/assets/alipay.jpg'
+import vscLogo from '@/assets/vsc-logo.svg'
 import weChat from '@/assets/weChat.jpg'
-import { IconBrandWechat, IconCoffee, IconTerminal2 } from '@tabler/icons-react'
+import InfoPanel from '@/components/InfoPanel'
+import { infoPanelStateAtom } from '@/store'
+import { InfoPanelType } from '@/typings'
+import { recordOpenInfoPanelAction } from '@/utils'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
+import { IconBrandWechat, IconCoffee, IconTerminal2 } from '@tabler/icons-react'
+import { useAtom } from 'jotai'
+import React, { useCallback } from 'react'
 
 const Footer: React.FC = () => {
   const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)

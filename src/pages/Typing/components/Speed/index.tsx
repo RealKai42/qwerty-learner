@@ -1,6 +1,6 @@
-import { useContext } from 'react'
-import InfoBox from './InfoBox'
 import { TypingContext } from '../../store'
+import InfoBox from './InfoBox'
+import { useContext } from 'react'
 
 export default function Speed() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion

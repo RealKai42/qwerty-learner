@@ -1,8 +1,8 @@
-import React, { ElementType, Fragment } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import classNames from 'classnames'
 import redBookLogo from '@/assets/redBook-color-logo.svg'
+import { Dialog, Transition } from '@headlessui/react'
 import type { TablerIconsProps } from '@tabler/icons-react'
+import classNames from 'classnames'
+import React, { ElementType, Fragment } from 'react'
 
 type InfoPanelProps = {
   openState: boolean

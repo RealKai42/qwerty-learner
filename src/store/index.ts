@@ -1,9 +1,9 @@
-import { atomWithStorage } from 'jotai/utils'
-import { atom } from 'jotai'
+import { CHAPTER_LENGTH, DISMISS_START_CARD_DATE_KEY } from '@/constants'
+import { idDictionaryMap } from '@/resources/dictionary'
 import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
 import { PronunciationType, PhoneticType, Dictionary, InfoPanelState } from '@/typings'
-import { idDictionaryMap } from '@/resources/dictionary'
-import { CHAPTER_LENGTH, DISMISS_START_CARD_DATE_KEY } from '@/constants'
+import { atom } from 'jotai'
+import { atomWithStorage } from 'jotai/utils'
 
 export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
 export const currentDictInfoAtom = atom<Dictionary>((get) => {
