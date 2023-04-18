@@ -54,7 +54,7 @@ name 是展示给所有用户的词典名，
 description 是词典描述，  
 category 是词典分类（你可以事先阅读所有已存在的词典分类，来为新的词典选择合适的分类），  
 url 是词典的目标文件位置，  
-length 是词典的单词数量（我们准备了计算length的脚本：scripts/update-dict-size.js）
+length 是词典的单词数量（我们准备了计算 length 的脚本：scripts/update-dict-size.js）
 
 ### 1.4 测试 🧪
 
