@@ -1031,6 +1031,15 @@ export const dictionaries: DictionaryResource[] = [
     length: 670,
     language: 'romaji',
   },
+  {
+    id: 'childCode',
+    name: '少儿编程',
+    description: '少儿编程',
+    category: '少儿编程学习',
+    url: '/dicts/Child_code.json',
+    length: 19,
+    language: 'en',
+  },
 ]
 
 /**
