@@ -1,4 +1,5 @@
 import { Word } from '@/typings'
+import { shuffle } from 'lodash'
 import { createContext } from 'react'
 
 export type ChapterData = {
@@ -92,8 +93,8 @@ export type TypingStateAction =
   | { type: TypingStateActionType.INCREASE_CORRECT_COUNT }
   | { type: TypingStateActionType.INCREASE_WRONG_COUNT }
   | { type: TypingStateActionType.SKIP_WORD }
-  | { type: TypingStateActionType.REPEAT_CHAPTER }
-  | { type: TypingStateActionType.DICTATION_CHAPTER }
+  | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
+  | { type: TypingStateActionType.DICTATION_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
@@ -170,14 +171,14 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.REPEAT_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
-      newState.chapterData.words = state.chapterData.words
+      newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       return newState
     }
 
     case TypingStateActionType.DICTATION_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
-      newState.chapterData.words = state.chapterData.words
+      newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       newState.isWordVisible = false
       return newState
     }
@@ -186,7 +187,6 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       newState.isTyping = true
       return newState
     }
-
     case TypingStateActionType.TOGGLE_WORD_VISIBLE:
       state.isWordVisible = !state.isWordVisible
       break

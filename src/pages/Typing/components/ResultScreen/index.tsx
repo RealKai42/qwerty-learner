@@ -1,18 +1,18 @@
-import { Transition } from '@headlessui/react'
+import redBookLogo from '@/assets/redBook-color-logo.svg'
 import Tooltip from '@/components/Tooltip'
+import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom } from '@/store'
+import { InfoPanelType } from '@/typings'
+import { recordOpenInfoPanelAction } from '@/utils'
+import { Transition } from '@headlessui/react'
+import { IconX } from '@tabler/icons-react'
+import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { TypingContext, TypingStateActionType } from '../../store'
+import ShareButton from '../ShareButton'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
-import { useAtom, useAtomValue, useSetAtom } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom } from '@/store'
-import { recordOpenInfoPanelAction } from '@/utils'
-import { InfoPanelType } from '@/typings'
-import { TypingContext, TypingStateActionType } from '../../store'
-import ShareButton from '../ShareButton'
-import redBookLogo from '@/assets/redBook-color-logo.svg'
-import { IconX } from '@tabler/icons-react'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -21,6 +21,7 @@ const ResultScreen = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
+  const randomConfig = useAtomValue(randomConfigAtom)
 
   const isLastChapter = useMemo(() => {
     return currentChapter >= currentDictInfo.chapterCount - 1
@@ -52,12 +53,12 @@ const ResultScreen = () => {
   }, [state.timerData.time])
 
   const repeatButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
-  }, [dispatch])
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen])
 
   const dictationButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER })
-  }, [dispatch])
+    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen])
 
   const nextButtonHandler = useCallback(() => {
     if (!isLastChapter) {
@@ -67,7 +68,7 @@ const ResultScreen = () => {
   }, [dispatch, isLastChapter, setCurrentChapter])
 
   const exitButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: false })
   }, [dispatch])
   useHotkeys(
     'enter',
