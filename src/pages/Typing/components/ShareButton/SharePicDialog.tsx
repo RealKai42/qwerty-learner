@@ -13,10 +13,8 @@ import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import { recordShareAction } from '@/utils'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/solid'
-import { saveAs } from 'file-saver'
-import { toPng } from 'html-to-image'
 import { useAtomValue } from 'jotai'
-import { Fragment, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { Fragment, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 
 const PIC_RATIO = 3
 const PIC_LIST = [shareImage1, shareImage2, shareImage3, shareImage4, shareImage5, shareImage6, shareImage7, shareImage8, shareImage9]
@@ -64,25 +62,33 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
   const promote = useMemo(() => PROMOTE_LIST[Math.floor(randomChoose.promoteRandom * PROMOTE_LIST.length)], [randomChoose.promoteRandom])
 
   useEffect(() => {
-    if (imageRef.current) {
-      const width = imageRef.current.offsetWidth,
-        height = imageRef.current.offsetHeight
-      toPng(imageRef.current, { canvasWidth: width * PIC_RATIO, canvasHeight: height * PIC_RATIO }).then((url) => {
-        setImageURL(url)
-      })
+    async function loadToPng() {
+      const { toPng } = await import('html-to-image')
+
+      if (imageRef.current) {
+        const width = imageRef.current.offsetWidth
+        const height = imageRef.current.offsetHeight
+        toPng(imageRef.current, { canvasWidth: width * PIC_RATIO, canvasHeight: height * PIC_RATIO }).then((url) => {
+          setImageURL(url)
+        })
+      }
     }
+
+    loadToPng()
   }, [])
 
-  const handleDownload = () => {
+  const handleDownload = useCallback(async () => {
+    const { saveAs } = await import('file-saver')
+
     if (imageURL) {
       saveAs(imageURL, 'Qwerty-learner.png')
       recordShareAction('download')
     }
-  }
+  }, [imageURL])
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setShowState(false)
-  }
+  }, [setShowState])
 
   return (
     <>
