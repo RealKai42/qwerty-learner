@@ -1,9 +1,9 @@
+import { CHAPTER_LENGTH } from '@/constants'
+import { currentDictInfoAtom, currentChapterAtom } from '@/store'
+import { Word } from '@/typings/index'
 import { useAtom, useAtomValue } from 'jotai'
 import { useMemo } from 'react'
 import useSWR from 'swr'
-import { Word } from '@/typings/index'
-import { currentDictInfoAtom, currentChapterAtom } from '@/store'
-import { CHAPTER_LENGTH } from '@/constants'
 
 export type UseWordListResult = {
   words: Word[] | undefined

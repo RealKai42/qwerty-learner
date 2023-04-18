@@ -1,5 +1,5 @@
-import classNames from 'classnames'
 import { HeartIcon, HandThumbUpIcon, ExclamationTriangleIcon } from '@heroicons/react/20/solid'
+import classNames from 'classnames'
 import { ElementType, SVGAttributes } from 'react'
 
 type IconMapper = {

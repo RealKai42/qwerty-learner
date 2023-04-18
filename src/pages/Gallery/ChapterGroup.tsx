@@ -1,9 +1,9 @@
-import React from 'react'
-import range from '@/utils/range'
 import ChapterButton from './ChapterButton'
-import { useAtom, useAtomValue } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import { CHAPTER_LENGTH } from '@/constants'
+import { currentChapterAtom, currentDictInfoAtom } from '@/store'
+import range from '@/utils/range'
+import { useAtom, useAtomValue } from 'jotai'
+import React from 'react'
 
 const ChapterGroup: React.FC<ChapterGroupProps> = ({ totalWords }) => {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)

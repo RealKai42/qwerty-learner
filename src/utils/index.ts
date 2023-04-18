@@ -1,4 +1,5 @@
 import { Howl } from 'howler'
+
 export * from './mixpanel'
 
 const bannedKeys = [

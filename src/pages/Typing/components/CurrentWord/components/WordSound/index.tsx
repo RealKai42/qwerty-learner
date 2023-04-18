@@ -1,11 +1,11 @@
 import { SoundIcon, SoundIconProps } from '../SoundIcon'
+import styles from './index.module.css'
 import Tooltip from '@/components/Tooltip'
 import usePronunciationSound from '@/hooks/usePronunciation'
+import { pronunciationIsOpenAtom } from '@/store'
 import { useAtomValue } from 'jotai'
 import { useEffect, useCallback } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import styles from './index.module.css'
-import { pronunciationIsOpenAtom } from '@/store'
 
 const WordSound = ({ word, inputWord, ...rest }: WordSoundProps) => {
   const { play, stop, isPlaying } = usePronunciationSound(word)
