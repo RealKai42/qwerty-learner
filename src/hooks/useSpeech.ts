@@ -26,9 +26,10 @@ const useSpeech = (text: string, option?: Partial<SpeechSynthesisUtterance>) => 
     return () => {
       if (speaking) {
         synth.cancel()
+        setSpeaking(false)
       }
     }
-  }, [text])
+  }, [text, speaking])
 
   useEffect(() => {
     if (utterance) {
