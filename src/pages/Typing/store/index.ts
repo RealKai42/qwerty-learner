@@ -1,5 +1,5 @@
 import { Word } from '@/typings'
-import { shuffle } from 'lodash'
+import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
 
 export type ChapterData = {
@@ -81,7 +81,7 @@ export enum TypingStateActionType {
 }
 
 export type TypingStateAction =
-  | { type: TypingStateActionType.SETUP_CHAPTER; payload: Word[] }
+  | { type: TypingStateActionType.SETUP_CHAPTER; payload: { words: Word[]; shouldShuffle: boolean } }
   | { type: TypingStateActionType.SET_IS_SKIP; payload: boolean }
   | { type: TypingStateActionType.SET_IS_TYPING; payload: boolean }
   | { type: TypingStateActionType.TOGGLE_IS_TYPING }
@@ -107,7 +107,7 @@ type Dispatch = (action: TypingStateAction) => void
 export const typingReducer = (state: TypingState, action: TypingStateAction) => {
   switch (action.type) {
     case TypingStateActionType.SETUP_CHAPTER:
-      state.chapterData.words = action.payload
+      state.chapterData.words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
       break
     case TypingStateActionType.SET_IS_SKIP:
       state.isShowSkip = action.payload
