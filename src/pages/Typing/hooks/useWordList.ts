@@ -1,9 +1,8 @@
 import { useAtom, useAtomValue } from 'jotai'
-import shuffle from '@/utils/shuffle'
 import { useMemo } from 'react'
 import useSWR from 'swr'
 import { Word } from '@/typings/index'
-import { randomConfigAtom, currentDictInfoAtom, currentChapterAtom } from '@/store'
+import { currentDictInfoAtom, currentChapterAtom } from '@/store'
 import { CHAPTER_LENGTH } from '@/constants'
 
 export type UseWordListResult = {
@@ -18,7 +17,6 @@ export type UseWordListResult = {
 export function useWordList(): UseWordListResult {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
-  const randomConfig = useAtomValue(randomConfigAtom)
 
   const isFirstChapter = currentDictInfo.id === 'cet4' && currentChapter === 0
 
@@ -38,9 +36,8 @@ export function useWordList(): UseWordListResult {
         : [],
     [isFirstChapter, wordList, currentChapter],
   )
-  const shuffleWords = useMemo(() => (randomConfig.isOpen ? shuffle(words) : words), [randomConfig.isOpen, words])
 
-  return { words: wordList === undefined ? undefined : shuffleWords, isLoading, error }
+  return { words: wordList === undefined ? undefined : words, isLoading, error }
 }
 
 async function wordListFetcher(url: string): Promise<Word[]> {

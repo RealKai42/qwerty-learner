@@ -496,8 +496,17 @@ export const dictionaries: DictionaryResource[] = [
     name: '少儿 Python',
     description: '少儿 Python 常见词',
     category: '少儿编程 beta',
-    url: '/dicts/Child_code.json',
+    url: '/dicts/Child_python_code.json',
     length: 19,
+    language: 'en',
+  },
+  {
+    id: 'childCode002',
+    name: '少儿 Python Turtle',
+    description: '少儿 Python Turtle 常见词',
+    category: '少儿编程 beta',
+    url: '/dicts/Child_python_turtle_code.json',
+    length: 27,
     language: 'en',
   },
   {
@@ -1039,24 +1048,6 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/JapVocabList.N5.json',
     length: 670,
     language: 'romaji',
-  },
-  {
-    id: 'childCode001',
-    name: '少儿编程',
-    description: '少儿编程',
-    category: '少儿编程学习',
-    url: '/dicts/Child_code_1.json',
-    length: 19,
-    language: 'en',
-  },
-  {
-    id: 'childCode002',
-    name: '少儿编程',
-    description: '少儿编程',
-    category: '少儿编程学习',
-    url: '/dicts/Child_code_2.json',
-    length: 27,
-    language: 'en',
   },
 ]
 
