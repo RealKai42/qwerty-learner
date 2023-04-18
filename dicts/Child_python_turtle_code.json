@@ -1,0 +1,164 @@
+[
+    {
+        "name": "screensize",
+        "trans": [
+            "设置画布大小及颜色"
+        ]
+    },
+    {
+        "name": "setup",
+        "trans": [
+            "设置窗口大小和位置"
+        ]
+    },
+    {
+        "name": "forward",
+        "trans": [
+            "向当前画笔方向移动dist像素长，简化为fd(dist)"
+        ]
+    },
+    {
+        "name": "backward",
+        "trans": [
+            "向当前画笔相反方向移动dist像素长度，简化为bk(dist)"
+        ]
+    },
+    {
+        "name": "right",
+        "trans": [
+            "顺时针转动degree°"
+        ]
+    },
+    {
+        "name": "left",
+        "trans": [
+            "逆时针转动degree°"
+        ]
+    },
+    {
+        "name": "circle",
+        "trans": [
+            "逆时针画半径为r整圆"
+        ]
+    },
+    {
+        "name": "dot",
+        "trans": [
+            "按给定直径画圆点"
+        ]
+    },
+    {
+        "name": "speed",
+        "trans": [
+            "画笔绘制的速度，s为0-10的整数(1-10越来越快,0表示最快)"
+        ]
+    },
+    {
+        "name": "pendown",
+        "trans": [
+            "移动时绘制图形，缺省时也为绘制，简化为down()"
+        ]
+    },
+    {
+        "name": "penup",
+        "trans": [
+            "移动时不绘制图形，提起笔，用于另起一个地方绘制时用，简化为up()"
+        ]
+    },
+    {
+        "name": "goto",
+        "trans": [
+            "将画笔移动到坐标为x,y的位置"
+        ]
+    },
+    {
+        "name": "setx",
+        "trans": [
+            "将当前x轴移动到指定位置"
+        ]
+    },
+    {
+        "name": "sety",
+        "trans": [
+            "将当前y轴移动到指定位置"
+        ]
+    },
+    {
+        "name": "setheading",
+        "trans": [
+            "设置当前朝向为angle角度，简化为seth(angle)"
+        ]
+    },
+    {
+        "name": "home",
+        "trans": [
+            "设置当前画笔位置为原点(0,0)，并恢复默认朝向为向东(0)"
+        ]
+    },
+    {
+        "name": "pensize",
+        "trans": [
+            "绘制图形时的画笔宽度"
+        ]
+    },
+    {
+        "name": "pencolor",
+        "trans": [
+            "画笔颜色"
+        ]
+    },
+    {
+        "name": "shape",
+        "trans": [
+            "画笔外观形状，可选classic/arrow/turtle/circle/square/triangle"
+        ]
+    },
+    {
+        "name": "fillcolor",
+        "trans": [
+            "图形的填充颜色"
+        ]
+    },
+    {
+        "name": "color",
+        "trans": [
+            "同时设置pencolor=c1, fillcolor=c2"
+        ]
+    },
+    {
+        "name": "begin_fill",
+        "trans": [
+            "准备开始填充图形"
+        ]
+    },
+    {
+        "name": "end_fill",
+        "trans": [
+            "填充完成"
+        ]
+    },
+    {
+        "name": "hideturtle",
+        "trans": [
+            "隐藏箭头显示，简化为ht()"
+        ]
+    },
+    {
+        "name": "showturtle",
+        "trans": [
+            "与hideturtle()函数对应，简化为st()"
+        ]
+    },
+    {
+        "name": "clear",
+        "trans": [
+            "清空turtle窗口，但是turtle的位置和状态不会改变"
+        ]
+    },
+    {
+        "name": "reset",
+        "trans": [
+            "清空窗口，重置turtle状态为起始状态"
+        ]
+    }
+]
