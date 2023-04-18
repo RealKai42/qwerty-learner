@@ -21,10 +21,10 @@
 词典的文件格式是 `词典名.json` ，其内容结构应当是:
 
 ```json
-[ 
-    { 
-        "name" : "xxx" , 
-        "trans" : ["xxx", "xxx",...] 
+[
+    {
+        "name" : "xxx" ,
+        "trans" : ["xxx", "xxx",...]
     },
     ...
 ]
@@ -68,13 +68,13 @@
 词典的索引建立是在 `/resources/dictionary.ts` 中完成的，你需要在该文件中添加一行代码，格式如下：
 
 ```json
-{ 
-    "id": "xxx", 
-    "name": "xxx", 
-    "description": "xxx", 
-    "category": "xxx", 
-    "url": "./dicts/xxx.json", 
-    "length": xxx 
+{
+    "id": "xxx",
+    "name": "xxx",
+    "description": "xxx",
+    "category": "xxx",
+    "url": "./dicts/xxx.json",
+    "length": xxx
 }
 ```
 
