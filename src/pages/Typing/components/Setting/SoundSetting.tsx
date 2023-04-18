@@ -171,35 +171,37 @@ export default function SoundSetting() {
           </div>
         </div>
       </div>
-      <div className={styles.section}>
-        <span className={styles.sectionLabel}>释义发音</span>
-        <div className={styles.switchBlock}>
-          <Switch checked={pronunciationConfig.isTransRead} onChange={onTogglePronunciationIsTransRead} className="switch-root">
-            <span aria-hidden="true" className="switch-thumb" />
-          </Switch>
-          <span className="text-right text-xs font-normal leading-tight text-gray-600">{`发音已${
-            pronunciationConfig.isTransRead ? '开启' : '关闭'
-          }`}</span>
-        </div>
-        <div className={styles.block}>
-          <span className={styles.blockLabel}>音量</span>
-          <div className="flex h-5 w-full items-center justify-between">
-            <Slider.Root
-              defaultValue={[pronunciationConfig.transVolume * 100]}
-              max={100}
-              step={10}
-              className="slider"
-              onValueChange={onChangePronunciationIsTransVolume}
-            >
-              <Slider.Track>
-                <Slider.Range />
-              </Slider.Track>
-              <Slider.Thumb />
-            </Slider.Root>
-            <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(pronunciationConfig.transVolume * 100)}%`}</span>
+      {window.speechSynthesis && (
+        <div className={styles.section}>
+          <span className={styles.sectionLabel}>释义发音</span>
+          <div className={styles.switchBlock}>
+            <Switch checked={pronunciationConfig.isTransRead} onChange={onTogglePronunciationIsTransRead} className="switch-root">
+              <span aria-hidden="true" className="switch-thumb" />
+            </Switch>
+            <span className="text-right text-xs font-normal leading-tight text-gray-600">{`发音已${
+              pronunciationConfig.isTransRead ? '开启' : '关闭'
+            }`}</span>
+          </div>
+          <div className={styles.block}>
+            <span className={styles.blockLabel}>音量</span>
+            <div className="flex h-5 w-full items-center justify-between">
+              <Slider.Root
+                defaultValue={[pronunciationConfig.transVolume * 100]}
+                max={100}
+                step={10}
+                className="slider"
+                onValueChange={onChangePronunciationIsTransVolume}
+              >
+                <Slider.Track>
+                  <Slider.Range />
+                </Slider.Track>
+                <Slider.Thumb />
+              </Slider.Root>
+              <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(pronunciationConfig.transVolume * 100)}%`}</span>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <div className={styles.section}>
         <span className={styles.sectionLabel}>按键音</span>
