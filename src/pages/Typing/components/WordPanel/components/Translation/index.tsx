@@ -1,14 +1,17 @@
 import { SoundIcon } from '../SoundIcon'
 import useSpeech from '@/hooks/useSpeech'
-import { isTextSelectableAtom, pronunciationIsTransReadAtom } from '@/store'
+import { isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
 
 export type TranslationProps = {
   trans: string
 }
 export default function Translation({ trans }: TranslationProps) {
-  const pronunciationIsTransRead = useAtomValue(pronunciationIsTransReadAtom)
-  const { speak, speaking } = useSpeech(trans)
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+
+  const { speak, speaking } = useSpeech(trans, {
+    volume: pronunciationConfig.transVolume,
+  })
 
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
   return (
@@ -18,7 +21,7 @@ export default function Translation({ trans }: TranslationProps) {
       }`}
     >
       {trans}
-      {window.speechSynthesis && pronunciationIsTransRead && (
+      {window.speechSynthesis && pronunciationConfig.isTransRead && (
         <SoundIcon
           animated={speaking}
           onClick={() => {

@@ -42,6 +42,7 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   name: '美音',
   isLoop: false,
   isTransRead: false,
+  transVolume: 1,
   rate: 1,
 })
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)

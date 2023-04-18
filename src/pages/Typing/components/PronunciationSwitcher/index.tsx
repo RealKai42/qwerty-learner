@@ -159,7 +159,7 @@ const PronunciationSwitcher = () => {
                       <Switch checked={pronunciationConfig.isTransRead} onChange={onChangePronunciationIsTransRead} className="switch-root">
                         <span aria-hidden="true" className="switch-thumb" />
                       </Switch>
-                      <span className="text-right text-xs font-normal leading-tight text-gray-600">{`释义发音已${
+                      <span className="text-right text-xs font-normal leading-tight text-gray-600">{`发音已${
                         pronunciationConfig.isTransRead ? '开启' : '关闭'
                       }`}</span>
                     </div>
