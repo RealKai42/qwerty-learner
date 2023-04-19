@@ -9,7 +9,7 @@
   @apply pb-0 text-xl font-medium text-gray-600;
 }
 .section-description {
-  @apply -mt-1 pl-4 text-xs font-normal leading-tight text-gray-600;
+  @apply -mt-1 pl-4 text-left text-xs font-normal leading-tight text-gray-600;
 }
 
 .block {

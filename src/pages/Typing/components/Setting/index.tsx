@@ -1,9 +1,10 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import AdvancedSetting from './AdvancedSetting'
+import DataSetting from './DataSetting'
 import SoundSetting from './SoundSetting'
 import { Dialog, Tab, Transition } from '@headlessui/react'
 import { Cog6ToothIcon } from '@heroicons/react/24/solid'
-import { IconEar, IconAdjustmentsHorizontal, IconX } from '@tabler/icons-react'
+import { IconEar, IconAdjustmentsHorizontal, IconX, IconDatabaseCog } from '@tabler/icons-react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
 
@@ -92,6 +93,17 @@ export default function Setting() {
                           <IconAdjustmentsHorizontal className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">高级设置</span>
                         </Tab>
+                        <Tab
+                          className={({ selected }) =>
+                            classNames(
+                              'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
+                            )
+                          }
+                        >
+                          <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
+                          <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
+                        </Tab>
                       </Tab.List>
 
                       <Tab.Panels className="h-full w-full flex-1">
@@ -100,6 +112,9 @@ export default function Setting() {
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
                           <AdvancedSetting />
+                        </Tab.Panel>
+                        <Tab.Panel className="flex h-full focus:outline-none">
+                          <DataSetting />
                         </Tab.Panel>
                       </Tab.Panels>
                     </div>
