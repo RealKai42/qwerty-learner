@@ -56,8 +56,8 @@ export default function DataSetting() {
       <div className={styles.section}>
         <span className={styles.sectionLabel}>数据导出</span>
         <span className={styles.sectionDescription}>
-          目前，用户的练习数据<strong>仅保存在本地</strong>。如果您需要在不同的设备、浏览器或不同的域名下使用 Qwerty Learner，
-          您需要手动进行数据同步和保存。为了保留您的练习进度，并使用未来的数据分析和智能训练功能， 我们建议您及时备份您的数据。
+          目前，用户的练习数据<strong>仅保存在本地</strong>。如果您需要在不同的设备、浏览器或者其他非官方部署上使用 Qwerty Learner，
+          您需要手动进行数据同步和保存。为了保留您的练习进度，以及使用近期即将上线的数据分析和智能训练功能， 我们建议您及时备份您的数据。
         </span>
         <span className="pl-4 text-sm font-bold leading-tight text-red-500 text-left">为了您的数据安全，请不要修改导出的数据文件。</span>
         <div className="h-3 w-full px-5 flex items-center justify-start">
@@ -80,7 +80,7 @@ export default function DataSetting() {
       <div className={styles.section}>
         <span className={styles.sectionLabel}>数据导入</span>
         <span className={styles.sectionDescription}>
-          请注意，导入数据将<strong className="text-red-500 text-sm font-bold"> 完全覆盖 </strong>当前数据, 请谨慎操作。
+          请注意，导入数据将<strong className="text-red-500 text-sm font-bold"> 完全覆盖 </strong>当前数据。请谨慎操作。
         </span>
 
         <div className="h-3 w-full px-5 flex items-center justify-start">

@@ -1,4 +1,5 @@
 import { db } from '.'
+import { getCurrentDate } from '..'
 
 export type ExportProgress = {
   totalRows?: number
@@ -13,9 +14,7 @@ export type ImportProgress = {
 }
 
 export async function exportDatabase(callback: (exportProgress: ExportProgress) => boolean) {
-  await import('dexie-export-import')
-  const pako = await import('pako')
-  const { saveAs } = await import('file-saver')
+  const [pako, { saveAs }] = await Promise.all([import('pako'), import('file-saver'), import('dexie-export-import')])
 
   const blob = await db.export({
     progressCallback: ({ totalRows, completedRows, done }) => {
@@ -25,12 +24,12 @@ export async function exportDatabase(callback: (exportProgress: ExportProgress) 
   const json = await blob.text()
   const compressed = pako.gzip(json)
   const compressedBlob = new Blob([compressed])
-  saveAs(compressedBlob, 'Qwerty-Learner-User-Data.gz')
+  const currentDate = getCurrentDate()
+  saveAs(compressedBlob, `Qwerty-Learner-User-Data-${currentDate}.gz`)
 }
 
 export async function importDatabase(onStart: () => void, callback: (importProgress: ImportProgress) => boolean) {
-  await import('dexie-export-import')
-  const pako = await import('pako')
+  const [pako] = await Promise.all([import('pako'), import('dexie-export-import')])
 
   const input = document.createElement('input')
   input.type = 'file'
