@@ -1,5 +1,6 @@
 import './index.css'
-import GalleryPage from './pages/Gallery'
+// import GalleryPage from './pages/Gallery'
+import GalleryPage from './pages/Gallery-N'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
 import dayjs from 'dayjs'
