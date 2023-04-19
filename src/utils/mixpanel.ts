@@ -167,3 +167,24 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
   ])
   return chapterLogUploader
 }
+
+export function recordDataAction({
+  type,
+  size,
+  wordCount,
+  chapterCount,
+}: {
+  type: 'export' | 'import'
+  size: number
+  wordCount: number
+  chapterCount: number
+}) {
+  const props = {
+    type,
+    size,
+    wordCount,
+    chapterCount,
+  }
+
+  mixpanel.track('dataAction', props)
+}
