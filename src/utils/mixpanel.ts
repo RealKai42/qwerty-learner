@@ -1,9 +1,4 @@
-import dayjs from 'dayjs'
-import { InfoPanelType } from '@/typings'
-import mixpanel from 'mixpanel-browser'
-import { PronunciationType } from '@/typings'
 import { TypingState } from '@/pages/Typing/store'
-import { useAtomValue } from 'jotai'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
@@ -14,6 +9,11 @@ import {
   pronunciationConfigAtom,
   randomConfigAtom,
 } from '@/store'
+import { InfoPanelType } from '@/typings'
+import { PronunciationType } from '@/typings'
+import dayjs from 'dayjs'
+import { useAtomValue } from 'jotai'
+import mixpanel from 'mixpanel-browser'
 import { useCallback } from 'react'
 
 export type starAction = 'star' | 'dismiss'

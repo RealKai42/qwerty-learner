@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
 import './index.css'
-import 'react-app-polyfill/stable'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import GalleryPage from './pages/Gallery'
 import TypingPage from './pages/Typing'
-import mixpanel from 'mixpanel-browser'
+import { isOpenDarkModeAtom } from '@/store'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import { useAtomValue } from 'jotai'
-import { isOpenDarkModeAtom } from '@/store'
+import mixpanel from 'mixpanel-browser'
 import process from 'process'
+import React, { useEffect } from 'react'
+import 'react-app-polyfill/stable'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 if (process.env.NODE_ENV === 'production') {
   // for prod

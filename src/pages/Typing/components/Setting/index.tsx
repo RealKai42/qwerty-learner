@@ -1,11 +1,11 @@
+import { TypingContext, TypingStateActionType } from '../../store'
+import AdvancedSetting from './AdvancedSetting'
+import SoundSetting from './SoundSetting'
 import { Dialog, Tab, Transition } from '@headlessui/react'
+import { Cog6ToothIcon } from '@heroicons/react/24/solid'
+import { IconEar, IconAdjustmentsHorizontal, IconX } from '@tabler/icons-react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
-import SoundSetting from './SoundSetting'
-import AdvancedSetting from './AdvancedSetting'
-import { TypingContext, TypingStateActionType } from '../../store'
-import { IconEar, IconAdjustmentsHorizontal, IconX } from '@tabler/icons-react'
-import { Cog6ToothIcon } from '@heroicons/react/24/solid'
 
 export default function Setting() {
   const [isOpen, setIsOpen] = useState(false)

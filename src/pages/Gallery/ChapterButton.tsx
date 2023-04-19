@@ -1,7 +1,7 @@
+import { useChapterStats } from './hooks/useChapterStats'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import React, { useEffect, useRef } from 'react'
-import { useChapterStats } from './hooks/useChapterStats'
 
 export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, wordCount, onClick }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)

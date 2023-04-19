@@ -71,6 +71,7 @@
     "@types/react-dom": "^18.0.11",
     "@types/react-router-dom": "^5.1.7",
     "@vitejs/plugin-react": "^3.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-react-app": "^7.0.1",

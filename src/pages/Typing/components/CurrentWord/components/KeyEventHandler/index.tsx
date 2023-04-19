@@ -1,7 +1,7 @@
+import { WordUpdateAction } from '../InputHandler'
 import { TypingContext } from '@/pages/Typing/store'
 import { isChineseSymbol, isLegal } from '@/utils'
 import { useCallback, useContext, useEffect } from 'react'
-import { WordUpdateAction } from '../InputHandler'
 
 export default function KeyEventHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion

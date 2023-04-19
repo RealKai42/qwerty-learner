@@ -1,13 +1,13 @@
-import { LANG_PRON_MAP } from '@/resources/soundResource'
-import { useAtom, useAtomValue } from 'jotai'
-import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
-import { useCallback, useEffect, useMemo } from 'react'
-import { Listbox } from '@headlessui/react'
-import { PronunciationType, PRONUNCIATION_PHONETIC_MAP } from '@/typings'
-import { Fragment } from 'react'
-import { Popover, Transition, Switch } from '@headlessui/react'
 import Tooltip from '@/components/Tooltip'
+import { LANG_PRON_MAP } from '@/resources/soundResource'
+import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
+import { PronunciationType, PRONUNCIATION_PHONETIC_MAP } from '@/typings'
+import { Listbox } from '@headlessui/react'
+import { Popover, Transition, Switch } from '@headlessui/react'
 import { IconChevronDown, IconCheck } from '@tabler/icons-react'
+import { useAtom, useAtomValue } from 'jotai'
+import { useCallback, useEffect, useMemo } from 'react'
+import { Fragment } from 'react'
 
 const PronunciationSwitcher = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)

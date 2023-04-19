@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react'
-import { DictionaryResource } from '@/typings'
-import { useAtom, useSetAtom } from 'jotai'
 import { currentChapterAtom, currentDictIdAtom } from '@/store'
+import { DictionaryResource } from '@/typings'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { useAtom, useSetAtom } from 'jotai'
+import React, { useEffect, useRef } from 'react'
 
 const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)

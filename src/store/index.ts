@@ -1,14 +1,19 @@
-import { atomWithStorage } from 'jotai/utils'
-import { atom } from 'jotai'
+import { CHAPTER_LENGTH, DISMISS_START_CARD_DATE_KEY } from '@/constants'
+import { idDictionaryMap } from '@/resources/dictionary'
 import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
 import { PronunciationType, PhoneticType, Dictionary, InfoPanelState } from '@/typings'
-import { idDictionaryMap } from '@/resources/dictionary'
-import { CHAPTER_LENGTH, DISMISS_START_CARD_DATE_KEY } from '@/constants'
+import { atom } from 'jotai'
+import { atomWithStorage } from 'jotai/utils'
 
 export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
 export const currentDictInfoAtom = atom<Dictionary>((get) => {
   const id = get(currentDictIdAtom)
-  const dict = idDictionaryMap[id]
+  let dict = idDictionaryMap[id]
+  // 如果 dict 不存在，则返回 cet4. Typing 中会检查 DictId 是否存在，如果不存在则会重置为 cet4
+  if (!dict) {
+    dict = idDictionaryMap.cet4
+  }
+
   const dictionary = { ...dict, chapterCount: Math.ceil(dict.length / CHAPTER_LENGTH) }
   return dictionary || null
 })
@@ -47,6 +52,8 @@ export const randomConfigAtom = atomWithStorage('randomConfig', {
 export const isLoopSingleWordAtom = atom(false)
 
 export const isIgnoreCaseAtom = atomWithStorage('isIgnoreCase', true)
+
+export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
 export const phoneticConfigAtom = atomWithStorage('phoneticConfig', {
   isOpen: true,

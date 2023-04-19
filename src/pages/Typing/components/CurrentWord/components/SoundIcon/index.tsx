@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import VolumeHighIcon from './volume-icons/VolumeHieghIcon'
 import VolumeIcon from './volume-icons/VolumeIcon'
 import VolumeLowIcon from './volume-icons/VolumeLowIcon'
 import VolumeMediumIcon from './volume-icons/VolumeMediumIcon'
-import VolumeHighIcon from './volume-icons/VolumeHieghIcon'
+import React, { useEffect, useState } from 'react'
 
 const volumeIcons = [VolumeIcon, VolumeLowIcon, VolumeMediumIcon, VolumeHighIcon]
 

@@ -1,24 +1,25 @@
-import React, { useCallback, useEffect, useState } from 'react'
-import Header from '@/components/Header'
-import Speed from './components/Speed'
-import Loading from '@/components/Loading'
+import Layout from '../../components/Layout'
+import CurrentWord from './components/CurrentWord'
+import Progress from './components/Progress'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
-import { IsDesktop, isLegal } from '@/utils'
-import { useHotkeys } from 'react-hotkeys-hook'
+import ResultScreen from './components/ResultScreen'
+import Speed from './components/Speed'
 import Switcher from './components/Switcher'
 import { useWordList } from './hooks/useWordList'
-import Layout from '../../components/Layout'
-import { NavLink } from 'react-router-dom'
-import Tooltip from '@/components/Tooltip'
-import Progress from './components/Progress'
-import ResultScreen from './components/ResultScreen'
-import CurrentWord from './components/CurrentWord'
-import { useAtomValue } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom, isLoopSingleWordAtom, randomConfigAtom } from '@/store'
-import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
-import StarCard from '@/components/StarCard'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
+import Header from '@/components/Header'
+import Loading from '@/components/Loading'
+import StarCard from '@/components/StarCard'
+import Tooltip from '@/components/Tooltip'
+import { idDictionaryMap } from '@/resources/dictionary'
+import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, isLoopSingleWordAtom, randomConfigAtom } from '@/store'
+import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
+import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
+import { useAtom, useAtomValue } from 'jotai'
+import React, { useCallback, useEffect, useState } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
+import { NavLink } from 'react-router-dom'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
   const currentWord = typingState.chapterData.words[typingState.chapterData.index]
 
   const currentChapter = useAtomValue(currentChapterAtom)
+  const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
 
   const chapterLogUploader = useMixPanelChapterLogUploader(typingState)
@@ -51,6 +53,15 @@ const App: React.FC = () => {
       }, 500)
     }
   }, [])
+
+  // 在组件挂载和currentDictId改变时，检查当前字典是否存在，如果不存在，则将其重置为默认值
+  useEffect(() => {
+    const id = currentDictId
+    if (!(id in idDictionaryMap)) {
+      setCurrentDictId('cet4')
+    }
+  }, [currentDictId, setCurrentDictId])
+
   useHotkeys(
     'enter',
     () => {

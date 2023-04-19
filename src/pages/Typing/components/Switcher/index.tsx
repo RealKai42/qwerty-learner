@@ -1,13 +1,13 @@
+import { TypingContext, TypingStateActionType } from '../../store'
+import Setting from '../Setting'
+import SoundSwitcher from '../SoundSwitcher'
+import Tooltip from '@/components/Tooltip'
+import { isLoopSingleWordAtom, isOpenDarkModeAtom } from '@/store'
+import { SunIcon, MoonIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
+import { IconRepeatOnce, IconRepeatOff, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
+import { useAtom } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import Tooltip from '@/components/Tooltip'
-import { useAtom } from 'jotai'
-import { isLoopSingleWordAtom, isOpenDarkModeAtom } from '@/store'
-import { TypingContext, TypingStateActionType } from '../../store'
-import SoundSwitcher from '../SoundSwitcher'
-import Setting from '../Setting'
-import { IconRepeatOnce, IconRepeatOff, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
-import { SunIcon, MoonIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)

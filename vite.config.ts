@@ -1,10 +1,10 @@
-import { visualizer } from 'rollup-plugin-visualizer'
-import { defineConfig, type PluginOption } from 'vite'
 import react from '@vitejs/plugin-react'
+import { getLastCommit } from 'git-last-commit'
 import jotaiDebugLabel from 'jotai/babel/plugin-debug-label'
 import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
 import path from 'node:path'
-import { getLastCommit } from 'git-last-commit'
+import { visualizer } from 'rollup-plugin-visualizer'
+import { defineConfig, type PluginOption } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => {

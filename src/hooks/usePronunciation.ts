@@ -1,12 +1,12 @@
-import { useAtomValue } from 'jotai'
+import { pronunciationConfigAtom } from '@/store'
+import { PronunciationType } from '@/typings'
+import { addHowlListener } from '@/utils'
+import noop from '@/utils/noop'
 import { Howl } from 'howler'
+import { useAtomValue } from 'jotai'
 import { useEffect, useMemo, useState } from 'react'
 import useSound from 'use-sound'
 import { HookOptions } from 'use-sound/dist/types'
-import { addHowlListener } from '@/utils'
-import noop from '@/utils/noop'
-import { pronunciationConfigAtom } from '@/store'
-import { PronunciationType } from '@/typings'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
 function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>) {

@@ -1,9 +1,9 @@
+import styles from './index.module.css'
+import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
 import { Switch } from '@headlessui/react'
-import { useCallback } from 'react'
 import * as Slider from '@radix-ui/react-slider'
 import { useAtom } from 'jotai'
-import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
-import styles from './index.module.css'
+import { useCallback } from 'react'
 
 export default function SoundSetting() {
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
@@ -88,6 +88,7 @@ export default function SoundSetting() {
               step={10}
               className="slider"
               onValueChange={onChangePronunciationVolume}
+              disabled={!pronunciationConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
@@ -118,6 +119,7 @@ export default function SoundSetting() {
               step={10}
               className="slider"
               onValueChange={onChangeKeySoundsVolume}
+              disabled={!keySoundsConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
@@ -148,6 +150,7 @@ export default function SoundSetting() {
               step={10}
               className="slider"
               onValueChange={onChangeHintSoundsVolume}
+              disabled={!hintSoundsConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
