@@ -24,10 +24,10 @@ const Progress: React.FC<ProgressProps> = ({ order, wordsLength }) => {
 
   return (
     <div className="relative mt-auto w-1/4 pt-1">
-      <div className="mb-4 flex h-2 overflow-hidden rounded-large bg-indigo-100 text-xs transition-all duration-300 dark:bg-indigo-200">
+      <div className="mb-4 flex h-2 overflow-hidden rounded-xl bg-indigo-100 text-xs transition-all duration-300 dark:bg-indigo-200">
         <div
           style={{ width: `${progress}%` }}
-          className={`flex flex-col justify-center whitespace-nowrap rounded-large text-center text-white shadow-none transition-all duration-300 ${
+          className={`flex flex-col justify-center whitespace-nowrap rounded-xl text-center text-white shadow-none transition-all duration-300 ${
             colorSwitcher[phase] ?? 'bg-indigo-200 dark:bg-indigo-300'
           }`}
         ></div>

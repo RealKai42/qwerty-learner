@@ -9,11 +9,6 @@ module.exports = {
       padding: {
         0.8: '0.2rem',
       },
-      borderRadius: {
-        large: '0.75rem',
-        lg: '0.5rem',
-        md: '0.375rem',
-      },
       width: {
         3.5: '0.875rem',
         5.5: '1.375rem',

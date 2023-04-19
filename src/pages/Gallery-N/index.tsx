@@ -1,3 +1,5 @@
+import DictTagSwitcher from './DictTagSwitcher'
+import Dictionary from './Dictionary'
 import { LanguageTabSwitcher, TabList } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
 import { createContext } from 'react'
@@ -22,28 +24,22 @@ export default function GalleryPage() {
           <div className="flex items-start justify-center w-full mt-5 overflow-y-auto">
             <div className="overflow-y-auto h-full max-h-full">
               <div className="customized-scrollbar overflow-y-auto mr-4 flex-1">
-                <div className="w-full bg-gray-300 text-center mt-10">词典标签</div>
+                <DictTagSwitcher />
                 <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((item) => (
-                    <div key={item} className="h-40 w-60 bg-gray-500">
-                      词典{item}
-                    </div>
+                    <Dictionary key={item} />
                   ))}
                 </div>
                 <div className="w-full bg-gray-300 text-center mt-10">词典标签</div>
                 <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((item) => (
-                    <div key={item} className="h-40 w-40 bg-gray-500">
-                      词典{item}
-                    </div>
+                    <Dictionary key={item} />
                   ))}
                 </div>
                 <div className="w-full bg-gray-300 text-center mt-10">词典标签</div>
                 <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-10">
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((item) => (
-                    <div key={item} className="h-40 w-40 bg-gray-500">
-                      词典{item}
-                    </div>
+                    <Dictionary key={item} />
                   ))}
                 </div>
               </div>
