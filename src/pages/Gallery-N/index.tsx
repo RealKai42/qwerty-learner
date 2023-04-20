@@ -1,3 +1,4 @@
+import CategoryNavigation from './CategoryNavigation'
 import DictTagSwitcher from './DictTagSwitcher'
 import Dictionary from './Dictionary'
 import { LanguageTabSwitcher, TabList } from './LanguageTabSwitcher'
@@ -44,7 +45,9 @@ export default function GalleryPage() {
                 </div>
               </div>
             </div>
-            <div className="w-40 text-center bg-gray-400 mt-20 w-40 h-40 bg-red-300">导航</div>
+            <div className="w-40 text-center mt-20 w-40 h-40 ">
+              <CategoryNavigation />
+            </div>
           </div>
         </div>
       </GalleryContext.Provider>
