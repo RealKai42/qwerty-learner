@@ -510,6 +510,15 @@ export const dictionaries: DictionaryResource[] = [
     language: 'en',
   },
   {
+    id: 'childCode003',
+    name: '少儿 C++',
+    description: '少儿 C++ 常见词',
+    category: '少儿编程 beta',
+    url: '/dicts/Child_c++.json',
+    length: 39,
+    language: 'en',
+  },
+  {
     id: 'san1',
     name: '三年级上',
     description: '人教版三年级上册',
