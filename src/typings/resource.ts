@@ -1,4 +1,4 @@
-import { LanguageType, PronunciationType } from '.'
+import { LanguageCategoryType, LanguageType, PronunciationType } from '.'
 
 export type DictionaryResource = {
   id: string
@@ -9,6 +9,7 @@ export type DictionaryResource = {
   url: string
   length: number
   language: LanguageType
+  languageCategory: LanguageCategoryType
   //override default pronunciation when not undefined
   defaultPronIndex?: number
 }

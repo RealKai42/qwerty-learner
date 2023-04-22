@@ -76,7 +76,7 @@ export default function ChapterList() {
                               练习次数
                             </th>
                             <th scope="col" className="px-2 py-3 flex-1  text-center text-sm font-bold text-gray-600 tracking-wider">
-                              平均正确率
+                              平均错误数
                             </th>
                           </tr>
                         </thead>
@@ -85,6 +85,7 @@ export default function ChapterList() {
                             <ChapterRow
                               key={`${dict.id}-${index}`}
                               index={index}
+                              dictID={dict.id}
                               checked={checkedIndex === index}
                               onChange={onChangeChapter}
                             />

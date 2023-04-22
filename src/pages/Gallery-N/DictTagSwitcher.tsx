@@ -23,7 +23,7 @@ export default function DictTagSwitcher({ tagList, currentTag, onChangeCurrentTa
             key={option}
             value={option}
             className={({ checked }) =>
-              `px-4 py-2 rounded-[3rem] cursor-pointer ${checked ? 'bg-indigo-400 text-white' : 'bg-white text-gray-600'}`
+              `px-4 py-2 whitespace-nowrap rounded-[3rem] cursor-pointer ${checked ? 'bg-indigo-400 text-white' : 'bg-white text-gray-600'}`
             }
           >
             <p className={`font-normal `}>{option}</p>

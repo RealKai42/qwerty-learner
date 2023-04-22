@@ -14,6 +14,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/CET4_T.json',
     length: 2607,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'cet6',
@@ -24,6 +25,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/CET6_T.json',
     length: 2345,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'gmat',
@@ -34,6 +36,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/GMAT_3_T.json',
     length: 3047,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'gre',
@@ -44,6 +47,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/GRE_3_T.json',
     length: 6515,
     language: 'en',
+    languageCategory: 'en',
   },
   // {
   //   id: 'zhtest',
@@ -72,6 +76,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/IELTS_3_T.json',
     length: 3575,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'kaoyan',
@@ -82,6 +87,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/KaoYan_3_T.json',
     length: 3728,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'level4',
@@ -92,6 +98,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/Level4luan_2_T.json',
     length: 4025,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'level8',
@@ -102,6 +109,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/Level8luan_2_T.json',
     length: 12197,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'gaokao3500',
@@ -112,6 +120,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/GaoKao_3500.json',
     length: 3893,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'SHjuniormiddleOxford',
@@ -122,6 +131,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/OxfordVocabulary_juniorMiddleSH.json',
     length: 1270,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'sat',
@@ -132,6 +142,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/SAT_3_T.json',
     length: 4464,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'toefl',
@@ -142,6 +153,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/TOEFL_3_T.json',
     length: 4264,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'bec2',
@@ -152,6 +164,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BEC_2_T.json',
     length: 2753,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'bec3',
@@ -162,6 +175,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BEC_3_T.json',
     length: 2825,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'pets3',
@@ -172,6 +186,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PETS_3.json',
     length: 1942,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'german2en',
@@ -182,6 +197,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/german2en.json',
     length: 5892,
     language: 'de',
+    languageCategory: 'de',
   },
   {
     id: 'en2german',
@@ -192,6 +208,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/en2german.json',
     length: 5025,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'PTE_junior',
@@ -202,6 +219,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PTE_junior.json',
     length: 2651,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'PTE_senior',
@@ -212,6 +230,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PTE_senior.json',
     length: 3170,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'PTE_FIB_R_junior',
@@ -222,6 +241,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PTE_FIB_R_junior.json',
     length: 941,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'PTE_FIB_R_senior',
@@ -232,6 +252,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PTE_FIB_R_senior.json',
     length: 1272,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'PTE_WFD',
@@ -242,6 +263,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PTE_WFD.json',
     length: 1212,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'PTE_FIB_L',
@@ -252,6 +274,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PTE_FIB_L.json',
     length: 646,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'coder',
@@ -262,6 +285,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/it-words.json',
     length: 1700,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsArray',
@@ -272,6 +296,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-array.json',
     length: 36,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsDate',
@@ -282,6 +307,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-date.json',
     length: 34,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsGlobal',
@@ -292,6 +318,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-global.json',
     length: 9,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsMapSet',
@@ -302,6 +329,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-map-set.json',
     length: 16,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsMath',
@@ -312,6 +340,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-math.json',
     length: 38,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsNumber',
@@ -322,6 +351,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-number.json',
     length: 22,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsObject',
@@ -332,6 +362,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-object.json',
     length: 37,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsPromise',
@@ -342,6 +373,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-promise.json',
     length: 9,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'jsString',
@@ -352,6 +384,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/js-string.json',
     length: 32,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-builtin',
@@ -362,6 +395,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-builtin.json',
     length: 65,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-array',
@@ -372,6 +406,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-array.json',
     length: 11,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-date',
@@ -382,6 +417,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-date.json',
     length: 39,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-file',
@@ -392,6 +428,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-file.json',
     length: 21,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-class',
@@ -402,6 +439,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-class.json',
     length: 13,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-set',
@@ -412,6 +450,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-set.json',
     length: 29,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-math',
@@ -422,6 +461,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-math.json',
     length: 37,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-string',
@@ -432,6 +472,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-string.json',
     length: 40,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'python-system',
@@ -442,6 +483,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/python-sys.json',
     length: 24,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'javeArrayList',
@@ -452,6 +494,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/java-arraylist.json',
     length: 25,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'javaCharacter',
@@ -462,6 +505,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/java-character.json',
     length: 8,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'javaHashmap',
@@ -472,6 +516,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/java-hashmap.json',
     length: 22,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'javaLinkedList',
@@ -482,6 +527,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/java-linkedlist.json',
     length: 25,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'javaString',
@@ -492,6 +538,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/java-string.json',
     length: 48,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'javaStringBuffer',
@@ -502,6 +549,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/java-stringBuffer.json',
     length: 20,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'linuxCommand',
@@ -512,6 +560,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/linux-command.json',
     length: 575,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'csharpList',
@@ -522,6 +571,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/csharp-list.json',
     length: 36,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'sql-lower-case',
@@ -532,6 +582,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/SQL_statement_lower-case.json',
     length: 12,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'sql-upper-case',
@@ -542,6 +593,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/SQL_statement_upper-case.json',
     length: 12,
     language: 'code',
+    languageCategory: 'en',
   },
   {
     id: 'childCode',
@@ -552,6 +604,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/Child_python_code.json',
     length: 19,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'childCode002',
@@ -562,6 +615,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/Child_python_turtle_code.json',
     length: 27,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'san1',
@@ -572,6 +626,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue3_1_T.json',
     length: 64,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'san2',
@@ -582,6 +637,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue3_2_T.json',
     length: 72,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'si1',
@@ -592,6 +648,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue4_1_T.json',
     length: 84,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'si2',
@@ -602,6 +659,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue4_2_T.json',
     length: 104,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'wu1',
@@ -612,6 +670,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue5_1_T.json',
     length: 131,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'wu2',
@@ -622,6 +681,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue5_2_T.json',
     length: 156,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'liu1',
@@ -632,6 +692,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue6_1_T.json',
     length: 130,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'liu2',
@@ -642,6 +703,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPXiaoXue6_2_T.json',
     length: 108,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'qi1',
@@ -652,6 +714,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPChuZhong7_1_T.json',
     length: 392,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'qi2',
@@ -662,6 +725,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPChuZhong7_2_T.json',
     length: 492,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'ba1',
@@ -672,6 +736,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPChuZhong8_1_T.json',
     length: 419,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'ba2',
@@ -682,6 +747,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPChuZhong8_2_T.json',
     length: 466,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'jiu',
@@ -692,6 +758,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPChuZhong9_1_T.json',
     length: 551,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong1',
@@ -702,6 +769,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_1_T.json',
     length: 311,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong2',
@@ -712,6 +780,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_2_T.json',
     length: 319,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong3',
@@ -722,6 +791,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_3_T.json',
     length: 366,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong4',
@@ -732,6 +802,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_4_T.json',
     length: 307,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong5',
@@ -742,6 +813,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_5_T.json',
     length: 357,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong6',
@@ -752,6 +824,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_6_T.json',
     length: 391,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong7',
@@ -762,6 +835,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_7_T.json',
     length: 384,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong8',
@@ -772,6 +846,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_8_T.json',
     length: 420,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong9',
@@ -782,6 +857,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_9_T.json',
     length: 352,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong10',
@@ -792,6 +868,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_10_T.json',
     length: 361,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'renjiaogaozhong11',
@@ -802,6 +879,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/PEPGaoZhong_11_T.json',
     length: 309,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'nce1',
@@ -812,6 +890,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/NCE_1.json',
     length: 900,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'nce2',
@@ -822,6 +901,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/NCE_2.json',
     length: 858,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'nce3',
@@ -832,6 +912,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/NCE_3.json',
     length: 1052,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'nce4',
@@ -842,6 +923,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/NCE_4.json',
     length: 784,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'waiyan1',
@@ -852,6 +934,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/WaiYanSheChuZhong_1_T.json',
     length: 629,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'waiyan2',
@@ -862,6 +945,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/WaiYanSheChuZhong_2_T.json',
     length: 438,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'waiyan3',
@@ -872,6 +956,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/WaiYanSheChuZhong_3_T.json',
     length: 320,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'waiyan4',
@@ -882,6 +967,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/WaiYanSheChuZhong_4_T.json',
     length: 266,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'waiyan5',
@@ -892,6 +978,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/WaiYanSheChuZhong_5_T.json',
     length: 381,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'waiyan6',
@@ -902,6 +989,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/WaiYanSheChuZhong_6_T.json',
     length: 128,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi1',
@@ -912,6 +1000,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_1_T.json',
     length: 226,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi2',
@@ -922,6 +1011,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_2_T.json',
     length: 244,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi3',
@@ -932,6 +1022,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_3_T.json',
     length: 295,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi4',
@@ -942,6 +1033,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_4_T.json',
     length: 336,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi5',
@@ -952,6 +1044,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_5_T.json',
     length: 327,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi6',
@@ -962,6 +1055,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_6_T.json',
     length: 271,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi7',
@@ -972,6 +1066,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_7_T.json',
     length: 334,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi8',
@@ -982,6 +1077,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_8_T.json',
     length: 364,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi9',
@@ -992,6 +1088,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_9_T.json',
     length: 299,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi10',
@@ -1002,6 +1099,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_10_T.json',
     length: 267,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'beishi11',
@@ -1012,6 +1110,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/BeiShiGaoZhong_11_T.json',
     length: 330,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'SATen',
@@ -1022,6 +1121,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/SATen.json',
     length: 2681,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: '4000_Essential_English_Words1',
@@ -1032,6 +1132,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/4000_Essential_English_Words-meaning.json',
     length: 3600,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: '4000_Essential_English_Words2',
@@ -1042,6 +1143,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/4000_Essential_English_Words-sentence.json',
     length: 3600,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'suffix word',
@@ -1052,6 +1154,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/suffix word.json',
     length: 126,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'word roots1',
@@ -1062,6 +1165,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/word roots1.json',
     length: 368,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'ieltsWang3',
@@ -1072,6 +1176,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/IELTS_WANG_3.json',
     length: 1135,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'ieltsWang4',
@@ -1082,6 +1187,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/IELTS_WANG_4.json',
     length: 346,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'ieltsWang5',
@@ -1092,6 +1198,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/IELTS_WANG_5.json',
     length: 1569,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'ieltsWang11',
@@ -1102,6 +1209,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/IELTS_WANG_11.json',
     length: 1738,
     language: 'en',
+    languageCategory: 'en',
   },
   {
     id: 'japanese001',
@@ -1112,6 +1220,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/Japanesebasicword.json',
     length: 100,
     language: 'romaji',
+    languageCategory: 'ja',
   },
   {
     id: 'japanese006',
@@ -1122,6 +1231,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/JapVocabList.N1.json',
     length: 3477,
     language: 'romaji',
+    languageCategory: 'ja',
   },
   {
     id: 'japanese005',
@@ -1132,6 +1242,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/JapVocabList.N2.json',
     length: 1836,
     language: 'romaji',
+    languageCategory: 'ja',
   },
   {
     id: 'japanese004',
@@ -1142,6 +1253,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/JapVocabList.N3.json',
     length: 1830,
     language: 'romaji',
+    languageCategory: 'ja',
   },
   {
     id: 'japanese003',
@@ -1152,6 +1264,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/JapVocabList.N4.json',
     length: 635,
     language: 'romaji',
+    languageCategory: 'ja',
   },
   {
     id: 'japanese002',
@@ -1162,6 +1275,7 @@ export const dictionaries: DictionaryResource[] = [
     url: '/dicts/JapVocabList.N5.json',
     length: 670,
     language: 'romaji',
+    languageCategory: 'ja',
   },
 ]
 

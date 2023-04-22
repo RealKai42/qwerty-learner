@@ -1,15 +1,15 @@
 import DictionaryGroup from './CategroyDicts.index'
 import ChapterList from './ChapterList'
-import { LanguageTabSwitcher, TabList } from './LanguageTabSwitcher'
+import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
-import { DictionaryResource } from '@/typings'
+import { DictionaryResource, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import { createContext, useMemo } from 'react'
 import { Updater, useImmer } from 'use-immer'
 
 export type GalleryState = {
-  currentLanguageTab: TabList
+  currentLanguageTab: LanguageCategoryType
   showChapterList: boolean
   chapterListDict: DictionaryResource | null
 }
@@ -25,11 +25,14 @@ export const GalleryContext = createContext<{ state: GalleryState; setState: Upd
 export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
 
-  const currentLanguageDicts = useMemo(
-    () => dictionaries.filter((dict) => dict.language === galleryState.currentLanguageTab),
+  const currentLanguageCategoryDicts = useMemo(
+    () => dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab),
     [galleryState.currentLanguageTab],
   )
-  const groupedByCategory = useMemo(() => Object.entries(groupBy(currentLanguageDicts, (dict) => dict.category)), [currentLanguageDicts])
+  const groupedByCategory = useMemo(
+    () => Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category)),
+    [currentLanguageCategoryDicts],
+  )
 
   const groupedByCategoryAndTag: [string, Record<string, DictionaryResource[]>][] = useMemo(
     () => groupedByCategory.map(([category, dicts]) => [category, groupByDictTags(dicts)]),

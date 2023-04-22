@@ -1,6 +1,26 @@
-export default function ChapterRow({ index, checked, onChange }: { index: number; checked: boolean; onChange: (index: number) => void }) {
+import useIntersectionObserver from '@/hooks/useIntersectionObserver'
+import { useChapterStats } from '@/pages/Gallery-N/hooks/useChapterStats'
+import { useRef } from 'react'
+
+export default function ChapterRow({
+  index,
+  dictID,
+  checked,
+  onChange,
+}: {
+  index: number
+  checked: boolean
+  dictID: string
+  onChange: (index: number) => void
+}) {
+  const rowRef = useRef<HTMLTableRowElement>(null)
+
+  const entry = useIntersectionObserver(rowRef, {})
+  const isVisible = !!entry?.isIntersecting
+  const chapterStatus = useChapterStats(index, dictID, isVisible)
+
   return (
-    <tr className="flex">
+    <tr className="flex" ref={rowRef}>
       <td className="px-6 py-4  w-15 flex justify-center items-center">
         <input
           type="radio"
@@ -13,8 +33,8 @@ export default function ChapterRow({ index, checked, onChange }: { index: number
         />
       </td>
       <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">{index + 1}</td>
-      <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">{20}</td>
-      <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">80%</td>
+      <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">{chapterStatus ? chapterStatus.exerciseCount : 0}</td>
+      <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">{chapterStatus ? chapterStatus.avgWrongCount : 0}</td>
     </tr>
   )
 }
