@@ -78,6 +78,15 @@ export const dictionaries: DictionaryResource[] = [
     language: 'en',
   },
   {
+    id: 'kaoyan_2024',
+    name: '考研 2024',
+    description: '研究生英语入学考试词库 2024',
+    category: '英语学习',
+    url: '/dicts/KaoYan_2024.json',
+    length: 3731,
+    language: 'en',
+  },
+  {
     id: 'level4',
     name: '专四',
     description: '英语专业四级词库',
