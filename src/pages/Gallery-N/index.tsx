@@ -51,8 +51,8 @@ export default function GalleryPage() {
             <LanguageTabSwitcher />
           </div>
           <div className="mt-5 flex w-full flex-1 items-start justify-center overflow-y-auto">
-            <div className="h-full max-h-full overflow-y-auto">
-              <div className="customized-scrollbar mr-4 flex flex-1 flex-col items-start justify-start gap-5 overflow-y-auto">
+            <div className="h-full max-h-full overflow-y-auto pb-[20rem]">
+              <div className="customized-scrollbar mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
                 {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
                   <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
                 ))}
