@@ -7,7 +7,6 @@ import { useCallback, useContext, useMemo, useState } from 'react'
 export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByTag: Record<string, DictionaryResource[]> }) {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const { setState } = useContext(GalleryContext)!
-
   const tagList = useMemo(() => Object.keys(groupedDictsByTag), [groupedDictsByTag])
   const [currentTag, setCurrentTag] = useState(tagList[0])
 
@@ -15,12 +14,14 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
     setCurrentTag(tag)
   }, [])
 
-  const onClickDict = (dict: DictionaryResource) => {
-    setState((state) => {
-      state.showChapterList = true
-      state.chapterListDict = dict
-    })
-  }
+  const onClickDict = useCallback(
+    (dict: DictionaryResource) => {
+      setState((state) => {
+        state.chapterListDict = dict
+      })
+    },
+    [setState],
+  )
 
   return (
     <div>

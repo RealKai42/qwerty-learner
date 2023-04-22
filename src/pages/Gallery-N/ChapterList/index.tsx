@@ -6,7 +6,7 @@ import range from '@/utils/range'
 import { Dialog, Transition } from '@headlessui/react'
 import { IconX } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
-import { Fragment, useContext } from 'react'
+import { Fragment, useContext, useMemo } from 'react'
 
 export default function ChapterList() {
   const {
@@ -20,7 +20,7 @@ export default function ChapterList() {
 
   const chapterCount = calcChapterCount(dict?.length ?? 0)
   const showChapterList = dict !== null
-  const checkedIndex = dict?.id === currentDictId ? currentChapter : 0
+  const checkedIndex = useMemo(() => (dict?.id === currentDictId ? currentChapter : 0), [currentChapter, currentDictId, dict?.id])
 
   const onChangeChapter = (index: number) => {
     if (dict) {

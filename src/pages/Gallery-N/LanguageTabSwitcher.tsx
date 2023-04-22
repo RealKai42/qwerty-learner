@@ -4,7 +4,7 @@ import enFlag from '@/assets/flags/en.png'
 import jpFlag from '@/assets/flags/ja.png'
 import { LanguageCategoryType } from '@/typings'
 import { RadioGroup } from '@headlessui/react'
-import { useContext } from 'react'
+import { useCallback, useContext } from 'react'
 
 export type LanguageTabOption = {
   id: LanguageCategoryType
@@ -22,11 +22,14 @@ export function LanguageTabSwitcher() {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const { state, setState } = useContext(GalleryContext)!
 
-  const onChangeTab = (tab: string) => {
-    setState((draft) => {
-      draft.currentLanguageTab = tab as LanguageCategoryType
-    })
-  }
+  const onChangeTab = useCallback(
+    (tab: string) => {
+      setState((draft) => {
+        draft.currentLanguageTab = tab as LanguageCategoryType
+      })
+    },
+    [setState],
+  )
 
   return (
     <RadioGroup value={state.currentLanguageTab} onChange={onChangeTab}>

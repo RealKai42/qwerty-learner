@@ -1,22 +1,23 @@
-import DictionaryGroup from './CategroyDicts.index'
+import DictionaryGroup from './CategoryDicts'
 import ChapterList from './ChapterList'
 import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
 import { DictionaryResource, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
-import { createContext, useMemo } from 'react'
+import { IconX } from '@tabler/icons-react'
+import { createContext, useCallback, useMemo } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
+import { useNavigate } from 'react-router-dom'
 import { Updater, useImmer } from 'use-immer'
 
 export type GalleryState = {
   currentLanguageTab: LanguageCategoryType
-  showChapterList: boolean
   chapterListDict: DictionaryResource | null
 }
 
 const initialGalleryState: GalleryState = {
   currentLanguageTab: 'en',
-  showChapterList: false,
   chapterListDict: null,
 }
 
@@ -27,6 +28,7 @@ export const GalleryContext = createContext<{
 
 export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
+  const navigate = useNavigate()
 
   const currentLanguageCategoryDicts = useMemo(
     () => dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab),
@@ -36,17 +38,23 @@ export default function GalleryPage() {
     () => Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category)),
     [currentLanguageCategoryDicts],
   )
-
   const groupedByCategoryAndTag: [string, Record<string, DictionaryResource[]>][] = useMemo(
     () => groupedByCategory.map(([category, dicts]) => [category, groupByDictTags(dicts)]),
     [groupedByCategory],
   )
 
+  const onBack = useCallback(() => {
+    navigate('/')
+  }, [navigate])
+
+  useHotkeys('enter,esc', onBack, { preventDefault: true })
+
   return (
     <Layout>
       <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
         <ChapterList />
-        <div className="mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
+        <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
+          <IconX className="absolute right-10 top-5 mr-2 w-10 cursor-pointer text-gray-400" onClick={onBack} />
           <div className="mt-20 flex h-20 w-full justify-center ">
             <LanguageTabSwitcher />
           </div>
