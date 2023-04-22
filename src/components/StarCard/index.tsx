@@ -76,7 +76,7 @@ export default function StarCard() {
 
   return (
     <Transition
-      appear={true}
+      appear
       show={isShow}
       enter="transition ease-out duration-300 transform"
       enterFrom="translate-x-full -translate-y-full"

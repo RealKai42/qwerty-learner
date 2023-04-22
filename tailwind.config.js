@@ -18,6 +18,7 @@ module.exports = {
         75: '18.75rem',
         84: '21rem',
         85: '21.25rem',
+        100: '25rem',
         116: '29rem',
         150: '37.5rem',
         160: '40rem',
@@ -45,5 +46,5 @@ module.exports = {
       backgroundOpacity: ['dark'],
     },
   },
-  plugins: [require('@headlessui/tailwindcss')],
+  plugins: [require('@headlessui/tailwindcss'), require('@tailwindcss/forms')],
 }

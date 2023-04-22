@@ -1,4 +1,5 @@
 import CategoryNavigation from './CategoryNavigation'
+import ChapterList from './ChapterList'
 import DictTagSwitcher from './DictTagSwitcher'
 import Dictionary from './Dictionary'
 import { LanguageTabSwitcher, TabList } from './LanguageTabSwitcher'
@@ -23,6 +24,7 @@ export default function GalleryPage() {
             <LanguageTabSwitcher />
           </div>
           <div className="flex items-start justify-center w-full mt-5 overflow-y-auto">
+            <ChapterList />
             <div className="overflow-y-auto h-full max-h-full">
               <div className="customized-scrollbar overflow-y-auto mr-4 flex-1">
                 <DictTagSwitcher />
