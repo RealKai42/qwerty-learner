@@ -1,10 +1,14 @@
-export default function ChapterRow({ index }: { index: number }) {
+export default function ChapterRow({ index, checked, onChange }: { index: number; checked: boolean; onChange: (index: number) => void }) {
   return (
     <tr className="flex">
       <td className="px-6 py-4  w-15 flex justify-center items-center">
         <input
           type="radio"
           name="selectedChapter"
+          checked={checked}
+          onChange={() => {
+            onChange(index)
+          }}
           className="mt-0.5 border-gray-300 rounded-full text-indigo-600 outline-none focus:border-none focus:outline-none focus:ring-0 focus:ring-offset-0 "
         />
       </td>

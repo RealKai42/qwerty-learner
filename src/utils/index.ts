@@ -1,3 +1,4 @@
+import { CHAPTER_LENGTH } from '@/constants'
 import { Howl } from 'howler'
 
 export * from './mixpanel'
@@ -69,4 +70,8 @@ export function getCurrentDate() {
   const day = ('0' + date.getDate()).slice(-2)
 
   return `${year}${month}${day}`
+}
+
+export function calcChapterCount(length: number) {
+  return Math.ceil(length / CHAPTER_LENGTH)
 }

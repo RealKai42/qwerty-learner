@@ -5,6 +5,7 @@ export type DictionaryResource = {
   name: string
   description: string
   category: string
+  tags: string[]
   url: string
   length: number
   language: LanguageType

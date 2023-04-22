@@ -1,7 +1,8 @@
-import { CHAPTER_LENGTH, DISMISS_START_CARD_DATE_KEY } from '@/constants'
+import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
 import { PronunciationType, PhoneticType, Dictionary, InfoPanelState } from '@/typings'
+import { calcChapterCount } from '@/utils'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
@@ -14,7 +15,7 @@ export const currentDictInfoAtom = atom<Dictionary>((get) => {
     dict = idDictionaryMap.cet4
   }
 
-  const dictionary = { ...dict, chapterCount: Math.ceil(dict.length / CHAPTER_LENGTH) }
+  const dictionary = { ...dict, chapterCount: calcChapterCount(dict.length) }
   return dictionary || null
 })
 

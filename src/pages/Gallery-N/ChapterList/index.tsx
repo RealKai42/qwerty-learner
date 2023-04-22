@@ -1,36 +1,43 @@
+import { GalleryContext } from '..'
 import ChapterRow from './ChapterRow'
-import { currentChapterAtom, currentDictInfoAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom } from '@/store'
+import { calcChapterCount } from '@/utils'
 import range from '@/utils/range'
 import { Dialog, Transition } from '@headlessui/react'
-import { useAtom, useAtomValue } from 'jotai'
-import { Fragment, useState } from 'react'
+import { useAtom } from 'jotai'
+import { Fragment, useContext } from 'react'
 
 export default function ChapterList() {
-  const [isOpen, setIsOpen] = useState(true)
-
-  function closeModal() {
-    setIsOpen(false)
-  }
-
-  function openModal() {
-    setIsOpen(true)
-  }
+  const {
+    state: { chapterListDict: dict },
+    setState,
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  } = useContext(GalleryContext)!
 
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
-  const { id: dictID, chapterCount } = useAtomValue(currentDictInfoAtom)
+  const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
+
+  const chapterCount = calcChapterCount(dict?.length ?? 0)
+  const showChapterList = dict !== null
+  const checkedIndex = dict?.id === currentDictId ? currentChapter : 0
+
+  const onChangeChapter = (index: number) => {
+    if (dict) {
+      setCurrentChapter(index)
+      setCurrentDictId(dict?.id ?? '')
+    }
+  }
+
+  const onCloseDialog = () => {
+    setState((state) => {
+      state.chapterListDict = null
+    })
+  }
 
   return (
     <>
-      <button
-        type="button"
-        onClick={openModal}
-        className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-      >
-        Open dialog
-      </button>
-
-      <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+      <Transition appear show={showChapterList} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={onCloseDialog}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -54,30 +61,39 @@ export default function ChapterList() {
               leaveTo="translate-x-full "
             >
               <Dialog.Panel className="w-100 bg-white h-full absolute right-0 duration-300 ease-out transition-all flex flex-col drop-shadow-2xl">
-                <div className="py-4 pl-5 text-lg block">IELTS</div>
-                <div className="flex-1 overflow-y-auto w-full">
-                  <table className="min-w-full divide-y divide-gray-200 block">
-                    <thead className="bg-gray-50 h-10 block sticky top-0 w-full">
-                      <tr className="flex">
-                        <th scope="col" className="px-2 py-3 w-15  text-center text-sm font-bold text-gray-600 tracking-wider"></th>
-                        <th scope="col" className="px-2 py-3 flex-1  text-center text-sm font-bold text-gray-600 tracking-wider">
-                          Chapter
-                        </th>
-                        <th scope="col" className="px-2 py-3 flex-1  text-center text-sm font-bold text-gray-600 tracking-wider">
-                          练习次数
-                        </th>
-                        <th scope="col" className="px-2 py-3 flex-1  text-center text-sm font-bold text-gray-600 tracking-wider">
-                          平均正确率
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="bg-white divide-y divide-gray-200 h-full w-full overflow-y-scroll block">
-                      {range(0, chapterCount, 1).map((index) => (
-                        <ChapterRow key={`${dictID}-${index}`} index={index} />
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                {dict && (
+                  <>
+                    <div className="py-4 pl-5 text-lg block">{dict.name}</div>
+                    <div className="flex-1 overflow-y-auto w-full">
+                      <table className="min-w-full divide-y divide-gray-200 block">
+                        <thead className="bg-gray-50 h-10 block sticky top-0 w-full">
+                          <tr className="flex">
+                            <th scope="col" className="px-2 py-3 w-15  text-center text-sm font-bold text-gray-600 tracking-wider"></th>
+                            <th scope="col" className="px-2 py-3 flex-1  text-center text-sm font-bold text-gray-600 tracking-wider">
+                              Chapter
+                            </th>
+                            <th scope="col" className="px-2 py-3 flex-1  text-center text-sm font-bold text-gray-600 tracking-wider">
+                              练习次数
+                            </th>
+                            <th scope="col" className="px-2 py-3 flex-1  text-center text-sm font-bold text-gray-600 tracking-wider">
+                              平均正确率
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody className="bg-white divide-y divide-gray-200 h-full w-full overflow-y-scroll block">
+                          {range(0, chapterCount, 1).map((index) => (
+                            <ChapterRow
+                              key={`${dict.id}-${index}`}
+                              index={index}
+                              checked={checkedIndex === index}
+                              onChange={onChangeChapter}
+                            />
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
+                )}
               </Dialog.Panel>
             </Transition.Child>
           </div>
