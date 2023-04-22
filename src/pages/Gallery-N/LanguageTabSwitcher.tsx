@@ -34,9 +34,9 @@ export function LanguageTabSwitcher() {
         {options.map((option) => (
           <RadioGroup.Option key={option.id} value={option.id} className="cursor-pointer">
             {({ checked }) => (
-              <div className={`border-b-2 px-2 pb-1 flex items-center ${checked ? 'border-indigo-500' : 'border-transparent'}`}>
-                <img src={option.flag} className="h-7 w-7 mr-1.5" />
-                <p className={`text-gray-700 font-medium text-lg`}>{option.name}</p>
+              <div className={`flex items-center border-b-2 px-2 pb-1 ${checked ? 'border-indigo-500' : 'border-transparent'}`}>
+                <img src={option.flag} className="mr-1.5 h-7 w-7" />
+                <p className={`text-lg font-medium text-gray-700`}>{option.name}</p>
               </div>
             )}
           </RadioGroup.Option>

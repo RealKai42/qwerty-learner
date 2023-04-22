@@ -226,7 +226,7 @@ const Footer: React.FC = () => {
         <Tooltip content="中国大陆镜像">
           <img
             src={cnFlag}
-            className="h-5 w-5 mr-2 cursor-pointer"
+            className="mr-2 h-5 w-5 cursor-pointer"
             onClick={(event) => {
               event.preventDefault()
               window.location.href = 'https://kaiyiwing.gitee.io/qwerty-learner'

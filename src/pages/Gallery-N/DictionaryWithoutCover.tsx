@@ -22,17 +22,17 @@ function Dictionary({ dictionary, onClick }: Props) {
   return (
     <div
       ref={divRef}
-      className="flex items-center justify-center w-60 overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10"
+      className="flex w-60 items-center justify-center overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10"
       onClick={onClick}
     >
-      <div className="w-full flex flex-col items-start justify-start h-full ">
-        <h1 className="text-xl font-normal mb-1">{dictionary.name}</h1>
-        <p className="text-xs text-gray-600 mb-1">{dictionary.description}</p>
-        <p className="text-sm font-bold text-gray-600 mb-1">{dictionary.length} 词</p>
-        <div className="flex items-center mb-0 w-full">
-          <Progress.Root value={progress} max={100} className="h-3.5 w-full rounded-full bg-white mr-4 border-2 border-indigo-300">
+      <div className="flex h-full w-full flex-col items-start justify-start ">
+        <h1 className="mb-1 text-xl font-normal">{dictionary.name}</h1>
+        <p className="mb-1 text-xs text-gray-600">{dictionary.description}</p>
+        <p className="mb-1 text-sm font-bold text-gray-600">{dictionary.length} 词</p>
+        <div className="mb-0 flex w-full items-center">
+          <Progress.Root value={progress} max={100} className="mr-4 h-3.5 w-full rounded-full border-2 border-indigo-300 bg-white">
             <Progress.Indicator
-              className="-translate-x-px h-full pl-0 rounded-full bg-indigo-300"
+              className="h-full -translate-x-px rounded-full bg-indigo-300 pl-0"
               style={{ width: `calc(${progress}% + 2px)` }}
             />
           </Progress.Root>

@@ -43,13 +43,13 @@ export default function GalleryPage() {
     <Layout>
       <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
         <ChapterList />
-        <div className="mb-auto mt-auto flex w-full overflow-y-auto flex-col pl-20 flex-1">
-          <div className="w-full mt-20 h-20 flex justify-center ">
+        <div className="mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
+          <div className="mt-20 flex h-20 w-full justify-center ">
             <LanguageTabSwitcher />
           </div>
-          <div className="flex items-start justify-center w-full mt-5 overflow-y-auto flex-1">
-            <div className="overflow-y-auto h-full max-h-full">
-              <div className="customized-scrollbar overflow-y-auto mr-4 flex-1 flex flex-col justify-start items-start gap-5">
+          <div className="mt-5 flex w-full flex-1 items-start justify-center overflow-y-auto">
+            <div className="h-full max-h-full overflow-y-auto">
+              <div className="customized-scrollbar mr-4 flex flex-1 flex-col items-start justify-start gap-5 overflow-y-auto">
                 {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
                   <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
                 ))}

@@ -21,7 +21,7 @@ export default function ChapterRow({
 
   return (
     <tr className="flex" ref={rowRef}>
-      <td className="px-6 py-4  w-15 flex justify-center items-center">
+      <td className="flex w-15  items-center justify-center px-6 py-4">
         <input
           type="radio"
           name="selectedChapter"
@@ -29,12 +29,12 @@ export default function ChapterRow({
           onChange={() => {
             onChange(index)
           }}
-          className="mt-0.5 border-gray-300 rounded-full text-indigo-600 outline-none focus:border-none focus:outline-none focus:ring-0 focus:ring-offset-0 "
+          className="mt-0.5 rounded-full border-gray-300 text-indigo-600 outline-none focus:border-none focus:outline-none focus:ring-0 focus:ring-offset-0 "
         />
       </td>
-      <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">{index + 1}</td>
-      <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">{chapterStatus ? chapterStatus.exerciseCount : 0}</td>
-      <td className="px-6 py-4 flex-1 text-sm text-gray-700 text-center">{chapterStatus ? chapterStatus.avgWrongCount : 0}</td>
+      <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700">{index + 1}</td>
+      <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700">{chapterStatus ? chapterStatus.exerciseCount : 0}</td>
+      <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700">{chapterStatus ? chapterStatus.avgWrongCount : 0}</td>
     </tr>
   )
 }
