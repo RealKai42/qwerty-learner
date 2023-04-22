@@ -20,7 +20,7 @@ export default function ChapterRow({
   const chapterStatus = useChapterStats(index, dictID, isVisible)
 
   return (
-    <tr className="flex" ref={rowRef}>
+    <tr className="flex even:bg-gray-50" ref={rowRef}>
       <td className="flex w-15  items-center justify-center px-6 py-4">
         <input
           type="radio"
@@ -29,7 +29,7 @@ export default function ChapterRow({
           onChange={() => {
             onChange(index)
           }}
-          className="mt-0.5 rounded-full border-gray-300 text-indigo-600 outline-none focus:border-none focus:outline-none focus:ring-0 focus:ring-offset-0 "
+          className="mt-0.5 cursor-pointer rounded-full border-gray-300  text-indigo-600 outline-none focus:border-none focus:outline-none focus:ring-0 focus:ring-offset-0 "
         />
       </td>
       <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700">{index + 1}</td>

@@ -1,8 +1,10 @@
 import { useDictStats } from './hooks/useDictStats'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
+import { currentDictIdAtom } from '@/store'
 import { DictionaryResource } from '@/typings'
 import { calcChapterCount } from '@/utils'
 import * as Progress from '@radix-ui/react-progress'
+import { useAtomValue } from 'jotai'
 import { useRef } from 'react'
 
 interface Props {
@@ -11,8 +13,9 @@ interface Props {
 }
 
 function Dictionary({ dictionary, onClick }: Props) {
-  const divRef = useRef<HTMLDivElement>(null)
+  const currentDictID = useAtomValue(currentDictIdAtom)
 
+  const divRef = useRef<HTMLDivElement>(null)
   const entry = useIntersectionObserver(divRef, {})
   const isVisible = !!entry?.isIntersecting
   const DictStats = useDictStats(dictionary.id, isVisible)
@@ -22,7 +25,9 @@ function Dictionary({ dictionary, onClick }: Props) {
   return (
     <div
       ref={divRef}
-      className="flex w-60 items-center justify-center overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10"
+      className={`flex w-60 items-center justify-center overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10 ${
+        currentDictID === dictionary.id ? 'ring-2 ring-indigo-300' : ''
+      }`}
       onClick={onClick}
     >
       <div className="flex h-full w-full flex-col items-start justify-start ">

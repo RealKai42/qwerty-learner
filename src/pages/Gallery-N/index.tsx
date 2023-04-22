@@ -20,7 +20,10 @@ const initialGalleryState: GalleryState = {
   chapterListDict: null,
 }
 
-export const GalleryContext = createContext<{ state: GalleryState; setState: Updater<GalleryState> } | null>(null)
+export const GalleryContext = createContext<{
+  state: GalleryState
+  setState: Updater<GalleryState>
+} | null>(null)
 
 export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)

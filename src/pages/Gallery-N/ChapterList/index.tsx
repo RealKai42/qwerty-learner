@@ -4,6 +4,7 @@ import { currentChapterAtom, currentDictIdAtom } from '@/store'
 import { calcChapterCount } from '@/utils'
 import range from '@/utils/range'
 import { Dialog, Transition } from '@headlessui/react'
+import { IconX } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
 import { Fragment, useContext } from 'react'
 
@@ -63,9 +64,12 @@ export default function ChapterList() {
               <Dialog.Panel className="absolute right-0 flex h-full w-100 flex-col bg-white drop-shadow-2xl transition-all duration-300 ease-out">
                 {dict && (
                   <>
-                    <div className="block py-4 pl-5 text-lg">{dict.name}</div>
+                    <div className="flex w-full items-end justify-between py-4 pl-5">
+                      <span className="text-lg">{dict.name}</span>
+                      <IconX className="mr-2 cursor-pointer text-gray-400" onClick={onCloseDialog} />
+                    </div>
                     <div className="w-full flex-1 overflow-y-auto">
-                      <table className="block min-w-full divide-y divide-gray-200">
+                      <table className="block min-w-full divide-y divide-gray-100">
                         <thead className="sticky top-0 block h-10 w-full bg-gray-50">
                           <tr className="flex">
                             <th scope="col" className="w-15 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600"></th>
@@ -80,7 +84,7 @@ export default function ChapterList() {
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="block h-full w-full divide-y divide-gray-200 overflow-y-scroll bg-white">
+                        <tbody className="block h-full w-full divide-y divide-gray-100 overflow-y-scroll bg-white">
                           {range(0, chapterCount, 1).map((index) => (
                             <ChapterRow
                               key={`${dict.id}-${index}`}
