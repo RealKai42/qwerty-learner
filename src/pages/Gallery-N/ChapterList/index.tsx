@@ -6,7 +6,7 @@ import range from '@/utils/range'
 import { Dialog, Transition } from '@headlessui/react'
 import { IconX } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
-import { Fragment, useContext, useMemo } from 'react'
+import { Fragment, useCallback, useContext, useEffect, useState } from 'react'
 
 export default function ChapterList() {
   const {
@@ -17,17 +17,30 @@ export default function ChapterList() {
 
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
+  const [checkedChapter, setCheckedChapter] = useState(dict?.id === currentDictId ? currentChapter : 0)
 
   const chapterCount = calcChapterCount(dict?.length ?? 0)
   const showChapterList = dict !== null
-  const checkedIndex = useMemo(() => (dict?.id === currentDictId ? currentChapter : 0), [currentChapter, currentDictId, dict?.id])
+
+  useEffect(() => {
+    if (dict) {
+      setCheckedChapter(dict.id === currentDictId ? currentChapter : 0)
+    }
+  }, [currentChapter, currentDictId, dict])
 
   const onChangeChapter = (index: number) => {
-    if (dict) {
-      setCurrentChapter(index)
-      setCurrentDictId(dict?.id ?? '')
-    }
+    setCheckedChapter(index)
   }
+
+  const onConfirm = useCallback(() => {
+    if (dict) {
+      setCurrentChapter(checkedChapter)
+      setCurrentDictId(dict.id)
+      setState((state) => {
+        state.chapterListDict = null
+      })
+    }
+  }, [checkedChapter, dict, setCurrentChapter, setCurrentDictId, setState])
 
   const onCloseDialog = () => {
     setState((state) => {
@@ -90,13 +103,16 @@ export default function ChapterList() {
                               key={`${dict.id}-${index}`}
                               index={index}
                               dictID={dict.id}
-                              checked={checkedIndex === index}
+                              checked={checkedChapter === index}
                               onChange={onChangeChapter}
                             />
                           ))}
                         </tbody>
                       </table>
                     </div>
+                    <button className="text-bold h-15 w-full bg-indigo-400 text-white" onClick={onConfirm}>
+                      确定
+                    </button>
                   </>
                 )}
               </Dialog.Panel>
