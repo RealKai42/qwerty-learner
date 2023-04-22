@@ -55,11 +55,13 @@ export default function GalleryPage() {
         <ChapterList />
         <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
           <IconX className="absolute right-10 top-5 mr-2 w-10 cursor-pointer text-gray-400" onClick={onBack} />
-          <div className="mt-20 flex h-20 w-full justify-center ">
-            <LanguageTabSwitcher />
-          </div>
-          <div className="mt-5 flex w-full flex-1 items-start justify-center overflow-y-auto">
+          <div className="mt-20 flex w-full flex-1 items-start justify-center overflow-y-auto">
             <div className="h-full max-h-full overflow-y-auto pb-[20rem]">
+              <div className="sticky top-0 flex h-20 w-full items-center justify-between bg-[#faf9ff] pb-8">
+                <LanguageTabSwitcher />
+                <span className="cursor-pointer text-sm text-indigo-500">没有找到想要的词典？</span>
+              </div>
+
               <div className="customized-scrollbar mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
                 {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
                   <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
