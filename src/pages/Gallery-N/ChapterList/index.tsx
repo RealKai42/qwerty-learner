@@ -70,7 +70,7 @@ export default function ChapterList() {
               enter="transition ease-out duration-300 transform"
               enterFrom="translate-x-full "
               enterTo=""
-              leave="transition ease-in duration-500 transform"
+              leave="transition ease-in duration-300 transform"
               leaveFrom=""
               leaveTo="translate-x-full "
             >
