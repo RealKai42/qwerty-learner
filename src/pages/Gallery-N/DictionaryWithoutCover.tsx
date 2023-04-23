@@ -1,4 +1,5 @@
 import { useDictStats } from './hooks/useDictStats'
+import bookCover from '@/assets/book-cover.png'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { currentDictIdAtom } from '@/store'
 import { DictionaryResource } from '@/typings'
@@ -20,30 +21,38 @@ function Dictionary({ dictionary, onClick }: Props) {
   const isVisible = !!entry?.isIntersecting
   const DictStats = useDictStats(dictionary.id, isVisible)
   const chapterCount = useMemo(() => calcChapterCount(dictionary.length), [dictionary.length])
+  const isSelected = currentDictID === dictionary.id
   const progress = useMemo(() => (DictStats ? DictStats.exercisedChapterCount / chapterCount : 0), [DictStats, chapterCount])
 
   return (
     <div
       ref={divRef}
-      className={`group flex  w-60 cursor-pointer items-center justify-center overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10 ${
-        currentDictID === dictionary.id ? 'ring-2 ring-indigo-300' : ''
+      className={`group flex  h-36 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg  p-4 text-left shadow-lg  focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10 ${
+        isSelected ? ' bg-indigo-400' : 'bg-zinc-50 hover:bg-white'
       }`}
       onClick={onClick}
     >
-      <div className="flex h-full w-full flex-col items-start justify-start ">
-        <h1 className="mb-1 text-xl font-normal group-hover:text-indigo-400">{dictionary.name}</h1>
-        <p className="mb-1 text-xs text-gray-600">{dictionary.description}</p>
-        <p className="mb-1 text-sm font-bold text-gray-600">{dictionary.length} 词</p>
-        {progress > 0 && (
-          <div className="mb-0 flex w-full items-center pt-2">
-            <Progress.Root value={progress} max={100} className="mr-4 h-2.5 w-full rounded-full border-2 border-indigo-300 bg-white">
+      <div className="relative ml-1 mt-2 flex h-full w-full flex-col items-start justify-start">
+        <h1 className={`mb-1.5 text-xl font-normal  ${isSelected ? 'text-white' : 'text-gray-800 group-hover:text-indigo-400'}`}>
+          {dictionary.name}
+        </h1>
+        <p className={`text- mb-1 ${isSelected ? 'text-white opacity-90' : 'text-gray-600'}`}>{dictionary.description}</p>
+        <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600'}`}>{dictionary.length} 词</p>
+        <div className=" flex w-full items-center pt-2">
+          {progress > 0 && (
+            <Progress.Root
+              value={progress}
+              max={100}
+              className={`mr-4 h-2 w-full rounded-full border  bg-white ${isSelected ? 'border-indigo-600' : 'border-indigo-400'}`}
+            >
               <Progress.Indicator
-                className="h-full -translate-x-px rounded-full bg-indigo-300 pl-0"
-                style={{ width: `calc(${progress}% + 2px)` }}
+                className={`h-full rounded-full pl-0 ${isSelected ? 'bg-indigo-600' : 'bg-indigo-400'}`}
+                style={{ width: `calc(${progress}% )` }}
               />
             </Progress.Root>
-          </div>
-        )}
+          )}
+          <img src={bookCover} className={`absolute right-3 top-3 w-16 ${isSelected ? 'opacity-50' : 'opacity-20'}`} />
+        </div>
       </div>
     </div>
   )
