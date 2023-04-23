@@ -57,26 +57,27 @@ export default function GalleryPage() {
         <ChapterList />
         <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
           <IconX className="absolute right-10 top-5 mr-2 w-10 cursor-pointer text-gray-400" onClick={onBack} />
-          <div className="mt-20 flex w-full flex-1 items-start justify-center overflow-y-auto">
-            <ScrollArea.Root className="h-full max-h-full overflow-y-auto">
-              <ScrollArea.Viewport className="h-full w-full pb-[20rem]">
-                <div className="sticky top-0 flex h-20 w-full items-center justify-between bg-[#faf9ff] pb-8">
-                  <LanguageTabSwitcher />
-                  <DictRequest />
-                </div>
-
-                <div className="mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
-                  {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
-                    <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
-                  ))}
-                </div>
-              </ScrollArea.Viewport>
-              <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
-            </ScrollArea.Root>
-            {/* todo: 增加导航 */}
-            {/* <div className="w-40 text-center mt-20 h-40 ">
-              <CategoryNavigation />
-            </div> */}
+          <div className="mt-20 flex w-full flex-1 flex-col items-center justify-center overflow-y-auto">
+            <div className="flex h-full flex-col overflow-y-auto">
+              <div className="flex h-20 w-full items-center justify-between pb-6">
+                <LanguageTabSwitcher />
+                <DictRequest />
+              </div>
+              <ScrollArea.Root className="flex-1 overflow-y-auto">
+                <ScrollArea.Viewport className="h-full w-full pb-[20rem]">
+                  <div className="mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
+                    {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
+                      <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
+                    ))}
+                  </div>
+                </ScrollArea.Viewport>
+                <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
+              </ScrollArea.Root>
+              {/* todo: 增加导航 */}
+              {/* <div className="mt-20 h-40 w-40 text-center ">
+                <CategoryNavigation />
+              </div> */}
+            </div>
           </div>
         </div>
       </GalleryContext.Provider>
