@@ -28,7 +28,7 @@ export default function ChapterRow({
           name="selectedChapter"
           checked={checked}
           onChange={noop}
-          className="mt-0.5 h-3 w-3 cursor-pointer rounded-full border-gray-300  text-indigo-600 outline-none focus:border-none focus:outline-none focus:ring-0 focus:ring-offset-0 "
+          className="mt-0.5 h-3.5 w-3.5 cursor-pointer rounded-full border-gray-300  text-indigo-600 outline-none focus:border-none focus:outline-none focus:ring-0 focus:ring-offset-0 "
         />
       </td>
       <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700">{index + 1}</td>
