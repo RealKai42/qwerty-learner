@@ -860,7 +860,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/it-words.json',
     length: 1700,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'childCode',
@@ -871,7 +871,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/Child_python_code.json',
     length: 19,
     language: 'en',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'childCode002',
@@ -882,7 +882,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/Child_python_turtle_code.json',
     length: 27,
     language: 'en',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'childCode003',
@@ -893,7 +893,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/Child_c++.json',
     length: 39,
     language: 'en',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
 
   {
@@ -905,7 +905,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-array.json',
     length: 36,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsDate',
@@ -916,7 +916,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-date.json',
     length: 34,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsGlobal',
@@ -927,7 +927,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-global.json',
     length: 9,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsMapSet',
@@ -938,7 +938,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-map-set.json',
     length: 16,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsMath',
@@ -949,7 +949,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-math.json',
     length: 38,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsNumber',
@@ -960,7 +960,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-number.json',
     length: 22,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsObject',
@@ -971,7 +971,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-object.json',
     length: 37,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsPromise',
@@ -982,7 +982,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-promise.json',
     length: 9,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'jsString',
@@ -993,7 +993,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/js-string.json',
     length: 32,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-builtin',
@@ -1004,7 +1004,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-builtin.json',
     length: 65,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-array',
@@ -1015,7 +1015,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-array.json',
     length: 11,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-date',
@@ -1026,7 +1026,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-date.json',
     length: 39,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-file',
@@ -1037,7 +1037,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-file.json',
     length: 21,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-class',
@@ -1048,7 +1048,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-class.json',
     length: 13,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-set',
@@ -1059,7 +1059,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-set.json',
     length: 29,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-math',
@@ -1070,7 +1070,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-math.json',
     length: 37,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-string',
@@ -1081,7 +1081,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-string.json',
     length: 40,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'python-system',
@@ -1092,7 +1092,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/python-sys.json',
     length: 24,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'javeArrayList',
@@ -1103,7 +1103,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/java-arraylist.json',
     length: 25,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'javaCharacter',
@@ -1114,7 +1114,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/java-character.json',
     length: 8,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'javaHashmap',
@@ -1125,7 +1125,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/java-hashmap.json',
     length: 22,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'javaLinkedList',
@@ -1136,7 +1136,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/java-linkedlist.json',
     length: 25,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'javaString',
@@ -1147,7 +1147,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/java-string.json',
     length: 48,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'javaStringBuffer',
@@ -1158,7 +1158,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/java-stringBuffer.json',
     length: 20,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'linuxCommand',
@@ -1169,7 +1169,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/linux-command.json',
     length: 575,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'csharpList',
@@ -1180,7 +1180,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/csharp-list.json',
     length: 36,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'sql-lower-case',
@@ -1191,7 +1191,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/SQL_statement_lower-case.json',
     length: 12,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
   {
     id: 'sql-upper-case',
@@ -1202,7 +1202,7 @@ const programming: DictionaryResource[] = [
     url: '/dicts/SQL_statement_upper-case.json',
     length: 12,
     language: 'code',
-    languageCategory: 'en',
+    languageCategory: 'code',
   },
 ]
 
