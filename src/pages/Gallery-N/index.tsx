@@ -1,5 +1,6 @@
 import DictionaryGroup from './CategoryDicts'
 import ChapterList from './ChapterList'
+import DictRequest from './DictRequest'
 import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
@@ -59,7 +60,7 @@ export default function GalleryPage() {
             <div className="h-full max-h-full overflow-y-auto pb-[20rem]">
               <div className="sticky top-0 flex h-20 w-full items-center justify-between bg-[#faf9ff] pb-8">
                 <LanguageTabSwitcher />
-                <span className="cursor-pointer text-sm text-indigo-500">没有找到想要的词典？</span>
+                <DictRequest />
               </div>
 
               <div className="customized-scrollbar mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">

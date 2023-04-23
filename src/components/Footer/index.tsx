@@ -152,10 +152,7 @@ const Footer: React.FC = () => {
         </InfoPanel>
       )}
 
-      <footer
-        className="mt-4 flex flex w-full items-center items-center justify-center justify-center pb-1 text-sm ease-in"
-        onClick={(e) => e.currentTarget.blur()}
-      >
+      <footer className="mt-4 flex w-full items-center  justify-center pb-1 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
