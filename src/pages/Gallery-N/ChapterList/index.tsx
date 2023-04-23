@@ -7,6 +7,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { IconX } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback, useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function ChapterList() {
   const {
@@ -18,6 +19,7 @@ export default function ChapterList() {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const [checkedChapter, setCheckedChapter] = useState(dict?.id === currentDictId ? currentChapter : 0)
+  const navigate = useNavigate()
 
   const chapterCount = calcChapterCount(dict?.length ?? 0)
   const showChapterList = dict !== null
@@ -39,8 +41,9 @@ export default function ChapterList() {
       setState((state) => {
         state.chapterListDict = null
       })
+      navigate('/')
     }
-  }, [checkedChapter, dict, setCurrentChapter, setCurrentDictId, setState])
+  }, [checkedChapter, dict, navigate, setCurrentChapter, setCurrentDictId, setState])
 
   const onCloseDialog = () => {
     setState((state) => {
