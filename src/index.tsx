@@ -24,8 +24,6 @@ if (process.env.NODE_ENV === 'production') {
 dayjs.extend(utc)
 
 const container = document.getElementById('root')
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const root = createRoot(container!)
 
 function Root() {
   const darkMode = useAtomValue(isOpenDarkModeAtom)
@@ -46,4 +44,4 @@ function Root() {
   )
 }
 
-root.render(<Root />)
+container && createRoot(container).render(<Root />)

@@ -23,7 +23,7 @@ export default function DictRequest() {
           btnColor="bg-indigo-300"
           iconColor="text-indigo-500"
           iconBackgroundColor="bg-indigo-100"
-          onClose={() => onClosePanel()}
+          onClose={onClosePanel}
         >
           <p className="text-sm text-gray-600 dark:text-gray-300">
             如果您有相关的编程基础，可以参考

@@ -19,10 +19,10 @@ function Dictionary({ dictionary, onClick }: Props) {
   const divRef = useRef<HTMLDivElement>(null)
   const entry = useIntersectionObserver(divRef, {})
   const isVisible = !!entry?.isIntersecting
-  const DictStats = useDictStats(dictionary.id, isVisible)
+  const dictStats = useDictStats(dictionary.id, isVisible)
   const chapterCount = useMemo(() => calcChapterCount(dictionary.length), [dictionary.length])
   const isSelected = currentDictID === dictionary.id
-  const progress = useMemo(() => (DictStats ? DictStats.exercisedChapterCount / chapterCount : 0), [DictStats, chapterCount])
+  const progress = useMemo(() => (dictStats ? dictStats.exercisedChapterCount / chapterCount : 0), [dictStats, chapterCount])
 
   return (
     <div

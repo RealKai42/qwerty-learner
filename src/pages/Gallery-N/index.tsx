@@ -32,18 +32,15 @@ export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
   const navigate = useNavigate()
 
-  const currentLanguageCategoryDicts = useMemo(
-    () => dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab),
-    [galleryState.currentLanguageTab],
-  )
-  const groupedByCategory = useMemo(
-    () => Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category)),
-    [currentLanguageCategoryDicts],
-  )
-  const groupedByCategoryAndTag: [string, Record<string, DictionaryResource[]>][] = useMemo(
-    () => groupedByCategory.map(([category, dicts]) => [category, groupByDictTags(dicts)]),
-    [groupedByCategory],
-  )
+  const { groupedByCategoryAndTag } = useMemo(() => {
+    const currentLanguageCategoryDicts = dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab)
+    const groupedByCategory = Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category))
+    const groupedByCategoryAndTag = groupedByCategory.map(([category, dicts]) => [category, groupByDictTags(dicts)])
+
+    return {
+      groupedByCategoryAndTag,
+    }
+  }, [galleryState.currentLanguageTab])
 
   const onBack = useCallback(() => {
     navigate('/')

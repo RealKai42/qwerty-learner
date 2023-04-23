@@ -1,6 +1,6 @@
-import { GalleryContext } from '.'
 import DictTagSwitcher from './DictTagSwitcher'
 import Dictionary from './DictionaryWithoutCover'
+import { GalleryContext } from './index'
 import { DictionaryResource } from '@/typings'
 import { useCallback, useContext, useMemo, useState } from 'react'
 
