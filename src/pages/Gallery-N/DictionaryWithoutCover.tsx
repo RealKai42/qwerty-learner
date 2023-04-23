@@ -27,17 +27,21 @@ function Dictionary({ dictionary, onClick }: Props) {
   return (
     <div
       ref={divRef}
-      className={`group flex  h-36 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg  p-4 text-left shadow-lg  focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10 ${
-        isSelected ? ' bg-indigo-400' : 'bg-zinc-50 hover:bg-white'
+      className={`group flex  h-36 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg  p-4 text-left shadow-lg  focus:outline-none  ${
+        isSelected ? ' bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-600 dark:hover:bg-gray-500'
       }`}
       onClick={onClick}
     >
       <div className="relative ml-1 mt-2 flex h-full w-full flex-col items-start justify-start">
-        <h1 className={`mb-1.5 text-xl font-normal  ${isSelected ? 'text-white' : 'text-gray-800 group-hover:text-indigo-400'}`}>
+        <h1
+          className={`mb-1.5 text-xl font-normal  ${
+            isSelected ? 'text-white' : 'text-gray-800 group-hover:text-indigo-400 dark:text-gray-200'
+          }`}
+        >
           {dictionary.name}
         </h1>
-        <p className={`text- mb-1 ${isSelected ? 'text-white opacity-90' : 'text-gray-600'}`}>{dictionary.description}</p>
-        <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600'}`}>{dictionary.length} 词</p>
+        <p className={`mb-1 truncate ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.description}</p>
+        <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.length} 词</p>
         <div className=" flex w-full items-center pt-2">
           {progress > 0 && (
             <Progress.Root

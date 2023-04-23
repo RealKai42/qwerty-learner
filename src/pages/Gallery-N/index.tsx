@@ -56,7 +56,7 @@ export default function GalleryPage() {
       <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
         <ChapterList />
         <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
-          <IconX className="absolute right-10 top-5 mr-2 w-10 cursor-pointer text-gray-400" onClick={onBack} />
+          <IconX className="absolute right-20 top-10 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
           <div className="mt-20 flex w-full flex-1 flex-col items-center justify-center overflow-y-auto">
             <div className="flex h-full flex-col overflow-y-auto">
               <div className="flex h-20 w-full items-center justify-between pb-6">

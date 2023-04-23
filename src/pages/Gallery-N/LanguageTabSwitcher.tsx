@@ -41,7 +41,7 @@ export function LanguageTabSwitcher() {
             {({ checked }) => (
               <div className={`flex items-center border-b-2 px-2 pb-1 ${checked ? 'border-indigo-500' : 'border-transparent'}`}>
                 <img src={option.flag} className="mr-1.5 h-7 w-7" />
-                <p className={`text-lg font-medium text-gray-700`}>{option.name}</p>
+                <p className={`text-lg font-medium text-gray-700 dark:text-gray-200`}>{option.name}</p>
               </div>
             )}
           </RadioGroup.Option>
