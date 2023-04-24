@@ -34,7 +34,6 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
     }
   }, [currentDictInfo.tags, tagList])
 
-  console.log(groupedDictsByTag[currentTag], groupedDictsByTag, currentTag)
   return (
     <div>
       <DictTagSwitcher tagList={tagList} currentTag={currentTag} onChangeCurrentTag={onChangeCurrentTag} />
