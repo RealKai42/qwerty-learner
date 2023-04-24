@@ -50,8 +50,6 @@ export const randomConfigAtom = atomWithStorage('randomConfig', {
   isOpen: false,
 })
 
-export const isLoopSingleWordAtom = atom(false)
-
 export const isIgnoreCaseAtom = atomWithStorage('isIgnoreCase', true)
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)

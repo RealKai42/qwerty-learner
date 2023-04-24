@@ -29,6 +29,7 @@ export type TypingState = {
   isShowSkip: boolean
   isWordVisible: boolean
   isTransVisible: boolean
+  isLoopSingleWord: boolean
   // 是否正在保存数据
   isSavingRecord: boolean
 }
@@ -54,6 +55,7 @@ export const initialState: TypingState = {
   isShowSkip: false,
   isWordVisible: true,
   isTransVisible: true,
+  isLoopSingleWord: false,
   isSavingRecord: false,
 }
 
@@ -78,6 +80,8 @@ export enum TypingStateActionType {
   TICK_TIMER = 'TICK_TIMER',
   ADD_WORD_RECORD_ID = 'ADD_WORD_RECORD_ID',
   SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
+  SET_IS_LOOP_SINGLE_WORD = 'SET_IS_LOOP_SINGLE_WORD',
+  TOGGLE_IS_LOOP_SINGLE_WORD = 'TOGGLE_IS_LOOP_SINGLE_WORD',
 }
 
 export type TypingStateAction =
@@ -101,6 +105,8 @@ export type TypingStateAction =
   | { type: TypingStateActionType.TICK_TIMER }
   | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
   | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
+  | { type: TypingStateActionType.SET_IS_LOOP_SINGLE_WORD; payload: boolean }
+  | { type: TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD }
 
 type Dispatch = (action: TypingStateAction) => void
 
@@ -172,6 +178,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       const newState = structuredClone(initialState)
       newState.isTyping = true
       newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
+      newState.isTransVisible = state.isTransVisible
       return newState
     }
 
@@ -180,11 +187,13 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       newState.isTyping = true
       newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       newState.isWordVisible = false
+      newState.isTransVisible = state.isTransVisible
       return newState
     }
     case TypingStateActionType.NEXT_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
+      newState.isTransVisible = state.isTransVisible
       return newState
     }
     case TypingStateActionType.TOGGLE_WORD_VISIBLE:
@@ -211,6 +220,14 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     }
     case TypingStateActionType.SET_IS_SAVING_RECORD: {
       state.isSavingRecord = action.payload
+      break
+    }
+    case TypingStateActionType.SET_IS_LOOP_SINGLE_WORD: {
+      state.isLoopSingleWord = action.payload
+      break
+    }
+    case TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD: {
+      state.isLoopSingleWord = !state.isLoopSingleWord
       break
     }
     default: {
