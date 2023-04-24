@@ -1,14 +1,18 @@
 import DictTagSwitcher from './DictTagSwitcher'
 import Dictionary from './DictionaryWithoutCover'
 import { GalleryContext } from './index'
+import { currentDictInfoAtom } from '@/store'
 import { DictionaryResource } from '@/typings'
-import { useCallback, useContext, useMemo, useState } from 'react'
+import { findCommonValues } from '@/utils'
+import { useAtomValue } from 'jotai'
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 
 export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByTag: Record<string, DictionaryResource[]> }) {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const { setState } = useContext(GalleryContext)!
   const tagList = useMemo(() => Object.keys(groupedDictsByTag), [groupedDictsByTag])
   const [currentTag, setCurrentTag] = useState(tagList[0])
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
 
   const onChangeCurrentTag = useCallback((tag: string) => {
     setCurrentTag(tag)
@@ -22,6 +26,11 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
     },
     [setState],
   )
+
+  useEffect(() => {
+    const commonTags = findCommonValues(tagList, currentDictInfo.tags)
+    setCurrentTag(commonTags[0])
+  }, [currentDictInfo.tags, tagList])
 
   return (
     <div>

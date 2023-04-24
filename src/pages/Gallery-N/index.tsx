@@ -4,11 +4,13 @@ import DictRequest from './DictRequest'
 import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
+import { currentDictInfoAtom } from '@/store'
 import { DictionaryResource, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { IconX } from '@tabler/icons-react'
-import { createContext, useCallback, useMemo } from 'react'
+import { useAtomValue } from 'jotai'
+import { createContext, useCallback, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useNavigate } from 'react-router-dom'
 import { Updater, useImmer } from 'use-immer'
@@ -31,11 +33,14 @@ export const GalleryContext = createContext<{
 export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
   const navigate = useNavigate()
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
 
   const { groupedByCategoryAndTag } = useMemo(() => {
     const currentLanguageCategoryDicts = dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab)
     const groupedByCategory = Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category))
-    const groupedByCategoryAndTag = groupedByCategory.map(([category, dicts]) => [category, groupByDictTags(dicts)])
+    const groupedByCategoryAndTag = groupedByCategory.map(
+      ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, DictionaryResource[]>],
+    )
 
     return {
       groupedByCategoryAndTag,
@@ -47,6 +52,14 @@ export default function GalleryPage() {
   }, [navigate])
 
   useHotkeys('enter,esc', onBack, { preventDefault: true })
+
+  useEffect(() => {
+    if (currentDictInfo) {
+      setGalleryState((state) => {
+        state.currentLanguageTab = currentDictInfo.languageCategory
+      })
+    }
+  }, [currentDictInfo, setGalleryState])
 
   return (
     <Layout>
