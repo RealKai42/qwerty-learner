@@ -77,30 +77,42 @@ export default function ChapterList() {
               leaveFrom=""
               leaveTo="translate-x-full "
             >
-              <Dialog.Panel className="absolute right-0 flex h-full w-100 flex-col bg-white drop-shadow-2xl transition-all duration-300 ease-out">
+              <Dialog.Panel className="absolute right-0 flex h-full w-100 flex-col bg-white drop-shadow-2xl transition-all duration-300 ease-out dark:bg-gray-800">
                 {dict && (
                   <>
                     <div className="flex w-full items-end justify-between py-4 pl-5">
-                      <span className="text-lg">{dict.name}</span>
+                      <span className="text-lg text-gray-700 dark:text-gray-200">{dict.name}</span>
                       <IconX className="mr-2 cursor-pointer text-gray-400" onClick={onCloseDialog} />
                     </div>
-                    <div className="w-full flex-1 overflow-y-auto">
-                      <table className="block min-w-full divide-y divide-gray-100">
-                        <thead className="sticky top-0 block h-10 w-full bg-gray-50">
+                    <div className="w-full flex-1 overflow-y-auto ">
+                      <table className="block min-w-full divide-y divide-gray-100 dark:divide-gray-800">
+                        <thead className="sticky top-0 block h-10 w-full bg-gray-50 dark:bg-gray-700">
                           <tr className="flex">
-                            <th scope="col" className="w-15 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600"></th>
-                            <th scope="col" className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600">
+                            <th
+                              scope="col"
+                              className="w-15 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
+                            ></th>
+                            <th
+                              scope="col"
+                              className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
+                            >
                               Chapter
                             </th>
-                            <th scope="col" className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600">
+                            <th
+                              scope="col"
+                              className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
+                            >
                               练习次数
                             </th>
-                            <th scope="col" className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600">
+                            <th
+                              scope="col"
+                              className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
+                            >
                               平均错误数
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="block h-full w-full divide-y divide-gray-100 overflow-y-scroll bg-white">
+                        <tbody className="block h-full w-full divide-y divide-gray-100 overflow-y-scroll bg-white dark:divide-gray-800">
                           {range(0, chapterCount, 1).map((index) => (
                             <ChapterRow
                               key={`${dict.id}-${index}`}
