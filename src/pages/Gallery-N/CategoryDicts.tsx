@@ -29,9 +29,12 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
 
   useEffect(() => {
     const commonTags = findCommonValues(tagList, currentDictInfo.tags)
-    setCurrentTag(commonTags[0])
+    if (commonTags.length > 0) {
+      setCurrentTag(commonTags[0])
+    }
   }, [currentDictInfo.tags, tagList])
 
+  console.log(groupedDictsByTag[currentTag], groupedDictsByTag, currentTag)
   return (
     <div>
       <DictTagSwitcher tagList={tagList} currentTag={currentTag} onChangeCurrentTag={onChangeCurrentTag} />
