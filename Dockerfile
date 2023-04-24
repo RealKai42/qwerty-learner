@@ -21,8 +21,8 @@ RUN yarn install
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 5173
 
-CMD yarn start
+CMD yarn start --host=0.0.0.0
 
 
