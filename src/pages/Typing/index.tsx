@@ -1,18 +1,17 @@
 import Layout from '../../components/Layout'
-import CurrentWord from './components/CurrentWord'
 import Progress from './components/Progress'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
 import Switcher from './components/Switcher'
+import WordPanel from './components/WordPanel'
 import { useWordList } from './hooks/useWordList'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
 import Header from '@/components/Header'
-import Loading from '@/components/Loading'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, isLoopSingleWordAtom, randomConfigAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
@@ -23,25 +22,17 @@ import { NavLink } from 'react-router-dom'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
-  const [typingState, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
+  const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
-  const currentWord = typingState.chapterData.words[typingState.chapterData.index]
 
   const currentChapter = useAtomValue(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
-
-  const chapterLogUploader = useMixPanelChapterLogUploader(typingState)
-  const saveChapterRecord = useSaveChapterRecord()
-
-  const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
-  const [wordComponentKey, setWordComponentKey] = useState(0)
 
-  const reloadCurrentWordComponent = useCallback(() => {
-    setWordComponentKey((old) => old + 1)
-  }, [])
+  const chapterLogUploader = useMixPanelChapterLogUploader(state)
+  const saveChapterRecord = useSaveChapterRecord()
 
   useEffect(() => {
     // 检测用户设备
@@ -62,14 +53,15 @@ const App: React.FC = () => {
     }
   }, [currentDictId, setCurrentDictId])
 
-  useHotkeys(
-    'enter',
-    () => {
-      dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
-    },
-    { enableOnFormTags: true, preventDefault: true },
-    [],
-  )
+  const onToggleIsTyping = useCallback(() => {
+    !isLoading && dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
+  }, [isLoading, dispatch])
+
+  const skipWord = useCallback(() => {
+    dispatch({ type: TypingStateActionType.SKIP_WORD })
+  }, [dispatch])
+
+  useHotkeys('enter', onToggleIsTyping, { enableOnFormTags: true, preventDefault: true }, [onToggleIsTyping])
   useEffect(() => {
     const onBlur = () => {
       dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
@@ -82,20 +74,22 @@ const App: React.FC = () => {
   }, [dispatch])
 
   useEffect(() => {
-    if (!typingState.isTyping) {
+    state.chapterData.words?.length > 0 ? setIsLoading(false) : setIsLoading(true)
+  }, [state.chapterData.words])
+
+  useEffect(() => {
+    if (!state.isTyping) {
       const onKeyDown = (e: KeyboardEvent) => {
-        if (e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
           e.preventDefault()
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
         }
       }
       window.addEventListener('keydown', onKeyDown)
 
-      return () => {
-        window.removeEventListener('keydown', onKeyDown)
-      }
+      return () => window.removeEventListener('keydown', onKeyDown)
     }
-  }, [typingState.isTyping, dispatch])
+  }, [state.isTyping, isLoading, dispatch])
 
   useEffect(() => {
     if (words !== undefined) {
@@ -108,115 +102,91 @@ const App: React.FC = () => {
   }, [words])
 
   useEffect(() => {
-    if (typingState.chapterData.words?.length > 0) {
-      setIsLoading(false)
-    } else {
-      setIsLoading(true)
-    }
-  }, [typingState.chapterData.words])
-
-  const skipWord = useCallback(() => {
-    dispatch({ type: TypingStateActionType.SKIP_WORD })
-  }, [dispatch])
-
-  const onFinish = () => {
-    if (typingState.chapterData.index < typingState.chapterData.words.length - 1 || isLoopSingleWord) {
-      // 用户完成当前单词
-      if (isLoopSingleWord) {
-        dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
-        reloadCurrentWordComponent()
-      } else {
-        dispatch({ type: TypingStateActionType.NEXT_WORD })
-      }
-    } else {
-      // 用户完成当前章节
-      dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
-    }
-  }
-
-  useEffect(() => {
     // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
-    if (typingState.isFinished && !typingState.isSavingRecord) {
+    if (state.isFinished && !state.isSavingRecord) {
       chapterLogUploader()
-      saveChapterRecord(typingState)
+      saveChapterRecord(state)
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [typingState.isFinished, typingState.isSavingRecord])
+  }, [state.isFinished, state.isSavingRecord])
 
   useEffect(() => {
     // 启动计时器
     let intervalId: number
-    if (typingState.isTyping) {
+    if (state.isTyping) {
       intervalId = window.setInterval(() => {
         dispatch({ type: TypingStateActionType.TICK_TIMER })
       }, 1000)
     }
     return () => clearInterval(intervalId)
-  }, [typingState.isTyping, dispatch])
+  }, [state.isTyping, dispatch])
 
   return (
-    <TypingContext.Provider value={{ state: typingState, dispatch }}>
+    <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
-      {typingState.isFinished && <ResultScreen />}
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <Layout>
-          <Header>
-            <Tooltip content="词典章节切换">
-              <NavLink
-                className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
-                to="/gallery"
-              >
-                {currentDictInfo.name} 第 {currentChapter + 1} 章
-              </NavLink>
-            </Tooltip>
-            <PronunciationSwitcher />
-            <Switcher />
-            <Tooltip content="快捷键 Enter">
-              <button
-                className={`${
-                  typingState.isTyping ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
-                }  btn-primary w-20 transition-colors duration-300`}
-                onClick={() => {
-                  dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
-                }}
-              >
-                {typingState.isTyping ? 'Pause' : 'Start'}
-              </button>
-            </Tooltip>
-            <Tooltip content="跳过该词">
-              <button
-                className={`${
-                  typingState.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
-                } btn-primary transition-all duration-300 `}
-                onClick={skipWord}
-              >
-                Skip
-              </button>
-            </Tooltip>
-          </Header>
-          <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
-            <div className="container relative mx-auto flex h-full flex-col items-center">
-              <div className="h-1/3"></div>
-              {!typingState.isFinished && (
+      {state.isFinished && <ResultScreen />}
+      <Layout>
+        <Header>
+          <Tooltip content="词典章节切换">
+            <NavLink
+              className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
+              to="/gallery"
+            >
+              {currentDictInfo.name} 第 {currentChapter + 1} 章
+            </NavLink>
+          </Tooltip>
+          <PronunciationSwitcher />
+          <Switcher />
+          <Tooltip content="快捷键 Enter">
+            <button
+              className={`${
+                state.isTyping ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
+              }  btn-primary w-20 transition-colors duration-300`}
+              onClick={onToggleIsTyping}
+            >
+              {state.isTyping ? 'Pause' : 'Start'}
+            </button>
+          </Tooltip>
+          <Tooltip content="跳过该词">
+            <button
+              className={`${
+                state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+              } btn-primary transition-all duration-300 `}
+              onClick={skipWord}
+            >
+              Skip
+            </button>
+          </Tooltip>
+        </Header>
+        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
+          <div className="container relative mx-auto flex h-full flex-col items-center">
+            <div className="h-1/3"></div>
+            {isLoading ? (
+              <div className="flex flex-col items-center justify-center ">
+                <div
+                  className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid  border-indigo-400 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                  role="status"
+                ></div>
+              </div>
+            ) : (
+              !state.isFinished && (
                 <>
-                  {typingState.isTyping ? (
+                  {state.isTyping ? (
                     <>
-                      {currentWord && <CurrentWord word={currentWord} key={wordComponentKey} onFinish={onFinish} />}
-                      <Progress order={typingState.chapterData.index} wordsLength={typingState.chapterData.words.length} />
+                      <WordPanel />
+                      <Progress />
                     </>
                   ) : (
                     <h3 className="animate-pulse select-none pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>
                   )}
-                  <Speed />
                 </>
-              )}
-            </div>
+              )
+            )}
+            <Speed />
           </div>
-        </Layout>
-      )}
+        </div>
+      </Layout>
     </TypingContext.Provider>
   )
 }
