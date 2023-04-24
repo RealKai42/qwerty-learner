@@ -141,11 +141,13 @@ const App: React.FC = () => {
           <Tooltip content="快捷键 Enter">
             <button
               className={`${
-                state.isTyping ? 'bg-gray-300 dark:bg-gray-700' : 'bg-indigo-400'
-              }  btn-primary w-20 transition-colors duration-300`}
+                state.isTyping ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-700' : 'bg-indigo-600 shadow-indigo-200'
+              } btn-primary w-20 shadow transition-colors duration-200`}
+              type="button"
               onClick={onToggleIsTyping}
+              aria-label={state.isTyping ? '暂停' : '开始'}
             >
-              {state.isTyping ? 'Pause' : 'Start'}
+              <span className="font-medium">{state.isTyping ? 'Pause' : 'Start'}</span>
             </button>
           </Tooltip>
           <Tooltip content="跳过该词">
@@ -178,7 +180,7 @@ const App: React.FC = () => {
                       <Progress />
                     </>
                   ) : (
-                    <h3 className="animate-pulse select-none pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</h3>
+                    <div className="animate-pulse select-none pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</div>
                   )}
                 </>
               )

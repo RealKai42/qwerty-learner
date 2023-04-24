@@ -22,9 +22,16 @@ export default function WordChip({ word }: { word: Word }) {
 
   return (
     <>
-      <div ref={refs.setReference} className="word-chip select-none" {...getReferenceProps()} onClick={onClickWord}>
+      <button
+        ref={refs.setReference}
+        className="word-chip select-none"
+        {...getReferenceProps()}
+        type="button"
+        onClick={onClickWord}
+        title={`朗读 ${word.name}`}
+      >
         <span>{word.name}</span>
-      </div>
+      </button>
       {showTranslation && (
         <div
           ref={refs.setFloating}

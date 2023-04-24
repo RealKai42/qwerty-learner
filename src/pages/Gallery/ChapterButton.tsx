@@ -24,7 +24,9 @@ export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, w
     <button
       ref={buttonRef}
       className="relative flex h-28 w-44 flex-col items-start justify-start overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10"
+      type="button"
       onClick={onClick}
+      title="选择章节"
     >
       <p className="w-full pb-2 text-lg text-gray-800 dark:text-white dark:text-opacity-80">Chapter {index + 1}</p>
       <p className="text-xs font-medium text-gray-600 dark:text-white dark:text-opacity-60">单词数: {wordCount}</p>
