@@ -1,9 +1,11 @@
 import alipay from '@/assets/alipay.jpg'
+import cnFlag from '@/assets/flags/cn.png'
 import redBookLogo from '@/assets/redBook-black-logo.svg'
 import redBookCode from '@/assets/redBook-code.jpg'
 import vscLogo from '@/assets/vsc-logo.svg'
 import weChat from '@/assets/weChat.jpg'
 import InfoPanel from '@/components/InfoPanel'
+import Tooltip from '@/components/Tooltip'
 import { infoPanelStateAtom } from '@/store'
 import { InfoPanelType } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
@@ -150,10 +152,7 @@ const Footer: React.FC = () => {
         </InfoPanel>
       )}
 
-      <footer
-        className="mt-4 flex flex w-full items-center items-center justify-center justify-center pb-1 text-sm ease-in"
-        onClick={(e) => e.currentTarget.blur()}
-      >
+      <footer className="mt-4 flex w-full items-center  justify-center pb-1 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -221,15 +220,11 @@ const Footer: React.FC = () => {
         <a href="mailto:me@kaiyi.cool" target="_blank" rel="noreferrer" onClick={(e) => e.currentTarget.blur()}>
           <EnvelopeIcon className="mr-3 inline h-4 w-4 text-gray-500 dark:text-gray-400" />
         </a>
-
-        <div className="group relative inline-block ">
-          <a href="https://kaiyiwing.gitee.io/qwerty-learner/" className="mr-3 text-gray-500 dark:text-gray-400" title="中国大陆节点">
-            🇨🇳
+        <Tooltip content="中国大陆镜像">
+          <a href="https://kaiyiwing.gitee.io/qwerty-learner" target="_self">
+            <img src={cnFlag} className="mr-2 h-5 w-5 cursor-pointer" />
           </a>
-          <div className="invisible absolute bottom-full left-1/2 -ml-20 flex w-40 items-center justify-center pt-2 group-hover:visible">
-            <span className="px-3 py-1 text-xs text-gray-500 dark:text-gray-400">中国大陆镜像</span>
-          </div>
-        </div>
+        </Tooltip>
         <button
           className="cursor-pointer text-gray-500 no-underline hover:no-underline dark:text-gray-400 "
           type="button"

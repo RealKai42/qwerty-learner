@@ -117,7 +117,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-large bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
                   <div className="flex flex-col items-center justify-center pb-10 pl-20 pr-14 pt-20">
                     <button className="absolute right-7 top-5" onClick={handleClose}>
                       <XMarkIcon className="h-6 w-6 text-gray-400" />
@@ -163,7 +163,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
             <div className=" w-full ">
               <KeyboardPanel description={promote.word} />
               <div className="text-center text-xs text-gray-500">{promote.sentence}</div>
-              <div className="opacity-45 mx-4 mt-6 flex rounded-large bg-white px-4 py-3 shadow-xl">
+              <div className="opacity-45 mx-4 mt-6 flex rounded-xl bg-white px-4 py-3 shadow-xl">
                 <DataBox data={state.timerData.time + ''} description="用时" />
                 <DataBox data={state.timerData.accuracy + '%'} description="正确率" />
                 <DataBox data={state.timerData.wpm + ''} description="WPM" />

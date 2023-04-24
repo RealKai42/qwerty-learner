@@ -9,11 +9,6 @@ module.exports = {
       padding: {
         0.8: '0.2rem',
       },
-      borderRadius: {
-        large: '0.75rem',
-        lg: '0.5rem',
-        md: '0.375rem',
-      },
       width: {
         3.5: '0.875rem',
         5.5: '1.375rem',
@@ -23,6 +18,7 @@ module.exports = {
         75: '18.75rem',
         84: '21rem',
         85: '21.25rem',
+        100: '25rem',
         116: '29rem',
         150: '37.5rem',
         160: '40rem',
@@ -50,5 +46,5 @@ module.exports = {
       backgroundOpacity: ['dark'],
     },
   },
-  plugins: [require('@headlessui/tailwindcss')],
+  plugins: [require('@headlessui/tailwindcss'), require('@tailwindcss/forms')],
 }
