@@ -7,6 +7,7 @@ import redBookLogo from '@/assets/redBook-color-logo.svg'
 import Tooltip from '@/components/Tooltip'
 import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom } from '@/store'
 import { InfoPanelType } from '@/typings'
+import { WordWithIndex } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { Transition } from '@headlessui/react'
 import { IconX } from '@tabler/icons-react'
@@ -22,6 +23,12 @@ const ResultScreen = () => {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+
+  const wrongWords = useMemo(() => {
+    const wordList = state.chapterData.wrongWordIndexes.map((index) => state.chapterData.words.find((word) => word.index === index))
+
+    return wordList.filter((word) => word !== undefined) as WordWithIndex[]
+  }, [state.chapterData.wrongWordIndexes, state.chapterData.words])
 
   const isLastChapter = useMemo(() => {
     return currentChapter >= currentDictInfo.chapterCount - 1
@@ -135,8 +142,8 @@ const ResultScreen = () => {
               </div>
               <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
                 <div className="customized-scrollbar z-20 ml-8 mr-1 flex h-80 flex-row flex-wrap content-start gap-4 overflow-y-auto overflow-x-hidden pr-7 pt-9">
-                  {state.chapterData.wrongWordIndexes.map((index) => (
-                    <WordChip key={`${index}-${state.chapterData.words[index].name}`} word={state.chapterData.words[index]} />
+                  {wrongWords.map((word, index) => (
+                    <WordChip key={`${index}-${word.name}`} word={word} />
                   ))}
                 </div>
                 <div className="align-center flex w-full flex-row justify-start rounded-b-xl bg-indigo-200 px-4 dark:bg-indigo-400">

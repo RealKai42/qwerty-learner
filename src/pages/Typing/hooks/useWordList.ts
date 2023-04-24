@@ -1,12 +1,12 @@
 import { CHAPTER_LENGTH } from '@/constants'
 import { currentDictInfoAtom, currentChapterAtom } from '@/store'
-import { Word } from '@/typings/index'
+import { Word, WordWithIndex } from '@/typings/index'
 import { useAtom, useAtomValue } from 'jotai'
 import { useMemo } from 'react'
 import useSWR from 'swr'
 
 export type UseWordListResult = {
-  words: Word[] | undefined
+  words: WordWithIndex[] | undefined
   isLoading: boolean
   error: Error | undefined
 }
@@ -27,15 +27,16 @@ export function useWordList(): UseWordListResult {
 
   const { data: wordList, error, isLoading } = useSWR(currentDictInfo.url, wordListFetcher)
 
-  const words = useMemo(
-    () =>
-      isFirstChapter
-        ? firstChapter
-        : wordList
-        ? wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
-        : [],
-    [isFirstChapter, wordList, currentChapter],
-  )
+  const words: WordWithIndex[] = useMemo(() => {
+    const newWords = isFirstChapter
+      ? firstChapter
+      : wordList
+      ? wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
+      : []
+
+    // 记录原始 index
+    return newWords.map((word, index) => ({ ...word, index }))
+  }, [isFirstChapter, wordList, currentChapter])
 
   return { words: wordList === undefined ? undefined : words, isLoading, error }
 }

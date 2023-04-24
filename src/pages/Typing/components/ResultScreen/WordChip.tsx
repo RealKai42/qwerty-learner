@@ -1,9 +1,9 @@
 import usePronunciationSound from '@/hooks/usePronunciation'
-import { Word } from '@/typings'
+import { WordWithIndex } from '@/typings'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
 import { useCallback, useState } from 'react'
 
-export default function WordChip({ word }: { word: Word }) {
+export default function WordChip({ word }: { word: WordWithIndex }) {
   const [showTranslation, setShowTranslation] = useState(false)
   const { x, y, strategy, refs, context } = useFloating({
     open: showTranslation,

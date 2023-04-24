@@ -23,6 +23,11 @@ export type Word = {
   ukphone: string
 }
 
+export type WordWithIndex = Word & {
+  // 在 chapter 中的原始索引
+  index: number
+}
+
 export type InfoPanelType = 'donate' | 'vsc' | 'community' | 'redBook'
 
 export type InfoPanelState = {
