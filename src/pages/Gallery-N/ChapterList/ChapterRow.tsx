@@ -1,7 +1,7 @@
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { useChapterStats } from '@/pages/Gallery-N/hooks/useChapterStats'
 import noop from '@/utils/noop'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 type ChapterRowProps = {
   index: number
@@ -15,6 +15,17 @@ export default function ChapterRow({ index, dictID, checked, onChange }: Chapter
   const entry = useIntersectionObserver(rowRef, {})
   const isVisible = !!entry?.isIntersecting
   const chapterStatus = useChapterStats(index, dictID, isVisible)
+
+  useEffect(() => {
+    if (checked && rowRef.current !== null) {
+      const button = rowRef.current
+      const container = button.parentElement?.parentElement?.parentElement
+      container?.scroll({
+        top: button.offsetTop - container.offsetTop - 300,
+        behavior: 'smooth',
+      })
+    }
+  }, [checked])
 
   return (
     <tr className="flex cursor-pointer even:bg-gray-50 hover:bg-indigo-100" ref={rowRef} onClick={() => onChange(index)}>
