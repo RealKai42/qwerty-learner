@@ -178,6 +178,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       const newState = structuredClone(initialState)
       newState.isTyping = true
       newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
+      newState.isTransVisible = state.isTransVisible
       return newState
     }
 
@@ -186,11 +187,13 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       newState.isTyping = true
       newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       newState.isWordVisible = false
+      newState.isTransVisible = state.isTransVisible
       return newState
     }
     case TypingStateActionType.NEXT_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
+      newState.isTransVisible = state.isTransVisible
       return newState
     }
     case TypingStateActionType.TOGGLE_WORD_VISIBLE:
