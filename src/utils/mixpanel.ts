@@ -2,7 +2,6 @@ import { TypingState } from '@/pages/Typing/store'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
-  isLoopSingleWordAtom,
   isOpenDarkModeAtom,
   keySoundsConfigAtom,
   phoneticConfigAtom,
@@ -65,7 +64,6 @@ export type WordLogUpload = ModeInfo & {
   order: number
   chapter: string
   wordlist: string
-  isLoopSingleWord: boolean
 }
 
 export type ChapterLogUpload = ModeInfo & {
@@ -86,7 +84,6 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
-  const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
 
   const wordLogUploader = useCallback(
     (wordLog: { headword: string; timeStart: string; timeEnd: string; countInput: number; countCorrect: number; countTypo: number }) => {
@@ -100,8 +97,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
         enabledPhotonicsSymbol: phoneticConfig.isOpen,
-        enabledSingleWordLoop: isLoopSingleWord,
-        isLoopSingleWord,
+        enabledSingleWordLoop: typingState.isLoopSingleWord,
         pronunciationAuto: pronunciationConfig.isOpen,
         pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
       }
@@ -112,7 +108,6 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
       currentChapter,
       dictName,
       isDarkMode,
-      isLoopSingleWord,
       keySoundsConfig.isOpen,
       phoneticConfig.isOpen,
       pronunciationConfig.isOpen,
@@ -132,7 +127,6 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
-  const isLoopSingleWord = useAtomValue(isLoopSingleWordAtom)
 
   const chapterLogUploader = useCallback(() => {
     const props: ChapterLogUpload = {
@@ -148,7 +142,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
       modeShuffle: randomConfig.isOpen,
       enabledKeyboardSound: keySoundsConfig.isOpen,
       enabledPhotonicsSymbol: phoneticConfig.isOpen,
-      enabledSingleWordLoop: isLoopSingleWord,
+      enabledSingleWordLoop: typingState.isLoopSingleWord,
       pronunciationAuto: pronunciationConfig.isOpen,
       pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
     }
@@ -158,7 +152,6 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
     currentChapter,
     dictName,
     isDarkMode,
-    isLoopSingleWord,
     keySoundsConfig.isOpen,
     phoneticConfig.isOpen,
     pronunciationConfig.isOpen,

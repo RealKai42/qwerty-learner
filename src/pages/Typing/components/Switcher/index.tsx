@@ -2,7 +2,7 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
 import Tooltip from '@/components/Tooltip'
-import { isLoopSingleWordAtom, isOpenDarkModeAtom } from '@/store'
+import { isOpenDarkModeAtom } from '@/store'
 import { SunIcon, MoonIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 import { IconRepeatOnce, IconRepeatOff, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
@@ -11,8 +11,6 @@ import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
-  const [isLoopSingleWord, setIsLoopSingleWord] = useAtom(isLoopSingleWordAtom)
-
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
   const changeDarkModeState = () => {
@@ -32,7 +30,9 @@ export default function Switcher() {
   }
 
   const changeLoopSingleWordState = () => {
-    setIsLoopSingleWord((old) => !old)
+    if (dispatch) {
+      dispatch({ type: TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD })
+    }
   }
 
   useHotkeys(
@@ -77,13 +77,13 @@ export default function Switcher() {
 
       <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
         <button
-          className={`p-[2px] ${isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
           onClick={(e) => {
             changeLoopSingleWordState()
             e.currentTarget.blur()
           }}
         >
-          {isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
+          {state?.isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
