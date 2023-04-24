@@ -119,7 +119,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
               >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
                   <div className="flex flex-col items-center justify-center pb-10 pl-20 pr-14 pt-20">
-                    <button className="absolute right-7 top-5" onClick={handleClose}>
+                    <button className="absolute right-7 top-5" type="button" onClick={handleClose} title="关闭对话框">
                       <XMarkIcon className="h-6 w-6 text-gray-400" />
                     </button>
                     <div className="h-152 w-116">
@@ -143,7 +143,13 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                         </div>
                       )}
                     </div>
-                    <button onClick={handleDownload} ref={dialogFocusRef} className="btn-primary mr-9 mt-10 h-10">
+                    <button
+                      ref={dialogFocusRef}
+                      className="btn-primary mr-9 mt-10 h-10"
+                      type="button"
+                      onClick={handleDownload}
+                      title="保存"
+                    >
                       保存
                     </button>
                   </div>

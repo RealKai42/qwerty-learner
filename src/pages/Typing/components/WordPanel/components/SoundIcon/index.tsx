@@ -2,11 +2,11 @@ import VolumeHighIcon from './volume-icons/VolumeHieghIcon'
 import VolumeIcon from './volume-icons/VolumeIcon'
 import VolumeLowIcon from './volume-icons/VolumeLowIcon'
 import VolumeMediumIcon from './volume-icons/VolumeMediumIcon'
-import React, { useEffect, useState } from 'react'
+import React, { MouseEventHandler, useEffect, useState } from 'react'
 
 const volumeIcons = [VolumeIcon, VolumeLowIcon, VolumeMediumIcon, VolumeHighIcon]
 
-export const SoundIcon = ({ duration = 500, animated = false, ...rest }: SoundIconProps) => {
+export const SoundIcon = ({ duration = 500, animated = false, onClick, ...rest }: SoundIconProps) => {
   const [animationFrameIndex, setAnimationFrameIndex] = useState(0)
 
   useEffect(() => {
@@ -34,12 +34,17 @@ export const SoundIcon = ({ duration = 500, animated = false, ...rest }: SoundIc
 
   const Icon = volumeIcons[animationFrameIndex]
 
-  return <Icon {...rest} />
+  return (
+    <button type="button" onClick={onClick}>
+      <Icon {...rest} />
+    </button>
+  )
 }
 
 export type SoundIconProps = {
   animated?: boolean
   duration?: number
+  onClick?: MouseEventHandler<HTMLButtonElement>
 } & Omit<React.SVGProps<SVGSVGElement>, 'ref'>
 
 export type SoundIconRef = {

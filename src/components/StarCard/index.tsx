@@ -63,8 +63,10 @@ export default function StarCard() {
         ) : (
           <div className="flex pb-0 pt-6">
             <button
-              onClick={onClickWantStar}
               className="rounded-lg bg-indigo-600 px-6 py-2 text-lg text-white transition-colors duration-300 focus:outline-none"
+              type="button"
+              onClick={onClickWantStar}
+              title="我想收藏"
             >
               我想收藏
             </button>
@@ -94,7 +96,7 @@ export default function StarCard() {
               后自动关闭
             </span>
           )}
-          <button type="button" onClick={onClickCloseStar}>
+          <button type="button" onClick={onClickCloseStar} title="关闭提示" aria-label="关闭提示">
             <IconCircleX className="text-indigo-400" />
           </button>
         </div>

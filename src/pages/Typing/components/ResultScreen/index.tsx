@@ -182,6 +182,7 @@ const ResultScreen = () => {
                   }}
                   className="cursor-pointer text-gray-500 dark:text-gray-400"
                   type="button"
+                  title="加入我们的社区"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +208,9 @@ const ResultScreen = () => {
               <Tooltip content="快捷键：shift + enter">
                 <button
                   className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+                  type="button"
                   onClick={dictationButtonHandler}
+                  title="默写本章节"
                 >
                   默写本章节
                 </button>
@@ -215,7 +218,9 @@ const ResultScreen = () => {
               <Tooltip content="快捷键：space">
                 <button
                   className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+                  type="button"
                   onClick={repeatButtonHandler}
+                  title="重复本章节"
                 >
                   重复本章节
                 </button>
@@ -224,7 +229,9 @@ const ResultScreen = () => {
                 <Tooltip content="快捷键：enter">
                   <button
                     className={`btn-primary { isLastChapter ? 'cursor-not-allowed opacity-50' : ''} h-12 text-base font-bold `}
+                    type="button"
                     onClick={nextButtonHandler}
+                    title="下一章节"
                   >
                     下一章节
                   </button>

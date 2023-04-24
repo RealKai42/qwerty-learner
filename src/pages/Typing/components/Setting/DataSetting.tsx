@@ -73,7 +73,13 @@ export default function DataSetting() {
           <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${exportProgress}%`}</span>
         </div>
 
-        <button className="btn-primary ml-4 disabled:bg-gray-300" onClick={onClickExport} disabled={isExporting}>
+        <button
+          className="btn-primary ml-4 disabled:bg-gray-300"
+          type="button"
+          onClick={onClickExport}
+          disabled={isExporting}
+          title="导出数据"
+        >
           导出数据
         </button>
       </div>
@@ -96,7 +102,13 @@ export default function DataSetting() {
           <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${importProgress}%`}</span>
         </div>
 
-        <button className="btn-primary ml-4 disabled:bg-gray-300" onClick={onClickImport} disabled={isImporting}>
+        <button
+          className="btn-primary ml-4 disabled:bg-gray-300"
+          type="button"
+          onClick={onClickImport}
+          disabled={isImporting}
+          title="导入数据"
+        >
           导入数据
         </button>
       </div>
