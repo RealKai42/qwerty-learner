@@ -29,7 +29,7 @@ async function getChapterStats(dict: string, chapter: number | null): Promise<IC
   const records: IChapterRecord[] = await db.chapterRecords.where({ dict, chapter }).toArray()
 
   const exerciseCount = records.length
-  const totalWrongCount = records.reduce((total, { wrongCount }) => total + (wrongCount || 0), 0)
+  const totalWrongCount = records.reduce((total, { wrongCount }) => total + (wrongCount ?? 0), 0)
   const avgWrongCount = exerciseCount > 0 ? totalWrongCount / exerciseCount : 0
 
   return { exerciseCount, avgWrongCount }

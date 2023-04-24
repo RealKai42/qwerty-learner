@@ -3,17 +3,13 @@ import { useChapterStats } from '@/pages/Gallery-N/hooks/useChapterStats'
 import noop from '@/utils/noop'
 import { useRef } from 'react'
 
-export default function ChapterRow({
-  index,
-  dictID,
-  checked,
-  onChange,
-}: {
+type ChapterRowProps = {
   index: number
   checked: boolean
   dictID: string
   onChange: (index: number) => void
-}) {
+}
+export default function ChapterRow({ index, dictID, checked, onChange }: ChapterRowProps) {
   const rowRef = useRef<HTMLTableRowElement>(null)
 
   const entry = useIntersectionObserver(rowRef, {})

@@ -38,14 +38,18 @@ export default function DictRequest() {
             ，给项目贡献新的词典。
             <br />
             <br />
-            如果您没有相关的编程基础，可以讲您的字典需求发送邮件到 me@kaiyi.cool, 或者网页底部添加我们的用户社群进行反馈。
+            如果您没有相关的编程基础，可以讲您的字典需求发送邮件到 如果您没有相关的编程基础，可以讲您的字典需求发送邮件到{' '}
+            <a href="mailto:me@kaiyi.cool" className="px-2 text-blue-500">
+              me@kaiyi.cool
+            </a>
+            ，或者网页底部添加我们的用户社群进行反馈。
           </p>
           <br />
         </InfoPanel>
       )}
-      <span className="cursor-pointer pr-6 text-sm text-indigo-500" onClick={onOpenPanel}>
+      <button className="cursor-pointer pr-6 text-sm text-indigo-500" onClick={onOpenPanel}>
         没有找到想要的词典？
-      </span>
+      </button>
     </>
   )
 }

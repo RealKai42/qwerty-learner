@@ -221,14 +221,9 @@ const Footer: React.FC = () => {
           <EnvelopeIcon className="mr-3 inline h-4 w-4 text-gray-500 dark:text-gray-400" />
         </a>
         <Tooltip content="中国大陆镜像">
-          <img
-            src={cnFlag}
-            className="mr-2 h-5 w-5 cursor-pointer"
-            onClick={(event) => {
-              event.preventDefault()
-              window.location.href = 'https://kaiyiwing.gitee.io/qwerty-learner'
-            }}
-          />
+          <a href="https://kaiyiwing.gitee.io/qwerty-learner" target="_self">
+            <img src={cnFlag} className="mr-2 h-5 w-5 cursor-pointer" />
+          </a>
         </Tooltip>
         <button
           className="cursor-pointer text-gray-500 no-underline hover:no-underline dark:text-gray-400 "

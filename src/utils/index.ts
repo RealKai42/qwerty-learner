@@ -76,18 +76,7 @@ export function calcChapterCount(length: number) {
   return Math.ceil(length / CHAPTER_LENGTH)
 }
 
-export function findCommonValues<T>(arr1: T[], arr2: T[]): T[] {
-  const commonValues: T[] = []
-
-  // 遍历第一个数组中的所有元素
-  for (let i = 0; i < arr1.length; i++) {
-    const currentValue = arr1[i]
-
-    // 如果第二个数组中包含当前元素，则将其添加到共同值数组中
-    if (arr2.includes(currentValue)) {
-      commonValues.push(currentValue)
-    }
-  }
-
-  return commonValues
+export function findCommonValues<T>(xs: T[], ys: T[]): T[] {
+  const set = new Set(ys)
+  return xs.filter((x) => set.has(x))
 }

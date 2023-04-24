@@ -27,9 +27,10 @@ function Dictionary({ dictionary, onClick }: Props) {
   return (
     <div
       ref={divRef}
-      className={`group flex  h-36 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg  p-4 text-left shadow-lg  focus:outline-none  ${
-        isSelected ? ' bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-600 dark:hover:bg-gray-500'
+      className={`group flex  h-36 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
+        isSelected ? 'bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-600 dark:hover:bg-gray-500'
       }`}
+      role="button"
       onClick={onClick}
     >
       <div className="relative ml-1 mt-2 flex h-full w-full flex-col items-start justify-start">
