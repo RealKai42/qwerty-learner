@@ -7,7 +7,7 @@ import { Word } from '@/typings'
 import { useAtomValue } from 'jotai'
 import { useContext } from 'react'
 
-export default function CurrentWord({ word, onFinish }: { word: Word; onFinish: () => void }) {
+export default function WordPanel({ word, onFinish }: { word: Word; onFinish: () => void }) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state } = useContext(TypingContext)!
