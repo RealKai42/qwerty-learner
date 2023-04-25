@@ -9,22 +9,12 @@ type InfoPanelProps = {
   onClose: () => void
   title: string
   icon: ElementType<TablerIconsProps> | 'redBookLogo'
-  iconColor: string
-  iconBackgroundColor: string
-  btnColor: string
+  iconClassName: string
+  buttonClassName: string
   children: React.ReactNode
 }
 
-const InfoPanel: React.FC<InfoPanelProps> = ({
-  openState,
-  title,
-  onClose,
-  icon: Icon,
-  iconBackgroundColor,
-  iconColor,
-  btnColor,
-  children,
-}) => {
+const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon: Icon, iconClassName, buttonClassName, children }) => {
   return (
     <Transition.Root show={openState} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={() => onClose()}>
@@ -55,10 +45,13 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
                 <div className="bg-white px-4 pb-4 pt-5 dark:bg-gray-800 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     <div
-                      className={`${iconBackgroundColor} mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-50 sm:mx-0 sm:h-10 sm:w-10`}
+                      className={classNames(
+                        iconClassName,
+                        `mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-50 sm:mx-0 sm:h-10 sm:w-10`,
+                      )}
                     >
                       {Icon !== 'redBookLogo' ? (
-                        <Icon className={classNames('h-6 w-6 stroke-current dark:bg-opacity-100', iconColor)} />
+                        <Icon className="h-6 w-6 stroke-current dark:bg-opacity-100" />
                       ) : (
                         <img src={redBookLogo} alt="redBookLogo" className="h-6 w-6" />
                       )}
@@ -72,11 +65,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
                   </div>
                 </div>
                 <div className="bg-gray-50 px-4 py-3 dark:bg-gray-700  sm:flex sm:flex-row-reverse sm:px-6">
-                  <button
-                    type="button"
-                    className={`${btnColor}  mt-3 inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold text-white shadow-sm focus:outline-none  dark:bg-opacity-70 dark:text-opacity-80 sm:ml-3 sm:mt-0 sm:w-auto  sm:w-auto sm:text-sm`}
-                    onClick={() => onClose()}
-                  >
+                  <button type="button" className={classNames(buttonClassName, 'btn-info-panel')} onClick={() => onClose()}>
                     关闭
                   </button>
                 </div>

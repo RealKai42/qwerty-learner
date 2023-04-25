@@ -82,6 +82,13 @@ body,
     @apply flex items-center justify-center rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white hover:opacity-90 focus:outline-none dark:text-opacity-80;
   }
 
+  .btn-info-panel {
+    @apply mt-3 inline-flex w-full justify-center rounded-md px-3 py-2 text-sm
+      font-semibold text-white shadow-sm transition-colors focus:outline-none
+      dark:bg-opacity-70 dark:text-opacity-80 sm:ml-3 sm:mt-0 sm:w-auto
+      sm:text-sm;
+  }
+
   .tooltip {
     @apply whitespace-nowrap rounded-lg bg-white px-2 py-1 text-xs text-gray-500 shadow-md dark:bg-gray-700 dark:text-gray-300;
   }
