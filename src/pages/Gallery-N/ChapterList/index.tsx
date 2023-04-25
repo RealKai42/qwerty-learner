@@ -77,7 +77,7 @@ export default function ChapterList() {
               leaveFrom=""
               leaveTo="translate-x-full "
             >
-              <Dialog.Panel className="absolute right-0 flex h-full w-100 flex-col bg-white drop-shadow-2xl transition-all duration-300 ease-out dark:bg-gray-800">
+              <Dialog.Panel className="absolute right-0 flex h-full w-[35rem] flex-col bg-white drop-shadow-2xl transition-all duration-300 ease-out dark:bg-gray-800">
                 {dict && (
                   <>
                     <div className="flex w-full items-end justify-between py-4 pl-5">
@@ -108,7 +108,13 @@ export default function ChapterList() {
                               scope="col"
                               className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
                             >
-                              平均错误数
+                              平均错误单词数
+                            </th>
+                            <th
+                              scope="col"
+                              className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
+                            >
+                              平均错误输入数
                             </th>
                           </tr>
                         </thead>

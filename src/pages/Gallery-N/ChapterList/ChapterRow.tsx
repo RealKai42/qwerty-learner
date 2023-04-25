@@ -47,7 +47,10 @@ export default function ChapterRow({ index, dictID, checked, onChange }: Chapter
         {chapterStatus ? chapterStatus.exerciseCount : 0}
       </td>
       <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200">
-        {chapterStatus ? chapterStatus.avgWrongCount : 0}
+        {chapterStatus ? chapterStatus.avgWrongWordCount : 0}
+      </td>
+      <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200">
+        {chapterStatus ? chapterStatus.avgWrongInputCount : 0}
       </td>
     </tr>
   )

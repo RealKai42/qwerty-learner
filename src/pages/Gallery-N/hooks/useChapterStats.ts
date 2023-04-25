@@ -23,15 +23,22 @@ export function useChapterStats(chapter: number, dictID: string, isStartLoad: bo
 
 interface IChapterStats {
   exerciseCount: number
-  avgWrongCount: number
+  avgWrongWordCount: number
+  avgWrongInputCount: number
 }
 
 async function getChapterStats(dict: string, chapter: number | null): Promise<IChapterStats> {
   const records: IChapterRecord[] = await db.chapterRecords.where({ dict, chapter }).toArray()
 
   const exerciseCount = records.length
-  const totalWrongCount = records.reduce((total, { wrongCount }) => total + (wrongCount ?? 0), 0)
-  const avgWrongCount = exerciseCount > 0 ? toFixedNumber(totalWrongCount / exerciseCount, 2) : 0
+  const totalWrongWordCount = records.reduce(
+    (total, { wordNumber, correctWordIndexes }) => total + (wordNumber - correctWordIndexes.length),
+    0,
+  )
+  const avgWrongWordCount = exerciseCount > 0 ? toFixedNumber(totalWrongWordCount / exerciseCount, 2) : 0
 
-  return { exerciseCount, avgWrongCount }
+  const totalWrongInputCount = records.reduce((total, { wrongCount }) => total + (wrongCount ?? 0), 0)
+  const avgWrongInputCount = exerciseCount > 0 ? toFixedNumber(totalWrongInputCount / exerciseCount, 2) : 0
+
+  return { exerciseCount, avgWrongWordCount, avgWrongInputCount }
 }
