@@ -3,6 +3,7 @@ import ShareButton from '../ShareButton'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
+import styles from './index.module.css'
 import redBookLogo from '@/assets/redBook-color-logo.svg'
 import Tooltip from '@/components/Tooltip'
 import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom } from '@/store'
@@ -176,7 +177,7 @@ const ResultScreen = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 640 512"
-                    className="h-5.5 w-5.5 fill-current text-gray-500 focus:outline-none dark:text-gray-400"
+                    className={`h-5.5 w-5.5 fill-current text-gray-500 focus:outline-none dark:text-gray-400  ${styles.imgShake}`}
                   >
                     <path d="M96 64c0-17.7 14.3-32 32-32H448h64c70.7 0 128 57.3 128 128s-57.3 128-128 128H480c0 53-43 96-96 96H192c-53 0-96-43-96-96V64zM480 224h32c35.3 0 64-28.7 64-64s-28.7-64-64-64H480V224zM32 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
                   </svg>
