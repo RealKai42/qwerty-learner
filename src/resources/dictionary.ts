@@ -113,6 +113,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'top_2000_English_Words',
+    name: 'Top 2k words',
+    description: 'The top 2000 words with the highest frequency',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/top2000words.json',
+    length: 1867,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'suffix word',
     name: 'suffix word',
     description: 'common suffix',
