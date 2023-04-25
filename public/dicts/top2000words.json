@@ -1,0 +1,11204 @@
+[
+  {
+    "name": "the",
+    "trans": [
+      "definite article, adverb"
+    ]
+  },
+  {
+    "name": "of",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "and",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "to",
+    "trans": [
+      "preposition, adverb"
+    ]
+  },
+  {
+    "name": "a",
+    "trans": [
+      "indefinite article, noun, preposition"
+    ]
+  },
+  {
+    "name": "in",
+    "trans": [
+      "preposition, adverb"
+    ]
+  },
+  {
+    "name": "you",
+    "trans": [
+      "pronoun, noun"
+    ]
+  },
+  {
+    "name": "for",
+    "trans": [
+      "preposition, conjunction"
+    ]
+  },
+  {
+    "name": "or",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "it",
+    "trans": [
+      "pronoun, noun"
+    ]
+  },
+  {
+    "name": "as",
+    "trans": [
+      "adverb, conjunction, pronoun, preposition"
+    ]
+  },
+  {
+    "name": "be",
+    "trans": [
+      "verb, auxiliary verb"
+    ]
+  },
+  {
+    "name": "on",
+    "trans": [
+      "preposition, adverb, adjective"
+    ]
+  },
+  {
+    "name": "with",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "can",
+    "trans": [
+      "auxiliary verb, noun"
+    ]
+  },
+  {
+    "name": "have",
+    "trans": [
+      "verb, auxiliary verb"
+    ]
+  },
+  {
+    "name": "this",
+    "trans": [
+      "pronoun, adjective, adverb"
+    ]
+  },
+  {
+    "name": "by",
+    "trans": [
+      "preposition, adverb"
+    ]
+  },
+  {
+    "name": "not",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "but",
+    "trans": [
+      "conjunction, preposition, adverb, noun"
+    ]
+  },
+  {
+    "name": "at",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "from",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "I",
+    "trans": [
+      "pronoun"
+    ]
+  },
+  {
+    "name": "they",
+    "trans": [
+      "pronoun"
+    ]
+  },
+  {
+    "name": "more",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "will",
+    "trans": [
+      "auxiliary verb, noun"
+    ]
+  },
+  {
+    "name": "if",
+    "trans": [
+      "conjunction, noun"
+    ]
+  },
+  {
+    "name": "some",
+    "trans": [
+      "adjective, pronoun, adverb"
+    ]
+  },
+  {
+    "name": "there",
+    "trans": [
+      "adverb, pronoun, noun, adjective"
+    ]
+  },
+  {
+    "name": "what",
+    "trans": [
+      "pronoun, adjective, adverb, interjection"
+    ]
+  },
+  {
+    "name": "about",
+    "trans": [
+      "preposition, adverb, adjective"
+    ]
+  },
+  {
+    "name": "which",
+    "trans": [
+      "pronoun, adjective"
+    ]
+  },
+  {
+    "name": "when",
+    "trans": [
+      "adverb, conjunction"
+    ]
+  },
+  {
+    "name": "one",
+    "trans": [
+      "adjective, noun, pronoun"
+    ]
+  },
+  {
+    "name": "all",
+    "trans": [
+      "adjective, pronoun, noun, adverb"
+    ]
+  },
+  {
+    "name": "also",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "how",
+    "trans": [
+      "adverb, conjunction"
+    ]
+  },
+  {
+    "name": "many",
+    "trans": [
+      "adjective, noun, pronoun"
+    ]
+  },
+  {
+    "name": "do",
+    "trans": [
+      "auxiliary verb"
+    ]
+  },
+  {
+    "name": "most",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "people",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "other",
+    "trans": [
+      "adjective, noun, pronoun, adverb"
+    ]
+  },
+  {
+    "name": "time",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "so",
+    "trans": [
+      "adverb, conjunction, pronoun, adjective"
+    ]
+  },
+  {
+    "name": "we",
+    "trans": [
+      "pronoun"
+    ]
+  },
+  {
+    "name": "may",
+    "trans": [
+      "auxiliary verb"
+    ]
+  },
+  {
+    "name": "like",
+    "trans": [
+      "preposition, verb, conjunction, adverb"
+    ]
+  },
+  {
+    "name": "use",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "into",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "than",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "up",
+    "trans": [
+      "adverb, preposition, adjective, noun"
+    ]
+  },
+  {
+    "name": "out",
+    "trans": [
+      "adverb, preposition, adjective, interjection"
+    ]
+  },
+  {
+    "name": "who",
+    "trans": [
+      "pronoun"
+    ]
+  },
+  {
+    "name": "make",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "because",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "such",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "through",
+    "trans": [
+      "preposition, adverb, adjective"
+    ]
+  },
+  {
+    "name": "get",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "work",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "even",
+    "trans": [
+      "adjective, verb, adverb"
+    ]
+  },
+  {
+    "name": "no",
+    "trans": [
+      "adverb, adjective, noun"
+    ]
+  },
+  {
+    "name": "new",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "film",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "just",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "only",
+    "trans": [
+      "adverb, adjective, conjunction"
+    ]
+  },
+  {
+    "name": "see",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "good",
+    "trans": [
+      "adjective, noun, adverb, interjection"
+    ]
+  },
+  {
+    "name": "water",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "need",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "should",
+    "trans": [
+      "auxiliary verb"
+    ]
+  },
+  {
+    "name": "very",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "any",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "history",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "often",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "way",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "well",
+    "trans": [
+      "adverb, verb, noun, interjection"
+    ]
+  },
+  {
+    "name": "art",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "know",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "then",
+    "trans": [
+      "adverb, adjective"
+    ]
+  },
+  {
+    "name": "first",
+    "trans": [
+      "adverb, adjective"
+    ]
+  },
+  {
+    "name": "would",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "money",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "each",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "over",
+    "trans": [
+      "preposition, adjective, noun"
+    ]
+  },
+  {
+    "name": "world",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "map",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "find",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "where",
+    "trans": [
+      "adverb, pronoun, noun"
+    ]
+  },
+  {
+    "name": "much",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "take",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "two",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "want",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "important",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "family",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "example",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "while",
+    "trans": [
+      "noun, conjunction, preposition, verb"
+    ]
+  },
+  {
+    "name": "he",
+    "trans": [
+      "pronoun"
+    ]
+  },
+  {
+    "name": "look",
+    "trans": [
+      "verb, noun, interjection"
+    ]
+  },
+  {
+    "name": "before",
+    "trans": [
+      "preposition, adverb, conjunction"
+    ]
+  },
+  {
+    "name": "help",
+    "trans": [
+      "verb, noun, interjection"
+    ]
+  },
+  {
+    "name": "between",
+    "trans": [
+      "preposition, adverb"
+    ]
+  },
+  {
+    "name": "go",
+    "trans": [
+      "verb, noun, adjective, interjection"
+    ]
+  },
+  {
+    "name": "own",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "however",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "business",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "great",
+    "trans": [
+      "adjective, noun, adverb, interjection"
+    ]
+  },
+  {
+    "name": "another",
+    "trans": [
+      "adjective, pronoun"
+    ]
+  },
+  {
+    "name": "health",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "same",
+    "trans": [
+      "adjective, pronoun, adverb"
+    ]
+  },
+  {
+    "name": "study",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "why",
+    "trans": [
+      "adverb, conjunction, noun, interjection"
+    ]
+  },
+  {
+    "name": "few",
+    "trans": [
+      "adjective, noun, pronoun"
+    ]
+  },
+  {
+    "name": "game",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "might",
+    "trans": [
+      "auxiliary verb, noun"
+    ]
+  },
+  {
+    "name": "think",
+    "trans": [
+      "verb, adjective, noun"
+    ]
+  },
+  {
+    "name": "free",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "too",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "right",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "still",
+    "trans": [
+      "adjective, noun, adverb, verb"
+    ]
+  },
+  {
+    "name": "system",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "after",
+    "trans": [
+      "preposition, adjective, adverb"
+    ]
+  },
+  {
+    "name": "best",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "must",
+    "trans": [
+      "auxiliary verb, verb, adjective, noun"
+    ]
+  },
+  {
+    "name": "life",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "since",
+    "trans": [
+      "preposition, adverb, conjunction"
+    ]
+  },
+  {
+    "name": "could",
+    "trans": [
+      "auxiliary verb"
+    ]
+  },
+  {
+    "name": "now",
+    "trans": [
+      "adverb, conjunction, adjective"
+    ]
+  },
+  {
+    "name": "during",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "learn",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "around",
+    "trans": [
+      "adverb, preposition"
+    ]
+  },
+  {
+    "name": "form",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "meat",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "air",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "day",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "place",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "become",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "number",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "public",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "read",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "keep",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "part",
+    "trans": [
+      "noun, verb, adverb"
+    ]
+  },
+  {
+    "name": "start",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "year",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "every",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "field",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "large",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "once",
+    "trans": [
+      "adverb, conjunction"
+    ]
+  },
+  {
+    "name": "available",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "down",
+    "trans": [
+      "adverb, preposition, adjective, verb"
+    ]
+  },
+  {
+    "name": "give",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "fish",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "human",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "both",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "local",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "sure",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "without",
+    "trans": [
+      "preposition, adverb, conjunction"
+    ]
+  },
+  {
+    "name": "come",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "back",
+    "trans": [
+      "noun, adverb, verb, adjective"
+    ]
+  },
+  {
+    "name": "general",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "process",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "she",
+    "trans": [
+      "pronoun, noun"
+    ]
+  },
+  {
+    "name": "heat",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "specific",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "enough",
+    "trans": [
+      "adjective, adverb, interjection"
+    ]
+  },
+  {
+    "name": "long",
+    "trans": [
+      "adjective, noun, adverb, verb"
+    ]
+  },
+  {
+    "name": "lot",
+    "trans": [
+      "pronoun, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "hand",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "popular",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "small",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "though",
+    "trans": [
+      "conjunction, adverb"
+    ]
+  },
+  {
+    "name": "experience",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "include",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "job",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "music",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "person",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "really",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "although",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "thank",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "book",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "early",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "end",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "method",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "never",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "less",
+    "trans": [
+      "adjective, adverb, preposition"
+    ]
+  },
+  {
+    "name": "play",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "able",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "data",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "feel",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "high",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "off",
+    "trans": [
+      "adverb, preposition, adjective, noun"
+    ]
+  },
+  {
+    "name": "point",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "type",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "whether",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "food",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "here",
+    "trans": [
+      "adverb, interjection"
+    ]
+  },
+  {
+    "name": "home",
+    "trans": [
+      "noun, adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "certain",
+    "trans": [
+      "adjective, pronoun"
+    ]
+  },
+  {
+    "name": "economy",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "little",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "theory",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "tonight",
+    "trans": [
+      "adverb, noun"
+    ]
+  },
+  {
+    "name": "law",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "put",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "under",
+    "trans": [
+      "preposition, adverb, adjective"
+    ]
+  },
+  {
+    "name": "value",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "always",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "body",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "common",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "market",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "set",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "bird",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "guide",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "provide",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "change",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "interest",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "literature",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "problem",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "say",
+    "trans": [
+      "verb, interjection, noun"
+    ]
+  },
+  {
+    "name": "next",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "create",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "simple",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "software",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "state",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "together",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "control",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "knowledge",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "power",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "radio",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "course",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "hard",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "add",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "company",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "love",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "past",
+    "trans": [
+      "adjective, noun, preposition, adverb"
+    ]
+  },
+  {
+    "name": "price",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "size",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "away",
+    "trans": [
+      "adverb, adjective"
+    ]
+  },
+  {
+    "name": "big",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "internet",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "possible",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "television",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "three",
+    "trans": [
+      "number"
+    ]
+  },
+  {
+    "name": "understand",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "various",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "card",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "difficult",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "list",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "mind",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "particular",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "real",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "science",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "trade",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "consider",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "either",
+    "trans": [
+      "conjunction, adjective"
+    ]
+  },
+  {
+    "name": "library",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "likely",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "nature",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "fact",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "line",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "product",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "care",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "group",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "idea",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "risk",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "several",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "temperature",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "word",
+    "trans": [
+      "noun, verb, interjection"
+    ]
+  },
+  {
+    "name": "fat",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "force",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "key",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "light",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "today",
+    "trans": [
+      "adverb, noun"
+    ]
+  },
+  {
+    "name": "until",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "major",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "name",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "school",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "top",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "current",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "left",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "amount",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "level",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "order",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "practice",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "research",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sense",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "service",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "area",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cut",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "hot",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "instead",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "physical",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "piece",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "show",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "society",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "try",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "check",
+    "trans": [
+      "verb, noun, interjection"
+    ]
+  },
+  {
+    "name": "choose",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "develop",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "second",
+    "trans": [
+      "number, noun"
+    ]
+  },
+  {
+    "name": "tense",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "web",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "boss",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "short",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "story",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "call",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "industry",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "last",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "media",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "mental",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "move",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "pay",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "sport",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "thing",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "against",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "far",
+    "trans": [
+      "adverb, adjective"
+    ]
+  },
+  {
+    "name": "fun",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "house",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "let",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "page",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "remember",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "term",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "test",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "within",
+    "trans": [
+      "preposition, adverb"
+    ]
+  },
+  {
+    "name": "along",
+    "trans": [
+      "preposition, adverb"
+    ]
+  },
+  {
+    "name": "answer",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "increase",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "oven",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "quite",
+    "trans": [
+      "adverb, interjection"
+    ]
+  },
+  {
+    "name": "single",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "sound",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "again",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "community",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "focus",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "individual",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "matter",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "percent",
+    "trans": [
+      "adverb, noun"
+    ]
+  },
+  {
+    "name": "turn",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "kind",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "quality",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "soil",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "ask",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "board",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "buy",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "guard",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "hold",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "language",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "main",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "offer",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "oil",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "picture",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "potential",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "professional",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "rather",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "access",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "almost",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "garden",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "international",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "open",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "range",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rate",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "reason",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "travel",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "variety",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "video",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "week",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "above",
+    "trans": [
+      "adverb, preposition, adjective, noun"
+    ]
+  },
+  {
+    "name": "according",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "cook",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "determine",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "future",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "site",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "alternative",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "demand",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "ever",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "exercise",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "image",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "special",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "case",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cause",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "coast",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "TRUE",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "whole",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "age",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "among",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "bad",
+    "trans": [
+      "noun, adverb, adjective"
+    ]
+  },
+  {
+    "name": "boat",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "country",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "dance",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "exam",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "excuse",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "grow",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "movie",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "record",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "result",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "section",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "across",
+    "trans": [
+      "preposition, adverb, adjective"
+    ]
+  },
+  {
+    "name": "already",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "below",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "mouse",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "allow",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "cash",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "class",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "clear",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "dry",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "easy",
+    "trans": [
+      "adjective, adverb, interjection"
+    ]
+  },
+  {
+    "name": "live",
+    "trans": [
+      "verb, adjective, adverb"
+    ]
+  },
+  {
+    "name": "period",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "physics",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "plan",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "store",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "tax",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cold",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "full",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "low",
+    "trans": [
+      "adjective, noun, adverb, verb"
+    ]
+  },
+  {
+    "name": "old",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "policy",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "purchase",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "series",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "side",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "subject",
+    "trans": [
+      "noun, adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "supply",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "therefore",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "basis",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "boyfriend",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "deal",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "direction",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "mean",
+    "trans": [
+      "verb, adjective, noun"
+    ]
+  },
+  {
+    "name": "primary",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "space",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "strategy",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "technology",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "worth",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "army",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "camera",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "fall",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "paper",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "rule",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "similar",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "stock",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "weather",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "yet",
+    "trans": [
+      "adverb, conjunction"
+    ]
+  },
+  {
+    "name": "bring",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "chance",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "environment",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "figure",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "improve",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "man",
+    "trans": [
+      "noun, verb, interjection"
+    ]
+  },
+  {
+    "name": "mathematics",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "model",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "necessary",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "positive",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "produce",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "search",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "source",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "child",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "earth",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "else",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "instance",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "maintain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "month",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "present",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "program",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "spend",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "talk",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "upset",
+    "trans": [
+      "verb, adjective"
+    ]
+  },
+  {
+    "name": "begin",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "chicken",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "close",
+    "trans": [
+      "adjective, adverb, verb, noun"
+    ]
+  },
+  {
+    "name": "design",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "feature",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "head",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "material",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "medical",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "purpose",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "question",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rock",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "salt",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "tell",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "university",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "act",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "article",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "birth",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "car",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "cost",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "department",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "difference",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "dog",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "drive",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "essential",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "exist",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "federal",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "goal",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "green",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "intelligence",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "late",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "news",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "object",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "scale",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sun",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "support",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "tend",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "thus",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "audience",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "enjoy",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "entire",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "fit",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "glad",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "income",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "note",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "perform",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "profit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "proper",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "remove",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "rent",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "return",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "run",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "speed",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "strong",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "style",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "war",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "actual",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "appropriate",
+    "trans": [
+      "verb, adjective"
+    ]
+  },
+  {
+    "name": "bank",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "complex",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "content",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "craft",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "due",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "failure",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "half",
+    "trans": [
+      "noun, predeterminer, adverb"
+    ]
+  },
+  {
+    "name": "inside",
+    "trans": [
+      "noun, adjective, preposition"
+    ]
+  },
+  {
+    "name": "meaning",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "medicine",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "middle",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "philosophy",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "regular",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "reserve",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "standard",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "bus",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "decide",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "exchange",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "eye",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "fast",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "fire",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "identify",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "independent",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "leave",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "original",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "position",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "pressure",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "reach",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "rest",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "serve",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "stress",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "watch",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "wide",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "advantage",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "benefit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "box",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "charge",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "complete",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "continue",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "frame",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "issue",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "night",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "protect",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "require",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "significant",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "step",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "unless",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "active",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "break",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "chemistry",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cycle",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "disease",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "energy",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "face",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "item",
+    "trans": [
+      "noun, adverb"
+    ]
+  },
+  {
+    "name": "metal",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "nation",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "negative",
+    "trans": [
+      "adjective, noun, interjection, verb"
+    ]
+  },
+  {
+    "name": "occur",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "paint",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "pregnant",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "review",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "road",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "role",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "room",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "safe",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "screen",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "soup",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "stay",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "structure",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "view",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "visit",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "visual",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "write",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "wrong",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "account",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "affect",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "ago",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "approach",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "avoid",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "ball",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "behind",
+    "trans": [
+      "preposition, adverb, adjective, noun"
+    ]
+  },
+  {
+    "name": "cover",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "discipline",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "medium",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "prepare",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "quick",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "ready",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "report",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "rise",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "share",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "apartment",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "balance",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "black",
+    "trans": [
+      "noun, verb, adjective, adverb"
+    ]
+  },
+  {
+    "name": "bottom",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "build",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "choice",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "gift",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "impact",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "machine",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "moment",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "shape",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "straight",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "tool",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "walk",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "white",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "wind",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "achieve",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "address",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "average",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "believe",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "beyond",
+    "trans": [
+      "preposition, noun"
+    ]
+  },
+  {
+    "name": "career",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "culture",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "decision",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "direct",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "event",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "excellent",
+    "trans": [
+      "adjective, interjection"
+    ]
+  },
+  {
+    "name": "extra",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "junior",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "morning",
+    "trans": [
+      "noun, adverb"
+    ]
+  },
+  {
+    "name": "pick",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "poor",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "pot",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "pretty",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "property",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "receive",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "seem",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "sign",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "student",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "table",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "task",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "unique",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "wood",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "classic",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "competition",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "condition",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "contact",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "credit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "discuss",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "egg",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "final",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "happy",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "hope",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "ice",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "lift",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "mix",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "network",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "north",
+    "trans": [
+      "noun, adjective, adverb"
+    ]
+  },
+  {
+    "name": "office",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "overall",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "population",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "president",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "private",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "realize",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "responsible",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "separate",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "square",
+    "trans": [
+      "noun, adjective, adverb"
+    ]
+  },
+  {
+    "name": "stop",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "teach",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "unit",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "western",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "yes",
+    "trans": [
+      "interjection"
+    ]
+  },
+  {
+    "name": "alone",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "attempt",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "category",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cigarette",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "concern",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "contain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "context",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cute",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "date",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "effect",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "familiar",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "fly",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "follow",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "link",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "official",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "opportunity",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "perfect",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "post",
+    "trans": [
+      "noun, verb, adverb"
+    ]
+  },
+  {
+    "name": "recent",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "refer",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "solve",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "star",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "toward",
+    "trans": [
+      "preposition, adjective"
+    ]
+  },
+  {
+    "name": "voice",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bright",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "broad",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "capital",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "challenge",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "describe",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "despite",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "flat",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "flight",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "friend",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "gain",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "length",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "magazine",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "maybe",
+    "trans": [
+      "adverb, noun"
+    ]
+  },
+  {
+    "name": "newspaper",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "nice",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "prefer",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "prevent",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "rich",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "save",
+    "trans": [
+      "verb, noun, preposition"
+    ]
+  },
+  {
+    "name": "self",
+    "trans": [
+      "noun, pronoun, adjective, verb"
+    ]
+  },
+  {
+    "name": "soon",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "stand",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "warm",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "young",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "ahead",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "beauty",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "brush",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cell",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "couple",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "debate",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "discover",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "ensure",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "exit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "expect",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "fail",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "front",
+    "trans": [
+      "noun, adjective, verb, interjection"
+    ]
+  },
+  {
+    "name": "function",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "heavy",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "invest",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "lack",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "lake",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "lead",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "listen",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "member",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "message",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "plant",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "plastic",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "reduce",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "scene",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "serious",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "speak",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "spot",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "summer",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "taste",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "theme",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "track",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "wing",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "worry",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "appear",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "brain",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "button",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "click",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "concept",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "correct",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "customer",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "death",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "desire",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "explain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "explore",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "express",
+    "trans": [
+      "verb, adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "foot",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "gas",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "handle",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "huge",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "influence",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "involve",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "lose",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "meet",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "mood",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "notice",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rain",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rare",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "release",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "sell",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "slow",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "technical",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "typical",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "upon",
+    "trans": [
+      "preposition"
+    ]
+  },
+  {
+    "name": "wall",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "woman",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "advice",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "afford",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "agree",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "base",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "blood",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "clean",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "damage",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "distance",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "effort",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "electronic",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "finish",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "fresh",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "hear",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "immediate",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "importance",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "normal",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "opinion",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "otherwise",
+    "trans": [
+      "adverb, adjective"
+    ]
+  },
+  {
+    "name": "pair",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "plus",
+    "trans": [
+      "preposition, adjective, noun, conjunction"
+    ]
+  },
+  {
+    "name": "press",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "remain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "represent",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "ride",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "secret",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "skill",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "spread",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "spring",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "staff",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sugar",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "target",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "text",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "tough",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "wait",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "wealth",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "animal",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "apply",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "author",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "aware",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "brown",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "budget",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "cheap",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "city",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "county",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "deep",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "discount",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "display",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "estate",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "file",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "flow",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "forget",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "foundation",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "global",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "ground",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "heart",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "hit",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "legal",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "lesson",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "measure",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "minute",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "near",
+    "trans": [
+      "adverb, preposition, adjective, verb"
+    ]
+  },
+  {
+    "name": "objective",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "perspective",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "phase",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "promote",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "recipe",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "recommend",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "register",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "relevant",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "rely",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "secure",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "shoot",
+    "trans": [
+      "verb, noun, interjection"
+    ]
+  },
+  {
+    "name": "sky",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "stage",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "stick",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "studio",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "thin",
+    "trans": [
+      "adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "title",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "topic",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "touch",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "trouble",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "vary",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "absolute",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "accurate",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "bowl",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bridge",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "campaign",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cancel",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "capable",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "character",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "chemical",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "club",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cool",
+    "trans": [
+      "adjective, adverb, noun, verb"
+    ]
+  },
+  {
+    "name": "cry",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "dump",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "edge",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "evidence",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "extreme",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "fan",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "generate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "letter",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "lock",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "maximum",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "novel",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "obtain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "option",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "pack",
+    "trans": [
+      "noun, verb, adjective, idiom"
+    ]
+  },
+  {
+    "name": "park",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "passion",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "plenty",
+    "trans": [
+      "noun, adjective, adverb"
+    ]
+  },
+  {
+    "name": "push",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "quarter",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "resource",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "select",
+    "trans": [
+      "verb, adjective"
+    ]
+  },
+  {
+    "name": "skin",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sort",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "accept",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "baby",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "background",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "carry",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "college",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "communicate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "complain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "conflict",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "criticism",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "debt",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "define",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "depend",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "die",
+    "trans": [
+      "verb, idiom"
+    ]
+  },
+  {
+    "name": "dish",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "eat",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "efficient",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "enter",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "exact",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "factor",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "fair",
+    "trans": [
+      "adjective, adverb, noun, idiom"
+    ]
+  },
+  {
+    "name": "fill",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "fine",
+    "trans": [
+      "adjective, adverb, verb, noun"
+    ]
+  },
+  {
+    "name": "formal",
+    "trans": [
+      "adjective, noun, adverb"
+    ]
+  },
+  {
+    "name": "forward",
+    "trans": [
+      "adverb, adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "fruit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "glass",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "happen",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "indicate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "joint",
+    "trans": [
+      "noun, adjective, verb, idiom"
+    ]
+  },
+  {
+    "name": "jump",
+    "trans": [
+      "verb, noun, adjective, adverb"
+    ]
+  },
+  {
+    "name": "kick",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "master",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "memory",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "muscle",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "opposite",
+    "trans": [
+      "adjective, noun, preposition, adverb"
+    ]
+  },
+  {
+    "name": "pass",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "pitch",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "red",
+    "trans": [
+      "noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "remote",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "secretary",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "solution",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "somewhat",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "strength",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "suggest",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "survive",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "total",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "traffic",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "treat",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "trip",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "vast",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "vegetable",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "abuse",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "administration",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "appeal",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "appreciate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "aspect",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "attitude",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "beat",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "burn",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "chart",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "compare",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "deposit",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "foreign",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "gear",
+    "trans": [
+      "noun, verb, adjective, idiom"
+    ]
+  },
+  {
+    "name": "ideal",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "imagine",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "kitchen",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "land",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "log",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "manage",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "mother",
+    "trans": [
+      "noun, adjective, verb, idiom"
+    ]
+  },
+  {
+    "name": "net",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "party",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "personality",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "photograph",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "practical",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "principle",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "print",
+    "trans": [
+      "verb, noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "psychology",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "raise",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "relative",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "response",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "sale",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "season",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "severe",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "signal",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "sleep",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "smooth",
+    "trans": [
+      "adjective, adverb, verb, noun"
+    ]
+  },
+  {
+    "name": "spirit",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "street",
+    "trans": [
+      "noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "tree",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "version",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "wave",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "advance",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "alcohol",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "belt",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bench",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "commission",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "connect",
+    "trans": [
+      "verb, adjective"
+    ]
+  },
+  {
+    "name": "consist",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "contract",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "contribute",
+    "trans": [
+      "verb, idiom"
+    ]
+  },
+  {
+    "name": "copy",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "dark",
+    "trans": [
+      "adjective, noun, idiom"
+    ]
+  },
+  {
+    "name": "differ",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "double",
+    "trans": [
+      "adjective, noun, verb, adverb"
+    ]
+  },
+  {
+    "name": "draw",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "drop",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "emphasis",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "encourage",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "equal",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "expand",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "firm",
+    "trans": [
+      "adjective, verb, adverb, noun"
+    ]
+  },
+  {
+    "name": "fix",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "frequent",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "hire",
+    "trans": [
+      "verb, noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "internal",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "join",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "kill",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "loss",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "mere",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "minimum",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "numerous",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "path",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "progress",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "project",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "prove",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "react",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "recognize",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "relax",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "replace",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "sea",
+    "trans": [
+      "noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "sensitive",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "sit",
+    "trans": [
+      "verb, idiom"
+    ]
+  },
+  {
+    "name": "south",
+    "trans": [
+      "noun, adjective, adverb, verb"
+    ]
+  },
+  {
+    "name": "status",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "steak",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "stuff",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sufficient",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "tap",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "ticket",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "tour",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "union",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "win",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "angle",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "attack",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "blue",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "borrow",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "breakfast",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cancer",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "claim",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "confidence",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "consistent",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "constant",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "currency",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "daughter",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "degree",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "doctor",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "dot",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "drag",
+    "trans": [
+      "verb, noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "dream",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "drink",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "duty",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "earn",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "enable",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "essay",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "famous",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "father",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "fee",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "finance",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "guess",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "hour",
+    "trans": [
+      "noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "juice",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "limit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "luck",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "milk",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "minor",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "mixture",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "mouth",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "nor",
+    "trans": [
+      "conjunction"
+    ]
+  },
+  {
+    "name": "operate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "peace",
+    "trans": [
+      "noun, interjection, verb, idiom"
+    ]
+  },
+  {
+    "name": "pipe",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "please",
+    "trans": [
+      "adverb, verb, idiom"
+    ]
+  },
+  {
+    "name": "previous",
+    "trans": [
+      "adjective, idiom"
+    ]
+  },
+  {
+    "name": "pull",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "pure",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "raw",
+    "trans": [
+      "adjective, noun, idiom"
+    ]
+  },
+  {
+    "name": "reflect",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "region",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "republic",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "seat",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "send",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "soft",
+    "trans": [
+      "adjective, noun, adverb, interjection"
+    ]
+  },
+  {
+    "name": "solid",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "stable",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "storm",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "substance",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "team",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "tradition",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "trick",
+    "trans": [
+      "noun, adjective, verb, idiom"
+    ]
+  },
+  {
+    "name": "virus",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "wear",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "weird",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "wonder",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "afraid",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "afternoon",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "analyze",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "annual",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "anticipate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "assume",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "bat",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "beach",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "blank",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "busy",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "catch",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "chain",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "count",
+    "trans": [
+      "verb, noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "cream",
+    "trans": [
+      "noun, verb, adjective, idiom"
+    ]
+  },
+  {
+    "name": "crew",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "dead",
+    "trans": [
+      "adjective, noun, adverb, idiom"
+    ]
+  },
+  {
+    "name": "detail",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "device",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "doubt",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "drama",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "engage",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "engine",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "enhance",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "examine",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "expense",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "FALSE",
+    "trans": [
+      "adjective, adverb, idiom"
+    ]
+  },
+  {
+    "name": "feed",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "forever",
+    "trans": [
+      "adverb, noun, idiom"
+    ]
+  },
+  {
+    "name": "gold",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "hotel",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "impress",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "install",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "interact",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "interview",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "kid",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "logic",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "mark",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "match",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "mission",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "obvious",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "pain",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "participate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "pleasure",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "priority",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "repeat",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "round",
+    "trans": [
+      "adjective, noun, adverb, verb"
+    ]
+  },
+  {
+    "name": "score",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "screw",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "seek",
+    "trans": [
+      "verb, idiom"
+    ]
+  },
+  {
+    "name": "sex",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "sharp",
+    "trans": [
+      "adjective, verb, adverb, noun"
+    ]
+  },
+  {
+    "name": "shop",
+    "trans": [
+      "noun, verb, interjection, idiom"
+    ]
+  },
+  {
+    "name": "shower",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "sing",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "slide",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "strip",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "suit",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "thick",
+    "trans": [
+      "adjective, adverb, noun, idiom"
+    ]
+  },
+  {
+    "name": "tone",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "whereas",
+    "trans": [
+      "conjunction, noun"
+    ]
+  },
+  {
+    "name": "window",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "wise",
+    "trans": [
+      "adjective, verb, idiom"
+    ]
+  },
+  {
+    "name": "wish",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "agent",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "anxiety",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "atmosphere",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "band",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bath",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "block",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bone",
+    "trans": [
+      "noun, verb, adverb"
+    ]
+  },
+  {
+    "name": "bread",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "calendar",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "candidate",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cap",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "climate",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "coat",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "collect",
+    "trans": [
+      "verb, adverb, noun"
+    ]
+  },
+  {
+    "name": "combine",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "command",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "contest",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "corner",
+    "trans": [
+      "noun, adjective, verb, idiom"
+    ]
+  },
+  {
+    "name": "court",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "cup",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "dig",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "district",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "divide",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "door",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "east",
+    "trans": [
+      "noun, adjective, adverb"
+    ]
+  },
+  {
+    "name": "electric",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "emotion",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "equivalent",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "except",
+    "trans": [
+      "preposition, conjunction, idiom"
+    ]
+  },
+  {
+    "name": "finger",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "garage",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "guarantee",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "guest",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "hang",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "height",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "hole",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "hook",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "hunt",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "implement",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "initial",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "intend",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "introduce",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "latter",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "layer",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "lecture",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "lie",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "mall",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "manner",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "march",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "mention",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "narrow",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "neither",
+    "trans": [
+      "conjunction, adjective, pronoun"
+    ]
+  },
+  {
+    "name": "nose",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "partner",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "profile",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "proud",
+    "trans": [
+      "adjective, idiom"
+    ]
+  },
+  {
+    "name": "respect",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rice",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "routine",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "sample",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "schedule",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "settle",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "smell",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "survey",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "telephone",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "tie",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "tip",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "wild",
+    "trans": [
+      "adjective, adverb, noun, idiom"
+    ]
+  },
+  {
+    "name": "winter",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "adult",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "aggressive",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "airline",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "apart",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "assure",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "attract",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "bag",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "battle",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bed",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bill",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "boring",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "bother",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "brief",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "cake",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "charity",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "code",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "commerce",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cousin",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "crazy",
+    "trans": [
+      "adjective, noun, idiom"
+    ]
+  },
+  {
+    "name": "curve",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "dimension",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "disaster",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "distinct",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "distribute",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "dress",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "ease",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "eastern",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "emergency",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "escape",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "evening",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "expose",
+    "trans": [
+      "verb, idiom"
+    ]
+  },
+  {
+    "name": "extension",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "extent",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "farm",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "feedback",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "fight",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "gap",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "gather",
+    "trans": [
+      "verb, noun, idiom"
+    ]
+  },
+  {
+    "name": "gentle",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "govern",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "grade",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "guitar",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "hate",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "holiday",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "homework",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "horror",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "horse",
+    "trans": [
+      "noun, verb, adjective, idiom"
+    ]
+  },
+  {
+    "name": "host",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "husband",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "loan",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "mistake",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "mountain",
+    "trans": [
+      "noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "nail",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "noise",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "none",
+    "trans": [
+      "pronoun, adverb, adjective"
+    ]
+  },
+  {
+    "name": "occasion",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "outcome",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "overcome",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "owe",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "patient",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "pause",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "phrase",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "prior",
+    "trans": [
+      "adjective, noun, idiom"
+    ]
+  },
+  {
+    "name": "proof",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "race",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "relief",
+    "trans": [
+      "noun, idiom"
+    ]
+  },
+  {
+    "name": "repair",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "resolution",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "revenue",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "rough",
+    "trans": [
+      "adjective, noun, adverb, verb"
+    ]
+  },
+  {
+    "name": "sad",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "sand",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "scratch",
+    "trans": [
+      "verb, noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "sentence",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "session",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "shoulder",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "sick",
+    "trans": [
+      "adjective, noun, idiom"
+    ]
+  },
+  {
+    "name": "smoke",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "stomach",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "strange",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "strict",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "strike",
+    "trans": [
+      "verb, noun, adjective, idiom"
+    ]
+  },
+  {
+    "name": "string",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "succeed",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "suffer",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "tennis",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "throw",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "towel",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "vacation",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "virtual",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "west",
+    "trans": [
+      "noun, adjective, adverb, idiom"
+    ]
+  },
+  {
+    "name": "wheel",
+    "trans": [
+      "noun, verb, idiom"
+    ]
+  },
+  {
+    "name": "wine",
+    "trans": [
+      "noun, adjective, verb, idiom"
+    ]
+  },
+  {
+    "name": "acquire",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "adapt",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "adjust",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "administrative",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "altogether",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "argue",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "arise",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "arm",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "aside",
+    "trans": [
+      "noun, adverb"
+    ]
+  },
+  {
+    "name": "assign",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "associate",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "automatic",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "basket",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "bet",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "blow",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bonus",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "border",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "branch",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "breast",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "brother",
+    "trans": [
+      "noun, interjection"
+    ]
+  },
+  {
+    "name": "buddy",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bunch",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cabinet",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "chip",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "church",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "civil",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "coach",
+    "trans": [
+      "noun, verb, adverb"
+    ]
+  },
+  {
+    "name": "coffee",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "confirm",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "construct",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "cross",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "danger",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "definite",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "dinner",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "document",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "draft",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "dust",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "edit",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "employ",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "expert",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "external",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "floor",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "former",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "god",
+    "trans": [
+      "noun, interjection"
+    ]
+  },
+  {
+    "name": "golf",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "habit",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "hair",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "hardly",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "hurt",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "incorporate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "iron",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "judge",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "justify",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "knife",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "laboratory",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "landscape",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "laugh",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "lay",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "league",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "loud",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "mail",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "massive",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "mess",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "mobile",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "mode",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "mud",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "nasty",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "native",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "ordinary",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "organize",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "ought",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "parent",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "pattern",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "pin",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "police",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "pool",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "possess",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "pound",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "queen",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "ratio",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "relation",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "relieve",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "request",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "respond",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "restaurant",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "retain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "royal",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "salary",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sector",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "senior",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "shame",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "shelter",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "shoe",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "shut",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "signature",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "silver",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "song",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "southern",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "split",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "strain",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "struggle",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "super",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "swim",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "tackle",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "tank",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "tight",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "tooth",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "town",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "train",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "trust",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "upper",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "vehicle",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "visible",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "volume",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "wash",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "waste",
+    "trans": [
+      "verb, adjective, noun"
+    ]
+  },
+  {
+    "name": "wife",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "yellow",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "accident",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "advertise",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "airport",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "alive",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "angry",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "assist",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bake",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bar",
+    "trans": [
+      "noun, verb, preposition"
+    ]
+  },
+  {
+    "name": "baseball",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "bell",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bike",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "blame",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "boy",
+    "trans": [
+      "noun, interjection"
+    ]
+  },
+  {
+    "name": "brick",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "calculate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "chair",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "chapter",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "closet",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "clue",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "collar",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "comment",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "committee",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "compete",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "confuse",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "consult",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "convert",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "crash",
+    "trans": [
+      "verb, noun, adjective, adverb"
+    ]
+  },
+  {
+    "name": "database",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "deliver",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "desperate",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "devil",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "diet",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "disc",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "educate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "enthusiasm",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "error",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "extend",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "fear",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "fold",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "forth",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "fuel",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "gate",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "girl",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "glove",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "grab",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "gross",
+    "trans": [
+      "adjective, adverb, verb, noun"
+    ]
+  },
+  {
+    "name": "hall",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "hide",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "hospital",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "ill",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "insure",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "investigate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "jacket",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "literal",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "lunch",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "meal",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "miss",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "monitor",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "mortgage",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "negotiate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "nurse",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "pace",
+    "trans": [
+      "noun, verb, preposition"
+    ]
+  },
+  {
+    "name": "panic",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "peak",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "perception",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "permit",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "pie",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "plane",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "poem",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "presence",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "qualify",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "quote",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "reception",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "recover",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "resolve",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "retire",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "revolution",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "reward",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rid",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "river",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "roll",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "row",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sandwich",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "satisfy",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "scare",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "shock",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sink",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "slip",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "son",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "sorry",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "spare",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "speech",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "spite",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "spray",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "surprise",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "suspect",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "sweet",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "swing",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "tea",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "transition",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "transport",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "twist",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "ugly",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "ultimate",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "usual",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "village",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "weigh",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "welcome",
+    "trans": [
+      "noun, interjection, verb, adjective"
+    ]
+  },
+  {
+    "name": "yard",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "abroad",
+    "trans": [
+      "adverb, noun"
+    ]
+  },
+  {
+    "name": "alarm",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "anxious",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "apology",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "arrive",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "attach",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "behave",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "bend",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bicycle",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bite",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "blind",
+    "trans": [
+      "noun, verb, adjective, adverb"
+    ]
+  },
+  {
+    "name": "bottle",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "brave",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "breath",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cable",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "calm",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "candle",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "celebrate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "chest",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "chocolate",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "clerk",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cloud",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "comprehensive",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "concentrate",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "concert",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "conclusion",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "convince",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "cookie",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "counter",
+    "trans": [
+      "noun, verb, adverb, adjective"
+    ]
+  },
+  {
+    "name": "courage",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "critic",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "curious",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "dad",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "desk",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "dirty",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "downtown",
+    "trans": [
+      "adjective, adverb, noun"
+    ]
+  },
+  {
+    "name": "drawer",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "elevate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "entertain",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "establish",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "estimate",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "excite",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "flower",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "garbage",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "grand",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "grocery",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "harm",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "honest",
+    "trans": [
+      "adjective, adverb"
+    ]
+  },
+  {
+    "name": "honey",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "imply",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "informal",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "injure",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "insect",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "insist",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "inspect",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "king",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "knee",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "ladder",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "leather",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "load",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "loose",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "male",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "menu",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "mirror",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "moreover",
+    "trans": [
+      "adverb"
+    ]
+  },
+  {
+    "name": "neck",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "okay",
+    "trans": [
+      "adjective, adverb, interjection"
+    ]
+  },
+  {
+    "name": "penalty",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "pension",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "piano",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "plate",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "potato",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "proceed",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "profession",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "professor",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "prompt",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "purple",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "pursue",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "quantity",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "quiet",
+    "trans": [
+      "adjective, noun, verb"
+    ]
+  },
+  {
+    "name": "refuse",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "regret",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "reveal",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "ruin",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rush",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "salad",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "shake",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "shift",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "shine",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "ship",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "sister",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "skirt",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "slice",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "snow",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "specify",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "stairs",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "steal",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "stroke",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "suck",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "sudden",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "supermarket",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "surround",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "switch",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "terrible",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "tire",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "tongue",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "trash",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "tune",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "warn",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "weak",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "zone",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "accuse",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "admire",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "admit",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "adopt",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "affair",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "amaze",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "ambition",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "anger",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "announce",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "apple",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "approve",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "asleep",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "attend",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "award",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bathroom",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "bear",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "beer",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "belong",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "bid",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "bitter",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "boot",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "brilliant",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "bug",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "camp",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "candy",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "carpet",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cat",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "champion",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "channel",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "cheek",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "client",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "clock",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "closes",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "comfort",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "commit",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "complaints",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "compute",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "conscious",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "consequence",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "cow",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "crack",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "criticize",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "dare",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "dear",
+    "trans": [
+      "adjective, noun, adverb, interjection"
+    ]
+  },
+  {
+    "name": "decent",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "delay",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "deliberate",
+    "trans": [
+      "adjective, verb"
+    ]
+  },
+  {
+    "name": "departure",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "deserve",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "destroy",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "diamond",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "ear",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "embarrass",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "empty",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "eventual",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "fault",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "female",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "fortune",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "funeral",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "gene",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "girlfriend",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "grass",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "guilty",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "guy",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "hat",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "hell",
+    "trans": [
+      "noun, interjection"
+    ]
+  },
+  {
+    "name": "hesitate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "highlight",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "hunger",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "hurry",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "illustrate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "incident",
+    "trans": [
+      "noun, adjective"
+    ]
+  },
+  {
+    "name": "inevitable",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "inform",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "initiate",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "intent",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "invite",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "island",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "joke",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "jury",
+    "trans": [
+      "noun, verb, adjective"
+    ]
+  },
+  {
+    "name": "kiss",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "lady",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "leg",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "lip",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "locate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "lone",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "mad",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "manufacture",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "marry",
+    "trans": [
+      "verb, interjection"
+    ]
+  },
+  {
+    "name": "mate",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "motor",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "neat",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "nerve",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "nervous",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "odd",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "passage",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "passenger",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "pen",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "persuade",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "pizza",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "platform",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "poet",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "pop",
+    "trans": [
+      "verb, noun, adverb, adjective"
+    ]
+  },
+  {
+    "name": "pour",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "pray",
+    "trans": [
+      "verb, adverb"
+    ]
+  },
+  {
+    "name": "pretend",
+    "trans": [
+      "verb, adjective"
+    ]
+  },
+  {
+    "name": "pride",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "priest",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "prize",
+    "trans": [
+      "noun, adjective, verb"
+    ]
+  },
+  {
+    "name": "probable",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "promise",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "propose",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "punch",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "quit",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "remark",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "remind",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "reply",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "reputation",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "resist",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "resort",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "ring",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rip",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "roof",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rope",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "rub",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "sail",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "scheme",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "script",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "shall",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "shirt",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "silly",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "sir",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "slight",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "smart",
+    "trans": [
+      "adjective, verb, noun"
+    ]
+  },
+  {
+    "name": "smile",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "sock",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "spell",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "station",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "stretch",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "stupid",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "submit",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "substantial",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "suppose",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "surgery",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "suspicious",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "sympathy",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "tale",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "tall",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "tear",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "temporary",
+    "trans": [
+      "adjective, noun"
+    ]
+  },
+  {
+    "name": "throat",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "tiny",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "toe",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "tomorrow",
+    "trans": [
+      "adverb, noun"
+    ]
+  },
+  {
+    "name": "tower",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "translate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "truck",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "uncle",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "wake",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "witness",
+    "trans": [
+      "noun, verb"
+    ]
+  },
+  {
+    "name": "wrap",
+    "trans": [
+      "verb, noun"
+    ]
+  },
+  {
+    "name": "yesterday",
+    "trans": [
+      "adverb, noun"
+    ]
+  },
+  {
+    "name": "youth",
+    "trans": [
+      "noun"
+    ]
+  },
+  {
+    "name": "appoint",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "clothe",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "complicate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "confer",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "converse",
+    "trans": [
+      "verb, noun, adjective"
+    ]
+  },
+  {
+    "name": "depress",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "disappoint",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "elect",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "equip",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "ignorant",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "inflate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "instruct",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "oblige",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "politic",
+    "trans": [
+      "adjective"
+    ]
+  },
+  {
+    "name": "pollute",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "refrigerate",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "reside",
+    "trans": [
+      "verb"
+    ]
+  },
+  {
+    "name": "situate",
+    "trans": [
+      "verb, adjective"
+    ]
+  },
+  {
+    "name": "unite",
+    "trans": [
+      "verb"
+    ]
+  }
+]
