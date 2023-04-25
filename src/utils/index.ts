@@ -80,3 +80,7 @@ export function findCommonValues<T>(xs: T[], ys: T[]): T[] {
   const set = new Set(ys)
   return xs.filter((x) => set.has(x))
 }
+
+export function toFixedNumber(number: number, fractionDigits: number) {
+  return Number(number.toFixed(fractionDigits))
+}

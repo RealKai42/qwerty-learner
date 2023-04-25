@@ -35,6 +35,8 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     html5: true,
     format: ['mp3'],
     loop,
+    volume: pronunciationConfig.volume,
+    rate: pronunciationConfig.rate,
   } as HookOptions)
 
   useEffect(() => {

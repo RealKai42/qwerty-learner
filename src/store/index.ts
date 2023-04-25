@@ -43,6 +43,7 @@ export const pronunciationConfigAtom = atomWithStorage('pronunciation', {
   type: 'us' as PronunciationType,
   name: '美音',
   isLoop: false,
+  rate: 1,
 })
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)
 

@@ -1,5 +1,6 @@
 import styles from './index.module.css'
 import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
+import { toFixedNumber } from '@/utils'
 import { Switch } from '@headlessui/react'
 import * as Slider from '@radix-ui/react-slider'
 import { useAtom } from 'jotai'
@@ -24,6 +25,16 @@ export default function SoundSetting() {
       setPronunciationConfig((prev) => ({
         ...prev,
         volume: value[0] / 100,
+      }))
+    },
+    [setPronunciationConfig],
+  )
+
+  const onChangePronunciationSpeed = useCallback(
+    (value: [number]) => {
+      setPronunciationConfig((prev) => ({
+        ...prev,
+        rate: value[0],
       }))
     },
     [setPronunciationConfig],
@@ -98,6 +109,27 @@ export default function SoundSetting() {
             <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(pronunciationConfig.volume * 100)}%`}</span>
           </div>
         </div>
+
+        <div className={styles.block}>
+          <span className={styles.blockLabel}>倍速</span>
+          <div className="flex h-5 w-full items-center justify-between">
+            <Slider.Root
+              defaultValue={[pronunciationConfig.rate ?? 1]}
+              max={4}
+              min={0.5}
+              step={0.1}
+              className="slider"
+              onValueChange={onChangePronunciationSpeed}
+              disabled={!pronunciationConfig.isOpen}
+            >
+              <Slider.Track>
+                <Slider.Range />
+              </Slider.Track>
+              <Slider.Thumb />
+            </Slider.Root>
+            <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${toFixedNumber(pronunciationConfig.rate, 2)}`}</span>
+          </div>
+        </div>
       </div>
 
       <div className={styles.section}>
@@ -116,6 +148,7 @@ export default function SoundSetting() {
             <Slider.Root
               defaultValue={[keySoundsConfig.volume * 100]}
               max={100}
+              min={1}
               step={10}
               className="slider"
               onValueChange={onChangeKeySoundsVolume}
@@ -147,6 +180,7 @@ export default function SoundSetting() {
             <Slider.Root
               defaultValue={[hintSoundsConfig.volume * 100]}
               max={100}
+              min={1}
               step={10}
               className="slider"
               onValueChange={onChangeHintSoundsVolume}

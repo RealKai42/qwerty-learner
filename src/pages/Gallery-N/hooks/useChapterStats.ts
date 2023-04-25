@@ -1,3 +1,4 @@
+import { toFixedNumber } from '@/utils'
 import { db } from '@/utils/db'
 import { IChapterRecord } from '@/utils/db/record'
 import { useEffect, useState } from 'react'
@@ -30,7 +31,7 @@ async function getChapterStats(dict: string, chapter: number | null): Promise<IC
 
   const exerciseCount = records.length
   const totalWrongCount = records.reduce((total, { wrongCount }) => total + (wrongCount ?? 0), 0)
-  const avgWrongCount = exerciseCount > 0 ? Number((totalWrongCount / exerciseCount).toFixed(2)) : 0
+  const avgWrongCount = exerciseCount > 0 ? toFixedNumber(totalWrongCount / exerciseCount, 2) : 0
 
   return { exerciseCount, avgWrongCount }
 }
