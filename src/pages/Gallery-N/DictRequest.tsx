@@ -38,11 +38,11 @@ export default function DictRequest() {
             ，给项目贡献新的词典。
             <br />
             <br />
-            如果您没有相关的编程基础，可以讲您的字典需求发送邮件到 如果您没有相关的编程基础，可以讲您的字典需求发送邮件到{' '}
+            如果您没有相关的编程基础，可以将您的字典需求发送邮件到{' '}
             <a href="mailto:me@kaiyi.cool" className="px-2 text-blue-500" aria-label="发送邮件到 me@kaiyi.cool">
               me@kaiyi.cool
             </a>
-            ，或者网页底部添加我们的用户社群进行反馈。
+            ，或者在网页底部添加我们的用户社群进行反馈。
           </p>
           <br />
         </InfoPanel>
