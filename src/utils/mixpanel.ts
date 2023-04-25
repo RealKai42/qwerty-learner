@@ -10,7 +10,6 @@ import {
 } from '@/store'
 import { InfoPanelType } from '@/typings'
 import { PronunciationType } from '@/typings'
-import dayjs from 'dayjs'
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import { useCallback } from 'react'
@@ -130,7 +129,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
 
   const chapterLogUploader = useCallback(() => {
     const props: ChapterLogUpload = {
-      timeEnd: dayjs.utc().format('YYYY-MM-DD HH:mm:ss'),
+      timeEnd: getUtcStringForMixpanel(),
       duration: typingState.timerData.time,
       countInput: typingState.chapterData.correctCount + typingState.chapterData.wrongCount,
       countTypo: typingState.chapterData.wrongCount,
@@ -180,4 +179,12 @@ export function recordDataAction({
   }
 
   mixpanel.track('dataAction', props)
+}
+
+export function getUtcStringForMixpanel() {
+  const now = new Date()
+  const isoString = now.toISOString()
+  const utcString = isoString.substring(0, 19).replace('T', ' ')
+
+  return utcString
 }
