@@ -20,9 +20,8 @@ export default function DictRequest() {
           openState={showPanel}
           title="申请词典"
           icon={IconBook2}
-          btnColor="bg-indigo-300"
-          iconColor="text-indigo-500"
-          iconBackgroundColor="bg-indigo-100"
+          buttonClassName="bg-indigo-500 hover:bg-indigo-400"
+          iconClassName="text-indigo-500 bg-indigo-100"
           onClose={onClosePanel}
         >
           <p className="text-sm text-gray-600 dark:text-gray-300">
