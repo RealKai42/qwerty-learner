@@ -80,6 +80,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'pets3-2023',
+    name: 'PETS-2023',
+    description: '全国英语等级考试常考词汇',
+    category: '中国考试',
+    tags: ['PET'],
+    url: '/dicts/PETS3-2023.json',
+    length: 4449,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: '4000_Essential_English_Words1',
     name: 'Essential Words',
     description: '4000 Essential English Words meaning',
