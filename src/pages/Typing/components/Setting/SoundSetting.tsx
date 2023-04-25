@@ -30,7 +30,7 @@ export default function SoundSetting() {
     [setPronunciationConfig],
   )
 
-  const onChangePronunciationSpeed = useCallback(
+  const onChangePronunciationRate = useCallback(
     (value: [number]) => {
       setPronunciationConfig((prev) => ({
         ...prev,
@@ -119,7 +119,7 @@ export default function SoundSetting() {
               min={0.5}
               step={0.1}
               className="slider"
-              onValueChange={onChangePronunciationSpeed}
+              onValueChange={onChangePronunciationRate}
               disabled={!pronunciationConfig.isOpen}
             >
               <Slider.Track>
