@@ -4,10 +4,11 @@ import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from
 import { PronunciationType, PRONUNCIATION_PHONETIC_MAP } from '@/typings'
 import { Listbox } from '@headlessui/react'
 import { Popover, Transition, Switch } from '@headlessui/react'
-import { IconChevronDown, IconCheck } from '@tabler/icons-react'
 import { useAtom, useAtomValue } from 'jotai'
 import { useCallback, useEffect, useMemo } from 'react'
 import { Fragment } from 'react'
+import TablerCheck from '~icons/tabler/check'
+import TablerChevronDown from '~icons/tabler/chevron-down'
 
 const PronunciationSwitcher = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
@@ -156,9 +157,7 @@ const PronunciationSwitcher = () => {
                   leaveTo="max-h-0 opacity-0"
                 >
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                      开关循环发音
-                    </span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关循环发音</span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Switch checked={pronunciationConfig.isLoop} onChange={onChangePronunciationIsLoop} className="switch-root">
                         <span aria-hidden="true" className="switch-thumb" />
@@ -169,16 +168,14 @@ const PronunciationSwitcher = () => {
                     </div>
                   </div>
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                      单词发音口音
-                    </span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">单词发音口音</span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Listbox value={pronunciationConfig.type} onChange={onChangePronunciationType}>
                         <div className="relative">
                           <Listbox.Button className="listbox-button">
                             <span>{pronunciationConfig.name}</span>
                             <span>
-                              <IconChevronDown className="focus:outline-none" />
+                              <TablerChevronDown className="focus:outline-none" />
                             </span>
                           </Listbox.Button>
                           <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
@@ -190,7 +187,7 @@ const PronunciationSwitcher = () => {
                                       <span>{item.name}</span>
                                       {selected ? (
                                         <span className="listbox-options-icon ">
-                                          <IconCheck className="focus:outline-none" />
+                                          <TablerCheck className="focus:outline-none" />
                                         </span>
                                       ) : null}
                                     </>

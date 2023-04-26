@@ -8,12 +8,12 @@ import { currentDictInfoAtom } from '@/store'
 import { Dictionary, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { IconX } from '@tabler/icons-react'
 import { useAtomValue } from 'jotai'
 import { createContext, useCallback, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useNavigate } from 'react-router-dom'
 import { Updater, useImmer } from 'use-immer'
+import TablerX from '~icons/tabler/x'
 
 export type GalleryState = {
   currentLanguageTab: LanguageCategoryType
@@ -66,7 +66,7 @@ export default function GalleryPage() {
       <GalleryContext.Provider value={{ state: galleryState, setState: setGalleryState }}>
         <ChapterList />
         <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
-          <IconX className="absolute right-20 top-10 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
+          <TablerX className="absolute right-20 top-10 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
           <div className="mt-20 flex w-full flex-1 flex-col items-center justify-center overflow-y-auto">
             <div className="flex h-full flex-col overflow-y-auto">
               <div className="flex h-20 w-full items-center justify-between pb-6">

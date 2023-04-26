@@ -3,9 +3,9 @@ import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
 import { dismissStartCardDateAtom } from '@/store'
 import { recordStarAction } from '@/utils'
 import { Transition } from '@headlessui/react'
-import { IconCircleX } from '@tabler/icons-react'
 import { useSetAtom } from 'jotai'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react'
+import TablerCircleX from '~icons/tabler/circle-x'
 
 export default function StarCard() {
   const [countdown, setCountdown] = useState(5)
@@ -97,7 +97,7 @@ export default function StarCard() {
             </span>
           )}
           <button type="button" onClick={onClickCloseStar} title="关闭提示" aria-label="关闭提示">
-            <IconCircleX className="text-indigo-400" />
+            <TablerCircleX className="text-indigo-400" />
           </button>
         </div>
         <span className="pb-4 text-xl text-gray-600 dark:text-gray-50">

@@ -4,10 +4,13 @@ import SoundSwitcher from '../SoundSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
 import { SunIcon, MoonIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
-import { IconRepeatOnce, IconRepeatOff, IconLanguage, IconLanguageOff } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import TablerLanguage from '~icons/tabler/language'
+import TablerLanguageOff from '~icons/tabler/language-off'
+import TablerRepeatOff from '~icons/tabler/repeat-off'
+import TablerRepeatOnce from '~icons/tabler/repeat-once'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -85,7 +88,7 @@ export default function Switcher() {
           }}
           aria-label="开关单个单词循环（Ctrl + L）"
         >
-          {state?.isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
+          {state?.isLoopSingleWord ? <TablerRepeatOnce /> : <TablerRepeatOff />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
@@ -111,7 +114,7 @@ export default function Switcher() {
           }}
           aria-label="开关释义显示（Ctrl + T）"
         >
-          {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
+          {state?.isTransVisible ? <TablerLanguage /> : <TablerLanguageOff />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关深色模式（Ctrl + D）">
