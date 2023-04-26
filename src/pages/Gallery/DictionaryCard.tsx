@@ -1,5 +1,5 @@
 import { currentChapterAtom, currentDictIdAtom } from '@/store'
-import { DictionaryResource } from '@/typings'
+import { Dictionary } from '@/typings'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { useAtom, useSetAtom } from 'jotai'
 import React, { useEffect, useRef } from 'react'
@@ -42,7 +42,7 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
 DictionaryCard.displayName = 'DictionaryCard'
 
 export type DictionaryCardProps = {
-  dictionary: DictionaryResource
+  dictionary: Dictionary
 }
 
 export default DictionaryCard

@@ -2,18 +2,18 @@ import { useDictStats } from './hooks/useDictStats'
 import bookCover from '@/assets/book-cover.png'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { currentDictIdAtom } from '@/store'
-import { DictionaryResource } from '@/typings'
+import { Dictionary } from '@/typings'
 import { calcChapterCount } from '@/utils'
 import * as Progress from '@radix-ui/react-progress'
 import { useAtomValue } from 'jotai'
 import { useMemo, useRef } from 'react'
 
 interface Props {
-  dictionary: DictionaryResource
+  dictionary: Dictionary
   onClick?: () => void
 }
 
-function Dictionary({ dictionary, onClick }: Props) {
+export default function DictionaryComponent({ dictionary, onClick }: Props) {
   const currentDictID = useAtomValue(currentDictIdAtom)
 
   const divRef = useRef<HTMLDivElement>(null)
@@ -65,5 +65,3 @@ function Dictionary({ dictionary, onClick }: Props) {
     </div>
   )
 }
-
-export default Dictionary
