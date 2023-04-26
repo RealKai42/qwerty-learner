@@ -1,4 +1,4 @@
-import dayjs from 'dayjs'
+import { getUTCUnixTimestamp } from '../index'
 
 export interface IWordRecord {
   word: string
@@ -31,7 +31,7 @@ export class WordRecord implements IWordRecord {
 
   constructor(word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: LetterMistakes) {
     this.word = word
-    this.timeStamp = dayjs.utc().unix()
+    this.timeStamp = getUTCUnixTimestamp()
     this.dict = dict
     this.chapter = chapter
     this.timing = timing
@@ -91,7 +91,7 @@ export class ChapterRecord implements IChapterRecord {
   ) {
     this.dict = dict
     this.chapter = chapter
-    this.timeStamp = dayjs.utc().unix()
+    this.timeStamp = getUTCUnixTimestamp()
     this.time = time
     this.correctCount = correctCount
     this.wrongCount = wrongCount

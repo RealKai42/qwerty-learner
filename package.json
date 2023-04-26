@@ -16,7 +16,6 @@
     "@tailwindcss/postcss7-compat": "^2.2.17",
     "autoprefixer": "^10.4.13",
     "classnames": "^2.3.2",
-    "dayjs": "^1.11.7",
     "dexie": "^3.2.3",
     "dexie-export-import": "^4.0.7",
     "dexie-react-hooks": "^1.1.3",

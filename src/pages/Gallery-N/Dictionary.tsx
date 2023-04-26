@@ -1,12 +1,12 @@
-import { DictionaryResource } from '@/typings'
+import { Dictionary } from '@/typings'
 import * as Progress from '@radix-ui/react-progress'
 
 interface Props {
-  dictionary: DictionaryResource
+  dictionary: Dictionary
   onClick?: () => void
 }
 
-function Dictionary({ dictionary, onClick }: Props) {
+function DictionaryComponent({ dictionary, onClick }: Props) {
   return (
     <div className="flex h-40 w-80 items-center justify-center" role="button" onClick={onClick} title="选择词典">
       <div className="h-full w-5/12 rounded-xl bg-gray-300">
@@ -28,4 +28,4 @@ function Dictionary({ dictionary, onClick }: Props) {
   )
 }
 
-export default Dictionary
+export default DictionaryComponent
