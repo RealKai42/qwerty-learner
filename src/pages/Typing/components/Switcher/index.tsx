@@ -3,10 +3,13 @@ import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
-import { SunIcon, MoonIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 import { useAtom } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import HeroiconsEyeSlash from '~icons/heroicons/eye-slash-solid'
+import HeroiconsEye from '~icons/heroicons/eye-solid'
+import HeroiconsMoon from '~icons/heroicons/moon-solid'
+import HeroiconsSun from '~icons/heroicons/sun-solid'
 import TablerLanguage from '~icons/tabler/language'
 import TablerLanguageOff from '~icons/tabler/language-off'
 import TablerRepeatOff from '~icons/tabler/repeat-off'
@@ -73,7 +76,7 @@ export default function Switcher() {
   )
 
   return (
-    <div className="flex items-center justify-center space-x-2">
+    <div className="flex items-center justify-center gap-2">
       <Tooltip content="音效设置">
         <SoundSwitcher />
       </Tooltip>
@@ -101,7 +104,7 @@ export default function Switcher() {
           }}
           aria-label="开关英语显示（Ctrl + V）"
         >
-          {state?.isWordVisible ? <EyeIcon className="icon" /> : <EyeSlashIcon className="icon" />}
+          {state?.isWordVisible ? <HeroiconsEye className="icon" /> : <HeroiconsEyeSlash className="icon" />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + T）">
@@ -127,7 +130,7 @@ export default function Switcher() {
           }}
           aria-label="开关深色模式（Ctrl + D）"
         >
-          {isOpenDarkMode ? <MoonIcon className="icon" /> : <SunIcon className="icon" />}
+          {isOpenDarkMode ? <HeroiconsMoon className="icon" /> : <HeroiconsSun className="icon" />}
         </button>
       </Tooltip>
 

@@ -1,6 +1,8 @@
-import { HeartIcon, HandThumbUpIcon, ExclamationTriangleIcon } from '@heroicons/react/20/solid'
 import classNames from 'classnames'
 import { ElementType, SVGAttributes } from 'react'
+import HeroiconsExclamationTriangle from '~icons/heroicons/exclamation-triangle-solid'
+import HeroiconsHandThumbUp from '~icons/heroicons/hand-thumb-up-solid'
+import HeroiconsHeart from '~icons/heroicons/heart-solid'
 
 type IconMapper = {
   icon: ElementType<SVGAttributes<SVGSVGElement>>
@@ -10,17 +12,17 @@ type IconMapper = {
 
 const ICON_MAPPER: IconMapper[] = [
   {
-    icon: HeartIcon,
+    icon: HeroiconsHeart,
     className: 'text-indigo-600',
     text: (mistakeCount: number) => `表现不错！只错了 ${mistakeCount} 个单词`,
   },
   {
-    icon: HandThumbUpIcon,
+    icon: HeroiconsHandThumbUp,
     className: 'text-indigo-600',
     text: () => '有些小问题哦，下一次可以做得更好！',
   },
   {
-    icon: ExclamationTriangleIcon,
+    icon: HeroiconsExclamationTriangle,
     className: 'text-indigo-600',
     text: () => '错误太多，再来一次如何？',
   },

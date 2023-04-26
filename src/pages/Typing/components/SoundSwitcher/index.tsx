@@ -1,8 +1,8 @@
 import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
 import { Popover, Transition, Switch } from '@headlessui/react'
-import { SpeakerWaveIcon } from '@heroicons/react/24/solid'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback } from 'react'
+import HeroiconsSpeakerWave from '~icons/heroicons/speaker-wave-solid'
 
 export default function SoundSwitcher() {
   const [keySoundsConfig, setKeySoundsConfig] = useAtom(keySoundsConfigAtom)
@@ -36,7 +36,7 @@ export default function SoundSwitcher() {
             aria-label="音效设置"
             title="音效设置"
           >
-            <SpeakerWaveIcon className="icon" />
+            <HeroiconsSpeakerWave className="icon" />
           </Popover.Button>
 
           <Transition
@@ -64,9 +64,7 @@ export default function SoundSwitcher() {
                   </div>
                 </div>
                 <div className="flex w-full flex-col items-start  gap-2 py-0">
-                  <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                    开关效果音
-                  </span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关效果音</span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={hintSoundsConfig.isOpen} onChange={onChangeHintSound} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
