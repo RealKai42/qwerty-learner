@@ -124,6 +124,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'top_1500_nouns_Words',
+    name: 'Top 1.5k Nouns',
+    description: 'Top 1.5k nouns with highest frequency',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/Top1500NounWords.json',
+    length: 1525,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'suffix word',
     name: 'suffix word',
     description: 'common suffix',
