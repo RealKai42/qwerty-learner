@@ -1,5 +1,4 @@
 import alipay from '@/assets/alipay.jpg'
-import redBookLogo from '@/assets/redBook-black-logo.svg'
 import redBookCode from '@/assets/redBook-code.jpg'
 import weChat from '@/assets/weChat.jpg'
 import InfoPanel from '@/components/InfoPanel'
@@ -7,7 +6,6 @@ import Tooltip from '@/components/Tooltip'
 import { infoPanelStateAtom } from '@/store'
 import { InfoPanelType } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
-import { IconBrandWechat, IconCoffee, IconTerminal2 } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
 import React, { useCallback } from 'react'
 import MaterialSymbolsMail from '~icons/material-symbols/mail'
@@ -41,13 +39,13 @@ const Footer: React.FC = () => {
       <InfoPanel
         openState={infoPanelState.donate}
         title="Buy us a coffee"
-        icon={IconCoffee}
+        icon={MdiCoffee}
         buttonClassName="bg-yellow-500 hover:bg-yellow-400"
-        iconClassName="bg-amber-100 text-amber-500"
+        iconClassName="text-amber-500"
         onClose={() => handleCloseInfoPanel('donate')}
       >
         <p className="text-sm text-gray-500 dark:text-gray-300">
-          非常感谢大家使用 Qwerty Learner, 目前该网站使用业余时间在维护， 为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
+          非常感谢大家使用 Qwerty Learner，目前该网站使用业余时间在维护，为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
           <br />
           您的捐款将有助于我们支付网站的运营成本，改进网站的功能和设计，并提高用户体验。
           <br />
@@ -66,9 +64,9 @@ const Footer: React.FC = () => {
       <InfoPanel
         openState={infoPanelState.vsc}
         title="VSCode 摸🐟插件"
-        icon={IconTerminal2}
+        icon={SimpleIconsVisualstudiocode}
         buttonClassName="bg-blue-500 hover:bg-blue-400"
-        iconClassName="text-blue-600 bg-blue-300"
+        iconClassName="text-sky-500"
         onClose={() => handleCloseInfoPanel('vsc')}
       >
         <p className="text-sm text-gray-500  dark:text-gray-400">
@@ -88,9 +86,9 @@ const Footer: React.FC = () => {
       <InfoPanel
         openState={infoPanelState.community}
         title="用户反馈社群"
-        icon={IconBrandWechat}
+        icon={SimpleIconsWechat}
         buttonClassName="bg-cyan-500 hover:bg-cyan-400"
-        iconClassName="text-cyan-600 bg-cyan-300"
+        iconClassName="text-green-500"
         onClose={() => handleCloseInfoPanel('community')}
       >
         <p className="text-sm text-gray-500  dark:text-gray-400">
@@ -114,9 +112,9 @@ const Footer: React.FC = () => {
       <InfoPanel
         openState={infoPanelState.redBook}
         title="小红书社群"
-        icon="redBookLogo"
+        icon={XiaoHongShu}
         buttonClassName="bg-rose-500 hover:bg-red-400"
-        iconClassName="bg-rose-300"
+        iconClassName="text-red-500"
         onClose={() => handleCloseInfoPanel('redBook')}
       >
         <p className="text-sm text-gray-500  dark:text-gray-400">
@@ -130,7 +128,6 @@ const Footer: React.FC = () => {
           我们深信，与用户的良好互动和反馈是推动我们不断前进和提高的重要因素。因此，我们诚挚邀请您关注我们的小红书账号，与我们一起打造更好的
           「Qwerty Learner」！
         </p>
-        <br />
         <br />
         <img className="ml-1 w-5/12 " src={redBookCode} alt="redBook" />
         <p className="text-sm text-gray-500 dark:text-gray-400">Tips: 从小红书“我”的左上角点击 三 找到 扫一扫</p>
@@ -175,7 +172,7 @@ const Footer: React.FC = () => {
           }}
           aria-label="考虑捐赠我们"
         >
-          <MdiCoffee fontSize={16} className="text-gray-500 hover:text-amber-400 dark:text-gray-400 dark:hover:text-amber-400" />
+          <MdiCoffee fontSize={16} className="text-gray-500 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500" />
         </button>
 
         <button
