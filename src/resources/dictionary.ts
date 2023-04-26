@@ -1,4 +1,5 @@
-﻿import { DictionaryResource } from '@/typings/index'
+import { Dictionary, DictionaryResource } from '@/typings/index'
+import { calcChapterCount } from '@/utils'
 
 // 中国考试
 const chinaExam: DictionaryResource[] = [
@@ -936,116 +937,6 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-  {
-    id: 'eflevel7',
-    name: 'EF-LEVEL-7',
-    description: 'EF等级7',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_7.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel8',
-    name: 'EF-LEVEL-8',
-    description: 'EF等级8',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_8.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel9',
-    name: 'EF-LEVEL-9',
-    description: 'EF等级9',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_9.json',
-    length: 165,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel10',
-    name: 'EF-LEVEL-10',
-    description: 'EF等级10',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_10.json',
-    length: 174,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel11',
-    name: 'EF-LEVEL-11',
-    description: 'EF等级11',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_11.json',
-    length: 176,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel12',
-    name: 'EF-LEVEL-12',
-    description: 'EF等级12',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_12.json',
-    length: 170,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel13',
-    name: 'EF-LEVEL-13',
-    description: 'EF等级13',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_13.json',
-    length: 172,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel14',
-    name: 'EF-LEVEL-14',
-    description: 'EF等级14',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_14.json',
-    length: 171,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel15',
-    name: 'EF-LEVEL-15',
-    description: 'EF等级15',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_15.json',
-    length: 168,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'eflevel16',
-    name: 'EF-LEVEL-16',
-    description: 'EF等级16',
-    category: '青少年英语',
-    tags: ['EF'],
-    url: '/dicts/EF_LEVEL_16.json',
-    length: 170,
-    language: 'en',
-    languageCategory: 'en',
-  },
 ]
 // 编程字典
 const programming: DictionaryResource[] = [
@@ -1504,7 +1395,7 @@ const germanExam: DictionaryResource[] = [
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
  */
-export const dictionaries: DictionaryResource[] = [
+export const dictionaryResources: DictionaryResource[] = [
   ...chinaExam,
   ...internationalExam,
   ...childrenEnglish,
@@ -1532,7 +1423,12 @@ export const dictionaries: DictionaryResource[] = [
   // },
 ]
 
+export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({
+  ...resource,
+  chapterCount: calcChapterCount(resource.length),
+}))
+
 /**
  * An object-map from dictionary IDs to dictionary themselves.
  */
-export const idDictionaryMap: Record<string, DictionaryResource> = Object.fromEntries(dictionaries.map((dict) => [dict.id, dict]))
+export const idDictionaryMap: Record<string, Dictionary> = Object.fromEntries(dictionaries.map((dict) => [dict.id, dict]))
