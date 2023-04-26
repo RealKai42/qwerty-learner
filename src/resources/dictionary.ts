@@ -135,6 +135,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'top_1000_verb_Words',
+    name: 'Top 1k Verbs',
+    description: 'Top 1k verb with highest frequency',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/Top1000VerbWords.json',
+    length: 1011,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'suffix word',
     name: 'suffix word',
     description: 'common suffix',
