@@ -67,6 +67,9 @@
     ]
   },
   "devDependencies": {
+    "@iconify/json": "^2.2.56",
+    "@svgr/core": "^7.0.0",
+    "@svgr/plugin-jsx": "^7.0.0",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/file-saver": "^2.0.5",
     "@types/howler": "^2.2.3",
@@ -91,6 +94,7 @@
     "rollup-plugin-visualizer": "^5.9.0",
     "tailwindcss": "^3.3.1",
     "typescript-plugin-css-modules": "^5.0.1",
+    "unplugin-icons": "^0.16.1",
     "vite": "^4.1.1"
   }
 }

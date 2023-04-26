@@ -5,6 +5,7 @@ import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
 import path from 'node:path'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { defineConfig, type PluginOption } from 'vite'
+import Icons from 'unplugin-icons/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => {
@@ -12,7 +13,11 @@ export default defineConfig(async () => {
     return getLastCommit((err, commit) => (err ? 'unknown' : resolve(commit.shortHash)))
   })
   return {
-    plugins: [react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }), visualizer() as PluginOption],
+    plugins: [
+      react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }), 
+      visualizer() as PluginOption,
+      Icons({ compiler: 'jsx', jsx: 'react' })
+    ],
     build: {
       minify: true,
       outDir: 'build',
