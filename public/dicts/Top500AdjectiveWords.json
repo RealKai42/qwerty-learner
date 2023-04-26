@@ -1,0 +1,3164 @@
+[
+    {
+        "name": "different",
+        "trans": [
+            "Not the same as something or someone else."
+        ]
+    },
+    {
+        "name": "used",
+        "trans": [
+            "Previously owned or operated by someone."
+        ]
+    },
+    {
+        "name": "important",
+        "trans": [
+            "Having great significance or value."
+        ]
+    },
+    {
+        "name": "every",
+        "trans": [
+            "Happening or occurring each time."
+        ]
+    },
+    {
+        "name": "large",
+        "trans": [
+            "Big in size or amount."
+        ]
+    },
+    {
+        "name": "available",
+        "trans": [
+            "Accessible and ready to be used."
+        ]
+    },
+    {
+        "name": "popular",
+        "trans": [
+            "Widely liked or admired by many people."
+        ]
+    },
+    {
+        "name": "able",
+        "trans": [
+            "Having the skill or capability to do something."
+        ]
+    },
+    {
+        "name": "basic",
+        "trans": [
+            "Fundamental or essential."
+        ]
+    },
+    {
+        "name": "known",
+        "trans": [
+            "Familiar or recognized."
+        ]
+    },
+    {
+        "name": "various",
+        "trans": [
+            "Diverse or differing in various ways."
+        ]
+    },
+    {
+        "name": "difficult",
+        "trans": [
+            "Requiring effort or skill to accomplish."
+        ]
+    },
+    {
+        "name": "several",
+        "trans": [
+            "More than two but not many."
+        ]
+    },
+    {
+        "name": "united",
+        "trans": [
+            "Joined or combined into a single entity."
+        ]
+    },
+    {
+        "name": "historical",
+        "trans": [
+            "Related to events or people from the past."
+        ]
+    },
+    {
+        "name": "hot",
+        "trans": [
+            "Having a high temperature."
+        ]
+    },
+    {
+        "name": "useful",
+        "trans": [
+            "Able to be used in a practical or beneficial way."
+        ]
+    },
+    {
+        "name": "mental",
+        "trans": [
+            "Related to the mind or mental processes."
+        ]
+    },
+    {
+        "name": "scared",
+        "trans": [
+            "Feeling afraid or frightened."
+        ]
+    },
+    {
+        "name": "additional",
+        "trans": [
+            "Extra or supplementary."
+        ]
+    },
+    {
+        "name": "emotional",
+        "trans": [
+            "Related to or influenced by feelings."
+        ]
+    },
+    {
+        "name": "old",
+        "trans": [
+            "Having existed for a long time or showing signs of age."
+        ]
+    },
+    {
+        "name": "political",
+        "trans": [
+            "Related to the government or the public affairs of a country."
+        ]
+    },
+    {
+        "name": "similar",
+        "trans": [
+            "Having some qualities or characteristics in common."
+        ]
+    },
+    {
+        "name": "healthy",
+        "trans": [
+            "In good physical or mental condition."
+        ]
+    },
+    {
+        "name": "financial",
+        "trans": [
+            "Related to money or finance."
+        ]
+    },
+    {
+        "name": "medical",
+        "trans": [
+            "Related to the treatment or study of medical conditions."
+        ]
+    },
+    {
+        "name": "traditional",
+        "trans": [
+            "Based on long-established customs or beliefs."
+        ]
+    },
+    {
+        "name": "federal",
+        "trans": [
+            "Related to the national government of a country."
+        ]
+    },
+    {
+        "name": "entire",
+        "trans": [
+            "Complete or whole."
+        ]
+    },
+    {
+        "name": "strong",
+        "trans": [
+            "Having great power or strength."
+        ]
+    },
+    {
+        "name": "actual",
+        "trans": [
+            "Real or existing in fact."
+        ]
+    },
+    {
+        "name": "significant",
+        "trans": [
+            "Important or notable."
+        ]
+    },
+    {
+        "name": "successful",
+        "trans": [
+            "Achieving the desired outcome or goals."
+        ]
+    },
+    {
+        "name": "electrical",
+        "trans": [
+            "Related to electricity or electrical devices."
+        ]
+    },
+    {
+        "name": "expensive",
+        "trans": [
+            "Costing a lot of money."
+        ]
+    },
+    {
+        "name": "pregnant",
+        "trans": [
+            "Carrying a developing offspring within the body."
+        ]
+    },
+    {
+        "name": "intelligent",
+        "trans": [
+            "Having a high level of mental ability or sharpness."
+        ]
+    },
+    {
+        "name": "interesting",
+        "trans": [
+            "Captivating or arousing curiosity."
+        ]
+    },
+    {
+        "name": "poor",
+        "trans": [
+            "Lacking in material possessions or financial wealth."
+        ]
+    },
+    {
+        "name": "happy",
+        "trans": [
+            "Feeling or expressing joy or contentment."
+        ]
+    },
+    {
+        "name": "responsible",
+        "trans": [
+            "Being accountable or answerable for something."
+        ]
+    },
+    {
+        "name": "cute",
+        "trans": [
+            "Attractive or endearing."
+        ]
+    },
+    {
+        "name": "helpful",
+        "trans": [
+            "Providing assistance or support."
+        ]
+    },
+    {
+        "name": "recent",
+        "trans": [
+            "Happening or occurring in the near past."
+        ]
+    },
+    {
+        "name": "willing",
+        "trans": [
+            "Ready or inclined to do something."
+        ]
+    },
+    {
+        "name": "nice",
+        "trans": [
+            "Pleasant or agreeable."
+        ]
+    },
+    {
+        "name": "wonderful",
+        "trans": [
+            "Remarkable or delightful."
+        ]
+    },
+    {
+        "name": "impossible",
+        "trans": [
+            "Not capable of happening or being achieved."
+        ]
+    },
+    {
+        "name": "serious",
+        "trans": [
+            "Grave or important in nature or consequences."
+        ]
+    },
+    {
+        "name": "huge",
+        "trans": [
+            "Extremely large in size or amount."
+        ]
+    },
+    {
+        "name": "rare",
+        "trans": [
+            "Not occurring or found very often; uncommon."
+        ]
+    },
+    {
+        "name": "technical",
+        "trans": [
+            "Relating to a particular subject, skill, or craft, requiring specialized knowledge."
+        ]
+    },
+    {
+        "name": "typical",
+        "trans": [
+            "Exhibiting the characteristics or qualities of a particular type or group."
+        ]
+    },
+    {
+        "name": "competitive",
+        "trans": [
+            "Involving or characterized by rivalry or competition."
+        ]
+    },
+    {
+        "name": "critical",
+        "trans": [
+            "Expressing disapproval or negative comments; crucial, decisive."
+        ]
+    },
+    {
+        "name": "electronic",
+        "trans": [
+            "Relating to or using devices that operate on the principles governing the behavior of electrons, especially the flow of electrons through semiconductors."
+        ]
+    },
+    {
+        "name": "immediate",
+        "trans": [
+            "Happening or done without delay; instant."
+        ]
+    },
+    {
+        "name": "aware",
+        "trans": [
+            "Having knowledge or perception of a situation or fact."
+        ]
+    },
+    {
+        "name": "educational",
+        "trans": [
+            "Providing education; instructive or informative."
+        ]
+    },
+    {
+        "name": "environmental",
+        "trans": [
+            "Relating to the natural world and the impact of human activity on its condition."
+        ]
+    },
+    {
+        "name": "global",
+        "trans": [
+            "Relating to the whole world; worldwide."
+        ]
+    },
+    {
+        "name": "legal",
+        "trans": [
+            "Permitted by law; relating to the law."
+        ]
+    },
+    {
+        "name": "relevant",
+        "trans": [
+            "Closely connected or appropriate to what is being done or considered."
+        ]
+    },
+    {
+        "name": "accurate",
+        "trans": [
+            "Correct in all details; exact."
+        ]
+    },
+    {
+        "name": "capable",
+        "trans": [
+            "Having the ability, fitness, or quality necessary to do or achieve a specified thing."
+        ]
+    },
+    {
+        "name": "dangerous",
+        "trans": [
+            "Able or likely to cause harm or injury."
+        ]
+    },
+    {
+        "name": "dramatic",
+        "trans": [
+            "Full of action, emotion, or exciting qualities; striking."
+        ]
+    },
+    {
+        "name": "efficient",
+        "trans": [
+            "Achieving maximum productivity with minimum wasted effort or expense."
+        ]
+    },
+    {
+        "name": "powerful",
+        "trans": [
+            "Having great power or strength; influential."
+        ]
+    },
+    {
+        "name": "foreign",
+        "trans": [
+            "Belonging to or coming from a country or place other than the one you are in."
+        ]
+    },
+    {
+        "name": "hungry",
+        "trans": [
+            "Feeling or displaying the need for food."
+        ]
+    },
+    {
+        "name": "practical",
+        "trans": [
+            "Of or concerned with the actual doing or use of something rather than with theory and ideas."
+        ]
+    },
+    {
+        "name": "psychological",
+        "trans": [
+            "Relating to the mental and emotional state of a person."
+        ]
+    },
+    {
+        "name": "severe",
+        "trans": [
+            "Very great or intense; harsh."
+        ]
+    },
+    {
+        "name": "suitable",
+        "trans": [
+            "Right or appropriate for a particular person, purpose, or situation."
+        ]
+    },
+    {
+        "name": "numerous",
+        "trans": [
+            "Great in number; many."
+        ]
+    },
+    {
+        "name": "sufficient",
+        "trans": [
+            "Enough; adequate."
+        ]
+    },
+    {
+        "name": "unusual",
+        "trans": [
+            "Not commonly seen or done; rare."
+        ]
+    },
+    {
+        "name": "consistent",
+        "trans": [
+            "Acting or done in the same way over time, especially so as to be fair or accurate."
+        ]
+    },
+    {
+        "name": "cultural",
+        "trans": [
+            "Relating to the ideas, customs, and social behavior of a society."
+        ]
+    },
+    {
+        "name": "existing",
+        "trans": [
+            "Continuing to be present or in use; not destroyed or lost."
+        ]
+    },
+    {
+        "name": "famous",
+        "trans": [
+            "Known about by many people."
+        ]
+    },
+    {
+        "name": "pure",
+        "trans": [
+            "Not mixed or adulterated with any other substance or material."
+        ]
+    },
+    {
+        "name": "afraid",
+        "trans": [
+            "Feeling fear or anxiety; frightened."
+        ]
+    },
+    {
+        "name": "obvious",
+        "trans": [
+            "Easily perceived or understood; clear."
+        ]
+    },
+    {
+        "name": "careful",
+        "trans": [
+            "Making sure of avoiding potential danger, mishap, or harm; cautious."
+        ]
+    },
+    {
+        "name": "latter",
+        "trans": [
+            "Denoting the second or second mentioned of two people or things."
+        ]
+    },
+    {
+        "name": "unhappy",
+        "trans": [
+            "Not happy; sad or depressed."
+        ]
+    },
+    {
+        "name": "acceptable",
+        "trans": [
+            "Able to be agreed on; suitable."
+        ]
+    },
+    {
+        "name": "aggressive",
+        "trans": [
+            "Ready or likely to attack or confront; characterized by or resulting from aggression."
+        ]
+    },
+    {
+        "name": "boring",
+        "trans": [
+            "Not interesting; dull."
+        ]
+    },
+    {
+        "name": "distinct",
+        "trans": [
+            "Recognizably different in nature from something else of a similar type."
+        ]
+    },
+    {
+        "name": "eastern",
+        "trans": [
+            "Relating to or characteristic of the east."
+        ]
+    },
+    {
+        "name": "logical",
+        "trans": [
+            "Characterized by clear reasoning; sensible."
+        ]
+    },
+    {
+        "name": "reasonable",
+        "trans": [
+            "Having sound judgment; fair and sensible."
+        ]
+    },
+    {
+        "name": "strict",
+        "trans": [
+            "Demanding that rules concerning behavior are obeyed and observed."
+        ]
+    },
+    {
+        "name": "administrative",
+        "trans": [
+            "Relating to the running of a business, organization, or institution."
+        ]
+    },
+    {
+        "name": "automatic",
+        "trans": [
+            "Working by itself with little or no direct human control."
+        ]
+    },
+    {
+        "name": "civil",
+        "trans": [
+            "Relating to ordinary citizens and their concerns, as distinct from military or ecclesiastical matters."
+        ]
+    },
+    {
+        "name": "former",
+        "trans": [
+            "Referring to something that existed or was present in the past."
+        ]
+    },
+    {
+        "name": "massive",
+        "trans": [
+            "Very large or heavy."
+        ]
+    },
+    {
+        "name": "southern",
+        "trans": [
+            "Relating to or located in the south."
+        ]
+    },
+    {
+        "name": "unfair",
+        "trans": [
+            "Treating someone in a way that is not just or impartial."
+        ]
+    },
+    {
+        "name": "visible",
+        "trans": [
+            "Able to be seen or perceived."
+        ]
+    },
+    {
+        "name": "alive",
+        "trans": [
+            "Having life or existing in a state of living."
+        ]
+    },
+    {
+        "name": "angry",
+        "trans": [
+            "Feeling or expressing strong displeasure or hostility."
+        ]
+    },
+    {
+        "name": "desperate",
+        "trans": [
+            "Feeling or showing a sense of urgency or hopelessness."
+        ]
+    },
+    {
+        "name": "exciting",
+        "trans": [
+            "Causing great enthusiasm or eagerness."
+        ]
+    },
+    {
+        "name": "friendly",
+        "trans": [
+            "Kind and pleasant to others."
+        ]
+    },
+    {
+        "name": "lucky",
+        "trans": [
+            "Fortunate or favored by chance."
+        ]
+    },
+    {
+        "name": "realistic",
+        "trans": [
+            "Having a practical or sensible understanding of things."
+        ]
+    },
+    {
+        "name": "sorry",
+        "trans": [
+            "Feeling or expressing regret or remorse."
+        ]
+    },
+    {
+        "name": "ugly",
+        "trans": [
+            "Unpleasant or unattractive in appearance."
+        ]
+    },
+    {
+        "name": "unlikely",
+        "trans": [
+            "Not likely to happen or be true."
+        ]
+    },
+    {
+        "name": "anxious",
+        "trans": [
+            "Feeling worried or uneasy about something."
+        ]
+    },
+    {
+        "name": "comprehensive",
+        "trans": [
+            "Including all or nearly all aspects or elements of something."
+        ]
+    },
+    {
+        "name": "curious",
+        "trans": [
+            "Eager to know or learn about something."
+        ]
+    },
+    {
+        "name": "impressive",
+        "trans": [
+            "Having the ability to impress or make a strong impact."
+        ]
+    },
+    {
+        "name": "informal",
+        "trans": [
+            "Relaxed, casual, or not formal."
+        ]
+    },
+    {
+        "name": "inner",
+        "trans": [
+            "Located or existing on the inside."
+        ]
+    },
+    {
+        "name": "pleasant",
+        "trans": [
+            "Giving a sense of enjoyment or satisfaction."
+        ]
+    },
+    {
+        "name": "sexual",
+        "trans": [
+            "Relating to or involving sex or sexuality."
+        ]
+    },
+    {
+        "name": "sudden",
+        "trans": [
+            "Happening quickly and unexpectedly."
+        ]
+    },
+    {
+        "name": "terrible",
+        "trans": [
+            "Extremely bad or unpleasant."
+        ]
+    },
+    {
+        "name": "unable",
+        "trans": [
+            "Not able to do something."
+        ]
+    },
+    {
+        "name": "weak",
+        "trans": [
+            "Lacking strength or power."
+        ]
+    },
+    {
+        "name": "wooden",
+        "trans": [
+            "Made of or resembling wood."
+        ]
+    },
+    {
+        "name": "asleep",
+        "trans": [
+            "In a state of sleep."
+        ]
+    },
+    {
+        "name": "confident",
+        "trans": [
+            "Feeling or showing certainty or assurance."
+        ]
+    },
+    {
+        "name": "conscious",
+        "trans": [
+            "Aware of one's surroundings, thoughts, and feelings."
+        ]
+    },
+    {
+        "name": "decent",
+        "trans": [
+            "Conforming with generally accepted standards of propriety or morality."
+        ]
+    },
+    {
+        "name": "embarrassed",
+        "trans": [
+            "Feeling or showing embarrassment or shame."
+        ]
+    },
+    {
+        "name": "guilty",
+        "trans": [
+            "Having committed an offense or wrongdoing."
+        ]
+    },
+    {
+        "name": "lonely",
+        "trans": [
+            "Feeling sad or unhappy because one is alone or isolated."
+        ]
+    },
+    {
+        "name": "mad",
+        "trans": [
+            "Feeling or showing anger or insanity."
+        ]
+    },
+    {
+        "name": "nervous",
+        "trans": [
+            "Feeling or showing anxiety or apprehension."
+        ]
+    },
+    {
+        "name": "odd",
+        "trans": [
+            "Different from what is usual or expected."
+        ]
+    },
+    {
+        "name": "remarkable",
+        "trans": [
+            "Worthy of attention or notice because of being unusual or extraordinary."
+        ]
+    },
+    {
+        "name": "substantial",
+        "trans": [
+            "Considerable in amount or value."
+        ]
+    },
+    {
+        "name": "suspicious",
+        "trans": [
+            "Having or showing a cautious distrust of someone or something."
+        ]
+    },
+    {
+        "name": "tall",
+        "trans": [
+            "Having a greater than average height."
+        ]
+    },
+    {
+        "name": "tiny",
+        "trans": [
+            "Very small in size."
+        ]
+    },
+    {
+        "name": "more",
+        "trans": [
+            "A comparative form indicating a greater quantity or degree."
+        ]
+    },
+    {
+        "name": "some",
+        "trans": [
+            "An unspecified amount or number."
+        ]
+    },
+    {
+        "name": "one",
+        "trans": [
+            "Referring to a single person or thing."
+        ]
+    },
+    {
+        "name": "all",
+        "trans": [
+            "The whole quantity or extent of something."
+        ]
+    },
+    {
+        "name": "many",
+        "trans": [
+            "A large number of things or people."
+        ]
+    },
+    {
+        "name": "most",
+        "trans": [
+            "The majority or greatest part of something."
+        ]
+    },
+    {
+        "name": "other",
+        "trans": [
+            "Referring to something or someone different from what has been mentioned."
+        ]
+    },
+    {
+        "name": "such",
+        "trans": [
+            "used to indicate a particular type of thing or person."
+        ]
+    },
+    {
+        "name": "even",
+        "trans": [
+            "used to emphasize something that is surprising or extreme."
+        ]
+    },
+    {
+        "name": "new",
+        "trans": [
+            "not existing before; recently made or developed."
+        ]
+    },
+    {
+        "name": "just",
+        "trans": [
+            "based on or behaving according to what is morally right and fair."
+        ]
+    },
+    {
+        "name": "good",
+        "trans": [
+            "having desirable or positive qualities; satisfactory in quality, quantity, or degree."
+        ]
+    },
+    {
+        "name": "any",
+        "trans": [
+            "used to refer to one or some of a thing or number of things, no matter how much or how many."
+        ]
+    },
+    {
+        "name": "each",
+        "trans": [
+            "used to refer to every one of two or more people or things, regarded and identified separately."
+        ]
+    },
+    {
+        "name": "much",
+        "trans": [
+            "a large amount or to a great degree."
+        ]
+    },
+    {
+        "name": "own",
+        "trans": [
+            "belonging to oneself or itself."
+        ]
+    },
+    {
+        "name": "great",
+        "trans": [
+            "unusually or comparatively large in size or dimensions; remarkable or outstanding in magnitude, degree, or extent."
+        ]
+    },
+    {
+        "name": "another",
+        "trans": [
+            "used to refer to an additional or different person or thing of the same type as one already mentioned or known about."
+        ]
+    },
+    {
+        "name": "same",
+        "trans": [
+            "identical; not different or changed."
+        ]
+    },
+    {
+        "name": "few",
+        "trans": [
+            "not many but more than one."
+        ]
+    },
+    {
+        "name": "free",
+        "trans": [
+            "not under the control or in the power of another; able to act or be done as one wishes."
+        ]
+    },
+    {
+        "name": "right",
+        "trans": [
+            "morally good, justified, or acceptable; true or correct as a fact or principle."
+        ]
+    },
+    {
+        "name": "still",
+        "trans": [
+            "not moving or making a sound; continuing to be active or in existence."
+        ]
+    },
+    {
+        "name": "best",
+        "trans": [
+            "of the highest quality or most outstanding type; surpassing all others in excellence, achievement, or quality."
+        ]
+    },
+    {
+        "name": "public",
+        "trans": [
+            "of or concerning the people as a whole; done, perceived, or existing in open view."
+        ]
+    },
+    {
+        "name": "human",
+        "trans": [
+            "relating to or characteristic of humankind; having or showing qualities regarded as characteristic of humanity."
+        ]
+    },
+    {
+        "name": "both",
+        "trans": [
+            "used to refer to two people or things, regarded and identified together."
+        ]
+    },
+    {
+        "name": "local",
+        "trans": [
+            "relating or restricted to a particular area or one's neighborhood."
+        ]
+    },
+    {
+        "name": "sure",
+        "trans": [
+            "confident in one's ability to do something; certain or assured about something."
+        ]
+    },
+    {
+        "name": "better",
+        "trans": [
+            "of a more excellent or effective type or quality."
+        ]
+    },
+    {
+        "name": "general",
+        "trans": [
+            "affecting or concerning all or most people, places, or things; widespread."
+        ]
+    },
+    {
+        "name": "specific",
+        "trans": [
+            "clearly defined or identified; precise."
+        ]
+    },
+    {
+        "name": "enough",
+        "trans": [
+            "as much or as many as required; sufficient."
+        ]
+    },
+    {
+        "name": "long",
+        "trans": [
+            "extending for a considerable distance from end to end; lasting or taking a great amount of time."
+        ]
+    },
+    {
+        "name": "small",
+        "trans": [
+            "of a size that is less than normal or usual; unimportant or trivial."
+        ]
+    },
+    {
+        "name": "less",
+        "trans": [
+            "a smaller amount of; not as much as."
+        ]
+    },
+    {
+        "name": "high",
+        "trans": [
+            "greater than normal or expected; of great vertical extent."
+        ]
+    },
+    {
+        "name": "certain",
+        "trans": [
+            "known for sure; established beyond doubt."
+        ]
+    },
+    {
+        "name": "little",
+        "trans": [
+            "small in size, amount, or degree; not important or of consequence."
+        ]
+    },
+    {
+        "name": "common",
+        "trans": [
+            "occurring, found, or done often; belonging to or shared by two or more people or things."
+        ]
+    },
+    {
+        "name": "next",
+        "trans": [
+            "coming immediately after the present one in order, rank, or space."
+        ]
+    },
+    {
+        "name": "simple",
+        "trans": [
+            "easily understood or done; presenting no difficulty."
+        ]
+    },
+    {
+        "name": "hard",
+        "trans": [
+            "requiring a great deal of effort or endurance to complete or understand."
+        ]
+    },
+    {
+        "name": "past",
+        "trans": [
+            "gone by in time and no longer existing; having occurred in the time before the present."
+        ]
+    },
+    {
+        "name": "big",
+        "trans": [
+            "of considerable size or extent; important or impressive."
+        ]
+    },
+    {
+        "name": "possible",
+        "trans": [
+            "able to be done or achieved; capable of happening."
+        ]
+    },
+    {
+        "name": "particular",
+        "trans": [
+            "used to single out an individual member of a specified group or class."
+        ]
+    },
+    {
+        "name": "real",
+        "trans": [
+            "actually existing as a thing or occurring in fact; not imagined or supposed."
+        ]
+    },
+    {
+        "name": "major",
+        "trans": [
+            "important, serious, or significant; having a great effect or influence."
+        ]
+    },
+    {
+        "name": "personal",
+        "trans": [
+            "belonging to or affecting a particular person rather than anyone else."
+        ]
+    },
+    {
+        "name": "current",
+        "trans": [
+            "belonging to the present time; happening or being used or done at the present time."
+        ]
+    },
+    {
+        "name": "left",
+        "trans": [
+            "situated on or near the side of the body that is to the west when the person is facing north; remaining after the departure or removal of others."
+        ]
+    },
+    {
+        "name": "national",
+        "trans": [
+            "relating to or characteristic of a particular nation; owned, controlled, or financially supported by the government of a particular country."
+        ]
+    },
+    {
+        "name": "least",
+        "trans": [
+            "smallest in amount, extent, or significance; minimum."
+        ]
+    },
+    {
+        "name": "natural",
+        "trans": [
+            "existing in or caused by nature; not made or caused by humankind."
+        ]
+    },
+    {
+        "name": "physical",
+        "trans": [
+            "relating to the body as opposed to the mind; relating to things that can be seen or felt."
+        ]
+    },
+    {
+        "name": "short",
+        "trans": [
+            "small in length, distance, or duration; concise or brief."
+        ]
+    },
+    {
+        "name": "last",
+        "trans": [
+            "Refers to the final or most recent item in a sequence."
+        ]
+    },
+    {
+        "name": "single",
+        "trans": [
+            "Describes something that is one in number or singular in nature."
+        ]
+    },
+    {
+        "name": "individual",
+        "trans": [
+            "Refers to a single person, thing, or item that is separate from others."
+        ]
+    },
+    {
+        "name": "main",
+        "trans": [
+            "Refers to the most important or significant part or aspect of something."
+        ]
+    },
+    {
+        "name": "potential",
+        "trans": [
+            "Describes something that has the ability to become or develop into something in the future."
+        ]
+    },
+    {
+        "name": "professional",
+        "trans": [
+            "Describes something that is done with a high level of skill or expertise, often in a formal or business setting."
+        ]
+    },
+    {
+        "name": "international",
+        "trans": [
+            "Refers to something that involves or exists between different countries or nations."
+        ]
+    },
+    {
+        "name": "lower",
+        "trans": [
+            "Refers to something that is situated or placed beneath or at a lower level than something else."
+        ]
+    },
+    {
+        "name": "open",
+        "trans": [
+            "Describes something that is accessible, available, or not closed or restricted."
+        ]
+    },
+    {
+        "name": "according",
+        "trans": [
+            "Refers to something that is in agreement or accordance with something else."
+        ]
+    },
+    {
+        "name": "alternative",
+        "trans": [
+            "Describes something that is different or serves as a substitute or option to something else."
+        ]
+    },
+    {
+        "name": "special",
+        "trans": [
+            "Describes something that is distinctive, unique, or exceptional."
+        ]
+    },
+    {
+        "name": "working",
+        "trans": [
+            "Describes something that is functioning or in operation, often in a practical or manual sense."
+        ]
+    },
+    {
+        "name": "TRUE",
+        "trans": [
+            "Describes something that is accurate, genuine, or authentic."
+        ]
+    },
+    {
+        "name": "whole",
+        "trans": [
+            "Refers to something that is complete, entire, or undivided."
+        ]
+    },
+    {
+        "name": "clear",
+        "trans": [
+            "Describes something that is transparent, easy to understand, or free from confusion or ambiguity."
+        ]
+    },
+    {
+        "name": "dry",
+        "trans": [
+            "Describes something that is lacking in moisture or wetness."
+        ]
+    },
+    {
+        "name": "easy",
+        "trans": [
+            "Describes something that is simple, effortless, or not difficult to do or understand."
+        ]
+    },
+    {
+        "name": "cold",
+        "trans": [
+            "Describes something that is at a low temperature or lacking in warmth."
+        ]
+    },
+    {
+        "name": "commercial",
+        "trans": [
+            "Refers to something that is related to or involving business or commerce."
+        ]
+    },
+    {
+        "name": "full",
+        "trans": [
+            "Describes something that is complete, contains as much as possible, or has no empty space."
+        ]
+    },
+    {
+        "name": "low",
+        "trans": [
+            "Describes something that is situated at or near the bottom or base of something."
+        ]
+    },
+    {
+        "name": "primary",
+        "trans": [
+            "Refers to something that is the most important, fundamental, or essential aspect of something else."
+        ]
+    },
+    {
+        "name": "worth",
+        "trans": [
+            "Describes something that has value, importance, or significance."
+        ]
+    },
+    {
+        "name": "necessary",
+        "trans": [
+            "Describes something that is required, essential, or indispensable."
+        ]
+    },
+    {
+        "name": "positive",
+        "trans": [
+            "Describes something that is optimistic, constructive, or favorable."
+        ]
+    },
+    {
+        "name": "present",
+        "trans": [
+            "Refers to something that is currently existing or occurring at the moment."
+        ]
+    },
+    {
+        "name": "close",
+        "trans": [
+            "Describes something that is situated near or in proximity to something else."
+        ]
+    },
+    {
+        "name": "creative",
+        "trans": [
+            "Describes something that is imaginative, original, or inventive."
+        ]
+    },
+    {
+        "name": "green",
+        "trans": [
+            "Describes something that is related to or associated with the environment or nature."
+        ]
+    },
+    {
+        "name": "late",
+        "trans": [
+            "Describes something that is occurring or happening after the expected or usual time."
+        ]
+    },
+    {
+        "name": "fit",
+        "trans": [
+            "Describes something that is suitable, appropriate, or in good physical condition."
+        ]
+    },
+    {
+        "name": "glad",
+        "trans": [
+            "Describes something that is happy, pleased, or satisfied."
+        ]
+    },
+    {
+        "name": "proper",
+        "trans": [
+            "Describes something that is correct, appropriate, or suitable according to established norms or standards."
+        ]
+    },
+    {
+        "name": "complex",
+        "trans": [
+            "Describes something that is intricate, multifaceted, or difficult to understand."
+        ]
+    },
+    {
+        "name": "content",
+        "trans": [
+            "Describes something that is satisfied, fulfilled, or happy with what they have."
+        ]
+    },
+    {
+        "name": "due",
+        "trans": [
+            "Refers to something that is owed, expected, or scheduled to happen at a particular time."
+        ]
+    },
+    {
+        "name": "effective",
+        "trans": [
+            "Describes something that is successful in achieving its intended purpose or goal."
+        ]
+    },
+    {
+        "name": "middle",
+        "trans": [
+            "Refers to something that is situated at or near the center or halfway point of something else."
+        ]
+    },
+    {
+        "name": "regular",
+        "trans": [
+            "Describes something that occurs or happens at fixed intervals or with consistency."
+        ]
+    },
+    {
+        "name": "fast",
+        "trans": [
+            "Describes something that moves, operates, or occurs quickly or at a high speed."
+        ]
+    },
+    {
+        "name": "independent",
+        "trans": [
+            "Describes something that is self-reliant, autonomous, or not influenced by others."
+        ]
+    },
+    {
+        "name": "original",
+        "trans": [
+            "Describes something that is unique, creative, or not copied or imitated from others."
+        ]
+    },
+    {
+        "name": "wide",
+        "trans": [
+            "Describes something that has a great extent or breadth from side to side."
+        ]
+    },
+    {
+        "name": "beautiful",
+        "trans": [
+            "Describes something that is aesthetically pleasing or attractive to the eye."
+        ]
+    },
+    {
+        "name": "complete",
+        "trans": [
+            "Describes something that is finished, whole, or lacking nothing."
+        ]
+    },
+    {
+        "name": "active",
+        "trans": [
+            "Describes something that is engaged in physical or mental activity, often in a dynamic or energetic way."
+        ]
+    },
+    {
+        "name": "negative",
+        "trans": [
+            "Describes something that is unfavorable, unhelpful, or not desirable."
+        ]
+    },
+    {
+        "name": "safe",
+        "trans": [
+            "Describes something that is secure, protected, or free from harm or danger."
+        ]
+    },
+    {
+        "name": "visual",
+        "trans": [
+            "Describes something that is related to or involving sight, often in a graphic or artistic way."
+        ]
+    },
+    {
+        "name": "wrong",
+        "trans": [
+            "Not correct or accurate."
+        ]
+    },
+    {
+        "name": "ago",
+        "trans": [
+            "A period of time that has passed before the present moment."
+        ]
+    },
+    {
+        "name": "quick",
+        "trans": [
+            "Moving or happening with great speed or efficiency."
+        ]
+    },
+    {
+        "name": "ready",
+        "trans": [
+            "Prepared or available for immediate use or action."
+        ]
+    },
+    {
+        "name": "straight",
+        "trans": [
+            "Not curved or bent; in a direct line or position."
+        ]
+    },
+    {
+        "name": "white",
+        "trans": [
+            "Having the color of snow or milk; reflecting all colors of light equally."
+        ]
+    },
+    {
+        "name": "direct",
+        "trans": [
+            "Moving or leading in a straight line or course without deviation or interruption."
+        ]
+    },
+    {
+        "name": "excellent",
+        "trans": [
+            "Extremely good or of the highest quality."
+        ]
+    },
+    {
+        "name": "extra",
+        "trans": [
+            "More than is usual, necessary, or expected; additional."
+        ]
+    },
+    {
+        "name": "junior",
+        "trans": [
+            "Relating to or suitable for younger or less experienced members of a group."
+        ]
+    },
+    {
+        "name": "pretty",
+        "trans": [
+            "Attractive in a delicate or graceful way."
+        ]
+    },
+    {
+        "name": "unique",
+        "trans": [
+            "Being the only one of its kind; unlike anything else."
+        ]
+    },
+    {
+        "name": "classic",
+        "trans": [
+            "Judged over a period of time to be of the highest quality and outstanding of its kind."
+        ]
+    },
+    {
+        "name": "final",
+        "trans": [
+            "Coming at the end of a series; concluding or decisive."
+        ]
+    },
+    {
+        "name": "overall",
+        "trans": [
+            "Taking everything into account; including all aspects or factors."
+        ]
+    },
+    {
+        "name": "private",
+        "trans": [
+            "Belonging to or for the use of one particular person or group only; not for public knowledge or disclosure."
+        ]
+    },
+    {
+        "name": "separate",
+        "trans": [
+            "Divided or disconnected from others; not attached or joined."
+        ]
+    },
+    {
+        "name": "western",
+        "trans": [
+            "Relating to or characteristic of the western part of a country or region."
+        ]
+    },
+    {
+        "name": "alone",
+        "trans": [
+            "Having no one else present; on one's own."
+        ]
+    },
+    {
+        "name": "familiar",
+        "trans": [
+            "Well known from long or close association."
+        ]
+    },
+    {
+        "name": "official",
+        "trans": [
+            "Relating to an authority or public body and its duties, actions, and responsibilities."
+        ]
+    },
+    {
+        "name": "perfect",
+        "trans": [
+            "Having all the required or desirable elements, qualities, or characteristics; as good as it is possible to be."
+        ]
+    },
+    {
+        "name": "bright",
+        "trans": [
+            "Giving out or reflecting a lot of light; shining."
+        ]
+    },
+    {
+        "name": "broad",
+        "trans": [
+            "Having a distance larger than usual from side to side; wide."
+        ]
+    },
+    {
+        "name": "comfortable",
+        "trans": [
+            "Providing physical ease and relaxation."
+        ]
+    },
+    {
+        "name": "flat",
+        "trans": [
+            "Having a level surface; without raised areas or indentations."
+        ]
+    },
+    {
+        "name": "rich",
+        "trans": [
+            "Having a great deal of money or assets; wealthy."
+        ]
+    },
+    {
+        "name": "warm",
+        "trans": [
+            "Having, giving off, or producing a moderate degree of heat; slightly hot."
+        ]
+    },
+    {
+        "name": "young",
+        "trans": [
+            "Having lived or existed for only a short time; not old."
+        ]
+    },
+    {
+        "name": "heavy",
+        "trans": [
+            "Of great weight; difficult to lift or move."
+        ]
+    },
+    {
+        "name": "valuable",
+        "trans": [
+            "Extremely useful, important, or desirable."
+        ]
+    },
+    {
+        "name": "correct",
+        "trans": [
+            "Free from error; accurate."
+        ]
+    },
+    {
+        "name": "leading",
+        "trans": [
+            "Being the most important or prominent."
+        ]
+    },
+    {
+        "name": "slow",
+        "trans": [
+            "Moving or operating at a low speed; taking a comparatively long time."
+        ]
+    },
+    {
+        "name": "clean",
+        "trans": [
+            "Free from dirt, marks, or stains; morally uncontaminated."
+        ]
+    },
+    {
+        "name": "fresh",
+        "trans": [
+            "Recently made or obtained; not canned, frozen, or otherwise preserved."
+        ]
+    },
+    {
+        "name": "normal",
+        "trans": [
+            "Conforming to a standard; usual, typical, or expected."
+        ]
+    },
+    {
+        "name": "secret",
+        "trans": [
+            "Not known or meant to be known by others."
+        ]
+    },
+    {
+        "name": "tough",
+        "trans": [
+            "Strong enough to withstand adverse conditions or rough handling."
+        ]
+    },
+    {
+        "name": "brown",
+        "trans": [
+            "Of a color produced by mixing red, yellow, and blue, as of dark wood or soil."
+        ]
+    },
+    {
+        "name": "cheap",
+        "trans": [
+            "Inexpensive; costing very little."
+        ]
+    },
+    {
+        "name": "deep",
+        "trans": [
+            "Extending far down from the top or surface."
+        ]
+    },
+    {
+        "name": "objective",
+        "trans": [
+            "Not influenced by personal feelings or opinions; impartial."
+        ]
+    },
+    {
+        "name": "secure",
+        "trans": [
+            "Free from danger or threat; safe and protected."
+        ]
+    },
+    {
+        "name": "thin",
+        "trans": [
+            "Having a small distance between opposite surfaces; not thick."
+        ]
+    },
+    {
+        "name": "chemical",
+        "trans": [
+            "Relating to or involving substances used in reactions involving changes in atoms or molecules."
+        ]
+    },
+    {
+        "name": "cool",
+        "trans": [
+            "Of or at a fairly low temperature; showing no friendly."
+        ]
+    },
+    {
+        "name": "extreme",
+        "trans": [
+            "Reaching a high or the highest degree; very great."
+        ]
+    },
+    {
+        "name": "exact",
+        "trans": [
+            "Strictly accurate or correct."
+        ]
+    },
+    {
+        "name": "fair",
+        "trans": [
+            "Treating people equally without favoritism or discrimination."
+        ]
+    },
+    {
+        "name": "fine",
+        "trans": [
+            "Fine means of high quality or superior; excellent."
+        ]
+    },
+    {
+        "name": "formal",
+        "trans": [
+            "Formal refers to something done in accordance with strict rules, etiquette or official procedures."
+        ]
+    },
+    {
+        "name": "opposite",
+        "trans": [
+            "Opposite refers to something that is completely different from or contrary to something else."
+        ]
+    },
+    {
+        "name": "remote",
+        "trans": [
+            "Remote refers to something that is situated far away from any other place, out of the way, or distant."
+        ]
+    },
+    {
+        "name": "total",
+        "trans": [
+            "Total refers to something that is complete, absolute, or whole in extent or degree."
+        ]
+    },
+    {
+        "name": "vast",
+        "trans": [
+            "Vast refers to something that is very large, immense or extensive in size or degree."
+        ]
+    },
+    {
+        "name": "lost",
+        "trans": [
+            "Lost means to be missing or unable to find one's way."
+        ]
+    },
+    {
+        "name": "smooth",
+        "trans": [
+            "Smooth refers to something that is even or level in surface or texture, without any roughness or unevenness."
+        ]
+    },
+    {
+        "name": "dark",
+        "trans": [
+            "Dark refers to something that has little or no light, and is therefore difficult to see."
+        ]
+    },
+    {
+        "name": "double",
+        "trans": [
+            "Double refers to something that is twice the size or amount of something else."
+        ]
+    },
+    {
+        "name": "equal",
+        "trans": [
+            "Equal refers to something that is the same in quantity, size, or value as something else."
+        ]
+    },
+    {
+        "name": "firm",
+        "trans": [
+            "Firm refers to something that is strong, solid, or resolute."
+        ]
+    },
+    {
+        "name": "frequent",
+        "trans": [
+            "Frequent refers to something that happens or occurs often or at regular intervals."
+        ]
+    },
+    {
+        "name": "internal",
+        "trans": [
+            "Internal refers to something that is inside or located within the body or an object."
+        ]
+    },
+    {
+        "name": "sensitive",
+        "trans": [
+            "Sensitive refers to something that is easily affected, influenced, or damaged by external factors."
+        ]
+    },
+    {
+        "name": "constant",
+        "trans": [
+            "Constant refers to something that is continuing or unchanging in nature or degree."
+        ]
+    },
+    {
+        "name": "minor",
+        "trans": [
+            "Minor refers to something that is less important or significant in comparison to something else."
+        ]
+    },
+    {
+        "name": "previous",
+        "trans": [
+            "Previous refers to something that happened or occurred before a particular time or event."
+        ]
+    },
+    {
+        "name": "raw",
+        "trans": [
+            "Raw refers to something that is unprocessed or uncooked."
+        ]
+    },
+    {
+        "name": "soft",
+        "trans": [
+            "Soft refers to something that is easy to compress, mold, or cut; opposite of hard."
+        ]
+    },
+    {
+        "name": "solid",
+        "trans": [
+            "Solid refers to something that is firm, hard, and not easily broken or melted."
+        ]
+    },
+    {
+        "name": "weird",
+        "trans": [
+            "Weird refers to something that is strange, odd, or bizarre."
+        ]
+    },
+    {
+        "name": "amazing",
+        "trans": [
+            "Amazing refers to something that is extremely impressive, awe-inspiring or surprising."
+        ]
+    },
+    {
+        "name": "annual",
+        "trans": [
+            "Annual refers to something that happens or occurs once a year."
+        ]
+    },
+    {
+        "name": "busy",
+        "trans": [
+            "Busy refers to something that is occupied or actively involved in some task or work."
+        ]
+    },
+    {
+        "name": "dead",
+        "trans": [
+            "Dead refers to something that is no longer alive or functioning."
+        ]
+    },
+    {
+        "name": "FALSE",
+        "trans": [
+            "False refers to something that is not true or accurate."
+        ]
+    },
+    {
+        "name": "round",
+        "trans": [
+            "Round refers to something that is circular or curved in shape."
+        ]
+    },
+    {
+        "name": "sharp",
+        "trans": [
+            "Sharp refers to something that has a fine point or edge, or is highly defined or clear."
+        ]
+    },
+    {
+        "name": "thick",
+        "trans": [
+            "Thick refers to something that is of considerable width or depth; opposite of thin."
+        ]
+    },
+    {
+        "name": "wise",
+        "trans": [
+            "Wise refers to something that is characterized by good judgment, insight, or knowledge."
+        ]
+    },
+    {
+        "name": "equivalent",
+        "trans": [
+            "Equivalent refers to something that is equal in value, meaning, or significance to something else."
+        ]
+    },
+    {
+        "name": "initial",
+        "trans": [
+            "Initial refers to something that comes at the beginning, or is used to mark the start of something."
+        ]
+    },
+    {
+        "name": "narrow",
+        "trans": [
+            "Narrow refers to something that is small in width or limited in extent or scope."
+        ]
+    },
+    {
+        "name": "nearby",
+        "trans": [
+            "Nearby refers to something that is located or situated close to a particular place or person."
+        ]
+    },
+    {
+        "name": "proud",
+        "trans": [
+            "Proud refers to something that gives a sense of satisfaction or achievement, or is characterized by dignity or self-respect."
+        ]
+    },
+    {
+        "name": "spiritual",
+        "trans": [
+            "Spiritual refers to something that relates to the soul or spirit, rather than material or physical things."
+        ]
+    },
+    {
+        "name": "wild",
+        "trans": [
+            "Wild refers to something that is untamed or not domesticated, or characterized by a lack of restraint or control."
+        ]
+    },
+    {
+        "name": "adult",
+        "trans": [
+            "Adult refers to someone who is fully grown or mature, and has reached the age of legal majority."
+        ]
+    },
+    {
+        "name": "apart",
+        "trans": [
+            "Apart refers to something that is separated or disconnected from something else."
+        ]
+    },
+    {
+        "name": "brief",
+        "trans": [
+            "Brief refers to something that is of short duration or limited in length."
+        ]
+    },
+    {
+        "name": "crazy",
+        "trans": [
+            "Crazy refers to something that is wildly or absurdly unconventional, or characterized by a state of mental instability or erratic behavior."
+        ]
+    },
+    {
+        "name": "prior",
+        "trans": [
+            "Prior refers to something that existed or occurred before a particular time or event."
+        ]
+    },
+    {
+        "name": "rough",
+        "trans": [
+            "Rough refers to something that is uneven, irregular, or coarse in texture or surface."
+        ]
+    },
+    {
+        "name": "sad",
+        "trans": [
+            "Sad refers to something that causes or expresses sorrow, grief, or melancholy."
+        ]
+    },
+    {
+        "name": "sick",
+        "trans": [
+            "Sick refers to something that is affected by disease, illness, or poor health."
+        ]
+    },
+    {
+        "name": "strange",
+        "trans": [
+            "Strange refers to something that is unusual, unfamiliar, or bizarre."
+        ]
+    },
+    {
+        "name": "external",
+        "trans": [
+            "External refers to something that is located outside of or beyond a particular object, place, or situation."
+        ]
+    },
+    {
+        "name": "illegal",
+        "trans": [
+            "Illegal refers to something that is forbidden by law, or not allowed under the legal system."
+        ]
+    },
+    {
+        "name": "loud",
+        "trans": [
+            "Loud refers to something that produces a high level of sound or noise."
+        ]
+    },
+    {
+        "name": "mobile",
+        "trans": [
+            "Capable of moving or being moved easily from one place to another."
+        ]
+    },
+    {
+        "name": "nasty",
+        "trans": [
+            "Unpleasant or disgusting in taste, smell or appearance."
+        ]
+    },
+    {
+        "name": "ordinary",
+        "trans": [
+            "Commonplace or not remarkable, plain or average in quality."
+        ]
+    },
+    {
+        "name": "royal",
+        "trans": [
+            "Relating to a king or queen, or having the qualities of a monarch."
+        ]
+    },
+    {
+        "name": "senior",
+        "trans": [
+            "Higher in rank or position within an organization, typically due to experience or age."
+        ]
+    },
+    {
+        "name": "super",
+        "trans": [
+            "Exceptional or extraordinary in size, quality, or degree."
+        ]
+    },
+    {
+        "name": "tight",
+        "trans": [
+            "Firmly fixed or held in place, or difficult to move or turn."
+        ]
+    },
+    {
+        "name": "upper",
+        "trans": [
+            "Higher in position or location, or relating to the top part of something."
+        ]
+    },
+    {
+        "name": "yellow",
+        "trans": [
+            "Having a color resembling that of the sun or ripe lemons, or indicating cowardice or caution."
+        ]
+    },
+    {
+        "name": "dependent",
+        "trans": [
+            "Needing the support or help of someone or something else."
+        ]
+    },
+    {
+        "name": "funny",
+        "trans": [
+            "Causing amusement or laughter, or strange or unusual in a way that is amusing."
+        ]
+    },
+    {
+        "name": "gross",
+        "trans": [
+            "Disgusting, unpleasant or morally repulsive."
+        ]
+    },
+    {
+        "name": "ill",
+        "trans": [
+            "Suffering from a disease or not feeling well, or morally objectionable."
+        ]
+    },
+    {
+        "name": "spare",
+        "trans": [
+            "Additional or surplus to requirements, or free time available for leisure activities."
+        ]
+    },
+    {
+        "name": "sweet",
+        "trans": [
+            "Having a pleasant taste or smell, or being kind or gentle in disposition."
+        ]
+    },
+    {
+        "name": "upstairs",
+        "trans": [
+            "Located on a higher level of a building, or relating to the upper floor of a house."
+        ]
+    },
+    {
+        "name": "usual",
+        "trans": [
+            "Ordinary or customary, happening most often or expected."
+        ]
+    },
+    {
+        "name": "brave",
+        "trans": [
+            "Showing courage or fearlessness in the face of danger or difficulty."
+        ]
+    },
+    {
+        "name": "calm",
+        "trans": [
+            "Peaceful, tranquil or free from disturbance or agitation."
+        ]
+    },
+    {
+        "name": "dirty",
+        "trans": [
+            "Covered or marked with dirt, or morally corrupt or unpleasant."
+        ]
+    },
+    {
+        "name": "downtown",
+        "trans": [
+            "Located in or relating to the central part of a city, or the commercial and cultural center of a city."
+        ]
+    },
+    {
+        "name": "grand",
+        "trans": [
+            "Impressive and large in size or scope, or very good or pleasing."
+        ]
+    },
+    {
+        "name": "honest",
+        "trans": [
+            "Truthful and sincere in behavior or character, or not guilty of cheating or stealing."
+        ]
+    },
+    {
+        "name": "loose",
+        "trans": [
+            "Not firmly attached or held, or not fitting tightly."
+        ]
+    },
+    {
+        "name": "male",
+        "trans": [
+            "Relating to or characteristic of men or boys, or having a gender of masculine."
+        ]
+    },
+    {
+        "name": "quiet",
+        "trans": [
+            "Making little or no noise, or tranquil or peaceful."
+        ]
+    },
+    {
+        "name": "brilliant",
+        "trans": [
+            "Very bright or sparkling, or exceptionally clever or talented."
+        ]
+    },
+    {
+        "name": "dear",
+        "trans": [
+            "Loved or cherished, or expensive or highly valued."
+        ]
+    },
+    {
+        "name": "drunk",
+        "trans": [
+            "Intoxicated or under the influence of alcohol, or behaving in a silly or foolish manner."
+        ]
+    },
+    {
+        "name": "empty",
+        "trans": [
+            "Containing nothing or having nothing inside, or without purpose or meaning."
+        ]
+    },
+    {
+        "name": "female",
+        "trans": [
+            "Relating to or characteristic of women or girls, or having a gender of feminine."
+        ]
+    },
+    {
+        "name": "inevitable",
+        "trans": [
+            "Unable to be avoided or escaped, certain to happen."
+        ]
+    },
+    {
+        "name": "neat",
+        "trans": [
+            "Tidy, well-ordered or organized, or excellent or skillful."
+        ]
+    },
+    {
+        "name": "ok",
+        "trans": [
+            "Acceptable, adequate or satisfactory, or expressing agreement or approval."
+        ]
+    },
+    {
+        "name": "representative",
+        "trans": [
+            "Serving to represent or stand for something or someone, or typical or characteristic of a group or category."
+        ]
+    },
+    {
+        "name": "silly",
+        "trans": [
+            "Having a foolish or ridiculous behavior, or amusing or entertaining."
+        ]
+    },
+    {
+        "name": "slight",
+        "trans": [
+            "Small or insignificant in degree, or having a slender or delicate build."
+        ]
+    },
+    {
+        "name": "smart",
+        "trans": [
+            "Intelligent, quick-witted or clever, or stylish or fashionable."
+        ]
+    },
+    {
+        "name": "stupid",
+        "trans": [
+            "Lacking intelligence or common sense, or behaving in an irrational or foolish manner."
+        ]
+    },
+    {
+        "name": "temporary",
+        "trans": [
+            "Lasting for a limited time, or not permanent or long-lasting."
+        ]
+    },
+    {
+        "name": "weekly",
+        "trans": [
+            "Happening or appearing once a week, or relating to a period of seven days."
+        ]
+    },
+    {
+        "name": "that",
+        "trans": [
+            "Used to identify a specific person or thing, or referring to something previously mentioned."
+        ]
+    },
+    {
+        "name": "this",
+        "trans": [
+            "Used to identify a specific person or thing near the speaker."
+        ]
+    },
+    {
+        "name": "what",
+        "trans": [
+            "Used to ask for information about something or to introduce a clause that complements or explains a previous statement."
+        ]
+    },
+    {
+        "name": "which",
+        "trans": [
+            "Used to introduce a clause that identifies or provides additional information about a previously mentioned person or thing."
+        ]
+    },
+    {
+        "name": "time",
+        "trans": [
+            "Relating to or measured by the progress of events or the duration of an action or condition."
+        ]
+    },
+    {
+        "name": "these",
+        "trans": [
+            "Referring to a specific group of people or things near the speaker."
+        ]
+    },
+    {
+        "name": "work",
+        "trans": [
+            "Relating to or involving effort or activity directed toward a purpose or goal."
+        ]
+    },
+    {
+        "name": "no",
+        "trans": [
+            "Not any, not at all or denying something."
+        ]
+    },
+    {
+        "name": "only",
+        "trans": [
+            "Existing or happening by itself, or nothing more than what is specified."
+        ]
+    },
+    {
+        "name": "then",
+        "trans": [
+            "Referring to a particular time in the past or future."
+        ]
+    },
+    {
+        "name": "first",
+        "trans": [
+            "Coming before all others in order or time."
+        ]
+    },
+    {
+        "name": "money",
+        "trans": [
+            "Relating to or consisting of currency or bills that are used to buy goods or services."
+        ]
+    },
+    {
+        "name": "over",
+        "trans": [
+            "Finished; ended."
+        ]
+    },
+    {
+        "name": "business",
+        "trans": [
+            "Relating to commerce or trade."
+        ]
+    },
+    {
+        "name": "his",
+        "trans": [
+            "Belonging to or associated with a male person or animal previously mentioned or easily identified."
+        ]
+    },
+    {
+        "name": "game",
+        "trans": [
+            "Relating to or involving competitive play or sport."
+        ]
+    },
+    {
+        "name": "think",
+        "trans": [
+            "Having the power of thought or rational judgment."
+        ]
+    },
+    {
+        "name": "after",
+        "trans": [
+            "Coming later in time or following something else."
+        ]
+    },
+    {
+        "name": "life",
+        "trans": [
+            "Relating to the state of being alive."
+        ]
+    },
+    {
+        "name": "day",
+        "trans": [
+            "Relating to a 24-hour period of time."
+        ]
+    },
+    {
+        "name": "home",
+        "trans": [
+            "Relating to a person's permanent residence or dwelling place."
+        ]
+    },
+    {
+        "name": "economy",
+        "trans": [
+            "Relating to the production, consumption, and transfer of wealth."
+        ]
+    },
+    {
+        "name": "away",
+        "trans": [
+            "At a distance from a particular place or person."
+        ]
+    },
+    {
+        "name": "either",
+        "trans": [
+            "Referring to one of two alternatives."
+        ]
+    },
+    {
+        "name": "fat",
+        "trans": [
+            "Having an excess amount of body weight or adipose tissue."
+        ]
+    },
+    {
+        "name": "key",
+        "trans": [
+            "Crucial or essential to understanding something."
+        ]
+    },
+    {
+        "name": "training",
+        "trans": [
+            "Relating to the process of being taught or educated in a particular skill or subject."
+        ]
+    },
+    {
+        "name": "top",
+        "trans": [
+            "Being at or forming the highest point or part."
+        ]
+    },
+    {
+        "name": "level",
+        "trans": [
+            "Being at the same height or position as something else."
+        ]
+    },
+    {
+        "name": "far",
+        "trans": [
+            "Being at a great distance from a particular place or point in time."
+        ]
+    },
+    {
+        "name": "fun",
+        "trans": [
+            "Providing enjoyment or amusement."
+        ]
+    },
+    {
+        "name": "house",
+        "trans": [
+            "Relating to a place where people live, usually a building or a structure."
+        ]
+    },
+    {
+        "name": "kind",
+        "trans": [
+            "Showing a friendly, generous, or warm-hearted nature."
+        ]
+    },
+    {
+        "name": "future",
+        "trans": [
+            "Relating to a time period or events that will occur after the present."
+        ]
+    },
+    {
+        "name": "action",
+        "trans": [
+            "Involving movement or activity."
+        ]
+    },
+    {
+        "name": "live",
+        "trans": [
+            "Being alive and existing in the present moment."
+        ]
+    },
+    {
+        "name": "period",
+        "trans": [
+            "Referring to a length of time, usually with a specific beginning and end."
+        ]
+    },
+    {
+        "name": "subject",
+        "trans": [
+            "Referring to a particular topic or area of study."
+        ]
+    },
+    {
+        "name": "mean",
+        "trans": [
+            "Being unkind or cruel to others."
+        ]
+    },
+    {
+        "name": "stock",
+        "trans": [
+            "Relating to a supply of goods or materials kept on hand for sale or use."
+        ]
+    },
+    {
+        "name": "chance",
+        "trans": [
+            "Referring to an opportunity that is dependent on circumstances outside of one's control."
+        ]
+    },
+    {
+        "name": "beginning",
+        "trans": [
+            "Referring to the start or origin of something."
+        ]
+    },
+    {
+        "name": "upset",
+        "trans": [
+            "Feeling unhappy, disappointed, or frustrated about something."
+        ]
+    },
+    {
+        "name": "chicken",
+        "trans": [
+            "Relating to or consisting of the meat of a domestic fowl."
+        ]
+    },
+    {
+        "name": "head",
+        "trans": [
+            "Referring to the topmost part of something."
+        ]
+    },
+    {
+        "name": "material",
+        "trans": [
+            "Relating to the substance or matter from which something is made."
+        ]
+    },
+    {
+        "name": "salt",
+        "trans": [
+            "Having a taste characteristic of salt or containing salt."
+        ]
+    },
+    {
+        "name": "car",
+        "trans": [
+            "Relating to a vehicle with four wheels that is powered by an engine and is designed to carry passengers."
+        ]
+    },
+    {
+        "name": "appropriate",
+        "trans": [
+            "Suitable or fitting for a particular purpose or occasion."
+        ]
+    },
+    {
+        "name": "inside",
+        "trans": [
+            "Relating to the interior or inner part of something."
+        ]
+    },
+    {
+        "name": "outside",
+        "trans": [
+            "Relating to the exterior or outer part of something."
+        ]
+    },
+    {
+        "name": "standard",
+        "trans": [
+            "Referring to a level of quality or expectation that is considered to be normal or typical."
+        ]
+    },
+    {
+        "name": "medium",
+        "trans": [
+            "Being in a middle position or degree of quality or size."
+        ]
+    },
+    {
+        "name": "choice",
+        "trans": [
+            "Relating to the act of selecting or making a decision between two or more options."
+        ]
+    },
+    {
+        "name": "north",
+        "trans": [
+            "Referring to the direction that is opposite to the south and is toward the point on the horizon where the North Pole is located."
+        ]
+    },
+    {
+        "name": "square",
+        "trans": [
+            "Having four sides of equal length and four right angles."
+        ]
+    },
+    {
+        "name": "born",
+        "trans": [
+            "Referring to the moment of someone's birth or the time period immediately following it."
+        ]
+    },
+    {
+        "name": "capital",
+        "trans": [
+            "Referring to a city that is the official seat of government in a country or region, or to the financial assets used to start or operate a business."
+        ]
+    },
+    {
+        "name": "shot",
+        "trans": [
+            "Referring to the act of firing a projectile from a weapon or the moment when this occurs."
+        ]
+    },
+    {
+        "name": "front",
+        "trans": [
+            "located at or near the front part of something."
+        ]
+    },
+    {
+        "name": "living",
+        "trans": [
+            "alive and able to grow or function."
+        ]
+    },
+    {
+        "name": "plastic",
+        "trans": [
+            "made of a synthetic material that can be molded into different shapes."
+        ]
+    },
+    {
+        "name": "express",
+        "trans": [
+            "done quickly and with minimal delay."
+        ]
+    },
+    {
+        "name": "feeling",
+        "trans": [
+            "relating to emotions or sensations in the body."
+        ]
+    },
+    {
+        "name": "otherwise",
+        "trans": [
+            "in a different way or manner than the one specified."
+        ]
+    },
+    {
+        "name": "plus",
+        "trans": [
+            "used to indicate something in addition to what has already been mentioned."
+        ]
+    },
+    {
+        "name": "savings",
+        "trans": [
+            "relating to the amount of money that is saved or can be saved."
+        ]
+    },
+    {
+        "name": "animal",
+        "trans": [
+            "relating to living organisms that are not plants and have the ability to move."
+        ]
+    },
+    {
+        "name": "budget",
+        "trans": [
+            "relating to the amount of money available or required for a particular purpose."
+        ]
+    },
+    {
+        "name": "minute",
+        "trans": [
+            "very small in size or amount."
+        ]
+    },
+    {
+        "name": "character",
+        "trans": [
+            "relating to the qualities and traits that make a person or thing unique."
+        ]
+    },
+    {
+        "name": "maximum",
+        "trans": [
+            "relating to the highest or greatest amount or degree."
+        ]
+    },
+    {
+        "name": "novel",
+        "trans": [
+            "new or unusual in an interesting way."
+        ]
+    },
+    {
+        "name": "plenty",
+        "trans": [
+            "a large or sufficient amount or quantity."
+        ]
+    },
+    {
+        "name": "select",
+        "trans": [
+            "chosen carefully from a larger group or number of things."
+        ]
+    },
+    {
+        "name": "background",
+        "trans": [
+            "relating to the circumstances or events that precede and are relevant to something."
+        ]
+    },
+    {
+        "name": "forward",
+        "trans": [
+            "directed or moving ahead in a particular direction."
+        ]
+    },
+    {
+        "name": "glass",
+        "trans": [
+            "made of or resembling glass; transparent or translucent."
+        ]
+    },
+    {
+        "name": "joint",
+        "trans": [
+            "shared by or involving two or more entities or individuals."
+        ]
+    },
+    {
+        "name": "master",
+        "trans": [
+            "having exceptional skill or knowledge in a particular area."
+        ]
+    },
+    {
+        "name": "red",
+        "trans": [
+            "having a color resembling that of blood or a ripe tomato."
+        ]
+    },
+    {
+        "name": "vegetable",
+        "trans": [
+            "relating to plants that are cultivated for their edible parts."
+        ]
+    },
+    {
+        "name": "ideal",
+        "trans": [
+            "satisfying one's conception of what is perfect; most suitable."
+        ]
+    },
+    {
+        "name": "kitchen",
+        "trans": [
+            "relating to the room or area where food is prepared and cooked."
+        ]
+    },
+    {
+        "name": "mother",
+        "trans": [
+            "relating to the female parent of a child."
+        ]
+    },
+    {
+        "name": "party",
+        "trans": [
+            "relating to a social gathering or celebration."
+        ]
+    },
+    {
+        "name": "relative",
+        "trans": [
+            "considered in relation or proportion to something else."
+        ]
+    },
+    {
+        "name": "signal",
+        "trans": [
+            "relating to a gesture or action that conveys information or instructions."
+        ]
+    },
+    {
+        "name": "street",
+        "trans": [
+            "relating to the road in a city or town where buildings are located."
+        ]
+    },
+    {
+        "name": "connect",
+        "trans": [
+            "relating to joining or linking two or more things together."
+        ]
+    },
+    {
+        "name": "minimum",
+        "trans": [
+            "relating to the smallest or least possible amount or degree."
+        ]
+    },
+    {
+        "name": "sea",
+        "trans": [
+            "relating to the large body of saltwater that covers most of the Earth's surface."
+        ]
+    },
+    {
+        "name": "south",
+        "trans": [
+            "relating to the direction to the right of someone facing east."
+        ]
+    },
+    {
+        "name": "status",
+        "trans": [
+            "relating to the position or standing of something or someone in relation to others."
+        ]
+    },
+    {
+        "name": "daughter",
+        "trans": [
+            "relating to the female child of a parent."
+        ]
+    },
+    {
+        "name": "hour",
+        "trans": [
+            "relating to a period of time consisting of 60 minutes."
+        ]
+    },
+    {
+        "name": "trick",
+        "trans": [
+            "relating to a clever or skillful act intended to deceive or entertain."
+        ]
+    },
+    {
+        "name": "afternoon",
+        "trans": [
+            "relating to the time of day between noon and evening."
+        ]
+    },
+    {
+        "name": "gold",
+        "trans": [
+            "made of or resembling the precious metal gold."
+        ]
+    },
+    {
+        "name": "mission",
+        "trans": [
+            "relating to a specific task or purpose that one is sent to accomplish."
+        ]
+    },
+    {
+        "name": "agent",
+        "trans": [
+            "relating to a person who acts on behalf of another person or group."
+        ]
+    },
+    {
+        "name": "corner",
+        "trans": [
+            "relating to the point where two lines or surfaces meet."
+        ]
+    },
+    {
+        "name": "east",
+        "trans": [
+            "relating to the direction to the right of someone facing north."
+        ]
+    },
+    {
+        "name": "neither",
+        "trans": [
+            "not one thing or the other; not either of two possibilities."
+        ]
+    },
+    {
+        "name": "parking",
+        "trans": [
+            "relating to the act of leaving a vehicle in a particular place for a period of time."
+        ]
+    },
+    {
+        "name": "routine",
+        "trans": [
+            "relating to a regular or habitual pattern of behavior."
+        ]
+    },
+    {
+        "name": "swimming",
+        "trans": [
+            "relating to the activity of moving through water by propelling oneself with the limbs."
+        ]
+    },
+    {
+        "name": "winter",
+        "trans": [
+            "relating to the season between autumn and spring characterized by cold weather."
+        ]
+    },
+    {
+        "name": "airline",
+        "trans": [
+            "relating to the industry or business of transporting passengers and cargo by airplane."
+        ]
+    },
+    {
+        "name": "designer",
+        "trans": [
+            "Refers to something that has been created by a professional in fashion, graphic or industrial design."
+        ]
+    },
+    {
+        "name": "dress",
+        "trans": [
+            "Refers to something that is suitable for wearing on formal occasions, such as parties or weddings."
+        ]
+    },
+    {
+        "name": "emergency",
+        "trans": [
+            "Refers to a sudden and unexpected situation that requires immediate action."
+        ]
+    },
+    {
+        "name": "evening",
+        "trans": [
+            "Refers to something that happens or is used during the night, often used in the context of social events or entertainment."
+        ]
+    },
+    {
+        "name": "extension",
+        "trans": [
+            "Refers to something that is added to or expands something else."
+        ]
+    },
+    {
+        "name": "holiday",
+        "trans": [
+            "Refers to a period of time when people take a break from work or school to rest or go on a vacation."
+        ]
+    },
+    {
+        "name": "horror",
+        "trans": [
+            "Refers to something that is scary, frightening or disturbing."
+        ]
+    },
+    {
+        "name": "mountain",
+        "trans": [
+            "Refers to a large natural landform that rises steeply above the surrounding land."
+        ]
+    },
+    {
+        "name": "patient",
+        "trans": [
+            "Refers to someone who is able to wait calmly without becoming annoyed or upset."
+        ]
+    },
+    {
+        "name": "proof",
+        "trans": [
+            "Refers to evidence or a demonstration that shows that something is true or correct."
+        ]
+    },
+    {
+        "name": "west",
+        "trans": [
+            "Refers to the direction that is opposite to the east."
+        ]
+    },
+    {
+        "name": "wine",
+        "trans": [
+            "Refers to an alcoholic beverage made from fermented grapes."
+        ]
+    },
+    {
+        "name": "expert",
+        "trans": [
+            "Refers to someone who has a high level of knowledge or skill in a particular field."
+        ]
+    },
+    {
+        "name": "native",
+        "trans": [
+            "Refers to something or someone that is originally from a particular place."
+        ]
+    },
+    {
+        "name": "opening",
+        "trans": [
+            "Refers to a gap or space that allows access or entry to something."
+        ]
+    },
+    {
+        "name": "silver",
+        "trans": [
+            "Refers to a shiny gray-white metal that is often used in jewelry or coins."
+        ]
+    },
+    {
+        "name": "waste",
+        "trans": [
+            "Refers to something that is not being used or is being used inefficiently."
+        ]
+    },
+    {
+        "name": "plane",
+        "trans": [
+            "Refers to a flat surface or a vehicle that flies in the air."
+        ]
+    },
+    {
+        "name": "leather",
+        "trans": [
+            "Refers to a material made from animal skin that is used to make shoes, bags, and other products."
+        ]
+    },
+    {
+        "name": "purple",
+        "trans": [
+            "Refers to a color that is a blend of blue and red."
+        ]
+    },
+    {
+        "name": "specialist",
+        "trans": [
+            "Refers to someone who has a high level of knowledge or skill in a specific area or field."
+        ]
+    },
+    {
+        "name": "bitter",
+        "trans": [
+            "Refers to something that has a sharp, unpleasant taste."
+        ]
+    },
+    {
+        "name": "incident",
+        "trans": [
+            "Refers to an event or occurrence, often one that is unexpected or unplanned."
+        ]
+    },
+    {
+        "name": "motor",
+        "trans": [
+            "Refers to a machine or device that produces or uses mechanical energy."
+        ]
+    },
+    {
+        "name": "pretend",
+        "trans": [
+            "Refers to the act of behaving as if something is true, even though it is not."
+        ]
+    },
+    {
+        "name": "prize",
+        "trans": [
+            "Refers to something that is won or awarded as a result of competition or achievement."
+        ]
+    },
+    {
+        "name": "resident",
+        "trans": [
+            "Refers to someone who lives in a particular place or community."
+        ]
+    }
+]
