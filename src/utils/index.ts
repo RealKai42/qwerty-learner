@@ -82,7 +82,7 @@ export function findCommonValues<T>(xs: T[], ys: T[]): T[] {
 }
 
 export function toFixedNumber(number: number, fractionDigits: number) {
-  return Number(number.toFixed(fractionDigits))
+  return Number((number ?? 0).toFixed(fractionDigits))
 }
 
 export function getUTCUnixTimestamp() {
