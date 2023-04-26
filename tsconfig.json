@@ -15,10 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": [
-      "node",
-      "unplugin-icons/types/react",
-    ],
+    "types": ["node", "unplugin-icons/types/react"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

@@ -12,6 +12,7 @@ import { useAtom } from 'jotai'
 import React, { useCallback } from 'react'
 import MaterialSymbolsMail from '~icons/material-symbols/mail'
 import MdiCoffee from '~icons/mdi/coffee'
+import XiaoHongShu from '~icons/my-icons/xiaohongshu'
 import SimpleIconsGithub from '~icons/simple-icons/github'
 import SimpleIconsVisualstudiocode from '~icons/simple-icons/visualstudiocode'
 import SimpleIconsWechat from '~icons/simple-icons/wechat'
@@ -138,7 +139,7 @@ const Footer: React.FC = () => {
 
       <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2.5 ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" aria-label="前往 GitHub 项目主页">
-          <SimpleIconsGithub fontSize={15} className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" />
+          <SimpleIconsGithub fontSize={15} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" />
         </a>
 
         <button
@@ -150,7 +151,7 @@ const Footer: React.FC = () => {
           }}
           aria-label="加入我们的小红书社群"
         >
-          <img src={redBookLogo} width={16} height={16} className="fill-current" alt="red book" />
+          <XiaoHongShu fontSize={15} className="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-500" />
         </button>
 
         <button
