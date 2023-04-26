@@ -20,14 +20,14 @@ const Footer: React.FC = () => {
   const handleOpenInfoPanel = useCallback(
     (modalType: InfoPanelType) => {
       recordOpenInfoPanelAction(modalType, 'footer')
-      setInfoPanelState(state => ({ ...state, [modalType]: true }))
+      setInfoPanelState((state) => ({ ...state, [modalType]: true }))
     },
     [setInfoPanelState],
   )
 
   const handleCloseInfoPanel = useCallback(
     (modalType: InfoPanelType) => {
-      setInfoPanelState(state => ({ ...state, [modalType]: false }))
+      setInfoPanelState((state) => ({ ...state, [modalType]: false }))
     },
     [setInfoPanelState],
   )
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
         <br />
       </InfoPanel>
 
-      <footer className="mt-4 mb-1 w-full flex gap-2 items-center justify-center text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
+      <footer className="mb-1 mt-4 flex w-full items-center justify-center gap-2 text-sm ease-in" onClick={(e) => e.currentTarget.blur()}>
         <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" aria-label="前往 GitHub 项目主页">
           <svg
             xmlns="http://www.w3.org/2000/svg"

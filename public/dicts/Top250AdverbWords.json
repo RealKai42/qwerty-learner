@@ -1,0 +1,1022 @@
+[
+    {
+      "name": "not",
+      "trans": ["Not means the opposite or the absence of a particular thing or action."]
+    },
+    {
+      "name": "also",
+      "trans": ["Also means in addition to something or too."]
+    },
+    {
+      "name": "very",
+      "trans": ["Very means to a great extent or degree."]
+    },
+    {
+      "name": "often",
+      "trans": ["Often means many times or frequently."]
+    },
+    {
+      "name": "however",
+      "trans": ["However means on the other hand or nevertheless."]
+    },
+    {
+      "name": "too",
+      "trans": ["Too means also or in addition, and can also indicate an excess or degree of something."]
+    },
+    {
+      "name": "usually",
+      "trans": ["Usually means normally or typically."]
+    },
+    {
+      "name": "really",
+      "trans": ["Really means truly or genuinely."]
+    },
+    {
+      "name": "early",
+      "trans": ["Early means before the usual or expected time."]
+    },
+    {
+      "name": "never",
+      "trans": ["Never means not at any time or not once."]
+    },
+    {
+      "name": "always",
+      "trans": ["Always means at all times or on every occasion."]
+    },
+    {
+      "name": "sometimes",
+      "trans": ["Sometimes means occasionally or from time to time."]
+    },
+    {
+      "name": "together",
+      "trans": ["Together means in a group or in a cooperative manner."]
+    },
+    {
+      "name": "likely",
+      "trans": ["Likely means probably or with a high probability."]
+    },
+    {
+      "name": "simply",
+      "trans": ["Simply means in a plain or straightforward manner."]
+    },
+    {
+      "name": "generally",
+      "trans": ["Generally means usually or commonly."]
+    },
+    {
+      "name": "instead",
+      "trans": ["Instead means as an alternative or substitute."]
+    },
+    {
+      "name": "actually",
+      "trans": ["Actually means in reality or in fact."]
+    },
+    {
+      "name": "again",
+      "trans": ["Again means once more or another time."]
+    },
+    {
+      "name": "rather",
+      "trans": ["Rather means to a certain extent or degree."]
+    },
+    {
+      "name": "almost",
+      "trans": ["Almost means nearly or just about."]
+    },
+    {
+      "name": "especially",
+      "trans": ["Especially means particularly or notably."]
+    },
+    {
+      "name": "ever",
+      "trans": ["Ever means at any time or in the course of one's life."]
+    },
+    {
+      "name": "quickly",
+      "trans": ["Quickly means in a rapid or speedy manner."]
+    },
+    {
+      "name": "probably",
+      "trans": ["Probably means likely or with a high probability."]
+    },
+    {
+      "name": "already",
+      "trans": ["Already means by this time or before the present time."]
+    },
+    {
+      "name": "below",
+      "trans": ["Below means lower or beneath."]
+    },
+    {
+      "name": "directly",
+      "trans": ["Directly means immediately or straight."]
+    },
+    {
+      "name": "therefore",
+      "trans": ["Therefore means as a result or consequently."]
+    },
+    {
+      "name": "else",
+      "trans": ["Else means otherwise or in addition to."]
+    },
+    {
+      "name": "thus",
+      "trans": ["Thus means in this way or as a result of this."]
+    },
+    {
+      "name": "easily",
+      "trans": ["Easily means with ease or without difficulty."]
+    },
+    {
+      "name": "eventually",
+      "trans": ["Eventually means in the end or finally."]
+    },
+    {
+      "name": "exactly",
+      "trans": ["Exactly means precisely or accurately."]
+    },
+    {
+      "name": "certainly",
+      "trans": ["Certainly means without doubt or surely."]
+    },
+    {
+      "name": "normally",
+      "trans": ["Normally means typically or usually."]
+    },
+    {
+      "name": "currently",
+      "trans": ["Currently means at the present time or now."]
+    },
+    {
+      "name": "extremely",
+      "trans": ["Extremely means to a great extent or degree."]
+    },
+    {
+      "name": "finally",
+      "trans": ["Finally means at last or in the end."]
+    },
+    {
+      "name": "constantly",
+      "trans": ["Constantly means continuously or always."]
+    },
+    {
+      "name": "properly",
+      "trans": ["Properly means correctly or in the appropriate manner."]
+    },
+    {
+      "name": "soon",
+      "trans": ["Soon means in a short time or shortly."]
+    },
+    {
+      "name": "specifically",
+      "trans": ["Specifically means in a precise or detailed manner."]
+    },
+    {
+      "name": "ahead",
+      "trans": ["Ahead means in front or before."]
+    },
+    {
+      "name": "daily",
+      "trans": ["Daily means occurring every day or on a daily basis."]
+    },
+    {
+      "name": "highly",
+      "trans": ["Highly means to a great degree or extent."]
+    },
+    {
+      "name": "immediately",
+      "trans": ["Immediately means instantly or without delay."]
+    },
+    {
+      "name": "relatively",
+      "trans": ["Relatively means comparatively or to a certain extent."]
+    },
+    {
+      "name": "slowly",
+      "trans": ["Slowly means at a low speed or pace."]
+    },
+    {
+      "name": "fairly",
+      "trans": ["Fairly means in a just or impartial manner."]
+    },
+    {
+      "name": "primarily",
+      "trans": ["Primarily means mainly or principally."]
+    },
+    {
+      "name": "completely",
+      "trans": ["Completely means entirely or fully."]
+    },
+    {
+      "name": "ultimately",
+      "trans": ["Ultimately means finally or in the end."]
+    },
+    {
+      "name": "widely",
+      "trans": ["Widely means extensively or broadly."]
+    },
+    {
+      "name": "recently",
+      "trans": ["Recently means in the recent past or lately."]
+    },
+    {
+      "name": "seriously",
+      "trans": ["Seriously means in a serious manner or with sincerity."]
+    },
+    {
+      "name": "frequently",
+      "trans": ["Frequently means often or repeatedly."]
+    },
+    {
+      "name": "fully",
+      "trans": ["Fully means completely or entirely."]
+    },
+    {
+      "name": "mostly",
+      "trans": ["Mostly means mainly or for the most part."]
+    },
+    {
+      "name": "naturally",
+      "trans": ["Naturally means in a natural way or without any artificial influence."]
+    },
+    {
+      "name": "nearly",
+      "trans": ["Nearly means almost or close to."]
+    },
+    {
+      "name": "occasionally",
+      "trans": ["Occasionally means sometimes or from time to time."]
+    },
+    {
+      "name": "carefully",
+      "trans": ["Carefully means with care or caution."]
+    },
+    {
+      "name": "clearly",
+      "trans": ["Clearly means in a clear or obvious way."]
+    },
+    {
+      "name": "essentially",
+      "trans": ["Essentially means basically or fundamentally."]
+    },
+    {
+      "name": "possibly",
+      "trans": ["Possibly means maybe or perhaps."]
+    },
+    {
+      "name": "slightly",
+      "trans": ["Slightly means to a small degree or in a minor way."]
+    },
+    {
+      "name": "somewhat",
+      "trans": ["Somewhat means to some extent or in a moderate way."]
+    },
+    {
+      "name": "equally",
+      "trans": ["Equally means to an equal degree or in a balanced way."]
+    },
+    {
+      "name": "greatly",
+      "trans": ["Greatly means to a large extent or significantly."]
+    },
+    {
+      "name": "necessarily",
+      "trans": ["Necessarily means inevitably or as a logical consequence."]
+    },
+    {
+      "name": "personally",
+      "trans": ["Personally means in a personal or individual manner."]
+    },
+    {
+      "name": "rarely",
+      "trans": ["Rarely means seldom or infrequently."]
+    },
+    {
+      "name": "regularly",
+      "trans": ["Regularly means habitually or on a consistent basis."]
+    },
+    {
+      "name": "similarly",
+      "trans": ["Similarly means in a similar way or manner."]
+    },
+    {
+      "name": "basically",
+      "trans": ["Basically means fundamentally or essentially."]
+    },
+    {
+      "name": "closely",
+      "trans": ["Closely means intimately or with close attention."]
+    },
+    {
+      "name": "effectively",
+      "trans": ["Effectively means in an effective or successful way."]
+    },
+    {
+      "name": "initially",
+      "trans": ["Initially means at first or initially."]
+    },
+    {
+      "name": "literally",
+      "trans": ["Literally means actually or in a literal sense."]
+    },
+    {
+      "name": "mainly",
+      "trans": ["Mainly means primarily or chiefly."]
+    },
+    {
+      "name": "merely",
+      "trans": ["Merely means only or just."]
+    },
+    {
+      "name": "gently",
+      "trans": ["Gently means in a gentle or mild way."]
+    },
+    {
+      "name": "hopefully",
+      "trans": ["Hopefully means with hope or optimism."]
+    },
+    {
+      "name": "originally",
+      "trans": ["Originally means initially or from the beginning."]
+    },
+    {
+      "name": "roughly",
+      "trans": ["Roughly means approximately or roughly."]
+    },
+    {
+      "name": "significantly",
+      "trans": ["Significantly means in a significant or important way."]
+    },
+    {
+      "name": "totally",
+      "trans": ["Totally means completely or entirely."]
+    },
+    {
+      "name": "twice",
+      "trans": ["Twice means two times or twice as much."]
+    },
+    {
+      "name": "elsewhere",
+      "trans": ["Elsewhere means in another place or elsewhere."]
+    },
+    {
+      "name": "everywhere",
+      "trans": ["Everywhere means in all places or everywhere."]
+    },
+    {
+      "name": "obviously",
+      "trans": ["Obviously means clearly or obviously."]
+    },
+    {
+      "name": "perfectly",
+      "trans": ["Perfectly means in a perfect or flawless way."]
+    },
+    {
+      "name": "physically",
+      "trans": ["Physically means in a physical or bodily way."]
+    },
+    {
+      "name": "successfully",
+      "trans": ["Successfully means in a successful or effective way."]
+    },
+    {
+      "name": "suddenly",
+      "trans": ["Suddenly means suddenly or abruptly."]
+    },
+    {
+      "name": "truly",
+      "trans": ["Truly means truly or sincerely."]
+    },
+    {
+      "name": "virtually",
+      "trans": ["Virtually means almost or nearly."]
+    },
+    {
+      "name": "altogether",
+      "trans": ["Altogether means completely or entirely."]
+    },
+    {
+      "name": "anyway",
+      "trans": ["Anyway means regardless or in any case."]
+    },
+    {
+      "name": "automatically",
+      "trans": ["Automatically means in a way that is done without conscious thought or effort."]
+    },
+    {
+      "name": "deeply",
+      "trans": ["Deeply means to an intense or extreme degree."]
+    },
+    {
+      "name": "definitely",
+      "trans": ["Definitely means without doubt, for sure."]
+    },
+    {
+      "name": "deliberately",
+      "trans": ["Deliberately means done consciously and intentionally."]
+    },
+    {
+      "name": "hardly",
+      "trans": ["Hardly means barely or almost not at all."]
+    },
+    {
+      "name": "readily",
+      "trans": ["Readily means easily and without hesitation."]
+    },
+    {
+      "name": "terribly",
+      "trans": ["Terribly means in a very bad or serious way."]
+    },
+    {
+      "name": "unfortunately",
+      "trans": ["Unfortunately means regrettably or sadly."]
+    },
+    {
+      "name": "forth",
+      "trans": ["Forth means forward in time or place."]
+    },
+    {
+      "name": "briefly",
+      "trans": ["Briefly means for a short period of time."]
+    },
+    {
+      "name": "moreover",
+      "trans": ["Moreover means in addition to what has been said."]
+    },
+    {
+      "name": "strongly",
+      "trans": ["Strongly means with great force or intensity."]
+    },
+    {
+      "name": "honestly",
+      "trans": ["Honestly means in an honest or truthful manner."]
+    },
+    {
+      "name": "previously",
+      "trans": ["Previously means at an earlier time or before."]
+    },
+    {
+      "name": "as",
+      "trans": ["As means to the same degree or in the same way."]
+    },
+    {
+      "name": "there",
+      "trans": ["There means in or at that place or position."]
+    },
+    {
+      "name": "when",
+      "trans": ["When means at what time or during what period."]
+    },
+    {
+      "name": "how",
+      "trans": ["How means in what way or by what means."]
+    },
+    {
+      "name": "so",
+      "trans": ["So means in such a way or to such an extent."]
+    },
+    {
+      "name": "up",
+      "trans": ["Up means towards a higher place or position."]
+    },
+    {
+      "name": "out",
+      "trans": ["Out means away from the inside or center."]
+    },
+    {
+      "name": "no",
+      "trans": ["No means not at all or not by any means."]
+    },
+    {
+      "name": "only",
+      "trans": ["Only means and no one or nothing more besides."]
+    },
+    {
+      "name": "well",
+      "trans": ["Well means in a good or satisfactory way."]
+    },
+    {
+      "name": "then",
+      "trans": ["Then means at that time or subsequently."]
+    },
+    {
+      "name": "first",
+      "trans": ["First means before anything else in order or time."]
+    },
+    {
+      "name": "where",
+      "trans": ["Where means in or at what place or location."]
+    },
+    {
+      "name": "why",
+      "trans": ["Why means for what reason or purpose."]
+    },
+    {
+      "name": "now",
+      "trans": ["Now means at the present time or moment."]
+    },
+    {
+      "name": "around",
+      "trans": ["Around means in a circular direction or surrounding."]
+    },
+    {
+      "name": "once",
+      "trans": ["Once means on one occasion or at one time."]
+    },
+    {
+      "name": "down",
+      "trans": ["Down means towards or in a lower place or position."]
+    },
+    {
+      "name": "off",
+      "trans": ["Off means away from a place or position."]
+    },
+    {
+      "name": "here",
+      "trans": ["Here means in or at this place or location."]
+    },
+    {
+      "name": "tonight",
+      "trans": ["Tonight means on the present or coming evening."]
+    },
+    {
+      "name": "away",
+      "trans": ["Away means at a distance from a particular place or person."]
+    },
+    {
+      "name": "today",
+      "trans": ["Today means on the present or current day."]
+    },
+    {
+      "name": "far",
+      "trans": ["Far means at, to, or by a great distance."]
+    },
+    {
+      "name": "quite",
+      "trans": ["Quite means to a considerable extent or degree."]
+    },
+    {
+      "name": "later",
+      "trans": ["Later means at a time in the future or subsequently."]
+    },
+    {
+      "name": "above",
+      "trans": ["Above means at a higher level or position."]
+    },
+    {
+      "name": "yet",
+      "trans": ["Yet means up until the present or a specified time."]
+    },
+    {
+      "name": "maybe",
+      "trans": ["Maybe means perhaps or possibly."]
+    },
+    {
+      "name": "otherwise",
+      "trans": ["Otherwise means in a different way or under different circumstances."]
+    },
+    {
+      "name": "near",
+      "trans": ["Near means close to or not far away from."]
+    },
+    {
+      "name": "forward",
+      "trans": ["Forward means towards a destination or goal."]
+    },
+    {
+      "name": "somewhere",
+      "trans": ["Somewhere means in or to a place not specified or known."]
+    },
+    {
+      "name": "anywhere",
+      "trans": ["Anywhere means in, at, or to any place."]
+    },
+    {
+      "name": "please",
+      "trans": ["Please means as a polite expression of request or agreement."]
+    },
+    {
+      "name": "forever",
+      "trans": ["Forever means for all future time; for always."]
+    },
+    {
+      "name": "somehow",
+      "trans": ["In a way that is not known or specified."]
+    },
+    {
+      "name": "absolutely",
+      "trans": ["Completely or totally."]
+    },
+    {
+      "name": "abroad",
+      "trans": ["In or to a foreign country or countries."]
+    },
+    {
+      "name": "yeah",
+      "trans": ["Yes or sure."]
+    },
+    {
+      "name": "nowhere",
+      "trans": ["Not in or to any place."]
+    },
+    {
+      "name": "tomorrow",
+      "trans": ["On or for the day after today."]
+    },
+    {
+      "name": "yesterday",
+      "trans": ["On or for the day before today."]
+    },
+    {
+      "name": "the",
+      "trans": ["Used to indicate a particular thing already mentioned or known."]
+    },
+    {
+      "name": "to",
+      "trans": ["Expressing motion in the direction of (a particular location)."]
+    },
+    {
+      "name": "in",
+      "trans": ["Expressing the location of someone or something inside a place or thing."]
+    },
+    {
+      "name": "on",
+      "trans": ["Expressing the location of something at the surface of a thing."]
+    },
+    {
+      "name": "by",
+      "trans": ["Indicating the means of achieving something."]
+    },
+    {
+      "name": "more",
+      "trans": ["To a greater extent or degree."]
+    },
+    {
+      "name": "about",
+      "trans": ["On the subject of; concerning."]
+    },
+    {
+      "name": "such",
+      "trans": ["Of the type previously mentioned or easily identified."]
+    },
+    {
+      "name": "through",
+      "trans": ["Moving in one side and out of the other side of (an opening, channel, or location)."]
+    },
+    {
+      "name": "new",
+      "trans": ["Recently made, discovered, or created."]
+    },
+    {
+      "name": "just",
+      "trans": ["Exactly or very recently."]
+    },
+    {
+      "name": "any",
+      "trans": ["Used to refer to one or some of a thing or number of things, no matter how much or how many."]
+    },
+    {
+      "name": "each",
+      "trans": ["Used to refer to every one of two or more people or things."]
+    },
+    {
+      "name": "much",
+      "trans": ["To a great extent or degree."]
+    },
+    {
+      "name": "before",
+      "trans": ["During the period of time preceding (a particular event or time)."]
+    },
+    {
+      "name": "between",
+      "trans": ["At, into, or across the space separating (two objects or regions)."]
+    },
+    {
+      "name": "free",
+      "trans": ["Without cost or payment."]
+    },
+    {
+      "name": "right",
+      "trans": ["To an exact or precise extent or degree."]
+    },
+    {
+      "name": "best",
+      "trans": ["Most excellently or effectively."]
+    },
+    {
+      "name": "since",
+      "trans": ["From a particular time or event in the past until now or a particular time in the past."]
+    },
+    {
+      "name": "both",
+      "trans": ["Used to refer to two people or things, regarded and identified together."]
+    },
+    {
+      "name": "sure",
+      "trans": ["Completely confident or certain about something."]
+    },
+    {
+      "name": "without",
+      "trans": ["Not having or using."]
+    },
+    {
+      "name": "back",
+      "trans": ["In or into a previous position or state."]
+    },
+    {
+      "name": "better",
+      "trans": ["To a greater extent or degree."]
+    },
+    {
+      "name": "enough",
+      "trans": ["As much or as many as required."]
+    },
+    {
+      "name": "lot",
+      "trans": ["A large number or amount."]
+    },
+    {
+      "name": "small",
+      "trans": ["In a way that is limited in size or amount."]
+    },
+    {
+      "name": "though",
+      "trans": ["Despite the fact that; although."]
+    },
+    {
+      "name": "less",
+      "trans": ["To a smaller extent or degree."]
+    },
+    {
+      "name": "little",
+      "trans": ["To only a small extent or degree."]
+    },
+    {
+      "name": "under",
+      "trans": ["Extending or directly below something else."]
+    },
+    {
+      "name": "next",
+      "trans": ["Coming immediately after the present one in sequence or order."]
+    },
+    {
+      "name": "hard",
+      "trans": ["With a great deal of effort or force."]
+    },
+    {
+      "name": "real",
+      "trans": ["Actually existing or happening as described or perceived."]
+    },
+    {
+      "name": "left",
+      "trans": ["On or to the side of something that is considered the weaker or less important side."]
+    },
+    {
+      "name": "least",
+      "trans": ["To the smallest extent or degree."]
+    },
+    {
+      "name": "short",
+      "trans": ["In a way that does not take a long time."]
+    },
+    {
+      "name": "last",
+      "trans": ["On or until the final part of an event or period of time."]
+    },
+    {
+      "name": "within",
+      "trans": ["Inside something; inside a particular area or space."]
+    },
+    {
+      "name": "along",
+      "trans": ["Moving in a constant direction on (a path or route)."]
+    },
+    {
+      "name": "lower",
+      "trans": ["At a lower level or rank than something."]
+    },
+    {
+      "name": true,
+      "trans": ["In accordance with fact or reality."]
+    },
+    {
+      "name": "bad",
+      "trans": ["Badly is used to describe how something is done, or how someone is feeling, in a negative or unpleasant way."]
+    },
+    {
+      "name": "across",
+      "trans": ["Across means from one side of something to the other side."]
+    },
+    {
+      "name": "clear",
+      "trans": ["Clearly means something is easy to see, hear, or understand."]
+    },
+    {
+      "name": "easy",
+      "trans": ["Easily means without difficulty or effort."]
+    },
+    {
+      "name": "full",
+      "trans": ["Fully means completely or to the greatest extent possible."]
+    },
+    {
+      "name": "close",
+      "trans": ["Closely means in a way that is near in space, time, or relationship."]
+    },
+    {
+      "name": "late",
+      "trans": ["Lately means not on time, or after the expected or usual time."]
+    },
+    {
+      "name": "proper",
+      "trans": ["Properly means in the right or appropriate way."]
+    },
+    {
+      "name": "fast",
+      "trans": ["Fast means quickly or at a high speed."]
+    },
+    {
+      "name": "wide",
+      "trans": ["Widely means over a large area or range."]
+    },
+    {
+      "name": "item",
+      "trans": ["An item refers to a particular thing or object."]
+    },
+    {
+      "name": "wrong",
+      "trans": ["Wrongly means in a way that is not correct or accurate."]
+    },
+    {
+      "name": "ago",
+      "trans": ["Ago means in the past or before the present time."]
+    },
+    {
+      "name": "behind",
+      "trans": ["Behind means at the back of or in the rear of something."]
+    },
+    {
+      "name": "quick",
+      "trans": ["Quickly means in a short amount of time or without delay."]
+    },
+    {
+      "name": "straight",
+      "trans": ["Straight means without bending or curving, or in a direct and honest way."]
+    },
+    {
+      "name": "direct",
+      "trans": ["Directly means in a straight line or without intervening factors."]
+    },
+    {
+      "name": "extra",
+      "trans": ["Extra means in addition to what is usual or expected."]
+    },
+    {
+      "name": "morning",
+      "trans": ["In the morning means during the early part of the day, from sunrise until noon."]
+    },
+    {
+      "name": "pretty",
+      "trans": ["Pretty means attractive or pleasing to look at."]
+    },
+    {
+      "name": "overall",
+      "trans": ["Overall means taking everything into account or in general."]
+    },
+    {
+      "name": "alone",
+      "trans": ["Alone means without anyone else or being solitary."]
+    },
+    {
+      "name": "bright",
+      "trans": ["Brightly means giving out a lot of light or shining strongly."]
+    },
+    {
+      "name": "flat",
+      "trans": ["Flatly means without any emotion or enthusiasm."]
+    },
+    {
+      "name": "whatever",
+      "trans": ["Whatever means anything or everything that."]
+    },
+    {
+      "name": "slow",
+      "trans": ["Slowly means at a low speed or taking a long time."]
+    },
+    {
+      "name": "clean",
+      "trans": ["Cleanly means in a way that is free from dirt, marks, or unwanted substances."]
+    },
+    {
+      "name": "fresh",
+      "trans": ["Freshly means recently or newly."]
+    },
+    {
+      "name": "whenever",
+      "trans": ["Whenever means at any time or every time that."]
+    },
+    {
+      "name": "cheap",
+      "trans": ["Cheaply means at a low cost or price."]
+    },
+    {
+      "name": "thin",
+      "trans": ["Thinly means in a way that is not thick or with very little substance."]
+    },
+    {
+      "name": "cool",
+      "trans": ["Coolly means in a calm and composed way or without showing much emotion."]
+    },
+    {
+      "name": "fair",
+      "trans": ["Fairly means in a way that is just, reasonable, or without bias."]
+    },
+    {
+      "name": "fine",
+      "trans": ["Finely means in a way that is delicate, subtle, or precise."]
+    },
+    {
+      "name": "smooth",
+      "trans": ["Smoothly means in a way that is without any roughness, bumps, or irregularities."]
+    },
+    {
+      "name": false,
+      "trans": ["Falsely means in a way that is not true or accurate."]
+    },
+    {
+      "name": "thick",
+      "trans": ["Thickly means in a way that is not thin or with a lot of substance."]
+    },
+    {
+      "name": "collect",
+      "trans": ["Collectively means as a group or as a whole."]
+    },
+    {
+      "name": "nearby",
+      "trans": ["Nearby means in the vicinity or close to a particular place."]
+    },
+    {
+      "name": "wild",
+      "trans": ["Wildly means in a way that is uncontrolled or with great enthusiasm."]
+    },
+    {
+      "name": "apart",
+      "trans": ["Apart means separated by a distance or interval."]
+    },
+    {
+      "name": "none",
+      "trans": ["None means not any or not one."]
+    },
+    {
+      "name": "strange",
+      "trans": ["Strangely means in a way that is unusual, surprising, or difficult to understand."]
+    },
+    {
+      "name": "tourist",
+      "trans": ["Touristically means in a way that is related to tourism or the tourist industry."]
+    },
+    {
+      "name": "aside",
+      "trans": ["Aside means to one side or out of the way."]
+    },
+    {
+      "name": "loud",
+      "trans": ["Loudly means with a high volume or in a way that can be easily heard."]
+    },
+    {
+      "name": "super",
+      "trans": ["Super means to an extremely high degree or level."]
+    },
+    {
+      "name": "tight",
+      "trans": ["Tightly means in a way that is firmly or closely fixed in place."]
+    },
+    {
+      "name": "gross",
+      "trans": ["Grossly means in a way that is extremely unpleasant or offensive."]
+    },
+    {
+      "name": "ill",
+      "trans": ["Ill means in a way that is not healthy or suffering from a disease or illness."]
+    },
+    {
+      "name": "downtown",
+      "trans": ["Downtown means in or towards the central part of a city or town."]
+    },
+    {
+      "name": "honest",
+      "trans": ["Honestly means in a way that is truthful or sincere."]
+    },
+    {
+      "name": "ok",
+      "trans": ["Okay means in a way that is acceptable or satisfactory."]
+    },
+    {
+      "name": "pray",
+      "trans": ["Pray means in a way that is related to religious worship or asking for help from a higher power."]
+    },
+    {
+      "name": "weekly",
+      "trans": ["Weekly means happening or done once a week."]
+    }
+  ]
