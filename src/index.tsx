@@ -3,8 +3,6 @@ import './index.css'
 import GalleryPage from './pages/Gallery-N'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
-import dayjs from 'dayjs'
-import utc from 'dayjs/plugin/utc'
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import process from 'process'
@@ -20,8 +18,6 @@ if (process.env.NODE_ENV === 'production') {
   // for dev
   mixpanel.init('5474177127e4767124c123b2d7846e2a', { debug: true })
 }
-
-dayjs.extend(utc)
 
 const container = document.getElementById('root')
 

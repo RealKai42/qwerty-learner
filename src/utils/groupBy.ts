@@ -1,4 +1,4 @@
-import { DictionaryResource } from '@/typings'
+import { Dictionary } from '@/typings'
 
 export default function groupBy<T>(elements: T[], iteratee: (value: T) => string) {
   return elements.reduce<Record<string, T[]>>((result, value) => {
@@ -12,8 +12,8 @@ export default function groupBy<T>(elements: T[], iteratee: (value: T) => string
   }, {})
 }
 
-export function groupByDictTags(dicts: DictionaryResource[]) {
-  return dicts.reduce<Record<string, DictionaryResource[]>>((result, dict) => {
+export function groupByDictTags(dicts: Dictionary[]) {
+  return dicts.reduce<Record<string, Dictionary[]>>((result, dict) => {
     dict.tags.forEach((tag) => {
       if (Object.prototype.hasOwnProperty.call(result, tag)) {
         result[tag].push(dict)

@@ -5,7 +5,7 @@ import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
 import { currentDictInfoAtom } from '@/store'
-import { DictionaryResource, LanguageCategoryType } from '@/typings'
+import { Dictionary, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { IconX } from '@tabler/icons-react'
@@ -17,7 +17,7 @@ import { Updater, useImmer } from 'use-immer'
 
 export type GalleryState = {
   currentLanguageTab: LanguageCategoryType
-  chapterListDict: DictionaryResource | null
+  chapterListDict: Dictionary | null
 }
 
 const initialGalleryState: GalleryState = {
@@ -39,7 +39,7 @@ export default function GalleryPage() {
     const currentLanguageCategoryDicts = dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab)
     const groupedByCategory = Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
-      ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, DictionaryResource[]>],
+      ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, Dictionary[]>],
     )
 
     return {

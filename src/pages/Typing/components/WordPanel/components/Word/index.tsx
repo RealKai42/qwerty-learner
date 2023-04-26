@@ -7,10 +7,9 @@ import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import { isIgnoreCaseAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
-import { useMixPanelWordLogUploader } from '@/utils'
+import { useMixPanelWordLogUploader, getUtcStringForMixpanel } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { LetterMistakes } from '@/utils/db/record'
-import dayjs from 'dayjs'
 import { useAtomValue } from 'jotai'
 import { useEffect, useContext, useCallback } from 'react'
 import { useImmer } from 'use-immer'
@@ -69,7 +68,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
     const newWordState = structuredClone(initialWordState)
     newWordState.displayWord = wordString
     newWordState.letterStates = new Array(wordString.length).fill('normal')
-    newWordState.startTime = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+    newWordState.startTime = getUtcStringForMixpanel()
     setWordState(newWordState)
   }, [word, setWordState])
 
@@ -120,7 +119,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
         setWordState((state) => {
           state.letterStates[inputLength - 1] = 'correct'
           state.isFinished = true
-          state.endTime = dayjs.utc().format('YYYY-MM-DD HH:mm:ss')
+          state.endTime = getUtcStringForMixpanel()
         })
         playHintSound()
       } else {

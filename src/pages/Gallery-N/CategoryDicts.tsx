@@ -1,13 +1,13 @@
 import DictTagSwitcher from './DictTagSwitcher'
-import Dictionary from './DictionaryWithoutCover'
+import DictionaryComponent from './DictionaryWithoutCover'
 import { GalleryContext } from './index'
 import { currentDictInfoAtom } from '@/store'
-import { DictionaryResource } from '@/typings'
+import { Dictionary } from '@/typings'
 import { findCommonValues } from '@/utils'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 
-export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByTag: Record<string, DictionaryResource[]> }) {
+export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByTag: Record<string, Dictionary[]> }) {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const { setState } = useContext(GalleryContext)!
   const tagList = useMemo(() => Object.keys(groupedDictsByTag), [groupedDictsByTag])
@@ -19,7 +19,7 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
   }, [])
 
   const onClickDict = useCallback(
-    (dict: DictionaryResource) => {
+    (dict: Dictionary) => {
       setState((state) => {
         state.chapterListDict = dict
       })
@@ -39,7 +39,7 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
       <DictTagSwitcher tagList={tagList} currentTag={currentTag} onChangeCurrentTag={onChangeCurrentTag} />
       <div className="mt-8 grid gap-x-5 gap-y-10 px-1 pb-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {groupedDictsByTag[currentTag].map((dict) => (
-          <Dictionary key={dict.id} dictionary={dict} onClick={() => onClickDict(dict)} />
+          <DictionaryComponent key={dict.id} dictionary={dict} onClick={() => onClickDict(dict)} />
         ))}
       </div>
     </div>

@@ -49,9 +49,8 @@ const Footer: React.FC = () => {
           openState={infoPanelState.donate}
           title="Buy us a coffee"
           icon={IconCoffee}
-          btnColor="bg-yellow-300"
-          iconColor="text-yellow-500"
-          iconBackgroundColor="bg-yellow-100"
+          buttonClassName="bg-yellow-500 hover:bg-yellow-400"
+          iconClassName="bg-amber-100 text-amber-500"
           onClose={() => handleCloseInfoPanel('donate')}
         >
           <p className="text-sm text-gray-500 dark:text-gray-300">
@@ -76,9 +75,8 @@ const Footer: React.FC = () => {
           openState={infoPanelState.vsc}
           title="VSCode 摸🐟插件"
           icon={IconTerminal2}
-          btnColor="bg-blue-400"
-          iconColor="text-blue-600"
-          iconBackgroundColor="bg-blue-300"
+          buttonClassName="bg-blue-500 hover:bg-blue-400"
+          iconClassName="text-blue-600 bg-blue-300"
           onClose={() => handleCloseInfoPanel('vsc')}
         >
           <p className="text-sm text-gray-500  dark:text-gray-400">
@@ -100,9 +98,8 @@ const Footer: React.FC = () => {
           openState={infoPanelState.community}
           title="用户反馈社群"
           icon={IconBrandWechat}
-          btnColor="bg-cyan-400"
-          iconColor="text-cyan-600"
-          iconBackgroundColor="bg-cyan-300"
+          buttonClassName="bg-cyan-500 hover:bg-cyan-400"
+          iconClassName="text-cyan-600 bg-cyan-300"
           onClose={() => handleCloseInfoPanel('community')}
         >
           <p className="text-sm text-gray-500  dark:text-gray-400">
@@ -128,9 +125,8 @@ const Footer: React.FC = () => {
           openState={infoPanelState.redBook}
           title="小红书社群"
           icon="redBookLogo"
-          btnColor="bg-rose-500"
-          iconColor="#ff2e4d"
-          iconBackgroundColor="bg-rose-300"
+          buttonClassName="bg-rose-500 hover:bg-red-400"
+          iconClassName="bg-rose-300"
           onClose={() => handleCloseInfoPanel('redBook')}
         >
           <p className="text-sm text-gray-500  dark:text-gray-400">
