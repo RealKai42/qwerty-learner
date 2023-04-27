@@ -1,4 +1,5 @@
 import { SoundIcon } from '../SoundIcon'
+import Tooltip from '@/components/Tooltip'
 import useSpeech from '@/hooks/useSpeech'
 import { isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
@@ -22,13 +23,14 @@ export default function Translation({ trans }: TranslationProps) {
     >
       {trans}
       {window.speechSynthesis && pronunciationConfig.isTransRead && (
-        <SoundIcon
-          animated={speaking}
-          onClick={() => {
-            speak(true)
-          }}
-          className="absolute inset-y-0 -right-8 my-auto h-5 w-5 cursor-pointer leading-7"
-        />
+        <Tooltip content="朗读发音" className="!absolute inset-y-0 -right-8 my-auto  h-5 w-5 cursor-pointer leading-7">
+          <SoundIcon
+            animated={speaking}
+            onClick={() => {
+              speak(true)
+            }}
+          />
+        </Tooltip>
       )}
     </div>
   )
