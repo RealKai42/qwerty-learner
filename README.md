@@ -99,6 +99,17 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 <br />
 <br />
 
+## 如何贡献
+
+### 贡献代码
+
+[Call for Contributor](https://github.com/Kaiyiwing/qwerty-learner/issues/390)  
+[贡献准则](./docs/CONTRIBUTING.md)
+
+### 贡献词库
+
+[导入词典](./docs/toBuildDict.md)
+
 ## 🏆 荣誉
 
 - Github 全球趋势榜上榜项目
@@ -129,10 +140,6 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 - 日语常见词、N1 ～ N5 [@xiaojia](https://github.com/wetery)
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出
-
-### 如何导入词典
-
-[导入词典](./docs/toBuildDict.md)
 
 <br />
 <br />
