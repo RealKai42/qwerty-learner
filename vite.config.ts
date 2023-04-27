@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react'
+import { promises as fs } from 'fs'
 import { getLastCommit } from 'git-last-commit'
 import jotaiDebugLabel from 'jotai/babel/plugin-debug-label'
 import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
@@ -6,7 +7,6 @@ import path from 'node:path'
 import { visualizer } from 'rollup-plugin-visualizer'
 import Icons from 'unplugin-icons/vite'
 import { defineConfig, type PluginOption } from 'vite'
-import { promises as fs } from 'fs'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => {

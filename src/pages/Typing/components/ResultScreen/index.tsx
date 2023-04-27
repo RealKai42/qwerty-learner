@@ -13,10 +13,10 @@ import { Transition } from '@headlessui/react'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import MdiCoffee from '~icons/mdi/coffee'
-import XiaoHongShu from '~icons/my-icons/xiaohongshu'
-import SimpleIconsGithub from '~icons/simple-icons/github'
-import SimpleIconsWechat from '~icons/simple-icons/wechat'
+import IconCoffee from '~icons/mdi/coffee'
+import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
+import IconGithub from '~icons/simple-icons/github'
+import IconWechat from '~icons/simple-icons/wechat'
 import IconX from '~icons/tabler/x'
 
 const ResultScreen = () => {
@@ -152,7 +152,7 @@ const ResultScreen = () => {
               <div className="ml-2 flex flex-col items-center justify-end gap-3.5 text-xl">
                 <ShareButton />
 
-                <XiaoHongShu
+                <IconXiaoHongShu
                   fontSize={15}
                   className="cursor-pointer text-red-500 focus:outline-none"
                   onClick={(e) => {
@@ -170,7 +170,7 @@ const ResultScreen = () => {
                   type="button"
                   title="捐赠我们的项目"
                 >
-                  <MdiCoffee fontSize={17} className={`text-amber-500 focus:outline-none ${styles.imgShake}`} />
+                  <IconCoffee fontSize={17} className={`text-amber-500 focus:outline-none ${styles.imgShake}`} />
                 </button>
 
                 <button
@@ -182,11 +182,11 @@ const ResultScreen = () => {
                   type="button"
                   title="加入我们的社区"
                 >
-                  <SimpleIconsWechat fontSize={16} className="text-green-500 focus:outline-none" />
+                  <IconWechat fontSize={16} className="text-green-500 focus:outline-none" />
                 </button>
 
                 <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
-                  <SimpleIconsGithub fontSize={16} className="text-gray-500 focus:outline-none" />
+                  <IconGithub fontSize={16} className="text-gray-500 focus:outline-none" />
                 </a>
               </div>
             </div>
