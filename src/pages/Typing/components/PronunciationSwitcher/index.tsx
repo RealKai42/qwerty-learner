@@ -7,8 +7,8 @@ import { Popover, Transition, Switch } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
 import { useCallback, useEffect, useMemo } from 'react'
 import { Fragment } from 'react'
-import TablerCheck from '~icons/tabler/check'
-import TablerChevronDown from '~icons/tabler/chevron-down'
+import IconCheck from '~icons/tabler/check'
+import IconChevronDown from '~icons/tabler/chevron-down'
 
 const PronunciationSwitcher = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
@@ -171,7 +171,7 @@ const PronunciationSwitcher = () => {
                           <Listbox.Button className="listbox-button">
                             <span>{pronunciationConfig.name}</span>
                             <span>
-                              <TablerChevronDown className="focus:outline-none" />
+                              <IconChevronDown className="focus:outline-none" />
                             </span>
                           </Listbox.Button>
                           <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
@@ -183,7 +183,7 @@ const PronunciationSwitcher = () => {
                                       <span>{item.name}</span>
                                       {selected ? (
                                         <span className="listbox-options-icon ">
-                                          <TablerCheck className="focus:outline-none" />
+                                          <IconCheck className="focus:outline-none" />
                                         </span>
                                       ) : null}
                                     </>

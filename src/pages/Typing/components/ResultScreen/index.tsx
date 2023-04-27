@@ -17,7 +17,7 @@ import MdiCoffee from '~icons/mdi/coffee'
 import XiaoHongShu from '~icons/my-icons/xiaohongshu'
 import SimpleIconsGithub from '~icons/simple-icons/github'
 import SimpleIconsWechat from '~icons/simple-icons/wechat'
-import TablerX from '~icons/tabler/x'
+import IconX from '~icons/tabler/x'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -131,7 +131,7 @@ const ResultScreen = () => {
               {`${currentDictInfo.name} 第 ${currentChapter + 1} 章`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
-              <TablerX className="text-gray-400" />
+              <IconX className="text-gray-400" />
             </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">

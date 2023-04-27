@@ -7,7 +7,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import TablerX from '~icons/tabler/x'
+import IconX from '~icons/tabler/x'
 
 export default function ChapterList() {
   const {
@@ -82,7 +82,7 @@ export default function ChapterList() {
                   <>
                     <div className="flex w-full items-end justify-between py-4 pl-5">
                       <span className="text-lg text-gray-700 dark:text-gray-200">{dict.name}</span>
-                      <TablerX className="mr-2 cursor-pointer text-gray-400" onClick={onCloseDialog} />
+                      <IconX className="mr-2 cursor-pointer text-gray-400" onClick={onCloseDialog} />
                     </div>
                     <div className="w-full flex-1 overflow-y-auto ">
                       <table className="block min-w-full divide-y divide-gray-100 dark:divide-gray-800">

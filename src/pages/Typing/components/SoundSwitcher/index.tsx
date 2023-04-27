@@ -2,7 +2,7 @@ import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
 import { Popover, Transition, Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback } from 'react'
-import HeroiconsSpeakerWave from '~icons/heroicons/speaker-wave-solid'
+import IconSpeakerWave from '~icons/heroicons/speaker-wave-solid'
 
 export default function SoundSwitcher() {
   const [keySoundsConfig, setKeySoundsConfig] = useAtom(keySoundsConfigAtom)
@@ -36,7 +36,7 @@ export default function SoundSwitcher() {
             aria-label="音效设置"
             title="音效设置"
           >
-            <HeroiconsSpeakerWave className="icon" />
+            <IconSpeakerWave className="icon" />
           </Popover.Button>
 
           <Transition

@@ -6,14 +6,14 @@ import { isOpenDarkModeAtom } from '@/store'
 import { useAtom } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import HeroiconsEyeSlash from '~icons/heroicons/eye-slash-solid'
-import HeroiconsEye from '~icons/heroicons/eye-solid'
-import HeroiconsMoon from '~icons/heroicons/moon-solid'
-import HeroiconsSun from '~icons/heroicons/sun-solid'
-import TablerLanguage from '~icons/tabler/language'
-import TablerLanguageOff from '~icons/tabler/language-off'
-import TablerRepeatOff from '~icons/tabler/repeat-off'
-import TablerRepeatOnce from '~icons/tabler/repeat-once'
+import IconEyeSlash from '~icons/heroicons/eye-slash-solid'
+import IconEye from '~icons/heroicons/eye-solid'
+import IconMoon from '~icons/heroicons/moon-solid'
+import IconSun from '~icons/heroicons/sun-solid'
+import IconLanguage from '~icons/tabler/language'
+import IconLanguageOff from '~icons/tabler/language-off'
+import IconRepeatOff from '~icons/tabler/repeat-off'
+import IconRepeatOnce from '~icons/tabler/repeat-once'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -91,7 +91,7 @@ export default function Switcher() {
           }}
           aria-label="开关单个单词循环（Ctrl + L）"
         >
-          {state?.isLoopSingleWord ? <TablerRepeatOnce /> : <TablerRepeatOff />}
+          {state?.isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
@@ -104,7 +104,7 @@ export default function Switcher() {
           }}
           aria-label="开关英语显示（Ctrl + V）"
         >
-          {state?.isWordVisible ? <HeroiconsEye className="icon" /> : <HeroiconsEyeSlash className="icon" />}
+          {state?.isWordVisible ? <IconEye className="icon" /> : <IconEyeSlash className="icon" />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + T）">
@@ -117,7 +117,7 @@ export default function Switcher() {
           }}
           aria-label="开关释义显示（Ctrl + T）"
         >
-          {state?.isTransVisible ? <TablerLanguage /> : <TablerLanguageOff />}
+          {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关深色模式（Ctrl + D）">
@@ -130,7 +130,7 @@ export default function Switcher() {
           }}
           aria-label="开关深色模式（Ctrl + D）"
         >
-          {isOpenDarkMode ? <HeroiconsMoon className="icon" /> : <HeroiconsSun className="icon" />}
+          {isOpenDarkMode ? <IconMoon className="icon" /> : <IconSun className="icon" />}
         </button>
       </Tooltip>
 
