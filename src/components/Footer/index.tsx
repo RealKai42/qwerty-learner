@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
         openState={infoPanelState.donate}
         title="Buy us a coffee"
         icon={IconCoffee}
-        buttonClassName="bg-yellow-500 hover:bg-yellow-400"
+        buttonClassName="bg-amber-500 hover:bg-amber-400"
         iconClassName="text-amber-500 bg-amber-100 dark:text-amber-300 dark:bg-amber-500"
         onClose={() => handleCloseInfoPanel('donate')}
       >
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
         openState={infoPanelState.vsc}
         title="VSCode 摸🐟插件"
         icon={IconTerminal2}
-        buttonClassName="bg-blue-500 hover:bg-blue-400"
+        buttonClassName="bg-sky-500 hover:bg-sky-400"
         iconClassName="text-sky-500 bg-sky-100 dark:text-sky-300 dark:bg-sky-500"
         onClose={() => handleCloseInfoPanel('vsc')}
       >
@@ -90,11 +90,11 @@ const Footer: React.FC = () => {
         openState={infoPanelState.community}
         title="用户反馈社群"
         icon={IconWechat}
-        buttonClassName="bg-cyan-500 hover:bg-cyan-400"
+        buttonClassName="bg-green-500 hover:bg-green-400"
         iconClassName="text-green-500 bg-green-100 dark:text-green-300 dark:bg-green-500"
         onClose={() => handleCloseInfoPanel('community')}
       >
-        <p className="text-sm text-gray-500  dark:text-gray-400">
+        <p className="text-sm text-gray-500 dark:text-gray-400">
           Qwerty Learner 是一个开源项目，旨在为用户提供高质量、可靠的打字练习工具。
           <br />
           加入我们的用户社群后，您可以与我们的开发团队进行沟通，分享您的使用体验和建议，帮助我们改进产品，同时也能够及时了解我们的最新动态和更新内容。
@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
         openState={infoPanelState.redBook}
         title="小红书社群"
         icon={IconXiaoHongShu}
-        buttonClassName="bg-rose-500 hover:bg-red-400"
+        buttonClassName="bg-red-500 hover:bg-red-400"
         iconClassName="text-red-500 bg-red-100 dark:text-red-600 dark:bg-red-500"
         onClose={() => handleCloseInfoPanel('redBook')}
       >

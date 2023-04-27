@@ -45,7 +45,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon: 
                     <div
                       className={classNames(
                         iconClassName,
-                        `mx-auto flex flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-50 sm:mx-0 sm:h-10 sm:w-10`,
+                        `mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-30 sm:mx-0 sm:h-10 sm:w-10`,
                       )}
                     >
                       <Icon className="h-6 w-6 stroke-current dark:bg-opacity-100" />
