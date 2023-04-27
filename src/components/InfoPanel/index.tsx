@@ -48,7 +48,7 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon: 
                         `mx-auto flex flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-50 sm:mx-0 sm:h-10 sm:w-10`,
                       )}
                     >
-                      <Icon fontSize={28} className="stroke-current dark:bg-opacity-100" />
+                      <Icon className="h-6 w-6 stroke-current dark:bg-opacity-100" />
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
