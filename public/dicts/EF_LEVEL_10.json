@@ -1,0 +1,1392 @@
+[
+  {
+    "name": "merger",
+    "usphone": "ˈmɜːrdʒər",
+    "ukphone": "ˈmɜːdʒə(r)",
+    "trans": [
+      "合并,兼并"
+    ]
+  },
+  {
+    "name": "morale",
+    "usphone": "məˈræl",
+    "ukphone": "məˈrɑːl",
+    "trans": [
+      "士气, 精神状态"
+    ]
+  },
+  {
+    "name": "pressure",
+    "usphone": "ˈpreʃər",
+    "ukphone": "ˈpreʃə(r)",
+    "trans": [
+      "迫使, 施压"
+    ]
+  },
+  {
+    "name": "propose",
+    "usphone": "prəˈpoʊz",
+    "ukphone": "prəˈpəʊz",
+    "trans": [
+      "建议, 提议"
+    ]
+  },
+  {
+    "name": "resign",
+    "usphone": "rɪˈzaɪn",
+    "ukphone": "rɪˈzaɪn",
+    "trans": [
+      "辞职"
+    ]
+  },
+  {
+    "name": "rumor",
+    "usphone": "ˈruːmər",
+    "ukphone": "ˈruːmə(r)",
+    "trans": [
+      "谣言"
+    ]
+  },
+  {
+    "name": "smoothly",
+    "usphone": "ˈsmuːðli",
+    "ukphone": "ˈsmuːðli",
+    "trans": [
+      "平滑地, 平稳地, 流畅地, 顺利地"
+    ]
+  },
+  {
+    "name": "task",
+    "usphone": "tæsk",
+    "ukphone": "tɑːsk",
+    "trans": [
+      "任务"
+    ]
+  },
+  {
+    "name": "CEO",
+    "usphone": "ˈoʊ",
+    "ukphone": "ˌsiːiːˈəʊ",
+    "trans": [
+      "(缩写)首席执行官"
+    ]
+  },
+  {
+    "name": "discuss",
+    "usphone": "dɪˈskʌs",
+    "ukphone": "dɪˈskʌs",
+    "trans": [
+      "讨论, 探讨"
+    ]
+  },
+  {
+    "name": "attention",
+    "usphone": "əˈtenʃn",
+    "ukphone": "əˈtenʃn",
+    "trans": [
+      "关心, 关注"
+    ]
+  },
+  {
+    "name": "purpose",
+    "usphone": "ˈpɜːrpəs",
+    "ukphone": "ˈpɜːpəs",
+    "trans": [
+      "目的"
+    ]
+  },
+  {
+    "name": "item",
+    "usphone": "ˈaɪtəm",
+    "ukphone": "ˈaɪtəm",
+    "trans": [
+      "条, 条款, 项, 项目, 条目"
+    ]
+  },
+  {
+    "name": "negotiate",
+    "usphone": "nɪˈɡoʊʃieɪt",
+    "ukphone": "nɪˈɡəʊʃieɪt",
+    "trans": [
+      "商议; 谈判; 协商"
+    ]
+  },
+  {
+    "name": "solve",
+    "usphone": "sɑːlv",
+    "ukphone": "sɒlv",
+    "trans": [
+      "解决, 解答"
+    ]
+  },
+  {
+    "name": "regret",
+    "usphone": "rɪˈɡret",
+    "ukphone": "rɪˈɡret",
+    "trans": [
+      "后悔"
+    ]
+  },
+  {
+    "name": "congratulate",
+    "usphone": "kənˈɡrætʃuleɪt",
+    "ukphone": "kənˈɡrætʃuleɪt",
+    "trans": [
+      "向(某人)祝贺;道贺"
+    ]
+  },
+  {
+    "name": "replace",
+    "usphone": "rɪˈpleɪs",
+    "ukphone": "rɪˈpleɪs",
+    "trans": [
+      "取代, 替代"
+    ]
+  },
+  {
+    "name": "accurate",
+    "usphone": "ˈækjərət",
+    "ukphone": "ˈækjərət",
+    "trans": [
+      "精确的, 准确的"
+    ]
+  },
+  {
+    "name": "agenda",
+    "usphone": "əˈdʒendə",
+    "ukphone": "əˈdʒendə",
+    "trans": [
+      "议程,讨论事项"
+    ]
+  },
+  {
+    "name": "aware",
+    "usphone": "əˈwer",
+    "ukphone": "əˈweə(r)",
+    "trans": [
+      "知道的, 意识到的"
+    ]
+  },
+  {
+    "name": "budget",
+    "usphone": "ˈbʌdʒɪt",
+    "ukphone": "ˈbʌdʒɪt",
+    "trans": [
+      "预算"
+    ]
+  },
+  {
+    "name": "budget",
+    "usphone": "ˈbʌdʒɪt",
+    "ukphone": "ˈbʌdʒɪt",
+    "trans": [
+      "做预算, 规划, 按预算来计划"
+    ]
+  },
+  {
+    "name": "challenge",
+    "usphone": "ˈtʃælɪndʒ",
+    "ukphone": "ˈtʃælɪndʒ",
+    "trans": [
+      "挑战"
+    ]
+  },
+  {
+    "name": "conclude",
+    "usphone": "kənˈkluːd",
+    "ukphone": "kənˈkluːd",
+    "trans": [
+      "下结论, 总结"
+    ]
+  },
+  {
+    "name": "evaluate",
+    "usphone": "ɪˈvæljueɪt",
+    "ukphone": "ɪˈvæljueɪt",
+    "trans": [
+      "评价"
+    ]
+  },
+  {
+    "name": "executive",
+    "usphone": "ɪɡˈzekjətɪv",
+    "ukphone": "ɪɡˈzekjətɪv",
+    "trans": [
+      "管理者, 经理, 社长, 董事"
+    ]
+  },
+  {
+    "name": "fire",
+    "usphone": "ˈfaɪər",
+    "ukphone": "ˈfaɪə(r)",
+    "trans": [
+      "解雇"
+    ]
+  },
+  {
+    "name": "further",
+    "usphone": "ˈfɜːrðər",
+    "ukphone": "ˈfɜːðə(r)",
+    "trans": [
+      "更远地"
+    ]
+  },
+  {
+    "name": "integrate",
+    "usphone": "ˈɪntɪɡreɪt",
+    "ukphone": "ˈɪntɪɡreɪt",
+    "trans": [
+      "使)成为一体,(使)合并"
+    ]
+  },
+  {
+    "name": "involve",
+    "usphone": "ɪnˈvɑːlv",
+    "ukphone": "ɪnˈvɒlv",
+    "trans": [
+      "包含, 涉及"
+    ]
+  },
+  {
+    "name": "old-fashioned",
+    "trans": [
+      "旧式的, 过时的"
+    ]
+  },
+  {
+    "name": "courteous",
+    "usphone": "ˈkɜːrtiəs",
+    "ukphone": "ˈkɜːtiəs",
+    "trans": [
+      "彬彬有礼的, 谦恭的"
+    ]
+  },
+  {
+    "name": "generational",
+    "usphone": "ˌdʒenəˈreɪʃənl",
+    "ukphone": "ˌdʒenəˈreɪʃənl",
+    "trans": [
+      "代"
+    ]
+  },
+  {
+    "name": "gender",
+    "usphone": "ˈdʒendər",
+    "ukphone": "ˈdʒendə(r)",
+    "trans": [
+      "性别"
+    ]
+  },
+  {
+    "name": "equality",
+    "usphone": "iˈkwɑːləti",
+    "ukphone": "iˈkwɒləti",
+    "trans": [
+      "平等"
+    ]
+  },
+  {
+    "name": "sympathize",
+    "usphone": "ˈsɪmpəθaɪz",
+    "ukphone": "ˈsɪmpəθaɪz",
+    "trans": [
+      "同情;"
+    ]
+  },
+  {
+    "name": "implement",
+    "usphone": "ˈɪmplɪment",
+    "ukphone": "ˈɪmplɪment",
+    "trans": [
+      "使(某事物)生效; 履行; 实施; 贯彻"
+    ]
+  },
+  {
+    "name": "structure",
+    "usphone": "ˈstrʌktʃər",
+    "ukphone": "ˈstrʌktʃə(r)",
+    "trans": [
+      "结构"
+    ]
+  },
+  {
+    "name": "process",
+    "usphone": "ˈprɑːses",
+    "ukphone": "ˈprəʊses",
+    "trans": [
+      "过程, 程序, 步骤, 工序"
+    ]
+  },
+  {
+    "name": "system",
+    "usphone": "ˈsɪstəm",
+    "ukphone": "ˈsɪstəm",
+    "trans": [
+      "系统, 体系"
+    ]
+  },
+  {
+    "name": "mission",
+    "usphone": "ˈmɪʃn",
+    "ukphone": "ˈmɪʃn",
+    "trans": [
+      "艰巨的任务,艰辛的历程"
+    ]
+  },
+  {
+    "name": "statement",
+    "usphone": "ˈsteɪtmənt",
+    "ukphone": "ˈsteɪtmənt",
+    "trans": [
+      "陈述, 声明, 说法"
+    ]
+  },
+  {
+    "name": "review",
+    "usphone": "rɪˈvjuː",
+    "ukphone": "rɪˈvjuː",
+    "trans": [
+      "检查, 评审"
+    ]
+  },
+  {
+    "name": "revise",
+    "usphone": "rɪˈvaɪz",
+    "ukphone": "rɪˈvaɪz",
+    "trans": [
+      "修订, 修改, 修正, 校订"
+    ]
+  },
+  {
+    "name": "restructure",
+    "usphone": "ˌriːˈstrʌktʃər",
+    "ukphone": "ˌriːˈstrʌktʃə(r)",
+    "trans": [
+      "重组, 改组"
+    ]
+  },
+  {
+    "name": "revamp",
+    "usphone": "ˌriːˈvæmp",
+    "ukphone": "ˌriːˈvæmp",
+    "trans": [
+      "将(某物)更新(尤指外观); 翻新"
+    ]
+  },
+  {
+    "name": "transform",
+    "usphone": "trænsˈfɔːrm",
+    "ukphone": "trænsˈfɔːm",
+    "trans": [
+      "转换, 改造, 改变, 改变, 变换, 转化"
+    ]
+  },
+  {
+    "name": "change",
+    "usphone": "tʃeɪndʒ",
+    "ukphone": "tʃeɪndʒ",
+    "trans": [
+      "改变, 变化"
+    ]
+  },
+  {
+    "name": "storage",
+    "usphone": "ˈstɔːrɪdʒ",
+    "ukphone": "ˈstɔːrɪdʒ",
+    "trans": [
+      "贮存, 贮藏"
+    ]
+  },
+  {
+    "name": "parking",
+    "usphone": "ˈpɑːrkɪŋ",
+    "ukphone": "ˈpɑːkɪŋ",
+    "trans": [
+      "停车,泊车"
+    ]
+  },
+  {
+    "name": "yoga",
+    "usphone": "ˈjoʊɡə",
+    "ukphone": "ˈjəʊɡə",
+    "trans": [
+      "瑜伽"
+    ]
+  },
+  {
+    "name": "recreation",
+    "usphone": "ˌrekriˈeɪʃn",
+    "ukphone": "ˌrekriˈeɪʃn",
+    "trans": [
+      "消遣;"
+    ]
+  },
+  {
+    "name": "space",
+    "usphone": "speɪs",
+    "ukphone": "speɪs",
+    "trans": [
+      "空地, 空地方, 空处"
+    ]
+  },
+  {
+    "name": "staff",
+    "usphone": "stæf",
+    "ukphone": "stɑːf",
+    "trans": [
+      "员工, 雇员"
+    ]
+  },
+  {
+    "name": "uncertainty",
+    "usphone": "ʌnˈsɜːrtnti",
+    "ukphone": "ʌnˈsɜːtnti",
+    "trans": [
+      "不确定,不确实"
+    ]
+  },
+  {
+    "name": "attitude",
+    "usphone": "ˈætɪtuːd",
+    "ukphone": "ˈætɪtjuːd",
+    "trans": [
+      "态度, 看法"
+    ]
+  },
+  {
+    "name": "resistant",
+    "usphone": "rɪˈzɪstənt",
+    "ukphone": "rɪˈzɪstənt",
+    "trans": [
+      "抵抗的; 对抗的; 抗拒的; 有阻力的"
+    ]
+  },
+  {
+    "name": "positive",
+    "usphone": "ˈpɑːzətɪv",
+    "ukphone": "ˈpɒzətɪv",
+    "trans": [
+      "积极的, 有助益的, 建设性的"
+    ]
+  },
+  {
+    "name": "traditional",
+    "usphone": "trəˈdɪʃənl",
+    "ukphone": "trəˈdɪʃənl",
+    "trans": [
+      "传统的, 因袭的, 惯例的"
+    ]
+  },
+  {
+    "name": "benefit",
+    "usphone": "ˈbenɪfɪt",
+    "ukphone": "ˈbenɪfɪt",
+    "trans": [
+      "利益, 好处, 有利的影响"
+    ]
+  },
+  {
+    "name": "borrow",
+    "usphone": "ˈbɑːroʊ",
+    "ukphone": "ˈbɒrəʊ",
+    "trans": [
+      "借"
+    ]
+  },
+  {
+    "name": "debt",
+    "usphone": "det",
+    "ukphone": "det",
+    "trans": [
+      "债务"
+    ]
+  },
+  {
+    "name": "deduction",
+    "usphone": "dɪˈdʌkʃn",
+    "ukphone": "dɪˈdʌkʃn",
+    "trans": [
+      "扣除"
+    ]
+  },
+  {
+    "name": "income",
+    "usphone": "ˈɪnkʌm",
+    "ukphone": "ˈɪnkʌm",
+    "trans": [
+      "进款, 收入"
+    ]
+  },
+  {
+    "name": "gradually",
+    "usphone": "ˈɡrædʒuəli",
+    "ukphone": "ˈɡrædʒuəli",
+    "trans": [
+      "渐渐地"
+    ]
+  },
+  {
+    "name": "owe",
+    "usphone": "oʊ",
+    "ukphone": "əʊ",
+    "trans": [
+      "欠(人情), 欠钱"
+    ]
+  },
+  {
+    "name": "stable",
+    "usphone": "ˈsteɪbl",
+    "ukphone": "ˈsteɪbl",
+    "trans": [
+      "固定的, 稳定的"
+    ]
+  },
+  {
+    "name": "expense",
+    "usphone": "ɪkˈspens",
+    "ukphone": "ɪkˈspens",
+    "trans": [
+      "费用, 支出"
+    ]
+  },
+  {
+    "name": "saving",
+    "usphone": "ˈseɪvɪŋ",
+    "ukphone": "ˈseɪvɪŋ",
+    "trans": [
+      "存款"
+    ]
+  },
+  {
+    "name": "loan",
+    "usphone": "loʊn",
+    "ukphone": "ləʊn",
+    "trans": [
+      "借出, 贷与"
+    ]
+  },
+  {
+    "name": "average",
+    "usphone": "ˈævərɪdʒ",
+    "ukphone": "ˈævərɪdʒ",
+    "trans": [
+      "平均数"
+    ]
+  },
+  {
+    "name": "bill",
+    "usphone": "bɪl",
+    "ukphone": "bɪl",
+    "trans": [
+      "账单"
+    ]
+  },
+  {
+    "name": "reasonably",
+    "usphone": "ˈriːznəbli",
+    "ukphone": "ˈriːznəbli",
+    "trans": [
+      "适度地, 尚可, 过得去"
+    ]
+  },
+  {
+    "name": "drop",
+    "usphone": "drɑːp",
+    "ukphone": "drɒp",
+    "trans": [
+      "下降"
+    ]
+  },
+  {
+    "name": "run",
+    "usphone": "rʌn",
+    "ukphone": "rʌn",
+    "trans": [
+      "变得"
+    ]
+  },
+  {
+    "name": "generally",
+    "usphone": "ˈdʒenrəli",
+    "ukphone": "ˈdʒenrəli",
+    "trans": [
+      "总体地, 总的来说"
+    ]
+  },
+  {
+    "name": "significantly",
+    "usphone": "sɪɡˈnɪfɪkəntli",
+    "ukphone": "sɪɡˈnɪfɪkəntli",
+    "trans": [
+      "意味深长地, 意义深远地, 重要地, 较大地"
+    ]
+  },
+  {
+    "name": "housing",
+    "usphone": "ˈhaʊzɪŋ",
+    "ukphone": "ˈhaʊzɪŋ",
+    "trans": [
+      "房屋"
+    ]
+  },
+  {
+    "name": "option",
+    "usphone": "ˈɑːpʃn",
+    "ukphone": "ˈɒpʃn",
+    "trans": [
+      "选择, 选择权, 选择自由"
+    ]
+  },
+  {
+    "name": "alternative",
+    "usphone": "ɔːlˈtɜːrnətɪv",
+    "ukphone": "ɔːlˈtɜːnətɪv",
+    "trans": [
+      "可供选择的事物, 替换物, 替代品"
+    ]
+  },
+  {
+    "name": "possibility",
+    "usphone": "ˌpɑːsəˈbɪləti",
+    "ukphone": "ˌpɒsəˈbɪləti",
+    "trans": [
+      "可能性, 可能的事"
+    ]
+  },
+  {
+    "name": "drastic",
+    "usphone": "ˈdræstɪk",
+    "ukphone": "ˈdræstɪk",
+    "trans": [
+      "激烈"
+    ]
+  },
+  {
+    "name": "priority",
+    "usphone": "praɪˈɔːrəti",
+    "ukphone": "praɪˈɒrəti",
+    "trans": [
+      "优先权, 优先, 优先顺序"
+    ]
+  },
+  {
+    "name": "push",
+    "usphone": "pʊʃ",
+    "ukphone": "pʊʃ",
+    "trans": [
+      "劝说"
+    ]
+  },
+  {
+    "name": "compensation",
+    "usphone": "ˌkɑːmpenˈseɪʃn",
+    "ukphone": "ˌkɒmpenˈseɪʃn",
+    "trans": [
+      "补偿金,赔偿金,弥补"
+    ]
+  },
+  {
+    "name": "contribute",
+    "usphone": "kənˈtrɪbjuːt",
+    "ukphone": "kənˈtrɪbjuːt",
+    "trans": [
+      "贡献, 捐献, 捐助"
+    ]
+  },
+  {
+    "name": "package",
+    "usphone": "ˈpækɪdʒ",
+    "ukphone": "ˈpækɪdʒ",
+    "trans": [
+      "包裹"
+    ]
+  },
+  {
+    "name": "include",
+    "usphone": "ɪnˈkluːd",
+    "ukphone": "ɪnˈkluːd",
+    "trans": [
+      "包括, 包含"
+    ]
+  },
+  {
+    "name": "subsidiary",
+    "usphone": "səbˈsɪdieri",
+    "ukphone": "səbˈsɪdiəri",
+    "trans": [
+      "辅助的,附属的"
+    ]
+  },
+  {
+    "name": "vision",
+    "usphone": "ˈvɪʒn",
+    "ukphone": "ˈvɪʒn",
+    "trans": [
+      "视力, 视觉"
+    ]
+  },
+  {
+    "name": "update",
+    "usphone": "ˌʌpˈdeɪt",
+    "ukphone": "ˌʌpˈdeɪt",
+    "trans": [
+      "更新(某事物), 升级"
+    ]
+  },
+  {
+    "name": "merge",
+    "usphone": "mɜːrdʒ",
+    "ukphone": "mɜːdʒ",
+    "trans": [
+      "合并,使融合"
+    ]
+  },
+  {
+    "name": "hire",
+    "usphone": "ˈhaɪər",
+    "ukphone": "ˈhaɪə(r)",
+    "trans": [
+      "出租"
+    ]
+  },
+  {
+    "name": "market",
+    "usphone": "ˈmɑːrkɪt",
+    "ukphone": "ˈmɑːkɪt",
+    "trans": [
+      "市场, 集市"
+    ]
+  },
+  {
+    "name": "parent",
+    "usphone": "ˈperənt",
+    "ukphone": "ˈpeərənt",
+    "trans": [
+      "父母"
+    ]
+  },
+  {
+    "name": "controller",
+    "usphone": "kənˈtroʊlər",
+    "ukphone": "kənˈtrəʊlə(r)",
+    "trans": [
+      "(尤指大型机构或部门的)控制者,管理者,指挥者"
+    ]
+  },
+  {
+    "name": "candidate",
+    "usphone": "ˈkændɪdət",
+    "ukphone": "ˈkændɪdət",
+    "trans": [
+      "候选人"
+    ]
+  },
+  {
+    "name": "increase",
+    "usphone": "ɪnˈkriːs",
+    "ukphone": "ɪnˈkriːs",
+    "trans": [
+      "增加, 增多"
+    ]
+  },
+  {
+    "name": "news",
+    "usphone": "nuːz",
+    "ukphone": "njuːz",
+    "trans": [
+      "新闻, 消息, 报导"
+    ]
+  },
+  {
+    "name": "hold",
+    "usphone": "hoʊld",
+    "ukphone": "həʊld",
+    "trans": [
+      "吸引(注意力)"
+    ]
+  },
+  {
+    "name": "free",
+    "usphone": "friː",
+    "ukphone": "friː",
+    "trans": [
+      "自由的, 无拘束的"
+    ]
+  },
+  {
+    "name": "decrease",
+    "usphone": "dɪˈkriːs",
+    "ukphone": "dɪˈkriːs",
+    "trans": [
+      "减少, 下降"
+    ]
+  },
+  {
+    "name": "fall",
+    "usphone": "fɔːl",
+    "ukphone": "fɔːl",
+    "trans": [
+      "减少"
+    ]
+  },
+  {
+    "name": "remain",
+    "usphone": "rɪˈmeɪn",
+    "ukphone": "rɪˈmeɪn",
+    "trans": [
+      "剩下, 余留, 留下"
+    ]
+  },
+  {
+    "name": "step",
+    "usphone": "step",
+    "ukphone": "step",
+    "trans": [
+      "步"
+    ]
+  },
+  {
+    "name": "remind",
+    "usphone": "rɪˈmaɪnd",
+    "ukphone": "rɪˈmaɪnd",
+    "trans": [
+      "提醒"
+    ]
+  },
+  {
+    "name": "outline",
+    "usphone": "ˈaʊtlaɪn",
+    "ukphone": "ˈaʊtlaɪn",
+    "trans": [
+      "大纲, 轮廓"
+    ]
+  },
+  {
+    "name": "summary",
+    "usphone": "ˈsʌməri",
+    "ukphone": "ˈsʌməri",
+    "trans": [
+      "概括, 概要, 摘要"
+    ]
+  },
+  {
+    "name": "point",
+    "usphone": "pɔɪnt",
+    "ukphone": "pɔɪnt",
+    "trans": [
+      "细节"
+    ]
+  },
+  {
+    "name": "main",
+    "usphone": "meɪn",
+    "ukphone": "meɪn",
+    "trans": [
+      "最重要的, 主要的"
+    ]
+  },
+  {
+    "name": "however",
+    "usphone": "haʊˈevər",
+    "ukphone": "haʊˈevə(r)",
+    "trans": [
+      "无论怎样"
+    ]
+  },
+  {
+    "name": "acquisition",
+    "usphone": "ˌækwɪˈzɪʃn",
+    "ukphone": "ˌækwɪˈzɪʃn",
+    "trans": [
+      "(知识、技能的)习得"
+    ]
+  },
+  {
+    "name": "conclusion",
+    "usphone": "kənˈkluːʒn",
+    "ukphone": "kənˈkluːʒn",
+    "trans": [
+      "结论"
+    ]
+  },
+  {
+    "name": "continent",
+    "usphone": "ˈkɑːntɪnənt",
+    "ukphone": "ˈkɒntɪnənt",
+    "trans": [
+      "洲, 大陆"
+    ]
+  },
+  {
+    "name": "headquarters",
+    "usphone": "ˈhedkwɔːrtərz",
+    "ukphone": "ˌhedˈkwɔːtəz",
+    "trans": [
+      "司令部"
+    ]
+  },
+  {
+    "name": "particularly",
+    "usphone": "pərˈtɪkjələrli",
+    "ukphone": "pəˈtɪkjələli",
+    "trans": [
+      "特别地, 尤其"
+    ]
+  },
+  {
+    "name": "steady",
+    "usphone": "ˈstedi",
+    "ukphone": "ˈstedi",
+    "trans": [
+      "稳固的, 稳定的, 平稳的, 持续的"
+    ]
+  },
+  {
+    "name": "setback",
+    "usphone": "ˈsetbæk",
+    "ukphone": "ˈsetbæk",
+    "trans": [
+      "顿挫, 挫折, 退步, 逆流"
+    ]
+  },
+  {
+    "name": "dilemma",
+    "usphone": "dɪˈlemə",
+    "ukphone": "dɪˈlemə",
+    "trans": [
+      "困境"
+    ]
+  },
+  {
+    "name": "challenge",
+    "usphone": "ˈtʃælɪndʒ",
+    "ukphone": "ˈtʃælɪndʒ",
+    "trans": [
+      "挑战"
+    ]
+  },
+  {
+    "name": "predicament",
+    "usphone": "prɪˈdɪkəmənt",
+    "ukphone": "prɪˈdɪkəmənt",
+    "trans": [
+      "处境,窘况,困局"
+    ]
+  },
+  {
+    "name": "obstacle",
+    "usphone": "ˈɑːbstəkl",
+    "ukphone": "ˈɒbstəkl",
+    "trans": [
+      "障碍, 阻碍"
+    ]
+  },
+  {
+    "name": "cause",
+    "usphone": "kɔːz",
+    "ukphone": "kɔːz",
+    "trans": [
+      "原因, 起因"
+    ]
+  },
+  {
+    "name": "result",
+    "usphone": "rɪˈzʌlt",
+    "ukphone": "rɪˈzʌlt",
+    "trans": [
+      "结果, 后果"
+    ]
+  },
+  {
+    "name": "effect",
+    "usphone": "ɪˈfekt",
+    "ukphone": "ɪˈfekt",
+    "trans": [
+      "结果"
+    ]
+  },
+  {
+    "name": "affect",
+    "usphone": "əˈfekt",
+    "ukphone": "əˈfekt",
+    "trans": [
+      "影响"
+    ]
+  },
+  {
+    "name": "evaluate",
+    "usphone": "ɪˈvæljueɪt",
+    "ukphone": "ɪˈvæljueɪt",
+    "trans": [
+      "评估"
+    ]
+  },
+  {
+    "name": "solution",
+    "usphone": "səˈluːʃn",
+    "ukphone": "səˈluːʃn",
+    "trans": [
+      "解决办法"
+    ]
+  },
+  {
+    "name": "generate",
+    "usphone": "ˈdʒenəreɪt",
+    "ukphone": "ˈdʒenəreɪt",
+    "trans": [
+      "产生, 形成"
+    ]
+  },
+  {
+    "name": "analysis",
+    "usphone": "əˈnæləsɪs",
+    "ukphone": "əˈnæləsɪs",
+    "trans": [
+      "分析, 分析报告, 分析结果"
+    ]
+  },
+  {
+    "name": "plus",
+    "usphone": "plʌs",
+    "ukphone": "plʌs",
+    "trans": [
+      "优势"
+    ]
+  },
+  {
+    "name": "downside",
+    "usphone": "ˈdaʊnsaɪd",
+    "ukphone": "ˈdaʊnsaɪd",
+    "trans": [
+      "缺点"
+    ]
+  },
+  {
+    "name": "benefit",
+    "usphone": "ˈbenɪfɪt",
+    "ukphone": "ˈbenɪfɪt",
+    "trans": [
+      "效益"
+    ]
+  },
+  {
+    "name": "minus",
+    "usphone": "ˈmaɪnəs",
+    "ukphone": "ˈmaɪnəs",
+    "trans": [
+      "减号"
+    ]
+  },
+  {
+    "name": "upside",
+    "usphone": "ˈʌpsaɪd",
+    "ukphone": "ˈʌpsaɪd",
+    "trans": [
+      "优点"
+    ]
+  },
+  {
+    "name": "advantage",
+    "usphone": "ədˈvæntɪdʒ",
+    "ukphone": "ədˈvɑːntɪdʒ",
+    "trans": [
+      "优点"
+    ]
+  },
+  {
+    "name": "drawback",
+    "usphone": "ˈdrɔːbæk",
+    "ukphone": "ˈdrɔːbæk",
+    "trans": [
+      "缺陷"
+    ]
+  },
+  {
+    "name": "unacceptable",
+    "usphone": "ˌʌnəkˈseptəbl",
+    "ukphone": "ˌʌnəkˈseptəbl",
+    "trans": [
+      "难以接受的, 不受欢迎的"
+    ]
+  },
+  {
+    "name": "miss",
+    "usphone": "mɪs",
+    "ukphone": "mɪs",
+    "trans": [
+      "未出席, 错过, 未赶上"
+    ]
+  },
+  {
+    "name": "sympathetic",
+    "usphone": "ˌsɪmpəˈθetɪk",
+    "ukphone": "ˌsɪmpəˈθetɪk",
+    "trans": [
+      "同情的, 共鸣的"
+    ]
+  },
+  {
+    "name": "strength",
+    "usphone": "streŋθ",
+    "ukphone": "streŋθ",
+    "trans": [
+      "优势, 长处"
+    ]
+  },
+  {
+    "name": "weakness",
+    "usphone": "ˈwiːknəs",
+    "ukphone": "ˈwiːknəs",
+    "trans": [
+      "虚弱, 弱点, 薄弱, 软弱"
+    ]
+  },
+  {
+    "name": "threat",
+    "usphone": "θret",
+    "ukphone": "θret",
+    "trans": [
+      "威胁, 恐吓"
+    ]
+  },
+  {
+    "name": "opportunity",
+    "usphone": "ˌɑːpərˈtuːnəti",
+    "ukphone": "ˌɒpəˈtjuːnəti",
+    "trans": [
+      "机会, 良机"
+    ]
+  },
+  {
+    "name": "supportive",
+    "usphone": "səˈpɔːrtɪv",
+    "ukphone": "səˈpɔːtɪv",
+    "trans": [
+      "支持性的"
+    ]
+  },
+  {
+    "name": "satisfaction",
+    "usphone": "ˌsætɪsˈfækʃn",
+    "ukphone": "ˌsætɪsˈfækʃn",
+    "trans": [
+      "满意"
+    ]
+  },
+  {
+    "name": "wonder",
+    "usphone": "ˈwʌndər",
+    "ukphone": "ˈwʌndə(r)",
+    "trans": [
+      "惊讶, 怀疑, 惊奇, 想知道"
+    ]
+  },
+  {
+    "name": "decision",
+    "usphone": "dɪˈsɪʒn",
+    "ukphone": "dɪˈsɪʒn",
+    "trans": [
+      "决定"
+    ]
+  },
+  {
+    "name": "against",
+    "usphone": "əˈɡenst",
+    "ukphone": "əˈɡenst",
+    "trans": [
+      "反对"
+    ]
+  },
+  {
+    "name": "realize",
+    "usphone": "ˈriːəlaɪz",
+    "ukphone": "ˈriːəlaɪz",
+    "trans": [
+      "意识到"
+    ]
+  },
+  {
+    "name": "atmosphere",
+    "usphone": "ˈætməsfɪr",
+    "ukphone": "ˈætməsfɪə(r)",
+    "trans": [
+      "大气, 大气层"
+    ]
+  },
+  {
+    "name": "survey",
+    "usphone": "ˈsɜːrveɪ",
+    "ukphone": "ˈsɜːveɪ",
+    "trans": [
+      "问卷, 测量, 调查, 纵览, 视察"
+    ]
+  },
+  {
+    "name": "proactive",
+    "usphone": "ˌproʊˈæktɪv",
+    "ukphone": "ˌprəʊˈæktɪv",
+    "trans": [
+      "积极主动的, 主动出击的, 先发制人的"
+    ]
+  },
+  {
+    "name": "role",
+    "usphone": "roʊl",
+    "ukphone": "rəʊl",
+    "trans": [
+      "角色, 职责"
+    ]
+  },
+  {
+    "name": "submit",
+    "usphone": "səbˈmɪt",
+    "ukphone": "səbˈmɪt",
+    "trans": [
+      "提交, 递交"
+    ]
+  },
+  {
+    "name": "annual",
+    "usphone": "ˈænjuəl",
+    "ukphone": "ˈænjuəl",
+    "trans": [
+      "年度的"
+    ]
+  },
+  {
+    "name": "objective",
+    "usphone": "əbˈdʒektɪv",
+    "ukphone": "əbˈdʒektɪv",
+    "trans": [
+      "目的, 目标"
+    ]
+  },
+  {
+    "name": "lead",
+    "usphone": "liːd",
+    "ukphone": "liːd",
+    "trans": [
+      "指挥, 领导, 率领"
+    ]
+  },
+  {
+    "name": "development",
+    "usphone": "dɪˈveləpmənt",
+    "ukphone": "dɪˈveləpmənt",
+    "trans": [
+      "研制, 开发"
+    ]
+  },
+  {
+    "name": "play",
+    "usphone": "pleɪ",
+    "ukphone": "pleɪ",
+    "trans": [
+      "扮演 角色"
+    ]
+  },
+  {
+    "name": "involved",
+    "usphone": "ɪnˈvɑːlvd",
+    "ukphone": "ɪnˈvɒlvd",
+    "trans": [
+      "卷入的, 有关的"
+    ]
+  },
+  {
+    "name": "become",
+    "usphone": "bɪˈkʌm",
+    "ukphone": "bɪˈkʌm",
+    "trans": [
+      "成为, 变成"
+    ]
+  },
+  {
+    "name": "responsibility",
+    "usphone": "rɪˌspɑːnsəˈbɪləti",
+    "ukphone": "rɪˌspɒnsəˈbɪləti",
+    "trans": [
+      "责任, 负担, 职责"
+    ]
+  },
+  {
+    "name": "specific",
+    "usphone": "spəˈsɪfɪk",
+    "ukphone": "spəˈsɪfɪk",
+    "trans": [
+      "具体的"
+    ]
+  },
+  {
+    "name": "realistic",
+    "usphone": "ˌriːəˈlɪstɪk",
+    "ukphone": "ˌriːəˈlɪstɪk",
+    "trans": [
+      "现实的, 实际可行的"
+    ]
+  },
+  {
+    "name": "attainable",
+    "usphone": "əˈteɪnəbl",
+    "ukphone": "əˈteɪnəbl",
+    "trans": [
+      "可得到的"
+    ]
+  },
+  {
+    "name": "consistent",
+    "usphone": "kənˈsɪstənt",
+    "ukphone": "kənˈsɪstənt",
+    "trans": [
+      "一致的;始终如一的"
+    ]
+  },
+  {
+    "name": "ambitious",
+    "usphone": "æmˈbɪʃəs",
+    "ukphone": "æmˈbɪʃəs",
+    "trans": [
+      "有野心的,有雄心的"
+    ]
+  },
+  {
+    "name": "intend",
+    "usphone": "ɪnˈtend",
+    "ukphone": "ɪnˈtend",
+    "trans": [
+      "打算, 意图"
+    ]
+  },
+  {
+    "name": "achieve",
+    "usphone": "əˈtʃiːv",
+    "ukphone": "əˈtʃiːv",
+    "trans": [
+      "获得, 完成"
+    ]
+  },
+  {
+    "name": "career",
+    "usphone": "kəˈrɪr",
+    "ukphone": "kəˈrɪə(r)",
+    "trans": [
+      "职业生涯"
+    ]
+  },
+  {
+    "name": "goal",
+    "usphone": "ɡoʊl",
+    "ukphone": "ɡəʊl",
+    "trans": [
+      "球门"
+    ]
+  },
+  {
+    "name": "set",
+    "usphone": "set",
+    "ukphone": "set",
+    "trans": [
+      "安排"
+    ]
+  }
+]
