@@ -37,6 +37,15 @@ module.exports = {
       borderWidth: {
         3: '3px',
       },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+        dic3: '1100px',
+        dic4: '1440px',
+      },
     },
   },
   variants: {
