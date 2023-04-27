@@ -1,5 +1,21 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
+export type UseSpeechResult = {
+  /**
+   * Speak speaking
+   * @param {boolean} [abort=false] Whether to cancel other speak
+   */
+  speak: (abort?: boolean) => void
+  /**
+   * Cancel speaking
+   */
+  cancel: () => void
+  /**
+   * Whether currently speaking
+   */
+  speaking: boolean
+}
+
 /**
  * React hook for using the SpeechSynthesis API.
  * @param {string} text The text to be spoken.
@@ -8,7 +24,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
  * @throws {Error} If browser not support SpeechSynthesis API.
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API}
  */
-const useSpeech = (text: string, option?: Partial<SpeechSynthesisUtterance>) => {
+export default function useSpeech(text: string, option?: Partial<SpeechSynthesisUtterance>): UseSpeechResult {
   const [speaking, setSpeaking] = useState(false)
   const [utterance, setUtterance] = useState<SpeechSynthesisUtterance | null>(null)
   const optionRef = useRef(option)
@@ -43,10 +59,6 @@ const useSpeech = (text: string, option?: Partial<SpeechSynthesisUtterance>) => 
     }
   }, [utterance])
 
-  /**
-   * Speak
-   * @param {boolean} [abort=false] Whether to cancel other speak
-   */
   const speak = useCallback(
     (abort = false) => {
       if (utterance) {
@@ -74,5 +86,3 @@ const useSpeech = (text: string, option?: Partial<SpeechSynthesisUtterance>) => 
     speaking,
   }
 }
-
-export default useSpeech
