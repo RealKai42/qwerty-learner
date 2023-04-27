@@ -163,7 +163,7 @@ const chinaExam: DictionaryResource[] = [
     description: 'with highest frequency',
     category: '中国考试',
     tags: ['其他'],
-    url: '/dicts/Top500AdjectivebWords.json',
+    url: '/dicts/Top500AdjectiveWords.json',
     length: 527,
     language: 'en',
     languageCategory: 'en',
