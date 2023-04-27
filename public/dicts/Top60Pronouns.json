@@ -1,0 +1,238 @@
+[
+    {
+      "name": "your",
+      "trans": ["refers to something that belongs to the person being addressed."]
+    },
+    {
+      "name": "I",
+      "trans": ["refers to the speaker, the person who is speaking or writing."]
+    },
+    {
+      "name": "they",
+      "trans": ["refers to a group of people or things being discussed or referred to."]
+    },
+    {
+      "name": "their",
+      "trans": ["refers to something that belongs to a group of people being discussed or referred to."]
+    },
+    {
+      "name": "we",
+      "trans": ["refers to a group of people including the speaker."]
+    },
+    {
+      "name": "who",
+      "trans": ["used to ask about a person or people being discussed or referred to."]
+    },
+    {
+      "name": "them",
+      "trans": ["refers to a group of people or things being discussed or referred to."]
+    },
+    {
+      "name": "its",
+      "trans": ["refers to something that belongs to an animal, object, or thing being discussed or referred to."]
+    },
+    {
+      "name": "our",
+      "trans": ["refers to something that belongs to a group of people including the speaker."]
+    },
+    {
+      "name": "my",
+      "trans": ["refers to something that belongs to the speaker."]
+    },
+    {
+      "name": "those",
+      "trans": ["refers to a specific group of things being discussed or referred to that are not nearby."]
+    },
+    {
+      "name": "he",
+      "trans": ["refers to a specific male person being discussed or referred to."]
+    },
+    {
+      "name": "us",
+      "trans": ["refers to a group of people including the speaker."]
+    },
+    {
+      "name": "her",
+      "trans": ["refers to a specific female person being discussed or referred to."]
+    },
+    {
+      "name": "something",
+      "trans": ["refers to a thing or object being discussed or referred to without specifying what it is."]
+    },
+    {
+      "name": "me",
+      "trans": ["refers to the speaker, the person who is speaking or writing."]
+    },
+    {
+      "name": "yourself",
+      "trans": ["refers to the person being addressed, or the reflexive form of you."]
+    },
+    {
+      "name": "someone",
+      "trans": ["refers to a person who is not known or specified."]
+    },
+    {
+      "name": "everything",
+      "trans": ["refers to all things, or the entirety of something."]
+    },
+    {
+      "name": "itself",
+      "trans": ["refers to a thing or object being discussed, or the reflexive form of it."]
+    },
+    {
+      "name": "everyone",
+      "trans": ["refers to every person, or all members of a group."]
+    },
+    {
+      "name": "themselves",
+      "trans": ["refers to multiple people or things being discussed, or the reflexive form of they."]
+    },
+    {
+      "name": "anyone",
+      "trans": ["refers to any person, or a person who is not known or specified."]
+    },
+    {
+      "name": "him",
+      "trans": ["refers to a male person being discussed or referred to."]
+    },
+    {
+      "name": "whose",
+      "trans": ["used to ask about or indicate possession."]
+    },
+    {
+      "name": "myself",
+      "trans": ["refers to the speaker, or the reflexive form of I."]
+    },
+    {
+      "name": "everybody",
+      "trans": ["refers to every person, or all members of a group."]
+    },
+    {
+      "name": "ourselves",
+      "trans": ["refers to the group of people who are speaking, or the reflexive form of we."]
+    },
+    {
+      "name": "himself",
+      "trans": ["refers to a male person being discussed or referred to."]
+    },
+    {
+      "name": "somebody",
+      "trans": ["refers to a person who is not known or specified."]
+    },
+    {
+      "name": "yours",
+      "trans": ["refers to something that belongs to the person being addressed."]
+    },
+    {
+      "name": "herself",
+      "trans": ["refers to a female person being discussed or referred to."]
+    },
+    {
+      "name": "whoever",
+      "trans": ["refers to any person who."]
+    },
+    {
+      "name": "you",
+      "trans": ["refers to the person being addressed."]
+    },
+    {
+      "name": "that",
+      "trans": ["refers to a specific thing or idea being discussed."]
+    },
+    {
+      "name": "it",
+      "trans": ["refers to a thing or object being discussed."]
+    },
+    {
+      "name": "this",
+      "trans": ["refers to a specific thing or idea being discussed."]
+    },
+    {
+      "name": "what",
+      "trans": ["used to ask about something or indicate surprise."]
+    },
+    {
+      "name": "which",
+      "trans": ["used to indicate one or more alternatives."]
+    },
+    {
+      "name": "these",
+      "trans": ["refers to specific things being discussed or referred to."]
+    },
+    {
+      "name": "his",
+      "trans": ["refers to something that belongs to a male person being discussed or referred to."]
+    },
+    {
+      "name": "she",
+      "trans": ["refers to a female person being discussed or referred to."]
+    },
+    {
+      "name": "lot",
+      "trans": ["refers to a large number or amount of something."]
+    },
+    {
+      "name": "anything",
+      "trans": ["refers to any thing, or a thing that is not known or specified."]
+    },
+    {
+      "name": "whatever",
+      "trans": ["refers to any thing or idea, or an unspecified thing or idea."]
+    },
+    {
+      "name": "nobody",
+      "trans": ["refers to no person, or a person who is not present or specified."]
+    },
+    {
+      "name": "none",
+      "trans": ["refers to no one or nothing, or an absence of someone or something."]
+    },
+    {
+      "name": "mine",
+      "trans": ["refers to something that belongs to the speaker."]
+    },
+    {
+      "name": "anybody",
+      "trans": ["refers to any person, or a person who is not known or specified."]
+    },
+    {
+      "name": "some",
+      "trans": ["refers to a certain amount or number of something, or an unspecified amount or number."]
+    },
+    {
+      "name": "there",
+      "trans": ["refers to a place or location being discussed or referred to."]
+    },
+    {
+      "name": "all",
+      "trans": ["refers to everything or everyone being discussed or referred to."]
+    },
+    {
+      "name": "where",
+      "trans": ["used to ask about a place or location."]
+    },
+    {
+      "name": "another",
+      "trans": ["refers to an additional person or thing, or a person or thing that is different from one already mentioned."]
+    },
+    {
+      "name": "same",
+      "trans": ["refers to something that is identical or similar to something else."]
+    },
+    {
+      "name": "certain",
+      "trans": ["refers to a specific thing or idea being discussed, or a thing or idea that is known or definite."]
+    },
+    {
+      "name": "nothing",
+      "trans": ["refers to no thing or idea, or an absence of something."]
+    },
+    {
+      "name": "self",
+      "trans": ["refers to the individual person being discussed or referred to."]
+    },
+    {
+      "name": "nowhere",
+      "trans": ["refers to no place or location, or a place or location that is not known or specified."]
+    }
+  ]
