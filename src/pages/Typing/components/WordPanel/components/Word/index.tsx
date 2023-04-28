@@ -222,7 +222,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
               )
             })}
           </div>
-          {pronunciationIsOpen && <WordSound word={word} inputWord={wordState.inputWord} />}
+          {pronunciationIsOpen && <WordSound word={word} inputWord={wordState.inputWord} className="h-10 w-10" />}
         </div>
       </div>
     </>

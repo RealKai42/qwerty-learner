@@ -12,9 +12,9 @@ import keyboardSvg from '@/assets/sharePic/keyBackground.svg'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import { recordShareAction } from '@/utils'
 import { Dialog, Transition } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/solid'
 import { useAtomValue } from 'jotai'
 import { Fragment, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import IconXMark from '~icons/heroicons/x-mark-solid'
 
 const PIC_RATIO = 3
 const PIC_LIST = [shareImage1, shareImage2, shareImage3, shareImage4, shareImage5, shareImage6, shareImage7, shareImage8, shareImage9]
@@ -120,7 +120,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 <Dialog.Panel className="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
                   <div className="flex flex-col items-center justify-center pb-10 pl-20 pr-14 pt-20">
                     <button className="absolute right-7 top-5" type="button" onClick={handleClose} title="关闭对话框">
-                      <XMarkIcon className="h-6 w-6 text-gray-400" />
+                      <IconXMark className="h-6 w-6 text-gray-400" />
                     </button>
                     <div className="h-152 w-116">
                       {imageURL ? (

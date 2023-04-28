@@ -1,8 +1,8 @@
 import SharePicDialog from './SharePicDialog'
 import { recordShareAction } from '@/utils'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
-import { IconShare2 } from '@tabler/icons-react'
 import { useCallback, useMemo, useState } from 'react'
+import IconShare2 from '~icons/tabler/share-2'
 
 export default function ShareButton() {
   const [isShowSharePanel, setIsShowSharePanel] = useState(false)
