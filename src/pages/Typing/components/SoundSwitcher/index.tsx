@@ -1,8 +1,8 @@
 import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
 import { Popover, Transition, Switch } from '@headlessui/react'
-import { SpeakerWaveIcon } from '@heroicons/react/24/solid'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback } from 'react'
+import IconSpeakerWave from '~icons/heroicons/speaker-wave-solid'
 
 export default function SoundSwitcher() {
   const [keySoundsConfig, setKeySoundsConfig] = useAtom(keySoundsConfigAtom)
@@ -36,7 +36,7 @@ export default function SoundSwitcher() {
             aria-label="音效设置"
             title="音效设置"
           >
-            <SpeakerWaveIcon className="icon" />
+            <IconSpeakerWave className="icon" />
           </Popover.Button>
 
           <Transition
@@ -51,9 +51,7 @@ export default function SoundSwitcher() {
             <Popover.Panel className="absolute left-1/2 z-10 mt-2 flex max-w-max -translate-x-1/2 px-4 ">
               <div className="shadow-upper box-border flex w-60 select-none flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 drop-shadow dark:bg-gray-800">
                 <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                  <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                    开关按键音
-                  </span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关按键音</span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={keySoundsConfig.isOpen} onChange={onChangeKeySound} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
@@ -64,9 +62,7 @@ export default function SoundSwitcher() {
                   </div>
                 </div>
                 <div className="flex w-full flex-col items-start  gap-2 py-0">
-                  <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                    开关效果音
-                  </span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关效果音</span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={hintSoundsConfig.isOpen} onChange={onChangeHintSound} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />

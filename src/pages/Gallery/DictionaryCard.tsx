@@ -1,8 +1,8 @@
 import { currentChapterAtom, currentDictIdAtom } from '@/store'
 import { Dictionary } from '@/typings'
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { useAtom, useSetAtom } from 'jotai'
 import React, { useEffect, useRef } from 'react'
+import IconCheckCircle from '~icons/heroicons/check-circle-solid'
 
 const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
@@ -33,7 +33,7 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
       <p className="mb-1 text-xs text-gray-900 dark:text-white dark:text-opacity-90">{dictionary.description}</p>
       <p className="text-sm font-bold text-gray-600 dark:text-white dark:text-opacity-60">{dictionary.length} 词</p>
       {currentDictId === dictionary.id ? (
-        <CheckCircleIcon className="absolute -bottom-4 -right-4 h-18 w-18 text-6xl text-green-500 opacity-60 dark:text-green-300" />
+        <IconCheckCircle className="absolute -bottom-4 -right-4 h-18 w-18 text-6xl text-green-500 opacity-60 dark:text-green-300" />
       ) : null}
     </button>
   )
