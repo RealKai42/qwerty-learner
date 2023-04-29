@@ -3,7 +3,22 @@ import { SoundResource, LanguagePronunciationMap } from '@/typings'
 export const SOUND_URL_PREFIX = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner/sounds/' : './sounds/'
 
 // will add more sound resource and add config ui in the future
-export const keySoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'click.wav' }]
+const videoList = import.meta.glob(['/qwerty-learner/sounds/*.wav', '../../public/sounds/*.wav'], {
+  eager: true,
+})
+
+export const keySoundResources: SoundResource[] = Object.entries(videoList).map(([k, v]) => {
+  const name = k.replace(/(.*\/)*([^.]+).*/gi, '$2')
+  const suffix = k.substring(k.lastIndexOf('.'))
+  // console.log(`${name}${suffix}`)
+  return {
+    key: name,
+    name: `声音${name}`,
+    filename: `${name}${suffix}`,
+  }
+})
+
+// export const keySoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'click.wav' }]
 
 export const wrongSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'beep.wav' }]
 
