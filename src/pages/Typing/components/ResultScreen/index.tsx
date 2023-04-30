@@ -1,18 +1,23 @@
-import { Transition } from '@headlessui/react'
-import Tooltip from '@/components/Tooltip'
-import { useCallback, useContext, useMemo } from 'react'
-import { useHotkeys } from 'react-hotkeys-hook'
+import { TypingContext, TypingStateActionType } from '../../store'
+import ShareButton from '../ShareButton'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useAtom, useAtomValue, useSetAtom } from 'jotai'
-import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom } from '@/store'
-import { recordOpenInfoPanelAction } from '@/utils'
+import styles from './index.module.css'
+import Tooltip from '@/components/Tooltip'
+import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom } from '@/store'
 import { InfoPanelType } from '@/typings'
-import { TypingContext, TypingStateActionType } from '../../store'
-import ShareButton from '../ShareButton'
-import redBookLogo from '@/assets/redBook-color-logo.svg'
+import { WordWithIndex } from '@/typings'
+import { recordOpenInfoPanelAction } from '@/utils'
+import { Transition } from '@headlessui/react'
+import { useAtom, useAtomValue, useSetAtom } from 'jotai'
+import { useCallback, useContext, useMemo } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
+import IconCoffee from '~icons/mdi/coffee'
+import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
+import IconGithub from '~icons/simple-icons/github'
+import IconWechat from '~icons/simple-icons/wechat'
+import IconX from '~icons/tabler/x'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -21,6 +26,13 @@ const ResultScreen = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
+  const randomConfig = useAtomValue(randomConfigAtom)
+
+  const wrongWords = useMemo(() => {
+    const wordList = state.chapterData.wrongWordIndexes.map((index) => state.chapterData.words.find((word) => word.index === index))
+
+    return wordList.filter((word) => word !== undefined) as WordWithIndex[]
+  }, [state.chapterData.wrongWordIndexes, state.chapterData.words])
 
   const isLastChapter = useMemo(() => {
     return currentChapter >= currentDictInfo.chapterCount - 1
@@ -52,12 +64,12 @@ const ResultScreen = () => {
   }, [state.timerData.time])
 
   const repeatButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
-  }, [dispatch])
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen])
 
   const dictationButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER })
-  }, [dispatch])
+    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen])
 
   const nextButtonHandler = useCallback(() => {
     if (!isLastChapter) {
@@ -67,7 +79,7 @@ const ResultScreen = () => {
   }, [dispatch, isLastChapter, setCurrentChapter])
 
   const exitButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER })
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: false })
   }, [dispatch])
   useHotkeys(
     'enter',
@@ -96,12 +108,7 @@ const ResultScreen = () => {
   const handleOpenInfoPanel = useCallback(
     (modalType: InfoPanelType) => {
       recordOpenInfoPanelAction(modalType, 'resultScreen')
-      setInfoPanelState((state) => {
-        return {
-          ...state,
-          [modalType]: true,
-        }
-      })
+      setInfoPanelState((state) => ({ ...state, [modalType]: true }))
     },
     [setInfoPanelState],
   )
@@ -124,7 +131,7 @@ const ResultScreen = () => {
               {`${currentDictInfo.name} 第 ${currentChapter + 1} 章`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
-              <FontAwesomeIcon icon={['fas', 'times']} className="text-gray-400" size="lg" />
+              <IconX className="text-gray-400" />
             </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
@@ -134,8 +141,8 @@ const ResultScreen = () => {
               </div>
               <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
                 <div className="customized-scrollbar z-20 ml-8 mr-1 flex h-80 flex-row flex-wrap content-start gap-4 overflow-y-auto overflow-x-hidden pr-7 pt-9">
-                  {state.chapterData.wrongWordIndexes.map((index) => (
-                    <WordChip key={`${index}-${state.chapterData.words[index].name}`} word={state.chapterData.words[index]} />
+                  {wrongWords.map((word, index) => (
+                    <WordChip key={`${index}-${word.name}`} word={word} />
                   ))}
                 </div>
                 <div className="align-center flex w-full flex-row justify-start rounded-b-xl bg-indigo-200 px-4 dark:bg-indigo-400">
@@ -145,37 +152,41 @@ const ResultScreen = () => {
               <div className="ml-2 flex flex-col items-center justify-end gap-3.5 text-xl">
                 <ShareButton />
 
-                <img
-                  src={redBookLogo}
+                <IconXiaoHongShu
+                  fontSize={15}
+                  className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
                   onClick={(e) => {
                     handleOpenInfoPanel('redBook')
                     e.currentTarget.blur()
                   }}
-                  className="svg-inline--fa h-5 cursor-pointer fill-current text-gray-50"
-                  alt="red book"
-                  style={{ fill: '#6B7280' }}
                 />
 
-                <FontAwesomeIcon
-                  icon={['fas', 'coffee']}
+                <button
                   onClick={(e) => {
                     handleOpenInfoPanel('donate')
                     e.currentTarget.blur()
                   }}
-                  className="cursor-pointer text-gray-500 dark:text-gray-400"
-                />
+                  className="cursor-pointer"
+                  type="button"
+                  title="捐赠我们的项目"
+                >
+                  <IconCoffee fontSize={17} className={`text-gray-500 hover:text-amber-500  focus:outline-none ${styles.imgShake}`} />
+                </button>
 
-                <FontAwesomeIcon
-                  icon={['fab', 'weixin']}
+                <button
                   onClick={(e) => {
                     handleOpenInfoPanel('community')
                     e.currentTarget.blur()
                   }}
                   className="cursor-pointer text-gray-500 dark:text-gray-400"
-                />
+                  type="button"
+                  title="加入我们的社区"
+                >
+                  <IconWechat fontSize={16} className="text-gray-500 hover:text-green-500 focus:outline-none" />
+                </button>
 
                 <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
-                  <FontAwesomeIcon icon={['fab', 'github']} className="text-gray-500 dark:text-gray-400" />
+                  <IconGithub fontSize={16} className="text-gray-500 hover:text-green-800 focus:outline-none" />
                 </a>
               </div>
             </div>
@@ -183,7 +194,9 @@ const ResultScreen = () => {
               <Tooltip content="快捷键：shift + enter">
                 <button
                   className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+                  type="button"
                   onClick={dictationButtonHandler}
+                  title="默写本章节"
                 >
                   默写本章节
                 </button>
@@ -191,7 +204,9 @@ const ResultScreen = () => {
               <Tooltip content="快捷键：space">
                 <button
                   className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+                  type="button"
                   onClick={repeatButtonHandler}
+                  title="重复本章节"
                 >
                   重复本章节
                 </button>
@@ -200,7 +215,9 @@ const ResultScreen = () => {
                 <Tooltip content="快捷键：enter">
                   <button
                     className={`btn-primary { isLastChapter ? 'cursor-not-allowed opacity-50' : ''} h-12 text-base font-bold `}
+                    type="button"
                     onClick={nextButtonHandler}
+                    title="下一章节"
                   >
                     下一章节
                   </button>

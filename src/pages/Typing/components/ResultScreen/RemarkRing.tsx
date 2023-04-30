@@ -1,6 +1,6 @@
-import { clamp } from 'lodash'
-import { useMemo } from 'react'
+import clamp from '@/utils/clamp'
 import classNames from 'classnames'
+import { useMemo } from 'react'
 
 export type RemarkRingProps = {
   remark: string

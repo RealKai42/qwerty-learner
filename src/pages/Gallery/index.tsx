@@ -1,15 +1,15 @@
-import React from 'react'
-import Layout from '@/components/Layout'
+import ChapterGroup from './ChapterGroup'
 import DictionaryGroup from './DictionaryGroup'
 import Header from '@/components/Header'
-import { NavLink, useNavigate } from 'react-router-dom'
-import { groupBy } from 'lodash'
-import { useHotkeys } from 'react-hotkeys-hook'
-import ChapterGroup from './ChapterGroup'
+import Layout from '@/components/Layout'
 import Tooltip from '@/components/Tooltip'
 import { dictionaries } from '@/resources/dictionary'
-import { useAtomValue } from 'jotai'
 import { currentDictInfoAtom } from '@/store'
+import groupBy from '@/utils/groupBy'
+import { useAtomValue } from 'jotai'
+import React from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const GalleryPage: React.FC = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)

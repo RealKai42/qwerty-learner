@@ -9,23 +9,25 @@ module.exports = {
       padding: {
         0.8: '0.2rem',
       },
-      borderRadius: {
-        large: '0.75rem',
-        lg: '0.5rem',
-        md: '0.375rem',
-      },
       width: {
+        3.5: '0.875rem',
+        5.5: '1.375rem',
+        15: '3.75rem',
         18: '4.5rem',
         70: '17.5rem',
         75: '18.75rem',
         84: '21rem',
         85: '21.25rem',
+        100: '25rem',
         116: '29rem',
         150: '37.5rem',
         160: '40rem',
         200: '50rem',
       },
       height: {
+        3.5: '0.875rem',
+        5.5: '1.375rem',
+        15: '3.75rem',
         18: '4.5rem',
         22: '5.5rem',
         112: '28rem',
@@ -34,6 +36,15 @@ module.exports = {
       },
       borderWidth: {
         3: '3px',
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+        dic3: '1100px',
+        dic4: '1440px',
       },
     },
   },
@@ -44,5 +55,5 @@ module.exports = {
       backgroundOpacity: ['dark'],
     },
   },
-  plugins: [require('@headlessui/tailwindcss')],
+  plugins: [require('@headlessui/tailwindcss'), require('@tailwindcss/forms')],
 }

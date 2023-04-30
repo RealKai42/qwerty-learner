@@ -1,9 +1,9 @@
+import usePronunciationSound from '@/hooks/usePronunciation'
+import { WordWithIndex } from '@/typings'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
 import { useCallback, useState } from 'react'
-import usePronunciationSound from '@/hooks/usePronunciation'
-import { Word } from '@/typings'
 
-export default function WordChip({ word }: { word: Word }) {
+export default function WordChip({ word }: { word: WordWithIndex }) {
   const [showTranslation, setShowTranslation] = useState(false)
   const { x, y, strategy, refs, context } = useFloating({
     open: showTranslation,
@@ -22,9 +22,16 @@ export default function WordChip({ word }: { word: Word }) {
 
   return (
     <>
-      <div ref={refs.setReference} className="word-chip select-none" {...getReferenceProps()} onClick={onClickWord}>
+      <button
+        ref={refs.setReference}
+        className="word-chip select-none"
+        {...getReferenceProps()}
+        type="button"
+        onClick={onClickWord}
+        title={`朗读 ${word.name}`}
+      >
         <span>{word.name}</span>
-      </div>
+      </button>
       {showTranslation && (
         <div
           ref={refs.setFloating}

@@ -1,17 +1,22 @@
-import { useContext } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useHotkeys } from 'react-hotkeys-hook'
-import Tooltip from '@/components/Tooltip'
-import { useAtom } from 'jotai'
-import { isLoopSingleWordAtom, isOpenDarkModeAtom } from '@/store'
 import { TypingContext, TypingStateActionType } from '../../store'
-import SoundSwitcher from '../SoundSwitcher'
 import Setting from '../Setting'
+import SoundSwitcher from '../SoundSwitcher'
+import Tooltip from '@/components/Tooltip'
+import { isOpenDarkModeAtom } from '@/store'
+import { useAtom } from 'jotai'
+import { useContext } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
+import IconEyeSlash from '~icons/heroicons/eye-slash-solid'
+import IconEye from '~icons/heroicons/eye-solid'
+import IconMoon from '~icons/heroicons/moon-solid'
+import IconSun from '~icons/heroicons/sun-solid'
+import IconLanguage from '~icons/tabler/language'
+import IconLanguageOff from '~icons/tabler/language-off'
+import IconRepeatOff from '~icons/tabler/repeat-off'
+import IconRepeatOnce from '~icons/tabler/repeat-once'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
-  const [isLoopSingleWord, setIsLoopSingleWord] = useAtom(isLoopSingleWordAtom)
-
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
   const changeDarkModeState = () => {
@@ -31,7 +36,9 @@ export default function Switcher() {
   }
 
   const changeLoopSingleWordState = () => {
-    setIsLoopSingleWord((old) => !old)
+    if (dispatch) {
+      dispatch({ type: TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD })
+    }
   }
 
   useHotkeys(
@@ -69,53 +76,61 @@ export default function Switcher() {
   )
 
   return (
-    <div className="flex items-center justify-center space-x-3">
+    <div className="flex items-center justify-center gap-2">
       <Tooltip content="音效设置">
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip content="开关单个单词循环（Ctrl + L）">
+      <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
         <button
-          className={`${isLoopSingleWord ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isLoopSingleWord ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
+          type="button"
           onClick={(e) => {
             changeLoopSingleWordState()
             e.currentTarget.blur()
           }}
+          aria-label="开关单个单词循环（Ctrl + L）"
         >
-          <FontAwesomeIcon icon="repeat" fixedWidth />
+          {state?.isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
         </button>
       </Tooltip>
-      <Tooltip content="开关英语显示（Ctrl + V）">
+      <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
         <button
-          className={`${state?.isWordVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isWordVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
+          type="button"
           onClick={(e) => {
             changeWordVisibleState()
             e.currentTarget.blur()
           }}
+          aria-label="开关英语显示（Ctrl + V）"
         >
-          <FontAwesomeIcon icon={state?.isWordVisible ? 'eye' : 'eye-slash'} fixedWidth />
+          {state?.isWordVisible ? <IconEye className="icon" /> : <IconEyeSlash className="icon" />}
         </button>
       </Tooltip>
-      <Tooltip content="开关释义显示（Ctrl + T）">
+      <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + T）">
         <button
-          className={`${state?.isTransVisible ? 'text-indigo-400' : 'text-gray-400'} text-lg focus:outline-none`}
+          className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
+          type="button"
           onClick={(e) => {
             changeTransVisibleState()
             e.currentTarget.blur()
           }}
+          aria-label="开关释义显示（Ctrl + T）"
         >
-          <FontAwesomeIcon icon="earth-americas" fixedWidth />
+          {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
-      <Tooltip content="开关深色模式（Ctrl + D）">
+      <Tooltip className="h-7 w-7" content="开关深色模式（Ctrl + D）">
         <button
-          className={`text-lg text-indigo-400 focus:outline-none`}
+          className={`p-[2px] text-lg text-indigo-500 focus:outline-none`}
+          type="button"
           onClick={(e) => {
             changeDarkModeState()
             e.currentTarget.blur()
           }}
+          aria-label="开关深色模式（Ctrl + D）"
         >
-          <FontAwesomeIcon icon={isOpenDarkMode ? 'moon' : 'sun'} fixedWidth />
+          {isOpenDarkMode ? <IconMoon className="icon" /> : <IconSun className="icon" />}
         </button>
       </Tooltip>
 

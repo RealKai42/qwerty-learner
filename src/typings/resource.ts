@@ -1,13 +1,15 @@
-import { LanguageType, PronunciationType } from '.'
+import { LanguageCategoryType, LanguageType, PronunciationType } from '.'
 
 export type DictionaryResource = {
   id: string
   name: string
   description: string
   category: string
+  tags: string[]
   url: string
   length: number
   language: LanguageType
+  languageCategory: LanguageCategoryType
   //override default pronunciation when not undefined
   defaultPronIndex?: number
 }
@@ -17,9 +19,11 @@ export type Dictionary = {
   name: string
   description: string
   category: string
+  tags: string[]
   url: string
   length: number
   language: LanguageType
+  languageCategory: LanguageCategoryType
   // calculated in the store
   chapterCount: number
   //override default pronunciation when not undefined

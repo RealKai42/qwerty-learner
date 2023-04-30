@@ -5,7 +5,7 @@ services:
     image: 'node:16'
     user: 'root'
     working_dir: '/app/qwerty-learner'
-    ports: [8990:3000]
+    ports: [8990:5173]
     volumes:
       - $PWD/:/app/qwerty-learner
     command:
@@ -19,7 +19,7 @@ services:
         cd /app/qwerty-learner
         yarn install
         yarn build
-        nohup yarn start &
+        nohup yarn start --host=0.0.0.0 &
         echo 'success.. start..'
         pwd
         echo '查看输出:...'

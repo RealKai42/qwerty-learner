@@ -1,17 +1,15 @@
-import React, { useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
 import './index.css'
-import './icon'
-import 'react-app-polyfill/stable'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import GalleryPage from './pages/Gallery'
+// import GalleryPage from './pages/Gallery'
+import GalleryPage from './pages/Gallery-N'
 import TypingPage from './pages/Typing'
-import mixpanel from 'mixpanel-browser'
-import dayjs from 'dayjs'
-import utc from 'dayjs/plugin/utc'
-import { useAtomValue } from 'jotai'
 import { isOpenDarkModeAtom } from '@/store'
+import { useAtomValue } from 'jotai'
+import mixpanel from 'mixpanel-browser'
 import process from 'process'
+import React, { useEffect } from 'react'
+import 'react-app-polyfill/stable'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 if (process.env.NODE_ENV === 'production') {
   // for prod
@@ -21,11 +19,7 @@ if (process.env.NODE_ENV === 'production') {
   mixpanel.init('5474177127e4767124c123b2d7846e2a', { debug: true })
 }
 
-dayjs.extend(utc)
-
 const container = document.getElementById('root')
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const root = createRoot(container!)
 
 function Root() {
   const darkMode = useAtomValue(isOpenDarkModeAtom)
@@ -46,4 +40,4 @@ function Root() {
   )
 }
 
-root.render(<Root />)
+container && createRoot(container).render(<Root />)

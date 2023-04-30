@@ -1,9 +1,10 @@
+import styles from './index.module.css'
+import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
+import { toFixedNumber } from '@/utils'
 import { Switch } from '@headlessui/react'
-import { useCallback } from 'react'
 import * as Slider from '@radix-ui/react-slider'
 import { useAtom } from 'jotai'
-import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
-import styles from './index.module.css'
+import { useCallback } from 'react'
 
 export default function SoundSetting() {
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
@@ -24,6 +25,16 @@ export default function SoundSetting() {
       setPronunciationConfig((prev) => ({
         ...prev,
         volume: value[0] / 100,
+      }))
+    },
+    [setPronunciationConfig],
+  )
+
+  const onChangePronunciationRate = useCallback(
+    (value: [number]) => {
+      setPronunciationConfig((prev) => ({
+        ...prev,
+        rate: value[0],
       }))
     },
     [setPronunciationConfig],
@@ -88,6 +99,7 @@ export default function SoundSetting() {
               step={10}
               className="slider"
               onValueChange={onChangePronunciationVolume}
+              disabled={!pronunciationConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
@@ -95,6 +107,27 @@ export default function SoundSetting() {
               <Slider.Thumb />
             </Slider.Root>
             <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(pronunciationConfig.volume * 100)}%`}</span>
+          </div>
+        </div>
+
+        <div className={styles.block}>
+          <span className={styles.blockLabel}>倍速</span>
+          <div className="flex h-5 w-full items-center justify-between">
+            <Slider.Root
+              defaultValue={[pronunciationConfig.rate ?? 1]}
+              max={4}
+              min={0.5}
+              step={0.1}
+              className="slider"
+              onValueChange={onChangePronunciationRate}
+              disabled={!pronunciationConfig.isOpen}
+            >
+              <Slider.Track>
+                <Slider.Range />
+              </Slider.Track>
+              <Slider.Thumb />
+            </Slider.Root>
+            <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${toFixedNumber(pronunciationConfig.rate, 2)}`}</span>
           </div>
         </div>
       </div>
@@ -115,9 +148,11 @@ export default function SoundSetting() {
             <Slider.Root
               defaultValue={[keySoundsConfig.volume * 100]}
               max={100}
+              min={1}
               step={10}
               className="slider"
               onValueChange={onChangeKeySoundsVolume}
+              disabled={!keySoundsConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />
@@ -145,9 +180,11 @@ export default function SoundSetting() {
             <Slider.Root
               defaultValue={[hintSoundsConfig.volume * 100]}
               max={100}
+              min={1}
               step={10}
               className="slider"
               onValueChange={onChangeHintSoundsVolume}
+              disabled={!hintSoundsConfig.isOpen}
             >
               <Slider.Track>
                 <Slider.Range />

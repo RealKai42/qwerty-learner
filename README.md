@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  <a href="./docs/README_EN.md">English</a> 
+  <a href="./docs/README_EN.md">English</a>
 </p>
 
 <p align="center">
@@ -26,9 +26,9 @@
 
 ## 📸 在线访问
 
-Vercel: https://qwerty.kaiyi.cool/ , https://qwerty-learner.vercel.app/  
-GitHub Pages: https://kaiyiwing.github.io/qwerty-learner/  
-Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
+Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>  
+GitHub Pages: <https://kaiyiwing.github.io/qwerty-learner/>  
+Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 国内用户建议使用 Gitee 访问
 <br/>
@@ -99,9 +99,16 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 <br />
 <br />
 
-### 如何导入属于自己的生词本
+## 如何贡献
 
-[导入属于自己的生词本的方法](./docs/tobuildwordbook.md)
+### 贡献代码
+
+[Call for Contributor](https://github.com/Kaiyiwing/qwerty-learner/issues/390)  
+[贡献准则](./docs/CONTRIBUTING.md)
+
+### 贡献词库
+
+[导入词典](./docs/toBuildDict.md)
 
 ## 🏆 荣誉
 
@@ -132,7 +139,8 @@ Gitee Pages: https://kaiyiwing.gitee.io/qwerty-learner/
 - 王陆雅思王听力语料库 [@Saigyouji_WKKun](https://github.com/ggehuliang)
 - 日语常见词、N1 ～ N5 [@xiaojia](https://github.com/wetery)
 
-如果您需要背诵其他词库，欢迎在 Issue 中提出。
+如果您需要背诵其他词库，欢迎在 Issue 中提出
+
 <br />
 <br />
 

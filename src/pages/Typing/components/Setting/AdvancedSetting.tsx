@@ -1,12 +1,13 @@
-import { isIgnoreCaseAtom, randomConfigAtom } from '@/store'
+import styles from './index.module.css'
+import { isIgnoreCaseAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
 import { Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
-import styles from './index.module.css'
 
 export default function AdvancedSetting() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
+  const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -25,11 +26,18 @@ export default function AdvancedSetting() {
     [setIsIgnoreCase],
   )
 
+  const onToggleTextSelectable = useCallback(
+    (checked: boolean) => {
+      setIsTextSelectable(checked)
+    },
+    [setIsTextSelectable],
+  )
+
   return (
     <div className={styles.tabContent}>
       <div className={styles.section}>
         <span className={styles.sectionLabel}>章节乱序</span>
-        <span className={styles.sectionDescription}>开启后，每次练习章节中单词会随机排序</span>
+        <span className={styles.sectionDescription}>开启后，每次练习章节中单词会随机排序。下一章节生效</span>
         <div className={styles.switchBlock}>
           <Switch checked={randomConfig.isOpen} onChange={onToggleRandom} className="switch-root">
             <span aria-hidden="true" className="switch-thumb" />
@@ -48,6 +56,18 @@ export default function AdvancedSetting() {
           </Switch>
           <span className="text-right text-xs font-normal leading-tight text-gray-600">{`忽略大小写已${
             isIgnoreCase ? '开启' : '关闭'
+          }`}</span>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <span className={styles.sectionLabel}>是否允许选择文本</span>
+        <span className={styles.sectionDescription}>开启后，可以通过鼠标选择文本 </span>
+        <div className={styles.switchBlock}>
+          <Switch checked={isTextSelectable} onChange={onToggleTextSelectable} className="switch-root">
+            <span aria-hidden="true" className="switch-thumb" />
+          </Switch>
+          <span className="text-right text-xs font-normal leading-tight text-gray-600">{`选择文本已${
+            isTextSelectable ? '开启' : '关闭'
           }`}</span>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import { ReactNode, useState } from 'react'
 import { classNames } from '@/utils'
+import { ReactNode, useState } from 'react'
 
 const Tooltip = ({ children, content, className, placement = 'top' }: TooltipProps) => {
   const [visible, setVisible] = useState(false)

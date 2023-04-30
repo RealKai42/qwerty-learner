@@ -1,10 +1,15 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { TypingContext, TypingStateActionType } from '../../store'
+import AdvancedSetting from './AdvancedSetting'
+import DataSetting from './DataSetting'
+import SoundSetting from './SoundSetting'
 import { Dialog, Tab, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
-import SoundSetting from './SoundSetting'
-import AdvancedSetting from './AdvancedSetting'
-import { TypingContext, TypingStateActionType } from '../../store'
+import IconCog6Tooth from '~icons/heroicons/cog-6-tooth-solid'
+import IconAdjustmentsHorizontal from '~icons/tabler/adjustments-horizontal'
+import IconDatabaseCog from '~icons/tabler/database-cog'
+import IconEar from '~icons/tabler/ear'
+import IconX from '~icons/tabler/x'
 
 export default function Setting() {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,11 +31,12 @@ export default function Setting() {
       <button
         type="button"
         onClick={openModal}
-        className={`flex items-center justify-center rounded p-[2px] py-[3px] text-lg text-indigo-400 outline-none transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white  ${
-          isOpen && 'bg-indigo-400 text-white'
+        className={`flex items-center justify-center rounded p-[2px] text-lg text-indigo-500 outline-none transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white  ${
+          isOpen && 'bg-indigo-500 text-white'
         }`}
+        title="打开设置对话框"
       >
-        <FontAwesomeIcon icon="gear" fixedWidth className="focus:outline-none" />
+        <IconCog6Tooth className="icon" />
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
@@ -61,12 +67,9 @@ export default function Setting() {
                 <Dialog.Panel className="flex w-200 flex-col overflow-hidden rounded-2xl bg-white p-0 shadow-xl dark:bg-gray-800">
                   <div className="relative flex h-22 items-end justify-between rounded-t-lg border-b border-neutral-100 bg-stone-50 px-6 py-3 dark:border-neutral-700 dark:bg-gray-900">
                     <span className="text-3xl font-bold text-gray-600">设置</span>
-                    <FontAwesomeIcon
-                      icon={['fas', 'times']}
-                      className="absolute right-7 top-5 cursor-pointer text-gray-400"
-                      size="lg"
-                      onClick={() => setIsOpen(false)}
-                    />
+                    <button type="button" onClick={() => setIsOpen(false)} title="关闭对话框">
+                      <IconX className="absolute right-7 top-5 cursor-pointer text-gray-400" />
+                    </button>
                   </div>
 
                   <Tab.Group vertical>
@@ -80,7 +83,7 @@ export default function Setting() {
                             )
                           }
                         >
-                          <FontAwesomeIcon icon="ear-listen" className="mr-2 text-neutral-500  dark:text-neutral-300" size="1x" />
+                          <IconEar className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300 ">音效设置</span>
                         </Tab>
                         <Tab
@@ -91,8 +94,19 @@ export default function Setting() {
                             )
                           }
                         >
-                          <FontAwesomeIcon icon="sliders" className="mr-2 text-neutral-500  dark:text-neutral-300" size="1x" />
+                          <IconAdjustmentsHorizontal className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">高级设置</span>
+                        </Tab>
+                        <Tab
+                          className={({ selected }) =>
+                            classNames(
+                              'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
+                            )
+                          }
+                        >
+                          <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
+                          <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
                         </Tab>
                       </Tab.List>
 
@@ -102,6 +116,9 @@ export default function Setting() {
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
                           <AdvancedSetting />
+                        </Tab.Panel>
+                        <Tab.Panel className="flex h-full focus:outline-none">
+                          <DataSetting />
                         </Tab.Panel>
                       </Tab.Panels>
                     </div>

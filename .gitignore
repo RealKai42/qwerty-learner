@@ -26,3 +26,6 @@ yarn-error.log*
 package-lock.json
 
 .env
+stats.html
+
+.idea

@@ -1,13 +1,14 @@
-import { LANG_PRON_MAP } from '@/resources/soundResource'
-import { useAtom, useAtomValue } from 'jotai'
-import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
-import { useCallback, useEffect, useMemo } from 'react'
-import { Listbox } from '@headlessui/react'
-import { PronunciationType, PRONUNCIATION_PHONETIC_MAP } from '@/typings'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Fragment } from 'react'
-import { Popover, Transition, Switch } from '@headlessui/react'
 import Tooltip from '@/components/Tooltip'
+import { LANG_PRON_MAP } from '@/resources/soundResource'
+import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
+import { PronunciationType, PRONUNCIATION_PHONETIC_MAP } from '@/typings'
+import { Listbox } from '@headlessui/react'
+import { Popover, Transition, Switch } from '@headlessui/react'
+import { useAtom, useAtomValue } from 'jotai'
+import { useCallback, useEffect, useMemo } from 'react'
+import { Fragment } from 'react'
+import IconCheck from '~icons/tabler/check'
+import IconChevronDown from '~icons/tabler/chevron-down'
 
 const PronunciationSwitcher = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
@@ -98,7 +99,7 @@ const PronunciationSwitcher = () => {
       {({ open }) => (
         <>
           <Popover.Button
-            className={`flex h-8  cursor-pointer items-center justify-center rounded-md px-1  transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100  ${
+            className={`flex h-8 cursor-pointer items-center justify-center rounded-md px-1 transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100  ${
               open ? 'bg-indigo-400 text-white' : 'bg-transparent'
             }`}
             onFocus={(e) => {
@@ -120,9 +121,7 @@ const PronunciationSwitcher = () => {
             <Popover.Panel className="absolute left-1/2 z-10 mt-2 flex max-w-max -translate-x-1/2 px-4 ">
               <div className="shadow-upper box-border flex w-60 select-none flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 drop-shadow transition duration-1000 ease-in-out dark:bg-gray-800">
                 <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                  <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                    开关音标显示
-                  </span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关音标显示</span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={phoneticConfig.isOpen} onChange={onChangePhoneticIsOpen} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
@@ -133,9 +132,7 @@ const PronunciationSwitcher = () => {
                   </div>
                 </div>
                 <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                  <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                    开关单词发音
-                  </span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关单词发音</span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={pronunciationConfig.isOpen} onChange={onChangePronunciationIsOpen} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
@@ -156,9 +153,7 @@ const PronunciationSwitcher = () => {
                   leaveTo="max-h-0 opacity-0"
                 >
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                      开关循环发音
-                    </span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关循环发音</span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Switch checked={pronunciationConfig.isLoop} onChange={onChangePronunciationIsLoop} className="switch-root">
                         <span aria-hidden="true" className="switch-thumb" />
@@ -169,16 +164,14 @@ const PronunciationSwitcher = () => {
                     </div>
                   </div>
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-medium font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                      单词发音口音
-                    </span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">单词发音口音</span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Listbox value={pronunciationConfig.type} onChange={onChangePronunciationType}>
                         <div className="relative">
                           <Listbox.Button className="listbox-button">
                             <span>{pronunciationConfig.name}</span>
                             <span>
-                              <FontAwesomeIcon icon="chevron-down" fixedWidth className="focus:outline-none " />
+                              <IconChevronDown className="focus:outline-none" />
                             </span>
                           </Listbox.Button>
                           <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
@@ -190,7 +183,7 @@ const PronunciationSwitcher = () => {
                                       <span>{item.name}</span>
                                       {selected ? (
                                         <span className="listbox-options-icon ">
-                                          <FontAwesomeIcon icon="check" fixedWidth className="focus:outline-none" />
+                                          <IconCheck className="focus:outline-none" />
                                         </span>
                                       ) : null}
                                     </>

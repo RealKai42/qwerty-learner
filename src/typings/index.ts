@@ -1,9 +1,9 @@
-export * from './statInfo'
 export * from './resource'
 
 export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de'
 export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de'
 export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de'
+export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code'
 
 type Pronunciation2PhoneticMap = Record<PronunciationType, PhoneticType>
 
@@ -21,6 +21,11 @@ export type Word = {
   trans: string[]
   usphone: string
   ukphone: string
+}
+
+export type WordWithIndex = Word & {
+  // 在 chapter 中的原始索引
+  index: number
 }
 
 export type InfoPanelType = 'donate' | 'vsc' | 'community' | 'redBook'
