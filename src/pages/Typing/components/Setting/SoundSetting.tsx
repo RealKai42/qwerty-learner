@@ -19,7 +19,6 @@ export default function SoundSetting() {
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
   const [keySoundsConfig, setKeySoundsConfig] = useAtom(keySoundsConfigAtom)
   const [hintSoundsConfig, setHintSoundsConfig] = useAtom(hintSoundsConfigAtom)
-  console.log('????', keySoundsConfig)
   const [filename, setFilename] = useState(keySoundsConfig.resource.filename)
   const [playClickSound] = useSound(`${SOUND_URL_PREFIX}${filename}`)
 
@@ -99,14 +98,14 @@ export default function SoundSetting() {
     (key: string) => {
       setKeySoundsConfig((prev) => ({
         ...prev,
-        resource: keySoundResources.find((item: SoundResource) => Number(item.key) === Number(key)) as SoundResource,
+        resource: keySoundResources.find((item: SoundResource) => item.key === key) as SoundResource,
       }))
     },
     [setKeySoundsConfig],
   )
 
   function soundPlay(key: string): void {
-    const sound = keySoundResources.find((item: SoundResource) => Number(item.key) === Number(key)) as SoundResource
+    const sound = keySoundResources.find((item: SoundResource) => item.key === key) as SoundResource
     setFilename(sound.filename)
   }
 
