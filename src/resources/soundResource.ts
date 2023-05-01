@@ -4,13 +4,12 @@ export const SOUND_URL_PREFIX = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-lear
 
 // will add more sound resource and add config ui in the future
 const videoList = import.meta.glob(['/qwerty-learner/sounds/*.wav', '../../public/sounds/*.wav'], {
-  eager: true,
+  eager: false,
 })
 
-export const keySoundResources: SoundResource[] = Object.entries(videoList).map(([k, v]) => {
+export const keySoundResources: SoundResource[] = Object.keys(videoList).map((k) => {
   const name = k.replace(/(.*\/)*([^.]+).*/gi, '$2')
   const suffix = k.substring(k.lastIndexOf('.'))
-  // console.log(`${name}${suffix}`)
   return {
     key: name,
     name: `声音${name}`,
