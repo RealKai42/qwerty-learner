@@ -3,10 +3,13 @@ import AdvancedSetting from './AdvancedSetting'
 import DataSetting from './DataSetting'
 import SoundSetting from './SoundSetting'
 import { Dialog, Tab, Transition } from '@headlessui/react'
-import { Cog6ToothIcon } from '@heroicons/react/24/solid'
-import { IconEar, IconAdjustmentsHorizontal, IconX, IconDatabaseCog } from '@tabler/icons-react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
+import IconCog6Tooth from '~icons/heroicons/cog-6-tooth-solid'
+import IconAdjustmentsHorizontal from '~icons/tabler/adjustments-horizontal'
+import IconDatabaseCog from '~icons/tabler/database-cog'
+import IconEar from '~icons/tabler/ear'
+import IconX from '~icons/tabler/x'
 
 export default function Setting() {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,7 +36,7 @@ export default function Setting() {
         }`}
         title="打开设置对话框"
       >
-        <Cog6ToothIcon className="icon" />
+        <IconCog6Tooth className="icon" />
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>

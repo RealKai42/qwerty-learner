@@ -1,6 +1,6 @@
 import InfoPanel from '@/components/InfoPanel'
-import { IconBook2 } from '@tabler/icons-react'
 import { useCallback, useState } from 'react'
+import IconBook2 from '~icons/tabler/book-2'
 
 export default function DictRequest() {
   const [showPanel, setShowPanel] = useState(false)
@@ -21,7 +21,7 @@ export default function DictRequest() {
           title="申请词典"
           icon={IconBook2}
           buttonClassName="bg-indigo-500 hover:bg-indigo-400"
-          iconClassName="text-indigo-500 bg-indigo-100"
+          iconClassName="text-indigo-500 bg-indigo-100 dark:text-indigo-300 dark:bg-indigo-500"
           onClose={onClosePanel}
         >
           <p className="text-sm text-gray-600 dark:text-gray-300">

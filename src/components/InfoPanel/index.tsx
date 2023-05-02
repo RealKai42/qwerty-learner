@@ -1,14 +1,12 @@
-import redBookLogo from '@/assets/redBook-color-logo.svg'
 import { Dialog, Transition } from '@headlessui/react'
-import type { TablerIconsProps } from '@tabler/icons-react'
 import classNames from 'classnames'
-import React, { ElementType, Fragment } from 'react'
+import React, { ElementType, Fragment, SVGProps } from 'react'
 
 type InfoPanelProps = {
   openState: boolean
   onClose: () => void
   title: string
-  icon: ElementType<TablerIconsProps> | 'redBookLogo'
+  icon: ElementType<SVGProps<SVGSVGElement>>
   iconClassName: string
   buttonClassName: string
   children: React.ReactNode
@@ -47,14 +45,10 @@ const InfoPanel: React.FC<InfoPanelProps> = ({ openState, title, onClose, icon: 
                     <div
                       className={classNames(
                         iconClassName,
-                        `mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-50 sm:mx-0 sm:h-10 sm:w-10`,
+                        `mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full dark:bg-opacity-30 sm:mx-0 sm:h-10 sm:w-10`,
                       )}
                     >
-                      {Icon !== 'redBookLogo' ? (
-                        <Icon className="h-6 w-6 stroke-current dark:bg-opacity-100" />
-                      ) : (
-                        <img src={redBookLogo} alt="redBookLogo" className="h-6 w-6" />
-                      )}
+                      <Icon className="h-6 w-6 stroke-current dark:bg-opacity-100" />
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900 dark:text-white">

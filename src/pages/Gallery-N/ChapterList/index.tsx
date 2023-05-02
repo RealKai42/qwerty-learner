@@ -4,10 +4,10 @@ import { currentChapterAtom, currentDictIdAtom } from '@/store'
 import { calcChapterCount } from '@/utils'
 import range from '@/utils/range'
 import { Dialog, Transition } from '@headlessui/react'
-import { IconX } from '@tabler/icons-react'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import IconX from '~icons/tabler/x'
 
 export default function ChapterList() {
   const {

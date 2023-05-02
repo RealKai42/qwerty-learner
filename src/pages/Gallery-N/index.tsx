@@ -8,12 +8,12 @@ import { currentDictInfoAtom } from '@/store'
 import { Dictionary, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { IconX } from '@tabler/icons-react'
 import { useAtomValue } from 'jotai'
 import { createContext, useCallback, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useNavigate } from 'react-router-dom'
 import { Updater, useImmer } from 'use-immer'
+import IconX from '~icons/tabler/x'
 
 export type GalleryState = {
   currentLanguageTab: LanguageCategoryType
