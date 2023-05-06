@@ -15,6 +15,7 @@ export default function atomForConfig<T extends Record<string, unknown>>(
       for (const key in defaultValue) {
         if (!(key in config)) {
           hasMissingProperty = true
+          break
         }
       }
       // Merge iff there are missing properties
