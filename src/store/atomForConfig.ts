@@ -1,7 +1,10 @@
-import { atom } from 'jotai'
+import { WritableAtom, atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
-export default function atomForConfig<T extends Record<string, unknown>>(key: string, defaultValue: T) {
+export default function atomForConfig<T extends Record<string, unknown>>(
+  key: string,
+  defaultValue: T,
+): WritableAtom<T, [newConfig: T], void> {
   const storageAtom = atomWithStorage(key, defaultValue)
   return atom(
     (get) => {
