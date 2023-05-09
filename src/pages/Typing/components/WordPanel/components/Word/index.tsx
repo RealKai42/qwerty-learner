@@ -105,7 +105,11 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
 
     const inputChar = wordState.inputWord[inputLength - 1]
     const correctChar = wordState.displayWord[inputLength - 1]
-    const isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
+
+    let isEqual = false
+    if (inputChar != undefined && correctChar != undefined) {
+      isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
+    }
 
     if (isEqual) {
       // 输入正确时
