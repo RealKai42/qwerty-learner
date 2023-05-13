@@ -1,13 +1,15 @@
-import { SOUND_URL_PREFIX } from '@/resources/soundResource'
+import { SOUND_URL_PREFIX, KEY_SOUND_URL_PREFIX, keySoundResources } from '@/resources/soundResource'
 import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
 import noop from '@/utils/noop'
-import { useAtomValue } from 'jotai'
+import { useAtomValue, useSetAtom } from 'jotai'
+import { useEffect, useState } from 'react'
 import useSound from 'use-sound'
 
 export type PlayFunction = ReturnType<typeof useSound>[0]
 
 export default function useKeySound(): [PlayFunction, PlayFunction, PlayFunction] {
   const { isOpen: isKeyOpen, isOpenClickSound, volume: keyVolume, resource: keyResource } = useAtomValue(keySoundsConfigAtom)
+  const setKeySoundsConfig = useSetAtom(keySoundsConfigAtom)
   const {
     isOpen: isHintOpen,
     isOpenWrongSound,
@@ -16,8 +18,18 @@ export default function useKeySound(): [PlayFunction, PlayFunction, PlayFunction
     wrongResource,
     correctResource,
   } = useAtomValue(hintSoundsConfigAtom)
+  const [keySoundUrl, setKeySoundUrl] = useState(`${KEY_SOUND_URL_PREFIX}${keyResource.filename}`)
 
-  const [playClickSound] = useSound(`${SOUND_URL_PREFIX}${keyResource.filename}`, {
+  useEffect(() => {
+    if (!keySoundResources.some((item) => item.filename === keyResource.filename && item.key === keyResource.key)) {
+      const defaultKeySoundResource = keySoundResources.find((item) => item.key === 'Default') || keySoundResources[0]
+
+      setKeySoundUrl(`${KEY_SOUND_URL_PREFIX}${defaultKeySoundResource.filename}`)
+      setKeySoundsConfig((prev) => ({ ...prev, resource: defaultKeySoundResource }))
+    }
+  }, [keyResource, setKeySoundsConfig])
+
+  const [playClickSound] = useSound(keySoundUrl, {
     volume: keyVolume,
     interrupt: true,
   })
@@ -29,8 +41,6 @@ export default function useKeySound(): [PlayFunction, PlayFunction, PlayFunction
     volume: hintVolume,
     interrupt: true,
   })
-
-  // todo: add volume control
 
   return [
     isKeyOpen && isOpenClickSound ? playClickSound : noop,

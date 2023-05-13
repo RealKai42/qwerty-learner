@@ -182,7 +182,7 @@ const PronunciationSwitcher = () => {
                                     <>
                                       <span>{item.name}</span>
                                       {selected ? (
-                                        <span className="listbox-options-icon ">
+                                        <span className="listbox-options-icon">
                                           <IconCheck className="focus:outline-none" />
                                         </span>
                                       ) : null}

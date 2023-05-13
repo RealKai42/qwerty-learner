@@ -1,10 +1,18 @@
 import styles from './index.module.css'
+import { keySoundResources } from '@/resources/soundResource'
 import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
+import { SoundResource } from '@/typings'
 import { toFixedNumber } from '@/utils'
-import { Switch } from '@headlessui/react'
+import { playKeySoundResource } from '@/utils/sounds/keySounds'
+import { Switch, Transition } from '@headlessui/react'
+import { Listbox } from '@headlessui/react'
 import * as Slider from '@radix-ui/react-slider'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
+import { Fragment } from 'react'
+import IconCheck from '~icons/tabler/check'
+import IconChevronDown from '~icons/tabler/chevron-down'
+import IconEar from '~icons/tabler/ear'
 
 export default function SoundSetting() {
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
@@ -29,7 +37,6 @@ export default function SoundSetting() {
     },
     [setPronunciationConfig],
   )
-
   const onChangePronunciationRate = useCallback(
     (value: [number]) => {
       setPronunciationConfig((prev) => ({
@@ -58,6 +65,23 @@ export default function SoundSetting() {
     },
     [setKeySoundsConfig],
   )
+
+  const onChangeKeySoundsResource = useCallback(
+    (key: string) => {
+      const soundResource = keySoundResources.find((item: SoundResource) => item.key === key) as SoundResource
+      if (!soundResource) return
+
+      setKeySoundsConfig((prev) => ({
+        ...prev,
+        resource: soundResource,
+      }))
+    },
+    [setKeySoundsConfig],
+  )
+
+  const onPlayKeySound = useCallback((soundResource: SoundResource) => {
+    playKeySoundResource(soundResource)
+  }, [])
 
   const onToggleHintSounds = useCallback(
     (checked: boolean) => {
@@ -161,6 +185,46 @@ export default function SoundSetting() {
             </Slider.Root>
             <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(keySoundsConfig.volume * 100)}%`}</span>
           </div>
+        </div>
+        <div className={`${styles.block}`}>
+          <span className={styles.blockLabel}>按键音效</span>
+          <Listbox value={keySoundsConfig.resource.key} onChange={onChangeKeySoundsResource}>
+            <div className="relative">
+              <Listbox.Button className="listbox-button w-60">
+                <span>{keySoundsConfig.resource.name}</span>
+                <span>
+                  <IconChevronDown className="focus:outline-none" />
+                </span>
+              </Listbox.Button>
+              <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
+                <Listbox.Options className="listbox-options z-10">
+                  {keySoundResources.map((keySoundResource) => (
+                    <Listbox.Option key={keySoundResource.key} value={keySoundResource.key}>
+                      {({ selected }) => (
+                        <>
+                          <div className="group flex cursor-pointer items-center justify-between">
+                            <span>{keySoundResource.name}</span>
+                            {selected ? (
+                              <span className="listbox-options-icon">
+                                <IconCheck className="focus:outline-none" />
+                              </span>
+                            ) : null}
+                            <IconEar
+                              onClick={(e) => {
+                                e.stopPropagation()
+                                onPlayKeySound(keySoundResource)
+                              }}
+                              className="mr-2  hidden cursor-pointer text-neutral-500 hover:text-indigo-400 group-hover:block dark:text-neutral-300"
+                            />
+                          </div>
+                        </>
+                      )}
+                    </Listbox.Option>
+                  ))}
+                </Listbox.Options>
+              </Transition>
+            </div>
+          </Listbox>
         </div>
       </div>
 
