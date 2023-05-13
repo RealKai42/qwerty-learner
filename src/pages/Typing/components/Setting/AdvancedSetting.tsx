@@ -33,7 +33,7 @@ export default function AdvancedSetting() {
     },
     [setIsTextSelectable],
   )
-  const onToggleAnswerShow = useCallback(
+  const onToggleShowAnswerOnHover = useCallback(
     (checked: boolean) => {
       setIsShowAnswerOnHover(checked)
     },
@@ -82,7 +82,7 @@ export default function AdvancedSetting() {
         <span className={styles.sectionLabel}>是否允许默写模式下显示提示</span>
         <span className={styles.sectionDescription}>开启后，可以通过鼠标 hover 单词显示正确答案 </span>
         <div className={styles.switchBlock}>
-          <Switch checked={isShowAnswerOnHover} onChange={onToggleAnswerShow} className="switch-root">
+          <Switch checked={isShowAnswerOnHover} onChange={onToggleShowAnswerOnHover} className="switch-root">
             <span aria-hidden="true" className="switch-thumb" />
           </Switch>
           <span className="text-right text-xs font-normal leading-tight text-gray-600">{`显示提示已${
