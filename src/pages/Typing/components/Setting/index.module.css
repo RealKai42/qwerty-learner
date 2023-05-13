@@ -22,10 +22,3 @@
   composes: block;
   @apply flex-row items-center justify-between;
 }
-.sound-option svg {
-  display: none;
-}
-
-.sound-option:hover svg {
-  display: block;
-}
