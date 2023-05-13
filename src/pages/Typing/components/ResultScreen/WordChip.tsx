@@ -24,7 +24,7 @@ export default function WordChip({ word }: { word: WordWithIndex }) {
     <>
       <button
         ref={refs.setReference}
-        className="word-chip select-none"
+        className="word-chip select-all"
         {...getReferenceProps()}
         type="button"
         onClick={onClickWord}
