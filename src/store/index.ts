@@ -50,7 +50,7 @@ export const randomConfigAtom = atomWithStorage('randomConfig', {
 
 export const isIgnoreCaseAtom = atomWithStorage('isIgnoreCase', true)
 
-export const isShowCorrectAnswerAtom = atomWithStorage('isShowCorrectanswer', true)
+export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', true)
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
