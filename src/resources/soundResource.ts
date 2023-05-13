@@ -33,8 +33,6 @@ export const keySoundResources: SoundResource[] = Object.keys(videoList)
     return a.key.localeCompare(b.key)
   })
 
-// export const keySoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'click.wav' }]
-
 export const wrongSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'beep.wav' }]
 
 export const correctSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'correct.wav' }]
