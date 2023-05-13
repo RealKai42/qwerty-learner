@@ -1,4 +1,5 @@
 import { TypingContext, TypingStateActionType } from '../../store'
+import Illustration from '../Illustration'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
 import Tooltip from '@/components/Tooltip'
@@ -133,7 +134,9 @@ export default function Switcher() {
           {isOpenDarkMode ? <IconMoon className="icon" /> : <IconSun className="icon" />}
         </button>
       </Tooltip>
-
+      <Tooltip className="h-7 w-7" content="键盘图示">
+        <Illustration></Illustration>
+      </Tooltip>
       <Tooltip content="设置">
         <Setting />
       </Tooltip>
