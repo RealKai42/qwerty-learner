@@ -1,5 +1,5 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
+import { isIgnoreCaseAtom, isTextSelectableAtom, randomConfigAtom, isShowAnswerOnHoverAtom } from '@/store'
 import { Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
@@ -8,6 +8,7 @@ export default function AdvancedSetting() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
+  const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -31,6 +32,12 @@ export default function AdvancedSetting() {
       setIsTextSelectable(checked)
     },
     [setIsTextSelectable],
+  )
+  const onToggleShowAnswerOnHover = useCallback(
+    (checked: boolean) => {
+      setIsShowAnswerOnHover(checked)
+    },
+    [setIsShowAnswerOnHover],
   )
 
   return (
@@ -68,6 +75,18 @@ export default function AdvancedSetting() {
           </Switch>
           <span className="text-right text-xs font-normal leading-tight text-gray-600">{`选择文本已${
             isTextSelectable ? '开启' : '关闭'
+          }`}</span>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <span className={styles.sectionLabel}>是否允许默写模式下显示提示</span>
+        <span className={styles.sectionDescription}>开启后，可以通过鼠标 hover 单词显示正确答案 </span>
+        <div className={styles.switchBlock}>
+          <Switch checked={isShowAnswerOnHover} onChange={onToggleShowAnswerOnHover} className="switch-root">
+            <span aria-hidden="true" className="switch-thumb" />
+          </Switch>
+          <span className="text-right text-xs font-normal leading-tight text-gray-600">{`显示提示已${
+            isShowAnswerOnHover ? '开启' : '关闭'
           }`}</span>
         </div>
       </div>

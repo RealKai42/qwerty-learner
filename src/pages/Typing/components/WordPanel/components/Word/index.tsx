@@ -6,12 +6,12 @@ import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import { isIgnoreCaseAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
+import { isIgnoreCaseAtom, isTextSelectableAtom, pronunciationIsOpenAtom, isShowAnswerOnHoverAtom } from '@/store'
 import { useMixPanelWordLogUploader, getUtcStringForMixpanel } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { LetterMistakes } from '@/utils/db/record'
 import { useAtomValue } from 'jotai'
-import { useEffect, useContext, useCallback } from 'react'
+import { useEffect, useContext, useCallback, useState } from 'react'
 import { useImmer } from 'use-immer'
 
 type WordState = {
@@ -56,10 +56,12 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
 
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
+  const isShowAnswerOnHover = useAtomValue(isShowAnswerOnHoverAtom)
   const saveWordRecord = useSaveWordRecord()
   const wordLogUploader = useMixPanelWordLogUploader(state)
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
+  const [isHoveringWord, setIsHoveringWord] = useState(false)
 
   useEffect(() => {
     // run only when word changes
@@ -96,6 +98,10 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
     },
     [wordState.hasWrong, setWordState],
   )
+
+  const handleHoverWord = useCallback((checked: boolean) => {
+    setIsHoveringWord(checked)
+  }, [])
 
   useEffect(() => {
     const inputLength = wordState.inputWord.length
@@ -213,6 +219,8 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
       <div className="flex justify-center pb-1 pt-4">
         <div className="relative">
           <div
+            onMouseEnter={() => handleHoverWord(true)}
+            onMouseLeave={() => handleHoverWord(false)}
             className={`flex items-center ${!isTextSelectable && 'select-none'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
           >
             {wordState.displayWord.split('').map((t, index) => {
@@ -220,7 +228,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
                 <Letter
                   key={`${index}-${t}`}
                   letter={t}
-                  visible={wordState.letterStates[index] === 'correct' ? true : state.isWordVisible}
+                  visible={wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord) || state.isWordVisible}
                   state={wordState.letterStates[index]}
                 />
               )
