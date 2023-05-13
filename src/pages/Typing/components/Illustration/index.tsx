@@ -1,3 +1,4 @@
+import keydown from '@/assets/keydown.png'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import IconKeyboard from '~icons/ic/round-keyboard'
@@ -59,7 +60,7 @@ export default function MyModal() {
                     键盘手指图示例
                   </Dialog.Title>
                   <div className="mt-2">
-                    <img className="block " src="/public/keydown.png" alt="" />
+                    <img className="block " src={keydown} alt="" />
                   </div>
                 </Dialog.Panel>
               </Transition.Child>
