@@ -91,7 +91,9 @@ const ResultScreen = () => {
 
   useHotkeys(
     'space',
-    () => {
+    (e) => {
+      // 火狐浏览器的阻止事件无效，会导致按空格键后 再次输入正确的第一个字母会报错
+      e.stopPropagation()
       repeatButtonHandler()
     },
     { preventDefault: true },
