@@ -11,7 +11,7 @@ import { WordWithIndex } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { Transition } from '@headlessui/react'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useContext, useMemo } from 'react'
+import { useCallback, useContext, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import IconCoffee from '~icons/mdi/coffee'
 import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
@@ -27,6 +27,11 @@ const ResultScreen = () => {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+
+  useEffect(() => {
+    // tick a zero timer to calc the stats
+    dispatch({ type: TypingStateActionType.TICK_TIMER, addTime: 0 })
+  }, [dispatch])
 
   const wrongWords = useMemo(() => {
     const wordList = state.chapterData.wrongWordIndexes.map((index) => state.chapterData.words.find((word) => word.index === index))

@@ -1,5 +1,4 @@
 import Layout from '../../components/Layout'
-import Progress from './components/Progress'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
@@ -163,28 +162,18 @@ const App: React.FC = () => {
         </Header>
         <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
           <div className="container relative mx-auto flex h-full flex-col items-center">
-            <div className="h-1/3"></div>
-            {isLoading ? (
-              <div className="flex flex-col items-center justify-center ">
-                <div
-                  className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid  border-indigo-400 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                  role="status"
-                ></div>
-              </div>
-            ) : (
-              !state.isFinished && (
-                <>
-                  {state.isTyping ? (
-                    <>
-                      <WordPanel />
-                      <Progress />
-                    </>
-                  ) : (
-                    <div className="animate-pulse select-none pb-4 text-xl text-gray-600 dark:text-gray-50">按任意键开始</div>
-                  )}
-                </>
-              )
-            )}
+            <div className="container flex flex-grow items-center justify-center">
+              {isLoading ? (
+                <div className="flex flex-col items-center justify-center ">
+                  <div
+                    className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid  border-indigo-400 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                    role="status"
+                  ></div>
+                </div>
+              ) : (
+                !state.isFinished && <WordPanel />
+              )}
+            </div>
             <Speed />
           </div>
         </div>

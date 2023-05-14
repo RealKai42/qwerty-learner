@@ -1,7 +1,7 @@
 import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { keySoundResources, wrongSoundResources, correctSoundResources } from '@/resources/soundResource'
-import { PronunciationType, PhoneticType, Dictionary, InfoPanelState } from '@/typings'
+import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
+import { Dictionary, InfoPanelState, PhoneticType, PronunciationType } from '@/typings'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
@@ -47,6 +47,8 @@ export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom
 export const randomConfigAtom = atomWithStorage('randomConfig', {
   isOpen: false,
 })
+
+export const isShowPrevAndNextWordAtom = atomWithStorage('isShowPrevAndNextWord', true)
 
 export const isIgnoreCaseAtom = atomWithStorage('isIgnoreCase', true)
 

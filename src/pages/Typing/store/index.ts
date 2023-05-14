@@ -72,6 +72,7 @@ export enum TypingStateActionType {
   INCREASE_CORRECT_COUNT = 'INCREASE_CORRECT_COUNT',
   INCREASE_WRONG_COUNT = 'INCREASE_WRONG_COUNT',
   SKIP_WORD = 'SKIP_WORD',
+  SKIP_2_WORD_INDEX = 'SKIP_2_WORD_INDEX',
   REPEAT_CHAPTER = 'REPEAT_CHAPTER',
   DICTATION_CHAPTER = 'DICTATION_CHAPTER',
   NEXT_CHAPTER = 'NEXT_CHAPTER',
@@ -97,12 +98,13 @@ export type TypingStateAction =
   | { type: TypingStateActionType.INCREASE_CORRECT_COUNT }
   | { type: TypingStateActionType.INCREASE_WRONG_COUNT }
   | { type: TypingStateActionType.SKIP_WORD }
+  | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.DICTATION_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
-  | { type: TypingStateActionType.TICK_TIMER }
+  | { type: TypingStateActionType.TICK_TIMER; addTime?: number }
   | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
   | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
   | { type: TypingStateActionType.SET_IS_LOOP_SINGLE_WORD; payload: boolean }
@@ -178,6 +180,15 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       state.isShowSkip = false
       break
     }
+    case TypingStateActionType.SKIP_2_WORD_INDEX: {
+      const newIndex = action.newIndex
+      if (newIndex >= state.chapterData.words.length) {
+        state.isTyping = false
+        state.isFinished = true
+      }
+      state.chapterData.index = newIndex
+      break
+    }
     case TypingStateActionType.REPEAT_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
@@ -207,7 +218,8 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       state.isTransVisible = !state.isTransVisible
       break
     case TypingStateActionType.TICK_TIMER: {
-      const newTime = state.timerData.time + 1
+      const increment = action.addTime === undefined ? 1 : action.addTime
+      const newTime = state.timerData.time + increment
       const inputSum =
         state.chapterData.correctCount + state.chapterData.wrongCount === 0
           ? 1
