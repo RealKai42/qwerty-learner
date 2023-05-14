@@ -60,7 +60,7 @@ export default function Switcher() {
     [],
   )
   useHotkeys(
-    'ctrl+t',
+    'ctrl+shift+v',
     () => {
       changeTransVisibleState()
     },
@@ -108,7 +108,7 @@ export default function Switcher() {
           {state?.isWordVisible ? <IconEye className="icon" /> : <IconEyeSlash className="icon" />}
         </button>
       </Tooltip>
-      <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + T）">
+      <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + Shift + V）">
         <button
           className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
           type="button"
