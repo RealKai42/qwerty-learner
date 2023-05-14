@@ -48,7 +48,7 @@ export const randomConfigAtom = atomWithStorage('randomConfig', {
   isOpen: false,
 })
 
-export const isShowPrevAndNextAtom = atomWithStorage('isShowPrevAndNext', true)
+export const isShowPrevAndNextWordAtom = atomWithStorage('isShowPrevAndNextWord', true)
 
 export const isIgnoreCaseAtom = atomWithStorage('isIgnoreCase', true)
 

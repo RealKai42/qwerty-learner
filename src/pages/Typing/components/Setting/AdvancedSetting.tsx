@@ -1,12 +1,12 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
+import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextWordAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
 import { Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
 
 export default function AdvancedSetting() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
-  const [isShowPrevAndNext, setIsShowPrevAndNext] = useAtom(isShowPrevAndNextAtom)
+  const [isShowPrevAndNext, setIsShowPrevAndNext] = useAtom(isShowPrevAndNextWordAtom)
 
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
@@ -70,7 +70,7 @@ export default function AdvancedSetting() {
           <Switch checked={isShowPrevAndNext} onChange={onToggleLastAndNext} className="switch-root">
             <span aria-hidden="true" className="switch-thumb" />
           </Switch>
-          <span className="text-right text-xs font-normal leading-tight text-gray-600">{`展示上一个/下一个单词已${
+          <span className="text-right text-xs font-normal leading-tight text-gray-600">{`展示单词已${
             isShowPrevAndNext ? '开启' : '关闭'
           }`}</span>
         </div>

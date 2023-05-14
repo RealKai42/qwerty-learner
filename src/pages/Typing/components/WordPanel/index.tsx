@@ -1,8 +1,10 @@
 import { TypingContext, TypingStateActionType } from '../../store'
+import PrevAndNextWord from '../PrevAndNextWord'
+import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import { default as WordComponent } from './components/Word'
-import { phoneticConfigAtom } from '@/store'
+import { isShowPrevAndNextWordAtom, phoneticConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 
@@ -10,6 +12,7 @@ export default function WordPanel() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
+  const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
 
   const currentWord = state.chapterData.words[state.chapterData.index]
@@ -34,14 +37,27 @@ export default function WordPanel() {
   }, [state, dispatch, reloadCurrentWordComponent])
 
   return (
-    <div className="flex flex-col items-center">
-      {currentWord && (
-        <>
-          <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
-          {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
-          {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
-        </>
-      )}
+    <div className="container flex h-full w-full flex-col items-center justify-center">
+      <div className="container flex h-20 w-full shrink-0 grow-0 justify-between px-12 pt-10">
+        {isShowPrevAndNextWord && state.isTyping && (
+          <>
+            <PrevAndNextWord type="prev" />
+            <PrevAndNextWord type="next" />
+          </>
+        )}
+      </div>
+      <div className="container flex flex-grow flex-col items-center justify-center">
+        {currentWord && state.isTyping ? (
+          <>
+            <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
+            {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
+            {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
+          </>
+        ) : (
+          <div className="animate-pulse select-none  text-xl text-gray-600 dark:text-gray-50">按任意键开始</div>
+        )}
+      </div>
+      {state.isTyping && <Progress className="mb-10 mt-auto" />}
     </div>
   )
 }
