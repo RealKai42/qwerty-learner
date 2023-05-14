@@ -66,7 +66,6 @@ export enum TypingStateActionType {
   TOGGLE_IS_TYPING = 'TOGGLE_IS_TYPING',
   REPORT_WRONG_WORD = 'REPORT_WRONG_WORD',
   REPORT_CORRECT_WORD = 'REPORT_CORRECT_WORD',
-  PREV_WORD = 'PREV_WORD',
   NEXT_WORD = 'NEXT_WORD',
   LOOP_CURRENT_WORD = 'LOOP_CURRENT_WORD',
   FINISH_CHAPTER = 'FINISH_CHAPTER',
@@ -93,7 +92,6 @@ export type TypingStateAction =
   | { type: TypingStateActionType.TOGGLE_IS_TYPING }
   | { type: TypingStateActionType.REPORT_WRONG_WORD }
   | { type: TypingStateActionType.REPORT_CORRECT_WORD }
-  | { type: TypingStateActionType.PREV_WORD }
   | { type: TypingStateActionType.NEXT_WORD }
   | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
@@ -106,7 +104,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
-  | { type: TypingStateActionType.TICK_TIMER }
+  | { type: TypingStateActionType.TICK_TIMER; addTime?: number }
   | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
   | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
   | { type: TypingStateActionType.SET_IS_LOOP_SINGLE_WORD; payload: boolean }
@@ -150,11 +148,6 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       }
       break
     }
-    case TypingStateActionType.PREV_WORD:
-      state.chapterData.index -= 1
-      state.chapterData.wordCount -= 1
-      state.isShowSkip = false
-      break
     case TypingStateActionType.NEXT_WORD:
       state.chapterData.index += 1
       state.chapterData.wordCount += 1
@@ -225,7 +218,8 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       state.isTransVisible = !state.isTransVisible
       break
     case TypingStateActionType.TICK_TIMER: {
-      const newTime = state.timerData.time + 1
+      const increment = action.addTime === undefined ? 1 : action.addTime
+      const newTime = state.timerData.time + increment
       const inputSum =
         state.chapterData.correctCount + state.chapterData.wrongCount === 0
           ? 1
