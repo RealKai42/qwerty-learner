@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout'
+import CurrentWordList from './components/CurrentWordList'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
@@ -175,6 +176,7 @@ const App: React.FC = () => {
               )}
             </div>
             <Speed />
+            <CurrentWordList />
           </div>
         </div>
       </Layout>
