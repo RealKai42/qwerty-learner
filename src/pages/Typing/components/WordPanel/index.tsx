@@ -64,7 +64,7 @@ export default function WordPanel() {
 
   return (
     <div className="flex flex-col items-center">
-      {
+      {currentWord && (
         <>
           <div className="flex items-center">
             <IconBackArrow
@@ -90,7 +90,7 @@ export default function WordPanel() {
             ></IconForwardArrow>
           </div>
         </>
-      }
+      )}
     </div>
   )
 }
