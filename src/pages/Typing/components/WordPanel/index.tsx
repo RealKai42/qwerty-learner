@@ -69,7 +69,7 @@ export default function WordPanel() {
           <div className="flex items-center">
             <IconBackArrow
               onClick={onPreviousword}
-              className={`pr-40 ${state.chapterData.index === 0 ? 'cursor-not-allowed text-gray-300' : 'cursor-pointer'}`}
+              className={`mr-40 ${state.chapterData.index === 0 ? 'cursor-not-allowed text-gray-300' : 'cursor-pointer'}`}
               fontSize={80}
               width={30}
               height={30}
@@ -81,7 +81,7 @@ export default function WordPanel() {
             </div>
             <IconForwardArrow
               onClick={onNextword}
-              className={`pl-40 ${
+              className={`ml-40 ${
                 state.chapterData.words?.length - 1 === state.chapterData.index ? 'cursor-not-allowed text-gray-300' : 'cursor-pointer'
               }`}
               fontSize={80}
