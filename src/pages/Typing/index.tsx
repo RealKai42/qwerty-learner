@@ -163,7 +163,7 @@ const App: React.FC = () => {
           </Tooltip>
         </Header>
         <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
-          <div className="container mx-auto flex justify-between p-24">
+          <div className="container mx-auto flex shrink-0 grow-0 justify-between px-12 py-4">
             <PrevAndNextWord type="prev" />
             <PrevAndNextWord type="next" />
           </div>
