@@ -6,8 +6,7 @@ import { useCallback } from 'react'
 
 export default function AdvancedSetting() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
-  const [isShowPrevAndNext, setIsShowPrevAndNext] = useAtom(isShowPrevAndNextWordAtom)
-
+  const [isShowPrevAndNextWord, setIsShowPrevAndNextWord] = useAtom(isShowPrevAndNextWordAtom)
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
   const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
@@ -22,11 +21,11 @@ export default function AdvancedSetting() {
     [setRandomConfig],
   )
 
-  const onToggleLastAndNext = useCallback(
+  const onToggleLastAndNextWord = useCallback(
     (checked: boolean) => {
-      setIsShowPrevAndNext(checked)
+      setIsShowPrevAndNextWord(checked)
     },
-    [setIsShowPrevAndNext],
+    [setIsShowPrevAndNextWord],
   )
 
   const onToggleIgnoreCase = useCallback(
@@ -67,11 +66,11 @@ export default function AdvancedSetting() {
         <span className={styles.sectionLabel}>练习时展示上一个/下一个单词</span>
         <span className={styles.sectionDescription}>开启后，练习中会在上方展示上一个/下一个单词</span>
         <div className={styles.switchBlock}>
-          <Switch checked={isShowPrevAndNext} onChange={onToggleLastAndNext} className="switch-root">
+          <Switch checked={isShowPrevAndNextWord} onChange={onToggleLastAndNextWord} className="switch-root">
             <span aria-hidden="true" className="switch-thumb" />
           </Switch>
           <span className="text-right text-xs font-normal leading-tight text-gray-600">{`展示单词已${
-            isShowPrevAndNext ? '开启' : '关闭'
+            isShowPrevAndNextWord ? '开启' : '关闭'
           }`}</span>
         </div>
       </div>
