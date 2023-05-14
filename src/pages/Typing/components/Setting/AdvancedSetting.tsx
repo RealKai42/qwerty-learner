@@ -1,11 +1,13 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isTextSelectableAtom, randomConfigAtom, isShowAnswerOnHoverAtom } from '@/store'
+import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
 import { Switch } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
 
 export default function AdvancedSetting() {
   const [randomConfig, setRandomConfig] = useAtom(randomConfigAtom)
+  const [isShowPrevAndNext, setIsShowPrevAndNext] = useAtom(isShowPrevAndNextAtom)
+
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
   const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
@@ -18,6 +20,13 @@ export default function AdvancedSetting() {
       }))
     },
     [setRandomConfig],
+  )
+
+  const onToggleLastAndNext = useCallback(
+    (checked: boolean) => {
+      setIsShowPrevAndNext(checked)
+    },
+    [setIsShowPrevAndNext],
   )
 
   const onToggleIgnoreCase = useCallback(
@@ -51,6 +60,18 @@ export default function AdvancedSetting() {
           </Switch>
           <span className="text-right text-xs font-normal leading-tight text-gray-600">{`随机已${
             randomConfig.isOpen ? '开启' : '关闭'
+          }`}</span>
+        </div>
+      </div>
+      <div className={styles.section}>
+        <span className={styles.sectionLabel}>练习时展示上一个/下一个单词</span>
+        <span className={styles.sectionDescription}>开启后，练习中会在上方展示上一个/下一个单词</span>
+        <div className={styles.switchBlock}>
+          <Switch checked={isShowPrevAndNext} onChange={onToggleLastAndNext} className="switch-root">
+            <span aria-hidden="true" className="switch-thumb" />
+          </Switch>
+          <span className="text-right text-xs font-normal leading-tight text-gray-600">{`展示上一个/下一个单词已${
+            isShowPrevAndNext ? '开启' : '关闭'
           }`}</span>
         </div>
       </div>
