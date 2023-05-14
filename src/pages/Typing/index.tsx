@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout'
+import PrevAndNextWord from './components/PrevAndNextWord'
 import Progress from './components/Progress'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
@@ -162,6 +163,11 @@ const App: React.FC = () => {
           </Tooltip>
         </Header>
         <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
+          <div className="container mx-auto flex justify-between p-24">
+            <PrevAndNextWord type="prev" />
+            <PrevAndNextWord type="next" />
+          </div>
+
           <div className="container relative mx-auto flex h-full flex-col items-center">
             <div className="h-1/3"></div>
             {isLoading ? (
