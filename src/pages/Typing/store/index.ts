@@ -73,6 +73,7 @@ export enum TypingStateActionType {
   INCREASE_CORRECT_COUNT = 'INCREASE_CORRECT_COUNT',
   INCREASE_WRONG_COUNT = 'INCREASE_WRONG_COUNT',
   SKIP_WORD = 'SKIP_WORD',
+  SKIP_2_WORD_INDEX = 'SKIP_2_WORD_INDEX',
   REPEAT_CHAPTER = 'REPEAT_CHAPTER',
   DICTATION_CHAPTER = 'DICTATION_CHAPTER',
   NEXT_CHAPTER = 'NEXT_CHAPTER',
@@ -99,6 +100,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.INCREASE_CORRECT_COUNT }
   | { type: TypingStateActionType.INCREASE_WRONG_COUNT }
   | { type: TypingStateActionType.SKIP_WORD }
+  | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.DICTATION_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
@@ -183,6 +185,15 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
         state.chapterData.index = newIndex
       }
       state.isShowSkip = false
+      break
+    }
+    case TypingStateActionType.SKIP_2_WORD_INDEX: {
+      const newIndex = action.newIndex
+      if (newIndex >= state.chapterData.words.length) {
+        state.isTyping = false
+        state.isFinished = true
+      }
+      state.chapterData.index = newIndex
       break
     }
     case TypingStateActionType.REPEAT_CHAPTER: {
