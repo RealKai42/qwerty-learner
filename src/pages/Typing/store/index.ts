@@ -66,6 +66,7 @@ export enum TypingStateActionType {
   TOGGLE_IS_TYPING = 'TOGGLE_IS_TYPING',
   REPORT_WRONG_WORD = 'REPORT_WRONG_WORD',
   REPORT_CORRECT_WORD = 'REPORT_CORRECT_WORD',
+  PREV_WORD = 'PREV_WORD',
   NEXT_WORD = 'NEXT_WORD',
   LOOP_CURRENT_WORD = 'LOOP_CURRENT_WORD',
   FINISH_CHAPTER = 'FINISH_CHAPTER',
@@ -91,6 +92,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.TOGGLE_IS_TYPING }
   | { type: TypingStateActionType.REPORT_WRONG_WORD }
   | { type: TypingStateActionType.REPORT_CORRECT_WORD }
+  | { type: TypingStateActionType.PREV_WORD }
   | { type: TypingStateActionType.NEXT_WORD }
   | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
@@ -146,6 +148,11 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       }
       break
     }
+    case TypingStateActionType.PREV_WORD:
+      state.chapterData.index -= 1
+      state.chapterData.wordCount -= 1
+      state.isShowSkip = false
+      break
     case TypingStateActionType.NEXT_WORD:
       state.chapterData.index += 1
       state.chapterData.wordCount += 1

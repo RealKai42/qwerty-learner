@@ -1,7 +1,7 @@
-import { TypingContext } from '../../store'
+import { TypingContext, TypingStateActionType } from '../../store'
 import { isShowPrevAndNextAtom } from '@/store'
 import { useAtomValue } from 'jotai'
-import { useContext } from 'react'
+import { useContext, useCallback } from 'react'
 import IconPrev from '~icons/tabler/arrow-narrow-left'
 import IconNext from '~icons/tabler/arrow-narrow-right'
 
@@ -14,20 +14,26 @@ export default function PrevAndNextWord({ type, className = '' }: LastAndNextWor
   const offset = type === 'prev' ? -1 : 1
   const word = state.chapterData.words[state.chapterData.index + offset]
 
+  const changeWord = useCallback(() => {
+    if (type === 'prev') dispatch({ type: TypingStateActionType.PREV_WORD })
+    if (type === 'next') dispatch({ type: TypingStateActionType.NEXT_WORD })
+  }, [type, dispatch])
+
   if (isShow && word && !state.isFinished && state.isTyping)
     return (
       <div
+        onClick={changeWord}
         className={
           className +
-          ' max-w-2/5 flex cursor-pointer items-center text-gray-700 opacity-60 duration-200 ease-in-out hover:opacity-100 dark:text-gray-400'
+          ' flex max-w-xs cursor-pointer items-center text-gray-700 opacity-60 duration-200 ease-in-out hover:opacity-100 dark:text-gray-400'
         }
       >
-        {type === 'prev' && <IconPrev className="mr-4 text-2xl" />}
-        <div className={`flex flex-col ${type === 'next' ? 'items-end' : ''}`}>
+        {type === 'prev' && <IconPrev className="mr-4 shrink-0 grow-0 text-2xl" />}
+        <div className={`grow-1 flex w-full flex-col ${type === 'next' ? 'items-end text-right' : ''}`}>
           <p className="font-mono text-2xl font-normal text-gray-700 dark:text-gray-400">{word.name}</p>
-          <p className="text-sm font-normal text-gray-600 dark:text-gray-500">{word.trans.join('；')}</p>
+          <p className="line-clamp-1 max-w-full text-sm font-normal text-gray-600 dark:text-gray-500">{word.trans.join('；')}</p>
         </div>
-        {type === 'next' && <IconNext className="ml-4 text-2xl" />}
+        {type === 'next' && <IconNext className="ml-4 shrink-0 grow-0 text-2xl" />}
       </div>
     )
 
