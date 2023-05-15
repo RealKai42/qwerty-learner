@@ -25,7 +25,9 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
           {type === 'prev' && <IconPrev className="mr-4 shrink-0 grow-0 text-2xl" />}
           <div className={`grow-1 flex w-full flex-col ${type === 'next' ? 'items-end text-right' : ''}`}>
             <p className="font-mono text-2xl font-normal text-gray-700 dark:text-gray-400">{word.name}</p>
-            <p className="line-clamp-1 max-w-full text-sm font-normal text-gray-600 dark:text-gray-500">{word.trans.join('；')}</p>
+            {state.isTransVisible && (
+              <p className="line-clamp-1 max-w-full text-sm font-normal text-gray-600 dark:text-gray-500">{word.trans.join('；')}</p>
+            )}
           </div>
           {type === 'next' && <IconNext className="ml-4 shrink-0 grow-0 text-2xl" />}
         </div>
