@@ -6,7 +6,8 @@ import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
 import path from 'node:path'
 import { visualizer } from 'rollup-plugin-visualizer'
 import Icons from 'unplugin-icons/vite'
-import { defineConfig, type PluginOption } from 'vite'
+import { defineConfig } from 'vite'
+import type { PluginOption } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => {

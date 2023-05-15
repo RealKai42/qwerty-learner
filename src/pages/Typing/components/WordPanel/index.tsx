@@ -1,18 +1,18 @@
 import { TypingContext, TypingStateActionType } from '../../store'
+import PrevAndNextWord from '../PrevAndNextWord'
+import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import { default as WordComponent } from './components/Word'
-import { phoneticConfigAtom } from '@/store'
+import { isShowPrevAndNextWordAtom, phoneticConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
-import { useHotkeys } from 'react-hotkeys-hook'
-import IconBackArrow from '~icons/material-symbols/arrow-back-ios-rounded'
-import IconForwardArrow from '~icons/material-symbols/arrow-forward-ios-rounded'
 
 export default function WordPanel() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
+  const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
 
   const currentWord = state.chapterData.words[state.chapterData.index]
@@ -36,61 +36,28 @@ export default function WordPanel() {
     }
   }, [state, dispatch, reloadCurrentWordComponent])
 
-  const onPreviousword = useCallback(() => {
-    state.chapterData.index > 0 && dispatch({ type: TypingStateActionType.PREV_WORD })
-  }, [dispatch, state.chapterData.index])
-
-  const onNextword = useCallback(() => {
-    state.chapterData.words?.length - 1 > state.chapterData.index && dispatch({ type: TypingStateActionType.NEXT_WORD })
-  }, [dispatch, state.chapterData.index, state.chapterData.words?.length])
-
-  useHotkeys(
-    'ctrl + Alt + ArrowLeft',
-    (e) => {
-      e.preventDefault()
-      onPreviousword()
-    },
-    { preventDefault: true },
-  )
-
-  useHotkeys(
-    'ctrl + Alt + ArrowRight',
-    (e) => {
-      e.preventDefault()
-      onNextword()
-    },
-    { preventDefault: true },
-  )
-
   return (
-    <div className="flex flex-col items-center">
-      {currentWord && (
-        <>
-          <div className="flex items-center">
-            <IconBackArrow
-              onClick={onPreviousword}
-              className={`mr-40 ${state.chapterData.index === 0 ? 'cursor-not-allowed text-gray-300' : 'cursor-pointer'}`}
-              fontSize={80}
-              width={30}
-              height={30}
-            ></IconBackArrow>
-            <div>
-              <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
-              {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
-              {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
-            </div>
-            <IconForwardArrow
-              onClick={onNextword}
-              className={`ml-40 ${
-                state.chapterData.words?.length - 1 === state.chapterData.index ? 'cursor-not-allowed text-gray-300' : 'cursor-pointer'
-              }`}
-              fontSize={80}
-              width={30}
-              height={30}
-            ></IconForwardArrow>
-          </div>
-        </>
-      )}
+    <div className="container flex h-full w-full flex-col items-center justify-center">
+      <div className="container flex h-20 w-full shrink-0 grow-0 justify-between px-12 pt-10">
+        {isShowPrevAndNextWord && state.isTyping && (
+          <>
+            <PrevAndNextWord type="prev" />
+            <PrevAndNextWord type="next" />
+          </>
+        )}
+      </div>
+      <div className="container flex flex-grow flex-col items-center justify-center">
+        {currentWord && state.isTyping ? (
+          <>
+            <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
+            {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
+            {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
+          </>
+        ) : (
+          <div className="animate-pulse select-none  text-xl text-gray-600 dark:text-gray-50">按任意键开始</div>
+        )}
+      </div>
+      {state.isTyping && <Progress className="mb-10 mt-auto" />}
     </div>
   )
 }
