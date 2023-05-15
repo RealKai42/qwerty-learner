@@ -3,6 +3,7 @@ import Tooltip from '@/components/Tooltip'
 import useSpeech from '@/hooks/useSpeech'
 import { isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
+import { useCallback } from 'react'
 
 export type TranslationProps = {
   trans: string
@@ -14,6 +15,10 @@ export default function Translation({ trans }: TranslationProps) {
     volume: pronunciationConfig.transVolume,
   })
 
+  const handleClickSoundIcon = useCallback(() => {
+    speak(true)
+  }, [speak])
+
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
   return (
     <div
@@ -23,13 +28,8 @@ export default function Translation({ trans }: TranslationProps) {
     >
       {trans}
       {window.speechSynthesis && pronunciationConfig.isTransRead && (
-        <Tooltip content="朗读发音" className="!absolute inset-y-0 -right-8 my-auto  h-5 w-5 cursor-pointer leading-7">
-          <SoundIcon
-            animated={speaking}
-            onClick={() => {
-              speak(true)
-            }}
-          />
+        <Tooltip content="朗读发音" className="!absolute inset-y-0 -right-8 my-auto h-5 w-5 cursor-pointer leading-7 ">
+          <SoundIcon animated={speaking} onClick={handleClickSoundIcon} className="h-full w-full" />
         </Tooltip>
       )}
     </div>

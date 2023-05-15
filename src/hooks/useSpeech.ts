@@ -40,12 +40,10 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
     setUtterance(newUtterance)
 
     return () => {
-      if (speaking) {
-        synth.cancel()
-        setSpeaking(false)
-      }
+      synth.cancel()
+      setSpeaking(false)
     }
-  }, [text, speaking])
+  }, [text])
 
   useEffect(() => {
     if (utterance) {
