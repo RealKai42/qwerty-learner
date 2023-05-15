@@ -176,10 +176,10 @@ const App: React.FC = () => {
               )}
             </div>
             <Speed />
-            <CurrentWordList />
           </div>
         </div>
       </Layout>
+      <CurrentWordList />
     </TypingContext.Provider>
   )
 }

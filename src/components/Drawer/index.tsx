@@ -9,6 +9,7 @@ interface DrawerProps {
   placement?: Placement
   onClose?: () => void
   children?: React.ReactNode
+  classNames?: string
 }
 
 const transitionDirectionMap = {
@@ -53,7 +54,8 @@ export default function Drawer(props: DrawerProps) {
             <Dialog.Panel
               className={classNames(
                 `${placement}-0`,
-                'absolute flex h-full w-[35rem] flex-col bg-white drop-shadow-2xl transition-all duration-300 ease-out dark:bg-gray-800',
+                props.classNames || '',
+                'absolute flex h-full w-[35rem] flex-col drop-shadow-2xl transition-all duration-300 ease-out',
               )}
             >
               {children}
