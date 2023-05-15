@@ -4,6 +4,11 @@
   transition: transform 0.2s ease-in-out;
 }
 
+.letter::after {
+  content: '_';
+  display: block;
+}
+
 .letter > span {
   height: 50%;
 }

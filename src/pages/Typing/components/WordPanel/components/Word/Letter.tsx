@@ -31,7 +31,6 @@ const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible = tru
   >
     <span className={`h-28 ${s.letter} ${visible ? s.letterVisible : s.letterHide}`}>
       <span>{letter}</span>
-      <span>_</span>
     </span>
   </span>
 )
