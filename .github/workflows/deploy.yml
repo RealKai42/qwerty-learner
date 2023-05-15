@@ -17,10 +17,13 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.2.0
       - name: Install Packages
-        run: yarn
+        run: pnpm install --frozen-lockfile
       - name: Build page
-        run: yarn build
+        run: pnpm build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:

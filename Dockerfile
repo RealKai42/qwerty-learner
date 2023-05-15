@@ -11,18 +11,18 @@ WORKDIR /app/qwerty-learner
 
 COPY package*.json .
 
-COPY yarn.lock .
+COPY pnpm-lock.yaml .
 
 RUN npm config set registry https://registry.npm.taobao.org
 
-RUN npm install yarn -g --force
+RUN npm instal pnpm -g --force
 
-RUN yarn install
+RUN pnpm install
 
 COPY . .
 
 EXPOSE 5173
 
-CMD yarn start --host=0.0.0.0
+CMD pnpm start --host=0.0.0.0
 
 

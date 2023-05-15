@@ -19,12 +19,10 @@
 .env.production.local
 
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
 
 .eslintcache
 package-lock.json
-pnpm-lock.yaml
 
 .env
 stats.html
