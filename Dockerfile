@@ -15,7 +15,7 @@ COPY pnpm-lock.yaml .
 
 RUN npm config set registry https://registry.npm.taobao.org
 
-RUN npm instal pnpm -g --force
+RUN npm install pnpm -g --force
 
 RUN pnpm install
 
