@@ -57,11 +57,11 @@ export default function WordPanel() {
             {!state.isTyping && (
               <div
                 className={`absolute left-0 top-0 z-10 flex h-full w-full items-center backdrop-blur-sm ${
-                  state.chapterData.index === 0 ? maskBg.opaque : maskBg.transparent
+                  state.timerData.time ? maskBg.transparent : maskBg.opaque
                 }`}
               >
                 <p className="w-full animate-pulse select-none text-center text-3xl text-gray-600 dark:text-gray-50">
-                  按任意键{state.chapterData.index === 0 ? '开始' : '继续'}
+                  按任意键{state.timerData.time ? '继续' : '开始'}
                 </p>
               </div>
             )}
