@@ -2074,6 +2074,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/colors@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "@radix-ui/colors@npm:0.1.8"
+  checksum: a29c54b91c7f723dfa037fa045d14ccefb650d93d849760fcb68cec47965fcd9217172d1e35e2fe0f42eef430ff67af681202d2907fd076500afa45b5eb1126f
+  languageName: node
+  linkType: hard
+
 "@radix-ui/number@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/number@npm:1.0.0"
@@ -2141,6 +2148,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-id@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-id@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.13.10"
+    "@radix-ui/react-use-layout-effect": "npm:1.0.0"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+  checksum: 864802534364df7f40c16252c928903206797359221fddf8e9146f94763365188ccf4617a502c6954251f390ece2961eb71f1b5d3ad72c53c52ae9f8b489bf99
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-presence@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/react-presence@npm:1.0.0"
@@ -2179,6 +2198,49 @@ __metadata:
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0
   checksum: 5e6b7e809622bc64db3623121364d48bc276273116ff0b3fcf5b97c1b2c50d1ff809bbbf878651396b7a2b29130b8c26a40d133dafbadccd5b3cf4b12c5fe885
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-radio-group@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@radix-ui/react-radio-group@npm:1.1.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.13.10"
+    "@radix-ui/primitive": "npm:1.0.0"
+    "@radix-ui/react-compose-refs": "npm:1.0.0"
+    "@radix-ui/react-context": "npm:1.0.0"
+    "@radix-ui/react-direction": "npm:1.0.0"
+    "@radix-ui/react-presence": "npm:1.0.0"
+    "@radix-ui/react-primitive": "npm:1.0.2"
+    "@radix-ui/react-roving-focus": "npm:1.0.3"
+    "@radix-ui/react-use-controllable-state": "npm:1.0.0"
+    "@radix-ui/react-use-previous": "npm:1.0.0"
+    "@radix-ui/react-use-size": "npm:1.0.0"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: 01ec6be271ac901a5b02d7837a171c669ed666e5f30886913d22d13f535da9c16b10e7c0f120f156817ed21f2b7a2af055a8a69769c678dd209da01eee55dc1a
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-roving-focus@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@radix-ui/react-roving-focus@npm:1.0.3"
+  dependencies:
+    "@babel/runtime": "npm:^7.13.10"
+    "@radix-ui/primitive": "npm:1.0.0"
+    "@radix-ui/react-collection": "npm:1.0.2"
+    "@radix-ui/react-compose-refs": "npm:1.0.0"
+    "@radix-ui/react-context": "npm:1.0.0"
+    "@radix-ui/react-direction": "npm:1.0.0"
+    "@radix-ui/react-id": "npm:1.0.0"
+    "@radix-ui/react-primitive": "npm:1.0.2"
+    "@radix-ui/react-use-callback-ref": "npm:1.0.0"
+    "@radix-ui/react-use-controllable-state": "npm:1.0.0"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: 897a556d9dac048c8d175fff29a00e248e7a8058f7f87d5eb410841a43485b1e1ceba3df2a256ee6f476fd71bc085b669aafe6dd5656f60d2e2de115f3586d7e
   languageName: node
   linkType: hard
 
@@ -7025,7 +7087,9 @@ __metadata:
     "@headlessui/react": "npm:^1.7.13"
     "@headlessui/tailwindcss": "npm:^0.1.2"
     "@iconify/json": "npm:^2.2.56"
+    "@radix-ui/colors": "npm:^0.1.8"
     "@radix-ui/react-progress": "npm:^1.0.2"
+    "@radix-ui/react-radio-group": "npm:^1.1.2"
     "@radix-ui/react-scroll-area": "npm:^1.0.3"
     "@radix-ui/react-slider": "npm:^1.1.1"
     "@svgr/core": "npm:^7.0.0"

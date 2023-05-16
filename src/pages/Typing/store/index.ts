@@ -31,7 +31,7 @@ export type TypingState = {
   isTransVisible: boolean
   isLoopSingleWord: boolean
   // 用户设置的单词loop数
-  loopWordTimes: number
+  loopWordTimes: string
   // 是否正在保存数据
   isSavingRecord: boolean
 }
@@ -58,7 +58,7 @@ export const initialState: TypingState = {
   isWordVisible: true,
   isTransVisible: true,
   isLoopSingleWord: false,
-  loopWordTimes: 0,
+  loopWordTimes: '无限',
   isSavingRecord: false,
 }
 
@@ -113,7 +113,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
   | { type: TypingStateActionType.SET_IS_LOOP_SINGLE_WORD; payload: boolean }
   | { type: TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD }
-  | { type: TypingStateActionType.SET_LOOP_WORD_TIMES; payload: number }
+  | { type: TypingStateActionType.SET_LOOP_WORD_TIMES; payload: string }
 
 type Dispatch = (action: TypingStateAction) => void
 

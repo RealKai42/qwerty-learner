@@ -24,7 +24,10 @@ export default function WordPanel() {
   const onFinish = useCallback(() => {
     if (state.chapterData.index < state.chapterData.words.length - 1 || state.isLoopSingleWord) {
       // 用户完成当前单词
-      if (state.isLoopSingleWord && currentLoopWordTime < state.loopWordTimes) {
+      if (state.isLoopSingleWord && state.loopWordTimes === '无限') {
+        dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
+        reloadCurrentWordComponent()
+      } else if (state.isLoopSingleWord && currentLoopWordTime < parseInt(state.loopWordTimes) - 1) {
         setCurrentLoopWordTime((old) => old + 1)
         dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
         reloadCurrentWordComponent()

@@ -1,3 +1,4 @@
+const { blackA, violet } = require('@radix-ui/colors');
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
   darkMode: 'class',
@@ -45,6 +46,10 @@ module.exports = {
         '2xl': '1536px',
         dic3: '1100px',
         dic4: '1440px',
+      },
+      colors: {
+        ...blackA,
+        ...violet,
       },
     },
   },
