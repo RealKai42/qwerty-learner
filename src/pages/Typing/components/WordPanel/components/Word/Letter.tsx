@@ -23,7 +23,6 @@ export type LetterProps = {
 }
 
 const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible = true }) => (
-  //todo: may add animation when visible changes
   <span
     className={`m-0 p-0 font-mono text-5xl font-normal ${
       stateClassNameMap[(letter === EXPLICIT_SPACE) as unknown as string][state]
