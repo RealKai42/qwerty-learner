@@ -25,7 +25,7 @@ export default function WordPanel() {
     if (state.chapterData.index < state.chapterData.words.length - 1 || state.isLoopSingleWord) {
       // 用户完成当前单词
       if (state.isLoopSingleWord && currentLoopWordTime < state.loopWordTimes) {
-        setCurrentLoopWordTime(currentLoopWordTime + 1)
+        setCurrentLoopWordTime((old) => old + 1)
         dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
         reloadCurrentWordComponent()
       } else {
@@ -36,7 +36,7 @@ export default function WordPanel() {
       // 用户完成当前章节
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
     }
-  }, [state, dispatch, reloadCurrentWordComponent])
+  }, [state, dispatch, reloadCurrentWordComponent, currentLoopWordTime])
 
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
