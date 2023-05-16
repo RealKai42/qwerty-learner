@@ -56,6 +56,8 @@ export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', tr
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
+export const typingRepeatNumAtom = atomWithStorage('typingRepeatNum', 1)
+
 export const phoneticConfigAtom = atomWithStorage('phoneticConfig', {
   isOpen: true,
   type: 'us' as PhoneticType,

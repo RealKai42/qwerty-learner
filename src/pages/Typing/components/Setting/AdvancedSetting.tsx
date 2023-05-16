@@ -1,6 +1,14 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextWordAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
+import {
+  isIgnoreCaseAtom,
+  isShowAnswerOnHoverAtom,
+  isShowPrevAndNextWordAtom,
+  isTextSelectableAtom,
+  randomConfigAtom,
+  typingRepeatNumAtom,
+} from '@/store'
 import { Switch } from '@headlessui/react'
+import * as ToggleGroup from '@radix-ui/react-toggle-group'
 import { useAtom } from 'jotai'
 import { useCallback } from 'react'
 
@@ -10,6 +18,35 @@ export default function AdvancedSetting() {
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
   const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
+
+  interface RepeatNum {
+    num: number
+    label: string
+  }
+
+  const [typingRepeatNum, setTypingRepeatNum] = useAtom(typingRepeatNumAtom)
+  const typingRepeatNums: RepeatNum[] = [
+    {
+      num: 1,
+      label: '1次',
+    },
+    {
+      num: 3,
+      label: '3次',
+    },
+    {
+      num: 5,
+      label: '5次',
+    },
+    {
+      num: 8,
+      label: '8次',
+    },
+    {
+      num: -1,
+      label: '∞',
+    },
+  ]
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -109,6 +146,33 @@ export default function AdvancedSetting() {
             isShowAnswerOnHover ? '开启' : '关闭'
           }`}</span>
         </div>
+      </div>
+      <div className={styles.section}>
+        <span className={styles.sectionLabel}>每个单词重复的次数</span>
+        <ToggleGroup.Root
+          className="ToggleGroup"
+          type="single"
+          value={typingRepeatNum.toString()}
+          aria-label="Text alignment"
+          onValueChange={(value) => {
+            Number(value) && setTypingRepeatNum(Number(value))
+          }}
+        >
+          {typingRepeatNums.map((repeatNum: RepeatNum, index: number) => {
+            return (
+              <ToggleGroup.Item
+                className={`h-8 w-8 bg-indigo-200 text-base text-white ${typingRepeatNum === repeatNum.num ? 'bg-indigo-500' : ''} ${
+                  index === 0 ? 'rounded-l-lg' : ''
+                } ${index === typingRepeatNums.length - 1 ? 'rounded-r-lg' : ''}`}
+                value={repeatNum.num.toString()}
+                key={repeatNum.num}
+                aria-label="Left aligned"
+              >
+                <div>{repeatNum.label}</div>
+              </ToggleGroup.Item>
+            )
+          })}
+        </ToggleGroup.Root>
       </div>
     </div>
   )

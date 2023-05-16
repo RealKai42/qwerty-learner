@@ -10,6 +10,7 @@
     "@radix-ui/react-progress": "^1.0.2",
     "@radix-ui/react-scroll-area": "^1.0.3",
     "@radix-ui/react-slider": "^1.1.1",
+    "@radix-ui/react-toggle-group": "^1.0.3", 
     "classnames": "^2.3.2",
     "dexie": "^3.2.3",
     "dexie-export-import": "^4.0.7",

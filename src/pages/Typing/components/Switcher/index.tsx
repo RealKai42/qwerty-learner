@@ -13,8 +13,9 @@ import IconMoon from '~icons/heroicons/moon-solid'
 import IconSun from '~icons/heroicons/sun-solid'
 import IconLanguage from '~icons/tabler/language'
 import IconLanguageOff from '~icons/tabler/language-off'
-import IconRepeatOff from '~icons/tabler/repeat-off'
-import IconRepeatOnce from '~icons/tabler/repeat-once'
+
+// import IconRepeatOff from '~icons/tabler/repeat-off'
+// import IconRepeatOnce from '~icons/tabler/repeat-once'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -82,7 +83,7 @@ export default function Switcher() {
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
+      {/* <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
         <button
           className={`p-[2px] ${state?.isLoopSingleWord ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
           type="button"
@@ -94,7 +95,7 @@ export default function Switcher() {
         >
           {state?.isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
         </button>
-      </Tooltip>
+      </Tooltip> */}
       <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
         <button
           className={`p-[2px] ${state?.isWordVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
