@@ -30,6 +30,8 @@ export type TypingState = {
   isWordVisible: boolean
   isTransVisible: boolean
   isLoopSingleWord: boolean
+  // 用户设置的单词loop数
+  loopWordTimes: number
   // 是否正在保存数据
   isSavingRecord: boolean
 }
@@ -56,6 +58,7 @@ export const initialState: TypingState = {
   isWordVisible: true,
   isTransVisible: true,
   isLoopSingleWord: false,
+  loopWordTimes: 0,
   isSavingRecord: false,
 }
 
@@ -83,6 +86,7 @@ export enum TypingStateActionType {
   SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
   SET_IS_LOOP_SINGLE_WORD = 'SET_IS_LOOP_SINGLE_WORD',
   TOGGLE_IS_LOOP_SINGLE_WORD = 'TOGGLE_IS_LOOP_SINGLE_WORD',
+  SET_LOOP_WORD_TIMES = 'SET_LOOP_WORD_TIMES',
 }
 
 export type TypingStateAction =
@@ -109,6 +113,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
   | { type: TypingStateActionType.SET_IS_LOOP_SINGLE_WORD; payload: boolean }
   | { type: TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD }
+  | { type: TypingStateActionType.SET_LOOP_WORD_TIMES; payload: number }
 
 type Dispatch = (action: TypingStateAction) => void
 
@@ -244,6 +249,10 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     }
     case TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD: {
       state.isLoopSingleWord = !state.isLoopSingleWord
+      break
+    }
+    case TypingStateActionType.SET_LOOP_WORD_TIMES: {
+      state.loopWordTimes = action.payload
       break
     }
     default: {

@@ -14,7 +14,7 @@ export default function WordPanel() {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
-
+  const [currentLoopWordTime, setCurrentLoopWordTime] = useState(0)
   const currentWord = state.chapterData.words[state.chapterData.index]
 
   const reloadCurrentWordComponent = useCallback(() => {
@@ -24,10 +24,12 @@ export default function WordPanel() {
   const onFinish = useCallback(() => {
     if (state.chapterData.index < state.chapterData.words.length - 1 || state.isLoopSingleWord) {
       // 用户完成当前单词
-      if (state.isLoopSingleWord) {
+      if (state.isLoopSingleWord && currentLoopWordTime < state.loopWordTimes) {
+        setCurrentLoopWordTime(currentLoopWordTime + 1)
         dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
         reloadCurrentWordComponent()
       } else {
+        setCurrentLoopWordTime(0)
         dispatch({ type: TypingStateActionType.NEXT_WORD })
       }
     } else {
