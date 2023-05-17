@@ -2,6 +2,7 @@ import Layout from '../../components/Layout'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
+import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
 import WordPanel from './components/WordPanel'
 import { useWordList } from './hooks/useWordList'
@@ -16,7 +17,6 @@ import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue } from 'jotai'
 import React, { useCallback, useEffect, useState } from 'react'
-import { useHotkeys } from 'react-hotkeys-hook'
 import { NavLink } from 'react-router-dom'
 import { useImmerReducer } from 'use-immer'
 
@@ -52,15 +52,10 @@ const App: React.FC = () => {
     }
   }, [currentDictId, setCurrentDictId])
 
-  const onToggleIsTyping = useCallback(() => {
-    !isLoading && dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
-  }, [isLoading, dispatch])
-
   const skipWord = useCallback(() => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })
   }, [dispatch])
 
-  useHotkeys('enter', onToggleIsTyping, { enableOnFormTags: true, preventDefault: true }, [onToggleIsTyping])
   useEffect(() => {
     const onBlur = () => {
       dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
@@ -137,18 +132,7 @@ const App: React.FC = () => {
           </Tooltip>
           <PronunciationSwitcher />
           <Switcher />
-          <Tooltip content="快捷键 Enter">
-            <button
-              className={`${
-                state.isTyping ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-700' : 'bg-indigo-600 shadow-indigo-200'
-              } btn-primary w-20 shadow transition-colors duration-200`}
-              type="button"
-              onClick={onToggleIsTyping}
-              aria-label={state.isTyping ? '暂停' : '开始'}
-            >
-              <span className="font-medium">{state.isTyping ? 'Pause' : 'Start'}</span>
-            </button>
-          </Tooltip>
+          <StartButton isLoading={isLoading} />
           <Tooltip content="跳过该词">
             <button
               className={`${
