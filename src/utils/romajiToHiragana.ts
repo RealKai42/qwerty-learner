@@ -1,3 +1,6 @@
+/**
+ * source: https://github.com/andree-surya/moji4j
+ */
 export default function romajiToHiragana(romaji: string): string {
   const changeStr: string = romaji.toLowerCase()
   const resultStr: string[] = changeStr.split('')
