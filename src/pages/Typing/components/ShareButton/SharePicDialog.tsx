@@ -169,7 +169,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
             <div className=" w-full ">
               <KeyboardPanel description={promote.word} />
               <div className="text-center text-xs text-gray-500">{promote.sentence}</div>
-              <div className="opacity-45 mx-4 mt-6 flex rounded-xl bg-white px-4 py-3 shadow-xl">
+              <div className="mx-4 mt-6 flex rounded-xl bg-white px-4 py-3 opacity-50 shadow-xl">
                 <DataBox data={state.timerData.time + ''} description="用时" />
                 <DataBox data={state.timerData.accuracy + '%'} description="正确率" />
                 <DataBox data={state.timerData.wpm + ''} description="WPM" />
