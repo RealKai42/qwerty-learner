@@ -4,6 +4,7 @@ import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
 import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
+import WordList from './components/WordList'
 import WordPanel from './components/WordPanel'
 import { useWordList } from './hooks/useWordList'
 import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
@@ -162,6 +163,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </Layout>
+      <WordList />
     </TypingContext.Provider>
   )
 }
