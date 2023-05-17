@@ -6,7 +6,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import IconRepeatOff from '~icons/tabler/repeat-off'
 import IconRepeatOnce from '~icons/tabler/repeat-once'
 
-const options = ['1', '3', '5', '8', '10', '无限']
+const options = [1, 3, 5, 8, 10, Number.MAX_SAFE_INTEGER]
 const LoopWordSwitcher = () => {
   const [loopValue, setLoopValue] = useState(options[options.length - 1])
   const [isOpen, setIsOpen] = useState(false)
@@ -55,12 +55,12 @@ const LoopWordSwitcher = () => {
                 <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">选择重复次数</span>
                 <div className="flex w-full flex-row items-center justify-between">
                   <form>
-                    <RadioGroup.Root className="flex flex-col gap-2.5" defaultValue={loopValue} aria-label="View density">
+                    <RadioGroup.Root className="flex flex-col gap-2.5" defaultValue={loopValue.toString()} aria-label="View density">
                       {options.map((value) => (
                         <div className="flex items-center" key={value}>
                           <RadioGroup.Item
                             className="h-[25px] w-[25px] cursor-default rounded-full bg-white shadow-[0_2px_10px] shadow-blackA7  outline-none hover:bg-violet3"
-                            value={value}
+                            value={value.toString()}
                             onClick={() => {
                               setLoopValue(value)
                               if (dispatch) {
@@ -72,7 +72,7 @@ const LoopWordSwitcher = () => {
                             <RadioGroup.Indicator className="relative flex h-full w-full items-center justify-center after:block after:h-[11px] after:w-[11px] after:rounded-[50%] after:bg-violet11 after:content-['']" />
                           </RadioGroup.Item>
                           <label className="pl-[15px] text-[15px] leading-none" htmlFor="r1">
-                            {value}
+                            {value === Number.MAX_SAFE_INTEGER ? '无限' : value}
                           </label>
                         </div>
                       ))}
