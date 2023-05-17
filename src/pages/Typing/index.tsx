@@ -14,6 +14,7 @@ import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, randomConfi
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
+import { autoUpdate, offset, useHover, useFloating, useInteractions } from '@floating-ui/react'
 import { useAtom, useAtomValue } from 'jotai'
 import React, { useCallback, useEffect, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -121,6 +122,24 @@ const App: React.FC = () => {
     return () => clearInterval(intervalId)
   }, [state.isTyping, dispatch])
 
+  // hover开始暂停按钮显示重置
+  const [isOpen, setIsOpen] = useState(false)
+
+  const { refs, context } = useFloating({
+    open: isOpen,
+    onOpenChange: setIsOpen,
+    whileElementsMounted: autoUpdate,
+    middleware: [offset(5)],
+  })
+
+  const hover = useHover(context)
+
+  const { getReferenceProps, getFloatingProps } = useInteractions([hover])
+
+  const onClickRestart = useCallback(() => {
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen])
+
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
@@ -137,17 +156,37 @@ const App: React.FC = () => {
           </Tooltip>
           <PronunciationSwitcher />
           <Switcher />
-          <Tooltip content="快捷键 Enter">
-            <button
-              className={`${
-                state.isTyping ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-700' : 'bg-indigo-600 shadow-indigo-200'
-              } btn-primary w-20 shadow transition-colors duration-200`}
-              type="button"
-              onClick={onToggleIsTyping}
-              aria-label={state.isTyping ? '暂停' : '开始'}
+          <Tooltip content="快捷键 Enter" className="box-content h-7 w-8 px-6 py-1">
+            <div
+              ref={refs.setReference}
+              {...getReferenceProps()}
+              className={`${state.isTyping ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-700' : 'bg-indigo-600 shadow-indigo-200'} ${
+                isOpen ? 'h-20' : 'h-auto'
+              } flex-column absolute left-0 top-0 w-20 rounded-lg shadow transition-colors duration-200`}
             >
-              <span className="font-medium">{state.isTyping ? 'Pause' : 'Start'}</span>
-            </button>
+              <button
+                className={`${state.isTyping ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-700' : 'bg-indigo-600'} btn-primary w-20`}
+                type="button"
+                onClick={onToggleIsTyping}
+                aria-label={state.isTyping ? '暂停' : '开始'}
+              >
+                <span className="font-medium">{state.isTyping ? 'Pause' : 'Start'}</span>
+              </button>
+              {isOpen && (
+                <div className="absolute bottom-0 flex w-20 justify-center" ref={refs.setFloating} {...getFloatingProps()}>
+                  <button
+                    className={`${
+                      state.isTyping ? 'bg-gray-600 dark:bg-gray-500' : 'bg-indigo-400 '
+                    } btn-primary mb-1 mt-1 w-18 shadow transition-colors duration-200`}
+                    type="button"
+                    onClick={onClickRestart}
+                    aria-label={'重新开始'}
+                  >
+                    Restart
+                  </button>
+                </div>
+              )}
+            </div>
           </Tooltip>
           <Tooltip content="跳过该词">
             <button
