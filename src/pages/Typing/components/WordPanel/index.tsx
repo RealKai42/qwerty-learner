@@ -8,6 +8,11 @@ import { isShowPrevAndNextWordAtom, phoneticConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 
+const maskBg = {
+  transparent: 'bg-[#faf9ffcc] dark:bg-gray-900 dark:opacity-90',
+  opaque: 'bg-[#faf9ff] dark:bg-[#1f1f1f]',
+}
+
 export default function WordPanel() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
@@ -47,17 +52,28 @@ export default function WordPanel() {
         )}
       </div>
       <div className="container flex flex-grow flex-col items-center justify-center">
-        {currentWord && state.isTyping ? (
-          <>
-            <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
-            {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
-            {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
-          </>
-        ) : (
-          <div className="animate-pulse select-none  text-xl text-gray-600 dark:text-gray-50">按任意键开始</div>
+        {currentWord && (
+          <div className="relative flex w-full justify-center">
+            {!state.isTyping && (
+              <div
+                className={`absolute left-0 top-0 z-10 flex h-full w-full items-center backdrop-blur-sm ${
+                  state.timerData.time ? maskBg.transparent : maskBg.opaque
+                }`}
+              >
+                <p className="w-full animate-pulse select-none text-center text-xl text-gray-600 dark:text-gray-50">
+                  按任意键{state.timerData.time ? '继续' : '开始'}
+                </p>
+              </div>
+            )}
+            <div className="relative">
+              <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
+              {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
+              {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
+            </div>
+          </div>
         )}
       </div>
-      {state.isTyping && <Progress className="mb-10 mt-auto" />}
+      <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
     </div>
   )
 }
