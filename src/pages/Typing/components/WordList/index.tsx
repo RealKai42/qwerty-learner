@@ -1,4 +1,4 @@
-import { TypingContext } from '../../store'
+import { TypingContext, TypingStateActionType } from '../../store'
 import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
@@ -16,7 +16,7 @@ const currentDictTitle = atom((get) => {
 
 export default function WordList() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(TypingContext)!
+  const { state, dispatch } = useContext(TypingContext)!
 
   const [isOpen, setIsOpen] = useState(false)
   const currentDictTitleValue = useAtomValue(currentDictTitle)
@@ -27,6 +27,7 @@ export default function WordList() {
 
   function openModal() {
     setIsOpen(true)
+    dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
   }
 
   return (
