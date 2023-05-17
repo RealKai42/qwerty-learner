@@ -14,10 +14,6 @@ export type UseSpeechResult = {
    * Whether currently speaking
    */
   speaking: boolean
-  /**
-   * Set SpeechSynthesisUtterance API option.
-   */
-  setOption: (option: Partial<SpeechSynthesisUtterance>) => void
 }
 
 /**
@@ -31,7 +27,6 @@ export type UseSpeechResult = {
 export default function useSpeech(text: string, option?: Partial<SpeechSynthesisUtterance>): UseSpeechResult {
   const [speaking, setSpeaking] = useState(false)
   const [utterance, setUtterance] = useState<SpeechSynthesisUtterance | null>(null)
-  const [optionState, setOption] = useState(option)
 
   useEffect(() => {
     const synth = window.speechSynthesis
@@ -40,14 +35,14 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
     }
 
     const newUtterance = new SpeechSynthesisUtterance(text)
-    Object.assign(newUtterance, optionState)
+    Object.assign(newUtterance, option)
     setUtterance(newUtterance)
 
     return () => {
       synth.cancel()
       setSpeaking(false)
     }
-  }, [text, optionState])
+  }, [option, text])
 
   useEffect(() => {
     if (utterance) {
@@ -86,6 +81,5 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
     speak,
     cancel,
     speaking,
-    setOption,
   }
 }
