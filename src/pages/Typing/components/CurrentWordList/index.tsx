@@ -1,22 +1,23 @@
 import { TypingContext } from '../../store'
-import Progress from '../Progress'
+import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import { Dialog } from '@headlessui/react'
+import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { atom, useAtomValue } from 'jotai'
 import { useContext, useState } from 'react'
-import MdiArrowRightCircle from '~icons/mdi/arrow-right-circle'
+import ListIcon from '~icons/tabler/list'
 import IconX from '~icons/tabler/x'
 
 const currentDictTitle = atom((get) => {
   return `${get(currentDictInfoAtom).name} 第 ${get(currentChapterAtom) + 1} 章`
 })
 export default function MyModal() {
+  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state } = useContext(TypingContext)!
 
   const [isOpen, setIsOpen] = useState(false)
-
   const currentDictTitleValue = useAtomValue(currentDictTitle)
 
   function closeModal() {
@@ -29,9 +30,13 @@ export default function MyModal() {
 
   return (
     <>
-      <Tooltip content="展开" placement="top" className="!absolute left-5 top-[50%]">
-        <button type="button" onClick={openModal} className="fixed left-0 top-[50%] text-lg focus:outline-none">
-          <MdiArrowRightCircle className="text-indigo-500 dark:text-gray-50 " />
+      <Tooltip content="List" placement="top" className="!absolute left-5 top-[50%]">
+        <button
+          type="button"
+          onClick={openModal}
+          className="fixed left-0 top-[50%] rounded-lg rounded-l-none bg-indigo-50 px-2 py-3 text-lg hover:bg-indigo-200 focus:outline-none"
+        >
+          <ListIcon className="h-6 w-6 text-lg text-indigo-500 dark:text-gray-50" />
         </button>
       </Tooltip>
 
@@ -40,20 +45,16 @@ export default function MyModal() {
           {currentDictTitleValue}
           <IconX onClick={closeModal} className="cursor-pointer" />
         </Dialog.Title>
-        <div className="customized-scrollbar mt-2 select-none overflow-y-auto p-2 pb-2">
-          {state.chapterData.words?.map((word, index) => {
-            return (
-              <div className="mb-2 rounded-xl bg-white p-2 shadow-sm dark:bg-gray-800" key={word.name}>
-                <p className="font-mono text-lg leading-6 dark:text-gray-50">{word.name}</p>
-                {index < state.chapterData.index && <div className="line-clamp-1 text-sm text-gray-400">{word.trans}</div>}
-              </div>
-            )
-          })}
-        </div>
-        <div className="sticky bottom-0 w-full items-start justify-between rounded-t-lg bg-white px-4 pb-4 shadow dark:bg-gray-900 dark:text-gray-50">
-          <div className="mb-2">当前进度:</div>
-          <Progress className="w-full" />
-        </div>
+        <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
+          <ScrollArea.Viewport className="h-full w-full px-3">
+            <div className="flex h-full w-full flex-col gap-1">
+              {state.chapterData.words?.map((word, index) => {
+                return <WordCard word={word} key={`${word.name}_${index}`} isActive={state.chapterData.index === index} />
+              })}
+            </div>
+          </ScrollArea.Viewport>
+          <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
+        </ScrollArea.Root>
       </Drawer>
     </>
   )
