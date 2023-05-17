@@ -13,7 +13,8 @@ import IconX from '~icons/tabler/x'
 const currentDictTitle = atom((get) => {
   return `${get(currentDictInfoAtom).name} 第 ${get(currentChapterAtom) + 1} 章`
 })
-export default function MyModal() {
+
+export default function WordList() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state } = useContext(TypingContext)!
 
