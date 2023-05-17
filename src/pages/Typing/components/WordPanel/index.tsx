@@ -9,7 +9,7 @@ import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 
 const maskBg = {
-  transparent: 'bg-[#faf9ffcc] dark:bg-[#1f1f1fcc]',
+  transparent: 'bg-[#faf9ffcc] dark:bg-gray-900 dark:opacity-90',
   opaque: 'bg-[#faf9ff] dark:bg-[#1f1f1f]',
 }
 
@@ -60,7 +60,7 @@ export default function WordPanel() {
                   state.timerData.time ? maskBg.transparent : maskBg.opaque
                 }`}
               >
-                <p className="w-full animate-pulse select-none text-center text-3xl text-gray-600 dark:text-gray-50">
+                <p className="w-full animate-pulse select-none text-center text-xl text-gray-600 dark:text-gray-50">
                   按任意键{state.timerData.time ? '继续' : '开始'}
                 </p>
               </div>
@@ -73,7 +73,7 @@ export default function WordPanel() {
           </div>
         )}
       </div>
-      <Progress className={`mb-10 mt-auto ${state.isTyping ? 'text-opacity-100' : 'opacity-0'}`} />
+      <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
     </div>
   )
 }
