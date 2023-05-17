@@ -10,6 +10,7 @@ export type TranslationProps = {
 }
 export default function Translation({ trans }: TranslationProps) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+  const isShowTransRead = window.speechSynthesis && pronunciationConfig.isTransRead
 
   const { speak, speaking } = useSpeech(trans, {
     volume: pronunciationConfig.transVolume,
@@ -21,14 +22,16 @@ export default function Translation({ trans }: TranslationProps) {
 
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
   return (
-    <div
-      className={`max-w-4xl pb-4 pt-5 text-center font-sans text-lg transition-colors duration-300 dark:text-white dark:text-opacity-80 ${
-        !isTextSelectable && 'select-none'
-      }`}
-    >
-      {trans}
-      {window.speechSynthesis && pronunciationConfig.isTransRead && (
-        <Tooltip content="朗读发音" className="!absolute inset-y-0 -right-8 my-auto h-5 w-5 cursor-pointer leading-7 ">
+    <div className={`flex items-center justify-center  pb-4 pt-5`}>
+      <span
+        className={`max-w-4xl text-center font-sans text-lg transition-colors duration-300 dark:text-white dark:text-opacity-80 ${
+          isShowTransRead && 'pl-8'
+        } ${!isTextSelectable && 'select-none'}`}
+      >
+        {trans}
+      </span>
+      {isShowTransRead && (
+        <Tooltip content="朗读释义" className="ml-3 h-5 w-5 cursor-pointer leading-7">
           <SoundIcon animated={speaking} onClick={handleClickSoundIcon} className="h-full w-full" />
         </Tooltip>
       )}
