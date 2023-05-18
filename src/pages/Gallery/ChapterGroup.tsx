@@ -3,7 +3,7 @@ import { CHAPTER_LENGTH } from '@/constants'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import range from '@/utils/range'
 import { useAtom, useAtomValue } from 'jotai'
-import React from 'react'
+import type React from 'react'
 
 const ChapterGroup: React.FC<ChapterGroupProps> = ({ totalWords }) => {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)

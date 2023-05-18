@@ -1,4 +1,4 @@
-import { WordWithIndex } from '@/typings'
+import type { WordWithIndex } from '@/typings'
 import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
 

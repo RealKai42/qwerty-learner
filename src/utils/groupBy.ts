@@ -1,4 +1,4 @@
-import { Dictionary } from '@/typings'
+import type { Dictionary } from '@/typings'
 
 export default function groupBy<T>(elements: T[], iteratee: (value: T) => string) {
   return elements.reduce<Record<string, T[]>>((result, value) => {

@@ -1,6 +1,7 @@
-import { WritableAtom, atom } from 'jotai'
+import type { WritableAtom } from 'jotai'
+import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
-import { RESET } from 'jotai/vanilla/utils/constants'
+import type { RESET } from 'jotai/vanilla/utils/constants'
 
 type SetStateActionWithReset<Value> = Value | typeof RESET | ((prev: Value) => Value | typeof RESET)
 

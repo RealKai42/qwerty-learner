@@ -1,5 +1,5 @@
-import { SOUND_URL_PREFIX, KEY_SOUND_URL_PREFIX, keySoundResources } from '@/resources/soundResource'
-import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
+import { KEY_SOUND_URL_PREFIX, SOUND_URL_PREFIX, keySoundResources } from '@/resources/soundResource'
+import { hintSoundsConfigAtom, keySoundsConfigAtom } from '@/store'
 import noop from '@/utils/noop'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useEffect, useState } from 'react'

@@ -1,5 +1,5 @@
-import { keySoundsConfigAtom, hintSoundsConfigAtom } from '@/store'
-import { Popover, Transition, Switch } from '@headlessui/react'
+import { hintSoundsConfigAtom, keySoundsConfigAtom } from '@/store'
+import { Popover, Switch, Transition } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback } from 'react'
 import IconSpeakerWave from '~icons/heroicons/speaker-wave-solid'
