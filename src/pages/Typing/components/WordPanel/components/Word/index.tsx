@@ -221,7 +221,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
           <div
             onMouseEnter={() => handleHoverWord(true)}
             onMouseLeave={() => handleHoverWord(false)}
-            className={`flex items-center ${!isTextSelectable && 'select-none'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
+            className={`flex items-center ${isTextSelectable && 'select-all'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
           >
             {wordState.displayWord.split('').map((t, index) => {
               return (
