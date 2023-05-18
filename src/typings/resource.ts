@@ -1,4 +1,4 @@
-import { LanguageCategoryType, LanguageType, PronunciationType } from '.'
+import type { LanguageCategoryType, LanguageType, PronunciationType } from '.'
 
 export type DictionaryResource = {
   id: string

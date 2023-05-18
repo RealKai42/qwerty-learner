@@ -1,5 +1,6 @@
 import styles from './index.module.css'
-import { exportDatabase, importDatabase, ExportProgress, ImportProgress } from '@/utils/db/data-export'
+import type { ExportProgress, ImportProgress } from '@/utils/db/data-export'
+import { exportDatabase, importDatabase } from '@/utils/db/data-export'
 import * as Progress from '@radix-ui/react-progress'
 import { useCallback, useState } from 'react'
 

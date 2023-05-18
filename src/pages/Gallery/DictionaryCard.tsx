@@ -1,7 +1,8 @@
 import { currentChapterAtom, currentDictIdAtom } from '@/store'
-import { Dictionary } from '@/typings'
+import type { Dictionary } from '@/typings'
 import { useAtom, useSetAtom } from 'jotai'
-import React, { useEffect, useRef } from 'react'
+import type React from 'react'
+import { useEffect, useRef } from 'react'
 import IconCheckCircle from '~icons/heroicons/check-circle-solid'
 
 const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {

@@ -1,6 +1,6 @@
 import DictionaryCard from './DictionaryCard'
-import { Dictionary } from '@/typings'
-import React from 'react'
+import type { Dictionary } from '@/typings'
+import type React from 'react'
 
 const DictionaryGroup: React.FC<DictionaryGroupProps> = ({ title, dictionaries }) => {
   return (

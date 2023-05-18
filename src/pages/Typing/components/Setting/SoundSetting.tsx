@@ -1,7 +1,7 @@
 import styles from './index.module.css'
 import { keySoundResources } from '@/resources/soundResource'
 import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
-import { SoundResource } from '@/typings'
+import type { SoundResource } from '@/typings'
 import { toFixedNumber } from '@/utils'
 import { playKeySoundResource } from '@/utils/sounds/keySounds'
 import { Listbox, Switch, Transition } from '@headlessui/react'

@@ -1,4 +1,4 @@
-import { Dictionary, DictionaryResource } from '@/typings/index'
+import type { Dictionary, DictionaryResource } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
 
 // 中国考试

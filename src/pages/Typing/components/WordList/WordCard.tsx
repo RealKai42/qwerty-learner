@@ -1,4 +1,4 @@
-import { Word } from '@/typings'
+import type { Word } from '@/typings'
 
 export default function WordCard({ word, isActive }: { word: Word; isActive: boolean }) {
   return (
