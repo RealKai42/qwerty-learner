@@ -3,11 +3,13 @@ import InputHandler from '../InputHandler'
 import WordSound from '../WordSound'
 import Letter from './Letter'
 import type { LetterState } from './Letter'
+import Notation from './Notation'
 import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
+import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationConfigAtom, pronunciationIsOpenAtom } from '@/store'
+import type { Word as TypingWord } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import type { LetterMistakes } from '@/utils/db/record'
@@ -17,6 +19,7 @@ import { useImmer } from 'use-immer'
 
 type WordState = {
   displayWord: string
+  notation: string
   inputWord: string
   letterStates: LetterState[]
   isFinished: boolean
@@ -36,6 +39,7 @@ type WordState = {
 
 const initialWordState: WordState = {
   displayWord: '',
+  notation: '',
   inputWord: '',
   letterStates: [],
   isFinished: false,
@@ -50,7 +54,7 @@ const initialWordState: WordState = {
   letterMistake: {},
 }
 
-export default function Word({ word, onFinish }: { word: string; onFinish: () => void }) {
+export default function Word({ word, onFinish }: { word: TypingWord; onFinish: () => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -66,11 +70,12 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
 
   useEffect(() => {
     // run only when word changes
-    let wordString = word.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
-    wordString = wordString.replace(new RegExp('…', 'g'), '..')
+    let name = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
+    name = name.replace(new RegExp('…', 'g'), '..')
     const newWordState = structuredClone(initialWordState)
-    newWordState.displayWord = wordString
-    newWordState.letterStates = new Array(wordString.length).fill('normal')
+    newWordState.displayWord = name
+    newWordState.notation = word.notation ?? ''
+    newWordState.letterStates = new Array(name.length).fill('normal')
     newWordState.startTime = getUtcStringForMixpanel()
     setWordState(newWordState)
   }, [word, setWordState])
@@ -80,7 +85,6 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
       switch (updateAction.type) {
         case 'add':
           if (wordState.hasWrong) return
-
           if (updateAction.value === ' ') {
             updateAction.event.preventDefault()
             setWordState((state) => {
@@ -189,7 +193,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
       dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
 
       wordLogUploader({
-        headword: word,
+        headword: word.name,
         timeStart: wordState.startTime,
         timeEnd: wordState.endTime,
         countInput: wordState.correctCount + wordState.wrongCount,
@@ -197,7 +201,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
         countTypo: wordState.wrongCount,
       })
       saveWordRecord({
-        word,
+        word: word.name,
         wrongCount: wordState.wrongCount,
         letterTimeArray: wordState.letterTimeArray,
         letterMistake: wordState.letterMistake,
@@ -217,7 +221,8 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
   return (
     <>
       <InputHandler updateInput={updateInput} />
-      <div className="flex justify-center pb-1 pt-4">
+      <div className="flex flex-col justify-center pb-1 pt-4">
+        {wordState.notation && <Notation notation={wordState.notation} />}
         <div className="relative">
           <div
             onMouseEnter={() => handleHoverWord(true)}
@@ -235,7 +240,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
               )
             })}
           </div>
-          {pronunciationIsOpen && <WordSound word={word} inputWord={wordState.inputWord} className="h-10 w-10" />}
+          {pronunciationIsOpen && <WordSound word={word.name} inputWord={wordState.inputWord} className="h-10 w-10" />}
         </div>
       </div>
     </>
