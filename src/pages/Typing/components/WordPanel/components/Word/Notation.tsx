@@ -36,7 +36,6 @@ export default function Notation({ notation }: NotationProps) {
           break
         }
       }
-      console.log(match[1])
       ret.push({
         word: match[1],
         phonetic: match[2],
@@ -51,19 +50,21 @@ export default function Notation({ notation }: NotationProps) {
     return ret
   }, [notation])
   return (
-    <ruby className="mx-auto mb-1 p-0 font-mono text-5xl text-gray-800 dark:text-opacity-80">
-      {infos.map((value) => (
-        <>
-          {value.word}
-          {(value.phonetic ?? '').length > 0 && (
-            <>
-              <rp>{value.phonetic!.trim().length > 0 ? '(' : ''}</rp>
-              <rt>{value.phonetic}</rt>
-              <rp>{value.phonetic!.trim().length > 0 ? ')' : ''}</rp>
-            </>
-          )}
-        </>
-      ))}
-    </ruby>
+    <div className="mx-auto flex h-20 items-end">
+      <ruby className="mb-1 p-0 font-mono text-5xl text-gray-800 dark:text-opacity-80">
+        {infos.map((value) => (
+          <>
+            {value.word}
+            {(value.phonetic ?? '').length > 0 && (
+              <>
+                <rp>{value.phonetic!.trim().length > 0 ? '(' : ''}</rp>
+                <rt>{value.phonetic}</rt>
+                <rp>{value.phonetic!.trim().length > 0 ? ')' : ''}</rp>
+              </>
+            )}
+          </>
+        ))}
+      </ruby>
+    </div>
   )
 }
