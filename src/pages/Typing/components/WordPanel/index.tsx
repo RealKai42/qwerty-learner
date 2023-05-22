@@ -4,7 +4,9 @@ import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import { default as WordComponent } from './components/Word'
+import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isShowPrevAndNextWordAtom, phoneticConfigAtom } from '@/store'
+import type { Word } from '@/typings'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 
@@ -16,6 +18,9 @@ export default function WordPanel() {
   const [wordComponentKey, setWordComponentKey] = useState(0)
 
   const currentWord = state.chapterData.words[state.chapterData.index]
+  const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
+
+  usePrefetchPronunciationSound(nextWord?.name)
 
   const reloadCurrentWordComponent = useCallback(() => {
     setWordComponentKey((old) => old + 1)

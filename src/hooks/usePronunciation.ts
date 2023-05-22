@@ -32,7 +32,7 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
   const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
   const [isPlaying, setIsPlaying] = useState(false)
 
-  const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type as Exclude<PronunciationType, false>), {
+  const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
     html5: true,
     format: ['mp3'],
     loop,
@@ -63,4 +63,23 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
   }, [sound])
 
   return { play, stop, isPlaying }
+}
+
+export function usePrefetchPronunciationSound(word: string | undefined) {
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+
+  useEffect(() => {
+    if (!word) return
+
+    const soundUrl = generateWordSoundSrc(word, pronunciationConfig.type)
+    const head = document.head
+    const isPrefetch = (Array.from(head.querySelectorAll('link[href]')) as HTMLLinkElement[]).some((el) => el.href === soundUrl)
+
+    if (!isPrefetch) {
+      const link = document.createElement('link')
+      link.rel = 'prefetch'
+      link.href = soundUrl
+      head.appendChild(link)
+    }
+  }, [pronunciationConfig.type, word])
 }
