@@ -10,11 +10,12 @@ import { useCallback, useContext, useEffect } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 const WordSound = ({ word, inputWord, ...rest }: WordSoundProps) => {
+  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+  const { state } = useContext(TypingContext)!
+
   const { play, stop, isPlaying } = usePronunciationSound(word)
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
 
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(TypingContext)!
   useHotkeys(
     'ctrl+j',
     () => {
