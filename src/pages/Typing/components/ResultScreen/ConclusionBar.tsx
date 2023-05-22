@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { ElementType, SVGAttributes } from 'react'
+import type { ElementType, SVGAttributes } from 'react'
 import IconExclamationTriangle from '~icons/heroicons/exclamation-triangle-solid'
 import IconHandThumbUp from '~icons/heroicons/hand-thumb-up-solid'
 import IconHeart from '~icons/heroicons/heart-solid'

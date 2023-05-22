@@ -1,7 +1,10 @@
-import { WordRecord, ChapterRecord, IWordRecord, IChapterRecord, LetterMistakes } from './record'
-import { TypingContext, TypingState, TypingStateActionType } from '@/pages/Typing/store'
+import type { IChapterRecord, IWordRecord, LetterMistakes } from './record'
+import { ChapterRecord, WordRecord } from './record'
+import type { TypingState } from '@/pages/Typing/store'
+import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import { currentChapterAtom, currentDictIdAtom } from '@/store'
-import Dexie, { Table } from 'dexie'
+import type { Table } from 'dexie'
+import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext } from 'react'
 

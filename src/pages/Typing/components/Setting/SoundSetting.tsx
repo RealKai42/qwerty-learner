@@ -1,15 +1,13 @@
 import styles from './index.module.css'
 import { keySoundResources } from '@/resources/soundResource'
 import { hintSoundsConfigAtom, keySoundsConfigAtom, pronunciationConfigAtom } from '@/store'
-import { SoundResource } from '@/typings'
+import type { SoundResource } from '@/typings'
 import { toFixedNumber } from '@/utils'
 import { playKeySoundResource } from '@/utils/sounds/keySounds'
-import { Switch, Transition } from '@headlessui/react'
-import { Listbox } from '@headlessui/react'
+import { Listbox, Switch, Transition } from '@headlessui/react'
 import * as Slider from '@radix-ui/react-slider'
 import { useAtom } from 'jotai'
-import { useCallback } from 'react'
-import { Fragment } from 'react'
+import { Fragment, useCallback } from 'react'
 import IconCheck from '~icons/tabler/check'
 import IconChevronDown from '~icons/tabler/chevron-down'
 import IconEar from '~icons/tabler/ear'
@@ -28,11 +26,29 @@ export default function SoundSetting() {
     },
     [setPronunciationConfig],
   )
+  const onTogglePronunciationIsTransRead = useCallback(
+    (checked: boolean) => {
+      setPronunciationConfig((prev) => ({
+        ...prev,
+        isTransRead: checked,
+      }))
+    },
+    [setPronunciationConfig],
+  )
   const onChangePronunciationVolume = useCallback(
     (value: [number]) => {
       setPronunciationConfig((prev) => ({
         ...prev,
         volume: value[0] / 100,
+      }))
+    },
+    [setPronunciationConfig],
+  )
+  const onChangePronunciationIsTransVolume = useCallback(
+    (value: [number]) => {
+      setPronunciationConfig((prev) => ({
+        ...prev,
+        transVolume: value[0] / 100,
       }))
     },
     [setPronunciationConfig],
@@ -155,6 +171,37 @@ export default function SoundSetting() {
           </div>
         </div>
       </div>
+      {window.speechSynthesis && (
+        <div className={styles.section}>
+          <span className={styles.sectionLabel}>释义发音</span>
+          <div className={styles.switchBlock}>
+            <Switch checked={pronunciationConfig.isTransRead} onChange={onTogglePronunciationIsTransRead} className="switch-root">
+              <span aria-hidden="true" className="switch-thumb" />
+            </Switch>
+            <span className="text-right text-xs font-normal leading-tight text-gray-600">{`发音已${
+              pronunciationConfig.isTransRead ? '开启' : '关闭'
+            }`}</span>
+          </div>
+          <div className={styles.block}>
+            <span className={styles.blockLabel}>音量</span>
+            <div className="flex h-5 w-full items-center justify-between">
+              <Slider.Root
+                defaultValue={[pronunciationConfig.transVolume * 100]}
+                max={100}
+                step={10}
+                className="slider"
+                onValueChange={onChangePronunciationIsTransVolume}
+              >
+                <Slider.Track>
+                  <Slider.Range />
+                </Slider.Track>
+                <Slider.Thumb />
+              </Slider.Root>
+              <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${Math.floor(pronunciationConfig.transVolume * 100)}%`}</span>
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className={styles.section}>
         <span className={styles.sectionLabel}>按键音</span>

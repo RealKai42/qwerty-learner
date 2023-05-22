@@ -1,7 +1,8 @@
+import atomForConfig from './atomForConfig'
 import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
-import { Dictionary, InfoPanelState, PhoneticType, PronunciationType } from '@/typings'
+import type { Dictionary, InfoPanelState, PhoneticType, PronunciationType } from '@/typings'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
@@ -18,14 +19,14 @@ export const currentDictInfoAtom = atom<Dictionary>((get) => {
 
 export const currentChapterAtom = atomWithStorage('currentChapter', 0)
 
-export const keySoundsConfigAtom = atomWithStorage('keySoundsConfig', {
+export const keySoundsConfigAtom = atomForConfig('keySoundsConfig', {
   isOpen: true,
   isOpenClickSound: true,
   volume: 1,
   resource: keySoundResources[0],
 })
 
-export const hintSoundsConfigAtom = atomWithStorage('hintSoundsConfig', {
+export const hintSoundsConfigAtom = atomForConfig('hintSoundsConfig', {
   isOpen: true,
   volume: 1,
   isOpenWrongSound: true,
@@ -34,17 +35,21 @@ export const hintSoundsConfigAtom = atomWithStorage('hintSoundsConfig', {
   correctResource: correctSoundResources[0],
 })
 
-export const pronunciationConfigAtom = atomWithStorage('pronunciation', {
+export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   isOpen: true,
   volume: 1,
   type: 'us' as PronunciationType,
   name: '美音',
   isLoop: false,
+  isTransRead: false,
+  transVolume: 1,
   rate: 1,
 })
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)
 
-export const randomConfigAtom = atomWithStorage('randomConfig', {
+export const pronunciationIsTransReadAtom = atom((get) => get(pronunciationConfigAtom).isTransRead)
+
+export const randomConfigAtom = atomForConfig('randomConfig', {
   isOpen: false,
 })
 
@@ -56,7 +61,7 @@ export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', tr
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
-export const phoneticConfigAtom = atomWithStorage('phoneticConfig', {
+export const phoneticConfigAtom = atomForConfig('phoneticConfig', {
   isOpen: true,
   type: 'us' as PhoneticType,
 })

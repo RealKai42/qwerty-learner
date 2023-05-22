@@ -1,17 +1,18 @@
-import InputHandler, { WordUpdateAction } from '../InputHandler'
+import type { WordUpdateAction } from '../InputHandler'
+import InputHandler from '../InputHandler'
 import WordSound from '../WordSound'
 import Letter from './Letter'
-import { LetterState } from './Letter'
+import type { LetterState } from './Letter'
 import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import { isIgnoreCaseAtom, isTextSelectableAtom, pronunciationIsOpenAtom, isShowAnswerOnHoverAtom } from '@/store'
-import { useMixPanelWordLogUploader, getUtcStringForMixpanel } from '@/utils'
+import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
+import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
-import { LetterMistakes } from '@/utils/db/record'
+import type { LetterMistakes } from '@/utils/db/record'
 import { useAtomValue } from 'jotai'
-import { useEffect, useContext, useCallback, useState } from 'react'
+import { useCallback, useContext, useEffect, useState } from 'react'
 import { useImmer } from 'use-immer'
 
 type WordState = {
@@ -221,7 +222,7 @@ export default function Word({ word, onFinish }: { word: string; onFinish: () =>
           <div
             onMouseEnter={() => handleHoverWord(true)}
             onMouseLeave={() => handleHoverWord(false)}
-            className={`flex items-center ${!isTextSelectable && 'select-none'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
+            className={`flex items-center ${isTextSelectable && 'select-all'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
           >
             {wordState.displayWord.split('').map((t, index) => {
               return (

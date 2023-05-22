@@ -1,5 +1,5 @@
 import { CHAPTER_LENGTH } from '@/constants'
-import { Howl } from 'howler'
+import type { Howl } from 'howler'
 
 export * from './mixpanel'
 

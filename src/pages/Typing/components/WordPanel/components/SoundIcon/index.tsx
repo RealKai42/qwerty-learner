@@ -2,7 +2,9 @@ import VolumeHighIcon from './volume-icons/VolumeHieghIcon'
 import VolumeIcon from './volume-icons/VolumeIcon'
 import VolumeLowIcon from './volume-icons/VolumeLowIcon'
 import VolumeMediumIcon from './volume-icons/VolumeMediumIcon'
-import React, { MouseEventHandler, useEffect, useState } from 'react'
+import type { MouseEventHandler } from 'react'
+import type React from 'react'
+import { useEffect, useState } from 'react'
 
 const volumeIcons = [VolumeIcon, VolumeLowIcon, VolumeMediumIcon, VolumeHighIcon]
 
@@ -35,7 +37,7 @@ export const SoundIcon = ({ duration = 500, animated = false, onClick, ...rest }
   const Icon = volumeIcons[animationFrameIndex]
 
   return (
-    <button type="button" onClick={onClick}>
+    <button type="button" className="focus:outline-none" onClick={onClick}>
       <Icon {...rest} />
     </button>
   )

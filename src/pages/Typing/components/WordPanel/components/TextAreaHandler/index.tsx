@@ -1,6 +1,7 @@
-import { WordUpdateAction } from '../InputHandler'
+import type { WordUpdateAction } from '../InputHandler'
 import { TypingContext } from '@/pages/Typing/store'
-import { FormEvent, useCallback, useContext, useEffect, useRef } from 'react'
+import type { FormEvent } from 'react'
+import { useCallback, useContext, useEffect, useRef } from 'react'
 
 export default function TextAreaHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
   const textareaRef = useRef<HTMLTextAreaElement>(null)

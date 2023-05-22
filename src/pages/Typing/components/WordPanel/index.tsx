@@ -4,7 +4,9 @@ import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import { default as WordComponent } from './components/Word'
+import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isShowPrevAndNextWordAtom, phoneticConfigAtom } from '@/store'
+import type { Word } from '@/typings'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 
@@ -16,6 +18,9 @@ export default function WordPanel() {
   const [wordComponentKey, setWordComponentKey] = useState(0)
   const [currentLoopWordTime, setCurrentLoopWordTime] = useState(0)
   const currentWord = state.chapterData.words[state.chapterData.index]
+  const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
+
+  usePrefetchPronunciationSound(nextWord?.name)
 
   const reloadCurrentWordComponent = useCallback(() => {
     setWordComponentKey((old) => old + 1)
@@ -49,17 +54,26 @@ export default function WordPanel() {
         )}
       </div>
       <div className="container flex flex-grow flex-col items-center justify-center">
-        {currentWord && state.isTyping ? (
-          <>
-            <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
-            {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
-            {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
-          </>
-        ) : (
-          <div className="animate-pulse select-none  text-xl text-gray-600 dark:text-gray-50">按任意键开始</div>
+        {currentWord && (
+          <div className="relative flex w-full justify-center">
+            {!state.isTyping && (
+              <div className="absolute flex h-full w-full justify-center">
+                <div className="z-10 flex w-3/5 items-center backdrop-blur-sm">
+                  <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
+                    按任意键{state.timerData.time ? '继续' : '开始'}
+                  </p>
+                </div>
+              </div>
+            )}
+            <div className="relative">
+              <WordComponent word={currentWord.name} onFinish={onFinish} key={wordComponentKey} />
+              {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
+              {state.isTransVisible && <Translation trans={currentWord.trans.join('；')} />}
+            </div>
+          </div>
         )}
       </div>
-      {state.isTyping && <Progress className="mb-10 mt-auto" />}
+      <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
     </div>
   )
 }

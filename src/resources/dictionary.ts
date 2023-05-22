@@ -1,4 +1,4 @@
-import { Dictionary, DictionaryResource } from '@/typings/index'
+import type { Dictionary, DictionaryResource } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
 
 // 中国考试
@@ -1547,6 +1547,50 @@ const japaneseExam: DictionaryResource[] = [
     tags: ['基础'],
     url: '/dicts/JapVocabList.N5.json',
     length: 670,
+    language: 'romaji',
+    languageCategory: 'ja',
+  },
+  {
+    id: 'japanese007',
+    name: '高频单词_N1',
+    description: '高频单词_日语N1',
+    category: '日语学习',
+    tags: ['基础'],
+    url: '/dicts/Jap_High-Frequency_N1.json',
+    length: 3000,
+    language: 'romaji',
+    languageCategory: 'ja',
+  },
+  {
+    id: 'japanese008',
+    name: '高频单词_N2',
+    description: '高频单词_日语N2',
+    category: '日语学习',
+    tags: ['基础'],
+    url: '/dicts/Jap_High-Frequency_N2.json',
+    length: 3000,
+    language: 'romaji',
+    languageCategory: 'ja',
+  },
+  {
+    id: 'japanese009',
+    name: '高频单词_N3',
+    description: '高频单词_日语N3',
+    category: '日语学习',
+    tags: ['基础'],
+    url: '/dicts/Jap_High-Frequency_N3.json',
+    length: 1999,
+    language: 'romaji',
+    languageCategory: 'ja',
+  },
+  {
+    id: 'japanese0010',
+    name: '高频单词_N4N5',
+    description: '高频单词_日语N4N5',
+    category: '日语学习',
+    tags: ['基础'],
+    url: '/dicts/Jap_High-Frequency_N4N5.json',
+    length: 2000,
     language: 'romaji',
     languageCategory: 'ja',
   },

@@ -1,4 +1,4 @@
-import { TypingState } from '@/pages/Typing/store'
+import type { TypingState } from '@/pages/Typing/store'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
@@ -8,8 +8,8 @@ import {
   pronunciationConfigAtom,
   randomConfigAtom,
 } from '@/store'
-import { InfoPanelType } from '@/typings'
-import { PronunciationType } from '@/typings'
+import type { InfoPanelType } from '@/typings'
+import type { PronunciationType } from '@/typings'
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import { useCallback } from 'react'

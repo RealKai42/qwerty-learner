@@ -10,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #faf9ff;
   @apply transition-colors duration-300;
+  user-select: none;
 }
 
 html.dark body {

@@ -7,7 +7,7 @@ import { dictionaries } from '@/resources/dictionary'
 import { currentDictInfoAtom } from '@/store'
 import groupBy from '@/utils/groupBy'
 import { useAtomValue } from 'jotai'
-import React from 'react'
+import type React from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { NavLink, useNavigate } from 'react-router-dom'
 
