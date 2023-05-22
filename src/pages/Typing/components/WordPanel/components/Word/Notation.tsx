@@ -16,11 +16,16 @@ export default function Notation({ notation }: NotationProps) {
     <div className="mx-auto flex h-20 items-end">
       <ruby className="mb-1 p-0 font-mono text-5xl text-gray-800 dark:text-opacity-80">
         {infos.map(({ word, phonetic }) => {
-          const hasPhonetic = phonetic && phonetic.trim().length > 0
+          const hasPhonetic = phonetic && phonetic.length > 0
+          const isEmptyPhonetic = hasPhonetic && phonetic.trim().length == 0
           return (
             <>
               {word}
-              {hasPhonetic && (
+              {hasPhonetic && isEmptyPhonetic ? (
+                <>
+                  <rt>{phonetic}</rt>
+                </>
+              ) : (
                 <>
                   <rp>{'('}</rp>
                   <rt>{phonetic}</rt>
@@ -53,7 +58,7 @@ const getNotationInfo = (notation: string): NotationInfo[] => {
       } else if (kanjiStart > 0) {
         ret.push({
           word: word.substring(0, i),
-          phonetic: '',
+          phonetic: ' ',
         })
         word = word.substring(i)
         break
