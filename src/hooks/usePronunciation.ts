@@ -10,7 +10,7 @@ import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
-function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>) {
+export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>) {
   switch (pronunciation) {
     case 'uk':
       return `${pronunciationApi}${word}&type=1`

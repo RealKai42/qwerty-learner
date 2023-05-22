@@ -1,5 +1,9 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
+import { generateWordSoundSrc } from '@/hooks/usePronunciation'
+import { pronunciationConfigAtom } from '@/store'
+import type { PronunciationType } from '@/typings'
+import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import IconPrev from '~icons/tabler/arrow-narrow-left'
@@ -12,6 +16,20 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   const newIndex = useMemo(() => state.chapterData.index + (type === 'prev' ? -1 : 1), [state.chapterData.index, type])
   const word = state.chapterData.words[newIndex]
   const shortCutKey = useMemo(() => (type === 'prev' ? 'Ctrl + Shift + ArrowLeft' : 'Ctrl + Shift + ArrowRight'), [type])
+
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+  if (type === 'next') {
+    const wordSound = generateWordSoundSrc(word.name, pronunciationConfig.type as Exclude<PronunciationType, false>)
+    const head = document.head
+    const isPrefetch = (Array.from(head.querySelectorAll('link[href]')) as HTMLLinkElement[]).filter((el) => el.href === wordSound)
+
+    if (!isPrefetch.length) {
+      const link = document.createElement('link')
+      link.rel = 'prefetch'
+      link.href = wordSound
+      head.appendChild(link)
+    }
+  }
 
   const onClickWord = useCallback(() => {
     if (!word) return
