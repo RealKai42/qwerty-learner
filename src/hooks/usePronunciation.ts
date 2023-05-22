@@ -80,6 +80,10 @@ export function usePrefetchPronunciationSound(word: string | undefined) {
       link.rel = 'prefetch'
       link.href = soundUrl
       head.appendChild(link)
+
+      return () => {
+        head.removeChild(link)
+      }
     }
   }, [pronunciationConfig.type, word])
 }
