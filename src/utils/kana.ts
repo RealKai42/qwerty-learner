@@ -1,7 +1,12 @@
+export function isKanji(ch: string) {
+  ch = ch[0]
+  return (ch >= '\u4e00' && ch <= '\u9fcf') || (ch >= '\uf900' && ch <= '\ufaff') || (ch >= '\u3400' && ch <= '\u4dbf')
+}
+
 /**
  * source: https://github.com/andree-surya/moji4j
  */
-export default function romajiToHiragana(romaji: string): string {
+export function romajiToHiragana(romaji: string): string {
   const changeStr: string = romaji.toLowerCase()
   const resultStr: string[] = changeStr.split('')
 
