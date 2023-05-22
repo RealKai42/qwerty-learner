@@ -8,8 +8,8 @@ import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
-import type { Word as TypingWord } from '@/typings'
+import { currentDictInfoAtom, isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
+import type { Word } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import type { LetterMistakes } from '@/utils/db/record'
@@ -19,7 +19,6 @@ import { useImmer } from 'use-immer'
 
 type WordState = {
   displayWord: string
-  notation: string
   inputWord: string
   letterStates: LetterState[]
   isFinished: boolean
@@ -39,7 +38,6 @@ type WordState = {
 
 const initialWordState: WordState = {
   displayWord: '',
-  notation: '',
   inputWord: '',
   letterStates: [],
   isFinished: false,
@@ -54,7 +52,7 @@ const initialWordState: WordState = {
   letterMistake: {},
 }
 
-export default function Word({ word, onFinish }: { word: TypingWord; onFinish: () => void }) {
+export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -67,15 +65,16 @@ export default function Word({ word, onFinish }: { word: TypingWord; onFinish: (
   const [playKeySound, playBeepSound, playHintSound] = useKeySounds()
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
+  const currentLanguage = useAtomValue(currentDictInfoAtom).language
 
   useEffect(() => {
     // run only when word changes
-    let name = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
-    name = name.replace(new RegExp('…', 'g'), '..')
+    let headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
+    headword = headword.replace(new RegExp('…', 'g'), '..')
+
     const newWordState = structuredClone(initialWordState)
-    newWordState.displayWord = name
-    newWordState.notation = word.notation ?? ''
-    newWordState.letterStates = new Array(name.length).fill('normal')
+    newWordState.displayWord = headword
+    newWordState.letterStates = new Array(headword.length).fill('normal')
     newWordState.startTime = getUtcStringForMixpanel()
     setWordState(newWordState)
   }, [word, setWordState])
@@ -85,6 +84,7 @@ export default function Word({ word, onFinish }: { word: TypingWord; onFinish: (
       switch (updateAction.type) {
         case 'add':
           if (wordState.hasWrong) return
+
           if (updateAction.value === ' ') {
             updateAction.event.preventDefault()
             setWordState((state) => {
@@ -222,7 +222,7 @@ export default function Word({ word, onFinish }: { word: TypingWord; onFinish: (
     <>
       <InputHandler updateInput={updateInput} />
       <div className="flex flex-col justify-center pb-1 pt-4">
-        {wordState.notation && <Notation notation={wordState.notation} />}
+        {currentLanguage === 'romaji' && word.notation && <Notation notation={word.notation} />}
         <div className="relative">
           <div
             onMouseEnter={() => handleHoverWord(true)}
