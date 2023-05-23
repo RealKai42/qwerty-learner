@@ -63,7 +63,11 @@ export default function LoopWordSwitcher() {
               <div className="flex w-full  flex-col  items-start gap-2 py-0">
                 <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">选择单词的循环次数</span>
                 <div className="flex w-full flex-row items-center justify-between">
-                  <RadioGroup.Root className="flex w-full flex-col gap-2.5" defaultValue={loopTimes.toString()} aria-label="View density">
+                  <RadioGroup.Root
+                    className="flex w-full flex-col gap-2.5"
+                    defaultValue={loopTimes.toString()}
+                    aria-label="选择单词的循环次数"
+                  >
                     {loopOptions.map((value, index) => (
                       <div className="flex w-full items-center" key={value}>
                         <RadioGroup.Item
