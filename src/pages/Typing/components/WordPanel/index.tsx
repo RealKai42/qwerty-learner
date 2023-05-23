@@ -5,7 +5,7 @@ import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isShowPrevAndNextWordAtom, phoneticConfigAtom } from '@/store'
+import { isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom } from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
@@ -16,7 +16,8 @@ export default function WordPanel() {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
-
+  const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
+  const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
 
@@ -27,19 +28,29 @@ export default function WordPanel() {
   }, [])
 
   const onFinish = useCallback(() => {
-    if (state.chapterData.index < state.chapterData.words.length - 1 || state.isLoopSingleWord) {
+    if (state.chapterData.index < state.chapterData.words.length - 1 || currentWordExerciseCount < loopWordTimes - 1) {
       // 用户完成当前单词
-      if (state.isLoopSingleWord) {
+      if (currentWordExerciseCount < loopWordTimes - 1) {
+        setCurrentWordExerciseCount((old) => old + 1)
         dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
         reloadCurrentWordComponent()
       } else {
+        setCurrentWordExerciseCount(0)
         dispatch({ type: TypingStateActionType.NEXT_WORD })
       }
     } else {
       // 用户完成当前章节
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
     }
-  }, [state, dispatch, reloadCurrentWordComponent])
+  }, [
+    state.chapterData.index,
+    state.chapterData.words.length,
+    currentWordExerciseCount,
+    loopWordTimes,
+    dispatch,
+    reloadCurrentWordComponent,
+  ])
+
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
       <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">

@@ -1,5 +1,6 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import HandPositionIllustration from '../HandPositionIllustration'
+import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
 import Tooltip from '@/components/Tooltip'
@@ -13,8 +14,6 @@ import IconMoon from '~icons/heroicons/moon-solid'
 import IconSun from '~icons/heroicons/sun-solid'
 import IconLanguage from '~icons/tabler/language'
 import IconLanguageOff from '~icons/tabler/language-off'
-import IconRepeatOff from '~icons/tabler/repeat-off'
-import IconRepeatOnce from '~icons/tabler/repeat-once'
 
 export default function Switcher() {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
@@ -33,12 +32,6 @@ export default function Switcher() {
   const changeTransVisibleState = () => {
     if (dispatch) {
       dispatch({ type: TypingStateActionType.TOGGLE_TRANS_VISIBLE })
-    }
-  }
-
-  const changeLoopSingleWordState = () => {
-    if (dispatch) {
-      dispatch({ type: TypingStateActionType.TOGGLE_IS_LOOP_SINGLE_WORD })
     }
   }
 
@@ -67,14 +60,6 @@ export default function Switcher() {
     { enableOnFormTags: true, preventDefault: true },
     [],
   )
-  useHotkeys(
-    'ctrl+l',
-    () => {
-      changeLoopSingleWordState()
-    },
-    { enableOnFormTags: true, preventDefault: true },
-    [],
-  )
 
   return (
     <div className="flex items-center justify-center gap-2">
@@ -82,19 +67,10 @@ export default function Switcher() {
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
-        <button
-          className={`p-[2px] ${state?.isLoopSingleWord ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
-          type="button"
-          onClick={(e) => {
-            changeLoopSingleWordState()
-            e.currentTarget.blur()
-          }}
-          aria-label="开关单个单词循环（Ctrl + L）"
-        >
-          {state?.isLoopSingleWord ? <IconRepeatOnce /> : <IconRepeatOff />}
-        </button>
+      <Tooltip className="h-7 w-7" content="设置单个单词循环">
+        <LoopWordSwitcher />
       </Tooltip>
+
       <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
         <button
           className={`p-[2px] ${state?.isWordVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
