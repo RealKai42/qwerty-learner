@@ -2,7 +2,7 @@ import atomForConfig from './atomForConfig'
 import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
-import type { Dictionary, InfoPanelState, PhoneticType, PronunciationType } from '@/typings'
+import type { Dictionary, InfoPanelState, LoopWordTimesOption, PhoneticType, PronunciationType } from '@/typings'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
@@ -18,6 +18,10 @@ export const currentDictInfoAtom = atom<Dictionary>((get) => {
 })
 
 export const currentChapterAtom = atomWithStorage('currentChapter', 0)
+
+export const loopWordConfigAtom = atomForConfig<{ times: LoopWordTimesOption }>('loopWordConfig', {
+  times: 1,
+})
 
 export const keySoundsConfigAtom = atomForConfig('keySoundsConfig', {
   isOpen: true,

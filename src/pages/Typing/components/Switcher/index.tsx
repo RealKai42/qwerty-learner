@@ -67,7 +67,7 @@ export default function Switcher() {
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="开关单个单词循环（Ctrl + L）">
+      <Tooltip className="h-7 w-7" content="设置单个单词循环">
         <LoopWordSwitcher />
       </Tooltip>
 
