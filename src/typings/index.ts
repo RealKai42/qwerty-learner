@@ -21,6 +21,7 @@ export type Word = {
   trans: string[]
   usphone: string
   ukphone: string
+  notation?: string
 }
 
 export type WordWithIndex = Word & {
