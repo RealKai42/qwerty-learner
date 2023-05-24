@@ -6,18 +6,17 @@ import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
 import WordList from './components/WordList'
 import WordPanel from './components/WordPanel'
+import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
 import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
 import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
-import { CONFETTI_DEFAULTS } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
-import confetti from 'canvas-confetti'
 import { useAtom, useAtomValue } from 'jotai'
 import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
@@ -119,38 +118,7 @@ const App: React.FC = () => {
     }
     return () => clearInterval(intervalId)
   }, [state.isTyping, dispatch])
-
-  useEffect(() => {
-    let timeoutId1: number | undefined
-    let timeoutId2: number | undefined
-
-    if (state.isFinished) {
-      timeoutId1 = window.setTimeout(() => {
-        confetti({
-          ...CONFETTI_DEFAULTS,
-          particleCount: 50,
-          angle: 60,
-          spread: 100,
-          origin: { x: 0 },
-        })
-      }, 250)
-
-      timeoutId2 = window.setTimeout(() => {
-        confetti({
-          ...CONFETTI_DEFAULTS,
-          particleCount: 50,
-          angle: 120,
-          spread: 100,
-          origin: { x: 1 },
-        })
-      }, 400)
-    }
-
-    return () => {
-      window.clearTimeout(timeoutId1)
-      window.clearTimeout(timeoutId2)
-    }
-  }, [state.isFinished])
+  useConfetti(state.isFinished)
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
@@ -170,8 +138,9 @@ const App: React.FC = () => {
           <StartButton isLoading={isLoading} />
           <Tooltip content="跳过该词">
             <button
-              className={`${state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
-                } btn-primary transition-all duration-300 `}
+              className={`${
+                state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+              } btn-primary transition-all duration-300 `}
               onClick={skipWord}
             >
               Skip
