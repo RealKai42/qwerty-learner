@@ -11,7 +11,7 @@ import { TypingContext, TypingStateActionType, initialState, typingReducer } fro
 import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
-import { confettiDefaults } from '@/constants'
+import { CONFETTI_DEFAULTS } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
@@ -127,7 +127,7 @@ const App: React.FC = () => {
     if (state.isFinished) {
       timeoutId1 = window.setTimeout(() => {
         confetti({
-          ...confettiDefaults,
+          ...CONFETTI_DEFAULTS,
           particleCount: 50,
           angle: 60,
           spread: 100,
@@ -137,7 +137,7 @@ const App: React.FC = () => {
 
       timeoutId2 = window.setTimeout(() => {
         confetti({
-          ...confettiDefaults,
+          ...CONFETTI_DEFAULTS,
           particleCount: 50,
           angle: 120,
           spread: 100,
@@ -170,9 +170,8 @@ const App: React.FC = () => {
           <StartButton isLoading={isLoading} />
           <Tooltip content="跳过该词">
             <button
-              className={`${
-                state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
-              } btn-primary transition-all duration-300 `}
+              className={`${state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+                } btn-primary transition-all duration-300 `}
               onClick={skipWord}
             >
               Skip
