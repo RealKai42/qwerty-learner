@@ -118,7 +118,9 @@ const App: React.FC = () => {
     }
     return () => clearInterval(intervalId)
   }, [state.isTyping, dispatch])
+
   useConfetti(state.isFinished)
+
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
