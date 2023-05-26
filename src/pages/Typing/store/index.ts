@@ -1,6 +1,7 @@
 import type { WordWithIndex } from '@/typings'
 import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
+import { json } from 'stream/consumers'
 
 export type ChapterData = {
   words: WordWithIndex[]
@@ -14,11 +15,17 @@ export type ChapterData = {
   correctWordIndexes: number[]
   // 本章节用户输入的单词的 record id 列表
   wordRecordIds: number[]
+  wrongWordData: WrongWordData[]
 }
 export type TimerData = {
   time: number
   accuracy: number
   wpm: number
+}
+
+export type WrongWordData = {
+  name: string
+  wrongCount: number
 }
 
 export type TypingState = {
@@ -44,6 +51,7 @@ export const initialState: TypingState = {
     wrongWordIndexes: [],
     correctWordIndexes: [],
     wordRecordIds: [],
+    wrongWordData: [],
   },
   timerData: {
     time: 0,
@@ -71,6 +79,7 @@ export enum TypingStateActionType {
   FINISH_CHAPTER = 'FINISH_CHAPTER',
   INCREASE_CORRECT_COUNT = 'INCREASE_CORRECT_COUNT',
   INCREASE_WRONG_COUNT = 'INCREASE_WRONG_COUNT',
+  INCREASE_WRONG_WORD = 'INCREASE_WRONG_WORD',
   SKIP_WORD = 'SKIP_WORD',
   SKIP_2_WORD_INDEX = 'SKIP_2_WORD_INDEX',
   REPEAT_CHAPTER = 'REPEAT_CHAPTER',
@@ -97,6 +106,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.INCREASE_CORRECT_COUNT }
   | { type: TypingStateActionType.INCREASE_WRONG_COUNT }
+  | { type: TypingStateActionType.INCREASE_WRONG_WORD }
   | { type: TypingStateActionType.SKIP_WORD }
   | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
@@ -129,16 +139,32 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       break
     case TypingStateActionType.REPORT_WRONG_WORD: {
       const wordIndex = state.chapterData.words[state.chapterData.index].index
-
       const prevIndex = state.chapterData.wrongWordIndexes.indexOf(wordIndex)
       if (prevIndex === -1) {
         state.chapterData.wrongWordIndexes.push(wordIndex)
       }
       break
     }
+    case TypingStateActionType.INCREASE_WRONG_WORD: {
+      const currentWordName = state.chapterData.words[state.chapterData.index].name
+      const prevIndex = state.chapterData.wrongWordData.findIndex((word) => word.name === currentWordName)
+      if (prevIndex === -1) {
+        state.chapterData.wrongWordData.push({
+          name: currentWordName,
+          wrongCount: 1,
+        })
+      } else {
+        const currentWrongWordIndex = state.chapterData.wrongWordData.findIndex((wrongWord) => wrongWord.name === currentWordName)
+        const currentWrongWord = state.chapterData.wrongWordData[currentWrongWordIndex]
+        state.chapterData.wrongWordData[currentWrongWordIndex] = {
+          name: currentWrongWord.name,
+          wrongCount: currentWrongWord.wrongCount + 1,
+        }
+      }
+      break
+    }
     case TypingStateActionType.REPORT_CORRECT_WORD: {
       const wordIndex = state.chapterData.words[state.chapterData.index].index
-
       const prevWrongIndex = state.chapterData.wrongWordIndexes.indexOf(wordIndex)
       const prevCorrectIndex = state.chapterData.correctWordIndexes.indexOf(wordIndex)
 

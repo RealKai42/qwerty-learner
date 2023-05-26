@@ -32,7 +32,9 @@
     "swr": "^2.0.4",
     "typescript": "^4.0.3",
     "use-immer": "^0.9.0",
-    "use-sound": "^4.0.1"
+    "use-sound": "^4.0.1",
+    "xlsx": "^0.18.5",
+    "xlsx-style": "^0.8.13"
   },
   "scripts": {
     "dev": "vite",

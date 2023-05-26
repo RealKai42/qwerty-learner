@@ -164,6 +164,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
       dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
       dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
+      dispatch({ type: TypingStateActionType.INCREASE_WRONG_WORD })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.inputWord])

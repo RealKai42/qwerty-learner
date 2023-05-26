@@ -10,14 +10,17 @@ import type { InfoPanelType } from '@/typings'
 import type { WordWithIndex } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { Transition } from '@headlessui/react'
+import { stat } from 'fs'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { utils, writeFileXLSX } from 'xlsx'
 import IconCoffee from '~icons/mdi/coffee'
 import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
 import IconGithub from '~icons/simple-icons/github'
 import IconWechat from '~icons/simple-icons/wechat'
 import IconX from '~icons/tabler/x'
+import IexportWords from '~icons/typcn/export'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -33,9 +36,25 @@ const ResultScreen = () => {
     dispatch({ type: TypingStateActionType.TICK_TIMER, addTime: 0 })
   }, [dispatch])
 
+  const exporWords = () => {
+    const { words, wrongWordData } = state.chapterData
+    const exportData = words.map((word) => {
+      return {
+        ...word,
+        ...wrongWordData.find((wrongWord) => {
+          return word.name === wrongWord.name
+        }),
+        trans: word.trans.join(';'),
+      }
+    })
+    const ws = utils.json_to_sheet(exportData)
+    const wb = utils.book_new()
+    utils.book_append_sheet(wb, ws, 'Data')
+    writeFileXLSX(wb, '章节单词导出.xlsx')
+  }
+
   const wrongWords = useMemo(() => {
     const wordList = state.chapterData.wrongWordIndexes.map((index) => state.chapterData.words.find((word) => word.index === index))
-
     return wordList.filter((word) => word !== undefined) as WordWithIndex[]
   }, [state.chapterData.wrongWordIndexes, state.chapterData.words])
 
@@ -158,7 +177,7 @@ const ResultScreen = () => {
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-3.5 text-xl">
                 <ShareButton />
-
+                <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exporWords}></IexportWords>
                 <IconXiaoHongShu
                   fontSize={15}
                   className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
