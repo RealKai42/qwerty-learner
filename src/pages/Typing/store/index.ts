@@ -1,7 +1,6 @@
 import type { WordWithIndex } from '@/typings'
 import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
-import { json } from 'stream/consumers'
 
 export type ChapterData = {
   words: WordWithIndex[]
@@ -26,6 +25,10 @@ export type TimerData = {
 export type WrongWordData = {
   name: string
   wrongCount: number
+  wrongLetters: Array<{
+    letter: string
+    count: number
+  }>
 }
 
 export type TypingState = {
@@ -106,7 +109,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.INCREASE_CORRECT_COUNT }
   | { type: TypingStateActionType.INCREASE_WRONG_COUNT }
-  | { type: TypingStateActionType.INCREASE_WRONG_WORD }
+  | { type: TypingStateActionType.INCREASE_WRONG_WORD; payload: { wrongLetter: string } }
   | { type: TypingStateActionType.SKIP_WORD }
   | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
@@ -147,18 +150,39 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     }
     case TypingStateActionType.INCREASE_WRONG_WORD: {
       const currentWordName = state.chapterData.words[state.chapterData.index].name
+      const inputWrongLetter = action.payload.wrongLetter
       const prevIndex = state.chapterData.wrongWordData.findIndex((word) => word.name === currentWordName)
       if (prevIndex === -1) {
         state.chapterData.wrongWordData.push({
           name: currentWordName,
           wrongCount: 1,
+          wrongLetters: [
+            {
+              letter: inputWrongLetter,
+              count: 1,
+            },
+          ],
         })
       } else {
         const currentWrongWordIndex = state.chapterData.wrongWordData.findIndex((wrongWord) => wrongWord.name === currentWordName)
         const currentWrongWord = state.chapterData.wrongWordData[currentWrongWordIndex]
+        const currentLetterIndex = currentWrongWord.wrongLetters.findIndex((wrongLetter) => wrongLetter.letter === inputWrongLetter)
+        const wrongLetters = currentWrongWord.wrongLetters
+        if (currentLetterIndex === -1) {
+          wrongLetters.push({
+            letter: inputWrongLetter,
+            count: 1,
+          })
+        } else {
+          wrongLetters[currentLetterIndex] = {
+            letter: inputWrongLetter,
+            count: wrongLetters[currentLetterIndex].count + 1,
+          }
+        }
         state.chapterData.wrongWordData[currentWrongWordIndex] = {
           name: currentWrongWord.name,
           wrongCount: currentWrongWord.wrongCount + 1,
+          wrongLetters: wrongLetters,
         }
       }
       break

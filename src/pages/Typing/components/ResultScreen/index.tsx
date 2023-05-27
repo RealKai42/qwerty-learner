@@ -39,15 +39,29 @@ const ResultScreen = () => {
   const exporWords = () => {
     const { words, wrongWordData } = state.chapterData
     const exportData = words.map((word) => {
+      const wrongWord = wrongWordData.find((wrongWord) => {
+        return word.name === wrongWord.name
+      })
+
       return {
         ...word,
-        ...wrongWordData.find((wrongWord) => {
-          return word.name === wrongWord.name
-        }),
+        ...wrongWord,
         trans: word.trans.join(';'),
+        wrongLetter: wrongWord?.wrongLetters
+          .map((wrongLetter) => {
+            return `${wrongLetter.letter}:${wrongLetter.count}`
+          })
+          .join(';'),
       }
     })
-    const ws = utils.json_to_sheet(exportData)
+
+    const ws = utils.json_to_sheet(
+      exportData.map((wrongWord) => {
+        Reflect.deleteProperty(wrongWord, 'index')
+        Reflect.deleteProperty(wrongWord, 'wrongLetters')
+        return wrongWord
+      }),
+    )
     const wb = utils.book_new()
     utils.book_append_sheet(wb, ws, 'Data')
     writeFileXLSX(wb, '章节单词导出.xlsx')

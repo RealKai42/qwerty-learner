@@ -116,6 +116,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
     const inputChar = wordState.inputWord[inputLength - 1]
     const correctChar = wordState.displayWord[inputLength - 1]
+    console.log('correctChar: ', correctChar)
 
     let isEqual = false
     if (inputChar != undefined && correctChar != undefined) {
@@ -148,7 +149,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     } else {
       // 出错时
       playBeepSound()
-
       setWordState((state) => {
         state.letterStates[inputLength - 1] = 'wrong'
         state.hasWrong = true
@@ -164,7 +164,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
       dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
       dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
-      dispatch({ type: TypingStateActionType.INCREASE_WRONG_WORD })
+      dispatch({ type: TypingStateActionType.INCREASE_WRONG_WORD, payload: { wrongLetter: correctChar } })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.inputWord])
