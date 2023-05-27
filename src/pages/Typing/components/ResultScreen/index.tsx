@@ -10,7 +10,6 @@ import type { InfoPanelType } from '@/typings'
 import type { WordWithIndex } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { Transition } from '@headlessui/react'
-import { stat } from 'fs'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -64,7 +63,7 @@ const ResultScreen = () => {
     )
     const wb = utils.book_new()
     utils.book_append_sheet(wb, ws, 'Data')
-    writeFileXLSX(wb, '章节单词导出.xlsx')
+    writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
   }
 
   const wrongWords = useMemo(() => {
