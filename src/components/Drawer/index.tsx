@@ -28,7 +28,7 @@ export default function Drawer(props: DrawerProps) {
 
   return (
     <Transition show={open} appear as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={onCloseDrawer}>
+      <Dialog as="div" className="relative z-30" onClose={onCloseDrawer}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
