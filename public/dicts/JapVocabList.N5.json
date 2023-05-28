@@ -2,4683 +2,4683 @@
     {
         "name": "donata",
         "trans": [
-            "who--どなた"
+            "who"
         ],
         "notation": "どなた"
     },
     {
         "name": "otokonoko",
         "trans": [
-            "Boy--男の子"
+            "Boy"
         ],
         "notation": "男(おとこ)の子(こ)"
     },
     {
-        "name": "shichi / nana",
+        "name": "nana",
         "trans": [
-            "Seven--七"
+            "Seven"
         ],
         "notation": "七(なな)"
     },
     {
-        "name": "bangoo",
+        "name": "bangou",
         "trans": [
-            "number--番号"
+            "number"
         ],
         "notation": "番号(ばんごう)"
     },
     {
         "name": "docchi",
         "trans": [
-            "which--どっち"
+            "which"
         ],
         "notation": "どっち"
     },
     {
         "name": "shio",
         "trans": [
-            "Salt--塩"
+            "Salt"
         ],
         "notation": "塩(しお)"
     },
     {
         "name": "nado",
         "trans": [
-            "et cetera--など"
+            "et cetera"
         ],
         "notation": "など"
     },
     {
         "name": "furui",
         "trans": [
-            "old (not used for people)--古い"
+            "old (not used for people)"
         ],
         "notation": "古(ふる)い"
     },
     {
         "name": "resutoran",
         "trans": [
-            "restaurant--レストラン"
+            "restaurant"
         ],
         "notation": "レストラン"
     },
     {
         "name": "sukunai",
         "trans": [
-            "a few--少ない"
+            "a few"
         ],
         "notation": "少(すく)ない"
     },
     {
         "name": "tsuyoi",
         "trans": [
-            "powerful--強い"
+            "powerful"
         ],
         "notation": "強(つよ)い"
     },
     {
         "name": "yobu",
         "trans": [
-            "to call out,to invite--呼ぶ"
+            "to call out,to invite"
         ],
         "notation": "呼(よ)ぶ"
     },
     {
-        "name": "kakaru",
+        "name": "kakekakaru",
         "trans": [
-            "to take time or money--掛かかる"
+            "to take time or money"
         ],
         "notation": "掛(かけ)かかる"
     },
     {
-        "name": "kooban",
+        "name": "kouban",
         "trans": [
-            "police box--交番"
+            "police box"
         ],
         "notation": "交番(こうばん)"
     },
     {
         "name": "atama",
         "trans": [
-            "head--頭"
+            "head"
         ],
         "notation": "頭(あたま)"
     },
     {
         "name": "doko",
         "trans": [
-            "where--どこ"
+            "where"
         ],
         "notation": "どこ"
     },
     {
         "name": "jisho",
         "trans": [
-            "Dictionary--辞書"
+            "Dictionary"
         ],
         "notation": "辞書(じしょ)"
     },
     {
         "name": "ookina",
         "trans": [
-            "big--大きな"
+            "big"
         ],
         "notation": "大(おお)きな"
     },
     {
-        "name": "maigetsu/maitsuki",
+        "name": "maitsuki",
         "trans": [
-            "every month--毎月"
+            "every month"
         ],
         "notation": "毎月(まいつき)"
     },
     {
-        "name": "oozei",
+        "name": "taisei",
         "trans": [
-            "great number of people--大勢"
+            "great number of people"
         ],
         "notation": "大勢(たいせい)"
     },
     {
-        "name": "marui",
+        "name": "marui/marui",
         "trans": [
-            "round,circular--丸い/円い"
+            "round,circular"
         ],
         "notation": "丸(まる)い/円(まる)い"
     },
     {
-        "name": "kado",
+        "name": "kaku",
         "trans": [
-            "a corner--角"
+            "a corner"
         ],
         "notation": "角(かく)"
     },
     {
         "name": "daisuki",
         "trans": [
-            "to be very likeable--大好き"
+            "to be very likeable"
         ],
         "notation": "大好(だいす)き"
     },
     {
         "name": "takusan",
         "trans": [
-            "many--たくさん"
+            "many"
         ],
         "notation": "たくさん"
     },
     {
-        "name": "watakushi",
+        "name": "watashi",
         "trans": [
-            "(humble) I,myself--私"
+            "(humble) I,myself"
         ],
         "notation": "私(わたし)"
     },
     {
         "name": "mono",
         "trans": [
-            "thing--物"
+            "thing"
         ],
         "notation": "物(もの)"
     },
     {
         "name": "yama",
         "trans": [
-            "mountain--山"
+            "mountain"
         ],
         "notation": "山(やま)"
     },
     {
         "name": "tori",
         "trans": [
-            "bird--鳥"
+            "bird"
         ],
         "notation": "鳥(とり)"
     },
     {
         "name": "ageru",
         "trans": [
-            "to give--上げる"
+            "to give"
         ],
         "notation": "上(あ)げる"
     },
     {
         "name": "taihen",
         "trans": [
-            "difficult situation--大変"
+            "difficult situation"
         ],
         "notation": "大変(たいへん)"
     },
     {
         "name": "oishii",
         "trans": [
-            "delicious--おいしい"
+            "delicious"
         ],
         "notation": "おいしい"
     },
     {
         "name": "gaikoku",
         "trans": [
-            "foreign country--外国"
+            "foreign country"
         ],
         "notation": "外国(がいこく)"
     },
     {
         "name": "kaze",
         "trans": [
-            "a cold--風邪"
+            "a cold"
         ],
         "notation": "風邪(かぜ)"
     },
     {
         "name": "onnanoko",
         "trans": [
-            "Girl--女の子"
+            "Girl"
         ],
         "notation": "女(おんな)の子(こ)"
     },
     {
         "name": "oriru",
         "trans": [
-            "to get off, to descend--降りる"
+            "to get off, to descend"
         ],
         "notation": "降(お)りる"
     },
     {
         "name": "ushiro",
         "trans": [
-            "behind--後ろ"
+            "behind"
         ],
         "notation": "後(うし)ろ"
     },
     {
         "name": "tanomu",
         "trans": [
-            "to ask--頼む"
+            "to ask"
         ],
         "notation": "頼(たの)む"
     },
     {
         "name": "atsui",
         "trans": [
-            "hot to the touch--熱い"
+            "hot to the touch"
         ],
         "notation": "熱(あつ)い"
     },
     {
         "name": "okiru",
         "trans": [
-            "to get up--起きる"
+            "to get up"
         ],
         "notation": "起(お)きる"
     },
     {
-        "name": "depa-to",
+        "name": "depaato",
         "trans": [
-            "department store--デパート"
+            "department store"
         ],
         "notation": "デパート"
     },
     {
-        "name": "nanoka",
+        "name": "nananichi",
         "trans": [
-            "seven days,the seventh day--七日"
+            "seven days,the seventh day"
         ],
         "notation": "七(なな)日(にち)"
     },
     {
         "name": "kiru",
         "trans": [
-            "to cut--切る"
+            "to cut"
         ],
         "notation": "切(き)る"
     },
     {
         "name": "minami",
         "trans": [
-            "south--南"
+            "south"
         ],
         "notation": "南(みなみ)"
     },
     {
         "name": "hashi",
         "trans": [
-            "chopsticks--箸"
+            "chopsticks"
         ],
         "notation": "箸(はし)"
     },
     {
-        "name": "takushi-",
+        "name": "takushii",
         "trans": [
-            "taxi--タクシー"
+            "taxi"
         ],
         "notation": "タクシー"
     },
     {
         "name": "yuubinkyoku",
         "trans": [
-            "post office--郵便局"
+            "post office"
         ],
         "notation": "郵便(ゆうびん)局(きょく)"
     },
     {
         "name": "kami",
         "trans": [
-            "paper--紙"
+            "paper"
         ],
         "notation": "紙(かみ)"
     },
     {
         "name": "tsutomeru",
         "trans": [
-            "to work for someone--勤める"
+            "to work for someone"
         ],
         "notation": "勤(つと)める"
     },
     {
         "name": "hashiru",
         "trans": [
-            "to run--走る"
+            "to run"
         ],
         "notation": "走(はし)る"
     },
     {
-        "name": "te-pu",
+        "name": "teepu",
         "trans": [
-            "tape--テープ"
+            "tape"
         ],
         "notation": "テープ"
     },
     {
         "name": "uwagi",
         "trans": [
-            "jacket--上着"
+            "jacket"
         ],
         "notation": "上着(うわぎ)"
     },
     {
         "name": "miseru",
         "trans": [
-            "to show--見せる"
+            "to show"
         ],
         "notation": "見(み)せる"
     },
     {
         "name": "watasu",
         "trans": [
-            "to hand over--渡す"
+            "to hand over"
         ],
         "notation": "渡(わた)す"
     },
     {
         "name": "zenbu",
         "trans": [
-            "All--全部"
+            "All"
         ],
         "notation": "全部(ぜんぶ)"
     },
     {
         "name": "ototoi",
         "trans": [
-            "day before yesterday--一昨日"
+            "day before yesterday"
         ],
         "notation": "一昨日(おととい)"
     },
     {
         "name": "osara",
         "trans": [
-            "plate, dish--お皿"
+            "plate, dish"
         ],
         "notation": "お皿(さら)"
     },
     {
         "name": "maiasa",
         "trans": [
-            "every morning--毎朝"
+            "every morning"
         ],
         "notation": "毎朝(まいあさ)"
     },
     {
         "name": "asatte",
         "trans": [
-            "day after tomorrow--あさって"
+            "day after tomorrow"
         ],
         "notation": "あさって"
     },
     {
         "name": "kagi",
         "trans": [
-            "Key--鍵"
+            "Key"
         ],
         "notation": "鍵(かぎ)"
     },
     {
-        "name": "omawarisan",
+        "name": "ojunmawarisan",
         "trans": [
-            "friendly term for policeman--お巡まわりさん"
+            "friendly term for policeman"
         ],
         "notation": "お巡(じゅん)まわりさん"
     },
     {
         "name": "jitensha",
         "trans": [
-            "Bicycle--自転車"
+            "Bicycle"
         ],
         "notation": "自転車(じてんしゃ)"
     },
     {
         "name": "kumori",
         "trans": [
-            "cloudy weather--曇り"
+            "cloudy weather"
         ],
         "notation": "曇(くも)り"
     },
     {
         "name": "kawaii",
         "trans": [
-            "Cute--可愛い"
+            "Cute"
         ],
         "notation": "可愛(かわい)い"
     },
     {
         "name": "sore",
         "trans": [
-            "that--それ"
+            "that"
         ],
         "notation": "それ"
     },
     {
-        "name": "kyooshitsu",
+        "name": "kyoushitsu",
         "trans": [
-            "Classroom--教室"
+            "Classroom"
         ],
         "notation": "教室(きょうしつ)"
     },
     {
         "name": "puuru",
         "trans": [
-            "swimming pool--プール"
+            "swimming pool"
         ],
         "notation": "プール"
     },
     {
         "name": "mimi",
         "trans": [
-            "ear--耳"
+            "ear"
         ],
         "notation": "耳(みみ)"
     },
     {
         "name": "dasu",
         "trans": [
-            "to put out--出す"
+            "to put out"
         ],
         "notation": "出(だ)す"
     },
     {
         "name": "konna",
         "trans": [
-            "Such--こんな"
+            "Such"
         ],
         "notation": "こんな"
     },
     {
         "name": "hanbun",
         "trans": [
-            "half minute--半分"
+            "half minute"
         ],
         "notation": "半分(はんぶん)"
     },
     {
         "name": "futoi",
         "trans": [
-            "fat--太い"
+            "fat"
         ],
         "notation": "太(ふと)い"
     },
     {
-        "name": "mokuyoobi",
+        "name": "mokuyoubi",
         "trans": [
-            "Thursday--木曜日"
+            "Thursday"
         ],
         "notation": "木曜日(もくようび)"
     },
     {
         "name": "kaku",
         "trans": [
-            "to write--書く"
+            "to write"
         ],
         "notation": "書(か)く"
     },
     {
         "name": "ryuugakusei",
         "trans": [
-            "overseas student--留学生"
+            "overseas student"
         ],
         "notation": "留学生(りゅうがくせい)"
     },
     {
-        "name": "suiyoobi",
+        "name": "suiyoubi",
         "trans": [
-            "Wednesday--水曜日"
+            "Wednesday"
         ],
         "notation": "水曜日(すいようび)"
     },
     {
         "name": "tsukuru",
         "trans": [
-            "to make--作る"
+            "to make"
         ],
         "notation": "作(つく)る"
     },
     {
-        "name": "bata-",
+        "name": "bataa",
         "trans": [
-            "butter--バター"
+            "butter"
         ],
         "notation": "バター"
     },
     {
         "name": "hagaki",
         "trans": [
-            "postcard--葉書"
+            "postcard"
         ],
         "notation": "葉書(はがき)"
     },
     {
         "name": "ichinichi",
         "trans": [
-            "first of the month--一日"
+            "first of the month"
         ],
         "notation": "一(いち)日(にち)"
     },
     {
-        "name": "fo-ku",
+        "name": "fouku",
         "trans": [
-            "fork--フォーク"
+            "fork"
         ],
         "notation": "フォーク"
     },
     {
         "name": "toru",
         "trans": [
-            "to take something--取る"
+            "to take something"
         ],
         "notation": "取(と)る"
     },
     {
         "name": "saa",
         "trans": [
-            "well…--さあ"
+            "well…"
         ],
         "notation": "さあ"
     },
     {
         "name": "niku",
         "trans": [
-            "meat--肉"
+            "meat"
         ],
         "notation": "肉(にく)"
     },
     {
         "name": "toshokan",
         "trans": [
-            "library--図書館"
+            "library"
         ],
         "notation": "図書館(としょかん)"
     },
     {
-        "name": "nichiyoobi",
+        "name": "nichiyoubi",
         "trans": [
-            "Sunday--日曜日"
+            "Sunday"
         ],
         "notation": "日曜日(にちようび)"
     },
     {
         "name": "shita",
         "trans": [
-            "Below--下"
+            "Below"
         ],
         "notation": "下(した)"
     },
     {
         "name": "heta",
         "trans": [
-            "unskillful--下手"
+            "unskillful"
         ],
         "notation": "下手(へた)"
     },
     {
         "name": "usui",
         "trans": [
-            "thin,weak--薄い"
+            "thin,weak"
         ],
         "notation": "薄(うす)い"
     },
     {
         "name": "kocchi",
         "trans": [
-            "this person or way--こっち"
+            "this person or way"
         ],
         "notation": "こっち"
     },
     {
         "name": "sasu",
         "trans": [
-            "to stretch out hands, to raise an umbrella--差す"
+            "to stretch out hands, to raise an umbrella"
         ],
         "notation": "差(さ)す"
     },
     {
         "name": "tamago",
         "trans": [
-            "egg--卵"
+            "egg"
         ],
         "notation": "卵(たまご)"
     },
     {
-        "name": "choodo",
+        "name": "choudo",
         "trans": [
-            "exactly--ちょうど"
+            "exactly"
         ],
         "notation": "ちょうど"
     },
     {
         "name": "yuuhan",
         "trans": [
-            "dinner--夕飯"
+            "dinner"
         ],
         "notation": "夕飯(ゆうはん)"
     },
     {
         "name": "shitsumon",
         "trans": [
-            "Question--質問"
+            "Question"
         ],
         "notation": "質問(しつもん)"
     },
     {
         "name": "achira",
         "trans": [
-            "there--あちら"
+            "there"
         ],
         "notation": "あちら"
     },
     {
         "name": "ue",
         "trans": [
-            "on top of--上"
+            "on top of"
         ],
         "notation": "上(うえ)"
     },
     {
         "name": "dekakeru",
         "trans": [
-            "to go out--出かける"
+            "to go out"
         ],
         "notation": "出(で)かける"
     },
     {
         "name": "rainen",
         "trans": [
-            "next year--来年"
+            "next year"
         ],
         "notation": "来年(らいねん)"
     },
     {
         "name": "naku",
         "trans": [
-            "animal noise. to chirp, roar or croak etc.--鳴く"
+            "animal noise. to chirp, roar or croak etc."
         ],
         "notation": "鳴(な)く"
     },
     {
         "name": "naifu",
         "trans": [
-            "knife--ナイフ"
+            "knife"
         ],
         "notation": "ナイフ"
     },
     {
         "name": "yaru",
         "trans": [
-            "to do--やる"
+            "to do"
         ],
         "notation": "やる"
     },
     {
         "name": "sekken",
         "trans": [
-            "Economy--せっけん"
+            "Economy"
         ],
         "notation": "せっけん"
     },
     {
         "name": "iro",
         "trans": [
-            "colour--色"
+            "colour"
         ],
         "notation": "色(いろ)"
     },
     {
-        "name": "nyu-su",
+        "name": "nyuusu",
         "trans": [
-            "news--ニュース"
+            "news"
         ],
         "notation": "ニュース"
     },
     {
         "name": "iya",
         "trans": [
-            "unpleasant--嫌"
+            "unpleasant"
         ],
         "notation": "嫌(いや)"
     },
     {
-        "name": "benkyoosuru",
+        "name": "benkyou",
         "trans": [
-            "to study--勉強"
+            "to study"
         ],
         "notation": "勉強(べんきょう)"
     },
     {
-        "name": "doobutsu",
+        "name": "doubutsu",
         "trans": [
-            "animal--動物"
+            "animal"
         ],
         "notation": "動物(どうぶつ)"
     },
     {
         "name": "wasureru",
         "trans": [
-            "to forget--忘れる"
+            "to forget"
         ],
         "notation": "忘(わす)れる"
     },
     {
         "name": "chigau",
         "trans": [
-            "to differ--違う"
+            "to differ"
         ],
         "notation": "違(ちが)う"
     },
     {
         "name": "koe",
         "trans": [
-            "Voice--声"
+            "Voice"
         ],
         "notation": "声(こえ)"
     },
     {
         "name": "higashi",
         "trans": [
-            "east--東"
+            "east"
         ],
         "notation": "東(ひがし)"
     },
     {
         "name": "chizu",
         "trans": [
-            "map--地図"
+            "map"
         ],
         "notation": "地図(ちず)"
     },
     {
         "name": "hako",
         "trans": [
-            "box--箱"
+            "box"
         ],
         "notation": "箱(はこ)"
     },
     {
-        "name": "mooichido",
+        "name": "mouichido",
         "trans": [
-            "again--もう一度"
+            "again"
         ],
         "notation": "もう一度(いちど)"
     },
     {
         "name": "kiru",
         "trans": [
-            "to put on from the shoulders down--着る"
+            "to put on from the shoulders down"
         ],
         "notation": "着(き)る"
     },
     {
         "name": "ashita",
         "trans": [
-            "tomorrow--明日"
+            "tomorrow"
         ],
         "notation": "明日(あした)"
     },
     {
         "name": "ikaga",
         "trans": [
-            "how--いかが"
+            "how"
         ],
         "notation": "いかが"
     },
     {
-        "name": "mainen/maitoshi",
+        "name": "maitoshi",
         "trans": [
-            "every year--毎年"
+            "every year"
         ],
         "notation": "毎年(まいとし)"
     },
     {
         "name": "tabako",
         "trans": [
-            "tobacco,cigarettes--煙草"
+            "tobacco,cigarettes"
         ],
         "notation": "煙草(たばこ)"
     },
     {
         "name": "kabin",
         "trans": [
-            "a vase--花瓶"
+            "a vase"
         ],
         "notation": "花瓶(かびん)"
     },
     {
         "name": "hana",
         "trans": [
-            "nose--鼻"
+            "nose"
         ],
         "notation": "鼻(はな)"
     },
     {
         "name": "tsugi",
         "trans": [
-            "next--次"
+            "next"
         ],
         "notation": "次(つぎ)"
     },
     {
-        "name": "daijoobu",
+        "name": "daijoubu",
         "trans": [
-            "all right--大丈夫"
+            "all right"
         ],
         "notation": "大丈夫(だいじょうぶ)"
     },
     {
         "name": "ban",
         "trans": [
-            "evening--晩"
+            "evening"
         ],
         "notation": "晩(ばん)"
     },
     {
         "name": "eigo",
         "trans": [
-            "English language--英語"
+            "English language"
         ],
         "notation": "英語(えいご)"
     },
     {
-        "name": "iru",
+        "name": "oru",
         "trans": [
-            "to be, to have (used for people and animals)--居る"
+            "to be, to have (used for people and animals)"
         ],
         "notation": "居(お)る"
     },
     {
         "name": "ki",
         "trans": [
-            "tree, wood--木"
+            "tree, wood"
         ],
         "notation": "木(き)"
     },
     {
         "name": "kiro/kiroguramu",
         "trans": [
-            "Kilogram--キロ/キログラム"
+            "Kilogram"
         ],
         "notation": "キロ/キログラム"
     },
     {
         "name": "motsu",
         "trans": [
-            "to hold--持つ"
+            "to hold"
         ],
         "notation": "持(も)つ"
     },
     {
-        "name": "nurui",
+        "name": "nukui",
         "trans": [
-            "luke warm--温い"
+            "luke warm"
         ],
         "notation": "温(ぬく)い"
     },
     {
-        "name": "miru",
+        "name": "miru miru",
         "trans": [
-            "to see, to watch--見る 観る"
+            "to see, to watch"
         ],
         "notation": "見(み)る 観(み)る"
     },
     {
         "name": "kiiroi",
         "trans": [
-            "yellow--黄色い"
+            "yellow"
         ],
         "notation": "黄色(きいろ)い"
     },
     {
         "name": "denki",
         "trans": [
-            "electricity,electric light--電気"
+            "electricity,electric light"
         ],
         "notation": "電気(でんき)"
     },
     {
         "name": "acchi",
         "trans": [
-            "over there--あっち"
+            "over there"
         ],
         "notation": "あっち"
     },
     {
         "name": "kesa",
         "trans": [
-            "this morning--今朝"
+            "this morning"
         ],
         "notation": "今朝(けさ)"
     },
     {
         "name": "haru",
         "trans": [
-            "spring--春"
+            "spring"
         ],
         "notation": "春(はる)"
     },
     {
         "name": "natsu",
         "trans": [
-            "summer--夏"
+            "summer"
         ],
         "notation": "夏(なつ)"
     },
     {
-        "name": "hontoo",
+        "name": "hontou",
         "trans": [
-            "truth--本当"
+            "truth"
         ],
         "notation": "本当(ほんとう)"
     },
     {
         "name": "ichi",
         "trans": [
-            "one--一"
+            "one"
         ],
         "notation": "一(いち)"
     },
     {
         "name": "denwa",
         "trans": [
-            "telephone--電話"
+            "telephone"
         ],
         "notation": "電話(でんわ)"
     },
     {
         "name": "amai",
         "trans": [
-            "sweet--甘い"
+            "sweet"
         ],
         "notation": "甘(あま)い"
     },
     {
         "name": "mado",
         "trans": [
-            "window--窓"
+            "window"
         ],
         "notation": "窓(まど)"
     },
     {
         "name": "abunai",
         "trans": [
-            "dangerous--危ない"
+            "dangerous"
         ],
         "notation": "危(あぶ)ない"
     },
     {
         "name": "ja/jaa",
         "trans": [
-            "well then…--じゃ/じゃあ"
+            "well then…"
         ],
         "notation": "じゃ/じゃあ"
     },
     {
         "name": "fuku",
         "trans": [
-            "to blow--吹く"
+            "to blow"
         ],
         "notation": "吹(ふ)く"
     },
     {
-        "name": "reizooko",
+        "name": "reizouko",
         "trans": [
-            "refrigerator--冷蔵庫"
+            "refrigerator"
         ],
         "notation": "冷蔵庫(れいぞうこ)"
     },
     {
         "name": "jikan",
         "trans": [
-            "Time--時間"
+            "Time"
         ],
         "notation": "時間(じかん)"
     },
     {
-        "name": "byooin",
+        "name": "byouin",
         "trans": [
-            "hospital--病院"
+            "hospital"
         ],
         "notation": "病院(びょういん)"
     },
     {
         "name": "fuyu",
         "trans": [
-            "winter--冬"
+            "winter"
         ],
         "notation": "冬(ふゆ)"
     },
     {
-        "name": "kopi-suru",
+        "name": "kopiisuru",
         "trans": [
-            "to copy--コピーする"
+            "to copy"
         ],
         "notation": "コピーする"
     },
     {
         "name": "rajio",
         "trans": [
-            "radio--ラジオ"
+            "radio"
         ],
         "notation": "ラジオ"
     },
     {
-        "name": "akarui",
+        "name": "akai",
         "trans": [
-            "bright--明い"
+            "bright"
         ],
         "notation": "明(あか)い"
     },
     {
         "name": "atsui",
         "trans": [
-            "hot--暑い"
+            "hot"
         ],
         "notation": "暑(あつ)い"
     },
     {
         "name": "mise",
         "trans": [
-            "shop--店"
+            "shop"
         ],
         "notation": "店(みせ)"
     },
     {
         "name": "gaikokujin",
         "trans": [
-            "Foreigner--外国人"
+            "Foreigner"
         ],
         "notation": "外国(がいこく)人(じん)"
     },
     {
         "name": "hidari",
         "trans": [
-            "left hand side--左"
+            "left hand side"
         ],
         "notation": "左(ひだり)"
     },
     {
         "name": "hankachi",
         "trans": [
-            "handkerchief--ハンカチ"
+            "handkerchief"
         ],
         "notation": "ハンカチ"
     },
     {
-        "name": "karenda-",
+        "name": "karendaa",
         "trans": [
-            "calendar--カレンダー"
+            "calendar"
         ],
         "notation": "カレンダー"
     },
     {
-        "name": "mukoo",
+        "name": "mukou",
         "trans": [
-            "over there--向こう"
+            "over there"
         ],
         "notation": "向(む)こう"
     },
     {
         "name": "yuki",
         "trans": [
-            "snow--雪"
+            "snow"
         ],
         "notation": "雪(ゆき)"
     },
     {
         "name": "shigoto",
         "trans": [
-            "Job--仕事"
+            "Job"
         ],
         "notation": "仕事(しごと)"
     },
     {
         "name": "okane",
         "trans": [
-            "money--お金"
+            "money"
         ],
         "notation": "お金(かね)"
     },
     {
         "name": "waishatsu",
         "trans": [
-            "business shirt--ワイシャツ"
+            "business shirt"
         ],
         "notation": "ワイシャツ"
     },
     {
         "name": "chiisai",
         "trans": [
-            "little--小さい"
+            "little"
         ],
         "notation": "小(ちい)さい"
     },
     {
         "name": "toriniku",
         "trans": [
-            "chicken meat--とり肉"
+            "chicken meat"
         ],
         "notation": "とり肉(にく)"
     },
     {
         "name": "gogo",
         "trans": [
-            "afternoon--午後"
+            "afternoon"
         ],
         "notation": "午後(ごご)"
     },
     {
         "name": "hare",
         "trans": [
-            "clear weather--晴れ"
+            "clear weather"
         ],
         "notation": "晴(は)れ"
     },
     {
         "name": "ikura",
         "trans": [
-            "how much?--いくら"
+            "how much?"
         ],
         "notation": "いくら"
     },
     {
-        "name": "pa-ti-",
+        "name": "paatii",
         "trans": [
-            "party--パーティー"
+            "party"
         ],
         "notation": "パーティー"
     },
     {
         "name": "tanoshii",
         "trans": [
-            "enjoyable--楽しい"
+            "enjoyable"
         ],
         "notation": "楽(たの)しい"
     },
     {
-        "name": "no-to",
+        "name": "nouto",
         "trans": [
-            "notebook,exercise book--ノート"
+            "notebook,exercise book"
         ],
         "notation": "ノート"
     },
     {
         "name": "aka",
         "trans": [
-            "red--赤"
+            "red"
         ],
         "notation": "赤(あか)"
     },
     {
         "name": "hajimaru",
         "trans": [
-            "to begin--始まる"
+            "to begin"
         ],
         "notation": "始(はじ)まる"
     },
     {
         "name": "yasumi",
         "trans": [
-            "rest,holiday--休み"
+            "rest,holiday"
         ],
         "notation": "休(やす)み"
     },
     {
         "name": "dochira",
         "trans": [
-            "which of two--どちら"
+            "which of two"
         ],
         "notation": "どちら"
     },
     {
-        "name": "aku",
+        "name": "hiraku",
         "trans": [
-            "to open, to become open--開く"
+            "to open, to become open"
         ],
         "notation": "開(ひら)く"
     },
     {
         "name": "ie",
         "trans": [
-            "house--家"
+            "house"
         ],
         "notation": "家(いえ)"
     },
     {
         "name": "neko",
         "trans": [
-            "cat--猫"
+            "cat"
         ],
         "notation": "猫(ねこ)"
     },
     {
         "name": "hayai",
         "trans": [
-            "early--早い"
+            "early"
         ],
         "notation": "早(はや)い"
     },
     {
-        "name": "minna",
+        "name": "mina",
         "trans": [
-            "everyone--皆"
+            "everyone"
         ],
         "notation": "皆(みな)"
     },
     {
         "name": "migaku",
         "trans": [
-            "to brush teeth, to polish--磨く"
+            "to brush teeth, to polish"
         ],
         "notation": "磨(みが)く"
     },
     {
         "name": "oniisan",
         "trans": [
-            "(honorable) older brother--お兄さん"
+            "(honorable) older brother"
         ],
         "notation": "お兄(にい)さん"
     },
     {
         "name": "suguni",
         "trans": [
-            "Instantly--すぐに"
+            "Instantly"
         ],
         "notation": "すぐに"
     },
     {
         "name": "atsui",
         "trans": [
-            "kind, deep, thick--厚い"
+            "kind, deep, thick"
         ],
         "notation": "厚(あつ)い"
     },
     {
         "name": "bangohan",
         "trans": [
-            "evening meal--晩御飯"
+            "evening meal"
         ],
         "notation": "晩(ばん)御飯(ごはん)"
     },
     {
         "name": "asagohan",
         "trans": [
-            "breakfast--朝御飯"
+            "breakfast"
         ],
         "notation": "朝(あさ)御飯(ごはん)"
     },
     {
         "name": "tesuto",
         "trans": [
-            "test--テスト"
+            "test"
         ],
         "notation": "テスト"
     },
     {
-        "name": "nan/nani",
+        "name": "nani",
         "trans": [
-            "what--何"
+            "what"
         ],
         "notation": "何(なに)"
     },
     {
         "name": "totemo",
         "trans": [
-            "very--とても"
+            "very"
         ],
         "notation": "とても"
     },
     {
         "name": "ao",
         "trans": [
-            "blue--青"
+            "blue"
         ],
         "notation": "青(あお)"
     },
     {
         "name": "oyogu",
         "trans": [
-            "to swim--泳ぐ"
+            "to swim"
         ],
         "notation": "泳(およ)ぐ"
     },
     {
         "name": "issho",
         "trans": [
-            "together--一緒"
+            "together"
         ],
         "notation": "一緒(いっしょ)"
     },
     {
         "name": "naraberu",
         "trans": [
-            "to line up,to set up--並べる"
+            "to line up,to set up"
         ],
         "notation": "並(なら)べる"
     },
     {
         "name": "sebiro",
         "trans": [
-            "business suit--背広"
+            "business suit"
         ],
         "notation": "背広(せびろ)"
     },
     {
         "name": "hai",
         "trans": [
-            "yes--はい"
+            "yes"
         ],
         "notation": "はい"
     },
     {
-        "name": "koocha",
+        "name": "koucha",
         "trans": [
-            "black tea--紅茶"
+            "black tea"
         ],
         "notation": "紅茶(こうちゃ)"
     },
     {
         "name": "ane",
         "trans": [
-            "(humble) older sister--姉"
+            "(humble) older sister"
         ],
         "notation": "姉(あね)"
     },
     {
-        "name": "satoo",
+        "name": "satou",
         "trans": [
-            "Sugar--砂糖"
+            "Sugar"
         ],
         "notation": "砂糖(さとう)"
     },
     {
         "name": "shiro",
         "trans": [
-            "White--白"
+            "White"
         ],
         "notation": "白(しろ)"
     },
     {
-        "name": "sooshite/soshite",
+        "name": "soushite/soshite",
         "trans": [
-            "And--そうして/そして"
+            "And"
         ],
         "notation": "そうして/そして"
     },
     {
         "name": "wakaru",
         "trans": [
-            "to be understood--分かる"
+            "to be understood"
         ],
         "notation": "分(わ)かる"
     },
     {
         "name": "haku",
         "trans": [
-            "to wear,to put on trousers--はく"
+            "to wear,to put on trousers"
         ],
         "notation": "はく"
     },
     {
-        "name": "ryooshin",
+        "name": "ryoushin",
         "trans": [
-            "both parents--両親"
+            "both parents"
         ],
         "notation": "両親(りょうしん)"
     },
     {
         "name": "asa",
         "trans": [
-            "morning--朝"
+            "morning"
         ],
         "notation": "朝(あさ)"
     },
     {
         "name": "doa",
         "trans": [
-            "Western style door--ドア"
+            "Western style door"
         ],
         "notation": "ドア"
     },
     {
         "name": "sensei",
         "trans": [
-            "teacher, doctor--先生"
+            "teacher, doctor"
         ],
         "notation": "先生(せんせい)"
     },
     {
         "name": "ookii",
         "trans": [
-            "big--大きい"
+            "big"
         ],
         "notation": "大(おお)きい"
     },
     {
-        "name": "gita-",
+        "name": "gitaa",
         "trans": [
-            "Guitar--ギター"
+            "Guitar"
         ],
         "notation": "ギター"
     },
     {
         "name": "shouyu",
         "trans": [
-            "soy sauce--醤油"
+            "soy sauce"
         ],
         "notation": "醤油(しょうゆ)"
     },
     {
         "name": "koppu",
         "trans": [
-            "cop, police officer--コップ"
+            "cop, police officer"
         ],
         "notation": "コップ"
     },
     {
         "name": "keikan",
         "trans": [
-            "policeman--警官"
+            "policeman"
         ],
         "notation": "警官(けいかん)"
     },
     {
-        "name": "kyuu / ku",
+        "name": "kyuu",
         "trans": [
-            "Nine--九"
+            "Nine"
         ],
         "notation": "九(きゅう)"
     },
     {
         "name": "kau",
         "trans": [
-            "to buy--買う"
+            "to buy"
         ],
         "notation": "買(か)う"
     },
     {
         "name": "macchi",
         "trans": [
-            "match--マッチ"
+            "match"
         ],
         "notation": "マッチ"
     },
     {
         "name": "deru",
         "trans": [
-            "to appear,to leave--出る"
+            "to appear,to leave"
         ],
         "notation": "出(で)る"
     },
     {
         "name": "narabu",
         "trans": [
-            "to line up,to stand in a line--並ぶ"
+            "to line up,to stand in a line"
         ],
         "notation": "並(なら)ぶ"
     },
     {
-        "name": "soojisuru",
+        "name": "souji",
         "trans": [
-            "to clean, to sweep--掃除"
+            "to clean, to sweep"
         ],
         "notation": "掃除(そうじ)"
     },
     {
         "name": "ongaku",
         "trans": [
-            "Music--音楽"
+            "Music"
         ],
         "notation": "音楽(おんがく)"
     },
     {
         "name": "rajikase / rajiokasetto",
         "trans": [
-            "radio cassette player--ラジカセ / ラジオカセット"
+            "radio cassette player"
         ],
         "notation": "ラジカセ / ラジオカセット"
     },
     {
         "name": "nomimono",
         "trans": [
-            "a drink--飲み物"
+            "a drink"
         ],
         "notation": "飲(の)み物(もの)"
     },
     {
         "name": "itsumo",
         "trans": [
-            "always--いつも"
+            "always"
         ],
         "notation": "いつも"
     },
     {
         "name": "ike",
         "trans": [
-            "pond--池"
+            "pond"
         ],
         "notation": "池(いけ)"
     },
     {
         "name": "kaimono",
         "trans": [
-            "Shopping--買い物"
+            "Shopping"
         ],
         "notation": "買(か)い物(もの)"
     },
     {
-        "name": "yoofuku",
+        "name": "youfuku",
         "trans": [
-            "western-style clothes--洋服"
+            "western-style clothes"
         ],
         "notation": "洋服(ようふく)"
     },
     {
         "name": "soko",
         "trans": [
-            "that place--そこ"
+            "that place"
         ],
         "notation": "そこ"
     },
     {
-        "name": "suto-bu",
+        "name": "sutoubu",
         "trans": [
-            "Heater--ストーブ"
+            "Heater"
         ],
         "notation": "ストーブ"
     },
     {
-        "name": "yuube",
+        "name": "sakuya",
         "trans": [
-            "last night--昨夜"
+            "last night"
         ],
         "notation": "昨夜(さくや)"
     },
     {
         "name": "raigetsu",
         "trans": [
-            "next month--来月"
+            "next month"
         ],
         "notation": "来月(らいげつ)"
     },
     {
         "name": "umi",
         "trans": [
-            "sea--海"
+            "sea"
         ],
         "notation": "海(うみ)"
     },
     {
         "name": "kippu",
         "trans": [
-            "Ticket--切符"
+            "Ticket"
         ],
         "notation": "切符(きっぷ)"
     },
     {
-        "name": "yokka",
+        "name": "yonnichi",
         "trans": [
-            "four days, fouth day of the month--四日"
+            "four days, fouth day of the month"
         ],
         "notation": "四(よん)日(にち)"
     },
     {
-        "name": "tooi",
+        "name": "toui",
         "trans": [
-            "far--遠い"
+            "far"
         ],
         "notation": "遠(とお)い"
     },
     {
         "name": "sono",
         "trans": [
-            "That--その"
+            "That"
         ],
         "notation": "その"
     },
     {
-        "name": "getsuyoobi",
+        "name": "getsuyoubi",
         "trans": [
-            "Monday--月曜日"
+            "Monday"
         ],
         "notation": "月曜日(げつようび)"
     },
     {
-        "name": "sanposuru",
+        "name": "sanpo",
         "trans": [
-            "to stroll--散歩"
+            "to stroll"
         ],
         "notation": "散歩(さんぽ)"
     },
     {
         "name": "chikatetsu",
         "trans": [
-            "underground train--地下鉄"
+            "underground train"
         ],
         "notation": "地下鉄(ちかてつ)"
     },
     {
-        "name": "ojisan",
+        "name": "oji/oji",
         "trans": [
-            "uncle, middle aged gentleman--伯父/叔父"
+            "uncle, middle aged gentleman"
         ],
         "notation": "伯父(おじ)/叔父(おじ)"
     },
     {
         "name": "itai",
         "trans": [
-            "painful--痛い"
+            "painful"
         ],
         "notation": "痛(いた)い"
     },
     {
         "name": "isu",
         "trans": [
-            "chair--いす"
+            "chair"
         ],
         "notation": "いす"
     },
     {
         "name": "tobu",
         "trans": [
-            "to fly,to hop--飛ぶ"
+            "to fly,to hop"
         ],
         "notation": "飛(と)ぶ"
     },
     {
-        "name": "yooka",
+        "name": "hachinichi",
         "trans": [
-            "eight days, eighth day of the month--八日"
+            "eight days, eighth day of the month"
         ],
         "notation": "八(はち)日(にち)"
     },
     {
         "name": "jibun",
         "trans": [
-            "Oneself--自分"
+            "Oneself"
         ],
         "notation": "自分(じぶん)"
     },
     {
         "name": "narau",
         "trans": [
-            "to learn--習う"
+            "to learn"
         ],
         "notation": "習(なら)う"
     },
     {
         "name": "sen",
         "trans": [
-            "Thousand--千"
+            "Thousand"
         ],
         "notation": "千(せん)"
     },
     {
         "name": "samui",
         "trans": [
-            "Cold--寒い"
+            "Cold"
         ],
         "notation": "寒(さむ)い"
     },
     {
         "name": "ii/yoi",
         "trans": [
-            "good--いい/よい"
+            "good"
         ],
         "notation": "いい/よい"
     },
     {
         "name": "tokei",
         "trans": [
-            "watch,clock--時計"
+            "watch,clock"
         ],
         "notation": "時計(とけい)"
     },
     {
-        "name": "kooto",
+        "name": "kouto",
         "trans": [
-            "coat, tennis court--コート"
+            "coat, tennis court"
         ],
         "notation": "コート"
     },
     {
-        "name": "ryokoo",
+        "name": "ryokou",
         "trans": [
-            "travel--旅行"
+            "travel"
         ],
         "notation": "旅行(りょこう)"
     },
     {
         "name": "konban",
         "trans": [
-            "this evening--今晩"
+            "this evening"
         ],
         "notation": "今晩(こんばん)"
     },
     {
         "name": "hareru",
         "trans": [
-            "to be sunny--晴れる"
+            "to be sunny"
         ],
         "notation": "晴(は)れる"
     },
     {
         "name": "petto",
         "trans": [
-            "pet--ペット"
+            "pet"
         ],
         "notation": "ペット"
     },
     {
-        "name": "renshuusuru",
+        "name": "renshuu",
         "trans": [
-            "to practice--練習"
+            "to practice"
         ],
         "notation": "練習(れんしゅう)"
     },
     {
         "name": "sorekara",
         "trans": [
-            "after that--それから"
+            "after that"
         ],
         "notation": "それから"
     },
     {
         "name": "oshieru",
         "trans": [
-            "to teach, to tell--教える"
+            "to teach, to tell"
         ],
         "notation": "教(おし)える"
     },
     {
         "name": "tokidoki",
         "trans": [
-            "sometimes--時々"
+            "sometimes"
         ],
         "notation": "時々(ときどき)"
     },
     {
         "name": "poketto",
         "trans": [
-            "pocket--ポケット"
+            "pocket"
         ],
         "notation": "ポケット"
     },
     {
         "name": "watashi",
         "trans": [
-            "I,myself--私"
+            "I,myself"
         ],
         "notation": "私(わたし)"
     },
     {
         "name": "koko",
         "trans": [
-            "Here--ここ"
+            "Here"
         ],
         "notation": "ここ"
     },
     {
-        "name": "kiro/kirome-toru",
+        "name": "kiro/kiromeetoru",
         "trans": [
-            "Kilometer--キロ/キロメートル"
+            "Kilometer"
         ],
         "notation": "キロ/キロメートル"
     },
     {
         "name": "kongetsu",
         "trans": [
-            "this month--今月"
+            "this month"
         ],
         "notation": "今月(こんげつ)"
     },
     {
         "name": "hiku",
         "trans": [
-            "to play an instrument with strings, including piano--弾く"
+            "to play an instrument with strings, including piano"
         ],
         "notation": "弾(ひ)く"
     },
     {
         "name": "hon",
         "trans": [
-            "book--本"
+            "book"
         ],
         "notation": "本(ほん)"
     },
     {
         "name": "me",
         "trans": [
-            "eye--目"
+            "eye"
         ],
         "notation": "目(め)"
     },
     {
         "name": "ikutsu",
         "trans": [
-            "how many?,how old?--いくつ"
+            "how many?,how old?"
         ],
         "notation": "いくつ"
     },
     {
         "name": "yukkurito",
         "trans": [
-            "slowly--ゆっくりと"
+            "slowly"
         ],
         "notation": "ゆっくりと"
     },
     {
-        "name": "hitotsuki",
+        "name": "ichigatsu",
         "trans": [
-            "one month--一月"
+            "one month"
         ],
         "notation": "一月(いちがつ)"
     },
     {
         "name": "kyonen",
         "trans": [
-            "last year--去年"
+            "last year"
         ],
         "notation": "去年(きょねん)"
     },
     {
         "name": "tate",
         "trans": [
-            "length,height--たて"
+            "length,height"
         ],
         "notation": "たて"
     },
     {
         "name": "kappu",
         "trans": [
-            "Cup--カップ"
+            "Cup"
         ],
         "notation": "カップ"
     },
     {
         "name": "kochira",
         "trans": [
-            "this person or way--こちら"
+            "this person or way"
         ],
         "notation": "こちら"
     },
     {
         "name": "natsuyasumi",
         "trans": [
-            "summer holiday--夏休み"
+            "summer holiday"
         ],
         "notation": "夏休(なつやす)み"
     },
     {
         "name": "iroiro",
         "trans": [
-            "various--いろいろ"
+            "various"
         ],
         "notation": "いろいろ"
     },
     {
         "name": "kuru",
         "trans": [
-            "to come--来る"
+            "to come"
         ],
         "notation": "来(く)る"
     },
     {
-        "name": "mikka",
+        "name": "sannichi",
         "trans": [
-            "three days, third day of the month--三日"
+            "three days, third day of the month"
         ],
         "notation": "三(さん)日(にち)"
     },
     {
         "name": "osoi",
         "trans": [
-            "late, slow--遅い"
+            "late, slow"
         ],
         "notation": "遅(おそ)い"
     },
     {
         "name": "owaru",
         "trans": [
-            "to finish--終る"
+            "to finish"
         ],
         "notation": "終(おわ)る"
     },
     {
-        "name": "shawa-",
+        "name": "shawaa",
         "trans": [
-            "Shower--シャワー"
+            "Shower"
         ],
         "notation": "シャワー"
     },
     {
         "name": "ooi",
         "trans": [
-            "many--多い"
+            "many"
         ],
         "notation": "多(おお)い"
     },
     {
-        "name": "otoosan",
+        "name": "otousan",
         "trans": [
-            "(honorable) father--お父さん"
+            "(honorable) father"
         ],
         "notation": "お父(とう)さん"
     },
     {
         "name": "seito",
         "trans": [
-            "Pupil--生徒"
+            "Pupil"
         ],
         "notation": "生徒(せいと)"
     },
     {
         "name": "kariru",
         "trans": [
-            "to borrow--借りる"
+            "to borrow"
         ],
         "notation": "借(か)りる"
     },
     {
         "name": "daigaku",
         "trans": [
-            "university--大学"
+            "university"
         ],
         "notation": "大学(だいがく)"
     },
     {
-        "name": "doyoobi",
+        "name": "doyoubi",
         "trans": [
-            "Saturday--土曜日"
+            "Saturday"
         ],
         "notation": "土曜日(どようび)"
     },
     {
         "name": "nishi",
         "trans": [
-            "west--西"
+            "west"
         ],
         "notation": "西(にし)"
     },
     {
-        "name": "kayoobi",
+        "name": "kayoubi",
         "trans": [
-            "Tuesday--火曜日"
+            "Tuesday"
         ],
         "notation": "火曜日(かようび)"
     },
     {
         "name": "joubu",
         "trans": [
-            "strong, durable--丈夫"
+            "strong, durable"
         ],
         "notation": "丈夫(じょうぶ)"
     },
     {
-        "name": "doomo",
+        "name": "doumo",
         "trans": [
-            "thanks--どうも"
+            "thanks"
         ],
         "notation": "どうも"
     },
     {
         "name": "yasai",
         "trans": [
-            "vegetable--野菜"
+            "vegetable"
         ],
         "notation": "野菜(やさい)"
     },
     {
         "name": "otearai",
         "trans": [
-            "bathroom--お手洗い"
+            "bathroom"
         ],
         "notation": "お手洗(てあら)い"
     },
     {
         "name": "kanji",
         "trans": [
-            "Chinese character--漢字"
+            "Chinese character"
         ],
         "notation": "漢字(かんじ)"
     },
     {
         "name": "nigiyaka",
         "trans": [
-            "bustling,busy--賑やか"
+            "bustling,busy"
         ],
         "notation": "賑(にぎ)やか"
     },
     {
         "name": "hana",
         "trans": [
-            "flower--花"
+            "flower"
         ],
         "notation": "花(はな)"
     },
     {
         "name": "otoko",
         "trans": [
-            "Man--男"
+            "Man"
         ],
         "notation": "男(おとこ)"
     },
     {
-        "name": "ryoori",
+        "name": "ryouri",
         "trans": [
-            "cuisine--料理"
+            "cuisine"
         ],
         "notation": "料理(りょうり)"
     },
     {
         "name": "shimaru",
         "trans": [
-            "to close, to be closed--閉まる"
+            "to close, to be closed"
         ],
         "notation": "閉(し)まる"
     },
     {
         "name": "muttsu",
         "trans": [
-            "six--六つ"
+            "six"
         ],
         "notation": "六(むっ)つ"
     },
     {
         "name": "furo",
         "trans": [
-            "bath--ふろ"
+            "bath"
         ],
         "notation": "ふろ"
     },
     {
         "name": "rippa",
         "trans": [
-            "splendid--立派"
+            "splendid"
         ],
         "notation": "立派(りっぱ)"
     },
     {
         "name": "karui",
         "trans": [
-            "Light--軽い"
+            "Light"
         ],
         "notation": "軽(かる)い"
     },
     {
         "name": "toire",
         "trans": [
-            "toilet--トイレ"
+            "toilet"
         ],
         "notation": "トイレ"
     },
     {
         "name": "hyaku",
         "trans": [
-            "hundred--百"
+            "hundred"
         ],
         "notation": "百(ひゃく)"
     },
     {
-        "name": "kata",
+        "name": "hou",
         "trans": [
-            "person, way of doing--方"
+            "person, way of doing"
         ],
         "notation": "方(ほう)"
     },
     {
         "name": "kutsu",
         "trans": [
-            "Shoes--靴"
+            "Shoes"
         ],
         "notation": "靴(くつ)"
     },
     {
         "name": "shizuka",
         "trans": [
-            "Quiet--静か"
+            "Quiet"
         ],
         "notation": "静(しず)か"
     },
     {
         "name": "shatsu",
         "trans": [
-            "Shirt--シャツ"
+            "Shirt"
         ],
         "notation": "シャツ"
     },
     {
         "name": "kusuri",
         "trans": [
-            "medicine--薬"
+            "medicine"
         ],
         "notation": "薬(くすり)"
     },
     {
         "name": "omoshiroi",
         "trans": [
-            "Interesting--面おも白しろい"
+            "Interesting"
         ],
-        "notation": "面(めん)おも白(しろ)しろい"
+        "notation": "面(おも)白(しろ)い"
     },
     {
         "name": "itsu",
         "trans": [
-            "when--いつ"
+            "when"
         ],
         "notation": "いつ"
     },
     {
         "name": "komaru",
         "trans": [
-            "to be worried--困る"
+            "to be worried"
         ],
         "notation": "困(こま)る"
     },
     {
         "name": "osake",
         "trans": [
-            "alcohol, rice wine--お酒"
+            "alcohol, rice wine"
         ],
         "notation": "お酒(さけ)"
     },
     {
         "name": "okashi",
         "trans": [
-            "sweets, candy--お菓子"
+            "sweets, candy"
         ],
         "notation": "お菓子(かし)"
     },
     {
         "name": "kurai",
         "trans": [
-            "Gloomy--暗い"
+            "Gloomy"
         ],
         "notation": "暗(くら)い"
     },
     {
         "name": "tenki",
         "trans": [
-            "weather--天気"
+            "weather"
         ],
         "notation": "天気(てんき)"
     },
     {
         "name": "tsukue",
         "trans": [
-            "desk--机"
+            "desk"
         ],
         "notation": "机(つくえ)"
     },
     {
         "name": "surippa",
         "trans": [
-            "Slippers--スリッパ"
+            "Slippers"
         ],
         "notation": "スリッパ"
     },
     {
         "name": "utau",
         "trans": [
-            "to sing--歌う"
+            "to sing"
         ],
         "notation": "歌(うた)う"
     },
     {
         "name": "hanasu",
         "trans": [
-            "to speak--話す"
+            "to speak"
         ],
         "notation": "話(はな)す"
     },
     {
         "name": "e",
         "trans": [
-            "picture--絵"
+            "picture"
         ],
         "notation": "絵(え)"
     },
     {
         "name": "ee",
         "trans": [
-            "yes--ええ"
+            "yes"
         ],
         "notation": "ええ"
     },
     {
         "name": "yattsu",
         "trans": [
-            "eight--八つ"
+            "eight"
         ],
         "notation": "八(やっ)つ"
     },
     {
         "name": "mazui",
         "trans": [
-            "unpleasant--不味い"
+            "unpleasant"
         ],
         "notation": "不味(まず)い"
     },
     {
-        "name": "booshi",
+        "name": "boushi",
         "trans": [
-            "hat--帽子"
+            "hat"
         ],
         "notation": "帽子(ぼうし)"
     },
     {
         "name": "noboru",
         "trans": [
-            "to climb--登る"
+            "to climb"
         ],
         "notation": "登(のぼ)る"
     },
     {
         "name": "roku",
         "trans": [
-            "six--六"
+            "six"
         ],
         "notation": "六(ろく)"
     },
     {
         "name": "ni",
         "trans": [
-            "two--二"
+            "two"
         ],
         "notation": "二(に)"
     },
     {
         "name": "chikaku",
         "trans": [
-            "near--近く"
+            "near"
         ],
         "notation": "近(ちか)く"
     },
     {
         "name": "kuni",
         "trans": [
-            "Country--国"
+            "Country"
         ],
         "notation": "国(くに)"
     },
     {
         "name": "kirei",
         "trans": [
-            "pretty, clean--綺麗"
+            "pretty, clean"
         ],
         "notation": "綺麗(きれい)"
     },
     {
-        "name": "te-pu rekooda-",
+        "name": "teepurekoudaa",
         "trans": [
-            "tape recorder--テープレコーダー"
+            "tape recorder"
         ],
         "notation": "テープレコーダー"
     },
     {
         "name": "hoteru",
         "trans": [
-            "hotel--ホテル"
+            "hotel"
         ],
         "notation": "ホテル"
     },
     {
         "name": "atatakai",
         "trans": [
-            "warm--暖かい"
+            "warm"
         ],
         "notation": "暖(あたた)かい"
     },
     {
-        "name": "soredeha",
+        "name": "soredewa",
         "trans": [
-            "in that situation--それでは"
+            "in that situation"
         ],
         "notation": "それでは"
     },
     {
         "name": "osu",
         "trans": [
-            "to push, to stamp something--押す"
+            "to push, to stamp something"
         ],
         "notation": "押(お)す"
     },
     {
-        "name": "shokudoo",
+        "name": "shokudou",
         "trans": [
-            "dining hall--食堂"
+            "dining hall"
         ],
         "notation": "食堂(しょくどう)"
     },
     {
         "name": "kiiro",
         "trans": [
-            "yellow--黄色"
+            "yellow"
         ],
         "notation": "黄色(きいろ)"
     },
     {
         "name": "kiku",
         "trans": [
-            "to hear, to listen to, to ask--聞く"
+            "to hear, to listen to, to ask"
         ],
         "notation": "聞(き)く"
     },
     {
         "name": "suki",
         "trans": [
-            "Likeable--好き"
+            "Likeable"
         ],
         "notation": "好(す)き"
     },
     {
-        "name": "ojiisan",
+        "name": "oji/oji",
         "trans": [
-            "grandfather, male senior citizen--伯父/叔父"
+            "grandfather, male senior citizen"
         ],
         "notation": "伯父(おじ)/叔父(おじ)"
     },
     {
-        "name": "itsuka",
+        "name": "gonichi",
         "trans": [
-            "five days, fifth day--五日"
+            "five days, fifth day"
         ],
         "notation": "五(ご)日(にち)"
     },
     {
         "name": "saku",
         "trans": [
-            "to bloom--咲く"
+            "to bloom"
         ],
         "notation": "咲(さ)く"
     },
     {
         "name": "kesu",
         "trans": [
-            "to erase, to turn off power--消す"
+            "to erase, to turn off power"
         ],
         "notation": "消(け)す"
     },
     {
         "name": "nimotsu",
         "trans": [
-            "luggage--荷物"
+            "luggage"
         ],
         "notation": "荷物(にもつ)"
     },
     {
         "name": "mainichi",
         "trans": [
-            "every day--毎日"
+            "every day"
         ],
         "notation": "毎日(まいにち)"
     },
     {
         "name": "isha",
         "trans": [
-            "medical doctor--医者"
+            "medical doctor"
         ],
         "notation": "医者(いしゃ)"
     },
     {
         "name": "nagai",
         "trans": [
-            "long--長い"
+            "long"
         ],
         "notation": "長(なが)い"
     },
     {
         "name": "gyuunyuu",
         "trans": [
-            "Milk--牛乳"
+            "Milk"
         ],
         "notation": "牛乳(ぎゅうにゅう)"
     },
     {
         "name": "ocha",
         "trans": [
-            "green tea--お茶"
+            "green tea"
         ],
         "notation": "お茶(ちゃ)"
     },
     {
         "name": "takai",
         "trans": [
-            "tall, expensive--高い"
+            "tall, expensive"
         ],
         "notation": "高(たか)い"
     },
     {
-        "name": "ototoshi",
+        "name": "issakunen",
         "trans": [
-            "year before last--一昨年"
+            "year before last"
         ],
         "notation": "一昨年(いっさくねん)"
     },
     {
         "name": "shukudai",
         "trans": [
-            "homework--宿題"
+            "homework"
         ],
         "notation": "宿題(しゅくだい)"
     },
     {
         "name": "aru",
         "trans": [
-            "to be,to have (used for inanimate objects)--ある"
+            "to be,to have (used for inanimate objects)"
         ],
         "notation": "ある"
     },
     {
-        "name": "deguchi",
+        "name": "ideguchi",
         "trans": [
-            "exit--出口"
+            "exit"
         ],
         "notation": "出口(いでぐち)"
     },
     {
         "name": "saki",
         "trans": [
-            "the future, previous--先"
+            "the future, previous"
         ],
         "notation": "先(さき)"
     },
     {
         "name": "ame",
         "trans": [
-            "rain--雨"
+            "rain"
         ],
         "notation": "雨(あめ)"
     },
     {
         "name": "noru",
         "trans": [
-            "to get on,to ride--乗る"
+            "to get on,to ride"
         ],
         "notation": "乗(の)る"
     },
     {
-        "name": "byooki",
+        "name": "byouki",
         "trans": [
-            "illness--病気"
+            "illness"
         ],
         "notation": "病気(びょうき)"
     },
     {
         "name": "tokoro",
         "trans": [
-            "place--所"
+            "place"
         ],
         "notation": "所(ところ)"
     },
     {
         "name": "aruku",
         "trans": [
-            "to walk--歩く"
+            "to walk"
         ],
         "notation": "歩(ある)く"
     },
     {
         "name": "tsumetai",
         "trans": [
-            "cold to the touch--冷たい"
+            "cold to the touch"
         ],
         "notation": "冷(つめ)たい"
     },
     {
         "name": "kitanai",
         "trans": [
-            "Dirty--汚い"
+            "Dirty"
         ],
         "notation": "汚(きたな)い"
     },
     {
         "name": "hayai",
         "trans": [
-            "quick--速い"
+            "quick"
         ],
         "notation": "速(はや)い"
     },
     {
-        "name": "kooen",
+        "name": "kouen",
         "trans": [
-            "Park--公園"
+            "Park"
         ],
         "notation": "公園(こうえん)"
     },
     {
         "name": "kumoru",
         "trans": [
-            "to become cloudy, to become dim--曇る"
+            "to become cloudy, to become dim"
         ],
         "notation": "曇(くも)る"
     },
     {
         "name": "shiru",
         "trans": [
-            "to know--知る"
+            "to know"
         ],
         "notation": "知(し)る"
     },
     {
         "name": "ha",
         "trans": [
-            "tooth--歯"
+            "tooth"
         ],
         "notation": "歯(は)"
     },
     {
         "name": "onna",
         "trans": [
-            "Woman--女"
+            "Woman"
         ],
         "notation": "女(おんな)"
     },
     {
         "name": "taishikan",
         "trans": [
-            "embassy--大使館"
+            "embassy"
         ],
         "notation": "大使館(たいしかん)"
     },
     {
-        "name": "supu-n",
+        "name": "supuun",
         "trans": [
-            "Spoon--スプーン"
+            "Spoon"
         ],
         "notation": "スプーン"
     },
     {
         "name": "hondana",
         "trans": [
-            "bookshelves--本棚"
+            "bookshelves"
         ],
         "notation": "本棚(ほんだな)"
     },
     {
         "name": "zero",
         "trans": [
-            "Zero--ゼロ"
+            "Zero"
         ],
         "notation": "ゼロ"
     },
     {
         "name": "terebi",
         "trans": [
-            "television--テレビ"
+            "television"
         ],
         "notation": "テレビ"
     },
     {
         "name": "warui",
         "trans": [
-            "bad--悪い"
+            "bad"
         ],
         "notation": "悪(わる)い"
     },
     {
         "name": "tsukeru",
         "trans": [
-            "to turn on--つける"
+            "to turn on"
         ],
         "notation": "つける"
     },
     {
         "name": "isogashii",
         "trans": [
-            "busy, irritated--忙しい"
+            "busy, irritated"
         ],
         "notation": "忙(いそが)しい"
     },
     {
         "name": "anata",
         "trans": [
-            "you--あなた"
+            "you"
         ],
         "notation": "あなた"
     },
     {
         "name": "to",
         "trans": [
-            "Japanese style door--戸"
+            "Japanese style door"
         ],
         "notation": "戸(と)"
     },
     {
-        "name": "dooshite",
+        "name": "doushite",
         "trans": [
-            "for what reason--どうして"
+            "for what reason"
         ],
         "notation": "どうして"
     },
     {
         "name": "okaasan",
         "trans": [
-            "(honorable) mother--お母さん"
+            "(honorable) mother"
         ],
         "notation": "お母(かあ)さん"
     },
     {
         "name": "kamera",
         "trans": [
-            "camera--カメラ"
+            "camera"
         ],
         "notation": "カメラ"
     },
     {
         "name": "kodomo",
         "trans": [
-            "Child--子供"
+            "Child"
         ],
         "notation": "子供(こども)"
     },
     {
         "name": "sora",
         "trans": [
-            "Sky--空"
+            "Sky"
         ],
         "notation": "空(そら)"
     },
     {
         "name": "tegami",
         "trans": [
-            "letter--手紙"
+            "letter"
         ],
         "notation": "手紙(てがみ)"
     },
     {
         "name": "uta",
         "trans": [
-            "song--歌"
+            "song"
         ],
         "notation": "歌(うた)"
     },
     {
         "name": "kekkon",
         "trans": [
-            "Marriage--結婚"
+            "Marriage"
         ],
         "notation": "結婚(けっこん)"
     },
     {
         "name": "kirai",
         "trans": [
-            "Hate--嫌い"
+            "Hate"
         ],
         "notation": "嫌(きら)い"
     },
     {
-        "name": "moo",
+        "name": "mou",
         "trans": [
-            "already--もう"
+            "already"
         ],
         "notation": "もう"
     },
     {
-        "name": "rekoodo",
+        "name": "rekoudo",
         "trans": [
-            "record--レコード"
+            "record"
         ],
         "notation": "レコード"
     },
     {
         "name": "taberu",
         "trans": [
-            "to eat--食べる"
+            "to eat"
         ],
         "notation": "食(た)べる"
     },
     {
-        "name": "dareka",
+        "name": "dare",
         "trans": [
-            "somebody--誰"
+            "somebody"
         ],
         "notation": "誰(だれ)"
     },
     {
         "name": "kaeru",
         "trans": [
-            "to go back--帰る"
+            "to go back"
         ],
         "notation": "帰(かえ)る"
     },
     {
         "name": "kaisha",
         "trans": [
-            "Company--会社"
+            "Company"
         ],
         "notation": "会社(かいしゃ)"
     },
     {
         "name": "chotto",
         "trans": [
-            "somewhat--ちょっと"
+            "somewhat"
         ],
         "notation": "ちょっと"
     },
     {
         "name": "yuugata",
         "trans": [
-            "evening--夕方"
+            "evening"
         ],
         "notation": "夕方(ゆうがた)"
     },
     {
         "name": "are",
         "trans": [
-            "that--あれ"
+            "that"
         ],
         "notation": "あれ"
     },
     {
         "name": "nugu",
         "trans": [
-            "to take off clothes--脱ぐ"
+            "to take off clothes"
         ],
         "notation": "脱(ぬ)ぐ"
     },
     {
-        "name": "hikooki",
+        "name": "hikouki",
         "trans": [
-            "aeroplane--飛行機"
+            "aeroplane"
         ],
         "notation": "飛行機(ひこうき)"
     },
     {
         "name": "wakai",
         "trans": [
-            "young--若い"
+            "young"
         ],
         "notation": "若(わか)い"
     },
     {
         "name": "hosoi",
         "trans": [
-            "thin--細い"
+            "thin"
         ],
         "notation": "細(ほそ)い"
     },
     {
-        "name": "suka-to",
+        "name": "sukaato",
         "trans": [
-            "Skirt--スカート"
+            "Skirt"
         ],
         "notation": "スカート"
     },
     {
         "name": "yottsu",
         "trans": [
-            "four--四つ"
+            "four"
         ],
         "notation": "四(よっ)つ"
     },
     {
         "name": "hataraku",
         "trans": [
-            "to work--働く"
+            "to work"
         ],
         "notation": "働(はたら)く"
     },
     {
-        "name": "kawa",
+        "name": "kawa/kawa",
         "trans": [
-            "River--川/河"
+            "River"
         ],
         "notation": "川(かわ)/河(かわ)"
     },
     {
         "name": "guramu",
         "trans": [
-            "Gram--グラム"
+            "Gram"
         ],
         "notation": "グラム"
     },
     {
         "name": "hikui",
         "trans": [
-            "short,low--低い"
+            "short,low"
         ],
         "notation": "低(ひく)い"
     },
     {
         "name": "kaidan",
         "trans": [
-            "Stairs--階段"
+            "Stairs"
         ],
         "notation": "階段(かいだん)"
     },
     {
-        "name": "hen",
+        "name": "atari",
         "trans": [
-            "area--辺"
+            "area"
         ],
         "notation": "辺(あたり)"
     },
     {
         "name": "mon",
         "trans": [
-            "gate--門"
+            "gate"
         ],
         "notation": "門(もん)"
     },
     {
-        "name": "kinyoobi",
+        "name": "kinyoubi",
         "trans": [
-            "Friday--金曜日"
+            "Friday"
         ],
         "notation": "金曜日(きんようび)"
     },
     {
         "name": "basu",
         "trans": [
-            "bus--バス"
+            "bus"
         ],
         "notation": "バス"
     },
     {
         "name": "jibiki",
         "trans": [
-            "Dictionary--字引"
+            "Dictionary"
         ],
         "notation": "字引(じびき)"
     },
     {
         "name": "hachi",
         "trans": [
-            "eight--八"
+            "eight"
         ],
         "notation": "八(はち)"
     },
     {
-        "name": "man",
+        "name": "ban",
         "trans": [
-            "ten thousand--万"
+            "ten thousand"
         ],
         "notation": "万(ばん)"
     },
     {
         "name": "tatemono",
         "trans": [
-            "building--建物"
+            "building"
         ],
         "notation": "建物(たてもの)"
     },
     {
-        "name": "obasan",
+        "name": "obasan/obasan",
         "trans": [
-            "Aunt--伯母さん/叔母さん"
+            "Aunt"
         ],
         "notation": "伯母(おば)さん/叔母(おば)さん"
     },
     {
-        "name": "jugyoo",
+        "name": "jugyou",
         "trans": [
-            "lesson, class work--授業"
+            "lesson, class work"
         ],
         "notation": "授業(じゅぎょう)"
     },
     {
         "name": "oku",
         "trans": [
-            "to put--置く"
+            "to put"
         ],
         "notation": "置(お)く"
     },
     {
         "name": "eki",
         "trans": [
-            "station--駅"
+            "station"
         ],
         "notation": "駅(えき)"
     },
     {
-        "name": "ginkoo",
+        "name": "ginkou",
         "trans": [
-            "Bank--銀行"
+            "Bank"
         ],
         "notation": "銀行(ぎんこう)"
     },
     {
-        "name": "kokonoka",
+        "name": "kyuunichi",
         "trans": [
-            "nine days, ninth day--九日"
+            "nine days, ninth day"
         ],
         "notation": "九(きゅう)日(にち)"
     },
     {
         "name": "magaru",
         "trans": [
-            "to turn,to bend--曲る"
+            "to turn,to bend"
         ],
         "notation": "曲(まが)る"
     },
     {
         "name": "yoko",
         "trans": [
-            "beside,side,width--横"
+            "beside,side,width"
         ],
         "notation": "横(よこ)"
     },
     {
-        "name": "bunshoo",
+        "name": "bunshou",
         "trans": [
-            "sentence,text--文章"
+            "sentence,text"
         ],
         "notation": "文章(ぶんしょう)"
     },
     {
         "name": "beddo",
         "trans": [
-            "bed--ベッド"
+            "bed"
         ],
         "notation": "ベッド"
     },
     {
         "name": "kita",
         "trans": [
-            "North--北"
+            "North"
         ],
         "notation": "北(きた)"
     },
     {
         "name": "kakeru",
         "trans": [
-            "to call by phone--かける"
+            "to call by phone"
         ],
         "notation": "かける"
     },
     {
         "name": "suwaru",
         "trans": [
-            "to sit--座る"
+            "to sit"
         ],
         "notation": "座(すわ)る"
     },
     {
-        "name": "futsuka",
+        "name": "ninichi",
         "trans": [
-            "two days, second day of the month--二日"
+            "two days, second day of the month"
         ],
         "notation": "二(に)日(にち)"
     },
     {
         "name": "gohan",
         "trans": [
-            "cooked rice, meal--御飯"
+            "cooked rice, meal"
         ],
         "notation": "御飯(ごはん)"
     },
     {
-        "name": "obentoo",
+        "name": "obentou",
         "trans": [
-            "boxed lunch--お弁当"
+            "boxed lunch"
         ],
         "notation": "お弁当(べんとう)"
     },
     {
         "name": "kuruma",
         "trans": [
-            "car, vehicle--車"
+            "car, vehicle"
         ],
         "notation": "車(くるま)"
     },
     {
-        "name": "yori,hoo",
+        "name": "yori,hou",
         "trans": [
-            "Used for comparison.--より、ほう"
+            "Used for comparison."
         ],
         "notation": "より、ほう"
     },
     {
         "name": "maiban",
         "trans": [
-            "every night--毎晩"
+            "every night"
         ],
         "notation": "毎晩(まいばん)"
     },
     {
         "name": "tsuku",
         "trans": [
-            "to arrive at--着く"
+            "to arrive at"
         ],
         "notation": "着(つ)く"
     },
     {
         "name": "wataru",
         "trans": [
-            "to go across--渡る"
+            "to go across"
         ],
         "notation": "渡(わた)る"
     },
     {
         "name": "sakubun",
         "trans": [
-            "composition, writing--作文"
+            "composition, writing"
         ],
         "notation": "作文(さくぶん)"
     },
     {
         "name": "chikai",
         "trans": [
-            "near--近い"
+            "near"
         ],
         "notation": "近(ちか)い"
     },
     {
         "name": "michi",
         "trans": [
-            "street--道"
+            "street"
         ],
         "notation": "道(みち)"
     },
     {
         "name": "itsutsu",
         "trans": [
-            "five--五つ"
+            "five"
         ],
         "notation": "五(いつ)つ"
     },
     {
         "name": "dore",
         "trans": [
-            "which (of three or more)--どれ"
+            "which (of three or more)"
         ],
         "notation": "どれ"
     },
     {
         "name": "genkan",
         "trans": [
-            "entry hall--玄関"
+            "entry hall"
         ],
         "notation": "玄関(げんかん)"
     },
     {
         "name": "kieru",
         "trans": [
-            "to disappear--消える"
+            "to disappear"
         ],
         "notation": "消(き)える"
     },
     {
         "name": "daidokoro",
         "trans": [
-            "kitchen--台所"
+            "kitchen"
         ],
         "notation": "台所(だいどころ)"
     },
     {
         "name": "massugu",
         "trans": [
-            "straight ahead,direct--真っ直ぐ"
+            "straight ahead,direct"
         ],
         "notation": "真(ま)っ直(す)ぐ"
     },
     {
-        "name": "jidoosha",
+        "name": "jidousha",
         "trans": [
-            "Automobile--自動車"
+            "Automobile"
         ],
         "notation": "自動車(じどうしゃ)"
     },
     {
-        "name": "pe-ji",
+        "name": "peeji",
         "trans": [
-            "page--ページ"
+            "page"
         ],
         "notation": "ページ"
     },
     {
         "name": "raishuu",
         "trans": [
-            "next week--来週"
+            "next week"
         ],
         "notation": "来週(らいしゅう)"
     },
     {
         "name": "te",
         "trans": [
-            "hand--手"
+            "hand"
         ],
         "notation": "手(て)"
     },
     {
         "name": "hirugohan",
         "trans": [
-            "midday meal--昼御飯"
+            "midday meal"
         ],
         "notation": "昼(ひる)御飯(ごはん)"
     },
     {
         "name": "fuku",
         "trans": [
-            "clothes--服"
+            "clothes"
         ],
         "notation": "服(ふく)"
     },
     {
         "name": "suru",
         "trans": [
-            "to do--する"
+            "to do"
         ],
         "notation": "する"
     },
     {
-        "name": "rooka",
+        "name": "rouka",
         "trans": [
-            "corridor--廊下"
+            "corridor"
         ],
         "notation": "廊下(ろうか)"
     },
     {
         "name": "kuro",
         "trans": [
-            "Black--黒"
+            "Black"
         ],
         "notation": "黒(くろ)"
     },
     {
         "name": "ima",
         "trans": [
-            "now--今"
+            "now"
         ],
         "notation": "今(いま)"
     },
     {
         "name": "sochira",
         "trans": [
-            "over there--そちら"
+            "over there"
         ],
         "notation": "そちら"
     },
     {
         "name": "mata",
         "trans": [
-            "again,and--また"
+            "again,and"
         ],
         "notation": "また"
     },
     {
         "name": "taihen",
         "trans": [
-            "very--たいへん"
+            "very"
         ],
         "notation": "たいへん"
     },
     {
-        "name": "doo",
+        "name": "dou",
         "trans": [
-            "how,in what way--どう"
+            "how,in what way"
         ],
         "notation": "どう"
     },
     {
         "name": "botan",
         "trans": [
-            "button--ボタン"
+            "button"
         ],
         "notation": "ボタン"
     },
     {
         "name": "gakusei",
         "trans": [
-            "Student--学生"
+            "Student"
         ],
         "notation": "学生(がくせい)"
     },
     {
         "name": "kurasu",
         "trans": [
-            "Class--クラス"
+            "Class"
         ],
         "notation": "クラス"
     },
     {
         "name": "shikashi",
         "trans": [
-            "However--しかし"
+            "However"
         ],
         "notation": "しかし"
     },
     {
         "name": "dare",
         "trans": [
-            "who--誰"
+            "who"
         ],
         "notation": "誰(だれ)"
     },
     {
         "name": "yoku",
         "trans": [
-            "often, well--よく"
+            "often, well"
         ],
         "notation": "よく"
     },
     {
         "name": "ofuro",
         "trans": [
-            "Bath--お風呂"
+            "Bath"
         ],
         "notation": "お風呂(ふろ)"
     },
     {
         "name": "nakusu",
         "trans": [
-            "to lose something--無くす"
+            "to lose something"
         ],
         "notation": "無(な)くす"
     },
     {
         "name": "asobu",
         "trans": [
-            "to play, to make a visit--遊ぶ"
+            "to play, to make a visit"
         ],
         "notation": "遊(あそ)ぶ"
     },
     {
         "name": "yuumei",
         "trans": [
-            "famous--有名"
+            "famous"
         ],
         "notation": "有名(ゆうめい)"
     },
     {
         "name": "hito",
         "trans": [
-            "person--人"
+            "person"
         ],
         "notation": "人(ひと)"
     },
     {
         "name": "kutsushita",
         "trans": [
-            "Socks--靴下"
+            "Socks"
         ],
         "notation": "靴下(くつした)"
     },
     {
         "name": "iie",
         "trans": [
-            "no--いいえ"
+            "no"
         ],
         "notation": "いいえ"
     },
     {
         "name": "genki",
         "trans": [
-            "health, vitality--元気"
+            "health, vitality"
         ],
         "notation": "元気(げんき)"
     },
     {
         "name": "hitotsu",
         "trans": [
-            "one--一つ"
+            "one"
         ],
         "notation": "一(ひと)つ"
     },
     {
         "name": "katei",
         "trans": [
-            "Household--家庭"
+            "Household"
         ],
         "notation": "家庭(かてい)"
     },
     {
         "name": "mittsu",
         "trans": [
-            "three--三つ"
+            "three"
         ],
         "notation": "三(みっ)つ"
     },
     {
         "name": "yasumu",
         "trans": [
-            "to rest--休む"
+            "to rest"
         ],
         "notation": "休(やす)む"
     },
     {
         "name": "kuchi",
         "trans": [
-            "mouth, opening--口"
+            "mouth, opening"
         ],
         "notation": "口(くち)"
     },
     {
         "name": "benri",
         "trans": [
-            "useful, convenient--便利"
+            "useful, convenient"
         ],
         "notation": "便利(べんり)"
     },
     {
         "name": "kotoba",
         "trans": [
-            "word, language--言葉"
+            "word, language"
         ],
         "notation": "言葉(ことば)"
     },
     {
         "name": "chawan",
         "trans": [
-            "rice bowl--茶碗"
+            "rice bowl"
         ],
         "notation": "茶碗(ちゃわん)"
     },
     {
         "name": "toshi",
         "trans": [
-            "year--年"
+            "year"
         ],
         "notation": "年(とし)"
     },
     {
         "name": "hairu",
         "trans": [
-            "to enter,to contain--入る"
+            "to enter,to contain"
         ],
         "notation": "入(はい)る"
     },
     {
         "name": "kasu",
         "trans": [
-            "to lend--貸す"
+            "to lend"
         ],
         "notation": "貸(か)す"
     },
     {
-        "name": "tooka",
+        "name": "juunichi",
         "trans": [
-            "ten days,the tenth day--十日"
+            "ten days,the tenth day"
         ],
         "notation": "十(じゅう)日(にち)"
     },
     {
         "name": "shimeru",
         "trans": [
-            "to close something--閉める"
+            "to close something"
         ],
         "notation": "閉(し)める"
     },
     {
         "name": "hajimete",
         "trans": [
-            "for the first time--初めて"
+            "for the first time"
         ],
         "notation": "初(はじ)めて"
     },
     {
         "name": "shimeru",
         "trans": [
-            "to tie--締める"
+            "to tie"
         ],
         "notation": "締(し)める"
     },
     {
         "name": "futatsu",
         "trans": [
-            "two--二つ"
+            "two"
         ],
         "notation": "二(ふた)つ"
     },
     {
         "name": "okusan",
         "trans": [
-            "(honorable) wife--奥さん"
+            "(honorable) wife"
         ],
         "notation": "奥(おく)さん"
     },
     {
-        "name": "muika",
+        "name": "rokunichi",
         "trans": [
-            "six days, sixth day of the month--六日"
+            "six days, sixth day of the month"
         ],
         "notation": "六(ろく)日(にち)"
     },
     {
-        "name": "koosaten",
+        "name": "kousaten",
         "trans": [
-            "intersection--交差点"
+            "intersection"
         ],
         "notation": "交差点(こうさてん)"
     },
     {
         "name": "inu",
         "trans": [
-            "dog--犬"
+            "dog"
         ],
         "notation": "犬(いぬ)"
     },
     {
-        "name": "kinoo",
+        "name": "kinou",
         "trans": [
-            "Yesterday--昨日"
+            "Yesterday"
         ],
         "notation": "昨日(きのう)"
     },
     {
         "name": "yaoya",
         "trans": [
-            "greengrocer--八百屋"
+            "greengrocer"
         ],
         "notation": "八百屋(やおや)"
     },
     {
         "name": "dandan",
         "trans": [
-            "gradually--だんだん"
+            "gradually"
         ],
         "notation": "だんだん"
     },
     {
         "name": "hiru",
         "trans": [
-            "noon, daytime--昼"
+            "noon, daytime"
         ],
         "notation": "昼(ひる)"
     },
     {
         "name": "amari",
         "trans": [
-            "not very--あまり"
+            "not very"
         ],
         "notation": "あまり"
     },
     {
         "name": "omoi",
         "trans": [
-            "Heavy--重い"
+            "Heavy"
         ],
         "notation": "重(おも)い"
     },
     {
         "name": "haru",
         "trans": [
-            "to stick--貼る"
+            "to stick"
         ],
         "notation": "貼(は)る"
     },
     {
         "name": "taisetsu",
         "trans": [
-            "important--大切"
+            "important"
         ],
         "notation": "大切(たいせつ)"
     },
     {
         "name": "naka",
         "trans": [
-            "middle--中"
+            "middle"
         ],
         "notation": "中(なか)"
     },
     {
-        "name": "yuku",
+        "name": "iku",
         "trans": [
-            "to go--行く"
+            "to go"
         ],
         "notation": "行(い)く"
     },
     {
         "name": "migi",
         "trans": [
-            "right side--右"
+            "right side"
         ],
         "notation": "右(みぎ)"
     },
     {
         "name": "pan",
         "trans": [
-            "bread--パン"
+            "bread"
         ],
         "notation": "パン"
     },
     {
         "name": "hashi",
         "trans": [
-            "bridge--橋"
+            "bridge"
         ],
         "notation": "橋(はし)"
     },
     {
         "name": "ani",
         "trans": [
-            "(humble) older brother--兄"
+            "(humble) older brother"
         ],
         "notation": "兄(あに)"
     },
     {
         "name": "asoko",
         "trans": [
-            "over there--あそこ"
+            "over there"
         ],
         "notation": "あそこ"
     },
     {
         "name": "suu",
         "trans": [
-            "to smoke, to suck--吸う"
+            "to smoke, to suck"
         ],
         "notation": "吸(す)う"
     },
     {
         "name": "mijikai",
         "trans": [
-            "short--短い"
+            "short"
         ],
         "notation": "短(みじか)い"
     },
     {
         "name": "nomu",
         "trans": [
-            "to drink--飲む"
+            "to drink"
         ],
         "notation": "飲(の)む"
     },
     {
-        "name": "imooto",
+        "name": "imouto",
         "trans": [
-            "(humble) younger sister--妹"
+            "(humble) younger sister"
         ],
         "notation": "妹(いもうと)"
     },
     {
         "name": "hiroi",
         "trans": [
-            "spacious,wide--広い"
+            "spacious,wide"
         ],
         "notation": "広(ひろ)い"
     },
     {
         "name": "yowai",
         "trans": [
-            "weak--弱い"
+            "weak"
         ],
         "notation": "弱(よわ)い"
     },
     {
         "name": "hoshii",
         "trans": [
-            "want--欲しい"
+            "want"
         ],
         "notation": "欲(ほ)しい"
     },
     {
         "name": "tonari",
         "trans": [
-            "next door to--隣"
+            "next door to"
         ],
         "notation": "隣(となり)"
     },
     {
         "name": "naru",
         "trans": [
-            "to become--なる"
+            "to become"
         ],
         "notation": "なる"
     },
     {
         "name": "arau",
         "trans": [
-            "to wash--洗う"
+            "to wash"
         ],
         "notation": "洗(あら)う"
     },
     {
         "name": "rei",
         "trans": [
-            "zero--零"
+            "zero"
         ],
         "notation": "零(れい)"
     },
     {
         "name": "kaban",
         "trans": [
-            "bag, basket--鞄"
+            "bag, basket"
         ],
         "notation": "鞄(かばん)"
     },
     {
-        "name": "erebe-ta",
+        "name": "erebeetaa",
         "trans": [
-            "elevator--エレベーター"
+            "elevator"
         ],
         "notation": "エレベーター"
     },
     {
         "name": "gozen",
         "trans": [
-            "morning--午前"
+            "morning"
         ],
         "notation": "午前(ごぜん)"
     },
     {
         "name": "uru",
         "trans": [
-            "to sell--売る"
+            "to sell"
         ],
         "notation": "売(う)る"
     },
     {
-        "name": "se-ta-",
+        "name": "seetaa",
         "trans": [
-            "sweater, jumper--セーター"
+            "sweater, jumper"
         ],
         "notation": "セーター"
     },
     {
         "name": "hanashi",
         "trans": [
-            "talk,story--話"
+            "talk,story"
         ],
         "notation": "話(はなし)"
     },
     {
         "name": "aki",
         "trans": [
-            "autumn--秋"
+            "autumn"
         ],
         "notation": "秋(あき)"
     },
     {
         "name": "senshuu",
         "trans": [
-            "last week--先週"
+            "last week"
         ],
         "notation": "先週(せんしゅう)"
     },
     {
         "name": "akeru",
         "trans": [
-            "to open--開ける"
+            "to open"
         ],
         "notation": "開(あ)ける"
     },
     {
         "name": "ano",
         "trans": [
-            "that over there--あの"
+            "that over there"
         ],
         "notation": "あの"
     },
     {
         "name": "se",
         "trans": [
-            "height, stature--背"
+            "height, stature"
         ],
         "notation": "背(せ)"
     },
     {
         "name": "furu",
         "trans": [
-            "to fall, e.g. rain or snow--降る"
+            "to fall, e.g. rain or snow"
         ],
         "notation": "降(ふ)る"
     },
     {
         "name": "muzukashii",
         "trans": [
-            "difficult--難しい"
+            "difficult"
         ],
         "notation": "難(むずか)しい"
     },
     {
         "name": "otona",
         "trans": [
-            "Adult--大人"
+            "Adult"
         ],
         "notation": "大人(おとな)"
     },
     {
         "name": "machi",
         "trans": [
-            "town,city--町"
+            "town,city"
         ],
         "notation": "町(まち)"
     },
     {
         "name": "kuroi",
         "trans": [
-            "black--黒い"
+            "black"
         ],
         "notation": "黒(くろ)い"
     },
     {
         "name": "minasan",
         "trans": [
-            "everyone--皆さん"
+            "everyone"
         ],
         "notation": "皆(みな)さん"
     },
     {
         "name": "san",
         "trans": [
-            "Three--三"
+            "Three"
         ],
         "notation": "三(さん)"
     },
     {
         "name": "kore",
         "trans": [
-            "This--これ"
+            "This"
         ],
         "notation": "これ"
     },
     {
         "name": "kotaeru",
         "trans": [
-            "to answer--答える"
+            "to answer"
         ],
         "notation": "答(こた)える"
     },
     {
         "name": "kissaten",
         "trans": [
-            "coffee lounge--喫茶店"
+            "coffee lounge"
         ],
         "notation": "喫茶店(きっさてん)"
     },
     {
         "name": "sukoshi",
         "trans": [
-            "Few--少し"
+            "Few"
         ],
         "notation": "少(すこ)し"
     },
     {
         "name": "soba",
         "trans": [
-            "near, beside--そば"
+            "near, beside"
         ],
         "notation": "そば"
     },
     {
         "name": "mannenhitsu",
         "trans": [
-            "fountain pen--万年筆"
+            "fountain pen"
         ],
         "notation": "万年筆(まんねんひつ)"
     },
     {
         "name": "onaka",
         "trans": [
-            "stomach--おなか"
+            "stomach"
         ],
         "notation": "おなか"
     },
     {
         "name": "eigakan",
         "trans": [
-            "cinema--映画館"
+            "cinema"
         ],
         "notation": "映画(えいが)館(かん)"
     },
     {
-        "name": "kyoodai",
+        "name": "kyoudai",
         "trans": [
-            "(humble) siblings--兄弟"
+            "(humble) siblings"
         ],
         "notation": "兄弟(きょうだい)"
     },
     {
         "name": "ireru",
         "trans": [
-            "to put in--入れる"
+            "to put in"
         ],
         "notation": "入(い)れる"
     },
     {
         "name": "mada",
         "trans": [
-            "yet,still--まだ"
+            "yet,still"
         ],
         "notation": "まだ"
     },
     {
         "name": "densha",
         "trans": [
-            "electric train--電車"
+            "electric train"
         ],
         "notation": "電車(でんしゃ)"
     },
     {
         "name": "tatsu",
         "trans": [
-            "to stand--立つ"
+            "to stand"
         ],
         "notation": "立(た)つ"
     },
     {
         "name": "posuto",
         "trans": [
-            "post--ポスト"
+            "post"
         ],
         "notation": "ポスト"
     },
     {
         "name": "naze",
         "trans": [
-            "why--なぜ"
+            "why"
         ],
         "notation": "なぜ"
     },
     {
         "name": "dekiru",
         "trans": [
-            "to be able to--できる"
+            "to be able to"
         ],
         "notation": "できる"
     },
     {
         "name": "zubon",
         "trans": [
-            "Trousers--ズボン"
+            "Trousers"
         ],
         "notation": "ズボン"
     },
     {
         "name": "nekutai",
         "trans": [
-            "tie,necktie--ネクタイ"
+            "tie,necktie"
         ],
         "notation": "ネクタイ"
     },
     {
         "name": "sakana",
         "trans": [
-            "Fish--魚"
+            "Fish"
         ],
         "notation": "魚(さかな)"
     },
     {
-        "name": "te-buru",
+        "name": "teeburu",
         "trans": [
-            "table--テーブル"
+            "table"
         ],
         "notation": "テーブル"
     },
     {
         "name": "kokonotsu",
         "trans": [
-            "Nine--九つ"
+            "Nine"
         ],
         "notation": "九(ここの)つ"
     },
     {
         "name": "kasa",
         "trans": [
-            "Umbrella--傘"
+            "Umbrella"
         ],
         "notation": "傘(かさ)"
     },
     {
         "name": "maishuu",
         "trans": [
-            "every week--毎週"
+            "every week"
         ],
         "notation": "毎週(まいしゅう)"
     },
     {
         "name": "yasui",
         "trans": [
-            "cheap--安い"
+            "cheap"
         ],
         "notation": "安(やす)い"
     },
     {
         "name": "megane",
         "trans": [
-            "glasses--眼鏡"
+            "glasses"
         ],
         "notation": "眼鏡(めがね)"
     },
     {
         "name": "shiroi",
         "trans": [
-            "White--白い"
+            "White"
         ],
         "notation": "白(しろ)い"
     },
     {
         "name": "enpitsu",
         "trans": [
-            "pencil--鉛筆"
+            "pencil"
         ],
         "notation": "鉛筆(えんぴつ)"
     },
     {
         "name": "kaesu",
         "trans": [
-            "to return something--返す"
+            "to return something"
         ],
         "notation": "返(かえ)す"
     },
     {
         "name": "soto",
         "trans": [
-            "Outside--外"
+            "Outside"
         ],
         "notation": "外(そと)"
     },
     {
-        "name": "hajime",
+        "name": "hajime/hajime",
         "trans": [
-            "beginning--初め/始め"
+            "beginning"
         ],
         "notation": "初(はじ)め/始(はじ)め"
     },
     {
         "name": "tabemono",
         "trans": [
-            "food--食べ物"
+            "food"
         ],
         "notation": "食(た)べ物(もの)"
     },
     {
-        "name": "doozo",
+        "name": "douzo",
         "trans": [
-            "please--どうぞ"
+            "please"
         ],
         "notation": "どうぞ"
     },
     {
         "name": "aoi",
         "trans": [
-            "blue--青い"
+            "blue"
         ],
         "notation": "青(あお)い"
     },
     {
         "name": "kono",
         "trans": [
-            "This--この"
+            "This"
         ],
         "notation": "この"
     },
     {
-        "name": "hatsuka",
+        "name": "nijuunichi",
         "trans": [
-            "twenty days,twentieth--二十日"
+            "twenty days,twentieth"
         ],
         "notation": "二(に)十(じゅう)日(にち)"
     },
     {
         "name": "saifu",
         "trans": [
-            "Wallet--財布"
+            "Wallet"
         ],
         "notation": "財布(さいふ)"
     },
     {
-        "name": "gakkoo",
+        "name": "gakkou",
         "trans": [
-            "School--学校"
+            "School"
         ],
         "notation": "学校(がっこう)"
     },
     {
         "name": "tsukareru",
         "trans": [
-            "to get tired--疲れる"
+            "to get tired"
         ],
         "notation": "疲(つか)れる"
     },
     {
         "name": "sengetsu",
         "trans": [
-            "last month--先月"
+            "last month"
         ],
         "notation": "先月(せんげつ)"
     },
     {
-        "name": "tsuitachi",
+        "name": "ichinichi",
         "trans": [
-            "first of month--一日"
+            "first of month"
         ],
         "notation": "一(いち)日(にち)"
     },
     {
-        "name": "boorupen",
+        "name": "bourupen",
         "trans": [
-            "ball-point pen--ボールペン"
+            "ball-point pen"
         ],
         "notation": "ボールペン"
     },
     {
         "name": "oneesan",
         "trans": [
-            "(honorable) older sister--お姉さん"
+            "(honorable) older sister"
         ],
         "notation": "お姉(ねえ)さん"
     },
     {
         "name": "suzushii",
         "trans": [
-            "Refreshing--涼しい"
+            "Refreshing"
         ],
         "notation": "涼(すず)しい"
     },
     {
         "name": "atarashii",
         "trans": [
-            "new--新しい"
+            "new"
         ],
         "notation": "新(あたら)しい"
     },
     {
         "name": "toru",
         "trans": [
-            "to take a photo or record a film--撮る"
+            "to take a photo or record a film"
         ],
         "notation": "撮(と)る"
     },
     {
-        "name": "me-toru",
+        "name": "meetoru",
         "trans": [
-            "metre--メートル"
+            "metre"
         ],
         "notation": "メートル"
     },
     {
-        "name": "ko-hi-",
+        "name": "kouhii",
         "trans": [
-            "Coffee--コーヒー"
+            "Coffee"
         ],
         "notation": "コーヒー"
     },
     {
-        "name": "shi / yon",
+        "name": "yon",
         "trans": [
-            "Four--四"
+            "Four"
         ],
         "notation": "四(よん)"
     },
     {
         "name": "hima",
         "trans": [
-            "free time--暇"
+            "free time"
         ],
         "notation": "暇(ひま)"
     },
     {
         "name": "demo",
         "trans": [
-            "but--でも"
+            "but"
         ],
         "notation": "でも"
     },
     {
-        "name": "hitori",
+        "name": "ichinin",
         "trans": [
-            "one person--一人"
+            "one person"
         ],
         "notation": "一(いち)人(にん)"
     },
     {
         "name": "yomu",
         "trans": [
-            "to read--読む"
+            "to read"
         ],
         "notation": "読(よ)む"
     },
     {
-        "name": "apāto",
+        "name": "apaato",
         "trans": [
-            "apartment--アパート"
+            "apartment"
         ],
         "notation": "アパート"
     },
     {
         "name": "iu",
         "trans": [
-            "to say--言う"
+            "to say"
         ],
         "notation": "言(い)う"
     },
     {
         "name": "mae",
         "trans": [
-            "before--前"
+            "before"
         ],
         "notation": "前(まえ)"
     },
     {
         "name": "butaniku",
         "trans": [
-            "pork--豚肉"
+            "pork"
         ],
         "notation": "豚肉(ぶたにく)"
     },
     {
         "name": "kudasai",
         "trans": [
-            "Please--ください"
+            "Please"
         ],
         "notation": "ください"
     },
     {
         "name": "sentaku",
         "trans": [
-            "Washing--洗濯"
+            "Washing"
         ],
         "notation": "洗濯(せんたく)"
     },
     {
         "name": "niwa",
         "trans": [
-            "garden--庭"
+            "garden"
         ],
         "notation": "庭(にわ)"
     },
     {
         "name": "sumu",
         "trans": [
-            "to live in--住む"
+            "to live in"
         ],
         "notation": "住(す)む"
     },
     {
         "name": "imi",
         "trans": [
-            "meaning--意味"
+            "meaning"
         ],
         "notation": "意味(いみ)"
     },
     {
         "name": "hoka",
         "trans": [
-            "other, the rest--ほか"
+            "other, the rest"
         ],
         "notation": "ほか"
     },
     {
         "name": "semai",
         "trans": [
-            "Narrow--狭い"
+            "Narrow"
         ],
         "notation": "狭(せま)い"
     },
     {
-        "name": "kyoo",
+        "name": "kyou",
         "trans": [
-            "Today--今日"
+            "Today"
         ],
         "notation": "今日(きょう)"
     },
     {
         "name": "matsu",
         "trans": [
-            "to wait--待つ"
+            "to wait"
         ],
         "notation": "待(ま)つ"
     },
     {
         "name": "namae",
         "trans": [
-            "name--名前"
+            "name"
         ],
         "notation": "名前(なまえ)"
     },
     {
         "name": "ano",
         "trans": [
-            "um...--あの"
+            "um..."
         ],
         "notation": "あの"
     },
     {
         "name": "go",
         "trans": [
-            "Five--五"
+            "Five"
         ],
         "notation": "五(ご)"
     },
     {
-        "name": "deha",
+        "name": "dewa",
         "trans": [
-            "with that...--では"
+            "with that..."
         ],
         "notation": "では"
     },
     {
-        "name": "konshu",
+        "name": "konshuu",
         "trans": [
-            "this week--今週"
+            "this week"
         ],
         "notation": "今週(こんしゅう)"
     },
     {
         "name": "tabun",
         "trans": [
-            "probably--多分"
+            "probably"
         ],
         "notation": "多分(たぶん)"
     },
     {
         "name": "iku",
         "trans": [
-            "to go--行く"
+            "to go"
         ],
         "notation": "行(い)く"
     },
     {
         "name": "tomaru",
         "trans": [
-            "to come to a halt--止まる"
+            "to come to a halt"
         ],
         "notation": "止(と)まる"
     },
     {
         "name": "sarainen",
         "trans": [
-            "year after next--さ来年"
+            "year after next"
         ],
         "notation": "さ来年(らいねん)"
     },
     {
-        "name": "supu-tsu",
+        "name": "supoutsu",
         "trans": [
-            "Sport--スポーツ"
+            "Sport"
         ],
         "notation": "スポーツ"
     },
     {
         "name": "mizu",
         "trans": [
-            "water--水"
+            "water"
         ],
         "notation": "水(みず)"
     },
     {
         "name": "kaze",
         "trans": [
-            "Wind--風"
+            "Wind"
         ],
         "notation": "風(かぜ)"
     },
     {
         "name": "han",
         "trans": [
-            "half--半"
+            "half"
         ],
         "notation": "半(はん)"
     },
     {
-        "name": "tanjoobi",
+        "name": "tanjoubi",
         "trans": [
-            "birthday--誕生日"
+            "birthday"
         ],
         "notation": "誕生(たんじょう)日(び)"
     },
     {
-        "name": "kare-",
+        "name": "karee",
         "trans": [
-            "Curry--カレー"
+            "Curry"
         ],
         "notation": "カレー"
     },
     {
         "name": "firumu",
         "trans": [
-            "roll of film--フィルム"
+            "roll of film"
         ],
         "notation": "フィルム"
     },
     {
         "name": "tsukau",
         "trans": [
-            "to use--使う"
+            "to use"
         ],
         "notation": "使(つか)う"
     },
     {
         "name": "pen",
         "trans": [
-            "pen--ペン"
+            "pen"
         ],
         "notation": "ペン"
     },
     {
         "name": "heya",
         "trans": [
-            "room--部屋"
+            "room"
         ],
         "notation": "部屋(へや)"
     },
     {
-        "name": "juu /too",
+        "name": "juu",
         "trans": [
-            "Ten--十"
+            "Ten"
         ],
         "notation": "十(じゅう)"
     },
     {
-        "name": "otooto",
+        "name": "otouto",
         "trans": [
-            "younger brother--弟"
+            "younger brother"
         ],
         "notation": "弟(おとうと)"
     },
     {
         "name": "iriguchi",
         "trans": [
-            "entrance--入口"
+            "entrance"
         ],
         "notation": "入口(いりぐち)"
     },
     {
         "name": "socchi",
         "trans": [
-            "over there--そっち"
+            "over there"
         ],
         "notation": "そっち"
     },
     {
         "name": "gyuuniku",
         "trans": [
-            "Beef--牛肉"
+            "Beef"
         ],
         "notation": "牛肉(ぎゅうにく)"
     },
     {
         "name": "jouzu",
         "trans": [
-            "Skillful--上手"
+            "Skillful"
         ],
         "notation": "上手(じょうず)"
     },
     {
-        "name": "kekkoo",
+        "name": "kekkou",
         "trans": [
-            "splendid, enough--結構"
+            "splendid, enough"
         ],
         "notation": "結構(けっこう)"
     },
     {
         "name": "oboeru",
         "trans": [
-            "to remember--覚える"
+            "to remember"
         ],
         "notation": "覚(おぼ)える"
     },
     {
         "name": "chiisana",
         "trans": [
-            "little--小さな"
+            "little"
         ],
         "notation": "小(ちい)さな"
     },
     {
         "name": "umareru",
         "trans": [
-            "to be born--生まれる"
+            "to be born"
         ],
         "notation": "生(う)まれる"
     },
     {
         "name": "karada",
         "trans": [
-            "Body--体"
+            "Body"
         ],
         "notation": "体(からだ)"
     },
     {
         "name": "dono",
         "trans": [
-            "which--どの"
+            "which"
         ],
         "notation": "どの"
     },
     {
         "name": "akai",
         "trans": [
-            "red--赤い"
+            "red"
         ],
         "notation": "赤(あか)い"
     },
     {
         "name": "mondai",
         "trans": [
-            "problem--問題"
+            "problem"
         ],
         "notation": "問題(もんだい)"
     },
     {
-        "name": "futari",
+        "name": "ninin",
         "trans": [
-            "two people--二人"
+            "two people"
         ],
         "notation": "二(に)人(にん)"
     },
     {
         "name": "tomodachi",
         "trans": [
-            "friend--友達"
+            "friend"
         ],
         "notation": "友達(ともだち)"
     },
     {
         "name": "kazoku",
         "trans": [
-            "Family--家族"
+            "Family"
         ],
         "notation": "家族(かぞく)"
     },
     {
         "name": "yoru",
         "trans": [
-            "evening,night--夜"
+            "evening,night"
         ],
         "notation": "夜(よる)"
     },
     {
         "name": "ashi",
         "trans": [
-            "foot, leg--足"
+            "foot, leg"
         ],
         "notation": "足(あし)"
     },
     {
         "name": "kudamono",
         "trans": [
-            "Fruit--果物"
+            "Fruit"
         ],
         "notation": "果物(くだもの)"
     },
     {
-        "name": "kixtute",
+        "name": "kitte",
         "trans": [
-            "postage stamp--切手"
+            "postage stamp"
         ],
         "notation": "切手(きって)"
     },
     {
-        "name": "fuutoo",
+        "name": "fuutou",
         "trans": [
-            "envelope--封筒"
+            "envelope"
         ],
         "notation": "封筒(ふうとう)"
     },
     {
         "name": "ichiban",
         "trans": [
-            "best, first--いちばん"
+            "best, first"
         ],
         "notation": "いちばん"
     },
     {
-        "name": "tsumaranai",
+        "name": "najiranai",
         "trans": [
-            "boring--詰らない"
+            "boring"
         ],
         "notation": "詰(なじ)らない"
     },
     {
         "name": "hiku",
         "trans": [
-            "to pull--引く"
+            "to pull"
         ],
         "notation": "引(ひ)く"
     },
     {
         "name": "shinu",
         "trans": [
-            "to die--死ぬ"
+            "to die"
         ],
         "notation": "死(し)ぬ"
     },
     {
-        "name": "ato",
+        "name": "nochi",
         "trans": [
-            "afterwards--後"
+            "afterwards"
         ],
         "notation": "後(のち)"
     },
     {
         "name": "chairo",
         "trans": [
-            "brown--茶色"
+            "brown"
         ],
         "notation": "茶色(ちゃいろ)"
     },
     {
         "name": "nanatsu",
         "trans": [
-            "seven--七つ"
+            "seven"
         ],
         "notation": "七(なな)つ"
     },
     {
         "name": "shinbun",
         "trans": [
-            "newspaper--新聞"
+            "newspaper"
         ],
         "notation": "新聞(しんぶん)"
     },
     {
         "name": "yasashii",
         "trans": [
-            "easy, simple--易しい"
+            "easy, simple"
         ],
         "notation": "易(やさ)しい"
     },
     {
         "name": "eiga",
         "trans": [
-            "movie--映画"
+            "movie"
         ],
         "notation": "映画(えいが)"
     },
     {
         "name": "urusai",
         "trans": [
-            "noisy, annoying--煩い"
+            "noisy, annoying"
         ],
         "notation": "煩(うるさ)い"
     },
     {
         "name": "mura",
         "trans": [
-            "village--村"
+            "village"
         ],
         "notation": "村(むら)"
     },
     {
         "name": "abiru",
         "trans": [
-            "to bathe, to shower--あびる"
+            "to bathe, to shower"
         ],
         "notation": "あびる"
     },
     {
         "name": "ame",
         "trans": [
-            "candy--飴"
+            "candy"
         ],
         "notation": "飴(あめ)"
     },
     {
-        "name": "karai",
+        "name": "tsurai",
         "trans": [
-            "Spicy--辛い"
+            "Spicy"
         ],
         "notation": "辛(つら)い"
     },
     {
         "name": "obaasan",
         "trans": [
-            "grandmother, female senior-citizen--おばあさん"
+            "grandmother, female senior-citizen"
         ],
         "notation": "おばあさん"
     },
     {
         "name": "onaji",
         "trans": [
-            "same--同じ"
+            "same"
         ],
         "notation": "同(おな)じ"
     },
     {
         "name": "neru",
         "trans": [
-            "to go to bed,to sleep--寝る"
+            "to go to bed,to sleep"
         ],
         "notation": "寝(ね)る"
     },
     {
         "name": "motto",
         "trans": [
-            "more--もっと"
+            "more"
         ],
         "notation": "もっと"
     },
     {
         "name": "zasshi",
         "trans": [
-            "Magazine--雑誌"
+            "Magazine"
         ],
         "notation": "雑誌(ざっし)"
     },
     {
         "name": "au",
         "trans": [
-            "to meet--会う"
+            "to meet"
         ],
         "notation": "会(あ)う"
     },
     {
         "name": "iru",
         "trans": [
-            "to need--要る"
+            "to need"
         ],
         "notation": "要(い)る"
     },
     {
         "name": "midori",
         "trans": [
-            "green--緑"
+            "green"
         ],
         "notation": "緑(みどり)"
     },
     {
         "name": "shashin",
         "trans": [
-            "photograph--写真"
+            "photograph"
         ],
         "notation": "写真(しゃしん)"
     },
     {
         "name": "kotoshi",
         "trans": [
-            "this year--今年"
+            "this year"
         ],
         "notation": "今年(ことし)"
     },
     {
         "name": "haizara",
         "trans": [
-            "ashtray--灰皿"
+            "ashtray"
         ],
         "notation": "灰皿(はいざら)"
     },
     {
-        "name": "hatachi",
+        "name": "nijuusai",
         "trans": [
-            "20 years old,20th year--二十歳"
+            "20 years old,20th year"
         ],
         "notation": "二(に)十(じゅう)歳(さい)"
     }
