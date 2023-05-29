@@ -4,8 +4,8 @@ import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
 import Tooltip from '@/components/Tooltip'
-import { isOpenDarkModeAtom } from '@/store'
-import { useAtom } from 'jotai'
+import { currentDictInfoAtom, isOpenDarkModeAtom } from '@/store'
+import { useAtom, useAtomValue } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import IconEyeSlash from '~icons/heroicons/eye-slash-solid'
@@ -60,7 +60,8 @@ export default function Switcher() {
     { enableOnFormTags: true, preventDefault: true },
     [],
   )
-
+  const isRomaji = useAtomValue(currentDictInfoAtom).language === 'romaji'
+  const switchWordVisibleTooltip = `开关${isRomaji ? '罗马字' : '英文'}显示（Ctrl + V）`
   return (
     <div className="flex items-center justify-center gap-2">
       <Tooltip content="音效设置">
@@ -71,7 +72,7 @@ export default function Switcher() {
         <LoopWordSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="开关英语显示（Ctrl + V）">
+      <Tooltip className="h-7 w-7" content={switchWordVisibleTooltip}>
         <button
           className={`p-[2px] ${state?.isWordVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
           type="button"
@@ -79,7 +80,7 @@ export default function Switcher() {
             changeWordVisibleState()
             e.currentTarget.blur()
           }}
-          aria-label="开关英语显示（Ctrl + V）"
+          aria-label={switchWordVisibleTooltip}
         >
           {state?.isWordVisible ? <IconEye className="icon" /> : <IconEyeSlash className="icon" />}
         </button>

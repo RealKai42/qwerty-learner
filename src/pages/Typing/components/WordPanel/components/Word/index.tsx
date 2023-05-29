@@ -1,12 +1,15 @@
 import type { WordUpdateAction } from '../InputHandler'
 import InputHandler from '../InputHandler'
 import WordSound from '../WordSound'
+import Furigana from './Furigana'
 import Letter from './Letter'
 import type { LetterState } from './Letter'
 import Notation from './Notation'
+import { CheckInputResult, DefaultWordStateAdapter, FuriganaWordStateAdapter } from './adapters'
 import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
+import useNotationInfo from '@/pages/Typing/hooks/useNotationInfo'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import { currentDictInfoAtom, isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
 import type { Word } from '@/typings'
@@ -14,10 +17,10 @@ import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import type { LetterMistakes } from '@/utils/db/record'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useEffect, useState } from 'react'
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { useImmer } from 'use-immer'
 
-type WordState = {
+export type WordState = {
   displayWord: string
   inputWord: string
   letterStates: LetterState[]
@@ -66,18 +69,21 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
+  const isRomaji = currentLanguage === 'romaji'
+  const notationInfo = useNotationInfo(isRomaji ? word.notation : null)
+  const showNotation = state.isWordVisible && notationInfo
+  const showFurigana = !state.isWordVisible && notationInfo
+  const adapter = useMemo(() => (showFurigana ? new FuriganaWordStateAdapter(notationInfo) : new DefaultWordStateAdapter()), [showFurigana])
 
   useEffect(() => {
     // run only when word changes
-    let headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
-    headword = headword.replace(new RegExp('…', 'g'), '..')
-
+    const displayWord = adapter.getDisplayWord(word)
     const newWordState = structuredClone(initialWordState)
-    newWordState.displayWord = headword
-    newWordState.letterStates = new Array(headword.length).fill('normal')
+    newWordState.displayWord = displayWord
+    newWordState.letterStates = new Array(displayWord.length).fill('normal')
     newWordState.startTime = getUtcStringForMixpanel()
     setWordState(newWordState)
-  }, [word, setWordState])
+  }, [word, setWordState, state.isWordVisible])
 
   const updateInput = useCallback(
     (updateAction: WordUpdateAction) => {
@@ -109,61 +115,56 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   }, [])
 
   useEffect(() => {
-    const inputLength = wordState.inputWord.length
-    if (wordState.hasWrong || inputLength === 0 || wordState.displayWord.length === 0) {
+    const [result, letterIndex] = adapter.checkInput(wordState, isIgnoreCase)
+    if (result == CheckInputResult.Noop) {
       return
     }
-
-    const inputChar = wordState.inputWord[inputLength - 1]
-    const correctChar = wordState.displayWord[inputLength - 1]
-
-    let isEqual = false
-    if (inputChar != undefined && correctChar != undefined) {
-      isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
-    }
-
-    if (isEqual) {
-      // 输入正确时
-      setWordState((state) => {
-        state.letterTimeArray.push(Date.now())
-        state.correctCount += 1
-      })
-
-      if (inputLength >= wordState.displayWord.length) {
-        // 完成输入时
+    switch (result) {
+      case CheckInputResult.Correct:
+      case CheckInputResult.Complete:
+        // 输入正确时
         setWordState((state) => {
-          state.letterStates[inputLength - 1] = 'correct'
-          state.isFinished = true
-          state.endTime = getUtcStringForMixpanel()
+          state.letterTimeArray.push(Date.now())
+          state.correctCount += 1
         })
-        playHintSound()
-      } else {
-        setWordState((state) => {
-          state.letterStates[inputLength - 1] = 'correct'
-        })
-        playKeySound()
-      }
-
-      dispatch({ type: TypingStateActionType.INCREASE_CORRECT_COUNT })
-    } else {
-      // 出错时
-      playBeepSound()
-
-      setWordState((state) => {
-        state.letterStates[inputLength - 1] = 'wrong'
-        state.hasWrong = true
-        state.hasMadeInputWrong = true
-        state.wrongCount += 1
-        state.letterTimeArray = []
-        if (state.letterMistake[inputLength - 1]) {
-          state.letterMistake[inputLength - 1].push(inputChar)
+        if (result == CheckInputResult.Complete) {
+          // 完成输入时
+          setWordState((state) => {
+            state.letterStates[letterIndex] = 'correct'
+            state.isFinished = true
+            state.endTime = getUtcStringForMixpanel()
+          })
+          playHintSound()
         } else {
-          state.letterMistake[inputLength - 1] = [inputChar]
+          setWordState((state) => {
+            state.letterStates[letterIndex] = 'correct'
+          })
+          playKeySound()
         }
-      })
+        dispatch({ type: TypingStateActionType.INCREASE_CORRECT_COUNT })
+        break
+      case CheckInputResult.Incorrect:
+        playBeepSound()
 
-      dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
-      dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
+        setWordState((state) => {
+          state.letterStates[letterIndex] = 'wrong'
+          state.hasWrong = true
+          state.hasMadeInputWrong = true
+          state.wrongCount += 1
+          state.letterTimeArray = []
+          if (state.letterMistake[letterIndex]) {
+            state.letterMistake[letterIndex].push(state.inputWord.at(-1)!)
+          } else {
+            state.letterMistake[letterIndex] = [state.inputWord.at(-1)!]
+          }
+        })
+
+        dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
+        dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
+        break
+      case CheckInputResult.Hold:
+        playKeySound()
+        break
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.inputWord])
@@ -217,28 +218,31 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       dispatch({ type: TypingStateActionType.SET_IS_SKIP, payload: true })
     }
   }, [wordState.wrongCount, dispatch])
-
   return (
     <>
       <InputHandler updateInput={updateInput} />
       <div className="flex flex-col justify-center pb-1 pt-4">
-        {currentLanguage === 'romaji' && word.notation && <Notation notation={word.notation} />}
+        {showNotation && <Notation key={word.notation} infos={notationInfo} />}
         <div className="relative">
           <div
             onMouseEnter={() => handleHoverWord(true)}
             onMouseLeave={() => handleHoverWord(false)}
             className={`flex items-center ${isTextSelectable && 'select-all'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
           >
-            {wordState.displayWord.split('').map((t, index) => {
-              return (
-                <Letter
-                  key={`${index}-${t}`}
-                  letter={t}
-                  visible={wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord) || state.isWordVisible}
-                  state={wordState.letterStates[index]}
-                />
-              )
-            })}
+            {showFurigana ? (
+              <Furigana infos={notationInfo} letterStates={wordState.letterStates} />
+            ) : (
+              wordState.displayWord.split('').map((t, index) => {
+                return (
+                  <Letter
+                    key={`${index}-${t}`}
+                    letter={t}
+                    visible={wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord) || state.isWordVisible}
+                    state={wordState.letterStates[index]}
+                  />
+                )
+              })
+            )}
           </div>
           {pronunciationIsOpen && <WordSound word={word.name} inputWord={wordState.inputWord} className="h-10 w-10" />}
         </div>
