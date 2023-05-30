@@ -19,7 +19,7 @@ import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue } from 'jotai'
 import type React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useImmerReducer } from 'use-immer'
 
@@ -35,6 +35,8 @@ const App: React.FC = () => {
 
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
   const saveChapterRecord = useSaveChapterRecord()
+
+  const typingElementRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     // 检测用户设备
@@ -75,6 +77,8 @@ const App: React.FC = () => {
   }, [state.chapterData.words])
 
   useEffect(() => {
+    if (!typingElementRef.current) return
+
     if (!state.isTyping) {
       const onKeyDown = (e: KeyboardEvent) => {
         if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
@@ -82,9 +86,9 @@ const App: React.FC = () => {
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
         }
       }
-      window.addEventListener('keydown', onKeyDown)
+      typingElementRef.current.addEventListener('keydown', onKeyDown)
 
-      return () => window.removeEventListener('keydown', onKeyDown)
+      return () => typingElementRef.current?.removeEventListener('keydown', onKeyDown)
     }
   }, [state.isTyping, isLoading, dispatch])
 
@@ -149,7 +153,7 @@ const App: React.FC = () => {
             </button>
           </Tooltip>
         </Header>
-        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
+        <div ref={typingElementRef} className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
           <div className="container relative mx-auto flex h-full flex-col items-center">
             <div className="container flex flex-grow items-center justify-center">
               {isLoading ? (
