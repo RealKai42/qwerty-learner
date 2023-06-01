@@ -240,8 +240,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
                     wordState.letterStates[index] === 'correct' ||
                     (isShowAnswerOnHover && isHoveringWord) ||
                     (state.wordVisible !== 'noVisible' &&
-                      state.wordVisible === 'noVisibleVowel' &&
-                      vowelLetters.includes(t.toLocaleUpperCase()))
+                      !(state.wordVisible === 'noVisibleVowel' && vowelLetters.includes(t.toLocaleUpperCase())))
                   }
                   state={wordState.letterStates[index]}
                 />
