@@ -442,6 +442,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'zhongkaohexin',
+    name: '中考核心词',
+    description: '中考核心词',
+    category: '青少年英语',
+    tags: ['通用'],
+    url: '/dicts/ZhongKaoHeXin.json',
+    length: 2140,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'nce1',
     name: '新概念英语-1',
     description: '新概念英语第一册',
