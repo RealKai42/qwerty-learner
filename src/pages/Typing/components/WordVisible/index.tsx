@@ -6,7 +6,7 @@ import { Fragment, useContext } from 'react'
 import IconEyeSlash from '~icons/heroicons/eye-slash-solid'
 import IconEye from '~icons/heroicons/eye-solid'
 
-const wordVisibleOptions: WordVisibleOption[] = ['allVisible', 'partVisible', 'noVisible']
+const wordVisibleOptions: WordVisibleOption[] = ['allVisible', 'noVisibleVowel', 'noVisible']
 export default function WordVisible() {
   const { state, dispatch } = useContext(TypingContext) ?? {}
   const onChangeWordVisible = (value: WordVisibleOption) => {
@@ -15,7 +15,7 @@ export default function WordVisible() {
     }
   }
   const isWordVisible = (wordVisible: WordVisibleOption) => {
-    return ['allVisible', 'partVisible'].includes(wordVisible)
+    return ['allVisible', 'noVisibleVowel'].includes(wordVisible)
   }
   return (
     <>
