@@ -52,6 +52,8 @@ const initialWordState: WordState = {
   letterMistake: {},
 }
 
+const vowelLetters = ['A', 'E', 'I', 'O', 'U']
+
 export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
@@ -234,7 +236,13 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
                 <Letter
                   key={`${index}-${t}`}
                   letter={t}
-                  visible={wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord) || state.isWordVisible}
+                  visible={
+                    wordState.letterStates[index] === 'correct' ||
+                    (isShowAnswerOnHover && isHoveringWord) ||
+                    (state.wordVisible !== 'noVisible' &&
+                      state.wordVisible === 'partVisible' &&
+                      vowelLetters.includes(t.toLocaleUpperCase()))
+                  }
                   state={wordState.letterStates[index]}
                 />
               )

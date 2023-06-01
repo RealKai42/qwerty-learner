@@ -1,4 +1,4 @@
-import type { WordWithIndex } from '@/typings'
+import type { WordVisibleOption, WordWithIndex } from '@/typings'
 import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
 
@@ -27,7 +27,7 @@ export type TypingState = {
   isTyping: boolean
   isFinished: boolean
   isShowSkip: boolean
-  isWordVisible: boolean
+  wordVisible: WordVisibleOption
   isTransVisible: boolean
   isLoopSingleWord: boolean
   // 是否正在保存数据
@@ -53,7 +53,7 @@ export const initialState: TypingState = {
   isTyping: false,
   isFinished: false,
   isShowSkip: false,
-  isWordVisible: true,
+  wordVisible: 'allVisible',
   isTransVisible: true,
   isLoopSingleWord: false,
   isSavingRecord: false,
@@ -102,7 +102,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.DICTATION_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
-  | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
+  | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE; payload: { wordVisible: WordVisibleOption } }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER; addTime?: number }
   | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
@@ -201,7 +201,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       const newState = structuredClone(initialState)
       newState.isTyping = true
       newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
-      newState.isWordVisible = false
+      newState.wordVisible = 'noVisible'
       newState.isTransVisible = state.isTransVisible
       return newState
     }
@@ -212,7 +212,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       return newState
     }
     case TypingStateActionType.TOGGLE_WORD_VISIBLE:
-      state.isWordVisible = !state.isWordVisible
+      state.wordVisible = action.payload.wordVisible
       break
     case TypingStateActionType.TOGGLE_TRANS_VISIBLE:
       state.isTransVisible = !state.isTransVisible
