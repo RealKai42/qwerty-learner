@@ -80,6 +80,7 @@ const App: React.FC = () => {
     if (!typingElementRef.current) return
 
     if (!state.isTyping) {
+      typingElementRef.current.focus()
       const onKeyDown = (e: KeyboardEvent) => {
         if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
           e.preventDefault()
@@ -153,7 +154,11 @@ const App: React.FC = () => {
             </button>
           </Tooltip>
         </Header>
-        <div ref={typingElementRef} className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
+        <div
+          ref={typingElementRef}
+          tabIndex={0}
+          className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20 outline-none"
+        >
           <div className="container relative mx-auto flex h-full flex-col items-center">
             <div className="container flex flex-grow items-center justify-center">
               {isLoading ? (
