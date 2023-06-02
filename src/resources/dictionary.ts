@@ -1205,6 +1205,17 @@ const programming: DictionaryResource[] = [
     languageCategory: 'code',
   },
   {
+    id: 'coder_2',
+    name: '计算机专用英语词汇',
+    description: '计算机专用英语词汇(带音标)',
+    category: '代码练习',
+    tags: ['通用'],
+    url: '/dicts/ComputerVocabulary.json',
+    length: 1665,
+    language: 'code',
+    languageCategory: 'code',
+  },
+  {
     id: 'childCode',
     name: '少儿 Python',
     description: '少儿 Python 常见词',
