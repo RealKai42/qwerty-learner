@@ -79,7 +79,7 @@ export default function LoopWordSwitcher() {
                           <RadioGroup.Indicator className="relative flex h-full w-full items-center justify-center after:block after:h-[11px] after:w-[11px] after:rounded-[50%] after:bg-indigo-600 after:content-['']" />
                         </RadioGroup.Item>
                         <label
-                          className="flex-1 cursor-pointer pl-[15px] text-[15px] leading-none"
+                          className="flex-1 cursor-pointer pl-[15px] text-[15px] leading-none dark:text-white dark:text-opacity-60"
                           htmlFor={`r${index}`}
                           onClick={() => onChangeLoopTimes(value)}
                         >
