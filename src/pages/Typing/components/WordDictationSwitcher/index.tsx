@@ -22,6 +22,10 @@ const wordDictationTypeList: { name: string; type: WordDictationType }[] = [
     name: '隐藏辅音',
     type: 'hideConsonant',
   },
+  {
+    name: '随机隐藏',
+    type: 'randomHide',
+  },
 ]
 
 export default function WordDictationSwitcher() {

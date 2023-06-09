@@ -41,6 +41,8 @@ type WordState = {
   correctCount: number
   letterTimeArray: number[]
   letterMistake: LetterMistakes
+  // 用于随机隐藏字母功能
+  randomLetterVisible: boolean[]
 }
 
 const initialWordState: WordState = {
@@ -57,6 +59,7 @@ const initialWordState: WordState = {
   correctCount: 0,
   letterTimeArray: [],
   letterMistake: {},
+  randomLetterVisible: [],
 }
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
@@ -86,6 +89,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     newWordState.displayWord = headword
     newWordState.letterStates = new Array(headword.length).fill('normal')
     newWordState.startTime = getUtcStringForMixpanel()
+    newWordState.randomLetterVisible = headword.split('').map(() => Math.random() > 0.4)
     setWordState(newWordState)
   }, [word, setWordState])
 
@@ -118,7 +122,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     setIsHoveringWord(checked)
   }, [])
 
-  const getWordVisible = useCallback(
+  const getLetterVisible = useCallback(
     (index: number) => {
       if (wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord)) return true
 
@@ -132,7 +136,11 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         if (wordDictationConfig.type === 'hideConsonant') {
           return vowelLetters.includes(letter.toUpperCase()) ? true : false
         }
+        if (wordDictationConfig.type === 'randomHide') {
+          return wordState.randomLetterVisible[index]
+        }
       }
+      return true
     },
     [
       isHoveringWord,
@@ -141,6 +149,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       wordDictationConfig.type,
       wordState.displayWord,
       wordState.letterStates,
+      wordState.randomLetterVisible,
     ],
   )
 
@@ -266,7 +275,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
             className={`flex items-center ${isTextSelectable && 'select-all'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
           >
             {wordState.displayWord.split('').map((t, index) => {
-              return <Letter key={`${index}-${t}`} letter={t} visible={getWordVisible(index)} state={wordState.letterStates[index]} />
+              return <Letter key={`${index}-${t}`} letter={t} visible={getLetterVisible(index)} state={wordState.letterStates[index]} />
             })}
           </div>
           {pronunciationIsOpen && <WordSound word={word.name} inputWord={wordState.inputWord} className="h-10 w-10" />}
