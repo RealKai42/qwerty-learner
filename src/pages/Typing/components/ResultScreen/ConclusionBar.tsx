@@ -14,7 +14,7 @@ const ICON_MAPPER: IconMapper[] = [
   {
     icon: IconHeart,
     className: 'text-indigo-600',
-    text: (mistakeCount: number) => `表现不错！只错了 ${mistakeCount} 个单词`,
+    text: (mistakeCount: number) => `表现不错！` + (mistakeCount > 0 ? `只错了 ${mistakeCount} 个单词` : '全对了！'),
   },
   {
     icon: IconHandThumbUp,
