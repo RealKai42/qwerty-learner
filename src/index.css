@@ -145,3 +145,13 @@ body,
     @apply block h-4 w-4 cursor-pointer rounded-full border border-gray-200 bg-white drop-shadow-md;
   }
 }
+
+[data-qwerty-learner-scroll-area-viewport] {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+[data-qwerty-learner-scroll-area-viewport]::-webkit-scrollbar {
+  display: none;
+}

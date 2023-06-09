@@ -119,7 +119,7 @@ export default function SoundSetting() {
   )
 
   return (
-    <div className={styles.tabContent}>
+    <div data-qwerty-learner-scroll-area-viewport className={styles.tabContent}>
       <div className={styles.section}>
         <span className={styles.sectionLabel}>单词发音</span>
         <div className={styles.switchBlock}>
