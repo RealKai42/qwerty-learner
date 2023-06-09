@@ -127,9 +127,9 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'archVocabulary',
     name: '建筑专业英语',
-    description: '常用建筑专业英语词汇',
+    description: '大学建筑专业英语词汇',
     category: '中国考试',
-    tags: ['大学各专业英语'],
+    tags: ['专业英语'],
     url: '/dicts/archVocabulary.json',
     length: 630,
     language: 'en',
@@ -138,9 +138,9 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'itVocabulary',
     name: '计算机专用英语',
-    description: '常用计算机专业英语词汇',
+    description: '大学计算机专业英语词汇',
     category: '中国考试',
-    tags: ['大学各专业英语'],
+    tags: ['专业英语'],
     url: '/dicts/itVocabulary.json',
     length: 1665,
     language: 'en',
