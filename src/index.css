@@ -108,7 +108,7 @@ body,
   }
 
   .listbox-button {
-    @apply relative w-40 cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none;
+    @apply relative w-40 cursor-pointer rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none;
   }
   .listbox-button span:nth-of-type(1) {
     @apply block truncate text-gray-900;
@@ -120,7 +120,7 @@ body,
     @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg  focus:outline-none;
   }
   .listbox-options > li {
-    @apply relative cursor-default select-none py-2 pl-10 pr-4 text-gray-900 ui-active:bg-indigo-100 ui-active:text-indigo-900;
+    @apply relative cursor-pointer select-none py-2 pl-10 pr-4 text-gray-900 ui-active:bg-indigo-100 ui-active:text-indigo-900;
   }
   .listbox-options > li > span:first-child {
     @apply block truncate font-normal  ui-selected:font-medium;

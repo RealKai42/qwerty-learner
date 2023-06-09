@@ -8,7 +8,14 @@ import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import { currentDictInfoAtom, isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
+import {
+  currentDictInfoAtom,
+  isIgnoreCaseAtom,
+  isShowAnswerOnHoverAtom,
+  isTextSelectableAtom,
+  pronunciationIsOpenAtom,
+  wordDictationConfigAtom,
+} from '@/store'
 import type { Word } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
@@ -59,6 +66,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
 
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
   const isShowAnswerOnHover = useAtomValue(isShowAnswerOnHoverAtom)
@@ -109,6 +117,32 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const handleHoverWord = useCallback((checked: boolean) => {
     setIsHoveringWord(checked)
   }, [])
+
+  const getWordVisible = useCallback(
+    (index: number) => {
+      if (wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord)) return true
+
+      if (wordDictationConfig.isOpen) {
+        if (wordDictationConfig.type === 'hideAll') return false
+
+        const letter = wordState.displayWord[index]
+        if (wordDictationConfig.type === 'hideVowel') {
+          return vowelLetters.includes(letter.toUpperCase()) ? false : true
+        }
+        if (wordDictationConfig.type === 'hideConsonant') {
+          return vowelLetters.includes(letter.toUpperCase()) ? true : false
+        }
+      }
+    },
+    [
+      isHoveringWord,
+      isShowAnswerOnHover,
+      wordDictationConfig.isOpen,
+      wordDictationConfig.type,
+      wordState.displayWord,
+      wordState.letterStates,
+    ],
+  )
 
   useEffect(() => {
     const inputLength = wordState.inputWord.length
@@ -232,19 +266,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
             className={`flex items-center ${isTextSelectable && 'select-all'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
           >
             {wordState.displayWord.split('').map((t, index) => {
-              return (
-                <Letter
-                  key={`${index}-${t}`}
-                  letter={t}
-                  visible={
-                    wordState.letterStates[index] === 'correct' ||
-                    (isShowAnswerOnHover && isHoveringWord) ||
-                    (state.wordVisible !== 'noVisible' &&
-                      !(state.wordVisible === 'noVisibleVowel' && vowelLetters.includes(t.toLocaleUpperCase())))
-                  }
-                  state={wordState.letterStates[index]}
-                />
-              )
+              return <Letter key={`${index}-${t}`} letter={t} visible={getWordVisible(index)} state={wordState.letterStates[index]} />
             })}
           </div>
           {pronunciationIsOpen && <WordSound word={word.name} inputWord={wordState.inputWord} className="h-10 w-10" />}

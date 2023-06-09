@@ -3,7 +3,7 @@ import HandPositionIllustration from '../HandPositionIllustration'
 import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
-import WordVisible from '../WordVisible'
+import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
 import { useAtom } from 'jotai'
@@ -55,8 +55,8 @@ export default function Switcher() {
         <LoopWordSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="选择单词的显示形式">
-        <WordVisible></WordVisible>
+      <Tooltip className="h-7 w-7" content="开关默写模式（Ctrl + V）">
+        <WordDictationSwitcher />
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + Shift + V）">
         <button
