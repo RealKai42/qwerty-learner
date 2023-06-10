@@ -1,5 +1,7 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
+import { wordDictationConfigAtom } from '@/store'
+import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import IconPrev from '~icons/tabler/arrow-narrow-left'
@@ -9,6 +11,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
 
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
   const newIndex = useMemo(() => state.chapterData.index + (type === 'prev' ? -1 : 1), [state.chapterData.index, type])
   const word = state.chapterData.words[newIndex]
   const shortCutKey = useMemo(() => (type === 'prev' ? 'Ctrl + Shift + ArrowLeft' : 'Ctrl + Shift + ArrowRight'), [type])
@@ -35,9 +38,9 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
     if (type === 'prev') return word.name
 
     if (type === 'next') {
-      return state.isWordVisible ? word.name : word.name.replace(/./g, '_')
+      return !wordDictationConfig.isOpen ? word.name : word.name.replace(/./g, '_')
     }
-  }, [state.isWordVisible, type, word])
+  }, [wordDictationConfig.isOpen, type, word])
 
   return (
     <>
@@ -52,7 +55,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
             <div className={`grow-1 flex w-full flex-col ${type === 'next' ? 'items-end text-right' : ''}`}>
               <p
                 className={`font-mono text-2xl font-normal text-gray-700 dark:text-gray-400 ${
-                  state.isWordVisible ? 'tracking-normal' : 'tracking-wider'
+                  !wordDictationConfig.isOpen ? 'tracking-normal' : 'tracking-wider'
                 }`}
               >
                 {headWord}

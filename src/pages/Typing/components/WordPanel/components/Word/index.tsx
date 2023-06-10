@@ -8,7 +8,14 @@ import style from './index.module.css'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
-import { currentDictInfoAtom, isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isTextSelectableAtom, pronunciationIsOpenAtom } from '@/store'
+import {
+  currentDictInfoAtom,
+  isIgnoreCaseAtom,
+  isShowAnswerOnHoverAtom,
+  isTextSelectableAtom,
+  pronunciationIsOpenAtom,
+  wordDictationConfigAtom,
+} from '@/store'
 import type { Word } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
@@ -34,6 +41,8 @@ type WordState = {
   correctCount: number
   letterTimeArray: number[]
   letterMistake: LetterMistakes
+  // 用于随机隐藏字母功能
+  randomLetterVisible: boolean[]
 }
 
 const initialWordState: WordState = {
@@ -50,13 +59,17 @@ const initialWordState: WordState = {
   correctCount: 0,
   letterTimeArray: [],
   letterMistake: {},
+  randomLetterVisible: [],
 }
+
+const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
 export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
 
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
   const isIgnoreCase = useAtomValue(isIgnoreCaseAtom)
   const isShowAnswerOnHover = useAtomValue(isShowAnswerOnHoverAtom)
@@ -76,6 +89,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     newWordState.displayWord = headword
     newWordState.letterStates = new Array(headword.length).fill('normal')
     newWordState.startTime = getUtcStringForMixpanel()
+    newWordState.randomLetterVisible = headword.split('').map(() => Math.random() > 0.4)
     setWordState(newWordState)
   }, [word, setWordState])
 
@@ -107,6 +121,37 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const handleHoverWord = useCallback((checked: boolean) => {
     setIsHoveringWord(checked)
   }, [])
+
+  const getLetterVisible = useCallback(
+    (index: number) => {
+      if (wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord)) return true
+
+      if (wordDictationConfig.isOpen) {
+        if (wordDictationConfig.type === 'hideAll') return false
+
+        const letter = wordState.displayWord[index]
+        if (wordDictationConfig.type === 'hideVowel') {
+          return vowelLetters.includes(letter.toUpperCase()) ? false : true
+        }
+        if (wordDictationConfig.type === 'hideConsonant') {
+          return vowelLetters.includes(letter.toUpperCase()) ? true : false
+        }
+        if (wordDictationConfig.type === 'randomHide') {
+          return wordState.randomLetterVisible[index]
+        }
+      }
+      return true
+    },
+    [
+      isHoveringWord,
+      isShowAnswerOnHover,
+      wordDictationConfig.isOpen,
+      wordDictationConfig.type,
+      wordState.displayWord,
+      wordState.letterStates,
+      wordState.randomLetterVisible,
+    ],
+  )
 
   useEffect(() => {
     const inputLength = wordState.inputWord.length
@@ -230,14 +275,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
             className={`flex items-center ${isTextSelectable && 'select-all'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
           >
             {wordState.displayWord.split('').map((t, index) => {
-              return (
-                <Letter
-                  key={`${index}-${t}`}
-                  letter={t}
-                  visible={wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord) || state.isWordVisible}
-                  state={wordState.letterStates[index]}
-                />
-              )
+              return <Letter key={`${index}-${t}`} letter={t} visible={getLetterVisible(index)} state={wordState.letterStates[index]} />
             })}
           </div>
           {pronunciationIsOpen && <WordSound word={word.name} inputWord={wordState.inputWord} className="h-10 w-10" />}
