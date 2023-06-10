@@ -11,7 +11,20 @@ export default function StarCard() {
   const [countdown, setCountdown] = useState(5)
   const [isCounting, setIsCounting] = useState(false)
   const setDismissStartCardDate = useSetAtom(dismissStartCardDateAtom)
-  const [isShow, setIsShow] = useState(false)
+  const [isShow, setShow] = useState(false)
+  const [lastFocusedElement, setLastFocusedElement] = useState<HTMLElement | null>(null)
+
+  const setIsShow = useCallback(
+    (newIsShow: boolean) => {
+      setShow(newIsShow)
+      if (newIsShow) {
+        setLastFocusedElement(document.activeElement as HTMLElement)
+      } else {
+        lastFocusedElement?.focus()
+      }
+    },
+    [setShow, lastFocusedElement, setLastFocusedElement],
+  )
 
   useLayoutEffect(() => {
     // 直接使用 jotai 的 dismissStartCardDate 其值先是默认值，然后才是 localStorage 中的值
@@ -19,7 +32,7 @@ export default function StarCard() {
     if (value === null) {
       setIsShow(true)
     }
-  }, [])
+  }, [setIsShow])
 
   const onClickCloseStar = useCallback(() => {
     setIsShow(false)

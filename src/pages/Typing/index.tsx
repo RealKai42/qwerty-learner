@@ -79,17 +79,19 @@ const App: React.FC = () => {
   useEffect(() => {
     if (!typingElementRef.current) return
 
+    const element = typingElementRef.current
+
     if (!state.isTyping) {
-      typingElementRef.current.focus()
+      element.focus()
       const onKeyDown = (e: KeyboardEvent) => {
         if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
           e.preventDefault()
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
         }
       }
-      typingElementRef.current.addEventListener('keydown', onKeyDown)
+      element.addEventListener('keydown', onKeyDown)
 
-      return () => typingElementRef.current?.removeEventListener('keydown', onKeyDown)
+      return () => element?.removeEventListener('keydown', onKeyDown)
     }
   }, [state.isTyping, isLoading, dispatch])
 
