@@ -1,11 +1,13 @@
+import { TypingContext, TypingStateActionType } from '../../store'
 import standTypingHandPosition from '@/assets/standard_typing_hand_position.png'
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment, useContext, useState } from 'react'
 import IconKeyboard from '~icons/ic/round-keyboard'
 import IconX from '~icons/tabler/x'
 
 export default function HandPositionIllustration() {
   const [isOpen, setIsOpen] = useState(false)
+  const { dispatch } = useContext(TypingContext) ?? {}
 
   function closeModal() {
     setIsOpen(false)
@@ -13,6 +15,9 @@ export default function HandPositionIllustration() {
 
   function openModal() {
     setIsOpen(true)
+    if (dispatch) {
+      dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+    }
   }
 
   return (

@@ -127,7 +127,7 @@ const App: React.FC = () => {
   useConfetti(state.isFinished)
 
   return (
-    <div ref={typingElementRef} tabIndex={0}>
+    <div ref={typingElementRef} tabIndex={0} className="outline-none">
       <TypingContext.Provider value={{ state: state, dispatch }}>
         <StarCard />
         {state.isFinished && <ResultScreen />}
@@ -155,7 +155,7 @@ const App: React.FC = () => {
               </button>
             </Tooltip>
           </Header>
-          <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20 outline-none">
+          <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
             <div className="container relative mx-auto flex h-full flex-col items-center">
               <div className="container flex flex-grow items-center justify-center">
                 {isLoading ? (
