@@ -3,13 +3,12 @@ import HandPositionIllustration from '../HandPositionIllustration'
 import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
+import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
-import { currentDictInfoAtom, isOpenDarkModeAtom } from '@/store'
-import { useAtom, useAtomValue } from 'jotai'
+import { isOpenDarkModeAtom } from '@/store'
+import { useAtom } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import IconEyeSlash from '~icons/heroicons/eye-slash-solid'
-import IconEye from '~icons/heroicons/eye-solid'
 import IconMoon from '~icons/heroicons/moon-solid'
 import IconSun from '~icons/heroicons/sun-solid'
 import IconLanguage from '~icons/tabler/language'
@@ -23,26 +22,11 @@ export default function Switcher() {
     setIsOpenDarkMode((old) => !old)
   }
 
-  const changeWordVisibleState = () => {
-    if (dispatch) {
-      dispatch({ type: TypingStateActionType.TOGGLE_WORD_VISIBLE })
-    }
-  }
-
   const changeTransVisibleState = () => {
     if (dispatch) {
       dispatch({ type: TypingStateActionType.TOGGLE_TRANS_VISIBLE })
     }
   }
-
-  useHotkeys(
-    'ctrl+v',
-    () => {
-      changeWordVisibleState()
-    },
-    { enableOnFormTags: true, preventDefault: true },
-    [],
-  )
 
   useHotkeys(
     'ctrl+d',
@@ -60,8 +44,6 @@ export default function Switcher() {
     { enableOnFormTags: true, preventDefault: true },
     [],
   )
-  const isRomaji = useAtomValue(currentDictInfoAtom).language === 'romaji'
-  const switchWordVisibleTooltip = `开关${isRomaji ? '罗马字' : '英文'}显示（Ctrl + V）`
   return (
     <div className="flex items-center justify-center gap-2">
       <Tooltip content="音效设置">
@@ -72,18 +54,8 @@ export default function Switcher() {
         <LoopWordSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content={switchWordVisibleTooltip}>
-        <button
-          className={`p-[2px] ${state?.isWordVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
-          type="button"
-          onClick={(e) => {
-            changeWordVisibleState()
-            e.currentTarget.blur()
-          }}
-          aria-label={switchWordVisibleTooltip}
-        >
-          {state?.isWordVisible ? <IconEye className="icon" /> : <IconEyeSlash className="icon" />}
-        </button>
+      <Tooltip className="h-7 w-7" content={'开关默写模式（Ctrl + V）'}>
+        <WordDictationSwitcher />
       </Tooltip>
       <Tooltip className="h-7 w-7" content="开关释义显示（Ctrl + Shift + V）">
         <button

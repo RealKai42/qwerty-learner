@@ -296,8 +296,8 @@ export const kanaToRomajiDict: { [key: string]: string[] } = {
   フュ: ['fyu'],
   フョ: ['fyo'],
   ー: ['-'],
-  ん: ['n'],
-  ン: ['n'],
+  ん: ['nn'],
+  ン: ['nn'],
 }
 
 /**
