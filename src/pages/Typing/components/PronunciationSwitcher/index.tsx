@@ -153,7 +153,7 @@ const PronunciationSwitcher = () => {
                 </div>
                 {window.speechSynthesis && (
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-medium leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关释义发音</span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关释义发音</span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Switch checked={pronunciationConfig.isTransRead} onChange={onChangePronunciationIsTransRead} className="switch-root">
                         <span aria-hidden="true" className="switch-thumb" />
