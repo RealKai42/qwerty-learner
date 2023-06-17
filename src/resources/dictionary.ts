@@ -169,6 +169,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'coca_20000',
+    name: 'COCA20000词',
+    description: 'COCA20000词',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/coca20000.json',
+    length: 20199,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: '4000_Essential_English_Words1',
     name: 'Essential Words',
     description: '4000 Essential English Words meaning',
