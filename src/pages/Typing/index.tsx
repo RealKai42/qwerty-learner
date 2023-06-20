@@ -4,9 +4,11 @@ import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
 import StartButton from './components/StartButton'
 import Switcher from './components/Switcher'
+import WordList from './components/WordList'
 import WordPanel from './components/WordPanel'
+import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
-import { initialState, TypingContext, typingReducer, TypingStateActionType } from './store'
+import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
 import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
@@ -16,7 +18,8 @@ import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue } from 'jotai'
-import React, { useCallback, useEffect, useState } from 'react'
+import type React from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useImmerReducer } from 'use-immer'
 
@@ -116,6 +119,8 @@ const App: React.FC = () => {
     return () => clearInterval(intervalId)
   }, [state.isTyping, dispatch])
 
+  useConfetti(state.isFinished)
+
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
@@ -162,6 +167,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </Layout>
+      <WordList />
     </TypingContext.Provider>
   )
 }

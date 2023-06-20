@@ -1,6 +1,8 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
-import { useContext, useCallback, useMemo } from 'react'
+import { wordDictationConfigAtom } from '@/store'
+import { useAtomValue } from 'jotai'
+import { useCallback, useContext, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import IconPrev from '~icons/tabler/arrow-narrow-left'
 import IconNext from '~icons/tabler/arrow-narrow-right'
@@ -9,6 +11,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
 
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
   const newIndex = useMemo(() => state.chapterData.index + (type === 'prev' ? -1 : 1), [state.chapterData.index, type])
   const word = state.chapterData.words[newIndex]
   const shortCutKey = useMemo(() => (type === 'prev' ? 'Ctrl + Shift + ArrowLeft' : 'Ctrl + Shift + ArrowRight'), [type])
@@ -29,6 +32,16 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
     { preventDefault: true },
   )
 
+  const headWord = useMemo(() => {
+    if (!word) return ''
+
+    if (type === 'prev') return word.name
+
+    if (type === 'next') {
+      return !wordDictationConfig.isOpen ? word.name : word.name.replace(/./g, '_')
+    }
+  }, [wordDictationConfig.isOpen, type, word])
+
   return (
     <>
       {word ? (
@@ -40,7 +53,13 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
             {type === 'prev' && <IconPrev className="mr-4 shrink-0 grow-0 text-2xl" />}
 
             <div className={`grow-1 flex w-full flex-col ${type === 'next' ? 'items-end text-right' : ''}`}>
-              <p className="font-mono text-2xl font-normal text-gray-700 dark:text-gray-400">{word.name}</p>
+              <p
+                className={`font-mono text-2xl font-normal text-gray-700 dark:text-gray-400 ${
+                  !wordDictationConfig.isOpen ? 'tracking-normal' : 'tracking-wider'
+                }`}
+              >
+                {headWord}
+              </p>
               {state.isTransVisible && (
                 <p className="line-clamp-1 max-w-full text-sm font-normal text-gray-600 dark:text-gray-500">{word.trans.join('；')}</p>
               )}

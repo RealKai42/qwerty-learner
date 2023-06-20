@@ -1,6 +1,7 @@
 import { useChapterStats } from './hooks/useChapterStats'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
-import React, { useEffect, useRef } from 'react'
+import type React from 'react'
+import { useEffect, useRef } from 'react'
 import IconCheckCircle from '~icons/heroicons/check-circle-solid'
 
 export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, wordCount, onClick }) => {

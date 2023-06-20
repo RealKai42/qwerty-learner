@@ -1,6 +1,8 @@
 import { Dialog, Transition } from '@headlessui/react'
 import classNames from 'classnames'
-import React, { ElementType, Fragment, SVGProps } from 'react'
+import type { ElementType, SVGProps } from 'react'
+import type React from 'react'
+import { Fragment } from 'react'
 
 type InfoPanelProps = {
   openState: boolean

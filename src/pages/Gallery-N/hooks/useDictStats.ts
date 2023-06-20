@@ -1,5 +1,5 @@
 import { db } from '@/utils/db'
-import { IChapterRecord } from '@/utils/db/record'
+import type { IChapterRecord } from '@/utils/db/record'
 import { useEffect, useState } from 'react'
 
 export function useDictStats(dictID: string, isStartLoad: boolean) {

@@ -1,4 +1,4 @@
-import { WordUpdateAction } from '../InputHandler'
+import type { WordUpdateAction } from '../InputHandler'
 import { TypingContext } from '@/pages/Typing/store'
 import { isChineseSymbol, isLegal } from '@/utils'
 import { useCallback, useContext, useEffect } from 'react'

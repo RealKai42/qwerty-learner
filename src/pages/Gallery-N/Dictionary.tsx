@@ -1,4 +1,4 @@
-import { Dictionary } from '@/typings'
+import type { Dictionary } from '@/typings'
 import * as Progress from '@radix-ui/react-progress'
 
 interface Props {

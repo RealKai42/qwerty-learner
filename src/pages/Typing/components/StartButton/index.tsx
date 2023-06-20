@@ -1,7 +1,7 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
 import { randomConfigAtom } from '@/store'
-import { autoUpdate, offset, useHover, useFloating, useInteractions } from '@floating-ui/react'
+import { autoUpdate, offset, useFloating, useHover, useInteractions } from '@floating-ui/react'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'

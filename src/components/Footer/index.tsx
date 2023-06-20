@@ -4,10 +4,11 @@ import weChat from '@/assets/weChat.jpg'
 import InfoPanel from '@/components/InfoPanel'
 import Tooltip from '@/components/Tooltip'
 import { infoPanelStateAtom } from '@/store'
-import { InfoPanelType } from '@/typings'
+import type { InfoPanelType } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { useAtom } from 'jotai'
-import React, { useCallback } from 'react'
+import type React from 'react'
+import { useCallback } from 'react'
 import IconMail from '~icons/material-symbols/mail'
 import IconCoffee2 from '~icons/mdi/coffee'
 import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
@@ -225,7 +226,7 @@ const Footer: React.FC = () => {
         >
           鲁ICP备2022030649号
         </a>
-        <span className="select-none rounded bg-slate-200 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+        <span className="select-none rounded bg-slate-200 px-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
           Build <span className="select-all">{LATEST_COMMIT_HASH}</span>
         </span>
       </footer>

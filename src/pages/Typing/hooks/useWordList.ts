@@ -1,6 +1,6 @@
 import { CHAPTER_LENGTH } from '@/constants'
-import { currentDictInfoAtom, currentChapterAtom } from '@/store'
-import { Word, WordWithIndex } from '@/typings/index'
+import { currentChapterAtom, currentDictInfoAtom } from '@/store'
+import type { Word, WordWithIndex } from '@/typings/index'
 import { useAtom, useAtomValue } from 'jotai'
 import { useMemo } from 'react'
 import useSWR from 'swr'

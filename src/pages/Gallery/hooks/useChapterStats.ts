@@ -1,6 +1,6 @@
 import { currentDictIdAtom } from '@/store'
 import { db } from '@/utils/db'
-import { IChapterRecord } from '@/utils/db/record'
+import type { IChapterRecord } from '@/utils/db/record'
 import { useAtomValue } from 'jotai'
 import { useEffect, useState } from 'react'
 

@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { ElementType, SVGAttributes } from 'react'
+import type { ElementType, SVGAttributes } from 'react'
 import IconExclamationTriangle from '~icons/heroicons/exclamation-triangle-solid'
 import IconHandThumbUp from '~icons/heroicons/hand-thumb-up-solid'
 import IconHeart from '~icons/heroicons/heart-solid'
@@ -14,7 +14,7 @@ const ICON_MAPPER: IconMapper[] = [
   {
     icon: IconHeart,
     className: 'text-indigo-600',
-    text: (mistakeCount: number) => `表现不错！只错了 ${mistakeCount} 个单词`,
+    text: (mistakeCount: number) => `表现不错！` + (mistakeCount > 0 ? `只错了 ${mistakeCount} 个单词` : '全对了！'),
   },
   {
     icon: IconHandThumbUp,
