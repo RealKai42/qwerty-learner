@@ -86,9 +86,9 @@ export default function StarCard() {
       leave="transition ease-in duration-500 transform"
       leaveFrom="translate-x-0 translate-y-0"
       leaveTo="translate-x-full -translate-y-full"
-      className="fixed  inset-0 z-20 flex h-0 justify-center"
+      className="fixed inset-0 z-30 flex h-0 justify-center"
     >
-      <div className=" fixed right-1 top-4 flex w-150 flex-col items-center justify-evenly rounded-2xl bg-white p-12 shadow-2xl dark:bg-gray-800">
+      <div className="fixed right-1 top-4 flex w-150 flex-col items-center justify-evenly rounded-2xl bg-white p-12 shadow-2xl dark:bg-gray-800">
         <div className="absolute right-3 top-3">
           {isCounting && (
             <span className="m-1.5 dark:text-gray-100">

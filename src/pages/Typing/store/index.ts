@@ -27,7 +27,6 @@ export type TypingState = {
   isTyping: boolean
   isFinished: boolean
   isShowSkip: boolean
-  isWordVisible: boolean
   isTransVisible: boolean
   isLoopSingleWord: boolean
   // 是否正在保存数据
@@ -53,7 +52,6 @@ export const initialState: TypingState = {
   isTyping: false,
   isFinished: false,
   isShowSkip: false,
-  isWordVisible: true,
   isTransVisible: true,
   isLoopSingleWord: false,
   isSavingRecord: false,
@@ -74,7 +72,6 @@ export enum TypingStateActionType {
   SKIP_WORD = 'SKIP_WORD',
   SKIP_2_WORD_INDEX = 'SKIP_2_WORD_INDEX',
   REPEAT_CHAPTER = 'REPEAT_CHAPTER',
-  DICTATION_CHAPTER = 'DICTATION_CHAPTER',
   NEXT_CHAPTER = 'NEXT_CHAPTER',
   TOGGLE_WORD_VISIBLE = 'TOGGLE_WORD_VISIBLE',
   TOGGLE_TRANS_VISIBLE = 'TOGGLE_TRANS_VISIBLE',
@@ -100,9 +97,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.SKIP_WORD }
   | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
-  | { type: TypingStateActionType.DICTATION_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
-  | { type: TypingStateActionType.TOGGLE_WORD_VISIBLE }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER; addTime?: number }
   | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
@@ -197,23 +192,12 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       return newState
     }
 
-    case TypingStateActionType.DICTATION_CHAPTER: {
-      const newState = structuredClone(initialState)
-      newState.isTyping = true
-      newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
-      newState.isWordVisible = false
-      newState.isTransVisible = state.isTransVisible
-      return newState
-    }
     case TypingStateActionType.NEXT_CHAPTER: {
       const newState = structuredClone(initialState)
       newState.isTyping = true
       newState.isTransVisible = state.isTransVisible
       return newState
     }
-    case TypingStateActionType.TOGGLE_WORD_VISIBLE:
-      state.isWordVisible = !state.isWordVisible
-      break
     case TypingStateActionType.TOGGLE_TRANS_VISIBLE:
       state.isTransVisible = !state.isTransVisible
       break

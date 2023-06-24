@@ -3,31 +3,36 @@ import { SoundIcon } from '../SoundIcon'
 import styles from './index.module.css'
 import Tooltip from '@/components/Tooltip'
 import usePronunciationSound from '@/hooks/usePronunciation'
+import { TypingContext } from '@/pages/Typing/store'
 import { pronunciationIsOpenAtom } from '@/store'
 import { useAtomValue } from 'jotai'
-import { useCallback, useEffect } from 'react'
+import { useCallback, useContext, useEffect } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 const WordSound = ({ word, inputWord, ...rest }: WordSoundProps) => {
+  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
+  const { state } = useContext(TypingContext)!
+
   const { play, stop, isPlaying } = usePronunciationSound(word)
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
 
   useHotkeys(
     'ctrl+j',
     () => {
-      stop()
-      play()
+      if (state.isTyping) {
+        stop()
+        play()
+      }
     },
-    [play, stop],
+    [play, stop, state.isTyping],
     { enableOnFormTags: true, preventDefault: true },
   )
-
   useEffect(() => {
-    if (inputWord.length === 0) {
+    if (inputWord.length === 0 && state.isTyping) {
       stop()
       play()
     }
-  }, [play, inputWord, stop])
+  }, [play, inputWord, stop, state.isTyping])
 
   useEffect(() => {
     return stop
