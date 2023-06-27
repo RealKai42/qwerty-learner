@@ -60,7 +60,7 @@ const LineChart: FC<LineChartProps> = ({ data, title, suffix, name }) => {
     }
 
     chart.setOption(option)
-  }, [data, title, suffix])
+  }, [data, title, suffix, name])
 
   useEffect(() => {
     if (!chartRef.current) return
