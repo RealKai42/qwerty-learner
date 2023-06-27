@@ -2,6 +2,7 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import AdvancedSetting from './AdvancedSetting'
 import DataSetting from './DataSetting'
 import SoundSetting from './SoundSetting'
+import ViewSetting from '@/pages/Typing/components/Setting/ViewSetting'
 import { Dialog, Tab, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
@@ -106,6 +107,17 @@ export default function Setting() {
                           }
                         >
                           <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
+                          <span className="text-neutral-500 dark:text-neutral-300">显示设置</span>
+                        </Tab>
+                        <Tab
+                          className={({ selected }) =>
+                            classNames(
+                              'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
+                            )
+                          }
+                        >
+                          <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
                         </Tab>
                       </Tab.List>
@@ -116,6 +128,9 @@ export default function Setting() {
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
                           <AdvancedSetting />
+                        </Tab.Panel>
+                        <Tab.Panel className="flex h-full focus:outline-none">
+                          <ViewSetting />
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
                           <DataSetting />
