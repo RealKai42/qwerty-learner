@@ -926,14 +926,14 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-      {
+  {
     id: 'waiyan7',
     name: '外研高中必修1',
     description: '外研高中必修1',
     category: '青少年英语',
     tags: ['外研版'],
     url: '/dicts/WaiYanSheGaoZhong_1_T.json',
-    length: 480,
+    length: 410,
     language: 'en',
     languageCategory: 'en',
   },
