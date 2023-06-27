@@ -926,7 +926,7 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-      {
+  {
     id: 'waiyan7',
     name: '外研高中必修1',
     description: '外研高中必修1',
