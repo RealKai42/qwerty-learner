@@ -7,6 +7,8 @@ import { Dialog, Tab, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
 import IconCog6Tooth from '~icons/heroicons/cog-6-tooth-solid'
+import IconEye from '~icons/heroicons/eye-solid'
+import IconVisualstudiocode from '~icons/simple-icons/visualstudiocode'
 import IconAdjustmentsHorizontal from '~icons/tabler/adjustments-horizontal'
 import IconDatabaseCog from '~icons/tabler/database-cog'
 import IconEar from '~icons/tabler/ear'
@@ -106,7 +108,7 @@ export default function Setting() {
                             )
                           }
                         >
-                          <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
+                          <IconEye className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">显示设置</span>
                         </Tab>
                         <Tab
