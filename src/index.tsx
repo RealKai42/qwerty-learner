@@ -1,4 +1,5 @@
 import './index.css'
+import AnalysisPage from './pages/Analysis'
 // import GalleryPage from './pages/Gallery'
 import GalleryPage from './pages/Gallery-N'
 import TypingPage from './pages/Typing'
@@ -33,6 +34,7 @@ function Root() {
         <Routes>
           <Route index element={<TypingPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/analysis" element={<AnalysisPage />} />
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
