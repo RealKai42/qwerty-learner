@@ -58,7 +58,7 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   rate: 1,
 })
 
-export const fontSizeConfigAtom = atomForConfig('pronunciation', {
+export const fontSizeConfigAtom = atomForConfig('fontsize', {
   englishFont: 40,
   translateFont: 15,
 })
