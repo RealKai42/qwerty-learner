@@ -1,0 +1,428 @@
+[
+    {
+        "name": "stick",    
+        "trans": [
+            "棍，棒，拐杖；粘住，粘贴"
+        ]
+    },
+    {
+        "name": "stimulate",
+        "trans": [
+            "刺激，促使；使兴奋"
+        ]
+    },
+    {
+        "name": "stir",
+        "trans": [
+            "搅动，搅拌；使微动，移动；引起，激起"
+        ]
+    },
+    {
+        "name": "stipulate",
+        "trans": [
+            "规定，明确要求"
+        ]
+    },
+    {
+        "name": "infer",
+        "trans": [
+            "（根据已知事实等）推断，推定"
+        ]
+    },
+    {
+        "name": "inference",
+        "trans": [
+            "推论，推理；结论，推断结果"
+        ]
+    },
+    {
+        "name": "inferior",
+        "trans": [
+            "下等的，下级的；差的，次的；下级，晚辈"
+        ]
+    },
+    {
+        "name": "influence",
+        "trans": [
+            "影响，感化；势力，权势"
+        ]
+    },
+    {
+        "name": "influential",
+        "trans": [
+            "有影响的；权势的"
+        ]
+    },
+    {
+        "name": "inform",
+        "trans":[
+            "通知，告诉，报告；告发，告密"
+        ]
+    },
+    {
+        "name": "information",
+        "trans":[
+            "情报，资料，消息；信息"
+        ]
+    },
+    {
+        "name": "approach",
+        "trans": [
+            "靠近，接近；找...商量，同...联系；着手处理，开始对付"
+        ]
+    },
+    {
+        "name": "appropriate",
+        "trans": [
+            "恰当的，相称的"
+        ]
+    },
+    {
+        "name": "approval",
+        "trans": [
+            "赞成，批准，同意，认可"
+        ]
+    },
+    {
+        "name": "approve",
+        "trans": [
+            "批准，核准，通过；赞成，同意"
+        ]
+    },
+    {
+        "name":"apt",
+        "trans": [
+            "易于...的；有...倾向的；恰当的；聪明的"
+        ]
+    },
+    {
+        "name": "conform",
+        "trans": [
+            "相似，一致，符合；遵照，遵从，适应"
+        ]
+    },
+    {
+        "name": "confront",
+        "trans": [
+            "使面临，使遭遇；勇敢地面对，正视"
+        ]
+    },
+    {
+        "name": "confuse",
+        "trans": [
+            "使混乱，混淆"
+        ]
+    },
+    {
+        "name": "confusion",
+        "trans": [
+            "混乱，混淆"
+        ]
+    },
+    {
+        "name": "congress",
+        "trans": [
+            "代表大会；美国等国的国会，议会"
+        ]
+    },
+    {
+        "name": "connect",
+        "trans": [
+            "连接，连结；联系，结合"
+        ]
+    },
+    {
+        "name": "connection",
+        "trans": [
+            "联系；连接"
+        ]
+    },
+    {
+        "name": "conscious",
+        "trans": [
+            "神志清醒的，有...意识的；意识到的，自觉的"
+        ]
+    },
+    {
+        "name": "continual",
+        "trans": [
+            "不断的，连续的；（令人厌烦地）反复的，频繁的"
+        ]
+    },
+    {
+        "name": "continue",
+        "trans": [
+            "连续，继续；持续，不断发生"
+        ]
+    },
+    {
+        "name": "continuous",
+        "trans": [
+            "连续的，持续的"
+        ]
+    },
+    {
+        "name": "dismiss",
+        "trans": [
+            "解雇，免职"
+        ]
+    },
+    {
+        "name": "disorder",
+        "trans": [
+            "混乱，杂乱；骚乱；失调，疾病"
+        ]
+    },
+    {
+        "name": "disperse",
+        "trans": [
+            "分散，驱散，散去"
+        ]
+    },
+    {
+        "name": "displace",
+        "trans": [
+            "转移；替代，撤换"
+        ]
+    },
+    {
+        "name": "display",
+        "trans": [
+            "陈列，展览"
+        ]
+    },
+    {
+        "name": "distribute",
+        "trans": [
+            "分配，分发；分布，散布"
+        ]
+    },
+    {
+        "name": "distort",
+        "trans": [
+            "扭曲，扭歪；歪曲，曲解"
+        ]
+    },
+    {
+        "name": "dsitract",
+        "trans": [
+            "使转向；使分心，分散（思想）"
+        ]
+    },
+    {
+        "name": "evolution",
+        "trans": [
+            "进化，发展，演化"
+        ]
+    },
+    {
+        "name": "evolve",
+        "trans": [
+            "使发展，使进化，演变"
+        ]
+    },
+    {
+        "name": "exaggerate",
+        "trans": [
+            "夸张，夸大，对...言过其实"
+        ]
+    },
+    {
+        "name": "examine",
+        "trans": [
+            "检查，细查；对...进行考试"
+        ]
+    },
+    {
+        "name": "mock",
+        "trans": [
+            "嘲笑，嘲弄；模仿，挫败"
+        ]
+    },
+    {
+        "name": "mode",
+        "trans": [
+            "方式，式样"
+        ]
+    },
+    {
+        "name": "model",
+        "trans": [
+            "模型，原型；样式，模式；模范，典型，榜样"
+        ]
+    },
+    {
+        "name": "moderate",
+        "trans": [
+            "温和的，有节制的；适度的，中等的"
+        ]
+    },
+    {
+        "name": "modern",
+        "trans": [
+            "现代的，近代的，新式的"
+        ]
+    },
+    {
+        "name": "modernization",
+        "trans": [
+            "现代化"
+        ]
+    },
+    {
+        "name": "modest",
+        "trans": [
+            "谦虚的，谦逊的；适度的，不太大的"
+        ]
+    },
+    {
+        "name": "modify",
+        "trans": [
+            "修改；缓和，减轻；修饰"
+        ]
+    },
+    {
+        "name": "predecessor",
+        "trans": [
+            "前辈，前任；（被取代的）原有事物"
+        ]
+    },
+    {
+        "name": "predict",
+        "trans": [
+            "预言，预测，预告"
+        ]
+    },
+    {
+        "name": "preface",
+        "trans": [
+            "序言，引言，前言"
+        ]
+    },
+    {
+        "name": "preferable",
+        "trans": [
+            "更可取的，更好的"
+        ]
+    },
+    {
+        "name": "preference",
+        "trans": [
+            "偏爱，喜爱；优待，优惠，优先权"
+        ]
+    },
+    {
+        "name": "prejudice",
+        "trans": [
+            "偏见，成见，歧视；损害，侵害"
+        ]
+    },
+    {
+        "name": "preliminary",
+        "trans": [
+            "预备的，初步的"
+        ]
+    },
+    {
+        "name": "premier",
+        "trans": [
+            "首相，总理"
+        ]
+    },
+    {
+        "name": "premise",
+        "trans": [
+            "前提，假定；作出前提；提出...作为前提条件；假定"
+        ]
+    },
+    {
+        "name": "premium",
+        "trans": [
+            "额外费用，奖金，奖赏；保险费；学费，习艺费"
+        ]
+    },
+    {
+        "name": "preparation",
+        "trans": [
+            "准备，预备；制剂，制备品"
+        ]
+    },
+    {
+        "name": "reflect",
+        "trans": [
+            "反映，表现；反省，细想"
+        ]
+    },
+    {
+        "name": "reflection",
+        "trans": [
+            "影像，倒影；考虑，沉思，想法，见解"
+        ]
+    },
+    {
+        "name": "reform",
+        "trans": [
+            "改革，改良，改进；改造，改过自新"
+        ]
+    },
+    {
+        "name": "reject",
+        "trans": [
+            "拒绝，抵制，驳回；改造，改过自新"
+        ]
+    },
+    {
+        "name": "rejoice",
+        "trans": [
+            "使感到高兴，使充满喜悦"
+        ]
+    },
+    {
+        "name": "relate",
+        "trans": [
+            "讲述，叙述；使相互关联，联系"
+        ]
+    },
+    {
+        "name": "relation",
+        "trans": [
+            "关系，联系；亲属，亲戚"
+        ]
+    },
+    {
+        "name": "relationship",
+        "trans": [
+            "关系，联系"
+        ]
+    },
+    {
+        "name": "relative",
+        "trans": [
+            "亲戚，亲属；比较的，相对的；有关的，相关的"
+        ]
+    },
+    {
+        "name": "relativity",
+        "trans": [
+            "相关性，相对论"
+        ]
+    },
+    {
+        "name": "relevant",
+        "trans": [
+            "有关的，切题的；相关联的，相称的；有重大关系的；有意义的"
+        ]
+    },
+    {
+        "name": "overlook",
+        "trans": [
+            "俯瞰，眺望；看漏，忽略；宽容，放任"
+        ]
+    },
+    {
+        "name": "overseas",
+        "trans": [
+            "外国的，海外的；在海外，在国外"
+        ]
+    }
+]
