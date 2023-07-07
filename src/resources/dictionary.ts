@@ -202,6 +202,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'longman_communication_3000_words',
+    name: 'Longman Communication 3000',
+    description: 'Most frequent words in both spoken and written English',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/Longman_Communication_3000.json',
+    length: 3168,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'top_2000_English_Words',
     name: 'Top 2000 words',
     description: 'with highest frequency',
