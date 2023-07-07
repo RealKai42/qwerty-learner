@@ -44,7 +44,7 @@ export default function DictionaryComponent({ dictionary, onClick }: Props) {
         >
           {dictionary.name}
         </h1>
-        <p className={`mb-1 truncate ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.description}</p>
+        <p className={`mb-1 w-full truncate ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.description}</p>
         <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.length} 词</p>
         <div className=" flex w-full items-center pt-2">
           {progress > 0 && (
