@@ -1,0 +1,458 @@
+[
+    {
+        "name": "beam",
+        "trans": [
+            "光束，光柱；横梁；发光，照射"
+        ]
+    },
+    {
+        "name": "become",
+        "trans": [
+            "成为，变得；适宜，同...相称；使人显得漂亮，使好看"
+        ]
+    },
+    {
+        "name": "deprive",
+        "trans": [
+            "剥夺，使丧失"
+        ]
+    },
+    {
+        "name": "derive",
+        "trans": [
+            "取得，得到；追溯...的起源"
+        ]
+    },
+    {
+        "name": "describe",
+        "trans": [
+            "形容，描述"
+        ]
+    },
+    {
+        "name": "description",
+        "trans": [
+            "描述，形容；种类，类型"
+        ]
+    },
+    {
+        "name": "deserve",
+        "trans": [
+            "值得，应得"
+        ]
+    },
+    {
+        "name": "design",
+        "trans": [
+            "设计，绘制；设计，图样"
+        ]
+    },
+    {
+        "name": "designate",
+        "trans": [
+            "指明，标明；指定，指派"
+        ]
+    },
+    {
+        "name": "desirable",
+        "trans": [
+            "称心的，合意的"
+        ]
+    },
+    {
+        "name": "desire",
+        "trans": [
+            "希望，渴望；愿望，欲望，要求"
+        ]
+    },
+    {
+        "name": "flaw",
+        "trans": [
+            "裂缝；缺陷，缺点"
+        ]
+    },
+    {
+        "name": "flexible",
+        "trans": [
+            "柔韧的；易弯曲的；可变通的"
+        ]
+    },
+    {
+        "name": "fling",
+        "trans": [
+            "用力扔，掷，抛，丢"
+        ]
+    },
+    {
+        "name": "flourish",
+        "trans": [
+            "繁荣，茂盛，兴旺；挥舞，舞动；炫耀"
+        ]
+    },
+    {
+        "name": "grow",
+        "trans": [
+            "成为；增长；生长，成长"
+        ]
+    },
+    {
+        "name": "grown-up",
+        "trans": [
+            "成熟的，成人的；成年人"
+        ]
+    },
+    {
+        "name": "growth",
+        "trans": [
+            "生长，增长，发展"
+        ]
+    },
+    {
+        "name": "hinder",
+        "trans": [
+            "妨碍，阻止"
+        ]
+    },
+    {
+        "name": "hint",
+        "trans": [
+            "暗示；建议；线索，细微的迹象"
+        ]
+    },
+    {
+        "name": "hitherto",
+        "trans": [
+            "到目前为止；迄今"
+        ]
+    },
+    {
+        "name": "impact",
+        "trans": [
+            "冲击，撞击；影响，作用"
+        ]
+    },
+    {
+        "name": "impair",
+        "trans": [
+            "削弱，减少；损害，损伤"
+        ]
+    },
+    {
+        "name": "impart",
+        "trans": [
+            "给予，传授；告知，透露"
+        ]
+    },
+    {
+        "name": "implement",
+        "trans": [
+            "实施，执行，贯彻；工具，器具，用具"
+        ]
+    },
+    {
+        "name": "implication",
+        "trans": [
+            "含意，暗示"
+        ]
+    },
+    {
+        "name": "implicit",
+        "trans": [
+            "不言明的，含蓄的；无疑问的，绝对的"
+        ]
+    },
+    {
+        "name": "imply",
+        "trans": [
+            "意指，意味着，暗示"
+        ]
+    },
+    {
+        "name": "import",
+        "trans": [
+            "进口，输入；要旨，含义，意思"
+        ]
+    },
+    {
+        "name": "importance",
+        "trans": [
+            "重要性，重大"
+        ]
+    },
+    {
+        "name": "important",
+        "trans": [
+            "重要的，重大的；有权利的"
+        ]
+    },
+    {
+        "name": "impose",
+        "trans": [
+            "把...强加于；利用，占便宜"
+        ]
+    },
+    {
+        "name": "impress",
+        "trans": [
+            "印，盖印；留下印象"
+        ]
+    },
+    {
+        "name": "impression",
+        "trans": [
+            "印象，感想；盖印，压痕"
+        ]
+    },
+    {
+        "name": "impressive",
+        "trans": [
+            "给人深刻印象的，感人的"
+        ]
+    },
+    {
+        "name": "improve",
+        "trans": [
+            "改善，增进，提高"
+        ]
+    },
+    {
+        "name": "impulse",
+        "trans": [
+            "推动，驱动；冲动，一时的念头"
+        ]
+    },
+    {
+        "name": "limit",
+        "trans": [
+            "界限，限度，范围；限制，限定"
+        ]
+    },
+    {
+        "name": "limitation",
+        "trans": [
+            "限制，局限性"
+        ]
+    },
+    {
+        "name": "limited",
+        "trans": [
+            "有限的，被限制的"
+        ]
+    },
+    {
+        "name": "origin",
+        "trans": [
+            "起源，由来；出身，血统"
+        ]
+    },
+    {
+        "name": "original",
+        "trans": [
+            "最初的，原始的，原先的；新颖的，有独创性的；原物，原作，原文"
+        ]
+    },
+    {
+        "name": "originate",
+        "trans": [
+            "发源，产生，引起；开创，发明"
+        ]
+    },
+    {
+        "name": "petition",
+        "trans": [
+            "请愿，请愿书；正式的请求；向...请愿；正式请求，要求"
+        ]
+    },
+    {
+        "name": "phase",
+        "trans": [
+            "阶段，时期"
+        ]
+    },
+    {
+        "name": "phenomenon",
+        "trans": [
+            "现象；非凡的人、物或事"
+        ]
+    },
+    {
+        "name": "philosophy",
+        "trans": [
+            "哲学"
+        ]
+    },
+    {
+        "name": "phrase",
+        "trans": [
+            "短语，词语，习语"
+        ]
+    },
+    {
+        "name": "physical",
+        "trans": [
+            "自然科学的，物理的；肉体的，身体的；物质的，有形的"
+        ]
+    },
+    {
+        "name": "physician",
+        "trans": [
+            "医师，内科医生"
+        ]
+    },
+    {
+        "name": "pierce",
+        "trans": [
+            "刺入，刺穿，穿透；（以目光、洞察力等）看透，识破"
+        ]
+    },
+    {
+        "name": "corporate",
+        "trans": [
+            "公司的，社团的；全体的，共同的"
+        ]
+    },
+    {
+        "name": "corporation",
+        "trans": [
+            "公司；法人；法人团体"
+        ]
+    },
+    {
+        "name": "reason",
+        "trans": [
+            "理由，原因"
+        ]
+    },
+    {
+        "name": "reasonable",
+        "trans": [
+            "合理的，有道理的，通情达理的"
+        ]
+    },
+    {
+        "name": "recent",
+        "trans": [
+            "新近的，近来的"
+        ]
+    },
+    {
+        "name": "serve",
+        "trans": [
+            "服务，履行职责；满足，符合"
+        ]
+    },
+    {
+        "name": "servant",
+        "trans": [
+            "仆人，佣人"
+        ]
+    },
+    {
+        "name": "service",
+        "trans": [
+            "服务，帮助；公共设施，公共事业"
+        ]
+    },
+    {
+        "name": "set",
+        "trans": [
+            "放置；确定，决定；树立；创造"
+        ]
+    },
+    {
+        "name": "setback",
+        "trans": [
+            "挫折，退步；复发；延迟，阻碍"
+        ]
+    },
+    {
+        "name": "setting",
+        "trans": [
+            "安装，安置；环境，背景"
+        ]
+    },
+    {
+        "name": "settle",
+        "trans": [
+            "安定；安顿；停息，定居；解决，调停"
+        ]
+    },
+    {
+        "name": "settlement",
+        "trans": [
+            "解决，决定，调停；移民地，新住宅区"
+        ]
+    },
+    {
+        "name": "several",
+        "trans": [
+            "几个，数个，一些；各自的，分别的"
+        ]
+    },
+    {
+        "name": "severe",
+        "trans": [
+            "严厉的，严格的；剧烈的，严重的"
+        ]
+    },
+    {
+        "name": "shape",
+        "trans": [
+            "形状，外形；体形，身段"
+        ]
+    },
+    {
+        "name": "share",
+        "trans": [
+            "一份，份额，一部分；股份；分享，分担"
+        ]
+    },
+    {
+        "name": "sharp",
+        "trans": [
+            "锋利的，锐利的；轮廓鲜明的，鲜明的；急转的，突然的"
+        ]
+    },
+    {
+        "name": "shelter",
+        "trans": [
+            "掩蔽处，躲避处"
+        ]
+    },
+    {
+        "name": "sophisticated",
+        "trans": [
+            "老于世故的，老练的；复杂的；精密的；尖端的，高度发展的"
+        ]
+    },
+    {
+        "name": "sovereign",
+        "trans": [
+            "君主，统治，元首；至高无上的，君主的；独立自主的，完全的"
+        ]
+    },
+    {
+        "name": "sow",
+        "trans": [
+            "播种；传播；激起"
+        ]
+    },
+    {
+        "name": "toll",
+        "trans": [
+            "通行税；代价；损失；钟声；鸣钟（特指宣布死亡）"
+        ]
+    },
+    {
+        "name": "tone",
+        "trans": [
+            "音调，音色，风气，气氛；腔调，语气，色调"
+        ]
+    },
+    {
+        "name": "topic",
+        "trans": [
+            "话题，主题，题目"
+        ]
+    }
+]
