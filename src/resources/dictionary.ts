@@ -300,6 +300,28 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: '2024HongBao T1',
+    name: '2024HongBao Part1',
+    description: '2024考研英语红宝书必考词（上）',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/2024HongBao_T1.json',
+    length: 996,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: '2024HongBao T2',
+    name: '2024HongBao Part2',
+    description: '2024考研英语红宝书必考词（下）',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/2024HongBao_T2.json',
+    length: 853,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
