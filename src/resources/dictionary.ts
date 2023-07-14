@@ -302,7 +302,7 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: '2024HongBao T1',
-    name: '2024HongBao Part1',
+    name: '2024考研英语红宝书(上)',
     description: '2024考研英语红宝书必考词（上）',
     category: '中国考试',
     tags: ['其他'],
@@ -313,7 +313,7 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: '2024HongBao T2',
-    name: '2024HongBao Part2',
+    name: '2024考研英语红宝书(下)',
     description: '2024考研英语红宝书必考词（下）',
     category: '中国考试',
     tags: ['其他'],
