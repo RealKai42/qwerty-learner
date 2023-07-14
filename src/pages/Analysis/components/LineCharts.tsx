@@ -1,16 +1,27 @@
+import purple from './purple.json'
 import useWindowSize from '@/hooks/useWindowSize'
-import * as echarts from 'echarts'
+import { isOpenDarkModeAtom } from '@/store'
+import { LineChart } from 'echarts/charts'
+import { GridComponent, TitleComponent, TooltipComponent } from 'echarts/components'
+import * as echarts from 'echarts/core'
+import { CanvasRenderer } from 'echarts/renderers'
+import { useAtom } from 'jotai'
 import type { FC } from 'react'
 import { useEffect, useRef } from 'react'
 
-interface LineChartProps {
+echarts.registerTheme('purple', purple)
+echarts.use([GridComponent, TitleComponent, TooltipComponent, LineChart, CanvasRenderer])
+
+interface LineChartsProps {
   title: string
   data: [string, number][]
   name: string
   suffix?: string
 }
 
-const LineChart: FC<LineChartProps> = ({ data, title, suffix, name }) => {
+const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name }) => {
+  const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
+
   const chartRef = useRef<HTMLDivElement>(null)
 
   const { width, height } = useWindowSize()
@@ -18,18 +29,14 @@ const LineChart: FC<LineChartProps> = ({ data, title, suffix, name }) => {
   useEffect(() => {
     if (!chartRef.current || !data.length) return
 
-    const chart = echarts.init(chartRef.current)
+    let chart = echarts.getInstanceByDom(chartRef.current)
+    chart?.dispose()
+
+    chart = echarts.init(chartRef.current, isOpenDarkMode ? 'purple' : 'light')
+
     const option = {
-      tooltip: {
-        trigger: 'axis',
-        // formatter: function (p: [{ data: [string, number] }]) {
-        //   return p[0].data[0] + ': ' + p[0].data[1]
-        // },
-      },
-      title: {
-        left: 'center',
-        text: title,
-      },
+      tooltip: { trigger: 'axis' },
+      title: { left: 'center', text: title },
       xAxis: {
         type: 'time',
         axisPointer: {
@@ -42,9 +49,7 @@ const LineChart: FC<LineChartProps> = ({ data, title, suffix, name }) => {
       },
       yAxis: {
         type: 'value',
-        axisLabel: {
-          formatter: (value: number) => value + (suffix || ''),
-        },
+        axisLabel: { formatter: (value: number) => value + (suffix || '') },
       },
       series: [
         {
@@ -52,15 +57,13 @@ const LineChart: FC<LineChartProps> = ({ data, title, suffix, name }) => {
           type: 'line',
           smooth: true,
           data: data,
-          emphasis: {
-            focus: 'series',
-          },
+          emphasis: { focus: 'series' },
         },
       ],
     }
 
     chart.setOption(option)
-  }, [data, title, suffix, name])
+  }, [data, title, suffix, name, isOpenDarkMode])
 
   useEffect(() => {
     if (!chartRef.current) return
@@ -71,4 +74,4 @@ const LineChart: FC<LineChartProps> = ({ data, title, suffix, name }) => {
   return <div style={{ width: '100%', height: '100%' }} ref={chartRef} className="line-chart"></div>
 }
 
-export default LineChart
+export default LineCharts
