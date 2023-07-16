@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const container = document.getElementById('root')
-
+console.log('test cr')
 function Root() {
   const darkMode = useAtomValue(isOpenDarkModeAtom)
   useEffect(() => {
