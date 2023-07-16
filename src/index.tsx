@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'production') {
   // for dev
   mixpanel.init('5474177127e4767124c123b2d7846e2a', { debug: true })
 }
-
+console.log('tttttttest')
 const container = document.getElementById('root')
 console.log('test cr')
 function Root() {
