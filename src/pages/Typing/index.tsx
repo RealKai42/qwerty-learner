@@ -127,7 +127,7 @@ const App: React.FC = () => {
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
-          <Tooltip content="词典章节切换">
+          <Tooltip content="词典章节切换测试111">
             <NavLink
               className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
               to="/gallery"
