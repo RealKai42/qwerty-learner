@@ -66,7 +66,7 @@ export default function Switcher() {
             changeTransVisibleState()
             e.currentTarget.blur()
           }}
-          aria-label="开关释义显示（Ctrl + T）"
+          aria-label="开关释义显示（Ctrl + T）修改测试"
         >
           {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
