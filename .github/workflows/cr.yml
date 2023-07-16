@@ -19,7 +19,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_API_ENDPOINT: ${{ secrets.OPENAI_API_ENDPOINT }}
+          OPENAI_API_ENDPOINT: fair-sheep-43.deno.dev
           # Optional
           LANGUAGE: Chinese
           MODEL: gpt-3.5-turbo-16k-0613 # https://platform.openai.com/docs/models
