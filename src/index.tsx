@@ -23,9 +23,7 @@ const container = document.getElementById('root')
 
 function Root() {
   const darkMode = useAtomValue(isOpenDarkModeAtom)
-  useEffect(() => {
-    darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
-  }, [darkMode])
+  console.log('testcr')
 
   return (
     <React.StrictMode>
