@@ -20,8 +20,12 @@ const HeatmapCharts: FC<HeatmapChartsProps> = ({ data, title }) => {
       <div className="text-center text-xl font-bold text-gray-600	dark:text-white">{title}</div>
       <ActivityCalendar
         fontSize={20}
-        blockSize={24}
-        style={{ padding: '40px 60px 20px 100px', color: isOpenDarkMode ? '#fff' : '#000' }}
+        blockSize={22}
+        blockRadius={7}
+        style={{
+          padding: '40px 60px 20px 100px',
+          color: isOpenDarkMode ? '#fff' : '#000',
+        }}
         colorScheme={isOpenDarkMode ? 'dark' : 'light'}
         data={data}
         theme={{

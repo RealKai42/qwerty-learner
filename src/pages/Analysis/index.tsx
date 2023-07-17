@@ -51,16 +51,16 @@ const Analysis = () => {
               </div>
             ) : (
               <>
-                <div className="m-4 h-80 w-auto overflow-hidden rounded-lg shadow-lg dark:bg-[#5b5c6e]">
+                <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <HeatmapCharts title="过去一年练习次数热力图" data={exerciseRecord} />
                 </div>
-                <div className="m-4 h-80 w-auto overflow-hidden rounded-lg shadow-lg dark:bg-[#5b5c6e]">
+                <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <HeatmapCharts title="过去一年练习词数热力图" data={wordRecord} />
                 </div>
-                <div className="m-4 h-80 w-auto overflow-hidden rounded-lg shadow-lg dark:bg-[#5b5c6e]">
+                <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <LineCharts title="过去一年WPM趋势图" name="WPM" data={wpmRecord} />
                 </div>
-                <div className="m-4 h-80 w-auto overflow-hidden rounded-lg shadow-lg dark:bg-[#5b5c6e]">
+                <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <LineCharts title="过去一年正确率趋势图" name="正确率(%)" data={accuracyRecord} suffix="%" />
                 </div>
               </>
