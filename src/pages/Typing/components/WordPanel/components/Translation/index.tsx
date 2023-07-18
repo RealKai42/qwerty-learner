@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { SoundIcon } from '../SoundIcon'
 import Tooltip from '@/components/Tooltip'
 import useSpeech from '@/hooks/useSpeech'
@@ -11,6 +12,7 @@ export type TranslationProps = {
 export default function Translation({ trans }: TranslationProps) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const isShowTransRead = window.speechSynthesis && pronunciationConfig.isTransRead
+  if (!isShowTransRead) return <></> // 防止部分浏览器因为不支持 useSpeech 中的 api 而无法运行
   const speechOptions = useMemo(() => ({ volume: pronunciationConfig.transVolume }), [pronunciationConfig.transVolume])
   const { speak, speaking } = useSpeech(trans, speechOptions)
 
