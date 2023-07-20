@@ -27,8 +27,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'xinghuoqiaoji_4',
-    name: '星火四级巧记速记',
-    description: '星火四级巧记速记',
+    name: '四级巧记速记',
+    description: '四级巧记速记',
     category: '中国考试',
     tags: ['大学英语'],
     url: '/dicts/xinghuoqiaoji_4.json',
@@ -38,8 +38,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'xinghuoqiaoji_6',
-    name: '星火六级巧记速记',
-    description: '星火六级巧记速记',
+    name: '六级巧记速记',
+    description: '六级巧记速记',
     category: '中国考试',
     tags: ['大学英语'],
     url: '/dicts/xinghuoqiaoji_6.json',
