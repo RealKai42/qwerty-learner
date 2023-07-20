@@ -1,10 +1,3 @@
-/**
- * @Author Tianxing.Qin
- * @Date 2023-07-20 11:12:48
- * @LastEditors Tianxing.Qin
- * @LastEditTime 2023-07-20 14:53:17
- * @Description
- */
 import HeatmapCharts from './components/HeatmapCharts'
 import LineCharts from './components/LineCharts'
 import { useWordStats } from './hooks/useWordStats'
