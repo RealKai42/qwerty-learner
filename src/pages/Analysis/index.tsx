@@ -1,3 +1,10 @@
+/**
+ * @Author Tianxing.Qin
+ * @Date 2023-07-20 11:12:48
+ * @LastEditors Tianxing.Qin
+ * @LastEditTime 2023-07-20 14:53:17
+ * @Description
+ */
 import HeatmapCharts from './components/HeatmapCharts'
 import LineCharts from './components/LineCharts'
 import { useWordStats } from './hooks/useWordStats'
@@ -44,28 +51,30 @@ const Analysis = () => {
       <div className="flex w-full flex-1 flex-col overflow-y-auto pl-20 pr-20 pt-20">
         <IconX className="absolute right-20 top-10 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
         <ScrollArea.Root className="flex-1 overflow-y-auto">
-          <ScrollArea.Viewport className="h-full w-auto pb-[20rem]">
-            {isEmpty ? (
-              <div className="align-items-center m-4 grid h-80 w-auto place-content-center overflow-hidden rounded-lg shadow-lg dark:bg-gray-600">
-                <div className="text-2xl text-gray-400">暂无练习数据</div>
-              </div>
-            ) : (
-              <>
-                <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
-                  <HeatmapCharts title="过去一年练习次数热力图" data={exerciseRecord} />
+          <div className="block h-full w-auto pb-[20rem]" style={{ overflow: 'hidden scroll' }}>
+            <div style={{ minWidth: '100%' }}>
+              {isEmpty ? (
+                <div className="align-items-center m-4 grid h-80 w-auto place-content-center overflow-hidden rounded-lg shadow-lg dark:bg-gray-600">
+                  <div className="text-2xl text-gray-400">暂无练习数据</div>
                 </div>
-                <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
-                  <HeatmapCharts title="过去一年练习词数热力图" data={wordRecord} />
-                </div>
-                <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
-                  <LineCharts title="过去一年WPM趋势图" name="WPM" data={wpmRecord} />
-                </div>
-                <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
-                  <LineCharts title="过去一年正确率趋势图" name="正确率(%)" data={accuracyRecord} suffix="%" />
-                </div>
-              </>
-            )}
-          </ScrollArea.Viewport>
+              ) : (
+                <>
+                  <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                    <HeatmapCharts title="过去一年练习次数热力图" data={exerciseRecord} />
+                  </div>
+                  <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                    <HeatmapCharts title="过去一年练习词数热力图" data={wordRecord} />
+                  </div>
+                  <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                    <LineCharts title="过去一年WPM趋势图" name="WPM" data={wpmRecord} />
+                  </div>
+                  <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                    <LineCharts title="过去一年正确率趋势图" name="正确率(%)" data={accuracyRecord} suffix="%" />
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
           <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
         </ScrollArea.Root>
         <div className="overflow-y-auto"></div>
