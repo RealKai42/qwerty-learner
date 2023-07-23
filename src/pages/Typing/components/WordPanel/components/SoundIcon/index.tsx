@@ -37,7 +37,7 @@ export const SoundIcon = ({ duration = 500, animated = false, onClick, ...rest }
   const Icon = volumeIcons[animationFrameIndex]
 
   return (
-    <button type="button" className="focus:outline-none" onClick={onClick}>
+    <button type="button" className="focus:outline-none dark:fill-gray-400 dark:opacity-80" onClick={onClick}>
       <Icon {...rest} />
     </button>
   )

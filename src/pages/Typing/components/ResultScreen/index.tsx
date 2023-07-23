@@ -5,7 +5,7 @@ import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import styles from './index.module.css'
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom } from '@/store'
+import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom, wordDictationConfigAtom } from '@/store'
 import type { InfoPanelType } from '@/typings'
 import type { WordWithIndex } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
@@ -13,7 +13,6 @@ import { Transition } from '@headlessui/react'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
-import { utils, writeFileXLSX } from 'xlsx'
 import IconCoffee from '~icons/mdi/coffee'
 import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
 import IconGithub from '~icons/simple-icons/github'
@@ -25,6 +24,7 @@ const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
 
+  const setWordDictationConfig = useSetAtom(wordDictationConfigAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
@@ -36,34 +36,36 @@ const ResultScreen = () => {
   }, [dispatch])
 
   const exporWords = () => {
-    const { words, wrongWordData } = state.chapterData
-    const exportData = words.map((word) => {
-      const wrongWord = wrongWordData.find((wrongWord) => {
-        return word.name === wrongWord.name
+    import('xlsx').then((module) => {
+      const { utils, writeFileXLSX } = module
+      const { words, wrongWordData } = state.chapterData
+      const exportData = words.map((word) => {
+        const wrongWord = wrongWordData.find((wrongWord) => {
+          return word.name === wrongWord.name
+        })
+
+        return {
+          ...word,
+          ...wrongWord,
+          trans: word.trans.join(';'),
+          wrongLetter: wrongWord?.wrongLetters
+            .map((wrongLetter) => {
+              return `${wrongLetter.letter}:${wrongLetter.count}`
+            })
+            .join(';'),
+        }
       })
-
-      return {
-        ...word,
-        ...wrongWord,
-        trans: word.trans.join(';'),
-        wrongLetter: wrongWord?.wrongLetters
-          .map((wrongLetter) => {
-            return `${wrongLetter.letter}:${wrongLetter.count}`
-          })
-          .join(';'),
-      }
+      const ws = utils.json_to_sheet(
+        exportData.map((wrongWord) => {
+          Reflect.deleteProperty(wrongWord, 'index')
+          Reflect.deleteProperty(wrongWord, 'wrongLetters')
+          return wrongWord
+        }),
+      )
+      const wb = utils.book_new()
+      utils.book_append_sheet(wb, ws, 'Data')
+      writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
     })
-
-    const ws = utils.json_to_sheet(
-      exportData.map((wrongWord) => {
-        Reflect.deleteProperty(wrongWord, 'index')
-        Reflect.deleteProperty(wrongWord, 'wrongLetters')
-        return wrongWord
-      }),
-    )
-    const wb = utils.book_new()
-    utils.book_append_sheet(wb, ws, 'Data')
-    writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
   }
 
   const wrongWords = useMemo(() => {
@@ -101,19 +103,37 @@ const ResultScreen = () => {
   }, [state.timerData.time])
 
   const repeatButtonHandler = useCallback(() => {
+    setWordDictationConfig((old) => {
+      if (old.isOpen) {
+        if (old.openBy === 'auto') {
+          return { ...old, isOpen: false }
+        }
+      }
+      return old
+    })
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
-  }, [dispatch, randomConfig.isOpen])
+  }, [dispatch, randomConfig.isOpen, setWordDictationConfig])
 
   const dictationButtonHandler = useCallback(() => {
-    dispatch({ type: TypingStateActionType.DICTATION_CHAPTER, shouldShuffle: randomConfig.isOpen })
-  }, [dispatch, randomConfig.isOpen])
+    setWordDictationConfig((old) => ({ ...old, isOpen: true, openBy: 'auto' }))
+
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
+  }, [dispatch, randomConfig.isOpen, setWordDictationConfig])
 
   const nextButtonHandler = useCallback(() => {
+    setWordDictationConfig((old) => {
+      if (old.isOpen) {
+        if (old.openBy === 'auto') {
+          return { ...old, isOpen: false }
+        }
+      }
+      return old
+    })
     if (!isLastChapter) {
       setCurrentChapter((old) => old + 1)
       dispatch({ type: TypingStateActionType.NEXT_CHAPTER })
     }
-  }, [dispatch, isLastChapter, setCurrentChapter])
+  }, [dispatch, isLastChapter, setCurrentChapter, setWordDictationConfig])
 
   const exitButtonHandler = useCallback(() => {
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: false })

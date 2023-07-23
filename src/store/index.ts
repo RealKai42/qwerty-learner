@@ -2,7 +2,15 @@ import atomForConfig from './atomForConfig'
 import { DISMISS_START_CARD_DATE_KEY } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
-import type { Dictionary, InfoPanelState, LoopWordTimesOption, PhoneticType, PronunciationType } from '@/typings'
+import type {
+  Dictionary,
+  InfoPanelState,
+  LoopWordTimesOption,
+  PhoneticType,
+  PronunciationType,
+  WordDictationOpenBy,
+  WordDictationType,
+} from '@/typings'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
@@ -81,6 +89,12 @@ export const infoPanelStateAtom = atom<InfoPanelState>({
   vsc: false,
   community: false,
   redBook: false,
+})
+
+export const wordDictationConfigAtom = atomForConfig('wordDictationConfig', {
+  isOpen: false,
+  type: 'hideAll' as WordDictationType,
+  openBy: 'auto' as WordDictationOpenBy,
 })
 
 export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_START_CARD_DATE_KEY, null)
