@@ -1,3 +1,4 @@
+import { recordAnalysisAction } from '@/utils'
 import { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ChartPie from '~icons/heroicons/chart-pie-solid'
@@ -7,6 +8,7 @@ const AnalysisButton = () => {
 
   const toAnalysis = useCallback(() => {
     navigate('/analysis')
+    recordAnalysisAction('open')
   }, [navigate])
 
   return (
