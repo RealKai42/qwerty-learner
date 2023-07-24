@@ -35,37 +35,41 @@ const ResultScreen = () => {
     dispatch({ type: TypingStateActionType.TICK_TIMER, addTime: 0 })
   }, [dispatch])
 
-  const exporWords = () => {
-    import('xlsx').then((module) => {
-      const { utils, writeFileXLSX } = module
-      const { words, wrongWordData } = state.chapterData
-      const exportData = words.map((word) => {
-        const wrongWord = wrongWordData.find((wrongWord) => {
-          return word.name === wrongWord.name
-        })
+  const exportWords = () => {
+    import('xlsx')
+      .then((module) => {
+        const { utils, writeFileXLSX } = module
+        const { words, wrongWordData } = state.chapterData
+        const exportData = words.map((word) => {
+          const wrongWord = wrongWordData.find((wrongWord) => {
+            return word.name === wrongWord.name
+          })
 
-        return {
-          ...word,
-          ...wrongWord,
-          trans: word.trans.join(';'),
-          wrongLetter: wrongWord?.wrongLetters
-            .map((wrongLetter) => {
-              return `${wrongLetter.letter}:${wrongLetter.count}`
-            })
-            .join(';'),
-        }
+          return {
+            ...word,
+            ...wrongWord,
+            trans: word.trans.join(';'),
+            wrongLetter: wrongWord?.wrongLetters
+              .map((wrongLetter) => {
+                return `${wrongLetter.letter}:${wrongLetter.count}`
+              })
+              .join(';'),
+          }
+        })
+        const ws = utils.json_to_sheet(
+          exportData.map((wrongWord) => {
+            Reflect.deleteProperty(wrongWord, 'index')
+            Reflect.deleteProperty(wrongWord, 'wrongLetters')
+            return wrongWord
+          }),
+        )
+        const wb = utils.book_new()
+        utils.book_append_sheet(wb, ws, 'Data')
+        writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
       })
-      const ws = utils.json_to_sheet(
-        exportData.map((wrongWord) => {
-          Reflect.deleteProperty(wrongWord, 'index')
-          Reflect.deleteProperty(wrongWord, 'wrongLetters')
-          return wrongWord
-        }),
-      )
-      const wb = utils.book_new()
-      utils.book_append_sheet(wb, ws, 'Data')
-      writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
-    })
+      .catch(() => {
+        console.log('模块导入失败')
+      })
   }
 
   const wrongWords = useMemo(() => {
@@ -210,7 +214,7 @@ const ResultScreen = () => {
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-3.5 text-xl">
                 <ShareButton />
-                <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exporWords}></IexportWords>
+                <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IexportWords>
                 <IconXiaoHongShu
                   fontSize={15}
                   className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
