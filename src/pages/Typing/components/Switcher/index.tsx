@@ -23,6 +23,8 @@ export default function Switcher() {
     setIsOpenDarkMode((old) => !old)
   }
 
+  console.log(11123232)
+
   const changeTransVisibleState = () => {
     if (dispatch) {
       dispatch({ type: TypingStateActionType.TOGGLE_TRANS_VISIBLE })
