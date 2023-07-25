@@ -355,6 +355,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'adult self-study examination',
+    name: '专升本词汇',
+    description: '专升本词汇',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/adult-self-study-examination.json',
+    length: 3692,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
