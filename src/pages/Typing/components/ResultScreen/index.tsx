@@ -18,7 +18,7 @@ import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
 import IconGithub from '~icons/simple-icons/github'
 import IconWechat from '~icons/simple-icons/wechat'
 import IconX from '~icons/tabler/x'
-import IexportWords from '~icons/typcn/export'
+import IconExportWords from '~icons/typcn/export'
 
 const ResultScreen = () => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -38,34 +38,30 @@ const ResultScreen = () => {
   const exportWords = () => {
     import('xlsx')
       .then((module) => {
-        const { utils, writeFileXLSX } = module
         const { words, wrongWordData } = state.chapterData
         const exportData = words.map((word) => {
-          const wrongWord = wrongWordData.find((wrongWord) => {
-            return word.name === wrongWord.name
-          })
-
+          const wrongWord = wrongWordData.find((wrongWord) => word.name === wrongWord.name)
           return {
             ...word,
             ...wrongWord,
             trans: word.trans.join(';'),
-            wrongLetter: wrongWord?.wrongLetters
-              .map((wrongLetter) => {
-                return `${wrongLetter.letter}:${wrongLetter.count}`
-              })
-              .join(';'),
+            wrongLetter: wrongWord?.wrongLetters.map((wrongLetter) => `${wrongLetter.letter}:${wrongLetter.count}`).join(';'),
           }
         })
-        const ws = utils.json_to_sheet(
-          exportData.map((wrongWord) => {
-            Reflect.deleteProperty(wrongWord, 'index')
-            Reflect.deleteProperty(wrongWord, 'wrongLetters')
-            return wrongWord
-          }),
-        )
-        const wb = utils.book_new()
-        utils.book_append_sheet(wb, ws, 'Data')
-        writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
+        try {
+          const ws = module.utils.json_to_sheet(
+            exportData.map((wrongWord) => {
+              Reflect.deleteProperty(wrongWord, 'index')
+              Reflect.deleteProperty(wrongWord, 'wrongLetters')
+              return wrongWord
+            }),
+          )
+          const wb = module.utils.book_new()
+          module.utils.book_append_sheet(wb, ws, 'Data')
+          module.writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
+        } catch (error) {
+          console.error('Error exporting file:', error)
+        }
       })
       .catch(() => {
         console.log('模块导入失败')
@@ -214,7 +210,7 @@ const ResultScreen = () => {
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-3.5 text-xl">
                 <ShareButton />
-                <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IexportWords>
+                <IconExportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IconExportWords>
                 <IconXiaoHongShu
                   fontSize={15}
                   className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
