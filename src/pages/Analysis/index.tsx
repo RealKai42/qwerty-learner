@@ -44,7 +44,7 @@ const Analysis = () => {
       <div className="flex w-full flex-1 flex-col overflow-y-auto pl-20 pr-20 pt-20">
         <IconX className="absolute right-20 top-10 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
         <ScrollArea.Root className="flex-1 overflow-y-auto">
-          <ScrollArea.Viewport className="h-full w-auto pb-[20rem]">
+          <ScrollArea.Viewport className="h-full w-auto pb-[20rem] [&>div]:!block">
             {isEmpty ? (
               <div className="align-items-center m-4 grid h-80 w-auto place-content-center overflow-hidden rounded-lg shadow-lg dark:bg-gray-600">
                 <div className="text-2xl text-gray-400">暂无练习数据</div>
