@@ -1667,6 +1667,17 @@ const programming: DictionaryResource[] = [
     language: 'code',
     languageCategory: 'code',
   },
+  {
+    id: 'ai-machine-learning',
+    name: '人工智能: 机器学习',
+    description: 'AI机器学习 常用英语词汇',
+    category: '代码练习',
+    tags: ['AI'],
+    url: '/dicts/ai_machine_learning.json',
+    length: 726,
+    language: 'code',
+    languageCategory: 'code',
+  },
 ]
 
 // 日语词典
