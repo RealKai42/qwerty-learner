@@ -10,6 +10,7 @@ interface IWordStats {
   wordRecord: Activity[]
   wpmRecord: [string, number][]
   accuracyRecord: [string, number][]
+  wrongTimeRecord: { name: string; value: number }[]
 }
 
 // 获取两个日期之间的所有日期，使用dayjs计算
@@ -35,7 +36,13 @@ function getLevel(value: number) {
 }
 
 export function useWordStats(startTimeStamp: number, endTimeStamp: number) {
-  const [wordStats, setWordStats] = useState<IWordStats>({ exerciseRecord: [], wordRecord: [], wpmRecord: [], accuracyRecord: [] })
+  const [wordStats, setWordStats] = useState<IWordStats>({
+    exerciseRecord: [],
+    wordRecord: [],
+    wpmRecord: [],
+    accuracyRecord: [],
+    wrongTimeRecord: [],
+  })
 
   useEffect(() => {
     const fetchWordStats = async () => {
@@ -54,7 +61,7 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
   const records: IWordRecord[] = await db.wordRecords.where('timeStamp').between(startTimeStamp, endTimeStamp).toArray()
 
   if (records.length === 0) {
-    return { isEmpty: true, exerciseRecord: [], wordRecord: [], wpmRecord: [], accuracyRecord: [] }
+    return { isEmpty: true, exerciseRecord: [], wordRecord: [], wpmRecord: [], accuracyRecord: [], wrongTimeRecord: [] }
   }
 
   let data: {
@@ -63,12 +70,13 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
       words: string[] //练习词数组（不去重）
       totalTime: number //总计用时
       wrongCount: number //错误次数
+      wrongKeys: string[] //按错的按键
     }
   } = {}
 
   const dates = getDatesBetween(startTimeStamp * 1000, endTimeStamp * 1000)
   data = dates
-    .map((date) => ({ [date]: { exerciseTime: 0, words: [], totalTime: 0, wrongCount: 0 } }))
+    .map((date) => ({ [date]: { exerciseTime: 0, words: [], totalTime: 0, wrongCount: 0, wrongKeys: [] } }))
     .reduce((acc, curr) => ({ ...acc, ...curr }), {})
 
   for (let i = 0; i < records.length; i++) {
@@ -78,6 +86,7 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
     data[date].words = [...data[date].words, records[i].word]
     data[date].totalTime = data[date].totalTime + records[i].timing.reduce((acc, curr) => acc + curr, 0)
     data[date].wrongCount = data[date].wrongCount + records[i].wrongCount
+    data[date].wrongKeys = [...(data[date].wrongKeys || []), ...(Object.values(records[i].mistakes).flat() || [])]
   }
 
   const RecordArray = Object.entries(data)
@@ -104,6 +113,19 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
     date,
     Math.round((words.join('').length / (words.join('').length + wrongCount)) * 100),
   ]).filter((d) => d[1])
+  // 错误次数统计
+  const wrongTimeRecord: IWordStats['wrongTimeRecord'] = []
+  const allWrongTime = RecordArray.map(([, { wrongKeys }]) => wrongKeys)
+    .flat()
+    .map((key) => key.toUpperCase())
+  allWrongTime.forEach((key) => {
+    const index = wrongTimeRecord.findIndex((item) => item.name === key)
+    if (index === -1) {
+      wrongTimeRecord.push({ name: key, value: 1 })
+    } else {
+      wrongTimeRecord[index].value++
+    }
+  })
 
-  return { exerciseRecord, wordRecord, wpmRecord, accuracyRecord }
+  return { exerciseRecord, wordRecord, wpmRecord, accuracyRecord, wrongTimeRecord }
 }
