@@ -196,7 +196,7 @@
         "notation": "決勝(けっしょう)"
     },
     {
-        "name": "dam",
+        "name": "damu",
         "trans": [
             "① 名  水坝；水库"
         ],
@@ -658,7 +658,7 @@
         "notation": "室温(しつおん)"
     },
     {
-        "name": "stereotype",
+        "name": "sutereotaipu",
         "trans": [
             "⑤ 名  （印刷用语）铅版；老一套，模式化观念"
         ],
@@ -672,14 +672,14 @@
         "notation": "攻撃(こうげき)"
     },
     {
-        "name": "prologue",
+        "name": "puroro-gu",
         "trans": [
             "③ 名  序言；开端，开头"
         ],
         "notation": "プロローグ"
     },
     {
-        "name": "segmentation",
+        "name": "segumente-shon",
         "trans": [
             "⑤ 名  区分市场"
         ],
@@ -756,7 +756,7 @@
         "notation": "酸性(さんせい)"
     },
     {
-        "name": "seal",
+        "name": "shi-ru",
         "trans": [
             "① 名  密封条；贴纸"
         ],
@@ -1148,7 +1148,7 @@
         "notation": "身柄(みがら)"
     },
     {
-        "name": "gender",
+        "name": "jenda-",
         "trans": [
             "① 名  性别，男女差异"
         ],
@@ -1218,7 +1218,7 @@
         "notation": "背伸(せの)び"
     },
     {
-        "name": "seminar",
+        "name": "semina-",
         "trans": [
             "① 名  研讨会，小组讨论"
         ],
@@ -1239,7 +1239,7 @@
         "notation": "庶民(しょみん)"
     },
     {
-        "name": "sensor",
+        "name": "sensa-",
         "trans": [
             "① 名  传感器，感应装置"
         ],
@@ -1267,14 +1267,14 @@
         "notation": "収賄(しゅうわい)"
     },
     {
-        "name": "initial",
+        "name": "inisharu",
         "trans": [
             "② 名  单词或名字的首字母"
         ],
         "notation": "イニシャル"
     },
     {
-        "name": "internship",
+        "name": "inta-nshippu",
         "trans": [
             "⑥ 名  实习"
         ],
@@ -1330,7 +1330,7 @@
         "notation": "穏和(おんわ)"
     },
     {
-        "name": "guardrail",
+        "name": "ga-dore-ru",
         "trans": [
             "④ 名  公路上的护栏"
         ],
@@ -1428,14 +1428,14 @@
         "notation": "ずきずき"
     },
     {
-        "name": "shopping center",
+        "name": "shoppingusenta-",
         "trans": [
             "⑥ 名  商业区，购物中心"
         ],
         "notation": "ショッピングセンター"
     },
     {
-        "name": "shopping mall",
+        "name": "shoppingumo-ru",
         "trans": [
             "⑥ 名  商场，大型购物中心"
         ],
@@ -1449,14 +1449,14 @@
         "notation": "新卒(しんそつ)"
     },
     {
-        "name": "stamina",
+        "name": "sutamina",
         "trans": [
             "⓪ 名  持久力，耐力；精力；体力"
         ],
         "notation": "スタミナ"
     },
     {
-        "name": "spice",
+        "name": "supaisu",
         "trans": [
             "② 名  调味品，香料"
         ],
@@ -1498,7 +1498,7 @@
         "notation": "生態(せいたい)"
     },
     {
-        "name": "stalker",
+        "name": "suto-ka-",
         "trans": [
             "⓪ 名  跟踪狂，骚扰者"
         ],
@@ -1526,7 +1526,7 @@
         "notation": "墨絵(すみえ)"
     },
     {
-        "name": "smooth",
+        "name": "suma-zu",
         "trans": [
             "② ナ形  平滑的，光滑的；顺利的，流畅的，顺畅的"
         ],
@@ -1540,7 +1540,7 @@
         "notation": "すり替(か)える"
     },
     {
-        "name": "thrill",
+        "name": "suriru",
         "trans": [
             "① 名  惊险，刺激性，紧张感"
         ],
@@ -1792,7 +1792,7 @@
         "notation": "家屋(かおく)"
     },
     {
-        "name": "drugstore",
+        "name": "doraggusutoa",
         "trans": [
             "⑥ 名  药妆店，杂货店"
         ],
@@ -1869,7 +1869,7 @@
         "notation": "地方(ちほう)"
     },
     {
-        "name": "severe",
+        "name": "shibia",
         "trans": [
             "① ナ形  严厉的，苛刻的，毫不留情的"
         ],
@@ -1904,7 +1904,7 @@
         "notation": "突(つ)き放(はな)す"
     },
     {
-        "name": "safe",
+        "name": "se-fu",
         "trans": [
             "① 名  安全；（棒球）安全进垒"
         ],
@@ -2037,14 +2037,14 @@
         "notation": "着替(きが)え"
     },
     {
-        "name": "dynamic",
+        "name": "dainamikku",
         "trans": [
             "④ ナ形  动态的，有生气的"
         ],
         "notation": "ダイナミック"
     },
     {
-        "name": "vitality",
+        "name": "baitarithi-",
         "trans": [
             "③ 名  活力，生气，生命力"
         ],
@@ -2086,14 +2086,14 @@
         "notation": "詰(つ)めかける"
     },
     {
-        "name": "display",
+        "name": "dhisupure-",
         "trans": [
             "① 名·他动3  陈列，展示 "
         ],
         "notation": "ディスプレー"
     },
     {
-        "name": "technique",
+        "name": "tekunikku",
         "trans": [
             "① 名  技巧，技艺；艺术上的手法"
         ],
@@ -2121,7 +2121,7 @@
         "notation": "大陸(たいりく)"
     },
     {
-        "name": "down",
+        "name": "daun",
         "trans": [
             "① 名·自他动3  降低，下降；倒下；病倒"
         ],
@@ -2170,7 +2170,7 @@
         "notation": "冒険(ぼうけん)"
     },
     {
-        "name": "terminal care",
+        "name": "ta-minarukea",
         "trans": [
             "⑥ 名  临终看护；临终关怀"
         ],
@@ -2233,7 +2233,7 @@
         "notation": "毒(どく)"
     },
     {
-        "name": "doctor",
+        "name": "dokuta-",
         "trans": [
             "① 名  医生；博士"
         ],
@@ -2338,7 +2338,7 @@
         "notation": "捻(ねじ)る"
     },
     {
-        "name": "network",
+        "name": "nettowa-ku",
         "trans": [
             "④ 名  网络"
         ],
@@ -2380,7 +2380,7 @@
         "notation": "覗(のぞ)く"
     },
     {
-        "name": "parking",
+        "name": "pa-kingu",
         "trans": [
             "① 名  停车；停车场"
         ],
@@ -2401,7 +2401,7 @@
         "notation": "敷居(しきい)"
     },
     {
-        "name": "parking area",
+        "name": "pa-kingueria",
         "trans": [
             "⑥ 名  停车区域，停车场"
         ],
@@ -2443,7 +2443,7 @@
         "notation": "罰(ばつ)"
     },
     {
-        "name": "hacker",
+        "name": "hakka-",
         "trans": [
             "① 名  黑客（秘密窥视或改变他人计算机系统信息）"
         ],
@@ -2457,7 +2457,7 @@
         "notation": "構想(こうそう)"
     },
     {
-        "name": "pack",
+        "name": "pakku",
         "trans": [
             "① 名·他动3  包装；做面膜"
         ],
@@ -2485,7 +2485,7 @@
         "notation": "連続(れんぞく)"
     },
     {
-        "name": "dry",
+        "name": "dorai",
         "trans": [
             "② ナ形  干燥的；理智的，冷冰冰的"
         ],
@@ -2520,7 +2520,7 @@
         "notation": "話(はな)しかける"
     },
     {
-        "name": "panel",
+        "name": "paneru",
         "trans": [
             "① 名  油画板；告示板"
         ],
@@ -2548,11 +2548,11 @@
         "notation": "猛烈(もうれつ)"
     },
     {
-        "name": "凭re掛karu",
+        "name": "motarekakaru",
         "trans": [
             " ⑤ 自动1  凭靠，靠；依靠，依赖"
         ],
-        "notation": "凭れ掛かる"
+        "notation": "凭(もた)れ掛(か)かる"
     },
     {
         "name": "yakuzai",
@@ -2604,7 +2604,7 @@
         "notation": "属(ぞく)する"
     },
     {
-        "name": "service station",
+        "name": "sa-bisusute-shon",
         "trans": [
             "⑥ 名  服务站，修理站"
         ],
@@ -2625,7 +2625,7 @@
         "notation": "晩年(ばんねん)"
     },
     {
-        "name": "healthy",
+        "name": "herushi-",
         "trans": [
             "① ナ形  健康的"
         ],
@@ -2653,7 +2653,7 @@
         "notation": "便秘(べんぴ)"
     },
     {
-        "name": "home center",
+        "name": "ho-musenta-",
         "trans": [
             "④ 名  大型家居建材商店"
         ],
@@ -2709,7 +2709,7 @@
         "notation": "食(は)み出(で)る"
     },
     {
-        "name": "variety",
+        "name": "baraethi-",
         "trans": [
             "② 名  多样性，变化"
         ],
@@ -2737,7 +2737,7 @@
         "notation": "めど"
     },
     {
-        "name": "popular",
+        "name": "popyura-",
         "trans": [
             "① ナ形  流行的，受欢迎的"
         ],
@@ -2779,7 +2779,7 @@
         "notation": "身体(しんたい)"
     },
     {
-        "name": "pose",
+        "name": "po-zu",
         "trans": [
             "① 名  姿势，形态，样子"
         ],
@@ -2807,21 +2807,21 @@
         "notation": "無造作(むぞうさ)"
     },
     {
-        "name": "mechanism",
+        "name": "mekanizumu",
         "trans": [
             "③ 名  结构，组织；（机械）装置"
         ],
         "notation": "メカニズム"
     },
     {
-        "name": "变化",
+        "name": "mekkiri",
         "trans": [
             "(变化)  ③ 副  （变化）显著，明显，急剧"
         ],
         "notation": "めっきり"
     },
     {
-        "name": "policy",
+        "name": "porishi-",
         "trans": [
             "① 名  方针，政策；策略"
         ],
@@ -2849,7 +2849,7 @@
         "notation": "要素(ようそ)"
     },
     {
-        "name": "meter",
+        "name": "me-ta-",
         "trans": [
             "⓪ 名  计量仪表，计量器"
         ],
@@ -3073,7 +3073,7 @@
         "notation": "概略(がいりゃく)"
     },
     {
-        "name": "calcium",
+        "name": "karushiumu",
         "trans": [
             "③ 名  钙"
         ],
@@ -3227,11 +3227,11 @@
         "notation": "小声(こごえ)"
     },
     {
-        "name": "凭reru",
+        "name": "motareru",
         "trans": [
             " ③ 自动2  倚靠，凭靠；积食，不消化"
         ],
-        "notation": "凭れる"
+        "notation": "凭(もた)れる"
     },
     {
         "name": "momu",
@@ -3290,7 +3290,7 @@
         "notation": "終焉(しゅうえん)"
     },
     {
-        "name": "topic",
+        "name": "topikku",
         "trans": [
             "① 名  话题，主题，题目"
         ],
@@ -3745,7 +3745,7 @@
         "notation": "瑕疵(かし)"
     },
     {
-        "name": "double",
+        "name": "daburu",
         "trans": [
             "① 名  成双；两倍，加倍"
         ],
@@ -3794,7 +3794,7 @@
         "notation": "通報(つうほう)"
     },
     {
-        "name": "World Cup",
+        "name": "wa-rudokappu",
         "trans": [
             "⑤ 名  世界杯"
         ],
@@ -3808,7 +3808,7 @@
         "notation": "地価(ちか)"
     },
     {
-        "name": "reform",
+        "name": "rifo-mu",
         "trans": [
             "② 名·他动3  改革，改良；翻新，改造"
         ],
@@ -3822,14 +3822,14 @@
         "notation": "親子(おやこ)"
     },
     {
-        "name": "originality",
+        "name": "orijinarithi-",
         "trans": [
             "④ 名  独创性，创意，创造力"
         ],
         "notation": "オリジナリティー"
     },
     {
-        "name": "organ",
+        "name": "orugan",
         "trans": [
             "⓪ 名  风琴"
         ],
@@ -3857,7 +3857,7 @@
         "notation": "海水浴(かいすいよく)"
     },
     {
-        "name": "counter",
+        "name": "kaunta-",
         "trans": [
             "⓪ 名  柜台；服务台"
         ],
@@ -3878,7 +3878,7 @@
         "notation": "隔日(かくじつ)"
     },
     {
-        "name": "cocktail",
+        "name": "kakuteru",
         "trans": [
             "① 名  鸡尾酒"
         ],
@@ -3899,7 +3899,7 @@
         "notation": "過激(かげき)"
     },
     {
-        "name": "儿童用语",
+        "name": "kakekko",
         "trans": [
             "(儿童用语)  ② 名·自动3  （儿童用语）赛跑"
         ],
@@ -3955,7 +3955,7 @@
         "notation": "うねうね"
     },
     {
-        "name": "shift",
+        "name": "shifuto",
         "trans": [
             "① 名  移动；改变；替换；换班"
         ],
@@ -3983,7 +3983,7 @@
         "notation": "外泊(がいはく)"
     },
     {
-        "name": "en'en",
+        "name": "nobenobe",
         "trans": [
             "⓪ 副·ナ形  没完没了，接连不断"
         ],
@@ -4102,7 +4102,7 @@
         "notation": "発言(はつげん)"
     },
     {
-        "name": "captain",
+        "name": "kyaputen",
         "trans": [
             "① 名  首领；队长；船长"
         ],
@@ -4536,7 +4536,7 @@
         "notation": "体調(たいちょう)"
     },
     {
-        "name": "title",
+        "name": "taitoru",
         "trans": [
             "① 名  标题；头衔；字幕"
         ],
@@ -5089,7 +5089,7 @@
         "notation": "偽物(にせもの)"
     },
     {
-        "name": "nickname",
+        "name": "nikkune-mu",
         "trans": [
             "④ 名  昵称；外号，绰号"
         ],
@@ -5236,7 +5236,7 @@
         "notation": "気安(きやす)い"
     },
     {
-        "name": "champion",
+        "name": "chanpion",
         "trans": [
             "① 名  优胜者，冠军"
         ],
@@ -5278,7 +5278,7 @@
         "notation": "力強(ちからづよ)い"
     },
     {
-        "name": "channel",
+        "name": "channeru",
         "trans": [
             "⓪ 名  频道，波段；航道"
         ],
@@ -5383,7 +5383,7 @@
         "notation": "費(つい)やす"
     },
     {
-        "name": "talent",
+        "name": "tarento",
         "trans": [
             "⓪ 名  技能；艺人，演员"
         ],
@@ -5691,7 +5691,7 @@
         "notation": "地位(ちい)"
     },
     {
-        "name": "challenge",
+        "name": "charenji",
         "trans": [
             "② 名·自动3  挑战"
         ],
@@ -5705,7 +5705,7 @@
         "notation": "均質(きんしつ)"
     },
     {
-        "name": "up",
+        "name": "appu",
         "trans": [
             "① 名·自他动3  增高，提高"
         ],
@@ -6412,7 +6412,7 @@
         "notation": "接点(せってん)"
     },
     {
-        "name": "guest house",
+        "name": "gesutobausu",
         "trans": [
             "④ 名  宾馆，招待所"
         ],
@@ -6482,7 +6482,7 @@
         "notation": "有頂天(うちょうてん)"
     },
     {
-        "name": "为小事",
+        "name": "akuseku",
         "trans": [
             "(为小事)  ① 副·自动3  辛辛苦苦，忙忙碌碌；（为小事）苦恼"
         ],
@@ -6566,7 +6566,7 @@
         "notation": "巣立(すだ)ち"
     },
     {
-        "name": "sentence",
+        "name": "sentensu",
         "trans": [
             "① 名  句子"
         ],
@@ -6748,7 +6748,7 @@
         "notation": "自動詞(じどうし)"
     },
     {
-        "name": "雨",
+        "name": "shitoshito",
         "trans": [
             "(雨)  ① 副  （雨）淅淅沥沥"
         ],
@@ -6972,7 +6972,7 @@
         "notation": "義務(ぎむ)"
     },
     {
-        "name": "动物",
+        "name": "shitsukeru",
         "trans": [
             "(动物)  ③ 他动2  教育，培养；训练（动物）"
         ],
@@ -7238,7 +7238,7 @@
         "notation": "野郎(やろう)"
     },
     {
-        "name": "amateur",
+        "name": "amachua",
         "trans": [
             "⓪ 名  业余爱好者"
         ],
@@ -7301,7 +7301,7 @@
         "notation": "助手(じょしゅ)"
     },
     {
-        "name": "shock",
+        "name": "shokku",
         "trans": [
             "① 名  打击，震惊，冲击"
         ],
@@ -7378,7 +7378,7 @@
         "notation": "稲妻(いなずま)"
     },
     {
-        "name": "international",
+        "name": "inta-nashonaru",
         "trans": [
             "⑤ 名·ナ形  国际；国际的"
         ],
@@ -7392,7 +7392,7 @@
         "notation": "陰陽(おんよう)"
     },
     {
-        "name": "weekday",
+        "name": "ui-kude-",
         "trans": [
             "② 名  工作日，平日"
         ],
@@ -7434,7 +7434,7 @@
         "notation": "円周(えんしゅう)"
     },
     {
-        "name": "entry",
+        "name": "entori-",
         "trans": [
             "① 名·自动3  报名参加"
         ],
@@ -7476,7 +7476,7 @@
         "notation": "小児科(しょうにか)"
     },
     {
-        "name": "airmail",
+        "name": "eame-ru",
         "trans": [
             "③ 名  航空信件"
         ],
@@ -7532,7 +7532,7 @@
         "notation": "隠居(いんきょ)"
     },
     {
-        "name": "essay",
+        "name": "essei",
         "trans": [
             "① 名  随笔，散文"
         ],
@@ -7644,7 +7644,7 @@
         "notation": "省略(しょうりゃく)"
     },
     {
-        "name": "喝",
+        "name": "guigui",
         "trans": [
             "(喝)  ① 副  连续用力；使劲（喝），大口大口地（喝）"
         ],
@@ -7882,7 +7882,7 @@
         "notation": "真空(しんくう)"
     },
     {
-        "name": "single",
+        "name": "shinguru",
         "trans": [
             "① 名  单个，单人；单身"
         ],
@@ -7896,7 +7896,7 @@
         "notation": "素早(すばや)い"
     },
     {
-        "name": "speaker",
+        "name": "supi-ka-",
         "trans": [
             "② 名  发言的人；扬声器，喇叭"
         ],
@@ -8078,14 +8078,14 @@
         "notation": "侵害(しんがい)"
     },
     {
-        "name": "stage",
+        "name": "sute-ji",
         "trans": [
             "② 名  舞台；讲坛；阶段，程度"
         ],
         "notation": "ステージ"
     },
     {
-        "name": "snack",
+        "name": "sunakku",
         "trans": [
             "② 名  零食，小点心；小吃店"
         ],
@@ -8120,7 +8120,7 @@
         "notation": "澄(す)む"
     },
     {
-        "name": "slide",
+        "name": "suraido",
         "trans": [
             "⓪ 名·自他动3  幻灯片；滑行，滑动"
         ],
@@ -8204,7 +8204,7 @@
         "notation": "適用(てきよう)"
     },
     {
-        "name": "designer",
+        "name": "dezaina-",
         "trans": [
             "② 名  设计师"
         ],
@@ -8232,7 +8232,7 @@
         "notation": "押(お)し通(とお)す"
     },
     {
-        "name": "office",
+        "name": "ofisu",
         "trans": [
             "① 名  办公室，事务所"
         ],
@@ -8337,7 +8337,7 @@
         "notation": "職務(しょくむ)"
     },
     {
-        "name": "symbol",
+        "name": "shinboru",
         "trans": [
             "① 名  象征；符号"
         ],
@@ -8967,7 +8967,7 @@
         "notation": "送別(そうべつ)"
     },
     {
-        "name": "sauce",
+        "name": "so-su",
         "trans": [
             "① 名  酱料，调味汁"
         ],
@@ -9079,7 +9079,7 @@
         "notation": "雨具(あまぐ)"
     },
     {
-        "name": "girl",
+        "name": "ga-ru",
         "trans": [
             "① 名  少女，女孩"
         ],
@@ -9247,7 +9247,7 @@
         "notation": "品切(しなぎ)れ"
     },
     {
-        "name": "shutter",
+        "name": "shatta-",
         "trans": [
             "① 名  快门；百叶窗"
         ],
@@ -9289,7 +9289,7 @@
         "notation": "長時間(ちょうじかん)"
     },
     {
-        "name": "bucket",
+        "name": "baketsu",
         "trans": [
             "⓪ 名  水桶"
         ],
@@ -9359,7 +9359,7 @@
         "notation": "吊(つ)る"
     },
     {
-        "name": "outlet",
+        "name": "autoretto",
         "trans": [
             "④ 名  工厂直销，（奥特莱斯 ）直销店"
         ],
@@ -9415,7 +9415,7 @@
         "notation": "教(おし)え込(こ)む"
     },
     {
-        "name": "collection",
+        "name": "korekushon",
         "trans": [
             "② 名  收集，收藏"
         ],
@@ -9457,7 +9457,7 @@
         "notation": "外壁(がいへき)"
     },
     {
-        "name": "counseling",
+        "name": "kaunseringu",
         "trans": [
             "② 名  心理咨询，咨询指导"
         ],
@@ -9779,7 +9779,7 @@
         "notation": "否定(ひてい)"
     },
     {
-        "name": "volunteer",
+        "name": "boranthia",
         "trans": [
             "② 名  志愿者"
         ],
@@ -9933,7 +9933,7 @@
         "notation": "すたすた"
     },
     {
-        "name": "断绝",
+        "name": "suppari",
         "trans": [
             "(断绝)  ③ 副  干脆利落地切断；彻底（断绝），干脆"
         ],
@@ -10276,7 +10276,7 @@
         "notation": "捉(とら)える"
     },
     {
-        "name": "trouble",
+        "name": "toraberu",
         "trans": [
             "② 名  纠纷，纷争；故障"
         ],
@@ -10500,7 +10500,7 @@
         "notation": "当選(とうせん)"
     },
     {
-        "name": "后接否定",
+        "name": "dounimo",
         "trans": [
             "(后接否定)  ① 副  （后接否定）无论如何也；实在，的确"
         ],
@@ -10605,7 +10605,7 @@
         "notation": "灰(はい)"
     },
     {
-        "name": "hiking",
+        "name": "haikingu",
         "trans": [
             "① 名·自动3  郊游，远足，徒步旅游"
         ],
@@ -10654,7 +10654,7 @@
         "notation": "梯子(はしご)"
     },
     {
-        "name": "pattern",
+        "name": "pata-n",
         "trans": [
             "② 名  类型，模式；图案"
         ],
@@ -10759,7 +10759,7 @@
         "notation": "破産(はさん)"
     },
     {
-        "name": "雨",
+        "name": "bishobisho",
         "trans": [
             "(雨)  ① ナ形·副  湿透的；（雨）连绵不断"
         ],
@@ -10836,7 +10836,7 @@
         "notation": "密(ひそ)か"
     },
     {
-        "name": "vitamin",
+        "name": "bitamin",
         "trans": [
             "② 名  维生素"
         ],
@@ -11242,7 +11242,7 @@
         "notation": "成熟(せいじゅく)"
     },
     {
-        "name": "best ",
+        "name": "besuto",
         "trans": [
             "① 名  最好，最上等，最优秀；全力"
         ],
@@ -11333,7 +11333,7 @@
         "notation": "繁殖(はんしょく)"
     },
     {
-        "name": "market",
+        "name": "ma-ketto",
         "trans": [
             "① 名  市场，商场；销售市场"
         ],
@@ -11347,7 +11347,7 @@
         "notation": "方程式(ほうていしき)"
     },
     {
-        "name": "sharp",
+        "name": "sha-pu",
         "trans": [
             "① ナ形  尖锐的；敏锐的；清晰的"
         ],
@@ -11396,7 +11396,7 @@
         "notation": "披露(ひろう)"
     },
     {
-        "name": "best seller",
+        "name": "besutosera-",
         "trans": [
             "④ 名  畅销书"
         ],
@@ -11515,7 +11515,7 @@
         "notation": "ピン"
     },
     {
-        "name": "boom",
+        "name": "bu-mu",
         "trans": [
             "① 名  热潮，潮流"
         ],
@@ -11641,7 +11641,7 @@
         "notation": "別人(べつじん)"
     },
     {
-        "name": "veteran",
+        "name": "beteran",
         "trans": [
             "⓪ 名  老手，经验丰富的人"
         ],
@@ -11914,7 +11914,7 @@
         "notation": "待(ま)ち望(のぞ)む"
     },
     {
-        "name": "massage",
+        "name": "massa-ji",
         "trans": [
             "③ 名·他动3  按摩，推拿"
         ],
@@ -11963,7 +11963,7 @@
         "notation": "身(み)"
     },
     {
-        "name": "meeting",
+        "name": "mi-thingu",
         "trans": [
             "⓪ 名  会，会议"
         ],
@@ -12040,7 +12040,7 @@
         "notation": "細(こま)やか"
     },
     {
-        "name": "home page",
+        "name": "ho-mupe-ji",
         "trans": [
             "④ 名  （网站）主页，首页"
         ],
@@ -12334,7 +12334,7 @@
         "notation": "目(め)つき"
     },
     {
-        "name": "后接否定",
+        "name": "mettani",
         "trans": [
             "(后接否定)  ① 副  （后接否定）极少，几乎"
         ],
@@ -12362,7 +12362,7 @@
         "notation": "名産(めいさん)"
     },
     {
-        "name": "maker",
+        "name": "me-ka-",
         "trans": [
             "① 名  制造商，制造者"
         ],
@@ -12537,7 +12537,7 @@
         "notation": "平野(へいや)"
     },
     {
-        "name": "bakery",
+        "name": "ba-kari-",
         "trans": [
             "① 名  面包店，面包房"
         ],
@@ -12551,7 +12551,7 @@
         "notation": "敏捷(びんしょう)"
     },
     {
-        "name": "feedback",
+        "name": "fi-dobakku",
         "trans": [
             "④ 名·他动3  反馈"
         ],
@@ -12607,7 +12607,7 @@
         "notation": "敬具(けいぐ)"
     },
     {
-        "name": "festival",
+        "name": "fesuthibaru",
         "trans": [
             "① 名  节日，庆典"
         ],
@@ -12796,7 +12796,7 @@
         "notation": "不眠症(ふみんしょう)"
     },
     {
-        "name": "flea market",
+        "name": "furi-ma-ketto",
         "trans": [
             "④ 名  跳蚤市场，自由市场"
         ],
@@ -12852,7 +12852,7 @@
         "notation": "休息(きゅうそく)"
     },
     {
-        "name": "profile",
+        "name": "purofi-ru",
         "trans": [
             "③ 名  侧面，侧面像；人物简介"
         ],
@@ -13069,7 +13069,7 @@
         "notation": "小数点(しょうすうてん)"
     },
     {
-        "name": "去",
+        "name": "motarasu",
         "trans": [
             "(去)  ③ 他动1  带来（去）；招致，造成（某种结果）"
         ],
@@ -13202,7 +13202,7 @@
         "notation": "優先的(ゆうせんてき)"
     },
     {
-        "name": "塞得",
+        "name": "kichikichi",
         "trans": [
             "(塞得)  ⓪ 副·ナ形  （塞得）满满的；（时间）恰好，刚好；准确无误"
         ],
@@ -13244,14 +13244,14 @@
         "notation": "行方(ゆくえ)"
     },
     {
-        "name": "line",
+        "name": "rain",
         "trans": [
             "① 名  线；路线；航线"
         ],
         "notation": "ライン"
     },
     {
-        "name": "medal",
+        "name": "medaru",
         "trans": [
             "⓪ 名  奖牌，奖章"
         ],
@@ -13286,7 +13286,7 @@
         "notation": "結(むす)び"
     },
     {
-        "name": "rival",
+        "name": "raibaru",
         "trans": [
             "① 名  竞争对手，竞争者"
         ],
@@ -13335,7 +13335,7 @@
         "notation": "落第(らくだい)"
     },
     {
-        "name": "label",
+        "name": "raberu",
         "trans": [
             "① 名  商品标签；商标"
         ],
@@ -13377,14 +13377,14 @@
         "notation": "容積(ようせき)"
     },
     {
-        "name": "leisure",
+        "name": "reja-",
         "trans": [
             "① 名  空闲，业余时间；休闲娱乐"
         ],
         "notation": "レジャー"
     },
     {
-        "name": "lettuce",
+        "name": "retasu",
         "trans": [
             "① 名  生菜，叶用莴苣"
         ],
@@ -13447,7 +13447,7 @@
         "notation": "浪費(ろうひ)"
     },
     {
-        "name": "loan",
+        "name": "ro-n",
         "trans": [
             "① 名  贷款"
         ],
@@ -13475,7 +13475,7 @@
         "notation": "預金(よきん)"
     },
     {
-        "name": "romantic",
+        "name": "romanchikku",
         "trans": [
             "④ ナ形  浪漫的，幻想的"
         ],
@@ -13594,7 +13594,7 @@
         "notation": "かき氷(ごおり)"
     },
     {
-        "name": "smog",
+        "name": "sumoggu",
         "trans": [
             "② 名  烟雾，烟尘"
         ],
@@ -13699,7 +13699,7 @@
         "notation": "相槌(あいづち)"
     },
     {
-        "name": "皮肤",
+        "name": "kimekomaka",
         "trans": [
             "(皮肤)  ③ ナ形  （皮肤）细腻的；（做法）细致的"
         ],
@@ -13734,7 +13734,7 @@
         "notation": "客観的(きゃっかんてき)"
     },
     {
-        "name": "camp",
+        "name": "kyanpu",
         "trans": [
             "① 名·自动3  帐篷；露营，野营"
         ],
@@ -13909,7 +13909,7 @@
         "notation": "区域(くいき)"
     },
     {
-        "name": "quiz",
+        "name": "kuizu",
         "trans": [
             "① 名  猜谜，智力问答"
         ],
@@ -14665,7 +14665,7 @@
         "notation": "学説(がくせつ)"
     },
     {
-        "name": "plan",
+        "name": "puran",
         "trans": [
             "① 名  计划，方案"
         ],
@@ -15190,7 +15190,7 @@
         "notation": "鶴(つる)"
     },
     {
-        "name": "data",
+        "name": "de-ta",
         "trans": [
             "① 名  数据，资料，材料"
         ],
@@ -15225,7 +15225,7 @@
         "notation": "女将(じょしょう)"
     },
     {
-        "name": "innovation",
+        "name": "inobe-shon",
         "trans": [
             "③ 名  改革，革新，变革"
         ],
@@ -15274,7 +15274,7 @@
         "notation": "見事(みごと)"
     },
     {
-        "name": "cash",
+        "name": "kyasshu",
         "trans": [
             "① 名  现金"
         ],
@@ -15288,7 +15288,7 @@
         "notation": "一致(いっち)"
     },
     {
-        "name": "clip",
+        "name": "kurippu",
         "trans": [
             "② 名  夹子；回形针"
         ],
@@ -15372,7 +15372,7 @@
         "notation": "成金(なりきん)"
     },
     {
-        "name": "antenna",
+        "name": "antena",
         "trans": [
             "⓪ 名  天线"
         ],
@@ -15386,7 +15386,7 @@
         "notation": "規律(きりつ)"
     },
     {
-        "name": "digital",
+        "name": "dejitaru",
         "trans": [
             "① 名  数字（的），数字化（的）"
         ],
@@ -15876,7 +15876,7 @@
         "notation": "売(う)り出(だ)す"
     },
     {
-        "name": "inflation",
+        "name": "infure",
         "trans": [
             "⓪ 名  通货膨胀"
         ],
@@ -16856,14 +16856,14 @@
         "notation": "読(よ)み返(かえ)す"
     },
     {
-        "name": "live",
+        "name": "raibu",
         "trans": [
             "① 名  直播，实况播出"
         ],
         "notation": "ライブ"
     },
     {
-        "name": "life science",
+        "name": "raifusaiensu",
         "trans": [
             "④ 名  生命科学"
         ],
@@ -16877,7 +16877,7 @@
         "notation": "裏口(うらぐち)"
     },
     {
-        "name": "last",
+        "name": "rasuto",
         "trans": [
             "① 名  最后，末尾"
         ],
@@ -16940,14 +16940,14 @@
         "notation": "見抜(みぬ)く"
     },
     {
-        "name": "rank",
+        "name": "ranke",
         "trans": [
             "① 名·他动3  顺序，名次；排序"
         ],
         "notation": "ランク"
     },
     {
-        "name": "resort",
+        "name": "rizo-to",
         "trans": [
             "② 名  休养地，度假地"
         ],
@@ -17017,7 +17017,7 @@
         "notation": "未満(みまん)"
     },
     {
-        "name": "recipe",
+        "name": "reshipi",
         "trans": [
             "① 名  食谱，烹饪法"
         ],
@@ -17031,7 +17031,7 @@
         "notation": "老眼(ろうがん)"
     },
     {
-        "name": "list",
+        "name": "risuto",
         "trans": [
             "① 名  名单；一览表"
         ],
@@ -17073,7 +17073,7 @@
         "notation": "考慮(こうりょ)"
     },
     {
-        "name": "后接否定",
+        "name": "rokuni",
         "trans": [
             "(后接否定)  ⓪ 副  （后接否定）很好地，令人满意地"
         ],
@@ -17087,7 +17087,7 @@
         "notation": "寸前(すんぜん)"
     },
     {
-        "name": "trial",
+        "name": "toraiaru",
         "trans": [
             "② 名  试行，试运行；预赛"
         ],
@@ -17108,14 +17108,14 @@
         "notation": "緩行(かんこう)"
     },
     {
-        "name": "renewal",
+        "name": "rinyu-aru",
         "trans": [
             "② 名·他动3  更新；重建 "
         ],
         "notation": "リニューアル"
     },
     {
-        "name": "finance",
+        "name": "fainansu",
         "trans": [
             "① 名  金融，财政"
         ],
@@ -17234,7 +17234,7 @@
         "notation": "強烈(きょうれつ)"
     },
     {
-        "name": "guest",
+        "name": "gesuto",
         "trans": [
             "① 名  客人；嘉宾"
         ],
@@ -17311,7 +17311,7 @@
         "notation": "支持(しじ)"
     },
     {
-        "name": "comment",
+        "name": "komento",
         "trans": [
             "⓪ 名·自动3  评论，说明；发表意见"
         ],
@@ -17465,7 +17465,7 @@
         "notation": "高等(こうとう)"
     },
     {
-        "name": "chorus",
+        "name": "ko-rasu",
         "trans": [
             "① 名  合唱；合唱团"
         ],
