@@ -910,11 +910,11 @@
         "notation": "温(ぬく)い"
     },
     {
-        "name": "miru miru",
+        "name": "miru/miru",
         "trans": [
             "to see, to watch"
         ],
-        "notation": "見(み)る 観(み)る"
+        "notation": "見(み)る/観(み)る"
     },
     {
         "name": "kiiroi",
@@ -1617,7 +1617,7 @@
         "notation": "四(よん)日(にち)"
     },
     {
-        "name": "toui",
+        "name": "tooi",
         "trans": [
             "far"
         ],
@@ -2324,7 +2324,7 @@
         "notation": "暖(あたた)かい"
     },
     {
-        "name": "soredewa",
+        "name": "soredeha",
         "trans": [
             "in that situation"
         ],
@@ -4228,7 +4228,7 @@
         "notation": "五(ご)"
     },
     {
-        "name": "dewa",
+        "name": "deha",
         "trans": [
             "with that..."
         ],
