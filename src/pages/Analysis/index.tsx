@@ -1,4 +1,5 @@
 import HeatmapCharts from './components/HeatmapCharts'
+import KeyboardWithBarCharts from './components/KeyboardWithBarCharts'
 import LineCharts from './components/LineCharts'
 import { useWordStats } from './hooks/useWordStats'
 import Layout from '@/components/Layout'
@@ -34,7 +35,7 @@ const Analysis = () => {
 
   useHotkeys('enter,esc', onBack, { preventDefault: true })
 
-  const { isEmpty, exerciseRecord, wordRecord, wpmRecord, accuracyRecord } = useWordStats(
+  const { isEmpty, exerciseRecord, wordRecord, wpmRecord, accuracyRecord, wrongTimeRecord } = useWordStats(
     dayjs().subtract(1, 'year').unix(),
     dayjs().unix(),
   )
@@ -62,6 +63,9 @@ const Analysis = () => {
                 </div>
                 <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <LineCharts title="过去一年正确率趋势图" name="正确率(%)" data={accuracyRecord} suffix="%" />
+                </div>
+                <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                  <KeyboardWithBarCharts title="按键错误次数排行" name="错误次数" data={wrongTimeRecord} />
                 </div>
               </>
             )}

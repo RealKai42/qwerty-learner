@@ -28,7 +28,7 @@
         "notation": "彼(かれ)"
     },
     {
-        "name": "bikkuri･suru",
+        "name": "bikkuri/suru",
         "trans": [
             "to be surprised"
         ],
@@ -595,7 +595,7 @@
         "notation": "残念(ざんねん)"
     },
     {
-        "name": "chekku･suru",
+        "name": "chekku/suru",
         "trans": [
             "to check"
         ],
@@ -770,7 +770,7 @@
         "notation": "火(ひ)"
     },
     {
-        "name": "kenka･suru",
+        "name": "kenka/suru",
         "trans": [
             "to quarrel"
         ],
@@ -826,7 +826,7 @@
         "notation": "決(き)める"
     },
     {
-        "name": "touru",
+        "name": "tooru",
         "trans": [
             "to go through"
         ],
@@ -917,11 +917,11 @@
         "notation": "きっと"
     },
     {
-        "name": "落ru",
+        "name": "ochiru",
         "trans": [
             "to fall or drop"
         ],
-        "notation": "落(落)る"
+        "notation": "落(おち)る"
     },
     {
         "name": "okage",
@@ -1687,7 +1687,7 @@
         "notation": "必(かなら)ず"
     },
     {
-        "name": "matawa",
+        "name": "mataha",
         "trans": [
             "or,otherwise"
         ],
@@ -2688,7 +2688,7 @@
         "notation": "壁(かべ)"
     },
     {
-        "name": "touku",
+        "name": "tooku",
         "trans": [
             "distant"
         ],
@@ -3136,7 +3136,7 @@
         "notation": "慣(な)れる"
     },
     {
-        "name": "kega･suru",
+        "name": "kega/suru",
         "trans": [
             "to injure"
         ],
@@ -3738,11 +3738,11 @@
         "notation": "止(と)める"
     },
     {
-        "name": "naka々",
+        "name": "nakanaka",
         "trans": [
             "considerably"
         ],
-        "notation": "中(なか)々"
+        "notation": "中々(なかなか)"
     },
     {
         "name": "karera",
@@ -4004,7 +4004,7 @@
         "notation": "特急(とっきゅう)"
     },
     {
-        "name": "o･kanemochi",
+        "name": "o/kanemochi",
         "trans": [
             "rich man"
         ],
