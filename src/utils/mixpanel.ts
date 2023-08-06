@@ -37,6 +37,15 @@ export function recordShareAction(type: shareType) {
   mixpanel.track('share', { type })
 }
 
+export type analysisType = 'open'
+export function recordAnalysisAction(type: analysisType) {
+  const props = {
+    type,
+  }
+
+  mixpanel.track('analysis', props)
+}
+
 /**
  * mixpanel 单词和章节统计事件
  */

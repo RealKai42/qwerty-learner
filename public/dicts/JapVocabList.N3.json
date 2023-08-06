@@ -1078,7 +1078,7 @@
         "notation": "移動(いどう)"
     },
     {
-        "name": "tousu",
+        "name": "toosu",
         "trans": [
             "to let pass,to overlook,to continue"
         ],
@@ -1491,7 +1491,7 @@
         "notation": "畑(はたけ)"
     },
     {
-        "name": "kouru",
+        "name": "kooru",
         "trans": [
             "to freeze,to be frozen over,to congeal"
         ],
@@ -3997,7 +3997,7 @@
         "notation": "少女(しょうじょ)"
     },
     {
-        "name": "konnichiwa",
+        "name": "konnichiha",
         "trans": [
             "hello,good day (daytime greeting, id)"
         ],
@@ -4788,11 +4788,11 @@
         "notation": "穀物(こくもつ)"
     },
     {
-        "name": "偶々",
+        "name": "tamatama",
         "trans": [
             "casually,unexpectedly,accidentally,by chance"
         ],
-        "notation": "偶(偶)々"
+        "notation": "偶々(たまたま)"
     },
     {
         "name": "renzoku",
@@ -4851,7 +4851,7 @@
         "notation": "批判(ひはん)"
     },
     {
-        "name": "dewa",
+        "name": "deha",
         "trans": [
             "chance of going out,opportunity (to succeed),moment of departure,beginning of work"
         ],
@@ -7714,7 +7714,7 @@
         "notation": "利口(りこう)"
     },
     {
-        "name": "tourisugiru",
+        "name": "toorisugiru",
         "trans": [
             "to pass,to pass through"
         ],
@@ -9303,7 +9303,7 @@
         "notation": "きちんと"
     },
     {
-        "name": "touri",
+        "name": "toori",
         "trans": [
             "in accordance with ~,following ~,~ Street,~ Avenue"
         ],
@@ -10472,11 +10472,11 @@
         "notation": "勿論(もちろん)"
     },
     {
-        "name": "kiyoshi々",
+        "name": "seizei",
         "trans": [
             "at the most,at best,to the utmost,as much (far) as possible"
         ],
-        "notation": "精(きよし)々"
+        "notation": "精々(せいぜい)"
     },
     {
         "name": "seikaku",
@@ -10969,11 +10969,11 @@
         "notation": "不満(ふまん)"
     },
     {
-        "name": "偶",
+        "name": "tama",
         "trans": [
             "even number,couple,man and wife,friend"
         ],
-        "notation": "偶(偶)"
+        "notation": "偶(たま)"
     },
     {
         "name": "iin",
@@ -11123,7 +11123,7 @@
         "notation": "害(がい)"
     },
     {
-        "name": "aruiwa",
+        "name": "aruiha",
         "trans": [
             "or,possibly"
         ],
@@ -11508,7 +11508,7 @@
         "notation": "何(なん)とか"
     },
     {
-        "name": "jitsuwa",
+        "name": "jitsuha",
         "trans": [
             "as a matter of fact,by the way"
         ],
@@ -12096,11 +12096,11 @@
         "notation": "者(もの)"
     },
     {
-        "name": "佩",
+        "name": "hai",
         "trans": [
             "wear,put on (sword)"
         ],
-        "notation": "佩(佩)"
+        "notation": "佩(はい)"
     },
     {
         "name": "tsukamu",

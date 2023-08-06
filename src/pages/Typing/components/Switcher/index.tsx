@@ -1,4 +1,5 @@
 import { TypingContext, TypingStateActionType } from '../../store'
+import AnalysisButton from '../AnalysisButton'
 import HandPositionIllustration from '../HandPositionIllustration'
 import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
@@ -71,6 +72,11 @@ export default function Switcher() {
           {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
+
+      <Tooltip className="h-7 w-7" content="查看数据统计">
+        <AnalysisButton />
+      </Tooltip>
+
       <Tooltip className="h-7 w-7" content="开关深色模式（Ctrl + D）">
         <button
           className={`p-[2px] text-lg text-indigo-500 focus:outline-none`}
