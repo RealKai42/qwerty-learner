@@ -40,8 +40,8 @@ export default function ViewSetting() {
                 <Slider.Root
                   defaultValue={[fontSizeConfig.englishFont]}
                   min={40}
-                  max={90}
-                  step={5}
+                  max={96}
+                  step={4}
                   className="slider"
                   onValueChange={onChangeEnglishFontSize}
                 >
@@ -60,8 +60,8 @@ export default function ViewSetting() {
                 <Slider.Root
                   defaultValue={[fontSizeConfig.translateFont]}
                   max={60}
-                  min={15}
-                  step={5}
+                  min={14}
+                  step={4}
                   className="slider"
                   onValueChange={onChangeTranslateFontSize}
                 >

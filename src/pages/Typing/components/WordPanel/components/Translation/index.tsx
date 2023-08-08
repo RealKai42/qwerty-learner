@@ -27,7 +27,7 @@ export default function Translation({ trans }: TranslationProps) {
         className={`max-w-4xl text-center font-sans transition-colors duration-300 dark:text-white dark:text-opacity-80 ${
           isShowTransRead && 'pl-8'
         } ${isTextSelectable && 'select-text'}`}
-        style={{ fontSize: fontSizeConfig.translateFont }}
+        style={{ fontSize: fontSizeConfig.translateFont.toString() + 'px' }}
       >
         {trans}
       </span>
