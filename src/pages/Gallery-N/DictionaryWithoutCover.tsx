@@ -1,5 +1,6 @@
 import { useDictStats } from './hooks/useDictStats'
 import bookCover from '@/assets/book-cover.png'
+import Tooltip from '@/components/Tooltip'
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { currentDictIdAtom } from '@/store'
 import type { Dictionary } from '@/typings'
@@ -31,7 +32,7 @@ export default function DictionaryComponent({ dictionary, onClick }: Props) {
     <div
       ref={divRef}
       className={`group flex  h-36 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
-        isSelected ? 'bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-600 dark:hover:bg-gray-500'
+        isSelected ? 'bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700'
       }`}
       role="button"
       onClick={onClick}
@@ -44,7 +45,12 @@ export default function DictionaryComponent({ dictionary, onClick }: Props) {
         >
           {dictionary.name}
         </h1>
-        <p className={`mb-1 truncate ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.description}</p>
+        <Tooltip className="w-full" content={dictionary.description}>
+          <p className={`mb-1 w-full truncate ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>
+            {dictionary.description}
+          </p>
+        </Tooltip>
+
         <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.length} 词</p>
         <div className=" flex w-full items-center pt-2">
           {progress > 0 && (
