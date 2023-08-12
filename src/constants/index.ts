@@ -9,3 +9,8 @@ export const CONFETTI_DEFAULTS = {
   shapes: ['square'],
   ticks: 500,
 } as confetti.Options
+
+export const defaultFontSizeConfig = {
+  foreignFont: 48,
+  translateFont: 18,
+}
