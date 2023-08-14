@@ -393,6 +393,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'IELTS_tinglichangjing',
+    name: '雅思听力场景词汇',
+    description: '雅思听力场景词汇',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/IELTS_tinglichangjing.json',
+    length: 1207,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'ielts_disorder',
     name: 'IELTS乱序完整版',
     description: 'IELTS乱序完整版',
