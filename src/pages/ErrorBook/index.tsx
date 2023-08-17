@@ -6,12 +6,19 @@ import type { groupedWordRecords } from './type'
 import { db } from '@/utils/db'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import IconX from '~icons/tabler/x'
 
 export function ErrorBook() {
   const [groupedRecords, setGroupedRecords] = useState<groupedWordRecords[]>([])
   const [currentPage, setCurrentPage] = useState(1)
   const totalPages = useMemo(() => Math.ceil(groupedRecords.length / ITEM_PER_PAGE), [groupedRecords.length])
   const [sortType, setSortType] = useState<ISortType>('asc')
+  const navigate = useNavigate()
+
+  const onBack = useCallback(() => {
+    navigate('/')
+  }, [navigate])
 
   const setPage = useCallback(
     (page: number) => {
@@ -76,6 +83,7 @@ export function ErrorBook() {
 
   return (
     <div className="flex h-screen w-full flex-col items-center pb-4">
+      <IconX className="absolute right-10 top-5 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
       <div className="flex w-full flex-1 select-text items-start justify-center overflow-hidden">
         <div className="flex h-full w-5/6 flex-col pt-10">
           <div className="flex w-full justify-between rounded-lg bg-white px-6 py-5 text-lg text-black shadow-lg dark:bg-gray-800 dark:text-white">
