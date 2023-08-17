@@ -1,5 +1,6 @@
 import Loading from './components/Loading'
 import './index.css'
+import { ErrorBook } from './pages/ErrorBook'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
 import { useAtomValue } from 'jotai'
@@ -37,6 +38,7 @@ function Root() {
             <Route index element={<TypingPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/analysis" element={<AnalysisPage />} />
+            <Route path="/error-book" element={<ErrorBook />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </Routes>
         </Suspense>

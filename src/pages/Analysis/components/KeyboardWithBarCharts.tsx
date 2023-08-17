@@ -13,6 +13,7 @@ import { useEffect, useRef } from 'react'
 
 echarts.use([BarChart, CanvasRenderer, GeoComponent, MapChart, ToolboxComponent, TooltipComponent, UniversalTransition, VisualMapComponent])
 echarts.registerTheme('purple', purple)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 echarts.registerMap('Keyboard', Keyboard as any)
 
 const keyboardData = [
