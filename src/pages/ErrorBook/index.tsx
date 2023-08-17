@@ -78,7 +78,7 @@ export function ErrorBook() {
     <div className="flex h-screen w-full flex-col items-center pb-4">
       <div className="flex w-full flex-1 select-text items-start justify-center overflow-hidden">
         <div className="flex h-full w-5/6 flex-col pt-10">
-          <div className="flex w-full justify-between rounded-lg bg-white px-6 py-5 text-lg shadow-lg">
+          <div className="flex w-full justify-between rounded-lg bg-white px-6 py-5 text-lg text-black shadow-lg dark:bg-gray-800 dark:text-white">
             <span className="basis-2/12">单词</span>
             <span className="basis-6/12">释义</span>
             <HeadWrongNumber className="basis-1/12" sortType={sortType} setSortType={setSort} />

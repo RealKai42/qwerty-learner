@@ -13,7 +13,7 @@ const ErrorRow: FC<IErrorRowProps> = ({ record }) => {
   const { word, isLoading } = useGetWord(record.word, dictInfo)
 
   return (
-    <li className="opacity-85 flex w-full items-center justify-between rounded-lg bg-white px-6 py-3 shadow-md">
+    <li className="opacity-85 flex w-full items-center justify-between rounded-lg bg-white px-6 py-3 text-black shadow-md dark:bg-gray-800 dark:text-white">
       <span className="basis-2/12 break-normal">{record.word}</span>
       <span className="basis-6/12 break-normal">
         {!isLoading && word ? word.trans.join(', ') : <LoadingUI className="h-4 w-4 !border-2" />}

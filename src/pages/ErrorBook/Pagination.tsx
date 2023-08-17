@@ -21,12 +21,18 @@ const Pagination: FC<IPaginationProps> = ({ className, page, setPage }) => {
   }, [page, setPage])
 
   return (
-    <div className={`flex items-center gap-2  ${className}`}>
-      <button className="cursor-pointer rounded-full bg-white p-2 text-indigo-500 shadow-md" onClick={prevPage}>
+    <div className={`flex items-center gap-2 ${className}`}>
+      <button
+        className="cursor-pointer rounded-full bg-white p-2 text-indigo-500 shadow-md dark:bg-gray-800 dark:text-indigo-300"
+        onClick={prevPage}
+      >
         <PrevIcon />
       </button>
-      <span>{page}</span>
-      <button className="cursor-pointer rounded-full bg-white p-2 text-indigo-500 shadow-md" onClick={nextPage}>
+      <span className="text-black dark:text-white">{page}</span>
+      <button
+        className="cursor-pointer rounded-full bg-white p-2 text-indigo-500 shadow-md dark:bg-gray-800 dark:text-indigo-300"
+        onClick={nextPage}
+      >
         <NextIcon />
       </button>
     </div>
