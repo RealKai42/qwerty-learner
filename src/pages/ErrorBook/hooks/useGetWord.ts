@@ -3,12 +3,12 @@ import { wordListFetcher } from '@/utils/wordListFetcher'
 import { useEffect, useMemo, useState } from 'react'
 import useSWR from 'swr'
 
-export default function useGetWord(name: string | null | undefined, dict: Dictionary | null) {
+export default function useGetWord(name: string, dict: Dictionary) {
   const { data: wordList, error, isLoading } = useSWR(dict?.url, wordListFetcher)
   const [hasError, setHasError] = useState(false)
 
   const word: Word | undefined = useMemo(() => {
-    if (!wordList || !name) return undefined
+    if (!wordList) return undefined
 
     const word = wordList.find((word) => word.name === name)
     if (word) {
