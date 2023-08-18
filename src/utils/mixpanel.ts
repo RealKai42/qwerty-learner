@@ -46,7 +46,7 @@ export function recordAnalysisAction(type: analysisType) {
   mixpanel.track('analysis', props)
 }
 
-export type errorBookType = 'open'
+export type errorBookType = 'open' | 'detail'
 export function recordErrorBookAction(type: errorBookType) {
   const props = {
     type,
