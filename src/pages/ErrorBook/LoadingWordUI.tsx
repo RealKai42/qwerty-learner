@@ -6,10 +6,9 @@ type LoadingWordUIProps = {
   className?: string
   isLoading: boolean
   hasError: boolean
-  size?: number
 }
 
-export const LoadingWordUI: FC<LoadingWordUIProps> = ({ className, isLoading, hasError, size = 2 }) => {
+export const LoadingWordUI: FC<LoadingWordUIProps> = ({ className, isLoading, hasError }) => {
   return (
     <div className={`${className}`}>
       {hasError ? (
