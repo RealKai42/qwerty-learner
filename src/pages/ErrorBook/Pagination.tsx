@@ -7,11 +7,12 @@ type IPaginationProps = {
   className?: string
   page: number
   setPage: (page: number) => void
+  totalPages: number
 }
 
 export const ITEM_PER_PAGE = 20
 
-const Pagination: FC<IPaginationProps> = ({ className, page, setPage }) => {
+const Pagination: FC<IPaginationProps> = ({ className, page, setPage, totalPages }) => {
   const nextPage = useCallback(() => {
     setPage(page + 1)
   }, [page, setPage])
@@ -28,7 +29,7 @@ const Pagination: FC<IPaginationProps> = ({ className, page, setPage }) => {
       >
         <PrevIcon />
       </button>
-      <span className="text-black dark:text-white">{page}</span>
+      <span className="text-black dark:text-white">{`${page} / ${totalPages}`}</span>
       <button
         className="cursor-pointer rounded-full bg-white p-2 text-indigo-500 shadow-md dark:bg-gray-800 dark:text-indigo-300"
         onClick={nextPage}

@@ -104,7 +104,7 @@ export function ErrorBook() {
           </ScrollArea.Root>
         </div>
       </div>
-      <Pagination className="pt-3" page={currentPage} setPage={setPage} />
+      <Pagination className="pt-3" page={currentPage} setPage={setPage} totalPages={totalPages} />
     </div>
   )
 }
