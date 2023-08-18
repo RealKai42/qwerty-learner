@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
+import { LoadingWordUI } from '../LoadingWordUI'
 import useGetWord from '../hooks/useGetWord'
 import { currentRowDetailAtom } from '../store'
 import type { groupedWordRecords } from '../type'
 import DataTag from './DataTag'
 import RowPagination from './RowPagination'
-import { LoadingUI } from '@/components/Loading'
 import Phonetic from '@/pages/Typing/components/WordPanel/components/Phonetic'
 import Letter from '@/pages/Typing/components/WordPanel/components/Word/Letter'
 import { idDictionaryMap } from '@/resources/dictionary'
@@ -25,7 +25,7 @@ type RowDetailProps = {
 const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) => {
   const setCurrentRowDetail = useSetAtom(currentRowDetailAtom)
   const dictInfo = idDictionaryMap[currentRowDetail.dict]
-  const { word, isLoading } = useGetWord(currentRowDetail.word, dictInfo)
+  const { word, isLoading, hasError } = useGetWord(currentRowDetail.word, dictInfo)
 
   const rowDetailData: RowDetailData = useMemo(() => {
     const time =
@@ -62,10 +62,10 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
               <Letter key={`${index}-${t}`} letter={t} visible state="normal" />
             ))}
           </div>
-          <div>{!isLoading && word ? <Phonetic word={word} /> : <LoadingUI className="!h-4 !w-4 !border-2" />}</div>
+          <div>{word ? <Phonetic word={word} /> : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}</div>
           <div className="flex max-w-[24rem] items-center">
             <span className={`max-w-4xl text-center font-sans transition-colors duration-300 dark:text-white dark:text-opacity-80`}>
-              {!isLoading && word ? word.trans.join('；') : <LoadingUI className="!h-4 !w-4 !border-2" />}
+              {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
             </span>
           </div>
         </div>
