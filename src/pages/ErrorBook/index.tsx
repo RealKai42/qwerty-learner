@@ -89,7 +89,11 @@ export function ErrorBook() {
   return (
     <>
       <div className={`relative flex h-screen w-full flex-col items-center pb-4 ease-in ${currentRowDetail && 'blur-sm'}`}>
-        <IconX className="absolute right-10 top-5 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
+        <div className="mr-8 mt-4 flex w-auto items-center justify-center self-end">
+          <h1 className="font-lighter mr-4 w-auto self-end text-gray-500 opacity-70">Tip: 点击错误单词查看详细信息 </h1>
+          <IconX className="h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
+        </div>
+
         <div className="flex w-full flex-1 select-text items-start justify-center overflow-hidden">
           <div className="flex h-full w-5/6 flex-col pt-10">
             <div className="flex w-full justify-between rounded-lg bg-white px-6 py-5 text-lg text-black shadow-lg dark:bg-gray-800 dark:text-white">
@@ -112,7 +116,7 @@ export function ErrorBook() {
         </div>
         <Pagination className="pt-3" page={currentPage} setPage={setPage} totalPages={totalPages} />
       </div>
-      {currentRowDetail && <RowDetail currentRowDetail={currentRowDetail} allRecords={groupedRecords} />}
+      {currentRowDetail && <RowDetail currentRowDetail={currentRowDetail} allRecords={sortedRecords} />}
     </>
   )
 }

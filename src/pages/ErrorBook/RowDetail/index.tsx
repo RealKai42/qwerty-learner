@@ -54,8 +54,7 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
 
   return (
     <div className="absolute inset-0 flex  flex-col items-center  justify-center">
-      <div className="absolute inset-0 -z-10 cursor-pointer bg-transparent" onClick={onClose}></div>
-      <div className="my-card relative flex h-[32rem] min-w-[26rem] select-text flex-col items-center justify-around rounded-2xl bg-white px-3 py-10">
+      <div className="my-card relative z-10 flex h-[32rem] min-w-[26rem] select-text flex-col items-center justify-around rounded-2xl bg-white px-3 py-10">
         <IconX className="absolute right-3 top-3  h-6 w-6 cursor-pointer text-gray-400" onClick={onClose} />
         <div className="flex flex-col items-center justify-start">
           <div>
@@ -82,6 +81,7 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
         </div>
         <RowPagination className="absolute bottom-6 mt-10 bg-white" allRecords={allRecords} />
       </div>
+      <div className="absolute inset-0 z-0  cursor-pointer bg-transparent" onClick={onClose}></div>
     </div>
   )
 }
