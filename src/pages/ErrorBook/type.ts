@@ -1,8 +1,8 @@
-import type { IWordRecord } from '@/utils/db/record'
+import type { WordRecord } from '@/utils/db/record'
 
 export type groupedWordRecords = {
   word: string
   dict: string
-  records: IWordRecord[]
+  records: WordRecord[]
   wrongCount: number
 }

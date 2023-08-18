@@ -13,6 +13,7 @@
     "@radix-ui/react-slider": "^1.1.1",
     "canvas-confetti": "^1.6.0",
     "classnames": "^2.3.2",
+    "daisyui": "^3.5.1",
     "dayjs": "^1.11.8",
     "dexie": "^3.2.3",
     "dexie-export-import": "^4.0.7",

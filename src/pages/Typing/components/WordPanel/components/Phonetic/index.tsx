@@ -1,9 +1,9 @@
 import { isTextSelectableAtom, phoneticConfigAtom } from '@/store'
-import type { WordWithIndex } from '@/typings'
+import type { Word, WordWithIndex } from '@/typings'
 import { useAtomValue } from 'jotai'
 
 export type PhoneticProps = {
-  word: WordWithIndex
+  word: WordWithIndex | Word
 }
 
 function Phonetic({ word }: PhoneticProps) {
