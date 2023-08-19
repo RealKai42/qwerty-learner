@@ -31,7 +31,7 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
   useEffect(() => {
     const synth = window.speechSynthesis
     if (!synth) {
-      throw new Error('SpeechSynthesis API is not supported in this browser')
+      console.error('SpeechSynthesis API is not supported in this browser')
     }
 
     const newUtterance = new SpeechSynthesisUtterance(text)
