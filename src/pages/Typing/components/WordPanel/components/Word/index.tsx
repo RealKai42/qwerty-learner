@@ -41,6 +41,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
+  const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
 
   useEffect(() => {
     // run only when word changes
@@ -223,7 +224,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   return (
     <>
       <InputHandler updateInput={updateInput} />
-      <div className="flex flex-col justify-center pb-1 pt-4">
+      <div lang={currentLanguageCategory !== 'code' ? currentLanguageCategory : 'en'} className="flex flex-col justify-center pb-1 pt-4">
         {currentLanguage === 'romaji' && word.notation && <Notation notation={word.notation} />}
         <div className="relative">
           <div

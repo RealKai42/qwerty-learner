@@ -18,6 +18,10 @@ class RecordDB extends Dexie {
       wordRecords: '++id,word,timeStamp,dict,chapter,errorCount,[dict+chapter]',
       chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
     })
+    this.version(2).stores({
+      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
+      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
+    })
   }
 }
 

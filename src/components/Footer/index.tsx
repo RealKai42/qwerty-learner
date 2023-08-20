@@ -12,6 +12,7 @@ import { useCallback } from 'react'
 import IconMail from '~icons/material-symbols/mail'
 import IconCoffee2 from '~icons/mdi/coffee'
 import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
+import IconTwitter from '~icons/ri/twitter-fill'
 import IconGithub from '~icons/simple-icons/github'
 import IconVisualstudiocode from '~icons/simple-icons/visualstudiocode'
 import IconWechat2 from '~icons/simple-icons/wechat'
@@ -167,6 +168,9 @@ const Footer: React.FC = () => {
           <IconWechat2 fontSize={16} className="text-gray-500 hover:text-green-500 dark:text-gray-400 dark:hover:text-green-500" />
         </button>
 
+        <a href="https://twitter.com/Kaiyi42" target="_blank" title="前往中国大陆镜像" rel="noreferrer">
+          <IconTwitter fontSize={16} className="text-gray-500 hover:text-[#1DA1F2] dark:text-gray-400 dark:hover:text-[#1DA1F2]" />
+        </a>
         <button
           className="cursor-pointer focus:outline-none "
           type="button"
