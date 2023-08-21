@@ -75,7 +75,7 @@ While typing, QWERTY Learner shows the [IPA][ipa] of current word and reads the 
 
 ### Dictation Mode
 
-After peple finish a chapter, QWERTY Learner will ask if people are willing to dictate the chapter. This is intended to consolidate words learned in the chapter.
+After people finish a chapter, QWERTY Learner will ask if people are willing to dictate the chapter. This is intended to consolidate words learned in the chapter.
 
 <div align=center>
   <img src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/phonetic.jpeg"/>
