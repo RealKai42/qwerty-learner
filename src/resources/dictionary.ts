@@ -1387,6 +1387,17 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Macmillan7000',
+    name: '麦克米伦7000',
+    description: '麦克米伦7000',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/Macmillan7000.json',
+    length: 6268,
+    language: 'en',
+    languageCategory: 'en',
+  }
 ]
 // 编程字典
 const programming: DictionaryResource[] = [
