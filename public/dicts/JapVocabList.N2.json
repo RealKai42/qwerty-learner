@@ -49,7 +49,7 @@
         "notation": "停止(ていし)"
     },
     {
-        "name": "oodouri",
+        "name": "oodoori",
         "trans": [
             "main street"
         ],
@@ -1043,7 +1043,7 @@
         "notation": "安易(あんい)"
     },
     {
-        "name": "hitodouri",
+        "name": "hitodoori",
         "trans": [
             "pedestrian traffic"
         ],
@@ -1547,11 +1547,11 @@
         "notation": "将棋(しょうぎ)"
     },
     {
-        "name": "betsu々",
+        "name": "betsubetsu",
         "trans": [
             "separately,individually"
         ],
-        "notation": "別(べつ)々"
+        "notation": "別々(べつべつ)"
     },
     {
         "name": "kousa",
@@ -1932,7 +1932,7 @@
         "notation": "延長(えんちょう)"
     },
     {
-        "name": "moyoushi",
+        "name": "moyooshi",
         "trans": [
             "event,festivities,function"
         ],
@@ -2926,11 +2926,11 @@
         "notation": "ジャーナリスト"
     },
     {
-        "name": "kaku々",
+        "name": "onoono",
         "trans": [
             "each,every,either,respectively,severally"
         ],
-        "notation": "各(かく)々"
+        "notation": "各々(おのおの)"
     },
     {
         "name": "sakanoboru",
@@ -3332,11 +3332,11 @@
         "notation": "校庭(こうてい)"
     },
     {
-        "name": "咥eru",
+        "name": "kuwaeru",
         "trans": [
             ""
         ],
-        "notation": "咥(咥)える"
+        "notation": "咥(くわ)える"
     },
     {
         "name": "shokunin",
@@ -4291,7 +4291,7 @@
         "notation": "スケジュール"
     },
     {
-        "name": "yamuoenai",
+        "name": "yamuwoenai",
         "trans": [
             "cannot be helped,unavoidable"
         ],
@@ -5376,11 +5376,11 @@
         "notation": "為替(かわせ)"
     },
     {
-        "name": "佚",
+        "name": "itsu",
         "trans": [
             "be lost,peace,hide,mistake,beautiful,in turn"
         ],
-        "notation": "佚(佚)"
+        "notation": "佚(いつ)"
     },
     {
         "name": "roumaji",
@@ -6314,7 +6314,7 @@
         "notation": "索引(さくいん)"
     },
     {
-        "name": "tourikakaru",
+        "name": "toorikakaru",
         "trans": [
             "to happen to pass by"
         ],
@@ -6398,11 +6398,11 @@
         "notation": "捕(と)る"
     },
     {
-        "name": "nani々",
+        "name": "naninani",
         "trans": [
             "such and such,What?"
         ],
-        "notation": "何(なに)々"
+        "notation": "何々(なになに)"
     },
     {
         "name": "shousha",
@@ -7462,11 +7462,11 @@
         "notation": "期限(きげん)"
     },
     {
-        "name": "ichitouri",
+        "name": "hitotoori",
         "trans": [
             "ordinary,usual,in general,briefly"
         ],
-        "notation": "一(いち)通(とお)り"
+        "notation": "一通り(ひととおり"
     },
     {
         "name": "chimei",
@@ -7574,7 +7574,7 @@
         "notation": "溶(と)く"
     },
     {
-        "name": "konbanwa",
+        "name": "konbanha",
         "trans": [
             "good evening"
         ],
@@ -7840,11 +7840,11 @@
         "notation": "コース"
     },
     {
-        "name": "teki確",
+        "name": "tekikaku",
         "trans": [
             "precise,accurate"
         ],
-        "notation": "適(てき)確(確)"
+        "notation": "適(てき)確(かく)"
     },
     {
         "name": "suichoku",
@@ -8407,13 +8407,6 @@
         "notation": "カーブ"
     },
     {
-        "name": "×",
-        "trans": [
-            ""
-        ],
-        "notation": "×"
-    },
-    {
         "name": "rokkaa",
         "trans": [
             "locker"
@@ -8848,11 +8841,11 @@
         "notation": "叔父(おじ)さん"
     },
     {
-        "name": "Ͼtatsu",
+        "name": "tairitsu",
         "trans": [
             "confrontation,opposition,antagonism"
         ],
-        "notation": "Ͼ立(たつ)"
+        "notation": "対立(たつ)"
     },
     {
         "name": "sensu",
@@ -9660,11 +9653,11 @@
         "notation": "長方形(ちょうほうけい)"
     },
     {
-        "name": "傾raka",
+        "name": "katamukeraka",
         "trans": [
             ""
         ],
-        "notation": "傾(傾)らか"
+        "notation": "傾(かたむ)けらか"
     },
     {
         "name": "urouro",
@@ -9870,7 +9863,7 @@
         "notation": "領収(りょうしゅう)"
     },
     {
-        "name": "kiotsukeru",
+        "name": "kiwotsukeru",
         "trans": [
             "to be careful,to pay attention,to take care"
         ],
@@ -10213,7 +10206,7 @@
         "notation": "水曜(すいよう)"
     },
     {
-        "name": "matawa",
+        "name": "mataha",
         "trans": [
             "or,otherwise"
         ],
@@ -11487,7 +11480,7 @@
         "notation": "荒(あら)い"
     },
     {
-        "name": "sukitouru",
+        "name": "sukitooru",
         "trans": [
             "to be(come) transparent"
         ],

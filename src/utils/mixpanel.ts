@@ -1,4 +1,4 @@
-import type { TypingState } from '@/pages/Typing/store'
+import type { TypingState } from '@/pages/Typing/store/type'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
@@ -44,6 +44,15 @@ export function recordAnalysisAction(type: analysisType) {
   }
 
   mixpanel.track('analysis', props)
+}
+
+export type errorBookType = 'open' | 'detail'
+export function recordErrorBookAction(type: errorBookType) {
+  const props = {
+    type,
+  }
+
+  mixpanel.track('error-book', props)
 }
 
 /**

@@ -525,11 +525,11 @@
         "notation": "苦(くる)しめる"
     },
     {
-        "name": "以te",
+        "name": "motte",
         "trans": [
             "with, by, by means of, because, in view of"
         ],
-        "notation": "以(以)て"
+        "notation": "以(もっ)て"
     },
     {
         "name": "janpaa",
@@ -812,11 +812,11 @@
         "notation": "前売(まえう)り"
     },
     {
-        "name": "凡yuru",
+        "name": "arayuru",
         "trans": [
             "all, every"
         ],
-        "notation": "凡(凡)ゆる"
+        "notation": "凡(あら)ゆる"
     },
     {
         "name": "kanryou",
@@ -966,11 +966,11 @@
         "notation": "恥(は)じる"
     },
     {
-        "name": "煌biyaka",
+        "name": "kirabiyaka",
         "trans": [
             "gorgeous, gaudy, dazzling, gay"
         ],
-        "notation": "煌(煌)びやか"
+        "notation": "煌(きら)びやか"
     },
     {
         "name": "seiken",
@@ -1785,11 +1785,11 @@
         "notation": "賭(か)ける"
     },
     {
-        "name": "嚏",
+        "name": "kushami",
         "trans": [
             "sneeze"
         ],
-        "notation": "嚏(嚏)"
+        "notation": "嚏(くしゃみ)"
     },
     {
         "name": "itsuka",
@@ -1820,7 +1820,7 @@
         "notation": "所定(しょてい)"
     },
     {
-        "name": "jo々",
+        "name": "jojo",
         "trans": [
             "gradually, steadily, quietly, slowly, soon"
         ],
@@ -1932,11 +1932,11 @@
         "notation": "行政(ぎょうせい)"
     },
     {
-        "name": "恰do",
+        "name": "choudo",
         "trans": [
             "just, right, exactly"
         ],
-        "notation": "恰(恰)度(ど)"
+        "notation": "恰(ちょう)度(ど)"
     },
     {
         "name": "muyou",
@@ -1981,11 +1981,11 @@
         "notation": "痛感(つうかん)"
     },
     {
-        "name": "其sho",
+        "name": "sonosho",
         "trans": [
             "that place, there"
         ],
-        "notation": "其(其)処(しょ)"
+        "notation": "其(その)処(しょ)"
     },
     {
         "name": "sai",
@@ -1995,11 +1995,11 @@
         "notation": "際(さい)"
     },
     {
-        "name": "其shode",
+        "name": "sonoshode",
         "trans": [
             "so (conj), accordingly, now, then, thereupon"
         ],
-        "notation": "其(其)処(しょ)で"
+        "notation": "其(その)処(しょ)で"
     },
     {
         "name": "kounetsuhi",
@@ -2100,11 +2100,11 @@
         "notation": "ポーズ"
     },
     {
-        "name": "屹do",
+        "name": "kiddo",
         "trans": [
             "1. (uk) surely, undoubtedly, certainly, without fail, 2. sternly, severely"
         ],
-        "notation": "屹(屹)度(ど)"
+        "notation": "屹(キッ)度(ど)"
     },
     {
         "name": "yoroshiku",
@@ -2758,11 +2758,11 @@
         "notation": "優位(ゆうい)"
     },
     {
-        "name": "其rekara",
+        "name": "sorekara",
         "trans": [
             "and then, after that"
         ],
-        "notation": "其(其)れから"
+        "notation": "其(そ)れから"
     },
     {
         "name": "chiratto",
@@ -2891,7 +2891,7 @@
         "notation": "辿(たど)り着(つ)く"
     },
     {
-        "name": "houtsupeta",
+        "name": "hooppeta",
         "trans": [
             "cheek"
         ],
@@ -3605,7 +3605,7 @@
         "notation": "朽(く)ちる"
     },
     {
-        "name": "kyouwa",
+        "name": "kyouha",
         "trans": [
             "hello, good day (daytime greeting id)"
         ],
@@ -3822,11 +3822,11 @@
         "notation": "優先(ゆうせん)"
     },
     {
-        "name": "鋏",
+        "name": "hasami",
         "trans": [
             "scissors"
         ],
-        "notation": "鋏(鋏)"
+        "notation": "鋏(はさみ)"
     },
     {
         "name": "megumi",
@@ -4242,11 +4242,11 @@
         "notation": "確信(かくしん)"
     },
     {
-        "name": "kanata此kata",
+        "name": "kanatakochira",
         "trans": [
             "here and there"
         ],
-        "notation": "彼方(かなた)此(此)方(かた)"
+        "notation": "彼方(かなた)此方(こちら)"
     },
     {
         "name": "sanka",
@@ -4256,11 +4256,11 @@
         "notation": "酸化(さんか)"
     },
     {
-        "name": "僅",
+        "name": "wazuka",
         "trans": [
             "a little, small quantity"
         ],
-        "notation": "僅(僅)"
+        "notation": "僅(わずか)"
     },
     {
         "name": "katai",
@@ -4312,7 +4312,7 @@
         "notation": "心細(こころぼそ)い"
     },
     {
-        "name": "yaritousu",
+        "name": "yaritoosu",
         "trans": [
             "to carry through, to achieve, to complete"
         ],
@@ -4767,11 +4767,11 @@
         "notation": "差(さ)し支(つか)える"
     },
     {
-        "name": "其rede",
+        "name": "sorede",
         "trans": [
             "and (conj), thereupon, because of that"
         ],
-        "notation": "其(其)れで"
+        "notation": "其(それ)で"
     },
     {
         "name": "kisei",
@@ -4779,10 +4779,6 @@
             "regulation"
         ],
         "notation": "規制(きせい)"
-    },
-    {
-        "name": "",
-        "trans": "#NAME?"
     },
     {
         "name": "iede",
@@ -5226,10 +5222,6 @@
         "notation": "ほっと"
     },
     {
-        "name": "",
-        "trans": "#NAME?"
-    },
-    {
         "name": "jiko",
         "trans": [
             "self, oneself"
@@ -5545,11 +5537,11 @@
         "notation": "上回(うわまわ)る"
     },
     {
-        "name": "巨",
+        "name": "kyo",
         "trans": [
             "big, large, great"
         ],
-        "notation": "巨(巨)"
+        "notation": "巨(きょ)"
     },
     {
         "name": "oseji",
@@ -5951,7 +5943,7 @@
         "notation": "肥料(ひりょう)"
     },
     {
-        "name": "nobeitewa",
+        "name": "nobeiteha",
         "trans": [
             "not only...but also, in addition to, consequently"
         ],
@@ -6217,11 +6209,11 @@
         "notation": "長閑(のどか)"
     },
     {
-        "name": "其shora",
+        "name": "sonoshora",
         "trans": [
             "everywhere, somewhere, approximately, that area, around there"
         ],
-        "notation": "其(其)処(しょ)ら"
+        "notation": "其(その)処(しょ)ら"
     },
     {
         "name": "tsupparu",
@@ -6693,11 +6685,11 @@
         "notation": "着目(ちゃくもく)"
     },
     {
-        "name": "其kata",
+        "name": "sonokata",
         "trans": [
             "over there, the other"
         ],
-        "notation": "其(其)方(かた)"
+        "notation": "其(その)方(かた)"
     },
     {
         "name": "hinkon",
@@ -7001,11 +6993,11 @@
         "notation": "ご無沙汰(ぶさた)"
     },
     {
-        "name": "其redemo",
+        "name": "soredemo",
         "trans": [
             "but (still), and yet, nevertheless, even so, notwithstanding"
         ],
-        "notation": "其(其)れでも"
+        "notation": "其(それ)でも"
     },
     {
         "name": "gairai",
@@ -7134,11 +7126,11 @@
         "notation": "可愛(かわい)い"
     },
     {
-        "name": "fuyama戯ru",
+        "name": "fuyamagiru",
         "trans": [
             "to romp, to gambol, to frolic, to joke, to make fun of, to flirt"
         ],
-        "notation": "不(ふ)山(やま)戯(戯)る"
+        "notation": "不(ふ)山(やま)戯(ぎ)る"
     },
     {
         "name": "chosho",
@@ -8324,11 +8316,11 @@
         "notation": "結核(けっかく)"
     },
     {
-        "name": "歎",
+        "name": "tan",
         "trans": [
             "grief, sigh, lamentation"
         ],
-        "notation": "歎(歎)"
+        "notation": "歎(たん)"
     },
     {
         "name": "kyuuji",
@@ -8513,7 +8505,7 @@
         "notation": "禅(ぜん)"
     },
     {
-        "name": "aruiwa",
+        "name": "aruiha",
         "trans": [
             "or, possibly"
         ],
@@ -8954,11 +8946,11 @@
         "notation": "桐(きり)"
     },
     {
-        "name": "yatsuhari",
+        "name": "yappari",
         "trans": [
             "also, as I thought, still, in spite of, absolutely"
         ],
-        "notation": "矢(や)っ張(は)り"
+        "notation": "矢(や)張(っぱ)り"
     },
     {
         "name": "tabou",
@@ -9143,11 +9135,11 @@
         "notation": "新入生(しんにゅうせい)"
     },
     {
-        "name": "偶ni",
+        "name": "tamani",
         "trans": [
             "occasionally, once in a while"
         ],
-        "notation": "偶(偶)に"
+        "notation": "偶(たま)に"
     },
     {
         "name": "kokoromiru",
@@ -9164,11 +9156,11 @@
         "notation": "キャリア"
     },
     {
-        "name": "齎rasu",
+        "name": "motarasu",
         "trans": [
             "to bring, to take, to bring about"
         ],
-        "notation": "齎(齎)らす"
+        "notation": "齎(もたら)す"
     },
     {
         "name": "harappa",
@@ -9612,7 +9604,7 @@
         "notation": "尽(つ)くす"
     },
     {
-        "name": "iya々",
+        "name": "iyadou",
         "trans": [
             "unwillingly, grudgingly, shaking head in refusal (to children)"
         ],
@@ -9850,7 +9842,7 @@
         "notation": "中腹(ちゅうふく)"
     },
     {
-        "name": "machidoushii",
+        "name": "machidooshii",
         "trans": [
             "looking forward to"
         ],
@@ -9927,11 +9919,11 @@
         "notation": "促(うなが)す"
     },
     {
-        "name": "其redewa",
+        "name": "soredeha",
         "trans": [
             "in that situation, well then ..."
         ],
-        "notation": "其(其)れでは"
+        "notation": "其(それ)では"
     },
     {
         "name": "tomi",
@@ -10032,7 +10024,7 @@
         "notation": "処置(しょち)"
     },
     {
-        "name": "todokouru",
+        "name": "todokooru",
         "trans": [
             "to stagnate, to be delayed"
         ],
@@ -10151,11 +10143,11 @@
         "notation": "腫(は)れる"
     },
     {
-        "name": "傲ru",
+        "name": "ogoru",
         "trans": [
             "to be proud"
         ],
-        "notation": "傲(傲)る"
+        "notation": "傲(おご)る"
     },
     {
         "name": "fuben",
@@ -10277,11 +10269,11 @@
         "notation": "字(じ)"
     },
     {
-        "name": "其rehodo",
+        "name": "sorehodo",
         "trans": [
             "to that degree, extent"
         ],
-        "notation": "其(其)れ程(ほど)"
+        "notation": "其(それ)程(ほど)"
     },
     {
         "name": "tate",
@@ -10291,11 +10283,11 @@
         "notation": "盾(たて)"
     },
     {
-        "name": "此no",
+        "name": "kono",
         "trans": [
             "this"
         ],
-        "notation": "此(此)の"
+        "notation": "此(こ)の"
     },
     {
         "name": "mikon",
@@ -10368,7 +10360,7 @@
         "notation": "雛(ひな)"
     },
     {
-        "name": "toumawari",
+        "name": "toomawari",
         "trans": [
             "detour, roundabout way"
         ],
@@ -10921,11 +10913,11 @@
         "notation": "不況(ふきょう)"
     },
     {
-        "name": "働",
+        "name": "dou",
         "trans": [
             "work, labor"
         ],
-        "notation": "働(働)"
+        "notation": "働(どう)"
     },
     {
         "name": "chanoyu",
@@ -10991,11 +10983,11 @@
         "notation": "無念(むねん)"
     },
     {
-        "name": "諄i",
+        "name": "kudoi",
         "trans": [
             "verbose, importunate, heavy (taste)"
         ],
-        "notation": "諄(諄)い"
+        "notation": "諄(くど)い"
     },
     {
         "name": "sumasu",
@@ -11131,10 +11123,6 @@
         "notation": "目覚(めざま)しい"
     },
     {
-        "name": "",
-        "trans": "#NAME?"
-    },
-    {
         "name": "azawarau",
         "trans": [
             "to sneer at, to ridicule"
@@ -11198,11 +11186,11 @@
         "notation": "辺(あた)り"
     },
     {
-        "name": "嫋ka",
+        "name": "taoyaka",
         "trans": [
             "supple, flexible, elastic"
         ],
-        "notation": "嫋(嫋)か"
+        "notation": "嫋(たおや)か"
     },
     {
         "name": "hairyo",
@@ -11289,18 +11277,18 @@
         "notation": "暴風(ぼうふう)"
     },
     {
-        "name": "osshasshiyaru",
+        "name": "osshassharu",
         "trans": [
             "to say, to speak, to tell, to talk"
         ],
         "notation": "仰(おっしゃ)っしゃる"
     },
     {
-        "name": "稍",
+        "name": "yaya",
         "trans": [
             "a little, partially, somewhat, a short time, a while"
         ],
-        "notation": "稍(稍)"
+        "notation": "稍(やや)"
     },
     {
         "name": "ore",
@@ -11471,11 +11459,11 @@
         "notation": "救援(きゅうえん)"
     },
     {
-        "name": "shimo吏",
+        "name": "shimotsukasa",
         "trans": [
             "lower official"
         ],
-        "notation": "下(しも)吏(吏)"
+        "notation": "下(しも)吏(つかさ)"
     },
     {
         "name": "sokkenai",
@@ -12381,7 +12369,7 @@
         "notation": "名高(なだか)い"
     },
     {
-        "name": "mitoushi",
+        "name": "mitooshi",
         "trans": [
             "perspective, unobstructed view, outlook, forecast, prospect, insight"
         ],
@@ -12444,11 +12432,11 @@
         "notation": "饂飩(うどん)"
     },
     {
-        "name": "傾",
+        "name": "katamuku",
         "trans": [
             "lean, incline"
         ],
-        "notation": "傾(傾)"
+        "notation": "傾(かたむ)く"
     },
     {
         "name": "matagu",
@@ -12563,11 +12551,11 @@
         "notation": "呉(く)れる"
     },
     {
-        "name": "泌mi泌mi",
+        "name": "himihimi",
         "trans": [
             "keenly, deeply, heartily"
         ],
-        "notation": "泌(泌)み泌(泌)み"
+        "notation": "泌(ひ)み泌(ひ)み"
     },
     {
         "name": "ikou",
@@ -12787,7 +12775,7 @@
         "notation": "すれ違(ちが)う"
     },
     {
-        "name": "omedetaa",
+        "name": "omedetau",
         "trans": [
             "(ateji) (int) (uk) Congratulations!, an auspicious occasion!"
         ],
@@ -12962,11 +12950,11 @@
         "notation": "単(たん)"
     },
     {
-        "name": "噛ru",
+        "name": "kajiru",
         "trans": [
             "to chew, to bite (at), to gnaw, to nibble, to munch, to crunch, to have a smattering of"
         ],
-        "notation": "噛(噛)る"
+        "notation": "噛(かじ)る"
     },
     {
         "name": "osaeru",
@@ -13004,11 +12992,11 @@
         "notation": "金槌(かなづち)"
     },
     {
-        "name": "其reyue",
+        "name": "soreyue",
         "trans": [
             "therefore, for that reason, so"
         ],
-        "notation": "其(其)れ故(ゆえ)"
+        "notation": "其(それ)故(ゆえ)"
     },
     {
         "name": "obitadashii",
@@ -13172,7 +13160,7 @@
         "notation": "理性(りせい)"
     },
     {
-        "name": "tourikakaru",
+        "name": "toorikakaru",
         "trans": [
             "to happen to pass by"
         ],
@@ -14551,11 +14539,11 @@
         "notation": "交(まじ)える"
     },
     {
-        "name": "tai々",
+        "name": "wazawaza",
         "trans": [
             "expressly, specially, doing something especially rather than incidentally"
         ],
-        "notation": "態(たい)々"
+        "notation": "態(わざ)々"
     },
     {
         "name": "ittei",
@@ -14712,11 +14700,11 @@
         "notation": "介護(かいご)"
     },
     {
-        "name": "此re",
+        "name": "kore",
         "trans": [
             "this"
         ],
-        "notation": "此(此)れ"
+        "notation": "此(こ)れ"
     },
     {
         "name": "sokuzani",
@@ -14803,7 +14791,7 @@
         "notation": "略奪(りゃくだつ)"
     },
     {
-        "name": "yamuoenai",
+        "name": "yamuwoenai",
         "trans": [
             "cannot be helped, unavoidable"
         ],
@@ -15321,11 +15309,11 @@
         "notation": "摘(つま)む"
     },
     {
-        "name": "其re",
+        "name": "sore",
         "trans": [
             "it, that"
         ],
-        "notation": "其(其)れ"
+        "notation": "其(そ)れ"
     },
     {
         "name": "dounyuu",
@@ -15440,11 +15428,11 @@
         "notation": "不動産(ふどうさん)"
     },
     {
-        "name": "ai褸",
+        "name": "ranru",
         "trans": [
             "rag, scrap, tattered clothes, fault (esp. in a pretense), defect, run-down or junky"
         ],
-        "notation": "藍(あい)褸(褸)"
+        "notation": "藍(らん)褸(る)"
     },
     {
         "name": "rei",
@@ -15706,11 +15694,11 @@
         "notation": "股(また)"
     },
     {
-        "name": "akira々gojitsu",
+        "name": "akaakagojitsu",
         "trans": [
             "two days after tomorrow"
         ],
-        "notation": "明(あきら)々後日(ごじつ)"
+        "notation": "明々(あかあか)後日(ごじつ)"
     },
     {
         "name": "geppu",
@@ -17001,11 +16989,11 @@
         "notation": "否決(ひけつ)"
     },
     {
-        "name": "哉",
+        "name": "kana",
         "trans": [
             "question mark"
         ],
-        "notation": "哉(哉)"
+        "notation": "哉(かな)"
     },
     {
         "name": "tenjou",
@@ -18408,11 +18396,11 @@
         "notation": "絶(た)える"
     },
     {
-        "name": "而mo",
+        "name": "shikamo",
         "trans": [
             "moreover, furthermore, nevertheless, and yet"
         ],
-        "notation": "而(而)も"
+        "notation": "而(しか)も"
     },
     {
         "name": "chinbotsu",
@@ -18450,11 +18438,11 @@
         "notation": "ご馳走(ちそう)"
     },
     {
-        "name": "迚mo",
+        "name": "totemo",
         "trans": [
             "very, awfully, exceedingly"
         ],
-        "notation": "迚(迚)も"
+        "notation": "迚(とて)も"
     },
     {
         "name": "kokorozuyoi",
@@ -18506,11 +18494,11 @@
         "notation": "跡(あと)切(き)れる"
     },
     {
-        "name": "苛々",
+        "name": "iraira",
         "trans": [
             "getting nervous, irritation"
         ],
-        "notation": "苛(苛)々"
+        "notation": "苛々(イライラ)"
     },
     {
         "name": "sukunakutomo",
@@ -18660,7 +18648,7 @@
         "notation": "新(しん)"
     },
     {
-        "name": "touzakaru",
+        "name": "toozakaru",
         "trans": [
             "to go far off"
         ],
@@ -20361,11 +20349,11 @@
         "notation": "気配(けはい)"
     },
     {
-        "name": "nani々",
+        "name": "naninani",
         "trans": [
             "which (emphatic)"
         ],
-        "notation": "何(なに)々"
+        "notation": "何々(なになに)"
     },
     {
         "name": "soboku",
@@ -20872,11 +20860,11 @@
         "notation": "垂(た)れる"
     },
     {
-        "name": "於",
+        "name": "o",
         "trans": [
             "at, in, on"
         ],
-        "notation": "於(於)"
+        "notation": "於(お)"
     },
     {
         "name": "jishin",
@@ -20977,11 +20965,11 @@
         "notation": "忠告(ちゅうこく)"
     },
     {
-        "name": "此retou",
+        "name": "koretou",
         "trans": [
             "these"
         ],
-        "notation": "此(此)れ等(とう)"
+        "notation": "此(こ)れ等(とう)"
     },
     {
         "name": "jisonshin",
@@ -21124,7 +21112,7 @@
         "notation": "強硬(きょうこう)"
     },
     {
-        "name": "konbanwa",
+        "name": "konbanha",
         "trans": [
             "good evening"
         ],
@@ -21348,11 +21336,11 @@
         "notation": "権威(けんい)"
     },
     {
-        "name": "kaku々",
+        "name": "onoono",
         "trans": [
             "each, every, either, respectively, severally"
         ],
-        "notation": "各(かく)々"
+        "notation": "各々(おのおの)"
     },
     {
         "name": "yanushi",
@@ -22328,11 +22316,11 @@
         "notation": "取(と)っ手(て)"
     },
     {
-        "name": "倣",
+        "name": "hou",
         "trans": [
             "imitate, follow, emulate"
         ],
-        "notation": "倣(倣)"
+        "notation": "倣(ほう)"
     },
     {
         "name": "sakisengetsu",
@@ -22580,11 +22568,11 @@
         "notation": "版(ばん)"
     },
     {
-        "name": "kanata此kata",
+        "name": "kanatakonokata",
         "trans": [
             "here and there"
         ],
-        "notation": "彼方(かなた)此(此)方(かた)"
+        "notation": "彼方(かなた)此(この)方(かた)"
     },
     {
         "name": "bengo",
@@ -22622,11 +22610,11 @@
         "notation": "方式(ほうしき)"
     },
     {
-        "name": "疾tsukuni",
+        "name": "hayakkuni",
         "trans": [
             "long ago, already, a long time ago"
         ],
-        "notation": "疾(疾)っくに"
+        "notation": "疾(はや)っくに"
     },
     {
         "name": "hinata",
@@ -22692,11 +22680,11 @@
         "notation": "濫用(らんよう)"
     },
     {
-        "name": "sono儘",
+        "name": "sonomama",
         "trans": [
             "without change, as it is (i.e. now)"
         ],
-        "notation": "其(そ)の儘(儘)"
+        "notation": "其(そ)の儘(まま)"
     },
     {
         "name": "genba",
@@ -22818,7 +22806,7 @@
         "notation": "教材(きょうざい)"
     },
     {
-        "name": "moshikuwa",
+        "name": "moshikuha",
         "trans": [
             "or, otherwise"
         ],
@@ -22972,11 +22960,11 @@
         "notation": "丸々(まるまる)"
     },
     {
-        "name": "些tomo",
+        "name": "sattomo",
         "trans": [
             "not at all (neg. verb)"
         ],
-        "notation": "些(些)とも"
+        "notation": "些(さ)っとも"
     },
     {
         "name": "miawaseru",
@@ -23441,11 +23429,11 @@
         "notation": "恐(おそ)れ入(い)る"
     },
     {
-        "name": "偖",
+        "name": "sate",
         "trans": [
             "well, now, then"
         ],
-        "notation": "偖(偖)"
+        "notation": "偖(さて)"
     },
     {
         "name": "muudo",
@@ -23574,11 +23562,11 @@
         "notation": "組(く)み合(あ)わせ"
     },
     {
-        "name": "iyoiyo々",
+        "name": "iyoiyo",
         "trans": [
             "more and more, all the more, increasingly, at last, beyond doubt"
         ],
-        "notation": "愈(いよいよ)々"
+        "notation": "愈々(いよいよ)"
     },
     {
         "name": "tomonau",
@@ -24001,11 +23989,11 @@
         "notation": "露骨(ろこつ)"
     },
     {
-        "name": "其reni",
+        "name": "soreni",
         "trans": [
             "besides, moreover"
         ],
-        "notation": "其(其)れに"
+        "notation": "其(そ)れに"
     },
     {
         "name": "kissa",
@@ -24169,11 +24157,11 @@
         "notation": "味覚(みかく)"
     },
     {
-        "name": "其retomo",
+        "name": "soretomo",
         "trans": [
             "or, or else"
         ],
-        "notation": "其(其)れ共(とも)"
+        "notation": "其(そ)れ共(とも)"
     },
     {
         "name": "shutsudai",

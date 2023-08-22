@@ -2,9 +2,10 @@ import type { WordUpdateAction } from '../InputHandler'
 import InputHandler from '../InputHandler'
 import WordSound from '../WordSound'
 import Letter from './Letter'
-import type { LetterState } from './Letter'
 import Notation from './Notation'
 import style from './index.module.css'
+import { initialWordState } from './type'
+import type { WordState } from './type'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
@@ -19,48 +20,9 @@ import {
 import type { Word } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
-import type { LetterMistakes } from '@/utils/db/record'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useState } from 'react'
 import { useImmer } from 'use-immer'
-
-type WordState = {
-  displayWord: string
-  inputWord: string
-  letterStates: LetterState[]
-  isFinished: boolean
-  // 是否出现输入错误
-  hasWrong: boolean
-  // 记录是否已经出现过输入错误
-  hasMadeInputWrong: boolean
-  // 用户输入错误的次数
-  wrongCount: number
-  startTime: string
-  endTime: string
-  inputCount: number
-  correctCount: number
-  letterTimeArray: number[]
-  letterMistake: LetterMistakes
-  // 用于随机隐藏字母功能
-  randomLetterVisible: boolean[]
-}
-
-const initialWordState: WordState = {
-  displayWord: '',
-  inputWord: '',
-  letterStates: [],
-  isFinished: false,
-  hasWrong: false,
-  hasMadeInputWrong: false,
-  wrongCount: 0,
-  startTime: '',
-  endTime: '',
-  inputCount: 0,
-  correctCount: 0,
-  letterTimeArray: [],
-  letterMistake: {},
-  randomLetterVisible: [],
-}
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
@@ -79,6 +41,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const pronunciationIsOpen = useAtomValue(pronunciationIsOpenAtom)
   const [isHoveringWord, setIsHoveringWord] = useState(false)
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
+  const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
 
   useEffect(() => {
     // run only when word changes
@@ -161,7 +124,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
     const inputChar = wordState.inputWord[inputLength - 1]
     const correctChar = wordState.displayWord[inputLength - 1]
-
     let isEqual = false
     if (inputChar != undefined && correctChar != undefined) {
       isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
@@ -189,26 +151,26 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         playKeySound()
       }
 
-      dispatch({ type: TypingStateActionType.INCREASE_CORRECT_COUNT })
+      dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
     } else {
       // 出错时
       playBeepSound()
-
       setWordState((state) => {
         state.letterStates[inputLength - 1] = 'wrong'
         state.hasWrong = true
         state.hasMadeInputWrong = true
         state.wrongCount += 1
         state.letterTimeArray = []
+
         if (state.letterMistake[inputLength - 1]) {
           state.letterMistake[inputLength - 1].push(inputChar)
         } else {
           state.letterMistake[inputLength - 1] = [inputChar]
         }
-      })
 
-      dispatch({ type: TypingStateActionType.INCREASE_WRONG_COUNT })
-      dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD })
+        const currentState = JSON.parse(JSON.stringify(state))
+        dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: currentState.letterMistake } })
+      })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.inputWord])
@@ -231,10 +193,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   useEffect(() => {
     if (wordState.isFinished) {
-      if (!wordState.hasMadeInputWrong) {
-        dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
-      }
-
       dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
 
       wordLogUploader({
@@ -266,7 +224,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   return (
     <>
       <InputHandler updateInput={updateInput} />
-      <div className="flex flex-col justify-center pb-1 pt-4">
+      <div lang={currentLanguageCategory !== 'code' ? currentLanguageCategory : 'en'} className="flex flex-col justify-center pb-1 pt-4">
         {currentLanguage === 'romaji' && word.notation && <Notation notation={word.notation} />}
         <div className="relative">
           <div

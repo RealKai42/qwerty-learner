@@ -1,6 +1,7 @@
 import { CHAPTER_LENGTH } from '@/constants'
 import { currentChapterAtom, currentDictInfoAtom } from '@/store'
-import type { Word, WordWithIndex } from '@/typings/index'
+import type { WordWithIndex } from '@/typings/index'
+import { wordListFetcher } from '@/utils/wordListFetcher'
 import { useAtom, useAtomValue } from 'jotai'
 import { useMemo } from 'react'
 import useSWR from 'swr'
@@ -39,14 +40,6 @@ export function useWordList(): UseWordListResult {
   }, [isFirstChapter, wordList, currentChapter])
 
   return { words: wordList === undefined ? undefined : words, isLoading, error }
-}
-
-async function wordListFetcher(url: string): Promise<Word[]> {
-  const URL_PREFIX: string = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''
-
-  const response = await fetch(URL_PREFIX + url)
-  const words: Word[] = await response.json()
-  return words
 }
 
 const firstChapter = [

@@ -1,7 +1,7 @@
 import type { IChapterRecord, IWordRecord, LetterMistakes } from './record'
 import { ChapterRecord, WordRecord } from './record'
-import type { TypingState } from '@/pages/Typing/store'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
+import type { TypingState } from '@/pages/Typing/store/type'
 import { currentChapterAtom, currentDictIdAtom } from '@/store'
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
@@ -16,6 +16,10 @@ class RecordDB extends Dexie {
     super('RecordDB')
     this.version(1).stores({
       wordRecords: '++id,word,timeStamp,dict,chapter,errorCount,[dict+chapter]',
+      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
+    })
+    this.version(2).stores({
+      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
       chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
     })
   }
@@ -33,9 +37,10 @@ export function useSaveChapterRecord() {
   const saveChapterRecord = useCallback(
     (typingState: TypingState) => {
       const {
-        chapterData: { correctCount, wrongCount, wordCount, correctWordIndexes, words, wordRecordIds },
+        chapterData: { correctCount, wrongCount, userInputLogs, wordCount, words, wordRecordIds },
         timerData: { time },
       } = typingState
+      const correctWordIndexes = userInputLogs.filter((log) => log.correctCount > 0 && log.wrongCount === 0).map((log) => log.index)
 
       const chapterRecord = new ChapterRecord(
         dictID,
