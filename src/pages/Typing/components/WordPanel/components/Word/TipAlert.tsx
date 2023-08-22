@@ -16,7 +16,7 @@ export const TipAlert: FC<ITipAlert> = ({ className, show, setShow }) => {
   return (
     <>
       {show && (
-        <div className={`alert  w-fit bg-indigo-300 pr-5 ${className}`}>
+        <div className={`alert z-10 w-fit bg-indigo-300 pr-5 ${className}`}>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0 stroke-current text-white" fill="none" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
