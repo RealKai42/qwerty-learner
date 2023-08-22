@@ -1,28 +1,17 @@
-# 运行下面的命令, 构建qwerty-learner镜像
-# docker build -t qwertylearner .
-# 下面的命令运行镜像, 访问localhost:8990访问应用, 8990可修改成你未占有的端口
-# docker run -d -p 8990:3000 --name qwertylearnerapp qwertylearner:latest
+FROM node:18 AS build
 
-FROM node:14
+# 设置工作目录
+WORKDIR /app
 
-LABEL maintainer="sevenyoungairye <lel.ng.top@gmail.com>"
+COPY package*.json ./
 
-WORKDIR /app/qwerty-learner
-
-COPY package*.json .
-
-COPY yarn.lock .
-
-RUN npm config set registry https://registry.npm.taobao.org
-
-RUN npm install yarn -g --force
-
-RUN yarn install
+RUN npm install
 
 COPY . .
 
-EXPOSE 5173
+RUN npm run build
 
-CMD yarn start --host=0.0.0.0
-
-
+# 将构建好的 React 应用复制到 Nginx 容器的默认站点目录
+FROM nginx:alpine
+COPY ./public/default.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/build /app
