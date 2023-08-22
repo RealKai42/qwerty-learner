@@ -612,6 +612,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Oxford5000',
+    name: '牛津5000词',
+    description: '牛津5000词',
+    category: '国际考试',
+    tags: ['牛津版'],
+    url: '/dicts/Oxford5000.json',
+    length: 5836,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 青少儿英语
