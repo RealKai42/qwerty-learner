@@ -3,6 +3,7 @@ import InputHandler from '../InputHandler'
 import WordSound from '../WordSound'
 import Letter from './Letter'
 import Notation from './Notation'
+import { TipAlert } from './TipAlert'
 import style from './index.module.css'
 import { initialWordState } from './type'
 import type { WordState } from './type'
@@ -42,6 +43,8 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const [isHoveringWord, setIsHoveringWord] = useState(false)
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
+
+  const [showTipAlert, setShowTipAlert] = useState(false)
 
   useEffect(() => {
     // run only when word changes
@@ -177,6 +180,10 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         const currentState = JSON.parse(JSON.stringify(state))
         dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: currentState.letterMistake } })
       })
+
+      if (state.chapterData.index === 0 && wordState.wrongCount >= 3) {
+        setShowTipAlert(true)
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.inputWord])
@@ -248,6 +255,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           {pronunciationIsOpen && <WordSound word={word.name} inputWord={wordState.inputWord} className="h-10 w-10" />}
         </div>
       </div>
+      <TipAlert className="fixed bottom-10 right-3" show={showTipAlert} setShow={setShowTipAlert} />
     </>
   )
 }

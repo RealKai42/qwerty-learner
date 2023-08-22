@@ -59,16 +59,16 @@ const App: React.FC = () => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })
   }, [dispatch])
 
-  useEffect(() => {
-    const onBlur = () => {
-      dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
-    }
-    window.addEventListener('blur', onBlur)
+  // useEffect(() => {
+  //   const onBlur = () => {
+  //     dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
+  //   }
+  //   window.addEventListener('blur', onBlur)
 
-    return () => {
-      window.removeEventListener('blur', onBlur)
-    }
-  }, [dispatch])
+  //   return () => {
+  //     window.removeEventListener('blur', onBlur)
+  //   }
+  // }, [dispatch])
 
   useEffect(() => {
     state.chapterData.words?.length > 0 ? setIsLoading(false) : setIsLoading(true)
