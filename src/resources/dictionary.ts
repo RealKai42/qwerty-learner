@@ -601,6 +601,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'TOEIC',
+    name: 'TIEIC 词汇',
+    description: '',
+    category: '国际考试',
+    tags: ['TOEIC'],
+    url: '/dicts/TOEIC.json',
+    length: 1694,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 青少儿英语
@@ -1397,7 +1408,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 6268,
     language: 'en',
     languageCategory: 'en',
-  }
+  },
 ]
 // 编程字典
 const programming: DictionaryResource[] = [
