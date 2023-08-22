@@ -45,8 +45,14 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   useEffect(() => {
     // run only when word changes
-    let headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
-    headword = headword.replace(new RegExp('…', 'g'), '..')
+    let headword = ''
+    try {
+      headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
+      headword = headword.replace(new RegExp('…', 'g'), '..')
+    } catch (e) {
+      console.error('word.name is not a string', word)
+      headword = ''
+    }
 
     const newWordState = structuredClone(initialWordState)
     newWordState.displayWord = headword
@@ -224,9 +230,12 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   return (
     <>
       <InputHandler updateInput={updateInput} />
-      <div lang={currentLanguageCategory !== 'code' ? currentLanguageCategory : 'en'} className="flex flex-col justify-center pb-1 pt-4">
+      <div
+        lang={currentLanguageCategory !== 'code' ? currentLanguageCategory : 'en'}
+        className="flex flex-col items-center justify-center pb-1 pt-4"
+      >
         {currentLanguage === 'romaji' && word.notation && <Notation notation={word.notation} />}
-        <div className="relative">
+        <div className="relative w-fit">
           <div
             onMouseEnter={() => handleHoverWord(true)}
             onMouseLeave={() => handleHoverWord(false)}
