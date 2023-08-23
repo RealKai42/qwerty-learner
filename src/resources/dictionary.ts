@@ -625,7 +625,7 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'TOEIC',
-    name: 'TIEIC 词汇',
+    name: 'TOEIC 词汇',
     description: '',
     category: '国际考试',
     tags: ['TOEIC'],
