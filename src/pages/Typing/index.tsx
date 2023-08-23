@@ -149,7 +149,7 @@ const App: React.FC = () => {
             </button>
           </Tooltip>
         </Header>
-        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-20">
+        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-5">
           <div className="container relative mx-auto flex h-full flex-col items-center">
             <div className="container flex flex-grow items-center justify-center">
               {isLoading ? (

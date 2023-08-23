@@ -601,6 +601,28 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'TOEIC',
+    name: 'TIEIC 词汇',
+    description: '',
+    category: '国际考试',
+    tags: ['TOEIC'],
+    url: '/dicts/TOEIC.json',
+    length: 1694,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'Oxford5000',
+    name: '牛津5000词',
+    description: '牛津5000词',
+    category: '国际考试',
+    tags: ['牛津版'],
+    url: '/dicts/Oxford5000.json',
+    length: 5836,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 青少儿英语
@@ -1397,7 +1419,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 6268,
     language: 'en',
     languageCategory: 'en',
-  }
+  },
 ]
 // 编程字典
 const programming: DictionaryResource[] = [
