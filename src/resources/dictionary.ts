@@ -366,6 +366,28 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Oxford5000',
+    name: '牛津5000词',
+    description: '牛津5000词',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/Oxford5000.json',
+    length: 5836,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'Merriam_Webster_sVocabularyBuilder',
+    name: '韦氏词根词典',
+    description: '韦氏词根词典',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/Merriam_Webster_sVocabularyBuilder.json',
+    length: 1191,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
@@ -603,7 +625,7 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'TOEIC',
-    name: 'TIEIC 词汇',
+    name: 'TOEIC 词汇',
     description: '',
     category: '国际考试',
     tags: ['TOEIC'],
