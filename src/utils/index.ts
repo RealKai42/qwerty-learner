@@ -18,7 +18,22 @@ const bannedKeys = [
   'FnLock',
   'Hyper',
   'Super',
-  'OS',
+  'OS',  
+  // Up, down, left and right keys
+  'ArrowUp',
+  'ArrowDown',
+  'ArrowLeft',
+  'ArrowRight',
+  // volume keys
+  'AudioVolumeUp',
+  'AudioVolumeDown',
+  'AudioVolumeMute',
+  // special keys
+  'End',
+  'PageDown',
+  'PageUp',
+  'Clear',
+  'Home',
 ]
 
 export const isLegal = (key: string): boolean => {
