@@ -32,7 +32,7 @@ const ErrorRow: FC<IErrorRowProps> = ({ record }) => {
         {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
       </span>
       <span className="basis-1/12 break-normal">{record.wrongCount}</span>
-      <span className="basis-2/12 break-normal">{dictInfo.name}</span>
+      <span className="basis-2/12 break-normal">{dictInfo?.name}</span>
     </li>
   )
 }

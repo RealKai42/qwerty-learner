@@ -1,0 +1,13 @@
+.word-sound {
+  cursor: pointer;
+  fill: theme('colors.gray.600');
+  width: 30px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.word-sound button {
+  width: 100%;
+}

@@ -11,6 +11,7 @@ import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import {
+  currentChapterAtom,
   currentDictInfoAtom,
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
@@ -43,6 +44,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const [isHoveringWord, setIsHoveringWord] = useState(false)
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
+  const currentChapter = useAtomValue(currentChapterAtom)
 
   const [showTipAlert, setShowTipAlert] = useState(false)
 
@@ -181,7 +183,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         dispatch({ type: TypingStateActionType.REPORT_WRONG_WORD, payload: { letterMistake: currentState.letterMistake } })
       })
 
-      if (state.chapterData.index === 0 && wordState.wrongCount >= 3) {
+      if (currentChapter === 0 && state.chapterData.index === 0 && wordState.wrongCount >= 3) {
         setShowTipAlert(true)
       }
     }
