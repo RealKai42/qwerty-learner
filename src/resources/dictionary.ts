@@ -388,6 +388,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'TOEFL_ZhangHongYan',
+    name: '张红岩的TOEFL词汇书',
+    description: '张红岩的TOEFL词汇书-词以类记',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/TOEFL_ZhangHongYan.json',
+    length: 4035,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
