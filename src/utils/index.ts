@@ -18,7 +18,7 @@ const bannedKeys = [
   'FnLock',
   'Hyper',
   'Super',
-  'OS',  
+  'OS',
   // Up, down, left and right keys
   'ArrowUp',
   'ArrowDown',
