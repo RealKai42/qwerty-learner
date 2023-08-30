@@ -1831,6 +1831,28 @@ const programming: DictionaryResource[] = [
     language: 'code',
     languageCategory: 'code',
   },
+  {
+    id: 'go_keyword',
+    name: 'golang-keyword',
+    description: 'go语言关键字,',
+    category: '代码练习',
+    tags: ['golang'],
+    url: '/dicts/go_keyword.json',
+    length: 25,
+    language: 'code',
+    languageCategory: 'code',
+  },
+  {
+    id: 'go_builtin',
+    name: 'golang-builtin',
+    description: 'go语言内建函数和类型',
+    category: '代码练习',
+    tags: ['golang'],
+    url: '/dicts/go_builtin.json',
+    length: 46,
+    language: 'code',
+    languageCategory: 'code',
+  },
 ]
 
 // 日语词典
