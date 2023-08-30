@@ -99,6 +99,28 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 <br />
 <br />
 
+## 运行项目
+
+本项目是基于`React`开发的，需要node环境来运行。
+
+### 手动安装
+
+1. 安装NodeJS，参考[官方文档](https://nodejs.org/en/download)
+2. 打开命令行，在项目根目录下，运行`npm install`或`yarn install`来下载依赖。
+3. 执行`npm run start`来启动项目，项目默认地址为`http://localhost:5173/`
+4. 在浏览器中打开`http://localhost:5173/`来访问项目。
+
+### 脚本执行
+
+对于Windows用户，可以直接执行ps1脚本，来一键安装依赖并启动项目。
+
+1. 打开powershell，定位到项目根目录中的`scripts`目录
+2. 在命令行中，执行`.\install.ps1`
+3. 等待脚本完成。
+
+> 备注
+> 脚本依赖`winget`来安装node，仅在 Windows 10 1709（版本 16299）或更高版本上受支持！
+
 ## 如何贡献
 
 ### 贡献代码
