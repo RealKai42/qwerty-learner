@@ -5,7 +5,9 @@ import { currentRowDetailAtom } from '../store'
 import type { groupedWordRecords } from '../type'
 import DataTag from './DataTag'
 import RowPagination from './RowPagination'
+import usePronunciationSound from '@/hooks/usePronunciation'
 import Phonetic from '@/pages/Typing/components/WordPanel/components/Phonetic'
+import { SoundIcon } from '@/pages/Typing/components/WordPanel/components/SoundIcon'
 import Letter from '@/pages/Typing/components/WordPanel/components/Word/Letter'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { useSetAtom } from 'jotai'
@@ -24,6 +26,7 @@ type RowDetailProps = {
 
 const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) => {
   const setCurrentRowDetail = useSetAtom(currentRowDetailAtom)
+
   const dictInfo = idDictionaryMap[currentRowDetail.dict]
   const { word, isLoading, hasError } = useGetWord(currentRowDetail.word, dictInfo)
 
@@ -39,10 +42,16 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
     return { time: timeStr, sumCount, correctCount, wrongCount }
   }, [currentRowDetail.records, currentRowDetail.wrongCount])
 
+  const { play, stop, isPlaying } = usePronunciationSound(word?.name)
+
+  console.log(word)
   const onClose = useCallback(() => {
     setCurrentRowDetail(null)
   }, [setCurrentRowDetail])
-
+  const handleClickSoundIcon = useCallback(() => {
+    stop()
+    play()
+  }, [play, stop])
   useHotkeys(
     'esc',
     (e) => {
@@ -62,7 +71,16 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
               <Letter key={`${index}-${t}`} letter={t} visible state="normal" />
             ))}
           </div>
-          <div>{word ? <Phonetic word={word} /> : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}</div>
+          <div className="items-base flex leading-6">
+            {word ? (
+              <>
+                <Phonetic word={word} />
+              </>
+            ) : (
+              <LoadingWordUI isLoading={isLoading} hasError={hasError} />
+            )}
+            <SoundIcon className="ml-1 w-4 pt-1 text-sm" animated={isPlaying} onClick={handleClickSoundIcon} />
+          </div>
           <div className="flex max-w-[24rem] items-center">
             <span className={`max-w-4xl text-center font-sans transition-colors duration-300 dark:text-white dark:text-opacity-80`}>
               {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
