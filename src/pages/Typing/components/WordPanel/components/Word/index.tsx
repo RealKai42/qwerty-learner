@@ -23,10 +23,14 @@ import type { Word } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useEffect, useState } from 'react'
+import { useCallback, useContext, useEffect, useState, KeyboardEvent } from 'react'
 import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
+
+const keyMappings = {
+  TAB: 'Tab',
+}
 
 export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -95,6 +99,36 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const handleHoverWord = useCallback((checked: boolean) => {
     setIsHoveringWord(checked)
   }, [])
+
+  useEffect(() => {
+    const handleGlobalKeyDown = (event: KeyboardEvent | any) => {
+      if (event.key === keyMappings.TAB) {
+        event.preventDefault()
+      }
+    }
+
+    const handleKeyDown = (event: KeyboardEvent | any) => {
+      if (event.key === keyMappings.TAB && wordDictationConfig.isOpen && isHoveringWord === false) {
+        handleHoverWord(true)
+      }
+    }
+
+    const handleKeyUp = (event: React.KeyboardEvent | any) => {
+      if (event.key === keyMappings.TAB && wordDictationConfig.isOpen && isHoveringWord === true) {
+        handleHoverWord(false)
+      }
+    }
+
+    document.addEventListener('keydown', handleGlobalKeyDown)
+    document.addEventListener('keydown', handleKeyDown)
+    document.addEventListener('keyup', handleKeyUp)
+
+    return () => {
+      document.removeEventListener('keydown', handleGlobalKeyDown)
+      document.removeEventListener('keydown', handleKeyDown)
+      document.removeEventListener('keyup', handleKeyUp)
+    }
+  }, [wordDictationConfig.isOpen, isHoveringWord])
 
   const getLetterVisible = useCallback(
     (index: number) => {
