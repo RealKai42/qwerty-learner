@@ -23,14 +23,11 @@ import type { Word } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useEffect, useState, KeyboardEvent } from 'react'
+import { useCallback, useContext, useEffect, useState } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
-
-const keyMappings = {
-  TAB: 'Tab',
-}
 
 export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -100,35 +97,23 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     setIsHoveringWord(checked)
   }, [])
 
-  useEffect(() => {
-    const handleGlobalKeyDown = (event: KeyboardEvent | any) => {
-      if (event.key === keyMappings.TAB) {
-        event.preventDefault()
-      }
-    }
+  useHotkeys(
+    'tab',
+    () => {
+      handleHoverWord(true)
+    },
+    { enableOnFormTags: true, preventDefault: true },
+    [],
+  )
 
-    const handleKeyDown = (event: KeyboardEvent | any) => {
-      if (event.key === keyMappings.TAB && wordDictationConfig.isOpen && isHoveringWord === false) {
-        handleHoverWord(true)
-      }
-    }
-
-    const handleKeyUp = (event: React.KeyboardEvent | any) => {
-      if (event.key === keyMappings.TAB && wordDictationConfig.isOpen && isHoveringWord === true) {
-        handleHoverWord(false)
-      }
-    }
-
-    document.addEventListener('keydown', handleGlobalKeyDown)
-    document.addEventListener('keydown', handleKeyDown)
-    document.addEventListener('keyup', handleKeyUp)
-
-    return () => {
-      document.removeEventListener('keydown', handleGlobalKeyDown)
-      document.removeEventListener('keydown', handleKeyDown)
-      document.removeEventListener('keyup', handleKeyUp)
-    }
-  }, [wordDictationConfig.isOpen, isHoveringWord])
+  useHotkeys(
+    'tab',
+    () => {
+      handleHoverWord(false)
+    },
+    { enableOnFormTags: true, keyup: true, preventDefault: true },
+    [],
+  )
 
   const getLetterVisible = useCallback(
     (index: number) => {
@@ -278,7 +263,12 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         className="flex flex-col items-center justify-center pb-1 pt-4"
       >
         {currentLanguage === 'romaji' && word.notation && <Notation notation={word.notation} />}
-        <div className="relative w-fit">
+        <div
+          className={`tooltip-info relative w-fit bg-transparent p-0 leading-normal shadow-none ${
+            wordDictationConfig.isOpen ? 'tooltip' : ''
+          }`}
+          data-tip="按 Tab 快捷键显示完整单词"
+        >
           <div
             onMouseEnter={() => handleHoverWord(true)}
             onMouseLeave={() => handleHoverWord(false)}
