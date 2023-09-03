@@ -406,7 +406,7 @@ const chinaExam: DictionaryResource[] = [
     category: '中国考试',
     tags: ['其他'],
     url: '/dicts/English_II.json',
-    length: 5500,
+    length: 4559,
     language: 'en',
     languageCategory: 'en',
   },
