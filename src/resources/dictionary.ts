@@ -399,6 +399,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'English_II',
+    name: '英语二单词书',
+    description: '考研英语二单词书',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/English_II.json',
+    length: 5500,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
