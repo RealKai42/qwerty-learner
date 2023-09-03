@@ -110,6 +110,29 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 [导入词典](./docs/toBuildDict.md)
 
+## 运行项目
+
+本项目是基于`React`开发的，需要 node 环境来运行。
+
+### 手动安装
+
+1. 安装 NodeJS，参考[官方文档](https://nodejs.org/en/download)
+2. 使用 `git clone` 下载项目到本地, 不使用 git 可能因为缺少依赖而无法运行
+3. 打开命令行，在项目根目录下，运行`yarn install`来下载依赖。
+4. 执行`yarn start`来启动项目，项目默认地址为`http://localhost:5173/`
+5. 在浏览器中打开`http://localhost:5173/`来访问项目。
+
+### 脚本执行
+
+对于 Windows 用户，可以直接执行 ps1 脚本，来一键安装依赖并启动项目。
+
+1. 打开 powershell，定位到项目根目录中的`scripts`目录
+2. 在命令行中，执行`.\install.ps1`
+3. 等待脚本完成。
+
+> 备注
+> 脚本依赖`winget`来安装 node，仅在 Windows 10 1709（版本 16299）或更高版本上受支持！
+
 ## 🏆 荣誉
 
 - Github 全球趋势榜上榜项目
