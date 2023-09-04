@@ -8,7 +8,8 @@ import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom } from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useState } from 'react'
+import { useCallback, useContext, useMemo, useState } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -19,7 +20,11 @@ export default function WordPanel() {
   const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
+  const prevWord = state.chapterData.words[state.chapterData.index - 1] as Word | undefined
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
+  const currentIndex = state.chapterData.index
+  const prevIndex = useMemo(() => state.chapterData.index - 1, [state.chapterData.index])
+  const nextIndex = useMemo(() => state.chapterData.index + 1, [state.chapterData.index])
 
   usePrefetchPronunciationSound(nextWord?.name)
 
@@ -51,10 +56,41 @@ export default function WordPanel() {
     reloadCurrentWordComponent,
   ])
 
+  const onClickWord = useCallback(
+    (type: TypingStateActionType) => {
+      if (type === TypingStateActionType.PREV_WORD) {
+        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: prevIndex })
+      }
+
+      if (type === TypingStateActionType.NEXT_WORD) {
+        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: nextIndex })
+      }
+    },
+    [dispatch, currentIndex, currentWord],
+  )
+
+  useHotkeys(
+    'Ctrl + Shift + ArrowLeft',
+    (e) => {
+      e.preventDefault()
+      prevWord && onClickWord(TypingStateActionType.PREV_WORD)
+    },
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    'Ctrl + Shift + ArrowRight',
+    (e) => {
+      e.preventDefault()
+      nextWord && onClickWord(TypingStateActionType.NEXT_WORD)
+    },
+    { preventDefault: true },
+  )
+
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
       <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">
-        {state.isTyping && (
+        {isShowPrevAndNextWord && state.isTyping && (
           <>
             <PrevAndNextWord type="prev" />
             <PrevAndNextWord type="next" />

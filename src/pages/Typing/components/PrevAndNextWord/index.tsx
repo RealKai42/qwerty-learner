@@ -23,15 +23,6 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
     if (type === 'next') dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
   }, [type, dispatch, newIndex, word])
 
-  useHotkeys(
-    shortCutKey,
-    (e) => {
-      e.preventDefault()
-      onClickWord()
-    },
-    { preventDefault: true },
-  )
-
   const headWord = useMemo(() => {
     if (!word) return ''
 
