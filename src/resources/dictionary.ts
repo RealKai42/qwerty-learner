@@ -399,6 +399,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'English_II',
+    name: '英语二单词书',
+    description: '考研英语二单词书',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/English_II.json',
+    length: 4559,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
@@ -1442,6 +1453,18 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  //Reading_Explorer系列
+  {
+    id: 'ReadingExplorer3',
+    name: 'Reading Explorer 3',
+    description: '词汇表来自Reading Explorer 3, Third Edition',
+    category: '英语学习',
+    tags: ['青少年英语'],
+    url: '/dicts/ReadingExplorer3.json',
+    length: 239,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'Macmillan7000',
     name: '麦克米伦7000',
@@ -1454,6 +1477,7 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
 ]
+
 // 编程字典
 const programming: DictionaryResource[] = [
   {
