@@ -53,7 +53,8 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     // run only when word changes
     let headword = ''
     try {
-      headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      headword = (currentLanguage === 'kr' ? word.krDisplayWord! : word.name).replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
       headword = headword.replace(new RegExp('…', 'g'), '..')
     } catch (e) {
       console.error('word.name is not a string', word)
@@ -153,7 +154,8 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     }
 
     const inputChar = wordState.inputWord[inputLength - 1]
-    const correctChar = wordState.displayWord[inputLength - 1]
+    const correctChar = currentLanguage === 'kr' ? word.krInputWord?.[inputLength - 1] : wordState.displayWord[inputLength - 1]
+
     let isEqual = false
     if (inputChar != undefined && correctChar != undefined) {
       isEqual = isIgnoreCase ? inputChar.toLowerCase() === correctChar.toLowerCase() : inputChar === correctChar
@@ -262,7 +264,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         lang={currentLanguageCategory !== 'code' ? currentLanguageCategory : 'en'}
         className="flex flex-col items-center justify-center pb-1 pt-4"
       >
-        {currentLanguage === 'romaji' && word.notation && <Notation notation={word.notation} />}
+        {['kr', 'romaji'].includes(currentLanguage) && word.notation && <Notation notation={word.notation} />}
         <div
           className={`tooltip-info relative w-fit bg-transparent p-0 leading-normal shadow-none dark:bg-transparent ${
             wordDictationConfig.isOpen ? 'tooltip' : ''

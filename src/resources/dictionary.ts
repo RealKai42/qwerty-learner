@@ -2019,6 +2019,21 @@ const germanExam: DictionaryResource[] = [
   },
 ]
 
+// 韩语词典
+const koreanExam: DictionaryResource[] = [
+  {
+    id: 'korean_base',
+    name: '韩语 初级',
+    description: '韩语初级词汇',
+    category: '韩语学习',
+    tags: ['基础'],
+    url: '/dicts/korean_base.json',
+    length: 1,
+    language: 'kr',
+    languageCategory: 'kr',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
@@ -2030,6 +2045,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...programming,
   ...japaneseExam,
   ...germanExam,
+  ...koreanExam,
 
   // {
   //   id: 'zhtest',

@@ -24,6 +24,8 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
       return `${pronunciationApi}${word}&le=jap`
     case 'de':
       return `${pronunciationApi}${word}&le=de`
+    case 'kr':
+      return `${pronunciationApi}${word}&le=kr`
   }
 }
 

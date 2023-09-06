@@ -100,4 +100,13 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  kr: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '韩语',
+        pron: 'kr',
+      },
+    ],
+  },
 }
