@@ -1,5 +1,5 @@
-import { SoundIcon } from '../SoundIcon'
 import Tooltip from '@/components/Tooltip'
+import { SoundIcon } from '@/components/WordPronunciationIcon/SoundIcon'
 import useSpeech from '@/hooks/useSpeech'
 import { fontSizeConfigAtom, isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'

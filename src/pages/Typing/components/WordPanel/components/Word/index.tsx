@@ -1,12 +1,13 @@
 import type { WordUpdateAction } from '../InputHandler'
 import InputHandler from '../InputHandler'
-import WordSound from '../WordSound'
 import Letter from './Letter'
 import Notation from './Notation'
 import { TipAlert } from './TipAlert'
 import style from './index.module.css'
 import { initialWordState } from './type'
 import type { WordState } from './type'
+import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
+import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
@@ -23,7 +24,7 @@ import type { Word } from '@/typings'
 import { getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useEffect, useState } from 'react'
+import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useImmer } from 'use-immer'
 
@@ -48,6 +49,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const currentChapter = useAtomValue(currentChapterAtom)
 
   const [showTipAlert, setShowTipAlert] = useState(false)
+  const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
 
   useEffect(() => {
     // run only when word changes
@@ -114,6 +116,22 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     { enableOnFormTags: true, keyup: true, preventDefault: true },
     [],
   )
+  useHotkeys(
+    'ctrl+j',
+    () => {
+      if (state.isTyping) {
+        wordPronunciationIconRef.current?.play()
+      }
+    },
+    [state.isTyping],
+    { enableOnFormTags: true, preventDefault: true },
+  )
+
+  useEffect(() => {
+    if (wordState.inputWord.length === 0 && state.isTyping) {
+      wordPronunciationIconRef.current?.play()
+    }
+  }, [state.isTyping, wordState.inputWord.length])
 
   const getLetterVisible = useCallback(
     (index: number) => {
@@ -278,7 +296,13 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
               return <Letter key={`${index}-${t}`} letter={t} visible={getLetterVisible(index)} state={wordState.letterStates[index]} />
             })}
           </div>
-          {pronunciationIsOpen && <WordSound word={word.name} inputWord={wordState.inputWord} className="h-10 w-10" />}
+          {pronunciationIsOpen && (
+            <WordPronunciationIcon
+              word={word.name}
+              ref={wordPronunciationIconRef}
+              className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform "
+            />
+          )}
         </div>
       </div>
       <TipAlert className="fixed bottom-10 right-3" show={showTipAlert} setShow={setShowTipAlert} />
