@@ -5936,7 +5936,7 @@
         "usphone": "ˈsɜrkjəˌleɪʃən dɛsk"
     },
     {
-        "name": "internet café",
+        "name": "internet cafe",
         "trans": [
             "网吧"
         ],
@@ -8024,7 +8024,7 @@
         "usphone": "trʌŋk"
     },
     {
-        "name": "break",
+        "name": "brake",
         "trans": [
             "刹车"
         ],
@@ -8440,30 +8440,6 @@
         "usphone": "flʌd"
     },
     {
-        "name": "earthquake",
-        "trans": [
-            "地震"
-        ],
-        "ukphone": "ˈɜːθkweɪk",
-        "usphone": "ˈɜrθˌkweɪk"
-    },
-    {
-        "name": "volcano",
-        "trans": [
-            "火山"
-        ],
-        "ukphone": "vɒlˈkeɪnəʊ",
-        "usphone": "vɑlˈkeɪnoʊ"
-    },
-    {
-        "name": "tidal wave",
-        "trans": [
-            "海啸"
-        ],
-        "ukphone": "ˈtaɪdᵊl weɪv",
-        "usphone": "ˈtaɪdəl weɪv"
-    },
-    {
         "name": "tsunami",
         "trans": [
             "海啸"
@@ -8848,12 +8824,12 @@
         "usphone": "əˈraʊnd ðə ˈkɔrnər tu ðə lɛft"
     },
     {
-        "name": "around the corner to theright 向右转",
+        "name": "around the corner to theright",
         "trans": [
             null
         ],
-        "ukphone": "əˈraʊnd ðə ˈkɔːnə tuː theright 向右转",
-        "usphone": "əˈraʊnd ðə ˈkɔrnər tu theright 向右转"
+        "ukphone": "əˈraʊnd ðə ˈkɔːnə tuː theright",
+        "usphone": "əˈraʊnd ðə ˈkɔrnər tu theright"
     },
     {
         "name": "be in front of",
@@ -9248,20 +9224,20 @@
         "usphone": "ɡraʊnd flɔr"
     },
     {
-        "name": "wing 配楼",
+        "name": "wing",
         "trans": [
             "建筑的一部分"
         ],
-        "ukphone": "wɪŋ 配楼",
-        "usphone": "wɪŋ 配楼"
+        "ukphone": "wɪŋ",
+        "usphone": "wɪŋ"
     },
     {
-        "name": "annex 配楼",
+        "name": "annex",
         "trans": [
             "附属建筑"
         ],
-        "ukphone": "əˈnɛks 配楼",
-        "usphone": "ˈæˌnɛks 配楼"
+        "ukphone": "əˈnɛks",
+        "usphone": "ˈæˌnɛks"
     },
     {
         "name": "twin building",
