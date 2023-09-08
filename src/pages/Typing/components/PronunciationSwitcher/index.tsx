@@ -218,6 +218,11 @@ const PronunciationSwitcher = () => {
                       </Listbox>
                     </div>
                   </div>
+                  {pronunciationConfig.isOpen && (
+                    <span className="text-colo text-xs font-medium text-gray-500 dark:text-white dark:text-opacity-60">
+                      Tips: 朗读发音快捷键（Ctrl + J）
+                    </span>
+                  )}
                 </Transition>
               </div>
             </Popover.Panel>
