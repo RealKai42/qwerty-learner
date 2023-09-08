@@ -43,7 +43,6 @@ export enum TypingStateActionType {
   REPORT_WRONG_WORD = 'REPORT_WRONG_WORD',
   REPORT_CORRECT_WORD = 'REPORT_CORRECT_WORD',
   NEXT_WORD = 'NEXT_WORD',
-  PREV_WORD = 'PREV_WORD',
   LOOP_CURRENT_WORD = 'LOOP_CURRENT_WORD',
   FINISH_CHAPTER = 'FINISH_CHAPTER',
   INCREASE_WRONG_WORD = 'INCREASE_WRONG_WORD',
@@ -68,7 +67,6 @@ export type TypingStateAction =
   | { type: TypingStateActionType.REPORT_WRONG_WORD; payload: { letterMistake: LetterMistakes } }
   | { type: TypingStateActionType.REPORT_CORRECT_WORD }
   | { type: TypingStateActionType.NEXT_WORD }
-  | { type: TypingStateActionType.PREV_WORD }
   | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.SKIP_WORD }

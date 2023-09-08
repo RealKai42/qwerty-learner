@@ -46,7 +46,7 @@ export default function WordPanel() {
         reloadCurrentWordComponent()
       } else {
         setCurrentWordExerciseCount(0)
-        dispatch({ type: 'next' })
+        dispatch({ type: TypingStateActionType.NEXT_WORD })
       }
     } else {
       // 用户完成当前章节
