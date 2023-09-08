@@ -5,6 +5,7 @@
 <h1 align="center">
   QWERTY Learner
 </h1>
+
 <p align="center">
   Design for people want to memorize words and practice typings.
 </p>
@@ -88,6 +89,42 @@ QWERTY Learner counts how many strokes people have typed and shows the speed and
 <div align=center>
   <img src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/dictation.png"/>
 </div>
+<br />
+<br />
+
+## How to contribute
+
+### Contribute code
+
+[Call for Contributor](https://github.com/Kaiyiwing/qwerty-learner/issues/390)  
+[Contribution guidelines](./docs/CONTRIBUTING.md)
+
+### Contribute word library
+
+[Import dictionary](./docs/toBuildDict.md)
+
+## Run project
+
+本项目是基于`React`开发的，需要 node 环境来运行。
+
+### Manual installation
+
+1. Install NodeJS, refer to [official documentation](https://nodejs.org/en/download)
+2. Use `git clone` to download the project locally, without git you may not be able to run it due to missing dependencies.
+3. Open the command line and run `yarn install` in the root directory of the project to download the dependencies.
+4. Execute `yarn start` to start the project at `http://localhost:5173/`.
+5. Open `http://localhost:5173/` in your browser to access the project.
+
+### Script execution
+
+For Windows users, the ps1 script can be executed directly to install dependencies and start the project in one click.
+
+1. Open powershell and locate the `scripts` directory in the project root directory.
+2. At the command line, run `. \install.ps1`
+3. Wait for the script to complete.
+
+> Remarks
+> The script relies on `winget` to install node and is only supported on Windows 10 1709 (version 16299) or later!
 
 ## 🏆 Honors
 
