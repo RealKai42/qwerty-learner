@@ -3,7 +3,6 @@ import Tooltip from '@/components/Tooltip'
 import { wordDictationConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
-import { useHotkeys } from 'react-hotkeys-hook'
 import IconPrev from '~icons/tabler/arrow-narrow-left'
 import IconNext from '~icons/tabler/arrow-narrow-right'
 

@@ -20,11 +20,16 @@ export default function WordPanel() {
   const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
-  const prevWord = state.chapterData.words[state.chapterData.index - 1] as Word | undefined
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
-  const currentIndex = state.chapterData.index
-  const prevIndex = useMemo(() => state.chapterData.index - 1, [state.chapterData.index])
-  const nextIndex = useMemo(() => state.chapterData.index + 1, [state.chapterData.index])
+
+  const prevIndex = useMemo(() => {
+    const newIndex = state.chapterData.index - 1
+    return newIndex < 0 ? 0 : newIndex
+  }, [state.chapterData.index])
+  const nextIndex = useMemo(() => {
+    const newIndex = state.chapterData.index + 1
+    return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
+  }, [state.chapterData.index, state.chapterData.words.length])
 
   usePrefetchPronunciationSound(nextWord?.name)
 
@@ -41,7 +46,7 @@ export default function WordPanel() {
         reloadCurrentWordComponent()
       } else {
         setCurrentWordExerciseCount(0)
-        dispatch({ type: TypingStateActionType.NEXT_WORD })
+        dispatch({ type: 'next' })
       }
     } else {
       // 用户完成当前章节
@@ -56,24 +61,24 @@ export default function WordPanel() {
     reloadCurrentWordComponent,
   ])
 
-  const onClickWord = useCallback(
-    (type: TypingStateActionType) => {
-      if (type === TypingStateActionType.PREV_WORD) {
+  const onSkipWord = useCallback(
+    (type: 'prev' | 'next') => {
+      if (type === 'prev') {
         dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: prevIndex })
       }
 
-      if (type === TypingStateActionType.NEXT_WORD) {
+      if (type === 'next') {
         dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: nextIndex })
       }
     },
-    [dispatch, currentIndex, currentWord],
+    [dispatch, prevIndex, nextIndex],
   )
 
   useHotkeys(
     'Ctrl + Shift + ArrowLeft',
     (e) => {
       e.preventDefault()
-      prevWord && onClickWord(TypingStateActionType.PREV_WORD)
+      onSkipWord('prev')
     },
     { preventDefault: true },
   )
@@ -82,7 +87,7 @@ export default function WordPanel() {
     'Ctrl + Shift + ArrowRight',
     (e) => {
       e.preventDefault()
-      nextWord && onClickWord(TypingStateActionType.NEXT_WORD)
+      onSkipWord('next')
     },
     { preventDefault: true },
   )
