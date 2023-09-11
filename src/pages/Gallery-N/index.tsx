@@ -14,6 +14,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import { useNavigate } from 'react-router-dom'
 import type { Updater } from 'use-immer'
 import { useImmer } from 'use-immer'
+import IconInfo from '~icons/ic/outline-info'
 import IconX from '~icons/tabler/x'
 
 export type GalleryState = {
@@ -75,11 +76,17 @@ export default function GalleryPage() {
                 <DictRequest />
               </div>
               <ScrollArea.Root className="flex-1 overflow-y-auto">
-                <ScrollArea.Viewport className="h-full w-full pb-[20rem]">
+                <ScrollArea.Viewport className="h-full w-full ">
                   <div className="mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
                     {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
                       <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
                     ))}
+                  </div>
+                  <div className="flex items-center justify-center pb-10 pt-[20rem] text-gray-500">
+                    <IconInfo className="mr-1 h-5 w-5" />
+                    <span className="text-xs">
+                      词典的数据来源于开源项目以及社区的贡献，仅用于开源学习。如有侵权，请通过电子邮件与我们联系以请求移除。我们尊重知识产权，并将迅速遵守此类要求。
+                    </span>
                   </div>
                 </ScrollArea.Viewport>
                 <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
