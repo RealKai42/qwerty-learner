@@ -5,7 +5,6 @@
 <h1 align="center">
   QWERTY Learner
 </h1>
-
 <p align="center">
   Design for people want to memorize words and practice typings.
 </p>
@@ -33,9 +32,9 @@
 
 We have deployed QWERTY Learner on many platforms. You can try QWERTY Learner in following ways.
 
-- Vercel: https://qwerty.kaiyi.cool/, or https://qwerty-learner.vercel.app/.
-- GitHub Pages: https://kaiyiwing.github.io/qwerty-learner/.
-- Gitee Pages (recommended for people in mainland China): https://kaiyiwing.gitee.io/qwerty-learner/.
+- Vercel: <https://qwerty.kaiyi.cool/>, or <https://qwerty-learner.vercel.app/>.
+- GitHub Pages: <https://kaiyiwing.github.io/qwerty-learner/>.
+- Gitee Pages (recommended for people in mainland China): <https://kaiyiwing.gitee.io/qwerty-learner/>.
 
 QWERTY Learner also has a Visual Studio Code plugin. With a single click and you will be able to practice anytime.
 
@@ -89,42 +88,6 @@ QWERTY Learner counts how many strokes people have typed and shows the speed and
 <div align=center>
   <img src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/dictation.png"/>
 </div>
-<br />
-<br />
-
-## How to contribute
-
-### Contribute code
-
-[Call for Contributor](https://github.com/Kaiyiwing/qwerty-learner/issues/390)  
-[Contribution guidelines](./docs/CONTRIBUTING.md)
-
-### Contribute word library
-
-[Import dictionary](./docs/toBuildDict.md)
-
-## Run project
-
-本项目是基于`React`开发的，需要 node 环境来运行。
-
-### Manual installation
-
-1. Install NodeJS, refer to [official documentation](https://nodejs.org/en/download)
-2. Use `git clone` to download the project locally, without git you may not be able to run it due to missing dependencies.
-3. Open the command line and run `yarn install` in the root directory of the project to download the dependencies.
-4. Execute `yarn start` to start the project at `http://localhost:5173/`.
-5. Open `http://localhost:5173/` in your browser to access the project.
-
-### Script execution
-
-For Windows users, the ps1 script can be executed directly to install dependencies and start the project in one click.
-
-1. Open powershell and locate the `scripts` directory in the project root directory.
-2. At the command line, run `. \install.ps1`
-3. Wait for the script to complete.
-
-> Remarks
-> The script relies on `winget` to install node and is only supported on Windows 10 1709 (version 16299) or later!
 
 ## 🏆 Honors
 
@@ -185,7 +148,7 @@ If you have decided the task you are willing to accomplish. Please create a draf
 
 After all, thanks for your contribution! 🎉
 
-## ☕️ Buy Me A Coffee!
+## ☕️ Buy Me A Coffee
 
 Currently, QWERTY Learner is mainly maintained by three people in their spare time. In the future, we hope to purchase a separate domain and host an backend server for data synchronization. Therefore, if you like QWERTY Learner, please consider donation. This will definitely motivate us on the way of making QWERTY Learner better!
 
