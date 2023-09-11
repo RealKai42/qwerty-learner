@@ -525,6 +525,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'DuckCircle_IELTS',
+    name: '鸭圈雅思核心词',
+    description: '鸭圈雅思核心词',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/DuckCircle_IELTS.json',
+    length: 2687,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'sat',
     name: 'SAT',
     description: '美国 SAT 考试词库',
