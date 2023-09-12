@@ -21,14 +21,17 @@ export default function Progress({ className }: { className?: string }) {
   }, [state.chapterData.index, state.chapterData.words.length])
 
   return (
-    <div className={`relative w-1/4 pt-1 ${className}`}>
-      <div className="mb-4 flex h-2 overflow-hidden rounded-xl bg-indigo-100 text-xs transition-all duration-300 dark:bg-indigo-200">
+    <div className={`relative mb-4 flex w-1/4 flex-row content-center items-center justify-center pt-1 ${className}`}>
+      <div className="mr-2 flex h-2 w-full overflow-hidden rounded-xl bg-indigo-100 text-xs transition-all duration-300 dark:bg-indigo-200">
         <div
           style={{ width: `${progress}%` }}
           className={`flex flex-col justify-center whitespace-nowrap rounded-xl text-center text-white shadow-none transition-all duration-300 ${
             colorSwitcher[phase] ?? 'bg-indigo-200 dark:bg-indigo-300'
           }`}
         ></div>
+      </div>
+      <div className={'text-sm'}>
+        {state.chapterData.index}/{state.chapterData.words.length}
       </div>
     </div>
   )
