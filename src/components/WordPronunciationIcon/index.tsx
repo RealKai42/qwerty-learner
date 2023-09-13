@@ -7,11 +7,12 @@ export const WordPronunciationIcon = React.forwardRef<
   WordPronunciationIconRef,
   { word: string; className?: string; iconClassName?: string }
 >(({ word, className, iconClassName }, ref) => {
-  const { stop, isPlaying, setIsPlaying } = usePronunciationSound(word)
+  const { play, stop, isPlaying } = usePronunciationSound(word)
 
   const playSound = useCallback(() => {
-    setIsPlaying(true)
-  }, [setIsPlaying])
+    stop()
+    play()
+  }, [play, stop])
 
   useEffect(() => {
     return stop

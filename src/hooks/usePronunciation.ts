@@ -62,13 +62,7 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     }
   }, [sound])
 
-  useEffect(() => {
-    if (!isPlaying || !sound) return
-    stop()
-    play()
-  }, [sound, isPlaying, play, stop])
-
-  return { play, stop, isPlaying, setIsPlaying }
+  return { play, stop, isPlaying }
 }
 
 export function usePrefetchPronunciationSound(word: string | undefined) {
