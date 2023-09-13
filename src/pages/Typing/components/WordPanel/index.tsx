@@ -8,7 +8,8 @@ import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom } from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useState } from 'react'
+import { useCallback, useContext, useMemo, useState } from 'react'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -20,6 +21,15 @@ export default function WordPanel() {
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
+
+  const prevIndex = useMemo(() => {
+    const newIndex = state.chapterData.index - 1
+    return newIndex < 0 ? 0 : newIndex
+  }, [state.chapterData.index])
+  const nextIndex = useMemo(() => {
+    const newIndex = state.chapterData.index + 1
+    return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
+  }, [state.chapterData.index, state.chapterData.words.length])
 
   usePrefetchPronunciationSound(nextWord?.name)
 
@@ -50,6 +60,37 @@ export default function WordPanel() {
     dispatch,
     reloadCurrentWordComponent,
   ])
+
+  const onSkipWord = useCallback(
+    (type: 'prev' | 'next') => {
+      if (type === 'prev') {
+        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: prevIndex })
+      }
+
+      if (type === 'next') {
+        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: nextIndex })
+      }
+    },
+    [dispatch, prevIndex, nextIndex],
+  )
+
+  useHotkeys(
+    'Ctrl + Shift + ArrowLeft',
+    (e) => {
+      e.preventDefault()
+      onSkipWord('prev')
+    },
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    'Ctrl + Shift + ArrowRight',
+    (e) => {
+      e.preventDefault()
+      onSkipWord('next')
+    },
+    { preventDefault: true },
+  )
 
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">

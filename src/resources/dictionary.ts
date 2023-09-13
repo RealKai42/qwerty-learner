@@ -388,6 +388,28 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'TOEFL_ZhangHongYan',
+    name: '张红岩的TOEFL词汇书',
+    description: '张红岩的TOEFL词汇书-词以类记',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/TOEFL_ZhangHongYan.json',
+    length: 4035,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'English_II',
+    name: '英语二单词书',
+    description: '考研英语二单词书',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/English_II.json',
+    length: 4559,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
@@ -421,7 +443,7 @@ const internationalExam: DictionaryResource[] = [
     category: '国际考试',
     tags: ['IELTS'],
     url: '/dicts/IELTS_tinglichangjing.json',
-    length: 1207,
+    length: 1204,
     language: 'en',
     languageCategory: 'en',
   },
@@ -499,6 +521,17 @@ const internationalExam: DictionaryResource[] = [
     tags: ['IELTS'],
     url: '/dicts/IELTS_WANG_11.json',
     length: 1738,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'DuckCircle_IELTS',
+    name: '鸭圈雅思核心词',
+    description: '鸭圈雅思核心词',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/DuckCircle_IELTS.json',
+    length: 2644,
     language: 'en',
     languageCategory: 'en',
   },
@@ -1431,6 +1464,18 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  //Reading_Explorer系列
+  {
+    id: 'ReadingExplorer3',
+    name: 'Reading Explorer 3',
+    description: '词汇表来自Reading Explorer 3, Third Edition',
+    category: '英语学习',
+    tags: ['青少年英语'],
+    url: '/dicts/ReadingExplorer3.json',
+    length: 239,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'Macmillan7000',
     name: '麦克米伦7000',
@@ -1443,6 +1488,7 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
 ]
+
 // 编程字典
 const programming: DictionaryResource[] = [
   {
@@ -1817,6 +1863,28 @@ const programming: DictionaryResource[] = [
     tags: ['AI'],
     url: '/dicts/ai_for_science.json',
     length: 491,
+    language: 'code',
+    languageCategory: 'code',
+  },
+  {
+    id: 'go_keyword',
+    name: 'golang-keyword',
+    description: 'go语言关键字,',
+    category: '代码练习',
+    tags: ['golang'],
+    url: '/dicts/go_keyword.json',
+    length: 25,
+    language: 'code',
+    languageCategory: 'code',
+  },
+  {
+    id: 'go_builtin',
+    name: 'golang-builtin',
+    description: 'go语言内建函数和类型',
+    category: '代码练习',
+    tags: ['golang'],
+    url: '/dicts/go_builtin.json',
+    length: 46,
     language: 'code',
     languageCategory: 'code',
   },

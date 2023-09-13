@@ -3,7 +3,6 @@ import Tooltip from '@/components/Tooltip'
 import { wordDictationConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
-import { useHotkeys } from 'react-hotkeys-hook'
 import IconPrev from '~icons/tabler/arrow-narrow-left'
 import IconNext from '~icons/tabler/arrow-narrow-right'
 
@@ -22,15 +21,6 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
     if (type === 'prev') dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
     if (type === 'next') dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
   }, [type, dispatch, newIndex, word])
-
-  useHotkeys(
-    shortCutKey,
-    (e) => {
-      e.preventDefault()
-      onClickWord()
-    },
-    { preventDefault: true },
-  )
 
   const headWord = useMemo(() => {
     if (!word) return ''
