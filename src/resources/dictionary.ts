@@ -536,6 +536,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'IELTSVocabularyBible',
+    name: '雅思词汇真经',
+    description: '雅思词汇真经',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/IELTSVocabularyBible.json',
+    length: 3672,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'sat',
     name: 'SAT',
     description: '美国 SAT 考试词库',
