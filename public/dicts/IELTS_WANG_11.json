@@ -12,8 +12,8 @@
         "trans": [
             "导航"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'nævə'geʃən",
+        "ukphone": "nævɪ'geɪʃ(ə)n"
     },
     {
         "name": "demonstration",
@@ -130,7 +130,7 @@
     {
         "name": "charge",
         "trans": [
-            "充电\/冲锋\/费用"
+            "充电/冲锋/费用"
         ],
         "usphone": "tʃɑːdʒ",
         "ukphone": "tʃɑːrdʒ"
@@ -316,8 +316,8 @@
         "trans": [
             "注意力"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'kɑnsn'treʃən",
+        "ukphone": "ˌkɑːnsn'treɪʃn"
     },
     {
         "name": "categories",
@@ -724,8 +724,8 @@
         "trans": [
             "部分"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'sɛɡmənt",
+        "ukphone": "'segmənt"
     },
     {
         "name": "disability",
@@ -876,8 +876,8 @@
         "trans": [
             "瑞典"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'swidən",
+        "ukphone": "'swidən"
     },
     {
         "name": "vest",
@@ -900,8 +900,8 @@
         "trans": [
             "社交"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'səuʃəlaiz",
+        "ukphone": "'səuʃəlaɪz"
     },
     {
         "name": "lemon",
@@ -1172,8 +1172,8 @@
         "trans": [
             "木工活"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'kɑrpəntri",
+        "ukphone": "'kɑːrpəntri"
     },
     {
         "name": "lifeguard",
@@ -1212,8 +1212,8 @@
         "trans": [
             "壁炉"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'faɪɚples",
+        "ukphone": "'faɪəpleɪs"
     },
     {
         "name": "occupancy",
@@ -1440,7 +1440,7 @@
         "ukphone": null
     },
     {
-        "name": "side entrance\/gate",
+        "name": "side entrance/gate",
         "trans": [
             "侧门"
         ],
@@ -1460,8 +1460,8 @@
         "trans": [
             "邮局"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ˈpost ɔfɪs",
+        "ukphone": "ˈpəust ɔfis"
     },
     {
         "name": "horse riding",
@@ -1538,7 +1538,7 @@
     {
         "name": "evening appointment",
         "trans": [
-            "晚间约会（商务\/正式）"
+            "晚间约会（商务/正式）"
         ],
         "usphone": null,
         "ukphone": null
@@ -1754,7 +1754,7 @@
     {
         "name": "washing staff",
         "trans": [
-            "裁员\/洗衣工"
+            "裁员/洗衣工"
         ],
         "usphone": null,
         "ukphone": null
@@ -1848,7 +1848,7 @@
         "ukphone": null
     },
     {
-        "name": "driving licence\/license",
+        "name": "driving licence/license",
         "trans": [
             "驾照"
         ],
@@ -3132,8 +3132,8 @@
         "trans": [
             "布局"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'leaʊt",
+        "ukphone": "'leɪaut"
     },
     {
         "name": "format",
@@ -3336,7 +3336,7 @@
         "ukphone": "ˈoʊvəˈfɪl"
     },
     {
-        "name": "archaeology\/archeology",
+        "name": "archaeology/archeology",
         "trans": [
             "考古学"
         ],
@@ -3388,8 +3388,8 @@
         "trans": [
             "垃圾箱"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'dʌstbɪn",
+        "ukphone": "'dʌs(t)bɪn"
     },
     {
         "name": "garbage",
@@ -3484,8 +3484,8 @@
         "trans": [
             "消化的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "daɪ'dʒɛstɪv",
+        "ukphone": "daɪ'dʒestɪv; dɪ-"
     },
     {
         "name": "fertilizer=fertiliser",
@@ -3540,8 +3540,8 @@
         "trans": [
             "栖息地"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'hæbə'tæt",
+        "ukphone": "'hæbɪtæt"
     },
     {
         "name": "procedure",
@@ -3580,8 +3580,8 @@
         "trans": [
             "限制"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "rɪ'strɪkʃən",
+        "ukphone": "rɪ'strɪkʃ(ə)n"
     },
     {
         "name": "cookery",
@@ -4036,8 +4036,8 @@
         "trans": [
             "沿海步道"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": ",prɑmə'ned",
+        "ukphone": "ˌprɑːmə'neɪd"
     },
     {
         "name": "highlight",
@@ -4052,8 +4052,8 @@
         "trans": [
             "中世纪的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": ",midɪ'ivəl",
+        "ukphone": "ˌmiːd'iːvl"
     },
     {
         "name": "subcommittee",
@@ -4140,8 +4140,8 @@
         "trans": [
             "热带的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'trɑpɪkl",
+        "ukphone": "'trɒpɪk(ə)l"
     },
     {
         "name": "grateful",
@@ -6044,8 +6044,8 @@
         "trans": [
             "简历"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "kəˌrɪkjələm'vitaɪ",
+        "ukphone": "kəˈrɪkjʊləm ˈviːtaɪ"
     },
     {
         "name": "volunteer list",
@@ -6628,8 +6628,8 @@
         "trans": [
             "创意；独创性"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ə'rɪdʒə'næləti",
+        "ukphone": "ə,rɪdʒɪ'nælɪtɪ"
     },
     {
         "name": "objective",
@@ -6700,8 +6700,8 @@
         "trans": [
             "依赖"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "rɪ'laɪəns",
+        "ukphone": "rɪ'laɪəns"
     },
     {
         "name": "ink",
@@ -6804,8 +6804,8 @@
         "trans": [
             "非正式"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ɪnfɔr'mæləti",
+        "ukphone": "ˌɪnfɔːr'mæləti"
     },
     {
         "name": "informative",
@@ -6996,8 +6996,8 @@
         "trans": [
             "适应性"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ə,dæptə'bɪləti",
+        "ukphone": "ə,dæptə'bɪlətɪ"
     },
     {
         "name": "pigeon",
@@ -7332,8 +7332,8 @@
         "trans": [
             "锯末"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'sɔ'dʌst",
+        "ukphone": "'sɔːdʌst"
     },
     {
         "name": "pits",
@@ -7420,8 +7420,8 @@
         "trans": [
             "争议"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ˈkɑntrəvɝ​sɪ",
+        "ukphone": "'kɑːntrəvɜːrsi"
     },
     {
         "name": "ridiculous",
@@ -9148,8 +9148,8 @@
         "trans": [
             "最大的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ˈmæksəməm",
+        "ukphone": "'mæksɪməm"
     },
     {
         "name": "coconut",
@@ -9322,7 +9322,7 @@
     {
         "name": "critical",
         "trans": [
-            "批判的\/核心的"
+            "批判的/核心的"
         ],
         "usphone": "ˈkrɪtɪkl",
         "ukphone": "ˈkrɪtɪkl"
@@ -9346,7 +9346,7 @@
     {
         "name": "intelligence",
         "trans": [
-            "情报\/智力"
+            "情报/智力"
         ],
         "usphone": "ɪnˈtelɪdʒəns",
         "ukphone": "ɪnˈtelɪdʒəns"
@@ -9370,7 +9370,7 @@
     {
         "name": "passive",
         "trans": [
-            "消极的\/被动的"
+            "消极的/被动的"
         ],
         "usphone": "ˈpæsɪv",
         "ukphone": "ˈpæsɪv"
@@ -9418,7 +9418,7 @@
     {
         "name": "mechanism",
         "trans": [
-            "进程\/机械装置"
+            "进程/机械装置"
         ],
         "usphone": "ˈmekənɪzəm",
         "ukphone": "ˈmekənɪzəm"
@@ -9508,16 +9508,16 @@
         "trans": [
             "性价比髙的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'kɔstə'fɛktɪv",
+        "ukphone": "'kɔsti'fektiv"
     },
     {
         "name": "navigate",
         "trans": [
             "航行"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'nævə'get",
+        "ukphone": "'nævɪgeɪt"
     },
     {
         "name": "genetic",
@@ -9596,8 +9596,8 @@
         "trans": [
             "混凝土"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'kɑŋkrit",
+        "ukphone": "'kɑːŋkriːt"
     },
     {
         "name": "lifespan",
@@ -9724,8 +9724,8 @@
         "trans": [
             "探索"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": ",ɛksplə'reʃən",
+        "ukphone": "eksplə'reɪʃ(ə)n"
     },
     {
         "name": "toothache",
@@ -9868,8 +9868,8 @@
         "trans": [
             "容忍"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'tɑlərəns",
+        "ukphone": "'tɒl(ə)r(ə)ns"
     },
     {
         "name": "contribution",
@@ -9884,8 +9884,8 @@
         "trans": [
             "潮湿度"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "hju'mɪdəti",
+        "ukphone": "hjuː'mɪdəti"
     },
     {
         "name": "barrier",
@@ -9948,8 +9948,8 @@
         "trans": [
             "注意力"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'kɑnsn'treʃən",
+        "ukphone": "ˌkɑːnsn'treɪʃn"
     },
     {
         "name": "literacy",
@@ -10026,7 +10026,7 @@
     {
         "name": "instinct",
         "trans": [
-            "天性\/本能"
+            "天性/本能"
         ],
         "usphone": "ˈɪnstɪŋkt",
         "ukphone": "ˈɪnstɪŋkt"
@@ -10348,8 +10348,8 @@
         "trans": [
             "听觉"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'ɔdətɔri",
+        "ukphone": "'ɔːdətɔːri"
     },
     {
         "name": "symptom",
@@ -10410,7 +10410,7 @@
     {
         "name": "prompt",
         "trans": [
-            "v.\/n\/ 促使，激励 adj.迅速的，敏捷的"
+            "v./n/ 促使，激励 adj.迅速的，敏捷的"
         ],
         "usphone": "prɒmpt",
         "ukphone": "prɑːmpt"
@@ -10844,8 +10844,8 @@
         "trans": [
             "希腊人"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "grik",
+        "ukphone": "griːk"
     },
     {
         "name": "dominant",
@@ -11068,8 +11068,8 @@
         "trans": [
             "浮石"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'pʌmɪs",
+        "ukphone": "'pʌmɪs"
     },
     {
         "name": "luxurious",
@@ -11092,8 +11092,8 @@
         "trans": [
             "不卫生的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ʌn'sænətɛri",
+        "ukphone": "ʌn'sænətri"
     },
     {
         "name": "outbreaks",
@@ -11212,8 +11212,8 @@
         "trans": [
             "热带的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'trɑpɪkl",
+        "ukphone": "'trɒpɪk(ə)l"
     },
     {
         "name": "ecosystem",
@@ -11356,8 +11356,8 @@
         "trans": [
             "零售业"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'ritelɪŋ",
+        "ukphone": "'riːteɪlɪŋ"
     },
     {
         "name": "entrepreneurs",
@@ -11388,8 +11388,8 @@
         "trans": [
             "爆炸"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "ɪk'sploʒən",
+        "ukphone": "ɪk'splouʒn"
     },
     {
         "name": "necessities",
@@ -11788,8 +11788,8 @@
         "trans": [
             "相关性"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'rɛləvəns",
+        "ukphone": "'reləvəns"
     },
     {
         "name": "album",
@@ -11804,8 +11804,8 @@
         "trans": [
             "脆弱的，易碎的"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'frædʒəl",
+        "ukphone": "'frædʒl"
     },
     {
         "name": "catering",
@@ -12284,8 +12284,8 @@
         "trans": [
             "艰难"
         ],
-        "usphone": null,
-        "ukphone": null
+        "usphone": "'hɑrdʃɪp",
+        "ukphone": "'hɑːdʃɪp"
     },
     {
         "name": "linen",
