@@ -1179,6 +1179,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'Yilin1',
+    name: '高中必修1',
+    description: '译林版高中必修1',
+    category: '青少年英语',
+    tags: ['译林版'],
+    url: './dicts/YiLin_1.json',
+    length: 277,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'beishi1',
     name: '高中必修1',
     description: '北师大版高中必修1',
