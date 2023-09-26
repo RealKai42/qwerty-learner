@@ -27,7 +27,7 @@
 ## 📸 在线访问
 
 Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>  
-GitHub Pages: <https://Realkai42.github.io/qwerty-learner/>  
+GitHub Pages: <https://realkai42.github.io/qwerty-learner/>  
 Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 国内用户建议使用 Gitee 访问
