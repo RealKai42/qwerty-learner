@@ -168,7 +168,7 @@ const Footer: React.FC = () => {
           <IconWechat2 fontSize={16} className="text-gray-500 hover:text-green-500 dark:text-gray-400 dark:hover:text-green-500" />
         </button>
 
-        <a href="https://twitter.com/Kaiyi42" target="_blank" title="前往中国大陆镜像" rel="noreferrer">
+        <a href="https://twitter.com/real_kai42" target="_blank" title="x" rel="noreferrer">
           <IconTwitter fontSize={16} className="text-gray-500 hover:text-[#1DA1F2] dark:text-gray-400 dark:hover:text-[#1DA1F2]" />
         </a>
         <button
