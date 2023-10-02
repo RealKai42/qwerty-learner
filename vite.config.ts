@@ -31,7 +31,10 @@ export default defineConfig(async () => {
     build: {
       minify: true,
       outDir: 'build',
-      sourcemap: true,
+      sourcemap: false,
+    },
+    esbuild: {
+      drop: ['console', 'debugger'],
     },
     define: {
       REACT_APP_DEPLOY_ENV: JSON.stringify(process.env.REACT_APP_DEPLOY_ENV),
