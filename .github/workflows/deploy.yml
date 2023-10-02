@@ -26,6 +26,15 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build
+      - name: upload files to OSS
+        uses: fangbinwei/aliyun-oss-website-action@v1
+        with:
+          accessKeyId: ${{ secrets.YUN_KEY_ID }}
+          accessKeySecret: ${{ secrets.YUN_KEY_SECRET }}
+          bucket: 'qwerty-front'
+          endpoint: 'oss-cn-beijing.aliyuncs.com'
+          folder: './build'
+          skipSetting: true
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         env:
