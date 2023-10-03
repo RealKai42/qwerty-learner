@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-env:
-  REACT_APP_DEPLOY_ENV: pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,11 +19,6 @@ jobs:
         run: yarn
       - name: Build page
         run: yarn build
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./build
       - name: upload files to OSS
         uses: fangbinwei/aliyun-oss-website-action@v1
         with:
@@ -35,10 +28,3 @@ jobs:
           endpoint: 'oss-cn-beijing.aliyuncs.com'
           folder: './build'
           skipSetting: true
-      - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
-        with:
-          source-repo: git@github.com:Kaiyiwing/qwerty-learner.git
-          destination-repo: git@gitee.com:KaiyiWing/qwerty-learner.git
