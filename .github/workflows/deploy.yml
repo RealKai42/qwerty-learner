@@ -1,4 +1,4 @@
-name: Deployment
+name: Deployment to AliYun
 on:
   push:
     branches:
