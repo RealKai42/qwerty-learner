@@ -390,8 +390,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'TOEFL_ZhangHongYan',
-    name: '张红岩的TOEFL词汇书',
-    description: '张红岩的TOEFL词汇书-词以类记',
+    name: 'ZhangHongYan的TOEFL词汇书',
+    description: 'ZhangHongYan的TOEFL词汇书-词以类记',
     category: '国际考试',
     tags: ['TOEFL'],
     url: '/dicts/TOEFL_ZhangHongYan.json',
@@ -482,7 +482,7 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'ieltsWang3',
-    name: '雅思王C3',
+    name: '雅思wang C3',
     description: '雅思听力特别名词语料库',
     category: '国际考试',
     tags: ['IELTS'],
@@ -493,7 +493,7 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'ieltsWang4',
-    name: '雅思王C4',
+    name: '雅思wang C4',
     description: '雅思听力形容词副词语料库',
     category: '国际考试',
     tags: ['IELTS'],
@@ -504,7 +504,7 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'ieltsWang5',
-    name: '雅思王C5',
+    name: '雅思wang C5',
     description: '吞音连读混合训练语料库',
     category: '国际考试',
     tags: ['IELTS'],
@@ -515,7 +515,7 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'ieltsWang11',
-    name: '雅思王C11',
+    name: '雅思wang C11',
     description: '综合测试',
     category: '国际考试',
     tags: ['IELTS'],
@@ -1557,7 +1557,7 @@ const childrenEnglish: DictionaryResource[] = [
     id: 'ReadingExplorer3',
     name: 'Reading Explorer 3',
     description: '词汇表来自Reading Explorer 3, Third Edition',
-    category: '英语学习',
+    category: '青少年英语',
     tags: ['青少年英语'],
     url: '/dicts/ReadingExplorer3.json',
     length: 239,
