@@ -723,6 +723,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'Oxford3000',
+    name: '牛津3000词',
+    description: '牛津3000词',
+    category: '国际考试',
+    tags: ['牛津版'],
+    url: '/dicts/Oxford3000.json',
+    length: 1342,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'Oxford5000',
     name: '牛津5000词',
     description: '牛津5000词',
