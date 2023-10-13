@@ -213,6 +213,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'self-study_English3',
+    name: '自考英语二完整单词',
+    description: '00015自考英语二完整单词书',
+    category: '中国考试',
+    tags: ['自考英语二'],
+    url: '/dicts/self-study_English3.json',
+    length: 4606,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'coca_20000',
     name: 'COCA20000词',
     description: 'COCA20000词',
