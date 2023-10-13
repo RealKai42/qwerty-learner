@@ -1662,7 +1662,7 @@ const programming: DictionaryResource[] = [
     description: '少儿 C++ 常见词',
     category: '代码练习',
     tags: ['少儿编程', 'C++'],
-    url: '/dicts/Child_c++.json',
+    url: '/dicts/Child_cpp.json',
     length: 39,
     language: 'en',
     languageCategory: 'code',
