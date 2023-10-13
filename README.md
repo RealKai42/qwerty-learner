@@ -130,13 +130,16 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 2. 在命令行中，执行`.\install.ps1`
 3. 等待脚本完成。
 
-对于 MacOS 用户，可以直接执行 [install.sh](scripts/install.sh) 脚本来一键安装依赖并启动项目
-1. 打开终端，并进入此项目文件夹
-2. 在命令行中执行 `scripts/install.sh`
-2. 等待脚本完成
-
 > 备注
 > 脚本依赖`winget`来安装 node，仅在 Windows 10 1709（版本 16299）或更高版本上受支持！
+
+对于 MacOS 用户，可以直接执行 [install.sh](scripts/install.sh) 脚本来一键安装依赖并启动项目
+
+1. 打开终端，并进入此项目文件夹
+2. 在命令行中执行 `scripts/install.sh`
+3. 等待脚本完成
+
+> 此脚本依赖于 `homebrew`，请确保自己电脑上可以执行`brew`命令
 
 ## 🏆 荣誉
 
