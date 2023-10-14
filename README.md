@@ -26,16 +26,16 @@
 
 ## 📸 在线访问
 
-Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>  
-GitHub Pages: <https://realkai42.github.io/qwerty-learner/>  
+Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>
+GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 国内用户建议使用 Gitee 访问
 <br/>
 <br/>
 
-项目已发布 VSCode 插件版，一键启动、随时开始练习  
-[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)  
+项目已发布 VSCode 插件版，一键启动、随时开始练习
+[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)
 [GitHub](https://github.com/Realkai42/qwerty-learner-vscode)
 
 <br />
@@ -103,7 +103,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 ### 贡献代码
 
-[Call for Contributor](https://github.com/Realkai42/qwerty-learner/issues/390)  
+[Call for Contributor](https://github.com/Realkai42/qwerty-learner/issues/390)
 [贡献准则](./docs/CONTRIBUTING.md)
 
 ### 贡献词库
@@ -124,7 +124,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 ### 脚本执行
 
-对于 Windows 用户，可以直接执行 ps1 脚本，来一键安装依赖并启动项目。
+对于 Windows 用户，可以直接执行 [install.ps1](scripts/install.ps1) 脚本，来一键安装依赖并启动项目。
 
 1. 打开 powershell，定位到项目根目录中的`scripts`目录
 2. 在命令行中，执行`.\install.ps1`
@@ -132,6 +132,14 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 > 备注
 > 脚本依赖`winget`来安装 node，仅在 Windows 10 1709（版本 16299）或更高版本上受支持！
+
+对于 MacOS 用户，可以直接执行 [install.sh](scripts/install.sh) 脚本来一键安装依赖并启动项目
+
+1. 打开终端，并进入此项目文件夹
+2. 在命令行中执行 `scripts/install.sh`
+3. 等待脚本完成
+
+> 此脚本依赖于 `homebrew`，请确保自己电脑上可以执行`brew`命令
 
 ## 🏆 荣誉
 
@@ -220,25 +228,25 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 ### 灵感来源
 
-[Keybr](https://www.keybr.com/)  
+[Keybr](https://www.keybr.com/)
 以算法著称，功能非常完善的打字网站，根据用户输入每个字母的正确率与速度生成“伪英语”来帮助用户集中锻炼个别输入较慢的字母。并可以根据用户的输入记录生成完整的分析报告。
 
 也是本项目的核心灵感来源，Keybr 更多针对英语为母语的用户。在我使用 Keybr 练习打字时，觉得虽然生成的伪英语能够练习输入不顺畅的个别字母，但并不能提升非母语用户对单词的掌握，于是有了本项目。
 
-[Typing Academy](https://www.typing.academy)  
-非常优秀的打字练习网站  
+[Typing Academy](https://www.typing.academy)
+非常优秀的打字练习网站
 其优秀的 UI 风格，以及对速度、正确率的展示极大的影响了本项目的 UI 设计
 
-[react-code-game](https://github.com/webzhd/react-code-game)  
+[react-code-game](https://github.com/webzhd/react-code-game)
 一个非常酷的开源项目，使用 ts 实现，可以在练习打字的同时练习 js 内置 api，项目中添加代码 api 的想法便来源自此项目。
 <br/><br/>
 
 ### 开源项目
 
-[React](https://github.com/facebook/react) & [CRA](https://github.com/facebook/create-react-app)  
+[React](https://github.com/facebook/react) & [CRA](https://github.com/facebook/create-react-app)
 完整和详细的文档对初学者非常友好，React 系的文档是我目前自学过程中读过最棒的文档，几乎解决使用中大部分问题。非常感谢 React 对开源世界的贡献，为我们搭建了很好的基础，让初学者也能构建非常棒的软件。
 
-[Tailwindcss](https://tailwindcss.com/docs)  
+[Tailwindcss](https://tailwindcss.com/docs)
 如果没有 tailwind，这个项目还有再拖一阵子，tailwind 的设计思路解决了 css 入门选手对写复杂 css 的恐惧，让新手以一个非常舒适的方式去设计 UI。
 <br/><br/>
 
