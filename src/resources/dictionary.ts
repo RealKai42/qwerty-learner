@@ -470,6 +470,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'gre3000',
+    name: 'GRE3000',
+    description: 'GRE3000 词库',
+    category: '国际考试',
+    tags: ['GRE'],
+    url: '/dicts/GRE3000_3_T.json',
+    length: 3000,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'IELTS_tinglichangjing',
     name: '雅思听力场景词汇',
     description: '雅思听力场景词汇',
