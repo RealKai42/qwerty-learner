@@ -99,15 +99,15 @@ export const DonateCard = () => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative my-8 w-[35rem] transform select-text overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all">
-                <div className="flex w-full flex-col justify-center gap-4  bg-white px-2 pb-4 pt-5 dark:bg-gray-800">
-                  <h1 className="gradient-text w-full pb-2 pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
+              <Dialog.Panel className="relative my-8 w-[36rem] transform select-text overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all">
+                <div className="flex w-full flex-col justify-center gap-4 bg-white px-2 pb-4 pt-5 dark:bg-gray-800">
+                  <h1 className="gradient-text w-full pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
                   <div className="flex w-full flex-col gap-4 px-4">
                     <p className="mx-auto px-4 indent-4">
-                      您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习, Qwerty Learner 已经陪你走过
+                      您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习，Qwerty Learner 已经陪你走过
                       <HighlightedText> {dayFromFirstWord} </HighlightedText> 天，一起完成了
                       <HighlightedText> {wordNumber} </HighlightedText>
-                      词的练习, 帮助您纠正了 <HighlightedText> {sumWrongCount} </HighlightedText>次错误输入，让我们一起为您的进步欢呼
+                      词的练习，帮助您纠正了 <HighlightedText> {sumWrongCount} </HighlightedText>次错误输入，让我们一起为您的进步欢呼
                       <IconParty className="ml-2 inline-block" fontSize={16} />
                       <IconParty className="inline-block" fontSize={16} />
                       <IconParty className="inline-block" fontSize={16} />
@@ -115,20 +115,20 @@ export const DonateCard = () => {
                     </p>
                     <p className="mx-auto px-4 indent-4">
                       Qwerty Learner 已经坚持 <span className="font-medium ">开放源码、无广告、无商业化</span> 运营
-                      <HighlightedText className="text-indigo-500"> {dayFromQwerty} </HighlightedText> 天,
+                      <HighlightedText className="text-indigo-500"> {dayFromQwerty} </HighlightedText> 天，
                       我们的目标是为所有学习者提供一个高效、便捷、无干扰的学习环境。
                     </p>
                     <p className="mx-auto px-4 indent-4">
-                      如果您喜欢 Qwerty, 那么我们诚挚地邀请您考虑进行捐赠，您的捐赠将直接用于维持 Qwerty 的日常运营以及未来的发展，让 Qwerty
+                      如果您喜欢 Qwerty，那么我们诚挚地邀请您考虑进行捐赠，您的捐赠将直接用于维持 Qwerty 的日常运营以及未来的发展，让 Qwerty
                       与您一起成长。
                     </p>
                   </div>
 
-                  <div className="flex w-full justify-center pt-6">
-                    <img src={alipay} alt="alipay" className="mx-4 w-1/3" />
-                    <img src={weChat} alt="weChat" className="mx-4 w-1/3" />
+                  <div className="mt-3 flex h-44 w-full justify-between px-11">
+                    <img src={alipay} alt="alipay" className=" h-full" />
+                    <img src={weChat} alt="weChat" className=" h-full" />
                   </div>
-                  <div className="flex w-full justify-between  px-14 py-3  ">
+                  <div className="flex w-full justify-between  px-14 pb-3 pt-6">
                     <button type="button" className="my-btn-primary w-36 bg-amber-500 font-medium" onClick={onClickHasDonated}>
                       我已捐赠
                     </button>
