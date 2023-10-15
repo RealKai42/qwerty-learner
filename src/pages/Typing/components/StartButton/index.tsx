@@ -36,12 +36,16 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
       <div
         ref={refs.setReference}
         {...getReferenceProps()}
-        className={`${state.isTyping ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-700' : 'bg-indigo-600 shadow-indigo-200'} ${
+        className={`${
+          state.isTyping
+            ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-600  dark:shadow-none'
+            : 'bg-indigo-500 shadow-indigo-300 dark:shadow-indigo-500/60'
+        } ${
           isShowReStartButton ? 'h-20' : 'h-auto'
-        } flex-column absolute left-0 top-0 w-20 rounded-lg shadow transition-colors duration-200`}
+        } flex-column absolute left-0 top-0 w-20 rounded-lg shadow-lg transition-colors duration-200`}
       >
         <button
-          className={`${state.isTyping ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-700' : 'bg-indigo-600'} btn-primary w-20`}
+          className={`${state.isTyping ? 'bg-gray-400  dark:bg-gray-700 dark:hover:bg-gray-500' : 'bg-indigo-500'} btn-primary w-20 shadow`}
           type="button"
           onClick={onToggleIsTyping}
           aria-label={state.isTyping ? '暂停' : '开始'}
@@ -52,8 +56,8 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
           <div className="absolute bottom-0 flex w-20 justify-center" ref={refs.setFloating} {...getFloatingProps()}>
             <button
               className={`${
-                state.isTyping ? 'bg-gray-600 dark:bg-gray-500' : 'bg-indigo-400 '
-              } btn-primary mb-1 mt-1 w-18 shadow transition-colors duration-200`}
+                state.isTyping ? 'bg-gray-500 dark:bg-gray-700 dark:hover:bg-gray-500 ' : 'bg-indigo-400 '
+              } btn-primary mb-1 mt-1 w-18  transition-colors duration-200`}
               type="button"
               onClick={onClickRestart}
               aria-label={'重新开始'}
