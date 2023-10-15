@@ -55,6 +55,23 @@ export function recordErrorBookAction(type: errorBookType) {
   mixpanel.track('error-book', props)
 }
 
+export type donateCardInfo = {
+  type: 'donate' | 'dismiss'
+  chapterNumber: number
+  wordNumber: number
+  sumWrongCount: number
+  dayFromFirstWord: number
+  dayFromQwerty: number
+}
+
+export function reportDonateCard(info: donateCardInfo) {
+  const props = {
+    ...info,
+  }
+
+  mixpanel.track('donate-card', props)
+}
+
 /**
  * mixpanel 单词和章节统计事件
  */
