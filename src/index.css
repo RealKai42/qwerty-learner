@@ -79,11 +79,11 @@ body,
       shadow-md dark:bg-gray-800 dark:text-gray-300;
   }
 
-  .btn-primary {
+  .my-btn-primary {
     @apply flex items-center justify-center rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white hover:opacity-90 focus:outline-none dark:text-opacity-80;
   }
 
-  .btn-info-panel {
+  .my-btn-info-panel {
     @apply mt-3 inline-flex w-full justify-center rounded-md px-3 py-2 text-sm
       font-semibold text-white shadow-sm transition-colors focus:outline-none
       dark:bg-opacity-70 dark:text-opacity-80 sm:ml-3 sm:mt-0 sm:w-auto
@@ -143,5 +143,22 @@ body,
   }
   .slider > span:nth-child(2) {
     @apply block h-4 w-4 cursor-pointer rounded-full border border-gray-200 bg-white drop-shadow-md;
+  }
+}
+
+.gradient-text {
+  background-image: linear-gradient(90deg, #f66, #f90);
+  background-clip: text;
+
+  color: transparent;
+  animation: gradient-text-hue 5s linear infinite;
+}
+
+@keyframes gradient-text-hue {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(-1turn);
   }
 }

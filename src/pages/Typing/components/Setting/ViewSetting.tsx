@@ -79,7 +79,7 @@ export default function ViewSetting() {
               </div>
             </div>
           </div>
-          <button className="btn-primary ml-4 disabled:bg-gray-300" type="button" onClick={onResetFontSize} title="重置字体设置">
+          <button className="my-btn-primary ml-4 disabled:bg-gray-300" type="button" onClick={onResetFontSize} title="重置字体设置">
             重置字体设置
           </button>
         </div>

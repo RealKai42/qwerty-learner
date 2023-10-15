@@ -9,6 +9,7 @@ import WordPanel from './components/WordPanel'
 import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
 import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
+import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
@@ -124,6 +125,7 @@ const App: React.FC = () => {
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
+      {state.isFinished && <DonateCard />}
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
@@ -142,7 +144,7 @@ const App: React.FC = () => {
             <button
               className={`${
                 state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
-              } btn-primary transition-all duration-300 `}
+              } my-btn-primary transition-all duration-300 `}
               onClick={skipWord}
             >
               Skip
