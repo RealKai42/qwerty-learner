@@ -62,6 +62,7 @@ export type donateCardInfo = {
   sumWrongCount: number
   dayFromFirstWord: number
   dayFromQwerty: number
+  amount: number
 }
 
 export function reportDonateCard(info: donateCardInfo) {

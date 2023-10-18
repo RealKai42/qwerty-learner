@@ -1,6 +1,6 @@
-import alipay from '@/assets/alipay.jpg'
+import { DonatingCard } from '../DonatingCard'
+import { StickerButton } from '../DonatingCard/components/StickerButton'
 import redBookCode from '@/assets/redBook-code.jpg'
-import weChat from '@/assets/weChat.jpg'
 import InfoPanel from '@/components/InfoPanel'
 import Tooltip from '@/components/Tooltip'
 import { infoPanelStateAtom } from '@/store'
@@ -49,21 +49,26 @@ const Footer: React.FC = () => {
         iconClassName="text-amber-500 bg-amber-100 dark:text-amber-300 dark:bg-amber-500"
         onClose={() => handleCloseInfoPanel('donate')}
       >
-        <p className="text-sm text-gray-500 dark:text-gray-300">
+        <p className="indent-4 text-sm text-gray-500 dark:text-gray-300">
           非常感谢大家使用 Qwerty Learner，目前该网站使用业余时间在维护，为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
           <br />
           您的捐款将有助于我们支付网站的运营成本，改进网站的功能和设计，并提高用户体验。
           <br />
         </p>
         <br />
-        <p className="text-sm text-gray-700 dark:text-gray-200">
+        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
           我们相信，共同的努力可以让 Qwerty Learner 成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
         </p>
         <br />
-        <div className="flex w-full justify-start">
-          <img src={alipay} alt="alipay" className="mx-4 w-1/3" />
-          <img src={weChat} alt="weChat" className="mx-4 w-1/3" />
+        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
+          为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 Qwerty 的定制贴纸 5 枚<span className="text-xs">（仅限大陆地区）</span>
+          ，希望您可以跟朋友分享您的快乐
+        </p>
+        <div className="flex items-center justify-center py-2">
+          <StickerButton className="" />
         </div>
+
+        <DonatingCard />
       </InfoPanel>
 
       <InfoPanel
