@@ -247,7 +247,7 @@ const ResultScreen = () => {
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
               <Tooltip content="快捷键：shift + enter">
                 <button
-                  className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+                  className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
                   type="button"
                   onClick={dictationButtonHandler}
                   title="默写本章节"
@@ -257,7 +257,7 @@ const ResultScreen = () => {
               </Tooltip>
               <Tooltip content="快捷键：space">
                 <button
-                  className="btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+                  className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
                   type="button"
                   onClick={repeatButtonHandler}
                   title="重复本章节"
@@ -268,7 +268,7 @@ const ResultScreen = () => {
               {!isLastChapter && (
                 <Tooltip content="快捷键：enter">
                   <button
-                    className={`{ isLastChapter ? 'cursor-not-allowed opacity-50' : ''} btn-primary h-12 text-base font-bold `}
+                    className={`{ isLastChapter ? 'cursor-not-allowed opacity-50' : ''} my-btn-primary h-12 text-base font-bold `}
                     type="button"
                     onClick={nextButtonHandler}
                     title="下一章节"

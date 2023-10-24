@@ -60,6 +60,10 @@ export const IsDesktop = () => {
   return flag
 }
 
+export const IS_MAC_OS = navigator.userAgent.indexOf('Macintosh') !== -1
+
+export const CTRL = IS_MAC_OS ? 'Control' : 'Ctrl'
+
 export function addHowlListener(howl: Howl, ...args: Parameters<Howl['on']>) {
   howl.on(...args)
 

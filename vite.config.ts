@@ -10,7 +10,7 @@ import { defineConfig } from 'vite'
 import type { PluginOption } from 'vite'
 
 // https://vitejs.dev/config/
-export default defineConfig(async () => {
+export default defineConfig(async ({ mode }) => {
   const latestCommitHash = await new Promise<string>((resolve) => {
     return getLastCommit((err, commit) => (err ? 'unknown' : resolve(commit.shortHash)))
   })
@@ -31,7 +31,10 @@ export default defineConfig(async () => {
     build: {
       minify: true,
       outDir: 'build',
-      sourcemap: true,
+      sourcemap: false,
+    },
+    esbuild: {
+      drop: mode === 'development' ? [] : ['console', 'debugger'],
     },
     define: {
       REACT_APP_DEPLOY_ENV: JSON.stringify(process.env.REACT_APP_DEPLOY_ENV),

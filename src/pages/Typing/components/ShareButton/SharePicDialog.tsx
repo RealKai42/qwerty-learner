@@ -145,7 +145,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                     </div>
                     <button
                       ref={dialogFocusRef}
-                      className="btn-primary mr-9 mt-10 h-10"
+                      className="my-btn-primary mr-9 mt-10 h-10"
                       type="button"
                       onClick={handleDownload}
                       title="保存"
