@@ -491,6 +491,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+    {
+    id: "GRE等价词",
+    name: "GRE等价词",
+    description: "GRE等价词",
+    category: "国际考试",
+    tags: ['GRE'],
+    url: "/dicts/GRE等价词.json",
+    length: 827,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'IELTS_tinglichangjing',
     name: '雅思听力场景词汇',
