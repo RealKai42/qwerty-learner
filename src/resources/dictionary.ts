@@ -481,17 +481,6 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
     {
-    id: "再要你命GRE3000",
-    name: "ZaiYaoNiMing_GRE3000",
-    description: "再要你命GRE3000词库-有词性新版",
-    category: "国际考试",
-    tags: ['GRE'],
-    url: "/dicts/ZaiYaoNiMing_GRE3000.json",
-    length: 3042,
-    language: 'en',
-    languageCategory: 'en',
-  },
-    {
     id: "GRE机经词汇",
     name: "GRE机经词汇",
     description: "GRE机经词汇",
