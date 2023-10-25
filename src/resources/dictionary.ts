@@ -487,7 +487,7 @@ const internationalExam: DictionaryResource[] = [
     category: '国际考试',
     tags: ['GRE'],
     url: '/dicts/GRE-computer-based-test.json',
-    length: 1455,
+    length: 1451,
     language: 'en',
     languageCategory: 'en',
   },
