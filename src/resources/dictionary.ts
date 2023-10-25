@@ -491,6 +491,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+    {
+    id: "GRE机经词汇",
+    name: "GRE机经词汇",
+    description: "GRE机经词汇",
+    category: "国际考试",
+    tags: ['GRE'],
+    url: "/dicts/GRE机经词汇.json",
+    length: 1455,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'IELTS_tinglichangjing',
     name: '雅思听力场景词汇',
