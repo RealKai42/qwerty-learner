@@ -115,6 +115,12 @@ const ResultScreen = () => {
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
   }, [dispatch, randomConfig.isOpen, setWordDictationConfig])
 
+  const dictationWrongWordsButtonHandler = useCallback(() => {
+    setWordDictationConfig((old) => ({ ...old, isOpen: true, openBy: 'auto' }))
+
+    dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen, wrongWords })
+  }, [dispatch, randomConfig.isOpen, setWordDictationConfig, wrongWords])
+
   const nextButtonHandler = useCallback(() => {
     setWordDictationConfig((old) => {
       if (old.isOpen) {
@@ -245,6 +251,14 @@ const ResultScreen = () => {
               </div>
             </div>
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
+              <button
+                className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
+                type="button"
+                onClick={dictationWrongWordsButtonHandler}
+                title="默写错词"
+              >
+                默写错词
+              </button>
               <Tooltip content="快捷键：shift + enter">
                 <button
                   className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"

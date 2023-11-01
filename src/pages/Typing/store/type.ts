@@ -2,6 +2,8 @@ import type { WordWithIndex } from '@/typings'
 import type { LetterMistakes } from '@/utils/db/record'
 
 export type ChapterData = {
+  // 用来存储原始数据，当 words 被重置为错词时，可通过该字段恢复
+  allWords: WordWithIndex[]
   // warning: 因为有章节内随机的存在，所有记录 index 的场景都应该使用 WordWithIndex.index
   words: WordWithIndex[]
   // chapter index

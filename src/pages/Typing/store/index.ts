@@ -7,6 +7,7 @@ import { createContext } from 'react'
 
 export const initialState: TypingState = {
   chapterData: {
+    allWords: [],
     words: [],
     index: 0,
     wordCount: 0,
@@ -71,7 +72,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.SKIP_WORD }
   | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
-  | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
+  | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean; wrongWords?: WordWithIndex[] }
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER; addTime?: number }
@@ -86,6 +87,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
   switch (action.type) {
     case TypingStateActionType.SETUP_CHAPTER:
       state.chapterData.words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
+      state.chapterData.allWords = state.chapterData.words
       state.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
       break
     case TypingStateActionType.SET_IS_SKIP:
@@ -151,9 +153,10 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     }
     case TypingStateActionType.REPEAT_CHAPTER: {
       const newState = structuredClone(initialState)
-      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      const words = action.wrongWords ?? state.chapterData.allWords
+      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
       newState.isTyping = true
-      newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
+      newState.chapterData.words = action.shouldShuffle ? shuffle(words) : words
       newState.isTransVisible = state.isTransVisible
       return newState
     }
