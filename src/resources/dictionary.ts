@@ -558,6 +558,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'heqiong',
+    name: 'heQiong雅思听力必考词汇',
+    description: '综合测试',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/HeQiong_IELTS.json',
+    length: 2536,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'ieltsWang3',
     name: '雅思wang C3',
     description: '雅思听力特别名词语料库',
