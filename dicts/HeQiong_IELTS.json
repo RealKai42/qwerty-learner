@@ -2178,10 +2178,10 @@
     "ukphone": "ˈelbəʊ"
   },
   {
-    "name": "radiogram无线电报",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
+    "name": "radiogram",
+    "trans": ["无线电报"],
+    "usphone": "'reɪdɪəˌgræm",
+    "ukphone": "'reɪdɪəʊgræm"
   },
   {
     "name": "association",
@@ -2208,10 +2208,10 @@
     "ukphone": "ˈæŋk(ə)l"
   },
   {
-    "name": "slang俚语",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
+    "name": "slang",
+    "trans": ["俚语"],
+    "usphone": "slæŋ",
+    "ukphone": "slæŋ"
   },
   {
     "name": "mosquito",
@@ -3600,10 +3600,10 @@
     "ukphone": "ˈsɪɡnəl"
   },
   {
-    "name": "显著的（adj）",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
+    "name": "prominent",
+    "trans": ["显著的（adj）"],
+    "usphone": "'prɑːmɪnənt",
+    "ukphone": "'prɒmɪnənt"
   },
   {
     "name": "decade",
