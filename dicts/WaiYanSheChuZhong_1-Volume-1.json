@@ -1,0 +1,775 @@
+[
+  {
+    "name": "hello",
+    "trans": [
+      "int. 喂（表示问候或唤起注意）；你好"
+    ]
+  },
+  {
+    "name": "I'm",
+    "trans": [
+      "abbr. 我是（=I am）"
+    ]
+  },
+  {
+    "name": "goodbye",
+    "trans": [
+      "int. 再见"
+    ]
+  },
+  {
+    "name": "bye",
+    "trans": [
+      "int. 再见"
+    ]
+  },
+  {
+    "name": "am",
+    "trans": [
+      "v.是（be 的第一人称单数现在时"
+    ]
+  },
+  {
+    "name": "hi",
+    "trans": [
+      "int. 喂（表示问候或唤起注意）"
+    ]
+  },
+  {
+    "name": "I",
+    "trans": [
+      "pron. 我"
+    ]
+  },
+  {
+    "name": "how are you",
+    "trans": [
+      "phrase. 你好吗? 你好么?你身体怎样? (招呼用语)你好!"
+    ]
+  },
+  {
+    "name": "yes",
+    "trans": [
+      "adv. 是，是的"
+    ]
+  },
+  {
+    "name": "you",
+    "trans": [
+      "pron. 你；你们"
+    ]
+  },
+  {
+    "name": "fine",
+    "trans": [
+      "adj. 健康的，极好的；细的，纤细的 vt. 罚……的款，处……以罚金"
+    ]
+  },
+  {
+    "name": "sorry",
+    "trans": [
+      "adj. 对不起的；抱歉的"
+    ]
+  },
+  {
+    "name": "woof",
+    "trans": [
+      "n. 纬线, 织物, (像狗等发出的)低吠声, (扬声器等发出的)低音 int. （狗叫声）汪汪"
+    ]
+  },
+  {
+    "name": "no",
+    "trans": [
+      "adv. 不；不是"
+    ]
+  },
+  {
+    "name": "thank",
+    "trans": [
+      "n. 谢谢 vt. 感谢"
+    ]
+  },
+  {
+    "name": "good",
+    "trans": [
+      "adj. 好"
+    ]
+  },
+  {
+    "name": "please",
+    "trans": [
+      "v. 使满意，取悦  int. 请（用于礼貌的请求）"
+    ]
+  },
+  {
+    "name": "what",
+    "trans": [
+      "pron. 什么"
+    ]
+  },
+  {
+    "name": "your",
+    "trans": [
+      "pron. 你的；你们的"
+    ]
+  },
+  {
+    "name": "is",
+    "trans": [
+      "aux. v. 是（be的第三人称单数形式）"
+    ]
+  },
+  {
+    "name": "name",
+    "trans": [
+      "n. 名字          vt. 命名，给……取名"
+    ]
+  },
+  {
+    "name": "morning",
+    "trans": [
+      "n. 早晨，上午"
+    ]
+  },
+  {
+    "name": "bird",
+    "trans": [
+      "n. 鸟"
+    ]
+  },
+  {
+    "name": "tweet",
+    "trans": [
+      "v. (小鸟)吱吱地叫  n. （小鸟的）唧啾, 运用推特社交网络发送的信息"
+    ]
+  },
+  {
+    "name": "an",
+    "trans": [
+      "article. 一，一个（放在元音音素前）"
+    ]
+  },
+  {
+    "name": "boy",
+    "trans": [
+      "n. 男孩"
+    ]
+  },
+  {
+    "name": "Ms",
+    "trans": [
+      "n. 女士（对女子婚姻状况不明时使用）"
+    ]
+  },
+  {
+    "name": "a",
+    "trans": [
+      "article. 一，一个"
+    ]
+  },
+  {
+    "name": "my",
+    "trans": [
+      "pron. 我的"
+    ]
+  },
+  {
+    "name": "girl",
+    "trans": [
+      "n. 女孩"
+    ]
+  },
+  {
+    "name": "whoops",
+    "trans": [
+      "int. （险些出事故或造成小失误时说）哎哟, （做了尴尬事或失言后说）唉  n. “whoop”的复数"
+    ]
+  },
+  {
+    "name": "afternoon",
+    "trans": [
+      "n. 下午，午后"
+    ]
+  },
+  {
+    "name": "panda",
+    "trans": [
+      "n. 熊猫"
+    ]
+  },
+  {
+    "name": "sit",
+    "trans": [
+      "vi. 坐"
+    ]
+  },
+  {
+    "name": "down",
+    "trans": [
+      "adv. 向下  prep. 沿……而下"
+    ]
+  },
+  {
+    "name": "stand",
+    "trans": [
+      "v. 站；立；容忍，忍让；经受，遭受"
+    ]
+  },
+  {
+    "name": "up",
+    "trans": [
+      "adv. 向上；在上方；起来；  adj. 上面的，向上的，上行的"
+    ]
+  },
+  {
+    "name": "open",
+    "trans": [
+      "v. 打开  adj. 开着的，敞开的；开阔的"
+    ]
+  },
+  {
+    "name": "the",
+    "trans": [
+      "article. 这（那）个；这（那）些；（用于特定人或物序数词最高级专有名词世上独一无二事物前）"
+    ]
+  },
+  {
+    "name": "window",
+    "trans": [
+      "n. 窗"
+    ]
+  },
+  {
+    "name": "door",
+    "trans": [
+      "n. 门"
+    ]
+  },
+  {
+    "name": "see you",
+    "trans": [
+      "phrase. 再见"
+    ]
+  },
+  {
+    "name": "point",
+    "trans": [
+      "v. 指  n. 分数；点"
+    ]
+  },
+  {
+    "name": "to",
+    "trans": [
+      "prep. 到，往，朝；位于……方向；去做，去参加；达到；对，对于"
+    ]
+  },
+  {
+    "name": "desk",
+    "trans": [
+      "n. 书桌"
+    ]
+  },
+  {
+    "name": "chair",
+    "trans": [
+      "n. 椅子"
+    ]
+  },
+  {
+    "name": "it",
+    "trans": [
+      "pron. 它"
+    ]
+  },
+  {
+    "name": "it's",
+    "trans": [
+      "abbr. 同“it is”, 同“it has”"
+    ]
+  },
+  {
+    "name": "red",
+    "trans": [
+      "n. 红色  adj. 红色的"
+    ]
+  },
+  {
+    "name": "aha",
+    "trans": [
+      "int. （表示了解或发现某事物的喜悦）啊哈"
+    ]
+  },
+  {
+    "name": "blue",
+    "trans": [
+      "n. 蓝色  adj. 蓝色的"
+    ]
+  },
+  {
+    "name": "wow",
+    "trans": [
+      "int. （尤指以表演）博得…的称赞  n. 极大的成功, 一鸣惊人之举, 颤动"
+    ]
+  },
+  {
+    "name": "yellow",
+    "trans": [
+      "adj. 黄色的；黄色"
+    ]
+  },
+  {
+    "name": "colour",
+    "trans": [
+      "n. 颜色  vt. 给……着色，涂色"
+    ]
+  },
+  {
+    "name": "green",
+    "trans": [
+      "adj. 绿色的  n. 绿色"
+    ]
+  },
+  {
+    "name": "now",
+    "trans": [
+      "adv. 现在"
+    ]
+  },
+  {
+    "name": "black",
+    "trans": [
+      "n. 黑色  adj. 黑色的"
+    ]
+  },
+  {
+    "name": "white",
+    "trans": [
+      "adj. 白色的；白的  n. 白色"
+    ]
+  },
+  {
+    "name": "dog",
+    "trans": [
+      "n. 狗"
+    ]
+  },
+  {
+    "name": "cat",
+    "trans": [
+      "n. 猫；猫科动物"
+    ]
+  },
+  {
+    "name": "and",
+    "trans": [
+      "conj. 和"
+    ]
+  },
+  {
+    "name": "hey",
+    "trans": [
+      "int. （惊讶，生气）喂；（表示不真正在意或认为不重要）嘿；（用于陈述句末尾，表示话已说完或请求回答）就这样，怎么样，你说呢"
+    ]
+  },
+  {
+    "name": "look",
+    "trans": [
+      "vi. 看，瞧；看上去"
+    ]
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "adj. 橙色的  n. 橙色，橙子，桔子"
+    ]
+  },
+  {
+    "name": "this",
+    "trans": [
+      "adj. 这；这个  pron. 这；这个"
+    ]
+  },
+  {
+    "name": "our",
+    "trans": [
+      "pron. 我们的"
+    ]
+  },
+  {
+    "name": "teacher",
+    "trans": [
+      "n. 教师"
+    ]
+  },
+  {
+    "name": "school",
+    "trans": [
+      "n. 学校  vt. 使受学校教育；培养，教育"
+    ]
+  },
+  {
+    "name": "classroom",
+    "trans": [
+      "n. 教室"
+    ]
+  },
+  {
+    "name": "nice to meet you",
+    "trans": [
+      ". 很高兴见到你"
+    ]
+  },
+  {
+    "name": "child",
+    "trans": [
+      "n. 孩子，儿童（pl.children）"
+    ]
+  },
+  {
+    "name": "that",
+    "trans": [
+      "adj. 那；那个  pron. 那；那个"
+    ]
+  },
+  {
+    "name": "bag",
+    "trans": [
+      "n. 书包；提包；袋子"
+    ]
+  },
+  {
+    "name": "schoolbag",
+    "trans": [
+      "n. 书包"
+    ]
+  },
+  {
+    "name": "book",
+    "trans": [
+      "n. 书                   vt. 预定，定（房间、车票等）"
+    ]
+  },
+  {
+    "name": "pen",
+    "trans": [
+      "n. 钢笔"
+    ]
+  },
+  {
+    "name": "pencil",
+    "trans": [
+      "n. 铅笔"
+    ]
+  },
+  {
+    "name": "ruler",
+    "trans": [
+      "n. 统治者；管理者；尺子"
+    ]
+  },
+  {
+    "name": "eraser",
+    "trans": [
+      "n. 橡皮"
+    ]
+  },
+  {
+    "name": "pencil case",
+    "trans": [
+      "n. 铅笔盒, 铅笔袋"
+    ]
+  },
+  {
+    "name": "crayon",
+    "trans": [
+      "n. 蜡笔"
+    ]
+  },
+  {
+    "name": "new",
+    "trans": [
+      "adj. 新的"
+    ]
+  },
+  {
+    "name": "kite",
+    "trans": [
+      "n. 风筝"
+    ]
+  },
+  {
+    "name": "or",
+    "trans": [
+      "conj. 或者"
+    ]
+  },
+  {
+    "name": "not",
+    "trans": [
+      "adv. 不"
+    ]
+  },
+  {
+    "name": "isn't",
+    "trans": [
+      "abbr. 不是（=is not）"
+    ]
+  },
+  {
+    "name": "monkey",
+    "trans": [
+      "n. 猴子"
+    ]
+  },
+  {
+    "name": "monster",
+    "trans": [
+      "n. 怪物；巨物；恶人 adj. 巨大的，庞大的"
+    ]
+  },
+  {
+    "name": "help",
+    "trans": [
+      "vt. 帮助  n. 帮助"
+    ]
+  },
+  {
+    "name": "house",
+    "trans": [
+      "n. 房子；住宅"
+    ]
+  },
+  {
+    "name": "box",
+    "trans": [
+      "n. 盒子，箱子"
+    ]
+  },
+  {
+    "name": "how many",
+    "trans": [
+      "phrase. 多少"
+    ]
+  },
+  {
+    "name": "one",
+    "trans": [
+      "pron. 一；一（个，件……）（用来代替单数的人或物）"
+    ]
+  },
+  {
+    "name": "two",
+    "trans": [
+      "num. 二"
+    ]
+  },
+  {
+    "name": "three",
+    "trans": [
+      "num. 三"
+    ]
+  },
+  {
+    "name": "four",
+    "trans": [
+      "num. 四"
+    ]
+  },
+  {
+    "name": "count",
+    "trans": [
+      "v. 数数",
+      "计算",
+      "重要, 有价值",
+      "把…计算在内",
+      "包括",
+      "看作, 算作, 认为"
+    ]
+  },
+  {
+    "name": "say",
+    "trans": [
+      "vt. 说，讲"
+    ]
+  },
+  {
+    "name": "five",
+    "trans": [
+      "num. 五"
+    ]
+  },
+  {
+    "name": "six",
+    "trans": [
+      "num. 六"
+    ]
+  },
+  {
+    "name": "seven",
+    "trans": [
+      "num. 七"
+    ]
+  },
+  {
+    "name": "eight",
+    "trans": [
+      "num. 八"
+    ]
+  },
+  {
+    "name": "nine",
+    "trans": [
+      "num. 九"
+    ]
+  },
+  {
+    "name": "ten",
+    "trans": [
+      "num. 十"
+    ]
+  },
+  {
+    "name": "pink",
+    "trans": [
+      "n. 粉红色  adj. 粉红色的"
+    ]
+  },
+  {
+    "name": "ball",
+    "trans": [
+      "n. 球"
+    ]
+  },
+  {
+    "name": "so",
+    "trans": [
+      "adv. 这么；那么  conj. 因此，所以"
+    ]
+  },
+  {
+    "name": "many",
+    "trans": [
+      "adj. 许多的  pron. 许多人（或物）"
+    ]
+  },
+  {
+    "name": "brown",
+    "trans": [
+      "n. 褐色，棕色  adj. 褐色的，棕色的"
+    ]
+  },
+  {
+    "name": "how old",
+    "trans": [
+      "conj. 多少岁"
+    ]
+  },
+  {
+    "name": "are",
+    "trans": [
+      "v. 系动词be的人称形式之一"
+    ]
+  },
+  {
+    "name": "too",
+    "trans": [
+      "adv. 也，还；又；太，过分；很，非常"
+    ]
+  },
+  {
+    "name": "happy",
+    "trans": [
+      "adj. 高兴的，快乐的；幸福的"
+    ]
+  },
+  {
+    "name": "birthday",
+    "trans": [
+      "n. 生日"
+    ]
+  },
+  {
+    "name": "but",
+    "trans": [
+      "conj. 但是  prep. 除……外"
+    ]
+  },
+  {
+    "name": "for",
+    "trans": [
+      "prep. （表示对象）给；（表示目的）为；（表示目标，去向）往，向  conj. 因为；由于……的缘故"
+    ]
+  },
+  {
+    "name": "you're welcome",
+    "trans": [
+      "phrase. 不客气"
+    ]
+  },
+  {
+    "name": "father",
+    "trans": [
+      "n. 父亲"
+    ]
+  },
+  {
+    "name": "daddy",
+    "trans": [
+      "n. （尤作儿语）爸爸"
+    ]
+  },
+  {
+    "name": "mother",
+    "trans": [
+      "n. 母亲"
+    ]
+  },
+  {
+    "name": "grandpa",
+    "trans": [
+      "n. （口语）爷爷；外公"
+    ]
+  },
+  {
+    "name": "grandma",
+    "trans": [
+      "n. （口语）奶奶；外婆"
+    ]
+  },
+  {
+    "name": "friend",
+    "trans": [
+      "n. 朋友"
+    ]
+  },
+  {
+    "name": "his",
+    "trans": [
+      "pron. 他的；他的（东西）"
+    ]
+  },
+  {
+    "name": "car",
+    "trans": [
+      "n. 汽车；小汽车"
+    ]
+  },
+  {
+    "name": "sister",
+    "trans": [
+      "n. 姐，妹"
+    ]
+  },
+  {
+    "name": "brother",
+    "trans": [
+      "n. 兄，弟"
+    ]
+  },
+  {
+    "name": "her",
+    "trans": [
+      "pron. 她的；（用作宾语）她"
+    ]
+  }
+]
