@@ -1344,6 +1344,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'waiyan11',
+    name: '外研社二年级上册',
+    description: '外研社二年级上册',
+    category: '青少年英语',
+    tags: ['外研版'],
+    url: '/dicts/WaiYanSheChuZhong_2-Volume-1.json',
+    length: 112,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'Yilin1',
     name: '高中必修1',
     description: '译林版高中必修1',

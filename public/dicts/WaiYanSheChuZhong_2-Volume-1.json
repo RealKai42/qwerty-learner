@@ -1,0 +1,789 @@
+[
+  {
+    "name": "song",
+    "trans": [
+      "n. 歌曲"
+    ],
+    "ukphone": "sɔ:ŋ"
+  },
+  {
+    "name": "come on",
+    "trans": [
+      "phrase. 快来；加油；跟我来"
+    ],
+    "ukphone": "ˈkʌm ɒn"
+  },
+  {
+    "name": "team",
+    "trans": [
+      "n. 队，组"
+    ],
+    "ukphone": "ti:m"
+  },
+  {
+    "name": "meat",
+    "trans": [
+      "n. （猪、牛、羊等的）肉"
+    ],
+    "ukphone": "mi:t"
+  },
+  {
+    "name": "noodle",
+    "trans": [
+      "n. 面条"
+    ],
+    "ukphone": "'nu:dl"
+  },
+  {
+    "name": "rice",
+    "trans": [
+      "n. 米饭；稻；大米"
+    ],
+    "ukphone": "raɪs"
+  },
+  {
+    "name": "sweet",
+    "trans": [
+      "adj. 甜的 n. 糖果"
+    ],
+    "ukphone": "swi:t"
+  },
+  {
+    "name": "children",
+    "trans": [
+      "n. 孩子们（child的复数）"
+    ],
+    "ukphone": "'tʃɪldrən"
+  },
+  {
+    "name": "ginger",
+    "trans": [
+      "n. 姜；姜黄色 adj. 姜黄色的"
+    ],
+    "ukphone": "'dʒɪndʒər"
+  },
+  {
+    "name": "nice",
+    "trans": [
+      "adj. 漂亮的；美好的；令人愉快的"
+    ],
+    "ukphone": "naɪs"
+  },
+  {
+    "name": "mm",
+    "trans": [
+      "n. 毫米（=millimetre）"
+    ],
+    "ukphone": "em em"
+  },
+  {
+    "name": "onion",
+    "trans": [
+      "n. 洋葱；洋葱头"
+    ],
+    "ukphone": "'ʌnjən"
+  },
+  {
+    "name": "ice cream",
+    "trans": [
+      "phrase. 【食】冰淇淋"
+    ],
+    "ukphone": "aɪs kri:m"
+  },
+  {
+    "name": "banana",
+    "trans": [
+      "n. 香蕉"
+    ],
+    "ukphone": "bə'nænə"
+  },
+  {
+    "name": "apple",
+    "trans": [
+      "n. 苹果"
+    ],
+    "ukphone": "ˈæpəl"
+  },
+  {
+    "name": "milk",
+    "trans": [
+      "n. 牛奶 v. 挤（奶）"
+    ],
+    "ukphone": "mɪlk"
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "adj. 橙色的 n. 橙色，橙子，桔子"
+    ],
+    "ukphone": "'ɔ:rɪndʒ"
+  },
+  {
+    "name": "fruit",
+    "trans": [
+      "n. 水果"
+    ],
+    "ukphone": "fru:t"
+  },
+  {
+    "name": "milkshake",
+    "trans": [
+      "n. 奶昔（将牛奶或冰淇淋，以及水果或巧克力味的香料混合或搅拌至起泡的饮料）"
+    ],
+    "ukphone": "'mɪlkʃeɪk"
+  },
+  {
+    "name": "here you are",
+    "trans": [
+      "un. 给你"
+    ],
+    "ukphone": "hɪr ju: ɑ:r"
+  },
+  {
+    "name": "everything",
+    "trans": [
+      "pron. 每件事，每样事物，一切"
+    ],
+    "ukphone": " 'evriθɪŋ"
+  },
+  {
+    "name": "tomato",
+    "trans": [
+      "n. 西红柿"
+    ],
+    "ukphone": "tə'meɪtoʊ"
+  },
+  {
+    "name": "really",
+    "trans": [
+      "adv. 非常；真正地"
+    ],
+    "ukphone": "'ri:əli"
+  },
+  {
+    "name": "their",
+    "trans": [
+      "pron. 他（她）们的，它们的"
+    ],
+    "ukphone": "ðer"
+  },
+  {
+    "name": " favourite",
+    "trans": [
+      "adj. 特别喜爱的（同favorite） n. 特别喜爱的人或物（同favorite）"
+    ],
+    "ukphone": "'feɪvərɪt"
+  },
+  {
+    "name": "T-shirt",
+    "trans": [
+      "n. T恤衫"
+    ],
+    "ukphone": "'ti,ʃɜ:rt"
+  },
+  {
+    "name": "dress",
+    "trans": [
+      "n. 连衣裙；服装 v. （给……）穿衣服"
+    ],
+    "ukphone": "dres"
+  },
+  {
+    "name": "too",
+    "trans": [
+      "adv. 也，还；又；太，过分；很，非常"
+    ],
+    "ukphone": "tu:"
+  },
+  {
+    "name": "one",
+    "trans": [
+      "pron. 一；一（个，件……）（用来代替单数的人或物）"
+    ],
+    "ukphone": "wʌn"
+  },
+  {
+    "name": "doesn't",
+    "trans": [
+      "abbr. (=does not)"
+    ],
+    "ukphone": "'dʌznt"
+  },
+  {
+    "name": "trousers",
+    "trans": [
+      "n. 裤子，长裤"
+    ],
+    "ukphone": "'traʊzərz"
+  },
+  {
+    "name": "party",
+    "trans": [
+      "n. 聚会；宴会；党派"
+    ],
+    "ukphone": "'pɑ:rti"
+  },
+  {
+    "name": "get up",
+    "trans": [
+      "phrase. 起床"
+    ],
+    "ukphone": "ɡet ʌp"
+  },
+  {
+    "name": "poster",
+    "trans": [
+      "n. 海报，招贴画"
+    ],
+    "ukphone": "'poʊstər"
+  },
+  {
+    "name": "go to school",
+    "trans": [
+      "phrase. 去上学"
+    ],
+    "ukphone": "ɡoʊ tu sku:l"
+  },
+  {
+    "name": "have",
+    "trans": [
+      "vt. 拥有；得到；吃，喝；进行；从事"
+    ],
+    "ukphone": "hæv, həv, əv"
+  },
+  {
+    "name": "lunch",
+    "trans": [
+      "n. 午餐，午饭"
+    ],
+    "ukphone": "lʌntʃ"
+  },
+  {
+    "name": "have lunch",
+    "trans": [
+      ". 吃午饭"
+    ],
+    "ukphone": "hæv lʌntʃ"
+  },
+  {
+    "name": "home",
+    "trans": [
+      "n. 家 adv. 在家"
+    ],
+    "ukphone": "hoʊm"
+  },
+  {
+    "name": "go home",
+    "trans": [
+      "phrase. 回家",
+      "回国 phrase. 死",
+      "损坏",
+      "(食物)腐败"
+    ],
+    "ukphone": "ɡoʊ hoʊm"
+  },
+  {
+    "name": "watch",
+    "trans": [
+      "n. 手表 v. 观看；留神观察"
+    ],
+    "ukphone": "wɑtʃ"
+  },
+  {
+    "name": "TV",
+    "trans": [
+      "n. 电视机，电视（=television）"
+    ],
+    "ukphone": "ˌti:'vi:"
+  },
+  {
+    "name": "watch TV",
+    "trans": [
+      "v. 看电视"
+    ],
+    "ukphone": "wɑtʃ tiː’viː"
+  },
+  {
+    "name": "on",
+    "trans": [
+      "prep. 在…上；关于；一…就 adv. （穿，放…）上；接通；进行下去；（电灯）开"
+    ],
+    "ukphone": "ɑ:n"
+  },
+  {
+    "name": "Sunday",
+    "trans": [
+      "n. 星期日，星期天"
+    ],
+    "ukphone": "'sʌndeɪ"
+  },
+  {
+    "name": "park",
+    "trans": [
+      "n. 公园 v. 停放"
+    ],
+    "ukphone": "pɑ:rk"
+  },
+  {
+    "name": "great",
+    "trans": [
+      "adj. 巨大的；重大的；极大的；伟大的；（口语）好极了；重要的 adv. 很好地；极好地；很棒地"
+    ],
+    "ukphone": "ɡreɪt"
+  },
+  {
+    "name": "goal",
+    "trans": [
+      "n. （球赛等的）得分；目标，目的"
+    ],
+    "ukphone": "ɡoʊl"
+  },
+  {
+    "name": "hooray",
+    "trans": [
+      "int. 万岁, 好哇 n. 万岁"
+    ],
+    "ukphone": "hu'reɪ"
+  },
+  {
+    "name": " live",
+    "trans": [
+      "vi. 居住；生活；实践，身体力行 adj. 活的，有生命的；现场直播的，实况转播的"
+    ],
+    "ukphone": "lɪv; laɪv"
+  },
+  {
+    "name": "moon",
+    "trans": [
+      "n. 月亮（常作the moon）"
+    ],
+    "ukphone": "mu:n"
+  },
+  {
+    "name": "sky",
+    "trans": [
+      "n. 天，天空"
+    ],
+    "ukphone": "skaɪ"
+  },
+  {
+    "name": "city",
+    "trans": [
+      "n. 城市"
+    ],
+    "ukphone": "'sɪti"
+  },
+  {
+    "name": "how",
+    "trans": [
+      "adv. 怎么"
+    ],
+    "ukphone": "haʊ"
+  },
+  {
+    "name": "train",
+    "trans": [
+      "n. 火车 v. 训练；培养；受训练；受培养"
+    ],
+    "ukphone": "treɪn"
+  },
+  {
+    "name": "chug",
+    "trans": [
+      "v. （发动机缓慢运转时）发出突突声, 一饮而尽, 一口气喝完 n. （发动机的）突突声"
+    ],
+    "ukphone": "tʃʌɡ"
+  },
+  {
+    "name": "bus",
+    "trans": [
+      "n. 公共汽车"
+    ],
+    "ukphone": "bʌs"
+  },
+  {
+    "name": "beep",
+    "trans": [
+      "v. 发出哔哔声, 发出嘟嘟声, （使汽车喇叭等）发出嘟嘟声 n. （汽车喇叭或电子设备发出的）嘟嘟声"
+    ],
+    "ukphone": "bi:p"
+  },
+  {
+    "name": "by",
+    "trans": [
+      "prep. 乘（表示交通等的方式）；通过，靠，用（表示通过某种方式）"
+    ],
+    "ukphone": "baɪ"
+  },
+  {
+    "name": "walk",
+    "trans": [
+      "n. 步行；散步 v. 散步；步行；带……散步；带……遛弯"
+    ],
+    "ukphone": "wɔ:k"
+  },
+  {
+    "name": "how about",
+    "trans": [
+      "phrase. (你以为)…怎么样?"
+    ],
+    "ukphone": "haʊ əˈbaʊt"
+  },
+  {
+    "name": "goes",
+    "trans": [
+      "v. 的第三人称单数现在式 n.go的复数"
+    ],
+    "ukphone": "ɡəʊz"
+  },
+  {
+    "name": "work",
+    "trans": [
+      "vi. 工作；劳动；起作用，有效果，奏效 n. 工作"
+    ],
+    "ukphone": "wɜ:rk"
+  },
+  {
+    "name": "go to work",
+    "trans": [
+      "v. 着手工作"
+    ],
+    "ukphone": "ɡoʊ tu wɜrk"
+  },
+  {
+    "name": "bike",
+    "trans": [
+      "n. 自行车"
+    ],
+    "ukphone": "baɪk"
+  },
+  {
+    "name": "with",
+    "trans": [
+      "prep. 有，具有……特征；和；以；用；随身"
+    ],
+    "ukphone": "wɪð"
+  },
+  {
+    "name": "run",
+    "trans": [
+      "vt. 管理，经营 n. 跑；赛跑"
+    ],
+    "ukphone": "rʌn"
+  },
+  {
+    "name": "holiday",
+    "trans": [
+      "n. 假期；假日"
+    ],
+    "ukphone": "'hɑ:lədeɪ"
+  },
+  {
+    "name": "on holiday",
+    "trans": [
+      "phrase. 在休假,在度假"
+    ],
+    "ukphone": "ɒn ˈhɒl.ɪ.deɪ"
+  },
+  {
+    "name": "then",
+    "trans": [
+      "adv. 当时；那时；然后；那么（通常用于句首或句尾）"
+    ],
+    "ukphone": "ðen"
+  },
+  {
+    "name": "ship",
+    "trans": [
+      "n. 船，轮船 vt. 用船装运"
+    ],
+    "ukphone": "ʃɪp"
+  },
+  {
+    "name": "plane",
+    "trans": [
+      "n. 飞机"
+    ],
+    "ukphone": "pleɪn"
+  },
+  {
+    "name": "love",
+    "trans": [
+      "n. 喜爱；热爱 vt. 喜爱；热爱"
+    ],
+    "ukphone": "lʌv"
+  },
+  {
+    "name": "weekend",
+    "trans": [
+      "n. 周末"
+    ],
+    "ukphone": "'wi:kend"
+  },
+  {
+    "name": "read",
+    "trans": [
+      "v. 读；朗读"
+    ],
+    "ukphone": "ri:d"
+  },
+  {
+    "name": "come",
+    "trans": [
+      "vi. 来"
+    ],
+    "ukphone": "kʌm"
+  },
+  {
+    "name": "play",
+    "trans": [
+      "v. 玩；演奏；播放；参加（体育活动，比赛等）；扮演, 演出；装扮；尽…本分 n. 游戏；玩耍；戏剧；比赛；作用；（戏剧的）演出"
+    ],
+    "ukphone": "pleɪ"
+  },
+  {
+    "name": "piano",
+    "trans": [
+      "n. 钢琴"
+    ],
+    "ukphone": "pi'ɑnoʊ"
+  },
+  {
+    "name": "music",
+    "trans": [
+      "n. 音乐"
+    ],
+    "ukphone": "'mju:zɪk"
+  },
+  {
+    "name": "listen",
+    "trans": [
+      "v. 列于表上；列举；听，倾听"
+    ],
+    "ukphone": " 'lɪsn"
+  },
+  {
+    "name": "listen to",
+    "trans": [
+      "phrase. 听……讲话"
+    ],
+    "ukphone": "ˈlɪsən tu:"
+  },
+  {
+    "name": "CD",
+    "trans": [
+      "n. 光盘（compact disk的缩写）"
+    ],
+    "ukphone": "ˌsi:'di:"
+  },
+  {
+    "name": "drum",
+    "trans": [
+      "n. 鼓；鼓状物"
+    ],
+    "ukphone": "drʌm"
+  },
+  {
+    "name": "winter",
+    "trans": [
+      "n. 冬天，冬季"
+    ],
+    "ukphone": "'wɪntər"
+  },
+  {
+    "name": "fly",
+    "trans": [
+      "v. 飞；飞逝；放飞（风筝等） n. 苍蝇（pl.ﬂies）"
+    ],
+    "ukphone": "flaɪ"
+  },
+  {
+    "name": "in",
+    "trans": [
+      "prep. 在……里（内；上）；用……（表示）；（表示服饰等）穿着 adv. 在里面；在内"
+    ],
+    "ukphone": "ɪn"
+  },
+  {
+    "name": "spring",
+    "trans": [
+      "n. 春天，春季；泉水，泉 vi. 跳，跳跃；弹起"
+    ],
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "summer",
+    "trans": [
+      "n. 夏天，夏季"
+    ],
+    "ukphone": "'sʌmər"
+  },
+  {
+    "name": "autumn",
+    "trans": [
+      "n. 秋天，秋季"
+    ],
+    "ukphone": "ˈɔ:təm"
+  },
+  {
+    "name": "skating",
+    "trans": [
+      "n. 滑冰，溜冰 v. 滑冰（skate的现在分词）"
+    ],
+    "ukphone": "'skeɪtɪŋ"
+  },
+  {
+    "name": "go skating",
+    "trans": [
+      "phrase. 去滑冰，去溜冰 phrase. 去溜冰"
+    ],
+    "ukphone": "ɡoʊ ˈskeɪtɪŋ"
+  },
+  {
+    "name": "warm",
+    "trans": [
+      "adj. 暖和的，温暖的"
+    ],
+    "ukphone": "wɔ:rm"
+  },
+  {
+    "name": "wear",
+    "trans": [
+      "vt. 戴；穿；面露，面带"
+    ],
+    "ukphone": "wer"
+  },
+  {
+    "name": "jacket",
+    "trans": [
+      "n. 短上衣；夹克衫"
+    ],
+    "ukphone": "'dʒækɪt"
+  },
+  {
+    "name": "sunglasses",
+    "trans": [
+      "n. 太阳镜, 墨镜"
+    ],
+    "ukphone": "'sʌnɡlæsɪz"
+  },
+  {
+    "name": "cool",
+    "trans": [
+      "adj. 凉的；凉快的；冷静的；从容的；酷的"
+    ],
+    "ukphone": "ku:l"
+  },
+  {
+    "name": "sweater",
+    "trans": [
+      "n. 厚运动衫；毛衣"
+    ],
+    "ukphone": "'swetər"
+  },
+  {
+    "name": "glove",
+    "trans": [
+      "n. 手套"
+    ],
+    "ukphone": "ɡlʌv"
+  },
+  {
+    "name": "cold",
+    "trans": [
+      "adj. 冷的 n. 伤风，感冒"
+    ],
+    "ukphone": "koʊld"
+  },
+  {
+    "name": "coat",
+    "trans": [
+      "n. 外套；涂层；表皮；皮毛"
+    ],
+    "ukphone": "koʊt"
+  },
+  {
+    "name": "year",
+    "trans": [
+      "n. 年；岁"
+    ],
+    "ukphone": "jɪr"
+  },
+  {
+    "name": "happy New Year",
+    "trans": [
+      "n. 新年快乐, 新年好"
+    ],
+    "ukphone": "ˈhæpi nju jɪr"
+  },
+  {
+    "name": "come in",
+    "trans": [
+      "phrase. 进来；进入"
+    ],
+    "ukphone": "kʌm ɪn"
+  },
+  {
+    "name": "present",
+    "trans": [
+      "n. 礼物；现在；目前 adj. 在场的；目前的"
+    ],
+    "ukphone": "'preznt; prɪˈzent"
+  },
+  {
+    "name": "dumpling",
+    "trans": [
+      "n. 汤团；饺子；水果布丁"
+    ],
+    "ukphone": "'dʌmplɪŋ"
+  },
+  {
+    "name": "eat",
+    "trans": [
+      "vt. 吃"
+    ],
+    "ukphone": "i:t"
+  },
+  {
+    "name": "Chinese",
+    "trans": [
+      "adj. 中国的；中国人的；汉语的 n. 汉语，中文；中餐"
+    ],
+    "ukphone": "ˌtʃaɪˈni:z"
+  },
+  {
+    "name": "hair",
+    "trans": [
+      "n. 头发"
+    ],
+    "ukphone": "her"
+  },
+  {
+    "name": "firecracker",
+    "trans": [
+      "n. 鞭炮"
+    ],
+    "ukphone": "'faɪərkrækər"
+  },
+  {
+    "name": "Christmas",
+    "trans": [
+      "n. 圣诞节"
+    ],
+    "ukphone": "'krɪsməs"
+  },
+  {
+    "name": "wish",
+    "trans": [
+      "n. 希望；愿望（pl.wishes） v. 希望"
+    ],
+    "ukphone": "wɪʃ"
+  },
+  {
+    "name": "dinner",
+    "trans": [
+      "n. 正餐；宴会"
+    ],
+    "ukphone": "'dɪnər"
+  }
+]
