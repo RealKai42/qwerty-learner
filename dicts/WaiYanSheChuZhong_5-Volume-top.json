@@ -1,0 +1,730 @@
+[
+    {
+        "name": "for",
+        "trans": [
+            "prep. 为，为了；因为；给；对于；至于；适合于",
+            "conj. 因为"
+        ],
+        "usphone": "[fər; fɔːr]",
+        "ukphone": "[fə(r)]"
+    },
+    {
+        "name": "different",
+        "trans": [
+            "adj. 不同的；个别的，与众不同的"
+        ],
+        "usphone": "[ˈdɪfrənt]",
+        "ukphone": "[ˈdɪfrənt]"
+    },
+    {
+        "name": "bench",
+        "trans": [
+            "n. 长凳；工作台；替补队员",
+            "vt. 给…以席位；为…设置条凳"
+        ],
+        "usphone": "[bentʃ]",
+        "ukphone": "[bentʃ]"
+    },
+    {
+        "name": "then",
+        "trans": [
+            "conj. 然后，当时",
+            "n. 那时",
+            "adv. 然后；那么；于是；当时；此外"
+        ],
+        "usphone": "[ðen]",
+        "ukphone": "[ðen]"
+    },
+    {
+        "name": "playground",
+        "trans": [
+            "n. 运动场，操场；游乐场"
+        ],
+        "usphone": "[ˈpleɪɡraʊnd]",
+        "ukphone": "[ˈpleɪɡraʊnd]"
+    },
+    {
+        "name": "heavy",
+        "trans": [
+            "n. 重物；严肃角色",
+            "adj. 沉重的；繁重的，巨大的；拥挤的；阴沉的",
+            "adv. 大量地；笨重地"
+        ],
+        "usphone": "[ˈhevi]",
+        "ukphone": "[ˈhevi]"
+    },
+    {
+        "name": "let",
+        "trans": [
+            "vt. 允许，让；出租；假设；妨碍",
+            "vi. 出租；被承包",
+            "n. 障碍；出租屋"
+        ],
+        "usphone": "[let]",
+        "ukphone": "[let]"
+    },
+    {
+        "name": "sell",
+        "trans": [
+            "n. 销售；失望；推销术",
+            "vt. 销售；推销；出卖；欺骗",
+            "vi. 卖；出售；受欢迎；有销路"
+        ],
+        "usphone": "[sel]",
+        "ukphone": "[sel]"
+    },
+    {
+        "name": "sometimes",
+        "trans": [
+            "adv. 有时，间或"
+        ],
+        "usphone": "[ˈsʌmtaɪmz]",
+        "ukphone": "[ˈsʌmtaɪmz]"
+    },
+    {
+        "name": "Halloween",
+        "trans": [
+            "n. 万圣节前夕（指十月三十一日夜晚）"
+        ],
+        "usphone": "[ˌhæloʊˈiːn]",
+        "ukphone": "[ˌhæləʊˈiːn]"
+    },
+    {
+        "name": "trick or treat",
+        "trans": [
+            "int. 不给糖就捣蛋",
+            "n. 不给糖就捣蛋"
+        ]
+    },
+    {
+        "name": "give",
+        "trans": [
+            "n. 弹性；弯曲；伸展性",
+            "vi. 捐赠；面向；有弹性；气候转暖",
+            "vt. 给；产生；让步；举办；授予"
+        ],
+        "usphone": "[ɡɪv]",
+        "ukphone": "[ɡɪv]"
+    },
+    {
+        "name": "festival",
+        "trans": [
+            "n. 节日；庆祝，纪念活动；欢乐",
+            "adj. 节日的，喜庆的；快乐的"
+        ],
+        "usphone": "[ˈfestɪvl]",
+        "ukphone": "[ˈfestɪv(ə)l]"
+    },
+    {
+        "name": "scary",
+        "trans": [
+            "adj. （事物）可怕的；恐怖的；吓人的；（人）提心吊胆的；引起惊慌的；胆小的"
+        ],
+        "usphone": "[ˈskeri]",
+        "ukphone": "[ˈskeəri]"
+    },
+    {
+        "name": "mask",
+        "trans": [
+            "n. 面具；口罩；掩饰",
+            "vi. 掩饰；戴面具；化装",
+            "vt. 掩饰；戴面具；使模糊"
+        ],
+        "usphone": "[mæsk]",
+        "ukphone": "[mɑːsk]"
+    },
+    {
+        "name": "neighbour",
+        "trans": [
+            "n. n. 邻居;同胞；仁慈的人",
+            "vt. 邻接",
+            "vi. 住在邻近；毗邻；友善，和睦",
+            "adj. 邻居的；邻近的"
+        ],
+        "usphone": "[ˈneɪbər]",
+        "ukphone": "[ˈneɪbə(r)]"
+    },
+    {
+        "name": "night",
+        "trans": [
+            "n. 夜晚，晚上；黑暗，黑夜",
+            "adj. 夜晚的，夜间的"
+        ],
+        "usphone": "[naɪt]",
+        "ukphone": "[naɪt]"
+    },
+    {
+        "name": "Easter",
+        "trans": [
+            "n. 复活节"
+        ],
+        "usphone": "[ˈiːstər]",
+        "ukphone": "[ˈiːstə(r)]"
+    },
+    {
+        "name": "chick",
+        "trans": [
+            "n. 小鸡；小鸟；少妇",
+            "adj. 胆小的；懦弱的"
+        ],
+        "usphone": "[tʃɪk]",
+        "ukphone": "[tʃɪk]"
+    },
+    {
+        "name": "chocolate",
+        "trans": [
+            "n. 巧克力，巧克力糖；巧克力色",
+            "adj. 巧克力色的；巧克力口味的"
+        ],
+        "usphone": "[ˈtʃɔːklət]",
+        "ukphone": "[ˈtʃɒklət]"
+    },
+    {
+        "name": "stories",
+        "trans": [
+            "n. 故事（story的复数）"
+        ],
+        "usphone": "[ˈstɔːriz]",
+        "ukphone": "[ˈstɔːriz]"
+    },
+    {
+        "name": "invitation",
+        "trans": [
+            "n. 邀请；引诱；请帖；邀请函"
+        ],
+        "usphone": "[ˌɪnvɪˈteɪʃn]",
+        "ukphone": "[ˌɪnvɪˈteɪʃn]"
+    },
+    {
+        "name": "tidy up",
+        "trans": [
+            "v. 整理干净"
+        ]
+    },
+    {
+        "name": "November",
+        "trans": [
+            "n. 十一月"
+        ],
+        "usphone": "[noʊˈvembər]",
+        "ukphone": "[nəʊˈvembə(r)]"
+    },
+    {
+        "name": "from",
+        "trans": [
+            "prep. 来自，从；由于；今后"
+        ],
+        "usphone": "[frəm; frʌm; frɑːm]",
+        "ukphone": "[frəm; frɒm]"
+    },
+    {
+        "name": "to",
+        "trans": [
+            "prep. 到；向；（表示时间、方向）朝…方向",
+            "adv. 向前；（门等）关上"
+        ],
+        "usphone": "[tə; tu; tuː]",
+        "ukphone": "[tə]"
+    },
+    {
+        "name": "reply",
+        "trans": [
+            "n. 回答；[法] 答辩",
+            "vt. 回答；答复",
+            "vi. 回答；[法] 答辩；回击"
+        ],
+        "usphone": "[rɪˈplaɪ]",
+        "ukphone": "[rɪˈplaɪ]"
+    },
+    {
+        "name": "mine",
+        "trans": [
+            "n. 矿，矿藏；矿山，矿井；地雷，水雷",
+            "vt. 开采，采掘；在…布雷",
+            "vi. 开矿，采矿；埋设地雷",
+            "pron. 我的"
+        ],
+        "usphone": "[maɪn]",
+        "ukphone": "[maɪn]"
+    },
+    {
+        "name": "whose",
+        "trans": [
+            "pron. 谁的（疑问代词）"
+        ],
+        "usphone": "[huːz]",
+        "ukphone": "[huːz]"
+    },
+    {
+        "name": "yours",
+        "trans": [
+            "pron. 你（们）的东西；你的责任[义务]；你的家属；来信，尊函",
+            "adj. 你（们）的（东西）；信末署名前用语"
+        ],
+        "usphone": "[jərz; jɔːrz; jʊrz]",
+        "ukphone": "[jɔːz]"
+    },
+    {
+        "name": "hers",
+        "trans": [
+            "pron. 她的（所有格）"
+        ],
+        "usphone": "[hɜːrz; ɜːrz]",
+        "ukphone": "[hɜːz]"
+    },
+    {
+        "name": "both",
+        "trans": [
+            "conj. 既…且…",
+            "adj. 两个的；两者的",
+            "pron. 双方都；两者都",
+            "adv. 并；又；两者皆"
+        ],
+        "usphone": "[boʊθ]",
+        "ukphone": "[bəʊθ]"
+    },
+    {
+        "name": "wet",
+        "trans": [
+            "n. 雨天；湿气",
+            "adj. [气象][物] 潮湿的；有雨的",
+            "vt. 弄湿",
+            "vi. 变湿"
+        ],
+        "usphone": "[wet]",
+        "ukphone": "[wet]"
+    },
+    {
+        "name": "That's OK.",
+        "trans": [
+            " 不用了；可以；没有关系"
+        ]
+    },
+    {
+        "name": "take away",
+        "trans": [
+            "adj. 买回去的"
+        ]
+    },
+    {
+        "name": "worker",
+        "trans": [
+            "n. 工人；劳动者；职蚁"
+        ],
+        "usphone": "[ˈwɜːrkər]",
+        "ukphone": "[ˈwɜːkə(r)]"
+    },
+    {
+        "name": "still",
+        "trans": [
+            "conj. 仍然；但是；尽管如此",
+            "n. 寂静；剧照；蒸馏室",
+            "adj. 静止的，不动的；寂静的，平静的；不起泡的",
+            "adv. 仍然；更；静止地",
+            "vt. 蒸馏；使…静止；使…平静下来",
+            "vi. 静止；平静；蒸馏"
+        ],
+        "usphone": "[stɪl]",
+        "ukphone": "[stɪl]"
+    },
+    {
+        "name": "well",
+        "trans": [
+            "n. 井；源泉",
+            "adj. 良好的；健康的；适宜的",
+            "adv. 很好地；充分地；满意地；适当地",
+            "v. 涌出"
+        ],
+        "usphone": "[wel]",
+        "ukphone": "[wel]"
+    },
+    {
+        "name": "high",
+        "trans": [
+            "n. 高水平；天空；由麻醉品引起的快感；高压地带",
+            "adj. 高的；高级的；崇高的；高音调的",
+            "adv. 高；奢侈地"
+        ],
+        "usphone": "[haɪ]",
+        "ukphone": "[haɪ]"
+    },
+    {
+        "name": "true",
+        "trans": [
+            "n. 真实；准确",
+            "adj. 真实的；正确的",
+            "vt. 装准",
+            "adv. 真实地；准确地"
+        ],
+        "usphone": "[truː]",
+        "ukphone": "[truː]"
+    },
+    {
+        "name": "got",
+        "trans": [
+            "v. 得到，明白（get的过去式和过去分词）"
+        ],
+        "usphone": "[ɡɑːt]",
+        "ukphone": "[ɡɒt]"
+    },
+    {
+        "name": "eighty",
+        "trans": [
+            "num. 八十",
+            "n. 八十；八十岁；八十年代",
+            "adj. 八十的，八十个的；八十岁的"
+        ],
+        "usphone": "[ˈeɪti]",
+        "ukphone": "[ˈeɪti]"
+    },
+    {
+        "name": "point",
+        "trans": [
+            "n. 要点；得分；标点；[机] 尖端",
+            "vt. 指向；弄尖；加标点于",
+            "vi. 表明；指向"
+        ],
+        "usphone": "[pɔɪnt]",
+        "ukphone": "[pɔɪnt]"
+    },
+    {
+        "name": "fan",
+        "trans": [
+            "n. 迷；风扇；爱好者",
+            "vt. 煽动；刺激；吹拂",
+            "vi. 成扇形散开；飘动"
+        ],
+        "usphone": "[fæn]",
+        "ukphone": "[fæn]"
+    },
+    {
+        "name": "seventy",
+        "trans": [
+            "n. 七十；七十个；七十岁；七十年代",
+            "num. 七十",
+            "adj. 七十的；七十个的；七十岁的"
+        ],
+        "usphone": "[ˈsev(ə)nti]",
+        "ukphone": "[ˈsev(ə)nti]"
+    },
+    {
+        "name": "sixty",
+        "trans": [
+            "num. 六十；六十个"
+        ],
+        "usphone": "[ˈsɪksti]",
+        "ukphone": "[ˈsɪksti]"
+    },
+    {
+        "name": "useful",
+        "trans": [
+            "adj. 有用的，有益的；有帮助的"
+        ],
+        "usphone": "[ˈjuːsfl]",
+        "ukphone": "[ˈjuːsf(ə)l]"
+    },
+    {
+        "name": "show",
+        "trans": [
+            "n. 显示；表演；炫耀",
+            "vt. 显示；说明；演出；展出",
+            "vi. 显示；说明；指示"
+        ],
+        "usphone": "[ʃoʊ]",
+        "ukphone": "[ʃəʊ]"
+    },
+    {
+        "name": "presenter",
+        "trans": [
+            "n. 提出者；推荐者；赠送者；任命者；主持人"
+        ],
+        "usphone": "[prɪˈzentər]",
+        "ukphone": "[prɪˈzentə(r)]"
+    },
+    {
+        "name": "blind",
+        "trans": [
+            "n. 掩饰，借口；百叶窗",
+            "adj. 盲目的；瞎的",
+            "vt. 使失明；使失去理智",
+            "adv. 盲目地；看不见地"
+        ],
+        "usphone": "[blaɪnd]",
+        "ukphone": "[blaɪnd]"
+    },
+    {
+        "name": "could",
+        "trans": [
+            "aux. 能够",
+            "v. 能（can的过去式）"
+        ],
+        "usphone": "[kəd; kʊd]",
+        "ukphone": "[kəd]"
+    },
+    {
+        "name": "speak",
+        "trans": [
+            "vi. 说话；演讲；表明；陈述",
+            "vt. 讲话；发言；讲演"
+        ],
+        "usphone": "[spiːk]",
+        "ukphone": "[spiːk]"
+    },
+    {
+        "name": "fire",
+        "trans": [
+            "n. 火；火灾；炮火；炉火；热情；激情；磨难",
+            "vt. 点燃；解雇；开除；使发光；烧制；激动；放枪",
+            "vi. 着火；射击；开枪；激动；烧火"
+        ],
+        "usphone": "[ˈfaɪər]",
+        "ukphone": "[ˈfaɪə(r)]"
+    },
+    {
+        "name": "inside",
+        "trans": [
+            "prep. 少于；在…之内",
+            "n. 里面；内部；内情；内脏",
+            "adj. 里面的；内部的；秘密的",
+            "adv. 在里面"
+        ],
+        "usphone": "[ˌɪnˈsaɪd]",
+        "ukphone": "[ˌɪnˈsaɪd]"
+    },
+    {
+        "name": "firefighter",
+        "trans": [
+            "n. 消防队员"
+        ],
+        "usphone": "[ˈfaɪərfaɪtər]",
+        "ukphone": "[ˈfaɪəfaɪtə(r)]"
+    },
+    {
+        "name": "couldn't",
+        "trans": [
+            "v. 不能（等于could not）"
+        ]
+    },
+    {
+        "name": "could not",
+        "trans": [
+            "auxv. 能；行；难道会；(可)能",
+            "modalv. 会；得；难道会；（表示知道如何做）懂得",
+            "n. （盛食品或饮料的）金属罐；一罐（的量）；塑料容器；喷雾罐",
+            "v. 把（食品）装罐保存；解雇；让…卷铺盖走人；炒…的鱿鱼"
+        ]
+    },
+    {
+        "name": "often",
+        "trans": [
+            "adv. 常常，时常"
+        ],
+        "usphone": "[ˈɔːf(ə)n]",
+        "ukphone": "[ˈɒf(ə)n]"
+    },
+    {
+        "name": "around",
+        "trans": [
+            "prep. 四处；在…周围",
+            "adv. 大约；到处；在附近"
+        ],
+        "usphone": "[əˈraʊnd]",
+        "ukphone": "[əˈraʊnd]"
+    },
+    {
+        "name": "start",
+        "trans": [
+            "n. 开始；起点",
+            "vt. 开始；启动",
+            "vi. 出发"
+        ],
+        "usphone": "[stɑːrt]",
+        "ukphone": "[stɑːt]"
+    },
+    {
+        "name": "line",
+        "trans": [
+            "n. 路线，航线；排；绳",
+            "vt. 排成一行；划线于；以线条标示；使…起皱纹",
+            "vi. 排队；站成一排"
+        ],
+        "usphone": "[laɪn]",
+        "ukphone": "[laɪn]"
+    },
+    {
+        "name": "half",
+        "trans": [
+            "n. 一半；半场；半学年",
+            "adj. 一半的；不完全的；半途的",
+            "adv. 一半地；部分地"
+        ],
+        "usphone": "[hæf]",
+        "ukphone": "[hɑːf]"
+    },
+    {
+        "name": "past",
+        "trans": [
+            "n. 过去；往事",
+            "prep. 越过；晚于",
+            "adj. 过去的；结束的",
+            "adv. 过；经过"
+        ],
+        "usphone": "[pæst]",
+        "ukphone": "[pɑːst]"
+    },
+    {
+        "name": "miss",
+        "trans": [
+            "n. 女士，小姐，年轻未婚女子",
+            "vt. 错过，想念，缺（勤）"
+        ],
+        "usphone": "[mɪs]",
+        "ukphone": "[mɪs]"
+    },
+    {
+        "name": "study",
+        "trans": [
+            "n. 学习，研究；课题；书房；学问",
+            "vt. 学习；考虑；攻读；细察",
+            "vi. 研究；用功"
+        ],
+        "usphone": "[ˈstʌdi]",
+        "ukphone": "[ˈstʌdi]"
+    },
+    {
+        "name": "open",
+        "trans": [
+            "adj. 公开的；敞开的；空旷的；坦率的；营业着的",
+            "vi. 开始；展现",
+            "vt. 公开；打开",
+            "n. 公开；空旷；户外"
+        ],
+        "usphone": "[ˈoʊpən]",
+        "ukphone": "[ˈəʊpən]"
+    },
+    {
+        "name": "wall",
+        "trans": [
+            "n. 墙壁，围墙；似墙之物",
+            "adj. 墙壁的",
+            "vt. 用墙围住，围以墙"
+        ],
+        "usphone": "[wɔːl]",
+        "ukphone": "[wɔːl]"
+    },
+    {
+        "name": "have fun",
+        "trans": [
+            "na. 作乐"
+        ],
+        "usphone": "[hæv fʌn]",
+        "ukphone": "[hæv fʌn]"
+    },
+    {
+        "name": "break",
+        "trans": [
+            "vi. 打破；折断；弄坏；削弱",
+            "vt. （使）破；打破（纪录）；（常指好天气）突变；开始",
+            "vi. （嗓音）突变；突破；破晓；（价格）突然下跌",
+            "n. 破裂；间断；（持续一段时间的状况的）改变；间歇"
+        ],
+        "usphone": "[breɪk]",
+        "ukphone": "[breɪk]"
+    },
+    {
+        "name": "nothing",
+        "trans": [
+            "neg. 没什么；毫不",
+            "n. 无；零；不关紧要之事",
+            "adv. 毫不；决不",
+            "pron. 无事；无物",
+            "int. 什么也没有"
+        ],
+        "usphone": "[ˈnʌθɪŋ]",
+        "ukphone": "[ˈnʌθɪŋ]"
+    },
+    {
+        "name": "think",
+        "trans": [
+            "n. 想；想法",
+            "adj. 思想的",
+            "vi. 想；认为",
+            "vt. 想；认为；想起；想像；打算"
+        ],
+        "usphone": "[θɪŋk]",
+        "ukphone": "[θɪŋk]"
+    },
+    {
+        "name": "drank",
+        "trans": [
+            "v. 喝；喝酒（drink的过去式）"
+        ],
+        "usphone": "[dræŋk]",
+        "ukphone": "[dræŋk]"
+    },
+    {
+        "name": "should",
+        "trans": [
+            "aux. 应该；就；可能；将要"
+        ],
+        "usphone": "[ʃəd; ʃʊd]",
+        "ukphone": "[ʃəd; ʃʊd]"
+    },
+    {
+        "name": "go to bed",
+        "trans": [
+            "na. 睡；同床；【印】付印"
+        ]
+    },
+    {
+        "name": "shouldn't",
+        "trans": [
+            "不应该，不应（等于should not）"
+        ]
+    },
+    {
+        "name": "should not",
+        "trans": [
+            " 不应该；不应当；不宜"
+        ]
+    },
+    {
+        "name": "take down",
+        "trans": [
+            "na. 扯下；卷起；记下；卸下"
+        ],
+        "usphone": "[teɪk daʊn]",
+        "ukphone": "['teikdaun]"
+    },
+    {
+        "name": "clean",
+        "trans": [
+            "n. 打扫",
+            "adj. 清洁的，干净的；清白的",
+            "vt. 使干净",
+            "vi. 打扫，清扫",
+            "adv. 完全地"
+        ],
+        "usphone": "[kliːn]",
+        "ukphone": "[kliːn]"
+    },
+    {
+        "name": "rule",
+        "trans": [
+            "n. 统治；规则",
+            "vt. 统治；规定；管理；裁决；支配",
+            "vi. 统治；管辖；裁定"
+        ],
+        "usphone": "[ruːl]",
+        "ukphone": "[ruːl]"
+    },
+    {
+        "name": "kind",
+        "trans": [
+            "n. 种类；性质",
+            "adj. 和蔼的；宽容的；令人感激的"
+        ],
+        "usphone": "[kaɪnd]",
+        "ukphone": "[kaɪnd]"
+    }
+]
