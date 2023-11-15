@@ -5364,10 +5364,10 @@
     "ukphone": "ˈbeɪbi"
   },
   {
-    "name": "人",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
+    "name": "person",
+    "trans": ["人"],
+    "usphone": "ˈpɜːrs(ə)n",
+    "ukphone": "ˈpɜːs(ə)n"
   },
   {
     "name": "extreme",
@@ -6696,12 +6696,6 @@
     "ukphone": "ˈdʒuːniə(r)"
   },
   {
-    "name": "辈；三年级生",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
-  },
-  {
     "name": "colleague",
     "trans": ["同事"],
     "usphone": "ˈkɑːliːɡ",
@@ -6988,12 +6982,6 @@
     "trans": ["信用；贷款；荣誉；赞扬；学分；归"],
     "usphone": "ˈkredɪt",
     "ukphone": "ˈkredɪt"
-  },
-  {
-    "name": "功于",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
   },
   {
     "name": "triple",
@@ -8628,12 +8616,6 @@
     "ukphone": "rɪˈɡɑːd"
   },
   {
-    "name": "致意；和…有关",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
-  },
-  {
     "name": "legroom",
     "trans": ["伸腿空间"],
     "usphone": "ˈleɡruːmˌˈleɡrʊm",
@@ -9288,10 +9270,10 @@
     "ukphone": "ɪnˈkɔːpəreɪt"
   },
   {
-    "name": "司组织的",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
+    "name": "organization",
+    "trans": ["组织"],
+    "usphone": "ˌɔːrɡənəˈzeɪʃ(ə)n",
+    "ukphone": "ˌɔːɡənaɪˈzeɪʃn"
   },
   {
     "name": "mention",
@@ -9316,12 +9298,6 @@
     "trans": ["（穿越沙漠的）旅行队；商队；大"],
     "usphone": "ˈkærəvæn",
     "ukphone": "ˈkærəvæn"
-  },
-  {
-    "name": "篷车；宿营车",
-    "trans": [""],
-    "usphone": "NoPhoneticSymbolUS",
-    "ukphone": "NoPhoneticSymbolUK"
   },
   {
     "name": "retrain",
@@ -11424,8 +11400,8 @@
     "ukphone": "rɪˈspɒndənt"
   },
   {
-    "name": "odor/",
-    "trans": ["odour，气味；名声"],
+    "name": "odor",
+    "trans": ["气味；名声"],
     "usphone": "ˈoʊdər",
     "ukphone": "ˈəʊdə(r)"
   },
