@@ -1,0 +1,659 @@
+[
+    {
+        "name": "drive",
+        "trans": [
+            "n. 驱动器；驾车；[心理] 内驱力，推进力；快车道",
+            "vi. 开车；猛击；飞跑",
+            "vt. 推动，发动（机器等）；驾驶（马车，汽车等）；驱赶"
+        ],
+        "usphone": "[draɪv]",
+        "ukphone": "[draɪv]"
+    },
+    {
+        "name": "drove",
+        "trans": [
+            "n. 畜群；牛群、羊群等；移动的人群或大批的东西",
+            "v. 驾驶（drive的过去式）；赶(牲畜)；(牲畜贩子)买卖(牲畜)"
+        ],
+        "usphone": "[droʊv]",
+        "ukphone": "[drəʊv]"
+    },
+    {
+        "name": "player",
+        "trans": [
+            "n. 运动员，比赛者；游戏者，做游戏的人；演奏者，表演者；演员；播放器"
+        ],
+        "usphone": "[ˈpleɪər]",
+        "ukphone": "[ˈpleɪə(r)]"
+    },
+    {
+        "name": "office",
+        "trans": [
+            "n. 办公室；政府机关；官职；营业处"
+        ],
+        "usphone": "[ˈɑːfɪs]",
+        "ukphone": "[ˈɒfɪs]"
+    },
+    {
+        "name": "fish",
+        "trans": [
+            "n. 鱼，鱼类",
+            "vt. 钓鱼，捕鱼；搜寻",
+            "vi. 捕鱼，钓鱼；用钩捞取"
+        ],
+        "usphone": "[fɪʃ]",
+        "ukphone": "[fɪʃ]"
+    },
+    {
+        "name": "sausage",
+        "trans": [
+            "n. 香肠；腊肠；装香肠的碎肉"
+        ],
+        "usphone": "[ˈsɔːsɪdʒ]",
+        "ukphone": "[ˈsɒsɪdʒ]"
+    },
+    {
+        "name": "sandwich",
+        "trans": [
+            "n. 三明治；夹心面包",
+            "vt. 夹入；挤进；把...做成三明治"
+        ],
+        "usphone": "[ˈsænwɪtʃ; ˈsænwɪdʒ]",
+        "ukphone": "[ˈsænwɪtʃ; ˈsænwɪdʒ]"
+    },
+    {
+        "name": "fish and chips",
+        "trans": [
+            "n. 炸鱼加土豆条；炸鱼薯条"
+        ],
+        "usphone": "[ˌfɪʃ ən ˈtʃɪps]",
+        "ukphone": "[ˌfɪʃ ən ˈtʃɪps]"
+    },
+    {
+        "name": "traditional",
+        "trans": [
+            "adj. 传统的；惯例的"
+        ],
+        "usphone": "[trəˈdɪʃənl]",
+        "ukphone": "[trəˈdɪʃən(ə)l]"
+    },
+    {
+        "name": "dish",
+        "trans": [
+            "n. 盘；餐具；一盘食物；外貌有吸引力的人",
+            "vt. 盛于碟盘中；分发；使某人的希望破灭；说（某人）的闲话",
+            "vi. 成碟状；闲谈"
+        ],
+        "usphone": "[dɪʃ]",
+        "ukphone": "[dɪʃ]"
+    },
+    {
+        "name": "delicious",
+        "trans": [
+            "adj. 美味的；可口的"
+        ],
+        "usphone": "[dɪˈlɪʃəs]",
+        "ukphone": "[dɪˈlɪʃəs]"
+    },
+    {
+        "name": "chicken",
+        "trans": [
+            "n. 鸡肉；小鸡；胆小鬼，懦夫",
+            "adj. 鸡肉的；胆怯的；幼小的"
+        ],
+        "usphone": "[ˈtʃɪkɪn]",
+        "ukphone": "[ˈtʃɪkɪn]"
+    },
+    {
+        "name": "DVD",
+        "trans": [
+            "abbr. 数字化视频光盘（Digital Video Disk）"
+        ],
+        "usphone": "[ˌdiː viː ˈdiː]",
+        "ukphone": "[ˌdiː viː ˈdiː]"
+    },
+    {
+        "name": "librarian",
+        "trans": [
+            "n. 图书馆员；图书管理员"
+        ],
+        "usphone": "[laɪˈbreriən]",
+        "ukphone": "[laɪˈbreəriən]"
+    },
+    {
+        "name": "show",
+        "trans": [
+            "n. 显示；表演；炫耀",
+            "vt. 显示；说明；演出；展出",
+            "vi. 显示；说明；指示"
+        ],
+        "usphone": "[ʃoʊ]",
+        "ukphone": "[ʃəʊ]"
+    },
+    {
+        "name": "borrow",
+        "trans": [
+            "vt. 借；借用",
+            "vi. 借；借用；从其他语言中引入"
+        ],
+        "usphone": "[ˈbɔːroʊ]",
+        "ukphone": "[ˈbɒrəʊ]"
+    },
+    {
+        "name": "sent",
+        "trans": [
+            "v. 送，寄出（send的过去分词）"
+        ],
+        "usphone": "[sent]",
+        "ukphone": "[sent]"
+    },
+    {
+        "name": "American",
+        "trans": [
+            "n. 美国人，美洲人；美国英语",
+            "adj. 美国的，美洲的；地道美国式的"
+        ],
+        "usphone": "[əˈmerɪkən]",
+        "ukphone": "[əˈmerɪkən]"
+    },
+    {
+        "name": "read",
+        "trans": [
+            "n. 阅读；读物",
+            "adj. 有学问的",
+            "vi. 读；读起来",
+            "vt. 阅读；读懂，理解"
+        ],
+        "usphone": "[riːd]",
+        "ukphone": "[riːd]"
+    },
+    {
+        "name": "interesting",
+        "trans": [
+            "adj. 有趣的；引起兴趣的，令人关注的"
+        ],
+        "usphone": "[ˈɪntrəstɪŋ; ˈɪntrestɪŋ]",
+        "ukphone": "[ˈɪntrəstɪŋ]"
+    },
+    {
+        "name": "season",
+        "trans": [
+            "n. 时期；季节；赛季",
+            "vt. 给…调味；使适应",
+            "vi. 变得成熟；变干燥"
+        ],
+        "usphone": "[ˈsiːzn]",
+        "ukphone": "[ˈsiːzn]"
+    },
+    {
+        "name": "snow",
+        "trans": [
+            "n. 雪，积雪；下雪",
+            "vt. 使纷纷落下；使变白",
+            "vi. 降雪"
+        ],
+        "usphone": "[snoʊ]",
+        "ukphone": "[snəʊ]"
+    },
+    {
+        "name": "How much ...?",
+        "trans": [
+            "conj. 多少"
+        ]
+    },
+    {
+        "name": "light",
+        "trans": [
+            "n. 光；光线；灯；打火机；领悟；浅色；天窗",
+            "adj. 轻的；浅色的；明亮的；轻松的；容易的；清淡的",
+            "vi. 点着；变亮；着火",
+            "vt. 照亮；点燃；着火",
+            "adv. 轻地；清楚地；轻便地"
+        ],
+        "usphone": "[laɪt]",
+        "ukphone": "[laɪt]"
+    },
+    {
+        "name": "sales assistant",
+        "trans": [
+            " 销售助理；业务助理；售货员"
+        ]
+    },
+    {
+        "name": "carry",
+        "trans": [
+            "n. 运载；[计] 进位；射程",
+            "vi. 能达到；被携带；被搬运",
+            "vt. 拿，扛；携带；支持；搬运"
+        ],
+        "usphone": "[ˈkæri]",
+        "ukphone": "[ˈkæri]"
+    },
+    {
+        "name": "pound",
+        "trans": [
+            "n. 英镑；重击，重击声；兽栏；拘留所",
+            "vt. 捣烂；敲打；监禁，拘留",
+            "vi. 连续重击，猛击"
+        ],
+        "usphone": "[paʊnd]",
+        "ukphone": "[paʊnd]"
+    },
+    {
+        "name": "back",
+        "trans": [
+            "n. 后面；背部；靠背；足球等的后卫；书报等的末尾",
+            "adj. 后面的；过去的；拖欠的",
+            "vt. 支持；后退；背书；下赌注",
+            "adv. 以前；向后地；来回地；上溯；回来；回原处",
+            "vi. 后退；背"
+        ],
+        "usphone": "[bæk]",
+        "ukphone": "[bæk]"
+    },
+    {
+        "name": "over",
+        "trans": [
+            "adv. 结束；越过；从头到尾",
+            "prep. 越过；在…之上；遍于…之上",
+            "adj. 结束的；上面的",
+            "vt. 越过"
+        ],
+        "usphone": "[ˈoʊvər]",
+        "ukphone": "[ˈəʊvə(r)]"
+    },
+    {
+        "name": "shoulder",
+        "trans": [
+            "n. 肩，肩膀；肩部",
+            "vi. 用肩推挤，用肩顶",
+            "vt. 肩负，承担"
+        ],
+        "usphone": "[ˈʃoʊldər]",
+        "ukphone": "[ˈʃəʊldə(r)]"
+    },
+    {
+        "name": "build",
+        "trans": [
+            "n. 构造；体形；体格",
+            "vi. 建筑；建造",
+            "vt. 建立；建筑"
+        ],
+        "usphone": "[bɪld]",
+        "ukphone": "[bɪld]"
+    },
+    {
+        "name": "place",
+        "trans": [
+            "n. 地方；住所；座位",
+            "vt. 放置；任命；寄予",
+            "vi. 名列前茅；取得名次"
+        ],
+        "usphone": "[pleɪs]",
+        "ukphone": "[pleɪs]"
+    },
+    {
+        "name": "thousand",
+        "trans": [
+            "n. 一千；一千个；许许多多",
+            "adj. 成千的；无数的"
+        ],
+        "usphone": "[ˈθaʊz(ə)nd]",
+        "ukphone": "[ˈθaʊznd]"
+    },
+    {
+        "name": "circle",
+        "trans": [
+            "n. 循环，周期；圆；圈子；圆形物",
+            "vt. 画圆圈；环绕…移动",
+            "vi. 盘旋，旋转；环行"
+        ],
+        "usphone": "[ˈsɜːrkl]",
+        "ukphone": "[ˈsɜːk(ə)l]"
+    },
+    {
+        "name": "answer",
+        "trans": [
+            "n. 回答；答案；答辩",
+            "vt. 回答；符合",
+            "vi. 回答；符合"
+        ],
+        "usphone": "[ˈænsər]",
+        "ukphone": "[ˈɑːnsə(r)]"
+    },
+    {
+        "name": "hope",
+        "trans": [
+            "n. 希望；期望；信心",
+            "vi. 希望；期待；信赖",
+            "vt. 希望；期望"
+        ],
+        "usphone": "[hoʊp]",
+        "ukphone": "[həʊp]"
+    },
+    {
+        "name": "so",
+        "trans": [
+            "conj. 所以；因此",
+            "adv. 如此，这么；确是如此",
+            "pron. 这样"
+        ],
+        "usphone": "[soʊ]",
+        "ukphone": "[səʊ]"
+    },
+    {
+        "name": "get",
+        "trans": [
+            "n. 生殖；幼兽",
+            "vi. 成为；变得；到达",
+            "vt. 使得；获得；受到；变成"
+        ],
+        "usphone": "[ɡet]",
+        "ukphone": "[ɡet]"
+    },
+    {
+        "name": "hour",
+        "trans": [
+            "n. 小时；钟头；课时；…点钟"
+        ],
+        "usphone": "[ˈaʊər]",
+        "ukphone": "[ˈaʊə(r)]"
+    },
+    {
+        "name": "amazing",
+        "trans": [
+            "adj. 令人惊异的",
+            "v. 使吃惊（amaze的ing形式）"
+        ],
+        "usphone": "[əˈmeɪzɪŋ]",
+        "ukphone": "[əˈmeɪzɪŋ]"
+    },
+    {
+        "name": "take",
+        "trans": [
+            "vi. 拿；获得",
+            "vt. 拿，取；采取；接受（礼物等）；买，花费；耗费（时间等）",
+            "n. 捕获量；看法；利益，盈益；（入场券的）售得金额"
+        ],
+        "usphone": "[teɪk]",
+        "ukphone": "[teɪk]"
+    },
+    {
+        "name": "short",
+        "trans": [
+            "n. 短；缺乏；短路；短裤",
+            "adj. 短的；不足的；矮的，低的",
+            "adv. 不足；突然；唐突地"
+        ],
+        "usphone": "[ʃɔːrt]",
+        "ukphone": "[ʃɔːt]"
+    },
+    {
+        "name": "helicopter",
+        "trans": [
+            "n. [航] 直升飞机",
+            "vt. 由直升机运送",
+            "vi. [航] 乘直升飞机"
+        ],
+        "usphone": "[ˈhelɪkɑːptər]",
+        "ukphone": "[ˈhelɪkɒptə(r)]"
+    },
+    {
+        "name": "evening",
+        "trans": [
+            "n. 晚上；傍晚；（联欢性的）晚会；后期",
+            "adj. 在晚上的；为晚上的；晚上用的",
+            "int. 晚上好（等于good evening）"
+        ],
+        "usphone": "[ˈiːvnɪŋ]",
+        "ukphone": "[ˈiːvnɪŋ]"
+    },
+    {
+        "name": "actor",
+        "trans": [
+            "n. 男演员；行动者；作用物"
+        ],
+        "usphone": "[ˈæktər]",
+        "ukphone": "[ˈæktə(r)]"
+    },
+    {
+        "name": "busy",
+        "trans": [
+            "adj. 忙碌的；热闹的；正被占用的",
+            "vt. 使忙于"
+        ],
+        "usphone": "[ˈbɪzi]",
+        "ukphone": "[ˈbɪzi]"
+    },
+    {
+        "name": "quarter",
+        "trans": [
+            "num. 四分之一",
+            "n. 四分之一；地区；季度；一刻钟；两角五分；节",
+            "vt. 将…四等分；供某人住宿",
+            "vi. 住宿；驻扎"
+        ],
+        "usphone": "[ˈkwɔːrtər]",
+        "ukphone": "[ˈkwɔːtə(r)]"
+    },
+    {
+        "name": "Chinese",
+        "trans": [
+            "n. 中文，汉语；中国人",
+            "adj. 中国的，中国人的；中国话的"
+        ],
+        "usphone": "[ˌtʃaɪˈniːz]",
+        "ukphone": "[ˌtʃaɪˈniːz]"
+    },
+    {
+        "name": "drew",
+        "trans": [
+            "draw的过去式"
+        ],
+        "usphone": "[druː]",
+        "ukphone": "[druː]"
+    },
+    {
+        "name": "piece",
+        "trans": [
+            "n. 块；件；篇；硬币",
+            "vt. 修补；接合；凑合"
+        ],
+        "usphone": "[piːs]",
+        "ukphone": "[piːs]"
+    },
+    {
+        "name": "painted",
+        "trans": [
+            "adj. 描画的；着色的；刷上油漆的",
+            "v. 油漆（paint的过去式和过去分词）"
+        ],
+        "usphone": "[ˈpeɪntɪd]",
+        "ukphone": "[ˈpeɪntɪd]"
+    },
+    {
+        "name": "scissors",
+        "trans": [
+            "n. 剪刀；剪式跳法",
+            "v. 剪开；删除（scissor的第三人称单数）"
+        ],
+        "usphone": "[ˈsɪzərz]",
+        "ukphone": "[ˈsɪzəz]"
+    },
+    {
+        "name": "stick",
+        "trans": [
+            "n. 棍；手杖；呆头呆脑的人",
+            "vi. 坚持；伸出；粘住",
+            "vt. 刺，戳；伸出；粘贴"
+        ],
+        "usphone": "[stɪk]",
+        "ukphone": "[stɪk]"
+    },
+    {
+        "name": "tied",
+        "trans": [
+            "v. 系（tie的过去式和过去分词）",
+            "adj. 系住的"
+        ],
+        "usphone": "[taɪd]",
+        "ukphone": "[taɪd]"
+    },
+    {
+        "name": "string",
+        "trans": [
+            "n. 线，弦，细绳；一串，一行"
+        ],
+        "usphone": "[strɪŋ]",
+        "ukphone": "[strɪŋ]"
+    },
+    {
+        "name": "theatre",
+        "trans": [
+            "n. 电影院，戏院；戏剧；阶梯式讲堂"
+        ],
+        "usphone": "[ˈθiːətər]",
+        "ukphone": "[ˈθɪətə(r)]"
+    },
+    {
+        "name": "men",
+        "trans": [
+            "n. 男人，人类（man的复数）"
+        ],
+        "usphone": "[men]",
+        "ukphone": "[men]"
+    },
+    {
+        "name": "women",
+        "trans": [
+            "n. 女人（woman的复数）"
+        ],
+        "usphone": "[ˈwɪmɪn]",
+        "ukphone": "[ˈwɪmɪn]"
+    },
+    {
+        "name": "told",
+        "trans": [
+            "v. 告诉（tell的过去式）；讲述"
+        ],
+        "usphone": "[toʊld]",
+        "ukphone": "[təʊld]"
+    },
+    {
+        "name": "joke",
+        "trans": [
+            "n. 玩笑，笑话；笑柄",
+            "vt. 开…的玩笑",
+            "vi. 开玩笑"
+        ],
+        "usphone": "[dʒoʊk]",
+        "ukphone": "[dʒəʊk]"
+    },
+    {
+        "name": "funny",
+        "trans": [
+            "n. 滑稽人物；笑话，有趣的故事；滑稽连环漫画栏；（英）（比赛用）单人双桨小艇",
+            "adj. 有趣的，好笑的，滑稽的；（口）稀奇的，古怪的，奇异的；有病的，不舒服的；狡猾的，欺骗（性）的，可疑的，不光明"
+        ],
+        "usphone": "[ˈfʌni]",
+        "ukphone": "[ˈfʌni]"
+    },
+    {
+        "name": "show",
+        "trans": [
+            "n. 显示；表演；炫耀",
+            "vt. 显示；说明；演出；展出",
+            "vi. 显示；说明；指示"
+        ],
+        "usphone": "[ʃoʊ]",
+        "ukphone": "[ʃəʊ]"
+    },
+    {
+        "name": "put",
+        "trans": [
+            "n. 掷；笨蛋；投击；怪人",
+            "adj. 固定不动的",
+            "vi. 出发；击；航行；发芽",
+            "vt. 放；表达；移动；安置；赋予"
+        ],
+        "usphone": "[pʊt]",
+        "ukphone": "[pʊt]"
+    },
+    {
+        "name": "history",
+        "trans": [
+            "n. 历史，历史学；历史记录；来历"
+        ],
+        "usphone": "[ˈhɪstri]",
+        "ukphone": "[ˈhɪst(ə)ri]"
+    },
+    {
+        "name": "subject",
+        "trans": [
+            "n. 主题；科目；[语] 主语；国民",
+            "adj. 服从的；易患…的；受制于…的",
+            "vt. 使…隶属；使屈从于…"
+        ],
+        "usphone": "[ˈsʌbdʒɪkt; ˈsʌbdʒekt]",
+        "ukphone": "[ˈsʌbdʒɪkt; ˈsʌbdʒekt]"
+    },
+    {
+        "name": "ticket",
+        "trans": [
+            "vt. 加标签于；指派；对…开出交通违规罚单"
+        ],
+        "usphone": "[ˈtɪkɪt]",
+        "ukphone": "[ˈtɪkɪt]"
+    },
+    {
+        "name": "passport",
+        "trans": [
+            "n. 护照，通行证；手段"
+        ],
+        "usphone": "[ˈpæspɔːrt]",
+        "ukphone": "[ˈpɑːspɔːt]"
+    },
+    {
+        "name": "leave",
+        "trans": [
+            "vt. 离开；留下；遗忘；委托",
+            "vi. 离开，出发；留下",
+            "n. 许可，同意；休假"
+        ],
+        "usphone": "[liːv]",
+        "ukphone": "[liːv]"
+    },
+    {
+        "name": "July",
+        "trans": [
+            "n. 七月"
+        ],
+        "usphone": "[dʒʊˈlaɪ]",
+        "ukphone": "[dʒʊˈlaɪ]"
+    },
+    {
+        "name": "August",
+        "trans": [
+            "n. 八月（简写为Aug）",
+            "adj. 威严的；令人敬畏的"
+        ],
+        "usphone": "[ˈɔːɡəst]",
+        "ukphone": "[ˈɔːɡəst]"
+    },
+    {
+        "name": "met",
+        "trans": [
+            "v. 遇见（meet的过去式和过去分词）"
+        ],
+        "usphone": "[met]",
+        "ukphone": "[met]"
+    },
+    {
+        "name": "classmate",
+        "trans": [
+            "n. 同班同学"
+        ],
+        "usphone": "[ˈklæsmeɪt]",
+        "ukphone": "[ˈklɑːsmeɪt]"
+    }
+]
