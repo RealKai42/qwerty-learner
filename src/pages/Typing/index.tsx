@@ -15,27 +15,31 @@ import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
-import { IsDesktop, isLegal } from '@/utils'
+import { IsDesktop, calcChapterCount, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
+import range from '@/utils/range'
+import { Listbox, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
 import type React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { Fragment, useCallback, useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useImmerReducer } from 'use-immer'
+import IconCheck from '~icons/tabler/check'
 
 const App: React.FC = () => {
   const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
 
-  const currentChapter = useAtomValue(currentChapterAtom)
+  const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
 
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
   const saveChapterRecord = useSaveChapterRecord()
+  const chapterCount = calcChapterCount(currentDictInfo.length ?? 0)
 
   useEffect(() => {
     // 检测用户设备
@@ -129,13 +133,38 @@ const App: React.FC = () => {
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
-          <Tooltip content="词典章节切换">
+          <Tooltip content="词典切换">
             <NavLink
               className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
               to="/gallery"
             >
-              {currentDictInfo.name} 第 {currentChapter + 1} 章
+              {currentDictInfo.name}
             </NavLink>
+          </Tooltip>
+          <Tooltip content="章节切换">
+            <Listbox value={currentChapter} onChange={setCurrentChapter}>
+              <Listbox.Button className="rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100">
+                第 {currentChapter + 1} 章
+              </Listbox.Button>
+              <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
+                <Listbox.Options className="listbox-options z-10 w-32">
+                  {range(0, chapterCount, 1).map((index) => (
+                    <Listbox.Option key={index} value={index}>
+                      {({ selected }) => (
+                        <div className="fplex group cursor-pointer items-center justify-between">
+                          {selected ? (
+                            <span className="listbox-options-icon">
+                              <IconCheck className="focus:outline-none" />
+                            </span>
+                          ) : null}
+                          <span>第 {index + 1} 章</span>
+                        </div>
+                      )}
+                    </Listbox.Option>
+                  ))}
+                </Listbox.Options>
+              </Transition>
+            </Listbox>
           </Tooltip>
           <PronunciationSwitcher />
           <Switcher />
