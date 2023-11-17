@@ -378,7 +378,7 @@
         ]
     },
     {
-        "name": "ag",
+        "name": "bag",
         "ukphone": "bæɡ",
         "trans": [
             "n .袋"
@@ -392,7 +392,7 @@
         ]
     },
     {
-        "name": "anana",
+        "name": "banana",
         "ukphone": "bəˈnɑ:nə",
         "trans": [
             "n .香蕉"
@@ -420,7 +420,7 @@
         ]
     },
     {
-        "name": "ecause",
+        "name": "because",
         "ukphone": "bɪ'kɒz",
         "trans": [
             "conj. 因为"
@@ -511,7 +511,7 @@
         ]
     },
     {
-        "name": "orrow",
+        "name": "borrow",
         "ukphone": "bɒrəʊ",
         "trans": [
             "v.借入，借用"
@@ -525,14 +525,14 @@
         ]
     },
     {
-        "name": "ox",
+        "name": "box",
         "ukphone": "bɒks",
         "trans": [
             "n .盒子， 箱 ；v.装...入盒中，拳击"
         ]
     },
     {
-        "name": "oy",
+        "name": "boy",
         "ukphone": "bɔɪ",
         "trans": [
             "n . 男孩"
@@ -588,14 +588,14 @@
         ]
     },
     {
-        "name": "rown",
+        "name": "brown",
         "ukphone": "braʊn",
         "trans": [
             "n .褐色； adj.褐色的，棕色的"
         ]
     },
     {
-        "name": "usy",
+        "name": "busy",
         "ukphone": "bɪzi",
         "trans": [
             "adj.忙碌的， 热闹的；"
@@ -609,7 +609,7 @@
         ]
     },
     {
-        "name": "y",
+        "name": "by",
         "ukphone": "baɪ",
         "trans": [
             "prep . 通过"
@@ -875,7 +875,7 @@
         ]
     },
     {
-        "name": "angerous",
+        "name": "dangerous",
         "ukphone": "ˈdeɪndʒərəs",
         "trans": [
             "adj.危险的； dangerously  adv. 危险地"
@@ -896,7 +896,7 @@
         ]
     },
     {
-        "name": "eep",
+        "name": "deep",
         "ukphone": "di:p",
         "trans": [
             "adj.深的； n .深渊， 深处"
@@ -952,14 +952,14 @@
         ]
     },
     {
-        "name": "o",
+        "name": "do",
         "ukphone": "du:",
         "trans": [
             "v.做"
         ]
     },
     {
-        "name": "og",
+        "name": "dog",
         "ukphone": "dɒɡ",
         "trans": [
             "n . 狗"
@@ -973,7 +973,7 @@
         ]
     },
     {
-        "name": "oor",
+        "name": "door",
         "ukphone": "dɔ:",
         "trans": [
             "n . 门"
@@ -987,7 +987,7 @@
         ]
     },
     {
-        "name": "ress",
+        "name": "dress",
         "ukphone": "dres",
         "trans": [
             "n .连衣裙；v. 给... 穿衣"
@@ -1183,7 +1183,7 @@
         ]
     },
     {
-        "name": "or",
+        "name": "for",
         "ukphone": "fɔ:r",
         "trans": [
             "prep .为了"
@@ -1197,7 +1197,7 @@
         ]
     },
     {
-        "name": "our",
+        "name": "four",
         "ukphone": "fɔ:",
         "trans": [
             "num. 四"
@@ -1267,7 +1267,7 @@
         ]
     },
     {
-        "name": "rom",
+        "name": "from",
         "ukphone": "frəm",
         "trans": [
             "prep .从"
@@ -1379,7 +1379,7 @@
         ]
     },
     {
-        "name": "e",
+        "name": "he",
         "ukphone": "hi:",
         "trans": [
             "pron .他"
@@ -1407,7 +1407,7 @@
         ]
     },
     {
-        "name": "ere",
+        "name": "here",
         "ukphone": "hɪə",
         "trans": [
             "adv.在这里"
@@ -1435,21 +1435,21 @@
         ]
     },
     {
-        "name": "our",
+        "name": "hour",
         "ukphone": "aʊə",
         "trans": [
             "n . 小时，钟头"
         ]
     },
     {
-        "name": "ouse",
+        "name": "house",
         "ukphone": "haʊs",
         "trans": [
             "n .房子，住宅"
         ]
     },
     {
-        "name": "ow",
+        "name": "how",
         "ukphone": "haʊ",
         "trans": [
             "adv. 如何； 多少； conj. 如何"
@@ -1470,7 +1470,7 @@
         ]
     },
     {
-        "name": "n",
+        "name": "in",
         "ukphone": "ɪn",
         "trans": [
             "prep . 在… … 内；进… … 里"
@@ -1554,7 +1554,7 @@
         ]
     },
     {
-        "name": "aw",
+        "name": "law",
         "ukphone": "---",
         "trans": [
             "n . 法律，规律， 守则， 准则"
@@ -1568,7 +1568,7 @@
         ]
     },
     {
-        "name": "ease",
+        "name": "lease",
         "ukphone": "li:s",
         "trans": [
             "v.&n . 租赁"
@@ -2086,7 +2086,7 @@
         ]
     },
     {
-        "name": "en",
+        "name": "ten",
         "ukphone": "ten",
         "trans": [
             "num.十， 十个"
@@ -2170,14 +2170,14 @@
         ]
     },
     {
-        "name": "omorrow",
+        "name": "tomorrow",
         "ukphone": "tə'mɒrəʊ",
         "trans": [
             "adv.在明天； n . 明天， 未来"
         ]
     },
     {
-        "name": "oo",
+        "name": "too",
         "ukphone": "tu:",
         "trans": [
             "adv.也"
@@ -2191,7 +2191,7 @@
         ]
     },
     {
-        "name": "ree",
+        "name": "tree",
         "ukphone": "triː",
         "trans": [
             "n .树"
@@ -2219,14 +2219,14 @@
         ]
     },
     {
-        "name": "wo",
+        "name": "two",
         "ukphone": "tu:",
         "trans": [
             "n . 两个； adj. 两个的； num. 二"
         ]
     },
     {
-        "name": "ype",
+        "name": "type",
         "ukphone": "taɪp",
         "trans": [
             "n . 类型，典型，模范；v.打字"
@@ -2695,7 +2695,7 @@
         ]
     },
     {
-        "name": "orn",
+        "name": "born",
         "ukphone": "bɔːrn",
         "trans": [
             "v.  出生； 出现 (bear 的过去分词) ; adj. 天生的"
@@ -2709,7 +2709,7 @@
         ]
     },
     {
-        "name": "ecome",
+        "name": "become",
         "ukphone": "bɪ'kʌm",
         "trans": [
             "v. 变为，成为"
@@ -2800,7 +2800,7 @@
         ]
     },
     {
-        "name": "rave",
+        "name": "brave",
         "ukphone": "breɪv",
         "trans": [
             "adj. 勇敢的"
@@ -2835,7 +2835,7 @@
         ]
     },
     {
-        "name": "uy",
+        "name": "buy",
         "ukphone": "baɪ",
         "trans": [
             "vt .&vi.购买"
@@ -3164,14 +3164,14 @@
         ]
     },
     {
-        "name": "amage",
+        "name": "damage",
         "ukphone": "dæmɪdʒ",
         "trans": [
             "n .损害，伤害；v.损害"
         ]
     },
     {
-        "name": "ance",
+        "name": "dance",
         "ukphone": "dɑːns",
         "trans": [
             "n .舞蹈，舞曲；v.跳舞，舞蹈"
@@ -3199,7 +3199,7 @@
         ]
     },
     {
-        "name": "ay",
+        "name": "day",
         "ukphone": "deɪ",
         "trans": [
             "n .一天"
@@ -3339,21 +3339,21 @@
         ]
     },
     {
-        "name": "own",
+        "name": "down",
         "ukphone": "daʊn",
         "trans": [
             "adj. 向下的； adv. 向下； prep .往下"
         ]
     },
     {
-        "name": "raw",
+        "name": "draw",
         "ukphone": "drɔ:",
         "trans": [
             "vt . 画，绘制； 吸引"
         ]
     },
     {
-        "name": "ream",
+        "name": "dream",
         "ukphone": "dri:m",
         "trans": [
             "v.做梦， 梦见； n . 梦， 梦想"
@@ -3374,14 +3374,14 @@
         ]
     },
     {
-        "name": "rop",
+        "name": "drop",
         "ukphone": "drɒp",
         "trans": [
             "v. 滴下， 落下，使(价格等)下降；  n . 落下， 滴， 滴剂"
         ]
     },
     {
-        "name": "ry",
+        "name": "dry",
         "ukphone": "draɪ",
         "trans": [
             "adj.干的， 干燥的；vt . 使干燥 ，使变干"
@@ -3570,7 +3570,7 @@
         ]
     },
     {
-        "name": "ace",
+        "name": "face",
         "ukphone": "feɪs",
         "trans": [
             "n .脸， 面容；vt . 面对， 面向， 面临 ；vi.朝 向"
@@ -3626,21 +3626,21 @@
         ]
     },
     {
-        "name": "amous",
+        "name": "famous",
         "ukphone": "feɪməs",
         "trans": [
             "adj.著名的，  出名的"
         ]
     },
     {
-        "name": "ar",
+        "name": "far",
         "ukphone": "fɑ:",
         "trans": [
             "adj. 远的，久远的； adv. 远地，  久远地"
         ]
     },
     {
-        "name": "arm",
+        "name": "farm",
         "ukphone": "fɑ:m",
         "trans": [
             "vi.种田；  n .农场；farmer n .农夫，农民，农场主"
@@ -3675,7 +3675,7 @@
         ]
     },
     {
-        "name": "ear",
+        "name": "fear",
         "ukphone": "fɪə",
         "trans": [
             "n . 恐怖， 害怕，担心；v. 为...担心"
@@ -3696,7 +3696,7 @@
         ]
     },
     {
-        "name": "ew",
+        "name": "few",
         "ukphone": "fju:",
         "trans": [
             "adj.几乎没有的； pron .很少"
@@ -3766,7 +3766,7 @@
         ]
     },
     {
-        "name": "ocus",
+        "name": "focus",
         "ukphone": "fəʊkəs",
         "trans": [
             "n . 中心，焦点；v.聚焦，使集中"
@@ -3808,7 +3808,7 @@
         ]
     },
     {
-        "name": "ree",
+        "name": "free",
         "ukphone": "fri:",
         "trans": [
             "adj. 自由的，免费的， 空闲的；vt .释放，使自由；adv. 自由地，免费"
@@ -3843,7 +3843,7 @@
         ]
     },
     {
-        "name": "un",
+        "name": "fun",
         "ukphone": "fʌn",
         "trans": [
             "n . 乐趣，玩笑；funny adj.有趣的，好笑的， 滑稽的； n .滑稽人物"
@@ -3948,14 +3948,14 @@
         ]
     },
     {
-        "name": "appen",
+        "name": "happen",
         "ukphone": "hæpən",
         "trans": [
             "v. 发生，恰巧，偶然发现"
         ]
     },
     {
-        "name": "appy",
+        "name": "happy",
         "ukphone": "hæpi",
         "trans": [
             "adj.快乐的，幸福的； happiness n .幸福"
@@ -3969,7 +3969,7 @@
         ]
     },
     {
-        "name": "arm",
+        "name": "harm",
         "ukphone": "hɑ:m",
         "trans": [
             "vt .伤害，损害； n .伤害，损害； harmfu l adj.有害的，伤害的"
@@ -3983,7 +3983,7 @@
         ]
     },
     {
-        "name": "ave",
+        "name": "have",
         "ukphone": "hæv",
         "trans": [
             "vt .有,持有"
@@ -3997,14 +3997,14 @@
         ]
     },
     {
-        "name": "ear",
+        "name": "hear",
         "ukphone": "hɪə",
         "trans": [
             "v.听到，听说； 过去式&过去分词 heard"
         ]
     },
     {
-        "name": "eavy",
+        "name": "heavy",
         "ukphone": "hevi",
         "trans": [
             "adj.重的，繁重的，  巨大的，沉重的 ；adv. 笨重地， 大量地"
@@ -4053,35 +4053,35 @@
         ]
     },
     {
-        "name": "ome",
+        "name": "home",
         "ukphone": "həʊm",
         "trans": [
             "n . 家，住宅"
         ]
     },
     {
-        "name": "ope",
+        "name": "hope",
         "ukphone": "həʊp",
         "trans": [
             "n .希望，信心；v.希望， 盼望，期待"
         ]
     },
     {
-        "name": "owever",
+        "name": "however",
         "ukphone": "haʊ'evə",
         "trans": [
             "adv.无论如何，仍然；  conj.不管用何种方法， 然而"
         ]
     },
     {
-        "name": "uge",
+        "name": "huge",
         "ukphone": "hju:dʒ",
         "trans": [
             "adj. 巨大的，极大的"
         ]
     },
     {
-        "name": "uman",
+        "name": "human",
         "ukphone": "hju:mən",
         "trans": [
             "n .人，人类； adj.人类的，人性的"
@@ -4123,14 +4123,14 @@
         ]
     },
     {
-        "name": "mpress",
+        "name": "impress",
         "ukphone": "ɪmˈpres",
         "trans": [
             "vt .给… 以深刻印象；<名词> impression n . 印象，感想； impressive adj.给人深刻印象的，感人的"
         ]
     },
     {
-        "name": "mprove",
+        "name": "improve",
         "ukphone": "ɪm'pru:v",
         "trans": [
             "v. 改善， 改进；  improvement n . 改进，进步"
@@ -4158,7 +4158,7 @@
         ]
     },
     {
-        "name": "insteadof",
+        "name": "instead of",
         "ukphone": "ɪnˈstedəv",
         "trans": [
             "<固定词组> instead of 代替； 而不是…"
@@ -4221,21 +4221,21 @@
         ]
     },
     {
-        "name": "ump",
+        "name": "jump",
         "ukphone": "dʒʌmp",
         "trans": [
             "n .跳跃，上涨 ；vt .跳跃，跃过，使跳跃；vi.跳跃"
         ]
     },
     {
-        "name": "eep",
+        "name": "keep",
         "ukphone": "ki:p",
         "trans": [
             "v. (使)保持"
         ]
     },
     {
-        "name": "ey",
+        "name": "key",
         "ukphone": "ki:",
         "trans": [
             "n .钥匙， 关键"
@@ -4256,7 +4256,7 @@
         ]
     },
     {
-        "name": "now",
+        "name": "know",
         "ukphone": "nəʊ",
         "trans": [
             "v.知道"
@@ -4291,14 +4291,14 @@
         ]
     },
     {
-        "name": "anguage",
+        "name": "language",
         "ukphone": "læŋɡwɪdʒ",
         "trans": [
             "n .语言，语言文学"
         ]
     },
     {
-        "name": "arge",
+        "name": "large",
         "ukphone": "lɑ:dʒ",
         "trans": [
             "adj. 大的，  巨大的 ；adv. 大大地，夸大地"
@@ -4319,21 +4319,21 @@
         ]
     },
     {
-        "name": "earn",
+        "name": "learn",
         "ukphone": "lɜ:n",
         "trans": [
             "v. 学习；<衍生词> learning n . 学习；  learner n . 学习的人"
         ]
     },
     {
-        "name": "eave",
+        "name": "leave",
         "ukphone": "li:v",
         "trans": [
             "v. 离开，  出发，  留下"
         ]
     },
     {
-        "name": "esson",
+        "name": "lesson",
         "ukphone": "lesən",
         "trans": [
             "n .课程，教训"
@@ -4410,7 +4410,7 @@
         ]
     },
     {
-        "name": "ong",
+        "name": "long",
         "ukphone": "lɒŋ",
         "trans": [
             "adj.长的"
@@ -4424,21 +4424,21 @@
         ]
     },
     {
-        "name": "ose",
+        "name": "lose",
         "ukphone": "lu:z",
         "trans": [
             "vt .遗失， 浪费，使失去，使迷路；vi. 受损失，失败"
         ]
     },
     {
-        "name": "ove",
+        "name": "love",
         "ukphone": "lʌv",
         "trans": [
             "n . 爱情；vt .喜爱"
         ]
     },
     {
-        "name": "ow",
+        "name": "low",
         "ukphone": "ləʊ",
         "trans": [
             "n .低，低价； adj.低的， 浅的"
@@ -5866,7 +5866,7 @@
         ]
     },
     {
-        "name": "eam",
+        "name": "team",
         "ukphone": "ti:m",
         "trans": [
             "n . 队"
@@ -5880,7 +5880,7 @@
         ]
     },
     {
-        "name": "eenager",
+        "name": "teenager",
         "ukphone": "ˈti:nˌeɪdʒə",
         "trans": [
             "n .青少年"
@@ -5894,7 +5894,7 @@
         ]
     },
     {
-        "name": "erm",
+        "name": "term",
         "ukphone": "tɜ:m",
         "trans": [
             "n . 学期，条款"
@@ -5964,7 +5964,7 @@
         ]
     },
     {
-        "name": "op",
+        "name": "top",
         "ukphone": "tɒp",
         "trans": [
             "n .顶部； adj. 最高的，顶上的， 头等的；"
@@ -6013,14 +6013,14 @@
         ]
     },
     {
-        "name": "ry",
+        "name": "try",
         "ukphone": "traɪ",
         "trans": [
             "v.&n . 试图，努力"
         ]
     },
     {
-        "name": "urn",
+        "name": "turn",
         "ukphone": "tɜ:n",
         "trans": [
             "n . 转动；v. 使转动"
@@ -6566,7 +6566,7 @@
         ]
     },
     {
-        "name": "ar",
+        "name": "bar",
         "ukphone": "bɑ:",
         "trans": [
             "n . 酒吧"
@@ -6643,7 +6643,7 @@
         ]
     },
     {
-        "name": "eer",
+        "name": "beer",
         "ukphone": "bɪə",
         "trans": [
             "n .啤酒"
@@ -6720,7 +6720,7 @@
         ]
     },
     {
-        "name": "ore",
+        "name": "bore",
         "ukphone": "bɔ:",
         "trans": [
             "n .孔；v.钻孔，钻孔"
@@ -7259,7 +7259,7 @@
         ]
     },
     {
-        "name": "are",
+        "name": "dare",
         "ukphone": "deə",
         "trans": [
             "n .挑战；v.敢，胆敢"
@@ -7301,7 +7301,7 @@
         ]
     },
     {
-        "name": "ecrease",
+        "name": "decrease",
         "ukphone": "dɪ'kri:s",
         "trans": [
             "n .减少 ；v.减少；<衍生词> increase v.&n . 增加"
@@ -7315,7 +7315,7 @@
         ]
     },
     {
-        "name": "eepen",
+        "name": "deepen",
         "ukphone": "di:pən",
         "trans": [
             "v.加深， 深化"
@@ -7350,7 +7350,7 @@
         ]
     },
     {
-        "name": "egree",
+        "name": "degree",
         "ukphone": "dɪ'ɡri:",
         "trans": [
             "n .度 ，程度， 学位"
@@ -7385,21 +7385,21 @@
         ]
     },
     {
-        "name": "eny",
+        "name": "deny",
         "ukphone": "dɪ'naɪ",
         "trans": [
             "v.否认，拒绝；<衍生词> denial  n .否认，否定，拒绝"
         ]
     },
     {
-        "name": "epress",
+        "name": "depress",
         "ukphone": "dɪ'pres",
         "trans": [
             "vt .使沮丧，使萧条；<衍生词> depression n . 沮丧，低迷"
         ]
     },
     {
-        "name": "eserve",
+        "name": "deserve",
         "ukphone": "dɪ'zɜ:v",
         "trans": [
             "vt .值得；v.应受"
@@ -7574,14 +7574,14 @@
         ]
     },
     {
-        "name": "rug",
+        "name": "drug",
         "ukphone": "drʌɡ",
         "trans": [
             "n . 药，毒品"
         ]
     },
     {
-        "name": "dueto",
+        "name": "due to",
         "ukphone": "dju:tuː",
         "trans": [
             "prep . 由于；应归于"
@@ -7903,7 +7903,7 @@
         ]
     },
     {
-        "name": "ame",
+        "name": "fame",
         "ukphone": "feɪm",
         "trans": [
             "n .名声，名望"
@@ -7924,7 +7924,7 @@
         ]
     },
     {
-        "name": "avor",
+        "name": "favor",
         "ukphone": "feɪvə",
         "trans": [
             "n .好感，喜爱；vt . 支持 ， 赞成，喜欢"
@@ -7938,7 +7938,7 @@
         ]
     },
     {
-        "name": "ee",
+        "name": "fee",
         "ukphone": "fi:",
         "trans": [
             "n . 费， 学费"
@@ -7973,7 +7973,7 @@
         ]
     },
     {
-        "name": "ever",
+        "name": "fever",
         "ukphone": "fi:və",
         "trans": [
             "n .发烧， 发热；v. 使发烧，使狂热"
@@ -8064,28 +8064,28 @@
         ]
     },
     {
-        "name": "orce",
+        "name": "force",
         "ukphone": "fɔ:s",
         "trans": [
             "n .力量，武力；vt . 强制， 用武力，促使"
         ]
     },
     {
-        "name": "orever",
+        "name": "forever",
         "ukphone": "fərˈevər",
         "trans": [
             "adv.永远，永恒，永久"
         ]
     },
     {
-        "name": "orm",
+        "name": "form",
         "ukphone": "fɔ:m",
         "trans": [
             "n .形状 形态外形 表格 形式v.形成 构成 排列 使 组成"
         ]
     },
     {
-        "name": "ormer",
+        "name": "former",
         "ukphone": "fɔ:mə",
         "trans": [
             "adj.从前的，  以前的； n .创造者，模型，样板"
@@ -8113,7 +8113,7 @@
         ]
     },
     {
-        "name": "rame",
+        "name": "frame",
         "ukphone": "freɪm",
         "trans": [
             "n .结构，框架；vt .构成，设计，制定"
@@ -8141,7 +8141,7 @@
         ]
     },
     {
-        "name": "rown",
+        "name": "frown",
         "ukphone": "fraʊn",
         "trans": [
             "vi.皱眉，不赞成；v.皱眉"
@@ -8428,7 +8428,7 @@
         ]
     },
     {
-        "name": "ang",
+        "name": "hang",
         "ukphone": "hæŋ",
         "trans": [
             "n . 悬挂；vt . 悬挂， 垂下；vi. 悬着， 垂下，被绞死"
@@ -8470,7 +8470,7 @@
         ]
     },
     {
-        "name": "ero",
+        "name": "hero",
         "ukphone": "hɪərəʊ",
         "trans": [
             "n . 英雄"
@@ -8540,7 +8540,7 @@
         ]
     },
     {
-        "name": "oney",
+        "name": "honey",
         "ukphone": "hʌnɪ",
         "trans": [
             "n . 蜂 蜜，蜂蜜"
@@ -8582,14 +8582,14 @@
         ]
     },
     {
-        "name": "umor",
+        "name": "humor",
         "ukphone": "ˈhjuːmə",
         "trans": [
             "n . 幽默，诙谐"
         ]
     },
     {
-        "name": "urry",
+        "name": "hurry",
         "ukphone": "hʌri",
         "trans": [
             "v. 急速， 匆忙； n . 匆忙，仓促"
@@ -8603,7 +8603,7 @@
         ]
     },
     {
-        "name": "ce",
+        "name": "ice",
         "ukphone": "aɪs",
         "trans": [
             "n .冰；vt .冰冻 ；vi.结冰"
@@ -8624,7 +8624,7 @@
         ]
     },
     {
-        "name": "gnore",
+        "name": "ignore",
         "ukphone": "ɪɡ'nɔː",
         "trans": [
             "vt .不理睬， 忽视"
@@ -8638,7 +8638,7 @@
         ]
     },
     {
-        "name": "mage",
+        "name": "image",
         "ukphone": "ɪmɪdʒ",
         "trans": [
             "n . 图象，  肖像；vt . 想象，作... 的像"
@@ -8701,7 +8701,7 @@
         ]
     },
     {
-        "name": "ncrease",
+        "name": "increase",
         "ukphone": "ɪn'kriːs",
         "trans": [
             "n .增加，增大，增长；v.增加 ，加大"
@@ -8771,7 +8771,7 @@
         ]
     },
     {
-        "name": "nn",
+        "name": "inn",
         "ukphone": "ɪn",
         "trans": [
             "n . 旅馆"
@@ -8883,7 +8883,7 @@
         ]
     },
     {
-        "name": "ssue",
+        "name": "issue",
         "ukphone": "ɪsju:",
         "trans": [
             "n . 问题，结果；vt .使流出， 发行"
@@ -8904,7 +8904,7 @@
         ]
     },
     {
-        "name": "am",
+        "name": "jam",
         "ukphone": "dʒæm",
         "trans": [
             "n .果酱，拥挤，堵塞"
@@ -8918,7 +8918,7 @@
         ]
     },
     {
-        "name": "og",
+        "name": "jog",
         "ukphone": "dʒɒɡ",
         "trans": [
             "v.慢跑"
@@ -8932,14 +8932,14 @@
         ]
     },
     {
-        "name": "ourney",
+        "name": "journey",
         "ukphone": "ˈdʒɜ:ni",
         "trans": [
             "n .旅行 旅程；v.旅行"
         ]
     },
     {
-        "name": "oy",
+        "name": "joy",
         "ukphone": "dʒɔɪ",
         "trans": [
             "n .欢乐，喜悦，  乐事，  乐趣"
@@ -9030,7 +9030,7 @@
         ]
     },
     {
-        "name": "azy",
+        "name": "lazy",
         "ukphone": "leɪzi",
         "trans": [
             "adj.懒惰的，懒散的"
@@ -9058,7 +9058,7 @@
         ]
     },
     {
-        "name": "eg",
+        "name": "leg",
         "ukphone": "leɡ",
         "trans": [
             "n .腿"
@@ -9149,7 +9149,7 @@
         ]
     },
     {
-        "name": "oan",
+        "name": "loan",
         "ukphone": "ləʊn",
         "trans": [
             "n . 贷款，借出；v.借，借给"
@@ -9163,14 +9163,14 @@
         ]
     },
     {
-        "name": "one",
+        "name": "lone",
         "ukphone": "ləʊn",
         "trans": [
             "adj.孤独的，独立的"
         ]
     },
     {
-        "name": "oss",
+        "name": "loss",
         "ukphone": "lɒs",
         "trans": [
             "n .损失，失败， 浪费"
@@ -9205,7 +9205,7 @@
         ]
     },
     {
-        "name": "ung",
+        "name": "lung",
         "ukphone": "lʌŋ",
         "trans": [
             "n .肺"
@@ -11795,7 +11795,7 @@
         ]
     },
     {
-        "name": "ear",
+        "name": "tear",
         "ukphone": "teə",
         "trans": [
             "n . 眼泪，撕扯；vi.撕破"
@@ -11949,7 +11949,7 @@
         ]
     },
     {
-        "name": "oe",
+        "name": "toe",
         "ukphone": "təʊ",
         "trans": [
             "n .趾，脚趾；vt . 用脚尖走"
@@ -11977,14 +11977,14 @@
         ]
     },
     {
-        "name": "one",
+        "name": "tone",
         "ukphone": "təʊn",
         "trans": [
             "n .语调，音色，语气；  vt .调和，增强"
         ]
     },
     {
-        "name": "ongue",
+        "name": "tongue",
         "ukphone": "tʌŋ",
         "trans": [
             "n .舌头，语言 ；vt . 舔， 斥责"
@@ -12033,7 +12033,7 @@
         ]
     },
     {
-        "name": "our",
+        "name": "tour",
         "ukphone": "tʊə",
         "trans": [
             "n .旅行，旅游；v.旅行，游历"
@@ -12054,14 +12054,14 @@
         ]
     },
     {
-        "name": "own",
+        "name": "town",
         "ukphone": "taʊn",
         "trans": [
             "n .市镇，城镇"
         ]
     },
     {
-        "name": "oy",
+        "name": "toy",
         "ukphone": "tɔɪ",
         "trans": [
             "n .玩具"
@@ -12096,7 +12096,7 @@
         ]
     },
     {
-        "name": "rap",
+        "name": "trap",
         "ukphone": "træp",
         "trans": [
             "n . 圈套， 陷阱 ；vi.设圈套，设陷阱；vt .诱捕，诱骗，设陷"
