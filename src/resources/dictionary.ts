@@ -630,7 +630,7 @@ const internationalExam: DictionaryResource[] = [
     category: '国际考试',
     tags: ['IELTS'],
     url: '/dicts/IELTSVocabularyBible.json',
-    length: 3672,
+    length: 3676,
     language: 'en',
     languageCategory: 'en',
   },
