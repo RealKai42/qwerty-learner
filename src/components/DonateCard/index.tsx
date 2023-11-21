@@ -69,7 +69,7 @@ export const DonateCard = () => {
       const date = dayjs(storedDate)
       const now = dayjs()
       const diff = now.diff(date, 'day')
-      if (!storedDate || diff > 30) {
+      if (!storedDate || diff > 60) {
         setShow(true)
       }
     }
