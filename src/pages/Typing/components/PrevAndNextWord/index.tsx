@@ -1,6 +1,6 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
-import { wordDictationConfigAtom, currentDictInfoAtom } from '@/store'
+import { currentDictInfoAtom, wordDictationConfigAtom } from '@/store'
 import { CTRL } from '@/utils'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
