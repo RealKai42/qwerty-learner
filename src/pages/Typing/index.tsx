@@ -14,7 +14,7 @@ import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, isInRevisionModeAtom, randomConfigAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
@@ -33,6 +33,7 @@ const App: React.FC = () => {
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+  const isRevision = useAtomValue(isInRevisionModeAtom)
 
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
   const saveChapterRecord = useSaveChapterRecord()
@@ -134,7 +135,7 @@ const App: React.FC = () => {
               className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
               to="/gallery"
             >
-              {currentDictInfo.name} 第 {currentChapter + 1} 章
+              {currentDictInfo.name} {isRevision && '错题练习'} 第 {currentChapter + 1} 章
             </NavLink>
           </Tooltip>
           <PronunciationSwitcher />

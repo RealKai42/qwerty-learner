@@ -76,6 +76,8 @@ export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', tr
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
+export const isInRevisionModeAtom = atomWithStorage('isInRevisionMode', false)
+
 export const phoneticConfigAtom = atomForConfig('phoneticConfig', {
   isOpen: true,
   type: 'us' as PhoneticType,

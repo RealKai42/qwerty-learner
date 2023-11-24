@@ -5,7 +5,16 @@ import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import styles from './index.module.css'
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom, infoPanelStateAtom, randomConfigAtom, wordDictationConfigAtom } from '@/store'
+import { useRevisionChapterCount } from '@/pages/Gallery-N/hooks/useRevisionChapterCount'
+import {
+  currentChapterAtom,
+  currentDictIdAtom,
+  currentDictInfoAtom,
+  infoPanelStateAtom,
+  isInRevisionModeAtom,
+  randomConfigAtom,
+  wordDictationConfigAtom,
+} from '@/store'
 import type { InfoPanelType } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
 import { Transition } from '@headlessui/react'
@@ -25,9 +34,12 @@ const ResultScreen = () => {
 
   const setWordDictationConfig = useSetAtom(wordDictationConfigAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const currentDictId = useAtomValue(currentDictIdAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+  const isRevisionMode = useAtomValue(isInRevisionModeAtom)
+  const revisionChapterCount = useRevisionChapterCount(currentDictId, isRevisionMode)
 
   useEffect(() => {
     // tick a zero timer to calc the stats
@@ -70,8 +82,8 @@ const ResultScreen = () => {
   }, [state.chapterData.userInputLogs, state.chapterData.words])
 
   const isLastChapter = useMemo(() => {
-    return currentChapter >= currentDictInfo.chapterCount - 1
-  }, [currentChapter, currentDictInfo])
+    return isRevisionMode ? revisionChapterCount === currentChapter + 1 : currentChapter >= currentDictInfo.chapterCount - 1
+  }, [currentChapter, currentDictInfo, isRevisionMode, revisionChapterCount])
 
   const correctRate = useMemo(() => {
     const chapterLength = state.chapterData.words.length
