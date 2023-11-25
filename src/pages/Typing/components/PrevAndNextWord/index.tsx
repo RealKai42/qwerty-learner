@@ -16,7 +16,6 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   const word = state.chapterData.words[newIndex]
   const shortCutKey = useMemo(() => (type === 'prev' ? `${CTRL} + Shift + ArrowLeft` : `${CTRL} + Shift + ArrowRight`), [type])
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
-  console.log('word', word)
 
   const onClickWord = useCallback(() => {
     if (!word) return
@@ -33,9 +32,9 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
     if (type === 'prev') return showWord
 
     if (type === 'next') {
-      return !wordDictationConfig.isOpen ? showWord : showWord!.replace(/./g, '_')
+      return !wordDictationConfig.isOpen ? showWord : (showWord || '').replace(/./g, '_')
     }
-  }, [wordDictationConfig.isOpen, type, word])
+  }, [word, currentLanguage, type, wordDictationConfig.isOpen])
 
   return (
     <>
