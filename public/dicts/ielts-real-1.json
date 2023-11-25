@@ -1,0 +1,4424 @@
+[
+  {
+    "name": "abate",
+    "trans": [
+      "vt. 减少, 减轻；废除; vi. 减少, 失效; n. 人名；阿巴特 时 态: abated, abating, abates"
+    ]
+  },
+  {
+    "name": "abide",
+    "trans": [
+      "vt. 容忍, 忍受; 等候; vi. 逗留, 居住 时 态: abode , abided abiding, abides"
+    ]
+  },
+  {
+    "name": "abject",
+    "trans": [
+      "adj. 凄惨的;绝望的; 糟透的，蹩脚的; 卑鄙的，卑劣的; 卑躬屈膝的，奴性的; n. 弃儿; adv. 凄惨地;绝望地；糟透地，蹩脚地; n. 凄惨;绝望；卑鄙，卑劣; n. 凄惨;绝..."
+    ]
+  },
+  {
+    "name": "abnormal",
+    "trans": [
+      "adj. 反常的，异常的；变态的副 词: abnormally"
+    ]
+  },
+  {
+    "name": "abolish",
+    "trans": [
+      "vt. 废除, 废止时 态: abolished, abolishing, abolishes 形容词: abolishable 名 词: abolisher 名 ..."
+    ]
+  },
+  {
+    "name": "absolute",
+    "trans": [
+      "adj. 绝对的；完全的；专制的; n. 绝对事物；绝对 名 词: absoluteness"
+    ]
+  },
+  {
+    "name": "absurdity",
+    "trans": [
+      "n. 极端无理性,悖理；荒谬; 谬论；荒谬的行为"
+    ]
+  },
+  {
+    "name": "accentuate",
+    "trans": [
+      "vt. 使突出；强调; 重读，以重音读出; 加重音符号于; 使恶化，使严重 时 态: accentuated, accentuating, accentuates 名 词: ..."
+    ]
+  },
+  {
+    "name": "acclaim",
+    "trans": [
+      "vt. 向…欢呼，向…喝彩; 称赞…; 欢呼或拥戴为…; n. 热烈欢迎或赞同；称赞 时 态: acclaimed，acclaiming，acclaims"
+    ]
+  },
+  {
+    "name": "acclimatise",
+    "trans": [
+      "vi. & vt. 服水土,适应新气候或环境"
+    ]
+  },
+  {
+    "name": "accrue",
+    "trans": [
+      "vi. 自然增长或利益增加；产生; vt. 积累；获得 时 态: accrued, accruing, accrues 名 词: accruement"
+    ]
+  },
+  {
+    "name": "accuse",
+    "trans": [
+      "v. 控告；控诉；谴责；归咎于 时 态: accused，accusing，accuses 名 词: accuser 副 词: accusingly"
+    ]
+  },
+  {
+    "name": "achievable",
+    "trans": [
+      "adj. 做得成的,可完成的,可有成就的"
+    ]
+  },
+  {
+    "name": "acrobatic",
+    "trans": [
+      "adj. 杂技的，杂技般的，杂技演员的"
+    ]
+  },
+  {
+    "name": "adjoin",
+    "trans": [
+      "vi. 毗连，邻接; vt. 毗连，邻接 时 态: adjoined, adjoining, adjoins"
+    ]
+  },
+  {
+    "name": "adolescence",
+    "trans": [
+      "n. 青春期"
+    ]
+  },
+  {
+    "name": "adornment",
+    "trans": [
+      "n. 装饰,装饰品"
+    ]
+  },
+  {
+    "name": "aeration",
+    "trans": [
+      "n. 通风；充气；曝气"
+    ]
+  },
+  {
+    "name": "aerobics",
+    "trans": [
+      "n. 有氧健身法,健美操"
+    ]
+  },
+  {
+    "name": "aeronautical",
+    "trans": [
+      "adj. 航空学的"
+    ]
+  },
+  {
+    "name": "affiliation",
+    "trans": [
+      "n. 联系;从属关系; 附属机构，隶属机构，分公司，分会，分部; 接纳，入会，交往，社会交际关系; 亲和性，群聚性; 亲父鉴定"
+    ]
+  },
+  {
+    "name": "afflict",
+    "trans": [
+      "vt. 折磨；使痛苦；使苦恼 时 态: afflicted, afflicting, afflicts 形容词: afflictive"
+    ]
+  },
+  {
+    "name": "affluent",
+    "trans": [
+      "adj. 富裕的；丰富的；流畅的; n. 支流；富人 副 词: affluently"
+    ]
+  },
+  {
+    "name": "afield",
+    "trans": [
+      "adv. 在战场上；去野外；在远处；远离著"
+    ]
+  },
+  {
+    "name": "aggravate",
+    "trans": [
+      "vt. 使恶化, 使更严重; 激怒, 使恼火 时 态: aggravated, aggravating, aggravates 名 词: aggravator"
+    ]
+  },
+  {
+    "name": "agreeable",
+    "trans": [
+      "adj. 欣然同意的; 令人愉快的, 惬意的 副 词: agreeably"
+    ]
+  },
+  {
+    "name": "airy",
+    "trans": [
+      "adj. 空气的；大气的; 空中的；高耸入云的; 通风的，空气新鲜的; 虚幻的；出于空想的; 轻而薄的; 轻快的；优美的; 快活的；欢乐的; 做作的；高傲的; 轻率的 比较级: air..."
+    ]
+  },
+  {
+    "name": "align",
+    "trans": [
+      "vt. 使结盟；使成一行；匹配; vi. 排列；排成一行 时 态: aligned also alined aligning alining aligns alines 名 ..."
+    ]
+  },
+  {
+    "name": "alleged",
+    "trans": [
+      "adj. 声称的,所谓的副 词: allegedly"
+    ]
+  },
+  {
+    "name": "allowance",
+    "trans": [
+      "n. 津贴, 补助, 零用钱时 态: allowanced, allowancing, allowances"
+    ]
+  },
+  {
+    "name": "alpine",
+    "trans": [
+      "adj. 阿尔卑斯山的，高山的 Alpineadj. 阿尔卑斯山的;阿尔卑斯山区居民的; 具有阿尔卑斯山人种特征的; 高山的"
+    ]
+  },
+  {
+    "name": "altruistic",
+    "trans": [
+      "adj. 利他的,无私心的"
+    ]
+  },
+  {
+    "name": "ambassador",
+    "trans": [
+      "n. 大使, 使节形容词: ambassadorial 名 词: ambassadorship"
+    ]
+  },
+  {
+    "name": "amidst",
+    "trans": [
+      "prep. 在…当中"
+    ]
+  },
+  {
+    "name": "amphibious",
+    "trans": [
+      "adj. 两栖的, 水陆两用的; 两栖作战的; 具有双重性的"
+    ]
+  },
+  {
+    "name": "amplifier",
+    "trans": [
+      "n. 扩音器, 放大器; 扩大的人；详述者"
+    ]
+  },
+  {
+    "name": "amplify",
+    "trans": [
+      "vt. 放大, 扩大; 增强; vt. & vi. 详述 时 态: amplified, amplifying, amplifies"
+    ]
+  },
+  {
+    "name": "anatomist",
+    "trans": [
+      "n. 解剖学家,剖析者"
+    ]
+  },
+  {
+    "name": "animate",
+    "trans": [
+      "v. 使具活力；使生气勃勃; 把…制作成动画片; adj. 有生命的；有活力的；有生气的 时 态: animated, animating, animates"
+    ]
+  },
+  {
+    "name": "anniversary",
+    "trans": [
+      "n. 周年纪念"
+    ]
+  },
+  {
+    "name": "antenna",
+    "trans": [
+      "n. 天线；触角，触须 Antennan. antenae 触角形容词: antennal"
+    ]
+  },
+  {
+    "name": "apace",
+    "trans": [
+      "adv. 急速地；飞快地，迅速地"
+    ]
+  },
+  {
+    "name": "appalling",
+    "trans": [
+      "adj. 骇人听闻的; 极糟的, 很严重的 副 词: appallingly"
+    ]
+  },
+  {
+    "name": "apparatus",
+    "trans": [
+      "n. 运动器械, 器具, 仪器; 机构, 组织; 器官"
+    ]
+  },
+  {
+    "name": "apportion",
+    "trans": [
+      "vt. 分摊, 分配时 态: apportioned, apportioning, apportions"
+    ]
+  },
+  {
+    "name": "apprehensive",
+    "trans": [
+      "adj. 不安的；害怕的；担心的；恐惧的；焦虑的; 善于领会的；敏悟的; 知晓的，有认识力的 副 词: apprehensively"
+    ]
+  },
+  {
+    "name": "aquarium",
+    "trans": [
+      "n. 养鱼缸, 水族馆复 数: aquaria"
+    ]
+  },
+  {
+    "name": "arable",
+    "trans": [
+      "adj. 适于耕种的; n. 耕地 名 词: arability"
+    ]
+  },
+  {
+    "name": "arduous",
+    "trans": [
+      "adj. 费力的；努力的；险峻的 副 词: arduously 名 词: arduousness"
+    ]
+  },
+  {
+    "name": "arena",
+    "trans": [
+      "n. 竞技场；舞台"
+    ]
+  },
+  {
+    "name": "ascribe",
+    "trans": [
+      "vt. 把…归于时 态: ascribed, ascribing, ascribes"
+    ]
+  },
+  {
+    "name": "ashamed",
+    "trans": [
+      "adj. 惭愧的，感到难为情的；耻于……的"
+    ]
+  },
+  {
+    "name": "assimilation",
+    "trans": [
+      "n. 吸收；消化; 吸收或同化的过程"
+    ]
+  },
+  {
+    "name": "assortment",
+    "trans": [
+      "n. 分类；各类物品或同类各种物品的聚集；混合物"
+    ]
+  },
+  {
+    "name": "astound",
+    "trans": [
+      "vt. 使惊骇；使震惊 时 态: astounded, astounding, astounds"
+    ]
+  },
+  {
+    "name": "astray",
+    "trans": [
+      "adv. 迷途地；迷路；误入歧途地; adj. 离开正道的；不对头的；迷路的 形容词: astray"
+    ]
+  },
+  {
+    "name": "atom",
+    "trans": [
+      "n. 原子"
+    ]
+  },
+  {
+    "name": "attendance",
+    "trans": [
+      "n. 出席, 参加, 出席次数; 出席人数"
+    ]
+  },
+  {
+    "name": "audio-visual",
+    "trans": [
+      "adj. 视听的; 视听教学的"
+    ]
+  },
+  {
+    "name": "autocratic",
+    "trans": [
+      "adj. 独裁的,专制的; 专横的"
+    ]
+  },
+  {
+    "name": "automobile",
+    "trans": [
+      "n. 〈美〉汽车名 词: automobilist"
+    ]
+  },
+  {
+    "name": "avid",
+    "trans": [
+      "adj. 渴望的，贪婪的；热心的 副 词: avidly"
+    ]
+  },
+  {
+    "name": "await",
+    "trans": [
+      "vt. 等候，等待；期待 时 态: awaited, awaiting, awaits"
+    ]
+  },
+  {
+    "name": "awkward",
+    "trans": [
+      "adj. 笨拙的；尴尬的；棘手的；不合适的 副 词: awkwardly 名 词: awkwardness"
+    ]
+  },
+  {
+    "name": "babyish",
+    "trans": [
+      "adj. 婴儿的;婴儿般的;稚气的; 幼稚的;稚气的"
+    ]
+  },
+  {
+    "name": "bachelor",
+    "trans": [
+      "n. 单身男子，单身汉; 学士；学士学位"
+    ]
+  },
+  {
+    "name": "backlash",
+    "trans": [
+      "n. 强烈反应，对抗性反应; 后冲，反撞；后坐力 动 词: backlash"
+    ]
+  },
+  {
+    "name": "backup",
+    "trans": [
+      "n. 支持；后援；阻塞; adj. 候补的；支持的; vt. 做备份"
+    ]
+  },
+  {
+    "name": "baggage",
+    "trans": [
+      "n. 行李"
+    ]
+  },
+  {
+    "name": "bale",
+    "trans": [
+      "n. 包,捆; vt. 将某物打成包或包装成捆 时 态: baled, baling, bales 名 词: baler"
+    ]
+  },
+  {
+    "name": "banal",
+    "trans": [
+      "adj. 陈腐的；平庸的；老一套的 动 词: banalize 副 词: banally"
+    ]
+  },
+  {
+    "name": "barge",
+    "trans": [
+      "n. 驳船; vi. 猛撞, 冲, 闯 时 态: barged, barging, barges"
+    ]
+  },
+  {
+    "name": "basement",
+    "trans": [
+      "n. 地下室；地窖"
+    ]
+  },
+  {
+    "name": "bathing",
+    "trans": [
+      "n. 游泳；洗海水澡；沐浴; v. 洗浴"
+    ]
+  },
+  {
+    "name": "batter",
+    "trans": [
+      "n. 击球手；糊状物；墙面的倾斜; vt. 猛击；打坏；使向上倾斜; vi. 接连猛击；向上倾斜 时 态: battered, battering, batters"
+    ]
+  },
+  {
+    "name": "baulk",
+    "trans": [
+      "vi. 畏缩不前, 犹豫; vt. 阻碍, 妨碍, 使落空; n. 阻碍; 障碍物, 绊脚石"
+    ]
+  },
+  {
+    "name": "besiege",
+    "trans": [
+      "vt. 包围；围困；围攻时 态: besieged，besieging，besieges 名 词: besieger"
+    ]
+  },
+  {
+    "name": "bestow",
+    "trans": [
+      "vt. 授予；使用；放置；留宿 时 态: bestowed, bestowing, bestows"
+    ]
+  },
+  {
+    "name": "bewildering",
+    "trans": [
+      "adj. 让人困惑的, 令人费解的; 使人眼花缭乱的"
+    ]
+  },
+  {
+    "name": "blade",
+    "trans": [
+      "n. 刀片，刀锋；叶片；剑 形容词: bladed"
+    ]
+  },
+  {
+    "name": "bleeper",
+    "trans": [
+      "n. 无线电传呼机,BP机"
+    ]
+  },
+  {
+    "name": "blink",
+    "trans": [
+      "vt. 眨眼；使…闪烁; vi. 眨眼；闪烁; n. 闪光；眨眼；瞬间 时 态: blinked, blinking, blinks"
+    ]
+  },
+  {
+    "name": "blonde",
+    "trans": [
+      "adj. 亚麻色的；白皙的；白肤金发碧眼的; n. 白肤金发碧眼的女人"
+    ]
+  },
+  {
+    "name": "bloom",
+    "trans": [
+      "n. 花; 最佳时期, 茂盛时期; vi. 开花 Bloom布卢姆, 哈罗德 )时 态: bloomed, blooming, blooms 形容词: bloomy"
+    ]
+  },
+  {
+    "name": "bombard",
+    "trans": [
+      "vt. 轰炸；炮击; n. 射石炮 时 态: bombarded, bombarding, bombards 名 词: bombarder 名 词: bombar..."
+    ]
+  },
+  {
+    "name": "booth",
+    "trans": [
+      "n. 货摊；公用电话亭 Booth布斯"
+    ]
+  },
+  {
+    "name": "botanist",
+    "trans": [
+      "n. 植物学家"
+    ]
+  },
+  {
+    "name": "bounty",
+    "trans": [
+      "n. 奖金, 赏金; 慷慨, 大方"
+    ]
+  },
+  {
+    "name": "bout",
+    "trans": [
+      "n. 较量；发作；回合；一阵"
+    ]
+  },
+  {
+    "name": "breast",
+    "trans": [
+      "n. 乳房，胸部；胸怀；心情; vt. 以胸对着；与…搏斗 时 态: breasted, breasting, breasts"
+    ]
+  },
+  {
+    "name": "bribe",
+    "trans": [
+      "vt. & vi. 贿赂; n. 贿赂 时 态: bribed, bribing, bribes 形容词: bribable 名 词: briber"
+    ]
+  },
+  {
+    "name": "brittle",
+    "trans": [
+      "adj. 易碎的，脆弱的；易生气的 比较级: brittler, brittlest 名 词: brittleness"
+    ]
+  },
+  {
+    "name": "broker",
+    "trans": [
+      "n. 经纪人；中间人，代理商; 中人; vi. 做掮客; 作为权力经纪人进行谈判; vt. 以中间人等身份安排... 时 态: brokered，brokering，brokers"
+    ]
+  },
+  {
+    "name": "brood",
+    "trans": [
+      "vt. 沉思；孵; n. 一伙；一窝 时 态: brooded, brooding, broods"
+    ]
+  },
+  {
+    "name": "brute",
+    "trans": [
+      "adj. 无理性的；残忍的; n. 畜生；残暴的人 名 词: brutism"
+    ]
+  },
+  {
+    "name": "bulge",
+    "trans": [
+      "n. 膨胀, 肿起; vi. 膨胀, 凸出, 鼓起 时 态: bulged, bulging, bulges 名 词: bulginess 形容词: bulgy"
+    ]
+  },
+  {
+    "name": "bulk",
+    "trans": [
+      "n. 体积，容量；大块；大多数，大部分; vt. 使扩大，使形成大量；使显得重要 时 态: bulked, bulking, bulks"
+    ]
+  },
+  {
+    "name": "bump",
+    "trans": [
+      "n. 肿块，隆起物；撞击; vi. 碰撞，撞击；颠簸而行; vt. 碰，撞；颠簸; adv. 突然地，猛烈地 时 态: bumped, bumping, bumps"
+    ]
+  },
+  {
+    "name": "bumper",
+    "trans": [
+      "adj. 丰盛的，丰富的; n. 缓冲器; vt. 装满；为…祝酒; vi. 干杯"
+    ]
+  },
+  {
+    "name": "bureaucratic",
+    "trans": [
+      "adj. 官僚的, 官僚主义的, 官僚作风的"
+    ]
+  },
+  {
+    "name": "burglar",
+    "trans": [
+      "n. 夜贼，窃贼"
+    ]
+  },
+  {
+    "name": "bygone",
+    "trans": [
+      "adj. 很久以前的;以往的; n. 过去的事"
+    ]
+  },
+  {
+    "name": "camouflage",
+    "trans": [
+      "n. 伪装；隐藏；掩藏; 伪装物；掩饰手段；保护色; vt. & vi. 隐蔽；隐藏；掩藏；掩盖 时 态: camouflaged，camouflaging，camouflages"
+    ]
+  },
+  {
+    "name": "capsize",
+    "trans": [
+      "vt. & vi. 翻,倾覆时 态: capsized, capsizing, capsizes"
+    ]
+  },
+  {
+    "name": "carefree",
+    "trans": [
+      "adj. 无忧无虑的；不负责的"
+    ]
+  },
+  {
+    "name": "carton",
+    "trans": [
+      "n. 纸板箱；靶心白点; vt. 用盒包装; vi. 制作纸箱 时 态: cartoned, cartoning, cartons"
+    ]
+  },
+  {
+    "name": "cartoon",
+    "trans": [
+      "n. 卡通片，动画片；连环漫画; vt. 为…画漫画; vi. 画漫画 时 态: cartooned, cartooning, cartoons 名 词: cartoon..."
+    ]
+  },
+  {
+    "name": "catastrophic",
+    "trans": [
+      "adj. 灾难性的; 惨重的;悲惨的"
+    ]
+  },
+  {
+    "name": "cavern",
+    "trans": [
+      "n. 大山洞, 大洞穴时 态: caverned, caverning, caverns"
+    ]
+  },
+  {
+    "name": "cavort",
+    "trans": [
+      "vi. 腾跃；欢跃 时 态: cavorted, cavorting, cavorts"
+    ]
+  },
+  {
+    "name": "cease",
+    "trans": [
+      "vt. & vi. 停止, 终止, 结束时 态: ceased, ceasing, ceases"
+    ]
+  },
+  {
+    "name": "censor",
+    "trans": [
+      "vt. 审查，检查; n. 检查员；潜意识压抑力；信件检查员 时 态: censored, censoring, censors 形容词: censorable 形容..."
+    ]
+  },
+  {
+    "name": "cerebrospinal",
+    "trans": [
+      "adj. 脑脊髓的"
+    ]
+  },
+  {
+    "name": "certify",
+    "trans": [
+      "vt. 证明, 证实; 发证书给… 时 态: certified, certifying, certifies 名 词: certifier"
+    ]
+  },
+  {
+    "name": "chant",
+    "trans": [
+      "n. 圣歌；赞美诗; vt. 唱；诵扬; vi. 唱歌；反覆地唱歌 时 态: chanted, chanting, chants"
+    ]
+  },
+  {
+    "name": "chaplain",
+    "trans": [
+      "n. 附属教堂牧师; 牧师;犹太教教士; 执行宗教仪式的牧师"
+    ]
+  },
+  {
+    "name": "cheat",
+    "trans": [
+      "vt. 欺骗；骗取; vi. 欺骗；作弊; n. 骗子；欺骗，作弊 时 态: cheated, cheating, cheats 名 词: cheater"
+    ]
+  },
+  {
+    "name": "checklist",
+    "trans": [
+      "选购图书单，散篇目录，清单；选举人名单"
+    ]
+  },
+  {
+    "name": "chic",
+    "trans": [
+      "n. 时髦；别致的款式; adj. 别致的 比较级: chicer, chicest 副 词: chicly"
+    ]
+  },
+  {
+    "name": "chorus",
+    "trans": [
+      "n. 副歌; 合唱, 合唱队, 歌咏队; vt. 合唱, 齐声背诵, 异口同声地说"
+    ]
+  },
+  {
+    "name": "cinematic",
+    "trans": [
+      "adj. 电影的, 影片的"
+    ]
+  },
+  {
+    "name": "cipher",
+    "trans": [
+      "n. 密码；暗号；零; vi. 做算术；计算；使用密码; vt. 做算术；计算；将…译成密码 时 态: ciphered, ciphering, ciphers"
+    ]
+  },
+  {
+    "name": "circumscribe",
+    "trans": [
+      "vt. 在…周围划线; 划定…范围；限制，限定 时 态: circumscribed，circumscribing，circumscribes"
+    ]
+  },
+  {
+    "name": "civic",
+    "trans": [
+      "adj. 城市的; 公民的,市民的"
+    ]
+  },
+  {
+    "name": "cling",
+    "trans": [
+      "vi. 坚持，墨守；紧贴；附着 时 态: clung clinging, clings 形容词: clingy"
+    ]
+  },
+  {
+    "name": "coffer",
+    "trans": [
+      "n. 保险柜,保险箱; 金库,资金 时 态: coffered, coffering, coffers"
+    ]
+  },
+  {
+    "name": "cognition",
+    "trans": [
+      "n. 〈哲〉认识; 认识力"
+    ]
+  },
+  {
+    "name": "collateral",
+    "trans": [
+      "n. 附属担保品; adj. 相关的"
+    ]
+  },
+  {
+    "name": "collectively",
+    "trans": [
+      "adv. 全体地；共同地"
+    ]
+  },
+  {
+    "name": "collision",
+    "trans": [
+      "n. 碰撞, 冲突, 抵触形容词: collisional"
+    ]
+  },
+  {
+    "name": "colonist",
+    "trans": [
+      "n. 殖民地开拓者，移民；殖民地居民"
+    ]
+  },
+  {
+    "name": "colourfast",
+    "trans": [
+      "adj. 不褪色的,不掉色的"
+    ]
+  },
+  {
+    "name": "comic",
+    "trans": [
+      "adj. 滑稽的, 好笑的; 喜剧的; n. 连环漫画杂志; 喜剧演员"
+    ]
+  },
+  {
+    "name": "commute",
+    "trans": [
+      "vt. 交换；减刑；用……交换；使……变成; vi. 通勤；代偿; n. 通勤 时 态: commuted, commuting, commutes"
+    ]
+  },
+  {
+    "name": "compassionate",
+    "trans": [
+      "adj. 表示怜悯的,有同情心的 vt. 同情,怜悯时 态: compassionated, compassionating, compassionates"
+    ]
+  },
+  {
+    "name": "complement",
+    "trans": [
+      "n. 补充, 互为补充的东西; 需要的或允许的数额; 补足语; vt. 补足, 补充 时 态: complemented, complementing, complements"
+    ]
+  },
+  {
+    "name": "compression",
+    "trans": [
+      "n. 挤压,压缩; 压缩冲程 形容词: compressional"
+    ]
+  },
+  {
+    "name": "concise",
+    "trans": [
+      "adj. 简明的副 词: concisely 名 词: conciseness"
+    ]
+  },
+  {
+    "name": "condemn",
+    "trans": [
+      "vt. 判刑，定罪；谴责；声讨 时 态: condemned, condemning, condemns 形容词: condemnable 形容词: condemna..."
+    ]
+  },
+  {
+    "name": "conditioner",
+    "trans": [
+      "n. 护发素，护发剂; 柔顺剂，柔软剂"
+    ]
+  },
+  {
+    "name": "confer",
+    "trans": [
+      "vt. 授予；给予; vi. 协商 时 态: conferred, conferring, confers 名 词: conferment 形容词: confer..."
+    ]
+  },
+  {
+    "name": "conform",
+    "trans": [
+      "vi. 符合；遵照；适应环境; vt. 使一致；使遵守；使顺从; adj. 顺从的；一致的 时 态: conformed, conforming, conforms 名 词:..."
+    ]
+  },
+  {
+    "name": "congratulation",
+    "trans": [
+      "n. 祝贺, 恭喜; 贺词"
+    ]
+  },
+  {
+    "name": "connotation",
+    "trans": [
+      "n. 内涵；含蓄；暗示，隐含意义；储蓄的东西 形容词: connotative"
+    ]
+  },
+  {
+    "name": "consequent",
+    "trans": [
+      "adj. 作为结果的, 随之发生的"
+    ]
+  },
+  {
+    "name": "consignment",
+    "trans": [
+      "n. 托付货物;托卖货物; 寄售;托运;托付;交付; 以寄售方式"
+    ]
+  },
+  {
+    "name": "conspicuous",
+    "trans": [
+      "adj. 显眼的, 明显的副 词: conspicuously 名 词: conspicuousness"
+    ]
+  },
+  {
+    "name": "containerization",
+    "trans": [
+      "n. 货柜运输"
+    ]
+  },
+  {
+    "name": "contingent",
+    "trans": [
+      "adj. 偶然的；附带的；以事实为依据的；依情况而变的 n. 代表团；分遣队副 词: contingently"
+    ]
+  },
+  {
+    "name": "contradiction",
+    "trans": [
+      "n. 矛盾; 否认, 反驳"
+    ]
+  },
+  {
+    "name": "converge",
+    "trans": [
+      "vi. 会于一点, 向一点会合; 相似或相同 时 态: converged, converging, converges"
+    ]
+  },
+  {
+    "name": "converse",
+    "trans": [
+      "adj. 相反的，逆向的；颠倒的; vi. 交谈，谈话；认识; n. 相反的事物；逆行，逆向；倒 时 态: conversed, conversing, converses ..."
+    ]
+  },
+  {
+    "name": "conversion",
+    "trans": [
+      "n. 变换，转化; 彻底改变；皈依"
+    ]
+  },
+  {
+    "name": "convict",
+    "trans": [
+      "vt. 宣判有罪; n. 囚犯 时 态: convicted, convicting, convicts"
+    ]
+  },
+  {
+    "name": "cornerstone",
+    "trans": [
+      "n. 奠基石; 基础"
+    ]
+  },
+  {
+    "name": "corps",
+    "trans": [
+      "n. 军团；兵队；兵种；学生联合会"
+    ]
+  },
+  {
+    "name": "cortical",
+    "trans": [
+      "adj. 皮质的；皮层的；外皮的"
+    ]
+  },
+  {
+    "name": "costume",
+    "trans": [
+      "n. 服装, 服装式样; 女外套, 女装 时 态: costumed, costuming, costumes"
+    ]
+  },
+  {
+    "name": "counterproductive",
+    "trans": [
+      "adj. 反生产的,使达不到预期目标的"
+    ]
+  },
+  {
+    "name": "courtship",
+    "trans": [
+      "n. 求爱期,追求期"
+    ]
+  },
+  {
+    "name": "craze",
+    "trans": [
+      "n. 狂热; vi. 发狂；产生纹裂; vt. 使发狂；使产生纹裂 时 态: crazed, crazing, crazes"
+    ]
+  },
+  {
+    "name": "credibility",
+    "trans": [
+      "n. 可靠性,可信性"
+    ]
+  },
+  {
+    "name": "cruel",
+    "trans": [
+      "adj. 残酷的, 残忍的; 使人痛苦的, 让人受难的 比较级: crueler , crueller cruelest , cruellest 副 词: cruelly"
+    ]
+  },
+  {
+    "name": "crystalline",
+    "trans": [
+      "adj. 水晶的；似水晶的；结晶质的; n. 结晶性，结晶度 名 词: crystallinity"
+    ]
+  },
+  {
+    "name": "curb",
+    "trans": [
+      "n. 侧石, 边石; 限制, 克制, 抑制; vt. 限制, 克制, 抑制 时 态: curbed, curbing, curbs"
+    ]
+  },
+  {
+    "name": "curly",
+    "trans": [
+      "adj. 卷曲的；卷毛的；有皱状纹理的；蜷缩的 比较级: curlier, curliest 副 词: curlily 名 词: curliness"
+    ]
+  },
+  {
+    "name": "curtail",
+    "trans": [
+      "vt. 截断, 缩短时 态: curtailed, curtailing, curtails 名 词: curtailment"
+    ]
+  },
+  {
+    "name": "dearth",
+    "trans": [
+      "n. 缺乏, 稀少"
+    ]
+  },
+  {
+    "name": "deception",
+    "trans": [
+      "n. 欺骗; 骗术, 诡计"
+    ]
+  },
+  {
+    "name": "decipher",
+    "trans": [
+      "vt. 破译, 辨认时 态: deciphered, deciphering, deciphers 形容词: decipherable 名 词: decipherer ..."
+    ]
+  },
+  {
+    "name": "decrepit",
+    "trans": [
+      "adj. 衰老的,老朽的,破旧的"
+    ]
+  },
+  {
+    "name": "defer",
+    "trans": [
+      "vt. 拖延, 延缓, 推迟; vi. 服从某人的意愿, 遵从 时 态: deferred, deferring, defers 形容词: deferrable 名 词:..."
+    ]
+  },
+  {
+    "name": "degenerate",
+    "trans": [
+      "vi. 衰退；堕落；退化; adj. 衰退的，堕落的 时 态: degenerated，degenerating，degenerates"
+    ]
+  },
+  {
+    "name": "delegate",
+    "trans": [
+      "n. 代表, 代表团成员; vt. 任命或委派…为代表; 托付 时 态: delegated, delegating, delegates"
+    ]
+  },
+  {
+    "name": "delightful",
+    "trans": [
+      "adj. 令人非常高兴的, 讨人喜欢的副 词: delightfully"
+    ]
+  },
+  {
+    "name": "dementia",
+    "trans": [
+      "n. 〈医〉痴呆"
+    ]
+  },
+  {
+    "name": "demographer",
+    "trans": [
+      "n. 人口统计学家"
+    ]
+  },
+  {
+    "name": "demolish",
+    "trans": [
+      "vt. 摧毁；推翻；拆毁; 〈非正〉吃光 时 态: demolished，demolishing，demolishes"
+    ]
+  },
+  {
+    "name": "denomination",
+    "trans": [
+      "n. 宗派, 教派; 面额, 单位; 名称, 种类名, 名目 形容词: denominational"
+    ]
+  },
+  {
+    "name": "deploy",
+    "trans": [
+      "vt. 使展开；施展；部署时 态: deployed，deploying，deploys 名 词: deployer 名 词: deployment"
+    ]
+  },
+  {
+    "name": "deregulate",
+    "trans": [
+      "vt. 撤销对…的管制和限制时 态: deregulated, deregulating, deregulates 名 词: deregulation"
+    ]
+  },
+  {
+    "name": "desolate",
+    "trans": [
+      "adj. 无人的, 荒凉的; 阴郁的, 孤独凄凉的; vt. 毁坏, 极大地破坏; 使沮丧, 使痛苦 时 态: desolated, desolating, desolates ..."
+    ]
+  },
+  {
+    "name": "despise",
+    "trans": [
+      "vt. 轻视，鄙视 时 态: despised, despising, despises"
+    ]
+  },
+  {
+    "name": "detach",
+    "trans": [
+      "vt. 分离；派遣；使超然 时 态: detached, detaching, detaches 名 词: detachability 形容词: detachable"
+    ]
+  },
+  {
+    "name": "detergent",
+    "trans": [
+      "n. 洗涤剂"
+    ]
+  },
+  {
+    "name": "devour",
+    "trans": [
+      "vt. 毁灭；吞食；凝视 时 态: devoured, devouring, devours 名 词: devourer 副 词: devouringly"
+    ]
+  },
+  {
+    "name": "dilapidate",
+    "trans": [
+      "v. 荒废,毁坏,浪费时 态: dilapidated, dilapidating, dilapidates 名 词: dilapidation"
+    ]
+  },
+  {
+    "name": "dilemma",
+    "trans": [
+      "n. 左右为难形容词: dilemmatic"
+    ]
+  },
+  {
+    "name": "diligent",
+    "trans": [
+      "adj. 勤奋的, 勤勉的副 词: diligently"
+    ]
+  },
+  {
+    "name": "dilute",
+    "trans": [
+      "vt. 稀释, 冲淡; adj. 稀释的, 冲淡的 时 态: diluted, diluting, dilutes 形容词: dilutive"
+    ]
+  },
+  {
+    "name": "diplomatic",
+    "trans": [
+      "adj. 外交上的, 外交人员的; 有手腕的, 策略的, 善于交涉的, 圆滑的 副 词: diplomatically"
+    ]
+  },
+  {
+    "name": "discontinue",
+    "trans": [
+      "vt. & vi. 终止,中断,中止时 态: discontinued, discontinuing, discontinues"
+    ]
+  },
+  {
+    "name": "discouraging",
+    "trans": [
+      "adj. 令人沮丧的,使人泄气的; 阻止的"
+    ]
+  },
+  {
+    "name": "disdain",
+    "trans": [
+      "n. 鄙视, 轻蔑; vt. 鄙视; 不屑于做, 不愿意做 时 态: disdained, disdaining, disdains"
+    ]
+  },
+  {
+    "name": "disguise",
+    "trans": [
+      "vt. 假装；掩饰；隐瞒; n. 伪装；假装；用作伪装的东西 时 态: disguised, disguising, disguises 副 词: disguisedly..."
+    ]
+  },
+  {
+    "name": "disgusting",
+    "trans": [
+      "adj. 令人作呕的, 令人厌恶的; 非常令人不快的, 极坏的, 极糟的 副 词: disgustingly"
+    ]
+  },
+  {
+    "name": "disillusioned",
+    "trans": [
+      "adj. 不再抱幻想的, 大失所望的"
+    ]
+  },
+  {
+    "name": "disjunction",
+    "trans": [
+      "n. 分离"
+    ]
+  },
+  {
+    "name": "disparate",
+    "trans": [
+      "adj. 根本不同的, 不能相比较的"
+    ]
+  },
+  {
+    "name": "disqualify",
+    "trans": [
+      "vt. 使无资格, 使不合格, 使不能时 态: disqualified, disqualifying, disqualifies"
+    ]
+  },
+  {
+    "name": "dissolve",
+    "trans": [
+      "v. 溶解；使溶解; 解除；终止; 解散; 消除；消失，消散; 禁不住; 除去，分散；破坏; n. 渐隐，叠化，淡入淡出 时 态: dissolved, dissolving, d..."
+    ]
+  },
+  {
+    "name": "distaste",
+    "trans": [
+      "n. 厌恶；讨厌; vt. 厌恶；不喜欢; vi. 不喜欢 时 态: distasted, distasting, distastes"
+    ]
+  },
+  {
+    "name": "distressing",
+    "trans": [
+      "adj. 使人痛苦的，令人苦恼的"
+    ]
+  },
+  {
+    "name": "divert",
+    "trans": [
+      "vt. 转移；使…欢娱；使…转向; vi. 转移 时 态: diverted, diverting, diverts 名 词: diverter 副 词: div..."
+    ]
+  },
+  {
+    "name": "dizziness",
+    "trans": [
+      "n. 头昏眼花"
+    ]
+  },
+  {
+    "name": "dot",
+    "trans": [
+      "n. 点，圆点；嫁妆; vi. 打上点; vt. 加小点于 DoTabbr. Department of Transport 运输部) DOT文档模板格式 DoTabbr. D..."
+    ]
+  },
+  {
+    "name": "downside",
+    "trans": [
+      "adj. 下降趋势的"
+    ]
+  },
+  {
+    "name": "downwind",
+    "trans": [
+      "adv. 顺风；在下风; adj. 顺风的 形容词: downwind"
+    ]
+  },
+  {
+    "name": "drab",
+    "trans": [
+      "adj. 单调的；土褐色的; n. 浅褐色；无生气；邋遢；小额; vt. 使无生气; vi. 嫖妓 比较级: drabber, drabbest 副 词: drably ..."
+    ]
+  },
+  {
+    "name": "drastic",
+    "trans": [
+      "adj. 激烈的；猛烈的; n. 烈性泻药 副 词: drastically"
+    ]
+  },
+  {
+    "name": "dual",
+    "trans": [
+      "adj. 双的；双重的; n. 双数；双数词"
+    ]
+  },
+  {
+    "name": "dump",
+    "trans": [
+      "vt. 倾倒；倾卸; vi. 倒垃圾; n. 垃圾场 dUMP脱氧尿苷酸时 态: dumped, dumping, dumps 名 词: dumper"
+    ]
+  },
+  {
+    "name": "dwindle",
+    "trans": [
+      "vi. 逐渐变少或变小时 态: dwindled, dwindling, dwindles"
+    ]
+  },
+  {
+    "name": "eagerly",
+    "trans": [
+      "adv. 渴望地；急切地；热心地"
+    ]
+  },
+  {
+    "name": "earnest",
+    "trans": [
+      "adj. 认真的，热心的；重要的; n. 定金；认真；诚挚 副 词: earnestly 名 词: earnestness"
+    ]
+  },
+  {
+    "name": "eccentricity",
+    "trans": [
+      "n. 古怪行为;反常"
+    ]
+  },
+  {
+    "name": "edging",
+    "trans": [
+      "n. 边饰,缘饰,边缘,流苏"
+    ]
+  },
+  {
+    "name": "ejection",
+    "trans": [
+      "n. 喷出；排出物"
+    ]
+  },
+  {
+    "name": "elapse",
+    "trans": [
+      "vi. 时间过去；消逝; n. 时间的过去；流逝 时 态: elapsed, elapsing, elapses"
+    ]
+  },
+  {
+    "name": "elicit",
+    "trans": [
+      "vt. 引出, 探出时 态: elicited, eliciting, elicits 名 词: elicitation 名 词: elicitor"
+    ]
+  },
+  {
+    "name": "eligibility",
+    "trans": [
+      "n. 适任,合格"
+    ]
+  },
+  {
+    "name": "elitist",
+    "trans": [
+      "n. 优秀人才,杰出者; adj. 优秀人才的,杰出者的"
+    ]
+  },
+  {
+    "name": "eloquently",
+    "trans": [
+      "adv. 善辩地;富于表现力地"
+    ]
+  },
+  {
+    "name": "elucidate",
+    "trans": [
+      "vt. 阐明,解释时 态: elucidated, elucidating, elucidates 名 词: elucidation 形容词: elucidative ..."
+    ]
+  },
+  {
+    "name": "embarrassment",
+    "trans": [
+      "n. 尴尬;难堪;局促不安; 令人难堪或耻辱的事; 富人的苦恼；好东西太多无法作选择"
+    ]
+  },
+  {
+    "name": "embassy",
+    "trans": [
+      "n. 大使馆；大使馆全体人员"
+    ]
+  },
+  {
+    "name": "embellish",
+    "trans": [
+      "vt. 美化；装饰；修饰；润色时 态: embellished，embellishing，embellishes"
+    ]
+  },
+  {
+    "name": "embezzlement",
+    "trans": [
+      "n. 盗用,挪用"
+    ]
+  },
+  {
+    "name": "embryonic",
+    "trans": [
+      "adj. 胚芽的;胎儿的; 初期的"
+    ]
+  },
+  {
+    "name": "emergent",
+    "trans": [
+      "adj. 紧急的；浮现的；新兴的；处于发展初期的"
+    ]
+  },
+  {
+    "name": "emeritus",
+    "trans": [
+      "adj. 名誉退休的；退休的"
+    ]
+  },
+  {
+    "name": "eminent",
+    "trans": [
+      "adj. 杰出的；有名的；明显的 副 词: eminently"
+    ]
+  },
+  {
+    "name": "empirical",
+    "trans": [
+      "adj. 以观察或实验为依据的副 词: empirically"
+    ]
+  },
+  {
+    "name": "encapsulate",
+    "trans": [
+      "vt. 装入胶囊; 总结；扼要概括；囊括; adj. 有囊包着的 时 态: encapsulated，encapsulating，encapsulates 名 词: enca..."
+    ]
+  },
+  {
+    "name": "endorse",
+    "trans": [
+      "vt. 在背面签字；背书; 赞同，认可，支持; 在广告上说本人使用并赞同某产品; 在背面写评论；批注; 在记录违章事项 时 态: endorsed，endorsing，endorses..."
+    ]
+  },
+  {
+    "name": "enervation",
+    "trans": [
+      "n. 无活力;衰弱"
+    ]
+  },
+  {
+    "name": "enfranchise",
+    "trans": [
+      "vt. 给予选举权时 态: enfranchised, enfranchising, enfranchises 名 词: enfranchisement"
+    ]
+  },
+  {
+    "name": "enigma",
+    "trans": [
+      "n. 难于理解的问题、人、物、情况等;奥秘"
+    ]
+  },
+  {
+    "name": "enlighten",
+    "trans": [
+      "vt. 启发, 开导时 态: enlightened, enlightening, enlightens"
+    ]
+  },
+  {
+    "name": "ensue",
+    "trans": [
+      "vi. 跟着发生，接着发生；继起; vt. 追求 时 态: ensued, ensuing, ensues"
+    ]
+  },
+  {
+    "name": "entice",
+    "trans": [
+      "vt. 诱使；怂恿 时 态: enticed, enticing, entices 名 词: enticement"
+    ]
+  },
+  {
+    "name": "entrust",
+    "trans": [
+      "vt. 委托，信托 时 态: entrusted, entrusting, entrusts"
+    ]
+  },
+  {
+    "name": "entwine",
+    "trans": [
+      "vt. 缠绕,盘绕时 态: entwined, entwining, entwines"
+    ]
+  },
+  {
+    "name": "epitomise",
+    "trans": [
+      "vt. 成为的缩影"
+    ]
+  },
+  {
+    "name": "equality",
+    "trans": [
+      "n. 同等, 平等"
+    ]
+  },
+  {
+    "name": "equilibrium",
+    "trans": [
+      "n. 平衡,均势; 平静"
+    ]
+  },
+  {
+    "name": "erupt",
+    "trans": [
+      "vi. 爆发, 喷发; 突然发生; 出疹 时 态: erupted, erupting, erupts 形容词: eruptive"
+    ]
+  },
+  {
+    "name": "ethereal",
+    "trans": [
+      "adj. 天上的；轻的；象空气的 名 词: ethereality 副 词: ethereally"
+    ]
+  },
+  {
+    "name": "ethnicity",
+    "trans": [
+      "n. 种族地位;种族特点;种族渊源"
+    ]
+  },
+  {
+    "name": "evil",
+    "trans": [
+      "adj. 邪恶的；有害的；不幸的；讨厌的; n. 罪恶，邪恶；不幸 比较级: eviler, evilest 副 词: evilly 名 词: evilness"
+    ]
+  },
+  {
+    "name": "expiry",
+    "trans": [
+      "n. 满期，逾期；呼气；终结"
+    ]
+  },
+  {
+    "name": "extracurricular",
+    "trans": [
+      "adj. 学校课程以外的"
+    ]
+  },
+  {
+    "name": "extrapolation",
+    "trans": [
+      "n. 推断; 外推"
+    ]
+  },
+  {
+    "name": "extravagance",
+    "trans": [
+      "n. 奢侈;挥霍; 奢侈品;放纵的言行等"
+    ]
+  },
+  {
+    "name": "extrusion",
+    "trans": [
+      "n. 挤出,推出,喷出,赶出"
+    ]
+  },
+  {
+    "name": "exuberant",
+    "trans": [
+      "adj. 兴高采烈的；活跃的；愉快的; 茁壮的，繁茂的; adv. 兴高采烈地；活跃地；愉快地"
+    ]
+  },
+  {
+    "name": "facilitator",
+    "trans": [
+      "服务商"
+    ]
+  },
+  {
+    "name": "facsimile",
+    "trans": [
+      "n. 副本;传真"
+    ]
+  },
+  {
+    "name": "familiarise",
+    "trans": [
+      "vt. 使熟悉,使通晓"
+    ]
+  },
+  {
+    "name": "farewell",
+    "trans": [
+      "n. 告别, 欢送"
+    ]
+  },
+  {
+    "name": "fatal",
+    "trans": [
+      "adj. 致命的; 灾难性的; 重大的, 决定性的"
+    ]
+  },
+  {
+    "name": "feminism",
+    "trans": [
+      "n. 女权运动；女权主义；女性主义"
+    ]
+  },
+  {
+    "name": "fickle",
+    "trans": [
+      "adj. 易变的；浮躁的；变幻无常的 名 词: fickleness"
+    ]
+  },
+  {
+    "name": "fidelity",
+    "trans": [
+      "n. 保真度；忠诚；尽责；精确"
+    ]
+  },
+  {
+    "name": "filler",
+    "trans": [
+      "n. 补白；装填者；装填物；充填器"
+    ]
+  },
+  {
+    "name": "finitude",
+    "trans": [
+      "n. 有限；界限；限制"
+    ]
+  },
+  {
+    "name": "fledgling",
+    "trans": [
+      "n. 幼鸟; 无经验的人"
+    ]
+  },
+  {
+    "name": "flimsy",
+    "trans": [
+      "adj. 脆弱的；浅薄的；易损坏的；不周密的; n. 薄纸；复写纸；打字纸 比较级: flimsier, flimsiest 副 词: flimsily 名 词: ..."
+    ]
+  },
+  {
+    "name": "flip",
+    "trans": [
+      "vt. 轻击；掷; vi. 用指轻弹；蹦跳; adj. 无礼的；轻率的; n. 筋斗；弹 FLIPabbr. Floating Indeved Point Arithmetic 变..."
+    ]
+  },
+  {
+    "name": "flock",
+    "trans": [
+      "n. 群；棉束; vt. 用棉束填满; vi. 聚集；成群而行 Flock弗洛克时 态: flocked, flocking, flocks"
+    ]
+  },
+  {
+    "name": "fluent",
+    "trans": [
+      "adj. 熟练的, 流畅的; 流利的 名 词: fluency 副 词: fluently"
+    ]
+  },
+  {
+    "name": "flustered",
+    "trans": [
+      "adj. 慌张的；激动不安的 v. 慌张；混乱"
+    ]
+  },
+  {
+    "name": "foe",
+    "trans": [
+      "n. 敌人, 仇敌"
+    ]
+  },
+  {
+    "name": "foil",
+    "trans": [
+      "n. 箔，金属薄片; 陪衬，衬托; vt. 挫败；使受挫折 时 态: foiled，foiling，foils"
+    ]
+  },
+  {
+    "name": "footage",
+    "trans": [
+      "n. 连续镜头；英尺长度；以尺计算长度"
+    ]
+  },
+  {
+    "name": "foregone conclusion",
+    "trans": [
+      "预料之中必然发生的事情；不可避免的结局"
+    ]
+  },
+  {
+    "name": "forfeit",
+    "trans": [
+      "n. 罚金；没收物；丧失的东西; adj. 因受罚而丧失的；被没收的; vt. 丧失 时 态: forfeited, forfeiting, forfeits 形容词: ..."
+    ]
+  },
+  {
+    "name": "forgive",
+    "trans": [
+      "vt. & vi. 原谅；饶恕; vt. 免除 时 态: forgave forgiven forgiving，forgives 形容词: forgivable 名 ..."
+    ]
+  },
+  {
+    "name": "forgo",
+    "trans": [
+      "vt. & vi. 没有也行,放弃时 态: forwent forgone forgoing, forgoes"
+    ]
+  },
+  {
+    "name": "formality",
+    "trans": [
+      "n. 拘泥形式，拘谨；遵守礼节; 正式手续; 形式上的措施"
+    ]
+  },
+  {
+    "name": "formulation",
+    "trans": [
+      "n. 公式化; 规划;构想"
+    ]
+  },
+  {
+    "name": "forthcoming",
+    "trans": [
+      "adj. 即将到来的; 现成的, 唾手可得的"
+    ]
+  },
+  {
+    "name": "fourfold",
+    "trans": [
+      "adj. 四倍的；四重的；四垒的; adv. 四倍；四重"
+    ]
+  },
+  {
+    "name": "fraction",
+    "trans": [
+      "n. 小部分；部分；稍微；分数"
+    ]
+  },
+  {
+    "name": "fragmentation",
+    "trans": [
+      "n. 分裂,破碎"
+    ]
+  },
+  {
+    "name": "fraught",
+    "trans": [
+      "adj. 担心的，忧虑的；充满…的"
+    ]
+  },
+  {
+    "name": "freeway",
+    "trans": [
+      "n. 高速公路"
+    ]
+  },
+  {
+    "name": "friction",
+    "trans": [
+      "n. 摩擦，摩擦力 形容词: frictional"
+    ]
+  },
+  {
+    "name": "fringe",
+    "trans": [
+      "n. 边缘；穗；刘海; adj. 边缘的；附加的; vt. 加穗于 时 态: fringed, fringing, fringes 形容词: fringy"
+    ]
+  },
+  {
+    "name": "frost",
+    "trans": [
+      "vt. & vi. 结冰霜; vt. 冻坏; n. 霜; 霜冻, 严寒天气 Frost弗罗斯特时 态: frosted, frosting, frosts"
+    ]
+  },
+  {
+    "name": "froth",
+    "trans": [
+      "n. 泡沫，泡；口沫; vi. 吐白沫；起泡沫; vt. 使生泡沫 时 态: frothed, frothing, froths also"
+    ]
+  },
+  {
+    "name": "frown",
+    "trans": [
+      "vi. 皱眉；不同意; vt. 皱眉，蹙额; n. 皱眉，蹙额 时 态: frowned, frowning, frowns"
+    ]
+  },
+  {
+    "name": "gauge",
+    "trans": [
+      "n. 厚度, 直径; 测量仪表; 规格, 尺度; vt. 计量, 度量; 估计, 判断 时 态: gauged also gaged gauging gaging gauges gag..."
+    ]
+  },
+  {
+    "name": "gaze",
+    "trans": [
+      "vi. 凝视, 注视; n. 凝视, 端详 时 态: gazed, gazing, gazes 名 词: gazer"
+    ]
+  },
+  {
+    "name": "generalisation",
+    "trans": [
+      "n. 一般化, 普通化, 归纳, 概论"
+    ]
+  },
+  {
+    "name": "gimmick",
+    "trans": [
+      "n. 暗机关；骗人的玩意; vt. 使暗机关；搞骗人的玩意 时 态: gimmicked, gimmicking, gimmicks 形容词: gimmicky"
+    ]
+  },
+  {
+    "name": "glacial",
+    "trans": [
+      "adj. 冰的；冰河时代的；冰冷的"
+    ]
+  },
+  {
+    "name": "gloomy",
+    "trans": [
+      "adj. 黑暗的；沮丧的；阴郁的 比较级: gloomier, gloomiest 副 词: gloomily 名 词: gloominess"
+    ]
+  },
+  {
+    "name": "gorgeous",
+    "trans": [
+      "adj. 极好的, 称心的; 非常漂亮的, 华美的 副 词: gorgeously"
+    ]
+  },
+  {
+    "name": "gossip",
+    "trans": [
+      "n. 小道传闻；随笔；爱说长道短的人; vi. 闲聊；传播流言蜚语 时 态: gossiped, gossiping, gossips 名 词: gossiper 形..."
+    ]
+  },
+  {
+    "name": "grab",
+    "trans": [
+      "vt. & vi. 抢先, 抢占; vt. 攫取, 抓住; 对…有好感, 对…产生影响; n. 试图抓取, 有意抢夺 时 态: grabbed, grabbing, grabs ..."
+    ]
+  },
+  {
+    "name": "grace",
+    "trans": [
+      "n. 优雅；恩惠；慈悲；魅力; vt. 使优美 Gracen. 格雷斯时 态: graced, gracing, graces"
+    ]
+  },
+  {
+    "name": "grapple",
+    "trans": [
+      "vi. 抓住；格斗；抓斗机; vt. 抓住；与…格斗; n. 抓住；格斗 时 态: grappled, grappling, grapples 名 词: grappler"
+    ]
+  },
+  {
+    "name": "gratuity",
+    "trans": [
+      "n. 赏钱，小费；赠物；退职金"
+    ]
+  },
+  {
+    "name": "grease",
+    "trans": [
+      "n. 动物油脂; 油膏, 油脂; vt. 涂油脂于, 用油脂润滑 时 态: greased, greasing, greases 形容词: greaseless 形容词..."
+    ]
+  },
+  {
+    "name": "greet",
+    "trans": [
+      "vt. 欢迎, 迎接, 致意, 问候时 态: greeted, greeting, greets 名 词: greeter"
+    ]
+  },
+  {
+    "name": "grenade",
+    "trans": [
+      "n. 灭火弹；手榴弹; vt. 扔手榴弹；用催泪弹攻击"
+    ]
+  },
+  {
+    "name": "grim",
+    "trans": [
+      "adj. 严酷的, 无情的; 讨厌的, 糟糕的; 严厉的 比较级: grimmer, grimmest 副 词: grimly 名 词: grimness"
+    ]
+  },
+  {
+    "name": "groan",
+    "trans": [
+      "vi. 呻吟；抱怨；发吱嘎声; vt. 呻吟；抱怨; n. 呻吟；叹息；吱嘎声 时 态: groaned, groaning, groans 名 词: groaner"
+    ]
+  },
+  {
+    "name": "guilty",
+    "trans": [
+      "adj. 有罪的；内疚的 比较级: guiltier, guiltiest 副 词: guiltily 名 词: guiltiness"
+    ]
+  },
+  {
+    "name": "gush",
+    "trans": [
+      "vi. 喷，涌; 滔滔不绝地说话; n. 涌出；迸发 时 态: gushed，gushing，gushes"
+    ]
+  },
+  {
+    "name": "gust",
+    "trans": [
+      "n. 一阵狂风；风味；趣味; vi. 一阵阵地劲吹 时 态: gusted, gusting, gusts"
+    ]
+  },
+  {
+    "name": "habitual",
+    "trans": [
+      "adj. 习惯的, 惯常的副 词: habitually"
+    ]
+  },
+  {
+    "name": "hardwired",
+    "trans": [
+      "adj. 硬连线的"
+    ]
+  },
+  {
+    "name": "hardy",
+    "trans": [
+      "adj. 能吃苦耐劳的；坚强的；勇敢的；鲁莽的; n. 强壮的人；耐寒植物；方柄凿 Hardy哈代比较级: hardier, hardiest 副 词: hardil..."
+    ]
+  },
+  {
+    "name": "harmonise",
+    "trans": [
+      "vt. & vi. 和谐,协调,相称; 以和声唱歌或演奏; n. 和谐,协调,相称; n. 使和谐协调的人"
+    ]
+  },
+  {
+    "name": "harridan",
+    "trans": [
+      "n. 脾气暴躁的老妇人,老泼妇"
+    ]
+  },
+  {
+    "name": "hasten",
+    "trans": [
+      "vt. 催促；使赶紧；加速; vi. 赶快；急忙 时 态: hastened, hastening, hastens"
+    ]
+  },
+  {
+    "name": "haunting",
+    "trans": [
+      "adj. 不易忘怀的，萦绕于心头的；给人以强烈感受的; v. 常去；缠住某人；萦绕在…心中"
+    ]
+  },
+  {
+    "name": "havoc",
+    "trans": [
+      "n. 大破坏；浩劫；蹂躏; vt. 严重破坏; vi. 损毁 Havoc〈美〉夜间轰击机,中型轰炸机时 态: havocked, havocking, havocs"
+    ]
+  },
+  {
+    "name": "headline",
+    "trans": [
+      "n. 大字标题; 新闻提要 时 态: headlined, headlining, headlines"
+    ]
+  },
+  {
+    "name": "headquarters",
+    "trans": [
+      "n. 总部, 总店; 司令部, 指挥部"
+    ]
+  },
+  {
+    "name": "heady",
+    "trans": [
+      "adj. 易使人醉〔发晕〕的；令人陶醉的; adv. 陶醉地；兴奋地; n. 陶醉；兴奋 比较级: headier，headiest 副 词: headily 名 词: ..."
+    ]
+  },
+  {
+    "name": "hedge",
+    "trans": [
+      "vt. 用树篱笆围住；避免作正面答复; vi. 用树篱围住；避免作正面答复; n. 树篱；障碍 时 态: hedged, hedging, hedges 名 词: hed..."
+    ]
+  },
+  {
+    "name": "hiccup",
+    "trans": [
+      "n. 嗝，呃逆; 连续地打嗝; 暂时性的小问题；短暂的停顿 时 态: hiccupped also hiccoughed hiccupping hiccoughing hiccups ..."
+    ]
+  },
+  {
+    "name": "hierarchy",
+    "trans": [
+      "n. 等级制度; 统治集团, 领导层"
+    ]
+  },
+  {
+    "name": "hiker",
+    "trans": [
+      "n. 远足者, 长途旅行者"
+    ]
+  },
+  {
+    "name": "hindquarters",
+    "trans": [
+      "n. 后臀及后腿"
+    ]
+  },
+  {
+    "name": "hindrance",
+    "trans": [
+      "n. 起妨碍作用的事物或人"
+    ]
+  },
+  {
+    "name": "homogenous",
+    "trans": [
+      "adj. 同质的,纯系的"
+    ]
+  },
+  {
+    "name": "honoraria",
+    "trans": [
+      "谢礼"
+    ]
+  },
+  {
+    "name": "hormonal",
+    "trans": [
+      "adj. 荷尔蒙的,激素的"
+    ]
+  },
+  {
+    "name": "hostile",
+    "trans": [
+      "adj. 怀有敌意的, 不友善的; 敌人的, 敌方的"
+    ]
+  },
+  {
+    "name": "hover",
+    "trans": [
+      "vi. 盘旋; 徘徊, 走来走去; 犹豫, 摇摆不定 时 态: hovered, hovering, hovers 名 词: hoverer"
+    ]
+  },
+  {
+    "name": "hunch",
+    "trans": [
+      "n. 预感；大块；肉峰 vt. 耸肩；预感到；弯腰驼背 vi. 隆起；向前移动时 态: hunched, hunching, hunches"
+    ]
+  },
+  {
+    "name": "hurdle",
+    "trans": [
+      "n. 障碍；跳栏；栏; vt. 克服; vi. 克服；跳过 时 态: hurdled, hurdling, hurdles 名 词: hurdler"
+    ]
+  },
+  {
+    "name": "hydropower",
+    "trans": [
+      "n. 水力发出的电力"
+    ]
+  },
+  {
+    "name": "hype",
+    "trans": [
+      "n. 天花乱坠的广告宣传; vt. 大肆宣传; 夸张地宣传; 人为地刺激,助长; 十分兴奋的；很激动的；十分担忧的; 被大肆宣扬的 时 态: hyped, hyping, hypes"
+    ]
+  },
+  {
+    "name": "hypnotic",
+    "trans": [
+      "adj. 催眠的，催眠术的；易于催眠的; n. 安眠药；催眠状态的人 副 词: hypnotically"
+    ]
+  },
+  {
+    "name": "iconic",
+    "trans": [
+      "adj. 图标的，形象的"
+    ]
+  },
+  {
+    "name": "idiom",
+    "trans": [
+      "n. 成语，习语；土话"
+    ]
+  },
+  {
+    "name": "idiosyncratic",
+    "trans": [
+      "adj. 特殊物质的,特殊的,异质的"
+    ]
+  },
+  {
+    "name": "idyllic",
+    "trans": [
+      "adj. 牧歌的，田园诗的"
+    ]
+  },
+  {
+    "name": "illusion",
+    "trans": [
+      "n. 错觉, 幻想, 错误观念; 假象 形容词: illusionless"
+    ]
+  },
+  {
+    "name": "imitation",
+    "trans": [
+      "n. 模仿, 仿效; 仿制品, 伪造物 形容词: imitational"
+    ]
+  },
+  {
+    "name": "immerse",
+    "trans": [
+      "vt. 沉浸；使陷入 时 态: immersed, immersing, immerses"
+    ]
+  },
+  {
+    "name": "immigration",
+    "trans": [
+      "n. 移民局检查站; 移民"
+    ]
+  },
+  {
+    "name": "impartial",
+    "trans": [
+      "adj. 不偏不倚的；公平的，公正的 名 词: impartiality 副 词: impartially"
+    ]
+  },
+  {
+    "name": "impede",
+    "trans": [
+      "vt. 阻止；妨碍；阻碍 时 态: impeded, impeding, impedes"
+    ]
+  },
+  {
+    "name": "imperative",
+    "trans": [
+      "adj. 必要的, 紧急的, 极重要的; 命令的; 祈使的; n. 必要的事, 必须完成的事; 祈使语气 副 词: imperatively"
+    ]
+  },
+  {
+    "name": "impetus",
+    "trans": [
+      "n. 促进；动力；冲力"
+    ]
+  },
+  {
+    "name": "impinge",
+    "trans": [
+      "vi. 撞击；侵犯; vt. 撞击 时 态: impinged, impinging, impinges 名 词: impingement 名 词: imping..."
+    ]
+  },
+  {
+    "name": "implicate",
+    "trans": [
+      "vt. 牵连, 涉及时 态: implicated, implicating, implicates"
+    ]
+  },
+  {
+    "name": "importation",
+    "trans": [
+      "n. 进口;输入; 进口货;输入物"
+    ]
+  },
+  {
+    "name": "impoverished",
+    "trans": [
+      "adj. 穷困的,无力的,用尽了的"
+    ]
+  },
+  {
+    "name": "improvise",
+    "trans": [
+      "vt. & vi. 临时制作, 临时凑成时 态: improvised, improvising, improvises 名 词: improviser"
+    ]
+  },
+  {
+    "name": "inaccessible",
+    "trans": [
+      "adj. 达不到的, 不可及的名 词: inaccessibility 副 词: inaccessibly"
+    ]
+  },
+  {
+    "name": "inaugurate",
+    "trans": [
+      "vt. 为…举行就职典礼; 为…举行仪式, 为…举行落成仪式; 开创, 创始 时 态: inaugurated, inaugurating, inaugurates 名 词: ..."
+    ]
+  },
+  {
+    "name": "incapacitate",
+    "trans": [
+      "vt. 使无能力,使不适合时 态: incapacitated, incapacitating, incapacitates 名 词: incapacitation"
+    ]
+  },
+  {
+    "name": "incineration",
+    "trans": [
+      "n. 焚化;烧成灰"
+    ]
+  },
+  {
+    "name": "inclination",
+    "trans": [
+      "n. 爱好, 癖好, 意向; 倾向, 趋向, 趋势; 倾斜, 弯腰, 曲身, 点头; 斜坡, 斜面"
+    ]
+  },
+  {
+    "name": "incompatible",
+    "trans": [
+      "adj. 合不来的，不能和谐相处的；不协调的，不相配的副 词: incompatibly"
+    ]
+  },
+  {
+    "name": "incongruous",
+    "trans": [
+      "adj. 不协调的, 不和谐的, 不一致的, 不相称的副 词: incongruously"
+    ]
+  },
+  {
+    "name": "incredible",
+    "trans": [
+      "adj. 不能相信的, 不可信的; 〈非正〉难以置信的, 不可思议的, 惊人的 副 词: incredibly"
+    ]
+  },
+  {
+    "name": "increment",
+    "trans": [
+      "n. 增长; 增额 形容词: incremental"
+    ]
+  },
+  {
+    "name": "inedible",
+    "trans": [
+      "adj. 不能吃的 名 词: inedibility"
+    ]
+  },
+  {
+    "name": "infirmity",
+    "trans": [
+      "n. 体弱，虚弱; 疾病，病症"
+    ]
+  },
+  {
+    "name": "inflation",
+    "trans": [
+      "n. 膨胀; 通货膨胀"
+    ]
+  },
+  {
+    "name": "inflict",
+    "trans": [
+      "vt. 把…强加给, 使承受, 遭受时 态: inflicted, inflicting, inflicts 形容词: inflictive"
+    ]
+  },
+  {
+    "name": "influenza",
+    "trans": [
+      "n. 流行性感冒"
+    ]
+  },
+  {
+    "name": "innate",
+    "trans": [
+      "adj. 先天的；固有的；与生俱来的 副 词: innately 名 词: innateness"
+    ]
+  },
+  {
+    "name": "innocent",
+    "trans": [
+      "adj. 无罪的；无辜的；无知的; n. 天真的人；笨蛋 副 词: innocently"
+    ]
+  },
+  {
+    "name": "instalment",
+    "trans": [
+      "n. 一部分；一集; 每一期摊付的款项，分期付款"
+    ]
+  },
+  {
+    "name": "intent",
+    "trans": [
+      "n. 意图；目的；含义; adj. 专心的；急切的；坚决的 副 词: intently 名 词: intentness"
+    ]
+  },
+  {
+    "name": "interchangeable",
+    "trans": [
+      "adj. 可交换的,可互换的,可交替的; n. 可交换性,可交替性,互换性; adv. 可交换地,可交替地 副 词: interchangeably"
+    ]
+  },
+  {
+    "name": "interdependence",
+    "trans": [
+      "n. 互相依赖"
+    ]
+  },
+  {
+    "name": "interminable",
+    "trans": [
+      "adj. 持续得过长的; n. 没完没了; adv. 漫无止境地,没完没了地 副 词: interminably"
+    ]
+  },
+  {
+    "name": "intermittently",
+    "trans": [
+      "adv. 间歇地"
+    ]
+  },
+  {
+    "name": "intermix",
+    "trans": [
+      "vt. 使…混杂；使…混合; vi. 混杂；混和 时 态: intermixed, intermixing, intermixes"
+    ]
+  },
+  {
+    "name": "intermodal",
+    "trans": [
+      "adj. 联合运输的"
+    ]
+  },
+  {
+    "name": "internationalist",
+    "trans": [
+      "n. 国际主义者"
+    ]
+  },
+  {
+    "name": "interpreter",
+    "trans": [
+      "n. 口译工作者;口译译员; 演绎的人; 解释程序"
+    ]
+  },
+  {
+    "name": "interruption",
+    "trans": [
+      "n. 中断, 打断; 障碍物, 打岔的事"
+    ]
+  },
+  {
+    "name": "intrusion",
+    "trans": [
+      "n. 闯入；打扰; 干扰，干涉"
+    ]
+  },
+  {
+    "name": "inundation",
+    "trans": [
+      "n. 淹没，泛滥; 洪水; 扑来；压倒"
+    ]
+  },
+  {
+    "name": "invalid",
+    "trans": [
+      "adj. 无适当根据的; 无用的, 无效的; adj. 有病的; n. 病人, 残疾者 时 态: invalided, invaliding, invalids 名 词: i..."
+    ]
+  },
+  {
+    "name": "invaluable",
+    "trans": [
+      "adj. 无法估计的, 非常宝贵的副 词: invaluably"
+    ]
+  },
+  {
+    "name": "inventory",
+    "trans": [
+      "n. 详细目录, 存货清单"
+    ]
+  },
+  {
+    "name": "irrelevant",
+    "trans": [
+      "adj. 不相干的,不相关的副 词: irrelevantly"
+    ]
+  },
+  {
+    "name": "irresistible",
+    "trans": [
+      "adj. 不可抵抗的；不能压制的；极为诱人的 副 词: irresistibly"
+    ]
+  },
+  {
+    "name": "irrevocable",
+    "trans": [
+      "adj. 不可改变的, 不可反转的副 词: irrevocably"
+    ]
+  },
+  {
+    "name": "irrigate",
+    "trans": [
+      "vt. 灌溉；冲洗；使清新; vi. 灌溉；冲洗 时 态: irrigated, irrigating, irrigates 名 词: irrigation 名 词:..."
+    ]
+  },
+  {
+    "name": "jealously",
+    "trans": [
+      "adv. 妒忌地,猜疑地"
+    ]
+  },
+  {
+    "name": "jerky",
+    "trans": [
+      "adj. 急拉的；忽动忽停的; 愚蠢的；呆笨的 比较级: jerkier，jerkiest 副 词: jerkily 名 词: jerkiness"
+    ]
+  },
+  {
+    "name": "jolt",
+    "trans": [
+      "vt. & vi. 摇动；震惊 Jolt灭克磷时 态: jolted，jolting，jolts 名 词: jolter 副 词: joltily 形容词: ..."
+    ]
+  },
+  {
+    "name": "judicious",
+    "trans": [
+      "adj. 明智的;明断的副 词: judiciously"
+    ]
+  },
+  {
+    "name": "judo",
+    "trans": [
+      "n. 柔道; adj. 柔道的；柔道术的 名 词: judoist"
+    ]
+  },
+  {
+    "name": "jury",
+    "trans": [
+      "n. 陪审团；评判委员会; adj. 应急的"
+    ]
+  },
+  {
+    "name": "justification",
+    "trans": [
+      "n. 理由；辩护；认为有理，认为正当；释罪"
+    ]
+  },
+  {
+    "name": "kidney",
+    "trans": [
+      "n. 肾, 肾脏; 腰子"
+    ]
+  },
+  {
+    "name": "lantern",
+    "trans": [
+      "n. 灯笼；提灯；灯笼式天窗"
+    ]
+  },
+  {
+    "name": "largish",
+    "trans": [
+      "adj. 稍大的；相当大的"
+    ]
+  },
+  {
+    "name": "lash",
+    "trans": [
+      "vt. 鞭打；摆动；扎捆；冲击；煽动；讽刺; vi. 鞭打；猛击；急速甩动; n. 鞭打；睫毛；鞭子；责骂；讽刺 LASH载驳船时 态: lashed, lashing, la..."
+    ]
+  },
+  {
+    "name": "laundry",
+    "trans": [
+      "n. 洗衣店，洗衣房; 洗好的衣服；待洗的衣服"
+    ]
+  },
+  {
+    "name": "lawlessness",
+    "trans": [
+      "n. 不服从法律；不受法律制约；未实施法律; 目无法纪；非法，违法"
+    ]
+  },
+  {
+    "name": "lease",
+    "trans": [
+      "n. 租约；租期；租赁物；租赁权; vt. 出租；租得; vi. 出租 时 态: leased, leasing, leases 形容词: leasable 名 词:..."
+    ]
+  },
+  {
+    "name": "legacy",
+    "trans": [
+      "n. 遗产, 遗赠物; 遗留之物"
+    ]
+  },
+  {
+    "name": "legion",
+    "trans": [
+      "n. 古罗马军团; 众多, 大量"
+    ]
+  },
+  {
+    "name": "legitimate",
+    "trans": [
+      "adj. 合情合理的；合法的时 态: legitimated，legitimating，legitimates 副 词: legitimately 名 词: legi..."
+    ]
+  },
+  {
+    "name": "liberal",
+    "trans": [
+      "adj. 慷慨的；不拘泥的；宽大的；自由主义的; n. 自由主义者 副 词: liberally"
+    ]
+  },
+  {
+    "name": "lightweight",
+    "trans": [
+      "adj. 轻量的，薄型的; 不严肃的；给人印象不深的; n. 轻量级拳击手; 体重低于通常重量的人；比通常重量轻的东西; 无足轻重的人〔事〕；没有影响力的人〔事〕"
+    ]
+  },
+  {
+    "name": "liken",
+    "trans": [
+      "vt. 把…比作；比拟 时 态: likened, likening, likens"
+    ]
+  },
+  {
+    "name": "lingual",
+    "trans": [
+      "adj. 语言的；舌的，舌音的; n. 舌音，舌音字 副 词: lingually"
+    ]
+  },
+  {
+    "name": "literal",
+    "trans": [
+      "adj. 逐字的；无夸张的；文字的 名 词: literalness"
+    ]
+  },
+  {
+    "name": "literary",
+    "trans": [
+      "adj. 文学的；精通文学的；书面的 副 词: literarily 名 词: literariness"
+    ]
+  },
+  {
+    "name": "loath",
+    "trans": [
+      "adj. 勉强的；不情愿的"
+    ]
+  },
+  {
+    "name": "lopsidedness",
+    "trans": [
+      "n. 不匀称,倾向一方"
+    ]
+  },
+  {
+    "name": "loyal",
+    "trans": [
+      "adj. 忠诚的，忠心的；忠贞的; n. 效忠的臣民；忠实信徒 副 词: loyally"
+    ]
+  },
+  {
+    "name": "lucrative",
+    "trans": [
+      "adj. 获利多的, 赚钱的"
+    ]
+  },
+  {
+    "name": "lunatic",
+    "trans": [
+      "adj. 精神错乱的；疯狂的；愚蠢的; n. 疯子；疯人 名 词: lunatic"
+    ]
+  },
+  {
+    "name": "luxuriant",
+    "trans": [
+      "adj. 茂盛的，郁郁葱葱的; 奢华的，华丽的 名 词: luxuriance 副 词: luxuriantly"
+    ]
+  },
+  {
+    "name": "magnify",
+    "trans": [
+      "vt. 放大；赞美；夸大; vi. 放大；有放大能力 时 态: magnified, magnifying, magnifies"
+    ]
+  },
+  {
+    "name": "mainline",
+    "trans": [
+      "n. 静脉注射时 态: mainlined, mainlining, mainlines 名 词: mainliner"
+    ]
+  },
+  {
+    "name": "majestic",
+    "trans": [
+      "adj. 雄伟的, 威严的; 壮丽的 副 词: majestically"
+    ]
+  },
+  {
+    "name": "malnourished",
+    "trans": [
+      "adj. 营养失调的,营养不良的"
+    ]
+  },
+  {
+    "name": "mandate",
+    "trans": [
+      "n. 授权; 正式命令; vt. 将委托某国管理; 授权根据委托统治权 时 态: mandated, mandating, mandates 名 词: mandator"
+    ]
+  },
+  {
+    "name": "mansion",
+    "trans": [
+      "n. 宅第，公馆；大厦"
+    ]
+  },
+  {
+    "name": "manufacturable",
+    "trans": [
+      "adj. 可制造的"
+    ]
+  },
+  {
+    "name": "manure",
+    "trans": [
+      "vt. 施肥于；耕种; n. 肥料；粪肥 时 态: manured, manuring, manures"
+    ]
+  },
+  {
+    "name": "mechanics",
+    "trans": [
+      "n. 力学;机械学; 机件;过程;方法"
+    ]
+  },
+  {
+    "name": "mess",
+    "trans": [
+      "vt. 弄脏；弄乱; n. 杂乱，脏乱；脏东西; 不整洁的人; 粪便 时 态: messed，messing，messes"
+    ]
+  },
+  {
+    "name": "meticulously",
+    "trans": [
+      "adv. 胆小地"
+    ]
+  },
+  {
+    "name": "miniature",
+    "trans": [
+      "adj. 很小的；微型的；小型的; n. 缩微模型；微型复制品; 微型画；小画像; 小瓶装烈酒 名 词: miniaturist"
+    ]
+  },
+  {
+    "name": "minus",
+    "trans": [
+      "prep. 没有, 缺少, 差; 减去; 在零度以下; n. 减号, 负号; 不利, 不足, 缺点; adj. 负的; 不利的; 略低于某标准的"
+    ]
+  },
+  {
+    "name": "momentum",
+    "trans": [
+      "n. 动力；动量；冲力；势头 复 数: momenta"
+    ]
+  },
+  {
+    "name": "monotonous",
+    "trans": [
+      "adj. 无变化的, 单调乏味的副 词: monotonously"
+    ]
+  },
+  {
+    "name": "moody",
+    "trans": [
+      "adj. 喜怒无常的；易怒的；郁郁寡欢的 Moody穆迪比较级: moodier, moodiest 副 词: moodily 名 词: moodiness"
+    ]
+  },
+  {
+    "name": "morale",
+    "trans": [
+      "n. 士气，斗志"
+    ]
+  },
+  {
+    "name": "mutate",
+    "trans": [
+      "vt. & vi. 变化, 转变, 突变, 变异时 态: mutated, mutating, mutates 形容词: mutative"
+    ]
+  },
+  {
+    "name": "myriad",
+    "trans": [
+      "adj. 无数的；种种的; n. 无数，极大数量；无数的人或物"
+    ]
+  },
+  {
+    "name": "mystical",
+    "trans": [
+      "adj. 神秘的,奥秘的副 词: mystically"
+    ]
+  },
+  {
+    "name": "mystify",
+    "trans": [
+      "vt. 使神秘化；使迷惑，使困惑 时 态: mystified, mystifying, mystifies"
+    ]
+  },
+  {
+    "name": "naive",
+    "trans": [
+      "adj. 幼稚的; 无经验的; 单纯的; 天真的; 轻信的 副 词: naively"
+    ]
+  },
+  {
+    "name": "narration",
+    "trans": [
+      "n. 叙述，讲述；故事"
+    ]
+  },
+  {
+    "name": "nasty",
+    "trans": [
+      "adj. 下流的；肮脏的；脾气不好的；险恶的; n. 令人不快的事物; 性的吸引力 比较级: nastier, nastiest 副 词: nastily 名 词: ..."
+    ]
+  },
+  {
+    "name": "natty",
+    "trans": [
+      "adj. 整洁漂亮的; 潇洒的,灵巧的 比较级: nattier, nattiest 副 词: nattily 名 词: nattiness"
+    ]
+  },
+  {
+    "name": "naturalistic",
+    "trans": [
+      "adj. 自然的,自然主义的,博物学的"
+    ]
+  },
+  {
+    "name": "neatness",
+    "trans": [
+      "n. 整洁;干净"
+    ]
+  },
+  {
+    "name": "needy",
+    "trans": [
+      "adj. 贫穷的；贫困的；生活艰苦的 比较级: needier, neediest 名 词: neediness"
+    ]
+  },
+  {
+    "name": "negotiation",
+    "trans": [
+      "n. 协商，谈判; 完成；通过"
+    ]
+  },
+  {
+    "name": "niggle",
+    "trans": [
+      "vi. 拘泥小节；为琐事费时；挑剔; vt. 小气地给…；玩忽 时 态: niggled, niggling, niggles 名 词: niggler"
+    ]
+  },
+  {
+    "name": "nomadic",
+    "trans": [
+      "adj. 游牧的；流浪的；游动的"
+    ]
+  },
+  {
+    "name": "nominal",
+    "trans": [
+      "adj. 名义上的，有名无实的; 很少的；象征性的 副 词: nominally"
+    ]
+  },
+  {
+    "name": "nonpolitical",
+    "trans": [
+      "adj. 非政治性的"
+    ]
+  },
+  {
+    "name": "nonrefundable",
+    "trans": [
+      "adj. 不可归还的"
+    ]
+  },
+  {
+    "name": "nonsense",
+    "trans": [
+      "n. 谬论；胡扯；胡言乱语；愚蠢的行为；冒失；不可接受的行为；毫无意义的话；没有意义的文章; int. 荒唐"
+    ]
+  },
+  {
+    "name": "noticeably",
+    "trans": [
+      "adv. 显著地,明显地"
+    ]
+  },
+  {
+    "name": "notification",
+    "trans": [
+      "n. 通知, 通知单, 通知书"
+    ]
+  },
+  {
+    "name": "novelty",
+    "trans": [
+      "n. 新颖; 新奇性; 新奇的人; 新颖小巧而价廉的物品"
+    ]
+  },
+  {
+    "name": "nuisance",
+    "trans": [
+      "n. 讨厌的东西"
+    ]
+  },
+  {
+    "name": "numerate",
+    "trans": [
+      "vt. 读；数，列举; adj. 识数的，会计算的 时 态: numerated, numerating, numerates 名 词: numeracy"
+    ]
+  },
+  {
+    "name": "obedient",
+    "trans": [
+      "adj. 顺从的; 服从的副 词: obediently"
+    ]
+  },
+  {
+    "name": "obnoxious",
+    "trans": [
+      "adj. 极不愉快的;讨厌的;可憎的; adv. 令人非常不快地;引起反感地; n. 讨厌;可恶"
+    ]
+  },
+  {
+    "name": "obsession",
+    "trans": [
+      "n. 困扰, 无法摆脱的思想形容词: obsessional 副 词: obsessionally"
+    ]
+  },
+  {
+    "name": "oddly",
+    "trans": [
+      "adv. 古怪地；奇妙地；单数地"
+    ]
+  },
+  {
+    "name": "offence",
+    "trans": [
+      "n. 攻击；违反；犯罪；过错"
+    ]
+  },
+  {
+    "name": "oily",
+    "trans": [
+      "adj. 油的；油滑的；油腔滑调的；油质的 比较级: oilier, oiliest 副 词: oilily 名 词: oiliness"
+    ]
+  },
+  {
+    "name": "onset",
+    "trans": [
+      "n. 开始; 攻击,袭击"
+    ]
+  },
+  {
+    "name": "onshore",
+    "trans": [
+      "adj. 海岸的；在岸上的，在近岸处的; 朝着岸的，向陆的"
+    ]
+  },
+  {
+    "name": "onslaught",
+    "trans": [
+      "n. 猛攻, 攻击"
+    ]
+  },
+  {
+    "name": "ornamental",
+    "trans": [
+      "adj. 装饰的,装饰用的副 词: ornamentally"
+    ]
+  },
+  {
+    "name": "outing",
+    "trans": [
+      "n. 远足；短途旅游；体育比赛; adj. 远足适用的; v. 出来；暴露"
+    ]
+  },
+  {
+    "name": "overbearing",
+    "trans": [
+      "adj. 专横的,傲慢的; 难忍的"
+    ]
+  },
+  {
+    "name": "overcrowded",
+    "trans": [
+      "; adj. 过于拥挤的"
+    ]
+  },
+  {
+    "name": "overdone",
+    "trans": [
+      "v. 把…煮得过久；过于劳累；把…做得过度; adj. 煮得太久的；做得过分的"
+    ]
+  },
+  {
+    "name": "overlying",
+    "trans": [
+      "overlie的现在分词"
+    ]
+  },
+  {
+    "name": "overnight",
+    "trans": [
+      "adv. 在晚上，在夜里; 突然，很快; adj. 一整夜的，晚上的; 突然的；很快的 时 态: overnighted，overnighting，overnights"
+    ]
+  },
+  {
+    "name": "overshadow",
+    "trans": [
+      "vt. 使被遮暗；使阴暗; 使令人不快或减少乐趣; 使相形见绌或黯然失色 时 态: overshadowed，overshadowing，overshadows"
+    ]
+  },
+  {
+    "name": "overstaffed",
+    "trans": [
+      "adj. 超编的，人浮于事的"
+    ]
+  },
+  {
+    "name": "overstate",
+    "trans": [
+      "vt. 夸大时 态: overstated, overstating, overstates 名 词: overstatement"
+    ]
+  },
+  {
+    "name": "oxygenated",
+    "trans": [
+      "充了氧的"
+    ]
+  },
+  {
+    "name": "painstaking",
+    "trans": [
+      "adj. 极小心的；辛勤的，辛苦的副 词: painstakingly"
+    ]
+  },
+  {
+    "name": "pamper",
+    "trans": [
+      "vt. 纵容；宠；娇养时 态: pampered，pampering，pampers 名 词: pamperer"
+    ]
+  },
+  {
+    "name": "pamphlet",
+    "trans": [
+      "n. 小册子"
+    ]
+  },
+  {
+    "name": "panting",
+    "trans": [
+      "adj. 喘气的; v. 脉动,波动,晃动,振动"
+    ]
+  },
+  {
+    "name": "parade",
+    "trans": [
+      "n. 游行；阅兵；行进；炫耀；阅兵场; vt. 炫耀；游行；列队行进; vi. 游行；列队行进；炫耀 时 态: paraded, parading, parades 名 词:..."
+    ]
+  },
+  {
+    "name": "paradoxical",
+    "trans": [
+      "adj. 事与愿违的; 出乎意料的; 怪诞的; 自相矛盾的"
+    ]
+  },
+  {
+    "name": "paralysed",
+    "trans": [
+      "麻痹的;惊呆的"
+    ]
+  },
+  {
+    "name": "paramount",
+    "trans": [
+      "adj. 最高的，至上的；首要的，主要的名 词: paramountcy"
+    ]
+  },
+  {
+    "name": "paternal",
+    "trans": [
+      "adj. 父亲的；得自父亲的；父亲般的 副 词: paternally"
+    ]
+  },
+  {
+    "name": "patriotic",
+    "trans": [
+      "adj. 爱国的, 有爱国心的"
+    ]
+  },
+  {
+    "name": "patronage",
+    "trans": [
+      "n. 支持，资助；赞助; 惠顾；光顾; 互惠互利"
+    ]
+  },
+  {
+    "name": "pavilion",
+    "trans": [
+      "n. 大帐篷；阁；亭子；展示馆; vt. 搭帐篷；置…于亭中；笼罩 时 态: pavilioned, pavilioning, pavilions"
+    ]
+  },
+  {
+    "name": "paycheck",
+    "trans": [
+      "n. 付薪水的支票，薪水"
+    ]
+  },
+  {
+    "name": "peninsula",
+    "trans": [
+      "n. 半岛形容词: peninsular"
+    ]
+  },
+  {
+    "name": "peril",
+    "trans": [
+      "n. 危险；冒险; vt. 危及；置…于险境 时 态: periled also perilled periling perilling perils perils"
+    ]
+  },
+  {
+    "name": "periodic",
+    "trans": [
+      "adj. 周期的，定期的 副 词: periodically"
+    ]
+  },
+  {
+    "name": "peripherally",
+    "trans": [
+      "adv. 外围地,外面地"
+    ]
+  },
+  {
+    "name": "perish",
+    "trans": [
+      "vt. 使麻木；毁坏; vi. 死亡；毁灭；腐烂；枯萎 时 态: perished, perishing, perishes"
+    ]
+  },
+  {
+    "name": "perquisite",
+    "trans": [
+      "n. 财务补贴,额外收入,津贴,奖金,小费; 好处,利益,便利,特权,优待"
+    ]
+  },
+  {
+    "name": "persevere",
+    "trans": [
+      "vi. 坚忍, 坚持时 态: persevered, persevering, perseveres 副 词: perseveringly"
+    ]
+  },
+  {
+    "name": "persistently",
+    "trans": [
+      "adv. 坚持不放弃地;持续不断地;频繁地"
+    ]
+  },
+  {
+    "name": "peruse",
+    "trans": [
+      "vt. 详细考察；精读 时 态: perused, perusing, peruses 名 词: perusal 名 词: peruser"
+    ]
+  },
+  {
+    "name": "pervasive",
+    "trans": [
+      "adj. 无处不在的;遍布的;充斥各处的; adv. 无处不在地;遍布地; n. 无处不在;遍布"
+    ]
+  },
+  {
+    "name": "perversely",
+    "trans": [
+      "adv. 倔强地"
+    ]
+  },
+  {
+    "name": "physiology",
+    "trans": [
+      "n. 生理学名 词: physiologist"
+    ]
+  },
+  {
+    "name": "pickings",
+    "trans": [
+      "n. 不义之财；轻易取得之财"
+    ]
+  },
+  {
+    "name": "pictorial",
+    "trans": [
+      "adj. 以图画表示的;有画面的副 词: pictorially"
+    ]
+  },
+  {
+    "name": "picturesque",
+    "trans": [
+      "adj. 美丽的，有趣的，风景如画的; 生动的；活泼的 副 词: picturesquely 名 词: picturesqueness"
+    ]
+  },
+  {
+    "name": "piercing",
+    "trans": [
+      "adj. 尖锐的;刺耳的; 刺骨的;穿透的"
+    ]
+  },
+  {
+    "name": "pinprick",
+    "trans": [
+      "n. 针刺的孔,小孔,小烦恼时 态: pinpricked, pinpricking, pinpricks"
+    ]
+  },
+  {
+    "name": "plagiarise",
+    "trans": [
+      "vt. 剽窃,抄袭"
+    ]
+  },
+  {
+    "name": "playmate",
+    "trans": [
+      "n. 游伴；玩伴"
+    ]
+  },
+  {
+    "name": "plight",
+    "trans": [
+      "n. 困境；境况；誓约; vt. 保证；约定 时 态: plighted, plighting, plights"
+    ]
+  },
+  {
+    "name": "plunge",
+    "trans": [
+      "n. 投入；跳进; vi. 投入；跳进；陷入; vt. 使陷入；使投入；使插入 时 态: plunged, plunging, plunges"
+    ]
+  },
+  {
+    "name": "plush",
+    "trans": [
+      "adj. 豪华的；长毛绒做的；舒服的; n. 长毛绒 比较级: plusher, plushest"
+    ]
+  },
+  {
+    "name": "poised",
+    "trans": [
+      "adj. 处于不稳定的状态之中; 准备行动的; 似悬着不动的; 小心地平衡着的; 沉着的;镇定的"
+    ]
+  },
+  {
+    "name": "pole",
+    "trans": [
+      "n. 柱子；杆子；棍；杖; 极；地极; 磁极；电极; 截然相反的两极之一；极端; v. 用篙撑船；摆船 Polen. 波兰人时 态: poled, poling, poles"
+    ]
+  },
+  {
+    "name": "poll",
+    "trans": [
+      "n. 民意测验；投票；投票数；投票所; vt. 剪短；对…进行民意测验；获得选票；投票; vi. 投票; adj. 剪过毛的；修过枝的；无角的 时 态: polled, polli..."
+    ]
+  },
+  {
+    "name": "pollinate",
+    "trans": [
+      "vt. 给…传授花粉时 态: pollinated also pollenated pollinating pollenating pollinates pollenates 名 ..."
+    ]
+  },
+  {
+    "name": "populace",
+    "trans": [
+      "n. 百姓, 平民"
+    ]
+  },
+  {
+    "name": "porous",
+    "trans": [
+      "adj. 能渗透的；有气孔的；多孔渗水的 名 词: porousness"
+    ]
+  },
+  {
+    "name": "portrayal",
+    "trans": [
+      "n. 画像，描述；描写，扮演；描摹，表现"
+    ]
+  },
+  {
+    "name": "pragmatic",
+    "trans": [
+      "adj. 务实的；实事求是的；注重实效的; 实用主义的，实用主义观点的 形容词: pragmatical"
+    ]
+  },
+  {
+    "name": "precarious",
+    "trans": [
+      "adj. 依靠机会的; 不确定的; 不安全的; 不稳固的 副 词: precariously"
+    ]
+  },
+  {
+    "name": "precedent",
+    "trans": [
+      "n. 先例；前例 adj. 在前的；在先的"
+    ]
+  },
+  {
+    "name": "predicate",
+    "trans": [
+      "vt. 断言；断定; n. 谓语 时 态: predicated, predicating, predicates 名 词: predication 形容词: pre..."
+    ]
+  },
+  {
+    "name": "predominate",
+    "trans": [
+      "vi. 占支配地位; vt. 在…中占优势 时 态: predominated, predominating, predominates 名 词: predomination"
+    ]
+  },
+  {
+    "name": "preferably",
+    "trans": [
+      "adv. 更可取地;更好地;宁可"
+    ]
+  },
+  {
+    "name": "premature",
+    "trans": [
+      "adj. 过早的, 提前的, 未到期的; 早产的 副 词: prematurely"
+    ]
+  },
+  {
+    "name": "premium",
+    "trans": [
+      "n. 奖金，津贴；加价；附加费；保险费；额外费用; adj. 高级的；优质的，顶级的"
+    ]
+  },
+  {
+    "name": "preoccupation",
+    "trans": [
+      "n. 全神贯注，入神; 当务之急；使人全神贯注的事物"
+    ]
+  },
+  {
+    "name": "prepay",
+    "trans": [
+      "vt. 预付；提前缴纳 时 态: prepaid, prepaying, prepays 名 词: prepayment"
+    ]
+  },
+  {
+    "name": "presently",
+    "trans": [
+      "adv. 不久, 一会儿; 现在, 目前"
+    ]
+  },
+  {
+    "name": "pretender",
+    "trans": [
+      "n. 觊觎高位者"
+    ]
+  },
+  {
+    "name": "preventative",
+    "trans": [
+      "adj. 预防性的"
+    ]
+  },
+  {
+    "name": "primal",
+    "trans": [
+      "adj. 最初的；原始的；主要的; n. 被压抑童年情绪的释放; vt. 释放 名 词: primality"
+    ]
+  },
+  {
+    "name": "pristine",
+    "trans": [
+      "adj. 原始状态的；未受损的; 新鲜而纯净的，清新的; 原始的；远古的"
+    ]
+  },
+  {
+    "name": "probe",
+    "trans": [
+      "n. 探针；调查; vi. 调查；探测; vt. 探查；用探针探测 时 态: probed, probing, probes 名 词: prober"
+    ]
+  },
+  {
+    "name": "processor",
+    "trans": [
+      "n. 加工、处理事物的人〔设备、产业〕; 中央处理器; 数据处理机"
+    ]
+  },
+  {
+    "name": "procrastination",
+    "trans": [
+      "n. 延迟,拖延"
+    ]
+  },
+  {
+    "name": "prodigious",
+    "trans": [
+      "adj. 异常的，惊人的，奇异的；巨大的; adv. 异常地，惊人地；巨大地"
+    ]
+  },
+  {
+    "name": "profitably",
+    "trans": [
+      "adv. 有利地;有益地"
+    ]
+  },
+  {
+    "name": "progressively",
+    "trans": [
+      "adv. 前进地;日益增加地"
+    ]
+  },
+  {
+    "name": "prohibitive",
+    "trans": [
+      "adj. 禁止使用或购买的,禁止性的; 高得买不起的; 禁止的; adv. 禁止地; n. 禁止 副 词: prohibitively"
+    ]
+  },
+  {
+    "name": "projector",
+    "trans": [
+      "n. 电影放映机, 幻灯机"
+    ]
+  },
+  {
+    "name": "proliferate",
+    "trans": [
+      "vi. 激增；繁殖；增生; 扩散 时 态: proliferated，proliferating，proliferates 名 词: proliferation 形容词:..."
+    ]
+  },
+  {
+    "name": "prominence",
+    "trans": [
+      "n. 声望，杰出; 突出；重要；要事"
+    ]
+  },
+  {
+    "name": "pronunciation",
+    "trans": [
+      "n. 发音; 读法; 发音, 发音方式"
+    ]
+  },
+  {
+    "name": "prop",
+    "trans": [
+      "n. 支柱, 支柱物; vt. 支撑, 支持, 维持 时 态: propped, propping, props"
+    ]
+  },
+  {
+    "name": "propellant",
+    "trans": [
+      "adj. 推进的; n. 推进物"
+    ]
+  },
+  {
+    "name": "prospectus",
+    "trans": [
+      "n. 章程,简章,简介"
+    ]
+  },
+  {
+    "name": "proximity",
+    "trans": [
+      "n. 接近, 附近"
+    ]
+  },
+  {
+    "name": "proxy",
+    "trans": [
+      "n. 代表权；代理权；代理人，代表 Proxy代理服务器，即Proxy服务器，在互联网上的完成跑腿服务。当你在浏览器中设置了某个Proxy服务器之后，由你的浏览器所发出的任何要求，都会被送..."
+    ]
+  },
+  {
+    "name": "puff",
+    "trans": [
+      "vt. 喷出，张开；夸张；使膨胀；使骄傲自满; vi. 张开；鼓吹；夸张；膨胀; n. 一阵喷烟；粉扑；泡芙；蓬松；肿块；吹嘘，宣传广告 时 态: puffed, puffing,..."
+    ]
+  },
+  {
+    "name": "puncture",
+    "trans": [
+      "n. 小孔；轮胎穿孔; vt. 在上穿孔；刺穿; 削弱；泄某人的气; vi. 被刺穿 时 态: punctured，puncturing，punctures 形容词: pun..."
+    ]
+  },
+  {
+    "name": "puppetry",
+    "trans": [
+      "n. 木偶；傀儡；木偶戏"
+    ]
+  },
+  {
+    "name": "purist",
+    "trans": [
+      "n. 纯化论者，力求纯化的人 形容词: puristic"
+    ]
+  },
+  {
+    "name": "pyrotechnics",
+    "trans": [
+      "n. 烟火制造术,烟火使用名 词: pyrotechnist"
+    ]
+  },
+  {
+    "name": "quest",
+    "trans": [
+      "n. 追求；寻找; vi. 寻找；追求; vt. 探索 时 态: quested, questing, quests 名 词: quester"
+    ]
+  },
+  {
+    "name": "quiz",
+    "trans": [
+      "n. 问答比赛; 〈尤美〉小测验 时 态: quizzed, quizzing, quizzes 名 词: quizzer"
+    ]
+  },
+  {
+    "name": "quote",
+    "trans": [
+      "vt. 引述；举证；报价; vi. 引用；引证；报价; n. 引用 时 态: quoted, quoting, quotes 名 词: quoter"
+    ]
+  },
+  {
+    "name": "rash",
+    "trans": [
+      "n. 发疹，疹子; adj. 太急速的；鲁莽的；轻率的 比较级: rasher，rashest 副 词: rashly 名 词: rashness"
+    ]
+  },
+  {
+    "name": "rationale",
+    "trans": [
+      "n. 理由;逻辑依据"
+    ]
+  },
+  {
+    "name": "reactive",
+    "trans": [
+      "adj. 反应的; 起反应的; 易起化学反应的,活性的 副 词: reactively"
+    ]
+  },
+  {
+    "name": "realm",
+    "trans": [
+      "n. 领域；范围; 王国，国度"
+    ]
+  },
+  {
+    "name": "reassure",
+    "trans": [
+      "vt. 消除恐惧或疑虑；恢复信心时 态: reassured，reassuring，reassures 名 词: reassurance 副 词: reassuring..."
+    ]
+  },
+  {
+    "name": "rebound",
+    "trans": [
+      "vi. 弹回；反弹; 产生反作用；未能奏效; 处于伤心困惑的状态，心灰意懒之余 时 态: rebounded，rebounding，rebounds 名 词: rebound..."
+    ]
+  },
+  {
+    "name": "recede",
+    "trans": [
+      "vi. 后退；减弱; vt. 归还 时 态: receded, receding, recedes"
+    ]
+  },
+  {
+    "name": "reciprocity",
+    "trans": [
+      "n. 相互性; 相互作用; 互给,互惠"
+    ]
+  },
+  {
+    "name": "reclaim",
+    "trans": [
+      "vt. 要求收回; 开拓；开垦; 从废料中回收; 纠正；教化，改造 时 态: reclaimed，reclaiming，reclaims 形容词: reclaimable"
+    ]
+  },
+  {
+    "name": "recourse",
+    "trans": [
+      "n. 追索权；依赖；救生索；求援，求助"
+    ]
+  },
+  {
+    "name": "rectify",
+    "trans": [
+      "vt. 改正；整流；精馏 时 态: rectified, rectifying, rectifies 形容词: rectifiable 名 词: rectificat..."
+    ]
+  },
+  {
+    "name": "recur",
+    "trans": [
+      "vi. 重现；复发；再来；采用；循环；递归 时 态: recurred, recurring, recurs 名 词: recurrence"
+    ]
+  },
+  {
+    "name": "referendum",
+    "trans": [
+      "n. 公民投票权；外交官请示书"
+    ]
+  },
+  {
+    "name": "refrain",
+    "trans": [
+      "vi. 制止；避免；节制，克制; n. 叠句，副歌；重复 时 态: refrained, refraining, refrains"
+    ]
+  },
+  {
+    "name": "regime",
+    "trans": [
+      "n. 政权，政体；社会制度；管理体制"
+    ]
+  },
+  {
+    "name": "rekindle",
+    "trans": [
+      "vt. 使再燃时 态: rekindled, rekindling, rekindles"
+    ]
+  },
+  {
+    "name": "relish",
+    "trans": [
+      "n. 滋味；风味；食欲；开胃小菜；含义; vt. 喜爱；品味；给…加佐料; vi. 有特定意味；味道可口 时 态: relished, relishing, relishes"
+    ]
+  },
+  {
+    "name": "repatriate",
+    "trans": [
+      "vt. 把遣送回国, 遣返时 态: repatriated, repatriating, repatriates 名 词: repatriation"
+    ]
+  },
+  {
+    "name": "repository",
+    "trans": [
+      "n. 仓库，贮藏室，存放处; 智囊，知识渊博的人，知识宝典"
+    ]
+  },
+  {
+    "name": "reputable",
+    "trans": [
+      "adj. 值得尊敬的;声誉好的; adv. 声誉好地 副 词: reputably"
+    ]
+  },
+  {
+    "name": "resilience",
+    "trans": [
+      "n. 弹回;弹性; 恢复力；适应力"
+    ]
+  },
+  {
+    "name": "reticence",
+    "trans": [
+      "n. 沉默寡言"
+    ]
+  },
+  {
+    "name": "revolve",
+    "trans": [
+      "vt. & vi. 旋转; 细想 时 态: revolved, revolving, revolves 形容词: revolvable"
+    ]
+  },
+  {
+    "name": "rift",
+    "trans": [
+      "n. 裂缝, 裂隙; 分裂, 不和 时 态: rifted, rifting, rifts"
+    ]
+  },
+  {
+    "name": "rig",
+    "trans": [
+      "n. 船桅的装置; 成套器械; vt. 给装配帆及索具; 用临时替代材料迅速搭起; 操纵, 垄断 时 态: rigged, rigging, rigs"
+    ]
+  },
+  {
+    "name": "rigid",
+    "trans": [
+      "adj. 严格的；僵硬的，死板的；坚硬的；精确的 副 词: rigidly 名 词: rigidness"
+    ]
+  },
+  {
+    "name": "rumour",
+    "trans": [
+      "n. 谣言; vt. 传闻"
+    ]
+  },
+  {
+    "name": "sabbatical",
+    "trans": [
+      "adj. 休假的;公休的; n. 学术休假"
+    ]
+  },
+  {
+    "name": "sack",
+    "trans": [
+      "n. 麻袋, 包; 一袋的量; 开除, 解雇; 洗劫, 劫掠; vt. 装入袋中; 解雇; 洗劫, 劫掠 时 态: sacked, sacking, sacks"
+    ]
+  },
+  {
+    "name": "salient",
+    "trans": [
+      "adj. 显著的,重要的,主要的; 凸出的; n. 凸角; 进攻或防卫阵地的突出部分"
+    ]
+  },
+  {
+    "name": "salon",
+    "trans": [
+      "n. 〈法〉店, 厅, 院; 沙龙"
+    ]
+  },
+  {
+    "name": "sampling",
+    "trans": [
+      "n. 抽样；取样; v. 取样；抽样"
+    ]
+  },
+  {
+    "name": "sanitary",
+    "trans": [
+      "adj. 卫生的，清洁的; n. 公共厕所 副 词: sanitarily"
+    ]
+  },
+  {
+    "name": "satisfactory",
+    "trans": [
+      "adj. 令人满意的, 符合要求的副 词: satisfactorily"
+    ]
+  },
+  {
+    "name": "scamper",
+    "trans": [
+      "vi. 蹦蹦跳跳地跑；惊惶奔跑时 态: scampered，scampering，scampers"
+    ]
+  },
+  {
+    "name": "scavenge",
+    "trans": [
+      "vt. & vi. 以为食; 在搜寻 时 态: scavenged, scavenging, scavenges"
+    ]
+  },
+  {
+    "name": "scenic",
+    "trans": [
+      "adj. 舞台的；风景优美的；戏剧的; n. 风景照片；风景胜地"
+    ]
+  },
+  {
+    "name": "sceptic",
+    "trans": [
+      "n. 怀疑论者；疑虑极深的人"
+    ]
+  },
+  {
+    "name": "scoop",
+    "trans": [
+      "n. 小铲；小勺; 一勺之量; 独家新闻; vt. 用铲等挖; 抢先报道; 抢先获得，胜过 时 态: scooped，scooping，scoops 名 词: scooper..."
+    ]
+  },
+  {
+    "name": "scrub",
+    "trans": [
+      "n. 矮树；洗擦；擦洗者；矮小的人; vt. 用力擦洗；使净化; vi. 擦洗；进行手臂消毒; adj. 矮小的；临时凑合的；次等的 时 态: scrubbed, scrubbin..."
+    ]
+  },
+  {
+    "name": "scrupulous",
+    "trans": [
+      "adj. 严格认真的，一丝不苟的; 按良心和道德原则办事的;绝对正直的; 有顾忌的，有顾虑的; adv. 一丝不苟地; n. 一丝不苟 名 词: scrupulosity 副 词:..."
+    ]
+  },
+  {
+    "name": "scuffle",
+    "trans": [
+      "n. 扭打, 混战; vi. 扭打, 混战 时 态: scuffled, scuffling, scuffles 名 词: scuffler"
+    ]
+  },
+  {
+    "name": "seasonality",
+    "trans": [
+      "季节性"
+    ]
+  },
+  {
+    "name": "secretarial",
+    "trans": [
+      "adj. 秘书的, 书记的"
+    ]
+  },
+  {
+    "name": "selfless",
+    "trans": [
+      "adj. 无私的, 忘我的副 词: selflessly 名 词: selflessness"
+    ]
+  },
+  {
+    "name": "sensor",
+    "trans": [
+      "n. 传感器"
+    ]
+  },
+  {
+    "name": "servant",
+    "trans": [
+      "n. 仆人，佣人；公务员；雇工"
+    ]
+  },
+  {
+    "name": "sew",
+    "trans": [
+      "vt. 缝合，缝上；缝纫; vi. 缝纫，缝 时 态: sewed, sewn , sewed sewing, sews"
+    ]
+  },
+  {
+    "name": "sewage",
+    "trans": [
+      "n. 污水；污物；下水道"
+    ]
+  },
+  {
+    "name": "sex",
+    "trans": [
+      "n. 性别；性; 男性；女性; 性关系; 性活动，性行为 时 态: sexed，sexing，sexes"
+    ]
+  },
+  {
+    "name": "shady",
+    "trans": [
+      "adj. 背阴的, 阴凉的; 靠不住的, 可疑的 比较级: shadier, shadiest 副 词: shadily 名 词: shadiness"
+    ]
+  },
+  {
+    "name": "shove",
+    "trans": [
+      "vt. & vi. 推, 猛推, 乱推时 态: shoved, shoving, shoves 名 词: shover"
+    ]
+  },
+  {
+    "name": "shovel",
+    "trans": [
+      "n. 铁铲；一铲的量；铲车; vt. 用铲挖；铲除；把…胡乱塞入; vi. 铲 时 态: shoveled also shovelled shoveling shovelling ..."
+    ]
+  },
+  {
+    "name": "shrewd",
+    "trans": [
+      "adj. 机灵的, 精明的比较级: shrewder, shrewdest 副 词: shrewdly"
+    ]
+  },
+  {
+    "name": "shudder",
+    "trans": [
+      "n. 震动；发抖；战栗; vi. 发抖；战栗 时 态: shuddered, shuddering, shudders"
+    ]
+  },
+  {
+    "name": "signature",
+    "trans": [
+      "n. 签名, 签字"
+    ]
+  },
+  {
+    "name": "signification",
+    "trans": [
+      "n. 含义"
+    ]
+  },
+  {
+    "name": "signpost",
+    "trans": [
+      "n. 路标；指示牌"
+    ]
+  },
+  {
+    "name": "simulate",
+    "trans": [
+      "vt. 模仿；假装；冒充; adj. 模仿的；假装的 时 态: simulated, simulating, simulates 形容词: simulative"
+    ]
+  },
+  {
+    "name": "skillfully",
+    "trans": [
+      "adv. 巧妙地;精巧地"
+    ]
+  },
+  {
+    "name": "slam",
+    "trans": [
+      "vt. & vi. 砰地关上; vt. 猛烈抨击; n. 猛然关闭的声音 SLAMabbr. Strategic Low Altitude Missile 低空战略导弹时 态: s..."
+    ]
+  },
+  {
+    "name": "slang",
+    "trans": [
+      "n. 俚语；行话; adj. 俚语的; vi. 用粗话骂; vt. 用俚语说 时 态: slanged, slanging, slangs 副 词: slangily ..."
+    ]
+  },
+  {
+    "name": "slit",
+    "trans": [
+      "vt. 撕裂；使有狭缝; n. 裂缝；投币口; vi. 纵裂 时 态: slit, slitting, slits 名 词: slitter 形容词: slitty"
+    ]
+  },
+  {
+    "name": "slither",
+    "trans": [
+      "vi. 连走带跑地滑; vt. 使滑动; n. 连走带跑的滑走 时 态: slithered, slithering, slithers 形容词: slithery"
+    ]
+  },
+  {
+    "name": "slop",
+    "trans": [
+      "vi. 溢出；泼出; 在泥浆中走; vt. 使溢出或泼出; 晃荡；溢出，溅出; 趟来趟去，走动; 休息；放松；偷懒; 倒便桶; 晃出； 溅出; n. 宽松的罩衣；外套；工作服; 污水; 粪便..."
+    ]
+  },
+  {
+    "name": "slumber",
+    "trans": [
+      "n. 睡眠；麻木状态；静止状态; vi. 睡眠；蛰伏；麻木; vt. 睡眠；睡着度过 时 态: slumbered, slumbering, slumbers"
+    ]
+  },
+  {
+    "name": "smother",
+    "trans": [
+      "vt. 使窒息；闷熄；忍住；抑制; vi. 窒息；被抑制；闷死; n. 窒息状态；令人窒息的浓烟 时 态: smothered, smothering, smothers"
+    ]
+  },
+  {
+    "name": "socialism",
+    "trans": [
+      "n. 社会主义"
+    ]
+  },
+  {
+    "name": "solemnly",
+    "trans": [
+      "adv. 庄严地；严肃地"
+    ]
+  },
+  {
+    "name": "specialisation",
+    "trans": [
+      "n. 特殊化,专门化,特化作用"
+    ]
+  },
+  {
+    "name": "spinal",
+    "trans": [
+      "adj. 脊骨的；脊髓的；脊柱的；尖刺的；针的; n. 脊椎麻醉 副 词: spinally"
+    ]
+  },
+  {
+    "name": "spiral",
+    "trans": [
+      "n. 螺旋；旋涡；螺旋形之物; adj. 盘旋的；螺旋形的; vt. 使成螺旋形；使作螺旋形上升; vi. 盘旋；成螺旋形；螺旋形上升 时 态: spiraled also spi..."
+    ]
+  },
+  {
+    "name": "splendour",
+    "trans": [
+      "n. 光辉,光彩; 壮丽,壮观；绚丽；壮美; 华丽；辉煌; 显赫；卓越；荣耀"
+    ]
+  },
+  {
+    "name": "sponge",
+    "trans": [
+      "n. 海绵; vt. 擦拭，清除; vt. & vi. 骗取；敲詐；揩油 时 态: sponged，sponging，sponges"
+    ]
+  },
+  {
+    "name": "sporadically",
+    "trans": [
+      "adv. 偶发地,零星地"
+    ]
+  },
+  {
+    "name": "sprint",
+    "trans": [
+      "vi. 冲刺，全速跑; n. 短跑；冲刺; vt. 全速奔跑 SPRINTabbr. Solid Propellant Rocket Intercept Missile 固体推进火..."
+    ]
+  },
+  {
+    "name": "staggering",
+    "trans": [
+      "adj. 难以置信的;令人震惊的; adv. 难以置信地;令人震惊地 副 词: staggeringly"
+    ]
+  },
+  {
+    "name": "stagnant",
+    "trans": [
+      "adj. 停滞的；污浊的；不景气的；迟钝的 名 词: stagnancy 副 词: stagnantly"
+    ]
+  },
+  {
+    "name": "stainless",
+    "trans": [
+      "adj. 不锈的；不锈钢制的; 无污点的,无瑕疵的"
+    ]
+  },
+  {
+    "name": "stake",
+    "trans": [
+      "n. 桩，棍子；火刑；赌注；奖金; vt. 资助，支持；系…于桩上；把…押下打赌; vi. 打赌 时 态: staked, staking, stakes"
+    ]
+  },
+  {
+    "name": "staple",
+    "trans": [
+      "n. 主要产品；钉书钉；主题；主食; vt. 用钉书钉钉住；把……分级; adj.主要的，大宗生产的；常用的；纺织纤维的 时 态: stapled, stapling, staples"
+    ]
+  },
+  {
+    "name": "stare",
+    "trans": [
+      "vt. & vi. 凝视；瞪视时 态: stared，staring，stares 名 词: starer"
+    ]
+  },
+  {
+    "name": "starkly",
+    "trans": [
+      "adv. 严酷地；明显地；毫无掩饰地"
+    ]
+  },
+  {
+    "name": "sticky",
+    "trans": [
+      "adj. 粘性的；粘的; 潮湿的；湿热的; 难对付的，棘手的 比较级: stickier，stickiest 名 词: stickiness"
+    ]
+  },
+  {
+    "name": "stitch",
+    "trans": [
+      "n. 针脚，线迹；一针; vt. 缝，缝合; vi. 缝，缝合 时 态: stitched, stitching, stitches 名 词: stitcher"
+    ]
+  },
+  {
+    "name": "stout",
+    "trans": [
+      "adj. 结实的；矮胖的；勇敢的；激烈的; n. 矮胖子；烈性啤酒 比较级: stouter, stoutest 形容词: stoutish 副 词: stout..."
+    ]
+  },
+  {
+    "name": "straightaway",
+    "trans": [
+      "adv. 立即;马上"
+    ]
+  },
+  {
+    "name": "streamline",
+    "trans": [
+      "vt. 把…做成流线型; 简化使效率更高 时 态: streamlined, streamlining, streamlines"
+    ]
+  },
+  {
+    "name": "stricken",
+    "trans": [
+      "adj. 受灾的, 遭损害的；经受或不堪…之苦的"
+    ]
+  },
+  {
+    "name": "stringent",
+    "trans": [
+      "adj. 严格的;严厉的; 紧缩的;短缺的 名 词: stringency 副 词: stringently"
+    ]
+  },
+  {
+    "name": "stripe",
+    "trans": [
+      "n. 条纹，斑纹；种类; vt. 加条纹于… 时 态: striped, striping, stripes"
+    ]
+  },
+  {
+    "name": "submarine",
+    "trans": [
+      "n. 潜艇；潜艇三明治，长卷三明治; adj. 海面下的，海底的"
+    ]
+  },
+  {
+    "name": "submerge",
+    "trans": [
+      "vt. & vi. 潜入水中, 淹没; vt. 完全掩盖, 遮掩 时 态: submerged, submerging, submerges 名 词: submergence"
+    ]
+  },
+  {
+    "name": "subordinate",
+    "trans": [
+      "n. 部属，下属，下级；从属，次要 vt. 使……居下位；使……服从 adj. 从属的，隶属的；次要的时 态: subordinated, subordinating, subord..."
+    ]
+  },
+  {
+    "name": "successive",
+    "trans": [
+      "adj. 连续的, 相继的副 词: successively"
+    ]
+  },
+  {
+    "name": "suckle",
+    "trans": [
+      "vt. 给…哺乳；吮吸；养育; vi. 吃奶 时 态: suckled, suckling, suckles"
+    ]
+  },
+  {
+    "name": "suffice",
+    "trans": [
+      "vt. 使满足；足够…用；合格; vi. 足够；有能力 时 态: sufficed, sufficing, suffices"
+    ]
+  },
+  {
+    "name": "surrender",
+    "trans": [
+      "vt. & vi. 投降; vt. 放弃；抛弃; n. 投降，放弃 时 态: surrendered，surrendering，surrenders"
+    ]
+  },
+  {
+    "name": "survivor",
+    "trans": [
+      "n. 幸存者;残存者;生还者"
+    ]
+  },
+  {
+    "name": "sustenance",
+    "trans": [
+      "n. 食物;营养;养料"
+    ]
+  },
+  {
+    "name": "swap",
+    "trans": [
+      "n. 交换; vt. & vi. 交换 时 态: swapped also swopped swapping swopping swaps swops 名 词: swapper"
+    ]
+  },
+  {
+    "name": "swivel",
+    "trans": [
+      "n. 转节，转环；旋轴；旋转接头; vt. & vi. 旋转；在枢轴上转动; 转向另一方; 转动，旋转 时 态: swiveled ，swivelled swiveling ，swiv..."
+    ]
+  },
+  {
+    "name": "tactics",
+    "trans": [
+      "n. 战术; 策略,手段 tactic的复数"
+    ]
+  },
+  {
+    "name": "taunt",
+    "trans": [
+      "n. 嘲弄；讥讽; vt. 逗弄；奚落; adj. 很高的 时 态: taunted, taunting, taunts 副 词: tauntingly"
+    ]
+  },
+  {
+    "name": "technician",
+    "trans": [
+      "n. 技术人员，专家；技巧好的人"
+    ]
+  },
+  {
+    "name": "tectonic",
+    "trans": [
+      "adj.地壳构造的；地质构造的; 非常重要的；具有重大影响的"
+    ]
+  },
+  {
+    "name": "temper",
+    "trans": [
+      "n. 脾气；回火；性情；倾向; vt. 调和；锻炼；使缓和；使回火; vi. 回火；调和 时 态: tempered, tempering, tempers 名 词: t..."
+    ]
+  },
+  {
+    "name": "tenable",
+    "trans": [
+      "adj. 站得住脚的；可维持的"
+    ]
+  },
+  {
+    "name": "tenet",
+    "trans": [
+      "n. 原则, 信条, 教义, 教条"
+    ]
+  },
+  {
+    "name": "tenuous",
+    "trans": [
+      "adj. 薄的；细的; 稀薄的; 贫乏的；平淡的; 空洞无物的; 无关紧要的，细微的; 脆弱的，无力的; 精细的；微妙的; 含糊的；暧昧的; adv. 薄地，细地；空洞无物地，无关紧要地，细..."
+    ]
+  },
+  {
+    "name": "terminate",
+    "trans": [
+      "v. 停止，结束，终止; （公共汽车或火车) 到达终点站 时 态: terminated，terminating，terminates"
+    ]
+  },
+  {
+    "name": "testament",
+    "trans": [
+      "n. 遗嘱; 实际的证明 形容词: testamentary"
+    ]
+  },
+  {
+    "name": "thatch",
+    "trans": [
+      "n. 茅草屋顶; 乱蓬蓬的头发, 又脏又乱的头发; vt. 用茅草盖的屋顶, 用茅草覆盖 时 态: thatched, thatching, thatches 名 词: th..."
+    ]
+  },
+  {
+    "name": "thaw",
+    "trans": [
+      "vi. 溶化, 溶解; 解冻; 软化, 暖和起来; 缓和, 随和, 更友好; vt. 使融化, 使缓和; n. 融化, 解冻; 暖和天气 时 态: thawed, thawing, t..."
+    ]
+  },
+  {
+    "name": "threshold",
+    "trans": [
+      "n. 门槛; 〈喻〉开始"
+    ]
+  },
+  {
+    "name": "thrifty",
+    "trans": [
+      "adj. 节约的；茂盛的；成功的 比较级: triftier, triftiest 副 词: thriftily 名 词: thriftiness"
+    ]
+  },
+  {
+    "name": "tickle",
+    "trans": [
+      "vt. 使发痒；使高兴；使满足; vi. 觉得痒；使人发痒; n. 胳肢；痒感；使人发痒、高兴的东西 时 态: tickled, tickling, tickles"
+    ]
+  },
+  {
+    "name": "topple",
+    "trans": [
+      "vi. 倾倒；倒塌；摇摇欲坠; vt. 颠覆；推翻；使倒塌 时 态: toppled, toppling, topples"
+    ]
+  },
+  {
+    "name": "torch",
+    "trans": [
+      "n. 火把，火炬；手电筒；启发之物; vi. 像火炬一样燃烧; vt. 用火炬点燃 时 态: torched, torching, torches"
+    ]
+  },
+  {
+    "name": "tout",
+    "trans": [
+      "vt. 招徕；兜售；刺探赛马情报; vi. 兜售；招徕顾客；拉选票; n. 侦查者；兜售者 Tout陶特时 态: touted, touting, touts 名 词: ..."
+    ]
+  },
+  {
+    "name": "tranquilliser",
+    "trans": [
+      "n. 镇静剂；安定药"
+    ]
+  },
+  {
+    "name": "transferable",
+    "trans": [
+      "adj. 可转让的;可流通的;可传递的; 可转移的; 可转印的"
+    ]
+  },
+  {
+    "name": "triumphant",
+    "trans": [
+      "adj. 胜利的, 成功的; 喜气洋洋的, 欢欣鼓舞的 副 词: triumphantly"
+    ]
+  },
+  {
+    "name": "tropospheric",
+    "trans": [
+      "adj. 对流层的"
+    ]
+  },
+  {
+    "name": "troublesome",
+    "trans": [
+      "adj. 引起麻烦的, 令人讨厌的, 令人烦恼的副 词: troublesomely"
+    ]
+  },
+  {
+    "name": "tuck",
+    "trans": [
+      "vt. 卷起；挤进；用某物舒适地裹住；使有褶裥；收拢；大口吃；使隐藏; n. 船尾突出部；食物；缝摺；抱膝式跳水；活力；鼓声; vi. 缝褶裥；缩拢；舒服地裹在里面；大口吃 时 态: ..."
+    ]
+  },
+  {
+    "name": "turbid",
+    "trans": [
+      "adj. 混乱的；浑浊的；雾重的 副 词: turbidly"
+    ]
+  },
+  {
+    "name": "tweak",
+    "trans": [
+      "n. 拧；扭；焦急; vt. 扭；用力拉；开足马力 时 态: tweaked, tweaking, tweaks"
+    ]
+  },
+  {
+    "name": "ubiquitous",
+    "trans": [
+      "adj. 普遍存在的;无处不在的副 词: ubiquitously"
+    ]
+  },
+  {
+    "name": "uncanny",
+    "trans": [
+      "adj. 可怕的；离奇的；神秘的 比较级: uncannier, uncanniest 副 词: uncannily 名 词: uncanniness"
+    ]
+  },
+  {
+    "name": "uncompromising",
+    "trans": [
+      "adj. 不妥协的；坚定的副 词: uncompromisingly"
+    ]
+  },
+  {
+    "name": "unconquerable",
+    "trans": [
+      "adj. 不可征服的,克服不了的,压制不了的"
+    ]
+  },
+  {
+    "name": "undue",
+    "trans": [
+      "adj. 过分的;过度的; 不适当的;不正当的; 未到期的"
+    ]
+  },
+  {
+    "name": "unfit",
+    "trans": [
+      "adj. 不适宜的；不合格的；不健康的; vt. 使不相宜；使不合格；使不胜任 时 态: unfitted, unfitting, unfits 名 词: unfitne..."
+    ]
+  },
+  {
+    "name": "unimpeded",
+    "trans": [
+      "adj. 无障碍的; 无阻挡的"
+    ]
+  },
+  {
+    "name": "unleash",
+    "trans": [
+      "vt. 把释放出来, 发泄时 态: unleashed, unleashing, unleashes"
+    ]
+  },
+  {
+    "name": "unprejudiced",
+    "trans": [
+      "adj. 无偏见的, 无成见的, 公正的"
+    ]
+  },
+  {
+    "name": "unrivalled",
+    "trans": [
+      "adj. 无敌的,无对手的,无双的,无比的"
+    ]
+  },
+  {
+    "name": "unscathed",
+    "trans": [
+      "adj. 未受损伤的,未受伤害的"
+    ]
+  },
+  {
+    "name": "unsolicited",
+    "trans": [
+      "adj. 未被恳求的,主动提供的"
+    ]
+  },
+  {
+    "name": "unswerving",
+    "trans": [
+      "adj. 坚持不懈的,坚定不移的; 不歪的,不偏离的; adv. 坚持不懈地,坚定不移地"
+    ]
+  },
+  {
+    "name": "unveil",
+    "trans": [
+      "vt. 揭去…的面罩，除去…的遮盖物; 使公之于众；揭露; vi. 除去面纱；揭幕; 揭露出来 时 态: unveiled，unveiling，unveils"
+    ]
+  },
+  {
+    "name": "upright",
+    "trans": [
+      "adj. 正直的，诚实的；垂直的，直立的；笔直的；合乎正道的; n. 竖立；垂直 副 词: uprightly 名 词: uprightness"
+    ]
+  },
+  {
+    "name": "urgency",
+    "trans": [
+      "n. 紧迫;急迫;急事；紧要; 催促;坚持"
+    ]
+  },
+  {
+    "name": "vaccine",
+    "trans": [
+      "n. 疫苗;痘苗; adj. 痘苗的;疫苗的"
+    ]
+  },
+  {
+    "name": "van",
+    "trans": [
+      "n. 先锋；厢式货车；增值网; vt. 用车搬运 Van范时 态: vanned, vanning, vans"
+    ]
+  },
+  {
+    "name": "vandalism",
+    "trans": [
+      "n. 肆意破坏公物等德行；汪达尔人作风 Vandalism汪达尔人的行为或作风"
+    ]
+  },
+  {
+    "name": "variability",
+    "trans": [
+      "n. 变化性;易变;变化的倾向"
+    ]
+  },
+  {
+    "name": "vend",
+    "trans": [
+      "vt. 出售; 贩卖，叫卖; 发表；声明 时 态: vended，vending，vends"
+    ]
+  },
+  {
+    "name": "vent",
+    "trans": [
+      "n. 出口；通风孔；发泄; vt. 发泄感情；放出…；给…开孔; vi. 减轻压力；放出 时 态: vented, venting, vents 名 词: venter"
+    ]
+  },
+  {
+    "name": "veracity",
+    "trans": [
+      "n. 诚实;真实"
+    ]
+  },
+  {
+    "name": "veranda",
+    "trans": [
+      "n. 阳台；走廊，游廊"
+    ]
+  },
+  {
+    "name": "versatile",
+    "trans": [
+      "adj. 有多种学问、技能或职业的；多才多艺的; 多用途的，多功能的 副 词: versatilely 名 词: versatility"
+    ]
+  },
+  {
+    "name": "vested",
+    "trans": [
+      "adj. 既定的；穿着衣服的；带背心的; v. 使穿衣服；授予"
+    ]
+  },
+  {
+    "name": "veteran",
+    "trans": [
+      "n. 经验丰富的人; 老兵; 退伍军人"
+    ]
+  },
+  {
+    "name": "vicissitude",
+    "trans": [
+      "n. 变迁兴衰"
+    ]
+  },
+  {
+    "name": "victimise",
+    "trans": [
+      "vt. 责怪或处罚某人不当; 不正当地使某人受损害或受苦难;欺负某人"
+    ]
+  },
+  {
+    "name": "villa",
+    "trans": [
+      "n. 别墅；郊区住宅"
+    ]
+  },
+  {
+    "name": "virgin",
+    "trans": [
+      "adj. 处女的；纯洁的；未经利用的，处于原始状态的; n. 处女"
+    ]
+  },
+  {
+    "name": "vitality",
+    "trans": [
+      "n. 活力，生气；生命力，生动性"
+    ]
+  },
+  {
+    "name": "vow",
+    "trans": [
+      "n. 誓言; 郑重宣布；许愿; vt. & vi. 起誓，发誓; 郑重宣告 时 态: vowed，vowing，vows 名 词: vower"
+    ]
+  },
+  {
+    "name": "wade",
+    "trans": [
+      "vt. & vi. 蹚, 走过, 跋时 态: waded, wading, wades"
+    ]
+  },
+  {
+    "name": "waist",
+    "trans": [
+      "n. 腰，腰部"
+    ]
+  },
+  {
+    "name": "wardrobe",
+    "trans": [
+      "n. 衣柜；全部戏装；行头"
+    ]
+  },
+  {
+    "name": "wary",
+    "trans": [
+      "adj. 机警的；谨慎的；惟恐的；考虑周到的 比较级: warier, wariest 副 词: warily 名 词: wariness"
+    ]
+  },
+  {
+    "name": "watertight",
+    "trans": [
+      "adj. 不漏水的,水密的"
+    ]
+  },
+  {
+    "name": "wean",
+    "trans": [
+      "vt. 使断奶；使断念；使放弃; n. 幼儿 时 态: weaned, weaning, weans"
+    ]
+  },
+  {
+    "name": "wedge",
+    "trans": [
+      "vt. 楔入；挤进；楔住; vi. 楔入；挤进; n. 楔子；楔形物；导致分裂的东西 时 态: wedged, wedging, wedges"
+    ]
+  },
+  {
+    "name": "weld",
+    "trans": [
+      "vt. 焊接；使结合；使成整体; vi. 焊牢; n. 焊接；焊接点 时 态: welded, welding, welds"
+    ]
+  },
+  {
+    "name": "whim",
+    "trans": [
+      "n. 一时的兴致, 突然的念头, 突发奇想, 异想天开"
+    ]
+  },
+  {
+    "name": "wilderness",
+    "trans": [
+      "n. 荒野;沙漠; 在野；不再当政"
+    ]
+  },
+  {
+    "name": "worship",
+    "trans": [
+      "vt. 崇拜；尊崇; vi. 做礼拜 时 态: worshiped ，worshipped worshiping ，worshipping worships ，worships"
+    ]
+  },
+  {
+    "name": "wring",
+    "trans": [
+      "vt. 绞，拧，扭; 握紧; 把拧干；绞掉 时 态: wrung wringing，wrings"
+    ]
+  },
+  {
+    "name": "writhe",
+    "trans": [
+      "vi. 蠕动；翻滚; vt. 扭曲；扭动; n. 扭动；苦恼；翻滚 时 态: writhed, writhing, writhes"
+    ]
+  },
+  {
+    "name": "zipper",
+    "trans": [
+      "n. 拉链; vi. 拉上拉链; vt. 用拉链扣上"
+    ]
+  }
+]
