@@ -84,14 +84,14 @@ type Dispatch = (action: TypingStateAction) => void
 
 export const typingReducer = (state: TypingState, action: TypingStateAction) => {
   switch (action.type) {
-    case TypingStateActionType.SETUP_CHAPTER:
-      state.chapterData.words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
-      state.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({
-        ...structuredClone(initialUserInputLog),
-        index,
-      }))
-      state.isTyping = false
-      break
+    case TypingStateActionType.SETUP_CHAPTER: {
+      const newState = structuredClone(initialState)
+      const words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
+      newState.chapterData.words = words
+      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+
+      return newState
+    }
     case TypingStateActionType.SET_IS_SKIP:
       state.isShowSkip = action.payload
       break
@@ -155,10 +155,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     }
     case TypingStateActionType.REPEAT_CHAPTER: {
       const newState = structuredClone(initialState)
-      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({
-        ...structuredClone(initialUserInputLog),
-        index,
-      }))
+      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
       newState.isTyping = true
       newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       newState.isTransVisible = state.isTransVisible
@@ -166,10 +163,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     }
     case TypingStateActionType.NEXT_CHAPTER: {
       const newState = structuredClone(initialState)
-      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({
-        ...structuredClone(initialUserInputLog),
-        index,
-      }))
+      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
       newState.isTyping = true
       newState.isTransVisible = state.isTransVisible
       return newState
