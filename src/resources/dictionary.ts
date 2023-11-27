@@ -909,6 +909,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'voa',
+    name: 'VOA 基础词库',
+    description: 'VOA 基础词库',
+    category: '国际考试',
+    tags: ['其他'],
+    url: '/dicts/voa.json',
+    length: 1505,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 青少儿英语
