@@ -1,0 +1,1011 @@
+[
+    {
+        "name": "weather",
+        "trans": [
+            "n. 天气；气象；气候；处境",
+            "vt. 经受住；使风化；侵蚀；使受风吹雨打",
+            "adj. 露天的；迎风的",
+            "vi. 风化；受侵蚀；经受风雨"
+        ],
+        "usphone": "[ˈweðər]",
+        "ukphone": "[ˈweðə(r)]"
+    },
+    {
+        "name": "like",
+        "trans": [
+            "vt. 喜欢；想；愿意",
+            "vi. 喜欢；希望",
+            "prep. 像；如同",
+            "adj. 同样的；相似的",
+            "n. 爱好；同样的人或物",
+            "adv. 可能",
+            "conj. 好像"
+        ],
+        "usphone": "[laɪk]",
+        "ukphone": "[laɪk]"
+    },
+    {
+        "name": "sunny",
+        "trans": [
+            "adj. 阳光充足的，和煦的；快活的；性情开朗的"
+        ],
+        "usphone": "[ˈsʌni]",
+        "ukphone": "[ˈsʌni]"
+    },
+    {
+        "name": "windy",
+        "trans": [
+            "adj. 多风的，有风的；腹胀的；吹牛的"
+        ],
+        "usphone": "[ˈwɪndi]",
+        "ukphone": "[ˈwɪndi]"
+    },
+    {
+        "name": "take",
+        "trans": [
+            "vi. 拿；获得",
+            "vt. 拿，取；采取；接受（礼物等）；买，花费；耗费（时间等）",
+            "n. 捕获量；看法；利益，盈益；（入场券的）售得金额"
+        ],
+        "usphone": "[teɪk]",
+        "ukphone": "[teɪk]"
+    },
+    {
+        "name": "cap",
+        "trans": [
+            "n. 盖；帽子",
+            "vt. 覆盖；胜过；给…戴帽；加盖于",
+            "vi. 脱帽致意"
+        ],
+        "usphone": "[kæp]",
+        "ukphone": "[kæp]"
+    },
+    {
+        "name": "sofa",
+        "trans": [
+            "n. 沙发；长椅"
+        ],
+        "usphone": "[ˈsoʊfə]",
+        "ukphone": "[ˈsəʊfə]"
+    },
+    {
+        "name": "street",
+        "trans": [
+            "n. 街道",
+            "adj. 街道的"
+        ],
+        "usphone": "[striːt]",
+        "ukphone": "[striːt]"
+    },
+    {
+        "name": "rain",
+        "trans": [
+            "n. 雨；下雨；雨天；雨季",
+            "vt. 大量地给；使大量落下",
+            "vi. 下雨；降雨"
+        ],
+        "usphone": "[reɪn]",
+        "ukphone": "[reɪn]"
+    },
+    {
+        "name": "snow",
+        "trans": [
+            "n. 雪，积雪；下雪",
+            "vt. 使纷纷落下；使变白",
+            "vi. 降雪"
+        ],
+        "usphone": "[snoʊ]",
+        "ukphone": "[snəʊ]"
+    },
+    {
+        "name": "ski",
+        "trans": [
+            "n. 滑雪橇",
+            "vi. 滑雪",
+            "adj. 滑雪（用）的"
+        ],
+        "usphone": "[skiː]",
+        "ukphone": "[skiː]"
+    },
+    {
+        "name": "radio",
+        "trans": [
+            "n. 收音机；无线电广播设备",
+            "vt. 用无线电发送",
+            "vi. 用无线电进行通信"
+        ],
+        "usphone": "[ˈreɪdioʊ]",
+        "ukphone": "[ˈreɪdiəʊ]"
+    },
+    {
+        "name": "photo",
+        "trans": [
+            "n. 照片"
+        ],
+        "usphone": "[ˈfoʊtoʊ]",
+        "ukphone": "[ˈfəʊtəʊ]"
+    },
+    {
+        "name": "newspaper",
+        "trans": [
+            "n. 报纸",
+            "报社",
+            "旧报纸"
+        ],
+        "usphone": "[ˈnuːzpeɪpər]",
+        "ukphone": "[ˈnjuːzpeɪpə(r)]"
+    },
+    {
+        "name": "little",
+        "trans": [
+            "adj. 小的；很少的；短暂的；小巧可爱的",
+            "adv. 完全不",
+            "n. 少许；没有多少；短时间"
+        ],
+        "usphone": "[ˈlɪtl]",
+        "ukphone": "[ˈlɪt(ə)l]"
+    },
+    {
+        "name": "camera",
+        "trans": [
+            "n. 照相机；摄影机"
+        ],
+        "usphone": "[ˈkæm(ə)rə]",
+        "ukphone": "[ˈkæm(ə)rə]"
+    },
+    {
+        "name": "smile",
+        "trans": [
+            "n. 微笑；笑容；喜色",
+            "vt. 微笑着表示",
+            "vi. 微笑"
+        ],
+        "usphone": "[smaɪl]",
+        "ukphone": "[smaɪl]"
+    },
+    {
+        "name": "draw",
+        "trans": [
+            "n. 平局；抽签",
+            "vi. 拉；拖",
+            "vt. 画；拉；吸引"
+        ],
+        "usphone": "[drɔː]",
+        "ukphone": "[drɔː]"
+    },
+    {
+        "name": "picture",
+        "trans": [
+            "n. 照片，图画；影片；景色；化身",
+            "vt. 画；想像；描写"
+        ],
+        "usphone": "[ˈpɪktʃər]",
+        "ukphone": "[ˈpɪktʃə(r)]"
+    },
+    {
+        "name": "write",
+        "trans": [
+            "vi. 写，写字；写作，作曲；写信",
+            "vt. 写，书写；写信给；著述"
+        ],
+        "usphone": "[raɪt]",
+        "ukphone": "[raɪt]"
+    },
+    {
+        "name": "letter",
+        "trans": [
+            "n. 信；字母，文字；证书；文学，学问；字面意义",
+            "vt. 写字母于",
+            "vi. 写印刷体字母"
+        ],
+        "usphone": "[ˈletər]",
+        "ukphone": "[ˈletə(r)]"
+    },
+    {
+        "name": "colour",
+        "trans": [
+            "n. 颜色；风格；气色，面色；外貌",
+            "vt. 把…涂颜色，粉饰；歪曲；使脸红",
+            "vi. 变色"
+        ],
+        "usphone": "[ˈkʌlər]",
+        "ukphone": "[ˈkʌlə(r)]"
+    },
+    {
+        "name": "tidy",
+        "trans": [
+            "n. 椅子的背罩",
+            "adj. 整齐的；相当大的",
+            "vi. 整理；收拾",
+            "vt. 整理；收拾；弄整齐"
+        ],
+        "usphone": "[ˈtaɪdi]",
+        "ukphone": "[ˈtaɪdi]"
+    },
+    {
+        "name": "room",
+        "trans": [
+            "n. 房间；空间；余地；机会；房间里所有的人",
+            "vt. 为…提供住处；租房，合住；投宿，住宿；留…住宿",
+            "vi. 居住；住宿"
+        ],
+        "usphone": "[ruːm; rʊm]",
+        "ukphone": "[ruːm]"
+    },
+    {
+        "name": "do",
+        "trans": [
+            "vi. 行，足够；生长",
+            "n. 要求；规定；C大调音阶中的第一音",
+            "v. 做；干；学习；研究；进行；完成；解答；整理；算出；引起；行过",
+            "aux. 助动词（构成疑问句和否定句）；（代替动词）；（用于加强语气）",
+            "n. （口语）事件；（主英国口语）诈骗；（主英国、新西兰口语）宴会；（口语）必须做到的事情"
+        ],
+        "usphone": "[duː; də; du; doʊ]",
+        "ukphone": "[duː; də; du; dəʊ]"
+    },
+    {
+        "name": "homework",
+        "trans": [
+            "n. 家庭作业，课外作业"
+        ],
+        "usphone": "[ˈhoʊmwɜːrk]",
+        "ukphone": "[ˈhəʊmwɜːk]"
+    },
+    {
+        "name": "sleep",
+        "trans": [
+            "n. 睡眠",
+            "vi. 睡，睡觉"
+        ],
+        "usphone": "[sliːp]",
+        "ukphone": "[sliːp]"
+    },
+    {
+        "name": "secret",
+        "trans": [
+            "n. 秘密；秘诀；机密",
+            "adj. 秘密的；机密的"
+        ],
+        "usphone": "[ˈsiːkrət]",
+        "ukphone": "[ˈsiːkrət]"
+    },
+    {
+        "name": "card",
+        "trans": [
+            "n. 卡片；纸牌；明信片",
+            "vt. 记于卡片上"
+        ],
+        "usphone": "[kɑːrd]",
+        "ukphone": "[kɑːd]"
+    },
+    {
+        "name": "flower",
+        "trans": [
+            "n. 花；精华；开花植物",
+            "vt. 使开花；用花装饰",
+            "vi. 成熟，发育；开花；繁荣；旺盛"
+        ],
+        "usphone": "[ˈflaʊər]",
+        "ukphone": "[ˈflaʊə(r)]"
+    },
+    {
+        "name": "science",
+        "trans": [
+            "n. 科学；技术；学科；理科"
+        ],
+        "usphone": "[ˈsaɪəns]",
+        "ukphone": "[ˈsaɪəns]"
+    },
+    {
+        "name": "today",
+        "trans": [
+            "n. 今天；现今",
+            "adv. 今天；现今"
+        ],
+        "usphone": "[təˈdeɪ]",
+        "ukphone": "[təˈdeɪ]"
+    },
+    {
+        "name": "call",
+        "trans": [
+            "n. 电话；呼叫；要求；访问",
+            "vi. 呼叫；拜访；叫牌",
+            "vt. 呼叫；称呼；召集"
+        ],
+        "usphone": "[kɔːl]",
+        "ukphone": "[kɔːl]"
+    },
+    {
+        "name": "noise",
+        "trans": [
+            "n. [环境] 噪音；响声；杂音",
+            "vt. 谣传",
+            "vi. 发出声音；大声议论"
+        ],
+        "usphone": "[nɔɪz]",
+        "ukphone": "[nɔɪz]"
+    },
+    {
+        "name": "drink",
+        "trans": [
+            "n. 酒，饮料；喝酒",
+            "vt. 喝，饮；吸收；举杯庆贺",
+            "vi. 喝酒；饮水；干杯"
+        ],
+        "usphone": "[drɪŋk]",
+        "ukphone": "[drɪŋk]"
+    },
+    {
+        "name": "talk",
+        "trans": [
+            "n. 谈话；演讲；空谈",
+            "vi. 谈话；说闲话",
+            "vt. 说；谈话；讨论"
+        ],
+        "usphone": "[tɔːk]",
+        "ukphone": "[tɔːk]"
+    },
+    {
+        "name": "stone",
+        "trans": [
+            "n. 石头；结石；[宝] 宝石",
+            "adj. 石的，石制的",
+            "vt. 向扔石块；用石头铺"
+        ],
+        "usphone": "[stoʊn]",
+        "ukphone": "[stəʊn]"
+    },
+    {
+        "name": "five-stones",
+        "trans": [
+            "n. (抛掷五颗小石子的)五子游戏"
+        ]
+    },
+    {
+        "name": "behind",
+        "trans": [
+            "prep. 落后于；支持；晚于",
+            "n. 屁股",
+            "adv. 在后地；在原处"
+        ],
+        "usphone": "[bɪˈhaɪnd]",
+        "ukphone": "[bɪˈhaɪnd]"
+    },
+    {
+        "name": "hide",
+        "trans": [
+            "n. 躲藏；兽皮；躲藏处",
+            "vt. 隐藏；隐瞒；鞭打",
+            "vi. 隐藏"
+        ],
+        "usphone": "[haɪd]",
+        "ukphone": "[haɪd]"
+    },
+    {
+        "name": "seek",
+        "trans": [
+            "vt. 寻求；寻找；探索；搜索",
+            "vi. 寻找；探索；搜索"
+        ],
+        "usphone": "[siːk]",
+        "ukphone": "[siːk]"
+    },
+    {
+        "name": "hide-and-seek",
+        "trans": [
+            "n. 捉迷藏"
+        ],
+        "usphone": "[ˌhaɪd ən ˈsiːk]",
+        "ukphone": "[ˌhaɪd ən ˈsiːk]"
+    },
+    {
+        "name": "skip",
+        "trans": [
+            "n. 跳跃；跳读",
+            "vt. 跳过；遗漏",
+            "vi. 跳跃；跳绳；遗漏；跳读"
+        ],
+        "usphone": "[skɪp]",
+        "ukphone": "[skɪp]"
+    },
+    {
+        "name": "hurry up",
+        "trans": [
+            "na. 催促；赶快"
+        ],
+        "usphone": "['hɜːrɪ ʌp]",
+        "ukphone": "['hʌrɪ ʌp]"
+    },
+    {
+        "name": "late",
+        "trans": [
+            "adj. 晚的；迟的；已故的；最近的",
+            "adv. 晚；迟；最近；在晚期"
+        ],
+        "usphone": "[leɪt]",
+        "ukphone": "[leɪt]"
+    },
+    {
+        "name": "sad",
+        "trans": [
+            "adj. 难过的；悲哀的，令人悲痛的；凄惨的，阴郁的（形容颜色）"
+        ],
+        "usphone": "[sæd]",
+        "ukphone": "[sæd]"
+    },
+    {
+        "name": "no",
+        "trans": [
+            "adv. 不",
+            "adj. 没有；不是",
+            "n. 不；否决票",
+            "abbr. 数字（number）；元素锘（nobelium）的符号"
+        ],
+        "usphone": "[noʊ]",
+        "ukphone": "[nəʊ]"
+    },
+    {
+        "name": "those",
+        "trans": [
+            "adj. 那些的",
+            "pron. 那些（that的复数）"
+        ],
+        "usphone": "[ðoʊz]",
+        "ukphone": "[ðəʊz]"
+    },
+    {
+        "name": "clap",
+        "trans": [
+            "n. 鼓掌；拍手声",
+            "vt. 拍手，鼓掌；轻轻拍打某人",
+            "vi. 鼓掌，拍手；啪地关上"
+        ],
+        "usphone": "[klæp]",
+        "ukphone": "[klæp]"
+    },
+    {
+        "name": "game",
+        "trans": [
+            "n. 游戏；比赛",
+            "adj. 勇敢的",
+            "vi. 赌博"
+        ],
+        "usphone": "[ɡeɪm]",
+        "ukphone": "[ɡeɪm]"
+    },
+    {
+        "name": "clapping game",
+        "trans": [
+            " 拍手游戏"
+        ]
+    },
+    {
+        "name": "well",
+        "trans": [
+            "n. 井；源泉",
+            "adj. 良好的；健康的；适宜的",
+            "adv. 很好地；充分地；满意地；适当地",
+            "v. 涌出"
+        ],
+        "usphone": "[wel]",
+        "ukphone": "[wel]"
+    },
+    {
+        "name": "kid",
+        "trans": [
+            "n. 小孩；小山羊",
+            "vt. 欺骗；取笑；戏弄",
+            "vi. 欺骗；取笑；戏弄",
+            "adj. 小山羊皮制的；较年幼的"
+        ],
+        "usphone": "[kɪd]",
+        "ukphone": "[kɪd]"
+    },
+    {
+        "name": "catch",
+        "trans": [
+            "n. 捕捉；捕获物；窗钩",
+            "vt. 赶上；抓住；感染；了解",
+            "vi. 赶上；抓住"
+        ],
+        "usphone": "[kætʃ]",
+        "ukphone": "[kætʃ]"
+    },
+    {
+        "name": "of course",
+        "trans": [
+            "na. 当然"
+        ]
+    },
+    {
+        "name": "usually",
+        "trans": [
+            "adv. 通常，经常"
+        ],
+        "usphone": "[ˈjuːʒuəli; ˈjuːʒəli]",
+        "ukphone": "[ˈjuːʒuəli]"
+    },
+    {
+        "name": "us",
+        "trans": [
+            "pron. 我们"
+        ],
+        "usphone": "[əs; ʌs]",
+        "ukphone": "[əs; ʌs]"
+    },
+    {
+        "name": "ride",
+        "trans": [
+            "n. 骑；乘坐；交通工具；可供骑行的路；（乘坐汽车等的）旅行；乘骑；（乘车或骑车的）短途旅程；供乘骑的游乐设施",
+            "vi. 骑马；乘车；依靠；漂浮",
+            "vt. 骑；乘；控制；（骑马、自行车等）穿越；搭乘；飘浮"
+        ],
+        "usphone": "[raɪd]",
+        "ukphone": "[raɪd]"
+    },
+    {
+        "name": "thing",
+        "trans": [
+            "n. 事情；东西；事物；情况"
+        ],
+        "usphone": "[θɪŋ]",
+        "ukphone": "[θɪŋ]"
+    },
+    {
+        "name": "ill",
+        "trans": [
+            "n. 疾病；不幸",
+            "adj. 生病的；坏的；邪恶的；不吉利的",
+            "adv. 不利地；恶劣地；几乎不"
+        ],
+        "usphone": "[ɪl]",
+        "ukphone": "[ɪl]"
+    },
+    {
+        "name": "cook",
+        "trans": [
+            "n. 厨师，厨子",
+            "vt. 烹调，煮",
+            "vi. 烹调，做菜"
+        ],
+        "usphone": "[kʊk]",
+        "ukphone": "[kʊk]"
+    },
+    {
+        "name": "her",
+        "trans": [
+            "pron. 她（she的宾格）；她的（she的所有格）；她（指某个国家；一艘船）"
+        ],
+        "usphone": "[hər; ɜːr; ər; hɜːr]",
+        "ukphone": "[hə(r)]"
+    },
+    {
+        "name": "go shopping",
+        "trans": [
+            "na. 去买东西"
+        ]
+    },
+    {
+        "name": "kitchen",
+        "trans": [
+            "n. 厨房；炊具；炊事人员"
+        ],
+        "usphone": "[ˈkɪtʃɪn]",
+        "ukphone": "[ˈkɪtʃɪn]"
+    },
+    {
+        "name": "Children's Day",
+        "trans": [
+            "na. 儿童节"
+        ]
+    },
+    {
+        "name": "TV",
+        "trans": [
+            "abbr. 电视（television）"
+        ],
+        "usphone": "[ˌtiː ˈviː]",
+        "ukphone": "[ˌtiː ˈviː]"
+    },
+    {
+        "name": "play",
+        "trans": [
+            "n. 游戏；比赛；剧本",
+            "vt. 游戏；扮演；演奏；播放；同…比赛",
+            "vi. 演奏；玩耍；上演；参加比赛"
+        ],
+        "usphone": "[pleɪ]",
+        "ukphone": "[pleɪ]"
+    },
+    {
+        "name": "say",
+        "trans": [
+            "vt. 讲；说明；例如；声称；假设；指明",
+            "vi. 讲；表示；念；假定；背诵"
+        ],
+        "usphone": "[seɪ]",
+        "ukphone": "[seɪ]"
+    },
+    {
+        "name": "poem",
+        "trans": [
+            "n. 诗"
+        ],
+        "usphone": "[ˈpoʊəm]",
+        "ukphone": "[ˈpəʊɪm]"
+    },
+    {
+        "name": "dragon",
+        "trans": [
+            "n. 龙；凶暴的人，凶恶的人；严厉而有警觉性的女人"
+        ],
+        "usphone": "[ˈdræɡən]",
+        "ukphone": "[ˈdræɡən]"
+    },
+    {
+        "name": "dragon dance",
+        "trans": [
+            "n. 【文】舞龙；举杆游走；每逢节日庆典都会舞龙助兴"
+        ],
+        "usphone": "[ˈdræɡən dæns]",
+        "ukphone": "[ˈdræɡən dɑːns]"
+    },
+    {
+        "name": "picnic",
+        "trans": [
+            "n. 野餐",
+            "vi. 去野餐"
+        ],
+        "usphone": "[ˈpɪknɪk]",
+        "ukphone": "[ˈpɪknɪk]"
+    },
+    {
+        "name": "family",
+        "trans": [
+            "n. 家庭；亲属；家族；子女；[生]科；语族；[化]族",
+            "adj. 家庭的；家族的；适合于全家的"
+        ],
+        "usphone": "[ˈfæməli]",
+        "ukphone": "[ˈfæməli]"
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "n. 海滩；湖滨",
+            "vt. 将…拖上岸",
+            "vi. 搁浅；定居"
+        ],
+        "usphone": "[biːtʃ]",
+        "ukphone": "[biːtʃ]"
+    },
+    {
+        "name": "hill",
+        "trans": [
+            "n. 小山；丘陵；斜坡；山冈"
+        ],
+        "usphone": "[hɪl]",
+        "ukphone": "[hɪl]"
+    },
+    {
+        "name": "past",
+        "trans": [
+            "n. 过去；往事",
+            "prep. 越过；晚于",
+            "adj. 过去的；结束的",
+            "adv. 过；经过"
+        ],
+        "usphone": "[pæst]",
+        "ukphone": "[pɑːst]"
+    },
+    {
+        "name": "station",
+        "trans": [
+            "n. 车站；驻地；地位；身份",
+            "vt. 配置；安置；驻扎"
+        ],
+        "usphone": "[ˈsteɪʃn]",
+        "ukphone": "[ˈsteɪʃ(ə)n]"
+    },
+    {
+        "name": "hospital",
+        "trans": [
+            "n. 医院"
+        ],
+        "usphone": "[ˈhɑːspɪtl]",
+        "ukphone": "[ˈhɒspɪt(ə)l]"
+    },
+    {
+        "name": "stop",
+        "trans": [
+            "n. 停止；车站；障碍；逗留",
+            "vi. 停止；中止；逗留；被塞住",
+            "vt. 停止；堵塞；断绝"
+        ],
+        "usphone": "[stɑːp]",
+        "ukphone": "[stɒp]"
+    },
+    {
+        "name": "turn",
+        "trans": [
+            "n. 转弯；变化；(损害或有益于别人的)行为，举动，举止",
+            "vi. 转向；转变；转动",
+            "vt. 转动，使旋转；转弯；翻过来；兑换"
+        ],
+        "usphone": "[tɜːrn]",
+        "ukphone": "[tɜːn]"
+    },
+    {
+        "name": "around",
+        "trans": [
+            "prep. 四处；在…周围",
+            "adv. 大约；到处；在附近"
+        ],
+        "usphone": "[əˈraʊnd]",
+        "ukphone": "[əˈraʊnd]"
+    },
+    {
+        "name": "turn around",
+        "trans": [
+            "na. 转身；〈美〉使向好的方向转变"
+        ]
+    },
+    {
+        "name": "ground",
+        "trans": [
+            "n. 地面；土地；范围；战场;根据",
+            "v. 研磨（grind的过去分词）；压迫",
+            "adj. 土地的；地面上的；磨碎的；磨过的",
+            "vt. 使接触地面；打基础；使搁浅",
+            "vi. 着陆；搁浅"
+        ],
+        "usphone": "[ɡraʊnd]",
+        "ukphone": "[ɡraʊnd]"
+    },
+    {
+        "name": "again",
+        "trans": [
+            "adv. 又，此外；再一次；再说；增加",
+            "n. （英、保）阿盖恩"
+        ],
+        "usphone": "[əˈɡen; əˈɡeɪn]",
+        "ukphone": "[əˈɡen]"
+    },
+    {
+        "name": "jump",
+        "trans": [
+            "n. 跳跃；暴涨；惊跳",
+            "vt. 跳跃；使跳跃；跳过；突升",
+            "vi. 跳跃；暴涨；猛增"
+        ],
+        "usphone": "[dʒʌmp]",
+        "ukphone": "[dʒʌmp]"
+    },
+    {
+        "name": "back",
+        "trans": [
+            "n. 后面；背部；靠背；足球等的后卫；书报等的末尾",
+            "adj. 后面的；过去的；拖欠的",
+            "vt. 支持；后退；背书；下赌注",
+            "adv. 以前；向后地；来回地；上溯；回来；回原处",
+            "vi. 后退；背靠；倒退"
+        ],
+        "usphone": "[bæk]",
+        "ukphone": "[bæk]"
+    },
+    {
+        "name": "come back",
+        "trans": [
+            "na. 回来；想起来；〔口语〕复原；归"
+        ],
+        "usphone": "[kʌm bæk]",
+        "ukphone": "[kʌm bæk]"
+    },
+    {
+        "name": "left",
+        "trans": [
+            "adj. 左边的；左派的；剩下的",
+            "adv. 在左面",
+            "n. 左边；左派；激进分子",
+            "v. 离开（leave的过去式）"
+        ],
+        "usphone": "[left]",
+        "ukphone": "[left]"
+    },
+    {
+        "name": "turn left",
+        "trans": [
+            "un. 向左转"
+        ],
+        "usphone": "[tɝ​n lɛft]",
+        "ukphone": "[tɜ:n left]"
+    },
+    {
+        "name": "right",
+        "trans": [
+            "n. 正确；右边；正义",
+            "adj. 正确的；直接的；右方的",
+            "vt. 纠正",
+            "adv. 正确地；恰当地；彻底地",
+            "vi. 复正；恢复平稳"
+        ],
+        "usphone": "[raɪt]",
+        "ukphone": "[raɪt]"
+    },
+    {
+        "name": "turn right",
+        "trans": [
+            "na. 转往右面"
+        ]
+    },
+    {
+        "name": "road",
+        "trans": [
+            "n. 公路，马路；道路；手段",
+            "adj. （美）巡回的",
+            "vt. （狗）沿臭迹追逐（猎物）"
+        ],
+        "usphone": "[roʊd]",
+        "ukphone": "[rəʊd]"
+    },
+    {
+        "name": "excuse me",
+        "trans": [
+            "un. 请原谅；对不起"
+        ],
+        "usphone": "[ɪkˈskjuːz mi]",
+        "ukphone": "[ɪk'skjʊs mi]"
+    },
+    {
+        "name": "straight",
+        "trans": [
+            "n. 直；直线；直男，直女，异性恋者",
+            "adj. 直的；连续的；笔直的；正直的；整齐的；异性恋的",
+            "adv. 直接地；不断地；立即；坦率地"
+        ],
+        "usphone": "[streɪt]",
+        "ukphone": "[streɪt]"
+    },
+    {
+        "name": "go straight on",
+        "trans": [
+            "v. 一直走"
+        ]
+    },
+    {
+        "name": "lost",
+        "trans": [
+            "adj. 失去的；丧失的；迷惑的",
+            "v. 遗失（lose的过去分词）；失败"
+        ],
+        "usphone": "[lɔːst]",
+        "ukphone": "[lɒst]"
+    },
+    {
+        "name": "out",
+        "trans": [
+            "adv. 出现；在外；出局；出声地；不流行地",
+            "adj. 外面的；出局的；下台的",
+            "n. 出局",
+            "prep. 向；离去",
+            "vi. 出来；暴露",
+            "vt. 使熄灭；驱逐"
+        ],
+        "usphone": "[aʊt]",
+        "ukphone": "[aʊt]"
+    },
+    {
+        "name": "factory",
+        "trans": [
+            "n. 工厂；制造厂；代理店"
+        ],
+        "usphone": "[ˈfæktri; ˈfæktəri]",
+        "ukphone": "[ˈfæktri; ˈfæktəri]"
+    },
+    {
+        "name": "next to",
+        "trans": [
+            "prep. 紧邻；在…近旁；仅次于；紧接"
+        ]
+    },
+    {
+        "name": "cousin",
+        "trans": [
+            "n. 堂兄弟姊妹；表兄弟姊妹"
+        ],
+        "usphone": "[ˈkʌzn]",
+        "ukphone": "[ˈkʌzn]"
+    },
+    {
+        "name": "supermarket",
+        "trans": [
+            "n. 超级市场；自助售货商店"
+        ],
+        "usphone": "[ˈsuːpərmɑːrkɪt]",
+        "ukphone": "[ˈsuːpəmɑːkɪt]"
+    },
+    {
+        "name": "wrong",
+        "trans": [
+            "n. 坏事；不公正",
+            "adj. 错误的；失常的；不适当的",
+            "vt. 委屈；无理地对待；诽谤",
+            "adv. 错误地；邪恶地，不正当地"
+        ],
+        "usphone": "[rɔːŋ]",
+        "ukphone": "[rɒŋ]"
+    },
+    {
+        "name": "way",
+        "trans": [
+            "n. 方法；道路；方向；行业；习惯",
+            "adj. 途中的",
+            "adv. 大大地；远远地"
+        ],
+        "usphone": "[weɪ]",
+        "ukphone": "[weɪ]"
+    },
+    {
+        "name": "turn back",
+        "trans": [
+            "na. 同“turn down ”"
+        ]
+    },
+    {
+        "name": "front",
+        "trans": [
+            "n. 前面；正面；前线",
+            "adj. 前面的；正面的",
+            "vt. 面对；朝向；对付",
+            "vi. 朝向",
+            "adv. 在前面；向前"
+        ],
+        "usphone": "[frʌnt]",
+        "ukphone": "[frʌnt]"
+    },
+    {
+        "name": "in front of",
+        "trans": [
+            "na. 在…的前面"
+        ],
+        "usphone": "[ɪn frʌnt ʌv]",
+        "ukphone": "[ɪn frʌnt əv]"
+    },
+    {
+        "name": "well",
+        "trans": [
+            "n. 井；源泉",
+            "adj. 良好的；健康的；适宜的",
+            "adv. 很好地；充分地；满意地；适当地",
+            "v. 涌出"
+        ],
+        "usphone": "[wel]",
+        "ukphone": "[wel]"
+    },
+    {
+        "name": "taxi",
+        "trans": [
+            "n. 出租汽车",
+            "vt. 使滑行；用出租车送",
+            "vi. 乘出租车；滑行"
+        ],
+        "usphone": "[ˈtæksi]",
+        "ukphone": "[ˈtæksi]"
+    },
+    {
+        "name": "Mrs",
+        "trans": [
+            "n. 太太；夫人（用于已婚妇女姓名前的尊称）"
+        ],
+        "usphone": "[ˈmɪsɪz]",
+        "ukphone": "[ˈmɪsɪz]"
+    },
+    {
+        "name": "cinema",
+        "trans": [
+            "n. 电影；电影院；电影业，电影制作术"
+        ],
+        "usphone": "[ˈsɪnəmə]",
+        "ukphone": "[ˈsɪnəmə]"
+    }
+]

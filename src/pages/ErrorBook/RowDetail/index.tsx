@@ -5,11 +5,13 @@ import { currentRowDetailAtom } from '../store'
 import type { groupedWordRecords } from '../type'
 import DataTag from './DataTag'
 import RowPagination from './RowPagination'
+import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
+import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import Phonetic from '@/pages/Typing/components/WordPanel/components/Phonetic'
 import Letter from '@/pages/Typing/components/WordPanel/components/Word/Letter'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { useSetAtom } from 'jotai'
-import { useCallback, useMemo } from 'react'
+import { useCallback, useMemo, useRef } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import HashtagIcon from '~icons/heroicons/chart-pie-20-solid'
 import CheckCircle from '~icons/heroicons/check-circle-20-solid'
@@ -24,8 +26,10 @@ type RowDetailProps = {
 
 const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) => {
   const setCurrentRowDetail = useSetAtom(currentRowDetailAtom)
+
   const dictInfo = idDictionaryMap[currentRowDetail.dict]
   const { word, isLoading, hasError } = useGetWord(currentRowDetail.word, dictInfo)
+  const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
 
   const rowDetailData: RowDetailData = useMemo(() => {
     const time =
@@ -52,6 +56,15 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
     { preventDefault: true },
   )
 
+  useHotkeys(
+    'ctrl+j',
+    () => {
+      wordPronunciationIconRef.current?.play()
+    },
+    [],
+    { enableOnFormTags: true, preventDefault: true },
+  )
+
   return (
     <div className="absolute inset-0 flex  flex-col items-center  justify-center ">
       <div className="my-card relative z-10 flex h-[32rem] min-w-[26rem] select-text flex-col items-center justify-around rounded-2xl bg-white px-3 py-10 dark:bg-gray-900">
@@ -62,7 +75,16 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
               <Letter key={`${index}-${t}`} letter={t} visible state="normal" />
             ))}
           </div>
-          <div>{word ? <Phonetic word={word} /> : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}</div>
+          <div className="relative flex h-8 items-center">
+            {word ? <Phonetic word={word} /> : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
+            {word && (
+              <WordPronunciationIcon
+                word={word.name}
+                className="absolute -right-7 top-1/2 h-5 w-5 -translate-y-1/2 transform "
+                ref={wordPronunciationIconRef}
+              />
+            )}
+          </div>
           <div className="flex max-w-[24rem] items-center">
             <span className={`max-w-4xl text-center font-sans transition-colors duration-300 dark:text-white dark:text-opacity-80`}>
               {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}

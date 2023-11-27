@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout'
+import { DictChapterButton } from './components/DictChapterButton'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
@@ -9,18 +10,18 @@ import WordPanel from './components/WordPanel'
 import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
 import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
+import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, randomConfigAtom } from '@/store'
+import { currentDictIdAtom, randomConfigAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue } from 'jotai'
 import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
@@ -28,9 +29,7 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
 
-  const currentChapter = useAtomValue(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
-  const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
 
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
@@ -124,17 +123,11 @@ const App: React.FC = () => {
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
+      {state.isFinished && <DonateCard />}
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
-          <Tooltip content="词典章节切换">
-            <NavLink
-              className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
-              to="/gallery"
-            >
-              {currentDictInfo.name} 第 {currentChapter + 1} 章
-            </NavLink>
-          </Tooltip>
+          <DictChapterButton />
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />
@@ -142,7 +135,7 @@ const App: React.FC = () => {
             <button
               className={`${
                 state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
-              } btn-primary transition-all duration-300 `}
+              } my-btn-primary transition-all duration-300 `}
               onClick={skipWord}
             >
               Skip

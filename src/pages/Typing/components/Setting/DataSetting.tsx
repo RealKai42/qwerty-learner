@@ -81,7 +81,7 @@ export default function DataSetting() {
             </div>
 
             <button
-              className="btn-primary ml-4 disabled:bg-gray-300"
+              className="my-btn-primary ml-4 disabled:bg-gray-300"
               type="button"
               onClick={onClickExport}
               disabled={isExporting}
@@ -110,7 +110,7 @@ export default function DataSetting() {
             </div>
 
             <button
-              className="btn-primary ml-4 disabled:bg-gray-300"
+              className="my-btn-primary ml-4 disabled:bg-gray-300"
               type="button"
               onClick={onClickImport}
               disabled={isImporting}

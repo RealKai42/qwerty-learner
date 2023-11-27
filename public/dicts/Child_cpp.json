@@ -1,0 +1,236 @@
+[
+    {
+        "name": "include",
+        "trans": [
+            "包含"
+        ]
+    },
+    {
+        "name": "iostream",
+        "trans": [
+            "输入输出头文件"
+        ]
+    },
+    {
+        "name": "using",
+        "trans": [
+            "使用"
+        ]
+    },
+    {
+        "name": "namespace",
+        "trans": [
+            "命名空间"
+        ]
+    },
+    {
+        "name": "std",
+        "trans": [
+            "标准的缩写"
+        ]
+    },
+    {
+        "name": "main",
+        "trans": [
+            "主函数"
+        ]
+    },
+    {
+        "name": "int",
+        "trans": [
+            "声明整型变量或函数"
+        ]
+    },
+    {
+        "name": "char",
+        "trans": [
+            "声明字符型变量或函数"
+        ]
+    },
+    {
+        "name": "double",
+        "trans": [
+            "声明双精度变量或函数"
+        ]
+    },
+    {
+        "name": "float",
+        "trans": [
+            "声明浮点型变量或函数"
+        ]
+    },
+    {
+        "name": "long",
+        "trans": [
+            "声明长整型变量或函数"
+        ]
+    },
+    {
+        "name": "short",
+        "trans": [
+            "声明短整型变量或函数"
+        ]
+    },
+    {
+        "name": "signed",
+        "trans": [
+            "声明有符号类型变量或函数"
+        ]
+    },
+    {
+        "name": "unsigned",
+        "trans": [
+            "声明无符号类型变量或函数"
+        ]
+    },
+    {
+        "name": "enum",
+        "trans": [
+            "声明枚举类型"
+        ]
+    },
+    {
+        "name": "struct",
+        "trans": [
+            "声明结构体变量或函数"
+        ]
+    },
+    {
+        "name": "union",
+        "trans": [
+            "声明共用体（联合）数据类型"
+        ]
+    },
+    {
+        "name": "cin",
+        "trans": [
+            "输入命令"
+        ]
+    },
+    {
+        "name": "cout",
+        "trans": [
+            "输出命令"
+        ]
+    },
+    {
+        "name": "endl",
+        "trans": [
+            "end line的缩写，换行"
+        ]
+    },
+    {
+        "name": "scanf",
+        "trans": [
+            "输入命令"
+        ]
+    },
+    {
+        "name": "printf",
+        "trans": [
+            "输出命令"
+        ]
+    },
+    {
+        "name": "void",
+        "trans": [
+            "声明函数无返回值或无参数，声明无类型指针"
+        ]
+    },
+    {
+        "name": "for",
+        "trans": [
+            "一种循环语句"
+        ]
+    },
+    {
+        "name": "do",
+        "trans": [
+            "循环语句的循环体"
+        ]
+    },
+    {
+        "name": "while",
+        "trans": [
+            "循环语句的循环条件"
+        ]
+    },
+    {
+        "name": "break",
+        "trans": [
+            "跳出当前循环"
+        ]
+    },
+    {
+        "name": "continue",
+        "trans": [
+            "结束当前循环，开始下一轮循环"
+        ]
+    },
+    {
+        "name": "if",
+        "trans": [
+            "条件语句"
+        ]
+    },
+    {
+        "name": "else",
+        "trans": [
+            "条件语句否定分支（与 if 连用）"
+        ]
+    },
+    {
+        "name": "goto",
+        "trans": [
+            "无条件跳转语句"
+        ]
+    },
+    {
+        "name": "switch",
+        "trans": [
+            "用于开关语句"
+        ]
+    },
+    {
+        "name": "case",
+        "trans": [
+            "开关语句分支"
+        ]
+    },
+    {
+        "name": "default",
+        "trans": [
+            "开关语句中的“其他”分支"
+        ]
+    },
+    {
+        "name": "return",
+        "trans": [
+            "子程序返回语句（可以带参数，也看不带参数）"
+        ]
+    },
+    {
+        "name": "static",
+        "trans": [
+            "声明静态变量"
+        ]
+    },
+    {
+        "name": "const",
+        "trans": [
+            "声明只读变量 （*注意是变量*）"
+        ]
+    },
+    {
+        "name": "sizeof",
+        "trans": [
+            "计算数据类型长度"
+        ]
+    },
+    {
+        "name": "typedef",
+        "trans": [
+            "用以给数据类型取别名（当然还有其他作用）"
+        ]
+    }
+]

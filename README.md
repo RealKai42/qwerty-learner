@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/github/license/KaiyiWing/qwerty-learner" alt="License"></a>
+  <a href="https://github.com/Realkai42/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Realkai42/qwerty-learner" alt="License"></a>
   <a><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
   <a><img src="https://img.shields.io/badge/Powered%20by-React-blue"/></a>
 </p>
@@ -26,17 +26,17 @@
 
 ## 📸 在线访问
 
-Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>  
-GitHub Pages: <https://kaiyiwing.github.io/qwerty-learner/>  
+Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>
+GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 国内用户建议使用 Gitee 访问
 <br/>
 <br/>
 
-项目已发布 VSCode 插件版，一键启动、随时开始练习  
-[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)  
-[GitHub](https://github.com/Kaiyiwing/qwerty-learner-vscode)
+项目已发布 VSCode 插件版，一键启动、随时开始练习
+[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)
+[GitHub](https://github.com/Realkai42/qwerty-learner-vscode)
 
 <br />
 
@@ -55,7 +55,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 内置了程序员工作常用单词的词库，方便练习工作中常用的单词、提高输入速度。也内置了诸多语言的 API 的练习，帮助以程序员快速熟悉常用的 API，更多语言的 API 正在逐步添加中...
 
 <div align=center>
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/coder.png"/>
+<img  src="https://github.com/Realkai42/qwerty-learner/blob/master/docs/coder.png"/>
 </div>
 
 <br />
@@ -74,7 +74,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 方便用户在记忆单词时，同时记忆读音与音标。
 
 <div align=center>
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/phonetic.jpeg"/>
+<img  src="https://github.com/Realkai42/qwerty-learner/blob/master/docs/phonetic.jpeg"/>
 </div>
 <br />
 <br />
@@ -84,7 +84,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 在用户完成一个章节的练习后，会弹出选项是否默写本章，方便用户巩固本章学习的单词。
 
 <div align=center>
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/dictation.png"/>
+<img  src="https://github.com/Realkai42/qwerty-learner/blob/master/docs/dictation.png"/>
 </div>
 <br />
 <br />
@@ -94,7 +94,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 量化用户输入的速度和输入的正确率，让用户有感知的了解自己技能的提升
 
 <div align=center>
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/speed.jpeg"/>
+<img  src="https://github.com/Realkai42/qwerty-learner/blob/master/docs/speed.jpeg"/>
 </div>
 <br />
 <br />
@@ -103,7 +103,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 ### 贡献代码
 
-[Call for Contributor](https://github.com/Kaiyiwing/qwerty-learner/issues/390)  
+[Call for Contributor](https://github.com/Realkai42/qwerty-learner/issues/390)
 [贡献准则](./docs/CONTRIBUTING.md)
 
 ### 贡献词库
@@ -124,7 +124,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 ### 脚本执行
 
-对于 Windows 用户，可以直接执行 ps1 脚本，来一键安装依赖并启动项目。
+对于 Windows 用户，可以直接执行 [install.ps1](scripts/install.ps1) 脚本，来一键安装依赖并启动项目。
 
 1. 打开 powershell，定位到项目根目录中的`scripts`目录
 2. 在命令行中，执行`.\install.ps1`
@@ -132,6 +132,14 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 > 备注
 > 脚本依赖`winget`来安装 node，仅在 Windows 10 1709（版本 16299）或更高版本上受支持！
+
+对于 MacOS 用户，可以直接执行 [install.sh](scripts/install.sh) 脚本来一键安装依赖并启动项目
+
+1. 打开终端，并进入此项目文件夹
+2. 在命令行中执行 `scripts/install.sh`
+3. 等待脚本完成
+
+> 此脚本依赖于 `homebrew`，请确保自己电脑上可以执行`brew`命令
 
 ## 🏆 荣誉
 
@@ -175,7 +183,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 - Linux Command. [@归谜](https://github.com/vhxubo)
 - C#: List API [@nidbCN](https://github.com/nidbCN)
 
-目前 API 相关词库主要依赖于社区贡献，如果您想贡献自己需要的 API 词库，建议参考 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/40) [pr #67](https://github.com/Kaiyiwing/qwerty-learner/pull/67) 贡献词典。
+目前 API 相关词库主要依赖于社区贡献，如果您想贡献自己需要的 API 词库，建议参考 [Issue #42](https://github.com/Realkai42/qwerty-learner/issues/40) [pr #67](https://github.com/Realkai42/qwerty-learner/pull/67) 贡献词典。
 
 <br />
 <br />
@@ -184,7 +192,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 目前项目处于开发初期，新功能正在持续添加中，如果你对软件有任何功能与建议，欢迎在 Issues 中提出
 
-项目的进展与未来计划在 [Issue](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Qwerty Learner 的未来感兴趣，欢迎参与讨论。
+项目的进展与未来计划在 [Issue](https://github.com/Realkai42/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Qwerty Learner 的未来感兴趣，欢迎参与讨论。
 
 如果你也喜欢本软件的设计思想，欢迎提交 pr，非常感谢你对我们的支持！
 <br />
@@ -194,7 +202,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 如果您对本项目感兴趣，我们非常欢迎参与到项目的贡献中，我们会尽可能地提供帮助
 
-在贡献前，希望您阅读 [Issue #42](https://github.com/Kaiyiwing/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区 Label 为 "Help Wanted" 的工作，我们也非常欢迎您实现自己的想法。
+在贡献前，希望您阅读 [Issue #42](https://github.com/Realkai42/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区 Label 为 "Help Wanted" 的工作，我们也非常欢迎您实现自己的想法。
 
 如果您确定了想要参与的工作，希望在有基本进展后提交 draft pr，我们可以在 draft pr 上进行讨论，也有利于听取其他 collaborator 的意见。
 
@@ -208,37 +216,37 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 如果您喜欢我们软件，非常感谢您对我们未来的支持!
 
-<img  src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
+<img  src="https://github.com/Realkai42/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
 
 ## 👨‍💻 Contributors
 
-<a href="https://github.com/Kaiyiwing/qwerty-learner/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Kaiyiwing/qwerty-learner" />
+<a href="https://github.com/Realkai42/qwerty-learner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Realkai42/qwerty-learner" />
 </a>
 
 ## 🎁 大感谢
 
 ### 灵感来源
 
-[Keybr](https://www.keybr.com/)  
+[Keybr](https://www.keybr.com/)
 以算法著称，功能非常完善的打字网站，根据用户输入每个字母的正确率与速度生成“伪英语”来帮助用户集中锻炼个别输入较慢的字母。并可以根据用户的输入记录生成完整的分析报告。
 
 也是本项目的核心灵感来源，Keybr 更多针对英语为母语的用户。在我使用 Keybr 练习打字时，觉得虽然生成的伪英语能够练习输入不顺畅的个别字母，但并不能提升非母语用户对单词的掌握，于是有了本项目。
 
-[Typing Academy](https://www.typing.academy)  
-非常优秀的打字练习网站  
+[Typing Academy](https://www.typing.academy)
+非常优秀的打字练习网站
 其优秀的 UI 风格，以及对速度、正确率的展示极大的影响了本项目的 UI 设计
 
-[react-code-game](https://github.com/webzhd/react-code-game)  
+[react-code-game](https://github.com/webzhd/react-code-game)
 一个非常酷的开源项目，使用 ts 实现，可以在练习打字的同时练习 js 内置 api，项目中添加代码 api 的想法便来源自此项目。
 <br/><br/>
 
 ### 开源项目
 
-[React](https://github.com/facebook/react) & [CRA](https://github.com/facebook/create-react-app)  
+[React](https://github.com/facebook/react) & [CRA](https://github.com/facebook/create-react-app)
 完整和详细的文档对初学者非常友好，React 系的文档是我目前自学过程中读过最棒的文档，几乎解决使用中大部分问题。非常感谢 React 对开源世界的贡献，为我们搭建了很好的基础，让初学者也能构建非常棒的软件。
 
-[Tailwindcss](https://tailwindcss.com/docs)  
+[Tailwindcss](https://tailwindcss.com/docs)
 如果没有 tailwind，这个项目还有再拖一阵子，tailwind 的设计思路解决了 css 入门选手对写复杂 css 的恐惧，让新手以一个非常舒适的方式去设计 UI。
 <br/><br/>
 
@@ -271,4 +279,4 @@ JS API 来自于[react-code-game](https://github.com/webzhd/react-code-game) ，
 
 ## 🌟 Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/Kaiyiwing/qwerty-learner.svg)](https://starchart.cc/Kaiyiwing/qwerty-learner)
+[![Stargazers over time](https://starchart.cc/Realkai42/qwerty-learner.svg)](https://starchart.cc/Realkai42/qwerty-learner)

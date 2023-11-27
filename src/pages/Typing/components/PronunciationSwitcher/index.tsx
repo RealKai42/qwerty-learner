@@ -3,6 +3,7 @@ import { LANG_PRON_MAP } from '@/resources/soundResource'
 import { currentDictInfoAtom, phoneticConfigAtom, pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { PRONUNCIATION_PHONETIC_MAP } from '@/typings'
+import { CTRL } from '@/utils'
 import { Listbox, Popover, Switch, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
 import { Fragment, useCallback, useEffect, useMemo } from 'react'
@@ -218,6 +219,11 @@ const PronunciationSwitcher = () => {
                       </Listbox>
                     </div>
                   </div>
+                  {pronunciationConfig.isOpen && (
+                    <span className="text-colo text-xs font-medium text-gray-500 dark:text-white dark:text-opacity-60">
+                      Tips: 朗读发音快捷键（{CTRL} + J）
+                    </span>
+                  )}
                 </Transition>
               </div>
             </Popover.Panel>
