@@ -11,8 +11,6 @@ function Test-CommandInstalled([string]$CommandName) {
 
 $location = Get-Location
 
-$hasWinget = false;
-
 # 检测Node命令是否存在
 if (!(Test-CommandInstalled node)) {
     Write-Host "未检测到nodejs环境，尝试使用winget安装..."
@@ -21,12 +19,11 @@ if (!(Test-CommandInstalled node)) {
         Write-Host "未检测到winget，无法完成安装，请检测系统版本，或尝试安装winget:https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab"
     }
     else {
-        $hasWinget = true;
-        winget install OpenJS.Nodejs --slient
+        winget install OpenJS.Nodejs --silent
         Write-Host "nodejs 安装完成"
     }
-}
-if ($hasWinget) {
+}else{
+    Write-Host "已安装nodejs!"
     Set-Location ..
     Write-Host "开始安装依赖..."
     yarn install --registry=https://registry.npm.taobao.org
@@ -36,8 +33,6 @@ if ($hasWinget) {
         Start-Sleep 4
         Start-Process http://localhost:5173/
     } | Out-Null
-    
     npm run start
     Set-Location $location
-    
 }
