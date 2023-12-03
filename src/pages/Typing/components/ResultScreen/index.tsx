@@ -5,10 +5,8 @@ import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
 import styles from './index.module.css'
 import Tooltip from '@/components/Tooltip'
-import { useRevisionChapterCount } from '@/pages/Gallery-N/hooks/useRevisionChapterCount'
 import {
   currentChapterAtom,
-  currentDictIdAtom,
   currentDictInfoAtom,
   infoPanelStateAtom,
   isInRevisionModeAtom,
@@ -17,6 +15,7 @@ import {
 } from '@/store'
 import type { InfoPanelType } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
+import { db } from '@/utils/db'
 import { Transition } from '@headlessui/react'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo } from 'react'
@@ -34,12 +33,10 @@ const ResultScreen = () => {
 
   const setWordDictationConfig = useSetAtom(wordDictationConfigAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
-  const currentDictId = useAtomValue(currentDictIdAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const setInfoPanelState = useSetAtom(infoPanelStateAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const isRevisionMode = useAtomValue(isInRevisionModeAtom)
-  const revisionChapterCount = useRevisionChapterCount(currentDictId, isRevisionMode)
 
   useEffect(() => {
     // tick a zero timer to calc the stats
@@ -82,8 +79,8 @@ const ResultScreen = () => {
   }, [state.chapterData.userInputLogs, state.chapterData.words])
 
   const isLastChapter = useMemo(() => {
-    return isRevisionMode ? revisionChapterCount === currentChapter + 1 : currentChapter >= currentDictInfo.chapterCount - 1
-  }, [currentChapter, currentDictInfo, isRevisionMode, revisionChapterCount])
+    return isRevisionMode ? true : currentChapter >= currentDictInfo.chapterCount - 1
+  }, [currentChapter, currentDictInfo, isRevisionMode])
 
   const correctRate = useMemo(() => {
     const chapterLength = state.chapterData.words.length
@@ -110,7 +107,7 @@ const ResultScreen = () => {
     return `${minuteString}:${secondString}`
   }, [state.timerData.time])
 
-  const repeatButtonHandler = useCallback(() => {
+  const repeatButtonHandler = useCallback(async () => {
     setWordDictationConfig((old) => {
       if (old.isOpen) {
         if (old.openBy === 'auto') {
@@ -119,14 +116,15 @@ const ResultScreen = () => {
       }
       return old
     })
+    await db.revisionDictRecords.where('dict').equals(currentDictInfo.id).modify({ revisionIndex: 0 })
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
-  }, [dispatch, randomConfig.isOpen, setWordDictationConfig])
+  }, [dispatch, randomConfig.isOpen, setWordDictationConfig, currentDictInfo.id])
 
-  const dictationButtonHandler = useCallback(() => {
+  const dictationButtonHandler = useCallback(async () => {
     setWordDictationConfig((old) => ({ ...old, isOpen: true, openBy: 'auto' }))
-
+    await db.revisionDictRecords.where('dict').equals(currentDictInfo.id).modify({ revisionIndex: 0 })
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
-  }, [dispatch, randomConfig.isOpen, setWordDictationConfig])
+  }, [dispatch, randomConfig.isOpen, setWordDictationConfig, currentDictInfo.id])
 
   const nextButtonHandler = useCallback(() => {
     setWordDictationConfig((old) => {

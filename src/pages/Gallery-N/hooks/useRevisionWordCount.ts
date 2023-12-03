@@ -1,26 +1,25 @@
-import { calcChapterCount } from '@/utils'
 import { db } from '@/utils/db'
 import { useEffect, useState } from 'react'
 
-export function useRevisionChapterCount(dictID: string, isRevisionMode: boolean) {
-  const [chapterCount, setChapterCount] = useState<number>(0)
+export function useRevisionWordCount(dictID: string) {
+  const [wordCount, setWordCount] = useState<number>(0)
 
   useEffect(() => {
-    const fetchChapterCount = async () => {
-      const count = await getRevisionChapterCount(dictID)
-      setChapterCount(count)
+    const fetchWordCount = async () => {
+      const count = await getRevisionWordCount(dictID)
+      setWordCount(count)
     }
 
-    if (isRevisionMode && dictID) {
-      fetchChapterCount()
+    if (dictID) {
+      fetchWordCount()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dictID, isRevisionMode])
+  }, [dictID])
 
-  return chapterCount
+  return wordCount
 }
 
-async function getRevisionChapterCount(dict: string): Promise<number> {
+async function getRevisionWordCount(dict: string): Promise<number> {
   const wordCount = await db.wordRecords
     .where('dict')
     .equals(dict)
@@ -31,6 +30,5 @@ async function getRevisionChapterCount(dict: string): Promise<number> {
       const reducedRecords = wordRecords.filter((item) => !res.has(item['word'] + item['dict']) && res.set(item['word'] + item['dict'], 1))
       return reducedRecords.length
     })
-  return calcChapterCount(wordCount ?? 0)
-  return 0
+  return wordCount
 }

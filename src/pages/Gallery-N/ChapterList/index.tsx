@@ -1,14 +1,16 @@
 import { GalleryContext } from '..'
-import { useRevisionChapterCount } from '../hooks/useRevisionChapterCount'
+import { useRevisionWordCount } from '../hooks/useRevisionWordCount'
 import ChapterRow from './ChapterRow'
+import RevisionSwitcher from './RevisionSwitcher'
+import Tooltip from '@/components/Tooltip'
 import { currentChapterAtom, currentDictIdAtom, isInRevisionModeAtom } from '@/store'
 import { calcChapterCount } from '@/utils'
 import range from '@/utils/range'
 import { Dialog, Switch, Transition } from '@headlessui/react'
-import classNames from 'classnames'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import IconInfo from '~icons/ic/outline-info'
 import IconX from '~icons/tabler/x'
 
 export default function ChapterList() {
@@ -26,7 +28,7 @@ export default function ChapterList() {
 
   const chapterCount = calcChapterCount(dict?.length ?? 0)
   const showChapterList = dict !== null
-  const revisionChapterCount = useRevisionChapterCount(dict?.id ?? '', isRevisionMode)
+  const revisionWordCount = useRevisionWordCount(currentDictId)
 
   useEffect(() => {
     if (dict) {
@@ -92,19 +94,15 @@ export default function ChapterList() {
                   <>
                     <div className="flex w-full items-end justify-between py-4 pl-5">
                       <span className="text-lg text-gray-700 dark:text-gray-200">{dict.name}</span>
-                      <div className="flex items-center gap-4">
-                        <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
-                          复习错误单词
-                        </span>
-                        <Switch checked={isRevisionMode} onChange={onToggleRevisionMode} className="switch-root">
-                          <span aria-hidden="true" className="switch-thumb" />
-                        </Switch>
+                      <div className="flex items-center gap-3">
+                        <RevisionSwitcher dictId={dict?.id} onConfirm={onConfirm} />
+
                         <IconX className="mr-2 cursor-pointer text-gray-400" onClick={onCloseDialog} />
                       </div>
                     </div>
 
                     <div className="w-full flex-1 overflow-y-auto">
-                      {isRevisionMode && revisionChapterCount === 0 ? (
+                      {isRevisionMode && revisionWordCount === 0 ? (
                         <div className="flex min-h-full items-center justify-center">
                           <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
                             暂无错误单词
@@ -126,35 +124,26 @@ export default function ChapterList() {
                               </th>
                               <th
                                 scope="col"
-                                className={classNames(
-                                  isRevisionMode && 'invisible',
-                                  'flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200',
-                                )}
+                                className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
                               >
                                 练习次数
                               </th>
                               <th
                                 scope="col"
-                                className={classNames(
-                                  isRevisionMode && 'invisible',
-                                  'flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200',
-                                )}
+                                className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
                               >
                                 平均错误单词数
                               </th>
                               <th
                                 scope="col"
-                                className={classNames(
-                                  isRevisionMode && 'invisible',
-                                  'flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200',
-                                )}
+                                className="flex-1 px-2 py-3  text-center text-sm font-bold tracking-wider text-gray-600 dark:text-gray-200"
                               >
                                 平均错误输入数
                               </th>
                             </tr>
                           </thead>
                           <tbody className="block h-full w-full divide-y divide-gray-100 overflow-y-scroll bg-white dark:divide-gray-800">
-                            {range(0, isRevisionMode ? revisionChapterCount : chapterCount, 1).map((index) => (
+                            {range(0, chapterCount, 1).map((index) => (
                               <ChapterRow
                                 key={`${dict.id}-${index}`}
                                 index={index}
@@ -167,18 +156,7 @@ export default function ChapterList() {
                         </table>
                       )}
                     </div>
-                    <button
-                      className={`text-bold h-15 w-full text-white ${
-                        isRevisionMode && revisionChapterCount === 0 ? 'bg-gray-400' : 'bg-indigo-400'
-                      }`}
-                      onClick={
-                        isRevisionMode && revisionChapterCount === 0
-                          ? () => {
-                              true
-                            }
-                          : onConfirm
-                      }
-                    >
+                    <button className="text-bold h-15 w-full bg-indigo-400 text-white" onClick={onConfirm}>
                       确定
                     </button>
                   </>

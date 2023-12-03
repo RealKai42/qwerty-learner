@@ -57,6 +57,7 @@ export enum TypingStateActionType {
   SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
   SET_IS_LOOP_SINGLE_WORD = 'SET_IS_LOOP_SINGLE_WORD',
   TOGGLE_IS_LOOP_SINGLE_WORD = 'TOGGLE_IS_LOOP_SINGLE_WORD',
+  SET_REVISION_INDEX = 'SET_REVISION_INDEX',
 }
 
 export type TypingStateAction =
@@ -84,10 +85,14 @@ type Dispatch = (action: TypingStateAction) => void
 
 export const typingReducer = (state: TypingState, action: TypingStateAction) => {
   switch (action.type) {
-    case TypingStateActionType.SETUP_CHAPTER:
-      state.chapterData.words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
-      state.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
-      break
+    case TypingStateActionType.SETUP_CHAPTER: {
+      const newState = structuredClone(initialState)
+      const words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
+      newState.chapterData.words = words
+      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+
+      return newState
+    }
     case TypingStateActionType.SET_IS_SKIP:
       state.isShowSkip = action.payload
       break
@@ -143,6 +148,8 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.SKIP_2_WORD_INDEX: {
       const newIndex = action.newIndex
       if (newIndex >= state.chapterData.words.length) {
+        console.log('newIndex', newIndex)
+        console.log('state.chapterData.words', state.chapterData.words)
         state.isTyping = false
         state.isFinished = true
       }
