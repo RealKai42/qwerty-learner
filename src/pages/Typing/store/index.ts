@@ -57,6 +57,7 @@ export enum TypingStateActionType {
   SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
   SET_IS_LOOP_SINGLE_WORD = 'SET_IS_LOOP_SINGLE_WORD',
   TOGGLE_IS_LOOP_SINGLE_WORD = 'TOGGLE_IS_LOOP_SINGLE_WORD',
+  SET_REVISION_INDEX = 'SET_REVISION_INDEX',
 }
 
 export type TypingStateAction =
@@ -147,6 +148,8 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.SKIP_2_WORD_INDEX: {
       const newIndex = action.newIndex
       if (newIndex >= state.chapterData.words.length) {
+        console.log('newIndex', newIndex)
+        console.log('state.chapterData.words', state.chapterData.words)
         state.isTyping = false
         state.isFinished = true
       }

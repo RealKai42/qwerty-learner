@@ -1,6 +1,9 @@
 import useIntersectionObserver from '@/hooks/useIntersectionObserver'
 import { useChapterStats } from '@/pages/Gallery-N/hooks/useChapterStats'
+import { isInRevisionModeAtom } from '@/store'
 import noop from '@/utils/noop'
+import classNames from 'classnames'
+import { useAtomValue } from 'jotai'
 import { useEffect, useRef } from 'react'
 
 type ChapterRowProps = {
@@ -15,6 +18,7 @@ export default function ChapterRow({ index, dictID, checked, onChange }: Chapter
   const entry = useIntersectionObserver(rowRef, {})
   const isVisible = !!entry?.isIntersecting
   const chapterStatus = useChapterStats(index, dictID, isVisible)
+  const isRevisionMode = useAtomValue(isInRevisionModeAtom)
 
   useEffect(() => {
     if (checked && rowRef.current !== null) {
@@ -43,13 +47,28 @@ export default function ChapterRow({ index, dictID, checked, onChange }: Chapter
         />
       </td>
       <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200">{index + 1}</td>
-      <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200">
+      <td
+        className={classNames(
+          isRevisionMode ? 'invisible' : 'visible',
+          'flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200',
+        )}
+      >
         {chapterStatus ? chapterStatus.exerciseCount : 0}
       </td>
-      <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200">
+      <td
+        className={classNames(
+          isRevisionMode ? 'invisible' : 'visible',
+          'flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200',
+        )}
+      >
         {chapterStatus ? chapterStatus.avgWrongWordCount : 0}
       </td>
-      <td className="flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200">
+      <td
+        className={classNames(
+          isRevisionMode ? 'invisible' : 'visible',
+          'flex-1 px-6 py-4 text-center text-sm text-gray-700 dark:text-gray-200',
+        )}
+      >
         {chapterStatus ? chapterStatus.avgWrongInputCount : 0}
       </td>
     </tr>

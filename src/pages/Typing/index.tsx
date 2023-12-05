@@ -31,10 +31,8 @@ const App: React.FC = () => {
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
-
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
   const saveChapterRecord = useSaveChapterRecord()
-
   useEffect(() => {
     // 检测用户设备
     if (!IsDesktop()) {
@@ -127,7 +125,7 @@ const App: React.FC = () => {
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
-          <DictChapterButton />
+          <DictChapterButton index={state.chapterData.index} />
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />
