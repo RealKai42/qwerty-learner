@@ -2,7 +2,7 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom, isInRevisionModeAtom } from '@/store'
+import { currentChapterAtom, currentDictInfoAtom } from '@/store'
 import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { atom, useAtomValue } from 'jotai'
@@ -20,7 +20,6 @@ export default function WordList() {
 
   const [isOpen, setIsOpen] = useState(false)
   const currentDictTitleValue = useAtomValue(currentDictTitle)
-  const isRevision = useAtomValue(isInRevisionModeAtom)
 
   function closeModal() {
     setIsOpen(false)
@@ -45,7 +44,7 @@ export default function WordList() {
 
       <Drawer open={isOpen} onClose={closeModal} classNames="bg-stone-50 dark:bg-gray-900">
         <Dialog.Title as="h3" className="flex items-center justify-between p-4 text-lg font-medium leading-6 dark:text-gray-50">
-          {isRevision && '错题练习 ' + currentDictTitleValue}
+          {currentDictTitleValue}
           <IconX onClick={closeModal} className="cursor-pointer" />
         </Dialog.Title>
         <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
