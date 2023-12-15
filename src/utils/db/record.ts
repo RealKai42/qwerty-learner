@@ -28,8 +28,18 @@ export class WordRecord implements IWordRecord {
   timing: number[]
   wrongCount: number
   mistakes: LetterMistakes
-
-  constructor(word: string, dict: string, chapter: number | null, timing: number[], wrongCount: number, mistakes: LetterMistakes) {
+  hidding: string
+  hasPeeked: boolean
+  constructor(
+    word: string,
+    dict: string,
+    chapter: number | null,
+    timing: number[],
+    wrongCount: number,
+    mistakes: LetterMistakes,
+    hidding: string,
+    hasPeeked: boolean,
+  ) {
     this.word = word
     this.timeStamp = getUTCUnixTimestamp()
     this.dict = dict
@@ -37,6 +47,8 @@ export class WordRecord implements IWordRecord {
     this.timing = timing
     this.wrongCount = wrongCount
     this.mistakes = mistakes
+    this.hidding = hidding
+    this.hasPeeked = hasPeeked
   }
 
   get totalTime() {

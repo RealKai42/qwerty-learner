@@ -1,7 +1,7 @@
 import HeatmapCharts from './components/HeatmapCharts'
 import KeyboardWithBarCharts from './components/KeyboardWithBarCharts'
 import LineCharts from './components/LineCharts'
-import { useWordStats } from './hooks/useWordStats'
+import { useRawWordRecords, useWordStats } from './hooks/useWordStats'
 import Layout from '@/components/Layout'
 import { isOpenDarkModeAtom } from '@/store'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
@@ -39,6 +39,9 @@ const Analysis = () => {
     dayjs().subtract(1, 'year').unix(),
     dayjs().unix(),
   )
+  const wordRecords = useRawWordRecords()
+  const wordRecordsJson = JSON.stringify(wordRecords)
+  const wordRecordsHref = 'data:application/json;base64,' + btoa(wordRecordsJson) // can not avoid this btoa for Buffer is excluded by vite
 
   return (
     <Layout>
@@ -66,6 +69,13 @@ const Analysis = () => {
                 </div>
                 <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <KeyboardWithBarCharts title="按键错误次数排行" name="错误次数" data={wrongTimeRecord} />
+                </div>
+                <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                  <button>
+                    <a href={wordRecordsHref} download="wordRecords.json">
+                      单词记录下载
+                    </a>
+                  </button>
                 </div>
               </>
             )}

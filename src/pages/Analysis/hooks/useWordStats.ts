@@ -56,6 +56,21 @@ export function useWordStats(startTimeStamp: number, endTimeStamp: number) {
   return wordStats
 }
 
+export function useRawWordRecords() {
+  const [wordRecords, setWordRecords] = useState<IWordRecord[]>([])
+
+  useEffect(() => {
+    const fetchWordRecords = async () => {
+      const records = await db.wordRecords.toArray()
+      setWordRecords(records)
+    }
+
+    fetchWordRecords()
+  }, [])
+
+  return wordRecords
+}
+
 async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Promise<IWordStats> {
   // indexedDB查找某个数字范围内的数据
   const records: IWordRecord[] = await db.wordRecords.where('timeStamp').between(startTimeStamp, endTimeStamp).toArray()

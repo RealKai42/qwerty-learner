@@ -20,6 +20,7 @@ export type WordState = {
   letterMistake: LetterMistakes
   // 用于随机隐藏字母功能
   randomLetterVisible: boolean[]
+  hasPeeked: boolean
 }
 
 export const initialWordState: WordState = {
@@ -37,4 +38,5 @@ export const initialWordState: WordState = {
   letterTimeArray: [],
   letterMistake: {},
   randomLetterVisible: [],
+  hasPeeked: false,
 }

@@ -97,6 +97,11 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   )
 
   const handleHoverWord = useCallback((checked: boolean) => {
+    if (checked && isShowAnswerOnHover) {
+      setWordState((state) => {
+        state.hasPeeked = true
+      })
+    }
     setIsHoveringWord(checked)
   }, [])
 
@@ -261,6 +266,8 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         wrongCount: wordState.wrongCount,
         letterTimeArray: wordState.letterTimeArray,
         letterMistake: wordState.letterMistake,
+        hidding: wordDictationConfig.isOpen ? wordDictationConfig.type : 'off',
+        hasPeeked: wordState.hasPeeked,
       })
 
       onFinish()
