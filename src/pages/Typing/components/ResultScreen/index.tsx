@@ -169,7 +169,7 @@ const ResultScreen = () => {
   )
 
   return (
-    <div className="fixed inset-0 z-10 overflow-y-auto">
+    <div className="fixed inset-0 z-30 overflow-y-auto">
       <div className="absolute inset-0 bg-gray-300 opacity-80 dark:bg-gray-600"></div>
       <Transition
         show={true}
