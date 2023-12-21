@@ -84,8 +84,6 @@ export const reviewModeInfoAtom = reviewInfoAtom({
 })
 export const isReviewModeAtom = atom((get) => get(reviewModeInfoAtom).isReviewMode)
 
-export const isRestartRevisionProgressAtom = atomWithStorage('isRestartRevisionProgress', false)
-
 export const phoneticConfigAtom = atomForConfig('phoneticConfig', {
   isOpen: true,
   type: 'us' as PhoneticType,
