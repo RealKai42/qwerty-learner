@@ -25,7 +25,7 @@ enum Tab {
 export default function DictDetail({ dictionary: dict }: { dictionary: Dictionary }) {
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
-  const [curTab, setCurTab] = useState<Tab>(Tab.Review)
+  const [curTab, setCurTab] = useState<Tab>(Tab.Chapters)
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const navigate = useNavigate()
 
