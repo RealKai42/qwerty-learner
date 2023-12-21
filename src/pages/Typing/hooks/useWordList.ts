@@ -1,17 +1,13 @@
-import { isRestartRevisionProgressAtom } from './../../../store/index'
-import { WordRecord } from './../../../utils/db/record'
 import { CHAPTER_LENGTH } from '@/constants'
-import { currentChapterAtom, currentDictInfoAtom, isInRevisionModeAtom } from '@/store'
-import type { WordWithIndex } from '@/typings/index'
-import { db } from '@/utils/db'
-import type { IWordRecord } from '@/utils/db/record'
+import { currentChapterAtom, currentDictInfoAtom, reviewModeInfoAtom } from '@/store'
+import type { Word, WordWithIndex } from '@/typings/index'
 import { wordListFetcher } from '@/utils/wordListFetcher'
 import { useAtom, useAtomValue } from 'jotai'
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import useSWR from 'swr'
 
 export type UseWordListResult = {
-  words: WordWithIndex[] | undefined
+  words: WordWithIndex[]
   isLoading: boolean
   error: Error | undefined
 }
@@ -22,74 +18,33 @@ export type UseWordListResult = {
 export function useWordList(): UseWordListResult {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
-  const [isInRevisionMode] = useAtom(isInRevisionModeAtom)
-  const [isRestartRevisionProgress, setRestartRevisionProgress] = useAtom(isRestartRevisionProgressAtom)
-  const [wrongListDesc, setWrongListDesc] = useState<IWordRecord[]>()
-
-  const isFirstChapter = currentDictInfo.id === 'cet4' && currentChapter === 0 && !isInRevisionMode
+  const { isReviewMode, reviewRecord } = useAtomValue(reviewModeInfoAtom)
 
   // Reset current chapter to 0, when currentChapter is greater than chapterCount.
   if (currentChapter >= currentDictInfo.chapterCount) {
     setCurrentChapter(0)
   }
 
-  useEffect(() => {
-    const fetchWrongList = async () => {
-      let lastErrorList: IWordRecord[] = []
-      lastErrorList = await db.revisionWordRecords.where('dict').equals(currentDictInfo.id).toArray()
-      console.log(lastErrorList)
-      if (lastErrorList.length === 0 || isRestartRevisionProgress) {
-        //获取最新的wrongRecords
-        if (lastErrorList.length === 0)
-          await db.revisionDictRecords.add({ dict: currentDictInfo.id, revisionIndex: 0, createdTime: Date.now() })
-        if (isRestartRevisionProgress)
-          await db.revisionDictRecords.where('dict').equals(currentDictInfo.id).modify({ revisionIndex: 0, createdTime: Date.now() })
-        setRestartRevisionProgress(false)
-        const wrongList = await db.wordRecords
-          .where('wrongCount')
-          .above(0)
-          .and((record) => record.dict === currentDictInfo.id)
-          .reverse()
-          .toArray()
-        const processedWrongList = wrongList.map((record) => {
-          return new WordRecord(record.word, record.dict, record.chapter, record.timing, record.wrongCount, record.mistakes)
-        })
-        wrongList.length !== 0 && (await db.revisionWordRecords.bulkAdd(processedWrongList))
-        lastErrorList = await db.revisionWordRecords.where('dict').equals(currentDictInfo.id).toArray()
-      }
-      setWrongListDesc(lastErrorList)
-    }
-    if (isInRevisionMode) {
-      fetchWrongList()
-    }
-  }, [isInRevisionMode, currentDictInfo.id, isRestartRevisionProgress, setRestartRevisionProgress])
-
+  const isFirstChapter = !isReviewMode && currentDictInfo.id === 'cet4' && currentChapter === 0
   const { data: wordList, error, isLoading } = useSWR(currentDictInfo.url, wordListFetcher)
 
   const words: WordWithIndex[] = useMemo(() => {
-    const newWords = isFirstChapter
-      ? firstChapter
-      : wordList
-      ? isInRevisionMode
-        ? wordList
-            .filter(
-              (word, index, self) =>
-                self.findIndex((w) => w.name === word.name) === index &&
-                wrongListDesc?.find((wrong) => wrong.dict === currentDictInfo.id && wrong.word === word.name),
-            )
-            .sort((a, b) => {
-              const aWrong = wrongListDesc?.find((wrong) => wrong.dict === currentDictInfo.id && wrong.word === a.name)
-              const bWrong = wrongListDesc?.find((wrong) => wrong.dict === currentDictInfo.id && wrong.word === b.name)
-              if ((bWrong?.wrongCount ?? 0) - (aWrong?.wrongCount ?? 0) === 0) return a.name.localeCompare(b.name)
-              else return (bWrong?.wrongCount ?? 0) - (aWrong?.wrongCount ?? 0)
-            })
-        : wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
-      : []
+    let newWords: Word[]
+    if (isFirstChapter) {
+      newWords = firstChapter
+    } else if (isReviewMode) {
+      newWords = reviewRecord?.words ?? []
+    } else if (wordList) {
+      newWords = wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
+    } else {
+      newWords = []
+    }
+
     // 记录原始 index
     return newWords.map((word, index) => ({ ...word, index }))
-  }, [isFirstChapter, wordList, currentChapter, currentDictInfo, isInRevisionMode, wrongListDesc])
+  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter])
 
-  return { words: wordList === undefined ? undefined : words, isLoading, error }
+  return { words, isLoading, error }
 }
 
 const firstChapter = [

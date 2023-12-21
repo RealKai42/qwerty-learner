@@ -1,34 +1,17 @@
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom, isInRevisionModeAtom } from '@/store'
-import { db } from '@/utils/db'
+import { currentChapterAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
 import range from '@/utils/range'
 import { Listbox, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
-import { Fragment, useCallback } from 'react'
+import { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import IconCheck from '~icons/tabler/check'
 
-type DictChapterButtonProps = {
-  index: number
-}
-export const DictChapterButton = ({ index }: DictChapterButtonProps) => {
+export const DictChapterButton = () => {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const chapterCount = currentDictInfo.chapterCount
-  const [isRevision, setRevisionMode] = useAtom(isInRevisionModeAtom)
-
-  const saveDictRevisionIndex = useCallback(
-    async (dictId: string, index: number) => {
-      // 保存错题进度(点击章节切换时)
-      setRevisionMode(false)
-      // if ((await db.revisionDictRecords.where('dict').equals(dictId).count()) > 1) {
-      //   console.log('delete')
-      //   await db.revisionDictRecords.where('dict').equals(dictId).delete()
-      // }
-      await db.revisionDictRecords.where('dict').equals(dictId).modify({ revisionIndex: index })
-    },
-    [setRevisionMode],
-  )
+  const isReviewMode = useAtomValue(isReviewModeAtom)
 
   return (
     <>
@@ -36,12 +19,11 @@ export const DictChapterButton = ({ index }: DictChapterButtonProps) => {
         <NavLink
           className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
           to="/gallery"
-          onClick={() => isRevision && saveDictRevisionIndex(currentDictInfo.id, index)}
         >
-          {currentDictInfo.name} {isRevision && '错题练习'}
+          {currentDictInfo.name} {isReviewMode && '错题复习'}
         </NavLink>
       </Tooltip>
-      {!isRevision && (
+      {!isReviewMode && (
         <Tooltip content="章节切换">
           <Listbox value={currentChapter} onChange={setCurrentChapter}>
             <Listbox.Button className="rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100">

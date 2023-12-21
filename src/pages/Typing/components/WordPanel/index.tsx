@@ -1,15 +1,15 @@
 import { TypingContext, TypingStateActionType } from '../../store'
+import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { currentDictIdAtom, isInRevisionModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom } from '@/store'
+import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
 import type { Word } from '@/typings'
-import { db } from '@/utils/db'
-import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import { useAtomValue, useSetAtom } from 'jotai'
+import { useCallback, useContext, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
@@ -22,8 +22,9 @@ export default function WordPanel() {
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
-  const currentDictId = useAtomValue(currentDictIdAtom)
-  const isRevision = useAtomValue(isInRevisionModeAtom)
+
+  const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
+  const isReviewMode = useAtomValue(isReviewModeAtom)
 
   const prevIndex = useMemo(() => {
     const newIndex = state.chapterData.index - 1
@@ -40,21 +41,15 @@ export default function WordPanel() {
     setWordComponentKey((old) => old + 1)
   }, [])
 
-  useEffect(() => {
-    // 复习错题模式下，当组件挂载时，检查是否存在错题进度，如果存在，则跳转到该进度
-    const fetchRevisionIndex = async () => {
-      let index
-      await db.revisionDictRecords
-        .where('dict')
-        .equals(currentDictId)
-        .first((record) => (index = record?.revisionIndex))
-      index && dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: index })
-      reloadCurrentWordComponent()
-    }
-    if (isRevision) {
-      fetchRevisionIndex()
-    }
-  }, [currentDictId, dispatch, isRevision, reloadCurrentWordComponent])
+  const updateReviewRecord = useCallback(
+    (state: TypingState) => {
+      setReviewModeInfo((old) => ({
+        ...old,
+        reviewRecord: old.reviewRecord ? { ...old.reviewRecord, index: state.chapterData.index } : undefined,
+      }))
+    },
+    [setReviewModeInfo],
+  )
 
   const onFinish = useCallback(() => {
     if (state.chapterData.index < state.chapterData.words.length - 1 || currentWordExerciseCount < loopWordTimes - 1) {
@@ -65,11 +60,23 @@ export default function WordPanel() {
         reloadCurrentWordComponent()
       } else {
         setCurrentWordExerciseCount(0)
-        dispatch({ type: TypingStateActionType.NEXT_WORD })
+        if (isReviewMode) {
+          dispatch({
+            type: TypingStateActionType.NEXT_WORD,
+            payload: {
+              updateReviewRecord,
+            },
+          })
+        } else {
+          dispatch({ type: TypingStateActionType.NEXT_WORD })
+        }
       }
     } else {
       // 用户完成当前章节
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
+      if (isReviewMode) {
+        setReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
+      }
     }
   }, [
     state.chapterData.index,
@@ -78,6 +85,9 @@ export default function WordPanel() {
     loopWordTimes,
     dispatch,
     reloadCurrentWordComponent,
+    isReviewMode,
+    updateReviewRecord,
+    setReviewModeInfo,
   ])
 
   const onSkipWord = useCallback(

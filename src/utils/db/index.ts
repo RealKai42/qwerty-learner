@@ -1,8 +1,8 @@
-import type { IChapterRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
-import { ChapterRecord, RevisionDictRecord, WordRecord } from './record'
+import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
+import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
-import { currentChapterAtom, currentDictIdAtom, isInRevisionModeAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store'
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
@@ -11,6 +11,8 @@ import { useCallback, useContext } from 'react'
 class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, number>
   chapterRecords!: Table<IChapterRecord, number>
+  reviewRecords!: Table<IReviewRecord, number>
+
   revisionDictRecords!: Table<IRevisionDictRecord, number>
   revisionWordRecords!: Table<IWordRecord, number>
 
@@ -27,8 +29,7 @@ class RecordDB extends Dexie {
     this.version(3).stores({
       wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
       chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
-      revisionDictRecords: '++id,dict,revisionIndex,createdTime',
-      revisionWordRecords: '++id,word,timeStamp,dict,chapter,errorCount,[dict+chapter]',
+      reviewRecords: '++id,dict,createTime,isFinished',
     })
   }
 }
@@ -37,12 +38,11 @@ export const db = new RecordDB()
 
 db.wordRecords.mapToClass(WordRecord)
 db.chapterRecords.mapToClass(ChapterRecord)
-db.revisionDictRecords.mapToClass(RevisionDictRecord)
-db.revisionWordRecords.mapToClass(WordRecord)
+db.reviewRecords.mapToClass(ReviewRecord)
 
 export function useSaveChapterRecord() {
   const currentChapter = useAtomValue(currentChapterAtom)
-  const isRevision = useAtomValue(isInRevisionModeAtom)
+  const isRevision = useAtomValue(isReviewModeAtom)
   const dictID = useAtomValue(currentDictIdAtom)
 
   const saveChapterRecord = useCallback(
@@ -78,7 +78,7 @@ export type WordKeyLogger = {
 }
 
 export function useSaveWordRecord() {
-  const isRevision = useAtomValue(isInRevisionModeAtom)
+  const isRevision = useAtomValue(isReviewModeAtom)
   const currentChapter = useAtomValue(currentChapterAtom)
   const dictID = useAtomValue(currentDictIdAtom)
 

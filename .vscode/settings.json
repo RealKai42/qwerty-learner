@@ -1,6 +1,6 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "css.lint.unknownAtRules": "ignore",
   "css.validate": false,
@@ -20,6 +20,7 @@
     "heroicons",
     "IELTS",
     "immer",
+    "Majesticons",
     "pako",
     "romaji",
     "svgr",

@@ -1,4 +1,5 @@
 import atomForConfig from './atomForConfig'
+import { reviewInfoAtom } from './reviewInfoAtom'
 import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
@@ -11,6 +12,7 @@ import type {
   WordDictationOpenBy,
   WordDictationType,
 } from '@/typings'
+import type { ReviewRecord } from '@/utils/db/record'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
@@ -76,7 +78,11 @@ export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', tr
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
-export const isInRevisionModeAtom = atomWithStorage('isInRevisionMode', false)
+export const reviewModeInfoAtom = reviewInfoAtom({
+  isReviewMode: false,
+  reviewRecord: undefined as ReviewRecord | undefined,
+})
+export const isReviewModeAtom = atom((get) => get(reviewModeInfoAtom).isReviewMode)
 
 export const isRestartRevisionProgressAtom = atomWithStorage('isRestartRevisionProgress', false)
 

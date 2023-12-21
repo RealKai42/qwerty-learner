@@ -1,6 +1,7 @@
 import type { TypingState, UserInputLog } from './type'
 import type { WordWithIndex } from '@/typings'
 import type { LetterMistakes } from '@/utils/db/record'
+import '@/utils/db/review-record'
 import { mergeLetterMistake } from '@/utils/db/utils'
 import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
@@ -61,13 +62,18 @@ export enum TypingStateActionType {
 }
 
 export type TypingStateAction =
-  | { type: TypingStateActionType.SETUP_CHAPTER; payload: { words: WordWithIndex[]; shouldShuffle: boolean } }
+  | { type: TypingStateActionType.SETUP_CHAPTER; payload: { words: WordWithIndex[]; shouldShuffle: boolean; initialIndex?: number } }
   | { type: TypingStateActionType.SET_IS_SKIP; payload: boolean }
   | { type: TypingStateActionType.SET_IS_TYPING; payload: boolean }
   | { type: TypingStateActionType.TOGGLE_IS_TYPING }
   | { type: TypingStateActionType.REPORT_WRONG_WORD; payload: { letterMistake: LetterMistakes } }
   | { type: TypingStateActionType.REPORT_CORRECT_WORD }
-  | { type: TypingStateActionType.NEXT_WORD }
+  | {
+      type: TypingStateActionType.NEXT_WORD
+      payload?: {
+        updateReviewRecord?: (state: TypingState) => void
+      }
+    }
   | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.SKIP_WORD }
@@ -88,6 +94,11 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.SETUP_CHAPTER: {
       const newState = structuredClone(initialState)
       const words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
+      let initialIndex = action.payload.initialIndex ?? 0
+      if (initialIndex >= words.length) {
+        initialIndex = 0
+      }
+      newState.chapterData.index = initialIndex
       newState.chapterData.words = words
       newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
 
@@ -119,11 +130,16 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       wordLog.LetterMistakes = mergeLetterMistake(wordLog.LetterMistakes, letterMistake)
       break
     }
-    case TypingStateActionType.NEXT_WORD:
+    case TypingStateActionType.NEXT_WORD: {
       state.chapterData.index += 1
       state.chapterData.wordCount += 1
       state.isShowSkip = false
+
+      if (action?.payload?.updateReviewRecord) {
+        action.payload.updateReviewRecord(state)
+      }
       break
+    }
     case TypingStateActionType.LOOP_CURRENT_WORD:
       state.isShowSkip = false
       state.chapterData.wordCount += 1
@@ -148,8 +164,6 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.SKIP_2_WORD_INDEX: {
       const newIndex = action.newIndex
       if (newIndex >= state.chapterData.words.length) {
-        console.log('newIndex', newIndex)
-        console.log('state.chapterData.words', state.chapterData.words)
         state.isTyping = false
         state.isFinished = true
       }
