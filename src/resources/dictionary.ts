@@ -713,6 +713,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'IELTS9988wangyong',
+    name: '雅思9988wangyong',
+    description: '雅思9988wangyong',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/IELTS9988wangyong.json',
+    length: 3667,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'sat',
     name: 'SAT',
     description: '美国 SAT 考试词库',
