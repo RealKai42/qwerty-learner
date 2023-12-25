@@ -1,4 +1,5 @@
 import { getUTCUnixTimestamp } from '../index'
+import type { Word } from '@/typings'
 
 export interface IWordRecord {
   word: string
@@ -47,7 +48,7 @@ export class WordRecord implements IWordRecord {
 export interface IChapterRecord {
   // 正常章节为 dictKey, 其他功能则为对应的类型
   dict: string
-  // 用户可能是在 错题/其他类似组件中 进行的练习则为 null
+  // 在错题场景中为 -1
   chapter: number | null
   timeStamp: number
   // 单位为 s，章节的记录没必要到毫秒级
@@ -111,5 +112,74 @@ export class ChapterRecord implements IChapterRecord {
 
   get wordAccuracy() {
     return Math.round((this.correctWordIndexes.length / this.wordNumber) * 100)
+  }
+}
+
+export interface IReviewRecord {
+  id?: number
+  dict: string
+  // 当前练习进度
+  index: number
+  // 创建时间
+  createTime: number
+  // 是否已经完成
+  isFinished: boolean
+  // 单词列表, 根据复习算法生成和修改，可能会有重复值
+  words: Word[]
+}
+
+export class ReviewRecord implements IReviewRecord {
+  id?: number
+  dict: string
+  index: number
+  createTime: number
+  isFinished: boolean
+  words: Word[]
+
+  constructor(dict: string, words: Word[]) {
+    this.dict = dict
+    this.index = 0
+    this.createTime = getUTCUnixTimestamp()
+    this.words = words
+    this.isFinished = false
+  }
+}
+
+export interface IRevisionDictRecord {
+  dict: string
+  revisionIndex: number
+  createdTime: number
+}
+
+export class RevisionDictRecord implements IRevisionDictRecord {
+  dict: string
+  revisionIndex: number
+  createdTime: number
+
+  constructor(dict: string, revisionIndex: number, createdTime: number) {
+    this.dict = dict
+    this.revisionIndex = revisionIndex
+    this.createdTime = createdTime
+  }
+}
+
+export interface IRevisionWordRecord {
+  word: string
+  timeStamp: number
+  dict: string
+  errorCount: number
+}
+
+export class RevisionWordRecord implements IRevisionWordRecord {
+  word: string
+  timeStamp: number
+  dict: string
+  errorCount: number
+
+  constructor(word: string, dict: string, errorCount: number) {
+    this.word = word
+    this.timeStamp = getUTCUnixTimestamp()
+    this.dict = dict
+    this.errorCount = errorCount
   }
 }

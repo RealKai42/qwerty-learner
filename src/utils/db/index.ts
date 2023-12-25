@@ -1,8 +1,8 @@
-import type { IChapterRecord, IWordRecord, LetterMistakes } from './record'
-import { ChapterRecord, WordRecord } from './record'
+import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
+import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
-import { currentChapterAtom, currentDictIdAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store'
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
@@ -11,6 +11,10 @@ import { useCallback, useContext } from 'react'
 class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, number>
   chapterRecords!: Table<IChapterRecord, number>
+  reviewRecords!: Table<IReviewRecord, number>
+
+  revisionDictRecords!: Table<IRevisionDictRecord, number>
+  revisionWordRecords!: Table<IWordRecord, number>
 
   constructor() {
     super('RecordDB')
@@ -22,6 +26,11 @@ class RecordDB extends Dexie {
       wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
       chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
     })
+    this.version(3).stores({
+      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
+      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
+      reviewRecords: '++id,dict,createTime,isFinished',
+    })
   }
 }
 
@@ -29,9 +38,11 @@ export const db = new RecordDB()
 
 db.wordRecords.mapToClass(WordRecord)
 db.chapterRecords.mapToClass(ChapterRecord)
+db.reviewRecords.mapToClass(ReviewRecord)
 
 export function useSaveChapterRecord() {
   const currentChapter = useAtomValue(currentChapterAtom)
+  const isRevision = useAtomValue(isReviewModeAtom)
   const dictID = useAtomValue(currentDictIdAtom)
 
   const saveChapterRecord = useCallback(
@@ -44,7 +55,7 @@ export function useSaveChapterRecord() {
 
       const chapterRecord = new ChapterRecord(
         dictID,
-        currentChapter,
+        isRevision ? -1 : currentChapter,
         time,
         correctCount,
         wrongCount,
@@ -55,7 +66,7 @@ export function useSaveChapterRecord() {
       )
       db.chapterRecords.add(chapterRecord)
     },
-    [currentChapter, dictID],
+    [currentChapter, dictID, isRevision],
   )
 
   return saveChapterRecord
@@ -67,6 +78,7 @@ export type WordKeyLogger = {
 }
 
 export function useSaveWordRecord() {
+  const isRevision = useAtomValue(isReviewModeAtom)
   const currentChapter = useAtomValue(currentChapterAtom)
   const dictID = useAtomValue(currentDictIdAtom)
 
@@ -90,7 +102,7 @@ export function useSaveWordRecord() {
         timing.push(diff)
       }
 
-      const wordRecord = new WordRecord(word, dictID, currentChapter, timing, wrongCount, letterMistake)
+      const wordRecord = new WordRecord(word, dictID, isRevision ? -1 : currentChapter, timing, wrongCount, letterMistake)
 
       let dbID = -1
       try {
@@ -103,7 +115,7 @@ export function useSaveWordRecord() {
         dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: false })
       }
     },
-    [currentChapter, dictID, dispatch],
+    [currentChapter, dictID, dispatch, isRevision],
   )
 
   return saveWordRecord
