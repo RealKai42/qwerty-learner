@@ -35,8 +35,21 @@ export function useWordList(): UseWordListResult {
       ? wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
       : []
 
-    // 记录原始 index
-    return newWords.map((word, index) => ({ ...word, index }))
+    return newWords.map((word, index) => {
+      let trans: string[]
+      if (Array.isArray(word.trans)) {
+        trans = word.trans.filter((item) => typeof item === 'string')
+      } else if (word.trans === null || word.trans === undefined || typeof word.trans === 'object') {
+        trans = []
+      } else {
+        trans = [String(word.trans)]
+      }
+      return {
+        ...word,
+        index,
+        trans,
+      }
+    })
   }, [isFirstChapter, wordList, currentChapter])
 
   return { words: wordList === undefined ? undefined : words, isLoading, error }
