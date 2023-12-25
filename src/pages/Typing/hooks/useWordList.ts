@@ -40,8 +40,22 @@ export function useWordList(): UseWordListResult {
       newWords = []
     }
 
-    // 记录原始 index
-    return newWords.map((word, index) => ({ ...word, index }))
+    // 记录原始 index, 并对 word.trans 做兜底处理
+    return newWords.map((word, index) => {
+      let trans: string[]
+      if (Array.isArray(word.trans)) {
+        trans = word.trans.filter((item) => typeof item === 'string')
+      } else if (word.trans === null || word.trans === undefined || typeof word.trans === 'object') {
+        trans = []
+      } else {
+        trans = [String(word.trans)]
+      }
+      return {
+        ...word,
+        index,
+        trans,
+      }
+    })
   }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter])
 
   return { words, isLoading, error }

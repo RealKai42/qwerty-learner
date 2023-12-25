@@ -38,7 +38,7 @@ export default function WordList() {
 
   return (
     <>
-      <Tooltip content="List" placement="top" className="!absolute left-5 top-[50%]">
+      <Tooltip content="List" placement="top" className="!absolute left-5 top-[50%] z-20">
         <button
           type="button"
           onClick={openModal}
