@@ -1554,7 +1554,7 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
-    id: 'waiyan17',
+    id: 'waiyan18',
     name: '外研五年级下册',
     description: '外研五年级下册',
     category: '青少年英语',
@@ -1565,7 +1565,7 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
-    id: 'waiyan18',
+    id: 'waiyan19',
     name: '外研六年级上册',
     description: '外研六年级上册',
     category: '青少年英语',
@@ -1576,7 +1576,7 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
-    id: 'waiyan19',
+    id: 'waiyan20',
     name: '外研六年级下册',
     description: '外研六年级下册',
     category: '青少年英语',
