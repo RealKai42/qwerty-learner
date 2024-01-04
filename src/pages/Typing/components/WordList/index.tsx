@@ -2,7 +2,7 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
-import { currentChapterAtom, currentDictInfoAtom } from '@/store'
+import { currentChapterAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
 import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { atom, useAtomValue } from 'jotai'
@@ -11,7 +11,13 @@ import ListIcon from '~icons/tabler/list'
 import IconX from '~icons/tabler/x'
 
 const currentDictTitle = atom((get) => {
-  return `${get(currentDictInfoAtom).name} 第 ${get(currentChapterAtom) + 1} 章`
+  const isReviewMode = get(isReviewModeAtom)
+
+  if (isReviewMode) {
+    return `${get(currentDictInfoAtom).name} 错题复习`
+  } else {
+    return `${get(currentDictInfoAtom).name} 第 ${get(currentChapterAtom) + 1} 章`
+  }
 })
 
 export default function WordList() {
@@ -32,7 +38,7 @@ export default function WordList() {
 
   return (
     <>
-      <Tooltip content="List" placement="top" className="!absolute left-5 top-[50%]">
+      <Tooltip content="List" placement="top" className="!absolute left-5 top-[50%] z-20">
         <button
           type="button"
           onClick={openModal}

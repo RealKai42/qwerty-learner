@@ -15,11 +15,11 @@ import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { currentDictIdAtom, randomConfigAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
-import { useAtom, useAtomValue } from 'jotai'
+import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
 import { useImmerReducer } from 'use-immer'
@@ -30,10 +30,13 @@ const App: React.FC = () => {
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
+  const setCurrentChapter = useSetAtom(currentChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
-
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
   const saveChapterRecord = useSaveChapterRecord()
+
+  const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
+  const isReviewMode = useAtomValue(isReviewModeAtom)
 
   useEffect(() => {
     // 检测用户设备
@@ -51,8 +54,10 @@ const App: React.FC = () => {
     const id = currentDictId
     if (!(id in idDictionaryMap)) {
       setCurrentDictId('cet4')
+      setCurrentChapter(0)
+      return
     }
-  }, [currentDictId, setCurrentDictId])
+  }, [currentDictId, setCurrentChapter, setCurrentDictId])
 
   const skipWord = useCallback(() => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })
@@ -89,9 +94,11 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (words !== undefined) {
+      const initialIndex = isReviewMode && reviewModeInfo.reviewRecord?.index ? reviewModeInfo.reviewRecord.index : 0
+
       dispatch({
         type: TypingStateActionType.SETUP_CHAPTER,
-        payload: { words, shouldShuffle: randomConfig.isOpen },
+        payload: { words, shouldShuffle: randomConfig.isOpen, initialIndex },
       })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

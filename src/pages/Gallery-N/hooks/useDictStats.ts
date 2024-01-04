@@ -30,7 +30,6 @@ async function getDictStats(dict: string): Promise<IDictStats> {
   const uniqueChapter = allChapter.filter((value, index, self) => {
     return self.indexOf(value) === index
   })
-
   const exercisedChapterCount = uniqueChapter.length
 
   return { exercisedChapterCount }
