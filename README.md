@@ -43,11 +43,15 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 ## 快速部署
 
 ### Vercel
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRealKai42%2Fqwerty-learner)
 
 #### 部署步骤
-1. 更新 `Vercel Build & Development Settings` -> `Output Directory`：build
+
+1. 更新 `Vercel Build & Development Settings` -> `Output Directory`："build"
 2. Click Deploy Button
+
+<br />
 
 ## ✨ 设计思想
 
