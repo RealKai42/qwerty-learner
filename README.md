@@ -40,6 +40,19 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
 <br />
 
+## 快速部署
+
+### Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRealKai42%2Fqwerty-learner)
+
+#### 部署步骤
+
+1. 更新 `Vercel Build & Development Settings` -> `Output Directory`："build"
+2. Click Deploy Button
+
+<br />
+
 ## ✨ 设计思想
 
 软件设计的目标群体为以英语作为主要工作语言的键盘工作者。部分人会出现输入母语时的打字速度快于英语的情况，因为多年的母语输入练就了非常坚固的肌肉记忆 💪，而英语输入的肌肉记忆相对较弱，易出现输入英语时“提笔忘字”的现象。
