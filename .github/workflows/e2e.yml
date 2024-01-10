@@ -1,5 +1,4 @@
 name: Qwerty E2E Workflows
-env:
 on:
   push:
     branches:
