@@ -7,7 +7,6 @@ on:
 jobs:
   e2e:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.title, 'Run Workflows')
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
