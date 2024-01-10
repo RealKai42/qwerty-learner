@@ -4,17 +4,19 @@ test.describe('Dictionary manage', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
     await page.getByLabel('关闭提示').click()
+  })
 
+  test('Homepage default dictionary', async ({ page }) => {
     await expect(await page.getByText('CET-4').isVisible()).toBeTruthy()
 
     await page.getByText('CET-4').hover()
     await expect(await page.getByText('词典切换').isVisible()).toBeTruthy()
-
-    await page.getByText('CET-4').click()
-    await page.waitForURL('**/gallery')
   })
 
   test('Switch language', async ({ page }) => {
+    await page.getByText('CET-4').click()
+    await page.waitForURL('**/gallery')
+
     await expect(await page.getByRole('radio', { name: /^英语$/ }).getAttribute('aria-checked')).toBeTruthy()
 
     await page.getByRole('radio', { name: /^日语$/ }).click()
@@ -37,6 +39,9 @@ test.describe('Dictionary manage', () => {
   })
 
   test('Switch category', async ({ page }) => {
+    await page.getByText('CET-4').click()
+    await page.waitForURL('**/gallery')
+
     await expect(await page.getByRole('radio', { name: /^大学英语$/ }).getAttribute('aria-checked')).toBeTruthy()
 
     await page.getByRole('radio', { name: /^考研$/ }).click()
@@ -48,7 +53,10 @@ test.describe('Dictionary manage', () => {
     await expect(await page.getByRole('button', { name: /GRE/g }).first().isVisible()).toBeTruthy()
   })
 
-  test.only('Switch dictionary', async ({ page }) => {
+  test('Switch dictionary', async ({ page }) => {
+    await page.getByText('CET-4').click()
+    await page.waitForURL('**/gallery')
+
     await page
       .getByRole('button', { name: /六级巧记速记/g })
       .first()
@@ -59,20 +67,24 @@ test.describe('Dictionary manage', () => {
     await expect(await page.getByRole('button', { name: '第 2 章' }).first().isVisible()).toBeTruthy()
   })
 
-  test('Switch dictionary chapter', async ({ page }) => {
-    await page.getByRole('button', { name: /CET-4/g }).first().click()
-    await page.getByRole('cell', { name: '2', exact: true }).click()
-    await page.getByText('确定').first().click()
-
-    await page.waitForURL('**/')
-    await expect(await page.getByText('CET-4 第 2 章').isVisible()).toBeTruthy()
-  })
-
   test('Close dictionary settings', async ({ page }) => {
+    await page.getByText('CET-4').click()
+    await page.waitForURL('**/gallery')
     // should use testId
     await page.locator('main > div > svg').first().click()
 
     await page.waitForURL('**/')
-    await expect(await page.getByText('CET-4 第 1 章').isVisible()).toBeTruthy()
+    await expect(await page.getByText('Start').first().isVisible()).toBeTruthy()
+  })
+
+  test('Switch dictionary chapter', async ({ page }) => {
+    await page.getByText('第 1 章').first().hover()
+    await expect(await page.getByText('章节切换').isVisible()).toBeTruthy()
+
+    await page.getByText('第 1 章').click()
+    await page.getByRole('option', { name: '第 2 章' }).click()
+
+    await page.getByText('第 2 章').first().hover()
+    await expect(await page.getByText('章节切换').isVisible()).toBeTruthy()
   })
 })
