@@ -1,0 +1,890 @@
+[
+    {
+        "name": "run",
+        "trans": [
+            "n. 奔跑；赛跑；趋向；奔跑的路程",
+            "vt. 管理，经营；运行；参赛",
+            "vi. 经营；奔跑；运转"
+        ],
+        "usphone": "[rʌn]",
+        "ukphone": "[rʌn]"
+    },
+    {
+        "name": "sorry",
+        "trans": [
+            "adj. 遗憾的；对不起的，抱歉的",
+            "int. 对不起，抱歉（表示委婉的拒绝等）"
+        ],
+        "usphone": "[ˈsɑːri]",
+        "ukphone": "[ˈsɒri]"
+    },
+    {
+        "name": "jump",
+        "trans": [
+            "n. 跳跃；暴涨；惊跳",
+            "vt. 跳跃；使跳跃；跳过；突升",
+            "vi. 跳跃；暴涨；猛增"
+        ],
+        "usphone": "[dʒʌmp]",
+        "ukphone": "[dʒʌmp]"
+    },
+    {
+        "name": "sing",
+        "trans": [
+            "n. 演唱；鸣声；呼啸声",
+            "vt. 唱；用诗赞颂；唱着使",
+            "vi. 唱歌；歌颂；鸣叫；呼号"
+        ],
+        "usphone": "[sɪŋ]",
+        "ukphone": "[sɪŋ]"
+    },
+    {
+        "name": "dance",
+        "trans": [
+            "n. 舞蹈；舞会；舞曲",
+            "adj. 舞蹈的；用于跳舞的",
+            "vt. 跳舞；使跳跃",
+            "vi. 跳舞；跳跃；飘扬"
+        ],
+        "usphone": "[dæns]",
+        "ukphone": "[dɑːns]"
+    },
+    {
+        "name": "sit",
+        "trans": [
+            "vi. 坐；位于",
+            "vt. 使就座"
+        ],
+        "usphone": "[sɪt]",
+        "ukphone": "[sɪt]"
+    },
+    {
+        "name": "down",
+        "trans": [
+            "prep. 沿着，往下",
+            "n. 软毛，绒毛；[地质] 开阔的高地",
+            "adj. 向下的",
+            "vt. 打倒，击败",
+            "adv. 向下，下去；在下面",
+            "vi. 下降；下去"
+        ],
+        "usphone": "[daʊn]",
+        "ukphone": "[daʊn]"
+    },
+    {
+        "name": "stand",
+        "trans": [
+            "n. 站立；立场；看台；停止",
+            "vi. 站立；位于；停滞",
+            "vt. 使站立；忍受；抵抗"
+        ],
+        "usphone": "[stænd]",
+        "ukphone": "[stænd]"
+    },
+    {
+        "name": "up",
+        "trans": [
+            "prep. 在…之上；向…的较高处",
+            "n. 上升；繁荣",
+            "adj. 涨的；起床的；向上的",
+            "adv. 起来；上涨；向上"
+        ],
+        "usphone": "[ʌp]",
+        "ukphone": "[ʌp]"
+    },
+    {
+        "name": "see",
+        "trans": [
+            "vi. 看；看见；领会",
+            "vt. 看见；理解；领会"
+        ],
+        "usphone": "[siː]",
+        "ukphone": "[siː]"
+    },
+    {
+        "name": "saw",
+        "trans": [
+            "n. 锯子；谚语",
+            "v. see的过去式",
+            "vi. 锯；用锯；将某物锯成小块",
+            "vt. 看见；明白，了解；锯；锯成；锯开"
+        ],
+        "usphone": "[sɔː]",
+        "ukphone": "[sɔː]"
+    },
+    {
+        "name": "look",
+        "trans": [
+            "vt. 看；期待；注意；面向；看上去像",
+            "vi. 看；看起来；注意；面向",
+            "n. 看；样子；面容"
+        ],
+        "usphone": "[lʊk]",
+        "ukphone": "[lʊk]"
+    },
+    {
+        "name": "look out of",
+        "trans": [
+            " 向外看；朝外看；从……朝外看"
+        ]
+    },
+    {
+        "name": "look at",
+        "trans": [
+            "na. 看；考虑"
+        ]
+    },
+    {
+        "name": "boy",
+        "trans": [
+            "n. 男孩；男人"
+        ],
+        "usphone": "[bɔɪ]",
+        "ukphone": "[bɔɪ]"
+    },
+    {
+        "name": "girl",
+        "trans": [
+            "n. 女孩；姑娘，未婚女子；女职员，女演员；（男人的）女朋友",
+            "n. （捷）吉尔"
+        ],
+        "usphone": "[ɡɜːrl]",
+        "ukphone": "[ɡɜːl]"
+    },
+    {
+        "name": "now",
+        "trans": [
+            "adv. 现在；如今；立刻",
+            "adj. 现在的",
+            "n. 现在；目前",
+            "conj. 由于；既然"
+        ],
+        "usphone": "[naʊ]",
+        "ukphone": "[naʊ]"
+    },
+    {
+        "name": "draw",
+        "trans": [
+            "n. 平局；抽签",
+            "vi. 拉；拖",
+            "vt. 画；拉；吸引"
+        ],
+        "usphone": "[drɔː]",
+        "ukphone": "[drɔː]"
+    },
+    {
+        "name": "picture",
+        "trans": [
+            "n. 照片，图画；影片；景色；化身",
+            "vt. 画；想像；描写"
+        ],
+        "usphone": "[ˈpɪktʃər]",
+        "ukphone": "[ˈpɪktʃə(r)]"
+    },
+    {
+        "name": "woman",
+        "trans": [
+            "n. 妇女；女性；成年女子"
+        ],
+        "usphone": "[ˈwʊmən]",
+        "ukphone": "[ˈwʊmən]"
+    },
+    {
+        "name": "baby",
+        "trans": [
+            "n. 婴儿，婴孩；孩子气的人",
+            "adj. 婴儿的；幼小的",
+            "vt. 纵容，娇纵；把……当婴儿般对待"
+        ],
+        "usphone": "[ˈbeɪbi]",
+        "ukphone": "[ˈbeɪbi]"
+    },
+    {
+        "name": "cry",
+        "trans": [
+            "n. 叫喊；叫声；口号；呼叫",
+            "vi. 哭；叫；喊",
+            "vt. 叫喊；哭出；大声说"
+        ],
+        "usphone": "[kraɪ]",
+        "ukphone": "[kraɪ]"
+    },
+    {
+        "name": "talk",
+        "trans": [
+            "n. 谈话；演讲；空谈",
+            "vi. 谈话；说闲话",
+            "vt. 说；谈话；讨论"
+        ],
+        "usphone": "[tɔːk]",
+        "ukphone": "[tɔːk]"
+    },
+    {
+        "name": "man",
+        "trans": [
+            "n. 人；男人；人类；丈夫；雇工",
+            "vt. 操纵；给…配置人员；使增强勇气；在…就位"
+        ],
+        "usphone": "[mæn]",
+        "ukphone": "[mæn]"
+    },
+    {
+        "name": "sleep",
+        "trans": [
+            "n. 睡眠",
+            "vi. 睡，睡觉"
+        ],
+        "usphone": "[sliːp]",
+        "ukphone": "[sliːp]"
+    },
+    {
+        "name": "who",
+        "trans": [
+            "pron. 谁；什么人"
+        ],
+        "usphone": "[huː]",
+        "ukphone": "[huː]"
+    },
+    {
+        "name": "hungry",
+        "trans": [
+            "adj. 饥饿的；渴望的；荒年的；不毛的"
+        ],
+        "usphone": "[ˈhʌŋɡri]",
+        "ukphone": "[ˈhʌŋɡri]"
+    },
+    {
+        "name": "water",
+        "trans": [
+            "n. 水；海水；雨水；海域，大片的水",
+            "vt. 使湿；供以水；给…浇水",
+            "vi. 加水；流泪；流口水"
+        ],
+        "usphone": "[ˈwɔːtər]",
+        "ukphone": "[ˈwɔːtə(r)]"
+    },
+    {
+        "name": "tea",
+        "trans": [
+            "n. 茶叶；茶树；茶点",
+            "vt. 给…沏茶",
+            "vi. 喝茶；进茶点"
+        ],
+        "usphone": "[tiː]",
+        "ukphone": "[tiː]"
+    },
+    {
+        "name": "candy",
+        "trans": [
+            "n. 糖果（等于sweets）；冰糖（等于sugar candy，rock candy）；毒品",
+            "adj. 新潮的（服饰）；甜言蜜语的",
+            "vt. 用糖煮；使结晶为砂糖；美化",
+            "vi. 糖煮；成为结晶"
+        ],
+        "usphone": "[ˈkændi]",
+        "ukphone": "[ˈkændi]"
+    },
+    {
+        "name": "people",
+        "trans": [
+            "n. 人；人类；民族；公民",
+            "vt. 居住于；使住满人"
+        ],
+        "usphone": "[ˈpiːpl]",
+        "ukphone": "[ˈpiːp(ə)l]"
+    },
+    {
+        "name": "many",
+        "trans": [
+            "pron. 许多；许多人",
+            "adj. 许多的"
+        ],
+        "usphone": "[ˈmeni]",
+        "ukphone": "[ˈmeni]"
+    },
+    {
+        "name": "child",
+        "trans": [
+            "n. 儿童，小孩，孩子；产物；子孙；幼稚的人；弟子"
+        ],
+        "usphone": "[tʃaɪld]",
+        "ukphone": "[tʃaɪld]"
+    },
+    {
+        "name": "children",
+        "trans": [
+            "n. 孩子们（child的复数）"
+        ],
+        "usphone": "[ˈtʃɪldrən]",
+        "ukphone": "[ˈtʃɪldrən]"
+    },
+    {
+        "name": "women",
+        "trans": [
+            "n. 女人（woman的复数）"
+        ],
+        "usphone": "[ˈwɪmɪn]",
+        "ukphone": "[ˈwɪmɪn]"
+    },
+    {
+        "name": "woman",
+        "trans": [
+            "n. 妇女；女性；成年女子"
+        ],
+        "usphone": "[ˈwʊmən]",
+        "ukphone": "[ˈwʊmən]"
+    },
+    {
+        "name": "men",
+        "trans": [
+            "n. 男人，人类（man的复数）"
+        ],
+        "usphone": "[men]",
+        "ukphone": "[men]"
+    },
+    {
+        "name": "man",
+        "trans": [
+            "n. 人；男人；人类；丈夫；雇工",
+            "vt. 操纵；给…配置人员；使增强勇气；在…就位"
+        ],
+        "usphone": "[mæn]",
+        "ukphone": "[mæn]"
+    },
+    {
+        "name": "say",
+        "trans": [
+            "vt. 讲；说明；例如；声称；假设；指明",
+            "vi. 讲；表示；念；假定；背诵"
+        ],
+        "usphone": "[seɪ]",
+        "ukphone": "[seɪ]"
+    },
+    {
+        "name": "help",
+        "trans": [
+            "n. 帮助；补救办法；帮忙者；有益的东西",
+            "vt. 帮助；促进；治疗；补救",
+            "vi. 帮助；有用；招待"
+        ],
+        "usphone": "[help]",
+        "ukphone": "[help]"
+    },
+    {
+        "name": "worry",
+        "trans": [
+            "n. 担心；烦恼；撕咬",
+            "vi. 担心；烦恼；撕咬",
+            "vt. 担心；发愁；折磨"
+        ],
+        "usphone": "[ˈwɜːri]",
+        "ukphone": "[ˈwʌri]"
+    },
+    {
+        "name": "sad",
+        "trans": [
+            "adj. 难过的；悲哀的，令人悲痛的；凄惨的，阴郁的（形容颜色）"
+        ],
+        "usphone": "[sæd]",
+        "ukphone": "[sæd]"
+    },
+    {
+        "name": "take",
+        "trans": [
+            "vi. 拿；获得",
+            "vt. 拿，取；采取；接受（礼物等）；买，花费；耗费（时间等）",
+            "n. 捕获量；看法；利益，盈益；（入场券的）售得金额"
+        ],
+        "usphone": "[teɪk]",
+        "ukphone": "[teɪk]"
+    },
+    {
+        "name": "take a picture",
+        "trans": [
+            "v. 照相"
+        ]
+    },
+    {
+        "name": "be",
+        "trans": [
+            "vt. 是； 有，存在； 做，成为； 发生"
+        ],
+        "usphone": "[bi; biː]",
+        "ukphone": "[bi]"
+    },
+    {
+        "name": "am",
+        "trans": [
+            "abbr. 调幅",
+            "v. 是"
+        ],
+        "usphone": "[əm; æm]",
+        "ukphone": "[əm; æm]"
+    },
+    {
+        "name": "is",
+        "trans": [
+            "v. 是（be的三单形式）",
+            "n. 存在"
+        ],
+        "usphone": "[ɪz]",
+        "ukphone": "[ɪz]"
+    },
+    {
+        "name": "are",
+        "trans": [
+            "v. 是（be的第二人称单复数现在式）",
+            "n. 公亩"
+        ],
+        "usphone": "[ər; ɑːr; er]",
+        "ukphone": "[ɑ:(r)]"
+    },
+    {
+        "name": "feel",
+        "trans": [
+            "n. 感觉；触摸",
+            "vi. 觉得；摸索",
+            "vt. 感觉；认为；触摸；试探"
+        ],
+        "usphone": "[fiːl]",
+        "ukphone": "[fiːl]"
+    },
+    {
+        "name": "tired",
+        "trans": [
+            "v. 疲倦；对…腻烦（tire的过去分词形式）",
+            "adj. 疲倦的；厌倦的，厌烦的"
+        ],
+        "usphone": "[ˈtaɪərd]",
+        "ukphone": "[ˈtaɪəd]"
+    },
+    {
+        "name": "stop",
+        "trans": [
+            "n. 停止；车站；障碍；逗留",
+            "vi. 停止；中止；逗留；被塞住",
+            "vt. 停止；堵塞；断绝"
+        ],
+        "usphone": "[stɑːp]",
+        "ukphone": "[stɒp]"
+    },
+    {
+        "name": "wait",
+        "trans": [
+            "n. 等待；等候",
+            "vi. 等待；耽搁；伺候用餐",
+            "vt. 等候；推迟；延缓"
+        ],
+        "usphone": "[weɪt]",
+        "ukphone": "[weɪt]"
+    },
+    {
+        "name": "afraid",
+        "trans": [
+            "adj. 害怕的；恐怕；担心的"
+        ],
+        "usphone": "[əˈfreɪd]",
+        "ukphone": "[əˈfreɪd]"
+    },
+    {
+        "name": "for",
+        "trans": [
+            "prep. 为，为了；因为；给；对于；至于；适合于",
+            "conj. 因为"
+        ],
+        "usphone": "[fər; fɔːr]",
+        "ukphone": "[fə(r)]"
+    },
+    {
+        "name": "busy",
+        "trans": [
+            "adj. 忙碌的；热闹的；正被占用的",
+            "vt. 使忙于"
+        ],
+        "usphone": "[ˈbɪzi]",
+        "ukphone": "[ˈbɪzi]"
+    },
+    {
+        "name": "much",
+        "trans": [
+            "adv. 非常，很",
+            "adj. 大量的",
+            "n. 许多，大"
+        ],
+        "usphone": "[mʌtʃ]",
+        "ukphone": "[mʌtʃ]"
+    },
+    {
+        "name": "how much",
+        "trans": [
+            "conj. 多少"
+        ],
+        "usphone": "[haʊ mʌtʃ]",
+        "ukphone": "[haʊ mʌtʃ]"
+    },
+    {
+        "name": "write",
+        "trans": [
+            "vi. 写，写字；写作，作曲；写信",
+            "vt. 写，书写；写信给；著述"
+        ],
+        "usphone": "[raɪt]",
+        "ukphone": "[raɪt]"
+    },
+    {
+        "name": "mum",
+        "trans": [
+            "adj. 沉默的",
+            "n. 妈妈（口语）；沉默；菊花",
+            "vi. 演哑剧",
+            "int. 别说话"
+        ],
+        "usphone": "[mʌm]",
+        "ukphone": "[mʌm]"
+    },
+    {
+        "name": "dad",
+        "trans": [
+            "n. 爸爸；爹爹"
+        ],
+        "usphone": "[dæd]",
+        "ukphone": "[dæd]"
+    },
+    {
+        "name": "dear",
+        "trans": [
+            "n. 亲爱的人",
+            "adj. 亲爱的；尊敬的；昂贵的",
+            "adv. 高价地；疼爱地",
+            "int. 哎呀"
+        ],
+        "usphone": "[dɪr]",
+        "ukphone": "[dɪə(r)]"
+    },
+    {
+        "name": "fine",
+        "trans": [
+            "n. 罚款",
+            "adj. 好的；优良的；细小的，精美的；健康的；晴朗的",
+            "vt. 罚款；澄清",
+            "adv. 很好地；精巧地"
+        ],
+        "usphone": "[faɪn]",
+        "ukphone": "[faɪn]"
+    },
+    {
+        "name": "left",
+        "trans": [
+            "adj. 左边的；左派的；剩下的",
+            "adv. 在左面",
+            "n. 左边；左派；激进分子",
+            "v. 离开（leave的过去式）"
+        ],
+        "usphone": "[left]",
+        "ukphone": "[left]"
+    },
+    {
+        "name": "right",
+        "trans": [
+            "n. 正确；右边；正义",
+            "adj. 正确的；直接的；右方的",
+            "vt. 纠正",
+            "adv. 正确地；恰当地；彻底地",
+            "vi. 复正；恢复平稳"
+        ],
+        "usphone": "[raɪt]",
+        "ukphone": "[raɪt]"
+    },
+    {
+        "name": "turn",
+        "trans": [
+            "n. 转弯；变化；(损害或有益于别人的)行为，举动，举止",
+            "vi. 转向；转变；转动",
+            "vt. 转动，使旋转；转弯；翻过来；兑换"
+        ],
+        "usphone": "[tɜːrn]",
+        "ukphone": "[tɜːn]"
+    },
+    {
+        "name": "wrong",
+        "trans": [
+            "n. 坏事；不公正",
+            "adj. 错误的；失常的；不适当的",
+            "vt. 委屈；无理地对待；诽谤",
+            "adv. 错误地；邪恶地，不正当地"
+        ],
+        "usphone": "[rɔːŋ]",
+        "ukphone": "[rɒŋ]"
+    },
+    {
+        "name": "email",
+        "trans": [
+            "n. 电子信函",
+            "vt. 给…发电子邮件"
+        ],
+        "usphone": "[ˈiːmeɪl]",
+        "ukphone": "[ˈiːmeɪl]"
+    },
+    {
+        "name": "idea",
+        "trans": [
+            "n. 想法；主意；概念"
+        ],
+        "usphone": "[aɪˈdiːə]",
+        "ukphone": "[aɪˈdɪə]"
+    },
+    {
+        "name": "computer",
+        "trans": [
+            "n. 计算机；电脑；电子计算机"
+        ],
+        "usphone": "[kəmˈpjuːtər]",
+        "ukphone": "[kəmˈpjuːtə(r)]"
+    },
+    {
+        "name": "use",
+        "trans": [
+            "n. 使用；用途；发挥",
+            "vt. 利用；耗费",
+            "vi. 使用，运用"
+        ],
+        "usphone": "[juːz]",
+        "ukphone": "[juːz]"
+    },
+    {
+        "name": "kind",
+        "trans": [
+            "n. 种类；性质",
+            "adj. 和蔼的；宽容的；令人感激的"
+        ],
+        "usphone": "[kaɪnd]",
+        "ukphone": "[kaɪnd]"
+    },
+    {
+        "name": "us",
+        "trans": [
+            "pron. 我们"
+        ],
+        "usphone": "[əs; ʌs]",
+        "ukphone": "[əs; ʌs]"
+    },
+    {
+        "name": "we",
+        "trans": [
+            "pron. 我们（主格）；笔者，本人（作者或演讲人使用）；朕，寡人"
+        ],
+        "usphone": "[wi]",
+        "ukphone": "[wi; wiː]"
+    },
+    {
+        "name": "story",
+        "trans": [
+            "n. 故事；小说；新闻报道；来历；假话",
+            "vt. 用历史故事画装饰",
+            "vi. 说谎"
+        ],
+        "usphone": "[ˈstɔːri]",
+        "ukphone": "[ˈstɔːri]"
+    },
+    {
+        "name": "did",
+        "trans": [
+            "v. 做（do的过去式）"
+        ],
+        "usphone": "[dɪd]",
+        "ukphone": "[dɪd]"
+    },
+    {
+        "name": "do",
+        "trans": [
+            "vi. 行，足够；生长",
+            "n. 要求；规定；C大调音阶中的第一音",
+            "v. 做；干；学习；研究；进行；完成；解答；整理；算出；引起；行过",
+            "aux. 助动词（构成疑问句和否定句）；（代替动词）；（用于加强语气）",
+            "n. （口语）事件；（主英国口语）诈骗；（主英国、新西兰口语）宴会；（口语）必须做到的事情"
+        ],
+        "usphone": "[duː; də; du; doʊ]",
+        "ukphone": "[duː; də; du; dəʊ]"
+    },
+    {
+        "name": "yesterday",
+        "trans": [
+            "n. 昨天；往昔",
+            "adv. 昨天"
+        ],
+        "usphone": "[ˈjestərdeɪ; ˈjestərdi]",
+        "ukphone": "[ˈjestədeɪ]"
+    },
+    {
+        "name": "night",
+        "trans": [
+            "n. 夜晚，晚上；黑暗，黑夜",
+            "adj. 夜晚的，夜间的"
+        ],
+        "usphone": "[naɪt]",
+        "ukphone": "[naɪt]"
+    },
+    {
+        "name": "had",
+        "trans": [
+            "v. 有；吃；得到（动词have的过去式和过去分词）",
+            "aux. 已经（用于过去完成时和过去完成进行时）"
+        ],
+        "usphone": "[həd; əd; hæd]",
+        "ukphone": "[həd; əd; hæd]"
+    },
+    {
+        "name": "have",
+        "trans": [
+            "aux. 已经",
+            "vt. 有；让；拿；从事；允许"
+        ],
+        "usphone": "[həv; əv; hæv]",
+        "ukphone": "[həv]"
+    },
+    {
+        "name": "went",
+        "trans": [
+            "v. 去，过去（go的过去式）"
+        ],
+        "usphone": "[went]",
+        "ukphone": "[went]"
+    },
+    {
+        "name": "go",
+        "trans": [
+            "n. 去；进行；尝试",
+            "vi. 走；达到；运转；趋于",
+            "vt. 忍受；出产；以…打赌",
+            "[复数 goes 第三人称单数 goes 过去式 went 过去分词 gone 现在分词 going]"
+        ],
+        "usphone": "[ɡoʊ]",
+        "ukphone": "[ɡəʊ]"
+    },
+    {
+        "name": "saw",
+        "trans": [
+            "n. 锯子；谚语",
+            "v. see的过去式",
+            "vi. 锯；用锯；将某物锯成小块",
+            "vt. 看见；明白，了解；锯；锯成；锯开"
+        ],
+        "usphone": "[sɔː]",
+        "ukphone": "[sɔː]"
+    },
+    {
+        "name": "see",
+        "trans": [
+            "vi. 看；看见；领会",
+            "vt. 看见；理解；领会"
+        ],
+        "usphone": "[siː]",
+        "ukphone": "[siː]"
+    },
+    {
+        "name": "ate",
+        "trans": [
+            "v. 吃（eat的过去式）"
+        ],
+        "usphone": "[eɪt]",
+        "ukphone": "[et; eɪt]"
+    },
+    {
+        "name": "eat",
+        "trans": [
+            "vt. 吃，喝；腐蚀；烦扰",
+            "vi. 进食；腐蚀，侵蚀"
+        ],
+        "usphone": "[iːt]",
+        "ukphone": "[iːt]"
+    },
+    {
+        "name": "photo",
+        "trans": [
+            "n. 照片"
+        ],
+        "usphone": "[ˈfoʊtoʊ]",
+        "ukphone": "[ˈfəʊtəʊ]"
+    },
+    {
+        "name": "were",
+        "trans": [
+            "v. 是，在（are的过去式）"
+        ],
+        "usphone": "[wər; wɜːr]",
+        "ukphone": "[wə(r); wɜː(r)]"
+    },
+    {
+        "name": "are",
+        "trans": [
+            "v. 是（be的第二人称单复数现在式）",
+            "n. 公亩"
+        ],
+        "usphone": "[ər; ɑːr; er]",
+        "ukphone": "[ɑ:(r)]"
+    },
+    {
+        "name": "was",
+        "trans": [
+            "be的第一和第三人称单数过去式"
+        ],
+        "usphone": "[wəz; wʌz]",
+        "ukphone": "[wəz; wɒz]"
+    },
+    {
+        "name": "am",
+        "trans": [
+            "abbr. 调幅",
+            "v. 是"
+        ],
+        "usphone": "[əm; æm]",
+        "ukphone": "[əm; æm]"
+    },
+    {
+        "name": "is",
+        "trans": [
+            "v. 是（be的三单形式）",
+            "n. 存在"
+        ],
+        "usphone": "[ɪz]",
+        "ukphone": "[ɪz]"
+    },
+    {
+        "name": "happy",
+        "trans": [
+            "adj. 幸福的；高兴的；巧妙的"
+        ],
+        "usphone": "[ˈhæpi]",
+        "ukphone": "[ˈhæpi]"
+    },
+    {
+        "name": "bought",
+        "trans": [
+            "v. 买（buy的过去式和过去分词）"
+        ],
+        "usphone": "[bɔːt]",
+        "ukphone": "[bɔːt]"
+    },
+    {
+        "name": "buy",
+        "trans": [
+            "n. 购买，买卖；所购的物品",
+            "vi. 买，采购",
+            "vt. 购买；获得；贿赂"
+        ],
+        "usphone": "[baɪ]",
+        "ukphone": "[baɪ]"
+    },
+    {
+        "name": "back",
+        "trans": [
+            "n. 后面；背部；靠背；足球等的后卫；书报等的末尾",
+            "adj. 后面的；过去的；拖欠的",
+            "vt. 支持；后退；背书；下赌注",
+            "adv. 以前；向后地；来回地；上溯；回来；回原处",
+            "vi. 后退；背靠；倒退"
+        ],
+        "usphone": "[bæk]",
+        "ukphone": "[bæk]"
+    }
+]

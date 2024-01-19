@@ -1,0 +1,483 @@
+[
+    {
+        "name": "sport",
+        "trans": [
+            "n. 运动；游戏；娱乐；运动会；玩笑",
+            "adj. 运动的",
+            "vt. 游戏；参加体育运动；夸耀",
+            "vi. 游戏"
+        ],
+        "usphone": "[spɔːrt]",
+        "ukphone": "[spɔːt]"
+    },
+    {
+        "name": "football",
+        "trans": [
+            "n. 足球，橄榄球",
+            "vi. 踢足球；打橄榄球"
+        ],
+        "usphone": "[ˈfʊtbɔːl]",
+        "ukphone": "[ˈfʊtbɔːl]"
+    },
+    {
+        "name": "any",
+        "trans": [
+            "adj. 任何的；所有的；丝毫",
+            "pron. 任何；任何一个；若干",
+            "adv. 稍微；少许"
+        ],
+        "usphone": "[ˈeni]",
+        "ukphone": "[ˈeni]"
+    },
+    {
+        "name": "some",
+        "trans": [
+            "adj. 一些；某个；大约；相当多的",
+            "pron. 一些；若干；其中的一部分；（数量不确切时用）有些人",
+            "adv. 非常；相当；<美>稍微"
+        ],
+        "usphone": "[sʌm; səm]",
+        "ukphone": "[sʌm]"
+    },
+    {
+        "name": "wear",
+        "trans": [
+            "n. 衣物；磨损；耐久性",
+            "v. 穿着；用旧；耗损；面露"
+        ],
+        "usphone": "[wer]",
+        "ukphone": "[weə(r)]"
+    },
+    {
+        "name": "or",
+        "trans": [
+            "conj. 或，或者；还是"
+        ],
+        "usphone": "[ɔːr]",
+        "ukphone": "[ɔː(r)]"
+    },
+    {
+        "name": "basketball",
+        "trans": [
+            "n. 篮球；篮球运动"
+        ],
+        "usphone": "[ˈbæskɪtbɔːl]",
+        "ukphone": "[ˈbɑːskɪtbɔːl]"
+    },
+    {
+        "name": "try",
+        "trans": [
+            "n. 尝试；努力；试验",
+            "vt. 试图，努力；试验；审判；考验",
+            "vi. 尝试；努力；试验"
+        ],
+        "usphone": "[traɪ]",
+        "ukphone": "[traɪ]"
+    },
+    {
+        "name": "heavy",
+        "trans": [
+            "n. 重物；严肃角色",
+            "adj. 沉重的；繁重的，巨大的；拥挤的；阴沉的",
+            "adv. 大量地；笨重地"
+        ],
+        "usphone": "[ˈhevi]",
+        "ukphone": "[ˈhevi]"
+    },
+    {
+        "name": "difficult",
+        "trans": [
+            "adj. 困难的；不随和的；执拗的"
+        ],
+        "usphone": "[ˈdɪfɪkəlt]",
+        "ukphone": "[ˈdɪfɪkəlt]"
+    },
+    {
+        "name": "easy",
+        "trans": [
+            "adj. 容易的；舒适的",
+            "vt. 发出停划命令",
+            "adv. 不费力地，从容地",
+            "vi. 停止划桨"
+        ],
+        "usphone": "[ˈiːzi]",
+        "ukphone": "[ˈiːzi]"
+    },
+    {
+        "name": "hand",
+        "trans": [
+            "n. 手，手艺；帮助；指针；插手",
+            "vt. 传递，交给；支持；搀扶"
+        ],
+        "usphone": "[hænd]",
+        "ukphone": "[hænd]"
+    },
+    {
+        "name": "game",
+        "trans": [
+            "n. 游戏；比赛",
+            "adj. 勇敢的",
+            "vi. 赌博"
+        ],
+        "usphone": "[ɡeɪm]",
+        "ukphone": "[ɡeɪm]"
+    },
+    {
+        "name": "ask",
+        "trans": [
+            "vt. 问，询问；要求；需要；邀请；讨价",
+            "vi. 问，询问；要求"
+        ],
+        "usphone": "[æsk]",
+        "ukphone": "[ɑːsk]"
+    },
+    {
+        "name": "very",
+        "trans": [
+            "adv. 非常，很；完全",
+            "adj. 恰好是，正是；甚至；十足的；特有的"
+        ],
+        "usphone": "[ˈveri]",
+        "ukphone": "[ˈveri]"
+    },
+    {
+        "name": "answer",
+        "trans": [
+            "n. 回答；答案；答辩",
+            "vt. 回答；符合",
+            "vi. 回答；符合"
+        ],
+        "usphone": "[ˈænsər]",
+        "ukphone": "[ˈɑːnsə(r)]"
+    },
+    {
+        "name": "policeman",
+        "trans": [
+            "n. 警察，警员；[分化] 淀帚（橡皮头玻璃搅棒）"
+        ],
+        "usphone": "[pəˈliːsmən]",
+        "ukphone": "[pəˈliːsmən]"
+    },
+    {
+        "name": "healthy",
+        "trans": [
+            "adj. 健康的，健全的；有益于健康的"
+        ],
+        "usphone": "[ˈhelθi]",
+        "ukphone": "[ˈhelθi]"
+    },
+    {
+        "name": "strong",
+        "trans": [
+            "adj. 坚强的；强壮的；牢固的；擅长的",
+            "adv. 强劲地；猛烈地"
+        ],
+        "usphone": "[strɔːŋ]",
+        "ukphone": "[strɒŋ]"
+    },
+    {
+        "name": "before",
+        "trans": [
+            "prep. 在…之前，先于",
+            "conj. 在…以前；在…之前",
+            "adv. 以前；在前"
+        ],
+        "usphone": "[bɪˈfɔːr]",
+        "ukphone": "[bɪˈfɔː(r)]"
+    },
+    {
+        "name": "after",
+        "trans": [
+            "conj. 在……之后",
+            "prep. 在……之后",
+            "adj. 以后的",
+            "adv. 后来，以后"
+        ],
+        "usphone": "[ˈæftər]",
+        "ukphone": "[ˈɑːftə(r)]"
+    },
+    {
+        "name": "bad",
+        "trans": [
+            "n. 坏事；坏人",
+            "adj. 坏的；严重的；劣质的",
+            "adv. 很，非常；坏地；邪恶地"
+        ],
+        "usphone": "[bæd]",
+        "ukphone": "[bæd]"
+    },
+    {
+        "name": "next",
+        "trans": [
+            "adv. 然后；下次；其次",
+            "adj. 下一个的；其次的；贴近的",
+            "n. 下一个",
+            "prep. 靠近；居于…之后"
+        ],
+        "usphone": "[nekst]",
+        "ukphone": "[nekst]"
+    },
+    {
+        "name": "often",
+        "trans": [
+            "adv. 常常，时常"
+        ],
+        "usphone": "[ˈɔːf(ə)n]",
+        "ukphone": "[ˈɒf(ə)n]"
+    },
+    {
+        "name": "exercise",
+        "trans": [
+            "n. 运动；练习；运用；操练；礼拜；典礼",
+            "vt. 锻炼；练习；使用；使忙碌；使惊恐",
+            "vi. 运动；练习"
+        ],
+        "usphone": "[ˈeksərsaɪz]",
+        "ukphone": "[ˈeksəsaɪz]"
+    },
+    {
+        "name": "minute",
+        "trans": [
+            "n. 分，分钟；片刻，一会儿；备忘录，笔记；会议记录",
+            "vt. 将…记录下来",
+            "adj. 微小的，详细的 [maɪˈnjuːt; US -ˈnuːt; maɪˋnut]"
+        ],
+        "usphone": "[ˈmɪnɪt]",
+        "ukphone": "[ˈmɪnɪt]"
+    },
+    {
+        "name": "hour",
+        "trans": [
+            "n. 小时；钟头；课时；…点钟"
+        ],
+        "usphone": "[ˈaʊər]",
+        "ukphone": "[ˈaʊə(r)]"
+    },
+    {
+        "name": "high",
+        "trans": [
+            "n. 高水平；天空；由麻醉品引起的快感；高压地带",
+            "adj. 高的；高级的；崇高的；高音调的",
+            "adv. 高；奢侈地"
+        ],
+        "usphone": "[haɪ]",
+        "ukphone": "[haɪ]"
+    },
+    {
+        "name": "fan",
+        "trans": [
+            "n. 迷；风扇；爱好者",
+            "vt. 煽动；刺激；吹拂",
+            "vi. 成扇形散开；飘动"
+        ],
+        "usphone": "[fæn]",
+        "ukphone": "[fæn]"
+    },
+    {
+        "name": "close",
+        "trans": [
+            "n. 结束",
+            "adj. 紧密的；亲密的；亲近的",
+            "vt. 关；结束；使靠近",
+            "vi. 关；结束；关闭",
+            "adv. 紧密地"
+        ],
+        "usphone": "[kloʊz; kloʊs]",
+        "ukphone": "[kləʊz]"
+    },
+    {
+        "name": "angry",
+        "trans": [
+            "adj. 生气的；愤怒的；狂暴的；（伤口等）发炎的"
+        ],
+        "usphone": "[ˈæŋɡri]",
+        "ukphone": "[ˈæŋɡri]"
+    },
+    {
+        "name": "lake",
+        "trans": [
+            "n. 湖；深红色颜料；胭脂红",
+            "vt. （使）血球溶解",
+            "vi. （使）血球溶解"
+        ],
+        "usphone": "[leɪk]",
+        "ukphone": "[leɪk]"
+    },
+    {
+        "name": "swim",
+        "trans": [
+            "n. 游泳；漂浮；眩晕",
+            "adj. 游泳时穿戴的",
+            "vi. 游泳；漂浮；浸；眩晕",
+            "vt. 游过；使浮起"
+        ],
+        "usphone": "[swɪm]",
+        "ukphone": "[swɪm]"
+    },
+    {
+        "name": "swam",
+        "trans": [
+            "v. 游泳（swim的过去式）"
+        ],
+        "usphone": "[swæm]",
+        "ukphone": "[swæm]"
+    },
+    {
+        "name": "ship",
+        "trans": [
+            "n. 船；舰；太空船",
+            "vt. 运送，乘船；以船运送",
+            "vi. 上船；乘船旅行；当船员"
+        ],
+        "usphone": "[ʃɪp]",
+        "ukphone": "[ʃɪp]"
+    },
+    {
+        "name": "visit",
+        "trans": [
+            "n. 访问；参观；逗留",
+            "vt. 访问；参观；视察",
+            "vi. 访问；暂住；闲谈"
+        ],
+        "usphone": "[ˈvɪzɪt]",
+        "ukphone": "[ˈvɪzɪt]"
+    },
+    {
+        "name": "clever",
+        "trans": [
+            "adj. 聪明的；机灵的；熟练的",
+            "[ 比较级cleverer 最高级 cleverest ]"
+        ],
+        "usphone": "[ˈklevər]",
+        "ukphone": "[ˈklevə(r)]"
+    },
+    {
+        "name": "find",
+        "trans": [
+            "n. 发现",
+            "vi. 裁决",
+            "vt. 查找，找到；发现；认为；感到；获得"
+        ],
+        "usphone": "[faɪnd]",
+        "ukphone": "[faɪnd]"
+    },
+    {
+        "name": "found",
+        "trans": [
+            "v. 找到（find的过去分词）",
+            "vt. 创立，建立；创办"
+        ],
+        "usphone": "[faʊnd]",
+        "ukphone": "[faʊnd]"
+    },
+    {
+        "name": "get",
+        "trans": [
+            "n. 生殖；幼兽",
+            "vi. 成为；变得；到达",
+            "vt. 使得；获得；受到；变成"
+        ],
+        "usphone": "[ɡet]",
+        "ukphone": "[ɡet]"
+    },
+    {
+        "name": "got",
+        "trans": [
+            "v. 得到，明白（get的过去式和过去分词）"
+        ],
+        "usphone": "[ɡɑːt]",
+        "ukphone": "[ɡɒt]"
+    },
+    {
+        "name": "party",
+        "trans": [
+            "n. 政党，党派；聚会，派对；当事人 [复数 parties]",
+            "vi. 参加社交聚会 [ 过去式 partied 过去分词 partied 现在分词 partying ]"
+        ],
+        "usphone": "[ˈpɑːrti]",
+        "ukphone": "[ˈpɑːti]"
+    },
+    {
+        "name": "tell",
+        "trans": [
+            "vt. 告诉，说；辨别；吩咐；断定",
+            "vi. 讲述；告发，泄密；识别"
+        ],
+        "usphone": "[tel]",
+        "ukphone": "[tel]"
+    },
+    {
+        "name": "begin",
+        "trans": [
+            "vi. 开始；首先",
+            "vt. 开始"
+        ],
+        "usphone": "[bɪˈɡɪn]",
+        "ukphone": "[bɪˈɡɪn]"
+    },
+    {
+        "name": "late",
+        "trans": [
+            "adj. 晚的；迟的；已故的；最近的",
+            "adv. 晚；迟；最近；在晚期"
+        ],
+        "usphone": "[leɪt]",
+        "ukphone": "[leɪt]"
+    },
+    {
+        "name": "early",
+        "trans": [
+            "adj. 早期的；早熟的",
+            "adv. 提早；在初期"
+        ],
+        "usphone": "[ˈɜːrli]",
+        "ukphone": "[ˈɜːli]"
+    },
+    {
+        "name": "cake",
+        "trans": [
+            "n. 蛋糕；块状物；利益总额",
+            "vt. 使结块",
+            "vi. 结成块状"
+        ],
+        "usphone": "[keɪk]",
+        "ukphone": "[keɪk]"
+    },
+    {
+        "name": "every",
+        "trans": [
+            "adj. 每一的，每个的；每隔…的"
+        ],
+        "usphone": "[ˈevri]",
+        "ukphone": "[ˈevri]"
+    },
+    {
+        "name": "all",
+        "trans": [
+            "n. 全部",
+            "adj. 全部的",
+            "adv. 全然地；越发",
+            "pron. 全部"
+        ],
+        "usphone": "[ɔːl]",
+        "ukphone": "[ɔːl]"
+    },
+    {
+        "name": "good-bye",
+        "trans": [
+            "n. 告辞",
+            "int. 再见"
+        ],
+        "usphone": "[ɡʊd baɪ]",
+        "ukphone": "[ˌɡʊd ˈbaɪ]"
+    },
+    {
+        "name": "hear",
+        "trans": [
+            "vi. 听；听见",
+            "vt. 听到，听；听说；审理"
+        ],
+        "usphone": "[hɪr]",
+        "ukphone": "[hɪə(r)]"
+    }
+]
