@@ -418,7 +418,7 @@ const chinaExam: DictionaryResource[] = [
     category: '中国考试',
     tags: ['其他'],
     url: '/dicts/zhuan-cha-ben.json',
-    length: 3692,
+    length: 3217,
     language: 'en',
     languageCategory: 'en',
   },
