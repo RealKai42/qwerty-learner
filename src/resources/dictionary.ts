@@ -412,6 +412,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'zhuan-cha-ben-ying-yu',
+    name: '专插本英语词汇',
+    description: '专插本英语词汇',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/zhuan-cha-ben.json',
+    length: 3692,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'Oxford5000',
     name: '牛津5000词',
     description: '牛津5000词',
