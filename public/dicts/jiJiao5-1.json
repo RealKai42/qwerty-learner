@@ -1,0 +1,728 @@
+[
+    {
+        "name": "father",
+        "trans": [
+            "n. 父亲，爸爸；神父；祖先；前辈",
+            "vt. 发明，创立；当…的父亲"
+        ],
+        "usphone": "[ˈfɑːðər]",
+        "ukphone": "[ˈfɑːðə(r)]"
+    },
+    {
+        "name": "mother",
+        "trans": [
+            "n. 母亲；大娘；女修道院院长",
+            "vt. 生下；养育；像母亲般关怀或照管",
+            "adj. 母亲的；出生地的"
+        ],
+        "usphone": "[ˈmʌðər]",
+        "ukphone": "[ˈmʌðə(r)]"
+    },
+    {
+        "name": "grandfather",
+        "trans": [
+            "n. 祖父；始祖",
+            "vt. 不受新规定限制"
+        ],
+        "usphone": "[ˈɡrænfɑːðər]",
+        "ukphone": "[ˈɡrænfɑːðə(r)]"
+    },
+    {
+        "name": "grandmother",
+        "trans": [
+            "n. 祖母；女祖先",
+            "vt. 当…的祖母",
+            "vi. 当祖母"
+        ],
+        "usphone": "[ˈɡrænmʌðər]",
+        "ukphone": "[ˈɡrænmʌðə(r)]"
+    },
+    {
+        "name": "have",
+        "trans": [
+            "aux. 已经",
+            "vt. 有；让；拿；从事；允许"
+        ],
+        "usphone": "[həv; əv; hæv]",
+        "ukphone": "[həv]"
+    },
+    {
+        "name": "has",
+        "trans": [
+            "v. 有，吃，得到，从事，允许，雇用，享有（have的第三人称单数）；（亲属关系中）接受；拿；买到"
+        ],
+        "usphone": "[həz; əz; hæz]",
+        "ukphone": "[həz]"
+    },
+    {
+        "name": "brother",
+        "trans": [
+            "n. 兄弟；同事；战友",
+            "int. 我的老兄！"
+        ],
+        "usphone": "[ˈbrʌðər]",
+        "ukphone": "[ˈbrʌðə(r)]"
+    },
+    {
+        "name": "sister",
+        "trans": [
+            "n. 姐妹；（称志同道合者）姐妹；修女；护士",
+            "adj. 姐妹般的；同类型的"
+        ],
+        "usphone": "[ˈsɪstər]",
+        "ukphone": "[ˈsɪstə(r)]"
+    },
+    {
+        "name": "parent",
+        "trans": [
+            "n. 父亲（或母亲）；父母亲；根源"
+        ],
+        "usphone": "[ˈperənt]",
+        "ukphone": "[ˈpeərənt]"
+    },
+    {
+        "name": "white",
+        "trans": [
+            "n. 白色；洁白；白种人",
+            "adj. 白色的；白种的；纯洁的"
+        ],
+        "usphone": "[waɪt]",
+        "ukphone": "[waɪt]"
+    },
+    {
+        "name": "hair",
+        "trans": [
+            "n. 头发；毛发；些微",
+            "adj. 毛发的；护理毛发的；用毛发制成的",
+            "vt. 除去…的毛发",
+            "vi. 生长毛发；形成毛状纤维"
+        ],
+        "usphone": "[her]",
+        "ukphone": "[heə(r)]"
+    },
+    {
+        "name": "black",
+        "trans": [
+            "n. 黑色；黑人；黑颜料",
+            "adj. 黑色的；黑人的；邪恶的",
+            "vt. 使变黑；把鞋油等涂在…上；把（眼眶）打成青肿",
+            "vi. 变黑"
+        ],
+        "usphone": "[blæk]",
+        "ukphone": "[blæk]"
+    },
+    {
+        "name": "uncle",
+        "trans": [
+            "n. 叔叔；伯父；伯伯；舅父；姨丈；姑父"
+        ],
+        "usphone": "[ˈʌŋkl]",
+        "ukphone": "[ˈʌŋk(ə)l]"
+    },
+    {
+        "name": "aunt",
+        "trans": [
+            "n. 阿姨；姑妈；伯母；舅妈"
+        ],
+        "usphone": "[ænt]",
+        "ukphone": "[ɑːnt]"
+    },
+    {
+        "name": "cousin",
+        "trans": [
+            "n. 堂兄弟姊妹；表兄弟姊妹"
+        ],
+        "usphone": "[ˈkʌzn]",
+        "ukphone": "[ˈkʌzn]"
+    },
+    {
+        "name": "thin",
+        "trans": [
+            "n. 细小部分",
+            "adj. 薄的；瘦的；稀薄的；微弱的",
+            "vt. 使瘦；使淡；使稀疏",
+            "vi. 变薄；变瘦；变淡",
+            "adv. 稀疏地；"
+        ],
+        "usphone": "[θɪn]",
+        "ukphone": "[θɪn]"
+    },
+    {
+        "name": "work",
+        "trans": [
+            "n. 工作；[物] 功；产品；操作；职业；行为；事业；工厂；著作；文学、音乐或艺术作品",
+            "vt. 使工作；操作；经营；使缓慢前进",
+            "vi. 工作；运作；起作用"
+        ],
+        "usphone": "[wɜːrk]",
+        "ukphone": "[wɜːk]"
+    },
+    {
+        "name": "doctor",
+        "trans": [
+            "vt. 修理；篡改，伪造；为…治病；授以博士学位",
+            "n. 医生；博士",
+            "vi. 就医；行医"
+        ],
+        "usphone": "[ˈdɑːktər]",
+        "ukphone": "[ˈdɒktə(r)]"
+    },
+    {
+        "name": "hospital",
+        "trans": [
+            "n. 医院"
+        ],
+        "usphone": "[ˈhɑːspɪtl]",
+        "ukphone": "[ˈhɒspɪt(ə)l]"
+    },
+    {
+        "name": "nurse",
+        "trans": [
+            "vt. 看护，护理；照顾；培养；给…喂奶",
+            "vi. 照料，护理；喂奶；当保姆",
+            "n. 护士；奶妈，保姆"
+        ],
+        "usphone": "[nɜːrs]",
+        "ukphone": "[nɜːs]"
+    },
+    {
+        "name": "worker",
+        "trans": [
+            "n. 工人；劳动者；职蚁"
+        ],
+        "usphone": "[ˈwɜːrkər]",
+        "ukphone": "[ˈwɜːkə(r)]"
+    },
+    {
+        "name": "walk",
+        "trans": [
+            "n. 步行，走；散步",
+            "vi. 走，步行；散步",
+            "vt. 散步；走过"
+        ],
+        "usphone": "[wɔːk]",
+        "ukphone": "[wɔːk]"
+    },
+    {
+        "name": "go for a walk",
+        "trans": [
+            "v. 出去散步"
+        ]
+    },
+    {
+        "name": "plant",
+        "trans": [
+            "n. 工厂，车间；植物；设备；庄稼",
+            "vt. 种植；培养；栽培；安置",
+            "vi. 种植"
+        ],
+        "usphone": "[plænt]",
+        "ukphone": "[plɑːnt]"
+    },
+    {
+        "name": "flower",
+        "trans": [
+            "n. 花；精华；开花植物",
+            "vt. 使开花；用花装饰",
+            "vi. 成熟，发育；开花；繁荣；旺盛"
+        ],
+        "usphone": "[ˈflaʊər]",
+        "ukphone": "[ˈflaʊə(r)]"
+    },
+    {
+        "name": "cook",
+        "trans": [
+            "n. 厨师，厨子",
+            "vt. 烹调，煮",
+            "vi. 烹调，做菜"
+        ],
+        "usphone": "[kʊk]",
+        "ukphone": "[kʊk]"
+    },
+    {
+        "name": "we",
+        "trans": [
+            "pron. 我们（主格）；笔者，本人（作者或演讲人使用）；朕，寡人"
+        ],
+        "usphone": "[wi]",
+        "ukphone": "[wi; wiː]"
+    },
+    {
+        "name": "family",
+        "trans": [
+            "n. 家庭；亲属；家族；子女；[生]科；语族；[化]族",
+            "adj. 家庭的；家族的；适合于全家的"
+        ],
+        "usphone": "[ˈfæməli]",
+        "ukphone": "[ˈfæməli]"
+    },
+    {
+        "name": "film",
+        "trans": [
+            "n. 电影；薄膜；胶卷；轻烟",
+            "vt. 在…上覆以薄膜；把…拍成电影",
+            "vi. 摄制电影；生薄膜；变得朦胧"
+        ],
+        "usphone": "[fɪlm]",
+        "ukphone": "[fɪlm]"
+    },
+    {
+        "name": "watch a film",
+        "trans": [
+            " 看电影；看一场电影；观看一场电影"
+        ]
+    },
+    {
+        "name": "China",
+        "trans": [
+            "n. 中国",
+            "n. china，瓷器",
+            "adj. 中国的；中国制造的",
+            "adj. china，瓷制的"
+        ],
+        "usphone": "[ˈtʃaɪnə]",
+        "ukphone": "[ˈtʃaɪnə]"
+    },
+    {
+        "name": "map",
+        "trans": [
+            "vt. 映射；计划；绘制地图；确定基因在染色体中的位置",
+            "n. 地图；示意图；染色体图",
+            "vi. 基因被安置"
+        ],
+        "usphone": "[mæp]",
+        "ukphone": "[mæp]"
+    },
+    {
+        "name": "speak",
+        "trans": [
+            "vi. 说话；演讲；表明；陈述",
+            "vt. 讲话；发言；讲演"
+        ],
+        "usphone": "[spiːk]",
+        "ukphone": "[spiːk]"
+    },
+    {
+        "name": "know",
+        "trans": [
+            "vt. 知道；认识；懂得",
+            "vi. 了解；熟悉；确信"
+        ],
+        "usphone": "[noʊ]",
+        "ukphone": "[nəʊ]"
+    },
+    {
+        "name": "about",
+        "trans": [
+            "prep. 关于；大约",
+            "n. 大致；粗枝大叶；不拘小节的人",
+            "adj. 在附近的；四处走动的；在起作用的",
+            "adv. 大约；周围；到处"
+        ],
+        "usphone": "[əˈbaʊt]",
+        "ukphone": "[əˈbaʊt]"
+    },
+    {
+        "name": "city",
+        "trans": [
+            "n. 城市，都市",
+            "adj. 城市的；都会的"
+        ],
+        "usphone": "[ˈsɪti]",
+        "ukphone": "[ˈsɪti]"
+    },
+    {
+        "name": "of",
+        "trans": [
+            "prep. 关于；属于；…的；由…组成的"
+        ],
+        "usphone": "[əv; ʌv]",
+        "ukphone": "[əv; ɒv]"
+    },
+    {
+        "name": "star",
+        "trans": [
+            "n. 星，恒星；明星；星形物",
+            "adj. 明星的，主角的；星形的",
+            "vt. 用星号标于；由…主演，由…担任主角",
+            "vi. 担任主角"
+        ],
+        "usphone": "[stɑːr]",
+        "ukphone": "[stɑː(r)]"
+    },
+    {
+        "name": "here",
+        "trans": [
+            "n. 这里",
+            "adv. 在这里；此时",
+            "int. 嘿！；喂！"
+        ],
+        "usphone": "[hɪr]",
+        "ukphone": "[hɪə(r)]"
+    },
+    {
+        "name": "beautiful",
+        "trans": [
+            "adj. 美丽的",
+            "出色地",
+            "出色的",
+            "迷人的",
+            "迷人地"
+        ],
+        "usphone": "[ˈbjuːtɪf(ə)l]",
+        "ukphone": "[ˈbjuːtɪf(ə)l]"
+    },
+    {
+        "name": "love",
+        "trans": [
+            "n. 恋爱；亲爱的；酷爱；喜爱的事物；爱情，爱意；疼爱；热爱；爱人，所爱之物",
+            "v. 爱，热爱；爱戴；赞美，称赞；喜爱；喜好；喜欢；爱慕"
+        ],
+        "usphone": "[lʌv]",
+        "ukphone": "[lʌv]"
+    },
+    {
+        "name": "travel",
+        "trans": [
+            "n. 旅行；游历；漫游",
+            "vt. 经过；在…旅行",
+            "vi. 旅行；行进；步行；交往"
+        ],
+        "usphone": "[ˈtrævl]",
+        "ukphone": "[ˈtræv(ə)l]"
+    },
+    {
+        "name": "interesting",
+        "trans": [
+            "adj. 有趣的；引起兴趣的，令人关注的"
+        ],
+        "usphone": "[ˈɪntrəstɪŋ; ˈɪntrestɪŋ]",
+        "ukphone": "[ˈɪntrəstɪŋ]"
+    },
+    {
+        "name": "place",
+        "trans": [
+            "n. 地方；住所；座位",
+            "vt. 放置；任命；寄予",
+            "vi. 名列前茅；取得名次"
+        ],
+        "usphone": "[pleɪs]",
+        "ukphone": "[pleɪs]"
+    },
+    {
+        "name": "may",
+        "trans": [
+            "aux. 可以，能够；可能，也许；祝，愿；会，能"
+        ],
+        "usphone": "[meɪ]",
+        "ukphone": "[meɪ]"
+    },
+    {
+        "name": "young",
+        "trans": [
+            "n. 年轻人；（动物的）崽，仔",
+            "adj. 年轻的；初期的；没有经验的"
+        ],
+        "usphone": "[jʌŋ]",
+        "ukphone": "[jʌŋ]"
+    },
+    {
+        "name": "come",
+        "trans": [
+            "vi. 来；开始；出现；发生；变成；到达",
+            "vt. 做；假装；将满（…岁）",
+            "int. 嗨！"
+        ],
+        "usphone": "[kʌm]",
+        "ukphone": "[kʌm]"
+    },
+    {
+        "name": "great",
+        "trans": [
+            "n. 大师；大人物；伟人们",
+            "adj. 伟大的，重大的；极好的，好的；主要的"
+        ],
+        "usphone": "[ɡreɪt]",
+        "ukphone": "[ɡreɪt]"
+    },
+    {
+        "name": "call",
+        "trans": [
+            "n. 电话；呼叫；要求；访问",
+            "vi. 呼叫；拜访；叫牌",
+            "vt. 呼叫；称呼；召集"
+        ],
+        "usphone": "[kɔːl]",
+        "ukphone": "[kɔːl]"
+    },
+    {
+        "name": "slow",
+        "trans": [
+            "adj. 慢的；减速的；迟钝的",
+            "vt. 放慢；阻碍",
+            "vi. 变慢；变萧条",
+            "adv. 慢慢地；迟缓地"
+        ],
+        "usphone": "[sloʊ]",
+        "ukphone": "[sləʊ]"
+    },
+    {
+        "name": "plane",
+        "trans": [
+            "n. 飞机；平面；程度，水平",
+            "adj. 平的；平面的",
+            "vt. 刨平；用刨子刨；掠过水面",
+            "vi. 刨；乘飞机旅行；翱翔"
+        ],
+        "usphone": "[pleɪn]",
+        "ukphone": "[pleɪn]"
+    },
+    {
+        "name": "fast",
+        "trans": [
+            "n. 斋戒；绝食",
+            "adj. 快速的，迅速的；紧的，稳固的",
+            "adv. 迅速地；紧紧地；彻底地",
+            "vi. 禁食，斋戒"
+        ],
+        "usphone": "[fæst]",
+        "ukphone": "[fɑːst]"
+    },
+    {
+        "name": "train",
+        "trans": [
+            "n. 火车；行列；长队；裙裾",
+            "v. 培养；训练；瞄准"
+        ],
+        "usphone": "[treɪn]",
+        "ukphone": "[treɪn]"
+    },
+    {
+        "name": "from ... to ...",
+        "trans": [
+            " 从到；从什么到什么；起止时间"
+        ]
+    },
+    {
+        "name": "Sunday",
+        "trans": [
+            "n. 星期日；礼拜日"
+        ],
+        "usphone": "[ˈsʌndeɪ]",
+        "ukphone": "[ˈsʌndeɪ]"
+    },
+    {
+        "name": "Monday",
+        "trans": [
+            "n. 星期一"
+        ],
+        "usphone": "[ˈmʌndeɪ]",
+        "ukphone": "[ˈmʌndeɪ]"
+    },
+    {
+        "name": "Tuesday",
+        "trans": [
+            "n. 星期二"
+        ],
+        "usphone": "[ˈtuːzdeɪ]",
+        "ukphone": "[ˈtjuːzdeɪ]"
+    },
+    {
+        "name": "Wednesday",
+        "trans": [
+            "n. 星期三"
+        ],
+        "usphone": "[ˈwenzdeɪ]",
+        "ukphone": "[ˈwenzdeɪ]"
+    },
+    {
+        "name": "Thursday",
+        "trans": [
+            "n. 星期四"
+        ],
+        "usphone": "[ˈθɜːrzdeɪ]",
+        "ukphone": "[ˈθɜːzdeɪ]"
+    },
+    {
+        "name": "Friday",
+        "trans": [
+            "n. 星期五"
+        ],
+        "usphone": "[ˈfraɪdeɪ]",
+        "ukphone": "[ˈfraɪdeɪ]"
+    },
+    {
+        "name": "Saturday",
+        "trans": [
+            "n. 星期六"
+        ],
+        "usphone": "[ˈsætərdeɪ]",
+        "ukphone": "[ˈsætədeɪ]"
+    },
+    {
+        "name": "at",
+        "trans": [
+            "prep. 在（表示存在或出现的地点、场所、位置、空间）；以（某种价格、速度等）；向；达；因为；朝；忙于",
+            "n. 阿特（老挝货币基本单位att）；[化]砹（极不稳定放射性元素）",
+            "abbr. 密封的（airtight）；气温（air temperature）"
+        ],
+        "usphone": "[ət; æt]",
+        "ukphone": "[ət]"
+    },
+    {
+        "name": "evening",
+        "trans": [
+            "n. 晚上；傍晚；（联欢性的）晚会；后期",
+            "adj. 在晚上的；为晚上的；晚上用的",
+            "int. 晚上好（等于good evening）"
+        ],
+        "usphone": "[ˈiːvnɪŋ]",
+        "ukphone": "[ˈiːvnɪŋ]"
+    },
+    {
+        "name": "nice",
+        "trans": [
+            "adj. 精密的；美好的；细微的；和蔼的"
+        ],
+        "usphone": "[naɪs]",
+        "ukphone": "[naɪs]"
+    },
+    {
+        "name": "meet",
+        "trans": [
+            "vt. 满足；遇见；对付",
+            "vi. 相遇；接触",
+            "n. 集会",
+            "adj. 合适的；适宜的"
+        ],
+        "usphone": "[miːt]",
+        "ukphone": "[miːt]"
+    },
+    {
+        "name": "morning",
+        "trans": [
+            "n. 早晨；黎明；初期"
+        ],
+        "usphone": "[ˈmɔːrnɪŋ]",
+        "ukphone": "[ˈmɔːnɪŋ]"
+    },
+    {
+        "name": "afternoon",
+        "trans": [
+            "n. 午后，下午"
+        ],
+        "usphone": "[ˌæftərˈnuːn]",
+        "ukphone": "[ˌɑːftəˈnuːn]"
+    },
+    {
+        "name": "room",
+        "trans": [
+            "n. 房间；空间；余地；机会；房间里所有的人",
+            "vt. 为…提供住处；租房，合住；投宿，住宿；留…住宿",
+            "vi. 居住；住宿"
+        ],
+        "usphone": "[ruːm; rʊm]",
+        "ukphone": "[ruːm]"
+    },
+    {
+        "name": "door",
+        "trans": [
+            "n. 门；家，户；门口；通道"
+        ],
+        "usphone": "[dɔːr]",
+        "ukphone": "[dɔː(r)]"
+    },
+    {
+        "name": "window",
+        "trans": [
+            "n. 窗；窗口；窗户"
+        ],
+        "usphone": "[ˈwɪndoʊ]",
+        "ukphone": "[ˈwɪndəʊ]"
+    },
+    {
+        "name": "make",
+        "trans": [
+            "vt. 使得；进行；布置，准备，整理；制造；认为；获得；形成；安排；引起；构成",
+            "vi. 开始；前进；增大；被制造",
+            "n. 制造；构造；性情"
+        ],
+        "usphone": "[meɪk]",
+        "ukphone": "[meɪk]"
+    },
+    {
+        "name": "kid",
+        "trans": [
+            "n. 小孩；小山羊",
+            "vt. 欺骗；取笑；戏弄",
+            "vi. 欺骗；取笑；戏弄",
+            "adj. 小山羊皮制的；较年幼的"
+        ],
+        "usphone": "[kɪd]",
+        "ukphone": "[kɪd]"
+    },
+    {
+        "name": "year",
+        "trans": [
+            "n. 年；年度；历年；年纪；一年的期间；某年级的学生"
+        ],
+        "usphone": "[jɪr]",
+        "ukphone": "[jɪə(r)]"
+    },
+    {
+        "name": "also",
+        "trans": [
+            "conj. 并且；另外",
+            "adv. 也；而且；同样"
+        ],
+        "usphone": "[ˈɔːlsoʊ]",
+        "ukphone": "[ˈɔːlsəʊ]"
+    },
+    {
+        "name": "boat",
+        "trans": [
+            "n. 小船；轮船",
+            "vi. 划船"
+        ],
+        "usphone": "[boʊt]",
+        "ukphone": "[bəʊt]"
+    },
+    {
+        "name": "moon",
+        "trans": [
+            "n. 月亮；月球；月光；卫星",
+            "vi. 闲荡；出神",
+            "vt. 虚度"
+        ],
+        "usphone": "[muːn]",
+        "ukphone": "[muːn]"
+    },
+    {
+        "name": "wonderful",
+        "trans": [
+            "adj. 极好的，精彩的，绝妙的；奇妙的；美妙；胜；神妙"
+        ],
+        "usphone": "[ˈwʌndərf(ə)l]",
+        "ukphone": "[ˈwʌndəf(ə)l]"
+    },
+    {
+        "name": "those",
+        "trans": [
+            "adj. 那些的",
+            "pron. 那些（that的复数）"
+        ],
+        "usphone": "[ðoʊz]",
+        "ukphone": "[ðəʊz]"
+    },
+    {
+        "name": "that",
+        "trans": [
+            "conj. 因为；以至于",
+            "adj. 那；那个",
+            "pron. 那；那个",
+            "adv. 那么；那样"
+        ],
+        "usphone": "[ðæt]",
+        "ukphone": "[ðæt]"
+    }
+]

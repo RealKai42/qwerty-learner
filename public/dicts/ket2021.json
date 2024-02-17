@@ -1,0 +1,6985 @@
+[
+    {
+        "name": "appliances",
+        "trans": [
+            "n. 家电"
+        ]
+    },
+    {
+        "name": "camera",
+        "trans": [
+            "n. 摄像机"
+        ]
+    },
+    {
+        "name": "DVD player",
+        "trans": [
+            "n. DVD播放器"
+        ]
+    },
+    {
+        "name": "laptop",
+        "trans": [
+            "n. 笔记本电脑"
+        ]
+    },
+    {
+        "name": "radio",
+        "trans": [
+            "n. 收音机"
+        ]
+    },
+    {
+        "name": "CD player",
+        "trans": [
+            "n. CD播放器"
+        ]
+    },
+    {
+        "name": "electric lights",
+        "trans": [
+            "n. 电灯"
+        ]
+    },
+    {
+        "name": "telephone",
+        "trans": [
+            "n. 电话"
+        ]
+    },
+    {
+        "name": "cell phone",
+        "trans": [
+            "n. 手机"
+        ]
+    },
+    {
+        "name": "electricity",
+        "trans": [
+            "n. 电力"
+        ]
+    },
+    {
+        "name": "mobile phone",
+        "trans": [
+            "n. 移动电话"
+        ]
+    },
+    {
+        "name": "television/TV",
+        "trans": [
+            "n. 电视"
+        ]
+    },
+    {
+        "name": "clock",
+        "trans": [
+            "n. 时钟"
+        ]
+    },
+    {
+        "name": "fridge",
+        "trans": [
+            "n. 冰箱"
+        ]
+    },
+    {
+        "name": "MP3 player",
+        "trans": [
+            "n. MP3播放器"
+        ]
+    },
+    {
+        "name": "video",
+        "trans": [
+            "n. 视频"
+        ]
+    },
+    {
+        "name": "computer",
+        "trans": [
+            "n. 电脑"
+        ]
+    },
+    {
+        "name": "gas oven",
+        "trans": [
+            "n. 煤气炉"
+        ]
+    },
+    {
+        "name": "washing machine",
+        "trans": [
+            "n. 洗衣机"
+        ]
+    },
+    {
+        "name": "cooker",
+        "trans": [
+            "n. 炉灶"
+        ]
+    },
+    {
+        "name": "heating",
+        "trans": [
+            "n. 暖气"
+        ]
+    },
+    {
+        "name": "PC",
+        "trans": [
+            "n. 台式电脑"
+        ]
+    },
+    {
+        "name": "digital camera",
+        "trans": [
+            "n. 数码相机"
+        ]
+    },
+    {
+        "name": "lamp",
+        "trans": [
+            "n. 台灯"
+        ]
+    },
+    {
+        "name": "phone",
+        "trans": [
+            "n. 电话"
+        ]
+    },
+    {
+        "name": "bag",
+        "trans": [
+            "n. 包",
+            "n. 袋"
+        ]
+    },
+    {
+        "name": "fashion",
+        "trans": [
+            "n. 时尚",
+            "adj. 时尚的"
+        ]
+    },
+    {
+        "name": "purse",
+        "trans": [
+            "n. 钱包",
+            "n. 手提包"
+        ]
+    },
+    {
+        "name": "swimsuit",
+        "trans": [
+            "n. 泳衣",
+            "n. 游泳装"
+        ]
+    },
+    {
+        "name": "bathing suit",
+        "trans": [
+            "n. 泳衣",
+            "n. 游泳装"
+        ]
+    },
+    {
+        "name": "get dressed",
+        "trans": [
+            "v. 穿衣",
+            "v. 装扮"
+        ]
+    },
+    {
+        "name": "raincoat",
+        "trans": [
+            "n. 雨衣",
+            "n. 雨披"
+        ]
+    },
+    {
+        "name": "tie",
+        "trans": [
+            "n. 领带",
+            "v. 系",
+            "v. 绑"
+        ]
+    },
+    {
+        "name": "belt",
+        "trans": [
+            "n. 腰带",
+            "v. 系上",
+            "v. 捆绑"
+        ]
+    },
+    {
+        "name": "glasses",
+        "trans": [
+            "n. 眼镜"
+        ]
+    },
+    {
+        "name": "ring",
+        "trans": [
+            "n. 戒指"
+        ]
+    },
+    {
+        "name": "tights",
+        "trans": [
+            "n. 连裤袜",
+            "n. 紧身衣"
+        ]
+    },
+    {
+        "name": "blouse",
+        "trans": [
+            "n. 女衬衫",
+            "n. 女上衣"
+        ]
+    },
+    {
+        "name": "glove",
+        "trans": [
+            "n. 手套"
+        ]
+    },
+    {
+        "name": "scarf",
+        "trans": [
+            "n. 围巾"
+        ]
+    },
+    {
+        "name": "trainers",
+        "trans": [
+            "n. 运动鞋"
+        ]
+    },
+    {
+        "name": "boot",
+        "trans": [
+            "n. 靴子",
+            "v. 装载"
+        ]
+    },
+    {
+        "name": "handbag",
+        "trans": [
+            "n. 手提包",
+            "n. 女士手袋"
+        ]
+    },
+    {
+        "name": "shirt",
+        "trans": [
+            "n. 衬衫",
+            "n. 上衣"
+        ]
+    },
+    {
+        "name": "trousers",
+        "trans": [
+            "n. 裤子"
+        ]
+    },
+    {
+        "name": "bracelet",
+        "trans": [
+            "n. 手链",
+            "n. 腕带"
+        ]
+    },
+    {
+        "name": "hat",
+        "trans": [
+            "n. 帽子"
+        ]
+    },
+    {
+        "name": "shoes",
+        "trans": [
+            "n. 鞋子"
+        ]
+    },
+    {
+        "name": "try on",
+        "trans": [
+            "v. 试穿",
+            "v. 试戴"
+        ]
+    },
+    {
+        "name": "cap",
+        "trans": [
+            "n. 帽子",
+            "n. 盖"
+        ]
+    },
+    {
+        "name": "jacket",
+        "trans": [
+            "n. 夹克",
+            "n. 短上衣"
+        ]
+    },
+    {
+        "name": "shorts",
+        "trans": [
+            "n. 短裤"
+        ]
+    },
+    {
+        "name": "T-shirt",
+        "trans": [
+            "n. T恤衫"
+        ]
+    },
+    {
+        "name": "chain",
+        "trans": [
+            "n. 链条",
+            "n. 项链"
+        ]
+    },
+    {
+        "name": "jeans",
+        "trans": [
+            "n. 牛仔裤"
+        ]
+    },
+    {
+        "name": "skirt",
+        "trans": [
+            "n. 裙子"
+        ]
+    },
+    {
+        "name": "umbrella",
+        "trans": [
+            "n. 雨伞"
+        ]
+    },
+    {
+        "name": "clothes",
+        "trans": [
+            "n. 衣服",
+            "n. 服装"
+        ]
+    },
+    {
+        "name": "jewellery",
+        "trans": [
+            "n. 珠宝",
+            "n. 首饰"
+        ]
+    },
+    {
+        "name": "jewelry",
+        "trans": [
+            "n. 珠宝",
+            "n. 首饰"
+        ]
+    },
+    {
+        "name": "sock",
+        "trans": [
+            "n. 短袜",
+            "n. 袜子"
+        ]
+    },
+    {
+        "name": "uniform",
+        "trans": [
+            "n. 制服",
+            "adj. 统一的"
+        ]
+    },
+    {
+        "name": "coat",
+        "trans": [
+            "n. 外套",
+            "n. 大衣"
+        ]
+    },
+    {
+        "name": "jumper",
+        "trans": [
+            "n. 毛衣",
+            "n. 跳跃者"
+        ]
+    },
+    {
+        "name": "suit",
+        "trans": [
+            "n. 套装",
+            "n. 西装"
+        ]
+    },
+    {
+        "name": "wallet",
+        "trans": [
+            "n. 钱包"
+        ]
+    },
+    {
+        "name": "costume",
+        "trans": [
+            "n. 服装，戏服",
+            "n. 游泳装"
+        ]
+    },
+    {
+        "name": "kit",
+        "trans": [
+            "n. 套件",
+            "n. 工具箱"
+        ]
+    },
+    {
+        "name": "sunglasses",
+        "trans": [
+            "n. 太阳镜"
+        ]
+    },
+    {
+        "name": "watch",
+        "trans": [
+            "n. 手表",
+            "v. 观看"
+        ]
+    },
+    {
+        "name": "dress",
+        "trans": [
+            "n. 连衣裙",
+            "v. 穿着"
+        ]
+    },
+    {
+        "name": "necklace",
+        "trans": [
+            "n. 项链"
+        ]
+    },
+    {
+        "name": "sweater",
+        "trans": [
+            "n. 毛衣",
+            "n. 圆领运动衫"
+        ]
+    },
+    {
+        "name": "wear",
+        "trans": [
+            "v. 穿着",
+            "v. 戴着"
+        ]
+    },
+    {
+        "name": "earring",
+        "trans": [
+            "n. 耳环"
+        ]
+    },
+    {
+        "name": "pocket",
+        "trans": [
+            "n. 口袋"
+        ]
+    },
+    {
+        "name": "swimming costume",
+        "trans": [
+            "n. 泳衣",
+            "n. 游泳装"
+        ]
+    },
+    {
+        "name": "black",
+        "trans": [
+            "黑色"
+        ]
+    },
+    {
+        "name": "golden",
+        "trans": [
+            "金色"
+        ]
+    },
+    {
+        "name": "orange",
+        "trans": [
+            "橙色"
+        ]
+    },
+    {
+        "name": "red",
+        "trans": [
+            "红色"
+        ]
+    },
+    {
+        "name": "blue",
+        "trans": [
+            "蓝色"
+        ]
+    },
+    {
+        "name": "green",
+        "trans": [
+            "绿色"
+        ]
+    },
+    {
+        "name": "pale",
+        "trans": [
+            "苍白的"
+        ]
+    },
+    {
+        "name": "silver",
+        "trans": [
+            "银色"
+        ]
+    },
+    {
+        "name": "brown",
+        "trans": [
+            "棕色"
+        ]
+    },
+    {
+        "name": "grey",
+        "trans": [
+            "灰色"
+        ]
+    },
+    {
+        "name": "gray",
+        "trans": [
+            "灰色"
+        ]
+    },
+    {
+        "name": "pink",
+        "trans": [
+            "粉色"
+        ]
+    },
+    {
+        "name": "white",
+        "trans": [
+            "白色"
+        ]
+    },
+    {
+        "name": "dark",
+        "trans": [
+            "深色"
+        ]
+    },
+    {
+        "name": "light",
+        "trans": [
+            "浅色"
+        ]
+    },
+    {
+        "name": "purple",
+        "trans": [
+            "紫色"
+        ]
+    },
+    {
+        "name": "yellow",
+        "trans": [
+            "黄色"
+        ]
+    },
+    {
+        "name": "address",
+        "trans": [
+            "地址"
+        ]
+    },
+    {
+        "name": "digital",
+        "trans": [
+            "数字的"
+        ]
+    },
+    {
+        "name": "laptop",
+        "trans": [
+            "笔记本电脑(计算机用词)"
+        ]
+    },
+    {
+        "name": "printer",
+        "trans": [
+            "打印机"
+        ]
+    },
+    {
+        "name": "at/@",
+        "trans": [
+            "在，在...处",
+            "电子邮件域名(计算机用词)"
+        ]
+    },
+    {
+        "name": "digital camera",
+        "trans": [
+            "数码相机"
+        ]
+    },
+    {
+        "name": "mobile",
+        "trans": [
+            "移动电话 (phone)"
+        ]
+    },
+    {
+        "name": "screen",
+        "trans": [
+            "屏幕"
+        ]
+    },
+    {
+        "name": "by post",
+        "trans": [
+            "通过邮寄",
+            "通过邮递"
+        ]
+    },
+    {
+        "name": "dot",
+        "trans": [
+            "点"
+        ]
+    },
+    {
+        "name": "mouse",
+        "trans": [
+            "鼠标"
+        ]
+    },
+    {
+        "name": "software",
+        "trans": [
+            "软件"
+        ]
+    },
+    {
+        "name": "call",
+        "trans": [
+            "v.拨打电话"
+        ]
+    },
+    {
+        "name": "download",
+        "trans": [
+            "n.下载",
+            "v.下载"
+        ]
+    },
+    {
+        "name": "MP3 player",
+        "trans": [
+            "MP3 播放器"
+        ]
+    },
+    {
+        "name": "talk",
+        "trans": [
+            "交谈"
+        ]
+    },
+    {
+        "name": "camera",
+        "trans": [
+            "相机"
+        ]
+    },
+    {
+        "name": "DVD player",
+        "trans": [
+            "DVD 播放器"
+        ]
+    },
+    {
+        "name": "net",
+        "trans": [
+            "网络"
+        ]
+    },
+    {
+        "name": "telephone",
+        "trans": [
+            "电话"
+        ]
+    },
+    {
+        "name": "CD player",
+        "trans": [
+            "CD 播放器"
+        ]
+    },
+    {
+        "name": "email",
+        "trans": [
+            "n.电子邮件",
+            "v.发送电子邮件"
+        ]
+    },
+    {
+        "name": "online",
+        "trans": [
+            "在线的"
+        ]
+    },
+    {
+        "name": "text",
+        "trans": [
+            "n.文本",
+            "v.发送短信"
+        ]
+    },
+    {
+        "name": "cell phone",
+        "trans": [
+            "手机"
+        ]
+    },
+    {
+        "name": "envelope",
+        "trans": [
+            "信封"
+        ]
+    },
+    {
+        "name": "password",
+        "trans": [
+            "密码"
+        ]
+    },
+    {
+        "name": "video",
+        "trans": [
+            "视频"
+        ]
+    },
+    {
+        "name": "chat",
+        "trans": [
+            "聊天"
+        ]
+    },
+    {
+        "name": "file",
+        "trans": [
+            "文件"
+        ]
+    },
+    {
+        "name": "PC",
+        "trans": [
+            "个人电脑"
+        ]
+    },
+    {
+        "name": "web",
+        "trans": [
+            "网络"
+        ]
+    },
+    {
+        "name": "click",
+        "trans": [
+            "n.点击"
+        ]
+    },
+    {
+        "name": "information",
+        "trans": [
+            "信息"
+        ]
+    },
+    {
+        "name": "photograph",
+        "trans": [
+            "照片"
+        ]
+    },
+    {
+        "name": "web page",
+        "trans": [
+            "网页"
+        ]
+    },
+    {
+        "name": "computer",
+        "trans": [
+            "计算机"
+        ]
+    },
+    {
+        "name": "internet",
+        "trans": [
+            "互联网"
+        ]
+    },
+    {
+        "name": "photography",
+        "trans": [
+            "摄影"
+        ]
+    },
+    {
+        "name": "website",
+        "trans": [
+            "网站"
+        ]
+    },
+    {
+        "name": "conversation",
+        "trans": [
+            "对话"
+        ]
+    },
+    {
+        "name": "keyboard",
+        "trans": [
+            "键盘"
+        ]
+    },
+    {
+        "name": "phone",
+        "trans": [
+            "电话"
+        ]
+    },
+    {
+        "name": "ad/advertisement",
+        "trans": [
+            "广告"
+        ]
+    },
+    {
+        "name": "diary",
+        "trans": [
+            "日记"
+        ]
+    },
+    {
+        "name": "magazine",
+        "trans": [
+            "杂志"
+        ]
+    },
+    {
+        "name": "passport",
+        "trans": [
+            "护照"
+        ]
+    },
+    {
+        "name": "article",
+        "trans": [
+            "文章"
+        ]
+    },
+    {
+        "name": "diploma",
+        "trans": [
+            "文凭,毕业证书"
+        ]
+    },
+    {
+        "name": "menu",
+        "trans": [
+            "菜单"
+        ]
+    },
+    {
+        "name": "postcard",
+        "trans": [
+            "明信片"
+        ]
+    },
+    {
+        "name": "bill",
+        "trans": [
+            "账单"
+        ]
+    },
+    {
+        "name": "email",
+        "trans": [
+            "电子邮件"
+        ]
+    },
+    {
+        "name": "message",
+        "trans": [
+            "消息"
+        ]
+    },
+    {
+        "name": "project",
+        "trans": [
+            "项目"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "书籍"
+        ]
+    },
+    {
+        "name": "form",
+        "trans": [
+            "表格"
+        ]
+    },
+    {
+        "name": "newspaper",
+        "trans": [
+            "报纸"
+        ]
+    },
+    {
+        "name": "text",
+        "trans": [
+            "n.文本",
+            "v.发送短信"
+        ]
+    },
+    {
+        "name": "card",
+        "trans": [
+            "卡片"
+        ]
+    },
+    {
+        "name": "letter",
+        "trans": [
+            "信件"
+        ]
+    },
+    {
+        "name": "note",
+        "trans": [
+            "便条"
+        ]
+    },
+    {
+        "name": "textbook",
+        "trans": [
+            "教科书"
+        ]
+    },
+    {
+        "name": "comic",
+        "trans": [
+            "漫画"
+        ]
+    },
+    {
+        "name": "licence",
+        "trans": [
+            "执照"
+        ]
+    },
+    {
+        "name": "notebook",
+        "trans": [
+            "笔记本"
+        ]
+    },
+    {
+        "name": "ticket",
+        "trans": [
+            "票"
+        ]
+    },
+    {
+        "name": "advanced",
+        "trans": [
+            "adj.高级的"
+        ]
+    },
+    {
+        "name": "course",
+        "trans": [
+            "n.课程"
+        ]
+    },
+    {
+        "name": "lesson",
+        "trans": [
+            "n.课程",
+            "n.教训"
+        ]
+    },
+    {
+        "name": "ruler",
+        "trans": [
+            "n.尺子"
+        ]
+    },
+    {
+        "name": "beginner",
+        "trans": [
+            "n.初学者"
+        ]
+    },
+    {
+        "name": "desk",
+        "trans": [
+            "n.书桌"
+        ]
+    },
+    {
+        "name": "level",
+        "trans": [
+            "n.水平",
+            "adj.水平的"
+        ]
+    },
+    {
+        "name": "school",
+        "trans": [
+            "n.学校"
+        ]
+    },
+    {
+        "name": "biology",
+        "trans": [
+            "n.生物学"
+        ]
+    },
+    {
+        "name": "dictionary",
+        "trans": [
+            "n.词典"
+        ]
+    },
+    {
+        "name": "library",
+        "trans": [
+            "n.图书馆"
+        ]
+    },
+    {
+        "name": "science",
+        "trans": [
+            "n.科学"
+        ]
+    },
+    {
+        "name": "blackboard",
+        "trans": [
+            "n.黑板"
+        ]
+    },
+    {
+        "name": "diploma",
+        "trans": [
+            "n.毕业证书"
+        ]
+    },
+    {
+        "name": "mark",
+        "trans": [
+            "n.标记",
+            "v.标记"
+        ]
+    },
+    {
+        "name": "student",
+        "trans": [
+            "n.学生"
+        ]
+    },
+    {
+        "name": "board",
+        "trans": [
+            "n.板",
+            "n.委员会"
+        ]
+    },
+    {
+        "name": "eraser",
+        "trans": [
+            "n.橡皮擦"
+        ]
+    },
+    {
+        "name": "maths/mathematics studies",
+        "trans": [
+            "数学学习",
+            "数学研究"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "n.书籍",
+            "v.预订"
+        ]
+    },
+    {
+        "name": "exam",
+        "trans": [
+            "n.考试"
+        ]
+    },
+    {
+        "name": "examination",
+        "trans": [
+            "n.考试,审查，调查（仔细的）"
+        ]
+    },
+    {
+        "name": "note",
+        "trans": [
+            "n.笔记"
+        ]
+    },
+    {
+        "name": "study",
+        "trans": [
+            "v.学习"
+        ]
+    },
+    {
+        "name": "bookshelf",
+        "trans": [
+            "n.书架"
+        ]
+    },
+    {
+        "name": "geography",
+        "trans": [
+            "n.地理学"
+        ]
+    },
+    {
+        "name": "physics",
+        "trans": [
+            "n.物理学"
+        ]
+    },
+    {
+        "name": "subject",
+        "trans": [
+            "n.科目"
+        ]
+    },
+    {
+        "name": "chemistry",
+        "trans": [
+            "n.化学"
+        ]
+    },
+    {
+        "name": "history",
+        "trans": [
+            "n.历史"
+        ]
+    },
+    {
+        "name": "practice",
+        "trans": [
+            "n.练习"
+        ]
+    },
+    {
+        "name": "teach",
+        "trans": [
+            "v.教授"
+        ]
+    },
+    {
+        "name": "class",
+        "trans": [
+            "n.班级",
+            "n.课堂"
+        ]
+    },
+    {
+        "name": "homework",
+        "trans": [
+            "n.家庭作业"
+        ]
+    },
+    {
+        "name": "practise",
+        "trans": [
+            "v.练习"
+        ]
+    },
+    {
+        "name": "teacher",
+        "trans": [
+            "n.教师",
+            "n.老师"
+        ]
+    },
+    {
+        "name": "classmate",
+        "trans": [
+            "n.同班同学"
+        ]
+    },
+    {
+        "name": "information",
+        "trans": [
+            "n.信息"
+        ]
+    },
+    {
+        "name": "project",
+        "trans": [
+            "n.项目"
+        ]
+    },
+    {
+        "name": "term",
+        "trans": [
+            "n.学期"
+        ]
+    },
+    {
+        "name": "classroom",
+        "trans": [
+            "n.教室"
+        ]
+    },
+    {
+        "name": "instructions",
+        "trans": [
+            "n.指示"
+        ]
+    },
+    {
+        "name": "pupil",
+        "trans": [
+            "n.学生",
+            "n.小学生"
+        ]
+    },
+    {
+        "name": "test",
+        "trans": [
+            "v.测试"
+        ]
+    },
+    {
+        "name": "clever",
+        "trans": [
+            "adj.聪明的"
+        ]
+    },
+    {
+        "name": "know",
+        "trans": [
+            "v.了解",
+            "v.知道"
+        ]
+    },
+    {
+        "name": "read",
+        "trans": [
+            "v.阅读"
+        ]
+    },
+    {
+        "name": "university",
+        "trans": [
+            "n.大学"
+        ]
+    },
+    {
+        "name": "coach",
+        "trans": [
+            "n.教练",
+            "v.训练"
+        ]
+    },
+    {
+        "name": "language",
+        "trans": [
+            "n.语言"
+        ]
+    },
+    {
+        "name": "remember",
+        "trans": [
+            "v.记得",
+            "v.记住"
+        ]
+    },
+    {
+        "name": "college",
+        "trans": [
+            "n.学院"
+        ]
+    },
+    {
+        "name": "learn",
+        "trans": [
+            "v.学习"
+        ]
+    },
+    {
+        "name": "rubber",
+        "trans": [
+            "n.橡皮擦"
+        ]
+    },
+    {
+        "name": "act",
+        "trans": [
+            "n.行为",
+            "v.表演"
+        ]
+    },
+    {
+        "name": "draw",
+        "trans": [
+            "v.画",
+            "v.绘制"
+        ]
+    },
+    {
+        "name": "magazine",
+        "trans": [
+            "n.杂志"
+        ]
+    },
+    {
+        "name": "practise",
+        "trans": [
+            "v.练习"
+        ]
+    },
+    {
+        "name": "actor",
+        "trans": [
+            "n.演员"
+        ]
+    },
+    {
+        "name": "drawing",
+        "trans": [
+            "n.画",
+            "n.绘画"
+        ]
+    },
+    {
+        "name": "MP3 player",
+        "trans": [
+            "n.MP3播放器"
+        ]
+    },
+    {
+        "name": "programme",
+        "trans": [
+            "n.节目",
+            "n.计划"
+        ]
+    },
+    {
+        "name": "adventure",
+        "trans": [
+            "n.冒险"
+        ]
+    },
+    {
+        "name": "disco",
+        "trans": [
+            "n.迪斯科舞厅"
+        ]
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "n.博物馆"
+        ]
+    },
+    {
+        "name": "project",
+        "trans": [
+            "n.项目"
+        ]
+    },
+    {
+        "name": "advertisement",
+        "trans": [
+            "n.广告"
+        ]
+    },
+    {
+        "name": "drum",
+        "trans": [
+            "n.鼓"
+        ]
+    },
+    {
+        "name": "music",
+        "trans": [
+            "n.音乐"
+        ]
+    },
+    {
+        "name": "radio",
+        "trans": [
+            "n.收音机"
+        ]
+    },
+    {
+        "name": "art",
+        "trans": [
+            "n.艺术"
+        ]
+    },
+    {
+        "name": "DVD player",
+        "trans": [
+            "n.DVD播放器"
+        ]
+    },
+    {
+        "name": "musician",
+        "trans": [
+            "n.音乐家"
+        ]
+    },
+    {
+        "name": "read",
+        "trans": [
+            "v.阅读"
+        ]
+    },
+    {
+        "name": "article",
+        "trans": [
+            "n.文章"
+        ]
+    },
+    {
+        "name": "exhibition",
+        "trans": [
+            "n.展览"
+        ]
+    },
+    {
+        "name": "news",
+        "trans": [
+            "n.新闻"
+        ]
+    },
+    {
+        "name": "rock concert",
+        "trans": [
+            "n.摇滚音乐会"
+        ]
+    },
+    {
+        "name": "board game",
+        "trans": [
+            "n.桌游"
+        ]
+    },
+    {
+        "name": "festival",
+        "trans": [
+            "n.节日"
+        ]
+    },
+    {
+        "name": "newspaper",
+        "trans": [
+            "n.报纸"
+        ]
+    },
+    {
+        "name": "screen",
+        "trans": [
+            "n.屏幕"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "n.书籍"
+        ]
+    },
+    {
+        "name": "film",
+        "trans": [
+            "n.电影",
+            "v.拍摄"
+        ]
+    },
+    {
+        "name": "opera",
+        "trans": [
+            "n.歌剧"
+        ]
+    },
+    {
+        "name": "show",
+        "trans": [
+            "n.展示",
+            "n.演出"
+        ]
+    },
+    {
+        "name": "card",
+        "trans": [
+            "n.卡片"
+        ]
+    },
+    {
+        "name": "fun",
+        "trans": [
+            "n.娱乐",
+            "adj.有趣的"
+        ]
+    },
+    {
+        "name": "paint",
+        "trans": [
+            "v.绘画",
+            "v.涂抹"
+        ]
+    },
+    {
+        "name": "sing",
+        "trans": [
+            "v.唱歌"
+        ]
+    },
+    {
+        "name": "cartoon",
+        "trans": [
+            "n.卡通",
+            "n.动画片"
+        ]
+    },
+    {
+        "name": "go out",
+        "trans": [
+            "v.外出"
+        ]
+    },
+    {
+        "name": "painter",
+        "trans": [
+            "n.画家"
+        ]
+    },
+    {
+        "name": "singer",
+        "trans": [
+            "n.歌手"
+        ]
+    },
+    {
+        "name": "CD player",
+        "trans": [
+            "n.CD播放器"
+        ]
+    },
+    {
+        "name": "group",
+        "trans": [
+            "n.团体",
+            "n.组合"
+        ]
+    },
+    {
+        "name": "photograph",
+        "trans": [
+            "n.照片",
+            "v.拍照"
+        ]
+    },
+    {
+        "name": "song",
+        "trans": [
+            "n.歌曲"
+        ]
+    },
+    {
+        "name": "chess",
+        "trans": [
+            "n.国际象棋"
+        ]
+    },
+    {
+        "name": "guitar",
+        "trans": [
+            "n.吉他"
+        ]
+    },
+    {
+        "name": "photographer",
+        "trans": [
+            "n.摄影师"
+        ]
+    },
+    {
+        "name": "television/TV",
+        "trans": [
+            "n.电视"
+        ]
+    },
+    {
+        "name": "cinema",
+        "trans": [
+            "n.电影院"
+        ]
+    },
+    {
+        "name": "hip hop",
+        "trans": [
+            "n.嘻哈"
+        ]
+    },
+    {
+        "name": "photography",
+        "trans": [
+            "n.摄影"
+        ]
+    },
+    {
+        "name": "theatre",
+        "trans": [
+            "n.剧院"
+        ]
+    },
+    {
+        "name": "classical music",
+        "trans": [
+            "adj.古典的",
+            "n.古典音乐"
+        ]
+    },
+    {
+        "name": "instrument",
+        "trans": [
+            "n.乐器"
+        ]
+    },
+    {
+        "name": "piano",
+        "trans": [
+            "n.钢琴"
+        ]
+    },
+    {
+        "name": "ticket",
+        "trans": [
+            "n.票"
+        ]
+    },
+    {
+        "name": "competition",
+        "trans": [
+            "n.竞赛"
+        ]
+    },
+    {
+        "name": "keyboard",
+        "trans": [
+            "n.键盘"
+        ]
+    },
+    {
+        "name": "picture",
+        "trans": [
+            "n.图片"
+        ]
+    },
+    {
+        "name": "video game",
+        "trans": [
+            "n.视频游戏"
+        ]
+    },
+    {
+        "name": "concert",
+        "trans": [
+            "n.音乐会"
+        ]
+    },
+    {
+        "name": "laugh",
+        "trans": [
+            "v.笑"
+        ]
+    },
+    {
+        "name": "play",
+        "trans": [
+            "n.戏剧"
+        ]
+    },
+    {
+        "name": "watch",
+        "trans": [
+            "v.观看"
+        ]
+    },
+    {
+        "name": "dance",
+        "trans": [
+            "n.舞蹈",
+            "v.跳舞"
+        ]
+    },
+    {
+        "name": "listen to",
+        "trans": [
+            "v.听"
+        ]
+    },
+    {
+        "name": "pop music",
+        "trans": [
+            "n.流行音乐"
+        ]
+    },
+    {
+        "name": "dancer",
+        "trans": [
+            "n.舞者"
+        ]
+    },
+    {
+        "name": "look at",
+        "trans": [
+            "v.看"
+        ]
+    },
+    {
+        "name": "look at practice",
+        "trans": [
+            "观察练习",
+            "注视实践"
+        ]
+    },
+    {
+        "name": "aunt",
+        "trans": [
+            "n.姑姑",
+            "n.阿姨"
+        ]
+    },
+    {
+        "name": "girl",
+        "trans": [
+            "n.女孩"
+        ]
+    },
+    {
+        "name": "group",
+        "trans": [
+            "n.群体",
+            "n.组"
+        ]
+    },
+    {
+        "name": "mummy",
+        "trans": [
+            "n.妈妈"
+        ]
+    },
+    {
+        "name": "boy",
+        "trans": [
+            "n.男孩"
+        ]
+    },
+    {
+        "name": "grandchild",
+        "trans": [
+            "n.孙子",
+            "n.孙女"
+        ]
+    },
+    {
+        "name": "guest",
+        "trans": [
+            "n.客人"
+        ]
+    },
+    {
+        "name": "neighbour",
+        "trans": [
+            "n.邻居"
+        ]
+    },
+    {
+        "name": "brother",
+        "trans": [
+            "n.兄弟"
+        ]
+    },
+    {
+        "name": "grandad/granddad",
+        "trans": [
+            "n.爷爷",
+            "n.外公"
+        ]
+    },
+    {
+        "name": "guy",
+        "trans": [
+            "n.家伙"
+        ]
+    },
+    {
+        "name": "parent",
+        "trans": [
+            "n.父母",
+            "n.亲生父母"
+        ]
+    },
+    {
+        "name": "child",
+        "trans": [
+            "n.孩子"
+        ]
+    },
+    {
+        "name": "granddaughter",
+        "trans": [
+            "n.孙女"
+        ]
+    },
+    {
+        "name": "husband",
+        "trans": [
+            "n.丈夫"
+        ]
+    },
+    {
+        "name": "pen-friend",
+        "trans": [
+            "n.笔友"
+        ]
+    },
+    {
+        "name": "cousin",
+        "trans": [
+            "n.堂兄弟姐妹",
+            "n.表兄弟姐妹"
+        ]
+    },
+    {
+        "name": "grandfather",
+        "trans": [
+            "n.祖父",
+            "n.外祖父"
+        ]
+    },
+    {
+        "name": "love",
+        "trans": [
+            "n.爱",
+            "v.爱"
+        ]
+    },
+    {
+        "name": "sister",
+        "trans": [
+            "n.姐妹"
+        ]
+    },
+    {
+        "name": "daddy",
+        "trans": [
+            "n.爸爸"
+        ]
+    },
+    {
+        "name": "grandma",
+        "trans": [
+            "n.奶奶",
+            "n.外婆"
+        ]
+    },
+    {
+        "name": "married",
+        "trans": [
+            "adj.已婚的"
+        ]
+    },
+    {
+        "name": "son",
+        "trans": [
+            "n.儿子"
+        ]
+    },
+    {
+        "name": "daughter",
+        "trans": [
+            "n.女儿"
+        ]
+    },
+    {
+        "name": "grandmother",
+        "trans": [
+            "n.祖母",
+            "n.外祖母"
+        ]
+    },
+    {
+        "name": "Miss",
+        "trans": [
+            "n.小姐"
+        ]
+    },
+    {
+        "name": "surname",
+        "trans": [
+            "n.姓氏"
+        ]
+    },
+    {
+        "name": "family",
+        "trans": [
+            "n.家庭"
+        ]
+    },
+    {
+        "name": "grandpa",
+        "trans": [
+            "n.爷爷",
+            "n.外公"
+        ]
+    },
+    {
+        "name": "mother",
+        "trans": [
+            "n.母亲"
+        ]
+    },
+    {
+        "name": "teenager",
+        "trans": [
+            "n.青少年"
+        ]
+    },
+    {
+        "name": "father",
+        "trans": [
+            "n.父亲"
+        ]
+    },
+    {
+        "name": "grandparent",
+        "trans": [
+            "n.祖父母",
+            "n.外祖父母"
+        ]
+    },
+    {
+        "name": "Mr",
+        "trans": [
+            "n.先生"
+        ]
+    },
+    {
+        "name": "uncle",
+        "trans": [
+            "n.叔叔",
+            "n.舅舅"
+        ]
+    },
+    {
+        "name": "friend",
+        "trans": [
+            "n.朋友"
+        ]
+    },
+    {
+        "name": "grandson",
+        "trans": [
+            "n.孙子"
+        ]
+    },
+    {
+        "name": "Mrs",
+        "trans": [
+            "n.夫人"
+        ]
+    },
+    {
+        "name": "wife",
+        "trans": [
+            "n.妻子"
+        ]
+    },
+    {
+        "name": "friendly",
+        "trans": [
+            "adj.友好的"
+        ]
+    },
+    {
+        "name": "granny",
+        "trans": [
+            "n.奶奶",
+            "n.外婆"
+        ]
+    },
+    {
+        "name": "Ms",
+        "trans": [
+            "n.女士"
+        ]
+    },
+    {
+        "name": "apple",
+        "trans": [
+            "n.苹果"
+        ]
+    },
+    {
+        "name": "chocolate",
+        "trans": [
+            "n.巧克力"
+        ]
+    },
+    {
+        "name": "hungry",
+        "trans": [
+            "adj.饥饿的"
+        ]
+    },
+    {
+        "name": "pizza",
+        "trans": [
+            "n.比萨饼"
+        ]
+    },
+    {
+        "name": "bake",
+        "trans": [
+            "v.烘焙"
+        ]
+    },
+    {
+        "name": "coffee",
+        "trans": [
+            "n.咖啡"
+        ]
+    },
+    {
+        "name": "ice",
+        "trans": [
+            "n.冰"
+        ]
+    },
+    {
+        "name": "plate",
+        "trans": [
+            "n.盘子"
+        ]
+    },
+    {
+        "name": "banana",
+        "trans": [
+            "n.香蕉"
+        ]
+    },
+    {
+        "name": "cola",
+        "trans": [
+            "n.可乐"
+        ]
+    },
+    {
+        "name": "ice cream",
+        "trans": [
+            "n.冰淇淋"
+        ]
+    },
+    {
+        "name": "potato",
+        "trans": [
+            "n.土豆"
+        ]
+    },
+    {
+        "name": "barbecue",
+        "trans": [
+            "n.烧烤"
+        ]
+    },
+    {
+        "name": "cook",
+        "trans": [
+            "n.厨师",
+            "v.烹饪"
+        ]
+    },
+    {
+        "name": "jam",
+        "trans": [
+            "n.果酱"
+        ]
+    },
+    {
+        "name": "rice",
+        "trans": [
+            "n.米饭"
+        ]
+    },
+    {
+        "name": "biscuit",
+        "trans": [
+            "n.饼干"
+        ]
+    },
+    {
+        "name": "cooker",
+        "trans": [
+            "n.炊具"
+        ]
+    },
+    {
+        "name": "juice",
+        "trans": [
+            "n.果汁"
+        ]
+    },
+    {
+        "name": "roast",
+        "trans": [
+            "v.烤",
+            "adj.烤的"
+        ]
+    },
+    {
+        "name": "boil",
+        "trans": [
+            "v.煮沸"
+        ]
+    },
+    {
+        "name": "cream",
+        "trans": [
+            "n.奶油"
+        ]
+    },
+    {
+        "name": "kitchen",
+        "trans": [
+            "n.厨房"
+        ]
+    },
+    {
+        "name": "salad",
+        "trans": [
+            "n.沙拉"
+        ]
+    },
+    {
+        "name": "boiled",
+        "trans": [
+            "adj.煮熟的"
+        ]
+    },
+    {
+        "name": "cup",
+        "trans": [
+            "n.杯子"
+        ]
+    },
+    {
+        "name": "knife",
+        "trans": [
+            "n.刀"
+        ]
+    },
+    {
+        "name": "salt",
+        "trans": [
+            "n.盐"
+        ]
+    },
+    {
+        "name": "bottle",
+        "trans": [
+            "n.瓶子"
+        ]
+    },
+    {
+        "name": "curry",
+        "trans": [
+            "n.咖喱"
+        ]
+    },
+    {
+        "name": "lemon",
+        "trans": [
+            "n.柠檬"
+        ]
+    },
+    {
+        "name": "sandwich",
+        "trans": [
+            "n.三明治"
+        ]
+    },
+    {
+        "name": "bowl",
+        "trans": [
+            "n.碗"
+        ]
+    },
+    {
+        "name": "cut",
+        "trans": [
+            "n.切口"
+        ]
+    },
+    {
+        "name": "lemonade",
+        "trans": [
+            "n.柠檬水"
+        ]
+    },
+    {
+        "name": "sauce",
+        "trans": [
+            "n.酱汁"
+        ]
+    },
+    {
+        "name": "box",
+        "trans": [
+            "n.盒子"
+        ]
+    },
+    {
+        "name": "delicious",
+        "trans": [
+            "adj.美味的"
+        ]
+    },
+    {
+        "name": "lunch",
+        "trans": [
+            "n.午餐"
+        ]
+    },
+    {
+        "name": "sausage",
+        "trans": [
+            "n.香肠"
+        ]
+    },
+    {
+        "name": "bread",
+        "trans": [
+            "n.面包"
+        ]
+    },
+    {
+        "name": "dessert",
+        "trans": [
+            "n.甜点"
+        ]
+    },
+    {
+        "name": "main course",
+        "trans": [
+            "n.主菜"
+        ]
+    },
+    {
+        "name": "slice",
+        "trans": [
+            "n.薄片"
+        ]
+    },
+    {
+        "name": "break",
+        "trans": [
+            "n.休息"
+        ]
+    },
+    {
+        "name": "dinner",
+        "trans": [
+            "n.晚餐"
+        ]
+    },
+    {
+        "name": "meal",
+        "trans": [
+            "n.饭"
+        ]
+    },
+    {
+        "name": "snack",
+        "trans": [
+            "n.小吃"
+        ]
+    },
+    {
+        "name": "breakfast",
+        "trans": [
+            "n.早餐"
+        ]
+    },
+    {
+        "name": "dish",
+        "trans": [
+            "n.盘子"
+        ]
+    },
+    {
+        "name": "meat",
+        "trans": [
+            "n.肉"
+        ]
+    },
+    {
+        "name": "soup",
+        "trans": [
+            "n.汤"
+        ]
+    },
+    {
+        "name": "burger",
+        "trans": [
+            "n.汉堡"
+        ]
+    },
+    {
+        "name": "drink",
+        "trans": [
+            "v.喝"
+        ]
+    },
+    {
+        "name": "melon",
+        "trans": [
+            "n.瓜"
+        ]
+    },
+    {
+        "name": "steak",
+        "trans": [
+            "n.牛排"
+        ]
+    },
+    {
+        "name": "butter",
+        "trans": [
+            "n.黄油"
+        ]
+    },
+    {
+        "name": "eat",
+        "trans": [
+            "v.吃"
+        ]
+    },
+    {
+        "name": "menu",
+        "trans": [
+            "n.菜单"
+        ]
+    },
+    {
+        "name": "strawberry",
+        "trans": [
+            "n.草莓"
+        ]
+    },
+    {
+        "name": "cafe",
+        "trans": [
+            "n.咖啡馆"
+        ]
+    },
+    {
+        "name": "egg",
+        "trans": [
+            "n.鸡蛋"
+        ]
+    },
+    {
+        "name": "milk",
+        "trans": [
+            "n.牛奶"
+        ]
+    },
+    {
+        "name": "sugar",
+        "trans": [
+            "n.糖"
+        ]
+    },
+    {
+        "name": "cafeteria",
+        "trans": [
+            "n.自助餐厅"
+        ]
+    },
+    {
+        "name": "fish",
+        "trans": [
+            "n.鱼"
+        ]
+    },
+    {
+        "name": "mineral water",
+        "trans": [
+            "矿泉水"
+        ]
+    },
+    {
+        "name": "sweet",
+        "trans": [
+            "n.糖果",
+            "adj.甜的"
+        ]
+    },
+    {
+        "name": "cake",
+        "trans": [
+            "n.蛋糕"
+        ]
+    },
+    {
+        "name": "food",
+        "trans": [
+            "n.食物"
+        ]
+    },
+    {
+        "name": "mushroom",
+        "trans": [
+            "n.蘑菇"
+        ]
+    },
+    {
+        "name": "tea",
+        "trans": [
+            "n.茶"
+        ]
+    },
+    {
+        "name": "can",
+        "trans": [
+            "n.罐头"
+        ]
+    },
+    {
+        "name": "fork",
+        "trans": [
+            "n.叉子"
+        ]
+    },
+    {
+        "name": "oil",
+        "trans": [
+            "n.油"
+        ]
+    },
+    {
+        "name": "thirsty",
+        "trans": [
+            "adj.口渴的"
+        ]
+    },
+    {
+        "name": "candy",
+        "trans": [
+            "n.糖果"
+        ]
+    },
+    {
+        "name": "fridge",
+        "trans": [
+            "n.冰箱"
+        ]
+    },
+    {
+        "name": "omelette",
+        "trans": [
+            "n.煎蛋卷"
+        ]
+    },
+    {
+        "name": "toast",
+        "trans": [
+            "n.烤面包"
+        ]
+    },
+    {
+        "name": "carrot",
+        "trans": [
+            "n.胡萝卜"
+        ]
+    },
+    {
+        "name": "fried",
+        "trans": [
+            "adj.油炸的"
+        ]
+    },
+    {
+        "name": "onion",
+        "trans": [
+            "n.洋葱"
+        ]
+    },
+    {
+        "name": "tomato",
+        "trans": [
+            "n.番茄"
+        ]
+    },
+    {
+        "name": "cereal",
+        "trans": [
+            "n.谷类食品"
+        ]
+    },
+    {
+        "name": "fruit",
+        "trans": [
+            "n.水果"
+        ]
+    },
+    {
+        "name": "orange",
+        "trans": [
+            "n.橙子"
+        ]
+    },
+    {
+        "name": "vegetable",
+        "trans": [
+            "n.蔬菜"
+        ]
+    },
+    {
+        "name": "cheese",
+        "trans": [
+            "n.奶酪"
+        ]
+    },
+    {
+        "name": "garlic",
+        "trans": [
+            "n.大蒜"
+        ]
+    },
+    {
+        "name": "pasta",
+        "trans": [
+            "n.面食"
+        ]
+    },
+    {
+        "name": "waiter",
+        "trans": [
+            "n.服务员"
+        ]
+    },
+    {
+        "name": "chef",
+        "trans": [
+            "n.厨师"
+        ]
+    },
+    {
+        "name": "glass",
+        "trans": [
+            "n.玻璃杯"
+        ]
+    },
+    {
+        "name": "pear",
+        "trans": [
+            "n.梨"
+        ]
+    },
+    {
+        "name": "waitress",
+        "trans": [
+            "n.女服务员"
+        ]
+    },
+    {
+        "name": "chicken",
+        "trans": [
+            "n.鸡肉"
+        ]
+    },
+    {
+        "name": "grape",
+        "trans": [
+            "n.葡萄"
+        ]
+    },
+    {
+        "name": "pepper",
+        "trans": [
+            "n.胡椒"
+        ]
+    },
+    {
+        "name": "wash up",
+        "trans": [
+            "洗碗"
+        ]
+    },
+    {
+        "name": "chilli",
+        "trans": [
+            "n.辣椒"
+        ]
+    },
+    {
+        "name": "grilled",
+        "trans": [
+            "adj.烤的"
+        ]
+    },
+    {
+        "name": "picnic",
+        "trans": [
+            "n.野餐"
+        ]
+    },
+    {
+        "name": "yoghurt",
+        "trans": [
+            "n.酸奶"
+        ]
+    },
+    {
+        "name": "chips",
+        "trans": [
+            "n.薯条"
+        ]
+    },
+    {
+        "name": "honey",
+        "trans": [
+            "n.蜂蜜"
+        ]
+    },
+    {
+        "name": "piece of cake",
+        "trans": [
+            "一块蛋糕"
+        ]
+    },
+    {
+        "name": "accident",
+        "trans": [
+            "n.事故"
+        ]
+    },
+    {
+        "name": "danger",
+        "trans": [
+            "n.危险"
+        ]
+    },
+    {
+        "name": "hair",
+        "trans": [
+            "n.头发"
+        ]
+    },
+    {
+        "name": "problem",
+        "trans": [
+            "n.问题"
+        ]
+    },
+    {
+        "name": "ambulance",
+        "trans": [
+            "n.救护车"
+        ]
+    },
+    {
+        "name": "dangerous",
+        "trans": [
+            "adj.危险的"
+        ]
+    },
+    {
+        "name": "hand",
+        "trans": [
+            "n.手"
+        ]
+    },
+    {
+        "name": "rest",
+        "trans": [
+            "n.休息"
+        ]
+    },
+    {
+        "name": "appointment",
+        "trans": [
+            "n.约会"
+        ]
+    },
+    {
+        "name": "dead",
+        "trans": [
+            "adj.死的"
+        ]
+    },
+    {
+        "name": "head",
+        "trans": [
+            "n.头"
+        ]
+    },
+    {
+        "name": "run",
+        "trans": [
+            "v.跑步"
+        ]
+    },
+    {
+        "name": "arm",
+        "trans": [
+            "n.手臂"
+        ]
+    },
+    {
+        "name": "dentist",
+        "trans": [
+            "n.牙医"
+        ]
+    },
+    {
+        "name": "health",
+        "trans": [
+            "n.健康"
+        ]
+    },
+    {
+        "name": "sick",
+        "trans": [
+            "adj.生病的"
+        ]
+    },
+    {
+        "name": "baby",
+        "trans": [
+            "n.婴儿"
+        ]
+    },
+    {
+        "name": "die",
+        "trans": [
+            "v.死亡"
+        ]
+    },
+    {
+        "name": "hear",
+        "trans": [
+            "v.听见"
+        ]
+    },
+    {
+        "name": "soap",
+        "trans": [
+            "n.肥皂"
+        ]
+    },
+    {
+        "name": "back",
+        "trans": [
+            "n.背部"
+        ]
+    },
+    {
+        "name": "doctor",
+        "trans": [
+            "n.医生"
+        ]
+    },
+    {
+        "name": "heart",
+        "trans": [
+            "n.心脏"
+        ]
+    },
+    {
+        "name": "stomach",
+        "trans": [
+            "n.胃"
+        ]
+    },
+    {
+        "name": "blood",
+        "trans": [
+            "n.血液"
+        ]
+    },
+    {
+        "name": "hospital",
+        "trans": [
+            "n.医院"
+        ]
+    },
+    {
+        "name": "stomach ache",
+        "trans": [
+            "n.胃痛"
+        ]
+    },
+    {
+        "name": "body",
+        "trans": [
+            "n.身体"
+        ]
+    },
+    {
+        "name": "ear",
+        "trans": [
+            "n.耳朵"
+        ]
+    },
+    {
+        "name": "hurt",
+        "trans": [
+            "v.受伤"
+        ]
+    },
+    {
+        "name": "swim",
+        "trans": [
+            "v.游泳"
+        ]
+    },
+    {
+        "name": "brain",
+        "trans": [
+            "大脑"
+        ]
+    },
+    {
+        "name": "exercise",
+        "trans": [
+            "锻炼"
+        ]
+    },
+    {
+        "name": "ill",
+        "trans": [
+            "生病的"
+        ]
+    },
+    {
+        "name": "temperature",
+        "trans": [
+            "体温"
+        ]
+    },
+    {
+        "name": "break",
+        "trans": [
+            "v.打破"
+        ]
+    },
+    {
+        "name": "eye",
+        "trans": [
+            "眼睛"
+        ]
+    },
+    {
+        "name": "leg",
+        "trans": [
+            "腿"
+        ]
+    },
+    {
+        "name": "tired",
+        "trans": [
+            "疲劳的"
+        ]
+    },
+    {
+        "name": "check",
+        "trans": [
+            "v.检查"
+        ]
+    },
+    {
+        "name": "face",
+        "trans": [
+            "脸"
+        ]
+    },
+    {
+        "name": "lie down",
+        "trans": [
+            "躺下"
+        ]
+    },
+    {
+        "name": "tooth",
+        "trans": [
+            "牙齿"
+        ]
+    },
+    {
+        "name": "chemist",
+        "trans": [
+            "化学家"
+        ]
+    },
+    {
+        "name": "fall",
+        "trans": [
+            "v.摔倒"
+        ]
+    },
+    {
+        "name": "medicine",
+        "trans": [
+            "药物"
+        ]
+    },
+    {
+        "name": "toothache",
+        "trans": [
+            "牙痛"
+        ]
+    },
+    {
+        "name": "clean",
+        "trans": [
+            "adj.干净的",
+            "v.清洁"
+        ]
+    },
+    {
+        "name": "feel",
+        "trans": [
+            "v.感觉"
+        ]
+    },
+    {
+        "name": "neck",
+        "trans": [
+            "脖子"
+        ]
+    },
+    {
+        "name": "toothbrush",
+        "trans": [
+            "牙刷"
+        ]
+    },
+    {
+        "name": "cold",
+        "trans": [
+            "n.感冒"
+        ]
+    },
+    {
+        "name": "finger",
+        "trans": [
+            "手指"
+        ]
+    },
+    {
+        "name": "nose",
+        "trans": [
+            "鼻子"
+        ]
+    },
+    {
+        "name": "walk",
+        "trans": [
+            "散步"
+        ]
+    },
+    {
+        "name": "comb",
+        "trans": [
+            "n.梳子"
+        ]
+    },
+    {
+        "name": "fit",
+        "trans": [
+            "适合"
+        ]
+    },
+    {
+        "name": "nurse",
+        "trans": [
+            "护士"
+        ]
+    },
+    {
+        "name": "well",
+        "trans": [
+            "adj.健康的"
+        ]
+    },
+    {
+        "name": "cut",
+        "trans": [
+            "v.切割"
+        ]
+    },
+    {
+        "name": "foot",
+        "trans": [
+            "脚"
+        ]
+    },
+    {
+        "name": "pain",
+        "trans": [
+            "疼痛"
+        ]
+    },
+    {
+        "name": "barbecue",
+        "trans": [
+            "n.烧烤"
+        ]
+    },
+    {
+        "name": "CD player",
+        "trans": [
+            "CD播放器"
+        ]
+    },
+    {
+        "name": "go shopping",
+        "trans": [
+            "去购物"
+        ]
+    },
+    {
+        "name": "music",
+        "trans": [
+            "n.音乐"
+        ]
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "n.海滩"
+        ]
+    },
+    {
+        "name": "club",
+        "trans": [
+            "n.俱乐部"
+        ]
+    },
+    {
+        "name": "guitar",
+        "trans": [
+            "n.吉他"
+        ]
+    },
+    {
+        "name": "musician",
+        "trans": [
+            "n.音乐家"
+        ]
+    },
+    {
+        "name": "bicycle",
+        "trans": [
+            "n.自行车"
+        ]
+    },
+    {
+        "name": "collect",
+        "trans": [
+            "v.收集"
+        ]
+    },
+    {
+        "name": "hobby",
+        "trans": [
+            "n.爱好"
+        ]
+    },
+    {
+        "name": "paint",
+        "trans": [
+            "n.颜料",
+            "v.绘画"
+        ]
+    },
+    {
+        "name": "bike",
+        "trans": [
+            "n.自行车"
+        ]
+    },
+    {
+        "name": "computer",
+        "trans": [
+            "n.计算机"
+        ]
+    },
+    {
+        "name": "holidays",
+        "trans": [
+            "n.假期"
+        ]
+    },
+    {
+        "name": "park",
+        "trans": [
+            "n.公园"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "n.书籍"
+        ]
+    },
+    {
+        "name": "cycling",
+        "trans": [
+            "n.骑自行车"
+        ]
+    },
+    {
+        "name": "join",
+        "trans": [
+            "v.加入"
+        ]
+    },
+    {
+        "name": "party",
+        "trans": [
+            "n.聚会"
+        ]
+    },
+    {
+        "name": "camera",
+        "trans": [
+            "n.相机"
+        ]
+    },
+    {
+        "name": "dance",
+        "trans": [
+            "n.舞蹈",
+            "v.跳舞"
+        ]
+    },
+    {
+        "name": "magazine",
+        "trans": [
+            "n.杂志"
+        ]
+    },
+    {
+        "name": "photograph",
+        "trans": [
+            "n.照片",
+            "v.拍照"
+        ]
+    },
+    {
+        "name": "camp",
+        "trans": [
+            "n.营地"
+        ]
+    },
+    {
+        "name": "draw",
+        "trans": [
+            "v.画画"
+        ]
+    },
+    {
+        "name": "member",
+        "trans": [
+            "n.成员"
+        ]
+    },
+    {
+        "name": "picnic",
+        "trans": [
+            "n.野餐"
+        ]
+    },
+    {
+        "name": "camping",
+        "trans": [
+            "n.露营"
+        ]
+    },
+    {
+        "name": "DVD player",
+        "trans": [
+            "DVD播放器"
+        ]
+    },
+    {
+        "name": "MP3 player",
+        "trans": [
+            "MP3播放器"
+        ]
+    },
+    {
+        "name": "quiz",
+        "trans": [
+            "n.测验"
+        ]
+    },
+    {
+        "name": "campsite",
+        "trans": [
+            "n.露营地"
+        ]
+    },
+    {
+        "name": "festival",
+        "trans": [
+            "n.节日"
+        ]
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "n.博物馆"
+        ]
+    },
+    {
+        "name": "tent",
+        "trans": [
+            "n.帐篷"
+        ]
+    },
+    {
+        "name": "go out",
+        "trans": [
+            "出去"
+        ]
+    },
+    {
+        "name": "video game",
+        "trans": [
+            "n.电子游戏"
+        ]
+    },
+    {
+        "name": "address",
+        "trans": [
+            "n.地址"
+        ]
+    },
+    {
+        "name": "clock",
+        "trans": [
+            "n.时钟"
+        ]
+    },
+    {
+        "name": "furniture",
+        "trans": [
+            "n.家具"
+        ]
+    },
+    {
+        "name": "oven",
+        "trans": [
+            "n.烤箱"
+        ]
+    },
+    {
+        "name": "apartment",
+        "trans": [
+            "n.公寓"
+        ]
+    },
+    {
+        "name": "computer",
+        "trans": [
+            "n.计算机"
+        ]
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "n.车库"
+        ]
+    },
+    {
+        "name": "pillow",
+        "trans": [
+            "n.枕头"
+        ]
+    },
+    {
+        "name": "armchair",
+        "trans": [
+            "n.扶手椅"
+        ]
+    },
+    {
+        "name": "cooker",
+        "trans": [
+            "n.炊具"
+        ]
+    },
+    {
+        "name": "garden",
+        "trans": [
+            "n.花园"
+        ]
+    },
+    {
+        "name": "refrigerator",
+        "trans": [
+            "n.冰箱"
+        ]
+    },
+    {
+        "name": "bathtub",
+        "trans": [
+            "n.浴缸"
+        ]
+    },
+    {
+        "name": "cupboard",
+        "trans": [
+            "n.橱柜"
+        ]
+    },
+    {
+        "name": "gas",
+        "trans": [
+            "n.气体"
+        ]
+    },
+    {
+        "name": "roof",
+        "trans": [
+            "n.屋顶"
+        ]
+    },
+    {
+        "name": "bathroom",
+        "trans": [
+            "n.浴室"
+        ]
+    },
+    {
+        "name": "curtain",
+        "trans": [
+            "n.窗帘"
+        ]
+    },
+    {
+        "name": "gate",
+        "trans": [
+            "n.大门"
+        ]
+    },
+    {
+        "name": "room",
+        "trans": [
+            "n.房间"
+        ]
+    },
+    {
+        "name": "bed",
+        "trans": [
+            "n.床"
+        ]
+    },
+    {
+        "name": "desk",
+        "trans": [
+            "n.写字台"
+        ]
+    },
+    {
+        "name": "hall",
+        "trans": [
+            "n.大厅"
+        ]
+    },
+    {
+        "name": "rubbish",
+        "trans": [
+            "n.垃圾"
+        ]
+    },
+    {
+        "name": "bedroom",
+        "trans": [
+            "n.卧室"
+        ]
+    },
+    {
+        "name": "dining room",
+        "trans": [
+            "n.餐厅"
+        ]
+    },
+    {
+        "name": "heating",
+        "trans": [
+            "n.供暖"
+        ]
+    },
+    {
+        "name": "safe",
+        "trans": [
+            "adj.安全的"
+        ]
+    },
+    {
+        "name": "bin",
+        "trans": [
+            "n.垃圾箱"
+        ]
+    },
+    {
+        "name": "door",
+        "trans": [
+            "n.门"
+        ]
+    },
+    {
+        "name": "home",
+        "trans": [
+            "n.家"
+        ]
+    },
+    {
+        "name": "shelf",
+        "trans": [
+            "n.书架"
+        ]
+    },
+    {
+        "name": "blanket",
+        "trans": [
+            "n.毯子"
+        ]
+    },
+    {
+        "name": "downstairs",
+        "trans": [
+            "adv.楼下"
+        ]
+    },
+    {
+        "name": "house",
+        "trans": [
+            "n.房屋"
+        ]
+    },
+    {
+        "name": "shower",
+        "trans": [
+            "n.淋浴"
+        ]
+    },
+    {
+        "name": "bookcase",
+        "trans": [
+            "n.书柜"
+        ]
+    },
+    {
+        "name": "drawer",
+        "trans": [
+            "n.抽屉"
+        ]
+    },
+    {
+        "name": "key",
+        "trans": [
+            "n.钥匙"
+        ]
+    },
+    {
+        "name": "sink",
+        "trans": [
+            "n.水槽"
+        ]
+    },
+    {
+        "name": "bookshelf",
+        "trans": [
+            "n.书架"
+        ]
+    },
+    {
+        "name": "DVD player",
+        "trans": [
+            "n.DVD播放器"
+        ]
+    },
+    {
+        "name": "kitchen",
+        "trans": [
+            "n.厨房"
+        ]
+    },
+    {
+        "name": "sitting room",
+        "trans": [
+            "n.客厅"
+        ]
+    },
+    {
+        "name": "bowl",
+        "trans": [
+            "n.碗"
+        ]
+    },
+    {
+        "name": "entrance",
+        "trans": [
+            "n.入口"
+        ]
+    },
+    {
+        "name": "lamp",
+        "trans": [
+            "n.灯"
+        ]
+    },
+    {
+        "name": "sofa",
+        "trans": [
+            "n.沙发"
+        ]
+    },
+    {
+        "name": "box",
+        "trans": [
+            "n.盒子"
+        ]
+    },
+    {
+        "name": "flat",
+        "trans": [
+            "n.公寓"
+        ]
+    },
+    {
+        "name": "light",
+        "trans": [
+            "n.灯光"
+        ]
+    },
+    {
+        "name": "stay",
+        "trans": [
+            "v.停留"
+        ]
+    },
+    {
+        "name": "carpet",
+        "trans": [
+            "n.地毯"
+        ]
+    },
+    {
+        "name": "floor",
+        "trans": [
+            "n.地板"
+        ]
+    },
+    {
+        "name": "live",
+        "trans": [
+            "v.居住"
+        ]
+    },
+    {
+        "name": "toilet",
+        "trans": [
+            "n.厕所"
+        ]
+    },
+    {
+        "name": "chair",
+        "trans": [
+            "n.椅子"
+        ]
+    },
+    {
+        "name": "fridge",
+        "trans": [
+            "n.冰箱"
+        ]
+    },
+    {
+        "name": "living room",
+        "trans": [
+            "n.起居室"
+        ]
+    },
+    {
+        "name": "towel",
+        "trans": [
+            "n.毛巾"
+        ]
+    },
+    {
+        "name": "centimetre",
+        "trans": [
+            "n.厘米"
+        ]
+    },
+    {
+        "name": "half metre/meter",
+        "trans": [
+            "n.半米 / 米"
+        ]
+    },
+    {
+        "name": "temperature",
+        "trans": [
+            "n.温度"
+        ]
+    },
+    {
+        "name": "centimeter/cm",
+        "trans": [
+            "n.厘米"
+        ]
+    },
+    {
+        "name": "hour",
+        "trans": [
+            "n.小时"
+        ]
+    },
+    {
+        "name": "minute",
+        "trans": [
+            "n.分钟"
+        ]
+    },
+    {
+        "name": "week",
+        "trans": [
+            "n.周"
+        ]
+    },
+    {
+        "name": "day",
+        "trans": [
+            "n.天"
+        ]
+    },
+    {
+        "name": "kilogram/kg",
+        "trans": [
+            "n.千克 / 公斤"
+        ]
+    },
+    {
+        "name": "kilogramme/kg",
+        "trans": [
+            "n.千克 / 公斤"
+        ]
+    },
+    {
+        "name": "moment",
+        "trans": [
+            "n.瞬间"
+        ]
+    },
+    {
+        "name": "year",
+        "trans": [
+            "n.年"
+        ]
+    },
+    {
+        "name": "degree",
+        "trans": [
+            "n.度"
+        ]
+    },
+    {
+        "name": "kilometre/km",
+        "trans": [
+            "n.公里"
+        ]
+    },
+    {
+        "name": "kilometer/km",
+        "trans": [
+            "n.公里"
+        ]
+    },
+    {
+        "name": "quarter",
+        "trans": [
+            "n.四分之一"
+        ]
+    },
+    {
+        "name": "gramme",
+        "trans": [
+            "n.克"
+        ]
+    },
+    {
+        "name": "litre/liter",
+        "trans": [
+            "n.升"
+        ]
+    },
+    {
+        "name": "second",
+        "trans": [
+            "n.秒"
+        ]
+    },
+    {
+        "name": "able",
+        "trans": [
+            "adj.能够的"
+        ]
+    },
+    {
+        "name": "difficult",
+        "trans": [
+            "adj.困难的"
+        ]
+    },
+    {
+        "name": "kind",
+        "trans": [
+            "adj.友善的"
+        ]
+    },
+    {
+        "name": "soft",
+        "trans": [
+            "adj.柔软的"
+        ]
+    },
+    {
+        "name": "afraid",
+        "trans": [
+            "adj.害怕的"
+        ]
+    },
+    {
+        "name": "excellent",
+        "trans": [
+            "adj.优秀的"
+        ]
+    },
+    {
+        "name": "lovely",
+        "trans": [
+            "adj.可爱的"
+        ]
+    },
+    {
+        "name": "sorry",
+        "trans": [
+            "adj.抱歉的"
+        ]
+    },
+    {
+        "name": "alone",
+        "trans": [
+            "adj.独自的"
+        ]
+    },
+    {
+        "name": "famous",
+        "trans": [
+            "adj.著名的"
+        ]
+    },
+    {
+        "name": "lucky",
+        "trans": [
+            "adj.幸运的"
+        ]
+    },
+    {
+        "name": "special",
+        "trans": [
+            "adj.特别的"
+        ]
+    },
+    {
+        "name": "amazing",
+        "trans": [
+            "adj.令人惊叹的"
+        ]
+    },
+    {
+        "name": "fast",
+        "trans": [
+            "adj.快的"
+        ]
+    },
+    {
+        "name": "married",
+        "trans": [
+            "adj.已婚的"
+        ]
+    },
+    {
+        "name": "strange",
+        "trans": [
+            "adj.奇怪的"
+        ]
+    },
+    {
+        "name": "angry",
+        "trans": [
+            "adj.生气的"
+        ]
+    },
+    {
+        "name": "favourite",
+        "trans": [
+            "adj.最喜欢的"
+        ]
+    },
+    {
+        "name": "modern",
+        "trans": [
+            "adj.现代的"
+        ]
+    },
+    {
+        "name": "strong",
+        "trans": [
+            "adj.强壮的"
+        ]
+    },
+    {
+        "name": "bad",
+        "trans": [
+            "adj.糟糕的"
+        ]
+    },
+    {
+        "name": "fine",
+        "trans": [
+            "adj.好的"
+        ]
+    },
+    {
+        "name": "nice",
+        "trans": [
+            "adj.好的"
+        ]
+    },
+    {
+        "name": "sure",
+        "trans": [
+            "adj.确信的"
+        ]
+    },
+    {
+        "name": "beautiful",
+        "trans": [
+            "adj.美丽的"
+        ]
+    },
+    {
+        "name": "free",
+        "trans": [
+            "adj.自由的"
+        ]
+    },
+    {
+        "name": "noisy",
+        "trans": [
+            "adj.吵闹的"
+        ]
+    },
+    {
+        "name": "sweet",
+        "trans": [
+            "adj.甜的"
+        ]
+    },
+    {
+        "name": "better",
+        "trans": [
+            "adj.更好的"
+        ]
+    },
+    {
+        "name": "friendly",
+        "trans": [
+            "adj.友好的"
+        ]
+    },
+    {
+        "name": "old",
+        "trans": [
+            "adj.老的"
+        ]
+    },
+    {
+        "name": "tall",
+        "trans": [
+            "adj.高的"
+        ]
+    },
+    {
+        "name": "big",
+        "trans": [
+            "adj.大的"
+        ]
+    },
+    {
+        "name": "funny",
+        "trans": [
+            "adj.滑稽的"
+        ]
+    },
+    {
+        "name": "pleasant",
+        "trans": [
+            "adj.愉快的"
+        ]
+    },
+    {
+        "name": "terrible",
+        "trans": [
+            "adj.糟糕的"
+        ]
+    },
+    {
+        "name": "bored",
+        "trans": [
+            "adj.无聊的"
+        ]
+    },
+    {
+        "name": "good",
+        "trans": [
+            "adj.好的"
+        ]
+    },
+    {
+        "name": "poor",
+        "trans": [
+            "adj.贫穷的"
+        ]
+    },
+    {
+        "name": "tired",
+        "trans": [
+            "adj.疲倦的"
+        ]
+    },
+    {
+        "name": "boring",
+        "trans": [
+            "adj.无聊的"
+        ]
+    },
+    {
+        "name": "great",
+        "trans": [
+            "adj.伟大的"
+        ]
+    },
+    {
+        "name": "pretty",
+        "trans": [
+            "adj.漂亮的"
+        ]
+    },
+    {
+        "name": "unhappy",
+        "trans": [
+            "adj.不快乐的"
+        ]
+    },
+    {
+        "name": "brave",
+        "trans": [
+            "adj.勇敢的"
+        ]
+    },
+    {
+        "name": "happy",
+        "trans": [
+            "adj.快乐的"
+        ]
+    },
+    {
+        "name": "quick",
+        "trans": [
+            "adj.快的"
+        ]
+    },
+    {
+        "name": "useful",
+        "trans": [
+            "adj.有用的"
+        ]
+    },
+    {
+        "name": "brilliant",
+        "trans": [
+            "adj.出色的"
+        ]
+    },
+    {
+        "name": "hard",
+        "trans": [
+            "adj.困难的"
+        ]
+    },
+    {
+        "name": "quiet",
+        "trans": [
+            "adj.安静的"
+        ]
+    },
+    {
+        "name": "well",
+        "trans": [
+            "adj.好的"
+        ]
+    },
+    {
+        "name": "busy",
+        "trans": [
+            "adj.忙碌的"
+        ]
+    },
+    {
+        "name": "heavy",
+        "trans": [
+            "adj.重的"
+        ]
+    },
+    {
+        "name": "ready",
+        "trans": [
+            "adj.准备好的"
+        ]
+    },
+    {
+        "name": "worried",
+        "trans": [
+            "adj.担心的"
+        ]
+    },
+    {
+        "name": "careful",
+        "trans": [
+            "adj.小心的"
+        ]
+    },
+    {
+        "name": "high",
+        "trans": [
+            "adj.高的"
+        ]
+    },
+    {
+        "name": "real",
+        "trans": [
+            "adj.真实的"
+        ]
+    },
+    {
+        "name": "wrong",
+        "trans": [
+            "adj.错误的"
+        ]
+    },
+    {
+        "name": "clear",
+        "trans": [
+            "adj.清晰的"
+        ]
+    },
+    {
+        "name": "hungry",
+        "trans": [
+            "adj.饥饿的"
+        ]
+    },
+    {
+        "name": "rich",
+        "trans": [
+            "adj.富有的"
+        ]
+    },
+    {
+        "name": "young",
+        "trans": [
+            "adj.年轻的"
+        ]
+    },
+    {
+        "name": "clever",
+        "trans": [
+            "adj.聪明的"
+        ]
+    },
+    {
+        "name": "important",
+        "trans": [
+            "adj.重要的"
+        ]
+    },
+    {
+        "name": "right",
+        "trans": [
+            "adj.正确的"
+        ]
+    },
+    {
+        "name": "cool",
+        "trans": [
+            "adj.酷的"
+        ]
+    },
+    {
+        "name": "interested",
+        "trans": [
+            "adj.感兴趣的"
+        ]
+    },
+    {
+        "name": "slow",
+        "trans": [
+            "adj.慢的"
+        ]
+    },
+    {
+        "name": "different",
+        "trans": [
+            "adj.不同的"
+        ]
+    },
+    {
+        "name": "interesting",
+        "trans": [
+            "adj.有趣的"
+        ]
+    },
+    {
+        "name": "small",
+        "trans": [
+            "adj.小的"
+        ]
+    },
+    {
+        "name": "apartment",
+        "trans": [
+            "公寓（楼）"
+        ]
+    },
+    {
+        "name": "department store",
+        "trans": [
+            "百货商店"
+        ]
+    },
+    {
+        "name": "hotel",
+        "trans": [
+            "酒店"
+        ]
+    },
+    {
+        "name": "shop",
+        "trans": [
+            "商店"
+        ]
+    },
+    {
+        "name": "bank",
+        "trans": [
+            "银行"
+        ]
+    },
+    {
+        "name": "disco",
+        "trans": [
+            "迪厅"
+        ]
+    },
+    {
+        "name": "house",
+        "trans": [
+            "房屋"
+        ]
+    },
+    {
+        "name": "sports centre",
+        "trans": [
+            "体育中心"
+        ]
+    },
+    {
+        "name": "block",
+        "trans": [
+            "大楼"
+        ]
+    },
+    {
+        "name": "elevator",
+        "trans": [
+            "电梯"
+        ]
+    },
+    {
+        "name": "library",
+        "trans": [
+            "图书馆"
+        ]
+    },
+    {
+        "name": "stadium",
+        "trans": [
+            "体育场"
+        ]
+    },
+    {
+        "name": "bookshop",
+        "trans": [
+            "书店"
+        ]
+    },
+    {
+        "name": "entrance",
+        "trans": [
+            "入口"
+        ]
+    },
+    {
+        "name": "lift",
+        "trans": [
+            "电梯"
+        ]
+    },
+    {
+        "name": "supermarket",
+        "trans": [
+            "超市"
+        ]
+    },
+    {
+        "name": "bookstore",
+        "trans": [
+            "书店"
+        ]
+    },
+    {
+        "name": "exit",
+        "trans": [
+            "出口"
+        ]
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "博物馆"
+        ]
+    },
+    {
+        "name": "swimming pool",
+        "trans": [
+            "游泳池"
+        ]
+    },
+    {
+        "name": "building",
+        "trans": [
+            "建筑物"
+        ]
+    },
+    {
+        "name": "factory",
+        "trans": [
+            "工厂"
+        ]
+    },
+    {
+        "name": "office",
+        "trans": [
+            "办公室"
+        ]
+    },
+    {
+        "name": "theatre",
+        "trans": [
+            "剧院"
+        ]
+    },
+    {
+        "name": "cafe",
+        "trans": [
+            "咖啡馆"
+        ]
+    },
+    {
+        "name": "flat",
+        "trans": [
+            "公寓"
+        ]
+    },
+    {
+        "name": "pharmacy",
+        "trans": [
+            "药店"
+        ]
+    },
+    {
+        "name": "university",
+        "trans": [
+            "大学"
+        ]
+    },
+    {
+        "name": "cafeteria",
+        "trans": [
+            "自助餐厅"
+        ]
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "车库"
+        ]
+    },
+    {
+        "name": "police station",
+        "trans": [
+            "警察局"
+        ]
+    },
+    {
+        "name": "castle",
+        "trans": [
+            "城堡"
+        ]
+    },
+    {
+        "name": "grocery store",
+        "trans": [
+            "杂货店"
+        ]
+    },
+    {
+        "name": "post office",
+        "trans": [
+            "邮局"
+        ]
+    },
+    {
+        "name": "cinema",
+        "trans": [
+            "电影院"
+        ]
+    },
+    {
+        "name": "guest-house",
+        "trans": [
+            "招待所"
+        ]
+    },
+    {
+        "name": "railway station",
+        "trans": [
+            "火车站"
+        ]
+    },
+    {
+        "name": "college",
+        "trans": [
+            "大学"
+        ]
+    },
+    {
+        "name": "hospital",
+        "trans": [
+            "医院"
+        ]
+    },
+    {
+        "name": "school",
+        "trans": [
+            "学校"
+        ]
+    },
+    {
+        "name": "area",
+        "trans": [
+            "n.地区"
+        ]
+    },
+    {
+        "name": "forest",
+        "trans": [
+            "n.森林"
+        ]
+    },
+    {
+        "name": "path",
+        "trans": [
+            "n.小径"
+        ]
+    },
+    {
+        "name": "sky",
+        "trans": [
+            "n.天空"
+        ]
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "n.海滩"
+        ]
+    },
+    {
+        "name": "hill",
+        "trans": [
+            "n.小山"
+        ]
+    },
+    {
+        "name": "railway",
+        "trans": [
+            "n.铁路"
+        ]
+    },
+    {
+        "name": "village",
+        "trans": [
+            "n.村庄"
+        ]
+    },
+    {
+        "name": "campsite",
+        "trans": [
+            "n.露营地"
+        ]
+    },
+    {
+        "name": "island",
+        "trans": [
+            "n.岛屿"
+        ]
+    },
+    {
+        "name": "rainforest",
+        "trans": [
+            "n.热带雨林"
+        ]
+    },
+    {
+        "name": "wood",
+        "trans": [
+            "n.森林"
+        ]
+    },
+    {
+        "name": "farm",
+        "trans": [
+            "n.农场"
+        ]
+    },
+    {
+        "name": "lake",
+        "trans": [
+            "n.湖泊"
+        ]
+    },
+    {
+        "name": "river",
+        "trans": [
+            "n.河流"
+        ]
+    },
+    {
+        "name": "field",
+        "trans": [
+            "n.田地"
+        ]
+    },
+    {
+        "name": "mountain",
+        "trans": [
+            "n.山"
+        ]
+    },
+    {
+        "name": "sea",
+        "trans": [
+            "n.海洋"
+        ]
+    },
+    {
+        "name": "airport",
+        "trans": [
+            "n.机场"
+        ]
+    },
+    {
+        "name": "city centre",
+        "trans": [
+            "n.市中心"
+        ]
+    },
+    {
+        "name": "petrol station",
+        "trans": [
+            "n.加油站"
+        ]
+    },
+    {
+        "name": "station",
+        "trans": [
+            "n.车站"
+        ]
+    },
+    {
+        "name": "bridge",
+        "trans": [
+            "n.桥梁"
+        ]
+    },
+    {
+        "name": "corner",
+        "trans": [
+            "n.街角"
+        ]
+    },
+    {
+        "name": "playground",
+        "trans": [
+            "n.操场"
+        ]
+    },
+    {
+        "name": "street",
+        "trans": [
+            "n.街道"
+        ]
+    },
+    {
+        "name": "bus station",
+        "trans": [
+            "n.公交车站"
+        ]
+    },
+    {
+        "name": "market",
+        "trans": [
+            "n.市场"
+        ]
+    },
+    {
+        "name": "road",
+        "trans": [
+            "n.道路"
+        ]
+    },
+    {
+        "name": "town",
+        "trans": [
+            "n.城镇"
+        ]
+    },
+    {
+        "name": "bus stop",
+        "trans": [
+            "n.公交车站"
+        ]
+    },
+    {
+        "name": "motorway",
+        "trans": [
+            "n.高速公路"
+        ]
+    },
+    {
+        "name": "roundabout",
+        "trans": [
+            "n.环形交叉路口"
+        ]
+    },
+    {
+        "name": "underground",
+        "trans": [
+            "n.地铁"
+        ]
+    },
+    {
+        "name": "car park",
+        "trans": [
+            "n.停车场"
+        ]
+    },
+    {
+        "name": "park",
+        "trans": [
+            "n.公园"
+        ]
+    },
+    {
+        "name": "square",
+        "trans": [
+            "n.广场"
+        ]
+    },
+    {
+        "name": "zoo",
+        "trans": [
+            "n.动物园"
+        ]
+    },
+    {
+        "name": "Services",
+        "trans": [
+            "服务设施"
+        ]
+    },
+    {
+        "name": "bank",
+        "trans": [
+            "n.银行"
+        ]
+    },
+    {
+        "name": "doctor",
+        "trans": [
+            "n.医生"
+        ]
+    },
+    {
+        "name": "petrol station",
+        "trans": [
+            "n.加油站"
+        ]
+    },
+    {
+        "name": "theatre",
+        "trans": [
+            "n.剧院"
+        ]
+    },
+    {
+        "name": "cafe",
+        "trans": [
+            "n.咖啡馆"
+        ]
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "n.车库"
+        ]
+    },
+    {
+        "name": "post office",
+        "trans": [
+            "n.邮局"
+        ]
+    },
+    {
+        "name": "tourist information",
+        "trans": [
+            "n.旅游信息"
+        ]
+    },
+    {
+        "name": "cafeteria",
+        "trans": [
+            "n.自助餐厅"
+        ]
+    },
+    {
+        "name": "hotel",
+        "trans": [
+            "n.酒店"
+        ]
+    },
+    {
+        "name": "restaurant",
+        "trans": [
+            "n.餐厅"
+        ]
+    },
+    {
+        "name": "cinema",
+        "trans": [
+            "n.电影院"
+        ]
+    },
+    {
+        "name": "library",
+        "trans": [
+            "n.图书馆"
+        ]
+    },
+    {
+        "name": "sports centre",
+        "trans": [
+            "n.体育中心"
+        ]
+    },
+    {
+        "name": "dentist",
+        "trans": [
+            "n.牙医"
+        ]
+    },
+    {
+        "name": "museum",
+        "trans": [
+            "n.博物馆"
+        ]
+    },
+    {
+        "name": "swimming pool",
+        "trans": [
+            "n.游泳池"
+        ]
+    },
+    {
+        "name": "ad/advertisement",
+        "trans": [
+            "广告"
+        ]
+    },
+    {
+        "name": "cheque",
+        "trans": [
+            "支票"
+        ]
+    },
+    {
+        "name": "expensive",
+        "trans": [
+            "昂贵的"
+        ]
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "租金"
+        ]
+    },
+    {
+        "name": "assistant",
+        "trans": [
+            "助手"
+        ]
+    },
+    {
+        "name": "close",
+        "trans": [
+            "v.关闭"
+        ]
+    },
+    {
+        "name": "for sale",
+        "trans": [
+            "待售"
+        ]
+    },
+    {
+        "name": "shop",
+        "trans": [
+            "商店"
+        ]
+    },
+    {
+        "name": "bill",
+        "trans": [
+            "账单"
+        ]
+    },
+    {
+        "name": "closed",
+        "trans": [
+            "关闭的"
+        ]
+    },
+    {
+        "name": "go shopping",
+        "trans": [
+            "购物"
+        ]
+    },
+    {
+        "name": "shop assistant",
+        "trans": [
+            "店员"
+        ]
+    },
+    {
+        "name": "bookshop",
+        "trans": [
+            "书店"
+        ]
+    },
+    {
+        "name": "cost",
+        "trans": [
+            "n.成本",
+            "v.花费"
+        ]
+    },
+    {
+        "name": "open",
+        "trans": [
+            "v.打开",
+            "adj.开放的"
+        ]
+    },
+    {
+        "name": "shopper",
+        "trans": [
+            "购物者"
+        ]
+    },
+    {
+        "name": "buy",
+        "trans": [
+            "v.购买"
+        ]
+    },
+    {
+        "name": "credit card",
+        "trans": [
+            "信用卡"
+        ]
+    },
+    {
+        "name": "pay for",
+        "trans": [
+            "支付"
+        ]
+    },
+    {
+        "name": "shopping",
+        "trans": [
+            "购物"
+        ]
+    },
+    {
+        "name": "cost",
+        "trans": [
+            "n.成本",
+            "v.花费"
+        ]
+    },
+    {
+        "name": "customer",
+        "trans": [
+            "顾客"
+        ]
+    },
+    {
+        "name": "penny",
+        "trans": [
+            "便士"
+        ]
+    },
+    {
+        "name": "spend",
+        "trans": [
+            "花费"
+        ]
+    },
+    {
+        "name": "cent",
+        "trans": [
+            "美分"
+        ]
+    },
+    {
+        "name": "department store",
+        "trans": [
+            "百货商店"
+        ]
+    },
+    {
+        "name": "pound",
+        "trans": [
+            "英镑"
+        ]
+    },
+    {
+        "name": "store",
+        "trans": [
+            "商店"
+        ]
+    },
+    {
+        "name": "change",
+        "trans": [
+            "n.变化",
+            "v.改变"
+        ]
+    },
+    {
+        "name": "dollar",
+        "trans": [
+            "美元"
+        ]
+    },
+    {
+        "name": "price",
+        "trans": [
+            "价格"
+        ]
+    },
+    {
+        "name": "supermarket",
+        "trans": [
+            "超市"
+        ]
+    },
+    {
+        "name": "cheap",
+        "trans": [
+            "便宜的"
+        ]
+    },
+    {
+        "name": "euro",
+        "trans": [
+            "欧元"
+        ]
+    },
+    {
+        "name": "receipt",
+        "trans": [
+            "收据"
+        ]
+    },
+    {
+        "name": "try on",
+        "trans": [
+            "试穿"
+        ]
+    },
+    {
+        "name": "ball",
+        "trans": [
+            "球"
+        ]
+    },
+    {
+        "name": "football",
+        "trans": [
+            "足球"
+        ]
+    },
+    {
+        "name": "riding",
+        "trans": [
+            "骑马"
+        ]
+    },
+    {
+        "name": "swimming",
+        "trans": [
+            "游泳"
+        ]
+    },
+    {
+        "name": "badminton",
+        "trans": [
+            "羽毛球"
+        ]
+    },
+    {
+        "name": "football player",
+        "trans": [
+            "足球运动员"
+        ]
+    },
+    {
+        "name": "rugby",
+        "trans": [
+            "橄榄球"
+        ]
+    },
+    {
+        "name": "swimming costume",
+        "trans": [
+            "泳装"
+        ]
+    },
+    {
+        "name": "baseball",
+        "trans": [
+            "棒球"
+        ]
+    },
+    {
+        "name": "game",
+        "trans": [
+            "游戏"
+        ]
+    },
+    {
+        "name": "run",
+        "trans": [
+            "v.跑步"
+        ]
+    },
+    {
+        "name": "swimming pool",
+        "trans": [
+            "游泳池"
+        ]
+    },
+    {
+        "name": "basketball",
+        "trans": [
+            "篮球"
+        ]
+    },
+    {
+        "name": "goal",
+        "trans": [
+            "目标"
+        ]
+    },
+    {
+        "name": "sailing",
+        "trans": [
+            "帆船运动"
+        ]
+    },
+    {
+        "name": "swimsuit",
+        "trans": [
+            "泳衣"
+        ]
+    },
+    {
+        "name": "bat",
+        "trans": [
+            "球拍"
+        ]
+    },
+    {
+        "name": "golf",
+        "trans": [
+            "高尔夫球"
+        ]
+    },
+    {
+        "name": "sea",
+        "trans": [
+            "海洋"
+        ]
+    },
+    {
+        "name": "table tennis",
+        "trans": [
+            "乒乓球"
+        ]
+    },
+    {
+        "name": "bathing suit",
+        "trans": [
+            "泳装"
+        ]
+    },
+    {
+        "name": "hockey",
+        "trans": [
+            "曲棍球"
+        ]
+    },
+    {
+        "name": "skate",
+        "trans": [
+            "v.滑冰"
+        ]
+    },
+    {
+        "name": "team",
+        "trans": [
+            "团队"
+        ]
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "海滩"
+        ]
+    },
+    {
+        "name": "kit",
+        "trans": [
+            "装备"
+        ]
+    },
+    {
+        "name": "skateboard",
+        "trans": [
+            "n.滑板"
+        ]
+    },
+    {
+        "name": "tennis",
+        "trans": [
+            "网球"
+        ]
+    },
+    {
+        "name": "bicycle",
+        "trans": [
+            "自行车"
+        ]
+    },
+    {
+        "name": "luck",
+        "trans": [
+            "运气"
+        ]
+    },
+    {
+        "name": "ski",
+        "trans": [
+            "v.滑雪"
+        ]
+    },
+    {
+        "name": "tennis player",
+        "trans": [
+            "网球运动员"
+        ]
+    },
+    {
+        "name": "bike",
+        "trans": [
+            "自行车"
+        ]
+    },
+    {
+        "name": "member",
+        "trans": [
+            "成员"
+        ]
+    },
+    {
+        "name": "skiing",
+        "trans": [
+            "滑雪运动"
+        ]
+    },
+    {
+        "name": "throw",
+        "trans": [
+            "v.投掷"
+        ]
+    },
+    {
+        "name": "boat",
+        "trans": [
+            "船"
+        ]
+    },
+    {
+        "name": "play",
+        "trans": [
+            "v.玩"
+        ]
+    },
+    {
+        "name": "snowboard",
+        "trans": [
+            "n.滑雪板"
+        ]
+    },
+    {
+        "name": "ticket",
+        "trans": [
+            "票"
+        ]
+    },
+    {
+        "name": "catch",
+        "trans": [
+            "v.接住"
+        ]
+    },
+    {
+        "name": "player",
+        "trans": [
+            "运动员"
+        ]
+    },
+    {
+        "name": "snowboarding",
+        "trans": [
+            "滑雪板运动"
+        ]
+    },
+    {
+        "name": "tired",
+        "trans": [
+            "疲劳的"
+        ]
+    },
+    {
+        "name": "climb",
+        "trans": [
+            "v.攀爬"
+        ]
+    },
+    {
+        "name": "pool",
+        "trans": [
+            "n.游泳池"
+        ]
+    },
+    {
+        "name": "soccer trainers",
+        "trans": [
+            "足球训练鞋"
+        ]
+    },
+    {
+        "name": "club",
+        "trans": [
+            "俱乐部"
+        ]
+    },
+    {
+        "name": "practice",
+        "trans": [
+            "n.练习"
+        ]
+    },
+    {
+        "name": "sport",
+        "trans": [
+            "运动"
+        ]
+    },
+    {
+        "name": "versus",
+        "trans": [
+            "对"
+        ]
+    },
+    {
+        "name": "coach",
+        "trans": [
+            "n.教练"
+        ]
+    },
+    {
+        "name": "practise",
+        "trans": [
+            "v.练习"
+        ]
+    },
+    {
+        "name": "sports centre",
+        "trans": [
+            "体育中心"
+        ]
+    },
+    {
+        "name": "volleyball",
+        "trans": [
+            "排球"
+        ]
+    },
+    {
+        "name": "competition",
+        "trans": [
+            "比赛"
+        ]
+    },
+    {
+        "name": "prize",
+        "trans": [
+            "奖品"
+        ]
+    },
+    {
+        "name": "stadium",
+        "trans": [
+            "体育场"
+        ]
+    },
+    {
+        "name": "walk",
+        "trans": [
+            "v.散步"
+        ]
+    },
+    {
+        "name": "cricket",
+        "trans": [
+            "板球"
+        ]
+    },
+    {
+        "name": "race",
+        "trans": [
+            "n. 比赛",
+            "v. 竞赛"
+        ]
+    },
+    {
+        "name": "surf",
+        "trans": [
+            "冲浪"
+        ]
+    },
+    {
+        "name": "watch",
+        "trans": [
+            "v.观看"
+        ]
+    },
+    {
+        "name": "cycling",
+        "trans": [
+            "骑自行车"
+        ]
+    },
+    {
+        "name": "racket",
+        "trans": [
+            "球拍"
+        ]
+    },
+    {
+        "name": "surfboard",
+        "trans": [
+            "冲浪板"
+        ]
+    },
+    {
+        "name": "win",
+        "trans": [
+            "v.赢得"
+        ]
+    },
+    {
+        "name": "enter a competition",
+        "trans": [
+            "参加比赛"
+        ]
+    },
+    {
+        "name": "rest",
+        "trans": [
+            "n.休息",
+            "v.休息"
+        ]
+    },
+    {
+        "name": "surfboarding",
+        "trans": [
+            "冲浪运动"
+        ]
+    },
+    {
+        "name": "windsurfing",
+        "trans": [
+            "帆板运动"
+        ]
+    },
+    {
+        "name": "fishing",
+        "trans": [
+            "钓鱼"
+        ]
+    },
+    {
+        "name": "ride",
+        "trans": [
+            "n.骑乘",
+            "v.骑乘"
+        ]
+    },
+    {
+        "name": "swim",
+        "trans": [
+            "游泳"
+        ]
+    },
+    {
+        "name": "winner",
+        "trans": [
+            "获胜者"
+        ]
+    },
+    {
+        "name": "air",
+        "trans": [
+            "空气"
+        ]
+    },
+    {
+        "name": "fire",
+        "trans": [
+            "火"
+        ]
+    },
+    {
+        "name": "moon",
+        "trans": [
+            "月亮"
+        ]
+    },
+    {
+        "name": "spring",
+        "trans": [
+            "春天"
+        ]
+    },
+    {
+        "name": "autumn",
+        "trans": [
+            "秋天"
+        ]
+    },
+    {
+        "name": "flower",
+        "trans": [
+            "花朵"
+        ]
+    },
+    {
+        "name": "mountain",
+        "trans": [
+            "山"
+        ]
+    },
+    {
+        "name": "star",
+        "trans": [
+            "星星"
+        ]
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "海滩"
+        ]
+    },
+    {
+        "name": "forest",
+        "trans": [
+            "森林"
+        ]
+    },
+    {
+        "name": "north",
+        "trans": [
+            "北方"
+        ]
+    },
+    {
+        "name": "summer",
+        "trans": [
+            "夏天"
+        ]
+    },
+    {
+        "name": "bee",
+        "trans": [
+            "蜜蜂"
+        ]
+    },
+    {
+        "name": "grass",
+        "trans": [
+            "草地"
+        ]
+    },
+    {
+        "name": "plant",
+        "trans": [
+            "植物"
+        ]
+    },
+    {
+        "name": "tree",
+        "trans": [
+            "树木"
+        ]
+    },
+    {
+        "name": "country",
+        "trans": [
+            "乡村"
+        ]
+    },
+    {
+        "name": "grow",
+        "trans": [
+            "生长"
+        ]
+    },
+    {
+        "name": "rabbit",
+        "trans": [
+            "兔子"
+        ]
+    },
+    {
+        "name": "water",
+        "trans": [
+            "水"
+        ]
+    },
+    {
+        "name": "countryside",
+        "trans": [
+            "乡村"
+        ]
+    },
+    {
+        "name": "hill",
+        "trans": [
+            "山丘"
+        ]
+    },
+    {
+        "name": "river",
+        "trans": [
+            "河流"
+        ]
+    },
+    {
+        "name": "west",
+        "trans": [
+            "西方"
+        ]
+    },
+    {
+        "name": "desert",
+        "trans": [
+            "沙漠"
+        ]
+    },
+    {
+        "name": "hot",
+        "trans": [
+            "炎热的"
+        ]
+    },
+    {
+        "name": "sea",
+        "trans": [
+            "海洋"
+        ]
+    },
+    {
+        "name": "winter",
+        "trans": [
+            "冬天"
+        ]
+    },
+    {
+        "name": "east",
+        "trans": [
+            "东方"
+        ]
+    },
+    {
+        "name": "ice",
+        "trans": [
+            "冰"
+        ]
+    },
+    {
+        "name": "sky",
+        "trans": [
+            "天空"
+        ]
+    },
+    {
+        "name": "wood",
+        "trans": [
+            "树木"
+        ]
+    },
+    {
+        "name": "explorer",
+        "trans": [
+            "探险家"
+        ]
+    },
+    {
+        "name": "island",
+        "trans": [
+            "岛屿"
+        ]
+    },
+    {
+        "name": "south",
+        "trans": [
+            "南方"
+        ]
+    },
+    {
+        "name": "wool",
+        "trans": [
+            "羊毛"
+        ]
+    },
+    {
+        "name": "field",
+        "trans": [
+            "田野"
+        ]
+    },
+    {
+        "name": "lake",
+        "trans": [
+            "湖泊"
+        ]
+    },
+    {
+        "name": "space",
+        "trans": [
+            "太空"
+        ]
+    },
+    {
+        "name": "world",
+        "trans": [
+            "世界"
+        ]
+    },
+    {
+        "name": "afternoon",
+        "trans": [
+            "下午"
+        ]
+    },
+    {
+        "name": "evening",
+        "trans": [
+            "晚上"
+        ]
+    },
+    {
+        "name": "morning",
+        "trans": [
+            "早上"
+        ]
+    },
+    {
+        "name": "tonight",
+        "trans": [
+            "今晚"
+        ]
+    },
+    {
+        "name": "a.m./p.m.",
+        "trans": [
+            "上午/下午"
+        ]
+    },
+    {
+        "name": "half past",
+        "trans": [
+            "半",
+            "过"
+        ]
+    },
+    {
+        "name": "night",
+        "trans": [
+            "夜晚"
+        ]
+    },
+    {
+        "name": "week",
+        "trans": [
+            "周"
+        ]
+    },
+    {
+        "name": "appointment",
+        "trans": [
+            "约会"
+        ]
+    },
+    {
+        "name": "holidays",
+        "trans": [
+            "假期"
+        ]
+    },
+    {
+        "name": "noon",
+        "trans": [
+            "中午"
+        ]
+    },
+    {
+        "name": "weekday",
+        "trans": [
+            "工作日"
+        ]
+    },
+    {
+        "name": "autumn",
+        "trans": [
+            "秋天"
+        ]
+    },
+    {
+        "name": "hour",
+        "trans": [
+            "小时"
+        ]
+    },
+    {
+        "name": "o’clock",
+        "trans": [
+            "点钟"
+        ]
+    },
+    {
+        "name": "weekend",
+        "trans": [
+            "周末"
+        ]
+    },
+    {
+        "name": "birthday",
+        "trans": [
+            "生日"
+        ]
+    },
+    {
+        "name": "January",
+        "trans": [
+            "一月"
+        ]
+    },
+    {
+        "name": "December",
+        "trans": [
+            "十二月"
+        ]
+    },
+    {
+        "name": "past",
+        "trans": [
+            "过去"
+        ]
+    },
+    {
+        "name": "weekly",
+        "trans": [
+            "每周的"
+        ]
+    },
+    {
+        "name": "calendar",
+        "trans": [
+            "日历"
+        ]
+    },
+    {
+        "name": "meeting",
+        "trans": [
+            "会议"
+        ]
+    },
+    {
+        "name": "quarter",
+        "trans": [
+            "一刻钟，四分之一"
+        ]
+    },
+    {
+        "name": "winter",
+        "trans": [
+            "冬天"
+        ]
+    },
+    {
+        "name": "century",
+        "trans": [
+            "世纪"
+        ]
+    },
+    {
+        "name": "midnight",
+        "trans": [
+            "午夜"
+        ]
+    },
+    {
+        "name": "second",
+        "trans": [
+            "秒"
+        ]
+    },
+    {
+        "name": "working hours",
+        "trans": [
+            "工作时间"
+        ]
+    },
+    {
+        "name": "clock",
+        "trans": [
+            "时钟"
+        ]
+    },
+    {
+        "name": "minute",
+        "trans": [
+            "分钟"
+        ]
+    },
+    {
+        "name": "spring",
+        "trans": [
+            "春天"
+        ]
+    },
+    {
+        "name": "year",
+        "trans": [
+            "年"
+        ]
+    },
+    {
+        "name": "daily",
+        "trans": [
+            "每日的"
+        ]
+    },
+    {
+        "name": "moment",
+        "trans": [
+            "瞬间"
+        ]
+    },
+    {
+        "name": "summer",
+        "trans": [
+            "夏天"
+        ]
+    },
+    {
+        "name": "yesterday",
+        "trans": [
+            "昨天"
+        ]
+    },
+    {
+        "name": "date",
+        "trans": [
+            "日期"
+        ]
+    },
+    {
+        "name": "Monday",
+        "trans": [
+            "星期一"
+        ]
+    },
+    {
+        "name": "Sunday",
+        "trans": [
+            "星期日"
+        ]
+    },
+    {
+        "name": "time",
+        "trans": [
+            "时间"
+        ]
+    },
+    {
+        "name": "day",
+        "trans": [
+            "日"
+        ]
+    },
+    {
+        "name": "month",
+        "trans": [
+            "月份"
+        ]
+    },
+    {
+        "name": "today",
+        "trans": [
+            "今天"
+        ]
+    },
+    {
+        "name": "diary",
+        "trans": [
+            "日记"
+        ]
+    },
+    {
+        "name": "monthly",
+        "trans": [
+            "每月的"
+        ]
+    },
+    {
+        "name": "tomorrow",
+        "trans": [
+            "明天"
+        ]
+    },
+    {
+        "name": "aero plane",
+        "trans": [
+            "飞机"
+        ]
+    },
+    {
+        "name": "explorer",
+        "trans": [
+            "探险家"
+        ]
+    },
+    {
+        "name": "park",
+        "trans": [
+            "v.停放"
+        ]
+    },
+    {
+        "name": "street",
+        "trans": [
+            "街道"
+        ]
+    },
+    {
+        "name": "airport",
+        "trans": [
+            "机场"
+        ]
+    },
+    {
+        "name": "far",
+        "trans": [
+            "远的"
+        ]
+    },
+    {
+        "name": "passenger",
+        "trans": [
+            "乘客"
+        ]
+    },
+    {
+        "name": "suitcase",
+        "trans": [
+            "手提箱"
+        ]
+    },
+    {
+        "name": "ambulance",
+        "trans": [
+            "救护车"
+        ]
+    },
+    {
+        "name": "flight",
+        "trans": [
+            "航班"
+        ]
+    },
+    {
+        "name": "passport",
+        "trans": [
+            "护照"
+        ]
+    },
+    {
+        "name": "taxi",
+        "trans": [
+            "出租车"
+        ]
+    },
+    {
+        "name": "backpack",
+        "trans": [
+            "背包"
+        ]
+    },
+    {
+        "name": "fly",
+        "trans": [
+            "飞行"
+        ]
+    },
+    {
+        "name": "petrol",
+        "trans": [
+            "汽油"
+        ]
+    },
+    {
+        "name": "ticket",
+        "trans": [
+            "票"
+        ]
+    },
+    {
+        "name": "boat",
+        "trans": [
+            "船"
+        ]
+    },
+    {
+        "name": "garage",
+        "trans": [
+            "车库"
+        ]
+    },
+    {
+        "name": "petrol station",
+        "trans": [
+            "加油站"
+        ]
+    },
+    {
+        "name": "tour",
+        "trans": [
+            "n.旅行"
+        ]
+    },
+    {
+        "name": "bridge",
+        "trans": [
+            "桥梁"
+        ]
+    },
+    {
+        "name": "helicopter",
+        "trans": [
+            "直升机"
+        ]
+    },
+    {
+        "name": "pilot",
+        "trans": [
+            "飞行员"
+        ]
+    },
+    {
+        "name": "tour guide",
+        "trans": [
+            "导游"
+        ]
+    },
+    {
+        "name": "bus",
+        "trans": [
+            "公共汽车"
+        ]
+    },
+    {
+        "name": "journey",
+        "trans": [
+            "旅行"
+        ]
+    },
+    {
+        "name": "platform",
+        "trans": [
+            "站台"
+        ]
+    },
+    {
+        "name": "tourist",
+        "trans": [
+            "游客"
+        ]
+    },
+    {
+        "name": "bus station",
+        "trans": [
+            "汽车站"
+        ]
+    },
+    {
+        "name": "leave",
+        "trans": [
+            "离开"
+        ]
+    },
+    {
+        "name": "railway",
+        "trans": [
+            "铁路"
+        ]
+    },
+    {
+        "name": "tourist information centre",
+        "trans": [
+            "旅游咨询中心"
+        ]
+    },
+    {
+        "name": "bus stop",
+        "trans": [
+            "公交车站"
+        ]
+    },
+    {
+        "name": "left",
+        "trans": [
+            "左边"
+        ]
+    },
+    {
+        "name": "repair",
+        "trans": [
+            "v.修理"
+        ]
+    },
+    {
+        "name": "traffic",
+        "trans": [
+            "交通"
+        ]
+    },
+    {
+        "name": "car",
+        "trans": [
+            "汽车"
+        ]
+    },
+    {
+        "name": "light",
+        "trans": [
+            "灯光"
+        ]
+    },
+    {
+        "name": "return",
+        "trans": [
+            "n.返回",
+            "v.返回"
+        ]
+    },
+    {
+        "name": "traffic light",
+        "trans": [
+            "红绿灯"
+        ]
+    },
+    {
+        "name": "case",
+        "trans": [
+            "箱子"
+        ]
+    },
+    {
+        "name": "luggage",
+        "trans": [
+            "行李"
+        ]
+    },
+    {
+        "name": "ride",
+        "trans": [
+            "乘坐"
+        ]
+    },
+    {
+        "name": "train",
+        "trans": [
+            "火车"
+        ]
+    },
+    {
+        "name": "coach",
+        "trans": [
+            "长途汽车"
+        ]
+    },
+    {
+        "name": "machine",
+        "trans": [
+            "机器"
+        ]
+    },
+    {
+        "name": "right",
+        "trans": [
+            "右边"
+        ]
+    },
+    {
+        "name": "tram",
+        "trans": [
+            "有轨电车"
+        ]
+    },
+    {
+        "name": "country",
+        "trans": [
+            "国家"
+        ]
+    },
+    {
+        "name": "map",
+        "trans": [
+            "地图"
+        ]
+    },
+    {
+        "name": "road",
+        "trans": [
+            "道路"
+        ]
+    },
+    {
+        "name": "travel",
+        "trans": [
+            "旅行"
+        ]
+    },
+    {
+        "name": "delay",
+        "trans": [
+            "n.延迟",
+            "v.延迟"
+        ]
+    },
+    {
+        "name": "mechanic",
+        "trans": [
+            "机械师"
+        ]
+    },
+    {
+        "name": "roundabout",
+        "trans": [
+            "环岛"
+        ]
+    },
+    {
+        "name": "trip",
+        "trans": [
+            "旅行"
+        ]
+    },
+    {
+        "name": "delayed",
+        "trans": [
+            "延迟的"
+        ]
+    },
+    {
+        "name": "mirror",
+        "trans": [
+            "镜子"
+        ]
+    },
+    {
+        "name": "sailing",
+        "trans": [
+            "航行"
+        ]
+    },
+    {
+        "name": "tyre",
+        "trans": [
+            "轮胎"
+        ]
+    },
+    {
+        "name": "drive",
+        "trans": [
+            "驾驶"
+        ]
+    },
+    {
+        "name": "miss",
+        "trans": [
+            "v.错过"
+        ]
+    },
+    {
+        "name": "seat",
+        "trans": [
+            "座位"
+        ]
+    },
+    {
+        "name": "underground",
+        "trans": [
+            "n.地铁"
+        ]
+    },
+    {
+        "name": "driver",
+        "trans": [
+            "司机"
+        ]
+    },
+    {
+        "name": "motorbike",
+        "trans": [
+            "摩托车"
+        ]
+    },
+    {
+        "name": "ship",
+        "trans": [
+            "船"
+        ]
+    },
+    {
+        "name": "visit",
+        "trans": [
+            "访问"
+        ]
+    },
+    {
+        "name": "driving licence",
+        "trans": [
+            "驾驶执照"
+        ]
+    },
+    {
+        "name": "driver’s licence",
+        "trans": [
+            "驾驶执照"
+        ]
+    },
+    {
+        "name": "motorway",
+        "trans": [
+            "高速公路"
+        ]
+    },
+    {
+        "name": "station",
+        "trans": [
+            "车站"
+        ]
+    },
+    {
+        "name": "visitor",
+        "trans": [
+            "访客"
+        ]
+    },
+    {
+        "name": "engine",
+        "trans": [
+            "引擎"
+        ]
+    },
+    {
+        "name": "move",
+        "trans": [
+            "移动"
+        ]
+    },
+    {
+        "name": "stop",
+        "trans": [
+            "停止"
+        ]
+    },
+    {
+        "name": "way",
+        "trans": [
+            "n.路线"
+        ]
+    },
+    {
+        "name": "engineer",
+        "trans": [
+            "工程师"
+        ]
+    },
+    {
+        "name": "oil",
+        "trans": [
+            "油"
+        ]
+    },
+    {
+        "name": "straight on",
+        "trans": [
+            "直行"
+        ]
+    },
+    {
+        "name": "wheel",
+        "trans": [
+            "车轮"
+        ]
+    },
+    {
+        "name": "window",
+        "trans": [
+            "窗户"
+        ]
+    },
+    {
+        "name": "cloud",
+        "trans": [
+            "云"
+        ]
+    },
+    {
+        "name": "hot",
+        "trans": [
+            "炎热的"
+        ]
+    },
+    {
+        "name": "sun",
+        "trans": [
+            "太阳"
+        ]
+    },
+    {
+        "name": "wet",
+        "trans": [
+            "潮湿的"
+        ]
+    },
+    {
+        "name": "cloudy",
+        "trans": [
+            "多云的"
+        ]
+    },
+    {
+        "name": "ice",
+        "trans": [
+            "冰"
+        ]
+    },
+    {
+        "name": "sunny",
+        "trans": [
+            "晴朗的"
+        ]
+    },
+    {
+        "name": "wind",
+        "trans": [
+            "风"
+        ]
+    },
+    {
+        "name": "cold",
+        "trans": [
+            "寒冷的"
+        ]
+    },
+    {
+        "name": "rain",
+        "trans": [
+            "雨"
+        ]
+    },
+    {
+        "name": "thunderstorm",
+        "trans": [
+            "雷雨"
+        ]
+    },
+    {
+        "name": "windy",
+        "trans": [
+            "多风的"
+        ]
+    },
+    {
+        "name": "fog",
+        "trans": [
+            "雾"
+        ]
+    },
+    {
+        "name": "snow",
+        "trans": [
+            "雪"
+        ]
+    },
+    {
+        "name": "warm",
+        "trans": [
+            "温暖的"
+        ]
+    },
+    {
+        "name": "foggy",
+        "trans": [
+            "多雾的"
+        ]
+    },
+    {
+        "name": "storm",
+        "trans": [
+            "风暴"
+        ]
+    },
+    {
+        "name": "weather",
+        "trans": [
+            "天气"
+        ]
+    },
+    {
+        "name": "actor",
+        "trans": [
+            "演员"
+        ]
+    },
+    {
+        "name": "diploma",
+        "trans": [
+            "文凭"
+        ]
+    },
+    {
+        "name": "journalist",
+        "trans": [
+            "记者"
+        ]
+    },
+    {
+        "name": "secretary",
+        "trans": [
+            "秘书"
+        ]
+    },
+    {
+        "name": "artist",
+        "trans": [
+            "艺术家"
+        ]
+    },
+    {
+        "name": "doctor",
+        "trans": [
+            "医生"
+        ]
+    },
+    {
+        "name": "king",
+        "trans": [
+            "国王"
+        ]
+    },
+    {
+        "name": "shop assistant",
+        "trans": [
+            "店员"
+        ]
+    },
+    {
+        "name": "boss",
+        "trans": [
+            "老板"
+        ]
+    },
+    {
+        "name": "Dr",
+        "trans": [
+            "博士"
+        ]
+    },
+    {
+        "name": "letter",
+        "trans": [
+            "信"
+        ]
+    },
+    {
+        "name": "shopper",
+        "trans": [
+            "购物者"
+        ]
+    },
+    {
+        "name": "break",
+        "trans": [
+            "n.休息"
+        ]
+    },
+    {
+        "name": "driver",
+        "trans": [
+            "司机"
+        ]
+    },
+    {
+        "name": "manager",
+        "trans": [
+            "经理"
+        ]
+    },
+    {
+        "name": "singer",
+        "trans": [
+            "歌手"
+        ]
+    },
+    {
+        "name": "business",
+        "trans": [
+            "商业"
+        ]
+    },
+    {
+        "name": "earn",
+        "trans": [
+            "赚取"
+        ]
+    },
+    {
+        "name": "mechanic",
+        "trans": [
+            "机械师"
+        ]
+    },
+    {
+        "name": "staff",
+        "trans": [
+            "员工"
+        ]
+    },
+    {
+        "name": "businessman",
+        "trans": [
+            "商人"
+        ]
+    },
+    {
+        "name": "email",
+        "trans": [
+            "n.电子邮件",
+            "v.发送电子邮件"
+        ]
+    },
+    {
+        "name": "meeting",
+        "trans": [
+            "会议"
+        ]
+    },
+    {
+        "name": "student",
+        "trans": [
+            "学生"
+        ]
+    },
+    {
+        "name": "businesswoman",
+        "trans": [
+            "女商人"
+        ]
+    },
+    {
+        "name": "engineer",
+        "trans": [
+            "工程师"
+        ]
+    },
+    {
+        "name": "message",
+        "trans": [
+            "消息"
+        ]
+    },
+    {
+        "name": "teacher",
+        "trans": [
+            "教师"
+        ]
+    },
+    {
+        "name": "chemist",
+        "trans": [
+            "化学家"
+        ]
+    },
+    {
+        "name": "explorer",
+        "trans": [
+            "探险家"
+        ]
+    },
+    {
+        "name": "musician",
+        "trans": [
+            "音乐家"
+        ]
+    },
+    {
+        "name": "tennis player",
+        "trans": [
+            "网球运动员"
+        ]
+    },
+    {
+        "name": "cleaner",
+        "trans": [
+            "清洁工"
+        ]
+    },
+    {
+        "name": "factory",
+        "trans": [
+            "工厂"
+        ]
+    },
+    {
+        "name": "nurse",
+        "trans": [
+            "护士"
+        ]
+    },
+    {
+        "name": "tour guide",
+        "trans": [
+            "导游"
+        ]
+    },
+    {
+        "name": "coach",
+        "trans": [
+            "n.教练"
+        ]
+    },
+    {
+        "name": "farm",
+        "trans": [
+            "农场"
+        ]
+    },
+    {
+        "name": "occupation",
+        "trans": [
+            "职业"
+        ]
+    },
+    {
+        "name": "uniform",
+        "trans": [
+            "制服"
+        ]
+    },
+    {
+        "name": "company",
+        "trans": [
+            "公司"
+        ]
+    },
+    {
+        "name": "farmer",
+        "trans": [
+            "农民"
+        ]
+    },
+    {
+        "name": "office",
+        "trans": [
+            "办公室"
+        ]
+    },
+    {
+        "name": "waiter",
+        "trans": [
+            "服务员"
+        ]
+    },
+    {
+        "name": "waitress",
+        "trans": [
+            "女服务员"
+        ]
+    },
+    {
+        "name": "computer",
+        "trans": [
+            "计算机"
+        ]
+    },
+    {
+        "name": "footballer",
+        "trans": [
+            "足球运动员"
+        ]
+    },
+    {
+        "name": "painter",
+        "trans": [
+            "画家"
+        ]
+    },
+    {
+        "name": "work",
+        "trans": [
+            "工作"
+        ]
+    },
+    {
+        "name": "cook",
+        "trans": [
+            "n.厨师",
+            "v.烹饪"
+        ]
+    },
+    {
+        "name": "football player",
+        "trans": [
+            "足球运动员"
+        ]
+    },
+    {
+        "name": "photographer",
+        "trans": [
+            "摄影师"
+        ]
+    },
+    {
+        "name": "worker",
+        "trans": [
+            "工人"
+        ]
+    },
+    {
+        "name": "customer",
+        "trans": [
+            "顾客"
+        ]
+    },
+    {
+        "name": "guest",
+        "trans": [
+            "客人"
+        ]
+    },
+    {
+        "name": "pilot",
+        "trans": [
+            "飞行员"
+        ]
+    },
+    {
+        "name": "writer",
+        "trans": [
+            "作家"
+        ]
+    },
+    {
+        "name": "dentist",
+        "trans": [
+            "牙医"
+        ]
+    },
+    {
+        "name": "guide",
+        "trans": [
+            "导游"
+        ]
+    },
+    {
+        "name": "police officer",
+        "trans": [
+            "警察"
+        ]
+    },
+    {
+        "name": "desk",
+        "trans": [
+            "桌子"
+        ]
+    },
+    {
+        "name": "instructions",
+        "trans": [
+            "说明"
+        ]
+    },
+    {
+        "name": "queen",
+        "trans": [
+            "女王"
+        ]
+    },
+    {
+        "name": "diary",
+        "trans": [
+            "日记"
+        ]
+    },
+    {
+        "name": "job",
+        "trans": [
+            "工作"
+        ]
+    },
+    {
+        "name": "receptionist",
+        "trans": [
+            "接待员"
+        ]
+    }
+]

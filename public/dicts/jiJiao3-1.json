@@ -1,0 +1,705 @@
+[
+    {
+        "name": "hello",
+        "trans": [
+            "n. 表示问候， 惊奇或唤起注意时的用语",
+            "int. 喂；哈罗"
+        ],
+        "usphone": "[həˈləʊ]",
+        "ukphone": "[həˈləʊ]"
+    },
+    {
+        "name": "hi",
+        "trans": [
+            "int. 嗨！（表示问候或用以唤起注意）"
+        ],
+        "usphone": "[haɪ]",
+        "ukphone": "[haɪ]"
+    },
+    {
+        "name": "hello",
+        "trans": [
+            "n. 表示问候， 惊奇或唤起注意时的用语",
+            "int. 喂；哈罗"
+        ],
+        "usphone": "[həˈləʊ]",
+        "ukphone": "[həˈləʊ]"
+    },
+    {
+        "name": "boy",
+        "trans": [
+            "n. 男孩；男人"
+        ],
+        "usphone": "[bɔɪ]",
+        "ukphone": "[bɔɪ]"
+    },
+    {
+        "name": "girl",
+        "trans": [
+            "n. 女孩；姑娘，未婚女子；女职员，女演员；（男人的）女朋友",
+            "n. （捷）吉尔"
+        ],
+        "usphone": "[ɡɜːrl]",
+        "ukphone": "[ɡɜːl]"
+    },
+    {
+        "name": "teacher",
+        "trans": [
+            "n. 教师；导师"
+        ],
+        "usphone": "[ˈtiːtʃər]",
+        "ukphone": "[ˈtiːtʃə(r)]"
+    },
+    {
+        "name": "school",
+        "trans": [
+            "n. 学校；学院；学派；鱼群",
+            "vt. 教育"
+        ],
+        "usphone": "[skuːl]",
+        "ukphone": "[skuːl]"
+    },
+    {
+        "name": "book",
+        "trans": [
+            "n. 书籍；卷；帐簿；名册；工作簿",
+            "vt. 预订；登记"
+        ],
+        "usphone": "[bʊk]",
+        "ukphone": "[bʊk]"
+    },
+    {
+        "name": "chair",
+        "trans": [
+            "n. 椅子；讲座；（会议的）主席位；大学教授的职位",
+            "vt. 担任（会议的）主席；使…入座；使就任要职"
+        ],
+        "usphone": "[tʃer]",
+        "ukphone": "[tʃeə(r)]"
+    },
+    {
+        "name": "desk",
+        "trans": [
+            "n. 办公桌；服务台；编辑部；（美）讲道台；乐谱架",
+            "adj. 书桌的；桌上用的；伏案做的"
+        ],
+        "usphone": "[desk]",
+        "ukphone": "[desk]"
+    },
+    {
+        "name": "one",
+        "trans": [
+            "pron. 一个人；任何人",
+            "adj. 一的；唯一的",
+            "n. 一",
+            "num. 一；一个"
+        ],
+        "usphone": "[wʌn]",
+        "ukphone": "[wʌn]"
+    },
+    {
+        "name": "two",
+        "trans": [
+            "num. 二",
+            "n. 两个",
+            "adj. 两个的"
+        ],
+        "usphone": "[tuː]",
+        "ukphone": "[tuː]"
+    },
+    {
+        "name": "three",
+        "trans": [
+            "num. 三",
+            "n. 三，三个",
+            "adj. 三的，三个的"
+        ],
+        "usphone": "[θriː]",
+        "ukphone": "[θriː]"
+    },
+    {
+        "name": "four",
+        "trans": [
+            "num. 四；四个",
+            "adj. 四的；四个的"
+        ],
+        "usphone": "[fɔːr]",
+        "ukphone": "[fɔː(r)]"
+    },
+    {
+        "name": "five",
+        "trans": [
+            "num. 五，五个",
+            "n. 五，五个；五美元钞票",
+            "adj. 五的；五个的"
+        ],
+        "usphone": "[faɪv]",
+        "ukphone": "[faɪv]"
+    },
+    {
+        "name": "pencil",
+        "trans": [
+            "n. 铅笔；笔状物",
+            "vt. 用铅笔写；用眉笔涂",
+            "vi. 成铅笔状"
+        ],
+        "usphone": "[ˈpensl]",
+        "ukphone": "[ˈpens(ə)l]"
+    },
+    {
+        "name": "pen",
+        "trans": [
+            "n. 钢笔；作家；围栏",
+            "vt. 写；关入栏中"
+        ],
+        "usphone": "[pen]",
+        "ukphone": "[pen]"
+    },
+    {
+        "name": "ruler",
+        "trans": [
+            "n. 尺；统治者；[测] 划线板，划线的人"
+        ],
+        "usphone": "[ˈruːlər]",
+        "ukphone": "[ˈruːlə(r)]"
+    },
+    {
+        "name": "crayon",
+        "trans": [
+            "n. 蜡笔，有色粉笔",
+            "vt. 以蜡笔作画，用颜色粉笔画"
+        ],
+        "usphone": "[ˈkreɪən; ˈkreɪɑːn]",
+        "ukphone": "[ˈkreɪən; ˈkreɪɒn]"
+    },
+    {
+        "name": "pencil box",
+        "trans": [
+            " 铅笔盒；文具盒；你的铅笔盒"
+        ]
+    },
+    {
+        "name": "six",
+        "trans": [
+            "num. 六，六个",
+            "n. 六，六个"
+        ],
+        "usphone": "[sɪks]",
+        "ukphone": "[sɪks]"
+    },
+    {
+        "name": "seven",
+        "trans": [
+            "num. 七个，七",
+            "n. 七个，七",
+            "adj. 七的；七个的"
+        ],
+        "usphone": "[ˈsev(ə)n]",
+        "ukphone": "[ˈsev(ə)n]"
+    },
+    {
+        "name": "eight",
+        "trans": [
+            "num. 八；八个；第八",
+            "n. 八字形",
+            "adj. 八的"
+        ],
+        "usphone": "[eɪt]",
+        "ukphone": "[eɪt]"
+    },
+    {
+        "name": "nine",
+        "trans": [
+            "n. 九，九个",
+            "num. 九；九个",
+            "adj. 九的，九个的"
+        ],
+        "usphone": "[naɪn]",
+        "ukphone": "[naɪn]"
+    },
+    {
+        "name": "ten",
+        "trans": [
+            "num. 十个，十"
+        ],
+        "usphone": "[ten]",
+        "ukphone": "[ten]"
+    },
+    {
+        "name": "friend",
+        "trans": [
+            "n. 朋友；助手；赞助者"
+        ],
+        "usphone": "[frend]",
+        "ukphone": "[frend]"
+    },
+    {
+        "name": "window",
+        "trans": [
+            "n. 窗；窗口；窗户"
+        ],
+        "usphone": "[ˈwɪndoʊ]",
+        "ukphone": "[ˈwɪndəʊ]"
+    },
+    {
+        "name": "red",
+        "trans": [
+            "n. 红色，红颜料；赤字",
+            "adj. 红色的；红肿的，充血的"
+        ],
+        "usphone": "[red]",
+        "ukphone": "[red]"
+    },
+    {
+        "name": "yellow",
+        "trans": [
+            "n. 黄色；黄种人；黄色颜料",
+            "adj. 黄色的；黄皮肤的",
+            "vt. 使变黄或发黄",
+            "vi. 变黄或发黄"
+        ],
+        "usphone": "[ˈjeloʊ]",
+        "ukphone": "[ˈjeləʊ]"
+    },
+    {
+        "name": "blue",
+        "trans": [
+            "adj. 蓝色的；沮丧的，忧郁的；下流的",
+            "n. 蓝色；[复数]（美国海、陆、空三军穿的）蓝色制服；蓝颜料；[the blue(s)][用作单数或复数]布鲁斯（歌曲）（一种伤感的美国黑人民歌",
+            "vi. 变成蓝色，呈蓝色",
+            "vt. 把…染成蓝色；使成蓝色；给…用上蓝剂；用上蓝剂于"
+        ],
+        "usphone": "[bluː]",
+        "ukphone": "[bluː]"
+    },
+    {
+        "name": "green",
+        "trans": [
+            "n. 绿色；青春",
+            "adj. 绿色的；青春的",
+            "vt. 使…变绿色",
+            "vi. 变绿色"
+        ],
+        "usphone": "[ɡriːn]",
+        "ukphone": "[ɡriːn]"
+    },
+    {
+        "name": "orange",
+        "trans": [
+            "adj. 橙色的；橘色的",
+            "n. 橙；橙色；桔子"
+        ],
+        "usphone": "[ˈɔrɪndʒ]",
+        "ukphone": "[ˈɒrɪndʒ]"
+    },
+    {
+        "name": "brown",
+        "trans": [
+            "n. 褐色，棕色",
+            "adj. 棕色的，褐色的；太阳晒黑的",
+            "vt. 使变成褐色",
+            "vi. 变成褐色"
+        ],
+        "usphone": "[braʊn]",
+        "ukphone": "[braʊn]"
+    },
+    {
+        "name": "white",
+        "trans": [
+            "n. 白色；洁白；白种人",
+            "adj. 白色的；白种的；纯洁的"
+        ],
+        "usphone": "[waɪt]",
+        "ukphone": "[waɪt]"
+    },
+    {
+        "name": "black",
+        "trans": [
+            "n. 黑色；黑人；黑颜料",
+            "adj. 黑色的；黑人的；邪恶的",
+            "vt. 使变黑；把鞋油等涂在…上；把（眼眶）打成青肿",
+            "vi. 变黑"
+        ],
+        "usphone": "[blæk]",
+        "ukphone": "[blæk]"
+    },
+    {
+        "name": "cold",
+        "trans": [
+            "n. 寒冷；感冒",
+            "adj. 寒冷的；冷淡的，不热情的；失去知觉的",
+            "adv. 完全地"
+        ],
+        "usphone": "[kəʊld]",
+        "ukphone": "[kəʊld]"
+    },
+    {
+        "name": "hot",
+        "trans": [
+            "adj. 热的；辣的；热情的；激动的；紧迫的",
+            "vt. 增加；给…加温",
+            "adv. 热；紧迫地",
+            "vi. 变热"
+        ],
+        "usphone": "[hɑːt]",
+        "ukphone": "[hɒt]"
+    },
+    {
+        "name": "tired",
+        "trans": [
+            "v. 疲倦；对…腻烦（tire的过去分词形式）",
+            "adj. 疲倦的；厌倦的，厌烦的"
+        ],
+        "usphone": "[ˈtaɪərd]",
+        "ukphone": "[ˈtaɪəd]"
+    },
+    {
+        "name": "happy",
+        "trans": [
+            "adj. 幸福的；高兴的；巧妙的"
+        ],
+        "usphone": "[ˈhæpi]",
+        "ukphone": "[ˈhæpi]"
+    },
+    {
+        "name": "sad",
+        "trans": [
+            "adj. 难过的；悲哀的，令人悲痛的；凄惨的，阴郁的（形容颜色）"
+        ],
+        "usphone": "[sæd]",
+        "ukphone": "[sæd]"
+    },
+    {
+        "name": "body",
+        "trans": [
+            "n. 身体；主体；大量；团体；主要部分",
+            "vt. 赋以形体"
+        ],
+        "usphone": "[ˈbɑːdi]",
+        "ukphone": "[ˈbɒdi]"
+    },
+    {
+        "name": "hand",
+        "trans": [
+            "n. 手，手艺；帮助；指针；插手",
+            "vt. 传递，交给；支持；搀扶"
+        ],
+        "usphone": "[hænd]",
+        "ukphone": "[hænd]"
+    },
+    {
+        "name": "head",
+        "trans": [
+            "n. 头；头痛；上端；最前的部分；理解力",
+            "adj. 头的；主要的；在顶端的",
+            "vt. 前进；用头顶；作为…的首领；站在…的前头；给…加标题",
+            "vi. 出发；成头状物；船驶往"
+        ],
+        "usphone": "[hed]",
+        "ukphone": "[hed]"
+    },
+    {
+        "name": "arm",
+        "trans": [
+            "n. 手臂；武器；袖子；装备；部门",
+            "vt. 武装；备战",
+            "vi. 武装起来"
+        ],
+        "usphone": "[ɑːrm]",
+        "ukphone": "[ɑːm]"
+    },
+    {
+        "name": "leg",
+        "trans": [
+            "n. 腿；支柱"
+        ],
+        "usphone": "[leɡ]",
+        "ukphone": "[leɡ]"
+    },
+    {
+        "name": "foot",
+        "trans": [
+            "n. 脚；英尺；步调；末尾",
+            "vt. 支付；给……换底",
+            "vi. 步行；跳舞；总计"
+        ],
+        "usphone": "[fʊt]",
+        "ukphone": "[fʊt]"
+    },
+    {
+        "name": "left",
+        "trans": [
+            "adj. 左边的；左派的；剩下的",
+            "adv. 在左面",
+            "n. 左边；左派；激进分子",
+            "v. 离开（leave的过去式）"
+        ],
+        "usphone": "[left]",
+        "ukphone": "[left]"
+    },
+    {
+        "name": "right",
+        "trans": [
+            "n. 正确；右边；正义",
+            "adj. 正确的；直接的；右方的",
+            "vt. 纠正",
+            "adv. 正确地；恰当地；彻底地",
+            "vi. 复正；恢复平稳"
+        ],
+        "usphone": "[raɪt]",
+        "ukphone": "[raɪt]"
+    },
+    {
+        "name": "hair",
+        "trans": [
+            "n. 头发；毛发；些微",
+            "adj. 毛发的；护理毛发的；用毛发制成的",
+            "vt. 除去…的毛发",
+            "vi. 生长毛发；形成毛状纤维"
+        ],
+        "usphone": "[her]",
+        "ukphone": "[heə(r)]"
+    },
+    {
+        "name": "eye",
+        "trans": [
+            "n. 眼睛；视力；眼光；见解，观点",
+            "vt. 注视，看"
+        ],
+        "usphone": "[aɪ]",
+        "ukphone": "[aɪ]"
+    },
+    {
+        "name": "mouth",
+        "trans": [
+            "n. 口，嘴；河口",
+            "vt. 做作地说，装腔作势地说；喃喃地说出",
+            "vi. 装腔作势说话"
+        ],
+        "usphone": "[maʊθ]",
+        "ukphone": "[maʊθ]"
+    },
+    {
+        "name": "ear",
+        "trans": [
+            "n. 耳朵；穗；听觉；倾听",
+            "vi. （美俚）听见；抽穗"
+        ],
+        "usphone": "[ɪr]",
+        "ukphone": "[ɪə(r)]"
+    },
+    {
+        "name": "nose",
+        "trans": [
+            "n. 鼻子；嗅觉；突出的部分；探问",
+            "vt. 嗅；用鼻子触",
+            "vi. 小心探索着前进；探问"
+        ],
+        "usphone": "[noʊz]",
+        "ukphone": "[nəʊz]"
+    },
+    {
+        "name": "face",
+        "trans": [
+            "n. 脸；表面；面子；面容；外观；威信",
+            "vi. 向；朝",
+            "vt. 面对；面向；承认；抹盖"
+        ],
+        "usphone": "[feɪs]",
+        "ukphone": "[feɪs]"
+    },
+    {
+        "name": "warm",
+        "trans": [
+            "n. 取暖；加热",
+            "adj. 温暖的；热情的",
+            "vt. 使…兴奋；使…温暖；使…感兴趣",
+            "vi. 同情；激动；变温暖"
+        ],
+        "usphone": "[wɔːrm]",
+        "ukphone": "[wɔːm]"
+    },
+    {
+        "name": "cool",
+        "trans": [
+            "n. 凉爽；凉爽的空气",
+            "adj. 凉爽的；冷静的；出色的",
+            "vt. 使…冷却；使…平静下来",
+            "vi. 变凉；平息",
+            "adv. 冷静地"
+        ],
+        "usphone": "[kuːl]",
+        "ukphone": "[kuːl]"
+    },
+    {
+        "name": "doctor",
+        "trans": [
+            "vt. 修理；篡改，伪造；为…治病；授以博士学位",
+            "n. 医生；博士",
+            "vi. 就医；行医"
+        ],
+        "usphone": "[ˈdɑːktər]",
+        "ukphone": "[ˈdɒktə(r)]"
+    },
+    {
+        "name": "Dr.",
+        "trans": [
+            "abbr. （书写形式）医生；（用于街道名）路",
+            "n. 【摄】动态范围"
+        ]
+    },
+    {
+        "name": "family",
+        "trans": [
+            "n. 家庭；亲属；家族；子女；[生]科；语族；[化]族",
+            "adj. 家庭的；家族的；适合于全家的"
+        ],
+        "usphone": "[ˈfæməli]",
+        "ukphone": "[ˈfæməli]"
+    },
+    {
+        "name": "father",
+        "trans": [
+            "n. 父亲，爸爸；神父；祖先；前辈",
+            "vt. 发明，创立；当…的父亲"
+        ],
+        "usphone": "[ˈfɑːðər]",
+        "ukphone": "[ˈfɑːðə(r)]"
+    },
+    {
+        "name": "mother",
+        "trans": [
+            "n. 母亲；大娘；女修道院院长",
+            "vt. 生下；养育；像母亲般关怀或照管",
+            "adj. 母亲的；出生地的"
+        ],
+        "usphone": "[ˈmʌðər]",
+        "ukphone": "[ˈmʌðə(r)]"
+    },
+    {
+        "name": "brother",
+        "trans": [
+            "n. 兄弟；同事；战友",
+            "int. 我的老兄！"
+        ],
+        "usphone": "[ˈbrʌðər]",
+        "ukphone": "[ˈbrʌðə(r)]"
+    },
+    {
+        "name": "sister",
+        "trans": [
+            "n. 姐妹；（称志同道合者）姐妹；修女；护士",
+            "adj. 姐妹般的；同类型的"
+        ],
+        "usphone": "[ˈsɪstər]",
+        "ukphone": "[ˈsɪstə(r)]"
+    },
+    {
+        "name": "China",
+        "trans": [
+            "n. 中国",
+            "n. china，瓷器",
+            "adj. 中国的；中国制造的",
+            "adj. china，瓷制的"
+        ],
+        "usphone": "[ˈtʃaɪnə]",
+        "ukphone": "[ˈtʃaɪnə]"
+    },
+    {
+        "name": "short",
+        "trans": [
+            "n. 短；缺乏；短路；短裤",
+            "adj. 短的；不足的；矮的，低的",
+            "adv. 不足；突然；唐突地"
+        ],
+        "usphone": "[ʃɔːrt]",
+        "ukphone": "[ʃɔːt]"
+    },
+    {
+        "name": "tall",
+        "trans": [
+            "adj. 高的；长的；过分的；夸大的",
+            "adv. 夸大地"
+        ],
+        "usphone": "[tɔːl]",
+        "ukphone": "[tɔːl]"
+    },
+    {
+        "name": "policeman",
+        "trans": [
+            "n. 警察，警员；[分化] 淀帚（橡皮头玻璃搅棒）"
+        ],
+        "usphone": "[pəˈliːsmən]",
+        "ukphone": "[pəˈliːsmən]"
+    },
+    {
+        "name": "bus",
+        "trans": [
+            "n. 公共汽车",
+            "乘公共汽车"
+        ],
+        "usphone": "[bʌs]",
+        "ukphone": "[bʌs]"
+    },
+    {
+        "name": "driver",
+        "trans": [
+            "n. 驾驶员；驱动程序；起子；传动器"
+        ],
+        "usphone": "[ˈdraɪvər]",
+        "ukphone": "[ˈdraɪvə(r)]"
+    },
+    {
+        "name": "worker",
+        "trans": [
+            "n. 工人；劳动者；职蚁"
+        ],
+        "usphone": "[ˈwɜːrkər]",
+        "ukphone": "[ˈwɜːkə(r)]"
+    },
+    {
+        "name": "old",
+        "trans": [
+            "adj. 陈旧的，古老的；年老的",
+            "n. 古时"
+        ],
+        "usphone": "[oʊld]",
+        "ukphone": "[əʊld]"
+    },
+    {
+        "name": "young",
+        "trans": [
+            "n. 年轻人；（动物的）崽，仔",
+            "adj. 年轻的；初期的；没有经验的"
+        ],
+        "usphone": "[jʌŋ]",
+        "ukphone": "[jʌŋ]"
+    },
+    {
+        "name": "birthday",
+        "trans": [
+            "n. 生日，诞辰；诞生的日子"
+        ],
+        "usphone": "[ˈbɜːrθdeɪ]",
+        "ukphone": "[ˈbɜːθdeɪ]"
+    },
+    {
+        "name": "party",
+        "trans": [
+            "n. 政党，党派；聚会，派对；当事人 [复数 parties]",
+            "vi. 参加社交聚会 [ 过去式 partied 过去分词 partied 现在分词 partying ]"
+        ],
+        "usphone": "[ˈpɑːrti]",
+        "ukphone": "[ˈpɑːti]"
+    },
+    {
+        "name": "cake",
+        "trans": [
+            "n. 蛋糕；块状物；利益总额",
+            "vt. 使结块",
+            "vi. 结成块状"
+        ],
+        "usphone": "[keɪk]",
+        "ukphone": "[keɪk]"
+    }
+]
