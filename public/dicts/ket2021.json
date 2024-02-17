@@ -12,7 +12,7 @@
         ]
     },
     {
-        "name": "DVD (player)",
+        "name": "DVD player",
         "trans": [
             "n. DVD播放器"
         ]
@@ -30,7 +30,7 @@
         ]
     },
     {
-        "name": "CD (player)",
+        "name": "CD player",
         "trans": [
             "n. CD播放器"
         ]
@@ -60,13 +60,13 @@
         ]
     },
     {
-        "name": "mobile (phone)",
+        "name": "mobile phone",
         "trans": [
             "n. 移动电话"
         ]
     },
     {
-        "name": "television / TV",
+        "name": "television/TV",
         "trans": [
             "n. 电视"
         ]
@@ -370,7 +370,14 @@
         ]
     },
     {
-        "name": "jewellery / jewelry",
+        "name": "jewellery",
+        "trans": [
+            "n. 珠宝",
+            "n. 首饰"
+        ]
+    },
+    {
+        "name": "jewelry",
         "trans": [
             "n. 珠宝",
             "n. 首饰"
@@ -405,13 +412,6 @@
         ]
     },
     {
-        "name": "jumper",
-        "trans": [
-            "n. 毛衣",
-            "n. 跳跃者"
-        ]
-    },
-    {
         "name": "suit",
         "trans": [
             "n. 套装",
@@ -425,9 +425,9 @@
         ]
     },
     {
-        "name": "costume (swimming)",
+        "name": "costume",
         "trans": [
-            "n. 泳衣",
+            "n. 服装，戏服",
             "n. 游泳装"
         ]
     },
@@ -552,7 +552,13 @@
         ]
     },
     {
-        "name": "grey / gray",
+        "name": "grey",
+        "trans": [
+            "灰色"
+        ]
+    },
+    {
+        "name": "gray",
         "trans": [
             "灰色"
         ]
@@ -606,9 +612,9 @@
         ]
     },
     {
-        "name": "laptop (computer)",
+        "name": "laptop",
         "trans": [
-            "笔记本电脑"
+            "笔记本电脑(计算机用词)"
         ]
     },
     {
@@ -618,10 +624,10 @@
         ]
     },
     {
-        "name": "at / @",
+        "name": "at/@",
         "trans": [
-            "在",
-            "在…处"
+            "在，在...处",
+            "电子邮件域名(计算机用词)"
         ]
     },
     {
@@ -631,9 +637,9 @@
         ]
     },
     {
-        "name": "mobile (phone)",
+        "name": "mobile",
         "trans": [
-            "移动电话"
+            "移动电话 (phone)"
         ]
     },
     {
@@ -674,7 +680,7 @@
         ]
     },
     {
-        "name": "download ",
+        "name": "download",
         "trans": [
             "n.下载",
             "v.下载"
@@ -699,7 +705,7 @@
         ]
     },
     {
-        "name": "DVD (player)",
+        "name": "DVD player",
         "trans": [
             "DVD 播放器"
         ]
@@ -717,13 +723,13 @@
         ]
     },
     {
-        "name": "CD (player)",
+        "name": "CD player",
         "trans": [
             "CD 播放器"
         ]
     },
     {
-        "name": "email ",
+        "name": "email",
         "trans": [
             "n.电子邮件",
             "v.发送电子邮件"
@@ -736,7 +742,7 @@
         ]
     },
     {
-        "name": "text ",
+        "name": "text",
         "trans": [
             "n.文本",
             "v.发送短信"
@@ -791,7 +797,7 @@
         ]
     },
     {
-        "name": "click ",
+        "name": "click",
         "trans": [
             "n.点击"
         ]
@@ -857,7 +863,7 @@
         ]
     },
     {
-        "name": "ad / advertisement",
+        "name": "ad/advertisement",
         "trans": [
             "广告"
         ]
@@ -889,7 +895,7 @@
     {
         "name": "diploma",
         "trans": [
-            "文凭"
+            "文凭,毕业证书"
         ]
     },
     {
@@ -1128,9 +1134,15 @@
         ]
     },
     {
-        "name": "exam(ination)",
+        "name": "exam",
         "trans": [
             "n.考试"
+        ]
+    },
+    {
+        "name": "examination",
+        "trans": [
+            "n.考试,审查，调查（仔细的）"
         ]
     },
     {
@@ -1438,7 +1450,7 @@
         ]
     },
     {
-        "name": "DVD (player)",
+        "name": "DVD player",
         "trans": [
             "n.DVD播放器"
         ]
@@ -1474,7 +1486,7 @@
         ]
     },
     {
-        "name": "rock (concert)",
+        "name": "rock concert",
         "trans": [
             "n.摇滚音乐会"
         ]
@@ -1581,7 +1593,7 @@
         ]
     },
     {
-        "name": "CD (player)",
+        "name": "CD player",
         "trans": [
             "n.CD播放器"
         ]
@@ -1625,7 +1637,7 @@
         ]
     },
     {
-        "name": "television / TV",
+        "name": "television/TV",
         "trans": [
             "n.电视"
         ]
@@ -1655,7 +1667,7 @@
         ]
     },
     {
-        "name": "classical (music)",
+        "name": "classical music",
         "trans": [
             "adj.古典的",
             "n.古典音乐"
@@ -1698,7 +1710,7 @@
         ]
     },
     {
-        "name": "video (game)",
+        "name": "video game",
         "trans": [
             "n.视频游戏"
         ]
@@ -1741,7 +1753,7 @@
         ]
     },
     {
-        "name": "pop (music)",
+        "name": "pop music",
         "trans": [
             "n.流行音乐"
         ]
@@ -1786,7 +1798,7 @@
         ]
     },
     {
-        "name": "mum(my)",
+        "name": "mummy",
         "trans": [
             "n.妈妈"
         ]
@@ -1823,7 +1835,7 @@
         ]
     },
     {
-        "name": "grand(d)ad",
+        "name": "grandad/granddad",
         "trans": [
             "n.爷爷",
             "n.外公"
@@ -1894,7 +1906,7 @@
         ]
     },
     {
-        "name": "dad(dy)",
+        "name": "daddy",
         "trans": [
             "n.爸爸"
         ]
@@ -2153,7 +2165,7 @@
         ]
     },
     {
-        "name": "roast ",
+        "name": "roast",
         "trans": [
             "v.烤",
             "adj.烤的"
@@ -2400,7 +2412,7 @@
         ]
     },
     {
-        "name": "cafe/café",
+        "name": "cafe",
         "trans": [
             "n.咖啡馆"
         ]
@@ -2659,7 +2671,7 @@
         ]
     },
     {
-        "name": "yog(h)urt",
+        "name": "yoghurt",
         "trans": [
             "n.酸奶"
         ]
@@ -3062,9 +3074,9 @@
         ]
     },
     {
-        "name": "CD (player)",
+        "name": "CD player",
         "trans": [
-            "CD（播放器）"
+            "CD播放器"
         ]
     },
     {
@@ -3233,9 +3245,9 @@
         ]
     },
     {
-        "name": "DVD (player)",
+        "name": "DVD player",
         "trans": [
-            "DVD（播放器）"
+            "DVD播放器"
         ]
     },
     {
@@ -3359,7 +3371,7 @@
         ]
     },
     {
-        "name": "bath(tub)",
+        "name": "bathtub",
         "trans": [
             "n.浴缸"
         ]
@@ -3533,7 +3545,7 @@
         ]
     },
     {
-        "name": "DVD (player)",
+        "name": "DVD player",
         "trans": [
             "n.DVD播放器"
         ]
@@ -3647,9 +3659,15 @@
         ]
     },
     {
-        "name": "centimetre / half metre / meter",
+        "name": "centimetre",
         "trans": [
-            "n.厘米 / 半米 / 米"
+            "n.厘米"
+        ]
+    },
+    {
+        "name": "half metre/meter",
+        "trans": [
+            "n.半米 / 米"
         ]
     },
     {
@@ -3659,7 +3677,7 @@
         ]
     },
     {
-        "name": "centimeter / cm",
+        "name": "centimeter/cm",
         "trans": [
             "n.厘米"
         ]
@@ -3689,7 +3707,13 @@
         ]
     },
     {
-        "name": "kilo(gram[me])/kg",
+        "name": "kilogram/kg",
+        "trans": [
+            "n.千克 / 公斤"
+        ]
+    },
+    {
+        "name": "kilogramme/kg",
         "trans": [
             "n.千克 / 公斤"
         ]
@@ -3713,7 +3737,13 @@
         ]
     },
     {
-        "name": "kilometre/kilometer/km",
+        "name": "kilometre/km",
+        "trans": [
+            "n.公里"
+        ]
+    },
+    {
+        "name": "kilometer/km",
         "trans": [
             "n.公里"
         ]
@@ -3725,13 +3755,13 @@
         ]
     },
     {
-        "name": "gram(me)",
+        "name": "gramme",
         "trans": [
             "n.克"
         ]
     },
     {
-        "name": "litre / liter",
+        "name": "litre/liter",
         "trans": [
             "n.升"
         ]
@@ -4181,7 +4211,7 @@
         ]
     },
     {
-        "name": "apartment (building)",
+        "name": "apartment",
         "trans": [
             "公寓（楼）"
         ]
@@ -4325,7 +4355,7 @@
         ]
     },
     {
-        "name": "cafe/café",
+        "name": "cafe",
         "trans": [
             "咖啡馆"
         ]
@@ -4679,7 +4709,7 @@
         ]
     },
     {
-        "name": "cafe / café",
+        "name": "cafe",
         "trans": [
             "n.咖啡馆"
         ]
@@ -4757,7 +4787,7 @@
         ]
     },
     {
-        "name": "ad / advertisement",
+        "name": "ad/advertisement",
         "trans": [
             "广告"
         ]
@@ -4867,7 +4897,7 @@
         ]
     },
     {
-        "name": "pay (for)",
+        "name": "pay for",
         "trans": [
             "支付"
         ]
@@ -5271,13 +5301,13 @@
         ]
     },
     {
-        "name": "sport(s)",
+        "name": "sport",
         "trans": [
             "运动"
         ]
     },
     {
-        "name": "v / versus",
+        "name": "versus",
         "trans": [
             "对"
         ]
@@ -5380,7 +5410,7 @@
         ]
     },
     {
-        "name": "enter (a competition)",
+        "name": "enter a competition",
         "trans": [
             "参加比赛"
         ]
@@ -5700,7 +5730,7 @@
         ]
     },
     {
-        "name": "half (past)",
+        "name": "half past",
         "trans": [
             "半",
             "过"
@@ -5773,9 +5803,15 @@
         ]
     },
     {
-        "name": "January - December",
+        "name": "January",
         "trans": [
-            "一月 - 十二月"
+            "一月"
+        ]
+    },
+    {
+        "name": "December",
+        "trans": [
+            "十二月"
         ]
     },
     {
@@ -5803,9 +5839,9 @@
         ]
     },
     {
-        "name": "quarter (past/to)",
+        "name": "quarter",
         "trans": [
-            "刻钟"
+            "一刻钟，四分之一"
         ]
     },
     {
@@ -5893,9 +5929,15 @@
         ]
     },
     {
-        "name": "Monday - Sunday",
+        "name": "Monday",
         "trans": [
-            "星期一 - 星期日"
+            "星期一"
+        ]
+    },
+    {
+        "name": "Sunday",
+        "trans": [
+            "星期日"
         ]
     },
     {
@@ -5941,7 +5983,7 @@
         ]
     },
     {
-        "name": "(aero)/(air)plane",
+        "name": "aero plane",
         "trans": [
             "飞机"
         ]
@@ -6351,7 +6393,13 @@
         ]
     },
     {
-        "name": "driving/driver’s licence",
+        "name": "driving licence",
+        "trans": [
+            "驾驶执照"
+        ]
+    },
+    {
+        "name": "driver’s licence",
         "trans": [
             "驾驶执照"
         ]
@@ -6796,9 +6844,15 @@
         ]
     },
     {
-        "name": "waiter/ waitress",
+        "name": "waiter",
         "trans": [
             "服务员"
+        ]
+    },
+    {
+        "name": "waitress",
+        "trans": [
+            "女服务员"
         ]
     },
     {

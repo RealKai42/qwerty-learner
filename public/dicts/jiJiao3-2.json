@@ -1,0 +1,717 @@
+[
+    {
+        "name": "farm",
+        "trans": [
+            "n. 农场；农家；畜牧场",
+            "vt. 养殖；耕种；佃出（土地）",
+            "vi. 种田，务农；经营农场"
+        ],
+        "usphone": "[fɑːrm]",
+        "ukphone": "[fɑːm]"
+    },
+    {
+        "name": "farmer",
+        "trans": [
+            "n. 农夫，农民"
+        ],
+        "usphone": "[ˈfɑːrmər]",
+        "ukphone": "[ˈfɑːmə(r)]"
+    },
+    {
+        "name": "pig",
+        "trans": [
+            "n. 猪；猪肉",
+            "vi. 生小猪；像猪一样过活",
+            "n. 警察（俚语，带有攻击性）"
+        ],
+        "usphone": "[pɪɡ]",
+        "ukphone": "[pɪɡ]"
+    },
+    {
+        "name": "cow",
+        "trans": [
+            "n. 奶牛，母牛；母兽",
+            "vt. 威胁，恐吓"
+        ],
+        "usphone": "[kaʊ]",
+        "ukphone": "[kaʊ]"
+    },
+    {
+        "name": "sheep",
+        "trans": [
+            "n. 羊，绵羊；胆小鬼"
+        ],
+        "usphone": "[ʃiːp]",
+        "ukphone": "[ʃiːp]"
+    },
+    {
+        "name": "a",
+        "trans": [
+            "n. 字母A；第一流的；学业成绩达最高标准的评价符号",
+            "abbr. [物]安（ampere）"
+        ],
+        "usphone": "[ə; eɪ]",
+        "ukphone": "[ə]"
+    },
+    {
+        "name": "an",
+        "trans": [
+            "art. 一（在元音音素前）"
+        ],
+        "usphone": "[ən; æn]",
+        "ukphone": "[ən]"
+    },
+    {
+        "name": "cat",
+        "trans": [
+            "n. 猫，猫科动物"
+        ],
+        "usphone": "[kæt]",
+        "ukphone": "[kæt]"
+    },
+    {
+        "name": "dog",
+        "trans": [
+            "n. 狗；丑女人；卑鄙的人；(俚)朋友",
+            "vt. 跟踪；尾随"
+        ],
+        "usphone": "[dɔːɡ]",
+        "ukphone": "[dɒɡ]"
+    },
+    {
+        "name": "duck",
+        "trans": [
+            "n. 鸭子；鸭肉；（英）宝贝儿；零分",
+            "vt. 躲避；猛按…入水",
+            "vi. 闪避；没入水中"
+        ],
+        "usphone": "[dʌk]",
+        "ukphone": "[dʌk]"
+    },
+    {
+        "name": "fish",
+        "trans": [
+            "n. 鱼，鱼类",
+            "vt. 钓鱼，捕鱼；搜寻",
+            "vi. 捕鱼，钓鱼；用钩捞取"
+        ],
+        "usphone": "[fɪʃ]",
+        "ukphone": "[fɪʃ]"
+    },
+    {
+        "name": "bird",
+        "trans": [
+            "n. 鸟；家伙；羽毛球",
+            "vt. 向…喝倒彩；起哄",
+            "vi. 猎鸟；观察研究野鸟"
+        ],
+        "usphone": "[bɜːrd]",
+        "ukphone": "[bɜːd]"
+    },
+    {
+        "name": "animal",
+        "trans": [
+            "n. 动物",
+            "动物的"
+        ],
+        "usphone": "[ˈænɪm(ə)l]",
+        "ukphone": "[ˈænɪm(ə)l]"
+    },
+    {
+        "name": "horse",
+        "trans": [
+            "n. 马；骑兵；脚架；海洛因",
+            "vt. 使骑马；系马于；捉弄",
+            "vi. 骑马；作弄人"
+        ],
+        "usphone": "[hɔːrs]",
+        "ukphone": "[hɔːs]"
+    },
+    {
+        "name": "yes",
+        "trans": [
+            "n. 是（表示肯定）",
+            "adv. 是, 是的"
+        ],
+        "usphone": "[jes]",
+        "ukphone": "[jes]"
+    },
+    {
+        "name": "no",
+        "trans": [
+            "adv. 不",
+            "adj. 没有；不是",
+            "n. 不；否决票",
+            "abbr. 数字（number）；元素锘（nobelium）的符号"
+        ],
+        "usphone": "[noʊ]",
+        "ukphone": "[nəʊ]"
+    },
+    {
+        "name": "in",
+        "trans": [
+            "prep. 按照（表示方式）；从事于；在…之内",
+            "n. 执政者；门路；知情者",
+            "adj. 在里面的；时髦的",
+            "adv. 进入；当选；（服装等）时髦；在屋里"
+        ],
+        "usphone": "[ɪn]",
+        "ukphone": "[ɪn]"
+    },
+    {
+        "name": "on",
+        "trans": [
+            "adv. 向前地；作用中，行动中；继续着",
+            "prep. 向，朝……；关于；在……之上；在……时候",
+            "adj. 开着的；发生着的，正在进行中"
+        ],
+        "usphone": "[ɑːn]",
+        "ukphone": "[ɒn]"
+    },
+    {
+        "name": "under",
+        "trans": [
+            "prep. 低于，少于；在...之下",
+            "adj. 下面的；从属的",
+            "adv. 在下面；在下方"
+        ],
+        "usphone": "[ˈʌndər]",
+        "ukphone": "[ˈʌndə(r)]"
+    },
+    {
+        "name": "box",
+        "trans": [
+            "n. 箱，盒子；包厢；一拳",
+            "vt. 拳击；装…入盒中；打耳光",
+            "vi. 拳击"
+        ],
+        "usphone": "[bɑːks]",
+        "ukphone": "[bɒks]"
+    },
+    {
+        "name": "zoo",
+        "trans": [
+            "n. 动物园; <美俚>（铁路货车的最后一节）守车; <美俚>核粒子园"
+        ],
+        "usphone": "[zuː]",
+        "ukphone": "[zuː]"
+    },
+    {
+        "name": "panda",
+        "trans": [
+            "n. 熊猫；猫熊"
+        ],
+        "usphone": "[ˈpændə]",
+        "ukphone": "[ˈpændə]"
+    },
+    {
+        "name": "monkey",
+        "trans": [
+            "n. 猴子；顽童",
+            "vi. 胡闹；捣蛋",
+            "vt. 嘲弄"
+        ],
+        "usphone": "[ˈmʌŋki]",
+        "ukphone": "[ˈmʌŋki]"
+    },
+    {
+        "name": "elephant",
+        "trans": [
+            "n. 象；大号图画纸"
+        ],
+        "usphone": "[ˈelɪfənt]",
+        "ukphone": "[ˈelɪfənt]"
+    },
+    {
+        "name": "big",
+        "trans": [
+            "adj. 大的；重要的；量大的",
+            "adv. 大量地；顺利；夸大地"
+        ],
+        "usphone": "[bɪɡ]",
+        "ukphone": "[bɪɡ]"
+    },
+    {
+        "name": "small",
+        "trans": [
+            "n. 小件物品；矮小的人",
+            "adj. 少的，小的；微弱的；几乎没有的；不重要的；幼小的",
+            "adv. 小小地；卑鄙地"
+        ],
+        "usphone": "[smɔːl]",
+        "ukphone": "[smɔːl]"
+    },
+    {
+        "name": "tiger",
+        "trans": [
+            "n. 老虎；凶暴的人"
+        ],
+        "usphone": "[ˈtaɪɡər]",
+        "ukphone": "[ˈtaɪɡə(r)]"
+    },
+    {
+        "name": "bear",
+        "trans": [
+            "n. 熊",
+            "vt. 结果实，开花（正式）",
+            "vt. 忍受；承受；具有；支撑"
+        ],
+        "usphone": "[ber]",
+        "ukphone": "[beə(r)]"
+    },
+    {
+        "name": "long",
+        "trans": [
+            "n. 长时间；[语] 长音节；（服装的）长尺寸；长裤",
+            "adj. 长的；过长的；做多头的；长时间的；冗长的，长音",
+            "vi. 渴望；热望",
+            "adv. 长期地；始终"
+        ],
+        "usphone": "[lɔːŋ]",
+        "ukphone": "[lɒŋ]"
+    },
+    {
+        "name": "short",
+        "trans": [
+            "n. 短；缺乏；短路；短裤",
+            "adj. 短的；不足的；矮的，低的",
+            "adv. 不足；突然；唐突地"
+        ],
+        "usphone": "[ʃɔːrt]",
+        "ukphone": "[ʃɔːt]"
+    },
+    {
+        "name": "one",
+        "trans": [
+            "pron. 一个人；任何人",
+            "adj. 一的；唯一的",
+            "n. 一",
+            "num. 一；一个"
+        ],
+        "usphone": "[wʌn]",
+        "ukphone": "[wʌn]"
+    },
+    {
+        "name": "two",
+        "trans": [
+            "num. 二",
+            "n. 两个",
+            "adj. 两个的"
+        ],
+        "usphone": "[tuː]",
+        "ukphone": "[tuː]"
+    },
+    {
+        "name": "three",
+        "trans": [
+            "num. 三",
+            "n. 三，三个",
+            "adj. 三的，三个的"
+        ],
+        "usphone": "[θriː]",
+        "ukphone": "[θriː]"
+    },
+    {
+        "name": "four",
+        "trans": [
+            "num. 四；四个",
+            "adj. 四的；四个的"
+        ],
+        "usphone": "[fɔːr]",
+        "ukphone": "[fɔː(r)]"
+    },
+    {
+        "name": "five",
+        "trans": [
+            "num. 五，五个",
+            "n. 五，五个；五美元钞票",
+            "adj. 五的；五个的"
+        ],
+        "usphone": "[faɪv]",
+        "ukphone": "[faɪv]"
+    },
+    {
+        "name": "six",
+        "trans": [
+            "num. 六，六个",
+            "n. 六，六个"
+        ],
+        "usphone": "[sɪks]",
+        "ukphone": "[sɪks]"
+    },
+    {
+        "name": "seven",
+        "trans": [
+            "num. 七个，七",
+            "n. 七个，七",
+            "adj. 七的；七个的"
+        ],
+        "usphone": "[ˈsev(ə)n]",
+        "ukphone": "[ˈsev(ə)n]"
+    },
+    {
+        "name": "eight",
+        "trans": [
+            "num. 八；八个；第八",
+            "n. 八字形",
+            "adj. 八的"
+        ],
+        "usphone": "[eɪt]",
+        "ukphone": "[eɪt]"
+    },
+    {
+        "name": "nine",
+        "trans": [
+            "n. 九，九个",
+            "num. 九；九个",
+            "adj. 九的，九个的"
+        ],
+        "usphone": "[naɪn]",
+        "ukphone": "[naɪn]"
+    },
+    {
+        "name": "ten",
+        "trans": [
+            "num. 十个，十"
+        ],
+        "usphone": "[ten]",
+        "ukphone": "[ten]"
+    },
+    {
+        "name": "river",
+        "trans": [
+            "n. 河，江"
+        ],
+        "usphone": "[ˈrɪvər]",
+        "ukphone": "[ˈrɪvə(r)]"
+    },
+    {
+        "name": "tree",
+        "trans": [
+            "n. 树；木料；树状物",
+            "vt. 把...赶上树",
+            "vi. 爬上树；逃上树"
+        ],
+        "usphone": "[triː]",
+        "ukphone": "[triː]"
+    },
+    {
+        "name": "grass",
+        "trans": [
+            "n. 草；草地，草坪",
+            "vt. 放牧；使……长满草；使……吃草",
+            "vi. 长草"
+        ],
+        "usphone": "[ɡræs]",
+        "ukphone": "[ɡrɑːs]"
+    },
+    {
+        "name": "banana",
+        "trans": [
+            "n. 香蕉；喜剧演员；大鹰钩鼻"
+        ],
+        "usphone": "[bəˈnænə]",
+        "ukphone": "[bəˈnɑːnə]"
+    },
+    {
+        "name": "food",
+        "trans": [
+            "n. 食物；养料"
+        ],
+        "usphone": "[fuːd]",
+        "ukphone": "[fuːd]"
+    },
+    {
+        "name": "eat",
+        "trans": [
+            "vt. 吃，喝；腐蚀；烦扰",
+            "vi. 进食；腐蚀，侵蚀"
+        ],
+        "usphone": "[iːt]",
+        "ukphone": "[iːt]"
+    },
+    {
+        "name": "drink",
+        "trans": [
+            "n. 酒，饮料；喝酒",
+            "vt. 喝，饮；吸收；举杯庆贺",
+            "vi. 喝酒；饮水；干杯"
+        ],
+        "usphone": "[drɪŋk]",
+        "ukphone": "[drɪŋk]"
+    },
+    {
+        "name": "juice",
+        "trans": [
+            "n. （水果）汁，液；果汁"
+        ],
+        "usphone": "[dʒuːs]",
+        "ukphone": "[dʒuːs]"
+    },
+    {
+        "name": "I",
+        "trans": [
+            "n. 碘元素；英语字母I",
+            "pron. 我"
+        ],
+        "usphone": "[aɪ]",
+        "ukphone": "[aɪ]"
+    },
+    {
+        "name": "soup",
+        "trans": [
+            "n. 汤，羹；马力",
+            "vt. 加速；增加马力"
+        ],
+        "usphone": "[suːp]",
+        "ukphone": "[suːp]"
+    },
+    {
+        "name": "noodle",
+        "trans": [
+            "n. 面条；笨蛋"
+        ],
+        "usphone": "[ˈnuːd(ə)l]",
+        "ukphone": "[ˈnuːd(ə)l]"
+    },
+    {
+        "name": "rice",
+        "trans": [
+            "n. 稻；米饭",
+            "vt. 把…捣成米糊状"
+        ],
+        "usphone": "[raɪs]",
+        "ukphone": "[raɪs]"
+    },
+    {
+        "name": "chicken",
+        "trans": [
+            "n. 鸡肉；小鸡；胆小鬼，懦夫",
+            "adj. 鸡肉的；胆怯的；幼小的"
+        ],
+        "usphone": "[ˈtʃɪkɪn]",
+        "ukphone": "[ˈtʃɪkɪn]"
+    },
+    {
+        "name": "vegetable",
+        "trans": [
+            "n. 蔬菜；植物；植物人",
+            "adj. 蔬菜的；植物的"
+        ],
+        "usphone": "[ˈvedʒtəbl]",
+        "ukphone": "[ˈvedʒtəb(ə)l]"
+    },
+    {
+        "name": "fruit",
+        "trans": [
+            "n. 水果；产物",
+            "vt. 使……结果实",
+            "vi. 结果实"
+        ],
+        "usphone": "[fruːt]",
+        "ukphone": "[fruːt]"
+    },
+    {
+        "name": "like",
+        "trans": [
+            "vt. 喜欢；想；愿意",
+            "vi. 喜欢；希望",
+            "prep. 像；如同",
+            "adj. 同样的；相似的",
+            "n. 爱好；同样的人或物",
+            "adv. 可能",
+            "conj. 好像"
+        ],
+        "usphone": "[laɪk]",
+        "ukphone": "[laɪk]"
+    },
+    {
+        "name": "good",
+        "trans": [
+            "n. 好处；善行；慷慨的行为",
+            "adj. 好的；优良的；愉快的；虔诚的",
+            "adv. 好"
+        ],
+        "usphone": "[ɡʊd]",
+        "ukphone": "[ɡʊd]"
+    },
+    {
+        "name": "milk",
+        "trans": [
+            "n. 牛奶；乳状物",
+            "vt. 榨取；挤…的奶",
+            "vi. 挤奶"
+        ],
+        "usphone": "[mɪlk]",
+        "ukphone": "[mɪlk]"
+    },
+    {
+        "name": "egg",
+        "trans": [
+            "n. 蛋；卵子；家伙；鸡蛋",
+            "vt. 煽动；怂恿"
+        ],
+        "usphone": "[eɡ]",
+        "ukphone": "[eɡ]"
+    },
+    {
+        "name": "bread",
+        "trans": [
+            "n. 面包；生计",
+            "vt. 在…上洒面包屑"
+        ],
+        "usphone": "[bred]",
+        "ukphone": "[bred]"
+    },
+    {
+        "name": "apple",
+        "trans": [
+            "n. 苹果，苹果树，苹果似的东西；[美俚]炸弹，手榴弹，（棒球的）球；[美俚]人，家伙。"
+        ],
+        "usphone": "[ˈæpl]",
+        "ukphone": "[ˈæp(ə)l]"
+    },
+    {
+        "name": "orange",
+        "trans": [
+            "adj. 橙色的；橘色的",
+            "n. 橙；橙色；桔子"
+        ],
+        "usphone": "[ˈɔrɪndʒ]",
+        "ukphone": "[ˈɒrɪndʒ]"
+    },
+    {
+        "name": "eleven",
+        "trans": [
+            "num. 十一；十一个",
+            "n. 十一；十一个",
+            "adj. 十一的；十一个的"
+        ],
+        "usphone": "[ɪˈlevn]",
+        "ukphone": "[ɪˈlev(ə)n]"
+    },
+    {
+        "name": "twelve",
+        "trans": [
+            "num. 十二；十二个",
+            "n. 十二；十二个",
+            "adj. 十二的；十二个的"
+        ],
+        "usphone": "[twelv]",
+        "ukphone": "[twelv]"
+    },
+    {
+        "name": "thirteen",
+        "trans": [
+            "n. 十三；十三岁；十三个",
+            "num. 十三",
+            "adj. 十三的；十三个的"
+        ],
+        "usphone": "[ˌθɜːrˈtiːn]",
+        "ukphone": "[ˌθɜːˈtiːn]"
+    },
+    {
+        "name": "fourteen",
+        "trans": [
+            "num. 十四；十四个；第十四",
+            "n. 十四的记号；十四岁；十四点钟；十五世纪"
+        ],
+        "usphone": "[ˌfɔːrˈtiːn]",
+        "ukphone": "[ˌfɔːˈtiːn]"
+    },
+    {
+        "name": "fifteen",
+        "trans": [
+            "n. 十五；十五个；十五人组成的橄榄球队",
+            "num. 十五",
+            "adj. 十五的"
+        ],
+        "usphone": "[ˌfɪfˈtiːn]",
+        "ukphone": "[ˌfɪfˈtiːn]"
+    },
+    {
+        "name": "ice cream",
+        "trans": [
+            "n. 【食】冰淇淋"
+        ],
+        "usphone": "[ˈaɪs kriːm]",
+        "ukphone": "[ˈaɪs kriːm]"
+    },
+    {
+        "name": "sixteen",
+        "trans": [
+            "num. 十六",
+            "adj. 十六的，十六个的"
+        ],
+        "usphone": "[ˌsɪksˈtiːn]",
+        "ukphone": "[ˌsɪksˈtiːn]"
+    },
+    {
+        "name": "seventeen",
+        "trans": [
+            "n. 十七，十七个",
+            "num. 十七",
+            "adj. 十七岁的；十七的，十七个的"
+        ],
+        "usphone": "[ˌsevnˈtiːn]",
+        "ukphone": "[ˌsev(ə)nˈtiːn]"
+    },
+    {
+        "name": "eighteen",
+        "trans": [
+            "n. 十八，十八个",
+            "num. 十八",
+            "adj. 十八个的，十八的"
+        ],
+        "usphone": "[ˌeɪˈtiːn]",
+        "ukphone": "[ˌeɪˈtiːn]"
+    },
+    {
+        "name": "nineteen",
+        "trans": [
+            "num. 十九"
+        ],
+        "usphone": "[ˌnaɪnˈtiːn]",
+        "ukphone": "[ˌnaɪnˈtiːn]"
+    },
+    {
+        "name": "twenty",
+        "trans": [
+            "num. 二十",
+            "n. 二十；二十年代",
+            "adj. 二十的"
+        ],
+        "usphone": "[ˈtwenti]",
+        "ukphone": "[ˈtwenti]"
+    },
+    {
+        "name": "please",
+        "trans": [
+            "int. 请（礼貌用语）",
+            "vt. 使喜欢；使高兴，使满意",
+            "vi. 讨人喜欢；令人高兴"
+        ],
+        "usphone": "[pliːz]",
+        "ukphone": "[pliːz]"
+    },
+    {
+        "name": "thanks",
+        "trans": [
+            "n. 谢谢（只用复数）",
+            "int. 谢谢"
+        ],
+        "usphone": "[θæŋks]",
+        "ukphone": "[θæŋks]"
+    },
+    {
+        "name": "welcome",
+        "trans": [
+            "n. 欢迎",
+            "vt. 欢迎",
+            "adj. 受欢迎的",
+            "int. 欢迎"
+        ],
+        "usphone": "[ˈwelkəm]",
+        "ukphone": "[ˈwelkəm]"
+    }
+]

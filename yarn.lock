@@ -1460,6 +1460,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@playwright/test@^1.40.1":
+  version "1.40.1"
+  resolved "https://registry.npmmirror.com/@playwright/test/-/test-1.40.1.tgz#9e66322d97b1d74b9f8718bacab15080f24cde65"
+  integrity sha512-EaaawMTOeEItCRvfmkI9v6rBkF1svM8wjl/YPRrg2N2Wmp+4qJYkWtJsbew1szfKKDm6fPLy4YAanBhIlf9dWw==
+  dependencies:
+    playwright "1.40.1"
+
 "@radix-ui/number@1.0.0":
   version "1.0.0"
   resolved "https://registry.npmmirror.com/@radix-ui/number/-/number-1.0.0.tgz"
@@ -2894,11 +2901,6 @@ color@^4.0.1:
     color-convert "^2.0.1"
     color-string "^1.9.0"
 
-colord@^2.9:
-  version "2.9.3"
-  resolved "https://registry.npmmirror.com/colord/-/colord-2.9.3.tgz"
-  integrity sha512-jeC1axXpnb0/2nn/Y1LPuLdgXBLH7aDcHu4KEKfqw3CUhX7ZpfBSlPKyqXE6btIgEzfWtrX3/tyBCaCvXvMkOw==
-
 colorette@^2.0.19:
   version "2.0.20"
   resolved "https://registry.npmmirror.com/colorette/-/colorette-2.0.20.tgz"
@@ -3000,14 +3002,6 @@ css-color-names@^0.0.4:
   resolved "https://registry.npmmirror.com/css-color-names/-/css-color-names-0.0.4.tgz"
   integrity sha512-zj5D7X1U2h2zsXOAM8EyUREBnnts6H+Jm+d1M2DbiQQcUtnqgQsMrdo8JW9R80YFUmIdBZeMu5wvYM7hcgWP/Q==
 
-css-selector-tokenizer@^0.8:
-  version "0.8.0"
-  resolved "https://registry.npmmirror.com/css-selector-tokenizer/-/css-selector-tokenizer-0.8.0.tgz"
-  integrity sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==
-  dependencies:
-    cssesc "^3.0.0"
-    fastparse "^1.1.2"
-
 css-unit-converter@^1.1.1:
   version "1.1.2"
   resolved "https://registry.npmmirror.com/css-unit-converter/-/css-unit-converter-1.1.2.tgz"
@@ -3022,17 +3016,6 @@ csstype@^3.0.2:
   version "3.1.2"
   resolved "https://registry.npmmirror.com/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
-
-daisyui@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.npmmirror.com/daisyui/-/daisyui-3.5.1.tgz"
-  integrity sha512-7GG+9QXnr2qQMCqnyFU8TxpaOYJigXiEtmzoivmiiZZHvxqIwYdaMAkgivqTVxEgy3Hot3m1suzZjmt1zUrvmA==
-  dependencies:
-    colord "^2.9"
-    css-selector-tokenizer "^0.8"
-    postcss "^8"
-    postcss-js "^4"
-    tailwindcss "^3"
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
@@ -3673,11 +3656,6 @@ fast-levenshtein@^2.0.6:
   resolved "https://registry.npmmirror.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
 
-fastparse@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmmirror.com/fastparse/-/fastparse-1.1.2.tgz"
-  integrity sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==
-
 fastq@^1.6.0:
   version "1.15.0"
   resolved "https://registry.npmmirror.com/fastq/-/fastq-1.15.0.tgz"
@@ -3763,7 +3741,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npmmirror.com/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
 
-fsevents@~2.3.2:
+fsevents@2.3.2, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.npmmirror.com/fsevents/-/fsevents-2.3.2.tgz"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
@@ -4998,6 +4976,20 @@ pirates@^4.0.1:
   resolved "https://registry.npmmirror.com/pirates/-/pirates-4.0.5.tgz"
   integrity sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==
 
+playwright-core@1.40.1:
+  version "1.40.1"
+  resolved "https://registry.npmmirror.com/playwright-core/-/playwright-core-1.40.1.tgz#442d15e86866a87d90d07af528e0afabe4c75c05"
+  integrity sha512-+hkOycxPiV534c4HhpfX6yrlawqVUzITRKwHAmYfmsVreltEl6fAZJ3DPfLMOODw0H3s1Itd6MDCWmP1fl/QvQ==
+
+playwright@1.40.1:
+  version "1.40.1"
+  resolved "https://registry.npmmirror.com/playwright/-/playwright-1.40.1.tgz#a11bf8dca15be5a194851dbbf3df235b9f53d7ae"
+  integrity sha512-2eHI7IioIpQ0bS1Ovg/HszsN/XKNwEG1kbzSDDmADpclKc7CyqkHw7Mg2JCz/bbCxg25QUPcjksoMW7JcIFQmw==
+  dependencies:
+    playwright-core "1.40.1"
+  optionalDependencies:
+    fsevents "2.3.2"
+
 postcss-functions@^3:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/postcss-functions/-/postcss-functions-3.0.0.tgz"
@@ -5025,7 +5017,7 @@ postcss-js@^2:
     camelcase-css "^2.0.1"
     postcss "^7.0.18"
 
-postcss-js@^4, postcss-js@^4.0.1:
+postcss-js@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmmirror.com/postcss-js/-/postcss-js-4.0.1.tgz"
   integrity sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==
@@ -5119,7 +5111,7 @@ postcss@^7, postcss@^7.0.18, postcss@^7.0.32:
     picocolors "^0.2.1"
     source-map "^0.6.1"
 
-postcss@^8, postcss@^8.0.0, postcss@^8.3.5, postcss@^8.4.21, postcss@^8.4.23:
+postcss@^8.0.0, postcss@^8.3.5, postcss@^8.4.21, postcss@^8.4.23:
   version "8.4.23"
   resolved "https://registry.npmmirror.com/postcss/-/postcss-8.4.23.tgz"
   integrity sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==
@@ -5842,34 +5834,6 @@ tailwindcss-animate@^1.0.7:
   version "1.0.7"
   resolved "https://registry.npmjs.org/tailwindcss-animate/-/tailwindcss-animate-1.0.7.tgz#318b692c4c42676cc9e67b19b78775742388bef4"
   integrity sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==
-
-tailwindcss@^3:
-  version "3.3.3"
-  resolved "https://registry.npmmirror.com/tailwindcss/-/tailwindcss-3.3.3.tgz#90da807393a2859189e48e9e7000e6880a736daf"
-  integrity sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==
-  dependencies:
-    "@alloc/quick-lru" "^5.2.0"
-    arg "^5.0.2"
-    chokidar "^3.5.3"
-    didyoumean "^1.2.2"
-    dlv "^1.1.3"
-    fast-glob "^3.2.12"
-    glob-parent "^6.0.2"
-    is-glob "^4.0.3"
-    jiti "^1.18.2"
-    lilconfig "^2.1.0"
-    micromatch "^4.0.5"
-    normalize-path "^3.0.0"
-    object-hash "^3.0.0"
-    picocolors "^1.0.0"
-    postcss "^8.4.23"
-    postcss-import "^15.1.0"
-    postcss-js "^4.0.1"
-    postcss-load-config "^4.0.1"
-    postcss-nested "^6.0.1"
-    postcss-selector-parser "^6.0.11"
-    resolve "^1.22.2"
-    sucrase "^3.32.0"
 
 tailwindcss@^3.3.1:
   version "3.3.2"
