@@ -31,6 +31,6 @@ stats.html
 
 .idea
 /test-results/
-/playwright-report/
 /blob-report/
 /playwright/.cache/
+playwright-report
