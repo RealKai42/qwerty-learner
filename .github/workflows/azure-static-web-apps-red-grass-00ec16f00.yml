@@ -1,9 +1,9 @@
 name: Azure Static Web Apps CI/CD
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
 jobs:
   build_and_deploy_job:

@@ -1,8 +1,8 @@
 name: Deployment to AliYun
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
