@@ -30,3 +30,7 @@ pnpm-lock.yaml
 stats.html
 
 .idea
+/test-results/
+/blob-report/
+/playwright/.cache/
+playwright-report

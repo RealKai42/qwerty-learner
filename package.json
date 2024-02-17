@@ -57,6 +57,7 @@
     "start": "vite",
     "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",
+    "test:e2e": "playwright test",
     "lint": "eslint .",
     "prettier": "prettier --write .",
     "prepare": "husky install"
@@ -80,6 +81,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.56",
+    "@playwright/test": "^1.40.1",
     "@svgr/core": "^7.0.0",
     "@svgr/plugin-jsx": "^7.0.0",
     "@tailwindcss/forms": "^0.5.3",
