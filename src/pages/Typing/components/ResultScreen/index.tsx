@@ -1,5 +1,6 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import ShareButton from '../ShareButton'
+import { AuthorButton } from './AuthorButton'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
@@ -240,7 +241,8 @@ const ResultScreen = () => {
                   <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={wrongWords.length} />
                 </div>
               </div>
-              <div className="ml-2 flex flex-col items-center justify-end gap-3.5 text-xl">
+              <div className="ml-2 flex flex-col items-center justify-end gap-3 text-xl">
+                <AuthorButton />
                 {!isReviewMode && (
                   <>
                     <ShareButton />

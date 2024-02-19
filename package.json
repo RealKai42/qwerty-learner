@@ -7,6 +7,7 @@
     "@floating-ui/react": "^0.20.1",
     "@headlessui/react": "^1.7.13",
     "@headlessui/tailwindcss": "^0.1.2",
+    "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-progress": "^1.0.2",
     "@radix-ui/react-radio-group": "^1.1.2",
