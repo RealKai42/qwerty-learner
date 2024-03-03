@@ -1,0 +1,796 @@
+[
+    {
+        "name": "too much",
+        "trans": [
+            "太多"
+        ],
+        "usphone": "tuː ˈmʌtʃ",
+        "ukphone": "tuː ˈmʌtʃ"
+    },
+    {
+        "name": "candy",
+        "trans": [
+            "糖果"
+        ],
+        "usphone": "ˈkændi",
+        "ukphone": "ˈkændi"
+    },
+    {
+        "name": "go to bed",
+        "trans": [
+            "去睡；就寝"
+        ],
+        "usphone": "ɡoʊ tu bɛd",
+        "ukphone": "ɡəʊ tuː bɛd"
+    },
+    {
+        "name": "early",
+        "trans":   [
+                  "早"
+        ],
+        "usphone": "ˈɜrli",
+        "ukphone": "ˈɜːli"
+    },
+    {
+        "name": "exercise",
+        "trans": [
+            "锻炼"
+        ],
+        "usphone": "ˈɛksərsaɪz",
+        "ukphone": "ˈeksəsaɪz"
+    },
+    {
+        "name": "tired",
+        "trans": [
+            "困倦的；疲倦的"
+        ],
+        "usphone": "ˈtaɪrd",
+        "ukphone": "ˈtaɪəd"
+    },
+    {
+        "name": "drink",
+        "trans": [
+            "喝；饮"
+        ],
+        "usphone": "drɪŋk",
+        "ukphone": "drɪŋk"
+    },
+    {
+        "name": "before",
+        "trans": [
+            "在……之前"
+        ],
+        "usphone": "bɪˈfɔr",
+        "ukphone": "bɪˈfɔː"
+    },
+    {
+        "name": "dirty",
+        "trans": [
+            "肮脏的"
+        ],
+        "usphone": "ˈdɜrti",
+        "ukphone": "ˈdɜːti"
+    },
+    {
+        "name": "always",
+        "trans": [
+            "总是"
+        ],
+        "usphone": "ˈɔlweɪz",
+        "ukphone": "ˈɔːlweɪz"
+    },
+    {
+        "name": "stomachache",
+        "trans": [
+            "胃疼"
+        ],
+        "usphone": "ˈstʌməkeɪk",
+        "ukphone": "ˈstʌmək-eɪk"
+    },
+    {
+        "name": "headache",
+        "trans": [
+            "头疼"
+        ],
+        "usphone": "ˈhɛdeɪk",
+        "ukphone": "ˈhedeɪk"
+    },
+    {
+        "name": "toothache",
+        "trans": [
+            "牙疼"
+        ],
+        "usphone": "ˈtuːθeɪk",
+        "ukphone": "ˈtuːθeɪk"
+    },
+    {
+        "name": "a lot of",
+        "trans": [
+            "大量；许多"
+        ],
+        "usphone": "ə ˈlɑt əv",
+        "ukphone": "ə ˈlɒt əv"
+    },
+    {
+        "name": "sleepy",
+        "trans": [
+            "困的；欲睡的"
+        ],
+        "usphone": "ˈsliːpi",
+        "ukphone": "ˈsliːpi"
+    },
+    {
+        "name": "subject",
+        "trans": [
+            "学科"
+        ],
+        "usphone": "ˈsʌbdʒɪkt",
+        "ukphone": "ˈsʌbdʒɛkt"
+    },
+    {
+        "name": "mark",
+        "trans": [
+            "分数"
+        ],
+        "usphone": "mɑrk",
+        "ukphone": "mɑːk"
+    },
+    {
+        "name": "advice",
+        "trans": [
+            "建议"
+        ],
+        "usphone": "ædˈvaɪs",
+        "ukphone": "ədˈvaɪs"
+    },
+    {
+        "name": "more",
+        "trans": [
+            "更多的"
+        ],
+        "usphone": "mɔr",
+        "ukphone": "mɔː"
+    },
+    {
+        "name": "New Year’s Day",
+        "trans": [
+            "新年"
+        ],
+        "usphone": "nu ˈjirz deɪ",
+        "ukphone": "nju ˈjɪəz deɪ"
+    },
+    {
+        "name": "Tree Planting Day",
+        "trans": [
+            "植树节"
+        ],
+        "usphone": "tri ˈplæntɪŋ deɪ",
+        "ukphone": "tri ˈplɑːntɪŋ deɪ"
+    },
+    {
+        "name": "Mother’s Day",
+        "trans": [
+            "母亲节"
+        ],
+        "usphone": "ˈmʌðərz deɪ",
+        "ukphone": "ˈmʌðəz deɪ"
+    },
+    {
+        "name": "Children’s Day",
+        "trans": [
+            "儿童节"
+        ],
+        "usphone": "ˈtʃɪldrənz deɪ",
+        "ukphone": "ˈtʃɪldrənz deɪ"
+    },
+    {
+        "name": "Father’s Day",
+        "trans": [
+            "父亲节"
+        ],
+        "usphone": "ˈfɑðərz deɪ",
+        "ukphone": "ˈfɑːðəz deɪ"
+    },
+    {
+        "name": "Teachers’ Day",
+        "trans": [
+            "教师节"
+        ],
+        "usphone": "ˈtiːtʃərz deɪ",
+        "ukphone": "ˈtiːtʃəz deɪ"
+    },
+    {
+        "name": "National Day",
+        "trans": [
+            "国庆节"
+        ],
+        "usphone": "ˈnæʃənəl deɪ",
+        "ukphone": "ˈnæʃənəl deɪ"
+    },
+    {
+        "name": "Christmas Day",
+        "trans": [
+            "圣诞节"
+        ],
+        "usphone": "ˈkrɪsməs deɪ",
+        "ukphone": "ˈkrɪsməs deɪ"
+    },
+    {
+        "name": "birthday",
+        "trans": [
+            "生日"
+        ],
+        "usphone": "ˈbɜrθdeɪ",
+        "ukphone": "ˈbɜːθdeɪ"
+    },
+    {
+        "name": "fifth (5th)",
+        "trans": [
+            "第五"
+        ],
+        "usphone": "fɪfθ",
+        "ukphone": "fɪfθ"
+    },
+    {
+        "name": "tenth (10th)",
+        "trans": [
+            "第十"
+        ],
+        "usphone": "tenθ",
+        "ukphone": "tenθ"
+    },
+    {
+        "name": "twelfth (12th)",
+        "trans": [
+            "第十二"
+        ],
+        "usphone": "twɛlfθ",
+        "ukphone": "twɛlfθ"
+    },
+    {
+        "name": "twenty-fifth (25th)",
+        "trans": [
+            "第二十五"
+        ],
+        "usphone": "ˈtwɛnti fɪfθ",
+        "ukphone": "ˈtwɛnti fɪfθ"
+    },
+    {
+        "name": "plant",
+        "trans": [
+            "种植"
+        ],
+        "usphone": "plænt",
+        "ukphone": "plɑːnt"
+    },
+    {
+        "name": "make a poster",
+        "trans": [
+            "制作海报"
+        ],
+        "usphone": "meɪk ə ˈpoʊstər",
+        "ukphone": "meɪk ə ˈpəʊstər"
+    },
+    {
+        "name": "celebrate",
+        "trans": [
+            "庆祝"
+        ],
+        "usphone": "ˈsɛləˌbreɪt",
+        "ukphone": "ˈsɛlɪbreɪt"
+    },
+    {
+        "name": "have a picnic",
+        "trans": [
+            "野餐"
+        ],
+        "usphone": "hæv ə ˈpɪknɪk",
+        "ukphone": "hæv ə ˈpɪknɪk"
+    },
+    {
+        "name": "office",
+        "trans": [
+            "办公室"
+        ],
+        "usphone": "ˈɔfɪs",
+        "ukphone": "ˈɒfɪs"
+    },
+    {
+        "name": "together",
+        "trans": [
+            "在一起；共同"
+        ],
+        "usphone": "təˈɡɛðər",
+        "ukphone": "təˈɡɛðər"
+    },
+    {
+        "name": "special",
+        "trans": [
+            "特殊的；特别的"
+        ],
+        "usphone": "ˈspɛʃəl",
+        "ukphone": "ˈspɛʃəl"
+    },
+    {
+        "name": "send an email",
+        "trans": [
+            "发送电子邮件"
+        ],
+        "usphone": "sɛnd ən ˈi.ˌmeɪl",
+        "ukphone": "sɛnd ən ˈiː.ˌmeɪl"
+    },
+    {
+        "name": "write a letter",
+        "trans": [
+            "写信"
+        ],
+        "usphone": "raɪt ə ˈlɛtər",
+        "ukphone": "raɪt ə ˈlɛtə"
+    },
+    {
+        "name": "make a phone call",
+        "trans": [
+            "打电话"
+        ],
+        "usphone": "meɪk ə foʊn kɔːl",
+        "ukphone": "meɪk ə fəʊn kɔːl"
+    },
+    {
+        "name": "send a short message",
+        "trans": [
+            "发送短消息"
+        ],
+        "usphone": "sɛnd ə ʃɔrt ˈmɛsɪdʒ",
+        "ukphone": "sɛnd ə ʃɔːrt ˈmɛsɪdʒ"
+    },
+    {
+        "name": "mail a present",
+        "trans": [
+            "邮寄礼物"
+        ],
+        "usphone": "meɪl ə ˈprɛzənt",
+        "ukphone": "meɪl ə ˈprɛzənt"
+    },
+    {
+        "name": "make a video call",
+        "trans": [
+            "打视频电话"
+        ],
+        "usphone": "meɪk ə ˈvɪdioʊ kɔːl",
+        "ukphone": "meɪk ə ˈvɪdiəʊ kɔːl"
+    },
+    {
+        "name": "say",
+        "trans": [
+            "说；讲"
+        ],
+        "usphone": "seɪ",
+        "ukphone": "seɪ"
+    },
+    {
+        "name": "make a card",
+        "trans": [
+            "制作卡片"
+        ],
+        "usphone": "meɪk ə kɑːrd",
+        "ukphone": "meɪk ə kɑːd"
+    },
+    {
+        "name": "everywhere",
+        "trans": [
+            "各处；到处"
+        ],
+        "usphone": "ˈɛvriwɛr",
+        "ukphone": "ˈɛvrɪwɛə"
+    },
+    {
+        "name": "flower show",
+        "trans": [
+            "花展"
+        ],
+        "usphone": "ˈflaʊər ʃoʊ",
+        "ukphone": "ˈflaʊər ʃəʊ"
+    },
+    {
+        "name": "cleaned the window",
+        "trans": [
+            "擦窗子"
+        ],
+        "usphone": "kliːnd ðə ˈwɪndoʊ",
+        "ukphone": "kliːnd ðə ˈwɪndəʊ"
+    },
+    {
+        "name": "watched TV",
+        "trans": [
+            "看电视"
+        ],
+        "usphone": "wɑtʃt ˈtiːˈviː",
+        "ukphone": "wɒtʃt ˈtiːˈviː"
+    },
+    {
+        "name": "climbed a hill",
+        "trans": [
+            "爬山"
+        ],
+        "usphone": "klaɪmd ə hɪl",
+        "ukphone": "klaɪmd ə hɪl"
+    },
+    {
+        "name": "visited grandparents",
+        "trans": [
+            "看望祖父母"
+        ],
+        "usphone": "ˈvɪzɪtɪd ˈɡrændˌpɛrənts",
+        "ukphone": "ˈvɪzɪtɪd ˈɡrænˌpærənts"
+    },
+    {
+        "name": "danced",
+        "trans": [
+            "跳舞"
+        ],
+        "usphone": "dænst",
+        "ukphone": "dɑːnst"
+    },
+    {
+        "name": "jumped rope",
+        "trans": [
+            "跳绳"
+        ],
+        "usphone": "dʒʌmpt roʊp",
+        "ukphone": "dʒʌmpt rəʊp"
+    },
+    {
+        "name": "listened to music",
+        "trans": [
+            "听音乐"
+        ],
+        "usphone": "ˈlɪsənd tu ˈmjuːzɪk",
+        "ukphone": "ˈlɪsənd tu ˈmjuːzɪk"
+    },
+    {
+        "name": "rowed a boat",
+        "trans": [
+            "划船"
+        ],
+        "usphone": "roʊd ə boʊt",
+        "ukphone": "rəʊd ə bəʊt"
+    },
+    {
+        "name": "played computer games",
+        "trans": [
+            "玩电子游戏"
+        ],
+        "usphone": "pleɪd kəmˈpjuːtər ɡeɪmz",
+        "ukphone": "pleɪd kəmˈpjuːtə ɡeɪmz"
+    },
+    {
+        "name": "stayed at home",
+        "trans": [
+            "呆在家里"
+        ],
+        "usphone": "steɪd æt hoʊm",
+        "ukphone": "steɪd æt həʊm"
+    },
+    {
+        "name": "played the piano",
+        "trans": [
+            "弹钢琴"
+        ],
+        "usphone": "pleɪd ðə piˈænoʊ",
+        "ukphone": "pleɪd ðə piˈænəʊ"
+    },
+    {
+        "name": "played chess",
+        "trans": [
+            "下棋"
+        ],
+        "usphone": "pleɪd tʃɛs",
+        "ukphone": "pleɪd tʃɛs"
+    },
+    {
+        "name": "washed clothes",
+        "trans": [
+            "洗衣服"
+        ],
+        "usphone": "wɑʃt kloʊðz",
+        "ukphone": "wɒʃt kləʊðz"
+    },
+    {
+        "name": "boring",
+        "trans": [
+            "单调的；乏味的"
+        ],
+        "usphone": "ˈbɔrɪŋ",
+        "ukphone": "ˈbɔːrɪŋ"
+    },
+    {
+        "name": "badminton",
+        "trans": [
+            "羽毛球"
+        ],
+        "usphone": "ˈbædmɪntən",
+        "ukphone": "ˈbædmɪntən"
+    },
+    {
+        "name": "won",
+        "trans": [
+            "赢；获胜"
+        ],
+        "usphone": "wʌn",
+        "ukphone": "wʌn"
+    },
+    {
+    "name": "went to the beach",
+    "trans": [
+        "过去式：去海边"
+    ],
+    "usphone": "wɛnt tu ðə bitʃ",
+    "ukphone": "wɛnt tu ðiː biːtʃ"
+},
+
+{
+    "name": "drank cold drinks",
+    "trans": [
+        "过去式：喝冷饮"
+    ],
+    "usphone": "dræŋk koʊld drɪŋks",
+    "ukphone": "dræŋk kəʊld drɪŋks"
+},
+
+{
+    "name": "swam",
+    "trans": [
+        "swim的过去式：游泳"
+    ],
+    "usphone": "swæm",
+    "ukphone": "swæm"
+},
+
+{
+    "name": "ate ice cream",
+    "trans": [
+        "过去式：吃冰激凌"
+    ],
+    "usphone": "ˈeɪt aɪs krim",
+    "ukphone": "eɪt aɪs kriːm"
+},
+
+{
+    "name": "the Stone Forest",
+    "trans": [
+        "石林"
+    ],
+    "usphone": "ðə ston ˈfɔrɪst",
+    "ukphone": "ðiː stəʊn ˈfɒrɪst"
+},
+
+{
+    "name": "bought some gifts",
+    "trans": [
+        "过去式：买礼物"
+    ],
+    "usphone": "bɔt sʌm ɡɪfts",
+    "ukphone": "bɔt sʌm ɡɪfts"
+},
+
+{
+    "name": "took photos",
+    "trans": [
+        "过去式：拍照片"
+    ],
+    "usphone": "tʊk ˈfoʊtoʊz",
+    "ukphone": "tʊk ˈfəʊtəʊz"
+},
+
+{
+    "name": "saw flowers",
+    "trans": [
+        "过去式：赏花"
+    ],
+    "usphone": "sɔ flaʊərz",
+    "ukphone": "sɔː flaʊəz"
+},
+
+{
+    "name": "slept",
+    "trans": [
+        "sleep的过去式：睡觉"
+    ],
+    "usphone": "slɛpt",
+    "ukphone": "slɛpt"
+},
+
+{
+    "name": "delicious",
+    "trans": [
+        "美味的；可口的"
+    ],
+    "usphone": "dɪˈlɪʃəs",
+    "ukphone": "dɪˈlɪʃəs"
+},
+
+{
+    "name": "felt happy",
+    "trans": [
+        "过去式：觉得高兴"
+    ],
+    "usphone": "fɛlt ˈhæpi",
+    "ukphone": "fɛlt ˈhæpi"
+},
+
+{
+    "name": "sad",
+    "trans": [
+        "悲哀的；难过的"
+    ],
+    "usphone": "sæd",
+    "ukphone": "sæd"
+},
+
+{
+    "name": "left",
+    "trans": [
+        "leave的过去式：离开"
+    ],
+    "usphone": "lɛft",
+    "ukphone": "lɛft"
+},
+
+{
+    "name": "French fries",
+    "trans": [
+        "法式炸薯条"
+    ],
+    "usphone": "frɛntʃ fraɪz",
+    "ukphone": "frɛntʃ fraɪz"
+},
+{
+    "name": "were",
+    "trans": [
+        "are的过去式：是"
+    ],
+    "usphone": "wər",
+    "ukphone": "wər"
+},
+{
+    "name": "was born",
+    "trans": [
+        "过去式：出生"
+    ],
+    "usphone": "wɑz bɔrn",
+    "ukphone": "wɒz bɔːrn"
+},
+{
+    "name": "started to speak",
+    "trans": [
+        "过去式：开始说话"
+    ],
+    "usphone": "ˈstɑrtɪd tu spiːk",
+    "ukphone": "ˈstɑːtɪd tu spiːk"
+},
+{
+    "name": "learned to walk",
+    "trans": [
+        "过去式：学走路"
+    ],
+    "usphone": "lɜːrnd tu wɔːk",
+    "ukphone": "lɜːnd tuː wɔːk"
+},
+
+{
+    "name": "learned to ride a bike",
+    "trans": [
+        "过去式：学骑自行车"
+    ],
+    "usphone": "lɜːrnd tu raɪd ə ˈbaɪk",
+    "ukphone": "lɜːnd tuː raɪd ə baɪk"
+},
+
+{
+    "name": "went to kindergarten",
+    "trans": [
+        "过去式：上幼儿园"
+    ],
+    "usphone": "wɛnt tu ˈkɪndərˌɡɑːrdən",
+    "ukphone": "wɛnt tuː ˈkɪndəˌɡɑːtən"
+},
+
+{
+    "name": "went to school",
+    "trans": [
+        "过去式：上学"
+    ],
+    "usphone": "wɛnt tu skul",
+    "ukphone": "wɛnt tuː skuːl"
+},
+
+{
+    "name": "learned to swim",
+    "trans": [
+        "过去式：学游泳"
+    ],
+    "usphone": "lɜːrnd tu swɪm",
+    "ukphone": "lɜːnd tuː swɪm"
+},
+
+{
+    "name": "fifteenth (15th)",
+    "trans": [
+        "第十五"
+    ],
+    "usphone": "ˌfɪfˈtiːnθ",
+    "ukphone": "fɪfˈtiːnθ"
+},
+
+{
+    "name": "started to buy things",
+    "trans": [
+        "过去式：开始学买东西"
+    ],
+    "usphone": "ˈstɑrtɪd tu baɪ θɪŋz",
+    "ukphone": "ˈstɑːtɪd tuː baɪ θɪŋz"
+},
+
+{
+    "name": "started to study English",
+    "trans": [
+        "过去式：开始学英语"
+    ],
+    "usphone": "ˈstɑrtɪd tu ˈstʌdi ˈɪŋɡlɪʃ",
+    "ukphone": "ˈstɑːtɪd tuː ˈstʌdi ˈɪŋɡlɪʃ"
+},
+
+{
+    "name": "started to use a computer",
+    "trans": [
+        "过去式：开始使用电脑"
+    ],
+    "usphone": "ˈstɑrtɪd tuː juz ə kəmˈpjuːtər",
+    "ukphone": "ˈstɑːtɪd tuː juːz ə kəmˈpjuːtə(r)"
+},
+
+{
+    "name": "all over",
+    "trans": [
+        "到处；各处"
+    ],
+    "usphone": "ɔːl ˈoʊvər",
+    "ukphone": "ɔːl ˈəʊvə(r)"
+},
+
+{
+    "name": "out of",
+    "trans": [
+        "离开（某处）"
+    ],
+    "usphone": "aʊt əv",
+    "ukphone": "aʊt əv"
+},
+
+{
+    "name": "into",
+    "trans": [
+        "进入；到……里"
+    ],
+    "usphone": "ˈɪntuː",
+    "ukphone": "ˈɪntuː"
+},
+
+{
+    "name": "chopsticks",
+    "trans": [
+        "筷子"
+    ],
+    "usphone": "ˈtʃɑpˌstɪks",
+    "ukphone": "ˈtʃɒp.stɪks"
+},
+
+{
+    "name": "wet",
+    "trans": [
+        "湿的，潮湿的"
+    ],
+    "usphone": "wɛt",
+    "ukphone": "wɛt"
+}
+]

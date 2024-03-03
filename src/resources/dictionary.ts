@@ -1212,6 +1212,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'pep-sl-wu2',
+    name: '人教版(新起点)五年级下',
+    description: '人教版五年级下册',
+    category: '青少年英语',
+    tags: ['人教版'],
+    url: '/dicts/PEP_SL_XiaoXue5_2_t.json',
+    length: 96,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'liu1',
     name: '六年级上',
     description: '人教版六年级上册',
