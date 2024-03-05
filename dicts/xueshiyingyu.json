@@ -1,0 +1,6281 @@
+[
+  {
+    "name": "abandon",
+    "trans": [
+      "vt.放弃，抛弃\nHe claimed that his parents had abandoned him他声称父母遗弃了他。"
+    ],
+    "usphone": "ə'bændən"
+  },
+  {
+    "name": "absent",
+    "trans": [
+      "a.缺席的，不在的 \nHe has been absent from his desk for two weeks他已经有两个星期没有坐在办公桌前了。\n【派】 absence n. 缺席，不在场  【反】 present a. 出席的，在场的\n【考】 be absent from 缺席"
+    ],
+    "usphone": "'æbsənt"
+  },
+  {
+    "name": "absolute",
+    "trans": [
+      "a.绝对的，完全的\nIt's not really suited to absolute beginners它并不真正适合从零开始的初学者。"
+    ],
+    "usphone": "'æbsəluːt"
+  },
+  {
+    "name": "absorb",
+    "trans": [
+      "vt.吸收；吸引\nPlants absorb carbon dioxide from the air and moisture from the soil植物从空气中吸收二氧化碳并从土壤中汲取水分。"
+    ],
+    "usphone": "əb'sɔːb"
+  },
+  {
+    "name": "abuse",
+    "trans": [
+      "n.滥用；虐待，辱骂 \nI was left shouting abuse as the car sped off  汽车飞驰而去，留下我在那里大声咒骂。"
+    ],
+    "usphone": "ə'bjuːs"
+  },
+  {
+    "name": "academic",
+    "trans": [
+      "a.学院的，学术的\nTheir academic standards are high他们的教学水平很高。"
+    ],
+    "usphone": "ækə'demik"
+  },
+  {
+    "name": "accept",
+    "trans": [
+      "v.接受，认可\nEventually Sam persuaded her to accept an offer of marriage最终萨姆说服她接受了求婚。"
+    ],
+    "usphone": "ək'sept"
+  },
+  {
+    "name": "accompany",
+    "trans": [
+      "v.陪伴，伴随\nKen agreed to accompany me on a trip to Africa肯答应陪我一起去非洲。"
+    ],
+    "usphone": "ə'kʌmpəni"
+  },
+  {
+    "name": "accomplish",
+    "trans": [
+      "v.完成 \nIf we'd all work together, I think we could accomplish our goal只要大家齐心协力，我想我们就能实现目标。"
+    ],
+    "usphone": "ə'kɔmpliʃ"
+  },
+  {
+    "name": "account",
+    "trans": [
+      "n.账目；解释；描述 v. 说明，解释\nThe flight was postponed on account of bad weather. 因为天气恶劣，飞行延期了。\n【考】 on account of 因为，由于；account for 对……做出解释"
+    ],
+    "usphone": "ə'kaunt"
+  },
+  {
+    "name": "accumulate",
+    "trans": [
+      "v.积累；堆积\nHouseholds accumulate wealth across a broad spectrum of assets家庭在以各种各样的资产形式积累财富。"
+    ],
+    "usphone": "ə'kjuːmjuleit"
+  },
+  {
+    "name": "accurate",
+    "trans": [
+      "a.准确的，精确的\nPolice have stressed that this is the most accurate description of the killer to date警方强调这是迄今对凶手最精确的描述。"
+    ],
+    "usphone": "'ækjurit"
+  },
+  {
+    "name": "accuse",
+    "trans": [
+      "vt.指控，指责，谴责；控诉\nAccuse sb of doing sth charge sb with doing sth. 因为某事指控某人，指控某人做了某事。\n【考】 accuse sb. of.... 指控某人……  【近】 charge"
+    ],
+    "usphone": "əkjuːz"
+  },
+  {
+    "name": "accustomed",
+    "trans": [
+      "a.惯常的，习惯的\nIt will not take you very long to be accustomed to the way we do it.你不必花很长的时间就能习惯我们做事的方法。\n【考】 be accustomed to + n. 习惯于"
+    ],
+    "usphone": "ə'kʌstəmd"
+  },
+  {
+    "name": "achieve",
+    "trans": [
+      "v.完成， 达到，实现，获得\nThere are many who will work hard to achieve these goals有志之士将会共同为实现这些目标而努力。"
+    ],
+    "usphone": "ə'tʃiːv"
+  },
+  {
+    "name": "acquaintance",
+    "trans": [
+      "n.熟人，相识\nThe proprietor was an old acquaintance of his  业主是他的一位旧相识。"
+    ],
+    "usphone": "ə'kweintəns"
+  },
+  {
+    "name": "acquire",
+    "trans": [
+      "v.取得，学到\nI've never acquired a taste for wine\n我一向喝不惯葡萄酒。"
+    ],
+    "usphone": "ə'kwaiə"
+  },
+  {
+    "name": "act",
+    "trans": [
+      "n.行为，动作 v. 行动；起作用；演戏\nThe deaths occurred when police acted to stop widespread looting and vandalism警方采取行动制止猖狂的打砸抢行为时有多人丧生。"
+    ],
+    "usphone": "ækt"
+  },
+  {
+    "name": "active",
+    "trans": [
+      "a.活跃的，积极的；在活动中的\nHaving an active youngster about the house can be quite wearing.\n家里有个好动的小孩会是相当累人的。"
+    ],
+    "usphone": "'æktiv"
+  },
+  {
+    "name": "activity",
+    "trans": [
+      "n.活动You can take part in activities from canoeing to bird watching.\n你可以参与从划独木舟到观鸟等各种活动。"
+    ],
+    "usphone": "æk'tiviti"
+  },
+  {
+    "name": "actual",
+    "trans": [
+      "a.实际的；现实的The segments are filmed using either local actors or the actual people involved这些片断是由当地的演员或真实的当事人参与拍摄的。"
+    ],
+    "usphone": "'æktjuəl"
+  },
+  {
+    "name": "add",
+    "trans": [
+      "v.添加；加\nSincere performances and gritty Boston settings add to the film's realism.\n真诚的表演和对波士顿这一背景城市的真实刻画增添了电影的现实主义色彩。\n【考】 add…to 把……加到……上；add up to 合计达，总数达"
+    ],
+    "usphone": "æd"
+  },
+  {
+    "name": "address",
+    "trans": [
+      "n.地址，通讯处 n./v. 演讲，致词\nApplications should be addressed to: The business affairs editor.\n申请表应寄给；商务编辑。"
+    ],
+    "usphone": "ə'dres"
+  },
+  {
+    "name": "adequate",
+    "trans": [
+      "a.足够的，恰当的One in four people worldwide are without adequate homes\n全世界有"
+    ],
+    "usphone": "'ædikwit"
+  },
+  {
+    "name": "adjust",
+    "trans": [
+      "v.调节，调整，使适应We have been preparing our fighters to adjust themselves to civil society\n我们一直在培训我们的战士，以使他们适应普通的社会生活。"
+    ],
+    "usphone": "ə'dʒʌst"
+  },
+  {
+    "name": "admire",
+    "trans": [
+      "v.羡慕，赞赏，钦佩We took time to stop and admire the view.\n我们特意驻足欣赏风景。"
+    ],
+    "usphone": "əd'maiə"
+  },
+  {
+    "name": "admit",
+    "trans": [
+      "v.承认；接纳\nI am willing to admit that I do make mistakes\n我愿意承认我确实会犯错。"
+    ],
+    "usphone": "əd'mit"
+  },
+  {
+    "name": "adopt",
+    "trans": [
+      "v.采用，采纳；收养\nParliament adopted a resolution calling for the complete withdrawal of troops\n议会采纳了要求全部撤军的决议。"
+    ],
+    "usphone": "ə'dɔpt"
+  },
+  {
+    "name": "adult",
+    "trans": [
+      "n.成人Becoming a father signified that he was now an adult\n当了父亲意味着他已是个成年人了。"
+    ],
+    "usphone": "ə'dʌlt"
+  },
+  {
+    "name": "advance",
+    "trans": [
+      "n.前进，进展 v. 推进，促进；前进Everything has been fixed in advance.\n一切都是事先确定好了的。\n【考】 in advance 提前，预先"
+    ],
+    "usphone": "əd'vɑːns"
+  },
+  {
+    "name": "advanced",
+    "trans": [
+      "a.先进的，高级的Without more training or advanced technical skills, they'll lose their jobs.没有进一步的培训或高级技能的话，他们就会丢掉工作。"
+    ],
+    "usphone": "əd'vɑːnst"
+  },
+  {
+    "name": "advantage",
+    "trans": [
+      "n.优点；有利条件，好处We can take advantage of new technology more quickly by farming out computer operations把计算机业务分包出去，我们就可以更快地利用新技术。\n【考】 take advantage of 利用"
+    ],
+    "usphone": "əd'vɑːntidʒ"
+  },
+  {
+    "name": "adventure",
+    "trans": [
+      "n.冒险，惊险活动\nI set off for a new adventure in the United States on the first day of the new year.\n新年第一天，我在美国开始了一次新的冒险。"
+    ],
+    "usphone": "əd'ventʃə"
+  },
+  {
+    "name": "advertise",
+    "trans": [
+      "vt.为……做广告The players can advertise baked beans, but not rugby boots球员可以给烤菜豆做广告，但不能代言橄榄球靴。"
+    ],
+    "usphone": "'ædvətaiz"
+  },
+  {
+    "name": "advise",
+    "trans": [
+      "vt.忠告，劝告；建议\nWe advised that he should leave early. 我们建 议他早点出发。\n【考】 advise 后接 that 从句时须用虚拟语气，即\n“（should+） 动 词 原 形 ”；advise sb. to do  sth. 建议某人做某事"
+    ],
+    "usphone": "əd'vaiz"
+  },
+  {
+    "name": "affair",
+    "trans": [
+      "n.事，事情，事件All their beds were distinctive; Mac's was an iron affair with brass knobs他们的床都各具特色；马克的床是张带球形黄铜柱头的铁家伙。"
+    ],
+    "usphone": "ə'fɛə"
+  },
+  {
+    "name": "affect",
+    "trans": [
+      "vt.影响Nicotine adversely affects the functioning of the heart and arteries\n尼古丁会对心脏及动脉功能造成损害。"
+    ],
+    "usphone": "ə'fekt"
+  },
+  {
+    "name": "affection",
+    "trans": [
+      "n.爱，感情She thought of him with affection\n她很想念他。"
+    ],
+    "usphone": "ə'fekʃən"
+  },
+  {
+    "name": "afford",
+    "trans": [
+      "vt.提供；负担得起，买得起My parents can't even afford a new refrigerator\n我父母甚至买不起一台新冰箱。"
+    ],
+    "usphone": "ə'fɔːd"
+  },
+  {
+    "name": "afraid",
+    "trans": [
+      "a.怕的，害怕的\nShe did not seem at all afraid\n她毫无惧色。"
+    ],
+    "usphone": "ə'freid"
+  },
+  {
+    "name": "ago",
+    "trans": [
+      "ad.以前，……前He was killed a few days ago in a skiing accident\n几天前他在一场滑雪事故中丧生。"
+    ],
+    "usphone": "ə'gəu"
+  },
+  {
+    "name": "agree",
+    "trans": [
+      "vi.同意；赞同\n【考】 agree with sb. 同意某人的意见；agree to do sth. 同意做某事\nIf we agreed all the time it would be a bit boring, wouldn't it?\n如果我们总是意见一致，就会有点无趣，对吗？"
+    ],
+    "usphone": "ə'griː"
+  },
+  {
+    "name": "aggressive",
+    "trans": [
+      "a.侵略的，好斗的Some children are much more aggressive than others\n一些孩子比其他孩子更好斗。"
+    ],
+    "usphone": "ə'gresiv"
+  },
+  {
+    "name": "ahead",
+    "trans": [
+      "ad.前头，在前【考】 ahead of 在……前面，先于Thanks to your help, we accomplished the task ahead of schedule.\n亏得你们帮忙，我们才提前完成了任务。"
+    ],
+    "usphone": "ə'hed"
+  },
+  {
+    "name": "aim",
+    "trans": [
+      "v.瞄准；致力 n. 目标，目的\nHe is aiming for the"
+    ],
+    "usphone": "eim"
+  },
+  {
+    "name": "alarm",
+    "trans": [
+      "n.惊恐，警报（器），闹钟 v. 使惊恐；向……报警The news was greeted with alarm by MPs\n得知这个消息，议员们忧心忡忡。"
+    ],
+    "usphone": "ə'lɑːm"
+  },
+  {
+    "name": "alcohol",
+    "trans": [
+      "n.酒精，酒Do either of you smoke cigarettes or drink alcohol?\n你们俩有人吸烟或喝酒吗？"
+    ],
+    "usphone": "'ælkəhɔl"
+  },
+  {
+    "name": "alike",
+    "trans": [
+      "a.相同的，相像的We looked very alike.\n我们长得很像。"
+    ],
+    "usphone": "ə'laik"
+  },
+  {
+    "name": "alive",
+    "trans": [
+      "a.活着的；有活力的\nShe does not know if he is alive or dead\n她不知道他是生是死。"
+    ],
+    "usphone": "ə'laiv"
+  },
+  {
+    "name": "all",
+    "trans": [
+      "a.全部的，所有的 pron. 全部，一切 ad. 完全，都\n【考】 after all 毕竟；at all 完全，根本；all over 到处，遍及；in all 总共，共计"
+    ],
+    "usphone": "ɔːl"
+  },
+  {
+    "name": "allow",
+    "trans": [
+      "vt.准许The children are not allowed to watch violent TV programmes\n儿童不准收看含暴力内容的电视节目。\n【考】 allow sb. to do sth. 允许某人做某事；allow doing sth. 允许做某事"
+    ],
+    "usphone": "ə'lau"
+  },
+  {
+    "name": "alone",
+    "trans": [
+      "a.独自的，单独的 ad. 独自地，单独地\nHe did not have enough money to have the tire patched up, let alone buy a new one.\n他的钱还不够补这个轮胎，更别提买个新的了。\n【考】 let alone 不打扰；更别说"
+    ],
+    "usphone": "ə'ləun"
+  },
+  {
+    "name": "along",
+    "trans": [
+      "ad.向前 prep. 沿着\nNewman walked along the street alone\n纽曼独自走在街上。"
+    ],
+    "usphone": "ə'lɔŋ"
+  },
+  {
+    "name": "although",
+    "trans": [
+      "conj.虽然，即使\nAlthough he is known to only a few, his reputation among them is very great\n虽然知道他的人不多，但他在这些人中名声却很响。"
+    ],
+    "usphone": "ɔːl'ðəu"
+  },
+  {
+    "name": "altogether",
+    "trans": [
+      "ad.完全，总之，全部\nWhen Artie stopped calling altogether, Julie found a new man\n当阿蒂彻底不再上门后，朱莉又找了个男人。"
+    ],
+    "usphone": "ɔːltə'geðə"
+  },
+  {
+    "name": "always",
+    "trans": [
+      "ad.总是，永远Whenever I get into a relationship, I always fall madly in love\n我每次谈恋爱都深陷其中，无法自拔。"
+    ],
+    "usphone": "'ɔːlweiz"
+  },
+  {
+    "name": "amaze",
+    "trans": [
+      "vt.惊奇，惊叹；震惊\nHe amazed us by his knowledge of Welsh history\n他对威尔士的历史知之甚多，让我们惊讶。"
+    ],
+    "usphone": "ə'meiz"
+  },
+  {
+    "name": "among",
+    "trans": [
+      "prep.在……之中，在……之间\nThey walked among the crowds in Red Square.\n他们在熙熙攘攘的红场散步。"
+    ],
+    "usphone": "ə'mʌŋ"
+  },
+  {
+    "name": "ambition",
+    "trans": [
+      "n.雄心，野心\nHis ambition is to sail round the world\n他的梦想是环球航行。"
+    ],
+    "usphone": "æm'biʃən"
+  },
+  {
+    "name": "ambulance",
+    "trans": [
+      "n.救护车We got an ambulance and rushed her to hospital\n我们叫了一辆救护车，赶紧把她送到了医院。"
+    ],
+    "usphone": "'æmbjuləns"
+  },
+  {
+    "name": "amount",
+    "trans": [
+      "n.数量，总额 vi.（to）总计，等于【考】 a large amount of The system wastes a large amount of water.\n这套系统浪费了大量的水。"
+    ],
+    "usphone": "ə'maunt"
+  },
+  {
+    "name": "amuse",
+    "trans": [
+      "v.给……以消遣，给……以娱乐\nThe thought seemed to amuse him\n这种想法好像把他逗乐了。"
+    ],
+    "usphone": "ə'mjuːz"
+  },
+  {
+    "name": "analysis",
+    "trans": [
+      "n.[ 复数 -ses] 分析，解析\nHer criteria defy analysis\n她的标准让人搞不明白。"
+    ],
+    "usphone": "ə'næləsis"
+  },
+  {
+    "name": "analyze",
+    "trans": [
+      "v.分析，分解We should analyze the cause and effect of this event.\n我们应该分析这场事变的因果。"
+    ],
+    "usphone": "'ænəlaiz"
+  },
+  {
+    "name": "ancient",
+    "trans": [
+      "a.古代的，古老的They believed ancient Greece and Rome were vital sources of learning.\n他们认为古代希腊罗马是知识的重要发源地。"
+    ],
+    "usphone": "'einʃənt"
+  },
+  {
+    "name": "anger",
+    "trans": [
+      "n.愤怒，生气He cried with anger and frustration\n他愤怒而又沮丧得哭了起来。"
+    ],
+    "usphone": "'æŋgə"
+  },
+  {
+    "name": "angle",
+    "trans": [
+      "n.角，角度，观点The boat is now leaning at a"
+    ],
+    "usphone": "'æŋgl"
+  },
+  {
+    "name": "angry",
+    "trans": [
+      "a.愤怒的，生气的【考】 be angry at/with/about be angry with 后面常接的是人;be angry at后面常接的是事 Please don't be angry with me.请不要生我的气 Don't be angry at what I've done. 别因为我所做的事而生气。"
+    ],
+    "usphone": "'æŋgri"
+  },
+  {
+    "name": "announce",
+    "trans": [
+      "vt.宣布，宣告He will announce tonight that he is resigning from office\n他将于今晚宣布辞职。"
+    ],
+    "usphone": "ə'nauns"
+  },
+  {
+    "name": "annoy",
+    "trans": [
+      "v.使烦恼，使不悦，打搅Try making a note of the things which annoy you\n试着把烦心事写下来。"
+    ],
+    "usphone": "ə'nɔi"
+  },
+  {
+    "name": "annual",
+    "trans": [
+      "a.每年的，每年度的\nIn its annual report, UNICEF says at least"
+    ],
+    "usphone": "'ænjuəl"
+  },
+  {
+    "name": "anxious",
+    "trans": [
+      "a.忧虑的，焦急的【考】 be anxious about/for sb./sth. be anxious about为…而担心 be anxious for急切盼望,渴望"
+    ],
+    "usphone": "'æŋkʃəs"
+  },
+  {
+    "name": "anyhow",
+    "trans": [
+      "ad.无论如何，不管怎样\nI wasn't qualified to apply for the job really but I got it anyhow.\n实际上我并不具备申请这份工作的资格，但不管怎样，我还是被录用了。"
+    ],
+    "usphone": "'enihau"
+  },
+  {
+    "name": "apart",
+    "trans": [
+      "ad.分离，隔开；相距，相隔【考】 apart from 除了……以外\nApart from Bobby, all the children like music. （除了鲍比，所有的孩子都喜欢音乐。）"
+    ],
+    "usphone": "ə'pɑːt"
+  },
+  {
+    "name": "apparent",
+    "trans": [
+      "a.明显的， 表面上的I was a bit depressed by our apparent lack of progress\n我对我们看似缓慢的进展感到有些沮丧。"
+    ],
+    "usphone": "ə'pærənt"
+  },
+  {
+    "name": "appear",
+    "trans": [
+      "n.出现，出场，问世 v. 好像是，仿佛There appears to be increasing support for the leadership to take a more aggressive stance\n好像有越来越多的人支持领导层采取更为强势的立场"
+    ],
+    "usphone": "ə'piə"
+  },
+  {
+    "name": "appearance",
+    "trans": [
+      "n.出现；外表，外观\nIt was the president's second public appearance to date\n这是总统到那时为止的第二次公开露面。"
+    ],
+    "usphone": "ə'pirəns"
+  },
+  {
+    "name": "appetite",
+    "trans": [
+      "n.食欲，胃口\nHe has a healthy appetite\n他胃口很好。"
+    ],
+    "usphone": "'æpitait"
+  },
+  {
+    "name": "apply",
+    "trans": [
+      "vt.应用；申请【考】 apply for 申请，请求；apply to 致力于，适用于"
+    ],
+    "usphone": "ə'plai"
+  },
+  {
+    "name": "appoint",
+    "trans": [
+      "v.任命，委托；约定，指定\nIt made sense to appoint a banker to this job\n指派一位银行家做这份工作是明智之举。"
+    ],
+    "usphone": "ə'pɔint"
+  },
+  {
+    "name": "appreciate",
+    "trans": [
+      "v.欣赏；感激【考】 appreciate doing \nI appreciate you doing this.\n我很感谢你做的这些事情"
+    ],
+    "usphone": "ə'priːʃieit"
+  },
+  {
+    "name": "approach",
+    "trans": [
+      "n.（to） 接 近； 途 径， 方 法vt. 靠近，接近He didn't approach the front door at once\n他没有马上走向前门。"
+    ],
+    "usphone": "ə'prəutʃ"
+  },
+  {
+    "name": "appropriate",
+    "trans": [
+      "a.适合的，恰当的\nIt is appropriate that Irish names dominate the list\n名单上大部分是爱尔兰名字，这没什么不合适的"
+    ],
+    "usphone": "ə'prəupriət"
+  },
+  {
+    "name": "approve",
+    "trans": [
+      "vt.批准 vi. 赞成【考】 approve of 赞成……Not everyone approves of the festival\n不是所有人都赞成庆祝该节日。"
+    ],
+    "usphone": "ə'pruːv"
+  },
+  {
+    "name": "approximately",
+    "trans": [
+      "ad.近似地，大约In the course of the"
+    ],
+    "usphone": "ə'prɔksimitli"
+  },
+  {
+    "name": "area",
+    "trans": [
+      "n.面积；地区；领域"
+    ],
+    "usphone": "'eəriə"
+  },
+  {
+    "name": "argue",
+    "trans": [
+      "vi.争辩，争论【考】 argue with sb. over/about sth. 就某事同某人争论He is arguing with his mum.他正在和他的妈妈争论。They argued about this issue yesterday.他们昨天就这个问题发生争论。"
+    ],
+    "usphone": "'ɑːɡjuː"
+  },
+  {
+    "name": "arise",
+    "trans": [
+      "vi.出现，形成【考】 arise from 由……引起\nNoisome vapours arise from the mud left in the docks\n难闻的蒸汽由船坞中余留的泥浆散发出来。"
+    ],
+    "usphone": "ə'raiz"
+  },
+  {
+    "name": "arouse",
+    "trans": [
+      "vt.引起，激起，唤起；唤醒\nWe left in the daytime so as not to arouse suspicion.\n我们在白天离开以避免引起怀疑。"
+    ],
+    "usphone": "ə'rauz"
+  },
+  {
+    "name": "arrange",
+    "trans": [
+      "vt.安排，布置\nI've arranged to see him on Friday morning\n我已安排好星期五上午见他。"
+    ],
+    "usphone": "ə'reindʒ"
+  },
+  {
+    "name": "arrive",
+    "trans": [
+      "v.到来，到达；达成，得出【考】 arrive at+ 小地点； arrive in+ 大地方arrive in Beijing     arrive at school      arrive at the park"
+    ],
+    "usphone": "ə'raiv"
+  },
+  {
+    "name": "artificial",
+    "trans": [
+      "a.人工的，人造的；不自然的The city is dotted with small lakes, natural and artificial\n这个城市小型湖泊星罗棋布，有天然的也有人工的。"
+    ],
+    "usphone": "ɑːti'fiʃəl"
+  },
+  {
+    "name": "ashamed",
+    "trans": [
+      "a.惭愧的；羞愧的【考】 be ashamed of/to do/that 对……感到羞愧I felt incredibly ashamed of myself for getting so angry\n我对自己发那么大的火而深感惭愧。"
+    ],
+    "usphone": "ə'ʃeimd"
+  },
+  {
+    "name": "aspect",
+    "trans": [
+      "n.（问题、事物等的）方面\nClimate and weather affect every aspect of our lives\n气候和天气影响着我们生活的方方面面。"
+    ],
+    "usphone": "'æspekt"
+  },
+  {
+    "name": "assemble",
+    "trans": [
+      "v.集合，集会；装配，组装There wasn't even a convenient place for students to assemble between classes\n在课间，学生们连一个方便凑在一起的地方都没有。"
+    ],
+    "usphone": "ə'sembl"
+  },
+  {
+    "name": "assembly",
+    "trans": [
+      "n.集会，会议；装配\nHe waited until complete quiet settled on the assembly.\n他一直等到集会的人群完全安静下来。"
+    ],
+    "usphone": "ə'sembli"
+  },
+  {
+    "name": "assign",
+    "trans": [
+      "v.分配，分派；选派When I taught, I would assign a topic to children which they would write about\n我教课时会给孩子们布置一个题目，让他们就这个题目写点东西。"
+    ],
+    "usphone": "ə'sain"
+  },
+  {
+    "name": "assist",
+    "trans": [
+      "v.援助，帮助\nJulia was assisting him to prepare his speech\n朱莉娅正在帮他准备讲演稿。"
+    ],
+    "usphone": "ə'sist"
+  },
+  {
+    "name": "assume",
+    "trans": [
+      "v.认为；假定；承担\nIt is a misconception to assume that the two continents are similar\n关于这两块大陆相似的假设是一种误解"
+    ],
+    "usphone": "ə'sjuːm"
+  },
+  {
+    "name": "assure",
+    "trans": [
+      "v.保证，使确信【考】assure sb. of sth. I will ensure that the car arrives by six o'clock.我保证汽车六点钟以前到。"
+    ],
+    "usphone": "ə'ʃuə"
+  },
+  {
+    "name": "astonish",
+    "trans": [
+      "vt.使惊讶【考】be astonished at sth. 对某事感到惊讶My news will astonish you\n我的消息会让你感到十分惊讶的。"
+    ],
+    "usphone": "əs'tɔniʃ"
+  },
+  {
+    "name": "atmosphere",
+    "trans": [
+      "n.大气；大气层；气氛he Partial Test-Ban Treaty bans nuclear testing in the atmosphere.\n《部分禁止核试验条约》禁止在大气层中进行核试验。"
+    ],
+    "usphone": "'ætməsfiə"
+  },
+  {
+    "name": "attach",
+    "trans": [
+      "vt.系；贴；附加\nWe attach labels to things before we file them away\n存档前，我们先贴上标签。"
+    ],
+    "usphone": "ə'tætʃ"
+  },
+  {
+    "name": "attack",
+    "trans": [
+      "n.攻击，抨击 v. 攻击，袭击【考】make an attack on/upon 向…进攻，攻击；The commander disposed his forces so as to make an attack on the enemy.\n司令官对他的部队做了部署以便进攻敌军。"
+    ],
+    "usphone": "ə'tæk"
+  },
+  {
+    "name": "attain",
+    "trans": [
+      "v.达到；完成；获得\nJim is halfway to attaining his pilot's licence.\n吉姆就快要拿到飞行员执照了。"
+    ],
+    "usphone": "ə'tein"
+  },
+  {
+    "name": "attempt",
+    "trans": [
+      "n.努力，尝试 vt. 尝试，试图The only time that we attempted to do something like that was in the city of Philadelphia\n只有在费城那次我们曾试着做那样的事\n【考】an attempt to 力图，试图；make an attempt at/on 打算，试"
+    ],
+    "usphone": "ə'tempt"
+  },
+  {
+    "name": "attend",
+    "trans": [
+      "vt.出席Thousands of people attended the funeral\n数千人参加了葬礼。"
+    ],
+    "usphone": "ə'tend"
+  },
+  {
+    "name": "attention",
+    "trans": [
+      "n.注意，关心【考】 pay attention to 注意You have my undivided attention\n我专心听你所讲。"
+    ],
+    "usphone": "ə'tenʃən"
+  },
+  {
+    "name": "attitude",
+    "trans": [
+      "n.态度，看法Being unemployed produces negative attitudes to work\n失业会产生对工作的消极态度。"
+    ],
+    "usphone": "'ætitjuːd"
+  },
+  {
+    "name": "attract",
+    "trans": [
+      "vt.吸引，引起The Cardiff Bay project is attracting many visitors\n加的夫海湾项目吸引了众多游客。"
+    ],
+    "usphone": "ə'trækt"
+  },
+  {
+    "name": "audience",
+    "trans": [
+      "n.听众，观众\nThe entire audience broke into loud applause\n全场观众爆发出热烈的掌声。"
+    ],
+    "usphone": "'ɔːdiəns"
+  },
+  {
+    "name": "author",
+    "trans": [
+      "n.作者；作家Haruki Murakami is Japan's best-selling author.\n村上春树是日本当红的畅销书作家。"
+    ],
+    "usphone": "'ɔːθə"
+  },
+  {
+    "name": "automobile",
+    "trans": [
+      "n.汽车The parts of an automobile are standardized.\n汽车零件是标准化了的。"
+    ],
+    "usphone": "'ɔːtəməbiːl/'ɔːtəu"
+  },
+  {
+    "name": "available",
+    "trans": [
+      "a.可利用的，可得到的\nSince"
+    ],
+    "usphone": "ə'veiləbəl"
+  },
+  {
+    "name": "average",
+    "trans": [
+      "a.平均的；普通的 n. 平均数【考】 on the/an average 平均The fish were counted and an average weight recorded.\n数了数鱼的数量，并把平均重量记录了下来。"
+    ],
+    "usphone": "'ævəridʒ"
+  },
+  {
+    "name": "avoid",
+    "trans": [
+      "v.避免，避开【考】 avoid doing sth. 避免做某事I must avoid doing such a thing. 我必须避免做这样的事"
+    ],
+    "usphone": "ə'vɔid"
+  },
+  {
+    "name": "awake",
+    "trans": [
+      "a.醒着的【反】 asleep \nI don't stay awake at night worrying about that\n我并没有因为那件事而担心得彻夜不眠。"
+    ],
+    "usphone": "ə'weik"
+  },
+  {
+    "name": "award",
+    "trans": [
+      "n.奖品 vt. 授予，奖给【考】 award sb. sth. 奖给某人某物She presented a bravery award to schoolgirl Caroline Tucker.\n她向女学生卡罗琳·塔克颁发了英勇奖状。"
+    ],
+    "usphone": "ə'wɔːd"
+  },
+  {
+    "name": "aware",
+    "trans": [
+      "a.意识到的，知道的【考】 be aware of 知道，意识到\nSmokers are well aware of the dangers to their own health\n吸烟的人都知道吸烟对自身健康的危害。"
+    ],
+    "usphone": "ə'wɛə"
+  },
+  {
+    "name": "awful",
+    "trans": [
+      "a.使人畏惧的，可怕的We met and I thought he was awful\n我们见了面，我觉得他很讨人厌。"
+    ],
+    "usphone": "'ɔːful"
+  },
+  {
+    "name": "awkward",
+    "trans": [
+      "a.笨拙的；尴尬的\nI was the first to ask him awkward questions but there'll be harder ones to come\n我是第一个向他提出尴尬问题的人，不过还会有人问更难回答的问题。\n\n\n【B】"
+    ],
+    "usphone": "'ɔːkwəd"
+  },
+  {
+    "name": "background",
+    "trans": [
+      "n.背景，经历Moulded by his background, he could not escape the traditional role of strict father\n受成长环境的影响，他摆脱不了严父的传统角色"
+    ],
+    "usphone": "'bækɡraund"
+  },
+  {
+    "name": "balance",
+    "trans": [
+      "n.平衡 v. 使平衡，保持平衡\n【考】 keep/lose one’s balance 保持 / 失去平衡"
+    ],
+    "usphone": "'bæləns"
+  },
+  {
+    "name": "bargain",
+    "trans": [
+      "n.特价商品，便宜货 v. 讨价还价【考】 bargain with sb. 与某人讨价还价At this price the wine is a bargain\n这种葡萄酒卖这个价真是很便宜。"
+    ],
+    "usphone": "'bɑːgin"
+  },
+  {
+    "name": "barrier",
+    "trans": [
+      "n.栅栏；障碍（物）Duties and taxes are the most obvious barrier to free trade.\n关税和税收是自由贸易的最大壁垒。"
+    ],
+    "usphone": "'bæriə"
+  },
+  {
+    "name": "base",
+    "trans": [
+      "v.把……建在，以……为基础 n. 基地，基础There was a cycle path running along this side of the wall, right at its base\n在墙的这边，沿着墙根有一条自行车道。\n【考】 be based on 以……为基础；on the bases of基于【派】 basic a. 基本的，基础的"
+    ],
+    "usphone": "beis"
+  },
+  {
+    "name": "battle",
+    "trans": [
+      "v.与……作战 n. 战斗，战役\nHe was appalled to discover members of the board fighting damaging personal battles.\n他惊恐地发现董事会成员正在进行你死我活的私人争斗。"
+    ],
+    "usphone": "'bætl"
+  },
+  {
+    "name": "beauty",
+    "trans": [
+      "n.美，美丽；美人\nEveryone admired her elegance and her beauty.\n人人都羡慕她的优雅和美丽。"
+    ],
+    "usphone": "'bjuːti"
+  },
+  {
+    "name": "because",
+    "trans": [
+      "conj.因为【考】 because of 由于，因为It is mainly because of my fault.\n这主要是由于我的过错。"
+    ],
+    "usphone": "bi'kɔːz"
+  },
+  {
+    "name": "behalf",
+    "trans": [
+      "n.利益；代表【考】 on behalf of/ on one’s behalf 代表某人\nShe made an emotional public appeal on her son's behalf\n她代表儿子动情地发出了公开呼吁。"
+    ],
+    "usphone": "bi'hɑːf"
+  },
+  {
+    "name": "belong",
+    "trans": [
+      "vi.属于【考】 belong to 属于\nThe house had belonged to her family for three or four generations.\n这套房子归她们家有三四代人了。"
+    ],
+    "usphone": "bi'lɔŋ"
+  },
+  {
+    "name": "bend",
+    "trans": [
+      "v.（使）弯曲\nI bent over and kissed her cheek\n我俯身亲吻了她的脸颊。"
+    ],
+    "usphone": "bend"
+  },
+  {
+    "name": "benefit",
+    "trans": [
+      "v.有益于；得益于n. 利益，好处\n【考】表示“得益于”时常与 from/by 连用【派】 beneficial a. 有益的\nAll the cells and tissues in the body benefit from the increased intake of oxygen.\n体内所有的细胞与组织都从增加的氧气吸入量中受益。"
+    ],
+    "usphone": "'benifit"
+  },
+  {
+    "name": "bind",
+    "trans": [
+      "vt.捆绑，捆扎\nIt is the memory and threat of persecution that binds them together.\n遭受迫害的记忆和威胁把他们紧紧联系在一起。"
+    ],
+    "usphone": "baind"
+  },
+  {
+    "name": "blame",
+    "trans": [
+      "vt.指责；把……归咎于\nShe seemed to be placing most of the blame on her mother\n她好像把大部分责任都推到了母亲身上。\n\nThe policy is partly to blame for causing the worst unemployment in Europe.\n欧洲出现了最严重的失业情况，这应当部分归咎于这项政策。\n【考】 blame ... on 把……归咎于；blame ... for 为……责备某人"
+    ],
+    "usphone": "bleim"
+  },
+  {
+    "name": "blow",
+    "trans": [
+      "v.吹；吹气；（使）爆炸 n. 打击\nA chill wind blew at the top of the hill\n山顶寒风呼啸。"
+    ],
+    "usphone": "bləu"
+  },
+  {
+    "name": "boast",
+    "trans": [
+      "v.（of/about）夸口，夸耀\nWitnesses said Furci boasted that he took part in killing them\n几位证人声称富尔奇曾吹嘘自己参与了对他们的屠杀。"
+    ],
+    "usphone": "bəust"
+  },
+  {
+    "name": "boil",
+    "trans": [
+      "v.沸腾，煮沸\nI stood in the kitchen, waiting for the water to boil\n我站在厨房，等着水烧开。"
+    ],
+    "usphone": "bɔil"
+  },
+  {
+    "name": "boring",
+    "trans": [
+      "a.令人生厌的\nNot only are mothers not paid but also most of their boring or difficult work is unnoticed.\n母亲们不但得不到报酬，而且她们做的那些乏味艰苦的工作常常都不为人所注意。\n【考】 v. -ed 形容词有被动或已完成的意思；v.-ing 形 容 词 有 主 动 或 进 行 的 含 义：\nbored—boring；surprised—surprising；interested—interesting； amazed—amazing。"
+    ],
+    "usphone": "'bɔːriŋ"
+  },
+  {
+    "name": "bother",
+    "trans": [
+      "v.打扰，麻烦【近】 trouble"
+    ],
+    "usphone": "'bɔðə"
+  },
+  {
+    "name": "bottom",
+    "trans": [
+      "n.底，底部\nHe sat at the bottom of the stairs\n他坐在最下面的一级楼梯上。"
+    ],
+    "usphone": "'bɔtəm"
+  },
+  {
+    "name": "brain",
+    "trans": [
+      "n.大脑；头脑，智能\nHer father died of a brain tumour.\n她父亲死于脑瘤。"
+    ],
+    "usphone": "brein"
+  },
+  {
+    "name": "branch",
+    "trans": [
+      "n.树枝；分支\nThe local branch of Bank of America is handling the accounts\n美国银行在当地的分行正在处理这些账目。"
+    ],
+    "usphone": "brɑːntʃ"
+  },
+  {
+    "name": "brave",
+    "trans": [
+      "a.勇敢的He was not brave enough to report the loss of the documents.\n他没有勇气报告丢失了文件。"
+    ],
+    "usphone": "breiv"
+  },
+  {
+    "name": "breath",
+    "trans": [
+      "n.呼吸，气息【考】 out of breath 上气不接下气\nBy the time I got to the top of the hill, I was quite out of breath.\n等我爬到山顶的时候，已经是上气不接下气了。"
+    ],
+    "usphone": "breθ"
+  },
+  {
+    "name": "breathe",
+    "trans": [
+      "v.呼吸，呼气\nHe stood there breathing deeply and evenly\n他站在那儿均匀地深呼吸。"
+    ],
+    "usphone": "briːð"
+  },
+  {
+    "name": "brief",
+    "trans": [
+      "a.简短的，短暂的【考】 in brief 简要地说She once made a brief appearance on television\n她曾经在电视上短暂露面。"
+    ],
+    "usphone": "briːf"
+  },
+  {
+    "name": "bright",
+    "trans": [
+      "a.明亮的；聪明的\nShe leaned forward, her eyes bright with excitement.\n她身体前倾，眼里闪动着兴奋的光芒。"
+    ],
+    "usphone": "brait"
+  },
+  {
+    "name": "brilliant",
+    "trans": [
+      "a.卓越的，杰出的；极聪明的She had a brilliant mind\n她头脑聪明。"
+    ],
+    "usphone": "'briljənt"
+  },
+  {
+    "name": "bubble",
+    "trans": [
+      "n.泡，水泡，气泡\nInk particles attach themselves to air bubbles and rise to the surface.\n墨汁颗粒附着在气泡上，浮到表面上。"
+    ],
+    "usphone": "'bʌbl"
+  },
+  {
+    "name": "build",
+    "trans": [
+      "vt.建筑，建立\nI am determined to build on this solid foundation.我决定在这个坚实的基础之上继续努力。\nThe regime built up the largest army in Africa该政权逐渐建立起一支非洲规模最大的军队。\n【考】build on/upon 建立在…基础上；build up增强"
+    ],
+    "usphone": "bild"
+  },
+  {
+    "name": "bunch",
+    "trans": [
+      "n.束，捆，串My neighbours are a bunch of busybodies\n我的邻居们是一群爱管闲事的人。"
+    ],
+    "usphone": "bʌntʃ"
+  },
+  {
+    "name": "bundle",
+    "trans": [
+      "n.捆，包，束  a bundle of clothes 一包衣物"
+    ],
+    "usphone": "'bʌndl"
+  },
+  {
+    "name": "burden",
+    "trans": [
+      "n.担子，负担\nThe developing countries bear the burden of an enormous external debt\n发展中国家背负着巨额外债。"
+    ],
+    "usphone": "'bəːdn"
+  },
+  {
+    "name": "bury",
+    "trans": [
+      "v.埋葬；埋藏\nThey make the charcoal by burying wood in the ground and then slowly burning it.\n他们通过把木材埋到地下缓慢燃烧来获取木炭。"
+    ],
+    "usphone": "'beri"
+  },
+  {
+    "name": "busy",
+    "trans": [
+      "a.忙的，忙碌的\nWhat is it? I'm busy什么事？我忙着呢。\nbe busy doing sth侧重于动作sth是名词哦·do是动词的形式be busy with sth侧重于状态意思都一样,可以互换.He is busy doing home work.=He is busy with homework.\n【考】 be busy at/with sth. 忙于某事；be busy doing sth. 忙于做某事\n\n\n【C】"
+    ],
+    "usphone": "'bizi"
+  },
+  {
+    "name": "calculate",
+    "trans": [
+      "v.计算\nFrom this you can calculate the total mass in the Galaxy\n由此你可以算出银河系的总质量。"
+    ],
+    "usphone": "'kælkju leit"
+  },
+  {
+    "name": "calendar",
+    "trans": [
+      "n.日历，历法There was a calendar on the wall above, with large squares around the dates.\n上面的墙上挂着日历，日期上画着大大的方框。"
+    ],
+    "usphone": "'kælində"
+  },
+  {
+    "name": "call",
+    "trans": [
+      "n.喊，叫；（一次）电话 vt. 把……叫做 vi. 喊，叫\nI'll now call at the vicarage and report to you in due course.\n我现在要去教区牧师家拜访，然后适时向你汇报情况。\nOne of Kenya's leading churchmen has called on the government to resign\n肯尼亚一位高级宗教人士要求政府下台。\nIf we're not around she'll take a message and we'll call you back\n如果我们不在，她会带个话儿，我们给您打过去。\nHe has called off the trip\n他已取消了这次行程\n【考】 call at 拜访（某地）；call on 拜访（某人）；call on/upon sb. to do sth. 号召某人做某事；\ncall back 回电话；call off 取消"
+    ],
+    "usphone": "kɔːl"
+  },
+  {
+    "name": "calm",
+    "trans": [
+      "a.镇静的；平静的 n. 平静；镇静She is usually a calm and diplomatic woman\n她通常沉着而老练。"
+    ],
+    "usphone": "kɑːm"
+  },
+  {
+    "name": "camera",
+    "trans": [
+      "n.照相机，摄影机Fay was so impressive on camera that a special part was written in for her\n费伊很上镜，所以特地为她编写了一个角色。"
+    ],
+    "usphone": "'kæmərə"
+  },
+  {
+    "name": "camp",
+    "trans": [
+      "n.野营，营地 v. 设营，宿营We'll make camp on that hill ahead.\n我们到前面那座小山上扎营。"
+    ],
+    "usphone": "kæmp"
+  },
+  {
+    "name": "campaign",
+    "trans": [
+      "n.战役；运动\nDuring his election campaign he promised to put the economy back on its feet\n他在竞选时许诺将重振经济。"
+    ],
+    "usphone": "kæm'pein"
+  },
+  {
+    "name": "cancel",
+    "trans": [
+      "v.取消；删除 cancel ameeting 取消会议"
+    ],
+    "usphone": "'kænsəl"
+  },
+  {
+    "name": "cancer",
+    "trans": [
+      "n.癌\nHer mother died of breast cancer\n她母亲死于乳腺癌。"
+    ],
+    "usphone": "'kænsə"
+  },
+  {
+    "name": "candidate",
+    "trans": [
+      "n.候选人；（求职）申请人\nThe Democratic candidate is still leading in the polls\n民主党候选人的得票数依然领先。"
+    ],
+    "usphone": "'kændidit"
+  },
+  {
+    "name": "capable",
+    "trans": [
+      "a.有本领的，有能力的\nHe appeared hardly capable of conducting a coherent conversation\n他好像连话都说不清楚。"
+    ],
+    "usphone": "'keipəbl"
+  },
+  {
+    "name": "capital",
+    "trans": [
+      "n.首都，首府；资本，资金Companies are having difficulty in raising capital 各公司融资困难。"
+    ],
+    "usphone": "'kæpitl"
+  },
+  {
+    "name": "captain",
+    "trans": [
+      "n.船长；队长\nAre all your weapons in place, Captain?\n上尉，你部所有武器都到位了吗？"
+    ],
+    "usphone": "'kæptin"
+  },
+  {
+    "name": "care",
+    "trans": [
+      "n.照顾；小心 v. 在乎；照顾\nI don't care about the matter.我对这事毫不介意。\nThey hired a nurse to care for her.他们雇了个护士来照顾她。\nDon't worry yourself about me, I can take care of myself\n你别担心我，我能照顾好自己。\n【考】 care about 在乎，关心；care for 照顾，喜欢，愿意；take care of 照顾，照料；\ntakecare 留神，小心   【派】 careful a. 小心的，仔细的；careless a. 马虎的"
+    ],
+    "usphone": "kɛə"
+  },
+  {
+    "name": "career",
+    "trans": [
+      "n.生涯，经历；职业\nShe is now concentrating on a career as a fashion designer\n她目前正专注于服装设计师的工作。"
+    ],
+    "usphone": "kə'riə"
+  },
+  {
+    "name": "carry",
+    "trans": [
+      "vt.搬运，运输；携带\nThe assistant carried on talking\n助理继续说下去。\nThe Social Democrats could still carry out their threat to leave the government\n社会民主党人仍有可能将其退出政府的威胁付诸实施。\n【考】 carry on 继续下去；carry out 执行，贯彻"
+    ],
+    "usphone": "'kæri"
+  },
+  {
+    "name": "case",
+    "trans": [
+      "n.事实，情况 n. 案件，病历\n【考】 in any case 总之；in case 假如，以防；in case of 假如，万一"
+    ],
+    "usphone": "keis"
+  },
+  {
+    "name": "casual",
+    "trans": [
+      "a.偶然的；非正式的；临时的It's difficult for me to be casual about anything\n要我轻松处事很难。"
+    ],
+    "usphone": "'kæʒjuəl"
+  },
+  {
+    "name": "catch",
+    "trans": [
+      "vt.捉住；赶上；染上catch a cold/fire/thief 感冒 / 着火 / 捉贼\n【考】 catch on（to）学会；catch up with 追上，赶上"
+    ],
+    "usphone": "kætʃ"
+  },
+  {
+    "name": "ceremony",
+    "trans": [
+      "n.典礼，仪式，礼仪\nToday's award ceremony took place at the British Embassy in Tokyo.\n今天的颁奖典礼在英国驻东京大使馆举行。"
+    ],
+    "usphone": "'seriməni"
+  },
+  {
+    "name": "champion",
+    "trans": [
+      "n.优胜者，冠军\nKasparov became world champion.\n卡斯帕罗夫成为世界冠军。"
+    ],
+    "usphone": "'tʃæmpjən"
+  },
+  {
+    "name": "channel",
+    "trans": [
+      "n.海峡，沟渠；频道The government will surely use the diplomatic channels available\n政府肯定会利用各种现有的外交渠道。"
+    ],
+    "usphone": "'tʃænl"
+  },
+  {
+    "name": "character",
+    "trans": [
+      "n.汉字；品格；角色，人物The financial concessions granted to British Aerospace were, he said, of a precarious character"
+    ],
+    "usphone": "'kæriktə"
+  },
+  {
+    "name": "characteristic",
+    "trans": [
+      "a.特有的，典型的Genes determine the characteristics of every living thing.\n基因决定每个生物的特征。"
+    ],
+    "usphone": "kæriktə'ristik"
+  },
+  {
+    "name": "charge",
+    "trans": [
+      "n.费用；价钱；负责 v. 管理；控诉；要价\nHe is in charge of the school work.\n他负责学校工作。\n【考】 in charge of 负责；in the charge of sb. 由某人负责；charge sb. with sth. 指控某人……罪"
+    ],
+    "usphone": "tʃɑːdʒ"
+  },
+  {
+    "name": "check",
+    "trans": [
+      "vt.检查；核对 n. 支票；检查；批改\nI'll ring the hotel. I'll tell them we'll check in tomorrow\n我来给旅馆打电话，通知他们我们明天入住。\nThey packed and checked out of the hotel\n他们收拾好东西，办理了退房手续。\n【考】 check in 报到，登记；check out 查明；结账离开"
+    ],
+    "usphone": "tʃek"
+  },
+  {
+    "name": "cheer",
+    "trans": [
+      "v.喝彩，欢呼，使高兴The crowd cheered as Premier Wayne Goss unveiled a lifesize statue of poet Banjo Paterson\n韦恩·戈斯州长揭开诗人巴尼奥·佩特森的等身塑像时，人群欢呼起来"
+    ],
+    "usphone": "tʃiə"
+  },
+  {
+    "name": "chew",
+    "trans": [
+      "v.咀嚼\nBe certain to eat slowly and chew your food extremely well\n一定要慢慢吃，要细细咀嚼。"
+    ],
+    "usphone": "tʃu"
+  },
+  {
+    "name": "chief",
+    "trans": [
+      "a.主要的，首要的 n. 领袖，首领\nFinancial stress is well established as a chief reason for divorce\n经济压力被确认是导致离婚的首要原因。"
+    ],
+    "usphone": "tʃiːf"
+  },
+  {
+    "name": "childhood",
+    "trans": [
+      "n.幼年，童年She had a happy childhood\n她曾有过一个幸福的童年。"
+    ],
+    "usphone": "'tʃaildhud"
+  },
+  {
+    "name": "choice",
+    "trans": [
+      "n.选择，选择机会\nIt's available in a choice of colours\n有多种颜色可供选择。"
+    ],
+    "usphone": "tʃɔis"
+  },
+  {
+    "name": "circle",
+    "trans": [
+      "n.圆，圈；周期，循环\nThe flag was red, with a large white circle in the center\n旗子是红色的，中央有个白色大圆圈。"
+    ],
+    "usphone": "'səːkl"
+  },
+  {
+    "name": "circumstance",
+    "trans": [
+      "n.情形，环境，状况\nUnder no circumstance will I believe you.\n无论什么情形之下我都不会相信你。\n【考】 under no circumstance 在任何情况下都不；under any circumstance 在任何情况下"
+    ],
+    "usphone": "'səːkəmstəns"
+  },
+  {
+    "name": "citizen",
+    "trans": [
+      "n.公民；市民The life of ordinary citizens began to change.\n老百姓的生活开始发生变化"
+    ],
+    "usphone": "'sitizn"
+  },
+  {
+    "name": "classical",
+    "trans": [
+      "a.经典的，古典的Fokine did not change the steps of classical ballet; instead he found new ways of using them.\n福金没有改变传统芭蕾舞的舞步，而是另辟蹊径对这些舞步加以运用。"
+    ],
+    "usphone": "'klæsikəl"
+  },
+  {
+    "name": "climate",
+    "trans": [
+      "n.气候\nThe economic climate remains uncertain.\n经济形势依然不确定。"
+    ],
+    "usphone": "'klaimit"
+  },
+  {
+    "name": "close",
+    "trans": [
+      "v.关，关闭 [kləus] a. 近的，接近的\nThe factory had to close down for lack of orders.\n那家工厂因无人订货而被迫关闭。\nI'm very much a family man and need to be close to those I love.\n我是个非常恋家的男人，必须生活在所爱的人身旁。\nIt takes me a long time to drop my guard and get close to people.\n我要花上好长时间才能放下戒备心，与人接近。\n【考】 close down 关闭，歇业；be close to 紧挨着，在……附近；get close（to）靠近"
+    ],
+    "usphone": "kləuz"
+  },
+  {
+    "name": "clue",
+    "trans": [
+      "n.线索，提示Geneticists in Canada have discovered a clue to the puzzle of why our cells get old and die\n加拿大的遗传学家已经发现了解开细胞衰老、死亡之谜的线索。"
+    ],
+    "usphone": "kluː"
+  },
+  {
+    "name": "collect",
+    "trans": [
+      "vt.收集\nTwo young girls were collecting firewood\n两个小女孩正在拾柴火。"
+    ],
+    "usphone": "kə'lekt"
+  },
+  {
+    "name": "combine",
+    "trans": [
+      "v.结合，兼有，联合The Church has something to say on how to combine freedom with responsibility\n教会想就如何把自由与责任结合起来发表一下意见。\n【考】 combine A with B 将 A 与 B 结合在一起"
+    ],
+    "usphone": "kəm'bain"
+  },
+  {
+    "name": "come",
+    "trans": [
+      "v.来到，出现；到达\nAny possible solution to the Irish question can only come about through dialogue\n任何解决爱尔兰问题的可行方案只能通过对话产生。\nI came across a group of children playing.我碰到一群正在玩耍的小孩。\nCome on Doreen, let's dance.来吧，多琳，我们跳舞吧。\nThe book comes out this week这本书本周出版。\nSeveral of the members have come up with suggestions of their own有几位成员提出了自己的建议。\n【考】 come about 发生；come across 偶然碰到；come on 请，来吧，快点；come out 出现，\n出版，结果是；come up with 想出；提出"
+    ],
+    "usphone": "kʌm"
+  },
+  {
+    "name": "comfort",
+    "trans": [
+      "n.安逸，舒适；安慰This will enable the audience to sit in comfort while watching the shows\n这样能够让观众舒舒服服地坐着看表演。"
+    ],
+    "usphone": "'kʌmfət"
+  },
+  {
+    "name": "commit",
+    "trans": [
+      "v.犯，干（错事）\nI have never committed any crime\n我从来没犯过罪。"
+    ],
+    "usphone": "kə'mit"
+  },
+  {
+    "name": "common",
+    "trans": [
+      "a.平常的，普通的；共同的\nWe happened to discover we had a friend in common\n我们凑巧发现我们有一个共同的朋友。\n【考】 in common 一 样， 同 样；have sth. in common 有共同之处"
+    ],
+    "usphone": "'kɔmən"
+  },
+  {
+    "name": "communicate",
+    "trans": [
+      "vi.通 讯， 交 流 vt.传达；传染\nMy natural mother has never communicated with me\n我的亲生母亲从未和我联系过。"
+    ],
+    "usphone": "kə'mjuːnikeit"
+  },
+  {
+    "name": "community",
+    "trans": [
+      "n.社区，社会\nHe's well liked by people in the community\n社区的人都非常喜欢他。"
+    ],
+    "usphone": "kə'mjuːniti"
+  },
+  {
+    "name": "companion",
+    "trans": [
+      "n.同伴，伴侣；朋友\nFred had been her constant companion for the last six years of her life\n在她生命的最后"
+    ],
+    "usphone": "kəm'pænjən"
+  },
+  {
+    "name": "company",
+    "trans": [
+      "n.公司；伙伴；客人Never keep company with dishonest per-sons.\n不要与不诚实的人打交道。\n【考】 keep company with 与……交往"
+    ],
+    "usphone": "'kʌmpəni"
+  },
+  {
+    "name": "complain",
+    "trans": [
+      "v.抱怨；申诉Miners have complained bitterly that the government did not fulfill their promises\n【考】 complain that ... 抱怨……；complain to sb.   of/about sth. 向某人抱怨某事"
+    ],
+    "usphone": "kəm'plein"
+  },
+  {
+    "name": "complete",
+    "trans": [
+      "vt.完成 a. 完整的The rebels had taken complete control\n叛乱分子完全控制了局面。"
+    ],
+    "usphone": "kəm'pliːt"
+  },
+  {
+    "name": "complex",
+    "trans": [
+      "a.复杂的    【反】 simple  简单的\nI have never had a complex about my height.\n我从来没有担心过自己的身高。"
+    ],
+    "usphone": "'kɔmpleks"
+  },
+  {
+    "name": "complicated",
+    "trans": [
+      "a.错综复杂的，难懂的 【近】 complex The situation in Lebanon is very complicated.\n黎巴嫩的情况十分复杂。"
+    ],
+    "usphone": "'kɔmplikeitid"
+  },
+  {
+    "name": "concentrate",
+    "trans": [
+      "v.集中（注意力），全神贯注\nIt was up to him to concentrate on his studies and make something of himself\n是否能专心学习并取得一定成就要靠他自己。\n【考】 concentrate on/upon 专心于……"
+    ],
+    "usphone": "'kɔnsentreit"
+  },
+  {
+    "name": "concept",
+    "trans": [
+      "n.概念\nShe added that the concept of arranged marriages is misunderstood in the west.\n她补充说，西方人对包办婚姻的概念有些误解。"
+    ],
+    "usphone": "'kɔnsept"
+  },
+  {
+    "name": "concern",
+    "trans": [
+      "v.涉及；影响；使关心 n. 关心；忧虑\nThis aggression is the real issue the world should be concerned about. We want to keep that in focus\n这次侵略才是世界应该关注的真正问题。我们想继续保持关注。\n【考】 be concerned about（或 for）关心，挂念"
+    ],
+    "usphone": "kən'səːn"
+  },
+  {
+    "name": "conclude",
+    "trans": [
+      "v.总结；结束Larry had concluded that he had no choice but to accept Paul's words as the truth\n拉里断定自己别无选择，只能当保罗的话是真的。"
+    ],
+    "usphone": "kən'kluːd"
+  },
+  {
+    "name": "connect",
+    "trans": [
+      "vt.连接；联系\nYou can connect the machine to your hi-fi\n你可以把机器连在高保真音响上。\n【考】 connect with 与……连接、联系；connect to 连接，相连"
+    ],
+    "usphone": "kə'nekt"
+  },
+  {
+    "name": "conscious",
+    "trans": [
+      "a.有知觉的；意识到的，自觉的\nHe was conscious of the faint, musky aroma of after-shave\n他注意到了须后水淡淡的麝香味。\n【考】 be conscious of/that 意识到"
+    ],
+    "usphone": "'kɔnʃəs"
+  },
+  {
+    "name": "consequence",
+    "trans": [
+      "n.结果，后果\nHer lawyer said she understood the consequences of her actions and was prepared to go to jail她的律师说她明白自己行为的后果，已有了入狱的心理准备。\n【考】 in consequence=as a result 因而，结果；in consequence of=as a result of 由于，因为"
+    ],
+    "usphone": "'kɔnsikwəns"
+  },
+  {
+    "name": "consider",
+    "trans": [
+      "v.考虑，细想；考虑到\nThe government is being asked to consider a plan to fix the date of the Easter break\n人们要求政府考虑确定复活节假期日期的计划。\n【考】 consider ... as（把某人）看作……；consider doing sth. 考虑做某事；\nconsider sb./sth. to do/be 认为某人做某事"
+    ],
+    "usphone": "kən'sidə"
+  },
+  {
+    "name": "considerable",
+    "trans": [
+      "a.相当的，可观的\nTo be without Pearce would be a considerable blow\n失去皮尔斯将是一个巨大的打击。"
+    ],
+    "usphone": "kən'sidərəbl"
+  },
+  {
+    "name": "considerate",
+    "trans": [
+      "a.体贴的，体谅的\nI think he's the most charming, most considerate man I've ever known\n我觉得他是我所认识的最有魅力并且最为体贴的男士。"
+    ],
+    "usphone": "kən'sidərit"
+  },
+  {
+    "name": "consist",
+    "trans": [
+      "v.（of）由……组成\nBreakfast consisted of porridge served with butter.\n早餐是麦片粥配佐餐黄油。"
+    ],
+    "usphone": "kən'sist"
+  },
+  {
+    "name": "constant",
+    "trans": [
+      "a.经常的；不变的\nShe suggests that women are under constant pressure to be abnormally thin\n她暗示说女性总是处在保持身材异常瘦削的压力之下。"
+    ],
+    "usphone": "'kɔnstənt"
+  },
+  {
+    "name": "contain",
+    "trans": [
+      "vt.包含，包括；能容纳\nThe bag contained a Christmas card\n这个包里装着一张圣诞卡。"
+    ],
+    "usphone": "kən'tein"
+  },
+  {
+    "name": "contribute",
+    "trans": [
+      "v.贡献，捐献\nThe three sons also contribute to the family business\n这"
+    ],
+    "usphone": "kən'tribjuːt"
+  },
+  {
+    "name": "cope",
+    "trans": [
+      "v.（with）对付，应付【近】 deal; handle \nIt was amazing how my mother coped with bringing up three children on less than three pounds a week\n我妈妈用每周不到"
+    ],
+    "usphone": "kəup"
+  },
+  {
+    "name": "count",
+    "trans": [
+      "v.计算，数；有重要意义He was counting slowly under his breath\n他轻声地慢慢数着数。"
+    ],
+    "usphone": "kaunt"
+  },
+  {
+    "name": "cover",
+    "trans": [
+      "vt.覆盖 n. 盖子；封底，封面Cover the casserole with a tight-fitting lid\n用大小合适的盖子盖住砂锅。\n【考】 be covered with 用……覆盖"
+    ],
+    "usphone": "'kʌvə"
+  },
+  {
+    "name": "create",
+    "trans": [
+      "v.创造，创作，建立We set business free to create more jobs in Britain\n我们放开对企业的限制以便在英国创造更多的就业机会。"
+    ],
+    "usphone": "kri'eit"
+  },
+  {
+    "name": "crime",
+    "trans": [
+      "n.罪，罪行；罪过He and Lieutenant Cassidy were checking the scene of the crime\n他和卡西迪中尉正在勘查犯罪现场"
+    ],
+    "usphone": "kraim"
+  },
+  {
+    "name": "criminal",
+    "trans": [
+      "a.犯罪的，刑事的 n. 罪犯A group of gunmen attacked a prison and set free nine criminals in Moroto.\n一伙持枪歹徒袭击了莫罗托的一所监狱，放走了"
+    ],
+    "usphone": "'kriminəl"
+  },
+  {
+    "name": "criticism",
+    "trans": [
+      "n.批评，指责；评论\nThis policy had repeatedly come under strong criticism on Capitol Hill\n该政策在美国国会屡遭强烈批评。"
+    ],
+    "usphone": "'kriti sizəm"
+  },
+  {
+    "name": "cruel",
+    "trans": [
+      "a.残酷的，残忍的\nChildren can be so cruel\n孩子有时可能会相当残忍"
+    ],
+    "usphone": "'kruːəl"
+  },
+  {
+    "name": "culture",
+    "trans": [
+      "n.文化；修养，教养There is just not enough fun and frivolity in culture today.\n当今的文化恰恰是不够轻松有趣。"
+    ],
+    "usphone": "'kʌltʃə"
+  },
+  {
+    "name": "custom",
+    "trans": [
+      "n.习惯；习俗；[the customs] 海关，关税The custom of lighting the Olympic flame goes back centuries\n点燃奥林匹克圣火的习俗可以追溯到几个世纪前。\n\n\n【D】"
+    ],
+    "usphone": "'kʌstəm"
+  },
+  {
+    "name": "damage",
+    "trans": [
+      "n./v. 损害，毁坏He maliciously damaged a car with a baseball bat\n他用棒球棒恶意损毁了一辆汽车。"
+    ],
+    "usphone": "'dæmidʒ"
+  },
+  {
+    "name": "deal",
+    "trans": [
+      "v.处理，对待 n. 协议；大量deal with a problem 处理问题\nI am in a position to save you a good deal of time.\n我能够为你节省许多时间。\n【考】 deal with 处理；a good deal / a great deal of sth. 许多，大量"
+    ],
+    "usphone": "diːl"
+  },
+  {
+    "name": "debt",
+    "trans": [
+      "n.债，负债Three years later, he is still paying off his debts\n都"
+    ],
+    "usphone": "det"
+  },
+  {
+    "name": "declare",
+    "trans": [
+      "v.宣布；宣称\nSpeaking outside Ten Downing Street, she declared that she would fight on\n她在英国首相官邸外发表讲话时宣称她将继续斗争下去。"
+    ],
+    "usphone": "di'klɛə"
+  },
+  {
+    "name": "deduce",
+    "trans": [
+      "vt.推论，推断\nAlison had cleverly deduced that I was the author of the letter.\n艾莉森已经聪明地推断出那封信就是我写的。\n【考】 deduce ... from 从……推导出"
+    ],
+    "usphone": "di'djuːs"
+  },
+  {
+    "name": "deed",
+    "trans": [
+      "n.行为，事迹\nHis heroic deeds were celebrated in every corner of India.\n他的英勇事迹在印度各地广为传颂。"
+    ],
+    "usphone": "diːd"
+  },
+  {
+    "name": "defend",
+    "trans": [
+      "v.保卫，辩护Every man who could fight was now committed to defend the ridge\n每个能够参加战斗的男子现在都决心要保卫这条山脊。"
+    ],
+    "usphone": "di'fend"
+  },
+  {
+    "name": "degree",
+    "trans": [
+      "n.程度，学位These man-made barriers will ensure a very high degree of protection\n这些人造屏障将会确保提供高度的保护。"
+    ],
+    "usphone": "di'griː"
+  },
+  {
+    "name": "delight",
+    "trans": [
+      "n.快乐，使高兴\nThroughout the house, the views are a constant source of surprise and delight\n从房子各处看到的景色不断给人以惊奇和欣喜。"
+    ],
+    "usphone": "di'lait"
+  },
+  {
+    "name": "deliver",
+    "trans": [
+      "v.递送；交付，移交\nThe Canadians plan to deliver more food to southern Somalia\n加拿大计划向索马里南部地区运送更多的食品。"
+    ],
+    "usphone": "di'livə"
+  },
+  {
+    "name": "democracy",
+    "trans": [
+      "n.民主，民主制\nThe new democracies face tough challenges.\n这些新兴的民主国家面临着严峻挑战。"
+    ],
+    "usphone": "di'mɔkrəsi"
+  },
+  {
+    "name": "demonstrate",
+    "trans": [
+      "v.证实，表明；展示【派】demonstration n. 证实，表明；展示The study also demonstrated a direct link between obesity and mortality\n该研究还表明了肥胖症和死亡率之间存在直接的联系。"
+    ],
+    "usphone": "'demənstreit"
+  },
+  {
+    "name": "deny",
+    "trans": [
+      "v.否认，拒绝\nShe denied both accusations她对两项指控均予以否认。"
+    ],
+    "usphone": "di'nai"
+  },
+  {
+    "name": "depend",
+    "trans": [
+      "vi.依靠，依赖\nThe cooking time needed depends on the size of the potato\n所需的烹饪时间取决于土豆的大小。\n【考】 depend on/upon 依 靠， 信 赖；It/That depends. 看情况而定。"
+    ],
+    "usphone": "di'pend"
+  },
+  {
+    "name": "describe",
+    "trans": [
+      "vt.描述；形容We asked her to describe what kind of things she did in her spare time\n我们请她描述一下她业余时间都在做什么"
+    ],
+    "usphone": "dis'kraib"
+  },
+  {
+    "name": "desert",
+    "trans": [
+      "n.沙漠，不毛之地\nThe vehicles have been modified to suit conditions in the desert.\n车辆已改装过以适应沙漠的环境。"
+    ],
+    "usphone": "'dezət"
+  },
+  {
+    "name": "deserve",
+    "trans": [
+      "v.应受，值得Government officials clearly deserve some of the blame as well\n政府官员显然也应当承担部分责任。"
+    ],
+    "usphone": "di'zəːv"
+  },
+  {
+    "name": "design",
+    "trans": [
+      "vt.设计，策划They wanted to design a machine that was both attractive and practical.\n他们想设计一种既美观又实用的机械\n【考】 be designed for/to do 专为……而做"
+    ],
+    "usphone": "di'zain"
+  },
+  {
+    "name": "desire",
+    "trans": [
+      "vt.要求；期望 n. 愿望，心愿\nI had a strong desire to help and care for people\n我非常渴望能够帮助和照顾他人。\n【考】desire（sb.）to do sth.希望某人做某事；a desire to do sth. 做某事的欲望"
+    ],
+    "usphone": "di'zaiə"
+  },
+  {
+    "name": "despite",
+    "trans": [
+      "prep.不管，尽管\nDespite a thorough investigation, no trace of Dr Southwell has been found\n尽管进行了彻底的调查，还是没有发现索思韦尔博士的任何踪迹。"
+    ],
+    "usphone": "di'spait"
+  },
+  {
+    "name": "destination",
+    "trans": [
+      "n.目的地Spain is still our most popular holiday destination\n西班牙仍是我们最喜爱的度假去处。"
+    ],
+    "usphone": "desti'neiʃən"
+  },
+  {
+    "name": "detail",
+    "trans": [
+      "n.细节；枝节，琐事\nWe examine the wording in detail before deciding on the final text.\n我们彻底仔细地检查了措词后才最终定稿。\n【考】 in detail 详细地"
+    ],
+    "usphone": "'diːteil"
+  },
+  {
+    "name": "determine",
+    "trans": [
+      "vt.决定，决心\nThe size of the chicken pieces will determine the cooking time\n鸡块的大小将决定烹饪时间的长短。"
+    ],
+    "usphone": "di'təːmin"
+  },
+  {
+    "name": "develop",
+    "trans": [
+      "v.（使）发展；培养；开发；冲洗（照片）As children develop, some of the most important things they learn have to do with their sense of self\n在成长过程中，孩子学到的一些最重要的东西与他们的自我意识有关。"
+    ],
+    "usphone": "di'veləp"
+  },
+  {
+    "name": "devote",
+    "trans": [
+      "vt.把……奉献（给）； 把……专用（于）He decided to devote the rest of his life to scientific investigation\n他决定将自己的余生献给科学研究事业。\n【考】 devote oneself to sth./doing sth.致力于……；献身于……"
+    ],
+    "usphone": "di'vəut"
+  },
+  {
+    "name": "difference",
+    "trans": [
+      "n.差别，差异\nThat is the fundamental difference between the two societies\n那是这两个社会之间的根本性差异。\n【考】 make a/no difference 有 / 没影响"
+    ],
+    "usphone": "'difərəns"
+  },
+  {
+    "name": "different",
+    "trans": [
+      "a.差异的，不同的\nLondon was different from most European capitals\n伦敦同大多数欧洲国家的首都都有所不同。"
+    ],
+    "usphone": "'difərənt"
+  },
+  {
+    "name": "difficulty",
+    "trans": [
+      "n.困难\nWe should help the friends in difficulty\n我们应该帮助处于困境的朋友。\n【考】 in difficulty 处 境 困 难；have difficulty in doing sth. 在……方面有困难"
+    ],
+    "usphone": "'difikəlti"
+  },
+  {
+    "name": "diligent",
+    "trans": [
+      "a.勤奋的，用功的\nMeyers is a diligent and prolific worker\n迈耶斯是个勤奋多产的工人。"
+    ],
+    "usphone": "'dilidʒənt"
+  },
+  {
+    "name": "direct",
+    "trans": [
+      "v.指挥，指导；导演 a. 直的，率直的\nThey'd come on a direct flight from Athens.\n他们是搭乘从雅典直飞这里的航班过来的。"
+    ],
+    "usphone": "di'rekt"
+  },
+  {
+    "name": "direction",
+    "trans": [
+      "n.方向；指导，管理\nSt Andrews was ten miles in the opposite direction\n圣安德鲁斯在相反方向上"
+    ],
+    "usphone": "di'rekʃən"
+  },
+  {
+    "name": "disappear",
+    "trans": [
+      "v.消失\nThe black car drove away from them and disappeared\n那辆黑色轿车驶离了他们的视线。"
+    ],
+    "usphone": "disə'piə"
+  },
+  {
+    "name": "discourage",
+    "trans": [
+      "v.使失去信心，使泄气\nIt may be difficult to do at first. Don't let this discourage you.\n万事开头难，别因此而灰心。"
+    ],
+    "usphone": "dis'kəːridʒ"
+  },
+  {
+    "name": "discover",
+    "trans": [
+      "vt.发现，找到，发觉\nShe discovered that they'd escaped\n她发现他们已经逃跑了。"
+    ],
+    "usphone": "dis'kʌvə"
+  },
+  {
+    "name": "distance",
+    "trans": [
+      "n.距离\nI hear the rumble of thunder in the distance.\n我听到远处雷声隆隆。\nThe railway station is at a distance of two miles from our school.\n火车站离我们学校两英里路程。\n【考】 in the distance 在远处；at a distance of 有相当距离"
+    ],
+    "usphone": "'distəns"
+  },
+  {
+    "name": "distant",
+    "trans": [
+      "a.在远处的，远隔的The mountains rolled away to a distant horizon.\n群山向远处的地平线绵延而去。"
+    ],
+    "usphone": "'distənt"
+  },
+  {
+    "name": "distinguish",
+    "trans": [
+      "v.区别，辨别，辨认出\nCould he distinguish right from wrong?\n他能分辨是非吗？"
+    ],
+    "usphone": "di'stiŋgwiʃ"
+  },
+  {
+    "name": "distribute",
+    "trans": [
+      "v.分配，分发，配给"
+    ],
+    "usphone": "di'stribjut"
+  },
+  {
+    "name": "divide",
+    "trans": [
+      "v.分，划分；分享；分开"
+    ],
+    "usphone": "di'vaid"
+  },
+  {
+    "name": "division",
+    "trans": [
+      "n.区分，分开，除法；部门"
+    ],
+    "usphone": "di'viʒən"
+  },
+  {
+    "name": "doubt",
+    "trans": [
+      "n.疑惑，疑问，怀疑 v. 怀疑，不相信\n【考】 no doubt 无疑地；in doubt 不能肯定的；without doubt 无疑的"
+    ],
+    "usphone": "daut"
+  },
+  {
+    "name": "dress",
+    "trans": [
+      "n.女装，连衣裙 vt. 给……穿衣服；打扮\n【考】 dress up 穿上盛装，打扮；be/get dressed in穿着……衣服"
+    ],
+    "usphone": "dres"
+  },
+  {
+    "name": "drop",
+    "trans": [
+      "n.滴，水滴；下降 v. 落下；扔下；中断\n【考】 drop in 顺便拜访；drop out 退出，退学\n\n\n【E】"
+    ],
+    "usphone": "drɔp"
+  },
+  {
+    "name": "economy",
+    "trans": [
+      "n.经济"
+    ],
+    "usphone": "i'kɔnəmi"
+  },
+  {
+    "name": "educate",
+    "trans": [
+      "vt.教育，培养"
+    ],
+    "usphone": "'edjukeit"
+  },
+  {
+    "name": "effect",
+    "trans": [
+      "n.效果；作用\n【考】 have an effect on 对 …… 有 影 响 / 作 用；come into effect 生效，起作用"
+    ],
+    "usphone": "i'fekt"
+  },
+  {
+    "name": "effort",
+    "trans": [
+      "n.努力，艰难的尝试【考】 make an effort to do sth. 努力做某事"
+    ],
+    "usphone": "'efət"
+  },
+  {
+    "name": "elect",
+    "trans": [
+      "vt.选举，推选【派】 elector n. 选民；election n. 选举"
+    ],
+    "usphone": "i'lekt"
+  },
+  {
+    "name": "element",
+    "trans": [
+      "n.元素，成分"
+    ],
+    "usphone": "'elimənt"
+  },
+  {
+    "name": "embarrass",
+    "trans": [
+      "vt.使窘迫，使困扰"
+    ],
+    "usphone": "im'bærəs"
+  },
+  {
+    "name": "emotion",
+    "trans": [
+      "n.情感，情绪"
+    ],
+    "usphone": "i'məuʃən"
+  },
+  {
+    "name": "emphasis",
+    "trans": [
+      "n.强调"
+    ],
+    "usphone": "'emfəsis"
+  },
+  {
+    "name": "emphasize",
+    "trans": [
+      "v.强调"
+    ],
+    "usphone": "'emfəsaiz"
+  },
+  {
+    "name": "enable",
+    "trans": [
+      "v.使能够"
+    ],
+    "usphone": "in'eibl"
+  },
+  {
+    "name": "encourage",
+    "trans": [
+      "v.鼓励，助长，促进"
+    ],
+    "usphone": "in'kʌridʒ"
+  },
+  {
+    "name": "endless",
+    "trans": [
+      "a.无限的，无穷的"
+    ],
+    "usphone": "'endlis"
+  },
+  {
+    "name": "enemy",
+    "trans": [
+      "n.敌人，仇敌"
+    ],
+    "usphone": "'enimi"
+  },
+  {
+    "name": "energy",
+    "trans": [
+      "n.精力，气力，能量"
+    ],
+    "usphone": "'enədʒi"
+  },
+  {
+    "name": "engage",
+    "trans": [
+      "v.雇用，使订婚；占用"
+    ],
+    "usphone": "in'geidʒ"
+  },
+  {
+    "name": "ensure",
+    "trans": [
+      "v.保证，担保"
+    ],
+    "usphone": "in'ʃuə"
+  },
+  {
+    "name": "entertain",
+    "trans": [
+      "v.招待，使欢乐"
+    ],
+    "usphone": "entə'tein"
+  },
+  {
+    "name": "entire",
+    "trans": [
+      "a.完全的，完整的"
+    ],
+    "usphone": "in'taiə"
+  },
+  {
+    "name": "entrance",
+    "trans": [
+      "n.入口，门口；进入"
+    ],
+    "usphone": "'entrəns"
+  },
+  {
+    "name": "entry",
+    "trans": [
+      "n.进入，入场"
+    ],
+    "usphone": "'entri"
+  },
+  {
+    "name": "environment",
+    "trans": [
+      "n.环境，周围状况，自然环境"
+    ],
+    "usphone": "in'vaiərənmənt"
+  },
+  {
+    "name": "equal",
+    "trans": [
+      "a.同等的，相等的，匹敌者"
+    ],
+    "usphone": "'iːkwəl"
+  },
+  {
+    "name": "equip",
+    "trans": [
+      "v.装备，设备【派】 equipment n. 装备，器材"
+    ],
+    "usphone": "i'kwip"
+  },
+  {
+    "name": "error",
+    "trans": [
+      "n.错误，过失\n\n\n【F】"
+    ],
+    "usphone": "'erə"
+  },
+  {
+    "name": "fact",
+    "trans": [
+      "n.事实；真相【考】 in fact 实际上，事实上；as a matter of fact事实上"
+    ],
+    "usphone": "fækt"
+  },
+  {
+    "name": "factor",
+    "trans": [
+      "n.因素，要素"
+    ],
+    "usphone": "'fæktə"
+  },
+  {
+    "name": "fail",
+    "trans": [
+      "v.失败；不及格【考】 fail to do sth. 没能做成某事；fail in sth. 在某事物中失败"
+    ],
+    "usphone": "feil"
+  },
+  {
+    "name": "fair",
+    "trans": [
+      "n.集市；展览会 a. 公平的；（肤色）白皙的"
+    ],
+    "usphone": "fɛə"
+  },
+  {
+    "name": "faith",
+    "trans": [
+      "n.信任；信仰，信念"
+    ],
+    "usphone": "feiθ"
+  },
+  {
+    "name": "familiar",
+    "trans": [
+      "a.熟悉的\n【考】 be familiar with sb. / sth. 通晓或者熟悉；sth. be familiar to sb. 为……所熟知"
+    ],
+    "usphone": "fə'miljə"
+  },
+  {
+    "name": "fashion",
+    "trans": [
+      "n.样子，方式；时尚，风气"
+    ],
+    "usphone": "'fæʃən"
+  },
+  {
+    "name": "fault",
+    "trans": [
+      "n.缺点，毛病    【考】 find fault （with）挑错，批评"
+    ],
+    "usphone": "fɔːlt"
+  },
+  {
+    "name": "fear",
+    "trans": [
+      "n.害怕，恐惧\n【考】 for fear of 生 怕， 唯 恐；for fear that 唯恐……发生；in fear of 为……而担心"
+    ],
+    "usphone": "fiər"
+  },
+  {
+    "name": "field",
+    "trans": [
+      "n.田地；领域"
+    ],
+    "usphone": "fiːld"
+  },
+  {
+    "name": "figure",
+    "trans": [
+      "v.计算；认为 n. 数字；人物【考】 figure out 理解，想明白，计算出"
+    ],
+    "usphone": "'fiɡə"
+  },
+  {
+    "name": "fit",
+    "trans": [
+      "v.适合 a. 健康的；合适的【考】 be fit for 适合，胜任  【近】 suit；match"
+    ],
+    "usphone": "fit"
+  },
+  {
+    "name": "follow",
+    "trans": [
+      "vt.跟随；仿照；听得懂；遵循【反】 lead v. 引领【考】 as follows 如下"
+    ],
+    "usphone": "'fɔləu"
+  },
+  {
+    "name": "form",
+    "trans": [
+      "n.形状，形式；表格 v. 形成，养成"
+    ],
+    "usphone": "fɔːm"
+  },
+  {
+    "name": "formal",
+    "trans": [
+      "a.正式的，礼仪上的"
+    ],
+    "usphone": "'fɔːməl"
+  },
+  {
+    "name": "former",
+    "trans": [
+      "a.在前的，以前的；前者的"
+    ],
+    "usphone": "'fɔːmə"
+  },
+  {
+    "name": "forth",
+    "trans": [
+      "ad.向前，向外\n【考】 back and forth 来回的，往复的"
+    ],
+    "usphone": "fɔːθ"
+  },
+  {
+    "name": "fortune",
+    "trans": [
+      "n.命运，好运；财产，财富【考】 make a fortune 发财"
+    ],
+    "usphone": "'fɔːtʃən"
+  },
+  {
+    "name": "fortunate",
+    "trans": [
+      "a.幸运的"
+    ],
+    "usphone": "'fɔːtʃənit"
+  },
+  {
+    "name": "fresh",
+    "trans": [
+      "a.新鲜的；清新的；水（淡）的"
+    ],
+    "usphone": "freʃ"
+  },
+  {
+    "name": "frighten",
+    "trans": [
+      "v.吓唬，使惊恐"
+    ],
+    "usphone": "'fraitən"
+  },
+  {
+    "name": "fuel",
+    "trans": [
+      "n.燃料"
+    ],
+    "usphone": "'fjuəl"
+  },
+  {
+    "name": "function",
+    "trans": [
+      "n.职责；功能；作用 v. 运行，起作用\n\n\n【G】"
+    ],
+    "usphone": "'fʌŋkʃən"
+  },
+  {
+    "name": "general",
+    "trans": [
+      "a.大 体 的， 笼 统 的， 总 的    n. 将军\n【考】 in general 基 本 上， 大 体 上， 总 之；\ngenerally speaking （常做插入语）总体来说，一般来说"
+    ],
+    "usphone": "'dʒenərəl"
+  },
+  {
+    "name": "generation",
+    "trans": [
+      "n.代，世代；产生，发生"
+    ],
+    "usphone": "dʒenə'reiʃən"
+  },
+  {
+    "name": "generous",
+    "trans": [
+      "a.慷慨的，宽厚的"
+    ],
+    "usphone": "'dʒenərəs"
+  },
+  {
+    "name": "genius",
+    "trans": [
+      "n.天才"
+    ],
+    "usphone": "'dʒinjəs"
+  },
+  {
+    "name": "gentle",
+    "trans": [
+      "a.和蔼的，有礼貌的"
+    ],
+    "usphone": "'dʒentl"
+  },
+  {
+    "name": "genuine",
+    "trans": [
+      "a.真正的，真诚的"
+    ],
+    "usphone": "'dʒenjuin"
+  },
+  {
+    "name": "gesture",
+    "trans": [
+      "n.姿势，手势，姿态；表示"
+    ],
+    "usphone": "'dʒestʃə"
+  },
+  {
+    "name": "giant",
+    "trans": [
+      "n.巨人 a. 巨大的"
+    ],
+    "usphone": "'dʒaiənt"
+  },
+  {
+    "name": "gift",
+    "trans": [
+      "n.礼物；天赋，才能【考】 have a gift for 对……有天赋"
+    ],
+    "usphone": "ɡift"
+  },
+  {
+    "name": "glory",
+    "trans": [
+      "n.光荣，荣誉"
+    ],
+    "usphone": "'ɡlɔri"
+  },
+  {
+    "name": "goal",
+    "trans": [
+      "n.终点，目的"
+    ],
+    "usphone": "gəul"
+  },
+  {
+    "name": "graduate",
+    "trans": [
+      "v.毕业 n. 毕业生"
+    ],
+    "usphone": "'ɡrædjueit"
+  },
+  {
+    "name": "grant",
+    "trans": [
+      "v.同意，准予；授予【考】 take sth. for granted 认为……是理所当然的"
+    ],
+    "usphone": "ɡrɑːnt"
+  },
+  {
+    "name": "greet",
+    "trans": [
+      "vt.问候；向……致敬"
+    ],
+    "usphone": "ɡriːt"
+  },
+  {
+    "name": "ground",
+    "trans": [
+      "n.地面，土地；运动场【考】 on the grounds of 以……为理由"
+    ],
+    "usphone": "ɡraund"
+  },
+  {
+    "name": "group",
+    "trans": [
+      "n.群，团体；集团"
+    ],
+    "usphone": "ɡruːp"
+  },
+  {
+    "name": "guard",
+    "trans": [
+      "v.警戒，看守 n. 防护装置；看守员"
+    ],
+    "usphone": "ɡɑːd"
+  },
+  {
+    "name": "guide",
+    "trans": [
+      "n.向导，导游；指导者 vt. 指导，引导【派】 guidance n. 引导，指导"
+    ],
+    "usphone": "ɡaid"
+  },
+  {
+    "name": "guilt",
+    "trans": [
+      "n.犯罪，过失；内疚【派】 guilty a. 有罪的；负疚的\n\n\n【H】"
+    ],
+    "usphone": "ɡilt"
+  },
+  {
+    "name": "habit",
+    "trans": [
+      "n.习惯，习性，脾性\n【考】 form/get the habit of 养 成 …… 习 惯；get into the habit of 沾染了……恶习；\ngrow out of the habit 改掉了……习惯"
+    ],
+    "usphone": "'hæbit"
+  },
+  {
+    "name": "half",
+    "trans": [
+      "n.一半 a. 一半的"
+    ],
+    "usphone": "hɑːf"
+  },
+  {
+    "name": "handle",
+    "trans": [
+      "n.手柄 v. 对付，处理；管理"
+    ],
+    "usphone": "'hændl"
+  },
+  {
+    "name": "happen",
+    "trans": [
+      "v.发生；碰巧\n【考】 happen to do sth. 碰巧做某事；happen on/upon 巧遇，偶然发现；\nit happens that ... 碰巧，恰巧"
+    ],
+    "usphone": "'hæpən"
+  },
+  {
+    "name": "happiness",
+    "trans": [
+      "n.幸福，快乐，愉快"
+    ],
+    "usphone": "'hæpinis"
+  },
+  {
+    "name": "harvest",
+    "trans": [
+      "n.收成，收获 vt. 收割"
+    ],
+    "usphone": "hɑːvist"
+  },
+  {
+    "name": "hatred",
+    "trans": [
+      "n.憎恶"
+    ],
+    "usphone": "'heitrid"
+  },
+  {
+    "name": "healthy",
+    "trans": [
+      "a.健康的"
+    ],
+    "usphone": "'helθi"
+  },
+  {
+    "name": "hear",
+    "trans": [
+      "v.听见，听说；听取\n【考】 hear of 听到，听说；hear from 收到来信【近】 listen（强调过程）"
+    ],
+    "usphone": "hiə"
+  },
+  {
+    "name": "heat",
+    "trans": [
+      "v.加热，升温 n. 热"
+    ],
+    "usphone": "hit"
+  },
+  {
+    "name": "hesitate",
+    "trans": [
+      "v.犹豫，踌躇"
+    ],
+    "usphone": "'heziteit"
+  },
+  {
+    "name": "historic",
+    "trans": [
+      "a.历史上有重大意义的           【辨】historical"
+    ],
+    "usphone": "his'tɔːrik"
+  },
+  {
+    "name": "holy",
+    "trans": [
+      "a.神圣的，圣洁的"
+    ],
+    "usphone": "'həuli"
+  },
+  {
+    "name": "host",
+    "trans": [
+      "n.主人 v. 主办"
+    ],
+    "usphone": "həust"
+  },
+  {
+    "name": "human",
+    "trans": [
+      "a.人的，人类的"
+    ],
+    "usphone": "'hjuːmən"
+  },
+  {
+    "name": "hurt",
+    "trans": [
+      "vt.使受伤；伤害    【考】 get hurt 受伤\n\n\n【I】"
+    ],
+    "usphone": "həːt"
+  },
+  {
+    "name": "idea",
+    "trans": [
+      "n.主意；想法；计划【考】 have no idea 不知道"
+    ],
+    "usphone": "ai'diə"
+  },
+  {
+    "name": "ideal",
+    "trans": [
+      "a.理想的，称心的\n【例】 He’s the ideal husband for her. 他是她理想的丈夫。"
+    ],
+    "usphone": "ai'diəl"
+  },
+  {
+    "name": "identify",
+    "trans": [
+      "v.识别；认出"
+    ],
+    "usphone": "ai'dentifai"
+  },
+  {
+    "name": "idle",
+    "trans": [
+      "a.闲着的，空虚；懒惰的"
+    ],
+    "usphone": "'aidl"
+  },
+  {
+    "name": "ignore",
+    "trans": [
+      "vt.不顾，不理；忽视"
+    ],
+    "usphone": "iɡ'nɔː"
+  },
+  {
+    "name": "image",
+    "trans": [
+      "n.像，肖像，图像；形象"
+    ],
+    "usphone": "'imidʒ"
+  },
+  {
+    "name": "imagine",
+    "trans": [
+      "vt.设想，猜想【派】 imagination n. 想象，想象力\n【考】 imagine + 宾语 + 补语（doing； to be 短语）想象……"
+    ],
+    "usphone": "i'mædʒin"
+  },
+  {
+    "name": "imitate",
+    "trans": [
+      "v.模仿，仿效【派】 imitation n. 模仿，仿效"
+    ],
+    "usphone": "'imiteit"
+  },
+  {
+    "name": "immediate",
+    "trans": [
+      "a.立即的，最接近的"
+    ],
+    "usphone": "i'miːdjət"
+  },
+  {
+    "name": "impact",
+    "trans": [
+      "n.冲击，影响"
+    ],
+    "usphone": "'impækt"
+  },
+  {
+    "name": "imply",
+    "trans": [
+      "v.暗示"
+    ],
+    "usphone": "im'plai"
+  },
+  {
+    "name": "implication",
+    "trans": [
+      "n.含义，暗指"
+    ],
+    "usphone": "impli'keiʃən"
+  },
+  {
+    "name": "import",
+    "trans": [
+      "v.进口，输入 n. 进口物资"
+    ],
+    "usphone": "'impɔrt"
+  },
+  {
+    "name": "important",
+    "trans": [
+      "a.重要的，重大的\n【派】 importance n. 重要，重要性【考】 be of great importance to sb./sth. 对 …… 极重要"
+    ],
+    "usphone": "im'pɔːtənt"
+  },
+  {
+    "name": "impress",
+    "trans": [
+      "vt.给……以深刻印象\n【派】 impression n. 印象；impressive a. 给人印象深刻的\n【考】 impress on 使铭记，使印象深刻；impress sb. with sth. 因为某事使某人印象深刻"
+    ],
+    "usphone": "im'pres"
+  },
+  {
+    "name": "improve",
+    "trans": [
+      "v.改进，更新；变得更好【派】 improvement n. 改进，改进措施"
+    ],
+    "usphone": "im'pruːv"
+  },
+  {
+    "name": "include",
+    "trans": [
+      "vt.包括，包含【近】 contain"
+    ],
+    "usphone": "in'kluːd"
+  },
+  {
+    "name": "income",
+    "trans": [
+      "n.收入，所得"
+    ],
+    "usphone": "'inkʌm"
+  },
+  {
+    "name": "independent",
+    "trans": [
+      "a.独立的，自主的\n【派】 independently ad. 独立地，自主地；inde-pendence n. 独立，自立，自主\n【考】 be independent of sb./sth."
+    ],
+    "usphone": "indi'pendənt"
+  },
+  {
+    "name": "indicate",
+    "trans": [
+      "vt.指点，指示；表明"
+    ],
+    "usphone": "'indikeit"
+  },
+  {
+    "name": "individual",
+    "trans": [
+      "n.个人，个体 a. 个人的，个别的"
+    ],
+    "usphone": "indi'vidjuəl"
+  },
+  {
+    "name": "industry",
+    "trans": [
+      "n.工业；行业【派】 industrial a. 工业的，产业的"
+    ],
+    "usphone": "'indəstri"
+  },
+  {
+    "name": "infect",
+    "trans": [
+      "v.传染"
+    ],
+    "usphone": "in'fekt"
+  },
+  {
+    "name": "inferior",
+    "trans": [
+      "a.次的，低劣的【反】 superior a. 较好的，较多的\n【考】 be inferior to 低于，劣于"
+    ],
+    "usphone": "in'fiəriə"
+  },
+  {
+    "name": "influence",
+    "trans": [
+      "vt.影响，对……有作用 n.影响  \n【考】 have influence on ... 对……有影响"
+    ],
+    "usphone": "'influəns"
+  },
+  {
+    "name": "inform",
+    "trans": [
+      "v.通知，告诉；报告  【考】 inform sb. of/about sth. 通知某人某事"
+    ],
+    "usphone": "in'fɔːm"
+  },
+  {
+    "name": "information",
+    "trans": [
+      "n.信息，资料，情报"
+    ],
+    "usphone": "infə'meiʃən"
+  },
+  {
+    "name": "inherit",
+    "trans": [
+      "v.继承"
+    ],
+    "usphone": "in'herit"
+  },
+  {
+    "name": "injure",
+    "trans": [
+      "v.伤害【派】 injury n. 伤   【近】 hurt v. 伤害"
+    ],
+    "usphone": "'indʒə"
+  },
+  {
+    "name": "innocent",
+    "trans": [
+      "a.清白的；单纯的【派】 innocence n. 无辜；纯真"
+    ],
+    "usphone": "'inəsnt"
+  },
+  {
+    "name": "insist",
+    "trans": [
+      "v.（on, upon）坚持；坚决认为\n【考】 insist 用法与 suggest 相似。insist 作“坚持”说时，要用陈述语气；作“坚决主张；\n坚决要求”讲时，用虚拟语气。"
+    ],
+    "usphone": "in'sist"
+  },
+  {
+    "name": "instant",
+    "trans": [
+      "a.立刻的，瞬间的"
+    ],
+    "usphone": "'instənt"
+  },
+  {
+    "name": "instead",
+    "trans": [
+      "ad.代替；反而；而不是  【考】 instead of 代替，而不是"
+    ],
+    "usphone": "in'sted"
+  },
+  {
+    "name": "instruction",
+    "trans": [
+      "n.说明，须知；教导"
+    ],
+    "usphone": "in'strʌkʃən"
+  },
+  {
+    "name": "instrument",
+    "trans": [
+      "n.乐器；工具，器械"
+    ],
+    "usphone": "'instrumənt"
+  },
+  {
+    "name": "insult",
+    "trans": [
+      "n.侮辱，凌辱"
+    ],
+    "usphone": "'insʌlt"
+  },
+  {
+    "name": "intelligence",
+    "trans": [
+      "n.智力，理解；情报【派】 intelligent a. 聪明的； 有才智的"
+    ],
+    "usphone": "in'telidʒəns"
+  },
+  {
+    "name": "intend",
+    "trans": [
+      "v.想要，打算；意指，意思是\n【考】 intend + 名词 / 动名词 / 动词不定式 /that从句；\nit is intended that（接宾语从句）企图，意图是"
+    ],
+    "usphone": "in'tend"
+  },
+  {
+    "name": "interfere",
+    "trans": [
+      "vi.干涉，干扰，妨碍"
+    ],
+    "usphone": "intə'fiə"
+  },
+  {
+    "name": "interrupt",
+    "trans": [
+      "v.打断；打扰"
+    ],
+    "usphone": "intə'rʌpt"
+  },
+  {
+    "name": "introduce",
+    "trans": [
+      "v.介绍，提出，引进【考】 introduce oneself 作自我介绍"
+    ],
+    "usphone": "intrə'djuːs"
+  },
+  {
+    "name": "invent",
+    "trans": [
+      "vt.发明，创造；编造"
+    ],
+    "usphone": "in'vent"
+  },
+  {
+    "name": "invest",
+    "trans": [
+      "v.投资"
+    ],
+    "usphone": "in'vest"
+  },
+  {
+    "name": "invite",
+    "trans": [
+      "vt.邀请【考】 invite sb. to 邀请某人去……"
+    ],
+    "usphone": "in'vait"
+  },
+  {
+    "name": "involve",
+    "trans": [
+      "vt.包括；使卷入，涉及【考】 be involved in 与……有关；被卷入\n\n\n【J】"
+    ],
+    "usphone": "in'vɔlv"
+  },
+  {
+    "name": "jealous",
+    "trans": [
+      "a.妒忌的"
+    ],
+    "usphone": "'dʒeləs"
+  },
+  {
+    "name": "join",
+    "trans": [
+      "vi.连接，接合 vt. 加入，参加【考】 join + sb. 或组织；join in + 活动"
+    ],
+    "usphone": "dʒɔin"
+  },
+  {
+    "name": "joint",
+    "trans": [
+      "n.关节 a. 接合处，联合的"
+    ],
+    "usphone": "dʒɔint"
+  },
+  {
+    "name": "journey",
+    "trans": [
+      "n.旅行，旅程    【近】 tour; trip"
+    ],
+    "usphone": "'dʒəːni"
+  },
+  {
+    "name": "judge",
+    "trans": [
+      "n.法官，裁判员 v. 断定，裁决；审判【考】 judge by/from 以……来判断"
+    ],
+    "usphone": "dʒʌdʒ"
+  },
+  {
+    "name": "justice",
+    "trans": [
+      "n.正义，公正，公平\n\n\n【K】"
+    ],
+    "usphone": "'dʒʌstis"
+  },
+  {
+    "name": "keen",
+    "trans": [
+      "a.锋利的，尖锐的；热心的"
+    ],
+    "usphone": "kiːn"
+  },
+  {
+    "name": "keep",
+    "trans": [
+      "v.（使）保持，（使）继续；阻止；遵守；保有"
+    ],
+    "usphone": "kiːp"
+  },
+  {
+    "name": "knowledge",
+    "trans": [
+      "n.知识，学识；知道，了解\n\n\n【L】"
+    ],
+    "usphone": "'nɔlidʒ"
+  },
+  {
+    "name": "language",
+    "trans": [
+      "n.语言"
+    ],
+    "usphone": "'læŋɡwidʒ"
+  },
+  {
+    "name": "latter",
+    "trans": [
+      "ad.后面的，后者"
+    ],
+    "usphone": "'lætə"
+  },
+  {
+    "name": "laughter",
+    "trans": [
+      "n.笑声"
+    ],
+    "usphone": "'lɑːftə"
+  },
+  {
+    "name": "launch",
+    "trans": [
+      "v.发射，发起，开始"
+    ],
+    "usphone": "lɔːntʃ"
+  },
+  {
+    "name": "largely",
+    "trans": [
+      "ad.大部分，基本上"
+    ],
+    "usphone": "'lɑːdʒli"
+  },
+  {
+    "name": "lazy",
+    "trans": [
+      "a.懒惰的"
+    ],
+    "usphone": "'leizi"
+  },
+  {
+    "name": "lead",
+    "trans": [
+      "v.领导，带领；导致，通向 n. 铅\n【考】 lead to 导致，导向"
+    ],
+    "usphone": "lid"
+  },
+  {
+    "name": "leader",
+    "trans": [
+      "n.领袖"
+    ],
+    "usphone": "'liːdə"
+  },
+  {
+    "name": "leading",
+    "trans": [
+      "a.领导的；最主要的"
+    ],
+    "usphone": "'liːdiŋ"
+  },
+  {
+    "name": "lean",
+    "trans": [
+      "v.倾斜；屈身，倚"
+    ],
+    "usphone": "liːn"
+  },
+  {
+    "name": "leap",
+    "trans": [
+      "v.跳跃，跳过"
+    ],
+    "usphone": "liːp"
+  },
+  {
+    "name": "learned",
+    "trans": [
+      "a.有学问的"
+    ],
+    "usphone": "'ləːnid"
+  },
+  {
+    "name": "least",
+    "trans": [
+      "a.最小的，最少的 ad. 最少，最小【考】 at least 至少"
+    ],
+    "usphone": "liːst"
+  },
+  {
+    "name": "legal",
+    "trans": [
+      "a.法律（上）的，合法的【派】 illegal a. 违法的"
+    ],
+    "usphone": "'liːɡəl"
+  },
+  {
+    "name": "leisure",
+    "trans": [
+      "n.空闲；悠闲"
+    ],
+    "usphone": "'liːʒə"
+  },
+  {
+    "name": "length",
+    "trans": [
+      "n.长，长度"
+    ],
+    "usphone": "leŋθ"
+  },
+  {
+    "name": "level",
+    "trans": [
+      "n.水平，标准，水准"
+    ],
+    "usphone": "'levl"
+  },
+  {
+    "name": "liberate",
+    "trans": [
+      "vt.解放，使获自由"
+    ],
+    "usphone": "'libəreit"
+  },
+  {
+    "name": "lift",
+    "trans": [
+      "vt.举起，抬起 n. 电梯；搭便车"
+    ],
+    "usphone": "lift"
+  },
+  {
+    "name": "likely",
+    "trans": [
+      "a.可能的，有希望的 ad. 大概，多半【考】 be likely to do sth./that"
+    ],
+    "usphone": "'laikli"
+  },
+  {
+    "name": "likewise",
+    "trans": [
+      "ad.同样，也"
+    ],
+    "usphone": "'laikwaiz"
+  },
+  {
+    "name": "limit",
+    "trans": [
+      "vt.限制，限定 n. 界限；限制"
+    ],
+    "usphone": "'limit"
+  },
+  {
+    "name": "link",
+    "trans": [
+      "v.连接；联系 n. 联系；关系；环节"
+    ],
+    "usphone": "liŋk"
+  },
+  {
+    "name": "literature",
+    "trans": [
+      "n.文学，文学作品"
+    ],
+    "usphone": "'litərətʃə"
+  },
+  {
+    "name": "live",
+    "trans": [
+      "vi.生活，生存 [laiv] a. 活的，直播的\n【考】live on/by 靠…生活，以…为食；live up to 实践，不辜负"
+    ],
+    "usphone": "liv"
+  },
+  {
+    "name": "loan",
+    "trans": [
+      "n.贷款；借出 v. 借出"
+    ],
+    "usphone": "ləun"
+  },
+  {
+    "name": "local",
+    "trans": [
+      "a.当地的，地方性的"
+    ],
+    "usphone": "'ləukəl"
+  },
+  {
+    "name": "lonely",
+    "trans": [
+      "a.孤独的，荒凉的"
+    ],
+    "usphone": "'ləunli"
+  },
+  {
+    "name": "look",
+    "trans": [
+      "v.看，注视；好像，显得 n. 脸色，外表\n【考】 look out 当心，小心；look after 照顾；look like 看起来像；\nlook around 四处看看；look on 看待，以为； look forward to 盼望，期待；\nlook into 调查，观察；look up 查找，寻找，查出；look down upon 蔑视，看不起"
+    ],
+    "usphone": "luk"
+  },
+  {
+    "name": "loose",
+    "trans": [
+      "a.松的，宽的，松散的"
+    ],
+    "usphone": "luːs"
+  },
+  {
+    "name": "lose",
+    "trans": [
+      "v.失去，丢失【考】lose one‘s way 迷 路；lose oneself in 沉 湎于……"
+    ],
+    "usphone": "luːz"
+  },
+  {
+    "name": "loss",
+    "trans": [
+      "n.丧失，损失；失败【考】 at a loss 茫然，困惑"
+    ],
+    "usphone": "lɔs"
+  },
+  {
+    "name": "loyal",
+    "trans": [
+      "a.忠诚的，忠贞的【考】 be loyal to sb./sth."
+    ],
+    "usphone": "'lɔiəl"
+  },
+  {
+    "name": "luck",
+    "trans": [
+      "n.运气；好运，幸运【考】 bad luck 倒霉；out of luck 运气不好"
+    ],
+    "usphone": "lʌk"
+  },
+  {
+    "name": "luxury",
+    "trans": [
+      "n.奢华，奢侈，奢侈品\n\n\n【M】"
+    ],
+    "usphone": "'lʌkʃəri"
+  },
+  {
+    "name": "machinery",
+    "trans": [
+      "n.（总称）机械，机器"
+    ],
+    "usphone": "mə'ʃiːnəri"
+  },
+  {
+    "name": "magic",
+    "trans": [
+      "n.魔术，魔法 a. 魔术的；有魔力的\n【例】 This diet tea has a magic effect. 这种减肥茶有着神奇的功效。//magic show 魔术表演"
+    ],
+    "usphone": "'mædʒik"
+  },
+  {
+    "name": "main",
+    "trans": [
+      "a.主要的，总的 n. 总管道，干线"
+    ],
+    "usphone": "mein"
+  },
+  {
+    "name": "maintain",
+    "trans": [
+      "v.保养，维修；维持，保持；坚持"
+    ],
+    "usphone": "mein'tein"
+  },
+  {
+    "name": "major",
+    "trans": [
+      "a.较大的，主要的          【反】 minor"
+    ],
+    "usphone": "'meidʒə"
+  },
+  {
+    "name": "majority",
+    "trans": [
+      "n.大多数\n【考】 the majority are/is ... 大多数……；be in the majority 占多数【反】 minority"
+    ],
+    "usphone": "mə'dʒɔːriti"
+  },
+  {
+    "name": "manage",
+    "trans": [
+      "v.管理；设法对付\n【辨】manage to do 和 try to do：manage to do sth.设法去做成（强调结果）；\ntry to do 尽力（去）做（强调动作）。"
+    ],
+    "usphone": "'mænidʒ"
+  },
+  {
+    "name": "mankind",
+    "trans": [
+      "n.人类"
+    ],
+    "usphone": "mæn'kaind"
+  },
+  {
+    "name": "manner",
+    "trans": [
+      "n.方式，方法；态度，举止；（pl.）礼貌，规矩"
+    ],
+    "usphone": "'mænə"
+  },
+  {
+    "name": "manual",
+    "trans": [
+      "a.用手的，体力的"
+    ],
+    "usphone": "'mænjuəl"
+  },
+  {
+    "name": "mass",
+    "trans": [
+      "n.团，堆，民众，大量"
+    ],
+    "usphone": "mæs"
+  },
+  {
+    "name": "master",
+    "trans": [
+      "n.主人 v. 掌握"
+    ],
+    "usphone": "'mɑːstə"
+  },
+  {
+    "name": "match",
+    "trans": [
+      "v.使相配，使成对 n. 竞赛；火柴"
+    ],
+    "usphone": "mætʃ"
+  },
+  {
+    "name": "material",
+    "trans": [
+      "n.材料，原料 a. 物质的，有形的"
+    ],
+    "usphone": "mə'tiəriəl"
+  },
+  {
+    "name": "matter",
+    "trans": [
+      "n.要紧事；问题 vi. 要紧，有重大关系\n【考】 as a matter of fact（=in fact） 事 实 上；no matter how/what 不管怎样"
+    ],
+    "usphone": "'mætə"
+  },
+  {
+    "name": "maximum",
+    "trans": [
+      "n.最大量 a. 最大的，最多的"
+    ],
+    "usphone": "'mæksiməm"
+  },
+  {
+    "name": "means",
+    "trans": [
+      "n.方法，手段，工具\n【考】 by means of 用，凭借；by all means 尽一切办法；by no means 绝不"
+    ],
+    "usphone": "miːnz"
+  },
+  {
+    "name": "measure",
+    "trans": [
+      "v.测量 n. 尺寸，标准；措施，办法【考】 take measures 采取措施"
+    ],
+    "usphone": "'meʒər"
+  },
+  {
+    "name": "medical",
+    "trans": [
+      "a.医学的，医疗的"
+    ],
+    "usphone": "'medikəl"
+  },
+  {
+    "name": "memory",
+    "trans": [
+      "n.记忆，纪念\n【考】 in memory of sb./to the memory of sb. 作为对某人的纪念"
+    ],
+    "usphone": "'meməri"
+  },
+  {
+    "name": "mend",
+    "trans": [
+      "v.修补，修理，缝补"
+    ],
+    "usphone": "mend"
+  },
+  {
+    "name": "mental",
+    "trans": [
+      "a.精神的；脑力的"
+    ],
+    "usphone": "'mentl"
+  },
+  {
+    "name": "mention",
+    "trans": [
+      "v.提到；说起\n【考】 don’t mention it 不客气，不用谢； not to mention 更不用说；更不必说"
+    ],
+    "usphone": "'menʃən"
+  },
+  {
+    "name": "mercy",
+    "trans": [
+      "n.怜悯，宽恕【考】 at the mercy of 任凭，摆布"
+    ],
+    "usphone": "'məːsi"
+  },
+  {
+    "name": "mere",
+    "trans": [
+      "a.纯粹的，仅仅的"
+    ],
+    "usphone": "miə"
+  },
+  {
+    "name": "method",
+    "trans": [
+      "n.方法"
+    ],
+    "usphone": "'meθəd"
+  },
+  {
+    "name": "mind",
+    "trans": [
+      "n.头，头脑；想法 v. 介意\n【考】 make up one’s mind 下决心；    keep in mind记 住；\nslip one’s mind 忘 记； 想 不 起；      mind doing sth. 介意做某事"
+    ],
+    "usphone": "maind"
+  },
+  {
+    "name": "minus",
+    "trans": [
+      "a.减的，负的 prep. 减"
+    ],
+    "usphone": "'mainəs"
+  },
+  {
+    "name": "miracle",
+    "trans": [
+      "n.奇迹，令人惊奇的人（或事）"
+    ],
+    "usphone": "'mirəkəl"
+  },
+  {
+    "name": "miserable",
+    "trans": [
+      "a.悲惨的"
+    ],
+    "usphone": "'mizərəbl"
+  },
+  {
+    "name": "misunderstand",
+    "trans": [
+      "v.误解，误会，曲解"
+    ],
+    "usphone": "'misʌndə'stænd"
+  },
+  {
+    "name": "mix",
+    "trans": [
+      "n.混合，混合物 v. 混合，搞混"
+    ],
+    "usphone": "miks"
+  },
+  {
+    "name": "mixture",
+    "trans": [
+      "n.混合（物），混杂"
+    ],
+    "usphone": "'mikstʃə"
+  },
+  {
+    "name": "model",
+    "trans": [
+      "n.原型；样式；模特"
+    ],
+    "usphone": "'mɔdəl"
+  },
+  {
+    "name": "modest",
+    "trans": [
+      "a.端庄的，朴素的；谦虚的，谦逊的"
+    ],
+    "usphone": "'mɔdist"
+  },
+  {
+    "name": "moment",
+    "trans": [
+      "n.片刻，瞬间；时机"
+    ],
+    "usphone": "'məumənt"
+  },
+  {
+    "name": "monitor",
+    "trans": [
+      "n.监视器；（学校的）班长 v.监听，监视；检测"
+    ],
+    "usphone": "'mɔnitə"
+  },
+  {
+    "name": "move",
+    "trans": [
+      "v.移动，搬家；运行；使……感动\n【考】 move away 搬走，移开；离开；move into/in 迁入新居；移入；move on 继续前进"
+    ],
+    "usphone": "muːv"
+  },
+  {
+    "name": "multiply",
+    "trans": [
+      "v.乘，增加，繁殖"
+    ],
+    "usphone": "'mʌltiplai"
+  },
+  {
+    "name": "mutual",
+    "trans": [
+      "a.相互的，共同的"
+    ],
+    "usphone": "'mjutʃuəl"
+  },
+  {
+    "name": "mystery",
+    "trans": [
+      "n.神秘，神秘的事物\n\n\n【N】"
+    ],
+    "usphone": "'mistəri"
+  },
+  {
+    "name": "name",
+    "trans": [
+      "a.名字；名声 v. 命名，取名【考】 name after 以……名字命名"
+    ],
+    "usphone": "neim"
+  },
+  {
+    "name": "native",
+    "trans": [
+      "n.土著，当地人 a. 本国的，土生的"
+    ],
+    "usphone": "'neitiv"
+  },
+  {
+    "name": "nature",
+    "trans": [
+      "n.大自然；天性"
+    ],
+    "usphone": "'neitʃə"
+  },
+  {
+    "name": "necessary",
+    "trans": [
+      "a.必须的，必要的，必然的"
+    ],
+    "usphone": "'nesə səri"
+  },
+  {
+    "name": "negative",
+    "trans": [
+      "a.消极的；否定的"
+    ],
+    "usphone": "'neɡətiv"
+  },
+  {
+    "name": "nerve",
+    "trans": [
+      "n.神经，胆量"
+    ],
+    "usphone": "nəːv"
+  },
+  {
+    "name": "nervous",
+    "trans": [
+      "a.神经的，紧张不安的"
+    ],
+    "usphone": "'nəːvəs"
+  },
+  {
+    "name": "normal",
+    "trans": [
+      "a.正常的"
+    ],
+    "usphone": "'nɔːməl"
+  },
+  {
+    "name": "notice",
+    "trans": [
+      "v.注意，通知，留心 n. 注意，布告，通知\n【考】 take no notice of sb./sth. 不理会……\n\n\n【O】"
+    ],
+    "usphone": "'nəutis"
+  },
+  {
+    "name": "obey",
+    "trans": [
+      "v.服从，听由【反】 disobey"
+    ],
+    "usphone": "ə'bei"
+  },
+  {
+    "name": "object",
+    "trans": [
+      "n.物，物体；宾语\n【例】 A “black hole” is an object made by pure energy. 黑 洞 是一种由纯能量组成的物质。"
+    ],
+    "usphone": "'ɔbdʒikt"
+  },
+  {
+    "name": "objective",
+    "trans": [
+      "n.目标 a. 客观的"
+    ],
+    "usphone": "əb'dʒektiv"
+  },
+  {
+    "name": "observe",
+    "trans": [
+      "v.观察，观测；发现；遵守；庆祝【近】 notice"
+    ],
+    "usphone": "əb'zəːv"
+  },
+  {
+    "name": "obstacle",
+    "trans": [
+      "n.障碍，干扰【考】 an obstacle to… 对……的障碍"
+    ],
+    "usphone": "'ɔbstəkl"
+  },
+  {
+    "name": "obtain",
+    "trans": [
+      "vt.获得，得到【考】 obtain sth. from sb./sth. 从……获得……"
+    ],
+    "usphone": "əb'tein"
+  },
+  {
+    "name": "obvious",
+    "trans": [
+      "a.明显的，显而易见的"
+    ],
+    "usphone": "'ɔbviəs"
+  },
+  {
+    "name": "occasion",
+    "trans": [
+      "n.场合，时节，时刻"
+    ],
+    "usphone": "ə'keiʒən"
+  },
+  {
+    "name": "occupy",
+    "trans": [
+      "v.占用，占；占领；占据（时间）"
+    ],
+    "usphone": "'ɔkjupai"
+  },
+  {
+    "name": "occur",
+    "trans": [
+      "vi.发生，出现，存在\n【考】 occur to sb. 某人想起……；It occurs to sb.that ... 念头浮现于某人的脑海"
+    ],
+    "usphone": "ə'kəː"
+  },
+  {
+    "name": "offend",
+    "trans": [
+      "v.冒犯，使不快"
+    ],
+    "usphone": "ə'fend"
+  },
+  {
+    "name": "offer",
+    "trans": [
+      "v.提供，提议"
+    ],
+    "usphone": "ɔfə"
+  },
+  {
+    "name": "omit",
+    "trans": [
+      "v.省略，忽略"
+    ],
+    "usphone": "əu'mit"
+  },
+  {
+    "name": "operate",
+    "trans": [
+      "vt.操作 vi. 运转；动手术；起作用"
+    ],
+    "usphone": "'ɔpəreit"
+  },
+  {
+    "name": "opinion",
+    "trans": [
+      "n.看法，见解【考】 in one’s opinion 在某人看来"
+    ],
+    "usphone": "ə'pinjən"
+  },
+  {
+    "name": "opportunity",
+    "trans": [
+      "n.机会【近】 chance"
+    ],
+    "usphone": "ɔpə'tjuːniti"
+  },
+  {
+    "name": "oppose",
+    "trans": [
+      "v.反对"
+    ],
+    "usphone": "ə'pəuz"
+  },
+  {
+    "name": "opposite",
+    "trans": [
+      "a.对面的；相反的 n. 相反，对立，对立面"
+    ],
+    "usphone": "'ɔpəzit"
+  },
+  {
+    "name": "optional",
+    "trans": [
+      "a.可以任选的"
+    ],
+    "usphone": "'ɔpʃənəl"
+  },
+  {
+    "name": "order",
+    "trans": [
+      "n.顺序；秩序 v. 命令；定购；点菜\n【考】 in order to do sth. 目的在于做某事；out of order 无次序的；有毛病的，出故障的；\nin order 按顺序"
+    ],
+    "usphone": "'ɔːdə"
+  },
+  {
+    "name": "ordinary",
+    "trans": [
+      "a.平常的，普通的"
+    ],
+    "usphone": "'ɔːdinəri"
+  },
+  {
+    "name": "organize",
+    "trans": [
+      "vt.组织，安排"
+    ],
+    "usphone": "'ɔːɡənaiz"
+  },
+  {
+    "name": "origin",
+    "trans": [
+      "n.起源，来源，由来"
+    ],
+    "usphone": "'ɔːridʒin"
+  },
+  {
+    "name": "output",
+    "trans": [
+      "n.产出；产量"
+    ],
+    "usphone": "'autput"
+  },
+  {
+    "name": "outstanding",
+    "trans": [
+      "a.杰出的，优秀的"
+    ],
+    "usphone": "aut'stændiŋ"
+  },
+  {
+    "name": "overcome",
+    "trans": [
+      "v.战胜；压倒；克服"
+    ],
+    "usphone": "əuvə'kʌm"
+  },
+  {
+    "name": "overlook",
+    "trans": [
+      "v.俯瞰，忽略，宽容"
+    ],
+    "usphone": "əuvə'luk"
+  },
+  {
+    "name": "overnight",
+    "trans": [
+      "ad.一夜间；突然"
+    ],
+    "usphone": "'əuvə'nait"
+  },
+  {
+    "name": "owe",
+    "trans": [
+      "v.欠，应向……支付，得到感激"
+    ],
+    "usphone": "əu"
+  },
+  {
+    "name": "own",
+    "trans": [
+      "v.拥有 a. 自己的"
+    ],
+    "usphone": "əun"
+  },
+  {
+    "name": "owner",
+    "trans": [
+      "n.物主，所有人\n\n\n【P】"
+    ],
+    "usphone": "'əunə"
+  },
+  {
+    "name": "pace",
+    "trans": [
+      "n.步子，步速"
+    ],
+    "usphone": "peis"
+  },
+  {
+    "name": "pack",
+    "trans": [
+      "v.包装，挤满 n. （一）包，（一）群"
+    ],
+    "usphone": "pæk"
+  },
+  {
+    "name": "passive",
+    "trans": [
+      "a.被动的，消极的"
+    ],
+    "usphone": "'pæsiv"
+  },
+  {
+    "name": "patient",
+    "trans": [
+      "n.病人，患者 a. 有耐心的"
+    ],
+    "usphone": "'peiʃ（ə）nt"
+  },
+  {
+    "name": "pattern",
+    "trans": [
+      "n.模式，式样；图案，花样"
+    ],
+    "usphone": "'pætən"
+  },
+  {
+    "name": "perfect",
+    "trans": [
+      "a.完美的，极好的"
+    ],
+    "usphone": "'pəːfikt"
+  },
+  {
+    "name": "perform",
+    "trans": [
+      "v.表演；做，完成；行动"
+    ],
+    "usphone": "pə'fɔːm"
+  },
+  {
+    "name": "period",
+    "trans": [
+      "n.时期，时代，一段时间"
+    ],
+    "usphone": "'piəriəd"
+  },
+  {
+    "name": "permanent",
+    "trans": [
+      "a.永久的，持久的"
+    ],
+    "usphone": "'pəːmənənt"
+  },
+  {
+    "name": "permit",
+    "trans": [
+      "v.允许，许可        【考】 permit sb. sth. 允许；\npermit doing sth. 允许做某事；permit sb. to do sth. 允许某人做某事"
+    ],
+    "usphone": "pə'mit"
+  },
+  {
+    "name": "personal",
+    "trans": [
+      "a.个人的，私人的；本人的，亲身的"
+    ],
+    "usphone": "'pəːsənl"
+  },
+  {
+    "name": "persuade",
+    "trans": [
+      "v.说服，劝说\n【考】 persuade sb. to do sth.=persuade sb. into doing sth. 说服某人做某事"
+    ],
+    "usphone": "pə'sweid"
+  },
+  {
+    "name": "philosopher",
+    "trans": [
+      "n.哲人【派】 philosophy n. 哲学"
+    ],
+    "usphone": "fi'lɔsəfə"
+  },
+  {
+    "name": "physical",
+    "trans": [
+      "a.身体的；物理的【派】 physicist n. 物理学家"
+    ],
+    "usphone": "'fizikəl"
+  },
+  {
+    "name": "pick",
+    "trans": [
+      "vt.挑选，选择；拾起；学会（语言）\n【考】 pick up 捡起；乘载；学会；pick out 挑出，选出；辨别出"
+    ],
+    "usphone": "pik"
+  },
+  {
+    "name": "pioneer",
+    "trans": [
+      "n.先驱者，开拓者"
+    ],
+    "usphone": "paiə'niə"
+  },
+  {
+    "name": "place",
+    "trans": [
+      "vt.放置，安置，安排 n. 地方，处境，职务\n【考】 take place 发生，出现；take the place of 代替， 取 代；\nin place of 代 替；out of place不得其所的，不适当的"
+    ],
+    "usphone": "pleis"
+  },
+  {
+    "name": "point",
+    "trans": [
+      "v.指 n. 尖端；点；观点；意义\n【考】 point at 指向；point out 指出，指明；come to the point 说到要点，扼要地说"
+    ],
+    "usphone": "pɔint"
+  },
+  {
+    "name": "poison",
+    "trans": [
+      "n.毒物，毒药 v. 放毒，毒害"
+    ],
+    "usphone": "'pɔizn"
+  },
+  {
+    "name": "polite",
+    "trans": [
+      "a.有礼貌的，客气的"
+    ],
+    "usphone": "pə'lait"
+  },
+  {
+    "name": "politics",
+    "trans": [
+      "n.政治；政治学"
+    ],
+    "usphone": "'pɔlitiks"
+  },
+  {
+    "name": "pollute",
+    "trans": [
+      "v.污染"
+    ],
+    "usphone": "pə'luːt"
+  },
+  {
+    "name": "population",
+    "trans": [
+      "n.人口"
+    ],
+    "usphone": "pɔpju'leiʃən"
+  },
+  {
+    "name": "possess",
+    "trans": [
+      "vt.持有，拥有\n【考】 in possession of 拥 有；in the possession of（某物）为（某人）所有"
+    ],
+    "usphone": "pə'zes"
+  },
+  {
+    "name": "postpone",
+    "trans": [
+      "vt.推迟，延期【近】 delay v. 延缓；使延期"
+    ],
+    "usphone": "pəust'pəun"
+  },
+  {
+    "name": "potential",
+    "trans": [
+      "a.潜在的；可能的 n. 潜力"
+    ],
+    "usphone": "pə'tenʃəl"
+  },
+  {
+    "name": "poverty",
+    "trans": [
+      "n.贫困，贫穷"
+    ],
+    "usphone": "'pɔvəti"
+  },
+  {
+    "name": "powerful",
+    "trans": [
+      "a.强有力的"
+    ],
+    "usphone": "'pauəful"
+  },
+  {
+    "name": "practical",
+    "trans": [
+      "a.实际的，实用的"
+    ],
+    "usphone": "'præktikəl"
+  },
+  {
+    "name": "practice",
+    "trans": [
+      "n.习惯，常规，惯例\n【考】 in practice 在 实 践 中， 实 际 上；out of practice 久不练习，荒疏"
+    ],
+    "usphone": "'præktis"
+  },
+  {
+    "name": "pray",
+    "trans": [
+      "v.祈祷，祈求"
+    ],
+    "usphone": "prei"
+  },
+  {
+    "name": "predict",
+    "trans": [
+      "vt.预言，预测"
+    ],
+    "usphone": "pri'dikt"
+  },
+  {
+    "name": "prefer",
+    "trans": [
+      "v.更喜欢，宁可，宁愿\n【考】 （"
+    ],
+    "usphone": "pri'fəː"
+  },
+  {
+    "name": "preserve",
+    "trans": [
+      "vt.保护，维护；保存"
+    ],
+    "usphone": "pri'zəːv"
+  },
+  {
+    "name": "deserve",
+    "trans": [
+      "vt.应受，该得"
+    ],
+    "usphone": "di'zəːv"
+  },
+  {
+    "name": "present",
+    "trans": [
+      "a.出席的；目前的 n. 目前，现在；\n礼物 [pri'zent] v. 提出，出示  【派】 presence n. 出席，在场   \n【反】 absence n. 缺席【考】 at present 目前，现在"
+    ],
+    "usphone": "'prez(ə)nt"
+  },
+  {
+    "name": "press",
+    "trans": [
+      "v.压，挤，按 n. 报刊，出版界"
+    ],
+    "usphone": "pres"
+  },
+  {
+    "name": "pressure",
+    "trans": [
+      "n.压力，紧张"
+    ],
+    "usphone": "'preʃə(r)"
+  },
+  {
+    "name": "prevent",
+    "trans": [
+      "v.阻止，防止\n【考】 prevent/stop/keep sb. from doing 阻止某人做某事"
+    ],
+    "usphone": "pri'vent"
+  },
+  {
+    "name": "previous",
+    "trans": [
+      "a.先的，前的，以前的 a. （to）在……之前……"
+    ],
+    "usphone": "'priːvjəs"
+  },
+  {
+    "name": "primary",
+    "trans": [
+      "a.首要的，基本的；最初的"
+    ],
+    "usphone": "'praiməri"
+  },
+  {
+    "name": "principle",
+    "trans": [
+      "n.原理，原则；准则【考】 on principle 根据原则"
+    ],
+    "usphone": "'prinsəpl"
+  },
+  {
+    "name": "prior",
+    "trans": [
+      "a.在前的，优先的     【考】 prior to prep. 在……之前"
+    ],
+    "usphone": "'praiə"
+  },
+  {
+    "name": "private",
+    "trans": [
+      "a.私人的"
+    ],
+    "usphone": "'praivit"
+  },
+  {
+    "name": "privilege",
+    "trans": [
+      "n.优惠，特权 v. 给予特权"
+    ],
+    "usphone": "'privilidʒ"
+  },
+  {
+    "name": "prize",
+    "trans": [
+      "n.奖金，奖品"
+    ],
+    "usphone": "praiz"
+  },
+  {
+    "name": "procedure",
+    "trans": [
+      "n.程序，手续"
+    ],
+    "usphone": "prə'siːdʒə"
+  },
+  {
+    "name": "proceed",
+    "trans": [
+      "v.继续进行"
+    ],
+    "usphone": "prə'siːd"
+  },
+  {
+    "name": "process",
+    "trans": [
+      "n.过程，历程v. 加工，处理"
+    ],
+    "usphone": "prə'ses"
+  },
+  {
+    "name": "profit",
+    "trans": [
+      "n.利润，盈余；利益"
+    ],
+    "usphone": "'prɔfit"
+  },
+  {
+    "name": "progress",
+    "trans": [
+      "n.前进，发展；前进 vi. 前进，进行\n【考】 in progress 在进行中，在发展中；make progress （in）（在……方面）取得进步"
+    ],
+    "usphone": "'prəugres"
+  },
+  {
+    "name": "prohibit",
+    "trans": [
+      "vt.禁止；阻止【考】 prohibit sb. from doing sth. 禁止某人做某事"
+    ],
+    "usphone": "prə'hibit"
+  },
+  {
+    "name": "promise",
+    "trans": [
+      "v.承诺，答应 n. 承诺，诺言\n【考】 promise to do sth. 承 诺 做 某 事；make a promise 做出承诺；\nkeep one’s promise 信守（兑现）诺言"
+    ],
+    "usphone": "'prɔmis"
+  },
+  {
+    "name": "promote",
+    "trans": [
+      "vt.提升，晋升；促进"
+    ],
+    "usphone": "prə'məut"
+  },
+  {
+    "name": "proof",
+    "trans": [
+      "n.证明，证据"
+    ],
+    "usphone": "pruːf"
+  },
+  {
+    "name": "property",
+    "trans": [
+      "n.财产，资产，所有物"
+    ],
+    "usphone": "'prɔpəti"
+  },
+  {
+    "name": "proportion",
+    "trans": [
+      "n.部分，比例，比重"
+    ],
+    "usphone": "prə'pɔːʃən"
+  },
+  {
+    "name": "propose",
+    "trans": [
+      "v.提议，提名；求婚【派】 proposal n. 提议，建议；求婚\n【考】 propose to do sth./doing sth./that ...提议……"
+    ],
+    "usphone": "prə'pəuz"
+  },
+  {
+    "name": "prospect",
+    "trans": [
+      "n.展望，前景"
+    ],
+    "usphone": "'prɔspekt"
+  },
+  {
+    "name": "protect",
+    "trans": [
+      "vt.保护【派】 protection n. 保护\n【考】 protect ... from/against 保护……不受到损害或侵犯"
+    ],
+    "usphone": "prə'tekt"
+  },
+  {
+    "name": "proud",
+    "trans": [
+      "a.自豪的，骄傲的【考】 be proud of 骄傲，自豪"
+    ],
+    "usphone": "praud"
+  },
+  {
+    "name": "prove",
+    "trans": [
+      "vt.证明，证实"
+    ],
+    "usphone": "pruːv"
+  },
+  {
+    "name": "provide",
+    "trans": [
+      "v.提供\n【考】 provide sb. with sth. 为 某 人 提 供 某 物；provide sth. for sb. 向某人提供某物"
+    ],
+    "usphone": "prə'vaid"
+  },
+  {
+    "name": "provided",
+    "trans": [
+      "conj.只要，假如"
+    ],
+    "usphone": "prə'vaidid"
+  },
+  {
+    "name": "public",
+    "trans": [
+      "a.公共的；公开的 n. 公众"
+    ],
+    "usphone": "'pʌblik"
+  },
+  {
+    "name": "publish",
+    "trans": [
+      "v.出版，公开，发行"
+    ],
+    "usphone": "'pʌbliʃ"
+  },
+  {
+    "name": "punish",
+    "trans": [
+      "v.惩罚，处罚"
+    ],
+    "usphone": "'pʌniʃ"
+  },
+  {
+    "name": "purchase",
+    "trans": [
+      "vt.买，购买"
+    ],
+    "usphone": "'pətʃəs"
+  },
+  {
+    "name": "pure",
+    "trans": [
+      "a.纯的；完全的，十足的"
+    ],
+    "usphone": "pjuə"
+  },
+  {
+    "name": "purpose",
+    "trans": [
+      "n.目的，意图\n【考】 on purpose 故 意 地；for （the） purpose of为……的目的；为的是"
+    ],
+    "usphone": "'pəːpəs"
+  },
+  {
+    "name": "pursue",
+    "trans": [
+      "vt.追赶；追求；从事"
+    ],
+    "usphone": "pə'sjuː"
+  },
+  {
+    "name": "qualify",
+    "trans": [
+      "v.取得资格"
+    ],
+    "usphone": "'kwɔlifai"
+  },
+  {
+    "name": "quality",
+    "trans": [
+      "n.质量；性质；品质"
+    ],
+    "usphone": "'kwɔliti"
+  },
+  {
+    "name": "quantity",
+    "trans": [
+      "n.量，数量\n【考】 a large quantity of+ 名词（谓语动词的单复数由名词决定）；\nlarge quantities of+ 名词（谓语动词一律用复数形式）。"
+    ],
+    "usphone": "'kwɔntiti"
+  },
+  {
+    "name": "quarter",
+    "trans": [
+      "n.四分之一；一刻钟"
+    ],
+    "usphone": "'kwɔːtə"
+  },
+  {
+    "name": "quit",
+    "trans": [
+      "v.离开，停止，辞职\n\n\n【R】"
+    ],
+    "usphone": "kwit"
+  },
+  {
+    "name": "raise",
+    "trans": [
+      "vt.使升高；抚养，饲养"
+    ],
+    "usphone": "reiz"
+  },
+  {
+    "name": "range",
+    "trans": [
+      "vi.（在一定范围内）变化，变动 n.一系列；范围\n【考】 range from ... to ... 在……范围内变化；in/within range 在射程内"
+    ],
+    "usphone": "rendʒ"
+  },
+  {
+    "name": "rank",
+    "trans": [
+      "n.排；等级 v. 评价；把……评级"
+    ],
+    "usphone": "ræŋk"
+  },
+  {
+    "name": "rapid",
+    "trans": [
+      "a.快的，急速的"
+    ],
+    "usphone": "'ræpid"
+  },
+  {
+    "name": "rare",
+    "trans": [
+      "a.罕见的，稀有的"
+    ],
+    "usphone": "'rɛə"
+  },
+  {
+    "name": "rate",
+    "trans": [
+      "n.速率，比率"
+    ],
+    "usphone": "reit"
+  },
+  {
+    "name": "rather",
+    "trans": [
+      "ad.宁可，宁愿；更确切地说\n【考】 would rather do ... than do ... 宁愿……也不愿……；rather than 宁愿；不顾"
+    ],
+    "usphone": "'rɑːðə"
+  },
+  {
+    "name": "reach",
+    "trans": [
+      "vt.伸手（或脚等）够到；到达\n【考】 reach for 伸手去拿；摸（某物）；out of reach 够不着"
+    ],
+    "usphone": "riːtʃ"
+  },
+  {
+    "name": "react",
+    "trans": [
+      "v.（作出）反应"
+    ],
+    "usphone": "ri'ækt"
+  },
+  {
+    "name": "recall",
+    "trans": [
+      "v.回想，想起"
+    ],
+    "usphone": "ri'kɔl"
+  },
+  {
+    "name": "recognize",
+    "trans": [
+      "v.认出，识别；承认"
+    ],
+    "usphone": "'rekəgnaiz"
+  },
+  {
+    "name": "recommend",
+    "trans": [
+      "v.劝告，建议；介绍，推荐"
+    ],
+    "usphone": "rekə'mend"
+  },
+  {
+    "name": "recover",
+    "trans": [
+      "v.恢复，痊愈"
+    ],
+    "usphone": "ri'kʌvə"
+  },
+  {
+    "name": "refer",
+    "trans": [
+      "v.（to）提到，指；参考，查阅；提交，上呈"
+    ],
+    "usphone": "ri'fəː"
+  },
+  {
+    "name": "refuse",
+    "trans": [
+      "v.拒绝，不接受，不同意"
+    ],
+    "usphone": "ri'fjuːz"
+  },
+  {
+    "name": "regard",
+    "trans": [
+      "vt.看作 n. [ pl.] 问候\n【考】 with regard to 关于；regard ... as 把……当作……"
+    ],
+    "usphone": "ri'ɡɑːd"
+  },
+  {
+    "name": "regardless",
+    "trans": [
+      "a.（of）不管/"
+    ],
+    "usphone": "ri'ɡɑːdlis"
+  },
+  {
+    "name": "register",
+    "trans": [
+      "v.登记，注册"
+    ],
+    "usphone": "'redʒistə"
+  },
+  {
+    "name": "regular",
+    "trans": [
+      "a.规则的；定期的；经常的"
+    ],
+    "usphone": "'reɡjulə"
+  },
+  {
+    "name": "reject",
+    "trans": [
+      "vt.抛弃；拒绝\n【近】 refuse"
+    ],
+    "usphone": "ri'dʒekt"
+  },
+  {
+    "name": "relate",
+    "trans": [
+      "v.联系，关联"
+    ],
+    "usphone": "ri'leit"
+  },
+  {
+    "name": "relative",
+    "trans": [
+      "n.亲戚 a. 相对的，比较的"
+    ],
+    "usphone": "'relətiv"
+  },
+  {
+    "name": "relax",
+    "trans": [
+      "v.放松，松弛"
+    ],
+    "usphone": "ri'læks"
+  },
+  {
+    "name": "relieve",
+    "trans": [
+      "v.缓解，消除，减少"
+    ],
+    "usphone": "ri'liːv"
+  },
+  {
+    "name": "religion",
+    "trans": [
+      "n.宗教，信仰"
+    ],
+    "usphone": "ri'lidʒən"
+  },
+  {
+    "name": "religious",
+    "trans": [
+      "a.宗教的，信教的，虔诚的"
+    ],
+    "usphone": "ri'lidʒəs"
+  },
+  {
+    "name": "reluctant",
+    "trans": [
+      "a.不愿的，勉强的"
+    ],
+    "usphone": "ri'lʌktənt"
+  },
+  {
+    "name": "rely",
+    "trans": [
+      "vi.依靠，依赖；信赖，信任\n【考】 rely on/upon 依赖于【派】 reliable a. 可靠的，可信赖的【近】 depend"
+    ],
+    "usphone": "ri'lai"
+  },
+  {
+    "name": "remain",
+    "trans": [
+      "v.剩下；保持【考】 remain to do 尚待"
+    ],
+    "usphone": "ri'mein"
+  },
+  {
+    "name": "remarkable",
+    "trans": [
+      "a.显著的，非凡的"
+    ],
+    "usphone": "ri'mɑːkəbl"
+  },
+  {
+    "name": "remind",
+    "trans": [
+      "v.（of）提醒，使想起"
+    ],
+    "usphone": "ri'maind"
+  },
+  {
+    "name": "remove",
+    "trans": [
+      "v.消除；脱掉，搬"
+    ],
+    "usphone": "ri'muːv"
+  },
+  {
+    "name": "replace",
+    "trans": [
+      "v.替换，取代"
+    ],
+    "usphone": "ri'pleis"
+  },
+  {
+    "name": "represent",
+    "trans": [
+      "vt.代表"
+    ],
+    "usphone": "riːpri'zent"
+  },
+  {
+    "name": "require",
+    "trans": [
+      "vt.需求，要求\n【考】 require（sth.）of sb.；require doing/to bedone 需要做"
+    ],
+    "usphone": "ri'kwaiə"
+  },
+  {
+    "name": "resemble",
+    "trans": [
+      "vt.（不用于被动语态）像，类似"
+    ],
+    "usphone": "ri'zembl"
+  },
+  {
+    "name": "resident",
+    "trans": [
+      "n.居民"
+    ],
+    "usphone": "'rezidənt"
+  },
+  {
+    "name": "resign",
+    "trans": [
+      "v.辞去，辞职【近】 quit"
+    ],
+    "usphone": "ri'zain"
+  },
+  {
+    "name": "resist",
+    "trans": [
+      "v.抵抗，反抗；忍住，抵制【反】 resistant a. 抵抗的；resistance n. 抵抗"
+    ],
+    "usphone": "ri'zist"
+  },
+  {
+    "name": "resource",
+    "trans": [
+      "n.资源"
+    ],
+    "usphone": "riˈsɔːs"
+  },
+  {
+    "name": "respective",
+    "trans": [
+      "a.各自的，各个的"
+    ],
+    "usphone": "ris'pektiv"
+  },
+  {
+    "name": "respond",
+    "trans": [
+      "v.反应；回答【派】 response n. 反应；回答"
+    ],
+    "usphone": "ris'pɔnd"
+  },
+  {
+    "name": "responsibility",
+    "trans": [
+      "n.责任，负责；职责，义务\n【考】 take（on/over）the responsibility for/ofdoing sth. 负起对（做）某事的责任"
+    ],
+    "usphone": "rispɔnsə'biliti"
+  },
+  {
+    "name": "responsible",
+    "trans": [
+      "a.应负责的，有责任的\n【考】 be responsible for sb./sth. 对……负责"
+    ],
+    "usphone": "ri'spɔnsəbl"
+  },
+  {
+    "name": "restless",
+    "trans": [
+      "a.不安的，坐立不安的"
+    ],
+    "usphone": "'restlis"
+  },
+  {
+    "name": "restrict",
+    "trans": [
+      "v.限制，约束"
+    ],
+    "usphone": "ris'trikt"
+  },
+  {
+    "name": "result",
+    "trans": [
+      "n.结果，效果；成绩 vi. 导致\n【考】 as a result 由于，因此；result in 结果是；导致；result from 起因于"
+    ],
+    "usphone": "ri'zʌlt"
+  },
+  {
+    "name": "retire",
+    "trans": [
+      "v.退休，退出，退役"
+    ],
+    "usphone": "ri'taiə"
+  },
+  {
+    "name": "return",
+    "trans": [
+      "vi.返回，回来 n./v. 归还；回报\n【考】 in return（for） 作 为 …… 的 交 换；return sth. to sb. 把某物归还给某人"
+    ],
+    "usphone": "ri'təːn"
+  },
+  {
+    "name": "reveal",
+    "trans": [
+      "v.提示，揭露，展现"
+    ],
+    "usphone": "ri'viːl"
+  },
+  {
+    "name": "revolt",
+    "trans": [
+      "v.反抗，起义"
+    ],
+    "usphone": "ri'vəult"
+  },
+  {
+    "name": "revolution",
+    "trans": [
+      "n.革命；大改变"
+    ],
+    "usphone": "revə'luːʃən"
+  },
+  {
+    "name": "reward",
+    "trans": [
+      "n.酬谢，报酬，奖金 v. 酬谢，报答，奖酬"
+    ],
+    "usphone": "ri'wɔːd"
+  },
+  {
+    "name": "risk",
+    "trans": [
+      "n.风险 v. 冒风险"
+    ],
+    "usphone": "risk"
+  },
+  {
+    "name": "rough",
+    "trans": [
+      "a.粗糙的；粗鲁的，粗暴的"
+    ],
+    "usphone": "rʌf"
+  },
+  {
+    "name": "route",
+    "trans": [
+      "n.路线，航线"
+    ],
+    "usphone": "ruːt"
+  },
+  {
+    "name": "routine",
+    "trans": [
+      "a.例行公事；日常工作"
+    ],
+    "usphone": "ruː'tiːn"
+  },
+  {
+    "name": "royal",
+    "trans": [
+      "a.皇家的"
+    ],
+    "usphone": "'rɔiəl"
+  },
+  {
+    "name": "rude",
+    "trans": [
+      "a.粗鲁的，不礼貌的"
+    ],
+    "usphone": "ruːd"
+  },
+  {
+    "name": "ruin",
+    "trans": [
+      "v.（使）毁灭，（使）破坏； n. [pl.] 废墟；遗迹"
+    ],
+    "usphone": "'ruin"
+  },
+  {
+    "name": "rule",
+    "trans": [
+      "n.规则，条例，统治 v. 统治，支配"
+    ],
+    "usphone": "ruːl"
+  },
+  {
+    "name": "run",
+    "trans": [
+      "v.奔，跑；经营，运转\n【考】 run away 出 逃；run into 偶 然 遇 到；run down 撞倒；run out 用完"
+    ],
+    "usphone": "rʌn"
+  },
+  {
+    "name": "sack",
+    "trans": [
+      "n.袋，麻袋；解雇"
+    ],
+    "usphone": "sæk"
+  },
+  {
+    "name": "sake",
+    "trans": [
+      "n.缘故，理由【考】 for the sake of 为了"
+    ],
+    "usphone": "seik"
+  },
+  {
+    "name": "sample",
+    "trans": [
+      "n.样品，标本"
+    ],
+    "usphone": "'sæmpl"
+  },
+  {
+    "name": "satisfy",
+    "trans": [
+      "v.使……满意，满足【考】 be satisfied with 对……感到满意"
+    ],
+    "usphone": "'sætisfai"
+  },
+  {
+    "name": "scale",
+    "trans": [
+      "n.大小，规模"
+    ],
+    "usphone": "skeil"
+  },
+  {
+    "name": "scarce",
+    "trans": [
+      "a.稀少的，缺乏的"
+    ],
+    "usphone": "skɛəs"
+  },
+  {
+    "name": "scare",
+    "trans": [
+      "vt.恐吓，使害怕"
+    ],
+    "usphone": "skɛə"
+  },
+  {
+    "name": "scenery",
+    "trans": [
+      "n.风景，景色"
+    ],
+    "usphone": "'siːnəri"
+  },
+  {
+    "name": "schedule",
+    "trans": [
+      "n.日程安排表 \n【考】 ahead of schedule 提前；on schedule 按时间表，准时"
+    ],
+    "usphone": "'skedʒjul"
+  },
+  {
+    "name": "scold",
+    "trans": [
+      "v.训斥，责骂"
+    ],
+    "usphone": "skəuld"
+  },
+  {
+    "name": "score",
+    "trans": [
+      "n.得分，分数"
+    ],
+    "usphone": "skɔː"
+  },
+  {
+    "name": "seal",
+    "trans": [
+      "n.印；封条 v. 盖章；封"
+    ],
+    "usphone": "siːl"
+  },
+  {
+    "name": "second",
+    "trans": [
+      "n.秒 num. 第二 a. 第二的"
+    ],
+    "usphone": "'sekənd"
+  },
+  {
+    "name": "secretary",
+    "trans": [
+      "n.秘书"
+    ],
+    "usphone": "'sekrətri"
+  },
+  {
+    "name": "section",
+    "trans": [
+      "n.章节，部分，地区"
+    ],
+    "usphone": "sekʃən"
+  },
+  {
+    "name": "security",
+    "trans": [
+      "n.安全，保护，保障"
+    ],
+    "usphone": "si'kjuːriti"
+  },
+  {
+    "name": "see",
+    "trans": [
+      "v.看见；理解，明白\n【考】 see off 给……送行；see through 看穿，识破；see to 负责，照料"
+    ],
+    "usphone": "siː"
+  },
+  {
+    "name": "seem",
+    "trans": [
+      "vi.好像，似乎\n【考】 seem to do/be 看起来似乎……；it seems/seemed that 觉得似乎……"
+    ],
+    "usphone": "siːm"
+  },
+  {
+    "name": "seize",
+    "trans": [
+      "vt.抓住（时机等），捉住；夺取，占领"
+    ],
+    "usphone": "siːz"
+  },
+  {
+    "name": "seldom",
+    "trans": [
+      "ad.不常，很少【考】 seldom 放在句首时，句子倒装。"
+    ],
+    "usphone": "'seldəm"
+  },
+  {
+    "name": "selfish",
+    "trans": [
+      "a.自私的，利己的"
+    ],
+    "usphone": "'selfiʃ"
+  },
+  {
+    "name": "select",
+    "trans": [
+      "v.选择，挑选，选拔"
+    ],
+    "usphone": "si'lekt"
+  },
+  {
+    "name": "send",
+    "trans": [
+      "v.寄；派遣\n【考】 send away 解雇；派遣；send for 召唤，派人去请；send out 派遣；发送"
+    ],
+    "usphone": "send"
+  },
+  {
+    "name": "senior",
+    "trans": [
+      "a.年长的，资格老的，地位高的"
+    ],
+    "usphone": "'siːnjə"
+  },
+  {
+    "name": "sense",
+    "trans": [
+      "n.感觉，意识；意思\n【考】 make sense 有道理；有意义；in a sense 从某种意义上"
+    ],
+    "usphone": "sens"
+  },
+  {
+    "name": "sensible",
+    "trans": [
+      "a.懂事的，明智的；意思到的\n【考】 be sensible of 知晓，明白"
+    ],
+    "usphone": "'sensəbl"
+  },
+  {
+    "name": "sensitive",
+    "trans": [
+      "a.有感觉的，敏感的\n【考】 be sensitive to 对……敏感， 易感受……"
+    ],
+    "usphone": "'sensitiv"
+  },
+  {
+    "name": "separate",
+    "trans": [
+      "a.分开的，各自的 v. 分开，隔离，分别\n【考】 separate ... from ... 使……和……分离"
+    ],
+    "usphone": "'sepəreit"
+  },
+  {
+    "name": "serious",
+    "trans": [
+      "a.认真的，严肃的；严重的【考】 be serious about sth. 对某事认真的"
+    ],
+    "usphone": "'siəriəs"
+  },
+  {
+    "name": "serve",
+    "trans": [
+      "v.为……服务，服役；供应【考】 serve sb. with sth. 为某人提供某物"
+    ],
+    "usphone": "səːv"
+  },
+  {
+    "name": "service",
+    "trans": [
+      "n.服务【考】 be of service 效劳，有帮助"
+    ],
+    "usphone": "'səːvis"
+  },
+  {
+    "name": "set",
+    "trans": [
+      "v.放，置；使开始；调整【考】 set aside 留出；set about doing 开始做某事；\nset out to do 动向，出发，开始；set up 建立，设立"
+    ],
+    "usphone": "set"
+  },
+  {
+    "name": "settle",
+    "trans": [
+      "v.解决；安家，定居【考】 settle down 定居"
+    ],
+    "usphone": "'setl"
+  },
+  {
+    "name": "several",
+    "trans": [
+      "a.若干，数个"
+    ],
+    "usphone": "'sevərəl"
+  },
+  {
+    "name": "severe",
+    "trans": [
+      "a.严重的；严厉的"
+    ],
+    "usphone": "si'viə"
+  },
+  {
+    "name": "shallow",
+    "trans": [
+      "a.浅的，肤浅的【反】 deep"
+    ],
+    "usphone": "'ʃæləu"
+  },
+  {
+    "name": "shame",
+    "trans": [
+      "n.羞愧，耻辱"
+    ],
+    "usphone": "ʃeim"
+  },
+  {
+    "name": "shape",
+    "trans": [
+      "n.形状；外形；身材【考】 in shape 健康；out of shape 身体状况不佳"
+    ],
+    "usphone": "ʃeip"
+  },
+  {
+    "name": "share",
+    "trans": [
+      "v.分享，分配 n. 一份，份额【考】 share with sb. 与某人分享"
+    ],
+    "usphone": "ʃɛə"
+  },
+  {
+    "name": "sharp",
+    "trans": [
+      "a.锋利的；尖的"
+    ],
+    "usphone": "ʃɑːp"
+  },
+  {
+    "name": "selter",
+    "trans": [
+      "n.掩蔽；隐蔽处【考】 take shelter from 躲避"
+    ],
+    "usphone": "'ʃeltə"
+  },
+  {
+    "name": "shock",
+    "trans": [
+      "vt.使震惊 n. 震动，震惊"
+    ],
+    "usphone": "ʃɔk"
+  },
+  {
+    "name": "shortage",
+    "trans": [
+      "n.不足，缺少"
+    ],
+    "usphone": "'ʃɔːtidʒ"
+  },
+  {
+    "name": "shortcoming",
+    "trans": [
+      "n.短处，缺点"
+    ],
+    "usphone": "'ʃɔːt kʌmiŋ"
+  },
+  {
+    "name": "shrink",
+    "trans": [
+      "v.起皱，收缩；退缩"
+    ],
+    "usphone": "ʃriŋk"
+  },
+  {
+    "name": "shut",
+    "trans": [
+      "v.关，关闭【考】 shut down 停工，关闭；shut up 住口，关闭"
+    ],
+    "usphone": "ʃʌt"
+  },
+  {
+    "name": "shy",
+    "trans": [
+      "a.害羞的；易受惊的，胆怯的"
+    ],
+    "usphone": "ʃai"
+  },
+  {
+    "name": "sight",
+    "trans": [
+      "n.情景，风景；看见；视力\n【考】 at（the）sight of ... 一 看 见 …… 就；lose sight 失 明；\nout of sight 看 不 见；in sight    被见到，在望；catch sight of 发现，突然看见"
+    ],
+    "usphone": "sait"
+  },
+  {
+    "name": "sign",
+    "trans": [
+      "n.符号，标志；手势 vt. 签名；示意"
+    ],
+    "usphone": "sain"
+  },
+  {
+    "name": "signal",
+    "trans": [
+      "n.信号，暗号"
+    ],
+    "usphone": "'signəl"
+  },
+  {
+    "name": "significance",
+    "trans": [
+      "n.重要性；意义"
+    ],
+    "usphone": "sig'nifikəns"
+  },
+  {
+    "name": "similar",
+    "trans": [
+      "a.类似的，相似的"
+    ],
+    "usphone": "'similə"
+  },
+  {
+    "name": "simple",
+    "trans": [
+      "a.简单的，朴素的"
+    ],
+    "usphone": "'simpl"
+  },
+  {
+    "name": "single",
+    "trans": [
+      "a.单个的；唯一的，独身的"
+    ],
+    "usphone": "'siŋɡəl"
+  },
+  {
+    "name": "situation",
+    "trans": [
+      "n.情形，境遇，形势【考】 in ... situation 在……状况下"
+    ],
+    "usphone": "sitju'eiʃən"
+  },
+  {
+    "name": "skill",
+    "trans": [
+      "n.技能；技巧；熟练；能力\n【考】 social/learning skills 社交能力 / 学习能力；have skill in 有……技能"
+    ],
+    "usphone": "skil"
+  },
+  {
+    "name": "slight",
+    "trans": [
+      "a.轻微的；微小的"
+    ],
+    "usphone": "slait"
+  },
+  {
+    "name": "slip",
+    "trans": [
+      "v.滑（动）；溜【考】 slip one’s mind/memory 忘了"
+    ],
+    "usphone": "slip"
+  },
+  {
+    "name": "slow",
+    "trans": [
+      "a.慢的 v. 放慢，减速"
+    ],
+    "usphone": "sləu"
+  },
+  {
+    "name": "smart",
+    "trans": [
+      "a.聪明的，伶俐的【近】 clever"
+    ],
+    "usphone": "smɑːt"
+  },
+  {
+    "name": "smell",
+    "trans": [
+      "n.气味；嗅觉 vt. 闻到"
+    ],
+    "usphone": "smel"
+  },
+  {
+    "name": "smooth",
+    "trans": [
+      "a.平滑的；平稳的"
+    ],
+    "usphone": "smuːð"
+  },
+  {
+    "name": "sole",
+    "trans": [
+      "a.单独的，唯一的"
+    ],
+    "usphone": "səul"
+  },
+  {
+    "name": "solemn",
+    "trans": [
+      "a.庄严的，严肃，隆重的"
+    ],
+    "usphone": "'sɔləm"
+  },
+  {
+    "name": "solid",
+    "trans": [
+      "a.固体的，结实的"
+    ],
+    "usphone": "'sɔlid"
+  },
+  {
+    "name": "solve",
+    "trans": [
+      "v.解决，解答【派】 solution n. 解答；溶解"
+    ],
+    "usphone": "sɔlv"
+  },
+  {
+    "name": "somewhat",
+    "trans": [
+      "ad.稍微，有点儿"
+    ],
+    "usphone": "'sʌmhwɔt"
+  },
+  {
+    "name": "sore",
+    "trans": [
+      "a.疼痛的，痛心的；痛处，疮口"
+    ],
+    "usphone": "sɔː"
+  },
+  {
+    "name": "sorrow",
+    "trans": [
+      "n.悲伤，悲哀"
+    ],
+    "usphone": "'sɔrəu"
+  },
+  {
+    "name": "sort",
+    "trans": [
+      "n.种类，类别"
+    ],
+    "usphone": "sɔːt"
+  },
+  {
+    "name": "source",
+    "trans": [
+      "n.源，源泉；来源"
+    ],
+    "usphone": "sɔːs"
+  },
+  {
+    "name": "space",
+    "trans": [
+      "n.太空；空间"
+    ],
+    "usphone": "speis"
+  },
+  {
+    "name": "spare",
+    "trans": [
+      "a.空闲的，空暇的；多余的【考】 \nin one’s spare time 在某人的业余时间"
+    ],
+    "usphone": "spɛə"
+  },
+  {
+    "name": "special",
+    "trans": [
+      "a.特别的，特殊的，专门的"
+    ],
+    "usphone": "'speʃəl"
+  },
+  {
+    "name": "specific",
+    "trans": [
+      "a.特殊的，具体的，明确的"
+    ],
+    "usphone": "spə'sifik"
+  },
+  {
+    "name": "speed",
+    "trans": [
+      "n.速度"
+    ],
+    "usphone": "spiːd"
+  },
+  {
+    "name": "spend",
+    "trans": [
+      "vt.（spent, spent）花费（金钱、时间等），度过\n【考】 spend time/money on sth./in doing sth. 花时间 / 金钱做……"
+    ],
+    "usphone": "spend"
+  },
+  {
+    "name": "spirit",
+    "trans": [
+      "n.精神；心灵；灵魂"
+    ],
+    "usphone": "'spirit"
+  },
+  {
+    "name": "spite",
+    "trans": [
+      "n.恶意，怨恨【考】 in spite of 不顾，不管"
+    ],
+    "usphone": "spait"
+  },
+  {
+    "name": "split",
+    "trans": [
+      "v.劈开；（使）裂开"
+    ],
+    "usphone": "split"
+  },
+  {
+    "name": "spoil",
+    "trans": [
+      "v.搞糟，损坏；宠坏，溺爱"
+    ],
+    "usphone": "spɔil"
+  },
+  {
+    "name": "sponsor",
+    "trans": [
+      "n.发起人，主办者 v. 发起，主办"
+    ],
+    "usphone": "'spɔnsə"
+  },
+  {
+    "name": "spot",
+    "trans": [
+      "n.斑点；地点，场所 vt. 弄脏；发现【考】 on the spot 当场，在现场"
+    ],
+    "usphone": "spɔt"
+  },
+  {
+    "name": "square",
+    "trans": [
+      "n.广场；正方（形）"
+    ],
+    "usphone": "skwɛə"
+  },
+  {
+    "name": "stable",
+    "trans": [
+      "a.稳定的，稳固的"
+    ],
+    "usphone": "'steibl"
+  },
+  {
+    "name": "staff",
+    "trans": [
+      "n.全体职工，行政人员"
+    ],
+    "usphone": "stɑːf"
+  },
+  {
+    "name": "stake",
+    "trans": [
+      "n.赌注；利害关系【考】 at stake 胜败关头"
+    ],
+    "usphone": "steik"
+  },
+  {
+    "name": "stale",
+    "trans": [
+      "a.陈旧的，陈腐的"
+    ],
+    "usphone": "steil"
+  },
+  {
+    "name": "stand",
+    "trans": [
+      "v.站立；经受，忍受\n【考】 stand up 站起，竖起；stand by 站在旁边；stands for 代表，象征"
+    ],
+    "usphone": "stænd"
+  },
+  {
+    "name": "standard",
+    "trans": [
+      "n.标准，规格"
+    ],
+    "usphone": "'stændəd"
+  },
+  {
+    "name": "stare",
+    "trans": [
+      "v.盯，凝视"
+    ],
+    "usphone": "stɛə"
+  },
+  {
+    "name": "starve",
+    "trans": [
+      "v.挨饿，饿死"
+    ],
+    "usphone": "stɑːv"
+  },
+  {
+    "name": "state",
+    "trans": [
+      "n.国家，州；情况，状态 v. 声明，"
+    ],
+    "usphone": "steit"
+  },
+  {
+    "name": "status",
+    "trans": [
+      "n.身份，地位"
+    ],
+    "usphone": "'steitəs"
+  },
+  {
+    "name": "steady",
+    "trans": [
+      "a.稳定的；平稳的"
+    ],
+    "usphone": "'stedi"
+  },
+  {
+    "name": "step",
+    "trans": [
+      "n.脚步，台阶，梯级\n【考】 step by step 一步一步地；take steps 采取步骤"
+    ],
+    "usphone": "step"
+  },
+  {
+    "name": "stimulate",
+    "trans": [
+      "v.刺激；鼓励，鼓舞"
+    ],
+    "usphone": "'stimjuleit"
+  },
+  {
+    "name": "straight",
+    "trans": [
+      "a.直的；坦率的 ad. 直接地"
+    ],
+    "usphone": "streit"
+  },
+  {
+    "name": "strengthen",
+    "trans": [
+      "v.加强，巩固"
+    ],
+    "usphone": "'streŋθən"
+  },
+  {
+    "name": "stress",
+    "trans": [
+      "n.压力；重要性 v. 强调，着重"
+    ],
+    "usphone": "stres"
+  },
+  {
+    "name": "strict",
+    "trans": [
+      "a.严格的，严厉的，精确的【考】 be strict with sb. 对某人要求严格"
+    ],
+    "usphone": "strikt"
+  },
+  {
+    "name": "structure",
+    "trans": [
+      "n.结构，构造"
+    ],
+    "usphone": "'strʌktʃə"
+  },
+  {
+    "name": "stuff",
+    "trans": [
+      "n.材料，原料，东西"
+    ],
+    "usphone": "stʌf"
+  },
+  {
+    "name": "stupid",
+    "trans": [
+      "a.愚蠢的，迟钝的"
+    ],
+    "usphone": "'stjuːpid"
+  },
+  {
+    "name": "style",
+    "trans": [
+      "n.风格，时髦，时尚\n【考】 in style 时兴的，流行的；out of style 过时的，不流行的"
+    ],
+    "usphone": "stail"
+  },
+  {
+    "name": "subject",
+    "trans": [
+      "n.主题；学科；主语"
+    ],
+    "usphone": "'sʌbdʒikt"
+  },
+  {
+    "name": "submit",
+    "trans": [
+      "v.呈送，提交；屈服，服从"
+    ],
+    "usphone": "səb'mit"
+  },
+  {
+    "name": "subsequent",
+    "trans": [
+      "a.随后的，后来的"
+    ],
+    "usphone": "'sʌbsikwənt"
+  },
+  {
+    "name": "succeed",
+    "trans": [
+      "vi.成功【反】 fail v. 失败【考】 succeed in doing sth. 成功做某事"
+    ],
+    "usphone": "sək'siːd"
+  },
+  {
+    "name": "succession",
+    "trans": [
+      "n.连续，系列"
+    ],
+    "usphone": "sək'seʃən"
+  },
+  {
+    "name": "suffer",
+    "trans": [
+      "vt.遭受，经历 vi. 受苦；患病"
+    ],
+    "usphone": "'sʌfə"
+  },
+  {
+    "name": "sufficient",
+    "trans": [
+      "a.充分的，足够的"
+    ],
+    "usphone": "sə'fiʃənt"
+  },
+  {
+    "name": "suggest",
+    "trans": [
+      "vt.建议，提议；表明，说明\n【派】 suggestion n. 建议，意见【考】 suggest doing/that ...（should）建议做某事"
+    ],
+    "usphone": "sə'dʒest"
+  },
+  {
+    "name": "summary",
+    "trans": [
+      "n.摘要，概要【考】 in summary 总的说来"
+    ],
+    "usphone": "'sʌməri"
+  },
+  {
+    "name": "superior",
+    "trans": [
+      "a.较好的；优越的"
+    ],
+    "usphone": "sjuː'piəriə"
+  },
+  {
+    "name": "support",
+    "trans": [
+      "n.支持，支柱 vt. 维持，支持\n【考】 in support of 支持；support sb. in sth. 支持某人做某事"
+    ],
+    "usphone": "sə'pɔt"
+  },
+  {
+    "name": "suppose",
+    "trans": [
+      "vt.推想，假设 vi. 料想【考】 be supposed to do sth. 应当做某事"
+    ],
+    "usphone": "sə'pəuz"
+  },
+  {
+    "name": "supreme",
+    "trans": [
+      "a.最高的"
+    ],
+    "usphone": "sə'priːm"
+  },
+  {
+    "name": "sure",
+    "trans": [
+      "a.确信的；一定的，必然的【考】 be sure of 确信"
+    ],
+    "usphone": "ʃuə"
+  },
+  {
+    "name": "surface",
+    "trans": [
+      "n.面，表面；外表，外观"
+    ],
+    "usphone": "'səːfis"
+  },
+  {
+    "name": "surprise",
+    "trans": [
+      "n.惊讶，惊奇 v. 使诧异，使惊奇\n【考】 in surprise 惊 讶 地； 吃 惊 地；to one’s surprise 使人惊讶的是……"
+    ],
+    "usphone": "sə'praiz"
+  },
+  {
+    "name": "surround",
+    "trans": [
+      "vt.围绕，包围"
+    ],
+    "usphone": "sə'raund"
+  },
+  {
+    "name": "survive",
+    "trans": [
+      "v.生存，幸存"
+    ],
+    "usphone": "sə'vaiv"
+  },
+  {
+    "name": "suspect",
+    "trans": [
+      "n.犯 罪 嫌 疑 人； 怀 疑 对 象[səs'pekt] vt. 怀疑，猜想\n【近】 doubt【考】 suspect sb. of （doing）sth. 怀疑某人（做了）某事"
+    ],
+    "usphone": "səspekt"
+  },
+  {
+    "name": "swear",
+    "trans": [
+      "v.（swore，sworn）宣誓，发誓；诅咒，骂人"
+    ],
+    "usphone": "swɛə"
+  },
+  {
+    "name": "sweep",
+    "trans": [
+      "v.扫，打扫"
+    ],
+    "usphone": "swiːp"
+  },
+  {
+    "name": "symbol",
+    "trans": [
+      "n.标志，符号；象征【近】 sign 和 mark"
+    ],
+    "usphone": "'simbəl"
+  },
+  {
+    "name": "sympathy",
+    "trans": [
+      "n.同情（心），赞同，同感"
+    ],
+    "usphone": "'simpəθi"
+  },
+  {
+    "name": "system",
+    "trans": [
+      "n.系统；制度，体制\n\n\n【T】"
+    ],
+    "usphone": "'sistəm"
+  },
+  {
+    "name": "talent",
+    "trans": [
+      "n.天资，才能；人才【考】 a talent/talents for 有……才能"
+    ],
+    "usphone": "tælənt"
+  },
+  {
+    "name": "target",
+    "trans": [
+      "n.靶子；目标【近】 aim; goal"
+    ],
+    "usphone": "'tɑːɡit"
+  },
+  {
+    "name": "task",
+    "trans": [
+      "n.任务，工作"
+    ],
+    "usphone": "tɑːsk"
+  },
+  {
+    "name": "taste",
+    "trans": [
+      "n.味道，品尝 v. 品尝，尝味【派】 tasteless a. 无滋味的；tasty a. 味道好的"
+    ],
+    "usphone": "teist"
+  },
+  {
+    "name": "tear",
+    "trans": [
+      "n.眼泪 v. [tɛə] （tore, torn）撕开【考】 in tears 流着泪，含着泪，在哭着"
+    ],
+    "usphone": "tiə"
+  },
+  {
+    "name": "technology",
+    "trans": [
+      "n.技术，工艺【派】 technological a. 技术的，工艺的"
+    ],
+    "usphone": "tek'nɔlədʒi"
+  },
+  {
+    "name": "temperature",
+    "trans": [
+      "n.温度"
+    ],
+    "usphone": "'tempəritʃə"
+  },
+  {
+    "name": "temporary",
+    "trans": [
+      "a.临时的，暂时的"
+    ],
+    "usphone": "'tempərəri"
+  },
+  {
+    "name": "tend",
+    "trans": [
+      "vi.易于；趋向，倾向（to）vt. 照料，照看"
+    ],
+    "usphone": "tend"
+  },
+  {
+    "name": "tension",
+    "trans": [
+      "n.紧张"
+    ],
+    "usphone": "'tenʃən"
+  },
+  {
+    "name": "thorough",
+    "trans": [
+      "a.彻底的；仔细周到的"
+    ],
+    "usphone": "'θʌrə"
+  },
+  {
+    "name": "threat",
+    "trans": [
+      "n.威胁，危险迹象"
+    ],
+    "usphone": "θret"
+  },
+  {
+    "name": "threaten",
+    "trans": [
+      "v.威胁，恫吓"
+    ],
+    "usphone": "'θretn"
+  },
+  {
+    "name": "thrive",
+    "trans": [
+      "v.兴旺，繁荣"
+    ],
+    "usphone": "θraiv"
+  },
+  {
+    "name": "tight",
+    "trans": [
+      "a.紧的，拉紧的"
+    ],
+    "usphone": "tait"
+  },
+  {
+    "name": "tiny",
+    "trans": [
+      "a.微波的，细小的"
+    ],
+    "usphone": "'taini"
+  },
+  {
+    "name": "title",
+    "trans": [
+      "n.书名，题目；头衔，称号"
+    ],
+    "usphone": "'taitl"
+  },
+  {
+    "name": "topic",
+    "trans": [
+      "n.论题，题目"
+    ],
+    "usphone": "'tɔpik"
+  },
+  {
+    "name": "total",
+    "trans": [
+      "a.全体的，总的；完全的 n. 合计，总数【考】 in total 总共"
+    ],
+    "usphone": "'təutl"
+  },
+  {
+    "name": "touch",
+    "trans": [
+      "n.接触 v. 触，碰，摸\n【考】 keep in touch with 与某人保持联系；lose touch with 和……失去联系"
+    ],
+    "usphone": "tʌtʃ"
+  },
+  {
+    "name": "tough",
+    "trans": [
+      "a.吃苦耐劳的；强硬的；棘手的，难解的"
+    ],
+    "usphone": "tʌf"
+  },
+  {
+    "name": "trace",
+    "trans": [
+      "n.痕迹，踪迹"
+    ],
+    "usphone": "treis"
+  },
+  {
+    "name": "tradition",
+    "trans": [
+      "n.传统，惯例"
+    ],
+    "usphone": "trə'diʃən"
+  },
+  {
+    "name": "traffic",
+    "trans": [
+      "n.交通"
+    ],
+    "usphone": "'træfik"
+  },
+  {
+    "name": "train",
+    "trans": [
+      "v.训练，培养 n. 火车"
+    ],
+    "usphone": "trein"
+  },
+  {
+    "name": "transform",
+    "trans": [
+      "v.转变，变形，变革"
+    ],
+    "usphone": "træns'fɔrm"
+  },
+  {
+    "name": "translate",
+    "trans": [
+      "vt.翻译【派】 translation n. 翻译\n【考】 translate ... into ... 把……翻译成……"
+    ],
+    "usphone": "trænz'leit"
+  },
+  {
+    "name": "transport",
+    "trans": [
+      "v.运送，运输"
+    ],
+    "usphone": "træns'pɔːt"
+  },
+  {
+    "name": "trap",
+    "trans": [
+      "n.陷阱 vt. 使陷入困境"
+    ],
+    "usphone": "træp"
+  },
+  {
+    "name": "treasure",
+    "trans": [
+      "v.珍爱，珍视 n. 财富，宝藏"
+    ],
+    "usphone": "'treʒə"
+  },
+  {
+    "name": "treat",
+    "trans": [
+      "vt.对待，看待；治疗【考】 treat ... as ... 把……当成……"
+    ],
+    "usphone": "triːt"
+  },
+  {
+    "name": "trend",
+    "trans": [
+      "n.趋势，倾向；时尚"
+    ],
+    "usphone": "trend"
+  },
+  {
+    "name": "try",
+    "trans": [
+      "v.试，努力；审理 n. 尝试【派】 trial n. 审讯，试验\n【考】 try one’s best to do 尽最大努力去做某事；try on 试穿；try out 试用"
+    ],
+    "usphone": "trai"
+  },
+  {
+    "name": "trick",
+    "trans": [
+      "n.诡计，花招 v. 哄骗，欺骗【考】 play a trick on sb. 诈骗某人；开某人玩笑"
+    ],
+    "usphone": "trik"
+  },
+  {
+    "name": "trip",
+    "trans": [
+      "n.旅行，远足"
+    ],
+    "usphone": "trip"
+  },
+  {
+    "name": "trouble",
+    "trans": [
+      "v.困扰，使烦恼，麻烦 n. 烦恼，困难【派】 troublesome a. 令人烦恼的\n【考】 in trouble 处 于 困 境， 在 困 难 中；have trouble（in）doing sth. 做某事有困难"
+    ],
+    "usphone": "'trʌbl"
+  },
+  {
+    "name": "trust",
+    "trans": [
+      "n.信任，信托 vt. 相信，信任，信赖【考】 trust in 相信"
+    ],
+    "usphone": "trʌst"
+  },
+  {
+    "name": "truth",
+    "trans": [
+      "n.真实，真相；真理"
+    ],
+    "usphone": "truːθ"
+  },
+  {
+    "name": "turn",
+    "trans": [
+      "vt.旋转 vi. 绕；翻动，变化 n. 次序，旋转\n【考】 turn away 将拒之门外          turn on 打开                     turn off 关上\nturn up（音量）调大            turn down（音量）调小         turn ... into 把……变成\nturn out 结果是，最终成为      turn over 翻转；移交            in turn 依次，轮流"
+    ],
+    "usphone": "tərn"
+  },
+  {
+    "name": "type",
+    "trans": [
+      "n.类型，品种，样式 v. 打字"
+    ],
+    "usphone": "taip"
+  },
+  {
+    "name": "typical",
+    "trans": [
+      "a.有代表性的，典型的\n\n\n【U】"
+    ],
+    "usphone": "'tipikəli"
+  },
+  {
+    "name": "uncertain",
+    "trans": [
+      "a.不确定的"
+    ],
+    "usphone": "ʌn'səːtn"
+  },
+  {
+    "name": "undergo",
+    "trans": [
+      "v.遭受，经历"
+    ],
+    "usphone": "ʌndə'gəu"
+  },
+  {
+    "name": "underline",
+    "trans": [
+      "vt.在……下面画线；强调，加强"
+    ],
+    "usphone": "ʌndə'lain"
+  },
+  {
+    "name": "undertake",
+    "trans": [
+      "v.接受，承担"
+    ],
+    "usphone": "ʌndə'teik"
+  },
+  {
+    "name": "uneasy",
+    "trans": [
+      "a.局促的；不安的"
+    ],
+    "usphone": "ʌn'iːzi"
+  },
+  {
+    "name": "unexpected",
+    "trans": [
+      "a.想不到的，意外的"
+    ],
+    "usphone": "'ʌnik'spektid"
+  },
+  {
+    "name": "union",
+    "trans": [
+      "n.结合；统一；工会，联盟"
+    ],
+    "usphone": "'juːnjən"
+  },
+  {
+    "name": "universe",
+    "trans": [
+      "n.宇宙，万物"
+    ],
+    "usphone": "'juːnivəːs"
+  },
+  {
+    "name": "unless",
+    "trans": [
+      "conj.如果不，除非"
+    ],
+    "usphone": "ən'les"
+  },
+  {
+    "name": "unload",
+    "trans": [
+      "vt.卸；卸货"
+    ],
+    "usphone": "ʌn'ləud"
+  },
+  {
+    "name": "upset",
+    "trans": [
+      "n.混乱 v. 扰乱 a. 烦乱的，不高兴的"
+    ],
+    "usphone": "ʌp'set"
+  },
+  {
+    "name": "use",
+    "trans": [
+      "vt.使用，用 [juːs] n. 用法，用途\n【派】 useful a. 有用的；useless a. 无用的\n【考】 use up 用尽，耗光； make use of 使用，利用；be used to do sth. 被用来做某事"
+    ],
+    "usphone": "juːz"
+  },
+  {
+    "name": "used",
+    "trans": [
+      "vi.（to）惯常 a. 习惯于……的；用过的，旧的\n【考】 used to do sth. 过 去 经 常 做 某 事；get/be used to doing sth. 习惯于做某事\n\n\n【V】"
+    ],
+    "usphone": "juːzd"
+  },
+  {
+    "name": "vacant",
+    "trans": [
+      "a.空着的；空缺的；【反】 occupied a. 已占用的；无空闲的；在使用"
+    ],
+    "usphone": "'veikənt"
+  },
+  {
+    "name": "vacation",
+    "trans": [
+      "n.休假，假期【近】 holiday"
+    ],
+    "usphone": "və'keiʃən"
+  },
+  {
+    "name": "vain",
+    "trans": [
+      "a.自负的，徒劳的，无效的【考】 in vain 徒劳，无效"
+    ],
+    "usphone": "vein"
+  },
+  {
+    "name": "value",
+    "trans": [
+      "n.价值，益处 v. 评价；重视\n【考】 be of value 有价值；of no value 没价值的"
+    ],
+    "usphone": "'vælju"
+  },
+  {
+    "name": "vanish",
+    "trans": [
+      "v.消失，消散【近】 disappear vi. 消失，不见"
+    ],
+    "usphone": "'væniʃ"
+  },
+  {
+    "name": "vanity",
+    "trans": [
+      "n.虚荣心，浮华"
+    ],
+    "usphone": "'væniti"
+  },
+  {
+    "name": "various",
+    "trans": [
+      "a.各种各样的，不同的【近】 different"
+    ],
+    "usphone": "'vɛəriəs"
+  },
+  {
+    "name": "vary",
+    "trans": [
+      "v.改变，变化；有差异"
+    ],
+    "usphone": "'vɛəri"
+  },
+  {
+    "name": "vast",
+    "trans": [
+      "a.巨大的，广阔的；大量的"
+    ],
+    "usphone": "vɑːst"
+  },
+  {
+    "name": "vehicle",
+    "trans": [
+      "n.车辆，交通工具"
+    ],
+    "usphone": "'viːikl"
+  },
+  {
+    "name": "victim",
+    "trans": [
+      "n.牺牲品，受害者"
+    ],
+    "usphone": "'viktim"
+  },
+  {
+    "name": "victory",
+    "trans": [
+      "n.胜利"
+    ],
+    "usphone": "'viktəri"
+  },
+  {
+    "name": "view",
+    "trans": [
+      "v.看，考虑 n. 风景；观点，见解【考】 in view of 鉴于，考虑到"
+    ],
+    "usphone": "vjuː"
+  },
+  {
+    "name": "violent",
+    "trans": [
+      "a.暴力的，猛烈的"
+    ],
+    "usphone": "'vaiələnt"
+  },
+  {
+    "name": "vision",
+    "trans": [
+      "n.视觉，视力"
+    ],
+    "usphone": "'viʒən"
+  },
+  {
+    "name": "vital",
+    "trans": [
+      "a.至关重要的"
+    ],
+    "usphone": "'vaitl"
+  },
+  {
+    "name": "vivid",
+    "trans": [
+      "a.生动的，鲜艳的，鲜明的"
+    ],
+    "usphone": "'vivid"
+  },
+  {
+    "name": "vocation",
+    "trans": [
+      "n.行业，职业    【派】 vocational a. 行业的，职业的"
+    ],
+    "usphone": "vəu'keiʃən"
+  },
+  {
+    "name": "volume",
+    "trans": [
+      "n.（一）卷，（一）册；体积，容积；音量"
+    ],
+    "usphone": "'vɔljum"
+  },
+  {
+    "name": "volunteer",
+    "trans": [
+      "v.自愿效劳 n. 志愿者【派】 voluntary a. 自愿的"
+    ],
+    "usphone": "vɔlən'tiə"
+  },
+  {
+    "name": "vote",
+    "trans": [
+      "v.选举，投票"
+    ],
+    "usphone": "vəut"
+  },
+  {
+    "name": "voyage",
+    "trans": [
+      "n.航海，航程\n\n\n【W】"
+    ],
+    "usphone": "vɔidʒ"
+  },
+  {
+    "name": "wake",
+    "trans": [
+      "vi.醒来 vt. 唤醒【考】 wake up 醒过来；叫醒"
+    ],
+    "usphone": "weik"
+  },
+  {
+    "name": "wander",
+    "trans": [
+      "vi.漫游，游荡，漫步，流浪"
+    ],
+    "usphone": "'wɔndə"
+  },
+  {
+    "name": "warn",
+    "trans": [
+      "v.警告，注意，通知\n【考】 warn sb. of sth. 警告某人某事；warn sb.against doing sth. 警告某人不要做某事"
+    ],
+    "usphone": "wɔrn"
+  },
+  {
+    "name": "waste",
+    "trans": [
+      "n.废物；浪费 v. 浪费【考】 waste sth. on sth."
+    ],
+    "usphone": "weist"
+  },
+  {
+    "name": "wave",
+    "trans": [
+      "v.挥手，挥动；波动 n. （热，光，声等的）波，波浪"
+    ],
+    "usphone": "weiv"
+  },
+  {
+    "name": "way",
+    "trans": [
+      "n.路，路线；方式，手段\n【考】 on one’s way to 在去……的途中；in a way在某种程度上；\nby the way 顺便说； lose one’s way 迷路"
+    ],
+    "usphone": "wei"
+  },
+  {
+    "name": "wealth",
+    "trans": [
+      "n.财富，财产"
+    ],
+    "usphone": "welθ"
+  },
+  {
+    "name": "weapon",
+    "trans": [
+      "n.武器，兵器"
+    ],
+    "usphone": "'wepən"
+  },
+  {
+    "name": "weep",
+    "trans": [
+      "v.哭泣，流泪"
+    ],
+    "usphone": "wiːp"
+  },
+  {
+    "name": "weigh",
+    "trans": [
+      "vt.称……重量；掂量【派】 weight n. 重量，体重"
+    ],
+    "usphone": "wei"
+  },
+  {
+    "name": "welfare",
+    "trans": [
+      "n.福利（事业）"
+    ],
+    "usphone": "'welfɛə"
+  },
+  {
+    "name": "wide",
+    "trans": [
+      "a.宽阔的 ad. 完全地，充分地【反】 narrow"
+    ],
+    "usphone": "waid"
+  },
+  {
+    "name": "widespread",
+    "trans": [
+      "a.分布广的，普遍的"
+    ],
+    "usphone": "'waidspred"
+  },
+  {
+    "name": "wild",
+    "trans": [
+      "a.野生的；荒芜的；野蛮的"
+    ],
+    "usphone": "waild"
+  },
+  {
+    "name": "wise",
+    "trans": [
+      "a.有智慧的，聪明的"
+    ],
+    "usphone": "waiz"
+  },
+  {
+    "name": "wish",
+    "trans": [
+      "v.希望；但愿；祝福 n. 希望；心愿\n【考】 当 wish 后的宾语从句中表示与现在事实相反的愿望时，从句常用虚拟语气。"
+    ],
+    "usphone": "wiʃ"
+  },
+  {
+    "name": "witness",
+    "trans": [
+      "n.目击者，见证人v. 目击，目睹"
+    ],
+    "usphone": "'witnis"
+  },
+  {
+    "name": "wonder",
+    "trans": [
+      "v.对……疑惑；想要知道n. 惊讶；奇迹\n【考】 It’s no wonder （that 从 句 ）=No wonder ...难怪……"
+    ],
+    "usphone": "'wʌndə"
+  },
+  {
+    "name": "word",
+    "trans": [
+      "n.单词；言语；诺言\n【考】 in a word 总而言之；in other words 也就是说；keep one’s word 守信"
+    ],
+    "usphone": "wəːd"
+  },
+  {
+    "name": "worship",
+    "trans": [
+      "v.崇拜 n. 崇拜，礼拜（仪式）"
+    ],
+    "usphone": "'wəːʃip"
+  },
+  {
+    "name": "worth",
+    "trans": [
+      "a.值……钱，值得的 n. 价值\n【考】 worth 只能做表语，后接名词或动名词的主动形式。"
+    ],
+    "usphone": "wəːθ"
+  },
+  {
+    "name": "worthwhile",
+    "trans": [
+      "a.值得（做）的"
+    ],
+    "usphone": "'wəːθ'hwail"
+  },
+  {
+    "name": "wound",
+    "trans": [
+      "n.创伤，伤口 v. 受伤，伤害"
+    ],
+    "usphone": "wuːnd"
+  },
+  {
+    "name": "wrap",
+    "trans": [
+      "v.卷，包，缠绕"
+    ],
+    "usphone": "ræp"
+  },
+  {
+    "name": "wreck",
+    "trans": [
+      "n.失事，海难；沉船，残骸v.（船等）失事，遇难"
+    ],
+    "usphone": "rek"
+  },
+  {
+    "name": "yield",
+    "trans": [
+      "v.生产，出产；让步，屈服   n. 产量，收获量"
+    ],
+    "usphone": "jiːld"
+  }
+]
