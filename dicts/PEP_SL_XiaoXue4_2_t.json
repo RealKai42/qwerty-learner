@@ -1,0 +1,698 @@
+[
+{
+    "name": "across from",
+    "trans": [
+        "在对面"
+    ],
+    "usphone": "əˈkrɔs from",
+    "ukphone": "əˈkrɒs frɒm"
+},
+{
+    "name": "next to",
+    "trans": [
+        "紧邻"
+    ],
+    "usphone": "nɛkst tu",
+    "ukphone": "nɛkst tu"
+},
+{
+    "name": "between",
+    "trans": [
+        "在……之间"
+    ],
+    "usphone": "bɪˈtwiːn",
+    "ukphone": "bɪˈtwiːn"
+},
+{
+    "name": "restaurant",
+    "trans": [
+        "餐馆"
+    ],
+    "usphone": "ˈrɛstərənt",
+    "ukphone": "ˈrɛstərɒnt"
+},
+{
+    "name": "post office",
+    "trans": [
+        "邮局"
+    ],
+    "usphone": "poʊst ˈɔfɪs",
+    "ukphone": "pəʊst ˈɒfɪs"
+},
+{
+    "name": "bank",
+    "trans": [
+        "银行"
+    ],
+    "usphone": "bæŋk",
+    "ukphone": "bæŋk"
+},
+{
+    "name": "grocery",
+    "trans": [
+        "食品杂货店"
+    ],
+    "usphone": "ˈɡroʊsəri",
+    "ukphone": "ˈɡrəʊsəri"
+},
+{
+    "name": "turn left",
+    "trans": [
+        "向左转"
+    ],
+    "usphone": "tɝn lɛft",
+    "ukphone": "tɜːn lɛft"
+},
+{
+    "name": "turn right",
+    "trans": [
+        "向右转"
+    ],
+    "usphone": "tɝn raɪt",
+    "ukphone": "tɜːn raɪt"
+},
+{
+    "name": "go straight",
+    "trans": [
+        "直行"
+    ],
+    "usphone": "ɡoʊ streɪt",
+    "ukphone": "ɡəʊ streɪt"
+},
+{
+    "name": "crossroads",
+    "trans": [
+        "十字路口"
+    ],
+    "usphone": "ˈkrɔːsroʊdz",
+    "ukphone": "ˈkrɒsroʊdz"
+},
+{
+    "name": "neighbourhood",
+    "trans": [
+        "街坊；附近"
+    ],
+    "usphone": "ˈneɪbərˌhʊd",
+    "ukphone": "ˈneɪbəhʊd"
+},
+{
+    "name": "send",
+    "trans": [
+        "寄；发送"
+    ],
+    "usphone": "sɛnd",
+    "ukphone": "sɛnd"
+},
+{
+    "name": "get",
+    "trans": [
+        "得到"
+    ],
+    "usphone": "ɡɛt",
+    "ukphone": "ɡɛt"
+},
+{
+    "name": "money",
+    "trans": [
+        "钱"
+    ],
+    "usphone": "ˈmʌni",
+    "ukphone": "ˈmʌni"
+},
+{
+    "name": "get to",
+    "trans": [
+        "到达"
+    ],
+    "usphone": "ɡɛt tu",
+    "ukphone": "ɡɛt tu"
+},
+{
+    "name": "before",
+    "trans": [
+        "在……之前"
+    ],
+    "usphone": "bɪˈfɔr",
+    "ukphone": "bɪˈfɔːr"
+},
+{
+    "name": "leave",
+    "trans": [
+        "离开"
+    ],
+    "usphone": "liv",
+    "ukphone": "liːv"
+},
+{
+    "name": "toy",
+    "trans": [
+        "玩具"
+    ],
+    "usphone": "tɔɪ",
+    "ukphone": "tɔɪ"
+},
+{
+    "name": "hospital",
+    "trans": [
+        "医院"
+    ],
+    "usphone": "ˈhɑːspɪtəl",
+    "ukphone": "ˈhɒspɪtl̩"
+},
+{
+    "name": "bookshop",
+    "trans": [
+        "书店"
+    ],
+    "usphone": "ˈbʊkˌʃɑp",
+    "ukphone": "ˈbʊkʃɒp"
+},
+{
+    "name": "school",
+    "trans": [
+        "学校"
+    ],
+    "usphone": "skul",
+    "ukphone": "skuːl"
+},
+{
+    "name": "supermarket",
+    "trans": [
+        "超市"
+    ],
+    "usphone": "ˈsupərˌmɑrkɪt",
+    "ukphone": "ˈsuːpəmɑːkɪt"
+},
+{
+    "name": "ball",
+    "trans": [
+        "球"
+    ],
+    "usphone": "bɔl",
+    "ukphone": "bɔːl"
+},
+{
+    "name": "city",
+    "trans": [
+        "城市"
+    ],
+    "usphone": "ˈsɪti",
+    "ukphone": "ˈsɪti"
+},
+{
+    "name": "street",
+    "trans": [
+        "街道"
+    ],
+    "usphone": "strit",
+    "ukphone": "striːt"
+},
+{
+    "name": "sports centre",
+    "trans": [
+        "体育中心"
+    ],
+    "usphone": "spɔrts ˈsɛntər",
+    "ukphone": "spɔːts ˈsɛntə"
+},
+{
+    "name": "hotel",
+    "trans": [
+        "宾馆"
+    ],
+    "usphone": "hoʊˈtɛl",
+    "ukphone": "hoʊˈtɛl"
+},
+{
+    "name": "square",
+    "trans": [
+        "广场"
+    ],
+    "usphone": "skwɛr",
+    "ukphone": "skwɛər"
+},
+{
+    "name": "buy toys",
+    "trans": [
+        "买玩具"
+    ],
+    "usphone": "baɪ tɔɪz",
+    "ukphone": "baɪ tɔɪz"
+},
+{
+    "name": "see a film",
+    "trans": [
+        "看电影"
+    ],
+    "usphone": "si ə fɪlm",
+    "ukphone": "siː ə fɪlm"
+},
+{
+    "name": "go boating",
+    "trans": [
+        "去划船"
+    ],
+    "usphone": "ɡoʊ ˈboʊtɪŋ",
+    "ukphone": "ɡəʊ ˈbəʊtɪŋ"
+},
+{
+    "name": "busy",
+    "trans": [
+        "忙碌的"
+    ],
+    "usphone": "ˈbɪzi",
+    "ukphone": "ˈbɪzi"
+},
+{
+    "name": "station",
+    "trans": [
+        "（车）站"
+    ],
+    "usphone": "ˈsteɪʃən",
+    "ukphone": "ˈsteɪʃən"
+},
+{
+    "name": "place",
+    "trans": [
+        "地方"
+    ],
+    "usphone": "pleɪs",
+    "ukphone": "pleɪs"
+},
+{
+    "name": "thing",
+    "trans": [
+        "事；事物"
+    ],
+    "usphone": "θɪŋ",
+    "ukphone": "θɪŋ"
+},
+{
+    "name": "stay",
+    "trans": [
+        "停留"
+    ],
+    "usphone": "steɪ",
+    "ukphone": "steɪ"
+},
+{
+    "name": "star",
+    "trans": [
+        "星"
+    ],
+    "usphone": "stɑr",
+    "ukphone": "stɑːr"
+},
+{
+    "name": "king",
+    "trans": [
+        "国王"
+    ],
+    "usphone": "kɪŋ",
+    "ukphone": "kɪŋ"
+},
+{
+    "name": "central",
+    "trans": [
+        "中心的"
+    ],
+    "usphone": "ˈsɛntrəl",
+    "ukphone": "ˈsɛntrəl"
+},
+{
+    "name": "take photos",
+    "trans": [
+        "照相"
+    ],
+    "usphone": "teɪk ˈfoʊtoʊz",
+    "ukphone": "teɪk ˈfəʊtəʊz"
+},
+{
+    "name": "museum",
+    "trans": [
+        "博物馆"
+    ],
+    "usphone": "mjuˈziəm",
+    "ukphone": "mju(ː)ˈziːəm"
+},
+{
+    "name": "dream",
+    "trans": [
+        "梦"
+    ],
+    "usphone": "driːm",
+    "ukphone": "driːm"
+},
+{
+    "name": "sea",
+    "trans": [
+        "海；海洋"
+    ],
+    "usphone": "si",
+    "ukphone": "siː"
+},
+{
+    "name": "ski",
+    "trans": [
+        "滑雪"
+    ],
+    "usphone": "ski",
+    "ukphone": "skiː"
+},
+{
+    "name": "eat seafood",
+    "trans": [
+        "吃海鲜"
+    ],
+    "usphone": "it ˈsiˌfʊd",
+    "ukphone": "iːt ˈsiːˌfʊd"
+},
+{
+    "name": "visit the Mogao Caves",
+    "trans": [
+        "参观莫高窟"
+    ],
+    "usphone": "ˈvɪzɪt ðə məˈɡaʊ keɪvz",
+    "ukphone": "ˈvɪzɪt ðiː məˈɡaʊ keɪvz"
+},
+{
+    "name": "West Lake",
+    "trans": [
+        "西湖"
+    ],
+    "usphone": "wɛst leɪk",
+    "ukphone": "wɛst leɪk"
+},
+{
+    "name": "row a boat",
+    "trans": [
+        "划船"
+    ],
+    "usphone": "roʊ ə boʊt",
+    "ukphone": "rəʊ ə bəʊt"
+},
+{
+    "name": "the Great Wall",
+    "trans": [
+        "长城"
+    ],
+    "usphone": "ðə ɡreɪt wɔl",
+    "ukphone": "ðiː ɡreɪt wɔːl"
+},
+{
+    "name": "take photos",
+    "trans": [
+        "照相"
+    ],
+    "usphone": "teɪk ˈfoʊtoʊz",
+    "ukphone": "teɪk ˈfəʊtəʊz"
+},
+{
+    "name": "summer vacation",
+    "trans": [
+        "暑假"
+    ],
+    "usphone": "ˈsʌmər veɪˈkeɪʃən",
+    "ukphone": "ˈsʌmə veɪˈkeɪʃən"
+},
+{
+    "name": "travel",
+    "trans": [
+        "旅游"
+    ],
+    "usphone": "ˈtrævəl",
+    "ukphone": "ˈtrævəl"
+},
+{
+    "name": "reading",
+    "trans": [
+        "读书"
+    ],
+    "usphone": "ˈridɪŋ",
+    "ukphone": "ˈriːdɪŋ"
+},
+{
+    "name": "skateboarding",
+    "trans": [
+        "玩滑板"
+    ],
+    "usphone": "ˈskeɪtbɔrdɪŋ",
+    "ukphone": "ˈskeɪtbɔːrdɪŋ"
+},
+{
+    "name": "singing",
+    "trans": [
+        "唱歌"
+    ],
+    "usphone": "ˈsɪŋɪŋ",
+    "ukphone": "ˈsɪŋɪŋ"
+},
+{
+    "name": "dancing",
+    "trans": [
+        "跳舞"
+    ],
+    "usphone": "ˈdænsɪŋ",
+    "ukphone": "ˈdɑːnsɪŋ"
+},
+{
+    "name": "doing jigsaw puzzles",
+    "trans": [
+        "拼拼图"
+    ],
+    "usphone": "ˈduɪŋ ˈdʒɪɡˌsɔ pʌzəlz",
+    "ukphone": "ˈduːɪŋ ˈdʒɪɡˌsɔː pʌzl̩z"
+},
+{
+    "name": "making models",
+    "trans": [
+        "制作模型"
+    ],
+    "usphone": "ˈmeɪkɪŋ ˈmɑdəlz",
+    "ukphone": "ˈmeɪkɪŋ ˈmɒdl̩z"
+},
+{
+    "name": "collecting erasers",
+    "trans": [
+        "收集橡皮"
+    ],
+    "usphone": "kəˈlɛktɪŋ ɪˈreɪzərz",
+    "ukphone": "kəˈlɛktɪŋ ɪˈreɪzəz"
+},
+{
+    "name": "different",
+    "trans": [
+        "不同的"
+    ],
+    "usphone": "ˈdɪfərənt",
+    "ukphone": "ˈdɪfərənt"
+},
+{
+    "name": "hobby",
+    "trans": [
+        "爱好"
+    ],
+    "usphone": "ˈhɑbi",
+    "ukphone": "ˈhɒbi"
+},
+{
+    "name": "stamp",
+    "trans": [
+        "邮票"
+    ],
+    "usphone": "stæmp",
+    "ukphone": "stæmp"
+},
+{
+    "name": "catch",
+    "trans": [
+        "抓住"
+    ],
+    "usphone": "kætʃ",
+    "ukphone": "kætʃ"
+},
+{
+    "name": "go for a picnic",
+    "trans": [
+        "去野餐"
+    ],
+    "usphone": "ɡoʊ fɔr ə ˈpɪkˌnɪk",
+    "ukphone": "ɡəʊ fɔːr ə ˈpɪknɪk"
+},
+{
+    "name": "play the violin",
+    "trans": [
+        "拉小提琴"
+    ],
+    "usphone": "pleɪ ðə vaɪəˈlɪn",
+    "ukphone": "pleɪ ðə vaɪəˈlɪn"
+},
+{
+    "name": "go skating",
+    "trans": [
+        "去滑冰"
+    ],
+    "usphone": "ɡoʊ ˈskeɪtɪŋ",
+    "ukphone": "ɡəʊ ˈskeɪtɪŋ"
+},
+{
+    "name": "go camping",
+    "trans": [
+        "去野营"
+    ],
+    "usphone": "ɡoʊ ˈkæmpɪŋ",
+    "ukphone": "ɡəʊ ˈkæmpɪŋ"
+},
+{
+    "name": "do the housework",
+    "trans": [
+        "做家务"
+    ],
+    "usphone": "du ðə ˈhaʊswɜrk",
+    "ukphone": "duː ðə ˈhaʊswɜːk"
+},
+{
+    "name": "free",
+    "trans": [
+        "空闲的"
+    ],
+    "usphone": "fri",
+    "ukphone": "friː"
+},
+{
+    "name": "never",
+    "trans": [
+        "从不"
+    ],
+    "usphone": "ˈnɛvər",
+    "ukphone": "ˈnɛvər"
+},
+{
+    "name": "once a week",
+    "trans": [
+        "一周一次"
+    ],
+    "usphone": "wʌns ə wik",
+    "ukphone": "wʌns ə wiːk"
+},
+{
+    "name": "twice a week",
+    "trans": [
+        "一周两次"
+    ],
+    "usphone": "twaɪs ə wik",
+    "ukphone": "twaɪs ə wiːk"
+},
+{
+    "name": "three times a week",
+    "trans": [
+        "一周三次"
+    ],
+    "usphone": "θriː taɪmz ə wik",
+    "ukphone": "θriː taɪmz ə wiːk"
+},
+{
+    "name": "Canada",
+    "trans": [
+        "加拿大"
+    ],
+    "usphone": "ˈkænədə",
+    "ukphone": "ˈkænədə"
+},
+{
+    "name": "Australia",
+    "trans": [
+        "澳大利亚"
+    ],
+    "usphone": "ɔˈstreɪliə",
+    "ukphone": "ɔːˈstreɪliə"
+},
+{
+    "name": "the UK",
+    "trans": [
+        "英国"
+    ],
+    "usphone": "ðə juː keɪ",
+    "ukphone": "ðə ju(ː) keɪ"
+},
+{
+    "name": "the USA",
+    "trans": [
+        "美国"
+    ],
+    "usphone": "ði ˈjuˈɛsˈeɪ",
+    "ukphone": "ðiː ˈjuːˈɛsˈeɪ"
+},
+{
+    "name": "China",
+    "trans": [
+        "中国"
+    ],
+    "usphone": "ˈtʃaɪnə",
+    "ukphone": "ˈtʃaɪnə"
+},
+{
+    "name": "koala",
+    "trans": [
+        "考拉"
+    ],
+    "usphone": "koʊˈɑlə",
+    "ukphone": "kəʊˈɑːlə"
+},
+{
+    "name": "maple leaves",
+    "trans": [
+        "枫叶"
+    ],
+    "usphone": "ˈmeɪpəl liːvz",
+    "ukphone": "ˈmeɪpəl liːvz"
+},
+{
+    "name": "Big Ben",
+    "trans": [
+        "大本钟"
+    ],
+    "usphone": "bɪg bɛn",
+    "ukphone": "bɪg bɛn"
+},
+{
+    "name": "Disneyland",
+    "trans": [
+        "迪斯尼乐园"
+    ],
+    "usphone": "ˈdɪzniˌlænd",
+    "ukphone": "ˈdɪzniˌlænd"
+},
+{
+    "name": "campfire",
+    "trans": [
+        "篝火"
+    ],
+    "usphone": "kæmpˌfaɪr",
+    "ukphone": "kæmpˌfaɪər"
+},
+{
+    "name": "cute",
+    "trans": [
+        "可爱的"
+    ],
+    "usphone": "kjut",
+    "ukphone": "kjuːt"
+},
+{
+    "name": "country",
+    "trans": [
+        "国家"
+    ],
+    "usphone": "ˈkʌntri",
+    "ukphone": "ˈkʌntri"
+},
+{
+    "name": "pretty",
+    "trans": [
+        "漂亮的"
+    ],
+    "usphone": "ˈprɪti",
+    "ukphone": "ˈprɪti"
+}
+]
