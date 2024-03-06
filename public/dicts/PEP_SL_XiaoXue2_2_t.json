@@ -1,0 +1,446 @@
+[
+{
+    "name": "play football",
+    "trans": [
+        "踢足球"
+    ],
+    "usphone": "pleɪ ˈfʊtˌbɔːl",
+    "ukphone": "pleɪ ˈfʊtˌbɔːl"
+},
+{
+    "name": "fly a kite",
+    "trans": [
+        "放风筝"
+    ],
+    "usphone": "flaɪ ə kaɪt",
+    "ukphone": "flaɪ ə kaɪt"
+},
+{
+    "name": "ride a bike",
+    "trans": [
+        "骑自行车"
+    ],
+    "usphone": "raɪd ə baɪk",
+    "ukphone": "raɪd ə baɪk"
+},
+{
+    "name": "make a model plane",
+    "trans": [
+        "做飞机模型"
+    ],
+    "usphone": "meɪk ə ˈmɑːdl pleɪn",
+    "ukphone": "meɪk ə ˈmɒdl pleɪn"
+},
+{
+    "name": "swim",
+    "trans": [
+        "游泳"
+    ],
+    "usphone": "swɪm",
+    "ukphone": "swɪm"
+},
+{
+    "name": "make a snowman",
+    "trans": [
+        "堆雪人"
+    ],
+    "usphone": "meɪk ə ˈsnoʊˌmæn",
+    "ukphone": "meɪk ə ˈsnəʊˌmæn"
+},
+{
+    "name": "can't",
+    "trans": [
+        "不能",
+        "不会"
+    ],
+    "usphone": "kænt",
+    "ukphone": "kɑːnt"
+},
+{
+    "name": "rainy",
+    "trans": [
+        "下雨的"
+    ],
+    "usphone": "ˈreɪni",
+    "ukphone": "ˈreɪni"
+},
+{
+    "name": "cloudy",
+    "trans": [
+        "多云的"
+    ],
+    "usphone": "ˈklaʊdi",
+    "ukphone": "ˈklaʊdi"
+},
+{
+    "name": "snowy",
+    "trans": [
+        "下雪的"
+    ],
+    "usphone": "ˈsnoʊi",
+    "ukphone": "ˈsnəʊi"
+},
+{
+    "name": "windy",
+    "trans": [
+        "刮风的"
+    ],
+    "usphone": "ˈwɪndi",
+    "ukphone": "ˈwɪndi"
+},
+{
+    "name": "sunny",
+    "trans": [
+        "晴朗的"
+    ],
+    "usphone": "ˈsʌni",
+    "ukphone": "ˈsʌni"
+},
+{
+    "name": "umbrella",
+    "trans": [
+        "雨伞"
+    ],
+    "usphone": "ʌmˈbrɛlə",
+    "ukphone": "ʌmˈbrɛlə"
+},
+{
+    "name": "weather",
+    "trans": [
+        "天气"
+    ],
+    "usphone": "ˈwɛðər",
+    "ukphone": "ˈwɛðər"
+},
+{
+    "name": "wow",
+    "trans": [
+        "哇"
+    ],
+    "usphone": "waʊ",
+    "ukphone": "waʊ"
+},
+{
+    "name": "let's",
+    "trans": [
+        "让我们……"
+    ],
+    "usphone": "lɛts",
+    "ukphone": "lɛts"
+},
+{
+    "name": "spring",
+    "trans": [
+        "春天"
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+},
+{
+    "name": "summer",
+    "trans": [
+        "夏天"
+    ],
+    "usphone": "ˈsʌmər",
+    "ukphone": "ˈsʌmər"
+},
+{
+    "name": "autumn",
+    "trans": [
+        "秋天"
+    ],
+    "usphone": "ˈɔːtəm",
+    "ukphone": "ˈɔːtəm"
+},
+{
+    "name": "winter",
+    "trans": [
+        "冬天"
+    ],
+    "usphone": "ˈwɪntər",
+    "ukphone": "ˈwɪntər"
+},
+{
+    "name": "hot",
+    "trans": [
+        "炎热的"
+    ],
+    "usphone": "hɑt",
+    "ukphone": "hɒt"
+},
+{
+    "name": "warm",
+    "trans": [
+        "温暖的"
+    ],
+    "usphone": "wɔrm",
+    "ukphone": "wɔːm"
+},
+{
+    "name": "cool",
+    "trans": [
+        "凉爽的"
+    ],
+    "usphone": "kul",
+    "ukphone": "kuːl"
+},
+{
+    "name": "cold",
+    "trans": [
+        "寒冷的"
+    ],
+    "usphone": "koʊld",
+    "ukphone": "kəʊld"
+},
+{
+    "name": "favourite",
+    "trans": [
+        "最喜欢的"
+    ],
+    "usphone": "ˈfeɪvərɪt",
+    "ukphone": "ˈfeɪvərɪt"
+},
+{
+    "name": "season",
+    "trans": [
+        "季节"
+    ],
+    "usphone": "ˈsiːzən",
+    "ukphone": "ˈsiːzən"
+},
+{
+    "name": "eleven",
+    "trans": [
+        "十一"
+    ],
+    "usphone": "ɪˈlɛvən",
+    "ukphone": "ɪˈlɛvən"
+},
+{
+    "name": "twelve",
+    "trans": [
+        "十二"
+    ],
+    "usphone": "twɛlv",
+    "ukphone": "twɛlv"
+},
+{
+    "name": "twenty",
+    "trans": [
+        "二十"
+    ],
+    "usphone": "ˈtwɛnti",
+    "ukphone": "ˈtwɛnti"
+},
+{
+    "name": "thirty",
+    "trans": [
+        "三十"
+    ],
+    "usphone": "ˈθɜːrti",
+    "ukphone": "ˈθɜːti"
+},
+{
+    "name": "forty",
+    "trans": [
+        "四十"
+    ],
+    "usphone": "ˈfɔːrti",
+    "ukphone": "ˈfɔːrti"
+},
+{
+    "name": "fifty",
+    "trans": [
+        "五十"
+    ],
+    "usphone": "ˈfɪfti",
+    "ukphone": "ˈfɪfti"
+},
+{
+    "name": "thirteen",
+    "trans": [
+        "十三"
+    ],
+    "usphone": "ˈθɜːrˌtin",
+    "ukphone": "ˈθɜːrˌtin"
+},
+{
+    "name": "fourteen",
+    "trans": [
+        "十四"
+    ],
+    "usphone": "ˈfɔrtˌtin",
+    "ukphone": "ˈfɔːˌtin"
+},
+{
+    "name": "fifteen",
+    "trans": [
+        "十五"
+    ],
+    "usphone": "ˌfɪfˈtin",
+    "ukphone": "ˌfɪfˈtin"
+},
+{
+    "name": "time",
+    "trans": [
+        "时间"
+    ],
+    "usphone": "taɪm",
+    "ukphone": "taɪm"
+},
+{
+    "name": "playtime",
+    "trans": [
+        "游戏时间",
+        "课间休息时间"
+    ],
+    "usphone": "pleɪtaɪm",
+    "ukphone": "pleɪtaɪm"
+},
+{
+    "name": "get up",
+    "trans": [
+        "起床"
+    ],
+    "usphone": "ɡɛt ʌp",
+    "ukphone": "ɡɛt ʌp"
+},
+{
+    "name": "eat breakfast",
+    "trans": [
+        "吃早饭"
+    ],
+    "usphone": "it ˈbrɛkˌfəst",
+    "ukphone": "iːt ˈbrɛkfəst"
+},
+{
+    "name": "go to school",
+    "trans": [
+        "上学"
+    ],
+    "usphone": "ɡoʊ tu skul",
+    "ukphone": "ɡəʊ tuː skuːl"
+},
+{
+    "name": "eat lunch",
+    "trans": [
+        "吃午饭"
+    ],
+    "usphone": "it lʌntʃ",
+    "ukphone": "iːt lʌntʃ"
+},
+{
+    "name": "go home",
+    "trans": [
+        "回家"
+    ],
+    "usphone": "ɡoʊ hoʊm",
+    "ukphone": "ɡəʊ həʊm"
+},
+{
+    "name": "eat dinner",
+    "trans": [
+        "吃晚饭"
+    ],
+    "usphone": "it ˈdɪnər",
+    "ukphone": "iːt ˈdɪnər"
+},
+{
+    "name": "go to bed",
+    "trans": [
+        "上床",
+        "睡觉"
+    ],
+    "usphone": "ɡoʊ tu bɛd",
+    "ukphone": "ɡəʊ tu bɛd"
+},
+{
+    "name": "when",
+    "trans": [
+        "什么时候",
+        "何时"
+    ],
+    "usphone": "wɛn",
+    "ukphone": "wɛn"
+},
+{
+    "name": "every day",
+    "trans": [
+        "每天"
+    ],
+    "usphone": "ˈɛvri deɪ",
+    "ukphone": "ˈɛvri deɪ"
+},
+{
+    "name": "at",
+    "trans": [
+        "在……点钟"
+    ],
+    "usphone": "æt",
+    "ukphone": "æt"
+},
+{
+    "name": "Sunday",
+    "trans": [
+        "星期天"
+    ],
+    "usphone": "ˈsʌndeɪ",
+    "ukphone": "ˈsʌndeɪ"
+},
+{
+    "name": "Monday",
+    "trans": [
+        "星期一"
+    ],
+    "usphone": "ˈmʌndeɪ",
+    "ukphone": "ˈmʌndeɪ"
+},
+{
+    "name": "Tuesday",
+    "trans": [
+        "星期二"
+    ],
+    "usphone": "ˈtuzdeɪ",
+    "ukphone": "ˈtjuːzdeɪ"
+},
+{
+    "name": "Wednesday",
+    "trans": [
+        "星期三"
+    ],
+    "usphone": "ˈwɛnzdeɪ",
+    "ukphone": "ˈwɛnzdeɪ"
+},
+{
+    "name": "Thursday",
+    "trans": [
+        "星期四"
+    ],
+    "usphone": "ˈθɜrzdeɪ",
+    "ukphone": "ˈθɜːrzdeɪ"
+},
+{
+    "name": "Friday",
+    "trans": [
+        "星期五"
+    ],
+    "usphone": "ˈfraɪdeɪ",
+    "ukphone": "ˈfraɪdeɪ"
+},
+{
+    "name": "Saturday",
+    "trans": [
+        "星期六"
+    ],
+    "usphone": "ˈsætərdeɪ",
+    "ukphone": "ˈsætərdeɪ"
+},
+{
+    "name": "today",
+    "trans": [
+        "今天"
+    ],
+    "usphone": "təˈdeɪ",
+    "ukphone": "təˈdeɪ"
+}
+]

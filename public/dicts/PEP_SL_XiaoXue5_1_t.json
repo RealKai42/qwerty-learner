@@ -1,0 +1,533 @@
+[
+    {
+        "name": "clever",
+        "trans": [
+            "聪明的"
+        ],
+        "usphone": "ˈklɛvər",
+        "ukphone": "ˈklɛvər"
+    },
+    {
+        "name": "careless",
+        "trans": [
+            "粗心的"
+        ],
+        "usphone": "ˈkɛrləs",
+        "ukphone": "ˈkɛrləs"
+    },
+    {
+        "name": "polite",
+        "trans": [
+            "有礼貌的"
+        ],
+        "usphone": "pəˈlaɪt",
+        "ukphone": "pəˈlaɪt"
+    },
+    {
+        "name": "quiet",
+        "trans": [
+            "安静的"
+        ],
+        "usphone": "ˈkwaɪət",
+        "ukphone": "ˈkwaɪət"
+    },
+    {
+        "name": "cute",
+        "trans": [
+            "漂亮的",
+            "可爱的"
+        ],
+        "usphone": "kjut",
+        "ukphone": "kjuːt"
+    },
+    {
+        "name": "friendly",
+        "trans": [
+            "友好的"
+        ],
+        "usphone": "ˈfrɛndli",
+        "ukphone": "ˈfrɛndli"
+    },
+    {
+        "name": "helpful",
+        "trans": [
+            "肯帮忙的"
+        ],
+        "usphone": "ˈhɛlpfəl",
+        "ukphone": "ˈhɛlpfəl"
+    },
+    {
+        "name": "active",
+        "trans": [
+            "活跃的"
+        ],
+        "usphone": "ˈæktɪv",
+        "ukphone": "ˈæktɪv"
+    },
+    {
+        "name": "popular",
+        "trans": [
+            "受欢迎的"
+        ],
+        "usphone": "ˈpɑpjələr",
+        "ukphone": "ˈpɒpjʊlər"
+    },
+    {
+        "name": "talk",
+        "trans": [
+            "说话"
+        ],
+        "usphone": "tɔk",
+        "ukphone": "tɔːk"
+    },
+    {
+        "name": "party",
+        "trans": [
+            "聚会"
+        ],
+        "usphone": "ˈpɑrti",
+        "ukphone": "ˈpɑːti"
+    },
+    {
+        "name": "all",
+        "trans": [
+            "全部"
+        ],
+        "usphone": "ɔl",
+        "ukphone": "ɔːl"
+    },
+    {
+        "name": "but",
+        "trans": [
+            "但是"
+        ],
+        "usphone": "bʌt",
+        "ukphone": "bʌt"
+    },
+    {
+        "name": "sometimes",
+        "trans": [
+            "有时"
+        ],
+        "usphone": "ˈsʌmˌtaɪmz",
+        "ukphone": "ˈsʌmˌtaɪmz"
+    },
+    {
+        "name": "bark",
+        "trans": [
+            "吠，叫"
+        ],
+        "usphone": "bɑrk",
+        "ukphone": "bɑːrk"
+    },
+    {
+        "name": "forget",
+        "trans": [
+            "忘记"
+        ],
+        "usphone": "fərˈɡɛt",
+        "ukphone": "fəˈɡɛt"
+    },
+    {
+        "name": "with",
+        "trans": [
+            "同……一起"
+        ],
+        "usphone": "wɪð",
+        "ukphone": "wɪð"
+    },
+    {
+        "name": "wear glasses",
+        "trans": [
+            "戴眼镜"
+        ],
+        "usphone": "wɛr ˈɡlæsɪz",
+        "ukphone": "wɛː ˈɡlɑːsɪz"
+    },
+    {
+        "name": "slim",
+        "trans": [
+            "苗条的"
+        ],
+        "usphone": "slɪm",
+        "ukphone": "slɪm"
+    },
+    {
+        "name": "curly",
+        "trans": [
+            "卷曲的"
+        ],
+        "usphone": "ˈkɜrli",
+        "ukphone": "ˈkɜːli"
+    },
+    {
+        "name": "straight",
+        "trans": [
+            "直的"
+        ],
+        "usphone": "streɪt",
+        "ukphone": "streɪt"
+    },
+    {
+        "name": "nice",
+        "trans": [
+            "好的"
+        ],
+        "usphone": "naɪs",
+        "ukphone": "naɪs"
+    },
+    {
+        "name": "young",
+        "trans": [
+            "年轻的"
+        ],
+        "usphone": "jʌŋ",
+        "ukphone": "jʌŋ"
+    },
+    {
+        "name": "teach",
+        "trans": [
+            "教"
+        ],
+        "usphone": "titʃ",
+        "ukphone": "tiːtʃ"
+    },
+    {
+        "name": "guess",
+        "trans": [
+            "猜"
+        ],
+        "usphone": "ɡɛs",
+        "ukphone": "ɡɛs"
+    },
+    {
+        "name": "has",
+        "trans": [
+            "有"
+        ],
+        "usphone": "hæz",
+        "ukphone": "hæz"
+    },
+    {
+        "name": "animal",
+        "trans": [
+            "动物"
+        ],
+        "usphone": "ˈænɪməl",
+        "ukphone": "ˈænɪməl"
+    },
+    {
+        "name": "elephant",
+        "trans": [
+            "大象"
+        ],
+        "usphone": "ˈɛləfənt",
+        "ukphone": "ˈɛlɪfənt"
+    },
+    {
+        "name": "panda",
+        "trans": [
+            "熊猫"
+        ],
+        "usphone": "ˈpændə",
+        "ukphone": "ˈpændə"
+    },
+    {
+        "name": "horse",
+        "trans": [
+            "马"
+        ],
+        "usphone": "hɔrs",
+        "ukphone": "hɔːs"
+    },
+    {
+        "name": "cow",
+        "trans": [
+            "奶牛"
+        ],
+        "usphone": "kaʊ",
+        "ukphone": "kaʊ"
+    },
+    {
+        "name": "pig",
+        "trans": [
+            "猪"
+        ],
+        "usphone": "pɪɡ",
+        "ukphone": "pɪɡ"
+    },
+    {
+        "name": "sheep",
+        "trans": [
+            "绵羊"
+        ],
+        "usphone": "ʃip",
+        "ukphone": "ʃiːp"
+    },
+    {
+        "name": "bee",
+        "trans": [
+            "蜜蜂"
+        ],
+        "usphone": "bi",
+        "ukphone": "biː"
+    },
+    {
+        "name": "farm",
+        "trans": [
+            "农场"
+        ],
+        "usphone": "fɑrm",
+        "ukphone": "fɑːm"
+    },
+    {
+        "name": "fast",
+        "trans": [
+            "快的",
+            "迅速地"
+        ],
+        "usphone": "fæst",
+        "ukphone": "fɑːst"
+    },
+    {
+        "name": "why",
+        "trans": [
+            "为什么"
+        ],
+        "usphone": "waɪ",
+        "ukphone": "waɪ"
+    },
+    {
+        "name": "lovely",
+        "trans": [
+            "可爱的"
+        ],
+        "usphone": "ˈlʌvli",
+        "ukphone": "ˈlʌvli"
+    },
+    {
+        "name": "butterfly",
+        "trans": [
+            "蝴蝶"
+        ],
+        "usphone": "ˈbʌtərˌflaɪ",
+        "ukphone": "ˈbʌtəflaɪ"
+    },
+    {
+        "name": "exercise book",
+        "trans": [
+            "练习本"
+        ],
+        "usphone": "ˈɛksərsaɪz bʊk",
+        "ukphone": "ˈɛksəsaɪz bʊk"
+    },
+    {
+        "name": "pencil sharpener",
+        "trans": [
+            "铅笔刀"
+        ],
+        "usphone": "ˈpɛnsəl ˈʃɑrpənər",
+        "ukphone": "ˈpɛnsəl ˈʃɑːpənər"
+    },
+    {
+        "name": "a pair of scissors",
+        "trans": [
+            "一把剪刀"
+        ],
+        "usphone": "ə pɛr ʌv ˈsɪzərz",
+        "ukphone": "ə pɛːr ʌv ˈsɪzəz"
+    },
+    {
+        "name": "pencil box",
+        "trans": [
+            "铅笔盒"
+        ],
+        "usphone": "ˈpɛnsəl bɑks",
+        "ukphone": "ˈpɛnsəl bɒks"
+    },
+    {
+        "name": "a box of crayons",
+        "trans": [
+            "一盒蜡笔"
+        ],
+        "usphone": "ə bɑks ʌv ˈkreɪənz",
+        "ukphone": "ə bɒks ʌv ˈkreɪənz"
+    },
+    {
+        "name": "please",
+        "trans": [
+            "请"
+        ],
+        "usphone": "pliːz",
+        "ukphone": "pliːz"
+    },
+    {
+        "name": "only",
+        "trans": [
+            "只",
+            "仅仅"
+        ],
+        "usphone": "ˈoʊnli",
+        "ukphone": "ˈəʊnli"
+    },
+    {
+        "name": "also",
+        "trans": [
+            "也"
+        ],
+        "usphone": "ˈɔlsoʊ",
+        "ukphone": "ˈɔːlsəʊ"
+    },
+    {
+        "name": "saleswoman",
+        "trans": [
+            "女售货员"
+        ],
+        "usphone": "ˈseɪlzˌwʊmən",
+        "ukphone": "ˈseɪlzˌwʊmən"
+    },
+    {
+        "name": "great",
+        "trans": [
+            "好极了"
+        ],
+        "usphone": "ɡreɪt",
+        "ukphone": "ɡreɪt"
+    },
+    {
+        "name": "love",
+        "trans": [
+            "喜欢"
+        ],
+        "usphone": "lʌv",
+        "ukphone": "lʌv"
+    },
+    {
+        "name": "how much",
+        "trans": [
+            "（价钱）多少？"
+        ],
+        "usphone": "haʊ mʌtʃ",
+        "ukphone": "haʊ mʌtʃ"
+    },
+    {
+        "name": "a lot",
+        "trans": [
+            "很多"
+        ],
+        "usphone": "ə lɑt",
+        "ukphone": "ə lɒt"
+    },
+    {
+        "name": "wonderful",
+        "trans": [
+            "精彩的"
+        ],
+        "usphone": "ˈwʌndərfəl",
+        "ukphone": "ˈwʌndəfʊl"
+    },
+    {
+        "name": "cool",
+        "trans": [
+            "酷的"
+        ],
+        "usphone": "kul",
+        "ukphone": "kuːl"
+    },
+    {
+        "name": "fantastic",
+        "trans": [
+            "极好的"
+        ],
+        "usphone": "fænˈtæstɪk",
+        "ukphone": "fænˈtæstɪk"
+    },
+    {
+        "name": "cartoons",
+        "trans": [
+            "动画片"
+        ],
+        "usphone": "kɑrˈtunz",
+        "ukphone": "kɑːˈtuːns"
+    },
+    {
+        "name": "news shows",
+        "trans": [
+            "新闻节目"
+        ],
+        "usphone": "nuz ʃoʊz",
+        "ukphone": "njuːz ʃəʊz"
+    },
+    {
+        "name": "nature shows",
+        "trans": [
+            "自然节目"
+        ],
+        "usphone": "ˈneɪtʃər ʃoʊz",
+        "ukphone": "ˈneɪtʃə ʃəʊz"
+    },
+    {
+        "name": "chore",
+        "trans": [
+            "家务"
+        ],
+        "usphone": "tʃɔr",
+        "ukphone": "tʃɔː"
+    },
+    {
+        "name": "clean the room",
+        "trans": [
+            "打扫房间"
+        ],
+        "usphone": "klin ðə rum",
+        "ukphone": "kliːn ðə ruːm"
+    },
+    {
+        "name": "make the bed",
+        "trans": [
+            "整理床铺"
+        ],
+        "usphone": "meɪk ðə bɛd",
+        "ukphone": "meɪk ðə bɛd"
+    },
+    {
+        "name": "take out the rubbish",
+        "trans": [
+            "倒垃圾"
+        ],
+        "usphone": "teɪk aʊt ðə ˈrʌbɪʃ",
+        "ukphone": "teɪk aʊt ðə ˈrʌbɪʃ"
+    },
+    {
+        "name": "wash clothes",
+        "trans": [
+            "洗衣服"
+        ],
+        "usphone": "wɔʃ kloʊðz",
+        "ukphone": "wɒʃ kləʊðz"
+    },
+    {
+        "name": "tidy the desk",
+        "trans": [
+            "清理书桌"
+        ],
+        "usphone": "ˈtaɪdi ðə dɛsk",
+        "ukphone": "ˈtaɪdi ðə desk"
+    },
+    {
+        "name": "sweep the floor",
+        "trans": [
+            "扫地"
+        ],
+        "usphone": "swip ðə flɔr",
+        "ukphone": "swiːp ðə flɔːr"
+    },
+    {
+        "name": "call",
+        "trans": [
+            "打电话给……"
+        ],
+        "usphone": "kɔl",
+        "ukphone": "kɔːl"
+    }
+]
