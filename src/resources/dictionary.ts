@@ -1047,6 +1047,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'gaokao-yuedu-gaopin',
+    name: '高考英语阅读高频词汇',
+    description: '高考英语阅读高频词汇',
+    category: '青少年英语',
+    tags: ['通用'],
+    url: '/dicts/gaokao-yuedu-gaopin.json',
+    length: 688,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'zhongkaohexin',
     name: '中考核心词',
     description: '中考核心词',
