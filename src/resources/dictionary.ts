@@ -456,6 +456,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'tingshuokaoshi',
+    name: '听说考试常见词汇',
+    description: '听说考试16个场景常见词汇量',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/tingshuokaoshi.json',
+    length: 557,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'TOEFL_ZhangHongYan',
     name: 'ZhangHongYan的TOEFL词汇书',
     description: 'ZhangHongYan的TOEFL词汇书-词以类记',
