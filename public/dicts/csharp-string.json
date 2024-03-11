@@ -1,0 +1,476 @@
+[
+    {
+        "name": "Clone()",
+        "trans": [
+            "Clone()创建当前字符串的浅表副本"
+        ]
+    },
+    {
+        "name": "Compare(string, string)",
+        "trans": [
+            "比较两个指定的字符串，并返回一个表示它们在字典顺序中的相对位置的整数"
+        ]
+    },
+    {
+        "name": "Compare(string, string, bool)",
+        "trans": [
+            "比较两个指定的字符串，并返回一个表示它们在字典顺序中的相对位置的整数，或指示是否忽略大小写的布尔值"
+        ]
+    },
+    {
+        "name": "Compare(string, int, string, int, int)",
+        "trans": [
+            "比较两个指定的字符串的指定部分，并返回一个表示它们在字典顺序中的相对位置的整数"
+        ]
+    },
+    {
+        "name": "CompareOrdinal(string, string)",
+        "trans": [
+            "比较两个指定的字符串，并返回一个表示它们在 Unicode 编码顺序中的相对位置的整数"
+        ]
+    },
+    {
+        "name": "CompareTo(object)",
+        "trans": [
+            "将此实例与指定的对象进行比较，并返回一个表示它们在字典顺序中的相对位置的整数"
+        ]
+    },
+    {
+        "name": "CompareTo(string)",
+        "trans": [
+            "将此实例与指定的字符串进行比较，并返回一个表示它们在字典顺序中的相对位置的整数"
+        ]
+    },
+    {
+        "name": "Concat(string, string)",
+        "trans": [
+            "将两个指定的字符串连接到一起"
+        ]
+    },
+    {
+        "name": "Concat(string, string, string)",
+        "trans": [
+            "将三个指定的字符串连接到一起"
+        ]
+    },
+    {
+        "name": "Concat(string, string, string, string)",
+        "trans": [
+            "将四个指定的字符串连接到一起"
+        ]
+    },
+    {
+        "name": "Concat(string[])",
+        "trans": [
+            "将指定数组中的所有字符串连接到一起"
+        ]
+    },
+    {
+        "name": "Contains(string)",
+        "trans": [
+            "返回一个值，该值指示指定的字符串是否出现在此字符串中"
+        ]
+    },
+    {
+        "name": "Copy(string)",
+        "trans": [
+            "创建指定字符串的副本"
+        ]
+    },
+    {
+        "name": "CopyTo(int, char[], int, int)",
+        "trans": [
+            "从此实例中的指定位置开始将字符复制到字符数组中的指定位置"
+        ]
+    },
+    {
+        "name": "EndsWith(string)",
+        "trans": [
+            "确定此字符串实例的结尾是否与指定的字符串匹配"
+        ]
+    },
+    {
+        "name": "Equals(object)",
+        "trans": [
+            "确定指定的对象是否等于当前对象"
+        ]
+    },
+    {
+        "name": "Equals(string)",
+        "trans": [
+            "确定此字符串实例是否与另一个字符串实例具有相同的值"
+        ]
+    },
+    {
+        "name": "Format(IFormatProvider, string, object)",
+        "trans": [
+            "使用指定的格式信息以及要格式化的对象的指定值，返回指定字符串格式的格式化字符串"
+        ]
+    },
+    {
+        "name": "Format(string, object)",
+        "trans": [
+            "使用指定的格式字符串和要插入到该字符串中的对象的参数数组，返回格式化的字符串"
+        ]
+    },
+    {
+        "name": "GetEnumerator()",
+        "trans": [
+            "返回一个枚举数，该枚举数可用于迭代字符串中的字符"
+        ]
+    },
+    {
+        "name": "GetHashCode()",
+        "trans": [
+            "用作默认哈希函数"
+        ]
+    },
+    {
+        "name": "GetType()",
+        "trans": [
+            "获取当前实例的 Type"
+        ]
+    },
+    {
+        "name": "IndexOf(char)",
+        "trans": [
+            "返回指定字符在此字符串中第一次出现的位置"
+        ]
+    },
+    {
+        "name": "IndexOf(char, int)",
+        "trans": [
+            "返回指定字符在此字符串中第一次出现的位置，从指定的索引位置开始搜索"
+        ]
+    },
+    {
+        "name": "IndexOf(char, int, int)",
+        "trans": [
+            "返回指定字符在此字符串中第一次出现的位置，搜索范围从指定的索引开始，并且包括指定数量的字符"
+        ]
+    },
+    {
+        "name": "IndexOf(string)",
+        "trans": [
+            "返回指定字符串在此字符串中第一次出现的位置"
+        ]
+    },
+    {
+        "name": "IndexOf(string, int)",
+        "trans": [
+            "返回指定字符串在此字符串中第一次出现的位置，从指定的索引位置开始搜索"
+        ]
+    },
+    {
+        "name": "IndexOf(string, int, int)",
+        "trans": [
+            "返回指定字符串在此字符串中第一次出现的位置，搜索范围从指定的索引开始，并且包括指定数量的字符"
+        ]
+    },
+    {
+        "name": "IndexOfAny(char[])",
+        "trans": [
+            "返回指定数组中的任何一个字符在此字符串中第一次出现的位置"
+        ]
+    },
+    {
+        "name": "IndexOfAny(char[], int)",
+        "trans": [
+            "返回指定数组中的任何一个字符在此字符串中第一次出现的位置，搜索范围从指定的索引位置开始"
+        ]
+    },
+    {
+        "name": "IndexOfAny(char[], int, int)",
+        "trans": [
+            "返回指定数组中的任何一个字符在此字符串中第一次出现的位置，搜索范围从指定的索引开始，并且包括指定数量的字符"
+        ]
+    },
+    {
+        "name": "Insert(int, string)",
+        "trans": [
+            "返回一个新字符串，其中指定的字符串被插入到此字符串中的指定索引位置"
+        ]
+    },
+    {
+        "name": "Intern(string)",
+        "trans": [
+            "将指定的字符串添加到字符串池中，或者返回池中已存在的引用"
+        ]
+    },
+    {
+        "name": "IsInterned(string)",
+        "trans": [
+            "返回在字符串池中或者作为动态分配的字符串中找到的指定字符串的引用"
+        ]
+    },
+    {
+        "name": "IsNormalized()",
+        "trans": [
+            "确定此字符串是否为 Unicode 规范化形式 C"
+        ]
+    },
+    {
+        "name": "IsNullOrEmpty(string)",
+        "trans": [
+            "指示指定的字符串是否为 null 或者是一个空字符串"
+        ]
+    },
+    {
+        "name": "IsNullOrWhiteSpace(string)",
+        "trans": [
+            "指示指定的字符串是否为 null、空字符串或者仅由空白字符组成"
+        ]
+    },
+    {
+        "name": "Join(string, string[])",
+        "trans": [
+            "使用指定的分隔符将指定数组中的所有字符串连接到一起"
+        ]
+    },
+    {
+        "name": "Join(string, string[], int, int)",
+        "trans": [
+            "使用指定的分隔符将指定数组中的一个子集的所有字符串连接到一起"
+        ]
+    },
+    {
+        "name": "Join<T>(string, IEnumerable<T>)",
+        "trans": [
+            "将指定可枚举集合中的所有字符串连接到一起，其中这些字符串用指定的分隔符分隔"
+        ]
+    },
+    {
+        "name": "Join<T>(string, IEnumerable<T>, int, int)",
+        "trans": [
+            "将指定可枚举集合中的一个子集的所有字符串连接到一起，其中这些字符串用指定的分隔符分隔"
+        ]
+    },
+    {
+        "name": "LastIndexOf(char)",
+        "trans": [
+            "返回指定字符在此字符串中最后一次出现的位置"
+        ]
+    },
+    {
+        "name": "LastIndexOf(char, int)",
+        "trans": [
+            "返回指定字符在此字符串中最后一次出现的位置，搜索范围从指定的索引位置开始"
+        ]
+    },
+    {
+        "name": "LastIndexOf(char, int, int)",
+        "trans": [
+            "返回指定字符在此字符串中最后一次出现的位置，搜索范围从指定的索引开始，并且包括指定数量的字符"
+        ]
+    },
+    {
+        "name": "LastIndexOf(string)",
+        "trans": [
+            "返回指定字符串在此字符串中最后一次出现的位置"
+        ]
+    },
+    {
+        "name": "LastIndexOf(string, int)",
+        "trans": [
+            "返回指定字符串在此字符串中最后一次出现的位置，搜索范围从指定的索引位置开始"
+        ]
+    },
+    {
+        "name": "LastIndexOf(string, int, int)",
+        "trans": [
+            "返回指定字符串在此字符串中最后一次出现的位置，搜索范围从指定的索引开始，并且包括指定数量的字符"
+        ]
+    },
+    {
+        "name": "LastIndexOfAny(char[])",
+        "trans": [
+            "返回指定数组中的任何一个字符在此字符串中最后一次出现的位置"
+        ]
+    },
+    {
+        "name": "LastIndexOfAny(char[], int)",
+        "trans": [
+            "返回指定数组中的任何一个字符在此字符串中最后一次出现的位置，搜索范围从指定的索引位置开始"
+        ]
+    },
+    {
+        "name": "LastIndexOfAny(char[], int, int)",
+        "trans": [
+            "返回指定数组中的任何一个字符在此字符串中最后一次出现的位置，搜索范围从指定的索引开始，并且包括指定数量的字符"
+        ]
+    },
+    {
+        "name": "Normalize()",
+        "trans": [
+            "将此字符串转换为 Unicode 规范化形式 C"
+        ]
+    },
+    {
+        "name": "PadLeft(int)",
+        "trans": [
+            "将此字符串的开头填充到指定的总宽度，以便达到指定的对齐要求"
+        ]
+    },
+    {
+        "name": "PadLeft(int, char)",
+        "trans": [
+            "将此字符串的开头填充到指定的总宽度，以便达到指定的对齐要求，使用指定的填充字符填充"
+        ]
+    },
+    {
+        "name": "PadRight(int)",
+        "trans": [
+            "将此字符串的结尾填充到指定的总宽度，以便达到指定的对齐要求"
+        ]
+    },
+    {
+        "name": "PadRight(int, char)",
+        "trans": [
+            "将此字符串的结尾填充到指定的总宽度，以便达到指定的对齐要求，使用指定的填充字符填充"
+        ]
+    },
+    {
+        "name": "Remove(int)",
+        "trans": [
+            "返回一个新字符串，其中从此实例中的指定位置开始的所有字符都已被删除"
+        ]
+    },
+    {
+        "name": "Remove(int, int)",
+        "trans": [
+            "返回一个新字符串，其中从此实例中的指定位置开始且包括指定长度的字符都已被删除"
+        ]
+    },
+    {
+        "name": "Replace(char, char)",
+        "trans": [
+            "返回一个新字符串，其中所有出现的指定字符都被替换为另一个指定的字符"
+        ]
+    },
+    {
+        "name": "Replace(string, string)",
+        "trans": [
+            "返回一个新字符串，其中所有匹配的指定字符串都被另一个指定的字符串替换"
+        ]
+    },
+    {
+        "name": "Split(char[])",
+        "trans": [
+            "使用指定的 Unicode 字符数组中的任何字符作为分隔符，将字符串分割为子字符串数组"
+        ]
+    },
+    {
+        "name": "Split(char[], int)",
+        "trans": [
+            "使用指定的 Unicode 字符数组中的任何字符作为分隔符，将字符串分割为子字符串数组，最多返回指定数目的子字符串"
+        ]
+    },
+    {
+        "name": "Split(char[], StringSplitOptions)",
+        "trans": [
+            "使用指定的 Unicode 字符数组中的任何字符作为分隔符，将字符串分割为子字符串数组，可选择是否移除空白项"
+        ]
+    },
+    {
+        "name": "Split(string[], StringSplitOptions)",
+        "trans": [
+            "使用指定的字符串数组中的任何字符串作为分隔符，将字符串分割为子字符串数组，可选择是否移除空白项"
+        ]
+    },
+    {
+        "name": "StartsWith(string)",
+        "trans": [
+            "确定此字符串实例的开头是否与指定的字符串匹配"
+        ]
+    },
+    {
+        "name": "Substring(int)",
+        "trans": [
+            "返回一个新字符串，其中包含此实例中从指定位置开始的所有字符"
+        ]
+    },
+    {
+        "name": "Substring(int, int)",
+        "trans": [
+            "返回一个新字符串，其中包含此实例中从指定位置开始的指定长度的字符"
+        ]
+    },
+    {
+        "name": "ToCharArray()",
+        "trans": [
+            "将此字符串转换为一个字符数组"
+        ]
+    },
+    {
+        "name": "ToCharArray(int, int)",
+        "trans": [
+            "将此实例中的指定子字符串中的字符复制到 Unicode 字符数组中"
+        ]
+    },
+    {
+        "name": "ToLower()",
+        "trans": [
+            "将此字符串转换为小写"
+        ]
+    },
+    {
+        "name": "ToLowerInvariant()",
+        "trans": [
+            "使用固定区域性特定的大小写规则，将字符串转换为小写"
+        ]
+    },
+    {
+        "name": "ToString()",
+        "trans": [
+            "返回此实例的字符串表示形式"
+        ]
+    },
+    {
+        "name": "ToUpper()",
+        "trans": [
+            "将此字符串转换为大写"
+        ]
+    },
+    {
+        "name": "ToUpperInvariant()",
+        "trans": [
+            "使用固定区域性特定的大小写规则，将字符串转换为大写"
+        ]
+    },
+    {
+        "name": "Trim()",
+        "trans": [
+            "删除此字符串中指定的一组字符的所有前导和尾随出现"
+        ]
+    },
+    {
+        "name": "Trim(char[])",
+        "trans": [
+            "删除此字符串中指定的一组字符的所有前导和尾随出现"
+        ]
+    },
+    {
+        "name": "TrimEnd()",
+        "trans": [
+            "删除此字符串末尾处的所有空白字符"
+        ]
+    },
+    {
+        "name": "TrimEnd(char[])",
+        "trans": [
+            "删除此字符串末尾处的所有指定字符"
+        ]
+    },
+    {
+        "name": "TrimStart()",
+        "trans": [
+            "删除此字符串开始处的所有空白字符"
+        ]
+    },
+    {
+        "name": "TrimStart(char[])",
+        "trans": [
+            "删除此字符串开始处的所有指定字符"
+        ]
+    }
+]

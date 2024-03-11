@@ -1,0 +1,470 @@
+[
+    {
+        "name": "abstract",
+        "trans": [
+            "abstract:声明抽象类或抽象成员，用于定义不能直接实例化的类或不能直接访问的成员"
+        ]
+    },
+    {
+        "name": "as",
+        "trans": [
+            "as:类型转换关键字，用于将对象转换为另一种类型，如果转换失败，则返回 null"
+        ]
+    },
+    {
+        "name": "base",
+        "trans": [
+            "base:表示基类的关键字，用于访问基类的成员或调用基类的构造函数"
+        ]
+    },
+    {
+        "name": "bool",
+        "trans": [
+            "bool:表示布尔型数据类型，只能存储 true 或 false"
+        ]
+    },
+    {
+        "name": "break",
+        "trans": [
+            "break:用于跳出循环或 switch 语句"
+        ]
+    },
+    {
+        "name": "byte",
+        "trans": [
+            "byte:表示 8 位无符号整数类型，范围为 0 到 255"
+        ]
+    },
+    {
+        "name": "case",
+        "trans": [
+            "case:switch 语句中的分支标签"
+        ]
+    },
+    {
+        "name": "catch",
+        "trans": [
+            "catch:用于捕获异常的关键字，在 try-catch 块中使用"
+        ]
+    },
+    {
+        "name": "char",
+        "trans": [
+            "char:表示 16 位 Unicode 字符"
+        ]
+    },
+    {
+        "name": "checked",
+        "trans": [
+            "checked:用于启用整数算术的溢出检查"
+        ]
+    },
+    {
+        "name": "class",
+        "trans": [
+            "class:声明类的关键字，用于定义对象的蓝图"
+        ]
+    },
+    {
+        "name": "const",
+        "trans": [
+            "const:声明常量的关键字，表示其值在编译时是固定的"
+        ]
+    },
+    {
+        "name": "continue",
+        "trans": [
+            "continue:用于终止当前循环迭代并继续下一次迭代"
+        ]
+    },
+    {
+        "name": "decimal",
+        "trans": [
+            "decimal:表示高精度的十进制数"
+        ]
+    },
+    {
+        "name": "default",
+        "trans": [
+            "default:switch 语句中的默认标签"
+        ]
+    },
+    {
+        "name": "delegate",
+        "trans": [
+            "delegate:用于声明委托类型"
+        ]
+    },
+    {
+        "name": "do",
+        "trans": [
+            "do:表示 do-while 循环的关键字"
+        ]
+    },
+    {
+        "name": "double",
+        "trans": [
+            "double:表示双精度浮点数类型"
+        ]
+    },
+    {
+        "name": "else",
+        "trans": [
+            "else:表示 if-else 语句中的否定条件"
+        ]
+    },
+    {
+        "name": "enum",
+        "trans": [
+            "enum:用于声明枚举类型"
+        ]
+    },
+    {
+        "name": "event",
+        "trans": [
+            "event:声明事件的关键字，用于在类或结构中定义事件成员"
+        ]
+    },
+    {
+        "name": "explicit",
+        "trans": [
+            "explicit:声明显式转换运算符的关键字"
+        ]
+    },
+    {
+        "name": "extern",
+        "trans": [
+            "extern:声明外部方法、字段或事件的关键字，与外部 C/C++ 代码进行交互"
+        ]
+    },
+    {
+        "name": "false",
+        "trans": [
+            "false:表示布尔型的 false 值"
+        ]
+    },
+    {
+        "name": "finally",
+        "trans": [
+            "finally:在异常处理中使用的关键字，表示无论是否发生异常，都会执行的代码块"
+        ]
+    },
+    {
+        "name": "fixed",
+        "trans": [
+            "fixed:用于固定托管对象的关键字，通常与指针相关"
+        ]
+    },
+    {
+        "name": "float",
+        "trans": [
+            "float:表示单精度浮点数类型"
+        ]
+    },
+    {
+        "name": "for",
+        "trans": [
+            "for:表示 for 循环的关键字"
+        ]
+    },
+    {
+        "name": "foreach",
+        "trans": [
+            "foreach:用于循环访问集合或数组中的元素"
+        ]
+    },
+    {
+        "name": "goto",
+        "trans": [
+            "goto:用于无条件转移到代码中的另一个标签"
+        ]
+    },
+    {
+        "name": "if",
+        "trans": [
+            "if:表示条件语句中的条件分支"
+        ]
+    },
+    {
+        "name": "implicit",
+        "trans": [
+            "implicit:声明隐式转换运算符的关键字"
+        ]
+    },
+    {
+        "name": "in",
+        "trans": [
+            "in:在 foreach 循环中指定集合的关键字"
+        ]
+    },
+    {
+        "name": "int",
+        "trans": [
+            "int:表示整数类型"
+        ]
+    },
+    {
+        "name": "interface",
+        "trans": [
+            "interface:声明接口的关键字，用于定义类似于抽象类的契约"
+        ]
+    },
+    {
+        "name": "internal",
+        "trans": [
+            "internal:表示访问级别为程序集的关键字，只能在当前程序集中访问"
+        ]
+    },
+    {
+        "name": "is",
+        "trans": [
+            "is:用于检查对象是否为特定类型的关键字"
+        ]
+    },
+    {
+        "name": "lock",
+        "trans": [
+            "lock:用于同步访问共享资源的关键字"
+        ]
+    },
+    {
+        "name": "long",
+        "trans": [
+            "long:表示长整数类型"
+        ]
+    },
+    {
+        "name": "namespace",
+        "trans": [
+            "namespace:声明命名空间的关键字，用于组织和管理代码"
+        ]
+    },
+    {
+        "name": "new",
+        "trans": [
+            "new:用于创建新对象的关键字，也可用于隐藏基类中的成员"
+        ]
+    },
+    {
+        "name": "null",
+        "trans": [
+            "null:表示空引用的关键字"
+        ]
+    },
+    {
+        "name": "object",
+        "trans": [
+            "object:表示对象类型，是所有其他类型的基类"
+        ]
+    },
+    {
+        "name": "operator",
+        "trans": [
+            "operator:声明运算符重载的关键字"
+        ]
+    },
+    {
+        "name": "out",
+        "trans": [
+            "out:用于参数声明中，表示参数是输出参数"
+        ]
+    },
+    {
+        "name": "override",
+        "trans": [
+            "override:用于重写基类中的虚成员"
+        ]
+    },
+    {
+        "name": "params",
+        "trans": [
+            "params:用于指定函数参数的可变数量"
+        ]
+    },
+    {
+        "name": "private",
+        "trans": [
+            "private:表示访问级别为私有的关键字，只能在声明它的类或结构中访问"
+        ]
+    },
+    {
+        "name": "protected",
+        "trans": [
+            "protected:表示访问级别为受保护的关键字，只能在声明它的类或派生类中访问"
+        ]
+    },
+    {
+        "name": "public",
+        "trans": [
+            "public:表示访问级别为公共的关键字，可以在任何地方访问"
+        ]
+    },
+    {
+        "name": "readonly",
+        "trans": [
+            "readonly:声明只读字段的关键字，只能在声明时或构造函数中初始化"
+        ]
+    },
+    {
+        "name": "ref",
+        "trans": [
+            "ref:用于传递参数的引用的关键字"
+        ]
+    },
+    {
+        "name": "return",
+        "trans": [
+            "return:用于从方法中返回值的关键字"
+        ]
+    },
+    {
+        "name": "sbyte",
+        "trans": [
+            "sbyte:表示 8 位有符号整数类型"
+        ]
+    },
+    {
+        "name": "sealed",
+        "trans": [
+            "sealed:声明密封类的关键字，防止其他类继承该类"
+        ]
+    },
+    {
+        "name": "short",
+        "trans": [
+            "short:表示短整数类型"
+        ]
+    },
+    {
+        "name": "sizeof",
+        "trans": [
+            "sizeof:用于获取未托管类型的大小"
+        ]
+    },
+    {
+        "name": "stackalloc",
+        "trans": [
+            "stackalloc:在堆栈上分配内存的关键字"
+        ]
+    },
+    {
+        "name": "static",
+        "trans": [
+            "static:表示静态成员的关键字，静态成员属于类而不是实例"
+        ]
+    },
+    {
+        "name": "string",
+        "trans": [
+            "string:表示字符串类型"
+        ]
+    },
+    {
+        "name": "struct",
+        "trans": [
+            "struct:声明结构的关键字，结构是值类型"
+        ]
+    },
+    {
+        "name": "switch",
+        "trans": [
+            "switch:表示 switch 语句的关键字，用于多路分支选择"
+        ]
+    },
+    {
+        "name": "this",
+        "trans": [
+            "this:表示当前实例的关键字"
+        ]
+    },
+    {
+        "name": "throw",
+        "trans": [
+            "throw:用于抛出异常的关键字"
+        ]
+    },
+    {
+        "name": "true",
+        "trans": [
+            "true:表示布尔型的 true 值"
+        ]
+    },
+    {
+        "name": "try",
+        "trans": [
+            "try:用于定义可能会引发异常的代码块的关键字"
+        ]
+    },
+    {
+        "name": "typeof",
+        "trans": [
+            "typeof:用于获取类型对象的关键字"
+        ]
+    },
+    {
+        "name": "uint",
+        "trans": [
+            "uint:表示 32 位无符号整数类型"
+        ]
+    },
+    {
+        "name": "ulong",
+        "trans": [
+            "ulong:表示 64 位无符号整数类型"
+        ]
+    },
+    {
+        "name": "unchecked",
+        "trans": [
+            "unchecked:用于禁用整数算术的溢出检查"
+        ]
+    },
+    {
+        "name": "unsafe",
+        "trans": [
+            "unsafe:声明不安全代码块的关键字，用于使用指针和执行不安全操作"
+        ]
+    },
+    {
+        "name": "ushort",
+        "trans": [
+            "ushort:表示 16 位无符号整数类型"
+        ]
+    },
+    {
+        "name": "using",
+        "trans": [
+            "using:声明命名空间或引用 IDisposable 对象的关键字，用于资源管理和代码组织"
+        ]
+    },
+    {
+        "name": "var",
+        "trans": [
+            "var:用于声明隐式类型的关键字，由编译器推断类型"
+        ]
+    },
+    {
+        "name": "virtual",
+        "trans": [
+            "virtual:声明虚成员的关键字，允许在派生类中重写"
+        ]
+    },
+    {
+        "name": "void",
+        "trans": [
+            "void:表示方法不返回任何值的关键字"
+        ]
+    },
+    {
+        "name": "volatile",
+        "trans": [
+            "volatile:声明字段可能被多个线程同时访问的关键字，用于多线程编程"
+        ]
+    },
+    {
+        "name": "while",
+        "trans": [
+            "while:表示 while 循环的关键字"
+        ]
+    }
+]
