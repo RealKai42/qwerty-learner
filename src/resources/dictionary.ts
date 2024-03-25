@@ -548,6 +548,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'GRE_ciyileiji',
+    name: 'GRE词以类记',
+    description: 'GRE词以类记',
+    category: '国际考试',
+    tags: ['GRE'],
+    url: '/dicts/gre-ciyileiji.json',
+    length: 8355,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'IELTS_tinglichangjing',
     name: '雅思听力场景词汇',
     description: '雅思听力场景词汇',
