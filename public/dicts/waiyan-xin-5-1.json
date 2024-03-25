@@ -1,0 +1,914 @@
+[
+  {
+    "name": "met",
+    "trans": [
+      "adv.(meet的过去式）碰上，遇见"
+    ]
+  },
+  {
+    "name": "above",
+    "trans": [
+      "adv.在......上方，在......之上"
+    ]
+  },
+  {
+    "name": "ground",
+    "trans": [
+      "adv.地面"
+    ]
+  },
+  {
+    "name": "those",
+    "trans": [
+      "adv.那些"
+    ]
+  },
+  {
+    "name": "ice cream",
+    "trans": [
+      "adv.冰激凌"
+    ]
+  },
+  {
+    "name": "us",
+    "trans": [
+      "adv.（宾格）我们"
+    ]
+  },
+  {
+    "name": "finish",
+    "trans": [
+      "adv.吃完"
+    ]
+  },
+  {
+    "name": "wait",
+    "trans": [
+      "adv.等待，等候"
+    ]
+  },
+  {
+    "name": "hurry",
+    "trans": [
+      "adv.赶紧，匆忙"
+    ]
+  },
+  {
+    "name": "hurry up",
+    "trans": [
+      "adv.赶紧，赶快"
+    ]
+  },
+  {
+    "name": "dropped",
+    "trans": [
+      "adv.（drop的过去式）（无意中）使掉落"
+    ]
+  },
+  {
+    "name": "send",
+    "trans": [
+      "adv.发送，寄"
+    ]
+  },
+  {
+    "name": "email",
+    "trans": [
+      "adv.电子邮件"
+    ]
+  },
+  {
+    "name": "ran",
+    "trans": [
+      "adv.（run的过去式）跑"
+    ]
+  },
+  {
+    "name": "love",
+    "trans": [
+      "adv.爱你的"
+    ]
+  },
+  {
+    "name": "list",
+    "trans": [
+      "adv.清单"
+    ]
+  },
+  {
+    "name": "er",
+    "trans": [
+      "adv.哦，嗯，呃"
+    ]
+  },
+  {
+    "name": "need",
+    "trans": [
+      "adv.需要"
+    ]
+  },
+  {
+    "name": "first",
+    "trans": [
+      "adv.首先，第一；最先的，第一（次）的"
+    ]
+  },
+  {
+    "name": "can",
+    "trans": [
+      "adv.可以"
+    ]
+  },
+  {
+    "name": "lost",
+    "trans": [
+      "adv.(lose的过去式）丢失"
+    ]
+  },
+  {
+    "name": "how much",
+    "trans": [
+      "adv.多少（用于不可数名词）"
+    ]
+  },
+  {
+    "name": "cheese",
+    "trans": [
+      "adv.奶酪"
+    ]
+  },
+  {
+    "name": "any",
+    "trans": [
+      "adv.一些，一点，若干"
+    ]
+  },
+  {
+    "name": "use",
+    "trans": [
+      "adv.使用"
+    ]
+  },
+  {
+    "name": "over there",
+    "trans": [
+      "adv.在那边"
+    ]
+  },
+  {
+    "name": "bottle",
+    "trans": [
+      "adv.瓶子；一瓶的容量"
+    ]
+  },
+  {
+    "name": "half",
+    "trans": [
+      "adv.一半"
+    ]
+  },
+  {
+    "name": "kilo",
+    "trans": [
+      "adv.千克，公斤"
+    ]
+  },
+  {
+    "name": "a lot of",
+    "trans": [
+      "adv.许多的"
+    ]
+  },
+  {
+    "name": "weekend",
+    "trans": [
+      "adv.周末"
+    ]
+  },
+  {
+    "name": "place",
+    "trans": [
+      "adv.地方"
+    ]
+  },
+  {
+    "name": "British",
+    "trans": [
+      "adv.英国的；英国人的，英国人"
+    ]
+  },
+  {
+    "name": "museum",
+    "trans": [
+      "adv.博物馆"
+    ]
+  },
+  {
+    "name": "how",
+    "trans": [
+      "adv.如何，怎样"
+    ]
+  },
+  {
+    "name": "best",
+    "trans": [
+      "adv.最"
+    ]
+  },
+  {
+    "name": "took",
+    "trans": [
+      "adv.（take的过去式）搭乘"
+    ]
+  },
+  {
+    "name": "trip",
+    "trans": [
+      "adv.旅行，旅程"
+    ]
+  },
+  {
+    "name": "along",
+    "trans": [
+      "adv.沿着"
+    ]
+  },
+  {
+    "name": "river",
+    "trans": [
+      "adv.河，江"
+    ]
+  },
+  {
+    "name": "hour",
+    "trans": [
+      "adv.小时"
+    ]
+  },
+  {
+    "name": "twenty",
+    "trans": [
+      "adv.二十"
+    ]
+  },
+  {
+    "name": "minute",
+    "trans": [
+      "adv.分钟"
+    ]
+  },
+  {
+    "name": "of",
+    "trans": [
+      "adv.关于......的，表明......的"
+    ]
+  },
+  {
+    "name": "wall",
+    "trans": [
+      "adv.墙，城墙"
+    ]
+  },
+  {
+    "name": "arrive",
+    "trans": [
+      "adv.到达"
+    ]
+  },
+  {
+    "name": "for",
+    "trans": [
+      "adv.达，计"
+    ]
+  },
+  {
+    "name": "mountain",
+    "trans": [
+      "adv.山"
+    ]
+  },
+  {
+    "name": "with",
+    "trans": [
+      "adv.拥有，具有"
+    ]
+  },
+  {
+    "name": "plant",
+    "trans": [
+      "adv.植物"
+    ]
+  },
+  {
+    "name": "pair",
+    "trans": [
+      "adv.一套，一双，一副"
+    ]
+  },
+  {
+    "name": "shorts",
+    "trans": [
+      "adv.（常复）短裤"
+    ]
+  },
+  {
+    "name": "argue",
+    "trans": [
+      "adv.争论，争吵"
+    ]
+  },
+  {
+    "name": "matter",
+    "trans": [
+      "adv.问题，麻烦"
+    ]
+  },
+  {
+    "name": "What's the matter",
+    "trans": [
+      "adv.怎么啦？"
+    ]
+  },
+  {
+    "name": "took",
+    "trans": [
+      "adv.（take的过去式）拿（走），取（走）"
+    ]
+  },
+  {
+    "name": "wear",
+    "trans": [
+      "adv.穿"
+    ]
+  },
+  {
+    "name": "That's OK",
+    "trans": [
+      "adv.没关系"
+    ]
+  },
+  {
+    "name": "sports",
+    "trans": [
+      "adv.体育运动，体育运动用的"
+    ]
+  },
+  {
+    "name": "hey",
+    "trans": [
+      "adv.嘿，喂"
+    ]
+  },
+  {
+    "name": "nineteen",
+    "trans": [
+      "adv.十九"
+    ]
+  },
+  {
+    "name": "crayon",
+    "trans": [
+      "adv.蜡笔"
+    ]
+  },
+  {
+    "name": "fifteen",
+    "trans": [
+      "adv.十五"
+    ]
+  },
+  {
+    "name": "begin",
+    "trans": [
+      "adv.开始"
+    ]
+  },
+  {
+    "name": "give out",
+    "trans": [
+      "adv.分发"
+    ]
+  },
+  {
+    "name": "all right",
+    "trans": [
+      "adv.好，行"
+    ]
+  },
+  {
+    "name": "thirteen",
+    "trans": [
+      "adv.十三"
+    ]
+  },
+  {
+    "name": "fourteen",
+    "trans": [
+      "adv.十四"
+    ]
+  },
+  {
+    "name": "sixteen",
+    "trans": [
+      "adv.十六"
+    ]
+  },
+  {
+    "name": "seventeen",
+    "trans": [
+      "adv.十七"
+    ]
+  },
+  {
+    "name": "eighteen",
+    "trans": [
+      "adv.十八"
+    ]
+  },
+  {
+    "name": "floor",
+    "trans": [
+      "adv.地面，地板"
+    ]
+  },
+  {
+    "name": "forty",
+    "trans": [
+      "adv.四十"
+    ]
+  },
+  {
+    "name": "number",
+    "trans": [
+      "adv.数字"
+    ]
+  },
+  {
+    "name": "thirty",
+    "trans": [
+      "adv.三十"
+    ]
+  },
+  {
+    "name": "fifty",
+    "trans": [
+      "adv.五十"
+    ]
+  },
+  {
+    "name": "sixty",
+    "trans": [
+      "adv.六十"
+    ]
+  },
+  {
+    "name": "seventy",
+    "trans": [
+      "adv.七十"
+    ]
+  },
+  {
+    "name": "eighty",
+    "trans": [
+      "adv.八十"
+    ]
+  },
+  {
+    "name": "ninety",
+    "trans": [
+      "adv.九十"
+    ]
+  },
+  {
+    "name": "happily",
+    "trans": [
+      "adv.幸福地，愉快地"
+    ]
+  },
+  {
+    "name": "many",
+    "trans": [
+      "adv.许多，很多"
+    ]
+  },
+  {
+    "name": "well",
+    "trans": [
+      "adv.好，熟练地"
+    ]
+  },
+  {
+    "name": "team",
+    "trans": [
+      "adv.运动队，球队"
+    ]
+  },
+  {
+    "name": "really",
+    "trans": [
+      "adv.很，非常"
+    ]
+  },
+  {
+    "name": "good at",
+    "trans": [
+      "adv.擅长"
+    ]
+  },
+  {
+    "name": "catch",
+    "trans": [
+      "adv.抓住，接住"
+    ]
+  },
+  {
+    "name": "goalkeeper",
+    "trans": [
+      "adv.守门员"
+    ]
+  },
+  {
+    "name": "think",
+    "trans": [
+      "adv.想，认为"
+    ]
+  },
+  {
+    "name": "fantastic",
+    "trans": [
+      "adv.极好的"
+    ]
+  },
+  {
+    "name": "fan",
+    "trans": [
+      "adv.狂热仰慕者，迷"
+    ]
+  },
+  {
+    "name": "past",
+    "trans": [
+      "adv.过去"
+    ]
+  },
+  {
+    "name": "swan",
+    "trans": [
+      "adv.（swim的过去式）游泳"
+    ]
+  },
+  {
+    "name": "slow",
+    "trans": [
+      "adv.慢的"
+    ]
+  },
+  {
+    "name": "healthy",
+    "trans": [
+      "adv.健康的"
+    ]
+  },
+  {
+    "name": "a lot",
+    "trans": [
+      "adv.许多，大量"
+    ]
+  },
+  {
+    "name": "useful",
+    "trans": [
+      "adv.有用的"
+    ]
+  },
+  {
+    "name": "show",
+    "trans": [
+      "adv.(电视或广播）节目"
+    ]
+  },
+  {
+    "name": "presenter",
+    "trans": [
+      "adv.(电视或广播节目的）主持人"
+    ]
+  },
+  {
+    "name": "blind",
+    "trans": [
+      "adv.失明的，瞎的"
+    ]
+  },
+  {
+    "name": "deaf",
+    "trans": [
+      "adv.失聪的，聋的"
+    ]
+  },
+  {
+    "name": "hear",
+    "trans": [
+      "adv.听到"
+    ]
+  },
+  {
+    "name": "her",
+    "trans": [
+      "adv.（宾格）她"
+    ]
+  },
+  {
+    "name": "fire",
+    "trans": [
+      "adv.火灾，失火"
+    ]
+  },
+  {
+    "name": "firefighter",
+    "trans": [
+      "adv.消防队员"
+    ]
+  },
+  {
+    "name": "hot dog",
+    "trans": [
+      "adv.热狗"
+    ]
+  },
+  {
+    "name": "sausage",
+    "trans": [
+      "adv.香肠"
+    ]
+  },
+  {
+    "name": "kind",
+    "trans": [
+      "adv.有好的，善意的，体贴的"
+    ]
+  },
+  {
+    "name": "time",
+    "trans": [
+      "adv.时刻，时候，时间"
+    ]
+  },
+  {
+    "name": "school",
+    "trans": [
+      "adv.学校"
+    ]
+  },
+  {
+    "name": "start",
+    "trans": [
+      "adv.开始，发生"
+    ]
+  },
+  {
+    "name": "past",
+    "trans": [
+      "adv.晚于，过（几点）"
+    ]
+  },
+  {
+    "name": "late",
+    "trans": [
+      "adv.迟到的"
+    ]
+  },
+  {
+    "name": "go to bed",
+    "trans": [
+      "adv.上床睡觉"
+    ]
+  },
+  {
+    "name": "exercise",
+    "trans": [
+      "adv.运动，锻炼"
+    ]
+  },
+  {
+    "name": "playground",
+    "trans": [
+      "adv.操场"
+    ]
+  },
+  {
+    "name": "before",
+    "trans": [
+      "adv.在......之前"
+    ]
+  },
+  {
+    "name": "join",
+    "trans": [
+      "adv.加入，参加"
+    ]
+  },
+  {
+    "name": "Skipping rope",
+    "trans": [
+      "adv.跳绳"
+    ]
+  },
+  {
+    "name": "coffee",
+    "trans": [
+      "adv.咖啡"
+    ]
+  },
+  {
+    "name": "tea",
+    "trans": [
+      "adv.茶"
+    ]
+  },
+  {
+    "name": "always",
+    "trans": [
+      "adv.总是，一直"
+    ]
+  },
+  {
+    "name": "bell",
+    "trans": [
+      "adv.钟，铃"
+    ]
+  },
+  {
+    "name": "rang",
+    "trans": [
+      "adv.(ring)过去式鸣，响"
+    ]
+  },
+  {
+    "name": "into",
+    "trans": [
+      "adv.进入......里面"
+    ]
+  },
+  {
+    "name": "feel",
+    "trans": [
+      "adv.感觉，觉得"
+    ]
+  },
+  {
+    "name": "bored",
+    "trans": [
+      "adv.厌烦的，厌倦的"
+    ]
+  },
+  {
+    "name": "sad",
+    "trans": [
+      "adv.伤心的，难过的"
+    ]
+  },
+  {
+    "name": "woof",
+    "trans": [
+      "adv.（狗发出的）吠声"
+    ]
+  },
+  {
+    "name": "miss",
+    "trans": [
+      "adv.想念"
+    ]
+  },
+  {
+    "name": "angry",
+    "trans": [
+      "adv.生气，愤怒的"
+    ]
+  },
+  {
+    "name": "ill",
+    "trans": [
+      "adv.有病的，不健康的"
+    ]
+  },
+  {
+    "name": "told",
+    "trans": [
+      "adv.(tell的过去式）告诉"
+    ]
+  },
+  {
+    "name": "better",
+    "trans": [
+      "adv.痊愈的，恢复健康的"
+    ]
+  },
+  {
+    "name": "farm",
+    "trans": [
+      "adv.农场"
+    ]
+  },
+  {
+    "name": "tired",
+    "trans": [
+      "adv.累的，疲劳的 "
+    ]
+  },
+  {
+    "name": "won",
+    "trans": [
+      "adv.（win的过去式）赢，获胜"
+    ]
+  },
+  {
+    "name": "ruler",
+    "trans": [
+      "adv.直尺"
+    ]
+  },
+  {
+    "name": "smell",
+    "trans": [
+      "adv.闻出，嗅出"
+    ]
+  },
+  {
+    "name": "kitchen",
+    "trans": [
+      "adv.厨房"
+    ]
+  },
+  {
+    "name": "toilet",
+    "trans": [
+      "adv.厕所，卫生间"
+    ]
+  },
+  {
+    "name": "room",
+    "trans": [
+      "adv.房间"
+    ]
+  },
+  {
+    "name": "living room",
+    "trans": [
+      "adv.起居室，客厅"
+    ]
+  },
+  {
+    "name": "hide-and-seek",
+    "trans": [
+      "adv.捉迷藏"
+    ]
+  },
+  {
+    "name": "now",
+    "trans": [
+      "adv.好，哦"
+    ]
+  },
+  {
+    "name": "last",
+    "trans": [
+      "adv.最后"
+    ]
+  },
+  {
+    "name": "hide",
+    "trans": [
+      "adv.躲，躲藏 "
+    ]
+  },
+  {
+    "name": "sofa",
+    "trans": [
+      "adv.沙发"
+    ]
+  },
+  {
+    "name": "shout",
+    "trans": [
+      "adv.呼喊，大叫"
+    ]
+  },
+  {
+    "name": "grass",
+    "trans": [
+      "adv.草，草地"
+    ]
+  },
+  {
+    "name": "baby",
+    "trans": [
+      "adv.婴儿"
+    ]
+  },
+  {
+    "name": "dangerous",
+    "trans": [
+      "adv.危险的"
+    ]
+  }
+]

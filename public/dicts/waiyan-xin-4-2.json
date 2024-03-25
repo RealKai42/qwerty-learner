@@ -1,0 +1,806 @@
+[
+  {
+    "name": "nice",
+    "trans": [
+      "adv.友好的，亲切的，讨人喜欢的"
+    ]
+  },
+  {
+    "name": "clever",
+    "trans": [
+      "adv.聪明的"
+    ]
+  },
+  {
+    "name": "naughy",
+    "trans": [
+      "adv.淘气的"
+    ]
+  },
+  {
+    "name": "a bit",
+    "trans": [
+      "adv.稍微，有点"
+    ]
+  },
+  {
+    "name": "shy",
+    "trans": [
+      "adv.害羞的"
+    ]
+  },
+  {
+    "name": "answer",
+    "trans": [
+      "adv.接（电话）"
+    ]
+  },
+  {
+    "name": "call",
+    "trans": [
+      "adv.电话；（给......)打电话"
+    ]
+  },
+  {
+    "name": "bad",
+    "trans": [
+      "adv.不好的，坏的"
+    ]
+  },
+  {
+    "name": "cool",
+    "trans": [
+      "adv.酷的"
+    ]
+  },
+  {
+    "name": "aunt",
+    "trans": [
+      "adv.姨母；姑母；舅母；伯母；婶母"
+    ]
+  },
+  {
+    "name": "uncle",
+    "trans": [
+      "adv.伯父；叔父；舅父；姑父；姨父"
+    ]
+  },
+  {
+    "name": "big",
+    "trans": [
+      "adv.年龄较大的"
+    ]
+  },
+  {
+    "name": "little",
+    "trans": [
+      "adv.幼小的，年幼的"
+    ]
+  },
+  {
+    "name": "cute",
+    "trans": [
+      "adv.可爱的"
+    ]
+  },
+  {
+    "name": "city",
+    "trans": [
+      "adv.城市"
+    ]
+  },
+  {
+    "name": "ship",
+    "trans": [
+      "adv.船"
+    ]
+  },
+  {
+    "name": "beautiful",
+    "trans": [
+      "adv.美丽的，"
+    ]
+  },
+  {
+    "name": "whose",
+    "trans": [
+      "adv.谁的"
+    ]
+  },
+  {
+    "name": "queen",
+    "trans": [
+      "adv.女王"
+    ]
+  },
+  {
+    "name": "close",
+    "trans": [
+      "adv.近的，接近的"
+    ]
+  },
+  {
+    "name": "old",
+    "trans": [
+      "adv.年代久的，古老的"
+    ]
+  },
+  {
+    "name": "famous",
+    "trans": [
+      "adv.著名的"
+    ]
+  },
+  {
+    "name": "robot",
+    "trans": [
+      "adv.机器人"
+    ]
+  },
+  {
+    "name": "will",
+    "trans": [
+      "adv.将，将会"
+    ]
+  },
+  {
+    "name": "everything",
+    "trans": [
+      "adv.所有事情"
+    ]
+  },
+  {
+    "name": "one day",
+    "trans": [
+      "（将来）有一天"
+    ]
+  },
+  {
+    "name": "housework",
+    "trans": [
+      "adv.家务活"
+    ]
+  },
+  {
+    "name": "learn",
+    "trans": [
+      "adv.学习"
+    ]
+  },
+  {
+    "name": "our",
+    "trans": [
+      "adv.我们的"
+    ]
+  },
+  {
+    "name": "homework",
+    "trans": [
+      "adv.家庭作业"
+    ]
+  },
+  {
+    "name": "won't=will not",
+    "trans": [
+      "adv.将不会"
+    ]
+  },
+  {
+    "name": "Tuesday",
+    "trans": [
+      "adv.星期二"
+    ]
+  },
+  {
+    "name": "Wednesday",
+    "trans": [
+      "adv.星期三"
+    ]
+  },
+  {
+    "name": "Thursday",
+    "trans": [
+      "adv.星期四"
+    ]
+  },
+  {
+    "name": "Friday",
+    "trans": [
+      "adv.星期五"
+    ]
+  },
+  {
+    "name": "have",
+    "trans": [
+      "adv.有，拥有"
+    ]
+  },
+  {
+    "name": "next",
+    "trans": [
+      "adv.下一个的"
+    ]
+  },
+  {
+    "name": "week",
+    "trans": [
+      "adv.星期，周"
+    ]
+  },
+  {
+    "name": "holiday",
+    "trans": [
+      "adv.假期"
+    ]
+  },
+  {
+    "name": "take",
+    "trans": [
+      "adv.带，拿"
+    ]
+  },
+  {
+    "name": "fly",
+    "trans": [
+      "adv.飞"
+    ]
+  },
+  {
+    "name": "picnic",
+    "trans": [
+      "adv.野餐"
+    ]
+  },
+  {
+    "name": "great",
+    "trans": [
+      "adv.太好了好极了"
+    ]
+  },
+  {
+    "name": "why",
+    "trans": [
+      "adv.为什么"
+    ]
+  },
+  {
+    "name": "why not？",
+    "trans": [
+      "adv.为什么不呢？"
+    ]
+  },
+  {
+    "name": "because",
+    "trans": [
+      "adv.因为"
+    ]
+  },
+  {
+    "name": "so",
+    "trans": [
+      "adv.所以"
+    ]
+  },
+  {
+    "name": "cloudy",
+    "trans": [
+      "adv.多云的"
+    ]
+  },
+  {
+    "name": "weather",
+    "trans": [
+      "adv.天气"
+    ]
+  },
+  {
+    "name": "was",
+    "trans": [
+      "adv.（am,is的过去式）是"
+    ]
+  },
+  {
+    "name": "then",
+    "trans": [
+      "adv.当时，那是"
+    ]
+  },
+  {
+    "name": "grandparent",
+    "trans": [
+      "adv.祖父；祖母，外祖父；外祖母"
+    ]
+  },
+  {
+    "name": "were",
+    "trans": [
+      "adv.（are的过去式）是"
+    ]
+  },
+  {
+    "name": "young",
+    "trans": [
+      "adv.年轻的"
+    ]
+  },
+  {
+    "name": "hair",
+    "trans": [
+      "adv.头发"
+    ]
+  },
+  {
+    "name": "so",
+    "trans": [
+      "adv.这么，那么"
+    ]
+  },
+  {
+    "name": "short",
+    "trans": [
+      "adv.短的"
+    ]
+  },
+  {
+    "name": "long",
+    "trans": [
+      "adv.长的"
+    ]
+  },
+  {
+    "name": "wasn't=was not",
+    "trans": [
+      "adv.不是"
+    ]
+  },
+  {
+    "name": "weren't=were not",
+    "trans": [
+      "adv.不是"
+    ]
+  },
+  {
+    "name": "clean",
+    "trans": [
+      "adv.干净的"
+    ]
+  },
+  {
+    "name": "dirty",
+    "trans": [
+      "adv.脏的"
+    ]
+  },
+  {
+    "name": "yesterday",
+    "trans": [
+      "adv.昨天"
+    ]
+  },
+  {
+    "name": "out",
+    "trans": [
+      "adv.不在家（的）；在外面（的)"
+    ]
+  },
+  {
+    "name": "well",
+    "trans": [
+      "adv.健康的"
+    ]
+  },
+  {
+    "name": "thanks",
+    "trans": [
+      "adv.谢谢"
+    ]
+  },
+  {
+    "name": "sun",
+    "trans": [
+      "adv.太阳"
+    ]
+  },
+  {
+    "name": "lesson",
+    "trans": [
+      "adv.一节课，一堂课"
+    ]
+  },
+  {
+    "name": "village",
+    "trans": [
+      "adv.乡村，村子"
+    ]
+  },
+  {
+    "name": "had",
+    "trans": [
+      "adv.（have的过去式）度过"
+    ]
+  },
+  {
+    "name": "phone",
+    "trans": [
+      "adv.（给......）打电话"
+    ]
+  },
+  {
+    "name": "cook",
+    "trans": [
+      "adv.烹调;煮;烧"
+    ]
+  },
+  {
+    "name": "really",
+    "trans": [
+      "adv.真的"
+    ]
+  },
+  {
+    "name": "wash",
+    "trans": [
+      "adv.洗"
+    ]
+  },
+  {
+    "name": "what about...?",
+    "trans": [
+      "adv.......怎么样？"
+    ]
+  },
+  {
+    "name": "did",
+    "trans": [
+      "adv.(do的过去式）助动词"
+    ]
+  },
+  {
+    "name": "didn't=did not",
+    "trans": [
+      "adv.没有"
+    ]
+  },
+  {
+    "name": "computer",
+    "trans": [
+      "adv.计算机，电脑"
+    ]
+  },
+  {
+    "name": "love",
+    "trans": [
+      "adv.爱，喜欢"
+    ]
+  },
+  {
+    "name": "him",
+    "trans": [
+      "adv.（宾格）他"
+    ]
+  },
+  {
+    "name": "Mrs",
+    "trans": [
+      "adv.太太，夫人"
+    ]
+  },
+  {
+    "name": "Miss",
+    "trans": [
+      "adv.小姐"
+    ]
+  },
+  {
+    "name": "sang",
+    "trans": [
+      "adv.（sing的过去式）唱歌"
+    ]
+  },
+  {
+    "name": "beautifully",
+    "trans": [
+      "adv.优美的，动听的"
+    ]
+  },
+  {
+    "name": "saw",
+    "trans": [
+      "adv.（see的过去式）看见"
+    ]
+  },
+  {
+    "name": "game",
+    "trans": [
+      "adv.游戏，比赛"
+    ]
+  },
+  {
+    "name": "last",
+    "trans": [
+      "adv.最近过去的"
+    ]
+  },
+  {
+    "name": "fun",
+    "trans": [
+      "adv.有趣的是"
+    ]
+  },
+  {
+    "name": "went",
+    "trans": [
+      "adv.（go的过去式）去"
+    ]
+  },
+  {
+    "name": "there",
+    "trans": [
+      "adv.在那儿，往那里"
+    ]
+  },
+  {
+    "name": "ate",
+    "trans": [
+      "adv.（eat的过去式）吃"
+    ]
+  },
+  {
+    "name": "drank",
+    "trans": [
+      "adv.（drink的过去式）喝，饮"
+    ]
+  },
+  {
+    "name": "drink",
+    "trans": [
+      "adv.饮料"
+    ]
+  },
+  {
+    "name": "time",
+    "trans": [
+      "adv.一段时间"
+    ]
+  },
+  {
+    "name": "have a good time",
+    "trans": [
+      "adv.玩得开心"
+    ]
+  },
+  {
+    "name": "busy",
+    "trans": [
+      "adv.忙的，忙碌的"
+    ]
+  },
+  {
+    "name": "took",
+    "trans": [
+      "adv.（take的过去式）拍摄"
+    ]
+  },
+  {
+    "name": "tell",
+    "trans": [
+      "adv.告诉，告知"
+    ]
+  },
+  {
+    "name": "great",
+    "trans": [
+      "adv.非常好，令人愉快的"
+    ]
+  },
+  {
+    "name": "delicious",
+    "trans": [
+      "adv.美味的，可口的"
+    ]
+  },
+  {
+    "name": "made",
+    "trans": [
+      "adv.（make的过去式）做，制作"
+    ]
+  },
+  {
+    "name": "poster",
+    "trans": [
+      "adv.海报，招贴画"
+    ]
+  },
+  {
+    "name": "welcome",
+    "trans": [
+      "adv.欢迎"
+    ]
+  },
+  {
+    "name": "postcard",
+    "trans": [
+      "adv.明信片"
+    ]
+  },
+  {
+    "name": "cousin",
+    "trans": [
+      "adv.表（堂）兄弟；表（堂）兄妹"
+    ]
+  },
+  {
+    "name": "dear",
+    "trans": [
+      "adv.亲爱的"
+    ]
+  },
+  {
+    "name": "on holiday",
+    "trans": [
+      "adv.在休假，在度假"
+    ]
+  },
+  {
+    "name": "travel",
+    "trans": [
+      "adv.旅行；游历"
+    ]
+  },
+  {
+    "name": "came",
+    "trans": [
+      "adv.（come的过去式）来"
+    ]
+  },
+  {
+    "name": "pop",
+    "trans": [
+      "adv.流行音乐"
+    ]
+  },
+  {
+    "name": "concert",
+    "trans": [
+      "adv.音乐会"
+    ]
+  },
+  {
+    "name": "earth",
+    "trans": [
+      "adv.地球"
+    ]
+  },
+  {
+    "name": "fall",
+    "trans": [
+      "adv.掉下，落下；摔倒"
+    ]
+  },
+  {
+    "name": "fall of",
+    "trans": [
+      "adv.跌落"
+    ]
+  },
+  {
+    "name": "fell",
+    "trans": [
+      "adv.(fall的过去式）掉下，落下；摔倒"
+    ]
+  },
+  {
+    "name": "fall down",
+    "trans": [
+      "adv.摔倒，跌倒；坍塌"
+    ]
+  },
+  {
+    "name": "found",
+    "trans": [
+      "adv.（find的过去式）发现，找到"
+    ]
+  },
+  {
+    "name": "town",
+    "trans": [
+      "adv.城镇，市镇"
+    ]
+  },
+  {
+    "name": "happen",
+    "trans": [
+      "adv.发生"
+    ]
+  },
+  {
+    "name": "ride",
+    "trans": [
+      "adv.骑车"
+    ]
+  },
+  {
+    "name": "then",
+    "trans": [
+      "adv.然后"
+    ]
+  },
+  {
+    "name": "thirsty",
+    "trans": [
+      "adv.（口）渴的"
+    ]
+  },
+  {
+    "name": "water",
+    "trans": [
+      "adv.水"
+    ]
+  },
+  {
+    "name": "bought",
+    "trans": [
+      "adv.（buy的过去式）买"
+    ]
+  },
+  {
+    "name": "watermelon",
+    "trans": [
+      "adv.西瓜"
+    ]
+  },
+  {
+    "name": "carried",
+    "trans": [
+      "adv.carry的过去式）拿，搬"
+    ]
+  },
+  {
+    "name": "bump",
+    "trans": [
+      "adv.撞伤"
+    ]
+  },
+  {
+    "name": "hospital",
+    "trans": [
+      "adv.医院"
+    ]
+  },
+  {
+    "name": "had",
+    "trans": [
+      "adv.（have的过去式）吃，喝"
+    ]
+  },
+  {
+    "name": "chocolate",
+    "trans": [
+      "adv.巧克力"
+    ]
+  },
+  {
+    "name": "stomach ache",
+    "trans": [
+      "adv.胃痛"
+    ]
+  },
+  {
+    "name": "cold",
+    "trans": [
+      "adv.感冒"
+    ]
+  },
+  {
+    "name": "headache",
+    "trans": [
+      "adv.头痛"
+    ]
+  },
+  {
+    "name": "fever",
+    "trans": [
+      "adv.发烧"
+    ]
+  }
+]
