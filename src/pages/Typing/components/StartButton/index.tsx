@@ -6,7 +6,12 @@ import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-export default function StartButton({ isLoading }: { isLoading: boolean }) {
+type StartButtonProps = {
+  isLoading: boolean
+  isSetting: boolean
+}
+
+export default function StartButton({ isLoading, isSetting }: StartButtonProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const randomConfig = useAtomValue(randomConfigAtom)
@@ -19,7 +24,7 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
   }, [dispatch, randomConfig.isOpen])
 
-  useHotkeys('enter', onToggleIsTyping, { enableOnFormTags: true, preventDefault: true }, [onToggleIsTyping])
+  useHotkeys('enter', onToggleIsTyping, { enableOnFormTags: true, preventDefault: true, enabled: !isSetting }, [onToggleIsTyping])
 
   const [isShowReStartButton, setIsShowReStartButton] = useState(false)
   const { refs, context } = useFloating({

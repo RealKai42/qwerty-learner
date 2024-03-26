@@ -12,7 +12,11 @@ import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-export default function WordPanel() {
+type WordPanelProps = {
+  isSetting: boolean
+}
+
+export default function WordPanel({ isSetting }: WordPanelProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
@@ -109,7 +113,7 @@ export default function WordPanel() {
       e.preventDefault()
       onSkipWord('prev')
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: !isSetting },
   )
 
   useHotkeys(
@@ -118,7 +122,7 @@ export default function WordPanel() {
       e.preventDefault()
       onSkipWord('next')
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: !isSetting },
   )
   const [isShowTranslation, setIsHoveringTranslation] = useState(false)
 
@@ -131,7 +135,7 @@ export default function WordPanel() {
     () => {
       handleShowTranslation(true)
     },
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
     [],
   )
 
@@ -140,7 +144,7 @@ export default function WordPanel() {
     () => {
       handleShowTranslation(false)
     },
-    { enableOnFormTags: true, keyup: true, preventDefault: true },
+    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting },
     [],
   )
 
@@ -171,7 +175,7 @@ export default function WordPanel() {
               </div>
             )}
             <div className="relative">
-              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
+              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} isSetting={isSetting} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
                 trans={currentWord.trans.join('；')}

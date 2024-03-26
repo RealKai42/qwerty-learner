@@ -138,8 +138,8 @@ const App: React.FC = () => {
         <Header>
           <DictChapterButton />
           <PronunciationSwitcher />
-          <Switcher setIsSetting={setIsSetting} />
-          <StartButton isLoading={isLoading} />
+          <Switcher setIsSetting={setIsSetting} isSetting={isSetting} />
+          <StartButton isLoading={isLoading} isSetting={isSetting} />
           <Tooltip content="跳过该词">
             <button
               className={`${
@@ -162,7 +162,7 @@ const App: React.FC = () => {
                   ></div>
                 </div>
               ) : (
-                !state.isFinished && <WordPanel />
+                !state.isFinished && <WordPanel isSetting={isSetting} />
               )}
             </div>
             <Speed />

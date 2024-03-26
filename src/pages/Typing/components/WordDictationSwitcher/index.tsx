@@ -28,7 +28,11 @@ const wordDictationTypeList: { name: string; type: WordDictationType }[] = [
   },
 ]
 
-export default function WordDictationSwitcher() {
+type WordDictationSwitcherProps = {
+  isSetting: boolean
+}
+
+export default function WordDictationSwitcher({ isSetting }: WordDictationSwitcherProps) {
   const [wordDictationConfig, setWordDictationConfig] = useAtom(wordDictationConfigAtom)
   const [currentType, setCurrentType] = useState(wordDictationTypeList[0])
 
@@ -57,7 +61,7 @@ export default function WordDictationSwitcher() {
     () => {
       onToggleWordDictation()
     },
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
     [],
   )
 

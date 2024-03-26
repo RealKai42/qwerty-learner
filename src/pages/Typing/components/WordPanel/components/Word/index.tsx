@@ -31,7 +31,13 @@ import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
-export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
+type WordComponentProps = {
+  word: Word
+  onFinish: () => void
+  isSetting: boolean
+}
+
+export default function WordComponent({ word, onFinish, isSetting }: WordComponentProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -105,7 +111,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     () => {
       handleHoverWord(true)
     },
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
     [],
   )
 
@@ -114,7 +120,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     () => {
       handleHoverWord(false)
     },
-    { enableOnFormTags: true, keyup: true, preventDefault: true },
+    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting },
     [],
   )
   useHotkeys(
@@ -125,7 +131,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       }
     },
     [state.isTyping],
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
   )
 
   useEffect(() => {

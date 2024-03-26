@@ -19,9 +19,10 @@ import IconLanguageOff from '~icons/tabler/language-off'
 
 interface SwitcherProps {
   setIsSetting: React.Dispatch<React.SetStateAction<boolean>>
+  isSetting: boolean
 }
 
-export default function Switcher({ setIsSetting }: SwitcherProps) {
+export default function Switcher({ setIsSetting, isSetting }: SwitcherProps) {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
@@ -40,7 +41,7 @@ export default function Switcher({ setIsSetting }: SwitcherProps) {
     () => {
       changeTransVisibleState()
     },
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
     [],
   )
 
@@ -55,7 +56,7 @@ export default function Switcher({ setIsSetting }: SwitcherProps) {
       </Tooltip>
 
       <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
-        <WordDictationSwitcher />
+        <WordDictationSwitcher isSetting={isSetting} />
       </Tooltip>
       <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
         <button
