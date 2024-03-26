@@ -1,16 +1,17 @@
 import styles from './index.module.css'
-import { Button } from '@/components/ui/button'
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
+import type { Dispatch, SetStateAction } from 'react'
+import { memo, useEffect, useState } from 'react'
 
 type TableItem = {
   action: string
   hotkey: string
 }
 
-const invoices: TableItem[] = [
+const initKeyMaps: TableItem[] = [
   {
     action: '切换是否显示翻译',
     hotkey: 'ctrl+shift+v',
@@ -26,6 +27,8 @@ const invoices: TableItem[] = [
 ]
 
 export default function HotkeySetting() {
+  const [keyMaps, setKeyMaps] = useState<TableItem[]>(initKeyMaps)
+
   return (
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto">
       <ScrollArea.Viewport className="h-full w-full px-3">
@@ -42,11 +45,11 @@ export default function HotkeySetting() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {invoices.map((item) => (
+                {keyMaps.map((item, index) => (
                   <TableRow key={item.action}>
                     <TableCell className="dark:text-white">{item.action}</TableCell>
                     <TableCell className="dark:text-white">
-                      <KeyMap {...item} />
+                      <KeyMap hotkey={item.hotkey} action={item.action} index={index} setKeyMaps={setKeyMaps} />
                     </TableCell>
                   </TableRow>
                 ))}
@@ -61,19 +64,75 @@ export default function HotkeySetting() {
 }
 
 function DisplayKeymap(raw: string) {
-  return raw
-    .split('+')
-    .map((x) => x[0].toUpperCase() + x.slice(1))
-    .join(' + ')
+  if (raw.length === 0) {
+    return '未设置'
+  } else {
+    return raw
+      .split('+')
+      .map((x) => x[0].toUpperCase() + x.slice(1))
+      .join(' + ')
+  }
 }
 
-function KeyMap({ hotkey, action }: TableItem) {
+interface KeyMapProps {
+  hotkey: string
+  action: string
+  index: number
+  setKeyMaps: Dispatch<SetStateAction<TableItem[]>>
+}
+
+// eslint-disable-next-line react/display-name
+// eslint-disable-next-line react/prop-types
+const KeyMap = memo<KeyMapProps>(({ hotkey, action, index, setKeyMaps }) => {
+  const [dialogOpen, setDialogOpen] = useState<boolean>(false)
+  const displayKeymap = DisplayKeymap(hotkey)
+
+  useEffect(() => {
+    if (dialogOpen) {
+      const onKeyDown = (e: KeyboardEvent) => {
+        e.preventDefault()
+        e.stopPropagation()
+        // console.log(`key down: ${e.key}`)
+        if (e.key === 'Backspace') {
+          // setCurrentKeymap('')
+          setKeyMaps((prev) => {
+            const newKeyMaps = [...prev]
+            newKeyMaps[index].hotkey = ''
+            return newKeyMaps
+          })
+        } else {
+          // setCurrentKeymap((prev) => (prev === '' ? e.key : prev + '+' + e.key))
+          setKeyMaps((prev) => {
+            const newKeyMaps = [...prev]
+            if (newKeyMaps[index].hotkey === '') {
+              newKeyMaps[index].hotkey = e.key
+            } else {
+              newKeyMaps[index].hotkey += '+' + e.key
+            }
+            return newKeyMaps
+          })
+        }
+      }
+      const onKeyUp = (e: KeyboardEvent) => {
+        e.preventDefault()
+        e.stopPropagation()
+        // console.log(`key up: ${e.key}`)
+      }
+      window.addEventListener('keydown', onKeyDown)
+      window.addEventListener('keyup', onKeyUp)
+      return () => {
+        window.removeEventListener('keydown', onKeyDown)
+        window.removeEventListener('keyup', onKeyUp)
+      }
+    }
+  })
+
   return (
     <div className="flex">
       <div className="grow" />
-      <Dialog>
+      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
         <DialogTrigger asChild>
-          <div className="rounded-md bg-gray-100 px-1.5 dark:bg-gray-700">{DisplayKeymap(hotkey)}</div>
+          <div className="rounded-md bg-gray-100 px-1.5 dark:bg-gray-700">{displayKeymap}</div>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -83,13 +142,11 @@ function KeyMap({ hotkey, action }: TableItem) {
               <DialogDescription>{action}</DialogDescription>
             </div>
           </DialogHeader>
-          <Input type="text" placeholder={DisplayKeymap(hotkey)} />
-          <DialogFooter>
-            <Button type="submit">保存更改</Button>
-          </DialogFooter>
+          <Input type="text" placeholder={displayKeymap} />
         </DialogContent>
       </Dialog>
       <div className="grow" />
     </div>
   )
-}
+})
+KeyMap.displayName = 'KeyMap'
