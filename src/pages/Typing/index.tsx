@@ -27,6 +27,8 @@ import { useImmerReducer } from 'use-immer'
 const App: React.FC = () => {
   const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
+  // 设置快捷键时用于 bypass keydown event listener
+  const [isSetting, setIsSetting] = useState<boolean>(false)
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
@@ -81,7 +83,7 @@ const App: React.FC = () => {
   useEffect(() => {
     if (!state.isTyping) {
       const onKeyDown = (e: KeyboardEvent) => {
-        if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        if (!isSetting && !isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
           e.preventDefault()
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
         }
@@ -90,7 +92,7 @@ const App: React.FC = () => {
 
       return () => window.removeEventListener('keydown', onKeyDown)
     }
-  }, [state.isTyping, isLoading, dispatch])
+  }, [state.isTyping, isLoading, dispatch, isSetting])
 
   useEffect(() => {
     if (words !== undefined) {
@@ -136,7 +138,7 @@ const App: React.FC = () => {
         <Header>
           <DictChapterButton />
           <PronunciationSwitcher />
-          <Switcher />
+          <Switcher setIsSetting={setIsSetting} />
           <StartButton isLoading={isLoading} />
           <Tooltip content="跳过该词">
             <button

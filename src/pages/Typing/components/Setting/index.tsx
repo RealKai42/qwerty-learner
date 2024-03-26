@@ -15,15 +15,21 @@ import IconEar from '~icons/tabler/ear'
 import IconKeyboard from '~icons/tabler/keyboard'
 import IconX from '~icons/tabler/x'
 
-export default function Setting() {
+interface SettingProps {
+  setIsSetting: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export default function Setting({ setIsSetting }: SettingProps) {
   const [isOpen, setIsOpen] = useState(false)
   const { dispatch } = useContext(TypingContext) ?? {}
 
   function closeModal() {
+    setIsSetting(false)
     setIsOpen(false)
   }
 
   function openModal() {
+    setIsSetting(true)
     setIsOpen(true)
     if (dispatch) {
       dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })

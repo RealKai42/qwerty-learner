@@ -1,6 +1,7 @@
 import styles from './index.module.css'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
+import { Input } from '@/components/ui/input'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 
@@ -82,6 +83,7 @@ function KeyMap({ hotkey, action }: TableItem) {
               <DialogDescription>{action}</DialogDescription>
             </div>
           </DialogHeader>
+          <Input type="text" placeholder={DisplayKeymap(hotkey)} />
           <DialogFooter>
             <Button type="submit">保存更改</Button>
           </DialogFooter>

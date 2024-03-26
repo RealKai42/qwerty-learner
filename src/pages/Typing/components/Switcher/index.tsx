@@ -17,7 +17,11 @@ import IconSun from '~icons/heroicons/sun-solid'
 import IconLanguage from '~icons/tabler/language'
 import IconLanguageOff from '~icons/tabler/language-off'
 
-export default function Switcher() {
+interface SwitcherProps {
+  setIsSetting: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+export default function Switcher({ setIsSetting }: SwitcherProps) {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
@@ -92,7 +96,7 @@ export default function Switcher() {
         <HandPositionIllustration></HandPositionIllustration>
       </Tooltip>
       <Tooltip content="设置">
-        <Setting />
+        <Setting setIsSetting={setIsSetting} />
       </Tooltip>
     </div>
   )
