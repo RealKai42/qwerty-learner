@@ -1,4 +1,6 @@
 import styles from './index.module.css'
+import { Button } from '@/components/ui/button'
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 
@@ -39,11 +41,11 @@ export default function HotkeySetting() {
                 </TableRow>
               </TableHeader>
               <TableBody>
-                {invoices.map((invoice) => (
-                  <TableRow key={invoice.action}>
-                    <TableCell className="dark:text-white">{invoice.action}</TableCell>
+                {invoices.map((item) => (
+                  <TableRow key={item.action}>
+                    <TableCell className="dark:text-white">{item.action}</TableCell>
                     <TableCell className="dark:text-white">
-                      <KeyMap keybinding={invoice.hotkey} />
+                      <KeyMap {...item} />
                     </TableCell>
                   </TableRow>
                 ))}
@@ -64,15 +66,27 @@ function DisplayKeymap(raw: string) {
     .join(' + ')
 }
 
-interface KeyMapProps {
-  keybinding: string
-}
-
-function KeyMap({ keybinding }: KeyMapProps) {
+function KeyMap({ hotkey, action }: TableItem) {
   return (
     <div className="flex">
       <div className="grow" />
-      <div className="rounded-md bg-gray-100 px-1.5 dark:bg-gray-700">{DisplayKeymap(keybinding)}</div>
+      <Dialog>
+        <DialogTrigger asChild>
+          <div className="rounded-md bg-gray-100 px-1.5 dark:bg-gray-700">{DisplayKeymap(hotkey)}</div>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <div className="flex">
+              <DialogTitle className="text-slate-500 dark:text-slate-400">设置快捷键</DialogTitle>
+              <div className="grow" />
+              <DialogDescription>{action}</DialogDescription>
+            </div>
+          </DialogHeader>
+          <DialogFooter>
+            <Button type="submit">保存更改</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
       <div className="grow" />
     </div>
   )
