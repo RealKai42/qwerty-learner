@@ -1,0 +1,866 @@
+[
+  {
+    "name": "straight",
+    "trans": [
+      "adv.直地；直线地"
+    ]
+  },
+  {
+    "name": "go straight on",
+    "trans": [
+      "adv.直着走"
+    ]
+  },
+  {
+    "name": "left",
+    "trans": [
+      "adv.左边；向左；左边的"
+    ]
+  },
+  {
+    "name": "right",
+    "trans": [
+      "adv.右边；向右；右边的"
+    ]
+  },
+  {
+    "name": "lost",
+    "trans": [
+      "adv.迷路的"
+    ]
+  },
+  {
+    "name": "live",
+    "trans": [
+      "adv.居住"
+    ]
+  },
+  {
+    "name": "No.",
+    "trans": [
+      "adv.（number的缩写）第......号"
+    ]
+  },
+  {
+    "name": "street",
+    "trans": [
+      "adv.大街，街道"
+    ]
+  },
+  {
+    "name": "excuse me",
+    "trans": [
+      "adv.对不起，打扰一下"
+    ]
+  },
+  {
+    "name": "turn left",
+    "trans": [
+      "adv.向左转"
+    ]
+  },
+  {
+    "name": "turn right",
+    "trans": [
+      "adv.向右转"
+    ]
+  },
+  {
+    "name": "next to",
+    "trans": [
+      "adv.紧靠......旁边，贴近"
+    ]
+  },
+  {
+    "name": "supermarket",
+    "trans": [
+      "adv.超市"
+    ]
+  },
+  {
+    "name": "beside",
+    "trans": [
+      "adv.在......旁边，在......附近"
+    ]
+  },
+  {
+    "name": "cinema",
+    "trans": [
+      "adv.电影院"
+    ]
+  },
+  {
+    "name": "so much",
+    "trans": [
+      "adv.十分，非常"
+    ]
+  },
+  {
+    "name": "You're welcome",
+    "trans": [
+      "adv.不客气"
+    ]
+  },
+  {
+    "name": "station",
+    "trans": [
+      "adv.车站"
+    ]
+  },
+  {
+    "name": "frain",
+    "trans": [
+      "adv.火车"
+    ]
+  },
+  {
+    "name": "hill",
+    "trans": [
+      "adv.小山"
+    ]
+  },
+  {
+    "name": "near",
+    "trans": [
+      "adv.接近，临近"
+    ]
+  },
+  {
+    "name": "house",
+    "trans": [
+      "adv.房屋"
+    ]
+  },
+  {
+    "name": "read",
+    "trans": [
+      "adv.读，阅读"
+    ]
+  },
+  {
+    "name": "running",
+    "trans": [
+      "adv.跑步"
+    ]
+  },
+  {
+    "name": "these",
+    "trans": [
+      "adv.这些"
+    ]
+  },
+  {
+    "name": "picture",
+    "trans": [
+      "adv.照片"
+    ]
+  },
+  {
+    "name": "take",
+    "trans": [
+      "adv.拍摄"
+    ]
+  },
+  {
+    "name": "take pictures",
+    "trans": [
+      "adv.照相"
+    ]
+  },
+  {
+    "name": "children",
+    "trans": [
+      "adv.（child的复数形式）孩子们"
+    ]
+  },
+  {
+    "name": "listen",
+    "trans": [
+      "adv.听"
+    ]
+  },
+  {
+    "name": "listen to",
+    "trans": [
+      "adv.听"
+    ]
+  },
+  {
+    "name": "talk",
+    "trans": [
+      "adv.说话，交谈"
+    ]
+  },
+  {
+    "name": "talk to",
+    "trans": [
+      "adv.和......交谈"
+    ]
+  },
+  {
+    "name": "china",
+    "trans": [
+      "adv.中国"
+    ]
+  },
+  {
+    "name": "kid",
+    "trans": [
+      "adv.小孩"
+    ]
+  },
+  {
+    "name": "get on",
+    "trans": [
+      "adv.上（车）"
+    ]
+  },
+  {
+    "name": "can",
+    "trans": [
+      "adv.能够，会"
+    ]
+  },
+  {
+    "name": "see",
+    "trans": [
+      "adv.看到"
+    ]
+  },
+  {
+    "name": "lots of",
+    "trans": [
+      "adv.许多"
+    ]
+  },
+  {
+    "name": "interesing",
+    "trans": [
+      "adv.有趣的"
+    ]
+  },
+  {
+    "name": "thing",
+    "trans": [
+      "adv.东西，物品，事情"
+    ]
+  },
+  {
+    "name": "people",
+    "trans": [
+      "adv.人，人们"
+    ]
+  },
+  {
+    "name": "row",
+    "trans": [
+      "adv.话（船）"
+    ]
+  },
+  {
+    "name": "dragon boat",
+    "trans": [
+      "adv.龙舟"
+    ]
+  },
+  {
+    "name": "boat",
+    "trans": [
+      "adv.船"
+    ]
+  },
+  {
+    "name": "men",
+    "trans": [
+      "adv.（man的复数形式）男人"
+    ]
+  },
+  {
+    "name": "between",
+    "trans": [
+      "adv.在......之间，在中间"
+    ]
+  },
+  {
+    "name": "chess",
+    "trans": [
+      "adv.国际象棋"
+    ]
+  },
+  {
+    "name": "play chess",
+    "trans": [
+      "adv.下国际象棋"
+    ]
+  },
+  {
+    "name": "drink",
+    "trans": [
+      "adv.喝，饮"
+    ]
+  },
+  {
+    "name": "soya milk",
+    "trans": [
+      "adv.豆浆"
+    ]
+  },
+  {
+    "name": "clock",
+    "trans": [
+      "adv.钟"
+    ]
+  },
+  {
+    "name": "hungry",
+    "trans": [
+      "adv.饥饿的"
+    ]
+  },
+  {
+    "name": "Me too",
+    "trans": [
+      "adv.我也一样"
+    ]
+  },
+  {
+    "name": "draw",
+    "trans": [
+      "adv.画"
+    ]
+  },
+  {
+    "name": "jump",
+    "trans": [
+      "adv.跳"
+    ]
+  },
+  {
+    "name": "sing",
+    "trans": [
+      "adv.唱歌"
+    ]
+  },
+  {
+    "name": "dance",
+    "trans": [
+      "adv.跳舞"
+    ]
+  },
+  {
+    "name": "want",
+    "trans": [
+      "adv.想要"
+    ]
+  },
+  {
+    "name": "some",
+    "trans": [
+      "adv.一些"
+    ]
+  },
+  {
+    "name": "juice",
+    "trans": [
+      "adv.果汁"
+    ]
+  },
+  {
+    "name": "ice",
+    "trans": [
+      "adv.冰，冰块"
+    ]
+  },
+  {
+    "name": "also",
+    "trans": [
+      "adv.也，还"
+    ]
+  },
+  {
+    "name": "food",
+    "trans": [
+      "adv.食物"
+    ]
+  },
+  {
+    "name": "fast food",
+    "trans": [
+      "adv.快餐"
+    ]
+  },
+  {
+    "name": "make",
+    "trans": [
+      "adv.制作"
+    ]
+  },
+  {
+    "name": "tomato",
+    "trans": [
+      "adv.番茄，西红柿"
+    ]
+  },
+  {
+    "name": "egg",
+    "trans": [
+      "adv.鸡蛋"
+    ]
+  },
+  {
+    "name": "potato",
+    "trans": [
+      "adv.马铃薯"
+    ]
+  },
+  {
+    "name": "How much...?",
+    "trans": [
+      "adv.......多少钱？"
+    ]
+  },
+  {
+    "name": "flower",
+    "trans": [
+      "adv.华"
+    ]
+  },
+  {
+    "name": "dumpling",
+    "trans": [
+      "adv.水饺"
+    ]
+  },
+  {
+    "name": "help",
+    "trans": [
+      "adv.帮助，帮忙"
+    ]
+  },
+  {
+    "name": "buy",
+    "trans": [
+      "adv买"
+    ]
+  },
+  {
+    "name": "run",
+    "trans": [
+      "adv.跑，奔跑"
+    ]
+  },
+  {
+    "name": "fast",
+    "trans": [
+      "adv.快，快速地"
+    ]
+  },
+  {
+    "name": "sky",
+    "trans": [
+      "adv.天，天空"
+    ]
+  },
+  {
+    "name": "high",
+    "trans": [
+      "adv.高高地"
+    ]
+  },
+  {
+    "name": "winner",
+    "trans": [
+      "adv.获胜者"
+    ]
+  },
+  {
+    "name": "far",
+    "trans": [
+      "adv.远"
+    ]
+  },
+  {
+    "name": "afraid",
+    "trans": [
+      "adv.恐怕"
+    ]
+  },
+  {
+    "name": "strong",
+    "trans": [
+      "adv.健壮的"
+    ]
+  },
+  {
+    "name": "star",
+    "trans": [
+      "adv.明星"
+    ]
+  },
+  {
+    "name": "sweets",
+    "trans": [
+      "adv.（常复）糖果"
+    ]
+  },
+  {
+    "name": "soup",
+    "trans": [
+      "adv.汤"
+    ]
+  },
+  {
+    "name": "sorry",
+    "trans": [
+      "adv.抱歉，对不起"
+    ]
+  },
+  {
+    "name": "bread",
+    "trans": [
+      "adv.面包"
+    ]
+  },
+  {
+    "name": "dark",
+    "trans": [
+      "adv.黑暗的"
+    ]
+  },
+  {
+    "name": "well",
+    "trans": [
+      "adv.（语气词）噢"
+    ]
+  },
+  {
+    "name": "turn on",
+    "trans": [
+      "adv.打开"
+    ]
+  },
+  {
+    "name": "light",
+    "trans": [
+      "adv.灯"
+    ]
+  },
+  {
+    "name": "the Mid-Autumn Festival",
+    "trans": [
+      "adv.中秋节"
+    ]
+  },
+  {
+    "name": "moon",
+    "trans": [
+      "adv.月亮，月球"
+    ]
+  },
+  {
+    "name": "moon cake ",
+    "trans": [
+      "adv.月饼"
+    ]
+  },
+  {
+    "name": "of course",
+    "trans": [
+      "adv.当然"
+    ]
+  },
+  {
+    "name": "there is",
+    "trans": [
+      "adv.有，存在 +单数"
+    ]
+  },
+  {
+    "name": "horse",
+    "trans": [
+      "adv.马"
+    ]
+  },
+  {
+    "name": "there are",
+    "trans": [
+      "adv.有，存在 +复数"
+    ]
+  },
+  {
+    "name": "have a look",
+    "trans": [
+      "adv.看一看"
+    ]
+  },
+  {
+    "name": "sheep",
+    "trans": [
+      "adv.羊，绵羊"
+    ]
+  },
+  {
+    "name": "vegetable",
+    "trans": [
+      "adv.蔬菜"
+    ]
+  },
+  {
+    "name": "climb",
+    "trans": [
+      "adv.爬，攀爬"
+    ]
+  },
+  {
+    "name": "face",
+    "trans": [
+      "adv.脸，面孔"
+    ]
+  },
+  {
+    "name": "fruit",
+    "trans": [
+      "adv.水果"
+    ]
+  },
+  {
+    "name": "chicken",
+    "trans": [
+      "adv.鸡"
+    ]
+  },
+  {
+    "name": "bear",
+    "trans": [
+      "adv.熊"
+    ]
+  },
+  {
+    "name": "pig",
+    "trans": [
+      "adv.猪"
+    ]
+  },
+  {
+    "name": "visit",
+    "trans": [
+      "adv.参观；拜访"
+    ]
+  },
+  {
+    "name": "tomorrow",
+    "trans": [
+      "adv.明天"
+    ]
+  },
+  {
+    "name": "plane",
+    "trans": [
+      "adv.飞机"
+    ]
+  },
+  {
+    "name": "get up",
+    "trans": [
+      "adv.起床"
+    ]
+  },
+  {
+    "name": "o'clock",
+    "trans": [
+      "adv.......点钟"
+    ]
+  },
+  {
+    "name": "from",
+    "trans": [
+      "adv.从......来，来自"
+    ]
+  },
+  {
+    "name": "sea",
+    "trans": [
+      "adv.大海"
+    ]
+  },
+  {
+    "name": "swimsuit",
+    "trans": [
+      "adv.游泳衣"
+    ]
+  },
+  {
+    "name": "sock",
+    "trans": [
+      "adv.短袜"
+    ]
+  },
+  {
+    "name": "fish",
+    "trans": [
+      "adv.钓鱼"
+    ]
+  },
+  {
+    "name": "hooray",
+    "trans": [
+      "adv.（表示激动与高兴的呼喊声）好，好哇"
+    ]
+  },
+  {
+    "name": "sports day",
+    "trans": [
+      "adv.运动日"
+    ]
+  },
+  {
+    "name": "win",
+    "trans": [
+      "adv.胜利，取胜"
+    ]
+  },
+  {
+    "name": "month",
+    "trans": [
+      "adv.月"
+    ]
+  },
+  {
+    "name": "hundred",
+    "trans": [
+      "adv.一百（100）"
+    ]
+  },
+  {
+    "name": "metre",
+    "trans": [
+      "adv.米（长度单位）"
+    ]
+  },
+  {
+    "name": "every",
+    "trans": [
+      "adv.每个，每一"
+    ]
+  },
+  {
+    "name": "day",
+    "trans": [
+      "adv.一天，一日"
+    ]
+  },
+  {
+    "name": "luck",
+    "trans": [
+      "adv.运气"
+    ]
+  },
+  {
+    "name": "good luck",
+    "trans": [
+      "adv.祝你好运"
+    ]
+  },
+  {
+    "name": "come on",
+    "trans": [
+      "adv.加油"
+    ]
+  },
+  {
+    "name": "high jump",
+    "trans": [
+      "adv.跳高"
+    ]
+  },
+  {
+    "name": "long jump",
+    "trans": [
+      "adv.跳远"
+    ]
+  },
+  {
+    "name": "How about...?",
+    "trans": [
+      "adv.......怎么样？"
+    ]
+  },
+  {
+    "name": "subject",
+    "trans": [
+      "adv.学科，科目"
+    ]
+  },
+  {
+    "name": "family",
+    "trans": [
+      "adv.家，家庭"
+    ]
+  },
+  {
+    "name": "dinner",
+    "trans": [
+      "adv.晚餐，正餐"
+    ]
+  },
+  {
+    "name": "year",
+    "trans": [
+      "adv.年份"
+    ]
+  },
+  {
+    "name": "New Year",
+    "trans": [
+      "adv.新年"
+    ]
+  },
+  {
+    "name": "chinese",
+    "trans": [
+      "adv.中国的"
+    ]
+  },
+  {
+    "name": "festival",
+    "trans": [
+      "adv.节日"
+    ]
+  },
+  {
+    "name": "the Spring Festival",
+    "trans": [
+      "adv.春节"
+    ]
+  },
+  {
+    "name": "I see",
+    "trans": [
+      "adv.我明白了"
+    ]
+  },
+  {
+    "name": "peanut",
+    "trans": [
+      "adv.花生"
+    ]
+  },
+  {
+    "name": "merry",
+    "trans": [
+      "adv.愉快的"
+    ]
+  },
+  {
+    "name": "Christmas",
+    "trans": [
+      "adv.圣诞节"
+    ]
+  },
+  {
+    "name": "Merry Christmas！",
+    "trans": [
+      "adv.圣诞快乐！"
+    ]
+  }
+]

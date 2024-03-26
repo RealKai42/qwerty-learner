@@ -1,0 +1,938 @@
+[
+  {
+    "name": "song",
+    "trans": [
+      "adv.歌曲"
+    ]
+  },
+  {
+    "name": "TV",
+    "trans": [
+      "adv.电视台"
+    ]
+  },
+  {
+    "name": "favourite",
+    "trans": [
+      "adv.最喜欢的"
+    ]
+  },
+  {
+    "name": "colour",
+    "trans": [
+      "adv.颜色"
+    ]
+  },
+  {
+    "name": "here you are",
+    "trans": [
+      "adv.给你"
+    ]
+  },
+  {
+    "name": "they",
+    "trans": [
+      "adv.他(她/它）们"
+    ]
+  },
+  {
+    "name": "they're=they are",
+    "trans": [
+      "adv.他(她/它）们是"
+    ]
+  },
+  {
+    "name": "monkey",
+    "trans": [
+      "adv.猴子"
+    ]
+  },
+  {
+    "name": "baby",
+    "trans": [
+      "adv.幼兽"
+    ]
+  },
+  {
+    "name": "all",
+    "trans": [
+      "adv.每个，全体"
+    ]
+  },
+  {
+    "name": "zoo",
+    "trans": [
+      "adv.动物园"
+    ]
+  },
+  {
+    "name": "tiger",
+    "trans": [
+      "adv.老虎"
+    ]
+  },
+  {
+    "name": "lion",
+    "trans": [
+      "adv.狮子"
+    ]
+  },
+  {
+    "name": "elephant",
+    "trans": [
+      "adv.大象"
+    ]
+  },
+  {
+    "name": "fat",
+    "trans": [
+      "adv.胖的"
+    ]
+  },
+  {
+    "name": "man",
+    "trans": [
+      "adv.人，男人"
+    ]
+  },
+  {
+    "name": "short",
+    "trans": [
+      "adv.矮的"
+    ]
+  },
+  {
+    "name": "tall",
+    "trans": [
+      "adv.高的"
+    ]
+  },
+  {
+    "name": "small",
+    "trans": [
+      "adv.小的"
+    ]
+  },
+  {
+    "name": "thin",
+    "trans": [
+      "adv.瘦的"
+    ]
+  },
+  {
+    "name": "big",
+    "trans": [
+      "adv.大的"
+    ]
+  },
+  {
+    "name": "like",
+    "trans": [
+      "adv.喜欢"
+    ]
+  },
+  {
+    "name": "tootball",
+    "trans": [
+      "adv.足球"
+    ]
+  },
+  {
+    "name": "them",
+    "trans": [
+      "adv.他(她/它）们"
+    ]
+  },
+  {
+    "name": "ouch",
+    "trans": [
+      "adv.哎哟"
+    ]
+  },
+  {
+    "name": "basketball",
+    "trans": [
+      "adv.篮球"
+    ]
+  },
+  {
+    "name": "table tennis",
+    "trans": [
+      "adv.乒乓球"
+    ]
+  },
+  {
+    "name": "morning exercises",
+    "trans": [
+      "adv.早操"
+    ]
+  },
+  {
+    "name": "ride",
+    "trans": [
+      "adv.骑"
+    ]
+  },
+  {
+    "name": "bike",
+    "trans": [
+      "adv.自行车"
+    ]
+  },
+  {
+    "name": "swim",
+    "trans": [
+      "adv.游泳"
+    ]
+  },
+  {
+    "name": "skip",
+    "trans": [
+      "adv.跳绳"
+    ]
+  },
+  {
+    "name": "meat",
+    "trans": [
+      "adv.肉"
+    ]
+  },
+  {
+    "name": "pass",
+    "trans": [
+      "adv.传递"
+    ]
+  },
+  {
+    "name": "rice",
+    "trans": [
+      "adv.米饭；米"
+    ]
+  },
+  {
+    "name": "mum",
+    "trans": [
+      "adv.妈妈"
+    ]
+  },
+  {
+    "name": "noodles",
+    "trans": [
+      "adv.常复（面条）"
+    ]
+  },
+  {
+    "name": "fish",
+    "trans": [
+      "adv.鱼肉；鱼"
+    ]
+  },
+  {
+    "name": "but",
+    "trans": [
+      "adv.但是"
+    ]
+  },
+  {
+    "name": "milk",
+    "trans": [
+      "adv.牛奶"
+    ]
+  },
+  {
+    "name": "does ",
+    "trans": [
+      "adv.do的第三人称单数形式"
+    ]
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "adv.橙；柑；橘"
+    ]
+  },
+  {
+    "name": "apple",
+    "trans": [
+      "adv.苹果"
+    ]
+  },
+  {
+    "name": "banana",
+    "trans": [
+      "adv.香蕉"
+    ]
+  },
+  {
+    "name": "pear",
+    "trans": [
+      "adv.梨"
+    ]
+  },
+  {
+    "name": "doesn't=does not",
+    "trans": [
+      "adv.不"
+    ]
+  },
+  {
+    "name": "goes",
+    "trans": [
+      "adv.go的第三人称单数形式 去，到"
+    ]
+  },
+  {
+    "name": "on",
+    "trans": [
+      "adv.在......的时候；"
+    ]
+  },
+  {
+    "name": "Monday",
+    "trans": [
+      "adv.星期一"
+    ]
+  },
+  {
+    "name": "play",
+    "trans": [
+      "adv.参加（体育活动、比赛等）"
+    ]
+  },
+  {
+    "name": "phone",
+    "trans": [
+      "adv.电话；电话机"
+    ]
+  },
+  {
+    "name": "on the phone",
+    "trans": [
+      "adv.通电话"
+    ]
+  },
+  {
+    "name": "with",
+    "trans": [
+      "adv.与......在一起，同，跟，和"
+    ]
+  },
+  {
+    "name": "friend",
+    "trans": [
+      "adv.朋友"
+    ]
+  },
+  {
+    "name": "at",
+    "trans": [
+      "adv.在......"
+    ]
+  },
+  {
+    "name": "home",
+    "trans": [
+      "adv.家"
+    ]
+  },
+  {
+    "name": "at home",
+    "trans": [
+      "adv.在家"
+    ]
+  },
+  {
+    "name": "who",
+    "trans": [
+      "adv.谁"
+    ]
+  },
+  {
+    "name": "only",
+    "trans": [
+      "adv.只，仅仅"
+    ]
+  },
+  {
+    "name": "year",
+    "trans": [
+      "adv.年龄，岁数"
+    ]
+  },
+  {
+    "name": "work",
+    "trans": [
+      "adv.工作地点"
+    ]
+  },
+  {
+    "name": "go to work",
+    "trans": [
+      "adv.上班"
+    ]
+  },
+  {
+    "name": "saturday",
+    "trans": [
+      "adv.星期六"
+    ]
+  },
+  {
+    "name": "shopping",
+    "trans": [
+      "adv.购物"
+    ]
+  },
+  {
+    "name": "go shopping",
+    "trans": [
+      "adv.去购物"
+    ]
+  },
+  {
+    "name": "dad",
+    "trans": [
+      "adv.爸爸"
+    ]
+  },
+  {
+    "name": "do",
+    "trans": [
+      "adv.做，干"
+    ]
+  },
+  {
+    "name": "sunday",
+    "trans": [
+      "adv.星期日"
+    ]
+  },
+  {
+    "name": "swimming",
+    "trans": [
+      "adv.游泳(运动）"
+    ]
+  },
+  {
+    "name": "go swimming",
+    "trans": [
+      "adv.去游泳"
+    ]
+  },
+  {
+    "name": "eat",
+    "trans": [
+      "adv.吃"
+    ]
+  },
+  {
+    "name": "in",
+    "trans": [
+      "adv.在......期间，在......时候"
+    ]
+  },
+  {
+    "name": "sleep",
+    "trans": [
+      "adv.睡觉"
+    ]
+  },
+  {
+    "name": "watch",
+    "trans": [
+      "adv.观看"
+    ]
+  },
+  {
+    "name": "watch TV",
+    "trans": [
+      "adv.看电视"
+    ]
+  },
+  {
+    "name": "have",
+    "trans": [
+      "adv.做，进行，从事"
+    ]
+  },
+  {
+    "name": "class",
+    "trans": [
+      "adv.课；班级"
+    ]
+  },
+  {
+    "name": "today",
+    "trans": [
+      "adv.今天"
+    ]
+  },
+  {
+    "name": "music",
+    "trans": [
+      "adv.音乐"
+    ]
+  },
+  {
+    "name": "has",
+    "trans": [
+      "adv.have的第三人称单数形式 进行，从事"
+    ]
+  },
+  {
+    "name": "Chinese",
+    "trans": [
+      "adv.语文，汉语"
+    ]
+  },
+  {
+    "name": "maths",
+    "trans": [
+      "adv.数学"
+    ]
+  },
+  {
+    "name": "art",
+    "trans": [
+      "adv.美术"
+    ]
+  },
+  {
+    "name": "PE=physical education",
+    "trans": [
+      "adv.体育"
+    ]
+  },
+  {
+    "name": "science",
+    "trans": [
+      "adv.科学"
+    ]
+  },
+  {
+    "name": "we",
+    "trans": [
+      "adv.我们"
+    ]
+  },
+  {
+    "name": "fly",
+    "trans": [
+      "adv.放（风筝）"
+    ]
+  },
+  {
+    "name": "spring",
+    "trans": [
+      "adv.春天"
+    ]
+  },
+  {
+    "name": "summer",
+    "trans": [
+      "adv.夏天"
+    ]
+  },
+  {
+    "name": "season",
+    "trans": [
+      "adv.季节"
+    ]
+  },
+  {
+    "name": "nice",
+    "trans": [
+      "adv.迷人的，令人愉快的"
+    ]
+  },
+  {
+    "name": "warm",
+    "trans": [
+      "adv.暖和的"
+    ]
+  },
+  {
+    "name": "hot",
+    "trans": [
+      "adv.热的"
+    ]
+  },
+  {
+    "name": "autumn",
+    "trans": [
+      "adv.秋天"
+    ]
+  },
+  {
+    "name": "cool",
+    "trans": [
+      "adv.凉爽的"
+    ]
+  },
+  {
+    "name": "winter",
+    "trans": [
+      "adv.冬天"
+    ]
+  },
+  {
+    "name": "cold",
+    "trans": [
+      "adv.寒冷的"
+    ]
+  },
+  {
+    "name": "skating",
+    "trans": [
+      "adv.滑冰"
+    ]
+  },
+  {
+    "name": "go skating",
+    "trans": [
+      "adv.去滑冰"
+    ]
+  },
+  {
+    "name": "play",
+    "trans": [
+      "adv.玩，玩耍"
+    ]
+  },
+  {
+    "name": "snow",
+    "trans": [
+      "adv.学；下雪"
+    ]
+  },
+  {
+    "name": "rain",
+    "trans": [
+      "adv.雨；下雨"
+    ]
+  },
+  {
+    "name": "sunny",
+    "trans": [
+      "adv.晴朗的，阳光充足的"
+    ]
+  },
+  {
+    "name": "windy",
+    "trans": [
+      "adv.有风的，刮风的"
+    ]
+  },
+  {
+    "name": "very",
+    "trans": [
+      "adv.很，非常"
+    ]
+  },
+  {
+    "name": "toy",
+    "trans": [
+      "adv.玩具"
+    ]
+  },
+  {
+    "name": "under",
+    "trans": [
+      "adv.在......下面"
+    ]
+  },
+  {
+    "name": "for",
+    "trans": [
+      "adv.为，给，对"
+    ]
+  },
+  {
+    "name": "box",
+    "trans": [
+      "adv.盒子"
+    ]
+  },
+  {
+    "name": "behind",
+    "trans": [
+      "adv.在......后面"
+    ]
+  },
+  {
+    "name": "bedroom",
+    "trans": [
+      "adv.卧室"
+    ]
+  },
+  {
+    "name": "flies",
+    "trans": [
+      "adv.fly的第三人称单数形式"
+    ]
+  },
+  {
+    "name": "park",
+    "trans": [
+      "adv.公园"
+    ]
+  },
+  {
+    "name": "lake",
+    "trans": [
+      "adv.湖"
+    ]
+  },
+  {
+    "name": "tree",
+    "trans": [
+      "adv.树"
+    ]
+  },
+  {
+    "name": "fishing",
+    "trans": [
+      "adv.捕鱼，钓鱼"
+    ]
+  },
+  {
+    "name": "go fishing",
+    "trans": [
+      "adv.去钓鱼"
+    ]
+  },
+  {
+    "name": "walk",
+    "trans": [
+      "adv.行走，步行"
+    ]
+  },
+  {
+    "name": "have got",
+    "trans": [
+      "adv.有"
+    ]
+  },
+  {
+    "name": "sweater",
+    "trans": [
+      "adv.毛绒衫"
+    ]
+  },
+  {
+    "name": "bed",
+    "trans": [
+      "adv.床"
+    ]
+  },
+  {
+    "name": "line",
+    "trans": [
+      "adv.线，金属丝"
+    ]
+  },
+  {
+    "name": "about",
+    "trans": [
+      "adv.关于"
+    ]
+  },
+  {
+    "name": "animal",
+    "trans": [
+      "adv.动物"
+    ]
+  },
+  {
+    "name": "sport",
+    "trans": [
+      "adv.运动"
+    ]
+  },
+  {
+    "name": "haven't(got)=have not)got)",
+    "trans": [
+      "adv.没有"
+    ]
+  },
+  {
+    "name": "dress",
+    "trans": [
+      "adv.连衣裙"
+    ]
+  },
+  {
+    "name": "coat",
+    "trans": [
+      "adv.外套"
+    ]
+  },
+  {
+    "name": "T-shirt",
+    "trans": [
+      "adv.T恤衫"
+    ]
+  },
+  {
+    "name": "has got",
+    "trans": [
+      "adv.have got的第三人称单数形式 有"
+    ]
+  },
+  {
+    "name": "hasn't(got)=has not(got)",
+    "trans": [
+      "adv.没有"
+    ]
+  },
+  {
+    "name": "by",
+    "trans": [
+      "adv.乘（交通工具）"
+    ]
+  },
+  {
+    "name": "bus",
+    "trans": [
+      "adv.公共汽车"
+    ]
+  },
+  {
+    "name": "car",
+    "trans": [
+      "adv.汽车，轿车"
+    ]
+  },
+  {
+    "name": "hat",
+    "trans": [
+      "adv.帽子"
+    ]
+  },
+  {
+    "name": "come",
+    "trans": [
+      "adv.来，来到"
+    ]
+  },
+  {
+    "name": "back",
+    "trans": [
+      "adv.回到，返回"
+    ]
+  },
+  {
+    "name": "come back",
+    "trans": [
+      "adv.回来"
+    ]
+  },
+  {
+    "name": "clothes",
+    "trans": [
+      "adv.(常复）衣服"
+    ]
+  },
+  {
+    "name": "open",
+    "trans": [
+      "adv.打开"
+    ]
+  },
+  {
+    "name": "let's=let us",
+    "trans": [
+      "adv.让我们"
+    ]
+  },
+  {
+    "name": "put on",
+    "trans": [
+      "adv.穿上，戴上"
+    ]
+  },
+  {
+    "name": "punny",
+    "trans": [
+      "adv.滑稽的"
+    ]
+  },
+  {
+    "name": "party",
+    "trans": [
+      "adv.聚会"
+    ]
+  },
+  {
+    "name": "OK",
+    "trans": [
+      "adv.好的"
+    ]
+  },
+  {
+    "name": "brown",
+    "trans": [
+      "adv.褐色的，棕色的"
+    ]
+  },
+  {
+    "name": "trousers",
+    "trans": [
+      "adv.(常复）裤子"
+    ]
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "adv.橙色的，橘黄色的"
+    ]
+  },
+  {
+    "name": "shirt",
+    "trans": [
+      "adv.寸衫"
+    ]
+  },
+  {
+    "name": "look at",
+    "trans": [
+      "adv.看，朝......看"
+    ]
+  },
+  {
+    "name": "shoe",
+    "trans": [
+      "adv.鞋子"
+    ]
+  },
+  {
+    "name": "can't=can not",
+    "trans": [
+      "adv.不能"
+    ]
+  },
+  {
+    "name": "turn",
+    "trans": [
+      "adv.（多人依次轮流时）轮到的机会"
+    ]
+  },
+  {
+    "name": "white",
+    "trans": [
+      "adv.白色的"
+    ]
+  },
+  {
+    "name": "photo",
+    "trans": [
+      "adv.照片"
+    ]
+  },
+  {
+    "name": "skirt",
+    "trans": [
+      "adv.女裙，裙子"
+    ]
+  }
+]
