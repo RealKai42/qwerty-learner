@@ -1,0 +1,806 @@
+[
+  {
+    "name": "I",
+    "trans": [
+      "adv.我"
+    ]
+  },
+  {
+    "name": "am(I'm=I am)",
+    "trans": [
+      "adv.是（我是）"
+    ]
+  },
+  {
+    "name": "aah",
+    "trans": [
+      "adv.啊"
+    ]
+  },
+  {
+    "name": "hello",
+    "trans": [
+      "adv.你好"
+    ]
+  },
+  {
+    "name": "ooh",
+    "trans": [
+      "adv.嗬"
+    ]
+  },
+  {
+    "name": "goodbye",
+    "trans": [
+      "adv.再见"
+    ]
+  },
+  {
+    "name": "are",
+    "trans": [
+      "adv.是"
+    ]
+  },
+  {
+    "name": "How are you? ",
+    "trans": [
+      "adv.你好么？"
+    ]
+  },
+  {
+    "name": "good",
+    "trans": [
+      "adv.好的"
+    ]
+  },
+  {
+    "name": "morning",
+    "trans": [
+      "adv.早晨，上午"
+    ]
+  },
+  {
+    "name": "fine",
+    "trans": [
+      "adv.健康的"
+    ]
+  },
+  {
+    "name": "thank",
+    "trans": [
+      "adv.谢谢"
+    ]
+  },
+  {
+    "name": "you ",
+    "trans": [
+      "adv.你；你们"
+    ]
+  },
+  {
+    "name": "Ms",
+    "trans": [
+      "adv.女士"
+    ]
+  },
+  {
+    "name": "boy",
+    "trans": [
+      "adv.男孩"
+    ]
+  },
+  {
+    "name": "girl",
+    "trans": [
+      "adv.女孩"
+    ]
+  },
+  {
+    "name": "whoqps",
+    "trans": [
+      "adv.哎哟"
+    ]
+  },
+  {
+    "name": "and",
+    "trans": [
+      "adv.那么；和"
+    ]
+  },
+  {
+    "name": "too",
+    "trans": [
+      "adv.也"
+    ]
+  },
+  {
+    "name": "ha ha ",
+    "trans": [
+      "adv.哈哈"
+    ]
+  },
+  {
+    "name": "what",
+    "trans": [
+      "adv.什么"
+    ]
+  },
+  {
+    "name": "is(what's=what is",
+    "trans": [
+      "adv.是（是什么）"
+    ]
+  },
+  {
+    "name": "your",
+    "trans": [
+      "adv.你的；你们的"
+    ]
+  },
+  {
+    "name": "name",
+    "trans": [
+      "adv.名字"
+    ]
+  },
+  {
+    "name": "please",
+    "trans": [
+      "adv.请"
+    ]
+  },
+  {
+    "name": "afternoon",
+    "trans": [
+      "adv.下午"
+    ]
+  },
+  {
+    "name": "Mr",
+    "trans": [
+      "adv.先生"
+    ]
+  },
+  {
+    "name": "point",
+    "trans": [
+      "adv.指"
+    ]
+  },
+  {
+    "name": "to",
+    "trans": [
+      "adv.向......"
+    ]
+  },
+  {
+    "name": "the",
+    "trans": [
+      "adv.这(那)个，这(那)些"
+    ]
+  },
+  {
+    "name": "door",
+    "trans": [
+      "adv.门"
+    ]
+  },
+  {
+    "name": "sit",
+    "trans": [
+      "adv.坐"
+    ]
+  },
+  {
+    "name": "down",
+    "trans": [
+      "adv.向下"
+    ]
+  },
+  {
+    "name": "stand",
+    "trans": [
+      "adv.站"
+    ]
+  },
+  {
+    "name": "up",
+    "trans": [
+      "adv.向上"
+    ]
+  },
+  {
+    "name": "window",
+    "trans": [
+      "adv.窗户"
+    ]
+  },
+  {
+    "name": "blackboard",
+    "trans": [
+      "adv.黑板"
+    ]
+  },
+  {
+    "name": "bird",
+    "trans": [
+      "adv.鸟"
+    ]
+  },
+  {
+    "name": "tweet",
+    "trans": [
+      "adv.鸟(啾啾的声音)"
+    ]
+  },
+  {
+    "name": "desk",
+    "trans": [
+      "adv.书桌"
+    ]
+  },
+  {
+    "name": "chair",
+    "trans": [
+      "adv.椅子"
+    ]
+  },
+  {
+    "name": "it ",
+    "trans": [
+      "adv.它"
+    ]
+  },
+  {
+    "name": "it's=it is",
+    "trans": [
+      "adv.它是"
+    ]
+  },
+  {
+    "name": "red",
+    "trans": [
+      "adv.红色的"
+    ]
+  },
+  {
+    "name": "look",
+    "trans": [
+      "adv.看"
+    ]
+  },
+  {
+    "name": "wow",
+    "trans": [
+      "adv.呀，哇"
+    ]
+  },
+  {
+    "name": "yellow",
+    "trans": [
+      "adv.黄色的"
+    ]
+  },
+  {
+    "name": "blue",
+    "trans": [
+      "adv.蓝色的"
+    ]
+  },
+  {
+    "name": "a(an)",
+    "trans": [
+      "adv.一个，一"
+    ]
+  },
+  {
+    "name": "chameleon",
+    "trans": [
+      "adv.变色龙"
+    ]
+  },
+  {
+    "name": "my",
+    "trans": [
+      "adv.我的"
+    ]
+  },
+  {
+    "name": "panda",
+    "trans": [
+      "adv.熊猫"
+    ]
+  },
+  {
+    "name": "now",
+    "trans": [
+      "adv.现在"
+    ]
+  },
+  {
+    "name": "green",
+    "trans": [
+      "adv.绿色的"
+    ]
+  },
+  {
+    "name": "black",
+    "trans": [
+      "adv.黑色的"
+    ]
+  },
+  {
+    "name": "dog",
+    "trans": [
+      "adv.狗"
+    ]
+  },
+  {
+    "name": "cat",
+    "trans": [
+      "adv.猫"
+    ]
+  },
+  {
+    "name": "cap",
+    "trans": [
+      "adv.帽子"
+    ]
+  },
+  {
+    "name": "how many",
+    "trans": [
+      "adv.多少"
+    ]
+  },
+  {
+    "name": "one",
+    "trans": [
+      "adv.一"
+    ]
+  },
+  {
+    "name": "two",
+    "trans": [
+      "adv.二"
+    ]
+  },
+  {
+    "name": "three",
+    "trans": [
+      "adv.三"
+    ]
+  },
+  {
+    "name": "four",
+    "trans": [
+      "adv.四"
+    ]
+  },
+  {
+    "name": "five",
+    "trans": [
+      "adv.五"
+    ]
+  },
+  {
+    "name": "six",
+    "trans": [
+      "adv.六"
+    ]
+  },
+  {
+    "name": "seven",
+    "trans": [
+      "adv.七"
+    ]
+  },
+  {
+    "name": "eight",
+    "trans": [
+      "adv.八"
+    ]
+  },
+  {
+    "name": "nine",
+    "trans": [
+      "adv.九"
+    ]
+  },
+  {
+    "name": "oh",
+    "trans": [
+      "adv.哦，噢"
+    ]
+  },
+  {
+    "name": "ten",
+    "trans": [
+      "adv.十"
+    ]
+  },
+  {
+    "name": "eleven",
+    "trans": [
+      "adv.十一"
+    ]
+  },
+  {
+    "name": "twelve",
+    "trans": [
+      "adv.十二"
+    ]
+  },
+  {
+    "name": "happy",
+    "trans": [
+      "adv.快乐的"
+    ]
+  },
+  {
+    "name": "birthday",
+    "trans": [
+      "adv.生日"
+    ]
+  },
+  {
+    "name": "here",
+    "trans": [
+      "adv.这里"
+    ]
+  },
+  {
+    "name": "present",
+    "trans": [
+      "adv.礼物"
+    ]
+  },
+  {
+    "name": "this",
+    "trans": [
+      "adv.这个"
+    ]
+  },
+  {
+    "name": "pencil",
+    "trans": [
+      "adv.铅笔"
+    ]
+  },
+  {
+    "name": "pen",
+    "trans": [
+      "adv.钢笔"
+    ]
+  },
+  {
+    "name": "cake",
+    "trans": [
+      "adv.蛋糕"
+    ]
+  },
+  {
+    "name": "old",
+    "trans": [
+      "adv.岁的"
+    ]
+  },
+  {
+    "name": "how old",
+    "trans": [
+      "adv.多大"
+    ]
+  },
+  {
+    "name": "yes",
+    "trans": [
+      "adv.是的"
+    ]
+  },
+  {
+    "name": "you're=you are",
+    "trans": [
+      "adv.你是"
+    ]
+  },
+  {
+    "name": "teacher",
+    "trans": [
+      "adv.教师"
+    ]
+  },
+  {
+    "name": "pupil",
+    "trans": [
+      "adv.小学生"
+    ]
+  },
+  {
+    "name": "school",
+    "trans": [
+      "adv.学校"
+    ]
+  },
+  {
+    "name": "classroom",
+    "trans": [
+      "adv.教室"
+    ]
+  },
+  {
+    "name": "English",
+    "trans": [
+      "adv.英语"
+    ]
+  },
+  {
+    "name": "that",
+    "trans": [
+      "adv.那个"
+    ]
+  },
+  {
+    "name": "say",
+    "trans": [
+      "adv.说"
+    ]
+  },
+  {
+    "name": "again",
+    "trans": [
+      "adv.再一次"
+    ]
+  },
+  {
+    "name": "schoolbag",
+    "trans": [
+      "adv.书包"
+    ]
+  },
+  {
+    "name": "ball",
+    "trans": [
+      "adv.球"
+    ]
+  },
+  {
+    "name": "book",
+    "trans": [
+      "adv.书"
+    ]
+  },
+  {
+    "name": "monster",
+    "trans": [
+      "adv.怪物"
+    ]
+  },
+  {
+    "name": "new",
+    "trans": [
+      "adv.新的"
+    ]
+  },
+  {
+    "name": "kite",
+    "trans": [
+      "adv.风筝"
+    ]
+  },
+  {
+    "name": "or",
+    "trans": [
+      "adv.或者"
+    ]
+  },
+  {
+    "name": "don't=do not",
+    "trans": [
+      "adv.不"
+    ]
+  },
+  {
+    "name": "know",
+    "trans": [
+      "adv.知道"
+    ]
+  },
+  {
+    "name": "no",
+    "trans": [
+      "adv.不"
+    ]
+  },
+  {
+    "name": "not(isn't=is not)",
+    "trans": [
+      "adv.不(不是）"
+    ]
+  },
+  {
+    "name": "help",
+    "trans": [
+      "adv.救命(呼救用语）"
+    ]
+  },
+  {
+    "name": "where",
+    "trans": [
+      "adv.哪里"
+    ]
+  },
+  {
+    "name": "in",
+    "trans": [
+      "adv.在......里"
+    ]
+  },
+  {
+    "name": "bag",
+    "trans": [
+      "adv.包"
+    ]
+  },
+  {
+    "name": "mother",
+    "trans": [
+      "adv.母亲"
+    ]
+  },
+  {
+    "name": "father",
+    "trans": [
+      "adv.父亲"
+    ]
+  },
+  {
+    "name": "sister",
+    "trans": [
+      "adv.姐妹"
+    ]
+  },
+  {
+    "name": "brother",
+    "trans": [
+      "adv.兄弟"
+    ]
+  },
+  {
+    "name": "she",
+    "trans": [
+      "adv.她"
+    ]
+  },
+  {
+    "name": "grandpa",
+    "trans": [
+      "adv.祖父；外祖父"
+    ]
+  },
+  {
+    "name": "grandma",
+    "trans": [
+      "adv.祖母；外祖母"
+    ]
+  },
+  {
+    "name": "that's=that is",
+    "trans": [
+      "adv.那是"
+    ]
+  },
+  {
+    "name": "me",
+    "trans": [
+      "adv.我"
+    ]
+  },
+  {
+    "name": "he(he's=he is)",
+    "trans": [
+      "adv.他(他是)"
+    ]
+  },
+  {
+    "name": "doctor",
+    "trans": [
+      "adv.医生"
+    ]
+  },
+  {
+    "name": "policeman",
+    "trans": [
+      "adv.警察"
+    ]
+  },
+  {
+    "name": "nurse",
+    "trans": [
+      "adv.护士"
+    ]
+  },
+  {
+    "name": "driver",
+    "trans": [
+      "adv.司机"
+    ]
+  },
+  {
+    "name": "farmer",
+    "trans": [
+      "adv.农民"
+    ]
+  },
+  {
+    "name": "his",
+    "trans": [
+      "adv.他的"
+    ]
+  },
+  {
+    "name": "head",
+    "trans": [
+      "adv.头"
+    ]
+  },
+  {
+    "name": "leg",
+    "trans": [
+      "adv.腿"
+    ]
+  },
+  {
+    "name": "foot",
+    "trans": [
+      "adv.脚"
+    ]
+  },
+  {
+    "name": "on",
+    "trans": [
+      "adv.在......上"
+    ]
+  },
+  {
+    "name": "arm",
+    "trans": [
+      "adv.胳膊"
+    ]
+  },
+  {
+    "name": "hand",
+    "trans": [
+      "adv.手"
+    ]
+  },
+  {
+    "name": "her",
+    "trans": [
+      "adv.她的"
+    ]
+  },
+  {
+    "name": "nose",
+    "trans": [
+      "adv.鼻子"
+    ]
+  },
+  {
+    "name": "eye",
+    "trans": [
+      "adv.眼睛"
+    ]
+  },
+  {
+    "name": "mouth",
+    "trans": [
+      "adv.嘴"
+    ]
+  },
+  {
+    "name": "ear",
+    "trans": [
+      "adv.耳朵"
+    ]
+  }
+]

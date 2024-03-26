@@ -1,0 +1,632 @@
+[
+  {
+    "name": "look",
+    "trans": [
+      "adv.看上去"
+    ]
+  },
+  {
+    "name": "cashier",
+    "trans": [
+      "adv.收银员"
+    ]
+  },
+  {
+    "name": "cola",
+    "trans": [
+      "adv.可乐"
+    ]
+  },
+  {
+    "name": "dollar",
+    "trans": [
+      "adv.美元"
+    ]
+  },
+  {
+    "name": "cent",
+    "trans": [
+      "adv.美分"
+    ]
+  },
+  {
+    "name": "enjoy",
+    "trans": [
+      "adv.享用，享受"
+    ]
+  },
+  {
+    "name": "careful",
+    "trans": [
+      "adv.小心的"
+    ]
+  },
+  {
+    "name": "Be careful!",
+    "trans": [
+      "adv.当心"
+    ]
+  },
+  {
+    "name": "later",
+    "trans": [
+      "adv.后来，以后"
+    ]
+  },
+  {
+    "name": "to go",
+    "trans": [
+      "adv.剩余"
+    ]
+  },
+  {
+    "name": "duck",
+    "trans": [
+      "adv.鸭子"
+    ]
+  },
+  {
+    "name": "pond",
+    "trans": [
+      "adv.水池，池塘"
+    ]
+  },
+  {
+    "name": "cloud",
+    "trans": [
+      "adv.云"
+    ]
+  },
+  {
+    "name": "dry",
+    "trans": [
+      "adv.干的"
+    ]
+  },
+  {
+    "name": "like",
+    "trans": [
+      "adv.像......一样"
+    ]
+  },
+  {
+    "name": "look like",
+    "trans": [
+      "adv.看来好像"
+    ]
+  },
+  {
+    "name": "stay",
+    "trans": [
+      "adv.保持，维持"
+    ]
+  },
+  {
+    "name": "shine",
+    "trans": [
+      "adv.(太阳）发光，照耀"
+    ]
+  },
+  {
+    "name": "cry",
+    "trans": [
+      "adv.哭"
+    ]
+  },
+  {
+    "name": "everyone",
+    "trans": [
+      "adv.人人，没人，大家"
+    ]
+  },
+  {
+    "name": "fly away",
+    "trans": [
+      "adv.飞走"
+    ]
+  },
+  {
+    "name": "just",
+    "trans": [
+      "adv.就，且请"
+    ]
+  },
+  {
+    "name": "cow",
+    "trans": [
+      "adv.奶牛"
+    ]
+  },
+  {
+    "name": "blow",
+    "trans": [
+      "adv.吹，刮"
+    ]
+  },
+  {
+    "name": "rabbit",
+    "trans": [
+      "adv.兔子"
+    ]
+  },
+  {
+    "name": "balloon",
+    "trans": [
+      "adv.气球"
+    ]
+  },
+  {
+    "name": "stairs",
+    "trans": [
+      "adv.（常复）楼梯"
+    ]
+  },
+  {
+    "name": "mess",
+    "trans": [
+      "adv.肮脏;凌乱"
+    ]
+  },
+  {
+    "name": "play",
+    "trans": [
+      "adv.演奏"
+    ]
+  },
+  {
+    "name": "third",
+    "trans": [
+      "adv.第三个"
+    ]
+  },
+  {
+    "name": "time",
+    "trans": [
+      "adv.次，回"
+    ]
+  },
+  {
+    "name": "bark",
+    "trans": [
+      "adv.(狗)吠,叫"
+    ]
+  },
+  {
+    "name": "loudly",
+    "trans": [
+      "adv.大声地"
+    ]
+  },
+  {
+    "name": "nothing",
+    "trans": [
+      "adv.没有东西，没有事情"
+    ]
+  },
+  {
+    "name": "home",
+    "trans": [
+      "adv.回家"
+    ]
+  },
+  {
+    "name": "got",
+    "trans": [
+      "adv.（get的过去式），得到，收到"
+    ]
+  },
+  {
+    "name": "space",
+    "trans": [
+      "adv.太空"
+    ]
+  },
+  {
+    "name": "interested",
+    "trans": [
+      "adv.感兴趣的"
+    ]
+  },
+  {
+    "name": "spaceship",
+    "trans": [
+      "adv.宇宙飞船"
+    ]
+  },
+  {
+    "name": "finish",
+    "trans": [
+      "adv.结束，完成"
+    ]
+  },
+  {
+    "name": "decide",
+    "trans": [
+      "adv.决定"
+    ]
+  },
+  {
+    "name": "paper",
+    "trans": [
+      "adv.纸做的，纸质的"
+    ]
+  },
+  {
+    "name": "brought",
+    "trans": [
+      "adv.（bring的过去式）拿来，带来"
+    ]
+  },
+  {
+    "name": "bring back",
+    "trans": [
+      "adv.带回"
+    ]
+  },
+  {
+    "name": "model",
+    "trans": [
+      "adv.模型"
+    ]
+  },
+  {
+    "name": "taikonaut",
+    "trans": [
+      "adv.（中国的）太空的，宇航员"
+    ]
+  },
+  {
+    "name": "first",
+    "trans": [
+      "adv.最初(的），第一次（的）"
+    ]
+  },
+  {
+    "name": "national",
+    "trans": [
+      "adv.国家的，民族的"
+    ]
+  },
+  {
+    "name": "seed",
+    "trans": [
+      "adv.种子"
+    ]
+  },
+  {
+    "name": "spent",
+    "trans": [
+      "adv.(spend的过去式）度过"
+    ]
+  },
+  {
+    "name": "about",
+    "trans": [
+      "adv.大约"
+    ]
+  },
+  {
+    "name": "flew",
+    "trans": [
+      "adv.（flow的过去式）飞，飞行"
+    ]
+  },
+  {
+    "name": "October",
+    "trans": [
+      "adv.十月"
+    ]
+  },
+  {
+    "name": "video",
+    "trans": [
+      "adv.录像"
+    ]
+  },
+  {
+    "name": "proud",
+    "trans": [
+      "adv.感到自豪的，感到骄傲的"
+    ]
+  },
+  {
+    "name": "someday",
+    "trans": [
+      "adv.有朝一日"
+    ]
+  },
+  {
+    "name": "born",
+    "trans": [
+      "adv.出生，诞生"
+    ]
+  },
+  {
+    "name": "as",
+    "trans": [
+      "adv.作为"
+    ]
+  },
+  {
+    "name": "became",
+    "trans": [
+      "adv.（become的过去式）变成"
+    ]
+  },
+  {
+    "name": "letter",
+    "trans": [
+      "adv.字母"
+    ]
+  },
+  {
+    "name": "spell",
+    "trans": [
+      "adv.拼写，拼出"
+    ]
+  },
+  {
+    "name": "herself",
+    "trans": [
+      "adv.她自己"
+    ]
+  },
+  {
+    "name": "all over",
+    "trans": [
+      "adv.到处，遍处，处处"
+    ]
+  },
+  {
+    "name": "live",
+    "trans": [
+      "adv.活着"
+    ]
+  },
+  {
+    "name": "role model",
+    "trans": [
+      "adv.模范；榜样"
+    ]
+  },
+  {
+    "name": "cup",
+    "trans": [
+      "adv.杯子"
+    ]
+  },
+  {
+    "name": "planned",
+    "trans": [
+      "adv.（plan的过去式）计划"
+    ]
+  },
+  {
+    "name": "baseball",
+    "trans": [
+      "adv.棒球"
+    ]
+  },
+  {
+    "name": "more",
+    "trans": [
+      "adv.更强烈的"
+    ]
+  },
+  {
+    "name": "smile",
+    "trans": [
+      "adv.微笑"
+    ]
+  },
+  {
+    "name": "mistake",
+    "trans": [
+      "adv.错误"
+    ]
+  },
+  {
+    "name": "make mistakes",
+    "trans": [
+      "adv.犯错误"
+    ]
+  },
+  {
+    "name": "with",
+    "trans": [
+      "adv.与......有关"
+    ]
+  },
+  {
+    "name": "said",
+    "trans": [
+      "adv.（say)的过去式）说"
+    ]
+  },
+  {
+    "name": "raincoat",
+    "trans": [
+      "adv.雨衣"
+    ]
+  },
+  {
+    "name": "wish",
+    "trans": [
+      "adv.愿望，希望；祝，祝愿"
+    ]
+  },
+  {
+    "name": "best wishes",
+    "trans": [
+      "adv.美好的祝愿"
+    ]
+  },
+  {
+    "name": "primary",
+    "trans": [
+      "adv.小学的，初等的"
+    ]
+  },
+  {
+    "name": "primary school",
+    "trans": [
+      "adv.小学"
+    ]
+  },
+  {
+    "name": "message",
+    "trans": [
+      "adv.留言"
+    ]
+  },
+  {
+    "name": "keep",
+    "trans": [
+      "adv.保留"
+    ]
+  },
+  {
+    "name": "forever",
+    "trans": [
+      "adv.永远"
+    ]
+  },
+  {
+    "name": "joy",
+    "trans": [
+      "adv.乐事，乐趣"
+    ]
+  },
+  {
+    "name": "future",
+    "trans": [
+      "adv.将来，未来"
+    ]
+  },
+  {
+    "name": "wonderful",
+    "trans": [
+      "adv.了不起的，出色的"
+    ]
+  },
+  {
+    "name": "happiness",
+    "trans": [
+      "adv.幸福，愉快"
+    ]
+  },
+  {
+    "name": "what",
+    "trans": [
+      "adv.多么"
+    ]
+  },
+  {
+    "name": "middle",
+    "trans": [
+      "adv.中间的，中等的；中期，中间"
+    ]
+  },
+  {
+    "name": "middle school",
+    "trans": [
+      "adv.中学"
+    ]
+  },
+  {
+    "name": "speech",
+    "trans": [
+      "adv.演说，讲演"
+    ]
+  },
+  {
+    "name": "classmate",
+    "trans": [
+      "adv.同班同学"
+    ]
+  },
+  {
+    "name": "leave",
+    "trans": [
+      "adv.离开"
+    ]
+  },
+  {
+    "name": "September",
+    "trans": [
+      "adv.九月"
+    ]
+  },
+  {
+    "name": "excited",
+    "trans": [
+      "adv.激动的，兴奋地"
+    ]
+  },
+  {
+    "name": "geography",
+    "trans": [
+      "adv.地理"
+    ]
+  },
+  {
+    "name": "same",
+    "trans": [
+      "adv.相同的"
+    ]
+  },
+  {
+    "name": "at the same time",
+    "trans": [
+      "adv.同时"
+    ]
+  },
+  {
+    "name": "spoke",
+    "trans": [
+      "adv.（speak)的过去式）说（某种语言）"
+    ]
+  },
+  {
+    "name": "little",
+    "trans": [
+      "adv.极少量的"
+    ]
+  },
+  {
+    "name": "keep on",
+    "trans": [
+      "adv.保持"
+    ]
+  },
+  {
+    "name": "practise",
+    "trans": [
+      "adv.练习"
+    ]
+  },
+  {
+    "name": "sometime",
+    "trans": [
+      "adv.某个时候"
+    ]
+  },
+  {
+    "name": "each other",
+    "trans": [
+      "adv.互相，彼此"
+    ]
+  },
+  {
+    "name": "chemistry",
+    "trans": [
+      "adv.化学"
+    ]
+  },
+  {
+    "name": "physics",
+    "trans": [
+      "adv.物理"
+    ]
+  }
+]
