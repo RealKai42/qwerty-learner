@@ -17,12 +17,44 @@ const initKeyMaps: TableItem[] = [
     hotkey: 'ctrl+shift+v',
   },
   {
+    action: '暂时显示翻译',
+    hotkey: 'tab',
+  },
+  {
     action: '切换听写模式',
     hotkey: 'ctrl+v',
   },
   {
+    action: '暂时显示单词',
+    hotkey: 'tab',
+  },
+  {
     action: '暂停打字',
     hotkey: 'enter',
+  },
+  {
+    action: '下一章',
+    hotkey: 'enter',
+  },
+  {
+    action: '重复本章',
+    hotkey: 'space',
+  },
+  {
+    action: '开始听写',
+    hotkey: 'shift+enter',
+  },
+  {
+    action: '播放发音',
+    hotkey: 'control+j',
+  },
+  {
+    action: '下一个词',
+    hotkey: 'control+shift+arrowRight',
+  },
+  {
+    action: '上一个词',
+    hotkey: 'control+shift+arrowLeft',
   },
 ]
 
@@ -130,6 +162,13 @@ const KeyMap = memo<KeyMapProps>(({ hotkey, action, index, setKeyMaps }) => {
                   setKeyMaps((prev) => {
                     const newKeyMaps = [...prev]
                     newKeyMaps[index].hotkey = e.key.toLowerCase()
+                    return newKeyMaps
+                  })
+                }
+                if (e.key === ' ') {
+                  setKeyMaps((prev) => {
+                    const newKeyMaps = [...prev]
+                    newKeyMaps[index].hotkey = 'space'
                     return newKeyMaps
                   })
                 }
