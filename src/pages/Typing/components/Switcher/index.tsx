@@ -9,6 +9,7 @@ import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
 import { CTRL } from '@/utils'
+import type { KeymapItem } from '@/utils/keymaps'
 import { useAtom } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -20,9 +21,11 @@ import IconLanguageOff from '~icons/tabler/language-off'
 interface SwitcherProps {
   setIsSetting: React.Dispatch<React.SetStateAction<boolean>>
   isSetting: boolean
+  keyMaps: KeymapItem[]
+  setKeyMaps: React.Dispatch<React.SetStateAction<KeymapItem[]>>
 }
 
-export default function Switcher({ setIsSetting, isSetting }: SwitcherProps) {
+export default function Switcher({ setIsSetting, isSetting, keyMaps, setKeyMaps }: SwitcherProps) {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
@@ -97,7 +100,7 @@ export default function Switcher({ setIsSetting, isSetting }: SwitcherProps) {
         <HandPositionIllustration></HandPositionIllustration>
       </Tooltip>
       <Tooltip content="设置">
-        <Setting setIsSetting={setIsSetting} />
+        <Setting setIsSetting={setIsSetting} keyMaps={keyMaps} setKeyMaps={setKeyMaps} />
       </Tooltip>
     </div>
   )

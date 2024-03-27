@@ -4,6 +4,7 @@ import DataSetting from './DataSetting'
 import HotkeySetting from './HotkeySetting'
 import SoundSetting from './SoundSetting'
 import ViewSetting from '@/pages/Typing/components/Setting/ViewSetting'
+import type { KeymapItem } from '@/utils/keymaps'
 import { Dialog, Tab, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
@@ -17,9 +18,11 @@ import IconX from '~icons/tabler/x'
 
 interface SettingProps {
   setIsSetting: React.Dispatch<React.SetStateAction<boolean>>
+  keyMaps: KeymapItem[]
+  setKeyMaps: React.Dispatch<React.SetStateAction<KeymapItem[]>>
 }
 
-export default function Setting({ setIsSetting }: SettingProps) {
+export default function Setting({ setIsSetting, keyMaps, setKeyMaps }: SettingProps) {
   const [isOpen, setIsOpen] = useState(false)
   const { dispatch } = useContext(TypingContext) ?? {}
 
@@ -156,7 +159,7 @@ export default function Setting({ setIsSetting }: SettingProps) {
                           <DataSetting />
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
-                          <HotkeySetting />
+                          <HotkeySetting keyMaps={keyMaps} setKeyMaps={setKeyMaps} />
                         </Tab.Panel>
                       </Tab.Panels>
                     </div>

@@ -3,14 +3,16 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Input } from '@/components/ui/input'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import type { KeymapItem } from '@/utils/keymaps'
-import { initKeyMaps } from '@/utils/keymaps'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import type { Dispatch, SetStateAction } from 'react'
 import { memo, useEffect, useState } from 'react'
 
-export default function HotkeySetting() {
-  const [keyMaps, setKeyMaps] = useState<KeymapItem[]>(initKeyMaps)
+interface HotkeySettingProps {
+  keyMaps: KeymapItem[]
+  setKeyMaps: React.Dispatch<React.SetStateAction<KeymapItem[]>>
+}
 
+export default function HotkeySetting({ keyMaps, setKeyMaps }: HotkeySettingProps) {
   return (
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto">
       <ScrollArea.Viewport className="h-full w-full px-3">
@@ -74,10 +76,9 @@ const KeyMap = memo<KeyMapProps>(({ hotkey, action, index, setKeyMaps }) => {
       const onKeyDown = (e: KeyboardEvent) => {
         e.preventDefault()
         e.stopPropagation()
-        console.log(`key down: ${e.key}`)
+        // console.log(`key down: ${e.key}`)
         switch (e.key) {
           case 'Backspace':
-            // setCurrentKeymap('')
             setKeyMaps((prev) => {
               const newKeyMaps = [...prev]
               newKeyMaps[index].hotkey = ''
@@ -136,7 +137,7 @@ const KeyMap = memo<KeyMapProps>(({ hotkey, action, index, setKeyMaps }) => {
       const onKeyUp = (e: KeyboardEvent) => {
         e.preventDefault()
         e.stopPropagation()
-        console.log(`key up: ${e.key}`)
+        // console.log(`key up: ${e.key}`)
       }
       window.addEventListener('keydown', onKeyDown)
       window.addEventListener('keyup', onKeyUp)

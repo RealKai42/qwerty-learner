@@ -18,6 +18,8 @@ import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
+import type { KeymapItem } from '@/utils/keymaps'
+import { initKeyMaps } from '@/utils/keymaps'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
@@ -29,6 +31,8 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true)
   // 设置快捷键时用于 bypass keydown event listener
   const [isSetting, setIsSetting] = useState<boolean>(false)
+  // 快捷键状态
+  const [keyMaps, setKeyMaps] = useState<KeymapItem[]>(initKeyMaps)
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
@@ -138,7 +142,7 @@ const App: React.FC = () => {
         <Header>
           <DictChapterButton />
           <PronunciationSwitcher />
-          <Switcher setIsSetting={setIsSetting} isSetting={isSetting} />
+          <Switcher setIsSetting={setIsSetting} isSetting={isSetting} keyMaps={keyMaps} setKeyMaps={setKeyMaps} />
           <StartButton isLoading={isLoading} isSetting={isSetting} />
           <Tooltip content="跳过该词">
             <button
