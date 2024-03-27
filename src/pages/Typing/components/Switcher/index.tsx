@@ -40,7 +40,7 @@ export default function Switcher({ setIsSetting, isSetting, keyMaps, setKeyMaps 
   }
 
   useHotkeys(
-    'ctrl+shift+v',
+    keyMaps[0].hotkey,
     () => {
       changeTransVisibleState()
     },
@@ -59,7 +59,7 @@ export default function Switcher({ setIsSetting, isSetting, keyMaps, setKeyMaps 
       </Tooltip>
 
       <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
-        <WordDictationSwitcher isSetting={isSetting} />
+        <WordDictationSwitcher isSetting={isSetting} keyMaps={keyMaps} />
       </Tooltip>
       <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
         <button

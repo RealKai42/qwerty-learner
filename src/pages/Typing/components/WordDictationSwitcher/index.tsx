@@ -1,5 +1,6 @@
 import { wordDictationConfigAtom } from '@/store'
 import type { WordDictationType } from '@/typings'
+import type { KeymapItem } from '@/utils/keymaps'
 import { Listbox, Popover, Switch, Transition } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { Fragment, useLayoutEffect, useState } from 'react'
@@ -30,9 +31,10 @@ const wordDictationTypeList: { name: string; type: WordDictationType }[] = [
 
 type WordDictationSwitcherProps = {
   isSetting: boolean
+  keyMaps: KeymapItem[]
 }
 
-export default function WordDictationSwitcher({ isSetting }: WordDictationSwitcherProps) {
+export default function WordDictationSwitcher({ isSetting, keyMaps }: WordDictationSwitcherProps) {
   const [wordDictationConfig, setWordDictationConfig] = useAtom(wordDictationConfigAtom)
   const [currentType, setCurrentType] = useState(wordDictationTypeList[0])
 
@@ -57,7 +59,7 @@ export default function WordDictationSwitcher({ isSetting }: WordDictationSwitch
   }, [wordDictationConfig.type])
 
   useHotkeys(
-    'ctrl+v',
+    keyMaps[2].hotkey,
     () => {
       onToggleWordDictation()
     },

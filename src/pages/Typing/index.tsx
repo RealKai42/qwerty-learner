@@ -29,7 +29,7 @@ import { useImmerReducer } from 'use-immer'
 const App: React.FC = () => {
   const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
-  // 设置快捷键时用于 bypass keydown event listener
+  // 设置快捷键时用于禁用所有快捷键
   const [isSetting, setIsSetting] = useState<boolean>(false)
   // 快捷键状态
   const [keyMaps, setKeyMaps] = useState<KeymapItem[]>(initKeyMaps)
@@ -137,13 +137,13 @@ const App: React.FC = () => {
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
       {state.isFinished && <DonateCard />}
-      {state.isFinished && <ResultScreen />}
+      {state.isFinished && <ResultScreen keyMaps={keyMaps} />}
       <Layout>
         <Header>
           <DictChapterButton />
           <PronunciationSwitcher />
           <Switcher setIsSetting={setIsSetting} isSetting={isSetting} keyMaps={keyMaps} setKeyMaps={setKeyMaps} />
-          <StartButton isLoading={isLoading} isSetting={isSetting} />
+          <StartButton isLoading={isLoading} isSetting={isSetting} keyMaps={keyMaps} />
           <Tooltip content="跳过该词">
             <button
               className={`${
@@ -166,7 +166,7 @@ const App: React.FC = () => {
                   ></div>
                 </div>
               ) : (
-                !state.isFinished && <WordPanel isSetting={isSetting} />
+                !state.isFinished && <WordPanel isSetting={isSetting} keyMaps={keyMaps} />
               )}
             </div>
             <Speed />

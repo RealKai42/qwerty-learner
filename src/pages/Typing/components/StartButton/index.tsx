@@ -1,6 +1,7 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
 import { randomConfigAtom } from '@/store'
+import type { KeymapItem } from '@/utils/keymaps'
 import { autoUpdate, offset, useFloating, useHover, useInteractions } from '@floating-ui/react'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
@@ -9,9 +10,10 @@ import { useHotkeys } from 'react-hotkeys-hook'
 type StartButtonProps = {
   isLoading: boolean
   isSetting: boolean
+  keyMaps: KeymapItem[]
 }
 
-export default function StartButton({ isLoading, isSetting }: StartButtonProps) {
+export default function StartButton({ isLoading, isSetting, keyMaps }: StartButtonProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const randomConfig = useAtomValue(randomConfigAtom)
@@ -24,7 +26,7 @@ export default function StartButton({ isLoading, isSetting }: StartButtonProps) 
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
   }, [dispatch, randomConfig.isOpen])
 
-  useHotkeys('enter', onToggleIsTyping, { enableOnFormTags: true, preventDefault: true, enabled: !isSetting }, [onToggleIsTyping])
+  useHotkeys(keyMaps[4].hotkey, onToggleIsTyping, { enableOnFormTags: true, preventDefault: true, enabled: !isSetting }, [onToggleIsTyping])
 
   const [isShowReStartButton, setIsShowReStartButton] = useState(false)
   const { refs, context } = useFloating({

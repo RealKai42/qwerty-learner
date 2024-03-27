@@ -8,15 +8,17 @@ import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
 import type { Word } from '@/typings'
+import type { KeymapItem } from '@/utils/keymaps'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 type WordPanelProps = {
   isSetting: boolean
+  keyMaps: KeymapItem[]
 }
 
-export default function WordPanel({ isSetting }: WordPanelProps) {
+export default function WordPanel({ isSetting, keyMaps }: WordPanelProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
@@ -108,7 +110,7 @@ export default function WordPanel({ isSetting }: WordPanelProps) {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
+    keyMaps[10].hotkey,
     (e) => {
       e.preventDefault()
       onSkipWord('prev')
@@ -117,7 +119,7 @@ export default function WordPanel({ isSetting }: WordPanelProps) {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowRight',
+    keyMaps[9].hotkey,
     (e) => {
       e.preventDefault()
       onSkipWord('next')
@@ -131,7 +133,7 @@ export default function WordPanel({ isSetting }: WordPanelProps) {
   }, [])
 
   useHotkeys(
-    'tab',
+    keyMaps[1].hotkey,
     () => {
       handleShowTranslation(true)
     },
@@ -140,7 +142,7 @@ export default function WordPanel({ isSetting }: WordPanelProps) {
   )
 
   useHotkeys(
-    'tab',
+    keyMaps[1].hotkey,
     () => {
       handleShowTranslation(false)
     },
@@ -175,7 +177,7 @@ export default function WordPanel({ isSetting }: WordPanelProps) {
               </div>
             )}
             <div className="relative">
-              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} isSetting={isSetting} />
+              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} isSetting={isSetting} keyMaps={keyMaps} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
                 trans={currentWord.trans.join('；')}
