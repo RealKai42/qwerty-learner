@@ -92,31 +92,62 @@ const KeyMap = memo<KeyMapProps>(({ hotkey, action, index, setKeyMaps }) => {
       const onKeyDown = (e: KeyboardEvent) => {
         e.preventDefault()
         e.stopPropagation()
-        // console.log(`key down: ${e.key}`)
-        if (e.key === 'Backspace') {
-          // setCurrentKeymap('')
-          setKeyMaps((prev) => {
-            const newKeyMaps = [...prev]
-            newKeyMaps[index].hotkey = ''
-            return newKeyMaps
-          })
-        } else {
-          // setCurrentKeymap((prev) => (prev === '' ? e.key : prev + '+' + e.key))
-          setKeyMaps((prev) => {
-            const newKeyMaps = [...prev]
-            if (newKeyMaps[index].hotkey === '') {
-              newKeyMaps[index].hotkey = e.key
-            } else {
-              newKeyMaps[index].hotkey += '+' + e.key
+        console.log(`key down: ${e.key}`)
+        switch (e.key) {
+          case 'Backspace':
+            // setCurrentKeymap('')
+            setKeyMaps((prev) => {
+              const newKeyMaps = [...prev]
+              newKeyMaps[index].hotkey = ''
+              return newKeyMaps
+            })
+            break
+          case 'Control':
+            break
+          case 'Shift':
+            break
+          case 'Alt':
+            break
+          case 'Meta':
+            break
+          default:
+            {
+              let res = ''
+              if (e.ctrlKey) {
+                res += 'ctrl+'
+              }
+              if (e.shiftKey) {
+                res += 'shift+'
+              }
+              if (e.altKey) {
+                res += 'alt+'
+              }
+              if (e.metaKey) {
+                res += 'meta+'
+              }
+              if (res === '') {
+                if (e.key === 'Enter' || e.key === 'Escape' || e.key === 'Tab') {
+                  setKeyMaps((prev) => {
+                    const newKeyMaps = [...prev]
+                    newKeyMaps[index].hotkey = e.key.toLowerCase()
+                    return newKeyMaps
+                  })
+                }
+              } else {
+                setKeyMaps((prev) => {
+                  const newKeyMaps = [...prev]
+                  newKeyMaps[index].hotkey = res + e.key.toLowerCase()
+                  return newKeyMaps
+                })
+              }
             }
-            return newKeyMaps
-          })
+            break
         }
       }
       const onKeyUp = (e: KeyboardEvent) => {
         e.preventDefault()
         e.stopPropagation()
-        // console.log(`key up: ${e.key}`)
+        console.log(`key up: ${e.key}`)
       }
       window.addEventListener('keydown', onKeyDown)
       window.addEventListener('keyup', onKeyUp)
@@ -142,7 +173,7 @@ const KeyMap = memo<KeyMapProps>(({ hotkey, action, index, setKeyMaps }) => {
               <DialogDescription>{action}</DialogDescription>
             </div>
           </DialogHeader>
-          <Input type="text" placeholder={displayKeymap} />
+          <Input type="text" placeholder={displayKeymap} onKeyDown={(e) => e.preventDefault()} />
         </DialogContent>
       </Dialog>
       <div className="grow" />
