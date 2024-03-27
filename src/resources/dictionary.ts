@@ -3161,7 +3161,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese002',
+    id: 'japanese001-zh',
     name: '日语常见词',
     description: '中文翻译',
     category: '日语学习',
@@ -3172,7 +3172,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese003',
+    id: 'japanese002',
     name: 'N5',
     description: '英语翻译',
     category: '日语学习',
@@ -3183,7 +3183,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese004',
+    id: 'japanese002-zh',
     name: 'N5',
     description: '中文翻译',
     category: '日语学习',
@@ -3194,7 +3194,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese005',
+    id: 'japanese003',
     name: 'N4',
     description: '英语翻译',
     category: '日语学习',
@@ -3205,7 +3205,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese006',
+    id: 'japanese003-zh',
     name: 'N4',
     description: '中文翻译',
     category: '日语学习',
@@ -3216,7 +3216,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese007',
+    id: 'japanese004',
     name: 'N3',
     description: '英语翻译',
     category: '日语学习',
@@ -3227,7 +3227,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese008',
+    id: 'japanese004-zh',
     name: 'N3',
     description: '中文翻译',
     category: '日语学习',
@@ -3238,7 +3238,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese009',
+    id: 'japanese005',
     name: 'N2',
     description: '英语翻译',
     category: '日语学习',
@@ -3249,7 +3249,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese0010',
+    id: 'japanese005-zh',
     name: 'N2',
     description: '中文翻译',
     category: '日语学习',
@@ -3260,7 +3260,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese0011',
+    id: 'japanese006',
     name: 'N1',
     description: '英语翻译',
     category: '日语学习',
@@ -3271,7 +3271,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese0012',
+    id: 'japanese006-zh',
     name: 'N1',
     description: '中文翻译',
     category: '日语学习',
@@ -3282,7 +3282,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese0013',
+    id: 'japanese007',
     name: '高频单词_N1',
     description: '高频单词_日语N1',
     category: '日语学习',
@@ -3293,7 +3293,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese0014',
+    id: 'japanese008',
     name: '高频单词_N2',
     description: '高频单词_日语N2',
     category: '日语学习',
@@ -3304,7 +3304,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese0015',
+    id: 'japanese009',
     name: '高频单词_N3',
     description: '高频单词_日语N3',
     category: '日语学习',
@@ -3315,7 +3315,7 @@ const japaneseExam: DictionaryResource[] = [
     languageCategory: 'ja',
   },
   {
-    id: 'japanese0016',
+    id: 'japanese0010',
     name: '高频单词_N4N5',
     description: '高频单词_日语N4N5',
     category: '日语学习',
