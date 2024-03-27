@@ -26,7 +26,12 @@ export default function StartButton({ isLoading, isSetting, keyMaps }: StartButt
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
   }, [dispatch, randomConfig.isOpen])
 
-  useHotkeys(keyMaps[4].hotkey, onToggleIsTyping, { enableOnFormTags: true, preventDefault: true, enabled: !isSetting }, [onToggleIsTyping])
+  useHotkeys(
+    keyMaps[4].hotkey,
+    onToggleIsTyping,
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[4].hotkey !== '' },
+    [onToggleIsTyping],
+  )
 
   const [isShowReStartButton, setIsShowReStartButton] = useState(false)
   const { refs, context } = useFloating({

@@ -63,7 +63,7 @@ export default function WordDictationSwitcher({ isSetting, keyMaps }: WordDictat
     () => {
       onToggleWordDictation()
     },
-    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[2].hotkey !== '' },
     [],
   )
 

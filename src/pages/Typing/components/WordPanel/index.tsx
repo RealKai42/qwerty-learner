@@ -115,7 +115,7 @@ export default function WordPanel({ isSetting, keyMaps }: WordPanelProps) {
       e.preventDefault()
       onSkipWord('prev')
     },
-    { preventDefault: true, enabled: !isSetting },
+    { preventDefault: true, enabled: !isSetting && keyMaps[10].hotkey !== '' },
   )
 
   useHotkeys(
@@ -124,7 +124,7 @@ export default function WordPanel({ isSetting, keyMaps }: WordPanelProps) {
       e.preventDefault()
       onSkipWord('next')
     },
-    { preventDefault: true, enabled: !isSetting },
+    { preventDefault: true, enabled: !isSetting && keyMaps[9].hotkey !== '' },
   )
   const [isShowTranslation, setIsHoveringTranslation] = useState(false)
 
@@ -137,7 +137,7 @@ export default function WordPanel({ isSetting, keyMaps }: WordPanelProps) {
     () => {
       handleShowTranslation(true)
     },
-    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[1].hotkey !== '' },
     [],
   )
 
@@ -146,7 +146,7 @@ export default function WordPanel({ isSetting, keyMaps }: WordPanelProps) {
     () => {
       handleShowTranslation(false)
     },
-    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting },
+    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting && keyMaps[1].hotkey !== '' },
     [],
   )
 

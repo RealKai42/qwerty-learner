@@ -44,7 +44,7 @@ export default function Switcher({ setIsSetting, isSetting, keyMaps, setKeyMaps 
     () => {
       changeTransVisibleState()
     },
-    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[0].hotkey !== '' },
     [],
   )
 

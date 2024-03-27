@@ -113,7 +113,7 @@ export default function WordComponent({ word, onFinish, isSetting, keyMaps }: Wo
     () => {
       handleHoverWord(true)
     },
-    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[3].hotkey !== '' },
     [],
   )
 
@@ -122,7 +122,7 @@ export default function WordComponent({ word, onFinish, isSetting, keyMaps }: Wo
     () => {
       handleHoverWord(false)
     },
-    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting },
+    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting && keyMaps[3].hotkey !== '' },
     [],
   )
   useHotkeys(
@@ -133,7 +133,7 @@ export default function WordComponent({ word, onFinish, isSetting, keyMaps }: Wo
       }
     },
     [state.isTyping],
-    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[8].hotkey !== '' },
   )
 
   useEffect(() => {

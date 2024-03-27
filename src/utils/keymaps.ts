@@ -49,3 +49,15 @@ export const initKeyMaps: KeymapItem[] = [
     hotkey: 'ctrl+shift+arrowleft',
   },
 ]
+
+export const KeymapStorageKey = 'qwerty-learner-keymaps'
+
+export function getInitKeyMaps(): KeymapItem[] {
+  const storedKeyMaps = localStorage.getItem(KeymapStorageKey)
+  if (storedKeyMaps) {
+    // TODO: validate
+    return JSON.parse(storedKeyMaps)
+  } else {
+    return initKeyMaps
+  }
+}

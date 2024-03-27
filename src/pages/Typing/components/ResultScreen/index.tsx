@@ -181,7 +181,7 @@ const ResultScreen = ({ keyMaps }: ResultScreenProps) => {
     () => {
       nextButtonHandler()
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: keyMaps[5].hotkey !== '' },
   )
 
   useHotkeys(
@@ -191,7 +191,7 @@ const ResultScreen = ({ keyMaps }: ResultScreenProps) => {
       e.stopPropagation()
       repeatButtonHandler()
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: keyMaps[6].hotkey !== '' },
   )
 
   useHotkeys(
@@ -199,7 +199,7 @@ const ResultScreen = ({ keyMaps }: ResultScreenProps) => {
     () => {
       dictationButtonHandler()
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: keyMaps[7].hotkey !== '' },
   )
 
   const handleOpenInfoPanel = useCallback(

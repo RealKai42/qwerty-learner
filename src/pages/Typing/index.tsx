@@ -19,7 +19,7 @@ import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAt
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import type { KeymapItem } from '@/utils/keymaps'
-import { initKeyMaps } from '@/utils/keymaps'
+import { KeymapStorageKey, getInitKeyMaps } from '@/utils/keymaps'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
@@ -32,7 +32,7 @@ const App: React.FC = () => {
   // 设置快捷键时用于禁用所有快捷键
   const [isSetting, setIsSetting] = useState<boolean>(false)
   // 快捷键状态
-  const [keyMaps, setKeyMaps] = useState<KeymapItem[]>(initKeyMaps)
+  const [keyMaps, setKeyMaps] = useState<KeymapItem[]>(getInitKeyMaps())
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
@@ -43,6 +43,11 @@ const App: React.FC = () => {
 
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
+
+  // 将快捷键状态同步到 local storage 中
+  useEffect(() => {
+    localStorage.setItem(KeymapStorageKey, JSON.stringify(keyMaps))
+  }, [keyMaps])
 
   useEffect(() => {
     // 检测用户设备
