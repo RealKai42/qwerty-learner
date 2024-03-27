@@ -3052,7 +3052,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese001',
     name: '日语常见词',
-    description: '英文翻译',
+    description: '英语翻译',
     category: '日语学习',
     tags: ['基础'],
     url: '/dicts/Japanesebasicword.json',
@@ -3074,7 +3074,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese003',
     name: 'N5',
-    description: '英文翻译',
+    description: '英语翻译',
     category: '日语学习',
     tags: ['基础'],
     url: '/dicts/JapVocabList.N5.json',
@@ -3096,7 +3096,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese005',
     name: 'N4',
-    description: '英文翻译',
+    description: '英语翻译',
     category: '日语学习',
     tags: ['基础'],
     url: '/dicts/JapVocabList.N4.json',
@@ -3118,7 +3118,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese007',
     name: 'N3',
-    description: '英文翻译',
+    description: '英语翻译',
     category: '日语学习',
     tags: ['基础'],
     url: '/dicts/JapVocabList.N3.json',
@@ -3140,7 +3140,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese009',
     name: 'N2',
-    description: '英文翻译',
+    description: '英语翻译',
     category: '日语学习',
     tags: ['基础'],
     url: '/dicts/JapVocabList.N2.json',
@@ -3162,7 +3162,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese0011',
     name: 'N1',
-    description: '英文翻译',
+    description: '英语翻译',
     category: '日语学习',
     tags: ['基础'],
     url: '/dicts/JapVocabList.N1.json',
