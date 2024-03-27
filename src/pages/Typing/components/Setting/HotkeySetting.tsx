@@ -2,64 +2,14 @@ import styles from './index.module.css'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+import type { KeymapItem } from '@/utils/keymaps'
+import { initKeyMaps } from '@/utils/keymaps'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import type { Dispatch, SetStateAction } from 'react'
 import { memo, useEffect, useState } from 'react'
 
-type TableItem = {
-  action: string
-  hotkey: string
-}
-
-const initKeyMaps: TableItem[] = [
-  {
-    action: '切换是否显示翻译',
-    hotkey: 'ctrl+shift+v',
-  },
-  {
-    action: '暂时显示翻译',
-    hotkey: 'tab',
-  },
-  {
-    action: '切换听写模式',
-    hotkey: 'ctrl+v',
-  },
-  {
-    action: '暂时显示单词',
-    hotkey: 'tab',
-  },
-  {
-    action: '暂停打字',
-    hotkey: 'enter',
-  },
-  {
-    action: '下一章',
-    hotkey: 'enter',
-  },
-  {
-    action: '重复本章',
-    hotkey: 'space',
-  },
-  {
-    action: '开始听写',
-    hotkey: 'shift+enter',
-  },
-  {
-    action: '播放发音',
-    hotkey: 'control+j',
-  },
-  {
-    action: '下一个词',
-    hotkey: 'control+shift+arrowRight',
-  },
-  {
-    action: '上一个词',
-    hotkey: 'control+shift+arrowLeft',
-  },
-]
-
 export default function HotkeySetting() {
-  const [keyMaps, setKeyMaps] = useState<TableItem[]>(initKeyMaps)
+  const [keyMaps, setKeyMaps] = useState<KeymapItem[]>(initKeyMaps)
 
   return (
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto">
@@ -110,7 +60,7 @@ interface KeyMapProps {
   hotkey: string
   action: string
   index: number
-  setKeyMaps: Dispatch<SetStateAction<TableItem[]>>
+  setKeyMaps: Dispatch<SetStateAction<KeymapItem[]>>
 }
 
 // eslint-disable-next-line react/display-name
