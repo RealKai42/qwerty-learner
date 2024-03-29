@@ -155,12 +155,12 @@ const KeyMap = memo<KeyMapProps>(({ hotkey, action, index, setKeyMaps }) => {
         <DialogTrigger asChild>
           <div className="rounded-md bg-gray-100 px-1.5 dark:bg-gray-700">{displayKeymap}</div>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="text-slate-500 dark:text-slate-400 sm:max-w-[425px]">
           <DialogHeader>
             <div className="flex">
               <DialogTitle className="text-slate-500 dark:text-slate-400">设置快捷键</DialogTitle>
               <div className="grow" />
-              <DialogDescription>{action}</DialogDescription>
+              <DialogDescription className="mr-4">{action}</DialogDescription>
             </div>
           </DialogHeader>
           <Input type="text" placeholder={displayKeymap} onKeyDown={(e) => e.preventDefault()} />
