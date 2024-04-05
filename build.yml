@@ -1,0 +1,14 @@
+# 第一阶段：构建应用
+FROM node:16 AS builder
+WORKDIR /app
+COPY package.json yarn.lock /app/
+RUN npm config set registry  https://registry.npmmirror.com  
+COPY . .
+RUN yarn install --frozen-lockfile
+RUN yarn build
+
+# 第二阶段：运行应用
+FROM node:16
+WORKDIR /app
+COPY --from=builder /app .
+CMD ["yarn", "start", "--host=0.0.0.0"]
