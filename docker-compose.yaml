@@ -4,6 +4,6 @@ services:
   qwertylearner:
     build:
       context: .
-      dockerfile: build.yml
+      dockerfile: Dockerfile
     ports:
       - '8990:5173'
