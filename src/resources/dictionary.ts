@@ -3353,6 +3353,32 @@ const germanExam: DictionaryResource[] = [
   },
 ]
 
+// 哈萨克语哈拼词典
+const kazakhHapinDicts: DictionaryResource[] = [
+  {
+    id: 'kazakh_basic_3000_arabic_hapin',
+    name: '基础3000词(老文字版)',
+    description: '哈萨克语基础3000词(哈拼老文字版)',
+    category: '哈萨克语',
+    tags: ['老文字', '哈拼'],
+    url: '/dicts/kazakh_basic_3000_arabic_hapin.json',
+    length: 3002,
+    language: 'hapin',
+    languageCategory: 'kk',
+  },
+  {
+    id: 'kazakh_basic_3000_cyrillic_hapin',
+    name: '基础3000词(西里尔字母版)',
+    description: '哈萨克语基础3000词(哈拼西里尔字母版)',
+    category: '哈萨克语',
+    tags: ['西里尔字母', '哈拼'],
+    url: '/dicts/kazakh_basic_3000_cyrillic_hapin.json',
+    length: 3002,
+    language: 'hapin',
+    languageCategory: 'kk',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
@@ -3364,6 +3390,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...programming,
   ...japaneseExam,
   ...germanExam,
+  ...kazakhHapinDicts,
 
   // {
   //   id: 'zhtest',

@@ -24,6 +24,9 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
       return `${pronunciationApi}${word}&le=jap`
     case 'de':
       return `${pronunciationApi}${word}&le=de`
+    case 'hapin':
+    case 'kk':
+      return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
   }
 }
 
