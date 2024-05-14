@@ -32,6 +32,8 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
   const { getReferenceProps, getFloatingProps } = useInteractions([hoverButton])
 
   return (
+    // TODO: 发现了一个bug，当鼠标移到状态为 Start 的按钮上时，悬停提示框功能表现不正常。
+    // 原因可能是当用户在Start状态时，再次点击按钮时，悬停提示框会闪退、自动消失。
     <Tooltip content="快捷键 Enter" className="box-content h-7 w-8 px-6 py-1">
       <div
         ref={refs.setReference}
