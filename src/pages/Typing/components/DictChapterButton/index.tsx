@@ -13,6 +13,11 @@ export const DictChapterButton = () => {
   const chapterCount = currentDictInfo.chapterCount
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
+  const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> = (event) => {
+    if (event.key === ' ') {
+      event.preventDefault()
+    }
+  }
   return (
     <>
       <Tooltip content="词典切换">
@@ -26,7 +31,10 @@ export const DictChapterButton = () => {
       {!isReviewMode && (
         <Tooltip content="章节切换">
           <Listbox value={currentChapter} onChange={setCurrentChapter}>
-            <Listbox.Button className="rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100">
+            <Listbox.Button
+              onKeyDown={handleKeyDown}
+              className="rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
+            >
               第 {currentChapter + 1} 章
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
