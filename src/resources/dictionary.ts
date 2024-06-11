@@ -790,6 +790,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'IELTSXDF7000',
+    name: '100个句子记完7000个雅思单词',
+    description: '新东方 100个句子记完7000个雅思单词 词汇表',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/IELTS_XDF_7000.json',
+    length: 5567,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'ket',
     name: 'KET',
     description: 'KET 2021单词',
