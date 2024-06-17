@@ -513,7 +513,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1533,
     language: 'en',
     languageCategory: 'en'
-  }
+  },
   {
     id: 'gre3000',
     name: 'GRE3000',
