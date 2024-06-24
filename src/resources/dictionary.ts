@@ -505,14 +505,14 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'gre1500',
-    name: 'GRE重点1500词-芬哥',
+    name: 'GRE重点1500词-fen哥',
     description: 'GRE & TEM8 重叠高频词汇',
     category: '国际考试',
     tags: ['GRE'],
-    url: '/dicts/GRE重点1500词.json',
+    url: '/dicts/GRE_1500.json',
     length: 1533,
     language: 'en',
-    languageCategory: 'en'
+    languageCategory: 'en',
   },
   {
     id: 'gre3000',
