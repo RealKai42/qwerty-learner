@@ -4,17 +4,6 @@ import { calcChapterCount } from '@/utils'
 // 中国考试
 const chinaExam: DictionaryResource[] = [
   {
-    id: 'BJJuniorHigh',
-    name: 'Beijing Junior',
-    description: '北京初中',
-    category: '中国考试',
-    tags: ['初中英语'],
-    url: '/dicts/beijing_junior_high_school.json',
-    length: 1843,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
     id: 'cet4',
     name: 'CET-4',
     description: '大学英语四级词库',
