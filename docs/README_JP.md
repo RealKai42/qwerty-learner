@@ -23,7 +23,7 @@
 </p>
 
 <div align=center>
-<img  src="docs/Screenshot.png"/>
+<img  src="../docs/Screenshot.png"/>
 </div>
 
 ## 📸 オンラインアクセス
