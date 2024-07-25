@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="./docs/README_EN.md">English</a>
+  <a href="./docs/README_JP.md">日本語</a>
 </p>
 
 <p align="center">
