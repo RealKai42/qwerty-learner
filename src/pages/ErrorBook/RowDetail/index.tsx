@@ -79,7 +79,8 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
             {word ? <Phonetic word={word} /> : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
             {word && (
               <WordPronunciationIcon
-                word={word.name}
+                lang={dictInfo.language}
+                word={word}
                 className="absolute -right-7 top-1/2 h-5 w-5 -translate-y-1/2 transform "
                 ref={wordPronunciationIconRef}
               />
