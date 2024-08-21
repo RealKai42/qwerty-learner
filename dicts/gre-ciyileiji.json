@@ -54,7 +54,7 @@
     ]
   },
   {
-    "name": "ﬂuvial",
+    "name": "fluvial",
     "trans": [
       "adj. 河流的；生在河中的；河流冲刷形成的"
     ]
@@ -708,6 +708,12 @@
     ]
   },
   {
+    "name": "horizontal",
+    "trans": [
+      "adj. 水平的, 与地平线平行的"
+    ]
+  },
+  {
     "name": "landlocked",
     "trans": [
       "adj. 被陆地包围的"
@@ -828,7 +834,7 @@
     ]
   },
   {
-    "name": "ﬁssure",
+    "name": "fissure",
     "trans": [
       "vi. 裂开；分裂 n. 裂缝；裂沟（尤指岩石上的）"
     ]
@@ -1104,7 +1110,7 @@
     ]
   },
   {
-    "name": "reﬂect",
+    "name": "reflect",
     "trans": [
       "vt. 反射，照出；反省；反映 vi. 反射，映现；深思"
     ]
@@ -1386,7 +1392,7 @@
     ]
   },
   {
-    "name": "reﬂective",
+    "name": "reflective",
     "trans": [
       "adj. 反射的；反映的；沉思的"
     ]
@@ -1431,6 +1437,12 @@
     "name": "alkali",
     "trans": [
       "n. 碱；可溶性无机盐 adj. 碱性的"
+    ]
+  },
+  {
+    "name": "aluminium",
+    "trans": [
+      "n. 铝"
     ]
   },
   {
@@ -1610,7 +1622,7 @@
   {
     "name": "dissolve",
     "trans": [
-      "业协议）；解散（团体、机构或议会）；消除；（使）消失，消散；禁不住（笑起来或哭起来等）；（以化学手 段）除去，分散；（被）破坏 n. （电影、电视等画面\r\n的）渐隐，叠化，淡入淡出"
+      "v. 溶解；使（固体）溶解；解除（婚姻关系）；终止（商业协议）；解散（团体、机构或议会）；消除；（使）消失，消散；禁不住（笑起来或哭起来等）；（以化学手 段）除去，分散；（被）破坏 n. （电影、电视等画面\r\n的）渐隐，叠化，淡入淡出"
     ]
   },
   {
@@ -1656,19 +1668,19 @@
     ]
   },
   {
-    "name": "ﬁlter",
+    "name": "filter",
     "trans": [
       "n. 过滤, 过滤器 vt. & vi. 透过, 过滤 vi. (消息等)走漏"
     ]
   },
   {
-    "name": "ﬂammable",
+    "name": "flammable",
     "trans": [
       "adj. 易燃的,可燃的"
     ]
   },
   {
-    "name": "gasiﬁcation",
+    "name": "gasification",
     "trans": [
       "n. 气化"
     ]
@@ -2148,43 +2160,43 @@
     ]
   },
   {
-    "name": "ﬁlly",
+    "name": "filly",
     "trans": [
       "n. 小雌马，小母马（通常未满四岁）；[俚]活泼的小姑娘"
     ]
   },
   {
-    "name": "ﬁreﬂy",
+    "name": "firefly",
     "trans": [
       "n. 萤火虫"
     ]
   },
   {
-    "name": "ﬂedge",
+    "name": "fledge",
     "trans": [
-      "vi. 长羽毛 vt. 用羽毛覆盖； 在 ... 上装羽毛； 喂养小鸟(以"
+      "vi. 长羽毛 vt. 用羽毛覆盖； 在 ... 上装羽毛； 喂养小鸟(以待其羽毛长成)"
     ]
   },
   {
-    "name": "ﬂedgling",
+    "name": "fledgling",
     "trans": [
       "n. (刚学会飞的)幼鸟 无经验的人"
     ]
   },
   {
-    "name": "ﬂock",
+    "name": "flock",
     "trans": [
       "n. 群；棉束（等于floc） vt. 用棉束填满"
     ]
   },
   {
-    "name": "ﬂounder",
+    "name": "flounder",
     "trans": [
       "vi. 挣扎，折腾；错乱地做事或说话 n. 比目鱼；挣扎，辗转"
     ]
   },
   {
-    "name": "gadﬂy",
+    "name": "gadfly",
     "trans": [
       "n. 牛虻；讨厌的人"
     ]
@@ -2868,7 +2880,7 @@
     ]
   },
   {
-    "name": "ﬁshery",
+    "name": "fishery",
     "trans": [
       "n. 渔业；渔场；水产业"
     ]
@@ -3024,19 +3036,19 @@
     ]
   },
   {
-    "name": "ﬁg",
+    "name": "fig",
     "trans": [
       "n. [植]无花果；无价值的东西；无花果树；少许，一些；服装 vt. 打扮；使马跑快"
     ]
   },
   {
-    "name": "ﬂax",
+    "name": "flax",
     "trans": [
       "n. [植]亚麻；[植]亚麻纤维；亚麻织品；亚麻布"
     ]
   },
   {
-    "name": "ﬂora",
+    "name": "flora",
     "trans": [
       "n. 植物群；植物区系"
     ]
@@ -3414,7 +3426,7 @@
     ]
   },
   {
-    "name": "ﬂorescence",
+    "name": "florescence",
     "trans": [
       "n. 开花；花期；全盛期"
     ]
@@ -3558,13 +3570,13 @@
     ]
   },
   {
-    "name": "ﬂag",
+    "name": "flag",
     "trans": [
       "n. 旗帜，国旗；（体育运动的）信号旗，标志旗 v. 标 示；疲乏，减弱；热情衰退；引起对……的注意；挥旗指示走某个方向"
     ]
   },
   {
-    "name": "ﬂaggy",
+    "name": "flaggy",
     "trans": [
       "adj. 多菖蒲的；多扁石的；凋萎的"
     ]
@@ -4422,7 +4434,7 @@
     ]
   },
   {
-    "name": "soporiﬁc",
+    "name": "soporific",
     "trans": [
       "n. 催眠的物质、药剂等 adj. 催眠的"
     ]
@@ -4788,7 +4800,2407 @@
     ]
   },
   {
-    "name": "inﬂamed",
+    "name": "pack",
+    "trans": [
+      "n. 包裹；一副；一群；包装；背包 vt. 包装；压紧；捆扎；挑选；塞满"
+    ]
+  },
+  {
+    "name": "panther",
+    "trans": [
+      "n. 豹；美洲豹；黑豹"
+    ]
+  },
+  {
+    "name": "parasite",
+    "trans": [
+      "n. 寄生虫；寄生生物；食客"
+    ]
+  },
+  {
+    "name": "pen",
+    "trans": [
+      "n. 钢笔；笔；写作；围栏；雌天鹅 v. 写；把…关在圈中"
+    ]
+  },
+  {
+    "name": "pest",
+    "trans": [
+      "n. 害虫；有害之物；讨厌的人"
+    ]
+  },
+  {
+    "name": "phoenix",
+    "trans": [
+      "n. 凤凰；死而复生的人"
+    ]
+  },
+  {
+    "name": "plankton",
+    "trans": [
+      "n. 浮游生物（总称）"
+    ]
+  },
+  {
+    "name": "plume",
+    "trans": [
+      "vt. 用羽毛装饰 n. 羽毛"
+    ]
+  },
+  {
+    "name": "porcupine",
+    "trans": [
+      "n. 豪猪;箭猪"
+    ]
+  },
+  {
+    "name": "predator",
+    "trans": [
+      "n. 食肉动物；掠夺者；捕食者"
+    ]
+  },
+  {
+    "name": "prey",
+    "trans": [
+      "vi. 捕食；掠夺；折磨 n. 牺牲者；被捕食的动物；捕食"
+    ]
+  },
+  {
+    "name": "primate",
+    "trans": [
+      "n. 大主教；灵长类的动物；[罕]首领 adj. 首要的；灵长目动物的"
+    ]
+  },
+  {
+    "name": "pullet",
+    "trans": [
+      "n. 小母鸡"
+    ]
+  },
+  {
+    "name": "quarry",
+    "trans": [
+      "n. 采石场；猎获物；来源；被追逐的目标 v. 挖出；苦心找出"
+    ]
+  },
+  {
+    "name": "ram",
+    "trans": [
+      "abbr. 随机访问内存（random-access memory的缩\r\n写）；随机存取存储器（random access memory的缩写）"
+    ]
+  },
+  {
+    "name": "reptile",
+    "trans": [
+      "adj. 爬虫类的；卑鄙的 n. 爬行动物；卑鄙的人"
+    ]
+  },
+  {
+    "name": "reptilian",
+    "trans": [
+      "adj. (像)爬行动物的；(像)爬虫的 卑躬屈节的，卑鄙的，鬼鬼祟祟的 n. 爬虫, 爬行动物; 两栖动物 卑劣的人"
+    ]
+  },
+  {
+    "name": "roe",
+    "trans": [
+      "n. 鱼卵，鱼子；牝鹿，獐"
+    ]
+  },
+  {
+    "name": "ruminant",
+    "trans": [
+      "adj. 沉思的；反刍的 n. 反刍动物"
+    ]
+  },
+  {
+    "name": "salmon",
+    "trans": [
+      "n. 鲑鱼；鲑肉色；大马哈鱼 adj. 浅澄色的"
+    ]
+  },
+  {
+    "name": "school",
+    "trans": [
+      "n. 学校；学派；学院；鱼群 vt. 教育"
+    ]
+  },
+  {
+    "name": "scorpion",
+    "trans": [
+      "n. 蝎子；蝎尾鞭；心黑的人"
+    ]
+  },
+  {
+    "name": "slough",
+    "trans": [
+      "n. 蜕下的皮（或壳）；绝境；泥沼；腐肉 vt. 使陷入泥沼；抛弃"
+    ]
+  },
+  {
+    "name": "sow",
+    "trans": [
+      "vt. 播种；散布；使密布 vi. 播种"
+    ]
+  },
+  {
+    "name": "spawn",
+    "trans": [
+      "n. 卵；产物；后代；结果 vt. 产卵；种菌丝于；产生；造成 vi. 产卵；大量生产"
+    ]
+  },
+  {
+    "name": "squirrel",
+    "trans": [
+      "n. 松鼠；松鼠毛皮 vt. 贮藏"
+    ]
+  },
+  {
+    "name": "swine",
+    "trans": [
+      "n. 猪 讨厌鬼,下流坯,猪猡"
+    ]
+  },
+  {
+    "name": "tadpole",
+    "trans": [
+      "n. 蝌蚪"
+    ]
+  },
+  {
+    "name": "tarantula",
+    "trans": [
+      "n. 鸟蛛,狼蛛 Tarantula圈状星云"
+    ]
+  },
+  {
+    "name": "talon",
+    "trans": [
+      "n. 爪；爪饰；如爪的手"
+    ]
+  },
+  {
+    "name": "termite",
+    "trans": [
+      "n. 白蚁"
+    ]
+  },
+  {
+    "name": "unicorn",
+    "trans": [
+      "n. 独角兽；麒麟"
+    ]
+  },
+  {
+    "name": "vulture",
+    "trans": [
+      "n. 秃鹰，秃鹫；贪婪的人"
+    ]
+  },
+  {
+    "name": "warren",
+    "trans": [
+      "n. 兔穴 人口拥挤的地区; 易迷路的场所 Warren沃伦(姓氏,\r\n男子名)"
+    ]
+  },
+  {
+    "name": "walrus",
+    "trans": [
+      "n. 海象"
+    ]
+  },
+  {
+    "name": "weasel",
+    "trans": [
+      "vi. 逃避；含糊其辞 n. 鼬鼠；狡猾的人"
+    ]
+  },
+  {
+    "name": "aquiline",
+    "trans": [
+      "adj. 鹰的；似鹰的；钩状的"
+    ]
+  },
+  {
+    "name": "arachnid",
+    "trans": [
+      "n. 蛛形纲动物 adj. 蛛形纲动物的"
+    ]
+  },
+  {
+    "name": "cheetah",
+    "trans": [
+      "n. 猎豹"
+    ]
+  },
+  {
+    "name": "colt",
+    "trans": [
+      "n. 小马；生手 vt. 以笞绳鞭打"
+    ]
+  },
+  {
+    "name": "condor",
+    "trans": [
+      "n. [动]秃鹫，秃鹰"
+    ]
+  },
+  {
+    "name": "cygnet",
+    "trans": [
+      "n. 小天鹅"
+    ]
+  },
+  {
+    "name": "eaglet",
+    "trans": [
+      "n. 小鹰"
+    ]
+  },
+  {
+    "name": "ecdysis",
+    "trans": [
+      "n. [动]换羽毛；（蛇等的）蜕皮"
+    ]
+  },
+  {
+    "name": "embryonic",
+    "trans": [
+      "adj. 胚芽的;胎儿的 初期的"
+    ]
+  },
+  {
+    "name": "farrow",
+    "trans": [
+      "n. 一窝小猪；猪的一胎 vt. 产（仔猪）"
+    ]
+  },
+  {
+    "name": "feline",
+    "trans": [
+      "adj. 猫科的；猫一样的；狡猾的 n. 猫科动物"
+    ]
+  },
+  {
+    "name": "gander",
+    "trans": [
+      "n. 雄鹅；呆子；一瞥 vi. 闲逛"
+    ]
+  },
+  {
+    "name": "gosling",
+    "trans": [
+      "n. 小鹅；年轻无知者"
+    ]
+  },
+  {
+    "name": "gull",
+    "trans": [
+      "n. [动]鸥；笨人；易受骗之人 vt. 骗；欺诈"
+    ]
+  },
+  {
+    "name": "hedgehog",
+    "trans": [
+      "n. 刺猬"
+    ]
+  },
+  {
+    "name": "hippopotamus",
+    "trans": [
+      "n. 河马"
+    ]
+  },
+  {
+    "name": "locust",
+    "trans": [
+      "n. 蝗虫，蚱蜢"
+    ]
+  },
+  {
+    "name": "mangy",
+    "trans": [
+      "adj. 污秽的；疥癣的；肮脏的"
+    ]
+  },
+  {
+    "name": "mermaid",
+    "trans": [
+      "n. 美人鱼（传说中的）；女子游泳健将"
+    ]
+  },
+  {
+    "name": "mutton",
+    "trans": [
+      "n. [谑]绵羊；羊肉"
+    ]
+  },
+  {
+    "name": "nestling",
+    "trans": [
+      "n. 婴儿；未离巢的雏鸟 v. 安顿下来；筑巢；把…安置于巢中（nestle的ing形式）"
+    ]
+  },
+  {
+    "name": "pony",
+    "trans": [
+      "n. 小型马；矮种马 adj. 小型的；每日摘要的"
+    ]
+  },
+  {
+    "name": "quadruped",
+    "trans": [
+      "n. 四足动物 adj. 四足的"
+    ]
+  },
+  {
+    "name": "simian",
+    "trans": [
+      "adj. 猿的；类人猿的；猴子一般的 n. 猴子；类人猿"
+    ]
+  },
+  {
+    "name": "skunk",
+    "trans": [
+      "n. 臭鼬；臭鼬毛皮；[俚]讨厌鬼；[俚]卑鄙的人 vt. 使惨败；欺骗"
+    ]
+  },
+  {
+    "name": "ursine",
+    "trans": [
+      "adj. 熊的；似熊的"
+    ]
+  },
+  {
+    "name": "vermin",
+    "trans": [
+      "n. 害虫；歹徒；寄生虫"
+    ]
+  },
+  {
+    "name": "whelp",
+    "trans": [
+      "n. 小狗；幼兽 vi. 下崽"
+    ]
+  },
+  {
+    "name": "lair",
+    "trans": [
+      "n. （野兽的）巢穴；躲藏处 vi. 进入兽穴；在穴中休息"
+    ]
+  },
+  {
+    "name": "rodent",
+    "trans": [
+      "n. 啮齿目动物"
+    ]
+  },
+  {
+    "name": "menagerie",
+    "trans": [
+      "n. 动物园；动物展览；（马戏团豢养的）兽群"
+    ]
+  },
+  {
+    "name": "proboscis",
+    "trans": [
+      "n. (象等的)长鼻 (昆虫等的)喙"
+    ]
+  },
+  {
+    "name": "tusk",
+    "trans": [
+      "n. 长牙；尖头，尖形物 vt. 以牙刺戳；以长牙掘"
+    ]
+  },
+  {
+    "name": "wallow",
+    "trans": [
+      "vi. 打滚；颠簸；沉迷 n. 打滚；堕落；泥坑"
+    ]
+  },
+  {
+    "name": "ichthyology",
+    "trans": [
+      "n. 鱼类学；鱼类学者作"
+    ]
+  },
+  {
+    "name": "plumage",
+    "trans": [
+      "n. 翅膀；鸟类羽毛"
+    ]
+  },
+  {
+    "name": "fauna",
+    "trans": [
+      "n. 动物群；动物区系"
+    ]
+  },
+  {
+    "name": "behemoth",
+    "trans": [
+      "n. 巨兽；[圣经]河马 adj. 巨大的；高大的"
+    ]
+  },
+  {
+    "name": "aerie",
+    "trans": [
+      "n. 猛禽的窝，猛禽巢；高处的房子或城堡"
+    ]
+  },
+  {
+    "name": "perch",
+    "trans": [
+      "n. 栖木；高位；杆；河鲈鱼 v. 栖息；就位；位于"
+    ]
+  },
+  {
+    "name": "apiary",
+    "trans": [
+      "n. 蜂房；养蜂场"
+    ]
+  },
+  {
+    "name": "aviary",
+    "trans": [
+      "n. 鸟类饲养场；大型鸟舍"
+    ]
+  },
+  {
+    "name": "coop",
+    "trans": [
+      "vt. 把…关进笼子里；限制；拘禁 vi. [美俚]值勤警察在警车里打瞌睡"
+    ]
+  },
+  {
+    "name": "corral",
+    "trans": [
+      "n. 畜栏；环形车阵 vt. 把…关进畜栏；[美口]捕捉；把…布成车阵"
+    ]
+  },
+  {
+    "name": "fishery",
+    "trans": [
+      "n. 渔业；渔场；水产业"
+    ]
+  },
+  {
+    "name": "fold",
+    "trans": [
+      "vt. 折叠；合拢；抱住；笼罩 n. 折痕；羊栏；信徒"
+    ]
+  },
+  {
+    "name": "glade",
+    "trans": [
+      "n. 林间空地；沼泽地"
+    ]
+  },
+  {
+    "name": "habitat",
+    "trans": [
+      "n. 栖息地，产地"
+    ]
+  },
+  {
+    "name": "leviathan",
+    "trans": [
+      "n. 海中怪兽 庞然大物 adj. 极大的、强大的"
+    ]
+  },
+  {
+    "name": "acorn",
+    "trans": [
+      "n. 橡子；橡实"
+    ]
+  },
+  {
+    "name": "arboreal",
+    "trans": [
+      "adj. 树木的；栖息在树上的"
+    ]
+  },
+  {
+    "name": "arboretum",
+    "trans": [
+      "n. 树木园;植物园"
+    ]
+  },
+  {
+    "name": "asparagus",
+    "trans": [
+      "n. 芦笋"
+    ]
+  },
+  {
+    "name": "aspen",
+    "trans": [
+      "n. 白杨 adj. 白杨的"
+    ]
+  },
+  {
+    "name": "bark",
+    "trans": [
+      "vt. 咆哮；吠叫；[口]咳嗽 vi. 厉声说出；高声叫卖"
+    ]
+  },
+  {
+    "name": "botany",
+    "trans": [
+      "n. 植物学；地区植物总称"
+    ]
+  },
+  {
+    "name": "bouquet",
+    "trans": [
+      "n. 酒香；花束"
+    ]
+  },
+  {
+    "name": "bud",
+    "trans": [
+      "n. 芽，萌芽；蓓蕾 vi. 发芽，萌芽"
+    ]
+  },
+  {
+    "name": "bulb",
+    "trans": [
+      "n. 电灯泡；球状物；[植]鳞茎 vi. 生球茎；膨胀成球状"
+    ]
+  },
+  {
+    "name": "capsule",
+    "trans": [
+      "n. [医]胶囊；[航]太空舱；[植]蒴果；小容器 adj. 压缩的；概要的"
+    ]
+  },
+  {
+    "name": "chaff",
+    "trans": [
+      "n. 谷壳；糠；无价值的东西 vi. 开玩笑；打趣"
+    ]
+  },
+  {
+    "name": "chrysanthemum",
+    "trans": [
+      "n. 〈植〉菊花"
+    ]
+  },
+  {
+    "name": "cob",
+    "trans": [
+      "n. 雄天鹅；玉米穗轴；结实的矮脚马；[英]圆块 vt. 捣碎"
+    ]
+  },
+  {
+    "name": "cone",
+    "trans": [
+      "n. 圆锥体，圆锥形；球果 vt. 使成锥形"
+    ]
+  },
+  {
+    "name": "conifer",
+    "trans": [
+      "n. 针叶树；松柏科植物"
+    ]
+  },
+  {
+    "name": "core",
+    "trans": [
+      "n. 核心；果心；要点；磁心 vt. 挖...的核"
+    ]
+  },
+  {
+    "name": "cypress",
+    "trans": [
+      "n. 柏树，柏木属植物（原产北美、欧、亚）；柏树枝\r\n（用作哀悼的标志）"
+    ]
+  },
+  {
+    "name": "elm",
+    "trans": [
+      "n. 榆树；榆木 adj. 榆树的；榆木的"
+    ]
+  },
+  {
+    "name": "eucalyptus",
+    "trans": [
+      "桉树"
+    ]
+  },
+  {
+    "name": "fern",
+    "trans": [
+      "n. 蕨类植物；蕨"
+    ]
+  },
+  {
+    "name": "fig",
+    "trans": [
+      "n. [植]无花果；无价值的东西；无花果树；少许，一些；服装 vt. 打扮；使马跑快"
+    ]
+  },
+  {
+    "name": "flax",
+    "trans": [
+      "n. [植]亚麻；[植]亚麻纤维；亚麻织品；亚麻布"
+    ]
+  },
+  {
+    "name": "flora",
+    "trans": [
+      "n. 植物群；植物区系"
+    ]
+  },
+  {
+    "name": "foliage",
+    "trans": [
+      "n. 叶子(总称)；簇叶"
+    ]
+  },
+  {
+    "name": "forestry",
+    "trans": [
+      "n. 林学；林业；森林地"
+    ]
+  },
+  {
+    "name": "frond",
+    "trans": [
+      "n. [植]叶状体；（蕨类等的）叶，复叶"
+    ]
+  },
+  {
+    "name": "fungi",
+    "trans": [
+      "n. 真菌，真菌类植物 （如蘑菇、毒蕈、霉菌等）（fungu s 的复数）"
+    ]
+  },
+  {
+    "name": "gardenia",
+    "trans": [
+      "n. [植]栀子属；栀子花"
+    ]
+  },
+  {
+    "name": "genus",
+    "trans": [
+      "n. 类，种；属"
+    ]
+  },
+  {
+    "name": "germinate",
+    "trans": [
+      "v. 发芽；开始生长"
+    ]
+  },
+  {
+    "name": "ginger",
+    "trans": [
+      "n. 姜；姜黄色；精力；有姜味 vt. 用姜给…调味；使某人有活力"
+    ]
+  },
+  {
+    "name": "greenhouse",
+    "trans": [
+      "n. 温室, 花房"
+    ]
+  },
+  {
+    "name": "grove",
+    "trans": [
+      "n. 小树林；果园"
+    ]
+  },
+  {
+    "name": "gum",
+    "trans": [
+      "n. 树胶；橡皮；口香糖 vt. 使…有粘性；用胶粘，涂以树胶"
+    ]
+  },
+  {
+    "name": "herbaceous",
+    "trans": [
+      "adj. 草本的"
+    ]
+  },
+  {
+    "name": "hull",
+    "trans": [
+      "n. 船体；（果实的）外壳 vt. 去壳"
+    ]
+  },
+  {
+    "name": "husk",
+    "trans": [
+      "n. 皮；外壳；无价值之物 vt. 削皮；以粗哑的嗓音说"
+    ]
+  },
+  {
+    "name": "kernel",
+    "trans": [
+      "n. 核心，要点；精髓；内核；麦粒，谷粒；仁"
+    ]
+  },
+  {
+    "name": "maize",
+    "trans": [
+      "adj. 黄色的，玉米色的 n. 玉米；黄色，玉米色"
+    ]
+  },
+  {
+    "name": "maple",
+    "trans": [
+      "n. 枫树；淡棕色"
+    ]
+  },
+  {
+    "name": "melon",
+    "trans": [
+      "n. 瓜；甜瓜；大肚子；圆鼓鼓像瓜似的东西"
+    ]
+  },
+  {
+    "name": "menthol",
+    "trans": [
+      "n. 薄荷醇；薄荷脑"
+    ]
+  },
+  {
+    "name": "mushroom",
+    "trans": [
+      "n. 蘑菇，伞菌；蘑菇形物体；暴发户 adj. 蘑菇的；蘑菇形的；迅速生长的"
+    ]
+  },
+  {
+    "name": "needle",
+    "trans": [
+      "n. 针；指针；针状物；刺激 vi. 缝纫；做针线"
+    ]
+  },
+  {
+    "name": "nestle",
+    "trans": [
+      "v. 依偎；（舒适地）安顿"
+    ]
+  },
+  {
+    "name": "oak",
+    "trans": [
+      "n. [植]橡树；橡木家具；橡木色 adj. 栎树的；栎木制的"
+    ]
+  },
+  {
+    "name": "orchard",
+    "trans": [
+      "n. 果园；果树林"
+    ]
+  },
+  {
+    "name": "pecan",
+    "trans": [
+      "n. 美洲山核桃；美洲山核桃树"
+    ]
+  },
+  {
+    "name": "petal",
+    "trans": [
+      "n. [植]花瓣"
+    ]
+  },
+  {
+    "name": "pine",
+    "trans": [
+      "n. 松树 松木 vi. 消瘦, 憔悴; 痛苦 渴望"
+    ]
+  },
+  {
+    "name": "pod",
+    "trans": [
+      "n. 豆荚；蚕茧 vi. 结豆荚"
+    ]
+  },
+  {
+    "name": "pollen",
+    "trans": [
+      "vt. 传授花粉给 n. 花粉"
+    ]
+  },
+  {
+    "name": "raisin",
+    "trans": [
+      "n. 葡萄干"
+    ]
+  },
+  {
+    "name": "reed",
+    "trans": [
+      "n. 芦苇；簧片；牧笛；不可依靠的人 vt. 用芦苇盖；用芦苇装饰"
+    ]
+  },
+  {
+    "name": "resin",
+    "trans": [
+      "n. 树脂；松香 vt. 涂树脂；用树脂处理"
+    ]
+  },
+  {
+    "name": "rhubarb",
+    "trans": [
+      "n. 大黄；大黄的叶柄；激烈的争论"
+    ]
+  },
+  {
+    "name": "sap",
+    "trans": [
+      "n. 树液；活力；坑道；精力，元气 vt. 使衰竭，使伤元气；挖掘以破坏基础"
+    ]
+  },
+  {
+    "name": "scion",
+    "trans": [
+      "n. 后裔；接穗；幼枝"
+    ]
+  },
+  {
+    "name": "scrub",
+    "trans": [
+      "n. 用力擦洗；矮树；渺小之物 v. 用力擦洗"
+    ]
+  },
+  {
+    "name": "seedling",
+    "trans": [
+      "n. 秧苗，幼苗；树苗"
+    ]
+  },
+  {
+    "name": "shoot",
+    "trans": [
+      "vt. 射击，射中；拍摄；发芽；使爆炸；给…注射 vi. 射击；发芽；拍电影 n. 射击；摄影；狩猎；急流"
+    ]
+  },
+  {
+    "name": "shrub",
+    "trans": [
+      "n. 灌木；灌木丛"
+    ]
+  },
+  {
+    "name": "sod",
+    "trans": [
+      "n. 草地；草皮 vt. 铺上草皮；以生草土覆盖；铺草皮于"
+    ]
+  },
+  {
+    "name": "spear",
+    "trans": [
+      "n. 矛，枪 vt. 用矛刺"
+    ]
+  },
+  {
+    "name": "sprig",
+    "trans": [
+      "n. 小枝；图钉；[口]年青人；子孙 vt. 用钉子钉上；用小树枝装饰；使蔓生"
+    ]
+  },
+  {
+    "name": "sprout",
+    "trans": [
+      "v. 长芽；萌芽；迅速成长 n. 芽；年幼者"
+    ]
+  },
+  {
+    "name": "spruce",
+    "trans": [
+      "n. 赤松；云杉；虎尾枞属的植物 adj. 干净的；外表俏丽的 vi. 打扮 vt. 打扮自己"
+    ]
+  },
+  {
+    "name": "stem",
+    "trans": [
+      "n. 茎；干；船首；血统 vt. 除去…的茎；给…装柄；阻止"
+    ]
+  },
+  {
+    "name": "tare",
+    "trans": [
+      "n. 巢菜；毒麦；皮重；野碗豆 vt. 称皮重"
+    ]
+  },
+  {
+    "name": "thicket",
+    "trans": [
+      "n. 丛林；灌木丛；错综复杂"
+    ]
+  },
+  {
+    "name": "timber",
+    "trans": [
+      "n. 木料；木材"
+    ]
+  },
+  {
+    "name": "trunk",
+    "trans": [
+      "n. 树干；躯干；象鼻；汽车车尾的行李箱 vt. 把…放入旅行箱内"
+    ]
+  },
+  {
+    "name": "tuber",
+    "trans": [
+      "n. [植]块茎；[解]隆起"
+    ]
+  },
+  {
+    "name": "twig",
+    "trans": [
+      "n. 细枝; 嫩枝"
+    ]
+  },
+  {
+    "name": "vanilla",
+    "trans": [
+      "n. 香子兰，香草 adj. 香草味的"
+    ]
+  },
+  {
+    "name": "violet",
+    "trans": [
+      "n. 紫罗兰；堇菜；羞怯的人 adj. 紫罗兰色的；紫色的"
+    ]
+  },
+  {
+    "name": "willow",
+    "trans": [
+      "n. 柳木制品；柳树 adj. 柳木制的"
+    ]
+  },
+  {
+    "name": "whorl",
+    "trans": [
+      "n. 轮生体,螺纹,螺旋环,涡 v. 使成涡漩;盘旋,打转"
+    ]
+  },
+  {
+    "name": "xerophyte",
+    "trans": [
+      "n. 旱生植物"
+    ]
+  },
+  {
+    "name": "almond",
+    "trans": [
+      "n. 杏仁；扁桃；巴旦木，巴旦杏"
+    ]
+  },
+  {
+    "name": "beet",
+    "trans": [
+      "n. 甜菜；甜菜根 vt. 生火；修理；改过"
+    ]
+  },
+  {
+    "name": "blossom",
+    "trans": [
+      "vi. 开花；兴旺；发展成 n. 花；开花期；兴旺期；花开的状态"
+    ]
+  },
+  {
+    "name": "bough",
+    "trans": [
+      "n. 大树枝"
+    ]
+  },
+  {
+    "name": "cursive",
+    "trans": [
+      "n. 草书原稿；草书 adj. 草书体的；草书的"
+    ]
+  },
+  {
+    "name": "defoliate",
+    "trans": [
+      "v. (使)落叶"
+    ]
+  },
+  {
+    "name": "florescence",
+    "trans": [
+      "n. 开花；花期；全盛期"
+    ]
+  },
+  {
+    "name": "heliotrope",
+    "trans": [
+      "鸡血石"
+    ]
+  },
+  {
+    "name": "oatmeal",
+    "trans": [
+      "n. 燕麦粥；燕麦片"
+    ]
+  },
+  {
+    "name": "orchid",
+    "trans": [
+      "n. 兰花；淡紫色；兰科植物 adj. 淡紫色的"
+    ]
+  },
+  {
+    "name": "sapling",
+    "trans": [
+      "n. 树苗；年轻人"
+    ]
+  },
+  {
+    "name": "windfall",
+    "trans": [
+      "n. 被风吹落的果子；意外的收获；意外之财"
+    ]
+  },
+  {
+    "name": "pollinate",
+    "trans": [
+      "v. 给 ... 授粉"
+    ]
+  },
+  {
+    "name": "cactus",
+    "trans": [
+      "n. [植]仙人掌"
+    ]
+  },
+  {
+    "name": "ecology",
+    "trans": [
+      "n. 生态学；社会生态学"
+    ]
+  },
+  {
+    "name": "seaweed",
+    "trans": [
+      "n. 海藻，海草"
+    ]
+  },
+  {
+    "name": "agrarian",
+    "trans": [
+      "adj. 土地的；耕地的；有关土地的"
+    ]
+  },
+  {
+    "name": "agronomy",
+    "trans": [
+      "n. 农学；农艺学；农业经济学"
+    ]
+  },
+  {
+    "name": "atrophy",
+    "trans": [
+      "n. 萎缩，萎缩症；发育停止 vi. 萎缩；虚脱"
+    ]
+  },
+  {
+    "name": "barren",
+    "trans": [
+      "adj. 贫瘠的；不生育的；无益的；沉闷无趣的；空洞的 n.\r\n荒地"
+    ]
+  },
+  {
+    "name": "blight",
+    "trans": [
+      "n. 枯萎病；荒芜 vt. 使…枯萎；破坏"
+    ]
+  },
+  {
+    "name": "blighted",
+    "trans": [
+      "adj. 枯萎的；摧残的 v. 使染上枯萎病；毁坏（blight的过去式和过去分词）"
+    ]
+  },
+  {
+    "name": "cereal",
+    "trans": [
+      "n. 谷类食品；谷类，谷物；谷类植物 adj. 谷类的；谷类制成的"
+    ]
+  },
+  {
+    "name": "cultivate",
+    "trans": [
+      "vt. 耕作, 种植 陶冶思想[感情] 培养(友谊)"
+    ]
+  },
+  {
+    "name": "cultivated",
+    "trans": [
+      "adj. 栽植的；有教养的"
+    ]
+  },
+  {
+    "name": "fallow",
+    "trans": [
+      "adj. 休耕的；不活跃的 n. 休耕地；休耕"
+    ]
+  },
+  {
+    "name": "fatten",
+    "trans": [
+      "vt. 使肥沃；使充实；养肥 vi. 养肥；（靠…）发财"
+    ]
+  },
+  {
+    "name": "fertile",
+    "trans": [
+      "adj. 富饶的，肥沃的；能生育的 n. 肥沃，多产"
+    ]
+  },
+  {
+    "name": "fertilize",
+    "trans": [
+      "vt. 施肥 adj. 可施肥的;可受精的 n. 施肥"
+    ]
+  },
+  {
+    "name": "fertilizer",
+    "trans": [
+      "n. 肥料"
+    ]
+  },
+  {
+    "name": "flag",
+    "trans": [
+      "n. 旗帜，国旗；（体育运动的）信号旗，标志旗 v. 标 示；疲乏，减弱；热情衰退；引起对……的注意；挥旗指示走某个方向"
+    ]
+  },
+  {
+    "name": "flaggy",
+    "trans": [
+      "adj. 多菖蒲的；多扁石的；凋萎的"
+    ]
+  },
+  {
+    "name": "forage",
+    "trans": [
+      "n. 饲料；草料；搜索 vi. 搜寻粮草；搜寻"
+    ]
+  },
+  {
+    "name": "graft",
+    "trans": [
+      "vi. 嫁接；移植；贪污 vt. 嫁接；移植；贪污"
+    ]
+  },
+  {
+    "name": "grain",
+    "trans": [
+      "n. 粮食；颗粒；谷物；纹理 vi. 成谷粒"
+    ]
+  },
+  {
+    "name": "graze",
+    "trans": [
+      "vt. 擦伤；放牧 vi. 吃草；擦伤"
+    ]
+  },
+  {
+    "name": "husbandry",
+    "trans": [
+      "n. 农业 资源管理;妥善管理"
+    ]
+  },
+  {
+    "name": "irrigate",
+    "trans": [
+      "vt. 灌溉；冲洗；使清新 vi. 灌溉；冲洗"
+    ]
+  },
+  {
+    "name": "manure",
+    "trans": [
+      "vt. 施肥于；耕种 n. 肥料；粪肥"
+    ]
+  },
+  {
+    "name": "plough",
+    "trans": [
+      "vt. 耕；犁 vi. 用犁耕田；开路"
+    ]
+  },
+  {
+    "name": "provender",
+    "trans": [
+      "n. (家畜的)干饲料"
+    ]
+  },
+  {
+    "name": "reap",
+    "trans": [
+      "vt. 收割；收获，获得 vi. 收割，收获"
+    ]
+  },
+  {
+    "name": "scythe",
+    "trans": [
+      "n. 长柄大镰刀；钐刀 vt. 用大镰刀割"
+    ]
+  },
+  {
+    "name": "sere",
+    "trans": [
+      "adj. 干枯的，枯萎的 n. 演替系列"
+    ]
+  },
+  {
+    "name": "spackle",
+    "trans": [
+      "n. 斯百克填料(一种抹墙粉的商标名) vt. 以斯百克填料涂"
+    ]
+  },
+  {
+    "name": "sterile",
+    "trans": [
+      "adj. 不毛的；贫瘠的；不育的；无菌的；枯燥乏味的"
+    ]
+  },
+  {
+    "name": "terrace",
+    "trans": [
+      "n. 梯田；阳台；平台 vt. 使成梯田，使成阶地；使有平台屋顶"
+    ]
+  },
+  {
+    "name": "tiller",
+    "trans": [
+      "n. 舵柄；农夫 vi. 分蘖"
+    ]
+  },
+  {
+    "name": "weed",
+    "trans": [
+      "n. 杂草；野草 n. 衣服；丧服 vi. 除草；清除；淘汰"
+    ]
+  },
+  {
+    "name": "wilt",
+    "trans": [
+      "vt. 使枯萎；使畏缩；使衰弱 vi. 枯萎；畏缩；衰弱"
+    ]
+  },
+  {
+    "name": "wither",
+    "trans": [
+      "vt. 使凋谢；使畏缩；使衰弱 vi. 枯萎；凋谢；衰弱"
+    ]
+  },
+  {
+    "name": "acarpous",
+    "trans": [
+      "adj. 不结果的；无果实的"
+    ]
+  },
+  {
+    "name": "fecund",
+    "trans": [
+      "adj. 多产的；丰饶的；肥沃的；生殖力旺盛的"
+    ]
+  },
+  {
+    "name": "fodder",
+    "trans": [
+      "n. 饲料；素材 vt. 喂"
+    ]
+  },
+  {
+    "name": "granary",
+    "trans": [
+      "n. 谷仓，粮仓；盛产粮食的地区"
+    ]
+  },
+  {
+    "name": "loam",
+    "trans": [
+      "n. [地]壤土；肥土（含有黏土、沙和有机物质的土地）； [建]亚黏土 vt. 用壤土填"
+    ]
+  },
+  {
+    "name": "shrivel",
+    "trans": [
+      "vi. 枯萎；皱缩 vt. 使枯萎；使皱缩；使束手无策"
+    ]
+  },
+  {
+    "name": "thresh",
+    "trans": [
+      "v. 打谷；脱粒；反复地做"
+    ]
+  },
+  {
+    "name": "wizen",
+    "trans": [
+      "vi. 枯萎；凋谢；干瘪 vt. 使凋谢；使枯萎；使干瘪"
+    ]
+  },
+  {
+    "name": "horticulture",
+    "trans": [
+      "n. 园艺学"
+    ]
+  },
+  {
+    "name": "humus",
+    "trans": [
+      "n. 腐植土；腐殖质"
+    ]
+  },
+  {
+    "name": "plantation",
+    "trans": [
+      "n. 种植园, 大农场"
+    ]
+  },
+  {
+    "name": "prairie",
+    "trans": [
+      "n. 大草原；牧场"
+    ]
+  },
+  {
+    "name": "depressant",
+    "trans": [
+      "adj. 有镇静作用的 n. 镇静剂"
+    ]
+  },
+  {
+    "name": "abscission",
+    "trans": [
+      "n. 切断,除去"
+    ]
+  },
+  {
+    "name": "acrophobia",
+    "trans": [
+      "n. 恐高症"
+    ]
+  },
+  {
+    "name": "ail",
+    "trans": [
+      "vt. 使苦恼，使烦恼 vi. 生病"
+    ]
+  },
+  {
+    "name": "alimentary",
+    "trans": [
+      "adj. 食物的,营养的"
+    ]
+  },
+  {
+    "name": "allergic",
+    "trans": [
+      "adj. 对…过敏的；对…极讨厌的"
+    ]
+  },
+  {
+    "name": "allergy",
+    "trans": [
+      "n. 过敏症；[口]反感；厌恶"
+    ]
+  },
+  {
+    "name": "amnesia",
+    "trans": [
+      "n. [医]健忘症，记忆缺失"
+    ]
+  },
+  {
+    "name": "analgesic",
+    "trans": [
+      "n. 止痛剂,镇痛剂 adj. 止痛的；痛觉缺失的"
+    ]
+  },
+  {
+    "name": "anatomical",
+    "trans": [
+      "adj. 结构(上)的; 解剖的"
+    ]
+  },
+  {
+    "name": "anemia",
+    "trans": [
+      "n. [医]贫血；贫血症"
+    ]
+  },
+  {
+    "name": "anemic",
+    "trans": [
+      "adj. 患贫血症的，贫血的"
+    ]
+  },
+  {
+    "name": "anorexia",
+    "trans": [
+      "n. 厌食；神经性厌食症"
+    ]
+  },
+  {
+    "name": "antibiotic",
+    "trans": [
+      "n. 抗生素, 抗菌素 adj. 抗生的；抗菌的"
+    ]
+  },
+  {
+    "name": "antibody",
+    "trans": [
+      "n. 抗体"
+    ]
+  },
+  {
+    "name": "antidote",
+    "trans": [
+      "n. [医]解毒剂；解药；矫正方法"
+    ]
+  },
+  {
+    "name": "antihistamine",
+    "trans": [
+      "n. 抗组胺剂"
+    ]
+  },
+  {
+    "name": "antiseptic",
+    "trans": [
+      "n. 杀菌剂；防腐剂 adj. 杀菌的；防腐的；极为干净整洁的；冷漠的"
+    ]
+  },
+  {
+    "name": "apoplectic",
+    "trans": [
+      "adj. 激动的；愤怒得脸发红的 中风的 n. 中风患者"
+    ]
+  },
+  {
+    "name": "arthritis",
+    "trans": [
+      "n. 关节炎"
+    ]
+  },
+  {
+    "name": "aseptic",
+    "trans": [
+      "adj. 无菌的；防腐性的 n. 防腐剂"
+    ]
+  },
+  {
+    "name": "asphyxiate",
+    "trans": [
+      "v. (使)窒息"
+    ]
+  },
+  {
+    "name": "asthma",
+    "trans": [
+      "n. [医]哮喘，气喘"
+    ]
+  },
+  {
+    "name": "astringent",
+    "trans": [
+      "adj. 收敛性的；止血的；严酷的；涩味的 n. 收敛剂；止血药"
+    ]
+  },
+  {
+    "name": "balm",
+    "trans": [
+      "n. 香油；镇痛软膏；香峰草，香树膏"
+    ]
+  },
+  {
+    "name": "blotch",
+    "trans": [
+      "n. 污点；疙瘩；斑点 vt. 弄脏"
+    ]
+  },
+  {
+    "name": "carcinogen",
+    "trans": [
+      "n. 致癌物"
+    ]
+  },
+  {
+    "name": "cauterize",
+    "trans": [
+      "vt. & vi. (用腐蚀性物质或烙铁)烧灼以消毒"
+    ]
+  },
+  {
+    "name": "clinical",
+    "trans": [
+      "adj. 临床的；诊所的"
+    ]
+  },
+  {
+    "name": "collapse",
+    "trans": [
+      "vi. 倒塌；瓦解；暴跌 vt. 使倒塌，使崩溃；使萎陷"
+    ]
+  },
+  {
+    "name": "coma",
+    "trans": [
+      "n. 昏迷；彗形像差"
+    ]
+  },
+  {
+    "name": "comatose",
+    "trans": [
+      "adj. 昏睡状态的；昏迷的；麻木的；怠惰的"
+    ]
+  },
+  {
+    "name": "concussion",
+    "trans": [
+      "n. 震荡,脑震荡 冲击,震动"
+    ]
+  },
+  {
+    "name": "contagious",
+    "trans": [
+      "adj. 传染性的；感染性的"
+    ]
+  },
+  {
+    "name": "convalesce",
+    "trans": [
+      "vi. 康复"
+    ]
+  },
+  {
+    "name": "convalescent",
+    "trans": [
+      "adj. 恢复(期)的,康复期的 n. 恢复期的病人"
+    ]
+  },
+  {
+    "name": "corpuscle",
+    "trans": [
+      "n. 细胞,血球,小体"
+    ]
+  },
+  {
+    "name": "deranged",
+    "trans": [
+      "adj. 疯狂的；精神错乱的 v. 扰乱；使（精神）错乱（dera nge的过去分词和过去式）"
+    ]
+  },
+  {
+    "name": "diabetes",
+    "trans": [
+      "n. 糖尿病；多尿症"
+    ]
+  },
+  {
+    "name": "diagnose",
+    "trans": [
+      "vt. 诊断；断定 vi. 判断；诊断"
+    ]
+  },
+  {
+    "name": "dissect",
+    "trans": [
+      "vt. 切细；仔细分析 vi. 进行解剖；进行详细分析"
+    ]
+  },
+  {
+    "name": "dose",
+    "trans": [
+      "n. 剂量；一剂，一服 vi. 服药"
+    ]
+  },
+  {
+    "name": "dyslexia",
+    "trans": [
+      "n. 诵读困难；阅读障碍；难语症"
+    ]
+  },
+  {
+    "name": "dyspeptic",
+    "trans": [
+      "adj. 消化不良的；胃弱的；脾气暴躁的 n. 患消化不良的人"
+    ]
+  },
+  {
+    "name": "epidemic",
+    "trans": [
+      "adj. 流行的；传染性的 n. 流行病；传染病；风尚等的流行"
+    ]
+  },
+  {
+    "name": "fester",
+    "trans": [
+      "vi. 溃烂；化脓 vt. 使……溃烂；使……痛苦；使……恶化"
+    ]
+  },
+  {
+    "name": "fracture",
+    "trans": [
+      "n. 破裂，断裂；骨折 vi. 破裂；折断"
+    ]
+  },
+  {
+    "name": "frantic",
+    "trans": [
+      "adj. 狂乱的，疯狂的"
+    ]
+  },
+  {
+    "name": "frenetic",
+    "trans": [
+      "adj. 狂热的；发狂的 n. 疯子；狂人"
+    ]
+  },
+  {
+    "name": "fumigate",
+    "trans": [
+      "vt. 熏制；香薰；用烟熏消毒"
+    ]
+  },
+  {
+    "name": "gerontology",
+    "trans": [
+      "n. 老年医学,老人学"
+    ]
+  },
+  {
+    "name": "heal",
+    "trans": [
+      "vt. 治愈，痊愈；和解 vi. 痊愈"
+    ]
+  },
+  {
+    "name": "hemophilia",
+    "trans": [
+      "n. 血友病"
+    ]
+  },
+  {
+    "name": "hemorrhage",
+    "trans": [
+      "n. (尤指大量的)出血;失血 vi. 大出血"
+    ]
+  },
+  {
+    "name": "hemostat",
+    "trans": [
+      "n. [医]止血剂；[医]止血钳子"
+    ]
+  },
+  {
+    "name": "hypertension",
+    "trans": [
+      "n. 过度紧张；高血压"
+    ]
+  },
+  {
+    "name": "hypnotic",
+    "trans": [
+      "adj. 催眠的，催眠术的；易于催眠的 n. 安眠药；催眠状态的人"
+    ]
+  },
+  {
+    "name": "hysteria",
+    "trans": [
+      "n. 不正常的兴奋；[病]癔病，歇斯底里"
+    ]
+  },
+  {
+    "name": "immune",
+    "trans": [
+      "adj. 免疫的；免于……的，免除的 n. 免疫者；免除者"
+    ]
+  },
+  {
+    "name": "immunity",
+    "trans": [
+      "n. 免疫力；免除；豁免权"
+    ]
+  },
+  {
+    "name": "immunize",
+    "trans": [
+      "vt. 使免疫；赋予免疫性"
+    ]
+  },
+  {
+    "name": "infection",
+    "trans": [
+      "n. 传染；传染病；影响"
+    ]
+  },
+  {
+    "name": "injection",
+    "trans": [
+      "n. 注射；注射物；数学函数"
+    ]
+  },
+  {
+    "name": "inoculate",
+    "trans": [
+      "vt. 给…做预防注射"
+    ]
+  },
+  {
+    "name": "insomnia",
+    "trans": [
+      "n. 失眠症，失眠"
+    ]
+  },
+  {
+    "name": "irremediable",
+    "trans": [
+      "adj. 不能挽回的；不能补救的"
+    ]
+  },
+  {
+    "name": "lancet",
+    "trans": [
+      "n. [医]小刀，柳叶刀；尖顶窗；小枪"
+    ]
+  },
+  {
+    "name": "laxative",
+    "trans": [
+      "n. 泻药；缓泻药 adj. 通便的"
+    ]
+  },
+  {
+    "name": "mania",
+    "trans": [
+      "n. 狂热；狂躁；热衷"
+    ]
+  },
+  {
+    "name": "measly",
+    "trans": [
+      "adj. [医]患麻疹的；极少的；低贱的"
+    ]
+  },
+  {
+    "name": "monomania",
+    "trans": [
+      "n. 单狂, 偏狂"
+    ]
+  },
+  {
+    "name": "morbid",
+    "trans": [
+      "adj. 病态的；不正常的"
+    ]
+  },
+  {
+    "name": "myopia",
+    "trans": [
+      "n. 近视；目光短浅，缺乏远见"
+    ]
+  },
+  {
+    "name": "myopic",
+    "trans": [
+      "adj. [眼科]近视的；目光短浅的"
+    ]
+  },
+  {
+    "name": "narcotic",
+    "trans": [
+      "adj. 麻醉的；有麻醉作用的；催眠的 n. 麻醉药；镇静剂；起麻醉作用的事物"
+    ]
+  },
+  {
+    "name": "neurology",
+    "trans": [
+      "n. 神经病学 adj. 神经病学的 n. 神经病学家"
+    ]
+  },
+  {
+    "name": "orthodontics",
+    "trans": [
+      "n. 正牙学"
+    ]
+  },
+  {
+    "name": "overdose",
+    "trans": [
+      "vt. 配药过量；使过分沉溺 n. 药量过多（等于overdosag e）"
+    ]
+  },
+  {
+    "name": "opium",
+    "trans": [
+      "n. 鸦片；麻醉剂 adj. 鸦片的"
+    ]
+  },
+  {
+    "name": "painkiller",
+    "trans": [
+      "n. 止痛药"
+    ]
+  },
+  {
+    "name": "palliative",
+    "trans": [
+      "n. 治标药物; 缓解剂; 治标措施; 保守疗法 权宜之计; 消极措施; 缓冲剂"
+    ]
+  },
+  {
+    "name": "pallid",
+    "trans": [
+      "adj. 苍白的；暗淡的；无生气的"
+    ]
+  },
+  {
+    "name": "panacea",
+    "trans": [
+      "n. 万能药；灵丹妙药"
+    ]
+  },
+  {
+    "name": "paranoia",
+    "trans": [
+      "n. [心]偏执狂，妄想狂"
+    ]
+  },
+  {
+    "name": "paranoid",
+    "trans": [
+      "adj. 类似妄想狂的；属于偏执狂的 n. 患妄想狂的人；偏执狂患者"
+    ]
+  },
+  {
+    "name": "pasteurize",
+    "trans": [
+      "vt. 用巴氏灭菌法对(牛奶等)消毒(灭菌)"
+    ]
+  },
+  {
+    "name": "pathogen",
+    "trans": [
+      "n. 病原体；病菌"
+    ]
+  },
+  {
+    "name": "pathological",
+    "trans": [
+      "adj. 病理学的"
+    ]
+  },
+  {
+    "name": "pathology",
+    "trans": [
+      "n. 病理学"
+    ]
+  },
+  {
+    "name": "palpate",
+    "trans": [
+      "adj. 有触须的 vt. 触诊"
+    ]
+  },
+  {
+    "name": "pediatrics",
+    "trans": [
+      "n. [医]小儿科"
+    ]
+  },
+  {
+    "name": "penicillin",
+    "trans": [
+      "n. 青霉素"
+    ]
+  },
+  {
+    "name": "pharmaceutical",
+    "trans": [
+      "adj. 制药的;配药的"
+    ]
+  },
+  {
+    "name": "pharmacology",
+    "trans": [
+      "n. 药理学,药物学"
+    ]
+  },
+  {
+    "name": "plague",
+    "trans": [
+      "n. 瘟疫；灾祸；麻烦；讨厌的人 vt. 折磨；使苦恼；使得灾祸"
+    ]
+  },
+  {
+    "name": "podiatrist",
+    "trans": [
+      "n. 足病医生"
+    ]
+  },
+  {
+    "name": "prescribe",
+    "trans": [
+      "vt. & vi. 开药方; 指示 规定, 指定遵守"
+    ]
+  },
+  {
+    "name": "prescription",
+    "trans": [
+      "n. 处方；药方；对策"
+    ]
+  },
+  {
+    "name": "psychology",
+    "trans": [
+      "n. 心理；心理学"
+    ]
+  },
+  {
+    "name": "purgative",
+    "trans": [
+      "adj. 净化的；通便的；赎罪的 n. 泻剂，泻药"
+    ]
+  },
+  {
+    "name": "quarantine",
+    "trans": [
+      "n. 隔离；检疫期间；封锁交通；四十天 vt. 检疫；停止交涉 vi. 检疫"
+    ]
+  },
+  {
+    "name": "rabid",
+    "trans": [
+      "adj. 激烈的；狂暴的；偏激的；患狂犬病的"
+    ]
+  },
+  {
+    "name": "rabies",
+    "trans": [
+      "n. [医]狂犬病，恐水病"
+    ]
+  },
+  {
+    "name": "recuperate",
+    "trans": [
+      "v. （使）恢复；（使）复原"
+    ]
+  },
+  {
+    "name": "relapse",
+    "trans": [
+      "vi. 再度堕落；再陷邪道；故态复萌；旧病复发 n. 复发，再发；故态复萌；回复原状"
+    ]
+  },
+  {
+    "name": "salubrious",
+    "trans": [
+      "adj. 有益健康的；宜人的"
+    ]
+  },
+  {
+    "name": "salutary",
+    "trans": [
+      "adj. 有益的，有用的；有益健康的"
+    ]
+  },
+  {
+    "name": "salve",
+    "trans": [
+      "vt. 涂油膏；缓和 n. 药膏；安慰"
+    ]
+  },
+  {
+    "name": "scalpel",
+    "trans": [
+      "n. 解剖刀；外科手术刀"
+    ]
+  },
+  {
+    "name": "sedative",
+    "trans": [
+      "n. 能使安静的东西；镇静剂；止痛药 adj. 使镇静的；使安静的"
+    ]
+  },
+  {
+    "name": "septic",
+    "trans": [
+      "adj. 腐败的；脓毒性的；败血症的 n. 腐烂物"
+    ]
+  },
+  {
+    "name": "soporific",
+    "trans": [
+      "n. 催眠的物质、药剂等 adj. 催眠的"
+    ]
+  },
+  {
+    "name": "stammer",
+    "trans": [
+      "vi. 口吃；结结巴巴地说 vt. 口吃；结巴着说出"
+    ]
+  },
+  {
+    "name": "sterilize",
+    "trans": [
+      "vt. 使不育；杀菌 使贫瘠"
+    ]
+  },
+  {
+    "name": "sterilization",
+    "trans": [
+      "n. 杀菌,绝育"
+    ]
+  },
+  {
+    "name": "stethoscope",
+    "trans": [
+      "n. 听诊器 v. 用听诊器诊断"
+    ]
+  },
+  {
+    "name": "stimulant",
+    "trans": [
+      "n. 兴奋剂；刺激物；酒精饮料 adj. 激励的；使人兴奋的"
+    ]
+  },
+  {
+    "name": "stutter",
+    "trans": [
+      "vi. 结结巴巴地说话 n. 口吃，结巴"
+    ]
+  },
+  {
+    "name": "suffocate",
+    "trans": [
+      "vt. 使窒息；使缺氧；阻碍 vi. 窒息；窒息而亡；阻碍发展"
+    ]
+  },
+  {
+    "name": "syndrome",
+    "trans": [
+      "n. 综合征；征群；综合症状；（特定情形下人的）典型负面特征，典型负面表现"
+    ]
+  },
+  {
+    "name": "syringe",
+    "trans": [
+      "n. 注射器 vt. （用液体注射器）冲洗"
+    ]
+  },
+  {
+    "name": "therapeutic",
+    "trans": [
+      "adj. 治疗(学)的;疗法的 对身心健康有益的"
+    ]
+  },
+  {
+    "name": "tourniquet",
+    "trans": [
+      "n. [医]止血带；压脉器；压血带"
+    ]
+  },
+  {
+    "name": "ulcer",
+    "trans": [
+      "n. 溃疡；腐烂物；道德败坏"
+    ]
+  },
+  {
+    "name": "unguent",
+    "trans": [
+      "n. 药膏，软膏"
+    ]
+  },
+  {
+    "name": "vaccinate",
+    "trans": [
+      "vt. 给…接种疫苗 vi. 注射疫苗；接种疫苗"
+    ]
+  },
+  {
+    "name": "vivisection",
+    "trans": [
+      "n. 活体解剖"
+    ]
+  },
+  {
+    "name": "vaccine",
+    "trans": [
+      "n. 疫苗；牛痘苗 adj. 疫苗的；牛痘的"
+    ]
+  },
+  {
+    "name": "wan",
+    "trans": [
+      "adj. 苍白无力的，无血色的，憔悴的"
+    ]
+  },
+  {
+    "name": "wanderlust",
+    "trans": [
+      "n. 漫游癖;旅行癖 Wanderlust〈德〉旅行(流浪)癖"
+    ]
+  },
+  {
+    "name": "wholesome",
+    "trans": [
+      "adj. 有益健康的；合乎卫生的"
+    ]
+  },
+  {
+    "name": "ailment",
+    "trans": [
+      "n. 小病；不安"
+    ]
+  },
+  {
+    "name": "albino",
+    "trans": [
+      "n. 白化病者；白化体；白化现象"
+    ]
+  },
+  {
+    "name": "amputate",
+    "trans": [
+      "v. 切断；截（肢）"
+    ]
+  },
+  {
+    "name": "anodyne",
+    "trans": [
+      "n. 止痛剂；起安慰作用的事物 adj. 止痛的；安慰人的；平淡无奇的"
+    ]
+  },
+  {
+    "name": "canker",
+    "trans": [
+      "n. 溃疡；(树的)癌肿病；毒害；弊害 v. 患溃疡；腐蚀；溃烂"
+    ]
+  },
+  {
+    "name": "cordial",
+    "trans": [
+      "adj. 兴奋的；热忱的，诚恳的 n. 补品；兴奋剂；甜香酒，甘露酒"
+    ]
+  },
+  {
+    "name": "derangement",
+    "trans": [
+      "n. 精神错乱，发狂"
+    ]
+  },
+  {
+    "name": "dietetics",
+    "trans": [
+      "n. 饮食学,膳食学;营养学"
+    ]
+  },
+  {
+    "name": "dipsomania",
+    "trans": [
+      "n. 嗜酒狂"
+    ]
+  },
+  {
+    "name": "dissection",
+    "trans": [
+      "n. 解剖，切开；解剖体；详细查究"
+    ]
+  },
+  {
+    "name": "elixir",
+    "trans": [
+      "n. 不老长寿药；万能药；炼金药"
+    ]
+  },
+  {
+    "name": "gastritis",
+    "trans": [
+      "n. 胃炎"
+    ]
+  },
+  {
+    "name": "hamstring",
+    "trans": [
+      "vt. 使无能为力; 使不起作用; 削弱…的活动能力 n. 腿腱; 旁腱"
+    ]
+  },
+  {
+    "name": "hepatitis",
+    "trans": [
+      "n. 肝炎"
+    ]
+  },
+  {
+    "name": "hygiene",
+    "trans": [
+      "n. 卫生学；卫生；保健法"
+    ]
+  },
+  {
+    "name": "hypodermic",
+    "trans": [
+      "adj. (指药物、注射器等)皮下注射用的 n. 皮下注射,皮下注射器"
+    ]
+  },
+  {
+    "name": "insane",
+    "trans": [
+      "adj. 精神病的；极愚蠢的；疯狂的"
+    ]
+  },
+  {
+    "name": "lesion",
+    "trans": [
+      "n. 损害；身体上的伤害；[医]机能障碍"
+    ]
+  },
+  {
+    "name": "medicate",
+    "trans": [
+      "vt. 用药治疗；加药品于"
+    ]
+  },
+  {
+    "name": "mesmerism",
+    "trans": [
+      "n. 催眠术,催眠状态"
+    ]
+  },
+  {
+    "name": "misogamy",
+    "trans": [
+      "n. 厌恶结婚"
+    ]
+  },
+  {
+    "name": "nephritis",
+    "trans": [
+      "n. 肾炎"
+    ]
+  },
+  {
+    "name": "neurosis",
+    "trans": [
+      "n. 神经症；神经衰弱症"
+    ]
+  },
+  {
+    "name": "opiate",
+    "trans": [
+      "n. 鸦片制剂；麻醉剂；镇静剂 adj. 含鸦片的；安眠的"
+    ]
+  },
+  {
+    "name": "parturition",
+    "trans": [
+      "n. 分娩,生产"
+    ]
+  },
+  {
+    "name": "phobia",
+    "trans": [
+      "n. 恐惧症；恐怖，憎恶"
+    ]
+  },
+  {
+    "name": "sanatorium",
+    "trans": [
+      "n. 疗养院"
+    ]
+  },
+  {
+    "name": "spasmodic",
+    "trans": [
+      "adj. 痉挛的,由痉挛引起的,一阵阵的"
+    ]
+  },
+  {
+    "name": "transfuse",
+    "trans": [
+      "vt. 移注；输血；渗入；灌输"
+    ]
+  },
+  {
+    "name": "ulcerate",
+    "trans": [
+      "vi. 形成溃疡，溃烂 vt. 使腐败；使溃疡"
+    ]
+  },
+  {
+    "name": "vomit",
+    "trans": [
+      "vt. 吐出；使……呕吐 vi. 呕吐；吐出"
+    ]
+  },
+  {
+    "name": "anesthetic",
+    "trans": [
+      "n. 麻醉剂；麻药 adj. 麻醉的；无知觉的"
+    ]
+  },
+  {
+    "name": "fungicide",
+    "trans": [
+      "n. 杀真菌剂"
+    ]
+  },
+  {
+    "name": "ligature",
+    "trans": [
+      "n. 绷带；绳索；[印]连字；连接物 vt. 结扎；捆"
+    ]
+  },
+  {
+    "name": "nostrum",
+    "trans": [
+      "n. 秘方；成药；万能药"
+    ]
+  },
+  {
+    "name": "nurture",
+    "trans": [
+      "vt. 养育；鼓励；培植 n. 养育；教养；营养物"
+    ]
+  },
+  {
+    "name": "nutrient",
+    "trans": [
+      "n. 营养物；滋养物 adj. 营养的；滋养的"
+    ]
+  },
+  {
+    "name": "placebo",
+    "trans": [
+      "n. 安慰剂；为死者所诵的晚祷词"
+    ]
+  },
+  {
+    "name": "reagent",
+    "trans": [
+      "n. 试剂；反应物"
+    ]
+  },
+  {
+    "name": "eviscerate",
+    "trans": [
+      "vt. 切除…的内脏"
+    ]
+  },
+  {
+    "name": "febrile",
+    "trans": [
+      "adj. 发热的；发烧的；热病的"
+    ]
+  },
+  {
+    "name": "inflamed",
     "trans": [
       "adj. 发炎的；红肿的 v. 使燃烧；使火红；激起；使发炎\r\n（inflame的过去分词）"
     ]
@@ -6288,7 +8700,7 @@
     ]
   },
   {
-    "name": "maleﬁcent",
+    "name": "maleficent",
     "trans": [
       "adj. 有害的"
     ]
@@ -6468,7 +8880,7 @@
     ]
   },
   {
-    "name": "ﬁlibuster",
+    "name": "filibuster",
     "trans": [
       "n. 妨碍议事；妨碍议事者；掠夺兵；海盗 v. 阻挠议案通过；掠夺"
     ]
@@ -6744,7 +9156,7 @@
     ]
   },
   {
-    "name": "sacriﬁce",
+    "name": "sacrifice",
     "trans": [
       "n. 牺牲；祭品；供奉 vt. 牺牲；亏本出售；供奉 vi. 献祭；(棒球)作牺牲一击"
     ]
@@ -6984,13 +9396,13 @@
     ]
   },
   {
-    "name": "ﬁgurine",
+    "name": "figurine",
     "trans": [
       "n. 小雕像，小塑像"
     ]
   },
   {
-    "name": "ﬁligree",
+    "name": "filigree",
     "trans": [
       "n. 金银丝细工；金银丝工艺品 vt. 用金银丝细工饰品装饰"
     ]
@@ -7284,7 +9696,7 @@
     ]
   },
   {
-    "name": "ﬁnale",
+    "name": "finale",
     "trans": [
       "n. 最后乐章；最后一场；结局；尾声；终曲"
     ]
@@ -7320,7 +9732,7 @@
     ]
   },
   {
-    "name": "melliﬂuous",
+    "name": "mellifluous",
     "trans": [
       "adj. 如蜜般的；流畅的；甜美的"
     ]
@@ -7710,7 +10122,7 @@
     ]
   },
   {
-    "name": "ﬁgurative",
+    "name": "figurative",
     "trans": [
       "adj. 比喻的；象征的"
     ]
@@ -8028,7 +10440,7 @@
     ]
   },
   {
-    "name": "conﬂict",
+    "name": "conflict",
     "trans": [
       "n. 冲突，矛盾；争执；斗争 vi. 冲突，抵触；争执；战斗"
     ]
@@ -8064,13 +10476,13 @@
     ]
   },
   {
-    "name": "ﬁrearm",
+    "name": "firearm",
     "trans": [
       "n. 枪炮；火器"
     ]
   },
   {
-    "name": "ﬂak",
+    "name": "flak",
     "trans": [
       "n. [军]高射炮；谴责；抨击"
     ]
@@ -8558,7 +10970,7 @@
   {
     "name": "girth",
     "trans": [
-      "n. 周围长度；带尺；尺寸；（马等的）肚带；腰带 v. 量"
+      "n. 周围长度；带尺；尺寸；（马等的）肚带；腰带 v. 量周长；包围；给 ... 缚上肚带"
     ]
   },
   {
@@ -8739,6 +11151,12 @@
     "name": "ballerina",
     "trans": [
       "n. 芭蕾舞女演员"
+    ]
+  },
+  {
+    "name": "bard",
+    "trans": [
+      "n. 吟游诗人"
     ]
   },
   {
@@ -9240,13 +11658,13 @@
     ]
   },
   {
-    "name": "ﬁdget",
+    "name": "fidget",
     "trans": [
       "v. 烦躁，坐立不安；摆弄 n. 坐不住的人；(the fidgets) 坐立不安"
     ]
   },
   {
-    "name": "ﬁgurehead",
+    "name": "figurehead",
     "trans": [
       "n. 装饰船头的人像；傀儡领袖"
     ]
@@ -9471,6 +11889,12 @@
     "name": "illuminati",
     "trans": [
       "n. (自称)有睿智的人,先觉者,光照派"
+    ]
+  },
+  {
+    "name": "imp",
+    "trans": [
+      "n. 顽童，小淘气；小孩 vt. 给...装上翅膀；加强"
     ]
   },
   {
@@ -9798,7 +12222,7 @@
     ]
   },
   {
-    "name": "paciﬁst",
+    "name": "pacifist",
     "trans": [
       "n. 和平主义者 adj. 非战主义的"
     ]
@@ -9966,13 +12390,13 @@
     ]
   },
   {
-    "name": "proﬁteer",
+    "name": "profiteer",
     "trans": [
       "n. 奸商；投机商；牟取暴利的人 v. 投机；牟取暴利"
     ]
   },
   {
-    "name": "proﬂigate",
+    "name": "profligate",
     "trans": [
       "adj. 放荡的；不检点的；浪费的 n. 放荡者；享乐者"
     ]
@@ -10116,7 +12540,7 @@
     ]
   },
   {
-    "name": "ruﬃan",
+    "name": "ruffian",
     "trans": [
       "n. 恶棍；无赖；流氓 adj. 残暴的；凶恶的；无法无天的"
     ]
@@ -10212,7 +12636,7 @@
     ]
   },
   {
-    "name": "ingénue",
+    "name": "ingenue",
     "trans": [
       "n. 天真无邪的少女"
     ]
@@ -10302,7 +12726,7 @@
     ]
   },
   {
-    "name": "skinﬂint",
+    "name": "skinflint",
     "trans": [
       "n. 吝啬鬼"
     ]
@@ -10620,7 +13044,7 @@
     ]
   },
   {
-    "name": "conﬁdant",
+    "name": "confidant",
     "trans": [
       "n. 心腹朋友,知己"
     ]
@@ -11292,19 +13716,19 @@
     ]
   },
   {
-    "name": "ﬂare",
+    "name": "flare",
     "trans": [
       "n. 闪光；闪光信号；[天]耀斑；(衣裙等)张开 v. 闪光；闪耀；爆发；张开"
     ]
   },
   {
-    "name": "ﬂicker",
+    "name": "flicker",
     "trans": [
       "v. 闪烁，摇曳；闪现，一闪而过；忽隐忽现；快速摆动；颤动；抖动；拍动 n. （火焰，光的）闪烁，摇曳；（身体部位的）小而快的动作；（感觉或情绪的）闪现，一闪而过"
     ]
   },
   {
-    "name": "ﬂuorescent",
+    "name": "fluorescent",
     "trans": [
       "adj. 荧光的, 发荧光的"
     ]
@@ -11496,7 +13920,7 @@
     ]
   },
   {
-    "name": "conﬂagration",
+    "name": "conflagration",
     "trans": [
       "n. 大火；快速燃烧；突发；冲突"
     ]
@@ -11505,6 +13929,12 @@
     "name": "extinguish",
     "trans": [
       "vt. 使熄灭, 扑灭 使…不复存在"
+    ]
+  },
+  {
+    "name": "pyre",
+    "trans": [
+      "n. 火葬用的柴堆"
     ]
   },
   {
@@ -11544,7 +13974,7 @@
     ]
   },
   {
-    "name": "ﬂint",
+    "name": "flint",
     "trans": [
       "n. 燧石；打火石；极硬的东西"
     ]
@@ -11604,7 +14034,7 @@
     ]
   },
   {
-    "name": "nonﬂammable",
+    "name": "nonflammable",
     "trans": [
       "adj. 不燃烧的"
     ]
@@ -12036,7 +14466,7 @@
     ]
   },
   {
-    "name": "ﬂuctuation",
+    "name": "fluctuation",
     "trans": [
       "n. 波动,涨落,起伏"
     ]
@@ -12045,6 +14475,12 @@
     "name": "drain",
     "trans": [
       "vi. 排水；流干 vt. 喝光，耗尽；使流出；排掉水"
+    ]
+  },
+  {
+    "name": "drench",
+    "trans": [
+      "vt. 使湿透；给（牲畜）灌药 n. 滂沱大雨；浸液"
     ]
   },
   {
@@ -12072,7 +14508,7 @@
     ]
   },
   {
-    "name": "ﬂush",
+    "name": "flush",
     "trans": [
       "v. 脸红，发红；冲（抽水马桶）；（用水）冲洗净，冲 洗；（用水）冲走 n. 潮红，脸红；一阵强烈情感，（流露出的）一阵激情；冲（抽水马桶）；同花的一手牌 adj.\r\n【非正式】富有，很有钱（通常为短期的）；（两个表面）完全齐平"
     ]
@@ -12102,13 +14538,13 @@
     ]
   },
   {
-    "name": "inﬁltrate",
+    "name": "infiltrate",
     "trans": [
       "vt. & vi. (使)渗透;(指思想)渗入人的心中"
     ]
   },
   {
-    "name": "inﬂux",
+    "name": "influx",
     "trans": [
       "n. 流入；汇集；河流的汇集处"
     ]
@@ -12186,7 +14622,7 @@
     ]
   },
   {
-    "name": "overﬂow",
+    "name": "overflow",
     "trans": [
       "vi. 溢出；泛滥；充溢 n. 泛滥；超值；溢值；充满，洋溢"
     ]
@@ -12396,7 +14832,7 @@
     ]
   },
   {
-    "name": "riﬄe",
+    "name": "riffle",
     "trans": [
       "n. 浅滩；急流，涟漪；弹洗 vt. 迅速翻阅；使起涟漪；洗牌动作"
     ]
@@ -12528,7 +14964,7 @@
     ]
   },
   {
-    "name": "ﬁlings",
+    "name": "filings",
     "trans": [
       "n. 锉屑；锉末"
     ]
@@ -12582,13 +15018,19 @@
     ]
   },
   {
-    "name": "ﬂotsam",
+    "name": "flotsam",
     "trans": [
       "n. （遇难船的）漂流货物；浮货；废料；零碎物"
     ]
   },
   {
-    "name": "ﬂeece",
+    "name": "cinder",
+    "trans": [
+      "n. 煤渣；灰烬 vt. 用煤渣等铺"
+    ]
+  },
+  {
+    "name": "fleece",
     "trans": [
       "n. 羊毛，绒头织物；羊毛制的覆盖物 vt. 剪下羊毛；欺诈，剥削"
     ]
@@ -12690,7 +15132,7 @@
     ]
   },
   {
-    "name": "ﬂask",
+    "name": "flask",
     "trans": [
       "n. 烧瓶；长颈瓶，细颈瓶；酒瓶，携带瓶"
     ]
@@ -12882,7 +15324,7 @@
     ]
   },
   {
-    "name": "ﬂoe",
+    "name": "floe",
     "trans": [
       "n. 大浮冰；浮冰"
     ]
@@ -12990,7 +15432,7 @@
     ]
   },
   {
-    "name": "éclat",
+    "name": "eclat",
     "trans": [
       "n. 盛誉；巨大成功"
     ]
@@ -13092,7 +15534,7 @@
     ]
   },
   {
-    "name": "aﬃnity",
+    "name": "affinity",
     "trans": [
       "n. 吸引力；姻亲关系；密切关系；类同"
     ]
@@ -13136,7 +15578,7 @@
   {
     "name": "equivalent",
     "trans": [
-      "（或事物）"
+      "adj. 等同的，等效的 n. 对等的人（或事物），对应的人"
     ]
   },
   {
@@ -13488,7 +15930,7 @@
     ]
   },
   {
-    "name": "ﬁle",
+    "name": "file",
     "trans": [
       "n. 文件；档案；锉刀；文件夹 vt. 锉；琢磨；把…归档；提出"
     ]
@@ -13596,7 +16038,7 @@
     ]
   },
   {
-    "name": "riﬂe",
+    "name": "rifle",
     "trans": [
       "n. 步枪；来复枪 vt. 用步枪射击；抢夺；偷走"
     ]
@@ -13884,6 +16326,12 @@
     ]
   },
   {
+    "name": "civil",
+    "trans": [
+      "adj. 公民的；民间的；文职的；有礼貌的；根据民法的"
+    ]
+  },
+  {
     "name": "civility",
     "trans": [
       "n. 礼貌；端庄；礼仪"
@@ -13992,7 +16440,7 @@
     ]
   },
   {
-    "name": "personiﬁcation",
+    "name": "personification",
     "trans": [
       "n. 拟人；化身；典型；具体化"
     ]
@@ -14166,7 +16614,7 @@
     ]
   },
   {
-    "name": "raﬄe",
+    "name": "raffle",
     "trans": [
       "n. 抽彩售物 vt. 以抽彩方式售(物)"
     ]
@@ -14256,13 +16704,13 @@
     ]
   },
   {
-    "name": "ﬁnable",
+    "name": "finable",
     "trans": [
       "adj. 应罚款的；可提炼的；可精制的"
     ]
   },
   {
-    "name": "ﬁscal",
+    "name": "fiscal",
     "trans": [
       "adj. 国库的；会计的，财政的"
     ]
@@ -14778,7 +17226,7 @@
     ]
   },
   {
-    "name": "ﬂunk",
+    "name": "flunk",
     "trans": [
       "vi. 失败；放弃；考试不及格 vt. 使…不及格"
     ]
@@ -14799,6 +17247,12 @@
     "name": "diocesan",
     "trans": [
       "adj. 主教管区的 n. 教区主教"
+    ]
+  },
+  {
+    "name": "lectern",
+    "trans": [
+      "n. 诵经台；讲台"
     ]
   },
   {
@@ -15066,13 +17520,13 @@
     ]
   },
   {
-    "name": "ﬁnery",
+    "name": "finery",
     "trans": [
       "n. 服饰；装饰；华丽的服饰，鲜艳服装"
     ]
   },
   {
-    "name": "ﬂannel",
+    "name": "flannel",
     "trans": [
       "n. 法兰绒；法兰绒衣服；法兰绒巾 vt. 给…穿上法兰绒衣服；用法兰绒包"
     ]
@@ -15228,7 +17682,7 @@
     ]
   },
   {
-    "name": "outﬁt",
+    "name": "outfit",
     "trans": [
       "n. 全套服装，装束；套装备；成套工具；组织；公司；团队；军事单位 v. 装备，配备；为…提供设备（或服装）"
     ]
@@ -15936,7 +18390,7 @@
     ]
   },
   {
-    "name": "ﬂatcar",
+    "name": "flatcar",
     "trans": [
       "n. 无盖货车；平台型铁路货车"
     ]
@@ -16284,19 +18738,19 @@
     ]
   },
   {
-    "name": "entrée",
+    "name": "entree",
     "trans": [
       "n. 主菜"
     ]
   },
   {
-    "name": "ﬁllet",
+    "name": "fillet",
     "trans": [
       "n. 无骨的鱼或肉排"
     ]
   },
   {
-    "name": "ﬂavoring",
+    "name": "flavoring",
     "trans": [
       "n. 调味品,调味料"
     ]
@@ -16422,7 +18876,7 @@
     ]
   },
   {
-    "name": "waﬄe",
+    "name": "waffle",
     "trans": [
       "n. 华夫饼干；动听而无意义的话；无聊话 vi. 胡扯；闲聊"
     ]
@@ -16482,7 +18936,7 @@
     ]
   },
   {
-    "name": "aﬃdavit",
+    "name": "affidavit",
     "trans": [
       "n. 宣誓书"
     ]
@@ -16758,7 +19212,7 @@
     ]
   },
   {
-    "name": "reﬁnery",
+    "name": "refinery",
     "trans": [
       "n. 精炼厂；提炼厂；冶炼厂"
     ]
@@ -16866,7 +19320,7 @@
     ]
   },
   {
-    "name": "ﬂange",
+    "name": "flange",
     "trans": [
       "n. 凸缘；边缘；轮缘；法兰 vt. 给…装凸缘"
     ]
@@ -17192,7 +19646,7 @@
   {
     "name": "nick",
     "trans": [
-      "v. 刻痕；赶上；说中；欺骗；偷盗；逮捕 n. 刻痕；缺"
+      "v. 刻痕；赶上；说中；欺骗；偷盗；逮捕 n. 刻痕；缺口；情况；监狱"
     ]
   },
   {
@@ -17202,7 +19656,7 @@
     ]
   },
   {
-    "name": "oriﬁce",
+    "name": "orifice",
     "trans": [
       "n. 孔口"
     ]
@@ -17310,13 +19764,13 @@
     ]
   },
   {
-    "name": "ﬂaunt",
+    "name": "flaunt",
     "trans": [
       "vt. 炫耀；飘扬 vi. 夸耀；飘扬"
     ]
   },
   {
-    "name": "ﬂaunty",
+    "name": "flaunty",
     "trans": [
       "adj. 虚华的"
     ]
@@ -17382,7 +19836,7 @@
     ]
   },
   {
-    "name": "ﬁlament",
+    "name": "filament",
     "trans": [
       "n. 细丝；灯丝；细线；单纤维"
     ]
@@ -17466,7 +19920,7 @@
     ]
   },
   {
-    "name": "ﬁend",
+    "name": "fiend",
     "trans": [
       "n. 魔鬼；能手；成癖者"
     ]
@@ -17634,7 +20088,7 @@
     ]
   },
   {
-    "name": "précis",
+    "name": "precis",
     "trans": [
       "简要记录"
     ]
@@ -17760,7 +20214,7 @@
     ]
   },
   {
-    "name": "deﬁle",
+    "name": "defile",
     "trans": [
       "vt. 污损，弄脏；染污 n. 狭谷；隘路"
     ]
@@ -17790,19 +20244,19 @@
     ]
   },
   {
-    "name": "ﬁlth",
+    "name": "filth",
     "trans": [
       "n. 猥亵；污秽；不洁；肮脏"
     ]
   },
   {
-    "name": "ﬂaw",
+    "name": "flaw",
     "trans": [
       "n. 瑕疵，缺点；一阵狂风；短暂的风暴；裂缝，裂纹 v.使生裂缝，使有裂纹；使无效；使有缺陷 vi. 生裂缝；变得有缺陷"
     ]
   },
   {
-    "name": "ﬂeck",
+    "name": "fleck",
     "trans": [
       "n. 斑点；微粒，小片 vt. 使起斑点；使有斑驳"
     ]
@@ -17838,7 +20292,7 @@
     ]
   },
   {
-    "name": "landﬁll",
+    "name": "landfill",
     "trans": [
       "n. 垃圾堆；垃圾填埋地"
     ]
@@ -18000,7 +20454,7 @@
     ]
   },
   {
-    "name": "ragamuﬃn",
+    "name": "ragamuffin",
     "trans": [
       "n. 衣裳褴褛的而又肮脏的人(尤指儿童)"
     ]
@@ -18024,7 +20478,7 @@
     ]
   },
   {
-    "name": "ﬂuted",
+    "name": "fluted",
     "trans": [
       "adj. 有凹槽的；笛声的 v. 用长笛吹奏乐曲；用长笛般的声音说、唱（flute的过去式）"
     ]
@@ -18284,17 +20738,17 @@
   {
     "name": "slight",
     "trans": [
-      "adj. 轻微的，少量的；脆弱的；细长的；不重要的 vt. 怠"
+      "adj. 轻微的，少量的；脆弱的；细长的；不重要的 vt. 怠慢；轻视，忽略"
     ]
   },
   {
-    "name": "speciﬁc",
+    "name": "specific",
     "trans": [
       "adj. 特殊的，特定的；明确的；详细的；具有特效的 n.\r\n特效药；细节；特性"
     ]
   },
   {
-    "name": "triﬂe",
+    "name": "trifle",
     "trans": [
       "n. 琐事；少量；蛋糕 vi. 开玩笑；闲混；嘲弄"
     ]
@@ -18402,7 +20856,7 @@
     ]
   },
   {
-    "name": "ﬁnite",
+    "name": "finite",
     "trans": [
       "adj. 有限的；限定的 n. 有限之物"
     ]
@@ -18450,7 +20904,7 @@
     ]
   },
   {
-    "name": "oﬃcious",
+    "name": "officious",
     "trans": [
       "adj. 多管闲事的；乐于助人的"
     ]
@@ -18465,6 +20919,12 @@
     "name": "overexposure",
     "trans": [
       "n. 感光过度"
+    ]
+  },
+  {
+    "name": "overreach",
+    "trans": [
+      "vt. 因过于雄心勃勃而失败"
     ]
   },
   {
@@ -18606,7 +21066,7 @@
     ]
   },
   {
-    "name": "unqualiﬁed",
+    "name": "unqualified",
     "trans": [
       "adj. 不合格的；无资格的；不适任的；绝对的；无限制的"
     ]
@@ -18732,7 +21192,7 @@
     ]
   },
   {
-    "name": "inﬁnity",
+    "name": "infinity",
     "trans": [
       "n. 无穷；无限大；无限距"
     ]
@@ -18828,13 +21288,19 @@
     ]
   },
   {
-    "name": "eﬄuvia",
+    "name": "effluvia",
     "trans": [
       "n. 臭气（effluvium的复数）；没用的副产品"
     ]
   },
   {
-    "name": "ﬂagrant",
+    "name": "fetid",
+    "trans": [
+      "adj. 臭的；恶臭的；腐臭的"
+    ]
+  },
+  {
+    "name": "flagrant",
     "trans": [
       "adj. 恶名昭著的；明目张胆的"
     ]
@@ -19380,6 +21846,12 @@
     ]
   },
   {
+    "name": "offstage",
+    "trans": [
+      "n. 舞台后面；舞台内部 adj. 舞台内部的"
+    ]
+  },
+  {
     "name": "outlet",
     "trans": [
       "n. 出口，排放孔；发泄的方法；销路；电源插座；批发商店"
@@ -19562,7 +22034,7 @@
   {
     "name": "Byzantine",
     "trans": [
-      "的 n. 拜占庭人"
+      "adj. 拜占庭的；拜占庭式建筑风格的；错综复杂的；暗中的 n. 拜占庭人"
     ]
   },
   {
@@ -19748,7 +22220,7 @@
   {
     "name": "interim",
     "trans": [
-      "间时期；暂定"
+      "adj. 临时的，暂时的；中间的；间歇的 n. 过渡时期，中间时期；暂定"
     ]
   },
   {
@@ -19824,13 +22296,13 @@
     ]
   },
   {
-    "name": "superﬁcial",
+    "name": "superficial",
     "trans": [
       "adj. 表面(上)的; 表皮的 肤浅的, 浅薄的; 缺乏深度的"
     ]
   },
   {
-    "name": "superﬁciality",
+    "name": "superficiality",
     "trans": [
       "n. 表面性的事物,浅薄"
     ]
@@ -19929,6 +22401,12 @@
     "name": "antiquated",
     "trans": [
       "adj. 陈旧的；过时的；古老的；废弃的"
+    ]
+  },
+  {
+    "name": "artifact",
+    "trans": [
+      "n. 人工制品;手工艺品;加工品"
     ]
   },
   {
@@ -20052,7 +22530,7 @@
     ]
   },
   {
-    "name": "cliché",
+    "name": "cliche",
     "trans": [
       "n. 陈词滥调；铅版；陈腐思想 adj. 陈腐的"
     ]
@@ -20082,7 +22560,7 @@
     ]
   },
   {
-    "name": "ﬂuffy",
+    "name": "fluffy",
     "trans": [
       "adj. 蓬松的；松软的；毛茸茸的；无内容的"
     ]
@@ -20190,7 +22668,7 @@
     ]
   },
   {
-    "name": "ﬂeeting",
+    "name": "fleeting",
     "trans": [
       "adj. 飞逝的；转瞬间的 v. 迅速移动（fleet的ing形式）"
     ]
@@ -20334,7 +22812,7 @@
     ]
   },
   {
-    "name": "conﬁdential",
+    "name": "confidential",
     "trans": [
       "adj. 秘密的；机密的；表示信任的；获信赖的"
     ]
@@ -20568,7 +23046,7 @@
     ]
   },
   {
-    "name": "superﬂuous",
+    "name": "superfluous",
     "trans": [
       "adj. 过多的; 过剩的; 多余的"
     ]
@@ -20622,7 +23100,7 @@
     ]
   },
   {
-    "name": "ﬂoppy",
+    "name": "floppy",
     "trans": [
       "adj. 叭嗒叭嗒响的；松软的；懒散的，邋遢的 n. [口]软磁碟"
     ]
@@ -20742,13 +23220,13 @@
     ]
   },
   {
-    "name": "aﬄuence",
+    "name": "affluence",
     "trans": [
       "n. 富裕；丰富；流入；汇聚"
     ]
   },
   {
-    "name": "aﬄuent",
+    "name": "affluent",
     "trans": [
       "adj. 富裕的；丰富的；流畅的 n. 支流；富人"
     ]
@@ -20820,7 +23298,7 @@
     ]
   },
   {
-    "name": "inﬁnitesimal",
+    "name": "infinitesimal",
     "trans": [
       "adj. 极微小的 adv. 无限小地"
     ]
@@ -20886,7 +23364,7 @@
     ]
   },
   {
-    "name": "proliﬁc",
+    "name": "prolific",
     "trans": [
       "adj. 多产的；丰富的"
     ]
@@ -20922,7 +23400,7 @@
     ]
   },
   {
-    "name": "signiﬁcant",
+    "name": "significant",
     "trans": [
       "adj. 重要的；有意义的；意味深长的；显著的"
     ]
@@ -20946,19 +23424,19 @@
     ]
   },
   {
-    "name": "suﬃce",
+    "name": "suffice",
     "trans": [
       "vt. 使满足；足够…用；合格 vi. 足够；有能力"
     ]
   },
   {
-    "name": "suﬃcient",
+    "name": "sufficient",
     "trans": [
       "adj. 足够的; 充足的"
     ]
   },
   {
-    "name": "superﬂuity",
+    "name": "superfluity",
     "trans": [
       "n. 过多, 过剩 多余物, 过剩品"
     ]
@@ -21012,7 +23490,7 @@
     ]
   },
   {
-    "name": "muniﬁcent",
+    "name": "munificent",
     "trans": [
       "adj. 慷慨的；丰厚的；宽宏的"
     ]
@@ -21039,6 +23517,12 @@
     "name": "gaudy",
     "trans": [
       "adj. 华而不实的；俗丽的 n. 盛大宴会"
+    ]
+  },
+  {
+    "name": "meretricious",
+    "trans": [
+      "adj. 俗艳的,华而不实的"
     ]
   },
   {
@@ -21168,7 +23652,7 @@
     ]
   },
   {
-    "name": "conﬁguration",
+    "name": "configuration",
     "trans": [
       "n. 构造, 形状, 外貌, 轮廓"
     ]
@@ -21270,7 +23754,7 @@
     ]
   },
   {
-    "name": "proﬁle",
+    "name": "profile",
     "trans": [
       "n. 概述；简介；个人资料；印象；轮廓；面部的侧影 v.\r\n扼要介绍；概述；写简介"
     ]
@@ -21450,7 +23934,7 @@
     ]
   },
   {
-    "name": "caloriﬁc",
+    "name": "calorific",
     "trans": [
       "adj. 生热的；发热的"
     ]
@@ -21954,7 +24438,7 @@
     ]
   },
   {
-    "name": "ﬂuke",
+    "name": "fluke",
     "trans": [
       "n. 侥幸；锚爪；意外的挫折 vt. 侥幸成功；意外受挫"
     ]
@@ -22692,6 +25176,12 @@
     ]
   },
   {
+    "name": "substance",
+    "trans": [
+      "n. 实质；物质；财产；内容；重要性"
+    ]
+  },
+  {
     "name": "substantive",
     "trans": [
       "adj. 独立的；真实的；持久的；本质的；名词性的；大量的；规定义务与责任的；实质的 n. 作名词用的词或词组"
@@ -22734,7 +25224,7 @@
     ]
   },
   {
-    "name": "magniﬁcent",
+    "name": "magnificent",
     "trans": [
       "adj. 壮丽的；宏伟的；极好的"
     ]
@@ -22758,7 +25248,7 @@
     ]
   },
   {
-    "name": "ediﬁce",
+    "name": "edifice",
     "trans": [
       "n. 大厦；大建筑物"
     ]
@@ -22962,7 +25452,7 @@
     ]
   },
   {
-    "name": "ﬂourish",
+    "name": "flourish",
     "trans": [
       "v. 繁荣；昌盛；兴旺；茁壮成长；健康幸福；（为引起注意）挥舞 n.（为引起注意的）夸张动作；给人深刻印象 的行动；令人难忘的方式；（讲话或文章的）华丽辞藻，修饰；（尤指手写体的）装饰曲线；花彩字；花彩号声"
     ]
@@ -23148,7 +25638,7 @@
     ]
   },
   {
-    "name": "oﬃsh",
+    "name": "offish",
     "trans": [
       "adj. 冷漠的；不亲热的；疏远的"
     ]
@@ -23340,7 +25830,7 @@
     ]
   },
   {
-    "name": "full-ﬂedged",
+    "name": "full-fledged",
     "trans": [
       "adj. 羽毛生齐的 经过充分训练的;成熟的"
     ]
@@ -23400,7 +25890,7 @@
     ]
   },
   {
-    "name": "ﬁlial",
+    "name": "filial",
     "trans": [
       "adj. 子女的，当做子女的；孝顺的"
     ]
@@ -23538,7 +26028,7 @@
     ]
   },
   {
-    "name": "ﬂair",
+    "name": "flair",
     "trans": [
       "n. 天资;天分；眼光;才华"
     ]
@@ -23748,7 +26238,7 @@
     ]
   },
   {
-    "name": "ﬁdelity",
+    "name": "fidelity",
     "trans": [
       "n. 忠实；忠诚；准确性；保真度"
     ]
@@ -23892,7 +26382,7 @@
     ]
   },
   {
-    "name": "unﬂappable",
+    "name": "unflappable",
     "trans": [
       "adj. 不易惊慌的,镇定的"
     ]
@@ -24042,7 +26532,7 @@
     ]
   },
   {
-    "name": "proﬁcient",
+    "name": "proficient",
     "trans": [
       "adj. 精通的, 熟练的"
     ]
@@ -24144,13 +26634,13 @@
     ]
   },
   {
-    "name": "eﬃcacious",
+    "name": "efficacious",
     "trans": [
       "adj. (药、措施等)有效的"
     ]
   },
   {
-    "name": "eﬃcacy",
+    "name": "efficacy",
     "trans": [
       "n. 功效，效力"
     ]
@@ -24338,11 +26828,11 @@
   {
     "name": "subdued",
     "trans": [
-      "弱（subdue 的过去式和过去分词）"
+      "adj. 被制服的；减弱的；被抑制的 v. 使服从，压制，减弱（subdue 的过去式和过去分词）"
     ]
   },
   {
-    "name": "beneﬁcent",
+    "name": "beneficent",
     "trans": [
       "adj. 行善的 仁慈的, 慈爱的"
     ]
@@ -24519,6 +27009,12 @@
     "name": "naivety",
     "trans": [
       "n. 无邪的行为；天真烂漫（等于naivete）"
+    ]
+  },
+  {
+    "name": "prudent",
+    "trans": [
+      "adj. 谨慎的；节俭的；精明的"
     ]
   },
   {
@@ -24846,7 +27342,7 @@
     ]
   },
   {
-    "name": "muniﬁcence",
+    "name": "munificence",
     "trans": [
       "n. 慷慨给与；宽宏大量"
     ]
@@ -24924,7 +27420,7 @@
     ]
   },
   {
-    "name": "ﬂorid",
+    "name": "florid",
     "trans": [
       "adj. 气色好的；绚丽的"
     ]
@@ -24978,7 +27474,7 @@
     ]
   },
   {
-    "name": "transﬁgure",
+    "name": "transfigure",
     "trans": [
       "v. （使）改观，美化"
     ]
@@ -25218,13 +27714,13 @@
     ]
   },
   {
-    "name": "ﬂeet",
+    "name": "fleet",
     "trans": [
       "adj. 快速的，敏捷的 n. 舰队；小河；港湾"
     ]
   },
   {
-    "name": "ﬂit",
+    "name": "flit",
     "trans": [
       "vi. 轻快地飞；掠过；移居 n. 轻快的飞行；搬家"
     ]
@@ -25446,7 +27942,7 @@
     ]
   },
   {
-    "name": "conﬁdence",
+    "name": "confidence",
     "trans": [
       "n. 信任；信心, 自信；知心话, 私房话"
     ]
@@ -25458,13 +27954,13 @@
     ]
   },
   {
-    "name": "diﬃdent",
+    "name": "diffident",
     "trans": [
       "adj. 缺乏自信的,露出怯态的 adv. 胆怯地,踌躇地"
     ]
   },
   {
-    "name": "conﬁdent",
+    "name": "confident",
     "trans": [
       "adj. 确信的, 肯定的 有信心的, 自信的"
     ]
@@ -25476,7 +27972,7 @@
     ]
   },
   {
-    "name": "diﬃdence",
+    "name": "diffidence",
     "trans": [
       "n. 无自信；内向；羞怯"
     ]
@@ -25596,7 +28092,7 @@
     ]
   },
   {
-    "name": "pontiﬁcal",
+    "name": "pontifical",
     "trans": [
       "adj. 教皇的,大祭司的,主教的 傲慢的,武断的"
     ]
@@ -25986,6 +28482,12 @@
     ]
   },
   {
+    "name": "truculent",
+    "trans": [
+      "adj. 好斗的；野蛮的；言词刻毒的"
+    ]
+  },
+  {
     "name": "vicious",
     "trans": [
       "adj. 恶的, 邪恶的 残酷的, 狠毒的"
@@ -26052,7 +28554,7 @@
     ]
   },
   {
-    "name": "ﬂippant",
+    "name": "flippant",
     "trans": [
       "adj. 轻率的；嘴碎的；没礼貌的"
     ]
@@ -26328,7 +28830,7 @@
     ]
   },
   {
-    "name": "oaﬁsh",
+    "name": "oafish",
     "trans": [
       "adj. 痴呆的；畸形的"
     ]
@@ -26448,7 +28950,7 @@
     ]
   },
   {
-    "name": "ﬂamboyant",
+    "name": "flamboyant",
     "trans": [
       "adj. (人或物)显眼的, 浮夸的, 炫耀的"
     ]
@@ -26646,7 +29148,7 @@
     ]
   },
   {
-    "name": "ﬂip",
+    "name": "flip",
     "trans": [
       "vt. 轻击；掷 vi. 用指轻弹；蹦跳"
     ]
@@ -26838,25 +29340,25 @@
     ]
   },
   {
-    "name": "ﬂabby",
+    "name": "flabby",
     "trans": [
       "adj. 软弱的；松弛的；没气力的；优柔寡断的"
     ]
   },
   {
-    "name": "ﬂaccid",
+    "name": "flaccid",
     "trans": [
       "adj. 软弱的；弛缓的；无活力的"
     ]
   },
   {
-    "name": "ﬂimsy",
+    "name": "flimsy",
     "trans": [
       "adj. 脆弱的；浅薄的；易损坏的；不周密的 n. 薄纸；复写纸；打字纸"
     ]
   },
   {
-    "name": "ﬂinch",
+    "name": "flinch",
     "trans": [
       "vi. 退缩；畏惧 n. 退缩；畏惧"
     ]
@@ -27144,7 +29646,7 @@
     ]
   },
   {
-    "name": "roué",
+    "name": "roue",
     "trans": [
       "n. 放荡的或好色的男子(尤指年长的)"
     ]
@@ -27216,7 +29718,7 @@
     ]
   },
   {
-    "name": "artiﬁce",
+    "name": "artifice",
     "trans": [
       "n. 诡计；欺骗；巧妙的办法"
     ]
@@ -27270,7 +29772,7 @@
     ]
   },
   {
-    "name": "ﬁnesse",
+    "name": "finesse",
     "trans": [
       "n. 纤细；灵巧；策略 vt. 巧妙处理；以偷牌方式先出"
     ]
@@ -27408,7 +29910,7 @@
     ]
   },
   {
-    "name": "ﬁnicky",
+    "name": "finicky",
     "trans": [
       "adj. 过分讲究的；过分注意的；过分繁琐的"
     ]
@@ -27582,7 +30084,7 @@
     ]
   },
   {
-    "name": "tightﬁsted",
+    "name": "tightfisted",
     "trans": [
       "adj. 吝啬的"
     ]
@@ -28032,7 +30534,7 @@
     ]
   },
   {
-    "name": "headﬁrst",
+    "name": "headfirst",
     "trans": [
       "adv. 头向前地,不顾前后地"
     ]
@@ -28098,7 +30600,7 @@
     ]
   },
   {
-    "name": "camouﬂage",
+    "name": "camouflage",
     "trans": [
       "n. 伪装；掩饰；迷彩服 v. 伪装；欺瞒"
     ]
@@ -28146,7 +30648,7 @@
     ]
   },
   {
-    "name": "ﬁgment",
+    "name": "figment",
     "trans": [
       "n. 虚构的事；臆造的事物"
     ]
@@ -28191,6 +30693,12 @@
     "name": "pretence",
     "trans": [
       "n. 假装；虚伪；借口"
+    ]
+  },
+  {
+    "name": "pretend",
+    "trans": [
+      "vt. 假装；伪称；假扮 vi. 假装；伪称"
     ]
   },
   {
@@ -28248,7 +30756,7 @@
     ]
   },
   {
-    "name": "beatiﬁc",
+    "name": "beatific",
     "trans": [
       "adj. 快乐的；幸福的；祝福的"
     ]
@@ -28488,7 +30996,7 @@
     ]
   },
   {
-    "name": "gratiﬁcation",
+    "name": "gratification",
     "trans": [
       "n. 满意；喜悦；使人满意之事"
     ]
@@ -28928,7 +31436,7 @@
   {
     "name": "lugubrious",
     "trans": [
-      "adj. 悲哀的;阴郁的"
+      "adj. 悲哀的;阴郁的v. （尤指为法律、社会状况的改变而）激烈争论，鼓动，"
     ]
   },
   {
@@ -29148,13 +31656,13 @@
     ]
   },
   {
-    "name": "discomﬁt",
+    "name": "discomfit",
     "trans": [
       "vt. 使为难,使狼狈,使窘迫 使挫折,阻碍 挫败,阻挠"
     ]
   },
   {
-    "name": "enﬂame",
+    "name": "enflame",
     "trans": [
       "v. 燃烧"
     ]
@@ -29208,13 +31716,13 @@
     ]
   },
   {
-    "name": "inﬂame",
+    "name": "inflame",
     "trans": [
       "vt. 激怒；使燃烧；使发炎 vi. 燃烧；发炎；激动"
     ]
   },
   {
-    "name": "inﬂammation",
+    "name": "inflammation",
     "trans": [
       "n. 炎症"
     ]
@@ -29298,6 +31806,12 @@
     ]
   },
   {
+    "name": "petulance",
+    "trans": [
+      "n. 易怒；生气；性急；暴躁"
+    ]
+  },
+  {
     "name": "petulant",
     "trans": [
       "adj. 暴躁的；任性的；难以取悦的"
@@ -29334,7 +31848,7 @@
     ]
   },
   {
-    "name": "ruﬄe",
+    "name": "ruffle",
     "trans": [
       "vt. 弄皱；触怒；扰乱；迅速翻动 vi. 起皱；烦恼；连续地轻敲"
     ]
@@ -29448,13 +31962,13 @@
     ]
   },
   {
-    "name": "ﬁtful",
+    "name": "fitful",
     "trans": [
       "adj. 一阵阵的；断断续续的；不规则的；间歇的"
     ]
   },
   {
-    "name": "ﬂustered",
+    "name": "flustered",
     "trans": [
       "n. 慌乱；狼狈；混乱 v. 使酩醉；慌张；混乱"
     ]
@@ -29538,7 +32052,7 @@
     ]
   },
   {
-    "name": "deﬂated",
+    "name": "deflated",
     "trans": [
       "adj. 泄气的 v. 抽气；使泄气（deflate的过去式和过去分词）"
     ]
@@ -29700,7 +32214,7 @@
     ]
   },
   {
-    "name": "horriﬁc",
+    "name": "horrific",
     "trans": [
       "adj. 可怕的；令人毛骨悚然的"
     ]
@@ -29796,13 +32310,13 @@
     ]
   },
   {
-    "name": "aﬄict",
+    "name": "afflict",
     "trans": [
       "vt. 折磨；使痛苦；使苦恼"
     ]
   },
   {
-    "name": "aﬄiction",
+    "name": "affliction",
     "trans": [
       "n. 折磨；苦恼；苦难"
     ]
@@ -29868,7 +32382,7 @@
     ]
   },
   {
-    "name": "inﬂiction",
+    "name": "infliction",
     "trans": [
       "n. 施加,蒙受;施加的事物;痛苦的经历"
     ]
@@ -29952,7 +32466,7 @@
     ]
   },
   {
-    "name": "inﬂict",
+    "name": "inflict",
     "trans": [
       "vt. 把…强加给, 使承受, 遭受"
     ]
@@ -30438,19 +32952,19 @@
     ]
   },
   {
-    "name": "ﬂagellate",
+    "name": "flagellate",
     "trans": [
       "vt. 鞭打 adj. 像鞭子的；鞭笞的 n. (有鞭毛的)原生动物"
     ]
   },
   {
-    "name": "ﬂail",
+    "name": "flail",
     "trans": [
       "v. （尤指手臂和双腿）乱动，胡乱摆动；（尤指用棍棒）猛击，猛打 n. （尤指旧时脱粒用的）连枷"
     ]
   },
   {
-    "name": "ﬂick",
+    "name": "flick",
     "trans": [
       "vt. 轻弹；忽然摇动；轻轻拂去 vi. 轻弹；忽然摇动；轻轻拂去"
     ]
@@ -30768,7 +33282,7 @@
     ]
   },
   {
-    "name": "persiﬂage",
+    "name": "persiflage",
     "trans": [
       "n. 挖苦；嘲弄；戏谑"
     ]
@@ -31128,7 +33642,7 @@
     ]
   },
   {
-    "name": "ﬂirt",
+    "name": "flirt",
     "trans": [
       "vi. 调情；玩弄；轻率地对待；摆动 vt. 挥动；忽然弹出"
     ]
@@ -31290,7 +33804,7 @@
     ]
   },
   {
-    "name": "ﬂatter",
+    "name": "flatter",
     "trans": [
       "v. 向…谄媚，奉承，讨好；自认为，自以为是；使显得更漂亮"
     ]
@@ -31305,6 +33819,12 @@
     "name": "ingratiate",
     "trans": [
       "vt. 讨好,谄媚"
+    ]
+  },
+  {
+    "name": "ingratiating",
+    "trans": [
+      "adj. 迎合的;讨好的;奉承的"
     ]
   },
   {
@@ -31596,7 +34116,7 @@
     ]
   },
   {
-    "name": "ﬂay",
+    "name": "flay",
     "trans": [
       "vt. 剥皮；掠夺；严厉批评"
     ]
@@ -31860,7 +34380,7 @@
     ]
   },
   {
-    "name": "pontiﬁcate",
+    "name": "pontificate",
     "trans": [
       "n. 教皇的职位,主教的地位 vi. 装作教皇的说话"
     ]
@@ -31890,7 +34410,7 @@
     ]
   },
   {
-    "name": "shuﬄe",
+    "name": "shuffle",
     "trans": [
       "v. 拖着脚走；把脚动来动去；坐立不安；洗牌；把……变换位置；调动；搪塞 n. 洗牌；拖着脚走，曳行；曳步 舞，曳步动作；改组；慢切分节奏；随机播放装置"
     ]
@@ -32892,7 +35412,7 @@
     ]
   },
   {
-    "name": "snuﬄe",
+    "name": "snuffle",
     "trans": [
       "vi. 抽鼻子；带鼻音说话 n. 鼻音；鼻塞"
     ]
@@ -33156,7 +35676,7 @@
     ]
   },
   {
-    "name": "nulliﬁcation",
+    "name": "nullification",
     "trans": [
       "n. 取消； 无效； 否决原则"
     ]
@@ -33666,7 +36186,7 @@
     ]
   },
   {
-    "name": "ﬁssile",
+    "name": "fissile",
     "trans": [
       "adj. 分裂性的；易分裂的"
     ]
@@ -33900,7 +36420,7 @@
     ]
   },
   {
-    "name": "genuﬂect",
+    "name": "genuflect",
     "trans": [
       "vi. 屈膝(尤指宗教礼节中)"
     ]
@@ -34052,7 +36572,7 @@
   {
     "name": "pervert",
     "trans": [
-      "公正"
+      "vt. 使堕落, 把…引入邪路, 使变坏 滥用 做伪证；妨碍司法"
     ]
   },
   {
@@ -34080,7 +36600,7 @@
     ]
   },
   {
-    "name": "eﬄuvium",
+    "name": "effluvium",
     "trans": [
       "n. 臭气,恶臭,放出,无声放电"
     ]
@@ -34098,7 +36618,7 @@
     ]
   },
   {
-    "name": "ﬂutter",
+    "name": "flutter",
     "trans": [
       "vi. 飘动；鼓翼；烦扰 vt. 拍；使焦急；使飘动"
     ]
@@ -34958,7 +37478,7 @@
   {
     "name": "resume",
     "trans": [
-      "v. 重新开始；（中断后）继续； 恢复席位 / 地位 / 职位 n.（résumé或resumé）摘要；概述；概要；【美式】简历，履历"
+      "v. 重新开始；（中断后）继续； 恢复席位 / 地位 / 职位 n.（resume或resume）摘要；概述；概要；【美式】简历，履历"
     ]
   },
   {
@@ -34986,7 +37506,7 @@
     ]
   },
   {
-    "name": "ﬂoodgate",
+    "name": "floodgate",
     "trans": [
       "n. (江河或湖泊的)防洪闸(门),(泄)水闸门"
     ]
@@ -35160,7 +37680,7 @@
     ]
   },
   {
-    "name": "ﬁat",
+    "name": "fiat",
     "trans": [
       "n. 命令；许可；政法 vt. 批准；颁布"
     ]
@@ -35304,7 +37824,7 @@
     ]
   },
   {
-    "name": "deﬂect",
+    "name": "deflect",
     "trans": [
       "vt. 使偏斜；使转向；使弯曲 vi. 偏斜；转向"
     ]
@@ -35370,7 +37890,7 @@
     ]
   },
   {
-    "name": "ﬂout",
+    "name": "flout",
     "trans": [
       "v. 藐视；轻视；嘲笑 n. 嘲弄；轻视"
     ]
@@ -35516,11 +38036,11 @@
   {
     "name": "entry",
     "trans": [
-      "续"
+      "n. 入口；进入；登记；条目；对土地的侵占；[商]报关手"
     ]
   },
   {
-    "name": "ratiﬁcation",
+    "name": "ratification",
     "trans": [
       "n. 正式批准;认可"
     ]
@@ -35700,6 +38220,12 @@
     ]
   },
   {
+    "name": "impunity",
+    "trans": [
+      "n. 不受惩罚；无患；免罚"
+    ]
+  },
+  {
     "name": "remission",
     "trans": [
       "n. 缓和, 减轻"
@@ -35730,7 +38256,7 @@
     ]
   },
   {
-    "name": "ﬁasco",
+    "name": "fiasco",
     "trans": [
       "n. 惨败"
     ]
@@ -36054,7 +38580,7 @@
     ]
   },
   {
-    "name": "conﬁne",
+    "name": "confine",
     "trans": [
       "vt. 限制；禁闭 n. 范围；界限；约束；限制"
     ]
@@ -36090,7 +38616,7 @@
     ]
   },
   {
-    "name": "qualiﬁed",
+    "name": "qualified",
     "trans": [
       "adj. 有资格的；有保留的；有限制的；能胜任的"
     ]
@@ -36618,6 +39144,18 @@
     ]
   },
   {
+    "name": "vignette",
+    "trans": [
+      "n. 装饰图案；小插图 vt. 把……印放为虚光照，晕映"
+    ]
+  },
+  {
+    "name": "hallowed",
+    "trans": [
+      "adj. 神圣的，神圣化的"
+    ]
+  },
+  {
     "name": "revere",
     "trans": [
       "vt. 尊敬；崇敬；敬畏"
@@ -36930,7 +39468,7 @@
     ]
   },
   {
-    "name": "protégé",
+    "name": "protege",
     "trans": [
       "n. 门生"
     ]
@@ -37698,7 +40236,7 @@
     ]
   },
   {
-    "name": "deﬁance",
+    "name": "defiance",
     "trans": [
       "n. 蔑视；挑战；反抗"
     ]
@@ -37706,7 +40244,7 @@
   {
     "name": "defy",
     "trans": [
-      "住 n. 挑战；对抗"
+      "vt. 藐视；公然反抗；挑衅；使落空；经受住；顶住；抗住 n. 挑战；对抗"
     ]
   },
   {
@@ -37872,7 +40410,7 @@
     ]
   },
   {
-    "name": "ﬁrebrand",
+    "name": "firebrand",
     "trans": [
       "n. 火把；在燃烧的木柴；煽动者"
     ]
@@ -37890,13 +40428,13 @@
     ]
   },
   {
-    "name": "ﬁ",
+    "name": "perfidious",
     "trans": [
       "adj. 不诚实的;背信弃义的"
     ]
   },
   {
-    "name": "perﬁdy",
+    "name": "perfidy",
     "trans": [
       "n. 不诚实；背信弃义"
     ]
@@ -38442,7 +40980,7 @@
     ]
   },
   {
-    "name": "ﬁxate",
+    "name": "fixate",
     "trans": [
       "vi. 注视；固定下来 vt. 注视…；使固定"
     ]
@@ -38676,13 +41214,13 @@
     ]
   },
   {
-    "name": "aﬃliate",
+    "name": "affiliate",
     "trans": [
       "v. （使）附属，隶属；加入，加盟，并入；接纳；紧密联系 n. 分支机构；子公司；分社；联号"
     ]
   },
   {
-    "name": "aﬃliation",
+    "name": "affiliation",
     "trans": [
       "n. 加入；入会；联系；附属机构，分公司，分部；结交，交往"
     ]
@@ -38736,7 +41274,7 @@
     ]
   },
   {
-    "name": "conﬂate",
+    "name": "conflate",
     "trans": [
       "vt. 合并；异文合并"
     ]
@@ -38838,7 +41376,7 @@
     ]
   },
   {
-    "name": "conﬂuence",
+    "name": "confluence",
     "trans": [
       "n. (河流的)汇合处,汇流处,交汇处 (事物的)汇合,会聚,汇集;\r\n汇流"
     ]
@@ -39204,13 +41742,13 @@
     ]
   },
   {
-    "name": "ﬂatulence",
+    "name": "flatulence",
     "trans": [
       "n. 胃肠气胀 浮夸;自负"
     ]
   },
   {
-    "name": "inﬂate",
+    "name": "inflate",
     "trans": [
       "vt. 使充气；使通货膨胀 vi. 膨胀；充气"
     ]
@@ -39420,7 +41958,7 @@
     ]
   },
   {
-    "name": "baﬄe",
+    "name": "baffle",
     "trans": [
       "vt. 使…困惑；使…受挫折；用挡板控制 n. 挡板；困惑"
     ]
@@ -39528,7 +42066,7 @@
     ]
   },
   {
-    "name": "ﬂuster",
+    "name": "fluster",
     "trans": [
       "vt. 使激动；使慌张；使酩醉 n. 慌乱，混乱；狼狈；激动"
     ]
@@ -39546,7 +42084,7 @@
     ]
   },
   {
-    "name": "aﬃx",
+    "name": "affix",
     "trans": [
       "vt. 粘上；署名；将罪责加之于 n. [语]词缀；附加物"
     ]
@@ -39780,7 +42318,7 @@
     ]
   },
   {
-    "name": "disﬁgure",
+    "name": "disfigure",
     "trans": [
       "vt. 损毁…的外形, 使变丑"
     ]
@@ -39903,6 +42441,12 @@
     "name": "debark",
     "trans": [
       "vt. 使下船；使登陆；卸 vi. 登陆"
+    ]
+  },
+  {
+    "name": "dismantle",
+    "trans": [
+      "vt. 拆开, 拆卸 废除, 取消"
     ]
   },
   {
@@ -40320,7 +42864,7 @@
     ]
   },
   {
-    "name": "beneﬁciary",
+    "name": "beneficiary",
     "trans": [
       "n. 受惠者；受益人"
     ]
@@ -40908,7 +43452,7 @@
     ]
   },
   {
-    "name": "conﬁde",
+    "name": "confide",
     "trans": [
       "vt. 吐露；委托 vi. 信赖；吐露秘密"
     ]
@@ -41163,6 +43707,12 @@
     "name": "abominate",
     "trans": [
       "vt. 憎恶, 厌恶, 不喜欢 n. 憎恶者, 厌恶者"
+    ]
+  },
+  {
+    "name": "blase",
+    "trans": [
+      "玩厌倦了，对某事物不稀罕，认为司空见惯"
     ]
   },
   {
@@ -41484,7 +44034,7 @@
     ]
   },
   {
-    "name": "stiﬂe",
+    "name": "stifle",
     "trans": [
       "vt. 使窒息；扼杀；扑灭；抑制 vi. 窒息 n. (马的)后膝关节"
     ]
@@ -41628,7 +44178,7 @@
     ]
   },
   {
-    "name": "ﬂight",
+    "name": "flight",
     "trans": [
       "n. 飞行；班机；逃走 vt. 使惊飞；射击"
     ]
@@ -41832,7 +44382,7 @@
     ]
   },
   {
-    "name": "ﬂatten",
+    "name": "flatten",
     "trans": [
       "vt. 使……平坦；击败，摧毁 vi. 变平；变单调"
     ]
@@ -42042,13 +44592,13 @@
     ]
   },
   {
-    "name": "certiﬁcation",
+    "name": "certification",
     "trans": [
       "n. 证明;鉴定;证书"
     ]
   },
   {
-    "name": "conﬁrm",
+    "name": "confirm",
     "trans": [
       "vt. 确认；批准；证实；确定；使巩固"
     ]
@@ -42864,7 +45414,7 @@
     ]
   },
   {
-    "name": "ﬂippancy",
+    "name": "flippancy",
     "trans": [
       "n. 无礼；轻率 无礼的行动(或言语)；轻率的行动(或言语)"
     ]
@@ -43104,7 +45654,7 @@
     ]
   },
   {
-    "name": "fact-ﬁnding",
+    "name": "fact-finding",
     "trans": [
       "adj. 调查实情的"
     ]
@@ -43530,7 +46080,7 @@
     ]
   },
   {
-    "name": "eﬃgy",
+    "name": "effigy",
     "trans": [
       "n. 雕像，肖像"
     ]
@@ -43764,6 +46314,12 @@
     ]
   },
   {
+    "name": "somnolent",
+    "trans": [
+      "adj. 催眠的，想睡的"
+    ]
+  },
+  {
     "name": "compress",
     "trans": [
       "vi. 受压缩小 vt. 压缩，压紧；精简"
@@ -43986,7 +46542,7 @@
     ]
   },
   {
-    "name": "preﬁgure",
+    "name": "prefigure",
     "trans": [
       "vt. 预示,预兆 n. 预示,预兆;预想 adj. 预示的,预兆的"
     ]
@@ -45564,13 +48120,13 @@
     ]
   },
   {
-    "name": "deﬁciency",
+    "name": "deficiency",
     "trans": [
       "n. 缺乏, 不足, 短缺"
     ]
   },
   {
-    "name": "deﬁcit",
+    "name": "deficit",
     "trans": [
       "n. 赤字；不足额"
     ]
@@ -45618,7 +48174,7 @@
     ]
   },
   {
-    "name": "insuﬃcient",
+    "name": "insufficient",
     "trans": [
       "adj. 不足的"
     ]
@@ -45690,25 +48246,25 @@
     ]
   },
   {
-    "name": "deﬁned",
+    "name": "defined",
     "trans": [
       "adj. 清晰的，轮廓分明的；有定义的，确定的 v. 给...下定义；使明确；使...的轮廓分明（define的过去分词）"
     ]
   },
   {
-    "name": "deﬁnite",
+    "name": "definite",
     "trans": [
       "adj. 确切的；一定的"
     ]
   },
   {
-    "name": "deﬁnition",
+    "name": "definition",
     "trans": [
       "n. 定义, 释义 清晰(度), 鲜明(度) 清楚的说明; 轮廓"
     ]
   },
   {
-    "name": "deﬁnitive",
+    "name": "definitive",
     "trans": [
       "adj. 权威性的；明确的；确定的；决定性的 n. 限定词"
     ]
@@ -45810,7 +48366,7 @@
     ]
   },
   {
-    "name": "identiﬁable",
+    "name": "identifiable",
     "trans": [
       "adj. 可以确认的"
     ]
@@ -45894,7 +48450,7 @@
     ]
   },
   {
-    "name": "beﬁtting",
+    "name": "befitting",
     "trans": [
       "adj. 适合的,合适的,适当的"
     ]
@@ -46248,7 +48804,7 @@
     ]
   },
   {
-    "name": "backﬁre",
+    "name": "backfire",
     "trans": [
       "vi. 放出逆火；预先放火；产生出乎意料及事与愿违的结果 n. 逆火，回火"
     ]
@@ -46302,7 +48858,7 @@
     ]
   },
   {
-    "name": "ﬂexible",
+    "name": "flexible",
     "trans": [
       "adj. 灵活的；柔韧的；易弯曲的"
     ]
@@ -46506,7 +49062,7 @@
     ]
   },
   {
-    "name": "unjustiﬁed",
+    "name": "unjustified",
     "trans": [
       "adj. 不公正的; 无正当理由的"
     ]
@@ -46848,7 +49404,7 @@
     ]
   },
   {
-    "name": "fulﬁl",
+    "name": "fulfil",
     "trans": [
       "vt. 履行；实践；满足；完成"
     ]
@@ -46920,7 +49476,7 @@
     ]
   },
   {
-    "name": "uniﬁcation",
+    "name": "unification",
     "trans": [
       "n. 统一,联合,一致"
     ]
@@ -47055,6 +49611,12 @@
     "name": "eccentric",
     "trans": [
       "adj. 古怪的, 怪癖的; 异乎寻常的"
+    ]
+  },
+  {
+    "name": "exotic",
+    "trans": [
+      "adj. 外来的；异国的；异国情调的"
     ]
   },
   {
@@ -47250,13 +49812,13 @@
     ]
   },
   {
-    "name": "justiﬁable",
+    "name": "justifiable",
     "trans": [
       "adj. 可证明为正当的;有理由的 合法的"
     ]
   },
   {
-    "name": "justiﬁcation",
+    "name": "justification",
     "trans": [
       "n. 理由；辩护；认为有理，认为正当；释罪"
     ]
@@ -47424,6 +49986,12 @@
     ]
   },
   {
+    "name": "convertible",
+    "trans": [
+      "adj. 可改变的；可转换的；同意义的 n. 敞篷车"
+    ]
+  },
+  {
     "name": "deteriorate",
     "trans": [
       "vi.恶化"
@@ -47454,19 +50022,19 @@
     ]
   },
   {
-    "name": "ﬁckle",
+    "name": "fickle",
     "trans": [
       "adj. 易变的；浮躁的；变幻无常的"
     ]
   },
   {
-    "name": "ﬂuctuate",
+    "name": "fluctuate",
     "trans": [
       "vi. 波动；动摇；起伏 vt. 使动摇"
     ]
   },
   {
-    "name": "ﬂux",
+    "name": "flux",
     "trans": [
       "n. 流量；流出；变迁；不稳定 vt. 使熔融；用焊剂处理"
     ]
@@ -47592,7 +50160,7 @@
     ]
   },
   {
-    "name": "reshuﬄe",
+    "name": "reshuffle",
     "trans": [
       "v. 重新洗牌；改组 n. 改组；重新安排"
     ]
@@ -47946,19 +50514,19 @@
     ]
   },
   {
-    "name": "muﬄe",
+    "name": "muffle",
     "trans": [
       "v. 围裹；抑制；发低沉的声音"
     ]
   },
   {
-    "name": "muﬄed",
+    "name": "muffled",
     "trans": [
       "adj. 听不清的；蒙住的 v. 裹住；蒙住…的头；捂住…的嘴；压抑（感情等）；使（声音）低沉（muffle的过去式）"
     ]
   },
   {
-    "name": "muﬄer",
+    "name": "muffler",
     "trans": [
       "n. 围巾；面纱；厚手套；消音器"
     ]
@@ -47966,7 +50534,7 @@
   {
     "name": "muted",
     "trans": [
-      "adj. 无言的；柔和的；趋缓的 v. 消除声音；使柔和（mut"
+      "adj. 无言的；柔和的；趋缓的 v. 消除声音；使柔和"
     ]
   },
   {
@@ -48147,6 +50715,12 @@
     "name": "metamorphosis",
     "trans": [
       "n. 变形(尤指从蛹变为昆虫) (性格、环境等的)改变"
+    ]
+  },
+  {
+    "name": "rarefy",
+    "trans": [
+      "vt. 使纯化；变稀薄；精选 vi. 变稀薄；纯化"
     ]
   },
   {
@@ -48444,7 +51018,7 @@
     ]
   },
   {
-    "name": "discomﬁture",
+    "name": "discomfiture",
     "trans": [
       "n. 崩溃;大败;挫败 困惑;狼狈"
     ]
@@ -48540,13 +51114,13 @@
     ]
   },
   {
-    "name": "ﬂagging",
+    "name": "flagging",
     "trans": [
       "adj. 下垂的；衰弱的 n. 石板路；铺砌石板"
     ]
   },
   {
-    "name": "inﬁrm",
+    "name": "infirm",
     "trans": [
       "adj. 衰弱的；意志薄弱的；不坚固的"
     ]
@@ -48654,7 +51228,7 @@
     ]
   },
   {
-    "name": "ﬁlch",
+    "name": "filch",
     "trans": [
       "vt. 偷窃；窃取"
     ]
@@ -48705,6 +51279,12 @@
     "name": "shoplift",
     "trans": [
       "vt. 从商店中偷商品 vi. 从商店中偷商品"
+    ]
+  },
+  {
+    "name": "snitch",
+    "trans": [
+      "vi. 告密；进行小偷小摸 vt. 偷；顺手牵羊"
     ]
   },
   {
@@ -48774,7 +51354,7 @@
     ]
   },
   {
-    "name": "proﬂigacy",
+    "name": "profligacy",
     "trans": [
       "n. 放荡；不检点；浪费"
     ]
@@ -48798,7 +51378,7 @@
     ]
   },
   {
-    "name": "conﬁscate",
+    "name": "confiscate",
     "trans": [
       "vt. 没收, 充公"
     ]
@@ -49070,7 +51650,7 @@
   {
     "name": "enclave",
     "trans": [
-      "n. 飞地（指在本国境内的隶属另一国的一块领土）；被"
+      "n. 飞地（指在本国境内的隶属另一国的一块领土）；被包围的领土；被包围物"
     ]
   },
   {
@@ -49512,7 +52092,7 @@
     ]
   },
   {
-    "name": "artiﬁcial",
+    "name": "artificial",
     "trans": [
       "adj. 人造的；虚伪的；武断的"
     ]
@@ -49560,7 +52140,7 @@
     ]
   },
   {
-    "name": "ﬁctitious",
+    "name": "fictitious",
     "trans": [
       "adj. 假的, 虚构的, 编造的, 假设的, 假装的"
     ]
@@ -49656,7 +52236,7 @@
     ]
   },
   {
-    "name": "mortiﬁcation",
+    "name": "mortification",
     "trans": [
       "n. 屈辱；禁欲；[医]坏疽"
     ]
@@ -49770,7 +52350,7 @@
     ]
   },
   {
-    "name": "aﬃrm",
+    "name": "affirm",
     "trans": [
       "vt. 断言；肯定 vi. 断言；确认"
     ]
@@ -49884,13 +52464,13 @@
     ]
   },
   {
-    "name": "veriﬁed",
+    "name": "verified",
     "trans": [
       "adj. 已查清的，已证实的"
     ]
   },
   {
-    "name": "aﬃrmation",
+    "name": "affirmation",
     "trans": [
       "n. 肯定；确认 证实；批准 (不经宣誓而作的)证词"
     ]
