@@ -2814,7 +2814,17 @@ const programming: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'code',
   },
-
+  {
+    id: 'childCode004',
+    name: 'Arduino',
+    description: 'Arduino常见词',
+    category: '代码练习',
+    tags: ['少儿编程', 'Arduino'],
+    url: '/dicts/arduino_keywords.json',
+    length: 78,
+    language: 'en',
+    languageCategory: 'code',
+  },
   {
     id: 'jsArray',
     name: 'JS: Array',

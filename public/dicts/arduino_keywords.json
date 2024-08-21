@@ -1,0 +1,470 @@
+[
+    {
+        "name": "do",
+        "trans": [
+            "做; 执行代码块"
+        ]
+    },
+    {
+        "name": "if",
+        "trans": [
+            "如果; 条件语句"
+        ]
+    },
+    {
+        "name": "for",
+        "trans": [
+            "循环; 循环结构"
+        ]
+    },
+    {
+        "name": "abs",
+        "trans": [
+            "绝对值; 返回绝对值"
+        ]
+    },
+    {
+        "name": "max",
+        "trans": [
+            "最大; 返回最大值"
+        ]
+    },
+    {
+        "name": "sin",
+        "trans": [
+            "正弦; 计算角度的正弦值"
+        ]
+    },
+    {
+        "name": "int",
+        "trans": [
+            "整数; 定义整数变量"
+        ]
+    },
+    {
+        "name": "LOW",
+        "trans": [
+            "低; 低电平"
+        ]
+    },
+    {
+        "name": "min",
+        "trans": [
+            "最小; 返回最小值"
+        ]
+    },
+    {
+        "name": "map",
+        "trans": [
+            "映射; 将一个范围内的值映射到另一个范围"
+        ]
+    },
+    {
+        "name": "tan",
+        "trans": [
+            "正切; 计算角度的正切值"
+        ]
+    },
+    {
+        "name": "pow",
+        "trans": [
+            "幂; 计算一个数的幂"
+        ]
+    },
+    {
+        "name": "bit",
+        "trans": [
+            "位; 单个二进制位"
+        ]
+    },
+    {
+        "name": "cos",
+        "trans": [
+            "余弦; 计算角度的余弦值"
+        ]
+    },
+    {
+        "name": "true",
+        "trans": [
+            "真; 布尔值“真”"
+        ]
+    },
+    {
+        "name": "data",
+        "trans": [
+            "数据; 存储在变量中的信息"
+        ]
+    },
+    {
+        "name": "void",
+        "trans": [
+            "无效; 表示无返回值"
+        ]
+    },
+    {
+        "name": "else",
+        "trans": [
+            "否则; 条件的替代分支"
+        ]
+    },
+    {
+        "name": "word",
+        "trans": [
+            "单词; 16位无符号数据类型"
+        ]
+    },
+    {
+        "name": "sqrt",
+        "trans": [
+            "平方根; 计算平方根"
+        ]
+    },
+    {
+        "name": "HIGH",
+        "trans": [
+            "高; 高电平"
+        ]
+    },
+    {
+        "name": "case",
+        "trans": [
+            "情况; switch语句中的情况"
+        ]
+    },
+    {
+        "name": "long",
+        "trans": [
+            "长; 定义长整数变量"
+        ]
+    },
+    {
+        "name": "code",
+        "trans": [
+            "代码; 编程指令"
+        ]
+    },
+    {
+        "name": "tone",
+        "trans": [
+            "音调; 生成音频频率"
+        ]
+    },
+    {
+        "name": "char",
+        "trans": [
+            "字符; 定义字符变量"
+        ]
+    },
+    {
+        "name": "byte",
+        "trans": [
+            "字节; 8位无符号数据类型"
+        ]
+    },
+    {
+        "name": "array",
+        "trans": [
+            "数组; 元素的集合"
+        ]
+    },
+    {
+        "name": "index",
+        "trans": [
+            "索引; 数组中的位置"
+        ]
+    },
+    {
+        "name": "const",
+        "trans": [
+            "常量; 常量值"
+        ]
+    },
+    {
+        "name": "float",
+        "trans": [
+            "浮点; 定义浮点变量"
+        ]
+    },
+    {
+        "name": "INPUT",
+        "trans": [
+            "输入; 将引脚设置为输入"
+        ]
+    },
+    {
+        "name": "maker",
+        "trans": [
+            "制造者; 指制造者或创建者"
+        ]
+    },
+    {
+        "name": "types",
+        "trans": [
+            "类型; 变量的不同类型"
+        ]
+    },
+    {
+        "name": "break",
+        "trans": [
+            "中断; 退出循环或switch"
+        ]
+    },
+    {
+        "name": "while",
+        "trans": [
+            "当; 条件为真时循环"
+        ]
+    },
+    {
+        "name": "false",
+        "trans": [
+            "假; 布尔值“假”"
+        ]
+    },
+    {
+        "name": "delay",
+        "trans": [
+            "延迟; 暂停程序执行"
+        ]
+    },
+    {
+        "name": "sizeof",
+        "trans": [
+            "大小; 返回数据类型的大小"
+        ]
+    },
+    {
+        "name": "static",
+        "trans": [
+            "静态; 在函数调用之间保留变量值"
+        ]
+    },
+    {
+        "name": "noTone",
+        "trans": [
+            "无音调; 停止声音生成"
+        ]
+    },
+    {
+        "name": "millis",
+        "trans": [
+            "毫秒; 返回经过的毫秒数"
+        ]
+    },
+    {
+        "name": "micros",
+        "trans": [
+            "微秒; 返回经过的微秒数"
+        ]
+    },
+    {
+        "name": "switch",
+        "trans": [
+            "开关; 选择要执行的代码块"
+        ]
+    },
+    {
+        "name": "define",
+        "trans": [
+            "定义; 定义宏"
+        ]
+    },
+    {
+        "name": "Stream",
+        "trans": [
+            "流; 处理数据输入/输出"
+        ]
+    },
+    {
+        "name": "double",
+        "trans": [
+            "双精度; 定义双精度浮点变量"
+        ]
+    },
+    {
+        "name": "bitSet",
+        "trans": [
+            "设置位; 在特定位置设置位"
+        ]
+    },
+    {
+        "name": "OUTPUT",
+        "trans": [
+            "输出; 将引脚设置为输出"
+        ]
+    },
+    {
+        "name": "random",
+        "trans": [
+            "随机; 生成随机数"
+        ]
+    },
+    {
+        "name": "Serial",
+        "trans": [
+            "串行; 处理串行通信"
+        ]
+    },
+    {
+        "name": "string",
+        "trans": [
+            "字符串; 字符序列"
+        ]
+    },
+    {
+        "name": "return",
+        "trans": [
+            "返回; 退出函数并可选地返回值"
+        ]
+    },
+    {
+        "name": "boolean",
+        "trans": [
+            "布尔值; 定义布尔变量"
+        ]
+    },
+    {
+        "name": "pulseIn",
+        "trans": [
+            "脉冲输入; 读取引脚上的脉冲宽度"
+        ]
+    },
+    {
+        "name": "lowByte",
+        "trans": [
+            "低字节; 返回值的低字节"
+        ]
+    },
+    {
+        "name": "bitRead",
+        "trans": [
+            "读取位; 读取特定位上的值"
+        ]
+    },
+    {
+        "name": "shiftIn",
+        "trans": [
+            "移入; 逐位移入数据"
+        ]
+    },
+    {
+        "name": "arduino",
+        "trans": [
+            "arduino; 微控制器平台"
+        ]
+    },
+    {
+        "name": "include",
+        "trans": [
+            "包含; 在程序中包含文件"
+        ]
+    },
+    {
+        "name": "pinMode",
+        "trans": [
+            "引脚模式; 将引脚配置为输入或输出"
+        ]
+    },
+    {
+        "name": "shiftOut",
+        "trans": [
+            "移出; 逐位移出数据"
+        ]
+    },
+    {
+        "name": "volatile",
+        "trans": [
+            "易变的; 表示变量可能会意外更改"
+        ]
+    },
+    {
+        "name": "bitClear",
+        "trans": [
+            "清除位; 清除特定位上的值"
+        ]
+    },
+    {
+        "name": "unsigned",
+        "trans": [
+            "无符号; 表示变量不能为负值"
+        ]
+    },
+    {
+        "name": "continue",
+        "trans": [
+            "继续; 跳过当前循环的剩余部分"
+        ]
+    },
+    {
+        "name": "bitWrite",
+        "trans": [
+            "写入位; 在特定位上写入值"
+        ]
+    },
+    {
+        "name": "highByte",
+        "trans": [
+            "高字节; 返回值的高字节"
+        ]
+    },
+    {
+        "name": "constrain",
+        "trans": [
+            "限制; 将值限制在范围内"
+        ]
+    },
+    {
+        "name": "reference",
+        "trans": [
+            "参考; 指向变量或函数"
+        ]
+    },
+    {
+        "name": "analogRead",
+        "trans": [
+            "模拟读取; 从模拟引脚读取值"
+        ]
+    },
+    {
+        "name": "randomSeed",
+        "trans": [
+            "随机种子; 设置生成随机数的起始点"
+        ]
+    },
+    {
+        "name": "digitalRead",
+        "trans": [
+            "数字读取; 从数字引脚读取值"
+        ]
+    },
+    {
+        "name": "analogWrite",
+        "trans": [
+            "模拟写入; 向引脚写入模拟值"
+        ]
+    },
+    {
+        "name": "digitalWrite",
+        "trans": [
+            "数字写入; 向引脚写入数字值"
+        ]
+    },
+    {
+        "name": "detachInterrupt",
+        "trans": [
+            "分离中断; 禁用引脚上的中断"
+        ]
+    },
+    {
+        "name": "attachInterrupt",
+        "trans": [
+            "连接中断; 启用引脚上的中断"
+        ]
+    },
+    {
+        "name": "delayMicroseconds",
+        "trans": [
+            "微秒延迟; 暂停程序执行几微秒"
+        ]
+    }
+]
