@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="./docs/README_EN.md">English</a>
+  <a href="./docs/README_JP.md">日本語</a>
 </p>
 
 <p align="center">
@@ -182,6 +183,7 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 - 人教版英语 3-9 年级
 - 王陆雅思王听力语料库 [@Saigyouji_WKKun](https://github.com/ggehuliang)
 - 日语常见词、N1 ～ N5 [@xiaojia](https://github.com/wetery)
+- 哈萨克语基础 3000 词(哈拼版) 来源于 [@Elgar](https://github.com/Elgar17) 由 [@Herbert He](https://github.com/HerbertHe) 通过 [哈拼](https://ha-pin.js.org) 技术支持
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出
 

@@ -1,9 +1,9 @@
 export * from './resource'
 
-export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de'
-export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de'
-export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de'
-export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code'
+export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk'
+export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk'
+export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de' | 'kk' | 'hapin'
+export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code' | 'kk'
 
 type Pronunciation2PhoneticMap = Record<PronunciationType, PhoneticType>
 
@@ -14,6 +14,8 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   zh: 'zh',
   ja: 'ja',
   de: 'de',
+  hapin: 'hapin',
+  kk: 'kk',
 }
 
 export type Word = {

@@ -82,6 +82,15 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  hapin: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '哈拼',
+        pron: 'hapin',
+      },
+    ],
+  },
   zh: {
     defaultPronIndex: 0,
     pronunciation: [
@@ -97,6 +106,15 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       {
         name: '日语',
         pron: 'ja',
+      },
+    ],
+  },
+  kk: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '哈萨克语',
+        pron: 'kk',
       },
     ],
   },

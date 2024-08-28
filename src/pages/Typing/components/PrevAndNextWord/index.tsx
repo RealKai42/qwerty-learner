@@ -27,7 +27,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   const headWord = useMemo(() => {
     if (!word) return ''
 
-    const showWord = currentLanguage === 'romaji' ? word.notation : word.name
+    const showWord = ['romaji', 'hapin'].includes(currentLanguage) ? word.notation : word.name
 
     if (type === 'prev') return showWord
 

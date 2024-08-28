@@ -44,7 +44,7 @@ export default function ViewSetting() {
               <div className="flex h-5 w-full items-center justify-between">
                 <Slider.Root
                   value={[fontSizeConfig.foreignFont]}
-                  min={40}
+                  min={20}
                   max={96}
                   step={4}
                   className="slider"
