@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { useDeleteWordRecord } from '@/utils/db'
 import type { SortingState } from '@tanstack/react-table'
 import { flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table'
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 interface DataTableProps {
   data: ErrorColumn[]
@@ -13,15 +13,10 @@ interface DataTableProps {
   error: unknown
 }
 
-export function ErrorTable({ data: initialData, isLoading, error }: DataTableProps) {
+export function ErrorTable({ data, isLoading, error }: DataTableProps) {
   const { deleteWordRecord } = useDeleteWordRecord()
 
   const [sorting, setSorting] = useState<SortingState>([])
-  const [data, setData] = useState(initialData)
-
-  useEffect(() => {
-    setData(initialData)
-  }, [initialData])
 
   const columns = useMemo(() => errorColumns(deleteWordRecord), [deleteWordRecord])
 

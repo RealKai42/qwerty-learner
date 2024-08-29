@@ -24,7 +24,6 @@ const ErrorRow: FC<IErrorRowProps> = ({ record, onDelete }) => {
     recordErrorBookAction('detail')
   }, [record, setCurrentRowDetail])
 
-  console.log('record', record)
   return (
     <li
       className="opacity-85 flex w-full cursor-pointer items-center justify-between rounded-lg bg-white px-6 py-3 text-black shadow-md dark:bg-gray-800 dark:text-white"

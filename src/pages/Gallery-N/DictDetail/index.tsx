@@ -31,10 +31,10 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
 
   const chapter = useMemo(() => (dict.id === currentDictId ? currentChapter : 0), [currentChapter, currentDictId, dict.id])
   const { errorWordData, isLoading, error } = useErrorWordData(dict)
-  const [deleteWordCount] = useAtom(deleteWordCountAtom)
+
   const tableData = useMemo(() => {
     return getRowsFromErrorWordData(errorWordData, dict.id)
-  }, [errorWordData, dict.id, deleteWordCount])
+  }, [errorWordData, dict.id])
 
   // console.log(dict, 'bb') // 可以删除这行，除非您还需要它
   const onChangeChapter = useCallback(
