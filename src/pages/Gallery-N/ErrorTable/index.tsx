@@ -2,9 +2,10 @@ import type { ErrorColumn } from './columns'
 import { errorColumns } from './columns'
 import { LoadingUI } from '@/components/Loading'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+import { useDeleteWordRecord } from '@/utils/db'
 import type { SortingState } from '@tanstack/react-table'
 import { flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table'
-import { useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 
 interface DataTableProps {
   data: ErrorColumn[]
@@ -12,17 +13,28 @@ interface DataTableProps {
   error: unknown
 }
 
-export function ErrorTable({ data, isLoading, error }: DataTableProps) {
+export function ErrorTable({ data: initialData, isLoading, error }: DataTableProps) {
+  const { deleteWordRecord } = useDeleteWordRecord()
+
   const [sorting, setSorting] = useState<SortingState>([])
+  const [data, setData] = useState(initialData)
+
+  useEffect(() => {
+    setData(initialData)
+  }, [initialData])
+
+  const columns = useMemo(() => errorColumns(deleteWordRecord), [deleteWordRecord])
+
   const table = useReactTable({
     data,
-    columns: errorColumns,
+    columns,
     getCoreRowModel: getCoreRowModel(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
     state: {
       sorting,
     },
+    autoResetPageIndex: true, // 添加这行
   })
 
   return (
@@ -54,7 +66,6 @@ export function ErrorTable({ data, isLoading, error }: DataTableProps) {
             table.getRowModel().rows.map((row) => (
               <TableRow key={row.id} data-state={row.getIsSelected() && 'selected'}>
                 {row.getVisibleCells().map((cell) => {
-                  console.log(cell)
                   return (
                     <TableCell
                       key={cell.id}

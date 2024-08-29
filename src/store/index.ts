@@ -112,3 +112,4 @@ export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_STA
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
+export const deleteWordCountAtom = atom(0)

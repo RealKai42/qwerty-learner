@@ -6,14 +6,12 @@ import useErrorWordData from '../hooks/useErrorWords'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Tabs, TabsContent } from '@/components/ui/tabs'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
-import { currentChapterAtom, currentDictIdAtom, reviewModeInfoAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, deleteWordCountAtom, reviewModeInfoAtom } from '@/store'
 import type { Dictionary } from '@/typings'
-import { useDeleteWordRecord } from '@/utils/db'
 import range from '@/utils/range'
 import { useAtom, useSetAtom } from 'jotai'
 import { useCallback, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import DeleteIcon from '~icons/fa/trash'
 import IcOutlineCollectionsBookmark from '~icons/ic/outline-collections-bookmark'
 import MajesticonsPaperFoldTextLine from '~icons/majesticons/paper-fold-text-line'
 import PajamasReviewList from '~icons/pajamas/review-list'
@@ -33,8 +31,12 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
 
   const chapter = useMemo(() => (dict.id === currentDictId ? currentChapter : 0), [currentChapter, currentDictId, dict.id])
   const { errorWordData, isLoading, error } = useErrorWordData(dict)
-  const tableData = useMemo(() => getRowsFromErrorWordData(errorWordData), [errorWordData])
+  const [deleteWordCount] = useAtom(deleteWordCountAtom)
+  const tableData = useMemo(() => {
+    return getRowsFromErrorWordData(errorWordData, dict.id)
+  }, [errorWordData, dict.id, deleteWordCount])
 
+  // console.log(dict, 'bb') // 可以删除这行，除非您还需要它
   const onChangeChapter = useCallback(
     (index: number) => {
       setCurrentDictId(dict.id)
@@ -44,7 +46,6 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
     },
     [dict.id, navigate, setCurrentChapter, setCurrentDictId, setReviewModeInfo],
   )
-  const deleteWord = useDeleteWordRecord()
 
   return (
     <div className="flex flex-col rounded-[4rem] px-4 py-3 pl-5 text-gray-800 dark:text-gray-300">

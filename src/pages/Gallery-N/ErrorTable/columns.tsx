@@ -1,6 +1,8 @@
 import type { TErrorWordData } from '../hooks/useErrorWords'
 import { Button } from '@/components/ui/button'
+import { useDeleteWordRecord } from '@/utils/db'
 import type { ColumnDef } from '@tanstack/react-table'
+import DeleteIcon from '~icons/fa/trash'
 import PhArrowsDownUpFill from '~icons/ph/arrows-down-up-fill'
 
 export type ErrorColumn = {
@@ -8,9 +10,10 @@ export type ErrorColumn = {
   trans: string
   errorCount: number
   errorChar: string[]
+  dictId: string
 }
 
-export const errorColumns: ColumnDef<ErrorColumn>[] = [
+export const errorColumns = (deleteWordRecord: (word: string, dictId: string) => Promise<number | undefined>): ColumnDef<ErrorColumn>[] => [
   {
     accessorKey: 'word',
     size: 100,
@@ -56,21 +59,22 @@ export const errorColumns: ColumnDef<ErrorColumn>[] = [
   },
   {
     accessorKey: 'delete',
-    header: '删除',
+    header: '',
     size: 80,
     cell: ({ row }) => {
-      return <p></p>
+      return <DeleteIcon className="cursor-pointer" onClick={() => deleteWordRecord(row.original.word, row.original.dictId)} />
     },
   },
 ]
 
-export function getRowsFromErrorWordData(data: TErrorWordData[]): ErrorColumn[] {
+export function getRowsFromErrorWordData(data: TErrorWordData[], dictId: string): ErrorColumn[] {
   return data.map((item) => {
     return {
       word: item.word,
       trans: item.originData.trans.join('，') ?? '',
       errorCount: item.errorCount,
       errorChar: item.errorChar,
+      dictId: dictId,
     }
   })
 }
