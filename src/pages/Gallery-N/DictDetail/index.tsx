@@ -8,10 +8,12 @@ import { Tabs, TabsContent } from '@/components/ui/tabs'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 import { currentChapterAtom, currentDictIdAtom, reviewModeInfoAtom } from '@/store'
 import type { Dictionary } from '@/typings'
+import { useDeleteWordRecord } from '@/utils/db'
 import range from '@/utils/range'
 import { useAtom, useSetAtom } from 'jotai'
 import { useCallback, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import DeleteIcon from '~icons/fa/trash'
 import IcOutlineCollectionsBookmark from '~icons/ic/outline-collections-bookmark'
 import MajesticonsPaperFoldTextLine from '~icons/majesticons/paper-fold-text-line'
 import PajamasReviewList from '~icons/pajamas/review-list'
@@ -42,6 +44,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
     },
     [dict.id, navigate, setCurrentChapter, setCurrentDictId, setReviewModeInfo],
   )
+  const deleteWord = useDeleteWordRecord()
 
   return (
     <div className="flex flex-col rounded-[4rem] px-4 py-3 pl-5 text-gray-800 dark:text-gray-300">

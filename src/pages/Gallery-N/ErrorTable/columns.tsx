@@ -54,6 +54,14 @@ export const errorColumns: ColumnDef<ErrorColumn>[] = [
       )
     },
   },
+  {
+    accessorKey: 'delete',
+    header: '删除',
+    size: 80,
+    cell: ({ row }) => {
+      return <p></p>
+    },
+  },
 ]
 
 export function getRowsFromErrorWordData(data: TErrorWordData[]): ErrorColumn[] {

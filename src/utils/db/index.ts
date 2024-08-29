@@ -6,7 +6,7 @@ import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext } from 'react'
+import { useCallback, useContext, useState } from 'react'
 
 class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, number>
@@ -119,4 +119,20 @@ export function useSaveWordRecord() {
   )
 
   return saveWordRecord
+}
+
+export function useDeleteWordRecord() {
+  const [deleteCount, setDeleteCount] = useState(0)
+
+  const deleteWordRecord = useCallback(async (word: string, dict: string) => {
+    try {
+      const deletedCount = await db.wordRecords.where({ word, dict }).delete()
+      setDeleteCount((prev) => prev + 1) // 触发状态更新
+      return deletedCount
+    } catch (error) {
+      console.error(`删除单词记录时出错：`, error)
+    }
+  }, [])
+
+  return { deleteWordRecord, deleteCount }
 }
