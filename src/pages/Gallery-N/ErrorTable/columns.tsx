@@ -10,7 +10,6 @@ export type ErrorColumn = {
   trans: string
   errorCount: number
   errorChar: string[]
-  dictId: string
 }
 
 export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnDef<ErrorColumn>[] => [
@@ -78,14 +77,13 @@ export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnD
   },
 ]
 
-export function getRowsFromErrorWordData(data: TErrorWordData[], dictId: string): ErrorColumn[] {
+export function getRowsFromErrorWordData(data: TErrorWordData[]): ErrorColumn[] {
   return data.map((item) => {
     return {
       word: item.word,
       trans: item.originData.trans.join('，') ?? '',
       errorCount: item.errorCount,
       errorChar: item.errorChar,
-      dictId: dictId,
     }
   })
 }

@@ -36,8 +36,8 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
   const { errorWordData, isLoading, error } = useErrorWordData(dict, reload)
 
   const tableData = useMemo(() => {
-    return getRowsFromErrorWordData(errorWordData, dict.id)
-  }, [errorWordData, dict.id])
+    return getRowsFromErrorWordData(errorWordData)
+  }, [errorWordData])
 
   const onDelete = useCallback(
     async (word: string) => {
