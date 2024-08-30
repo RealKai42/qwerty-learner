@@ -19,7 +19,7 @@ export type TErrorWordData = {
   latestErrorTime: number
 }
 
-export default function useErrorWordData(dict: Dictionary) {
+export default function useErrorWordData(dict: Dictionary, reload: boolean) {
   const { data: wordList, error, isLoading } = useSWR(dict?.url, wordListFetcher)
 
   const [errorWordData, setErrorData] = useState<TErrorWordData[]>([])
@@ -82,7 +82,7 @@ export default function useErrorWordData(dict: Dictionary) {
 
         setErrorData(res)
       })
-  }, [dict.id, wordList])
+  }, [dict.id, wordList, reload])
 
   return { errorWordData, isLoading, error }
 }

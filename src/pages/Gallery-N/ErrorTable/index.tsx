@@ -4,25 +4,29 @@ import { LoadingUI } from '@/components/Loading'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import type { SortingState } from '@tanstack/react-table'
 import { flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 
 interface DataTableProps {
   data: ErrorColumn[]
   isLoading: boolean
   error: unknown
+  onDelete: (word: string) => Promise<void>
 }
 
-export function ErrorTable({ data, isLoading, error }: DataTableProps) {
+export function ErrorTable({ data, isLoading, error, onDelete }: DataTableProps) {
   const [sorting, setSorting] = useState<SortingState>([])
+  const columns = useMemo(() => errorColumns(onDelete), [onDelete])
+
   const table = useReactTable({
     data,
-    columns: errorColumns,
+    columns,
     getCoreRowModel: getCoreRowModel(),
     onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
     state: {
       sorting,
     },
+    autoResetPageIndex: true,
   })
 
   return (
@@ -53,18 +57,20 @@ export function ErrorTable({ data, isLoading, error }: DataTableProps) {
           {table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
               <TableRow key={row.id} data-state={row.getIsSelected() && 'selected'}>
-                {row.getVisibleCells().map((cell) => (
-                  <TableCell
-                    key={cell.id}
-                    {...{
-                      style: {
-                        width: cell.column.getSize(),
-                      },
-                    }}
-                  >
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </TableCell>
-                ))}
+                {row.getVisibleCells().map((cell) => {
+                  return (
+                    <TableCell
+                      key={cell.id}
+                      {...{
+                        style: {
+                          width: cell.column.getSize(),
+                        },
+                      }}
+                    >
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </TableCell>
+                  )
+                })}
               </TableRow>
             ))
           ) : (

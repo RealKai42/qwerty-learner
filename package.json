@@ -81,7 +81,7 @@
     ]
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.56",
+    "@iconify/json": "^2.2.242",
     "@playwright/test": "^1.40.1",
     "@svgr/core": "^7.0.0",
     "@svgr/plugin-jsx": "^7.0.0",
