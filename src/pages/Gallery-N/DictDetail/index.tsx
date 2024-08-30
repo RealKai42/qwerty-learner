@@ -43,6 +43,15 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
     [dict.id, navigate, setCurrentChapter, setCurrentDictId, setReviewModeInfo],
   )
 
+  const handleTabChange = useCallback(
+    (value: Tab) => {
+      if (value !== curTab) {
+        setCurTab(value)
+      }
+    },
+    [curTab],
+  )
+
   return (
     <div className="flex flex-col rounded-[4rem] px-4 py-3 pl-5 text-gray-800 dark:text-gray-300">
       <div className="text relative flex h-40 flex-col gap-2">
@@ -51,24 +60,30 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
         <p>共 {dict.length} 词</p>
         <p>{dict.description}</p>
         <div className="absolute bottom-5 right-4">
-          <ToggleGroup
-            type="single"
-            value={curTab}
-            onValueChange={(value: Tab) => {
-              setCurTab(value)
-            }}
-          >
-            <ToggleGroupItem value="chapters">
+          <ToggleGroup type="single" value={curTab} onValueChange={handleTabChange}>
+            <ToggleGroupItem
+              value={Tab.Chapters}
+              disabled={curTab === Tab.Chapters}
+              className={`${curTab === Tab.Chapters ? 'bg-primary text-primary-foreground' : ''} disabled:opacity-100`}
+            >
               <MajesticonsPaperFoldTextLine className="mr-1.5 text-gray-500" />
               章节选择
             </ToggleGroupItem>
             {errorWordData.length > 0 && (
               <>
-                <ToggleGroupItem value="errors">
+                <ToggleGroupItem
+                  value={Tab.Errors}
+                  disabled={curTab === Tab.Errors}
+                  className={`${curTab === Tab.Errors ? 'bg-primary text-primary-foreground' : ''} disabled:opacity-100`}
+                >
                   <IcOutlineCollectionsBookmark className="mr-1.5 text-gray-500" />
                   查看错题
                 </ToggleGroupItem>
-                <ToggleGroupItem value="review">
+                <ToggleGroupItem
+                  value={Tab.Review}
+                  disabled={curTab === Tab.Review}
+                  className={`${curTab === Tab.Review ? 'bg-primary text-primary-foreground' : ''} disabled:opacity-100`}
+                >
                   <PajamasReviewList className="mr-1.5 text-gray-500" />
                   错题回顾
                 </ToggleGroupItem>
