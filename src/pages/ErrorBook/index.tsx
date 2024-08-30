@@ -5,11 +5,10 @@ import Pagination, { ITEM_PER_PAGE } from './Pagination'
 import RowDetail from './RowDetail'
 import { currentRowDetailAtom } from './store'
 import type { groupedWordRecords } from './type'
-import { deleteWordCountAtom } from '@/store'
 import { db, useDeleteWordRecord } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { useAtom, useAtomValue } from 'jotai'
+import { useAtomValue } from 'jotai'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import IconX from '~icons/tabler/x'
@@ -22,7 +21,7 @@ export function ErrorBook() {
   const navigate = useNavigate()
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
-  const [deleteWordCount] = useAtom(deleteWordCountAtom)
+  const [reload, setReload] = useState(false)
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -87,10 +86,11 @@ export function ErrorBook() {
 
         setGroupedRecords(groups)
       })
-  }, [deleteWordCount])
+  }, [reload])
 
   const handleDelete = async (word: string, dict: string) => {
     await deleteWordRecord(word, dict)
+    setReload((prev) => !prev)
   }
 
   return (

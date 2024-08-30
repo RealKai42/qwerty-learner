@@ -2,12 +2,13 @@ import { LoadingWordUI } from './LoadingWordUI'
 import useGetWord from './hooks/useGetWord'
 import { currentRowDetailAtom } from './store'
 import type { groupedWordRecords } from './type'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { recordErrorBookAction } from '@/utils'
 import { useSetAtom } from 'jotai'
 import type { FC } from 'react'
 import { useCallback } from 'react'
-import DeleteIcon from '~icons/fa/trash'
+import DeleteIcon from '~icons/weui/delete-filled'
 
 type IErrorRowProps = {
   record: groupedWordRecords
@@ -42,7 +43,16 @@ const ErrorRow: FC<IErrorRowProps> = ({ record, onDelete }) => {
           onDelete()
         }}
       >
-        <DeleteIcon></DeleteIcon>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <DeleteIcon />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Delete Records</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </span>
     </li>
   )

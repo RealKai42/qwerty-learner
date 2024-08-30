@@ -1,9 +1,9 @@
 import type { TErrorWordData } from '../hooks/useErrorWords'
 import { Button } from '@/components/ui/button'
-import { useDeleteWordRecord } from '@/utils/db'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import type { ColumnDef } from '@tanstack/react-table'
-import DeleteIcon from '~icons/fa/trash'
 import PhArrowsDownUpFill from '~icons/ph/arrows-down-up-fill'
+import DeleteIcon from '~icons/weui/delete-filled'
 
 export type ErrorColumn = {
   word: string
@@ -13,7 +13,7 @@ export type ErrorColumn = {
   dictId: string
 }
 
-export const errorColumns = (deleteWordRecord: (word: string, dictId: string) => Promise<number | undefined>): ColumnDef<ErrorColumn>[] => [
+export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnDef<ErrorColumn>[] => [
   {
     accessorKey: 'word',
     size: 100,
@@ -62,7 +62,18 @@ export const errorColumns = (deleteWordRecord: (word: string, dictId: string) =>
     header: '',
     size: 80,
     cell: ({ row }) => {
-      return <DeleteIcon className="cursor-pointer" onClick={() => deleteWordRecord(row.original.word, row.original.dictId)} />
+      return (
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <DeleteIcon className="cursor-pointer" onClick={() => onDelete(row.original.word)} />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Delete Records</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      )
     },
   },
 ]

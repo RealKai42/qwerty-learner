@@ -1,9 +1,7 @@
-import { deleteWordCountAtom } from '@/store'
 import type { Dictionary, Word } from '@/typings'
 import { db } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
 import { wordListFetcher } from '@/utils/wordListFetcher'
-import { useAtom } from 'jotai'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 
@@ -21,11 +19,10 @@ export type TErrorWordData = {
   latestErrorTime: number
 }
 
-export default function useErrorWordData(dict: Dictionary) {
+export default function useErrorWordData(dict: Dictionary, reload: boolean) {
   const { data: wordList, error, isLoading } = useSWR(dict?.url, wordListFetcher)
 
   const [errorWordData, setErrorData] = useState<TErrorWordData[]>([])
-  const [deleteWordCount] = useAtom(deleteWordCountAtom)
 
   useEffect(() => {
     if (!wordList) return
@@ -85,7 +82,7 @@ export default function useErrorWordData(dict: Dictionary) {
 
         setErrorData(res)
       })
-  }, [dict.id, wordList, deleteWordCount])
+  }, [dict.id, wordList, reload])
 
   return { errorWordData, isLoading, error }
 }

@@ -2,23 +2,20 @@ import type { ErrorColumn } from './columns'
 import { errorColumns } from './columns'
 import { LoadingUI } from '@/components/Loading'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-import { useDeleteWordRecord } from '@/utils/db'
 import type { SortingState } from '@tanstack/react-table'
 import { flexRender, getCoreRowModel, getSortedRowModel, useReactTable } from '@tanstack/react-table'
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 
 interface DataTableProps {
   data: ErrorColumn[]
   isLoading: boolean
   error: unknown
+  onDelete: (word: string) => Promise<void>
 }
 
-export function ErrorTable({ data, isLoading, error }: DataTableProps) {
-  const { deleteWordRecord } = useDeleteWordRecord()
-
+export function ErrorTable({ data, isLoading, error, onDelete }: DataTableProps) {
   const [sorting, setSorting] = useState<SortingState>([])
-
-  const columns = useMemo(() => errorColumns(deleteWordRecord), [deleteWordRecord])
+  const columns = useMemo(() => errorColumns(onDelete), [onDelete])
 
   const table = useReactTable({
     data,
@@ -29,7 +26,7 @@ export function ErrorTable({ data, isLoading, error }: DataTableProps) {
     state: {
       sorting,
     },
-    autoResetPageIndex: true, // 添加这行
+    autoResetPageIndex: true,
   })
 
   return (

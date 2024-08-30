@@ -2,11 +2,11 @@ import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, L
 import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
-import { currentChapterAtom, currentDictIdAtom, deleteWordCountAtom, isReviewModeAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store'
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
-import { useAtom, useAtomValue } from 'jotai'
-import { useCallback, useContext, useState } from 'react'
+import { useAtomValue } from 'jotai'
+import { useCallback, useContext } from 'react'
 
 class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, number>
@@ -122,20 +122,14 @@ export function useSaveWordRecord() {
 }
 
 export function useDeleteWordRecord() {
-  const [, setDeleteWordCount] = useAtom(deleteWordCountAtom)
-
-  const deleteWordRecord = useCallback(
-    async (word: string, dict: string) => {
-      try {
-        const deletedCount = await db.wordRecords.where({ word, dict }).delete()
-        setDeleteWordCount((prev) => prev + 1) // 更新原子状态
-        return deletedCount
-      } catch (error) {
-        console.error(`删除单词记录时出错：`, error)
-      }
-    },
-    [setDeleteWordCount],
-  )
+  const deleteWordRecord = useCallback(async (word: string, dict: string) => {
+    try {
+      const deletedCount = await db.wordRecords.where({ word, dict }).delete()
+      return deletedCount
+    } catch (error) {
+      console.error(`删除单词记录时出错：`, error)
+    }
+  }, [])
 
   return { deleteWordRecord }
 }
