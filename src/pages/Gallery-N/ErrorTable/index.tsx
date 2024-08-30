@@ -78,8 +78,8 @@ export function ErrorTable({ data, isLoading, error }: DataTableProps) {
             ))
           ) : (
             <TableRow>
-              <TableCell colSpan={errorColumns.length} className="h-[28rem] text-center">
-                {isLoading ? <LoadingUI /> : error ? '好像遇到错误啦！尝试刷新下' : '暂无数据, 快去练习吧！'}
+              <TableCell colSpan={table.getAllColumns().length} className="h-[22rem] text-center">
+                {isLoading ? <LoadingUI /> : error ? '好像遇到错误啦！尝试刷新下' : ' 暂无数据, 快去练习吧！'}
               </TableCell>
             </TableRow>
           )}
