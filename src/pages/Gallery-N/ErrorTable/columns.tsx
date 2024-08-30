@@ -42,16 +42,21 @@ export const errorColumns = (deleteWordRecord: (word: string, dictId: string) =>
         </Button>
       )
     },
+    cell: ({ row }) => {
+      return <span className="flex justify-center">{row.original.errorCount} </span>
+    },
   },
   {
     accessorKey: 'errorChar',
     header: '易错字母',
-    size: 80,
+    size: 100,
     cell: ({ row }) => {
       return (
         <p>
           {(row.getValue('errorChar') as string[]).map((char, index) => (
-            <kbd key={`${char}-${index}`}>{char + ' '}</kbd>
+            <kbd className="flex justify-center" key={`${char}-${index}`}>
+              {char + ' '}
+            </kbd>
           ))}
         </p>
       )
@@ -60,7 +65,7 @@ export const errorColumns = (deleteWordRecord: (word: string, dictId: string) =>
   {
     accessorKey: 'delete',
     header: '',
-    size: 80,
+    size: 40,
     cell: ({ row }) => {
       return <DeleteIcon className="cursor-pointer" onClick={() => deleteWordRecord(row.original.word, row.original.dictId)} />
     },
