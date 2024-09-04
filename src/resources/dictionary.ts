@@ -3433,6 +3433,21 @@ const kazakhHapinDicts: DictionaryResource[] = [
   },
 ]
 
+//印尼语高频词汇
+const indonesianDicts: DictionaryResource[] = [
+  {
+    id: 'indonesian_highFrequency_3043',
+    name: '印尼语高频词汇',
+    description: '印尼语常用单词及中文解释',
+    category: '印尼语',
+    tags: ['基础'],
+    url: '/dicts/Indonesian.json',
+    length: 3043,
+    language: 'id',
+    languageCategory: 'id',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
@@ -3445,6 +3460,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...japaneseExam,
   ...germanExam,
   ...kazakhHapinDicts,
+  ...indonesianDicts,
 
   // {
   //   id: 'zhtest',
