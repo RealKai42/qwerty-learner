@@ -19,6 +19,7 @@
     "@radix-ui/react-toggle-group": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@tanstack/react-table": "^8.10.7",
+    "animate.css": "^4.1.1",
     "canvas-confetti": "^1.6.0",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.3.2",

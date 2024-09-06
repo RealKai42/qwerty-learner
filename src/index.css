@@ -162,3 +162,32 @@ body,
     filter: hue-rotate(-1turn);
   }
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30em;
+  } /* 调整为字符总数的一半 */
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #f0f0f0;
+  }
+}
+
+.typewriter {
+  width: 30em; /* 调整为字符总数的一半 */
+  margin: 0 auto;
+}
+@keyframes hideCaret {
+  to {
+    border-right-color: transparent;
+  }
+}

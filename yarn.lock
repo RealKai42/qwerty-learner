@@ -2414,6 +2414,11 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
+
 ansi-escapes@^4.3.0:
   version "4.3.2"
   resolved "https://registry.npmmirror.com/ansi-escapes/-/ansi-escapes-4.3.2.tgz"

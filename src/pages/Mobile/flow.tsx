@@ -6,7 +6,7 @@ const Flow: React.FC = () => {
   }
 
   return (
-    <div className="h-[12rem] w-full">
+    <div className="h-[15rem] w-full">
       <svg className="h-full w-full rotate-180 transform" viewBox="0 24 150 24" preserveAspectRatio="none">
         <defs>
           <path id="wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v60h-352z" />
