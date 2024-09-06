@@ -1,8 +1,8 @@
 import Flow from './flow'
-import directoryImg from '@/assets/carousel/directory.png'
-import hotImg from '@/assets/carousel/hot.png'
-import indexImg from '@/assets/carousel/index.png'
 import logo from '@/assets/logo.svg'
+import directoryImg from '@/assets/mobile/carousel/directory.png'
+import hotImg from '@/assets/mobile/carousel/hot.png'
+import indexImg from '@/assets/mobile/carousel/index.png'
 import codeImg from '@/assets/mobile/detail/code.png'
 import dictationImg from '@/assets/mobile/detail/dictation.png'
 import phoneticImg from '@/assets/mobile/detail/phonetic.png'
@@ -66,7 +66,7 @@ const MobilePage: React.FC = () => {
   }, [currentSlide])
 
   return (
-    <div className="flex h-screen w-screen flex-col">
+    <div className="flex   w-screen flex-col">
       <section className="flex items-center justify-center py-2 shadow-md">
         <img src={logo} className="mr-3 h-16 w-16" alt="Qwerty Learner Logo" />
         <h1 className="text-2xl font-bold text-primary">Qwerty Learner</h1>
@@ -149,6 +149,19 @@ const MobilePage: React.FC = () => {
         <div className="mt-20 flex h-[10rem] justify-center bg-white">
           <img className="w-full object-contain" src={detail[activeIndex].img} alt="" />
         </div>
+      </section>
+
+      <section
+        className="mt-10 flex h-[20rem] w-full w-full flex-col items-center"
+        style={{
+          background: 'linear-gradient(-45deg, #6366f1, #6366f1, #6366f1, #b600ff)',
+          backgroundSize: '600% 600%',
+          animation: 'gradientBG 4s ease-in-out infinite',
+        }}
+      >
+        <h1 className="mt-10 text-3xl font-bold text-white">轻松上手，简单好用</h1>
+        <h2 className="mt-10    px-10 text-white">为键盘工作者设计的单词与肌肉记忆锻炼软件</h2>
+        <div className="mt-10 rounded-2xl bg-white px-6 py-3 text-xl font-bold text-primary">立即体验</div>
       </section>
     </div>
   )
