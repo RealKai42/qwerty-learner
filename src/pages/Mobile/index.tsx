@@ -3,13 +3,41 @@ import directoryImg from '@/assets/carousel/directory.png'
 import hotImg from '@/assets/carousel/hot.png'
 import indexImg from '@/assets/carousel/index.png'
 import logo from '@/assets/logo.svg'
+import codeImg from '@/assets/mobile/detail/code.png'
+import dictationImg from '@/assets/mobile/detail/dictation.png'
+import phoneticImg from '@/assets/mobile/detail/phonetic.png'
+import speedImg from '@/assets/mobile/detail/speed.png'
 import type React from 'react'
 import { useEffect, useRef, useState } from 'react'
+
+const detail = [
+  {
+    title: '音标显示与发音功能',
+    description: '帮助用户同时记忆单词的读音与音标',
+    img: phoneticImg,
+  },
+  {
+    title: '默写模式',
+    description: '每章结束后可选择默写，巩固所学单词',
+    img: dictationImg,
+  },
+  {
+    title: '实时反馈',
+    description: '显示输入速度和正确率，量化技能提升',
+    img: speedImg,
+  },
+  {
+    title: '为程序员定制',
+    description: '内置编程相关词库，提高工作效率',
+    img: codeImg,
+  },
+]
 
 const MobilePage: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const totalSlides = 3 // 轮播图的总数量
   const containerRef = useRef<HTMLDivElement>(null)
+  const [activeIndex, setActiveIndex] = useState(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -97,6 +125,29 @@ const MobilePage: React.FC = () => {
             <img src={indexImg} alt="" style={{ width: '100%', flexShrink: 0 }} />
             <img src={hotImg} alt="" style={{ width: '100%', flexShrink: 0 }} />
           </div>
+        </div>
+      </section>
+
+      <section className="mt-10 px-5">
+        <h1 className="text-center text-3xl font-bold text-primary">助力你快速掌握单词</h1>
+
+        <div className="mt-10">
+          {detail.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className={`my-4 rounded-2xl px-6 py-5 ${activeIndex === index ? 'bg-[#e7e7e7]' : 'hover:bg-[#e7e7e7]'}`}
+                onClick={() => setActiveIndex(index)}
+              >
+                <h1>{item.title}</h1>
+                <h2 className="text-gray-500">{item.description}</h2>
+              </div>
+            )
+          })}
+        </div>
+
+        <div className="mt-20 flex h-[10rem] justify-center bg-white">
+          <img className="w-full object-contain" src={detail[activeIndex].img} alt="" />
         </div>
       </section>
     </div>
