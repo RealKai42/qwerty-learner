@@ -78,7 +78,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
             <ToggleGroupItem
               value={Tab.Chapters}
               disabled={curTab === Tab.Chapters}
-              className={`${curTab === Tab.Chapters ? 'bg-primary text-primary-foreground' : ''} disabled:opacity-100`}
+              className={`${curTab === Tab.Chapters ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
             >
               <MajesticonsPaperFoldTextLine className="mr-1.5 text-gray-500" />
               章节选择
@@ -88,7 +88,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
                 <ToggleGroupItem
                   value={Tab.Errors}
                   disabled={curTab === Tab.Errors}
-                  className={`${curTab === Tab.Errors ? 'bg-primary text-primary-foreground' : ''} disabled:opacity-100`}
+                  className={`${curTab === Tab.Errors ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
                 >
                   <IcOutlineCollectionsBookmark className="mr-1.5 text-gray-500" />
                   查看错题
@@ -96,7 +96,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
                 <ToggleGroupItem
                   value={Tab.Review}
                   disabled={curTab === Tab.Review}
-                  className={`${curTab === Tab.Review ? 'bg-primary text-primary-foreground' : ''} disabled:opacity-100`}
+                  className={`${curTab === Tab.Review ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
                 >
                   <PajamasReviewList className="mr-1.5 text-gray-500" />
                   错题回顾

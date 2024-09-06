@@ -1,8 +1,42 @@
 import Flow from './flow'
+import directoryImg from '@/assets/carousel/directory.png'
+import hotImg from '@/assets/carousel/hot.png'
+import indexImg from '@/assets/carousel/index.png'
 import logo from '@/assets/logo.svg'
 import type React from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const MobilePage: React.FC = () => {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const totalSlides = 3 // 轮播图的总数量
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides)
+    }, 3000)
+
+    return () => clearInterval(timer)
+  }, [])
+
+  useEffect(() => {
+    if (containerRef.current) {
+      const container = containerRef.current
+      const slideWidth = container.offsetWidth
+
+      if (currentSlide === 0) {
+        container.style.transition = 'none'
+        container.style.transform = `translateX(0)`
+        setTimeout(() => {
+          container.style.transition = 'transform 0.5s ease'
+          container.style.transform = `translateX(-${slideWidth}px)`
+        }, 50)
+      } else {
+        container.style.transform = `translateX(-${currentSlide * slideWidth}px)`
+      }
+    }
+  }, [currentSlide])
+
   return (
     <div className="flex h-screen w-screen flex-col">
       <section className="flex items-center justify-center py-2 shadow-md">
@@ -43,7 +77,28 @@ const MobilePage: React.FC = () => {
         </div>
       </section>
 
-      <section></section>
+      <section className="mt-10 px-10">
+        <div
+          style={{
+            boxShadow: '0px 0px 12px rgba(0,0,0,0.12), 0px 8px 15px -3px rgba(0,0,0,0.1)',
+            borderRadius: '8px',
+            overflow: 'hidden',
+          }}
+        >
+          <div
+            ref={containerRef}
+            style={{
+              display: 'flex',
+              transition: 'transform 0.5s ease',
+            }}
+          >
+            <img src={hotImg} alt="" style={{ width: '100%', flexShrink: 0 }} />
+            <img src={directoryImg} alt="" style={{ width: '100%', flexShrink: 0 }} />
+            <img src={indexImg} alt="" style={{ width: '100%', flexShrink: 0 }} />
+            <img src={hotImg} alt="" style={{ width: '100%', flexShrink: 0 }} />
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
