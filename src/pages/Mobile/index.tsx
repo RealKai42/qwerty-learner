@@ -152,7 +152,7 @@ const MobilePage: React.FC = () => {
       </section>
 
       <section
-        className="mt-10 flex h-[20rem] w-full w-full flex-col items-center"
+        className="mt-10 flex h-[20rem] w-full  flex-col items-center"
         style={{
           background: 'linear-gradient(-45deg, #6366f1, #6366f1, #6366f1, #b600ff)',
           backgroundSize: '600% 600%',
