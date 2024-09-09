@@ -1,0 +1,298 @@
+[
+    {
+        "name": "beginner",
+        "trans": ["n. 初学者"]
+    },
+    {
+        "name": "account",
+        "trans": ["n. 账户"]
+    },
+    {
+        "name": "leather shoes",
+        "trans": ["n. 皮鞋"]
+    },
+    {
+        "name": "garage",
+        "trans": ["n. 车库"]
+    },
+    {
+        "name": "wheel",
+        "trans": ["n. 轮子"]
+    },
+    {
+        "name": "moderate",
+        "trans": ["adj. 温和的：适度的"]
+    },
+    {
+        "name": "waterfall",
+        "trans": ["n. 瀑布"]
+    },
+    {
+        "name": "express",
+        "trans": ["n. 快递"]
+    },
+    {
+        "name": "code",
+        "trans": ["n. 代码编码"]
+    },
+    {
+        "name": "avenue",
+        "trans": ["n. （南北向）街道"]
+    },
+    {
+        "name": "drama",
+        "trans": ["n. 戏剧"]
+    },
+    {
+        "name": "gas",
+        "trans": ["n. 气体"]
+    },
+    {
+        "name": "fluent",
+        "trans": ["adj. 流畅的"]
+    },
+    {
+        "name": "shower",
+        "trans": ["n. 淋浴"]
+    },
+    {
+        "name": "minibus",
+        "trans": ["n. 面包车"]
+    },
+    {
+        "name": "plant",
+        "trans": ["n. 工厂"]
+    },
+    {
+        "name": "transit",
+        "trans": ["n. 运送"]
+    },
+    {
+        "name": "cookery",
+        "trans": ["n. 烹饪"]
+    },
+    {
+        "name": "cinema",
+        "trans": ["n. 电影：电影院"]
+    },
+    {
+        "name": "tank",
+        "trans": ["n. 坦克；水槽；水池"]
+    },
+    {
+        "name": "enjoyable",
+        "trans": ["adj. 快乐的：有乐趣"]
+    },
+    {
+        "name": "warehouse",
+        "trans": ["n. 仓库"]
+    },
+    {
+        "name": "yoga",
+        "trans": ["n. 瑜伽"]
+    },
+    {
+        "name": "mat",
+        "trans": ["n. 垫子"]
+    },
+    {
+        "name": "Asian",
+        "trans": ["n. 亚洲人"]
+    },
+    {
+        "name": "knife",
+        "trans": ["n. 刀子"]
+    },
+    {
+        "name": "container",
+        "trans": ["n. 集装箱：容器"]
+    },
+    {
+        "name": "mirror",
+        "trans": ["n. 镜子"]
+    },
+    {
+        "name": "first aid",
+        "trans": ["n. 急救"]
+    },
+    {
+        "name": "campaign",
+        "trans": ["n. 活动"]
+    },
+    {
+        "name": "conference",
+        "trans": ["n. 会议，协商"]
+    },
+    {
+        "name": "limited",
+        "trans": ["adj. 有限的"]
+    },
+    {
+        "name": "exterior",
+        "trans": ["adj. 外部的"]
+    },
+    {
+        "name": "basis",
+        "trans": ["n. 基础"]
+    },
+    {
+        "name": "internet",
+        "trans": ["n. 因特网"]
+    },
+    {
+        "name": "resume",
+        "trans": ["n. 履历，简历"]
+    },
+    {
+        "name": "type",
+        "trans": ["n. 类型"]
+    },
+    {
+        "name": "layout",
+        "trans": ["n. 布局"]
+    },
+    {
+        "name": "correction",
+        "trans": ["n. 改正，修正"]
+    },
+    {
+        "name": "experience",
+        "trans": ["n. 经验"]
+    },
+    {
+        "name": "avoid",
+        "trans": ["v. 避免"]
+    },
+    {
+        "name": "bakery",
+        "trans": ["n. 面包店"]
+    },
+    {
+        "name": "reference",
+        "trans": ["n. 参考"]
+    },
+    {
+        "name": "agency",
+        "trans": ["n. 代理"]
+    },
+    {
+        "name": "manufacture",
+        "trans": ["v. 制造"]
+    },
+    {
+        "name": "tutor",
+        "trans": ["n. 导师"]
+    },
+    {
+        "name": "kid",
+        "trans": ["n. 小孩子"]
+    },
+    {
+        "name": "example",
+        "trans": ["n. 例子"]
+    },
+    {
+        "name": "private",
+        "trans": ["adj. 私人的"]
+    },
+    {
+        "name": "screen",
+        "trans": ["n. 屏幕"]
+    },
+    {
+        "name": "manager",
+        "trans": ["n. 经理"]
+    },
+    {
+        "name": "choice",
+        "trans": ["n. 选择"]
+    },
+    {
+        "name": "available",
+        "trans": ["adj. 可利用的"]
+    },
+    {
+        "name": "instruction",
+        "trans": ["n. 说明"]
+    },
+    {
+        "name": "freezer",
+        "trans": ["n. 冰箱"]
+    },
+    {
+        "name": "financial",
+        "trans": ["adj. 金融的"]
+    },
+    {
+        "name": "camping",
+        "trans": ["n. 露营度假"]
+    },
+    {
+        "name": "block",
+        "trans": ["n. 街区"]
+    },
+    {
+        "name": "climbing",
+        "trans": ["n. 爬山"]
+    },
+    {
+        "name": "free",
+        "trans": ["adj. 免费的"]
+    },
+    {
+        "name": "view",
+        "trans": ["n. 视野"]
+    },
+    {
+        "name": "include",
+        "trans": ["v. 包括"]
+    },
+    {
+        "name": "cancel",
+        "trans": ["v. 取消"]
+    },
+    {
+        "name": "performer",
+        "trans": ["n. 演奏者"]
+    },
+    {
+        "name": "suitable",
+        "trans": ["adj. 适当的"]
+    },
+    {
+        "name": "opera",
+        "trans": ["n. 歌剧院"]
+    },
+    {
+        "name": "theatre",
+        "trans": ["n. 戏院"]
+    },
+    {
+        "name": "library",
+        "trans": ["n. 图书馆"]
+    },
+    {
+        "name": "townhall",
+        "trans": ["n. 市政厅"]
+    },
+    {
+        "name": "studio",
+        "trans": ["n. 工作室"]
+    },
+    {
+        "name": "interview",
+        "trans": ["v. 采访"]
+    },
+    {
+        "name": "select",
+        "trans": ["v. 选择"]
+    },
+    {
+        "name": "edit",
+        "trans": ["v. 编辑"]
+    },
+    {
+        "name": "parking",
+        "trans": ["n. 停车"]
+    }
+]

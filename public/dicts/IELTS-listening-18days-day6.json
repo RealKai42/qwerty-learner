@@ -1,0 +1,310 @@
+[
+    {
+        "name": "deliver",
+        "trans": ["v. 递送"]
+    },
+    {
+        "name": "purse",
+        "trans": ["n. 钱包"]
+    },
+    {
+        "name": "suit",
+        "trans": ["n. 套装"]
+    },
+    {
+        "name": "brick",
+        "trans": ["n. 砖块"]
+    },
+    {
+        "name": "assignment",
+        "trans": ["n. 作业"]
+    },
+    {
+        "name": "register",
+        "trans": ["v. 注册"]
+    },
+    {
+        "name": "research",
+        "trans": ["n./v. 研究"]
+    },
+    {
+        "name": "soil",
+        "trans": ["n. 土壤"]
+    },
+    {
+        "name": "residence",
+        "trans": ["n. 住处，住宅"]
+    },
+    {
+        "name": "designer",
+        "trans": ["n. 设计师"]
+    },
+    {
+        "name": "board game",
+        "trans": ["n. 桌游"]
+    },
+    {
+        "name": "locker",
+        "trans": ["n. 储物柜"]
+    },
+    {
+        "name": "century",
+        "trans": ["n. 世纪"]
+    },
+    {
+        "name": "agriculture",
+        "trans": ["n. 农业"]
+    },
+    {
+        "name": "fair",
+        "trans": ["n. 展览会"]
+    },
+    {
+        "name": "region",
+        "trans": ["n. 地区"]
+    },
+    {
+        "name": "website",
+        "trans": ["n. 网站"]
+    },
+    {
+        "name": "formal",
+        "trans": ["adj. 正式的"]
+    },
+    {
+        "name": "log in",
+        "trans": ["v. 登录"]
+    },
+    {
+        "name": "cover",
+        "trans": ["v. 包括"]
+    },
+    {
+        "name": "development",
+        "trans": ["n. 发展"]
+    },
+    {
+        "name": "shelf",
+        "trans": ["n. 架子"]
+    },
+    {
+        "name": "save",
+        "trans": ["v. 节省"]
+    },
+    {
+        "name": "audience",
+        "trans": ["n. 观众"]
+    },
+    {
+        "name": "heat",
+        "trans": ["n. 高温"]
+    },
+    {
+        "name": "indicator",
+        "trans": ["n. 指标"]
+    },
+    {
+        "name": "kilogram",
+        "trans": ["n. 公斤"]
+    },
+    {
+        "name": "specially",
+        "trans": ["adv. 特别地"]
+    },
+    {
+        "name": "traditional",
+        "trans": ["adj. 传统的"]
+    },
+    {
+        "name": "refund",
+        "trans": ["v. 退还"]
+    },
+    {
+        "name": "trip",
+        "trans": ["n. 旅行"]
+    },
+    {
+        "name": "sick",
+        "trans": ["n. 病人"]
+    },
+    {
+        "name": "tap water",
+        "trans": ["n. 自来水"]
+    },
+    {
+        "name": "destination",
+        "trans": ["n. 目的地"]
+    },
+    {
+        "name": "advance",
+        "trans": ["n. 发展"]
+    },
+    {
+        "name": "match",
+        "trans": ["v. 比赛"]
+    },
+    {
+        "name": "length",
+        "trans": ["n. 长度"]
+    },
+    {
+        "name": "remove",
+        "trans": ["v. 移除"]
+    },
+    {
+        "name": "change",
+        "trans": ["v. 改变"]
+    },
+    {
+        "name": "tools",
+        "trans": ["n. 工具"]
+    },
+    {
+        "name": "garden",
+        "trans": ["n. 花园"]
+    },
+    {
+        "name": "overfill",
+        "trans": ["v. 装满"]
+    },
+    {
+        "name": "ferry",
+        "trans": ["n. 渡轮"]
+    },
+    {
+        "name": "plastic",
+        "trans": ["adj. 塑料的"]
+    },
+    {
+        "name": "waterproof",
+        "trans": ["adj. 防水的"]
+    },
+    {
+        "name": "station",
+        "trans": ["n. 车站"]
+    },
+    {
+        "name": "dancing",
+        "trans": ["n. 舞蹈"]
+    },
+    {
+        "name": "monitor",
+        "trans": ["v. 监视"]
+    },
+    {
+        "name": "questionnaire",
+        "trans": ["n. 调查问卷"]
+    },
+    {
+        "name": "silver",
+        "trans": ["n. 银"]
+    },
+    {
+        "name": "experiment",
+        "trans": ["n. 实验"]
+    },
+    {
+        "name": "chip",
+        "trans": ["n. 芯片"]
+    },
+    {
+        "name": "firewood",
+        "trans": ["n. 柴火"]
+    },
+    {
+        "name": "information",
+        "trans": ["n. 信息"]
+    },
+    {
+        "name": "prize",
+        "trans": ["n. 奖品"]
+    },
+    {
+        "name": "inspection",
+        "trans": ["n. 视察"]
+    },
+    {
+        "name": "fee",
+        "trans": ["n. 费用"]
+    },
+    {
+        "name": "budget",
+        "trans": ["n. 预算"]
+    },
+    {
+        "name": "insurance",
+        "trans": ["n. 保险"]
+    },
+    {
+        "name": "health",
+        "trans": ["n. 健康"]
+    },
+    {
+        "name": "land",
+        "trans": ["n. 陆地"]
+    },
+    {
+        "name": "labour",
+        "trans": ["n. 劳动力"]
+    },
+    {
+        "name": "furniture",
+        "trans": ["n. 家具"]
+    },
+    {
+        "name": "feature",
+        "trans": ["n. 特色"]
+    },
+    {
+        "name": "art",
+        "trans": ["n. 艺术"]
+    },
+    {
+        "name": "participate",
+        "trans": ["v. 参与"]
+    },
+    {
+        "name": "mixed",
+        "trans": ["adj. 混合的"]
+    },
+    {
+        "name": "attend",
+        "trans": ["v. 出席"]
+    },
+    {
+        "name": "assignment",
+        "trans": ["n. 作业"]
+    },
+    {
+        "name": "government",
+        "trans": ["n. 政府"]
+    },
+    {
+        "name": "fund",
+        "trans": ["n. 资助"]
+    },
+    {
+        "name": "salary",
+        "trans": ["n. 工资"]
+    },
+    {
+        "name": "confidence",
+        "trans": ["n. 信心"]
+    },
+    {
+        "name": "register",
+        "trans": ["v. 注册"]
+    },
+    {
+        "name": "flexible",
+        "trans": ["adj. 灵活的"]
+    },
+    {
+        "name": "password",
+        "trans": ["n. 密码"]
+    },
+    {
+        "name": "flat",
+        "trans": ["adj. 平的"]
+    }
+]

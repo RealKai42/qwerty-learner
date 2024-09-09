@@ -1,0 +1,310 @@
+[
+    {
+        "name": "limitation",
+        "trans": ["n. 限制"]
+    },
+    {
+        "name": "grassland",
+        "trans": ["n. 草原"]
+    },
+    {
+        "name": "marine",
+        "trans": ["adj. 海洋的", "海事的"]
+    },
+    {
+        "name": "undergraduate",
+        "trans": ["n. 大学生"]
+    },
+    {
+        "name": "scrub",
+        "trans": ["v. 用力擦洗"]
+    },
+    {
+        "name": "journal",
+        "trans": ["n. 期刊"]
+    },
+    {
+        "name": "base",
+        "trans": ["n. 基础", "基地"]
+    },
+    {
+        "name": "archaeology",
+        "trans": ["n. 考古学"]
+    },
+    {
+        "name": "reference",
+        "trans": ["n. 参考", "参考书"]
+    },
+    {
+        "name": "classical",
+        "trans": ["adj. 古典的"]
+    },
+    {
+        "name": "brief",
+        "trans": ["adj. 简短的"]
+    },
+    {
+        "name": "module",
+        "trans": ["n. 模块"]
+    },
+    {
+        "name": "compulsory",
+        "trans": ["adj. 必修的"]
+    },
+    {
+        "name": "classification",
+        "trans": ["n. 分类"]
+    },
+    {
+        "name": "score",
+        "trans": ["n. 分数"]
+    },
+    {
+        "name": "judge",
+        "trans": ["v. 判断"]
+    },
+    {
+        "name": "coursework",
+        "trans": ["n. 课程作业"]
+    },
+    {
+        "name": "origin",
+        "trans": ["n. 起源"]
+    },
+    {
+        "name": "oral",
+        "trans": ["adj. 口头的"]
+    },
+    {
+        "name": "engine",
+        "trans": ["n. 发动机"]
+    },
+    {
+        "name": "capacity",
+        "trans": ["n. 容量", "能力"]
+    },
+    {
+        "name": "prefer",
+        "trans": ["v. 更喜欢"]
+    },
+    {
+        "name": "commercial",
+        "trans": ["adj. 商业的"]
+    },
+    {
+        "name": "reliable",
+        "trans": ["adj. 可靠的"]
+    },
+    {
+        "name": "roll over",
+        "trans": ["v. 翻滚"]
+    },
+    {
+        "name": "harmful",
+        "trans": ["adj. 有害的"]
+    },
+    {
+        "name": "statistics",
+        "trans": ["n. 统计学"]
+    },
+    {
+        "name": "note",
+        "trans": ["n. 笔记"]
+    },
+    {
+        "name": "raise",
+        "trans": ["v. 提高"]
+    },
+    {
+        "name": "cost",
+        "trans": ["n. 花费"]
+    },
+    {
+        "name": "reputation",
+        "trans": ["n. 名望"]
+    },
+    {
+        "name": "software",
+        "trans": ["n. 软件"]
+    },
+    {
+        "name": "creative",
+        "trans": ["adj. 有创造力的"]
+    },
+    {
+        "name": "diploma",
+        "trans": ["n. 毕业证书"]
+    },
+    {
+        "name": "respondent",
+        "trans": ["n. 回答者"]
+    },
+    {
+        "name": "uncertain",
+        "trans": ["adj. 不确定的"]
+    },
+    {
+        "name": "gradual",
+        "trans": ["adj. 逐渐的"]
+    },
+    {
+        "name": "privacy",
+        "trans": ["n. 隐私"]
+    },
+    {
+        "name": "margin",
+        "trans": ["n. 边缘"]
+    },
+    {
+        "name": "interaction",
+        "trans": ["n. 互动"]
+    },
+    {
+        "name": "bibliography",
+        "trans": ["n. 参考书目"]
+    },
+    {
+        "name": "scale",
+        "trans": ["n. 规模"]
+    },
+    {
+        "name": "legislation",
+        "trans": ["n. 法律"]
+    },
+    {
+        "name": "flexibility",
+        "trans": ["n. 灵活性"]
+    },
+    {
+        "name": "overweigh",
+        "trans": ["v. 比...重要"]
+    },
+    {
+        "name": "psycholinguistics",
+        "trans": ["n. 心理语言学"]
+    },
+    {
+        "name": "distinguish",
+        "trans": ["v. 区别"]
+    },
+    {
+        "name": "explode",
+        "trans": ["v. 爆炸"]
+    },
+    {
+        "name": "celebrity",
+        "trans": ["n. 名人"]
+    },
+    {
+        "name": "pigeon",
+        "trans": ["n. 鸽子"]
+    },
+    {
+        "name": "vague",
+        "trans": ["adj. 模糊的"]
+    },
+    {
+        "name": "exploit",
+        "trans": ["v. 开发"]
+    },
+    {
+        "name": "disguise",
+        "trans": ["v. 伪装"]
+    },
+    {
+        "name": "index",
+        "trans": ["n. 索引"]
+    },
+    {
+        "name": "text",
+        "trans": ["n. 文本"]
+    },
+    {
+        "name": "factual",
+        "trans": ["adj. 事实的"]
+    },
+    {
+        "name": "digital",
+        "trans": ["adj. 数字的"]
+    },
+    {
+        "name": "editor",
+        "trans": ["n. 编辑"]
+    },
+    {
+        "name": "status",
+        "trans": ["n. 地位"]
+    },
+    {
+        "name": "theoretical",
+        "trans": ["adj. 理论上的"]
+    },
+    {
+        "name": "freedom",
+        "trans": ["n. 自由"]
+    },
+    {
+        "name": "challenging",
+        "trans": ["adj. 挑战的"]
+    },
+    {
+        "name": "background",
+        "trans": ["n. 背景"]
+    },
+    {
+        "name": "overview",
+        "trans": ["n. 概览"]
+    },
+    {
+        "name": "existing",
+        "trans": ["adj. 现存的"]
+    },
+    {
+        "name": "chat",
+        "trans": ["n. 聊天"]
+    },
+    {
+        "name": "technology",
+        "trans": ["n. 技术"]
+    },
+    {
+        "name": "debate",
+        "trans": ["v. 辩论"]
+    },
+    {
+        "name": "friendliness",
+        "trans": ["n. 友好"]
+    },
+    {
+        "name": "exchange",
+        "trans": ["v. 交换"]
+    },
+    {
+        "name": "conclusion",
+        "trans": ["n. 结论"]
+    },
+    {
+        "name": "secretary",
+        "trans": ["n. 秘书"]
+    },
+    {
+        "name": "upper",
+        "trans": ["adj. 上层的"]
+    },
+    {
+        "name": "cautious",
+        "trans": ["adj. 谨慎的"]
+    },
+    {
+        "name": "dissertation",
+        "trans": ["n. 论文"]
+    },
+    {
+        "name": "methodology",
+        "trans": ["n. 方法论"]
+    },
+    {
+        "name": "generalisation",
+        "trans": ["n. 概括"]
+    }
+]
