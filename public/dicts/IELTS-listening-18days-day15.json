@@ -1,0 +1,310 @@
+[
+    {
+        "name": "intelligence",
+        "trans": ["智力"]
+    },
+    {
+        "name": "gene",
+        "trans": ["[遗]基因"]
+    },
+    {
+        "name": "seasonal",
+        "trans": ["季节的"]
+    },
+    {
+        "name": "science",
+        "trans": ["科学", "技术"]
+    },
+    {
+        "name": "crocodile",
+        "trans": ["鳄鱼"]
+    },
+    {
+        "name": "wetland",
+        "trans": ["湿地", "沼泽地"]
+    },
+    {
+        "name": "population",
+        "trans": ["人口"]
+    },
+    {
+        "name": "depth",
+        "trans": ["深度", "深奥"]
+    },
+    {
+        "name": "cultivation",
+        "trans": ["培养", "耕作"]
+    },
+    {
+        "name": "relationship",
+        "trans": ["关系", "关联"]
+    },
+    {
+        "name": "ingredients",
+        "trans": ["材料", "作料"]
+    },
+    {
+        "name": "motivation",
+        "trans": ["动机"]
+    },
+    {
+        "name": "organic",
+        "trans": ["有机的"]
+    },
+    {
+        "name": "business",
+        "trans": ["商人"]
+    },
+    {
+        "name": "preparation",
+        "trans": ["准备"]
+    },
+    {
+        "name": "senior",
+        "trans": ["资深的"]
+    },
+    {
+        "name": "outdoor",
+        "trans": ["户外的"]
+    },
+    {
+        "name": "display",
+        "trans": ["展示"]
+    },
+    {
+        "name": "merchandiser",
+        "trans": ["商人"]
+    },
+    {
+        "name": "lateral",
+        "trans": ["侧面的"]
+    },
+    {
+        "name": "rope",
+        "trans": ["绳子"]
+    },
+    {
+        "name": "lack",
+        "trans": ["缺少"]
+    },
+    {
+        "name": "danger",
+        "trans": ["危险"]
+    },
+    {
+        "name": "sensitive",
+        "trans": ["敏感的"]
+    },
+    {
+        "name": "history",
+        "trans": ["历史"]
+    },
+    {
+        "name": "lifestyle",
+        "trans": ["生活方式"]
+    },
+    {
+        "name": "create",
+        "trans": ["创造"]
+    },
+    {
+        "name": "social class",
+        "trans": ["社会地位"]
+    },
+    {
+        "name": "reason",
+        "trans": ["原因"]
+    },
+    {
+        "name": "training",
+        "trans": ["训练"]
+    },
+    {
+        "name": "fear",
+        "trans": ["害怕"]
+    },
+    {
+        "name": "instead of",
+        "trans": ["代替"]
+    },
+    {
+        "name": "competition",
+        "trans": ["竞争"]
+    },
+    {
+        "name": "conflict",
+        "trans": ["冲突"]
+    },
+    {
+        "name": "a sense of community",
+        "trans": ["集体归属感"]
+    },
+    {
+        "name": "inefficient",
+        "trans": ["无效率的"]
+    },
+    {
+        "name": "rate",
+        "trans": ["率"]
+    },
+    {
+        "name": "attitude",
+        "trans": ["态度"]
+    },
+    {
+        "name": "completion",
+        "trans": ["完成"]
+    },
+    {
+        "name": "psychology",
+        "trans": ["心理学"]
+    },
+    {
+        "name": "desert",
+        "trans": ["遗弃"]
+    },
+    {
+        "name": "olive oil",
+        "trans": ["橄榄油"]
+    },
+    {
+        "name": "vegetation",
+        "trans": ["植被", "植物"]
+    },
+    {
+        "name": "underground",
+        "trans": ["地下的", "秘密的"]
+    },
+    {
+        "name": "desert",
+        "trans": ["遗弃", "沙漠"]
+    },
+    {
+        "name": "migration",
+        "trans": ["迁移", "移民"]
+    },
+    {
+        "name": "shrimp",
+        "trans": ["虾", "小虾"]
+    },
+    {
+        "name": "worm",
+        "trans": ["虫", "蠕虫"]
+    },
+    {
+        "name": "nutrition",
+        "trans": ["营养"]
+    },
+    {
+        "name": "temperature",
+        "trans": ["温度"]
+    },
+    {
+        "name": "entertainment",
+        "trans": ["娱乐", "消遣"]
+    },
+    {
+        "name": "journalism",
+        "trans": ["新闻业"]
+    },
+    {
+        "name": "symbolism",
+        "trans": ["象征"]
+    },
+    {
+        "name": "castle",
+        "trans": ["城堡"]
+    },
+    {
+        "name": "method",
+        "trans": ["方式"]
+    },
+    {
+        "name": "portrait",
+        "trans": ["肖像"]
+    },
+    {
+        "name": "poet",
+        "trans": ["诗人"]
+    },
+    {
+        "name": "male",
+        "trans": ["男性"]
+    },
+    {
+        "name": "female",
+        "trans": ["女性"]
+    },
+    {
+        "name": "elephant",
+        "trans": ["大象"]
+    },
+    {
+        "name": "weight",
+        "trans": ["重量"]
+    },
+    {
+        "name": "wild",
+        "trans": ["荒野"]
+    },
+    {
+        "name": "ancient",
+        "trans": ["古代的"]
+    },
+    {
+        "name": "extreme sport",
+        "trans": ["极限运动"]
+    },
+    {
+        "name": "equipment",
+        "trans": ["设备"]
+    },
+    {
+        "name": "golf",
+        "trans": ["高尔夫球"]
+    },
+    {
+        "name": "regulation",
+        "trans": ["规则"]
+    },
+    {
+        "name": "restricted",
+        "trans": ["有受限制的"]
+    },
+    {
+        "name": "confront",
+        "trans": ["面对"]
+    },
+    {
+        "name": "entertainment",
+        "trans": ["娱乐节目"]
+    },
+    {
+        "name": "individual",
+        "trans": ["个人的"]
+    },
+    {
+        "name": "tend to",
+        "trans": ["倾向于"]
+    },
+    {
+        "name": "authority",
+        "trans": ["权威"]
+    },
+    {
+        "name": "lecture",
+        "trans": ["讲座"]
+    },
+    {
+        "name": "absent",
+        "trans": ["缺席的"]
+    },
+    {
+        "name": "recall",
+        "trans": ["召回", "回忆起"]
+    },
+    {
+        "name": "sentence",
+        "trans": ["句子"]
+    }
+]

@@ -1,0 +1,306 @@
+[
+    {
+        "name": "power steering",
+        "trans": ["动力方向盘"]
+    },
+    {
+        "name": "photo journalism",
+        "trans": ["图片新闻", "摄影新闻"]
+    },
+    {
+        "name": "structure",
+        "trans": ["结构"]
+    },
+    {
+        "name": "repetition",
+        "trans": ["重复"]
+    },
+    {
+        "name": "invest",
+        "trans": ["投资"]
+    },
+    {
+        "name": "framing",
+        "trans": ["框架"]
+    },
+    {
+        "name": "crime",
+        "trans": ["罪行"]
+    },
+    {
+        "name": "creative",
+        "trans": ["有创造力的"]
+    },
+    {
+        "name": "frame",
+        "trans": ["设计"]
+    },
+    {
+        "name": "inspire",
+        "trans": ["鼓舞"]
+    },
+    {
+        "name": "handout",
+        "trans": ["讲义"]
+    },
+    {
+        "name": "disappoint",
+        "trans": ["使失望"]
+    },
+    {
+        "name": "independent",
+        "trans": ["独立的"]
+    },
+    {
+        "name": "external",
+        "trans": ["外部的"]
+    },
+    {
+        "name": "obey",
+        "trans": ["遵守"]
+    },
+    {
+        "name": "procedure",
+        "trans": ["手续", "过程"]
+    },
+    {
+        "name": "consumer",
+        "trans": ["消费者"]
+    },
+    {
+        "name": "effect",
+        "trans": ["影响"]
+    },
+    {
+        "name": "mineral",
+        "trans": ["矿物"]
+    },
+    {
+        "name": "stitch",
+        "trans": ["缝补"]
+    },
+    {
+        "name": "pure",
+        "trans": ["纯净的"]
+    },
+    {
+        "name": "virus",
+        "trans": ["病毒"]
+    },
+    {
+        "name": "identity",
+        "trans": ["身份"]
+    },
+    {
+        "name": "evaluation",
+        "trans": ["评估"]
+    },
+    {
+        "name": "sound quality",
+        "trans": ["音质"]
+    },
+    {
+        "name": "case study",
+        "trans": ["案例分析"]
+    },
+    {
+        "name": "coral",
+        "trans": ["珊瑚"]
+    },
+    {
+        "name": "frog",
+        "trans": ["青蛙"]
+    },
+    {
+        "name": "bacteria",
+        "trans": ["细菌"]
+    },
+    {
+        "name": "smooth",
+        "trans": ["光滑的"]
+    },
+    {
+        "name": "chain",
+        "trans": ["连锁"]
+    },
+    {
+        "name": "optimisation",
+        "trans": ["最佳化"]
+    },
+    {
+        "name": "fibre",
+        "trans": ["纤维"]
+    },
+    {
+        "name": "stabilise",
+        "trans": ["使稳定", "使稳固"]
+    },
+    {
+        "name": "bone",
+        "trans": ["骨头"]
+    },
+    {
+        "name": "patterns",
+        "trans": ["模式"]
+    },
+    {
+        "name": "robot",
+        "trans": ["机器人"]
+    },
+    {
+        "name": "attention",
+        "trans": ["注意力"]
+    },
+    {
+        "name": "smell",
+        "trans": ["嗅"]
+    },
+    {
+        "name": "delay",
+        "trans": ["延期"]
+    },
+    {
+        "name": "accurate",
+        "trans": ["正确的"]
+    },
+    {
+        "name": "chapter",
+        "trans": ["章"]
+    },
+    {
+        "name": "darkroom",
+        "trans": ["暗室"]
+    },
+    {
+        "name": "volume",
+        "trans": ["音量"]
+    },
+    {
+        "name": "craft",
+        "trans": ["手工"]
+    },
+    {
+        "name": "packing",
+        "trans": ["包装"]
+    },
+    {
+        "name": "appreciate",
+        "trans": ["感激"]
+    },
+    {
+        "name": "accurate",
+        "trans": ["精确的"]
+    },
+    {
+        "name": "stimulate",
+        "trans": ["刺激"]
+    },
+    {
+        "name": "utility",
+        "trans": ["实用性"]
+    },
+    {
+        "name": "strict",
+        "trans": ["严格的"]
+    },
+    {
+        "name": "font",
+        "trans": ["字体"]
+    },
+    {
+        "name": "retail",
+        "trans": ["零售"]
+    },
+    {
+        "name": "staircase",
+        "trans": ["楼梯间"]
+    },
+    {
+        "name": "accumulate",
+        "trans": ["积累"]
+    },
+    {
+        "name": "steam",
+        "trans": ["蒸汽"]
+    },
+    {
+        "name": "timber",
+        "trans": ["木材"]
+    },
+    {
+        "name": "aggressive",
+        "trans": ["侵略的"]
+    },
+    {
+        "name": "analysis",
+        "trans": ["分析"]
+    },
+    {
+        "name": "additive",
+        "trans": ["添加剂"]
+    },
+    {
+        "name": "proofread",
+        "trans": ["校对"]
+    },
+    {
+        "name": "ignore",
+        "trans": ["忽略"]
+    },
+    {
+        "name": "rural",
+        "trans": ["乡下的"]
+    },
+    {
+        "name": "nitrogen",
+        "trans": ["氮气"]
+    },
+    {
+        "name": "ozone layer",
+        "trans": ["臭氧层"]
+    },
+    {
+        "name": "sculpture",
+        "trans": ["雕刻"]
+    },
+    {
+        "name": "moisture",
+        "trans": ["水分", "湿气"]
+    },
+    {
+        "name": "rubber",
+        "trans": ["橡胶轮胎"]
+    },
+    {
+        "name": "downhill",
+        "trans": ["下坡路"]
+    },
+    {
+        "name": "roof",
+        "trans": ["房顶"]
+    },
+    {
+        "name": "condition",
+        "trans": ["条件", "状况"]
+    },
+    {
+        "name": "fluid",
+        "trans": ["液体", "流体"]
+    },
+    {
+        "name": "kidney",
+        "trans": ["肾", "肾脏"]
+    },
+    {
+        "name": "machine",
+        "trans": ["机械"]
+    },
+    {
+        "name": "eyesight",
+        "trans": ["视力"]
+    },
+    {
+        "name": "camel",
+        "trans": ["骆驼"]
+    }
+]
