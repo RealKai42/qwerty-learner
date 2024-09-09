@@ -118,4 +118,13 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  id: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '印尼语',
+        pron: 'id',
+      },
+    ],
+  },
 }
