@@ -1,0 +1,306 @@
+[
+    {
+        "name": "steel",
+        "trans": ["钢"]
+    },
+    {
+        "name": "preserve",
+        "trans": ["保存"]
+    },
+    {
+        "name": "tongue",
+        "trans": ["舌头"]
+    },
+    {
+        "name": "finger",
+        "trans": ["手指"]
+    },
+    {
+        "name": "protein",
+        "trans": ["蛋白质"]
+    },
+    {
+        "name": "philosopher",
+        "trans": ["哲学家"]
+    },
+    {
+        "name": "corporation",
+        "trans": ["公司"]
+    },
+    {
+        "name": "pottery",
+        "trans": ["陶瓷"]
+    },
+    {
+        "name": "gun",
+        "trans": ["枪"]
+    },
+    {
+        "name": "lane",
+        "trans": ["车道"]
+    },
+    {
+        "name": "achievement",
+        "trans": ["成就"]
+    },
+    {
+        "name": "frequent",
+        "trans": ["频繁的"]
+    },
+    {
+        "name": "axe",
+        "trans": ["斧头"]
+    },
+    {
+        "name": "soldier",
+        "trans": ["士兵"]
+    },
+    {
+        "name": "energy-saving",
+        "trans": ["节能的"]
+    },
+    {
+        "name": "life span",
+        "trans": ["寿命"]
+    },
+    {
+        "name": "presence",
+        "trans": ["存在"]
+    },
+    {
+        "name": "resistant",
+        "trans": ["反抗的"]
+    },
+    {
+        "name": "jam",
+        "trans": ["（纸）浆", "果酱"]
+    },
+    {
+        "name": "barcode",
+        "trans": ["条形码"]
+    },
+    {
+        "name": "argument",
+        "trans": ["论据"]
+    },
+    {
+        "name": "traffic flow",
+        "trans": ["交通吞吐量"]
+    },
+    {
+        "name": "random",
+        "trans": ["随机的"]
+    },
+    {
+        "name": "genetic",
+        "trans": ["基因的", "遗传的"]
+    },
+    {
+        "name": "generation",
+        "trans": ["一代人", "代"]
+    },
+    {
+        "name": "mechanism",
+        "trans": ["机理", "途径"]
+    },
+    {
+        "name": "angle",
+        "trans": ["角度"]
+    },
+    {
+        "name": "crowded",
+        "trans": ["拥挤的"]
+    },
+    {
+        "name": "storm",
+        "trans": ["暴风雨（雪）"]
+    },
+    {
+        "name": "shortage",
+        "trans": ["短缺", "不足"]
+    },
+    {
+        "name": "laboratory",
+        "trans": ["实验室"]
+    },
+    {
+        "name": "aboriginal",
+        "trans": ["土著居民"]
+    },
+    {
+        "name": "gravity",
+        "trans": ["重力"]
+    },
+    {
+        "name": "digest",
+        "trans": ["消化"]
+    },
+    {
+        "name": "challenge",
+        "trans": ["挑战"]
+    },
+    {
+        "name": "comprehension",
+        "trans": ["理解", "理解力"]
+    },
+    {
+        "name": "enthusiasm",
+        "trans": ["热情"]
+    },
+    {
+        "name": "powder",
+        "trans": ["粉末"]
+    },
+    {
+        "name": "dioxide",
+        "trans": ["二氧化物"]
+    },
+    {
+        "name": "retain",
+        "trans": ["保持", "记住"]
+    },
+    {
+        "name": "bacteria",
+        "trans": ["细菌"]
+    },
+    {
+        "name": "accountable",
+        "trans": ["有责任的"]
+    },
+    {
+        "name": "morale",
+        "trans": ["士气"]
+    },
+    {
+        "name": "triangle",
+        "trans": ["三角形"]
+    },
+    {
+        "name": "trash",
+        "trans": ["垃圾"]
+    },
+    {
+        "name": "coin",
+        "trans": ["硬币"]
+    },
+    {
+        "name": "mall",
+        "trans": ["商场"]
+    },
+    {
+        "name": "aspiration",
+        "trans": ["抱负"]
+    },
+    {
+        "name": "moral",
+        "trans": ["道德的"]
+    },
+    {
+        "name": "passage",
+        "trans": ["文章", "通道"]
+    },
+    {
+        "name": "permit",
+        "trans": ["许可"]
+    },
+    {
+        "name": "adapt",
+        "trans": ["适应"]
+    },
+    {
+        "name": "conservation",
+        "trans": ["保存"]
+    },
+    {
+        "name": "geological",
+        "trans": ["地理的"]
+    },
+    {
+        "name": "polish",
+        "trans": ["抛光"]
+    },
+    {
+        "name": "life cycle",
+        "trans": ["生命周期"]
+    },
+    {
+        "name": "operation",
+        "trans": ["操作"]
+    },
+    {
+        "name": "persuasive",
+        "trans": ["有说服力的"]
+    },
+    {
+        "name": "efficient",
+        "trans": ["有效率的"]
+    },
+    {
+        "name": "rush",
+        "trans": ["仓促行事"]
+    },
+    {
+        "name": "signal",
+        "trans": ["信号"]
+    },
+    {
+        "name": "density",
+        "trans": ["密度", "浓度"]
+    },
+    {
+        "name": "port",
+        "trans": ["港口"]
+    },
+    {
+        "name": "cliff",
+        "trans": ["悬崖"]
+    },
+    {
+        "name": "mobility",
+        "trans": ["流动性", "移动性"]
+    },
+    {
+        "name": "velvet",
+        "trans": ["丝绒", "天鹅绒"]
+    },
+    {
+        "name": "fence",
+        "trans": ["栅栏"]
+    },
+    {
+        "name": "flock",
+        "trans": ["兽群", "鸟群"]
+    },
+    {
+        "name": "passive",
+        "trans": ["被动的", "消极的"]
+    },
+    {
+        "name": "stem",
+        "trans": ["茎"]
+    },
+    {
+        "name": "industry",
+        "trans": ["工业"]
+    },
+    {
+        "name": "cycle",
+        "trans": ["骑自行车"]
+    },
+    {
+        "name": "oven",
+        "trans": ["烤箱", "烤炉"]
+    },
+    {
+        "name": "criteria",
+        "trans": ["标准"]
+    },
+    {
+        "name": "license",
+        "trans": ["许可证"]
+    },
+    {
+        "name": "curriculum vitae",
+        "trans": ["个人简历"]
+    }
+]

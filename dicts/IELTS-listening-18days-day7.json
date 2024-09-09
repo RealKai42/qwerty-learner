@@ -1,0 +1,302 @@
+[
+    {
+        "name": "personal officer",
+        "trans": ["n. 人事部员工"]
+    },
+    {
+        "name": "booking form",
+        "trans": ["n. 预定表格"]
+    },
+    {
+        "name": "file",
+        "trans": ["n. 文件"]
+    },
+    {
+        "name": "cabin",
+        "trans": ["n. 船舱"]
+    },
+    {
+        "name": "bill",
+        "trans": ["n. 清单"]
+    },
+    {
+        "name": "neutral",
+        "trans": ["adj. 中立的"]
+    },
+    {
+        "name": "luggage",
+        "trans": ["n. 行李"]
+    },
+    {
+        "name": "documentary film",
+        "trans": ["n. 纪录片"]
+    },
+    {
+        "name": "unloaded",
+        "trans": ["adj. 卸货"]
+    },
+    {
+        "name": "parking lot",
+        "trans": ["n. 停车场"]
+    },
+    {
+        "name": "comedy",
+        "trans": ["n. 喜剧"]
+    },
+    {
+        "name": "campsite",
+        "trans": ["n. 营地"]
+    },
+    {
+        "name": "fiction",
+        "trans": ["n. 小说"]
+    },
+    {
+        "name": "metal paint",
+        "trans": ["n. 金属漆"]
+    },
+    {
+        "name": "meadow",
+        "trans": ["n. 草地"]
+    },
+    {
+        "name": "metal detector",
+        "trans": ["n. 金属探测器"]
+    },
+    {
+        "name": "cash point",
+        "trans": ["n. 提款机"]
+    },
+    {
+        "name": "label",
+        "trans": ["n. 标签"]
+    },
+    {
+        "name": "ink",
+        "trans": ["n. 墨水"]
+    },
+    {
+        "name": "statue",
+        "trans": ["n. 雕塑"]
+    },
+    {
+        "name": "seed",
+        "trans": ["n. 种子"]
+    },
+    {
+        "name": "award",
+        "trans": ["n. 奖品"]
+    },
+    {
+        "name": "vehicle",
+        "trans": ["n. 车辆"]
+    },
+    {
+        "name": "herb",
+        "trans": ["n. 草药"]
+    },
+    {
+        "name": "excursion",
+        "trans": ["n. 短途旅行"]
+    },
+    {
+        "name": "blanket",
+        "trans": ["n. 毛毯"]
+    },
+    {
+        "name": "extra",
+        "trans": ["adj. 额外的"]
+    },
+    {
+        "name": "coal",
+        "trans": ["n. 煤"]
+    },
+    {
+        "name": "terrain",
+        "trans": ["n. 地形"]
+    },
+    {
+        "name": "aspect",
+        "trans": ["n. 方面"]
+    },
+    {
+        "name": "allow",
+        "trans": ["v. 允许"]
+    },
+    {
+        "name": "recommend",
+        "trans": ["v. 推荐"]
+    },
+    {
+        "name": "mine",
+        "trans": ["n. 矿"]
+    },
+    {
+        "name": "reception",
+        "trans": ["n. 接待处"]
+    },
+    {
+        "name": "technological",
+        "trans": ["adj. 科技的"]
+    },
+    {
+        "name": "staff",
+        "trans": ["n. 职员"]
+    },
+    {
+        "name": "insight",
+        "trans": ["n. 洞察力"]
+    },
+    {
+        "name": "elevator",
+        "trans": ["n. 电梯"]
+    },
+    {
+        "name": "underground",
+        "trans": ["n. 地铁"]
+    },
+    {
+        "name": "employee",
+        "trans": ["n. 员工"]
+    },
+    {
+        "name": "notice board",
+        "trans": ["n. 布告栏"]
+    },
+    {
+        "name": "supportive",
+        "trans": ["adj. 支持的"]
+    },
+    {
+        "name": "budget",
+        "trans": ["n. 预算"]
+    },
+    {
+        "name": "responsibility",
+        "trans": ["n. 责任"]
+    },
+    {
+        "name": "atmosphere",
+        "trans": ["n. 气氛"]
+    },
+    {
+        "name": "guest",
+        "trans": ["n. 客人"]
+    },
+    {
+        "name": "screen",
+        "trans": ["n. 屏幕"]
+    },
+    {
+        "name": "deliver",
+        "trans": ["v. 递送"]
+    },
+    {
+        "name": "store room",
+        "trans": ["n. 储藏室"]
+    },
+    {
+        "name": "main hall",
+        "trans": ["n. 大厅"]
+    },
+    {
+        "name": "lobby",
+        "trans": ["n. 大厅"]
+    },
+    {
+        "name": "tax",
+        "trans": ["n. 税"]
+    },
+    {
+        "name": "accountant",
+        "trans": ["n. 会计师"]
+    },
+    {
+        "name": "architecture",
+        "trans": ["n. 建筑"]
+    },
+    {
+        "name": "waterfall",
+        "trans": ["n. 瀑布"]
+    },
+    {
+        "name": "rent",
+        "trans": ["n. 租金"]
+    },
+    {
+        "name": "solar energy",
+        "trans": ["n. 太阳能"]
+    },
+    {
+        "name": "villa",
+        "trans": ["n. 别墅"]
+    },
+    {
+        "name": "picnic",
+        "trans": ["n. 野餐"]
+    },
+    {
+        "name": "pond",
+        "trans": ["n. 池塘"]
+    },
+    {
+        "name": "pool",
+        "trans": ["n. 游泳池"]
+    },
+    {
+        "name": "agent",
+        "trans": ["n. 中介"]
+    },
+    {
+        "name": "real estate",
+        "trans": ["n. 房地产"]
+    },
+    {
+        "name": "worthwhile",
+        "trans": ["adj. 值得的"]
+    },
+    {
+        "name": "location",
+        "trans": ["n. 位置"]
+    },
+    {
+        "name": "suitable",
+        "trans": ["adj. 适当的"]
+    },
+    {
+        "name": "decorate",
+        "trans": ["v. 装饰"]
+    },
+    {
+        "name": "appointment",
+        "trans": ["n. 约定"]
+    },
+    {
+        "name": "single",
+        "trans": ["adj. 单一的"]
+    },
+    {
+        "name": "garage",
+        "trans": ["n. 车库"]
+    },
+    {
+        "name": "spare room",
+        "trans": ["n. 空房"]
+    },
+    {
+        "name": "shade",
+        "trans": ["n. 树荫"]
+    },
+    {
+        "name": "string",
+        "trans": ["n. 线"]
+    },
+    {
+        "name": "lettuce",
+        "trans": ["n. 生菜"]
+    },
+    {
+        "name": "spoon",
+        "trans": ["n. 勺子"]
+    }
+]
