@@ -66,7 +66,7 @@ const MobilePage: React.FC = () => {
   }, [currentSlide])
 
   return (
-    <div className="flex   w-screen flex-col">
+    <div className="flex  w-screen flex-col">
       <section className="flex items-center justify-center py-2 shadow-md">
         <img src={logo} className="mr-3 h-16 w-16" alt="Qwerty Learner Logo" />
         <h1 className="text-2xl font-bold text-primary">Qwerty Learner</h1>
@@ -79,7 +79,7 @@ const MobilePage: React.FC = () => {
             为键盘工作者设计的软件
           </h1>
           <h2
-            className="animate__animated animate__zoomIn   mt-5 text-[10px] font-bold text-[#f0f0f0]"
+            className="animate__animated animate__zoomIn mt-5 text-sm font-bold text-white"
             style={{
               textShadow: '1px 1px 2px #9c9ea3',
             }}
@@ -87,7 +87,7 @@ const MobilePage: React.FC = () => {
             简化英语学习与打字技能提升过程，快速建立正确的肌肉记忆
           </h2>
           <h2
-            className="typewriter !mt-3 text-[10px] font-bold text-[#f0f0f0]"
+            className="typewriter !mt-3 text-xs font-bold text-white"
             style={{
               textShadow: '1px 1px 2px #9c9ea3',
               overflow: 'hidden',
@@ -99,13 +99,10 @@ const MobilePage: React.FC = () => {
           >
             单词记忆与键盘输入相结合、音标发音与默写模式、多样化词库选择
           </h2>
-          <div className="mt-8 flex h-[50px] items-center rounded-[20px] bg-primary px-[15px] text-xl font-bold text-white shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1),0_4px_6px_-2px_rgba(0,0,0,0.1)]">
-            电脑端使用
-          </div>
         </div>
       </section>
 
-      <section className="mt-10 px-10">
+      <section className="mt-4 px-10">
         <div
           style={{
             boxShadow: '0px 0px 12px rgba(0,0,0,0.12), 0px 8px 15px -3px rgba(0,0,0,0.1)',
@@ -161,7 +158,7 @@ const MobilePage: React.FC = () => {
       >
         <h1 className="mt-10 text-3xl font-bold text-white">轻松上手，简单好用</h1>
         <h2 className="mt-10    px-10 text-white">为键盘工作者设计的单词与肌肉记忆锻炼软件</h2>
-        <div className="mt-10 rounded-2xl bg-white px-6 py-3 text-xl font-bold text-primary">立即体验</div>
+        <div className="mt-10 rounded-2xl bg-white px-6 py-3 font-bold text-primary">请使用桌面端浏览器访问本网站，即刻体验！</div>
       </section>
     </div>
   )
