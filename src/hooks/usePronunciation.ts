@@ -10,7 +10,7 @@ import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
-export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>) {
+export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
   switch (pronunciation) {
     case 'uk':
       return `${pronunciationApi}${word}&type=1`
@@ -27,6 +27,10 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
     case 'hapin':
     case 'kk':
       return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
+    case 'id':
+      return `${pronunciationApi}${word}&le=id`
+    default:
+      return ''
   }
 }
 
@@ -75,6 +79,8 @@ export function usePrefetchPronunciationSound(word: string | undefined) {
     if (!word) return
 
     const soundUrl = generateWordSoundSrc(word, pronunciationConfig.type)
+    if (soundUrl === '') return
+
     const head = document.head
     const isPrefetch = (Array.from(head.querySelectorAll('link[href]')) as HTMLLinkElement[]).some((el) => el.href === soundUrl)
 
