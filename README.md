@@ -7,8 +7,8 @@
 </h1>
 
 <p align="center">
-  <a href="./docs/README_EN.md">English</a>
-  <a href="./docs/README_JP.md">日本語</a>
+  <a href="./docs/README_EN.md">English</a>  
+  <a href="./docs/README_JP.md">日本語</a>  
 </p>
 
 <p align="center">
@@ -27,16 +27,17 @@
 
 ## 📸 在线访问
 
-Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>
+**首选部署**: <https://qwerty.kaiyi.cool/>  
 GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
-Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 
-国内用户建议使用 Gitee 访问
+镜像仓库:  
+[GitCode: RealKai42/qwerty-learner](https://gitcode.com/RealKai42/qwerty-learner/overview)  
+[Gitee: KaiyiWing/qwerty-learner)](https://gitee.com/KaiyiWing/qwerty-learner)
 <br/>
 <br/>
 
-项目已发布 VSCode 插件版，一键启动、随时开始练习
-[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)
+项目已发布 VSCode 插件版，一键启动、随时开始练习  
+[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)  
 [GitHub](https://github.com/Realkai42/qwerty-learner-vscode)
 
 <br />
@@ -161,7 +162,8 @@ Gitee Pages: <https://kaiyiwing.gitee.io/qwerty-learner/>
 - V2EX 全站热搜项目
 - Gitee 全站推荐项目
 - [少数派首页推荐](https://sspai.com/post/67535)
-- Gitee 最有价值开源项目([GVP](https://gitee.com/gvp))
+- GitCode 开源摘星计划（[G-Star 计划](https://gitcode.com/g-star)）
+- Gitee 最有价值开源项目（[GVP]）(https://gitee.com/gvp))
 
 ## 📕 词库列表
 
