@@ -162,8 +162,8 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 - V2EX 全站热搜项目
 - Gitee 全站推荐项目
 - [少数派首页推荐](https://sspai.com/post/67535)
-- GitCode 开源摘星计划（[G-Star 计划](https://gitcode.com/g-star)）
-- Gitee 最有价值开源项目（[GVP]）(https://gitee.com/gvp))
+- GitCode 开源摘星计划-毕业项目（[G-Star 计划](https://gitcode.com/g-star)）
+- Gitee 最有价值开源项目（[GVP](https://gitee.com/gvp)）
 
 ## 📕 词库列表
 
