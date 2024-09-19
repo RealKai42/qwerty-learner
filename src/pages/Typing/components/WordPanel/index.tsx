@@ -3,6 +3,7 @@ import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
+import Sentence from './components/Sentence'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
@@ -143,7 +144,7 @@ export default function WordPanel() {
     { enableOnFormTags: true, keyup: true, preventDefault: true },
     [],
   )
-
+  1
   const shouldShowTranslation = useMemo(() => {
     return isShowTranslation || state.isTransVisible
   }, [isShowTranslation, state.isTransVisible])
@@ -179,6 +180,9 @@ export default function WordPanel() {
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}
               />
+              {currentWord.sentences &&
+                state.isSentenceVisible &&
+                currentWord.sentences.map((sentence, index) => <Sentence key={index} sentences={sentence} />)}
             </div>
           </div>
         )}

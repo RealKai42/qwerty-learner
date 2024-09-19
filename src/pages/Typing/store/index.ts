@@ -25,6 +25,7 @@ export const initialState: TypingState = {
   isFinished: false,
   isShowSkip: false,
   isTransVisible: true,
+  isSentenceVisible: true,
   isLoopSingleWord: false,
   isSavingRecord: false,
 }
@@ -53,6 +54,7 @@ export enum TypingStateActionType {
   NEXT_CHAPTER = 'NEXT_CHAPTER',
   TOGGLE_WORD_VISIBLE = 'TOGGLE_WORD_VISIBLE',
   TOGGLE_TRANS_VISIBLE = 'TOGGLE_TRANS_VISIBLE',
+  TOGGLE_SENTENCE_VISIBLE = 'TOGGLE_SENTENCE_VISIBLE',
   TICK_TIMER = 'TICK_TIMER',
   ADD_WORD_RECORD_ID = 'ADD_WORD_RECORD_ID',
   SET_IS_SAVING_RECORD = 'SET_IS_SAVING_RECORD',
@@ -81,6 +83,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
+  | { type: TypingStateActionType.TOGGLE_SENTENCE_VISIBLE }
   | { type: TypingStateActionType.TICK_TIMER; addTime?: number }
   | { type: TypingStateActionType.ADD_WORD_RECORD_ID; payload: number }
   | { type: TypingStateActionType.SET_IS_SAVING_RECORD; payload: boolean }
@@ -187,6 +190,9 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     }
     case TypingStateActionType.TOGGLE_TRANS_VISIBLE:
       state.isTransVisible = !state.isTransVisible
+      break
+    case TypingStateActionType.TOGGLE_SENTENCE_VISIBLE:
+      state.isSentenceVisible = !state.isSentenceVisible
       break
     case TypingStateActionType.TICK_TIMER: {
       const increment = action.addTime === undefined ? 1 : action.addTime
