@@ -477,6 +477,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: '2025KaoYanHongBaoShu',
+    name: '2025考研英语词汇红宝书',
+    description: '2025考研英语词汇红宝书',
+    category: '中国考试',
+    tags: ['考研'],
+    url: '/dicts/2025KaoYanHongBaoShu.json',
+    length: 6705,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
