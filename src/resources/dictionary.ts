@@ -478,6 +478,18 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: '2025KaoYanHongBaoShu',
+    name: '2025考研英语词汇hongbao书',
+    description: '2025考研英语词汇hongbao书',
+    category: '中国考试',
+    tags: ['考研'],
+    url: '/dicts/2025KaoYanHongBaoShu.json',
+    length: 6705,
+    language: 'en',
+    languageCategory: 'en',
+  },
+
+  {
     id: '3000_ClassRoom_English_Words',
     name: '专升本3000词',
     description: '专升本词汇',
