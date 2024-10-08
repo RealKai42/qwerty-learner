@@ -3047,6 +3047,17 @@ const programming: DictionaryResource[] = [
     languageCategory: 'code',
   },
   {
+    id: 'oi-xcpc',
+    name: 'OI / XCPC 竞赛词汇',
+    description: 'OI / XCPC 竞赛词汇',
+    category: '代码练习',
+    tags: ['C++'],
+    url: '/dicts/OI_XCPC.json',
+    length: 195,
+    language: 'en',
+    languageCategory: 'code',
+  },
+  {
     id: 'childCode004',
     name: 'Arduino',
     description: 'Arduino常见词',
