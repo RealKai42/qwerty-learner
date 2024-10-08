@@ -479,8 +479,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: '2025KaoYanHongBaoShu',
-    name: '2025考研英语词汇红宝书',
-    description: '2025考研英语词汇红宝书',
+    name: '2025考研英语词汇hongbao书',
+    description: '2025考研英语词汇hongbao书',
     category: '中国考试',
     tags: ['考研'],
     url: '/dicts/2025KaoYanHongBaoShu.json',
