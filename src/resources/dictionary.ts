@@ -477,6 +477,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: '3000_ClassRoom_English_Words',
+    name: '专升本3000词',
+    description: '专升本词汇',
+    category: '中国考试',
+    tags: ['大学英语'],
+    url: '/dicts/3000_ClassRoom_English_Words.json',
+    length: 2991,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
