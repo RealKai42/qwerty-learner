@@ -484,7 +484,7 @@ const chinaExam: DictionaryResource[] = [
     category: '中国考试',
     tags: ['大学英语'],
     url: '/dicts/3000_ClassRoom_English_Words.json',
-    length: 3000,
+    length: 2991,
     language: 'en',
     languageCategory: 'en',
   },
