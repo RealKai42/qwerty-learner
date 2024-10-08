@@ -3019,7 +3019,7 @@ const programming: DictionaryResource[] = [
     category: '代码练习',
     tags: ['C++'],
     url: '/dicts/OI_XCPC.json',
-    length: 200,
+    length: 195,
     language: 'en',
     languageCategory: 'code',
   },
