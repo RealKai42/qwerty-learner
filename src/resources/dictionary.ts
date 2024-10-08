@@ -1852,6 +1852,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'new-waiyan1',
+    name: '新外研七年级上册',
+    description: '新外研版七年级上册',
+    category: '青少年英语',
+    tags: ['外研版'],
+    url: '/dicts/Newwaiyan7-1.json',
+    length: 294,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'waiyan2',
     name: '外研七年级下册',
     description: '外研版七年级下册',
