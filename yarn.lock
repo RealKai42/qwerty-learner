@@ -3718,7 +3718,7 @@ file-entry-cache@^6.0.1:
 
 file-saver@^2.0.5:
   version "2.0.5"
-  resolved "https://registry.npmmirror.com/file-saver/-/file-saver-2.0.5.tgz"
+  resolved "https://registry.npmmirror.com/file-saver/-/file-saver-2.0.5.tgz#d61cfe2ce059f414d899e9dd6d4107ee25670c38"
   integrity sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==
 
 filelist@^1.0.4:
@@ -6279,7 +6279,7 @@ wrappy@1:
 
 xlsx@^0.18.5:
   version "0.18.5"
-  resolved "https://registry.npmjs.org/xlsx/-/xlsx-0.18.5.tgz"
+  resolved "https://registry.npmmirror.com/xlsx/-/xlsx-0.18.5.tgz#16711b9113c848076b8a177022799ad356eba7d0"
   integrity sha512-dmg3LCjBPHZnQp5/F/+nnTa+miPJxUXB6vtk42YjBBKayDNagxGEeIdWApkYPOf3Z3pm3k62Knjzp7lMeTEtFQ==
   dependencies:
     adler-32 "~1.3.0"

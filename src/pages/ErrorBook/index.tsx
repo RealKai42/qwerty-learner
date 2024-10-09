@@ -3,14 +3,18 @@ import type { ISortType } from './HeadWrongNumber'
 import HeadWrongNumber from './HeadWrongNumber'
 import Pagination, { ITEM_PER_PAGE } from './Pagination'
 import RowDetail from './RowDetail'
+import useGetWord from './hooks/useGetWord'
 import { currentRowDetailAtom } from './store'
 import type { groupedWordRecords } from './type'
+import { idDictionaryMap } from '@/resources/dictionary'
 import { db, useDeleteWordRecord } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
+import { saveAs } from 'file-saver'
 import { useAtomValue } from 'jotai'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import * as XLSX from 'xlsx'
 import IconX from '~icons/tabler/x'
 
 export function ErrorBook() {
@@ -93,6 +97,24 @@ export function ErrorBook() {
     setReload((prev) => !prev)
   }
 
+  const handleExport = () => {
+    const ErrorBookData = [] as any
+
+    // renderRecords.forEach((item: any) => {
+    //   const dictInfo = idDictionaryMap[item.dict]
+    //   const { word } = useGetWord(item.word, dictInfo)
+    //   ErrorBookData.push({ 单词: item.word, 释义: word ? word.trans.join('；') : '', 错误次数: item.wrongCount, 词典: item.dict })
+    // })
+
+    const worksheet = XLSX.utils.json_to_sheet(ErrorBookData)
+    const workbook = XLSX.utils.book_new()
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1')
+
+    const excelBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' })
+    const blob = new Blob([excelBuffer], { type: 'application/octet-stream' })
+    saveAs(blob, 'ErrorBook.xlsx')
+  }
+
   return (
     <>
       <div className={`relative flex h-screen w-full flex-col items-center pb-4 ease-in ${currentRowDetail && 'blur-sm'}`}>
@@ -108,7 +130,9 @@ export function ErrorBook() {
               <span className="basis-6/12">释义</span>
               <HeadWrongNumber className="basis-1/12" sortType={sortType} setSortType={setSort} />
               <span className="basis-1/12">词典</span>
-              <span className="basis-1/12"> </span>
+              <button className="my-btn-primary w-30 bg-indigo-500 shadow" onClick={handleExport}>
+                导出
+              </button>
             </div>
             <ScrollArea.Root className="flex-1 overflow-y-auto pt-5">
               <ScrollArea.Viewport className="h-full  ">
