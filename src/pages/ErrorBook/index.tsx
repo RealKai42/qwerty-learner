@@ -3,10 +3,8 @@ import type { ISortType } from './HeadWrongNumber'
 import HeadWrongNumber from './HeadWrongNumber'
 import Pagination, { ITEM_PER_PAGE } from './Pagination'
 import RowDetail from './RowDetail'
-import useGetWord from './hooks/useGetWord'
 import { currentRowDetailAtom } from './store'
 import type { groupedWordRecords } from './type'
-import { idDictionaryMap } from '@/resources/dictionary'
 import { db, useDeleteWordRecord } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
@@ -26,6 +24,13 @@ export function ErrorBook() {
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
   const [reload, setReload] = useState(false)
+  const [words, setWords] = useState<any[]>([])
+
+  const handleWordUpdate = (word: any) => {
+    console.log(word)
+
+    setWords((prevWords) => [...prevWords, word])
+  }
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -98,13 +103,19 @@ export function ErrorBook() {
   }
 
   const handleExport = () => {
+    console.log(words)
+
     const ErrorBookData = [] as any
 
-    // renderRecords.forEach((item: any) => {
-    //   const dictInfo = idDictionaryMap[item.dict]
-    //   const { word } = useGetWord(item.word, dictInfo)
-    //   ErrorBookData.push({ 单词: item.word, 释义: word ? word.trans.join('；') : '', 错误次数: item.wrongCount, 词典: item.dict })
-    // })
+    renderRecords.forEach((item: any) => {
+      const word = words.find((w) => w.name === item.word)
+      ErrorBookData.push({
+        单词: item.word,
+        释义: word ? word.trans.join('；') : '',
+        错误次数: item.wrongCount,
+        词典: item.dict,
+      })
+    })
 
     const worksheet = XLSX.utils.json_to_sheet(ErrorBookData)
     const workbook = XLSX.utils.book_new()
@@ -142,6 +153,7 @@ export function ErrorBook() {
                       key={`${record.dict}-${record.word}`}
                       record={record}
                       onDelete={() => handleDelete(record.word, record.dict)}
+                      onWordUpdate={handleWordUpdate}
                     />
                   ))}
                 </div>
