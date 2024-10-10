@@ -21,7 +21,6 @@ const ErrorRow: FC<IErrorRowProps> = ({ record, onDelete, onWordUpdate }) => {
   const dictInfo = idDictionaryMap[record.dict]
   const { word, isLoading, hasError } = useGetWord(record.word, dictInfo)
   const prevWordRef = useRef<any>()
-
   const stableWord = useMemo(() => word, [word])
 
   const onClick = useCallback(() => {
