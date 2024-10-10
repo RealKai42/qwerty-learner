@@ -43,7 +43,7 @@ const ErrorRow: FC<IErrorRowProps> = ({ record, onDelete, onWordUpdate }) => {
     >
       <span className="basis-2/12 break-normal">{record.word}</span>
       <span className="basis-6/12 break-normal">
-        {stableWord ? stableWord.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
+        {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
       </span>
       <span className="basis-1/12 break-normal pl-8">{record.wrongCount}</span>
       <span className="basis-1/12 break-normal">{dictInfo?.name}</span>
