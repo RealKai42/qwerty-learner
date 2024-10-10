@@ -1,3 +1,4 @@
+import DropdownExport from './DropdownExport'
 import ErrorRow from './ErrorRow'
 import type { ISortType } from './HeadWrongNumber'
 import HeadWrongNumber from './HeadWrongNumber'
@@ -8,11 +9,9 @@ import type { groupedWordRecords } from './type'
 import { db, useDeleteWordRecord } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { saveAs } from 'file-saver'
 import { useAtomValue } from 'jotai'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import * as XLSX from 'xlsx'
 import IconX from '~icons/tabler/x'
 
 export function ErrorBook() {
@@ -24,13 +23,7 @@ export function ErrorBook() {
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
   const [reload, setReload] = useState(false)
-  const [words, setWords] = useState<any[]>([])
-
-  const handleWordUpdate = (word: any) => {
-    console.log(word)
-
-    setWords((prevWords) => [...prevWords, word])
-  }
+  const [paraphrases, setParaphrases] = useState<any[]>([])
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -102,28 +95,8 @@ export function ErrorBook() {
     setReload((prev) => !prev)
   }
 
-  const handleExport = () => {
-    console.log(words)
-
-    const ErrorBookData = [] as any
-
-    renderRecords.forEach((item: any) => {
-      const word = words.find((w) => w.name === item.word)
-      ErrorBookData.push({
-        单词: item.word,
-        释义: word ? word.trans.join('；') : '',
-        错误次数: item.wrongCount,
-        词典: item.dict,
-      })
-    })
-
-    const worksheet = XLSX.utils.json_to_sheet(ErrorBookData)
-    const workbook = XLSX.utils.book_new()
-    XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1')
-
-    const excelBuffer = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' })
-    const blob = new Blob([excelBuffer], { type: 'application/octet-stream' })
-    saveAs(blob, 'ErrorBook.xlsx')
+  const handleWordUpdate = (paraphrases: object) => {
+    setParaphrases((prevWords) => [...prevWords, paraphrases])
   }
 
   return (
@@ -141,9 +114,7 @@ export function ErrorBook() {
               <span className="basis-6/12">释义</span>
               <HeadWrongNumber className="basis-1/12" sortType={sortType} setSortType={setSort} />
               <span className="basis-1/12">词典</span>
-              <button className="my-btn-primary w-30 bg-indigo-500 shadow" onClick={handleExport}>
-                导出
-              </button>
+              <DropdownExport renderRecords={renderRecords} paraphrases={paraphrases} />
             </div>
             <ScrollArea.Root className="flex-1 overflow-y-auto pt-5">
               <ScrollArea.Viewport className="h-full  ">
