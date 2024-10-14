@@ -17,6 +17,8 @@ export const WordPronunciationIcon = React.forwardRef<
         // 哈萨克语老文字
         return word.trans[2]
       }
+    } else if (word.phone !== undefined && word.phone.trim() !== '') {
+      return word.phone
     } else {
       return word.name
     }

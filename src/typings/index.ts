@@ -1,9 +1,9 @@
 export * from './resource'
 
-export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk'
-export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk'
-export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de' | 'kk' | 'hapin'
-export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code' | 'kk'
+export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'teochew' | 'kityall' | 'teoyall' | 'custom'
+export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'teochew' | 'kityall' | 'teoyall' | 'custom'
+export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'code' | 'teochew'
+export type LanguageCategoryType = 'en' | 'zh' | 'ja' | 'de' | 'kk' | 'code' | 'teochew'
 
 type Pronunciation2PhoneticMap = Record<PronunciationType, PhoneticType>
 
@@ -16,13 +16,19 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   de: 'de',
   hapin: 'hapin',
   kk: 'kk',
+  teochew: 'teochew',
+  kityall: 'kityall',
+  teoyall: 'teoyall',
+  custom: 'custom',
 }
 
 export type Word = {
   name: string
   trans: string[]
+  ipa: string
   usphone: string
   ukphone: string
+  phone: string
   notation?: string
 }
 

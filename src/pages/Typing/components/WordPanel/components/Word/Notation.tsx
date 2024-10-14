@@ -1,4 +1,5 @@
 import { isKanji } from '@/utils/kana'
+import React from 'react'
 import { useMemo } from 'react'
 
 type NotationProps = {
@@ -15,11 +16,11 @@ export default function Notation({ notation }: NotationProps) {
   return (
     <div className="mx-auto flex h-20 items-end">
       <ruby className="mb-1 p-0 font-mono text-5xl text-gray-800 dark:text-opacity-80">
-        {infos.map(({ word, phonetic }) => {
+        {infos.map(({ word, phonetic }, index) => {
           const hasPhonetic = phonetic && phonetic.length > 0
           const isEmptyPhonetic = hasPhonetic && phonetic.trim().length == 0
           return (
-            <>
+            <React.Fragment key={index}>
               {word}
               {hasPhonetic && isEmptyPhonetic ? (
                 <>
@@ -32,7 +33,7 @@ export default function Notation({ notation }: NotationProps) {
                   <rp>{')'}</rp>
                 </>
               )}
-            </>
+            </React.Fragment>
           )
         })}
       </ruby>

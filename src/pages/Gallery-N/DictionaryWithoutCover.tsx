@@ -69,7 +69,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
             <div className=" flex w-full items-center pt-2">
               {progress > 0 && (
                 <Progress.Root
-                  value={progress}
+                  value={progress || 0}
                   max={100}
                   className={`mr-4 h-2 w-full rounded-full border  bg-white ${isSelected ? 'border-indigo-600' : 'border-indigo-400'}`}
                 >
