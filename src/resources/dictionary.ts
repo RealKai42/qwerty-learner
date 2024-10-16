@@ -3634,12 +3634,12 @@ const kazakhHapinDicts: DictionaryResource[] = [
 //印尼语高频词汇
 const indonesianDicts: DictionaryResource[] = [
   {
-    id: 'indonesian_highFrequency_3043',
+    id: 'indonesian_highFrequency_3037',
     name: '印尼语高频词汇',
     description: '印尼语常用单词及中文解释',
     category: '印尼语',
     tags: ['基础'],
-    url: '/dicts/Indonesian.json',
+    url: '/dicts/IndonesianSentences.json',
     length: 3037,
     language: 'id',
     languageCategory: 'id',
