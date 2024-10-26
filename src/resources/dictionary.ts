@@ -503,9 +503,9 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'huang2024-26',
     name: '2024-26',
-    description: '200',
+    description: '专升本词汇',
     category: '中国考试',
-    tags: ['其他'],
+    tags: ['大学英语'],
     url: '/dicts/2024-10-26.json',
     length: 238,
     language: 'en',
