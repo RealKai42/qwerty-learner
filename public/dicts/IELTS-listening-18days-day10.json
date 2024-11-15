@@ -1,0 +1,134 @@
+[
+    {
+        "name": "mammal",
+        "trans": ["哺乳动物"]
+    },
+    {
+        "name": "postpone",
+        "trans": ["推迟"]
+    },
+    {
+        "name": "woodland",
+        "trans": ["林地", "森林"]
+    },
+    {
+        "name": "cave",
+        "trans": ["山洞"]
+    },
+    {
+        "name": "order",
+        "trans": ["订购", "秩序", "命令"]
+    },
+    {
+        "name": "lawyer",
+        "trans": ["律师"]
+    },
+    {
+        "name": "acid",
+        "trans": ["酸的"]
+    },
+    {
+        "name": "beat",
+        "trans": ["（心脏）跳动"]
+    },
+    {
+        "name": "fitness",
+        "trans": ["健康"]
+    },
+    {
+        "name": "necessity",
+        "trans": ["必需品"]
+    },
+    {
+        "name": "church",
+        "trans": ["教堂"]
+    },
+    {
+        "name": "flood",
+        "trans": ["洪水"]
+    },
+    {
+        "name": "publication",
+        "trans": ["出版"]
+    },
+    {
+        "name": "critical",
+        "trans": ["批评的", "关键的"]
+    },
+    {
+        "name": "behavior",
+        "trans": ["行为"]
+    },
+    {
+        "name": "vote",
+        "trans": ["投票"]
+    },
+    {
+        "name": "session",
+        "trans": ["会议", "学期"]
+    },
+    {
+        "name": "crop",
+        "trans": ["农作物"]
+    },
+    {
+        "name": "technique",
+        "trans": ["技巧"]
+    },
+    {
+        "name": "entrant",
+        "trans": ["参与者"]
+    },
+    {
+        "name": "overload",
+        "trans": ["使超载", "超负荷"]
+    },
+    {
+        "name": "council",
+        "trans": ["委员会"]
+    },
+    {
+        "name": "chairman",
+        "trans": ["主席"]
+    },
+    {
+        "name": "railway",
+        "trans": ["铁路"]
+    },
+    {
+        "name": "contract",
+        "trans": ["合同"]
+    },
+    {
+        "name": "rare",
+        "trans": ["稀少的"]
+    },
+    {
+        "name": "common room",
+        "trans": ["公共休息室"]
+    },
+    {
+        "name": "enquiry",
+        "trans": ["咨询"]
+    },
+    {
+        "name": "thick",
+        "trans": ["厚的"]
+    },
+    {
+        "name": "liquid",
+        "trans": ["液体"]
+    },
+    {
+        "name": "dye",
+        "trans": ["染"]
+    },
+    {
+        "name": "rat",
+        "trans": ["老鼠"]
+    },
+    {
+        "name": "measure",
+        "trans": ["测量"]
+    }
+]

@@ -1,7 +1,9 @@
 import type { TErrorWordData } from '../hooks/useErrorWords'
 import { Button } from '@/components/ui/button'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import type { ColumnDef } from '@tanstack/react-table'
 import PhArrowsDownUpFill from '~icons/ph/arrows-down-up-fill'
+import DeleteIcon from '~icons/weui/delete-filled'
 
 export type ErrorColumn = {
   word: string
@@ -10,7 +12,7 @@ export type ErrorColumn = {
   errorChar: string[]
 }
 
-export const errorColumns: ColumnDef<ErrorColumn>[] = [
+export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnDef<ErrorColumn>[] => [
   {
     accessorKey: 'word',
     size: 100,
@@ -39,18 +41,42 @@ export const errorColumns: ColumnDef<ErrorColumn>[] = [
         </Button>
       )
     },
+    cell: ({ row }) => {
+      return <span className="flex justify-center">{row.original.errorCount} </span>
+    },
   },
   {
     accessorKey: 'errorChar',
     header: '易错字母',
-    size: 80,
+    size: 100,
     cell: ({ row }) => {
       return (
         <p>
           {(row.getValue('errorChar') as string[]).map((char, index) => (
-            <kbd key={`${char}-${index}`}>{char + ' '}</kbd>
+            <kbd className="flex justify-center" key={`${char}-${index}`}>
+              {char + ' '}
+            </kbd>
           ))}
         </p>
+      )
+    },
+  },
+  {
+    accessorKey: 'delete',
+    header: '',
+    size: 40,
+    cell: ({ row }) => {
+      return (
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              <DeleteIcon className="cursor-pointer" onClick={() => onDelete(row.original.word)} />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Delete Records</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       )
     },
   },

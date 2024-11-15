@@ -120,3 +120,16 @@ export function useSaveWordRecord() {
 
   return saveWordRecord
 }
+
+export function useDeleteWordRecord() {
+  const deleteWordRecord = useCallback(async (word: string, dict: string) => {
+    try {
+      const deletedCount = await db.wordRecords.where({ word, dict }).delete()
+      return deletedCount
+    } catch (error) {
+      console.error(`删除单词记录时出错：`, error)
+    }
+  }, [])
+
+  return { deleteWordRecord }
+}

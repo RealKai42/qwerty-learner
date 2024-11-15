@@ -1,0 +1,306 @@
+[
+    {
+        "name": "stop watch",
+        "trans": ["秒表"]
+    },
+    {
+        "name": "ban",
+        "trans": ["禁止"]
+    },
+    {
+        "name": "filter",
+        "trans": ["过滤器"]
+    },
+    {
+        "name": "standard",
+        "trans": ["标准"]
+    },
+    {
+        "name": "operate",
+        "trans": ["操作"]
+    },
+    {
+        "name": "feedback",
+        "trans": ["反馈"]
+    },
+    {
+        "name": "brush",
+        "trans": ["刷子"]
+    },
+    {
+        "name": "captain",
+        "trans": ["队长"]
+    },
+    {
+        "name": "display",
+        "trans": ["显示"]
+    },
+    {
+        "name": "TV surveillance",
+        "trans": ["TV监视"]
+    },
+    {
+        "name": "button",
+        "trans": ["按钮"]
+    },
+    {
+        "name": "blinded",
+        "trans": ["瞎的"]
+    },
+    {
+        "name": "characteristic",
+        "trans": ["特色"]
+    },
+    {
+        "name": "fixed",
+        "trans": ["固定的"]
+    },
+    {
+        "name": "mathematics",
+        "trans": ["数学"]
+    },
+    {
+        "name": "academic",
+        "trans": ["学术的"]
+    },
+    {
+        "name": "scoring",
+        "trans": ["得分"]
+    },
+    {
+        "name": "heroine",
+        "trans": ["女主角"]
+    },
+    {
+        "name": "Town Hall",
+        "trans": ["市政厅"]
+    },
+    {
+        "name": "spare",
+        "trans": ["节约"]
+    },
+    {
+        "name": "altitude",
+        "trans": ["海拔"]
+    },
+    {
+        "name": "scenery",
+        "trans": ["景色"]
+    },
+    {
+        "name": "fishery",
+        "trans": ["渔业"]
+    },
+    {
+        "name": "certificate",
+        "trans": ["证书"]
+    },
+    {
+        "name": "injure",
+        "trans": ["受伤"]
+    },
+    {
+        "name": "strike",
+        "trans": ["撞击"]
+    },
+    {
+        "name": "luggage",
+        "trans": ["行李"]
+    },
+    {
+        "name": "fringe",
+        "trans": ["边缘"]
+    },
+    {
+        "name": "badge",
+        "trans": ["徽章"]
+    },
+    {
+        "name": "cooperative",
+        "trans": ["合作的"]
+    },
+    {
+        "name": "donkey",
+        "trans": ["驴"]
+    },
+    {
+        "name": "riverside",
+        "trans": ["河边"]
+    },
+    {
+        "name": "humid",
+        "trans": ["湿润的"]
+    },
+    {
+        "name": "escape",
+        "trans": ["逃脱"]
+    },
+    {
+        "name": "seek",
+        "trans": ["寻找"]
+    },
+    {
+        "name": "accompany",
+        "trans": ["陪伴"]
+    },
+    {
+        "name": "limb",
+        "trans": ["四肢"]
+    },
+    {
+        "name": "quiz",
+        "trans": ["小型考试"]
+    },
+    {
+        "name": "multimedia",
+        "trans": ["多媒体"]
+    },
+    {
+        "name": "championship",
+        "trans": ["冠军地位"]
+    },
+    {
+        "name": "influential",
+        "trans": ["有影响力的"]
+    },
+    {
+        "name": "regulation",
+        "trans": ["规则"]
+    },
+    {
+        "name": "certificate",
+        "trans": ["证明…"]
+    },
+    {
+        "name": "statement",
+        "trans": ["声明"]
+    },
+    {
+        "name": "calculate",
+        "trans": ["计算"]
+    },
+    {
+        "name": "assume",
+        "trans": ["假定"]
+    },
+    {
+        "name": "emergency",
+        "trans": ["紧急事件"]
+    },
+    {
+        "name": "sign",
+        "trans": ["记号"]
+    },
+    {
+        "name": "disabled",
+        "trans": ["残疾的"]
+    },
+    {
+        "name": "chain",
+        "trans": ["链"]
+    },
+    {
+        "name": "cafeteria",
+        "trans": ["自助餐厅"]
+    },
+    {
+        "name": "chess",
+        "trans": ["国际象棋"]
+    },
+    {
+        "name": "president",
+        "trans": ["总统"]
+    },
+    {
+        "name": "transport",
+        "trans": ["运输"]
+    },
+    {
+        "name": "senior",
+        "trans": ["高级的"]
+    },
+    {
+        "name": "direction",
+        "trans": ["方向"]
+    },
+    {
+        "name": "political",
+        "trans": ["政治的"]
+    },
+    {
+        "name": "landmark",
+        "trans": ["地标性建筑"]
+    },
+    {
+        "name": "submit",
+        "trans": ["上交"]
+    },
+    {
+        "name": "specific",
+        "trans": ["具体的", "特定的"]
+    },
+    {
+        "name": "assess",
+        "trans": ["评估"]
+    },
+    {
+        "name": "junction",
+        "trans": ["交叉路口"]
+    },
+    {
+        "name": "assistance",
+        "trans": ["帮助"]
+    },
+    {
+        "name": "ambulance",
+        "trans": ["救护车"]
+    },
+    {
+        "name": "harbour",
+        "trans": ["港湾"]
+    },
+    {
+        "name": "category",
+        "trans": ["类别"]
+    },
+    {
+        "name": "sufficient",
+        "trans": ["足够的"]
+    },
+    {
+        "name": "orchard",
+        "trans": ["果园"]
+    },
+    {
+        "name": "adjust",
+        "trans": ["适应"]
+    },
+    {
+        "name": "climate",
+        "trans": ["天气"]
+    },
+    {
+        "name": "previous",
+        "trans": ["之前的"]
+    },
+    {
+        "name": "routine",
+        "trans": ["日常的"]
+    },
+    {
+        "name": "illustration",
+        "trans": ["说明", "图解"]
+    },
+    {
+        "name": "carer",
+        "trans": ["护工"]
+    },
+    {
+        "name": "stretch",
+        "trans": ["伸展"]
+    },
+    {
+        "name": "career",
+        "trans": ["生涯", "职业"]
+    }
+]

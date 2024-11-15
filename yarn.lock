@@ -1370,13 +1370,13 @@
   resolved "https://registry.npmmirror.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify/json@^2.2.56":
-  version "2.2.68"
-  resolved "https://registry.npmmirror.com/@iconify/json/-/json-2.2.68.tgz"
-  integrity sha512-UNgbecms1tWhvY9ycXbWW/nOLlx5Xxlufp+dHWontty0j+yiQfap3UshpSGGAt74C9OLYEFKTl42d20PLRakzg==
+"@iconify/json@^2.2.242":
+  version "2.2.242"
+  resolved "https://registry.npmmirror.com/@iconify/json/-/json-2.2.242.tgz#7a97187e8afe920e179a7a26cfc803627f098c6a"
+  integrity sha512-cS6eYdx1C1GhqaZm25ztH5yoghCaTXGJBeseUkS259GxxX9obtGLLk0yy+twxpNCD5/F9gjbgxh46BjNWsHtwg==
   dependencies:
     "@iconify/types" "*"
-    pathe "^1.0.0"
+    pathe "^1.1.2"
 
 "@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
@@ -1549,6 +1549,11 @@
   integrity sha512-fDSBgd44FKHa1FRMU59qBMPFcl2PZE+2nmqunj+BWFyYYjnhIDWL2ItDs3rrbJDQOtzt5nIebLCQc4QRfz6LJw==
   dependencies:
     "@babel/runtime" "^7.13.10"
+
+"@radix-ui/react-compose-refs@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.0.tgz#656432461fc8283d7b591dcf0d79152fae9ecc74"
+  integrity sha512-b4inOtiaOnYf9KWyO3jAeeCG6FeyfY6ldiEPanbUjWd+xIk5wZeHa8yVwmrJ2vderhu/BQvzCrJI0lHd+wIiqw==
 
 "@radix-ui/react-context@1.0.0":
   version "1.0.0"
@@ -1803,13 +1808,20 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-compose-refs" "1.0.0"
 
-"@radix-ui/react-slot@1.0.2", "@radix-ui/react-slot@^1.0.2":
+"@radix-ui/react-slot@1.0.2":
   version "1.0.2"
   resolved "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.0.2.tgz#a9ff4423eade67f501ffb32ec22064bc9d3099ab"
   integrity sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==
   dependencies:
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-compose-refs" "1.0.1"
+
+"@radix-ui/react-slot@^1.0.2":
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.1.0.tgz#7c5e48c36ef5496d97b08f1357bb26ed7c714b84"
+  integrity sha512-FUCf5XMfmW4dtYl69pdS4DbxKy8nj4M7SafBgPllysxmdachynNflAdp/gCsnYWNDnge6tI9onzMp5ARYc1KNw==
+  dependencies:
+    "@radix-ui/react-compose-refs" "1.1.0"
 
 "@radix-ui/react-tabs@^1.0.4":
   version "1.0.4"
@@ -2414,6 +2426,11 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
+
 ansi-escapes@^4.3.0:
   version "4.3.2"
   resolved "https://registry.npmmirror.com/ansi-escapes/-/ansi-escapes-4.3.2.tgz"
@@ -2740,9 +2757,9 @@ camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001449, caniuse-lite@^1.0.30001464:
-  version "1.0.30001489"
-  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001489.tgz"
-  integrity sha512-x1mgZEXK8jHIfAxm+xgdpHpk50IN3z3q3zP261/WS+uvePxW8izXuCu6AHz0lkuYTlATDehiZ/tNyYBdSQsOUQ==
+  version "1.0.30001655"
+  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001655.tgz"
+  integrity sha512-jRGVy3iSGO5Uutn2owlb5gR6qsGngTw9ZTb4ali9f3glshcNmJ2noam4Mo9zia5P9Dk3jNNydy7vQjuE5dQmfg==
 
 canvas-confetti@^1.6.0:
   version "1.6.0"
@@ -3200,6 +3217,24 @@ electron-to-chromium@^1.4.284:
   version "1.4.402"
   resolved "https://registry.npmmirror.com/electron-to-chromium/-/electron-to-chromium-1.4.402.tgz"
   integrity sha512-gWYvJSkohOiBE6ecVYXkrDgNaUjo47QEKK0kQzmWyhkH+yoYiG44bwuicTGNSIQRG3WDMsWVZJLRnJnLNkbWvA==
+
+embla-carousel-react@^8.2.1:
+  version "8.2.1"
+  resolved "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-8.2.1.tgz#0202bd6b04f749cf9a56ad86f4549f75b7bb43bb"
+  integrity sha512-YKtARk101mp00Zb6UAFkkvK+5XRo92LAtO9xLFeDnQ/XU9DqFhKnRy1CedRRj0/RSk6MTFDx3MqOQue3gJj9DA==
+  dependencies:
+    embla-carousel "8.2.1"
+    embla-carousel-reactive-utils "8.2.1"
+
+embla-carousel-reactive-utils@8.2.1:
+  version "8.2.1"
+  resolved "https://registry.npmjs.org/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.2.1.tgz#c62fdb6f77c6dcd68bcdaba62523acacb8e633fc"
+  integrity sha512-LXMVOOyv09ZKRxRQXYMX1FpVGcypsuxdcidNcNlBQUN2mK7hkmjVFQwwhfnnY39KMi88XYnYPBgMxfTe0vxSrA==
+
+embla-carousel@8.2.1:
+  version "8.2.1"
+  resolved "https://registry.npmjs.org/embla-carousel/-/embla-carousel-8.2.1.tgz#d156be420f47d9f61f444eb789c9901cce43f7f8"
+  integrity sha512-9mTDtyMZJhFuuW5pixhTT4iLiJB1l3dH3IpXUKCsgLlRlHCiySf/wLKy5xIAzmxIsokcQ50xea8wi7BCt0+Rxg==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -4942,10 +4977,10 @@ path-type@^4.0.0:
   resolved "https://registry.npmmirror.com/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-pathe@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.npmmirror.com/pathe/-/pathe-1.1.0.tgz"
-  integrity sha512-ODbEPR0KKHqECXW1GoxdDb+AZvULmXjVPy4rt+pGo2+TnjJTIPJQSVS6N63n8T2Ip+syHhbn52OewKicV0373w==
+pathe@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmmirror.com/pathe/-/pathe-1.1.2.tgz#6c4cb47a945692e48a1ddd6e4094d170516437ec"
+  integrity sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==
 
 performance-now@^2.1.0:
   version "2.1.0"

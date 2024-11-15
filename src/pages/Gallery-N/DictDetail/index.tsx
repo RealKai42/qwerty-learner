@@ -1,3 +1,4 @@
+import { useDeleteWordRecord } from '../../../utils/db'
 import Chapter from '../Chapter'
 import { ErrorTable } from '../ErrorTable'
 import { getRowsFromErrorWordData } from '../ErrorTable/columns'
@@ -28,10 +29,23 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
   const [curTab, setCurTab] = useState<Tab>(Tab.Chapters)
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const navigate = useNavigate()
+  const { deleteWordRecord } = useDeleteWordRecord()
+  const [reload, setReload] = useState(false)
 
   const chapter = useMemo(() => (dict.id === currentDictId ? currentChapter : 0), [currentChapter, currentDictId, dict.id])
-  const { errorWordData, isLoading, error } = useErrorWordData(dict)
-  const tableData = useMemo(() => getRowsFromErrorWordData(errorWordData), [errorWordData])
+  const { errorWordData, isLoading, error } = useErrorWordData(dict, reload)
+
+  const tableData = useMemo(() => {
+    return getRowsFromErrorWordData(errorWordData)
+  }, [errorWordData])
+
+  const onDelete = useCallback(
+    async (word: string) => {
+      await deleteWordRecord(word, dict.id)
+      setReload((old) => !old)
+    },
+    [deleteWordRecord, dict.id],
+  )
 
   const onChangeChapter = useCallback(
     (index: number) => {
@@ -43,6 +57,15 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
     [dict.id, navigate, setCurrentChapter, setCurrentDictId, setReviewModeInfo],
   )
 
+  const handleTabChange = useCallback(
+    (value: Tab) => {
+      if (value !== curTab) {
+        setCurTab(value)
+      }
+    },
+    [curTab],
+  )
+
   return (
     <div className="flex flex-col rounded-[4rem] px-4 py-3 pl-5 text-gray-800 dark:text-gray-300">
       <div className="text relative flex h-40 flex-col gap-2">
@@ -51,24 +74,30 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
         <p>共 {dict.length} 词</p>
         <p>{dict.description}</p>
         <div className="absolute bottom-5 right-4">
-          <ToggleGroup
-            type="single"
-            value={curTab}
-            onValueChange={(value: Tab) => {
-              setCurTab(value)
-            }}
-          >
-            <ToggleGroupItem value="chapters">
+          <ToggleGroup type="single" value={curTab} onValueChange={handleTabChange}>
+            <ToggleGroupItem
+              value={Tab.Chapters}
+              disabled={curTab === Tab.Chapters}
+              className={`${curTab === Tab.Chapters ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
+            >
               <MajesticonsPaperFoldTextLine className="mr-1.5 text-gray-500" />
               章节选择
             </ToggleGroupItem>
             {errorWordData.length > 0 && (
               <>
-                <ToggleGroupItem value="errors">
+                <ToggleGroupItem
+                  value={Tab.Errors}
+                  disabled={curTab === Tab.Errors}
+                  className={`${curTab === Tab.Errors ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
+                >
                   <IcOutlineCollectionsBookmark className="mr-1.5 text-gray-500" />
                   查看错题
                 </ToggleGroupItem>
-                <ToggleGroupItem value="review">
+                <ToggleGroupItem
+                  value={Tab.Review}
+                  disabled={curTab === Tab.Review}
+                  className={`${curTab === Tab.Review ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
+                >
                   <PajamasReviewList className="mr-1.5 text-gray-500" />
                   错题回顾
                 </ToggleGroupItem>
@@ -95,7 +124,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
             </ScrollArea>
           </TabsContent>
           <TabsContent value={Tab.Errors} className="h-full">
-            <ErrorTable data={tableData} isLoading={isLoading} error={error} />
+            <ErrorTable data={tableData} isLoading={isLoading} error={error} onDelete={onDelete} />
           </TabsContent>
           <TabsContent value={Tab.Review} className="h-full">
             <ReviewDetail errorData={errorWordData} dict={dict} />
