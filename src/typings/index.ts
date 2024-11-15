@@ -1,9 +1,35 @@
 export * from './resource'
 
-export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id'
-export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id'
-export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de' | 'kk' | 'hapin' | 'id'
-export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code' | 'kk' | 'id'
+export type PronunciationType =
+  | 'us'
+  | 'uk'
+  | 'romaji'
+  | 'zh'
+  | 'ja'
+  | 'de'
+  | 'hapin'
+  | 'kk'
+  | 'id'
+  | 'teochew'
+  | 'kityall'
+  | 'teoyall'
+  | 'custom'
+export type PhoneticType =
+  | 'us'
+  | 'uk'
+  | 'romaji'
+  | 'zh'
+  | 'ja'
+  | 'de'
+  | 'hapin'
+  | 'kk'
+  | 'id'
+  | 'teochew'
+  | 'kityall'
+  | 'teoyall'
+  | 'custom'
+export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'id' | 'kk' | 'code' | 'teochew'
+export type LanguageCategoryType = 'en' | 'zh' | 'ja' | 'de' | 'kk' | 'id' | 'code' | 'teochew'
 
 type Pronunciation2PhoneticMap = Record<PronunciationType, PhoneticType>
 
@@ -16,14 +42,20 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   de: 'de',
   hapin: 'hapin',
   kk: 'kk',
+  teochew: 'teochew',
+  kityall: 'kityall',
+  teoyall: 'teoyall',
+  custom: 'custom',
   id: 'id',
 }
 
 export type Word = {
   name: string
   trans: string[]
+  ipa: string
   usphone: string
   ukphone: string
+  phone: string
   notation?: string
 }
 

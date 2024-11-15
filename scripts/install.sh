@@ -13,7 +13,7 @@ fi
 
 cd ..
 echo "开始安装依赖..."
-yarn install --registry=https://registry.npm.taobao.org
+yarn install --registry=https://registry.npmmirror.com
 echo "依赖安装完成，启动程序..."
 
 # 在浏览器中打开
