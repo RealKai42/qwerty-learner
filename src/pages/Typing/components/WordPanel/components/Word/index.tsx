@@ -24,6 +24,7 @@ import {
 import type { Word } from '@/typings'
 import { CTRL, getUtcStringForMixpanel, useMixPanelWordLogUploader } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
+import type { KeymapItem } from '@/utils/keymaps'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -31,7 +32,14 @@ import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
-export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
+type WordComponentProps = {
+  word: Word
+  onFinish: () => void
+  isSetting: boolean
+  keyMaps: KeymapItem[]
+}
+
+export default function WordComponent({ word, onFinish, isSetting, keyMaps }: WordComponentProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -101,31 +109,31 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   }, [])
 
   useHotkeys(
-    'tab',
+    keyMaps[3].hotkey,
     () => {
       handleHoverWord(true)
     },
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[3].hotkey !== '' },
     [],
   )
 
   useHotkeys(
-    'tab',
+    keyMaps[3].hotkey,
     () => {
       handleHoverWord(false)
     },
-    { enableOnFormTags: true, keyup: true, preventDefault: true },
+    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting && keyMaps[3].hotkey !== '' },
     [],
   )
   useHotkeys(
-    'ctrl+j',
+    keyMaps[8].hotkey,
     () => {
       if (state.isTyping) {
         wordPronunciationIconRef.current?.play()
       }
     },
     [state.isTyping],
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[8].hotkey !== '' },
   )
 
   useEffect(() => {
