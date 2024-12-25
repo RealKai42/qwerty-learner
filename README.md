@@ -15,10 +15,13 @@
   为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
 </p>
 
-<p align="center">
+<p align="center" style="display: flex; justify-content: center; gap: 10px;">
   <a href="https://github.com/Realkai42/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Realkai42/qwerty-learner" alt="License"></a>
   <a><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
   <a><img src="https://img.shields.io/badge/Powered%20by-React-blue"/></a>
+  <a><img src="https://img.shields.io/github/stars/RealKai42/qwerty-learner"/></a>
+  <a><img src="https://img.shields.io/github/forks/RealKai42/qwerty-learner"/></a>
+  <a href="https://gitcode.com/RealKai42/qwerty-learner/overview"><img src="https://gitcode.com/RealKai42/qwerty-learner/star/badge.svg"/></a>
 </p>
 
 <div align=center>
