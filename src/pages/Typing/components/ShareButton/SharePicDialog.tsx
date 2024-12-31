@@ -118,11 +118,11 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
-                  <div className="flex flex-col items-center justify-center pb-10 pl-20 pr-14 pt-20">
+                  <div className="flex flex-col items-center justify-center pb-10 pl-20 pr-20 pt-16">
                     <button className="absolute right-7 top-5" type="button" onClick={handleClose} title="关闭对话框">
                       <IconXMark className="h-6 w-6 text-gray-400" />
                     </button>
-                    <div className="h-152 w-116">
+                    <div className="h-152 w-100">
                       {imageURL ? (
                         <img src={imageURL} className="h-auto w-full" />
                       ) : (
@@ -161,7 +161,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
       </Transition.Root>
 
       <div style={{ position: 'absolute', left: '-999px', zIndex: -1 }}>
-        <div ref={imageRef} className=" box-content w-85 bg-white p-4">
+        <div ref={imageRef} className=" box-content w-75 p-4">
           <div
             className="relative flex h-112 w-75 flex-col items-start justify-start rounded-xl shadow-lg"
             style={{ backgroundColor: '#F8F8FF' }}
@@ -178,10 +178,10 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
               <div className="ml-5 mt-2 self-start text-xs text-gray-600">{`第 ${currentChapter + 1} 章`}</div>
             </div>
             <div className="mb-3 ml-5 mt-auto">
-              <div className="text-xs">Qwerty.kaiyi.cool</div>
-              <div className="mt-1 text-xs font-normal text-gray-400">为键盘工作者设计的单词与肌肉记忆锻炼软件</div>
+              <div className="text-xs">Qwerty Learning</div>
+              <div className="mt-1 text-xs font-normal text-gray-400">为键盘工作者设计的单词与肌肉记忆锻炼工具</div>
             </div>
-            <div className="absolute -right-9 bottom-10 ">
+            <div className="absolute -right-0 bottom-10 ">
               <img src={shareImage} className="w-48" width={186} height={122} />
             </div>
           </div>

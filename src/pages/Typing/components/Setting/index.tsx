@@ -1,4 +1,5 @@
 import { TypingContext, TypingStateActionType } from '../../store'
+import AboutSetting from './AboutSetting'
 import AdvancedSetting from './AdvancedSetting'
 import DataSetting from './DataSetting'
 import SoundSetting from './SoundSetting'
@@ -11,6 +12,7 @@ import IconEye from '~icons/heroicons/eye-solid'
 import IconAdjustmentsHorizontal from '~icons/tabler/adjustments-horizontal'
 import IconDatabaseCog from '~icons/tabler/database-cog'
 import IconEar from '~icons/tabler/ear'
+import IconAbout from '~icons/tabler/info-circle'
 import IconX from '~icons/tabler/x'
 
 export default function Setting() {
@@ -121,6 +123,17 @@ export default function Setting() {
                           <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
                         </Tab>
+                        <Tab
+                          className={({ selected }) =>
+                            classNames(
+                              'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
+                            )
+                          }
+                        >
+                          <IconAbout className="mr-2 text-neutral-500  dark:text-neutral-300" />
+                          <span className="text-neutral-500 dark:text-neutral-300">关于</span>
+                        </Tab>
                       </Tab.List>
 
                       <Tab.Panels className="h-full w-full flex-1">
@@ -135,6 +148,9 @@ export default function Setting() {
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
                           <DataSetting />
+                        </Tab.Panel>
+                        <Tab.Panel className="flex h-full focus:outline-none">
+                          <AboutSetting />
                         </Tab.Panel>
                       </Tab.Panels>
                     </div>

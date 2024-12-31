@@ -1,0 +1,840 @@
+[
+  {
+    "name": "l",
+    "ipa": "l",
+    "notation": "柳母",
+    "trans": [
+      "廣韻聲母例字：泥來以"
+    ],
+    "phone": "http://tappcdn.resources.teochew.pw/teochew/initials/l.mp3"
+  },
+  {
+    "name": "p",
+    "ipa": "p",
+    "notation": "邊母",
+    "trans": [
+      "廣韻聲母例字：幫滂並",
+      "潮陽語遇元音u唇齒化為pf"
+    ],
+    "phone": "http://tappcdn.resources.teochew.pw/teochew/initials/p.mp3"
+  },
+  {
+    "name": "k",
+    "notation": "球母",
+    "ipa": "k",
+    "trans": [
+      "廣韻聲母例字：羣見曉匣"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/k.mp3"
+  },
+  {
+    "notation": "去母",
+    "ipa": "kʰ",
+    "name": "kh",
+    "trans": [
+      "廣韻聲母例字：羣溪曉匣"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/kh.mp3"
+  },
+  {
+    "notation": "地母",
+    "ipa": "t",
+    "name": "t",
+    "trans": [
+      "廣韻聲母例字：端定知澄從來以"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/t.mp3"
+  },
+  {
+    "notation": "頗母",
+    "ipa": "pʰ",
+    "name": "ph",
+    "trans": [
+      "廣韻聲母例字：幫滂並",
+      "潮陽語遇元音u唇齒化為pfh"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/ph.mp3"
+  },
+  {
+    "notation": "他母",
+    "ipa": "tʰ",
+    "name": "th",
+    "trans": [
+      "廣韻聲母例字：透徹澄以"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/th.mp3"
+  },
+  {
+    "notation": "貞母",
+    "ipa": "ʦ",
+    "name": "ts",
+    "trans": [
+      "廣韻聲母例字：精清從莊章書船以"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/ts.mp3"
+  },
+  {
+    "notation": "入母",
+    "ipa": "ʣ/&/z",
+    "name": "z",
+    "trans": [
+      "廣韻聲母例字：日以"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/dz.mp3"
+  },
+  {
+    "notation": "時母",
+    "ipa": "s",
+    "name": "s",
+    "trans": [
+      "廣韻聲母例字：心邪崇生俟常"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/s.mp3"
+  },
+  {
+    "notation": "英母",
+    "ipa": "零聲母",
+    "name": " ",
+    "trans": [
+      "廣韻聲母例字：影以云曉匣"
+    ],
+    "phone": "http: //www.mogher.com/sound/syllabes/eng1.mp3"
+  },
+  {
+    "notation": "文母",
+    "ipa": "b",
+    "name": "b",
+    "trans": [
+      "廣韻聲母例字：明",
+      "潮陽語遇元音u唇齒化為bv"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/b.mp3"
+  },
+  {
+    "notation": "語母",
+    "ipa": "g",
+    "name": "g",
+    "trans": [
+      "廣韻聲母例字：疑"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/g.mp3"
+  },
+  {
+    "notation": "出母",
+    "ipa": "ʦʰ",
+    "name": "tsh",
+    "trans": [
+      "廣韻聲母例字：清從邪初崇昌以"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/tsh.mp3"
+  },
+  {
+    "notation": "喜母",
+    "ipa": "h",
+    "name": "h",
+    "trans": [
+      "廣韻聲母例字：滂並曉匣云疑"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/h.mp3"
+  },
+  {
+    "notation": "泥母",
+    "ipa": "n",
+    "name": "n",
+    "trans": [
+      "廣韻聲母例字：孃泥"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/n.mp3"
+  },
+  {
+    "notation": "毛母",
+    "ipa": "m",
+    "name": "m",
+    "trans": [
+      "廣韻聲母例字：明"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/m.mp3"
+  },
+  {
+    "notation": "俄母",
+    "ipa": "ŋ",
+    "name": "ng",
+    "trans": [
+      "廣韻聲母例字：疑"
+    ],
+    "phone": "http: //tappcdn.resources.teochew.pw/teochew/initials/ng.mp3"
+  },
+  {
+    "notation": "膠部",
+    "name": "a ah",
+    "trans": [
+      "舒聲字：膠ka/巴pa",
+      "入聲字：鴨ah/踏tah8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ka1.mp3"
+  },
+  {
+    "notation": "皆部",
+    "name": "ai aih",
+    "trans": [
+      "舒聲字：歹tai2/災tsai",
+      "入聲字：哎aih哎叫"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kai1.mp3"
+  },
+  {
+    "notation": "甘部",
+    "name": "am ap",
+    "trans": [
+      "舒聲字：甘kam/南nam5",
+      "入聲字：答tap/塌thap8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kam1.mp3"
+  },
+  {
+    "notation": "幹部",
+    "name": "an at",
+    "trans": [
+      "舒聲字：限han6/班pan",
+      "入聲字：瞎hat/實tsat8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kang1.mp3"
+  },
+  {
+    "notation": "江部",
+    "name": "ang ak",
+    "trans": [
+      "舒聲字：蜂phang/雙sang",
+      "入聲字：角kak/縛pak8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kang1.mp3"
+  },
+  {
+    "notation": "柑部",
+    "name": "ann ahnn",
+    "trans": [
+      "舒聲字：三sann/擔tann",
+      "入聲字："
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ka~1.mp3"
+  },
+  {
+    "notation": "高部",
+    "name": "au auh",
+    "trans": [
+      "舒聲字：老lau6/包pau",
+      "入聲字：樂gauh8*/落lauh8",
+      "*「樂」潮陽語ngauh8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kau1.mp3"
+  },
+  {
+    "notation": "家部",
+    "name": "e eh",
+    "trans": [
+      "舒聲字：家ke/姐tse2",
+      "入聲字：歷leh8/白peh8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ke1.mp3"
+  },
+  {
+    "notation": "弓部",
+    "name": "eng ek",
+    "trans": [
+      "舒聲字：平pheng5/頂teng2",
+      "入聲字：碧phek/綠lek8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/keng1.mp3"
+  },
+  {
+    "notation": "庚部",
+    "name": "enn ehnn",
+    "trans": [
+      "舒聲字：庚kenn/坑khenn",
+      "入聲字：",
+      "注音特例：冷nenn2"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ke~1.mp3"
+  },
+  {
+    "notation": "基部",
+    "name": "i ih",
+    "trans": [
+      "舒聲字：碑pi/抵ti2",
+      "入聲字：砌kih/滴tih"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ki1.mp3"
+  },
+  {
+    "notation": "佳部",
+    "name": "ia iah",
+    "trans": [
+      "舒聲字：爹tia/車tshia",
+      "入聲字：益iah/額hiah8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kia1.mp3"
+  },
+  {
+    "notation": "兼部",
+    "name": "iam iap",
+    "trans": [
+      "舒聲字：鹽iam5/謙khiam",
+      "入聲字：蝶tiap8/捷tsiap8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kiem1.mp3"
+  },
+  {
+    "notation": "堅部",
+    "name": "ian iat",
+    "trans": [
+      "舒聲字：玄hian5/邊pian",
+      "入聲字：哲tiat/切tshiat"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kiang1.mp3"
+  },
+  {
+    "notation": "僵部",
+    "name": "iang iak",
+    "trans": [
+      "舒聲字：僵kiang/將tsiang",
+      "入聲字：略liak8/勺tsiak"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kiang1.mp3"
+  },
+  {
+    "notation": "京部",
+    "name": "iann iahnn",
+    "trans": [
+      "舒聲字：驚kiann/整tsiann2",
+      "入聲字：掀hiahnn",
+      "注音特例：名miann5/領niann2"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kia~1.mp3"
+  },
+  {
+    "notation": "金部",
+    "name": "im ip",
+    "trans": [
+      "舒聲字：金kim/心sim",
+      "入聲字：級khip/入zip8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kim1.mp3"
+  },
+  {
+    "notation": "緊部",
+    "name": "in it",
+    "trans": [
+      "舒聲字：鱗lin5/眞tsin",
+      "入聲字：必pit/匹phit",
+      "揭陽語eng/ek"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/king2.mp3"
+  },
+  {
+    "notation": "鉗部",
+    "name": "inn ihnn",
+    "trans": [
+      "舒聲字：弦hinn5/扇sinn3",
+      "入聲字：",
+      "注音特例：年ninn5"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/khi~5.mp3"
+  },
+  {
+    "notation": "恭部",
+    "name": "iong iok",
+    "trans": [
+      "舒聲字：雍iong/窮khiong5",
+      "入聲字：育iok8/畜thiok"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kiong1.mp3"
+  },
+  {
+    "notation": "究部",
+    "name": "iu iuh",
+    "trans": [
+      "舒聲字：球kiu5/彪piu",
+      "入聲字：嚿kiuh8/啁tsiuh8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kiu3.mp3"
+  },
+  {
+    "notation": "歌部",
+    "name": "o oh",
+    "trans": [
+      "舒聲字：哥ko/波po",
+      "入聲字：鶴hoh8/落loh8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ko1.mp3"
+  },
+  {
+    "notation": "麼部",
+    "name": "oh",
+    "trans": [
+      "舒聲字：",
+      "入聲字：麽moh/膜moh8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/moh4.mp3"
+  },
+  {
+    "notation": "街部",
+    "name": "oi oih",
+    "trans": [
+      "舒聲字：雞koi/禮loi2",
+      "入聲字：笠loih8/八poih",
+      "海陸豐語ei/eh"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/koi1.mp3"
+  },
+  {
+    "notation": "公部",
+    "name": "ong ok",
+    "trans": [
+      "舒聲字：公kong/聰tshong",
+      "入聲字：酷khok/獨tok8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kong1.mp3"
+  },
+  {
+    "notation": "望部",
+    "name": "onn",
+    "trans": [
+      "舒聲字：望monn7",
+      "入聲字：",
+      "注音特例：望monn7"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/mo7.mp3"
+  },
+  {
+    "notation": "姑部",
+    "name": "ou",
+    "trans": [
+      "舒聲字：姑kou/租tsou",
+      "入聲字："
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kou1.mp3"
+  },
+  {
+    "notation": "辜部",
+    "name": "u uh",
+    "trans": [
+      "舒聲字：龜ku/朱tsu",
+      "入聲字：吸kuh熏/嘬tsuh奶"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ku1.mp3"
+  },
+  {
+    "notation": "柯部",
+    "name": "ua uah",
+    "trans": [
+      "舒聲字：柯kua/紙tsua2",
+      "入聲字：抹buah/熱zuah8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kua1.mp3"
+  },
+  {
+    "notation": "乖部",
+    "name": "uai",
+    "trans": [
+      "舒聲字：懷huai5/乖kuai",
+      "入聲字："
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kuai1.mp3"
+  },
+  {
+    "notation": "凡部",
+    "name": "uam uap",
+    "trans": [
+      "舒聲字：泛huam3/凡huam5",
+      "入聲字：法huap/乏huap8"
+    ],
+    "phone": "https://www.mogher.com/sound/syllabes/huam5.mp3"
+  },
+  {
+    "notation": "關部",
+    "name": "uan uat",
+    "trans": [
+      "舒聲字：觀kuan/團thuan5",
+      "入聲字：越uat8/末muat8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kuang1.mp3"
+  },
+  {
+    "notation": "光部",
+    "name": "uang uak",
+    "trans": [
+      "舒聲字：皇huang5/光kuang",
+      "入聲字：蜀tsuak8/濁tsuak8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kuang1.mp3"
+  },
+  {
+    "notation": "官部",
+    "name": "uann",
+    "trans": [
+      "舒聲字：官kuann/山suann",
+      "入聲字：",
+      "注音特例：滿muann2/僆nuann3"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kua~1.mp3"
+  },
+  {
+    "notation": "瓜部",
+    "name": "ue ueh",
+    "trans": [
+      "舒聲字：瓜kue/飛pue",
+      "入聲字：月gueh8/說sueh"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kue1.mp3"
+  },
+  {
+    "notation": "橫部",
+    "name": "uenn",
+    "trans": [
+      "舒聲字：橫huenn5/關kuenn",
+      "入聲字："
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/hue~5.mp3"
+  },
+  {
+    "notation": "歸部",
+    "name": "ui",
+    "trans": [
+      "舒聲字：桂kui3/隊tui7",
+      "入聲字："
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kui1.mp3"
+  },
+  {
+    "notation": "君部",
+    "name": "un ut",
+    "trans": [
+      "舒聲字：分pun/准tsun2",
+      "入聲字：屈khut/律lut8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kung1.mp3"
+  },
+  {
+    "notation": "居部",
+    "name": "ur urh",
+    "trans": [
+      "舒聲字：居kur/豬tur",
+      "入聲字：thurh8-thurh8*",
+      "*傻傻的\\n潮陽語u/uh；海陸豐語i/ih"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/keu1.mp3"
+  },
+  {
+    "notation": "鈞部",
+    "name": "urn urt",
+    "trans": [
+      "舒聲字：鈞kurn/勤khurn5",
+      "入聲字：乞khurt",
+      "潮陽語in/it；揭陽語eng/ek"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/keung1.mp3"
+  },
+  {
+    "notation": "肩部",
+    "name": "ainn",
+    "trans": [
+      "舒聲字：斑painn/前tsainn5",
+      "入聲字：",
+      "海陽語oinn；海陸豐語eng；特例：頇hainn/岸ngainn6。"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/koi~1.mp3"
+  },
+  {
+    "notation": "猜部",
+    "name": "ainn aihnn",
+    "trans": [
+      "舒聲字：㕧hainn/猜tshainn",
+      "入聲字：haihnn8-haihnn8*",
+      "*憔悴貌\\n部分ai韻字口語鼻化"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/tshai1.mp3"
+  },
+  {
+    "notation": "等部",
+    "name": "an at",
+    "trans": [
+      "舒聲字：瓶pan5/等tan2",
+      "入聲字：賊tshat8",
+      "部分梗曾攝的白讀"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/tang2.mp3"
+  },
+  {
+    "notation": "賓部",
+    "name": "ian iat",
+    "trans": [
+      "舒聲字：彬pian/斌pian",
+      "入聲字：吃ngiat/畢piat8",
+      "揭陽語、潮陽語專用；海陽語in/it"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/ping1.mp3"
+  },
+  {
+    "notation": "嬌部",
+    "name": "iau iauh",
+    "trans": [
+      "舒聲字：驕kiau/鳥tsiau2",
+      "入聲字：約iauh",
+      "府城語ieu/ieuh；海陽語iou/iouh"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kieu1.mp3"
+  },
+  {
+    "notation": "輕部",
+    "name": "in it",
+    "trans": [
+      "舒聲字：輕khin/凊tshin3",
+      "入聲字：食sit8/翼sit8",
+      "部分梗曾攝的讀音"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/khing1.mp3"
+  },
+  {
+    "notation": "以部",
+    "name": "inn",
+    "trans": [
+      "舒聲字：已inn2/椅inn2",
+      "入聲字：",
+      "i韻鼻化"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/i~2.mp3"
+  },
+  {
+    "notation": "茄部",
+    "name": "io ioh",
+    "trans": [
+      "舒聲字：表pio2/潮tio5",
+      "入聲字：藥ioh8/尺tshioh",
+      "海陽語ie/ieh"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kie5.mp3"
+  },
+  {
+    "notation": "薑部",
+    "name": "ionn",
+    "trans": [
+      "舒聲字：薑kionn/腔khionn",
+      "入聲字：",
+      "海陽語ienn；注音特例：娘nionn5"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kie~1.mp3"
+  },
+  {
+    "notation": "體部",
+    "name": "oinn",
+    "trans": [
+      "舒聲字：底toinn2/體thoinn2",
+      "入聲字：",
+      "齊韻白讀音過度鼻化"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/thoi~2.mp3"
+  },
+  {
+    "notation": "宏部",
+    "name": "ong ok",
+    "trans": [
+      "舒聲字：宏hong5",
+      "入聲字：或hok8",
+      "海陽語專用"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/hong5.mp3"
+  },
+  {
+    "notation": "蔘部",
+    "name": "om op",
+    "trans": [
+      "舒聲字：蔘som*/丼tom6",
+      "入聲字：嗑hop8",
+      "*「蔘」取自饒平語"
+    ],
+    "phone": ""
+  },
+  {
+    "notation": "貿部",
+    "name": "ong",
+    "trans": [
+      "舒聲字：貿mong3/茂mong6",
+      "入聲字：",
+      "海陽語專用"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/mong3.mp3"
+  },
+  {
+    "notation": "虎部",
+    "name": "ounn",
+    "trans": [
+      "舒聲字：虎hounn2/否 hounn2",
+      "入聲字：",
+      "ou韻鼻化；注音特例：某mou2/五ngou6"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/hou~2.mp3"
+  },
+  {
+    "notation": "果部",
+    "name": "uainn uaihnn",
+    "trans": [
+      "舒聲字：生果kuainn2/黃彈tuainn7",
+      "入聲字：huaihnn-huaihnn-soh*",
+      "*身體不停扭擺亂動貌\\nuai韻鼻化"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kuai~2.mp3"
+  },
+  {
+    "notation": "耿部",
+    "name": "uang uak",
+    "trans": [
+      "舒聲字：耿kuang2/瓊khuang5",
+      "入聲字：獲uak8",
+      "海陽語專用"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kuang2.mp3"
+  },
+  {
+    "notation": "宏部",
+    "name": "ueng uek",
+    "trans": [
+      "舒聲字：永ueng2/榮ueng5/瓊khueng5/宏khueng5",
+      "入聲字：或huek8/獲huek8",
+      "揭陽語、潮陽語專用"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/khueng5.mp3"
+  },
+  {
+    "notation": "縣部",
+    "name": "uinn",
+    "trans": [
+      "舒聲字：huinn*/縣kuinn7",
+      "入聲字：",
+      "*旋轉\\n潮陽語uainn"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kui~7.mp3"
+  },
+  {
+    "notation": "櫃部",
+    "name": "uinn",
+    "trans": [
+      "舒聲字：毀huinn2/櫃kuinn7",
+      "入聲字：",
+      "ui韻鼻化"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kui~7.mp3"
+  },
+  {
+    "notation": "姆部",
+    "name": "m mh",
+    "trans": [
+      "舒聲字：姆m2/毋m6",
+      "入聲字：hmh*",
+      "*以棍棒打"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/m2.mp3"
+  },
+  {
+    "notation": "扛部",
+    "name": "ng ngh",
+    "trans": [
+      "舒聲字：黃ng5/酸sng",
+      "入聲字：夗ngh8"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/keung1.mp3"
+  },
+  {
+    "notation": "飯部",
+    "name": "ung",
+    "trans": [
+      "舒聲字：門mung5/飯pung7",
+      "入聲字：",
+      "部分ng韻字高化讀法"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/pung7.mp3"
+  },
+  {
+    "notation": "墾部",
+    "name": "urn urt",
+    "trans": [
+      "舒聲字：墾khurn2",
+      "入聲字：迄khurt/吃ngurt",
+      "潮陽語、揭陽語ian/iat"
+    ],
+    "phone": "http://www.mogher.com/sound/syllabes/kheng2.mp3"
+  },
+  {
+    "notation": "陰平",
+    "name": "a1",
+    "trans": [
+      "調符(例)：a",
+      "例字：司si、低ti、刀to、紛hun、蚶ham、東tang"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone1-1.mp3"
+  },
+  {
+    "notation": "陰上",
+    "name": "a2",
+    "trans": [
+      "調符(例)：á",
+      "例字：死si2、抵ti2、短to2、粉hun2、撼ham2、黨tang2"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone2-1.mp3"
+  },
+  {
+    "notation": "陰去",
+    "name": "a3",
+    "trans": [
+      "調符(例)：à",
+      "例字：四si3、帝ti3、倒to3、奮hun3、喊ham3、凍tang3",
+      "惠來語此調併入第7聲陽去"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone3-1.mp3"
+  },
+  {
+    "notation": "陰入",
+    "name": "a4",
+    "trans": [
+      "調符(例)：ah",
+      "例字：薛sih、滴tih、卓toh、弗hut、盍hap、觸tak"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone4-1.mp3"
+  },
+  {
+    "notation": "陽平",
+    "name": "a5",
+    "trans": [
+      "調符(例)：â",
+      "例字：時si5、池ti5、逃to5、魂hun5、含ham5、筒tang5"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone5-1.mp3"
+  },
+  {
+    "notation": "陽上",
+    "name": "a6",
+    "trans": [
+      "調符(例)：ă",
+      "例字：是si6、弟ti6、在to6、混hun6、憾ham6、重tang6",
+      "潮陽語此調併入第3聲陰去"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone6-1.mp3"
+  },
+  {
+    "notation": "陽去",
+    "name": "a7",
+    "trans": [
+      "調符(例)：ā",
+      "例字：示si7、地ti7、袋to7、份hun7、陷ham7、洞tang7"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone7-1.mp3"
+  },
+  {
+    "notation": "陽入",
+    "name": "a8",
+    "trans": [
+      "調符(例)：âh",
+      "例字：蝕sih8、碟tih8、擇toh8、佛hut8、合hap8、毒tak8"
+    ],
+    "phone": "http://www.mogher.com/sound/tons/tone8-1.mp3"
+  }
+]

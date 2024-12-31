@@ -16,6 +16,11 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
       return `${pronunciationApi}${word}&type=1`
     case 'us':
       return `${pronunciationApi}${word}&type=2`
+    case 'teochew': // 潮州话的发音暂时使用有道罗马字语音接口
+    case 'kityall':
+    case 'teoyall':
+    case 'custom':
+      return word
     case 'romaji':
       return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
     case 'zh':

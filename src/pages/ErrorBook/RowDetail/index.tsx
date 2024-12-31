@@ -11,6 +11,7 @@ import Phonetic from '@/pages/Typing/components/WordPanel/components/Phonetic'
 import Letter from '@/pages/Typing/components/WordPanel/components/Word/Letter'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { useSetAtom } from 'jotai'
+import { useAtomValue } from 'jotai'
 import { useCallback, useMemo, useRef } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import HashtagIcon from '~icons/heroicons/chart-pie-20-solid'
@@ -77,7 +78,7 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
           </div>
           <div className="relative flex h-8 items-center">
             {word ? <Phonetic word={word} /> : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
-            {word && (
+            {word && ((word.phone !== undefined && word.phone.trim() !== '') || word.phone === undefined) && (
               <WordPronunciationIcon
                 lang={dictInfo.language}
                 word={word}
