@@ -8,11 +8,17 @@ import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
 import type { Word } from '@/typings'
+import type { KeymapItem } from '@/utils/keymaps'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-export default function WordPanel() {
+type WordPanelProps = {
+  isSetting: boolean
+  keyMaps: KeymapItem[]
+}
+
+export default function WordPanel({ isSetting, keyMaps }: WordPanelProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
@@ -104,21 +110,21 @@ export default function WordPanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
+    keyMaps[10].hotkey,
     (e) => {
       e.preventDefault()
       onSkipWord('prev')
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: !isSetting && keyMaps[10].hotkey !== '' },
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowRight',
+    keyMaps[9].hotkey,
     (e) => {
       e.preventDefault()
       onSkipWord('next')
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: !isSetting && keyMaps[9].hotkey !== '' },
   )
   const [isShowTranslation, setIsHoveringTranslation] = useState(false)
 
@@ -127,20 +133,20 @@ export default function WordPanel() {
   }, [])
 
   useHotkeys(
-    'tab',
+    keyMaps[1].hotkey,
     () => {
       handleShowTranslation(true)
     },
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[1].hotkey !== '' },
     [],
   )
 
   useHotkeys(
-    'tab',
+    keyMaps[1].hotkey,
     () => {
       handleShowTranslation(false)
     },
-    { enableOnFormTags: true, keyup: true, preventDefault: true },
+    { enableOnFormTags: true, keyup: true, preventDefault: true, enabled: !isSetting && keyMaps[1].hotkey !== '' },
     [],
   )
 
@@ -171,7 +177,7 @@ export default function WordPanel() {
               </div>
             )}
             <div className="relative">
-              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
+              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} isSetting={isSetting} keyMaps={keyMaps} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
                 trans={currentWord.trans.join('；')}
