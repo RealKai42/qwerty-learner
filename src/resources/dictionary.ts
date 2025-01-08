@@ -103,6 +103,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: '926',
+    name: '考研926词汇',
+    description: '926核心词汇',
+    category: '中国考试',
+    tags: ['考研'],
+    url: '/dicts/926.json',
+    length: 926,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'dancimimi_1',
     name: '单词的秘密-英语一',
     description: '单词的秘密英语（一）',
