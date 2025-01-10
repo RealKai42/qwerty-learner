@@ -505,6 +505,17 @@ const chinaExam: DictionaryResource[] = [
 // 国际考试
 const internationalExam: DictionaryResource[] = [
   {
+    id: 'pet-2024',
+    name: 'PET-2024',
+    description: '剑桥英语 - 2024',
+    category: '国际考试',
+    tags: ['PET'],
+    url: '/dicts/pet-vacabulary-list-2024.json',
+    length: 1871,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'gmat',
     name: 'GMAT',
     description: 'GMAT 词库',
