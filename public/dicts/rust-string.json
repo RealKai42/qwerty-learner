@@ -1,0 +1,146 @@
+[
+    {
+        "name": "String::new()",
+        "trans": [
+            "String::new() 方法创建并返回一个新的空字符串。"
+        ]
+    },
+    {
+        "name": "String::from()",
+        "trans": [
+            "String::from() 方法从一个字符串字面量或字符串切片创建一个新的 `String`。"
+        ]
+    },
+    {
+        "name": "String::as_str()",
+        "trans": [
+            "String::as_str() 方法返回一个 `&str` 类型的切片，指向字符串中的内容。"
+        ]
+    },
+    {
+        "name": "String::push()",
+        "trans": [
+            "String::push() 方法将一个单个字符追加到字符串的末尾。"
+        ]
+    },
+    {
+        "name": "String::push_str()",
+        "trans": [
+            "String::push_str() 方法将一个字符串切片追加到当前字符串的末尾。"
+        ]
+    },
+    {
+        "name": "String::pop()",
+        "trans": [
+            "String::pop() 方法移除并返回字符串末尾的一个字符。如果字符串为空，则返回 `None`。"
+        ]
+    },
+    {
+        "name": "String::replace()",
+        "trans": [
+            "String::replace() 方法返回一个新字符串，其中所有匹配的子字符串被另一个子字符串替换。原始字符串不变。"
+        ]
+    },
+    {
+        "name": "String::remove()",
+        "trans": [
+            "String 并没有 `remove()` 方法。这个方法的描述是错误的。移除字符的方法通常使用索引或切片的方式。"
+        ]
+    },
+    {
+        "name": "String::insert()",
+        "trans": [
+            "String::insert() 方法在指定位置插入一个字符。如果索引超出范围，会引发 panic。"
+        ]
+    },
+    {
+        "name": "String::insert_str()",
+        "trans": [
+            "String::insert_str() 方法在指定位置插入一个子字符串。"
+        ]
+    },
+    {
+        "name": "String::truncate()",
+        "trans": [
+            "String::truncate() 方法将字符串截断到指定的长度，丢弃超出部分。"
+        ]
+    },
+    {
+        "name": "String::len()",
+        "trans": [
+            "String::len() 方法返回字符串的字节长度，而不是字符数。对于 UTF-8 编码的字符串，字符数和字节数可能不同。"
+        ]
+    },
+    {
+        "name": "String::find()",
+        "trans": [
+            "String::find() 方法返回指定子字符串首次出现的起始索引，如果未找到，返回 `None`。"
+        ]
+    },
+    {
+        "name": "String::clear()",
+        "trans": [
+            "String::clear() 方法清空字符串的内容，移除所有字符，但不会改变分配的内存。"
+        ]
+    },
+    {
+        "name": "String::to_string()",
+        "trans": [
+            "String::to_string() 方法将任何实现了 `ToString` trait 的类型转换为 `String` 类型。"
+        ]
+    },
+    {
+        "name": "String::to_lowercase()",
+        "trans": [
+            "String::to_lowercase() 方法返回一个新的字符串，将所有字符转换为小写字母。"
+        ]
+    },
+    {
+        "name": "String::to_uppercase()",
+        "trans": [
+            "String::to_uppercase() 方法返回一个新的字符串，将所有字符转换为大写字母。"
+        ]
+    },
+    {
+        "name": "String::replace_range()",
+        "trans": [
+            "String::replace_range() 方法将指定的字符范围替换为新的字符序列。"
+        ]
+    },
+    {
+        "name": "String::trim()",
+        "trans": [
+            "String::trim() 方法返回一个新字符串，去除两端的空白字符。"
+        ]
+    },
+    {
+        "name": "String::split()",
+        "trans": [
+            "String::split() 方法根据指定的分隔符分割字符串，返回一个迭代器。"
+        ]
+    },
+    {
+        "name": "String::retain()",
+        "trans": [
+            "String::retain() 方法通过给定的闭包函数保留符合条件的字符，移除不符合的字符。"
+        ]
+    },
+    {
+        "name": "String::replacen()",
+        "trans": [
+            "String::replacen() 方法替换字符串中最多 `n` 次匹配的子字符串，并返回一个新字符串。"
+        ]
+    },
+    {
+        "name": "String::to_owned()",
+        "trans": [
+            "String::to_owned() 方法从一个 `&str` 类型的切片生成 `String` 的所有权副本。"
+        ]
+    },
+    {
+        "name": "String::as_mut_str()",
+        "trans": [
+            "String::as_mut_str() 方法返回一个可变的 `&mut str` 切片，允许对字符串内容进行修改。"
+        ]
+    }
+]
