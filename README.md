@@ -7,8 +7,8 @@
 </h1>
 
 <p align="center">
-  <a href="./docs/README_EN.md">English</a>  
-  <a href="./docs/README_JP.md">日本語</a>  
+  <a href="./docs/README_EN.md">English</a>
+  <a href="./docs/README_JP.md">日本語</a>
 </p>
 
 <p align="center">
@@ -30,17 +30,17 @@
 
 ## 📸 在线访问
 
-**首选部署**: <https://qwerty.kaiyi.cool/>  
+**首选部署**: <https://qwerty.kaiyi.cool/>
 GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
-镜像仓库:  
-[GitCode: RealKai42/qwerty-learner](https://gitcode.com/RealKai42/qwerty-learner/overview)  
-[Gitee: KaiyiWing/qwerty-learner)](https://gitee.com/KaiyiWing/qwerty-learner)
+镜像仓库:
+[GitCode: RealKai42/qwerty-learner](https://gitcode.com/RealKai42/qwerty-learner/overview)
+[Gitee: KaiyiWing/qwerty-learner](https://gitee.com/KaiyiWing/qwerty-learner)
 <br/>
 <br/>
 
-项目已发布 VSCode 插件版，一键启动、随时开始练习  
-[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)  
+项目已发布 VSCode 插件版，一键启动、随时开始练习
+[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)
 [GitHub](https://github.com/Realkai42/qwerty-learner-vscode)
 
 <br />
