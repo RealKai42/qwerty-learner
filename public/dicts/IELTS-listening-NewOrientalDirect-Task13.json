@@ -1,0 +1,296 @@
+[
+    {
+        "name": "tour",
+        "trans": [
+            "n. 参观；游历，观光"
+        ]
+    },
+    {
+        "name": "tourism",
+        "trans": [
+            "n. 旅游业"
+        ]
+    },
+    {
+        "name": "travel",
+        "trans": [
+            "v. （通常指长途）旅行"
+        ]
+    },
+    {
+        "name": "trip",
+        "trans": [
+            "n. （通常指短途的）旅行，行程"
+        ]
+    },
+    {
+        "name": "self-drive tour",
+        "trans": [
+            "n. 自驾游"
+        ]
+    },
+    {
+        "name": "cruise",
+        "trans": [
+            "n. 航游，乘船游览"
+        ]
+    },
+    {
+        "name": "excursion",
+        "trans": [
+            "n. （常指结伴同行的）远足，短途旅行"
+        ]
+    },
+    {
+        "name": "tourist",
+        "trans": [
+            "n. 旅游者，游客"
+        ]
+    },
+    {
+        "name": "traveler",
+        "trans": [
+            "n. 旅行者；游客"
+        ]
+    },
+    {
+        "name": "visitor",
+        "trans": [
+            "n. 访问者；参观者；游客"
+        ]
+    },
+    {
+        "name": "holiday maker",
+        "trans": [
+            "n. 度假者"
+        ]
+    },
+    {
+        "name": "tour guide",
+        "trans": [
+            "n. 导游"
+        ]
+    },
+    {
+        "name": "accommodation",
+        "trans": [
+            "n. 住处；工作场所；停留处"
+        ]
+    },
+    {
+        "name": "car hire",
+        "trans": [
+            "n. 汽车租赁"
+        ]
+    },
+    {
+        "name": "car rental",
+        "trans": [
+            "n. 汽车租赁"
+        ]
+    },
+    {
+        "name": "hire a car",
+        "trans": [
+            "v. 租用汽车"
+        ]
+    },
+    {
+        "name": "rent a car",
+        "trans": [
+            "v. 租车"
+        ]
+    },
+    {
+        "name": "flight",
+        "trans": [
+            "n. 空中航行，航程"
+        ]
+    },
+    {
+        "name": "meal",
+        "trans": [
+            "n. 进餐；餐，一顿饭"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "n. (纸版或电子版的)书"
+        ]
+    },
+    {
+        "name": "booking",
+        "trans": [
+            "n. 预订；预约"
+        ]
+    },
+    {
+        "name": "reserve",
+        "trans": [
+            "v. 把…专门留给；把…留作；保留"
+        ]
+    },
+    {
+        "name": "reservation",
+        "trans": [
+            "n. 预订；预约"
+        ]
+    },
+    {
+        "name": "travel agency",
+        "trans": [
+            "n. 旅行社"
+        ]
+    },
+    {
+        "name": "in advance",
+        "trans": [
+            "adv. 提前"
+        ]
+    },
+    {
+        "name": "available",
+        "trans": [
+            "adj. 可获得的；可用的"
+        ]
+    },
+    {
+        "name": "cancel",
+        "trans": [
+            "v. 取消；终止；撤销"
+        ]
+    },
+    {
+        "name": "cancellation",
+        "trans": [
+            "n. 取消"
+        ]
+    },
+    {
+        "name": "full refund",
+        "trans": [
+            "n. 全额退款"
+        ]
+    },
+    {
+        "name": "cost",
+        "trans": [
+            "n. 价格；费用；成本"
+        ]
+    },
+    {
+        "name": "charge",
+        "trans": [
+            "v. （尤指对某一服务或活动）收费，要价，开价"
+        ]
+    },
+    {
+        "name": "extra charge",
+        "trans": [
+            "n. 额外费用"
+        ]
+    },
+    {
+        "name": "adult fare",
+        "trans": [
+            "n. 成人票价"
+        ]
+    },
+    {
+        "name": "child fare",
+        "trans": [
+            "n. 儿童票"
+        ]
+    },
+    {
+        "name": "cash",
+        "trans": [
+            "n. 现金；现款"
+        ]
+    },
+    {
+        "name": "credit card",
+        "trans": [
+            "n. 信用卡"
+        ]
+    },
+    {
+        "name": "brochure",
+        "trans": [
+            "n. 小册子；资料（或广告）手册"
+        ]
+    },
+    {
+        "name": "map",
+        "trans": [
+            "n. 地图"
+        ]
+    },
+    {
+        "name": "passport",
+        "trans": [
+            "n. 护照"
+        ]
+    },
+    {
+        "name": "visa",
+        "trans": [
+            "n. 签证"
+        ]
+    },
+    {
+        "name": "driving license",
+        "trans": [
+            "n. 驾驶证"
+        ]
+    },
+    {
+        "name": "first-aid kit",
+        "trans": [
+            "n. 急救箱"
+        ]
+    },
+    {
+        "name": "repair kit",
+        "trans": [
+            "n. 修理包"
+        ]
+    },
+    {
+        "name": "helmet",
+        "trans": [
+            "n. 头盔，安全帽"
+        ]
+    },
+    {
+        "name": "life jacket",
+        "trans": [
+            "n. 救生衣"
+        ]
+    },
+    {
+        "name": "swimming costume",
+        "trans": [
+            "n. 泳衣"
+        ]
+    },
+    {
+        "name": "sun cream",
+        "trans": [
+            "n. 防晒霜"
+        ]
+    },
+    {
+        "name": "tent",
+        "trans": [
+            "n. 帐篷"
+        ]
+    },
+    {
+        "name": "sleeping bag",
+        "trans": [
+            "n. 睡袋"
+        ]
+    }
+]
