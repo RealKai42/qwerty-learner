@@ -297,7 +297,9 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           <div
             onMouseEnter={() => handleHoverWord(true)}
             onMouseLeave={() => handleHoverWord(false)}
-            className={`flex items-center ${isTextSelectable && 'select-all'} justify-center ${wordState.hasWrong ? style.wrong : ''}`}
+            className={`flex items-center gap-x-0 sm:gap-x-1 ${isTextSelectable && 'select-all'} justify-center ${
+              wordState.hasWrong ? style.wrong : ''
+            }`}
           >
             {wordState.displayWord.split('').map((t, index) => {
               return <Letter key={`${index}-${t}`} letter={t} visible={getLetterVisible(index)} state={wordState.letterStates[index]} />

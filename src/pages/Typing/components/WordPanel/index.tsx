@@ -150,7 +150,7 @@ export default function WordPanel() {
 
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
-      <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">
+      <div className="container flex h-12 w-full shrink-0 grow-0 justify-between px-4 pt-2 sm:h-24 sm:px-8 sm:pt-8">
         {isShowPrevAndNextWord && state.isTyping && (
           <>
             <PrevAndNextWord type="prev" />
