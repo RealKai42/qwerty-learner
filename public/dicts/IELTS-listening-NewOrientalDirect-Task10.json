@@ -1,0 +1,266 @@
+[
+    {
+        "name": "reserve",
+        "trans": [
+            "v. 预定"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "v. 预定"
+        ]
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "v. 租"
+        ]
+    },
+    {
+        "name": "hire",
+        "trans": [
+            "v. 租"
+        ]
+    },
+    {
+        "name": "room",
+        "trans": [
+            "n. 房间；空间"
+        ]
+    },
+    {
+        "name": "in advance",
+        "trans": [
+            "adv. 提前"
+        ]
+    },
+    {
+        "name": "event",
+        "trans": [
+            "n. 事由，事件"
+        ]
+    },
+    {
+        "name": "ceremony",
+        "trans": [
+            "n. 仪式，典礼"
+        ]
+    },
+    {
+        "name": "conference",
+        "trans": [
+            "n. 会议"
+        ]
+    },
+    {
+        "name": "anniversary",
+        "trans": [
+            "n. 纪念日"
+        ]
+    },
+    {
+        "name": "facility",
+        "trans": [
+            "n. 设施"
+        ]
+    },
+    {
+        "name": "hall",
+        "trans": [
+            "n. 礼堂"
+        ]
+    },
+    {
+        "name": "projector",
+        "trans": [
+            "n. 投影仪"
+        ]
+    },
+    {
+        "name": "microphone",
+        "trans": [
+            "n. 话筒"
+        ]
+    },
+    {
+        "name": "cater",
+        "trans": [
+            "v. 为……提供餐饮"
+        ]
+    },
+    {
+        "name": "buffet",
+        "trans": [
+            "n. 自助餐"
+        ]
+    },
+    {
+        "name": "entertainment",
+        "trans": [
+            "n. 娱乐"
+        ]
+    },
+    {
+        "name": "gym",
+        "trans": [
+            "n. 健身房"
+        ]
+    },
+    {
+        "name": "spa",
+        "trans": [
+            "n. 水疗"
+        ]
+    },
+    {
+        "name": "live",
+        "trans": [
+            "adj. 现场的"
+        ]
+    },
+    {
+        "name": "band",
+        "trans": [
+            "n. 乐队"
+        ]
+    },
+    {
+        "name": "rooftop",
+        "trans": [
+            "n. 屋顶"
+        ]
+    },
+    {
+        "name": "gallery",
+        "trans": [
+            "n. 画廊"
+        ]
+    },
+    {
+        "name": "payment",
+        "trans": [
+            "n. 付款"
+        ]
+    },
+    {
+        "name": "charge",
+        "trans": [
+            "v. 收费"
+        ]
+    },
+    {
+        "name": "discount",
+        "trans": [
+            "n. 折扣"
+        ]
+    },
+    {
+        "name": "deposit",
+        "trans": [
+            "n. 定金, 存款"
+        ]
+    },
+    {
+        "name": "cash",
+        "trans": [
+            "n. 现金"
+        ]
+    },
+    {
+        "name": "credit card",
+        "trans": [
+            "n. 信用卡"
+        ]
+    },
+    {
+        "name": "check / cheque",
+        "trans": [
+            "n. 支票"
+        ]
+    },
+    {
+        "name": "transport",
+        "trans": [
+            "n. 交通"
+        ]
+    },
+    {
+        "name": "flight",
+        "trans": [
+            "n. 飞机，航班"
+        ]
+    },
+    {
+        "name": "shuttle",
+        "trans": [
+            "n. 通勤大巴"
+        ]
+    },
+    {
+        "name": "door-to-door",
+        "trans": [
+            "adj. 门对门的"
+        ]
+    },
+    {
+        "name": "departure",
+        "trans": [
+            "n. 出发"
+        ]
+    },
+    {
+        "name": "arrival",
+        "trans": [
+            "n. 到达"
+        ]
+    },
+    {
+        "name": "transfer",
+        "trans": [
+            "v. 换乘"
+        ]
+    },
+    {
+        "name": "connection",
+        "trans": [
+            "n. 联运，转机转车"
+        ]
+    },
+    {
+        "name": "solar",
+        "trans": [
+            "adj. 太阳能的"
+        ]
+    },
+    {
+        "name": "licence / license",
+        "trans": [
+            "n. 许可证"
+        ]
+    },
+    {
+        "name": "taxi",
+        "trans": [
+            "n. 出租车"
+        ]
+    },
+    {
+        "name": "cab",
+        "trans": [
+            "n. 出租车"
+        ]
+    },
+    {
+        "name": "tram",
+        "trans": [
+            "n. 有轨电车"
+        ]
+    },
+    {
+        "name": "helicopter",
+        "trans": [
+            "n. 直升机"
+        ]
+    }
+]
