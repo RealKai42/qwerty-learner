@@ -1329,6 +1329,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+    {
+    id: 'PTE-wfd',
+    name: 'WFD',
+    description: 'PTE-WFD',
+    category: '学习',
+    tags: ['错题'],
+    url: 'public/dicts/cztesting.json',
+    length: 89,
+    language: 'English',
+    languageCategory: 'PTE',
+ },
   {
     id: 'PTE_junior',
     name: 'PTE 基础词汇',
@@ -1516,6 +1527,7 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  
 ]
 
 // 青少儿英语
@@ -3809,6 +3821,7 @@ const japaneseExam: DictionaryResource[] = [
     language: 'romaji',
     languageCategory: 'ja',
   },
+
   {
     id: 'japanese008',
     name: '高频单词_N2',
