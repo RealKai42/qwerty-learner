@@ -3910,6 +3910,15 @@ const indonesianDicts: DictionaryResource[] = [
     languageCategory: 'id',
   },
 ]
+{
+    "id": "CZ_wfd",
+    "name": "WFD",
+    "description": "WFD",
+    "category": "xxx",
+    "url": "./dicts/cz.json",
+    "length": 89,
+    "language": "en"
+}
 
 /**
  * Built-in dictionaries in an array.
