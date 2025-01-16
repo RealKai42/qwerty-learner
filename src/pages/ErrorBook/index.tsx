@@ -95,23 +95,24 @@ export function ErrorBook() {
 
   return (
     <>
-      <div className={`relative flex h-screen w-full flex-col items-center pb-4 ease-in ${currentRowDetail && 'blur-sm'}`}>
-        <div className="mr-8 mt-4 flex w-auto items-center justify-center self-end">
-          <h1 className="font-lighter mr-4 w-auto self-end text-gray-500 opacity-70">Tip: 点击错误单词查看详细信息 </h1>
+      <div className={`relative flex h-screen w-full flex-col items-center p-4 ease-in sm:p-8 ${currentRowDetail && 'blur-sm'}`}>
+        <div className="flex w-auto items-center justify-center self-end">
+          <h1 className="font-lighter mr-4 w-auto self-end text-gray-500 dark:text-gray-50">Tip: 点击错误单词查看详细信息 </h1>
           <IconX className="h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
         </div>
 
         <div className="flex w-full flex-1 select-text items-start justify-center overflow-hidden">
-          <div className="flex h-full w-5/6 flex-col pt-10">
+          <div className="mt-4 flex h-full w-full flex-col">
             <div className="flex w-full justify-between rounded-lg bg-white px-6 py-5 text-lg text-black shadow-lg dark:bg-gray-800 dark:text-white">
-              <span className="basis-2/12">单词</span>
-              <span className="basis-6/12">释义</span>
-              <HeadWrongNumber className="basis-1/12" sortType={sortType} setSortType={setSort} />
-              <span className="basis-1/12">词典</span>
-              <span className="basis-1/12"> </span>
+              <span className="basis-4/12 sm:basis-2/12">单词</span>
+              <span className="basis-4/12 sm:basis-6/12">释义</span>
+              <HeadWrongNumber className="basis-2/12 sm:basis-1/12" sortType={sortType} setSortType={setSort} />
+              <span className="basis-1/12 sm:basis-1/12">词典</span>
+              <span className="basis-1/12 sm:basis-1/12">操作</span>
             </div>
             <ScrollArea.Root className="flex-1 overflow-y-auto pt-5">
-              <ScrollArea.Viewport className="h-full  ">
+              {/* https://github.com/radix-ui/primitives/issues/926#issuecomment-1015279283 */}
+              <ScrollArea.Viewport className="h-full [&>div]:!block">
                 <div className="flex flex-col gap-3">
                   {renderRecords.map((record) => (
                     <ErrorRow
@@ -126,7 +127,7 @@ export function ErrorBook() {
             </ScrollArea.Root>
           </div>
         </div>
-        <Pagination className="pt-3" page={currentPage} setPage={setPage} totalPages={totalPages} />
+        <Pagination className="pb-8 sm:pb-4" page={currentPage} setPage={setPage} totalPages={totalPages} />
       </div>
       {currentRowDetail && <RowDetail currentRowDetail={currentRowDetail} allRecords={sortedRecords} />}
     </>
