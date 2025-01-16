@@ -70,6 +70,28 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'level4',
+    name: '专四',
+    description: '英语专业四级词库',
+    category: '中国考试',
+    tags: ['大学英语'],
+    url: '/dicts/Level4luan_2_T.json',
+    length: 4025,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'level8',
+    name: '专八',
+    description: '英语专业八级词库',
+    category: '中国考试',
+    tags: ['大学英语'],
+    url: '/dicts/Level8luan_2_T.json',
+    length: 12197,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'kaoyan',
     name: '考研',
     description: '研究生英语入学考试词库',
@@ -154,28 +176,6 @@ const chinaExam: DictionaryResource[] = [
     tags: ['考研'],
     url: '/dicts/English_II.json',
     length: 4559,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'level4',
-    name: '专四',
-    description: '英语专业四级词库',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/Level4luan_2_T.json',
-    length: 4025,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
-    id: 'level8',
-    name: '专八',
-    description: '英语专业八级词库',
-    category: '中国考试',
-    tags: ['大学英语'],
-    url: '/dicts/Level8luan_2_T.json',
-    length: 12197,
     language: 'en',
     languageCategory: 'en',
   },
@@ -467,13 +467,13 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
-    id: 'TOEFL_ZhangHongYan',
-    name: 'ZhangHongYan的TOEFL词汇书',
-    description: 'ZhangHongYan的TOEFL词汇书-词以类记',
-    category: '国际考试',
-    tags: ['TOEFL'],
-    url: '/dicts/TOEFL_ZhangHongYan.json',
-    length: 4032,
+    id: 'Macmillan7000',
+    name: '麦克米伦7000',
+    description: '麦克米伦7000',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/Macmillan7000.json',
+    length: 6268,
     language: 'en',
     languageCategory: 'en',
   },
@@ -488,7 +488,6 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-
   {
     id: '3000_ClassRoom_English_Words',
     name: '专升本3000词',
@@ -1304,6 +1303,17 @@ const internationalExam: DictionaryResource[] = [
     tags: ['TOEFL'],
     url: '/dicts/TOEFL_3_T.json',
     length: 4264,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'TOEFL_ZhangHongYan',
+    name: 'ZhangHongYan的TOEFL词汇书',
+    description: 'ZhangHongYan的TOEFL词汇书-词以类记',
+    category: '国际考试',
+    tags: ['TOEFL'],
+    url: '/dicts/TOEFL_ZhangHongYan.json',
+    length: 4032,
     language: 'en',
     languageCategory: 'en',
   },
@@ -2876,17 +2886,6 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-  {
-    id: 'Macmillan7000',
-    name: '麦克米伦7000',
-    description: '麦克米伦7000',
-    category: '中国考试',
-    tags: ['其他'],
-    url: '/dicts/Macmillan7000.json',
-    length: 6268,
-    language: 'en',
-    languageCategory: 'en',
-  },
   // RAZ 系列
   {
     id: 'raz-AA',
@@ -3911,19 +3910,46 @@ const indonesianDicts: DictionaryResource[] = [
   },
 ]
 
+// 潮州話詞典
+const teochewDicts: DictionaryResource[] = [
+  {
+    id: 'teochew_basic',
+    name: '潮羅方案',
+    description: '潮正會潮州話羅馬字注音方案',
+    category: '潮州話正音正字促進會',
+    tags: ['基础'],
+    url: '/dicts/teochew/basic.json',
+    length: 89,
+    language: 'teochew',
+    languageCategory: 'teochew',
+  },
+  {
+    id: 'teochew_tsiann',
+    name: '蔬果在潮州',
+    description: '潮正會正音正字',
+    category: '潮州話正音正字促進會',
+    tags: ['其他'],
+    url: '/dicts/teochew/fruit.json',
+    length: 6,
+    language: 'teochew',
+    languageCategory: 'teochew',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaryResources: DictionaryResource[] = [
+  ...childrenEnglish,
   ...chinaExam,
   ...internationalExam,
-  ...childrenEnglish,
-  ...programming,
   ...japaneseExam,
   ...germanExam,
   ...kazakhHapinDicts,
   ...indonesianDicts,
+  ...teochewDicts,
+  ...programming,
 
   // {
   //   id: 'zhtest',

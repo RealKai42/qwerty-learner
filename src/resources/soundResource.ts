@@ -118,6 +118,23 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  teochew: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '潮州',
+        pron: 'teochew',
+      },
+      {
+        name: '揭阳',
+        pron: 'kityall',
+      },
+      {
+        name: '潮阳',
+        pron: 'teoyall',
+      },
+    ],
+  },
   id: {
     defaultPronIndex: 0,
     pronunciation: [

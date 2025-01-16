@@ -75,7 +75,7 @@ export default function GalleryPage() {
                 <ScrollArea.Viewport className="h-full w-full ">
                   <div className="mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
                     {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
-                      <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
+                      <DictionaryGroup key={category} category={category} groupedDictsByTag={groupeByTag} />
                     ))}
                   </div>
                   <div className="flex items-center justify-center pb-10 pt-[20rem] text-gray-500">

@@ -189,6 +189,7 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 - 王陆雅思王听力语料库 [@Saigyouji_WKKun](https://github.com/ggehuliang)
 - 日语常见词、N1 ～ N5 [@xiaojia](https://github.com/wetery)
 - 哈萨克语基础 3000 词(哈拼版) 来源于 [@Elgar](https://github.com/Elgar17) 由 [@Herbert He](https://github.com/HerbertHe) 通过 [哈拼](https://ha-pin.js.org) 技术支持
+- 潮州话正音正字 [@hiteochew](https://github.com/hiteochew)
 
 如果您需要背诵其他词库，欢迎在 Issue 中提出
 

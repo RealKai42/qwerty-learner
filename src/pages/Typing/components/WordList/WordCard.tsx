@@ -23,11 +23,13 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
     >
       <div className="flex-1">
         <p className="select-all font-mono text-xl font-normal leading-6 dark:text-gray-50">
-          {['romaji', 'hapin'].includes(currentLanguage) ? word.notation : word.name}
+          {['romaji', 'hapin', 'teochew'].includes(currentLanguage) && word.notation ? word.notation : word.name}
         </p>
         <div className="mt-2 max-w-sm font-sans text-sm text-gray-400">{word.trans.join('；')}</div>
       </div>
-      <WordPronunciationIcon word={word} lang={currentLanguage} className="h-8 w-8" ref={wordPronunciationIconRef} />
+      {word && ((word.phone !== undefined && word.phone.trim() !== '') || word.phone === undefined) && (
+        <WordPronunciationIcon word={word} lang={currentLanguage} className="h-8 w-8" ref={wordPronunciationIconRef} />
+      )}
     </div>
   )
 }

@@ -242,14 +242,14 @@ const ResultScreen = () => {
                 </div>
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-3 text-xl">
-                <AuthorButton />
+                {/* <AuthorButton /> */}
                 {!isReviewMode && (
                   <>
                     <ShareButton />
                     <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IexportWords>
                   </>
                 )}
-                <IconXiaoHongShu
+                {/* <IconXiaoHongShu
                   fontSize={15}
                   className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
                   onClick={(e) => {
@@ -284,7 +284,7 @@ const ResultScreen = () => {
 
                 <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
                   <IconGithub fontSize={16} className="text-gray-500 hover:text-green-800 focus:outline-none" />
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
