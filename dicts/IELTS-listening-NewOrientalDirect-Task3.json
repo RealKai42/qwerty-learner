@@ -1,0 +1,202 @@
+[
+    {
+        "name": "borrow",
+        "trans": [
+            "v. 借入"
+        ]
+    },
+    {
+        "name": "lend",
+        "trans": [
+            "v. 借出，借给"
+        ]
+    },
+    {
+        "name": "return",
+        "trans": [
+            "v. 归还"
+        ]
+    },
+    {
+        "name": "book",
+        "trans": [
+            "v. 预订"
+        ]
+    },
+    {
+        "name": "reserve",
+        "trans": [
+            "v. 预约，保留"
+        ]
+    },
+    {
+        "name": "consultation",
+        "trans": [
+            "n. 咨询"
+        ]
+    },
+    {
+        "name": "library card",
+        "trans": [
+            "n. 图书馆卡"
+        ]
+    },
+    {
+        "name": "admission",
+        "trans": [
+            "n. 准入，入场券"
+        ]
+    },
+    {
+        "name": "counter",
+        "trans": [
+            "n. 柜台"
+        ]
+    },
+    {
+        "name": "shelf",
+        "trans": [
+            "n. 架子"
+        ]
+    },
+    {
+        "name": "staff",
+        "trans": [
+            "n. 员工"
+        ]
+    },
+    {
+        "name": "librarian",
+        "trans": [
+            "n. 图书管理员"
+        ]
+    },
+    {
+        "name": "catalog(ue)",
+        "trans": [
+            "n. 目录"
+        ]
+    },
+    {
+        "name": "category",
+        "trans": [
+            "n. 种类，类别"
+        ]
+    },
+    {
+        "name": "classification",
+        "trans": [
+            "n. 分类"
+        ]
+    },
+    {
+        "name": "call slip",
+        "trans": [
+            "n. 借书单"
+        ]
+    },
+    {
+        "name": "title",
+        "trans": [
+            "n. 标题"
+        ]
+    },
+    {
+        "name": "author",
+        "trans": [
+            "n. 作者"
+        ]
+    },
+    {
+        "name": "index",
+        "trans": [
+            "n. 索引"
+        ]
+    },
+    {
+        "name": "deadline",
+        "trans": [
+            "n. 截止日期"
+        ]
+    },
+    {
+        "name": "expire",
+        "trans": [
+            "v. 期满，终止"
+        ]
+    },
+    {
+        "name": "expiry",
+        "trans": [
+            "n. 期满，终止"
+        ]
+    },
+    {
+        "name": "recall",
+        "trans": [
+            "v. 召回，收回"
+        ]
+    },
+    {
+        "name": "renew",
+        "trans": [
+            "v. 更新"
+        ]
+    },
+    {
+        "name": "renewal",
+        "trans": [
+            "n. 更新"
+        ]
+    },
+    {
+        "name": "due",
+        "trans": [
+            "adj. 到期的"
+        ]
+    },
+    {
+        "name": "overdue",
+        "trans": [
+            "adj. 过期的"
+        ]
+    },
+    {
+        "name": "fine",
+        "trans": [
+            "v. 罚款",
+            "n. 罚款"
+        ]
+    },
+    {
+        "name": "available",
+        "trans": [
+            "adj. 可获得的"
+        ]
+    },
+    {
+        "name": "circulation",
+        "trans": [
+            "n. 流通"
+        ]
+    },
+    {
+        "name": "stock",
+        "trans": [
+            "n. 库存，储备"
+        ]
+    },
+    {
+        "name": "loan",
+        "trans": [
+            "v. 借出",
+            "n. 借出物"
+        ]
+    },
+    {
+        "name": "inter library service",
+        "trans": [
+            "n. 馆际服务"
+        ]
+    }
+]
