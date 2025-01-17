@@ -48,7 +48,7 @@ function Root() {
 
   return (
     <React.StrictMode>
-      <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
+      <BrowserRouter>
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route index element={<TypingPage />} />
