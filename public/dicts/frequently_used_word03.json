@@ -1,0 +1,10965 @@
+[
+    {
+        "name": "abandon",
+        "trans": [
+            "vt.丢弃",
+            "放弃",
+            "抛弃"
+        ],
+        "pron": "[ә'bæ ndәn]"
+    },
+    {
+        "name": "abandoned",
+        "trans": [
+            "a. 被抛弃的",
+            "自弃的",
+            "自甘堕落的"
+        ],
+        "pron": "[ә'bæ ndәnd]"
+    },
+    {
+        "name": "abortion",
+        "trans": [
+            "n.流产",
+            "堕胎",
+            "失败"
+        ],
+        "pron": "[ә'bɔ:ʃәn]"
+    },
+    {
+        "name": "abroad",
+        "trans": [
+            "ad.(在)国外",
+            "到处"
+        ],
+        "pron": "[ә'brɔ:d]"
+    },
+    {
+        "name": "absence",
+        "trans": [
+            "n.缺席",
+            "不在场",
+            "缺乏"
+        ],
+        "pron": "['æ bsәns]"
+    },
+    {
+        "name": "absolute",
+        "trans": [
+            "a.绝对的",
+            "纯粹的"
+        ],
+        "pron": "['æ bsәlu:t]"
+    },
+    {
+        "name": "academic",
+        "trans": [
+            "a.学院的",
+            "学术的"
+        ],
+        "pron": "[æ kә'demik]"
+    },
+    {
+        "name": "acceptable",
+        "trans": [
+            "a.可接受的，值得接受的，合意的"
+        ],
+        "pron": "[әk'septәbl]"
+    },
+    {
+        "name": "access",
+        "trans": [
+            "n.接近",
+            "通道",
+            "入口"
+        ],
+        "pron": "['æ kses]"
+    },
+    {
+        "name": "accident",
+        "trans": [
+            "n.意外的",
+            "事故"
+        ],
+        "pron": "['æ ksidәnt]"
+    },
+    {
+        "name": "accompany",
+        "trans": [
+            "vt.陪同",
+            "伴随"
+        ],
+        "pron": "[ә'kʌmpәni]"
+    },
+    {
+        "name": "accurate",
+        "trans": [
+            "a.准确的",
+            "正确无误的"
+        ],
+        "pron": "['æ kjurit]"
+    },
+    {
+        "name": "acid",
+        "trans": [
+            "n.酸",
+            "酸的",
+            "酸性的"
+        ],
+        "pron": "['æ sid]"
+    },
+    {
+        "name": "acknowledge",
+        "trans": [
+            "vt.承认",
+            "感谢"
+        ],
+        "pron": "[әk'nɔlidʒ]"
+    },
+    {
+        "name": "acquire",
+        "trans": [
+            "vt.取得",
+            "获得",
+            "学到"
+        ],
+        "pron": "[ә'kwaiә]"
+    },
+    {
+        "name": "acquisition",
+        "trans": [
+            "n. 获得",
+            "添加的物品"
+        ],
+        "pron": "['æ kwi'ziʃәn]"
+    },
+    {
+        "name": "acre",
+        "trans": [
+            "n.英亩(=6.07 亩)"
+        ],
+        "pron": "['eikә]"
+    },
+    {
+        "name": "activism",
+        "trans": [
+            "n. 实践主义",
+            "能动主义"
+        ],
+        "pron": "['æ ktivizm]"
+    },
+    {
+        "name": "actor",
+        "trans": [
+            "n.男演员"
+        ],
+        "pron": "['æ ktә]"
+    },
+    {
+        "name": "actress",
+        "trans": [
+            "n.女演员"
+        ],
+        "pron": "['æ ktris]"
+    },
+    {
+        "name": "actual",
+        "trans": [
+            "a.实际的",
+            "现行的"
+        ],
+        "pron": "['æ ktjuәl]"
+    },
+    {
+        "name": "adequate",
+        "trans": [
+            "a.足够的",
+            "可以胜任的"
+        ],
+        "pron": "['æ dikwit]"
+    },
+    {
+        "name": "adjust",
+        "trans": [
+            "vt.调整",
+            "调节",
+            "校正"
+        ],
+        "pron": "[ә'dʒʌst]"
+    },
+    {
+        "name": "admire",
+        "trans": [
+            "vt.钦佩",
+            "羡慕",
+            "赞赏"
+        ],
+        "pron": "[әd'maiә]"
+    },
+    {
+        "name": "advanced",
+        "trans": [
+            "a.先进的",
+            "高级的"
+        ],
+        "pron": "[әd'va:nst]"
+    },
+    {
+        "name": "advertise",
+        "trans": [
+            "vt.通知 vi.登广告"
+        ],
+        "pron": "['æ dvәtaiz]"
+    },
+    {
+        "name": "advise",
+        "trans": [
+            "vt.劝告",
+            "建议",
+            "通知"
+        ],
+        "pron": "[әd'vaiz]"
+    },
+    {
+        "name": "adviser",
+        "trans": [
+            "n.顾问；指导教师"
+        ],
+        "pron": "[әd'vaizә]"
+    },
+    {
+        "name": "advocate",
+        "trans": [
+            "n.拥护者 vt.提倡",
+            "拥护"
+        ],
+        "pron": "['æ dvәkit]"
+    },
+    {
+        "name": "afford",
+        "trans": [
+            "vt.担负得起…",
+            "提供"
+        ],
+        "pron": "[ә'fɔ:d]"
+    },
+    {
+        "name": "afraid",
+        "trans": [
+            "a.害怕的",
+            "担心的"
+        ],
+        "pron": "[ә'freid]"
+    },
+    {
+        "name": "afterwards",
+        "trans": [
+            "ad.以后，后来"
+        ],
+        "pron": "['a:ftәwәdz]"
+    },
+    {
+        "name": "agenda",
+        "trans": [
+            "n.议程",
+            "应办事项"
+        ],
+        "pron": "[ә'dʒendә]"
+    },
+    {
+        "name": "aggressive",
+        "trans": [
+            "a.好斗的",
+            "勇于进取的"
+        ],
+        "pron": "[ә'gresiv]"
+    },
+    {
+        "name": "agricultural",
+        "trans": [
+            "adj.农业的"
+        ],
+        "pron": "[æ gri'kʌltʃәrәl]"
+    },
+    {
+        "name": "agriculture",
+        "trans": [
+            "n.农业",
+            "农艺",
+            "农学"
+        ],
+        "pron": "['æ grikʌltʃә]"
+    },
+    {
+        "name": "ahead of",
+        "trans": [
+            "ad.在...前面"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "air force",
+        "trans": [
+            "空军"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "alarm",
+        "trans": [
+            "n.惊恐",
+            "忧虑",
+            "警报"
+        ],
+        "pron": "[ә'la:m]"
+    },
+    {
+        "name": "alcohol",
+        "trans": [
+            "n.酒精",
+            "乙醇"
+        ],
+        "pron": "['æ lkәhɔl]"
+    },
+    {
+        "name": "alert",
+        "trans": [
+            "a.警惕的",
+            "活跃的"
+        ],
+        "pron": "[ә'lә:t]"
+    },
+    {
+        "name": "alive",
+        "trans": [
+            "a.活着的",
+            "活跃的"
+        ],
+        "pron": "[ә'laiv]"
+    },
+    {
+        "name": "allegation",
+        "trans": [
+            "n. （无证据的）指控"
+        ],
+        "pron": "[æ li'geiʃәn]"
+    },
+    {
+        "name": "alliance",
+        "trans": [
+            "n. 联盟",
+            "联合"
+        ],
+        "pron": "[ә'laiәns]"
+    },
+    {
+        "name": "allied",
+        "trans": [
+            "a.联合的"
+        ],
+        "pron": "[ә'laid, 'æ laid]"
+    },
+    {
+        "name": "alongside",
+        "trans": [
+            "prep.在…旁边"
+        ],
+        "pron": "[ә'lɔŋ'said]"
+    },
+    {
+        "name": "alter",
+        "trans": [
+            "vt.改变",
+            "变更",
+            "改做"
+        ],
+        "pron": "['ɔ:ltә]"
+    },
+    {
+        "name": "altogether",
+        "trans": [
+            "ad.完全",
+            "总而言之"
+        ],
+        "pron": "[ɔ:ltә'geðә]"
+    },
+    {
+        "name": "amateur",
+        "trans": [
+            "a.业余的 n.业余爱好者"
+        ],
+        "pron": "['æ mәtә:]"
+    },
+    {
+        "name": "amazing",
+        "trans": [
+            "a.令人吃惊的"
+        ],
+        "pron": "[ә'meiziŋ]"
+    },
+    {
+        "name": "ambassador",
+        "trans": [
+            "n.大使",
+            "使节"
+        ],
+        "pron": "[æ m'bæ sәdә]"
+    },
+    {
+        "name": "ambition",
+        "trans": [
+            "n.雄心",
+            "抱负",
+            "野心"
+        ],
+        "pron": "[æ m'biʃәn]"
+    },
+    {
+        "name": "amendment",
+        "trans": [
+            "n. 改正，修正"
+        ],
+        "pron": "[ә'mendmәnt]"
+    },
+    {
+        "name": "amid",
+        "trans": [
+            "prep. 在...中"
+        ],
+        "pron": "[ә'mid]"
+    },
+    {
+        "name": "analysis",
+        "trans": [
+            "n.分析",
+            "分解",
+            "解析"
+        ],
+        "pron": "[ә'næ lәsis]"
+    },
+    {
+        "name": "ancient",
+        "trans": [
+            "a.古代的",
+            "古老的"
+        ],
+        "pron": "['einʃәnt]"
+    },
+    {
+        "name": "anger",
+        "trans": [
+            "n.怒",
+            "愤怒 vt.使发怒"
+        ],
+        "pron": "['æŋgә]"
+    },
+    {
+        "name": "angle",
+        "trans": [
+            "n.角",
+            "角度"
+        ],
+        "pron": "['æŋgl]"
+    },
+    {
+        "name": "angry",
+        "trans": [
+            "a.愤怒的",
+            "生气的"
+        ],
+        "pron": "['æŋgri]"
+    },
+    {
+        "name": "anniversary",
+        "trans": [
+            "n.周年纪念日"
+        ],
+        "pron": "[,æ ni'vә:sәri]"
+    },
+    {
+        "name": "announcement",
+        "trans": [
+            "n.宣布，宣告"
+        ],
+        "pron": "[ә'naunsmәnt]"
+    },
+    {
+        "name": "antique",
+        "trans": [
+            "a.古代的 n.古董"
+        ],
+        "pron": "[æ n'ti:k]"
+    },
+    {
+        "name": "anxiety",
+        "trans": [
+            "n.焦虑",
+            "忧虑",
+            "渴望"
+        ],
+        "pron": "[æŋg'zaiәti]"
+    },
+    {
+        "name": "anxious",
+        "trans": [
+            "a.忧虑的",
+            "渴望的"
+        ],
+        "pron": "['æŋkʃәs]"
+    },
+    {
+        "name": "anybody",
+        "trans": [
+            "prep.任何人"
+        ],
+        "pron": "['enibɔdi]"
+    },
+    {
+        "name": "anywhere",
+        "trans": [
+            "ad.任何地方"
+        ],
+        "pron": "['eniwɛә]"
+    },
+    {
+        "name": "apart",
+        "trans": [
+            "ad.相隔",
+            "分开",
+            "除去"
+        ],
+        "pron": "[ә'pa:t]"
+    },
+    {
+        "name": "apartment",
+        "trans": [
+            "n.一套公寓房间"
+        ],
+        "pron": "[ә'pa:tmәnt]"
+    },
+    {
+        "name": "appal",
+        "trans": [
+            "v. 使惊骇，使恐怖"
+        ],
+        "pron": "[ә'pɔ:l]"
+    },
+    {
+        "name": "apparent",
+        "trans": [
+            "a.表面上的",
+            "明显的"
+        ],
+        "pron": "[ә'pæ rәnt]"
+    },
+    {
+        "name": "apple",
+        "trans": [
+            "n.苹果"
+        ],
+        "pron": "['æ pl]"
+    },
+    {
+        "name": "application",
+        "trans": [
+            "n.请求",
+            "申请",
+            "施用"
+        ],
+        "pron": "[æ pli'keiʃәn]"
+    },
+    {
+        "name": "appoint",
+        "trans": [
+            "vt.任命",
+            "约定"
+        ],
+        "pron": "[ә'pɔint]"
+    },
+    {
+        "name": "appointment",
+        "trans": [
+            "n.任命",
+            "约定",
+            "约会"
+        ],
+        "pron": "[ә'pɔintmәnt]"
+    },
+    {
+        "name": "appreciate",
+        "trans": [
+            "vt.欣赏",
+            "领会",
+            "感谢"
+        ],
+        "pron": "[ә'pri:ʃieit]"
+    },
+    {
+        "name": "appropriate",
+        "trans": [
+            "a.恰当的"
+        ],
+        "pron": "[ә'prәupriit]"
+    },
+    {
+        "name": "approval",
+        "trans": [
+            "n.赞成",
+            "批准"
+        ],
+        "pron": "[ә'pru:vәl]"
+    },
+    {
+        "name": "arise",
+        "trans": [
+            "vi.出现",
+            "由…引起"
+        ],
+        "pron": "[ә'raiz]"
+    },
+    {
+        "name": "armed forces",
+        "trans": [
+            "武装部队"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "arrangement",
+        "trans": [
+            "n.整理",
+            "排列",
+            "安排"
+        ],
+        "pron": "[ә'reindʒmәnt]"
+    },
+    {
+        "name": "arrival",
+        "trans": [
+            "n.到达",
+            "到达者"
+        ],
+        "pron": "[ә'raivәl]"
+    },
+    {
+        "name": "aside",
+        "trans": [
+            "ad.在旁边",
+            "到旁边"
+        ],
+        "pron": "[ә'said]"
+    },
+    {
+        "name": "assault",
+        "trans": [
+            "vt.袭击",
+            "殴打 n.攻击"
+        ],
+        "pron": "[ә'sɔ:lt]"
+    },
+    {
+        "name": "assembly",
+        "trans": [
+            "n.集合",
+            "集会",
+            "装配"
+        ],
+        "pron": "[ә'sembli]"
+    },
+    {
+        "name": "assist",
+        "trans": [
+            "vt.援助",
+            "帮助"
+        ],
+        "pron": "[ә'sist]"
+    },
+    {
+        "name": "assistance",
+        "trans": [
+            "n.协助",
+            "援助"
+        ],
+        "pron": "[ә'sistәns]"
+    },
+    {
+        "name": "assistant",
+        "trans": [
+            "n.助手",
+            "助教"
+        ],
+        "pron": "[ә'sistәnt]"
+    },
+    {
+        "name": "associate",
+        "trans": [
+            "vi.交往",
+            "联系 n.关联"
+        ],
+        "pron": "[ә'sәuʃieit]"
+    },
+    {
+        "name": "associated",
+        "trans": [
+            "a. 联合的",
+            "关联的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "assumption",
+        "trans": [
+            "n. 假定",
+            "视为当然之事"
+        ],
+        "pron": "[ә'sʌmpʃәn]"
+    },
+    {
+        "name": "assured",
+        "trans": [
+            "adj. 自信的，确定的"
+        ],
+        "pron": "[ә'ʃuәd]"
+    },
+    {
+        "name": "athlete",
+        "trans": [
+            "n.运动员"
+        ],
+        "pron": "['æθli:t]"
+    },
+    {
+        "name": "atmosphere",
+        "trans": [
+            "n.大气",
+            "气氛"
+        ],
+        "pron": "['æ tmәsfiә]"
+    },
+    {
+        "name": "attach",
+        "trans": [
+            "vt.缚",
+            "系",
+            "贴",
+            "附加"
+        ],
+        "pron": "[ә'tæ tʃ]"
+    },
+    {
+        "name": "attorney",
+        "trans": [
+            "n.代理人",
+            "辩护律师"
+        ],
+        "pron": "[ә'tә:ni]"
+    },
+    {
+        "name": "attractive",
+        "trans": [
+            "a.有吸引力的"
+        ],
+        "pron": "[ә'træ ktiv]"
+    },
+    {
+        "name": "auction",
+        "trans": [
+            "n.拍卖"
+        ],
+        "pron": "['ɔ:kʃәn]"
+    },
+    {
+        "name": "auto",
+        "trans": [
+            "n.汽车"
+        ],
+        "pron": "['ɔ:tәu]"
+    },
+    {
+        "name": "automatic",
+        "trans": [
+            "a.自动的"
+        ],
+        "pron": "[ɔ:tә'mæ tik]"
+    },
+    {
+        "name": "autumn",
+        "trans": [
+            "n.秋季"
+        ],
+        "pron": "['ɔ:tәm]"
+    },
+    {
+        "name": "await",
+        "trans": [
+            "vt.等候",
+            "期待"
+        ],
+        "pron": "[ә'weit]"
+    },
+    {
+        "name": "awful",
+        "trans": [
+            "a.令人不愉快的"
+        ],
+        "pron": "['ɔ:ful]"
+    },
+    {
+        "name": "background",
+        "trans": [
+            "n.背景",
+            "经历"
+        ],
+        "pron": "['bæ kgraund]"
+    },
+    {
+        "name": "backing",
+        "trans": [
+            "n. 衬背",
+            "后援",
+            "支持者"
+        ],
+        "pron": "['bækiŋ]"
+    },
+    {
+        "name": "badly",
+        "trans": [
+            "ad.坏",
+            "差",
+            "严重地"
+        ],
+        "pron": "['bæ dli]"
+    },
+    {
+        "name": "bake",
+        "trans": [
+            "vt.烤",
+            "烘",
+            "烧硬"
+        ],
+        "pron": "[beik]"
+    },
+    {
+        "name": "ballot",
+        "trans": [
+            "n.选票"
+        ],
+        "pron": "['bæ lәt]"
+    },
+    {
+        "name": "banker",
+        "trans": [
+            "n.银行家"
+        ],
+        "pron": "['bæŋkә]"
+    },
+    {
+        "name": "banking",
+        "trans": [
+            "n.银行业"
+        ],
+        "pron": "['bæŋkiŋ]"
+    },
+    {
+        "name": "bare",
+        "trans": [
+            "a.赤裸的",
+            "仅仅的"
+        ],
+        "pron": "[bɛә]"
+    },
+    {
+        "name": "barely",
+        "trans": [
+            "adv.仅仅；只"
+        ],
+        "pron": "['bɛәli]"
+    },
+    {
+        "name": "bargain",
+        "trans": [
+            "n.交易 vi.议价",
+            "成交"
+        ],
+        "pron": "['ba:gin]"
+    },
+    {
+        "name": "barrel",
+        "trans": [
+            "n.桶",
+            "圆筒",
+            "枪管"
+        ],
+        "pron": "['bæ rәl]"
+    },
+    {
+        "name": "barrier",
+        "trans": [
+            "n.栅栏",
+            "屏障",
+            "障碍"
+        ],
+        "pron": "['bæ riә]"
+    },
+    {
+        "name": "baseball",
+        "trans": [
+            "n. 棒球",
+            "棒球运动"
+        ],
+        "pron": "['beisbɔ:l]"
+    },
+    {
+        "name": "basically",
+        "trans": [
+            "ad.基本上"
+        ],
+        "pron": "['beisikәli]"
+    },
+    {
+        "name": "bat",
+        "trans": [
+            "n. 蝙蝠",
+            "球棒"
+        ],
+        "pron": "[bæ t]"
+    },
+    {
+        "name": "bath",
+        "trans": [
+            "n.洗澡",
+            "浴缸"
+        ],
+        "pron": "[ba:θ]"
+    },
+    {
+        "name": "bathroom",
+        "trans": [
+            "n.浴室",
+            "盥洗室"
+        ],
+        "pron": "['ba:θrum]"
+    },
+    {
+        "name": "bay",
+        "trans": [
+            "n.海湾"
+        ],
+        "pron": "[bei]"
+    },
+    {
+        "name": "beach",
+        "trans": [
+            "n.海滩",
+            "湖滩",
+            "河滩"
+        ],
+        "pron": "[bi:tʃ]"
+    },
+    {
+        "name": "bean",
+        "trans": [
+            "n.豆",
+            "蚕豆"
+        ],
+        "pron": "[bi:n]"
+    },
+    {
+        "name": "beaten",
+        "trans": [
+            "a. 被打败了的",
+            "筋疲力竭的",
+            "敲平的",
+            "踏平的"
+        ],
+        "pron": "['bi:tn]"
+    },
+    {
+        "name": "beauty",
+        "trans": [
+            "n.美",
+            "美丽",
+            "美人"
+        ],
+        "pron": "['bju:ti]"
+    },
+    {
+        "name": "bedroom",
+        "trans": [
+            "n.卧室"
+        ],
+        "pron": "['bedrum]"
+    },
+    {
+        "name": "beer",
+        "trans": [
+            "n.啤酒"
+        ],
+        "pron": "[biә]"
+    },
+    {
+        "name": "beginning",
+        "trans": [
+            "n.开始",
+            "开端",
+            "起源"
+        ],
+        "pron": "[bi'giniŋ]"
+    },
+    {
+        "name": "behalf",
+        "trans": [
+            "n.利益",
+            "维护",
+            "支持"
+        ],
+        "pron": "[bi'ha:f]"
+    },
+    {
+        "name": "behave",
+        "trans": [
+            "vi.表现",
+            "举止"
+        ],
+        "pron": "[bi'heiv]"
+    },
+    {
+        "name": "being",
+        "trans": [
+            "n.存在",
+            "生物",
+            "生命"
+        ],
+        "pron": "['bi:iŋ]"
+    },
+    {
+        "name": "belief",
+        "trans": [
+            "n.信任",
+            "相信",
+            "信念"
+        ],
+        "pron": "[bi'li:f]"
+    },
+    {
+        "name": "bell",
+        "trans": [
+            "n.钟",
+            "铃"
+        ],
+        "pron": "[bel]"
+    },
+    {
+        "name": "belong",
+        "trans": [
+            "vi.属于",
+            "附属"
+        ],
+        "pron": "[bi'lɔŋ]"
+    },
+    {
+        "name": "belt",
+        "trans": [
+            "n.带",
+            "腰带",
+            "区"
+        ],
+        "pron": "[belt]"
+    },
+    {
+        "name": "bend",
+        "trans": [
+            "vt.使弯曲 vi.弯曲"
+        ],
+        "pron": "[bend]"
+    },
+    {
+        "name": "beneath",
+        "trans": [
+            "prep.在…下方"
+        ],
+        "pron": "[bi'ni:θ]"
+    },
+    {
+        "name": "beside",
+        "trans": [
+            "prep.在…旁边",
+            "和...比较"
+        ],
+        "pron": "[bi'said]"
+    },
+    {
+        "name": "besides",
+        "trans": [
+            "ad.而且 prep.除…之外"
+        ],
+        "pron": "[bi'saidz]"
+    },
+    {
+        "name": "bet",
+        "trans": [
+            "vt.vi.n.打赌"
+        ],
+        "pron": "[bet]"
+    },
+    {
+        "name": "bike",
+        "trans": [
+            "n.自行车"
+        ],
+        "pron": "[baik]"
+    },
+    {
+        "name": "birth",
+        "trans": [
+            "n.分娩",
+            "出生",
+            "出身"
+        ],
+        "pron": "[bә:θ]"
+    },
+    {
+        "name": "birthday",
+        "trans": [
+            "n.生日"
+        ],
+        "pron": "['bә:θdi]"
+    },
+    {
+        "name": "bitter",
+        "trans": [
+            "a.痛苦的",
+            "严寒的"
+        ],
+        "pron": "['bitә]"
+    },
+    {
+        "name": "blast",
+        "trans": [
+            "n.爆炸",
+            "冲击波 vt.炸"
+        ],
+        "pron": "[bla:st]"
+    },
+    {
+        "name": "blind",
+        "trans": [
+            "a.瞎的",
+            "盲目的"
+        ],
+        "pron": "[blaind]"
+    },
+    {
+        "name": "bloody",
+        "trans": [
+            "adj. 血腥的",
+            "嗜杀的"
+        ],
+        "pron": "['blʌdi]"
+    },
+    {
+        "name": "blow",
+        "trans": [
+            "vi.吹",
+            "吹动",
+            "吹响"
+        ],
+        "pron": "[blәu]"
+    },
+    {
+        "name": "boil",
+        "trans": [
+            "vi.沸腾",
+            "汽化vt.煮沸"
+        ],
+        "pron": "[bɔil]"
+    },
+    {
+        "name": "bone",
+        "trans": [
+            "n.骨",
+            "骨骼"
+        ],
+        "pron": "[bәun]"
+    },
+    {
+        "name": "boom",
+        "trans": [
+            "n.繁荣"
+        ],
+        "pron": "[bu:m]"
+    },
+    {
+        "name": "boost",
+        "trans": [
+            "vt.n.推进",
+            "支援",
+            "吹捧"
+        ],
+        "pron": "[bu:st]"
+    },
+    {
+        "name": "boot",
+        "trans": [
+            "n.长统靴"
+        ],
+        "pron": "[bu:t]"
+    },
+    {
+        "name": "bore",
+        "trans": [
+            "vt.使厌烦",
+            "钻孔",
+            "挖"
+        ],
+        "pron": "[bɔ:]"
+    },
+    {
+        "name": "borrow",
+        "trans": [
+            "vt.借用",
+            "借入"
+        ],
+        "pron": "['bɔrәu]"
+    },
+    {
+        "name": "bother",
+        "trans": [
+            "vt.烦扰",
+            "迷惑 n.麻烦"
+        ],
+        "pron": "['bɔðә]"
+    },
+    {
+        "name": "bound",
+        "trans": [
+            "a.一定的",
+            "有义务的"
+        ],
+        "pron": "[baund]"
+    },
+    {
+        "name": "bowl",
+        "trans": [
+            "n.碗",
+            "钵"
+        ],
+        "pron": "[bәul]"
+    },
+    {
+        "name": "branch",
+        "trans": [
+            "n.树枝",
+            "分部",
+            "分支"
+        ],
+        "pron": "[bra:ntʃ]"
+    },
+    {
+        "name": "brand",
+        "trans": [
+            "n.商品",
+            "烙印 vt.铭刻"
+        ],
+        "pron": "[bræ nd]"
+    },
+    {
+        "name": "brave",
+        "trans": [
+            "a.勇敢的"
+        ],
+        "pron": "[breiv]"
+    },
+    {
+        "name": "bread",
+        "trans": [
+            "n.面包"
+        ],
+        "pron": "[bred]"
+    },
+    {
+        "name": "breakfast",
+        "trans": [
+            "n.早餐"
+        ],
+        "pron": "['brekfәst]"
+    },
+    {
+        "name": "breast",
+        "trans": [
+            "n.乳房",
+            "胸脯"
+        ],
+        "pron": "[brest]"
+    },
+    {
+        "name": "breath",
+        "trans": [
+            "n.呼吸",
+            "气味"
+        ],
+        "pron": "[breθ]"
+    },
+    {
+        "name": "breathe",
+        "trans": [
+            "vi.vt.呼吸"
+        ],
+        "pron": "[bri:ð]"
+    },
+    {
+        "name": "breed",
+        "trans": [
+            "n.品种 vt.使繁殖"
+        ],
+        "pron": "[bri:d]"
+    },
+    {
+        "name": "brilliant",
+        "trans": [
+            "a.光辉的",
+            "卓越的"
+        ],
+        "pron": "['briljәnt]"
+    },
+    {
+        "name": "broadcast",
+        "trans": [
+            "n.广播",
+            "播音"
+        ],
+        "pron": "['brɔ:dka:st]"
+    },
+    {
+        "name": "broadcasting",
+        "trans": [
+            "n. 广 播"
+        ],
+        "pron": "['brɔ:dkæstiŋ]"
+    },
+    {
+        "name": "broker",
+        "trans": [
+            "n.经纪人"
+        ],
+        "pron": "['brәukә]"
+    },
+    {
+        "name": "brush",
+        "trans": [
+            "n.刷子",
+            "画笔"
+        ],
+        "pron": "[brʌʃ]"
+    },
+    {
+        "name": "bunch",
+        "trans": [
+            "n.束",
+            "串",
+            "一群"
+        ],
+        "pron": "[bʌntʃ]"
+    },
+    {
+        "name": "burden",
+        "trans": [
+            "n.担子",
+            "负担",
+            "装载量"
+        ],
+        "pron": "['bә:dn]"
+    },
+    {
+        "name": "burst",
+        "trans": [
+            "vt.使爆裂 vi.n.爆炸"
+        ],
+        "pron": "[bә:st]"
+    },
+    {
+        "name": "bury",
+        "trans": [
+            "vt.埋葬",
+            "埋藏"
+        ],
+        "pron": "['beri]"
+    },
+    {
+        "name": "bus",
+        "trans": [
+            "n.公共汽车"
+        ],
+        "pron": "[bʌs]"
+    },
+    {
+        "name": "businessman",
+        "trans": [
+            "n.生意人，商人"
+        ],
+        "pron": "['biznismæ n]"
+    },
+    {
+        "name": "busy",
+        "trans": [
+            "a.繁忙的"
+        ],
+        "pron": "['bizi]"
+    },
+    {
+        "name": "butter",
+        "trans": [
+            "n.黄油",
+            "奶油"
+        ],
+        "pron": "['bʌtә]"
+    },
+    {
+        "name": "button",
+        "trans": [
+            "n.扣子",
+            "按钮 vt.扣紧"
+        ],
+        "pron": "['bʌtn]"
+    },
+    {
+        "name": "bye",
+        "trans": [
+            "再见"
+        ],
+        "pron": "[bai]"
+    },
+    {
+        "name": "cable",
+        "trans": [
+            "n.索",
+            "电缆"
+        ],
+        "pron": "['keibl]"
+    },
+    {
+        "name": "cake",
+        "trans": [
+            "n.饼",
+            "蛋糕"
+        ],
+        "pron": "[keik]"
+    },
+    {
+        "name": "calculated",
+        "trans": [
+            "a. 有计划的",
+            "适当的",
+            "适合的",
+            "计算 出的"
+        ],
+        "pron": "['kæ lkjuleitid]"
+    },
+    {
+        "name": "calm",
+        "trans": [
+            "a.平静的"
+        ],
+        "pron": "[ka:m]"
+    },
+    {
+        "name": "cancel",
+        "trans": [
+            "vt.取消",
+            "撤消",
+            "删去"
+        ],
+        "pron": "['kæ nsәl]"
+    },
+    {
+        "name": "cap",
+        "trans": [
+            "n.帽子"
+        ],
+        "pron": "[kæ p]"
+    },
+    {
+        "name": "capable",
+        "trans": [
+            "a.有能力的",
+            "有才能的"
+        ],
+        "pron": "['keipәbl]"
+    },
+    {
+        "name": "capacity",
+        "trans": [
+            "n.容量",
+            "能力",
+            "能量"
+        ],
+        "pron": "[kә'pæ siti]"
+    },
+    {
+        "name": "capture",
+        "trans": [
+            "vt.捕获",
+            "俘获",
+            "夺得"
+        ],
+        "pron": "['kæ ptʃә]"
+    },
+    {
+        "name": "carbon",
+        "trans": [
+            "n.碳"
+        ],
+        "pron": "['ka:bәn]"
+    },
+    {
+        "name": "caring",
+        "trans": [
+            "ing. 照 顾"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "carrier",
+        "trans": [
+            "n.运输工具",
+            "运载工具"
+        ],
+        "pron": "['kæ riә]"
+    },
+    {
+        "name": "castle",
+        "trans": [
+            "n.城堡"
+        ],
+        "pron": "['ka:sl]"
+    },
+    {
+        "name": "casualty",
+        "trans": [
+            "n.伤亡",
+            "受害者"
+        ],
+        "pron": "['kæ ʒjuәlti]"
+    },
+    {
+        "name": "cat",
+        "trans": [
+            "n.猫"
+        ],
+        "pron": "[kæ t]"
+    },
+    {
+        "name": "category",
+        "trans": [
+            "n.种类",
+            "类目",
+            "范畴"
+        ],
+        "pron": "['kæ tigәri]"
+    },
+    {
+        "name": "Catholic",
+        "trans": [
+            "a.天主教的 n.天主教徒"
+        ],
+        "pron": "['kæθәlik]"
+    },
+    {
+        "name": "cautious",
+        "trans": [
+            "a.小心的",
+            "谨慎的"
+        ],
+        "pron": "['kɔ:ʃәs]"
+    },
+    {
+        "name": "cave",
+        "trans": [
+            "n.山洞",
+            "洞穴",
+            "窑洞"
+        ],
+        "pron": "[keiv]"
+    },
+    {
+        "name": "CD",
+        "trans": [
+            "n. 光碟的简称"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "cease",
+        "trans": [
+            "vi.vi.n.停止",
+            "停息"
+        ],
+        "pron": "[si:s]"
+    },
+    {
+        "name": "ceasefire",
+        "trans": [
+            "n. 停火",
+            "停战"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "celebrate",
+        "trans": [
+            "vt.庆祝",
+            "歌颂",
+            "赞美"
+        ],
+        "pron": "['selibreit]"
+    },
+    {
+        "name": "celebration",
+        "trans": [
+            "n.庆祝，祝贺"
+        ],
+        "pron": "[seli'breiʃәn]"
+    },
+    {
+        "name": "ceremony",
+        "trans": [
+            "n.典礼",
+            "仪式",
+            "礼节"
+        ],
+        "pron": "['serimәni]"
+    },
+    {
+        "name": "certain",
+        "trans": [
+            "a.确实的",
+            "肯定的"
+        ],
+        "pron": "['sә:tәn]"
+    },
+    {
+        "name": "chain",
+        "trans": [
+            "n.链",
+            "链条",
+            "项圈"
+        ],
+        "pron": "[tʃein]"
+    },
+    {
+        "name": "chamber",
+        "trans": [
+            "n.会议室",
+            "房间",
+            "腔"
+        ],
+        "pron": "['tʃeimbә]"
+    },
+    {
+        "name": "chaos",
+        "trans": [
+            "n. 大混乱",
+            "混沌"
+        ],
+        "pron": "['keiɔs]"
+    },
+    {
+        "name": "characteristic",
+        "trans": [
+            "a.特有的 n.特性"
+        ],
+        "pron": "[kæ riktә'ristik]"
+    },
+    {
+        "name": "charity",
+        "trans": [
+            "n.施舍",
+            "慈善事业"
+        ],
+        "pron": "['tʃæ riti]"
+    },
+    {
+        "name": "chart",
+        "trans": [
+            "n.图",
+            "图表",
+            "海图"
+        ],
+        "pron": "[tʃa:t]"
+    },
+    {
+        "name": "charter",
+        "trans": [
+            "vt.租 n.宪章",
+            "执照"
+        ],
+        "pron": "['tʃa:tә]"
+    },
+    {
+        "name": "chase",
+        "trans": [
+            "n.追逐",
+            "追赶",
+            "追求"
+        ],
+        "pron": "[tʃeis]"
+    },
+    {
+        "name": "chat",
+        "trans": [
+            "vi.n. 闲谈",
+            "聊天"
+        ],
+        "pron": "[tʃæ t]"
+    },
+    {
+        "name": "cheer",
+        "trans": [
+            "vt.使振作",
+            "欢呼"
+        ],
+        "pron": "[tʃiә]"
+    },
+    {
+        "name": "cheese",
+        "trans": [
+            "n.乳酪",
+            "干酪"
+        ],
+        "pron": "[tʃi:z]"
+    },
+    {
+        "name": "chest",
+        "trans": [
+            "n.胸腔",
+            "胸膛",
+            "箱子"
+        ],
+        "pron": "[tʃest]"
+    },
+    {
+        "name": "chicken",
+        "trans": [
+            "n.小鸡",
+            "鸡肉"
+        ],
+        "pron": "['tʃikin]"
+    },
+    {
+        "name": "childhood",
+        "trans": [
+            "n.童年"
+        ],
+        "pron": "['tʃaildhud]"
+    },
+    {
+        "name": "chip",
+        "trans": [
+            "n.薄片",
+            "碎片"
+        ],
+        "pron": "[tʃip]"
+    },
+    {
+        "name": "chocolate",
+        "trans": [
+            "n.巧克力"
+        ],
+        "pron": "['tʃɔkәlit]"
+    },
+    {
+        "name": "chop",
+        "trans": [
+            "vt.砍",
+            "劈"
+        ],
+        "pron": "[tʃɔp]"
+    },
+    {
+        "name": "cigarette",
+        "trans": [
+            "n.香烟"
+        ],
+        "pron": "[sigә'ret]"
+    },
+    {
+        "name": "cinema",
+        "trans": [
+            "n.电影院"
+        ],
+        "pron": "['sinimә]"
+    },
+    {
+        "name": "circuit",
+        "trans": [
+            "n.电路",
+            "环行",
+            "巡行"
+        ],
+        "pron": "['sә:kit]"
+    },
+    {
+        "name": "circumstance",
+        "trans": [
+            "n.情况",
+            "条件",
+            "境遇"
+        ],
+        "pron": "['sә:kәmstәns]"
+    },
+    {
+        "name": "cite",
+        "trans": [
+            "vt.引用",
+            "引证",
+            "举例"
+        ],
+        "pron": "[sait]"
+    },
+    {
+        "name": "civilian",
+        "trans": [
+            "n.平民 a.平民的"
+        ],
+        "pron": "[si'viljәn]"
+    },
+    {
+        "name": "civil war",
+        "trans": [
+            "n. 内 战"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "clash",
+        "trans": [
+            "n.碰撞声",
+            "抵触",
+            "冲突"
+        ],
+        "pron": "[klæ ʃ]"
+    },
+    {
+        "name": "classical",
+        "trans": [
+            "a.古典的",
+            "经典的"
+        ],
+        "pron": "['klæ sikәl]"
+    },
+    {
+        "name": "clever",
+        "trans": [
+            "a.聪明的",
+            "机敏的"
+        ],
+        "pron": "['klevә]"
+    },
+    {
+        "name": "client",
+        "trans": [
+            "n.顾客",
+            "诉讼委托人"
+        ],
+        "pron": "['klaiәnt]"
+    },
+    {
+        "name": "climate",
+        "trans": [
+            "n.气候"
+        ],
+        "pron": "['klaimit]"
+    },
+    {
+        "name": "climb",
+        "trans": [
+            "vi.vt.攀登",
+            "爬"
+        ],
+        "pron": "[klaim]"
+    },
+    {
+        "name": "clinic",
+        "trans": [
+            "n.诊所",
+            "医务室",
+            "会诊"
+        ],
+        "pron": "[klinik]"
+    },
+    {
+        "name": "clock",
+        "trans": [
+            "n.钟"
+        ],
+        "pron": "[klɔk]"
+    },
+    {
+        "name": "close",
+        "trans": [
+            "vt.关闭",
+            "结束"
+        ],
+        "pron": "[klәuz, klәus]"
+    },
+    {
+        "name": "clothing",
+        "trans": [
+            "n.衣服"
+        ],
+        "pron": "['klәuðiŋ]"
+    },
+    {
+        "name": "cloud",
+        "trans": [
+            "n.云"
+        ],
+        "pron": "[klaud]"
+    },
+    {
+        "name": "coal",
+        "trans": [
+            "n.煤",
+            "煤块"
+        ],
+        "pron": "[kәul]"
+    },
+    {
+        "name": "coalition",
+        "trans": [
+            "n.结合",
+            "联合"
+        ],
+        "pron": "[kәuә'liʃәn]"
+    },
+    {
+        "name": "coat",
+        "trans": [
+            "n.外套",
+            "上衣"
+        ],
+        "pron": "[kәut]"
+    },
+    {
+        "name": "code",
+        "trans": [
+            "n.准则",
+            "法典",
+            "代码"
+        ],
+        "pron": "[kәud]"
+    },
+    {
+        "name": "coffee",
+        "trans": [
+            "n.咖啡"
+        ],
+        "pron": "['kɔfi]"
+    },
+    {
+        "name": "collective",
+        "trans": [
+            "a.集体的",
+            "聚集的",
+            "共同的"
+        ],
+        "pron": "[kә'lektiv]"
+    },
+    {
+        "name": "colonel",
+        "trans": [
+            "n.上校"
+        ],
+        "pron": "['kә:nl]"
+    },
+    {
+        "name": "coloured",
+        "trans": [
+            "a.有色的，着色的"
+        ],
+        "pron": "['kʌlәd]"
+    },
+    {
+        "name": "column",
+        "trans": [
+            "n.柱",
+            "支柱",
+            "圆柱"
+        ],
+        "pron": "['kɔlәm]"
+    },
+    {
+        "name": "combat",
+        "trans": [
+            "vt.跟…战斗 vi.格斗"
+        ],
+        "pron": "['kɔmbæ t]"
+    },
+    {
+        "name": "combination",
+        "trans": [
+            "n.结合",
+            "联合",
+            "化合"
+        ],
+        "pron": "[kɔmbi'neiʃәn]"
+    },
+    {
+        "name": "combine",
+        "trans": [
+            "vt.使结合",
+            "兼有"
+        ],
+        "pron": "[kәm'bain]"
+    },
+    {
+        "name": "comedy",
+        "trans": [
+            "n.喜剧",
+            "喜剧场面"
+        ],
+        "pron": "['kɔmidi]"
+    },
+    {
+        "name": "comfort",
+        "trans": [
+            "n.舒适",
+            "安慰 vt.安慰"
+        ],
+        "pron": "['kʌmfәt]"
+    },
+    {
+        "name": "comfortable",
+        "trans": [
+            "a.舒适的",
+            "安慰的"
+        ],
+        "pron": "['kʌmfәtәbl]"
+    },
+    {
+        "name": "command",
+        "trans": [
+            "vt.命令",
+            "指挥",
+            "控制"
+        ],
+        "pron": "[kә'ma:nd]"
+    },
+    {
+        "name": "commander",
+        "trans": [
+            "n.司令官",
+            "指挥员"
+        ],
+        "pron": "[kә'ma:ndә]"
+    },
+    {
+        "name": "commentator",
+        "trans": [
+            "n. 注解者；时事评论家;实况报导者"
+        ],
+        "pron": "['kɔmenteitә,-mәn-]"
+    },
+    {
+        "name": "commerce",
+        "trans": [
+            "n.商业",
+            "贸易"
+        ],
+        "pron": "['kɔmә(:)s]"
+    },
+    {
+        "name": "commissioner",
+        "trans": [
+            "n.专员，委员，政府特派员；地方长官，官员"
+        ],
+        "pron": "[kә'miʃәnә]"
+    },
+    {
+        "name": "communicate",
+        "trans": [
+            "vi.通讯",
+            "传达",
+            "传播"
+        ],
+        "pron": "[kә'mju:nikeit]"
+    },
+    {
+        "name": "communication",
+        "trans": [
+            "n.通讯",
+            "传达",
+            "交通"
+        ],
+        "pron": "[kә'mju:nikeiʃәn]"
+    },
+    {
+        "name": "compare",
+        "trans": [
+            "vt.比较",
+            "对照"
+        ],
+        "pron": "[kәm'pɛә]"
+    },
+    {
+        "name": "comparison",
+        "trans": [
+            "n.比较",
+            "对照"
+        ],
+        "pron": "[kәm'pæ risn]"
+    },
+    {
+        "name": "compensation",
+        "trans": [
+            "n.补偿",
+            "赔偿"
+        ],
+        "pron": "[kɔmpen'seiʃәn]"
+    },
+    {
+        "name": "compete",
+        "trans": [
+            "vi.比赛",
+            "竞争",
+            "对抗"
+        ],
+        "pron": "[kәm'pi:t]"
+    },
+    {
+        "name": "competitive",
+        "trans": [
+            "a.竞争的",
+            "比赛的"
+        ],
+        "pron": "[kәm'petitiv]"
+    },
+    {
+        "name": "competitor",
+        "trans": [
+            "n.竞争对手；敌手"
+        ],
+        "pron": "[kәm'petitә]"
+    },
+    {
+        "name": "complaint",
+        "trans": [
+            "n.抱怨",
+            "控告"
+        ],
+        "pron": "[kәm'pleint]"
+    },
+    {
+        "name": "complicated",
+        "trans": [
+            "a.复杂的",
+            "难懂的"
+        ],
+        "pron": "['kɔmplikeitid]"
+    },
+    {
+        "name": "component",
+        "trans": [
+            "n.组成部分",
+            "组件"
+        ],
+        "pron": "[kәm'pәunәnt]"
+    },
+    {
+        "name": "compose",
+        "trans": [
+            "vt.组成",
+            "构成",
+            "创作"
+        ],
+        "pron": "[kәm'pәuz]"
+    },
+    {
+        "name": "comprehensive",
+        "trans": [
+            "a.广泛的",
+            "理解的"
+        ],
+        "pron": "[kɔmpri'hensiv]"
+    },
+    {
+        "name": "compromise",
+        "trans": [
+            "n.妥协",
+            "和解"
+        ],
+        "pron": "['kɔmprәmaiz]"
+    },
+    {
+        "name": "concede",
+        "trans": [
+            "vt. 承认",
+            "退让 vi. 让步"
+        ],
+        "pron": "[kәn'si:d]"
+    },
+    {
+        "name": "concentrate",
+        "trans": [
+            "vt.集中",
+            "聚集",
+            "浓缩"
+        ],
+        "pron": "['kɔnsәntreit]"
+    },
+    {
+        "name": "concentration",
+        "trans": [
+            "n.集中",
+            "专注",
+            "浓缩"
+        ],
+        "pron": "[kɔnsәn'treiʃәn]"
+    },
+    {
+        "name": "concept",
+        "trans": [
+            "n.概念",
+            "观念",
+            "设想"
+        ],
+        "pron": "['kɔnsept]"
+    },
+    {
+        "name": "concerned",
+        "trans": [
+            "a.有关的，有牵连的"
+        ],
+        "pron": "[kәn'sә:nd]"
+    },
+    {
+        "name": "concert",
+        "trans": [
+            "n.音乐会",
+            "演奏会"
+        ],
+        "pron": "['kɔnsәt]"
+    },
+    {
+        "name": "concession",
+        "trans": [
+            "n.让步",
+            "迁就"
+        ],
+        "pron": "[kәn'seʃәn]"
+    },
+    {
+        "name": "conclude",
+        "trans": [
+            "vt.推断出",
+            "结束"
+        ],
+        "pron": "[kәn'klu:d]"
+    },
+    {
+        "name": "conclusion",
+        "trans": [
+            "n.结论",
+            "推论",
+            "结尾"
+        ],
+        "pron": "[kәn'klu:ʒәn]"
+    },
+    {
+        "name": "concrete",
+        "trans": [
+            "n.混凝土 a.具体的",
+            "实在的"
+        ],
+        "pron": "['kɔnkri:t]"
+    },
+    {
+        "name": "condemn",
+        "trans": [
+            "vt.谴责"
+        ],
+        "pron": "[kәn'dem]"
+    },
+    {
+        "name": "confident",
+        "trans": [
+            "n.确信的",
+            "自信的"
+        ],
+        "pron": "['kɔnfidәnt]"
+    },
+    {
+        "name": "confront",
+        "trans": [
+            "vt.使面对",
+            "使对证"
+        ],
+        "pron": "[kәn'frʌnt]"
+    },
+    {
+        "name": "confrontation",
+        "trans": [
+            "n. 对 抗"
+        ],
+        "pron": "[kɔnfrәn'teiʃәn]"
+    },
+    {
+        "name": "congressional",
+        "trans": [
+            "a. 会议的",
+            "议会的",
+            "国会的"
+        ],
+        "pron": "[kɔŋ'greʃәnl]"
+    },
+    {
+        "name": "connection",
+        "trans": [
+            "n.连接",
+            "联系",
+            "连贯性"
+        ],
+        "pron": "[kә'nekʃәn]"
+    },
+    {
+        "name": "conscious",
+        "trans": [
+            "a.意识到的",
+            "有意的"
+        ],
+        "pron": "['kɔnʃәs]"
+    },
+    {
+        "name": "consciousness",
+        "trans": [
+            "n.知觉"
+        ],
+        "pron": "['kɔnʃәsnis]"
+    },
+    {
+        "name": "consequence",
+        "trans": [
+            "n.结果",
+            "后果"
+        ],
+        "pron": "['kɔnsikwәns]"
+    },
+    {
+        "name": "considering",
+        "trans": [
+            "prep.考虑到"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "consist",
+        "trans": [
+            "vi.由…组成"
+        ],
+        "pron": "[kәn'sist]"
+    },
+    {
+        "name": "consistent",
+        "trans": [
+            "a.坚持的",
+            "一贯的"
+        ],
+        "pron": "[kәn'sistәnt]"
+    },
+    {
+        "name": "constitution",
+        "trans": [
+            "n.组织",
+            "宪法",
+            "构造"
+        ],
+        "pron": "[kɔnsti'tju:ʃәn]"
+    },
+    {
+        "name": "construct",
+        "trans": [
+            "vt.建造",
+            "建设",
+            "构筑"
+        ],
+        "pron": "[kәn'strʌkt]"
+    },
+    {
+        "name": "construction",
+        "trans": [
+            "n.建造",
+            "建筑物"
+        ],
+        "pron": "[kәn'strʌkʃәn]"
+    },
+    {
+        "name": "consult",
+        "trans": [
+            "vt.请教",
+            "查阅"
+        ],
+        "pron": "[kәn'sʌlt]"
+    },
+    {
+        "name": "consultant",
+        "trans": [
+            "n. 顾问",
+            "商议者"
+        ],
+        "pron": "[kәn'sʌltәnt]"
+    },
+    {
+        "name": "contemporary",
+        "trans": [
+            "a.当代的",
+            "同时代的"
+        ],
+        "pron": "[kәn'tempәrәri]"
+    },
+    {
+        "name": "content",
+        "trans": [
+            "a.满意的",
+            "满足的"
+        ],
+        "pron": "['kɔntent, kәn'tent]"
+    },
+    {
+        "name": "contest",
+        "trans": [
+            "vt.争夺",
+            "争取",
+            "辩驳"
+        ],
+        "pron": "[kәn'test, 'kɔntest]"
+    },
+    {
+        "name": "context",
+        "trans": [
+            "n.语境，背景"
+        ],
+        "pron": "['kɔntekst]"
+    },
+    {
+        "name": "continent",
+        "trans": [
+            "n.大陆",
+            "洲"
+        ],
+        "pron": "['kɔntinәnt]"
+    },
+    {
+        "name": "contrast",
+        "trans": [
+            "n.对比",
+            "对照"
+        ],
+        "pron": "['kɔntræ st, kәn'træ st]"
+    },
+    {
+        "name": "contribute",
+        "trans": [
+            "vt.捐献",
+            "捐助",
+            "投稿"
+        ],
+        "pron": "[kәn'tribju(:)t]"
+    },
+    {
+        "name": "controversial",
+        "trans": [
+            "a. 争论的",
+            "争议的"
+        ],
+        "pron": "[kɔntrә'vә:ʃәl]"
+    },
+    {
+        "name": "controversy",
+        "trans": [
+            "n.争论",
+            "辩论",
+            "争吵"
+        ],
+        "pron": "['kɔntrәvә:si]"
+    },
+    {
+        "name": "convention",
+        "trans": [
+            "n.习俗",
+            "惯例",
+            "公约"
+        ],
+        "pron": "[kәn'venʃәn]"
+    },
+    {
+        "name": "conventional",
+        "trans": [
+            "a.普通的",
+            "习惯的"
+        ],
+        "pron": "[kәn'venʃәnl]"
+    },
+    {
+        "name": "conversation",
+        "trans": [
+            "n.会话",
+            "非正式会谈"
+        ],
+        "pron": "[kɔnvә'seiʃәn]"
+    },
+    {
+        "name": "convert",
+        "trans": [
+            "vt.使转变",
+            "使改变"
+        ],
+        "pron": "[kәn'vә:t, 'kɔnvә:t]"
+    },
+    {
+        "name": "convict",
+        "trans": [
+            "n. 囚犯",
+            "罪犯 vt. 宣告有罪"
+        ],
+        "pron": "[kәn'vikt, 'kɔnvikt]"
+    },
+    {
+        "name": "conviction",
+        "trans": [
+            "n.定罪"
+        ],
+        "pron": "[kәn'vikʃәn]"
+    },
+    {
+        "name": "convince",
+        "trans": [
+            "vt.使确信",
+            "使信服"
+        ],
+        "pron": "[kәn'vins]"
+    },
+    {
+        "name": "cooking",
+        "trans": [
+            "n. 烹饪"
+        ],
+        "pron": "['kukiŋ]"
+    },
+    {
+        "name": "co-operate",
+        "trans": [
+            "vi.合作，协作"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "cope",
+        "trans": [
+            "vi.对付",
+            "应付"
+        ],
+        "pron": "[kәup]"
+    },
+    {
+        "name": "core",
+        "trans": [
+            "n.果实的心",
+            "核心"
+        ],
+        "pron": "[kɔ:]"
+    },
+    {
+        "name": "corporate",
+        "trans": [
+            "n.组织"
+        ],
+        "pron": "['kɔ:pәrit]"
+    },
+    {
+        "name": "corporation",
+        "trans": [
+            "n.公司",
+            "企业",
+            "社团"
+        ],
+        "pron": "[kɔ:pә'reiʃәn]"
+    },
+    {
+        "name": "corruption",
+        "trans": [
+            "n.腐烂；败坏"
+        ],
+        "pron": "[kә'rʌpʃәn]"
+    },
+    {
+        "name": "cottage",
+        "trans": [
+            "n.村舍",
+            "小屋"
+        ],
+        "pron": "['kɔtidʒ]"
+    },
+    {
+        "name": "cotton",
+        "trans": [
+            "n.棉花"
+        ],
+        "pron": "['kɔtn]"
+    },
+    {
+        "name": "cough",
+        "trans": [
+            "vi.n.咳嗽"
+        ],
+        "pron": "[kɔf]"
+    },
+    {
+        "name": "counsel",
+        "trans": [
+            "n.商议",
+            "忠告",
+            "律师"
+        ],
+        "pron": "['kaunsәl]"
+    },
+    {
+        "name": "counter",
+        "trans": [
+            "n.柜台",
+            "计数器"
+        ],
+        "pron": "['kauntә]"
+    },
+    {
+        "name": "counterpart",
+        "trans": [
+            "n.副本",
+            "复本",
+            "配对物"
+        ],
+        "pron": "['kauntәpa:t]"
+    },
+    {
+        "name": "countryside",
+        "trans": [
+            "n.乡下",
+            "农村"
+        ],
+        "pron": "['kʌntrisaid]"
+    },
+    {
+        "name": "coup",
+        "trans": [
+            "n. 出乎意料的成功行动，政变"
+        ],
+        "pron": "['ku:]"
+    },
+    {
+        "name": "courage",
+        "trans": [
+            "n.勇气",
+            "胆量"
+        ],
+        "pron": "['kʌridʒ]"
+    },
+    {
+        "name": "coverage",
+        "trans": [
+            "n.掩饰",
+            "隐蔽"
+        ],
+        "pron": "['kʌvәridʒ]"
+    },
+    {
+        "name": "cow",
+        "trans": [
+            "n.母牛"
+        ],
+        "pron": "[kau]"
+    },
+    {
+        "name": "crack",
+        "trans": [
+            "n.裂缝",
+            "裂纹 vi.爆裂"
+        ],
+        "pron": "[kræ k]"
+    },
+    {
+        "name": "craft",
+        "trans": [
+            "n.工艺",
+            "手艺",
+            "行业"
+        ],
+        "pron": "[kra:ft]"
+    },
+    {
+        "name": "crazy",
+        "trans": [
+            "a.疯狂的"
+        ],
+        "pron": "['kreizi]"
+    },
+    {
+        "name": "cream",
+        "trans": [
+            "n.奶油"
+        ],
+        "pron": "[kri:m]"
+    },
+    {
+        "name": "creative",
+        "trans": [
+            "a.创造性的",
+            "创作的"
+        ],
+        "pron": "[kri(:)'eitiv]"
+    },
+    {
+        "name": "crew",
+        "trans": [
+            "n.全体船员"
+        ],
+        "pron": "[kru:]"
+    },
+    {
+        "name": "cricket",
+        "trans": [
+            "n.蟋蟀；板球"
+        ],
+        "pron": "['krikit]"
+    },
+    {
+        "name": "criticize",
+        "trans": [
+            "vt.批评",
+            "评论",
+            "非难"
+        ],
+        "pron": "['kritisaiz]"
+    },
+    {
+        "name": "crop",
+        "trans": [
+            "n.农作物",
+            "庄稼"
+        ],
+        "pron": "[krɔp]"
+    },
+    {
+        "name": "crown",
+        "trans": [
+            "n.王冠"
+        ],
+        "pron": "[kraun]"
+    },
+    {
+        "name": "crucial",
+        "trans": [
+            "a. 决定性的",
+            "重要的",
+            "严厉的"
+        ],
+        "pron": "['kru:ʃiәl]"
+    },
+    {
+        "name": "cruise",
+        "trans": [
+            "vi.vt.巡航"
+        ],
+        "pron": "[kru:z]"
+    },
+    {
+        "name": "crystal",
+        "trans": [
+            "n.水晶"
+        ],
+        "pron": "['kristl]"
+    },
+    {
+        "name": "cue",
+        "trans": [
+            "n.开端",
+            "线索",
+            "发辫",
+            "长队"
+        ],
+        "pron": "[kju:]"
+    },
+    {
+        "name": "cultural",
+        "trans": [
+            "adj.文化的；文明的"
+        ],
+        "pron": "['kʌltʃәrәl]"
+    },
+    {
+        "name": "cure",
+        "trans": [
+            "vt.医治 n.治愈"
+        ],
+        "pron": "[kjuә]"
+    },
+    {
+        "name": "curious",
+        "trans": [
+            "a.好奇的",
+            "稀奇古怪的"
+        ],
+        "pron": "['kjuәriәs]"
+    },
+    {
+        "name": "curtain",
+        "trans": [
+            "n.帘",
+            "窗帘",
+            "幕(布)"
+        ],
+        "pron": "['kә:tn]"
+    },
+    {
+        "name": "cutting",
+        "trans": [
+            "n.开凿出来的公路，铁路；剪报 a.锋利的"
+        ],
+        "pron": "['kʌtiŋ]"
+    },
+    {
+        "name": "cycle",
+        "trans": [
+            "n.循环"
+        ],
+        "pron": "['saikl]"
+    },
+    {
+        "name": "dad",
+        "trans": [
+            "n.爸爸"
+        ],
+        "pron": "[dæ d]"
+    },
+    {
+        "name": "dare",
+        "trans": [
+            "vt.aux.v.敢",
+            "竟敢"
+        ],
+        "pron": "[dɛә]"
+    },
+    {
+        "name": "deadline",
+        "trans": [
+            "n. 最终期限"
+        ],
+        "pron": "['dedlain]"
+    },
+    {
+        "name": "deal",
+        "trans": [
+            "n.交易 vi.处理"
+        ],
+        "pron": "[di:l]"
+    },
+    {
+        "name": "dealer",
+        "trans": [
+            "n.商人，贩子"
+        ],
+        "pron": "['di:lә]"
+    },
+    {
+        "name": "dear",
+        "trans": [
+            "a.亲爱的 int.啊"
+        ],
+        "pron": "[diә]"
+    },
+    {
+        "name": "debut",
+        "trans": [
+            "n. 初次登台，初次露面"
+        ],
+        "pron": "['deibju:]"
+    },
+    {
+        "name": "deck",
+        "trans": [
+            "n.甲板",
+            "层面"
+        ],
+        "pron": "[dek]"
+    },
+    {
+        "name": "declaration",
+        "trans": [
+            "n.宣布",
+            "宣言",
+            "申诉"
+        ],
+        "pron": "[deklә'reiʃәn]"
+    },
+    {
+        "name": "decorate",
+        "trans": [
+            "vt.装饰"
+        ],
+        "pron": "['dekәreit]"
+    },
+    {
+        "name": "define",
+        "trans": [
+            "vt.给…下定义",
+            "限定"
+        ],
+        "pron": "[di'fain]"
+    },
+    {
+        "name": "definitely",
+        "trans": [
+            "ad.一定地",
+            "明确地"
+        ],
+        "pron": "['definitli]"
+    },
+    {
+        "name": "definition",
+        "trans": [
+            "n.定义",
+            "释义",
+            "定界"
+        ],
+        "pron": "[defi'niʃәn]"
+    },
+    {
+        "name": "delegate",
+        "trans": [
+            "n.代表",
+            "委员",
+            "特派员"
+        ],
+        "pron": "['deligeit]"
+    },
+    {
+        "name": "delegation",
+        "trans": [
+            "n.代表团"
+        ],
+        "pron": "[deli'geiʃәn]"
+    },
+    {
+        "name": "deliberate",
+        "trans": [
+            "a.深思熟虑的",
+            "审慎的"
+        ],
+        "pron": "[di'libәrit]"
+    },
+    {
+        "name": "delight",
+        "trans": [
+            "n.快乐 vt.使高兴"
+        ],
+        "pron": "[di'lait]"
+    },
+    {
+        "name": "delighted",
+        "trans": [
+            "a.愉快的，欣喜的"
+        ],
+        "pron": "[di'laitid]"
+    },
+    {
+        "name": "delivery",
+        "trans": [
+            "n.投递",
+            "交付"
+        ],
+        "pron": "[di'livәri]"
+    },
+    {
+        "name": "demonstrate",
+        "trans": [
+            "vt.说明",
+            "论证",
+            "示威"
+        ],
+        "pron": "['demәnstreit]"
+    },
+    {
+        "name": "demonstration",
+        "trans": [
+            "n.示范，示威"
+        ],
+        "pron": "[demәn'streiʃәn]"
+    },
+    {
+        "name": "deposit",
+        "trans": [
+            "vt.使沉淀",
+            "存放"
+        ],
+        "pron": "[di'pɔzit]"
+    },
+    {
+        "name": "depression",
+        "trans": [
+            "n.消沉",
+            "萧条期"
+        ],
+        "pron": "[di'preʃәn]"
+    },
+    {
+        "name": "depth",
+        "trans": [
+            "n.深度",
+            "深处"
+        ],
+        "pron": "[depθ]"
+    },
+    {
+        "name": "description",
+        "trans": [
+            "n.描述；形容"
+        ],
+        "pron": "[dis'kripʃәn]"
+    },
+    {
+        "name": "desert",
+        "trans": [
+            "n.沙漠 vt.离弃",
+            "擅离"
+        ],
+        "pron": "['dezәt, di'zә:t]"
+    },
+    {
+        "name": "deserve",
+        "trans": [
+            "vt.应受",
+            "值得"
+        ],
+        "pron": "[di'zә:v]"
+    },
+    {
+        "name": "designer",
+        "trans": [
+            "n.设计师，设计者"
+        ],
+        "pron": "[di'zainә]"
+    },
+    {
+        "name": "desperate",
+        "trans": [
+            "a.拼死的",
+            "绝望的"
+        ],
+        "pron": "['despәrit]"
+    },
+    {
+        "name": "detailed",
+        "trans": [
+            "a.详细的"
+        ],
+        "pron": "['di:teild]"
+    },
+    {
+        "name": "detective",
+        "trans": [
+            "n.侦探",
+            "密探"
+        ],
+        "pron": "[di'tektiv]"
+    },
+    {
+        "name": "determined",
+        "trans": [
+            "adj.决定性的"
+        ],
+        "pron": "[di'tә:mind]"
+    },
+    {
+        "name": "device",
+        "trans": [
+            "n.器械",
+            "装置",
+            "设计"
+        ],
+        "pron": "[di'vais]"
+    },
+    {
+        "name": "dialogue",
+        "trans": [
+            "n.对话"
+        ],
+        "pron": "['daiәlɔg]"
+    },
+    {
+        "name": "diary",
+        "trans": [
+            "n.日记",
+            "日记簿"
+        ],
+        "pron": "['daiәri]"
+    },
+    {
+        "name": "dig",
+        "trans": [
+            "vt.掘",
+            "挖"
+        ],
+        "pron": "[dig]"
+    },
+    {
+        "name": "diplomat",
+        "trans": [
+            "n.外交官"
+        ],
+        "pron": "['diplәmæ t]"
+    },
+    {
+        "name": "diplomatic",
+        "trans": [
+            "a.外交的",
+            "有策略的"
+        ],
+        "pron": "[diplә'mæ tik]"
+    },
+    {
+        "name": "dirty",
+        "trans": [
+            "a.脏的",
+            "下流的"
+        ],
+        "pron": "['dә:ti]"
+    },
+    {
+        "name": "disappear",
+        "trans": [
+            "vi.不见",
+            "失踪",
+            "消失"
+        ],
+        "pron": "[disә'piә]"
+    },
+    {
+        "name": "disappointed",
+        "trans": [
+            "adj.失望的"
+        ],
+        "pron": "[disә'pɔintid]"
+    },
+    {
+        "name": "disaster",
+        "trans": [
+            "n.灾难"
+        ],
+        "pron": "[di'za:stә]"
+    },
+    {
+        "name": "discipline",
+        "trans": [
+            "n.纪律",
+            "训练 vt.训练"
+        ],
+        "pron": "['disiplin]"
+    },
+    {
+        "name": "disclose",
+        "trans": [
+            "vt.揭开",
+            "揭发",
+            "透露"
+        ],
+        "pron": "[dis'klәuz]"
+    },
+    {
+        "name": "discount",
+        "trans": [
+            "n.折扣"
+        ],
+        "pron": "['diskaunt]"
+    },
+    {
+        "name": "discovery",
+        "trans": [
+            "n.发现",
+            "被发现的事物"
+        ],
+        "pron": "[dis'kʌvәri]"
+    },
+    {
+        "name": "dish",
+        "trans": [
+            "n.碟",
+            "盘子",
+            "菜肴"
+        ],
+        "pron": "[diʃ]"
+    },
+    {
+        "name": "distribution",
+        "trans": [
+            "n.分发",
+            "分配",
+            "分布"
+        ],
+        "pron": "[distri'bju:ʃәn]"
+    },
+    {
+        "name": "dividend",
+        "trans": [
+            "n.（股份的）红利"
+        ],
+        "pron": "['dividend]"
+    },
+    {
+        "name": "divorce",
+        "trans": [
+            "n.vi.离婚"
+        ],
+        "pron": "[di'vɔ:s]"
+    },
+    {
+        "name": "dominant",
+        "trans": [
+            "a. 占优势的",
+            "支配的"
+        ],
+        "pron": "['dɔminәnt]"
+    },
+    {
+        "name": "done",
+        "trans": [
+            "a. 完成了",
+            "好了"
+        ],
+        "pron": "[dʌn]"
+    },
+    {
+        "name": "draft",
+        "trans": [
+            "n.草稿",
+            "汇票 vt.起草"
+        ],
+        "pron": "[dra:ft]"
+    },
+    {
+        "name": "drag",
+        "trans": [
+            "vt.拖",
+            "拉",
+            "拖曳"
+        ],
+        "pron": "[dræ g]"
+    },
+    {
+        "name": "drain",
+        "trans": [
+            "vt.排水 n.耗竭"
+        ],
+        "pron": "[drein]"
+    },
+    {
+        "name": "drama",
+        "trans": [
+            "n.一出戏剧",
+            "剧本"
+        ],
+        "pron": "['dra:mә]"
+    },
+    {
+        "name": "drift",
+        "trans": [
+            "vi.漂流",
+            "漂泊 n.漂流"
+        ],
+        "pron": "[drift]"
+    },
+    {
+        "name": "drum",
+        "trans": [
+            "n.鼓"
+        ],
+        "pron": "[drʌm]"
+    },
+    {
+        "name": "dump",
+        "trans": [
+            "vt.倾倒"
+        ],
+        "pron": "[dʌmp]"
+    },
+    {
+        "name": "dust",
+        "trans": [
+            "n.灰尘"
+        ],
+        "pron": "[dʌst]"
+    },
+    {
+        "name": "eager",
+        "trans": [
+            "a.渴望的",
+            "热切的"
+        ],
+        "pron": "['i:gә]"
+    },
+    {
+        "name": "ear",
+        "trans": [
+            "n.耳朵"
+        ],
+        "pron": "[iә]"
+    },
+    {
+        "name": "earnings",
+        "trans": [
+            "n.赚得的钱"
+        ],
+        "pron": "['ә:niŋz]"
+    },
+    {
+        "name": "ease",
+        "trans": [
+            "n.容易",
+            "舒适 vt.缓和"
+        ],
+        "pron": "[i:z]"
+    },
+    {
+        "name": "easily",
+        "trans": [
+            "ad.容易地"
+        ],
+        "pron": "['i:zili]"
+    },
+    {
+        "name": "echo",
+        "trans": [
+            "n.回声",
+            "反响 vi.重复"
+        ],
+        "pron": "['ekәu]"
+    },
+    {
+        "name": "edit",
+        "trans": [
+            "vt.编辑",
+            "编纂",
+            "校订"
+        ],
+        "pron": "['edit]"
+    },
+    {
+        "name": "editorial",
+        "trans": [
+            "n.社论"
+        ],
+        "pron": "[edi'tɔ:riәl]"
+    },
+    {
+        "name": "efficient",
+        "trans": [
+            "a.效率高的"
+        ],
+        "pron": "[i'fiʃәnt]"
+    },
+    {
+        "name": "elderly",
+        "trans": [
+            "a. 过了中年的",
+            "稍老的"
+        ],
+        "pron": "['eldәli]"
+    },
+    {
+        "name": "electoral",
+        "trans": [
+            "a. 选举人的",
+            "选举的",
+            "选帝侯的"
+        ],
+        "pron": "[i'lektәrәl]"
+    },
+    {
+        "name": "electric",
+        "trans": [
+            "a.电的",
+            "电动的"
+        ],
+        "pron": "[i'lektrik]"
+    },
+    {
+        "name": "electricity",
+        "trans": [
+            "n.电",
+            "电流"
+        ],
+        "pron": "[ilek'trisiti]"
+    },
+    {
+        "name": "electronic",
+        "trans": [
+            "a.电子的"
+        ],
+        "pron": "[ilek'trɔnik]"
+    },
+    {
+        "name": "elegant",
+        "trans": [
+            "a.(举止、服饰)雅致的"
+        ],
+        "pron": "['eligәnt]"
+    },
+    {
+        "name": "eliminate",
+        "trans": [
+            "vt.消灭",
+            "消除",
+            "排除"
+        ],
+        "pron": "[i'limineit]"
+    },
+    {
+        "name": "elsewhere",
+        "trans": [
+            "ad.在别处",
+            "向别处"
+        ],
+        "pron": "[els'wɛә]"
+    },
+    {
+        "name": "embassy",
+        "trans": [
+            "n.大使馆",
+            "大使的职务"
+        ],
+        "pron": "['embәsi]"
+    },
+    {
+        "name": "emotion",
+        "trans": [
+            "n.感情",
+            "激动"
+        ],
+        "pron": "[i'mәuʃәn]"
+    },
+    {
+        "name": "emotional",
+        "trans": [
+            "a.感情的",
+            "情绪的"
+        ],
+        "pron": "[i'mәuʃәnl]"
+    },
+    {
+        "name": "emphasis",
+        "trans": [
+            "n.强调",
+            "重点",
+            "重要性"
+        ],
+        "pron": "['emfәsis]"
+    },
+    {
+        "name": "emphasize",
+        "trans": [
+            "vt.强调",
+            "着重"
+        ],
+        "pron": "['emfәsaiz]"
+    },
+    {
+        "name": "empire",
+        "trans": [
+            "n.帝国"
+        ],
+        "pron": "['empaiә]"
+    },
+    {
+        "name": "employ",
+        "trans": [
+            "vi.雇用"
+        ],
+        "pron": "[im'plɔi]"
+    },
+    {
+        "name": "employer",
+        "trans": [
+            "n.雇主"
+        ],
+        "pron": "[im'plɔiә]"
+    },
+    {
+        "name": "employment",
+        "trans": [
+            "n.雇用",
+            "职业"
+        ],
+        "pron": "[im'plɔimәnt]"
+    },
+    {
+        "name": "empty",
+        "trans": [
+            "a.空的",
+            "空洞的"
+        ],
+        "pron": "['empti]"
+    },
+    {
+        "name": "enable",
+        "trans": [
+            "vt.使能够",
+            "使可能"
+        ],
+        "pron": "[i'neibl]"
+    },
+    {
+        "name": "encounter",
+        "trans": [
+            "vt.遭遇",
+            "遇到 n.遭遇"
+        ],
+        "pron": "[in'kauntә]"
+    },
+    {
+        "name": "enemy",
+        "trans": [
+            "n.敌人"
+        ],
+        "pron": "['enimi]"
+    },
+    {
+        "name": "engage",
+        "trans": [
+            "vt.使忙于",
+            "使订婚"
+        ],
+        "pron": "[in'geidʒ]"
+    },
+    {
+        "name": "engineer",
+        "trans": [
+            "n.工程师"
+        ],
+        "pron": "[endʒi'niә]"
+    },
+    {
+        "name": "engineering",
+        "trans": [
+            "n.工程学"
+        ],
+        "pron": "[endʒi'niәriŋ]"
+    },
+    {
+        "name": "enhance",
+        "trans": [
+            "vt.提高",
+            "增加",
+            "夸张"
+        ],
+        "pron": "[in'ha:ns]"
+    },
+    {
+        "name": "enormous",
+        "trans": [
+            "a.巨大的",
+            "庞大的"
+        ],
+        "pron": "[i'nɔ:mәs]"
+    },
+    {
+        "name": "enterprise",
+        "trans": [
+            "n.企业",
+            "事业",
+            "事业心"
+        ],
+        "pron": "['entәpraiz]"
+    },
+    {
+        "name": "entertain",
+        "trans": [
+            "vt.使欢乐",
+            "招待"
+        ],
+        "pron": "[entә'tein]"
+    },
+    {
+        "name": "entertainment",
+        "trans": [
+            "n. 娱乐",
+            "款待",
+            "娱乐表演"
+        ],
+        "pron": "[entә'teinmәnt]"
+    },
+    {
+        "name": "enthusiasm",
+        "trans": [
+            "n.热情",
+            "热心",
+            "热忱"
+        ],
+        "pron": "[in'θju:ziæzәm]"
+    },
+    {
+        "name": "entirely",
+        "trans": [
+            "ad.完全地"
+        ],
+        "pron": "[in'taiәli]"
+    },
+    {
+        "name": "entitle",
+        "trans": [
+            "vt.给…权利(或资格)"
+        ],
+        "pron": "[in'taitl]"
+    },
+    {
+        "name": "entrance",
+        "trans": [
+            "n.入口",
+            "进入"
+        ],
+        "pron": "['entrәns]"
+    },
+    {
+        "name": "equity",
+        "trans": [
+            "n.公正"
+        ],
+        "pron": "['ekiti]"
+    },
+    {
+        "name": "equivalent",
+        "trans": [
+            "a.相等的",
+            "等量的"
+        ],
+        "pron": "[i'kwivәlәnt]"
+    },
+    {
+        "name": "era",
+        "trans": [
+            "n.时代",
+            "年代",
+            "纪元"
+        ],
+        "pron": "['iәrә]"
+    },
+    {
+        "name": "error",
+        "trans": [
+            "n.错误",
+            "谬误",
+            "差错"
+        ],
+        "pron": "['erә]"
+    },
+    {
+        "name": "essentially",
+        "trans": [
+            "ad.基本上，本质上"
+        ],
+        "pron": "[i'senʃәli]"
+    },
+    {
+        "name": "establishment",
+        "trans": [
+            "n.建立",
+            "设立",
+            "确立"
+        ],
+        "pron": "[is'tæ bliʃmәnt]"
+    },
+    {
+        "name": "etc.",
+        "trans": [
+            "=et cetera ad.等等；诸如此类"
+        ],
+        "pron": "[it'setrә]"
+    },
+    {
+        "name": "ethnic",
+        "trans": [
+            "a.民族特有的"
+        ],
+        "pron": "['eθnik]"
+    },
+    {
+        "name": "everywhere",
+        "trans": [
+            "ad.到处",
+            "处处"
+        ],
+        "pron": "['evriwɛә]"
+    },
+    {
+        "name": "evil",
+        "trans": [
+            "n.邪恶",
+            "祸害 a.坏的"
+        ],
+        "pron": "['i:vl]"
+    },
+    {
+        "name": "exactly",
+        "trans": [
+            "ad.的确如此"
+        ],
+        "pron": "[ig'zæ ktli]"
+    },
+    {
+        "name": "examination",
+        "trans": [
+            "n.考试",
+            "检查",
+            "细查"
+        ],
+        "pron": "[igzæ mi'neiʃәn]"
+    },
+    {
+        "name": "exception",
+        "trans": [
+            "n.例外",
+            "除外"
+        ],
+        "pron": "[ik'sepʃәn]"
+    },
+    {
+        "name": "excerpt",
+        "trans": [
+            "vt.摘录"
+        ],
+        "pron": "['eksә:pt]"
+    },
+    {
+        "name": "excess",
+        "trans": [
+            "n.超越",
+            "过量",
+            "过度"
+        ],
+        "pron": "[ik'ses, 'ekses]"
+    },
+    {
+        "name": "exchange rate",
+        "trans": [
+            "书信往来"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "exciting",
+        "trans": [
+            "a.令人兴奋的"
+        ],
+        "pron": "[ik'saitiŋ]"
+    },
+    {
+        "name": "excuse",
+        "trans": [
+            "vt.原谅",
+            "免除 n.借口"
+        ],
+        "pron": "[iks'kju:z, iks'kju:s]"
+    },
+    {
+        "name": "execute",
+        "trans": [
+            "vt.将…处死",
+            "实施"
+        ],
+        "pron": "['eksikju:t]"
+    },
+    {
+        "name": "exhaust",
+        "trans": [
+            "vt.使筋疲力尽",
+            "用尽"
+        ],
+        "pron": "[ig'zɔ:st]"
+    },
+    {
+        "name": "exhibition",
+        "trans": [
+            "n.展览",
+            "陈列",
+            "展览会"
+        ],
+        "pron": "[eksi'biʃәn]"
+    },
+    {
+        "name": "exile",
+        "trans": [
+            "vt.流放 n.被流放者"
+        ],
+        "pron": "['eksail]"
+    },
+    {
+        "name": "existing",
+        "trans": [
+            "a.现存的，目前的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "expand",
+        "trans": [
+            "vt.扩大",
+            "使膨胀"
+        ],
+        "pron": "[iks'pæ nd]"
+    },
+    {
+        "name": "expectation",
+        "trans": [
+            "n.期待",
+            "期望",
+            "预期"
+        ],
+        "pron": "[ekspek'teiʃәn]"
+    },
+    {
+        "name": "expense",
+        "trans": [
+            "n.花费",
+            "消费",
+            "费用"
+        ],
+        "pron": "[iks'pens]"
+    },
+    {
+        "name": "experiment",
+        "trans": [
+            "n.实验",
+            "试验"
+        ],
+        "pron": "[iks'perimәnt]"
+    },
+    {
+        "name": "explanation",
+        "trans": [
+            "n.解释",
+            "说明",
+            "辩解"
+        ],
+        "pron": "[eksplә'neiʃәn]"
+    },
+    {
+        "name": "explode",
+        "trans": [
+            "vt.使爆炸 vi.爆炸"
+        ],
+        "pron": "[iks'plәud]"
+    },
+    {
+        "name": "exploit",
+        "trans": [
+            "vt.剥削",
+            "利用",
+            "开拓"
+        ],
+        "pron": "['eksplɔit, iks'plɔit]"
+    },
+    {
+        "name": "explore",
+        "trans": [
+            "vt.vi.探险",
+            "探索"
+        ],
+        "pron": "[iks'plɔ:]"
+    },
+    {
+        "name": "explosion",
+        "trans": [
+            "n.爆炸"
+        ],
+        "pron": "[iks'plәuʒәn]"
+    },
+    {
+        "name": "expose",
+        "trans": [
+            "vt.使暴露",
+            "揭露"
+        ],
+        "pron": "[iks'pәuz]"
+    },
+    {
+        "name": "exposure",
+        "trans": [
+            "n.暴露",
+            "揭露",
+            "曝光"
+        ],
+        "pron": "[iks'pәuʒә]"
+    },
+    {
+        "name": "expression",
+        "trans": [
+            "n.词句",
+            "表达",
+            "表情"
+        ],
+        "pron": "[iks'preʃәn]"
+    },
+    {
+        "name": "extensive",
+        "trans": [
+            "a.广阔的",
+            "广泛的"
+        ],
+        "pron": "[iks'tensiv]"
+    },
+    {
+        "name": "extent",
+        "trans": [
+            "n.广度",
+            "范围",
+            "程度"
+        ],
+        "pron": "[iks'tent]"
+    },
+    {
+        "name": "extraordinary",
+        "trans": [
+            "a.非同寻常的",
+            "特别的"
+        ],
+        "pron": "[iks'trɔ:dinәri]"
+    },
+    {
+        "name": "extreme",
+        "trans": [
+            "a.极度的",
+            "尽头的"
+        ],
+        "pron": "[iks'tri:m]"
+    },
+    {
+        "name": "fabric",
+        "trans": [
+            "n.织物",
+            "纺织品",
+            "结构"
+        ],
+        "pron": "['fæ brik]"
+    },
+    {
+        "name": "faction",
+        "trans": [
+            "n.派系；党内斗争"
+        ],
+        "pron": "['fæ kʃәn]"
+    },
+    {
+        "name": "fade",
+        "trans": [
+            "vi.褪色",
+            "逐渐消失"
+        ],
+        "pron": "[feid]"
+    },
+    {
+        "name": "fairly",
+        "trans": [
+            "ad.相当",
+            "公平地"
+        ],
+        "pron": "['fɛәli]"
+    },
+    {
+        "name": "faith",
+        "trans": [
+            "n.信任",
+            "信心",
+            "信仰"
+        ],
+        "pron": "[feiθ]"
+    },
+    {
+        "name": "false",
+        "trans": [
+            "a.不真实的",
+            "伪造的"
+        ],
+        "pron": "[fɔ:ls]"
+    },
+    {
+        "name": "familiar",
+        "trans": [
+            "a.熟悉的"
+        ],
+        "pron": "[fә'miljә]"
+    },
+    {
+        "name": "fancy",
+        "trans": [
+            "n.想象力",
+            "设想",
+            "爱好"
+        ],
+        "pron": "['fæ nsi]"
+    },
+    {
+        "name": "fantasy",
+        "trans": [
+            "n. 幻想",
+            "白日梦"
+        ],
+        "pron": "['fæ ntәsi]"
+    },
+    {
+        "name": "fare",
+        "trans": [
+            "n.车费",
+            "船费",
+            "票价"
+        ],
+        "pron": "[fɛә]"
+    },
+    {
+        "name": "fate",
+        "trans": [
+            "n.命运",
+            "天数"
+        ],
+        "pron": "[feit]"
+    },
+    {
+        "name": "fault",
+        "trans": [
+            "n.缺点",
+            "过失",
+            "故障"
+        ],
+        "pron": "[fɔ:lt]"
+    },
+    {
+        "name": "federation",
+        "trans": [
+            "n.联邦",
+            "联合",
+            "联盟"
+        ],
+        "pron": "[fedә'reiʃәn]"
+    },
+    {
+        "name": "fence",
+        "trans": [
+            "n.栅栏"
+        ],
+        "pron": "[fens]"
+    },
+    {
+        "name": "fierce",
+        "trans": [
+            "a.凶猛的",
+            "狂热的"
+        ],
+        "pron": "[fiәs]"
+    },
+    {
+        "name": "Fighter",
+        "trans": [
+            "n.战斗者"
+        ],
+        "pron": "['faitә]"
+    },
+    {
+        "name": "Fine",
+        "trans": [
+            "a.美好的",
+            "纤细的"
+        ],
+        "pron": "[fain]"
+    },
+    {
+        "name": "fiscal",
+        "trans": [
+            "a.财政的"
+        ],
+        "pron": "['fiskәl]"
+    },
+    {
+        "name": "fishing",
+        "trans": [
+            "n.钓鱼"
+        ],
+        "pron": "['fiʃiŋ]"
+    },
+    {
+        "name": "fit",
+        "trans": [
+            "vt.vi.适合",
+            "安装"
+        ],
+        "pron": "[fit]"
+    },
+    {
+        "name": "fix",
+        "trans": [
+            "vt.使固定",
+            "修理"
+        ],
+        "pron": "[fiks]"
+    },
+    {
+        "name": "fixed",
+        "trans": [
+            "adj.固定的"
+        ],
+        "pron": "[fikst]"
+    },
+    {
+        "name": "flag",
+        "trans": [
+            "n.旗帜",
+            "标志"
+        ],
+        "pron": "[flæ g]"
+    },
+    {
+        "name": "flash",
+        "trans": [
+            "n.闪光 vi.闪",
+            "闪烁"
+        ],
+        "pron": "[flæ ʃ]"
+    },
+    {
+        "name": "flavour",
+        "trans": [
+            "n.味，滋味"
+        ],
+        "pron": "['fleivә]"
+    },
+    {
+        "name": "flee",
+        "trans": [
+            "vi.逃走 vt.逃避"
+        ],
+        "pron": "[fli:]"
+    },
+    {
+        "name": "fleet",
+        "trans": [
+            "n.舰队",
+            "机群"
+        ],
+        "pron": "[fli:t]"
+    },
+    {
+        "name": "flexible",
+        "trans": [
+            "a.易弯曲的",
+            "灵活的"
+        ],
+        "pron": "['fleksәbl]"
+    },
+    {
+        "name": "float",
+        "trans": [
+            "vi.漂浮 vt.使漂浮"
+        ],
+        "pron": "[flәut]"
+    },
+    {
+        "name": "flood",
+        "trans": [
+            "n.洪水"
+        ],
+        "pron": "[flʌd]"
+    },
+    {
+        "name": "fold",
+        "trans": [
+            "vt.折叠",
+            "合拢 n.褶"
+        ],
+        "pron": "[fәuld]"
+    },
+    {
+        "name": "folk",
+        "trans": [
+            "n.人们",
+            "家属",
+            "亲属"
+        ],
+        "pron": "[fәulk]"
+    },
+    {
+        "name": "fool",
+        "trans": [
+            "n.傻子 vt.欺骗",
+            "愚弄"
+        ],
+        "pron": "[fu:l]"
+    },
+    {
+        "name": "forecast",
+        "trans": [
+            "n.预测",
+            "预报 vt.预示"
+        ],
+        "pron": "['fɔ:ka:st]"
+    },
+    {
+        "name": "foreigner",
+        "trans": [
+            "n.外国人"
+        ],
+        "pron": "['fɔrinә]"
+    },
+    {
+        "name": "forest",
+        "trans": [
+            "n.森林"
+        ],
+        "pron": "['fɔrist]"
+    },
+    {
+        "name": "form",
+        "trans": [
+            "n.形式",
+            "形状 vt.形成"
+        ],
+        "pron": "[fɔ:m]"
+    },
+    {
+        "name": "formula",
+        "trans": [
+            "n.公式"
+        ],
+        "pron": "['fɔ:mjulә]"
+    },
+    {
+        "name": "forth",
+        "trans": [
+            "ad.向前",
+            "向外"
+        ],
+        "pron": "[fɔ:θ]"
+    },
+    {
+        "name": "fortune",
+        "trans": [
+            "n.命运",
+            "运气",
+            "财产"
+        ],
+        "pron": "['fɔ:tʃәn]"
+    },
+    {
+        "name": "foundation",
+        "trans": [
+            "n.基础",
+            "地基",
+            "基金"
+        ],
+        "pron": "[faun'deiʃәn]"
+    },
+    {
+        "name": "frame",
+        "trans": [
+            "n.框架",
+            "框子"
+        ],
+        "pron": "[freim]"
+    },
+    {
+        "name": "fraud",
+        "trans": [
+            "n.骗子",
+            "欺骗",
+            "欺诈",
+            "诡计"
+        ],
+        "pron": "[frɔ:d]"
+    },
+    {
+        "name": "freeze",
+        "trans": [
+            "vi.冻",
+            "结冻 vt.使结冰"
+        ],
+        "pron": "[fri:z]"
+    },
+    {
+        "name": "friendly",
+        "trans": [
+            "a.友好的"
+        ],
+        "pron": "['frendli]"
+    },
+    {
+        "name": "friendship",
+        "trans": [
+            "n.友谊",
+            "友好"
+        ],
+        "pron": "['frendʃip]"
+    },
+    {
+        "name": "frustrate",
+        "trans": [
+            "vt.挫败",
+            "使无效"
+        ],
+        "pron": "[frʌs'treit]"
+    },
+    {
+        "name": "fry",
+        "trans": [
+            "vt.油煎",
+            "油炸",
+            "油炒"
+        ],
+        "pron": "[frai]"
+    },
+    {
+        "name": "fulfil",
+        "trans": [
+            "vt.履行",
+            "满足",
+            "完成"
+        ],
+        "pron": "[ful'fil]"
+    },
+    {
+        "name": "fundamental",
+        "trans": [
+            "a.基础的",
+            "基本的"
+        ],
+        "pron": "[fʌndә'mentl]"
+    },
+    {
+        "name": "funny",
+        "trans": [
+            "a.好笑的",
+            "有趣的",
+            "滑稽的"
+        ],
+        "pron": "['fʌni]"
+    },
+    {
+        "name": "furniture",
+        "trans": [
+            "n.家具",
+            "装置",
+            "设备"
+        ],
+        "pron": "['fә:nitʃә]"
+    },
+    {
+        "name": "gallery",
+        "trans": [
+            "n.长廊",
+            "游廊",
+            "画廊"
+        ],
+        "pron": "['gæ lәri]"
+    },
+    {
+        "name": "gamble",
+        "trans": [
+            "n.vt.赌博"
+        ],
+        "pron": "['gæ mbl]"
+    },
+    {
+        "name": "gang",
+        "trans": [
+            "n.一帮",
+            "一伙"
+        ],
+        "pron": "[gæŋ]"
+    },
+    {
+        "name": "gap",
+        "trans": [
+            "n.缺口",
+            "间隔",
+            "差距"
+        ],
+        "pron": "[gæ p]"
+    },
+    {
+        "name": "gate",
+        "trans": [
+            "n.大门"
+        ],
+        "pron": "[geit]"
+    },
+    {
+        "name": "gear",
+        "trans": [
+            "n.齿轮",
+            "传动装置"
+        ],
+        "pron": "[giә]"
+    },
+    {
+        "name": "gene",
+        "trans": [
+            "n. 基因",
+            "因子"
+        ],
+        "pron": "[dʒi:n]"
+    },
+    {
+        "name": "general election",
+        "trans": [
+            "大选",
+            "普选"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "generate",
+        "trans": [
+            "vt.发生",
+            "引起",
+            "生殖"
+        ],
+        "pron": "['dʒenәreit]"
+    },
+    {
+        "name": "generous",
+        "trans": [
+            "a.慷慨的",
+            "宽厚的"
+        ],
+        "pron": "['dʒenәrәs]"
+    },
+    {
+        "name": "gentle",
+        "trans": [
+            "a.和蔼的",
+            "轻柔的"
+        ],
+        "pron": "['dʒentl]"
+    },
+    {
+        "name": "gentleman",
+        "trans": [
+            "n.绅士",
+            "有教养的人"
+        ],
+        "pron": "['dʒentlmәn]"
+    },
+    {
+        "name": "genuine",
+        "trans": [
+            "a.真的",
+            "真正的"
+        ],
+        "pron": "['dʒenjuin]"
+    },
+    {
+        "name": "gesture",
+        "trans": [
+            "n.姿势",
+            "手势",
+            "姿态"
+        ],
+        "pron": "['dʒestʃә]"
+    },
+    {
+        "name": "giant",
+        "trans": [
+            "n.巨人",
+            "巨物"
+        ],
+        "pron": "['dʒaiәnt]"
+    },
+    {
+        "name": "gift",
+        "trans": [
+            "n.礼物",
+            "赠品",
+            "天赋"
+        ],
+        "pron": "[gift]"
+    },
+    {
+        "name": "given",
+        "trans": [
+            "a. 赠予的",
+            "沉溺的",
+            "特定的",
+            "假设的"
+        ],
+        "pron": "['givn]"
+    },
+    {
+        "name": "glad",
+        "trans": [
+            "a.高兴的",
+            "乐意的"
+        ],
+        "pron": "[glæ d]"
+    },
+    {
+        "name": "glance",
+        "trans": [
+            "vi.看一下 n.一瞥"
+        ],
+        "pron": "[gla:ns]"
+    },
+    {
+        "name": "global",
+        "trans": [
+            "a.球面的",
+            "全球的"
+        ],
+        "pron": "['glәubәl]"
+    },
+    {
+        "name": "golden",
+        "trans": [
+            "a.金色的",
+            "可贵的"
+        ],
+        "pron": "['gәuldәn]"
+    },
+    {
+        "name": "golf",
+        "trans": [
+            "n. 高尔夫球"
+        ],
+        "pron": "[gɔlf]"
+    },
+    {
+        "name": "govern",
+        "trans": [
+            "vt.统治",
+            "治理",
+            "支配"
+        ],
+        "pron": "['gʌvәn]"
+    },
+    {
+        "name": "grab",
+        "trans": [
+            "vt.vi.攫取",
+            "抓取"
+        ],
+        "pron": "[græ b]"
+    },
+    {
+        "name": "grade",
+        "trans": [
+            "vt.给…分等级 n.等级"
+        ],
+        "pron": "[greid]"
+    },
+    {
+        "name": "gradual",
+        "trans": [
+            "a.逐渐的",
+            "渐进的"
+        ],
+        "pron": "['græ djuәl]"
+    },
+    {
+        "name": "graduate",
+        "trans": [
+            "n.大学毕业生 vi.毕业"
+        ],
+        "pron": "['græ djueit]"
+    },
+    {
+        "name": "grain",
+        "trans": [
+            "n.谷物",
+            "谷粒",
+            "颗粒"
+        ],
+        "pron": "['grein]"
+    },
+    {
+        "name": "grass",
+        "trans": [
+            "n.草",
+            "草地"
+        ],
+        "pron": "[gra:s]"
+    },
+    {
+        "name": "grave",
+        "trans": [
+            "n.坟墓 a.严重的"
+        ],
+        "pron": "[greiv]"
+    },
+    {
+        "name": "grip",
+        "trans": [
+            "vt.握紧",
+            "抓牢 n.紧握"
+        ],
+        "pron": "[grip]"
+    },
+    {
+        "name": "gross",
+        "trans": [
+            "a.总的",
+            "严重的"
+        ],
+        "pron": "[grәus]"
+    },
+    {
+        "name": "guerrilla",
+        "trans": [
+            "n.游击队员"
+        ],
+        "pron": "[^ ә'rilә]"
+    },
+    {
+        "name": "guilty",
+        "trans": [
+            "a.内疚的",
+            "有罪的"
+        ],
+        "pron": "['gilti]"
+    },
+    {
+        "name": "guitar",
+        "trans": [
+            "n. 吉他",
+            "六弦琴"
+        ],
+        "pron": "[gi'ta:]"
+    },
+    {
+        "name": "habit",
+        "trans": [
+            "n.习惯",
+            "习性"
+        ],
+        "pron": "['hæ bit]"
+    },
+    {
+        "name": "hall",
+        "trans": [
+            "n.大厅",
+            "会堂"
+        ],
+        "pron": "[hɔ:l]"
+    },
+    {
+        "name": "halt",
+        "trans": [
+            "vi.停止",
+            "立定 n.停住"
+        ],
+        "pron": "[hɔ:lt]"
+    },
+    {
+        "name": "harass",
+        "trans": [
+            "vt.骚扰"
+        ],
+        "pron": "['hæ rәs]"
+    },
+    {
+        "name": "harbour",
+        "trans": [
+            "n.港"
+        ],
+        "pron": "['ha:bә]"
+    },
+    {
+        "name": "harm",
+        "trans": [
+            "n.伤害",
+            "损害 vt.损害"
+        ],
+        "pron": "[ha:m]"
+    },
+    {
+        "name": "hat",
+        "trans": [
+            "n.帽子"
+        ],
+        "pron": "[hæ t]"
+    },
+    {
+        "name": "hate",
+        "trans": [
+            "vt.憎恨",
+            "不喜欢"
+        ],
+        "pron": "[heit]"
+    },
+    {
+        "name": "headline",
+        "trans": [
+            "n.大字标题",
+            "新闻提要"
+        ],
+        "pron": "['hedlain]"
+    },
+    {
+        "name": "headquarters",
+        "trans": [
+            "n.司令部",
+            "总部"
+        ],
+        "pron": "['hed'kwɔ:tәz]"
+    },
+    {
+        "name": "heal",
+        "trans": [
+            "vt.治愈",
+            "使和解"
+        ],
+        "pron": "[hi:l]"
+    },
+    {
+        "name": "healthy",
+        "trans": [
+            "a.健康的",
+            "有益健康的"
+        ],
+        "pron": "['helθi]"
+    },
+    {
+        "name": "hearing",
+        "trans": [
+            "n. 听",
+            "听觉"
+        ],
+        "pron": "['hiәriŋ]"
+    },
+    {
+        "name": "heaven",
+        "trans": [
+            "n.天堂"
+        ],
+        "pron": "['hevn]"
+    },
+    {
+        "name": "height",
+        "trans": [
+            "n.高",
+            "高度",
+            "高处"
+        ],
+        "pron": "[hait]"
+    },
+    {
+        "name": "helicopter",
+        "trans": [
+            "n.直升机"
+        ],
+        "pron": "['helikɔptә]"
+    },
+    {
+        "name": "hell",
+        "trans": [
+            "n.地狱"
+        ],
+        "pron": "[hel]"
+    },
+    {
+        "name": "he'll",
+        "trans": [
+            "n. 他 将"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "hello",
+        "trans": [
+            "int.喂"
+        ],
+        "pron": "['hә'lәu]"
+    },
+    {
+        "name": "hero",
+        "trans": [
+            "n.英雄",
+            "勇士",
+            "男主角"
+        ],
+        "pron": "['hiәrәu]"
+    },
+    {
+        "name": "hi",
+        "trans": [
+            "ini.嗨(表示问候等)"
+        ],
+        "pron": "[hai]"
+    },
+    {
+        "name": "hide",
+        "trans": [
+            "vt.把…藏起来",
+            "隐瞒"
+        ],
+        "pron": "[haid]"
+    },
+    {
+        "name": "highlight",
+        "trans": [
+            "n. 突出",
+            "精彩场面 vt. 加亮",
+            "使显著"
+        ],
+        "pron": "['hailait]"
+    },
+    {
+        "name": "hill",
+        "trans": [
+            "n.小山",
+            "山岗",
+            "丘陵"
+        ],
+        "pron": "[hil]"
+    },
+    {
+        "name": "hint",
+        "trans": [
+            "n.暗示"
+        ],
+        "pron": "[hint]"
+    },
+    {
+        "name": "hip",
+        "trans": [
+            "n. 臀",
+            "蔷薇果",
+            "忧郁"
+        ],
+        "pron": "[hip]"
+    },
+    {
+        "name": "hire",
+        "trans": [
+            "vt.雇用"
+        ],
+        "pron": "['haiә]"
+    },
+    {
+        "name": "historic",
+        "trans": [
+            "a.历史上有名的"
+        ],
+        "pron": "[his'tɔrik]"
+    },
+    {
+        "name": "historical",
+        "trans": [
+            "a.历史的",
+            "有关历史的"
+        ],
+        "pron": "[his'tɔrikәl]"
+    },
+    {
+        "name": "holy",
+        "trans": [
+            "a.神圣的",
+            "圣洁的"
+        ],
+        "pron": "['hәuli]"
+    },
+    {
+        "name": "homeless",
+        "trans": [
+            "a.无家可归的"
+        ],
+        "pron": "[hәumlis]"
+    },
+    {
+        "name": "homosexual",
+        "trans": [
+            "n.&a.同性恋的，同性恋 者"
+        ],
+        "pron": "[7hәumәu'seksjuәl]"
+    },
+    {
+        "name": "honest",
+        "trans": [
+            "a.诚实的",
+            "可敬的"
+        ],
+        "pron": "['ɔnist]"
+    },
+    {
+        "name": "honour",
+        "trans": [
+            "n.光荣"
+        ],
+        "pron": "['ɔnә]"
+    },
+    {
+        "name": "hook",
+        "trans": [
+            "n.钩",
+            "挂钩 vt.钩住"
+        ],
+        "pron": "[huk]"
+    },
+    {
+        "name": "horror",
+        "trans": [
+            "n.恐怖",
+            "战栗",
+            "憎恶"
+        ],
+        "pron": "['hɔrә]"
+    },
+    {
+        "name": "household",
+        "trans": [
+            "n.家庭",
+            "家务"
+        ],
+        "pron": "['haushәuld]"
+    },
+    {
+        "name": "humour",
+        "trans": [
+            "v. 纵容，迁就"
+        ],
+        "pron": "['hju:mә]"
+    },
+    {
+        "name": "hunt",
+        "trans": [
+            "n.vt.打猎",
+            "搜寻"
+        ],
+        "pron": "[hʌnt]"
+    },
+    {
+        "name": "hunter",
+        "trans": [
+            "n.搜寻者"
+        ],
+        "pron": "['hʌntә]"
+    },
+    {
+        "name": "identity",
+        "trans": [
+            "n.身分",
+            "相同 vt.确定身份"
+        ],
+        "pron": "[ai'dentiti]"
+    },
+    {
+        "name": "illegal",
+        "trans": [
+            "a.非法的"
+        ],
+        "pron": "[i'li:gәl]"
+    },
+    {
+        "name": "illness",
+        "trans": [
+            "n.疾病"
+        ],
+        "pron": "['ilnis]"
+    },
+    {
+        "name": "illustrate",
+        "trans": [
+            "vt.(用图等)说明"
+        ],
+        "pron": "['ilәstreit]"
+    },
+    {
+        "name": "imagination",
+        "trans": [
+            "n.想象",
+            "想象力",
+            "空想"
+        ],
+        "pron": "[imæ dʒi'neiʃәn]"
+    },
+    {
+        "name": "immigrant",
+        "trans": [
+            "n.移民 a.移民的"
+        ],
+        "pron": "['imigrәnt]"
+    },
+    {
+        "name": "immigration",
+        "trans": [
+            "n.移入，移民"
+        ],
+        "pron": "[imi'greiʃәn]"
+    },
+    {
+        "name": "immune",
+        "trans": [
+            "a.免疫的",
+            "免除的",
+            "不受影响的"
+        ],
+        "pron": "[i'mjun]"
+    },
+    {
+        "name": "implement",
+        "trans": [
+            "n.工具 vt. 实现",
+            "使生效",
+            "执行"
+        ],
+        "pron": "['implimәnt]"
+    },
+    {
+        "name": "implication",
+        "trans": [
+            "n.含义",
+            "暗示",
+            "暗指"
+        ],
+        "pron": "[impli'keiʃәn]"
+    },
+    {
+        "name": "imply",
+        "trans": [
+            "vt.暗示",
+            "意指"
+        ],
+        "pron": "[im'plai]"
+    },
+    {
+        "name": "impress",
+        "trans": [
+            "vt.给…深刻印象"
+        ],
+        "pron": "[im'pres, 'impres]"
+    },
+    {
+        "name": "impression",
+        "trans": [
+            "n.印象",
+            "印记"
+        ],
+        "pron": "[im'preʃәn]"
+    },
+    {
+        "name": "impressive",
+        "trans": [
+            "a.给人印象深刻的"
+        ],
+        "pron": "[im'presiv]"
+    },
+    {
+        "name": "improvement",
+        "trans": [
+            "n.改进",
+            "提高"
+        ],
+        "pron": "[im'pru:vmәnt]"
+    },
+    {
+        "name": "inch",
+        "trans": [
+            "n.英寸"
+        ],
+        "pron": "[intʃ]"
+    },
+    {
+        "name": "incredible",
+        "trans": [
+            "a.难以置信的",
+            "惊人的"
+        ],
+        "pron": "[in'kredәbl]"
+    },
+    {
+        "name": "index",
+        "trans": [
+            "n.索引",
+            "指数",
+            "指标"
+        ],
+        "pron": "['indeks]"
+    },
+    {
+        "name": "inevitable",
+        "trans": [
+            "a.不可避免的",
+            "必然的"
+        ],
+        "pron": "[in'evitәbl]"
+    },
+    {
+        "name": "infect",
+        "trans": [
+            "vt.传染",
+            "感染"
+        ],
+        "pron": "[in'fekt]"
+    },
+    {
+        "name": "infection",
+        "trans": [
+            "n.感染"
+        ],
+        "pron": "[in'fekʃәn]"
+    },
+    {
+        "name": "inform",
+        "trans": [
+            "vt.通知",
+            "向…报告"
+        ],
+        "pron": "[in'fɔ:m]"
+    },
+    {
+        "name": "ingredient",
+        "trans": [
+            "n.配料",
+            "成分"
+        ],
+        "pron": "[in'gri:djәnt]"
+    },
+    {
+        "name": "Initial",
+        "trans": [
+            "a.最初的"
+        ],
+        "pron": "[i'niʃәl]"
+    },
+    {
+        "name": "initially",
+        "trans": [
+            "ad.最初，开始"
+        ],
+        "pron": "[i'niʃәli]"
+    },
+    {
+        "name": "initiative",
+        "trans": [
+            "a.创始的",
+            "自发的 n.第一步"
+        ],
+        "pron": "[i'niʃiәtiv]"
+    },
+    {
+        "name": "injured",
+        "trans": [
+            "a.受伤的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "inner",
+        "trans": [
+            "a.内部的",
+            "内心的"
+        ],
+        "pron": "['inә]"
+    },
+    {
+        "name": "innocent",
+        "trans": [
+            "a.清白的",
+            "幼稚的"
+        ],
+        "pron": "['inәsnt]"
+    },
+    {
+        "name": "inquiry",
+        "trans": [
+            "n.询问",
+            "打听",
+            "调查"
+        ],
+        "pron": "[in'kwaiәri]"
+    },
+    {
+        "name": "inspect",
+        "trans": [
+            "vt.检查",
+            "审查",
+            "检阅"
+        ],
+        "pron": "[in'spekt]"
+    },
+    {
+        "name": "inspector",
+        "trans": [
+            "n.视察者"
+        ],
+        "pron": "[in'spektә]"
+    },
+    {
+        "name": "install",
+        "trans": [
+            "vt.安装",
+            "设置"
+        ],
+        "pron": "[in'stɔ:l]"
+    },
+    {
+        "name": "instant",
+        "trans": [
+            "n.瞬间 a.立即的"
+        ],
+        "pron": "['instәnt]"
+    },
+    {
+        "name": "instruct",
+        "trans": [
+            "vt.教",
+            "指示",
+            "通知"
+        ],
+        "pron": "[in'strʌkt]"
+    },
+    {
+        "name": "instrument",
+        "trans": [
+            "n.仪器",
+            "工具",
+            "乐器"
+        ],
+        "pron": "['instrumәnt]"
+    },
+    {
+        "name": "integrate",
+        "trans": [
+            "vt.使成整体",
+            "综合"
+        ],
+        "pron": "['intigreit]"
+    },
+    {
+        "name": "intellectual",
+        "trans": [
+            "n.知识分子 a.智力的"
+        ],
+        "pron": "[inti'lektjuәl]"
+    },
+    {
+        "name": "intelligence",
+        "trans": [
+            "n.智力",
+            "理解力",
+            "情报"
+        ],
+        "pron": "[in'telidʒәns]"
+    },
+    {
+        "name": "intelligent",
+        "trans": [
+            "a.聪明的",
+            "理智的"
+        ],
+        "pron": "[in'telidʒәnt]"
+    },
+    {
+        "name": "intense",
+        "trans": [
+            "a.强烈的",
+            "紧张的"
+        ],
+        "pron": "[in'tens]"
+    },
+    {
+        "name": "intention",
+        "trans": [
+            "n.意图",
+            "目的"
+        ],
+        "pron": "[in'tenʃәn]"
+    },
+    {
+        "name": "interesting",
+        "trans": [
+            "a.有趣的"
+        ],
+        "pron": "['intristiŋ]"
+    },
+    {
+        "name": "interim",
+        "trans": [
+            "a.中间的",
+            "暂时的",
+            "间歇的"
+        ],
+        "pron": "['intәrim]"
+    },
+    {
+        "name": "interior",
+        "trans": [
+            "a.内的",
+            "内地的 n.内部"
+        ],
+        "pron": "[in'tiәriә]"
+    },
+    {
+        "name": "internal",
+        "trans": [
+            "a.内的",
+            "国内的"
+        ],
+        "pron": "[in'tә:nl]"
+    },
+    {
+        "name": "invasion",
+        "trans": [
+            "n.入侵",
+            "侵略"
+        ],
+        "pron": "[in'veiʒәn]"
+    },
+    {
+        "name": "invest",
+        "trans": [
+            "vt.投资",
+            "投入"
+        ],
+        "pron": "[in'vest]"
+    },
+    {
+        "name": "invitation",
+        "trans": [
+            "n.邀请",
+            "招待",
+            "请柬"
+        ],
+        "pron": "[invi'teiʃәn]"
+    },
+    {
+        "name": "involvement",
+        "trans": [
+            "n. 卷入",
+            "牵连",
+            "连累[in",
+            "with];麻 烦;财政困难"
+        ],
+        "pron": "[in'vClvmәnt]"
+    },
+    {
+        "name": "iron",
+        "trans": [
+            "n.铁",
+            "熨斗 vt.烫(衣)"
+        ],
+        "pron": "['aiәn]"
+    },
+    {
+        "name": "Islam",
+        "trans": [
+            "n.伊斯兰教；伊斯兰教信徒；伊斯兰世界"
+        ],
+        "pron": "['izla:m]"
+    },
+    {
+        "name": "Islamic",
+        "trans": [
+            "a.伊斯兰教的，伊斯兰的"
+        ],
+        "pron": "[iz'læ mik, is'l-]"
+    },
+    {
+        "name": "it'll",
+        "trans": [
+            "n. 它 将"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "jacket",
+        "trans": [
+            "n.短上衣",
+            "茄克衫"
+        ],
+        "pron": "['dʒæ kit]"
+    },
+    {
+        "name": "jail",
+        "trans": [
+            "n.监狱 vi.监禁"
+        ],
+        "pron": "[dʒeil]"
+    },
+    {
+        "name": "jazz",
+        "trans": [
+            "n.爵士音乐",
+            "爵士舞曲"
+        ],
+        "pron": "[dʒæ z]"
+    },
+    {
+        "name": "jersey",
+        "trans": [
+            "n. 运动衫"
+        ],
+        "pron": "['dʒ:zI]"
+    },
+    {
+        "name": "jet",
+        "trans": [
+            "n.喷气式飞机"
+        ],
+        "pron": "[dʒet]"
+    },
+    {
+        "name": "Jew",
+        "trans": [
+            "n.犹太人"
+        ],
+        "pron": "[dʒu:]"
+    },
+    {
+        "name": "joke",
+        "trans": [
+            "n.笑话 vi.开玩笑"
+        ],
+        "pron": "[dʒәuk]"
+    },
+    {
+        "name": "journey",
+        "trans": [
+            "n.旅行",
+            "旅程"
+        ],
+        "pron": "['dʒә:ni]"
+    },
+    {
+        "name": "joy",
+        "trans": [
+            "n.欢乐",
+            "喜悦",
+            "乐事"
+        ],
+        "pron": "[dʒɔi]"
+    },
+    {
+        "name": "judgment",
+        "trans": [
+            "n.审判；判决"
+        ],
+        "pron": "['dʒʌdʒmәnt]"
+    },
+    {
+        "name": "juice",
+        "trans": [
+            "n.(水果等)汁",
+            "液"
+        ],
+        "pron": "[dʒu:s]"
+    },
+    {
+        "name": "junior",
+        "trans": [
+            "a.年少的",
+            "地位较低的 n.晚辈"
+        ],
+        "pron": "['dʒu:njә]"
+    },
+    {
+        "name": "jury",
+        "trans": [
+            "n.陪审团",
+            "评奖团"
+        ],
+        "pron": "['dʒuәri]"
+    },
+    {
+        "name": "justify",
+        "trans": [
+            "vt.证明…是正当的"
+        ],
+        "pron": "['dʒʌstifai]"
+    },
+    {
+        "name": "keen",
+        "trans": [
+            "a.热心的",
+            "激烈的"
+        ],
+        "pron": "[ki:n]"
+    },
+    {
+        "name": "killer",
+        "trans": [
+            "n.杀人者，杀人犯，杀手；屠杀者"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "killing",
+        "trans": [
+            "n. 谋杀",
+            "杀戮"
+        ],
+        "pron": "['kiliŋ]"
+    },
+    {
+        "name": "kilometre",
+        "trans": [
+            "n.千米，公里"
+        ],
+        "pron": "[kilә'mi:tә]"
+    },
+    {
+        "name": "kiss",
+        "trans": [
+            "n.&v.吻，接吻"
+        ],
+        "pron": "[kis]"
+    },
+    {
+        "name": "knee",
+        "trans": [
+            "n.膝，膝盖"
+        ],
+        "pron": "[ni:]"
+    },
+    {
+        "name": "knife",
+        "trans": [
+            "n.小刀，餐刀 v.用刀刺(切)"
+        ],
+        "pron": "[naif]"
+    },
+    {
+        "name": "knock",
+        "trans": [
+            "n.敲，敲打；碰撞 v.敲，打；碰，撞击"
+        ],
+        "pron": "[nɔk]"
+    },
+    {
+        "name": "know-how",
+        "trans": [
+            "n. 实际知识",
+            "技术秘诀",
+            "诀窍"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "label",
+        "trans": [
+            "vt.贴标签于n.标签;标记",
+            "符号"
+        ],
+        "pron": "['leibl]"
+    },
+    {
+        "name": "laboratory",
+        "trans": [
+            "n.实验室",
+            "研究室"
+        ],
+        "pron": "[lә'bɔrәtri]"
+    },
+    {
+        "name": "lad",
+        "trans": [
+            "n.少年；青年"
+        ],
+        "pron": "[læ d]"
+    },
+    {
+        "name": "lake",
+        "trans": [
+            "n.湖"
+        ],
+        "pron": "[leik]"
+    },
+    {
+        "name": "landscape",
+        "trans": [
+            "n.风景",
+            "景致"
+        ],
+        "pron": "['læ ndskeip]"
+    },
+    {
+        "name": "lane",
+        "trans": [
+            "n.(乡间)小路;跑道"
+        ],
+        "pron": "[lein]"
+    },
+    {
+        "name": "lap",
+        "trans": [
+            "n.膝部"
+        ],
+        "pron": "[læ p]"
+    },
+    {
+        "name": "last",
+        "trans": [
+            "vi.持续 a.最后的ad.最后n.最后",
+            "末尾"
+        ],
+        "pron": "[la:st]"
+    },
+    {
+        "name": "latter",
+        "trans": [
+            "a.(两者中)后者的"
+        ],
+        "pron": "['læ tә]"
+    },
+    {
+        "name": "laughter",
+        "trans": [
+            "n.笑声"
+        ],
+        "pron": "[la:ftә]"
+    },
+    {
+        "name": "layer",
+        "trans": [
+            "n.层",
+            "层次"
+        ],
+        "pron": "['leiә]"
+    },
+    {
+        "name": "leaf",
+        "trans": [
+            "n.叶子"
+        ],
+        "pron": "[li:f]"
+    },
+    {
+        "name": "leak",
+        "trans": [
+            "vi.漏;泄露n.漏洞"
+        ],
+        "pron": "[li:k]"
+    },
+    {
+        "name": "lean",
+        "trans": [
+            "vi.倾斜;靠"
+        ],
+        "pron": "[li:n]"
+    },
+    {
+        "name": "leap",
+        "trans": [
+            "vi.跳",
+            "跃 n.跳跃;跃进"
+        ],
+        "pron": "[li:p]"
+    },
+    {
+        "name": "lease",
+        "trans": [
+            "vt.出租n.租约",
+            "租契"
+        ],
+        "pron": "[li:s]"
+    },
+    {
+        "name": "leather",
+        "trans": [
+            "n.皮革"
+        ],
+        "pron": "['leðә]"
+    },
+    {
+        "name": "lecture",
+        "trans": [
+            "vi.演讲;讲课n.演讲;讲课"
+        ],
+        "pron": "['lektʃә]"
+    },
+    {
+        "name": "left",
+        "trans": [
+            "a.左边的ad.在左边n.左边，左侧"
+        ],
+        "pron": "[left]"
+    },
+    {
+        "name": "legislation",
+        "trans": [
+            "n.立法",
+            "法规"
+        ],
+        "pron": "[ledʒis'leiʃәn]"
+    },
+    {
+        "name": "lend",
+        "trans": [
+            "vt.借出"
+        ],
+        "pron": "[lend]"
+    },
+    {
+        "name": "lens",
+        "trans": [
+            "n.透镜",
+            "镜片"
+        ],
+        "pron": "[lenz]"
+    },
+    {
+        "name": "lesson",
+        "trans": [
+            "n.功课",
+            "课程；教训"
+        ],
+        "pron": "['lesn]"
+    },
+    {
+        "name": "liberate",
+        "trans": [
+            "vt.解放",
+            "释放"
+        ],
+        "pron": "['libәreit]"
+    },
+    {
+        "name": "liberty",
+        "trans": [
+            "n.自由"
+        ],
+        "pron": "['libәti]"
+    },
+    {
+        "name": "library",
+        "trans": [
+            "n.图书馆"
+        ],
+        "pron": "['laibrәri]"
+    },
+    {
+        "name": "licence",
+        "trans": [
+            "n.许可，特许，执照；放纵"
+        ],
+        "pron": "['laisәns]"
+    },
+    {
+        "name": "lie",
+        "trans": [
+            "vi.说谎;躺",
+            "平放n.谎话"
+        ],
+        "pron": "[lai]"
+    },
+    {
+        "name": "light",
+        "trans": [
+            "vt.点燃",
+            "照亮a.轻的;浅的n.光线;灯"
+        ],
+        "pron": "[lait]"
+    },
+    {
+        "name": "limited",
+        "trans": [
+            "a.有限的"
+        ],
+        "pron": "['limitid]"
+    },
+    {
+        "name": "lip",
+        "trans": [
+            "n.嘴唇"
+        ],
+        "pron": "[lip]"
+    },
+    {
+        "name": "literary",
+        "trans": [
+            "a.文学的"
+        ],
+        "pron": "['litәrәri]"
+    },
+    {
+        "name": "literature",
+        "trans": [
+            "n.文学(作品)"
+        ],
+        "pron": "['litәritʃә]"
+    },
+    {
+        "name": "live",
+        "trans": [
+            "vi.居住;活 vt.过着a.活的;实况转播的"
+        ],
+        "pron": "[liv laiv]"
+    },
+    {
+        "name": "live-in",
+        "trans": [
+            "adj. 寄宿于工作处的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "living",
+        "trans": [
+            "a.活的;逼真的；活泼的n.生活；生计"
+        ],
+        "pron": "['liviŋ]"
+    },
+    {
+        "name": "load",
+        "trans": [
+            "vt.装",
+            "装满n.负载;负担"
+        ],
+        "pron": "[lәud]"
+    },
+    {
+        "name": "lobby",
+        "trans": [
+            "n.休息室 vi.游说"
+        ],
+        "pron": "['lɔbi]"
+    },
+    {
+        "name": "local authority",
+        "trans": [
+            "n. 地方当局",
+            "地方政权"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "location",
+        "trans": [
+            "n.位置",
+            "场所"
+        ],
+        "pron": "[lәu'keiʃәn]"
+    },
+    {
+        "name": "lock",
+        "trans": [
+            "n.锁vt.锁上",
+            "锁住"
+        ],
+        "pron": "[lɔk]"
+    },
+    {
+        "name": "lonely",
+        "trans": [
+            "a.孤独的;荒凉的"
+        ],
+        "pron": "['lәunli]"
+    },
+    {
+        "name": "long-time",
+        "trans": [
+            "长期;长期载荷"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "loose",
+        "trans": [
+            "a.宽松的；自由的"
+        ],
+        "pron": "[lu:s]"
+    },
+    {
+        "name": "lost",
+        "trans": [
+            "a. 失去的",
+            "遗失的",
+            "迷惑的"
+        ],
+        "pron": "[lɔst]"
+    },
+    {
+        "name": "loud",
+        "trans": [
+            "a.响亮的"
+        ],
+        "pron": "[laud]"
+    },
+    {
+        "name": "lovely",
+        "trans": [
+            "a.可爱的"
+        ],
+        "pron": "['lʌvli]"
+    },
+    {
+        "name": "lover",
+        "trans": [
+            "n.情人;爱好者"
+        ],
+        "pron": "[lʌvә]"
+    },
+    {
+        "name": "lower",
+        "trans": [
+            "a.较低的vt.放下"
+        ],
+        "pron": "['lәuә]"
+    },
+    {
+        "name": "luck",
+        "trans": [
+            "n.运气",
+            "好运"
+        ],
+        "pron": "[lʌk]"
+    },
+    {
+        "name": "lucky",
+        "trans": [
+            "a.幸运的",
+            "吉祥的"
+        ],
+        "pron": "['lʌki]"
+    },
+    {
+        "name": "luxury",
+        "trans": [
+            "n.奢侈",
+            "奢侈品"
+        ],
+        "pron": "['lʌkʃәri]"
+    },
+    {
+        "name": "mad",
+        "trans": [
+            "a.发疯的;狂热的",
+            "着迷的"
+        ],
+        "pron": "[mæ d]"
+    },
+    {
+        "name": "made-up",
+        "trans": [
+            "a. 作成的",
+            "制成的",
+            "捏造的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "magic",
+        "trans": [
+            "n.魔法",
+            "巫术"
+        ],
+        "pron": "['mæ dʒik]"
+    },
+    {
+        "name": "mail",
+        "trans": [
+            "n.邮件vt.邮寄"
+        ],
+        "pron": "[meil]"
+    },
+    {
+        "name": "make-up",
+        "trans": [
+            "n.组成，构造；化妆品；气质，天性，性格"
+        ],
+        "pron": "['meikʌp]"
+    },
+    {
+        "name": "manner",
+        "trans": [
+            "n.方式",
+            "态度；礼貌"
+        ],
+        "pron": "['mæ nә]"
+    },
+    {
+        "name": "manufacture",
+        "trans": [
+            "vt.制造 n.制造；产品"
+        ],
+        "pron": "[mæ nju'fæ ktʃә]"
+    },
+    {
+        "name": "manufacturer",
+        "trans": [
+            "n.制造商"
+        ],
+        "pron": "[mæ nju'fæ ktʃәrә]"
+    },
+    {
+        "name": "map",
+        "trans": [
+            "vt.绘制地图n.地图"
+        ],
+        "pron": "[mæ p]"
+    },
+    {
+        "name": "march",
+        "trans": [
+            "n.三月"
+        ],
+        "pron": "[ma:tʃ]"
+    },
+    {
+        "name": "margin",
+        "trans": [
+            "n.页边的空白"
+        ],
+        "pron": "['ma:dʒin]"
+    },
+    {
+        "name": "marine",
+        "trans": [
+            "a.海上的，海产的n.海军",
+            "舰队"
+        ],
+        "pron": "[mә'ri:n]"
+    },
+    {
+        "name": "marked",
+        "trans": [
+            "a. 有记号的",
+            "显著的",
+            "醒目的"
+        ],
+        "pron": "[ma:kt]"
+    },
+    {
+        "name": "married",
+        "trans": [
+            "a.已婚的"
+        ],
+        "pron": "['mæ rid]"
+    },
+    {
+        "name": "mask",
+        "trans": [
+            "n.面具;伪装vt.掩饰，掩盖"
+        ],
+        "pron": "[ma:sk]"
+    },
+    {
+        "name": "massive",
+        "trans": [
+            "a.大规模的，大量的"
+        ],
+        "pron": "['mæ siv]"
+    },
+    {
+        "name": "mate",
+        "trans": [
+            "vi.交配n.伙伴",
+            "同事;配偶"
+        ],
+        "pron": "[meit]"
+    },
+    {
+        "name": "maximum",
+        "trans": [
+            "n.最大量 a.最大的"
+        ],
+        "pron": "['mæ ksimәm]"
+    },
+    {
+        "name": "mayor",
+        "trans": [
+            "n.市长"
+        ],
+        "pron": "['mɛә]"
+    },
+    {
+        "name": "meal",
+        "trans": [
+            "n.一餐"
+        ],
+        "pron": "[mi:l]"
+    },
+    {
+        "name": "meaning",
+        "trans": [
+            "n.意义",
+            "意思"
+        ],
+        "pron": "['mi:niŋ]"
+    },
+    {
+        "name": "meat",
+        "trans": [
+            "n.肉"
+        ],
+        "pron": "[mi:t]"
+    },
+    {
+        "name": "mechanism",
+        "trans": [
+            "n.机械装置;机构",
+            "机制"
+        ],
+        "pron": "['mekәnizәm]"
+    },
+    {
+        "name": "medal",
+        "trans": [
+            "n.奖章",
+            "纪念章"
+        ],
+        "pron": "['medl]"
+    },
+    {
+        "name": "medicine",
+        "trans": [
+            "n.药"
+        ],
+        "pron": "['medisin]"
+    },
+    {
+        "name": "medium",
+        "trans": [
+            "n.媒质",
+            "媒介a.中等的"
+        ],
+        "pron": "['mi:djәm]"
+    },
+    {
+        "name": "membership",
+        "trans": [
+            "n.成员资格"
+        ],
+        "pron": "['membәʃip]"
+    },
+    {
+        "name": "mental",
+        "trans": [
+            "a.智力的；精神的"
+        ],
+        "pron": "['mentl]"
+    },
+    {
+        "name": "merchant",
+        "trans": [
+            "n.商人"
+        ],
+        "pron": "['mә:tʃәnt]"
+    },
+    {
+        "name": "mere",
+        "trans": [
+            "a.仅仅的；纯粹的"
+        ],
+        "pron": "[miә]"
+    },
+    {
+        "name": "merely",
+        "trans": [
+            "ad.仅仅",
+            "只不过"
+        ],
+        "pron": "['miәli]"
+    },
+    {
+        "name": "merger",
+        "trans": [
+            "n.合并"
+        ],
+        "pron": "[mә:dʒә]"
+    },
+    {
+        "name": "mess",
+        "trans": [
+            "n.混乱；杂乱 v.弄脏；弄乱"
+        ],
+        "pron": "[mes]"
+    },
+    {
+        "name": "metal",
+        "trans": [
+            "n.金属"
+        ],
+        "pron": "['metl]"
+    },
+    {
+        "name": "metre",
+        "trans": [
+            "n.米",
+            "公尺"
+        ],
+        "pron": "['mi:tә]"
+    },
+    {
+        "name": "middle class",
+        "trans": [
+            "[the ~ (es) ; 集合称] 中层社会",
+            "中产阶级的人"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "midnight",
+        "trans": [
+            "n.午夜"
+        ],
+        "pron": "['midnait]"
+    },
+    {
+        "name": "mild",
+        "trans": [
+            "a.温柔的；温暖的"
+        ],
+        "pron": "[maild]"
+    },
+    {
+        "name": "militant",
+        "trans": [
+            "a.好战的，激进的"
+        ],
+        "pron": "['militәnt]"
+    },
+    {
+        "name": "milk",
+        "trans": [
+            "n.牛奶 vt.挤(奶)"
+        ],
+        "pron": "[milk]"
+    },
+    {
+        "name": "mill",
+        "trans": [
+            "n.磨坊；制造厂"
+        ],
+        "pron": "[mil]"
+    },
+    {
+        "name": "mind",
+        "trans": [
+            "n.头脑",
+            "理智vt.注意",
+            "留心;介意",
+            "反对"
+        ],
+        "pron": "[maind]"
+    },
+    {
+        "name": "miner",
+        "trans": [
+            "n.矿工"
+        ],
+        "pron": "['mainә]"
+    },
+    {
+        "name": "minimum",
+        "trans": [
+            "n.最小量a.最小的"
+        ],
+        "pron": "['minimәm]"
+    },
+    {
+        "name": "minor",
+        "trans": [
+            "a.次要的n.未成年人;副修科目"
+        ],
+        "pron": "['mainә]"
+    },
+    {
+        "name": "mirror",
+        "trans": [
+            "n.镜子vt.反映",
+            "反射"
+        ],
+        "pron": "['mirә]"
+    },
+    {
+        "name": "missile",
+        "trans": [
+            "n.导弹"
+        ],
+        "pron": "['misail]"
+    },
+    {
+        "name": "missing",
+        "trans": [
+            "a.缺少的",
+            "失去的"
+        ],
+        "pron": "['misiŋ]"
+    },
+    {
+        "name": "mixed",
+        "trans": [
+            "a.混合的"
+        ],
+        "pron": "[mikst]"
+    },
+    {
+        "name": "mixture",
+        "trans": [
+            "n.混合",
+            "混合物"
+        ],
+        "pron": "['mikstʃә]"
+    },
+    {
+        "name": "mobile",
+        "trans": [
+            "a.运动的",
+            "移动的"
+        ],
+        "pron": "['mәubail]"
+    },
+    {
+        "name": "moderate",
+        "trans": [
+            "a.温和的；适度的"
+        ],
+        "pron": "['mɔdәrit]"
+    },
+    {
+        "name": "modest",
+        "trans": [
+            "a.谦虚的"
+        ],
+        "pron": "['mɔdist]"
+    },
+    {
+        "name": "molecule",
+        "trans": [
+            "n.分子"
+        ],
+        "pron": "['mɔlikju:l]"
+    },
+    {
+        "name": "monetary",
+        "trans": [
+            "a.货币的",
+            "金钱的"
+        ],
+        "pron": "['mʌnitәri]"
+    },
+    {
+        "name": "monitor",
+        "trans": [
+            "n.班长;监视器"
+        ],
+        "pron": "['mɔnitә]"
+    },
+    {
+        "name": "monthly",
+        "trans": [
+            "a.每月的 ad.每月n.月刊"
+        ],
+        "pron": "['mʌnθli]"
+    },
+    {
+        "name": "mood",
+        "trans": [
+            "n.心情",
+            "情绪"
+        ],
+        "pron": "[mu:d]"
+    },
+    {
+        "name": "moon",
+        "trans": [
+            "n.月亮"
+        ],
+        "pron": "[mu:n]"
+    },
+    {
+        "name": "moral",
+        "trans": [
+            "a.合乎道德的n.道德",
+            "品行"
+        ],
+        "pron": "['mɔrәl]"
+    },
+    {
+        "name": "moreover",
+        "trans": [
+            "ad.再者",
+            "此外"
+        ],
+        "pron": "[mɔ:'rәuvә]"
+    },
+    {
+        "name": "mostly",
+        "trans": [
+            "ad.主要的",
+            "大部分"
+        ],
+        "pron": "['mәustli]"
+    },
+    {
+        "name": "motion",
+        "trans": [
+            "n.运动；动作；动机vi.打手势vt.示意"
+        ],
+        "pron": "['mәuʃәn]"
+    },
+    {
+        "name": "motivate",
+        "trans": [
+            "vt.激励",
+            "激发"
+        ],
+        "pron": "['mәutiveit]"
+    },
+    {
+        "name": "mount",
+        "trans": [
+            "vt.登上",
+            "爬上 n.山"
+        ],
+        "pron": "[maunt]"
+    },
+    {
+        "name": "mum",
+        "trans": [
+            "n.(口语)妈妈"
+        ],
+        "pron": "[mʌm]"
+    },
+    {
+        "name": "muscle",
+        "trans": [
+            "n.肌肉；力量"
+        ],
+        "pron": "['mʌsl]"
+    },
+    {
+        "name": "musical",
+        "trans": [
+            "a.音乐的"
+        ],
+        "pron": "['mju:zikәl]"
+    },
+    {
+        "name": "musician",
+        "trans": [
+            "n.音乐家"
+        ],
+        "pron": "[mju:'ziʃәn]"
+    },
+    {
+        "name": "mutual",
+        "trans": [
+            "a.相互的",
+            "共同的"
+        ],
+        "pron": "['mju:tjuәl]"
+    },
+    {
+        "name": "mystery",
+        "trans": [
+            "n.神秘",
+            "神秘的事物"
+        ],
+        "pron": "['mistәri]"
+    },
+    {
+        "name": "myth",
+        "trans": [
+            "n. 神话",
+            "虚构的东西"
+        ],
+        "pron": "[miθ]"
+    },
+    {
+        "name": "native",
+        "trans": [
+            "a.本土的n.本地人"
+        ],
+        "pron": "['neitiv]"
+    },
+    {
+        "name": "naturally",
+        "trans": [
+            "ad.自然地；天然地"
+        ],
+        "pron": "['næ tʃәrәli]"
+    },
+    {
+        "name": "naval",
+        "trans": [
+            "n.海军的"
+        ],
+        "pron": "['neivәl]"
+    },
+    {
+        "name": "navy",
+        "trans": [
+            "n.海军"
+        ],
+        "pron": "['neivi]"
+    },
+    {
+        "name": "nearby",
+        "trans": [
+            "a.附近的ad.在附近"
+        ],
+        "pron": "['niәbai]"
+    },
+    {
+        "name": "neat",
+        "trans": [
+            "a.整洁的；简洁的"
+        ],
+        "pron": "[ni:t]"
+    },
+    {
+        "name": "necessarily",
+        "trans": [
+            "ad.必然",
+            "必要"
+        ],
+        "pron": "['nesisәrili]"
+    },
+    {
+        "name": "neck",
+        "trans": [
+            "n.脖子"
+        ],
+        "pron": "[nek]"
+    },
+    {
+        "name": "negative",
+        "trans": [
+            "a.否定的；消极的；负的n.负数;底片"
+        ],
+        "pron": "['negәtiv]"
+    },
+    {
+        "name": "neighbour",
+        "trans": [
+            "n.邻居"
+        ],
+        "pron": "['neibә]"
+    },
+    {
+        "name": "nerve",
+        "trans": [
+            "n.神经"
+        ],
+        "pron": "[nә:v]"
+    },
+    {
+        "name": "nervous",
+        "trans": [
+            "a.紧张的",
+            "易激动的"
+        ],
+        "pron": "['nә:vәs]"
+    },
+    {
+        "name": "net",
+        "trans": [
+            "a.净的，纯的n.网",
+            "网状物"
+        ],
+        "pron": "[net]"
+    },
+    {
+        "name": "nevertheless",
+        "trans": [
+            "conj.然而 ad.仍然"
+        ],
+        "pron": "[nevәðәles]"
+    },
+    {
+        "name": "newly",
+        "trans": [
+            "ad.新近地"
+        ],
+        "pron": "['nju:li]"
+    },
+    {
+        "name": "nightmare",
+        "trans": [
+            "n.恶梦；可怕的事物"
+        ],
+        "pron": "['naItmeә(r)]"
+    },
+    {
+        "name": "nod",
+        "trans": [
+            "vt.点头 n.点头"
+        ],
+        "pron": "[nɔd]"
+    },
+    {
+        "name": "noise",
+        "trans": [
+            "n.喧闹声",
+            "响声"
+        ],
+        "pron": "[nɔiz]"
+    },
+    {
+        "name": "normally",
+        "trans": [
+            "ad.正常地"
+        ],
+        "pron": "['nɔ:mәli]"
+    },
+    {
+        "name": "nose",
+        "trans": [
+            "n.鼻子"
+        ],
+        "pron": "[nәuz]"
+    },
+    {
+        "name": "noted",
+        "trans": [
+            "a.著名的"
+        ],
+        "pron": "['nәutid]"
+    },
+    {
+        "name": "notion",
+        "trans": [
+            "n.打算",
+            "意图；看法"
+        ],
+        "pron": "['nәuʃәn]"
+    },
+    {
+        "name": "nowhere",
+        "trans": [
+            "ad.任何地方都不"
+        ],
+        "pron": "['nәuhwɛә]"
+    },
+    {
+        "name": "numerous",
+        "trans": [
+            "a.许多"
+        ],
+        "pron": "['nju:mәrәs]"
+    },
+    {
+        "name": "nurse",
+        "trans": [
+            "n.护士 vt.看护，照料"
+        ],
+        "pron": "[nә:s]"
+    },
+    {
+        "name": "objective",
+        "trans": [
+            "a.客观的n.目的，目标"
+        ],
+        "pron": "[ɔb'dʒektiv]"
+    },
+    {
+        "name": "observe",
+        "trans": [
+            "vt.观察",
+            "注意到"
+        ],
+        "pron": "[әb'zә:v]"
+    },
+    {
+        "name": "observer",
+        "trans": [
+            "n.观测者"
+        ],
+        "pron": "[әb'zә:vә]"
+    },
+    {
+        "name": "obtain",
+        "trans": [
+            "vt.获得"
+        ],
+        "pron": "[әb'tein]"
+    },
+    {
+        "name": "occasional",
+        "trans": [
+            "a.偶然的;临时的"
+        ],
+        "pron": "[ә'keiʒәnәl]"
+    },
+    {
+        "name": "occupation",
+        "trans": [
+            "n.占领",
+            "占据;职业，工作"
+        ],
+        "pron": "[ɔkju'peiʃәnl]"
+    },
+    {
+        "name": "ocean",
+        "trans": [
+            "n.海洋"
+        ],
+        "pron": "['әuʃәn]"
+    },
+    {
+        "name": "o'clock",
+        "trans": [
+            "ad.…点钟"
+        ],
+        "pron": "[ә'klɔk]"
+    },
+    {
+        "name": "offence",
+        "trans": [
+            "n.犯罪，犯规；冒犯"
+        ],
+        "pron": "[ә'fens]"
+    },
+    {
+        "name": "offensive",
+        "trans": [
+            "a.冒犯的",
+            "进攻的"
+        ],
+        "pron": "[ә'fensiv]"
+    },
+    {
+        "name": "offering",
+        "trans": [
+            "n.提供之物"
+        ],
+        "pron": "['ɔfәriŋ]"
+    },
+    {
+        "name": "one's",
+        "trans": [
+            "pron. [one pron.的所有格] 一个人的",
+            "其人的"
+        ],
+        "pron": "[wʌnz]"
+    },
+    {
+        "name": "onto",
+        "trans": [
+            "prep.到…上"
+        ],
+        "pron": "['ɔntu]"
+    },
+    {
+        "name": "opening",
+        "trans": [
+            "a.开始的 n.开始"
+        ],
+        "pron": "['әupәniŋ]"
+    },
+    {
+        "name": "opera",
+        "trans": [
+            "n.歌剧"
+        ],
+        "pron": "['ɔpәrә]"
+    },
+    {
+        "name": "operator",
+        "trans": [
+            "n.接线员"
+        ],
+        "pron": "['ɔpәreitә]"
+    },
+    {
+        "name": "opponent",
+        "trans": [
+            "n.对手",
+            "敌手"
+        ],
+        "pron": "[ә'pәunәnt]"
+    },
+    {
+        "name": "oppose",
+        "trans": [
+            "vt.反对",
+            "反抗"
+        ],
+        "pron": "[ә'pәuz]"
+    },
+    {
+        "name": "opposed",
+        "trans": [
+            "a.相对的，相反的"
+        ],
+        "pron": "[ә'pәuzd]"
+    },
+    {
+        "name": "opposite",
+        "trans": [
+            "a.对面的 n.对立物"
+        ],
+        "pron": "['ɔpәzit]"
+    },
+    {
+        "name": "opt",
+        "trans": [
+            "vi.挑选，选择"
+        ],
+        "pron": "[Cpt]"
+    },
+    {
+        "name": "orange",
+        "trans": [
+            "n.桔子a.橙色的"
+        ],
+        "pron": "['ɔrindʒ]"
+    },
+    {
+        "name": "ordinary",
+        "trans": [
+            "a.平常的",
+            "平凡的"
+        ],
+        "pron": "['ɔ:dinәri]"
+    },
+    {
+        "name": "organized",
+        "trans": [
+            "adj. 1> [常构成复合字]有组织的",
+            "编组的",
+            "组织性的;有计划的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "origin",
+        "trans": [
+            "n.起源",
+            "由来;出身，血统"
+        ],
+        "pron": "['ɔridʒin]"
+    },
+    {
+        "name": "originally",
+        "trans": [
+            "ad.最初"
+        ],
+        "pron": "[ә'ridʒәnәli]"
+    },
+    {
+        "name": "ought",
+        "trans": [
+            "aux.应该"
+        ],
+        "pron": "[ɔ:t]"
+    },
+    {
+        "name": "ourselves",
+        "trans": [
+            "pron.我们自己"
+        ],
+        "pron": "[auә'selvz]"
+    },
+    {
+        "name": "outcome",
+        "trans": [
+            "n.结果",
+            "后果;成果"
+        ],
+        "pron": "['autkәm]"
+    },
+    {
+        "name": "outline",
+        "trans": [
+            "n.轮廓；大纲"
+        ],
+        "pron": "['aut-lain]"
+    },
+    {
+        "name": "output",
+        "trans": [
+            "n.产量；输出"
+        ],
+        "pron": "['autput]"
+    },
+    {
+        "name": "outstanding",
+        "trans": [
+            "a.突出的",
+            "杰出的"
+        ],
+        "pron": "[aut'stændiŋ]"
+    },
+    {
+        "name": "overcome",
+        "trans": [
+            "vt.战胜",
+            "克服"
+        ],
+        "pron": "[әuvә'kʌm]"
+    },
+    {
+        "name": "overnight",
+        "trans": [
+            "ad.一夜之间",
+            "突然"
+        ],
+        "pron": "['әuvәnait]"
+    },
+    {
+        "name": "overseas",
+        "trans": [
+            "ad.海外a.在海外的"
+        ],
+        "pron": "['әuve'si:z]"
+    },
+    {
+        "name": "overwhelming",
+        "trans": [
+            "a.势不可挡的"
+        ],
+        "pron": "[әuvә'hwelmiŋ]"
+    },
+    {
+        "name": "owe",
+        "trans": [
+            "vt.欠;归功于"
+        ],
+        "pron": "[әu]"
+    },
+    {
+        "name": "ownership",
+        "trans": [
+            "n.所有(权)",
+            "所有制"
+        ],
+        "pron": "['әunәʃip]"
+    },
+    {
+        "name": "pace",
+        "trans": [
+            "n.步伐;步调vi.踱步"
+        ],
+        "pron": "[peis]"
+    },
+    {
+        "name": "pact",
+        "trans": [
+            "n.协定",
+            "条约"
+        ],
+        "pron": "[pæ kt]"
+    },
+    {
+        "name": "painful",
+        "trans": [
+            "a.痛苦的"
+        ],
+        "pron": "['peinful]"
+    },
+    {
+        "name": "palace",
+        "trans": [
+            "n.宫殿"
+        ],
+        "pron": "['pæ lis]"
+    },
+    {
+        "name": "pale",
+        "trans": [
+            "a.苍白的"
+        ],
+        "pron": "[peil]"
+    },
+    {
+        "name": "pan",
+        "trans": [
+            "n.平底锅"
+        ],
+        "pron": "[pæ n]"
+    },
+    {
+        "name": "panel",
+        "trans": [
+            "n.面",
+            "板"
+        ],
+        "pron": "['pæ nl]"
+    },
+    {
+        "name": "panic",
+        "trans": [
+            "n.恐慌",
+            "惊慌"
+        ],
+        "pron": "['pæ nik]"
+    },
+    {
+        "name": "parliamentary",
+        "trans": [
+            "a.国会的，议会的"
+        ],
+        "pron": "[pa:lә'mentәri]"
+    },
+    {
+        "name": "part",
+        "trans": [
+            "vt.分开，拆散n.一部分;零件；角色"
+        ],
+        "pron": "[pa:t]"
+    },
+    {
+        "name": "participate",
+        "trans": [
+            "vi.参与",
+            "参加"
+        ],
+        "pron": "[pa:'tisipeit]"
+    },
+    {
+        "name": "partly",
+        "trans": [
+            "ad.部分地"
+        ],
+        "pron": "['pa:tli]"
+    },
+    {
+        "name": "partnership",
+        "trans": [
+            "n.合伙；合股"
+        ],
+        "pron": "['pa:tnәʃip]"
+    },
+    {
+        "name": "passage",
+        "trans": [
+            "n.通道；段落"
+        ],
+        "pron": "['pæ sidʒ]"
+    },
+    {
+        "name": "passenger",
+        "trans": [
+            "n.乘客",
+            "旅客"
+        ],
+        "pron": "['pæ sindʒә]"
+    },
+    {
+        "name": "passion",
+        "trans": [
+            "n.激情",
+            "热情"
+        ],
+        "pron": "['pæ ʃәn]"
+    },
+    {
+        "name": "path",
+        "trans": [
+            "n.小道",
+            "道路"
+        ],
+        "pron": "[pa:θ]"
+    },
+    {
+        "name": "pause",
+        "trans": [
+            "n.中止vi.中止",
+            "暂停"
+        ],
+        "pron": "[pɔ:z]"
+    },
+    {
+        "name": "peaceful",
+        "trans": [
+            "a.和平的；平静的"
+        ],
+        "pron": "['pi:sful]"
+    },
+    {
+        "name": "peak",
+        "trans": [
+            "n.山顶a.最高的"
+        ],
+        "pron": "[pi:k]"
+    },
+    {
+        "name": "peer",
+        "trans": [
+            "vi.凝视"
+        ],
+        "pron": "[piә]"
+    },
+    {
+        "name": "peg",
+        "trans": [
+            "n.钉",
+            "夹子"
+        ],
+        "pron": "[peg]"
+    },
+    {
+        "name": "pen",
+        "trans": [
+            "n.钢笔"
+        ],
+        "pron": "[pen]"
+    },
+    {
+        "name": "penalty",
+        "trans": [
+            "n.处罚",
+            "罚款"
+        ],
+        "pron": "['penlti]"
+    },
+    {
+        "name": "penny",
+        "trans": [
+            "n.便士；分"
+        ],
+        "pron": "['peni]"
+    },
+    {
+        "name": "pension",
+        "trans": [
+            "n.养老金"
+        ],
+        "pron": "['penʃәn]"
+    },
+    {
+        "name": "pepper",
+        "trans": [
+            "n. 胡椒粉"
+        ],
+        "pron": "['pepә]"
+    },
+    {
+        "name": "percentage",
+        "trans": [
+            "n.百分比",
+            "百分率"
+        ],
+        "pron": "[pә'sentidʒ]"
+    },
+    {
+        "name": "perfectly",
+        "trans": [
+            "ad.完全地；绝对地"
+        ],
+        "pron": "['pә:fiktli]"
+    },
+    {
+        "name": "permanent",
+        "trans": [
+            "a.持久的；固定的"
+        ],
+        "pron": "['pә:mәnәnt]"
+    },
+    {
+        "name": "permission",
+        "trans": [
+            "n.允许",
+            "同意"
+        ],
+        "pron": "[pә(:)'miʃәn]"
+    },
+    {
+        "name": "permit",
+        "trans": [
+            "vt.允许 n.执照，许可证"
+        ],
+        "pron": "[pә:'mit, 'pә:mit]"
+    },
+    {
+        "name": "personality",
+        "trans": [
+            "n.个性",
+            "人格；名人"
+        ],
+        "pron": "[pә:sә'næ liti]"
+    },
+    {
+        "name": "personally",
+        "trans": [
+            "ad.亲自地，由本人"
+        ],
+        "pron": "['pә:sәnәuli]"
+    },
+    {
+        "name": "personnel",
+        "trans": [
+            "n.全体人员"
+        ],
+        "pron": "[pә:sә'nel]"
+    },
+    {
+        "name": "perspective",
+        "trans": [
+            "n.远景;观点"
+        ],
+        "pron": "[pә:'spektiv]"
+    },
+    {
+        "name": "persuade",
+        "trans": [
+            "vt.说服"
+        ],
+        "pron": "[pә:'sweid]"
+    },
+    {
+        "name": "pet",
+        "trans": [
+            "n.宠物"
+        ],
+        "pron": "[pet]"
+    },
+    {
+        "name": "phase",
+        "trans": [
+            "n.阶段；方面"
+        ],
+        "pron": "[feiz]"
+    },
+    {
+        "name": "philosophy",
+        "trans": [
+            "n.哲学"
+        ],
+        "pron": "[fi'lɔsәfi]"
+    },
+    {
+        "name": "phrase",
+        "trans": [
+            "n.短语",
+            "习惯用语"
+        ],
+        "pron": "[freiz]"
+    },
+    {
+        "name": "pick-up",
+        "trans": [
+            "n. 提取",
+            "搭便车"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "pile",
+        "trans": [
+            "n.堆vt.堆叠"
+        ],
+        "pron": "[pail]"
+    },
+    {
+        "name": "pill",
+        "trans": [
+            "n.药丸"
+        ],
+        "pron": "[pil]"
+    },
+    {
+        "name": "pilot",
+        "trans": [
+            "n.飞行员"
+        ],
+        "pron": "['pailәt]"
+    },
+    {
+        "name": "pin",
+        "trans": [
+            "n.别针，钉子vt.钉住"
+        ],
+        "pron": "[pin]"
+    },
+    {
+        "name": "pink",
+        "trans": [
+            "n.粉红色 a.粉红色的"
+        ],
+        "pron": "[piŋk]"
+    },
+    {
+        "name": "pipe",
+        "trans": [
+            "vt.用管道输送n.管子",
+            "导管;烟斗"
+        ],
+        "pron": "[paip]"
+    },
+    {
+        "name": "pit",
+        "trans": [
+            "n.坑"
+        ],
+        "pron": "[pit]"
+    },
+    {
+        "name": "pitch",
+        "trans": [
+            "vt.扔 n.沥青"
+        ],
+        "pron": "[pitʃ]"
+    },
+    {
+        "name": "plain",
+        "trans": [
+            "n.平原 a.平坦的;朴素的；平常的"
+        ],
+        "pron": "[plein]"
+    },
+    {
+        "name": "planet",
+        "trans": [
+            "n.行星"
+        ],
+        "pron": "['plæ nit]"
+    },
+    {
+        "name": "planning",
+        "trans": [
+            "n.规划，设计，策划"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "plastic",
+        "trans": [
+            "a.塑料的n.塑料，塑料制品"
+        ],
+        "pron": "['plæ stik]"
+    },
+    {
+        "name": "plate",
+        "trans": [
+            "n.盘"
+        ],
+        "pron": "[pleit]"
+    },
+    {
+        "name": "platform",
+        "trans": [
+            "n.站台",
+            "讲台"
+        ],
+        "pron": "['plæ tfɔ:m]"
+    },
+    {
+        "name": "pleasant",
+        "trans": [
+            "a.令人愉快的"
+        ],
+        "pron": "['pleznt]"
+    },
+    {
+        "name": "pleased",
+        "trans": [
+            "a.高兴的"
+        ],
+        "pron": "[pli:zd]"
+    },
+    {
+        "name": "pleasure",
+        "trans": [
+            "n.愉快",
+            "快乐"
+        ],
+        "pron": "['pleʒә]"
+    },
+    {
+        "name": "pledge",
+        "trans": [
+            "n.誓言vt.保证",
+            "发誓"
+        ],
+        "pron": "[pledʒ]"
+    },
+    {
+        "name": "plenty",
+        "trans": [
+            "n.充足",
+            "大量"
+        ],
+        "pron": "['plenti]"
+    },
+    {
+        "name": "plot",
+        "trans": [
+            "n.小块土地；计划，密谋；情节vt.密谋"
+        ],
+        "pron": "[plɔt]"
+    },
+    {
+        "name": "plunge",
+        "trans": [
+            "vt.猛刺"
+        ],
+        "pron": "[plʌndʒ]"
+    },
+    {
+        "name": "pocket",
+        "trans": [
+            "n.衣袋 a.袖珍的"
+        ],
+        "pron": "['pɔkit]"
+    },
+    {
+        "name": "poem",
+        "trans": [
+            "n.诗"
+        ],
+        "pron": "['pәuim]"
+    },
+    {
+        "name": "poet",
+        "trans": [
+            "n.诗人"
+        ],
+        "pron": "[pәuit]"
+    },
+    {
+        "name": "poetry",
+        "trans": [
+            "n.诗歌"
+        ],
+        "pron": "['pәuitri]"
+    },
+    {
+        "name": "point of view",
+        "trans": [
+            "n. 观 点"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "pole",
+        "trans": [
+            "n.杆",
+            "柱"
+        ],
+        "pron": "[pәul]"
+    },
+    {
+        "name": "policeman",
+        "trans": [
+            "n.警察"
+        ],
+        "pron": "[pә'li:smәn]"
+    },
+    {
+        "name": "police officer",
+        "trans": [
+            "n. 警官",
+            "警员"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "pollution",
+        "trans": [
+            "n.污染"
+        ],
+        "pron": "[pә'lu:ʃәn]"
+    },
+    {
+        "name": "pool",
+        "trans": [
+            "n.水池vt.合伙经营",
+            "共享"
+        ],
+        "pron": "[pu:l]"
+    },
+    {
+        "name": "pop",
+        "trans": [
+            "n.流行歌曲;砰的一声"
+        ],
+        "pron": "[pɔp]"
+    },
+    {
+        "name": "port",
+        "trans": [
+            "n.港口"
+        ],
+        "pron": "[pɔ:t]"
+    },
+    {
+        "name": "portrait",
+        "trans": [
+            "n.肖像",
+            "画像"
+        ],
+        "pron": "['pɔ:trit]"
+    },
+    {
+        "name": "pose",
+        "trans": [
+            "vt.陈述，提出；摆好位置vi.假装；摆姿势n.  姿势"
+        ],
+        "pron": "[pәuz]"
+    },
+    {
+        "name": "pot",
+        "trans": [
+            "n.锅"
+        ],
+        "pron": "[pɔt]"
+    },
+    {
+        "name": "potato",
+        "trans": [
+            "n.土豆"
+        ],
+        "pron": "[pәu'teitәu]"
+    },
+    {
+        "name": "pour",
+        "trans": [
+            "vt.流",
+            "倾盆大雨vi.倾泻"
+        ],
+        "pron": "[pɔ:]"
+    },
+    {
+        "name": "poverty",
+        "trans": [
+            "n.贫穷"
+        ],
+        "pron": "['pɔvәti]"
+    },
+    {
+        "name": "practical",
+        "trans": [
+            "a.实用的"
+        ],
+        "pron": "['præ ktikәl]"
+    },
+    {
+        "name": "praise",
+        "trans": [
+            "n.赞扬",
+            "表扬vt.赞扬",
+            "称赞"
+        ],
+        "pron": "[preiz]"
+    },
+    {
+        "name": "precisely",
+        "trans": [
+            "ad.精确地"
+        ],
+        "pron": "[pri'saisli]"
+    },
+    {
+        "name": "predict",
+        "trans": [
+            "vt.预言",
+            "预测"
+        ],
+        "pron": "[pri'dikt]"
+    },
+    {
+        "name": "pregnant",
+        "trans": [
+            "a.怀孕的;意义深长的"
+        ],
+        "pron": "['pregnәnt]"
+    },
+    {
+        "name": "premier",
+        "trans": [
+            "a.首要的n.总理，首相"
+        ],
+        "pron": "['premjә]"
+    },
+    {
+        "name": "premium",
+        "trans": [
+            "n.奖金",
+            "保险费"
+        ],
+        "pron": "['pri:mjәm]"
+    },
+    {
+        "name": "preparation",
+        "trans": [
+            "n.准备",
+            "预备"
+        ],
+        "pron": "[prepә'reiʃәn]"
+    },
+    {
+        "name": "preserve",
+        "trans": [
+            "vt.保存"
+        ],
+        "pron": "[pri'zә:v]"
+    },
+    {
+        "name": "presidency",
+        "trans": [
+            "n.总统(校长，总经理)的职位(任 期)"
+        ],
+        "pron": "['prezidәnsi]"
+    },
+    {
+        "name": "presumably",
+        "trans": [
+            "ad.大概"
+        ],
+        "pron": "[pri'zju:mәbli]"
+    },
+    {
+        "name": "previously",
+        "trans": [
+            "adv.在以前，预先"
+        ],
+        "pron": "['pri:vjәsli]"
+    },
+    {
+        "name": "pride",
+        "trans": [
+            "n.骄傲",
+            "自豪"
+        ],
+        "pron": "[praid]"
+    },
+    {
+        "name": "priest",
+        "trans": [
+            "n.牧师",
+            "神父"
+        ],
+        "pron": "[pri:st]"
+    },
+    {
+        "name": "primary",
+        "trans": [
+            "a.最初的"
+        ],
+        "pron": "['praimәri]"
+    },
+    {
+        "name": "prime",
+        "trans": [
+            "a.首要的;最初的"
+        ],
+        "pron": "[praim]"
+    },
+    {
+        "name": "principal",
+        "trans": [
+            "a.主要的n.校长；资本"
+        ],
+        "pron": "['prinsәpәl]"
+    },
+    {
+        "name": "prior",
+        "trans": [
+            "a.在先的；优先的"
+        ],
+        "pron": "['praiә]"
+    },
+    {
+        "name": "priority",
+        "trans": [
+            "n.优先权"
+        ],
+        "pron": "[prai'ɔriti]"
+    },
+    {
+        "name": "privatize",
+        "trans": [
+            "vt. 使…民营化;使…私营化"
+        ],
+        "pron": "['praivәtaiz]"
+    },
+    {
+        "name": "procedure",
+        "trans": [
+            "n.程序",
+            "过程"
+        ],
+        "pron": "[prә'si:dʒә]"
+    },
+    {
+        "name": "proceed",
+        "trans": [
+            "vi.进行"
+        ],
+        "pron": "[prә'si:d]"
+    },
+    {
+        "name": "profession",
+        "trans": [
+            "n.职业"
+        ],
+        "pron": "[prә'feʃәn]"
+    },
+    {
+        "name": "profile",
+        "trans": [
+            "n. 侧面",
+            "轮廓;人物素描"
+        ],
+        "pron": "['prәufail]"
+    },
+    {
+        "name": "prominent",
+        "trans": [
+            "a.突起的；杰出的"
+        ],
+        "pron": "['prɔminәnt]"
+    },
+    {
+        "name": "prompt",
+        "trans": [
+            "n.提示 a.迅速的vt.敦促"
+        ],
+        "pron": "[prɔmpt]"
+    },
+    {
+        "name": "proof",
+        "trans": [
+            "n.证据"
+        ],
+        "pron": "[pru:f]"
+    },
+    {
+        "name": "proportion",
+        "trans": [
+            "n.比率",
+            "部分"
+        ],
+        "pron": "[prә'pɔ:ʃәn]"
+    },
+    {
+        "name": "prosecute",
+        "trans": [
+            "vt.告发",
+            "起诉"
+        ],
+        "pron": "['prɔsikju:t]"
+    },
+    {
+        "name": "protein",
+        "trans": [
+            "n.蛋白质"
+        ],
+        "pron": "['prәuti:n]"
+    },
+    {
+        "name": "proud",
+        "trans": [
+            "a.骄傲的；自豪的"
+        ],
+        "pron": "[praud]"
+    },
+    {
+        "name": "province",
+        "trans": [
+            "n.省"
+        ],
+        "pron": "['prɔvins]"
+    },
+    {
+        "name": "provision",
+        "trans": [
+            "n.供应；条款"
+        ],
+        "pron": "[prә'viʒәn]"
+    },
+    {
+        "name": "provoke",
+        "trans": [
+            "vt.激 怒"
+        ],
+        "pron": "[prә'vәuk]"
+    },
+    {
+        "name": "psychological",
+        "trans": [
+            "a.心理（学）的"
+        ],
+        "pron": "[saikә'lɔdʒikәl]"
+    },
+    {
+        "name": "psychology",
+        "trans": [
+            "n.心理学"
+        ],
+        "pron": "[sai'kɔlәdʒi]"
+    },
+    {
+        "name": "pub",
+        "trans": [
+            "n.酒馆",
+            "客栈"
+        ],
+        "pron": "[pʌb]"
+    },
+    {
+        "name": "publication",
+        "trans": [
+            "n.出版;出版物"
+        ],
+        "pron": "[pʌbli'keiʃәn]"
+    },
+    {
+        "name": "publicity",
+        "trans": [
+            "n. 宣 传"
+        ],
+        "pron": "[pʌb'lisiti]"
+    },
+    {
+        "name": "publisher",
+        "trans": [
+            "n.出版商，发行人"
+        ],
+        "pron": "['pʌbliʃә]"
+    },
+    {
+        "name": "publishing",
+        "trans": [
+            "ing. 发表(出版)"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "pump",
+        "trans": [
+            "n.泵vt.用泵抽，打气"
+        ],
+        "pron": "[pʌmp]"
+    },
+    {
+        "name": "punch",
+        "trans": [
+            "vt.猛击 n.拳打，猛击"
+        ],
+        "pron": "[pʌntʃ]"
+    },
+    {
+        "name": "pupil",
+        "trans": [
+            "n.瞳孔;小学生"
+        ],
+        "pron": "['pju:pl]"
+    },
+    {
+        "name": "pure",
+        "trans": [
+            "a.纯洁的"
+        ],
+        "pron": "[pjuә]"
+    },
+    {
+        "name": "pursue",
+        "trans": [
+            "vt.追赶，追踪；追求"
+        ],
+        "pron": "[pә'sju:]"
+    },
+    {
+        "name": "qualified",
+        "trans": [
+            "a. 有资格的"
+        ],
+        "pron": "['kwɔlifaid]"
+    },
+    {
+        "name": "qualify",
+        "trans": [
+            "vt.有资格"
+        ],
+        "pron": "['kwɔlifai]"
+    },
+    {
+        "name": "quantity",
+        "trans": [
+            "n.数量；大量"
+        ],
+        "pron": "['kwɔntiti]"
+    },
+    {
+        "name": "racial",
+        "trans": [
+            "a.种族的",
+            "人种的"
+        ],
+        "pron": "['reiʃәl]"
+    },
+    {
+        "name": "racing",
+        "trans": [
+            "n.竞赛，赛马 a.竞赛用的，赛马用的"
+        ],
+        "pron": "['reisiŋ]"
+    },
+    {
+        "name": "rage",
+        "trans": [
+            "n.狂怒，强烈欲望"
+        ],
+        "pron": "[reidʒ]"
+    },
+    {
+        "name": "raid",
+        "trans": [
+            "n.突袭；搜查"
+        ],
+        "pron": "[reid]"
+    },
+    {
+        "name": "rail",
+        "trans": [
+            "n.铁路，铁轨"
+        ],
+        "pron": "[reil]"
+    },
+    {
+        "name": "railway",
+        "trans": [
+            "n.铁路",
+            "铁道"
+        ],
+        "pron": "['reilwei]"
+    },
+    {
+        "name": "rally",
+        "trans": [
+            "vt.(重新)集合vi.重整旗鼓"
+        ],
+        "pron": "['ræ li]"
+    },
+    {
+        "name": "rank",
+        "trans": [
+            "n.军衔 vt.归类于"
+        ],
+        "pron": "[ræŋk]"
+    },
+    {
+        "name": "rape",
+        "trans": [
+            "vt.强奸n.强奸"
+        ],
+        "pron": "[reip]"
+    },
+    {
+        "name": "rare",
+        "trans": [
+            "a.稀有的"
+        ],
+        "pron": "[rɛә]"
+    },
+    {
+        "name": "rarely",
+        "trans": [
+            "ad.很少",
+            "难得"
+        ],
+        "pron": "['rɛәli]"
+    },
+    {
+        "name": "rating",
+        "trans": [
+            "n.等级",
+            "品位;收视率"
+        ],
+        "pron": "['reitiŋ]"
+    },
+    {
+        "name": "raw",
+        "trans": [
+            "a.生的；未加工的"
+        ],
+        "pron": "[rɔ:]"
+    },
+    {
+        "name": "ray",
+        "trans": [
+            "n.光线;射线"
+        ],
+        "pron": "[rei]"
+    },
+    {
+        "name": "react",
+        "trans": [
+            "vi.反应"
+        ],
+        "pron": "[ri'æ kt]"
+    },
+    {
+        "name": "reading",
+        "trans": [
+            "n.阅读；读物"
+        ],
+        "pron": "['ri:diŋ]"
+    },
+    {
+        "name": "rear",
+        "trans": [
+            "n.后面",
+            "后方a.后面的",
+            "背面的"
+        ],
+        "pron": "[riә]"
+    },
+    {
+        "name": "reasonable",
+        "trans": [
+            "a.合情合理的"
+        ],
+        "pron": "['ri:znәbl]"
+    },
+    {
+        "name": "reckon",
+        "trans": [
+            "vi.估计;猜想vt.认为"
+        ],
+        "pron": "['rekәn]"
+    },
+    {
+        "name": "recognition",
+        "trans": [
+            "n.认出",
+            "识别"
+        ],
+        "pron": "[rekәg'niʃәn]"
+    },
+    {
+        "name": "recording",
+        "trans": [
+            "n.录制"
+        ],
+        "pron": "[ri'kC:diŋ]"
+    },
+    {
+        "name": "recover",
+        "trans": [
+            "vt.恢复，痊愈"
+        ],
+        "pron": "[ri'kʌvә]"
+    },
+    {
+        "name": "recovery",
+        "trans": [
+            "n.痊愈",
+            "恢复"
+        ],
+        "pron": "[ri'kʌvәri]"
+    },
+    {
+        "name": "recruit",
+        "trans": [
+            "vi.招收，聘用 n. 新兵",
+            "新成员"
+        ],
+        "pron": "[ri'kru:t]"
+    },
+    {
+        "name": "reduction",
+        "trans": [
+            "n.减少",
+            "缩减"
+        ],
+        "pron": "[ri'dʌkʃәn]"
+    },
+    {
+        "name": "reel",
+        "trans": [
+            "n.卷轴;旋转"
+        ],
+        "pron": "[ri:l]"
+    },
+    {
+        "name": "reference",
+        "trans": [
+            "n.参考;提及；推荐人（信）"
+        ],
+        "pron": "['refәrәns]"
+    },
+    {
+        "name": "referendum",
+        "trans": [
+            "n.公民公决"
+        ],
+        "pron": "[refә'rendәm]"
+    },
+    {
+        "name": "regime",
+        "trans": [
+            "n.政体",
+            "政权"
+        ],
+        "pron": "[rei'ʒi:m]"
+    },
+    {
+        "name": "register",
+        "trans": [
+            "vt.登记",
+            "注册n.登记",
+            "注册"
+        ],
+        "pron": "['redʒistә]"
+    },
+    {
+        "name": "regret",
+        "trans": [
+            "vt.懊悔",
+            "抱歉 n.懊悔"
+        ],
+        "pron": "[ri'gret]"
+    },
+    {
+        "name": "regulation",
+        "trans": [
+            "n.规章",
+            "管理"
+        ],
+        "pron": "[regju'leiʃәn]"
+    },
+    {
+        "name": "regulator",
+        "trans": [
+            "n.调节器"
+        ],
+        "pron": "['regjuleitә]"
+    },
+    {
+        "name": "relate",
+        "trans": [
+            "vt.联系"
+        ],
+        "pron": "[ri'leit]"
+    },
+    {
+        "name": "related",
+        "trans": [
+            "a.有关联的"
+        ],
+        "pron": "[ri'leitid]"
+    },
+    {
+        "name": "relative",
+        "trans": [
+            "a.有关系的；相对的n.亲戚，亲属"
+        ],
+        "pron": "['relәtiv]"
+    },
+    {
+        "name": "relax",
+        "trans": [
+            "vt.使松弛vi.松弛；松懈"
+        ],
+        "pron": "[ri'læ ks]"
+    },
+    {
+        "name": "relevant",
+        "trans": [
+            "a.有关的;中肯的"
+        ],
+        "pron": "['relivәnt]"
+    },
+    {
+        "name": "reliable",
+        "trans": [
+            "a.可靠的"
+        ],
+        "pron": "[ri'laiәbl]"
+    },
+    {
+        "name": "religion",
+        "trans": [
+            "n.宗教信仰"
+        ],
+        "pron": "[ri'lidʒәn]"
+    },
+    {
+        "name": "reluctant",
+        "trans": [
+            "a.勉强的"
+        ],
+        "pron": "[ri'lʌktәnt]"
+    },
+    {
+        "name": "rely",
+        "trans": [
+            "vi.依赖",
+            "依靠；信赖"
+        ],
+        "pron": "[ri'lai]"
+    },
+    {
+        "name": "remaining",
+        "trans": [
+            "a.剩余的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "remark",
+        "trans": [
+            "vi.评论n.评论;备注"
+        ],
+        "pron": "[ri'ma:k]"
+    },
+    {
+        "name": "remarkable",
+        "trans": [
+            "a.异常的",
+            "非凡的"
+        ],
+        "pron": "[ri'ma:kәbl]"
+    },
+    {
+        "name": "remind",
+        "trans": [
+            "vt.提醒"
+        ],
+        "pron": "[ri'maind]"
+    },
+    {
+        "name": "remote",
+        "trans": [
+            "a.遥远的"
+        ],
+        "pron": "[ri'mәut]"
+    },
+    {
+        "name": "renew",
+        "trans": [
+            "vt.续借vi.更新"
+        ],
+        "pron": "[ri'nju:]"
+    },
+    {
+        "name": "rent",
+        "trans": [
+            "n.租金",
+            "租vi.出租"
+        ],
+        "pron": "[rent]"
+    },
+    {
+        "name": "repair",
+        "trans": [
+            "vt.修理",
+            "修补 n.修理"
+        ],
+        "pron": "[ri'pɛә]"
+    },
+    {
+        "name": "reputation",
+        "trans": [
+            "n.名誉",
+            "声望"
+        ],
+        "pron": "[repju(:)'teiʃәn]"
+    },
+    {
+        "name": "requirement",
+        "trans": [
+            "n.需要",
+            "要求"
+        ],
+        "pron": "[ri'kwaiәmәnt]"
+    },
+    {
+        "name": "rescue",
+        "trans": [
+            "vt.援救",
+            "营救"
+        ],
+        "pron": "['reskju:]"
+    },
+    {
+        "name": "resign",
+        "trans": [
+            "vt.放弃 vi.辞职"
+        ],
+        "pron": "[ri'zain]"
+    },
+    {
+        "name": "resignation",
+        "trans": [
+            "n.辞职；放弃"
+        ],
+        "pron": "[rezig'neiʃәn]"
+    },
+    {
+        "name": "resist",
+        "trans": [
+            "vt.抵抗",
+            "抵制"
+        ],
+        "pron": "[ri'zist]"
+    },
+    {
+        "name": "resistance",
+        "trans": [
+            "n.抵抗",
+            "抵制"
+        ],
+        "pron": "[ri'zistәns]"
+    },
+    {
+        "name": "resolve",
+        "trans": [
+            "vt.解决;决心 n.决心"
+        ],
+        "pron": "[ri'zɔlv]"
+    },
+    {
+        "name": "resort",
+        "trans": [
+            "vi.求助",
+            "诉诸n.凭借，手段;胜地"
+        ],
+        "pron": "[ri'zɔ:t]"
+    },
+    {
+        "name": "restore",
+        "trans": [
+            "vt.恢复",
+            "归还;修补，重建"
+        ],
+        "pron": "[ris'tɔ:]"
+    },
+    {
+        "name": "resume",
+        "trans": [
+            "vt.重新开始"
+        ],
+        "pron": "[ri'zju:m]"
+    },
+    {
+        "name": "retail",
+        "trans": [
+            "n.零售 a.零售的"
+        ],
+        "pron": "['ri:teil]"
+    },
+    {
+        "name": "retain",
+        "trans": [
+            "vt.保持",
+            "保留"
+        ],
+        "pron": "[ri'tein]"
+    },
+    {
+        "name": "retire",
+        "trans": [
+            "vi.退休"
+        ],
+        "pron": "[ri'taiә]"
+    },
+    {
+        "name": "retirement",
+        "trans": [
+            "n.退休"
+        ],
+        "pron": "[ri'taiәmәnt]"
+    },
+    {
+        "name": "retreat",
+        "trans": [
+            "vi.退却",
+            "撤退"
+        ],
+        "pron": "[ri'tri:t]"
+    },
+    {
+        "name": "revenue",
+        "trans": [
+            "n.税收，财政收入"
+        ],
+        "pron": "['revinju:]"
+    },
+    {
+        "name": "reverse",
+        "trans": [
+            "vt.颠倒",
+            "翻转n.背面"
+        ],
+        "pron": "[ri'vә:s]"
+    },
+    {
+        "name": "revolution",
+        "trans": [
+            "n.革命;旋转"
+        ],
+        "pron": "[revә'lu:ʃәn]"
+    },
+    {
+        "name": "revolutionary",
+        "trans": [
+            "a.革命的 n.革命者"
+        ],
+        "pron": "[revә'lu:ʃәnәri]"
+    },
+    {
+        "name": "reward",
+        "trans": [
+            "n.报答；报酬 vt.报答；酬金"
+        ],
+        "pron": "[ri'wɔ:d]"
+    },
+    {
+        "name": "rhythm",
+        "trans": [
+            "n.韵律",
+            "节奏"
+        ],
+        "pron": "['riðәm]"
+    },
+    {
+        "name": "rice",
+        "trans": [
+            "n.稻",
+            "米",
+            "饭"
+        ],
+        "pron": "[rais]"
+    },
+    {
+        "name": "rid",
+        "trans": [
+            "vt.使摆脱",
+            "使去掉"
+        ],
+        "pron": "[rid]"
+    },
+    {
+        "name": "rider",
+        "trans": [
+            "n.骑手，骑车人"
+        ],
+        "pron": "['raidә]"
+    },
+    {
+        "name": "right-wing",
+        "trans": [
+            "a. 右翼的",
+            "右派的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "ring",
+        "trans": [
+            "vi.鸣;按铃，敲钟vt.打电话给；按铃，敲钟n.铃声；戒指，环"
+        ],
+        "pron": "[riŋ]"
+    },
+    {
+        "name": "riot",
+        "trans": [
+            "n.骚乱",
+            "暴乱"
+        ],
+        "pron": "['raiәt]"
+    },
+    {
+        "name": "roach",
+        "trans": [
+            "n.蟑螂"
+        ],
+        "pron": "[rәutʃ]"
+    },
+    {
+        "name": "rocket",
+        "trans": [
+            "n.火箭"
+        ],
+        "pron": "['rɔkit]"
+    },
+    {
+        "name": "romantic",
+        "trans": [
+            "a.浪漫的"
+        ],
+        "pron": "[rәu'mæ ntik]"
+    },
+    {
+        "name": "roof",
+        "trans": [
+            "n.屋顶"
+        ],
+        "pron": "[ru:f]"
+    },
+    {
+        "name": "root",
+        "trans": [
+            "n.根（部）；根源vi.生根，扎根"
+        ],
+        "pron": "[ru:t]"
+    },
+    {
+        "name": "rose",
+        "trans": [
+            "n.玫瑰花"
+        ],
+        "pron": "[rәuz]"
+    },
+    {
+        "name": "rouge",
+        "trans": [
+            "n.胭脂，口红唇膏 v.(在…上)擦口红"
+        ],
+        "pron": "[ru:ʒ]"
+    },
+    {
+        "name": "rough",
+        "trans": [
+            "a.表面不平的;粗略的；大致的"
+        ],
+        "pron": "[rʌf]"
+    },
+    {
+        "name": "routine",
+        "trans": [
+            "n.例行的公事 a.日常的，例行的"
+        ],
+        "pron": "[ru:'ti:n]"
+    },
+    {
+        "name": "row",
+        "trans": [
+            "vi.划船vt.划船n.(一)排",
+            "(一)行"
+        ],
+        "pron": "[rәu]"
+    },
+    {
+        "name": "rugby",
+        "trans": [
+            "n.橄榄球赛"
+        ],
+        "pron": "['rʌgbi]"
+    },
+    {
+        "name": "ruin",
+        "trans": [
+            "n.毁灭;废墟 vt.毁坏"
+        ],
+        "pron": "['ruin]"
+    },
+    {
+        "name": "ruling",
+        "trans": [
+            "a. 统治的，主要的 n.裁决，判决"
+        ],
+        "pron": "['ru:liŋ]"
+    },
+    {
+        "name": "rumour",
+        "trans": [
+            "n./v.传闻；谣传"
+        ],
+        "pron": "['ru:mә]"
+    },
+    {
+        "name": "runner",
+        "trans": [
+            "n.跑步者"
+        ],
+        "pron": "['rʌnә]"
+    },
+    {
+        "name": "rural",
+        "trans": [
+            "a.农村的"
+        ],
+        "pron": "['ruәrәl]"
+    },
+    {
+        "name": "rush",
+        "trans": [
+            "vi.冲",
+            "奔 vt. 匆忙地做a.（交通）繁忙的"
+        ],
+        "pron": "[rʌʃ]"
+    },
+    {
+        "name": "sack",
+        "trans": [
+            "n.袋",
+            "麻袋；解雇；洗劫",
+            "劫掠vt.洗劫;开除"
+        ],
+        "pron": "[sæ k]"
+    },
+    {
+        "name": "sacrifice",
+        "trans": [
+            "vt.牺牲",
+            "献祭"
+        ],
+        "pron": "['sæ krifais]"
+    },
+    {
+        "name": "sail",
+        "trans": [
+            "n.帆；航行 vi.航行vt.驾驶"
+        ],
+        "pron": "[seil]"
+    },
+    {
+        "name": "saint",
+        "trans": [
+            "n.圣徒",
+            "基督教徒"
+        ],
+        "pron": "[seint]"
+    },
+    {
+        "name": "sake",
+        "trans": [
+            "n.缘故",
+            "理由"
+        ],
+        "pron": "[seik]"
+    },
+    {
+        "name": "salary",
+        "trans": [
+            "n.薪水"
+        ],
+        "pron": "['sæ lәri]"
+    },
+    {
+        "name": "salt",
+        "trans": [
+            "n.盐",
+            "盐类 vt.加盐于"
+        ],
+        "pron": "[sɔ:lt]"
+    },
+    {
+        "name": "sample",
+        "trans": [
+            "n.样品",
+            "标本"
+        ],
+        "pron": "['sa:mpl]"
+    },
+    {
+        "name": "sand",
+        "trans": [
+            "n.沙子",
+            "沙滩"
+        ],
+        "pron": "[sæ nd]"
+    },
+    {
+        "name": "satellite",
+        "trans": [
+            "n.卫星"
+        ],
+        "pron": "['sæ tәlait]"
+    },
+    {
+        "name": "satisfied",
+        "trans": [
+            "a. 感到满意的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "sauce",
+        "trans": [
+            "n.调味汁",
+            "酱汁"
+        ],
+        "pron": "[sɔ:s]"
+    },
+    {
+        "name": "savings",
+        "trans": [
+            "n.储金，储蓄"
+        ],
+        "pron": "['seiviŋz]"
+    },
+    {
+        "name": "scandal",
+        "trans": [
+            "n.丑闻"
+        ],
+        "pron": "['skæ ndl]"
+    },
+    {
+        "name": "scientific",
+        "trans": [
+            "a.科学的"
+        ],
+        "pron": "[saiәn'tifik]"
+    },
+    {
+        "name": "scream",
+        "trans": [
+            "vi.尖叫n.尖叫声"
+        ],
+        "pron": "[skri:m]"
+    },
+    {
+        "name": "script",
+        "trans": [
+            "n.手稿"
+        ],
+        "pron": "[skript]"
+    },
+    {
+        "name": "seal",
+        "trans": [
+            "n.海豹；封条；图章 vt.封",
+            "密封"
+        ],
+        "pron": "['si:l]"
+    },
+    {
+        "name": "secretary-general",
+        "trans": [
+            "n. 秘书长",
+            "总书记"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "segment",
+        "trans": [
+            "n.切片;部分",
+            "段",
+            "节"
+        ],
+        "pron": "['segmәnt]"
+    },
+    {
+        "name": "seize",
+        "trans": [
+            "vt.抓住;夺取，占据"
+        ],
+        "pron": "[si:z]"
+    },
+    {
+        "name": "select",
+        "trans": [
+            "vt.选择 vi.挑选"
+        ],
+        "pron": "[si'lekt]"
+    },
+    {
+        "name": "selection",
+        "trans": [
+            "n.选择",
+            "挑选"
+        ],
+        "pron": "[si'lekʃәn]"
+    },
+    {
+        "name": "self",
+        "trans": [
+            "n.自我",
+            "自己"
+        ],
+        "pron": "[self]"
+    },
+    {
+        "name": "senator",
+        "trans": [
+            "n.参议员",
+            "评议员"
+        ],
+        "pron": "['senәtә]"
+    },
+    {
+        "name": "sensible",
+        "trans": [
+            "a.感觉得到的"
+        ],
+        "pron": "['sensәbl]"
+    },
+    {
+        "name": "sensitive",
+        "trans": [
+            "a.敏感的",
+            "灵敏的"
+        ],
+        "pron": "['sensitiv]"
+    },
+    {
+        "name": "seriously",
+        "trans": [
+            "ad.严重地；认真地，严肃地"
+        ],
+        "pron": "['siәriәsli]"
+    },
+    {
+        "name": "servant",
+        "trans": [
+            "n.仆人"
+        ],
+        "pron": "['sә:vәnt]"
+    },
+    {
+        "name": "set-to",
+        "trans": [
+            "n. 互殴",
+            "缠打",
+            "拳击比赛"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "shade",
+        "trans": [
+            "n.树荫;遮光物 vi.荫蔽"
+        ],
+        "pron": "[ʃeid]"
+    },
+    {
+        "name": "shadow",
+        "trans": [
+            "n.阴影",
+            "影子"
+        ],
+        "pron": "['ʃædәu]"
+    },
+    {
+        "name": "shame",
+        "trans": [
+            "n.羞耻",
+            "羞愧"
+        ],
+        "pron": "[ʃeim]"
+    },
+    {
+        "name": "shaped",
+        "trans": [
+            "v. 作形",
+            "给与形状;vbl. 成形",
+            "发展"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "shareholder",
+        "trans": [
+            "n.股东"
+        ],
+        "pron": "['ʃɛәhәuldә]"
+    },
+    {
+        "name": "shed",
+        "trans": [
+            "vt.流出;散发;脱落"
+        ],
+        "pron": "[ʃed]"
+    },
+    {
+        "name": "sheet",
+        "trans": [
+            "n.被单;纸张，薄片"
+        ],
+        "pron": "[ʃi:t]"
+    },
+    {
+        "name": "shell",
+        "trans": [
+            "n.贝壳;炮弹"
+        ],
+        "pron": "[ʃel]"
+    },
+    {
+        "name": "shelter",
+        "trans": [
+            "n.掩蔽处vt.遮蔽，掩护"
+        ],
+        "pron": "['ʃeltә]"
+    },
+    {
+        "name": "shift",
+        "trans": [
+            "vt.替换",
+            "转移n.转换"
+        ],
+        "pron": "[ʃift]"
+    },
+    {
+        "name": "shirt",
+        "trans": [
+            "n.衬衫"
+        ],
+        "pron": "[ʃә:t]"
+    },
+    {
+        "name": "shoe",
+        "trans": [
+            "n.鞋"
+        ],
+        "pron": "[ʃu:]"
+    },
+    {
+        "name": "shopping",
+        "trans": [
+            "n.购物"
+        ],
+        "pron": "['ʃɔpiŋ]"
+    },
+    {
+        "name": "shore",
+        "trans": [
+            "n.滨",
+            "岸"
+        ],
+        "pron": "[ʃɔ:]"
+    },
+    {
+        "name": "shortage",
+        "trans": [
+            "n.不足",
+            "缺乏"
+        ],
+        "pron": "['ʃɔ:tidʒ]"
+    },
+    {
+        "name": "shortly",
+        "trans": [
+            "ad.立刻;简短地"
+        ],
+        "pron": "['ʃɔ:tli]"
+    },
+    {
+        "name": "short-term",
+        "trans": [
+            "a. 短期的"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "shouldn't",
+        "trans": [
+            "不应该，不要"
+        ],
+        "pron": "['ʃudnt]"
+    },
+    {
+        "name": "shout",
+        "trans": [
+            "n.呼喊 vi.呼喊",
+            "喊叫"
+        ],
+        "pron": "[ʃaut]"
+    },
+    {
+        "name": "shut",
+        "trans": [
+            "vt.关上",
+            "关闭a.关闭的"
+        ],
+        "pron": "[ʃʌt]"
+    },
+    {
+        "name": "sick",
+        "trans": [
+            "a.有病的;恶心的"
+        ],
+        "pron": "[sik]"
+    },
+    {
+        "name": "sigh",
+        "trans": [
+            "vi.叹气",
+            "叹息 n.叹息"
+        ],
+        "pron": "[sai]"
+    },
+    {
+        "name": "signal",
+        "trans": [
+            "n.信号vi.发信号"
+        ],
+        "pron": "['signәl]"
+    },
+    {
+        "name": "silence",
+        "trans": [
+            "n.沉默"
+        ],
+        "pron": "['sailәns]"
+    },
+    {
+        "name": "silent",
+        "trans": [
+            "a.沉默的",
+            "寂静无声的"
+        ],
+        "pron": "['sailәnt]"
+    },
+    {
+        "name": "silver",
+        "trans": [
+            "n.银",
+            "银子",
+            "银器"
+        ],
+        "pron": "['silvә]"
+    },
+    {
+        "name": "singer",
+        "trans": [
+            "n. 歌 手"
+        ],
+        "pron": "['siŋә]"
+    },
+    {
+        "name": "sink",
+        "trans": [
+            "vi.下沉",
+            "降低n.水槽",
+            "水池"
+        ],
+        "pron": "[siŋk]"
+    },
+    {
+        "name": "ski",
+        "trans": [
+            "n. 滑雪橇vi. 滑雪"
+        ],
+        "pron": "[ski:]"
+    },
+    {
+        "name": "sky",
+        "trans": [
+            "n.天空"
+        ],
+        "pron": "[skai]"
+    },
+    {
+        "name": "slice",
+        "trans": [
+            "n.薄片",
+            "切片;部分"
+        ],
+        "pron": "[slais]"
+    },
+    {
+        "name": "slide",
+        "trans": [
+            "vi.滑 vt.使滑动"
+        ],
+        "pron": "[slaid]"
+    },
+    {
+        "name": "slight",
+        "trans": [
+            "a.细长的;轻微的"
+        ],
+        "pron": "[slait]"
+    },
+    {
+        "name": "slim",
+        "trans": [
+            "a.细长的",
+            "微小的"
+        ],
+        "pron": "[slim]"
+    },
+    {
+        "name": "smart",
+        "trans": [
+            "a.巧妙的",
+            "聪明的"
+        ],
+        "pron": "[sma:t]"
+    },
+    {
+        "name": "smash",
+        "trans": [
+            "vt.打碎",
+            "打破"
+        ],
+        "pron": "[smæ ʃ]"
+    },
+    {
+        "name": "smell",
+        "trans": [
+            "n.嗅觉;气味 vt.嗅vi.散发气味"
+        ],
+        "pron": "[smel]"
+    },
+    {
+        "name": "smooth",
+        "trans": [
+            "a.平滑的",
+            "平静的"
+        ],
+        "pron": "[smu:ð]"
+    },
+    {
+        "name": "snap",
+        "trans": [
+            "vt.猛咬;突然折断"
+        ],
+        "pron": "[snæ p]"
+    },
+    {
+        "name": "snow",
+        "trans": [
+            "n.雪 vi.下雪"
+        ],
+        "pron": "[snәu]"
+    },
+    {
+        "name": "so-called",
+        "trans": [
+            "a.所谓的"
+        ],
+        "pron": "['sәu'kɔ:ld]"
+    },
+    {
+        "name": "soccer",
+        "trans": [
+            "n.英式足球"
+        ],
+        "pron": "['sɔkә]"
+    },
+    {
+        "name": "socialist",
+        "trans": [
+            "a.社会主义的"
+        ],
+        "pron": "['sәuʃәlist]"
+    },
+    {
+        "name": "software",
+        "trans": [
+            "n.软件"
+        ],
+        "pron": "['sɔftwɛә]"
+    },
+    {
+        "name": "soil",
+        "trans": [
+            "n.土壤;土地"
+        ],
+        "pron": "[sɔil]"
+    },
+    {
+        "name": "solicitor",
+        "trans": [
+            "n.律师",
+            "法律顾问"
+        ],
+        "pron": "[sә'lisitә]"
+    },
+    {
+        "name": "solid",
+        "trans": [
+            "n.固体 a.固体的;稳固的"
+        ],
+        "pron": "['sɔlid]"
+    },
+    {
+        "name": "solve",
+        "trans": [
+            "vt.解答",
+            "解决"
+        ],
+        "pron": "['sɔlv]"
+    },
+    {
+        "name": "somehow",
+        "trans": [
+            "ad.由于某种原因"
+        ],
+        "pron": "['sʌmhau]"
+    },
+    {
+        "name": "somewhat",
+        "trans": [
+            "pron.一点儿 ad.有点"
+        ],
+        "pron": "['sʌmwɔt]"
+    },
+    {
+        "name": "somewhere",
+        "trans": [
+            "ad.在某处 n.某地"
+        ],
+        "pron": "['sʌmwɛә]"
+    },
+    {
+        "name": "sophisticated",
+        "trans": [
+            "a.老于世故的",
+            "成熟的"
+        ],
+        "pron": "[sә'fistikeitid]"
+    },
+    {
+        "name": "soul",
+        "trans": [
+            "n.灵魂",
+            "精神;人"
+        ],
+        "pron": "[sәul]"
+    },
+    {
+        "name": "spare",
+        "trans": [
+            "vt.节约 ；抽出；饶恕a.多余的;空闲的"
+        ],
+        "pron": "[spɛә]"
+    },
+    {
+        "name": "spark",
+        "trans": [
+            "n.火花",
+            "火星"
+        ],
+        "pron": "[spa:k]"
+    },
+    {
+        "name": "speaker",
+        "trans": [
+            "n.说话者;扬声器"
+        ],
+        "pron": "['spi:kә]"
+    },
+    {
+        "name": "specialist",
+        "trans": [
+            "n.专家"
+        ],
+        "pron": "[speʃәlist]"
+    },
+    {
+        "name": "specialize",
+        "trans": [
+            "vi.专攻"
+        ],
+        "pron": "['speʃәlaiz]"
+    },
+    {
+        "name": "species",
+        "trans": [
+            "n.物种",
+            "种类"
+        ],
+        "pron": "['spi:ʃi:z]"
+    },
+    {
+        "name": "specifically",
+        "trans": [
+            "ad. 特定的;明确的"
+        ],
+        "pron": "[spe'sifikәli]"
+    },
+    {
+        "name": "spectacular",
+        "trans": [
+            "a.惊人的 n. 展览物"
+        ],
+        "pron": "[spek'tæ kjulә]"
+    },
+    {
+        "name": "speculate",
+        "trans": [
+            "vi.思索",
+            "沉思;投机"
+        ],
+        "pron": "['spekjuleit]"
+    },
+    {
+        "name": "spell",
+        "trans": [
+            "vt.拼写 vi.拼字"
+        ],
+        "pron": "[spel]"
+    },
+    {
+        "name": "spin",
+        "trans": [
+            "vt.纺;使旋转n.旋转"
+        ],
+        "pron": "[spin]"
+    },
+    {
+        "name": "spiritual",
+        "trans": [
+            "a.精神的",
+            "心灵的"
+        ],
+        "pron": "['spiritjuәl]"
+    },
+    {
+        "name": "spite",
+        "trans": [
+            "n.不顾"
+        ],
+        "pron": "[spait]"
+    },
+    {
+        "name": "sponsor",
+        "trans": [
+            "n.发起者vt.发起"
+        ],
+        "pron": "['spɔnsә]"
+    },
+    {
+        "name": "spray",
+        "trans": [
+            "n.浪花，水花;喷雾vt.喷，喷射"
+        ],
+        "pron": "[sprei]"
+    },
+    {
+        "name": "spur",
+        "trans": [
+            "n.刺激物 vt.刺激"
+        ],
+        "pron": "[spә:]"
+    },
+    {
+        "name": "squad",
+        "trans": [
+            "n.班"
+        ],
+        "pron": "[skwɔd]"
+    },
+    {
+        "name": "squeeze",
+        "trans": [
+            "vt.榨",
+            "挤;压榨"
+        ],
+        "pron": "['skwi:z]"
+    },
+    {
+        "name": "stadium",
+        "trans": [
+            "n. 露天大型运动场"
+        ],
+        "pron": "['steidjәm]"
+    },
+    {
+        "name": "stamp",
+        "trans": [
+            "vi.跺脚vt.盖章；跺脚n.戳子;邮票"
+        ],
+        "pron": "[stæ mp]"
+    },
+    {
+        "name": "stare",
+        "trans": [
+            "vi.凝视"
+        ],
+        "pron": "[stɛә]"
+    },
+    {
+        "name": "Statistic",
+        "trans": [
+            "a.统计的",
+            "统计学的"
+        ],
+        "pron": "[stә'tistik]"
+    },
+    {
+        "name": "steady",
+        "trans": [
+            "a.稳固的 vt.使稳定"
+        ],
+        "pron": "['stedi]"
+    },
+    {
+        "name": "steal",
+        "trans": [
+            "vt.偷",
+            "窃取"
+        ],
+        "pron": "[sti:l]"
+    },
+    {
+        "name": "steam",
+        "trans": [
+            "n.蒸汽vi.蒸发vt.蒸煮"
+        ],
+        "pron": "[sti:m]"
+    },
+    {
+        "name": "steel",
+        "trans": [
+            "n.钢"
+        ],
+        "pron": "['sti:l]"
+    },
+    {
+        "name": "stem",
+        "trans": [
+            "n.茎",
+            "(树)干vi.起源"
+        ],
+        "pron": "[stem]"
+    },
+    {
+        "name": "stick",
+        "trans": [
+            "n.棍",
+            "棒 vt.刺;粘贴"
+        ],
+        "pron": "[stik]"
+    },
+    {
+        "name": "stimulate",
+        "trans": [
+            "vt.刺激",
+            "激励"
+        ],
+        "pron": "['stimjuleit]"
+    },
+    {
+        "name": "stir",
+        "trans": [
+            "vt.搅动",
+            "搅拌；煽动 n.惊动；搅拌"
+        ],
+        "pron": "[stә:]"
+    },
+    {
+        "name": "stock exchange",
+        "trans": [
+            "n. 证券交易所"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "stock market",
+        "trans": [
+            "n. 股票市场"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "stomach",
+        "trans": [
+            "n.胃；胃口；欲望"
+        ],
+        "pron": "['stʌmәk]"
+    },
+    {
+        "name": "storm",
+        "trans": [
+            "n.暴风雨；大动荡"
+        ],
+        "pron": "[stɔ:m]"
+    },
+    {
+        "name": "strain",
+        "trans": [
+            "n.紧张；张力 vi.尽力vt.拉紧"
+        ],
+        "pron": "['strein]"
+    },
+    {
+        "name": "strategic",
+        "trans": [
+            "a.战略上的"
+        ],
+        "pron": "[strә'ti:dʒik]"
+    },
+    {
+        "name": "stream",
+        "trans": [
+            "n.河",
+            "流;一连串",
+            "连续"
+        ],
+        "pron": "[stri:m]"
+    },
+    {
+        "name": "strengthen",
+        "trans": [
+            "vt.加强",
+            "巩固"
+        ],
+        "pron": "['streŋθәn]"
+    },
+    {
+        "name": "stretch",
+        "trans": [
+            "vt.伸展n.一段时间(路程)；拉长，延伸"
+        ],
+        "pron": "[stretʃ]"
+    },
+    {
+        "name": "strict",
+        "trans": [
+            "a.严格的",
+            "严谨的"
+        ],
+        "pron": "[strikt]"
+    },
+    {
+        "name": "striking",
+        "trans": [
+            "a.显著的，惊人的"
+        ],
+        "pron": "['straikiŋ]"
+    },
+    {
+        "name": "string",
+        "trans": [
+            "n.线;弦；一串"
+        ],
+        "pron": "[striŋ]"
+    },
+    {
+        "name": "strip",
+        "trans": [
+            "vt.剥",
+            "夺去；脱衣服n.条带"
+        ],
+        "pron": "[strip]"
+    },
+    {
+        "name": "stroke",
+        "trans": [
+            "vt.打",
+            "击;抚摩 n.敲击；中风；抚摸"
+        ],
+        "pron": "[strәuk]"
+    },
+    {
+        "name": "stupid",
+        "trans": [
+            "a.愚蠢的"
+        ],
+        "pron": "['stju:pid]"
+    },
+    {
+        "name": "subsequent",
+        "trans": [
+            "a.随后的",
+            "后来的"
+        ],
+        "pron": "['sʌbsikwәnt]"
+    },
+    {
+        "name": "subsidy",
+        "trans": [
+            "n.补助金",
+            "津贴"
+        ],
+        "pron": "['sʌbsidi]"
+    },
+    {
+        "name": "substance",
+        "trans": [
+            "n.物质;本质"
+        ],
+        "pron": "['sʌbstәns]"
+    },
+    {
+        "name": "substantial",
+        "trans": [
+            "a.物质的;本质的"
+        ],
+        "pron": "[sәb'stæ nʃәl]"
+    },
+    {
+        "name": "substitute",
+        "trans": [
+            "n.替代物vt.用…代替"
+        ],
+        "pron": "['sʌbstitju:t]"
+    },
+    {
+        "name": "sudden",
+        "trans": [
+            "a.突然的"
+        ],
+        "pron": "['sʌdn]"
+    },
+    {
+        "name": "sufficient",
+        "trans": [
+            "a.足够的",
+            "充分的"
+        ],
+        "pron": "[sә'fiʃәnt]"
+    },
+    {
+        "name": "sugar",
+        "trans": [
+            "n.糖"
+        ],
+        "pron": "['ʃugә]"
+    },
+    {
+        "name": "suggestion",
+        "trans": [
+            "n.建议",
+            "意见;暗示"
+        ],
+        "pron": "[sә'dʒestʃәn]"
+    },
+    {
+        "name": "suicide",
+        "trans": [
+            "n.自杀"
+        ],
+        "pron": "['sjuisaid]"
+    },
+    {
+        "name": "Suitable",
+        "trans": [
+            "a.适宜的；恰当的"
+        ],
+        "pron": "['sju:tәbl]"
+    },
+    {
+        "name": "sum",
+        "trans": [
+            "n.总数;金额vi.共计"
+        ],
+        "pron": "[sʌm]"
+    },
+    {
+        "name": "super",
+        "trans": [
+            "a.极好的",
+            "超级的"
+        ],
+        "pron": "['sju:pә]"
+    },
+    {
+        "name": "superb",
+        "trans": [
+            "a.壮丽的",
+            "超等的"
+        ],
+        "pron": "[sju:'pә:b]"
+    },
+    {
+        "name": "superior",
+        "trans": [
+            "n.上级 a.较高的;优越的"
+        ],
+        "pron": "[sju:'piәriә]"
+    },
+    {
+        "name": "surely",
+        "trans": [
+            "ad.肯定，的确"
+        ],
+        "pron": "['ʃuәli]"
+    },
+    {
+        "name": "surgery",
+        "trans": [
+            "n.外科手术"
+        ],
+        "pron": "['sә:dʒәri]"
+    },
+    {
+        "name": "surplus",
+        "trans": [
+            "a.过剩的，多余的 n.过剩",
+            "剩余"
+        ],
+        "pron": "['sә:plәs]"
+    },
+    {
+        "name": "surrender",
+        "trans": [
+            "vi.投降；屈服，让步"
+        ],
+        "pron": "[sә'rendә]"
+    },
+    {
+        "name": "suspend",
+        "trans": [
+            "vt.吊",
+            "悬;推迟"
+        ],
+        "pron": "[sәs'pend]"
+    },
+    {
+        "name": "suspicion",
+        "trans": [
+            "n.怀疑",
+            "猜疑"
+        ],
+        "pron": "[sәs'piʃәn]"
+    },
+    {
+        "name": "sustain",
+        "trans": [
+            "vt.持续，保持"
+        ],
+        "pron": "[sәs'tein]"
+    },
+    {
+        "name": "sweep",
+        "trans": [
+            "vt.打扫；掠过vi.快速移动"
+        ],
+        "pron": "[swi:p]"
+    },
+    {
+        "name": "sweet",
+        "trans": [
+            "a.甜的；温柔的n.糖果，甜食"
+        ],
+        "pron": "[swi:t]"
+    },
+    {
+        "name": "swim",
+        "trans": [
+            "vi.游泳 n.游泳"
+        ],
+        "pron": "[swim]"
+    },
+    {
+        "name": "swing",
+        "trans": [
+            "vi.摇摆",
+            "回转n.摇摆;秋千"
+        ],
+        "pron": "[swiŋ]"
+    },
+    {
+        "name": "switch",
+        "trans": [
+            "n.开关;转换vt.转换"
+        ],
+        "pron": "[switʃ]"
+    },
+    {
+        "name": "symbol",
+        "trans": [
+            "n.象征；符号"
+        ],
+        "pron": "['simbәl]"
+    },
+    {
+        "name": "sympathy",
+        "trans": [
+            "n.同情，同情心"
+        ],
+        "pron": "['simpәθi]"
+    },
+    {
+        "name": "symptom",
+        "trans": [
+            "n.症状;征兆"
+        ],
+        "pron": "['simptәm]"
+    },
+    {
+        "name": "tackle",
+        "trans": [
+            "vt.解决",
+            "对付"
+        ],
+        "pron": "['tæ kl]"
+    },
+    {
+        "name": "tactic",
+        "trans": [
+            "n.策略；战术"
+        ],
+        "pron": "['tæ ktik]"
+    },
+    {
+        "name": "tail",
+        "trans": [
+            "n.尾巴"
+        ],
+        "pron": "[teil]"
+    },
+    {
+        "name": "takeover",
+        "trans": [
+            "n.(事业等的)接管；(经营权等的)接收"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "tale",
+        "trans": [
+            "n.故事；传说"
+        ],
+        "pron": "[teil]"
+    },
+    {
+        "name": "tall",
+        "trans": [
+            "n.高的",
+            "身材高的"
+        ],
+        "pron": "[tɔ:l]"
+    },
+    {
+        "name": "tank",
+        "trans": [
+            "n.坦克;大容器"
+        ],
+        "pron": "[tæŋk]"
+    },
+    {
+        "name": "tap",
+        "trans": [
+            "vt.轻打",
+            "轻敲n.塞子",
+            "龙头;轻叩",
+            "轻拍"
+        ],
+        "pron": "[tæ p]"
+    },
+    {
+        "name": "teaching",
+        "trans": [
+            "n.教学；(pl.)教导，学说"
+        ],
+        "pron": "['ti:tʃiŋ]"
+    },
+    {
+        "name": "tear",
+        "trans": [
+            "n.泪滴",
+            "眼泪vt.撕开",
+            "撕裂"
+        ],
+        "pron": "[tiә, tɛә]"
+    },
+    {
+        "name": "technical",
+        "trans": [
+            "a.技术的",
+            "工艺的"
+        ],
+        "pron": "['teknikәl]"
+    },
+    {
+        "name": "teenager",
+        "trans": [
+            "n.青少年"
+        ],
+        "pron": "['ti:neidʒә]"
+    },
+    {
+        "name": "temperature",
+        "trans": [
+            "n.温度;体温"
+        ],
+        "pron": "['tempәritʃә]"
+    },
+    {
+        "name": "temple",
+        "trans": [
+            "n.神殿",
+            "庙宇;太阳穴"
+        ],
+        "pron": "['templ]"
+    },
+    {
+        "name": "temporary",
+        "trans": [
+            "a.暂时的",
+            "临时的"
+        ],
+        "pron": "['tempәrәri]"
+    },
+    {
+        "name": "tendency",
+        "trans": [
+            "n.趋向",
+            "趋势"
+        ],
+        "pron": "['tendәnsi]"
+    },
+    {
+        "name": "tennis",
+        "trans": [
+            "n.网球运动"
+        ],
+        "pron": "['tenis]"
+    },
+    {
+        "name": "tension",
+        "trans": [
+            "n.紧张",
+            "不安"
+        ],
+        "pron": "['tenʃәn]"
+    },
+    {
+        "name": "terrorist",
+        "trans": [
+            "n.恐怖分子"
+        ],
+        "pron": "['terәrist]"
+    },
+    {
+        "name": "testing",
+        "trans": [
+            "n.试验，测试"
+        ],
+        "pron": "['testiŋ]"
+    },
+    {
+        "name": "text",
+        "trans": [
+            "n.原文；文本；课文"
+        ],
+        "pron": "[tekst]"
+    },
+    {
+        "name": "theme",
+        "trans": [
+            "n.题目;词干;主旋律"
+        ],
+        "pron": "[θi:m]"
+    },
+    {
+        "name": "therapy",
+        "trans": [
+            "n.治疗"
+        ],
+        "pron": "['θerәpi]"
+    },
+    {
+        "name": "thick",
+        "trans": [
+            "a.厚的;密的",
+            "浓的"
+        ],
+        "pron": "[θik]"
+    },
+    {
+        "name": "thin",
+        "trans": [
+            "a.薄的;淡的;瘦的"
+        ],
+        "pron": "[θin]"
+    },
+    {
+        "name": "Third World",
+        "trans": [
+            "[the ~]"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "thorough",
+        "trans": [
+            "a.彻底的",
+            "详尽的"
+        ],
+        "pron": "['θʌrә]"
+    },
+    {
+        "name": "threatening",
+        "trans": [
+            "a.不祥的"
+        ],
+        "pron": "[`θretәnIŋ]"
+    },
+    {
+        "name": "throat",
+        "trans": [
+            "n.咽喉"
+        ],
+        "pron": "[θrәut]"
+    },
+    {
+        "name": "tide",
+        "trans": [
+            "n.潮汐；趋势"
+        ],
+        "pron": "[taid]"
+    },
+    {
+        "name": "tight",
+        "trans": [
+            "a.紧的；紧身的ad.紧紧地"
+        ],
+        "pron": "[tait]"
+    },
+    {
+        "name": "till",
+        "trans": [
+            "prep.直到…为止conj.直到…为止"
+        ],
+        "pron": "[til]"
+    },
+    {
+        "name": "tiny",
+        "trans": [
+            "a.微小的",
+            "极小的"
+        ],
+        "pron": "['taini]"
+    },
+    {
+        "name": "tip",
+        "trans": [
+            "vt.轻击vi.给小费n.小费"
+        ],
+        "pron": "[tip]"
+    },
+    {
+        "name": "tired",
+        "trans": [
+            "a.疲劳的；厌倦的"
+        ],
+        "pron": "['taiәd]"
+    },
+    {
+        "name": "Tissue",
+        "trans": [
+            "n.薄绢",
+            "薄纸巾;组织"
+        ],
+        "pron": "['tisju:]"
+    },
+    {
+        "name": "ton",
+        "trans": [
+            "n.吨;大量"
+        ],
+        "pron": "[tʌn]"
+    },
+    {
+        "name": "tone",
+        "trans": [
+            "n.腔调",
+            "声调"
+        ],
+        "pron": "[tәun]"
+    },
+    {
+        "name": "tool",
+        "trans": [
+            "n.工具"
+        ],
+        "pron": "[tu:l]"
+    },
+    {
+        "name": "tooth",
+        "trans": [
+            "n.牙齿"
+        ],
+        "pron": "[tu:θ]"
+    },
+    {
+        "name": "torture",
+        "trans": [
+            "n.拷问",
+            "折磨vt.拷打"
+        ],
+        "pron": "['tɔ:tʃә]"
+    },
+    {
+        "name": "tourist",
+        "trans": [
+            "n.旅游者",
+            "观光者"
+        ],
+        "pron": "['tuәrist]"
+    },
+    {
+        "name": "tournament",
+        "trans": [
+            "n.联赛；比赛"
+        ],
+        "pron": "['tuәnәmәnt]"
+    },
+    {
+        "name": "tower",
+        "trans": [
+            "n.塔 vi.屹立",
+            "高耸"
+        ],
+        "pron": "['tauә]"
+    },
+    {
+        "name": "toy",
+        "trans": [
+            "n.玩具"
+        ],
+        "pron": "[tɔi]"
+    },
+    {
+        "name": "trace",
+        "trans": [
+            "n.痕迹；微量vt.跟踪"
+        ],
+        "pron": "[treis]"
+    },
+    {
+        "name": "trader",
+        "trans": [
+            "n.商人"
+        ],
+        "pron": "['treidә]"
+    },
+    {
+        "name": "tradition",
+        "trans": [
+            "n.传统",
+            "惯例"
+        ],
+        "pron": "[trә'diʃәn]"
+    },
+    {
+        "name": "traffic",
+        "trans": [
+            "n.交通"
+        ],
+        "pron": "['træ fik]"
+    },
+    {
+        "name": "tragedy",
+        "trans": [
+            "n.悲剧",
+            "惨案"
+        ],
+        "pron": "['træ dʒidi]"
+    },
+    {
+        "name": "trail",
+        "trans": [
+            "n.痕迹;小径 vt.跟踪"
+        ],
+        "pron": "[treil]"
+    },
+    {
+        "name": "transform",
+        "trans": [
+            "vt.改变",
+            "改造"
+        ],
+        "pron": "[træ ns'fɔ:m]"
+    },
+    {
+        "name": "transition",
+        "trans": [
+            "n.转变",
+            "变迁"
+        ],
+        "pron": "[træ n'siʃәn]"
+    },
+    {
+        "name": "trap",
+        "trans": [
+            "n.陷阱;诡计vt.诱骗"
+        ],
+        "pron": "[træ p]"
+    },
+    {
+        "name": "traveller",
+        "trans": [
+            "n.旅行者"
+        ],
+        "pron": "['træ vlә]"
+    },
+    {
+        "name": "treasury",
+        "trans": [
+            "n.财政部；基金"
+        ],
+        "pron": "['treʒәri]"
+    },
+    {
+        "name": "tremendous",
+        "trans": [
+            "a.极大的;非常的"
+        ],
+        "pron": "[tri'mendәs]"
+    },
+    {
+        "name": "trend",
+        "trans": [
+            "vi.伸向;倾向n.倾向"
+        ],
+        "pron": "[trend]"
+    },
+    {
+        "name": "trick",
+        "trans": [
+            "n.诡计;窍门vt.哄骗"
+        ],
+        "pron": "[trik]"
+    },
+    {
+        "name": "trigger",
+        "trans": [
+            "n.扳机vt.触发",
+            "引起"
+        ],
+        "pron": "['trigә]"
+    },
+    {
+        "name": "triumph",
+        "trans": [
+            "n.凯旋",
+            "胜利vi.成功"
+        ],
+        "pron": "['traiәmf]"
+    },
+    {
+        "name": "truck",
+        "trans": [
+            "n.卡车"
+        ],
+        "pron": "[trʌk]"
+    },
+    {
+        "name": "truly",
+        "trans": [
+            "ad.真正地"
+        ],
+        "pron": "['tru:li]"
+    },
+    {
+        "name": "tube",
+        "trans": [
+            "n.管子"
+        ],
+        "pron": "[tju:b]"
+    },
+    {
+        "name": "tune",
+        "trans": [
+            "n.调子;和谐"
+        ],
+        "pron": "[tju:n]"
+    },
+    {
+        "name": "tunnel",
+        "trans": [
+            "n.隧道",
+            "地道"
+        ],
+        "pron": "['tʌnl]"
+    },
+    {
+        "name": "twin",
+        "trans": [
+            "a.孪生的 n.孪生儿"
+        ],
+        "pron": "[twin]"
+    },
+    {
+        "name": "twist",
+        "trans": [
+            "vt.捻",
+            "拧 n.扭弯"
+        ],
+        "pron": "[twist]"
+    },
+    {
+        "name": "typical",
+        "trans": [
+            "a.典型的",
+            "代表性的"
+        ],
+        "pron": "['tipikәl]"
+    },
+    {
+        "name": "ultimate",
+        "trans": [
+            "a.最后的",
+            "最终的"
+        ],
+        "pron": "['ʌltimit]"
+    },
+    {
+        "name": "ultimately",
+        "trans": [
+            "ad.最后，终于"
+        ],
+        "pron": "['ʌltimitli]"
+    },
+    {
+        "name": "unable",
+        "trans": [
+            "a.不能的",
+            "不会的"
+        ],
+        "pron": "['ʌn'eibl]"
+    },
+    {
+        "name": "uncle",
+        "trans": [
+            "n.伯父",
+            "叔父"
+        ],
+        "pron": "['ʌŋkl]"
+    },
+    {
+        "name": "underground",
+        "trans": [
+            "a.地下的;秘密的 ad.在地面下；秘密地n.地铁"
+        ],
+        "pron": "['ʌndәgraund]"
+    },
+    {
+        "name": "undermine",
+        "trans": [
+            "vt.破坏"
+        ],
+        "pron": "[ʌndә'main]"
+    },
+    {
+        "name": "understanding",
+        "trans": [
+            "n.理解，理解力"
+        ],
+        "pron": "[ʌndә'stændiŋ]"
+    },
+    {
+        "name": "unemployment",
+        "trans": [
+            "n.失业"
+        ],
+        "pron": "['ʌnim'plɔimәnt]"
+    },
+    {
+        "name": "unexpected",
+        "trans": [
+            "a.意外的"
+        ],
+        "pron": "['ʌniks'pektid]"
+    },
+    {
+        "name": "unfair",
+        "trans": [
+            "a.不公平的"
+        ],
+        "pron": "['ʌn'fɛә]"
+    },
+    {
+        "name": "unfortunately",
+        "trans": [
+            "ad.不幸地"
+        ],
+        "pron": "[ʌn'fɔ:tʃәnitli]"
+    },
+    {
+        "name": "unhappy",
+        "trans": [
+            "a.不愉快的"
+        ],
+        "pron": "[ʌn'hæ pi]"
+    },
+    {
+        "name": "unidentified",
+        "trans": [
+            "a. 未经确认的"
+        ],
+        "pron": "[ʌnai'dentifaid]"
+    },
+    {
+        "name": "uniform",
+        "trans": [
+            "a.一样的n.制服"
+        ],
+        "pron": "['ju:nifɔ:m]"
+    },
+    {
+        "name": "unique",
+        "trans": [
+            "a.唯一的"
+        ],
+        "pron": "[ju:'ni:k]"
+    },
+    {
+        "name": "united",
+        "trans": [
+            "adj.一致的；联合的"
+        ],
+        "pron": "[ju:'naitid]"
+    },
+    {
+        "name": "unity",
+        "trans": [
+            "n.统一",
+            "团结"
+        ],
+        "pron": "['ju:niti]"
+    },
+    {
+        "name": "universe",
+        "trans": [
+            "n.宇宙",
+            "世界"
+        ],
+        "pron": "['ju:nivә:s]"
+    },
+    {
+        "name": "unknown",
+        "trans": [
+            "a.未知的，不知名的"
+        ],
+        "pron": "['ʌn'nәun]"
+    },
+    {
+        "name": "unlike",
+        "trans": [
+            "a.不同的 prep.不像"
+        ],
+        "pron": "['ʌn'laik]"
+    },
+    {
+        "name": "unusual",
+        "trans": [
+            "a.不平常的",
+            "独特的"
+        ],
+        "pron": "[ʌn'ju:ʒuәl]"
+    },
+    {
+        "name": "upper",
+        "trans": [
+            "a.上面的"
+        ],
+        "pron": "['ʌpә]"
+    },
+    {
+        "name": "Upset",
+        "trans": [
+            "vt.使不适",
+            "使心烦n.混乱"
+        ],
+        "pron": "[ʌp'set]"
+    },
+    {
+        "name": "urban",
+        "trans": [
+            "a.都市的"
+        ],
+        "pron": "['ә:bәn]"
+    },
+    {
+        "name": "urgent",
+        "trans": [
+            "a.紧急的"
+        ],
+        "pron": "['ә:dʒәnt]"
+    },
+    {
+        "name": "user",
+        "trans": [
+            "n.用户",
+            "使用者"
+        ],
+        "pron": "['ju:zә]"
+    },
+    {
+        "name": "valley",
+        "trans": [
+            "n.山谷",
+            "流域"
+        ],
+        "pron": "['væ li]"
+    },
+    {
+        "name": "valuable",
+        "trans": [
+            "a.值钱的",
+            "有价值的 n.贵重物品"
+        ],
+        "pron": "['væ ljuәbl]"
+    },
+    {
+        "name": "van",
+        "trans": [
+            "n.大篷车",
+            "运货车"
+        ],
+        "pron": "[væ n]"
+    },
+    {
+        "name": "vary",
+        "trans": [
+            "vt.改变"
+        ],
+        "pron": "['vɛәri]"
+    },
+    {
+        "name": "vast",
+        "trans": [
+            "a.巨大的，广阔的"
+        ],
+        "pron": "[va:st]"
+    },
+    {
+        "name": "vegetable",
+        "trans": [
+            "n.蔬菜"
+        ],
+        "pron": "['vedʒitәbl]"
+    },
+    {
+        "name": "venture",
+        "trans": [
+            "n.冒险 vi.冒险vt.敢于"
+        ],
+        "pron": "['ventʃә]"
+    },
+    {
+        "name": "venue",
+        "trans": [
+            "n.聚会地点，会场"
+        ],
+        "pron": "['venju:]"
+    },
+    {
+        "name": "verdict",
+        "trans": [
+            "n.裁决",
+            "定论"
+        ],
+        "pron": "['vә:dikt]"
+    },
+    {
+        "name": "vessel",
+        "trans": [
+            "n.容器;船"
+        ],
+        "pron": "['vesl]"
+    },
+    {
+        "name": "veteran",
+        "trans": [
+            "n.老兵",
+            "老手"
+        ],
+        "pron": "['vetәrәn]"
+    },
+    {
+        "name": "via",
+        "trans": [
+            "prep.经过",
+            "通过"
+        ],
+        "pron": "['vaiә]"
+    },
+    {
+        "name": "vice",
+        "trans": [
+            "n.老虎钳a.副的"
+        ],
+        "pron": "[vais]"
+    },
+    {
+        "name": "victimize",
+        "trans": [
+            "v.使牺牲；使受害"
+        ],
+        "pron": "['viktimaiz]"
+    },
+    {
+        "name": "violate",
+        "trans": [
+            "vt.违犯",
+            "违背"
+        ],
+        "pron": "['vaiәleit]"
+    },
+    {
+        "name": "violent",
+        "trans": [
+            "a.猛烈的",
+            "狂暴的"
+        ],
+        "pron": "['vaiәlәnt]"
+    },
+    {
+        "name": "virtually",
+        "trans": [
+            "ad.实际上",
+            "事实上"
+        ],
+        "pron": "['vә:tjuәli]"
+    },
+    {
+        "name": "virus",
+        "trans": [
+            "n.病毒"
+        ],
+        "pron": "['vaiәrәs]"
+    },
+    {
+        "name": "visible",
+        "trans": [
+            "a.可见的",
+            "看得见的"
+        ],
+        "pron": "['vizәbl]"
+    },
+    {
+        "name": "vision",
+        "trans": [
+            "n.视觉;想象力",
+            "梦幻"
+        ],
+        "pron": "['viʒәn]"
+    },
+    {
+        "name": "visitor",
+        "trans": [
+            "n.来访者;游客"
+        ],
+        "pron": "['vizitә]"
+    },
+    {
+        "name": "vital",
+        "trans": [
+            "a.致命的;重要的"
+        ],
+        "pron": "['vaitl]"
+    },
+    {
+        "name": "vitamin",
+        "trans": [
+            "n.维生素"
+        ],
+        "pron": "['vitәmin]"
+    },
+    {
+        "name": "voluntary",
+        "trans": [
+            "a.自愿的",
+            "志愿的"
+        ],
+        "pron": "['vɔlәntәri]"
+    },
+    {
+        "name": "volunteer",
+        "trans": [
+            "n.志愿者vt.志愿"
+        ],
+        "pron": "[vɔlәn'tiә]"
+    },
+    {
+        "name": "vulnerable",
+        "trans": [
+            "a.脆弱的"
+        ],
+        "pron": "['vʌlnәrәbl]"
+    },
+    {
+        "name": "wage",
+        "trans": [
+            "n.工资",
+            "报酬"
+        ],
+        "pron": "[weidʒ]"
+    },
+    {
+        "name": "wake",
+        "trans": [
+            "vi.醒来；觉悟vt.唤醒"
+        ],
+        "pron": "[weik]"
+    },
+    {
+        "name": "warning",
+        "trans": [
+            "n.警告"
+        ],
+        "pron": "['wɔ:niŋ]"
+    },
+    {
+        "name": "wash",
+        "trans": [
+            "vt.洗",
+            "冲 vi.洗涤"
+        ],
+        "pron": "[wɔʃ]"
+    },
+    {
+        "name": "watch",
+        "trans": [
+            "vt.观看；监视 vi.观看 n.手表"
+        ],
+        "pron": "[wɔtʃ]"
+    },
+    {
+        "name": "weaken",
+        "trans": [
+            "vt.削弱"
+        ],
+        "pron": "['wi:kәn]"
+    },
+    {
+        "name": "wealth",
+        "trans": [
+            "n.财富",
+            "财产"
+        ],
+        "pron": "[welθ]"
+    },
+    {
+        "name": "we'd",
+        "trans": [
+            "我们应该",
+            "我们将"
+        ],
+        "pron": "[wi:d]"
+    },
+    {
+        "name": "wedding",
+        "trans": [
+            "n.婚礼"
+        ],
+        "pron": "['wediŋ]"
+    },
+    {
+        "name": "weekly",
+        "trans": [
+            "a.每周的 ad.每周"
+        ],
+        "pron": "['wi:kli]"
+    },
+    {
+        "name": "weigh",
+        "trans": [
+            "vt.称…的重量;掂量"
+        ],
+        "pron": "[wei]"
+    },
+    {
+        "name": "welfare",
+        "trans": [
+            "n.幸福;福利"
+        ],
+        "pron": "['welfɛә]"
+    },
+    {
+        "name": "well-known",
+        "trans": [
+            "a.众所周知的"
+        ],
+        "pron": "['wel'nәun]"
+    },
+    {
+        "name": "wet",
+        "trans": [
+            "a.湿的"
+        ],
+        "pron": "[wet]"
+    },
+    {
+        "name": "wheel",
+        "trans": [
+            "n.轮",
+            "车轮"
+        ],
+        "pron": "[wi:l]"
+    },
+    {
+        "name": "whenever",
+        "trans": [
+            "conj.无论何时",
+            "随时"
+        ],
+        "pron": "[wen'evә]"
+    },
+    {
+        "name": "whereas",
+        "trans": [
+            "conj.而",
+            "却"
+        ],
+        "pron": "[(h)wɛәr'æz]"
+    },
+    {
+        "name": "whilst",
+        "trans": [
+            "conj.当...时候"
+        ],
+        "pron": "['wailst]"
+    },
+    {
+        "name": "whip",
+        "trans": [
+            "vt.鞭笞 n.鞭子"
+        ],
+        "pron": "[wip]"
+    },
+    {
+        "name": "whisper",
+        "trans": [
+            "vt.低声地讲 vi.低语 n.耳语",
+            "私语"
+        ],
+        "pron": "['wispә]"
+    },
+    {
+        "name": "wicket",
+        "trans": [
+            "n. 小门",
+            "腰门",
+            "售票窗"
+        ],
+        "pron": "['wikit]"
+    },
+    {
+        "name": "widespread",
+        "trans": [
+            "a.分布广的",
+            "普遍的"
+        ],
+        "pron": "['waidspred]"
+    },
+    {
+        "name": "winning",
+        "trans": [
+            "a.获胜的，胜利的；吸引人的，有说服力的"
+        ],
+        "pron": "['winiŋ]"
+    },
+    {
+        "name": "winter",
+        "trans": [
+            "n.冬天"
+        ],
+        "pron": "['wintә]"
+    },
+    {
+        "name": "wipe",
+        "trans": [
+            "vt.揩",
+            "擦 n.揩",
+            "擦"
+        ],
+        "pron": "[waip]"
+    },
+    {
+        "name": "wire",
+        "trans": [
+            "n.金属线",
+            "电缆"
+        ],
+        "pron": "['waiә]"
+    },
+    {
+        "name": "wise",
+        "trans": [
+            "a.有智慧的",
+            "聪明的"
+        ],
+        "pron": "[waiz]"
+    },
+    {
+        "name": "withdrawal",
+        "trans": [
+            "n.收回；撤退"
+        ],
+        "pron": "[wið'drɔ:l]"
+    },
+    {
+        "name": "witness",
+        "trans": [
+            "n.证据;证人vt.目击"
+        ],
+        "pron": "['witnis]"
+    },
+    {
+        "name": "wooden",
+        "trans": [
+            "a.木制的;呆板的"
+        ],
+        "pron": "['wudn]"
+    },
+    {
+        "name": "world war",
+        "trans": [
+            "世界大战"
+        ],
+        "pron": "[]"
+    },
+    {
+        "name": "worldwide",
+        "trans": [
+            "adj.全世界的"
+        ],
+        "pron": "['wә:ldwaid]"
+    },
+    {
+        "name": "worried",
+        "trans": [
+            "a.担心的，焦虑的"
+        ],
+        "pron": "['wʌrid]"
+    },
+    {
+        "name": "wrap",
+        "trans": [
+            "vt.裹",
+            "包 n.披肩"
+        ],
+        "pron": "[ræp]"
+    },
+    {
+        "name": "written",
+        "trans": [
+            "a.书面的"
+        ],
+        "pron": "['ritn]"
+    },
+    {
+        "name": "yacht",
+        "trans": [
+            "n.游艇",
+            "快艇"
+        ],
+        "pron": "[jɔt]"
+    },
+    {
+        "name": "yellow",
+        "trans": [
+            "a.黄色的n.黄色"
+        ],
+        "pron": "['jelәu]"
+    },
+    {
+        "name": "yen",
+        "trans": [
+            "n.日元"
+        ],
+        "pron": "[jen]"
+    },
+    {
+        "name": "yield",
+        "trans": [
+            "vt.出产 vi.屈服 n.产量"
+        ],
+        "pron": "[ji:ld]"
+    },
+    {
+        "name": "youngster",
+        "trans": [
+            "n.儿童",
+            "少年"
+        ],
+        "pron": "['jʌŋstә]"
+    },
+    {
+        "name": "yours",
+        "trans": [
+            "pron.你们的(东西)"
+        ],
+        "pron": "[jɔ:z]"
+    },
+    {
+        "name": "zone",
+        "trans": [
+            "n.地区",
+            "区域"
+        ],
+        "pron": "[zәun]"
+    }
+]
