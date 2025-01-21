@@ -499,7 +499,6 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-
   {
     id: '3000_ClassRoom_English_Words',
     name: '专升本3000词',
@@ -544,6 +543,17 @@ const chinaExam: DictionaryResource[] = [
     tags: ['其他'],
     url: '/dicts/frequently_used_word03.json',
     length: 1435,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'roger',
+    name: "Roger's Words",
+    description: '学习、工作常用英语',
+    category: '英语词典',
+    tags: ['课外词汇'],
+    url: '/dicts/RogersWords.json',
+    length: 4174,
     language: 'en',
     languageCategory: 'en',
   },
