@@ -158,6 +158,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'kaoyanshanguo2025',
+    name: '考研 shanguo 2025',
+    description: '考研 shanguo 2025',
+    category: '中国考试',
+    tags: ['考研'],
+    url: '/dicts/kaoyanshanguo2025.json',
+    length: 2257,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'level4',
     name: '专四',
     description: '英语专业四级词库',
