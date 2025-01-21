@@ -218,104 +218,61 @@ const ResultScreen = () => {
         leaveTo="opacity-0"
       >
         <div className="flex h-screen items-center justify-center">
-          <div className="my-card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white pb-14 pl-10 pr-5 pt-10 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
+          <div className="my-card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white p-4 shadow-lg dark:bg-gray-800 sm:p-8 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
               {`${currentDictInfo.name} ${isReviewMode ? '错题复习' : '第' + (currentChapter + 1) + '章'}`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
               <IconX className="text-gray-400" />
             </button>
-            <div className="mt-10 flex flex-row gap-2 overflow-hidden">
-              <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
+            <div className="mt-10 flex flex-row gap-1 overflow-hidden sm:gap-2">
+              <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-0 pl-3 sm:px-1 md:px-2 lg:px-4">
                 <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={state.timerData.accuracy} />
                 <RemarkRing remark={timeString} caption="章节耗时" />
                 <RemarkRing remark={state.timerData.wpm + ''} caption="WPM" />
               </div>
-              <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
-                <div className="customized-scrollbar z-20 ml-8 mr-1 flex h-80 flex-row flex-wrap content-start gap-4 overflow-y-auto overflow-x-hidden pr-7 pt-9">
+              <div className="z-10 ml-6 flex flex-1 flex-col justify-between overflow-auto rounded-xl bg-indigo-50 dark:bg-gray-700">
+                <div className="customized-scrollbar z-20 flex flex-row flex-wrap content-start gap-2 overflow-y-auto overflow-x-hidden p-2 sm:gap-4 sm:p-4">
                   {wrongWords.map((word, index) => (
                     <WordChip key={`${index}-${word.name}`} word={word} />
                   ))}
                 </div>
-                <div className="align-center flex w-full flex-row justify-start rounded-b-xl bg-indigo-200 px-4 dark:bg-indigo-400">
+                <div className="align-center float-end flex w-full flex-row justify-start rounded-b-xl bg-indigo-200 px-2 dark:bg-indigo-400 sm:px-4">
                   <ConclusionBar mistakeLevel={mistakeLevel} mistakeCount={wrongWords.length} />
                 </div>
               </div>
-              <div className="ml-2 flex flex-col items-center justify-end gap-3 text-xl">
-                <AuthorButton />
-                {!isReviewMode && (
-                  <>
-                    <ShareButton />
-                    <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IexportWords>
-                  </>
-                )}
-                <IconXiaoHongShu
-                  fontSize={15}
-                  className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
-                  onClick={(e) => {
-                    handleOpenInfoPanel('redBook')
-                    e.currentTarget.blur()
-                  }}
-                />
-
-                <button
-                  onClick={(e) => {
-                    handleOpenInfoPanel('donate')
-                    e.currentTarget.blur()
-                  }}
-                  className="cursor-pointer"
-                  type="button"
-                  title="捐赠我们的项目"
-                >
-                  <IconCoffee fontSize={17} className={`text-gray-500 hover:text-amber-500  focus:outline-none ${styles.imgShake}`} />
-                </button>
-
-                <button
-                  onClick={(e) => {
-                    handleOpenInfoPanel('community')
-                    e.currentTarget.blur()
-                  }}
-                  className="cursor-pointer text-gray-500 dark:text-gray-400"
-                  type="button"
-                  title="加入我们的社区"
-                >
-                  <IconWechat fontSize={16} className="text-gray-500 hover:text-green-500 focus:outline-none" />
-                </button>
-
-                <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
-                  <IconGithub fontSize={16} className="text-gray-500 hover:text-green-800 focus:outline-none" />
-                </a>
-              </div>
             </div>
-            <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
+            <div className="mt-8 flex w-full flex-col justify-center gap-4  text-xl sm:flex-row">
               {!isReviewMode && (
-                <>
-                  <Tooltip content="快捷键：shift + enter">
-                    <button
-                      className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
-                      type="button"
-                      onClick={dictationButtonHandler}
-                      title="默写本章节"
-                    >
-                      默写本章节
-                    </button>
-                  </Tooltip>
-                  <Tooltip content="快捷键：space">
-                    <button
-                      className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
-                      type="button"
-                      onClick={repeatButtonHandler}
-                      title="重复本章节"
-                    >
-                      重复本章节
-                    </button>
-                  </Tooltip>
-                </>
+                <Tooltip content="快捷键：shift + enter">
+                  <button
+                    className="my-btn-primary h-10 w-full text-nowrap border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:h-12 sm:w-auto"
+                    type="button"
+                    onClick={dictationButtonHandler}
+                    title="默写本章节"
+                  >
+                    默写本章节
+                  </button>
+                </Tooltip>
+              )}
+              {!isReviewMode && (
+                <Tooltip content="快捷键：space">
+                  <button
+                    className="my-btn-primary h-10 w-full text-nowrap border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:h-12 sm:w-auto"
+                    type="button"
+                    onClick={repeatButtonHandler}
+                    title="重复本章节"
+                  >
+                    重复本章节
+                  </button>
+                </Tooltip>
               )}
               {!isLastChapter && !isReviewMode && (
                 <Tooltip content="快捷键：enter">
                   <button
-                    className={`{ isLastChapter ? 'cursor-not-allowed opacity-50' : ''} my-btn-primary h-12 text-base font-bold `}
+                    className={`${
+                      isLastChapter ? 'cursor-not-allowed opacity-50' : ''
+                    } my-btn-primary h-10 w-full text-nowrap text-base font-bold sm:h-12 sm:w-auto`}
                     type="button"
                     onClick={nextButtonHandler}
                     title="下一章节"
@@ -327,7 +284,7 @@ const ResultScreen = () => {
 
               {isReviewMode && (
                 <button
-                  className="my-btn-primary h-12 text-base font-bold"
+                  className="my-btn-primary h-10 w-full text-nowrap text-base font-bold sm:h-12 sm:w-auto"
                   type="button"
                   onClick={onNavigateToGallery}
                   title="练习其他章节"
@@ -335,6 +292,52 @@ const ResultScreen = () => {
                   练习其他章节
                 </button>
               )}
+            </div>
+
+            <div className="mt-2 flex items-center justify-center gap-3 py-2 text-xl">
+              <AuthorButton />
+              {!isReviewMode && (
+                <>
+                  <ShareButton />
+                  <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IexportWords>
+                </>
+              )}
+              <IconXiaoHongShu
+                fontSize={15}
+                className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
+                onClick={(e) => {
+                  handleOpenInfoPanel('redBook')
+                  e.currentTarget.blur()
+                }}
+              />
+
+              <button
+                onClick={(e) => {
+                  handleOpenInfoPanel('donate')
+                  e.currentTarget.blur()
+                }}
+                className="cursor-pointer"
+                type="button"
+                title="捐赠我们的项目"
+              >
+                <IconCoffee fontSize={17} className={`text-gray-500 hover:text-amber-500  focus:outline-none ${styles.imgShake}`} />
+              </button>
+
+              <button
+                onClick={(e) => {
+                  handleOpenInfoPanel('community')
+                  e.currentTarget.blur()
+                }}
+                className="cursor-pointer text-gray-500 dark:text-gray-400"
+                type="button"
+                title="加入我们的社区"
+              >
+                <IconWechat fontSize={16} className="text-gray-500 hover:text-green-500 focus:outline-none" />
+              </button>
+
+              <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
+                <IconGithub fontSize={16} className="text-gray-500 hover:text-green-800 focus:outline-none" />
+              </a>
             </div>
           </div>
         </div>

@@ -35,17 +35,17 @@ const Analysis = () => {
 
   useHotkeys('enter,esc', onBack, { preventDefault: true })
 
-  const { isEmpty, exerciseRecord, wordRecord, wpmRecord, accuracyRecord, wrongTimeRecord } = useWordStats(
-    dayjs().subtract(1, 'year').unix(),
-    dayjs().unix(),
-  )
+  const startDay = dayjs().subtract(1, 'year').startOf('day').unix()
+  const endDay = dayjs().endOf('day').unix()
+
+  const { isEmpty, exerciseRecord, wordRecord, wpmRecord, accuracyRecord, wrongTimeRecord } = useWordStats(startDay, endDay)
 
   return (
     <Layout>
       <div className="flex w-full flex-1 flex-col overflow-y-auto">
-        <div className="fixed top-0 z-20 flex h-16 w-full items-center justify-between border border-b dark:border-gray-500">
+        <div className="fixed top-0 z-20 flex h-12 w-full items-center justify-between border border-b  dark:border-gray-500">
           <div className="mx-10"></div>
-          <span className="text-xl font-medium dark:text-white">数据统计</span>
+          <span className="text-l font-medium dark:text-white sm:text-xl">数据统计</span>
           <IconX className="mx-4 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
         </div>
 
@@ -53,25 +53,25 @@ const Analysis = () => {
           <ScrollArea.Viewport className="h-full w-auto [&>div]:!block">
             {isEmpty ? (
               <div className="align-items-center m-4 grid h-80 w-auto place-content-center overflow-hidden rounded-lg shadow-lg dark:bg-gray-600">
-                <div className="text-2xl text-gray-400">暂无练习数据</div>
+                <div className="text-l text-gray-400 sm:text-2xl">暂无练习数据</div>
               </div>
             ) : (
               <>
-                <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                <div className="mx-4 my-8 h-auto overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
                   <HeatmapCharts title="过去一年练习次数热力图" data={exerciseRecord} />
                 </div>
-                <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                <div className="mx-4 my-8 h-auto  overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
                   <HeatmapCharts title="过去一年练习词数热力图" data={wordRecord} />
                 </div>
-                {/*<div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">*/}
-                {/*  <LineCharts title="过去一年WPM趋势图" name="WPM" data={wpmRecord} />*/}
-                {/*</div>*/}
-                {/*<div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">*/}
-                {/*  <LineCharts title="过去一年正确率趋势图" name="正确率(%)" data={accuracyRecord} suffix="%" />*/}
-                {/*</div>*/}
-                {/*<div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">*/}
-                {/*  <KeyboardWithBarCharts title="按键错误次数排行" name="错误次数" data={wrongTimeRecord} />*/}
-                {/*</div>*/}
+                <div className="mx-4 my-8 h-60  overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
+                  <LineCharts title="过去一年WPM趋势图" name="WPM" data={wpmRecord} />
+                </div>
+                <div className="mx-4 my-8 h-60  overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
+                  <LineCharts title="过去一年正确率趋势图" name="正确率(%)" data={accuracyRecord} suffix="%" />
+                </div>
+                <div className="mx-4 my-8 h-72 overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
+                  <KeyboardWithBarCharts title="按键错误次数排行" name="错误次数" data={wrongTimeRecord} />
+                </div>
               </>
             )}
           </ScrollArea.Viewport>
