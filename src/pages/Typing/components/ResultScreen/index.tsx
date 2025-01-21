@@ -226,12 +226,12 @@ const ResultScreen = () => {
               <IconX className="text-gray-400" />
             </button>
             <div className="mt-10 flex flex-row gap-1 overflow-hidden sm:gap-2">
-              <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-0 pl-3 sm:px-1 md:px-2 lg:px-4">
+              <div className="flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-3 px-0 pl-3 sm:px-1 md:px-2 lg:px-4">
                 <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={state.timerData.accuracy} />
                 <RemarkRing remark={timeString} caption="章节耗时" />
                 <RemarkRing remark={state.timerData.wpm + ''} caption="WPM" />
               </div>
-              <div className="z-10 ml-6 flex flex-1 flex-col justify-between overflow-auto rounded-xl bg-indigo-50 dark:bg-gray-700">
+              <div className="z-10 ml-6 flex max-h-96 flex-1 flex-col justify-between overflow-auto rounded-xl bg-indigo-50 dark:bg-gray-700 sm:max-h-full">
                 <div className="customized-scrollbar z-20 flex flex-row flex-wrap content-start gap-2 overflow-y-auto overflow-x-hidden p-2 sm:gap-4 sm:p-4">
                   {wrongWords.map((word, index) => (
                     <WordChip key={`${index}-${word.name}`} word={word} />

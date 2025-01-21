@@ -3,7 +3,7 @@ import Tooltip from '@/components/Tooltip'
 import { randomConfigAtom } from '@/store'
 import { autoUpdate, offset, useFloating, useHover, useInteractions } from '@floating-ui/react'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useRef, useState } from 'react'
+import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function StartButton({ isLoading }: { isLoading: boolean }) {
@@ -13,8 +13,10 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
 
   const inputRef = useRef<HTMLInputElement>(null)
 
+  useEffect(() => {
+    state.isTyping && inputRef.current?.focus()
+  }, [state.isTyping])
   const onToggleIsTyping = () => {
-    !state.isTyping && inputRef.current?.focus()
     !isLoading && dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
   }
 
