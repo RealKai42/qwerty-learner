@@ -1,4 +1,5 @@
 [
+    {
         "trans": [
             "假发"
         ],
@@ -252,7 +253,7 @@
         ],
         "usphone": "/læst bʌt nɒt liːst/",
         "ukphone": "/læst bʌt nɒt liːst/"
-    }
+    },
     {
         "name": "marathon",
         "trans": [
@@ -500,7 +501,7 @@
         ],
         "usphone": "/kənˈtɪnjudʒə/",
         "ukphone": "/kənˈtɪnjudʒə/"
-    }
+    },
     {
         "name": "brave",
         "trans": [
@@ -884,7 +885,7 @@
         ],
         "usphone": "/ˈsɜːrkəl/",
         "ukphone": "/ˈsɜːrkəl/"
-    }
+    },
     {
         "name": "slice",
         "trans": [
@@ -1132,7 +1133,7 @@
         ],
         "usphone": "/ˈmɒdərn/",
         "ukphone": "/ˈmɒdərn/"
-    }
+    },
     {
         "name": "folk",
         "trans": [
@@ -1244,7 +1245,7 @@
         ],
         "usphone": "/ˈhæpən/",
         "ukphone": "/ˈhæpən/"
-    }
+    },
     {
         "name": "dull",
         "trans": [
@@ -1476,7 +1477,7 @@
         ],
         "usphone": "/ˈdeɪli/",
         "ukphone": "/ˈdeɪli/"
-    }
+    },
     {
         "name": "daily life",
         "trans": [
@@ -1716,7 +1717,7 @@
         ],
         "usphone": "/aʊərz/",
         "ukphone": "/aʊərz/"
-    }
+    },
     {
         "name": "plateau",
         "trans": [
@@ -1948,7 +1949,7 @@
         ],
         "usphone": "/bɪˈheɪvjər/",
         "ukphone": "/bɪˈheɪvjə/"
-    }
+    },
     {
         "name": "land",
         "trans": [
@@ -2060,7 +2061,7 @@
         ],
         "usphone": "/ˈnæʃənl/",
         "ukphone": "/ˈnæʃənl/"
-    }
+    },
     {
         "name": "airport",
         "trans": [
@@ -2284,11 +2285,7 @@
         ],
         "usphone": "/ˈθʌndər/",
         "ukphone": "/ˈθʌndə/"
-    }
-这是最新的单词列表：
-
-```json
-[
+    },
     {
         "name": "painting",
         "trans": [
