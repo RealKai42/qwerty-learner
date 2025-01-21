@@ -23,9 +23,9 @@ const HeatmapCharts: FC<HeatmapChartsProps> = (props) => {
   }, [data])
 
   return (
-    <div className="flex flex-col items-center sm:px-8 md:px-20 lg:px-32">
+    <div className="flex h-40 flex-col items-center  sm:h-64 sm:px-8 md:px-20 lg:px-32">
       <div className="sm:text-l pb-4 text-center text-base font-bold text-gray-600	dark:text-white">{title}</div>
-      <div className="flex w-full pr-4">
+      <div className="flex h-full w-full justify-center pr-4">
         {data.length && (
           <CalendarHeatmap
             values={data}

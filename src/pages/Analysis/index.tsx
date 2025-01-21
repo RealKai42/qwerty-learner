@@ -58,10 +58,10 @@ const Analysis = () => {
             ) : (
               <>
                 <div className="mx-4 my-8 h-auto overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
-                  <HeatmapCharts title="过去一年练习次数热力图" data={exerciseRecord} />
+                  <HeatmapCharts title="过去半年练习次数热力图" data={exerciseRecord} />
                 </div>
                 <div className="mx-4 my-8 h-auto  overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
-                  <HeatmapCharts title="过去一年练习词数热力图" data={wordRecord} />
+                  <HeatmapCharts title="过去半年练习词数热力图" data={wordRecord} />
                 </div>
                 <div className="mx-4 my-8 h-60  overflow-hidden rounded-lg p-4 shadow-lg dark:bg-gray-700 dark:bg-opacity-50 sm:p-8">
                   <LineCharts title="过去一年WPM趋势图" name="WPM" data={wpmRecord} />
