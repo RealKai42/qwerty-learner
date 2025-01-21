@@ -1,0 +1,140 @@
+[
+    {
+        "name": "HashMap::new()",
+        "trans": [
+            "`HashMap::new()` 方法创建并返回一个新的空 `HashMap`，其键和值的类型由泛型指定。"
+        ]
+    },
+    {
+        "name": "HashMap::with_capacity()",
+        "trans": [
+            "`HashMap::with_capacity()` 方法创建一个指定容量的空 `HashMap`，用于优化内存分配，减少需要扩展时的内存重分配次数。"
+        ]
+    },
+    {
+        "name": "HashMap::insert()",
+        "trans": [
+            "`HashMap::insert()` 方法将指定的键值对插入到 `HashMap` 中。如果该键已存在，则会更新其对应的值。"
+        ]
+    },
+    {
+        "name": "HashMap::get()",
+        "trans": [
+            "`HashMap::get()` 方法根据给定的键查询并返回其对应的值。如果键不存在，则返回 `None`。"
+        ]
+    },
+    {
+        "name": "HashMap::remove()",
+        "trans": [
+            "`HashMap::remove()` 方法移除并返回指定键对应的值，如果该键不存在，返回 `None`。"
+        ]
+    },
+    {
+        "name": "HashMap::contains_key()",
+        "trans": [
+            "`HashMap::contains_key()` 方法检查 `HashMap` 是否包含指定的键，返回布尔值。"
+        ]
+    },
+    {
+        "name": "HashMap::len()",
+        "trans": [
+            "`HashMap::len()` 方法返回 `HashMap` 中键值对的个数。"
+        ]
+    },
+    {
+        "name": "HashMap::is_empty()",
+        "trans": [
+            "`HashMap::is_empty()` 方法返回布尔值，表示 `HashMap` 是否为空。"
+        ]
+    },
+    {
+        "name": "HashMap::clear()",
+        "trans": [
+            "`HashMap::clear()` 方法移除 `HashMap` 中的所有键值对，但不释放内存。"
+        ]
+    },
+    {
+        "name": "HashMap::iter()",
+        "trans": [
+            "`HashMap::iter()` 方法返回一个迭代器，可以遍历 `HashMap` 中的所有键值对。"
+        ]
+    },
+    {
+        "name": "HashMap::keys()",
+        "trans": [
+            "`HashMap::keys()` 方法返回一个包含所有键的迭代器，允许遍历所有键。"
+        ]
+    },
+    {
+        "name": "HashMap::values()",
+        "trans": [
+            "`HashMap::values()` 方法返回一个包含所有值的迭代器，允许遍历所有值。"
+        ]
+    },
+    {
+        "name": "HashMap::into_iter()",
+        "trans": [
+            "`HashMap::into_iter()` 方法消耗 `HashMap`，并返回一个迭代器，能够遍历并移除其中的键值对。"
+        ]
+    },
+    {
+        "name": "HashMap::entry()",
+        "trans": [
+            "`HashMap::entry()` 方法返回一个 `Entry` 类型，允许对指定的键执行插入或修改操作。如果键不存在，可以插入新值。"
+        ]
+    },
+    {
+        "name": "HashMap::clone()",
+        "trans": [
+            "`HashMap::clone()` 方法创建并返回 `HashMap` 的一个深拷贝。"
+        ]
+    },
+    {
+        "name": "HashMap::extend()",
+        "trans": [
+            "`HashMap::extend()` 方法将另一个 `HashMap` 或可迭代的键值对添加到当前的 `HashMap` 中。"
+        ]
+    },
+    {
+        "name": "HashMap::retain()",
+        "trans": [
+            "`HashMap::retain()` 方法保留满足给定条件的键值对，移除不符合条件的键值对。"
+        ]
+    },
+    {
+        "name": "HashMap::remove_entry()",
+        "trans": [
+            "`HashMap::remove_entry()` 方法移除指定键对应的键值对，并返回该键值对。"
+        ]
+    },
+    {
+        "name": "HashMap::get_mut()",
+        "trans": [
+            "`HashMap::get_mut()` 方法获取指定键对应值的可变引用，如果该键不存在，则返回 `None`。"
+        ]
+    },
+    {
+        "name": "HashMap::values_mut()",
+        "trans": [
+            "`HashMap::values_mut()` 方法返回一个可变迭代器，允许修改 `HashMap` 中的所有值。"
+        ]
+    },
+    {
+        "name": "HashMap::swap_remove()",
+        "trans": [
+            "`HashMap::swap_remove()` 方法移除指定键对应的键值对，并将该键值对与 `HashMap` 中最后一个键值对交换，避免内存的重新分配。"
+        ]
+    },
+    {
+        "name": "HashMap::shrink_to_fit()",
+        "trans": [
+            "`HashMap::shrink_to_fit()` 方法会尝试将 `HashMap` 的容量调整为当前元素的实际数量，从而节省内存。"
+        ]
+    },
+    {
+        "name": "HashMap::capacity()",
+        "trans": [
+            "`HashMap::capacity()` 方法返回 `HashMap` 当前的容量，即它可以容纳的键值对的最大数量。"
+        ]
+    }
+]
