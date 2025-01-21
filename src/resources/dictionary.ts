@@ -521,6 +521,42 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+
+  {
+    id: 'frequently_used_words01',
+    name: '超频单词level 1',
+    description: '超频单词level 1',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/frequently_used_word01.json',
+    length: 679,
+    language: 'en',
+    languageCategory: 'en',
+  },
+
+  {
+    id: 'frequently_used_words03',
+    name: '超频单词level 2',
+    description: '超频单词level 2',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/frequently_used_word02.json',
+    length: 1040,
+    language: 'en',
+    languageCategory: 'en',
+  },
+
+  {
+    id: 'frequently_used_words03',
+    name: '超频单词level 3',
+    description: '超频单词level 3',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/frequently_used_word03.json',
+    length: 1435,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'roger',
     name: "Roger's Words",
