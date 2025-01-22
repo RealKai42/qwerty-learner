@@ -2,7 +2,7 @@ import Loading from './components/Loading'
 import './index.css'
 import { ErrorBook } from './pages/ErrorBook'
 import { FriendLinks } from './pages/FriendLinks'
-import MobilePage from './pages/Mobile'
+import Introduction from './pages/Introduction'
 import TypingPage from './pages/Typing'
 import { isMobileAtom, isOpenDarkModeAtom } from '@/store'
 import 'animate.css'
@@ -54,7 +54,7 @@ function Root() {
             <Route path="/error-book" element={<ErrorBook />} />
             <Route path="/friend-links" element={<FriendLinks />} />
             <Route path="/*" element={<Navigate to="/" />} />
-            <Route path="/mobile" element={<MobilePage />} />
+            <Route path="/introduction" element={<Introduction />} />
           </Routes>
         </Suspense>
       </BrowserRouter>

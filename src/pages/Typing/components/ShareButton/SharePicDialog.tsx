@@ -117,7 +117,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all dark:bg-gray-700">
+                <Dialog.Panel className="relative mb-20 transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all dark:bg-gray-700 sm:mb-0">
                   <div className="flex flex-col items-center justify-center py-8">
                     <button className="absolute right-4 top-4" type="button" onClick={handleClose} title="关闭对话框">
                       <IconXMark className="h-6 w-6 text-gray-400" />

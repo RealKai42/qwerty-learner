@@ -17,7 +17,7 @@ const Header: React.FC<PropsWithChildren> = ({ children }) => {
         {!(state.isTyping && isMobile) && (
           <NavLink
             className="flex items-center text-2xl font-bold text-indigo-500 no-underline hover:no-underline lg:text-4xl"
-            to="https://qwerty.kaiyi.cool/"
+            to="/introduction"
           >
             <img src={logo} className="mr-3 h-16 w-16" alt="Qwerty Learner Logo" />
             <h1>Qwerty Learner</h1>

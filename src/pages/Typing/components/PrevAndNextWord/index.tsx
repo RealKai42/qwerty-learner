@@ -1,6 +1,6 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import Tooltip from '@/components/Tooltip'
-import { currentDictInfoAtom, wordDictationConfigAtom } from '@/store'
+import { currentDictInfoAtom, isMobileAtom, wordDictationConfigAtom } from '@/store'
 import { CTRL } from '@/utils'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useMemo } from 'react'
@@ -10,6 +10,7 @@ import IconNext from '~icons/tabler/arrow-narrow-right'
 export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
+  const isMobile = useAtomValue(isMobileAtom)
 
   const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
   const newIndex = useMemo(() => state.chapterData.index + (type === 'prev' ? -1 : 1), [state.chapterData.index, type])
@@ -39,7 +40,7 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   return (
     <>
       {word ? (
-        <Tooltip content={`快捷键: ${shortCutKey}`}>
+        <Tooltip disabled={isMobile} content={`快捷键: ${shortCutKey}`}>
           <div
             onClick={onClickWord}
             className="flex max-w-xs cursor-pointer select-none items-center text-gray-700 opacity-60 duration-200 ease-in-out hover:opacity-100 dark:text-gray-400"

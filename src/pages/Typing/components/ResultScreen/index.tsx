@@ -218,14 +218,14 @@ const ResultScreen = () => {
         leaveTo="opacity-0"
       >
         <div className="flex h-screen items-center justify-center">
-          <div className="my-card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white p-4 shadow-lg dark:bg-gray-800 sm:p-8 md:w-4/5 lg:w-3/5">
+          <div className="my-card fixed mb-16 flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white p-4 shadow-lg dark:bg-gray-800 sm:mb-0 sm:p-8 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
               {`${currentDictInfo.name} ${isReviewMode ? '错题复习' : '第' + (currentChapter + 1) + '章'}`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
               <IconX className="text-gray-400" />
             </button>
-            <div className="mt-10 flex flex-row gap-1 overflow-hidden sm:gap-2">
+            <div className="mt-4 flex flex-row gap-1 overflow-hidden sm:mt-8 sm:gap-2">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col items-center justify-center gap-3 px-0 pl-3 sm:px-1 md:px-2 lg:px-4">
                 <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={state.timerData.accuracy} />
                 <RemarkRing remark={timeString} caption="章节耗时" />
@@ -242,11 +242,11 @@ const ResultScreen = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-8 flex w-full flex-col justify-center gap-4  text-xl sm:flex-row">
+            <div className="mt-4 flex w-full flex-col justify-center gap-4 text-xl sm:mt-8 sm:flex-row">
               {!isReviewMode && (
                 <Tooltip content="快捷键：shift + enter">
                   <button
-                    className="my-btn-primary h-10 w-full text-nowrap border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:h-12 sm:w-auto"
+                    className="my-btn-primary h-8 w-full text-nowrap border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:h-10 sm:h-12 sm:w-auto"
                     type="button"
                     onClick={dictationButtonHandler}
                     title="默写本章节"
@@ -258,7 +258,7 @@ const ResultScreen = () => {
               {!isReviewMode && (
                 <Tooltip content="快捷键：space">
                   <button
-                    className="my-btn-primary h-10 w-full text-nowrap border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:h-12 sm:w-auto"
+                    className="my-btn-primary h-8 w-full text-nowrap border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700 sm:h-10 sm:h-12 sm:w-auto"
                     type="button"
                     onClick={repeatButtonHandler}
                     title="重复本章节"
@@ -272,7 +272,7 @@ const ResultScreen = () => {
                   <button
                     className={`${
                       isLastChapter ? 'cursor-not-allowed opacity-50' : ''
-                    } my-btn-primary h-10 w-full text-nowrap text-base font-bold sm:h-12 sm:w-auto`}
+                    } my-btn-primary h-8 w-full text-nowrap text-base font-bold sm:h-10 sm:h-12 sm:w-auto`}
                     type="button"
                     onClick={nextButtonHandler}
                     title="下一章节"
@@ -284,7 +284,7 @@ const ResultScreen = () => {
 
               {isReviewMode && (
                 <button
-                  className="my-btn-primary h-10 w-full text-nowrap text-base font-bold sm:h-12 sm:w-auto"
+                  className="my-btn-primary h-8 w-full text-nowrap text-base font-bold sm:h-10 sm:h-12 sm:w-auto"
                   type="button"
                   onClick={onNavigateToGallery}
                   title="练习其他章节"
