@@ -16,6 +16,7 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
   useEffect(() => {
     state.isTyping && inputRef.current?.focus()
   }, [state.isTyping])
+
   const onToggleIsTyping = () => {
     !isLoading && dispatch({ type: TypingStateActionType.TOGGLE_IS_TYPING })
   }

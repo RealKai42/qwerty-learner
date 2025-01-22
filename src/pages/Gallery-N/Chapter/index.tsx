@@ -34,7 +34,7 @@ export default function Chapter({
   return (
     <div
       ref={ref}
-      className="relative flex h-16 w-40 cursor-pointer  flex-col items-start justify-center overflow-hidden rounded-xl bg-slate-100 px-3 py-2 dark:bg-slate-800"
+      className="relative flex h-16 min-w-24 cursor-pointer  flex-col items-start justify-center overflow-hidden rounded-xl bg-slate-100 px-3 py-2 dark:bg-slate-800"
       onClick={() => onChange(index)}
     >
       <h1>第 {index + 1} 章</h1>

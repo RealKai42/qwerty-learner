@@ -6,10 +6,10 @@ import MobilePage from './pages/Mobile'
 import TypingPage from './pages/Typing'
 import { isMobileAtom, isOpenDarkModeAtom } from '@/store'
 import 'animate.css'
-import { useAtom, useAtomValue, useSetAtom } from 'jotai'
+import { useAtomValue, useSetAtom } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import process from 'process'
-import React, { Suspense, lazy, useEffect, useState } from 'react'
+import React, { Suspense, lazy, useEffect } from 'react'
 import 'react-app-polyfill/stable'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
@@ -36,9 +36,6 @@ function Root() {
   useEffect(() => {
     const handleResize = () => {
       const isMobile = window.innerWidth <= 640
-      if (!isMobile) {
-        window.location.href = '/'
-      }
       setIsMobile(isMobile)
     }
 

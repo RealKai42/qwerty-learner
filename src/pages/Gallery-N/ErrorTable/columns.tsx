@@ -50,15 +50,7 @@ export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnD
     header: '易错字母',
     size: 100,
     cell: ({ row }) => {
-      return (
-        <p>
-          {(row.getValue('errorChar') as string[]).map((char, index) => (
-            <kbd className="flex justify-center" key={`${char}-${index}`}>
-              {char + ' '}
-            </kbd>
-          ))}
-        </p>
-      )
+      return <p className="flex">{(row.getValue('errorChar') as string[]).join(', ')}</p>
     },
   },
   {
