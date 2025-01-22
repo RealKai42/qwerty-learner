@@ -1409,6 +1409,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'PTE_WFDgaopinci.json',
+    name: 'PTE WFD高频词汇',
+    description: 'WFD高频词汇从高到低，最低掌握350个',
+    category: '国际考试',
+    tags: ['PTE'],
+    url: '/dicts/PTE_WFDgaopinci.json',
+    length: 1175,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'PTE_senior',
     name: 'PTE 高阶词汇',
     description: '',
