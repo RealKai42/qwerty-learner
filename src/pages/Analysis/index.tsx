@@ -43,7 +43,7 @@ const Analysis = () => {
   return (
     <Layout>
       <div className="flex w-full flex-1 flex-col overflow-y-auto">
-        <div className="fixed top-0 z-20 flex h-12 w-full items-center justify-between border border-b  dark:border-gray-500">
+        <div className="fixed top-0 z-20 flex h-12 w-full items-center justify-between border-b dark:border-gray-500">
           <div className="mx-10"></div>
           <span className="text-l font-medium dark:text-white sm:text-xl">数据统计</span>
           <IconX className="mx-4 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />

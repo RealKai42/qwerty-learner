@@ -16,7 +16,7 @@ import IconX from '~icons/tabler/x'
 
 export function ErrorBook() {
   const isMobile = useAtomValue(isMobileAtom)
-  const pageSize = useMemo(() => (isMobile ? 9 : 20), [isMobile])
+  const pageSize = useMemo(() => (isMobile ? 7 : 20), [isMobile])
 
   const [groupedRecords, setGroupedRecords] = useState<groupedWordRecords[]>([])
   const [currentPage, setCurrentPage] = useState(1)
