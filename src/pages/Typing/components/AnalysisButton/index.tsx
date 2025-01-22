@@ -8,7 +8,7 @@ const AnalysisButton = () => {
 
   const toAnalysis = useCallback(() => {
     navigate('/analysis')
-    // recordAnalysisAction('open')
+    recordAnalysisAction('open')
   }, [navigate])
 
   return (
