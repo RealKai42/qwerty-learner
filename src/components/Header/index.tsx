@@ -8,6 +8,7 @@ import type React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header: React.FC<PropsWithChildren> = ({ children }) => {
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const { state } = useContext(TypingContext)!
   const isMobile = useAtomValue(isMobileAtom)
 

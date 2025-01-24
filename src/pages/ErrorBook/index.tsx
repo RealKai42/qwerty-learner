@@ -20,7 +20,7 @@ export function ErrorBook() {
 
   const [groupedRecords, setGroupedRecords] = useState<groupedWordRecords[]>([])
   const [currentPage, setCurrentPage] = useState(1)
-  const totalPages = useMemo(() => Math.ceil(groupedRecords.length / pageSize), [groupedRecords.length])
+  const totalPages = useMemo(() => Math.ceil(groupedRecords.length / pageSize), [groupedRecords.length, pageSize])
   const [sortType, setSortType] = useState<ISortType>('asc')
   const navigate = useNavigate()
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
@@ -62,7 +62,7 @@ export function ErrorBook() {
     const start = (currentPage - 1) * pageSize
     const end = start + pageSize
     return sortedRecords.slice(start, end)
-  }, [currentPage, sortedRecords])
+  }, [currentPage, pageSize, sortedRecords])
 
   useEffect(() => {
     db.wordRecords

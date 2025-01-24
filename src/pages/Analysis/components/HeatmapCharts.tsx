@@ -1,7 +1,6 @@
 import './calendar-heatmap-styles.css'
 import type { FC } from 'react'
 import { useMemo } from 'react'
-import React from 'react'
 import type { TooltipDataAttrs } from 'react-calendar-heatmap'
 import CalendarHeatmap from 'react-calendar-heatmap'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
