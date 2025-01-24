@@ -11,6 +11,7 @@ import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
 import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
 import { DonateCard } from '@/components/DonateCard'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import StarCard from '@/components/StarCard'
 import Tooltip from '@/components/Tooltip'
@@ -155,6 +156,7 @@ const App: React.FC = () => {
             <Speed />
           </div>
         </div>
+        <Footer />
       </Layout>
       <WordList />
     </TypingContext.Provider>

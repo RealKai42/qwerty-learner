@@ -3,8 +3,12 @@ import ezbdc from '@/assets/friendlinks/ezbdc.jpg'
 import kk from '@/assets/friendlinks/kk.jpg'
 import web_worker from '@/assets/friendlinks/web-worker.png'
 import type React from 'react'
+import { useNavigate } from 'react-router-dom'
+import IconX from '~icons/tabler/x'
 
 export const FriendLinks: React.FC = () => {
+  const navigate = useNavigate()
+
   const links = [
     {
       title: 'ez背单词',
@@ -27,11 +31,19 @@ export const FriendLinks: React.FC = () => {
     },
   ]
 
+  const onBack = () => {
+    navigate('/')
+  }
+
   return (
     <Layout>
+      <div className="fixed top-0 z-20 flex h-14 w-full flex-row-reverse items-center sm:h-16">
+        <IconX className="mx-4 h-7 w-7 cursor-pointer text-gray-400 sm:mx-6" onClick={onBack} />
+      </div>
+
       <div className="flex w-full flex-1 flex-col items-center px-4 pt-20">
         <div className="flex w-full max-w-md flex-grow flex-col items-center">
-          <div className="mt-5 text-center text-lg font-bold">友情链接</div>
+          <h1 className="mt-5 text-center text-lg font-bold dark:text-white">友情链接</h1>
           <div className="links flex w-full flex-col items-center gap-y-8 py-5">
             {links.map((link, index) => (
               <a
@@ -42,11 +54,11 @@ export const FriendLinks: React.FC = () => {
                 rel="noopener noreferrer"
                 className="linkItem flex w-full items-center overflow-hidden"
               >
-                <div className="mr-3 flex h-8 w-8 flex-shrink-0 items-center justify-center bg-gray-200">
+                <div className="mr-4 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded border bg-gray-200">
                   <img src={link.imgSrc} alt={link.title} className="h-full w-full object-cover" />
                 </div>
                 <div className="flex-1">
-                  <div className="pb-1 text-sm font-bold">{link.title}</div>
+                  <div className="pb-1 text-sm font-bold dark:text-white">{link.title}</div>
                   <div className="text-xs text-gray-500">{link.description}</div>
                 </div>
               </a>

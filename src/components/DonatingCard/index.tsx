@@ -27,9 +27,9 @@ export const DonatingCard = ({ className, onAmountChange }: { className?: string
 
       <div className={`mt-3 flex w-full  flex-col  overflow-hidden px-11 transition-[height] duration-500 ${amount ? 'h-44' : 'h-0'}`}>
         {amount && (
-          <div className="flex w-full justify-between">
-            <img src={AmountImageMap[amount][0]} alt="alipay" className=" h-44" />
-            <img src={AmountImageMap[amount][1]} alt="weChat" className=" h-44" />
+          <div className="flex w-full justify-center gap-x-2">
+            <img src={AmountImageMap[amount][0]} alt="alipay" className="h-40" />
+            <img src={AmountImageMap[amount][1]} alt="weChat" className="h-40" />
           </div>
         )}
       </div>
