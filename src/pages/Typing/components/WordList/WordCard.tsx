@@ -15,7 +15,7 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
 
   return (
     <div
-      className={`mb-2 flex cursor-pointer select-text items-center rounded-xl p-4 shadow focus:outline-none ${
+      className={`mx-3 mb-2 flex cursor-pointer select-text items-center rounded-xl p-4 shadow focus:outline-none ${
         isActive ? 'bg-indigo-50 dark:bg-indigo-800 dark:bg-opacity-20' : 'bg-white dark:bg-gray-700 dark:bg-opacity-20'
       }   `}
       key={word.name}
@@ -27,7 +27,7 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
         </p>
         <div className="mt-2 max-w-sm font-sans text-sm text-gray-400">{word.trans.join('；')}</div>
       </div>
-      <WordPronunciationIcon word={word} lang={currentLanguage} className="h-8 w-8" ref={wordPronunciationIconRef} />
+      <WordPronunciationIcon word={word} lang={currentLanguage} className="h-8 w-8 pl-2" ref={wordPronunciationIconRef} />
     </div>
   )
 }

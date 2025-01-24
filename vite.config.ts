@@ -50,5 +50,8 @@ export default defineConfig(async ({ mode }) => {
         localsConvention: 'camelCaseOnly',
       },
     },
+    server: {
+      host: '0.0.0.0',
+    },
   }
 })

@@ -51,7 +51,7 @@ export default function AdvancedSetting() {
 
   return (
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
-      <ScrollArea.Viewport className="h-full w-full px-3">
+      <ScrollArea.Viewport className="h-full w-full">
         <div className={styles.tabContent}>
           <div className={styles.section}>
             <span className={styles.sectionLabel}>章节乱序</span>
@@ -60,9 +60,7 @@ export default function AdvancedSetting() {
               <Switch checked={randomConfig.isOpen} onChange={onToggleRandom} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`随机已${
-                randomConfig.isOpen ? '开启' : '关闭'
-              }`}</span>
+              <span className={styles.blockItemDescription}>{`随机已${randomConfig.isOpen ? '开启' : '关闭'}`}</span>
             </div>
           </div>
           <div className={styles.section}>
@@ -72,9 +70,7 @@ export default function AdvancedSetting() {
               <Switch checked={isShowPrevAndNextWord} onChange={onToggleLastAndNextWord} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`展示单词已${
-                isShowPrevAndNextWord ? '开启' : '关闭'
-              }`}</span>
+              <span className={styles.blockItemDescription}>{`展示单词已${isShowPrevAndNextWord ? '开启' : '关闭'}`}</span>
             </div>
           </div>
           <div className={styles.section}>
@@ -84,9 +80,7 @@ export default function AdvancedSetting() {
               <Switch checked={isIgnoreCase} onChange={onToggleIgnoreCase} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`忽略大小写已${
-                isIgnoreCase ? '开启' : '关闭'
-              }`}</span>
+              <span className={styles.blockItemDescription}>{`忽略大小写已${isIgnoreCase ? '开启' : '关闭'}`}</span>
             </div>
           </div>
           <div className={styles.section}>
@@ -96,9 +90,7 @@ export default function AdvancedSetting() {
               <Switch checked={isTextSelectable} onChange={onToggleTextSelectable} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`选择文本已${
-                isTextSelectable ? '开启' : '关闭'
-              }`}</span>
+              <span className={styles.blockItemDescription}>{`选择文本已${isTextSelectable ? '开启' : '关闭'}`}</span>
             </div>
           </div>
           <div className={styles.section}>
@@ -108,9 +100,7 @@ export default function AdvancedSetting() {
               <Switch checked={isShowAnswerOnHover} onChange={onToggleShowAnswerOnHover} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
               </Switch>
-              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`显示提示已${
-                isShowAnswerOnHover ? '开启' : '关闭'
-              }`}</span>
+              <span className={styles.blockItemDescription}>{`显示提示已${isShowAnswerOnHover ? '开启' : '关闭'}`}</span>
             </div>
           </div>
         </div>

@@ -37,9 +37,9 @@ const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name }) => {
     const option = {
       tooltip: { trigger: 'axis' },
       grid: {
-        left: '10%',
+        left: '15%',
         right: '10%',
-        top: '20%',
+        top: '10%',
         bottom: '10%',
       },
       xAxis: {
@@ -78,7 +78,7 @@ const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name }) => {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="text-center text-xl font-bold text-gray-600	dark:text-white">{title}</div>
+      <div className="sm:text-l text-center text-base font-bold text-gray-600	dark:text-white">{title}</div>
       <div style={{ width: '100%', height: '100%' }} ref={chartRef} className="line-chart flex-grow"></div>
     </div>
   )

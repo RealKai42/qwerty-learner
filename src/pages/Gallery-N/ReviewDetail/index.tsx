@@ -34,7 +34,7 @@ export function ReviewDetail({ errorData, dict }: { errorData: TErrorWordData[];
   }
 
   return (
-    <div className="flex h-full flex-col items-center justify-around px-60">
+    <div className="flex h-full flex-col items-center justify-around">
       <div>
         <MdiRobotAngry fontSize={30} className="text-indigo-300 " />
         <blockquote>
@@ -48,7 +48,7 @@ export function ReviewDetail({ errorData, dict }: { errorData: TErrorWordData[];
       <div className="flex w-full flex-col items-center">
         {latestReviewRecord && (
           <>
-            <div className=" ml-10 flex w-full items-center py-0">
+            <div className="ml-10 flex w-full items-center py-0">
               <Progress.Root
                 value={latestReviewRecord.index + 1}
                 max={latestReviewRecord.words.length}
