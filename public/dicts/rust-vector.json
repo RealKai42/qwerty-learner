@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Vec::new()",
+        "trans": [
+            "`Vec::new()` 方法创建并返回一个新的空 `Vec`，它没有任何元素。"
+        ]
+    },
+    {
+        "name": "Vec::with_capacity()",
+        "trans": [
+            "`Vec::with_capacity()` 方法创建一个指定容量的空 `Vec`。容量用于优化内存分配，减少需要扩展时的内存重分配次数。"
+        ]
+    },
+    {
+        "name": "Vec::push()",
+        "trans": [
+            "`Vec::push()` 方法将一个元素追加到 `Vec` 的末尾。"
+        ]
+    },
+    {
+        "name": "Vec::pop()",
+        "trans": [
+            "`Vec::pop()` 方法移除并返回 `Vec` 中的最后一个元素。如果 `Vec` 是空的，返回 `None`。"
+        ]
+    },
+    {
+        "name": "Vec::len()",
+        "trans": [
+            "`Vec::len()` 方法返回 `Vec` 中元素的个数。"
+        ]
+    },
+    {
+        "name": "Vec::is_empty()",
+        "trans": [
+            "`Vec::is_empty()` 方法返回一个布尔值，表示 `Vec` 是否为空。"
+        ]
+    },
+    {
+        "name": "Vec::clear()",
+        "trans": [
+            "`Vec::clear()` 方法移除 `Vec` 中的所有元素，但不改变其容量。"
+        ]
+    },
+    {
+        "name": "Vec::contains()",
+        "trans": [
+            "`Vec::contains()` 方法检查 `Vec` 中是否包含指定的元素。返回一个布尔值。"
+        ]
+    },
+    {
+        "name": "Vec::remove()",
+        "trans": [
+            "`Vec::remove()` 方法移除并返回 `Vec` 中指定索引处的元素，其他元素会左移。"
+        ]
+    },
+    {
+        "name": "Vec::retain()",
+        "trans": [
+            "`Vec::retain()` 方法保留符合指定条件的元素，移除不符合条件的元素。"
+        ]
+    },
+    {
+        "name": "Vec::swap_remove()",
+        "trans": [
+            "`Vec::swap_remove()` 方法移除并返回指定位置的元素，并将该元素与 `Vec` 中最后一个元素交换，以便避免元素的移动。"
+        ]
+    },
+    {
+        "name": "Vec::resize()",
+        "trans": [
+            "`Vec::resize()` 方法调整 `Vec` 的大小。如果新大小大于原大小，元素将会按指定值填充。"
+        ]
+    },
+    {
+        "name": "Vec::truncate()",
+        "trans": [
+            "`Vec::truncate()` 方法将 `Vec` 截断到指定的长度，多余的元素会被丢弃。"
+        ]
+    },
+    {
+        "name": "Vec::get()",
+        "trans": [
+            "`Vec::get()` 方法通过索引获取 `Vec` 中的元素，返回一个 `Option`，如果索引越界，则返回 `None`。"
+        ]
+    },
+    {
+        "name": "Vec::index()",
+        "trans": [
+            "`Vec::index()` 方法与 `get()` 类似，但在越界时会引发 `panic`。"
+        ]
+    },
+    {
+        "name": "Vec::clone()",
+        "trans": [
+            "`Vec::clone()` 方法返回一个 `Vec` 的克隆，包含相同的元素。"
+        ]
+    },
+    {
+        "name": "Vec::extend()",
+        "trans": [
+            "`Vec::extend()` 方法将另一个可迭代对象的元素追加到当前 `Vec` 的末尾。"
+        ]
+    },
+    {
+        "name": "Vec::insert()",
+        "trans": [
+            "`Vec::insert()` 方法在指定位置插入一个元素，后续元素会右移。"
+        ]
+    },
+    {
+        "name": "Vec::insert_many()",
+        "trans": [
+            "`Vec::insert_many()` 方法在指定位置插入多个元素。"
+        ]
+    },
+    {
+        "name": "Vec::split_off()",
+        "trans": [
+            "`Vec::split_off()` 方法将 `Vec` 分割为两个 `Vec`，返回包含从指定索引开始的部分，原 `Vec` 只包含从开头到指定索引的部分。"
+        ]
+    },
+    {
+        "name": "Vec::shrink_to_fit()",
+        "trans": [
+            "`Vec::shrink_to_fit()` 方法尝试减少 `Vec` 的容量，以便释放未使用的内存。"
+        ]
+    },
+    {
+        "name": "Vec::sort()",
+        "trans": [
+            "`Vec::sort()` 方法对 `Vec` 中的元素进行排序，默认按升序排列。"
+        ]
+    },
+    {
+        "name": "Vec::sort_by()",
+        "trans": [
+            "`Vec::sort_by()` 方法根据指定的排序规则对 `Vec` 中的元素进行排序。"
+        ]
+    },
+    {
+        "name": "Vec::sort_unstable()",
+        "trans": [
+            "`Vec::sort_unstable()` 方法对 `Vec` 中的元素进行排序，但不保证稳定排序（即相等元素的顺序可能会改变）。"
+        ]
+    },
+    {
+        "name": "Vec::binary_search()",
+        "trans": [
+            "`Vec::binary_search()` 方法对已排序的 `Vec` 进行二分查找，返回目标值的索引（如果找到）。"
+        ]
+    },
+    {
+        "name": "Vec::dedup()",
+        "trans": [
+            "`Vec::dedup()` 方法移除 `Vec` 中的相邻重复元素。"
+        ]
+    },
+    {
+        "name": "Vec::dedup_by()",
+        "trans": [
+            "`Vec::dedup_by()` 方法根据指定的闭包去重，移除不符合条件的相邻重复元素。"
+        ]
+    },
+    {
+        "name": "Vec::into_boxed_slice()",
+        "trans": [
+            "`Vec::into_boxed_slice()` 方法将 `Vec` 转换为 `Box<[T]>`，即一个堆分配的切片。"
+        ]
+    }
+]

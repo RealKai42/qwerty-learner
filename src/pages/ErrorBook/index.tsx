@@ -1,3 +1,4 @@
+import DropdownExport from './DropdownExport'
 import ErrorRow from './ErrorRow'
 import type { ISortType } from './HeadWrongNumber'
 import HeadWrongNumber from './HeadWrongNumber'
@@ -26,6 +27,7 @@ export function ErrorBook() {
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
   const [reload, setReload] = useState(false)
+  const [paraphrases, setParaphrases] = useState<any[]>([])
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -97,6 +99,10 @@ export function ErrorBook() {
     setReload((prev) => !prev)
   }
 
+  const handleWordUpdate = (paraphrases: object) => {
+    setParaphrases((prevWords) => [...prevWords, paraphrases])
+  }
+
   return (
     <>
       <div className={`relative flex h-screen w-full flex-col items-center p-4 ease-in sm:p-8 ${currentRowDetail && 'blur-sm'}`}>
@@ -112,7 +118,7 @@ export function ErrorBook() {
               <span className="basis-4/12 text-base sm:basis-6/12">释义</span>
               <HeadWrongNumber className="basis-2/12 text-base sm:basis-1/12" sortType={sortType} setSortType={setSort} />
               <span className="basis-1/12 text-base sm:basis-1/12">词典</span>
-              <span className="basis-1/12 text-base sm:basis-1/12">操作</span>
+              <DropdownExport renderRecords={renderRecords} paraphrases={paraphrases} />
             </div>
             <ScrollArea.Root className="flex-1 overflow-y-auto pt-5">
               {/* https://github.com/radix-ui/primitives/issues/926#issuecomment-1015279283 */}
@@ -123,6 +129,7 @@ export function ErrorBook() {
                       key={`${record.dict}-${record.word}`}
                       record={record}
                       onDelete={() => handleDelete(record.word, record.dict)}
+                      onWordUpdate={handleWordUpdate}
                     />
                   ))}
                 </div>
