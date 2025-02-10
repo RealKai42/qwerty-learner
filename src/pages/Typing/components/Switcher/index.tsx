@@ -2,6 +2,7 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import AnalysisButton from '../AnalysisButton'
 import ErrorBookButton from '../ErrorBookButton'
 import HandPositionIllustration from '../HandPositionIllustration'
+import I18nButton from '../I18nButton'
 import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
@@ -53,6 +54,11 @@ export default function Switcher() {
       <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
         <WordDictationSwitcher />
       </Tooltip>
+
+      <Tooltip content="语言设置">
+        <I18nButton />
+      </Tooltip>
+
       <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
         <button
           className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
