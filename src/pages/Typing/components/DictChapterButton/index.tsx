@@ -1,4 +1,5 @@
 import Tooltip from '@/components/Tooltip'
+import useI18n from '@/hooks/useI18n'
 import { currentChapterAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
 import range from '@/utils/range'
 import { Listbox, Transition } from '@headlessui/react'
@@ -8,6 +9,7 @@ import { NavLink } from 'react-router-dom'
 import IconCheck from '~icons/tabler/check'
 
 export const DictChapterButton = () => {
+  const getI18n = useI18n()
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const chapterCount = currentDictInfo.chapterCount
@@ -20,7 +22,7 @@ export const DictChapterButton = () => {
   }
   return (
     <>
-      <Tooltip content="词典切换">
+      <Tooltip content={getI18n('Dictionary_Tooltip_Switch')}>
         <NavLink
           className="block rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
           to="/gallery"
@@ -35,7 +37,7 @@ export const DictChapterButton = () => {
               onKeyDown={handleKeyDown}
               className="rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
             >
-              第 {currentChapter + 1} 章
+              {getI18n('Home_Chapter', [`${currentChapter + 1}`])}
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
               <Listbox.Options className="listbox-options z-10 w-32">
