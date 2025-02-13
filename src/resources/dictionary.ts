@@ -1595,6 +1595,28 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Common-Phrases-PTE-Unofficial',
+    name: 'PTE 常用短语 (非官方)',
+    description: 'PTE 常用短语',
+    category: '国际考试',
+    tags: ['PTE'],
+    url: '/dicts/Common-Phrases-PTE-Unofficial.json',
+    length: 274,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'Common-Phrases-FCE-Unofficial',
+    name: 'FCE 常用短语 (非官方)',
+    description: 'FCE 常用短语',
+    category: '国际考试',
+    tags: ['FCE'],
+    url: '/dicts/Common-Phrases-FCE-Unofficial.json',
+    length: 438,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 青少儿英语
