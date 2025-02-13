@@ -44,7 +44,19 @@
   { "name": "program", "trans": ["n. 节目(单),程序,计划 vt. 规划,拟定计划,制作节目"] },
   { "name": "line", "trans": ["n. 行,线,航线,场界,皱纹,家族 vt. &vi. 用做衬里,排成一行,顺...排列 vi. 排成一行,顺...排列,划线于"] },
   { "name": "if", "trans": ["conj. 如果，是否，即使 n. 条件,设想"] },
-
+  {
+    "usphone": "'kænsl",
+    "ukphone": "'kænsl",
+    "name": "cancel",
+    "trans": [
+      "取消， 撤销， 删去 (vt.)"
+    ],
+    "sentences": [
+      "I had to cancel my doctor’s appointment because of an emergency. 由于紧急情况，我不得不取消医生的预约",
+      "The event was canceled due to bad weather. 活动因天气恶劣被取消了。",
+      "He decided to cancel his subscription to the magazine. 他决定取消杂志的订阅。"
+    ]
+  },
 ```
 
 #### 1.1.0 如何将词典的源文件转换为目标文件格式？🔄
