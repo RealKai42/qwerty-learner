@@ -107,7 +107,7 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
           </Transition.Child>
 
           <div className="fixed inset-0 z-10 overflow-y-auto">
-            <div className="flex min-h-full items-end justify-center p-4 text-center">
+            <div className="flex min-h-full  items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -117,18 +117,19 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all  dark:bg-gray-700">
-                  <div className="flex flex-col items-center justify-center pb-10 pl-20 pr-14 pt-20">
-                    <button className="absolute right-7 top-5" type="button" onClick={handleClose} title="关闭对话框">
+                <Dialog.Panel className="relative mb-20 transform overflow-hidden rounded-xl bg-white text-left shadow-xl transition-all dark:bg-gray-700 sm:mb-0">
+                  <div className="flex flex-col items-center justify-center py-8">
+                    <button className="absolute right-4 top-4" type="button" onClick={handleClose} title="关闭对话框">
                       <IconXMark className="h-6 w-6 text-gray-400" />
                     </button>
-                    <div className="h-152 w-116">
+
+                    <div>
                       {imageURL ? (
-                        <img src={imageURL} className="h-auto w-full" />
+                        <img src={imageURL} className="mt-4 h-auto w-full" />
                       ) : (
-                        <div className="flex h-full w-full items-center justify-center rounded-lg border-2 border-solid border-white">
+                        <div className="flex h-full w-full items-center justify-center px-20 py-10">
                           <svg
-                            className="-ml-1 mr-3 h-5 w-5 animate-spin text-white"
+                            className="h-5 w-5 animate-spin text-white"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
@@ -138,18 +139,12 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
                               className="opacity-75"
                               fill="currentColor"
                               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                            ></path>
+                            />
                           </svg>
                         </div>
                       )}
                     </div>
-                    <button
-                      ref={dialogFocusRef}
-                      className="my-btn-primary mr-9 mt-10 h-10"
-                      type="button"
-                      onClick={handleDownload}
-                      title="保存"
-                    >
+                    <button ref={dialogFocusRef} className="my-btn-primary mt-8 h-10" type="button" onClick={handleDownload} title="保存">
                       保存
                     </button>
                   </div>
@@ -161,15 +156,12 @@ export default function SharePicDialog({ showState, setShowState, randomChoose }
       </Transition.Root>
 
       <div style={{ position: 'absolute', left: '-999px', zIndex: -1 }}>
-        <div ref={imageRef} className=" box-content w-85 bg-white p-4">
-          <div
-            className="relative flex h-112 w-75 flex-col items-start justify-start rounded-xl shadow-lg"
-            style={{ backgroundColor: '#F8F8FF' }}
-          >
-            <div className=" w-full ">
+        <div ref={imageRef} className="relative box-content flex w-85 max-w-[85vw] justify-center bg-white px-4 py-12">
+          <div className="relative flex w-4/5 flex-col justify-start rounded-xl shadow-lg" style={{ backgroundColor: '#F8F8FF' }}>
+            <div className="w-full">
               <KeyboardPanel description={promote.word} />
               <div className="text-center text-xs text-gray-500">{promote.sentence}</div>
-              <div className="mx-4 mt-6 flex rounded-xl bg-white px-4 py-3 opacity-50 shadow-xl">
+              <div className="mx-4 mb-16 mt-6 flex rounded-xl bg-white px-4 py-3 opacity-50 shadow-xl">
                 <DataBox data={state.timerData.time + ''} description="用时" />
                 <DataBox data={state.timerData.accuracy + '%'} description="正确率" />
                 <DataBox data={state.timerData.wpm + ''} description="WPM" />
@@ -212,7 +204,7 @@ function KeyboardPanel({ description }: { description: string }) {
 
 function KeyboardKey({ char }: { char: string }) {
   return (
-    <div className="relative -mx-1 h-18 w-18">
+    <div className="relative -mx-1 h-16 w-16">
       <div className="absolute bottom-0 left-0 right-0 top-0">
         <img src={keyboardSvg} className="h-full w-full" />
       </div>

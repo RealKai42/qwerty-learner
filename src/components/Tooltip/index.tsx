@@ -2,7 +2,7 @@ import { classNames } from '@/utils'
 import type { ReactNode } from 'react'
 import { useState } from 'react'
 
-const Tooltip = ({ children, content, className, placement = 'top' }: TooltipProps) => {
+const Tooltip = ({ children, content, className, placement = 'top', disabled }: TooltipProps) => {
   const [visible, setVisible] = useState(false)
 
   const placementClasses = {
@@ -15,13 +15,16 @@ const Tooltip = ({ children, content, className, placement = 'top' }: TooltipPro
       <div onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)} onBlur={() => setVisible(false)}>
         {children}
       </div>
-      <div
-        className={`${
-          visible ? 'opacity-100' : 'opacity-0'
-        } ${placementClasses} pointer-events-none absolute left-1/2 flex -translate-x-1/2 transform items-center justify-center transition-opacity`}
-      >
-        <span className="tooltip">{content}</span>
-      </div>
+
+      {!disabled && (
+        <div
+          className={`${
+            visible ? 'opacity-100' : 'opacity-0'
+          } ${placementClasses} pointer-events-none absolute left-1/2 flex -translate-x-1/2 transform items-center justify-center transition-opacity`}
+        >
+          <span className="tooltip">{content}</span>
+        </div>
+      )}
     </div>
   )
 }
@@ -33,6 +36,7 @@ export type TooltipProps = {
   /** 位置 */
   placement?: 'top' | 'bottom'
   className?: string
+  disabled?: boolean
 }
 
 export default Tooltip

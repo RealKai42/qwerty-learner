@@ -61,16 +61,16 @@ body,
   }
 
   .word-chip {
-    @apply flex h-10 w-auto cursor-pointer
-      flex-row items-center
-    justify-center rounded-md border-2
-      border-solid border-indigo-400 bg-white px-2 py-0.5 transition-colors duration-100 hover:bg-indigo-100 dark:border-slate-800
-      dark:bg-slate-700 dark:hover:bg-slate-600 md:h-12
+    @apply flex h-8 w-auto cursor-pointer flex-row items-center
+      justify-center rounded-md
+      border-2 border-solid border-indigo-400
+      bg-white px-2 transition-colors duration-100 hover:bg-indigo-100 dark:border-slate-800 dark:bg-slate-700 dark:hover:bg-slate-600
+      sm:h-10 md:h-12
       md:px-5 md:py-1;
   }
 
   .word-chip > span {
-    @apply font-mono text-2xl font-light text-gray-600 dark:text-gray-300 md:text-3xl;
+    @apply font-mono text-base font-light text-gray-600 dark:text-gray-300 sm:text-xl md:text-2xl;
   }
 
   .word-chip-tooltip {
@@ -80,7 +80,7 @@ body,
   }
 
   .my-btn-primary {
-    @apply flex items-center justify-center rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white hover:opacity-90 focus:outline-none dark:text-opacity-80;
+    @apply flex items-center justify-center rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white hover:opacity-90 focus:outline-none;
   }
 
   .my-btn-info-panel {
@@ -111,7 +111,7 @@ body,
     @apply relative w-40 cursor-pointer rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none dark:bg-gray-600;
   }
   .listbox-button span:nth-of-type(1) {
-    @apply block truncate text-gray-900 dark:text-white dark:text-opacity-60;
+    @apply block truncate text-gray-900 dark:text-gray-50;
   }
   .listbox-button span:nth-of-type(2) {
     @apply pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2 focus:outline-none;

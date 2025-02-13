@@ -109,9 +109,9 @@ export const DonateCard = () => {
             >
               <Dialog.Panel className="relative my-8 w-[37rem] transform select-text overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all">
                 <div className="flex w-full flex-col justify-center gap-4 bg-white px-2 pb-4 pt-5 dark:bg-gray-800 dark:text-gray-300">
-                  <h1 className="gradient-text w-full pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
+                  <h1 className="gradient-text w-full pt-3 text-center text-2xl font-bold sm:text-[2.4rem]">{`${chapterNumber} Chapters Achievement !`}</h1>
                   <div className="flex w-full flex-col gap-4 px-4">
-                    <p className="mx-auto px-4 indent-4">
+                    <p className="mx-auto px-2 indent-4 sm:px-4">
                       您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习，Qwerty Learner 已经陪你走过
                       <HighlightedText> {dayFromFirstWord} </HighlightedText> 天，一起完成了
                       <HighlightedText> {wordNumber} </HighlightedText>
@@ -121,13 +121,13 @@ export const DonateCard = () => {
                       <IconParty className="inline-block" fontSize={16} />
                       <br />
                     </p>
-                    <p className="mx-auto px-4 indent-4">
+                    <p className="mx-auto px-2 indent-4 sm:px-4">
                       Qwerty Learner 已经坚持 <span className="font-medium ">开放源码、无广告、无商业化</span> 运营
                       <HighlightedText className="text-indigo-500"> {dayFromQwerty} </HighlightedText> 天，
                       我们的目标是为所有学习者提供一个高效、便捷、无干扰的学习环境。我们诚挚地邀请您考虑进行捐赠，捐赠将直接用于维持 Qwerty
                       的日常运营以及未来发展，让 Qwerty 与您一起成长。
                     </p>
-                    <p className="mx-auto px-4 indent-4 ">
+                    <p className="mx-auto px-2 indent-4 sm:px-4 ">
                       为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 Qwerty 的定制贴纸 5 枚
                       <span className="text-xs">（仅限大陆地区）</span>，希望您可以跟朋友分享您的快乐
                     </p>
@@ -137,10 +137,10 @@ export const DonateCard = () => {
                   </div>
 
                   <DonatingCard className="mt-2" onAmountChange={onAmountChange} />
-                  <div className="flex w-full justify-between  px-14 pb-3 pt-0">
+                  <div className="flex w-full justify-center  px-14 pb-3 pt-0">
                     <button
                       type="button"
-                      className={`my-btn-primary ${!amount && 'invisible'} w-36 bg-amber-500 font-medium transition-all`}
+                      className={`my-btn-primary ${!amount && 'hidden'} w-36 bg-amber-500 font-medium transition-all`}
                       onClick={onClickHasDonated}
                     >
                       我已捐赠

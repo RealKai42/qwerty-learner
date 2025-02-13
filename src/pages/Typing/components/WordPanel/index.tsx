@@ -6,7 +6,14 @@ import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
+import {
+  isMobileAtom,
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopWordConfigAtom,
+  phoneticConfigAtom,
+  reviewModeInfoAtom,
+} from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
@@ -15,6 +22,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 export default function WordPanel() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
+  const isMobile = useAtomValue(isMobileAtom)
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
@@ -148,9 +156,13 @@ export default function WordPanel() {
     return isShowTranslation || state.isTransVisible
   }, [isShowTranslation, state.isTransVisible])
 
+  const handleResume = useCallback(() => {
+    isMobile && dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
+  }, [dispatch, isMobile])
+
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
-      <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">
+      <div className="container flex h-12 w-full shrink-0 grow-0 justify-between px-4 pt-2 sm:h-24 sm:px-8 sm:pt-8">
         {isShowPrevAndNextWord && state.isTyping && (
           <>
             <PrevAndNextWord type="prev" />
@@ -163,9 +175,10 @@ export default function WordPanel() {
           <div className="relative flex w-full justify-center">
             {!state.isTyping && (
               <div className="absolute flex h-full w-full justify-center">
-                <div className="z-10 flex w-full items-center backdrop-blur-sm">
+                <div className="z-10 flex w-full items-center backdrop-blur-sm" onClick={handleResume}>
                   <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
-                    按任意键{state.timerData.time ? '继续' : '开始'}
+                    {isMobile ? '点击以' : '按任意键'}
+                    {state.timerData.time ? '继续' : '开始'}
                   </p>
                 </div>
               </div>

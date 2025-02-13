@@ -9,6 +9,7 @@ import phoneticImg from '@/assets/mobile/detail/phonetic.png'
 import speedImg from '@/assets/mobile/detail/speed.png'
 import type React from 'react'
 import { useEffect, useRef, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const detail = [
   {
@@ -33,7 +34,7 @@ const detail = [
   },
 ]
 
-const MobilePage: React.FC = () => {
+const Introduction: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const totalSlides = 3 // 轮播图的总数量
   const containerRef = useRef<HTMLDivElement>(null)
@@ -149,19 +150,21 @@ const MobilePage: React.FC = () => {
       </section>
 
       <section
-        className="mt-10 flex h-[20rem] w-full  flex-col items-center"
+        className="flex w-full flex-col items-center justify-center space-y-8 py-16"
         style={{
           background: 'linear-gradient(-45deg, #6366f1, #6366f1, #6366f1, #b600ff)',
           backgroundSize: '600% 600%',
           animation: 'gradientBG 4s ease-in-out infinite',
         }}
       >
-        <h1 className="mt-10 text-3xl font-bold text-white">轻松上手，简单好用</h1>
-        <h2 className="mt-10    px-10 text-white">为键盘工作者设计的单词与肌肉记忆锻炼软件</h2>
-        <div className="mt-10 rounded-2xl bg-white px-6 py-3 font-bold text-primary">请使用桌面端浏览器访问本网站，即刻体验！</div>
+        <h1 className="text-3xl font-bold text-white">轻松上手，简单好用</h1>
+        <h2 className="text-white">为键盘工作者设计的单词与肌肉记忆锻炼软件</h2>
+        <NavLink className="mt-10 rounded-2xl bg-white px-6 py-3 font-bold text-primary" to="/">
+          即刻体验
+        </NavLink>
       </section>
     </div>
   )
 }
 
-export default MobilePage
+export default Introduction
