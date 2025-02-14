@@ -3330,6 +3330,17 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Cambridge_JOIN_IN',
+    name: '剑桥小学英语 JOIN IN',
+    description: '外研社和剑桥大学出版社依据《义务教育英语课程标准》要求联合为我国小学生开发的一套英语教材。',
+    category: '青少年英语',
+    tags: ['其他'],
+    url: '/dicts/Cambridge_JOIN_IN.json',
+    length: 1353,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 编程字典
