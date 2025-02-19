@@ -3818,6 +3818,17 @@ const programming: DictionaryResource[] = [
     language: 'code',
     languageCategory: 'code',
   },
+  {
+    id: 'SoundSfxKey',
+    name: '游戏音效库常用英语',
+    description: '游戏音效库常用英语',
+    category: '代码练习',
+    tags: ['RAZ'],
+    url: '/dicts/AudioKey.json',
+    length: 535,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 日语词典
