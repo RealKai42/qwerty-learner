@@ -1885,6 +1885,7 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+
   {
     id: 'pep-sl-er2',
     name: '人教版(新起点)二年级下',
@@ -2491,7 +2492,17 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-
+  {
+    id: 'shanghai-6-2word',
+    name: '上海新教材六年级下',
+    description: '上海新教材六年级下',
+    category: '青少年英语',
+    tags: ['上海版'],
+    url: '/dicts/shanghai-6-2-word.json',
+    length: 274,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'Yilin1',
     name: '高中必修1',
@@ -3337,7 +3348,7 @@ const childrenEnglish: DictionaryResource[] = [
     category: '青少年英语',
     tags: ['其他'],
     url: '/dicts/Cambridge_JOIN_IN.json',
-    length: 1353,
+    length: 1350,
     language: 'en',
     languageCategory: 'en',
   },
