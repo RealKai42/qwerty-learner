@@ -54,7 +54,7 @@ export default function WordList() {
           <IconX onClick={closeModal} className="cursor-pointer" />
         </Dialog.Title>
         <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
-          <ScrollArea.Viewport className="h-full w-full px-3">
+          <ScrollArea.Viewport className="h-full w-full ">
             <div className="flex h-full w-full flex-col gap-1">
               {state.chapterData.words?.map((word, index) => {
                 return <WordCard word={word} key={`${word.name}_${index}`} isActive={state.chapterData.index === index} />

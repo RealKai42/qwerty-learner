@@ -35,7 +35,7 @@ export default function ViewSetting() {
 
   return (
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
-      <ScrollArea.Viewport className="h-full w-full px-3">
+      <ScrollArea.Viewport className="h-full w-full">
         <div className={styles.tabContent}>
           <div className={styles.section}>
             <span className={styles.sectionLabel}>字体设置</span>
@@ -55,7 +55,7 @@ export default function ViewSetting() {
                   </Slider.Track>
                   <Slider.Thumb />
                 </Slider.Root>
-                <span className="ml-4 w-10 text-xs font-normal text-gray-600">{fontSizeConfig.foreignFont}px</span>
+                <span className={styles.blockItemDescription}>{fontSizeConfig.foreignFont}px</span>
               </div>
             </div>
 
@@ -75,7 +75,7 @@ export default function ViewSetting() {
                   </Slider.Track>
                   <Slider.Thumb />
                 </Slider.Root>
-                <span className="ml-4 w-10 text-xs font-normal text-gray-600">{fontSizeConfig.translateFont}px</span>
+                <span className={styles.blockItemDescription}>{fontSizeConfig.translateFont}px</span>
               </div>
             </div>
           </div>

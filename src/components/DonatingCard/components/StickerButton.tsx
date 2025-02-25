@@ -24,12 +24,12 @@ export const StickerButton = ({ className }: { className?: string }) => {
         dark:!bg-gray-800 dark:text-gray-300 dark:shadow-lg dark:shadow-gray-700"
       >
         <div className="flex gap-2">
-          <img src={sticker1} alt="alipay" className=" h-44 rounded shadow-lg shadow-gray-300 dark:shadow-gray-700" />
-          <img src={sticker2} alt="alipay" className=" h-44 rounded shadow-lg shadow-gray-300 dark:shadow-gray-700" />
+          <img src={sticker1} alt="sticker1" className="h-36 rounded shadow-lg shadow-gray-300 dark:shadow-gray-700" />
+          <img src={sticker2} alt="sticker2" className="h-36 rounded shadow-lg shadow-gray-300 dark:shadow-gray-700" />
         </div>
-        <span className="mt-3 text-xs font-bold text-gray-500">
-          <IconInfo className="mb-[3px] mr-1 inline-block" />
-          此贴纸非商品，仅用于感谢您的捐赠，不可用于任何商业用途
+        <span className="mt-2 flex flex-col items-center justify-center text-xs font-bold text-gray-500 sm:flex-row">
+          <IconInfo className="mb-[3px] mr-1" />
+          <span>此贴纸非商品，仅用于感谢您的捐赠，不可用于任何商业用途</span>
         </span>
       </Tooltip>
     </>

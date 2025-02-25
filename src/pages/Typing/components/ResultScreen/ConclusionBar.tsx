@@ -32,11 +32,9 @@ const ConclusionBar = ({ mistakeLevel, mistakeCount }: ConclusionBarProps) => {
   const { icon: Icon, className, text } = ICON_MAPPER[mistakeLevel]
 
   return (
-    <div className="flex h-10 flex-row items-center">
+    <div className="flex flex-row items-center py-1">
       <Icon className={classNames(className, 'h-5 w-5')} />
-      <span className="ml-2 inline-block align-middle text-sm font-medium leading-10 text-gray-700 sm:text-sm md:text-base">
-        {text(mistakeCount)}
-      </span>
+      <span className="ml-2 inline-block align-middle text-xs font-medium text-gray-700 sm:text-sm md:text-base">{text(mistakeCount)}</span>
     </div>
   )
 }

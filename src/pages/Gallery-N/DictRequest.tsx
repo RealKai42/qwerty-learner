@@ -46,8 +46,8 @@ export default function DictRequest() {
           <br />
         </InfoPanel>
       )}
-      <button className="cursor-pointer pr-6 text-sm text-indigo-500" onClick={onOpenPanel}>
-        没有找到想要的词典？
+      <button className="float-right ml-4 cursor-pointer text-nowrap text-sm text-indigo-500" onClick={onOpenPanel}>
+        更多词典
       </button>
     </>
   )

@@ -1,23 +1,30 @@
 .tab-content {
-  @apply flex w-full flex-col items-start justify-start gap-10 overflow-y-auto pb-40 pl-6 pr-9 pt-8;
+  @apply flex flex-col items-start justify-start gap-10 overflow-y-auto p-4 sm:p-8;
 }
 
 .section {
   @apply flex w-full flex-col items-start gap-4;
 }
 .section-label {
-  @apply pb-0 text-xl font-medium text-gray-600;
+  @apply pb-0 text-base font-medium text-gray-600 dark:text-gray-200 sm:text-xl;
 }
 .section-description {
-  @apply -mt-1 pl-4 text-left text-xs font-normal leading-tight text-gray-600;
+  @apply -mt-1 pl-4 text-left text-xs font-normal leading-tight text-gray-600 dark:text-gray-200;
 }
 
 .block {
   @apply flex w-full flex-col items-start gap-2 py-0 pl-4;
 }
 .block-label {
-  @apply font-medium text-gray-600;
+  @apply font-medium text-gray-600 dark:text-gray-200;
 }
+.block-item {
+  @apply flex h-5 w-full items-center justify-between;
+}
+.block-item-description {
+  @apply ml-4 min-w-8 text-nowrap text-xs font-normal text-gray-600 dark:text-gray-200;
+}
+
 .switch-block {
   composes: block;
   @apply flex-row items-center justify-between;
