@@ -3820,8 +3820,8 @@ const programming: DictionaryResource[] = [
   },
   {
     id: 'SoundSfxKey',
-    name: '游戏音效库常用英语',
-    description: '游戏音效库常用英语',
+    name: 'SoundDesignKey',
+    description: 'SoundDesignKey',
     category: '代码练习',
     tags: ['RAZ'],
     url: '/dicts/AudioKey.json',
