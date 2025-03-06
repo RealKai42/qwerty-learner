@@ -3841,15 +3841,15 @@ const programming: DictionaryResource[] = [
     languageCategory: 'code',
   },
   {
-    id: 'SoundSfxKey',
+    id: 'AudioKey',
     name: '游戏音效库常用英语',
     description: '游戏音效库常用英语',
     category: '代码练习',
-    tags: ['RAZ'],
+    tags: ['游戏'],
     url: '/dicts/AudioKey.json',
     length: 535,
-    language: 'en',
-    languageCategory: 'en',
+    language: 'code',
+    languageCategory: 'code',
   },
 ]
 
