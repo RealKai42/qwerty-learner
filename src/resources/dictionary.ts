@@ -158,6 +158,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'hongbaoshu-2026',
+    name: '2026考研英语 hongbaoshu',
+    description: '2026 考研词汇 (必考词+基础词+超纲词）',
+    category: '中国考试',
+    tags: ['考研'],
+    url: '/dicts/hongbaoshu-2026.json',
+    length: 4858,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'English_II',
     name: '英语二单词书',
     description: '考研英语二单词书',
