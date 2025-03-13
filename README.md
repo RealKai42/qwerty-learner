@@ -21,10 +21,6 @@
   <a><img src="https://img.shields.io/badge/Powered%20by-React-blue"/></a>
   <a><img src="https://img.shields.io/github/stars/RealKai42/qwerty-learner"/></a>
   <a><img src="https://img.shields.io/github/forks/RealKai42/qwerty-learner"/></a>
-  <a href="https://gitcode.com/RealKai42/qwerty-learner/overview"><img src="https://gitcode.com/RealKai42/qwerty-learner/star/badge.svg"/></a>
-    <a href="https://api.gitsponsors.com/api/badge/link?p=4DNHTkFshpqUNxrflL7n6ChVhCijBEN9zvnj50mFETUw2frmOXfrHW37m71uOnlp+eo/Vm8a0w94m0JeT4UAYxOAQwzuFiJS0UYIQ8H3km39ZcUnZ7wHNE05WpqBzTVcgZM26FijLiYv9m2p7mxx1w==">
-    <img src="https://api.gitsponsors.com/api/badge/img?id=331603334" height="20" alt="GitSponsors">
-  </a>
 </p>
 
 <div align=center>
