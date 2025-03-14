@@ -579,6 +579,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'PETS3_English2',
+    name: 'PETS3和English2高中频词',
+    description: '整理PETS3、英语2、悠悠1960已去重，作者：gcfkhy@gmail.com',
+    category: '中国考试',
+    tags: ['大学英语', 'PETS3', '自考英语二'],
+    url: '/dicts/English2_PETS3.json',
+    length: 4519,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
