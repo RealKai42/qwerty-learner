@@ -1628,6 +1628,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Categorized_TOEFL_Vocabulary_by_Zhanghongyan',
+    name: 'Categorized Vocab.',
+    description: '词以类记 TOEFL 2021 by ZhangHongYan (原书释义和助记; 单词序号)',
+    category: '国际考试',
+    tags: ['TOEFL'],
+    url: '/dicts/Categorized_TOEFL_Vocabulary_by_Zhanghongyan.json',
+    length: 4123,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 青少儿英语
