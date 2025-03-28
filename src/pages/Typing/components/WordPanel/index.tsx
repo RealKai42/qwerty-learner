@@ -2,6 +2,7 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
+import Example from './components/Example'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
@@ -172,9 +173,9 @@ export default function WordPanel() {
             )}
             <div className="relative">
               {currentWord.example && (
-                <Translation
-                  trans={currentWord.example}
-                  showTrans={shouldShowTranslation}
+                <Example
+                  example={currentWord.example}
+                  showExample={Boolean(currentWord.example && shouldShowTranslation)}
                   onMouseEnter={() => handleShowTranslation(true)}
                   onMouseLeave={() => handleShowTranslation(false)}
                 />
