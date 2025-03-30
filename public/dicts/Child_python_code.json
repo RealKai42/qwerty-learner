@@ -12,6 +12,18 @@
         ]
     },
     {
+        "name": "print",
+        "trans": [
+            "输出"
+        ]
+    },
+    {
+        "name": "input",
+        "trans": [
+            "输入"
+        ]
+    },
+    {
         "name": "while",
         "trans": [
             "while 型循环"
