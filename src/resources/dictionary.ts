@@ -892,17 +892,6 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
-    id: 'IELTSLiuHongbo538',
-    name: '雅思阅读 liuhongbo 538考点词',
-    description: '雅思阅读 liuhongbo 538考点词',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTSLiuHongbo538.json',
-    length: 376,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
     id: 'IELTSKingLu807',
     name: 'wanglu807雅思词汇听力第2版',
     description: 'wanglu807雅思词汇听力第2版',
