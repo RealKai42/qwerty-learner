@@ -5,6 +5,7 @@ import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type {
   Dictionary,
+  I18nType,
   InfoPanelState,
   LoopWordTimesOption,
   PhoneticType,
@@ -109,6 +110,11 @@ export const wordDictationConfigAtom = atomForConfig('wordDictationConfig', {
 })
 
 export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_START_CARD_DATE_KEY, null)
+
+export const i18nConfigAtom = atomForConfig('i18nConfig', {
+  isOpen: false,
+  type: 'zh' as I18nType,
+})
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
