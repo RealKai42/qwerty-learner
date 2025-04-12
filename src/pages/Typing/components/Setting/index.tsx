@@ -1,8 +1,10 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import AdvancedSetting from './AdvancedSetting'
 import DataSetting from './DataSetting'
+import HotkeySetting from './HotkeySetting'
 import SoundSetting from './SoundSetting'
 import ViewSetting from '@/pages/Typing/components/Setting/ViewSetting'
+import type { KeymapItem } from '@/utils/keymaps'
 import { Dialog, Tab, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
@@ -11,17 +13,26 @@ import IconEye from '~icons/heroicons/eye-solid'
 import IconAdjustmentsHorizontal from '~icons/tabler/adjustments-horizontal'
 import IconDatabaseCog from '~icons/tabler/database-cog'
 import IconEar from '~icons/tabler/ear'
+import IconKeyboard from '~icons/tabler/keyboard'
 import IconX from '~icons/tabler/x'
 
-export default function Setting() {
+interface SettingProps {
+  setIsSetting: React.Dispatch<React.SetStateAction<boolean>>
+  keyMaps: KeymapItem[]
+  setKeyMaps: React.Dispatch<React.SetStateAction<KeymapItem[]>>
+}
+
+export default function Setting({ setIsSetting, keyMaps, setKeyMaps }: SettingProps) {
   const [isOpen, setIsOpen] = useState(false)
   const { dispatch } = useContext(TypingContext) ?? {}
 
   function closeModal() {
+    setIsSetting(false)
     setIsOpen(false)
   }
 
   function openModal() {
+    setIsSetting(true)
     setIsOpen(true)
     if (dispatch) {
       dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
@@ -69,7 +80,7 @@ export default function Setting() {
                 <Dialog.Panel className="flex w-200 flex-col overflow-hidden rounded-2xl bg-white p-0 shadow-xl dark:bg-gray-800">
                   <div className="relative flex h-22 items-end justify-between rounded-t-lg border-b border-neutral-100 bg-stone-50 px-6 py-3 dark:border-neutral-700 dark:bg-gray-900">
                     <span className="text-3xl font-bold text-gray-600">设置</span>
-                    <button type="button" onClick={() => setIsOpen(false)} title="关闭对话框">
+                    <button type="button" onClick={closeModal} title="关闭对话框">
                       <IconX className="absolute right-7 top-5 cursor-pointer text-gray-400" />
                     </button>
                   </div>
@@ -121,6 +132,17 @@ export default function Setting() {
                           <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
                         </Tab>
+                        <Tab
+                          className={({ selected }) =>
+                            classNames(
+                              'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
+                            )
+                          }
+                        >
+                          <IconKeyboard className="mr-2 text-neutral-500  dark:text-neutral-300" />
+                          <span className="text-neutral-500 dark:text-neutral-300">快捷键设置</span>
+                        </Tab>
                       </Tab.List>
 
                       <Tab.Panels className="h-full w-full flex-1">
@@ -135,6 +157,9 @@ export default function Setting() {
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
                           <DataSetting />
+                        </Tab.Panel>
+                        <Tab.Panel className="flex h-full focus:outline-none">
+                          <HotkeySetting keyMaps={keyMaps} setKeyMaps={setKeyMaps} />
                         </Tab.Panel>
                       </Tab.Panels>
                     </div>
