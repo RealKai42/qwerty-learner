@@ -1408,6 +1408,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+    {
+    id: 'WFD',
+    name: 'WFD错题2月',
+    description: '大学英语四级词库',
+    category: '中国考试',
+    tags: ['大学英语'],
+    url: '/dicts/WFD01_1502.json',
+    length: 201,
+    language: 'en',
+    languageCategory: 'en',
+  },
   // {
   //   id: 'PTE_WFDgaopinci.json',
   //   name: 'PTE WFD高频词汇',
