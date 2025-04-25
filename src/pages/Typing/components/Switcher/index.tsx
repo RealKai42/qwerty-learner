@@ -9,6 +9,7 @@ import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
 import { CTRL } from '@/utils'
+import type { KeymapItem } from '@/utils/keymaps'
 import { useAtom } from 'jotai'
 import { useContext } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -17,7 +18,14 @@ import IconSun from '~icons/heroicons/sun-solid'
 import IconLanguage from '~icons/tabler/language'
 import IconLanguageOff from '~icons/tabler/language-off'
 
-export default function Switcher() {
+interface SwitcherProps {
+  setIsSetting: React.Dispatch<React.SetStateAction<boolean>>
+  isSetting: boolean
+  keyMaps: KeymapItem[]
+  setKeyMaps: React.Dispatch<React.SetStateAction<KeymapItem[]>>
+}
+
+export default function Switcher({ setIsSetting, isSetting, keyMaps, setKeyMaps }: SwitcherProps) {
   const [isOpenDarkMode, setIsOpenDarkMode] = useAtom(isOpenDarkModeAtom)
   const { state, dispatch } = useContext(TypingContext) ?? {}
 
@@ -32,11 +40,11 @@ export default function Switcher() {
   }
 
   useHotkeys(
-    'ctrl+shift+v',
+    keyMaps[0].hotkey,
     () => {
       changeTransVisibleState()
     },
-    { enableOnFormTags: true, preventDefault: true },
+    { enableOnFormTags: true, preventDefault: true, enabled: !isSetting && keyMaps[0].hotkey !== '' },
     [],
   )
 
@@ -51,7 +59,7 @@ export default function Switcher() {
       </Tooltip>
 
       <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
-        <WordDictationSwitcher />
+        <WordDictationSwitcher isSetting={isSetting} keyMaps={keyMaps} />
       </Tooltip>
       <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
         <button
@@ -92,7 +100,7 @@ export default function Switcher() {
         <HandPositionIllustration></HandPositionIllustration>
       </Tooltip>
       <Tooltip content="设置">
-        <Setting />
+        <Setting setIsSetting={setIsSetting} keyMaps={keyMaps} setKeyMaps={setKeyMaps} />
       </Tooltip>
     </div>
   )

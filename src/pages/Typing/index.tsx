@@ -18,6 +18,8 @@ import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
+import type { KeymapItem } from '@/utils/keymaps'
+import { KeymapStorageKey, getInitKeyMaps } from '@/utils/keymaps'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
@@ -27,6 +29,10 @@ import { useImmerReducer } from 'use-immer'
 const App: React.FC = () => {
   const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
+  // 设置快捷键时用于禁用所有快捷键
+  const [isSetting, setIsSetting] = useState<boolean>(false)
+  // 快捷键状态
+  const [keyMaps, setKeyMaps] = useState<KeymapItem[]>(getInitKeyMaps())
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
@@ -37,6 +43,11 @@ const App: React.FC = () => {
 
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
+
+  // 将快捷键状态同步到 local storage 中
+  useEffect(() => {
+    localStorage.setItem(KeymapStorageKey, JSON.stringify(keyMaps))
+  }, [keyMaps])
 
   useEffect(() => {
     // 检测用户设备
@@ -81,7 +92,7 @@ const App: React.FC = () => {
   useEffect(() => {
     if (!state.isTyping) {
       const onKeyDown = (e: KeyboardEvent) => {
-        if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        if (!isSetting && !isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
           e.preventDefault()
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
         }
@@ -90,7 +101,7 @@ const App: React.FC = () => {
 
       return () => window.removeEventListener('keydown', onKeyDown)
     }
-  }, [state.isTyping, isLoading, dispatch])
+  }, [state.isTyping, isLoading, dispatch, isSetting])
 
   useEffect(() => {
     if (words !== undefined) {
@@ -131,13 +142,13 @@ const App: React.FC = () => {
     <TypingContext.Provider value={{ state: state, dispatch }}>
       <StarCard />
       {state.isFinished && <DonateCard />}
-      {state.isFinished && <ResultScreen />}
+      {state.isFinished && <ResultScreen keyMaps={keyMaps} />}
       <Layout>
         <Header>
           <DictChapterButton />
           <PronunciationSwitcher />
-          <Switcher />
-          <StartButton isLoading={isLoading} />
+          <Switcher setIsSetting={setIsSetting} isSetting={isSetting} keyMaps={keyMaps} setKeyMaps={setKeyMaps} />
+          <StartButton isLoading={isLoading} isSetting={isSetting} keyMaps={keyMaps} />
           <Tooltip content="跳过该词">
             <button
               className={`${
@@ -160,7 +171,7 @@ const App: React.FC = () => {
                   ></div>
                 </div>
               ) : (
-                !state.isFinished && <WordPanel />
+                !state.isFinished && <WordPanel isSetting={isSetting} keyMaps={keyMaps} />
               )}
             </div>
             <Speed />

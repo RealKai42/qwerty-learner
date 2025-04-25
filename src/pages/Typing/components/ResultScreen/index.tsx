@@ -17,6 +17,7 @@ import {
 } from '@/store'
 import type { InfoPanelType } from '@/typings'
 import { recordOpenInfoPanelAction } from '@/utils'
+import type { KeymapItem } from '@/utils/keymaps'
 import { Transition } from '@headlessui/react'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useEffect, useMemo } from 'react'
@@ -29,7 +30,11 @@ import IconGithub from '~icons/simple-icons/github'
 import IconWechat from '~icons/simple-icons/wechat'
 import IconX from '~icons/tabler/x'
 
-const ResultScreen = () => {
+type ResultScreenProps = {
+  keyMaps: KeymapItem[]
+}
+
+const ResultScreen = ({ keyMaps }: ResultScreenProps) => {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
 
@@ -172,29 +177,29 @@ const ResultScreen = () => {
   }, [navigate, setCurrentChapter, setReviewModeInfo])
 
   useHotkeys(
-    'enter',
+    keyMaps[5].hotkey,
     () => {
       nextButtonHandler()
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: keyMaps[5].hotkey !== '' },
   )
 
   useHotkeys(
-    'space',
+    keyMaps[6].hotkey,
     (e) => {
       // 火狐浏览器的阻止事件无效，会导致按空格键后 再次输入正确的第一个字母会报错
       e.stopPropagation()
       repeatButtonHandler()
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: keyMaps[6].hotkey !== '' },
   )
 
   useHotkeys(
-    'shift+enter',
+    keyMaps[7].hotkey,
     () => {
       dictationButtonHandler()
     },
-    { preventDefault: true },
+    { preventDefault: true, enabled: keyMaps[7].hotkey !== '' },
   )
 
   const handleOpenInfoPanel = useCallback(
