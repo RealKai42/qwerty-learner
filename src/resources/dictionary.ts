@@ -2537,6 +2537,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'Yilin4_2',
+    name: '译林版四年级下册',
+    description: '译林版四年级下册',
+    category: '青少年英语',
+    tags: ['译林版'],
+    url: './dicts/YiLin4_2.json',
+    length: 119,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'beishi1',
     name: '高中必修1',
     description: '北师大版高中必修1',
