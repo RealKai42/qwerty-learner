@@ -211,14 +211,17 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           state.endTime = getUtcStringForMixpanel()
         })
         playHintSound()
+        // 添加延迟，确保最后一个字母的动画效果完成
+        setTimeout(() => {
+          dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
+        }, 300)
       } else {
         setWordState((state) => {
           state.letterStates[inputLength - 1] = 'correct'
         })
         playKeySound()
+        dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
       }
-
-      dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
     } else {
       // 出错时
       playBeepSound()
@@ -264,24 +267,27 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   useEffect(() => {
     if (wordState.isFinished) {
-      dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
+      // 添加延迟，确保最后一个字母的动画效果完成
+      setTimeout(() => {
+        dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
 
-      wordLogUploader({
-        headword: word.name,
-        timeStart: wordState.startTime,
-        timeEnd: wordState.endTime,
-        countInput: wordState.correctCount + wordState.wrongCount,
-        countCorrect: wordState.correctCount,
-        countTypo: wordState.wrongCount,
-      })
-      saveWordRecord({
-        word: word.name,
-        wrongCount: wordState.wrongCount,
-        letterTimeArray: wordState.letterTimeArray,
-        letterMistake: wordState.letterMistake,
-      })
+        wordLogUploader({
+          headword: word.name,
+          timeStart: wordState.startTime,
+          timeEnd: wordState.endTime,
+          countInput: wordState.correctCount + wordState.wrongCount,
+          countCorrect: wordState.correctCount,
+          countTypo: wordState.wrongCount,
+        })
+        saveWordRecord({
+          word: word.name,
+          wrongCount: wordState.wrongCount,
+          letterTimeArray: wordState.letterTimeArray,
+          letterMistake: wordState.letterMistake,
+        })
 
-      onFinish()
+        onFinish()
+      }, 300)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.isFinished])
