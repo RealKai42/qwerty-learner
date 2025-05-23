@@ -52,6 +52,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
+  const favoriteButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     // run only when word changes
@@ -126,6 +127,16 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       }
     },
     [state.isTyping],
+    { enableOnFormTags: true, preventDefault: true },
+  )
+
+  useHotkeys(
+    'f5',
+    () => {
+      if (favoriteButtonRef.current) {
+        favoriteButtonRef.current.click()
+      }
+    },
     { enableOnFormTags: true, preventDefault: true },
   )
 
@@ -312,7 +323,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
             </div>
           )}
           <div className={`absolute ${pronunciationIsOpen ? '-right-24' : '-right-12'} top-1/2 h-9 w-9 -translate-y-1/2 transform`}>
-            <FavoriteButton word={word} className="h-full w-full" />
+            <FavoriteButton ref={favoriteButtonRef} word={word} className="h-full w-full" />
           </div>
         </div>
       </div>

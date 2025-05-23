@@ -2,7 +2,7 @@ import Tooltip from '@/components/Tooltip'
 import { createIsWordFavoritedAtom, currentDictIdAtom, toggleFavoriteWordAtom } from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useMemo } from 'react'
+import { forwardRef, useCallback, useMemo } from 'react'
 import IconHeart from '~icons/lucide/heart'
 import IconHeartOff from '~icons/lucide/heart-off'
 
@@ -12,7 +12,7 @@ interface FavoriteButtonProps {
   allowUnfavorite?: boolean // 是否允许取消收藏
 }
 
-export default function FavoriteButton({ word, className = '', allowUnfavorite = false }: FavoriteButtonProps) {
+const FavoriteButton = forwardRef<HTMLButtonElement, FavoriteButtonProps>(({ word, className = '', allowUnfavorite = false }, ref) => {
   const currentDictId = useAtomValue(currentDictIdAtom)
   const toggleFavorite = useSetAtom(toggleFavoriteWordAtom)
 
@@ -36,7 +36,7 @@ export default function FavoriteButton({ word, className = '', allowUnfavorite =
     if (isFavorited) {
       return allowUnfavorite ? '取消收藏' : '已收藏'
     }
-    return '收藏单词'
+    return '收藏单词（F5）'
   }
 
   const getIcon = () => {
@@ -49,6 +49,7 @@ export default function FavoriteButton({ word, className = '', allowUnfavorite =
   return (
     <Tooltip content={getTooltipText()}>
       <button
+        ref={ref}
         onClick={handleToggleFavorite}
         disabled={isDisabled}
         className={`flex items-center justify-center p-2 transition-all duration-200 ${
@@ -60,4 +61,8 @@ export default function FavoriteButton({ word, className = '', allowUnfavorite =
       </button>
     </Tooltip>
   )
-}
+})
+
+FavoriteButton.displayName = 'FavoriteButton'
+
+export default FavoriteButton
