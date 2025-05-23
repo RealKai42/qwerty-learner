@@ -1,11 +1,13 @@
 import FavoriteButton from '../FavoriteButton'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
+import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
+import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { type FavoriteWord, clearAllFavoritesAtom, favoriteWordsAtom, removeFavoriteWordAtom } from '@/store'
 import dayjs from 'dayjs'
 import { useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useMemo, useRef, useState } from 'react'
 import IconHeart from '~icons/lucide/heart'
 import IconTrash from '~icons/lucide/trash-2'
 import IconClear from '~icons/lucide/x'
@@ -22,6 +24,7 @@ interface FavoriteWordItemProps {
 
 function FavoriteWordItem({ word, onRemove }: FavoriteWordItemProps) {
   const dictInfo = idDictionaryMap[word.dictId]
+  const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
 
   const handleRemove = useCallback(() => {
     onRemove(word)
@@ -38,6 +41,7 @@ function FavoriteWordItem({ word, onRemove }: FavoriteWordItemProps) {
         <div className="mt-1 text-xs text-gray-400 dark:text-gray-500">收藏于 {dayjs(word.addedAt).format('YYYY-MM-DD HH:mm')}</div>
       </div>
       <div className="ml-2 flex items-center gap-1">
+        <WordPronunciationIcon word={word} lang={dictInfo?.language || 'en'} className="h-8 w-8" ref={wordPronunciationIconRef} />
         <FavoriteButton word={word} allowUnfavorite={true} />
         <Tooltip content="删除记录">
           <button
