@@ -1,3 +1,4 @@
+import FavoriteButton from '../../../FavoriteButton'
 import type { WordUpdateAction } from '../InputHandler'
 import InputHandler from '../InputHandler'
 import Letter from './Letter'
@@ -310,6 +311,9 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
               </Tooltip>
             </div>
           )}
+          <div className={`absolute ${pronunciationIsOpen ? '-right-24' : '-right-12'} top-1/2 h-9 w-9 -translate-y-1/2 transform`}>
+            <FavoriteButton word={word} className="h-full w-full" />
+          </div>
         </div>
       </div>
       <TipAlert className="fixed bottom-10 right-3" show={showTipAlert} setShow={setShowTipAlert} />

@@ -1,5 +1,7 @@
 import Layout from '../../components/Layout'
 import { DictChapterButton } from './components/DictChapterButton'
+import FavoriteListButton from './components/FavoriteListButton'
+import FavoriteWordsPanel from './components/FavoriteWordsPanel'
 import PronunciationSwitcher from './components/PronunciationSwitcher'
 import ResultScreen from './components/ResultScreen'
 import Speed from './components/Speed'
@@ -27,6 +29,7 @@ import { useImmerReducer } from 'use-immer'
 const App: React.FC = () => {
   const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
+  const [isFavoritePanelOpen, setIsFavoritePanelOpen] = useState(false)
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
@@ -138,6 +141,7 @@ const App: React.FC = () => {
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />
+          <FavoriteListButton onClick={() => setIsFavoritePanelOpen(true)} />
           <Tooltip content="跳过该词">
             <button
               className={`${
@@ -168,6 +172,7 @@ const App: React.FC = () => {
         </div>
       </Layout>
       <WordList />
+      <FavoriteWordsPanel isOpen={isFavoritePanelOpen} onClose={() => setIsFavoritePanelOpen(false)} />
     </TypingContext.Provider>
   )
 }
