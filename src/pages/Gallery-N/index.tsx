@@ -1,5 +1,6 @@
 import DictionaryGroup from './CategoryDicts'
 import DictRequest from './DictRequest'
+import FavoriteDict from './FavoriteDict'
 import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
 import { dictionaries } from '@/resources/dictionary'
@@ -17,7 +18,7 @@ import IconInfo from '~icons/ic/outline-info'
 import IconX from '~icons/tabler/x'
 
 export type GalleryState = {
-  currentLanguageTab: LanguageCategoryType
+  currentLanguageTab: LanguageCategoryType | 'favorites'
 }
 
 const initialGalleryState: GalleryState = {
@@ -74,9 +75,16 @@ export default function GalleryPage() {
               <ScrollArea.Root className="flex-1 overflow-y-auto">
                 <ScrollArea.Viewport className="h-full w-full ">
                   <div className="mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
-                    {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
-                      <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
-                    ))}
+                    {galleryState.currentLanguageTab === 'favorites' ? (
+                      <div className="flex flex-col gap-4">
+                        <h3 className="text-lg font-bold text-gray-700 dark:text-white dark:text-opacity-70">收藏夹</h3>
+                        <FavoriteDict />
+                      </div>
+                    ) : (
+                      groupedByCategoryAndTag
+                        .filter(([category]) => category !== '收藏夹')
+                        .map(([category, groupeByTag]) => <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />)
+                    )}
                   </div>
                   <div className="flex items-center justify-center pb-10 pt-[20rem] text-gray-500">
                     <IconInfo className="mr-1 h-5 w-5" />

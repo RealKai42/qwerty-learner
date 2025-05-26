@@ -4105,6 +4105,17 @@ const indonesianDicts: DictionaryResource[] = [
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaryResources: DictionaryResource[] = [
+  {
+    id: 'favorites',
+    name: '收藏夹',
+    description: '收藏的单词',
+    category: '收藏夹',
+    tags: ['收藏'],
+    url: '/dicts/favorites.json',
+    length: 0,
+    language: 'en',
+    languageCategory: 'en',
+  },
   ...chinaExam,
   ...internationalExam,
   ...childrenEnglish,
@@ -4113,25 +4124,6 @@ export const dictionaryResources: DictionaryResource[] = [
   ...germanExam,
   ...kazakhHapinDicts,
   ...indonesianDicts,
-
-  // {
-  //   id: 'zhtest',
-  //   name: '中文测试',
-  //   description: '中文测试词库',
-  //   category: '测试',
-  //   url: '/dicts/chinese_test.json',
-  //   length: 27,
-  //   language: 'zh',
-  // },
-  // {
-  //   id: 'jptest',
-  //   name: '日文测试',
-  //   description: '日文测试词库',
-  //   category: '测试',
-  //   url: '/dicts/japanese_test.json',
-  //   length: 20,
-  //   language: 'ja',
-  // },
 ]
 
 export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({
