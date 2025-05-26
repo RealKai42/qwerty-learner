@@ -15,6 +15,7 @@ import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import {
   currentChapterAtom,
+  currentDictIdAtom,
   currentDictInfoAtom,
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
@@ -49,6 +50,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
   const currentChapter = useAtomValue(currentChapterAtom)
+  const currentDictId = useAtomValue(currentDictIdAtom)
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
@@ -133,7 +135,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   useHotkeys(
     'f5',
     () => {
-      if (favoriteButtonRef.current) {
+      if (favoriteButtonRef.current && currentDictId !== 'favorites') {
         favoriteButtonRef.current.click()
       }
     },
@@ -328,9 +330,11 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
               </Tooltip>
             </div>
           )}
-          <div className={`absolute ${pronunciationIsOpen ? '-right-24' : '-right-12'} top-1/2 h-9 w-9 -translate-y-1/2 transform`}>
-            <FavoriteButton ref={favoriteButtonRef} word={word} className="h-full w-full" />
-          </div>
+          {currentDictId !== 'favorites' && (
+            <div className={`absolute ${pronunciationIsOpen ? '-right-24' : '-right-12'} top-1/2 h-9 w-9 -translate-y-1/2 transform`}>
+              <FavoriteButton ref={favoriteButtonRef} word={word} className="h-full w-full" />
+            </div>
+          )}
         </div>
       </div>
       <TipAlert className="fixed bottom-10 right-3" show={showTipAlert} setShow={setShowTipAlert} />

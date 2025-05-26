@@ -42,7 +42,6 @@ function FavoriteWordItem({ word, onRemove }: FavoriteWordItemProps) {
       </div>
       <div className="ml-2 flex items-center gap-1">
         <WordPronunciationIcon word={word} lang={dictInfo?.language || 'en'} className="h-8 w-8" ref={wordPronunciationIconRef} />
-        <FavoriteButton word={word} allowUnfavorite={true} />
         <Tooltip content="删除记录">
           <button
             onClick={handleRemove}

@@ -8,8 +8,44 @@ export interface FavoriteWord extends Word {
   dictId: string // 来源词典ID
 }
 
-// 收藏的单词列表，存储在 localStorage
+// 使用 atomWithStorage 自动处理 localStorage 持久化
 export const favoriteWordsAtom = atomWithStorage<FavoriteWord[]>('favoriteWords', [])
+
+// 创建一个派生atom来检查特定单词是否已收藏
+export const isWordFavoriteAtom = (word: Word, dictId: string) => {
+  return atom((get) => {
+    const favoriteWords = get(favoriteWordsAtom)
+    return favoriteWords.some((w) => w.name === word.name && w.dictId === dictId)
+  })
+}
+
+// 添加单词到收藏夹
+export const addToFavoritesAtom = (word: Word, dictId: string) => {
+  return atom(null, (get, set) => {
+    const favoriteWords = get(favoriteWordsAtom)
+    if (!favoriteWords.some((w) => w.name === word.name)) {
+      set(favoriteWordsAtom, [
+        ...favoriteWords,
+        {
+          ...word,
+          addedAt: new Date().toISOString(),
+          dictId,
+        },
+      ])
+    }
+  })
+}
+
+// 从收藏夹移除单词
+export const removeFromFavoritesAtom = (word: Word) => {
+  return atom(null, (get, set) => {
+    const favoriteWords = get(favoriteWordsAtom)
+    set(
+      favoriteWordsAtom,
+      favoriteWords.filter((w) => w.name !== word.name),
+    )
+  })
+}
 
 // 创建一个派生atom来检查特定单词是否已收藏
 export const createIsWordFavoritedAtom = (word: Word, dictId: string) =>
