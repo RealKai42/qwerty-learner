@@ -8,6 +8,7 @@ import { type FavoriteWord, clearAllFavoritesAtom, favoriteWordsAtom, removeFavo
 import dayjs from 'dayjs'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useMemo, useRef, useState } from 'react'
+import IconDownload from '~icons/lucide/download'
 import IconHeart from '~icons/lucide/heart'
 import IconTrash from '~icons/lucide/trash-2'
 import IconClear from '~icons/lucide/x'
@@ -83,6 +84,39 @@ export default function FavoriteWordsPanel({ isOpen, onClose }: FavoriteWordsPan
     }
   }, [clearAllFavorites, showConfirmClear])
 
+  const handleExport = useCallback(() => {
+    if (favoriteWords.length === 0) return
+
+    // 准备CSV数据
+    const headers = ['单词', '释义', '发音(美式)', '发音(英式)', '来源词典', '收藏时间']
+    const rows = favoriteWords.map((word) => [
+      word.name,
+      word.trans.join('；'),
+      word.usphone,
+      word.ukphone,
+      idDictionaryMap[word.dictId]?.name || '未知词典',
+      dayjs(word.addedAt).format('YYYY-MM-DD HH:mm:ss'),
+    ])
+
+    // 将数据转换为CSV格式
+    const csvContent = [headers.join(','), ...rows.map((row) => row.map((cell) => `"${cell}"`).join(','))].join('\n')
+
+    // 创建Blob对象
+    const blob = new Blob(['\ufeff' + csvContent], { type: 'text/csv;charset=utf-8' })
+
+    // 创建下载链接
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `收藏单词_${dayjs().format('YYYY-MM-DD HH-mm')}.csv`
+
+    // 触发下载
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
+  }, [favoriteWords])
+
   return (
     <Drawer
       open={isOpen}
@@ -99,18 +133,29 @@ export default function FavoriteWordsPanel({ isOpen, onClose }: FavoriteWordsPan
           </div>
           <div className="flex items-center gap-2">
             {favoriteWords.length > 0 && (
-              <Tooltip content={showConfirmClear ? '再次点击确认清空' : '清空所有收藏'}>
-                <button
-                  onClick={handleClearAll}
-                  className={`rounded px-3 py-1 text-sm transition-colors ${
-                    showConfirmClear
-                      ? 'bg-red-500 text-white hover:bg-red-600'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'
-                  }`}
-                >
-                  {showConfirmClear ? '确认清空' : '清空全部'}
-                </button>
-              </Tooltip>
+              <>
+                <Tooltip content="导出CSV">
+                  <button
+                    onClick={handleExport}
+                    className="flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700 focus:outline-none"
+                  >
+                    <IconDownload className="h-4 w-4" />
+                    导出CSV
+                  </button>
+                </Tooltip>
+                <Tooltip content={showConfirmClear ? '再次点击确认清空' : '清空所有收藏'}>
+                  <button
+                    onClick={handleClearAll}
+                    className={`rounded px-3 py-1 text-sm transition-colors ${
+                      showConfirmClear
+                        ? 'bg-red-500 text-white hover:bg-red-600'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'
+                    }`}
+                  >
+                    {showConfirmClear ? '确认清空' : '清空全部'}
+                  </button>
+                </Tooltip>
+              </>
             )}
             <button onClick={onClose} className="flex h-8 w-8 items-center justify-center rounded hover:bg-gray-100 dark:hover:bg-gray-700">
               <IconClear className="h-4 w-4 text-gray-500" />
