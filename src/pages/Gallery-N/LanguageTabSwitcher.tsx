@@ -8,11 +8,12 @@ import kkFlag from '@/assets/flags/kk.png'
 import type { LanguageCategoryType } from '@/typings'
 import { RadioGroup } from '@headlessui/react'
 import { useCallback, useContext } from 'react'
+import IconHeart from '~icons/lucide/heart'
 
 export type LanguageTabOption = {
-  id: LanguageCategoryType
+  id: LanguageCategoryType | 'favorites'
   name: string
-  flag: string
+  flag: string | JSX.Element
 }
 
 const options: LanguageTabOption[] = [
@@ -22,6 +23,7 @@ const options: LanguageTabOption[] = [
   { id: 'kk', name: '哈萨克语', flag: kkFlag },
   { id: 'id', name: '印尼语', flag: idFlag },
   { id: 'code', name: 'Code', flag: codeFlag },
+  { id: 'favorites', name: '收藏夹', flag: <IconHeart className="h-7 w-7" /> },
 ]
 
 export function LanguageTabSwitcher() {
@@ -44,7 +46,11 @@ export function LanguageTabSwitcher() {
           <RadioGroup.Option key={option.id} value={option.id} className="cursor-pointer">
             {({ checked }) => (
               <div className={`flex items-center border-b-2 px-2 pb-1 ${checked ? 'border-indigo-500' : 'border-transparent'}`}>
-                <img src={option.flag} className="mr-1.5 h-7 w-7" />
+                {typeof option.flag === 'string' ? (
+                  <img src={option.flag} className="mr-1.5 h-7 w-7" />
+                ) : (
+                  <div className="mr-1.5 h-7 w-7">{option.flag}</div>
+                )}
                 <p className={`text-lg font-medium text-gray-700 dark:text-gray-200`}>{option.name}</p>
               </div>
             )}

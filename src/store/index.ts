@@ -112,3 +112,13 @@ export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_STA
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
+
+// 添加收藏相关的导出
+export {
+  favoriteWordsAtom,
+  createIsWordFavoritedAtom,
+  toggleFavoriteWordAtom,
+  clearAllFavoritesAtom,
+  removeFavoriteWordAtom,
+  type FavoriteWord,
+} from './favoriteWordsAtom'

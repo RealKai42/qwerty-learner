@@ -1,3 +1,4 @@
+import FavoriteButton from '../../../FavoriteButton'
 import type { WordUpdateAction } from '../InputHandler'
 import InputHandler from '../InputHandler'
 import Letter from './Letter'
@@ -14,6 +15,7 @@ import useKeySounds from '@/hooks/useKeySounds'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import {
   currentChapterAtom,
+  currentDictIdAtom,
   currentDictInfoAtom,
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
@@ -48,9 +50,11 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
   const currentChapter = useAtomValue(currentChapterAtom)
+  const currentDictId = useAtomValue(currentDictIdAtom)
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
+  const favoriteButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     // run only when word changes
@@ -128,6 +132,16 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     { enableOnFormTags: true, preventDefault: true },
   )
 
+  useHotkeys(
+    'f5',
+    () => {
+      if (favoriteButtonRef.current && currentDictId !== 'favorites') {
+        favoriteButtonRef.current.click()
+      }
+    },
+    { enableOnFormTags: true, preventDefault: true },
+  )
+
   useEffect(() => {
     if (wordState.inputWord.length === 0 && state.isTyping) {
       wordPronunciationIconRef.current?.play && wordPronunciationIconRef.current?.play()
@@ -199,14 +213,17 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           state.endTime = getUtcStringForMixpanel()
         })
         playHintSound()
+        // 添加延迟，确保最后一个字母的动画效果完成
+        setTimeout(() => {
+          dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
+        }, 300)
       } else {
         setWordState((state) => {
           state.letterStates[inputLength - 1] = 'correct'
         })
         playKeySound()
+        dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
       }
-
-      dispatch({ type: TypingStateActionType.REPORT_CORRECT_WORD })
     } else {
       // 出错时
       playBeepSound()
@@ -252,24 +269,27 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   useEffect(() => {
     if (wordState.isFinished) {
-      dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
+      // 添加延迟，确保最后一个字母的动画效果完成
+      setTimeout(() => {
+        dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
 
-      wordLogUploader({
-        headword: word.name,
-        timeStart: wordState.startTime,
-        timeEnd: wordState.endTime,
-        countInput: wordState.correctCount + wordState.wrongCount,
-        countCorrect: wordState.correctCount,
-        countTypo: wordState.wrongCount,
-      })
-      saveWordRecord({
-        word: word.name,
-        wrongCount: wordState.wrongCount,
-        letterTimeArray: wordState.letterTimeArray,
-        letterMistake: wordState.letterMistake,
-      })
+        wordLogUploader({
+          headword: word.name,
+          timeStart: wordState.startTime,
+          timeEnd: wordState.endTime,
+          countInput: wordState.correctCount + wordState.wrongCount,
+          countCorrect: wordState.correctCount,
+          countTypo: wordState.wrongCount,
+        })
+        saveWordRecord({
+          word: word.name,
+          wrongCount: wordState.wrongCount,
+          letterTimeArray: wordState.letterTimeArray,
+          letterMistake: wordState.letterMistake,
+        })
 
-      onFinish()
+        onFinish()
+      }, 300)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.isFinished])
@@ -308,6 +328,11 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
               <Tooltip content={`快捷键${CTRL} + J`}>
                 <WordPronunciationIcon word={word} lang={currentLanguage} ref={wordPronunciationIconRef} className="h-full w-full" />
               </Tooltip>
+            </div>
+          )}
+          {currentDictId !== 'favorites' && (
+            <div className={`absolute ${pronunciationIsOpen ? '-right-24' : '-right-12'} top-1/2 h-9 w-9 -translate-y-1/2 transform`}>
+              <FavoriteButton ref={favoriteButtonRef} word={word} className="h-full w-full" />
             </div>
           )}
         </div>

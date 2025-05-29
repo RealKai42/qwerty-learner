@@ -9,6 +9,11 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
 
   const onKeydown = useCallback(
     (e: KeyboardEvent) => {
+      // 忽略F5键的输入
+      if (e.key === 'F5') {
+        return
+      }
+
       const char = e.key
 
       if (isChineseSymbol(char)) {
