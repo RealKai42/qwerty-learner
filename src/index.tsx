@@ -5,6 +5,7 @@ import { FriendLinks } from './pages/FriendLinks'
 import MobilePage from './pages/Mobile'
 import TypingPage from './pages/Typing'
 import { isOpenDarkModeAtom } from '@/store'
+import { Analytics } from '@vercel/analytics/react'
 import 'animate.css'
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
@@ -67,6 +68,7 @@ function Root() {
           </Routes>
         </Suspense>
       </BrowserRouter>
+      <Analytics />
     </React.StrictMode>
   )
 }
