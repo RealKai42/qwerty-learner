@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-  qwertylearner:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - '8990:5173'
