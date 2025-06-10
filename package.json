@@ -95,6 +95,7 @@
     "@types/canvas-confetti": "^1.6.0",
     "@types/echarts": "^4.9.18",
     "@types/file-saver": "^2.0.5",
+    "@types/gtag.js": "^0.0.20",
     "@types/howler": "^2.2.3",
     "@types/mixpanel-browser": "^2.38.1",
     "@types/node": "18.14.6",

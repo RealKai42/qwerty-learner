@@ -2368,6 +2368,11 @@
   resolved "https://registry.npmmirror.com/@types/file-saver/-/file-saver-2.0.5.tgz"
   integrity sha512-zv9kNf3keYegP5oThGLaPk8E081DFDuwfqjtiTzm6PoxChdJ1raSuADf2YGCVIyrSynLrgc8JWv296s7Q7pQSQ==
 
+"@types/gtag.js@^0.0.20":
+  version "0.0.20"
+  resolved "https://registry.npmjs.org/@types/gtag.js/-/gtag.js-0.0.20.tgz#e47edabb4ed5ecac90a079275958e6c929d7c08a"
+  integrity sha512-wwAbk3SA2QeU67unN7zPxjEHmPmlXwZXZvQEpbEUQuMCRGgKyE1m6XDuTUA9b6pCGb/GqJmdfMOY5LuDjJSbbg==
+
 "@types/history@^4.7.11":
   version "4.7.11"
   resolved "https://registry.npmmirror.com/@types/history/-/history-4.7.11.tgz"
