@@ -8,10 +8,12 @@ export default {
     extend: {
       fontFamily: {
         round: [
+          '"Varela Round"',
           '"Nunito"',
           '"Quicksand"',
-          '"Rubik"',
+          '"HarmonyOS_Regular"',  // 添加更圆润的中文字体
           '"PingFang SC"',
+          '"Microsoft Yahei"',
           '"HarmonyOS Sans"',
           '"MiSans"',
           'system-ui',

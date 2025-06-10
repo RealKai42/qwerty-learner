@@ -13,9 +13,10 @@
       >{{ char }}</span>
     </div>
     <div class="phonetic">{{ word?.usphone }}</div>
-    <div class="translation">{{ word?.trans?.[0] }}</div>
+    <div class="translation chinese-text">{{ word?.trans?.[0] }}</div>
   </div>
 </template>
+
 
 <script setup>
 import { ref, watch, computed } from 'vue'
@@ -97,18 +98,34 @@ watch(() => props.word?.name, (newWord) => {
 defineExpose({ chars })
 </script>
 
+
 <style scoped>
 .word-display {
   @apply flex flex-col items-center justify-center text-center;
 }
 .word {
-  @apply text-[96px] font-mono tracking-wider text-white mb-4;
+  @apply text-[96px] font-round tracking-wider text-white mb-4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .phonetic {
-  @apply text-2xl text-gray-400 mb-3;
+  @apply text-2xl text-gray-400 mb-3 font-round;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
 }
 .translation {
   @apply text-2xl text-gray-300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.chinese-text {
+  font-family: 'Noto Sans SC', system-ui, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
 }
 .jumping-text span {
   display: inline-block;

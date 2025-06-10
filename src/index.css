@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Varela+Round&display=swap');
+/* 添加 Noto Sans SC 中文字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Nunito', 'Quicksand', 'Rubik', 'PingFang SC', 'HarmonyOS Sans', 'MiSans', system-ui, sans-serif;
+  font-family: 'Varela Round', 'Nunito', 'Quicksand', 'Noto Sans SC', 'PingFang SC', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @keyframes jump {

@@ -15,11 +15,52 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useTypingStore } from '../stores/typing'
 import WordCard from './WordCard.vue'
 
+// 创建音频上下文
+const audioContext = new (window.AudioContext || window.webkitAudioContext)()
+const sounds = new Map()
+
+// 加载音频文件
+const loadSound = async (url) => {
+  try {
+    const response = await fetch(url)
+    const arrayBuffer = await response.arrayBuffer()
+    const audioBuffer = await audioContext.decodeAudioData(arrayBuffer)
+    return audioBuffer
+  } catch (error) {
+    console.error('Failed to load sound:', error)
+    return null
+  }
+}
+
+// 播放音频
+const playSound = (buffer) => {
+  if (!buffer) return
+  
+  const source = audioContext.createBufferSource()
+  source.buffer = buffer
+  source.connect(audioContext.destination)
+  source.start(0)
+}
+
+// 预加载音效
+onMounted(async () => {
+  try {
+    const [keyboardBuffer, errorBuffer] = await Promise.all([
+      loadSound('/sounds/keyboard.mp3'),
+      loadSound('/sounds/error.mp3')
+    ])
+    sounds.set('keyboard', keyboardBuffer)
+    sounds.set('error', errorBuffer)
+  } catch (error) {
+    console.error('Failed to preload sounds:', error)
+  }
+
+  window.addEventListener('keydown', handleKeydown)
+})
+
 const store = useTypingStore()
 const inputWord = ref('')
 const wordCardRef = ref(null)
-
-// 存储每个字符的输入结果，包括正确和错误的字符
 const typedResult = ref([])
 
 const isCorrect = computed(() => {
@@ -27,15 +68,11 @@ const isCorrect = computed(() => {
 })
 
 const playKeySound = () => {
-  const audio = new Audio('/sounds/keyboard.mp3')
-  audio.volume = 1
-  audio.play().catch(() => {})
+  playSound(sounds.get('keyboard'))
 }
 
 const playErrorSound = () => {
-  const audio = new Audio('/sounds/error.mp3')
-  audio.volume = 1
-  audio.play().catch(() => {})
+  playSound(sounds.get('error'))
 }
 
 const createJumpAnimation = (element) => {
@@ -47,13 +84,17 @@ const createJumpAnimation = (element) => {
 const handleKeydown = (event) => {
   if (event.ctrlKey || event.altKey || event.metaKey) return
   
+  // 确保音频上下文是激活的
+  if (audioContext.state === 'suspended') {
+    audioContext.resume()
+  }
+  
   if (event.key.length === 1) {
     if (/^[a-zA-Z\-']$/.test(event.key)) {
       const inputChar = event.key.toLowerCase()
       const currentIndex = inputWord.value.length
       const correctChar = store.currentWord.name[currentIndex]
       
-      // 记录输入的字符
       typedResult.value[currentIndex] = inputChar
 
       if (correctChar === inputChar) {
@@ -79,16 +120,13 @@ const handleKeydown = (event) => {
     if (inputWord.value.length > 0) {
       playKeySound()
       inputWord.value = inputWord.value.slice(0, -1)
-      typedResult.value.pop() // 删除最后一个输入结果
+      typedResult.value.pop()
     }
   }
 }
 
-onMounted(() => {
-  window.addEventListener('keydown', handleKeydown)
-})
-
 onUnmounted(() => {
   window.removeEventListener('keydown', handleKeydown)
+  audioContext.close()
 })
 </script>
