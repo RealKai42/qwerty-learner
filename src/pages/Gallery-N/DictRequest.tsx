@@ -11,6 +11,7 @@ export default function DictRequest() {
     track('promotion_event', {
       from: 'dict_request_button',
       action: 'open',
+      action_detail: 'dict_request_button_open',
     })
   }, [])
 
@@ -19,6 +20,7 @@ export default function DictRequest() {
     track('promotion_event', {
       from: 'dict_request_panel',
       action: 'close',
+      action_detail: 'dict_request_panel_close',
     })
   }, [])
 

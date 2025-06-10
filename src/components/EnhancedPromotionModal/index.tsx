@@ -25,8 +25,9 @@ const EnhancedPromotionModal: React.FC = () => {
 
   const handleTryNow = () => {
     track('promotion_event', {
-      from: 'enhanced_promotion_modal',
+      from: 'promotion_modal',
       action: 'open',
+      action_detail: 'promotion_modal_open',
     })
     setHasSeenPromotion(true)
     // setIsOpen(false)
@@ -36,8 +37,9 @@ const EnhancedPromotionModal: React.FC = () => {
 
   const handleDismiss = () => {
     track('promotion_event', {
-      from: 'enhanced_promotion_modal',
+      from: 'promotion_modal',
       action: 'close',
+      action_detail: 'promotion_modal_close',
     })
     setHasSeenPromotion(true)
     setIsOpen(false)
