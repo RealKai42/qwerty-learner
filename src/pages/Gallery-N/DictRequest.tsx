@@ -1,5 +1,5 @@
 import InfoPanel from '@/components/InfoPanel'
-import { trackEvent } from '@/utils/trackEvent'
+import { trackPromotionEvent } from '@/utils/trackEvent'
 import { useCallback, useState } from 'react'
 import IconBook2 from '~icons/tabler/book-2'
 
@@ -8,7 +8,7 @@ export default function DictRequest() {
 
   const onOpenPanel = useCallback(() => {
     setShowPanel(true)
-    trackEvent('promotion_event', {
+    trackPromotionEvent('promotion_event', {
       from: 'dict_request_button',
       action: 'open',
       action_detail: 'dict_request_button_open',
@@ -17,7 +17,7 @@ export default function DictRequest() {
 
   const onClosePanel = useCallback(() => {
     setShowPanel(false)
-    trackEvent('promotion_event', {
+    trackPromotionEvent('promotion_event', {
       from: 'dict_request_panel',
       action: 'close',
       action_detail: 'dict_request_panel_close',

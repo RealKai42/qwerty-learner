@@ -1,6 +1,6 @@
 import noop from '../../utils/noop'
 import { hasSeenEnhancedPromotionAtom } from '@/store'
-import { trackEvent } from '@/utils/trackEvent'
+import { trackPromotionEvent } from '@/utils/trackEvent'
 import { Dialog, Transition } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import type React from 'react'
@@ -24,7 +24,7 @@ const EnhancedPromotionModal: React.FC = () => {
   }, [hasSeenPromotion])
 
   const handleTryNow = () => {
-    trackEvent('promotion_event', {
+    trackPromotionEvent('promotion_event', {
       from: 'promotion_modal',
       action: 'open',
       action_detail: 'promotion_modal_open',
@@ -36,7 +36,7 @@ const EnhancedPromotionModal: React.FC = () => {
   }
 
   const handleDismiss = () => {
-    trackEvent('promotion_event', {
+    trackPromotionEvent('promotion_event', {
       from: 'promotion_modal',
       action: 'close',
       action_detail: 'promotion_modal_close',
