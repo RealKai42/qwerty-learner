@@ -1,7 +1,7 @@
 <template>
-  <WordPage />
+  <HomePage />
 </template>
 
 <script setup>
-import WordPage from './components/index.vue'
+import HomePage from './views/HomePage.vue'
 </script>

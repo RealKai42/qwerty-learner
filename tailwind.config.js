@@ -7,19 +7,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        round: [
-          '"Varela Round"',
-          '"Nunito"',
-          '"Quicksand"',
-          '"HarmonyOS_Regular"',  // 添加更圆润的中文字体
-          '"PingFang SC"',
-          '"Microsoft Yahei"',
-          '"HarmonyOS Sans"',
-          '"MiSans"',
-          'system-ui',
-          'sans-serif',
-        ],
-      },
+    round: [
+      '"Nunito"',
+      '"Quicksand"',
+      '"Rubik"',
+      '"PingFang SC"',
+      '"Microsoft YaHei"',  // 添加微软雅黑
+      '"Noto Sans SC"',     // 添加思源黑体
+      '"HarmonyOS Sans"',
+      '"MiSans"',
+      'system-ui',
+      'sans-serif',
+    ],
+  },
     },
   },
   plugins: [],
