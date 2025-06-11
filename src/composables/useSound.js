@@ -1,13 +1,13 @@
 export function useSound() {
   const playKeySound = () => {
     const audio = new Audio('/sounds/keyboard.mp3')
-    audio.volume = 0.5
+    audio.volume = 1
     audio.play().catch(() => {})
   }
 
   const playErrorSound = () => {
     const audio = new Audio('/sounds/error.mp3')
-    audio.volume = 0.5
+    audio.volume = 1
     audio.play().catch(() => {})
   }
 

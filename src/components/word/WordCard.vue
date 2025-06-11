@@ -123,9 +123,9 @@ defineExpose({
 <style scoped>
 .word-display {
   @apply flex flex-col items-center justify-start text-center
-         h-[calc(100vh-120px)] pt-40;  /* 减小顶部内边距，让单词更靠上 */
+         h-[calc(100vh-300px)];
+  padding-top: 3rem; /* 你可以调整这个值来达到理想的位置 */
 }
-
 .word {
   @apply text-[120px] font-mono tracking-wider text-white cursor-pointer
          select-none hover:opacity-80 transition-opacity leading-none mb-12;

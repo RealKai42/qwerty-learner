@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen bg-[#1A1B1E]">
-    <div class="container mx-auto flex flex-col items-center justify-center h-full">
-      <div class="progress-bar mb-8">
+    <div class="container mx-auto flex flex-col items-center h-full"> <!-- 移除 justify-center -->
+      <div class="progress-bar mb-8 mt-20"> <!-- 设置顶部外边距为 0 -->
         <div class="progress-bg">
           <div 
             class="progress-fill"
