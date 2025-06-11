@@ -94,6 +94,4 @@ words/
 
 1. 安装依赖：`npm install`
 2. 启动开发服务器：`npm run dev`
-3. 构建生产版本：`npm run build`
-4. 预览生产版本：`npm run preview`
 
