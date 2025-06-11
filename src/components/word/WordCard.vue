@@ -123,7 +123,7 @@ defineExpose({
 <style scoped>
 .word-display {
   @apply flex flex-col items-center justify-start text-center
-         h-[calc(100vh-120px)] pt-16;  /* 减小顶部内边距，让单词更靠上 */
+         h-[calc(100vh-120px)] pt-40;  /* 减小顶部内边距，让单词更靠上 */
 }
 
 .word {

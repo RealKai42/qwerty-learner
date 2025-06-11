@@ -23,12 +23,15 @@ const totalWords = computed(() => wordStore.totalWords)
 .progress-container {
   @apply flex flex-col items-center gap-2;
 }
+
 .progress-bar {
   @apply w-full h-2 bg-gray-700 rounded-full overflow-hidden;
 }
+
 .progress {
   @apply h-full bg-green-500 transition-all duration-300;
 }
+
 .progress-text {
   @apply text-sm text-gray-400;
 }
