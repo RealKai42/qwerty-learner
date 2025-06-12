@@ -183,3 +183,29 @@ export class RevisionWordRecord implements IRevisionWordRecord {
     this.errorCount = errorCount
   }
 }
+
+export interface IWordProficiency {
+  id?: number
+  word: string
+  dict: string
+  status: 'known' | 'remembered' | 'unknown'
+  rememberedUntil?: number
+  timeStamp: number
+}
+
+export class WordProficiency implements IWordProficiency {
+  id?: number
+  word: string
+  dict: string
+  status: 'known' | 'remembered' | 'unknown'
+  rememberedUntil?: number
+  timeStamp: number
+
+  constructor(word: string, dict: string, status: 'known' | 'remembered' | 'unknown', rememberedUntil?: number) {
+    this.word = word
+    this.dict = dict
+    this.status = status
+    this.rememberedUntil = rememberedUntil
+    this.timeStamp = getUTCUnixTimestamp()
+  }
+}
