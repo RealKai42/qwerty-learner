@@ -9,7 +9,7 @@
     "active": true,
     "category": "DeveloperTool",
     "copyright": "",
-    "targets": ["deb", "nsis", "dmg"],
+    "targets": "all",
     "externalBin": [],
     "icon": [
       "icons/32x32.png",
