@@ -7,11 +7,9 @@ on:
   workflow_dispatch:
 
 jobs:
-  release:
-    permissions:
-      contents: write
+  build:
+    runs-on: ${{ matrix.os }}
     strategy:
-      fail-fast: false
       matrix:
         include:
           - platform: android
@@ -34,9 +32,6 @@ jobs:
           - platform: linux
             os: ubuntu-24.04-arm
             arch: arm64
-
-    runs-on: ${{ matrix.platform }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
