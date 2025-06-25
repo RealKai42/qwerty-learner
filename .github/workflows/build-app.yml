@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [windows-latest, debian-latest, macos-latest，macos-12]
+        platform: [windows-latest, ubuntu-latest, macos-latest，macos-12]
     runs-on: ${{ matrix.platform }}
 
     steps:
