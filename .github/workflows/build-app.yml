@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     tags:
-      - v0.0.2
+      - master
   workflow_dispatch:
 
 jobs:
