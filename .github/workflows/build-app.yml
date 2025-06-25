@@ -13,12 +13,12 @@ jobs:
       matrix:
         include:
           - platform: android
-            os: debian-latest
+            os: ubuntu-latest
           - platform: windows
             os: windows-latest
             arch: amd64
           - platform: linux
-            os: debian-latest
+            os: ubuntu-latest
             arch: amd64
           - platform: macos
             os: macos-13
