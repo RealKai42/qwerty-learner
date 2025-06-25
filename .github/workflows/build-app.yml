@@ -54,3 +54,4 @@ jobs:
           releaseName: 'App v__VERSION__'
           releaseBody: 'Auto-generated release'
           releaseDraft: false
+
