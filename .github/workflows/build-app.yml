@@ -13,12 +13,12 @@ jobs:
       matrix:
         include:
           - platform: android
-            os: ubuntu-latest
+            os: debian-latest
           - platform: windows
             os: windows-latest
             arch: amd64
           - platform: linux
-            os: ubuntu-22.04
+            os: debian-latest
             arch: amd64
           - platform: macos
             os: macos-13
@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Linux Dependencies
-        if: matrix.platform == 'ubuntu-latest'
+        if: matrix.platform == 'debian-latest'
         run: |
           sudo apt-get update
           sudo apt-get install libglib2.0-dev libcairo2-dev libpango1.0-dev
