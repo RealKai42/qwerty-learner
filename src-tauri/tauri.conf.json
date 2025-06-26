@@ -2,7 +2,7 @@
   "build": {
     "beforeBuildCommand": "yarn build",
     "beforeDevCommand": "yarn run dev",
-    "frontendDist": "../src-tauri/",
+    "frontendDist": "../build/",
     "devUrl": "http://localhost:5173"
   },
   "bundle": {
