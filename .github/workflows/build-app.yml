@@ -28,9 +28,6 @@ jobs:
           - platform: macos
             os: macos-latest
             arch: arm64
-          #          - platform: windows
-          #            os: windows-11-arm
-          #            arch: arm64
           - platform: linux
             os: ubuntu-24.04-arm
             arch: arm64
@@ -81,13 +78,6 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
-      - name: Install dmg tools
-        if: startsWith(matrix.platform,'macos')
-        run: |
-          /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
-          brew install libmspub
-          brew install create-dmg
-          brew install libdmg-hfsplus
 
       - name: Build App
         uses: tauri-apps/tauri-action@v0
@@ -98,9 +88,3 @@ jobs:
           releaseName: 'App v__VERSION__'
           releaseBody: 'Auto-generated release'
           releaseDraft: false
-#      - name: Build Android APK
-#        uses: tauri-apps/tauri-action@v0
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#        with:
-#          buildTarget: android:ml-citation
