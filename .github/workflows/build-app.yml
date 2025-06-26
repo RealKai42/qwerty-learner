@@ -13,24 +13,24 @@ jobs:
         include:
           #          - platform: android
           #            os: ubuntu-latest
-#          - platform: windows
-#            os: windows-latest
-#            arch: amd64
+          - platform: windows
+            os: windows-latest
+            arch: amd64
           - platform: linux
             os: ubuntu-22.04
             arch: amd64
-#          - platform: macos
-#            os: macos-13
-#            arch: amd64
-    #          - platform: macos
-    #            os: macos-latest
-    #            arch: arm64
-    #          - platform: windows
-    #            os: windows-11-arm
-    #            arch: arm64
-    #          - platform: linux
-    #            os: ubuntu-24.04-arm
-    #            arch: arm64
+          - platform: macos
+            os: macos-13
+            arch: amd64
+          - platform: macos
+            os: macos-latest
+            arch: arm64
+          - platform: windows
+            os: windows-11-arm
+            arch: arm64
+          - platform: linux
+            os: ubuntu-24.04-arm
+            arch: arm64
     steps:
       - name: Checkout
         uses: actions/checkout@v4.2.2
