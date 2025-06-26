@@ -1,4 +1,3 @@
-
 name: Release
 on:
   push:
@@ -11,9 +10,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        platform: [ windows-latest, ubuntu-latest, macos-latest ]
         include:
-#          - platform: android
-#            os: ubuntu-latest
+          #          - platform: android
+          #            os: ubuntu-latest
           - platform: windows
             os: windows-latest
             arch: amd64
@@ -23,15 +23,15 @@ jobs:
           - platform: macos
             os: macos-13
             arch: amd64
-#          - platform: macos
-#            os: macos-latest
-#            arch: arm64
-#          - platform: windows
-#            os: windows-11-arm
-#            arch: arm64
-#          - platform: linux
-#            os: ubuntu-24.04-arm
-#            arch: arm64
+    #          - platform: macos
+    #            os: macos-latest
+    #            arch: arm64
+    #          - platform: windows
+    #            os: windows-11-arm
+    #            arch: arm64
+    #          - platform: linux
+    #            os: ubuntu-24.04-arm
+    #            arch: arm64
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -70,4 +70,3 @@ jobs:
           releaseName: 'App v__VERSION__'
           releaseBody: 'Auto-generated release'
           releaseDraft: false
-
