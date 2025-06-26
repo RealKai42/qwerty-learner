@@ -12,7 +12,7 @@ jobs:
       matrix:
         include:
           - platform: android
-            os: ubuntu-latest
+            os: ubuntu-22.04
           - platform: windows
             os: windows-latest
             arch: amd64
