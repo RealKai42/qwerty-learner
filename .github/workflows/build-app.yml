@@ -81,6 +81,14 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
+      - name: Install dmg tools
+        run: |
+          xcode-select --install
+          /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+          brew install create-dmg
+          brew install libdmg-hfsplus
+
       - name: Build App
         uses: tauri-apps/tauri-action@v0
         env:
