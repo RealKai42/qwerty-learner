@@ -11,8 +11,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - platform: android
-            os: ubuntu-24.04-arm
+#          - platform: android
+#            os: ubuntu-24.04-arm
           - platform: windows
             os: windows-latest
             arch: amd64
