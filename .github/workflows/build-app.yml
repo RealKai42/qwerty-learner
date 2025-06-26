@@ -51,8 +51,11 @@ jobs:
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
-        with:
-          targets: aarch64-linux-android armv7-linux-androideabi:ml-citation{ref="3,4" data="citationList"}
+
+      - name: Install android
+        if: startsWith(matrix.platform,'android')
+        run: |
+          rustup target add aarch64-linux-android
 
       - name: Cache Rust
         uses: swatinem/rust-cache@v2
