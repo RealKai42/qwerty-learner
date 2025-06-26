@@ -16,6 +16,9 @@ jobs:
           - platform: windows
             os: windows-latest
             arch: amd64
+          - platform: windows
+            os: windows-2019
+            arch: amd64
           - platform: linux
             os: ubuntu-22.04
             arch: amd64
@@ -25,9 +28,9 @@ jobs:
           - platform: macos
             os: macos-latest
             arch: arm64
-          - platform: windows
-            os: windows-11-arm
-            arch: arm64
+#          - platform: windows
+#            os: windows-11-arm
+#            arch: arm64
           - platform: linux
             os: ubuntu-24.04-arm
             arch: arm64
@@ -40,14 +43,25 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y libwebkit2gtk-4.1-dev build-essential curl  wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev libgirepository1.0-dev  
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          ndk-version: r26b
+          cmake-version: 3.22.1:ml-citation{ref="4,8" data="citationList"}
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android armv7-linux-androideabi:ml-citation{ref="3,4" data="citationList"}
 
       - name: Cache Rust
         uses: swatinem/rust-cache@v2
         with:
           workspaces: './build/ -> target'
+          key: ${{ matrix.os }}-rust-${{ hashFiles('**/Cargo.lock') }}:ml-citation{ref="4,6" data="citationList"}
+
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -69,3 +83,9 @@ jobs:
           releaseName: 'App v__VERSION__'
           releaseBody: 'Auto-generated release'
           releaseDraft: false
+      - name: Build Android APK
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          buildTarget: android:ml-citation
