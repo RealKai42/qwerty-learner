@@ -16,7 +16,7 @@ jobs:
           - platform: windows
             os: windows-latest
             arch: amd64
-          - platform: windows
+          - platform: windows-2019
             os: windows-2019
             arch: amd64
           - platform: linux
