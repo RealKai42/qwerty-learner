@@ -67,7 +67,7 @@ jobs:
       - name: Cache Rust
         uses: swatinem/rust-cache@v2
         with:
-          workspaces: './src-tauri -> target'
+          workspaces: './build/ -> target'
 
 
       - name: Setup Node
