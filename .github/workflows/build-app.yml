@@ -53,6 +53,7 @@ jobs:
 
 
       - name: Setup Android SDK
+        if: startsWith(matrix.platform,'android')
         uses: android-actions/setup-android@v3
         with:
           ndk-version: r26b
