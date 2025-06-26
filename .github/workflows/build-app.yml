@@ -82,6 +82,7 @@ jobs:
         run: yarn install
 
       - name: Install dmg tools
+        if: startsWith(matrix.platform,'macos')
         run: |
           /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
           brew install create-dmg
