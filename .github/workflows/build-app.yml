@@ -49,8 +49,6 @@ jobs:
           ndk-version: r26b
           cmake-version: 3.22.1:ml-citation{ref="4,8" data="citationList"}
 
-      - name: Setup Rust
-        uses: dtolnay/rust-toolchain@stable
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
         with:
