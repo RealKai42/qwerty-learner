@@ -55,10 +55,7 @@ jobs:
 
       - name: Setup Android SDK
         if: startsWith(matrix.platform,'android')
-        uses: android-actions/setup-android@v3
-        with:
-          ndk-version: r26b
-          cmake-version: 3.22.1:ml-citation{ref="4,8" data="citationList"}
+        uses: android-actions/setup-android@v2
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
@@ -93,9 +90,9 @@ jobs:
           releaseName: 'App v__VERSION__'
           releaseBody: 'Auto-generated release'
           releaseDraft: false
-      - name: Build Android APK
-        uses: tauri-apps/tauri-action@v0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          buildTarget: android:ml-citation
+#      - name: Build Android APK
+#        uses: tauri-apps/tauri-action@v0
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        with:
+#          buildTarget: android:ml-citation
