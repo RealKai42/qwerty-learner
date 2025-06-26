@@ -85,6 +85,7 @@ jobs:
         if: startsWith(matrix.platform,'macos')
         run: |
           /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+          brew install libmspub
           brew install create-dmg
           brew install libdmg-hfsplus
 
