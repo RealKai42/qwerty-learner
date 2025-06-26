@@ -114,16 +114,16 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "git-last-commit": "^1.0.1",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "lint-staged": "^13.1.2",
-    "postcss": "8.4.31",
+    "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.7",
     "rollup-plugin-visualizer": "^5.9.0",
     "tailwindcss": "^3.3.1",
     "typescript-plugin-css-modules": "^5.0.1",
     "unplugin-icons": "^0.16.1",
-    "vite": "6.3.4",
+    "vite": "^4.1.1",
     "@tauri-apps/cli": "2.6.0"
   }
 }
