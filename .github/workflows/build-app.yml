@@ -43,6 +43,13 @@ jobs:
         run: |
           sudo apt update
           sudo apt install -y libwebkit2gtk-4.1-dev build-essential curl  wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev libgirepository1.0-dev  
+
+      - name:   Set up JDK 11
+        uses: actions/setup-java
+        with:
+          java-version:  '11'
+
+
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
         with:
