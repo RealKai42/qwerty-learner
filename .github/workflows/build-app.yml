@@ -40,7 +40,7 @@ jobs:
         if: matrix.platform == 'ubuntu-latest'
         run: |
           sudo apt-get update
-          sudo apt-get install libwebkit2gtk-4.1-dev build-essential curl  wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev libgirepository1.0-dev
+          sudo apt-get install libwebkit2gtk-4.1-dev build-essential curl  wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev libgirepository1.0-dev  libglib2.0-dev
 
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
