@@ -17,7 +17,7 @@ jobs:
 #            os: windows-latest
 #            arch: amd64
           - platform: linux
-            os: debian-latest
+            os: ubuntu-22.04
             arch: amd64
 #          - platform: macos
 #            os: macos-13
@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: Install Linux Dependencies
-        if: matrix.os == 'debian-latest'
+        if: matrix.os == 'ubuntu-22.04'
         run: |
           sudo apt update
           sudo apt install -y libwebkit2gtk-4.1-dev build-essential curl  wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev libgirepository1.0-dev  
@@ -47,7 +47,7 @@ jobs:
       - name: Cache Rust
         uses: swatinem/rust-cache@v2
         with:
-          workspaces: './src-tauri/ -> target'
+          workspaces: './build/ -> target'
 
       - name: Setup Node
         uses: actions/setup-node@v4
