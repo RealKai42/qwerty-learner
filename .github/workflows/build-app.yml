@@ -12,7 +12,7 @@ jobs:
       matrix:
         include:
           - platform: android
-            os: ubuntu-22.04
+            os: ubuntu-24.04-arm
           - platform: windows
             os: windows-latest
             arch: amd64
@@ -60,12 +60,10 @@ jobs:
           cmake-version: 3.22.1:ml-citation{ref="4,8" data="citationList"}
 
       - name: Install Rust
-        if: !startsWith(matrix.platform,'android')
         uses: dtolnay/rust-toolchain@stable
 
       - name: Install android
         if: startsWith(matrix.platform,'android')
-        uses: dtolnay/rust-toolchain@stable
         run: rustup target add aarch64-linux-android
 
       - name: Cache Rust
