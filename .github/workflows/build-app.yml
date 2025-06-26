@@ -70,7 +70,6 @@ jobs:
         uses: swatinem/rust-cache@v2
         with:
           workspaces: './src-tauri/ -> target'
-          key: ${{ matrix.os }}-rust-${{ hashFiles('**/Cargo.lock') }}:ml-citation{ref="4,6" data="citationList"}
 
 
       - name: Setup Node
