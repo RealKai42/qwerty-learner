@@ -1,5 +1,6 @@
 import atomForConfig from './atomForConfig'
 import { reviewInfoAtom } from './reviewInfoAtom'
+import type { TypingGameConfig } from '@/@types/game'
 import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
@@ -115,3 +116,10 @@ export const hasSeenEnhancedPromotionAtom = atomWithStorage('hasSeenEnhancedProm
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
+
+// setup TypingGame config
+export const typingGameConfigAtom = atomForConfig<TypingGameConfig>('typingGameConfig', {
+  level: '😁',
+  life: '3',
+  lifeLeft: '3',
+})
