@@ -269,10 +269,22 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         letterMistake: wordState.letterMistake,
       })
 
-      onFinish()
+      if (wordDictationConfig.isOpen) {
+        wordPronunciationIconRef.current?.play && wordPronunciationIconRef.current?.play()
+      } else {
+        onFinish()
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.isFinished])
+
+  // 默写完成之后，播放一次音频
+  useEffect(() => {
+    if (!wordPronunciationIconRef.current?.isPlaying && wordState.isFinished && wordDictationConfig.isOpen) {
+      onFinish()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wordPronunciationIconRef.current?.isPlaying])
 
   useEffect(() => {
     if (wordState.wrongCount >= 4) {
