@@ -16,6 +16,12 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
         return
       }
 
+      // 处理删除键
+      if (char === 'Backspace') {
+        updateInput({ type: 'delete', length: 1, event: e })
+        return
+      }
+
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         updateInput({ type: 'add', value: char, event: e })
       }
