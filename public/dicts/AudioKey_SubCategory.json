@@ -1,0 +1,1746 @@
+[
+  {
+    "name": "blow",
+    "trans": ["吹"]
+  },
+  {
+    "name": "burst",
+    "trans": ["爆发"]
+  },
+  {
+    "name": "hiss",
+    "trans": ["嘶嘶声"]
+  },
+  {
+    "name": "misc",
+    "trans": ["其它"]
+  },
+  {
+    "name": "suction",
+    "trans": ["抽吸"]
+  },
+  {
+    "name": "door",
+    "trans": ["门"]
+  },
+  {
+    "name": "helicopter",
+    "trans": ["直升机"]
+  },
+  {
+    "name": "interior",
+    "trans": ["航空舱"]
+  },
+  {
+    "name": "jet",
+    "trans": ["喷气式飞机"]
+  },
+  {
+    "name": "mechanism",
+    "trans": ["机械"]
+  },
+  {
+    "name": "military",
+    "trans": ["军用"]
+  },
+  {
+    "name": "prop",
+    "trans": ["螺旋桨飞机"]
+  },
+  {
+    "name": "radio controlled",
+    "trans": ["塔台"]
+  },
+  {
+    "name": "rocket",
+    "trans": ["火箭"]
+  },
+  {
+    "name": "bell",
+    "trans": ["警铃"]
+  },
+  {
+    "name": "buzzer",
+    "trans": ["蜂鸣器"]
+  },
+  {
+    "name": "clock",
+    "trans": ["钟表"]
+  },
+  {
+    "name": "electronic",
+    "trans": ["电器"]
+  },
+  {
+    "name": "siren",
+    "trans": ["警报"]
+  },
+  {
+    "name": "air",
+    "trans": ["空气"]
+  },
+  {
+    "name": "alpine",
+    "trans": ["高山"]
+  },
+  {
+    "name": "amusement",
+    "trans": ["娱乐"]
+  },
+  {
+    "name": "birdsong",
+    "trans": ["鸟鸣"]
+  },
+  {
+    "name": "celebration",
+    "trans": ["庆典"]
+  },
+  {
+    "name": "construction",
+    "trans": ["施工"]
+  },
+  {
+    "name": "desert",
+    "trans": ["沙漠"]
+  },
+  {
+    "name": "designed",
+    "trans": ["设计"]
+  },
+  {
+    "name": "emergency",
+    "trans": ["紧急"]
+  },
+  {
+    "name": "fantasy",
+    "trans": ["奇幻"]
+  },
+  {
+    "name": "farm",
+    "trans": ["农场"]
+  },
+  {
+    "name": "forest",
+    "trans": ["森林"]
+  },
+  {
+    "name": "grassland",
+    "trans": ["草地"]
+  },
+  {
+    "name": "historical",
+    "trans": ["历史年代"]
+  },
+  {
+    "name": "hitech",
+    "trans": ["高科技"]
+  },
+  {
+    "name": "hospital",
+    "trans": ["医院"]
+  },
+  {
+    "name": "industrial",
+    "trans": ["工业"]
+  },
+  {
+    "name": "insect",
+    "trans": ["昆虫"]
+  },
+  {
+    "name": "lakeside",
+    "trans": ["湖岸"]
+  },
+  {
+    "name": "market",
+    "trans": ["市场"]
+  },
+  {
+    "name": "nautical",
+    "trans": ["航海"]
+  },
+  {
+    "name": "office",
+    "trans": ["办公室"]
+  },
+  {
+    "name": "park",
+    "trans": ["公园"]
+  },
+  {
+    "name": "prison",
+    "trans": ["监狱"]
+  },
+  {
+    "name": "protest",
+    "trans": ["游行"]
+  },
+  {
+    "name": "public place",
+    "trans": ["公共场所"]
+  },
+  {
+    "name": "religious",
+    "trans": ["宗教场所"]
+  },
+  {
+    "name": "residential",
+    "trans": ["住宅区"]
+  },
+  {
+    "name": "restaurant & bar",
+    "trans": ["餐馆"]
+  },
+  {
+    "name": "room tone",
+    "trans": ["房间底噪"]
+  },
+  {
+    "name": "rural",
+    "trans": ["农村"]
+  },
+  {
+    "name": "school",
+    "trans": ["校园"]
+  },
+  {
+    "name": "scifi",
+    "trans": ["科幻"]
+  },
+  {
+    "name": "seaside",
+    "trans": ["海边"]
+  },
+  {
+    "name": "sport",
+    "trans": ["运动场"]
+  },
+  {
+    "name": "suburban",
+    "trans": ["郊区"]
+  },
+  {
+    "name": "swamp",
+    "trans": ["沼泽地"]
+  },
+  {
+    "name": "town",
+    "trans": ["小镇"]
+  },
+  {
+    "name": "traffic",
+    "trans": ["交通"]
+  },
+  {
+    "name": "transportation",
+    "trans": ["交通工具"]
+  },
+  {
+    "name": "tropical",
+    "trans": ["热带"]
+  },
+  {
+    "name": "tundra",
+    "trans": ["冻土"]
+  },
+  {
+    "name": "underground",
+    "trans": ["地下"]
+  },
+  {
+    "name": "underwater",
+    "trans": ["水下"]
+  },
+  {
+    "name": "urban",
+    "trans": ["城市"]
+  },
+  {
+    "name": "warfare",
+    "trans": ["战争"]
+  },
+  {
+    "name": "amphibian",
+    "trans": ["两栖动物"]
+  },
+  {
+    "name": "aquatic",
+    "trans": ["水生动物"]
+  },
+  {
+    "name": "bat",
+    "trans": ["蝙蝠"]
+  },
+  {
+    "name": "cat domestic",
+    "trans": ["家猫"]
+  },
+  {
+    "name": "cat wild",
+    "trans": ["猫科动物"]
+  },
+  {
+    "name": "dog",
+    "trans": ["狗"]
+  },
+  {
+    "name": "dog wild",
+    "trans": ["犬科动物"]
+  },
+  {
+    "name": "horse",
+    "trans": ["马"]
+  },
+  {
+    "name": "primate",
+    "trans": ["灵长类"]
+  },
+  {
+    "name": "reptile",
+    "trans": ["爬行动物"]
+  },
+  {
+    "name": "rodent",
+    "trans": ["啮齿动物"]
+  },
+  {
+    "name": "wild",
+    "trans": ["野生动物"]
+  },
+  {
+    "name": "adr",
+    "trans": ["ADR"]
+  },
+  {
+    "name": "asset",
+    "trans": ["资源"]
+  },
+  {
+    "name": "bounce",
+    "trans": ["导出"]
+  },
+  {
+    "name": "impulse response",
+    "trans": ["卷积混响素材"]
+  },
+  {
+    "name": "loop group",
+    "trans": ["循环群组"]
+  },
+  {
+    "name": "mix",
+    "trans": ["混音"]
+  },
+  {
+    "name": "pfx",
+    "trans": ["现场音效"]
+  },
+  {
+    "name": "production",
+    "trans": ["现场对白"]
+  },
+  {
+    "name": "raw",
+    "trans": ["原始素材"]
+  },
+  {
+    "name": "reference",
+    "trans": ["参考素材"]
+  },
+  {
+    "name": "scene",
+    "trans": ["场景素材"]
+  },
+  {
+    "name": "test tone",
+    "trans": ["测试音"]
+  },
+  {
+    "name": "trademarked",
+    "trans": ["商标音"]
+  },
+  {
+    "name": "work in progress",
+    "trans": ["过程中素材"]
+  },
+  {
+    "name": "wtf",
+    "trans": ["未确认素材"]
+  },
+  {
+    "name": "appliance",
+    "trans": ["电器"]
+  },
+  {
+    "name": "general",
+    "trans": ["通用"]
+  },
+  {
+    "name": "lofi",
+    "trans": ["低保真"]
+  },
+  {
+    "name": "medical",
+    "trans": ["医疗器械"]
+  },
+  {
+    "name": "timer",
+    "trans": ["计时器"]
+  },
+  {
+    "name": "vehicle",
+    "trans": ["车辆"]
+  },
+  {
+    "name": "animal",
+    "trans": ["动物"]
+  },
+  {
+    "name": "doorbell",
+    "trans": ["门铃"]
+  },
+  {
+    "name": "gong",
+    "trans": ["锣"]
+  },
+  {
+    "name": "handbell",
+    "trans": ["手铃"]
+  },
+  {
+    "name": "large",
+    "trans": ["大钟"]
+  },
+  {
+    "name": "bird of prey",
+    "trans": ["猛禽"]
+  },
+  {
+    "name": "crow",
+    "trans": ["乌鸦"]
+  },
+  {
+    "name": "fowl",
+    "trans": ["家禽"]
+  },
+  {
+    "name": "sea",
+    "trans": ["海鸟"]
+  },
+  {
+    "name": "songbird",
+    "trans": ["鸣鸟"]
+  },
+  {
+    "name": "tropical",
+    "trans": ["热带"]
+  },
+  {
+    "name": "wading",
+    "trans": ["水鸟"]
+  },
+  {
+    "name": "air boat",
+    "trans": ["汽艇"]
+  },
+  {
+    "name": "bow wash",
+    "trans": ["船浪"]
+  },
+  {
+    "name": "electric",
+    "trans": ["电动船"]
+  },
+  {
+    "name": "fishing",
+    "trans": ["捕鱼"]
+  },
+  {
+    "name": "horn",
+    "trans": ["船笛"]
+  },
+  {
+    "name": "motorboat",
+    "trans": ["摩托艇"]
+  },
+  {
+    "name": "racing",
+    "trans": ["赛艇"]
+  },
+  {
+    "name": "rowboat",
+    "trans": ["划艇"]
+  },
+  {
+    "name": "sailboat",
+    "trans": ["帆船"]
+  },
+  {
+    "name": "ship",
+    "trans": ["大船"]
+  },
+  {
+    "name": "steam",
+    "trans": ["蒸汽船"]
+  },
+  {
+    "name": "submarine",
+    "trans": ["潜艇"]
+  },
+  {
+    "name": "by",
+    "trans": ["飞过"]
+  },
+  {
+    "name": "impact",
+    "trans": ["击中"]
+  },
+  {
+    "name": "ricochet",
+    "trans": ["弹跳"]
+  },
+  {
+    "name": "shell",
+    "trans": ["弹壳"]
+  },
+  {
+    "name": "boing",
+    "trans": ["弹簧音"]
+  },
+  {
+    "name": "clang",
+    "trans": ["咣当"]
+  },
+  {
+    "name": "creak",
+    "trans": ["嘎吱"]
+  },
+  {
+    "name": "horn",
+    "trans": ["号"]
+  },
+  {
+    "name": "impact",
+    "trans": ["打击"]
+  },
+  {
+    "name": "machine",
+    "trans": ["机器"]
+  },
+  {
+    "name": "musical",
+    "trans": ["音乐性"]
+  },
+  {
+    "name": "pluck",
+    "trans": ["弹拨"]
+  },
+  {
+    "name": "pop",
+    "trans": ["道具"]
+  },
+  {
+    "name": "shake",
+    "trans": ["摇晃"]
+  },
+  {
+    "name": "splat",
+    "trans": ["啪嗒"]
+  },
+  {
+    "name": "squeak",
+    "trans": ["摩擦"]
+  },
+  {
+    "name": "stretch",
+    "trans": ["伸缩"]
+  },
+  {
+    "name": "swish",
+    "trans": ["嗖嗖"]
+  },
+  {
+    "name": "twang",
+    "trans": ["弹拨声"]
+  },
+  {
+    "name": "vehicle",
+    "trans": ["载具"]
+  },
+  {
+    "name": "vocal",
+    "trans": ["语音"]
+  },
+  {
+    "name": "warble",
+    "trans": ["颤音"]
+  },
+  {
+    "name": "whistle",
+    "trans": ["哨子"]
+  },
+  {
+    "name": "zip",
+    "trans": ["拉链"]
+  },
+  {
+    "name": "break",
+    "trans": ["打破"]
+  },
+  {
+    "name": "crash & debris",
+    "trans": ["碎片"]
+  },
+  {
+    "name": "friction",
+    "trans": ["挤压"]
+  },
+  {
+    "name": "handle",
+    "trans": ["抓取"]
+  },
+  {
+    "name": "movement",
+    "trans": ["移动"]
+  },
+  {
+    "name": "tonal",
+    "trans": ["音乐性"]
+  },
+  {
+    "name": "break",
+    "trans": ["断裂"]
+  },
+  {
+    "name": "hitech",
+    "trans": ["高科技"]
+  },
+  {
+    "name": "acid",
+    "trans": ["腐蚀"]
+  },
+  {
+    "name": "reaction",
+    "trans": ["反应"]
+  },
+  {
+    "name": "chime",
+    "trans": ["风铃"]
+  },
+  {
+    "name": "mechanics",
+    "trans": ["机械"]
+  },
+  {
+    "name": "tick",
+    "trans": ["嘀嗒"]
+  },
+  {
+    "name": "flap",
+    "trans": ["抖动"]
+  },
+  {
+    "name": "rip",
+    "trans": ["撕扯"]
+  },
+  {
+    "name": "audio visual",
+    "trans": ["影视设备"]
+  },
+  {
+    "name": "camera",
+    "trans": ["照相机"]
+  },
+  {
+    "name": "cellphone",
+    "trans": ["手机"]
+  },
+  {
+    "name": "microphone",
+    "trans": ["麦克风"]
+  },
+  {
+    "name": "phonograph",
+    "trans": ["留声机"]
+  },
+  {
+    "name": "radio",
+    "trans": ["收音机"]
+  },
+  {
+    "name": "static",
+    "trans": ["干扰"]
+  },
+  {
+    "name": "telemetry",
+    "trans": ["无线电"]
+  },
+  {
+    "name": "telephone",
+    "trans": ["电话"]
+  },
+  {
+    "name": "television",
+    "trans": ["电视机"]
+  },
+  {
+    "name": "transceiver",
+    "trans": ["信号收发机"]
+  },
+  {
+    "name": "typewriter",
+    "trans": ["打字机"]
+  },
+  {
+    "name": "hard drive",
+    "trans": ["硬盘"]
+  },
+  {
+    "name": "keyboard & mouse",
+    "trans": ["键鼠"]
+  },
+  {
+    "name": "aquatic",
+    "trans": ["水生"]
+  },
+  {
+    "name": "avian",
+    "trans": ["奇幻禽类"]
+  },
+  {
+    "name": "beast",
+    "trans": ["野兽"]
+  },
+  {
+    "name": "blob",
+    "trans": ["黏体生物"]
+  },
+  {
+    "name": "dinosaur",
+    "trans": ["恐龙"]
+  },
+  {
+    "name": "dragon",
+    "trans": ["龙"]
+  },
+  {
+    "name": "elemental",
+    "trans": ["精灵生物"]
+  },
+  {
+    "name": "ethereal",
+    "trans": ["鬼魂"]
+  },
+  {
+    "name": "humanoid",
+    "trans": ["类人动物"]
+  },
+  {
+    "name": "insectoid",
+    "trans": ["巨型昆虫"]
+  },
+  {
+    "name": "monster",
+    "trans": ["怪兽"]
+  },
+  {
+    "name": "reptilian",
+    "trans": ["巨型爬行生物"]
+  },
+  {
+    "name": "small",
+    "trans": ["小型神话生物"]
+  },
+  {
+    "name": "source",
+    "trans": ["人声包"]
+  },
+  {
+    "name": "angry",
+    "trans": ["愤怒"]
+  },
+  {
+    "name": "applause",
+    "trans": ["喝彩"]
+  },
+  {
+    "name": "battle",
+    "trans": ["打斗"]
+  },
+  {
+    "name": "celebration",
+    "trans": ["庆祝"]
+  },
+  {
+    "name": "cheering",
+    "trans": ["欢呼"]
+  },
+  {
+    "name": "children",
+    "trans": ["儿童"]
+  },
+  {
+    "name": "conversation",
+    "trans": ["谈话"]
+  },
+  {
+    "name": "laughter",
+    "trans": ["笑"]
+  },
+  {
+    "name": "loop group",
+    "trans": ["循环群杂"]
+  },
+  {
+    "name": "panic",
+    "trans": ["恐惧"]
+  },
+  {
+    "name": "quiet",
+    "trans": ["安静"]
+  },
+  {
+    "name": "reaction",
+    "trans": ["反应"]
+  },
+  {
+    "name": "singing",
+    "trans": ["歌唱"]
+  },
+  {
+    "name": "walla",
+    "trans": ["群杂"]
+  },
+  {
+    "name": "bass dive",
+    "trans": ["低频下潜"]
+  },
+  {
+    "name": "boom",
+    "trans": ["低频轰鸣"]
+  },
+  {
+    "name": "braam",
+    "trans": ["低频号角"]
+  },
+  {
+    "name": "distortion",
+    "trans": ["失真"]
+  },
+  {
+    "name": "drone",
+    "trans": ["低音氛围"]
+  },
+  {
+    "name": "eerie",
+    "trans": ["毛骨悚然"]
+  },
+  {
+    "name": "ethereal",
+    "trans": ["鬼魅飘渺"]
+  },
+  {
+    "name": "granular",
+    "trans": ["粒状"]
+  },
+  {
+    "name": "morph",
+    "trans": ["合成器"]
+  },
+  {
+    "name": "riser",
+    "trans": ["渐强"]
+  },
+  {
+    "name": "rumble",
+    "trans": ["次声波"]
+  },
+  {
+    "name": "rhythmic",
+    "trans": ["节奏性"]
+  },
+  {
+    "name": "stinger",
+    "trans": ["重音强调"]
+  },
+  {
+    "name": "synthetic",
+    "trans": ["电子合成"]
+  },
+  {
+    "name": "vocal",
+    "trans": ["人声"]
+  },
+  {
+    "name": "whoosh",
+    "trans": ["呼声"]
+  },
+  {
+    "name": "collapse",
+    "trans": ["倒塌"]
+  },
+  {
+    "name": "dust",
+    "trans": ["灰尘"]
+  },
+  {
+    "name": "antique",
+    "trans": ["古董"]
+  },
+  {
+    "name": "cabinet",
+    "trans": ["箱柜"]
+  },
+  {
+    "name": "composite",
+    "trans": ["特殊材料"]
+  },
+  {
+    "name": "dungeon",
+    "trans": ["传统大门"]
+  },
+  {
+    "name": "gate",
+    "trans": ["大门"]
+  },
+  {
+    "name": "glass",
+    "trans": ["玻璃门"]
+  },
+  {
+    "name": "hardware",
+    "trans": ["锁具"]
+  },
+  {
+    "name": "hydraulic & pneumatic",
+    "trans": ["液压与气动"]
+  },
+  {
+    "name": "knock",
+    "trans": ["敲门"]
+  },
+  {
+    "name": "metal",
+    "trans": ["金属门"]
+  },
+  {
+    "name": "plastic",
+    "trans": ["塑料门"]
+  },
+  {
+    "name": "prison",
+    "trans": ["牢门"]
+  },
+  {
+    "name": "revolving",
+    "trans": ["旋转门"]
+  },
+  {
+    "name": "sliding",
+    "trans": ["滑动门"]
+  },
+  {
+    "name": "stone",
+    "trans": ["石门"]
+  },
+  {
+    "name": "swinging",
+    "trans": ["双开门"]
+  },
+  {
+    "name": "wood",
+    "trans": ["木门"]
+  },
+  {
+    "name": "arc",
+    "trans": ["电弧"]
+  },
+  {
+    "name": "buzz & hum",
+    "trans": ["电流噪声"]
+  },
+  {
+    "name": "electromagnetic",
+    "trans": ["电磁"]
+  },
+  {
+    "name": "sparks",
+    "trans": ["电火花"]
+  },
+  {
+    "name": "zap",
+    "trans": ["漏电"]
+  },
+  {
+    "name": "bridle & tack",
+    "trans": ["挽具"]
+  },
+  {
+    "name": "recreational",
+    "trans": ["户外装备"]
+  },
+  {
+    "name": "tactical",
+    "trans": ["军事装备"]
+  },
+  {
+    "name": "real",
+    "trans": ["真实"]
+  },
+  {
+    "name": "bodyfall",
+    "trans": ["跌倒"]
+  },
+  {
+    "name": "cloth",
+    "trans": ["衣服"]
+  },
+  {
+    "name": "grab",
+    "trans": ["抓握"]
+  },
+  {
+    "name": "burning",
+    "trans": ["燃烧"]
+  },
+  {
+    "name": "crackle",
+    "trans": ["爆裂"]
+  },
+  {
+    "name": "gas",
+    "trans": ["气体"]
+  },
+  {
+    "name": "ignite",
+    "trans": ["点火"]
+  },
+  {
+    "name": "sizzle",
+    "trans": ["滋滋声"]
+  },
+  {
+    "name": "torch",
+    "trans": ["火炬"]
+  },
+  {
+    "name": "turbulent",
+    "trans": ["汹涌火势"]
+  },
+  {
+    "name": "commercial",
+    "trans": ["商业表演"]
+  },
+  {
+    "name": "recreational",
+    "trans": ["自娱"]
+  },
+  {
+    "name": "feet",
+    "trans": ["脚步"]
+  },
+  {
+    "name": "hands",
+    "trans": ["手"]
+  },
+  {
+    "name": "prop",
+    "trans": ["道具"]
+  },
+  {
+    "name": "cooking",
+    "trans": ["烹饪"]
+  },
+  {
+    "name": "drinking",
+    "trans": ["喝"]
+  },
+  {
+    "name": "eating",
+    "trans": ["吃东西"]
+  },
+  {
+    "name": "glassware",
+    "trans": ["玻璃器皿"]
+  },
+  {
+    "name": "ingredients",
+    "trans": ["食材"]
+  },
+  {
+    "name": "kitchenware",
+    "trans": ["厨具"]
+  },
+  {
+    "name": "pour",
+    "trans": ["泼洒"]
+  },
+  {
+    "name": "tableware",
+    "trans": ["餐具"]
+  },
+  {
+    "name": "creature",
+    "trans": ["怪物"]
+  },
+  {
+    "name": "human",
+    "trans": ["人类"]
+  },
+  {
+    "name": "arcade",
+    "trans": ["街机游戏"]
+  },
+  {
+    "name": "board",
+    "trans": ["桌游"]
+  },
+  {
+    "name": "casino",
+    "trans": ["赌场"]
+  },
+  {
+    "name": "video",
+    "trans": ["单机"]
+  },
+  {
+    "name": "fumarole",
+    "trans": ["热浆"]
+  },
+  {
+    "name": "geyser",
+    "trans": ["间歇泉"]
+  },
+  {
+    "name": "lava",
+    "trans": ["岩浆"]
+  },
+  {
+    "name": "mud pots",
+    "trans": ["泥浆"]
+  },
+  {
+    "name": "blood",
+    "trans": ["血流"]
+  },
+  {
+    "name": "bone",
+    "trans": ["骨头"]
+  },
+  {
+    "name": "burn",
+    "trans": ["燃烧"]
+  },
+  {
+    "name": "flesh",
+    "trans": ["血肉"]
+  },
+  {
+    "name": "ooze",
+    "trans": ["渗血"]
+  },
+  {
+    "name": "splat",
+    "trans": ["洒溅"]
+  },
+  {
+    "name": "squish",
+    "trans": ["血浆"]
+  },
+  {
+    "name": "stab",
+    "trans": ["捅"]
+  },
+  {
+    "name": "antique",
+    "trans": ["古董枪"]
+  },
+  {
+    "name": "artillery",
+    "trans": ["火炮"]
+  },
+  {
+    "name": "automatic",
+    "trans": ["自动化武器"]
+  },
+  {
+    "name": "cannon",
+    "trans": ["加农炮"]
+  },
+  {
+    "name": "handle",
+    "trans": ["操作"]
+  },
+  {
+    "name": "mechanism",
+    "trans": ["机枪"]
+  },
+  {
+    "name": "pistol",
+    "trans": ["手枪"]
+  },
+  {
+    "name": "rifle",
+    "trans": ["步枪"]
+  },
+  {
+    "name": "shotgun",
+    "trans": ["霰弹枪"]
+  },
+  {
+    "name": "suppressed",
+    "trans": ["消音枪"]
+  },
+  {
+    "name": "air powered",
+    "trans": ["气压式"]
+  },
+  {
+    "name": "traditional",
+    "trans": ["传统"]
+  },
+  {
+    "name": "breath",
+    "trans": ["呼吸"]
+  },
+  {
+    "name": "burp",
+    "trans": ["打嗝"]
+  },
+  {
+    "name": "cough",
+    "trans": ["咳嗽"]
+  },
+  {
+    "name": "heartbeat",
+    "trans": ["心跳"]
+  },
+  {
+    "name": "kiss",
+    "trans": ["接吻"]
+  },
+  {
+    "name": "pee",
+    "trans": ["尿"]
+  },
+  {
+    "name": "skin",
+    "trans": ["皮肤"]
+  },
+  {
+    "name": "sneeze",
+    "trans": ["打喷嚏"]
+  },
+  {
+    "name": "sniff",
+    "trans": ["闻"]
+  },
+  {
+    "name": "snore",
+    "trans": ["打鼾"]
+  },
+  {
+    "name": "spit",
+    "trans": ["吐"]
+  },
+  {
+    "name": "vomit",
+    "trans": ["呕吐"]
+  },
+  {
+    "name": "beam",
+    "trans": ["光束"]
+  },
+  {
+    "name": "gun",
+    "trans": ["武器"]
+  },
+  {
+    "name": "bubbles",
+    "trans": ["气泡"]
+  },
+  {
+    "name": "suction",
+    "trans": ["抽吸"]
+  },
+  {
+    "name": "elevator",
+    "trans": ["电梯"]
+  },
+  {
+    "name": "escalator",
+    "trans": ["自动扶梯"]
+  },
+  {
+    "name": "fan",
+    "trans": ["风扇"]
+  },
+  {
+    "name": "garden",
+    "trans": ["花园"]
+  },
+  {
+    "name": "gym",
+    "trans": ["健身房"]
+  },
+  {
+    "name": "hvac",
+    "trans": ["空调"]
+  },
+  {
+    "name": "pump",
+    "trans": ["泵"]
+  },
+  {
+    "name": "angelic",
+    "trans": ["天使"]
+  },
+  {
+    "name": "elemental",
+    "trans": ["元素"]
+  },
+  {
+    "name": "evil",
+    "trans": ["邪恶"]
+  },
+  {
+    "name": "poof",
+    "trans": ["嘭"]
+  },
+  {
+    "name": "shimmer",
+    "trans": ["闪耀"]
+  },
+  {
+    "name": "spell",
+    "trans": ["咒语"]
+  },
+  {
+    "name": "click",
+    "trans": ["咔哒"]
+  },
+  {
+    "name": "gears",
+    "trans": ["齿轮"]
+  },
+  {
+    "name": "latch",
+    "trans": ["插销"]
+  },
+  {
+    "name": "lever",
+    "trans": ["操纵杆"]
+  },
+  {
+    "name": "lock",
+    "trans": ["锁"]
+  },
+  {
+    "name": "pulley",
+    "trans": ["滑轮"]
+  },
+  {
+    "name": "ratchet",
+    "trans": ["棘轮"]
+  },
+  {
+    "name": "relay",
+    "trans": ["传动"]
+  },
+  {
+    "name": "roller",
+    "trans": ["滚筒"]
+  },
+  {
+    "name": "switch",
+    "trans": ["开关"]
+  },
+  {
+    "name": "combustion",
+    "trans": ["内燃机"]
+  },
+  {
+    "name": "servo",
+    "trans": ["伺服电机"]
+  },
+  {
+    "name": "turbine",
+    "trans": ["涡轮"]
+  },
+  {
+    "name": "activity",
+    "trans": ["活动"]
+  },
+  {
+    "name": "presence",
+    "trans": ["状态"]
+  },
+  {
+    "name": "bells",
+    "trans": ["钟铃"]
+  },
+  {
+    "name": "brass",
+    "trans": ["铜管"]
+  },
+  {
+    "name": "chime",
+    "trans": ["排铃"]
+  },
+  {
+    "name": "choral",
+    "trans": ["合唱"]
+  },
+  {
+    "name": "experimental",
+    "trans": ["实验"]
+  },
+  {
+    "name": "instrument",
+    "trans": ["器乐"]
+  },
+  {
+    "name": "keyed",
+    "trans": ["键控"]
+  },
+  {
+    "name": "loop",
+    "trans": ["循环"]
+  },
+  {
+    "name": "percussion",
+    "trans": ["打击"]
+  },
+  {
+    "name": "percussion tuned",
+    "trans": ["打击乐"]
+  },
+  {
+    "name": "performance",
+    "trans": ["表演"]
+  },
+  {
+    "name": "plucked",
+    "trans": ["拨弦乐"]
+  },
+  {
+    "name": "sample",
+    "trans": ["采样"]
+  },
+  {
+    "name": "shaken",
+    "trans": ["摇动"]
+  },
+  {
+    "name": "song & phrase",
+    "trans": ["乐句"]
+  },
+  {
+    "name": "stinger",
+    "trans": ["重击音"]
+  },
+  {
+    "name": "stringed",
+    "trans": ["弦乐"]
+  },
+  {
+    "name": "synthesized",
+    "trans": ["合成器"]
+  },
+  {
+    "name": "toy",
+    "trans": ["玩具"]
+  },
+  {
+    "name": "woodwind",
+    "trans": ["木管"]
+  },
+  {
+    "name": "avalanche",
+    "trans": ["雪崩"]
+  },
+  {
+    "name": "earthquake",
+    "trans": ["地震"]
+  },
+  {
+    "name": "tornado",
+    "trans": ["龙卷风"]
+  },
+  {
+    "name": "tsunami",
+    "trans": ["热带风暴"]
+  },
+  {
+    "name": "typhoon",
+    "trans": ["台风"]
+  },
+  {
+    "name": "volcano",
+    "trans": ["火山喷发"]
+  },
+  {
+    "name": "bag",
+    "trans": ["袋子"]
+  },
+  {
+    "name": "book",
+    "trans": ["书籍"]
+  },
+  {
+    "name": "coin",
+    "trans": ["硬币"]
+  },
+  {
+    "name": "container",
+    "trans": ["箱盒"]
+  },
+  {
+    "name": "fashion",
+    "trans": ["花园"]
+  },
+  {
+    "name": "furniture",
+    "trans": ["健身房"]
+  },
+  {
+    "name": "household",
+    "trans": ["家用品"]
+  },
+  {
+    "name": "jewelry",
+    "trans": ["珠宝首饰"]
+  },
+  {
+    "name": "keys",
+    "trans": ["钥匙"]
+  },
+  {
+    "name": "luggage",
+    "trans": ["行李"]
+  },
+  {
+    "name": "packaging",
+    "trans": ["包装品"]
+  },
+  {
+    "name": "tape",
+    "trans": ["胶带制品"]
+  },
+  {
+    "name": "umbrella",
+    "trans": ["伞"]
+  },
+  {
+    "name": "wheeled",
+    "trans": ["有轮制品"]
+  },
+  {
+    "name": "writing",
+    "trans": ["书写用品"]
+  },
+  {
+    "name": "zipper",
+    "trans": ["拉链"]
+  },
+  {
+    "name": "flutter",
+    "trans": ["抖动"]
+  },
+  {
+    "name": "friction",
+    "trans": ["碰撞"]
+  },
+  {
+    "name": "handle",
+    "trans": ["手持噪音"]
+  },
+  {
+    "name": "impact",
+    "trans": ["摩擦"]
+  },
+  {
+    "name": "concrete",
+    "trans": ["水泥"]
+  },
+  {
+    "name": "general",
+    "trans": ["通用"]
+  },
+  {
+    "name": "vegetation",
+    "trans": ["植物"]
+  },
+  {
+    "name": "water",
+    "trans": ["水"]
+  },
+  {
+    "name": "alien",
+    "trans": ["外星人"]
+  },
+  {
+    "name": "baby",
+    "trans": ["婴儿"]
+  },
+  {
+    "name": "cheer",
+    "trans": ["欢呼"]
+  },
+  {
+    "name": "child",
+    "trans": ["儿童"]
+  },
+  {
+    "name": "crying",
+    "trans": ["哭泣"]
+  },
+  {
+    "name": "efforts",
+    "trans": ["呼喝"]
+  },
+  {
+    "name": "female",
+    "trans": ["女性"]
+  },
+  {
+    "name": "futzed",
+    "trans": ["音响化"]
+  },
+  {
+    "name": "historical",
+    "trans": ["历史感"]
+  },
+  {
+    "name": "laugh",
+    "trans": ["笑"]
+  },
+  {
+    "name": "male",
+    "trans": ["男性"]
+  },
+  {
+    "name": "scream",
+    "trans": ["尖叫"]
+  },
+  {
+    "name": "whisper",
+    "trans": ["窃语"]
+  },
+  {
+    "name": "drain",
+    "trans": ["排水"]
+  },
+  {
+    "name": "drip",
+    "trans": ["滴"]
+  },
+  {
+    "name": "fizz",
+    "trans": ["气泡"]
+  },
+  {
+    "name": "flow",
+    "trans": ["水流"]
+  },
+  {
+    "name": "fountain",
+    "trans": ["喷泉"]
+  },
+  {
+    "name": "lap",
+    "trans": ["拍浪"]
+  },
+  {
+    "name": "plumbing",
+    "trans": ["水管道"]
+  },
+  {
+    "name": "spray",
+    "trans": ["水花"]
+  },
+  {
+    "name": "steam",
+    "trans": ["蒸汽"]
+  },
+  {
+    "name": "surf",
+    "trans": ["浪花拍岸"]
+  },
+  {
+    "name": "waterfall",
+    "trans": ["瀑布"]
+  },
+  {
+    "name": "wave",
+    "trans": ["波浪"]
+  },
+  {
+    "name": "armor",
+    "trans": ["护甲"]
+  },
+  {
+    "name": "arrow",
+    "trans": ["箭"]
+  },
+  {
+    "name": "axe",
+    "trans": ["斧"]
+  },
+  {
+    "name": "blunt",
+    "trans": ["钝器"]
+  },
+  {
+    "name": "bow",
+    "trans": ["弓"]
+  },
+  {
+    "name": "knife",
+    "trans": ["刀"]
+  },
+  {
+    "name": "polearm",
+    "trans": ["矛"]
+  },
+  {
+    "name": "siege",
+    "trans": ["投石机"]
+  },
+  {
+    "name": "sword",
+    "trans": ["剑"]
+  },
+  {
+    "name": "whip",
+    "trans": ["鞭"]
+  },
+  {
+    "name": "hail",
+    "trans": ["冰雹"]
+  },
+  {
+    "name": "storm",
+    "trans": ["风暴"]
+  },
+  {
+    "name": "thunder",
+    "trans": ["雷"]
+  },
+  {
+    "name": "gust",
+    "trans": ["阵风"]
+  },
+  {
+    "name": "covering",
+    "trans": ["遮挡物"]
+  },
+  {
+    "name": "hardware",
+    "trans": ["窗具"]
+  },
+  {
+    "name": "knock",
+    "trans": ["敲窗"]
+  }
+]
