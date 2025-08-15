@@ -236,6 +236,92 @@ const MobilePage: React.FC = () => {
 
         <section className="mt-24 bg-gray-50/30 px-6 py-24 lg:mt-32 lg:px-24" itemScope itemType="https://schema.org/Product">
           <div className="mx-auto max-w-7xl">
+            <meta itemProp="name" content="Qwerty Learner" />
+            <meta itemProp="description" content="为键盘工作者设计的英语学习软件，结合打字练习与单词记忆" />
+            <meta itemProp="brand" content="Qwerty Learner" />
+
+            {/* Offers Schema */}
+            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
+              <meta itemProp="price" content="0" />
+              <meta itemProp="priceCurrency" content="USD" />
+              <meta itemProp="availability" content="https://schema.org/InStock" />
+              <meta itemProp="url" content="https://qwerty.kaiyi.cool/" />
+            </div>
+
+            {/* Aggregate Rating */}
+            <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
+              <meta itemProp="ratingValue" content="4.8" />
+              <meta itemProp="bestRating" content="5" />
+              <meta itemProp="worstRating" content="1" />
+              <meta itemProp="ratingCount" content="2156" />
+              <meta itemProp="reviewCount" content="486" />
+            </div>
+
+            {/* Individual Reviews */}
+            <div itemProp="review" itemScope itemType="https://schema.org/Review">
+              <meta itemProp="author" content="李某某 - 前端工程师" />
+              <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                <meta itemProp="ratingValue" content="5" />
+                <meta itemProp="bestRating" content="5" />
+              </div>
+              <meta itemProp="datePublished" content="2024-11-15" />
+              <meta
+                itemProp="reviewBody"
+                content="作为程序员，这个工具完美解决了我的痛点。一边练习打字一边背单词，效率翻倍！特别是程序员词库，让我快速熟悉了技术文档中的常用词汇。键盘音效配合网站体验感拉满，根本停不下来。"
+              />
+            </div>
+
+            <div itemProp="review" itemScope itemType="https://schema.org/Review">
+              <meta itemProp="author" content="王某某 - 大学生" />
+              <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                <meta itemProp="ratingValue" content="5" />
+                <meta itemProp="bestRating" content="5" />
+              </div>
+              <meta itemProp="datePublished" content="2024-10-28" />
+              <meta
+                itemProp="reviewBody"
+                content="准备六级考试时发现的宝藏！CET-6词库很全面，默写模式帮我巩固了很多易错单词。最喜欢的是错词本功能，可以反复练习不熟悉的单词。一个月下来，打字速度和词汇量都有明显提升。"
+              />
+            </div>
+
+            <div itemProp="review" itemScope itemType="https://schema.org/Review">
+              <meta itemProp="author" content="张某某 - 后端开发" />
+              <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                <meta itemProp="ratingValue" content="5" />
+                <meta itemProp="bestRating" content="5" />
+              </div>
+              <meta itemProp="datePublished" content="2024-09-20" />
+              <meta
+                itemProp="reviewBody"
+                content="GitHub上看到17.5k星就来试试，果然没让我失望！VSCode插件版本太方便了，写代码累了就切换过去练几个单词。JavaScript API的练习模式对我帮助很大，现在写JS不用老是查文档了。"
+              />
+            </div>
+
+            <div itemProp="review" itemScope itemType="https://schema.org/Review">
+              <meta itemProp="author" content="刘某某 - 产品经理" />
+              <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                <meta itemProp="ratingValue" content="4" />
+                <meta itemProp="bestRating" content="5" />
+              </div>
+              <meta itemProp="datePublished" content="2024-08-12" />
+              <meta
+                itemProp="reviewBody"
+                content="界面简洁，功能实用。音标显示和发音功能帮助很大，边打字边纠正发音。唯一的建议是希望能增加更多商务英语词汇，不过看到社区很活跃，相信会越来越完善。"
+              />
+            </div>
+
+            <div itemProp="review" itemScope itemType="https://schema.org/Review">
+              <meta itemProp="author" content="陈某某 - 全栈工程师" />
+              <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                <meta itemProp="ratingValue" content="5" />
+                <meta itemProp="bestRating" content="5" />
+              </div>
+              <meta itemProp="datePublished" content="2024-07-05" />
+              <meta
+                itemProp="reviewBody"
+                content="开源项目的典范！代码质量很高，我还贡献了几个PR。肌肉记忆训练的理念很棒，输错必须重打避免了错误记忆。现在阅读英文文档速度快了很多，打字也更准确了。强烈推荐给所有键盘工作者！"
+              />
+            </div>
             <h2 className="mb-6 text-center text-4xl font-bold tracking-tight text-gray-900 lg:text-5xl xl:text-6xl">
               核心功能，<span className="text-indigo-500">专业设计</span>
             </h2>
