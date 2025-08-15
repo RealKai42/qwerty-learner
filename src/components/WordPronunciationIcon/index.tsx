@@ -36,8 +36,9 @@ export const WordPronunciationIcon = React.forwardRef<
     ref,
     () => ({
       play: playSound,
+      isPlaying,
     }),
-    [playSound],
+    [playSound, isPlaying],
   )
 
   return (
@@ -54,4 +55,5 @@ WordPronunciationIcon.displayName = 'WordPronunciationIcon'
 
 export type WordPronunciationIconRef = {
   play: () => void
+  isPlaying: boolean
 }
