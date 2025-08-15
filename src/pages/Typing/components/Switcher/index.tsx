@@ -40,6 +40,21 @@ export default function Switcher() {
     [],
   )
 
+  const changeSentenceVisibleState = () => {
+    if (dispatch) {
+      dispatch({ type: TypingStateActionType.TOGGLE_SENTENCE_VISIBLE })
+    }
+  }
+
+  useHotkeys(
+    'ctrl+shift+s',
+    () => {
+      changeSentenceVisibleState()
+    },
+    { enableOnFormTags: true, preventDefault: true },
+    [],
+  )
+
   return (
     <div className="flex items-center justify-center gap-2">
       <Tooltip content="音效设置">
@@ -64,6 +79,20 @@ export default function Switcher() {
           aria-label={`开关释义显示（${CTRL} + Shift + V）`}
         >
           {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
+        </button>
+      </Tooltip>
+
+      <Tooltip className="h-7 w-7" content={`开关例句显示（${CTRL} + Shift + S）`}>
+        <button
+          className={`p-[2px] ${state?.isSentenceVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
+          type="button"
+          onClick={(e) => {
+            changeSentenceVisibleState()
+            e.currentTarget.blur()
+          }}
+          aria-label={`开关例句显示（${CTRL} + Shift + S）`}
+        >
+          {state?.isSentenceVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
 
