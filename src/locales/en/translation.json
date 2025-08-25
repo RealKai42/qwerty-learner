@@ -1,0 +1,95 @@
+{
+  "app": {
+    "title": "Qwerty Learner",
+    "skip": "Skip",
+    "start": "Start",
+    "pause": "Pause",
+    "restart": "Restart",
+    "donate_title": "Buy us a coffee",
+    "donate_desc_1": "Thanks for using Qwerty Learner. This website is maintained in spare time. To ensure we can continuously provide quality service, we need your help!",
+    "donate_desc_2": "Your donation helps pay for operation costs, improve features and design, and enhance user experience.",
+    "donate_desc_3": "To thank you, for a single donation of 50 RMB or more, we will send 5 custom Qwerty stickers (Mainland China only).",
+    "china_mirror": "China Mirror",
+    "build": "Build",
+    "dark_mode": "Toggle dark mode",
+    "analysis": "View statistics",
+    "error_book": "Error book",
+    "sound_settings": "Sound settings",
+    "loop_single_word": "Loop single word",
+    "dictation_mode": "Toggle dictation mode",
+    "toggle_trans": "Toggle translation visibility",
+    "pronunciation": "Pronunciation",
+    "phonetic": "Phonetic",
+    "on": "On",
+    "off": "Off",
+    "tips_read_aloud": "Tips: Read aloud shortcut (Ctrl + J)",
+    "mobile_alert": "Qwerty Learner aims to improve English typing efficiency for keyboard workers. Mobile is not supported yet. Please use a desktop browser. If you are on a tablet like iPad, you can use an external keyboard.",
+    "join_community": "Join our community",
+    "join_xhs": "Join our Xiaohongshu community",
+    "consider_donate": "Consider donating",
+    "use_vscode_plugin": "Use Visual Studio Code plugin",
+    "friend_links": "Friend links",
+    "icp": "ICP No. 鲁ICP备2022030649号"
+  },
+  "gallery": {
+    "tab": {
+      "en": "English",
+      "ja": "Japanese",
+      "de": "German",
+      "kk": "Kazakh",
+      "id": "Indonesian",
+      "code": "Code"
+    },
+    "disclaimer": "The dictionary data of this project comes from multiple open-source projects and community contributors. It is for personal learning and research only and prohibited for commercial use. If you are the copyright owner and believe our use infringes your rights, please contact us via the email at the bottom. Once we receive a valid complaint, we will delete the relevant content or seek necessary authorization. We encourage respecting copyright and complying with laws and regulations. We try to ensure legality and accuracy but cannot guarantee it. Use at your own risk."
+  },
+  "pronSwitcher": {
+    "toggle_phonetic": "Toggle phonetic display",
+    "toggle_pron": "Toggle word pronunciation",
+    "toggle_trans_read": "Toggle translation pronunciation",
+    "toggle_loop": "Toggle looping pronunciation",
+    "accent": "Word pronunciation accent",
+    "closed": "Closed"
+  },
+  "switcher": {
+    "hand_position_illustration": "Hand position illustration",
+    "settings": "Settings"
+  },
+  "pronunciation": {
+    "american": "American",
+    "british": "British",
+    "german": "German",
+    "romaji": "Romaji",
+    "hapin": "Hapin",
+    "mandarin": "Mandarin",
+    "japanese": "Japanese",
+    "kazakh": "Kazakh",
+    "indonesian": "Indonesian"
+  },
+  "dictChapter": {
+    "dictionary_switch": "Dictionary Selector",
+    "chapter_switch": "Chapter Selector",
+    "error_review": "Error review",
+    "chapter": "#"
+  },
+  "speed": {
+    "time": "Time",
+    "input_count": "Input Count",
+    "wpm": "WPM",
+    "correct_count": "Correct Count",
+    "accuracy": "Accuracy"
+  },
+  "dictDetail": {
+    "chapters": "Chapters",
+    "total": "Total",
+    "words": "words",
+    "chapter_selection": "Chapter Selection",
+    "view_errors": "View Errors",
+    "error_review": "Error Review"
+  },
+  "chapter": {
+    "chapter": "Chapter",
+    "practice_count": "Practice {{count}} times",
+    "not_practiced": "Not practiced",
+    "loading": "Loading..."
+  }
+}

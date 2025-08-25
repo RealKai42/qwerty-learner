@@ -1,4 +1,5 @@
 import Loading from './components/Loading'
+import './i18n'
 import './index.css'
 import { ErrorBook } from './pages/ErrorBook'
 import { FriendLinks } from './pages/FriendLinks'
