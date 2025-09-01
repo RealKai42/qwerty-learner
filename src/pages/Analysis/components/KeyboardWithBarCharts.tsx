@@ -10,6 +10,7 @@ import { CanvasRenderer } from 'echarts/renderers'
 import { useAtom } from 'jotai'
 import type { FC } from 'react'
 import { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 
 echarts.use([BarChart, CanvasRenderer, GeoComponent, MapChart, ToolboxComponent, TooltipComponent, UniversalTransition, VisualMapComponent])
 echarts.registerTheme('purple', purple)
@@ -54,6 +55,7 @@ interface KeyboardWithBarChartsProps {
 
 const KeyboardWithBarCharts: FC<KeyboardWithBarChartsProps> = ({ data, title, suffix, name }) => {
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
+  const { t } = useTranslation()
 
   const chartRef = useRef<HTMLDivElement>(null)
 
@@ -85,7 +87,7 @@ const KeyboardWithBarCharts: FC<KeyboardWithBarChartsProps> = ({ data, title, su
           restore: {},
           myToBarChart: {
             show: true,
-            title: '切换为柱状图',
+            title: t('analysisCharts.toolbox.switch_to_bar'),
             icon: 'path://M896 928 768 928C732.656 928 704 899.344 704 864L704 416C704 380.656 732.656 352 768 352L896 352C931.344 352 960 380.656 960 416L960 864C960 899.344 931.344 928 896 928ZM896 416 768 416 768 864 896 864 896 416ZM576 928 448 928C412.656 928 384 899.344 384 864L384 160C384 124.656 412.656 96 448 96L576 96C611.344 96 640 124.656 640 160L640 864C640 899.344 611.344 928 576 928ZM576 160 448 160 448 864 576 864 576 160ZM256 928 128 928C92.656 928 64 899.344 64 864L64 544C64 508.656 92.656 480 128 480L256 480C291.344 480 320 508.656 320 544L320 864C320 899.344 291.344 928 256 928ZM256 544 128 544 128 864 256 864 256 544Z',
             onclick: function () {
               chart?.setOption(barOption, true)
@@ -100,7 +102,7 @@ const KeyboardWithBarCharts: FC<KeyboardWithBarChartsProps> = ({ data, title, su
         inRange: {
           color: isOpenDarkMode ? ['hsl(0, 0%, 22%)', '#818cf8'] : ['#f0f0f0', '#6366f1'],
         },
-        text: ['多', '少'],
+        text: [t('analysisCharts.visual_map.more'), t('analysisCharts.visual_map.less')],
         textStyle: {
           color: isOpenDarkMode ? '#fff' : '#000',
         },
@@ -127,7 +129,7 @@ const KeyboardWithBarCharts: FC<KeyboardWithBarChartsProps> = ({ data, title, su
         feature: {
           myToKeyboard: {
             show: true,
-            title: '切换为键盘热力图',
+            title: t('analysisCharts.toolbox.switch_to_keyboard'),
             icon: 'path://M192 448h64v64H192zM384 448h64v64h-64zM576 448h64v64h-64zM768 448h64v64h-64zM192 320h64v64H192zM384 320h64v64h-64zM576 320h64v64h-64zM768 320h64v64h-64zM256 640h512v64H256z M1024 864H0V256h64v544h896V224H0V160h1024v704z',
             onclick: function () {
               chart?.setOption(mapOption, true)

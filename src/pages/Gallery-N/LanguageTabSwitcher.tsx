@@ -8,6 +8,7 @@ import kkFlag from '@/assets/flags/kk.png'
 import type { LanguageCategoryType } from '@/typings'
 import { RadioGroup } from '@headlessui/react'
 import { useCallback, useContext } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export type LanguageTabOption = {
   id: LanguageCategoryType
@@ -15,18 +16,19 @@ export type LanguageTabOption = {
   flag: string
 }
 
-const options: LanguageTabOption[] = [
-  { id: 'en', name: '英语', flag: enFlag },
-  { id: 'ja', name: '日语', flag: jpFlag },
-  { id: 'de', name: '德语', flag: deFlag },
-  { id: 'kk', name: '哈萨克语', flag: kkFlag },
-  { id: 'id', name: '印尼语', flag: idFlag },
-  { id: 'code', name: 'Code', flag: codeFlag },
+const createOptions = (t: (k: string) => string): LanguageTabOption[] => [
+  { id: 'en', name: t('gallery.tab.en'), flag: enFlag },
+  { id: 'ja', name: t('gallery.tab.ja'), flag: jpFlag },
+  { id: 'de', name: t('gallery.tab.de'), flag: deFlag },
+  { id: 'kk', name: t('gallery.tab.kk'), flag: kkFlag },
+  { id: 'id', name: t('gallery.tab.id'), flag: idFlag },
+  { id: 'code', name: t('gallery.tab.code'), flag: codeFlag },
 ]
 
 export function LanguageTabSwitcher() {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const { state, setState } = useContext(GalleryContext)!
+  const { t } = useTranslation()
 
   const onChangeTab = useCallback(
     (tab: string) => {
@@ -40,7 +42,7 @@ export function LanguageTabSwitcher() {
   return (
     <RadioGroup value={state.currentLanguageTab} onChange={onChangeTab}>
       <div className="flex items-center space-x-4">
-        {options.map((option) => (
+        {createOptions(t).map((option) => (
           <RadioGroup.Option key={option.id} value={option.id} className="cursor-pointer">
             {({ checked }) => (
               <div className={`flex items-center border-b-2 px-2 pb-1 ${checked ? 'border-indigo-500' : 'border-transparent'}`}>

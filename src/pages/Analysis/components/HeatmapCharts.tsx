@@ -4,6 +4,7 @@ import type { FC } from 'react'
 import React from 'react'
 import type { Activity } from 'react-activity-calendar'
 import ActivityCalendar from 'react-activity-calendar'
+import { useTranslation } from 'react-i18next'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
 
@@ -14,6 +15,7 @@ interface HeatmapChartsProps {
 
 const HeatmapCharts: FC<HeatmapChartsProps> = ({ data, title }) => {
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
+  const { t } = useTranslation()
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -35,17 +37,41 @@ const HeatmapCharts: FC<HeatmapChartsProps> = ({ data, title }) => {
         renderBlock={(block, activity) =>
           React.cloneElement(block, {
             'data-tooltip-id': 'react-tooltip',
-            'data-tooltip-html': `${activity.date} 练习 ${activity.count} 次`,
+            'data-tooltip-html': t('analysisCharts.tooltip', {
+              date: activity.date,
+              count: activity.count,
+            }),
           })
         }
         showWeekdayLabels={true}
         labels={{
-          months: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
-          weekdays: ['日', '一', '二', '三', '四', '五', '六'],
-          totalCount: '过去一年总计 {{count}} 次',
+          months: [
+            t('analysisCharts.months.january'),
+            t('analysisCharts.months.february'),
+            t('analysisCharts.months.march'),
+            t('analysisCharts.months.april'),
+            t('analysisCharts.months.may'),
+            t('analysisCharts.months.june'),
+            t('analysisCharts.months.july'),
+            t('analysisCharts.months.august'),
+            t('analysisCharts.months.september'),
+            t('analysisCharts.months.october'),
+            t('analysisCharts.months.november'),
+            t('analysisCharts.months.december'),
+          ],
+          weekdays: [
+            t('analysisCharts.weekdays.sunday'),
+            t('analysisCharts.weekdays.monday'),
+            t('analysisCharts.weekdays.tuesday'),
+            t('analysisCharts.weekdays.wednesday'),
+            t('analysisCharts.weekdays.thursday'),
+            t('analysisCharts.weekdays.friday'),
+            t('analysisCharts.weekdays.saturday'),
+          ],
+          totalCount: t('analysisCharts.total_count'),
           legend: {
-            less: '少',
-            more: '多',
+            less: t('analysisCharts.legend.less'),
+            more: t('analysisCharts.legend.more'),
           },
         }}
       />

@@ -42,11 +42,11 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '美音',
+        name: 'pronunciation.american',
         pron: 'us',
       },
       {
-        name: '英音',
+        name: 'pronunciation.british',
         pron: 'uk',
       },
     ],
@@ -55,11 +55,11 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '美音',
+        name: 'pronunciation.american',
         pron: 'us',
       },
       {
-        name: '英音',
+        name: 'pronunciation.british',
         pron: 'uk',
       },
     ],
@@ -68,7 +68,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '德语',
+        name: 'pronunciation.german',
         pron: 'de',
       },
     ],
@@ -77,7 +77,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '罗马音',
+        name: 'pronunciation.romaji',
         pron: 'romaji',
       },
     ],
@@ -86,7 +86,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '哈拼',
+        name: 'pronunciation.hapin',
         pron: 'hapin',
       },
     ],
@@ -95,7 +95,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '普通话',
+        name: 'pronunciation.mandarin',
         pron: 'zh',
       },
     ],
@@ -104,7 +104,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '日语',
+        name: 'pronunciation.japanese',
         pron: 'ja',
       },
     ],
@@ -113,7 +113,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '哈萨克语',
+        name: 'pronunciation.kazakh',
         pron: 'kk',
       },
     ],
@@ -122,7 +122,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '印尼语',
+        name: 'pronunciation.indonesian',
         pron: 'id',
       },
     ],

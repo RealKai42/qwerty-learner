@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import type { ElementType, SVGAttributes } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconExclamationTriangle from '~icons/heroicons/exclamation-triangle-solid'
 import IconHandThumbUp from '~icons/heroicons/hand-thumb-up-solid'
 import IconHeart from '~icons/heroicons/heart-solid'
@@ -10,26 +11,31 @@ type IconMapper = {
   text: (mistakeCount: number) => string
 }
 
-const ICON_MAPPER: IconMapper[] = [
+const getIconMapper = (t: any): IconMapper[] => [
   {
     icon: IconHeart,
     className: 'text-indigo-600',
-    text: (mistakeCount: number) => `表现不错！` + (mistakeCount > 0 ? `只错了 ${mistakeCount} 个单词` : '全对了！'),
+    text: (mistakeCount: number) =>
+      mistakeCount > 0
+        ? t('resultScreen.conclusion.excellent_with_errors', { count: mistakeCount })
+        : t('resultScreen.conclusion.excellent_perfect'),
   },
   {
     icon: IconHandThumbUp,
     className: 'text-indigo-600',
-    text: () => '有些小问题哦，下一次可以做得更好！',
+    text: () => t('resultScreen.conclusion.good'),
   },
   {
     icon: IconExclamationTriangle,
     className: 'text-indigo-600',
-    text: () => '错误太多，再来一次如何？',
+    text: () => t('resultScreen.conclusion.poor'),
   },
 ]
 
 const ConclusionBar = ({ mistakeLevel, mistakeCount }: ConclusionBarProps) => {
-  const { icon: Icon, className, text } = ICON_MAPPER[mistakeLevel]
+  const { t } = useTranslation()
+  const iconMapper = getIconMapper(t)
+  const { icon: Icon, className, text } = iconMapper[mistakeLevel]
 
   return (
     <div className="flex h-10 flex-row items-center">

@@ -2,9 +2,11 @@ import usePronunciationSound from '@/hooks/usePronunciation'
 import type { WordWithIndex } from '@/typings'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
 import { useCallback, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function WordChip({ word }: { word: WordWithIndex }) {
   const [showTranslation, setShowTranslation] = useState(false)
+  const { t } = useTranslation()
   const { x, y, strategy, refs, context } = useFloating({
     open: showTranslation,
     onOpenChange: setShowTranslation,
@@ -28,7 +30,7 @@ export default function WordChip({ word }: { word: WordWithIndex }) {
         {...getReferenceProps()}
         type="button"
         onClick={onClickWord}
-        title={`朗读 ${word.name}`}
+        title={t('resultScreen.pronounce_word', { word: word.name })}
       >
         <span>{word.name}</span>
       </button>

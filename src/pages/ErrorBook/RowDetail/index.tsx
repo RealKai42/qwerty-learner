@@ -13,6 +13,7 @@ import { idDictionaryMap } from '@/resources/dictionary'
 import { useSetAtom } from 'jotai'
 import { useCallback, useMemo, useRef } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { useTranslation } from 'react-i18next'
 import HashtagIcon from '~icons/heroicons/chart-pie-20-solid'
 import CheckCircle from '~icons/heroicons/check-circle-20-solid'
 import ClockIcon from '~icons/heroicons/clock-20-solid'
@@ -26,6 +27,7 @@ type RowDetailProps = {
 
 const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) => {
   const setCurrentRowDetail = useSetAtom(currentRowDetailAtom)
+  const { t } = useTranslation()
 
   const dictInfo = idDictionaryMap[currentRowDetail.dict]
   const { word, isLoading, hasError } = useGetWord(currentRowDetail.word, dictInfo)
@@ -94,12 +96,12 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
         </div>
         <div className="item flex flex-col gap-4">
           <div className="flex gap-6">
-            <DataTag icon={ClockIcon} name="平均用时" data={rowDetailData.time} />
-            <DataTag icon={HashtagIcon} name="练习次数" data={rowDetailData.sumCount} />
+            <DataTag icon={ClockIcon} name={t('errorBook.average_time')} data={rowDetailData.time} />
+            <DataTag icon={HashtagIcon} name={t('errorBook.practice_count')} data={rowDetailData.sumCount} />
           </div>
           <div className="flex gap-6">
-            <DataTag icon={CheckCircle} name="正确次数" data={rowDetailData.correctCount} />
-            <DataTag icon={XCircle} name="错误次数" data={rowDetailData.wrongCount} />
+            <DataTag icon={CheckCircle} name={t('errorBook.correct_count')} data={rowDetailData.correctCount} />
+            <DataTag icon={XCircle} name={t('errorBook.wrong_count')} data={rowDetailData.wrongCount} />
           </div>
         </div>
         <RowPagination className="absolute bottom-6 mt-10" allRecords={allRecords} />
