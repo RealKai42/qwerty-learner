@@ -2,12 +2,13 @@ import DictionaryGroup from './CategoryDicts'
 import DictRequest from './DictRequest'
 import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import Layout from '@/components/Layout'
+import TranslationLanguageSwitcher from '@/components/TranslationLanguageSwitcher'
 import { dictionaries } from '@/resources/dictionary'
-import { currentDictInfoAtom } from '@/store'
+import { currentDictInfoAtom, translationLanguageAtom } from '@/store'
 import type { Dictionary, LanguageCategoryType } from '@/typings'
 import groupBy, { groupByDictTags } from '@/utils/groupBy'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { useAtomValue } from 'jotai'
+import { useAtom, useAtomValue } from 'jotai'
 import { createContext, useCallback, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useTranslation } from 'react-i18next'
@@ -35,10 +36,15 @@ export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
   const navigate = useNavigate()
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const [translationLanguage, setTranslationLanguage] = useAtom(translationLanguageAtom)
 
   const { groupedByCategoryAndTag } = useMemo(() => {
-    const currentLanguageCategoryDicts = dictionaries.filter((dict) => dict.languageCategory === galleryState.currentLanguageTab)
-    const groupedByCategory = Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category))
+    // Filter dictionaries by both language category and translation language
+    const filteredDicts = dictionaries.filter((dict) => 
+      dict.languageCategory === galleryState.currentLanguageTab && 
+      dict.translationLanguage === translationLanguage
+    )
+    const groupedByCategory = Object.entries(groupBy(filteredDicts, (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
       ([category, dicts]) => [category, groupByDictTags(dicts)] as [string, Record<string, Dictionary[]>],
     )
@@ -46,7 +52,7 @@ export default function GalleryPage() {
     return {
       groupedByCategoryAndTag,
     }
-  }, [galleryState.currentLanguageTab])
+  }, [galleryState.currentLanguageTab, translationLanguage])
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -71,7 +77,10 @@ export default function GalleryPage() {
             <div className="flex h-full flex-col overflow-y-auto">
               <div className="flex h-20 w-full items-center justify-between pb-6 pr-20">
                 <LanguageTabSwitcher />
-                <DictRequest />
+                <div className="flex items-center space-x-4">
+                  <TranslationLanguageSwitcher value={translationLanguage} onChange={setTranslationLanguage} />
+                  <DictRequest />
+                </div>
               </div>
               <ScrollArea.Root className="flex-1 overflow-y-auto">
                 <ScrollArea.Viewport className="h-full w-full ">

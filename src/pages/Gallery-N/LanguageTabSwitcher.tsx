@@ -1,4 +1,5 @@
 import { GalleryContext } from '.'
+import arFlag from '@/assets/flags/ar.png'
 import codeFlag from '@/assets/flags/code.png'
 import deFlag from '@/assets/flags/de.png'
 import enFlag from '@/assets/flags/en.png'
@@ -22,6 +23,7 @@ const createOptions = (t: (k: string) => string): LanguageTabOption[] => [
   { id: 'de', name: t('gallery.tab.de'), flag: deFlag },
   { id: 'kk', name: t('gallery.tab.kk'), flag: kkFlag },
   { id: 'id', name: t('gallery.tab.id'), flag: idFlag },
+  { id: 'ar', name: t('gallery.tab.ar'), flag: arFlag },
   { id: 'code', name: t('gallery.tab.code'), flag: codeFlag },
 ]
 

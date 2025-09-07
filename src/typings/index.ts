@@ -1,9 +1,12 @@
 export * from './resource'
 
-export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id'
-export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id'
-export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de' | 'kk' | 'hapin' | 'id'
-export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code' | 'kk' | 'id'
+export type PronunciationType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id' | 'ar'
+export type PhoneticType = 'us' | 'uk' | 'romaji' | 'zh' | 'ja' | 'de' | 'hapin' | 'kk' | 'id' | 'ar'
+export type LanguageType = 'en' | 'romaji' | 'zh' | 'ja' | 'code' | 'de' | 'kk' | 'hapin' | 'id' | 'ar'
+export type LanguageCategoryType = 'en' | 'ja' | 'de' | 'code' | 'kk' | 'id' | 'ar'
+
+// Translation language types for multi-language support
+export type TranslationLanguageType = 'zh' | 'ar' | 'en'
 
 type Pronunciation2PhoneticMap = Record<PronunciationType, PhoneticType>
 
@@ -17,11 +20,12 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   hapin: 'hapin',
   kk: 'kk',
   id: 'id',
+  ar: 'ar',
 }
 
 export type Word = {
   name: string
-  trans: string[]
+  trans: string[] | Record<TranslationLanguageType, string[]>
   usphone: string
   ukphone: string
   notation?: string

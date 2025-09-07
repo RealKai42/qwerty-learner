@@ -34,13 +34,18 @@
   "gallery": {
     "tab": {
       "en": "English",
+      "ar": "Arabic",
       "ja": "Japanese",
       "de": "German",
       "kk": "Kazakh",
       "id": "Indonesian",
       "code": "Code"
     },
-    "disclaimer": "The dictionary data of this project comes from multiple open-source projects and community contributors. It is for personal learning and research only and prohibited for commercial use. If you are the copyright owner and believe our use infringes your rights, please contact us via the email at the bottom. Once we receive a valid complaint, we will delete the relevant content or seek necessary authorization. We encourage respecting copyright and complying with laws and regulations. We try to ensure legality and accuracy but cannot guarantee it. Use at your own risk."
+    "disclaimer": "Dictionary data comes from various open source projects and community contributors."
+  },
+  "translation": {
+    "language": "Translation Language",
+    "not_available": "Translation not available"
   },
   "pronSwitcher": {
     "toggle_phonetic": "Toggle phonetic display",

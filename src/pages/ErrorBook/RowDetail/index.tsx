@@ -10,7 +10,9 @@ import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import Phonetic from '@/pages/Typing/components/WordPanel/components/Phonetic'
 import Letter from '@/pages/Typing/components/WordPanel/components/Word/Letter'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { useSetAtom } from 'jotai'
+import { translationLanguageAtom } from '@/store'
+import { getFormattedTranslation } from '@/utils/translation'
+import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useMemo, useRef } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import { useTranslation } from 'react-i18next'
@@ -27,6 +29,7 @@ type RowDetailProps = {
 
 const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) => {
   const setCurrentRowDetail = useSetAtom(currentRowDetailAtom)
+  const translationLanguage = useAtomValue(translationLanguageAtom)
   const { t } = useTranslation()
 
   const dictInfo = idDictionaryMap[currentRowDetail.dict]
@@ -90,7 +93,11 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
           </div>
           <div className="flex max-w-[24rem] items-center">
             <span className={`max-w-4xl text-center font-sans transition-colors duration-300 dark:text-white dark:text-opacity-80`}>
-              {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
+              {word ? (
+                getFormattedTranslation(word, translationLanguage, t('translation.not_available'))
+              ) : (
+                <LoadingWordUI isLoading={isLoading} hasError={hasError} />
+              )}
             </span>
           </div>
         </div>

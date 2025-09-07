@@ -1,0 +1,4808 @@
+[
+  {
+    "name": "academic",
+    "trans": ["ن. طالب جامعي، مدرس جامعي؛ عالم"],
+    "usphone": "[ˌækəˈdemɪk]",
+    "ukphone": "[ˌækəˈdemɪk]"
+  },
+  {
+    "name": "access",
+    "trans": ["ن. الدخول؛ حق الاستخدام؛ الطريق المؤدي"],
+    "usphone": "[ˈækses]",
+    "ukphone": "[ˈækses]"
+  },
+  {
+    "name": "accommodation",
+    "trans": ["ن. مكان الإقامة، السكن والطعام؛ التسوية؛ التوفيق؛ الحجز المسبق للغرفة"],
+    "usphone": "[əˌkɑːməˈdeɪʃn]",
+    "ukphone": "[əˌkɒməˈdeɪʃ(ə)n]"
+  },
+  {
+    "name": "account",
+    "trans": ["ن. الحساب؛ التفسير؛ الحسابات، الفواتير؛ السبب؛ الوصف"],
+    "usphone": "[əˈkaʊnt]",
+    "ukphone": "[əˈkaʊnt]"
+  },
+  {
+    "name": "achievement",
+    "trans": ["ن. الإنجاز؛ الإتمام؛ الوصول؛ النتيجة"],
+    "usphone": "[əˈtʃiːvmənt]",
+    "ukphone": "[əˈtʃiːvmənt]"
+  },
+  {
+    "name": "act",
+    "trans": ["ن. السلوك، العمل؛ المرسوم، القانون؛ (مسرحية أو أوبرا) مشهد، فصل؛ التصنع"],
+    "usphone": "[ækt]",
+    "ukphone": "[ækt]"
+  },
+  {
+    "name": "ad",
+    "trans": ["ن. سنة الميلاد؛ الإعلان (ad)"],
+    "usphone": "[æd]",
+    "ukphone": "[æd]"
+  },
+  {
+    "name": "addition",
+    "trans": ["ن. الإضافة؛ [رياضيات] الجمع؛ الشيء الذي يُضاف"],
+    "usphone": "[əˈdɪʃn]",
+    "ukphone": "[əˈdɪʃn]"
+  },
+  {
+    "name": "admire",
+    "trans": ["في. الإعجاب؛ الثناء"],
+    "usphone": "[ədˈmaɪər]",
+    "ukphone": "[ədˈmaɪə(r)]"
+  },
+  {
+    "name": "admit",
+    "trans": ["في. الاعتراف؛ السماح"],
+    "usphone": "[ədˈmɪt]",
+    "ukphone": "[ədˈmɪt]"
+  },
+  {
+    "name": "advanced",
+    "trans": ["ص. متقدم؛ رفيع المستوى؛ متأخر؛ كبير السن"],
+    "usphone": "[ədˈvænst]",
+    "ukphone": "[ədˈvɑːnst]"
+  },
+  {
+    "name": "advise",
+    "trans": ["في. الاقتراح؛ النصيحة، النصح؛ الإبلاغ؛ التحذير"],
+    "usphone": "[ədˈvaɪz]",
+    "ukphone": "[ədˈvaɪz]"
+  },
+  {
+    "name": "afford",
+    "trans": ["في. إعطاء، تقديم؛ يستطيع تحمله"],
+    "usphone": "[əˈfɔːrd]",
+    "ukphone": "[əˈfɔːd]"
+  },
+  {
+    "name": "age",
+    "trans": ["ن. العمر؛ العصر؛ العمر، سنوات الاستخدام؛ المرحلة"],
+    "usphone": "[eɪdʒ]",
+    "ukphone": "[eɪdʒ]"
+  },
+  {
+    "name": "aged",
+    "trans": ["في. الشيخوخة (شكل الماضي من age)؛ النضج؛ التقدم في العمر"],
+    "usphone": "[eɪdʒd; ˈeɪdʒɪd]",
+    "ukphone": "[eɪdʒd]"
+  },
+  {
+    "name": "agent",
+    "trans": ["ن. الوكيل، الوكالة؛ الدواء؛ العميل"],
+    "usphone": "[ˈeɪdʒənt]",
+    "ukphone": "[ˈeɪdʒənt]"
+  },
+  {
+    "name": "agreement",
+    "trans": ["ن. الاتفاق؛ الموافقة، التوافق"],
+    "usphone": "[əˈɡriːmənt]",
+    "ukphone": "[əˈɡriːmənt]"
+  },
+  {
+    "name": "ahead",
+    "trans": ["ص. للأمام؛ أمام؛ متقدم"],
+    "usphone": "[əˈhed]",
+    "ukphone": "[əˈhed]"
+  },
+  {
+    "name": "aim",
+    "trans": ["ن. الغرض؛ الهدف؛ التوجيه نحو"],
+    "usphone": "[eɪm]",
+    "ukphone": "[eɪm]"
+  },
+  {
+    "name": "alarm",
+    "trans": ["ن. المنبه؛ الإنذار، جهاز التنبيه؛ الذعر"],
+    "usphone": "[əˈlɑːrm]",
+    "ukphone": "[əˈlɑːm]"
+  },
+  {
+    "name": "album",
+    "trans": ["ن. ألبوم الصور؛ مجموعة الأسطوانات؛ كتاب الطوابع؛ كتاب التوقيعات"],
+    "usphone": "[ˈælbəm]",
+    "ukphone": "[ˈælbəm]"
+  },
+  {
+    "name": "alcohol",
+    "trans": ["ن. الكحول، الإيثانول"],
+    "usphone": "[ˈælkəhɔːl]",
+    "ukphone": "[ˈælkəhɒl]"
+  },
+  {
+    "name": "alcoholic",
+    "trans": ["ن. مدمن الكحول، شارب الخمر"],
+    "usphone": "[ˌælkəˈhɑːlɪk]",
+    "ukphone": "[ˌælkəˈhɒlɪk]"
+  },
+  {
+    "name": "alternative",
+    "trans": ["ن. الخيار بين شيئين؛ الخيارات البديلة"],
+    "usphone": "[ɔːlˈtɜːrnətɪv]",
+    "ukphone": "[ɔːlˈtɜːnətɪv]"
+  },
+  {
+    "name": "amazed",
+    "trans": ["في. يدهش؛ يجعل (amaze) محيراً"],
+    "usphone": "[əˈmeɪzd]",
+    "ukphone": "[əˈmeɪzd]"
+  },
+  {
+    "name": "ambition",
+    "trans": ["ن. الطموح، الطموح الكبير؛ الطموح، الهدف"],
+    "usphone": "[æmˈbɪʃ(ə)n]",
+    "ukphone": "[æmˈbɪʃn]"
+  },
+  {
+    "name": "ambitious",
+    "trans": ["ص. طموح؛ طموح؛ حريص؛ متباهٍ"],
+    "usphone": "[æmˈbɪʃəs]",
+    "ukphone": "[æmˈbɪʃəs]"
+  },
+  {
+    "name": "analyse",
+    "trans": ["في. تحليل؛ تفكيك؛ التدقيق"],
+    "usphone": "[ˈænəlaɪz]",
+    "ukphone": "[ˈænəlaɪz]"
+  },
+  {
+    "name": "analysis",
+    "trans": ["ن. التحليل؛ التفكيك؛ الاختبار"],
+    "usphone": "[əˈnæləsɪs]",
+    "ukphone": "[əˈnæləsɪs]"
+  },
+  {
+    "name": "announce",
+    "trans": ["في. الإعلان؛ القول؛ التنبؤ؛ البث الإذاعي"],
+    "usphone": "[əˈnaʊns]",
+    "ukphone": "[əˈnaʊns]"
+  },
+  {
+    "name": "announcement",
+    "trans": ["ن. الإعلان؛ الإعلان؛ النشر؛ الإشعار"],
+    "usphone": "[əˈnaʊnsmənt]",
+    "ukphone": "[əˈnaʊnsmənt]"
+  },
+  {
+    "name": "annoy",
+    "trans": ["ن. الضيق (مطابق لـ annoyance)"],
+    "usphone": "[əˈnɔɪ]",
+    "ukphone": "[əˈnɔɪ]"
+  },
+  {
+    "name": "annoyed",
+    "trans": ["في. يضايق؛ يزعج (شكل الماضي من annoy)"],
+    "usphone": "[əˈnɔɪd]",
+    "ukphone": "[əˈnɔɪd]"
+  },
+  {
+    "name": "annoying",
+    "trans": ["في. الإزعاج (شكل ing من annoy)"],
+    "usphone": "[əˈnɔɪɪŋ]",
+    "ukphone": "[əˈnɔɪɪŋ]"
+  },
+  {
+    "name": "apart",
+    "trans": ["ص. منفصل؛ مختلف"],
+    "usphone": "[əˈpɑːrt]",
+    "ukphone": "[əˈpɑːt]"
+  },
+  {
+    "name": "apologize",
+    "trans": ["في. الاعتذار؛ التبرير؛ الاعتذار"],
+    "usphone": "[əˈpɑːlədʒaɪz]",
+    "ukphone": "[əˈpɒlədʒaɪz]"
+  },
+  {
+    "name": "application",
+    "trans": ["ن. التطبيق؛ الطلب؛ التطبيق العملي؛ التدليك"],
+    "usphone": "[ˌæplɪˈkeɪʃn]",
+    "ukphone": "[ˌæplɪˈkeɪʃ(ə)n]"
+  },
+  {
+    "name": "appointment",
+    "trans": ["ن. التعيين؛ الاتفاق؛ المنصب المعين"],
+    "usphone": "[əˈpɔɪntmənt]",
+    "ukphone": "[əˈpɔɪntmənt]"
+  },
+  {
+    "name": "appreciate",
+    "trans": ["في. يزيد؛ يرتفع السعر"],
+    "usphone": "[əˈpriːʃieɪt]",
+    "ukphone": "[əˈpriːʃieɪt]"
+  },
+  {
+    "name": "approximately",
+    "trans": ["ح. تقريباً، بشكل تقريبي؛ بالقرب من"],
+    "usphone": "[əˈprɑːksɪmətli]",
+    "ukphone": "[əˈprɒksɪmətli]"
+  },
+  {
+    "name": "arrest",
+    "trans": ["ن. الاعتقال؛ السجن"],
+    "usphone": "[əˈrest]",
+    "ukphone": "[əˈrest]"
+  },
+  {
+    "name": "arrival",
+    "trans": ["ن. القدوم؛ الوصول؛ القادمون"],
+    "usphone": "[əˈraɪvl]",
+    "ukphone": "[əˈraɪvl]"
+  },
+  {
+    "name": "assignment",
+    "trans": ["ن. التوزيع؛ المهمة؛ الواجب؛ الدراسة المنزلية"],
+    "usphone": "[əˈsaɪnmənt]",
+    "ukphone": "[əˈsaɪnmənt]"
+  },
+  {
+    "name": "assist",
+    "trans": ["ن. المساعدة؛ التمرير"],
+    "usphone": "[əˈsɪst]",
+    "ukphone": "[əˈsɪst]"
+  },
+  {
+    "name": "atmosphere",
+    "trans": ["ن. الجو؛ الغلاف الجوي؛ الهواء"],
+    "usphone": "[ˈætməsfɪr]",
+    "ukphone": "[ˈætməsfɪə(r)]"
+  },
+  {
+    "name": "attach",
+    "trans": ["في. يضيف؛ يلحق؛ يرافق"],
+    "usphone": "[əˈtætʃ]",
+    "ukphone": "[əˈtætʃ]"
+  },
+  {
+    "name": "attitude",
+    "trans": ["ن. الموقف؛ الرأي؛ الرأي؛ الوضعية"],
+    "usphone": "[ˈætɪtuːd]",
+    "ukphone": "[ˈætɪtjuːd]"
+  },
+  {
+    "name": "attract",
+    "trans": ["في. جذب؛ يسبب"],
+    "usphone": "[əˈtrækt]",
+    "ukphone": "[əˈtrækt]"
+  },
+  {
+    "name": "attraction",
+    "trans": ["ن. الجاذبية، الجاذبية؛ الجاذبية؛ الأشياء الجذابة"],
+    "usphone": "[əˈtrækʃn]",
+    "ukphone": "[əˈtrækʃ(ə)n]"
+  },
+  {
+    "name": "authority",
+    "trans": ["ن. السلطة؛ السلطة؛ السلطات"],
+    "usphone": "[əˈθɔːrəti]",
+    "ukphone": "[ɔːˈθɒrəti]"
+  },
+  {
+    "name": "average",
+    "trans": ["ن. المتوسط؛ المتوسط؛ الخسارة البحرية"],
+    "usphone": "[ˈævərɪdʒ]",
+    "ukphone": "[ˈævərɪdʒ]"
+  },
+  {
+    "name": "award",
+    "trans": ["ن. الجائزة؛ الحكم"],
+    "usphone": "[əˈwɔːrd]",
+    "ukphone": "[əˈwɔːd]"
+  },
+  {
+    "name": "aware",
+    "trans": ["ص. مدرك؛ على علم؛ لديه معرفة في جانب معين؛ ذكي"],
+    "usphone": "[əˈwer]",
+    "ukphone": "[əˈweə(r)]"
+  },
+  {
+    "name": "backwards",
+    "trans": ["ح. إلى الخلف؛ إلى الوراء؛ العكس"],
+    "usphone": "[ˈbækwərdz]",
+    "ukphone": "[ˈbækwədz]"
+  },
+  {
+    "name": "bake",
+    "trans": ["ن. الخبز؛ الطعام المخبوز"],
+    "usphone": "[beɪk]",
+    "ukphone": "[beɪk]"
+  },
+  {
+    "name": "balance",
+    "trans": ["ن. التوازن؛ الرصيد؛ التوازن"],
+    "usphone": "[ˈbæləns]",
+    "ukphone": "[ˈbæləns]"
+  },
+  {
+    "name": "ban",
+    "trans": ["ن. المحظورات، المحرمات"],
+    "usphone": "[bæn]",
+    "ukphone": "[bæn]"
+  },
+  {
+    "name": "base",
+    "trans": ["ن. الأساس؛ القاعدة؛ اللعب"],
+    "usphone": "[beɪs]",
+    "ukphone": "[beɪs]"
+  },
+  {
+    "name": "basic",
+    "trans": ["ن. الأساس؛ العنصر الأساسي"],
+    "usphone": "[ˈbeɪsɪk]",
+    "ukphone": "[ˈbeɪsɪk]"
+  },
+  {
+    "name": "basis",
+    "trans": ["ن. الأساس؛ القاعدة؛ المكون الرئيسي؛ المبادئ أو المبادئ الأساسية"],
+    "usphone": "[ˈbeɪsɪs]",
+    "ukphone": "[ˈbeɪsɪs]"
+  },
+  {
+    "name": "battery",
+    "trans": ["ن. [كهرباء] البطارية، المولد"],
+    "usphone": "[ˈbætəri]",
+    "ukphone": "[ˈbætri; ˈbætəri]"
+  },
+  {
+    "name": "battle",
+    "trans": ["ن. الحملة؛ النضال"],
+    "usphone": "[ˈbætl]",
+    "ukphone": "[ˈbæt(ə)l]"
+  },
+  {
+    "name": "beauty",
+    "trans": ["ن. الجمال؛ الجمال؛ الجميلة؛ الأشياء الجميلة"],
+    "usphone": "[ˈbjuːti]",
+    "ukphone": "[ˈbjuːti]"
+  },
+  {
+    "name": "bee",
+    "trans": ["ن. النحلة، النحل؛ الشخص المجتهد"],
+    "usphone": "[biː]",
+    "ukphone": "[biː]"
+  },
+  {
+    "name": "belief",
+    "trans": ["ن. الثقة، الاعتماد؛ الإيمان؛ العقيدة"],
+    "usphone": "[bɪˈliːf]",
+    "ukphone": "[bɪˈliːf]"
+  },
+  {
+    "name": "bell",
+    "trans": ["ن. الجرس، الساعة؛ صوت الجرس، صوت الساعة؛ الشكل الجرساني"],
+    "usphone": "[bel]",
+    "ukphone": "[bel]"
+  },
+  {
+    "name": "bend",
+    "trans": ["ن. الانحناء"],
+    "usphone": "[bend]",
+    "ukphone": "[bend]"
+  },
+  {
+    "name": "benefit",
+    "trans": ["ن. المنفعة، الفائدة؛ المنحة"],
+    "usphone": "[ˈbenɪfɪt]",
+    "ukphone": "[ˈbenɪfɪt]"
+  },
+  {
+    "name": "better",
+    "trans": ["ن. كبار السن؛ الأفضل؛ الشخص الذي يراهن (يساوي bettor)"],
+    "usphone": "[ˈbetər]",
+    "ukphone": "[ˈbetə(r)]"
+  },
+  {
+    "name": "bite",
+    "trans": ["ن. العضة؛ لدغة؛ الألم الناتج عن العضة"],
+    "usphone": "[baɪt]",
+    "ukphone": "[baɪt]"
+  },
+  {
+    "name": "block",
+    "trans": ["ن. الكتلة؛ الحي؛ المبنى؛ العائق"],
+    "usphone": "[blɑːk]",
+    "ukphone": "[blɒk]"
+  },
+  {
+    "name": "board",
+    "trans": ["ن. مجلس الإدارة؛ اللوح الخشبي؛ السطح؛ الوجبات"],
+    "usphone": "[bɔːrd]",
+    "ukphone": "[bɔːd]"
+  },
+  {
+    "name": "bomb",
+    "trans": ["ن. القنبلة"],
+    "usphone": "[bɑːm]",
+    "ukphone": "[bɒm]"
+  },
+  {
+    "name": "border",
+    "trans": ["ن. الحدود؛ الحدود؛ الحدود الوطنية"],
+    "usphone": "[ˈbɔːrdər]",
+    "ukphone": "[ˈbɔːdə(r)]"
+  },
+  {
+    "name": "bother",
+    "trans": ["ن. المتاعب؛ الإزعاج"],
+    "usphone": "[ˈbɑːðər]",
+    "ukphone": "[ˈbɒðə(r)]"
+  },
+  {
+    "name": "branch",
+    "trans": ["ن. الفرع، التفرع؛ القسم؛ الروافد"],
+    "usphone": "[bræntʃ]",
+    "ukphone": "[brɑːntʃ]"
+  },
+  {
+    "name": "brand",
+    "trans": ["ن. العلامة التجارية، الشعار؛ البصمة"],
+    "usphone": "[brænd]",
+    "ukphone": "[brænd]"
+  },
+  {
+    "name": "brave",
+    "trans": ["ن. المحارب"],
+    "usphone": "[breɪv]",
+    "ukphone": "[breɪv]"
+  },
+  {
+    "name": "breath",
+    "trans": ["ن. التنفس، النفس؛ نفس واحد، (تنفس) مرة واحدة؛ لحظة؛ مؤشر؛ صوت خافت"],
+    "usphone": "[breθ]",
+    "ukphone": "[breθ]"
+  },
+  {
+    "name": "breathe",
+    "trans": ["في. يتنفس؛ يهمس؛ يأخذ نفساً؛ (الهواء) يهب"],
+    "usphone": "[briːð]",
+    "ukphone": "[briːð]"
+  },
+  {
+    "name": "breathing",
+    "trans": ["ن. التنفس؛ اللحظة؛ النسيم"],
+    "usphone": "[ˈbriːðɪŋ]",
+    "ukphone": "[ˈbriːðɪŋ]"
+  },
+  {
+    "name": "bride",
+    "trans": ["ن. العروس؛ الفتاة، صديقة الفتاة"],
+    "usphone": "[braɪd]",
+    "ukphone": "[braɪd]"
+  },
+  {
+    "name": "bubble",
+    "trans": ["ن. الفقاعة، الرغوة، الشكل الفقاعي؛ غطاء دائري شفاف، سقف دائري"],
+    "usphone": "[ˈbʌb(ə)l]",
+    "ukphone": "[ˈbʌb(ə)l]"
+  },
+  {
+    "name": "bury",
+    "trans": ["في. يدفن؛ يخفي"],
+    "usphone": "[ˈberi]",
+    "ukphone": "[ˈberi]"
+  },
+  {
+    "name": "by",
+    "trans": ["ح. من خلال؛ بواسطة؛ وفقاً لـ؛ عبر؛ بالقرب من؛ قبل"],
+    "usphone": "[baɪ]",
+    "ukphone": "[baɪ]"
+  },
+  {
+    "name": "calm",
+    "trans": ["ن. هدوء الأمواج"],
+    "usphone": "[kɑːm]",
+    "ukphone": "[kɑːm]"
+  },
+  {
+    "name": "campaign",
+    "trans": ["ن. الرياضة؛ النشاط؛ الحملة"],
+    "usphone": "[kæmˈpeɪn]",
+    "ukphone": "[kæmˈpeɪn]"
+  },
+  {
+    "name": "campus",
+    "trans": ["ن. (حرم) الجامعة؛ الجامعة، الحياة الجامعية؛ العشب داخل الحرم الجامعي"],
+    "usphone": "[ˈkæmpəs]",
+    "ukphone": "[ˈkæmpəs]"
+  },
+  {
+    "name": "candidate",
+    "trans": ["ن. المرشح، المرشح الاحتياطي؛ المتقدم"],
+    "usphone": "[ˈkændɪdət; ˈkændɪdeɪt]",
+    "ukphone": "[ˈkændɪdət]"
+  },
+  {
+    "name": "cap",
+    "trans": ["ن. الغطاء؛ القبعة"],
+    "usphone": "[kæp]",
+    "ukphone": "[kæp]"
+  },
+  {
+    "name": "captain",
+    "trans": ["ن. القائد، الزعيم؛ القبطان؛ النقيب؛ العميد البحري"],
+    "usphone": "[ˈkæptɪn]",
+    "ukphone": "[ˈkæptɪn]"
+  },
+  {
+    "name": "careless",
+    "trans": ["ص. غير مبال؛ غير مهتم؛ متساهل"],
+    "usphone": "[ˈkerləs]",
+    "ukphone": "[ˈkeələs]"
+  },
+  {
+    "name": "category",
+    "trans": ["ن. النوع، التصنيف؛ [رياضيات] المجال"],
+    "usphone": "[ˈkætəɡɔːri]",
+    "ukphone": "[ˈkætəɡəri]"
+  },
+  {
+    "name": "ceiling",
+    "trans": ["ن. السقف؛ الحد الأعلى"],
+    "usphone": "[ˈsiːlɪŋ]",
+    "ukphone": "[ˈsiːlɪŋ]"
+  },
+  {
+    "name": "celebration",
+    "trans": ["ن. الاحتفال، الاحتفالات؛ الاحتفال؛ التمجيد"],
+    "usphone": "[ˌselɪˈbreɪʃn]",
+    "ukphone": "[ˌselɪˈbreɪʃn]"
+  },
+  {
+    "name": "central",
+    "trans": ["ن. الهاتف المركزي"],
+    "usphone": "[ˈsentrəl]",
+    "ukphone": "[ˈsentrəl]"
+  },
+  {
+    "name": "centre",
+    "trans": ["ن. المركز"],
+    "usphone": "[ˈsentər]",
+    "ukphone": "[ˈsentə(r)]"
+  },
+  {
+    "name": "ceremony",
+    "trans": ["ن. الاحتفال، الطقوس؛ اللياقة، الآداب؛ المجاملة"],
+    "usphone": "[ˈserəmoʊni]",
+    "ukphone": "[ˈserəməni]"
+  },
+  {
+    "name": "chain",
+    "trans": ["ن. الخط؛ القيود؛ القيد"],
+    "usphone": "[tʃeɪn]",
+    "ukphone": "[tʃeɪn]"
+  },
+  {
+    "name": "challenge",
+    "trans": ["ن. التحدي؛ الشك"],
+    "usphone": "[ˈtʃælɪndʒ]",
+    "ukphone": "[ˈtʃælɪndʒ]"
+  },
+  {
+    "name": "champion",
+    "trans": ["ن. بطل؛ مؤيد؛ محارب"],
+    "usphone": "[ˈtʃæmpiən]",
+    "ukphone": "[ˈtʃæmpiən]"
+  },
+  {
+    "name": "channel",
+    "trans": ["ن. قناة؛ ممر؛ مضيق"],
+    "usphone": "[ˈtʃænl]",
+    "ukphone": "[ˈtʃæn(ə)l]"
+  },
+  {
+    "name": "chapter",
+    "trans": ["ن. فصل، فقرة؛ فرع (في نادي أو جمعية)؛ فترة مهمة في حياة الشخص أو تاريخه"],
+    "usphone": "[ˈtʃæptər]",
+    "ukphone": "[ˈtʃæptə(r)]"
+  },
+  {
+    "name": "charge",
+    "trans": ["ن. تكلفة؛ شحنة؛ إدارة؛ اتهام؛ أمر؛ حمولة"],
+    "usphone": "[tʃɑːrdʒ]",
+    "ukphone": "[tʃɑːdʒ]"
+  },
+  {
+    "name": "cheap",
+    "trans": ["صف. رخيص؛ بخيل؛ قليل القيمة"],
+    "usphone": "[tʃiːp]",
+    "ukphone": "[tʃiːp]"
+  },
+  {
+    "name": "cheat",
+    "trans": ["ن. خداع؛ غش؛ محتال"],
+    "usphone": "[tʃiːt]",
+    "ukphone": "[tʃiːt]"
+  },
+  {
+    "name": "cheerful",
+    "trans": ["صف. سعيد؛ مرح؛ مسرور"],
+    "usphone": "[ˈtʃɪrfl]",
+    "ukphone": "[ˈtʃɪəf(ə)l]"
+  },
+  {
+    "name": "chemical",
+    "trans": ["ن. كيميائيات؛ أدوية كيميائية"],
+    "usphone": "[ˈkemɪkl]",
+    "ukphone": "[ˈkemɪkl]"
+  },
+  {
+    "name": "chest",
+    "trans": ["ن. صدر؛ صدرية؛ خزانة؛ صندوق؛ خزينة"],
+    "usphone": "[tʃest]",
+    "ukphone": "[tʃest]"
+  },
+  {
+    "name": "childhood",
+    "trans": ["ن. مرحلة الطفولة؛ مرحلة الصبا"],
+    "usphone": "[ˈtʃaɪldhʊd]",
+    "ukphone": "[ˈtʃaɪldhʊd]"
+  },
+  {
+    "name": "claim",
+    "trans": ["ن. طلب؛ ادعاء؛ مطالبة؛ تأكيد؛ يستحق"],
+    "usphone": "[kleɪm]",
+    "ukphone": "[kleɪm]"
+  },
+  {
+    "name": "clause",
+    "trans": ["ن. شرط؛ [حساب] جملة"],
+    "usphone": "[klɔːz]",
+    "ukphone": "[klɔːz]"
+  },
+  {
+    "name": "clear",
+    "trans": ["ن. إزالة؛ فراغ"],
+    "usphone": "[klɪr]",
+    "ukphone": "[klɪə(r)]"
+  },
+  {
+    "name": "click",
+    "trans": ["ن. نقرة؛ صوت طقطقة"],
+    "usphone": "[klɪk]",
+    "ukphone": "[klɪk]"
+  },
+  {
+    "name": "client",
+    "trans": ["ن. عميل؛ زبون؛ موكل"],
+    "usphone": "[ˈklaɪənt]",
+    "ukphone": "[ˈklaɪənt]"
+  },
+  {
+    "name": "climb",
+    "trans": ["ن. تسلق؛ تسلق"],
+    "usphone": "[klaɪm]",
+    "ukphone": "[klaɪm]"
+  },
+  {
+    "name": "close",
+    "trans": ["ن. نهاية"],
+    "usphone": "[kloʊz; kloʊs]",
+    "ukphone": "[kləʊz]"
+  },
+  {
+    "name": "cloth",
+    "trans": ["ن. قماش؛ نسيج؛ مفرش"],
+    "usphone": "[klɔːθ]",
+    "ukphone": "[klɒθ]"
+  },
+  {
+    "name": "clue",
+    "trans": ["ن. خيط؛ (قصة ما) حبكة"],
+    "usphone": "[kluː]",
+    "ukphone": "[kluː]"
+  },
+  {
+    "name": "coach",
+    "trans": ["ن. مدرب؛ عربة الركاب؛ حافلة لمسافات طويلة؛ عربة ذات أربع عجلات"],
+    "usphone": "[koʊtʃ]",
+    "ukphone": "[kəʊtʃ]"
+  },
+  {
+    "name": "coal",
+    "trans": ["ن. فحم؛ قطعة فحم؛ فحم الخشب"],
+    "usphone": "[koʊl]",
+    "ukphone": "[kəʊl]"
+  },
+  {
+    "name": "coin",
+    "trans": ["ن. عملة؛ نقود"],
+    "usphone": "[kɔɪn]",
+    "ukphone": "[kɔɪn]"
+  },
+  {
+    "name": "collection",
+    "trans": ["ن. جمع؛ مجموعة؛ مقتنيات؛ تبرع"],
+    "usphone": "[kəˈlekʃn]",
+    "ukphone": "[kəˈlekʃn]"
+  },
+  {
+    "name": "coloured",
+    "trans": ["ن. شخص من أصول مختلطة؛ شخص من ذوي البشرة الملونة"],
+    "usphone": "[ˈkʌlərd]",
+    "ukphone": "[ˈkʌləd]"
+  },
+  {
+    "name": "combine",
+    "trans": ["ن. آلة الحصاد المشتركة؛ شركة مشتركة"],
+    "usphone": "[kəmˈbaɪn]",
+    "ukphone": "[kəmˈbaɪn]"
+  },
+  {
+    "name": "comment",
+    "trans": ["ن. تعليق؛ رأي؛ انتقاد"],
+    "usphone": "[ˈkɑːment]",
+    "ukphone": "[ˈkɒment]"
+  },
+  {
+    "name": "commercial",
+    "trans": ["ن. إعلان تجاري"],
+    "usphone": "[kəˈmɜːrʃl]",
+    "ukphone": "[kəˈmɜːʃ(ə)l]"
+  },
+  {
+    "name": "commit",
+    "trans": ["فعل. يرتكب خطأ؛ يفعل شيئًا خاطئًا؛ يسلم إلى؛ يكلف بالقتال؛ يجعل يتحمل التزامًا"],
+    "usphone": "[kəˈmɪt]",
+    "ukphone": "[kəˈmɪt]"
+  },
+  {
+    "name": "communication",
+    "trans": ["ن. اتصال؛ اتصالات؛ تواصل؛ رسالة"],
+    "usphone": "[kəˌmjuːnɪˈkeɪʃn]",
+    "ukphone": "[kəˌmjuːnɪˈkeɪʃ(ə)n]"
+  },
+  {
+    "name": "comparison",
+    "trans": ["ن. مقارنة؛ مقابلة؛ تشبيه؛ علاقة مقارنة"],
+    "usphone": "[kəmˈpærɪsn]",
+    "ukphone": "[kəmˈpærɪs(ə)n]"
+  },
+  {
+    "name": "competitive",
+    "trans": ["صف. تنافسي؛ مسابقة؛ حريص على الفوز"],
+    "usphone": "[kəmˈpetətɪv]",
+    "ukphone": "[kəmˈpetətɪv]"
+  },
+  {
+    "name": "competitor",
+    "trans": ["ن. منافس؛ خصم"],
+    "usphone": "[kəmˈpetɪtər]",
+    "ukphone": "[kəmˈpetɪtə(r)]"
+  },
+  {
+    "name": "complaint",
+    "trans": ["ن. شكوى؛ تذمر؛ مرض؛ ظلم"],
+    "usphone": "[kəmˈpleɪnt]",
+    "ukphone": "[kəmˈpleɪnt]"
+  },
+  {
+    "name": "complex",
+    "trans": ["ن. مجمع؛ منشأة متكاملة"],
+    "usphone": "[kəmˈpleks; ˈkɑːmpleks]",
+    "ukphone": "[ˈkɒmpleks]"
+  },
+  {
+    "name": "concentrate",
+    "trans": ["ن. تركيز؛ خلاصة؛ تركيز السائل"],
+    "usphone": "[ˈkɑːns(ə)ntreɪt]",
+    "ukphone": "[ˈkɒns(ə)ntreɪt]"
+  },
+  {
+    "name": "conclude",
+    "trans": ["فعل. يستنتج؛ يقرر؛ يقرر"],
+    "usphone": "[kənˈkluːd]",
+    "ukphone": "[kənˈkluːd]"
+  },
+  {
+    "name": "conclusion",
+    "trans": ["ن. استنتاج؛ نتيجة؛ استنتاج"],
+    "usphone": "[kənˈkluːʒn]",
+    "ukphone": "[kənˈkluːʒn]"
+  },
+  {
+    "name": "confident",
+    "trans": ["صف. واثق من نفسه؛ متأكد"],
+    "usphone": "[ˈkɑːnfɪdənt]",
+    "ukphone": "[ˈkɒnfɪdənt]"
+  },
+  {
+    "name": "confirm",
+    "trans": ["فعل. يؤكد؛ يقرر؛ يثبت؛ يوافق؛ يعزز"],
+    "usphone": "[kənˈfɜːrm]",
+    "ukphone": "[kənˈfɜːm]"
+  },
+  {
+    "name": "confuse",
+    "trans": ["فعل. يربك؛ يخلط"],
+    "usphone": "[kənˈfjuːz]",
+    "ukphone": "[kənˈfjuːz]"
+  },
+  {
+    "name": "confused",
+    "trans": ["فعل. يربك (confuse الماضي)"],
+    "usphone": "[kənˈfjuːzd]",
+    "ukphone": "[kənˈfjuːzd]"
+  },
+  {
+    "name": "connection",
+    "trans": ["ن. وصلة؛ علاقة؛ شبكة؛ قطعة توصيل"],
+    "usphone": "[kəˈnekʃn]",
+    "ukphone": "[kəˈnekʃn]"
+  },
+  {
+    "name": "consequence",
+    "trans": ["ن. نتيجة؛ أهمية؛ استنتاج"],
+    "usphone": "[ˈkɑːnsɪkwens]",
+    "ukphone": "[ˈkɒnsɪkwəns]"
+  },
+  {
+    "name": "consist",
+    "trans": ["فعل. يتكون من؛ يكمن في؛ يتوافق مع"],
+    "usphone": "[kənˈsɪst]",
+    "ukphone": "[kənˈsɪst]"
+  },
+  {
+    "name": "consume",
+    "trans": ["فعل. يستهلك؛ ينفق؛ يفتتن؛ يبدد"],
+    "usphone": "[kənˈsuːm]",
+    "ukphone": "[kənˈsjuːm]"
+  },
+  {
+    "name": "consumer",
+    "trans": ["ن. مستهلك؛ مستخدم؛ زبون"],
+    "usphone": "[kənˈsuːmər]",
+    "ukphone": "[kənˈsjuːmə(r)]"
+  },
+  {
+    "name": "contact",
+    "trans": ["ن. اتصال؛ اتصال"],
+    "usphone": "[ˈkɑːntækt]",
+    "ukphone": "[ˈkɒntækt]"
+  },
+  {
+    "name": "container",
+    "trans": ["ن. حاوية؛ وعاء"],
+    "usphone": "[kənˈteɪnər]",
+    "ukphone": "[kənˈteɪnə(r)]"
+  },
+  {
+    "name": "content",
+    "trans": ["ن. محتوى؛ فهرس؛ إشباع؛ سعة"],
+    "usphone": "[ˈkɑːntent; kənˈtent]",
+    "ukphone": "[ˈkɒntent]"
+  },
+  {
+    "name": "continuous",
+    "trans": ["صف. متواصل؛ مستمر؛ مستمر؛ متواصل"],
+    "usphone": "[kənˈtɪnjuəs]",
+    "ukphone": "[kənˈtɪnjuəs]"
+  },
+  {
+    "name": "contrast",
+    "trans": ["ن. مقارنة؛ اختلاف؛ مقابلة"],
+    "usphone": "[ˈkɑːntræst]",
+    "ukphone": "[ˈkɒntrɑːst]"
+  },
+  {
+    "name": "convenient",
+    "trans": ["صف. ملائم؛ [لغة عامية] مناسب؛ قريب؛ عملي"],
+    "usphone": "[kənˈviːniənt]",
+    "ukphone": "[kənˈviːniənt]"
+  },
+  {
+    "name": "convince",
+    "trans": ["فعل. يقنع؛ يجعل يثق؛ يجعل يؤمن"],
+    "usphone": "[kənˈvɪns]",
+    "ukphone": "[kənˈvɪns]"
+  },
+  {
+    "name": "cool",
+    "trans": ["ن. برودة؛ هواء بارد"],
+    "usphone": "[kuːl]",
+    "ukphone": "[kuːl]"
+  },
+  {
+    "name": "costume",
+    "trans": ["ن. ملابس؛ زي؛ ملابس مسرحية؛ ملابس مسرحية"],
+    "usphone": "[ˈkɑːstuːm]",
+    "ukphone": "[ˈkɒstjuːm]"
+  },
+  {
+    "name": "cottage",
+    "trans": ["ن. كوخ؛ منزل ريفي؛ فيلا صغيرة على الطراز الريفي"],
+    "usphone": "[ˈkɑːtɪdʒ]",
+    "ukphone": "[ˈkɒtɪdʒ]"
+  },
+  {
+    "name": "cotton",
+    "trans": ["ن. قطن؛ قماش قطني؛ خيوط قطنية"],
+    "usphone": "[ˈkɑːtn]",
+    "ukphone": "[ˈkɒtn]"
+  },
+  {
+    "name": "count",
+    "trans": ["ن. عد؛ حساب؛ إيرل"],
+    "usphone": "[kaʊnt]",
+    "ukphone": "[kaʊnt]"
+  },
+  {
+    "name": "countryside",
+    "trans": ["ن. ريف؛ سكان الريف"],
+    "usphone": "[ˈkʌntrisaɪd]",
+    "ukphone": "[ˈkʌntrisaɪd]"
+  },
+  {
+    "name": "court",
+    "trans": ["ن. محكمة؛ ملعب؛ بلاط؛ مجاملة"],
+    "usphone": "[kɔːrt]",
+    "ukphone": "[kɔːt]"
+  },
+  {
+    "name": "cover",
+    "trans": ["ن. غطاء؛ غطاء؛ غطاء؛ ستارة"],
+    "usphone": "[ˈkʌvər]",
+    "ukphone": "[ˈkʌvə(r)]"
+  },
+  {
+    "name": "covered",
+    "trans": ["فعل. يغطي؛ يشمل؛ يحمي (cover الماضي)"],
+    "usphone": "[ˈkʌvərd]",
+    "ukphone": "[ˈkʌvəd]"
+  },
+  {
+    "name": "cream",
+    "trans": ["ن. كريم؛ دهن؛ خلاصة؛ كريم الوجه؛ الجبن"],
+    "usphone": "[kriːm]",
+    "ukphone": "[kriːm]"
+  },
+  {
+    "name": "criminal",
+    "trans": ["ن. مجرم"],
+    "usphone": "[ˈkrɪmɪnl]",
+    "ukphone": "[ˈkrɪmɪn(ə)l]"
+  },
+  {
+    "name": "cruel",
+    "trans": ["صف. قاس؛ وحشي؛ مؤلم؛ قاسي"],
+    "usphone": "[ˈkruːəl]",
+    "ukphone": "[ˈkruːəl]"
+  },
+  {
+    "name": "cultural",
+    "trans": ["صف. ثقافي؛ متعلم"],
+    "usphone": "[ˈkʌltʃərəl]",
+    "ukphone": "[ˈkʌltʃərəl]"
+  },
+  {
+    "name": "currency",
+    "trans": ["ن. عملة؛ نقود"],
+    "usphone": "[ˈkɜːrənsi]",
+    "ukphone": "[ˈkʌrənsi]"
+  },
+  {
+    "name": "current",
+    "trans": ["ن. تيار؛ اتجاه؛ تدفق"],
+    "usphone": "[ˈkɜːrənt]",
+    "ukphone": "[ˈkʌrənt]"
+  },
+  {
+    "name": "currently",
+    "trans": ["ظرف. حاليًا؛ بشكل عام"],
+    "usphone": "[ˈkɜːrəntli]",
+    "ukphone": "[ˈkʌrəntli]"
+  },
+  {
+    "name": "curtain",
+    "trans": ["ن. ستارة"],
+    "usphone": "[ˈkɜːrtn]",
+    "ukphone": "[ˈkɜːt(ə)n]"
+  },
+  {
+    "name": "custom",
+    "trans": ["ن. عادة؛ تقليد؛ عرف؛ جمارك؛ زبائن دائمون؛ [مجموع] الزبائن"],
+    "usphone": "[ˈkʌstəm]",
+    "ukphone": "[ˈkʌstəm]"
+  },
+  {
+    "name": "cut",
+    "trans": ["ن. جرح؛ شق؛ تخفيض؛ (أسلوب اللعب) قطع الكرة؛ قطع"],
+    "usphone": "[kʌt]",
+    "ukphone": "[kʌt]"
+  },
+  {
+    "name": "daily",
+    "trans": ["ن. صحيفة يومية؛ خادمة المنزل التي تأتي صباحًا ومساءً"],
+    "usphone": "[ˈdeɪli]",
+    "ukphone": "[ˈdeɪli]"
+  },
+  {
+    "name": "damage",
+    "trans": ["فعل. يضر؛ يلحق ضررًا"],
+    "usphone": "[ˈdæmɪdʒ]",
+    "ukphone": "[ˈdæmɪdʒ]"
+  },
+  {
+    "name": "deal",
+    "trans": ["ن. صفقة؛ سياسة؛ معاملة؛ كمية"],
+    "usphone": "[diːl]",
+    "ukphone": "[diːl]"
+  },
+  {
+    "name": "decade",
+    "trans": ["ن. عشر سنوات؛ فترة عشر سنوات؛ عشرة"],
+    "usphone": "[ˈdekeɪdˌdɪˈkeɪd]",
+    "ukphone": "[ˈdekeɪd]"
+  },
+  {
+    "name": "decorate",
+    "trans": ["فعل. يزين؛ يجهز؛ يمنح وسامًا"],
+    "usphone": "[ˈdekəreɪt]",
+    "ukphone": "[ˈdekəreɪt]"
+  },
+  {
+    "name": "deep",
+    "trans": ["ن. عمق؛ هوة"],
+    "usphone": "[diːp]",
+    "ukphone": "[diːp]"
+  },
+  {
+    "name": "define",
+    "trans": ["فعل. يحدد؛ يوضح؛ ينص عليه"],
+    "usphone": "[dɪˈfaɪn]",
+    "ukphone": "[dɪˈfaɪn]"
+  },
+  {
+    "name": "definite",
+    "trans": ["صف. محدد؛ واضح"],
+    "usphone": "[ˈdefɪnət]",
+    "ukphone": "[ˈdefɪnət]"
+  },
+  {
+    "name": "definition",
+    "trans": ["ن. تعريف؛ [فيزياء] دقة؛ تفسير"],
+    "usphone": "[ˌdefɪˈnɪʃn]",
+    "ukphone": "[ˌdefɪˈnɪʃn]"
+  },
+  {
+    "name": "deliver",
+    "trans": ["ن. كرة"],
+    "usphone": "[dɪˈlɪvər]",
+    "ukphone": "[dɪˈlɪvə(r)]"
+  },
+  {
+    "name": "departure",
+    "trans": ["ن. مغادرة؛ انطلاق؛ مخالفة"],
+    "usphone": "[dɪˈpɑːrtʃər]",
+    "ukphone": "[dɪˈpɑːtʃə(r)]"
+  },
+  {
+    "name": "despite",
+    "trans": ["حرف. رغم ذلك، بغض النظر عن"],
+    "usphone": "[dɪˈspaɪt]",
+    "ukphone": "[dɪˈspaɪt]"
+  },
+  {
+    "name": "destination",
+    "trans": ["ن. وجهة؛ نقطة النهاية"],
+    "usphone": "[ˌdestɪˈneɪʃn]",
+    "ukphone": "[ˌdestɪˈneɪʃn]"
+  },
+  {
+    "name": "determine",
+    "trans": ["(جعل) يتخذ قرارًا، (جعل) يقرر"],
+    "usphone": "[dɪˈtɜːrmɪn]",
+    "ukphone": "[dɪˈtɜːmɪn]"
+  },
+  {
+    "name": "determined",
+    "trans": ["فعل. يتخذ قرارًا؛ يقرر (determine الماضي)"],
+    "usphone": "[dɪˈtɜːrmɪnd]",
+    "ukphone": "[dɪˈtɜːmɪnd]"
+  },
+  {
+    "name": "development",
+    "trans": ["ن. تطور؛ تطوير؛ نمو؛ منطقة سكنية (خاص بشركة واحدة)؛ [تصوير] تحميض"],
+    "usphone": "[dɪˈveləpmənt]",
+    "ukphone": "[dɪˈveləpmənt]"
+  },
+  {
+    "name": "diagram",
+    "trans": ["ن. مخطط؛ رسم بياني"],
+    "usphone": "[ˈdaɪəɡræm]",
+    "ukphone": "[ˈdaɪəɡræm]"
+  },
+  {
+    "name": "diamond",
+    "trans": ["ن. ماس؛ ألماس؛ ماسة؛ ورقة البستوني"],
+    "usphone": "[ˈdaɪmənd]",
+    "ukphone": "[ˈdaɪmənd]"
+  },
+  {
+    "name": "difficulty",
+    "trans": ["ن. صعوبة؛ مأزق"],
+    "usphone": "[ˈdɪfɪkəlti]",
+    "ukphone": "[ˈdɪfɪkəlti]"
+  },
+  {
+    "name": "direct",
+    "trans": ["صف. مباشر؛ مباشر؛ مباشر؛ شخصي"],
+    "usphone": "[dəˈrekt; daɪˈrekt]",
+    "ukphone": "[dəˈrekt]"
+  },
+  {
+    "name": "directly",
+    "trans": ["حرف. بمجرد أن"],
+    "usphone": "[dəˈrektli; daɪˈrektli]",
+    "ukphone": "[dəˈrektli]"
+  },
+  {
+    "name": "dirt",
+    "trans": ["ن. قذارة؛ طين؛ غبار؛ كلمات بذيئة"],
+    "usphone": "[dɜːrt]",
+    "ukphone": "[dɜːt]"
+  },
+  {
+    "name": "disadvantage",
+    "trans": ["ن. عيب؛ ظرف غير موات؛ خسارة"],
+    "usphone": "[ˌdɪsədˈvæntɪdʒ]",
+    "ukphone": "[ˌdɪsədˈvɑːntɪdʒ]"
+  },
+  {
+    "name": "disappointed",
+    "trans": ["صف. محبط؛ محبط"],
+    "usphone": "[ˌdɪsəˈpɔɪntɪd]",
+    "ukphone": "[ˌdɪsəˈpɔɪntɪd]"
+  },
+  {
+    "name": "disappointing",
+    "trans": ["صف. مخيب للآمال؛ مزعج"],
+    "usphone": "[ˌdɪsəˈpɔɪntɪŋ]",
+    "ukphone": "[ˌdɪsəˈpɔɪntɪŋ]"
+  },
+  {
+    "name": "discount",
+    "trans": ["ن. خصم؛ خصم"],
+    "usphone": "[ˈdɪskaʊnt]",
+    "ukphone": "[ˈdɪskaʊnt]"
+  },
+  {
+    "name": "dislike",
+    "trans": ["ن. كراهية، انزعاج، عدم حب"],
+    "usphone": "[dɪsˈlaɪk]",
+    "ukphone": "[dɪsˈlaɪk]"
+  },
+  {
+    "name": "divide",
+    "trans": ["ن. [جغرافيا] خط الفصل المائي، خط التحديد بين مياه الأنهار"],
+    "usphone": "[dɪˈvaɪd]",
+    "ukphone": "[dɪˈvaɪd]"
+  },
+  {
+    "name": "documentary",
+    "trans": ["ن. فيلم وثائقي"],
+    "usphone": "[ˌdɑːkjuˈmentri]",
+    "ukphone": "[ˌdɒkjuˈment(ə)ri]"
+  },
+  {
+    "name": "donate",
+    "trans": ["ن. تبرع؛ هبة"],
+    "usphone": "[ˈdoʊneɪt]",
+    "ukphone": "[dəʊˈneɪt]"
+  },
+  {
+    "name": "double",
+    "trans": ["ن. ضعف الضعف؛ نوع مضاعف"],
+    "usphone": "[ˈdʌbl]",
+    "ukphone": "[ˈdʌb(ə)l]"
+  },
+  {
+    "name": "doubt",
+    "trans": ["ن. شك؛ استفسار؛ شكوك"],
+    "usphone": "[daʊt]",
+    "ukphone": "[daʊt]"
+  },
+  {
+    "name": "dressed",
+    "trans": ["ف. زخرفة؛ إلباس؛ ترتيب (صيغة الماضي من كلمة dress)"],
+    "usphone": "[drest]",
+    "ukphone": "[drest]"
+  },
+  {
+    "name": "drop",
+    "trans": ["ن. قطرة؛ سقوط؛ إنزال جوي؛ كمية صغيرة؛ قطرة دواء"],
+    "usphone": "[drɑːp]",
+    "ukphone": "[drɒp]"
+  },
+  {
+    "name": "drum",
+    "trans": ["ن. طبل؛ صوت الطبل"],
+    "usphone": "[drʌm]",
+    "ukphone": "[drʌm]"
+  },
+  {
+    "name": "drunk",
+    "trans": ["ف. شرب الخمر (صيغة الماضي من كلمة drink)"],
+    "usphone": "[drʌŋk]",
+    "ukphone": "[drʌŋk]"
+  },
+  {
+    "name": "due",
+    "trans": ["ن. مستحقات الدفع؛ ما يستحق الحصول عليه"],
+    "usphone": "[duː]",
+    "ukphone": "[djuː]"
+  },
+  {
+    "name": "dust",
+    "trans": ["ن. غبار؛ أتربة؛ تراب"],
+    "usphone": "[dʌst]",
+    "ukphone": "[dʌst]"
+  },
+  {
+    "name": "duty",
+    "trans": ["ن. مسؤولية؛ [ضريبة] الرسوم الجمركية؛ وظيفة"],
+    "usphone": "[ˈduːti]",
+    "ukphone": "[ˈdjuːti]"
+  },
+  {
+    "name": "earthquake",
+    "trans": ["ن. زلزال؛ اضطراب كبير"],
+    "usphone": "[ˈɜːrθkweɪk]",
+    "ukphone": "[ˈɜːθkweɪk]"
+  },
+  {
+    "name": "eastern",
+    "trans": ["ن. شخص من الشرق؛ شخص من المنطقة الشرقية (في الولايات المتحدة)"],
+    "usphone": "[ˈiːstərn]",
+    "ukphone": "[ˈiːstən]"
+  },
+  {
+    "name": "economic",
+    "trans": ["صف. اقتصادي، اقتصادية؛ علم الاقتصاد"],
+    "usphone": "[ˌiːkəˈnɑːmɪk; ˌekəˈnɑːmɪk]",
+    "ukphone": "[ˌiːkəˈnɒmɪk]"
+  },
+  {
+    "name": "economy",
+    "trans": ["ن. اقتصاد؛ توفير؛ إدارة المال"],
+    "usphone": "[ɪˈkɑːnəmi]",
+    "ukphone": "[ɪˈkɒnəmi]"
+  },
+  {
+    "name": "edge",
+    "trans": ["ن. حافة؛ ميزة؛ حافة السكين؛ حدادة"],
+    "usphone": "[edʒ]",
+    "ukphone": "[edʒ]"
+  },
+  {
+    "name": "editor",
+    "trans": ["ن. محرر، محررة؛ كاتب عمود؛ جهاز التحرير"],
+    "usphone": "[ˈedɪtər]",
+    "ukphone": "[ˈedɪtə(r)]"
+  },
+  {
+    "name": "educate",
+    "trans": ["ف. تعليم؛ تربية؛ تدريب"],
+    "usphone": "[ˈedʒukeɪt]",
+    "ukphone": "[ˈedʒukeɪt]"
+  },
+  {
+    "name": "educated",
+    "trans": ["ف. تدريب؛ تعليم؛ تربية (صيغة الماضي من كلمة educate)"],
+    "usphone": "[ˈedʒukeɪtɪd]",
+    "ukphone": "[ˈedʒukeɪtɪd]"
+  },
+  {
+    "name": "educational",
+    "trans": ["صف. تعليمي؛ ذو معنى تعليمي"],
+    "usphone": "[ˌedʒuˈkeɪʃənl]",
+    "ukphone": "[ˌedʒuˈkeɪʃən(ə)l]"
+  },
+  {
+    "name": "effective",
+    "trans": ["صف. فعال، يعمل؛ حقيقي، حقيقي؛ مؤثر"],
+    "usphone": "[ɪˈfektɪv]",
+    "ukphone": "[ɪˈfektɪv]"
+  },
+  {
+    "name": "effectively",
+    "trans": ["ف. بشكل فعال، بفاعلية؛ بقوة؛ عملياً"],
+    "usphone": "[ɪˈfektɪvli]",
+    "ukphone": "[ɪˈfektɪvli]"
+  },
+  {
+    "name": "effort",
+    "trans": ["ن. جهد؛ إنجاز"],
+    "usphone": "[ˈefərt]",
+    "ukphone": "[ˈefət]"
+  },
+  {
+    "name": "election",
+    "trans": ["ن. انتخاب؛ انتخاب؛ حق الاختيار؛ اختيار الله"],
+    "usphone": "[ɪˈlekʃn]",
+    "ukphone": "[ɪˈlekʃ(ə)n]"
+  },
+  {
+    "name": "element",
+    "trans": ["ن. عنصر؛ مكون؛ مبدأ؛ مكون؛ البيئة الطبيعية"],
+    "usphone": "[ˈelɪmənt]",
+    "ukphone": "[ˈelɪmənt]"
+  },
+  {
+    "name": "embarrassed",
+    "trans": ["ف. يُحرج؛ يجعل غير مرتاح (صيغة الماضي من كلمة embarrass)"],
+    "usphone": "[ɪmˈbærəst]",
+    "ukphone": "[ɪmˈbærəst]"
+  },
+  {
+    "name": "embarrassing",
+    "trans": ["صف. محرج؛ يسبب الإحراج"],
+    "usphone": "[ɪmˈbærəsɪŋ]",
+    "ukphone": "[ɪmˈbærəsɪŋ]"
+  },
+  {
+    "name": "emergency",
+    "trans": ["ن. حالة طوارئ؛ حدث مفاجئ؛ لحظة حرجة"],
+    "usphone": "[ɪˈmɜːrdʒənsi]",
+    "ukphone": "[ɪˈmɜːdʒənsi]"
+  },
+  {
+    "name": "emotion",
+    "trans": ["ن. عاطفة؛ مزاج"],
+    "usphone": "[ɪˈmoʊʃn]",
+    "ukphone": "[ɪˈməʊʃn]"
+  },
+  {
+    "name": "employment",
+    "trans": ["ن. استخدام؛ مهنة؛ توظيف"],
+    "usphone": "[ɪmˈplɔɪmənt]",
+    "ukphone": "[ɪmˈplɔɪmənt]"
+  },
+  {
+    "name": "empty",
+    "trans": ["ن. سيارة فارغة؛ شيء فارغ"],
+    "usphone": "[ˈempti]",
+    "ukphone": "[ˈempti]"
+  },
+  {
+    "name": "encourage",
+    "trans": ["ف. تشجيع، تحريض؛ تحفيز؛ دعم (صيغة الماضي من كلمة encourage)"],
+    "usphone": "[ɪnˈkɜːrɪdʒ]",
+    "ukphone": "[ɪnˈkʌrɪdʒ]"
+  },
+  {
+    "name": "enemy",
+    "trans": ["ن. عدو، خصم؛ قوات العدو"],
+    "usphone": "[ˈenəmi]",
+    "ukphone": "[ˈenəmi]"
+  },
+  {
+    "name": "engaged",
+    "trans": ["ف. يضمن؛ يتعهد؛ يعقد عقداً مع (صيغة الماضي من كلمة engage)"],
+    "usphone": "[ɪnˈɡeɪdʒd]",
+    "ukphone": "[ɪnˈɡeɪdʒd]"
+  },
+  {
+    "name": "engineering",
+    "trans": ["ن. الهندسة، علم الهندسة"],
+    "usphone": "[ˌendʒɪˈnɪrɪŋ]",
+    "ukphone": "[ˌendʒɪˈnɪərɪŋ]"
+  },
+  {
+    "name": "entertain",
+    "trans": ["ف. ترفيه؛ استقبال؛ احتواء؛ استيعاب"],
+    "usphone": "[ˌentərˈteɪn]",
+    "ukphone": "[ˌentəˈteɪn]"
+  },
+  {
+    "name": "entertainment",
+    "trans": ["ن. ترفيه؛ تسلية؛ ضيافة"],
+    "usphone": "[ˌentərˈteɪnmənt]",
+    "ukphone": "[ˌentəˈteɪnmənt]"
+  },
+  {
+    "name": "entrance",
+    "trans": ["ن. مدخل؛ دخول"],
+    "usphone": "[ˈentrəns; ɪnˈtræns]",
+    "ukphone": "[ˈentrəns]"
+  },
+  {
+    "name": "entry",
+    "trans": ["ن. دخول؛ مدخل؛ مادة؛ تسجيل؛ إجراءات الجمارك؛ احتلال الأرض"],
+    "usphone": "[ˈentri]",
+    "ukphone": "[ˈentri]"
+  },
+  {
+    "name": "environmental",
+    "trans": ["صف. بيئي، محيطي؛ يتعلق بالبيئة"],
+    "usphone": "[ɪnˌvaɪrənˈmentl]",
+    "ukphone": "[ɪnˌvaɪrənˈment(ə)l]"
+  },
+  {
+    "name": "episode",
+    "trans": ["ن. حلقة؛ جزء من الحبكة؛ مداخلة؛ حدث مثير للاهتمام"],
+    "usphone": "[ˈepɪsoʊd]",
+    "ukphone": "[ˈepɪsəʊd]"
+  },
+  {
+    "name": "equal",
+    "trans": ["ن. منافس؛ نظير؛ ند؛ شيء مساوٍ"],
+    "usphone": "[ˈiːkwəl]",
+    "ukphone": "[ˈiːkwəl]"
+  },
+  {
+    "name": "equally",
+    "trans": ["ف. بنفس الطريقة؛ بنفس القدر؛ بشكل متساوٍ؛ عادل"],
+    "usphone": "[ˈiːkwəli]",
+    "ukphone": "[ˈiːkwəli]"
+  },
+  {
+    "name": "escape",
+    "trans": ["ن. هروب؛ فرار؛ هروب؛ وسيلة أو طريقة للهروب؛ نوع من النبات البري؛ تسرب"],
+    "usphone": "[ɪˈskeɪp]",
+    "ukphone": "[ɪˈskeɪp]"
+  },
+  {
+    "name": "essential",
+    "trans": ["ن. جوهر؛ عنصر؛ نقطة؛ ضرورة"],
+    "usphone": "[ɪˈsenʃl]",
+    "ukphone": "[ɪˈsenʃl]"
+  },
+  {
+    "name": "eventually",
+    "trans": ["ف. أخيراً، في النهاية"],
+    "usphone": "[ɪˈventʃuəli]",
+    "ukphone": "[ɪˈventʃuəli]"
+  },
+  {
+    "name": "examine",
+    "trans": ["ف. فحص؛ تحقيق؛ اختبار؛ امتحان"],
+    "usphone": "[ɪɡˈzæmɪn]",
+    "ukphone": "[ɪɡˈzæmɪn]"
+  },
+  {
+    "name": "except",
+    "trans": ["حروف مشتركة. باستثناء؛ إذا لم يكن"],
+    "usphone": "[ɪkˈsept]",
+    "ukphone": "[ɪkˈsept]"
+  },
+  {
+    "name": "exchange",
+    "trans": ["ن. تبادل؛ تبادل؛ بورصة؛ تحويل"],
+    "usphone": "[ɪksˈtʃeɪndʒ]",
+    "ukphone": "[ɪksˈtʃeɪndʒ]"
+  },
+  {
+    "name": "excitement",
+    "trans": ["ن. إثارة؛ تحفيز؛ شيء مثير"],
+    "usphone": "[ɪkˈsaɪtmənt]",
+    "ukphone": "[ɪkˈsaɪtmənt]"
+  },
+  {
+    "name": "exhibition",
+    "trans": ["ن. معرض، عرض؛ معرض؛ معروضات"],
+    "usphone": "[ˌeksɪˈbɪʃn]",
+    "ukphone": "[ˌeksɪˈbɪʃ(ə)n]"
+  },
+  {
+    "name": "expand",
+    "trans": ["ف. توسيع؛ يجعل منتفخاً؛ يشرح بالتفصيل"],
+    "usphone": "[ɪkˈspænd]",
+    "ukphone": "[ɪkˈspænd]"
+  },
+  {
+    "name": "expected",
+    "trans": ["ف. يتوقع؛ يتطلع (صيغة الماضي من كلمة expect)"],
+    "usphone": "[ɪkˈspektɪd]",
+    "ukphone": "[ɪkˈspektɪd]"
+  },
+  {
+    "name": "expedition",
+    "trans": ["ن. رحلة استكشافية؛ فريق استكشافي؛ سرعة"],
+    "usphone": "[ˌekspəˈdɪʃn]",
+    "ukphone": "[ˌekspəˈdɪʃ(ə)n]"
+  },
+  {
+    "name": "experience",
+    "trans": ["ن. خبرة؛ تجربة؛ تجربة"],
+    "usphone": "[ɪkˈspɪriəns]",
+    "ukphone": "[ɪkˈspɪəriəns]"
+  },
+  {
+    "name": "experienced",
+    "trans": ["صف. ماهر، متمكن؛ ذو خبرة"],
+    "usphone": "[ɪkˈspɪriənst]",
+    "ukphone": "[ɪkˈspɪəriənst]"
+  },
+  {
+    "name": "experiment",
+    "trans": ["ن. تجربة؛ اختبار"],
+    "usphone": "[ɪkˈsperɪmənt]",
+    "ukphone": "[ɪkˈsperɪmənt]"
+  },
+  {
+    "name": "explode",
+    "trans": ["ف. ينفجر، يتفجر؛ يزداد بشكل كبير"],
+    "usphone": "[ɪkˈsploʊd]",
+    "ukphone": "[ɪkˈspləʊd]"
+  },
+  {
+    "name": "explore",
+    "trans": ["ف. استكشاف؛ استقصاء؛ رحلة استكشافية"],
+    "usphone": "[ɪkˈsplɔːr]",
+    "ukphone": "[ɪkˈsplɔː(r)]"
+  },
+  {
+    "name": "explosion",
+    "trans": ["ن. انفجار؛ انفجار؛ زيادة كبيرة"],
+    "usphone": "[ɪkˈsploʊʒn]",
+    "ukphone": "[ɪkˈspləʊʒ(ə)n]"
+  },
+  {
+    "name": "export",
+    "trans": ["ن. تصدير؛ سلع مصدّرة"],
+    "usphone": "[ɪkˈspɔːrt; ˈekspɔːrt]",
+    "ukphone": "[ɪkˈspɔːt; ˈekspɔːt]"
+  },
+  {
+    "name": "extra",
+    "trans": ["ن. ممثل مؤقت؛ خبر إضافي؛ أشياء إضافية؛ منتجات عالية الجودة"],
+    "usphone": "[ˈekstrə]",
+    "ukphone": "[ˈekstrə]"
+  },
+  {
+    "name": "face",
+    "trans": ["ن. وجه؛ سطح؛ وجه؛ مظهر؛ ظاهر؛ هيبة"],
+    "usphone": "[feɪs]",
+    "ukphone": "[feɪs]"
+  },
+  {
+    "name": "fairly",
+    "trans": ["ف. إلى حد ما؛ بشكل عادل؛ تقريباً"],
+    "usphone": "[ˈferli]",
+    "ukphone": "[ˈfeəli]"
+  },
+  {
+    "name": "familiar",
+    "trans": ["ن. زبون دائم؛ صديق مقرب"],
+    "usphone": "[fəˈmɪliər]",
+    "ukphone": "[fəˈmɪliə(r)]"
+  },
+  {
+    "name": "fancy",
+    "trans": ["ن. خيال؛ خيال؛ هواية"],
+    "usphone": "[ˈfænsi]",
+    "ukphone": "[ˈfænsi]"
+  },
+  {
+    "name": "far",
+    "trans": ["ن. بعيد"],
+    "usphone": "[fɑːr]",
+    "ukphone": "[fɑː(r)]"
+  },
+  {
+    "name": "fascinating",
+    "trans": ["صف. ساحر؛ جذاب؛ يأسر القلب"],
+    "usphone": "[ˈfæsɪneɪtɪŋ]",
+    "ukphone": "[ˈfæsɪneɪtɪŋ]"
+  },
+  {
+    "name": "fashionable",
+    "trans": ["صف. شائع؛ عصري؛ من الطبقة العليا"],
+    "usphone": "[ˈfæʃnəbl]",
+    "ukphone": "[ˈfæʃnəbl]"
+  },
+  {
+    "name": "fasten",
+    "trans": ["ف. يجعل ثابتاً؛ يركز على؛ يثبت؛ يفرض (صيغة الماضي من كلمة fix)"],
+    "usphone": "[ˈfæsn]",
+    "ukphone": "[ˈfɑːs(ə)n]"
+  },
+  {
+    "name": "favour",
+    "trans": ["ن. تفضيل؛ موافقة؛ عمل صالح"],
+    "usphone": "[ˈfeɪvər]",
+    "ukphone": "[ˈfeɪvə(r)]"
+  },
+  {
+    "name": "fear",
+    "trans": ["ن. خوف؛ رعب؛ احترام؛ قلق"],
+    "usphone": "[fɪr]",
+    "ukphone": "[fɪə(r)]"
+  },
+  {
+    "name": "feature",
+    "trans": ["ن. سمة؛ ملامح؛ صورة؛ برنامج أو موضوع خاص"],
+    "usphone": "[ˈfiːtʃər]",
+    "ukphone": "[ˈfiːtʃə(r)]"
+  },
+  {
+    "name": "fence",
+    "trans": ["ن. سياج؛ سور؛ فنون الدفاع عن النفس"],
+    "usphone": "[fens]",
+    "ukphone": "[fens]"
+  },
+  {
+    "name": "fighting",
+    "trans": ["ن. قتال؛ معركة"],
+    "usphone": "[ˈfaɪtɪŋ]",
+    "ukphone": "[ˈfaɪtɪŋ]"
+  },
+  {
+    "name": "file",
+    "trans": ["ن. ملف؛ ملف؛ ملف؛ صقل"],
+    "usphone": "[faɪl]",
+    "ukphone": "[faɪl]"
+  },
+  {
+    "name": "financial",
+    "trans": ["صف. مالي؛ متعلق بالمال؛ متعلق بالتمويل"],
+    "usphone": "[faɪˈnænʃl; fəˈnænʃl]",
+    "ukphone": "[faɪˈnænʃ(ə)l]"
+  },
+  {
+    "name": "fire",
+    "trans": ["ن. نار؛ حريق؛ نيران المدفعية؛ موقد؛ شغف؛ حماس؛ محنة"],
+    "usphone": "[ˈfaɪər]",
+    "ukphone": "[ˈfaɪə(r)]"
+  },
+  {
+    "name": "fitness",
+    "trans": ["ن. صحة؛ ملاءمة؛ مناسبة"],
+    "usphone": "[ˈfɪtnəs]",
+    "ukphone": "[ˈfɪtnəs]"
+  },
+  {
+    "name": "fixed",
+    "trans": ["صف. مؤكد؛ عنيد؛ <بالعامية الأمريكية> في وضع...؛ مستعد"],
+    "usphone": "[fɪkst]",
+    "ukphone": "[fɪkst]"
+  },
+  {
+    "name": "flag",
+    "trans": ["ن. علامة؛ علم"],
+    "usphone": "[flæɡ]",
+    "ukphone": "[flæɡ]"
+  },
+  {
+    "name": "flood",
+    "trans": ["ن. فيضان؛ طوفان؛ مجموعة كبيرة"],
+    "usphone": "[flʌd]",
+    "ukphone": "[flʌd]"
+  },
+  {
+    "name": "flour",
+    "trans": ["ن. دقيق؛ مادة مسحوقة"],
+    "usphone": "[ˈflaʊər]",
+    "ukphone": "[ˈflaʊə(r)]"
+  },
+  {
+    "name": "flow",
+    "trans": ["ن. تدفق؛ معدل التدفق؛ مد وجزر، فيضان"],
+    "usphone": "[floʊ]",
+    "ukphone": "[fləʊ]"
+  },
+  {
+    "name": "fold",
+    "trans": ["ن. طي؛ مؤمن؛ حظيرة للأغنام"],
+    "usphone": "[foʊld]",
+    "ukphone": "[fəʊld]"
+  },
+  {
+    "name": "folk",
+    "trans": ["ن. قبيلة؛ الناس؛ أقارب (جمع)"],
+    "usphone": "[foʊk]",
+    "ukphone": "[fəʊk]"
+  },
+  {
+    "name": "following",
+    "trans": ["ن. مجموعة من الأتباع"],
+    "usphone": "[ˈfɑːloʊɪŋ]",
+    "ukphone": "[ˈfɒləʊɪŋ]"
+  },
+  {
+    "name": "force",
+    "trans": ["ن. قوة؛ قوة عسكرية؛ جيش؛ قوة الشخصية"],
+    "usphone": "[fɔːrs]",
+    "ukphone": "[fɔːs]"
+  },
+  {
+    "name": "forever",
+    "trans": ["ف. دائماً؛ باستمرار؛ غالباً"],
+    "usphone": "[fərˈevər]",
+    "ukphone": "[fərˈevə(r)]"
+  },
+  {
+    "name": "frame",
+    "trans": ["ن. إطار؛ بنية؛ [فيلم] صورة"],
+    "usphone": "[freɪm]",
+    "ukphone": "[freɪm]"
+  },
+  {
+    "name": "freeze",
+    "trans": ["ن. تجميد؛ تجمد"],
+    "usphone": "[friːz]",
+    "ukphone": "[friːz]"
+  },
+  {
+    "name": "frequently",
+    "trans": ["ف. متكرراً، كثيراً؛ مراراً وتكراراً"],
+    "usphone": "[ˈfriːkwəntli]",
+    "ukphone": "[ˈfriːkwəntli]"
+  },
+  {
+    "name": "friendship",
+    "trans": ["ن. صداقة؛ ود؛ ودية"],
+    "usphone": "[ˈfrendʃɪp]",
+    "ukphone": "[ˈfrendʃɪp]"
+  },
+  {
+    "name": "frighten",
+    "trans": ["صف. مخيف؛ يسبب الذعر"],
+    "usphone": "[ˈfraɪtn]",
+    "ukphone": "[ˈfraɪtn]"
+  },
+  {
+    "name": "frightened",
+    "trans": ["مخيف؛ مفزع؛ يخيف (صيغة الماضي من frighten)"],
+    "usphone": "[ˈfraɪtnd]",
+    "ukphone": "[ˈfraɪtnd]"
+  },
+  {
+    "name": "frightening",
+    "trans": ["مخيف؛ يسبب الذعر المفاجئ"],
+    "usphone": "[ˈfraɪtnɪŋ]",
+    "ukphone": "[ˈfraɪt(ə)nɪŋ]"
+  },
+  {
+    "name": "frozen",
+    "trans": ["ف. يتجمد (صيغة الماضي من كلمة freeze)؛ يتصلب؛ يصبح جامداً"],
+    "usphone": "[ˈfroʊzn]",
+    "ukphone": "[ˈfrəʊz(ə)n]"
+  },
+  {
+    "name": "fry",
+    "trans": ["ن. سمك صغير؛ طعام مقلي"],
+    "usphone": "[fraɪ]",
+    "ukphone": "[fraɪ]"
+  },
+  {
+    "name": "fuel",
+    "trans": ["ن. وقود؛ عامل محفز"],
+    "usphone": "[ˈfjuːəl]",
+    "ukphone": "[ˈfjuːəl]"
+  },
+  {
+    "name": "function",
+    "trans": ["ن. وظيفة؛ [رياضيات] دالة؛ مسؤولية؛ تجمع كبير"],
+    "usphone": "[ˈfʌŋkʃn]",
+    "ukphone": "[ˈfʌŋkʃ(ə)n]"
+  },
+  {
+    "name": "fur",
+    "trans": ["ن. الجلد، الجلود؛ الفرو؛ الشعر الناعم"],
+    "usphone": "[fɜːr]",
+    "ukphone": "[fɜː(r)]"
+  },
+  {
+    "name": "further",
+    "trans": ["صفة. أبعد؛ أعمق"],
+    "usphone": "[ˈfɜːrðər]",
+    "ukphone": "[ˈfɜːðə(r)]"
+  },
+  {
+    "name": "garage",
+    "trans": ["ن. مرآب؛ ورشة تصليح السيارات؛ حظيرة الطائرات"],
+    "usphone": "[ɡəˈrɑːʒ; ɡəˈrɑːdʒ]",
+    "ukphone": "[ˈɡærɑːʒ]"
+  },
+  {
+    "name": "gather",
+    "trans": ["ن. التجمع؛ التجاعيد؛ كمية المحصول"],
+    "usphone": "[ˈɡæðər]",
+    "ukphone": "[ˈɡæðə(r)]"
+  },
+  {
+    "name": "generally",
+    "trans": ["ظرف. عادة؛ بشكل عام"],
+    "usphone": "[ˈdʒenrəli]",
+    "ukphone": "[ˈdʒenrəli]"
+  },
+  {
+    "name": "generation",
+    "trans": ["ن. جيل؛ الإنتاج؛ جيل من الناس؛ التكاثر"],
+    "usphone": "[ˌdʒenəˈreɪʃn]",
+    "ukphone": "[ˌdʒenəˈreɪʃn]"
+  },
+  {
+    "name": "generous",
+    "trans": ["صفة. السخي، الكريم؛ المتسامح؛ ذو الشخصية الرفيعة"],
+    "usphone": "[ˈdʒenərəs]",
+    "ukphone": "[ˈdʒenərəs]"
+  },
+  {
+    "name": "gentle",
+    "trans": ["ن. اليرقات، الطعم"],
+    "usphone": "[ˈdʒentl]",
+    "ukphone": "[ˈdʒent(ə)l]"
+  },
+  {
+    "name": "gentleman",
+    "trans": ["ن. السيد؛ الرجل الأنيق؛ الشخص ذو المكانة"],
+    "usphone": "[ˈdʒent(ə)lmən]",
+    "ukphone": "[ˈdʒentlmən]"
+  },
+  {
+    "name": "ghost",
+    "trans": ["ن. الشبح، الروح"],
+    "usphone": "[ɡoʊst]",
+    "ukphone": "[ɡəʊst]"
+  },
+  {
+    "name": "giant",
+    "trans": ["ن. العملاق؛ الشخص العظيم؛ [حيوان] حيوان ضخم"],
+    "usphone": "[ˈdʒaɪənt]",
+    "ukphone": "[ˈdʒaɪənt]"
+  },
+  {
+    "name": "glad",
+    "trans": ["صفة. سعيد؛ راضٍ؛ مبهج؛ جميل ومشرق"],
+    "usphone": "[ɡlæd]",
+    "ukphone": "[ɡlæd]"
+  },
+  {
+    "name": "global",
+    "trans": ["صفة. العالمي؛ الكلي؛ الكروي"],
+    "usphone": "[ˈɡloʊbl]",
+    "ukphone": "[ˈɡləʊb(ə)l]"
+  },
+  {
+    "name": "glove",
+    "trans": ["ن. القفاز"],
+    "usphone": "[ɡlʌv]",
+    "ukphone": "[ɡlʌv]"
+  },
+  {
+    "name": "go",
+    "trans": ["ن. الذهاب؛ القيام؛ المحاولة"],
+    "usphone": "[ɡoʊ]",
+    "ukphone": "[ɡəʊ]"
+  },
+  {
+    "name": "goods",
+    "trans": ["ن. السلعة؛ الممتلكات المنقولة؛ الشخص المناسب؛ المهارة الحقيقية"],
+    "usphone": "[ɡʊdz]",
+    "ukphone": "[ɡʊdz]"
+  },
+  {
+    "name": "grade",
+    "trans": ["ن. الصف؛ المستوى؛ النتيجة؛ المرحلة؛ المرحلة"],
+    "usphone": "[ɡreɪd]",
+    "ukphone": "[ɡreɪd]"
+  },
+  {
+    "name": "graduate",
+    "trans": ["ن. طالب دراسات عليا؛ خريج"],
+    "usphone": "[ˈɡrædʒuət]",
+    "ukphone": "[ˈɡrædʒuət]"
+  },
+  {
+    "name": "grain",
+    "trans": ["ن. الحبوب؛ الحبيبات؛ [محاصيل] الحبوب؛ النسيج"],
+    "usphone": "[ɡreɪn]",
+    "ukphone": "[ɡreɪn]"
+  },
+  {
+    "name": "grateful",
+    "trans": ["صفة. شاكر؛ ممتع؛ لطيف"],
+    "usphone": "[ˈɡreɪtfl]",
+    "ukphone": "[ˈɡreɪtf(ə)l]"
+  },
+  {
+    "name": "growth",
+    "trans": ["ن. النمو؛ التطور؛ النمو؛ الزراعة"],
+    "usphone": "[ɡroʊθ]",
+    "ukphone": "[ɡrəʊθ]"
+  },
+  {
+    "name": "guard",
+    "trans": ["ن. الحراسة؛ الحراسة؛ الحرس؛ الجهاز الواقي"],
+    "usphone": "[ɡɑːrd]",
+    "ukphone": "[ɡɑːd]"
+  },
+  {
+    "name": "guilty",
+    "trans": ["صفة. مذنب؛ مذنب"],
+    "usphone": "[ˈɡɪlti]",
+    "ukphone": "[ˈɡɪlti]"
+  },
+  {
+    "name": "hand",
+    "trans": ["ن. اليد، المهارة؛ المساعدة؛ الإبرة؛ التدخل"],
+    "usphone": "[hænd]",
+    "ukphone": "[hænd]"
+  },
+  {
+    "name": "hang",
+    "trans": ["ن. التعليق؛ التوقف المؤقت، الإيقاف"],
+    "usphone": "[hæŋ]",
+    "ukphone": "[hæŋ]"
+  },
+  {
+    "name": "happiness",
+    "trans": ["ن. السعادة"],
+    "usphone": "[ˈhæpinəs]",
+    "ukphone": "[ˈhæpinəs]"
+  },
+  {
+    "name": "hardly",
+    "trans": ["ظرف. تقريبًا لا، بالكاد؛ للتو"],
+    "usphone": "[ˈhɑːrdli]",
+    "ukphone": "[ˈhɑːdli]"
+  },
+  {
+    "name": "hate",
+    "trans": ["ن. الكره؛ الانزعاج"],
+    "usphone": "[heɪt]",
+    "ukphone": "[heɪt]"
+  },
+  {
+    "name": "head",
+    "trans": ["ن. الرأس؛ الصداع؛ الجزء العلوي؛ الجزء الأمامي؛ الفهم"],
+    "usphone": "[hed]",
+    "ukphone": "[hed]"
+  },
+  {
+    "name": "headline",
+    "trans": ["ن. العنوان الرئيسي؛ الملخص؛ العنوان الجانبي؛ الخبر الرئيسي في الصفحة الأولى"],
+    "usphone": "[ˈhedlaɪn]",
+    "ukphone": "[ˈhedlaɪn]"
+  },
+  {
+    "name": "heating",
+    "trans": ["ن. [حرارة] التدفئة؛ [بناء] التدفئة؛ جهاز التدفئة"],
+    "usphone": "[ˈhiːtɪŋ]",
+    "ukphone": "[ˈhiːtɪŋ]"
+  },
+  {
+    "name": "heavily",
+    "trans": ["ظرف. بثقل؛ بشدة؛ بضجر"],
+    "usphone": "[ˈhevɪli]",
+    "ukphone": "[ˈhevɪli]"
+  },
+  {
+    "name": "helicopter",
+    "trans": ["ن. [طيران] طائرة هليكوبتر"],
+    "usphone": "[ˈhelɪkɑːptər]",
+    "ukphone": "[ˈhelɪkɒptə(r)]"
+  },
+  {
+    "name": "highlight",
+    "trans": ["ن. الجزء الأكثر إثارة؛ الأمر الأكثر أهمية؛ المنطقة المضيئة"],
+    "usphone": "[ˈhaɪlaɪt]",
+    "ukphone": "[ˈhaɪlaɪt]"
+  },
+  {
+    "name": "highly",
+    "trans": ["ظرف. بدرجة عالية؛ للغاية؛ بإعجاب شديد"],
+    "usphone": "[ˈhaɪli]",
+    "ukphone": "[ˈhaɪli]"
+  },
+  {
+    "name": "hire",
+    "trans": ["ن. الاستئجار، التأجير؛ الإيجار، الأجرة"],
+    "usphone": "[ˈhaɪər]",
+    "ukphone": "[ˈhaɪə(r)]"
+  },
+  {
+    "name": "historic",
+    "trans": ["صفة. ذي الأهمية التاريخية؛ المشهور تاريخيًا"],
+    "usphone": "[hɪˈstɔːrɪk]",
+    "ukphone": "[hɪˈstɒrɪk]"
+  },
+  {
+    "name": "historical",
+    "trans": ["صفة. التاريخي؛ علم التاريخ؛ القائم على الوقائع التاريخية"],
+    "usphone": "[hɪˈstɔːrɪkl]",
+    "ukphone": "[hɪˈstɒrɪk(ə)l]"
+  },
+  {
+    "name": "honest",
+    "trans": ["صفة. صادق؛ حقيقي؛ موثوق؛ صريح"],
+    "usphone": "[ˈɑːnɪst]",
+    "ukphone": "[ˈɒnɪst]"
+  },
+  {
+    "name": "horrible",
+    "trans": ["صفة. مخيف؛ مزعج للغاية"],
+    "usphone": "[ˈhɔːrəbl]",
+    "ukphone": "[ˈhɒrəb(ə)l]"
+  },
+  {
+    "name": "horror",
+    "trans": ["ن. الرعب؛ المأساة؛ الاشمئزاز الشديد؛ الشيء المرعب"],
+    "usphone": "[ˈhɔːrər]",
+    "ukphone": "[ˈhɒrə(r)]"
+  },
+  {
+    "name": "host",
+    "trans": ["ن. [حاسب آلي] المضيف؛ المالك؛ المضيف؛ العديد"],
+    "usphone": "[hoʊst]",
+    "ukphone": "[həʊst]"
+  },
+  {
+    "name": "hunt",
+    "trans": ["ن. الصيد؛ البحث"],
+    "usphone": "[hʌnt]",
+    "ukphone": "[hʌnt]"
+  },
+  {
+    "name": "hurricane",
+    "trans": ["ن. الإعصار، العاصفة"],
+    "usphone": "[ˈhɜːrəkeɪn]",
+    "ukphone": "[ˈhʌrɪkən]"
+  },
+  {
+    "name": "hurry",
+    "trans": ["ن. العجلة"],
+    "usphone": "[ˈhɜːri]",
+    "ukphone": "[ˈhʌri]"
+  },
+  {
+    "name": "identity",
+    "trans": ["ن. الهوية؛ التطابق؛ الخصائص؛ المعادلة"],
+    "usphone": "[aɪˈdentəti]",
+    "ukphone": "[aɪˈdentəti]"
+  },
+  {
+    "name": "ignore",
+    "trans": ["فعل. رفض الدعوى القضائية؛ تجاهل؛ عدم الاهتمام"],
+    "usphone": "[ɪɡˈnɔːr]",
+    "ukphone": "[ɪɡˈnɔː(r)]"
+  },
+  {
+    "name": "illegal",
+    "trans": ["ن. المهاجرون غير الشرعيين، العمال غير الشرعيين"],
+    "usphone": "[ɪˈliːɡl]",
+    "ukphone": "[ɪˈliːɡ(ə)l]"
+  },
+  {
+    "name": "imaginary",
+    "trans": ["صفة. خيالي؛ متخيّل؛ تخيلي؛ عدد تخيلي"],
+    "usphone": "[ɪˈmædʒɪneri]",
+    "ukphone": "[ɪˈmædʒɪnəri]"
+  },
+  {
+    "name": "immediate",
+    "trans": ["صفة. فوري؛ مباشر؛ الأقرب"],
+    "usphone": "[ɪˈmiːdiət]",
+    "ukphone": "[ɪˈmiːdiət]"
+  },
+  {
+    "name": "immigrant",
+    "trans": ["ن. المهاجرون، المغتربون"],
+    "usphone": "[ˈɪmɪɡrənt]",
+    "ukphone": "[ˈɪmɪɡrənt]"
+  },
+  {
+    "name": "impact",
+    "trans": ["فعل. التأثير؛ الاصطدام؛ التعارض؛ الضغط (على، فوق، مع)"],
+    "usphone": "[ˈɪmpækt]",
+    "ukphone": "[ˈɪmpækt]"
+  },
+  {
+    "name": "import",
+    "trans": ["ن. الواردات، البضائع المستوردة؛ الإدخال؛ المعنى، الدلالة؛ الأهمية"],
+    "usphone": "[ˈɪmpɔːrt]",
+    "ukphone": "[ˈɪmpɔːt]"
+  },
+  {
+    "name": "importance",
+    "trans": ["ن. القيمة؛ الأهمية؛ الأهمية الكبرى؛ الغطرسة"],
+    "usphone": "[ɪmˈpɔːrtns]",
+    "ukphone": "[ɪmˈpɔːt(ə)ns]"
+  },
+  {
+    "name": "impression",
+    "trans": ["ن. الانطباع؛ التأثير؛ الضغط؛ الأثر؛ التعرض (قياس عدد المرات التي يظهر فيها الإعلان. عند فتح صفحة بها هذا الإعلان، يزيد عدد مرات الظهور بمقدار واحد)"],
+    "usphone": "[ɪmˈpreʃn]",
+    "ukphone": "[ɪmˈpreʃ(ə)n]"
+  },
+  {
+    "name": "impressive",
+    "trans": ["صفة. مؤثر؛ مثير للإعجاب؛ مثير للإعجاب"],
+    "usphone": "[ɪmˈpresɪv]",
+    "ukphone": "[ɪmˈpresɪv]"
+  },
+  {
+    "name": "improvement",
+    "trans": ["ن. التحسين، التحسين؛ الترقية"],
+    "usphone": "[ɪmˈpruːvmənt]",
+    "ukphone": "[ɪmˈpruːvmənt]"
+  },
+  {
+    "name": "incredibly",
+    "trans": ["ظرف. بشكل لا يصدق؛ بشدة"],
+    "usphone": "[ɪnˈkredəbli]",
+    "ukphone": "[ɪnˈkredəbli]"
+  },
+  {
+    "name": "indeed",
+    "trans": ["ظرف. بالتأكيد؛ حقًا؛ حقًا؛ حتى"],
+    "usphone": "[ɪnˈdiːd]",
+    "ukphone": "[ɪnˈdiːd]"
+  },
+  {
+    "name": "indicate",
+    "trans": ["فعل. يشير إلى؛ يوضح؛ يتنبأ؛ يرمز إلى"],
+    "usphone": "[ˈɪndɪkeɪt]",
+    "ukphone": "[ˈɪndɪkeɪt]"
+  },
+  {
+    "name": "indirect",
+    "trans": ["صفة. غير مباشر؛ غير مباشر؛ غير مباشر"],
+    "usphone": "[ˌɪndəˈrektˌˌɪndaɪˈrekt]",
+    "ukphone": "[ˌɪndəˈrekt; ˌɪndaɪˈrekt]"
+  },
+  {
+    "name": "indoor",
+    "trans": ["صفة. داخلي؛ داخل المنزل"],
+    "usphone": "[ˈɪndɔːr]",
+    "ukphone": "[ˈɪndɔː(r)]"
+  },
+  {
+    "name": "indoors",
+    "trans": ["ظرف. داخل المنزل، داخل المنزل"],
+    "usphone": "[ˌɪnˈdɔːrz]",
+    "ukphone": "[ˌɪnˈdɔːz]"
+  },
+  {
+    "name": "influence",
+    "trans": ["ن. التأثير؛ السلطة؛ التأثير؛ الشخص أو الشيء المؤثر"],
+    "usphone": "[ˈɪnfluəns]",
+    "ukphone": "[ˈɪnfluəns]"
+  },
+  {
+    "name": "ingredient",
+    "trans": ["ن. المادة الخام؛ العناصر؛ المكونات"],
+    "usphone": "[ɪnˈɡriːdiənt]",
+    "ukphone": "[ɪnˈɡriːdiənt]"
+  },
+  {
+    "name": "injure",
+    "trans": ["فعل. الإضرار، الإساءة"],
+    "usphone": "[ˈɪndʒər]",
+    "ukphone": "[ˈɪndʒə(r)]"
+  },
+  {
+    "name": "injured",
+    "trans": ["صفة. مجروح؛ متضرر"],
+    "usphone": "[ˈɪndʒərd]",
+    "ukphone": "[ˈɪndʒəd]"
+  },
+  {
+    "name": "innocent",
+    "trans": ["اسم. بسيط؛ أحمق"],
+    "usphone": "[ˈɪnəsnt]",
+    "ukphone": "[ˈɪnəs(ə)nt]"
+  },
+  {
+    "name": "intelligence",
+    "trans": ["اسم. ذكاء؛ عمل استخباراتي؛ جهاز استخبارات؛ فهم؛ حكمة؛ موهبة"],
+    "usphone": "[ɪnˈtelɪdʒəns]",
+    "ukphone": "[ɪnˈtelɪdʒəns]"
+  },
+  {
+    "name": "intend",
+    "trans": ["فعل. لديه نية"],
+    "usphone": "[ɪnˈtend]",
+    "ukphone": "[ɪnˈtend]"
+  },
+  {
+    "name": "intention",
+    "trans": ["اسم. نية؛ غرض؛ قصد؛ التئام"],
+    "usphone": "[ɪnˈtenʃn]",
+    "ukphone": "[ɪnˈtenʃ(ə)n]"
+  },
+  {
+    "name": "invest",
+    "trans": ["فعل. الاستثمار، المشاركة؛ إنفاق المال لشراء"],
+    "usphone": "[ɪnˈvest]",
+    "ukphone": "[ɪnˈvest]"
+  },
+  {
+    "name": "investigate",
+    "trans": ["فعل. التحقيق؛ البحث"],
+    "usphone": "[ɪnˈvestɪɡeɪt]",
+    "ukphone": "[ɪnˈvestɪɡeɪt]"
+  },
+  {
+    "name": "involved",
+    "trans": ["فعل. يشمل؛ يشارك؛ يتضمن (involve في صيغة الماضي والماضي المبني للمجهول)"],
+    "usphone": "[ɪnˈvɑːlvd]",
+    "ukphone": "[ɪnˈvɒlvd]"
+  },
+  {
+    "name": "iron",
+    "trans": ["اسم. مكواة؛ مكواة حديدية؛ قوة"],
+    "usphone": "[ˈaɪərn]",
+    "ukphone": "[ˈaɪən]"
+  },
+  {
+    "name": "issue",
+    "trans": ["اسم. مشكلة؛ تدفق؛ عدد الإصدار؛ منشور"],
+    "usphone": "[ˈɪʃuː]",
+    "ukphone": "[ˈɪʃuː]"
+  },
+  {
+    "name": "IT",
+    "trans": ["اختصار. تكنولوجيا المعلومات information technology"],
+    "usphone": "[ˌaɪ ˈtiː]",
+    "ukphone": "[ˌaɪ ˈtiː]"
+  },
+  {
+    "name": "journal",
+    "trans": ["اسم. صحيفة يومية، مجلة؛ دفتر يوميات؛ دفتر حسابات"],
+    "usphone": "[ˈdʒɜːrnl]",
+    "ukphone": "[ˈdʒɜːn(ə)l]"
+  },
+  {
+    "name": "judge",
+    "trans": ["فعل. الحكم؛ المحاكمة"],
+    "usphone": "[dʒʌdʒ]",
+    "ukphone": "[dʒʌdʒ]"
+  },
+  {
+    "name": "keen",
+    "trans": ["صفة. حاد؛ سريع؛ مشتهى؛ قوي؛ متحمس؛ حاد"],
+    "usphone": "[kiːn]",
+    "ukphone": "[kiːn]"
+  },
+  {
+    "name": "key",
+    "trans": ["اسم. (مفتاح الآلة الكاتبة وغيرها)؛ مفتاح؛ مفتاح"],
+    "usphone": "[kiː]",
+    "ukphone": "[kiː]"
+  },
+  {
+    "name": "keyboard",
+    "trans": ["اسم. لوحة المفاتيح"],
+    "usphone": "[ˈkiːbɔːrd]",
+    "ukphone": "[ˈkiːbɔːd]"
+  },
+  {
+    "name": "kick",
+    "trans": ["فعل. ركل؛ الارتداد إلى الخلف"],
+    "usphone": "[kɪk]",
+    "ukphone": "[kɪk]"
+  },
+  {
+    "name": "killing",
+    "trans": ["صفة. قاتل؛ ساحر؛ مرهق"],
+    "usphone": "[ˈkɪlɪŋ]",
+    "ukphone": "[ˈkɪlɪŋ]"
+  },
+  {
+    "name": "kind",
+    "trans": ["اسم. نوع؛ طبيعة"],
+    "usphone": "[kaɪnd]",
+    "ukphone": "[kaɪnd]"
+  },
+  {
+    "name": "kiss",
+    "trans": ["فعل. تقبيل؛ (الرياح وغيرها) تداعب"],
+    "usphone": "[kɪs]",
+    "ukphone": "[kɪs]"
+  },
+  {
+    "name": "knock",
+    "trans": ["فعل. يقرع؛ يضرب؛ يطرق"],
+    "usphone": "[nɑːk]",
+    "ukphone": "[nɒk]"
+  },
+  {
+    "name": "label",
+    "trans": ["فعل. يضع علامة عليه؛ يلصق ملصقا عليه"],
+    "usphone": "[ˈleɪbl]",
+    "ukphone": "[ˈleɪb(ə)l]"
+  },
+  {
+    "name": "laboratory",
+    "trans": ["اسم. مختبر، غرفة أبحاث"],
+    "usphone": "[ˈlæbrətɔːri]",
+    "ukphone": "[ləˈbɒrətri]"
+  },
+  {
+    "name": "lack",
+    "trans": ["فعل. يفتقر؛ ينقص؛ لا يوجد؛ يحتاج"],
+    "usphone": "[læk]",
+    "ukphone": "[læk]"
+  },
+  {
+    "name": "latest",
+    "trans": ["ظرف. في أقصى وقت ممكن؛ في النهاية"],
+    "usphone": "[ˈleɪtɪst]",
+    "ukphone": "[ˈleɪtɪst]"
+  },
+  {
+    "name": "lay",
+    "trans": ["فعل. يستلقي؛ يبيض؛ يضع؛ يضع؛ يفرش؛ يدهن"],
+    "usphone": "[leɪ]",
+    "ukphone": "[leɪ]"
+  },
+  {
+    "name": "layer",
+    "trans": ["اسم. طبقة؛ مستوى؛ غشاء؛ [نبات] العقل؛ من وضعه"],
+    "usphone": "[ˈleɪər]",
+    "ukphone": "[ˈleɪə(r)]"
+  },
+  {
+    "name": "lead",
+    "trans": ["اسم. قائد؛ الرصاص؛ سلك؛ قدوة"],
+    "usphone": "[liːd; led]",
+    "ukphone": "[liːd]"
+  },
+  {
+    "name": "leading",
+    "trans": ["صفة. قيادي؛ رئيسي"],
+    "usphone": "[ˈliːdɪŋ; ˈledɪŋ]",
+    "ukphone": "[ˈliːdɪŋ]"
+  },
+  {
+    "name": "leaf",
+    "trans": ["اسم. ورقة؛ (كتاب أو غيره) صفحة واحدة؛ صفحة مروحة"],
+    "usphone": "[liːf]",
+    "ukphone": "[liːf]"
+  },
+  {
+    "name": "leather",
+    "trans": ["اسم. جلد؛ سلع جلدية"],
+    "usphone": "[ˈleðər]",
+    "ukphone": "[ˈleðə(r)]"
+  },
+  {
+    "name": "legal",
+    "trans": ["صفة. قانوني؛ شرعي؛ قانوني بموجب القانون"],
+    "usphone": "[ˈliːɡl]",
+    "ukphone": "[ˈliːɡ(ə)l]"
+  },
+  {
+    "name": "leisure",
+    "trans": ["اسم. وقت الفراغ؛ راحة؛ راحة"],
+    "usphone": "[ˈliːʒər]",
+    "ukphone": "[ˈleʒə(r)]"
+  },
+  {
+    "name": "length",
+    "trans": ["اسم. طول؛ فترة طويلة؛ طول الصوت"],
+    "usphone": "[leŋkθ]",
+    "ukphone": "[leŋkθ]"
+  },
+  {
+    "name": "level",
+    "trans": ["اسم. مستوى؛ معيار؛ مستوى السطح"],
+    "usphone": "[ˈlevl]",
+    "ukphone": "[ˈlev(ə)l]"
+  },
+  {
+    "name": "lie",
+    "trans": ["فعل. يستلقي؛ يكذب؛ يقع؛ يظهر"],
+    "usphone": "[laɪ]",
+    "ukphone": "[laɪ]"
+  },
+  {
+    "name": "like",
+    "trans": ["فعل. يحب؛ يريد؛ مستعد"],
+    "usphone": "[laɪk]",
+    "ukphone": "[laɪk]"
+  },
+  {
+    "name": "limit",
+    "trans": ["اسم. حد؛ حدود؛ خط"],
+    "usphone": "[ˈlɪmɪt]",
+    "ukphone": "[ˈlɪmɪt]"
+  },
+  {
+    "name": "lip",
+    "trans": ["اسم. الشفاه؛ الحافة"],
+    "usphone": "[lɪp]",
+    "ukphone": "[lɪp]"
+  },
+  {
+    "name": "liquid",
+    "trans": ["صفة. سائل؛ صافٍ؛ مشرق؛ متغير"],
+    "usphone": "[ˈlɪkwɪd]",
+    "ukphone": "[ˈlɪkwɪd]"
+  },
+  {
+    "name": "literature",
+    "trans": ["اسم. أدب؛ وثائق؛ أدبية؛ كتاب"],
+    "usphone": "[ˈlɪtrətʃər; ˈlɪtrətʃʊr; ˈlɪtərətʃʊr]",
+    "ukphone": "[ˈlɪtrətʃə(r)]"
+  },
+  {
+    "name": "live",
+    "trans": ["صفة. حي؛ حيوي؛ مباشر؛ نشيط"],
+    "usphone": "[lɪv; laɪv]",
+    "ukphone": "[lɪv]"
+  },
+  {
+    "name": "living",
+    "trans": ["صفة. حي؛ موجود؛ نشط؛ واقعي"],
+    "usphone": "[ˈlɪvɪŋ]",
+    "ukphone": "[ˈlɪvɪŋ]"
+  },
+  {
+    "name": "local",
+    "trans": ["اسم. [حساب] محلي؛ سكان المنطقة المحلية؛ الأخبار المحلية"],
+    "usphone": "[ˈloʊkl]",
+    "ukphone": "[ˈləʊk(ə)l]"
+  },
+  {
+    "name": "locate",
+    "trans": ["فعل. يقع في؛ يبحث عن مكان…"],
+    "usphone": "[ˈloʊkeɪt]",
+    "ukphone": "[ləʊˈkeɪt]"
+  },
+  {
+    "name": "located",
+    "trans": ["صفة. يقع؛ يقع في؛ يقع على"],
+    "usphone": "[ˈloʊkeɪtɪd]",
+    "ukphone": "[ləʊˈkeɪtɪd]"
+  },
+  {
+    "name": "location",
+    "trans": ["اسم. موقع (صفة locational)؛ مكان؛ موقع تصوير خارجي"],
+    "usphone": "[loʊˈkeɪʃn]",
+    "ukphone": "[ləʊˈkeɪʃn]"
+  },
+  {
+    "name": "lonely",
+    "trans": ["صفة. منعزل؛ نائي"],
+    "usphone": "[ˈloʊnli]",
+    "ukphone": "[ˈləʊnli]"
+  },
+  {
+    "name": "loss",
+    "trans": ["اسم. انخفاض؛ خسارة؛ فشل؛ فقدان"],
+    "usphone": "[lɔːs]",
+    "ukphone": "[lɒs]"
+  },
+  {
+    "name": "luxury",
+    "trans": ["اسم. ترف؛ فاخرة؛ سلع فاخرة؛ متعة"],
+    "usphone": "[ˈlʌkʃəri]",
+    "ukphone": "[ˈlʌkʃəri]"
+  },
+  {
+    "name": "mad",
+    "trans": ["صفة. مجنون؛ مخبول؛ غبي؛ مفتون"],
+    "usphone": "[mæd]",
+    "ukphone": "[mæd]"
+  },
+  {
+    "name": "magic",
+    "trans": ["اسم. سحر؛ تعويذة؛ خدعة"],
+    "usphone": "[ˈmædʒɪk]",
+    "ukphone": "[ˈmædʒɪk]"
+  },
+  {
+    "name": "mainly",
+    "trans": ["ظرف. بشكل رئيسي، عموما"],
+    "usphone": "[ˈmeɪnli]",
+    "ukphone": "[ˈmeɪnli]"
+  },
+  {
+    "name": "mall",
+    "trans": ["اسم. مركز تسوق؛ طريق مظلل؛ ملعب كرة الطائرة"],
+    "usphone": "[mɔːl]",
+    "ukphone": "[mɔːl; mæl]"
+  },
+  {
+    "name": "management",
+    "trans": ["اسم. إدارة؛ إداريون؛ إدارة؛ تشغيل؛ وسيلة للتشغيل"],
+    "usphone": "[ˈmænɪdʒmənt]",
+    "ukphone": "[ˈmænɪdʒmənt]"
+  },
+  {
+    "name": "market",
+    "trans": ["اسم. السوق؛ السوق؛ سعر السوق؛ الوضع؛ السوق؛ محل البيع؛ سبل التوزيع"],
+    "usphone": "[ˈmɑːrkɪt]",
+    "ukphone": "[ˈmɑːkɪt]"
+  },
+  {
+    "name": "marketing",
+    "trans": ["فعل. تسويق؛ بيع"],
+    "usphone": "[ˈmɑːrkɪtɪŋ]",
+    "ukphone": "[ˈmɑːkɪtɪŋ]"
+  },
+  {
+    "name": "marriage",
+    "trans": ["فعل. الزواج؛ الحياة الزوجية؛ اندماج وثيق، اندماج"],
+    "usphone": "[ˈmærɪdʒ]",
+    "ukphone": "[ˈmærɪdʒ]"
+  },
+  {
+    "name": "meanwhile",
+    "trans": ["ظرف. في الوقت نفسه، بينهما"],
+    "usphone": "[ˈmiːnwaɪl]",
+    "ukphone": "[ˈmiːnwaɪl]"
+  },
+  {
+    "name": "measure",
+    "trans": ["اسم. قياس؛ تدبير؛ درجة؛ حجم"],
+    "usphone": "[ˈmeʒər]",
+    "ukphone": "[ˈmeʒə(r)]"
+  },
+  {
+    "name": "medium",
+    "trans": ["صفة. وسط؛ متوسط؛ نصف ناضج"],
+    "usphone": "[ˈmiːdiəm]",
+    "ukphone": "[ˈmiːdiəm]"
+  },
+  {
+    "name": "mental",
+    "trans": ["صفة. عقلي؛ ذهني؛ مجنون"],
+    "usphone": "[ˈmentl]",
+    "ukphone": "[ˈmentl]"
+  },
+  {
+    "name": "mention",
+    "trans": ["فعل. يذكر؛ يتحدث عنه؛ يشير إليه؛ يقول"],
+    "usphone": "[ˈmenʃn]",
+    "ukphone": "[ˈmenʃn]"
+  },
+  {
+    "name": "mess",
+    "trans": ["اسم. فوضى؛ مقصف؛ موقف صعب؛ شيء متسخ"],
+    "usphone": "[mes]",
+    "ukphone": "[mes]"
+  },
+  {
+    "name": "mild",
+    "trans": ["صفة. معتدل؛ خفيف؛ خفيف المذاق؛ أنيق؛ خالي من المواد الضارة"],
+    "usphone": "[maɪld]",
+    "ukphone": "[maɪld]"
+  },
+  {
+    "name": "mine",
+    "trans": ["اسم. منجم؛ مخزون؛ منجم؛ لغم؛ لغم بحري"],
+    "usphone": "[maɪn]",
+    "ukphone": "[maɪn]"
+  },
+  {
+    "name": "mix",
+    "trans": ["فعل. يمزج؛ يخلط؛ يجعل مختلطا؛ يجعل متصلا"],
+    "usphone": "[mɪks]",
+    "ukphone": "[mɪks]"
+  },
+  {
+    "name": "mixture",
+    "trans": ["اسم. خليط؛ مزيج؛ مركب"],
+    "usphone": "[ˈmɪkstʃər]",
+    "ukphone": "[ˈmɪkstʃə(r)]"
+  },
+  {
+    "name": "mood",
+    "trans": ["اسم. المزاج؛ النغمة؛ الحالة المزاجية؛ الجو"],
+    "usphone": "[muːd]",
+    "ukphone": "[muːd]"
+  },
+  {
+    "name": "move",
+    "trans": ["اسم. حركة؛ خطوة؛ انتقال؛ استراتيجية"],
+    "usphone": "[muːv]",
+    "ukphone": "[muːv]"
+  },
+  {
+    "name": "mud",
+    "trans": ["فعل. يلوث؛ يغطي بالطين"],
+    "usphone": "[mʌd]",
+    "ukphone": "[mʌd]"
+  },
+  {
+    "name": "murder",
+    "trans": ["فعل. القتل؛ القتل"],
+    "usphone": "[ˈmɜːrdər]",
+    "ukphone": "[ˈmɜːdə(r)]"
+  },
+  {
+    "name": "muscle",
+    "trans": ["اسم. عضلة؛ قوة"],
+    "usphone": "[ˈmʌsl]",
+    "ukphone": "[ˈmʌsl]"
+  },
+  {
+    "name": "musical",
+    "trans": ["صفة. موسيقي؛ مبهج"],
+    "usphone": "[ˈmjuːzɪkl]",
+    "ukphone": "[ˈmjuːzɪk(ə)l]"
+  },
+  {
+    "name": "mystery",
+    "trans": ["اسم. سر؛ لغز؛ سر؛ رواية غموض؛ مسرحية غموض؛ دائما mysteries سر؛ سر"],
+    "usphone": "[ˈmɪstəri]",
+    "ukphone": "[ˈmɪstri]"
+  },
+  {
+    "name": "nail",
+    "trans": ["فعل. يدق؛ يثبت؛ يكشف"],
+    "usphone": "[neɪl]",
+    "ukphone": "[neɪl]"
+  },
+  {
+    "name": "narrative",
+    "trans": ["اسم. سرد؛ قصة؛ سرد"],
+    "usphone": "[ˈnærətɪv]",
+    "ukphone": "[ˈnærətɪv]"
+  },
+  {
+    "name": "nation",
+    "trans": ["اسم. بلد؛ أمة؛ مواطن"],
+    "usphone": "[ˈneɪʃn]",
+    "ukphone": "[ˈneɪʃ(ə)n]"
+  },
+  {
+    "name": "native",
+    "trans": ["صفة. وطني؛ أصلي؛ طبيعي؛ فطري؛ فطري"],
+    "usphone": "[ˈneɪtɪv]",
+    "ukphone": "[ˈneɪtɪv]"
+  },
+  {
+    "name": "naturally",
+    "trans": ["ظرف. بشكل طبيعي"],
+    "usphone": "[ˈnætʃrəli]",
+    "ukphone": "[ˈnætʃ(ə)rəli]"
+  },
+  {
+    "name": "necessarily",
+    "trans": ["ظرف. بالضرورة؛ بالتأكيد"],
+    "usphone": "[ˌnesəˈserəli]",
+    "ukphone": "[ˌnesəˈserəli; ˈnesəsərəli]"
+  },
+  {
+    "name": "need",
+    "trans": ["اسم. حاجة؛ طلب؛ نقص؛ شيء ضروري"],
+    "usphone": "[niːd]",
+    "ukphone": "[niːd]"
+  },
+  {
+    "name": "needle",
+    "trans": ["اسم. إبرة؛ عقرب؛ تحفيز؛ شيء يشبه الإبرة"],
+    "usphone": "[ˈniːdl]",
+    "ukphone": "[ˈniːdl]"
+  },
+  {
+    "name": "neighbourhood",
+    "trans": ["اسم. المجاور؛ المحيط؛ الجيران؛ المنطقة المجاورة"],
+    "usphone": "[ˈneɪbərhʊd]",
+    "ukphone": "[ˈneɪbəhʊd]"
+  },
+  {
+    "name": "neither",
+    "trans": ["حرف عطف. ولا؛ ولا"],
+    "usphone": "[ˈniːðər; ˈnaɪðər]",
+    "ukphone": "[ˈnaɪðə(r)]"
+  },
+  {
+    "name": "net",
+    "trans": ["اسم. شبكة؛ شبكة؛ صافي؛ السعر الحقيقي"],
+    "usphone": "[net]",
+    "ukphone": "[net]"
+  },
+  {
+    "name": "next",
+    "trans": ["ظرف. ثم؛ التالي؛ ثانيا"],
+    "usphone": "[nekst]",
+    "ukphone": "[nekst]"
+  },
+  {
+    "name": "nor",
+    "trans": ["حرف عطف. ولا؛ ولا"],
+    "usphone": "[nɔːr]",
+    "ukphone": "[nɔː(r)]"
+  },
+  {
+    "name": "normal",
+    "trans": ["صفة. طبيعي؛ رسمي؛ قياسي"],
+    "usphone": "[ˈnɔːrm(ə)l]",
+    "ukphone": "[ˈnɔːm(ə)l]"
+  },
+  {
+    "name": "northern",
+    "trans": ["صفة. شمالي؛ شمالي"],
+    "usphone": "[ˈnɔːrðərn]",
+    "ukphone": "[ˈnɔːðən]"
+  },
+  {
+    "name": "note",
+    "trans": ["اسم. ملاحظة؛ نوتة؛ ورقة؛ ملاحظة؛ ورقة نقدية؛ مذكرة؛ مذكرة؛ نغمة"],
+    "usphone": "[noʊt]",
+    "ukphone": "[nəʊt]"
+  },
+  {
+    "name": "now",
+    "trans": ["ظرف. الآن؛ الآن؛ حالا"],
+    "usphone": "[naʊ]",
+    "ukphone": "[naʊ]"
+  },
+  {
+    "name": "nuclear",
+    "trans": ["صفة. نووية؛ [خلية] نووية؛ مركزية؛ نووية"],
+    "usphone": "[ˈnuːkliər]",
+    "ukphone": "[ˈnjuːkliə(r)]"
+  },
+  {
+    "name": "obvious",
+    "trans": ["صفة. واضح؛ بارز؛ عادي"],
+    "usphone": "[ˈɑːbviəs]",
+    "ukphone": "[ˈɒbviəs]"
+  },
+  {
+    "name": "obviously",
+    "trans": ["ظرف. بشكل واضح"],
+    "usphone": "[ˈɑːbviəsli]",
+    "ukphone": "[ˈɒbviəsli]"
+  },
+  {
+    "name": "occasion",
+    "trans": ["اسم. وقت؛ فرصة؛ مناسبة؛ سبب"],
+    "usphone": "[əˈkeɪʒn]",
+    "ukphone": "[əˈkeɪʒ(ə)n]"
+  },
+  {
+    "name": "occur",
+    "trans": ["حدوث؛ ظهور؛ وجود"],
+    "usphone": "[əˈkɜːr]",
+    "ukphone": "[əˈkɜː(r)]"
+  },
+  {
+    "name": "odd",
+    "trans": ["الغريب؛ الفريد؛ المتبقي؛ المؤقت؛ المتفرق"],
+    "usphone": "[ɑːd]",
+    "ukphone": "[ɒd]"
+  },
+  {
+    "name": "official",
+    "trans": ["رسمي؛ رسمي؛ متعلق بالوظيفة"],
+    "usphone": "[əˈfɪʃl]",
+    "ukphone": "[əˈfɪʃ(ə)l]"
+  },
+  {
+    "name": "old-fashioned",
+    "trans": ["صفة: قديم الطراز؛ عتيق؛ محافظ"],
+    "usphone": "[ˌoʊld ˈfæʃnd]",
+    "ukphone": "[ˌəʊld ˈfæʃnd]"
+  },
+  {
+    "name": "once",
+    "trans": ["ظرف: مرة واحدة؛ ذات مرة"],
+    "usphone": "[wʌns]",
+    "ukphone": "[wʌns]"
+  },
+  {
+    "name": "operation",
+    "trans": ["اسم: عملية؛ إدارة؛ [جراحة] جراحة؛ [رياضيات] حساب"],
+    "usphone": "[ˌɑːpəˈreɪʃ(ə)n]",
+    "ukphone": "[ˌɒpəˈreɪʃ(ə)n]"
+  },
+  {
+    "name": "organized",
+    "trans": ["صفة: منظم؛ مرتب؛ منهجي"],
+    "usphone": "[ˈɔːrɡənaɪzd]",
+    "ukphone": "[ˈɔːɡənaɪzd]"
+  },
+  {
+    "name": "organizer",
+    "trans": ["اسم: منظم؛ جهة تنظيمية؛ [أحياء] موصل نسيجي"],
+    "usphone": "[ˈɔːrɡənaɪzər]",
+    "ukphone": "[ˈɔːɡənaɪzə(r)]"
+  },
+  {
+    "name": "original",
+    "trans": ["اسم: النسخة الأصلية؛ العمل الأصلي؛ الأصل؛ النموذج الأصلي"],
+    "usphone": "[əˈrɪdʒənl]",
+    "ukphone": "[əˈrɪdʒən(ə)l]"
+  },
+  {
+    "name": "originally",
+    "trans": ["ظرف: في البداية؛ في الأصل"],
+    "usphone": "[əˈrɪdʒənəli]",
+    "ukphone": "[əˈrɪdʒənəli]"
+  },
+  {
+    "name": "ought",
+    "trans": ["فعل مساعد: ينبغي، يجب؛ ربما"],
+    "usphone": "[ɔːt]",
+    "ukphone": "[ɔːt]"
+  },
+  {
+    "name": "ours",
+    "trans": ["ضمير: لدينا"],
+    "usphone": "[ˈaʊərz]",
+    "ukphone": "[ˈaʊəz]"
+  },
+  {
+    "name": "outdoor",
+    "trans": ["صفة: خارجي؛ مكشوف للهواء؛ ميداني (مثل out-of-door)"],
+    "usphone": "[ˈaʊtdɔːr]",
+    "ukphone": "[ˈaʊtdɔː(r)]"
+  },
+  {
+    "name": "outdoors",
+    "trans": ["ظرف: في الهواء الطلق"],
+    "usphone": "[ˌaʊtˈdɔːrz]",
+    "ukphone": "[ˌaʊtˈdɔːz]"
+  },
+  {
+    "name": "pack",
+    "trans": ["اسم: تغليف؛ مجموعة؛ حقيبة ظهر؛ حزمة؛ طقم"],
+    "usphone": "[pæk]",
+    "ukphone": "[pæk]"
+  },
+  {
+    "name": "package",
+    "trans": ["اسم: حزمة؛ حقيبة؛ مجموعة برامج؛ [حاسوب] حزمة برنامج"],
+    "usphone": "[ˈpækɪdʒ]",
+    "ukphone": "[ˈpækɪdʒ]"
+  },
+  {
+    "name": "painful",
+    "trans": ["صفة: مؤلم؛ موجع؛ غير سار"],
+    "usphone": "[ˈpeɪnfl]",
+    "ukphone": "[ˈpeɪnf(ə)l]"
+  },
+  {
+    "name": "pale",
+    "trans": ["اسم: نقطة حراسة؛ سياج؛ نطاق"],
+    "usphone": "[peɪl]",
+    "ukphone": "[peɪl]"
+  },
+  {
+    "name": "pan",
+    "trans": ["اسم: مقلاة؛ وعاء على شكل صحن؛ صحن غسيل؛ صحن ذهبي؛ صحن ميزان"],
+    "usphone": "[pæn]",
+    "ukphone": "[pæn]"
+  },
+  {
+    "name": "participate",
+    "trans": ["فعل: المشاركة؛ الاشتراك؛ المشاركة"],
+    "usphone": "[pɑːrˈtɪsɪpeɪt]",
+    "ukphone": "[pɑːˈtɪsɪpeɪt]"
+  },
+  {
+    "name": "particularly",
+    "trans": ["ظرف: بشكل خاص؛ بشكل فريد؛ بالتفصيل؛ بدقة"],
+    "usphone": "[pərˈtɪkjələrli]",
+    "ukphone": "[pəˈtɪkjələli]"
+  },
+  {
+    "name": "pass",
+    "trans": ["اسم: النجاح؛ المرور؛ جواز السفر؛ الطريق؛ التمرير"],
+    "usphone": "[pæs]",
+    "ukphone": "[pɑːs]"
+  },
+  {
+    "name": "passion",
+    "trans": ["اسم: الشغف؛ الحماس؛ العشق؛ الغضب الشديد"],
+    "usphone": "[ˈpæʃ(ə)n]",
+    "ukphone": "[ˈpæʃ(ə)n]"
+  },
+  {
+    "name": "path",
+    "trans": ["اسم: طريق؛ درب؛ مسار"],
+    "usphone": "[pæθ]",
+    "ukphone": "[pɑːθ]"
+  },
+  {
+    "name": "payment",
+    "trans": ["اسم: الدفع؛ المقابلة؛ الجائزة؛ الجزاء؛ العقاب"],
+    "usphone": "[ˈpeɪmənt]",
+    "ukphone": "[ˈpeɪmənt]"
+  },
+  {
+    "name": "peaceful",
+    "trans": ["صفة: سلمي؛ يحب السلام؛ هادئ"],
+    "usphone": "[ˈpiːsfl]",
+    "ukphone": "[ˈpiːsfl]"
+  },
+  {
+    "name": "percentage",
+    "trans": ["اسم: النسبة المئوية؛ المعدل المئوي؛ الكسر المئوي"],
+    "usphone": "[pərˈsentɪdʒ]",
+    "ukphone": "[pəˈsentɪdʒ]"
+  },
+  {
+    "name": "perfectly",
+    "trans": ["ظرف: بشكل مثالي؛ تمامًا؛ بلا عيب"],
+    "usphone": "[ˈpɜːrfɪktli]",
+    "ukphone": "[ˈpɜːfɪktli]"
+  },
+  {
+    "name": "performance",
+    "trans": ["اسم: الأداء؛ الإنجاز؛ الأداء؛ التنفيذ؛ التعبير"],
+    "usphone": "[pərˈfɔːrməns]",
+    "ukphone": "[pəˈfɔːməns]"
+  },
+  {
+    "name": "personally",
+    "trans": ["ظرف: شخصيًا؛ وجهًا لوجه؛ بشكل فردي؛ بالنسبة لنفسه"],
+    "usphone": "[ˈpɜːrsənəli]",
+    "ukphone": "[ˈpɜːsənəli]"
+  },
+  {
+    "name": "persuade",
+    "trans": ["فعل: إقناع؛ حث؛ إقناع شخص ما بفعل (أو عدم فعل) شيء ما"],
+    "usphone": "[pərˈsweɪd]",
+    "ukphone": "[pəˈsweɪd]"
+  },
+  {
+    "name": "photographer",
+    "trans": ["اسم: مصور؛ مصور فوتوغرافي"],
+    "usphone": "[fəˈtɑːɡrəfər]",
+    "ukphone": "[fəˈtɒɡrəfə(r)]"
+  },
+  {
+    "name": "photography",
+    "trans": ["اسم: التصوير الفوتوغرافي؛ التصوير الضوئي"],
+    "usphone": "[fəˈtɑːɡrəfi]",
+    "ukphone": "[fəˈtɒɡrəfi]"
+  },
+  {
+    "name": "pin",
+    "trans": ["اسم: دبوس؛ دبوس؛ دبوس؛ مسمار؛ مخلب؛ أشياء صغيرة"],
+    "usphone": "[pɪn]",
+    "ukphone": "[pɪn]"
+  },
+  {
+    "name": "pipe",
+    "trans": ["اسم: أنبوب؛ غليون؛ ناي"],
+    "usphone": "[paɪp]",
+    "ukphone": "[paɪp]"
+  },
+  {
+    "name": "place",
+    "trans": ["اسم: مكان؛ مسكن؛ مقعد"],
+    "usphone": "[pleɪs]",
+    "ukphone": "[pleɪs]"
+  },
+  {
+    "name": "planning",
+    "trans": ["اسم: التخطيط؛ وضع الخطة"],
+    "usphone": "[ˈplænɪŋ]",
+    "ukphone": "[ˈplænɪŋ]"
+  },
+  {
+    "name": "pleasant",
+    "trans": ["صفة: ممتع؛ مريح؛ محبوب؛ لطيف"],
+    "usphone": "[ˈpleznt]",
+    "ukphone": "[ˈplez(ə)nt]"
+  },
+  {
+    "name": "pleasure",
+    "trans": ["اسم: السعادة؛ الأمل؛ الترفيه؛ شيء مبهج"],
+    "usphone": "[ˈpleʒər]",
+    "ukphone": "[ˈpleʒə(r)]"
+  },
+  {
+    "name": "plenty",
+    "trans": ["اسم: كثرة؛ وفرة؛ كفاية"],
+    "usphone": "[ˈplenti]",
+    "ukphone": "[ˈplenti]"
+  },
+  {
+    "name": "plot",
+    "trans": ["اسم: الحبكة؛ الرسم؛ المؤامرة"],
+    "usphone": "[plɑːt]",
+    "ukphone": "[plɒt]"
+  },
+  {
+    "name": "plus",
+    "trans": ["حرف جر: بالإضافة إلى"],
+    "usphone": "[plʌs]",
+    "ukphone": "[plʌs]"
+  },
+  {
+    "name": "poem",
+    "trans": ["اسم: قصيدة"],
+    "usphone": "[ˈpoʊəm]",
+    "ukphone": "[ˈpəʊɪm]"
+  },
+  {
+    "name": "poet",
+    "trans": ["اسم: شاعر"],
+    "usphone": "[ˈpoʊət]",
+    "ukphone": "[ˈpəʊɪt]"
+  },
+  {
+    "name": "poetry",
+    "trans": ["اسم: الشعر؛ روح الشعر؛ فن الشعر"],
+    "usphone": "[ˈpoʊətri]",
+    "ukphone": "[ˈpəʊətri]"
+  },
+  {
+    "name": "point",
+    "trans": ["اسم: نقطة؛ نقاط؛ علامات؛ [آلة] النهاية"],
+    "usphone": "[pɔɪnt]",
+    "ukphone": "[pɔɪnt]"
+  },
+  {
+    "name": "poison",
+    "trans": ["اسم: السم؛ السموم؛ الكحول؛ المواد الضارة؛ [عامل] مثبط"],
+    "usphone": "[ˈpɔɪzn]",
+    "ukphone": "[ˈpɔɪz(ə)n]"
+  },
+  {
+    "name": "poisonous",
+    "trans": ["صفة: سام؛ خبيث؛ مزعج"],
+    "usphone": "[ˈpɔɪzənəs]",
+    "ukphone": "[ˈpɔɪzənəs]"
+  },
+  {
+    "name": "policy",
+    "trans": ["اسم: سياسة؛ سياسة؛ بوليصة تأمين"],
+    "usphone": "[ˈpɑːləsi]",
+    "ukphone": "[ˈpɒləsi]"
+  },
+  {
+    "name": "political",
+    "trans": ["صفة: سياسي؛ حزبي"],
+    "usphone": "[pəˈlɪtɪkl]",
+    "ukphone": "[pəˈlɪtɪk(ə)l]"
+  },
+  {
+    "name": "politician",
+    "trans": ["اسم: سياسي؛ سياسي؛ نشاط سياسي؛ برنامج سياسي"],
+    "usphone": "[ˌpɑːləˈtɪʃn]",
+    "ukphone": "[ˌpɒləˈtɪʃn]"
+  },
+  {
+    "name": "politics",
+    "trans": ["السياسة، علم السياسة؛ النشاط السياسي؛ البرنامج السياسي"],
+    "usphone": "[ˈpɑːlətɪks]",
+    "ukphone": "[ˈpɒlətɪks]"
+  },
+  {
+    "name": "port",
+    "trans": ["اسم: ميناء؛ بوابة؛ منفذ؛ باب؛ باب السفينة"],
+    "usphone": "[pɔːrt]",
+    "ukphone": "[pɔːt]"
+  },
+  {
+    "name": "portrait",
+    "trans": ["اسم: صورة؛ وصف؛ نصف تمثال"],
+    "usphone": "[ˈpɔːrtrət]",
+    "ukphone": "[ˈpɔːtreɪt]"
+  },
+  {
+    "name": "possibly",
+    "trans": ["ظرف: على الأرجح؛ ربما؛ تقريبًا"],
+    "usphone": "[ˈpɑːsəbli]",
+    "ukphone": "[ˈpɒsəbli]"
+  },
+  {
+    "name": "pot",
+    "trans": ["اسم: إبريق؛ إناء؛ جرة"],
+    "usphone": "[pɑːt]",
+    "ukphone": "[pɒt]"
+  },
+  {
+    "name": "pour",
+    "trans": ["اسم: الانسكاب؛ التدفق؛ المطر المنهمر"],
+    "usphone": "[pɔːr]",
+    "ukphone": "[pɔː(r)]"
+  },
+  {
+    "name": "poverty",
+    "trans": ["اسم: الفقر؛ الصعوبة؛ النقص؛ الرداءة"],
+    "usphone": "[ˈpɑːvərti]",
+    "ukphone": "[ˈpɒvəti]"
+  },
+  {
+    "name": "powder",
+    "trans": ["اسم: مسحوق؛ بودرة؛ [كيمياء] بارود؛ غبار"],
+    "usphone": "[ˈpaʊdər]",
+    "ukphone": "[ˈpaʊdə(r)]"
+  },
+  {
+    "name": "powerful",
+    "trans": ["صفة: قوي؛ قوي"],
+    "usphone": "[ˈpaʊərfl]",
+    "ukphone": "[ˈpaʊəf(ə)l]"
+  },
+  {
+    "name": "practical",
+    "trans": ["صفة: عملي؛ وظيفي"],
+    "usphone": "[ˈpræktɪkl]",
+    "ukphone": "[ˈpræktɪkl]"
+  },
+  {
+    "name": "pray",
+    "trans": ["فعل: الصلاة؛ الطلب؛ التوسل"],
+    "usphone": "[preɪ]",
+    "ukphone": "[preɪ]"
+  },
+  {
+    "name": "prayer",
+    "trans": ["اسم: الصلاة؛ الدعاء؛ الطلب؛ صلاة"],
+    "usphone": "[prer]",
+    "ukphone": "[preə(r)]"
+  },
+  {
+    "name": "prediction",
+    "trans": ["اسم: التنبؤ؛ النبوءة"],
+    "usphone": "[prɪˈdɪkʃn]",
+    "ukphone": "[prɪˈdɪkʃn]"
+  },
+  {
+    "name": "prepared",
+    "trans": ["فعل: استعداد (prepare's past participle)"],
+    "usphone": "[prɪˈperd]",
+    "ukphone": "[prɪˈpeəd]"
+  },
+  {
+    "name": "presentation",
+    "trans": ["اسم: عرض؛ وصف؛ بيان؛ تقديم"],
+    "usphone": "[ˌpriːzenˈteɪʃn]",
+    "ukphone": "[ˌpreznˈteɪʃn]"
+  },
+  {
+    "name": "press",
+    "trans": ["ن. الضغط؛ الضغط؛ الأخبار؛ الناشر؛ [الطباعة] آلة الطباعة"],
+    "usphone": "[pres]",
+    "ukphone": "[pres]"
+  },
+  {
+    "name": "pressure",
+    "trans": ["اسم: ضغط؛ ضغط؛ نشر"],
+    "usphone": "[ˈpreʃər]",
+    "ukphone": "[ˈpreʃə(r)]"
+  },
+  {
+    "name": "pretend",
+    "trans": ["فعل: التظاهر؛ التظاهر؛ محاكاة"],
+    "usphone": "[prɪˈtend]",
+    "ukphone": "[prɪˈtend]"
+  },
+  {
+    "name": "previous",
+    "trans": ["صفة: سابق؛ سابقًا؛ سابقًا"],
+    "usphone": "[ˈpriːviəs]",
+    "ukphone": "[ˈpriːviəs]"
+  },
+  {
+    "name": "previously",
+    "trans": ["ظرف: سابقًا؛ مسبقًا؛ على عجل"],
+    "usphone": "[ˈpriːviəsli]",
+    "ukphone": "[ˈpriːviəsli]"
+  },
+  {
+    "name": "priest",
+    "trans": ["اسم: كاهن؛ كاهن؛ كاهن"],
+    "usphone": "[priːst]",
+    "ukphone": "[priːst]"
+  },
+  {
+    "name": "primary",
+    "trans": ["اسم: اللون الأساسي؛ الأكثر أهمية"],
+    "usphone": "[ˈpraɪmeri]",
+    "ukphone": "[ˈpraɪməri]"
+  },
+  {
+    "name": "prince",
+    "trans": ["اسم: أمير؛ ملك؛ نبيل"],
+    "usphone": "[prɪns]",
+    "ukphone": "[prɪns]"
+  },
+  {
+    "name": "princess",
+    "trans": ["اسم: أميرة؛ زوجة الملك؛ امرأة كبيرة"],
+    "usphone": "[ˈprɪnses]",
+    "ukphone": "[ˌprɪnˈses; ˈprɪnses]"
+  },
+  {
+    "name": "printing",
+    "trans": ["اسم: الطباعة؛ الطباعة"],
+    "usphone": "[ˈprɪntɪŋ]",
+    "ukphone": "[ˈprɪntɪŋ]"
+  },
+  {
+    "name": "prisoner",
+    "trans": ["اسم: سجين؛ سجين؛ متهم جنائي"],
+    "usphone": "[ˈprɪznər]",
+    "ukphone": "[ˈprɪznə(r)]"
+  },
+  {
+    "name": "private",
+    "trans": ["خاص"],
+    "usphone": "[ˈpraɪvət]",
+    "ukphone": "[ˈpraɪvət]"
+  },
+  {
+    "name": "producer",
+    "trans": ["اسم: منتج؛ صانع؛ منتج؛ عمل"],
+    "usphone": "[prəˈduːsər]",
+    "ukphone": "[prəˈdjuːsə(r)]"
+  },
+  {
+    "name": "production",
+    "trans": ["النتائج؛ المنتجات؛ الإنتاج؛ الأعمال"],
+    "usphone": "[prəˈdʌkʃn]",
+    "ukphone": "[prəˈdʌkʃn]"
+  },
+  {
+    "name": "profession",
+    "trans": ["اسم: مهنة؛ تخصص؛ تصريح؛ إعلان"],
+    "usphone": "[prəˈfeʃn]",
+    "ukphone": "[prəˈfeʃn]"
+  },
+  {
+    "name": "profit",
+    "trans": ["اسم: الربح؛ الفائدة"],
+    "usphone": "[ˈprɑːfɪt]",
+    "ukphone": "[ˈprɒfɪt]"
+  },
+  {
+    "name": "program",
+    "trans": ["اسم: برنامج؛ خطة؛ مخطط"],
+    "usphone": "[ˈproʊɡræm]",
+    "ukphone": "[ˈprəʊɡræm]"
+  },
+  {
+    "name": "promote",
+    "trans": ["فعل: أصبحت ملكة أو أي شيء أكبر من الجندي"],
+    "usphone": "[prəˈmoʊt]",
+    "ukphone": "[prəˈməʊt]"
+  },
+  {
+    "name": "proper",
+    "trans": ["صفة: مناسب؛ خاص؛ مميز؛ محترم"],
+    "usphone": "[ˈprɑːpər]",
+    "ukphone": "[ˈprɒpə(r)]"
+  },
+  {
+    "name": "properly",
+    "trans": ["ظرف: بشكل مناسب؛ بشكل صحيح؛ بشكل مناسب"],
+    "usphone": "[ˈprɑːpərli]",
+    "ukphone": "[ˈprɒpəli]"
+  },
+  {
+    "name": "property",
+    "trans": ["اسم: طبيعة؛ أداء؛ ممتلكات؛ ملكية"],
+    "usphone": "[ˈprɑːpərti]",
+    "ukphone": "[ˈprɒpəti]"
+  },
+  {
+    "name": "protest",
+    "trans": ["اسم: احتجاج"],
+    "usphone": "[ˈproʊtest; prəˈtest]",
+    "ukphone": "[ˈprəʊtest]"
+  },
+  {
+    "name": "proud",
+    "trans": ["صفة: فخور؛ معتد بنفسه؛ متكبر"],
+    "usphone": "[praʊd]",
+    "ukphone": "[praʊd]"
+  },
+  {
+    "name": "prove",
+    "trans": ["فعل: إثبات أنه"],
+    "usphone": "[pruːv]",
+    "ukphone": "[pruːv]"
+  },
+  {
+    "name": "pull",
+    "trans": ["اسم: سحب؛ قوة السحب؛ سحب"],
+    "usphone": "[pʊl]",
+    "ukphone": "[pʊl]"
+  },
+  {
+    "name": "punish",
+    "trans": ["فعل: معاقبة؛ معاملة بقسوة؛ تناول الطعام بشراهة"],
+    "usphone": "[ˈpʌnɪʃ]",
+    "ukphone": "[ˈpʌnɪʃ]"
+  },
+  {
+    "name": "punishment",
+    "trans": ["اسم: عقوبة؛ معاملة قاسية؛ سوء المعاملة"],
+    "usphone": "[ˈpʌnɪʃmənt]",
+    "ukphone": "[ˈpʌnɪʃmənt]"
+  },
+  {
+    "name": "push",
+    "trans": ["اسم: دفع؛ عزم؛ هجوم كبير؛ السعي الحثيث"],
+    "usphone": "[pʊʃ]",
+    "ukphone": "[pʊʃ]"
+  },
+  {
+    "name": "qualification",
+    "trans": ["اسم: شرط؛ شرط؛ تقييد؛ منح التأهيل"],
+    "usphone": "[ˌkwɑːlɪfɪˈkeɪʃn]",
+    "ukphone": "[ˌkwɒlɪfɪˈkeɪʃn]"
+  },
+  {
+    "name": "qualified",
+    "trans": ["فعل: تقييد (qualify's past participle)؛ وصف؛ تفويض"],
+    "usphone": "[ˈkwɑːlɪfaɪd]",
+    "ukphone": "[ˈkwɒlɪfaɪd]"
+  },
+  {
+    "name": "qualify",
+    "trans": ["فعل: الحصول على المؤهلات، مؤهل"],
+    "usphone": "[ˈkwɑːlɪfaɪ]",
+    "ukphone": "[ˈkwɒlɪfaɪ]"
+  },
+  {
+    "name": "queue",
+    "trans": ["اسم: صف؛ صف طويل؛ جديلة"],
+    "usphone": "[kjuː]",
+    "ukphone": "[kjuː]"
+  },
+  {
+    "name": "quit",
+    "trans": ["فعل: المغادرة؛ [حاسوب] الخروج"],
+    "usphone": "[kwɪt]",
+    "ukphone": "[kwɪt]"
+  },
+  {
+    "name": "quotation",
+    "trans": ["اسم: عرض؛ اقتباس؛ اقتباس"],
+    "usphone": "[kwoʊˈteɪʃn]",
+    "ukphone": "[kwəʊˈteɪʃn]"
+  },
+  {
+    "name": "quote",
+    "trans": ["فعل: الاقتباس"],
+    "usphone": "[kwoʊt]",
+    "ukphone": "[kwəʊt]"
+  },
+  {
+    "name": "racing",
+    "trans": ["اسم: سباق الخيل؛ المسابقة"],
+    "usphone": "[ˈreɪsɪŋ]",
+    "ukphone": "[ˈreɪsɪŋ]"
+  },
+  {
+    "name": "range",
+    "trans": ["اسم: نطاق؛ مدى؛ صف؛ سلسلة جبلية"],
+    "usphone": "[reɪndʒ]",
+    "ukphone": "[reɪndʒ]"
+  },
+  {
+    "name": "rare",
+    "trans": ["صفة: نادر؛ رقيق؛ نصف ناضج"],
+    "usphone": "[rer]",
+    "ukphone": "[reə(r)]"
+  },
+  {
+    "name": "rarely",
+    "trans": ["adv. قليلاً؛ نادراً؛ نادرًا"],
+    "usphone": "[ˈrerli]",
+    "ukphone": "[ˈreəli]"
+  },
+  {
+    "name": "reaction",
+    "trans": ["n. رد فعل، استجابة؛ ردة فعل، عودة إلى الماضي؛ تأثير عكسي"],
+    "usphone": "[riˈækʃn]",
+    "ukphone": "[riˈækʃn]"
+  },
+  {
+    "name": "reality",
+    "trans": ["n. الواقع؛ الحقيقة؛ الصدق"],
+    "usphone": "[riˈæləti]",
+    "ukphone": "[riˈæləti]"
+  },
+  {
+    "name": "receipt",
+    "trans": ["n. الاستلام؛ الإيصال؛ الدخل"],
+    "usphone": "[rɪˈsiːt]",
+    "ukphone": "[rɪˈsiːt]"
+  },
+  {
+    "name": "recommendation",
+    "trans": ["n. التوصية؛ النصيحة؛ خطاب التوصية"],
+    "usphone": "[ˌrekəmenˈdeɪʃn]",
+    "ukphone": "[ˌrekəmenˈdeɪʃn]"
+  },
+  {
+    "name": "reference",
+    "trans": ["n. المرجع، الإشارة؛ الصلة، الإشارة؛ قائمة المراجع؛ خطاب التوصية؛ شهادة"],
+    "usphone": "[ˈrefrəns]",
+    "ukphone": "[ˈrefrəns]"
+  },
+  {
+    "name": "reflect",
+    "trans": ["vt. يعكس؛ ينعكس، يظهر في المرآة؛ يعبر عن؛ يظهر؛ يتأمل"],
+    "usphone": "[rɪˈflekt]",
+    "ukphone": "[rɪˈflekt]"
+  },
+  {
+    "name": "regularly",
+    "trans": ["adv. بشكل دوري؛ بانتظام؛ منظم؛ متناسق"],
+    "usphone": "[ˈreɡjələrli]",
+    "ukphone": "[ˈreɡjələli]"
+  },
+  {
+    "name": "reject",
+    "trans": ["n. الأشياء أو الأشخاص المتروكون؛ السلعة المعيبة"],
+    "usphone": "[rɪˈdʒekt]",
+    "ukphone": "[rɪˈdʒekt]"
+  },
+  {
+    "name": "relate",
+    "trans": ["vt. يسرد؛ يجعل شيئًا مرتبطًا"],
+    "usphone": "[rɪˈleɪt]",
+    "ukphone": "[rɪˈleɪt]"
+  },
+  {
+    "name": "related",
+    "trans": ["v. يسرد (relate بصيغة الماضي)"],
+    "usphone": "[rɪˈleɪtɪd]",
+    "ukphone": "[rɪˈleɪtɪd]"
+  },
+  {
+    "name": "relation",
+    "trans": ["n. العلاقة؛ السرد؛ القصة؛ القرابة"],
+    "usphone": "[rɪˈleɪʃn]",
+    "ukphone": "[rɪˈleɪʃn]"
+  },
+  {
+    "name": "relative",
+    "trans": ["n. الأقارب؛ الأشياء ذات الصلة؛ [لغة] كلمات الربط؛ النباتات ذات الصلة"],
+    "usphone": "[ˈrelətɪv]",
+    "ukphone": "[ˈrelətɪv]"
+  },
+  {
+    "name": "relaxed",
+    "trans": ["v. relax بصيغة الماضي والماضي التام"],
+    "usphone": "[rɪˈlækst]",
+    "ukphone": "[rɪˈlækst]"
+  },
+  {
+    "name": "relaxing",
+    "trans": ["v. يسترخي؛ يرتاح (صيغة gerund لـ relax)؛ يخفف؛ يرتخي"],
+    "usphone": "[rɪˈlæksɪŋ]",
+    "ukphone": "[rɪˈlæksɪŋ]"
+  },
+  {
+    "name": "release",
+    "trans": ["n. الإطلاق؛ النشر؛ التنازل"],
+    "usphone": "[rɪˈliːs]",
+    "ukphone": "[rɪˈliːs]"
+  },
+  {
+    "name": "reliable",
+    "trans": ["n. الشخص الموثوق به"],
+    "usphone": "[rɪˈlaɪəbl]",
+    "ukphone": "[rɪˈlaɪəb(ə)l]"
+  },
+  {
+    "name": "religion",
+    "trans": ["n. الدين؛ المعتقد الديني"],
+    "usphone": "[rɪˈlɪdʒən]",
+    "ukphone": "[rɪˈlɪdʒən]"
+  },
+  {
+    "name": "religious",
+    "trans": ["n. الراهب؛ الراهبة"],
+    "usphone": "[rɪˈlɪdʒəs]",
+    "ukphone": "[rɪˈlɪdʒəs]"
+  },
+  {
+    "name": "remain",
+    "trans": ["n. الآثار؛ البقايا؛ الحطام"],
+    "usphone": "[rɪˈmeɪn]",
+    "ukphone": "[rɪˈmeɪn]"
+  },
+  {
+    "name": "remind",
+    "trans": ["vt. يذكر؛ يعيد إلى الذاكرة"],
+    "usphone": "[rɪˈmaɪnd]",
+    "ukphone": "[rɪˈmaɪnd]"
+  },
+  {
+    "name": "remote",
+    "trans": ["n. البعيد"],
+    "usphone": "[rɪˈmoʊt]",
+    "ukphone": "[rɪˈməʊt]"
+  },
+  {
+    "name": "rent",
+    "trans": ["n. الإيجار"],
+    "usphone": "[rent]",
+    "ukphone": "[rent]"
+  },
+  {
+    "name": "repair",
+    "trans": ["n. الإصلاح، الترميم؛ الجزء المصلح"],
+    "usphone": "[rɪˈper]",
+    "ukphone": "[rɪˈpeə(r)]"
+  },
+  {
+    "name": "repeat",
+    "trans": ["n. التكرار؛ النسخة"],
+    "usphone": "[rɪˈpiːt]",
+    "ukphone": "[rɪˈpiːt]"
+  },
+  {
+    "name": "repeated",
+    "trans": ["adj. المتكرر، المتكرر"],
+    "usphone": "[rɪˈpiːtɪd]",
+    "ukphone": "[rɪˈpiːtɪd]"
+  },
+  {
+    "name": "represent",
+    "trans": ["vt. يمثل؛ يعبر عن؛ يصور؛ يتذكر؛ يعيد تقديم"],
+    "usphone": "[ˌreprɪˈzent]",
+    "ukphone": "[ˌreprɪˈzent]"
+  },
+  {
+    "name": "request",
+    "trans": ["n. الطلب؛ الحاجة"],
+    "usphone": "[rɪˈkwest]",
+    "ukphone": "[rɪˈkwest]"
+  },
+  {
+    "name": "require",
+    "trans": ["vt. يحتاج؛ يطلب؛ يأمر"],
+    "usphone": "[rɪˈkwaɪər]",
+    "ukphone": "[rɪˈkwaɪə(r)]"
+  },
+  {
+    "name": "reservation",
+    "trans": ["n. الحجز، الحجز المسبق؛ الحجز"],
+    "usphone": "[ˌrezərˈveɪʃn]",
+    "ukphone": "[ˌrezəˈveɪʃn]"
+  },
+  {
+    "name": "resource",
+    "trans": ["n. الموارد، الإمكانيات المالية؛ الوسائل؛ الحيلة"],
+    "usphone": "[ˈriːsɔːrs; rɪˈsɔːrs]",
+    "ukphone": "[rɪˈsɔːs]"
+  },
+  {
+    "name": "respect",
+    "trans": ["n. الاحترام، التقدير؛ الجانب؛ الاحترام"],
+    "usphone": "[rɪˈspekt]",
+    "ukphone": "[rɪˈspekt]"
+  },
+  {
+    "name": "responsibility",
+    "trans": ["n. المسؤولية، الواجب؛ الالتزام"],
+    "usphone": "[rɪˌspɑːnsəˈbɪləti]",
+    "ukphone": "[rɪˌspɒnsəˈbɪləti]"
+  },
+  {
+    "name": "responsible",
+    "trans": ["adj. المسؤول، الموثوق؛ ذو المسؤولية"],
+    "usphone": "[rɪˈspɑːnsəbl]",
+    "ukphone": "[rɪˈspɒnsəb(ə)l]"
+  },
+  {
+    "name": "result",
+    "trans": ["n. النتيجة؛ النجاح؛ الإجابة؛ نتيجة المباراة"],
+    "usphone": "[rɪˈzʌlt]",
+    "ukphone": "[rɪˈzʌlt]"
+  },
+  {
+    "name": "retire",
+    "trans": ["n. التقاعد؛ الانسحاب؛ إشارة الانسحاب"],
+    "usphone": "[rɪˈtaɪər]",
+    "ukphone": "[rɪˈtaɪə(r)]"
+  },
+  {
+    "name": "retired",
+    "trans": ["adj. المتقاعد؛ المعتزل؛ المحبوس"],
+    "usphone": "[rɪˈtaɪərd]",
+    "ukphone": "[rɪˈtaɪəd]"
+  },
+  {
+    "name": "revise",
+    "trans": ["n. التنقيح؛ التصحيح"],
+    "usphone": "[rɪˈvaɪz]",
+    "ukphone": "[rɪˈvaɪz]"
+  },
+  {
+    "name": "rise",
+    "trans": ["n. الارتفاع؛ المرتفعات؛ الزيادة؛ الظهور"],
+    "usphone": "[raɪz]",
+    "ukphone": "[raɪz]"
+  },
+  {
+    "name": "risk",
+    "trans": ["n. المخاطرة؛ الخطر؛ المغامرة"],
+    "usphone": "[rɪsk]",
+    "ukphone": "[rɪsk]"
+  },
+  {
+    "name": "robot",
+    "trans": ["n. الروبوت؛ جهاز التحكم عن بعد، الآلة الأوتوماتيكية؛ الشخص الذي يعمل بشكل آلي"],
+    "usphone": "[ˈroʊbɑːt]",
+    "ukphone": "[ˈrəʊbɒt]"
+  },
+  {
+    "name": "roll",
+    "trans": ["n. اللفافة، الشكل الملفوف؛ القائمة؛ الهزاز"],
+    "usphone": "[roʊl]",
+    "ukphone": "[rəʊl]"
+  },
+  {
+    "name": "romantic",
+    "trans": ["n. الشخص الرومانسي"],
+    "usphone": "[roʊˈmæntɪk]",
+    "ukphone": "[rəʊˈmæntɪk]"
+  },
+  {
+    "name": "rope",
+    "trans": ["n. الحبل، الحبل المربوط"],
+    "usphone": "[roʊp]",
+    "ukphone": "[rəʊp]"
+  },
+  {
+    "name": "rough",
+    "trans": ["n. الأرض الوعرة؛ المواد الخام؛ الجزء الخشن"],
+    "usphone": "[rʌf]",
+    "ukphone": "[rʌf]"
+  },
+  {
+    "name": "row",
+    "trans": ["n. الصف؛ الصف؛ التجديف؛ الشارع؛ الضوضاء"],
+    "usphone": "[roʊ; raʊ]",
+    "ukphone": "[rəʊ; raʊ]"
+  },
+  {
+    "name": "royal",
+    "trans": ["n. العائلة المالكة؛ أفراد العائلة المالكة"],
+    "usphone": "[ˈrɔɪəl]",
+    "ukphone": "[ˈrɔɪəl]"
+  },
+  {
+    "name": "rugby",
+    "trans": ["n. كرة الرجبي الإنجليزي؛ راجبي (مدينة في وسط إنجلترا)"],
+    "usphone": "[ˈrʌɡbi]",
+    "ukphone": "[ˈrʌɡbi]"
+  },
+  {
+    "name": "rule",
+    "trans": ["n. الحكم؛ القاعدة"],
+    "usphone": "[ruːl]",
+    "ukphone": "[ruːl]"
+  },
+  {
+    "name": "safety",
+    "trans": ["n. الأمان؛ التأمين؛ جهاز الأمان؛ جهاز الحماية؛ الضربة"],
+    "usphone": "[ˈseɪfti]",
+    "ukphone": "[ˈseɪfti]"
+  },
+  {
+    "name": "sail",
+    "trans": ["n. الشراع، الستارة؛ الإبحار"],
+    "usphone": "[seɪl]",
+    "ukphone": "[seɪl]"
+  },
+  {
+    "name": "sailor",
+    "trans": ["n. البحار، البحارة؛ المسافرون بالسفينة"],
+    "usphone": "[ˈseɪlər]",
+    "ukphone": "[ˈseɪlə(r)]"
+  },
+  {
+    "name": "sample",
+    "trans": ["n. العينة؛ العينة؛ المثال"],
+    "usphone": "[ˈsæmpl]",
+    "ukphone": "[ˈsɑːmp(ə)l]"
+  },
+  {
+    "name": "sand",
+    "trans": ["n. الرمال؛ الأرض الرملية؛ الشاطئ الرملي؛ الرمال"],
+    "usphone": "[sænd]",
+    "ukphone": "[sænd]"
+  },
+  {
+    "name": "scan",
+    "trans": ["n. المسح؛ التصفح؛ التأمل؛ النظر بدقة"],
+    "usphone": "[skæn]",
+    "ukphone": "[skæn]"
+  },
+  {
+    "name": "scientific",
+    "trans": ["adj. العلمي، النظامي"],
+    "usphone": "[ˌsaɪənˈtɪfɪk]",
+    "ukphone": "[ˌsaɪənˈtɪfɪk]"
+  },
+  {
+    "name": "script",
+    "trans": ["n. النص؛ الخط اليدوي؛ الحروف المستخدمة في الكتابة"],
+    "usphone": "[skrɪpt]",
+    "ukphone": "[skrɪpt]"
+  },
+  {
+    "name": "sculpture",
+    "trans": ["n. النحت؛ النقش؛ الحفر"],
+    "usphone": "[ˈskʌlptʃər]",
+    "ukphone": "[ˈskʌlptʃə(r)]"
+  },
+  {
+    "name": "secondary",
+    "trans": ["n. المساعد؛ الوكيل"],
+    "usphone": "[ˈsekənderi]",
+    "ukphone": "[ˈsekənd(ə)ri]"
+  },
+  {
+    "name": "security",
+    "trans": ["n. الأمن؛ الضمان؛ السند؛ الضمانة"],
+    "usphone": "[sɪˈkjʊrəti]",
+    "ukphone": "[sɪˈkjʊərəti]"
+  },
+  {
+    "name": "seed",
+    "trans": ["n. البذور؛ الأساس؛ السائل المنوي؛ البرعم؛ الأحفاد؛ السبب"],
+    "usphone": "[siːd]",
+    "ukphone": "[siːd]"
+  },
+  {
+    "name": "sensible",
+    "trans": ["n. الأشياء التي يمكن الشعور بها؛ الشخص الحساس"],
+    "usphone": "[ˈsensəb(ə)l]",
+    "ukphone": "[ˈsensəb(ə)l]"
+  },
+  {
+    "name": "separate",
+    "trans": ["n. فصل؛ نسخة مطبوعة"],
+    "usphone": "[ˈseprət]",
+    "ukphone": "[ˈseprət]"
+  },
+  {
+    "name": "seriously",
+    "trans": ["adv. بجدية؛ بجدية كبيرة، بجدية شديدة"],
+    "usphone": "[ˈsɪriəsli]",
+    "ukphone": "[ˈsɪəriəsli]"
+  },
+  {
+    "name": "servant",
+    "trans": ["n. الخادم، الخادمة؛ الموظف الحكومي؛ العامل"],
+    "usphone": "[ˈsɜːrvənt]",
+    "ukphone": "[ˈsɜːvənt]"
+  },
+  {
+    "name": "set",
+    "trans": ["n. [رياضيات] مجموعة؛ مجموعة من الأشياء؛ المشهد؛ [آلات] الجهاز"],
+    "usphone": "[set]",
+    "ukphone": "[set]"
+  },
+  {
+    "name": "setting",
+    "trans": ["n. البيئة؛ التركيب؛ التصميم؛ [فلك] الغروب"],
+    "usphone": "[ˈsetɪŋ]",
+    "ukphone": "[ˈsetɪŋ]"
+  },
+  {
+    "name": "sex",
+    "trans": ["n. الجنس؛ النوع؛ السلوك الجنسي؛ الإباحية"],
+    "usphone": "[seks]",
+    "ukphone": "[seks]"
+  },
+  {
+    "name": "sexual",
+    "trans": ["adj. الجنسي؛ الجنسي؛ ذي الجنس"],
+    "usphone": "[ˈsekʃuəl]",
+    "ukphone": "[ˈsekʃuəl]"
+  },
+  {
+    "name": "shake",
+    "trans": ["n. الاهتزاز؛ الارتجاف"],
+    "usphone": "[ʃeɪk]",
+    "ukphone": "[ʃeɪk]"
+  },
+  {
+    "name": "share",
+    "trans": ["n. الحصة؛ الأسهم"],
+    "usphone": "[ʃer]",
+    "ukphone": "[ʃeə(r)]"
+  },
+  {
+    "name": "sharp",
+    "trans": ["n. الرأس المدبب؛ المحتال؛ الخبير"],
+    "usphone": "[ʃɑːrp]",
+    "ukphone": "[ʃɑːp]"
+  },
+  {
+    "name": "shelf",
+    "trans": ["n. الرف؛ الرفوف؛ الأرفف؛ الشعاب المرجانية"],
+    "usphone": "[ʃelf]",
+    "ukphone": "[ʃelf]"
+  },
+  {
+    "name": "shell",
+    "trans": ["n. القشرة؛ الصدفة؛ القذيفة؛ الشكل الخارجي"],
+    "usphone": "[ʃel]",
+    "ukphone": "[ʃel]"
+  },
+  {
+    "name": "shift",
+    "trans": ["n. الحركة؛ التغيير؛ الوسيلة؛ المناوبة"],
+    "usphone": "[ʃɪft]",
+    "ukphone": "[ʃɪft]"
+  },
+  {
+    "name": "shine",
+    "trans": ["vt. يسلط الضوء؛ يلمع؛ يوجه الضوء إلى؛ (عامية) يجعل شيئًا لامعًا أو لامعًا عن طريق الفرك"],
+    "usphone": "[ʃaɪn]",
+    "ukphone": "[ʃaɪn]"
+  },
+  {
+    "name": "shiny",
+    "trans": ["adj. اللامع، المصقول؛ المتألق؛ الواضح؛ البالية"],
+    "usphone": "[ˈʃaɪni]",
+    "ukphone": "[ˈʃaɪni]"
+  },
+  {
+    "name": "shoot",
+    "trans": ["ن. الرماية؛ التصوير؛ الصيد؛ الجري السريع"],
+    "usphone": "[ʃuːt]",
+    "ukphone": "[ʃuːt]"
+  },
+  {
+    "name": "shy",
+    "trans": ["ن. القذف؛ الارتعاش"],
+    "usphone": "[ʃaɪ]",
+    "ukphone": "[ʃaɪ]"
+  },
+  {
+    "name": "sight",
+    "trans": ["ن. البصر؛ المنظر؛ الأفق؛ الرأي"],
+    "usphone": "[saɪt]",
+    "ukphone": "[saɪt]"
+  },
+  {
+    "name": "signal",
+    "trans": ["ن. الإشارة؛ الشفرة؛ الفتيل"],
+    "usphone": "[ˈsɪɡnəl]",
+    "ukphone": "[ˈsɪɡnəl]"
+  },
+  {
+    "name": "silent",
+    "trans": ["ن. الفيلم الصامت"],
+    "usphone": "[ˈsaɪlənt]",
+    "ukphone": "[ˈsaɪlənt]"
+  },
+  {
+    "name": "silly",
+    "trans": ["ن. الأحمق"],
+    "usphone": "[ˈsɪli]",
+    "ukphone": "[ˈsɪli]"
+  },
+  {
+    "name": "similarity",
+    "trans": ["ن. التشابه؛ النقطة المشتركة"],
+    "usphone": "[ˌsɪməˈlærəti]",
+    "ukphone": "[ˌsɪməˈlærəti]"
+  },
+  {
+    "name": "similarly",
+    "trans": ["ح. بالطريقة ذاتها؛ على غرار"],
+    "usphone": "[ˈsɪmələrli]",
+    "ukphone": "[ˈsɪmələli]"
+  },
+  {
+    "name": "simply",
+    "trans": ["ح. ببساطة؛ فقط؛ حرفياً؛ بساطة؛ صراحة"],
+    "usphone": "[ˈsɪmpli]",
+    "ukphone": "[ˈsɪmpli]"
+  },
+  {
+    "name": "since",
+    "trans": ["ح. لأن؛ بسبب؛ بما أن؛ منذ؛ بعد"],
+    "usphone": "[sɪns]",
+    "ukphone": "[sɪns]"
+  },
+  {
+    "name": "sink",
+    "trans": ["ن. الحوض؛ الحوض الغسالة؛ حفرة الصرف"],
+    "usphone": "[sɪŋk]",
+    "ukphone": "[sɪŋk]"
+  },
+  {
+    "name": "slice",
+    "trans": ["ن. الشرائح؛ الأجزاء؛ سكين المطبخ، مجرفة النار"],
+    "usphone": "[slaɪs]",
+    "ukphone": "[slaɪs]"
+  },
+  {
+    "name": "slightly",
+    "trans": ["ح. قليلاً؛ طفيفاً؛ رقيقاً"],
+    "usphone": "[ˈslaɪtli]",
+    "ukphone": "[ˈslaɪtli]"
+  },
+  {
+    "name": "slow",
+    "trans": ["ح. بطيء؛ متباطئ؛ خامل"],
+    "usphone": "[sloʊ]",
+    "ukphone": "[sləʊ]"
+  },
+  {
+    "name": "smart",
+    "trans": ["ح. ذكي؛ بارع؛ سريع البديهة؛ قوي؛ أنيق؛ شديد؛ عصري"],
+    "usphone": "[smɑːrt]",
+    "ukphone": "[smɑːt]"
+  },
+  {
+    "name": "smooth",
+    "trans": ["ن. الجزء الملساء؛ منطقة مستوية"],
+    "usphone": "[smuːð]",
+    "ukphone": "[smuːð]"
+  },
+  {
+    "name": "software",
+    "trans": ["ن. البرمجيات"],
+    "usphone": "[ˈsɔːftwer]",
+    "ukphone": "[ˈsɒftweə(r)]"
+  },
+  {
+    "name": "soil",
+    "trans": ["ن. الأرض؛ التربة؛ الدولة؛ البراز؛ الزراعة؛ البيئة الخصبة"],
+    "usphone": "[sɔɪl]",
+    "ukphone": "[sɔɪl]"
+  },
+  {
+    "name": "solid",
+    "trans": ["ن. الصلب؛ المكعب"],
+    "usphone": "[ˈsɑːlɪd]",
+    "ukphone": "[ˈsɒlɪd]"
+  },
+  {
+    "name": "sort",
+    "trans": ["ن. النوع؛ الطريقة؛ النوعية"],
+    "usphone": "[sɔːrt]",
+    "ukphone": "[sɔːt]"
+  },
+  {
+    "name": "southern",
+    "trans": ["ن. الجنوبي"],
+    "usphone": "[ˈsʌðərn]",
+    "ukphone": "[ˈsʌðən]"
+  },
+  {
+    "name": "specifically",
+    "trans": ["ح. بشكل خاص؛ بوضوح"],
+    "usphone": "[spəˈsɪfɪkli]",
+    "ukphone": "[spəˈsɪfɪkli]"
+  },
+  {
+    "name": "spending",
+    "trans": ["ن. النفقات؛ التكاليف"],
+    "usphone": "[ˈspendɪŋ]",
+    "ukphone": "[ˈspendɪŋ]"
+  },
+  {
+    "name": "spicy",
+    "trans": ["ح. حار؛ عطري؛ متبل؛ فاحش"],
+    "usphone": "[ˈspaɪsi]",
+    "ukphone": "[ˈspaɪsi]"
+  },
+  {
+    "name": "spirit",
+    "trans": ["ن. الروح؛ النفس؛ المزاج؛ العزيمة؛ الكحول"],
+    "usphone": "[ˈspɪrɪt]",
+    "ukphone": "[ˈspɪrɪt]"
+  },
+  {
+    "name": "spoken",
+    "trans": ["ف. تحدث (كلمة past participle من speak)"],
+    "usphone": "[ˈspoʊkən]",
+    "ukphone": "[ˈspəʊkən]"
+  },
+  {
+    "name": "spot",
+    "trans": ["ن. المكان؛ البقعة"],
+    "usphone": "[spɑːt]",
+    "ukphone": "[spɒt]"
+  },
+  {
+    "name": "spread",
+    "trans": ["ن. الانتشار؛ الامتداد"],
+    "usphone": "[spred]",
+    "ukphone": "[spred]"
+  },
+  {
+    "name": "stadium",
+    "trans": ["ن. الملعب الرياضي؛ الملعب الكبير في الهواء الطلق"],
+    "usphone": "[ˈsteɪdiəm]",
+    "ukphone": "[ˈsteɪdiəm]"
+  },
+  {
+    "name": "staff",
+    "trans": ["ن. الموظف؛ المستشار؛ العصا؛ الدعم"],
+    "usphone": "[stæf]",
+    "ukphone": "[stɑːf]"
+  },
+  {
+    "name": "standard",
+    "trans": ["ن. المعيار؛ المستوى؛ العلم؛ وحدة القياس"],
+    "usphone": "[ˈstændərd]",
+    "ukphone": "[ˈstændəd]"
+  },
+  {
+    "name": "state",
+    "trans": ["ن. البلد؛ الولاية؛ الوضع"],
+    "usphone": "[steɪt]",
+    "ukphone": "[steɪt]"
+  },
+  {
+    "name": "statistic",
+    "trans": ["ن. القيمة الإحصائية"],
+    "usphone": "[stəˈtɪstɪk]",
+    "ukphone": "[stəˈtɪstɪk]"
+  },
+  {
+    "name": "statue",
+    "trans": ["ن. التمثال؛ المجسم"],
+    "usphone": "[ˈstætʃuː]",
+    "ukphone": "[ˈstætʃuː]"
+  },
+  {
+    "name": "stick",
+    "trans": ["ن. العصا؛ العصا؛ الشخص الغبي"],
+    "usphone": "[stɪk]",
+    "ukphone": "[stɪk]"
+  },
+  {
+    "name": "still",
+    "trans": ["ح. مع ذلك؛ ولكن؛ رغم ذلك"],
+    "usphone": "[stɪl]",
+    "ukphone": "[stɪl]"
+  },
+  {
+    "name": "store",
+    "trans": ["ن. المتجر؛ المخزن؛ المخزن"],
+    "usphone": "[stɔːr]",
+    "ukphone": "[stɔː(r)]"
+  },
+  {
+    "name": "stranger",
+    "trans": ["ن. الغريب؛ الشخص من الخارج؛ الشخص الغريب"],
+    "usphone": "[ˈstreɪndʒər]",
+    "ukphone": "[ˈstreɪndʒə(r)]"
+  },
+  {
+    "name": "strength",
+    "trans": ["ن. القوة؛ القوة؛ القوات؛ الميزة"],
+    "usphone": "[streŋθ]",
+    "ukphone": "[streŋθ]"
+  },
+  {
+    "name": "string",
+    "trans": ["ن. الخط؛ الحبل؛ الحبل الرفيع؛ سلسلة واحدة، صف واحد"],
+    "usphone": "[strɪŋ]",
+    "ukphone": "[strɪŋ]"
+  },
+  {
+    "name": "strongly",
+    "trans": ["ح. بقوة؛ بقوة؛ بشدة؛ برائحة قوية"],
+    "usphone": "[ˈstrɔːŋli]",
+    "ukphone": "[ˈstrɒŋli]"
+  },
+  {
+    "name": "studio",
+    "trans": ["ن. الاستوديو؛ [الإذاعة],[التلفزيون] الاستوديو؛ المرسم؛ استوديو الأفلام"],
+    "usphone": "[ˈstuːdioʊ]",
+    "ukphone": "[ˈstjuːdiəʊ]"
+  },
+  {
+    "name": "stuff",
+    "trans": ["ن. الأشياء؛ المواد؛ الحشو؛ المواد الخام"],
+    "usphone": "[stʌf]",
+    "ukphone": "[stʌf]"
+  },
+  {
+    "name": "substance",
+    "trans": ["ن. المادة؛ الجوهر؛ الأصول؛ الموضوع الأساسي"],
+    "usphone": "[ˈsʌbstəns]",
+    "ukphone": "[ˈsʌbstəns]"
+  },
+  {
+    "name": "successfully",
+    "trans": ["ح. بنجاح؛ بسلاسة"],
+    "usphone": "[səkˈsesfəli]",
+    "ukphone": "[səkˈsesfəli]"
+  },
+  {
+    "name": "sudden",
+    "trans": ["ن. حدث مفاجئ"],
+    "usphone": "[ˈsʌdn]",
+    "ukphone": "[ˈsʌd(ə)n]"
+  },
+  {
+    "name": "suffer",
+    "trans": ["ف. يعاني؛ يتحمل؛ يشعر بالألم؛ يختبر؛ يتضرر"],
+    "usphone": "[ˈsʌfər]",
+    "ukphone": "[ˈsʌfə(r)]"
+  },
+  {
+    "name": "suit",
+    "trans": ["ن. الدعوى؛ الطلب؛ البدلة، البدلة الرسمية؛ مجموعة من الملابس"],
+    "usphone": "[suːt]",
+    "ukphone": "[suːt]"
+  },
+  {
+    "name": "suitable",
+    "trans": ["ح. مناسب؛ متناسب"],
+    "usphone": "[ˈsuːtəbl]",
+    "ukphone": "[ˈsuːtəb(ə)l]"
+  },
+  {
+    "name": "summarize",
+    "trans": ["ف. يلخص؛ يوجز"],
+    "usphone": "[ˈsʌməraɪz]",
+    "ukphone": "[ˈsʌməraɪz]"
+  },
+  {
+    "name": "summary",
+    "trans": ["ن. الملخص، الملخص، الخلاصة"],
+    "usphone": "[ˈsʌməri]",
+    "ukphone": "[ˈsʌməri]"
+  },
+  {
+    "name": "supply",
+    "trans": ["ن. الإمدادات؛ اللوازم"],
+    "usphone": "[səˈplaɪ]",
+    "ukphone": "[səˈplaɪ]"
+  },
+  {
+    "name": "supporter",
+    "trans": ["ن. المؤيد؛ الداعم"],
+    "usphone": "[səˈpɔːrtər]",
+    "ukphone": "[səˈpɔːtə(r)]"
+  },
+  {
+    "name": "surely",
+    "trans": ["ح. بالطبع؛ بلا شك؛ بثبات؛ بثبات"],
+    "usphone": "[ˈʃʊrli]",
+    "ukphone": "[ˈʃʊəli; ˈʃɔːli]"
+  },
+  {
+    "name": "surface",
+    "trans": ["ن. السطح؛ الطبقة الخارجية؛ المظهر"],
+    "usphone": "[ˈsɜːrfɪs]",
+    "ukphone": "[ˈsɜːfɪs]"
+  },
+  {
+    "name": "survive",
+    "trans": ["ف. ينجو؛ يبقى على قيد الحياة"],
+    "usphone": "[sərˈvaɪv]",
+    "ukphone": "[səˈvaɪv]"
+  },
+  {
+    "name": "swim",
+    "trans": ["ن. السباحة؛ العوم؛ الدوار"],
+    "usphone": "[swɪm]",
+    "ukphone": "[swɪm]"
+  },
+  {
+    "name": "switch",
+    "trans": ["ن. المفتاح؛ التحويل؛ السوط"],
+    "usphone": "[swɪtʃ]",
+    "ukphone": "[swɪtʃ]"
+  },
+  {
+    "name": "symptom",
+    "trans": ["ن. [السريرية] الأعراض؛ العلامات"],
+    "usphone": "[ˈsɪmptəm]",
+    "ukphone": "[ˈsɪmptəm]"
+  },
+  {
+    "name": "tail",
+    "trans": ["ن. الذيل؛ الأثر؛ الضفيرة؛ السترة"],
+    "usphone": "[teɪl]",
+    "ukphone": "[teɪl]"
+  },
+  {
+    "name": "talent",
+    "trans": ["ن. الموهبة؛ العبقرية؛ الذكاء"],
+    "usphone": "[ˈtælənt]",
+    "ukphone": "[ˈtælənt]"
+  },
+  {
+    "name": "talented",
+    "trans": ["ح. موهوب؛ متعدد المواهب"],
+    "usphone": "[ˈtæləntɪd]",
+    "ukphone": "[ˈtæləntɪd]"
+  },
+  {
+    "name": "tape",
+    "trans": ["ن. الشريط؛ الشريط المغناطيسي؛ الشريط؛ شريط القياس"],
+    "usphone": "[teɪp]",
+    "ukphone": "[teɪp]"
+  },
+  {
+    "name": "tax",
+    "trans": ["ن. الضريبة؛ العبء الثقيل"],
+    "usphone": "[tæks]",
+    "ukphone": "[tæks]"
+  },
+  {
+    "name": "technical",
+    "trans": ["ح. التقنية؛ التكنولوجية؛ المتخصص"],
+    "usphone": "[ˈteknɪkl]",
+    "ukphone": "[ˈteknɪk(ə)l]"
+  },
+  {
+    "name": "technique",
+    "trans": ["ن. المهارة؛ الأسلوب"],
+    "usphone": "[tekˈniːk]",
+    "ukphone": "[tekˈniːk]"
+  },
+  {
+    "name": "tend",
+    "trans": ["ف. يعتني، يهتم"],
+    "usphone": "[tend]",
+    "ukphone": "[tend]"
+  },
+  {
+    "name": "tent",
+    "trans": ["ن. الخيمة؛ المسكن؛ الستارة"],
+    "usphone": "[tent]",
+    "ukphone": "[tent]"
+  },
+  {
+    "name": "that",
+    "trans": ["ح. لأن؛ حتى"],
+    "usphone": "[ðæt]",
+    "ukphone": "[ðæt]"
+  },
+  {
+    "name": "theirs",
+    "trans": ["ض. ضميرهم؛ ضميرهن؛ ضميرهم"],
+    "usphone": "[ðerz]",
+    "ukphone": "[ðeəz]"
+  },
+  {
+    "name": "theme",
+    "trans": ["ن. الموضوع؛ اللحن الرئيسي؛ العنوان"],
+    "usphone": "[θiːm]",
+    "ukphone": "[θiːm]"
+  },
+  {
+    "name": "theory",
+    "trans": ["ن. النظرية؛ المبدأ؛ المذهب؛ الافتراض"],
+    "usphone": "[ˈθiːəri]",
+    "ukphone": "[ˈθɪəri]"
+  },
+  {
+    "name": "therefore",
+    "trans": ["ح. لذلك؛ لذا"],
+    "usphone": "[ˈðerfɔːr]",
+    "ukphone": "[ˈðeəfɔː(r)]"
+  },
+  {
+    "name": "this",
+    "trans": ["ح. هذا؛ هذه؛ هذا؛ الآن"],
+    "usphone": "[ðɪs]",
+    "ukphone": "[ðɪs]"
+  },
+  {
+    "name": "though",
+    "trans": ["ح. على الرغم من"],
+    "usphone": "[ðoʊ]",
+    "ukphone": "[ðəʊ]"
+  },
+  {
+    "name": "throat",
+    "trans": ["ن. الحلق؛ الحنجرة؛ الطريق الضيق"],
+    "usphone": "[θroʊt]",
+    "ukphone": "[θrəʊt]"
+  },
+  {
+    "name": "throughout",
+    "trans": ["ح. عبر"],
+    "usphone": "[θruːˈaʊt]",
+    "ukphone": "[θruːˈaʊt]"
+  },
+  {
+    "name": "tight",
+    "trans": ["ح. مشدود؛ محكم؛ مضغوط؛ مضطرب؛ شديد؛ مشغول؛ بخيل"],
+    "usphone": "[taɪt]",
+    "ukphone": "[taɪt]"
+  },
+  {
+    "name": "till",
+    "trans": ["ح. حتى"],
+    "usphone": "[tɪl]",
+    "ukphone": "[tɪl]"
+  },
+  {
+    "name": "tin",
+    "trans": ["ن. القصدير؛ العلب؛ صفيح"],
+    "usphone": "[tɪn]",
+    "ukphone": "[tɪn]"
+  },
+  {
+    "name": "tiny",
+    "trans": ["ح. صغير؛ قليل"],
+    "usphone": "[ˈtaɪni]",
+    "ukphone": "[ˈtaɪni]"
+  },
+  {
+    "name": "tip",
+    "trans": ["ن. البقشيش؛ النصيحة؛ النصيحة الصغيرة؛ الضربة الخفيفة"],
+    "usphone": "[tɪp]",
+    "ukphone": "[tɪp]"
+  },
+  {
+    "name": "toe",
+    "trans": ["ن. إصبع القدم؛ طرف القدم"],
+    "usphone": "[toʊ]",
+    "ukphone": "[təʊ]"
+  },
+  {
+    "name": "tongue",
+    "trans": ["ن. اللسان؛ اللغة"],
+    "usphone": "[tʌŋ]",
+    "ukphone": "[tʌŋ]"
+  },
+  {
+    "name": "total",
+    "trans": ["ن. المجموع"],
+    "usphone": "[ˈtoʊtl]",
+    "ukphone": "[ˈtəʊt(ə)l]"
+  },
+  {
+    "name": "totally",
+    "trans": ["ح. كلياً"],
+    "usphone": "[ˈtoʊtəli]",
+    "ukphone": "[ˈtəʊtəli]"
+  },
+  {
+    "name": "touch",
+    "trans": ["ن. الاتصال؛ اللمس؛ النغمة؛ القليل"],
+    "usphone": "[tʌtʃ]",
+    "ukphone": "[tʌtʃ]"
+  },
+  {
+    "name": "tour",
+    "trans": ["ن. السفر؛ الجولة؛ الجولة المسرحية"],
+    "usphone": "[tʊr]",
+    "ukphone": "[tʊə(r)]"
+  },
+  {
+    "name": "trade",
+    "trans": ["ن. التجارة؛ الصفقة؛ المهنة"],
+    "usphone": "[treɪd]",
+    "ukphone": "[treɪd]"
+  },
+  {
+    "name": "translate",
+    "trans": ["ف. يترجم؛ يحول؛ يفسر؛ يتحول إلى؛ ينقل"],
+    "usphone": "[trænzˈleɪt; trænsˈleɪt]",
+    "ukphone": "[trænzˈleɪt]"
+  },
+  {
+    "name": "translation",
+    "trans": ["ن. الترجمة؛ الترجمة؛ التحويل؛ النقل"],
+    "usphone": "[trænzˈleɪʃn; trænsˈleɪʃn]",
+    "ukphone": "[trænzˈleɪʃn; trænsˈleɪʃn]"
+  },
+  {
+    "name": "transport",
+    "trans": ["ن. النقل؛ الطائرة؛ النشوة؛ المنفى"],
+    "usphone": "[ˈtrænspɔːrt]",
+    "ukphone": "[ˈtrænspɔːt]"
+  },
+  {
+    "name": "treat",
+    "trans": ["ن. الضيافة"],
+    "usphone": "[triːt]",
+    "ukphone": "[triːt]"
+  },
+  {
+    "name": "treatment",
+    "trans": ["ن. العلاج؛ المعاملة؛ التعامل"],
+    "usphone": "[ˈtriːtmənt]",
+    "ukphone": "[ˈtriːtmənt]"
+  },
+  {
+    "name": "trend",
+    "trans": ["ن. الاتجاه؛ الميل"],
+    "usphone": "[trend]",
+    "ukphone": "[trend]"
+  },
+  {
+    "name": "trick",
+    "trans": ["ن. الحيلة؛ الخدعة؛ الحيلة؛ الحيلة؛ الخدعة؛ الاحتيال"],
+    "usphone": "[trɪk]",
+    "ukphone": "[trɪk]"
+  },
+  {
+    "name": "truth",
+    "trans": ["ن. الحقيقة؛ الواقع؛ الصدق؛ الجوهر"],
+    "usphone": "[truːθ]",
+    "ukphone": "[truːθ]"
+  },
+  {
+    "name": "tube",
+    "trans": ["ن. الأنبوب؛ الأنبوب الإلكتروني؛ النفق؛ التلفزيون"],
+    "usphone": "[tuːb]",
+    "ukphone": "[tjuːb]"
+  },
+  {
+    "name": "type",
+    "trans": ["ن. النوع؛ الصنف؛ النموذج؛ النمط"],
+    "usphone": "[taɪp]",
+    "ukphone": "[taɪp]"
+  },
+  {
+    "name": "typically",
+    "trans": ["ح. تمثيلياً؛ كنموذج"],
+    "usphone": "[ˈtɪpɪkli]",
+    "ukphone": "[ˈtɪpɪkli]"
+  },
+  {
+    "name": "tyre",
+    "trans": ["ن. الإطار؛ إطار العجلة؛ الإطارات"],
+    "usphone": "[ˈtaɪər]",
+    "ukphone": "[ˈtaɪə(r)]"
+  },
+  {
+    "name": "ugly",
+    "trans": ["ح. قبيح؛ شرير؛ مثير الاشمئزاز"],
+    "usphone": "[ˈʌɡli]",
+    "ukphone": "[ˈʌɡli]"
+  },
+  {
+    "name": "unable",
+    "trans": ["ح. غير قادر؛ غير قابل للقيام به؛ [العمل] غير قادر على القيام به؛ غير كفء"],
+    "usphone": "[ʌnˈeɪbl]",
+    "ukphone": "[ʌnˈeɪb(ə)l]"
+  },
+  {
+    "name": "uncomfortable",
+    "trans": ["ح. غير مريح؛ غير مرتاح"],
+    "usphone": "[ʌnˈkʌmftəbl; ʌnˈkʌmfərtəbl]",
+    "ukphone": "[ʌnˈkʌmftəb(ə)l]"
+  },
+  {
+    "name": "underwear",
+    "trans": ["ن. الملابس الداخلية"],
+    "usphone": "[ˈʌndərwer]",
+    "ukphone": "[ˈʌndəweə(r)]"
+  },
+  {
+    "name": "unemployed",
+    "trans": ["صفة. العاطل عن العمل؛ غير المستغل"],
+    "usphone": "[ˌʌnɪmˈplɔɪd]",
+    "ukphone": "[ˌʌnɪmˈplɔɪd]"
+  },
+  {
+    "name": "unemployment",
+    "trans": ["ن. البطالة؛ معدل البطالة؛ عدد العاطلين عن العمل"],
+    "usphone": "[ˌʌnɪmˈplɔɪmənt]",
+    "ukphone": "[ˌʌnɪmˈplɔɪmənt]"
+  },
+  {
+    "name": "unfair",
+    "trans": ["صفة. غير عادل، ظالم"],
+    "usphone": "[ˌʌnˈfer]",
+    "ukphone": "[ˌʌnˈfeə(r)]"
+  },
+  {
+    "name": "union",
+    "trans": ["ن. الاتحاد، الجمعية؛ النقابة؛ التحالف"],
+    "usphone": "[ˈjuːniən]",
+    "ukphone": "[ˈjuːniən]"
+  },
+  {
+    "name": "unless",
+    "trans": ["حرف اقتران. ما لم يكن، إذا لم يكن"],
+    "usphone": "[ənˈles]",
+    "ukphone": "[ənˈles]"
+  },
+  {
+    "name": "unlike",
+    "trans": ["حرف جر. مختلف عن...، لا يشبه..."],
+    "usphone": "[ˌʌnˈlaɪk]",
+    "ukphone": "[ˌʌnˈlaɪk]"
+  },
+  {
+    "name": "unlikely",
+    "trans": ["صفة. غير محتمل؛ بلا أمل"],
+    "usphone": "[ʌnˈlaɪkli]",
+    "ukphone": "[ʌnˈlaɪkli]"
+  },
+  {
+    "name": "unnecessary",
+    "trans": ["صفة. غير ضروري؛ زائد، عديم الفائدة"],
+    "usphone": "[ʌnˈnesəseri]",
+    "ukphone": "[ʌnˈnesəsəri]"
+  },
+  {
+    "name": "unpleasant",
+    "trans": ["صفة. مزعج؛ غير سار"],
+    "usphone": "[ʌnˈpleznt]",
+    "ukphone": "[ʌnˈplez(ə)nt]"
+  },
+  {
+    "name": "update",
+    "trans": ["ن. التحديث؛ التحديث"],
+    "usphone": "[ˌʌpˈdeɪt]",
+    "ukphone": "[ˌʌpˈdeɪt]"
+  },
+  {
+    "name": "upon",
+    "trans": ["حرف جر. وفقًا لـ؛ بالقرب من؛ فوق"],
+    "usphone": "[əˈpɑːn]",
+    "ukphone": "[əˈpɒn]"
+  },
+  {
+    "name": "upset",
+    "trans": ["ن. الفوضى؛ الانقلاب؛ الإطاحة"],
+    "usphone": "[ˌʌpˈset]",
+    "ukphone": "[ˌʌpˈset]"
+  },
+  {
+    "name": "used",
+    "trans": ["فعل. استخدم (صيغة الماضي لـ use)؛ اعتاد (used to)"],
+    "usphone": "[juːst; juːzd]",
+    "ukphone": "[juːst]"
+  },
+  {
+    "name": "valuable",
+    "trans": ["ن. الأشياء الثمينة"],
+    "usphone": "[ˈvæljuəbl]",
+    "ukphone": "[ˈvæljuəbl]"
+  },
+  {
+    "name": "value",
+    "trans": ["ن. القيمة؛ الأهمية؛ السعر؛ الدلالة الدقيقة"],
+    "usphone": "[ˈvæljuː]",
+    "ukphone": "[ˈvæljuː]"
+  },
+  {
+    "name": "various",
+    "trans": ["صفة. متنوع؛ متعدد الجوانب"],
+    "usphone": "[ˈveriəs; ˈværiəs]",
+    "ukphone": "[ˈveəriəs]"
+  },
+  {
+    "name": "version",
+    "trans": ["ن. النسخة؛ الترجمة؛ فن الانقلاب"],
+    "usphone": "[ˈvɜːrʒn]",
+    "ukphone": "[ˈvɜːʃ(ə)n]"
+  },
+  {
+    "name": "victim",
+    "trans": ["ن. الضحية؛ المضحّى به؛ المتضرر"],
+    "usphone": "[ˈvɪktɪm]",
+    "ukphone": "[ˈvɪktɪm]"
+  },
+  {
+    "name": "view",
+    "trans": ["ن. المشاهدة؛ الرؤية؛ الرأي؛ المنظر"],
+    "usphone": "[vjuː]",
+    "ukphone": "[vjuː]"
+  },
+  {
+    "name": "viewer",
+    "trans": ["ن. المراقب؛ المشاهد؛ المتفرج؛ [آلي] المؤشر"],
+    "usphone": "[ˈvjuːər]",
+    "ukphone": "[ˈvjuːə(r)]"
+  },
+  {
+    "name": "violent",
+    "trans": ["صفة. عنيف؛ شديد"],
+    "usphone": "[ˈvaɪələnt]",
+    "ukphone": "[ˈvaɪələnt]"
+  },
+  {
+    "name": "volunteer",
+    "trans": ["ن. المتطوع؛ الجندي المتطوع"],
+    "usphone": "[ˌvɑːlənˈtɪr]",
+    "ukphone": "[ˌvɒlənˈtɪə(r)]"
+  },
+  {
+    "name": "vote",
+    "trans": ["ن. التصويت، الانتخابات؛ الأصوات؛ عدد الأصوات"],
+    "usphone": "[voʊt]",
+    "ukphone": "[vəʊt]"
+  },
+  {
+    "name": "warm",
+    "trans": ["ن. التدفئة؛ التسخين"],
+    "usphone": "[wɔːrm]",
+    "ukphone": "[wɔːm]"
+  },
+  {
+    "name": "warn",
+    "trans": ["فعل. تحذير، تنبيه؛ إخطار"],
+    "usphone": "[wɔːrn]",
+    "ukphone": "[wɔːn]"
+  },
+  {
+    "name": "warning",
+    "trans": ["ن. التحذير؛ النذير؛ الإعلان المسبق"],
+    "usphone": "[ˈwɔːrnɪŋ]",
+    "ukphone": "[ˈwɔːnɪŋ]"
+  },
+  {
+    "name": "waste",
+    "trans": ["ن. الهدر؛ النفايات؛ الأرض البور؛ التلف؛ المواد المترسبة على الأرض"],
+    "usphone": "[weɪst]",
+    "ukphone": "[weɪst]"
+  },
+  {
+    "name": "water",
+    "trans": ["ن. الماء؛ مياه البحر؛ مياه الأمطار؛ المنطقة البحرية، المساحة الكبيرة من المياه"],
+    "usphone": "[ˈwɔːtər]",
+    "ukphone": "[ˈwɔːtə(r)]"
+  },
+  {
+    "name": "wave",
+    "trans": ["ن. التذبذب؛ الموجة؛ الذروة؛ الإشارة باليد؛ التجعد"],
+    "usphone": "[weɪv]",
+    "ukphone": "[weɪv]"
+  },
+  {
+    "name": "weapon",
+    "trans": ["ن. السلاح، الأسلحة"],
+    "usphone": "[ˈwepən]",
+    "ukphone": "[ˈwepən]"
+  },
+  {
+    "name": "weigh",
+    "trans": ["ن. الموازنة؛ وزن الشيء"],
+    "usphone": "[weɪ]",
+    "ukphone": "[weɪ]"
+  },
+  {
+    "name": "western",
+    "trans": ["ن. الغربي؛ فيلم الغرب الأمريكي، رواية الغرب الأمريكي"],
+    "usphone": "[ˈwestərn]",
+    "ukphone": "[ˈwestən]"
+  },
+  {
+    "name": "whatever",
+    "trans": ["حرف اقتران. أيًا كان"],
+    "usphone": "[wətˈevər]",
+    "ukphone": "[wɒtˈevə(r)]"
+  },
+  {
+    "name": "whenever",
+    "trans": ["حرف اقتران. كلما؛ في أي وقت"],
+    "usphone": "[wenˈevər]",
+    "ukphone": "[wenˈevə(r)]"
+  },
+  {
+    "name": "whether",
+    "trans": ["حرف اقتران. سواء كان أو لم يكن"],
+    "usphone": "[ˈweðər]",
+    "ukphone": "[ˈweðə(r)]"
+  },
+  {
+    "name": "while",
+    "trans": ["حرف اقتران. رغم؛ مع ذلك؛ عندما"],
+    "usphone": "[waɪl]",
+    "ukphone": "[waɪl]"
+  },
+  {
+    "name": "whole",
+    "trans": ["ن. الكل؛ الكلية"],
+    "usphone": "[hoʊl]",
+    "ukphone": "[həʊl]"
+  },
+  {
+    "name": "will",
+    "trans": ["ن. الإرادة؛ العزم؛ المشاعر؛ الوصية؛ النية؛ الأمنية"],
+    "usphone": "[wɪl]",
+    "ukphone": "[wɪl]"
+  },
+  {
+    "name": "win",
+    "trans": ["ن. الفوز؛ النصر"],
+    "usphone": "[wɪn]",
+    "ukphone": "[wɪn]"
+  },
+  {
+    "name": "wing",
+    "trans": ["ن. الجناح؛ الجناح؛ الطيران؛ الفصيل؛ القاعة الجانبية، الغرفة الصغيرة، الممر"],
+    "usphone": "[wɪŋ]",
+    "ukphone": "[wɪŋ]"
+  },
+  {
+    "name": "within",
+    "trans": ["حرف جر. داخل"],
+    "usphone": "[wɪˈðɪn]",
+    "ukphone": "[wɪˈðɪn]"
+  },
+  {
+    "name": "wonder",
+    "trans": ["ن. الدهشة؛ المعجزة؛ الذهول"],
+    "usphone": "[ˈwʌndər]",
+    "ukphone": "[ˈwʌndə(r)]"
+  },
+  {
+    "name": "wool",
+    "trans": ["ن. الصوف؛ الخيوط الصوفية؛ خيوط الصوف؛ الأقمشة الصوفية؛ الملابس الصوفية"],
+    "usphone": "[wʊl]",
+    "ukphone": "[wʊl]"
+  },
+  {
+    "name": "worldwide",
+    "trans": ["صفة. العالمي"],
+    "usphone": "[ˌwɜːrldˈwaɪd]",
+    "ukphone": "[ˌwɜːldˈwaɪd]"
+  },
+  {
+    "name": "worry",
+    "trans": ["ن. القلق؛ الهم؛ العض"],
+    "usphone": "[ˈwɜːri]",
+    "ukphone": "[ˈwʌri]"
+  },
+  {
+    "name": "worse",
+    "trans": ["ن. الأمر الأسوأ؛ الشيء الأسوأ"],
+    "usphone": "[wɜːrs]",
+    "ukphone": "[wɜːs]"
+  },
+  {
+    "name": "worst",
+    "trans": ["ن. الأسوأ؛ الوقت الأسوأ"],
+    "usphone": "[wɜːrst]",
+    "ukphone": "[wɜːst]"
+  },
+  {
+    "name": "worth",
+    "trans": ["ن. القيمة؛ الممتلكات"],
+    "usphone": "[wɜːrθ]",
+    "ukphone": "[wɜːθ]"
+  },
+  {
+    "name": "written",
+    "trans": ["صفة. كتابي، مكتوب؛ نصي"],
+    "usphone": "[ˈrɪtn]",
+    "ukphone": "[ˈrɪt(ə)n]"
+  },
+  {
+    "name": "wrong",
+    "trans": ["ن. الشر؛ الظلم"],
+    "usphone": "[rɔːŋ]",
+    "ukphone": "[rɒŋ]"
+  },
+  {
+    "name": "yard",
+    "trans": ["ن. الفناء؛ اليارد (وحدة قياس بريطانية تساوي 3 أقدام)؛ الفناء؛ الصارية"],
+    "usphone": "[jɑːrd]",
+    "ukphone": "[jɑːd]"
+  },
+  {
+    "name": "young",
+    "trans": ["ن. الشباب؛ (من الحيوانات) الصغير، الفرخ"],
+    "usphone": "[jʌŋ]",
+    "ukphone": "[jʌŋ]"
+  },
+  {
+    "name": "youth",
+    "trans": ["ن. الشباب؛ الشباب؛ العمر الصغير؛ فترة الشباب"],
+    "usphone": "[juːθ]",
+    "ukphone": "[juːθ]"
+  }
+]
