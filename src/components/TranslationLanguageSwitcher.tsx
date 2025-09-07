@@ -13,7 +13,6 @@ type TranslationLangOption = {
 const options: TranslationLangOption[] = [
   { id: 'zh', name: '中文' },
   { id: 'ar', name: 'العربية' },
-  { id: 'en', name: 'English' },
 ]
 
 export interface TranslationLanguageSwitcherProps {
@@ -38,7 +37,7 @@ export default function TranslationLanguageSwitcher({ value, onChange }: Transla
       <span className="text-sm text-gray-600 dark:text-gray-400">{t('translation.language')}:</span>
       <Listbox value={current.id} onChange={handleChange}>
         <div className="relative">
-          <Listbox.Button className="listbox-button w-24">
+          <Listbox.Button className="listbox-button w-32">
             <span>{current.name}</span>
             <span>
               <IconChevronDown className="focus:outline-none" />
