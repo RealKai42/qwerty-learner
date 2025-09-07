@@ -47,6 +47,21 @@
     "language": "翻译语言",
     "not_available": "翻译不可用"
   },
+  "report": {
+    "modal_title": "报告翻译问题",
+    "word_label": "单词",
+    "current_translation_label": "当前翻译",
+    "correct_translation_label": "正确翻译",
+    "correction_placeholder": "请输入正确的翻译...",
+    "submit_button": "提交报告",
+    "cancel_button": "取消",
+    "submitting": "提交中...",
+    "summary_title": "准备报告翻译问题",
+    "summary_description": "您已报告了 {{count}} 个翻译问题。请在下方查看并提交给维护者。",
+    "report_to_maintainer": "报告给维护者",
+    "success_title": "报告已提交！",
+    "success_message": "感谢您帮助改进翻译。Google表单应该已在新标签页中打开。"
+  },
   "pronSwitcher": {
     "toggle_phonetic": "开关音标显示",
     "toggle_pron": "开关单词发音",

@@ -47,6 +47,21 @@
     "language": "Translation Language",
     "not_available": "Translation not available"
   },
+  "report": {
+    "modal_title": "Report Translation Issue",
+    "word_label": "Word",
+    "current_translation_label": "Current Translation",
+    "correct_translation_label": "Correct Translation",
+    "correction_placeholder": "Enter the correct translation...",
+    "submit_button": "Submit Report",
+    "cancel_button": "Cancel",
+    "submitting": "Submitting...",
+    "summary_title": "Ready to Report Translation Issues",
+    "summary_description": "You have reported {{count}} translation issues. Review them below and submit to the maintainer.",
+    "report_to_maintainer": "Report to Maintainer",
+    "success_title": "Report Submitted!",
+    "success_message": "Thank you for helping improve the translations. The Google Form should have opened in a new tab."
+  },
   "pronSwitcher": {
     "toggle_phonetic": "Toggle phonetic display",
     "toggle_pron": "Toggle word pronunciation",
