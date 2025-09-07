@@ -10,7 +10,7 @@ export function getWordTranslation(word: Word, targetLang: TranslationLanguageTy
   // Handle legacy format (string array)
   if (Array.isArray(word.trans)) {
     // Legacy format - assume Chinese
-    return targetLang === 'zh' ? word.trans : []
+    return word.trans 
   }
 
   // Handle new multi-language format (Record<TranslationLanguageType, string[]>)

@@ -4482,6 +4482,18 @@ const arabicDicts: DictionaryResource[] = [
     languageCategory: 'ar',
     translationLanguage: 'ar',
   },
+  {
+    id: 'second',
+    name: 'Second Arabic Dictionary',
+    description: 'CET-4 words with Arabic translations',
+    category: 'Arabic',
+    tags: ['基础'],
+    url: '/dicts/ar/CET-4.json',
+    length: 2607,
+    language: 'en',
+    languageCategory: 'ar',
+    translationLanguage: 'ar',
+  },
 ]
 
 /**
