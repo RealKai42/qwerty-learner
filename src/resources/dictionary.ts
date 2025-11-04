@@ -3852,7 +3852,7 @@ const programming: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
-    id: 'SoundSfxKey',
+    id: 'SoundSfxKey2',
     name: 'AudioKey_UCS-Category',
     description: '游戏音效常用单词-UCS-Category',
     category: '代码练习',
