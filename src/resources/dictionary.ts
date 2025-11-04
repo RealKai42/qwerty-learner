@@ -158,6 +158,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'hongbaoshu-2026',
+    name: '2026考研英语 hongbaoshu',
+    description: '2026 考研词汇 (必考词+基础词+超纲词）',
+    category: '中国考试',
+    tags: ['考研'],
+    url: '/dicts/hongbaoshu-2026.json',
+    length: 4858,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'English_II',
     name: '英语二单词书',
     description: '考研英语二单词书',
@@ -881,17 +892,6 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
-    id: 'IELTSLiuHongbo538',
-    name: '雅思阅读 liuhongbo 538考点词',
-    description: '雅思阅读 liuhongbo 538考点词',
-    category: '国际考试',
-    tags: ['IELTS'],
-    url: '/dicts/IELTSLiuHongbo538.json',
-    length: 376,
-    language: 'en',
-    languageCategory: 'en',
-  },
-  {
     id: 'IELTSKingLu807',
     name: 'wanglu807雅思词汇听力第2版',
     description: 'wanglu807雅思词汇听力第2版',
@@ -1408,17 +1408,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-  {
-    id: 'PTE_WFDgaopinci.json',
-    name: 'PTE WFD高频词汇',
-    description: 'WFD高频词汇从高到低，最低掌握350个',
-    category: '国际考试',
-    tags: ['PTE'],
-    url: '/dicts/PTE_WFDgaopinci.json',
-    length: 1175,
-    language: 'en',
-    languageCategory: 'en',
-  },
+  // {
+  //   id: 'PTE_WFDgaopinci.json',
+  //   name: 'PTE WFD高频词汇',
+  //   description: 'WFD高频词汇从高到低，最低掌握350个',
+  //   category: '国际考试',
+  //   tags: ['PTE'],
+  //   url: '/dicts/PTE_WFDgaopinci.json',
+  //   length: 1175,
+  //   language: 'en',
+  //   languageCategory: 'en',
+  // },
   {
     id: 'PTE_senior',
     name: 'PTE 高阶词汇',
@@ -1885,6 +1885,7 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+
   {
     id: 'pep-sl-er2',
     name: '人教版(新起点)二年级下',
@@ -2491,7 +2492,17 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
-
+  {
+    id: 'shanghai-6-2word',
+    name: '上海新教材六年级下',
+    description: '上海新教材六年级下',
+    category: '青少年英语',
+    tags: ['上海版'],
+    url: '/dicts/shanghai-6-2-word.json',
+    length: 274,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'Yilin1',
     name: '高中必修1',
@@ -3330,6 +3341,17 @@ const childrenEnglish: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'Cambridge_JOIN_IN',
+    name: '剑桥小学英语 JOIN IN',
+    description: '外研社和剑桥大学出版社依据《义务教育英语课程标准》要求联合为我国小学生开发的一套英语教材。',
+    category: '青少年英语',
+    tags: ['其他'],
+    url: '/dicts/Cambridge_JOIN_IN.json',
+    length: 1350,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 编程字典
@@ -3837,8 +3859,8 @@ const programming: DictionaryResource[] = [
     tags: ['RAZ'],
     url: '/dicts/AudioKey_Category.json',
     length: 535,
-    language: 'en',
-    languageCategory: 'en',
+    language: 'code',
+    languageCategory: 'code',
   },
 ]
 

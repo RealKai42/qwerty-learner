@@ -23,7 +23,6 @@ export function ErrorBook() {
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
   const [reload, setReload] = useState(false)
-  const [paraphrases, setParaphrases] = useState<any[]>([])
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -95,10 +94,6 @@ export function ErrorBook() {
     setReload((prev) => !prev)
   }
 
-  const handleWordUpdate = (paraphrases: object) => {
-    setParaphrases((prevWords) => [...prevWords, paraphrases])
-  }
-
   return (
     <>
       <div className={`relative flex h-screen w-full flex-col items-center pb-4 ease-in ${currentRowDetail && 'blur-sm'}`}>
@@ -114,7 +109,7 @@ export function ErrorBook() {
               <span className="basis-6/12">释义</span>
               <HeadWrongNumber className="basis-1/12" sortType={sortType} setSortType={setSort} />
               <span className="basis-1/12">词典</span>
-              <DropdownExport renderRecords={renderRecords} paraphrases={paraphrases} />
+              <DropdownExport renderRecords={sortedRecords} />
             </div>
             <ScrollArea.Root className="flex-1 overflow-y-auto pt-5">
               <ScrollArea.Viewport className="h-full  ">
@@ -124,7 +119,6 @@ export function ErrorBook() {
                       key={`${record.dict}-${record.word}`}
                       record={record}
                       onDelete={() => handleDelete(record.word, record.dict)}
-                      onWordUpdate={handleWordUpdate}
                     />
                   ))}
                 </div>
