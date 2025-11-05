@@ -48,3 +48,10 @@ export type WordDictationType = 'hideAll' | 'hideVowel' | 'hideConsonant' | 'ran
  * 如果是通过点击 resultScreen 中的默写本章按钮打开的，则关闭默写模式
  */
 export type WordDictationOpenBy = 'user' | 'auto'
+
+/**
+ * 错误处理方式
+ * continue: 错误后继续输入，允许修改
+ * clear: 错误后清空重新输入（传统方式）
+ */
+export type ErrorHandleType = 'continue' | 'clear'
