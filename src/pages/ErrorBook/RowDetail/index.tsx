@@ -87,7 +87,9 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
             )}
           </div>
           <div className="flex max-w-[24rem] items-center">
-            <span className={`max-w-4xl text-center font-sans transition-colors duration-300 dark:text-white dark:text-opacity-80`}>
+            <span
+              className={`max-w-4xl text-center font-sans text-gray-400 transition-colors duration-300 dark:text-white dark:text-opacity-80`}
+            >
               {word ? word.trans.join('；') : <LoadingWordUI isLoading={isLoading} hasError={hasError} />}
             </span>
           </div>
