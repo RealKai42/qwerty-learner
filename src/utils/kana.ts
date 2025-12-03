@@ -5,9 +5,8 @@ export function isKanji(ch: string) {
 
 /**
  * 将各种日语输入规范化，用于请求发音：
- * - 带括号（优先取括号内假名或抽取汉字）
+ * - 带汉字的词/带括号（优先取抽取汉字和括号外假名组合，也就是去掉括号及括号内内容）
  * - 纯假名
- * - 带汉字的词
  * - 罗马字
  */
 export function normalizeJapaneseWord(word: string): string {
