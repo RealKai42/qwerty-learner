@@ -1,7 +1,7 @@
 import { pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { addHowlListener } from '@/utils'
-import { romajiToHiragana } from '@/utils/kana'
+import { normalizeJapaneseWord } from '@/utils/kana'
 import noop from '@/utils/noop'
 import type { Howl } from 'howler'
 import { useAtomValue } from 'jotai'
@@ -17,7 +17,7 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
     case 'us':
       return `${pronunciationApi}${word}&type=2`
     case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
+      return `${pronunciationApi}${encodeURIComponent(normalizeJapaneseWord(word))}&le=jap`
     case 'zh':
       return `${pronunciationApi}${word}&le=zh`
     case 'ja':
