@@ -3867,6 +3867,28 @@ const programming: DictionaryResource[] = [
 // 日语词典
 const japaneseExam: DictionaryResource[] = [
   {
+    id: 'japanese-hiragana',
+    name: '平假名',
+    description: '平假名练习',
+    category: '日语学习',
+    tags: ['基础', '五十音', '平假名'],
+    url: '/dicts/JapaneseHiragana.json',
+    length: 280,
+    language: 'romaji',
+    languageCategory: 'ja',
+  },
+  {
+    id: 'japanese-katakana',
+    name: '片假名',
+    description: '片假名练习',
+    category: '日语学习',
+    tags: ['基础', '五十音', '片假名'],
+    url: '/dicts/JapaneseKatakana.json',
+    length: 280,
+    language: 'romaji',
+    languageCategory: 'ja',
+  },
+  {
     id: 'japanese001',
     name: '日语常见词',
     description: '英语翻译',
