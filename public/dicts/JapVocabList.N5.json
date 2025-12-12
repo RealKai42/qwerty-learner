@@ -65,7 +65,7 @@
     {
         "name": "sukunai",
         "trans": [
-            "a few"
+            "few, little"
         ],
         "notation": "少(すく)ない"
     },
@@ -254,7 +254,7 @@
     {
         "name": "tanomu",
         "trans": [
-            "to ask"
+            "to ask, to request"
         ],
         "notation": "頼(たの)む"
     },
@@ -485,14 +485,14 @@
     {
         "name": "hanbun",
         "trans": [
-            "half minute"
+            "half"
         ],
         "notation": "半分(はんぶん)"
     },
     {
         "name": "futoi",
         "trans": [
-            "fat"
+            "fat, thick"
         ],
         "notation": "太(ふと)い"
     },
@@ -709,7 +709,7 @@
     {
         "name": "sekken",
         "trans": [
-            "Economy"
+            "soap"
         ],
         "notation": "せっけん"
     },
@@ -905,7 +905,7 @@
     {
         "name": "nukui",
         "trans": [
-            "luke warm"
+            "lukewarm"
         ],
         "notation": "温(ぬく)い"
     },
@@ -1465,7 +1465,7 @@
     {
         "name": "koppu",
         "trans": [
-            "cop, police officer"
+            "cup, glass"
         ],
         "notation": "コップ"
     },
@@ -1864,7 +1864,7 @@
     {
         "name": "ichigatsu",
         "trans": [
-            "one month"
+            "January"
         ],
         "notation": "一月(いちがつ)"
     },
@@ -2025,7 +2025,7 @@
     {
         "name": "otearai",
         "trans": [
-            "bathroom"
+            "bathroom, toilet"
         ],
         "notation": "お手洗(てあら)い"
     },
@@ -2186,7 +2186,7 @@
     {
         "name": "kurai",
         "trans": [
-            "Gloomy"
+            "gloomy"
         ],
         "notation": "暗(くら)い"
     },
@@ -2207,7 +2207,7 @@
     {
         "name": "surippa",
         "trans": [
-            "Slippers"
+            "slippers"
         ],
         "notation": "スリッパ"
     },
@@ -2361,7 +2361,7 @@
     {
         "name": "suki",
         "trans": [
-            "Likeable"
+            "like"
         ],
         "notation": "好(す)き"
     },
@@ -3628,7 +3628,7 @@
     {
         "name": "kaban",
         "trans": [
-            "bag, basket"
+            "bag, briefcase"
         ],
         "notation": "鞄(かばん)"
     },
@@ -4027,7 +4027,7 @@
     {
         "name": "ichinichi",
         "trans": [
-            "first of month"
+            "one day"
         ],
         "notation": "一(いち)日(にち)"
     },
@@ -4594,7 +4594,7 @@
     {
         "name": "tsurai",
         "trans": [
-            "Spicy"
+            "painful"
         ],
         "notation": "辛(つら)い"
     },
