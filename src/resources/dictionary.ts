@@ -683,6 +683,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'biomedical-terms',
+    name: '生物医学专业英语词汇',
+    description: '生物医学专业英语词汇',
+    category: '专业词汇',
+    tags: ['生物'],
+    url: '/dicts/BIOmedical.json',
+    length: 560,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'IELTS_tinglichangjing',
     name: '雅思听力场景词汇',
     description: '雅思听力场景词汇',
@@ -4144,16 +4155,6 @@ const indonesianDicts: DictionaryResource[] = [
   },
 ]
 
-{
-     id: 'biomedical-terms',
-     name: '生物医学专业英语词汇',
-     description: '生物医学专业英语词汇',
-     category: '专业词汇',
-     url: '/dicts/BIOmedical.json',
-     length: 561,
-     language: 'en',
-    },
-  {
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
