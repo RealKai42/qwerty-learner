@@ -579,6 +579,28 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: '1984',
+    name: '1984',
+    description: '1984',
+    category: '文学作品',
+    tags: ['小说'],
+    url: '/dicts/1984.json',
+    length: 12543,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
+    id: 'twoCitys',
+    name: 'A Tale of Two Cities',
+    description: 'A Tale of Two Cities 《双城记》',
+    category: '文学作品',
+    tags: ['小说'],
+    url: '/dicts/A Tale of Two Cities.json',
+    length: 15137,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
