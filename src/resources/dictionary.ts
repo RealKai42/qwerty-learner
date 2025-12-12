@@ -4133,6 +4133,16 @@ const indonesianDicts: DictionaryResource[] = [
   },
 ]
 
+{
+     id: 'biomedical-terms',
+     name: '生物医学专业英语词汇',
+     description: '生物医学专业英语词汇',
+     category: '专业词汇',
+     url: '/dicts/BIOmedical.json',
+     length: 561,
+     language: 'en',
+    },
+  {
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
