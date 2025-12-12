@@ -228,7 +228,7 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 - JavaScript API. [@sdu-gyf](https://github.com/sdu-gyf)
 - Node.js API. [@chrysalis1215](https://github.com/chrysalis1215)
-- Java API. [@darkSheep](https://github.com/SFAfreshman)
+- Java API. [@darkSheep](https://github.com/darkSheep404)
 - Linux Command. [@归谜](https://github.com/vhxubo)
 - C#: List API [@nidbCN](https://github.com/nidbCN)
 
