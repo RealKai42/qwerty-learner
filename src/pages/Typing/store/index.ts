@@ -198,7 +198,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
 
       state.timerData.time = newTime
       state.timerData.accuracy = Math.round((state.chapterData.correctCount / inputSum) * 100)
-      state.timerData.wpm = Math.round((state.chapterData.wordCount / newTime) * 60)
+      state.timerData.wpm = Math.round((state.chapterData.correctCount + state.chapterData.wrongCount) / 5 / (newTime / 60))
       break
     }
     case TypingStateActionType.ADD_WORD_RECORD_ID: {

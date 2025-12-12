@@ -5,8 +5,10 @@ import { autoUpdate, offset, useFloating, useHover, useInteractions } from '@flo
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { useTranslation } from 'react-i18next'
 
 export default function StartButton({ isLoading }: { isLoading: boolean }) {
+  const { t } = useTranslation()
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const randomConfig = useAtomValue(randomConfigAtom)
@@ -32,7 +34,7 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
   const { getReferenceProps, getFloatingProps } = useInteractions([hoverButton])
 
   return (
-    <Tooltip content={`${state.isTyping ? '暂停' : '开始'} （Enter）`} className="box-content h-7 w-8 px-6 py-1">
+    <Tooltip content={`${state.isTyping ? t('app.pause') : t('app.start')} （Enter）`} className="box-content h-7 w-8 px-6 py-1">
       <div
         ref={refs.setReference}
         {...getReferenceProps()}
@@ -62,7 +64,7 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
               } my-btn-primary mb-1 mt-1 w-18  transition-colors duration-200`}
               type="button"
               onClick={onClickRestart}
-              aria-label={'重新开始'}
+              aria-label={t('app.restart')}
             >
               Restart
             </button>

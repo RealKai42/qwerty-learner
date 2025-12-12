@@ -9,6 +9,7 @@ import { recordOpenInfoPanelAction } from '@/utils'
 import { useAtom } from 'jotai'
 import type React from 'react'
 import { useCallback } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import IconMail from '~icons/material-symbols/mail'
 import IconCoffee2 from '~icons/mdi/coffee'
@@ -24,6 +25,7 @@ import IconTerminal2 from '~icons/tabler/terminal-2'
 import IconFlagChina from '~icons/twemoji/flag-china'
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation()
   const [infoPanelState, setInfoPanelState] = useAtom(infoPanelStateAtom)
   const navigate = useNavigate()
 
@@ -46,27 +48,22 @@ const Footer: React.FC = () => {
     <>
       <InfoPanel
         openState={infoPanelState.donate}
-        title="Buy us a coffee"
+        title={t('app.donate_title')}
         icon={IconCoffee}
         buttonClassName="bg-amber-500 hover:bg-amber-400"
         iconClassName="text-amber-500 bg-amber-100 dark:text-amber-300 dark:bg-amber-500"
         onClose={() => handleCloseInfoPanel('donate')}
       >
         <p className="indent-4 text-sm text-gray-500 dark:text-gray-300">
-          非常感谢大家使用 Qwerty Learner，目前该网站使用业余时间在维护，为了保证网站能够持续地提供给大家高质量的服务，我们需要您的帮助！
+          {t('app.donate_desc_1')}
           <br />
-          您的捐款将有助于我们支付网站的运营成本，改进网站的功能和设计，并提高用户体验。
+          {t('app.donate_desc_2')}
           <br />
         </p>
         <br />
-        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
-          我们相信，共同的努力可以让 Qwerty Learner 成为更好的学习平台，也相信您的支持将给予我们持续前进的动力。 感谢您的支持！
-        </p>
+        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200"></p>
         <br />
-        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">
-          为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 Qwerty 的定制贴纸 5 枚<span className="text-xs">（仅限大陆地区）</span>
-          ，希望您可以跟朋友分享您的快乐
-        </p>
+        <p className="indent-4 text-sm text-gray-700 dark:text-gray-200">{t('app.donate_desc_3')}</p>
         <div className="flex items-center justify-center py-2">
           <StickerButton className="" />
         </div>
@@ -159,7 +156,7 @@ const Footer: React.FC = () => {
             handleOpenInfoPanel('redBook')
             e.currentTarget.blur()
           }}
-          aria-label="加入我们的小红书社群"
+          aria-label={t('app.join_xhs')}
         >
           <IconXiaoHongShu fontSize={14} className="text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-500" />
         </button>
@@ -171,7 +168,7 @@ const Footer: React.FC = () => {
             handleOpenInfoPanel('community')
             e.currentTarget.blur()
           }}
-          aria-label="加入我们的微信用户群"
+          aria-label={t('app.join_community')}
         >
           <IconWechat2 fontSize={16} className="text-gray-500 hover:text-green-500 dark:text-gray-400 dark:hover:text-green-500" />
         </button>
@@ -186,7 +183,7 @@ const Footer: React.FC = () => {
             handleOpenInfoPanel('donate')
             e.currentTarget.blur()
           }}
-          aria-label="考虑捐赠我们"
+          aria-label={t('app.consider_donate')}
         >
           <IconCoffee2 fontSize={16} className="text-gray-500 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500" />
         </button>
@@ -198,7 +195,7 @@ const Footer: React.FC = () => {
             handleOpenInfoPanel('vsc')
             e.currentTarget.blur()
           }}
-          aria-label="使用 Visual Studio Code 插件版 Qwerty Learner"
+          aria-label={t('app.use_vscode_plugin')}
         >
           <IconVisualstudiocode fontSize={14} className="text-gray-500 hover:text-sky-500 dark:text-gray-400 dark:hover:text-sky-500" />
         </button>
@@ -208,16 +205,21 @@ const Footer: React.FC = () => {
           target="_blank"
           rel="noreferrer"
           onClick={(e) => e.currentTarget.blur()}
-          aria-label="发送邮件到 me@kaiyi.cool"
+          aria-label="Email: me@kaiyi.cool"
         >
           <IconMail fontSize={16} className="text-gray-500 hover:text-indigo-400 dark:text-gray-400 dark:hover:text-indigo-400" />
         </a>
-        <a rel="noreferrer" className="cursor-pointer focus:outline-none" onClick={() => navigate('/friend-links')} aria-label="查看友链">
+        <a
+          rel="noreferrer"
+          className="cursor-pointer focus:outline-none"
+          onClick={() => navigate('/friend-links')}
+          aria-label={t('app.friend_links')}
+        >
           <RiLinksLine fontSize={14} className="text-gray-500 hover:text-indigo-400 dark:text-gray-400 dark:hover:text-indigo-400" />
         </a>
 
-        <Tooltip content="中国大陆镜像">
-          <a href="https://kaiyiwing.gitee.io/qwerty-learner" target="_self" title="前往中国大陆镜像">
+        <Tooltip content={t('app.china_mirror')}>
+          <a href="https://kaiyiwing.gitee.io/qwerty-learner" target="_self" title={t('app.china_mirror')}>
             <IconFlagChina fontSize={16} />
           </a>
         </Tooltip>
@@ -239,10 +241,10 @@ const Footer: React.FC = () => {
           target="_blank"
           rel="noreferrer"
         >
-          鲁ICP备2022030649号
+          {t('app.icp')}
         </a>
         <span className="select-none rounded bg-slate-200 px-1 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-400">
-          Build <span className="select-all">{LATEST_COMMIT_HASH}</span>
+          {t('app.build')} <span className="select-all">{LATEST_COMMIT_HASH}</span>
         </span>
       </footer>
     </>

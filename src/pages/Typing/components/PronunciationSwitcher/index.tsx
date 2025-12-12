@@ -7,10 +7,12 @@ import { CTRL } from '@/utils'
 import { Listbox, Popover, Switch, Transition } from '@headlessui/react'
 import { useAtom, useAtomValue } from 'jotai'
 import { Fragment, useCallback, useEffect, useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconCheck from '~icons/tabler/check'
 import IconChevronDown from '~icons/tabler/chevron-down'
 
 const PronunciationSwitcher = () => {
+  const { t } = useTranslation()
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [pronunciationConfig, setPronunciationConfig] = useAtom(pronunciationConfigAtom)
   const [phoneticConfig, setPhoneticConfig] = useAtom(phoneticConfigAtom)
@@ -98,11 +100,11 @@ const PronunciationSwitcher = () => {
 
   const currentLabel = useMemo(() => {
     if (pronunciationConfig.isOpen) {
-      return pronunciationConfig.name
+      return t(pronunciationConfig.name)
     } else {
-      return '关闭'
+      return t('pronSwitcher.closed')
     }
-  }, [pronunciationConfig.isOpen, pronunciationConfig.name])
+  }, [pronunciationConfig.isOpen, pronunciationConfig.name, t])
 
   return (
     <Popover className="relative">
@@ -116,7 +118,7 @@ const PronunciationSwitcher = () => {
               e.target.blur()
             }}
           >
-            <Tooltip content="发音及音标切换">{currentLabel}</Tooltip>
+            <Tooltip content={t('app.pronunciation') + ' / ' + t('app.phonetic')}>{currentLabel}</Tooltip>
           </Popover.Button>
 
           <Transition
@@ -131,36 +133,42 @@ const PronunciationSwitcher = () => {
             <Popover.Panel className="absolute left-1/2 z-20 mt-2 flex max-w-max -translate-x-1/2 px-4 ">
               <div className="shadow-upper box-border flex w-60 select-none flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 drop-shadow transition duration-1000 ease-in-out dark:bg-gray-800">
                 <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关音标显示</span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                    {t('pronSwitcher.toggle_phonetic')}
+                  </span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={phoneticConfig.isOpen} onChange={onChangePhoneticIsOpen} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
                     </Switch>
-                    <span className="text-right text-xs font-normal leading-tight text-gray-600">{`音标已${
-                      phoneticConfig.isOpen ? '开启' : '关闭'
+                    <span className="text-right text-xs font-normal leading-tight text-gray-600">{`${t('app.phonetic')} ${
+                      phoneticConfig.isOpen ? t('app.on') : t('app.off')
                     }`}</span>
                   </div>
                 </div>
                 <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关单词发音</span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                    {t('pronSwitcher.toggle_pron')}
+                  </span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={pronunciationConfig.isOpen} onChange={onChangePronunciationIsOpen} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
                     </Switch>
-                    <span className="text-right text-xs font-normal leading-tight text-gray-600">{`发音已${
-                      pronunciationConfig.isOpen ? '开启' : '关闭'
+                    <span className="text-right text-xs font-normal leading-tight text-gray-600">{`${t('app.pronunciation')} ${
+                      pronunciationConfig.isOpen ? t('app.on') : t('app.off')
                     }`}</span>
                   </div>
                 </div>
                 {window.speechSynthesis && (
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关释义发音</span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                      {t('pronSwitcher.toggle_trans_read')}
+                    </span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Switch checked={pronunciationConfig.isTransRead} onChange={onChangePronunciationIsTransRead} className="switch-root">
                         <span aria-hidden="true" className="switch-thumb" />
                       </Switch>
-                      <span className="text-right text-xs font-normal leading-tight text-gray-600">{`发音已${
-                        pronunciationConfig.isTransRead ? '开启' : '关闭'
+                      <span className="text-right text-xs font-normal leading-tight text-gray-600">{`${t('app.pronunciation')} ${
+                        pronunciationConfig.isTransRead ? t('app.on') : t('app.off')
                       }`}</span>
                     </div>
                   </div>
@@ -176,23 +184,27 @@ const PronunciationSwitcher = () => {
                   leaveTo="max-h-0 opacity-0"
                 >
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关循环发音</span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                      {t('pronSwitcher.toggle_loop')}
+                    </span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Switch checked={pronunciationConfig.isLoop} onChange={onChangePronunciationIsLoop} className="switch-root">
                         <span aria-hidden="true" className="switch-thumb" />
                       </Switch>
-                      <span className="text-right text-xs font-normal leading-tight text-gray-600">{`循环已${
-                        pronunciationConfig.isLoop ? '开启' : '关闭'
+                      <span className="text-right text-xs font-normal leading-tight text-gray-600">{`${
+                        pronunciationConfig.isLoop ? t('app.on') : t('app.off')
                       }`}</span>
                     </div>
                   </div>
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">单词发音口音</span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">
+                      {t('pronSwitcher.accent')}
+                    </span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Listbox value={pronunciationConfig.type} onChange={onChangePronunciationType}>
                         <div className="relative">
                           <Listbox.Button className="listbox-button">
-                            <span>{pronunciationConfig.name}</span>
+                            <span>{t(pronunciationConfig.name)}</span>
                             <span>
                               <IconChevronDown className="focus:outline-none" />
                             </span>
@@ -203,7 +215,7 @@ const PronunciationSwitcher = () => {
                                 <Listbox.Option key={item.pron} value={item.pron}>
                                   {({ selected }) => (
                                     <>
-                                      <span>{item.name}</span>
+                                      <span>{t(item.name)}</span>
                                       {selected ? (
                                         <span className="listbox-options-icon">
                                           <IconCheck className="focus:outline-none" />
@@ -221,7 +233,7 @@ const PronunciationSwitcher = () => {
                   </div>
                   {pronunciationConfig.isOpen && (
                     <span className="text-colo text-xs font-medium text-gray-500 dark:text-white dark:text-opacity-60">
-                      Tips: 朗读发音快捷键（{CTRL} + J）
+                      {t('app.tips_read_aloud')}
                     </span>
                   )}
                 </Transition>

@@ -13,6 +13,7 @@ const chinaExam: DictionaryResource[] = [
     length: 2607,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'cet6',
@@ -24,6 +25,7 @@ const chinaExam: DictionaryResource[] = [
     length: 2345,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'xinghuoqiaoji_4',
@@ -35,6 +37,7 @@ const chinaExam: DictionaryResource[] = [
     length: 2522,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'xinghuoqiaoji_6',
@@ -46,6 +49,7 @@ const chinaExam: DictionaryResource[] = [
     length: 7520,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'cet4-sub',
@@ -57,6 +61,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1957,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'cet6-sub',
@@ -68,6 +73,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1949,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'kaoyan',
@@ -79,6 +85,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3728,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'kaoyan_2024',
@@ -90,6 +97,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3731,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'kaoyanshanguo_2023',
@@ -101,6 +109,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1771,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: '926',
@@ -112,6 +121,7 @@ const chinaExam: DictionaryResource[] = [
     length: 926,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'dancimimi_1',
@@ -123,6 +133,7 @@ const chinaExam: DictionaryResource[] = [
     length: 5657,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'dancimimi_2',
@@ -134,6 +145,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3827,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: '2024HongBao T1',
@@ -145,6 +157,7 @@ const chinaExam: DictionaryResource[] = [
     length: 997,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: '2024HongBao T2',
@@ -156,6 +169,7 @@ const chinaExam: DictionaryResource[] = [
     length: 854,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'hongbaoshu-2026',
@@ -167,6 +181,7 @@ const chinaExam: DictionaryResource[] = [
     length: 4858,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'English_II',
@@ -178,6 +193,7 @@ const chinaExam: DictionaryResource[] = [
     length: 4559,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'kaoyanshanguo2025',
@@ -189,6 +205,7 @@ const chinaExam: DictionaryResource[] = [
     length: 2257,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'level4',
@@ -200,6 +217,7 @@ const chinaExam: DictionaryResource[] = [
     length: 4025,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'level8',
@@ -211,6 +229,7 @@ const chinaExam: DictionaryResource[] = [
     length: 12197,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'archVocabulary',
@@ -222,6 +241,7 @@ const chinaExam: DictionaryResource[] = [
     length: 630,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'itVocabulary',
@@ -233,6 +253,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1665,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pets3',
@@ -244,6 +265,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1942,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pets3-2023',
@@ -255,6 +277,7 @@ const chinaExam: DictionaryResource[] = [
     length: 4449,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'self-study_English1',
@@ -266,6 +289,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1800,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'self-study_English2',
@@ -277,6 +301,7 @@ const chinaExam: DictionaryResource[] = [
     length: 2181,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'self-study_English3',
@@ -288,6 +313,7 @@ const chinaExam: DictionaryResource[] = [
     length: 4603,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'coca_20000',
@@ -299,6 +325,7 @@ const chinaExam: DictionaryResource[] = [
     length: 20199,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: '4000_Essential_English_Words1',
@@ -310,6 +337,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3600,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: '4000_Essential_English_Words2',
@@ -321,6 +349,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3600,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'longman_communication_3000_words',
@@ -332,6 +361,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3168,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'top_2000_English_Words',
@@ -343,6 +373,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1867,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'top_1500_nouns_Words',
@@ -354,6 +385,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1525,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'top_1000_verb_Words',
@@ -365,6 +397,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1011,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'top_500_Adj_Words',
@@ -376,6 +409,7 @@ const chinaExam: DictionaryResource[] = [
     length: 527,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'top_250_Adv_Words',
@@ -387,6 +421,7 @@ const chinaExam: DictionaryResource[] = [
     length: 255,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'top_60_Pronouns',
@@ -398,6 +433,7 @@ const chinaExam: DictionaryResource[] = [
     length: 59,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'top_50_Prepositions',
@@ -409,6 +445,7 @@ const chinaExam: DictionaryResource[] = [
     length: 46,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'suffix word',
@@ -420,6 +457,7 @@ const chinaExam: DictionaryResource[] = [
     length: 126,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'word roots1',
@@ -431,6 +469,7 @@ const chinaExam: DictionaryResource[] = [
     length: 369,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 
   {
@@ -443,6 +482,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3692,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'zhuan-cha-ben-ying-yu',
@@ -454,6 +494,7 @@ const chinaExam: DictionaryResource[] = [
     length: 3217,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'zhuan-sheng-ben-xue-shi',
@@ -465,6 +506,7 @@ const chinaExam: DictionaryResource[] = [
     length: 897,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Oxford5000',
@@ -476,6 +518,7 @@ const chinaExam: DictionaryResource[] = [
     length: 5836,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Merriam_Webster_sVocabularyBuilder',
@@ -487,6 +530,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1191,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'tingshuokaoshi',
@@ -498,6 +542,7 @@ const chinaExam: DictionaryResource[] = [
     length: 557,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'TOEFL_ZhangHongYan',
@@ -509,6 +554,7 @@ const chinaExam: DictionaryResource[] = [
     length: 4032,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: '2025KaoYanHongBaoShu',
@@ -520,6 +566,7 @@ const chinaExam: DictionaryResource[] = [
     length: 6705,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: '3000_ClassRoom_English_Words',
@@ -531,6 +578,7 @@ const chinaExam: DictionaryResource[] = [
     length: 2991,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 
   {
@@ -543,10 +591,11 @@ const chinaExam: DictionaryResource[] = [
     length: 679,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 
   {
-    id: 'frequently_used_words03',
+    id: 'frequently_used_words02',
     name: '超频单词level 2',
     description: '超频单词level 2',
     category: '中国考试',
@@ -555,6 +604,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1040,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 
   {
@@ -567,6 +617,7 @@ const chinaExam: DictionaryResource[] = [
     length: 1435,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'roger',
@@ -578,6 +629,7 @@ const chinaExam: DictionaryResource[] = [
     length: 4174,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 ]
 
@@ -593,6 +645,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1871,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'gmat',
@@ -604,6 +657,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3047,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'gre',
@@ -615,6 +669,7 @@ const internationalExam: DictionaryResource[] = [
     length: 6515,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'gre1500',
@@ -626,6 +681,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1533,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'gre3000',
@@ -637,6 +693,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3041,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'GRE-computer-based-test',
@@ -648,6 +705,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1451,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ZaiYaoNiMing_GRE3000',
@@ -659,6 +717,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3041,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'GRE_equivalent',
@@ -670,6 +729,7 @@ const internationalExam: DictionaryResource[] = [
     length: 827,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'GRE_ciyileiji',
@@ -681,6 +741,7 @@ const internationalExam: DictionaryResource[] = [
     length: 8785,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'biomedical-terms',
@@ -703,6 +764,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1204,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts_disorder',
@@ -714,6 +776,7 @@ const internationalExam: DictionaryResource[] = [
     length: 9389,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts_order',
@@ -725,6 +788,7 @@ const internationalExam: DictionaryResource[] = [
     length: 9389,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts',
@@ -736,6 +800,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3575,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'heqiong',
@@ -747,6 +812,7 @@ const internationalExam: DictionaryResource[] = [
     length: 2529,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ieltsWang3',
@@ -758,6 +824,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1135,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ieltsWang4',
@@ -769,6 +836,7 @@ const internationalExam: DictionaryResource[] = [
     length: 346,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ieltsWang5',
@@ -780,6 +848,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1569,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ieltsWang11',
@@ -791,6 +860,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1738,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'DuckCircle_IELTS',
@@ -802,6 +872,7 @@ const internationalExam: DictionaryResource[] = [
     length: 2644,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTSVocabularyBible',
@@ -813,6 +884,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3673,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-807',
@@ -824,6 +896,7 @@ const internationalExam: DictionaryResource[] = [
     length: 4340,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts-real-high',
@@ -835,6 +908,7 @@ const internationalExam: DictionaryResource[] = [
     length: 524,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts-real-5',
@@ -846,6 +920,7 @@ const internationalExam: DictionaryResource[] = [
     length: 183,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts-real-4',
@@ -857,6 +932,7 @@ const internationalExam: DictionaryResource[] = [
     length: 201,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts-real-3',
@@ -868,6 +944,7 @@ const internationalExam: DictionaryResource[] = [
     length: 256,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts-real-2',
@@ -879,6 +956,7 @@ const internationalExam: DictionaryResource[] = [
     length: 402,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ielts-real-1',
@@ -890,6 +968,7 @@ const internationalExam: DictionaryResource[] = [
     length: 737,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS9988wangyong',
@@ -901,6 +980,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3698,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTSKingLu807',
@@ -912,6 +992,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1916,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTSXDF7000',
@@ -923,6 +1004,7 @@ const internationalExam: DictionaryResource[] = [
     length: 5567,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-oral-900',
@@ -934,6 +1016,7 @@ const internationalExam: DictionaryResource[] = [
     length: 900,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task1',
@@ -945,6 +1028,7 @@ const internationalExam: DictionaryResource[] = [
     length: 44,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task2',
@@ -956,6 +1040,7 @@ const internationalExam: DictionaryResource[] = [
     length: 33,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task3',
@@ -967,6 +1052,7 @@ const internationalExam: DictionaryResource[] = [
     length: 33,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task4',
@@ -978,6 +1064,7 @@ const internationalExam: DictionaryResource[] = [
     length: 33,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task5',
@@ -989,6 +1076,7 @@ const internationalExam: DictionaryResource[] = [
     length: 38,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task6',
@@ -1000,6 +1088,7 @@ const internationalExam: DictionaryResource[] = [
     length: 33,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task7',
@@ -1011,6 +1100,7 @@ const internationalExam: DictionaryResource[] = [
     length: 39,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task8',
@@ -1022,6 +1112,7 @@ const internationalExam: DictionaryResource[] = [
     length: 32,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task9',
@@ -1033,6 +1124,7 @@ const internationalExam: DictionaryResource[] = [
     length: 46,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task10',
@@ -1044,6 +1136,7 @@ const internationalExam: DictionaryResource[] = [
     length: 44,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task11',
@@ -1055,6 +1148,7 @@ const internationalExam: DictionaryResource[] = [
     length: 36,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task12',
@@ -1066,6 +1160,7 @@ const internationalExam: DictionaryResource[] = [
     length: 45,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task13',
@@ -1077,6 +1172,7 @@ const internationalExam: DictionaryResource[] = [
     length: 49,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task14',
@@ -1088,6 +1184,7 @@ const internationalExam: DictionaryResource[] = [
     length: 46,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task15',
@@ -1099,6 +1196,7 @@ const internationalExam: DictionaryResource[] = [
     length: 29,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task16',
@@ -1110,6 +1208,7 @@ const internationalExam: DictionaryResource[] = [
     length: 42,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task17',
@@ -1121,6 +1220,7 @@ const internationalExam: DictionaryResource[] = [
     length: 22,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task18',
@@ -1132,6 +1232,7 @@ const internationalExam: DictionaryResource[] = [
     length: 37,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-NeworientalDirect-Task19',
@@ -1143,6 +1244,7 @@ const internationalExam: DictionaryResource[] = [
     length: 26,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-1',
@@ -1154,6 +1256,7 @@ const internationalExam: DictionaryResource[] = [
     length: 74,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-2',
@@ -1165,6 +1268,7 @@ const internationalExam: DictionaryResource[] = [
     length: 77,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-3',
@@ -1176,6 +1280,7 @@ const internationalExam: DictionaryResource[] = [
     length: 77,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-4',
@@ -1187,6 +1292,7 @@ const internationalExam: DictionaryResource[] = [
     length: 73,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-5',
@@ -1198,6 +1304,7 @@ const internationalExam: DictionaryResource[] = [
     length: 76,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-6',
@@ -1209,6 +1316,7 @@ const internationalExam: DictionaryResource[] = [
     length: 77,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-7',
@@ -1220,6 +1328,7 @@ const internationalExam: DictionaryResource[] = [
     length: 75,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-8',
@@ -1231,6 +1340,7 @@ const internationalExam: DictionaryResource[] = [
     length: 76,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-9',
@@ -1242,6 +1352,7 @@ const internationalExam: DictionaryResource[] = [
     length: 76,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-10',
@@ -1253,6 +1364,7 @@ const internationalExam: DictionaryResource[] = [
     length: 33,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-11',
@@ -1264,6 +1376,7 @@ const internationalExam: DictionaryResource[] = [
     length: 52,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-12',
@@ -1275,6 +1388,7 @@ const internationalExam: DictionaryResource[] = [
     length: 77,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-13',
@@ -1286,6 +1400,7 @@ const internationalExam: DictionaryResource[] = [
     length: 78,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-14',
@@ -1297,6 +1412,7 @@ const internationalExam: DictionaryResource[] = [
     length: 76,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-15',
@@ -1308,6 +1424,7 @@ const internationalExam: DictionaryResource[] = [
     length: 77,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-16',
@@ -1319,6 +1436,7 @@ const internationalExam: DictionaryResource[] = [
     length: 77,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-17',
@@ -1330,6 +1448,7 @@ const internationalExam: DictionaryResource[] = [
     length: 46,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'IELTS-listening-18-days-18',
@@ -1341,6 +1460,7 @@ const internationalExam: DictionaryResource[] = [
     length: 76,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ket',
@@ -1352,6 +1472,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1147,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'sat',
@@ -1363,6 +1484,7 @@ const internationalExam: DictionaryResource[] = [
     length: 4464,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'SATen',
@@ -1374,6 +1496,7 @@ const internationalExam: DictionaryResource[] = [
     length: 2681,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'toefl',
@@ -1385,6 +1508,7 @@ const internationalExam: DictionaryResource[] = [
     length: 4264,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'bec2',
@@ -1396,6 +1520,7 @@ const internationalExam: DictionaryResource[] = [
     length: 2753,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'bec3',
@@ -1407,6 +1532,7 @@ const internationalExam: DictionaryResource[] = [
     length: 2825,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_junior',
@@ -1418,6 +1544,7 @@ const internationalExam: DictionaryResource[] = [
     length: 2651,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   // {
   //   id: 'PTE_WFDgaopinci.json',
@@ -1440,6 +1567,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3170,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_FIB_R_junior',
@@ -1451,6 +1579,7 @@ const internationalExam: DictionaryResource[] = [
     length: 941,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_FIB_R_senior',
@@ -1462,6 +1591,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1272,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_WFD',
@@ -1473,6 +1603,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1212,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_FIB_L',
@@ -1484,6 +1615,7 @@ const internationalExam: DictionaryResource[] = [
     length: 646,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_Basic_apeuni',
@@ -1495,6 +1627,7 @@ const internationalExam: DictionaryResource[] = [
     length: 2652,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_Advanced_apeuni.json',
@@ -1506,6 +1639,7 @@ const internationalExam: DictionaryResource[] = [
     length: 3169,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_Read_apeuni.json',
@@ -1517,6 +1651,7 @@ const internationalExam: DictionaryResource[] = [
     length: 630,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'PTE_Listening_apeuni.json',
@@ -1528,6 +1663,7 @@ const internationalExam: DictionaryResource[] = [
     length: 674,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'TOEIC',
@@ -1539,6 +1675,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1694,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Duolingo_Vocabulary_B1',
@@ -1550,6 +1687,7 @@ const internationalExam: DictionaryResource[] = [
     length: 801,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Duolingo_Vocabulary_B2',
@@ -1561,6 +1699,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1423,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Duolingo_Vocabulary_C1',
@@ -1572,6 +1711,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1314,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Oxford3000',
@@ -1583,6 +1723,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1342,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Oxford5000',
@@ -1594,6 +1735,7 @@ const internationalExam: DictionaryResource[] = [
     length: 5836,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'voa',
@@ -1605,6 +1747,7 @@ const internationalExam: DictionaryResource[] = [
     length: 1505,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Common-Phrases-PTE-Unofficial',
@@ -1616,6 +1759,7 @@ const internationalExam: DictionaryResource[] = [
     length: 274,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Common-Phrases-FCE-Unofficial',
@@ -1627,6 +1771,7 @@ const internationalExam: DictionaryResource[] = [
     length: 438,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Categorized_TOEFL_Vocabulary_by_Zhanghongyan',
@@ -1653,6 +1798,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 3893,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'gaokaozhentihexin',
@@ -1664,6 +1810,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 799,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'gaokao-yuedu-gaopin',
@@ -1675,6 +1822,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 688,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'zhongkaohexin',
@@ -1686,6 +1834,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 2140,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce1',
@@ -1697,6 +1846,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 900,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce2',
@@ -1708,6 +1858,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 858,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce3',
@@ -1719,6 +1870,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 1052,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce4',
@@ -1730,6 +1882,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 784,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce-new-1',
@@ -1741,6 +1894,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 908,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce-new-2',
@@ -1752,6 +1906,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 862,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce-new-3',
@@ -1763,6 +1918,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 1062,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'nce-new-4',
@@ -1774,6 +1930,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 793,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'SHjuniormiddleOxford',
@@ -1785,6 +1942,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 1270,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'san1',
@@ -1796,6 +1954,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 64,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'san2',
@@ -1807,6 +1966,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 72,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'si1',
@@ -1818,6 +1978,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 84,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'si2',
@@ -1829,6 +1990,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 104,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'wu1',
@@ -1840,6 +2002,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 131,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'wu2',
@@ -1851,6 +2014,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 156,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'liu1',
@@ -1862,6 +2026,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 130,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'liu2',
@@ -1873,6 +2038,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 108,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-yi1',
@@ -1884,6 +2050,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 52,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-yi2',
@@ -1895,6 +2062,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 45,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-er1',
@@ -1906,6 +2074,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 54,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 
   {
@@ -1918,6 +2087,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 55,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-san1',
@@ -1929,6 +2099,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 103,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-san2',
@@ -1940,6 +2111,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 84,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-si1',
@@ -1951,6 +2123,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 116,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-si2',
@@ -1962,6 +2135,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 87,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-wu1',
@@ -1973,6 +2147,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 66,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-wu2',
@@ -1984,6 +2159,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 96,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-liu1',
@@ -1995,6 +2171,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 102,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'pep-sl-liu2',
@@ -2006,6 +2183,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 41,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'qi1',
@@ -2017,6 +2195,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 392,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'qi2',
@@ -2028,6 +2207,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 492,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ba1',
@@ -2039,6 +2219,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 419,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'ba2',
@@ -2050,6 +2231,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 466,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jiu',
@@ -2061,6 +2243,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 551,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong1',
@@ -2072,6 +2255,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 311,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong2',
@@ -2083,6 +2267,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 319,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong3',
@@ -2094,6 +2279,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 366,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong4',
@@ -2105,6 +2291,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 307,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong5',
@@ -2116,6 +2303,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 357,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong6',
@@ -2127,6 +2315,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 391,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong7',
@@ -2138,6 +2327,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 384,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong8',
@@ -2149,6 +2339,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 420,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong9',
@@ -2160,6 +2351,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 352,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong10',
@@ -2171,6 +2363,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 361,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'renjiaogaozhong11',
@@ -2182,6 +2375,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 309,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 
   {
@@ -2194,6 +2388,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 629,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'new-waiyan1',
@@ -2205,6 +2400,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 294,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'new-waiyan2',
@@ -2216,6 +2412,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 306,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan2',
@@ -2227,6 +2424,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 438,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan3',
@@ -2238,6 +2436,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 320,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan4',
@@ -2249,6 +2448,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 266,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan5',
@@ -2260,6 +2460,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 381,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan6',
@@ -2271,6 +2472,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 128,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan7',
@@ -2282,6 +2484,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 411,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan8',
@@ -2293,6 +2496,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 272,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan9',
@@ -2304,6 +2508,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 138,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan10',
@@ -2315,6 +2520,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 118,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan11',
@@ -2326,6 +2532,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 118,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan12',
@@ -2337,6 +2544,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 110,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan13',
@@ -2348,6 +2556,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 82,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan14',
@@ -2359,6 +2568,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 106,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan15',
@@ -2370,6 +2580,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 116,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan16',
@@ -2381,6 +2592,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 78,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan17',
@@ -2392,6 +2604,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 80,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan18',
@@ -2403,6 +2616,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 72,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan19',
@@ -2414,6 +2628,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 61,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan20',
@@ -2425,6 +2640,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 91,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan3-1',
@@ -2436,6 +2652,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 134,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan3-2',
@@ -2447,6 +2664,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 156,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan4-1',
@@ -2458,6 +2676,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 144,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan4-2',
@@ -2469,6 +2688,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 134,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan5-1',
@@ -2480,6 +2700,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 152,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan5-2',
@@ -2491,6 +2712,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 147,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan6-1',
@@ -2502,6 +2724,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 83,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'waiyan6-2',
@@ -2513,6 +2736,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 105,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'shanghai-6-2word',
@@ -2524,6 +2748,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 274,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Yilin1',
@@ -2535,6 +2760,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 276,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Yilin2',
@@ -2546,6 +2772,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 297,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Yilin3',
@@ -2557,6 +2784,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 295,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi1',
@@ -2568,6 +2796,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 226,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi2',
@@ -2579,6 +2808,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 244,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi3',
@@ -2590,6 +2820,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 295,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi4',
@@ -2601,6 +2832,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 336,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi5',
@@ -2612,6 +2844,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 327,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi6',
@@ -2623,6 +2856,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 271,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi7',
@@ -2634,6 +2868,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 334,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi8',
@@ -2645,6 +2880,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 364,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi9',
@@ -2656,6 +2892,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 299,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi10',
@@ -2667,6 +2904,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 267,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'beishi11',
@@ -2678,6 +2916,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 330,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao1',
@@ -2689,6 +2928,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 75,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao2',
@@ -2700,6 +2940,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 76,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao3',
@@ -2711,6 +2952,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 78,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao4',
@@ -2722,6 +2964,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 84,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao5',
@@ -2733,6 +2976,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 79,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao6',
@@ -2744,6 +2988,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 96,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao7',
@@ -2755,6 +3000,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 66,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao8',
@@ -2766,6 +3012,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 51,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao9',
@@ -2777,6 +3024,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 561,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao10',
@@ -2788,6 +3036,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 514,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao11',
@@ -2799,6 +3048,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 420,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao12',
@@ -2810,6 +3060,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 487,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'jijiao13',
@@ -2821,6 +3072,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 636,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'BJJuniorHigh',
@@ -2832,6 +3084,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 1844,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel1',
@@ -2843,6 +3096,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 297,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel2',
@@ -2854,6 +3108,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 353,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel3',
@@ -2865,6 +3120,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 172,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel4',
@@ -2876,6 +3132,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 178,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel5',
@@ -2887,6 +3144,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 172,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel6',
@@ -2898,6 +3156,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 172,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel7',
@@ -2909,6 +3168,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 171,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel8',
@@ -2920,6 +3180,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 172,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel9',
@@ -2931,6 +3192,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 165,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel10',
@@ -2942,6 +3204,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 174,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel11',
@@ -2953,6 +3216,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 176,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel12',
@@ -2964,6 +3228,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 170,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel13',
@@ -2975,6 +3240,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 172,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel14',
@@ -2986,6 +3252,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 171,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel15',
@@ -2997,6 +3264,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 168,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'eflevel16',
@@ -3008,6 +3276,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 170,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   //Reading_Explorer系列
   {
@@ -3020,6 +3289,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 239,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Macmillan7000',
@@ -3031,6 +3301,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 6268,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   // RAZ 系列
   {
@@ -3043,6 +3314,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 422,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-A',
@@ -3054,6 +3326,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 487,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-B',
@@ -3065,6 +3338,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 465,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-C',
@@ -3076,6 +3350,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 480,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-D',
@@ -3087,6 +3362,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 436,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-E',
@@ -3098,6 +3374,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 427,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-F',
@@ -3109,6 +3386,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 437,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-G',
@@ -3120,6 +3398,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 435,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-H',
@@ -3131,6 +3410,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 385,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-I',
@@ -3142,6 +3422,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 408,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-J',
@@ -3153,6 +3434,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 434,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-K',
@@ -3164,6 +3446,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 397,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-L',
@@ -3175,6 +3458,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 402,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-M',
@@ -3186,6 +3470,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 403,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-N',
@@ -3197,6 +3482,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 376,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-O',
@@ -3208,6 +3494,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 429,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-P',
@@ -3219,6 +3506,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 379,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-Q',
@@ -3230,6 +3518,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 442,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-R',
@@ -3241,6 +3530,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 422,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-S',
@@ -3252,6 +3542,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 434,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-T',
@@ -3263,6 +3554,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 427,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-U',
@@ -3274,6 +3566,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 418,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-V',
@@ -3285,6 +3578,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 409,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-W',
@@ -3296,6 +3590,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 392,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-X',
@@ -3307,6 +3602,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 546,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-Y',
@@ -3318,6 +3614,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 461,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-Z',
@@ -3329,6 +3626,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 414,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-Z1',
@@ -3340,6 +3638,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 467,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-Z2',
@@ -3351,6 +3650,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 492,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'raz-all',
@@ -3362,6 +3662,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 5831,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
   {
     id: 'Cambridge_JOIN_IN',
@@ -3373,6 +3674,7 @@ const childrenEnglish: DictionaryResource[] = [
     length: 1350,
     language: 'en',
     languageCategory: 'en',
+    translationLanguage: 'zh',
   },
 ]
 
@@ -3388,6 +3690,7 @@ const programming: DictionaryResource[] = [
     length: 1700,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'childCode',
@@ -3399,6 +3702,7 @@ const programming: DictionaryResource[] = [
     length: 19,
     language: 'en',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'childCode002',
@@ -3410,6 +3714,7 @@ const programming: DictionaryResource[] = [
     length: 27,
     language: 'en',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'childCode003',
@@ -3421,6 +3726,7 @@ const programming: DictionaryResource[] = [
     length: 39,
     language: 'en',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'oi-xcpc',
@@ -3432,6 +3738,7 @@ const programming: DictionaryResource[] = [
     length: 195,
     language: 'en',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'childCode004',
@@ -3443,6 +3750,7 @@ const programming: DictionaryResource[] = [
     length: 78,
     language: 'en',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsArray',
@@ -3454,6 +3762,7 @@ const programming: DictionaryResource[] = [
     length: 36,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsDate',
@@ -3465,6 +3774,7 @@ const programming: DictionaryResource[] = [
     length: 34,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsGlobal',
@@ -3476,6 +3786,7 @@ const programming: DictionaryResource[] = [
     length: 9,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsMapSet',
@@ -3487,6 +3798,7 @@ const programming: DictionaryResource[] = [
     length: 16,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsMath',
@@ -3498,6 +3810,7 @@ const programming: DictionaryResource[] = [
     length: 38,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsNumber',
@@ -3509,6 +3822,7 @@ const programming: DictionaryResource[] = [
     length: 22,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsObject',
@@ -3520,6 +3834,7 @@ const programming: DictionaryResource[] = [
     length: 37,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsPromise',
@@ -3531,6 +3846,7 @@ const programming: DictionaryResource[] = [
     length: 9,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'jsString',
@@ -3542,6 +3858,7 @@ const programming: DictionaryResource[] = [
     length: 32,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-builtin',
@@ -3553,6 +3870,7 @@ const programming: DictionaryResource[] = [
     length: 65,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-array',
@@ -3564,6 +3882,7 @@ const programming: DictionaryResource[] = [
     length: 11,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-date',
@@ -3575,6 +3894,7 @@ const programming: DictionaryResource[] = [
     length: 39,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-file',
@@ -3586,6 +3906,7 @@ const programming: DictionaryResource[] = [
     length: 21,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-class',
@@ -3597,6 +3918,7 @@ const programming: DictionaryResource[] = [
     length: 13,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-set',
@@ -3608,6 +3930,7 @@ const programming: DictionaryResource[] = [
     length: 29,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-math',
@@ -3619,6 +3942,7 @@ const programming: DictionaryResource[] = [
     length: 37,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-string',
@@ -3630,6 +3954,7 @@ const programming: DictionaryResource[] = [
     length: 40,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'python-system',
@@ -3641,6 +3966,7 @@ const programming: DictionaryResource[] = [
     length: 24,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'javeArrayList',
@@ -3652,6 +3978,7 @@ const programming: DictionaryResource[] = [
     length: 25,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'javaCharacter',
@@ -3663,6 +3990,7 @@ const programming: DictionaryResource[] = [
     length: 8,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'javaHashmap',
@@ -3674,6 +4002,7 @@ const programming: DictionaryResource[] = [
     length: 22,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'javaLinkedList',
@@ -3685,6 +4014,7 @@ const programming: DictionaryResource[] = [
     length: 25,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'javaString',
@@ -3696,6 +4026,7 @@ const programming: DictionaryResource[] = [
     length: 48,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'javaStringBuffer',
@@ -3707,6 +4038,7 @@ const programming: DictionaryResource[] = [
     length: 20,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'linuxCommand',
@@ -3718,6 +4050,7 @@ const programming: DictionaryResource[] = [
     length: 575,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'csharpKeywords',
@@ -3729,6 +4062,7 @@ const programming: DictionaryResource[] = [
     length: 78,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'csharpString',
@@ -3740,6 +4074,7 @@ const programming: DictionaryResource[] = [
     length: 79,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'csharpList',
@@ -3751,6 +4086,7 @@ const programming: DictionaryResource[] = [
     length: 36,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'sql-lower-case',
@@ -3762,6 +4098,7 @@ const programming: DictionaryResource[] = [
     length: 12,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'sql-upper-case',
@@ -3773,6 +4110,7 @@ const programming: DictionaryResource[] = [
     length: 12,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'ai-machine-learning',
@@ -3784,6 +4122,7 @@ const programming: DictionaryResource[] = [
     length: 726,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'ai-ai-for-science',
@@ -3795,6 +4134,7 @@ const programming: DictionaryResource[] = [
     length: 491,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'go_keyword',
@@ -3806,6 +4146,7 @@ const programming: DictionaryResource[] = [
     length: 25,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'go_builtin',
@@ -3817,6 +4158,7 @@ const programming: DictionaryResource[] = [
     length: 46,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'rustKeyword',
@@ -3828,6 +4170,7 @@ const programming: DictionaryResource[] = [
     length: 35,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'rustString',
@@ -3839,6 +4182,7 @@ const programming: DictionaryResource[] = [
     length: 24,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'rustVector',
@@ -3850,6 +4194,7 @@ const programming: DictionaryResource[] = [
     length: 28,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'rustHashMap',
@@ -3861,6 +4206,7 @@ const programming: DictionaryResource[] = [
     length: 23,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
   {
     id: 'SoundSfxKey',
@@ -3883,6 +4229,7 @@ const programming: DictionaryResource[] = [
     length: 82,
     language: 'code',
     languageCategory: 'code',
+    translationLanguage: 'zh',
   },
 ]
 
@@ -3920,6 +4267,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 100,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese001-zh',
@@ -3931,6 +4279,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 100,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese002',
@@ -3942,6 +4291,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 670,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese002-zh',
@@ -3953,6 +4303,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 670,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese003',
@@ -3964,6 +4315,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 635,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese003-zh',
@@ -3975,6 +4327,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 635,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese004',
@@ -3986,6 +4339,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 1830,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese004-zh',
@@ -3997,6 +4351,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 1830,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese005',
@@ -4008,6 +4363,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 1836,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese005-zh',
@@ -4019,6 +4375,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 1836,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese006',
@@ -4030,6 +4387,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 3477,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese006-zh',
@@ -4041,6 +4399,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 3477,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese007',
@@ -4052,6 +4411,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 3000,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese008',
@@ -4063,6 +4423,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 2500,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese009',
@@ -4074,6 +4435,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 1999,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
   {
     id: 'japanese0010',
@@ -4085,6 +4447,7 @@ const japaneseExam: DictionaryResource[] = [
     length: 2000,
     language: 'romaji',
     languageCategory: 'ja',
+    translationLanguage: 'zh',
   },
 ]
 
@@ -4100,6 +4463,7 @@ const germanExam: DictionaryResource[] = [
     length: 5892,
     language: 'de',
     languageCategory: 'de',
+    translationLanguage: 'zh',
   },
   {
     id: 'en2german',
@@ -4111,6 +4475,7 @@ const germanExam: DictionaryResource[] = [
     length: 5025,
     language: 'en',
     languageCategory: 'de',
+    translationLanguage: 'zh',
   },
 ]
 
@@ -4126,6 +4491,7 @@ const kazakhHapinDicts: DictionaryResource[] = [
     length: 3002,
     language: 'hapin',
     languageCategory: 'kk',
+    translationLanguage: 'zh',
   },
   {
     id: 'kazakh_basic_3000_cyrillic_hapin',
@@ -4137,6 +4503,7 @@ const kazakhHapinDicts: DictionaryResource[] = [
     length: 3002,
     language: 'hapin',
     languageCategory: 'kk',
+    translationLanguage: 'zh',
   },
 ]
 
@@ -4152,6 +4519,35 @@ const indonesianDicts: DictionaryResource[] = [
     length: 3037,
     language: 'id',
     languageCategory: 'id',
+    translationLanguage: 'zh',
+  },
+]
+
+//阿拉伯语词汇
+const arabicDicts: DictionaryResource[] = [
+  {
+    id: 'first',
+    name: 'First Arabic Dictionary',
+    description: 'English words with Arabic translations',
+    category: 'Arabic',
+    tags: ['基础'],
+    url: '/dicts/ar/first.json',
+    length: 801,
+    language: 'en',
+    languageCategory: 'ar',
+    translationLanguage: 'ar',
+  },
+  {
+    id: 'second',
+    name: 'Second Arabic Dictionary',
+    description: 'CET-4 words with Arabic translations',
+    category: 'Arabic',
+    tags: ['基础'],
+    url: '/dicts/ar/CET-4.json',
+    length: 2607,
+    language: 'en',
+    languageCategory: 'ar',
+    translationLanguage: 'ar',
   },
 ]
 
@@ -4168,6 +4564,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...germanExam,
   ...kazakhHapinDicts,
   ...indonesianDicts,
+  ...arabicDicts,
 
   // {
   //   id: 'zhtest',

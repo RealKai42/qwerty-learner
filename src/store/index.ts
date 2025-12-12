@@ -9,6 +9,7 @@ import type {
   LoopWordTimesOption,
   PhoneticType,
   PronunciationType,
+  TranslationLanguageType,
   WordDictationOpenBy,
   WordDictationType,
 } from '@/typings'
@@ -26,6 +27,8 @@ export const currentDictInfoAtom = atom<Dictionary>((get) => {
   }
   return dict
 })
+
+export const translationLanguageAtom = atomWithStorage<TranslationLanguageType>('translationLanguage', 'zh')
 
 export const currentChapterAtom = atomWithStorage('currentChapter', 0)
 

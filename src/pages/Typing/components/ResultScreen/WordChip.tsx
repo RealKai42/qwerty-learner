@@ -1,10 +1,16 @@
 import usePronunciationSound from '@/hooks/usePronunciation'
+import { translationLanguageAtom } from '@/store'
 import type { WordWithIndex } from '@/typings'
+import { getWordTranslation } from '@/utils/translation'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
+import { useAtomValue } from 'jotai'
 import { useCallback, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function WordChip({ word }: { word: WordWithIndex }) {
   const [showTranslation, setShowTranslation] = useState(false)
+  const translationLanguage = useAtomValue(translationLanguageAtom)
+  const { t } = useTranslation()
   const { x, y, strategy, refs, context } = useFloating({
     open: showTranslation,
     onOpenChange: setShowTranslation,
@@ -28,7 +34,7 @@ export default function WordChip({ word }: { word: WordWithIndex }) {
         {...getReferenceProps()}
         type="button"
         onClick={onClickWord}
-        title={`朗读 ${word.name}`}
+        title={t('resultScreen.pronounce_word', { word: word.name })}
       >
         <span>{word.name}</span>
       </button>
@@ -44,7 +50,7 @@ export default function WordChip({ word }: { word: WordWithIndex }) {
           }}
           {...getFloatingProps()}
         >
-          {word.trans}
+          {getWordTranslation(word, translationLanguage).join('；') || t('translation.not_available')}
         </div>
       )}
     </>

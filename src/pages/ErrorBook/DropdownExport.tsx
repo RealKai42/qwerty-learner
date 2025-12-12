@@ -4,6 +4,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { saveAs } from 'file-saver'
 import type { FC } from 'react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import * as XLSX from 'xlsx'
 
 type DropdownProps = {
@@ -12,6 +13,7 @@ type DropdownProps = {
 
 const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
   const [isExporting, setIsExporting] = useState(false)
+  const { t } = useTranslation()
 
   const formatTimestamp = (date: any) => {
     const year = date.getFullYear()
@@ -51,7 +53,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
       const dictDataResults = await Promise.all(dictDataPromises)
       const dictDataMap = new Map(dictDataResults.map((result) => [result.url, result.data]))
 
-      const ExportData: Array<{ 单词: string; 释义: string; 错误次数: number; 词典: string }> = []
+      const ExportData: Array<{ [key: string]: string | number }> = []
 
       renderRecords.forEach((item: any) => {
         const dictInfo = idDictionaryMap[item.dict]
@@ -64,17 +66,17 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
         }
 
         ExportData.push({
-          单词: item.word,
-          释义: translation,
-          错误次数: item.wrongCount,
-          词典: dictInfo?.name || item.dict,
+          [t('errorBook.word')]: item.word,
+          [t('errorBook.translation')]: translation,
+          [t('errorBook.error_count')]: item.wrongCount,
+          [t('errorBook.dictionary')]: dictInfo?.name || item.dict,
         })
       })
 
       let blob: Blob
 
       if (bookType === 'txt') {
-        const content = ExportData.map((item: any) => `${item.单词}: ${item.释义}`).join('\n')
+        const content = ExportData.map((item: any) => `${item[t('errorBook.word')]}: ${item[t('errorBook.translation')]}`).join('\n')
         blob = new Blob([content], { type: 'text/plain' })
       } else {
         const worksheet = XLSX.utils.json_to_sheet(ExportData)
@@ -92,7 +94,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
       }
     } catch (error) {
       console.error('Export failed:', error)
-      alert('导出失败，请重试')
+      alert(t('errorBook.export_failed'))
     } finally {
       setIsExporting(false)
     }
@@ -103,7 +105,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
       <DropdownMenu.Root>
         <DropdownMenu.Trigger asChild>
           <button className="my-btn-primary h-8 shadow transition hover:bg-indigo-600 disabled:opacity-50" disabled={isExporting}>
-            {isExporting ? '导出中...' : '导出'}
+            {isExporting ? t('errorBook.exporting') : t('errorBook.export')}
           </button>
         </DropdownMenu.Trigger>
         <DropdownMenu.Content className="mt-1 rounded bg-indigo-500 text-white shadow-lg">

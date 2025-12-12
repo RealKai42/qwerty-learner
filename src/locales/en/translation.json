@@ -1,0 +1,325 @@
+{
+  "app": {
+    "title": "Qwerty Learner",
+    "skip": "Skip",
+    "start": "Start",
+    "pause": "Pause",
+    "restart": "Restart",
+    "donate_title": "Buy us a coffee",
+    "donate_desc_1": "Thanks for using Qwerty Learner. This website is maintained in spare time. To ensure we can continuously provide quality service, we need your help!",
+    "donate_desc_2": "Your donation helps pay for operation costs, improve features and design, and enhance user experience.",
+    "donate_desc_3": "To thank you, for a single donation of 50 RMB or more, we will send 5 custom Qwerty stickers (Mainland China only).",
+    "china_mirror": "China Mirror",
+    "build": "Build",
+    "dark_mode": "Toggle dark mode",
+    "analysis": "View statistics",
+    "error_book": "Error book",
+    "sound_settings": "Sound settings",
+    "loop_single_word": "Loop single word",
+    "dictation_mode": "Toggle dictation mode",
+    "toggle_trans": "Toggle translation visibility",
+    "pronunciation": "Pronunciation",
+    "phonetic": "Phonetic",
+    "on": "On",
+    "off": "Off",
+    "tips_read_aloud": "Tips: Read aloud shortcut (Ctrl + J)",
+    "mobile_alert": "Qwerty Learner aims to improve English typing efficiency for keyboard workers. Mobile is not supported yet. Please use a desktop browser. If you are on a tablet like iPad, you can use an external keyboard.",
+    "join_community": "Join our community",
+    "join_xhs": "Join our Xiaohongshu community",
+    "consider_donate": "Consider donating",
+    "use_vscode_plugin": "Use Visual Studio Code plugin",
+    "friend_links": "Friend links",
+    "icp": "ICP No. 鲁ICP备2022030649号"
+  },
+  "gallery": {
+    "tab": {
+      "en": "English",
+      "ar": "Arabic",
+      "ja": "Japanese",
+      "de": "German",
+      "kk": "Kazakh",
+      "id": "Indonesian",
+      "code": "Code"
+    },
+    "disclaimer": "Dictionary data comes from various open source projects and community contributors."
+  },
+  "translation": {
+    "language": "Translation Language",
+    "not_available": "Translation not available"
+  },
+  "report": {
+    "modal_title": "Report Translation Issue",
+    "word_label": "Word",
+    "current_translation_label": "Current Translation",
+    "correct_translation_label": "Correct Translation",
+    "correction_placeholder": "Enter the correct translation...",
+    "submit_button": "Submit Report",
+    "cancel_button": "Cancel",
+    "submitting": "Submitting...",
+    "summary_title": "Ready to Report Translation Issues",
+    "summary_description": "You have reported {{count}} translation issues. Review them below and submit to the maintainer.",
+    "report_to_maintainer": "Report to Maintainer",
+    "success_title": "Report Submitted!",
+    "success_message": "Thank you for helping improve the translations. The Google Form should have opened in a new tab."
+  },
+  "pronSwitcher": {
+    "toggle_phonetic": "Toggle phonetic display",
+    "toggle_pron": "Toggle word pronunciation",
+    "toggle_trans_read": "Toggle translation pronunciation",
+    "toggle_loop": "Toggle looping pronunciation",
+    "accent": "Word pronunciation accent",
+    "closed": "Closed"
+  },
+  "switcher": {
+    "hand_position_illustration": "Hand position illustration",
+    "settings": "Settings"
+  },
+  "pronunciation": {
+    "american": "American",
+    "british": "British",
+    "german": "German",
+    "romaji": "Romaji",
+    "hapin": "Hapin",
+    "mandarin": "Mandarin",
+    "japanese": "Japanese",
+    "kazakh": "Kazakh",
+    "indonesian": "Indonesian"
+  },
+  "dictChapter": {
+    "dictionary_switch": "Dictionary Selector",
+    "chapter_switch": "Chapter Selector",
+    "error_review": "Error review",
+    "chapter": "#"
+  },
+  "speed": {
+    "time": "Time",
+    "input_count": "Input Count",
+    "wpm": "WPM",
+    "correct_count": "Correct Count",
+    "accuracy": "Accuracy"
+  },
+  "dictDetail": {
+    "chapters": "Chapters",
+    "total": "Total",
+    "words": "words",
+    "chapter_selection": "Chapter Selection",
+    "view_errors": "View Errors",
+    "error_review": "Error Review"
+  },
+  "chapter": {
+    "chapter": "Chapter",
+    "practice_count": "Practice {{count}} times",
+    "not_practiced": "Not practiced",
+    "loading": "Loading..."
+  },
+  "donateCard": {
+    "title": "{{chapterNumber}} Chapters Achievement !",
+    "achievement_text": "You have just completed <1>{{chapterNumber}}</1> chapters of practice. Qwerty Learner has been with you for <1>{{dayFromFirstWord}}</1> days, completing <1>{{wordNumber}}</1> words of practice together, helping you correct <1>{{sumWrongCount}}</1> typing errors. Let's celebrate your progress together",
+    "project_info": "Qwerty Learner has been operating as <1>open source, ad-free, and non-commercial</1> for <1>{{dayFromQwerty}}</1> days. Our goal is to provide all learners with an efficient, convenient, and distraction-free learning environment. We sincerely invite you to consider donating. Donations will be directly used to maintain Qwerty's daily operations and future development, allowing Qwerty to grow with you.",
+    "sticker_info": "To thank you for your generosity, for a single donation of 50 RMB or more, we will send 5 custom Qwerty stickers <1>(Mainland China only)</1>. We hope you can share your joy with friends",
+    "donated_button": "I have donated",
+    "remind_later_button": "Remind me later"
+  },
+  "mobile": {
+    "main_title": "Software designed for keyboard workers",
+    "subtitle": "Simplify English learning and typing skill improvement, quickly establish correct muscle memory",
+    "features": "Word memory combined with keyboard input, phonetic pronunciation and dictation mode, diverse vocabulary selection",
+    "help_title": "Help you quickly master words",
+    "phonetic_title": "Phonetic display and pronunciation function",
+    "phonetic_desc": "Help users memorize both pronunciation and phonetic symbols of words",
+    "dictation_title": "Dictation mode",
+    "dictation_desc": "Choose dictation after each chapter to consolidate learned words",
+    "feedback_title": "Real-time feedback",
+    "feedback_desc": "Display input speed and accuracy, quantify skill improvement",
+    "programmer_title": "Customized for programmers",
+    "programmer_desc": "Built-in programming-related vocabulary to improve work efficiency",
+    "easy_title": "Easy to use, simple and effective",
+    "easy_desc": "Word and muscle memory training software designed for keyboard workers",
+    "desktop_notice": "Please use a desktop browser to access this website and experience it now!"
+  },
+  "settings": {
+    "title": "Settings",
+    "open_settings": "Open settings dialog",
+    "close_dialog": "Close dialog",
+    "tabs": {
+      "sound": "Sound Settings",
+      "advanced": "Advanced Settings",
+      "view": "View Settings",
+      "data": "Data Settings"
+    },
+    "sound": {
+      "word_pronunciation": "Word Pronunciation",
+      "pronunciation_enabled": "Pronunciation {{status}}",
+      "volume": "Volume",
+      "speed": "Speed",
+      "translation_pronunciation": "Translation Pronunciation",
+      "key_sounds": "Key Sounds",
+      "key_sounds_enabled": "Key sounds {{status}}",
+      "key_sound_effects": "Key Sound Effects",
+      "effect_sounds": "Effect Sounds",
+      "effect_sounds_enabled": "Effect sounds {{status}}"
+    },
+    "advanced": {
+      "chapter_random": "Chapter Randomization",
+      "chapter_random_desc": "When enabled, words in each practice chapter will be randomly sorted. Takes effect in the next chapter.",
+      "random_enabled": "Random {{status}}",
+      "show_prev_next": "Show Previous/Next Word During Practice",
+      "show_prev_next_desc": "When enabled, the previous/next word will be displayed above during practice.",
+      "show_words_enabled": "Show words {{status}}",
+      "ignore_case": "Ignore Case",
+      "ignore_case_desc": "When enabled, input is case-insensitive. For example, typing 'hello' and 'Hello' will both be considered correct.",
+      "ignore_case_enabled": "Ignore case {{status}}",
+      "text_selectable": "Allow Text Selection",
+      "text_selectable_desc": "When enabled, text can be selected with the mouse.",
+      "text_selectable_enabled": "Text selection {{status}}",
+      "show_hint_on_hover": "Show Hints on Hover in Dictation Mode",
+      "show_hint_on_hover_desc": "When enabled, hover over words to display correct answers.",
+      "show_hint_enabled": "Show hints {{status}}"
+    },
+    "view": {
+      "font_settings": "Font Settings",
+      "foreign_font": "Foreign Font",
+      "chinese_font": "Chinese Font",
+      "reset_font_settings": "Reset Font Settings"
+    },
+    "data": {
+      "export": "Data Export",
+      "export_desc": "Currently, user practice data is <strong>only saved locally</strong>. If you need to use Qwerty Learner on different devices, browsers, or other non-official deployments, you need to manually sync and save your data. To preserve your practice progress and use the upcoming data analysis and intelligent training features, we recommend backing up your data regularly.",
+      "export_warning": "For your data security, please do not modify the exported data file.",
+      "export_data": "Export Data",
+      "import": "Data Import",
+      "import_desc": "Please note that importing data will <strong class=\"text-sm font-bold text-red-500\">completely overwrite</strong> current data. Please proceed with caution.",
+      "import_data": "Import Data"
+    },
+    "status": {
+      "enabled": "enabled",
+      "disabled": "disabled"
+    }
+  },
+  "wordPanel": {
+    "press_any_key": "Press any key to {{action}}",
+    "start": "start",
+    "continue": "continue"
+  },
+  "analysis": {
+    "no_practice_data": "No practice data available",
+    "exercise_heatmap": "Exercise Count Heatmap (Past Year)",
+    "word_heatmap": "Word Count Heatmap (Past Year)",
+    "wpm_trend": "WPM Trend (Past Year)",
+    "accuracy_trend": "Accuracy Trend (Past Year)",
+    "key_error_ranking": "Key Error Count Ranking",
+    "wpm": "WPM",
+    "accuracy": "Accuracy",
+    "error_count": "Error Count"
+  },
+  "analysisCharts": {
+    "tooltip": "{{date}} practiced {{count}} times",
+    "months": {
+      "january": "Jan",
+      "february": "Feb",
+      "march": "Mar",
+      "april": "Apr",
+      "may": "May",
+      "june": "Jun",
+      "july": "Jul",
+      "august": "Aug",
+      "september": "Sep",
+      "october": "Oct",
+      "november": "Nov",
+      "december": "Dec"
+    },
+    "weekdays": {
+      "sunday": "Sun",
+      "monday": "Mon",
+      "tuesday": "Tue",
+      "wednesday": "Wed",
+      "thursday": "Thu",
+      "friday": "Fri",
+      "saturday": "Sat"
+    },
+    "total_count": "Total {{count}} times in the past year",
+    "legend": {
+      "less": "Less",
+      "more": "More"
+    },
+    "toolbox": {
+      "switch_to_bar": "Switch to Bar Chart",
+      "switch_to_keyboard": "Switch to Keyboard Heatmap"
+    },
+    "visual_map": {
+      "more": "More",
+      "less": "Less"
+    }
+  },
+  "handPosition": {
+    "title": "Recommended Typing Finger Position",
+    "close_dialog": "Close dialog"
+  },
+  "errorBook": {
+    "tip": "Tip: Click on error words to view detailed information",
+    "word": "Word",
+    "translation": "Translation",
+    "error_count": "Error Count",
+    "dictionary": "Dictionary",
+    "export": "Export",
+    "exporting": "Exporting...",
+    "export_failed": "Export failed, please try again",
+    "data_loading_failed": "Data loading failed",
+    "average_time": "Average Time",
+    "practice_count": "Practice Count",
+    "correct_count": "Correct Count",
+    "wrong_count": "Wrong Count"
+  },
+  "switchers": {
+    "sound": {
+      "title": "Sound Settings",
+      "key_sounds": "Toggle Key Sounds",
+      "effect_sounds": "Toggle Effect Sounds",
+      "sound_enabled": "Sound {{status}}"
+    },
+    "loop": {
+      "title": "Select Word Loop Count",
+      "infinite": "Infinite"
+    },
+    "dictation": {
+      "title": "Toggle Dictation Mode",
+      "dictation_enabled": "Dictation {{status}}",
+      "dictation_mode": "Dictation Mode",
+      "types": {
+        "hide_all": "Hide All",
+        "hide_vowel": "Hide Vowels",
+        "hide_consonant": "Hide Consonants",
+        "random_hide": "Random Hide"
+      }
+    }
+  },
+  "resultScreen": {
+    "chapter_title": "{{dictName}} {{mode}}",
+    "review_mode": "Error Review",
+    "chapter_number": "Chapter {{number}}",
+    "accuracy": "Accuracy",
+    "chapter_time": "Chapter Time",
+    "wpm": "WPM",
+    "export_failed": "Failed to import xlsx module",
+    "donate_project": "Donate to our project",
+    "join_community": "Join our community",
+    "dictation_chapter": "Dictate This Chapter",
+    "repeat_chapter": "Repeat This Chapter",
+    "next_chapter": "Next Chapter",
+    "practice_other_chapters": "Practice Other Chapters",
+    "shortcuts": {
+      "dictation": "Shortcut: shift + enter",
+      "repeat": "Shortcut: space",
+      "next": "Shortcut: enter"
+    },
+    "conclusion": {
+      "excellent": "Great performance!",
+      "excellent_perfect": "Great performance! All correct!",
+      "excellent_with_errors": "Great performance! Only {{count}} words wrong",
+      "good": "Some minor issues, you can do better next time!",
+      "poor": "Too many errors, how about trying again?"
+    },
+    "author": "Click to learn about the author and more works ❤️",
+    "pronounce_word": "Pronounce {{word}}"
+  }
+}

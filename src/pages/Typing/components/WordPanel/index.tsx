@@ -5,17 +5,33 @@ import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
+import ReportSummaryModal from '@/components/ReportSummaryModal'
+import ReportTranslationModal from '@/components/ReportTranslationModal'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
-import type { Word } from '@/typings'
+import {
+  currentDictInfoAtom,
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopWordConfigAtom,
+  phoneticConfigAtom,
+  reviewModeInfoAtom,
+  translationLanguageAtom,
+} from '@/store'
+import type { ReportedWord, Word } from '@/typings'
+import { getPendingReportedWordsCount, getReportedWordsHistory } from '@/utils/reportedWords'
+import { getFormattedTranslation } from '@/utils/translation'
 import { useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useContext, useMemo, useState } from 'react'
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { useTranslation } from 'react-i18next'
 
 export default function WordPanel() {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
+  const translationLanguage = useAtomValue(translationLanguageAtom)
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const { t } = useTranslation()
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
   const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
@@ -25,6 +41,12 @@ export default function WordPanel() {
 
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
+
+  // Reporting functionality state
+  const [isReportModalOpen, setIsReportModalOpen] = useState(false)
+  const [isSummaryModalOpen, setIsSummaryModalOpen] = useState(false)
+  const [pendingReportedWords, setPendingReportedWords] = useState<ReportedWord[]>([])
+  const [pendingCount, setPendingCount] = useState(0)
 
   const prevIndex = useMemo(() => {
     const newIndex = state.chapterData.index - 1
@@ -36,6 +58,50 @@ export default function WordPanel() {
   }, [state.chapterData.index, state.chapterData.words.length])
 
   usePrefetchPronunciationSound(nextWord?.name)
+
+  // Check pending reported words count on mount and updates
+  useEffect(() => {
+    const updatePendingCount = () => {
+      const count = getPendingReportedWordsCount()
+      setPendingCount(count)
+
+      if (count >= 10) {
+        const history = getReportedWordsHistory()
+        setPendingReportedWords(history.pending)
+        setIsSummaryModalOpen(true)
+      }
+    }
+
+    updatePendingCount()
+  }, [])
+
+  // Handlers for reporting functionality
+  const handleOpenReportModal = useCallback(() => {
+    setIsReportModalOpen(true)
+  }, [])
+
+  const handleCloseReportModal = useCallback(() => {
+    setIsReportModalOpen(false)
+  }, [])
+
+  const handleReportSubmitted = useCallback(() => {
+    const count = getPendingReportedWordsCount()
+    setPendingCount(count)
+
+    if (count >= 10) {
+      const history = getReportedWordsHistory()
+      setPendingReportedWords(history.pending)
+      setIsSummaryModalOpen(true)
+    }
+  }, [])
+
+  const handleCloseSummaryModal = useCallback(() => {
+    setIsSummaryModalOpen(false)
+    setPendingReportedWords([])
+    // Update pending count after modal closes
+    const count = getPendingReportedWordsCount()
+    setPendingCount(count)
+  }, [])
 
   const reloadCurrentWordComponent = useCallback(() => {
     setWordComponentKey((old) => old + 1)
@@ -165,7 +231,9 @@ export default function WordPanel() {
               <div className="absolute flex h-full w-full justify-center">
                 <div className="z-10 flex w-full items-center backdrop-blur-sm">
                   <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
-                    按任意键{state.timerData.time ? '继续' : '开始'}
+                    {t('wordPanel.press_any_key', {
+                      action: state.timerData.time ? t('wordPanel.continue') : t('wordPanel.start'),
+                    })}
                   </p>
                 </div>
               </div>
@@ -174,16 +242,33 @@ export default function WordPanel() {
               <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
-                trans={currentWord.trans.join('；')}
+                trans={getFormattedTranslation(currentWord, translationLanguage, t('translation.not_available'))}
                 showTrans={shouldShowTranslation}
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}
+                word={currentWord.name}
+                dictionary={currentDictInfo.name}
+                onReportTranslation={handleOpenReportModal}
               />
             </div>
           </div>
         )}
       </div>
       <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
+
+      {/* Reporting Modals */}
+      {currentWord && (
+        <ReportTranslationModal
+          isOpen={isReportModalOpen}
+          onClose={handleCloseReportModal}
+          word={currentWord.name}
+          originalTranslation={getFormattedTranslation(currentWord, translationLanguage, t('translation.not_available'))}
+          dictionary={currentDictInfo.name}
+          onReportSubmitted={handleReportSubmitted}
+        />
+      )}
+
+      <ReportSummaryModal isOpen={isSummaryModalOpen} onClose={handleCloseSummaryModal} reportedWords={pendingReportedWords} />
     </div>
   )
 }

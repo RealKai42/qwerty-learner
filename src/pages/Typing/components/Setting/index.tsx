@@ -6,6 +6,7 @@ import ViewSetting from '@/pages/Typing/components/Setting/ViewSetting'
 import { Dialog, Tab, Transition } from '@headlessui/react'
 import classNames from 'classnames'
 import { Fragment, useContext, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconCog6Tooth from '~icons/heroicons/cog-6-tooth-solid'
 import IconEye from '~icons/heroicons/eye-solid'
 import IconAdjustmentsHorizontal from '~icons/tabler/adjustments-horizontal'
@@ -16,6 +17,7 @@ import IconX from '~icons/tabler/x'
 export default function Setting() {
   const [isOpen, setIsOpen] = useState(false)
   const { dispatch } = useContext(TypingContext) ?? {}
+  const { t } = useTranslation()
 
   function closeModal() {
     setIsOpen(false)
@@ -36,7 +38,7 @@ export default function Setting() {
         className={`flex items-center justify-center rounded p-[2px] text-lg text-indigo-500 outline-none transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white  ${
           isOpen && 'bg-indigo-500 text-white'
         }`}
-        title="打开设置对话框"
+        title={t('settings.open_settings')}
       >
         <IconCog6Tooth className="icon" />
       </button>
@@ -68,15 +70,15 @@ export default function Setting() {
               >
                 <Dialog.Panel className="flex w-200 flex-col overflow-hidden rounded-2xl bg-white p-0 shadow-xl dark:bg-gray-800">
                   <div className="relative flex h-22 items-end justify-between rounded-t-lg border-b border-neutral-100 bg-stone-50 px-6 py-3 dark:border-neutral-700 dark:bg-gray-900">
-                    <span className="text-3xl font-bold text-gray-600">设置</span>
-                    <button type="button" onClick={() => setIsOpen(false)} title="关闭对话框">
+                    <span className="text-3xl font-bold text-gray-600">{t('settings.title')}</span>
+                    <button type="button" onClick={() => setIsOpen(false)} title={t('settings.close_dialog')}>
                       <IconX className="absolute right-7 top-5 cursor-pointer text-gray-400" />
                     </button>
                   </div>
 
                   <Tab.Group vertical>
                     <div className="flex h-120 w-full ">
-                      <Tab.List className="flex h-full w-52 flex-col items-start space-y-3  border-r border-neutral-100 bg-stone-50 px-6 py-3 dark:border-transparent dark:bg-gray-900">
+                      <Tab.List className="flex h-full w-64 flex-col items-start space-y-3  border-r border-neutral-100 bg-stone-50 px-6 py-3 dark:border-transparent dark:bg-gray-900">
                         <Tab
                           className={({ selected }) =>
                             classNames(
@@ -86,7 +88,7 @@ export default function Setting() {
                           }
                         >
                           <IconEar className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300 ">音效设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300 ">{t('settings.tabs.sound')}</span>
                         </Tab>
                         <Tab
                           className={({ selected }) =>
@@ -97,7 +99,7 @@ export default function Setting() {
                           }
                         >
                           <IconAdjustmentsHorizontal className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300">高级设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300">{t('settings.tabs.advanced')}</span>
                         </Tab>
                         <Tab
                           className={({ selected }) =>
@@ -108,7 +110,7 @@ export default function Setting() {
                           }
                         >
                           <IconEye className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300">显示设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300">{t('settings.tabs.view')}</span>
                         </Tab>
                         <Tab
                           className={({ selected }) =>
@@ -119,7 +121,7 @@ export default function Setting() {
                           }
                         >
                           <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
-                          <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
+                          <span className="text-neutral-500 dark:text-neutral-300">{t('settings.tabs.data')}</span>
                         </Tab>
                       </Tab.List>
 

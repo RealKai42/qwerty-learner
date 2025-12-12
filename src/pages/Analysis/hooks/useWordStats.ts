@@ -103,10 +103,10 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
     count: Array.from(new Set(words)).length,
     level: getLevel(Array.from(new Set(words)).length),
   }))
-  // wpm=练习词数（不去重）/总时间
+  // 标准WPM = 输入字符数/5/分钟（按当天所有练习的单词字符总数计算）
   const wpmRecord: IWordStats['wpmRecord'] = RecordArray.map<[string, number]>(([date, { words, totalTime }]) => [
     date,
-    Math.round(words.length / (totalTime / 1000 / 60)),
+    Math.round(words.join('').length / 5 / (totalTime / 1000 / 60)),
   ]).filter((d) => d[1])
   // 正确率=每个单词的长度合计/(每个单词的长度合计+总错误次数)
   const accuracyRecord: IWordStats['accuracyRecord'] = RecordArray.map<[string, number]>(([date, { words, wrongCount }]) => [

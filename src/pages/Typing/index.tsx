@@ -12,6 +12,7 @@ import { useWordList } from './hooks/useWordList'
 import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
@@ -21,9 +22,11 @@ import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
+  const { t } = useTranslation()
   const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const { words } = useWordList()
@@ -41,9 +44,7 @@ const App: React.FC = () => {
     // 检测用户设备
     if (!IsDesktop()) {
       setTimeout(() => {
-        alert(
-          ' Qwerty Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad 等平板电脑设备，可以使用外接键盘使用本软件。',
-        )
+        alert(' ' + t('app.mobile_alert'))
       }, 500)
     }
   }, [])
@@ -136,7 +137,7 @@ const App: React.FC = () => {
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />
-          <Tooltip content="跳过该词">
+          <Tooltip content={t('app.skip')}>
             <button
               className={`${
                 state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
@@ -146,6 +147,7 @@ const App: React.FC = () => {
               Skip
             </button>
           </Tooltip>
+          <LanguageSwitcher />
         </Header>
         <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-5">
           <div className="container relative mx-auto flex h-full flex-col items-center">
