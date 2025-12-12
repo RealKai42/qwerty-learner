@@ -52,13 +52,13 @@ const MobilePage: React.FC = () => {
       const slideWidth = container.offsetWidth
 
       if (currentSlide === 0) {
-        container.style.transition = 'none'
-        container.style.transform = `translateX(0)`
+        container.style.transform = `translateX(-${totalSlides * slideWidth}px)`
         setTimeout(() => {
-          container.style.transition = 'transform 0.5s ease'
-          container.style.transform = `translateX(-${slideWidth}px)`
-        }, 50)
+          container.style.transition = 'none'
+          container.style.transform = `translateX(0)`
+        }, 500)
       } else {
+        container.style.transition = 'transform 0.5s ease'
         container.style.transform = `translateX(-${currentSlide * slideWidth}px)`
       }
     }
