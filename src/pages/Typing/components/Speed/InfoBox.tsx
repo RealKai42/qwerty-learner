@@ -6,7 +6,7 @@ const InfoBox: React.FC<InfoBoxProps> = ({ info, description }) => {
       <span className="w-4/5 border-b pb-2 text-center text-xl font-bold text-gray-600 transition-colors duration-300 dark:text-gray-400">
         {info}
       </span>
-      <span className="pt-2 text-xs text-gray-600 transition-colors duration-300 dark:text-gray-300">{description}</span>
+      <span className="pt-2 text-xs transition-colors duration-300 dark:text-gray-300">{description}</span>
     </div>
   )
 }
