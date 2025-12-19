@@ -1,7 +1,7 @@
 import { pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { addHowlListener } from '@/utils'
-import { romajiToHiragana } from '@/utils/kana'
+import { normalizeJapaneseWord } from '@/utils/kana'
 import noop from '@/utils/noop'
 import type { Howl } from 'howler'
 import { useAtomValue } from 'jotai'
@@ -17,7 +17,8 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
     case 'us':
       return `${pronunciationApi}${word}&type=2`
     case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
+      // WECANTFIX: 多音词与单汉字无法指定音读/训读，有道API会返回其默认读音，导致部分发音与当前假名不一致
+      return `${pronunciationApi}${encodeURIComponent(normalizeJapaneseWord(word))}&le=jap`
     case 'zh':
       return `${pronunciationApi}${word}&le=zh`
     case 'ja':

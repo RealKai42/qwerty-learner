@@ -17,6 +17,9 @@ export const WordPronunciationIcon = React.forwardRef<
         // 哈萨克语老文字
         return word.trans[2]
       }
+    } else if (lang === 'ja' || lang === 'romaji') {
+      // 日语使用 notation（如："塩(しお)"）
+      return word.notation || word.name
     } else {
       return word.name
     }

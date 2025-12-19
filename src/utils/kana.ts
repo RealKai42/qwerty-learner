@@ -4,6 +4,46 @@ export function isKanji(ch: string) {
 }
 
 /**
+ * 将各种日语输入规范化，用于请求发音：
+ * - 带汉字的词/带括号（优先取抽取汉字和括号外假名组合，也就是去掉括号及括号内内容）
+ * - 纯假名
+ * - 罗马字
+ */
+export function normalizeJapaneseWord(word: string): string {
+  // 带括号
+  if (word.includes('(') && word.includes(')')) {
+    // 括号前包含汉字
+    if (/[\u4e00-\u9fcf\uf900-\ufaff\u3400-\u4dbf]/.test(word)) {
+      const kanji = extractKanjiFromNotation(word)
+      return kanji
+    }
+
+    // 纯假名括号（优先括号内）
+    const kanaMatch = word.match(/\((.*?)\)/)
+    const kana = kanaMatch ? kanaMatch[1] : word
+    return kana
+  }
+
+  // 不带括号，是纯假名
+  if (/^[\u3040-\u309F\u30A0-\u30FF]+$/.test(word)) {
+    return word
+  }
+
+  // 仅含汉字，取汉字本体
+  if (/[\u4e00-\u9fcf\uf900-\ufaff\u3400-\u4dbf]/.test(word)) {
+    return extractKanjiFromNotation(word)
+  }
+
+  // 否则 romaji → 转假名
+  return romajiToHiragana(word)
+}
+
+export function extractKanjiFromNotation(notation: string) {
+  // 移除括号及里面的内容，例： "塩(しお)" → "塩", "古(ふる)い" → "古い"
+  return notation.replace(/\(.*?\)/, '')
+}
+
+/**
  * source: https://github.com/andree-surya/moji4j
  */
 export function romajiToHiragana(romaji: string): string {
