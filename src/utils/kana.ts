@@ -10,7 +10,7 @@ export function isKanji(ch: string) {
  * - 罗马字
  */
 export function normalizeJapaneseWord(word: string): string {
-  // 带括号（例：塩(しお)）
+  // 带括号
   if (word.includes('(') && word.includes(')')) {
     // 括号前包含汉字
     if (/[\u4e00-\u9fcf\uf900-\ufaff\u3400-\u4dbf]/.test(word)) {
@@ -24,17 +24,17 @@ export function normalizeJapaneseWord(word: string): string {
     return kana
   }
 
-  // 是纯假名
+  // 不带括号，是纯假名
   if (/^[\u3040-\u309F\u30A0-\u30FF]+$/.test(word)) {
     return word
   }
 
-  // 含汉字（取汉字本体）
+  // 仅含汉字，取汉字本体
   if (/[\u4e00-\u9fcf\uf900-\ufaff\u3400-\u4dbf]/.test(word)) {
     return extractKanjiFromNotation(word)
   }
 
-  // 否则为 romaji → 转假名
+  // 否则 romaji → 转假名
   return romajiToHiragana(word)
 }
 
