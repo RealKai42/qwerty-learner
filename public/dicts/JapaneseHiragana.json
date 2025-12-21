@@ -1,0 +1,1402 @@
+[
+    {
+        "name": "aiueo",
+        "trans": [],
+        "notation": "あいうえお"
+    },
+    {
+        "name": "aeoui",
+        "trans": [],
+        "notation": "あえおうい"
+    },
+    {
+        "name": "uieoa",
+        "trans": [],
+        "notation": "ういえおあ"
+    },
+    {
+        "name": "oaiue",
+        "trans": [],
+        "notation": "おあいうえ"
+    },
+    {
+        "name": "euoai",
+        "trans": [],
+        "notation": "えうおあい"
+    },
+    {
+        "name": "ieaou",
+        "trans": [],
+        "notation": "いえあおう"
+    },
+    {
+        "name": "oueai",
+        "trans": [],
+        "notation": "おうえあい"
+    },
+    {
+        "name": "auieo",
+        "trans": [],
+        "notation": "あういえお"
+    },
+    {
+        "name": "eaoiu",
+        "trans": [],
+        "notation": "えあおいう"
+    },
+    {
+        "name": "iouea",
+        "trans": [],
+        "notation": "いおうえあ"
+    },
+    {
+        "name": "ueoia",
+        "trans": [],
+        "notation": "うえおいあ"
+    },
+    {
+        "name": "aoieu",
+        "trans": [],
+        "notation": "あおいえう"
+    },
+    {
+        "name": "eiuoa",
+        "trans": [],
+        "notation": "えいうおあ"
+    },
+    {
+        "name": "ouaei",
+        "trans": [],
+        "notation": "おうあえい"
+    },
+    {
+        "name": "iaueo",
+        "trans": [],
+        "notation": "いあうえお"
+    },
+    {
+        "name": "uoeia",
+        "trans": [],
+        "notation": "うおえいあ"
+    },
+    {
+        "name": "eioua",
+        "trans": [],
+        "notation": "えいおうあ"
+    },
+    {
+        "name": "aueio",
+        "trans": [],
+        "notation": "あうえいお"
+    },
+    {
+        "name": "oiaue",
+        "trans": [],
+        "notation": "おいあうえ"
+    },
+    {
+        "name": "ueoai",
+        "trans": [],
+        "notation": "うえおあい"
+    },
+    {
+        "name": "kakikukeko",
+        "trans": [],
+        "notation": "かきくけこ"
+    },
+    {
+        "name": "kekokakiku",
+        "trans": [],
+        "notation": "けこかきく"
+    },
+    {
+        "name": "kikukekako",
+        "trans": [],
+        "notation": "きくけかこ"
+    },
+    {
+        "name": "kokakikuke",
+        "trans": [],
+        "notation": "こかきくけ"
+    },
+    {
+        "name": "kukekokaki",
+        "trans": [],
+        "notation": "くけこかき"
+    },
+    {
+        "name": "kekakukoki",
+        "trans": [],
+        "notation": "けかくこき"
+    },
+    {
+        "name": "kikokakuke",
+        "trans": [],
+        "notation": "きこかくけ"
+    },
+    {
+        "name": "kokukekika",
+        "trans": [],
+        "notation": "こくけきか"
+    },
+    {
+        "name": "kukikekoka",
+        "trans": [],
+        "notation": "くきけこか"
+    },
+    {
+        "name": "kakekokiku",
+        "trans": [],
+        "notation": "かけこきく"
+    },
+    {
+        "name": "kikakekuko",
+        "trans": [],
+        "notation": "きかけくこ"
+    },
+    {
+        "name": "kokikakuke",
+        "trans": [],
+        "notation": "こきかくけ"
+    },
+    {
+        "name": "kekukakiko",
+        "trans": [],
+        "notation": "けくかきこ"
+    },
+    {
+        "name": "kukokekika",
+        "trans": [],
+        "notation": "くこけきか"
+    },
+    {
+        "name": "kakukekoki",
+        "trans": [],
+        "notation": "かくけこき"
+    },
+    {
+        "name": "kikekakuko",
+        "trans": [],
+        "notation": "きけかくこ"
+    },
+    {
+        "name": "kokekikuka",
+        "trans": [],
+        "notation": "こけきくか"
+    },
+    {
+        "name": "kekikokuka",
+        "trans": [],
+        "notation": "けきこくか"
+    },
+    {
+        "name": "kukakikeko",
+        "trans": [],
+        "notation": "くかきけこ"
+    },
+    {
+        "name": "kakokukeki",
+        "trans": [],
+        "notation": "かこくけき"
+    },
+    {
+        "name": "sashisuseso",
+        "trans": [],
+        "notation": "さしすせそ"
+    },
+    {
+        "name": "sesosashisu",
+        "trans": [],
+        "notation": "せそさしす"
+    },
+    {
+        "name": "shisusesaso",
+        "trans": [],
+        "notation": "しすせさそ"
+    },
+    {
+        "name": "sosashisuse",
+        "trans": [],
+        "notation": "そさしすせ"
+    },
+    {
+        "name": "susesosashi",
+        "trans": [],
+        "notation": "すせそさし"
+    },
+    {
+        "name": "sesasusoshi",
+        "trans": [],
+        "notation": "せさすそし"
+    },
+    {
+        "name": "shisosasuse",
+        "trans": [],
+        "notation": "しそさすせ"
+    },
+    {
+        "name": "sosuseshisa",
+        "trans": [],
+        "notation": "そすせしさ"
+    },
+    {
+        "name": "sushisesosa",
+        "trans": [],
+        "notation": "すしせそさ"
+    },
+    {
+        "name": "sasesoshisu",
+        "trans": [],
+        "notation": "させそしす"
+    },
+    {
+        "name": "shisasesuso",
+        "trans": [],
+        "notation": "しさせすそ"
+    },
+    {
+        "name": "soshisasuse",
+        "trans": [],
+        "notation": "そしさすせ"
+    },
+    {
+        "name": "sesusashiso",
+        "trans": [],
+        "notation": "せすさしそ"
+    },
+    {
+        "name": "susoseshisa",
+        "trans": [],
+        "notation": "すそせしさ"
+    },
+    {
+        "name": "sasusesoshi",
+        "trans": [],
+        "notation": "さすせそし"
+    },
+    {
+        "name": "shisesasuso",
+        "trans": [],
+        "notation": "しせさすそ"
+    },
+    {
+        "name": "soseshisusa",
+        "trans": [],
+        "notation": "そせしすさ"
+    },
+    {
+        "name": "seshisosusa",
+        "trans": [],
+        "notation": "せしそすさ"
+    },
+    {
+        "name": "susashiseso",
+        "trans": [],
+        "notation": "すさしせそ"
+    },
+    {
+        "name": "sasosushise",
+        "trans": [],
+        "notation": "さそすしせ"
+    },
+    {
+        "name": "tachitsuteto",
+        "trans": [],
+        "notation": "たちつてと"
+    },
+    {
+        "name": "tetotachitsu",
+        "trans": [],
+        "notation": "てとたちつ"
+    },
+    {
+        "name": "chitsutetato",
+        "trans": [],
+        "notation": "ちつてたと"
+    },
+    {
+        "name": "totachitsute",
+        "trans": [],
+        "notation": "とたちつて"
+    },
+    {
+        "name": "tsutetotachi",
+        "trans": [],
+        "notation": "つてとたち"
+    },
+    {
+        "name": "tetatsutochi",
+        "trans": [],
+        "notation": "てたつとち"
+    },
+    {
+        "name": "chitotatsute",
+        "trans": [],
+        "notation": "ちとたつて"
+    },
+    {
+        "name": "totsutechita",
+        "trans": [],
+        "notation": "とつてちた"
+    },
+    {
+        "name": "tsuchitetota",
+        "trans": [],
+        "notation": "つちてとた"
+    },
+    {
+        "name": "tatetochitsu",
+        "trans": [],
+        "notation": "たてとちつ"
+    },
+    {
+        "name": "chitatsuteto",
+        "trans": [],
+        "notation": "ちたつてと"
+    },
+    {
+        "name": "tochitatsute",
+        "trans": [],
+        "notation": "とちたつて"
+    },
+    {
+        "name": "tetsutachito",
+        "trans": [],
+        "notation": "てつたちと"
+    },
+    {
+        "name": "tsutotechita",
+        "trans": [],
+        "notation": "つとてちた"
+    },
+    {
+        "name": "tatsutetochi",
+        "trans": [],
+        "notation": "たつてとち"
+    },
+    {
+        "name": "chitetsutato",
+        "trans": [],
+        "notation": "ちてつたと"
+    },
+    {
+        "name": "totetsuchita",
+        "trans": [],
+        "notation": "とてつちた"
+    },
+    {
+        "name": "techitotsuta",
+        "trans": [],
+        "notation": "てちとつた"
+    },
+    {
+        "name": "tsutachiteto",
+        "trans": [],
+        "notation": "つたちてと"
+    },
+    {
+        "name": "tatotsuchite",
+        "trans": [],
+        "notation": "たとつちて"
+    },
+    {
+        "name": "naninuneno",
+        "trans": [],
+        "notation": "なにぬねの"
+    },
+    {
+        "name": "nenonaninu",
+        "trans": [],
+        "notation": "ねのなにぬ"
+    },
+    {
+        "name": "ninunenano",
+        "trans": [],
+        "notation": "にぬねなの"
+    },
+    {
+        "name": "nonaninune",
+        "trans": [],
+        "notation": "のなにぬね"
+    },
+    {
+        "name": "nunenonani",
+        "trans": [],
+        "notation": "ぬねのなに"
+    },
+    {
+        "name": "nenanunoni",
+        "trans": [],
+        "notation": "ねなぬのに"
+    },
+    {
+        "name": "ninonanune",
+        "trans": [],
+        "notation": "にのなぬね"
+    },
+    {
+        "name": "nonunenina",
+        "trans": [],
+        "notation": "のぬねにな"
+    },
+    {
+        "name": "nuninenona",
+        "trans": [],
+        "notation": "ぬにねのな"
+    },
+    {
+        "name": "nanenoninu",
+        "trans": [],
+        "notation": "なねのにぬ"
+    },
+    {
+        "name": "ninanuneno",
+        "trans": [],
+        "notation": "になぬねの"
+    },
+    {
+        "name": "noninanune",
+        "trans": [],
+        "notation": "のになぬね"
+    },
+    {
+        "name": "nenunanino",
+        "trans": [],
+        "notation": "ねぬなにの"
+    },
+    {
+        "name": "nunonenina",
+        "trans": [],
+        "notation": "ぬのねにな"
+    },
+    {
+        "name": "nanunenoni",
+        "trans": [],
+        "notation": "なぬねのに"
+    },
+    {
+        "name": "ninenanuno",
+        "trans": [],
+        "notation": "にねなぬの"
+    },
+    {
+        "name": "noneninanu",
+        "trans": [],
+        "notation": "のねになぬ"
+    },
+    {
+        "name": "neninunona",
+        "trans": [],
+        "notation": "ねにぬのな"
+    },
+    {
+        "name": "nunanineno",
+        "trans": [],
+        "notation": "ぬなにねの"
+    },
+    {
+        "name": "nanonunine",
+        "trans": [],
+        "notation": "なのぬにね"
+    },
+    {
+        "name": "hahifuheho",
+        "trans": [],
+        "notation": "はひふへほ"
+    },
+    {
+        "name": "hehohahifu",
+        "trans": [],
+        "notation": "へほはひふ"
+    },
+    {
+        "name": "hifuhehaho",
+        "trans": [],
+        "notation": "ひふへはほ"
+    },
+    {
+        "name": "hohahifuhe",
+        "trans": [],
+        "notation": "ほはひふへ"
+    },
+    {
+        "name": "fuhehohahi",
+        "trans": [],
+        "notation": "ふへほはひ"
+    },
+    {
+        "name": "hehafuhohi",
+        "trans": [],
+        "notation": "へはふほひ"
+    },
+    {
+        "name": "hihohafuhe",
+        "trans": [],
+        "notation": "ひほはふへ"
+    },
+    {
+        "name": "hofuhehiha",
+        "trans": [],
+        "notation": "ほふへひは"
+    },
+    {
+        "name": "fuhihehoha",
+        "trans": [],
+        "notation": "ふひへほは"
+    },
+    {
+        "name": "hahehohifu",
+        "trans": [],
+        "notation": "はへほひふ"
+    },
+    {
+        "name": "hihafuheho",
+        "trans": [],
+        "notation": "ひはふへほ"
+    },
+    {
+        "name": "hohihafuhe",
+        "trans": [],
+        "notation": "ほひはふへ"
+    },
+    {
+        "name": "hefuhahiho",
+        "trans": [],
+        "notation": "へふはひほ"
+    },
+    {
+        "name": "fuhohehiha",
+        "trans": [],
+        "notation": "ふほへひは"
+    },
+    {
+        "name": "hafuhehohi",
+        "trans": [],
+        "notation": "はふへほひ"
+    },
+    {
+        "name": "hihehafuho",
+        "trans": [],
+        "notation": "ひへはふほ"
+    },
+    {
+        "name": "hohefuhiha",
+        "trans": [],
+        "notation": "ほへふひは"
+    },
+    {
+        "name": "hehihofuha",
+        "trans": [],
+        "notation": "へひほふは"
+    },
+    {
+        "name": "fuhahiheho",
+        "trans": [],
+        "notation": "ふはひへほ"
+    },
+    {
+        "name": "hahofuhihe",
+        "trans": [],
+        "notation": "はほふひへ"
+    },
+    {
+        "name": "mamimumemo",
+        "trans": [],
+        "notation": "まみむめも"
+    },
+    {
+        "name": "memomamimu",
+        "trans": [],
+        "notation": "めもまみむ"
+    },
+    {
+        "name": "mimumemamo",
+        "trans": [],
+        "notation": "みむめまも"
+    },
+    {
+        "name": "momamimume",
+        "trans": [],
+        "notation": "もまみむめ"
+    },
+    {
+        "name": "mumemomami",
+        "trans": [],
+        "notation": "むめもまみ"
+    },
+    {
+        "name": "memamumomi",
+        "trans": [],
+        "notation": "めまむもみ"
+    },
+    {
+        "name": "mimomamume",
+        "trans": [],
+        "notation": "みもまむめ"
+    },
+    {
+        "name": "momumemima",
+        "trans": [],
+        "notation": "もむめみま"
+    },
+    {
+        "name": "mumimemoma",
+        "trans": [],
+        "notation": "むみめもま"
+    },
+    {
+        "name": "mamemomimu",
+        "trans": [],
+        "notation": "まめもみむ"
+    },
+    {
+        "name": "mimamumome",
+        "trans": [],
+        "notation": "みまむもめ"
+    },
+    {
+        "name": "momimamume",
+        "trans": [],
+        "notation": "もみまむめ"
+    },
+    {
+        "name": "memumamimo",
+        "trans": [],
+        "notation": "めむまみも"
+    },
+    {
+        "name": "mumomemima",
+        "trans": [],
+        "notation": "むもめみま"
+    },
+    {
+        "name": "mamumemomi",
+        "trans": [],
+        "notation": "まむめもみ"
+    },
+    {
+        "name": "mimemamumo",
+        "trans": [],
+        "notation": "みめまむも"
+    },
+    {
+        "name": "momemimuma",
+        "trans": [],
+        "notation": "もめみむま"
+    },
+    {
+        "name": "memimomuma",
+        "trans": [],
+        "notation": "めみもむま"
+    },
+    {
+        "name": "mumamimemo",
+        "trans": [],
+        "notation": "むまみめも"
+    },
+    {
+        "name": "mamomumime",
+        "trans": [],
+        "notation": "まもむみめ"
+    },
+    {
+        "name": "yayuyowawon",
+        "trans": [],
+        "notation": "やゆよわをん"
+    },
+    {
+        "name": "yuwonyayowa",
+        "trans": [],
+        "notation": "ゆをんやよわ"
+    },
+    {
+        "name": "yoyawayuwon",
+        "trans": [],
+        "notation": "よやわゆをん"
+    },
+    {
+        "name": "wonyayuyowa",
+        "trans": [],
+        "notation": "をんやゆよわ"
+    },
+    {
+        "name": "woyuyayowan",
+        "trans": [],
+        "notation": "をゆやよわん"
+    },
+    {
+        "name": "wayunyowoya",
+        "trans": [],
+        "notation": "わゆんよをや"
+    },
+    {
+        "name": "nyayuwoyowa",
+        "trans": [],
+        "notation": "んやゆをよわ"
+    },
+    {
+        "name": "yowonyuwaya",
+        "trans": [],
+        "notation": "よをんゆわや"
+    },
+    {
+        "name": "wonyawayuyo",
+        "trans": [],
+        "notation": "をんやわゆよ"
+    },
+    {
+        "name": "yawoyoyuwan",
+        "trans": [],
+        "notation": "やをよゆわん"
+    },
+    {
+        "name": "yuyowanyawo",
+        "trans": [],
+        "notation": "ゆよわんやを"
+    },
+    {
+        "name": "woyayuyowan",
+        "trans": [],
+        "notation": "をやゆよわん"
+    },
+    {
+        "name": "nyuyayowawo",
+        "trans": [],
+        "notation": "んゆやよわを"
+    },
+    {
+        "name": "yuwanyoyawo",
+        "trans": [],
+        "notation": "ゆわんよやを"
+    },
+    {
+        "name": "wayoyuwonya",
+        "trans": [],
+        "notation": "わよゆをんや"
+    },
+    {
+        "name": "nyayuwawoyo",
+        "trans": [],
+        "notation": "んやゆわをよ"
+    },
+    {
+        "name": "yowayayuwon",
+        "trans": [],
+        "notation": "よわやゆをん"
+    },
+    {
+        "name": "wonyawayuyo",
+        "trans": [],
+        "notation": "をんやわゆよ"
+    },
+    {
+        "name": "yuwoyanwayo",
+        "trans": [],
+        "notation": "ゆをやんわよ"
+    },
+    {
+        "name": "wayoyuyawon",
+        "trans": [],
+        "notation": "わよゆやをん"
+    },
+    {
+        "name": "rarirurero",
+        "trans": [],
+        "notation": "らりるれろ"
+    },
+    {
+        "name": "rerorariru",
+        "trans": [],
+        "notation": "れろらりる"
+    },
+    {
+        "name": "rirureraro",
+        "trans": [],
+        "notation": "りるれらろ"
+    },
+    {
+        "name": "rorarirure",
+        "trans": [],
+        "notation": "ろらりるれ"
+    },
+    {
+        "name": "rurerorari",
+        "trans": [],
+        "notation": "るれろらり"
+    },
+    {
+        "name": "rerarurori",
+        "trans": [],
+        "notation": "れらるろり"
+    },
+    {
+        "name": "rirorarure",
+        "trans": [],
+        "notation": "りろらるれ"
+    },
+    {
+        "name": "rorurerira",
+        "trans": [],
+        "notation": "ろるれりら"
+    },
+    {
+        "name": "rurirerora",
+        "trans": [],
+        "notation": "るりれろら"
+    },
+    {
+        "name": "rareroriru",
+        "trans": [],
+        "notation": "られろりる"
+    },
+    {
+        "name": "rirarurero",
+        "trans": [],
+        "notation": "りらるれろ"
+    },
+    {
+        "name": "rorirarure",
+        "trans": [],
+        "notation": "ろりらるれ"
+    },
+    {
+        "name": "rerurariro",
+        "trans": [],
+        "notation": "れるらりろ"
+    },
+    {
+        "name": "rurorerira",
+        "trans": [],
+        "notation": "るろれりら"
+    },
+    {
+        "name": "rarurerori",
+        "trans": [],
+        "notation": "らるれろり"
+    },
+    {
+        "name": "rireraruro",
+        "trans": [],
+        "notation": "りれらるろ"
+    },
+    {
+        "name": "rorerirura",
+        "trans": [],
+        "notation": "ろれりるら"
+    },
+    {
+        "name": "rerirorura",
+        "trans": [],
+        "notation": "れりろるら"
+    },
+    {
+        "name": "rurarirero",
+        "trans": [],
+        "notation": "るらりれろ"
+    },
+    {
+        "name": "rarorurire",
+        "trans": [],
+        "notation": "らろるりれ"
+    },
+    {
+        "name": "gagigugego",
+        "trans": [],
+        "notation": "がぎぐげご"
+    },
+    {
+        "name": "gegogagigu",
+        "trans": [],
+        "notation": "げごがぎぐ"
+    },
+    {
+        "name": "gigugegago",
+        "trans": [],
+        "notation": "ぎぐげがご"
+    },
+    {
+        "name": "gogagiguge",
+        "trans": [],
+        "notation": "ごがぎぐげ"
+    },
+    {
+        "name": "gugegogagi",
+        "trans": [],
+        "notation": "ぐげごがぎ"
+    },
+    {
+        "name": "gegagugogi",
+        "trans": [],
+        "notation": "げがぐごぎ"
+    },
+    {
+        "name": "gigogaguge",
+        "trans": [],
+        "notation": "ぎごがぐげ"
+    },
+    {
+        "name": "gogugegiga",
+        "trans": [],
+        "notation": "ごぐげぎが"
+    },
+    {
+        "name": "gugigegoga",
+        "trans": [],
+        "notation": "ぐぎげごが"
+    },
+    {
+        "name": "gagegogigu",
+        "trans": [],
+        "notation": "がげごぎぐ"
+    },
+    {
+        "name": "gigagegugo",
+        "trans": [],
+        "notation": "ぎがげぐご"
+    },
+    {
+        "name": "gogigaguge",
+        "trans": [],
+        "notation": "ごぎがぐげ"
+    },
+    {
+        "name": "gegugagigo",
+        "trans": [],
+        "notation": "げぐがぎご"
+    },
+    {
+        "name": "gugogegiga",
+        "trans": [],
+        "notation": "ぐごげぎが"
+    },
+    {
+        "name": "gagugegogi",
+        "trans": [],
+        "notation": "がぐげごぎ"
+    },
+    {
+        "name": "gigegagugo",
+        "trans": [],
+        "notation": "ぎげがぐご"
+    },
+    {
+        "name": "gogegigagu",
+        "trans": [],
+        "notation": "ごげぎがぐ"
+    },
+    {
+        "name": "gegigoguga",
+        "trans": [],
+        "notation": "げぎごぐが"
+    },
+    {
+        "name": "gugagigego",
+        "trans": [],
+        "notation": "ぐがぎげご"
+    },
+    {
+        "name": "gagogugige",
+        "trans": [],
+        "notation": "がごぐぎげ"
+    },
+    {
+        "name": "zajizuzezo",
+        "trans": [],
+        "notation": "ざじずぜぞ"
+    },
+    {
+        "name": "zezozajizu",
+        "trans": [],
+        "notation": "ぜぞざじず"
+    },
+    {
+        "name": "jizuzezazo",
+        "trans": [],
+        "notation": "じずぜざぞ"
+    },
+    {
+        "name": "zozajizuze",
+        "trans": [],
+        "notation": "ぞざじずぜ"
+    },
+    {
+        "name": "zuzezozaji",
+        "trans": [],
+        "notation": "ずぜぞざじ"
+    },
+    {
+        "name": "zezazuzoji",
+        "trans": [],
+        "notation": "ぜざずぞじ"
+    },
+    {
+        "name": "jizozazuze",
+        "trans": [],
+        "notation": "じぞざずぜ"
+    },
+    {
+        "name": "zozuzejiza",
+        "trans": [],
+        "notation": "ぞずぜじざ"
+    },
+    {
+        "name": "zujizezoza",
+        "trans": [],
+        "notation": "ずじぜぞざ"
+    },
+    {
+        "name": "zazezojizu",
+        "trans": [],
+        "notation": "ざぜぞじず"
+    },
+    {
+        "name": "jizazuzezo",
+        "trans": [],
+        "notation": "じざずぜぞ"
+    },
+    {
+        "name": "zojizazuze",
+        "trans": [],
+        "notation": "ぞじざずぜ"
+    },
+    {
+        "name": "zezujizazo",
+        "trans": [],
+        "notation": "ぜずじざぞ"
+    },
+    {
+        "name": "zuzozejiza",
+        "trans": [],
+        "notation": "ずぞぜじざ"
+    },
+    {
+        "name": "zazuzezoji",
+        "trans": [],
+        "notation": "ざずぜぞじ"
+    },
+    {
+        "name": "jizezazuzo",
+        "trans": [],
+        "notation": "じぜざずぞ"
+    },
+    {
+        "name": "zozejizuza",
+        "trans": [],
+        "notation": "ぞぜじずざ"
+    },
+    {
+        "name": "zejizuzoza",
+        "trans": [],
+        "notation": "ぜじずぞざ"
+    },
+    {
+        "name": "zuzajizezo",
+        "trans": [],
+        "notation": "ずざじぜぞ"
+    },
+    {
+        "name": "zazozujize",
+        "trans": [],
+        "notation": "ざぞずじぜ"
+    },
+    {
+        "name": "dajizudedo",
+        "trans": [],
+        "notation": "だぢづでど"
+    },
+    {
+        "name": "dedodajizu",
+        "trans": [],
+        "notation": "でどだぢづ"
+    },
+    {
+        "name": "jizudedado",
+        "trans": [],
+        "notation": "ぢづでだど"
+    },
+    {
+        "name": "dodajizude",
+        "trans": [],
+        "notation": "どだぢづで"
+    },
+    {
+        "name": "zudedodaji",
+        "trans": [],
+        "notation": "づでどだぢ"
+    },
+    {
+        "name": "dedazudoji",
+        "trans": [],
+        "notation": "でだづどぢ"
+    },
+    {
+        "name": "jidodazude",
+        "trans": [],
+        "notation": "ぢどだづで"
+    },
+    {
+        "name": "dozudejida",
+        "trans": [],
+        "notation": "どづでぢだ"
+    },
+    {
+        "name": "zujidedoda",
+        "trans": [],
+        "notation": "づぢでどだ"
+    },
+    {
+        "name": "dadedojizu",
+        "trans": [],
+        "notation": "だでどぢづ"
+    },
+    {
+        "name": "jidazudedo",
+        "trans": [],
+        "notation": "ぢだづでど"
+    },
+    {
+        "name": "dojidazude",
+        "trans": [],
+        "notation": "どぢだづで"
+    },
+    {
+        "name": "dezudajido",
+        "trans": [],
+        "notation": "でづだぢど"
+    },
+    {
+        "name": "zudodejida",
+        "trans": [],
+        "notation": "づどでぢだ"
+    },
+    {
+        "name": "dazudedoji",
+        "trans": [],
+        "notation": "だづでどぢ"
+    },
+    {
+        "name": "jidedazudo",
+        "trans": [],
+        "notation": "ぢでだづど"
+    },
+    {
+        "name": "dodejizuda",
+        "trans": [],
+        "notation": "どでぢづだ"
+    },
+    {
+        "name": "dejizudoda",
+        "trans": [],
+        "notation": "でぢづどだ"
+    },
+    {
+        "name": "zudajidedo",
+        "trans": [],
+        "notation": "づだぢでど"
+    },
+    {
+        "name": "dadozujide",
+        "trans": [],
+        "notation": "だどづぢで"
+    },
+    {
+        "name": "babibubebo",
+        "trans": [],
+        "notation": "ばびぶべぼ"
+    },
+    {
+        "name": "bebobabibu",
+        "trans": [],
+        "notation": "べぼばびぶ"
+    },
+    {
+        "name": "bibubebabo",
+        "trans": [],
+        "notation": "びぶべばぼ"
+    },
+    {
+        "name": "bobabibube",
+        "trans": [],
+        "notation": "ぼばびぶべ"
+    },
+    {
+        "name": "bubebobabi",
+        "trans": [],
+        "notation": "ぶべぼばび"
+    },
+    {
+        "name": "bebabubobi",
+        "trans": [],
+        "notation": "べばぶぼび"
+    },
+    {
+        "name": "bibobabube",
+        "trans": [],
+        "notation": "びぼばぶべ"
+    },
+    {
+        "name": "bobubebiba",
+        "trans": [],
+        "notation": "ぼぶべびば"
+    },
+    {
+        "name": "bubibeboba",
+        "trans": [],
+        "notation": "ぶびべぼば"
+    },
+    {
+        "name": "babebobibu",
+        "trans": [],
+        "notation": "ばべぼびぶ"
+    },
+    {
+        "name": "bibabubebo",
+        "trans": [],
+        "notation": "びばぶべぼ"
+    },
+    {
+        "name": "bobibabube",
+        "trans": [],
+        "notation": "ぼびばぶべ"
+    },
+    {
+        "name": "bebubabibo",
+        "trans": [],
+        "notation": "べぶばびぼ"
+    },
+    {
+        "name": "bubobebiba",
+        "trans": [],
+        "notation": "ぶぼべびば"
+    },
+    {
+        "name": "babubebobi",
+        "trans": [],
+        "notation": "ばぶべぼび"
+    },
+    {
+        "name": "bibebabubo",
+        "trans": [],
+        "notation": "びべばぶぼ"
+    },
+    {
+        "name": "bobebibuba",
+        "trans": [],
+        "notation": "ぼべびぶば"
+    },
+    {
+        "name": "bebibuboba",
+        "trans": [],
+        "notation": "べびぶぼば"
+    },
+    {
+        "name": "bubabibebo",
+        "trans": [],
+        "notation": "ぶばびべぼ"
+    },
+    {
+        "name": "babobubibe",
+        "trans": [],
+        "notation": "ばぼぶびべ"
+    },
+    {
+        "name": "papipupepo",
+        "trans": [],
+        "notation": "ぱぴぷぺぽ"
+    },
+    {
+        "name": "pepopapipu",
+        "trans": [],
+        "notation": "ぺぽぱぴぷ"
+    },
+    {
+        "name": "pipupepapo",
+        "trans": [],
+        "notation": "ぴぷぺぱぽ"
+    },
+    {
+        "name": "popapipupe",
+        "trans": [],
+        "notation": "ぽぱぴぷぺ"
+    },
+    {
+        "name": "pupepopapi",
+        "trans": [],
+        "notation": "ぷぺぽぱぴ"
+    },
+    {
+        "name": "pepapupopi",
+        "trans": [],
+        "notation": "ぺぱぷぽぴ"
+    },
+    {
+        "name": "pipopapupe",
+        "trans": [],
+        "notation": "ぴぽぱぷぺ"
+    },
+    {
+        "name": "popupepipa",
+        "trans": [],
+        "notation": "ぽぷぺぴぱ"
+    },
+    {
+        "name": "pupipepopa",
+        "trans": [],
+        "notation": "ぷぴぺぽぱ"
+    },
+    {
+        "name": "papepopipu",
+        "trans": [],
+        "notation": "ぱぺぽぴぷ"
+    },
+    {
+        "name": "pipapupepo",
+        "trans": [],
+        "notation": "ぴぱぷぺぽ"
+    },
+    {
+        "name": "popipapupe",
+        "trans": [],
+        "notation": "ぽぴぱぷぺ"
+    },
+    {
+        "name": "pepupapipo",
+        "trans": [],
+        "notation": "ぺぷぱぴぽ"
+    },
+    {
+        "name": "pupopepipa",
+        "trans": [],
+        "notation": "ぷぽぺぴぱ"
+    },
+    {
+        "name": "papupepopi",
+        "trans": [],
+        "notation": "ぱぷぺぽぴ"
+    },
+    {
+        "name": "pipepapupo",
+        "trans": [],
+        "notation": "ぴぺぱぷぽ"
+    },
+    {
+        "name": "popepipupa",
+        "trans": [],
+        "notation": "ぽぺぴぷぱ"
+    },
+    {
+        "name": "pepipupopa",
+        "trans": [],
+        "notation": "ぺぴぷぽぱ"
+    },
+    {
+        "name": "pupapipepo",
+        "trans": [],
+        "notation": "ぷぱぴぺぽ"
+    },
+    {
+        "name": "papopupipe",
+        "trans": [],
+        "notation": "ぱぽぷぴぺ"
+    }
+]
