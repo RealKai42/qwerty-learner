@@ -1,0 +1,71 @@
+name: Release
+on:
+  push:
+    tags:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          #          - platform: android
+          #            os: ubuntu-latest
+#          - platform: windows
+#            os: windows-latest
+#            arch: amd64
+          - platform: linux
+            os: ubuntu-22.04
+            arch: amd64
+#          - platform: macos
+#            os: macos-13
+#            arch: amd64
+    #          - platform: macos
+    #            os: macos-latest
+    #            arch: arm64
+    #          - platform: windows
+    #            os: windows-11-arm
+    #            arch: arm64
+    #          - platform: linux
+    #            os: ubuntu-24.04-arm
+    #            arch: arm64
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Install Linux Dependencies
+        if: matrix.os == 'ubuntu-22.04'
+        run: |
+          sudo apt update
+          sudo apt install -y libwebkit2gtk-4.1-dev build-essential curl  wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev libgirepository1.0-dev  
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: './build/ -> target'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Build App
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: 'App v__VERSION__'
+          releaseBody: 'Auto-generated release'
+          releaseDraft: false
