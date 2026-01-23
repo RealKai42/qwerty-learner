@@ -1,0 +1,680 @@
+[
+ {
+        "name": "where",
+        "trans": ["哪里", "在哪里；到哪里"],
+        "usphone": "wer",
+        "ukphone": "weə"
+    },
+    {
+        "name": "from",
+        "trans": ["来自", "（表示来源）来自，从……来"],
+        "usphone": "frʌm",
+        "ukphone": "frɒm"
+    },
+    {
+        "name": "about",
+        "trans": ["大约；关于", "大约；左右"],
+        "usphone": "əˈbaʊt",
+        "ukphone": "əˈbaʊt"
+    },
+    {
+        "name": "today",
+        "trans": ["今天", "今天"],
+        "usphone": "təˈdeɪ",
+        "ukphone": "təˈdeɪ"
+    },
+    {
+        "name": "teacher",
+        "trans": ["教师", "教师"],
+        "usphone": "ˈtiːtʃər",
+        "ukphone": "ˈtiːtʃə"
+    },
+    {
+        "name": "student",
+        "trans": ["学生", "学生"],
+        "usphone": "ˈstuːdnt",
+        "ukphone": "ˈstjuːdnt"
+    },
+    {
+        "name": "after",
+        "trans": ["在……后面", "在……后面"],
+        "usphone": "ˈæftər",
+        "ukphone": "ˈɑːftə"
+    },
+    {
+        "name": "who",
+        "trans": ["谁", "谁；什么人"],
+        "usphone": "huː",
+        "ukphone": "huː"
+    },
+    {
+        "name": "girl",
+        "trans": ["女孩", "女孩"],
+        "usphone": "ɡɜːrl",
+        "ukphone": "ɡɜːl"
+    },
+    {
+        "name": "neighbour",
+        "trans": ["邻居", "邻居"],
+        "usphone": "ˈneɪbər",
+        "ukphone": "ˈneɪbə"
+    },
+    {
+        "name": "boy",
+        "trans": ["男孩", "男孩"],
+        "usphone": "bɔɪ",
+        "ukphone": "bɔɪ"
+    },
+    {
+        "name": "woman",
+        "trans": ["成年女子", "成年女子；妇女"],
+        "usphone": "ˈwʊmən",
+        "ukphone": "ˈwʊmən"
+    },
+    {
+        "name": "man",
+        "trans": ["成年男子", "成年男子；男人"],
+        "usphone": "mæn",
+        "ukphone": "mæn"
+    },
+    {
+        "name": "Mr",
+        "trans": ["先生", "（用于男子的姓氏或姓名前）先生"],
+        "usphone": "ˈmɪstər",
+        "ukphone": "ˈmɪstə"
+    },
+    {
+        "name": "classmate",
+        "trans": ["同班同学", "同班同学"],
+        "usphone": "ˈklæsmeɪt",
+        "ukphone": "ˈklɑːsmeɪt"
+    },
+    {
+        "name": "he",
+        "trans": ["他", "他"],
+        "usphone": "hiː",
+        "ukphone": "hiː"
+    },
+    {
+        "name": "English",
+        "trans": ["英语", "英语的；英语"],
+        "usphone": "ˈɪŋɡlɪʃ",
+        "ukphone": "ˈɪŋɡlɪʃ"
+    },
+    {
+        "name": "she",
+        "trans": ["她", "她"],
+        "usphone": "ʃiː",
+        "ukphone": "ʃiː"
+    },
+    {
+        "name": "very",
+        "trans": ["非常", "很；非常；十分"],
+        "usphone": "ˈveri",
+        "ukphone": "ˈveri"
+    },
+    {
+        "name": "UK",
+        "trans": ["英国", "英国"],
+        "usphone": "ˌjuːˈkeɪ",
+        "ukphone": "ˌjuːˈkeɪ"
+    },
+    {
+        "name": "China",
+        "trans": ["中国", "中国"],
+        "usphone": "ˈtʃaɪnə",
+        "ukphone": "ˈtʃaɪnə"
+    },
+    {
+        "name": "Canada",
+        "trans": ["加拿大", "加拿大"],
+        "usphone": "ˈkænədə",
+        "ukphone": "ˈkænədə"
+    },
+    {
+        "name": "USA",
+        "trans": ["美国", "美国"],
+        "usphone": "ˌjuːesˈeɪ",
+        "ukphone": "ˌjuːesˈeɪ"
+    },
+    {
+        "name": "has",
+        "trans": ["有（第三人称单数）", "（have的第三人称单数形式）具有（某种外表、特性或特征）"],
+        "usphone": "hæz",
+        "ukphone": "hæz"
+    },
+    {
+        "name": "long",
+        "trans": ["长的", "（长度或距离）长的"],
+        "usphone": "lɔːŋ",
+        "ukphone": "lɒŋ"
+    },
+    {
+        "name": "body",
+        "trans": ["身体", "身体"],
+        "usphone": "ˈbɑːdi",
+        "ukphone": "ˈbɒdi"
+    },
+    {
+        "name": "short",
+        "trans": ["短的；矮的", "短的；个子矮的"],
+        "usphone": "ʃɔːrt",
+        "ukphone": "ʃɔːt"
+    },
+    {
+        "name": "leg",
+        "trans": ["腿", "腿"],
+        "usphone": "leɡ",
+        "ukphone": "leɡ"
+    },
+    {
+        "name": "right",
+        "trans": ["正确的", "（意见或判断）准确，确切，恰当"],
+        "usphone": "raɪt",
+        "ukphone": "raɪt"
+    },
+    {
+        "name": "fat",
+        "trans": ["胖的", "肥的；肥胖的"],
+        "usphone": "fæt",
+        "ukphone": "fæt"
+    },
+    {
+        "name": "thin",
+        "trans": ["瘦的", "瘦的"],
+        "usphone": "θɪn",
+        "ukphone": "θɪn"
+    },
+    {
+        "name": "slow",
+        "trans": ["慢的", "缓慢的；慢的"],
+        "usphone": "sloʊ",
+        "ukphone": "sləʊ"
+    },
+    {
+        "name": "love",
+        "trans": ["爱", "喜爱；爱"],
+        "usphone": "lʌv",
+        "ukphone": "lʌv"
+    },
+    {
+        "name": "tail",
+        "trans": ["尾巴", "尾；尾巴"],
+        "usphone": "teɪl",
+        "ukphone": "teɪl"
+    },
+    {
+        "name": "her",
+        "trans": ["她的", "她；她的"],
+        "usphone": "hɜːr",
+        "ukphone": "hɜː"
+    },
+    {
+        "name": "gift",
+        "trans": ["礼物", "礼物"],
+        "usphone": "ɡɪft",
+        "ukphone": "ɡɪft"
+    },
+    {
+        "name": "picture",
+        "trans": ["图画", "图画；绘画"],
+        "usphone": "ˈpɪktʃər",
+        "ukphone": "ˈpɪktʃə"
+    },
+    {
+        "name": "card",
+        "trans": ["卡片", "贺卡；慰问卡；卡片"],
+        "usphone": "kɑːrd",
+        "ukphone": "kɑːd"
+    },
+    {
+        "name": "sing",
+        "trans": ["唱歌", "唱（歌）；演唱"],
+        "usphone": "sɪŋ",
+        "ukphone": "sɪŋ"
+    },
+    {
+        "name": "dance",
+        "trans": ["跳舞", "跳舞"],
+        "usphone": "dæns",
+        "ukphone": "dɑːns"
+    },
+    {
+        "name": "face",
+        "trans": ["脸", "脸；面孔"],
+        "usphone": "feɪs",
+        "ukphone": "feɪs"
+    },
+    {
+        "name": "all",
+        "trans": ["全部", "所有；全部"],
+        "usphone": "ɔːl",
+        "ukphone": "ɔːl"
+    },
+    {
+        "name": "so",
+        "trans": ["这么；所以", "（表示大小或数量）这么，那么"],
+        "usphone": "soʊ",
+        "ukphone": "səʊ"
+    },
+    {
+        "name": "talk",
+        "trans": ["说话", "（用某种语言）讲，说；说话"],
+        "usphone": "tɔːk",
+        "ukphone": "tɔːk"
+    },
+    {
+        "name": "song",
+        "trans": ["歌曲", "歌；歌曲"],
+        "usphone": "sɔːŋ",
+        "ukphone": "sɒŋ"
+    },
+    {
+        "name": "or",
+        "trans": ["或者", "或；或者；还是"],
+        "usphone": "ɔːr",
+        "ukphone": "ɔː"
+    },
+    {
+        "name": "much",
+        "trans": ["许多", "许多；大量"],
+        "usphone": "mʌtʃ",
+        "ukphone": "mʌtʃ"
+    },
+    {
+        "name": "eraser",
+        "trans": ["橡皮", "橡皮"],
+        "usphone": "ɪˈreɪsər",
+        "ukphone": "ɪˈreɪzə"
+    },
+    {
+        "name": "find",
+        "trans": ["找到", "找到；找回"],
+        "usphone": "faɪnd",
+        "ukphone": "faɪnd"
+    },
+    {
+        "name": "ruler",
+        "trans": ["尺子", "直尺"],
+        "usphone": "ˈruːlər",
+        "ukphone": "ˈruːlə"
+    },
+    {
+        "name": "pen",
+        "trans": ["钢笔", "钢笔"],
+        "usphone": "pen",
+        "ukphone": "pen"
+    },
+    {
+        "name": "pencil",
+        "trans": ["铅笔", "铅笔"],
+        "usphone": "ˈpensl",
+        "ukphone": "ˈpensl"
+    },
+    {
+        "name": "book",
+        "trans": ["书", "书；书籍"],
+        "usphone": "bʊk",
+        "ukphone": "bʊk"
+    },
+    {
+        "name": "bag",
+        "trans": ["包", "包；袋"],
+        "usphone": "bæɡ",
+        "ukphone": "bæɡ"
+    },
+    {
+        "name": "paper",
+        "trans": ["纸", "纸"],
+        "usphone": "ˈpeɪpər",
+        "ukphone": "ˈpeɪpə"
+    },
+    {
+        "name": "these",
+        "trans": ["这些", "这些"],
+        "usphone": "ðiːz",
+        "ukphone": "ðiːz"
+    },
+    {
+        "name": "see",
+        "trans": ["看见", "看见"],
+        "usphone": "siː",
+        "ukphone": "siː"
+    },
+    {
+        "name": "smell",
+        "trans": ["闻", "闻（气味）"],
+        "usphone": "smel",
+        "ukphone": "smel"
+    },
+    {
+        "name": "taste",
+        "trans": ["尝", "尝（味道）"],
+        "usphone": "teɪst",
+        "ukphone": "teɪst"
+    },
+    {
+        "name": "hear",
+        "trans": ["听见", "听见；听到"],
+        "usphone": "hɪr",
+        "ukphone": "hɪə"
+    },
+    {
+        "name": "touch",
+        "trans": ["触摸", "触摸；碰"],
+        "usphone": "tʌtʃ",
+        "ukphone": "tʌtʃ"
+    },
+    {
+        "name": "learn",
+        "trans": ["学习", "学；学习"],
+        "usphone": "lɜːrn",
+        "ukphone": "lɜːn"
+    },
+    {
+        "name": "nose",
+        "trans": ["鼻子", "鼻；鼻子"],
+        "usphone": "noʊz",
+        "ukphone": "nəʊz"
+    },
+    {
+        "name": "tongue",
+        "trans": ["舌头", "舌；舌头"],
+        "usphone": "tʌŋ",
+        "ukphone": "tʌŋ"
+    },
+    {
+        "name": "class",
+        "trans": ["班级；课", "课；班级"],
+        "usphone": "klæs",
+        "ukphone": "klɑːs"
+    },
+    {
+        "name": "computer",
+        "trans": ["电脑", "计算机；电脑"],
+        "usphone": "kəmˈpjuːtər",
+        "ukphone": "kəmˈpjuːtə"
+    },
+    {
+        "name": "breakfast",
+        "trans": ["早餐", "早餐；早饭"],
+        "usphone": "ˈbrekfəst",
+        "ukphone": "ˈbrekfəst"
+    },
+    {
+        "name": "time",
+        "trans": ["时间", "时间"],
+        "usphone": "taɪm",
+        "ukphone": "taɪm"
+    },
+    {
+        "name": "bread",
+        "trans": ["面包", "面包"],
+        "usphone": "bred",
+        "ukphone": "bred"
+    },
+    {
+        "name": "egg",
+        "trans": ["蛋；鸡蛋", "（作食物用的）蛋；鸡蛋"],
+        "usphone": "eɡ",
+        "ukphone": "eɡ"
+    },
+    {
+        "name": "milk",
+        "trans": ["牛奶", "（牛或羊等的）奶"],
+        "usphone": "mɪlk",
+        "ukphone": "mɪlk"
+    },
+    {
+        "name": "noodle",
+        "trans": ["面条", "（常用复数）面条"],
+        "usphone": "ˈnuːdl",
+        "ukphone": "ˈnuːdl"
+    },
+    {
+        "name": "juice",
+        "trans": ["果汁", "果汁"],
+        "usphone": "dʒuːs",
+        "ukphone": "dʒuːs"
+    },
+    {
+        "name": "rice",
+        "trans": ["米饭", "大米"],
+        "usphone": "raɪs",
+        "ukphone": "raɪs"
+    },
+    {
+        "name": "meat",
+        "trans": ["肉", "肉"],
+        "usphone": "miːt",
+        "ukphone": "miːt"
+    },
+    {
+        "name": "vegetable",
+        "trans": ["蔬菜", "蔬菜"],
+        "usphone": "ˈvedʒtəbl",
+        "ukphone": "ˈvedʒtəbl"
+    },
+    {
+        "name": "healthy",
+        "trans": ["健康的", "健康的"],
+        "usphone": "ˈhelθi",
+        "ukphone": "ˈhelθi"
+    },
+    {
+        "name": "plate",
+        "trans": ["盘子", "盘子"],
+        "usphone": "pleɪt",
+        "ukphone": "pleɪt"
+    },
+    {
+        "name": "soup",
+        "trans": ["汤", "汤"],
+        "usphone": "suːp",
+        "ukphone": "suːp"
+    },
+    {
+        "name": "fruit",
+        "trans": ["水果", "水果"],
+        "usphone": "fruːt",
+        "ukphone": "fruːt"
+    },
+    {
+        "name": "colourful",
+        "trans": ["五彩缤纷的", "五彩缤纷的"],
+        "usphone": "ˈkʌləfl",
+        "ukphone": "ˈkʌləfl"
+    },
+    {
+        "name": "candy",
+        "trans": ["糖果", "糖果"],
+        "usphone": "ˈkændi",
+        "ukphone": "ˈkændi"
+    },
+    {
+        "name": "yummy",
+        "trans": ["好吃的", "很好吃的"],
+        "usphone": "ˈjʌmi",
+        "ukphone": "ˈjʌmi"
+    },
+    {
+        "name": "at",
+        "trans": ["在", "在（某处）"],
+        "usphone": "æt",
+        "ukphone": "æt"
+    },
+    {
+        "name": "boat",
+        "trans": ["小船", "小船；舟"],
+        "usphone": "boʊt",
+        "ukphone": "bəʊt"
+    },
+    {
+        "name": "cool",
+        "trans": ["酷的", "（因时髦、漂亮且与众不同而）酷的，绝妙的"],
+        "usphone": "kuːl",
+        "ukphone": "kuːl"
+    },
+    {
+        "name": "keep",
+        "trans": ["保持；留着", "保有；留着"],
+        "usphone": "kiːp",
+        "ukphone": "kiːp"
+    },
+    {
+        "name": "home",
+        "trans": ["家", "家；住所"],
+        "usphone": "hoʊm",
+        "ukphone": "həʊm"
+    },
+    {
+        "name": "ball",
+        "trans": ["球", "球"],
+        "usphone": "bɔːl",
+        "ukphone": "bɔːl"
+    },
+    {
+        "name": "doll",
+        "trans": ["玩偶", "玩偶；玩具娃娃"],
+        "usphone": "dɑːl",
+        "ukphone": "dɒl"
+    },
+    {
+        "name": "car",
+        "trans": ["小汽车", "小汽车；轿车"],
+        "usphone": "kɑːr",
+        "ukphone": "kɑː"
+    },
+    {
+        "name": "on",
+        "trans": ["在……上", "（覆盖、附着）在……上"],
+        "usphone": "ɑːn",
+        "ukphone": "ɒn"
+    },
+    {
+        "name": "shelf",
+        "trans": ["架子", "（复数shelves）架子"],
+        "usphone": "ʃelf",
+        "ukphone": "ʃelf"
+    },
+    {
+        "name": "in",
+        "trans": ["在……里面", "在……内；在……中"],
+        "usphone": "ɪn",
+        "ukphone": "ɪn"
+    },
+    {
+        "name": "box",
+        "trans": ["盒子", "盒子"],
+        "usphone": "bɑːks",
+        "ukphone": "bɒks"
+    },
+    {
+        "name": "cap",
+        "trans": ["帽子", "帽子"],
+        "usphone": "kæp",
+        "ukphone": "kæp"
+    },
+    {
+        "name": "map",
+        "trans": ["地图", "地图"],
+        "usphone": "mæp",
+        "ukphone": "mæp"
+    },
+    {
+        "name": "under",
+        "trans": ["在……下面", "在（或到、通过）……下面"],
+        "usphone": "ˈʌndər",
+        "ukphone": "ˈʌndə"
+    },
+    {
+        "name": "still",
+        "trans": ["仍然", "还是；仍然"],
+        "usphone": "stɪl",
+        "ukphone": "stɪl"
+    },
+    {
+        "name": "put",
+        "trans": ["放", "放；安置"],
+        "usphone": "pʊt",
+        "ukphone": "pʊt"
+    },
+    {
+        "name": "fifteen",
+        "trans": ["十五", "十五"],
+        "usphone": "ˌfɪfˈtiːn",
+        "ukphone": "ˌfɪfˈtiːn"
+    },
+    {
+        "name": "twelve",
+        "trans": ["十二", "十二"],
+        "usphone": "twelv",
+        "ukphone": "twelv"
+    },
+    {
+        "name": "fourteen",
+        "trans": ["十四", "十四"],
+        "usphone": "ˌfɔːrˈtiːn",
+        "ukphone": "ˌfɔːˈtiːn"
+    },
+    {
+        "name": "thirteen",
+        "trans": ["十三", "十三"],
+        "usphone": "ˌθɜːrˈtiːn",
+        "ukphone": "ˌθɜːˈtiːn"
+    },
+    {
+        "name": "eleven",
+        "trans": ["十一", "十一"],
+        "usphone": "ɪˈlevn",
+        "ukphone": "ɪˈlevn"
+    },
+    {
+        "name": "twenty",
+        "trans": ["二十", "二十"],
+        "usphone": "ˈtwenti",
+        "ukphone": "ˈtwenti"
+    },
+    {
+        "name": "seventeen",
+        "trans": ["十七", "十七"],
+        "usphone": "ˌsevnˈtiːn",
+        "ukphone": "ˌsevnˈtiːn"
+    },
+    {
+        "name": "sixteen",
+        "trans": ["十六", "十六"],
+        "usphone": "ˌsɪksˈtiːn",
+        "ukphone": "ˌsɪksˈtiːn"
+    },
+    {
+        "name": "eighteen",
+        "trans": ["十八", "十八"],
+        "usphone": "ˌeɪˈtiːn",
+        "ukphone": "ˌeɪˈtiːn"
+    },
+    {
+        "name": "nineteen",
+        "trans": ["十九", "十九"],
+        "usphone": "ˌnaɪnˈtiːn",
+        "ukphone": "ˌnaɪnˈtiːn"
+    },
+    {
+        "name": "piggy bank",
+        "trans": ["储钱罐", "猪形储钱罐"],
+        "usphone": "ˈpɪɡi bæŋk",
+        "ukphone": "ˈpɪɡi bæŋk"
+    },
+    {
+        "name": "pay",
+        "trans": ["付钱", "付费"],
+        "usphone": "peɪ",
+        "ukphone": "peɪ"
+    },
+    {
+        "name": "back",
+        "trans": ["回来；背部", "回到原处"],
+        "usphone": "bæk",
+        "ukphone": "bæk"
+    }
+    ]
