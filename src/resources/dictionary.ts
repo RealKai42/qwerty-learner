@@ -705,6 +705,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'liuxialai-ielts-listening-highfreq',
+    name: '刘夏来听力高频词',
+    description: '刘夏来听力高频词',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/liuxialai_ielts_listening_highfreq.json',
+    length: 996,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'ielts_disorder',
     name: 'IELTS乱序完整版',
     description: 'IELTS乱序完整版',
