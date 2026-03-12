@@ -14,13 +14,20 @@ import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
+import {
+  currentChapterAtom,
+  currentDictIdAtom,
+  currentWordIndexAtom,
+  isReviewModeAtom,
+  randomConfigAtom,
+  reviewModeInfoAtom,
+} from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
@@ -30,9 +37,15 @@ const App: React.FC = () => {
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const setCurrentChapter = useSetAtom(currentChapterAtom)
+  const setCurrentWordIndex = useSetAtom(currentWordIndexAtom)
+  const currentWordIndex = useAtomValue(currentWordIndexAtom)
+  const currentChapter = useAtomValue(currentChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
   const saveChapterRecord = useSaveChapterRecord()
+
+  const prevChapterRef = useRef(currentChapter)
+  const isFirstMount = useRef(true)
 
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
@@ -57,6 +70,18 @@ const App: React.FC = () => {
       return
     }
   }, [currentDictId, setCurrentChapter, setCurrentDictId])
+
+  useEffect(() => {
+    if (isFirstMount.current) {
+      isFirstMount.current = false
+      prevChapterRef.current = currentChapter
+      return
+    }
+    if (prevChapterRef.current !== currentChapter) {
+      prevChapterRef.current = currentChapter
+      setCurrentWordIndex(null)
+    }
+  }, [currentChapter, setCurrentWordIndex])
 
   const skipWord = useCallback(() => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })
@@ -93,7 +118,12 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (words !== undefined) {
-      const initialIndex = isReviewMode && reviewModeInfo.reviewRecord?.index ? reviewModeInfo.reviewRecord.index : 0
+      let initialIndex = 0
+      if (isReviewMode && reviewModeInfo.reviewRecord?.index) {
+        initialIndex = reviewModeInfo.reviewRecord.index
+      } else if (currentWordIndex !== null) {
+        initialIndex = currentWordIndex
+      }
 
       dispatch({
         type: TypingStateActionType.SETUP_CHAPTER,
@@ -102,6 +132,12 @@ const App: React.FC = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [words])
+
+  useEffect(() => {
+    if (!isReviewMode && state.chapterData.index > 0) {
+      setCurrentWordIndex(state.chapterData.index)
+    }
+  }, [state.chapterData.index, isReviewMode, setCurrentWordIndex])
 
   useEffect(() => {
     // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
