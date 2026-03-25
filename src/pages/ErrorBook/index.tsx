@@ -22,7 +22,6 @@ export function ErrorBook() {
   const navigate = useNavigate()
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
-  const [reload, setReload] = useState(false)
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -62,36 +61,52 @@ export function ErrorBook() {
   }, [currentPage, sortedRecords])
 
   useEffect(() => {
+    if (totalPages === 0) {
+      setCurrentPage(1)
+      return
+    }
+
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages)
+    }
+  }, [currentPage, totalPages])
+
+  useEffect(() => {
     db.wordRecords
       .where('wrongCount')
       .above(0)
       .toArray()
       .then((records) => {
-        const groups: groupedWordRecords[] = []
+        const groups = new Map<string, groupedWordRecords>()
 
         records.forEach((record) => {
-          let group = groups.find((g) => g.word === record.word && g.dict === record.dict)
-          if (!group) {
-            group = { word: record.word, dict: record.dict, records: [], wrongCount: 0 }
-            groups.push(group)
+          const key = JSON.stringify([record.dict, record.word])
+          const currentGroup = groups.get(key)
+
+          if (currentGroup) {
+            currentGroup.records.push(record as WordRecord)
+            currentGroup.wrongCount += record.wrongCount
+            return
           }
-          group.records.push(record as WordRecord)
+
+          groups.set(key, {
+            word: record.word,
+            dict: record.dict,
+            records: [record as WordRecord],
+            wrongCount: record.wrongCount,
+          })
         })
 
-        groups.forEach((group) => {
-          group.wrongCount = group.records.reduce((acc, cur) => {
-            acc += cur.wrongCount
-            return acc
-          }, 0)
-        })
-
-        setGroupedRecords(groups)
+        setGroupedRecords(Array.from(groups.values()))
       })
-  }, [reload])
+  }, [])
 
   const handleDelete = async (word: string, dict: string) => {
-    await deleteWordRecord(word, dict)
-    setReload((prev) => !prev)
+    const deletedCount = await deleteWordRecord(word, dict)
+
+    if (!deletedCount) return
+
+    setGroupedRecords((prev) => prev.filter((record) => !(record.word === word && record.dict === dict)))
   }
 
   return (
