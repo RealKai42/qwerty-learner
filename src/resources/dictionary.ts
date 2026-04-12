@@ -4112,6 +4112,28 @@ const germanExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'de',
   },
+  {
+    id: 'NewGenerationCollegeGerman1',
+    name: '新一代大学德语1',
+    description: '德语词汇, 中文翻译',
+    category: '德语学习',
+    tags: ['基础'],
+    url: '/dicts/NewGenerationCollegeGerman1.json',
+    length: 1760,
+    language: 'de',
+    languageCategory: 'de',
+  },
+  {
+    id: 'NewGenerationCollegeGerman2',
+    name: '新一代大学德语2',
+    description: '德语词汇, 中文翻译',
+    category: '德语学习',
+    tags: ['基础'],
+    url: '/dicts/NewGenerationCollegeGerman2.json',
+    length: 1136,
+    language: 'de',
+    languageCategory: 'de',
+  },
 ]
 
 // 哈萨克语哈拼词典
