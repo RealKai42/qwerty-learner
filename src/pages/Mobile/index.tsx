@@ -107,7 +107,7 @@ const MobilePage: React.FC = () => {
           </svg>
         </a>
       </header> */}
-      <span>建议使用桌面端浏览器访问</span>
+      <span>请使用桌面端浏览器访问</span>
       {/* 面包屑导航 */}
       {/* <nav aria-label="面包屑导航" className="bg-gray-50/50 px-6 py-3 lg:px-24">
         <div className="mx-auto max-w-7xl">
