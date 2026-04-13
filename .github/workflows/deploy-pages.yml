@@ -2,7 +2,7 @@ name: Deployment to Github/Gitee pages
 on:
   push:
     branches:
-      - dev
+      - feature/dev
 env:
   REACT_APP_DEPLOY_ENV: pages
 jobs:
