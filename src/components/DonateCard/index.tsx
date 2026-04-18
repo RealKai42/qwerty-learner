@@ -114,17 +114,17 @@ export const DonateCard = () => {
                   <h1 className="gradient-text w-full pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
                   <div className="flex w-full flex-col gap-4 px-4">
                     <p className="mx-auto px-4 indent-4">
-                      Qwerty Learner 已经陪伴您走过
+                      泽正学校英语智能教学系统已经陪伴你走过
                       <HighlightedText> {dayFromFirstWord} </HighlightedText>天，一起完成了
                       <HighlightedText> {wordNumber} </HighlightedText>
                       个词的练习，帮您纠正了 <HighlightedText> {sumWrongCount} </HighlightedText>
-                      次错误输入。每一次练习，都是您在变得更好的证明
+                      次错误输入。每一次练习，都是你在变得更好的证明
                       <IconParty className="ml-2 inline-block" fontSize={16} />
                       <IconParty className="inline-block" fontSize={16} />
                       <IconParty className="inline-block" fontSize={16} />
                       <br />
                     </p>
-                    <p className="mx-auto px-4 indent-4 font-bold">
+                    {/* <p className="mx-auto px-4 indent-4 font-bold">
                       Qwerty Learner 坚持 <span className="font-medium ">开源、无广告、无商业化</span> 已经
                       <HighlightedText className="text-indigo-500"> {dayFromQwerty} </HighlightedText>天。
                     </p>
@@ -142,11 +142,11 @@ export const DonateCard = () => {
                     </p>
                     <div className="flex items-center justify-center">
                       <StickerButton />
-                    </div>
+                    </div> */}
                   </div>
 
-                  <DonatingCard className="mt-2" onAmountChange={onAmountChange} />
-                  <div className="flex w-full justify-between  px-14 pb-3 pt-0">
+                  {/* <DonatingCard className="mt-2" onAmountChange={onAmountChange} /> */}
+                  {/* <div className="flex w-full justify-between  px-14 pb-3 pt-0">
                     <button
                       type="button"
                       className={`my-btn-primary ${!amount && 'invisible'} w-36 bg-amber-500 font-medium transition-all`}
@@ -157,7 +157,7 @@ export const DonateCard = () => {
                     <button type="button" className="my-btn-primary w-36 font-medium" onClick={onClickRemindMeLater}>
                       下次再说
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </Dialog.Panel>
             </Transition.Child>
