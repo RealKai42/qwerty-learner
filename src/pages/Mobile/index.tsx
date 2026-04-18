@@ -1,4 +1,4 @@
-import logo from '@/assets/logo.svg'
+import logo from '@/assets/logo2.svg'
 import directoryImg from '@/assets/mobile/carousel/directory.png'
 import hotImg from '@/assets/mobile/carousel/hot.png'
 import indexImg from '@/assets/mobile/carousel/index.png'
