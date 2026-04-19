@@ -110,7 +110,10 @@ export const DonateCard = () => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel className="relative my-8 w-[37rem] transform select-text overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all">
-                <div className="flex w-full flex-col justify-center gap-4 bg-white px-2 pb-4 pt-5 dark:bg-gray-800 dark:text-gray-300">
+                <div
+                  onClick={onClickRemindMeLater}
+                  className="flex w-full flex-col justify-center gap-4 bg-white px-2 pb-4 pt-5 dark:bg-gray-800 dark:text-gray-300"
+                >
                   <h1 className="gradient-text w-full pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
                   <div className="flex w-full flex-col gap-4 px-4">
                     <p className="mx-auto px-4 indent-4">
@@ -146,18 +149,18 @@ export const DonateCard = () => {
                   </div>
 
                   {/* <DonatingCard className="mt-2" onAmountChange={onAmountChange} /> */}
-                  {/* <div className="flex w-full justify-between  px-14 pb-3 pt-0">
-                    <button
+                  <div className="flex w-full justify-between  px-14 pb-3 pt-0">
+                    {/* <button
                       type="button"
                       className={`my-btn-primary ${!amount && 'invisible'} w-36 bg-amber-500 font-medium transition-all`}
                       onClick={onClickHasDonated}
                     >
                       我已捐赠
-                    </button>
+                    </button> */}
                     <button type="button" className="my-btn-primary w-36 font-medium" onClick={onClickRemindMeLater}>
-                      下次再说
+                      加油💪🏻
                     </button>
-                  </div> */}
+                  </div>
                 </div>
               </Dialog.Panel>
             </Transition.Child>
