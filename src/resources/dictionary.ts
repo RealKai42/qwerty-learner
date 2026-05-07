@@ -815,6 +815,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'ielts-reading-test-points',
+    name: '雅思阅读考点词',
+    description: '雅思阅读高频考点词及同义替换',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/IELTS_reading_test_points.json',
+    length: 376,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'IELTS-807',
     name: '雅思 wanglu 807',
     description: '雅思 wanglu 807',
