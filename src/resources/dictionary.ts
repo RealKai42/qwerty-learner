@@ -4187,15 +4187,15 @@ export const dictionaryResources: DictionaryResource[] = [
   //   length: 20,
   //   language: 'ja',
   // },
-   {
+    {
     id: "russian_1000",
-    name: "俄语常用 1000 词",
+    name: "俄语常用1000词",
     description: "俄语常用基础词汇，适合初学者",
     category: "俄语",
     url: "/dicts/russian.json",
-    length: 1000,
+    length: 4,
     language: "ru"
-  } ,
+  },
 ]
 export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({
   ...resource,
