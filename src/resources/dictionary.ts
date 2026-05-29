@@ -4193,7 +4193,7 @@ export const dictionaryResources: DictionaryResource[] = [
     description: "俄语常用基础词汇，适合初学者",
     category: "俄语",
     url: "/dicts/russian.json",
-    length: 4,
+    length: 1000,
     language: "ru"
   },
 ]
