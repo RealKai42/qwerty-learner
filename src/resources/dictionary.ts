@@ -584,7 +584,7 @@ const chinaExam: DictionaryResource[] = [
     name: 'AWL 学术词汇',
     description: '研究生学术英语 Academic Word List 570词',
     category: '中国考试',
-    tags: ['AWL', '学术英语', '研究生'],
+    tags: ['研究生'],
     url: '/dicts/Academic_Word_List.json',
     length: 570,
     language: 'en',

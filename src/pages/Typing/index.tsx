@@ -14,10 +14,11 @@ import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
+import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom, webdavConfigAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
+import { incrementalBackupToWebDAV } from '@/utils/webdav'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
 import { useCallback, useEffect, useState } from 'react'
@@ -103,15 +104,46 @@ const App: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [words])
 
+  const webdavConfig = useAtomValue(webdavConfigAtom)
+
   useEffect(() => {
     // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
     if (state.isFinished && !state.isSavingRecord) {
       chapterLogUploader()
       saveChapterRecord(state)
+
+      // WebDAV 自动备份（增量）
+      if (webdavConfig.enabled && webdavConfig.autoBackup) {
+        const doBackup = async () => {
+          const { db } = await import('@/utils/db')
+          const wordRecords = await db.wordRecords.toArray()
+          const chapterRecords = await db.chapterRecords.toArray()
+          const reviewRecords = await db.reviewRecords.toArray()
+          await incrementalBackupToWebDAV({ wordRecords, chapterRecords, reviewRecords }, webdavConfig)
+        }
+        doBackup().catch(console.error)
+      }
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.isFinished, state.isSavingRecord])
+
+  // 暂停时触发 WebDAV 备份
+  useEffect(() => {
+    if (!state.isTyping && state.timerData.time > 0 && !state.isFinished) {
+      if (webdavConfig.enabled && webdavConfig.autoBackup) {
+        const doBackup = async () => {
+          const { db } = await import('@/utils/db')
+          const wordRecords = await db.wordRecords.toArray()
+          const chapterRecords = await db.chapterRecords.toArray()
+          const reviewRecords = await db.reviewRecords.toArray()
+          await incrementalBackupToWebDAV({ wordRecords, chapterRecords, reviewRecords }, webdavConfig)
+        }
+        doBackup().catch(console.error)
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.isTyping])
 
   useEffect(() => {
     // 启动计时器
