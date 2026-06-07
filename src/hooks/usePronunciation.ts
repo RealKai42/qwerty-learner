@@ -62,26 +62,28 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     unListens.push(addHowlListener(howl, 'play', () => setIsPlaying(true)))
     unListens.push(addHowlListener(howl, 'end', () => setIsPlaying(false)))
     unListens.push(addHowlListener(howl, 'pause', () => setIsPlaying(false)))
-    unListens.push(
-      addHowlListener(howl, 'playerror', () => {
-        // Fallback to browser TTS when Youdao fails
-        fallbackRef.current = true
-        howlRef.current = null
-        const synth = window.speechSynthesis
-        if (!synth) {
-          setIsPlaying(false)
-          return
-        }
-        const utterance = new SpeechSynthesisUtterance(word)
-        utterance.lang = 'en-US'
-        utterance.rate = pronunciationConfig.rate
-        utterance.volume = pronunciationConfig.volume
-        utterance.onstart = () => setIsPlaying(true)
-        utterance.onend = () => setIsPlaying(false)
-        utterance.onerror = () => setIsPlaying(false)
-        synth.speak(utterance)
-      }),
-    )
+
+    // Fallback to browser TTS when Youdao fails (loaderror or playerror)
+    const fallbackToTTS = () => {
+      fallbackRef.current = true
+      howlRef.current = null
+      const synth = window.speechSynthesis
+      if (!synth) {
+        setIsPlaying(false)
+        return
+      }
+      const utterance = new SpeechSynthesisUtterance(word)
+      utterance.lang = 'en-US'
+      utterance.rate = pronunciationConfig.rate
+      utterance.volume = pronunciationConfig.volume
+      utterance.onstart = () => setIsPlaying(true)
+      utterance.onend = () => setIsPlaying(false)
+      utterance.onerror = () => setIsPlaying(false)
+      synth.speak(utterance)
+    }
+
+    unListens.push(addHowlListener(howl, 'loaderror', fallbackToTTS))
+    unListens.push(addHowlListener(howl, 'playerror', fallbackToTTS))
 
     return () => {
       setIsPlaying(false)
