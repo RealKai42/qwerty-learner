@@ -32,6 +32,14 @@ export default defineConfig(async ({ mode }) => {
       minify: true,
       outDir: 'build',
       sourcemap: false,
+      rollupOptions: {
+        onwarn(warning, warn) {
+          if (warning.code === 'MODULE_LEVEL_DIRECTIVE') {
+          return;
+        }
+        warn(warning);
+        }
+      }
     },
     esbuild: {
       drop: mode === 'development' ? [] : ['console', 'debugger'],
