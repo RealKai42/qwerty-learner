@@ -4,6 +4,16 @@ import { calcChapterCount } from '@/utils'
 // 中国考试
 const chinaExam: DictionaryResource[] = [
   {
+    id: "beijing-grade12-english-vocab",
+    name: "北京高三英语课外词汇",
+    description: "基于2024-2026年北京高三英语试卷（一模/二模/三模/期末/期中/月考）的课外高频词汇分析，共1083词，词频≥2",
+    category: "中国考试",
+    tags: ['大学英语'],
+    url: "./dicts/Beijing_Grade12_English_Vocab.json",
+    length: 1083,
+    language: "en"
+  },
+  {
     id: 'cet4',
     name: 'CET-4',
     description: '大学英语四级词库',
