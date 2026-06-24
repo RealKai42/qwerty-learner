@@ -224,6 +224,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'Geophysics1988',
+    name: '地球物理学名词',
+    description: '地球物理学名词1988',
+    category: '中国考试',
+    tags: ['专业英语'],
+    url: '/dicts/Geophysics1988.json',
+    length: 1093,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'itVocabulary',
     name: '计算机专用英语',
     description: '大学计算机专业英语词汇',
