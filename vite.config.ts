@@ -12,7 +12,7 @@ import type { PluginOption } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig(async ({ mode }) => {
   const latestCommitHash = await new Promise<string>((resolve) => {
-    return getLastCommit((err, commit) => (err ? 'unknown' : resolve(commit.shortHash)))
+    return getLastCommit((err, commit) => (err ? resolve('unknown') : resolve(commit.shortHash)))
   })
   return {
     plugins: [
