@@ -210,7 +210,7 @@ Thanks to [libregd][libregd] for designing the icon, contributing several lovely
 [sorrycc]: https://github.com/sorrycc
 [sheng]: https://github.com/shengxinjing
 [pearmini]: https://github.com/pearmini
-[gossip]: https://github.com/pearmini/gossip
+[gossip]: https://github.com/gossip-ink/gossip
 [sailist]: https://github.com/sailist
 [asrframe]: https://github.com/sailist/ASRFrame
 [chengluyu]: https://github.com/chengluyu
