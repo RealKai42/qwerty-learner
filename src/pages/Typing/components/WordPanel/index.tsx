@@ -104,7 +104,7 @@ export default function WordPanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
+    'mod + Shift + ArrowLeft',
     (e) => {
       e.preventDefault()
       onSkipWord('prev')
@@ -113,7 +113,7 @@ export default function WordPanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowRight',
+    'mod + Shift + ArrowRight',
     (e) => {
       e.preventDefault()
       onSkipWord('next')

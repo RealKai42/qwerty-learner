@@ -22,7 +22,7 @@ import {
   wordDictationConfigAtom,
 } from '@/store'
 import type { Word } from '@/typings'
-import { CTRL, getUtcStringForMixpanel } from '@/utils'
+import { MOD, getUtcStringForMixpanel } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
@@ -118,7 +118,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     [],
   )
   useHotkeys(
-    'ctrl+j',
+    'mod+j',
     () => {
       if (state.isTyping) {
         wordPronunciationIconRef.current?.play()
@@ -305,7 +305,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           </div>
           {pronunciationIsOpen && (
             <div className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform ">
-              <Tooltip content={`快捷键${CTRL} + J`}>
+              <Tooltip content={`快捷键${MOD} + J`}>
                 <WordPronunciationIcon word={word} lang={currentLanguage} ref={wordPronunciationIconRef} className="h-full w-full" />
               </Tooltip>
             </div>

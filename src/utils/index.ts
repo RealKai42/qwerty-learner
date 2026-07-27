@@ -62,7 +62,21 @@ export const IsDesktop = () => {
 
 export const IS_MAC_OS = navigator.userAgent.indexOf('Macintosh') !== -1
 
+/**
+ * 只认 Control 的快捷键用这个标签。
+ *
+ * 对应的组合键在 macOS 上不能改用 Command：`⌘V` 是粘贴，`⌘D` 是浏览器收藏
+ * （StarCard 正是在引导用户按 ⌘D 收藏本站），抢过来会破坏系统级约定。
+ */
 export const CTRL = IS_MAC_OS ? 'Control' : 'Ctrl'
+
+/**
+ * Control 与 Command 都能触发的快捷键用这个标签，对应 useHotkeys 的 `mod` 修饰键。
+ *
+ * `mod` 匹配 ctrlKey 或 metaKey，因此 macOS 用户可以按 ⌘，
+ * 原有的 Ctrl 习惯和其他平台的用法都不受影响。
+ */
+export const MOD = IS_MAC_OS ? '⌘' : 'Ctrl'
 
 export function addHowlListener(howl: Howl, ...args: Parameters<Howl['on']>) {
   howl.on(...args)
