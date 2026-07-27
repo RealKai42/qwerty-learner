@@ -36,6 +36,15 @@ export default function SoundSetting() {
     },
     [setPronunciationConfig],
   )
+  const onTogglePronunciationIsAutoTransRead = useCallback(
+    (checked: boolean) => {
+      setPronunciationConfig((prev) => ({
+        ...prev,
+        isAutoTransRead: checked,
+      }))
+    },
+    [setPronunciationConfig],
+  )
   const onChangePronunciationVolume = useCallback(
     (value: [number]) => {
       setPronunciationConfig((prev) => ({
@@ -185,6 +194,20 @@ export default function SoundSetting() {
                   pronunciationConfig.isTransRead ? '开启' : '关闭'
                 }`}</span>
               </div>
+              {pronunciationConfig.isTransRead && (
+                <div className={styles.switchBlock}>
+                  <Switch
+                    checked={pronunciationConfig.isAutoTransRead}
+                    onChange={onTogglePronunciationIsAutoTransRead}
+                    className="switch-root"
+                  >
+                    <span aria-hidden="true" className="switch-thumb" />
+                  </Switch>
+                  <span className="text-right text-xs font-normal leading-tight text-gray-600">{`单词发音后自动朗读${
+                    pronunciationConfig.isAutoTransRead ? '已开启' : '已关闭'
+                  }`}</span>
+                </div>
+              )}
               <div className={styles.block}>
                 <span className={styles.blockLabel}>音量</span>
                 <div className="flex h-5 w-full items-center justify-between">

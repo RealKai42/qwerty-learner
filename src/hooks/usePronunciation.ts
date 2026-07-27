@@ -6,7 +6,7 @@ import { romajiToHiragana } from '@/utils/kana'
 import noop from '@/utils/noop'
 import type { Howl } from 'howler'
 import { useAtomValue } from 'jotai'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
@@ -50,10 +50,17 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
   return toCachedAudioSrc(generateRemoteWordSoundSrc(word, pronunciation))
 }
 
-export default function usePronunciationSound(word: string, isLoop?: boolean) {
+export default function usePronunciationSound(word: string, isLoop?: boolean, onPlayEnd?: () => void) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
   const [isPlaying, setIsPlaying] = useState(false)
+
+  // 用 ref 读取：注册监听的 effect 只依赖 sound，其清理函数会 unload 音频，
+  // 把这两个值加进依赖会导致切换设置时误卸载正在使用的实例。
+  const onPlayEndRef = useRef(onPlayEnd)
+  onPlayEndRef.current = onPlayEnd
+  const loopRef = useRef(loop)
+  loopRef.current = loop
 
   const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
     html5: true,
@@ -74,7 +81,13 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     const unListens: Array<() => void> = []
 
     unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
-    unListens.push(addHowlListener(sound, 'end', () => setIsPlaying(false)))
+    unListens.push(
+      addHowlListener(sound, 'end', () => {
+        setIsPlaying(false)
+        // 循环播放时 end 每轮都会触发，此时不该接续后续动作。
+        if (!loopRef.current) onPlayEndRef.current?.()
+      }),
+    )
     unListens.push(addHowlListener(sound, 'pause', () => setIsPlaying(false)))
     unListens.push(addHowlListener(sound, 'playerror', () => setIsPlaying(false)))
 

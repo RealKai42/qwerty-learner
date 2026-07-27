@@ -6,8 +6,8 @@ import React from 'react'
 
 export const WordPronunciationIcon = React.forwardRef<
   WordPronunciationIconRef,
-  { word: Word; lang: string; className?: string; iconClassName?: string }
->(({ word, lang, className, iconClassName }, ref) => {
+  { word: Word; lang: string; className?: string; iconClassName?: string; onPlayEnd?: () => void }
+>(({ word, lang, className, iconClassName, onPlayEnd }, ref) => {
   const currentWord = () => {
     if (lang === 'hapin') {
       if (/[\u0400-\u04FF]/.test(word.notation || '')) {
@@ -21,7 +21,7 @@ export const WordPronunciationIcon = React.forwardRef<
       return word.name
     }
   }
-  const { play, stop, isPlaying } = usePronunciationSound(currentWord())
+  const { play, stop, isPlaying } = usePronunciationSound(currentWord(), undefined, onPlayEnd)
 
   const playSound = useCallback(() => {
     stop()

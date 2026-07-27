@@ -31,7 +31,15 @@ import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
-export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
+export default function WordComponent({
+  word,
+  onFinish,
+  onPronunciationEnd,
+}: {
+  word: Word
+  onFinish: () => void
+  onPronunciationEnd?: () => void
+}) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -306,7 +314,13 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           {pronunciationIsOpen && (
             <div className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform ">
               <Tooltip content={`快捷键${MOD} + J`}>
-                <WordPronunciationIcon word={word} lang={currentLanguage} ref={wordPronunciationIconRef} className="h-full w-full" />
+                <WordPronunciationIcon
+                  word={word}
+                  lang={currentLanguage}
+                  ref={wordPronunciationIconRef}
+                  className="h-full w-full"
+                  onPlayEnd={onPronunciationEnd}
+                />
               </Tooltip>
             </div>
           )}

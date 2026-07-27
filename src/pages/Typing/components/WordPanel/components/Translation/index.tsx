@@ -3,7 +3,7 @@ import { SoundIcon } from '@/components/WordPronunciationIcon/SoundIcon'
 import useSpeech from '@/hooks/useSpeech'
 import { fontSizeConfigAtom, isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
 import { useAtomValue } from 'jotai'
-import { useCallback, useMemo } from 'react'
+import { forwardRef, useCallback, useImperativeHandle, useMemo } from 'react'
 
 export type TranslationProps = {
   trans: string
@@ -12,7 +12,15 @@ export type TranslationProps = {
   onMouseLeave?: () => void
 }
 
-export default function Translation({ trans, showTrans = true, onMouseEnter, onMouseLeave }: TranslationProps) {
+export type TranslationRef = {
+  /** 朗读当前释义，供单词发音结束后接续调用。 */
+  speak: () => void
+}
+
+const Translation = forwardRef<TranslationRef, TranslationProps>(function Translation(
+  { trans, showTrans = true, onMouseEnter, onMouseLeave },
+  ref,
+) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const fontSizeConfig = useAtomValue(fontSizeConfigAtom)
   const isShowTransRead = window.speechSynthesis && pronunciationConfig.isTransRead
@@ -22,6 +30,8 @@ export default function Translation({ trans, showTrans = true, onMouseEnter, onM
   const handleClickSoundIcon = useCallback(() => {
     speak(true)
   }, [speak])
+
+  useImperativeHandle(ref, () => ({ speak: () => speak(true) }), [speak])
 
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
   return (
@@ -41,4 +51,6 @@ export default function Translation({ trans, showTrans = true, onMouseEnter, onM
       )}
     </div>
   )
-}
+})
+
+export default Translation

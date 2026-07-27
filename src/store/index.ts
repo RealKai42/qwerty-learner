@@ -56,6 +56,8 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   name: '美音',
   isLoop: false,
   isTransRead: false,
+  // 单词发音结束后自动接着朗读释义。默认关闭，避免改变已有用户的听感。
+  isAutoTransRead: false,
   transVolume: 1,
   rate: 1,
 })
