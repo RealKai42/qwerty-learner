@@ -1,0 +1,50 @@
+name: Build macOS desktop app
+
+# 手动触发，或在打 tag 时产出可下载的构建物。
+# 不挂在 push 上：桌面端构建要编译整个 Rust 依赖树，比网页构建慢得多。
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          # 通用二进制需要同时具备两个目标，Apple Silicon 与 Intel 各一。
+          targets: aarch64-apple-darwin,x86_64-apple-darwin
+
+      - name: Cache cargo build
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build universal app
+        run: yarn tauri build --target universal-apple-darwin
+
+      # 产物未经签名与公证：使用者首次打开会被 Gatekeeper 拦下，
+      # 需要在「系统设置 → 隐私与安全性」中手动放行。
+      # 若项目后续拿到 Apple Developer 证书，在此步骤前配置
+      # APPLE_CERTIFICATE / APPLE_SIGNING_IDENTITY / APPLE_ID 等密钥即可自动签名公证。
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: qwerty-learner-macos-universal
+          path: |
+            src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg
+            src-tauri/target/universal-apple-darwin/release/bundle/macos/*.app
+          if-no-files-found: error
