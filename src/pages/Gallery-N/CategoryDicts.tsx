@@ -23,13 +23,17 @@ export default function DictionaryGroup({ groupedDictsByTag }: { groupedDictsByT
   }, [currentDictInfo.tags, tagList])
 
   return (
-    <div>
+    // 必须约束到可视宽度：否则本节点按 max-content 撑开，
+    // 标签行就永远不会超出自身，overflow-x 也就无从触发。
+    <div className="w-full min-w-0">
       <DictTagSwitcher tagList={tagList} currentTag={currentTag} onChangeCurrentTag={onChangeCurrentTag} />
-      <div className="mt-8 grid gap-x-5 gap-y-10 px-1 pb-4 sm:grid-cols-1 md:grid-cols-2 dic3:grid-cols-3 dic4:grid-cols-4">
+      {/* 卡片是固定宽度（w-80），等分列会在每列留下大片空白，
+          改用 flex 换行：间距只由 gap 决定，列数随可用宽度自适应。 */}
+      <div className="mt-8 flex flex-wrap gap-x-5 gap-y-10 px-1 pb-4">
         {currentTag && groupedDictsByTag[currentTag] ? (
           groupedDictsByTag[currentTag].map((dict) => <DictionaryComponent key={dict.id} dictionary={dict} />)
         ) : (
-          <div className="col-span-full text-center text-gray-500">当前分类下没有可用的词典</div>
+          <div className="w-full text-center text-gray-500">当前分类下没有可用的词典</div>
         )}
       </div>
     </div>
