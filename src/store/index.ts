@@ -72,6 +72,11 @@ export const randomConfigAtom = atomForConfig('randomConfig', {
   isOpen: false,
 })
 
+/** 章节练完后不停下来结算，直接进入下一章；练到最后一章则回到第一章。 */
+export const continuousModeConfigAtom = atomForConfig('continuousMode', {
+  isOpen: false,
+})
+
 export const isShowPrevAndNextWordAtom = atomWithStorage('isShowPrevAndNextWord', true)
 
 export const isIgnoreCaseAtom = atomWithStorage('isIgnoreCase', true)

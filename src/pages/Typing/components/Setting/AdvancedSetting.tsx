@@ -1,5 +1,12 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextWordAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
+import {
+  continuousModeConfigAtom,
+  isIgnoreCaseAtom,
+  isShowAnswerOnHoverAtom,
+  isShowPrevAndNextWordAtom,
+  isTextSelectableAtom,
+  randomConfigAtom,
+} from '@/store'
 import { Switch } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtom } from 'jotai'
@@ -11,6 +18,7 @@ export default function AdvancedSetting() {
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
   const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
+  const [continuousModeConfig, setContinuousModeConfig] = useAtom(continuousModeConfigAtom)
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -20,6 +28,16 @@ export default function AdvancedSetting() {
       }))
     },
     [setRandomConfig],
+  )
+
+  const onToggleContinuousMode = useCallback(
+    (checked: boolean) => {
+      setContinuousModeConfig((prev) => ({
+        ...prev,
+        isOpen: checked,
+      }))
+    },
+    [setContinuousModeConfig],
   )
 
   const onToggleLastAndNextWord = useCallback(
@@ -62,6 +80,18 @@ export default function AdvancedSetting() {
               </Switch>
               <span className="text-right text-xs font-normal leading-tight text-gray-600">{`随机已${
                 randomConfig.isOpen ? '开启' : '关闭'
+              }`}</span>
+            </div>
+          </div>
+          <div className={styles.section}>
+            <span className={styles.sectionLabel}>连续练习</span>
+            <span className={styles.sectionDescription}>开启后，练完一章不再弹出结算页，直接进入下一章；练完最后一章会回到第一章</span>
+            <div className={styles.switchBlock}>
+              <Switch checked={continuousModeConfig.isOpen} onChange={onToggleContinuousMode} className="switch-root">
+                <span aria-hidden="true" className="switch-thumb" />
+              </Switch>
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">{`连续练习已${
+                continuousModeConfig.isOpen ? '开启' : '关闭'
               }`}</span>
             </div>
           </div>
