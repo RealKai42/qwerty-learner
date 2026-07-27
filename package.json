@@ -65,7 +65,10 @@
     "test:e2e": "playwright test",
     "lint": "eslint .",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
@@ -91,6 +94,7 @@
     "@svgr/plugin-jsx": "^7.0.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/postcss7-compat": "^2.2.17",
+    "@tauri-apps/cli": "^2",
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "@types/canvas-confetti": "^1.6.0",
     "@types/echarts": "^4.9.18",

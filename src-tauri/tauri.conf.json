@@ -2,58 +2,55 @@
   "build": {
     "beforeBuildCommand": "yarn build",
     "beforeDevCommand": "yarn run dev",
-    "devPath": "http://localhost:3000",
-    "distDir": "../build"
+    "frontendDist": "../build",
+    "devUrl": "http://localhost:5173"
   },
-  "package": {
-    "productName": "qwerty-learner",
-    "version": "0.1.0"
-  },
-  "tauri": {
-    "allowlist": {
-      "all": false
+  "bundle": {
+    "active": true,
+    "category": "Education",
+    "copyright": "Copyright © Qwerty Learner Contributors. Licensed under GPL-3.0.",
+    "targets": "all",
+    "externalBin": [],
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
     },
-    "bundle": {
-      "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+    "longDescription": "Qwerty Learner 是为键盘工作者设计的单词与英语肌肉记忆锻炼软件，支持多种词库与发音，帮助你在练习打字的同时记忆单词。",
+    "macOS": {
+      "entitlements": null,
+      "exceptionDomain": "",
+      "frameworks": [],
+      "providerShortName": null,
+      "signingIdentity": null
+    },
+    "resources": [],
+    "shortDescription": "为键盘工作者设计的单词记忆软件",
+    "linux": {
       "deb": {
         "depends": []
-      },
-      "externalBin": [],
-      "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
-      "identifier": "com.litongjava.qwerty.learner",
-      "longDescription": "",
-      "macOS": {
-        "entitlements": null,
-        "exceptionDomain": "",
-        "frameworks": [],
-        "providerShortName": null,
-        "signingIdentity": null
-      },
-      "resources": [],
-      "shortDescription": "",
-      "targets": "all",
-      "windows": {
-        "certificateThumbprint": null,
-        "digestAlgorithm": "sha256",
-        "timestampUrl": ""
       }
-    },
-    "security": {
-      "csp": null
-    },
-    "updater": {
-      "active": false
-    },
+    }
+  },
+  "productName": "qwerty-learner",
+  "mainBinaryName": "qwerty-learner",
+  "version": "0.1.0",
+  "identifier": "cool.kaiyi.qwerty-learner",
+  "plugins": {},
+  "app": {
     "windows": [
       {
         "fullscreen": false,
         "height": 600,
         "resizable": true,
         "title": "qwerty-learner",
-        "width": 800
+        "width": 800,
+        "useHttpsScheme": true
       }
-    ]
+    ],
+    "security": {
+      "csp": null
+    }
   }
 }
