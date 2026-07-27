@@ -10,25 +10,35 @@ import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
+
+/**
+ * 有道 TTS 读不了带下划线的词，会直接返回 500（`returned null audio`），
+ * 而编程、AI 等词库用下划线代替空格（如 `Computer_Vision`），换成空格即可正常发音。
+ * 同时补上转义：词条里可能出现空格、`&` 等会破坏查询串的字符。
+ */
+function toAudioParam(word: string): string {
+  return encodeURIComponent(word.replace(/_/g, ' ').trim())
+}
+
 export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
   switch (pronunciation) {
     case 'uk':
-      return `${pronunciationApi}${word}&type=1`
+      return `${pronunciationApi}${toAudioParam(word)}&type=1`
     case 'us':
-      return `${pronunciationApi}${word}&type=2`
+      return `${pronunciationApi}${toAudioParam(word)}&type=2`
     case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
+      return `${pronunciationApi}${toAudioParam(romajiToHiragana(word))}&le=jap`
     case 'zh':
-      return `${pronunciationApi}${word}&le=zh`
+      return `${pronunciationApi}${toAudioParam(word)}&le=zh`
     case 'ja':
-      return `${pronunciationApi}${word}&le=jap`
+      return `${pronunciationApi}${toAudioParam(word)}&le=jap`
     case 'de':
-      return `${pronunciationApi}${word}&le=de`
+      return `${pronunciationApi}${toAudioParam(word)}&le=de`
     case 'hapin':
     case 'kk':
-      return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
+      return `${pronunciationApi}${toAudioParam(word)}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
     case 'id':
-      return `${pronunciationApi}${word}&le=id`
+      return `${pronunciationApi}${toAudioParam(word)}&le=id`
     default:
       return ''
   }
