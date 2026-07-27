@@ -42,10 +42,12 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "title": "Qwerty Learner",
+        "width": 1280,
+        "height": 800,
         "resizable": true,
-        "title": "qwerty-learner",
-        "width": 800,
+        "minWidth": 1024,
+        "minHeight": 720,
         "useHttpsScheme": true
       }
     ],
