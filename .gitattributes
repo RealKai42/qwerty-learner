@@ -1,6 +1,11 @@
 # .gitattributes
+# `* text eol=lf` 会对所有未声明为 binary 的文件做换行符转换，
+# 二进制文件一旦含有 CRLF 字节对就会被改写、损坏，必须逐类声明。
 * text eol=lf
 *.png binary
+*.jpg binary
 *.jpeg binary
 *.ico binary
+*.icns binary
 *.wav binary
+*.mp3 binary
