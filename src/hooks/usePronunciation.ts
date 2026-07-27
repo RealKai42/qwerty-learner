@@ -1,6 +1,7 @@
 import { pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { addHowlListener } from '@/utils'
+import { toCachedAudioSrc } from '@/utils/desktop'
 import { romajiToHiragana } from '@/utils/kana'
 import noop from '@/utils/noop'
 import type { Howl } from 'howler'
@@ -20,7 +21,7 @@ function toAudioParam(word: string): string {
   return encodeURIComponent(word.replace(/_/g, ' ').trim())
 }
 
-export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
+function generateRemoteWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
   switch (pronunciation) {
     case 'uk':
       return `${pronunciationApi}${toAudioParam(word)}&type=1`
@@ -42,6 +43,11 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
     default:
       return ''
   }
+}
+
+export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
+  // 桌面端改指向本地缓存协议，Web 端原样返回远端地址。
+  return toCachedAudioSrc(generateRemoteWordSoundSrc(word, pronunciation))
 }
 
 export default function usePronunciationSound(word: string, isLoop?: boolean) {
