@@ -35,13 +35,9 @@ function Root() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
 
   useEffect(() => {
-    const handleResize = () => {
-      const isMobile = window.innerWidth <= 600
-      if (!isMobile) {
-        window.location.href = '/'
-      }
-      setIsMobile(isMobile)
-    }
+    // 只更新断点状态。离开 /mobile 由下面的路由声明式处理：
+    // 这里一旦做整页跳转，每次拉宽窗口都会重载页面并清空当前练习进度。
+    const handleResize = () => setIsMobile(window.innerWidth <= 600)
 
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
@@ -53,7 +49,10 @@ function Root() {
         <Suspense fallback={<Loading />}>
           <Routes>
             {isMobile ? (
-              <Route path="/*" element={<Navigate to="/mobile" />} />
+              <>
+                <Route path="/mobile" element={<MobilePage />} />
+                <Route path="/*" element={<Navigate to="/mobile" />} />
+              </>
             ) : (
               <>
                 <Route index element={<TypingPage />} />
@@ -61,10 +60,10 @@ function Root() {
                 <Route path="/analysis" element={<AnalysisPage />} />
                 <Route path="/error-book" element={<ErrorBook />} />
                 <Route path="/friend-links" element={<FriendLinks />} />
+                {/* /mobile 也会落到这里，拉宽窗口后自动回到桌面版路由 */}
                 <Route path="/*" element={<Navigate to="/" />} />
               </>
             )}
-            <Route path="/mobile" element={<MobilePage />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
