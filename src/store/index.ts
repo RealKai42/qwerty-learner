@@ -89,7 +89,10 @@ export const phoneticConfigAtom = atomForConfig('phoneticConfig', {
   type: 'us' as PhoneticType,
 })
 
-export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.matchMedia('(prefers-color-scheme: dark)').matches)
+/** 该键存在与否被用来判断用户是否手动设置过主题，见 src/index.tsx 里跟随系统的逻辑。 */
+export const DARK_MODE_STORAGE_KEY = 'isOpenDarkModeAtom'
+
+export const isOpenDarkModeAtom = atomWithStorage(DARK_MODE_STORAGE_KEY, window.matchMedia('(prefers-color-scheme: dark)').matches)
 
 export const isShowSkipAtom = atom(false)
 
