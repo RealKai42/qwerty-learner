@@ -2,6 +2,7 @@ import Tooltip from '@/components/Tooltip'
 import { SoundIcon } from '@/components/WordPronunciationIcon/SoundIcon'
 import useSpeech from '@/hooks/useSpeech'
 import { fontSizeConfigAtom, isTextSelectableAtom, pronunciationConfigAtom } from '@/store'
+import { toSpeechText } from '@/utils'
 import { useAtomValue } from 'jotai'
 import { forwardRef, useCallback, useImperativeHandle, useMemo } from 'react'
 
@@ -25,7 +26,9 @@ const Translation = forwardRef<TranslationRef, TranslationProps>(function Transl
   const fontSizeConfig = useAtomValue(fontSizeConfigAtom)
   const isShowTransRead = window.speechSynthesis && pronunciationConfig.isTransRead
   const speechOptions = useMemo(() => ({ volume: pronunciationConfig.transVolume }), [pronunciationConfig.transVolume])
-  const { speak, speaking } = useSpeech(trans, speechOptions)
+  // 朗读去掉词性缩写，显示不变。
+  const speechText = useMemo(() => toSpeechText(trans), [trans])
+  const { speak, speaking } = useSpeech(speechText, speechOptions)
 
   const handleClickSoundIcon = useCallback(() => {
     speak(true)

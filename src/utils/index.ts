@@ -78,6 +78,27 @@ export const CTRL = IS_MAC_OS ? 'Control' : 'Ctrl'
  */
 export const MOD = IS_MAC_OS ? '⌘' : 'Ctrl'
 
+/**
+ * 词性缩写：n. vt. adj. 之类。
+ * 长的排在前面，否则 `int` 会先吃掉 `interj.` 的一半。
+ */
+const PART_OF_SPEECH_PATTERN = /\b(interj|int|prep|pron|conj|abbr|adj|adv|aux|art|num|pl|vt|vi|v|n)\s*\./gi
+
+/**
+ * 把释义转成适合朗读的文本：去掉词性缩写。
+ *
+ * 屏幕上仍然完整显示，只是不念出来——语音合成会把 "vt." 逐字母读出来，
+ * 夹在中文释义里很突兀。
+ */
+export function toSpeechText(trans: string): string {
+  return trans
+    .replace(PART_OF_SPEECH_PATTERN, '')
+    .replace(/&/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/^[\s;；,，、]+/, '')
+    .trim()
+}
+
 export function addHowlListener(howl: Howl, ...args: Parameters<Howl['on']>) {
   howl.on(...args)
 
