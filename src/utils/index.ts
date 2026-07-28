@@ -79,10 +79,14 @@ export const CTRL = IS_MAC_OS ? 'Control' : 'Ctrl'
 export const MOD = IS_MAC_OS ? '⌘' : 'Ctrl'
 
 /**
- * 词性缩写：n. vt. adj. 之类。
- * 长的排在前面，否则 `int` 会先吃掉 `interj.` 的一半。
+ * 词性缩写：n. vt. adj. 之类。长的排在前面，否则 `int` 会先吃掉 `interj.` 的一半。
+ *
+ * 几个刻意排除的：
+ * - `a.`   词库里绝大多数是 `9 a.m.`，去掉会把时间拆成 "m"
+ * - `sb.` / `sth.`  是「某人 / 某物」占位符，在 `define sth. as` 这类搭配里有实义
+ * - `past.`  多数出现在英文句尾（`the past.`），并非词性标记
  */
-const PART_OF_SPEECH_PATTERN = /\b(interj|int|prep|pron|conj|abbr|adj|adv|aux|art|num|pl|vt|vi|v|n)\s*\./gi
+const PART_OF_SPEECH_PATTERN = /\b(interj|int|prep|pron|conj|abbr|adj|adv|aux|art|num|pl|na|ad|vt|vi|v|n)\s*\./gi
 
 /**
  * 把释义转成适合朗读的文本：去掉词性缩写。
@@ -91,12 +95,16 @@ const PART_OF_SPEECH_PATTERN = /\b(interj|int|prep|pron|conj|abbr|adj|adv|aux|ar
  * 夹在中文释义里很突兀。
  */
 export function toSpeechText(trans: string): string {
-  return trans
-    .replace(PART_OF_SPEECH_PATTERN, '')
-    .replace(/&/g, ' ')
-    .replace(/\s{2,}/g, ' ')
-    .replace(/^[\s;；,，、]+/, '')
-    .trim()
+  return (
+    trans
+      // 换成空格而非删除：词库里大量释义没在缩写前留空格（如「皈依n. 皈依者」），
+      // 直接删掉会把两条释义粘成一个词。
+      .replace(PART_OF_SPEECH_PATTERN, ' ')
+      .replace(/&/g, ' ')
+      .replace(/\s{2,}/g, ' ')
+      .replace(/^[\s;；,，、]+/, '')
+      .trim()
+  )
 }
 
 export function addHowlListener(howl: Howl, ...args: Parameters<Howl['on']>) {
