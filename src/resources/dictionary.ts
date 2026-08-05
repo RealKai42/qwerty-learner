@@ -301,6 +301,17 @@ const chinaExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'common5000',
+    name: '常用英语5000词',
+    description: 'COCA 语料库最常用 5000 词，带中文释义',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/common5000.json',
+    length: 5000,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: '4000_Essential_English_Words1',
     name: 'Essential Words',
     description: '4000 Essential English Words meaning',
