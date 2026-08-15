@@ -1,5 +1,6 @@
 import { CHAPTER_LENGTH } from '@/constants'
-import { currentChapterAtom, currentDictInfoAtom, reviewModeInfoAtom } from '@/store'
+import useProficiencyData from '@/hooks/useProficiencyData'
+import { currentChapterAtom, currentDictInfoAtom, filterWordsByProficiencyAtom, proficiencyMapAtom, reviewModeInfoAtom } from '@/store'
 import type { Word, WordWithIndex } from '@/typings/index'
 import { wordListFetcher } from '@/utils/wordListFetcher'
 import { useAtom, useAtomValue } from 'jotai'
@@ -19,6 +20,10 @@ export function useWordList(): UseWordListResult {
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const { isReviewMode, reviewRecord } = useAtomValue(reviewModeInfoAtom)
+  const proficiencyMap = useAtomValue(proficiencyMapAtom)
+
+  // 加载熟练度数据
+  const { isLoading: isProficiencyLoading } = useProficiencyData()
 
   // Reset current chapter to 0, when currentChapter is greater than chapterCount.
   if (currentChapter >= currentDictInfo.chapterCount) {
@@ -26,7 +31,7 @@ export function useWordList(): UseWordListResult {
   }
 
   const isFirstChapter = !isReviewMode && currentDictInfo.id === 'cet4' && currentChapter === 0
-  const { data: wordList, error, isLoading } = useSWR(currentDictInfo.url, wordListFetcher)
+  const { data: wordList, error, isLoading: isWordListLoading } = useSWR(currentDictInfo.url, wordListFetcher)
 
   const words: WordWithIndex[] = useMemo(() => {
     let newWords: Word[]
@@ -35,7 +40,35 @@ export function useWordList(): UseWordListResult {
     } else if (isReviewMode) {
       newWords = reviewRecord?.words ?? []
     } else if (wordList) {
-      newWords = wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
+      // 获取当前章节的单词
+      const chapterWords = wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
+
+      // 根据熟练度过滤单词（如果熟练度数据已加载）
+      if (!isProficiencyLoading && proficiencyMap.size > 0) {
+        // 过滤掉"熟知"的单词和未过期的"记得"的单词
+        newWords = chapterWords.filter((word) => {
+          const proficiency = proficiencyMap.get(word.name)
+
+          // 如果没有记录或状态是unknown，保留单词
+          if (!proficiency || proficiency.status === 'unknown') {
+            return true
+          }
+
+          // 如果状态是known，排除单词
+          if (proficiency.status === 'known') {
+            return false
+          }
+
+          // 如果状态是remembered，检查是否已过期
+          if (proficiency.status === 'remembered' && proficiency.rememberedUntil) {
+            return Date.now() > proficiency.rememberedUntil
+          }
+
+          return true
+        })
+      } else {
+        newWords = chapterWords
+      }
     } else {
       newWords = []
     }
@@ -56,9 +89,9 @@ export function useWordList(): UseWordListResult {
         trans,
       }
     })
-  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter])
+  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter, isProficiencyLoading, proficiencyMap])
 
-  return { words, isLoading, error }
+  return { words, isLoading: isWordListLoading || isProficiencyLoading, error }
 }
 
 const firstChapter = [

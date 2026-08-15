@@ -115,3 +115,6 @@ export const hasSeenEnhancedPromotionAtom = atomWithStorage('hasSeenEnhancedProm
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
+
+// 导出熟练度相关的 atoms
+export * from './atoms/proficiencyAtoms'
