@@ -1387,6 +1387,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'toefl-order',
+    name: 'TOEFL 正序版',
+    description: '托福考试常见词（按字母正序排列）',
+    category: '国际考试',
+    tags: ['TOEFL'],
+    url: '/dicts/TOEFL_order.json',
+    length: 4264,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'bec2',
     name: '商务英语',
     description: '商务英语常见词',
