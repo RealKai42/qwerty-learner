@@ -1398,6 +1398,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'toefl-writing',
+    name: 'TOEFL 写作高频词',
+    description: '托福写作高频词：逻辑衔接、论证动词、评价形容词与常考话题词',
+    category: '国际考试',
+    tags: ['TOEFL'],
+    url: '/dicts/TOEFL_Writing_HighFreq.json',
+    length: 493,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'bec2',
     name: '商务英语',
     description: '商务英语常见词',
