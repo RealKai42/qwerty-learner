@@ -47,7 +47,7 @@ export default function GalleryPage() {
   }, [galleryState.currentLanguageTab])
 
   const onBack = useCallback(() => {
-    navigate('/')
+    navigate(-1)
   }, [navigate])
 
   useHotkeys('enter,esc', onBack, { preventDefault: true })

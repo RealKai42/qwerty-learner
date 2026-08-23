@@ -16,3 +16,7 @@ export const defaultFontSizeConfig = {
   foreignFont: 48,
   translateFont: 18,
 }
+
+// constants for Typing Game
+export const LIFERANGE = new Array(10).fill(0).map((_, index) => index.toString())
+export const LEVELS = ['😁', '🤨', '😤', '🤬']

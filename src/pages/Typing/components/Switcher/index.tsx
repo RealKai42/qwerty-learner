@@ -5,6 +5,7 @@ import HandPositionIllustration from '../HandPositionIllustration'
 import LoopWordSwitcher from '../LoopWordSwitcher'
 import Setting from '../Setting'
 import SoundSwitcher from '../SoundSwitcher'
+import TypingGameButton from '../TypingGameButton'
 import WordDictationSwitcher from '../WordDictationSwitcher'
 import Tooltip from '@/components/Tooltip'
 import { isOpenDarkModeAtom } from '@/store'
@@ -90,6 +91,9 @@ export default function Switcher() {
       </Tooltip>
       <Tooltip className="h-7 w-7" content="指法图示">
         <HandPositionIllustration></HandPositionIllustration>
+      </Tooltip>
+      <Tooltip className="h-7 w-7" content="打字游戏">
+        <TypingGameButton />
       </Tooltip>
       <Tooltip content="设置">
         <Setting />
