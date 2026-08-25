@@ -16,6 +16,9 @@ export default function InputHandler({ updateInput }: { updateInput: (updateObj:
         return <KeyEventHandler updateInput={updateInput} />
       case 'romaji':
         return <KeyEventHandler updateInput={updateInput} />
+      case 'ko':
+        // Hangul is entered via IME composition
+        return <TextAreaHandler updateInput={updateInput} />
       case 'code':
         return <TextAreaHandler updateInput={updateInput} />
       default:
