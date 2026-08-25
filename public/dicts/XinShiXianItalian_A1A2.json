@@ -1,5336 +1,5342 @@
 [
-    {
-        "name": "ciao",
-        "trans": [
-            "你好；再见（非正式）"
-        ]
-    },
-    {
-        "name": "buongiorno",
-        "trans": [
-            "早上好；您好"
-        ]
-    },
-    {
-        "name": "buonasera",
-        "trans": [
-            "晚上好"
-        ]
-    },
-    {
-        "name": "buonanotte",
-        "trans": [
-            "晚安"
-        ]
-    },
-    {
-        "name": "salve",
-        "trans": [
-            "您好（中性）"
-        ]
-    },
-    {
-        "name": "arrivederci",
-        "trans": [
-            "再见"
-        ]
-    },
-    {
-        "name": "grazie",
-        "trans": [
-            "谢谢"
-        ]
-    },
-    {
-        "name": "prego",
-        "trans": [
-            "不客气；请"
-        ]
-    },
-    {
-        "name": "per favore",
-        "trans": [
-            "请"
-        ]
-    },
-    {
-        "name": "scusa",
-        "trans": [
-            "对不起（非正式）"
-        ]
-    },
-    {
-        "name": "scusi",
-        "trans": [
-            "对不起（正式）"
-        ]
-    },
-    {
-        "name": "piacere",
-        "trans": [
-            "幸会；高兴"
-        ]
-    },
-    {
-        "name": "sì",
-        "trans": [
-            "是"
-        ]
-    },
-    {
-        "name": "no",
-        "trans": [
-            "不"
-        ]
-    },
-    {
-        "name": "bene",
-        "trans": [
-            "好"
-        ]
-    },
-    {
-        "name": "male",
-        "trans": [
-            "不好"
-        ]
-    },
-    {
-        "name": "io",
-        "trans": [
-            "我"
-        ]
-    },
-    {
-        "name": "tu",
-        "trans": [
-            "你"
-        ]
-    },
-    {
-        "name": "lui",
-        "trans": [
-            "他"
-        ]
-    },
-    {
-        "name": "lei",
-        "trans": [
-            "她；您"
-        ]
-    },
-    {
-        "name": "noi",
-        "trans": [
-            "我们"
-        ]
-    },
-    {
-        "name": "voi",
-        "trans": [
-            "你们"
-        ]
-    },
-    {
-        "name": "loro",
-        "trans": [
-            "他们"
-        ]
-    },
-    {
-        "name": "uomo",
-        "trans": [
-            "男人"
-        ]
-    },
-    {
-        "name": "donna",
-        "trans": [
-            "女人"
-        ]
-    },
-    {
-        "name": "ragazzo",
-        "trans": [
-            "男孩；小伙子"
-        ]
-    },
-    {
-        "name": "ragazza",
-        "trans": [
-            "女孩；姑娘"
-        ]
-    },
-    {
-        "name": "signore",
-        "trans": [
-            "先生"
-        ]
-    },
-    {
-        "name": "signora",
-        "trans": [
-            "女士"
-        ]
-    },
-    {
-        "name": "signorina",
-        "trans": [
-            "小姐"
-        ]
-    },
-    {
-        "name": "nome",
-        "trans": [
-            "名字"
-        ]
-    },
-    {
-        "name": "cognome",
-        "trans": [
-            "姓"
-        ]
-    },
-    {
-        "name": "italiano",
-        "trans": [
-            "意大利的；意大利语；意大利人"
-        ]
-    },
-    {
-        "name": "italiana",
-        "trans": [
-            "意大利的（阴）；意大利女人"
-        ]
-    },
-    {
-        "name": "cinese",
-        "trans": [
-            "中国的；汉语；中国人"
-        ]
-    },
-    {
-        "name": "essere",
-        "trans": [
-            "是"
-        ]
-    },
-    {
-        "name": "avere",
-        "trans": [
-            "有"
-        ]
-    },
-    {
-        "name": "chiamarsi",
-        "trans": [
-            "名叫"
-        ]
-    },
-    {
-        "name": "come",
-        "trans": [
-            "怎样；像"
-        ]
-    },
-    {
-        "name": "chi",
-        "trans": [
-            "谁"
-        ]
-    },
-    {
-        "name": "che",
-        "trans": [
-            "什么；那个"
-        ]
-    },
-    {
-        "name": "questo",
-        "trans": [
-            "这个（阳）"
-        ]
-    },
-    {
-        "name": "questa",
-        "trans": [
-            "这个（阴）"
-        ]
-    },
-    {
-        "name": "quello",
-        "trans": [
-            "那个（阳）"
-        ]
-    },
-    {
-        "name": "quella",
-        "trans": [
-            "那个（阴）"
-        ]
-    },
-    {
-        "name": "un",
-        "trans": [
-            "一个（阳）"
-        ]
-    },
-    {
-        "name": "uno",
-        "trans": [
-            "一个（阳，特殊）"
-        ]
-    },
-    {
-        "name": "una",
-        "trans": [
-            "一个（阴）"
-        ]
-    },
-    {
-        "name": "il",
-        "trans": [
-            "定冠词（阳单）"
-        ]
-    },
-    {
-        "name": "lo",
-        "trans": [
-            "定冠词（阳单，特殊）"
-        ]
-    },
-    {
-        "name": "la",
-        "trans": [
-            "定冠词（阴单）"
-        ]
-    },
-    {
-        "name": "l'",
-        "trans": [
-            "定冠词（元音前）"
-        ]
-    },
-    {
-        "name": "i",
-        "trans": [
-            "定冠词（阳复）"
-        ]
-    },
-    {
-        "name": "gli",
-        "trans": [
-            "定冠词（阳复，特殊）"
-        ]
-    },
-    {
-        "name": "le",
-        "trans": [
-            "定冠词（阴复）"
-        ]
-    },
-    {
-        "name": "e",
-        "trans": [
-            "和"
-        ]
-    },
-    {
-        "name": "o",
-        "trans": [
-            "或者"
-        ]
-    },
-    {
-        "name": "ma",
-        "trans": [
-            "但是"
-        ]
-    },
-    {
-        "name": "anche",
-        "trans": [
-            "也"
-        ]
-    },
-    {
-        "name": "molto",
-        "trans": [
-            "很；很多"
-        ]
-    },
-    {
-        "name": "poco",
-        "trans": [
-            "少；一点儿"
-        ]
-    },
-    {
-        "name": "lavoro",
-        "trans": [
-            "工作"
-        ]
-    },
-    {
-        "name": "lavorare",
-        "trans": [
-            "工作（动词）"
-        ]
-    },
-    {
-        "name": "ufficio",
-        "trans": [
-            "办公室"
-        ]
-    },
-    {
-        "name": "azienda",
-        "trans": [
-            "公司"
-        ]
-    },
-    {
-        "name": "studente",
-        "trans": [
-            "学生（阳）"
-        ]
-    },
-    {
-        "name": "studentessa",
-        "trans": [
-            "学生（阴）"
-        ]
-    },
-    {
-        "name": "insegnante",
-        "trans": [
-            "老师"
-        ]
-    },
-    {
-        "name": "professore",
-        "trans": [
-            "教授（阳）"
-        ]
-    },
-    {
-        "name": "professoressa",
-        "trans": [
-            "教授（阴）"
-        ]
-    },
-    {
-        "name": "dottore",
-        "trans": [
-            "医生（阳）"
-        ]
-    },
-    {
-        "name": "dottoressa",
-        "trans": [
-            "医生（阴）"
-        ]
-    },
-    {
-        "name": "ingegnere",
-        "trans": [
-            "工程师"
-        ]
-    },
-    {
-        "name": "avvocato",
-        "trans": [
-            "律师"
-        ]
-    },
-    {
-        "name": "giornalista",
-        "trans": [
-            "记者"
-        ]
-    },
-    {
-        "name": "impiegato",
-        "trans": [
-            "职员（阳）"
-        ]
-    },
-    {
-        "name": "impiegata",
-        "trans": [
-            "职员（阴）"
-        ]
-    },
-    {
-        "name": "cameriere",
-        "trans": [
-            "服务员（阳）"
-        ]
-    },
-    {
-        "name": "cameriera",
-        "trans": [
-            "服务员（阴）"
-        ]
-    },
-    {
-        "name": "cuoco",
-        "trans": [
-            "厨师（阳）"
-        ]
-    },
-    {
-        "name": "cuoca",
-        "trans": [
-            "厨师（阴）"
-        ]
-    },
-    {
-        "name": "commesso",
-        "trans": [
-            "店员（阳）"
-        ]
-    },
-    {
-        "name": "commessa",
-        "trans": [
-            "店员（阴）"
-        ]
-    },
-    {
-        "name": "poliziotto",
-        "trans": [
-            "警察"
-        ]
-    },
-    {
-        "name": "autista",
-        "trans": [
-            "司机"
-        ]
-    },
-    {
-        "name": "artista",
-        "trans": [
-            "艺术家"
-        ]
-    },
-    {
-        "name": "musicista",
-        "trans": [
-            "音乐家"
-        ]
-    },
-    {
-        "name": "disoccupato",
-        "trans": [
-            "失业的"
-        ]
-    },
-    {
-        "name": "pensionato",
-        "trans": [
-            "退休者"
-        ]
-    },
-    {
-        "name": "paese",
-        "trans": [
-            "国家；村子"
-        ]
-    },
-    {
-        "name": "città",
-        "trans": [
-            "城市"
-        ]
-    },
-    {
-        "name": "nazionalità",
-        "trans": [
-            "国籍"
-        ]
-    },
-    {
-        "name": "Italia",
-        "trans": [
-            "意大利"
-        ]
-    },
-    {
-        "name": "Cina",
-        "trans": [
-            "中国"
-        ]
-    },
-    {
-        "name": "Francia",
-        "trans": [
-            "法国"
-        ]
-    },
-    {
-        "name": "Germania",
-        "trans": [
-            "德国"
-        ]
-    },
-    {
-        "name": "Spagna",
-        "trans": [
-            "西班牙"
-        ]
-    },
-    {
-        "name": "Inghilterra",
-        "trans": [
-            "英格兰"
-        ]
-    },
-    {
-        "name": "America",
-        "trans": [
-            "美国；美洲"
-        ]
-    },
-    {
-        "name": "Giappone",
-        "trans": [
-            "日本"
-        ]
-    },
-    {
-        "name": "Russia",
-        "trans": [
-            "俄罗斯"
-        ]
-    },
-    {
-        "name": "Roma",
-        "trans": [
-            "罗马"
-        ]
-    },
-    {
-        "name": "Milano",
-        "trans": [
-            "米兰"
-        ]
-    },
-    {
-        "name": "Napoli",
-        "trans": [
-            "那不勒斯"
-        ]
-    },
-    {
-        "name": "Firenze",
-        "trans": [
-            "佛罗伦萨"
-        ]
-    },
-    {
-        "name": "Venezia",
-        "trans": [
-            "威尼斯"
-        ]
-    },
-    {
-        "name": "Torino",
-        "trans": [
-            "都灵"
-        ]
-    },
-    {
-        "name": "Bologna",
-        "trans": [
-            "博洛尼亚"
-        ]
-    },
-    {
-        "name": "Pechino",
-        "trans": [
-            "北京"
-        ]
-    },
-    {
-        "name": "Shanghai",
-        "trans": [
-            "上海"
-        ]
-    },
-    {
-        "name": "dove",
-        "trans": [
-            "在哪里"
-        ]
-    },
-    {
-        "name": "di dove",
-        "trans": [
-            "从哪里"
-        ]
-    },
-    {
-        "name": "abitare",
-        "trans": [
-            "居住"
-        ]
-    },
-    {
-        "name": "vivere",
-        "trans": [
-            "生活"
-        ]
-    },
-    {
-        "name": "venire",
-        "trans": [
-            "来"
-        ]
-    },
-    {
-        "name": "andare",
-        "trans": [
-            "去"
-        ]
-    },
-    {
-        "name": "nuovo",
-        "trans": [
-            "新的"
-        ]
-    },
-    {
-        "name": "inizio",
-        "trans": [
-            "开始"
-        ]
-    },
-    {
-        "name": "giorno",
-        "trans": [
-            "天；白天"
-        ]
-    },
-    {
-        "name": "importante",
-        "trans": [
-            "重要的"
-        ]
-    },
-    {
-        "name": "contento",
-        "trans": [
-            "高兴的"
-        ]
-    },
-    {
-        "name": "felice",
-        "trans": [
-            "幸福的"
-        ]
-    },
-    {
-        "name": "triste",
-        "trans": [
-            "悲伤的"
-        ]
-    },
-    {
-        "name": "stanco",
-        "trans": [
-            "疲倦的"
-        ]
-    },
-    {
-        "name": "occupato",
-        "trans": [
-            "忙碌的"
-        ]
-    },
-    {
-        "name": "libero",
-        "trans": [
-            "空闲的；自由的"
-        ]
-    },
-    {
-        "name": "bello",
-        "trans": [
-            "漂亮的"
-        ]
-    },
-    {
-        "name": "brutto",
-        "trans": [
-            "难看的"
-        ]
-    },
-    {
-        "name": "alto",
-        "trans": [
-            "高的"
-        ]
-    },
-    {
-        "name": "basso",
-        "trans": [
-            "矮的；低的"
-        ]
-    },
-    {
-        "name": "giovane",
-        "trans": [
-            "年轻的"
-        ]
-    },
-    {
-        "name": "vecchio",
-        "trans": [
-            "老的；旧的"
-        ]
-    },
-    {
-        "name": "simpatico",
-        "trans": [
-            "可爱的；好相处的"
-        ]
-    },
-    {
-        "name": "antipatico",
-        "trans": [
-            "讨厌的"
-        ]
-    },
-    {
-        "name": "gentile",
-        "trans": [
-            "礼貌的"
-        ]
-    },
-    {
-        "name": "come stai",
-        "trans": [
-            "你好吗（非正式）"
-        ]
-    },
-    {
-        "name": "come sta",
-        "trans": [
-            "您好吗（正式）"
-        ]
-    },
-    {
-        "name": "tutto bene",
-        "trans": [
-            "一切都好"
-        ]
-    },
-    {
-        "name": "così così",
-        "trans": [
-            "一般般"
-        ]
-    },
-    {
-        "name": "tempo libero",
-        "trans": [
-            "业余时间"
-        ]
-    },
-    {
-        "name": "hobby",
-        "trans": [
-            "爱好"
-        ]
-    },
-    {
-        "name": "sport",
-        "trans": [
-            "体育"
-        ]
-    },
-    {
-        "name": "calcio",
-        "trans": [
-            "足球"
-        ]
-    },
-    {
-        "name": "tennis",
-        "trans": [
-            "网球"
-        ]
-    },
-    {
-        "name": "nuoto",
-        "trans": [
-            "游泳"
-        ]
-    },
-    {
-        "name": "pallavolo",
-        "trans": [
-            "排球"
-        ]
-    },
-    {
-        "name": "basket",
-        "trans": [
-            "篮球"
-        ]
-    },
-    {
-        "name": "ciclismo",
-        "trans": [
-            "自行车运动"
-        ]
-    },
-    {
-        "name": "corsa",
-        "trans": [
-            "跑步；比赛"
-        ]
-    },
-    {
-        "name": "palestra",
-        "trans": [
-            "健身房"
-        ]
-    },
-    {
-        "name": "cinema",
-        "trans": [
-            "电影院"
-        ]
-    },
-    {
-        "name": "teatro",
-        "trans": [
-            "剧院"
-        ]
-    },
-    {
-        "name": "musica",
-        "trans": [
-            "音乐"
-        ]
-    },
-    {
-        "name": "concerto",
-        "trans": [
-            "音乐会"
-        ]
-    },
-    {
-        "name": "libro",
-        "trans": [
-            "书"
-        ]
-    },
-    {
-        "name": "giornale",
-        "trans": [
-            "报纸"
-        ]
-    },
-    {
-        "name": "rivista",
-        "trans": [
-            "杂志"
-        ]
-    },
-    {
-        "name": "televisione",
-        "trans": [
-            "电视"
-        ]
-    },
-    {
-        "name": "computer",
-        "trans": [
-            "电脑"
-        ]
-    },
-    {
-        "name": "internet",
-        "trans": [
-            "互联网"
-        ]
-    },
-    {
-        "name": "telefono",
-        "trans": [
-            "电话"
-        ]
-    },
-    {
-        "name": "cellulare",
-        "trans": [
-            "手机"
-        ]
-    },
-    {
-        "name": "fotografia",
-        "trans": [
-            "照片；摄影"
-        ]
-    },
-    {
-        "name": "viaggio",
-        "trans": [
-            "旅行"
-        ]
-    },
-    {
-        "name": "amici",
-        "trans": [
-            "朋友们"
-        ]
-    },
-    {
-        "name": "amico",
-        "trans": [
-            "朋友（阳）"
-        ]
-    },
-    {
-        "name": "amica",
-        "trans": [
-            "朋友（阴）"
-        ]
-    },
-    {
-        "name": "giocare",
-        "trans": [
-            "玩；打球"
-        ]
-    },
-    {
-        "name": "nuotare",
-        "trans": [
-            "游泳（动词）"
-        ]
-    },
-    {
-        "name": "correre",
-        "trans": [
-            "跑"
-        ]
-    },
-    {
-        "name": "ballare",
-        "trans": [
-            "跳舞"
-        ]
-    },
-    {
-        "name": "cantare",
-        "trans": [
-            "唱歌"
-        ]
-    },
-    {
-        "name": "suonare",
-        "trans": [
-            "演奏"
-        ]
-    },
-    {
-        "name": "leggere",
-        "trans": [
-            "读"
-        ]
-    },
-    {
-        "name": "guardare",
-        "trans": [
-            "看"
-        ]
-    },
-    {
-        "name": "ascoltare",
-        "trans": [
-            "听"
-        ]
-    },
-    {
-        "name": "uscire",
-        "trans": [
-            "出去"
-        ]
-    },
-    {
-        "name": "incontrare",
-        "trans": [
-            "遇见"
-        ]
-    },
-    {
-        "name": "restare",
-        "trans": [
-            "留下；待"
-        ]
-    },
-    {
-        "name": "casa",
-        "trans": [
-            "家；房子"
-        ]
-    },
-    {
-        "name": "appartamento",
-        "trans": [
-            "公寓"
-        ]
-    },
-    {
-        "name": "stanza",
-        "trans": [
-            "房间"
-        ]
-    },
-    {
-        "name": "indirizzo",
-        "trans": [
-            "地址"
-        ]
-    },
-    {
-        "name": "via",
-        "trans": [
-            "街道"
-        ]
-    },
-    {
-        "name": "piazza",
-        "trans": [
-            "广场"
-        ]
-    },
-    {
-        "name": "numero",
-        "trans": [
-            "号码；数字"
-        ]
-    },
-    {
-        "name": "lunedì",
-        "trans": [
-            "星期一"
-        ]
-    },
-    {
-        "name": "martedì",
-        "trans": [
-            "星期二"
-        ]
-    },
-    {
-        "name": "mercoledì",
-        "trans": [
-            "星期三"
-        ]
-    },
-    {
-        "name": "giovedì",
-        "trans": [
-            "星期四"
-        ]
-    },
-    {
-        "name": "venerdì",
-        "trans": [
-            "星期五"
-        ]
-    },
-    {
-        "name": "sabato",
-        "trans": [
-            "星期六"
-        ]
-    },
-    {
-        "name": "domenica",
-        "trans": [
-            "星期日"
-        ]
-    },
-    {
-        "name": "weekend",
-        "trans": [
-            "周末"
-        ]
-    },
-    {
-        "name": "oggi",
-        "trans": [
-            "今天"
-        ]
-    },
-    {
-        "name": "ieri",
-        "trans": [
-            "昨天"
-        ]
-    },
-    {
-        "name": "domani",
-        "trans": [
-            "明天"
-        ]
-    },
-    {
-        "name": "adesso",
-        "trans": [
-            "现在"
-        ]
-    },
-    {
-        "name": "sempre",
-        "trans": [
-            "总是"
-        ]
-    },
-    {
-        "name": "mai",
-        "trans": [
-            "从不"
-        ]
-    },
-    {
-        "name": "spesso",
-        "trans": [
-            "经常"
-        ]
-    },
-    {
-        "name": "qualche volta",
-        "trans": [
-            "有时"
-        ]
-    },
-    {
-        "name": "ora",
-        "trans": [
-            "现在；小时"
-        ]
-    },
-    {
-        "name": "che ora è",
-        "trans": [
-            "几点了"
-        ]
-    },
-    {
-        "name": "che ore sono",
-        "trans": [
-            "几点了"
-        ]
-    },
-    {
-        "name": "mezzogiorno",
-        "trans": [
-            "中午"
-        ]
-    },
-    {
-        "name": "mezzanotte",
-        "trans": [
-            "午夜"
-        ]
-    },
-    {
-        "name": "mattina",
-        "trans": [
-            "早上"
-        ]
-    },
-    {
-        "name": "pomeriggio",
-        "trans": [
-            "下午"
-        ]
-    },
-    {
-        "name": "sera",
-        "trans": [
-            "傍晚"
-        ]
-    },
-    {
-        "name": "notte",
-        "trans": [
-            "夜晚"
-        ]
-    },
-    {
-        "name": "minuto",
-        "trans": [
-            "分钟"
-        ]
-    },
-    {
-        "name": "secondo",
-        "trans": [
-            "秒；第二"
-        ]
-    },
-    {
-        "name": "settimana",
-        "trans": [
-            "星期"
-        ]
-    },
-    {
-        "name": "mese",
-        "trans": [
-            "月"
-        ]
-    },
-    {
-        "name": "anno",
-        "trans": [
-            "年"
-        ]
-    },
-    {
-        "name": "compleanno",
-        "trans": [
-            "生日"
-        ]
-    },
-    {
-        "name": "festa",
-        "trans": [
-            "节日；聚会"
-        ]
-    },
-    {
-        "name": "zero",
-        "trans": [
-            "零"
-        ]
-    },
-    {
-        "name": "due",
-        "trans": [
-            "二"
-        ]
-    },
-    {
-        "name": "tre",
-        "trans": [
-            "三"
-        ]
-    },
-    {
-        "name": "quattro",
-        "trans": [
-            "四"
-        ]
-    },
-    {
-        "name": "cinque",
-        "trans": [
-            "五"
-        ]
-    },
-    {
-        "name": "sei",
-        "trans": [
-            "六"
-        ]
-    },
-    {
-        "name": "sette",
-        "trans": [
-            "七"
-        ]
-    },
-    {
-        "name": "otto",
-        "trans": [
-            "八"
-        ]
-    },
-    {
-        "name": "nove",
-        "trans": [
-            "九"
-        ]
-    },
-    {
-        "name": "dieci",
-        "trans": [
-            "十"
-        ]
-    },
-    {
-        "name": "undici",
-        "trans": [
-            "十一"
-        ]
-    },
-    {
-        "name": "dodici",
-        "trans": [
-            "十二"
-        ]
-    },
-    {
-        "name": "tredici",
-        "trans": [
-            "十三"
-        ]
-    },
-    {
-        "name": "quattordici",
-        "trans": [
-            "十四"
-        ]
-    },
-    {
-        "name": "quindici",
-        "trans": [
-            "十五"
-        ]
-    },
-    {
-        "name": "sedici",
-        "trans": [
-            "十六"
-        ]
-    },
-    {
-        "name": "diciassette",
-        "trans": [
-            "十七"
-        ]
-    },
-    {
-        "name": "diciotto",
-        "trans": [
-            "十八"
-        ]
-    },
-    {
-        "name": "diciannove",
-        "trans": [
-            "十九"
-        ]
-    },
-    {
-        "name": "venti",
-        "trans": [
-            "二十"
-        ]
-    },
-    {
-        "name": "trenta",
-        "trans": [
-            "三十"
-        ]
-    },
-    {
-        "name": "quaranta",
-        "trans": [
-            "四十"
-        ]
-    },
-    {
-        "name": "cinquanta",
-        "trans": [
-            "五十"
-        ]
-    },
-    {
-        "name": "sessanta",
-        "trans": [
-            "六十"
-        ]
-    },
-    {
-        "name": "settanta",
-        "trans": [
-            "七十"
-        ]
-    },
-    {
-        "name": "ottanta",
-        "trans": [
-            "八十"
-        ]
-    },
-    {
-        "name": "novanta",
-        "trans": [
-            "九十"
-        ]
-    },
-    {
-        "name": "cento",
-        "trans": [
-            "一百"
-        ]
-    },
-    {
-        "name": "mille",
-        "trans": [
-            "一千"
-        ]
-    },
-    {
-        "name": "milione",
-        "trans": [
-            "一百万"
-        ]
-    },
-    {
-        "name": "primo",
-        "trans": [
-            "第一"
-        ]
-    },
-    {
-        "name": "terzo",
-        "trans": [
-            "第三"
-        ]
-    },
-    {
-        "name": "ultimo",
-        "trans": [
-            "最后的"
-        ]
-    },
-    {
-        "name": "email",
-        "trans": [
-            "电子邮件"
-        ]
-    },
-    {
-        "name": "lettera",
-        "trans": [
-            "信"
-        ]
-    },
-    {
-        "name": "messaggio",
-        "trans": [
-            "消息"
-        ]
-    },
-    {
-        "name": "chiamare",
-        "trans": [
-            "打电话；叫"
-        ]
-    },
-    {
-        "name": "telefonare",
-        "trans": [
-            "打电话"
-        ]
-    },
-    {
-        "name": "scrivere",
-        "trans": [
-            "写"
-        ]
-    },
-    {
-        "name": "mandare",
-        "trans": [
-            "寄；发送"
-        ]
-    },
-    {
-        "name": "ricevere",
-        "trans": [
-            "收到"
-        ]
-    },
-    {
-        "name": "rispondere",
-        "trans": [
-            "回答"
-        ]
-    },
-    {
-        "name": "chiedere",
-        "trans": [
-            "问；请求"
-        ]
-    },
-    {
-        "name": "dire",
-        "trans": [
-            "说"
-        ]
-    },
-    {
-        "name": "parlare",
-        "trans": [
-            "说话"
-        ]
-    },
-    {
-        "name": "capire",
-        "trans": [
-            "明白"
-        ]
-    },
-    {
-        "name": "sapere",
-        "trans": [
-            "知道"
-        ]
-    },
-    {
-        "name": "conoscere",
-        "trans": [
-            "认识"
-        ]
-    },
-    {
-        "name": "pensare",
-        "trans": [
-            "想"
-        ]
-    },
-    {
-        "name": "credere",
-        "trans": [
-            "相信"
-        ]
-    },
-    {
-        "name": "sperare",
-        "trans": [
-            "希望"
-        ]
-    },
-    {
-        "name": "quando",
-        "trans": [
-            "什么时候"
-        ]
-    },
-    {
-        "name": "perché",
-        "trans": [
-            "为什么；因为"
-        ]
-    },
-    {
-        "name": "come mai",
-        "trans": [
-            "怎么会"
-        ]
-    },
-    {
-        "name": "qui",
-        "trans": [
-            "这里"
-        ]
-    },
-    {
-        "name": "qua",
-        "trans": [
-            "这儿"
-        ]
-    },
-    {
-        "name": "lì",
-        "trans": [
-            "那里"
-        ]
-    },
-    {
-        "name": "là",
-        "trans": [
-            "那儿"
-        ]
-    },
-    {
-        "name": "vicino",
-        "trans": [
-            "近"
-        ]
-    },
-    {
-        "name": "lontano",
-        "trans": [
-            "远"
-        ]
-    },
-    {
-        "name": "destra",
-        "trans": [
-            "右"
-        ]
-    },
-    {
-        "name": "sinistra",
-        "trans": [
-            "左"
-        ]
-    },
-    {
-        "name": "dritto",
-        "trans": [
-            "直走"
-        ]
-    },
-    {
-        "name": "di chi",
-        "trans": [
-            "谁的"
-        ]
-    },
-    {
-        "name": "mio",
-        "trans": [
-            "我的（阳）"
-        ]
-    },
-    {
-        "name": "mia",
-        "trans": [
-            "我的（阴）"
-        ]
-    },
-    {
-        "name": "tuo",
-        "trans": [
-            "你的（阳）"
-        ]
-    },
-    {
-        "name": "tua",
-        "trans": [
-            "你的（阴）"
-        ]
-    },
-    {
-        "name": "suo",
-        "trans": [
-            "他/她/您的（阳）"
-        ]
-    },
-    {
-        "name": "sua",
-        "trans": [
-            "他/她/您的（阴）"
-        ]
-    },
-    {
-        "name": "nostro",
-        "trans": [
-            "我们的（阳）"
-        ]
-    },
-    {
-        "name": "vostra",
-        "trans": [
-            "你们的（阴）"
-        ]
-    },
-    {
-        "name": "grazie mille",
-        "trans": [
-            "非常感谢"
-        ]
-    },
-    {
-        "name": "di niente",
-        "trans": [
-            "不客气"
-        ]
-    },
-    {
-        "name": "non c'è problema",
-        "trans": [
-            "没问题"
-        ]
-    },
-    {
-        "name": "va bene",
-        "trans": [
-            "好的"
-        ]
-    },
-    {
-        "name": "d'accordo",
-        "trans": [
-            "同意"
-        ]
-    },
-    {
-        "name": "certo",
-        "trans": [
-            "当然"
-        ]
-    },
-    {
-        "name": "naturalmente",
-        "trans": [
-            "自然；当然"
-        ]
-    },
-    {
-        "name": "forse",
-        "trans": [
-            "也许"
-        ]
-    },
-    {
-        "name": "probabilmente",
-        "trans": [
-            "大概"
-        ]
-    },
-    {
-        "name": "sicuro",
-        "trans": [
-            "确定的；安全的"
-        ]
-    },
-    {
-        "name": "bar",
-        "trans": [
-            "咖啡馆；酒吧"
-        ]
-    },
-    {
-        "name": "caffè",
-        "trans": [
-            "咖啡"
-        ]
-    },
-    {
-        "name": "cappuccino",
-        "trans": [
-            "卡布奇诺"
-        ]
-    },
-    {
-        "name": "espresso",
-        "trans": [
-            "意式浓缩"
-        ]
-    },
-    {
-        "name": "tè",
-        "trans": [
-            "茶"
-        ]
-    },
-    {
-        "name": "acqua",
-        "trans": [
-            "水"
-        ]
-    },
-    {
-        "name": "acqua minerale",
-        "trans": [
-            "矿泉水"
-        ]
-    },
-    {
-        "name": "succo",
-        "trans": [
-            "果汁"
-        ]
-    },
-    {
-        "name": "aranciata",
-        "trans": [
-            "橙汁汽水"
-        ]
-    },
-    {
-        "name": "limonata",
-        "trans": [
-            "柠檬水"
-        ]
-    },
-    {
-        "name": "vino",
-        "trans": [
-            "葡萄酒"
-        ]
-    },
-    {
-        "name": "birra",
-        "trans": [
-            "啤酒"
-        ]
-    },
-    {
-        "name": "latte",
-        "trans": [
-            "牛奶"
-        ]
-    },
-    {
-        "name": "zucchero",
-        "trans": [
-            "糖"
-        ]
-    },
-    {
-        "name": "brioche",
-        "trans": [
-            "甜面包"
-        ]
-    },
-    {
-        "name": "cornetto",
-        "trans": [
-            "牛角包"
-        ]
-    },
-    {
-        "name": "panino",
-        "trans": [
-            "三明治"
-        ]
-    },
-    {
-        "name": "tramezzino",
-        "trans": [
-            "三角形三明治"
-        ]
-    },
-    {
-        "name": "pizza",
-        "trans": [
-            "披萨"
-        ]
-    },
-    {
-        "name": "gelato",
-        "trans": [
-            "冰淇淋"
-        ]
-    },
-    {
-        "name": "conto",
-        "trans": [
-            "账单"
-        ]
-    },
-    {
-        "name": "prezzo",
-        "trans": [
-            "价格"
-        ]
-    },
-    {
-        "name": "euro",
-        "trans": [
-            "欧元"
-        ]
-    },
-    {
-        "name": "pagare",
-        "trans": [
-            "付款"
-        ]
-    },
-    {
-        "name": "ordinare",
-        "trans": [
-            "点餐"
-        ]
-    },
-    {
-        "name": "prendere",
-        "trans": [
-            "拿；点（餐）"
-        ]
-    },
-    {
-        "name": "bere",
-        "trans": [
-            "喝"
-        ]
-    },
-    {
-        "name": "mangiare",
-        "trans": [
-            "吃"
-        ]
-    },
-    {
-        "name": "avere fame",
-        "trans": [
-            "饿"
-        ]
-    },
-    {
-        "name": "avere sete",
-        "trans": [
-            "渴"
-        ]
-    },
-    {
-        "name": "buono",
-        "trans": [
-            "好的；好吃的"
-        ]
-    },
-    {
-        "name": "cattivo",
-        "trans": [
-            "坏的"
-        ]
-    },
-    {
-        "name": "delizioso",
-        "trans": [
-            "美味的"
-        ]
-    },
-    {
-        "name": "caldo",
-        "trans": [
-            "热的"
-        ]
-    },
-    {
-        "name": "freddo",
-        "trans": [
-            "冷的"
-        ]
-    },
-    {
-        "name": "passato",
-        "trans": [
-            "过去"
-        ]
-    },
-    {
-        "name": "l'altro ieri",
-        "trans": [
-            "前天"
-        ]
-    },
-    {
-        "name": "scorso",
-        "trans": [
-            "上一个"
-        ]
-    },
-    {
-        "name": "fare",
-        "trans": [
-            "做"
-        ]
-    },
-    {
-        "name": "fatto",
-        "trans": [
-            "做过；事实"
-        ]
-    },
-    {
-        "name": "stare",
-        "trans": [
-            "待；处于"
-        ]
-    },
-    {
-        "name": "rimanere",
-        "trans": [
-            "留下"
-        ]
-    },
-    {
-        "name": "studiare",
-        "trans": [
-            "学习"
-        ]
-    },
-    {
-        "name": "riposare",
-        "trans": [
-            "休息"
-        ]
-    },
-    {
-        "name": "divertirsi",
-        "trans": [
-            "玩得开心"
-        ]
-    },
-    {
-        "name": "viaggiare",
-        "trans": [
-            "旅行（动词）"
-        ]
-    },
-    {
-        "name": "vacanza",
-        "trans": [
-            "假期"
-        ]
-    },
-    {
-        "name": "partire",
-        "trans": [
-            "出发"
-        ]
-    },
-    {
-        "name": "arrivare",
-        "trans": [
-            "到达"
-        ]
-    },
-    {
-        "name": "treno",
-        "trans": [
-            "火车"
-        ]
-    },
-    {
-        "name": "stazione",
-        "trans": [
-            "车站"
-        ]
-    },
-    {
-        "name": "binario",
-        "trans": [
-            "站台"
-        ]
-    },
-    {
-        "name": "biglietto",
-        "trans": [
-            "票"
-        ]
-    },
-    {
-        "name": "aereo",
-        "trans": [
-            "飞机"
-        ]
-    },
-    {
-        "name": "aeroporto",
-        "trans": [
-            "机场"
-        ]
-    },
-    {
-        "name": "autobus",
-        "trans": [
-            "公共汽车"
-        ]
-    },
-    {
-        "name": "metro",
-        "trans": [
-            "地铁"
-        ]
-    },
-    {
-        "name": "taxi",
-        "trans": [
-            "出租车"
-        ]
-    },
-    {
-        "name": "macchina",
-        "trans": [
-            "汽车"
-        ]
-    },
-    {
-        "name": "auto",
-        "trans": [
-            "汽车"
-        ]
-    },
-    {
-        "name": "bicicletta",
-        "trans": [
-            "自行车"
-        ]
-    },
-    {
-        "name": "nave",
-        "trans": [
-            "船"
-        ]
-    },
-    {
-        "name": "traghetto",
-        "trans": [
-            "渡轮"
-        ]
-    },
-    {
-        "name": "albergo",
-        "trans": [
-            "旅馆"
-        ]
-    },
-    {
-        "name": "hotel",
-        "trans": [
-            "酒店"
-        ]
-    },
-    {
-        "name": "camera",
-        "trans": [
-            "房间"
-        ]
-    },
-    {
-        "name": "prenotare",
-        "trans": [
-            "预订"
-        ]
-    },
-    {
-        "name": "prenotazione",
-        "trans": [
-            "预订（名词）"
-        ]
-    },
-    {
-        "name": "passaporto",
-        "trans": [
-            "护照"
-        ]
-    },
-    {
-        "name": "valigia",
-        "trans": [
-            "行李箱"
-        ]
-    },
-    {
-        "name": "borsa",
-        "trans": [
-            "包"
-        ]
-    },
-    {
-        "name": "mappa",
-        "trans": [
-            "地图"
-        ]
-    },
-    {
-        "name": "montagna",
-        "trans": [
-            "山"
-        ]
-    },
-    {
-        "name": "mare",
-        "trans": [
-            "海"
-        ]
-    },
-    {
-        "name": "lago",
-        "trans": [
-            "湖"
-        ]
-    },
-    {
-        "name": "spiaggia",
-        "trans": [
-            "海滩"
-        ]
-    },
-    {
-        "name": "bosco",
-        "trans": [
-            "树林"
-        ]
-    },
-    {
-        "name": "parco",
-        "trans": [
-            "公园"
-        ]
-    },
-    {
-        "name": "museo",
-        "trans": [
-            "博物馆"
-        ]
-    },
-    {
-        "name": "chiesa",
-        "trans": [
-            "教堂"
-        ]
-    },
-    {
-        "name": "castello",
-        "trans": [
-            "城堡"
-        ]
-    },
-    {
-        "name": "ponte",
-        "trans": [
-            "桥"
-        ]
-    },
-    {
-        "name": "tempo",
-        "trans": [
-            "天气；时间"
-        ]
-    },
-    {
-        "name": "sole",
-        "trans": [
-            "太阳"
-        ]
-    },
-    {
-        "name": "pioggia",
-        "trans": [
-            "雨"
-        ]
-    },
-    {
-        "name": "vento",
-        "trans": [
-            "风"
-        ]
-    },
-    {
-        "name": "nuvola",
-        "trans": [
-            "云"
-        ]
-    },
-    {
-        "name": "neve",
-        "trans": [
-            "雪"
-        ]
-    },
-    {
-        "name": "temporale",
-        "trans": [
-            "暴风雨"
-        ]
-    },
-    {
-        "name": "soleggiato",
-        "trans": [
-            "晴朗的"
-        ]
-    },
-    {
-        "name": "nuvoloso",
-        "trans": [
-            "多云的"
-        ]
-    },
-    {
-        "name": "piovoso",
-        "trans": [
-            "下雨的"
-        ]
-    },
-    {
-        "name": "fa caldo",
-        "trans": [
-            "很热"
-        ]
-    },
-    {
-        "name": "fa freddo",
-        "trans": [
-            "很冷"
-        ]
-    },
-    {
-        "name": "che tempo fa",
-        "trans": [
-            "天气怎么样"
-        ]
-    },
-    {
-        "name": "festività",
-        "trans": [
-            "节日"
-        ]
-    },
-    {
-        "name": "Natale",
-        "trans": [
-            "圣诞节"
-        ]
-    },
-    {
-        "name": "Pasqua",
-        "trans": [
-            "复活节"
-        ]
-    },
-    {
-        "name": "Capodanno",
-        "trans": [
-            "新年"
-        ]
-    },
-    {
-        "name": "Ferragosto",
-        "trans": [
-            "八月十五节"
-        ]
-    },
-    {
-        "name": "matrimonio",
-        "trans": [
-            "婚礼"
-        ]
-    },
-    {
-        "name": "auguri",
-        "trans": [
-            "祝福"
-        ]
-    },
-    {
-        "name": "congratulazioni",
-        "trans": [
-            "恭喜"
-        ]
-    },
-    {
-        "name": "buon viaggio",
-        "trans": [
-            "一路顺风"
-        ]
-    },
-    {
-        "name": "buone vacanze",
-        "trans": [
-            "假期愉快"
-        ]
-    },
-    {
-        "name": "famiglia",
-        "trans": [
-            "家庭"
-        ]
-    },
-    {
-        "name": "padre",
-        "trans": [
-            "父亲"
-        ]
-    },
-    {
-        "name": "madre",
-        "trans": [
-            "母亲"
-        ]
-    },
-    {
-        "name": "papà",
-        "trans": [
-            "爸爸"
-        ]
-    },
-    {
-        "name": "mamma",
-        "trans": [
-            "妈妈"
-        ]
-    },
-    {
-        "name": "genitori",
-        "trans": [
-            "父母"
-        ]
-    },
-    {
-        "name": "figlio",
-        "trans": [
-            "儿子"
-        ]
-    },
-    {
-        "name": "figlia",
-        "trans": [
-            "女儿"
-        ]
-    },
-    {
-        "name": "fratello",
-        "trans": [
-            "兄弟"
-        ]
-    },
-    {
-        "name": "sorella",
-        "trans": [
-            "姐妹"
-        ]
-    },
-    {
-        "name": "nonno",
-        "trans": [
-            "祖父"
-        ]
-    },
-    {
-        "name": "nonna",
-        "trans": [
-            "祖母"
-        ]
-    },
-    {
-        "name": "zio",
-        "trans": [
-            "叔叔；舅舅"
-        ]
-    },
-    {
-        "name": "zia",
-        "trans": [
-            "阿姨；姑姑"
-        ]
-    },
-    {
-        "name": "cugino",
-        "trans": [
-            "堂/表兄弟"
-        ]
-    },
-    {
-        "name": "cugina",
-        "trans": [
-            "堂/表姐妹"
-        ]
-    },
-    {
-        "name": "marito",
-        "trans": [
-            "丈夫"
-        ]
-    },
-    {
-        "name": "moglie",
-        "trans": [
-            "妻子"
-        ]
-    },
-    {
-        "name": "fidanzato",
-        "trans": [
-            "未婚夫；男友"
-        ]
-    },
-    {
-        "name": "fidanzata",
-        "trans": [
-            "未婚妻；女友"
-        ]
-    },
-    {
-        "name": "bambino",
-        "trans": [
-            "小孩（阳）"
-        ]
-    },
-    {
-        "name": "bambina",
-        "trans": [
-            "小孩（阴）"
-        ]
-    },
-    {
-        "name": "nipote",
-        "trans": [
-            "孙子/孙女；侄子/侄女"
-        ]
-    },
-    {
-        "name": "suocero",
-        "trans": [
-            "公公；岳父"
-        ]
-    },
-    {
-        "name": "suocera",
-        "trans": [
-            "婆婆；岳母"
-        ]
-    },
-    {
-        "name": "ristorante",
-        "trans": [
-            "餐厅"
-        ]
-    },
-    {
-        "name": "trattoria",
-        "trans": [
-            "小餐馆"
-        ]
-    },
-    {
-        "name": "pizzeria",
-        "trans": [
-            "披萨店"
-        ]
-    },
-    {
-        "name": "menu",
-        "trans": [
-            "菜单"
-        ]
-    },
-    {
-        "name": "antipasto",
-        "trans": [
-            "开胃菜"
-        ]
-    },
-    {
-        "name": "contorno",
-        "trans": [
-            "配菜"
-        ]
-    },
-    {
-        "name": "dolce",
-        "trans": [
-            "甜点；甜的"
-        ]
-    },
-    {
-        "name": "frutta",
-        "trans": [
-            "水果"
-        ]
-    },
-    {
-        "name": "pasta",
-        "trans": [
-            "意大利面"
-        ]
-    },
-    {
-        "name": "spaghetti",
-        "trans": [
-            "细面"
-        ]
-    },
-    {
-        "name": "risotto",
-        "trans": [
-            "烩饭"
-        ]
-    },
-    {
-        "name": "minestra",
-        "trans": [
-            "汤"
-        ]
-    },
-    {
-        "name": "zuppa",
-        "trans": [
-            "浓汤"
-        ]
-    },
-    {
-        "name": "insalata",
-        "trans": [
-            "沙拉"
-        ]
-    },
-    {
-        "name": "carne",
-        "trans": [
-            "肉"
-        ]
-    },
-    {
-        "name": "pesce",
-        "trans": [
-            "鱼"
-        ]
-    },
-    {
-        "name": "pollo",
-        "trans": [
-            "鸡肉"
-        ]
-    },
-    {
-        "name": "manzo",
-        "trans": [
-            "牛肉"
-        ]
-    },
-    {
-        "name": "maiale",
-        "trans": [
-            "猪肉"
-        ]
-    },
-    {
-        "name": "prosciutto",
-        "trans": [
-            "火腿"
-        ]
-    },
-    {
-        "name": "formaggio",
-        "trans": [
-            "奶酪"
-        ]
-    },
-    {
-        "name": "pane",
-        "trans": [
-            "面包"
-        ]
-    },
-    {
-        "name": "olio",
-        "trans": [
-            "油"
-        ]
-    },
-    {
-        "name": "sale",
-        "trans": [
-            "盐"
-        ]
-    },
-    {
-        "name": "pepe",
-        "trans": [
-            "胡椒"
-        ]
-    },
-    {
-        "name": "aceto",
-        "trans": [
-            "醋"
-        ]
-    },
-    {
-        "name": "pomodoro",
-        "trans": [
-            "番茄"
-        ]
-    },
-    {
-        "name": "patata",
-        "trans": [
-            "土豆"
-        ]
-    },
-    {
-        "name": "verdura",
-        "trans": [
-            "蔬菜"
-        ]
-    },
-    {
-        "name": "mela",
-        "trans": [
-            "苹果"
-        ]
-    },
-    {
-        "name": "pera",
-        "trans": [
-            "梨"
-        ]
-    },
-    {
-        "name": "arancia",
-        "trans": [
-            "橙子"
-        ]
-    },
-    {
-        "name": "limone",
-        "trans": [
-            "柠檬"
-        ]
-    },
-    {
-        "name": "banana",
-        "trans": [
-            "香蕉"
-        ]
-    },
-    {
-        "name": "fragola",
-        "trans": [
-            "草莓"
-        ]
-    },
-    {
-        "name": "uva",
-        "trans": [
-            "葡萄"
-        ]
-    },
-    {
-        "name": "cocomero",
-        "trans": [
-            "西瓜"
-        ]
-    },
-    {
-        "name": "colazione",
-        "trans": [
-            "早餐"
-        ]
-    },
-    {
-        "name": "pranzo",
-        "trans": [
-            "午餐"
-        ]
-    },
-    {
-        "name": "cena",
-        "trans": [
-            "晚餐"
-        ]
-    },
-    {
-        "name": "spuntino",
-        "trans": [
-            "点心"
-        ]
-    },
-    {
-        "name": "buon appetito",
-        "trans": [
-            "祝你好胃口"
-        ]
-    },
-    {
-        "name": "il conto per favore",
-        "trans": [
-            "请结账"
-        ]
-    },
-    {
-        "name": "è buono",
-        "trans": [
-            "好吃"
-        ]
-    },
-    {
-        "name": "è troppo salato",
-        "trans": [
-            "太咸了"
-        ]
-    },
-    {
-        "name": "vegetariano",
-        "trans": [
-            "素食的"
-        ]
-    },
-    {
-        "name": "allergia",
-        "trans": [
-            "过敏"
-        ]
-    },
-    {
-        "name": "film",
-        "trans": [
-            "电影"
-        ]
-    },
-    {
-        "name": "attore",
-        "trans": [
-            "男演员"
-        ]
-    },
-    {
-        "name": "attrice",
-        "trans": [
-            "女演员"
-        ]
-    },
-    {
-        "name": "regista",
-        "trans": [
-            "导演"
-        ]
-    },
-    {
-        "name": "storia",
-        "trans": [
-            "故事；历史"
-        ]
-    },
-    {
-        "name": "commedia",
-        "trans": [
-            "喜剧"
-        ]
-    },
-    {
-        "name": "dramma",
-        "trans": [
-            "剧情片"
-        ]
-    },
-    {
-        "name": "azione",
-        "trans": [
-            "动作"
-        ]
-    },
-    {
-        "name": "amore",
-        "trans": [
-            "爱情"
-        ]
-    },
-    {
-        "name": "ricordare",
-        "trans": [
-            "记得"
-        ]
-    },
-    {
-        "name": "dimenticare",
-        "trans": [
-            "忘记"
-        ]
-    },
-    {
-        "name": "ridere",
-        "trans": [
-            "笑"
-        ]
-    },
-    {
-        "name": "piangere",
-        "trans": [
-            "哭"
-        ]
-    },
-    {
-        "name": "emozione",
-        "trans": [
-            "情感"
-        ]
-    },
-    {
-        "name": "interessante",
-        "trans": [
-            "有趣的"
-        ]
-    },
-    {
-        "name": "noioso",
-        "trans": [
-            "无聊的"
-        ]
-    },
-    {
-        "name": "divertente",
-        "trans": [
-            "好玩的"
-        ]
-    },
-    {
-        "name": "famoso",
-        "trans": [
-            "著名的"
-        ]
-    },
-    {
-        "name": "preferito",
-        "trans": [
-            "最喜欢的"
-        ]
-    },
-    {
-        "name": "vedere",
-        "trans": [
-            "看见"
-        ]
-    },
-    {
-        "name": "andare al cinema",
-        "trans": [
-            "去看电影"
-        ]
-    },
-    {
-        "name": "visita",
-        "trans": [
-            "拜访"
-        ]
-    },
-    {
-        "name": "ospite",
-        "trans": [
-            "客人"
-        ]
-    },
-    {
-        "name": "accogliere",
-        "trans": [
-            "迎接"
-        ]
-    },
-    {
-        "name": "regalo",
-        "trans": [
-            "礼物"
-        ]
-    },
-    {
-        "name": "fiore",
-        "trans": [
-            "花"
-        ]
-    },
-    {
-        "name": "cioccolato",
-        "trans": [
-            "巧克力"
-        ]
-    },
-    {
-        "name": "benvenuto",
-        "trans": [
-            "欢迎"
-        ]
-    },
-    {
-        "name": "accomodati",
-        "trans": [
-            "请坐（非正式）"
-        ]
-    },
-    {
-        "name": "accomodarsi",
-        "trans": [
-            "请坐"
-        ]
-    },
-    {
-        "name": "salute",
-        "trans": [
-            "健康；干杯"
-        ]
-    },
-    {
-        "name": "cin cin",
-        "trans": [
-            "干杯"
-        ]
-    },
-    {
-        "name": "stare bene",
-        "trans": [
-            "身体好"
-        ]
-    },
-    {
-        "name": "stare male",
-        "trans": [
-            "身体不舒服"
-        ]
-    },
-    {
-        "name": "malato",
-        "trans": [
-            "生病的"
-        ]
-    },
-    {
-        "name": "sano",
-        "trans": [
-            "健康的"
-        ]
-    },
-    {
-        "name": "ospedale",
-        "trans": [
-            "医院"
-        ]
-    },
-    {
-        "name": "farmacia",
-        "trans": [
-            "药店"
-        ]
-    },
-    {
-        "name": "medicina",
-        "trans": [
-            "药"
-        ]
-    },
-    {
-        "name": "mal di testa",
-        "trans": [
-            "头痛"
-        ]
-    },
-    {
-        "name": "mal di stomaco",
-        "trans": [
-            "胃痛"
-        ]
-    },
-    {
-        "name": "raffreddore",
-        "trans": [
-            "感冒"
-        ]
-    },
-    {
-        "name": "tosse",
-        "trans": [
-            "咳嗽"
-        ]
-    },
-    {
-        "name": "febbre",
-        "trans": [
-            "发烧"
-        ]
-    },
-    {
-        "name": "aiuto",
-        "trans": [
-            "帮助"
-        ]
-    },
-    {
-        "name": "aiutare",
-        "trans": [
-            "帮助（动词）"
-        ]
-    },
-    {
-        "name": "vestito",
-        "trans": [
-            "衣服；连衣裙"
-        ]
-    },
-    {
-        "name": "abbigliamento",
-        "trans": [
-            "服装"
-        ]
-    },
-    {
-        "name": "maglietta",
-        "trans": [
-            "T恤"
-        ]
-    },
-    {
-        "name": "camicia",
-        "trans": [
-            "衬衫"
-        ]
-    },
-    {
-        "name": "pantaloni",
-        "trans": [
-            "裤子"
-        ]
-    },
-    {
-        "name": "gonna",
-        "trans": [
-            "裙子"
-        ]
-    },
-    {
-        "name": "giacca",
-        "trans": [
-            "夹克"
-        ]
-    },
-    {
-        "name": "cappotto",
-        "trans": [
-            "大衣"
-        ]
-    },
-    {
-        "name": "maglione",
-        "trans": [
-            "毛衣"
-        ]
-    },
-    {
-        "name": "scarpe",
-        "trans": [
-            "鞋子"
-        ]
-    },
-    {
-        "name": "calze",
-        "trans": [
-            "袜子"
-        ]
-    },
-    {
-        "name": "cappello",
-        "trans": [
-            "帽子"
-        ]
-    },
-    {
-        "name": "sciarpa",
-        "trans": [
-            "围巾"
-        ]
-    },
-    {
-        "name": "guanti",
-        "trans": [
-            "手套"
-        ]
-    },
-    {
-        "name": "occhiali",
-        "trans": [
-            "眼镜"
-        ]
-    },
-    {
-        "name": "orologio",
-        "trans": [
-            "手表；钟"
-        ]
-    },
-    {
-        "name": "taglia",
-        "trans": [
-            "尺码"
-        ]
-    },
-    {
-        "name": "colore",
-        "trans": [
-            "颜色"
-        ]
-    },
-    {
-        "name": "bianco",
-        "trans": [
-            "白色的"
-        ]
-    },
-    {
-        "name": "nero",
-        "trans": [
-            "黑色的"
-        ]
-    },
-    {
-        "name": "rosso",
-        "trans": [
-            "红色的"
-        ]
-    },
-    {
-        "name": "blu",
-        "trans": [
-            "蓝色的"
-        ]
-    },
-    {
-        "name": "azzurro",
-        "trans": [
-            "浅蓝色的"
-        ]
-    },
-    {
-        "name": "verde",
-        "trans": [
-            "绿色的"
-        ]
-    },
-    {
-        "name": "giallo",
-        "trans": [
-            "黄色的"
-        ]
-    },
-    {
-        "name": "arancione",
-        "trans": [
-            "橙色的"
-        ]
-    },
-    {
-        "name": "rosa",
-        "trans": [
-            "粉色的"
-        ]
-    },
-    {
-        "name": "viola",
-        "trans": [
-            "紫色的"
-        ]
-    },
-    {
-        "name": "marrone",
-        "trans": [
-            "棕色的"
-        ]
-    },
-    {
-        "name": "grigio",
-        "trans": [
-            "灰色的"
-        ]
-    },
-    {
-        "name": "chiaro",
-        "trans": [
-            "浅的；明亮的"
-        ]
-    },
-    {
-        "name": "scuro",
-        "trans": [
-            "深的；黑暗的"
-        ]
-    },
-    {
-        "name": "negozio",
-        "trans": [
-            "商店"
-        ]
-    },
-    {
-        "name": "centro commerciale",
-        "trans": [
-            "购物中心"
-        ]
-    },
-    {
-        "name": "mercato",
-        "trans": [
-            "市场"
-        ]
-    },
-    {
-        "name": "supermercato",
-        "trans": [
-            "超市"
-        ]
-    },
-    {
-        "name": "cassa",
-        "trans": [
-            "收银台"
-        ]
-    },
-    {
-        "name": "sconto",
-        "trans": [
-            "折扣"
-        ]
-    },
-    {
-        "name": "saldi",
-        "trans": [
-            "打折季"
-        ]
-    },
-    {
-        "name": "caro",
-        "trans": [
-            "贵的；亲爱的"
-        ]
-    },
-    {
-        "name": "economico",
-        "trans": [
-            "便宜的"
-        ]
-    },
-    {
-        "name": "gratis",
-        "trans": [
-            "免费的"
-        ]
-    },
-    {
-        "name": "comprare",
-        "trans": [
-            "买"
-        ]
-    },
-    {
-        "name": "vendere",
-        "trans": [
-            "卖"
-        ]
-    },
-    {
-        "name": "costare",
-        "trans": [
-            "花费"
-        ]
-    },
-    {
-        "name": "quanto costa",
-        "trans": [
-            "多少钱"
-        ]
-    },
-    {
-        "name": "posso provare",
-        "trans": [
-            "我可以试穿吗"
-        ]
-    },
-    {
-        "name": "troppo grande",
-        "trans": [
-            "太大"
-        ]
-    },
-    {
-        "name": "troppo piccolo",
-        "trans": [
-            "太小"
-        ]
-    },
-    {
-        "name": "mi piace",
-        "trans": [
-            "我喜欢"
-        ]
-    },
-    {
-        "name": "non mi piace",
-        "trans": [
-            "我不喜欢"
-        ]
-    },
-    {
-        "name": "vorrei",
-        "trans": [
-            "我想要"
-        ]
-    },
-    {
-        "name": "posso",
-        "trans": [
-            "我可以"
-        ]
-    },
-    {
-        "name": "devo",
-        "trans": [
-            "我必须"
-        ]
-    },
-    {
-        "name": "voglio",
-        "trans": [
-            "我想要"
-        ]
-    },
-    {
-        "name": "edicola",
-        "trans": [
-            "报刊亭"
-        ]
-    },
-    {
-        "name": "notizia",
-        "trans": [
-            "新闻"
-        ]
-    },
-    {
-        "name": "informazione",
-        "trans": [
-            "信息"
-        ]
-    },
-    {
-        "name": "cartolina",
-        "trans": [
-            "明信片"
-        ]
-    },
-    {
-        "name": "francobollo",
-        "trans": [
-            "邮票"
-        ]
-    },
-    {
-        "name": "tabaccaio",
-        "trans": [
-            "烟草店"
-        ]
-    },
-    {
-        "name": "ufficio postale",
-        "trans": [
-            "邮局"
-        ]
-    },
-    {
-        "name": "banca",
-        "trans": [
-            "银行"
-        ]
-    },
-    {
-        "name": "soldi",
-        "trans": [
-            "钱"
-        ]
-    },
-    {
-        "name": "contanti",
-        "trans": [
-            "现金"
-        ]
-    },
-    {
-        "name": "carta di credito",
-        "trans": [
-            "信用卡"
-        ]
-    },
-    {
-        "name": "bancomat",
-        "trans": [
-            "自动取款机"
-        ]
-    },
-    {
-        "name": "centro",
-        "trans": [
-            "市中心"
-        ]
-    },
-    {
-        "name": "periferia",
-        "trans": [
-            "郊区"
-        ]
-    },
-    {
-        "name": "quartiere",
-        "trans": [
-            "街区"
-        ]
-    },
-    {
-        "name": "strada",
-        "trans": [
-            "路"
-        ]
-    },
-    {
-        "name": "semaforo",
-        "trans": [
-            "红绿灯"
-        ]
-    },
-    {
-        "name": "incrocio",
-        "trans": [
-            "十字路口"
-        ]
-    },
-    {
-        "name": "fermata",
-        "trans": [
-            "车站（公交）"
-        ]
-    },
-    {
-        "name": "parcheggio",
-        "trans": [
-            "停车场"
-        ]
-    },
-    {
-        "name": "scuola",
-        "trans": [
-            "学校"
-        ]
-    },
-    {
-        "name": "università",
-        "trans": [
-            "大学"
-        ]
-    },
-    {
-        "name": "biblioteca",
-        "trans": [
-            "图书馆"
-        ]
-    },
-    {
-        "name": "comune",
-        "trans": [
-            "市政厅；市镇"
-        ]
-    },
-    {
-        "name": "dove si trova",
-        "trans": [
-            "在哪里"
-        ]
-    },
-    {
-        "name": "è lontano",
-        "trans": [
-            "远吗"
-        ]
-    },
-    {
-        "name": "a piedi",
-        "trans": [
-            "步行"
-        ]
-    },
-    {
-        "name": "in macchina",
-        "trans": [
-            "坐车"
-        ]
-    },
-    {
-        "name": "canzone",
-        "trans": [
-            "歌曲"
-        ]
-    },
-    {
-        "name": "cantante",
-        "trans": [
-            "歌手"
-        ]
-    },
-    {
-        "name": "strumento",
-        "trans": [
-            "乐器"
-        ]
-    },
-    {
-        "name": "chitarra",
-        "trans": [
-            "吉他"
-        ]
-    },
-    {
-        "name": "piano",
-        "trans": [
-            "钢琴"
-        ]
-    },
-    {
-        "name": "violino",
-        "trans": [
-            "小提琴"
-        ]
-    },
-    {
-        "name": "invito",
-        "trans": [
-            "邀请"
-        ]
-    },
-    {
-        "name": "invitare",
-        "trans": [
-            "邀请（动词）"
-        ]
-    },
-    {
-        "name": "ballo",
-        "trans": [
-            "舞会；舞蹈"
-        ]
-    },
-    {
-        "name": "disco",
-        "trans": [
-            "迪厅"
-        ]
-    },
-    {
-        "name": "locale",
-        "trans": [
-            "场所；酒吧"
-        ]
-    },
-    {
-        "name": "divertimento",
-        "trans": [
-            "娱乐"
-        ]
-    },
-    {
-        "name": "potere",
-        "trans": [
-            "能够"
-        ]
-    },
-    {
-        "name": "volere",
-        "trans": [
-            "想要"
-        ]
-    },
-    {
-        "name": "dovere",
-        "trans": [
-            "必须"
-        ]
-    },
-    {
-        "name": "sentire",
-        "trans": [
-            "听见；感觉"
-        ]
-    },
-    {
-        "name": "aprire",
-        "trans": [
-            "打开"
-        ]
-    },
-    {
-        "name": "chiudere",
-        "trans": [
-            "关闭"
-        ]
-    },
-    {
-        "name": "entrare",
-        "trans": [
-            "进入"
-        ]
-    },
-    {
-        "name": "salire",
-        "trans": [
-            "上去"
-        ]
-    },
-    {
-        "name": "scendere",
-        "trans": [
-            "下来"
-        ]
-    },
-    {
-        "name": "tornare",
-        "trans": [
-            "返回"
-        ]
-    },
-    {
-        "name": "aspettare",
-        "trans": [
-            "等待"
-        ]
-    },
-    {
-        "name": "cercare",
-        "trans": [
-            "寻找"
-        ]
-    },
-    {
-        "name": "trovare",
-        "trans": [
-            "找到"
-        ]
-    },
-    {
-        "name": "perdere",
-        "trans": [
-            "丢失；输"
-        ]
-    },
-    {
-        "name": "dare",
-        "trans": [
-            "给"
-        ]
-    },
-    {
-        "name": "portare",
-        "trans": [
-            "带"
-        ]
-    },
-    {
-        "name": "mettere",
-        "trans": [
-            "放；穿"
-        ]
-    },
-    {
-        "name": "togliere",
-        "trans": [
-            "拿掉"
-        ]
-    },
-    {
-        "name": "usare",
-        "trans": [
-            "使用"
-        ]
-    },
-    {
-        "name": "imparare",
-        "trans": [
-            "学会"
-        ]
-    },
-    {
-        "name": "insegnare",
-        "trans": [
-            "教"
-        ]
-    },
-    {
-        "name": "nascere",
-        "trans": [
-            "出生"
-        ]
-    },
-    {
-        "name": "morire",
-        "trans": [
-            "死亡"
-        ]
-    },
-    {
-        "name": "cucinare",
-        "trans": [
-            "做饭"
-        ]
-    },
-    {
-        "name": "dormire",
-        "trans": [
-            "睡觉"
-        ]
-    },
-    {
-        "name": "svegliarsi",
-        "trans": [
-            "醒来"
-        ]
-    },
-    {
-        "name": "alzarsi",
-        "trans": [
-            "起床"
-        ]
-    },
-    {
-        "name": "lavarsi",
-        "trans": [
-            "洗"
-        ]
-    },
-    {
-        "name": "vestirsi",
-        "trans": [
-            "穿衣服"
-        ]
-    },
-    {
-        "name": "camminare",
-        "trans": [
-            "走"
-        ]
-    },
-    {
-        "name": "guidare",
-        "trans": [
-            "开车"
-        ]
-    },
-    {
-        "name": "volare",
-        "trans": [
-            "飞"
-        ]
-    },
-    {
-        "name": "sorridere",
-        "trans": [
-            "微笑"
-        ]
-    },
-    {
-        "name": "amare",
-        "trans": [
-            "爱"
-        ]
-    },
-    {
-        "name": "preferire",
-        "trans": [
-            "更喜欢"
-        ]
-    },
-    {
-        "name": "odiare",
-        "trans": [
-            "讨厌"
-        ]
-    },
-    {
-        "name": "cominciare",
-        "trans": [
-            "开始"
-        ]
-    },
-    {
-        "name": "iniziare",
-        "trans": [
-            "开始"
-        ]
-    },
-    {
-        "name": "finire",
-        "trans": [
-            "结束"
-        ]
-    },
-    {
-        "name": "continuare",
-        "trans": [
-            "继续"
-        ]
-    },
-    {
-        "name": "cambiare",
-        "trans": [
-            "改变"
-        ]
-    },
-    {
-        "name": "provare",
-        "trans": [
-            "尝试；试穿"
-        ]
-    },
-    {
-        "name": "riuscire",
-        "trans": [
-            "成功"
-        ]
-    },
-    {
-        "name": "decidere",
-        "trans": [
-            "决定"
-        ]
-    },
-    {
-        "name": "scegliere",
-        "trans": [
-            "选择"
-        ]
-    },
-    {
-        "name": "organizzare",
-        "trans": [
-            "组织"
-        ]
-    },
-    {
-        "name": "pulire",
-        "trans": [
-            "打扫"
-        ]
-    },
-    {
-        "name": "lavare",
-        "trans": [
-            "洗"
-        ]
-    },
-    {
-        "name": "costruire",
-        "trans": [
-            "建造"
-        ]
-    },
-    {
-        "name": "riparare",
-        "trans": [
-            "修理"
-        ]
-    },
-    {
-        "name": "controllare",
-        "trans": [
-            "检查"
-        ]
-    },
-    {
-        "name": "spiegare",
-        "trans": [
-            "解释"
-        ]
-    },
-    {
-        "name": "tradurre",
-        "trans": [
-            "翻译"
-        ]
-    },
-    {
-        "name": "presentarsi",
-        "trans": [
-            "自我介绍"
-        ]
-    },
-    {
-        "name": "sposarsi",
-        "trans": [
-            "结婚"
-        ]
-    },
-    {
-        "name": "riposarsi",
-        "trans": [
-            "休息"
-        ]
-    },
-    {
-        "name": "arrabbiarsi",
-        "trans": [
-            "生气"
-        ]
-    },
-    {
-        "name": "preoccuparsi",
-        "trans": [
-            "担心"
-        ]
-    },
-    {
-        "name": "sentirsi",
-        "trans": [
-            "感觉"
-        ]
-    },
-    {
-        "name": "grande",
-        "trans": [
-            "大的"
-        ]
-    },
-    {
-        "name": "piccolo",
-        "trans": [
-            "小的"
-        ]
-    },
-    {
-        "name": "anziano",
-        "trans": [
-            "年长的"
-        ]
-    },
-    {
-        "name": "lungo",
-        "trans": [
-            "长的"
-        ]
-    },
-    {
-        "name": "corto",
-        "trans": [
-            "短的"
-        ]
-    },
-    {
-        "name": "largo",
-        "trans": [
-            "宽的"
-        ]
-    },
-    {
-        "name": "stretto",
-        "trans": [
-            "窄的"
-        ]
-    },
-    {
-        "name": "pesante",
-        "trans": [
-            "重的"
-        ]
-    },
-    {
-        "name": "leggero",
-        "trans": [
-            "轻的"
-        ]
-    },
-    {
-        "name": "veloce",
-        "trans": [
-            "快的"
-        ]
-    },
-    {
-        "name": "lento",
-        "trans": [
-            "慢的"
-        ]
-    },
-    {
-        "name": "facile",
-        "trans": [
-            "容易的"
-        ]
-    },
-    {
-        "name": "difficile",
-        "trans": [
-            "困难的"
-        ]
-    },
-    {
-        "name": "possibile",
-        "trans": [
-            "可能的"
-        ]
-    },
-    {
-        "name": "impossibile",
-        "trans": [
-            "不可能的"
-        ]
-    },
-    {
-        "name": "necessario",
-        "trans": [
-            "必要的"
-        ]
-    },
-    {
-        "name": "pronto",
-        "trans": [
-            "准备好的"
-        ]
-    },
-    {
-        "name": "aperto",
-        "trans": [
-            "开着的"
-        ]
-    },
-    {
-        "name": "chiuso",
-        "trans": [
-            "关着的"
-        ]
-    },
-    {
-        "name": "pieno",
-        "trans": [
-            "满的"
-        ]
-    },
-    {
-        "name": "vuoto",
-        "trans": [
-            "空的"
-        ]
-    },
-    {
-        "name": "pulito",
-        "trans": [
-            "干净的"
-        ]
-    },
-    {
-        "name": "sporco",
-        "trans": [
-            "脏的"
-        ]
-    },
-    {
-        "name": "ricco",
-        "trans": [
-            "富有的"
-        ]
-    },
-    {
-        "name": "povero",
-        "trans": [
-            "贫穷的"
-        ]
-    },
-    {
-        "name": "giusto",
-        "trans": [
-            "正确的"
-        ]
-    },
-    {
-        "name": "sbagliato",
-        "trans": [
-            "错误的"
-        ]
-    },
-    {
-        "name": "vero",
-        "trans": [
-            "真的"
-        ]
-    },
-    {
-        "name": "falso",
-        "trans": [
-            "假的"
-        ]
-    },
-    {
-        "name": "stesso",
-        "trans": [
-            "同样的"
-        ]
-    },
-    {
-        "name": "altro",
-        "trans": [
-            "别的"
-        ]
-    },
-    {
-        "name": "prossimo",
-        "trans": [
-            "下一个"
-        ]
-    },
-    {
-        "name": "sinistro",
-        "trans": [
-            "左边的"
-        ]
-    },
-    {
-        "name": "destro",
-        "trans": [
-            "右边的"
-        ]
-    },
-    {
-        "name": "pubblico",
-        "trans": [
-            "公共的"
-        ]
-    },
-    {
-        "name": "privato",
-        "trans": [
-            "私人的"
-        ]
-    },
-    {
-        "name": "nazionale",
-        "trans": [
-            "国家的"
-        ]
-    },
-    {
-        "name": "internazionale",
-        "trans": [
-            "国际的"
-        ]
-    },
-    {
-        "name": "straniero",
-        "trans": [
-            "外国的"
-        ]
-    },
-    {
-        "name": "tanto",
-        "trans": [
-            "很多"
-        ]
-    },
-    {
-        "name": "troppo",
-        "trans": [
-            "太"
-        ]
-    },
-    {
-        "name": "abbastanza",
-        "trans": [
-            "足够"
-        ]
-    },
-    {
-        "name": "quasi",
-        "trans": [
-            "几乎"
-        ]
-    },
-    {
-        "name": "ancora",
-        "trans": [
-            "还；仍"
-        ]
-    },
-    {
-        "name": "già",
-        "trans": [
-            "已经"
-        ]
-    },
-    {
-        "name": "appena",
-        "trans": [
-            "刚刚"
-        ]
-    },
-    {
-        "name": "subito",
-        "trans": [
-            "马上"
-        ]
-    },
-    {
-        "name": "presto",
-        "trans": [
-            "早；很快"
-        ]
-    },
-    {
-        "name": "tardi",
-        "trans": [
-            "晚"
-        ]
-    },
-    {
-        "name": "insieme",
-        "trans": [
-            "一起"
-        ]
-    },
-    {
-        "name": "solo",
-        "trans": [
-            "独自；仅仅"
-        ]
-    },
-    {
-        "name": "proprio",
-        "trans": [
-            "真正；正好"
-        ]
-    },
-    {
-        "name": "davvero",
-        "trans": [
-            "真的"
-        ]
-    },
-    {
-        "name": "finalmente",
-        "trans": [
-            "终于"
-        ]
-    },
-    {
-        "name": "allora",
-        "trans": [
-            "那么；当时"
-        ]
-    },
-    {
-        "name": "quindi",
-        "trans": [
-            "所以"
-        ]
-    },
-    {
-        "name": "però",
-        "trans": [
-            "可是"
-        ]
-    },
-    {
-        "name": "invece",
-        "trans": [
-            "反而"
-        ]
-    },
-    {
-        "name": "infatti",
-        "trans": [
-            "其实；的确"
-        ]
-    },
-    {
-        "name": "comunque",
-        "trans": [
-            "总之"
-        ]
-    },
-    {
-        "name": "in",
-        "trans": [
-            "在……里"
-        ]
-    },
-    {
-        "name": "a",
-        "trans": [
-            "在；向"
-        ]
-    },
-    {
-        "name": "di",
-        "trans": [
-            "的；从"
-        ]
-    },
-    {
-        "name": "da",
-        "trans": [
-            "从；被"
-        ]
-    },
-    {
-        "name": "con",
-        "trans": [
-            "和；用"
-        ]
-    },
-    {
-        "name": "su",
-        "trans": [
-            "在……上"
-        ]
-    },
-    {
-        "name": "per",
-        "trans": [
-            "为了；经过"
-        ]
-    },
-    {
-        "name": "tra",
-        "trans": [
-            "在……之间"
-        ]
-    },
-    {
-        "name": "fra",
-        "trans": [
-            "在……之间"
-        ]
-    },
-    {
-        "name": "senza",
-        "trans": [
-            "没有"
-        ]
-    },
-    {
-        "name": "contro",
-        "trans": [
-            "反对"
-        ]
-    },
-    {
-        "name": "dopo",
-        "trans": [
-            "在……之后"
-        ]
-    },
-    {
-        "name": "prima",
-        "trans": [
-            "在……之前"
-        ]
-    },
-    {
-        "name": "durante",
-        "trans": [
-            "在……期间"
-        ]
-    },
-    {
-        "name": "verso",
-        "trans": [
-            "朝向"
-        ]
-    },
-    {
-        "name": "sopra",
-        "trans": [
-            "在上面"
-        ]
-    },
-    {
-        "name": "sotto",
-        "trans": [
-            "在下面"
-        ]
-    },
-    {
-        "name": "davanti",
-        "trans": [
-            "在前面"
-        ]
-    },
-    {
-        "name": "dietro",
-        "trans": [
-            "在后面"
-        ]
-    },
-    {
-        "name": "dentro",
-        "trans": [
-            "在里面"
-        ]
-    },
-    {
-        "name": "fuori",
-        "trans": [
-            "在外面"
-        ]
-    },
-    {
-        "name": "accanto",
-        "trans": [
-            "在旁边"
-        ]
-    },
-    {
-        "name": "intorno",
-        "trans": [
-            "在周围"
-        ]
-    },
-    {
-        "name": "corpo",
-        "trans": [
-            "身体"
-        ]
-    },
-    {
-        "name": "testa",
-        "trans": [
-            "头"
-        ]
-    },
-    {
-        "name": "faccia",
-        "trans": [
-            "脸"
-        ]
-    },
-    {
-        "name": "occhio",
-        "trans": [
-            "眼睛"
-        ]
-    },
-    {
-        "name": "orecchio",
-        "trans": [
-            "耳朵"
-        ]
-    },
-    {
-        "name": "naso",
-        "trans": [
-            "鼻子"
-        ]
-    },
-    {
-        "name": "bocca",
-        "trans": [
-            "嘴"
-        ]
-    },
-    {
-        "name": "dente",
-        "trans": [
-            "牙齿"
-        ]
-    },
-    {
-        "name": "capelli",
-        "trans": [
-            "头发"
-        ]
-    },
-    {
-        "name": "mano",
-        "trans": [
-            "手"
-        ]
-    },
-    {
-        "name": "braccio",
-        "trans": [
-            "胳膊"
-        ]
-    },
-    {
-        "name": "gamba",
-        "trans": [
-            "腿"
-        ]
-    },
-    {
-        "name": "piede",
-        "trans": [
-            "脚"
-        ]
-    },
-    {
-        "name": "cuore",
-        "trans": [
-            "心"
-        ]
-    },
-    {
-        "name": "schiena",
-        "trans": [
-            "背"
-        ]
-    },
-    {
-        "name": "cucina",
-        "trans": [
-            "厨房"
-        ]
-    },
-    {
-        "name": "bagno",
-        "trans": [
-            "卫生间"
-        ]
-    },
-    {
-        "name": "camera da letto",
-        "trans": [
-            "卧室"
-        ]
-    },
-    {
-        "name": "soggiorno",
-        "trans": [
-            "客厅"
-        ]
-    },
-    {
-        "name": "balcone",
-        "trans": [
-            "阳台"
-        ]
-    },
-    {
-        "name": "giardino",
-        "trans": [
-            "花园"
-        ]
-    },
-    {
-        "name": "porta",
-        "trans": [
-            "门"
-        ]
-    },
-    {
-        "name": "finestra",
-        "trans": [
-            "窗户"
-        ]
-    },
-    {
-        "name": "muro",
-        "trans": [
-            "墙"
-        ]
-    },
-    {
-        "name": "pavimento",
-        "trans": [
-            "地板"
-        ]
-    },
-    {
-        "name": "tetto",
-        "trans": [
-            "屋顶"
-        ]
-    },
-    {
-        "name": "chiave",
-        "trans": [
-            "钥匙"
-        ]
-    },
-    {
-        "name": "tavolo",
-        "trans": [
-            "桌子"
-        ]
-    },
-    {
-        "name": "sedia",
-        "trans": [
-            "椅子"
-        ]
-    },
-    {
-        "name": "letto",
-        "trans": [
-            "床"
-        ]
-    },
-    {
-        "name": "armadio",
-        "trans": [
-            "衣柜"
-        ]
-    },
-    {
-        "name": "specchio",
-        "trans": [
-            "镜子"
-        ]
-    },
-    {
-        "name": "lampada",
-        "trans": [
-            "灯"
-        ]
-    },
-    {
-        "name": "frigorifero",
-        "trans": [
-            "冰箱"
-        ]
-    },
-    {
-        "name": "forno",
-        "trans": [
-            "烤箱"
-        ]
-    },
-    {
-        "name": "lavatrice",
-        "trans": [
-            "洗衣机"
-        ]
-    },
-    {
-        "name": "classe",
-        "trans": [
-            "班级"
-        ]
-    },
-    {
-        "name": "lezione",
-        "trans": [
-            "课"
-        ]
-    },
-    {
-        "name": "esame",
-        "trans": [
-            "考试"
-        ]
-    },
-    {
-        "name": "compito",
-        "trans": [
-            "作业"
-        ]
-    },
-    {
-        "name": "penna",
-        "trans": [
-            "笔"
-        ]
-    },
-    {
-        "name": "matita",
-        "trans": [
-            "铅笔"
-        ]
-    },
-    {
-        "name": "quaderno",
-        "trans": [
-            "笔记本"
-        ]
-    },
-    {
-        "name": "dizionario",
-        "trans": [
-            "词典"
-        ]
-    },
-    {
-        "name": "lingua",
-        "trans": [
-            "语言"
-        ]
-    },
-    {
-        "name": "grammatica",
-        "trans": [
-            "语法"
-        ]
-    },
-    {
-        "name": "parola",
-        "trans": [
-            "单词"
-        ]
-    },
-    {
-        "name": "frase",
-        "trans": [
-            "句子"
-        ]
-    },
-    {
-        "name": "domanda",
-        "trans": [
-            "问题"
-        ]
-    },
-    {
-        "name": "risposta",
-        "trans": [
-            "答案"
-        ]
-    },
-    {
-        "name": "errore",
-        "trans": [
-            "错误"
-        ]
-    },
-    {
-        "name": "esempio",
-        "trans": [
-            "例子"
-        ]
-    },
-    {
-        "name": "problema",
-        "trans": [
-            "问题"
-        ]
-    },
-    {
-        "name": "soluzione",
-        "trans": [
-            "解决办法"
-        ]
-    },
-    {
-        "name": "idea",
-        "trans": [
-            "主意"
-        ]
-    },
-    {
-        "name": "opinione",
-        "trans": [
-            "意见"
-        ]
-    },
-    {
-        "name": "verità",
-        "trans": [
-            "真相"
-        ]
-    },
-    {
-        "name": "bugia",
-        "trans": [
-            "谎言"
-        ]
-    },
-    {
-        "name": "vita",
-        "trans": [
-            "生活"
-        ]
-    },
-    {
-        "name": "morte",
-        "trans": [
-            "死亡"
-        ]
-    },
-    {
-        "name": "futuro",
-        "trans": [
-            "未来"
-        ]
-    },
-    {
-        "name": "presente",
-        "trans": [
-            "现在"
-        ]
-    },
-    {
-        "name": "possibilità",
-        "trans": [
-            "可能性"
-        ]
-    },
-    {
-        "name": "occasione",
-        "trans": [
-            "机会"
-        ]
-    },
-    {
-        "name": "successo",
-        "trans": [
-            "成功"
-        ]
-    },
-    {
-        "name": "fallimento",
-        "trans": [
-            "失败"
-        ]
-    },
-    {
-        "name": "pace",
-        "trans": [
-            "和平"
-        ]
-    },
-    {
-        "name": "guerra",
-        "trans": [
-            "战争"
-        ]
-    },
-    {
-        "name": "cultura",
-        "trans": [
-            "文化"
-        ]
-    },
-    {
-        "name": "tradizione",
-        "trans": [
-            "传统"
-        ]
-    },
-    {
-        "name": "arte",
-        "trans": [
-            "艺术"
-        ]
-    },
-    {
-        "name": "natura",
-        "trans": [
-            "自然"
-        ]
-    },
-    {
-        "name": "mondo",
-        "trans": [
-            "世界"
-        ]
-    },
-    {
-        "name": "terra",
-        "trans": [
-            "土地；地球"
-        ]
-    },
-    {
-        "name": "cielo",
-        "trans": [
-            "天空"
-        ]
-    },
-    {
-        "name": "fuoco",
-        "trans": [
-            "火"
-        ]
-    },
-    {
-        "name": "aria",
-        "trans": [
-            "空气"
-        ]
-    },
-    {
-        "name": "animale",
-        "trans": [
-            "动物"
-        ]
-    },
-    {
-        "name": "cane",
-        "trans": [
-            "狗"
-        ]
-    },
-    {
-        "name": "gatto",
-        "trans": [
-            "猫"
-        ]
-    },
-    {
-        "name": "uccello",
-        "trans": [
-            "鸟"
-        ]
-    },
-    {
-        "name": "cavallo",
-        "trans": [
-            "马"
-        ]
-    },
-    {
-        "name": "come ti chiami",
-        "trans": [
-            "你叫什么名字"
-        ]
-    },
-    {
-        "name": "mi chiamo",
-        "trans": [
-            "我叫"
-        ]
-    },
-    {
-        "name": "di dove sei",
-        "trans": [
-            "你是哪里人"
-        ]
-    },
-    {
-        "name": "sono di",
-        "trans": [
-            "我来自"
-        ]
-    },
-    {
-        "name": "quanti anni hai",
-        "trans": [
-            "你多大了"
-        ]
-    },
-    {
-        "name": "ho ... anni",
-        "trans": [
-            "我……岁"
-        ]
-    },
-    {
-        "name": "che lavoro fai",
-        "trans": [
-            "你做什么工作"
-        ]
-    },
-    {
-        "name": "non capisco",
-        "trans": [
-            "我不明白"
-        ]
-    },
-    {
-        "name": "non so",
-        "trans": [
-            "我不知道"
-        ]
-    },
-    {
-        "name": "può ripetere",
-        "trans": [
-            "请再说一遍"
-        ]
-    },
-    {
-        "name": "più lentamente",
-        "trans": [
-            "请慢一点"
-        ]
-    },
-    {
-        "name": "parla italiano",
-        "trans": [
-            "你会说意大利语吗"
-        ]
-    },
-    {
-        "name": "parlo un po'",
-        "trans": [
-            "我会一点"
-        ]
-    },
-    {
-        "name": "non parlo italiano",
-        "trans": [
-            "我不会说意大利语"
-        ]
-    },
-    {
-        "name": "come si scrive",
-        "trans": [
-            "怎么写"
-        ]
-    },
-    {
-        "name": "come si pronuncia",
-        "trans": [
-            "怎么读"
-        ]
-    },
-    {
-        "name": "dov'è il bagno",
-        "trans": [
-            "厕所在哪里"
-        ]
-    },
-    {
-        "name": "posso pagare con la carta",
-        "trans": [
-            "可以刷卡吗"
-        ]
-    },
-    {
-        "name": "un tavolo per due",
-        "trans": [
-            "两人桌"
-        ]
-    },
-    {
-        "name": "l'acqua naturale",
-        "trans": [
-            "无气水"
-        ]
-    },
-    {
-        "name": "l'acqua frizzante",
-        "trans": [
-            "气泡水"
-        ]
-    },
-    {
-        "name": "un caffè per favore",
-        "trans": [
-            "请来一杯咖啡"
-        ]
-    },
-    {
-        "name": "dove abiti",
-        "trans": [
-            "你住在哪里"
-        ]
-    },
-    {
-        "name": "abito a",
-        "trans": [
-            "我住在"
-        ]
-    },
-    {
-        "name": "che giorno è oggi",
-        "trans": [
-            "今天星期几"
-        ]
-    },
-    {
-        "name": "fa bel tempo",
-        "trans": [
-            "天气很好"
-        ]
-    },
-    {
-        "name": "piove",
-        "trans": [
-            "下雨了"
-        ]
-    },
-    {
-        "name": "c'è il sole",
-        "trans": [
-            "出太阳了"
-        ]
-    },
-    {
-        "name": "mi dispiace",
-        "trans": [
-            "抱歉"
-        ]
-    },
-    {
-        "name": "non c'è di che",
-        "trans": [
-            "不客气"
-        ]
-    },
-    {
-        "name": "a presto",
-        "trans": [
-            "回头见"
-        ]
-    },
-    {
-        "name": "a domani",
-        "trans": [
-            "明天见"
-        ]
-    },
-    {
-        "name": "buona giornata",
-        "trans": [
-            "祝你今天愉快"
-        ]
-    },
-    {
-        "name": "buona serata",
-        "trans": [
-            "祝你晚上愉快"
-        ]
-    },
-    {
-        "name": "in bocca al lupo",
-        "trans": [
-            "祝你好运"
-        ]
-    },
-    {
-        "name": "crepi il lupo",
-        "trans": [
-            "谢谢（回应祝好运）"
-        ]
-    },
-    {
-        "name": "tutto a posto",
-        "trans": [
-            "一切都好"
-        ]
-    },
-    {
-        "name": "non fa niente",
-        "trans": [
-            "没关系"
-        ]
-    },
-    {
-        "name": "chiamo un taxi",
-        "trans": [
-            "我叫一辆出租车"
-        ]
-    },
-    {
-        "name": "vorrei prenotare",
-        "trans": [
-            "我想预订"
-        ]
-    },
-    {
-        "name": "per stanotte",
-        "trans": [
-            "今晚"
-        ]
-    },
-    {
-        "name": "una camera doppia",
-        "trans": [
-            "双人间"
-        ]
-    },
-    {
-        "name": "colazione inclusa",
-        "trans": [
-            "含早餐"
-        ]
-    },
-    {
-        "name": "a che ora parte",
-        "trans": [
-            "几点出发"
-        ]
-    },
-    {
-        "name": "binario tre",
-        "trans": [
-            "三号站台"
-        ]
-    },
-    {
-        "name": "devo scendere",
-        "trans": [
-            "我要下车"
-        ]
-    },
-    {
-        "name": "è questo il treno per Roma",
-        "trans": [
-            "这是去罗马的火车吗"
-        ]
-    }
+  {
+    "name": "ciao",
+    "trans": [
+      "你好；再见（非正式）"
+    ]
+  },
+  {
+    "name": "buongiorno",
+    "trans": [
+      "早上好；您好"
+    ]
+  },
+  {
+    "name": "buonasera",
+    "trans": [
+      "晚上好"
+    ]
+  },
+  {
+    "name": "buonanotte",
+    "trans": [
+      "晚安"
+    ]
+  },
+  {
+    "name": "salve",
+    "trans": [
+      "您好（中性）"
+    ]
+  },
+  {
+    "name": "arrivederci",
+    "trans": [
+      "再见"
+    ]
+  },
+  {
+    "name": "grazie",
+    "trans": [
+      "谢谢"
+    ]
+  },
+  {
+    "name": "prego",
+    "trans": [
+      "不客气；请"
+    ]
+  },
+  {
+    "name": "per favore",
+    "trans": [
+      "请"
+    ]
+  },
+  {
+    "name": "scusa",
+    "trans": [
+      "对不起（非正式）"
+    ]
+  },
+  {
+    "name": "scusi",
+    "trans": [
+      "对不起（正式）"
+    ]
+  },
+  {
+    "name": "piacere",
+    "trans": [
+      "幸会；高兴"
+    ]
+  },
+  {
+    "name": "sì",
+    "trans": [
+      "是"
+    ]
+  },
+  {
+    "name": "no",
+    "trans": [
+      "不"
+    ]
+  },
+  {
+    "name": "bene",
+    "trans": [
+      "好"
+    ]
+  },
+  {
+    "name": "male",
+    "trans": [
+      "不好"
+    ]
+  },
+  {
+    "name": "io",
+    "trans": [
+      "我"
+    ]
+  },
+  {
+    "name": "tu",
+    "trans": [
+      "你"
+    ]
+  },
+  {
+    "name": "lui",
+    "trans": [
+      "他"
+    ]
+  },
+  {
+    "name": "lei",
+    "trans": [
+      "她；您"
+    ]
+  },
+  {
+    "name": "noi",
+    "trans": [
+      "我们"
+    ]
+  },
+  {
+    "name": "voi",
+    "trans": [
+      "你们"
+    ]
+  },
+  {
+    "name": "loro",
+    "trans": [
+      "他们"
+    ]
+  },
+  {
+    "name": "uomo",
+    "trans": [
+      "男人"
+    ]
+  },
+  {
+    "name": "donna",
+    "trans": [
+      "女人"
+    ]
+  },
+  {
+    "name": "ragazzo",
+    "trans": [
+      "男孩；小伙子"
+    ]
+  },
+  {
+    "name": "ragazza",
+    "trans": [
+      "女孩；姑娘"
+    ]
+  },
+  {
+    "name": "signore",
+    "trans": [
+      "先生"
+    ]
+  },
+  {
+    "name": "signora",
+    "trans": [
+      "女士"
+    ]
+  },
+  {
+    "name": "signorina",
+    "trans": [
+      "小姐"
+    ]
+  },
+  {
+    "name": "nome",
+    "trans": [
+      "名字"
+    ]
+  },
+  {
+    "name": "cognome",
+    "trans": [
+      "姓"
+    ]
+  },
+  {
+    "name": "italiano",
+    "trans": [
+      "意大利的；意大利语；意大利人"
+    ]
+  },
+  {
+    "name": "italiana",
+    "trans": [
+      "意大利的（阴）；意大利女人"
+    ]
+  },
+  {
+    "name": "cinese",
+    "trans": [
+      "中国的；汉语；中国人"
+    ]
+  },
+  {
+    "name": "essere",
+    "trans": [
+      "是"
+    ]
+  },
+  {
+    "name": "avere",
+    "trans": [
+      "有"
+    ]
+  },
+  {
+    "name": "chiamarsi",
+    "trans": [
+      "名叫"
+    ]
+  },
+  {
+    "name": "come",
+    "trans": [
+      "怎样；像"
+    ]
+  },
+  {
+    "name": "chi",
+    "trans": [
+      "谁"
+    ]
+  },
+  {
+    "name": "che",
+    "trans": [
+      "什么；那个"
+    ]
+  },
+  {
+    "name": "questo",
+    "trans": [
+      "这个（阳）"
+    ]
+  },
+  {
+    "name": "questa",
+    "trans": [
+      "这个（阴）"
+    ]
+  },
+  {
+    "name": "quello",
+    "trans": [
+      "那个（阳）"
+    ]
+  },
+  {
+    "name": "quella",
+    "trans": [
+      "那个（阴）"
+    ]
+  },
+  {
+    "name": "un",
+    "trans": [
+      "一个（阳）"
+    ]
+  },
+  {
+    "name": "uno",
+    "trans": [
+      "一；一个（阳）"
+    ]
+  },
+  {
+    "name": "una",
+    "trans": [
+      "一个（阴）"
+    ]
+  },
+  {
+    "name": "il",
+    "trans": [
+      "定冠词（阳单）"
+    ]
+  },
+  {
+    "name": "lo",
+    "trans": [
+      "定冠词（阳单，特殊）"
+    ]
+  },
+  {
+    "name": "la",
+    "trans": [
+      "定冠词（阴单）"
+    ]
+  },
+  {
+    "name": "l'",
+    "trans": [
+      "定冠词（元音前）"
+    ]
+  },
+  {
+    "name": "i",
+    "trans": [
+      "定冠词（阳复）"
+    ]
+  },
+  {
+    "name": "gli",
+    "trans": [
+      "定冠词（阳复，特殊）"
+    ]
+  },
+  {
+    "name": "le",
+    "trans": [
+      "定冠词（阴复）"
+    ]
+  },
+  {
+    "name": "e",
+    "trans": [
+      "和"
+    ]
+  },
+  {
+    "name": "o",
+    "trans": [
+      "或者"
+    ]
+  },
+  {
+    "name": "ma",
+    "trans": [
+      "但是"
+    ]
+  },
+  {
+    "name": "anche",
+    "trans": [
+      "也"
+    ]
+  },
+  {
+    "name": "molto",
+    "trans": [
+      "很；很多"
+    ]
+  },
+  {
+    "name": "poco",
+    "trans": [
+      "少；一点儿"
+    ]
+  },
+  {
+    "name": "lavoro",
+    "trans": [
+      "工作"
+    ]
+  },
+  {
+    "name": "lavorare",
+    "trans": [
+      "工作（动词）"
+    ]
+  },
+  {
+    "name": "ufficio",
+    "trans": [
+      "办公室"
+    ]
+  },
+  {
+    "name": "azienda",
+    "trans": [
+      "公司"
+    ]
+  },
+  {
+    "name": "studente",
+    "trans": [
+      "学生（阳）"
+    ]
+  },
+  {
+    "name": "studentessa",
+    "trans": [
+      "学生（阴）"
+    ]
+  },
+  {
+    "name": "insegnante",
+    "trans": [
+      "老师"
+    ]
+  },
+  {
+    "name": "professore",
+    "trans": [
+      "教授（阳）"
+    ]
+  },
+  {
+    "name": "professoressa",
+    "trans": [
+      "教授（阴）"
+    ]
+  },
+  {
+    "name": "dottore",
+    "trans": [
+      "医生（阳）"
+    ]
+  },
+  {
+    "name": "dottoressa",
+    "trans": [
+      "医生（阴）"
+    ]
+  },
+  {
+    "name": "ingegnere",
+    "trans": [
+      "工程师"
+    ]
+  },
+  {
+    "name": "avvocato",
+    "trans": [
+      "律师"
+    ]
+  },
+  {
+    "name": "giornalista",
+    "trans": [
+      "记者"
+    ]
+  },
+  {
+    "name": "impiegato",
+    "trans": [
+      "职员（阳）"
+    ]
+  },
+  {
+    "name": "impiegata",
+    "trans": [
+      "职员（阴）"
+    ]
+  },
+  {
+    "name": "cameriere",
+    "trans": [
+      "服务员（阳）"
+    ]
+  },
+  {
+    "name": "cameriera",
+    "trans": [
+      "服务员（阴）"
+    ]
+  },
+  {
+    "name": "cuoco",
+    "trans": [
+      "厨师（阳）"
+    ]
+  },
+  {
+    "name": "cuoca",
+    "trans": [
+      "厨师（阴）"
+    ]
+  },
+  {
+    "name": "commesso",
+    "trans": [
+      "店员（阳）"
+    ]
+  },
+  {
+    "name": "commessa",
+    "trans": [
+      "店员（阴）"
+    ]
+  },
+  {
+    "name": "poliziotto",
+    "trans": [
+      "警察"
+    ]
+  },
+  {
+    "name": "autista",
+    "trans": [
+      "司机"
+    ]
+  },
+  {
+    "name": "artista",
+    "trans": [
+      "艺术家"
+    ]
+  },
+  {
+    "name": "musicista",
+    "trans": [
+      "音乐家"
+    ]
+  },
+  {
+    "name": "disoccupato",
+    "trans": [
+      "失业的"
+    ]
+  },
+  {
+    "name": "pensionato",
+    "trans": [
+      "退休者"
+    ]
+  },
+  {
+    "name": "paese",
+    "trans": [
+      "国家；村子"
+    ]
+  },
+  {
+    "name": "città",
+    "trans": [
+      "城市"
+    ]
+  },
+  {
+    "name": "nazionalità",
+    "trans": [
+      "国籍"
+    ]
+  },
+  {
+    "name": "Italia",
+    "trans": [
+      "意大利"
+    ]
+  },
+  {
+    "name": "Cina",
+    "trans": [
+      "中国"
+    ]
+  },
+  {
+    "name": "Francia",
+    "trans": [
+      "法国"
+    ]
+  },
+  {
+    "name": "Germania",
+    "trans": [
+      "德国"
+    ]
+  },
+  {
+    "name": "Spagna",
+    "trans": [
+      "西班牙"
+    ]
+  },
+  {
+    "name": "Inghilterra",
+    "trans": [
+      "英格兰"
+    ]
+  },
+  {
+    "name": "America",
+    "trans": [
+      "美国；美洲"
+    ]
+  },
+  {
+    "name": "Giappone",
+    "trans": [
+      "日本"
+    ]
+  },
+  {
+    "name": "Russia",
+    "trans": [
+      "俄罗斯"
+    ]
+  },
+  {
+    "name": "Roma",
+    "trans": [
+      "罗马"
+    ]
+  },
+  {
+    "name": "Milano",
+    "trans": [
+      "米兰"
+    ]
+  },
+  {
+    "name": "Napoli",
+    "trans": [
+      "那不勒斯"
+    ]
+  },
+  {
+    "name": "Firenze",
+    "trans": [
+      "佛罗伦萨"
+    ]
+  },
+  {
+    "name": "Venezia",
+    "trans": [
+      "威尼斯"
+    ]
+  },
+  {
+    "name": "Torino",
+    "trans": [
+      "都灵"
+    ]
+  },
+  {
+    "name": "Bologna",
+    "trans": [
+      "博洛尼亚"
+    ]
+  },
+  {
+    "name": "Pechino",
+    "trans": [
+      "北京"
+    ]
+  },
+  {
+    "name": "Shanghai",
+    "trans": [
+      "上海"
+    ]
+  },
+  {
+    "name": "dove",
+    "trans": [
+      "在哪里"
+    ]
+  },
+  {
+    "name": "di dove",
+    "trans": [
+      "从哪里"
+    ]
+  },
+  {
+    "name": "abitare",
+    "trans": [
+      "居住"
+    ]
+  },
+  {
+    "name": "vivere",
+    "trans": [
+      "生活"
+    ]
+  },
+  {
+    "name": "venire",
+    "trans": [
+      "来"
+    ]
+  },
+  {
+    "name": "andare",
+    "trans": [
+      "去"
+    ]
+  },
+  {
+    "name": "nuovo",
+    "trans": [
+      "新的"
+    ]
+  },
+  {
+    "name": "inizio",
+    "trans": [
+      "开始"
+    ]
+  },
+  {
+    "name": "giorno",
+    "trans": [
+      "天；白天"
+    ]
+  },
+  {
+    "name": "importante",
+    "trans": [
+      "重要的"
+    ]
+  },
+  {
+    "name": "contento",
+    "trans": [
+      "高兴的"
+    ]
+  },
+  {
+    "name": "felice",
+    "trans": [
+      "幸福的"
+    ]
+  },
+  {
+    "name": "triste",
+    "trans": [
+      "悲伤的"
+    ]
+  },
+  {
+    "name": "stanco",
+    "trans": [
+      "疲倦的"
+    ]
+  },
+  {
+    "name": "occupato",
+    "trans": [
+      "忙碌的"
+    ]
+  },
+  {
+    "name": "libero",
+    "trans": [
+      "空闲的；自由的"
+    ]
+  },
+  {
+    "name": "bello",
+    "trans": [
+      "漂亮的"
+    ]
+  },
+  {
+    "name": "brutto",
+    "trans": [
+      "难看的"
+    ]
+  },
+  {
+    "name": "alto",
+    "trans": [
+      "高的"
+    ]
+  },
+  {
+    "name": "basso",
+    "trans": [
+      "矮的；低的"
+    ]
+  },
+  {
+    "name": "giovane",
+    "trans": [
+      "年轻的"
+    ]
+  },
+  {
+    "name": "vecchio",
+    "trans": [
+      "老的；旧的"
+    ]
+  },
+  {
+    "name": "simpatico",
+    "trans": [
+      "可爱的；好相处的"
+    ]
+  },
+  {
+    "name": "antipatico",
+    "trans": [
+      "讨厌的"
+    ]
+  },
+  {
+    "name": "gentile",
+    "trans": [
+      "礼貌的"
+    ]
+  },
+  {
+    "name": "come stai",
+    "trans": [
+      "你好吗（非正式）"
+    ]
+  },
+  {
+    "name": "come sta",
+    "trans": [
+      "您好吗（正式）"
+    ]
+  },
+  {
+    "name": "tutto bene",
+    "trans": [
+      "一切都好"
+    ]
+  },
+  {
+    "name": "così così",
+    "trans": [
+      "一般般"
+    ]
+  },
+  {
+    "name": "tempo libero",
+    "trans": [
+      "业余时间"
+    ]
+  },
+  {
+    "name": "hobby",
+    "trans": [
+      "爱好"
+    ]
+  },
+  {
+    "name": "sport",
+    "trans": [
+      "体育"
+    ]
+  },
+  {
+    "name": "calcio",
+    "trans": [
+      "足球"
+    ]
+  },
+  {
+    "name": "tennis",
+    "trans": [
+      "网球"
+    ]
+  },
+  {
+    "name": "nuoto",
+    "trans": [
+      "游泳"
+    ]
+  },
+  {
+    "name": "pallavolo",
+    "trans": [
+      "排球"
+    ]
+  },
+  {
+    "name": "basket",
+    "trans": [
+      "篮球"
+    ]
+  },
+  {
+    "name": "ciclismo",
+    "trans": [
+      "自行车运动"
+    ]
+  },
+  {
+    "name": "corsa",
+    "trans": [
+      "跑步；比赛"
+    ]
+  },
+  {
+    "name": "palestra",
+    "trans": [
+      "健身房"
+    ]
+  },
+  {
+    "name": "cinema",
+    "trans": [
+      "电影院"
+    ]
+  },
+  {
+    "name": "teatro",
+    "trans": [
+      "剧院"
+    ]
+  },
+  {
+    "name": "musica",
+    "trans": [
+      "音乐"
+    ]
+  },
+  {
+    "name": "concerto",
+    "trans": [
+      "音乐会"
+    ]
+  },
+  {
+    "name": "libro",
+    "trans": [
+      "书"
+    ]
+  },
+  {
+    "name": "giornale",
+    "trans": [
+      "报纸"
+    ]
+  },
+  {
+    "name": "rivista",
+    "trans": [
+      "杂志"
+    ]
+  },
+  {
+    "name": "televisione",
+    "trans": [
+      "电视"
+    ]
+  },
+  {
+    "name": "computer",
+    "trans": [
+      "电脑"
+    ]
+  },
+  {
+    "name": "internet",
+    "trans": [
+      "互联网"
+    ]
+  },
+  {
+    "name": "telefono",
+    "trans": [
+      "电话"
+    ]
+  },
+  {
+    "name": "cellulare",
+    "trans": [
+      "手机"
+    ]
+  },
+  {
+    "name": "fotografia",
+    "trans": [
+      "照片；摄影"
+    ]
+  },
+  {
+    "name": "viaggio",
+    "trans": [
+      "旅行"
+    ]
+  },
+  {
+    "name": "amici",
+    "trans": [
+      "朋友们"
+    ]
+  },
+  {
+    "name": "amico",
+    "trans": [
+      "朋友（阳）"
+    ]
+  },
+  {
+    "name": "amica",
+    "trans": [
+      "朋友（阴）"
+    ]
+  },
+  {
+    "name": "giocare",
+    "trans": [
+      "玩；打球"
+    ]
+  },
+  {
+    "name": "nuotare",
+    "trans": [
+      "游泳（动词）"
+    ]
+  },
+  {
+    "name": "correre",
+    "trans": [
+      "跑"
+    ]
+  },
+  {
+    "name": "ballare",
+    "trans": [
+      "跳舞"
+    ]
+  },
+  {
+    "name": "cantare",
+    "trans": [
+      "唱歌"
+    ]
+  },
+  {
+    "name": "suonare",
+    "trans": [
+      "演奏"
+    ]
+  },
+  {
+    "name": "leggere",
+    "trans": [
+      "读"
+    ]
+  },
+  {
+    "name": "guardare",
+    "trans": [
+      "看"
+    ]
+  },
+  {
+    "name": "ascoltare",
+    "trans": [
+      "听"
+    ]
+  },
+  {
+    "name": "uscire",
+    "trans": [
+      "出去"
+    ]
+  },
+  {
+    "name": "incontrare",
+    "trans": [
+      "遇见"
+    ]
+  },
+  {
+    "name": "restare",
+    "trans": [
+      "留下；待"
+    ]
+  },
+  {
+    "name": "casa",
+    "trans": [
+      "家；房子"
+    ]
+  },
+  {
+    "name": "appartamento",
+    "trans": [
+      "公寓"
+    ]
+  },
+  {
+    "name": "stanza",
+    "trans": [
+      "房间"
+    ]
+  },
+  {
+    "name": "indirizzo",
+    "trans": [
+      "地址"
+    ]
+  },
+  {
+    "name": "via",
+    "trans": [
+      "街道"
+    ]
+  },
+  {
+    "name": "piazza",
+    "trans": [
+      "广场"
+    ]
+  },
+  {
+    "name": "numero",
+    "trans": [
+      "号码；数字"
+    ]
+  },
+  {
+    "name": "lunedì",
+    "trans": [
+      "星期一"
+    ]
+  },
+  {
+    "name": "martedì",
+    "trans": [
+      "星期二"
+    ]
+  },
+  {
+    "name": "mercoledì",
+    "trans": [
+      "星期三"
+    ]
+  },
+  {
+    "name": "giovedì",
+    "trans": [
+      "星期四"
+    ]
+  },
+  {
+    "name": "venerdì",
+    "trans": [
+      "星期五"
+    ]
+  },
+  {
+    "name": "sabato",
+    "trans": [
+      "星期六"
+    ]
+  },
+  {
+    "name": "domenica",
+    "trans": [
+      "星期日"
+    ]
+  },
+  {
+    "name": "weekend",
+    "trans": [
+      "周末"
+    ]
+  },
+  {
+    "name": "oggi",
+    "trans": [
+      "今天"
+    ]
+  },
+  {
+    "name": "ieri",
+    "trans": [
+      "昨天"
+    ]
+  },
+  {
+    "name": "domani",
+    "trans": [
+      "明天"
+    ]
+  },
+  {
+    "name": "adesso",
+    "trans": [
+      "现在"
+    ]
+  },
+  {
+    "name": "sempre",
+    "trans": [
+      "总是"
+    ]
+  },
+  {
+    "name": "mai",
+    "trans": [
+      "从不"
+    ]
+  },
+  {
+    "name": "spesso",
+    "trans": [
+      "经常"
+    ]
+  },
+  {
+    "name": "qualche volta",
+    "trans": [
+      "有时"
+    ]
+  },
+  {
+    "name": "ora",
+    "trans": [
+      "现在；小时"
+    ]
+  },
+  {
+    "name": "che ora è",
+    "trans": [
+      "几点了"
+    ]
+  },
+  {
+    "name": "che ore sono",
+    "trans": [
+      "几点了"
+    ]
+  },
+  {
+    "name": "mezzogiorno",
+    "trans": [
+      "中午"
+    ]
+  },
+  {
+    "name": "mezzanotte",
+    "trans": [
+      "午夜"
+    ]
+  },
+  {
+    "name": "mattina",
+    "trans": [
+      "早上"
+    ]
+  },
+  {
+    "name": "pomeriggio",
+    "trans": [
+      "下午"
+    ]
+  },
+  {
+    "name": "sera",
+    "trans": [
+      "傍晚"
+    ]
+  },
+  {
+    "name": "notte",
+    "trans": [
+      "夜晚"
+    ]
+  },
+  {
+    "name": "minuto",
+    "trans": [
+      "分钟"
+    ]
+  },
+  {
+    "name": "secondo",
+    "trans": [
+      "第二；秒"
+    ]
+  },
+  {
+    "name": "settimana",
+    "trans": [
+      "星期"
+    ]
+  },
+  {
+    "name": "mese",
+    "trans": [
+      "月"
+    ]
+  },
+  {
+    "name": "anno",
+    "trans": [
+      "年"
+    ]
+  },
+  {
+    "name": "compleanno",
+    "trans": [
+      "生日"
+    ]
+  },
+  {
+    "name": "festa",
+    "trans": [
+      "节日；聚会"
+    ]
+  },
+  {
+    "name": "zero",
+    "trans": [
+      "零"
+    ]
+  },
+  {
+    "name": "due",
+    "trans": [
+      "二"
+    ]
+  },
+  {
+    "name": "tre",
+    "trans": [
+      "三"
+    ]
+  },
+  {
+    "name": "quattro",
+    "trans": [
+      "四"
+    ]
+  },
+  {
+    "name": "cinque",
+    "trans": [
+      "五"
+    ]
+  },
+  {
+    "name": "sei",
+    "trans": [
+      "六"
+    ]
+  },
+  {
+    "name": "sette",
+    "trans": [
+      "七"
+    ]
+  },
+  {
+    "name": "otto",
+    "trans": [
+      "八"
+    ]
+  },
+  {
+    "name": "nove",
+    "trans": [
+      "九"
+    ]
+  },
+  {
+    "name": "dieci",
+    "trans": [
+      "十"
+    ]
+  },
+  {
+    "name": "undici",
+    "trans": [
+      "十一"
+    ]
+  },
+  {
+    "name": "dodici",
+    "trans": [
+      "十二"
+    ]
+  },
+  {
+    "name": "tredici",
+    "trans": [
+      "十三"
+    ]
+  },
+  {
+    "name": "quattordici",
+    "trans": [
+      "十四"
+    ]
+  },
+  {
+    "name": "quindici",
+    "trans": [
+      "十五"
+    ]
+  },
+  {
+    "name": "sedici",
+    "trans": [
+      "十六"
+    ]
+  },
+  {
+    "name": "diciassette",
+    "trans": [
+      "十七"
+    ]
+  },
+  {
+    "name": "diciotto",
+    "trans": [
+      "十八"
+    ]
+  },
+  {
+    "name": "diciannove",
+    "trans": [
+      "十九"
+    ]
+  },
+  {
+    "name": "venti",
+    "trans": [
+      "二十"
+    ]
+  },
+  {
+    "name": "trenta",
+    "trans": [
+      "三十"
+    ]
+  },
+  {
+    "name": "quaranta",
+    "trans": [
+      "四十"
+    ]
+  },
+  {
+    "name": "cinquanta",
+    "trans": [
+      "五十"
+    ]
+  },
+  {
+    "name": "sessanta",
+    "trans": [
+      "六十"
+    ]
+  },
+  {
+    "name": "settanta",
+    "trans": [
+      "七十"
+    ]
+  },
+  {
+    "name": "ottanta",
+    "trans": [
+      "八十"
+    ]
+  },
+  {
+    "name": "novanta",
+    "trans": [
+      "九十"
+    ]
+  },
+  {
+    "name": "cento",
+    "trans": [
+      "一百"
+    ]
+  },
+  {
+    "name": "mille",
+    "trans": [
+      "一千"
+    ]
+  },
+  {
+    "name": "milione",
+    "trans": [
+      "一百万"
+    ]
+  },
+  {
+    "name": "primo",
+    "trans": [
+      "第一"
+    ]
+  },
+  {
+    "name": "terzo",
+    "trans": [
+      "第三"
+    ]
+  },
+  {
+    "name": "ultimo",
+    "trans": [
+      "最后的"
+    ]
+  },
+  {
+    "name": "email",
+    "trans": [
+      "电子邮件"
+    ]
+  },
+  {
+    "name": "lettera",
+    "trans": [
+      "信"
+    ]
+  },
+  {
+    "name": "messaggio",
+    "trans": [
+      "消息"
+    ]
+  },
+  {
+    "name": "chiamare",
+    "trans": [
+      "打电话；叫"
+    ]
+  },
+  {
+    "name": "telefonare",
+    "trans": [
+      "打电话"
+    ]
+  },
+  {
+    "name": "scrivere",
+    "trans": [
+      "写"
+    ]
+  },
+  {
+    "name": "mandare",
+    "trans": [
+      "寄；发送"
+    ]
+  },
+  {
+    "name": "ricevere",
+    "trans": [
+      "收到"
+    ]
+  },
+  {
+    "name": "rispondere",
+    "trans": [
+      "回答"
+    ]
+  },
+  {
+    "name": "chiedere",
+    "trans": [
+      "问；请求"
+    ]
+  },
+  {
+    "name": "dire",
+    "trans": [
+      "说"
+    ]
+  },
+  {
+    "name": "parlare",
+    "trans": [
+      "说话"
+    ]
+  },
+  {
+    "name": "capire",
+    "trans": [
+      "明白"
+    ]
+  },
+  {
+    "name": "sapere",
+    "trans": [
+      "知道"
+    ]
+  },
+  {
+    "name": "conoscere",
+    "trans": [
+      "认识"
+    ]
+  },
+  {
+    "name": "pensare",
+    "trans": [
+      "想"
+    ]
+  },
+  {
+    "name": "credere",
+    "trans": [
+      "相信"
+    ]
+  },
+  {
+    "name": "sperare",
+    "trans": [
+      "希望"
+    ]
+  },
+  {
+    "name": "quando",
+    "trans": [
+      "什么时候"
+    ]
+  },
+  {
+    "name": "perché",
+    "trans": [
+      "为什么；因为"
+    ]
+  },
+  {
+    "name": "come mai",
+    "trans": [
+      "怎么会"
+    ]
+  },
+  {
+    "name": "qui",
+    "trans": [
+      "这里"
+    ]
+  },
+  {
+    "name": "qua",
+    "trans": [
+      "这儿"
+    ]
+  },
+  {
+    "name": "lì",
+    "trans": [
+      "那里"
+    ]
+  },
+  {
+    "name": "là",
+    "trans": [
+      "那儿"
+    ]
+  },
+  {
+    "name": "vicino",
+    "trans": [
+      "近"
+    ]
+  },
+  {
+    "name": "lontano",
+    "trans": [
+      "远"
+    ]
+  },
+  {
+    "name": "destra",
+    "trans": [
+      "右"
+    ]
+  },
+  {
+    "name": "sinistra",
+    "trans": [
+      "左"
+    ]
+  },
+  {
+    "name": "dritto",
+    "trans": [
+      "直走"
+    ]
+  },
+  {
+    "name": "di chi",
+    "trans": [
+      "谁的"
+    ]
+  },
+  {
+    "name": "mio",
+    "trans": [
+      "我的（阳）"
+    ]
+  },
+  {
+    "name": "mia",
+    "trans": [
+      "我的（阴）"
+    ]
+  },
+  {
+    "name": "tuo",
+    "trans": [
+      "你的（阳）"
+    ]
+  },
+  {
+    "name": "tua",
+    "trans": [
+      "你的（阴）"
+    ]
+  },
+  {
+    "name": "suo",
+    "trans": [
+      "他/她/您的（阳）"
+    ]
+  },
+  {
+    "name": "sua",
+    "trans": [
+      "他/她/您的（阴）"
+    ]
+  },
+  {
+    "name": "nostro",
+    "trans": [
+      "我们的（阳）"
+    ]
+  },
+  {
+    "name": "vostra",
+    "trans": [
+      "你们的（阴）"
+    ]
+  },
+  {
+    "name": "vostro",
+    "trans": [
+      "你们的（阳）"
+    ]
+  },
+  {
+    "name": "grazie mille",
+    "trans": [
+      "非常感谢"
+    ]
+  },
+  {
+    "name": "di niente",
+    "trans": [
+      "不客气"
+    ]
+  },
+  {
+    "name": "non c'è problema",
+    "trans": [
+      "没问题"
+    ]
+  },
+  {
+    "name": "va bene",
+    "trans": [
+      "好的"
+    ]
+  },
+  {
+    "name": "d'accordo",
+    "trans": [
+      "同意"
+    ]
+  },
+  {
+    "name": "certo",
+    "trans": [
+      "当然"
+    ]
+  },
+  {
+    "name": "naturalmente",
+    "trans": [
+      "自然；当然"
+    ]
+  },
+  {
+    "name": "forse",
+    "trans": [
+      "也许"
+    ]
+  },
+  {
+    "name": "probabilmente",
+    "trans": [
+      "大概"
+    ]
+  },
+  {
+    "name": "sicuro",
+    "trans": [
+      "确定的；安全的"
+    ]
+  },
+  {
+    "name": "bar",
+    "trans": [
+      "咖啡馆；酒吧"
+    ]
+  },
+  {
+    "name": "caffè",
+    "trans": [
+      "咖啡"
+    ]
+  },
+  {
+    "name": "cappuccino",
+    "trans": [
+      "卡布奇诺"
+    ]
+  },
+  {
+    "name": "espresso",
+    "trans": [
+      "意式浓缩"
+    ]
+  },
+  {
+    "name": "tè",
+    "trans": [
+      "茶"
+    ]
+  },
+  {
+    "name": "acqua",
+    "trans": [
+      "水"
+    ]
+  },
+  {
+    "name": "acqua minerale",
+    "trans": [
+      "矿泉水"
+    ]
+  },
+  {
+    "name": "succo",
+    "trans": [
+      "果汁"
+    ]
+  },
+  {
+    "name": "aranciata",
+    "trans": [
+      "橙汁汽水"
+    ]
+  },
+  {
+    "name": "limonata",
+    "trans": [
+      "柠檬水"
+    ]
+  },
+  {
+    "name": "vino",
+    "trans": [
+      "葡萄酒"
+    ]
+  },
+  {
+    "name": "birra",
+    "trans": [
+      "啤酒"
+    ]
+  },
+  {
+    "name": "latte",
+    "trans": [
+      "牛奶"
+    ]
+  },
+  {
+    "name": "zucchero",
+    "trans": [
+      "糖"
+    ]
+  },
+  {
+    "name": "brioche",
+    "trans": [
+      "甜面包"
+    ]
+  },
+  {
+    "name": "cornetto",
+    "trans": [
+      "牛角包"
+    ]
+  },
+  {
+    "name": "panino",
+    "trans": [
+      "三明治"
+    ]
+  },
+  {
+    "name": "tramezzino",
+    "trans": [
+      "三角形三明治"
+    ]
+  },
+  {
+    "name": "pizza",
+    "trans": [
+      "披萨"
+    ]
+  },
+  {
+    "name": "gelato",
+    "trans": [
+      "冰淇淋"
+    ]
+  },
+  {
+    "name": "conto",
+    "trans": [
+      "账单"
+    ]
+  },
+  {
+    "name": "prezzo",
+    "trans": [
+      "价格"
+    ]
+  },
+  {
+    "name": "euro",
+    "trans": [
+      "欧元"
+    ]
+  },
+  {
+    "name": "pagare",
+    "trans": [
+      "付款"
+    ]
+  },
+  {
+    "name": "ordinare",
+    "trans": [
+      "点餐"
+    ]
+  },
+  {
+    "name": "prendere",
+    "trans": [
+      "拿；点（餐）"
+    ]
+  },
+  {
+    "name": "bere",
+    "trans": [
+      "喝"
+    ]
+  },
+  {
+    "name": "mangiare",
+    "trans": [
+      "吃"
+    ]
+  },
+  {
+    "name": "avere fame",
+    "trans": [
+      "饿"
+    ]
+  },
+  {
+    "name": "avere sete",
+    "trans": [
+      "渴"
+    ]
+  },
+  {
+    "name": "buono",
+    "trans": [
+      "好的；好吃的"
+    ]
+  },
+  {
+    "name": "cattivo",
+    "trans": [
+      "坏的"
+    ]
+  },
+  {
+    "name": "delizioso",
+    "trans": [
+      "美味的"
+    ]
+  },
+  {
+    "name": "caldo",
+    "trans": [
+      "热的"
+    ]
+  },
+  {
+    "name": "freddo",
+    "trans": [
+      "冷的"
+    ]
+  },
+  {
+    "name": "passato",
+    "trans": [
+      "过去"
+    ]
+  },
+  {
+    "name": "l'altro ieri",
+    "trans": [
+      "前天"
+    ]
+  },
+  {
+    "name": "scorso",
+    "trans": [
+      "上一个"
+    ]
+  },
+  {
+    "name": "fare",
+    "trans": [
+      "做"
+    ]
+  },
+  {
+    "name": "fatto",
+    "trans": [
+      "做过；事实"
+    ]
+  },
+  {
+    "name": "stare",
+    "trans": [
+      "待；处于"
+    ]
+  },
+  {
+    "name": "rimanere",
+    "trans": [
+      "留下"
+    ]
+  },
+  {
+    "name": "studiare",
+    "trans": [
+      "学习"
+    ]
+  },
+  {
+    "name": "riposare",
+    "trans": [
+      "休息"
+    ]
+  },
+  {
+    "name": "divertirsi",
+    "trans": [
+      "玩得开心"
+    ]
+  },
+  {
+    "name": "viaggiare",
+    "trans": [
+      "旅行（动词）"
+    ]
+  },
+  {
+    "name": "vacanza",
+    "trans": [
+      "假期"
+    ]
+  },
+  {
+    "name": "partire",
+    "trans": [
+      "出发"
+    ]
+  },
+  {
+    "name": "arrivare",
+    "trans": [
+      "到达"
+    ]
+  },
+  {
+    "name": "treno",
+    "trans": [
+      "火车"
+    ]
+  },
+  {
+    "name": "stazione",
+    "trans": [
+      "车站"
+    ]
+  },
+  {
+    "name": "binario",
+    "trans": [
+      "站台"
+    ]
+  },
+  {
+    "name": "biglietto",
+    "trans": [
+      "票"
+    ]
+  },
+  {
+    "name": "aereo",
+    "trans": [
+      "飞机"
+    ]
+  },
+  {
+    "name": "aeroporto",
+    "trans": [
+      "机场"
+    ]
+  },
+  {
+    "name": "autobus",
+    "trans": [
+      "公共汽车"
+    ]
+  },
+  {
+    "name": "metro",
+    "trans": [
+      "地铁"
+    ]
+  },
+  {
+    "name": "taxi",
+    "trans": [
+      "出租车"
+    ]
+  },
+  {
+    "name": "macchina",
+    "trans": [
+      "汽车"
+    ]
+  },
+  {
+    "name": "auto",
+    "trans": [
+      "汽车"
+    ]
+  },
+  {
+    "name": "bicicletta",
+    "trans": [
+      "自行车"
+    ]
+  },
+  {
+    "name": "nave",
+    "trans": [
+      "船"
+    ]
+  },
+  {
+    "name": "traghetto",
+    "trans": [
+      "渡轮"
+    ]
+  },
+  {
+    "name": "albergo",
+    "trans": [
+      "旅馆"
+    ]
+  },
+  {
+    "name": "hotel",
+    "trans": [
+      "酒店"
+    ]
+  },
+  {
+    "name": "camera",
+    "trans": [
+      "房间"
+    ]
+  },
+  {
+    "name": "prenotare",
+    "trans": [
+      "预订"
+    ]
+  },
+  {
+    "name": "prenotazione",
+    "trans": [
+      "预订（名词）"
+    ]
+  },
+  {
+    "name": "passaporto",
+    "trans": [
+      "护照"
+    ]
+  },
+  {
+    "name": "valigia",
+    "trans": [
+      "行李箱"
+    ]
+  },
+  {
+    "name": "borsa",
+    "trans": [
+      "包"
+    ]
+  },
+  {
+    "name": "mappa",
+    "trans": [
+      "地图"
+    ]
+  },
+  {
+    "name": "montagna",
+    "trans": [
+      "山"
+    ]
+  },
+  {
+    "name": "mare",
+    "trans": [
+      "海"
+    ]
+  },
+  {
+    "name": "lago",
+    "trans": [
+      "湖"
+    ]
+  },
+  {
+    "name": "spiaggia",
+    "trans": [
+      "海滩"
+    ]
+  },
+  {
+    "name": "bosco",
+    "trans": [
+      "树林"
+    ]
+  },
+  {
+    "name": "parco",
+    "trans": [
+      "公园"
+    ]
+  },
+  {
+    "name": "museo",
+    "trans": [
+      "博物馆"
+    ]
+  },
+  {
+    "name": "chiesa",
+    "trans": [
+      "教堂"
+    ]
+  },
+  {
+    "name": "castello",
+    "trans": [
+      "城堡"
+    ]
+  },
+  {
+    "name": "ponte",
+    "trans": [
+      "桥"
+    ]
+  },
+  {
+    "name": "tempo",
+    "trans": [
+      "天气；时间"
+    ]
+  },
+  {
+    "name": "sole",
+    "trans": [
+      "太阳"
+    ]
+  },
+  {
+    "name": "pioggia",
+    "trans": [
+      "雨"
+    ]
+  },
+  {
+    "name": "vento",
+    "trans": [
+      "风"
+    ]
+  },
+  {
+    "name": "nuvola",
+    "trans": [
+      "云"
+    ]
+  },
+  {
+    "name": "neve",
+    "trans": [
+      "雪"
+    ]
+  },
+  {
+    "name": "temporale",
+    "trans": [
+      "暴风雨"
+    ]
+  },
+  {
+    "name": "soleggiato",
+    "trans": [
+      "晴朗的"
+    ]
+  },
+  {
+    "name": "nuvoloso",
+    "trans": [
+      "多云的"
+    ]
+  },
+  {
+    "name": "piovoso",
+    "trans": [
+      "下雨的"
+    ]
+  },
+  {
+    "name": "fa caldo",
+    "trans": [
+      "很热"
+    ]
+  },
+  {
+    "name": "fa freddo",
+    "trans": [
+      "很冷"
+    ]
+  },
+  {
+    "name": "che tempo fa",
+    "trans": [
+      "天气怎么样"
+    ]
+  },
+  {
+    "name": "festività",
+    "trans": [
+      "节日"
+    ]
+  },
+  {
+    "name": "Natale",
+    "trans": [
+      "圣诞节"
+    ]
+  },
+  {
+    "name": "Pasqua",
+    "trans": [
+      "复活节"
+    ]
+  },
+  {
+    "name": "Capodanno",
+    "trans": [
+      "新年"
+    ]
+  },
+  {
+    "name": "Ferragosto",
+    "trans": [
+      "八月十五节"
+    ]
+  },
+  {
+    "name": "matrimonio",
+    "trans": [
+      "婚礼"
+    ]
+  },
+  {
+    "name": "auguri",
+    "trans": [
+      "祝福"
+    ]
+  },
+  {
+    "name": "congratulazioni",
+    "trans": [
+      "恭喜"
+    ]
+  },
+  {
+    "name": "buon viaggio",
+    "trans": [
+      "一路顺风"
+    ]
+  },
+  {
+    "name": "buone vacanze",
+    "trans": [
+      "假期愉快"
+    ]
+  },
+  {
+    "name": "famiglia",
+    "trans": [
+      "家庭"
+    ]
+  },
+  {
+    "name": "padre",
+    "trans": [
+      "父亲"
+    ]
+  },
+  {
+    "name": "madre",
+    "trans": [
+      "母亲"
+    ]
+  },
+  {
+    "name": "papà",
+    "trans": [
+      "爸爸"
+    ]
+  },
+  {
+    "name": "mamma",
+    "trans": [
+      "妈妈"
+    ]
+  },
+  {
+    "name": "genitori",
+    "trans": [
+      "父母"
+    ]
+  },
+  {
+    "name": "figlio",
+    "trans": [
+      "儿子"
+    ]
+  },
+  {
+    "name": "figlia",
+    "trans": [
+      "女儿"
+    ]
+  },
+  {
+    "name": "fratello",
+    "trans": [
+      "兄弟"
+    ]
+  },
+  {
+    "name": "sorella",
+    "trans": [
+      "姐妹"
+    ]
+  },
+  {
+    "name": "nonno",
+    "trans": [
+      "祖父"
+    ]
+  },
+  {
+    "name": "nonna",
+    "trans": [
+      "祖母"
+    ]
+  },
+  {
+    "name": "zio",
+    "trans": [
+      "叔叔；舅舅"
+    ]
+  },
+  {
+    "name": "zia",
+    "trans": [
+      "阿姨；姑姑"
+    ]
+  },
+  {
+    "name": "cugino",
+    "trans": [
+      "堂/表兄弟"
+    ]
+  },
+  {
+    "name": "cugina",
+    "trans": [
+      "堂/表姐妹"
+    ]
+  },
+  {
+    "name": "marito",
+    "trans": [
+      "丈夫"
+    ]
+  },
+  {
+    "name": "moglie",
+    "trans": [
+      "妻子"
+    ]
+  },
+  {
+    "name": "fidanzato",
+    "trans": [
+      "未婚夫；男友"
+    ]
+  },
+  {
+    "name": "fidanzata",
+    "trans": [
+      "未婚妻；女友"
+    ]
+  },
+  {
+    "name": "bambino",
+    "trans": [
+      "小孩（阳）"
+    ]
+  },
+  {
+    "name": "bambina",
+    "trans": [
+      "小孩（阴）"
+    ]
+  },
+  {
+    "name": "nipote",
+    "trans": [
+      "孙子/孙女；侄子/侄女"
+    ]
+  },
+  {
+    "name": "suocero",
+    "trans": [
+      "公公；岳父"
+    ]
+  },
+  {
+    "name": "suocera",
+    "trans": [
+      "婆婆；岳母"
+    ]
+  },
+  {
+    "name": "ristorante",
+    "trans": [
+      "餐厅"
+    ]
+  },
+  {
+    "name": "trattoria",
+    "trans": [
+      "小餐馆"
+    ]
+  },
+  {
+    "name": "pizzeria",
+    "trans": [
+      "披萨店"
+    ]
+  },
+  {
+    "name": "menu",
+    "trans": [
+      "菜单"
+    ]
+  },
+  {
+    "name": "antipasto",
+    "trans": [
+      "开胃菜"
+    ]
+  },
+  {
+    "name": "contorno",
+    "trans": [
+      "配菜"
+    ]
+  },
+  {
+    "name": "dolce",
+    "trans": [
+      "甜点；甜的"
+    ]
+  },
+  {
+    "name": "frutta",
+    "trans": [
+      "水果"
+    ]
+  },
+  {
+    "name": "pasta",
+    "trans": [
+      "意大利面"
+    ]
+  },
+  {
+    "name": "spaghetti",
+    "trans": [
+      "细面"
+    ]
+  },
+  {
+    "name": "risotto",
+    "trans": [
+      "烩饭"
+    ]
+  },
+  {
+    "name": "minestra",
+    "trans": [
+      "汤"
+    ]
+  },
+  {
+    "name": "zuppa",
+    "trans": [
+      "浓汤"
+    ]
+  },
+  {
+    "name": "insalata",
+    "trans": [
+      "沙拉"
+    ]
+  },
+  {
+    "name": "carne",
+    "trans": [
+      "肉"
+    ]
+  },
+  {
+    "name": "pesce",
+    "trans": [
+      "鱼"
+    ]
+  },
+  {
+    "name": "pollo",
+    "trans": [
+      "鸡肉"
+    ]
+  },
+  {
+    "name": "manzo",
+    "trans": [
+      "牛肉"
+    ]
+  },
+  {
+    "name": "maiale",
+    "trans": [
+      "猪肉"
+    ]
+  },
+  {
+    "name": "prosciutto",
+    "trans": [
+      "火腿"
+    ]
+  },
+  {
+    "name": "formaggio",
+    "trans": [
+      "奶酪"
+    ]
+  },
+  {
+    "name": "pane",
+    "trans": [
+      "面包"
+    ]
+  },
+  {
+    "name": "olio",
+    "trans": [
+      "油"
+    ]
+  },
+  {
+    "name": "sale",
+    "trans": [
+      "盐"
+    ]
+  },
+  {
+    "name": "pepe",
+    "trans": [
+      "胡椒"
+    ]
+  },
+  {
+    "name": "aceto",
+    "trans": [
+      "醋"
+    ]
+  },
+  {
+    "name": "pomodoro",
+    "trans": [
+      "番茄"
+    ]
+  },
+  {
+    "name": "patata",
+    "trans": [
+      "土豆"
+    ]
+  },
+  {
+    "name": "verdura",
+    "trans": [
+      "蔬菜"
+    ]
+  },
+  {
+    "name": "mela",
+    "trans": [
+      "苹果"
+    ]
+  },
+  {
+    "name": "pera",
+    "trans": [
+      "梨"
+    ]
+  },
+  {
+    "name": "arancia",
+    "trans": [
+      "橙子"
+    ]
+  },
+  {
+    "name": "limone",
+    "trans": [
+      "柠檬"
+    ]
+  },
+  {
+    "name": "banana",
+    "trans": [
+      "香蕉"
+    ]
+  },
+  {
+    "name": "fragola",
+    "trans": [
+      "草莓"
+    ]
+  },
+  {
+    "name": "uva",
+    "trans": [
+      "葡萄"
+    ]
+  },
+  {
+    "name": "cocomero",
+    "trans": [
+      "西瓜"
+    ]
+  },
+  {
+    "name": "colazione",
+    "trans": [
+      "早餐"
+    ]
+  },
+  {
+    "name": "pranzo",
+    "trans": [
+      "午餐"
+    ]
+  },
+  {
+    "name": "cena",
+    "trans": [
+      "晚餐"
+    ]
+  },
+  {
+    "name": "spuntino",
+    "trans": [
+      "点心"
+    ]
+  },
+  {
+    "name": "buon appetito",
+    "trans": [
+      "祝你好胃口"
+    ]
+  },
+  {
+    "name": "il conto per favore",
+    "trans": [
+      "请结账"
+    ]
+  },
+  {
+    "name": "è buono",
+    "trans": [
+      "好吃"
+    ]
+  },
+  {
+    "name": "è troppo salato",
+    "trans": [
+      "太咸了"
+    ]
+  },
+  {
+    "name": "vegetariano",
+    "trans": [
+      "素食的"
+    ]
+  },
+  {
+    "name": "allergia",
+    "trans": [
+      "过敏"
+    ]
+  },
+  {
+    "name": "film",
+    "trans": [
+      "电影"
+    ]
+  },
+  {
+    "name": "attore",
+    "trans": [
+      "男演员"
+    ]
+  },
+  {
+    "name": "attrice",
+    "trans": [
+      "女演员"
+    ]
+  },
+  {
+    "name": "regista",
+    "trans": [
+      "导演"
+    ]
+  },
+  {
+    "name": "storia",
+    "trans": [
+      "故事；历史"
+    ]
+  },
+  {
+    "name": "commedia",
+    "trans": [
+      "喜剧"
+    ]
+  },
+  {
+    "name": "dramma",
+    "trans": [
+      "戏剧；正剧"
+    ]
+  },
+  {
+    "name": "azione",
+    "trans": [
+      "动作；行动"
+    ]
+  },
+  {
+    "name": "amore",
+    "trans": [
+      "爱情"
+    ]
+  },
+  {
+    "name": "ricordare",
+    "trans": [
+      "记得"
+    ]
+  },
+  {
+    "name": "dimenticare",
+    "trans": [
+      "忘记"
+    ]
+  },
+  {
+    "name": "ridere",
+    "trans": [
+      "笑"
+    ]
+  },
+  {
+    "name": "piangere",
+    "trans": [
+      "哭"
+    ]
+  },
+  {
+    "name": "emozione",
+    "trans": [
+      "情感"
+    ]
+  },
+  {
+    "name": "interessante",
+    "trans": [
+      "有趣的"
+    ]
+  },
+  {
+    "name": "noioso",
+    "trans": [
+      "无聊的"
+    ]
+  },
+  {
+    "name": "divertente",
+    "trans": [
+      "好玩的"
+    ]
+  },
+  {
+    "name": "famoso",
+    "trans": [
+      "著名的"
+    ]
+  },
+  {
+    "name": "preferito",
+    "trans": [
+      "最喜欢的"
+    ]
+  },
+  {
+    "name": "vedere",
+    "trans": [
+      "看见"
+    ]
+  },
+  {
+    "name": "andare al cinema",
+    "trans": [
+      "去看电影"
+    ]
+  },
+  {
+    "name": "visita",
+    "trans": [
+      "拜访"
+    ]
+  },
+  {
+    "name": "ospite",
+    "trans": [
+      "客人"
+    ]
+  },
+  {
+    "name": "accogliere",
+    "trans": [
+      "迎接"
+    ]
+  },
+  {
+    "name": "regalo",
+    "trans": [
+      "礼物"
+    ]
+  },
+  {
+    "name": "fiore",
+    "trans": [
+      "花"
+    ]
+  },
+  {
+    "name": "cioccolato",
+    "trans": [
+      "巧克力"
+    ]
+  },
+  {
+    "name": "benvenuto",
+    "trans": [
+      "欢迎"
+    ]
+  },
+  {
+    "name": "accomodati",
+    "trans": [
+      "请坐（非正式）"
+    ]
+  },
+  {
+    "name": "accomodarsi",
+    "trans": [
+      "请坐"
+    ]
+  },
+  {
+    "name": "salute",
+    "trans": [
+      "健康；干杯"
+    ]
+  },
+  {
+    "name": "cin cin",
+    "trans": [
+      "干杯"
+    ]
+  },
+  {
+    "name": "stare bene",
+    "trans": [
+      "身体好"
+    ]
+  },
+  {
+    "name": "stare male",
+    "trans": [
+      "身体不舒服"
+    ]
+  },
+  {
+    "name": "malato",
+    "trans": [
+      "生病的"
+    ]
+  },
+  {
+    "name": "sano",
+    "trans": [
+      "健康的"
+    ]
+  },
+  {
+    "name": "ospedale",
+    "trans": [
+      "医院"
+    ]
+  },
+  {
+    "name": "farmacia",
+    "trans": [
+      "药店"
+    ]
+  },
+  {
+    "name": "medicina",
+    "trans": [
+      "药"
+    ]
+  },
+  {
+    "name": "mal di testa",
+    "trans": [
+      "头痛"
+    ]
+  },
+  {
+    "name": "mal di stomaco",
+    "trans": [
+      "胃痛"
+    ]
+  },
+  {
+    "name": "raffreddore",
+    "trans": [
+      "感冒"
+    ]
+  },
+  {
+    "name": "tosse",
+    "trans": [
+      "咳嗽"
+    ]
+  },
+  {
+    "name": "febbre",
+    "trans": [
+      "发烧"
+    ]
+  },
+  {
+    "name": "aiuto",
+    "trans": [
+      "帮助"
+    ]
+  },
+  {
+    "name": "aiutare",
+    "trans": [
+      "帮助（动词）"
+    ]
+  },
+  {
+    "name": "vestito",
+    "trans": [
+      "衣服；连衣裙"
+    ]
+  },
+  {
+    "name": "abbigliamento",
+    "trans": [
+      "服装"
+    ]
+  },
+  {
+    "name": "maglietta",
+    "trans": [
+      "T恤"
+    ]
+  },
+  {
+    "name": "camicia",
+    "trans": [
+      "衬衫"
+    ]
+  },
+  {
+    "name": "pantaloni",
+    "trans": [
+      "裤子"
+    ]
+  },
+  {
+    "name": "gonna",
+    "trans": [
+      "裙子"
+    ]
+  },
+  {
+    "name": "giacca",
+    "trans": [
+      "夹克"
+    ]
+  },
+  {
+    "name": "cappotto",
+    "trans": [
+      "大衣"
+    ]
+  },
+  {
+    "name": "maglione",
+    "trans": [
+      "毛衣"
+    ]
+  },
+  {
+    "name": "scarpe",
+    "trans": [
+      "鞋子"
+    ]
+  },
+  {
+    "name": "calze",
+    "trans": [
+      "袜子"
+    ]
+  },
+  {
+    "name": "cappello",
+    "trans": [
+      "帽子"
+    ]
+  },
+  {
+    "name": "sciarpa",
+    "trans": [
+      "围巾"
+    ]
+  },
+  {
+    "name": "guanti",
+    "trans": [
+      "手套"
+    ]
+  },
+  {
+    "name": "occhiali",
+    "trans": [
+      "眼镜"
+    ]
+  },
+  {
+    "name": "orologio",
+    "trans": [
+      "手表；钟"
+    ]
+  },
+  {
+    "name": "taglia",
+    "trans": [
+      "尺码"
+    ]
+  },
+  {
+    "name": "colore",
+    "trans": [
+      "颜色"
+    ]
+  },
+  {
+    "name": "bianco",
+    "trans": [
+      "白色的"
+    ]
+  },
+  {
+    "name": "nero",
+    "trans": [
+      "黑色的"
+    ]
+  },
+  {
+    "name": "rosso",
+    "trans": [
+      "红色的"
+    ]
+  },
+  {
+    "name": "blu",
+    "trans": [
+      "蓝色的"
+    ]
+  },
+  {
+    "name": "azzurro",
+    "trans": [
+      "浅蓝色的"
+    ]
+  },
+  {
+    "name": "verde",
+    "trans": [
+      "绿色的"
+    ]
+  },
+  {
+    "name": "giallo",
+    "trans": [
+      "黄色的"
+    ]
+  },
+  {
+    "name": "arancione",
+    "trans": [
+      "橙色的"
+    ]
+  },
+  {
+    "name": "rosa",
+    "trans": [
+      "粉色的"
+    ]
+  },
+  {
+    "name": "viola",
+    "trans": [
+      "紫色的"
+    ]
+  },
+  {
+    "name": "marrone",
+    "trans": [
+      "棕色的"
+    ]
+  },
+  {
+    "name": "grigio",
+    "trans": [
+      "灰色的"
+    ]
+  },
+  {
+    "name": "chiaro",
+    "trans": [
+      "浅的；明亮的"
+    ]
+  },
+  {
+    "name": "scuro",
+    "trans": [
+      "深的；黑暗的"
+    ]
+  },
+  {
+    "name": "negozio",
+    "trans": [
+      "商店"
+    ]
+  },
+  {
+    "name": "centro commerciale",
+    "trans": [
+      "购物中心"
+    ]
+  },
+  {
+    "name": "mercato",
+    "trans": [
+      "市场"
+    ]
+  },
+  {
+    "name": "supermercato",
+    "trans": [
+      "超市"
+    ]
+  },
+  {
+    "name": "cassa",
+    "trans": [
+      "收银台"
+    ]
+  },
+  {
+    "name": "sconto",
+    "trans": [
+      "折扣"
+    ]
+  },
+  {
+    "name": "saldi",
+    "trans": [
+      "打折季"
+    ]
+  },
+  {
+    "name": "caro",
+    "trans": [
+      "贵的；亲爱的"
+    ]
+  },
+  {
+    "name": "economico",
+    "trans": [
+      "便宜的"
+    ]
+  },
+  {
+    "name": "gratis",
+    "trans": [
+      "免费的"
+    ]
+  },
+  {
+    "name": "comprare",
+    "trans": [
+      "买"
+    ]
+  },
+  {
+    "name": "vendere",
+    "trans": [
+      "卖"
+    ]
+  },
+  {
+    "name": "costare",
+    "trans": [
+      "花费"
+    ]
+  },
+  {
+    "name": "quanto costa",
+    "trans": [
+      "多少钱"
+    ]
+  },
+  {
+    "name": "posso provare",
+    "trans": [
+      "我可以试穿吗"
+    ]
+  },
+  {
+    "name": "troppo grande",
+    "trans": [
+      "太大"
+    ]
+  },
+  {
+    "name": "troppo piccolo",
+    "trans": [
+      "太小"
+    ]
+  },
+  {
+    "name": "mi piace",
+    "trans": [
+      "我喜欢"
+    ]
+  },
+  {
+    "name": "non mi piace",
+    "trans": [
+      "我不喜欢"
+    ]
+  },
+  {
+    "name": "vorrei",
+    "trans": [
+      "我想要"
+    ]
+  },
+  {
+    "name": "posso",
+    "trans": [
+      "我可以"
+    ]
+  },
+  {
+    "name": "devo",
+    "trans": [
+      "我必须"
+    ]
+  },
+  {
+    "name": "voglio",
+    "trans": [
+      "我想要"
+    ]
+  },
+  {
+    "name": "edicola",
+    "trans": [
+      "报刊亭"
+    ]
+  },
+  {
+    "name": "notizia",
+    "trans": [
+      "新闻"
+    ]
+  },
+  {
+    "name": "informazione",
+    "trans": [
+      "信息"
+    ]
+  },
+  {
+    "name": "cartolina",
+    "trans": [
+      "明信片"
+    ]
+  },
+  {
+    "name": "francobollo",
+    "trans": [
+      "邮票"
+    ]
+  },
+  {
+    "name": "tabaccaio",
+    "trans": [
+      "烟草店"
+    ]
+  },
+  {
+    "name": "ufficio postale",
+    "trans": [
+      "邮局"
+    ]
+  },
+  {
+    "name": "banca",
+    "trans": [
+      "银行"
+    ]
+  },
+  {
+    "name": "soldi",
+    "trans": [
+      "钱"
+    ]
+  },
+  {
+    "name": "contanti",
+    "trans": [
+      "现金"
+    ]
+  },
+  {
+    "name": "carta di credito",
+    "trans": [
+      "信用卡"
+    ]
+  },
+  {
+    "name": "bancomat",
+    "trans": [
+      "自动取款机"
+    ]
+  },
+  {
+    "name": "centro",
+    "trans": [
+      "市中心"
+    ]
+  },
+  {
+    "name": "periferia",
+    "trans": [
+      "郊区"
+    ]
+  },
+  {
+    "name": "quartiere",
+    "trans": [
+      "街区"
+    ]
+  },
+  {
+    "name": "strada",
+    "trans": [
+      "路"
+    ]
+  },
+  {
+    "name": "semaforo",
+    "trans": [
+      "红绿灯"
+    ]
+  },
+  {
+    "name": "incrocio",
+    "trans": [
+      "十字路口"
+    ]
+  },
+  {
+    "name": "fermata",
+    "trans": [
+      "车站（公交）"
+    ]
+  },
+  {
+    "name": "parcheggio",
+    "trans": [
+      "停车场"
+    ]
+  },
+  {
+    "name": "scuola",
+    "trans": [
+      "学校"
+    ]
+  },
+  {
+    "name": "università",
+    "trans": [
+      "大学"
+    ]
+  },
+  {
+    "name": "biblioteca",
+    "trans": [
+      "图书馆"
+    ]
+  },
+  {
+    "name": "comune",
+    "trans": [
+      "市政厅；市镇"
+    ]
+  },
+  {
+    "name": "dove si trova",
+    "trans": [
+      "在哪里"
+    ]
+  },
+  {
+    "name": "è lontano",
+    "trans": [
+      "远吗"
+    ]
+  },
+  {
+    "name": "a piedi",
+    "trans": [
+      "步行"
+    ]
+  },
+  {
+    "name": "in macchina",
+    "trans": [
+      "坐车"
+    ]
+  },
+  {
+    "name": "canzone",
+    "trans": [
+      "歌曲"
+    ]
+  },
+  {
+    "name": "cantante",
+    "trans": [
+      "歌手"
+    ]
+  },
+  {
+    "name": "strumento",
+    "trans": [
+      "乐器"
+    ]
+  },
+  {
+    "name": "chitarra",
+    "trans": [
+      "吉他"
+    ]
+  },
+  {
+    "name": "piano",
+    "trans": [
+      "钢琴；慢慢地"
+    ]
+  },
+  {
+    "name": "violino",
+    "trans": [
+      "小提琴"
+    ]
+  },
+  {
+    "name": "invito",
+    "trans": [
+      "邀请"
+    ]
+  },
+  {
+    "name": "invitare",
+    "trans": [
+      "邀请（动词）"
+    ]
+  },
+  {
+    "name": "ballo",
+    "trans": [
+      "舞会；舞蹈"
+    ]
+  },
+  {
+    "name": "disco",
+    "trans": [
+      "迪厅"
+    ]
+  },
+  {
+    "name": "locale",
+    "trans": [
+      "场所；酒吧"
+    ]
+  },
+  {
+    "name": "divertimento",
+    "trans": [
+      "娱乐"
+    ]
+  },
+  {
+    "name": "potere",
+    "trans": [
+      "能够"
+    ]
+  },
+  {
+    "name": "volere",
+    "trans": [
+      "想要"
+    ]
+  },
+  {
+    "name": "dovere",
+    "trans": [
+      "必须"
+    ]
+  },
+  {
+    "name": "sentire",
+    "trans": [
+      "听见；感觉"
+    ]
+  },
+  {
+    "name": "aprire",
+    "trans": [
+      "打开"
+    ]
+  },
+  {
+    "name": "chiudere",
+    "trans": [
+      "关闭"
+    ]
+  },
+  {
+    "name": "entrare",
+    "trans": [
+      "进入"
+    ]
+  },
+  {
+    "name": "salire",
+    "trans": [
+      "上去"
+    ]
+  },
+  {
+    "name": "scendere",
+    "trans": [
+      "下来"
+    ]
+  },
+  {
+    "name": "tornare",
+    "trans": [
+      "返回"
+    ]
+  },
+  {
+    "name": "aspettare",
+    "trans": [
+      "等待"
+    ]
+  },
+  {
+    "name": "cercare",
+    "trans": [
+      "寻找"
+    ]
+  },
+  {
+    "name": "trovare",
+    "trans": [
+      "找到"
+    ]
+  },
+  {
+    "name": "perdere",
+    "trans": [
+      "丢失；输"
+    ]
+  },
+  {
+    "name": "dare",
+    "trans": [
+      "给"
+    ]
+  },
+  {
+    "name": "portare",
+    "trans": [
+      "带"
+    ]
+  },
+  {
+    "name": "mettere",
+    "trans": [
+      "放；穿"
+    ]
+  },
+  {
+    "name": "togliere",
+    "trans": [
+      "拿掉"
+    ]
+  },
+  {
+    "name": "usare",
+    "trans": [
+      "使用"
+    ]
+  },
+  {
+    "name": "imparare",
+    "trans": [
+      "学会"
+    ]
+  },
+  {
+    "name": "insegnare",
+    "trans": [
+      "教"
+    ]
+  },
+  {
+    "name": "nascere",
+    "trans": [
+      "出生"
+    ]
+  },
+  {
+    "name": "morire",
+    "trans": [
+      "死亡"
+    ]
+  },
+  {
+    "name": "cucinare",
+    "trans": [
+      "做饭"
+    ]
+  },
+  {
+    "name": "dormire",
+    "trans": [
+      "睡觉"
+    ]
+  },
+  {
+    "name": "svegliarsi",
+    "trans": [
+      "醒来"
+    ]
+  },
+  {
+    "name": "alzarsi",
+    "trans": [
+      "起床"
+    ]
+  },
+  {
+    "name": "lavarsi",
+    "trans": [
+      "洗"
+    ]
+  },
+  {
+    "name": "vestirsi",
+    "trans": [
+      "穿衣服"
+    ]
+  },
+  {
+    "name": "camminare",
+    "trans": [
+      "走"
+    ]
+  },
+  {
+    "name": "guidare",
+    "trans": [
+      "开车"
+    ]
+  },
+  {
+    "name": "volare",
+    "trans": [
+      "飞"
+    ]
+  },
+  {
+    "name": "sorridere",
+    "trans": [
+      "微笑"
+    ]
+  },
+  {
+    "name": "amare",
+    "trans": [
+      "爱"
+    ]
+  },
+  {
+    "name": "preferire",
+    "trans": [
+      "更喜欢"
+    ]
+  },
+  {
+    "name": "odiare",
+    "trans": [
+      "讨厌"
+    ]
+  },
+  {
+    "name": "cominciare",
+    "trans": [
+      "开始"
+    ]
+  },
+  {
+    "name": "iniziare",
+    "trans": [
+      "开始"
+    ]
+  },
+  {
+    "name": "finire",
+    "trans": [
+      "结束"
+    ]
+  },
+  {
+    "name": "continuare",
+    "trans": [
+      "继续"
+    ]
+  },
+  {
+    "name": "cambiare",
+    "trans": [
+      "改变"
+    ]
+  },
+  {
+    "name": "provare",
+    "trans": [
+      "尝试；试穿"
+    ]
+  },
+  {
+    "name": "riuscire",
+    "trans": [
+      "成功"
+    ]
+  },
+  {
+    "name": "decidere",
+    "trans": [
+      "决定"
+    ]
+  },
+  {
+    "name": "scegliere",
+    "trans": [
+      "选择"
+    ]
+  },
+  {
+    "name": "organizzare",
+    "trans": [
+      "组织"
+    ]
+  },
+  {
+    "name": "pulire",
+    "trans": [
+      "打扫"
+    ]
+  },
+  {
+    "name": "lavare",
+    "trans": [
+      "洗"
+    ]
+  },
+  {
+    "name": "costruire",
+    "trans": [
+      "建造"
+    ]
+  },
+  {
+    "name": "riparare",
+    "trans": [
+      "修理"
+    ]
+  },
+  {
+    "name": "controllare",
+    "trans": [
+      "检查"
+    ]
+  },
+  {
+    "name": "spiegare",
+    "trans": [
+      "解释"
+    ]
+  },
+  {
+    "name": "tradurre",
+    "trans": [
+      "翻译"
+    ]
+  },
+  {
+    "name": "presentarsi",
+    "trans": [
+      "自我介绍"
+    ]
+  },
+  {
+    "name": "sposarsi",
+    "trans": [
+      "结婚"
+    ]
+  },
+  {
+    "name": "riposarsi",
+    "trans": [
+      "休息"
+    ]
+  },
+  {
+    "name": "arrabbiarsi",
+    "trans": [
+      "生气"
+    ]
+  },
+  {
+    "name": "preoccuparsi",
+    "trans": [
+      "担心"
+    ]
+  },
+  {
+    "name": "sentirsi",
+    "trans": [
+      "感觉"
+    ]
+  },
+  {
+    "name": "grande",
+    "trans": [
+      "大的"
+    ]
+  },
+  {
+    "name": "piccolo",
+    "trans": [
+      "小的"
+    ]
+  },
+  {
+    "name": "anziano",
+    "trans": [
+      "年长的"
+    ]
+  },
+  {
+    "name": "lungo",
+    "trans": [
+      "长的"
+    ]
+  },
+  {
+    "name": "corto",
+    "trans": [
+      "短的"
+    ]
+  },
+  {
+    "name": "largo",
+    "trans": [
+      "宽的"
+    ]
+  },
+  {
+    "name": "stretto",
+    "trans": [
+      "窄的"
+    ]
+  },
+  {
+    "name": "pesante",
+    "trans": [
+      "重的"
+    ]
+  },
+  {
+    "name": "leggero",
+    "trans": [
+      "轻的"
+    ]
+  },
+  {
+    "name": "veloce",
+    "trans": [
+      "快的"
+    ]
+  },
+  {
+    "name": "lento",
+    "trans": [
+      "慢的"
+    ]
+  },
+  {
+    "name": "facile",
+    "trans": [
+      "容易的"
+    ]
+  },
+  {
+    "name": "difficile",
+    "trans": [
+      "困难的"
+    ]
+  },
+  {
+    "name": "possibile",
+    "trans": [
+      "可能的"
+    ]
+  },
+  {
+    "name": "impossibile",
+    "trans": [
+      "不可能的"
+    ]
+  },
+  {
+    "name": "necessario",
+    "trans": [
+      "必要的"
+    ]
+  },
+  {
+    "name": "pronto",
+    "trans": [
+      "准备好的"
+    ]
+  },
+  {
+    "name": "aperto",
+    "trans": [
+      "开着的"
+    ]
+  },
+  {
+    "name": "chiuso",
+    "trans": [
+      "关着的"
+    ]
+  },
+  {
+    "name": "pieno",
+    "trans": [
+      "满的"
+    ]
+  },
+  {
+    "name": "vuoto",
+    "trans": [
+      "空的"
+    ]
+  },
+  {
+    "name": "pulito",
+    "trans": [
+      "干净的"
+    ]
+  },
+  {
+    "name": "sporco",
+    "trans": [
+      "脏的"
+    ]
+  },
+  {
+    "name": "ricco",
+    "trans": [
+      "富有的"
+    ]
+  },
+  {
+    "name": "povero",
+    "trans": [
+      "贫穷的"
+    ]
+  },
+  {
+    "name": "giusto",
+    "trans": [
+      "正确的"
+    ]
+  },
+  {
+    "name": "sbagliato",
+    "trans": [
+      "错误的"
+    ]
+  },
+  {
+    "name": "vero",
+    "trans": [
+      "真的"
+    ]
+  },
+  {
+    "name": "falso",
+    "trans": [
+      "假的"
+    ]
+  },
+  {
+    "name": "stesso",
+    "trans": [
+      "同样的"
+    ]
+  },
+  {
+    "name": "altro",
+    "trans": [
+      "别的"
+    ]
+  },
+  {
+    "name": "prossimo",
+    "trans": [
+      "下一个"
+    ]
+  },
+  {
+    "name": "sinistro",
+    "trans": [
+      "左边的"
+    ]
+  },
+  {
+    "name": "destro",
+    "trans": [
+      "右边的"
+    ]
+  },
+  {
+    "name": "pubblico",
+    "trans": [
+      "公共的"
+    ]
+  },
+  {
+    "name": "privato",
+    "trans": [
+      "私人的"
+    ]
+  },
+  {
+    "name": "nazionale",
+    "trans": [
+      "国家的"
+    ]
+  },
+  {
+    "name": "internazionale",
+    "trans": [
+      "国际的"
+    ]
+  },
+  {
+    "name": "straniero",
+    "trans": [
+      "外国的"
+    ]
+  },
+  {
+    "name": "tanto",
+    "trans": [
+      "很多"
+    ]
+  },
+  {
+    "name": "troppo",
+    "trans": [
+      "太"
+    ]
+  },
+  {
+    "name": "abbastanza",
+    "trans": [
+      "足够"
+    ]
+  },
+  {
+    "name": "quasi",
+    "trans": [
+      "几乎"
+    ]
+  },
+  {
+    "name": "ancora",
+    "trans": [
+      "还；仍"
+    ]
+  },
+  {
+    "name": "già",
+    "trans": [
+      "已经"
+    ]
+  },
+  {
+    "name": "appena",
+    "trans": [
+      "刚刚"
+    ]
+  },
+  {
+    "name": "subito",
+    "trans": [
+      "马上"
+    ]
+  },
+  {
+    "name": "presto",
+    "trans": [
+      "早；很快"
+    ]
+  },
+  {
+    "name": "tardi",
+    "trans": [
+      "晚"
+    ]
+  },
+  {
+    "name": "insieme",
+    "trans": [
+      "一起"
+    ]
+  },
+  {
+    "name": "solo",
+    "trans": [
+      "独自；仅仅"
+    ]
+  },
+  {
+    "name": "proprio",
+    "trans": [
+      "真正；正好"
+    ]
+  },
+  {
+    "name": "davvero",
+    "trans": [
+      "真的"
+    ]
+  },
+  {
+    "name": "finalmente",
+    "trans": [
+      "终于"
+    ]
+  },
+  {
+    "name": "allora",
+    "trans": [
+      "那么；当时"
+    ]
+  },
+  {
+    "name": "quindi",
+    "trans": [
+      "所以"
+    ]
+  },
+  {
+    "name": "però",
+    "trans": [
+      "可是"
+    ]
+  },
+  {
+    "name": "invece",
+    "trans": [
+      "反而"
+    ]
+  },
+  {
+    "name": "infatti",
+    "trans": [
+      "其实；的确"
+    ]
+  },
+  {
+    "name": "comunque",
+    "trans": [
+      "总之"
+    ]
+  },
+  {
+    "name": "in",
+    "trans": [
+      "在……里"
+    ]
+  },
+  {
+    "name": "a",
+    "trans": [
+      "在；向"
+    ]
+  },
+  {
+    "name": "di",
+    "trans": [
+      "的；从"
+    ]
+  },
+  {
+    "name": "da",
+    "trans": [
+      "从；被"
+    ]
+  },
+  {
+    "name": "con",
+    "trans": [
+      "和；用"
+    ]
+  },
+  {
+    "name": "su",
+    "trans": [
+      "在……上"
+    ]
+  },
+  {
+    "name": "per",
+    "trans": [
+      "为了；经过"
+    ]
+  },
+  {
+    "name": "tra",
+    "trans": [
+      "在……之间"
+    ]
+  },
+  {
+    "name": "fra",
+    "trans": [
+      "在……之间"
+    ]
+  },
+  {
+    "name": "senza",
+    "trans": [
+      "没有"
+    ]
+  },
+  {
+    "name": "contro",
+    "trans": [
+      "反对"
+    ]
+  },
+  {
+    "name": "dopo",
+    "trans": [
+      "在……之后"
+    ]
+  },
+  {
+    "name": "prima",
+    "trans": [
+      "在……之前"
+    ]
+  },
+  {
+    "name": "durante",
+    "trans": [
+      "在……期间"
+    ]
+  },
+  {
+    "name": "verso",
+    "trans": [
+      "朝向"
+    ]
+  },
+  {
+    "name": "sopra",
+    "trans": [
+      "在上面"
+    ]
+  },
+  {
+    "name": "sotto",
+    "trans": [
+      "在下面"
+    ]
+  },
+  {
+    "name": "davanti",
+    "trans": [
+      "在前面"
+    ]
+  },
+  {
+    "name": "dietro",
+    "trans": [
+      "在后面"
+    ]
+  },
+  {
+    "name": "dentro",
+    "trans": [
+      "在里面"
+    ]
+  },
+  {
+    "name": "fuori",
+    "trans": [
+      "在外面"
+    ]
+  },
+  {
+    "name": "accanto",
+    "trans": [
+      "在旁边"
+    ]
+  },
+  {
+    "name": "intorno",
+    "trans": [
+      "在周围"
+    ]
+  },
+  {
+    "name": "corpo",
+    "trans": [
+      "身体"
+    ]
+  },
+  {
+    "name": "testa",
+    "trans": [
+      "头"
+    ]
+  },
+  {
+    "name": "faccia",
+    "trans": [
+      "脸"
+    ]
+  },
+  {
+    "name": "occhio",
+    "trans": [
+      "眼睛"
+    ]
+  },
+  {
+    "name": "orecchio",
+    "trans": [
+      "耳朵"
+    ]
+  },
+  {
+    "name": "naso",
+    "trans": [
+      "鼻子"
+    ]
+  },
+  {
+    "name": "bocca",
+    "trans": [
+      "嘴"
+    ]
+  },
+  {
+    "name": "dente",
+    "trans": [
+      "牙齿"
+    ]
+  },
+  {
+    "name": "capelli",
+    "trans": [
+      "头发"
+    ]
+  },
+  {
+    "name": "mano",
+    "trans": [
+      "手"
+    ]
+  },
+  {
+    "name": "braccio",
+    "trans": [
+      "胳膊"
+    ]
+  },
+  {
+    "name": "gamba",
+    "trans": [
+      "腿"
+    ]
+  },
+  {
+    "name": "piede",
+    "trans": [
+      "脚"
+    ]
+  },
+  {
+    "name": "cuore",
+    "trans": [
+      "心"
+    ]
+  },
+  {
+    "name": "schiena",
+    "trans": [
+      "背"
+    ]
+  },
+  {
+    "name": "cucina",
+    "trans": [
+      "厨房"
+    ]
+  },
+  {
+    "name": "bagno",
+    "trans": [
+      "卫生间"
+    ]
+  },
+  {
+    "name": "camera da letto",
+    "trans": [
+      "卧室"
+    ]
+  },
+  {
+    "name": "soggiorno",
+    "trans": [
+      "客厅"
+    ]
+  },
+  {
+    "name": "balcone",
+    "trans": [
+      "阳台"
+    ]
+  },
+  {
+    "name": "giardino",
+    "trans": [
+      "花园"
+    ]
+  },
+  {
+    "name": "porta",
+    "trans": [
+      "门"
+    ]
+  },
+  {
+    "name": "finestra",
+    "trans": [
+      "窗户"
+    ]
+  },
+  {
+    "name": "muro",
+    "trans": [
+      "墙"
+    ]
+  },
+  {
+    "name": "pavimento",
+    "trans": [
+      "地板"
+    ]
+  },
+  {
+    "name": "tetto",
+    "trans": [
+      "屋顶"
+    ]
+  },
+  {
+    "name": "chiave",
+    "trans": [
+      "钥匙"
+    ]
+  },
+  {
+    "name": "tavolo",
+    "trans": [
+      "桌子"
+    ]
+  },
+  {
+    "name": "sedia",
+    "trans": [
+      "椅子"
+    ]
+  },
+  {
+    "name": "letto",
+    "trans": [
+      "床"
+    ]
+  },
+  {
+    "name": "armadio",
+    "trans": [
+      "衣柜"
+    ]
+  },
+  {
+    "name": "specchio",
+    "trans": [
+      "镜子"
+    ]
+  },
+  {
+    "name": "lampada",
+    "trans": [
+      "灯"
+    ]
+  },
+  {
+    "name": "frigorifero",
+    "trans": [
+      "冰箱"
+    ]
+  },
+  {
+    "name": "forno",
+    "trans": [
+      "烤箱"
+    ]
+  },
+  {
+    "name": "lavatrice",
+    "trans": [
+      "洗衣机"
+    ]
+  },
+  {
+    "name": "classe",
+    "trans": [
+      "班级"
+    ]
+  },
+  {
+    "name": "lezione",
+    "trans": [
+      "课"
+    ]
+  },
+  {
+    "name": "esame",
+    "trans": [
+      "考试"
+    ]
+  },
+  {
+    "name": "compito",
+    "trans": [
+      "作业"
+    ]
+  },
+  {
+    "name": "penna",
+    "trans": [
+      "笔"
+    ]
+  },
+  {
+    "name": "matita",
+    "trans": [
+      "铅笔"
+    ]
+  },
+  {
+    "name": "quaderno",
+    "trans": [
+      "笔记本"
+    ]
+  },
+  {
+    "name": "dizionario",
+    "trans": [
+      "词典"
+    ]
+  },
+  {
+    "name": "lingua",
+    "trans": [
+      "语言"
+    ]
+  },
+  {
+    "name": "grammatica",
+    "trans": [
+      "语法"
+    ]
+  },
+  {
+    "name": "parola",
+    "trans": [
+      "单词"
+    ]
+  },
+  {
+    "name": "frase",
+    "trans": [
+      "句子"
+    ]
+  },
+  {
+    "name": "domanda",
+    "trans": [
+      "问题"
+    ]
+  },
+  {
+    "name": "risposta",
+    "trans": [
+      "答案"
+    ]
+  },
+  {
+    "name": "errore",
+    "trans": [
+      "错误"
+    ]
+  },
+  {
+    "name": "esempio",
+    "trans": [
+      "例子"
+    ]
+  },
+  {
+    "name": "problema",
+    "trans": [
+      "问题"
+    ]
+  },
+  {
+    "name": "soluzione",
+    "trans": [
+      "解决办法"
+    ]
+  },
+  {
+    "name": "idea",
+    "trans": [
+      "主意"
+    ]
+  },
+  {
+    "name": "opinione",
+    "trans": [
+      "意见"
+    ]
+  },
+  {
+    "name": "verità",
+    "trans": [
+      "真相"
+    ]
+  },
+  {
+    "name": "bugia",
+    "trans": [
+      "谎言"
+    ]
+  },
+  {
+    "name": "vita",
+    "trans": [
+      "生活"
+    ]
+  },
+  {
+    "name": "morte",
+    "trans": [
+      "死亡"
+    ]
+  },
+  {
+    "name": "futuro",
+    "trans": [
+      "未来"
+    ]
+  },
+  {
+    "name": "presente",
+    "trans": [
+      "现在"
+    ]
+  },
+  {
+    "name": "possibilità",
+    "trans": [
+      "可能性"
+    ]
+  },
+  {
+    "name": "occasione",
+    "trans": [
+      "机会"
+    ]
+  },
+  {
+    "name": "successo",
+    "trans": [
+      "成功"
+    ]
+  },
+  {
+    "name": "fallimento",
+    "trans": [
+      "失败"
+    ]
+  },
+  {
+    "name": "pace",
+    "trans": [
+      "和平"
+    ]
+  },
+  {
+    "name": "guerra",
+    "trans": [
+      "战争"
+    ]
+  },
+  {
+    "name": "cultura",
+    "trans": [
+      "文化"
+    ]
+  },
+  {
+    "name": "tradizione",
+    "trans": [
+      "传统"
+    ]
+  },
+  {
+    "name": "arte",
+    "trans": [
+      "艺术"
+    ]
+  },
+  {
+    "name": "natura",
+    "trans": [
+      "自然"
+    ]
+  },
+  {
+    "name": "mondo",
+    "trans": [
+      "世界"
+    ]
+  },
+  {
+    "name": "terra",
+    "trans": [
+      "土地；地球"
+    ]
+  },
+  {
+    "name": "cielo",
+    "trans": [
+      "天空"
+    ]
+  },
+  {
+    "name": "fuoco",
+    "trans": [
+      "火"
+    ]
+  },
+  {
+    "name": "aria",
+    "trans": [
+      "空气"
+    ]
+  },
+  {
+    "name": "animale",
+    "trans": [
+      "动物"
+    ]
+  },
+  {
+    "name": "cane",
+    "trans": [
+      "狗"
+    ]
+  },
+  {
+    "name": "gatto",
+    "trans": [
+      "猫"
+    ]
+  },
+  {
+    "name": "uccello",
+    "trans": [
+      "鸟"
+    ]
+  },
+  {
+    "name": "cavallo",
+    "trans": [
+      "马"
+    ]
+  },
+  {
+    "name": "come ti chiami",
+    "trans": [
+      "你叫什么名字"
+    ]
+  },
+  {
+    "name": "mi chiamo",
+    "trans": [
+      "我叫"
+    ]
+  },
+  {
+    "name": "di dove sei",
+    "trans": [
+      "你是哪里人"
+    ]
+  },
+  {
+    "name": "sono di",
+    "trans": [
+      "我来自"
+    ]
+  },
+  {
+    "name": "quanti anni hai",
+    "trans": [
+      "你多大了"
+    ]
+  },
+  {
+    "name": "ho ... anni",
+    "trans": [
+      "我……岁"
+    ]
+  },
+  {
+    "name": "che lavoro fai",
+    "trans": [
+      "你做什么工作"
+    ]
+  },
+  {
+    "name": "non capisco",
+    "trans": [
+      "我不明白"
+    ]
+  },
+  {
+    "name": "non so",
+    "trans": [
+      "我不知道"
+    ]
+  },
+  {
+    "name": "può ripetere",
+    "trans": [
+      "请再说一遍"
+    ]
+  },
+  {
+    "name": "più lentamente",
+    "trans": [
+      "请慢一点"
+    ]
+  },
+  {
+    "name": "parla italiano",
+    "trans": [
+      "你会说意大利语吗"
+    ]
+  },
+  {
+    "name": "parlo un po'",
+    "trans": [
+      "我会一点"
+    ]
+  },
+  {
+    "name": "non parlo italiano",
+    "trans": [
+      "我不会说意大利语"
+    ]
+  },
+  {
+    "name": "come si scrive",
+    "trans": [
+      "怎么写"
+    ]
+  },
+  {
+    "name": "come si pronuncia",
+    "trans": [
+      "怎么读"
+    ]
+  },
+  {
+    "name": "dov'è il bagno",
+    "trans": [
+      "厕所在哪里"
+    ]
+  },
+  {
+    "name": "posso pagare con la carta",
+    "trans": [
+      "可以刷卡吗"
+    ]
+  },
+  {
+    "name": "un tavolo per due",
+    "trans": [
+      "两人桌"
+    ]
+  },
+  {
+    "name": "l'acqua naturale",
+    "trans": [
+      "无气水"
+    ]
+  },
+  {
+    "name": "l'acqua frizzante",
+    "trans": [
+      "气泡水"
+    ]
+  },
+  {
+    "name": "un caffè per favore",
+    "trans": [
+      "请来一杯咖啡"
+    ]
+  },
+  {
+    "name": "dove abiti",
+    "trans": [
+      "你住在哪里"
+    ]
+  },
+  {
+    "name": "abito a",
+    "trans": [
+      "我住在"
+    ]
+  },
+  {
+    "name": "che giorno è oggi",
+    "trans": [
+      "今天星期几"
+    ]
+  },
+  {
+    "name": "fa bel tempo",
+    "trans": [
+      "天气很好"
+    ]
+  },
+  {
+    "name": "piove",
+    "trans": [
+      "下雨了"
+    ]
+  },
+  {
+    "name": "c'è il sole",
+    "trans": [
+      "出太阳了"
+    ]
+  },
+  {
+    "name": "mi dispiace",
+    "trans": [
+      "抱歉"
+    ]
+  },
+  {
+    "name": "non c'è di che",
+    "trans": [
+      "不客气"
+    ]
+  },
+  {
+    "name": "a presto",
+    "trans": [
+      "回头见"
+    ]
+  },
+  {
+    "name": "a domani",
+    "trans": [
+      "明天见"
+    ]
+  },
+  {
+    "name": "buona giornata",
+    "trans": [
+      "祝你今天愉快"
+    ]
+  },
+  {
+    "name": "buona serata",
+    "trans": [
+      "祝你晚上愉快"
+    ]
+  },
+  {
+    "name": "in bocca al lupo",
+    "trans": [
+      "祝你好运"
+    ]
+  },
+  {
+    "name": "crepi il lupo",
+    "trans": [
+      "谢谢（回应祝好运）"
+    ]
+  },
+  {
+    "name": "tutto a posto",
+    "trans": [
+      "一切都好"
+    ]
+  },
+  {
+    "name": "non fa niente",
+    "trans": [
+      "没关系"
+    ]
+  },
+  {
+    "name": "chiamo un taxi",
+    "trans": [
+      "我叫一辆出租车"
+    ]
+  },
+  {
+    "name": "vorrei prenotare",
+    "trans": [
+      "我想预订"
+    ]
+  },
+  {
+    "name": "per stanotte",
+    "trans": [
+      "今晚"
+    ]
+  },
+  {
+    "name": "una camera doppia",
+    "trans": [
+      "双人间"
+    ]
+  },
+  {
+    "name": "colazione inclusa",
+    "trans": [
+      "含早餐"
+    ]
+  },
+  {
+    "name": "a che ora parte",
+    "trans": [
+      "几点出发"
+    ]
+  },
+  {
+    "name": "binario tre",
+    "trans": [
+      "三号站台"
+    ]
+  },
+  {
+    "name": "devo scendere",
+    "trans": [
+      "我要下车"
+    ]
+  },
+  {
+    "name": "è questo il treno per Roma",
+    "trans": [
+      "这是去罗马的火车吗"
+    ]
+  }
 ]

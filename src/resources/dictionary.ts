@@ -4164,7 +4164,7 @@ const italianDicts: DictionaryResource[] = [
     category: '意大利语学习',
     tags: ['初级', 'A1-A2'],
     url: '/dicts/XinShiXianItalian_A1A2.json',
-    length: 889,
+    length: 890,
     language: 'it',
     languageCategory: 'it',
   },

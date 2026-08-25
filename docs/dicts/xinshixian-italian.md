@@ -14,7 +14,7 @@
 | 标签 | 初级、A1-A2 |
 | 语言 | `language: 'it'` / `languageCategory: 'it'` |
 | 文件 | `public/dicts/XinShiXianItalian_A1A2.json` |
-| 词条数 | 889 |
+| 词条数 | 890 |
 
 格式：
 
