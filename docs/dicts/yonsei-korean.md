@@ -10,12 +10,12 @@
 
 | 词典 id | 展示名 | 级别 | 文件 | 词条数 |
 | --- | --- | --- | --- | ---: |
-| `yonsei-korean-1` | 延世韩国语 1 | 初级 | `public/dicts/YonseiKorean1.json` | 1064 |
-| `yonsei-korean-2` | 延世韩国语 2 | 初级 | `public/dicts/YonseiKorean2.json` | 877 |
-| `yonsei-korean-3` | 延世韩国语 3 | 中级 | `public/dicts/YonseiKorean3.json` | 605 |
-| `yonsei-korean-4` | 延世韩国语 4 | 中级 | `public/dicts/YonseiKorean4.json` | 560 |
-| `yonsei-korean-5` | 延世韩国语 5 | 高级 | `public/dicts/YonseiKorean5.json` | 859 |
-| `yonsei-korean-6` | 延世韩国语 6 | 高级 | `public/dicts/YonseiKorean6.json` | 480 |
+| `yonsei-korean-1` | 延世韩国语 1 | 初级 | `public/dicts/YonseiKorean1.json` | 989 |
+| `yonsei-korean-2` | 延世韩国语 2 | 初级 | `public/dicts/YonseiKorean2.json` | 872 |
+| `yonsei-korean-3` | 延世韩国语 3 | 中级 | `public/dicts/YonseiKorean3.json` | 604 |
+| `yonsei-korean-4` | 延世韩国语 4 | 中级 | `public/dicts/YonseiKorean4.json` | 556 |
+| `yonsei-korean-5` | 延世韩国语 5 | 高级 | `public/dicts/YonseiKorean5.json` | 855 |
+| `yonsei-korean-6` | 延世韩国语 6 | 高级 | `public/dicts/YonseiKorean6.json` | 477 |
 
 合计 **4445** 条。级别划分：1–2 册初级，3–4 册中级，5–6 册高级。
 
