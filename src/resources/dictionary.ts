@@ -4155,6 +4155,21 @@ const indonesianDicts: DictionaryResource[] = [
   },
 ]
 
+// 波兰语常用词
+const polishDicts: DictionaryResource[] = [
+  {
+    id: 'polish_core',
+    name: '波兰语常用词',
+    description: '波兰语常用单词、短语及中文解释',
+    category: '波兰语学习',
+    tags: ['基础'],
+    url: '/dicts/polish.json',
+    length: 1264,
+    language: 'pl',
+    languageCategory: 'pl',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
@@ -4168,6 +4183,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...germanExam,
   ...kazakhHapinDicts,
   ...indonesianDicts,
+  ...polishDicts,
 
   // {
   //   id: 'zhtest',

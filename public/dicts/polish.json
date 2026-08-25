@@ -1,0 +1,7586 @@
+[
+    {
+        "name": "cześć",
+        "trans": [
+            "你好（非正式）"
+        ]
+    },
+    {
+        "name": "dzień dobry",
+        "trans": [
+            "早上好；您好"
+        ]
+    },
+    {
+        "name": "dobry wieczór",
+        "trans": [
+            "晚上好"
+        ]
+    },
+    {
+        "name": "dobranoc",
+        "trans": [
+            "晚安"
+        ]
+    },
+    {
+        "name": "do widzenia",
+        "trans": [
+            "再见"
+        ]
+    },
+    {
+        "name": "do zobaczenia",
+        "trans": [
+            "回头见"
+        ]
+    },
+    {
+        "name": "hej",
+        "trans": [
+            "嘿"
+        ]
+    },
+    {
+        "name": "witam",
+        "trans": [
+            "欢迎；您好"
+        ]
+    },
+    {
+        "name": "dziękuję",
+        "trans": [
+            "谢谢"
+        ]
+    },
+    {
+        "name": "dziękuję bardzo",
+        "trans": [
+            "非常感谢"
+        ]
+    },
+    {
+        "name": "dzięki",
+        "trans": [
+            "谢谢（口语）"
+        ]
+    },
+    {
+        "name": "proszę",
+        "trans": [
+            "请；不客气"
+        ]
+    },
+    {
+        "name": "poproszę",
+        "trans": [
+            "请给我"
+        ]
+    },
+    {
+        "name": "przepraszam",
+        "trans": [
+            "对不起；借过"
+        ]
+    },
+    {
+        "name": "nie ma za co",
+        "trans": [
+            "不客气"
+        ]
+    },
+    {
+        "name": "tak",
+        "trans": [
+            "是；是的"
+        ]
+    },
+    {
+        "name": "nie",
+        "trans": [
+            "不；不是"
+        ]
+    },
+    {
+        "name": "może",
+        "trans": [
+            "也许；可以"
+        ]
+    },
+    {
+        "name": "jasne",
+        "trans": [
+            "当然；清楚"
+        ]
+    },
+    {
+        "name": "oczywiście",
+        "trans": [
+            "当然"
+        ]
+    },
+    {
+        "name": "dobrze",
+        "trans": [
+            "好的；好"
+        ]
+    },
+    {
+        "name": "źle",
+        "trans": [
+            "不好；糟糕"
+        ]
+    },
+    {
+        "name": "świetnie",
+        "trans": [
+            "好极了"
+        ]
+    },
+    {
+        "name": "super",
+        "trans": [
+            "太好了"
+        ]
+    },
+    {
+        "name": "smacznego",
+        "trans": [
+            "祝你好胃口"
+        ]
+    },
+    {
+        "name": "na zdrowie",
+        "trans": [
+            "干杯；保重"
+        ]
+    },
+    {
+        "name": "gratulacje",
+        "trans": [
+            "恭喜"
+        ]
+    },
+    {
+        "name": "powodzenia",
+        "trans": [
+            "祝你好运"
+        ]
+    },
+    {
+        "name": "sto lat",
+        "trans": [
+            "生日快乐；长命百岁"
+        ]
+    },
+    {
+        "name": "miło mi",
+        "trans": [
+            "很高兴认识你"
+        ]
+    },
+    {
+        "name": "jak się masz",
+        "trans": [
+            "你好吗"
+        ]
+    },
+    {
+        "name": "co słychać",
+        "trans": [
+            "最近怎么样"
+        ]
+    },
+    {
+        "name": "rozumiem",
+        "trans": [
+            "我明白"
+        ]
+    },
+    {
+        "name": "nie rozumiem",
+        "trans": [
+            "我不明白"
+        ]
+    },
+    {
+        "name": "nie wiem",
+        "trans": [
+            "我不知道"
+        ]
+    },
+    {
+        "name": "pomocy",
+        "trans": [
+            "救命；帮忙"
+        ]
+    },
+    {
+        "name": "ja",
+        "trans": [
+            "我"
+        ]
+    },
+    {
+        "name": "ty",
+        "trans": [
+            "你"
+        ]
+    },
+    {
+        "name": "on",
+        "trans": [
+            "他"
+        ]
+    },
+    {
+        "name": "ona",
+        "trans": [
+            "她"
+        ]
+    },
+    {
+        "name": "ono",
+        "trans": [
+            "它"
+        ]
+    },
+    {
+        "name": "my",
+        "trans": [
+            "我们"
+        ]
+    },
+    {
+        "name": "wy",
+        "trans": [
+            "你们"
+        ]
+    },
+    {
+        "name": "oni",
+        "trans": [
+            "他们"
+        ]
+    },
+    {
+        "name": "one",
+        "trans": [
+            "她们；它们"
+        ]
+    },
+    {
+        "name": "mnie",
+        "trans": [
+            "我（宾格/属格）"
+        ]
+    },
+    {
+        "name": "mi",
+        "trans": [
+            "我（与格）"
+        ]
+    },
+    {
+        "name": "cię",
+        "trans": [
+            "你（宾格）"
+        ]
+    },
+    {
+        "name": "ci",
+        "trans": [
+            "你（与格）"
+        ]
+    },
+    {
+        "name": "go",
+        "trans": [
+            "他（宾格）"
+        ]
+    },
+    {
+        "name": "jego",
+        "trans": [
+            "他的；他（属格）"
+        ]
+    },
+    {
+        "name": "mu",
+        "trans": [
+            "他（与格）"
+        ]
+    },
+    {
+        "name": "ją",
+        "trans": [
+            "她（宾格）"
+        ]
+    },
+    {
+        "name": "jej",
+        "trans": [
+            "她的；她（与格）"
+        ]
+    },
+    {
+        "name": "nas",
+        "trans": [
+            "我们（宾格/属格）"
+        ]
+    },
+    {
+        "name": "nam",
+        "trans": [
+            "我们（与格）"
+        ]
+    },
+    {
+        "name": "was",
+        "trans": [
+            "你们（宾格/属格）"
+        ]
+    },
+    {
+        "name": "wam",
+        "trans": [
+            "你们（与格）"
+        ]
+    },
+    {
+        "name": "ich",
+        "trans": [
+            "他们的；他们（属格）"
+        ]
+    },
+    {
+        "name": "im",
+        "trans": [
+            "他们（与格）"
+        ]
+    },
+    {
+        "name": "siebie",
+        "trans": [
+            "自己"
+        ]
+    },
+    {
+        "name": "się",
+        "trans": [
+            "自己（反身）"
+        ]
+    },
+    {
+        "name": "mój",
+        "trans": [
+            "我的（阳性）"
+        ]
+    },
+    {
+        "name": "moja",
+        "trans": [
+            "我的（阴性）"
+        ]
+    },
+    {
+        "name": "moje",
+        "trans": [
+            "我的（中性/复数）"
+        ]
+    },
+    {
+        "name": "twój",
+        "trans": [
+            "你的（阳性）"
+        ]
+    },
+    {
+        "name": "twoja",
+        "trans": [
+            "你的（阴性）"
+        ]
+    },
+    {
+        "name": "twoje",
+        "trans": [
+            "你的（中性/复数）"
+        ]
+    },
+    {
+        "name": "nasz",
+        "trans": [
+            "我们的（阳性）"
+        ]
+    },
+    {
+        "name": "nasza",
+        "trans": [
+            "我们的（阴性）"
+        ]
+    },
+    {
+        "name": "nasze",
+        "trans": [
+            "我们的（中性/复数）"
+        ]
+    },
+    {
+        "name": "wasz",
+        "trans": [
+            "你们的（阳性）"
+        ]
+    },
+    {
+        "name": "ten",
+        "trans": [
+            "这个（阳性）"
+        ]
+    },
+    {
+        "name": "ta",
+        "trans": [
+            "这个（阴性）"
+        ]
+    },
+    {
+        "name": "to",
+        "trans": [
+            "这个（中性）；这"
+        ]
+    },
+    {
+        "name": "tamten",
+        "trans": [
+            "那个（阳性）"
+        ]
+    },
+    {
+        "name": "kto",
+        "trans": [
+            "谁"
+        ]
+    },
+    {
+        "name": "co",
+        "trans": [
+            "什么"
+        ]
+    },
+    {
+        "name": "który",
+        "trans": [
+            "哪一个（阳性）"
+        ]
+    },
+    {
+        "name": "która",
+        "trans": [
+            "哪一个（阴性）"
+        ]
+    },
+    {
+        "name": "które",
+        "trans": [
+            "哪一个（中性）"
+        ]
+    },
+    {
+        "name": "jaki",
+        "trans": [
+            "什么样的"
+        ]
+    },
+    {
+        "name": "wszyscy",
+        "trans": [
+            "所有人"
+        ]
+    },
+    {
+        "name": "wszystko",
+        "trans": [
+            "一切；所有东西"
+        ]
+    },
+    {
+        "name": "nic",
+        "trans": [
+            "没有什么"
+        ]
+    },
+    {
+        "name": "nikt",
+        "trans": [
+            "没有人"
+        ]
+    },
+    {
+        "name": "coś",
+        "trans": [
+            "某事；某物"
+        ]
+    },
+    {
+        "name": "ktoś",
+        "trans": [
+            "某人"
+        ]
+    },
+    {
+        "name": "inny",
+        "trans": [
+            "别的；另一个"
+        ]
+    },
+    {
+        "name": "gdzie",
+        "trans": [
+            "在哪里"
+        ]
+    },
+    {
+        "name": "kiedy",
+        "trans": [
+            "什么时候"
+        ]
+    },
+    {
+        "name": "dlaczego",
+        "trans": [
+            "为什么"
+        ]
+    },
+    {
+        "name": "czemu",
+        "trans": [
+            "为什么（口语）"
+        ]
+    },
+    {
+        "name": "jak",
+        "trans": [
+            "怎样；如何"
+        ]
+    },
+    {
+        "name": "ile",
+        "trans": [
+            "多少"
+        ]
+    },
+    {
+        "name": "skąd",
+        "trans": [
+            "从哪里"
+        ]
+    },
+    {
+        "name": "dokąd",
+        "trans": [
+            "去哪里"
+        ]
+    },
+    {
+        "name": "czy",
+        "trans": [
+            "是否"
+        ]
+    },
+    {
+        "name": "i",
+        "trans": [
+            "和；与"
+        ]
+    },
+    {
+        "name": "oraz",
+        "trans": [
+            "以及"
+        ]
+    },
+    {
+        "name": "a",
+        "trans": [
+            "而；但是"
+        ]
+    },
+    {
+        "name": "ale",
+        "trans": [
+            "但是"
+        ]
+    },
+    {
+        "name": "lub",
+        "trans": [
+            "或者"
+        ]
+    },
+    {
+        "name": "albo",
+        "trans": [
+            "或者；要么"
+        ]
+    },
+    {
+        "name": "że",
+        "trans": [
+            "（引导从句）……"
+        ]
+    },
+    {
+        "name": "bo",
+        "trans": [
+            "因为"
+        ]
+    },
+    {
+        "name": "ponieważ",
+        "trans": [
+            "因为"
+        ]
+    },
+    {
+        "name": "więc",
+        "trans": [
+            "所以"
+        ]
+    },
+    {
+        "name": "dlatego",
+        "trans": [
+            "因此"
+        ]
+    },
+    {
+        "name": "jeśli",
+        "trans": [
+            "如果"
+        ]
+    },
+    {
+        "name": "jeżeli",
+        "trans": [
+            "如果"
+        ]
+    },
+    {
+        "name": "gdy",
+        "trans": [
+            "当……时"
+        ]
+    },
+    {
+        "name": "zanim",
+        "trans": [
+            "在……之前"
+        ]
+    },
+    {
+        "name": "choć",
+        "trans": [
+            "虽然"
+        ]
+    },
+    {
+        "name": "chociaż",
+        "trans": [
+            "虽然"
+        ]
+    },
+    {
+        "name": "jednak",
+        "trans": [
+            "然而"
+        ]
+    },
+    {
+        "name": "też",
+        "trans": [
+            "也"
+        ]
+    },
+    {
+        "name": "także",
+        "trans": [
+            "也"
+        ]
+    },
+    {
+        "name": "również",
+        "trans": [
+            "同样；也"
+        ]
+    },
+    {
+        "name": "ani",
+        "trans": [
+            "既不……也不"
+        ]
+    },
+    {
+        "name": "żeby",
+        "trans": [
+            "为了；以便"
+        ]
+    },
+    {
+        "name": "aby",
+        "trans": [
+            "为了"
+        ]
+    },
+    {
+        "name": "w",
+        "trans": [
+            "在……里"
+        ]
+    },
+    {
+        "name": "na",
+        "trans": [
+            "在……上；到"
+        ]
+    },
+    {
+        "name": "do",
+        "trans": [
+            "到；向"
+        ]
+    },
+    {
+        "name": "z",
+        "trans": [
+            "从；和；用"
+        ]
+    },
+    {
+        "name": "ze",
+        "trans": [
+            "从；和（z 的变体）"
+        ]
+    },
+    {
+        "name": "od",
+        "trans": [
+            "从；自"
+        ]
+    },
+    {
+        "name": "po",
+        "trans": [
+            "在……之后；沿着"
+        ]
+    },
+    {
+        "name": "za",
+        "trans": [
+            "在……后面；为了"
+        ]
+    },
+    {
+        "name": "przed",
+        "trans": [
+            "在……前面；在……之前"
+        ]
+    },
+    {
+        "name": "pod",
+        "trans": [
+            "在……下面"
+        ]
+    },
+    {
+        "name": "nad",
+        "trans": [
+            "在……上方"
+        ]
+    },
+    {
+        "name": "przy",
+        "trans": [
+            "在……旁边"
+        ]
+    },
+    {
+        "name": "bez",
+        "trans": [
+            "没有"
+        ]
+    },
+    {
+        "name": "dla",
+        "trans": [
+            "为了；给"
+        ]
+    },
+    {
+        "name": "o",
+        "trans": [
+            "关于；在（点钟）"
+        ]
+    },
+    {
+        "name": "u",
+        "trans": [
+            "在（某人处）"
+        ]
+    },
+    {
+        "name": "przez",
+        "trans": [
+            "通过；穿过"
+        ]
+    },
+    {
+        "name": "między",
+        "trans": [
+            "在……之间"
+        ]
+    },
+    {
+        "name": "wśród",
+        "trans": [
+            "在……之中"
+        ]
+    },
+    {
+        "name": "przeciw",
+        "trans": [
+            "反对"
+        ]
+    },
+    {
+        "name": "podczas",
+        "trans": [
+            "在……期间"
+        ]
+    },
+    {
+        "name": "według",
+        "trans": [
+            "根据"
+        ]
+    },
+    {
+        "name": "koło",
+        "trans": [
+            "在……附近；轮子"
+        ]
+    },
+    {
+        "name": "obok",
+        "trans": [
+            "在旁边"
+        ]
+    },
+    {
+        "name": "zamiast",
+        "trans": [
+            "而不是"
+        ]
+    },
+    {
+        "name": "oprócz",
+        "trans": [
+            "除了"
+        ]
+    },
+    {
+        "name": "zero",
+        "trans": [
+            "零"
+        ]
+    },
+    {
+        "name": "jeden",
+        "trans": [
+            "一"
+        ]
+    },
+    {
+        "name": "dwa",
+        "trans": [
+            "二"
+        ]
+    },
+    {
+        "name": "trzy",
+        "trans": [
+            "三"
+        ]
+    },
+    {
+        "name": "cztery",
+        "trans": [
+            "四"
+        ]
+    },
+    {
+        "name": "pięć",
+        "trans": [
+            "五"
+        ]
+    },
+    {
+        "name": "sześć",
+        "trans": [
+            "六"
+        ]
+    },
+    {
+        "name": "siedem",
+        "trans": [
+            "七"
+        ]
+    },
+    {
+        "name": "osiem",
+        "trans": [
+            "八"
+        ]
+    },
+    {
+        "name": "dziewięć",
+        "trans": [
+            "九"
+        ]
+    },
+    {
+        "name": "dziesięć",
+        "trans": [
+            "十"
+        ]
+    },
+    {
+        "name": "jedenaście",
+        "trans": [
+            "十一"
+        ]
+    },
+    {
+        "name": "dwanaście",
+        "trans": [
+            "十二"
+        ]
+    },
+    {
+        "name": "trzynaście",
+        "trans": [
+            "十三"
+        ]
+    },
+    {
+        "name": "czternaście",
+        "trans": [
+            "十四"
+        ]
+    },
+    {
+        "name": "piętnaście",
+        "trans": [
+            "十五"
+        ]
+    },
+    {
+        "name": "szesnaście",
+        "trans": [
+            "十六"
+        ]
+    },
+    {
+        "name": "siedemnaście",
+        "trans": [
+            "十七"
+        ]
+    },
+    {
+        "name": "osiemnaście",
+        "trans": [
+            "十八"
+        ]
+    },
+    {
+        "name": "dziewiętnaście",
+        "trans": [
+            "十九"
+        ]
+    },
+    {
+        "name": "dwadzieścia",
+        "trans": [
+            "二十"
+        ]
+    },
+    {
+        "name": "trzydzieści",
+        "trans": [
+            "三十"
+        ]
+    },
+    {
+        "name": "czterdzieści",
+        "trans": [
+            "四十"
+        ]
+    },
+    {
+        "name": "pięćdziesiąt",
+        "trans": [
+            "五十"
+        ]
+    },
+    {
+        "name": "sześćdziesiąt",
+        "trans": [
+            "六十"
+        ]
+    },
+    {
+        "name": "siedemdziesiąt",
+        "trans": [
+            "七十"
+        ]
+    },
+    {
+        "name": "osiemdziesiąt",
+        "trans": [
+            "八十"
+        ]
+    },
+    {
+        "name": "dziewięćdziesiąt",
+        "trans": [
+            "九十"
+        ]
+    },
+    {
+        "name": "sto",
+        "trans": [
+            "一百"
+        ]
+    },
+    {
+        "name": "dwieście",
+        "trans": [
+            "二百"
+        ]
+    },
+    {
+        "name": "trzysta",
+        "trans": [
+            "三百"
+        ]
+    },
+    {
+        "name": "tysiąc",
+        "trans": [
+            "一千"
+        ]
+    },
+    {
+        "name": "milion",
+        "trans": [
+            "一百万"
+        ]
+    },
+    {
+        "name": "pierwszy",
+        "trans": [
+            "第一"
+        ]
+    },
+    {
+        "name": "drugi",
+        "trans": [
+            "第二"
+        ]
+    },
+    {
+        "name": "trzeci",
+        "trans": [
+            "第三"
+        ]
+    },
+    {
+        "name": "czwarty",
+        "trans": [
+            "第四"
+        ]
+    },
+    {
+        "name": "piąty",
+        "trans": [
+            "第五"
+        ]
+    },
+    {
+        "name": "ostatni",
+        "trans": [
+            "最后的"
+        ]
+    },
+    {
+        "name": "czas",
+        "trans": [
+            "时间"
+        ]
+    },
+    {
+        "name": "godzina",
+        "trans": [
+            "小时；钟点"
+        ]
+    },
+    {
+        "name": "minuta",
+        "trans": [
+            "分钟"
+        ]
+    },
+    {
+        "name": "sekunda",
+        "trans": [
+            "秒"
+        ]
+    },
+    {
+        "name": "dzień",
+        "trans": [
+            "天；白天"
+        ]
+    },
+    {
+        "name": "noc",
+        "trans": [
+            "夜晚"
+        ]
+    },
+    {
+        "name": "rano",
+        "trans": [
+            "早上"
+        ]
+    },
+    {
+        "name": "wieczór",
+        "trans": [
+            "傍晚"
+        ]
+    },
+    {
+        "name": "południe",
+        "trans": [
+            "中午；南方"
+        ]
+    },
+    {
+        "name": "północ",
+        "trans": [
+            "午夜；北方"
+        ]
+    },
+    {
+        "name": "tydzień",
+        "trans": [
+            "星期；周"
+        ]
+    },
+    {
+        "name": "miesiąc",
+        "trans": [
+            "月"
+        ]
+    },
+    {
+        "name": "rok",
+        "trans": [
+            "年"
+        ]
+    },
+    {
+        "name": "wiek",
+        "trans": [
+            "世纪；年龄"
+        ]
+    },
+    {
+        "name": "chwila",
+        "trans": [
+            "片刻"
+        ]
+    },
+    {
+        "name": "moment",
+        "trans": [
+            "时刻"
+        ]
+    },
+    {
+        "name": "dzisiaj",
+        "trans": [
+            "今天"
+        ]
+    },
+    {
+        "name": "dziś",
+        "trans": [
+            "今天（口语）"
+        ]
+    },
+    {
+        "name": "wczoraj",
+        "trans": [
+            "昨天"
+        ]
+    },
+    {
+        "name": "jutro",
+        "trans": [
+            "明天"
+        ]
+    },
+    {
+        "name": "teraz",
+        "trans": [
+            "现在"
+        ]
+    },
+    {
+        "name": "wtedy",
+        "trans": [
+            "那时"
+        ]
+    },
+    {
+        "name": "potem",
+        "trans": [
+            "然后"
+        ]
+    },
+    {
+        "name": "później",
+        "trans": [
+            "稍后"
+        ]
+    },
+    {
+        "name": "wcześniej",
+        "trans": [
+            "更早"
+        ]
+    },
+    {
+        "name": "zawsze",
+        "trans": [
+            "总是"
+        ]
+    },
+    {
+        "name": "nigdy",
+        "trans": [
+            "从不"
+        ]
+    },
+    {
+        "name": "często",
+        "trans": [
+            "经常"
+        ]
+    },
+    {
+        "name": "rzadko",
+        "trans": [
+            "很少"
+        ]
+    },
+    {
+        "name": "czasem",
+        "trans": [
+            "有时"
+        ]
+    },
+    {
+        "name": "czasami",
+        "trans": [
+            "有时候"
+        ]
+    },
+    {
+        "name": "już",
+        "trans": [
+            "已经"
+        ]
+    },
+    {
+        "name": "jeszcze",
+        "trans": [
+            "还；仍"
+        ]
+    },
+    {
+        "name": "nadal",
+        "trans": [
+            "仍然"
+        ]
+    },
+    {
+        "name": "zaraz",
+        "trans": [
+            "马上"
+        ]
+    },
+    {
+        "name": "wkrótce",
+        "trans": [
+            "很快"
+        ]
+    },
+    {
+        "name": "poniedziałek",
+        "trans": [
+            "星期一"
+        ]
+    },
+    {
+        "name": "wtorek",
+        "trans": [
+            "星期二"
+        ]
+    },
+    {
+        "name": "środa",
+        "trans": [
+            "星期三"
+        ]
+    },
+    {
+        "name": "czwartek",
+        "trans": [
+            "星期四"
+        ]
+    },
+    {
+        "name": "piątek",
+        "trans": [
+            "星期五"
+        ]
+    },
+    {
+        "name": "sobota",
+        "trans": [
+            "星期六"
+        ]
+    },
+    {
+        "name": "niedziela",
+        "trans": [
+            "星期日"
+        ]
+    },
+    {
+        "name": "styczeń",
+        "trans": [
+            "一月"
+        ]
+    },
+    {
+        "name": "luty",
+        "trans": [
+            "二月"
+        ]
+    },
+    {
+        "name": "marzec",
+        "trans": [
+            "三月"
+        ]
+    },
+    {
+        "name": "kwiecień",
+        "trans": [
+            "四月"
+        ]
+    },
+    {
+        "name": "maj",
+        "trans": [
+            "五月"
+        ]
+    },
+    {
+        "name": "czerwiec",
+        "trans": [
+            "六月"
+        ]
+    },
+    {
+        "name": "lipiec",
+        "trans": [
+            "七月"
+        ]
+    },
+    {
+        "name": "sierpień",
+        "trans": [
+            "八月"
+        ]
+    },
+    {
+        "name": "wrzesień",
+        "trans": [
+            "九月"
+        ]
+    },
+    {
+        "name": "październik",
+        "trans": [
+            "十月"
+        ]
+    },
+    {
+        "name": "listopad",
+        "trans": [
+            "十一月"
+        ]
+    },
+    {
+        "name": "grudzień",
+        "trans": [
+            "十二月"
+        ]
+    },
+    {
+        "name": "wiosna",
+        "trans": [
+            "春天"
+        ]
+    },
+    {
+        "name": "lato",
+        "trans": [
+            "夏天"
+        ]
+    },
+    {
+        "name": "jesień",
+        "trans": [
+            "秋天"
+        ]
+    },
+    {
+        "name": "zima",
+        "trans": [
+            "冬天"
+        ]
+    },
+    {
+        "name": "kalendarz",
+        "trans": [
+            "日历"
+        ]
+    },
+    {
+        "name": "data",
+        "trans": [
+            "日期"
+        ]
+    },
+    {
+        "name": "termin",
+        "trans": [
+            "期限；约会"
+        ]
+    },
+    {
+        "name": "urodziny",
+        "trans": [
+            "生日"
+        ]
+    },
+    {
+        "name": "święto",
+        "trans": [
+            "节日"
+        ]
+    },
+    {
+        "name": "weekend",
+        "trans": [
+            "周末"
+        ]
+    },
+    {
+        "name": "rodzina",
+        "trans": [
+            "家庭"
+        ]
+    },
+    {
+        "name": "matka",
+        "trans": [
+            "母亲"
+        ]
+    },
+    {
+        "name": "mama",
+        "trans": [
+            "妈妈"
+        ]
+    },
+    {
+        "name": "ojciec",
+        "trans": [
+            "父亲"
+        ]
+    },
+    {
+        "name": "tata",
+        "trans": [
+            "爸爸"
+        ]
+    },
+    {
+        "name": "rodzic",
+        "trans": [
+            "父亲或母亲"
+        ]
+    },
+    {
+        "name": "rodzice",
+        "trans": [
+            "父母"
+        ]
+    },
+    {
+        "name": "syn",
+        "trans": [
+            "儿子"
+        ]
+    },
+    {
+        "name": "córka",
+        "trans": [
+            "女儿"
+        ]
+    },
+    {
+        "name": "dziecko",
+        "trans": [
+            "孩子"
+        ]
+    },
+    {
+        "name": "dzieci",
+        "trans": [
+            "孩子们"
+        ]
+    },
+    {
+        "name": "brat",
+        "trans": [
+            "兄弟"
+        ]
+    },
+    {
+        "name": "siostra",
+        "trans": [
+            "姐妹"
+        ]
+    },
+    {
+        "name": "dziadek",
+        "trans": [
+            "祖父"
+        ]
+    },
+    {
+        "name": "babcia",
+        "trans": [
+            "祖母"
+        ]
+    },
+    {
+        "name": "wnuk",
+        "trans": [
+            "孙子"
+        ]
+    },
+    {
+        "name": "wnuczka",
+        "trans": [
+            "孙女"
+        ]
+    },
+    {
+        "name": "wujek",
+        "trans": [
+            "叔叔；舅舅"
+        ]
+    },
+    {
+        "name": "ciocia",
+        "trans": [
+            "阿姨；姑姑"
+        ]
+    },
+    {
+        "name": "kuzyn",
+        "trans": [
+            "堂/表兄弟"
+        ]
+    },
+    {
+        "name": "kuzynka",
+        "trans": [
+            "堂/表姐妹"
+        ]
+    },
+    {
+        "name": "mąż",
+        "trans": [
+            "丈夫"
+        ]
+    },
+    {
+        "name": "żona",
+        "trans": [
+            "妻子"
+        ]
+    },
+    {
+        "name": "chłopak",
+        "trans": [
+            "男朋友；小伙子"
+        ]
+    },
+    {
+        "name": "dziewczyna",
+        "trans": [
+            "女朋友；姑娘"
+        ]
+    },
+    {
+        "name": "przyjaciel",
+        "trans": [
+            "朋友（男性）"
+        ]
+    },
+    {
+        "name": "przyjaciółka",
+        "trans": [
+            "朋友（女性）"
+        ]
+    },
+    {
+        "name": "kolega",
+        "trans": [
+            "同事；同学（男性）"
+        ]
+    },
+    {
+        "name": "koleżanka",
+        "trans": [
+            "同事；同学（女性）"
+        ]
+    },
+    {
+        "name": "sąsiad",
+        "trans": [
+            "邻居（男性）"
+        ]
+    },
+    {
+        "name": "sąsiadka",
+        "trans": [
+            "邻居（女性）"
+        ]
+    },
+    {
+        "name": "gość",
+        "trans": [
+            "客人"
+        ]
+    },
+    {
+        "name": "człowiek",
+        "trans": [
+            "人；人类"
+        ]
+    },
+    {
+        "name": "osoba",
+        "trans": [
+            "人；人士"
+        ]
+    },
+    {
+        "name": "ludzie",
+        "trans": [
+            "人们"
+        ]
+    },
+    {
+        "name": "mężczyzna",
+        "trans": [
+            "男人"
+        ]
+    },
+    {
+        "name": "kobieta",
+        "trans": [
+            "女人"
+        ]
+    },
+    {
+        "name": "pan",
+        "trans": [
+            "先生"
+        ]
+    },
+    {
+        "name": "pani",
+        "trans": [
+            "女士"
+        ]
+    },
+    {
+        "name": "chłopiec",
+        "trans": [
+            "男孩"
+        ]
+    },
+    {
+        "name": "dziewczynka",
+        "trans": [
+            "女孩"
+        ]
+    },
+    {
+        "name": "niemowlę",
+        "trans": [
+            "婴儿"
+        ]
+    },
+    {
+        "name": "młodzież",
+        "trans": [
+            "年轻人"
+        ]
+    },
+    {
+        "name": "dorosły",
+        "trans": [
+            "成年人"
+        ]
+    },
+    {
+        "name": "student",
+        "trans": [
+            "大学生（男性）"
+        ]
+    },
+    {
+        "name": "studentka",
+        "trans": [
+            "大学生（女性）"
+        ]
+    },
+    {
+        "name": "uczeń",
+        "trans": [
+            "学生（男性）"
+        ]
+    },
+    {
+        "name": "uczennica",
+        "trans": [
+            "学生（女性）"
+        ]
+    },
+    {
+        "name": "nauczyciel",
+        "trans": [
+            "老师（男性）"
+        ]
+    },
+    {
+        "name": "nauczycielka",
+        "trans": [
+            "老师（女性）"
+        ]
+    },
+    {
+        "name": "profesor",
+        "trans": [
+            "教授"
+        ]
+    },
+    {
+        "name": "lekarz",
+        "trans": [
+            "医生（男性）"
+        ]
+    },
+    {
+        "name": "lekarka",
+        "trans": [
+            "医生（女性）"
+        ]
+    },
+    {
+        "name": "pielęgniarka",
+        "trans": [
+            "护士"
+        ]
+    },
+    {
+        "name": "inżynier",
+        "trans": [
+            "工程师"
+        ]
+    },
+    {
+        "name": "programista",
+        "trans": [
+            "程序员"
+        ]
+    },
+    {
+        "name": "kierowca",
+        "trans": [
+            "司机"
+        ]
+    },
+    {
+        "name": "kelner",
+        "trans": [
+            "服务员（男性）"
+        ]
+    },
+    {
+        "name": "kelnerka",
+        "trans": [
+            "服务员（女性）"
+        ]
+    },
+    {
+        "name": "kucharz",
+        "trans": [
+            "厨师"
+        ]
+    },
+    {
+        "name": "sprzedawca",
+        "trans": [
+            "售货员"
+        ]
+    },
+    {
+        "name": "policjant",
+        "trans": [
+            "警察"
+        ]
+    },
+    {
+        "name": "strażak",
+        "trans": [
+            "消防员"
+        ]
+    },
+    {
+        "name": "artysta",
+        "trans": [
+            "艺术家"
+        ]
+    },
+    {
+        "name": "muzyk",
+        "trans": [
+            "音乐家"
+        ]
+    },
+    {
+        "name": "pisarz",
+        "trans": [
+            "作家"
+        ]
+    },
+    {
+        "name": "dziennikarz",
+        "trans": [
+            "记者"
+        ]
+    },
+    {
+        "name": "prawnik",
+        "trans": [
+            "律师"
+        ]
+    },
+    {
+        "name": "rolnik",
+        "trans": [
+            "农民"
+        ]
+    },
+    {
+        "name": "szef",
+        "trans": [
+            "老板；上司"
+        ]
+    },
+    {
+        "name": "pracownik",
+        "trans": [
+            "员工"
+        ]
+    },
+    {
+        "name": "klient",
+        "trans": [
+            "顾客"
+        ]
+    },
+    {
+        "name": "turysta",
+        "trans": [
+            "游客"
+        ]
+    },
+    {
+        "name": "Polak",
+        "trans": [
+            "波兰人（男性）"
+        ]
+    },
+    {
+        "name": "Polka",
+        "trans": [
+            "波兰人（女性）"
+        ]
+    },
+    {
+        "name": "ciało",
+        "trans": [
+            "身体"
+        ]
+    },
+    {
+        "name": "głowa",
+        "trans": [
+            "头"
+        ]
+    },
+    {
+        "name": "twarz",
+        "trans": [
+            "脸"
+        ]
+    },
+    {
+        "name": "oko",
+        "trans": [
+            "眼睛"
+        ]
+    },
+    {
+        "name": "oczy",
+        "trans": [
+            "双眼"
+        ]
+    },
+    {
+        "name": "ucho",
+        "trans": [
+            "耳朵"
+        ]
+    },
+    {
+        "name": "nos",
+        "trans": [
+            "鼻子"
+        ]
+    },
+    {
+        "name": "usta",
+        "trans": [
+            "嘴"
+        ]
+    },
+    {
+        "name": "ząb",
+        "trans": [
+            "牙齿"
+        ]
+    },
+    {
+        "name": "język",
+        "trans": [
+            "舌头；语言"
+        ]
+    },
+    {
+        "name": "włosy",
+        "trans": [
+            "头发"
+        ]
+    },
+    {
+        "name": "szyja",
+        "trans": [
+            "脖子"
+        ]
+    },
+    {
+        "name": "ramię",
+        "trans": [
+            "肩膀；手臂"
+        ]
+    },
+    {
+        "name": "ręka",
+        "trans": [
+            "手；胳膊"
+        ]
+    },
+    {
+        "name": "dłoń",
+        "trans": [
+            "手掌"
+        ]
+    },
+    {
+        "name": "palec",
+        "trans": [
+            "手指；脚趾"
+        ]
+    },
+    {
+        "name": "serce",
+        "trans": [
+            "心脏；心"
+        ]
+    },
+    {
+        "name": "brzuch",
+        "trans": [
+            "肚子"
+        ]
+    },
+    {
+        "name": "plecy",
+        "trans": [
+            "后背"
+        ]
+    },
+    {
+        "name": "noga",
+        "trans": [
+            "腿"
+        ]
+    },
+    {
+        "name": "kolano",
+        "trans": [
+            "膝盖"
+        ]
+    },
+    {
+        "name": "stopa",
+        "trans": [
+            "脚"
+        ]
+    },
+    {
+        "name": "skóra",
+        "trans": [
+            "皮肤"
+        ]
+    },
+    {
+        "name": "krew",
+        "trans": [
+            "血"
+        ]
+    },
+    {
+        "name": "kość",
+        "trans": [
+            "骨头"
+        ]
+    },
+    {
+        "name": "mózg",
+        "trans": [
+            "大脑"
+        ]
+    },
+    {
+        "name": "gardło",
+        "trans": [
+            "喉咙"
+        ]
+    },
+    {
+        "name": "dom",
+        "trans": [
+            "房子；家"
+        ]
+    },
+    {
+        "name": "mieszkanie",
+        "trans": [
+            "公寓"
+        ]
+    },
+    {
+        "name": "pokój",
+        "trans": [
+            "房间；和平"
+        ]
+    },
+    {
+        "name": "kuchnia",
+        "trans": [
+            "厨房"
+        ]
+    },
+    {
+        "name": "łazienka",
+        "trans": [
+            "卫生间"
+        ]
+    },
+    {
+        "name": "sypialnia",
+        "trans": [
+            "卧室"
+        ]
+    },
+    {
+        "name": "salon",
+        "trans": [
+            "客厅"
+        ]
+    },
+    {
+        "name": "korytarz",
+        "trans": [
+            "走廊"
+        ]
+    },
+    {
+        "name": "balkon",
+        "trans": [
+            "阳台"
+        ]
+    },
+    {
+        "name": "ogród",
+        "trans": [
+            "花园"
+        ]
+    },
+    {
+        "name": "garaż",
+        "trans": [
+            "车库"
+        ]
+    },
+    {
+        "name": "drzwi",
+        "trans": [
+            "门"
+        ]
+    },
+    {
+        "name": "okno",
+        "trans": [
+            "窗户"
+        ]
+    },
+    {
+        "name": "ściana",
+        "trans": [
+            "墙"
+        ]
+    },
+    {
+        "name": "podłoga",
+        "trans": [
+            "地板"
+        ]
+    },
+    {
+        "name": "sufit",
+        "trans": [
+            "天花板"
+        ]
+    },
+    {
+        "name": "dach",
+        "trans": [
+            "屋顶"
+        ]
+    },
+    {
+        "name": "schody",
+        "trans": [
+            "楼梯"
+        ]
+    },
+    {
+        "name": "winda",
+        "trans": [
+            "电梯"
+        ]
+    },
+    {
+        "name": "klucz",
+        "trans": [
+            "钥匙"
+        ]
+    },
+    {
+        "name": "zamek",
+        "trans": [
+            "锁；城堡"
+        ]
+    },
+    {
+        "name": "lampa",
+        "trans": [
+            "灯"
+        ]
+    },
+    {
+        "name": "światło",
+        "trans": [
+            "光；灯"
+        ]
+    },
+    {
+        "name": "stół",
+        "trans": [
+            "桌子"
+        ]
+    },
+    {
+        "name": "krzesło",
+        "trans": [
+            "椅子"
+        ]
+    },
+    {
+        "name": "fotel",
+        "trans": [
+            "扶手椅"
+        ]
+    },
+    {
+        "name": "sofa",
+        "trans": [
+            "沙发"
+        ]
+    },
+    {
+        "name": "łóżko",
+        "trans": [
+            "床"
+        ]
+    },
+    {
+        "name": "szafa",
+        "trans": [
+            "衣柜"
+        ]
+    },
+    {
+        "name": "półka",
+        "trans": [
+            "架子"
+        ]
+    },
+    {
+        "name": "biurko",
+        "trans": [
+            "书桌"
+        ]
+    },
+    {
+        "name": "lustro",
+        "trans": [
+            "镜子"
+        ]
+    },
+    {
+        "name": "dywan",
+        "trans": [
+            "地毯"
+        ]
+    },
+    {
+        "name": "koc",
+        "trans": [
+            "毯子"
+        ]
+    },
+    {
+        "name": "poduszka",
+        "trans": [
+            "枕头"
+        ]
+    },
+    {
+        "name": "ręcznik",
+        "trans": [
+            "毛巾"
+        ]
+    },
+    {
+        "name": "mydło",
+        "trans": [
+            "肥皂"
+        ]
+    },
+    {
+        "name": "wanna",
+        "trans": [
+            "浴缸"
+        ]
+    },
+    {
+        "name": "prysznic",
+        "trans": [
+            "淋浴"
+        ]
+    },
+    {
+        "name": "toaleta",
+        "trans": [
+            "厕所"
+        ]
+    },
+    {
+        "name": "lodówka",
+        "trans": [
+            "冰箱"
+        ]
+    },
+    {
+        "name": "kuchenka",
+        "trans": [
+            "炉灶"
+        ]
+    },
+    {
+        "name": "piekarnik",
+        "trans": [
+            "烤箱"
+        ]
+    },
+    {
+        "name": "pralka",
+        "trans": [
+            "洗衣机"
+        ]
+    },
+    {
+        "name": "telewizor",
+        "trans": [
+            "电视"
+        ]
+    },
+    {
+        "name": "komputer",
+        "trans": [
+            "电脑"
+        ]
+    },
+    {
+        "name": "telefon",
+        "trans": [
+            "电话"
+        ]
+    },
+    {
+        "name": "jedzenie",
+        "trans": [
+            "食物"
+        ]
+    },
+    {
+        "name": "posiłek",
+        "trans": [
+            "一餐"
+        ]
+    },
+    {
+        "name": "śniadanie",
+        "trans": [
+            "早餐"
+        ]
+    },
+    {
+        "name": "obiad",
+        "trans": [
+            "午餐；正餐"
+        ]
+    },
+    {
+        "name": "kolacja",
+        "trans": [
+            "晚餐"
+        ]
+    },
+    {
+        "name": "chleb",
+        "trans": [
+            "面包"
+        ]
+    },
+    {
+        "name": "bułka",
+        "trans": [
+            "小面包"
+        ]
+    },
+    {
+        "name": "masło",
+        "trans": [
+            "黄油"
+        ]
+    },
+    {
+        "name": "ser",
+        "trans": [
+            "奶酪"
+        ]
+    },
+    {
+        "name": "mleko",
+        "trans": [
+            "牛奶"
+        ]
+    },
+    {
+        "name": "jajko",
+        "trans": [
+            "鸡蛋"
+        ]
+    },
+    {
+        "name": "mięso",
+        "trans": [
+            "肉"
+        ]
+    },
+    {
+        "name": "kurczak",
+        "trans": [
+            "鸡肉；鸡"
+        ]
+    },
+    {
+        "name": "wołowina",
+        "trans": [
+            "牛肉"
+        ]
+    },
+    {
+        "name": "wieprzowina",
+        "trans": [
+            "猪肉"
+        ]
+    },
+    {
+        "name": "ryba",
+        "trans": [
+            "鱼"
+        ]
+    },
+    {
+        "name": "kiełbasa",
+        "trans": [
+            "香肠"
+        ]
+    },
+    {
+        "name": "szynka",
+        "trans": [
+            "火腿"
+        ]
+    },
+    {
+        "name": "warzywo",
+        "trans": [
+            "蔬菜"
+        ]
+    },
+    {
+        "name": "owoc",
+        "trans": [
+            "水果"
+        ]
+    },
+    {
+        "name": "ziemniak",
+        "trans": [
+            "土豆"
+        ]
+    },
+    {
+        "name": "pomidor",
+        "trans": [
+            "番茄"
+        ]
+    },
+    {
+        "name": "ogórek",
+        "trans": [
+            "黄瓜"
+        ]
+    },
+    {
+        "name": "cebula",
+        "trans": [
+            "洋葱"
+        ]
+    },
+    {
+        "name": "czosnek",
+        "trans": [
+            "大蒜"
+        ]
+    },
+    {
+        "name": "marchew",
+        "trans": [
+            "胡萝卜"
+        ]
+    },
+    {
+        "name": "kapusta",
+        "trans": [
+            "卷心菜"
+        ]
+    },
+    {
+        "name": "sałata",
+        "trans": [
+            "生菜；沙拉"
+        ]
+    },
+    {
+        "name": "papryka",
+        "trans": [
+            "辣椒；甜椒"
+        ]
+    },
+    {
+        "name": "grzyb",
+        "trans": [
+            "蘑菇"
+        ]
+    },
+    {
+        "name": "jabłko",
+        "trans": [
+            "苹果"
+        ]
+    },
+    {
+        "name": "gruszka",
+        "trans": [
+            "梨"
+        ]
+    },
+    {
+        "name": "banan",
+        "trans": [
+            "香蕉"
+        ]
+    },
+    {
+        "name": "pomarańcza",
+        "trans": [
+            "橙子"
+        ]
+    },
+    {
+        "name": "cytryna",
+        "trans": [
+            "柠檬"
+        ]
+    },
+    {
+        "name": "truskawka",
+        "trans": [
+            "草莓"
+        ]
+    },
+    {
+        "name": "winogrono",
+        "trans": [
+            "葡萄"
+        ]
+    },
+    {
+        "name": "arbuz",
+        "trans": [
+            "西瓜"
+        ]
+    },
+    {
+        "name": "śliwka",
+        "trans": [
+            "李子"
+        ]
+    },
+    {
+        "name": "woda",
+        "trans": [
+            "水"
+        ]
+    },
+    {
+        "name": "sok",
+        "trans": [
+            "果汁"
+        ]
+    },
+    {
+        "name": "herbata",
+        "trans": [
+            "茶"
+        ]
+    },
+    {
+        "name": "kawa",
+        "trans": [
+            "咖啡"
+        ]
+    },
+    {
+        "name": "piwo",
+        "trans": [
+            "啤酒"
+        ]
+    },
+    {
+        "name": "wino",
+        "trans": [
+            "葡萄酒"
+        ]
+    },
+    {
+        "name": "zupa",
+        "trans": [
+            "汤"
+        ]
+    },
+    {
+        "name": "sałatka",
+        "trans": [
+            "沙拉"
+        ]
+    },
+    {
+        "name": "kanapka",
+        "trans": [
+            "三明治"
+        ]
+    },
+    {
+        "name": "pizza",
+        "trans": [
+            "披萨"
+        ]
+    },
+    {
+        "name": "makaron",
+        "trans": [
+            "意大利面；面条"
+        ]
+    },
+    {
+        "name": "ryż",
+        "trans": [
+            "米饭"
+        ]
+    },
+    {
+        "name": "cukier",
+        "trans": [
+            "糖"
+        ]
+    },
+    {
+        "name": "sól",
+        "trans": [
+            "盐"
+        ]
+    },
+    {
+        "name": "pieprz",
+        "trans": [
+            "胡椒"
+        ]
+    },
+    {
+        "name": "olej",
+        "trans": [
+            "油"
+        ]
+    },
+    {
+        "name": "ocet",
+        "trans": [
+            "醋"
+        ]
+    },
+    {
+        "name": "mąka",
+        "trans": [
+            "面粉"
+        ]
+    },
+    {
+        "name": "miód",
+        "trans": [
+            "蜂蜜"
+        ]
+    },
+    {
+        "name": "czekolada",
+        "trans": [
+            "巧克力"
+        ]
+    },
+    {
+        "name": "ciasto",
+        "trans": [
+            "蛋糕；面团"
+        ]
+    },
+    {
+        "name": "lody",
+        "trans": [
+            "冰淇淋"
+        ]
+    },
+    {
+        "name": "cukierek",
+        "trans": [
+            "糖果"
+        ]
+    },
+    {
+        "name": "głodny",
+        "trans": [
+            "饿的"
+        ]
+    },
+    {
+        "name": "spragniony",
+        "trans": [
+            "渴的"
+        ]
+    },
+    {
+        "name": "smaczny",
+        "trans": [
+            "好吃的"
+        ]
+    },
+    {
+        "name": "słodki",
+        "trans": [
+            "甜的"
+        ]
+    },
+    {
+        "name": "słony",
+        "trans": [
+            "咸的"
+        ]
+    },
+    {
+        "name": "kwaśny",
+        "trans": [
+            "酸的"
+        ]
+    },
+    {
+        "name": "ostry",
+        "trans": [
+            "辣的；尖锐的"
+        ]
+    },
+    {
+        "name": "ubranie",
+        "trans": [
+            "衣服"
+        ]
+    },
+    {
+        "name": "koszula",
+        "trans": [
+            "衬衫"
+        ]
+    },
+    {
+        "name": "spodnie",
+        "trans": [
+            "裤子"
+        ]
+    },
+    {
+        "name": "spódnica",
+        "trans": [
+            "裙子"
+        ]
+    },
+    {
+        "name": "sukienka",
+        "trans": [
+            "连衣裙"
+        ]
+    },
+    {
+        "name": "kurtka",
+        "trans": [
+            "夹克"
+        ]
+    },
+    {
+        "name": "płaszcz",
+        "trans": [
+            "大衣"
+        ]
+    },
+    {
+        "name": "sweter",
+        "trans": [
+            "毛衣"
+        ]
+    },
+    {
+        "name": "bluza",
+        "trans": [
+            "卫衣"
+        ]
+    },
+    {
+        "name": "but",
+        "trans": [
+            "鞋"
+        ]
+    },
+    {
+        "name": "buty",
+        "trans": [
+            "鞋子"
+        ]
+    },
+    {
+        "name": "skarpetki",
+        "trans": [
+            "袜子"
+        ]
+    },
+    {
+        "name": "czapka",
+        "trans": [
+            "帽子"
+        ]
+    },
+    {
+        "name": "szalik",
+        "trans": [
+            "围巾"
+        ]
+    },
+    {
+        "name": "rękawiczki",
+        "trans": [
+            "手套"
+        ]
+    },
+    {
+        "name": "pasek",
+        "trans": [
+            "腰带"
+        ]
+    },
+    {
+        "name": "torba",
+        "trans": [
+            "包"
+        ]
+    },
+    {
+        "name": "plecak",
+        "trans": [
+            "背包"
+        ]
+    },
+    {
+        "name": "okulary",
+        "trans": [
+            "眼镜"
+        ]
+    },
+    {
+        "name": "zegarek",
+        "trans": [
+            "手表"
+        ]
+    },
+    {
+        "name": "kolor",
+        "trans": [
+            "颜色"
+        ]
+    },
+    {
+        "name": "biały",
+        "trans": [
+            "白色的"
+        ]
+    },
+    {
+        "name": "czarny",
+        "trans": [
+            "黑色的"
+        ]
+    },
+    {
+        "name": "czerwony",
+        "trans": [
+            "红色的"
+        ]
+    },
+    {
+        "name": "niebieski",
+        "trans": [
+            "蓝色的"
+        ]
+    },
+    {
+        "name": "zielony",
+        "trans": [
+            "绿色的"
+        ]
+    },
+    {
+        "name": "żółty",
+        "trans": [
+            "黄色的"
+        ]
+    },
+    {
+        "name": "pomarańczowy",
+        "trans": [
+            "橙色的"
+        ]
+    },
+    {
+        "name": "różowy",
+        "trans": [
+            "粉色的"
+        ]
+    },
+    {
+        "name": "fioletowy",
+        "trans": [
+            "紫色的"
+        ]
+    },
+    {
+        "name": "brązowy",
+        "trans": [
+            "棕色的"
+        ]
+    },
+    {
+        "name": "szary",
+        "trans": [
+            "灰色的"
+        ]
+    },
+    {
+        "name": "złoty",
+        "trans": [
+            "金色的"
+        ]
+    },
+    {
+        "name": "srebrny",
+        "trans": [
+            "银色的"
+        ]
+    },
+    {
+        "name": "jasny",
+        "trans": [
+            "浅的；明亮的"
+        ]
+    },
+    {
+        "name": "ciemny",
+        "trans": [
+            "深的；黑暗的"
+        ]
+    },
+    {
+        "name": "natura",
+        "trans": [
+            "自然"
+        ]
+    },
+    {
+        "name": "świat",
+        "trans": [
+            "世界"
+        ]
+    },
+    {
+        "name": "ziemia",
+        "trans": [
+            "土地；地球"
+        ]
+    },
+    {
+        "name": "niebo",
+        "trans": [
+            "天空"
+        ]
+    },
+    {
+        "name": "słońce",
+        "trans": [
+            "太阳"
+        ]
+    },
+    {
+        "name": "księżyc",
+        "trans": [
+            "月亮"
+        ]
+    },
+    {
+        "name": "gwiazda",
+        "trans": [
+            "星星"
+        ]
+    },
+    {
+        "name": "chmura",
+        "trans": [
+            "云"
+        ]
+    },
+    {
+        "name": "deszcz",
+        "trans": [
+            "雨"
+        ]
+    },
+    {
+        "name": "śnieg",
+        "trans": [
+            "雪"
+        ]
+    },
+    {
+        "name": "wiatr",
+        "trans": [
+            "风"
+        ]
+    },
+    {
+        "name": "burza",
+        "trans": [
+            "暴风雨"
+        ]
+    },
+    {
+        "name": "piorun",
+        "trans": [
+            "闪电"
+        ]
+    },
+    {
+        "name": "tęcza",
+        "trans": [
+            "彩虹"
+        ]
+    },
+    {
+        "name": "powietrze",
+        "trans": [
+            "空气"
+        ]
+    },
+    {
+        "name": "ogień",
+        "trans": [
+            "火"
+        ]
+    },
+    {
+        "name": "morze",
+        "trans": [
+            "海"
+        ]
+    },
+    {
+        "name": "ocean",
+        "trans": [
+            "海洋"
+        ]
+    },
+    {
+        "name": "rzeka",
+        "trans": [
+            "河"
+        ]
+    },
+    {
+        "name": "jezioro",
+        "trans": [
+            "湖"
+        ]
+    },
+    {
+        "name": "góra",
+        "trans": [
+            "山"
+        ]
+    },
+    {
+        "name": "las",
+        "trans": [
+            "森林"
+        ]
+    },
+    {
+        "name": "drzewo",
+        "trans": [
+            "树"
+        ]
+    },
+    {
+        "name": "kwiat",
+        "trans": [
+            "花"
+        ]
+    },
+    {
+        "name": "trawa",
+        "trans": [
+            "草"
+        ]
+    },
+    {
+        "name": "liść",
+        "trans": [
+            "叶子"
+        ]
+    },
+    {
+        "name": "kamień",
+        "trans": [
+            "石头"
+        ]
+    },
+    {
+        "name": "piasek",
+        "trans": [
+            "沙子"
+        ]
+    },
+    {
+        "name": "wyspa",
+        "trans": [
+            "岛"
+        ]
+    },
+    {
+        "name": "plaża",
+        "trans": [
+            "海滩"
+        ]
+    },
+    {
+        "name": "pole",
+        "trans": [
+            "田地；领域"
+        ]
+    },
+    {
+        "name": "wieś",
+        "trans": [
+            "乡村"
+        ]
+    },
+    {
+        "name": "zwierzę",
+        "trans": [
+            "动物"
+        ]
+    },
+    {
+        "name": "pies",
+        "trans": [
+            "狗"
+        ]
+    },
+    {
+        "name": "kot",
+        "trans": [
+            "猫"
+        ]
+    },
+    {
+        "name": "ptak",
+        "trans": [
+            "鸟"
+        ]
+    },
+    {
+        "name": "koń",
+        "trans": [
+            "马"
+        ]
+    },
+    {
+        "name": "krowa",
+        "trans": [
+            "牛"
+        ]
+    },
+    {
+        "name": "świnia",
+        "trans": [
+            "猪"
+        ]
+    },
+    {
+        "name": "owca",
+        "trans": [
+            "羊"
+        ]
+    },
+    {
+        "name": "królik",
+        "trans": [
+            "兔子"
+        ]
+    },
+    {
+        "name": "mysz",
+        "trans": [
+            "老鼠"
+        ]
+    },
+    {
+        "name": "niedźwiedź",
+        "trans": [
+            "熊"
+        ]
+    },
+    {
+        "name": "wilk",
+        "trans": [
+            "狼"
+        ]
+    },
+    {
+        "name": "lis",
+        "trans": [
+            "狐狸"
+        ]
+    },
+    {
+        "name": "lew",
+        "trans": [
+            "狮子"
+        ]
+    },
+    {
+        "name": "słoń",
+        "trans": [
+            "大象"
+        ]
+    },
+    {
+        "name": "pszczoła",
+        "trans": [
+            "蜜蜂"
+        ]
+    },
+    {
+        "name": "motyl",
+        "trans": [
+            "蝴蝶"
+        ]
+    },
+    {
+        "name": "miasto",
+        "trans": [
+            "城市"
+        ]
+    },
+    {
+        "name": "ulica",
+        "trans": [
+            "街道"
+        ]
+    },
+    {
+        "name": "droga",
+        "trans": [
+            "道路"
+        ]
+    },
+    {
+        "name": "plac",
+        "trans": [
+            "广场"
+        ]
+    },
+    {
+        "name": "park",
+        "trans": [
+            "公园"
+        ]
+    },
+    {
+        "name": "most",
+        "trans": [
+            "桥"
+        ]
+    },
+    {
+        "name": "dworzec",
+        "trans": [
+            "火车站"
+        ]
+    },
+    {
+        "name": "stacja",
+        "trans": [
+            "车站"
+        ]
+    },
+    {
+        "name": "lotnisko",
+        "trans": [
+            "机场"
+        ]
+    },
+    {
+        "name": "samolot",
+        "trans": [
+            "飞机"
+        ]
+    },
+    {
+        "name": "pociąg",
+        "trans": [
+            "火车"
+        ]
+    },
+    {
+        "name": "autobus",
+        "trans": [
+            "公共汽车"
+        ]
+    },
+    {
+        "name": "tramwaj",
+        "trans": [
+            "有轨电车"
+        ]
+    },
+    {
+        "name": "metro",
+        "trans": [
+            "地铁"
+        ]
+    },
+    {
+        "name": "taksówka",
+        "trans": [
+            "出租车"
+        ]
+    },
+    {
+        "name": "samochód",
+        "trans": [
+            "汽车"
+        ]
+    },
+    {
+        "name": "rower",
+        "trans": [
+            "自行车"
+        ]
+    },
+    {
+        "name": "motocykl",
+        "trans": [
+            "摩托车"
+        ]
+    },
+    {
+        "name": "statek",
+        "trans": [
+            "船"
+        ]
+    },
+    {
+        "name": "bilet",
+        "trans": [
+            "票"
+        ]
+    },
+    {
+        "name": "paszport",
+        "trans": [
+            "护照"
+        ]
+    },
+    {
+        "name": "mapa",
+        "trans": [
+            "地图"
+        ]
+    },
+    {
+        "name": "hotel",
+        "trans": [
+            "酒店"
+        ]
+    },
+    {
+        "name": "restauracja",
+        "trans": [
+            "餐厅"
+        ]
+    },
+    {
+        "name": "kawiarnia",
+        "trans": [
+            "咖啡馆"
+        ]
+    },
+    {
+        "name": "bar",
+        "trans": [
+            "酒吧"
+        ]
+    },
+    {
+        "name": "sklep",
+        "trans": [
+            "商店"
+        ]
+    },
+    {
+        "name": "supermarket",
+        "trans": [
+            "超市"
+        ]
+    },
+    {
+        "name": "rynek",
+        "trans": [
+            "市场；集市广场"
+        ]
+    },
+    {
+        "name": "bank",
+        "trans": [
+            "银行"
+        ]
+    },
+    {
+        "name": "poczta",
+        "trans": [
+            "邮局"
+        ]
+    },
+    {
+        "name": "szpital",
+        "trans": [
+            "医院"
+        ]
+    },
+    {
+        "name": "apteka",
+        "trans": [
+            "药店"
+        ]
+    },
+    {
+        "name": "szkoła",
+        "trans": [
+            "学校"
+        ]
+    },
+    {
+        "name": "uniwersytet",
+        "trans": [
+            "大学"
+        ]
+    },
+    {
+        "name": "biblioteka",
+        "trans": [
+            "图书馆"
+        ]
+    },
+    {
+        "name": "muzeum",
+        "trans": [
+            "博物馆"
+        ]
+    },
+    {
+        "name": "kino",
+        "trans": [
+            "电影院"
+        ]
+    },
+    {
+        "name": "teatr",
+        "trans": [
+            "剧院"
+        ]
+    },
+    {
+        "name": "kościół",
+        "trans": [
+            "教堂"
+        ]
+    },
+    {
+        "name": "urząd",
+        "trans": [
+            "机关；办公室"
+        ]
+    },
+    {
+        "name": "policja",
+        "trans": [
+            "警察（机构）"
+        ]
+    },
+    {
+        "name": "parking",
+        "trans": [
+            "停车场"
+        ]
+    },
+    {
+        "name": "przystanek",
+        "trans": [
+            "公交站"
+        ]
+    },
+    {
+        "name": "kierunek",
+        "trans": [
+            "方向"
+        ]
+    },
+    {
+        "name": "lewo",
+        "trans": [
+            "左"
+        ]
+    },
+    {
+        "name": "prawo",
+        "trans": [
+            "右；法律"
+        ]
+    },
+    {
+        "name": "prosto",
+        "trans": [
+            "直走；直接"
+        ]
+    },
+    {
+        "name": "blisko",
+        "trans": [
+            "近"
+        ]
+    },
+    {
+        "name": "daleko",
+        "trans": [
+            "远"
+        ]
+    },
+    {
+        "name": "tutaj",
+        "trans": [
+            "这里"
+        ]
+    },
+    {
+        "name": "tam",
+        "trans": [
+            "那里"
+        ]
+    },
+    {
+        "name": "klasa",
+        "trans": [
+            "班级；教室"
+        ]
+    },
+    {
+        "name": "lekcja",
+        "trans": [
+            "课"
+        ]
+    },
+    {
+        "name": "egzamin",
+        "trans": [
+            "考试"
+        ]
+    },
+    {
+        "name": "test",
+        "trans": [
+            "测验"
+        ]
+    },
+    {
+        "name": "ocena",
+        "trans": [
+            "分数；评价"
+        ]
+    },
+    {
+        "name": "zadanie",
+        "trans": [
+            "作业；任务"
+        ]
+    },
+    {
+        "name": "praca domowa",
+        "trans": [
+            "家庭作业"
+        ]
+    },
+    {
+        "name": "książka",
+        "trans": [
+            "书"
+        ]
+    },
+    {
+        "name": "zeszyt",
+        "trans": [
+            "笔记本"
+        ]
+    },
+    {
+        "name": "długopis",
+        "trans": [
+            "圆珠笔"
+        ]
+    },
+    {
+        "name": "ołówek",
+        "trans": [
+            "铅笔"
+        ]
+    },
+    {
+        "name": "tablica",
+        "trans": [
+            "黑板"
+        ]
+    },
+    {
+        "name": "internet",
+        "trans": [
+            "互联网"
+        ]
+    },
+    {
+        "name": "matematyka",
+        "trans": [
+            "数学"
+        ]
+    },
+    {
+        "name": "historia",
+        "trans": [
+            "历史"
+        ]
+    },
+    {
+        "name": "geografia",
+        "trans": [
+            "地理"
+        ]
+    },
+    {
+        "name": "biologia",
+        "trans": [
+            "生物"
+        ]
+    },
+    {
+        "name": "chemia",
+        "trans": [
+            "化学"
+        ]
+    },
+    {
+        "name": "fizyka",
+        "trans": [
+            "物理"
+        ]
+    },
+    {
+        "name": "muzyka",
+        "trans": [
+            "音乐"
+        ]
+    },
+    {
+        "name": "sztuka",
+        "trans": [
+            "艺术"
+        ]
+    },
+    {
+        "name": "sport",
+        "trans": [
+            "体育"
+        ]
+    },
+    {
+        "name": "praca",
+        "trans": [
+            "工作"
+        ]
+    },
+    {
+        "name": "biuro",
+        "trans": [
+            "办公室"
+        ]
+    },
+    {
+        "name": "firma",
+        "trans": [
+            "公司"
+        ]
+    },
+    {
+        "name": "spotkanie",
+        "trans": [
+            "会议；见面"
+        ]
+    },
+    {
+        "name": "projekt",
+        "trans": [
+            "项目"
+        ]
+    },
+    {
+        "name": "umowa",
+        "trans": [
+            "合同"
+        ]
+    },
+    {
+        "name": "pensja",
+        "trans": [
+            "工资"
+        ]
+    },
+    {
+        "name": "urlop",
+        "trans": [
+            "假期"
+        ]
+    },
+    {
+        "name": "emerytura",
+        "trans": [
+            "退休；养老金"
+        ]
+    },
+    {
+        "name": "kariera",
+        "trans": [
+            "职业；事业"
+        ]
+    },
+    {
+        "name": "doświadczenie",
+        "trans": [
+            "经验"
+        ]
+    },
+    {
+        "name": "być",
+        "trans": [
+            "是；在"
+        ]
+    },
+    {
+        "name": "mieć",
+        "trans": [
+            "有"
+        ]
+    },
+    {
+        "name": "robić",
+        "trans": [
+            "做"
+        ]
+    },
+    {
+        "name": "zrobić",
+        "trans": [
+            "做完"
+        ]
+    },
+    {
+        "name": "móc",
+        "trans": [
+            "能够"
+        ]
+    },
+    {
+        "name": "musieć",
+        "trans": [
+            "必须"
+        ]
+    },
+    {
+        "name": "chcieć",
+        "trans": [
+            "想要"
+        ]
+    },
+    {
+        "name": "wiedzieć",
+        "trans": [
+            "知道"
+        ]
+    },
+    {
+        "name": "znać",
+        "trans": [
+            "认识；会（技能）"
+        ]
+    },
+    {
+        "name": "umieć",
+        "trans": [
+            "会；能够"
+        ]
+    },
+    {
+        "name": "mówić",
+        "trans": [
+            "说；讲"
+        ]
+    },
+    {
+        "name": "powiedzieć",
+        "trans": [
+            "说出"
+        ]
+    },
+    {
+        "name": "rozmawiać",
+        "trans": [
+            "交谈"
+        ]
+    },
+    {
+        "name": "pytać",
+        "trans": [
+            "问"
+        ]
+    },
+    {
+        "name": "odpowiadać",
+        "trans": [
+            "回答"
+        ]
+    },
+    {
+        "name": "słuchać",
+        "trans": [
+            "听"
+        ]
+    },
+    {
+        "name": "słyszeć",
+        "trans": [
+            "听见"
+        ]
+    },
+    {
+        "name": "widzieć",
+        "trans": [
+            "看见"
+        ]
+    },
+    {
+        "name": "patrzeć",
+        "trans": [
+            "看；注视"
+        ]
+    },
+    {
+        "name": "oglądać",
+        "trans": [
+            "观看"
+        ]
+    },
+    {
+        "name": "czytać",
+        "trans": [
+            "读"
+        ]
+    },
+    {
+        "name": "pisać",
+        "trans": [
+            "写"
+        ]
+    },
+    {
+        "name": "uczyć",
+        "trans": [
+            "教"
+        ]
+    },
+    {
+        "name": "uczyć się",
+        "trans": [
+            "学习"
+        ]
+    },
+    {
+        "name": "studiować",
+        "trans": [
+            "上大学；研究"
+        ]
+    },
+    {
+        "name": "pracować",
+        "trans": [
+            "工作"
+        ]
+    },
+    {
+        "name": "mieszkać",
+        "trans": [
+            "居住"
+        ]
+    },
+    {
+        "name": "żyć",
+        "trans": [
+            "生活；活着"
+        ]
+    },
+    {
+        "name": "lubić",
+        "trans": [
+            "喜欢"
+        ]
+    },
+    {
+        "name": "kochać",
+        "trans": [
+            "爱"
+        ]
+    },
+    {
+        "name": "nienawidzić",
+        "trans": [
+            "憎恨"
+        ]
+    },
+    {
+        "name": "myśleć",
+        "trans": [
+            "想；思考"
+        ]
+    },
+    {
+        "name": "rozumieć",
+        "trans": [
+            "理解"
+        ]
+    },
+    {
+        "name": "pamiętać",
+        "trans": [
+            "记得"
+        ]
+    },
+    {
+        "name": "zapomnieć",
+        "trans": [
+            "忘记"
+        ]
+    },
+    {
+        "name": "brać",
+        "trans": [
+            "拿；取"
+        ]
+    },
+    {
+        "name": "wziąć",
+        "trans": [
+            "拿（完成体）"
+        ]
+    },
+    {
+        "name": "dawać",
+        "trans": [
+            "给"
+        ]
+    },
+    {
+        "name": "dać",
+        "trans": [
+            "给（完成体）"
+        ]
+    },
+    {
+        "name": "dostawać",
+        "trans": [
+            "得到"
+        ]
+    },
+    {
+        "name": "dostać",
+        "trans": [
+            "得到（完成体）"
+        ]
+    },
+    {
+        "name": "kupować",
+        "trans": [
+            "买"
+        ]
+    },
+    {
+        "name": "kupić",
+        "trans": [
+            "买下"
+        ]
+    },
+    {
+        "name": "sprzedawać",
+        "trans": [
+            "卖"
+        ]
+    },
+    {
+        "name": "sprzedać",
+        "trans": [
+            "卖掉"
+        ]
+    },
+    {
+        "name": "płacić",
+        "trans": [
+            "付款"
+        ]
+    },
+    {
+        "name": "otwierać",
+        "trans": [
+            "打开"
+        ]
+    },
+    {
+        "name": "otworzyć",
+        "trans": [
+            "打开（完成体）"
+        ]
+    },
+    {
+        "name": "zamykać",
+        "trans": [
+            "关闭"
+        ]
+    },
+    {
+        "name": "zamknąć",
+        "trans": [
+            "关上"
+        ]
+    },
+    {
+        "name": "zaczynać",
+        "trans": [
+            "开始"
+        ]
+    },
+    {
+        "name": "zacząć",
+        "trans": [
+            "开始（完成体）"
+        ]
+    },
+    {
+        "name": "kończyć",
+        "trans": [
+            "结束"
+        ]
+    },
+    {
+        "name": "skończyć",
+        "trans": [
+            "完成"
+        ]
+    },
+    {
+        "name": "czekać",
+        "trans": [
+            "等待"
+        ]
+    },
+    {
+        "name": "szukać",
+        "trans": [
+            "寻找"
+        ]
+    },
+    {
+        "name": "znaleźć",
+        "trans": [
+            "找到"
+        ]
+    },
+    {
+        "name": "zgubić",
+        "trans": [
+            "丢失"
+        ]
+    },
+    {
+        "name": "pomagać",
+        "trans": [
+            "帮助"
+        ]
+    },
+    {
+        "name": "pomóc",
+        "trans": [
+            "帮到"
+        ]
+    },
+    {
+        "name": "przychodzić",
+        "trans": [
+            "来"
+        ]
+    },
+    {
+        "name": "przyjść",
+        "trans": [
+            "到来"
+        ]
+    },
+    {
+        "name": "wychodzić",
+        "trans": [
+            "出去"
+        ]
+    },
+    {
+        "name": "wyjść",
+        "trans": [
+            "出去（完成体）"
+        ]
+    },
+    {
+        "name": "wracać",
+        "trans": [
+            "返回"
+        ]
+    },
+    {
+        "name": "wrócić",
+        "trans": [
+            "回来"
+        ]
+    },
+    {
+        "name": "iść",
+        "trans": [
+            "走；去"
+        ]
+    },
+    {
+        "name": "pójść",
+        "trans": [
+            "去（完成体）"
+        ]
+    },
+    {
+        "name": "jechać",
+        "trans": [
+            "乘车去"
+        ]
+    },
+    {
+        "name": "pojechać",
+        "trans": [
+            "乘车前往"
+        ]
+    },
+    {
+        "name": "chodzić",
+        "trans": [
+            "走（习惯）"
+        ]
+    },
+    {
+        "name": "biegać",
+        "trans": [
+            "跑"
+        ]
+    },
+    {
+        "name": "stać",
+        "trans": [
+            "站"
+        ]
+    },
+    {
+        "name": "siedzieć",
+        "trans": [
+            "坐"
+        ]
+    },
+    {
+        "name": "leżeć",
+        "trans": [
+            "躺"
+        ]
+    },
+    {
+        "name": "spać",
+        "trans": [
+            "睡觉"
+        ]
+    },
+    {
+        "name": "budzić się",
+        "trans": [
+            "醒来"
+        ]
+    },
+    {
+        "name": "wstawać",
+        "trans": [
+            "起床；站起"
+        ]
+    },
+    {
+        "name": "wstać",
+        "trans": [
+            "起来"
+        ]
+    },
+    {
+        "name": "jeść",
+        "trans": [
+            "吃"
+        ]
+    },
+    {
+        "name": "zjeść",
+        "trans": [
+            "吃完"
+        ]
+    },
+    {
+        "name": "pić",
+        "trans": [
+            "喝"
+        ]
+    },
+    {
+        "name": "wypić",
+        "trans": [
+            "喝完"
+        ]
+    },
+    {
+        "name": "gotować",
+        "trans": [
+            "烹饪；煮"
+        ]
+    },
+    {
+        "name": "sprzątać",
+        "trans": [
+            "打扫"
+        ]
+    },
+    {
+        "name": "myć",
+        "trans": [
+            "洗"
+        ]
+    },
+    {
+        "name": "prać",
+        "trans": [
+            "洗衣服"
+        ]
+    },
+    {
+        "name": "ubierać się",
+        "trans": [
+            "穿衣服"
+        ]
+    },
+    {
+        "name": "nosić",
+        "trans": [
+            "穿；携带"
+        ]
+    },
+    {
+        "name": "dzwonić",
+        "trans": [
+            "打电话；铃响"
+        ]
+    },
+    {
+        "name": "zadzwonić",
+        "trans": [
+            "打去电话"
+        ]
+    },
+    {
+        "name": "używać",
+        "trans": [
+            "使用"
+        ]
+    },
+    {
+        "name": "potrzebować",
+        "trans": [
+            "需要"
+        ]
+    },
+    {
+        "name": "woleć",
+        "trans": [
+            "更喜欢"
+        ]
+    },
+    {
+        "name": "próbować",
+        "trans": [
+            "尝试"
+        ]
+    },
+    {
+        "name": "zmieniać",
+        "trans": [
+            "改变"
+        ]
+    },
+    {
+        "name": "zmienić",
+        "trans": [
+            "改掉"
+        ]
+    },
+    {
+        "name": "tłumaczyć",
+        "trans": [
+            "翻译；解释"
+        ]
+    },
+    {
+        "name": "pokazywać",
+        "trans": [
+            "展示"
+        ]
+    },
+    {
+        "name": "pokazać",
+        "trans": [
+            "指出；展示（完成体）"
+        ]
+    },
+    {
+        "name": "spotykać",
+        "trans": [
+            "遇见"
+        ]
+    },
+    {
+        "name": "spotkać",
+        "trans": [
+            "碰到"
+        ]
+    },
+    {
+        "name": "zapraszać",
+        "trans": [
+            "邀请"
+        ]
+    },
+    {
+        "name": "zaprosić",
+        "trans": [
+            "邀请（完成体）"
+        ]
+    },
+    {
+        "name": "odwiedzać",
+        "trans": [
+            "拜访"
+        ]
+    },
+    {
+        "name": "grać",
+        "trans": [
+            "玩；演奏"
+        ]
+    },
+    {
+        "name": "śpiewać",
+        "trans": [
+            "唱歌"
+        ]
+    },
+    {
+        "name": "tańczyć",
+        "trans": [
+            "跳舞"
+        ]
+    },
+    {
+        "name": "rysować",
+        "trans": [
+            "画画"
+        ]
+    },
+    {
+        "name": "podróżować",
+        "trans": [
+            "旅行"
+        ]
+    },
+    {
+        "name": "zwiedzać",
+        "trans": [
+            "观光"
+        ]
+    },
+    {
+        "name": "odpoczywać",
+        "trans": [
+            "休息"
+        ]
+    },
+    {
+        "name": "cieszyć się",
+        "trans": [
+            "感到高兴"
+        ]
+    },
+    {
+        "name": "martwić się",
+        "trans": [
+            "担心"
+        ]
+    },
+    {
+        "name": "bać się",
+        "trans": [
+            "害怕"
+        ]
+    },
+    {
+        "name": "śmiać się",
+        "trans": [
+            "笑"
+        ]
+    },
+    {
+        "name": "płakać",
+        "trans": [
+            "哭"
+        ]
+    },
+    {
+        "name": "uśmiechać się",
+        "trans": [
+            "微笑"
+        ]
+    },
+    {
+        "name": "całować",
+        "trans": [
+            "亲吻"
+        ]
+    },
+    {
+        "name": "wybaczać",
+        "trans": [
+            "原谅"
+        ]
+    },
+    {
+        "name": "obiecywać",
+        "trans": [
+            "承诺"
+        ]
+    },
+    {
+        "name": "kłamać",
+        "trans": [
+            "撒谎"
+        ]
+    },
+    {
+        "name": "wierzyć",
+        "trans": [
+            "相信"
+        ]
+    },
+    {
+        "name": "ufać",
+        "trans": [
+            "信任"
+        ]
+    },
+    {
+        "name": "liczyć",
+        "trans": [
+            "数；指望"
+        ]
+    },
+    {
+        "name": "wybierać",
+        "trans": [
+            "选择"
+        ]
+    },
+    {
+        "name": "wybrać",
+        "trans": [
+            "选出"
+        ]
+    },
+    {
+        "name": "decydować",
+        "trans": [
+            "决定"
+        ]
+    },
+    {
+        "name": "zdecydować",
+        "trans": [
+            "下决心"
+        ]
+    },
+    {
+        "name": "planować",
+        "trans": [
+            "计划"
+        ]
+    },
+    {
+        "name": "organizować",
+        "trans": [
+            "组织"
+        ]
+    },
+    {
+        "name": "prowadzić",
+        "trans": [
+            "驾驶；带领"
+        ]
+    },
+    {
+        "name": "kierować",
+        "trans": [
+            "管理；驾驶"
+        ]
+    },
+    {
+        "name": "budować",
+        "trans": [
+            "建造"
+        ]
+    },
+    {
+        "name": "naprawiać",
+        "trans": [
+            "修理"
+        ]
+    },
+    {
+        "name": "tworzyć",
+        "trans": [
+            "创造"
+        ]
+    },
+    {
+        "name": "sprawdzać",
+        "trans": [
+            "检查"
+        ]
+    },
+    {
+        "name": "chronić",
+        "trans": [
+            "保护"
+        ]
+    },
+    {
+        "name": "ratować",
+        "trans": [
+            "拯救"
+        ]
+    },
+    {
+        "name": "leczyć",
+        "trans": [
+            "治疗"
+        ]
+    },
+    {
+        "name": "chorować",
+        "trans": [
+            "生病"
+        ]
+    },
+    {
+        "name": "umierać",
+        "trans": [
+            "死亡"
+        ]
+    },
+    {
+        "name": "rodzić się",
+        "trans": [
+            "出生"
+        ]
+    },
+    {
+        "name": "rosnąć",
+        "trans": [
+            "生长；增长"
+        ]
+    },
+    {
+        "name": "spadać",
+        "trans": [
+            "下降；落下"
+        ]
+    },
+    {
+        "name": "dodawać",
+        "trans": [
+            "添加"
+        ]
+    },
+    {
+        "name": "kosztować",
+        "trans": [
+            "花费"
+        ]
+    },
+    {
+        "name": "zarabiać",
+        "trans": [
+            "挣钱"
+        ]
+    },
+    {
+        "name": "oszczędzać",
+        "trans": [
+            "节省；储蓄"
+        ]
+    },
+    {
+        "name": "wydawać",
+        "trans": [
+            "花费"
+        ]
+    },
+    {
+        "name": "pożyczać",
+        "trans": [
+            "借"
+        ]
+    },
+    {
+        "name": "zgadzać się",
+        "trans": [
+            "同意"
+        ]
+    },
+    {
+        "name": "odmawiać",
+        "trans": [
+            "拒绝"
+        ]
+    },
+    {
+        "name": "pozwalać",
+        "trans": [
+            "允许"
+        ]
+    },
+    {
+        "name": "informować",
+        "trans": [
+            "通知"
+        ]
+    },
+    {
+        "name": "wyjaśniać",
+        "trans": [
+            "解释"
+        ]
+    },
+    {
+        "name": "opowiadać",
+        "trans": [
+            "讲述"
+        ]
+    },
+    {
+        "name": "przedstawiać",
+        "trans": [
+            "介绍；展示"
+        ]
+    },
+    {
+        "name": "przedstawić się",
+        "trans": [
+            "自我介绍"
+        ]
+    },
+    {
+        "name": "nazywać się",
+        "trans": [
+            "名叫"
+        ]
+    },
+    {
+        "name": "znajdować",
+        "trans": [
+            "找到（未完成）"
+        ]
+    },
+    {
+        "name": "trzymać",
+        "trans": [
+            "拿着；保持"
+        ]
+    },
+    {
+        "name": "puścić",
+        "trans": [
+            "放开"
+        ]
+    },
+    {
+        "name": "rzucać",
+        "trans": [
+            "扔"
+        ]
+    },
+    {
+        "name": "łapać",
+        "trans": [
+            "抓住"
+        ]
+    },
+    {
+        "name": "pchać",
+        "trans": [
+            "推"
+        ]
+    },
+    {
+        "name": "ciągnąć",
+        "trans": [
+            "拉"
+        ]
+    },
+    {
+        "name": "podnosić",
+        "trans": [
+            "举起"
+        ]
+    },
+    {
+        "name": "kłaść",
+        "trans": [
+            "放置"
+        ]
+    },
+    {
+        "name": "położyć",
+        "trans": [
+            "放下"
+        ]
+    },
+    {
+        "name": "stawiać",
+        "trans": [
+            "立放"
+        ]
+    },
+    {
+        "name": "wchodzić",
+        "trans": [
+            "进入"
+        ]
+    },
+    {
+        "name": "wejść",
+        "trans": [
+            "走进"
+        ]
+    },
+    {
+        "name": "wsiadać",
+        "trans": [
+            "上车"
+        ]
+    },
+    {
+        "name": "wysiadać",
+        "trans": [
+            "下车"
+        ]
+    },
+    {
+        "name": "odjeżdżać",
+        "trans": [
+            "出发（车）"
+        ]
+    },
+    {
+        "name": "przyjeżdżać",
+        "trans": [
+            "抵达（车）"
+        ]
+    },
+    {
+        "name": "latać",
+        "trans": [
+            "飞"
+        ]
+    },
+    {
+        "name": "pływać",
+        "trans": [
+            "游泳"
+        ]
+    },
+    {
+        "name": "skakać",
+        "trans": [
+            "跳"
+        ]
+    },
+    {
+        "name": "spaść",
+        "trans": [
+            "掉下"
+        ]
+    },
+    {
+        "name": "upadać",
+        "trans": [
+            "跌倒"
+        ]
+    },
+    {
+        "name": "wygrać",
+        "trans": [
+            "赢"
+        ]
+    },
+    {
+        "name": "przegrać",
+        "trans": [
+            "输"
+        ]
+    },
+    {
+        "name": "ćwiczyć",
+        "trans": [
+            "练习；锻炼"
+        ]
+    },
+    {
+        "name": "trenować",
+        "trans": [
+            "训练"
+        ]
+    },
+    {
+        "name": "gotować się",
+        "trans": [
+            "沸腾"
+        ]
+    },
+    {
+        "name": "smażyć",
+        "trans": [
+            "煎；炒"
+        ]
+    },
+    {
+        "name": "piec",
+        "trans": [
+            "烤"
+        ]
+    },
+    {
+        "name": "kroić",
+        "trans": [
+            "切"
+        ]
+    },
+    {
+        "name": "mieszać",
+        "trans": [
+            "搅拌"
+        ]
+    },
+    {
+        "name": "nalewać",
+        "trans": [
+            "倒（液体）"
+        ]
+    },
+    {
+        "name": "zamawiać",
+        "trans": [
+            "点餐；订购"
+        ]
+    },
+    {
+        "name": "zamówić",
+        "trans": [
+            "点好；订好"
+        ]
+    },
+    {
+        "name": "rezerwować",
+        "trans": [
+            "预订"
+        ]
+    },
+    {
+        "name": "płacić kartą",
+        "trans": [
+            "刷卡付款"
+        ]
+    },
+    {
+        "name": "podpisywać",
+        "trans": [
+            "签名"
+        ]
+    },
+    {
+        "name": "drukować",
+        "trans": [
+            "打印"
+        ]
+    },
+    {
+        "name": "wysyłać",
+        "trans": [
+            "发送"
+        ]
+    },
+    {
+        "name": "wysłać",
+        "trans": [
+            "寄出"
+        ]
+    },
+    {
+        "name": "otrzymywać",
+        "trans": [
+            "收到"
+        ]
+    },
+    {
+        "name": "otrzymać",
+        "trans": [
+            "接到"
+        ]
+    },
+    {
+        "name": "łączyć",
+        "trans": [
+            "连接"
+        ]
+    },
+    {
+        "name": "dzielić",
+        "trans": [
+            "分开；除"
+        ]
+    },
+    {
+        "name": "porównywać",
+        "trans": [
+            "比较"
+        ]
+    },
+    {
+        "name": "mierzyć",
+        "trans": [
+            "测量"
+        ]
+    },
+    {
+        "name": "ważyć",
+        "trans": [
+            "称重"
+        ]
+    },
+    {
+        "name": "trwać",
+        "trans": [
+            "持续"
+        ]
+    },
+    {
+        "name": "zdarzać się",
+        "trans": [
+            "发生"
+        ]
+    },
+    {
+        "name": "wydarzyć się",
+        "trans": [
+            "发生（完成体）"
+        ]
+    },
+    {
+        "name": "zależeć",
+        "trans": [
+            "取决于"
+        ]
+    },
+    {
+        "name": "należeć",
+        "trans": [
+            "属于"
+        ]
+    },
+    {
+        "name": "zawierać",
+        "trans": [
+            "包含"
+        ]
+    },
+    {
+        "name": "oznaczać",
+        "trans": [
+            "意味着"
+        ]
+    },
+    {
+        "name": "wydawać się",
+        "trans": [
+            "看起来；似乎"
+        ]
+    },
+    {
+        "name": "spodobać się",
+        "trans": [
+            "使喜欢"
+        ]
+    },
+    {
+        "name": "interesować się",
+        "trans": [
+            "对……感兴趣"
+        ]
+    },
+    {
+        "name": "zajmować się",
+        "trans": [
+            "从事"
+        ]
+    },
+    {
+        "name": "starać się",
+        "trans": [
+            "努力"
+        ]
+    },
+    {
+        "name": "udać się",
+        "trans": [
+            "成功；前往"
+        ]
+    },
+    {
+        "name": "powinien",
+        "trans": [
+            "应该（阳性）"
+        ]
+    },
+    {
+        "name": "wolno",
+        "trans": [
+            "可以；被允许"
+        ]
+    },
+    {
+        "name": "trzeba",
+        "trans": [
+            "需要；应当"
+        ]
+    },
+    {
+        "name": "warto",
+        "trans": [
+            "值得"
+        ]
+    },
+    {
+        "name": "widać",
+        "trans": [
+            "看得见"
+        ]
+    },
+    {
+        "name": "słychać",
+        "trans": [
+            "听得见"
+        ]
+    },
+    {
+        "name": "duży",
+        "trans": [
+            "大的"
+        ]
+    },
+    {
+        "name": "mały",
+        "trans": [
+            "小的"
+        ]
+    },
+    {
+        "name": "wielki",
+        "trans": [
+            "巨大的"
+        ]
+    },
+    {
+        "name": "nowy",
+        "trans": [
+            "新的"
+        ]
+    },
+    {
+        "name": "stary",
+        "trans": [
+            "老的；旧的"
+        ]
+    },
+    {
+        "name": "młody",
+        "trans": [
+            "年轻的"
+        ]
+    },
+    {
+        "name": "dobry",
+        "trans": [
+            "好的"
+        ]
+    },
+    {
+        "name": "zły",
+        "trans": [
+            "坏的；生气的"
+        ]
+    },
+    {
+        "name": "ładny",
+        "trans": [
+            "好看的"
+        ]
+    },
+    {
+        "name": "piękny",
+        "trans": [
+            "美丽的"
+        ]
+    },
+    {
+        "name": "brzydki",
+        "trans": [
+            "难看的"
+        ]
+    },
+    {
+        "name": "długi",
+        "trans": [
+            "长的"
+        ]
+    },
+    {
+        "name": "krótki",
+        "trans": [
+            "短的"
+        ]
+    },
+    {
+        "name": "wysoki",
+        "trans": [
+            "高的"
+        ]
+    },
+    {
+        "name": "niski",
+        "trans": [
+            "矮的；低的"
+        ]
+    },
+    {
+        "name": "szeroki",
+        "trans": [
+            "宽的"
+        ]
+    },
+    {
+        "name": "wąski",
+        "trans": [
+            "窄的"
+        ]
+    },
+    {
+        "name": "gruby",
+        "trans": [
+            "厚的；胖的"
+        ]
+    },
+    {
+        "name": "chudy",
+        "trans": [
+            "瘦的"
+        ]
+    },
+    {
+        "name": "ciężki",
+        "trans": [
+            "重的；难的"
+        ]
+    },
+    {
+        "name": "lekki",
+        "trans": [
+            "轻的"
+        ]
+    },
+    {
+        "name": "szybki",
+        "trans": [
+            "快的"
+        ]
+    },
+    {
+        "name": "wolny",
+        "trans": [
+            "慢的；空闲的"
+        ]
+    },
+    {
+        "name": "gorący",
+        "trans": [
+            "热的"
+        ]
+    },
+    {
+        "name": "ciepły",
+        "trans": [
+            "温暖的"
+        ]
+    },
+    {
+        "name": "zimny",
+        "trans": [
+            "冷的"
+        ]
+    },
+    {
+        "name": "chłodny",
+        "trans": [
+            "凉爽的"
+        ]
+    },
+    {
+        "name": "mokry",
+        "trans": [
+            "湿的"
+        ]
+    },
+    {
+        "name": "suchy",
+        "trans": [
+            "干的"
+        ]
+    },
+    {
+        "name": "czysty",
+        "trans": [
+            "干净的"
+        ]
+    },
+    {
+        "name": "brudny",
+        "trans": [
+            "脏的"
+        ]
+    },
+    {
+        "name": "pełny",
+        "trans": [
+            "满的"
+        ]
+    },
+    {
+        "name": "pusty",
+        "trans": [
+            "空的"
+        ]
+    },
+    {
+        "name": "otwarty",
+        "trans": [
+            "开着的"
+        ]
+    },
+    {
+        "name": "zamknięty",
+        "trans": [
+            "关着的"
+        ]
+    },
+    {
+        "name": "łatwy",
+        "trans": [
+            "容易的"
+        ]
+    },
+    {
+        "name": "trudny",
+        "trans": [
+            "困难的"
+        ]
+    },
+    {
+        "name": "ważny",
+        "trans": [
+            "重要的"
+        ]
+    },
+    {
+        "name": "ciekawy",
+        "trans": [
+            "有趣的"
+        ]
+    },
+    {
+        "name": "nudny",
+        "trans": [
+            "无聊的"
+        ]
+    },
+    {
+        "name": "bogaty",
+        "trans": [
+            "富有的"
+        ]
+    },
+    {
+        "name": "biedny",
+        "trans": [
+            "贫穷的"
+        ]
+    },
+    {
+        "name": "zajęty",
+        "trans": [
+            "忙碌的；被占用的"
+        ]
+    },
+    {
+        "name": "chory",
+        "trans": [
+            "生病的"
+        ]
+    },
+    {
+        "name": "zdrowy",
+        "trans": [
+            "健康的"
+        ]
+    },
+    {
+        "name": "szczęśliwy",
+        "trans": [
+            "幸福的；幸运的"
+        ]
+    },
+    {
+        "name": "smutny",
+        "trans": [
+            "悲伤的"
+        ]
+    },
+    {
+        "name": "spokojny",
+        "trans": [
+            "平静的"
+        ]
+    },
+    {
+        "name": "zdenerwowany",
+        "trans": [
+            "紧张的；恼怒的"
+        ]
+    },
+    {
+        "name": "zmęczony",
+        "trans": [
+            "疲倦的"
+        ]
+    },
+    {
+        "name": "silny",
+        "trans": [
+            "强壮的"
+        ]
+    },
+    {
+        "name": "słaby",
+        "trans": [
+            "弱的"
+        ]
+    },
+    {
+        "name": "mądry",
+        "trans": [
+            "聪明的"
+        ]
+    },
+    {
+        "name": "głupi",
+        "trans": [
+            "愚蠢的"
+        ]
+    },
+    {
+        "name": "miły",
+        "trans": [
+            "友善的；愉快的"
+        ]
+    },
+    {
+        "name": "uprzejmy",
+        "trans": [
+            "礼貌的"
+        ]
+    },
+    {
+        "name": "grzeczny",
+        "trans": [
+            "乖的；有礼貌的"
+        ]
+    },
+    {
+        "name": "uczciwy",
+        "trans": [
+            "诚实的"
+        ]
+    },
+    {
+        "name": "prawdziwy",
+        "trans": [
+            "真正的"
+        ]
+    },
+    {
+        "name": "fałszywy",
+        "trans": [
+            "虚假的"
+        ]
+    },
+    {
+        "name": "następny",
+        "trans": [
+            "下一个"
+        ]
+    },
+    {
+        "name": "poprzedni",
+        "trans": [
+            "上一个"
+        ]
+    },
+    {
+        "name": "lewy",
+        "trans": [
+            "左边的"
+        ]
+    },
+    {
+        "name": "prawy",
+        "trans": [
+            "右边的"
+        ]
+    },
+    {
+        "name": "publiczny",
+        "trans": [
+            "公共的"
+        ]
+    },
+    {
+        "name": "prywatny",
+        "trans": [
+            "私人的"
+        ]
+    },
+    {
+        "name": "darmowy",
+        "trans": [
+            "免费的"
+        ]
+    },
+    {
+        "name": "drogi",
+        "trans": [
+            "贵的；亲爱的"
+        ]
+    },
+    {
+        "name": "tani",
+        "trans": [
+            "便宜的"
+        ]
+    },
+    {
+        "name": "gotowy",
+        "trans": [
+            "准备好的"
+        ]
+    },
+    {
+        "name": "pewny",
+        "trans": [
+            "确定的"
+        ]
+    },
+    {
+        "name": "możliwy",
+        "trans": [
+            "可能的"
+        ]
+    },
+    {
+        "name": "niemożliwy",
+        "trans": [
+            "不可能的"
+        ]
+    },
+    {
+        "name": "konieczny",
+        "trans": [
+            "必要的"
+        ]
+    },
+    {
+        "name": "bezpieczny",
+        "trans": [
+            "安全的"
+        ]
+    },
+    {
+        "name": "niebezpieczny",
+        "trans": [
+            "危险的"
+        ]
+    },
+    {
+        "name": "popularny",
+        "trans": [
+            "受欢迎的"
+        ]
+    },
+    {
+        "name": "znany",
+        "trans": [
+            "著名的；已知的"
+        ]
+    },
+    {
+        "name": "nieznany",
+        "trans": [
+            "未知的"
+        ]
+    },
+    {
+        "name": "specjalny",
+        "trans": [
+            "特别的"
+        ]
+    },
+    {
+        "name": "zwykły",
+        "trans": [
+            "普通的"
+        ]
+    },
+    {
+        "name": "normalny",
+        "trans": [
+            "正常的"
+        ]
+    },
+    {
+        "name": "dziwny",
+        "trans": [
+            "奇怪的"
+        ]
+    },
+    {
+        "name": "podobny",
+        "trans": [
+            "相似的"
+        ]
+    },
+    {
+        "name": "różny",
+        "trans": [
+            "不同的"
+        ]
+    },
+    {
+        "name": "główny",
+        "trans": [
+            "主要的"
+        ]
+    },
+    {
+        "name": "wspólny",
+        "trans": [
+            "共同的"
+        ]
+    },
+    {
+        "name": "cały",
+        "trans": [
+            "整个的"
+        ]
+    },
+    {
+        "name": "każdy",
+        "trans": [
+            "每一个"
+        ]
+    },
+    {
+        "name": "żaden",
+        "trans": [
+            "没有任何"
+        ]
+    },
+    {
+        "name": "sam",
+        "trans": [
+            "独自的；自己"
+        ]
+    },
+    {
+        "name": "miejscowy",
+        "trans": [
+            "当地的"
+        ]
+    },
+    {
+        "name": "zagraniczny",
+        "trans": [
+            "外国的"
+        ]
+    },
+    {
+        "name": "narodowy",
+        "trans": [
+            "国家的"
+        ]
+    },
+    {
+        "name": "międzynarodowy",
+        "trans": [
+            "国际的"
+        ]
+    },
+    {
+        "name": "polski",
+        "trans": [
+            "波兰的；波兰语的"
+        ]
+    },
+    {
+        "name": "angielski",
+        "trans": [
+            "英语的；英国的"
+        ]
+    },
+    {
+        "name": "chiński",
+        "trans": [
+            "中文的；中国的"
+        ]
+    },
+    {
+        "name": "niemiecki",
+        "trans": [
+            "德语的；德国的"
+        ]
+    },
+    {
+        "name": "rosyjski",
+        "trans": [
+            "俄语的；俄罗斯的"
+        ]
+    },
+    {
+        "name": "europejski",
+        "trans": [
+            "欧洲的"
+        ]
+    },
+    {
+        "name": "miłość",
+        "trans": [
+            "爱"
+        ]
+    },
+    {
+        "name": "nienawiść",
+        "trans": [
+            "恨"
+        ]
+    },
+    {
+        "name": "radość",
+        "trans": [
+            "喜悦"
+        ]
+    },
+    {
+        "name": "smutek",
+        "trans": [
+            "悲伤"
+        ]
+    },
+    {
+        "name": "strach",
+        "trans": [
+            "恐惧"
+        ]
+    },
+    {
+        "name": "złość",
+        "trans": [
+            "愤怒"
+        ]
+    },
+    {
+        "name": "nadzieja",
+        "trans": [
+            "希望"
+        ]
+    },
+    {
+        "name": "rozczarowanie",
+        "trans": [
+            "失望"
+        ]
+    },
+    {
+        "name": "spokój",
+        "trans": [
+            "平静"
+        ]
+    },
+    {
+        "name": "stres",
+        "trans": [
+            "压力"
+        ]
+    },
+    {
+        "name": "szczęście",
+        "trans": [
+            "幸福；运气"
+        ]
+    },
+    {
+        "name": "życie",
+        "trans": [
+            "生活；生命"
+        ]
+    },
+    {
+        "name": "śmierć",
+        "trans": [
+            "死亡"
+        ]
+    },
+    {
+        "name": "problem",
+        "trans": [
+            "问题"
+        ]
+    },
+    {
+        "name": "rozwiązanie",
+        "trans": [
+            "解决办法"
+        ]
+    },
+    {
+        "name": "pytanie",
+        "trans": [
+            "问题（提问）"
+        ]
+    },
+    {
+        "name": "odpowiedź",
+        "trans": [
+            "答案"
+        ]
+    },
+    {
+        "name": "powód",
+        "trans": [
+            "原因"
+        ]
+    },
+    {
+        "name": "cel",
+        "trans": [
+            "目标"
+        ]
+    },
+    {
+        "name": "przykład",
+        "trans": [
+            "例子"
+        ]
+    },
+    {
+        "name": "pomysł",
+        "trans": [
+            "主意"
+        ]
+    },
+    {
+        "name": "myśl",
+        "trans": [
+            "想法"
+        ]
+    },
+    {
+        "name": "opinia",
+        "trans": [
+            "意见"
+        ]
+    },
+    {
+        "name": "fakt",
+        "trans": [
+            "事实"
+        ]
+    },
+    {
+        "name": "prawda",
+        "trans": [
+            "真相"
+        ]
+    },
+    {
+        "name": "kłamstwo",
+        "trans": [
+            "谎言"
+        ]
+    },
+    {
+        "name": "informacja",
+        "trans": [
+            "信息"
+        ]
+    },
+    {
+        "name": "wiadomość",
+        "trans": [
+            "消息"
+        ]
+    },
+    {
+        "name": "przyszłość",
+        "trans": [
+            "未来"
+        ]
+    },
+    {
+        "name": "przeszłość",
+        "trans": [
+            "过去"
+        ]
+    },
+    {
+        "name": "możliwość",
+        "trans": [
+            "可能性"
+        ]
+    },
+    {
+        "name": "szansa",
+        "trans": [
+            "机会"
+        ]
+    },
+    {
+        "name": "ryzyko",
+        "trans": [
+            "风险"
+        ]
+    },
+    {
+        "name": "błąd",
+        "trans": [
+            "错误"
+        ]
+    },
+    {
+        "name": "sukces",
+        "trans": [
+            "成功"
+        ]
+    },
+    {
+        "name": "porażka",
+        "trans": [
+            "失败"
+        ]
+    },
+    {
+        "name": "zwycięstwo",
+        "trans": [
+            "胜利"
+        ]
+    },
+    {
+        "name": "wojna",
+        "trans": [
+            "战争"
+        ]
+    },
+    {
+        "name": "obowiązek",
+        "trans": [
+            "义务"
+        ]
+    },
+    {
+        "name": "wolność",
+        "trans": [
+            "自由"
+        ]
+    },
+    {
+        "name": "sprawiedliwość",
+        "trans": [
+            "正义"
+        ]
+    },
+    {
+        "name": "władza",
+        "trans": [
+            "权力；当局"
+        ]
+    },
+    {
+        "name": "rząd",
+        "trans": [
+            "政府"
+        ]
+    },
+    {
+        "name": "prezydent",
+        "trans": [
+            "总统"
+        ]
+    },
+    {
+        "name": "kultura",
+        "trans": [
+            "文化"
+        ]
+    },
+    {
+        "name": "tradycja",
+        "trans": [
+            "传统"
+        ]
+    },
+    {
+        "name": "religia",
+        "trans": [
+            "宗教"
+        ]
+    },
+    {
+        "name": "Bóg",
+        "trans": [
+            "上帝"
+        ]
+    },
+    {
+        "name": "wiara",
+        "trans": [
+            "信仰"
+        ]
+    },
+    {
+        "name": "Polska",
+        "trans": [
+            "波兰"
+        ]
+    },
+    {
+        "name": "Warszawa",
+        "trans": [
+            "华沙"
+        ]
+    },
+    {
+        "name": "Kraków",
+        "trans": [
+            "克拉科夫"
+        ]
+    },
+    {
+        "name": "Gdańsk",
+        "trans": [
+            "格但斯克"
+        ]
+    },
+    {
+        "name": "Wrocław",
+        "trans": [
+            "弗罗茨瓦夫"
+        ]
+    },
+    {
+        "name": "Poznań",
+        "trans": [
+            "波兹南"
+        ]
+    },
+    {
+        "name": "Europa",
+        "trans": [
+            "欧洲"
+        ]
+    },
+    {
+        "name": "Niemcy",
+        "trans": [
+            "德国"
+        ]
+    },
+    {
+        "name": "Francja",
+        "trans": [
+            "法国"
+        ]
+    },
+    {
+        "name": "Anglia",
+        "trans": [
+            "英格兰"
+        ]
+    },
+    {
+        "name": "Wielka Brytania",
+        "trans": [
+            "英国"
+        ]
+    },
+    {
+        "name": "Hiszpania",
+        "trans": [
+            "西班牙"
+        ]
+    },
+    {
+        "name": "Włochy",
+        "trans": [
+            "意大利"
+        ]
+    },
+    {
+        "name": "Rosja",
+        "trans": [
+            "俄罗斯"
+        ]
+    },
+    {
+        "name": "Ukraina",
+        "trans": [
+            "乌克兰"
+        ]
+    },
+    {
+        "name": "Czechy",
+        "trans": [
+            "捷克"
+        ]
+    },
+    {
+        "name": "Chiny",
+        "trans": [
+            "中国"
+        ]
+    },
+    {
+        "name": "Japonia",
+        "trans": [
+            "日本"
+        ]
+    },
+    {
+        "name": "Stany Zjednoczone",
+        "trans": [
+            "美国"
+        ]
+    },
+    {
+        "name": "kraj",
+        "trans": [
+            "国家"
+        ]
+    },
+    {
+        "name": "państwo",
+        "trans": [
+            "国家；国家机构"
+        ]
+    },
+    {
+        "name": "stolica",
+        "trans": [
+            "首都"
+        ]
+    },
+    {
+        "name": "granica",
+        "trans": [
+            "边境"
+        ]
+    },
+    {
+        "name": "narodowość",
+        "trans": [
+            "国籍"
+        ]
+    },
+    {
+        "name": "język polski",
+        "trans": [
+            "波兰语"
+        ]
+    },
+    {
+        "name": "język angielski",
+        "trans": [
+            "英语"
+        ]
+    },
+    {
+        "name": "język chiński",
+        "trans": [
+            "中文"
+        ]
+    },
+    {
+        "name": "rzecz",
+        "trans": [
+            "东西；事情"
+        ]
+    },
+    {
+        "name": "przedmiot",
+        "trans": [
+            "物品；科目"
+        ]
+    },
+    {
+        "name": "narzędzie",
+        "trans": [
+            "工具"
+        ]
+    },
+    {
+        "name": "papier",
+        "trans": [
+            "纸"
+        ]
+    },
+    {
+        "name": "gazeta",
+        "trans": [
+            "报纸"
+        ]
+    },
+    {
+        "name": "list",
+        "trans": [
+            "信"
+        ]
+    },
+    {
+        "name": "e-mail",
+        "trans": [
+            "电子邮件"
+        ]
+    },
+    {
+        "name": "zdjęcie",
+        "trans": [
+            "照片"
+        ]
+    },
+    {
+        "name": "obraz",
+        "trans": [
+            "画；图像"
+        ]
+    },
+    {
+        "name": "piosenka",
+        "trans": [
+            "歌曲"
+        ]
+    },
+    {
+        "name": "film",
+        "trans": [
+            "电影"
+        ]
+    },
+    {
+        "name": "gra",
+        "trans": [
+            "游戏"
+        ]
+    },
+    {
+        "name": "prezent",
+        "trans": [
+            "礼物"
+        ]
+    },
+    {
+        "name": "pieniądze",
+        "trans": [
+            "钱"
+        ]
+    },
+    {
+        "name": "gotówka",
+        "trans": [
+            "现金"
+        ]
+    },
+    {
+        "name": "karta",
+        "trans": [
+            "卡；卡片"
+        ]
+    },
+    {
+        "name": "portfel",
+        "trans": [
+            "钱包"
+        ]
+    },
+    {
+        "name": "pudełko",
+        "trans": [
+            "盒子"
+        ]
+    },
+    {
+        "name": "butelka",
+        "trans": [
+            "瓶子"
+        ]
+    },
+    {
+        "name": "szklanka",
+        "trans": [
+            "玻璃杯"
+        ]
+    },
+    {
+        "name": "kubek",
+        "trans": [
+            "杯子"
+        ]
+    },
+    {
+        "name": "talerz",
+        "trans": [
+            "盘子"
+        ]
+    },
+    {
+        "name": "łyżka",
+        "trans": [
+            "勺子"
+        ]
+    },
+    {
+        "name": "widelec",
+        "trans": [
+            "叉子"
+        ]
+    },
+    {
+        "name": "nóż",
+        "trans": [
+            "刀"
+        ]
+    },
+    {
+        "name": "rachunek",
+        "trans": [
+            "账单；账户"
+        ]
+    },
+    {
+        "name": "cena",
+        "trans": [
+            "价格"
+        ]
+    },
+    {
+        "name": "rabat",
+        "trans": [
+            "折扣"
+        ]
+    },
+    {
+        "name": "numer",
+        "trans": [
+            "号码"
+        ]
+    },
+    {
+        "name": "adres",
+        "trans": [
+            "地址"
+        ]
+    },
+    {
+        "name": "imię",
+        "trans": [
+            "名字"
+        ]
+    },
+    {
+        "name": "nazwisko",
+        "trans": [
+            "姓"
+        ]
+    },
+    {
+        "name": "nazwa",
+        "trans": [
+            "名称"
+        ]
+    },
+    {
+        "name": "słowo",
+        "trans": [
+            "单词"
+        ]
+    },
+    {
+        "name": "zdanie",
+        "trans": [
+            "句子"
+        ]
+    },
+    {
+        "name": "tekst",
+        "trans": [
+            "文本"
+        ]
+    },
+    {
+        "name": "hasło",
+        "trans": [
+            "密码；口号"
+        ]
+    },
+    {
+        "name": "strona",
+        "trans": [
+            "页；网站；边"
+        ]
+    },
+    {
+        "name": "aplikacja",
+        "trans": [
+            "应用程序"
+        ]
+    },
+    {
+        "name": "program",
+        "trans": [
+            "节目；程序"
+        ]
+    },
+    {
+        "name": "system",
+        "trans": [
+            "系统"
+        ]
+    },
+    {
+        "name": "plik",
+        "trans": [
+            "文件"
+        ]
+    },
+    {
+        "name": "hasło dostępu",
+        "trans": [
+            "登录密码"
+        ]
+    },
+    {
+        "name": "ekran",
+        "trans": [
+            "屏幕"
+        ]
+    },
+    {
+        "name": "klawiatura",
+        "trans": [
+            "键盘"
+        ]
+    },
+    {
+        "name": "myszka",
+        "trans": [
+            "鼠标"
+        ]
+    },
+    {
+        "name": "ładowarka",
+        "trans": [
+            "充电器"
+        ]
+    },
+    {
+        "name": "bateria",
+        "trans": [
+            "电池"
+        ]
+    },
+    {
+        "name": "prąd",
+        "trans": [
+            "电"
+        ]
+    },
+    {
+        "name": "gniazdko",
+        "trans": [
+            "插座"
+        ]
+    },
+    {
+        "name": "tu",
+        "trans": [
+            "这儿"
+        ]
+    },
+    {
+        "name": "stąd",
+        "trans": [
+            "从这里"
+        ]
+    },
+    {
+        "name": "stamtąd",
+        "trans": [
+            "从那里"
+        ]
+    },
+    {
+        "name": "wszędzie",
+        "trans": [
+            "到处"
+        ]
+    },
+    {
+        "name": "nigdzie",
+        "trans": [
+            "无处"
+        ]
+    },
+    {
+        "name": "razem",
+        "trans": [
+            "一起"
+        ]
+    },
+    {
+        "name": "osobno",
+        "trans": [
+            "分开地"
+        ]
+    },
+    {
+        "name": "bardzo",
+        "trans": [
+            "非常"
+        ]
+    },
+    {
+        "name": "trochę",
+        "trans": [
+            "一点儿"
+        ]
+    },
+    {
+        "name": "dużo",
+        "trans": [
+            "很多"
+        ]
+    },
+    {
+        "name": "mało",
+        "trans": [
+            "很少"
+        ]
+    },
+    {
+        "name": "więcej",
+        "trans": [
+            "更多"
+        ]
+    },
+    {
+        "name": "mniej",
+        "trans": [
+            "更少"
+        ]
+    },
+    {
+        "name": "najbardziej",
+        "trans": [
+            "最"
+        ]
+    },
+    {
+        "name": "tylko",
+        "trans": [
+            "只；仅仅"
+        ]
+    },
+    {
+        "name": "nawet",
+        "trans": [
+            "甚至"
+        ]
+    },
+    {
+        "name": "prawie",
+        "trans": [
+            "几乎"
+        ]
+    },
+    {
+        "name": "zbyt",
+        "trans": [
+            "过于"
+        ]
+    },
+    {
+        "name": "dosyć",
+        "trans": [
+            "足够"
+        ]
+    },
+    {
+        "name": "wystarczy",
+        "trans": [
+            "够了"
+        ]
+    },
+    {
+        "name": "naprawdę",
+        "trans": [
+            "真的"
+        ]
+    },
+    {
+        "name": "właśnie",
+        "trans": [
+            "刚刚；正是"
+        ]
+    },
+    {
+        "name": "pewnie",
+        "trans": [
+            "大概；当然"
+        ]
+    },
+    {
+        "name": "chyba",
+        "trans": [
+            "大概；恐怕"
+        ]
+    },
+    {
+        "name": "raczej",
+        "trans": [
+            "宁愿；相当"
+        ]
+    },
+    {
+        "name": "koniecznie",
+        "trans": [
+            "一定要"
+        ]
+    },
+    {
+        "name": "natychmiast",
+        "trans": [
+            "立刻"
+        ]
+    },
+    {
+        "name": "nagle",
+        "trans": [
+            "突然"
+        ]
+    },
+    {
+        "name": "powoli",
+        "trans": [
+            "慢慢地"
+        ]
+    },
+    {
+        "name": "szybko",
+        "trans": [
+            "很快地"
+        ]
+    },
+    {
+        "name": "głośno",
+        "trans": [
+            "大声地"
+        ]
+    },
+    {
+        "name": "cicho",
+        "trans": [
+            "安静地"
+        ]
+    },
+    {
+        "name": "łatwo",
+        "trans": [
+            "容易地"
+        ]
+    },
+    {
+        "name": "trudno",
+        "trans": [
+            "困难；很难说"
+        ]
+    },
+    {
+        "name": "między nami",
+        "trans": [
+            "在我们之间"
+        ]
+    },
+    {
+        "name": "na przykład",
+        "trans": [
+            "例如"
+        ]
+    },
+    {
+        "name": "i tak dalej",
+        "trans": [
+            "等等"
+        ]
+    },
+    {
+        "name": "przede wszystkim",
+        "trans": [
+            "首先"
+        ]
+    },
+    {
+        "name": "w ogóle",
+        "trans": [
+            "根本；总共"
+        ]
+    },
+    {
+        "name": "na pewno",
+        "trans": [
+            "肯定"
+        ]
+    },
+    {
+        "name": "moim zdaniem",
+        "trans": [
+            "依我看"
+        ]
+    },
+    {
+        "name": "przepraszam bardzo",
+        "trans": [
+            "非常抱歉"
+        ]
+    },
+    {
+        "name": "jak się nazywasz",
+        "trans": [
+            "你叫什么名字"
+        ]
+    },
+    {
+        "name": "skąd jesteś",
+        "trans": [
+            "你从哪里来"
+        ]
+    },
+    {
+        "name": "ile to kosztuje",
+        "trans": [
+            "这多少钱"
+        ]
+    },
+    {
+        "name": "gdzie jest",
+        "trans": [
+            "……在哪里"
+        ]
+    },
+    {
+        "name": "mówisz po angielsku",
+        "trans": [
+            "你会说英语吗"
+        ]
+    },
+    {
+        "name": "mówię po chińsku",
+        "trans": [
+            "我说中文"
+        ]
+    },
+    {
+        "name": "uczę się polskiego",
+        "trans": [
+            "我在学波兰语"
+        ]
+    },
+    {
+        "name": "nie mówię po polsku",
+        "trans": [
+            "我不会说波兰语"
+        ]
+    },
+    {
+        "name": "powoli proszę",
+        "trans": [
+            "请说慢一点"
+        ]
+    },
+    {
+        "name": "jeszcze raz",
+        "trans": [
+            "再说一遍"
+        ]
+    },
+    {
+        "name": "jak to się pisze",
+        "trans": [
+            "这个怎么写"
+        ]
+    },
+    {
+        "name": "gdzie mogę",
+        "trans": [
+            "我在哪里可以……"
+        ]
+    },
+    {
+        "name": "chciałbym",
+        "trans": [
+            "我想要（男性）"
+        ]
+    },
+    {
+        "name": "chciałabym",
+        "trans": [
+            "我想要（女性）"
+        ]
+    },
+    {
+        "name": "mam na imię",
+        "trans": [
+            "我的名字是"
+        ]
+    },
+    {
+        "name": "miłego dnia",
+        "trans": [
+            "祝你今天愉快"
+        ]
+    },
+    {
+        "name": "do jutra",
+        "trans": [
+            "明天见"
+        ]
+    },
+    {
+        "name": "wszystko w porządku",
+        "trans": [
+            "一切都好"
+        ]
+    },
+    {
+        "name": "nie ma sprawy",
+        "trans": [
+            "没关系"
+        ]
+    },
+    {
+        "name": "to nie problem",
+        "trans": [
+            "没问题"
+        ]
+    },
+    {
+        "name": "jestem zmęczony",
+        "trans": [
+            "我累了（男性）"
+        ]
+    },
+    {
+        "name": "jestem głodny",
+        "trans": [
+            "我饿了（男性）"
+        ]
+    },
+    {
+        "name": "lubię to",
+        "trans": [
+            "我喜欢这个"
+        ]
+    },
+    {
+        "name": "nie lubię",
+        "trans": [
+            "我不喜欢"
+        ]
+    },
+    {
+        "name": "chcę",
+        "trans": [
+            "我想要"
+        ]
+    },
+    {
+        "name": "nie chcę",
+        "trans": [
+            "我不想要"
+        ]
+    },
+    {
+        "name": "mogę",
+        "trans": [
+            "我可以"
+        ]
+    },
+    {
+        "name": "nie mogę",
+        "trans": [
+            "我不能"
+        ]
+    },
+    {
+        "name": "muszę",
+        "trans": [
+            "我必须"
+        ]
+    },
+    {
+        "name": "mam",
+        "trans": [
+            "我有"
+        ]
+    },
+    {
+        "name": "nie mam",
+        "trans": [
+            "我没有"
+        ]
+    },
+    {
+        "name": "jestem",
+        "trans": [
+            "我是"
+        ]
+    },
+    {
+        "name": "to jest",
+        "trans": [
+            "这是"
+        ]
+    },
+    {
+        "name": "tu jest",
+        "trans": [
+            "这里有"
+        ]
+    },
+    {
+        "name": "ile masz lat",
+        "trans": [
+            "你多大了"
+        ]
+    },
+    {
+        "name": "gdzie mieszkasz",
+        "trans": [
+            "你住在哪里"
+        ]
+    },
+    {
+        "name": "co robisz",
+        "trans": [
+            "你在做什么"
+        ]
+    },
+    {
+        "name": "jaka jest pogoda",
+        "trans": [
+            "天气怎么样"
+        ]
+    },
+    {
+        "name": "pada deszcz",
+        "trans": [
+            "下雨了"
+        ]
+    },
+    {
+        "name": "świeci słońce",
+        "trans": [
+            "出太阳了"
+        ]
+    },
+    {
+        "name": "jest zimno",
+        "trans": [
+            "很冷"
+        ]
+    },
+    {
+        "name": "jest ciepło",
+        "trans": [
+            "很暖和"
+        ]
+    },
+    {
+        "name": "pogoda",
+        "trans": [
+            "天气"
+        ]
+    },
+    {
+        "name": "temperatura",
+        "trans": [
+            "温度"
+        ]
+    },
+    {
+        "name": "stopień",
+        "trans": [
+            "度；学位"
+        ]
+    },
+    {
+        "name": "zachmurzenie",
+        "trans": [
+            "多云"
+        ]
+    },
+    {
+        "name": "mgła",
+        "trans": [
+            "雾"
+        ]
+    },
+    {
+        "name": "upał",
+        "trans": [
+            "酷热"
+        ]
+    },
+    {
+        "name": "mróz",
+        "trans": [
+            "严寒；霜"
+        ]
+    },
+    {
+        "name": "parasol",
+        "trans": [
+            "雨伞"
+        ]
+    },
+    {
+        "name": "kurtka zimowa",
+        "trans": [
+            "冬装外套"
+        ]
+    },
+    {
+        "name": "apteczka",
+        "trans": [
+            "急救箱"
+        ]
+    },
+    {
+        "name": "ból",
+        "trans": [
+            "疼痛"
+        ]
+    },
+    {
+        "name": "gorączka",
+        "trans": [
+            "发烧"
+        ]
+    },
+    {
+        "name": "katar",
+        "trans": [
+            "感冒流鼻涕"
+        ]
+    },
+    {
+        "name": "kaszel",
+        "trans": [
+            "咳嗽"
+        ]
+    },
+    {
+        "name": "lekarstwo",
+        "trans": [
+            "药"
+        ]
+    },
+    {
+        "name": "recepta",
+        "trans": [
+            "处方"
+        ]
+    },
+    {
+        "name": "ubezpieczenie",
+        "trans": [
+            "保险"
+        ]
+    },
+    {
+        "name": "wypadek",
+        "trans": [
+            "事故"
+        ]
+    },
+    {
+        "name": "niebezpieczeństwo",
+        "trans": [
+            "危险"
+        ]
+    },
+    {
+        "name": "pomoc",
+        "trans": [
+            "帮助"
+        ]
+    },
+    {
+        "name": "straż pożarna",
+        "trans": [
+            "消防队"
+        ]
+    },
+    {
+        "name": "pogotowie",
+        "trans": [
+            "急救"
+        ]
+    },
+    {
+        "name": "numer telefonu",
+        "trans": [
+            "电话号码"
+        ]
+    },
+    {
+        "name": "kontakt",
+        "trans": [
+            "联系"
+        ]
+    },
+    {
+        "name": "spotkanie biznesowe",
+        "trans": [
+            "商务会议"
+        ]
+    },
+    {
+        "name": "wizytówka",
+        "trans": [
+            "名片"
+        ]
+    },
+    {
+        "name": "umiejętność",
+        "trans": [
+            "技能"
+        ]
+    },
+    {
+        "name": "hobby",
+        "trans": [
+            "爱好"
+        ]
+    },
+    {
+        "name": "zainteresowanie",
+        "trans": [
+            "兴趣"
+        ]
+    },
+    {
+        "name": "wakacje",
+        "trans": [
+            "假期"
+        ]
+    },
+    {
+        "name": "wyjazd",
+        "trans": [
+            "出行"
+        ]
+    },
+    {
+        "name": "przyjazd",
+        "trans": [
+            "到达"
+        ]
+    },
+    {
+        "name": "odjazd",
+        "trans": [
+            "出发"
+        ]
+    },
+    {
+        "name": "opóźnienie",
+        "trans": [
+            "延误"
+        ]
+    },
+    {
+        "name": "przesiadka",
+        "trans": [
+            "换乘"
+        ]
+    },
+    {
+        "name": "peron",
+        "trans": [
+            "站台"
+        ]
+    },
+    {
+        "name": "wagon",
+        "trans": [
+            "车厢"
+        ]
+    },
+    {
+        "name": "miejsce",
+        "trans": [
+            "地方；座位"
+        ]
+    },
+    {
+        "name": "rezerwacja",
+        "trans": [
+            "预订"
+        ]
+    },
+    {
+        "name": "paragon",
+        "trans": [
+            "小票"
+        ]
+    },
+    {
+        "name": "kasa",
+        "trans": [
+            "收银台"
+        ]
+    },
+    {
+        "name": "otwarte",
+        "trans": [
+            "营业中"
+        ]
+    },
+    {
+        "name": "zamknięte",
+        "trans": [
+            "已关闭"
+        ]
+    },
+    {
+        "name": "godziny otwarcia",
+        "trans": [
+            "营业时间"
+        ]
+    },
+    {
+        "name": "wejście",
+        "trans": [
+            "入口"
+        ]
+    },
+    {
+        "name": "wyjście",
+        "trans": [
+            "出口"
+        ]
+    },
+    {
+        "name": "toaleta damska",
+        "trans": [
+            "女厕"
+        ]
+    },
+    {
+        "name": "toaleta męska",
+        "trans": [
+            "男厕"
+        ]
+    },
+    {
+        "name": "zakaz",
+        "trans": [
+            "禁止"
+        ]
+    },
+    {
+        "name": "uwaga",
+        "trans": [
+            "注意"
+        ]
+    },
+    {
+        "name": "nie pal",
+        "trans": [
+            "请勿吸烟"
+        ]
+    },
+    {
+        "name": "cisza",
+        "trans": [
+            "安静"
+        ]
+    },
+    {
+        "name": "kolejka",
+        "trans": [
+            "队列"
+        ]
+    },
+    {
+        "name": "proszę czekać",
+        "trans": [
+            "请稍等"
+        ]
+    },
+    {
+        "name": "następny proszę",
+        "trans": [
+            "下一位请"
+        ]
+    },
+    {
+        "name": "czy mogę pomóc",
+        "trans": [
+            "我能帮您吗"
+        ]
+    },
+    {
+        "name": "szukam",
+        "trans": [
+            "我在找"
+        ]
+    },
+    {
+        "name": "gdzie znajdę",
+        "trans": [
+            "我在哪能找到"
+        ]
+    },
+    {
+        "name": "to wszystko",
+        "trans": [
+            "就这些"
+        ]
+    },
+    {
+        "name": "poproszę rachunek",
+        "trans": [
+            "请结账"
+        ]
+    },
+    {
+        "name": "czy mogę zapłacić kartą",
+        "trans": [
+            "可以刷卡吗"
+        ]
+    },
+    {
+        "name": "napiwek",
+        "trans": [
+            "小费"
+        ]
+    },
+    {
+        "name": "smakowało",
+        "trans": [
+            "好吃（过去）"
+        ]
+    },
+    {
+        "name": "jest pyszne",
+        "trans": [
+            "非常好吃"
+        ]
+    },
+    {
+        "name": "wegetariański",
+        "trans": [
+            "素食的"
+        ]
+    },
+    {
+        "name": "wegański",
+        "trans": [
+            "纯素的"
+        ]
+    },
+    {
+        "name": "bezglutenowy",
+        "trans": [
+            "无麸质的"
+        ]
+    },
+    {
+        "name": "alergia",
+        "trans": [
+            "过敏"
+        ]
+    },
+    {
+        "name": "menu dnia",
+        "trans": [
+            "今日菜单"
+        ]
+    },
+    {
+        "name": "zestaw",
+        "trans": [
+            "套餐"
+        ]
+    },
+    {
+        "name": "przystawka",
+        "trans": [
+            "开胃菜"
+        ]
+    },
+    {
+        "name": "danie główne",
+        "trans": [
+            "主菜"
+        ]
+    },
+    {
+        "name": "deser",
+        "trans": [
+            "甜点"
+        ]
+    },
+    {
+        "name": "napój",
+        "trans": [
+            "饮料"
+        ]
+    },
+    {
+        "name": "woda gazowana",
+        "trans": [
+            "气泡水"
+        ]
+    },
+    {
+        "name": "woda niegazowana",
+        "trans": [
+            "无气水"
+        ]
+    },
+    {
+        "name": "herbata zielona",
+        "trans": [
+            "绿茶"
+        ]
+    },
+    {
+        "name": "kawa czarna",
+        "trans": [
+            "黑咖啡"
+        ]
+    },
+    {
+        "name": "z mlekiem",
+        "trans": [
+            "加牛奶"
+        ]
+    },
+    {
+        "name": "bez cukru",
+        "trans": [
+            "不加糖"
+        ]
+    },
+    {
+        "name": "na wynos",
+        "trans": [
+            "外带"
+        ]
+    },
+    {
+        "name": "na miejscu",
+        "trans": [
+            "堂食"
+        ]
+    },
+    {
+        "name": "stolik",
+        "trans": [
+            "小桌子；餐位"
+        ]
+    },
+    {
+        "name": "rezerwacja stolika",
+        "trans": [
+            "订位"
+        ]
+    },
+    {
+        "name": "kelnerstwo",
+        "trans": [
+            "餐饮服务"
+        ]
+    },
+    {
+        "name": "rachunek proszę",
+        "trans": [
+            "买单"
+        ]
+    },
+    {
+        "name": "resztę proszę zatrzymać",
+        "trans": [
+            "不用找了"
+        ]
+    }
+]

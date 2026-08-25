@@ -127,4 +127,13 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  pl: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '波兰语',
+        pron: 'pl',
+      },
+    ],
+  },
 }
