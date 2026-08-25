@@ -4155,6 +4155,21 @@ const indonesianDicts: DictionaryResource[] = [
   },
 ]
 
+// 西班牙语高频 5000
+const spanishDicts: DictionaryResource[] = [
+  {
+    id: 'spanish-frequency-5000',
+    name: '西班牙语高频 5000',
+    description: '西班牙语 5000 高频词元及中文释义，词频来自 OpenSubtitles（FrequencyWords / doozan lemmas）',
+    category: '西班牙语学习',
+    tags: ['高频', '基础'],
+    url: '/dicts/SpanishFrequency5000.json',
+    length: 5000,
+    language: 'es',
+    languageCategory: 'es',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
@@ -4168,6 +4183,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...germanExam,
   ...kazakhHapinDicts,
   ...indonesianDicts,
+  ...spanishDicts,
 
   // {
   //   id: 'zhtest',
