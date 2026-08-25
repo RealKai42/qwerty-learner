@@ -4155,6 +4155,21 @@ const indonesianDicts: DictionaryResource[] = [
   },
 ]
 
+// 新视线意大利语 A1-A2
+const italianDicts: DictionaryResource[] = [
+  {
+    id: 'xinshixian-italian-a1a2',
+    name: '新视线意大利语 A1-A2',
+    description: '按《新视线意大利语》初级（欧洲语言共同参考框架 A1–A2）课次主题整理的常用词及中文释义',
+    category: '意大利语学习',
+    tags: ['初级', 'A1-A2'],
+    url: '/dicts/XinShiXianItalian_A1A2.json',
+    length: 889,
+    language: 'it',
+    languageCategory: 'it',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
@@ -4168,6 +4183,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...germanExam,
   ...kazakhHapinDicts,
   ...indonesianDicts,
+  ...italianDicts,
 
   // {
   //   id: 'zhtest',
