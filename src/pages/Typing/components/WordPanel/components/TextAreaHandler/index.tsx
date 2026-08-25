@@ -1,5 +1,7 @@
 import type { WordUpdateAction } from '../InputHandler'
 import { TypingContext } from '@/pages/Typing/store'
+import { currentDictInfoAtom } from '@/store'
+import { useAtomValue } from 'jotai'
 import type { FormEvent } from 'react'
 import { useCallback, useContext, useEffect, useRef } from 'react'
 
@@ -7,6 +9,7 @@ export default function TextAreaHandler({ updateInput }: { updateInput: (updateO
   const textareaRef = useRef<HTMLTextAreaElement>(null)
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state } = useContext(TypingContext)!
+  const dictInfo = useAtomValue(currentDictInfoAtom)
 
   useEffect(() => {
     if (!textareaRef.current) return
@@ -46,6 +49,8 @@ export default function TextAreaHandler({ updateInput }: { updateInput: (updateO
       onInput={onInput}
       onBlur={onBlur}
       onCompositionStart={() => {
+        // Korean Hangul must be typed with an IME; do not block composition.
+        if (dictInfo.language === 'ko') return
         alert('您正在使用输入法，请关闭输入法。')
       }}
     ></textarea>

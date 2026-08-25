@@ -29,6 +29,8 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
       return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
     case 'id':
       return `${pronunciationApi}${word}&le=id`
+    case 'ko':
+      return `${pronunciationApi}${word}&le=ko`
     case 'pl':
       return `${pronunciationApi}${word}&le=pl`
     default:

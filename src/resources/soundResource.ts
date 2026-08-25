@@ -127,6 +127,15 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  ko: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '韩语',
+        pron: 'ko',
+      },
+    ],
+  },
   pl: {
     defaultPronIndex: 0,
     pronunciation: [
