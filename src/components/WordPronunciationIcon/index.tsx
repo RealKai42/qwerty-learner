@@ -1,7 +1,9 @@
 import { SoundIcon } from './SoundIcon'
 import usePronunciationSound from '@/hooks/usePronunciation'
+import { wordPronunciationEndSignalAtom } from '@/store'
 import type { Word } from '@/typings'
-import { useCallback, useEffect, useImperativeHandle } from 'react'
+import { useSetAtom } from 'jotai'
+import { useCallback, useEffect, useImperativeHandle, useRef } from 'react'
 import React from 'react'
 
 export const WordPronunciationIcon = React.forwardRef<
@@ -31,6 +33,15 @@ export const WordPronunciationIcon = React.forwardRef<
   useEffect(() => {
     return stop
   }, [word, stop])
+
+  const setPronunciationEndSignal = useSetAtom(wordPronunciationEndSignalAtom)
+  const prevIsPlayingRef = useRef(false)
+  useEffect(() => {
+    if (prevIsPlayingRef.current && !isPlaying) {
+      setPronunciationEndSignal((v) => v + 1)
+    }
+    prevIsPlayingRef.current = isPlaying
+  }, [isPlaying, setPronunciationEndSignal])
 
   useImperativeHandle(
     ref,

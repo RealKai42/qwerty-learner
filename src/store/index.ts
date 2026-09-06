@@ -66,6 +66,8 @@ export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom
 
 export const pronunciationIsTransReadAtom = atom((get) => get(pronunciationConfigAtom).isTransRead)
 
+export const wordPronunciationEndSignalAtom = atom(0)
+
 export const randomConfigAtom = atomForConfig('randomConfig', {
   isOpen: false,
 })
