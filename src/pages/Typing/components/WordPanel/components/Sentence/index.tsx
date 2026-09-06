@@ -79,8 +79,13 @@ export default function Sentence({ sentence, wordName, showTrans = true, autoPla
 
   const initialSignalRef = useRef(wordEndSignal)
   useEffect(() => {
-    if (!autoPlay || !isSupported) return
+    if (!autoPlay || !isSupported) {
+      // Do not replay a pronunciation that ended while the sentence was hidden.
+      initialSignalRef.current = wordEndSignal
+      return
+    }
     if (wordEndSignal === initialSignalRef.current) return
+    initialSignalRef.current = wordEndSignal
     const timer = window.setTimeout(() => {
       speakRef.current(true)
     }, 1000)
@@ -123,7 +128,7 @@ export default function Sentence({ sentence, wordName, showTrans = true, autoPla
           ))}
         </span>
         {isSupported && (
-          <Tooltip content="朗读例句（Microsoft TTS）" className="h-5 w-5 shrink-0 cursor-pointer leading-none">
+          <Tooltip content="朗读例句（浏览器语音）" className="h-5 w-5 shrink-0 cursor-pointer leading-none">
             <SoundIcon animated={speaking} onClick={handleClickSoundIcon} className="h-5 w-5" />
           </Tooltip>
         )}

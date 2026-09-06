@@ -188,7 +188,7 @@ export default function WordPanel() {
                       sentence={sentence}
                       wordName={currentWord.name}
                       showTrans={shouldShowTranslation}
-                      autoPlay={idx === 0}
+                      autoPlay={idx === 0 && shouldShowTranslation}
                     />
                   ))}
                 </div>

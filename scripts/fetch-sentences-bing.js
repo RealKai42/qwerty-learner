@@ -14,7 +14,7 @@
 
 const fs = require('fs')
 const path = require('path')
-const https = require('https')
+const httpGet = require('./http-get')
 
 const INTERVAL_MS = Number(process.env.INTERVAL_MS || 400)
 const MAX_PER_WORD = Number(process.env.MAX_PER_WORD || 1)
@@ -28,31 +28,6 @@ const absPath = path.resolve(target)
 const words = JSON.parse(fs.readFileSync(absPath, 'utf8'))
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
-
-function httpGet(url) {
-  return new Promise((resolve, reject) => {
-    https
-      .get(
-        url,
-        {
-          headers: {
-            'User-Agent':
-              'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36',
-            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-          },
-        },
-        (res) => {
-          if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-            return resolve(httpGet(res.headers.location))
-          }
-          const chunks = []
-          res.on('data', (c) => chunks.push(c))
-          res.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
-        },
-      )
-      .on('error', reject)
-  })
-}
 
 function decodeEntities(s) {
   return s

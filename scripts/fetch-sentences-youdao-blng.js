@@ -6,7 +6,7 @@
  */
 const fs = require('fs')
 const path = require('path')
-const https = require('https')
+const httpGet = require('./http-get')
 
 const INTERVAL_MS = Number(process.env.INTERVAL_MS || 350)
 const MAX_PER_WORD = Number(process.env.MAX_PER_WORD || 1)
@@ -23,31 +23,6 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 const BLOCKED_KEYWORDS =
   /\b(sex|drug|kill|murder|arrest|marijuana|whisky|violence|bomb|virgin|breast|nude|porn|corpse|apartheid|racism|terror)/i
-
-function httpGet(url) {
-  return new Promise((resolve, reject) => {
-    https
-      .get(
-        url,
-        {
-          headers: {
-            'User-Agent':
-              'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36',
-            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-          },
-        },
-        (res) => {
-          if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-            return resolve(httpGet(res.headers.location))
-          }
-          const chunks = []
-          res.on('data', (c) => chunks.push(c))
-          res.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')))
-        },
-      )
-      .on('error', reject)
-  })
-}
 
 function decodeJsString(s) {
   return s
