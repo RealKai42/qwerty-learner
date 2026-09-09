@@ -12,6 +12,7 @@ import type {
   WordDictationOpenBy,
   WordDictationType,
 } from '@/typings'
+import { createEncryptedStorage } from '@/utils/crypto'
 import type { ReviewRecord } from '@/utils/db/record'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
@@ -61,6 +62,8 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
 })
 
 export const fontSizeConfigAtom = atomForConfig('fontsize', defaultFontSizeConfig)
+
+export const foreignFontAtom = atom((get) => get(fontSizeConfigAtom).foreignFont)
 
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)
 
@@ -112,6 +115,34 @@ export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_STA
 
 // Enhanced version promotion popup state
 export const hasSeenEnhancedPromotionAtom = atomWithStorage('hasSeenEnhancedPromotion', false)
+
+// WebDAV config persisted to localStorage
+const webdavPersistedAtom = atomForConfig('webdavConfig', {
+  enabled: false,
+  url: '',
+  autoBackup: true,
+})
+const webdavCredentialsAtom = atomWithStorage(
+  'webdavCredentials',
+  { username: '', password: '' },
+  createEncryptedStorage<{ username: string; password: string }>('webdavCredentials'),
+)
+
+type WebdavConfig = { enabled: boolean; url: string; username: string; password: string; autoBackup: boolean }
+
+export const webdavConfigAtom = atom(
+  (get) => {
+    const config = get(webdavPersistedAtom)
+    const creds = get(webdavCredentialsAtom)
+    return { ...config, username: creds.username, password: creds.password } as WebdavConfig
+  },
+  (get, set, newValue: WebdavConfig | ((prev: WebdavConfig) => WebdavConfig)) => {
+    const resolved = typeof newValue === 'function' ? newValue(get(webdavConfigAtom)) : newValue
+    const { username, password, ...rest } = resolved
+    set(webdavPersistedAtom, rest)
+    set(webdavCredentialsAtom, { username, password })
+  },
+)
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
