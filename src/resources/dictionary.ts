@@ -1199,6 +1199,17 @@ const internationalExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+   {
+    id: 'toeflad',
+    name: 'TOEFL学术讨论',
+    description: '简单好拼的学术讨论写作词汇',
+    category: '国际考试',
+    tags: ['TOEFL'],
+    url: '/dicts/TOEFL-AcademicDiscussion.json',
+    length: 208,
+    language: 'en',
+    languageCategory: 'en',
+  },
   {
     id: 'IELTS-listening-18-days-6',
     name: '雅思听力词汇18天 day6',
