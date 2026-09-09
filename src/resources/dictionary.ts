@@ -1541,6 +1541,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'gary-li-duolingo',
+    name: '多邻国',
+    description: '多邻国课程词汇',
+    category: '国际考试',
+    tags: ['CEFR'],
+    url: '/dicts/Gary-li-duolingo.json',
+    length: 5440,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'Duolingo_Vocabulary_B1',
     name: '多邻国分级词汇B1',
     description: '多邻国分级词汇B1',
