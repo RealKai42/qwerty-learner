@@ -34,7 +34,7 @@ export function generateWordSoundSrc(word: string, pronunciation: Exclude<Pronun
   }
 }
 
-export default function usePronunciationSound(word: string, isLoop?: boolean) {
+export default function usePronunciationSound(word: string, isLoop?: boolean, onEnd?: () => void) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
   const [isPlaying, setIsPlaying] = useState(false)
@@ -58,7 +58,12 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     const unListens: Array<() => void> = []
 
     unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
-    unListens.push(addHowlListener(sound, 'end', () => setIsPlaying(false)))
+    unListens.push(
+      addHowlListener(sound, 'end', () => {
+        setIsPlaying(false)
+        onEnd?.()
+      }),
+    )
     unListens.push(addHowlListener(sound, 'pause', () => setIsPlaying(false)))
     unListens.push(addHowlListener(sound, 'playerror', () => setIsPlaying(false)))
 
@@ -67,7 +72,7 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
       unListens.forEach((unListen) => unListen())
       ;(sound as Howl).unload()
     }
-  }, [sound])
+  }, [onEnd, sound])
 
   return { play, stop, isPlaying }
 }

@@ -19,12 +19,18 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   id: 'id',
 }
 
+export type Sentence = {
+  english: string
+  chinese: string
+}
+
 export type Word = {
   name: string
   trans: string[]
   usphone: string
   ukphone: string
   notation?: string
+  sentences?: Sentence[]
 }
 
 export type WordWithIndex = Word & {

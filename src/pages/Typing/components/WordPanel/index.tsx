@@ -3,6 +3,7 @@ import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
+import Sentence from './components/Sentence'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
@@ -179,6 +180,19 @@ export default function WordPanel() {
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}
               />
+              {currentWord.sentences && currentWord.sentences.length > 0 && (
+                <div className={`flex flex-col items-center gap-2 pb-2 ${shouldShowTranslation ? '' : 'invisible'}`}>
+                  {currentWord.sentences.map((sentence, idx) => (
+                    <Sentence
+                      key={`${currentWord.name}-${idx}`}
+                      sentence={sentence}
+                      wordName={currentWord.name}
+                      showTrans={shouldShowTranslation}
+                      autoPlay={idx === 0 && shouldShowTranslation}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}

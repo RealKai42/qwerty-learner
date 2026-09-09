@@ -119,3 +119,31 @@ test.describe('Practice', () => {
     await expect(await page.getByText('第 2 章').first().isVisible()).toBeTruthy()
   })
 })
+
+test.describe('Practice sentence examples', () => {
+  test('shows examples and hides the target word in dictation mode', async ({ page }) => {
+    await page.route('**/dicts/CET4_T.json', async (route) => {
+      const response = await route.fetch()
+      const words = await response.json()
+      words[20] = {
+        ...words[20],
+        sentences: [{ english: `${words[20].name} is useful.`, chinese: '这是一个例句。' }],
+      }
+      await route.fulfill({ response, json: words })
+    })
+    await page.addInitScript(() => {
+      localStorage.setItem('currentChapter', '1')
+      localStorage.setItem('wordDictationConfig', JSON.stringify({ isOpen: true, openBy: 'user', type: 'hideAll' }))
+    })
+
+    await page.goto('/')
+    await page.getByLabel('关闭提示').click()
+    await expect(page.getByText('第 2 章').first()).toBeVisible()
+
+    await page.keyboard.press('Enter')
+    await page.keyboard.press('Control+Shift+V')
+
+    await expect(page.getByText('这是一个例句。')).toBeVisible()
+    await expect(page.getByText('_______', { exact: true })).toBeVisible()
+  })
+})

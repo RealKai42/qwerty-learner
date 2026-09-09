@@ -4160,6 +4160,17 @@ const indonesianDicts: DictionaryResource[] = [
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaryResources: DictionaryResource[] = [
+  {
+    id: 'BJPrimary',
+    name: '北京小学',
+    description: '北京小学英语',
+    category: '青少年英语',
+    tags: ['其他'],
+    url: '/dicts/beijing_primary_english.json',
+    length: 842,
+    language: 'en',
+    languageCategory: 'en',
+  },
   ...chinaExam,
   ...internationalExam,
   ...childrenEnglish,
