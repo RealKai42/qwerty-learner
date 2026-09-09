@@ -1376,6 +1376,17 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'sat-1700-2025-day-grouped',
+    name: 'SAT 1700 2025',
+    description: '机考SAT真题1700词-2025版，保留原书 Day 顺序；释义仅包含音标、词性和中文释义。',
+    category: '英语学习',
+    tags: ['SAT', '机考SAT', '真题词汇'],
+    url: '/dicts/SAT_1700_2025_Day_Grouped.json',
+    length: 1700,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'toefl',
     name: 'TOEFL',
     description: '托福考试常见词',
