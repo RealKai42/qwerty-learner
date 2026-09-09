@@ -4155,6 +4155,21 @@ const indonesianDicts: DictionaryResource[] = [
   },
 ]
 
+//NGSL核心词汇
+const ngslDicts: DictionaryResource[] = [
+  {
+    id: 'NGSL_1.2',
+    name: 'NGSL 2809核心词',
+    description: '新概念英语常用词表（New General Service List）2809个核心词，含中文释义',
+    category: '英语学习',
+    tags: ['核心词汇', '雅思', 'NGSL'],
+    url: '/dicts/NGSL_1.2.json',
+    length: 2809,
+    language: 'en',
+    languageCategory: 'en',
+  },
+]
+
 /**
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
@@ -4168,6 +4183,7 @@ export const dictionaryResources: DictionaryResource[] = [
   ...germanExam,
   ...kazakhHapinDicts,
   ...indonesianDicts,
+  ...ngslDicts,
 
   // {
   //   id: 'zhtest',
