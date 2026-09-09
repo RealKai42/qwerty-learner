@@ -181,6 +181,13 @@ body,
     border-color: #f0f0f0;
   }
 }
+.example-pre-type {
+  color: green;
+}
+
+.example-typing {
+  color: red;
+}
 
 .typewriter {
   width: 30em;
