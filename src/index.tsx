@@ -11,9 +11,18 @@ import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import process from 'process'
 import React, { Suspense, lazy, useEffect, useState } from 'react'
-import 'react-app-polyfill/stable'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+
+const DEBOUNCE_DELAY = 300
+
+function debounce<T extends (...args: any[]) => any>(func: T, wait: number): (...args: Parameters<T>) => void {
+  let timeout: ReturnType<typeof setTimeout> | null = null
+  return (...args: Parameters<T>) => {
+    if (timeout) clearTimeout(timeout)
+    timeout = setTimeout(() => func(...args), wait)
+  }
+}
 
 const AnalysisPage = lazy(() => import('./pages/Analysis'))
 const GalleryPage = lazy(() => import('./pages/Gallery-N'))
@@ -35,13 +44,13 @@ function Root() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
 
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = debounce(() => {
       const isMobile = window.innerWidth <= 600
       if (!isMobile) {
         window.location.href = '/'
       }
       setIsMobile(isMobile)
-    }
+    }, DEBOUNCE_DELAY)
 
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
