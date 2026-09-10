@@ -2,11 +2,19 @@ import { TypingContext, TypingStateActionType } from '../../store'
 import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
+import WordCompletionPause from '../WordCompletionPause'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
+import {
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopWordConfigAtom,
+  phoneticConfigAtom,
+  reviewModeInfoAtom,
+  wordCompletionPauseConfigAtom,
+} from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
@@ -19,7 +27,10 @@ export default function WordPanel() {
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
   const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
+  const [showCompletionPause, setShowCompletionPause] = useState(false)
+  const [completedWord, setCompletedWord] = useState<Word | null>(null)
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
+  const wordCompletionPauseConfig = useAtomValue(wordCompletionPauseConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
 
@@ -51,7 +62,7 @@ export default function WordPanel() {
     [setReviewModeInfo],
   )
 
-  const onFinish = useCallback(() => {
+  const proceedToNext = useCallback(() => {
     if (state.chapterData.index < state.chapterData.words.length - 1 || currentWordExerciseCount < loopWordTimes - 1) {
       // 用户完成当前单词
       if (currentWordExerciseCount < loopWordTimes - 1) {
@@ -89,6 +100,22 @@ export default function WordPanel() {
     updateReviewRecord,
     setReviewModeInfo,
   ])
+
+  const onFinish = useCallback(() => {
+    // Check if word completion pause is enabled
+    if (wordCompletionPauseConfig.isEnabled) {
+      setCompletedWord(currentWord)
+      setShowCompletionPause(true)
+    } else {
+      proceedToNext()
+    }
+  }, [wordCompletionPauseConfig.isEnabled, currentWord, proceedToNext])
+
+  const onCompletionPauseComplete = useCallback(() => {
+    setShowCompletionPause(false)
+    setCompletedWord(null)
+    proceedToNext()
+  }, [proceedToNext])
 
   const onSkipWord = useCallback(
     (type: 'prev' | 'next') => {
@@ -184,6 +211,9 @@ export default function WordPanel() {
         )}
       </div>
       <Progress className={`mb-10 mt-auto ${state.isTyping ? 'opacity-100' : 'opacity-0'}`} />
+
+      {/* Word Completion Pause Modal */}
+      {completedWord && <WordCompletionPause word={completedWord} isVisible={showCompletionPause} onComplete={onCompletionPauseComplete} />}
     </div>
   )
 }
