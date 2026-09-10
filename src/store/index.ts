@@ -5,6 +5,7 @@ import { idDictionaryMap } from '@/resources/dictionary'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type {
   Dictionary,
+  ErrorHandleType,
   InfoPanelState,
   LoopWordTimesOption,
   PhoneticType,
@@ -115,3 +116,7 @@ export const hasSeenEnhancedPromotionAtom = atomWithStorage('hasSeenEnhancedProm
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
+
+export const errorHandleConfigAtom = atomForConfig('errorHandleConfig', {
+  type: 'clear' as ErrorHandleType, // 'continue' 或 'clear'，初始默认为 clear
+})

@@ -15,6 +15,7 @@ import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
+  errorHandleConfigAtom,
   isIgnoreCaseAtom,
   isShowAnswerOnHoverAtom,
   isTextSelectableAtom,
@@ -51,6 +52,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
+  const errorHandleConfig = useAtomValue(errorHandleConfigAtom)
 
   useEffect(() => {
     // run only when word changes
@@ -75,7 +77,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     (updateAction: WordUpdateAction) => {
       switch (updateAction.type) {
         case 'add':
-          if (wordState.hasWrong) return
+          if (errorHandleConfig.type === 'clear' && wordState.hasWrong) return
 
           if (updateAction.value === ' ') {
             updateAction.event.preventDefault()
@@ -89,11 +91,22 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           }
           break
 
+        case 'delete':
+          setWordState((state) => {
+            const newInputWord = state.inputWord.slice(0, -1)
+            state.inputWord = newInputWord
+
+            if (newInputWord.length < state.letterStates.length) {
+              state.letterStates[newInputWord.length] = 'normal'
+            }
+          })
+          break
+
         default:
           console.warn('unknown update type', updateAction)
       }
     },
-    [wordState.hasWrong, setWordState],
+    [wordState.hasWrong, errorHandleConfig.type, setWordState],
   )
 
   const handleHoverWord = useCallback((checked: boolean) => {
@@ -173,7 +186,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
      * 目前不影响生产环境，猜测是因为开发环境下 react 会两次调用 useEffect 从而展示了这个 warning
      * 但这终究是一个 bug，需要修复
      */
-    if (wordState.hasWrong || inputLength === 0 || wordState.displayWord.length === 0) {
+    if (inputLength === 0 || wordState.displayWord.length === 0) {
       return
     }
 
@@ -212,10 +225,15 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       playBeepSound()
       setWordState((state) => {
         state.letterStates[inputLength - 1] = 'wrong'
-        state.hasWrong = true
+
+        // 根据错误处理配置决定行为
+        if (errorHandleConfig.type === 'clear') {
+          state.hasWrong = true
+          state.letterTimeArray = []
+        }
+
         state.hasMadeInputWrong = true
         state.wrongCount += 1
-        state.letterTimeArray = []
 
         if (state.letterMistake[inputLength - 1]) {
           state.letterMistake[inputLength - 1].push(inputChar)

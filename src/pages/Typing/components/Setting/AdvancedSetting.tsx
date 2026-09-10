@@ -1,5 +1,12 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextWordAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
+import {
+  errorHandleConfigAtom,
+  isIgnoreCaseAtom,
+  isShowAnswerOnHoverAtom,
+  isShowPrevAndNextWordAtom,
+  isTextSelectableAtom,
+  randomConfigAtom,
+} from '@/store'
 import { Switch } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtom } from 'jotai'
@@ -11,6 +18,7 @@ export default function AdvancedSetting() {
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
   const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
+  const [errorHandleConfig, setErrorHandleConfig] = useAtom(errorHandleConfigAtom)
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -42,6 +50,7 @@ export default function AdvancedSetting() {
     },
     [setIsTextSelectable],
   )
+
   const onToggleShowAnswerOnHover = useCallback(
     (checked: boolean) => {
       setIsShowAnswerOnHover(checked)
@@ -49,10 +58,33 @@ export default function AdvancedSetting() {
     [setIsShowAnswerOnHover],
   )
 
+  const onToggleErrorHandleType = useCallback(
+    (checked: boolean) => {
+      setErrorHandleConfig((prev) => ({
+        ...prev,
+        type: checked ? 'continue' : 'clear',
+      }))
+    },
+    [setErrorHandleConfig],
+  )
+
   return (
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
       <ScrollArea.Viewport className="h-full w-full px-3">
         <div className={styles.tabContent}>
+          <div className={styles.section}>
+            <span className={styles.sectionLabel}>错误处理方式</span>
+            <span className={styles.sectionDescription}>选择在输入错误时的处理方式</span>
+            <div className={styles.switchBlock}>
+              <Switch checked={errorHandleConfig.type === 'continue'} onChange={onToggleErrorHandleType} className="switch-root">
+                <span aria-hidden="true" className="switch-thumb" />
+              </Switch>
+              <span className="text-right text-xs font-normal leading-tight text-gray-600">
+                {errorHandleConfig.type === 'continue' ? '错误后继续输入（可删除修改）' : '错误后清空重新输入（传统方式）'}
+              </span>
+            </div>
+          </div>
+
           <div className={styles.section}>
             <span className={styles.sectionLabel}>章节乱序</span>
             <span className={styles.sectionDescription}>开启后，每次练习章节中单词会随机排序。下一章节生效</span>
@@ -79,7 +111,9 @@ export default function AdvancedSetting() {
           </div>
           <div className={styles.section}>
             <span className={styles.sectionLabel}>是否忽略大小写</span>
-            <span className={styles.sectionDescription}>开启后，输入时不区分大小写，如输入“hello”和“Hello”都会被认为是正确的</span>
+            <span className={styles.sectionDescription}>
+              开启后，输入时不区分大小写，如输入&quot;hello&quot;和&quot;Hello&quot;都会被认为是正确的
+            </span>
             <div className={styles.switchBlock}>
               <Switch checked={isIgnoreCase} onChange={onToggleIgnoreCase} className="switch-root">
                 <span aria-hidden="true" className="switch-thumb" />
