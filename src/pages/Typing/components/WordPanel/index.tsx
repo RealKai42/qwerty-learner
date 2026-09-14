@@ -3,6 +3,7 @@ import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
+import ProficiencyButtons from './components/ProficiencyButtons'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
@@ -148,6 +149,17 @@ export default function WordPanel() {
     return isShowTranslation || state.isTransVisible
   }, [isShowTranslation, state.isTransVisible])
 
+  // 处理熟练度标记完成后的操作
+  const handleMarkProficiency = useCallback(
+    (status: 'known' | 'remembered') => {
+      // 可以选择在标记后跳到下一个单词
+      if (status === 'known' && state.chapterData.index < state.chapterData.words.length - 1) {
+        onSkipWord('next')
+      }
+    },
+    [state.chapterData.index, state.chapterData.words.length, onSkipWord],
+  )
+
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
       <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">
@@ -179,6 +191,13 @@ export default function WordPanel() {
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}
               />
+
+              {/* 熟练度按钮，只在完成当前单词输入且非章节结束时显示 */}
+              {state.isTyping && (
+                <div className="absolute right-[-6rem] top-1/2 flex -translate-y-1/2 transform items-center">
+                  <ProficiencyButtons word={currentWord.name} onMarkProficiency={handleMarkProficiency} />
+                </div>
+              )}
             </div>
           </div>
         )}
