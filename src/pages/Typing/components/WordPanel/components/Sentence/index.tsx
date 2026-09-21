@@ -88,7 +88,7 @@ export default function Sentence({ sentence, wordName, showTrans = true, autoPla
     initialSignalRef.current = wordEndSignal
     const timer = window.setTimeout(() => {
       speakRef.current(true)
-    }, 1000)
+    }, 250)
     return () => window.clearTimeout(timer)
   }, [wordEndSignal, autoPlay, isSupported])
 

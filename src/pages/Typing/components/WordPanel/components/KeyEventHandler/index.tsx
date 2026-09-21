@@ -1,14 +1,19 @@
 import type { WordUpdateAction } from '../InputHandler'
-import { TypingContext } from '@/pages/Typing/store'
 import { isChineseSymbol, isLegal } from '@/utils'
-import { useCallback, useContext, useEffect } from 'react'
+import { useCallback, useEffect } from 'react'
+
+function isEditableTarget(target: EventTarget | null) {
+  if (!(target instanceof HTMLElement)) return false
+  if (target.isContentEditable) return true
+  const tag = target.tagName
+  return tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT'
+}
 
 export default function KeyEventHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(TypingContext)!
-
   const onKeydown = useCallback(
     (e: KeyboardEvent) => {
+      if (isEditableTarget(e.target)) return
+
       const char = e.key
 
       if (isChineseSymbol(char)) {
@@ -23,14 +28,14 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
     [updateInput],
   )
 
+  // Listen unconditionally so the very first keystroke — which also flips
+  // isTyping in the parent — still gets recorded as an input character.
   useEffect(() => {
-    if (!state.isTyping) return
-
     window.addEventListener('keydown', onKeydown)
     return () => {
       window.removeEventListener('keydown', onKeydown)
     }
-  }, [onKeydown, state.isTyping])
+  }, [onKeydown])
 
   return <></>
 }
