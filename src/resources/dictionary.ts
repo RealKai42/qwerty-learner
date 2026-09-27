@@ -590,6 +590,17 @@ const chinaExam: DictionaryResource[] = [
     language: 'en',
     languageCategory: 'en',
   },
+  {
+    id: 'zero_to_talk',
+    name: '0基础到能交流',
+    description: '零基础日常交流核心词汇',
+    category: '中国考试',
+    tags: ['课外词汇'],
+    url: '/dicts/zero_to_talk.json',
+    length: 1339,
+    language: 'en',
+    languageCategory: 'en',
+  },
 ]
 
 // 国际考试
