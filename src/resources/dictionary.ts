@@ -534,6 +534,17 @@ const chinaExam: DictionaryResource[] = [
   },
 
   {
+    id: 'daily_essential_words',
+    name: '0基础到日常对话',
+    description: '0基础到日常对话',
+    category: '中国考试',
+    tags: ['其他'],
+    url: '/dicts/daily_essential_words.json',
+    length: 1338,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'frequently_used_words01',
     name: '超频单词level 1',
     description: '超频单词level 1',
