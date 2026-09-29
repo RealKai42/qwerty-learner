@@ -2416,6 +2416,17 @@ const childrenEnglish: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'waiyan-6-1-2026',
+    name: '外研版六上·2026新版',
+    description: '外研版（三起）六年级上册 2026秋新版，按 Unit 顺序收录',
+    category: '青少年英语',
+    tags: ['其他', '六年级'],
+    url: '/dicts/waiyan-6-1-2026.json',
+    length: 115,
+    language: 'en',
+    languageCategory: 'en',
+  },
+  {
     id: 'waiyan20',
     name: '外研六年级下册',
     description: '外研六年级下册',

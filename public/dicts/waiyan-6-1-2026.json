@@ -1,0 +1,1582 @@
+[
+    {
+        "name": "money",
+        "trans": [
+            "n. 钱，金钱"
+        ],
+        "usphone": "[ˈmʌni]",
+        "ukphone": "[ˈmʌni]",
+        "sentences": [
+            {
+                "english": "I save my money in a bank.",
+                "chinese": "我把钱存在银行里。"
+            }
+        ]
+    },
+    {
+        "name": "pocket money",
+        "trans": [
+            "n. 零花钱"
+        ],
+        "usphone": "[ˈpɑːkɪt ˈmʌni]",
+        "ukphone": "[ˈpɒkɪt ˈmʌni]",
+        "sentences": [
+            {
+                "english": "My mother gives me pocket money every week.",
+                "chinese": "我妈妈每周给我零花钱。"
+            }
+        ]
+    },
+    {
+        "name": "coin",
+        "trans": [
+            "n. 硬币"
+        ],
+        "usphone": "[kɔɪn]",
+        "ukphone": "[kɔɪn]",
+        "sentences": [
+            {
+                "english": "He put a coin into the box.",
+                "chinese": "他把一枚硬币放进盒子里。"
+            }
+        ]
+    },
+    {
+        "name": "banknote",
+        "trans": [
+            "n. 纸币"
+        ],
+        "usphone": "[ˈbæŋknoʊt]",
+        "ukphone": "[ˈbæŋknəʊt]",
+        "sentences": [
+            {
+                "english": "This is a 100-yuan banknote.",
+                "chinese": "这是一张100元纸币。"
+            }
+        ]
+    },
+    {
+        "name": "wallet",
+        "trans": [
+            "n. 钱包"
+        ],
+        "usphone": "[ˈwɑːlɪt]",
+        "ukphone": "[ˈwɒlɪt]",
+        "sentences": [
+            {
+                "english": "I keep my money in my wallet.",
+                "chinese": "我把钱放在钱包里。"
+            }
+        ]
+    },
+    {
+        "name": "change",
+        "trans": [
+            "n. 零钱；找零"
+        ],
+        "usphone": "[tʃeɪndʒ]",
+        "ukphone": "[tʃeɪndʒ]",
+        "sentences": [
+            {
+                "english": "Here is your change.",
+                "chinese": "这是找你的零钱。"
+            }
+        ]
+    },
+    {
+        "name": "price",
+        "trans": [
+            "n. 价格"
+        ],
+        "usphone": "[praɪs]",
+        "ukphone": "[praɪs]",
+        "sentences": [
+            {
+                "english": "What is the price of this book?",
+                "chinese": "这本书的价格是多少?"
+            }
+        ]
+    },
+    {
+        "name": "cheap",
+        "trans": [
+            "adj. 便宜的"
+        ],
+        "usphone": "[tʃiːp]",
+        "ukphone": "[tʃiːp]",
+        "sentences": [
+            {
+                "english": "This pencil is very cheap.",
+                "chinese": "这支铅笔很便宜。"
+            }
+        ]
+    },
+    {
+        "name": "expensive",
+        "trans": [
+            "adj. 昂贵的"
+        ],
+        "usphone": "[ɪkˈspensɪv]",
+        "ukphone": "[ɪkˈspensɪv]",
+        "sentences": [
+            {
+                "english": "This watch is too expensive for me.",
+                "chinese": "这块手表对我来说太贵了。"
+            }
+        ]
+    },
+    {
+        "name": "afford",
+        "trans": [
+            "v. 买得起；负担得起"
+        ],
+        "usphone": "[əˈfɔːrd]",
+        "ukphone": "[əˈfɔːd]",
+        "sentences": [
+            {
+                "english": "I can't afford a new phone.",
+                "chinese": "我买不起一部新手机。"
+            }
+        ]
+    },
+    {
+        "name": "buy",
+        "trans": [
+            "v. 买"
+        ],
+        "usphone": "[baɪ]",
+        "ukphone": "[baɪ]",
+        "sentences": [
+            {
+                "english": "I want to buy a gift for my mother.",
+                "chinese": "我想给妈妈买份礼物。"
+            }
+        ]
+    },
+    {
+        "name": "sell",
+        "trans": [
+            "v. 卖"
+        ],
+        "usphone": "[sel]",
+        "ukphone": "[sel]",
+        "sentences": [
+            {
+                "english": "They sell fresh fruit in the shop.",
+                "chinese": "他们在店里卖新鲜水果。"
+            }
+        ]
+    },
+    {
+        "name": "pay",
+        "trans": [
+            "v. 支付"
+        ],
+        "usphone": "[peɪ]",
+        "ukphone": "[peɪ]",
+        "sentences": [
+            {
+                "english": "You can pay by card or cash.",
+                "chinese": "你可以刷卡或用现金支付。"
+            }
+        ]
+    },
+    {
+        "name": "cost",
+        "trans": [
+            "v. 花费"
+        ],
+        "usphone": "[kɔːst]",
+        "ukphone": "[kɒst]",
+        "sentences": [
+            {
+                "english": "The book costs ten yuan.",
+                "chinese": "这本书花了十元。"
+            }
+        ]
+    },
+    {
+        "name": "save",
+        "trans": [
+            "v. 储蓄；存（钱）"
+        ],
+        "usphone": "[seɪv]",
+        "ukphone": "[seɪv]",
+        "sentences": [
+            {
+                "english": "I save some money every month.",
+                "chinese": "我每个月都存一些钱。"
+            }
+        ]
+    },
+    {
+        "name": "spend",
+        "trans": [
+            "v. 用（钱），花费"
+        ],
+        "usphone": "[spend]",
+        "ukphone": "[spend]",
+        "sentences": [
+            {
+                "english": "Don't spend all your money on toys.",
+                "chinese": "不要把所有的钱都花在玩具上。"
+            }
+        ]
+    },
+    {
+        "name": "share",
+        "trans": [
+            "v. 分享"
+        ],
+        "usphone": "[ʃer]",
+        "ukphone": "[ʃeə(r)]",
+        "sentences": [
+            {
+                "english": "I like to share my food with friends.",
+                "chinese": "我喜欢和朋友分享食物。"
+            }
+        ]
+    },
+    {
+        "name": "donate",
+        "trans": [
+            "v. 捐赠"
+        ],
+        "usphone": "[ˈdoʊneɪt]",
+        "ukphone": "[dəʊˈneɪt]",
+        "sentences": [
+            {
+                "english": "We donate old books to the school library.",
+                "chinese": "我们向学校图书馆捐赠旧书。"
+            }
+        ]
+    },
+    {
+        "name": "charity",
+        "trans": [
+            "n. 慈善"
+        ],
+        "usphone": "[ˈtʃærəti]",
+        "ukphone": "[ˈtʃærəti]",
+        "sentences": [
+            {
+                "english": "The money goes to charity.",
+                "chinese": "这些钱将用于慈善事业。"
+            }
+        ]
+    },
+    {
+        "name": "people in need",
+        "trans": [
+            "n. 有需要的人"
+        ],
+        "sentences": [
+            {
+                "english": "We should help people in need.",
+                "chinese": "我们应该帮助有需要的人。"
+            }
+        ]
+    },
+    {
+        "name": "come true",
+        "trans": [
+            "短语 实现"
+        ],
+        "sentences": [
+            {
+                "english": "My dream will come true one day.",
+                "chinese": "总有一天我的梦想会实现。"
+            }
+        ]
+    },
+    {
+        "name": "opinion",
+        "trans": [
+            "n. 意见，看法，观点"
+        ],
+        "usphone": "[əˈpɪnjən]",
+        "ukphone": "[əˈpɪnjən]",
+        "sentences": [
+            {
+                "english": "What is your opinion on this topic?",
+                "chinese": "你对这个话题有什么看法?"
+            }
+        ]
+    },
+    {
+        "name": "fact",
+        "trans": [
+            "n. 事实，真相"
+        ],
+        "usphone": "[fækt]",
+        "ukphone": "[fækt]",
+        "sentences": [
+            {
+                "english": "It is a fact that the earth is round.",
+                "chinese": "地球是圆的,这是事实。"
+            }
+        ]
+    },
+    {
+        "name": "truth",
+        "trans": [
+            "n. 事实，真相，实情"
+        ],
+        "usphone": "[truːθ]",
+        "ukphone": "[truːθ]",
+        "sentences": [
+            {
+                "english": "Please tell me the truth.",
+                "chinese": "请告诉我真相。"
+            }
+        ]
+    },
+    {
+        "name": "idea",
+        "trans": [
+            "n. 主意，想法"
+        ],
+        "usphone": "[aɪˈdiːə]",
+        "ukphone": "[aɪˈdɪə]",
+        "sentences": [
+            {
+                "english": "That's a great idea!",
+                "chinese": "那是个好主意!"
+            }
+        ]
+    },
+    {
+        "name": "reason",
+        "trans": [
+            "n. 原因，理由"
+        ],
+        "usphone": "[ˈriːzn]",
+        "ukphone": "[ˈriːzn]",
+        "sentences": [
+            {
+                "english": "What is the reason for your absence?",
+                "chinese": "你缺席的原因是什么?"
+            }
+        ]
+    },
+    {
+        "name": "think",
+        "trans": [
+            "v. 想，认为"
+        ],
+        "usphone": "[θɪŋk]",
+        "ukphone": "[θɪŋk]",
+        "sentences": [
+            {
+                "english": "I think it will rain today.",
+                "chinese": "我觉得今天会下雨。"
+            }
+        ]
+    },
+    {
+        "name": "agree",
+        "trans": [
+            "v. 同意"
+        ],
+        "usphone": "[əˈɡriː]",
+        "ukphone": "[əˈɡriː]",
+        "sentences": [
+            {
+                "english": "I agree with you.",
+                "chinese": "我同意你的看法。"
+            }
+        ]
+    },
+    {
+        "name": "disagree",
+        "trans": [
+            "v. 不同意"
+        ],
+        "usphone": "[ˌdɪsəˈɡriː]",
+        "ukphone": "[ˌdɪsəˈɡriː]",
+        "sentences": [
+            {
+                "english": "I disagree with his opinion.",
+                "chinese": "我不同意他的观点。"
+            }
+        ]
+    },
+    {
+        "name": "discuss",
+        "trans": [
+            "v. 讨论"
+        ],
+        "usphone": "[dɪˈskʌs]",
+        "ukphone": "[dɪˈskʌs]",
+        "sentences": [
+            {
+                "english": "Let's discuss the plan together.",
+                "chinese": "让我们一起讨论这个计划。"
+            }
+        ]
+    },
+    {
+        "name": "debate",
+        "trans": [
+            "n./v. 讨论，辩论"
+        ],
+        "usphone": "[dɪˈbeɪt]",
+        "ukphone": "[dɪˈbeɪt]",
+        "sentences": [
+            {
+                "english": "We had a debate about the environment.",
+                "chinese": "我们就环境问题进行了一场辩论。"
+            }
+        ]
+    },
+    {
+        "name": "explore",
+        "trans": [
+            "v. 探讨，探究"
+        ],
+        "usphone": "[ɪkˈsplɔːr]",
+        "ukphone": "[ɪkˈsplɔː(r)]",
+        "sentences": [
+            {
+                "english": "Let's explore the topic in class.",
+                "chinese": "让我们在课堂上探讨这个话题。"
+            }
+        ]
+    },
+    {
+        "name": "health",
+        "trans": [
+            "n. 健康（状况）"
+        ],
+        "usphone": "[helθ]",
+        "ukphone": "[helθ]",
+        "sentences": [
+            {
+                "english": "Good food is important for health.",
+                "chinese": "好的食物对健康很重要。"
+            }
+        ]
+    },
+    {
+        "name": "fairy tale",
+        "trans": [
+            "n. 童话；神话"
+        ],
+        "usphone": "[ˈferi teɪl]",
+        "ukphone": "[ˈfeəri teɪl]",
+        "sentences": [
+            {
+                "english": "I like reading fairy tales at night.",
+                "chinese": "我喜欢晚上读童话故事。"
+            }
+        ]
+    },
+    {
+        "name": "dinosaur",
+        "trans": [
+            "n. 恐龙"
+        ],
+        "usphone": "[ˈdaɪnəsɔːr]",
+        "ukphone": "[ˈdaɪnəsɔː(r)]",
+        "sentences": [
+            {
+                "english": "Dinosaurs lived long, long ago.",
+                "chinese": "恐龙生活在很久很久以前。"
+            }
+        ]
+    },
+    {
+        "name": "grey",
+        "trans": [
+            "n./adj. 灰色；灰色的"
+        ],
+        "usphone": "[ɡreɪ]",
+        "ukphone": "[ɡreɪ]",
+        "sentences": [
+            {
+                "english": "The sky is grey today.",
+                "chinese": "今天天空是灰色的。"
+            }
+        ]
+    },
+    {
+        "name": "peel",
+        "trans": [
+            "n. （水果和蔬菜的）外皮"
+        ],
+        "usphone": "[piːl]",
+        "ukphone": "[piːl]",
+        "sentences": [
+            {
+                "english": "Don't throw the banana peel on the ground.",
+                "chinese": "不要把香蕉皮扔在地上。"
+            }
+        ]
+    },
+    {
+        "name": "line",
+        "trans": [
+            "n. 线，线条"
+        ],
+        "usphone": "[laɪn]",
+        "ukphone": "[laɪn]",
+        "sentences": [
+            {
+                "english": "Draw a straight line on the paper.",
+                "chinese": "在纸上画一条直线。"
+            }
+        ]
+    },
+    {
+        "name": "than",
+        "trans": [
+            "conj. 比（用于比较）"
+        ],
+        "usphone": "[ðæn]",
+        "ukphone": "[ðæn]",
+        "sentences": [
+            {
+                "english": "He is taller than me.",
+                "chinese": "他比我高。"
+            }
+        ]
+    },
+    {
+        "name": "be good for",
+        "trans": [
+            "短语 对……有利"
+        ],
+        "sentences": [
+            {
+                "english": "Milk is good for your health.",
+                "chinese": "牛奶对你的健康有益。"
+            }
+        ]
+    },
+    {
+        "name": "talk about",
+        "trans": [
+            "短语 谈论"
+        ],
+        "sentences": [
+            {
+                "english": "We often talk about our hobbies.",
+                "chinese": "我们经常谈论我们的爱好。"
+            }
+        ]
+    },
+    {
+        "name": "nature",
+        "trans": [
+            "n. 大自然，自然"
+        ],
+        "usphone": "[ˈneɪtʃər]",
+        "ukphone": "[ˈneɪtʃə(r)]",
+        "sentences": [
+            {
+                "english": "I love the beauty of nature.",
+                "chinese": "我热爱大自然的美。"
+            }
+        ]
+    },
+    {
+        "name": "natural",
+        "trans": [
+            "adj. 自然的"
+        ],
+        "usphone": "[ˈnætʃrəl]",
+        "ukphone": "[ˈnætʃrəl]",
+        "sentences": [
+            {
+                "english": "This is a natural lake.",
+                "chinese": "这是一个天然湖泊。"
+            }
+        ]
+    },
+    {
+        "name": "wonder",
+        "trans": [
+            "n. 奇迹"
+        ],
+        "usphone": "[ˈwʌndər]",
+        "ukphone": "[ˈwʌndə(r)]",
+        "sentences": [
+            {
+                "english": "The Great Wall is a wonder of the world.",
+                "chinese": "长城是世界奇迹。"
+            }
+        ]
+    },
+    {
+        "name": "wonderful",
+        "trans": [
+            "adj. 令人惊叹的，奇妙的"
+        ],
+        "usphone": "[ˈwʌndərfl]",
+        "ukphone": "[ˈwʌndəfl]",
+        "sentences": [
+            {
+                "english": "We had a wonderful time at the park.",
+                "chinese": "我们在公园度过了美好时光。"
+            }
+        ]
+    },
+    {
+        "name": "scenery",
+        "trans": [
+            "n. 风景，景色"
+        ],
+        "usphone": "[ˈsiːnəri]",
+        "ukphone": "[ˈsiːnəri]",
+        "sentences": [
+            {
+                "english": "The scenery in Guilin is beautiful.",
+                "chinese": "桂林的风景很美。"
+            }
+        ]
+    },
+    {
+        "name": "view",
+        "trans": [
+            "n. 景色，视野"
+        ],
+        "usphone": "[vjuː]",
+        "ukphone": "[vjuː]",
+        "sentences": [
+            {
+                "english": "The view from the top of the mountain is amazing.",
+                "chinese": "从山顶看到的景色令人惊叹。"
+            }
+        ]
+    },
+    {
+        "name": "desert",
+        "trans": [
+            "n. 沙漠"
+        ],
+        "usphone": "[ˈdezərt]",
+        "ukphone": "[ˈdezət]",
+        "sentences": [
+            {
+                "english": "Camels can live in the desert.",
+                "chinese": "骆驼能在沙漠中生存。"
+            }
+        ]
+    },
+    {
+        "name": "grassland",
+        "trans": [
+            "n. 草原"
+        ],
+        "usphone": "[ˈɡræslænd]",
+        "ukphone": "[ˈɡrɑːslænd]",
+        "sentences": [
+            {
+                "english": "Horses run freely on the grassland.",
+                "chinese": "马儿在草原上自由奔跑。"
+            }
+        ]
+    },
+    {
+        "name": "lake",
+        "trans": [
+            "n. 湖泊"
+        ],
+        "usphone": "[leɪk]",
+        "ukphone": "[leɪk]",
+        "sentences": [
+            {
+                "english": "There are many fish in the lake.",
+                "chinese": "湖里有很多鱼。"
+            }
+        ]
+    },
+    {
+        "name": "plateau",
+        "trans": [
+            "n. 高原"
+        ],
+        "usphone": "[plæˈtoʊ]",
+        "ukphone": "[ˈplætəʊ]",
+        "sentences": [
+            {
+                "english": "Tibet is a high plateau.",
+                "chinese": "西藏是一个高原。"
+            }
+        ]
+    },
+    {
+        "name": "waterfall",
+        "trans": [
+            "n. 瀑布"
+        ],
+        "usphone": "[ˈwɔːtərfɔːl]",
+        "ukphone": "[ˈwɔːtəfɔːl]",
+        "sentences": [
+            {
+                "english": "The waterfall is very tall and beautiful.",
+                "chinese": "这个瀑布又高又美。"
+            }
+        ]
+    },
+    {
+        "name": "deep",
+        "trans": [
+            "adj. 深的"
+        ],
+        "usphone": "[diːp]",
+        "ukphone": "[diːp]",
+        "sentences": [
+            {
+                "english": "The river is very deep here.",
+                "chinese": "这里的河水很深。"
+            }
+        ]
+    },
+    {
+        "name": "wide",
+        "trans": [
+            "adj. 宽的"
+        ],
+        "usphone": "[waɪd]",
+        "ukphone": "[waɪd]",
+        "sentences": [
+            {
+                "english": "The road is very wide.",
+                "chinese": "这条路很宽。"
+            }
+        ]
+    },
+    {
+        "name": "square kilometre",
+        "trans": [
+            "n. 平方公里"
+        ],
+        "sentences": [
+            {
+                "english": "The lake covers ten square kilometres.",
+                "chinese": "这个湖占地十平方公里。"
+            }
+        ]
+    },
+    {
+        "name": "famous",
+        "trans": [
+            "adj. 著名的"
+        ],
+        "usphone": "[ˈfeɪməs]",
+        "ukphone": "[ˈfeɪməs]",
+        "sentences": [
+            {
+                "english": "The Great Wall is famous around the world.",
+                "chinese": "长城闻名世界。"
+            }
+        ]
+    },
+    {
+        "name": "traveller",
+        "trans": [
+            "n. 旅行者"
+        ],
+        "usphone": "[ˈtrævələr]",
+        "ukphone": "[ˈtrævələ(r)]",
+        "sentences": [
+            {
+                "english": "Marco Polo was a great traveller.",
+                "chinese": "马可·波罗是一位伟大的旅行家。"
+            }
+        ]
+    },
+    {
+        "name": "be interested in",
+        "trans": [
+            "短语 对……感兴趣"
+        ],
+        "sentences": [
+            {
+                "english": "I am interested in painting.",
+                "chinese": "我对绘画感兴趣。"
+            }
+        ]
+    },
+    {
+        "name": "be famous for",
+        "trans": [
+            "短语 因……而闻名"
+        ],
+        "sentences": [
+            {
+                "english": "Beijing is famous for the Great Wall.",
+                "chinese": "北京因长城而闻名。"
+            }
+        ]
+    },
+    {
+        "name": "invention",
+        "trans": [
+            "n. 发明（物）"
+        ],
+        "usphone": "[ɪnˈvenʃn]",
+        "ukphone": "[ɪnˈvenʃn]",
+        "sentences": [
+            {
+                "english": "The telephone is a great invention.",
+                "chinese": "电话是一项伟大的发明。"
+            }
+        ]
+    },
+    {
+        "name": "inventor",
+        "trans": [
+            "n. 发明家"
+        ],
+        "usphone": "[ɪnˈventər]",
+        "ukphone": "[ɪnˈventə(r)]",
+        "sentences": [
+            {
+                "english": "Edison was a famous inventor.",
+                "chinese": "爱迪生是一位著名的发明家。"
+            }
+        ]
+    },
+    {
+        "name": "exhibition",
+        "trans": [
+            "n. 展览"
+        ],
+        "usphone": "[ˌeksɪˈbɪʃn]",
+        "ukphone": "[ˌeksɪˈbɪʃn]",
+        "sentences": [
+            {
+                "english": "We visited an art exhibition yesterday.",
+                "chinese": "我们昨天参观了一个艺术展览。"
+            }
+        ]
+    },
+    {
+        "name": "problem",
+        "trans": [
+            "n. 问题，难题"
+        ],
+        "usphone": "[ˈprɑːbləm]",
+        "ukphone": "[ˈprɒbləm]",
+        "sentences": [
+            {
+                "english": "Can you help me solve this problem?",
+                "chinese": "你能帮我解决这个问题吗?"
+            }
+        ]
+    },
+    {
+        "name": "solve",
+        "trans": [
+            "v. 解决"
+        ],
+        "usphone": "[sɑːlv]",
+        "ukphone": "[sɒlv]",
+        "sentences": [
+            {
+                "english": "We should try to solve this problem.",
+                "chinese": "我们应该尝试解决这个问题。"
+            }
+        ]
+    },
+    {
+        "name": "create",
+        "trans": [
+            "v. 创造"
+        ],
+        "usphone": "[kriˈeɪt]",
+        "ukphone": "[kriˈeɪt]",
+        "sentences": [
+            {
+                "english": "Let's create a new game together.",
+                "chinese": "让我们一起创造一个新游戏。"
+            }
+        ]
+    },
+    {
+        "name": "material",
+        "trans": [
+            "n. 材料"
+        ],
+        "usphone": "[məˈtɪriəl]",
+        "ukphone": "[məˈtɪəriəl]",
+        "sentences": [
+            {
+                "english": "Wood is a natural material.",
+                "chinese": "木头是一种天然材料。"
+            }
+        ]
+    },
+    {
+        "name": "cloth",
+        "trans": [
+            "n. 布料"
+        ],
+        "usphone": "[klɔːθ]",
+        "ukphone": "[klɒθ]",
+        "sentences": [
+            {
+                "english": "The bag is made of cloth.",
+                "chinese": "这个包是用布做的。"
+            }
+        ]
+    },
+    {
+        "name": "bamboo",
+        "trans": [
+            "n. 竹子"
+        ],
+        "usphone": "[ˌbæmˈbuː]",
+        "ukphone": "[ˌbæmˈbuː]",
+        "sentences": [
+            {
+                "english": "Pandas love to eat bamboo.",
+                "chinese": "熊猫喜欢吃竹子。"
+            }
+        ]
+    },
+    {
+        "name": "umbrella",
+        "trans": [
+            "n. 雨伞"
+        ],
+        "usphone": "[ʌmˈbrelə]",
+        "ukphone": "[ʌmˈbrelə]",
+        "sentences": [
+            {
+                "english": "Take an umbrella; it may rain.",
+                "chinese": "带把伞,可能会下雨。"
+            }
+        ]
+    },
+    {
+        "name": "wheelchair",
+        "trans": [
+            "n. 轮椅"
+        ],
+        "usphone": "[ˈwiːltʃer]",
+        "ukphone": "[ˈwiːltʃeə(r)]",
+        "sentences": [
+            {
+                "english": "The old man sits in a wheelchair.",
+                "chinese": "那位老人坐在轮椅上。"
+            }
+        ]
+    },
+    {
+        "name": "feeder",
+        "trans": [
+            "n. 喂食器"
+        ],
+        "usphone": "[ˈfiːdər]",
+        "ukphone": "[ˈfiːdə(r)]",
+        "sentences": [
+            {
+                "english": "I put seeds in the bird feeder.",
+                "chinese": "我把种子放进喂鸟器里。"
+            }
+        ]
+    },
+    {
+        "name": "drum",
+        "trans": [
+            "n. 鼓"
+        ],
+        "usphone": "[drʌm]",
+        "ukphone": "[drʌm]",
+        "sentences": [
+            {
+                "english": "He can play the drum well.",
+                "chinese": "他鼓打得很好。"
+            }
+        ]
+    },
+    {
+        "name": "glue",
+        "trans": [
+            "n./v. 胶水；黏合"
+        ],
+        "usphone": "[ɡluː]",
+        "ukphone": "[ɡluː]",
+        "sentences": [
+            {
+                "english": "Use some glue to fix the paper.",
+                "chinese": "用一些胶水来粘纸。"
+            }
+        ]
+    },
+    {
+        "name": "fold",
+        "trans": [
+            "v. 折叠"
+        ],
+        "usphone": "[foʊld]",
+        "ukphone": "[fəʊld]",
+        "sentences": [
+            {
+                "english": "Please fold the paper in half.",
+                "chinese": "请把纸对折。"
+            }
+        ]
+    },
+    {
+        "name": "hang",
+        "trans": [
+            "v. 悬挂"
+        ],
+        "usphone": "[hæŋ]",
+        "ukphone": "[hæŋ]",
+        "sentences": [
+            {
+                "english": "Please hang the picture on the wall.",
+                "chinese": "请把这幅画挂在墙上。"
+            }
+        ]
+    },
+    {
+        "name": "easily",
+        "trans": [
+            "adv. 容易地"
+        ],
+        "usphone": "[ˈiːzəli]",
+        "ukphone": "[ˈiːzəli]",
+        "sentences": [
+            {
+                "english": "I can do this easily.",
+                "chinese": "我能轻松做到这件事。"
+            }
+        ]
+    },
+    {
+        "name": "step",
+        "trans": [
+            "n. 步骤"
+        ],
+        "usphone": "[step]",
+        "ukphone": "[step]",
+        "sentences": [
+            {
+                "english": "Follow these steps to make a paper plane.",
+                "chinese": "按照这些步骤做一架纸飞机。"
+            }
+        ]
+    },
+    {
+        "name": "first",
+        "trans": [
+            "adv. 首先"
+        ],
+        "usphone": "[fɜːrst]",
+        "ukphone": "[fɜːst]",
+        "sentences": [
+            {
+                "english": "First, wash your hands.",
+                "chinese": "首先,洗你的手。"
+            }
+        ]
+    },
+    {
+        "name": "next",
+        "trans": [
+            "adv. 接下来"
+        ],
+        "usphone": "[nekst]",
+        "ukphone": "[nekst]",
+        "sentences": [
+            {
+                "english": "Next, add some sugar.",
+                "chinese": "接下来,加一些糖。"
+            }
+        ]
+    },
+    {
+        "name": "healthy",
+        "trans": [
+            "adj. 健康的"
+        ],
+        "usphone": "[ˈhelθi]",
+        "ukphone": "[ˈhelθi]",
+        "sentences": [
+            {
+                "english": "Eating fruit keeps us healthy.",
+                "chinese": "吃水果让我们保持健康。"
+            }
+        ]
+    },
+    {
+        "name": "matter",
+        "trans": [
+            "n./v. 问题；要紧"
+        ],
+        "usphone": "[ˈmætər]",
+        "ukphone": "[ˈmætə(r)]",
+        "sentences": [
+            {
+                "english": "What's the matter with you?",
+                "chinese": "你怎么了?"
+            }
+        ]
+    },
+    {
+        "name": "fever",
+        "trans": [
+            "n. 发烧"
+        ],
+        "usphone": "[ˈfiːvər]",
+        "ukphone": "[ˈfiːvə(r)]",
+        "sentences": [
+            {
+                "english": "He has a fever today.",
+                "chinese": "他今天发烧了。"
+            }
+        ]
+    },
+    {
+        "name": "flu",
+        "trans": [
+            "n. 流感"
+        ],
+        "usphone": "[fluː]",
+        "ukphone": "[fluː]",
+        "sentences": [
+            {
+                "english": "Many students have the flu this week.",
+                "chinese": "这周许多学生患了流感。"
+            }
+        ]
+    },
+    {
+        "name": "virus",
+        "trans": [
+            "n. 病毒"
+        ],
+        "usphone": "[ˈvaɪrəs]",
+        "ukphone": "[ˈvaɪrəs]",
+        "sentences": [
+            {
+                "english": "Wash your hands to stop the virus.",
+                "chinese": "勤洗手以防病毒传播。"
+            }
+        ]
+    },
+    {
+        "name": "headache",
+        "trans": [
+            "n. 头痛"
+        ],
+        "usphone": "[ˈhedeɪk]",
+        "ukphone": "[ˈhedeɪk]",
+        "sentences": [
+            {
+                "english": "I have a bad headache.",
+                "chinese": "我头很痛。"
+            }
+        ]
+    },
+    {
+        "name": "toothache",
+        "trans": [
+            "n. 牙痛"
+        ],
+        "usphone": "[ˈtuːθeɪk]",
+        "ukphone": "[ˈtuːθeɪk]",
+        "sentences": [
+            {
+                "english": "She has a toothache and can't eat.",
+                "chinese": "她牙痛,吃不下东西。"
+            }
+        ]
+    },
+    {
+        "name": "stomachache",
+        "trans": [
+            "n. 胃痛；肚子痛"
+        ],
+        "usphone": "[ˈstʌməkeɪk]",
+        "ukphone": "[ˈstʌməkeɪk]",
+        "sentences": [
+            {
+                "english": "I have a stomachache after lunch.",
+                "chinese": "午饭后我肚子痛。"
+            }
+        ]
+    },
+    {
+        "name": "sore throat",
+        "trans": [
+            "n. 喉咙痛"
+        ],
+        "usphone": "[sɔːr θroʊt]",
+        "ukphone": "[sɔː θrəʊt]",
+        "sentences": [
+            {
+                "english": "I have a sore throat and can't speak loudly.",
+                "chinese": "我喉咙痛,不能大声说话。"
+            }
+        ]
+    },
+    {
+        "name": "runny nose",
+        "trans": [
+            "n. 流鼻涕"
+        ],
+        "usphone": "[ˈrʌni noʊz]",
+        "ukphone": "[ˈrʌni nəʊz]",
+        "sentences": [
+            {
+                "english": "He has a runny nose and a cough.",
+                "chinese": "他流鼻涕并且咳嗽。"
+            }
+        ]
+    },
+    {
+        "name": "medicine",
+        "trans": [
+            "n. 药"
+        ],
+        "usphone": "[ˈmedsn]",
+        "ukphone": "[ˈmedsn]",
+        "sentences": [
+            {
+                "english": "Take the medicine three times a day.",
+                "chinese": "这种药一天吃三次。"
+            }
+        ]
+    },
+    {
+        "name": "rest",
+        "trans": [
+            "n./v. 休息"
+        ],
+        "usphone": "[rest]",
+        "ukphone": "[rest]",
+        "sentences": [
+            {
+                "english": "You should rest more.",
+                "chinese": "你应该多休息。"
+            }
+        ]
+    },
+    {
+        "name": "recover",
+        "trans": [
+            "v. 恢复；康复"
+        ],
+        "usphone": "[rɪˈkʌvər]",
+        "ukphone": "[rɪˈkʌvə(r)]",
+        "sentences": [
+            {
+                "english": "He will recover from his illness soon.",
+                "chinese": "他很快就会康复。"
+            }
+        ]
+    },
+    {
+        "name": "tip",
+        "trans": [
+            "n. 提示；小贴士"
+        ],
+        "usphone": "[tɪp]",
+        "ukphone": "[tɪp]",
+        "sentences": [
+            {
+                "english": "Here is a useful tip for learning English.",
+                "chinese": "这里有一个学英语的有用小贴士。"
+            }
+        ]
+    },
+    {
+        "name": "have a fever",
+        "trans": [
+            "短语 发烧"
+        ],
+        "sentences": [
+            {
+                "english": "I have a fever, so I stay in bed.",
+                "chinese": "我发烧了,所以我躺在床上。"
+            }
+        ]
+    },
+    {
+        "name": "have a headache",
+        "trans": [
+            "短语 头痛"
+        ],
+        "sentences": [
+            {
+                "english": "I have a headache after reading too long.",
+                "chinese": "读书太久我头痛。"
+            }
+        ]
+    },
+    {
+        "name": "take medicine",
+        "trans": [
+            "短语 吃药"
+        ],
+        "sentences": [
+            {
+                "english": "Remember to take medicine after meals.",
+                "chinese": "记得饭后吃药。"
+            }
+        ]
+    },
+    {
+        "name": "take a rest",
+        "trans": [
+            "短语 休息一下"
+        ],
+        "sentences": [
+            {
+                "english": "Let's take a rest under the tree.",
+                "chinese": "我们在树下休息一下吧。"
+            }
+        ]
+    },
+    {
+        "name": "world",
+        "trans": [
+            "n. 世界"
+        ],
+        "usphone": "[wɜːrld]",
+        "ukphone": "[wɜːld]",
+        "sentences": [
+            {
+                "english": "I want to travel around the world.",
+                "chinese": "我想环游世界。"
+            }
+        ]
+    },
+    {
+        "name": "country",
+        "trans": [
+            "n. 国家"
+        ],
+        "usphone": "[ˈkʌntri]",
+        "ukphone": "[ˈkʌntri]",
+        "sentences": [
+            {
+                "english": "China is a great country.",
+                "chinese": "中国是一个伟大的国家。"
+            }
+        ]
+    },
+    {
+        "name": "capital",
+        "trans": [
+            "n. 首都"
+        ],
+        "usphone": "[ˈkæpɪtl]",
+        "ukphone": "[ˈkæpɪtl]",
+        "sentences": [
+            {
+                "english": "Beijing is the capital of China.",
+                "chinese": "北京是中国的首都。"
+            }
+        ]
+    },
+    {
+        "name": "culture",
+        "trans": [
+            "n. 文化"
+        ],
+        "usphone": "[ˈkʌltʃər]",
+        "ukphone": "[ˈkʌltʃə(r)]",
+        "sentences": [
+            {
+                "english": "Chinese culture has a long history.",
+                "chinese": "中国文化有着悠久的历史。"
+            }
+        ]
+    },
+    {
+        "name": "festival",
+        "trans": [
+            "n. 节日"
+        ],
+        "usphone": "[ˈfestɪvl]",
+        "ukphone": "[ˈfestɪvl]",
+        "sentences": [
+            {
+                "english": "Spring Festival is my favourite festival.",
+                "chinese": "春节是我最喜欢的节日。"
+            }
+        ]
+    },
+    {
+        "name": "experience",
+        "trans": [
+            "n. 经历"
+        ],
+        "usphone": "[ɪkˈspɪriəns]",
+        "ukphone": "[ɪkˈspɪəriəns]",
+        "sentences": [
+            {
+                "english": "Travel gives me new experiences.",
+                "chinese": "旅行给我带来新经历。"
+            }
+        ]
+    },
+    {
+        "name": "local",
+        "trans": [
+            "adj. 当地的"
+        ],
+        "usphone": "[ˈloʊkl]",
+        "ukphone": "[ˈləʊkl]",
+        "sentences": [
+            {
+                "english": "We tried some local food.",
+                "chinese": "我们品尝了一些当地美食。"
+            }
+        ]
+    },
+    {
+        "name": "abroad",
+        "trans": [
+            "adv. 国外；在国外"
+        ],
+        "usphone": "[əˈbrɔːd]",
+        "ukphone": "[əˈbrɔːd]",
+        "sentences": [
+            {
+                "english": "My uncle works abroad.",
+                "chinese": "我叔叔在国外工作。"
+            }
+        ]
+    },
+    {
+        "name": "passport",
+        "trans": [
+            "n. 护照"
+        ],
+        "usphone": "[ˈpæspɔːrt]",
+        "ukphone": "[ˈpɑːspɔːt]",
+        "sentences": [
+            {
+                "english": "You need a passport to travel abroad.",
+                "chinese": "去国外旅行需要护照。"
+            }
+        ]
+    },
+    {
+        "name": "flight",
+        "trans": [
+            "n. 航班；飞行"
+        ],
+        "usphone": "[flaɪt]",
+        "ukphone": "[flaɪt]",
+        "sentences": [
+            {
+                "english": "The flight to London takes ten hours.",
+                "chinese": "飞往伦敦的航班需要十小时。"
+            }
+        ]
+    },
+    {
+        "name": "kangaroo",
+        "trans": [
+            "n. 袋鼠"
+        ],
+        "usphone": "[ˌkæŋɡəˈruː]",
+        "ukphone": "[ˌkæŋɡəˈruː]",
+        "sentences": [
+            {
+                "english": "Kangaroos live in Australia.",
+                "chinese": "袋鼠生活在澳大利亚。"
+            }
+        ]
+    },
+    {
+        "name": "travel",
+        "trans": [
+            "v./n. 旅行"
+        ],
+        "usphone": "[ˈtrævl]",
+        "ukphone": "[ˈtrævl]",
+        "sentences": [
+            {
+                "english": "We travel to Shanghai every summer.",
+                "chinese": "我们每年夏天都去上海旅行。"
+            }
+        ]
+    },
+    {
+        "name": "trip",
+        "trans": [
+            "n. 旅行"
+        ],
+        "usphone": "[trɪp]",
+        "ukphone": "[trɪp]",
+        "sentences": [
+            {
+                "english": "We had a great trip to the mountains.",
+                "chinese": "我们去山里进行了一次愉快的旅行。"
+            }
+        ]
+    },
+    {
+        "name": "brand-new",
+        "trans": [
+            "adj. 崭新的"
+        ],
+        "usphone": "[ˌbrændˈnuː]",
+        "ukphone": "[ˌbrændˈnjuː]",
+        "sentences": [
+            {
+                "english": "He bought a brand-new bicycle.",
+                "chinese": "他买了一辆崭新的自行车。"
+            }
+        ]
+    },
+    {
+        "name": "see different views",
+        "trans": [
+            "短语 欣赏不同风景"
+        ],
+        "sentences": [
+            {
+                "english": "We can see different views on the trip.",
+                "chinese": "旅途中我们能欣赏不同的风景。"
+            }
+        ]
+    },
+    {
+        "name": "local food",
+        "trans": [
+            "短语 当地美食"
+        ],
+        "sentences": [
+            {
+                "english": "I love trying local food when I travel.",
+                "chinese": "旅行时我喜欢尝试当地美食。"
+            }
+        ]
+    },
+    {
+        "name": "travel experience",
+        "trans": [
+            "短语 旅行经历"
+        ],
+        "sentences": [
+            {
+                "english": "Please share your travel experience with us.",
+                "chinese": "请和我们分享你的旅行经历。"
+            }
+        ]
+    },
+    {
+        "name": "good luck",
+        "trans": [
+            "短语 好运"
+        ],
+        "sentences": [
+            {
+                "english": "Good luck with your exam!",
+                "chinese": "祝你考试好运!"
+            }
+        ]
+    }
+]
