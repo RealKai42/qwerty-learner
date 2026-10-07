@@ -1,17 +1,34 @@
 import type { WordPronunciationIconRef } from '@/components/WordPronunciationIcon'
 import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
-import { currentDictInfoAtom } from '@/store'
+import { SoundIcon } from '@/components/WordPronunciationIcon/SoundIcon'
+import { useDefinitionSpeech } from '@/contexts/DefinitionSpeechContext'
+import { currentDictInfoAtom, pronunciationConfigAtom } from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue } from 'jotai'
+import type { MouseEvent } from 'react'
 import { useCallback, useRef } from 'react'
 
-export default function WordCard({ word, isActive }: { word: Word; isActive: boolean }) {
+export default function WordCard({ word, isActive, speechId }: { word: Word; isActive: boolean; speechId: string }) {
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+  const { speak, speakingId } = useDefinitionSpeech()
+  const translation = word.trans.join('；')
 
   const handlePlay = useCallback(() => {
     wordPronunciationIconRef.current?.play()
   }, [])
+
+  const handlePlayTranslation = useCallback(
+    (event: MouseEvent<HTMLButtonElement>) => {
+      event.stopPropagation()
+      speak(translation, speechId)
+    },
+    [speak, speechId, translation],
+  )
+
+  const translationSpeechLabel =
+    pronunciationConfig.transSpeechMode === 'cantonese' ? `用粤语朗读 ${word.name} 的中文释义` : `跟随系统朗读 ${word.name} 的中文释义`
 
   return (
     <div
@@ -25,8 +42,17 @@ export default function WordCard({ word, isActive }: { word: Word; isActive: boo
         <p className="select-all font-mono text-xl font-normal leading-6 dark:text-gray-50">
           {['romaji', 'hapin'].includes(currentLanguage) ? word.notation : word.name}
         </p>
-        <div className="mt-2 max-w-sm font-sans text-sm text-gray-400">{word.trans.join('；')}</div>
+        <div className="mt-2 max-w-sm font-sans text-sm text-gray-400">{translation}</div>
       </div>
+      {pronunciationConfig.isTransRead && (
+        <SoundIcon
+          animated={speakingId === speechId}
+          onClick={handlePlayTranslation}
+          className="mr-2 h-8 w-8 text-indigo-500"
+          iconClassName="h-5 w-5"
+          ariaLabel={translationSpeechLabel}
+        />
+      )}
       <WordPronunciationIcon word={word} lang={currentLanguage} className="h-8 w-8" ref={wordPronunciationIconRef} />
     </div>
   )

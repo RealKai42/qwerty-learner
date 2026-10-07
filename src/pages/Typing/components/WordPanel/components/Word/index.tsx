@@ -31,7 +31,15 @@ import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
-export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
+export default function WordComponent({
+  word,
+  onFinish,
+  onAutoDefinition,
+}: {
+  word: Word
+  onFinish: () => void
+  onAutoDefinition?: () => void
+}) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -51,6 +59,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
+  const lastAutoPronunciationKeyRef = useRef('')
 
   useEffect(() => {
     // run only when word changes
@@ -129,10 +138,22 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   )
 
   useEffect(() => {
-    if (wordState.inputWord.length === 0 && state.isTyping) {
-      wordPronunciationIconRef.current?.play && wordPronunciationIconRef.current?.play()
-    }
-  }, [state.isTyping, wordState.inputWord.length, wordPronunciationIconRef.current?.play])
+    if (!state.isTyping) return
+
+    const autoPronunciationKey = `${state.chapterData.index}:${word.name}`
+    if (lastAutoPronunciationKeyRef.current === autoPronunciationKey) return
+
+    const timer = window.setTimeout(() => {
+      lastAutoPronunciationKeyRef.current = autoPronunciationKey
+      if (pronunciationIsOpen) {
+        wordPronunciationIconRef.current?.playOnce(() => onAutoDefinition?.())
+      } else {
+        onAutoDefinition?.()
+      }
+    }, 0)
+
+    return () => window.clearTimeout(timer)
+  }, [onAutoDefinition, pronunciationIsOpen, state.chapterData.index, state.isTyping, word.name])
 
   const getLetterVisible = useCallback(
     (index: number) => {

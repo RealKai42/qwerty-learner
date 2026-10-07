@@ -1,11 +1,12 @@
 import { pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { addHowlListener } from '@/utils'
+import { beginWordPlayback, releaseWordPlayback } from '@/utils/audioPlaybackCoordinator'
 import { romajiToHiragana } from '@/utils/kana'
 import noop from '@/utils/noop'
 import type { Howl } from 'howler'
 import { useAtomValue } from 'jotai'
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
@@ -39,13 +40,45 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
   const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
   const [isPlaying, setIsPlaying] = useState(false)
 
-  const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
+  const [playSound, { stop: stopSound, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
     html5: true,
     format: ['mp3'],
     loop,
     volume: pronunciationConfig.volume,
     rate: pronunciationConfig.rate,
   } as HookOptions)
+
+  const stopSoundRef = useRef(stopSound)
+  const soundRef = useRef<Howl | null>(sound ?? null)
+  const loopRef = useRef(loop)
+  const pendingEndCallbackRef = useRef<(() => void) | null>(null)
+  stopSoundRef.current = stopSound
+  soundRef.current = sound ?? null
+  loopRef.current = loop
+
+  const stop = useCallback(() => {
+    pendingEndCallbackRef.current = null
+    stopSoundRef.current()
+    soundRef.current?.loop(loopRef.current)
+    releaseWordPlayback(stop)
+  }, [])
+
+  const play = useCallback(() => {
+    pendingEndCallbackRef.current = null
+    soundRef.current?.loop(loopRef.current)
+    beginWordPlayback(stop)
+    playSound()
+  }, [playSound, stop])
+
+  const playOnce = useCallback(
+    (onEnd: () => void) => {
+      pendingEndCallbackRef.current = onEnd
+      soundRef.current?.loop(false)
+      beginWordPlayback(stop)
+      playSound()
+    },
+    [playSound, stop],
+  )
 
   useEffect(() => {
     if (!sound) return
@@ -58,18 +91,43 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     const unListens: Array<() => void> = []
 
     unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
-    unListens.push(addHowlListener(sound, 'end', () => setIsPlaying(false)))
-    unListens.push(addHowlListener(sound, 'pause', () => setIsPlaying(false)))
-    unListens.push(addHowlListener(sound, 'playerror', () => setIsPlaying(false)))
+    const finishPlaying = () => {
+      setIsPlaying(false)
+      releaseWordPlayback(stop)
+    }
+
+    unListens.push(
+      addHowlListener(sound, 'end', () => {
+        const onEnd = pendingEndCallbackRef.current
+        if (onEnd) {
+          pendingEndCallbackRef.current = null
+          if (loop) sound.stop()
+          sound.loop(loop)
+          finishPlaying()
+          onEnd()
+          return
+        }
+        if (!loop) finishPlaying()
+      }),
+    )
+    const finishWithoutCallback = () => {
+      pendingEndCallbackRef.current = null
+      sound.loop(loop)
+      finishPlaying()
+    }
+    unListens.push(addHowlListener(sound, 'pause', finishWithoutCallback))
+    unListens.push(addHowlListener(sound, 'playerror', finishWithoutCallback))
+    unListens.push(addHowlListener(sound, 'loaderror', finishWithoutCallback))
 
     return () => {
       setIsPlaying(false)
       unListens.forEach((unListen) => unListen())
+      stop()
       ;(sound as Howl).unload()
     }
-  }, [sound])
+  }, [loop, sound, stop])
 
-  return { play, stop, isPlaying }
+  return { play, playOnce, stop, isPlaying }
 }
 
 export function usePrefetchPronunciationSound(word: string | undefined) {
