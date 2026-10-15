@@ -58,6 +58,66 @@ function isRomanVowel(character: string): boolean {
   return character == 'a' || character == 'i' || character == 'u' || character == 'e' || character == 'o'
 }
 
+/**
+ * 黑本式(Hepburn)到训令式(Kunrei-shiki)的音节映射。
+ * 日语词库中的罗马字默认采用黑本式拼写(如 shi/tsu/chi/fu/ji),
+ * 而日本义务教育官方使用训令式(对应为 si/tu/ti/hu/zi),
+ * 该映射用于在训令式输入模式下转换目标拼写。
+ */
+const hepburnToKunreiShikiSyllables: RomajiToHiragana = {
+  shi: 'si',
+  sha: 'sya',
+  shu: 'syu',
+  she: 'sye',
+  sho: 'syo',
+  chi: 'ti',
+  cha: 'tya',
+  chu: 'tyu',
+  che: 'tye',
+  cho: 'tyo',
+  tsu: 'tu',
+  fu: 'hu',
+  ji: 'zi',
+  ja: 'zya',
+  ju: 'zyu',
+  je: 'zye',
+  jo: 'zyo',
+}
+
+/**
+ * 将黑本式罗马字转换为训令式罗马字。
+ * 使用最长音节匹配,未命中的字符保持原样(如长音符 "ou"、助词 "wo" 等不受影响)。
+ */
+export function hepburnToKunreiShiki(romaji: string): string {
+  const lowerStr = romaji.toLowerCase()
+  let result = ''
+  let offset = 0
+
+  while (offset < lowerStr.length) {
+    const maxSyllableLength = Math.min(4, lowerStr.length - offset)
+    let matched = false
+
+    for (let length = maxSyllableLength; length > 0; length--) {
+      const syllable = lowerStr.substring(offset, offset + length)
+      const replacement = hepburnToKunreiShikiSyllables[syllable]
+
+      if (replacement !== undefined) {
+        result += replacement
+        offset += length
+        matched = true
+        break
+      }
+    }
+
+    if (!matched) {
+      result += lowerStr[offset]
+      offset += 1
+    }
+  }
+
+  return result
+}
+
 interface RomajiToHiragana {
   [key: string]: string
 }

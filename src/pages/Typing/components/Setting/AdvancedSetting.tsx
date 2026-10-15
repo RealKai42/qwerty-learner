@@ -1,8 +1,16 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextWordAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
+import {
+  currentDictInfoAtom,
+  isIgnoreCaseAtom,
+  isKunreiShikiEnabledAtom,
+  isShowAnswerOnHoverAtom,
+  isShowPrevAndNextWordAtom,
+  isTextSelectableAtom,
+  randomConfigAtom,
+} from '@/store'
 import { Switch } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { useAtom } from 'jotai'
+import { useAtom, useAtomValue } from 'jotai'
 import { useCallback } from 'react'
 
 export default function AdvancedSetting() {
@@ -11,6 +19,8 @@ export default function AdvancedSetting() {
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
   const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
+  const [isKunreiShikiEnabled, setIsKunreiShikiEnabled] = useAtom(isKunreiShikiEnabledAtom)
+  const currentLanguage = useAtomValue(currentDictInfoAtom).language
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -47,6 +57,13 @@ export default function AdvancedSetting() {
       setIsShowAnswerOnHover(checked)
     },
     [setIsShowAnswerOnHover],
+  )
+
+  const onToggleKunreiShiki = useCallback(
+    (checked: boolean) => {
+      setIsKunreiShikiEnabled(checked)
+    },
+    [setIsKunreiShikiEnabled],
   )
 
   return (
@@ -113,6 +130,23 @@ export default function AdvancedSetting() {
               }`}</span>
             </div>
           </div>
+          {currentLanguage === 'romaji' && (
+            <div className={styles.section}>
+              <span className={styles.sectionLabel}>使用训令式罗马字</span>
+              <span className={styles.sectionDescription}>
+                开启后，日语练习的拼写与输入判定采用训令式（如 つ 对应 tu、し 对应 si、ち 对应 ti、ふ 对应
+                hu）；关闭时采用黑本式（tsu、shi、chi、fu）
+              </span>
+              <div className={styles.switchBlock}>
+                <Switch checked={isKunreiShikiEnabled} onChange={onToggleKunreiShiki} className="switch-root">
+                  <span aria-hidden="true" className="switch-thumb" />
+                </Switch>
+                <span className="text-right text-xs font-normal leading-tight text-gray-600">{`训令式已${
+                  isKunreiShikiEnabled ? '开启' : '关闭'
+                }`}</span>
+              </div>
+            </div>
+          )}
         </div>
       </ScrollArea.Viewport>
       <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
