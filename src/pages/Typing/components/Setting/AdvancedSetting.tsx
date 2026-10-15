@@ -1,8 +1,16 @@
 import styles from './index.module.css'
-import { isIgnoreCaseAtom, isShowAnswerOnHoverAtom, isShowPrevAndNextWordAtom, isTextSelectableAtom, randomConfigAtom } from '@/store'
+import {
+  currentDictInfoAtom,
+  isIgnoreCaseAtom,
+  isKunreiShikiEnabledAtom,
+  isShowAnswerOnHoverAtom,
+  isShowPrevAndNextWordAtom,
+  isTextSelectableAtom,
+  randomConfigAtom,
+} from '@/store'
 import { Switch } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { useAtom } from 'jotai'
+import { useAtom, useAtomValue } from 'jotai'
 import { useCallback } from 'react'
 
 export default function AdvancedSetting() {
@@ -11,6 +19,8 @@ export default function AdvancedSetting() {
   const [isIgnoreCase, setIsIgnoreCase] = useAtom(isIgnoreCaseAtom)
   const [isTextSelectable, setIsTextSelectable] = useAtom(isTextSelectableAtom)
   const [isShowAnswerOnHover, setIsShowAnswerOnHover] = useAtom(isShowAnswerOnHoverAtom)
+  const [isKunreiShikiEnabled, setIsKunreiShikiEnabled] = useAtom(isKunreiShikiEnabledAtom)
+  const currentLanguage = useAtomValue(currentDictInfoAtom).language
 
   const onToggleRandom = useCallback(
     (checked: boolean) => {
@@ -113,6 +123,27 @@ export default function AdvancedSetting() {
               }`}</span>
             </div>
           </div>
+          {currentLanguage === 'romaji' && (
+            <div className={styles.section}>
+              <span className={styles.sectionLabel}>罗马音注音显示</span>
+              <span className={styles.sectionDescription}>
+                切换平文式（shi、chi、tsu）或训令式（si、ti、tu）注音显示。两种输入始终兼容，也可混用。
+              </span>
+              <div className={styles.switchBlock}>
+                <Switch
+                  checked={isKunreiShikiEnabled}
+                  onChange={setIsKunreiShikiEnabled}
+                  aria-label="使用训令式注音显示"
+                  className="switch-root"
+                >
+                  <span aria-hidden="true" className="switch-thumb" />
+                </Switch>
+                <span className="text-right text-xs font-normal leading-tight text-gray-600">
+                  {isKunreiShikiEnabled ? '训令式' : '平文式'}
+                </span>
+              </div>
+            </div>
+          )}
         </div>
       </ScrollArea.Viewport>
       <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
