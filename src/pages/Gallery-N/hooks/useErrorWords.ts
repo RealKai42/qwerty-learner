@@ -1,6 +1,7 @@
 import type { Dictionary, Word } from '@/typings'
 import { db } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
+import { archiveWordListUrl } from '@/utils/memo'
 import { wordListFetcher } from '@/utils/wordListFetcher'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
@@ -20,7 +21,7 @@ export type TErrorWordData = {
 }
 
 export default function useErrorWordData(dict: Dictionary, reload: boolean) {
-  const { data: wordList, error, isLoading } = useSWR(dict?.url, wordListFetcher)
+  const { data: wordList, error, isLoading } = useSWR(dict?.url ? archiveWordListUrl(dict.url) : null, wordListFetcher)
 
   const [errorWordData, setErrorData] = useState<TErrorWordData[]>([])
 

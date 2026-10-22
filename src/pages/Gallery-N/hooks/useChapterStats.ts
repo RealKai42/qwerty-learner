@@ -3,20 +3,24 @@ import { db } from '@/utils/db'
 import type { IChapterRecord } from '@/utils/db/record'
 import { useEffect, useState } from 'react'
 
-export function useChapterStats(chapter: number, dictID: string, isStartLoad: boolean) {
+export function useChapterStats(chapter: number, dictID: string, isStartLoad: boolean, wordListRevision = 0) {
   const [chapterStats, setChapterStats] = useState<IChapterStats | null>(null)
 
   useEffect(() => {
+    let cancelled = false
+    setChapterStats(null)
     const fetchChapterStats = async () => {
-      const stats = await getChapterStats(dictID, chapter)
-      setChapterStats(stats)
+      const stats = await getChapterStats(dictID, chapter, wordListRevision)
+      if (!cancelled) setChapterStats(stats)
     }
 
-    if (isStartLoad && !chapterStats) {
+    if (isStartLoad) {
       fetchChapterStats()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dictID, chapter, isStartLoad])
+    return () => {
+      cancelled = true
+    }
+  }, [dictID, chapter, isStartLoad, wordListRevision])
 
   return chapterStats
 }
@@ -27,8 +31,11 @@ interface IChapterStats {
   avgWrongInputCount: number
 }
 
-async function getChapterStats(dict: string, chapter: number | null): Promise<IChapterStats> {
-  const records: IChapterRecord[] = await db.chapterRecords.where({ dict, chapter }).toArray()
+async function getChapterStats(dict: string, chapter: number | null, wordListRevision: number): Promise<IChapterStats> {
+  const records: IChapterRecord[] = await db.chapterRecords
+    .where({ dict, chapter })
+    .filter((record) => !wordListRevision || record.dictionaryRevision === wordListRevision)
+    .toArray()
 
   const exerciseCount = records.length
   const totalWrongWordCount = records.reduce(

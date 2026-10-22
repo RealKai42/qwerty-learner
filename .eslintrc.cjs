@@ -9,14 +9,14 @@ module.exports = {
   ignorePatterns: ['build'],
   overrides: [
     {
-      files: ['scripts/*.cjs', '.eslintrc.cjs'],
+      files: ['scripts/*.cjs', 'server/**/*.cjs', 'tests/**/*.cjs', '.eslintrc.cjs'],
       env: { node: true },
       extends: ['eslint:recommended'],
       parser: 'espree',
       parserOptions: { sourceType: 'script' },
     },
     {
-      files: ['vite.config.ts'],
+      files: ['vite.config.ts', 'playwright.memo.config.ts'],
       env: { node: true },
       extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
       parser: '@typescript-eslint/parser',
@@ -27,7 +27,7 @@ module.exports = {
       plugins: ['@typescript-eslint'],
     },
     {
-      files: ['src/**/*.ts', 'src/**/*.tsx', 'test/**/*.ts', 'test/**/*.tsx'],
+      files: ['src/**/*.ts', 'src/**/*.tsx', 'test/**/*.ts', 'test/**/*.tsx', 'tests/memo/**/*.ts'],
       env: { browser: true },
       extends: [
         'eslint:recommended',

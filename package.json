@@ -60,9 +60,12 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
+    "start:memo": "node scripts/serve-memo.cjs",
     "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",
     "test:e2e": "playwright test",
+    "test:memo": "node --test tests/memo-api.test.cjs",
+    "test:memo:e2e": "playwright test --config playwright.memo.config.ts",
     "lint": "eslint .",
     "prettier": "prettier --write .",
     "prepare": "husky install"

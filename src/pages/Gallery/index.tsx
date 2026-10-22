@@ -3,8 +3,8 @@ import DictionaryGroup from './DictionaryGroup'
 import Header from '@/components/Header'
 import Layout from '@/components/Layout'
 import Tooltip from '@/components/Tooltip'
-import { dictionaries } from '@/resources/dictionary'
 import { currentDictInfoAtom } from '@/store'
+import { dictionariesAtom } from '@/store/dictionaries'
 import groupBy from '@/utils/groupBy'
 import { useAtomValue } from 'jotai'
 import type React from 'react'
@@ -12,6 +12,7 @@ import { useHotkeys } from 'react-hotkeys-hook'
 import { NavLink, useNavigate } from 'react-router-dom'
 
 const GalleryPage: React.FC = () => {
+  const dictionaries = useAtomValue(dictionariesAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const groups = Object.entries(groupBy(dictionaries, (dict) => dict.category))
   const navigate = useNavigate()

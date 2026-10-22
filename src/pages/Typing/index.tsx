@@ -13,8 +13,8 @@ import { TypingContext, TypingStateActionType, initialState, typingReducer } fro
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
-import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
+import { dictionaryMapAtom } from '@/store/dictionaries'
 import { IsDesktop, isLegal } from '@/utils'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
@@ -29,6 +29,7 @@ const App: React.FC = () => {
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
+  const dictionaryMap = useAtomValue(dictionaryMapAtom)
   const setCurrentChapter = useSetAtom(currentChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
@@ -51,12 +52,12 @@ const App: React.FC = () => {
   // 在组件挂载和currentDictId改变时，检查当前字典是否存在，如果不存在，则将其重置为默认值
   useEffect(() => {
     const id = currentDictId
-    if (!(id in idDictionaryMap)) {
+    if (!(id in dictionaryMap)) {
       setCurrentDictId('cet4')
       setCurrentChapter(0)
       return
     }
-  }, [currentDictId, setCurrentChapter, setCurrentDictId])
+  }, [currentDictId, dictionaryMap, setCurrentChapter, setCurrentDictId])
 
   const skipWord = useCallback(() => {
     dispatch({ type: TypingStateActionType.SKIP_WORD })

@@ -15,6 +15,8 @@ export type DictionaryResource = {
 }
 
 export type Dictionary = {
+  // Ignore obsolete chapter statistics when an imported word list changes.
+  wordListRevision?: number
   id: string
   name: string
   description: string

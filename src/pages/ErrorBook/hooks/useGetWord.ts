@@ -1,10 +1,11 @@
 import type { Dictionary, Word } from '@/typings'
+import { archiveWordListUrl } from '@/utils/memo'
 import { wordListFetcher } from '@/utils/wordListFetcher'
 import { useEffect, useMemo, useState } from 'react'
 import useSWR from 'swr'
 
 export default function useGetWord(name: string, dict: Dictionary) {
-  const { data: wordList, error, isLoading } = useSWR(dict?.url, wordListFetcher)
+  const { data: wordList, error, isLoading } = useSWR(dict?.url ? archiveWordListUrl(dict.url) : null, wordListFetcher)
   const [hasError, setHasError] = useState(false)
 
   const word: Word | undefined = useMemo(() => {

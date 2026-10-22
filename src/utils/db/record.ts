@@ -46,6 +46,7 @@ export class WordRecord implements IWordRecord {
 }
 
 export interface IChapterRecord {
+  dictionaryRevision?: number
   // 正常章节为 dictKey, 其他功能则为对应的类型
   dict: string
   // 在错题场景中为 -1
@@ -68,6 +69,7 @@ export interface IChapterRecord {
 }
 
 export class ChapterRecord implements IChapterRecord {
+  dictionaryRevision?: number
   dict: string
   chapter: number | null
   timeStamp: number

@@ -1,3 +1,4 @@
+import memoApi from './server/memo-api.cjs'
 import react from '@vitejs/plugin-react'
 import { promises as fs } from 'fs'
 import { getLastCommit } from 'git-last-commit'
@@ -6,16 +7,26 @@ import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
 import path from 'node:path'
 import { visualizer } from 'rollup-plugin-visualizer'
 import Icons from 'unplugin-icons/vite'
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import type { PluginOption } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig(async ({ mode }) => {
+  const memoOptions = { root: process.cwd(), env: { ...loadEnv(mode, process.cwd(), ''), ...process.env } }
   const latestCommitHash = await new Promise<string>((resolve) => {
-    return getLastCommit((err, commit) => (err ? 'unknown' : resolve(commit.shortHash)))
+    return getLastCommit((err, commit) => resolve(err ? 'unknown' : commit.shortHash))
   })
   return {
     plugins: [
+      {
+        name: 'memo-api',
+        configureServer(server) {
+          server.middlewares.use(memoApi.createMemoMiddleware(memoOptions))
+        },
+        configurePreviewServer(server) {
+          server.middlewares.use(memoApi.createMemoMiddleware(memoOptions))
+        },
+      },
       react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }),
       visualizer() as PluginOption,
       Icons({

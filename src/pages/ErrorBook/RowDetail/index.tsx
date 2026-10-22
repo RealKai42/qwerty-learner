@@ -9,8 +9,8 @@ import type { WordPronunciationIconRef } from '@/components/WordPronunciationIco
 import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import Phonetic from '@/pages/Typing/components/WordPanel/components/Phonetic'
 import Letter from '@/pages/Typing/components/WordPanel/components/Word/Letter'
-import { idDictionaryMap } from '@/resources/dictionary'
-import { useSetAtom } from 'jotai'
+import { dictionaryMapAtom } from '@/store/dictionaries'
+import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useMemo, useRef } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 import HashtagIcon from '~icons/heroicons/chart-pie-20-solid'
@@ -27,7 +27,7 @@ type RowDetailProps = {
 const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) => {
   const setCurrentRowDetail = useSetAtom(currentRowDetailAtom)
 
-  const dictInfo = idDictionaryMap[currentRowDetail.dict]
+  const dictInfo = useAtomValue(dictionaryMapAtom)[currentRowDetail.dict]
   const { word, isLoading, hasError } = useGetWord(currentRowDetail.word, dictInfo)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
 
