@@ -44,6 +44,11 @@ export default defineConfig(async ({ mode }) => {
       outDir: 'build',
       sourcemap: false,
     },
+    server: {
+      fs: {
+        deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**', '.memo-settings.json', '.memo-settings.*.tmp'],
+      },
+    },
     esbuild: {
       drop: mode === 'development' ? [] : ['console', 'debugger'],
     },

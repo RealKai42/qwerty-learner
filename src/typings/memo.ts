@@ -13,10 +13,23 @@ export type MemoItem = { vocId: string; response: string; isNew: boolean; word: 
 export type MemoToday = { date: string; fetchedAt: string; items: MemoItem[]; completed: number }
 export type CustomDictionary = Dictionary & {
   source: 'maimemo'
+  kind?: 'daily' | 'history'
   studyDate: string
   updatedAt: number
   responseTypes: MemoResponseType[]
   words: Word[]
   // Keep removed words available to historical error records and exports.
   wordArchive: Word[]
+  historySources?: Record<
+    string,
+    {
+      studyDate: string
+      name: string
+      responseTypes: MemoResponseType[]
+      wordNames: string[]
+      wordListRevision?: number
+    }
+  >
 }
+
+export type MemoSettings = { configured: boolean; source: 'saved' | 'environment' | 'none' }

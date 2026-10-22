@@ -1,10 +1,15 @@
 import type { Word } from '@/typings'
 import { db } from '@/utils/db/core'
+import { MEMO_HISTORY_ID } from '@/utils/db/memo-rollover'
 
 export async function wordListFetcher(url: string): Promise<Word[]> {
   if (url.startsWith('custom-dictionary://')) {
     const parsed = new URL(url)
-    const dictionary = await db.customDictionaries.get(parsed.hostname)
+    let dictionary = await db.customDictionaries.get(parsed.hostname)
+    if (!dictionary) {
+      const history = await db.customDictionaries.get(MEMO_HISTORY_ID)
+      if (history?.historySources?.[parsed.hostname]) dictionary = history
+    }
     if (!dictionary) throw new Error('个人词书不存在，请重新导入。')
     return parsed.searchParams.get('archive') === '1' ? dictionary.wordArchive : dictionary.words
   }
@@ -14,4 +19,8 @@ export async function wordListFetcher(url: string): Promise<Word[]> {
   if (!response.ok) throw new Error('词书加载失败，请稍后重试。')
   const words: Word[] = await response.json()
   return words
+}
+
+export function findDictionaryWord(words: Word[], name: string): Word | undefined {
+  return words.find((word) => word.name === name) ?? words.find((word) => word.name.trim().toLowerCase() === name.trim().toLowerCase())
 }

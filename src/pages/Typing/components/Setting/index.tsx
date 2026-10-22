@@ -1,6 +1,7 @@
 import { TypingContext, TypingStateActionType } from '../../store'
 import AdvancedSetting from './AdvancedSetting'
 import DataSetting from './DataSetting'
+import MemoSetting from './MemoSetting'
 import SoundSetting from './SoundSetting'
 import ViewSetting from '@/pages/Typing/components/Setting/ViewSetting'
 import { Dialog, Tab, Transition } from '@headlessui/react'
@@ -9,20 +10,31 @@ import { Fragment, useContext, useState } from 'react'
 import IconCog6Tooth from '~icons/heroicons/cog-6-tooth-solid'
 import IconEye from '~icons/heroicons/eye-solid'
 import IconAdjustmentsHorizontal from '~icons/tabler/adjustments-horizontal'
+import IconBook from '~icons/tabler/book'
 import IconDatabaseCog from '~icons/tabler/database-cog'
 import IconEar from '~icons/tabler/ear'
 import IconX from '~icons/tabler/x'
 
-export default function Setting() {
+export default function Setting({
+  initialTab = 0,
+  label,
+  onOpenChange,
+}: {
+  initialTab?: number
+  label?: string
+  onOpenChange?: (open: boolean) => void
+}) {
   const [isOpen, setIsOpen] = useState(false)
   const { dispatch } = useContext(TypingContext) ?? {}
 
   function closeModal() {
     setIsOpen(false)
+    onOpenChange?.(false)
   }
 
   function openModal() {
     setIsOpen(true)
+    onOpenChange?.(true)
     if (dispatch) {
       dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
     }
@@ -36,9 +48,10 @@ export default function Setting() {
         className={`flex items-center justify-center rounded p-[2px] text-lg text-indigo-500 outline-none transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white  ${
           isOpen && 'bg-indigo-500 text-white'
         }`}
-        title="打开设置对话框"
+        title={label || '打开设置对话框'}
       >
         <IconCog6Tooth className="icon" />
+        {label && <span className="ml-1 text-sm">{label}</span>}
       </button>
 
       <Transition appear show={isOpen} as={Fragment}>
@@ -69,12 +82,18 @@ export default function Setting() {
                 <Dialog.Panel className="flex w-200 flex-col overflow-hidden rounded-2xl bg-white p-0 shadow-xl dark:bg-gray-800">
                   <div className="relative flex h-22 items-end justify-between rounded-t-lg border-b border-neutral-100 bg-stone-50 px-6 py-3 dark:border-neutral-700 dark:bg-gray-900">
                     <span className="text-3xl font-bold text-gray-600">设置</span>
-                    <button type="button" onClick={() => setIsOpen(false)} title="关闭对话框">
-                      <IconX className="absolute right-7 top-5 cursor-pointer text-gray-400" />
+                    <button
+                      type="button"
+                      onClick={closeModal}
+                      title="关闭对话框"
+                      aria-label="关闭对话框"
+                      className="absolute right-5 top-3 flex h-9 w-9 items-center justify-center rounded text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700"
+                    >
+                      <IconX className="h-5 w-5" />
                     </button>
                   </div>
 
-                  <Tab.Group vertical>
+                  <Tab.Group vertical defaultIndex={initialTab}>
                     <div className="flex h-120 w-full ">
                       <Tab.List className="flex h-full w-52 flex-col items-start space-y-3  border-r border-neutral-100 bg-stone-50 px-6 py-3 dark:border-transparent dark:bg-gray-900">
                         <Tab
@@ -121,6 +140,17 @@ export default function Setting() {
                           <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
                         </Tab>
+                        <Tab
+                          className={({ selected }) =>
+                            classNames(
+                              'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
+                              selected && 'bg-gray-200 bg-opacity-50 dark:bg-gray-800',
+                            )
+                          }
+                        >
+                          <IconBook className="mr-2 text-neutral-500 dark:text-neutral-300" />
+                          <span className="text-neutral-500 dark:text-neutral-300">墨墨设置</span>
+                        </Tab>
                       </Tab.List>
 
                       <Tab.Panels className="h-full w-full flex-1">
@@ -135,6 +165,9 @@ export default function Setting() {
                         </Tab.Panel>
                         <Tab.Panel className="flex h-full focus:outline-none">
                           <DataSetting />
+                        </Tab.Panel>
+                        <Tab.Panel className="flex h-full focus:outline-none">
+                          <MemoSetting />
                         </Tab.Panel>
                       </Tab.Panels>
                     </div>

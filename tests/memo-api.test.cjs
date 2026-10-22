@@ -1,10 +1,11 @@
 const assert = require('node:assert/strict')
-const { mkdtemp, mkdir, writeFile, rm } = require('node:fs/promises')
+const { mkdtemp, mkdir, writeFile, rm, stat } = require('node:fs/promises')
 const http = require('node:http')
 const os = require('node:os')
 const path = require('node:path')
 const { test } = require('node:test')
 const { beijingDate, createMemoMiddleware, createTodayLoader, MemoError } = require('../server/memo-api.cjs')
+const { createMemoSettingsStore } = require('../server/memo-settings.cjs')
 
 const todayItems = [
   { voc_id: 'b', voc_spelling: 'banana', order: 2, first_response: 'VAGUE', is_new: true, is_finished: true },
@@ -32,9 +33,11 @@ async function loaderFixture(t, options = {}) {
   return { load: createTodayLoader({ root, env: { memo_token: 'test-token' }, request, ...options }), calls }
 }
 
-test('uses Beijing day at the UTC boundary', () => {
+test('study day changes at 04:00 Beijing time, not midnight', () => {
   assert.equal(beijingDate(new Date('2026-10-22T15:59:59Z')), '2026-10-22')
-  assert.equal(beijingDate(new Date('2026-10-22T16:00:00Z')), '2026-10-23')
+  assert.equal(beijingDate(new Date('2026-10-22T16:00:00Z')), '2026-10-22')
+  assert.equal(beijingDate(new Date('2026-10-22T19:59:59.999Z')), '2026-10-22')
+  assert.equal(beijingDate(new Date('2026-10-22T20:00:00Z')), '2026-10-23')
 })
 
 test('requests completed new and review words, deduplicates, sorts and enriches', async (t) => {
@@ -82,9 +85,9 @@ test('refuses the API cap even if the upstream count is stale', async (t) => {
   await assert.rejects(load, (error) => error.status === 409)
 })
 
-test('crossing midnight invalidates the snapshot', async (t) => {
+test('crossing 04:00 invalidates the snapshot', async (t) => {
   let count = 0
-  const { load } = await loaderFixture(t, { now: () => new Date(count++ === 0 ? '2026-10-22T15:59:59Z' : '2026-10-22T16:00:01Z') })
+  const { load } = await loaderFixture(t, { now: () => new Date(count++ === 0 ? '2026-10-22T19:59:59Z' : '2026-10-22T20:00:01Z') })
   await assert.rejects(load, (error) => error.status === 409)
 })
 
@@ -96,17 +99,20 @@ test('empty completed list is a valid preview', async (t) => {
 })
 
 async function apiFixture(t, options = {}) {
-  const middleware = createMemoMiddleware({ env: {}, loadToday: async () => ({ items: [] }), ...options })
+  const root = await mkdtemp(path.join(os.tmpdir(), 'qwerty-memo-api-'))
+  t.after(() => rm(root, { recursive: true, force: true }))
+  const middleware = createMemoMiddleware({ root, env: {}, loadToday: async () => ({ items: [] }), ...options })
   const server = http.createServer((request, response) => middleware(request, response, () => response.writeHead(404).end()))
   await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve))
   t.after(() => {
     server.closeAllConnections()
     server.close()
   })
-  const url = `http://127.0.0.1:${server.address().port}/api/memo/today`
-  return (init = {}) =>
+  const url = `http://127.0.0.1:${server.address().port}`
+  const send = (init = {}) =>
     new Promise((resolve, reject) => {
-      const request = http.request(url, { method: 'POST', ...init }, (response) => {
+      const { pathname = '/api/memo/today', body, ...requestOptions } = init
+      const request = http.request(url + pathname, { method: 'POST', ...requestOptions }, (response) => {
         let body = ''
         response.setEncoding('utf8')
         response.on('data', (chunk) => {
@@ -115,8 +121,10 @@ async function apiFixture(t, options = {}) {
         response.on('end', () => resolve(new globalThis.Response(body, { status: response.statusCode, headers: response.headers })))
       })
       request.on('error', reject)
-      request.end()
+      request.end(typeof body === 'string' ? body : body ? JSON.stringify(body) : undefined)
     })
+  send.root = root
+  return send
 }
 
 test('API allows local same-origin reads and disables caching', async (t) => {
@@ -159,4 +167,69 @@ test('API preserves actionable failure messages', async (t) => {
   const response = await request()
   assert.equal(response.status, 401)
   assert.equal((await response.json()).error, '请更新凭证')
+})
+
+test('settings save is private, persistent, and overrides the environment without echoing token', async (t) => {
+  const request = await apiFixture(t, { env: { memo_token: 'environment-token' } })
+  const configPath = '/api/memo/settings'
+  assert.deepEqual(await (await request({ pathname: configPath, method: 'GET' })).json(), { configured: true, source: 'environment' })
+  const response = await request({
+    pathname: configPath,
+    headers: { 'Content-Type': 'application/json' },
+    body: { token: 'saved-test-token' },
+  })
+  assert.deepEqual(await response.json(), { configured: true, source: 'saved' })
+  const settings = createMemoSettingsStore({ root: request.root, env: { memo_token: 'environment-token' } })
+  assert.equal(await settings.getToken(), 'saved-test-token')
+  assert.equal((await stat(path.join(request.root, '.memo-settings.json'))).mode & 0o777, 0o600)
+  const cleared = await request({ pathname: configPath, method: 'DELETE' })
+  assert.deepEqual(await cleared.json(), { configured: false, source: 'none' })
+  assert.equal(await settings.getToken(), '')
+})
+
+test('settings reject invalid and oversized tokens without replacing a valid configuration', async (t) => {
+  const request = await apiFixture(t)
+  const init = { pathname: '/api/memo/settings', headers: { 'Content-Type': 'application/json' } }
+  assert.equal((await request({ ...init, body: { token: 'good-token' } })).status, 200)
+  assert.equal((await request({ ...init, body: { token: 'bad\ntoken' } })).status, 400)
+  assert.equal((await request({ ...init, body: { token: 'x'.repeat(9000) } })).status, 413)
+  assert.equal((await request({ ...init, body: '{malformed' })).status, 400)
+  assert.equal(await createMemoSettingsStore({ root: request.root }).getToken(), 'good-token')
+})
+
+test('settings API requires owner access for both reads and writes', async (t) => {
+  const request = await apiFixture(t, { env: { MEMO_ACCESS_PASSWORD: 'owner-password' } })
+  const pathname = '/api/memo/settings'
+  assert.equal((await request({ pathname, method: 'GET' })).status, 401)
+  assert.equal((await request({ pathname, body: { token: 'attack' } })).status, 401)
+  const authorized = { Authorization: 'Basic ' + Buffer.from('memo:owner-password').toString('base64'), 'Content-Type': 'application/json' }
+  assert.equal(
+    (await request({ pathname, headers: { ...authorized, Origin: 'https://other.example' }, body: { token: 'attack' } })).status,
+    403,
+  )
+  assert.equal((await request({ pathname, headers: authorized, body: { token: 'owner-token' } })).status, 200)
+})
+
+test('private settings files cannot fall through to a static file server', async (t) => {
+  const request = await apiFixture(t)
+  for (const pathname of [
+    '/.memo-settings.json',
+    '/%2Ememo-settings.json?raw',
+    '/@fs/workspace/project/.memo-settings.json?import',
+    '/.memo-settings.example.tmp',
+  ]) {
+    assert.equal((await request({ pathname, method: 'GET' })).status, 403)
+  }
+})
+
+test('saved token is read by the loader on its next import', async (t) => {
+  const root = await mkdtemp(path.join(os.tmpdir(), 'qwerty-memo-config-'))
+  t.after(() => rm(root, { recursive: true, force: true }))
+  const settings = createMemoSettingsStore({ root, env: {} })
+  const { load } = await loaderFixture(t, { settings })
+  await assert.rejects(load, (error) => error.status === 503)
+  await settings.save('new-test-token')
+  assert.equal((await load()).items.length, 3)
+  await settings.clear()
+  await assert.rejects(load, (error) => error.status === 503)
 })

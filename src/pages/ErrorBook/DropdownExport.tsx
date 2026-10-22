@@ -1,7 +1,7 @@
 import type { groupedWordRecords } from './type'
 import { dictionaryMapAtom } from '@/store/dictionaries'
 import { archiveWordListUrl } from '@/utils/memo'
-import { wordListFetcher } from '@/utils/wordListFetcher'
+import { findDictionaryWord, wordListFetcher } from '@/utils/wordListFetcher'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { saveAs } from 'file-saver'
 import { useAtomValue } from 'jotai'
@@ -63,7 +63,7 @@ const DropdownExport: FC<DropdownProps> = ({ renderRecords }) => {
 
         if (dictInfo?.url && dictDataMap.has(dictInfo.url)) {
           const wordList = dictDataMap.get(dictInfo.url) || []
-          const word = wordList.find((w) => w.name === item.word)
+          const word = findDictionaryWord(wordList, item.word)
           translation = word ? word.trans.join('；') : ''
         }
 

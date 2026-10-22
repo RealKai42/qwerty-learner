@@ -27,6 +27,8 @@ yarn-error.log*
 package-lock.json
 pnpm-lock.yaml
 .env
+.memo-settings.json
+.memo-settings.*.tmp
 stats.html
 
 .idea

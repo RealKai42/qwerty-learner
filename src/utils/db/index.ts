@@ -1,4 +1,5 @@
 import { db } from './core'
+import { putStudyRecord } from './memo-rollover'
 import type { LetterMistakes } from './record'
 import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
@@ -39,7 +40,7 @@ export function useSaveChapterRecord() {
         wordRecordIds ?? [],
       )
       chapterRecord.dictionaryRevision = dictionaryRevision
-      db.chapterRecords.add(chapterRecord)
+      void putStudyRecord(db.chapterRecords, chapterRecord)
     },
     [currentChapter, dictID, isRevision, dictionaryRevision],
   )
@@ -81,7 +82,7 @@ export function useSaveWordRecord() {
 
       let dbID = -1
       try {
-        dbID = await db.wordRecords.add(wordRecord)
+        dbID = await putStudyRecord(db.wordRecords, wordRecord)
       } catch (e) {
         console.error(e)
       }

@@ -2,6 +2,7 @@ import { getUTCUnixTimestamp } from '../index'
 import type { Word } from '@/typings'
 
 export interface IWordRecord {
+  originalDict?: string
   word: string
   timeStamp: number
   // 正常章节为 dictKey, 其他功能则为对应的类型
@@ -46,6 +47,7 @@ export class WordRecord implements IWordRecord {
 }
 
 export interface IChapterRecord {
+  originalDict?: string
   dictionaryRevision?: number
   // 正常章节为 dictKey, 其他功能则为对应的类型
   dict: string
@@ -118,6 +120,7 @@ export class ChapterRecord implements IChapterRecord {
 }
 
 export interface IReviewRecord {
+  originalDict?: string
   id?: number
   dict: string
   // 当前练习进度

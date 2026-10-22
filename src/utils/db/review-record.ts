@@ -1,4 +1,5 @@
 import { db } from '.'
+import { putStudyRecord } from './memo-rollover'
 import { ReviewRecord } from './record'
 import type { TErrorWordData } from '@/pages/Gallery-N/hooks/useErrorWords'
 import type { Word } from '@/typings'
@@ -59,10 +60,10 @@ export async function generateNewWordReviewRecord(dictID: string, errorData: TEr
 
   const record = new ReviewRecord(dictID, sortedWords)
 
-  await db.reviewRecords.put(record)
+  await putStudyRecord(db.reviewRecords, record)
   return record
 }
 
 export async function putWordReviewRecord(record: ReviewRecord) {
-  db.reviewRecords.put(record)
+  return putStudyRecord(db.reviewRecords, record)
 }

@@ -7,15 +7,23 @@ export const customDictionariesAtom = atom<Dictionary[]>([])
 export const dictionariesReadyAtom = atom(false)
 export const dictionariesErrorAtom = atom(false)
 export const dictionariesAtom = atom((get) => [...get(customDictionariesAtom), ...dictionaries])
-export const dictionaryMapAtom = atom((get) => ({
-  ...idDictionaryMap,
-  ...Object.fromEntries(get(customDictionariesAtom).map((dict) => [dict.id, dict])),
-}))
+export const dictionaryMapAtom = atom((get) => {
+  const map = { ...idDictionaryMap }
+  get(customDictionariesAtom).forEach((dictionary) => {
+    map[dictionary.id] = dictionary
+    dictionary.aliases?.forEach((alias) => {
+      map[alias] = dictionary
+    })
+  })
+  return map
+})
 
 export function dictionaryMetadata(record: CustomDictionary): Dictionary {
   return {
+    source: record.source,
+    aliases: Object.keys(record.historySources ?? {}),
     id: record.id,
-    name: record.name,
+    name: record.source === 'maimemo' && record.id !== 'maimemo-history' ? `今日词汇 · ${record.studyDate}` : record.name,
     description: record.description,
     category: record.category,
     tags: record.tags,

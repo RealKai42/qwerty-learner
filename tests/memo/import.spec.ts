@@ -13,7 +13,7 @@ type StoredBook = {
 
 function snapshot() {
   const date = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(
-    new Date(),
+    new Date(Date.now() - 4 * 60 * 60 * 1000),
   )
   return {
     date,
@@ -30,6 +30,7 @@ function snapshot() {
 
 async function openImport(page: Page) {
   await page.goto('/gallery')
+  await page.getByRole('radio', { name: '墨墨每日词汇', exact: true }).click()
   await page.getByRole('button', { name: '导入今日词汇', exact: true }).click()
   await expect(page.getByText('选择词汇类型（可多选）')).toBeVisible()
 }
@@ -77,13 +78,13 @@ test('type selection imports a daily wordbook that survives reload and enters pr
   await page.getByRole('button', { name: '导入 2 词', exact: true }).click()
   await expect(page.getByText('已保存 2 词')).toBeVisible()
   await page.getByRole('button', { name: '开始练习' }).click()
-  await expect(page.getByRole('link', { name: /墨墨每日词汇/ })).toBeVisible()
+  await expect(page.getByRole('link', { name: /今日词汇/ })).toBeVisible()
   await expect(page.getByText('苹果', { exact: true })).toBeVisible()
   await page.keyboard.press('Enter')
   await page.keyboard.type('apple')
   await expect(page.getByText('香蕉', { exact: true })).toBeVisible()
   await page.reload()
-  await expect(page.getByRole('link', { name: /墨墨每日词汇/ })).toBeVisible()
+  await expect(page.getByRole('link', { name: /今日词汇/ })).toBeVisible()
   const book = await readDictionary(page)
   expect(book.words.map((word: { name: string }) => word.name)).toEqual(['apple', 'banana'])
   expect(book.responseTypes).toEqual(['FORGET', 'VAGUE'])
@@ -123,7 +124,7 @@ test('changing same-day filters replaces the list and retains archived error def
   expect(updated.wordListRevision).not.toBe(original.wordListRevision)
   await page.goto('/error-book')
   await expect(page.getByText('猫', { exact: true })).toBeVisible()
-  await expect(page.getByText(/墨墨每日词汇/)).toBeVisible()
+  await expect(page.getByText(/今日词汇/)).toBeVisible()
 })
 
 test('empty selection, empty results, and API errors do not replace an existing book', async ({ page }) => {
@@ -132,6 +133,7 @@ test('empty selection, empty results, and API errors do not replace an existing 
   await expect(page.getByText('已保存 4 词')).toBeVisible()
   await page.getByRole('button', { name: 'Close', exact: true }).click()
   await page.getByRole('button', { name: '导入今日词汇', exact: true }).click()
+  await expect(page.getByText('选择词汇类型（可多选）')).toBeVisible()
   for (const checkbox of await page.getByRole('checkbox').all()) await checkbox.uncheck()
   await expect(page.getByRole('button', { name: '导入 0 词', exact: true })).toBeDisabled()
   await page.route('**/api/memo/today', (route) => route.fulfill({ json: { ...snapshot(), completed: 0, items: [] } }))
@@ -211,7 +213,7 @@ test('daily wordbooks round-trip through the existing data backup UI', async ({ 
   const buffer = Buffer.concat(chunks)
   const json = gunzipSync(buffer).toString()
   expect(json).toContain('customDictionaries')
-  expect(json).toContain('墨墨每日词汇')
+  expect(json).toContain('今日词汇')
   const context = await browser.newContext({ baseURL: 'http://127.0.0.1:4174' })
   try {
     const restored = await context.newPage()
@@ -228,7 +230,8 @@ test('daily wordbooks round-trip through the existing data backup UI', async ({ 
     await (await fileChooser).setFiles({ name: download.suggestedFilename(), mimeType: 'application/gzip', buffer })
     await expect.poll(async () => (await readDictionary(restored))?.words.length).toBe(4)
     await restored.goto('/gallery')
-    await expect(restored.getByRole('button', { name: /墨墨每日词汇/ }).first()).toBeVisible()
+    await restored.getByRole('radio', { name: '墨墨每日词汇', exact: true }).click()
+    await expect(restored.getByRole('button', { name: /今日词汇/ }).first()).toBeVisible()
   } finally {
     await context.close()
   }

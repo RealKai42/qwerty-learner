@@ -102,7 +102,7 @@ export default function MemoImport({ onOpenChange }: { onOpenChange: (open: bool
       <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-xl">
         <DialogHeader>
           <DialogTitle>从墨墨导入今日词汇</DialogTitle>
-          <DialogDescription>仅导入北京时间当天已完成学习的新词和复习词，每天保存一本个人词书。</DialogDescription>
+          <DialogDescription>导入当前学习日已完成的新词和复习词。学习日于北京时间每天 04:00 更新。</DialogDescription>
         </DialogHeader>
         <div className="space-y-4 text-sm text-gray-700 dark:text-gray-200">
           {loading && <p role="status">正在读取墨墨今日学习记录…</p>}
@@ -155,7 +155,8 @@ export default function MemoImport({ onOpenChange }: { onOpenChange: (open: bool
                 <p className="text-amber-700 dark:text-amber-300">{missingDefinitions} 个词暂无本地释义，将保留拼写供练习。</p>
               )}
               <p className="text-xs leading-relaxed text-gray-500">
-                同一天再次导入会按当前选择更新词表，练习从第一章开始；已有单词练习记录保留。词书保存在当前浏览器，可随学习数据一起备份。
+                再次导入会按当前选择更新今日词表，练习从第一章开始，已有练习记录保留。导入时按北京时间每天 04:00
+                划分学习日，将旧词书合并去重到“往日词汇”。词书保存在当前浏览器，可随学习数据一起备份。
               </p>
             </>
           )}

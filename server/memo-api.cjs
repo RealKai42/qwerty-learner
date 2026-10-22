@@ -3,19 +3,17 @@ const fs = require('node:fs/promises')
 const http = require('node:http')
 const https = require('node:https')
 const path = require('node:path')
+const { MemoError } = require('./memo-error.cjs')
+const { createMemoSettingsStore } = require('./memo-settings.cjs')
 
 const API_BASE = 'https://open.maimemo.com/open/api/v1'
 const API_PATH = '/api/memo/today'
-
-class MemoError extends Error {
-  constructor(message, status = 502) {
-    super(message)
-    this.status = status
-  }
-}
+const SETTINGS_PATH = '/api/memo/settings'
 
 function beijingDate(date = new Date()) {
-  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(date)
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(
+    new Date(date.getTime() - 4 * 60 * 60 * 1000),
+  )
 }
 
 function requestMemo(endpoint, token, body) {
@@ -38,7 +36,7 @@ function requestMemo(endpoint, token, body) {
         response.on('error', () => reject(new MemoError('墨墨响应中断，请重试。')))
         response.on('end', () => {
           if (response.statusCode === 401 || response.statusCode === 403) {
-            reject(new MemoError('墨墨凭证已过期或无权访问，请更新服务端的 memo_token。', 401))
+            reject(new MemoError('墨墨凭证已过期或无权访问，请在墨墨设置中更新 Token。', 401))
           } else if (response.statusCode === 429) {
             reject(new MemoError('墨墨请求次数过多，请稍后重试。', 429))
           } else if (response.statusCode !== 200) {
@@ -83,20 +81,26 @@ async function loadWordIndex(root) {
   return index
 }
 
-function createTodayLoader({ root, env = process.env, request = requestMemo, now = () => new Date() }) {
+function createTodayLoader({
+  root,
+  env = process.env,
+  request = requestMemo,
+  now = () => new Date(),
+  settings = createMemoSettingsStore({ root, env }),
+}) {
   let indexPromise
   let pending
-  return function loadToday() {
-    if (pending) return pending
-    pending = (async () => {
-      const token = env.memo_token || env.MAIMEMO_TOKEN
-      if (!token) throw new MemoError('尚未配置墨墨账号，请在服务端设置 memo_token 后重启。', 503)
+  return async function loadToday() {
+    const token = await settings.getToken()
+    if (pending?.token === token) return pending.promise
+    const operation = (async () => {
+      if (!token) throw new MemoError('尚未配置墨墨账号，请先在设置 → 墨墨设置中保存 Token。', 503)
       const date = beijingDate(now())
       const [data, progressData] = await Promise.all([
         request('/study/get_today_items', token, { is_finished: true, limit: 1000 }),
         request('/study/get_study_progress', token, {}),
       ])
-      if (date !== beijingDate(now())) throw new MemoError('导入过程中已跨过北京时间零点，请重新读取今日词汇。', 409)
+      if (date !== beijingDate(now())) throw new MemoError('导入过程中已跨过北京时间 04:00，请重新读取今日词汇。', 409)
       if (!Array.isArray(data.today_items) || !Number.isInteger(progressData.progress?.finished)) {
         throw new MemoError('墨墨学习数据格式已变化，请稍后重试。')
       }
@@ -128,11 +132,14 @@ function createTodayLoader({ root, env = process.env, request = requestMemo, now
             word: { name, trans: entry?.trans || [], usphone: entry?.usphone || '', ukphone: entry?.ukphone || '' },
           }
         })
-      return { date, fetchedAt: now().toISOString(), items, completed: progressData.progress.finished }
+      const fetchedAt = now()
+      if (date !== beijingDate(fetchedAt)) throw new MemoError('导入过程中已跨过北京时间 04:00，请重新读取今日词汇。', 409)
+      return { date, fetchedAt: fetchedAt.toISOString(), items, completed: progressData.progress.finished }
     })().finally(() => {
-      pending = undefined
+      if (pending?.promise === operation) pending = undefined
     })
-    return pending
+    pending = { token, promise: operation }
+    return operation
   }
 }
 
@@ -167,14 +174,44 @@ function authorizeMemoRequest(request, response, env = process.env) {
 }
 
 function createMemoMiddleware(options) {
-  const loadToday = options.loadToday || createTodayLoader(options)
+  const settings = options.settings || createMemoSettingsStore({ root: options.root || process.cwd(), env: options.env })
+  const loadToday = options.loadToday || createTodayLoader({ ...options, settings })
   return async function memoMiddleware(request, response, next) {
-    if (request.url?.split('?')[0] !== API_PATH) return next()
+    // Vite serves project files during development; never expose the private configuration.
+    let decodedPath
+    try {
+      decodedPath = decodeURIComponent(request.url?.split('?')[0] || '')
+    } catch {
+      response.writeHead(400).end('Bad request')
+      return
+    }
+    if (/(^|[/\\])\.memo-settings\.(json|[^/\\]+\.tmp)(?:$|[/\\])/i.test(decodedPath)) {
+      response.writeHead(403, { 'Cache-Control': 'no-store' }).end('Forbidden')
+      return
+    }
+    const pathname = request.url?.split('?')[0]
+    if (pathname !== API_PATH && pathname !== SETTINGS_PATH) return next()
     response.setHeader('Cache-Control', 'no-store')
     response.setHeader('Content-Type', 'application/json; charset=utf-8')
     response.setHeader('X-Content-Type-Options', 'nosniff')
     try {
       if (!authorizeMemoRequest(request, response, options.env)) return
+      if (pathname === SETTINGS_PATH) {
+        let data
+        if (request.method === 'GET') data = await settings.getStatus()
+        else if (request.method === 'DELETE') data = await settings.clear()
+        else if (request.method === 'POST') {
+          if (!request.headers['content-type']?.startsWith('application/json')) throw new MemoError('请使用 JSON 保存墨墨设置。', 415)
+          const body = await readSettingsBody(request)
+          data = await settings.save(body?.token)
+        } else {
+          response.setHeader('Allow', 'GET, POST, DELETE')
+          throw new MemoError('不支持的墨墨设置操作。', 405)
+        }
+        request.resume()
+        response.writeHead(200).end(JSON.stringify(data))
+        return
+      }
       if (request.method !== 'POST') {
         response.setHeader('Allow', 'POST')
         response.writeHead(405).end(JSON.stringify({ error: '请使用导入按钮读取今日词汇。' }))
@@ -188,6 +225,30 @@ function createMemoMiddleware(options) {
       response.end(JSON.stringify({ error: error instanceof MemoError ? error.message : '读取词汇失败，请稍后重试。' }))
     }
   }
+}
+
+function readSettingsBody(request) {
+  return new Promise((resolve, reject) => {
+    let body = ''
+    let size = 0
+    let rejected = false
+    request.on('data', (chunk) => {
+      size += chunk.length
+      if (size > 8192) {
+        rejected = true
+        reject(new MemoError('Token 配置内容过长。', 413))
+      } else body += chunk.toString('utf8')
+    })
+    request.on('end', () => {
+      if (rejected) return
+      try {
+        resolve(JSON.parse(body))
+      } catch {
+        reject(new MemoError('Token 配置格式不正确。', 400))
+      }
+    })
+    request.on('error', () => reject(new MemoError('读取 Token 配置失败，请重试。', 400)))
+  })
 }
 
 module.exports = { API_PATH, MemoError, authorizeMemoRequest, beijingDate, createMemoMiddleware, createTodayLoader }
