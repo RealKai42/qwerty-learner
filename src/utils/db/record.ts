@@ -1,7 +1,12 @@
 import { getUTCUnixTimestamp } from '../index'
-import type { Word } from '@/typings'
+import type { PracticeContentType, Word } from '@/typings'
 
 export interface IWordRecord {
+  contentType?: PracticeContentType
+  practiceText?: string
+  characterCount?: number
+  statisticsVersion?: 2
+  originalDict?: string
   word: string
   timeStamp: number
   // 正常章节为 dictKey, 其他功能则为对应的类型
@@ -22,6 +27,10 @@ export interface LetterMistakes {
 }
 
 export class WordRecord implements IWordRecord {
+  contentType?: PracticeContentType
+  practiceText?: string
+  characterCount?: number
+  statisticsVersion?: 2
   word: string
   timeStamp: number
   dict: string
@@ -46,6 +55,10 @@ export class WordRecord implements IWordRecord {
 }
 
 export interface IChapterRecord {
+  characterCount?: number
+  statisticsVersion?: 2
+  originalDict?: string
+  dictionaryRevision?: number
   // 正常章节为 dictKey, 其他功能则为对应的类型
   dict: string
   // 在错题场景中为 -1
@@ -68,6 +81,9 @@ export interface IChapterRecord {
 }
 
 export class ChapterRecord implements IChapterRecord {
+  characterCount?: number
+  statisticsVersion?: 2
+  dictionaryRevision?: number
   dict: string
   chapter: number | null
   timeStamp: number
@@ -103,10 +119,13 @@ export class ChapterRecord implements IChapterRecord {
   }
 
   get wpm() {
-    return Math.round((this.wordCount / this.time) * 60)
+    return this.time > 0
+      ? Math.round(((this.statisticsVersion === 2 ? (this.characterCount ?? 0) / 5 : this.wordCount) / this.time) * 60)
+      : 0
   }
 
   get inputAccuracy() {
+    if (this.statisticsVersion === 2) return Math.round((this.correctCount / Math.max(1, this.correctCount + this.wrongCount)) * 100)
     return Math.round((this.correctCount / this.correctCount + this.wrongCount) * 100)
   }
 
@@ -116,6 +135,7 @@ export class ChapterRecord implements IChapterRecord {
 }
 
 export interface IReviewRecord {
+  originalDict?: string
   id?: number
   dict: string
   // 当前练习进度

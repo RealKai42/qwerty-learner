@@ -21,7 +21,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
   const divRef = useRef<HTMLDivElement>(null)
   const entry = useIntersectionObserver(divRef, {})
   const isVisible = !!entry?.isIntersecting
-  const dictStats = useDictStats(dictionary.id, isVisible)
+  const dictStats = useDictStats(dictionary.id, isVisible, dictionary.wordListRevision)
   const chapterCount = useMemo(() => calcChapterCount(dictionary.length), [dictionary.length])
   const isSelected = currentDictID === dictionary.id
   const progress = useMemo(
@@ -65,7 +65,9 @@ export default function DictionaryComponent({ dictionary }: Props) {
               </Tooltip>
             </TooltipProvider>
 
-            <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.length} 词</p>
+            <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>
+              {dictionary.length} {dictionary.source === 'custom' ? '条' : '词'}
+            </p>
             <div className=" flex w-full items-center pt-2">
               {progress > 0 && (
                 <Progress.Root

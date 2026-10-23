@@ -35,7 +35,7 @@ export default function WordPanel() {
     return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
   }, [state.chapterData.index, state.chapterData.words.length])
 
-  usePrefetchPronunciationSound(nextWord?.name)
+  usePrefetchPronunciationSound(nextWord?.name, nextWord?.contentType)
 
   const reloadCurrentWordComponent = useCallback(() => {
     setWordComponentKey((old) => old + 1)
@@ -170,7 +170,7 @@ export default function WordPanel() {
                 </div>
               </div>
             )}
-            <div className="relative">
+            <div className="relative min-w-0 max-w-full px-6">
               <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation

@@ -7,18 +7,20 @@ export default function Chapter({
   index,
   checked,
   dictID,
+  wordListRevision,
   onChange,
 }: {
   index: number
   checked: boolean
   dictID: string
+  wordListRevision?: number
   onChange: (index: number) => void
 }) {
   const ref = useRef<HTMLTableRowElement>(null)
 
   const entry = useIntersectionObserver(ref, {})
   const isVisible = !!entry?.isIntersecting
-  const chapterStatus = useChapterStats(index, dictID, isVisible)
+  const chapterStatus = useChapterStats(index, dictID, isVisible, wordListRevision)
 
   useEffect(() => {
     if (checked && ref.current !== null) {

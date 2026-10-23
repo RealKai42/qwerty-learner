@@ -35,7 +35,7 @@ const Analysis = () => {
 
   useHotkeys('enter,esc', onBack, { preventDefault: true })
 
-  const { isEmpty, exerciseRecord, wordRecord, wpmRecord, accuracyRecord, wrongTimeRecord } = useWordStats(
+  const { isEmpty, exerciseRecord, wordRecord, wpmRecord, textCpmRecord, textWpmRecord, accuracyRecord, wrongTimeRecord } = useWordStats(
     dayjs().subtract(1, 'year').unix(),
     dayjs().unix(),
   )
@@ -56,8 +56,18 @@ const Analysis = () => {
                   <HeatmapCharts title="过去一年练习次数热力图" data={exerciseRecord} />
                 </div>
                 <div className="mx-4 my-8 h-auto w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
-                  <HeatmapCharts title="过去一年练习词数热力图" data={wordRecord} />
+                  <HeatmapCharts title="过去一年练习条目数热力图" data={wordRecord} />
                 </div>
+                {textCpmRecord.length > 0 && (
+                  <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                    <LineCharts title="短语与句子 CPM 趋势图" name="CPM" data={textCpmRecord} />
+                  </div>
+                )}
+                {textWpmRecord.length > 0 && (
+                  <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
+                    <LineCharts title="短语与句子标准 WPM 趋势图（5 字符折算 1 词）" name="WPM" data={textWpmRecord} />
+                  </div>
+                )}
                 <div className="mx-4 my-8 h-80 w-auto overflow-hidden rounded-lg p-8 shadow-lg dark:bg-gray-700 dark:bg-opacity-50">
                   <LineCharts title="过去一年WPM趋势图" name="WPM" data={wpmRecord} />
                 </div>

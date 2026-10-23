@@ -21,7 +21,7 @@ export const WordPronunciationIcon = React.forwardRef<
       return word.name
     }
   }
-  const { play, stop, isPlaying } = usePronunciationSound(currentWord())
+  const { play, stop, isPlaying, available } = usePronunciationSound(currentWord(), undefined, word.contentType)
 
   const playSound = useCallback(() => {
     stop()
@@ -42,10 +42,13 @@ export const WordPronunciationIcon = React.forwardRef<
 
   return (
     <SoundIcon
-      animated={isPlaying}
+      label={`朗读 ${word.name}`}
+      title={available ? `朗读 ${word.name}` : '当前浏览器不支持句子朗读'}
+      disabled={!available}
       onClick={playSound}
-      className={`cursor-pointer text-gray-600 ${className}`}
-      iconClassName={iconClassName}
+      animated={isPlaying}
+      className={`inline-flex items-center justify-center text-gray-600 ${className}`}
+      iconClassName={`h-6 w-6 max-h-full max-w-full ${iconClassName ?? ''}`}
     />
   )
 })

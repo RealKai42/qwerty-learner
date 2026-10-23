@@ -9,6 +9,8 @@ interface IWordStats {
   exerciseRecord: Activity[]
   wordRecord: Activity[]
   wpmRecord: [string, number][]
+  textCpmRecord: [string, number][]
+  textWpmRecord: [string, number][]
   accuracyRecord: [string, number][]
   wrongTimeRecord: { name: string; value: number }[]
 }
@@ -40,6 +42,8 @@ export function useWordStats(startTimeStamp: number, endTimeStamp: number) {
     exerciseRecord: [],
     wordRecord: [],
     wpmRecord: [],
+    textCpmRecord: [],
+    textWpmRecord: [],
     accuracyRecord: [],
     wrongTimeRecord: [],
   })
@@ -61,7 +65,16 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
   const records: IWordRecord[] = await db.wordRecords.where('timeStamp').between(startTimeStamp, endTimeStamp).toArray()
 
   if (records.length === 0) {
-    return { isEmpty: true, exerciseRecord: [], wordRecord: [], wpmRecord: [], accuracyRecord: [], wrongTimeRecord: [] }
+    return {
+      isEmpty: true,
+      exerciseRecord: [],
+      wordRecord: [],
+      wpmRecord: [],
+      textCpmRecord: [],
+      textWpmRecord: [],
+      accuracyRecord: [],
+      wrongTimeRecord: [],
+    }
   }
 
   let data: {
@@ -71,12 +84,30 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
       totalTime: number //总计用时
       wrongCount: number //错误次数
       wrongKeys: string[] //按错的按键
+      legacyCount: number
+      legacyTime: number
+      textCharacters: number
+      textTime: number
+      correctCharacters: number
     }
   } = {}
 
   const dates = getDatesBetween(startTimeStamp * 1000, endTimeStamp * 1000)
   data = dates
-    .map((date) => ({ [date]: { exerciseTime: 0, words: [], totalTime: 0, wrongCount: 0, wrongKeys: [] } }))
+    .map((date) => ({
+      [date]: {
+        exerciseTime: 0,
+        words: [],
+        totalTime: 0,
+        wrongCount: 0,
+        wrongKeys: [],
+        legacyCount: 0,
+        legacyTime: 0,
+        textCharacters: 0,
+        textTime: 0,
+        correctCharacters: 0,
+      },
+    }))
     .reduce((acc, curr) => ({ ...acc, ...curr }), {})
 
   for (let i = 0; i < records.length; i++) {
@@ -87,6 +118,14 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
     data[date].totalTime = data[date].totalTime + records[i].timing.reduce((acc, curr) => acc + curr, 0)
     data[date].wrongCount = data[date].wrongCount + records[i].wrongCount
     data[date].wrongKeys = [...(data[date].wrongKeys || []), ...(Object.values(records[i].mistakes).flat() || [])]
+    data[date].correctCharacters += records[i].characterCount ?? records[i].word.length
+    if (records[i].statisticsVersion === 2) {
+      data[date].textCharacters += records[i].characterCount ?? records[i].practiceText?.length ?? records[i].word.length
+      data[date].textTime += records[i].timing.reduce((sum, value) => sum + value, 0)
+    } else {
+      data[date].legacyCount += 1
+      data[date].legacyTime += records[i].timing.reduce((sum, value) => sum + value, 0)
+    }
   }
 
   const RecordArray = Object.entries(data)
@@ -104,14 +143,19 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
     level: getLevel(Array.from(new Set(words)).length),
   }))
   // wpm=练习词数（不去重）/总时间
-  const wpmRecord: IWordStats['wpmRecord'] = RecordArray.map<[string, number]>(([date, { words, totalTime }]) => [
+  const wpmRecord: IWordStats['wpmRecord'] = RecordArray.map<[string, number]>(([date, { legacyCount, legacyTime }]) => [
     date,
-    Math.round(words.length / (totalTime / 1000 / 60)),
+    legacyTime > 0 ? Math.round(legacyCount / (legacyTime / 1000 / 60)) : 0,
   ]).filter((d) => d[1])
-  // 正确率=每个单词的长度合计/(每个单词的长度合计+总错误次数)
-  const accuracyRecord: IWordStats['accuracyRecord'] = RecordArray.map<[string, number]>(([date, { words, wrongCount }]) => [
+  const textCpmRecord: IWordStats['textCpmRecord'] = RecordArray.map<[string, number]>(([date, { textCharacters, textTime }]) => [
     date,
-    Math.round((words.join('').length / (words.join('').length + wrongCount)) * 100),
+    textTime > 0 ? Math.round(textCharacters / (textTime / 1000 / 60)) : 0,
+  ]).filter((entry) => entry[1])
+  const textWpmRecord: IWordStats['textWpmRecord'] = textCpmRecord.map(([date, cpm]) => [date, Math.round(cpm / 5)])
+  // 正确率=每个单词的长度合计/(每个单词的长度合计+总错误次数)
+  const accuracyRecord: IWordStats['accuracyRecord'] = RecordArray.map<[string, number]>(([date, { correctCharacters, wrongCount }]) => [
+    date,
+    Math.round((correctCharacters / (correctCharacters + wrongCount)) * 100),
   ]).filter((d) => d[1])
   // 错误次数统计
   const wrongTimeRecord: IWordStats['wrongTimeRecord'] = []
@@ -127,5 +171,5 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
     }
   })
 
-  return { exerciseRecord, wordRecord, wpmRecord, accuracyRecord, wrongTimeRecord }
+  return { exerciseRecord, wordRecord, wpmRecord, textCpmRecord, textWpmRecord, accuracyRecord, wrongTimeRecord }
 }

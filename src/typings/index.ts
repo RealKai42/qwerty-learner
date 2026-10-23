@@ -19,7 +19,10 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   id: 'id',
 }
 
+export type PracticeContentType = 'word' | 'phrase' | 'sentence'
+
 export type Word = {
+  contentType?: PracticeContentType
   name: string
   trans: string[]
   usphone: string

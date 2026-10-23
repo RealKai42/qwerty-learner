@@ -4,7 +4,9 @@ import { ErrorBook } from './pages/ErrorBook'
 import { FriendLinks } from './pages/FriendLinks'
 import MobilePage from './pages/Mobile'
 import TypingPage from './pages/Typing'
+import { useCustomDictionaries } from '@/hooks/useCustomDictionaries'
 import { isOpenDarkModeAtom } from '@/store'
+import { dictionariesErrorAtom, dictionariesReadyAtom } from '@/store/dictionaries'
 import { Analytics } from '@vercel/analytics/react'
 import 'animate.css'
 import { useAtomValue } from 'jotai'
@@ -27,6 +29,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 function Root() {
+  useCustomDictionaries()
+  const dictionariesReady = useAtomValue(dictionariesReadyAtom)
+  const dictionariesError = useAtomValue(dictionariesErrorAtom)
   const darkMode = useAtomValue(isOpenDarkModeAtom)
   useEffect(() => {
     darkMode ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark')
@@ -46,6 +51,18 @@ function Root() {
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
+
+  if (!dictionariesReady) return <Loading />
+  if (dictionariesError) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 dark:text-white" role="alert">
+        <p>无法读取本地词书，请检查浏览器是否允许保存网站数据。</p>
+        <button className="my-btn-primary" onClick={() => window.location.reload()}>
+          重新加载
+        </button>
+      </div>
+    )
+  }
 
   return (
     <React.StrictMode>

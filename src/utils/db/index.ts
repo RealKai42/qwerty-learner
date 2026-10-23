@@ -1,46 +1,23 @@
-import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
+import { db } from './core'
+import { putStudyRecord } from './memo-rollover'
+import type { LetterMistakes } from './record'
 import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
-import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store'
-import type { Table } from 'dexie'
-import Dexie from 'dexie'
+import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
+import type { PracticeContentType } from '@/typings'
+import { hasTextItems } from '@/utils/practice'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext } from 'react'
 
-class RecordDB extends Dexie {
-  wordRecords!: Table<IWordRecord, number>
-  chapterRecords!: Table<IChapterRecord, number>
-  reviewRecords!: Table<IReviewRecord, number>
-
-  revisionDictRecords!: Table<IRevisionDictRecord, number>
-  revisionWordRecords!: Table<IWordRecord, number>
-
-  constructor() {
-    super('RecordDB')
-    this.version(1).stores({
-      wordRecords: '++id,word,timeStamp,dict,chapter,errorCount,[dict+chapter]',
-      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
-    })
-    this.version(2).stores({
-      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
-      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
-    })
-    this.version(3).stores({
-      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
-      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
-      reviewRecords: '++id,dict,createTime,isFinished',
-    })
-  }
-}
-
-export const db = new RecordDB()
+export { db } from './core'
 
 db.wordRecords.mapToClass(WordRecord)
 db.chapterRecords.mapToClass(ChapterRecord)
 db.reviewRecords.mapToClass(ReviewRecord)
 
 export function useSaveChapterRecord() {
+  const dictionaryRevision = useAtomValue(currentDictInfoAtom).wordListRevision
   const currentChapter = useAtomValue(currentChapterAtom)
   const isRevision = useAtomValue(isReviewModeAtom)
   const dictID = useAtomValue(currentDictIdAtom)
@@ -64,9 +41,14 @@ export function useSaveChapterRecord() {
         words.length,
         wordRecordIds ?? [],
       )
-      db.chapterRecords.add(chapterRecord)
+      chapterRecord.dictionaryRevision = dictionaryRevision
+      if (hasTextItems(words)) {
+        chapterRecord.statisticsVersion = 2
+        chapterRecord.characterCount = correctCount
+      }
+      void putStudyRecord(db.chapterRecords, chapterRecord)
     },
-    [currentChapter, dictID, isRevision],
+    [currentChapter, dictID, isRevision, dictionaryRevision],
   )
 
   return saveChapterRecord
@@ -90,11 +72,17 @@ export function useSaveWordRecord() {
       wrongCount,
       letterTimeArray,
       letterMistake,
+      contentType,
+      practiceText,
+      characterCount,
     }: {
       word: string
       wrongCount: number
       letterTimeArray: number[]
       letterMistake: LetterMistakes
+      contentType?: PracticeContentType
+      practiceText?: string
+      characterCount?: number
     }) => {
       const timing = []
       for (let i = 1; i < letterTimeArray.length; i++) {
@@ -103,10 +91,16 @@ export function useSaveWordRecord() {
       }
 
       const wordRecord = new WordRecord(word, dictID, isRevision ? -1 : currentChapter, timing, wrongCount, letterMistake)
+      if (contentType && contentType !== 'word') {
+        wordRecord.contentType = contentType
+        wordRecord.practiceText = practiceText
+        wordRecord.characterCount = characterCount
+        wordRecord.statisticsVersion = 2
+      }
 
       let dbID = -1
       try {
-        dbID = await db.wordRecords.add(wordRecord)
+        dbID = await putStudyRecord(db.wordRecords, wordRecord)
       } catch (e) {
         console.error(e)
       }

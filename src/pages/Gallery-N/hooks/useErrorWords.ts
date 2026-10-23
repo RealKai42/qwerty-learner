@@ -1,7 +1,8 @@
 import type { Dictionary, Word } from '@/typings'
 import { db } from '@/utils/db'
 import type { WordRecord } from '@/utils/db/record'
-import { wordListFetcher } from '@/utils/wordListFetcher'
+import { archiveWordListUrl } from '@/utils/memo'
+import { findDictionaryWord, wordListFetcher } from '@/utils/wordListFetcher'
 import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 
@@ -20,7 +21,7 @@ export type TErrorWordData = {
 }
 
 export default function useErrorWordData(dict: Dictionary, reload: boolean) {
-  const { data: wordList, error, isLoading } = useSWR(dict?.url, wordListFetcher)
+  const { data: wordList, error, isLoading } = useSWR(dict?.url ? archiveWordListUrl(dict.url) : null, wordListFetcher)
 
   const [errorWordData, setErrorData] = useState<TErrorWordData[]>([])
 
@@ -57,7 +58,7 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
             }
           })
 
-          const word = wordList.find((word) => word.name === groupRecord.word)
+          const word = findDictionaryWord(wordList, groupRecord.word)
           if (!word) return
 
           const errorData: TErrorWordData = {
@@ -70,7 +71,9 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
             errorLetters,
             errorChar: Object.entries(errorLetters)
               .sort((a, b) => b[1] - a[1])
-              .map(([index]) => groupRecord.word[Number(index)]),
+              .map(
+                ([index]) => (groupRecord.records.find((record) => record.practiceText)?.practiceText ?? groupRecord.word)[Number(index)],
+              ),
 
             latestErrorTime: groupRecord.records.reduce((acc, cur) => {
               acc = Math.max(acc, cur.timeStamp)
