@@ -67,12 +67,18 @@ const RowDetail: React.FC<RowDetailProps> = ({ currentRowDetail, allRecords }) =
 
   return (
     <div className="absolute inset-0 flex  flex-col items-center  justify-center ">
-      <div className="my-card relative z-10 flex h-[32rem] min-w-[26rem] select-text flex-col items-center justify-around rounded-2xl bg-white px-3 py-10 dark:bg-gray-900">
+      <div className="my-card relative z-10 flex max-h-[90vh] min-h-[32rem] w-[90vw] max-w-4xl select-text flex-col items-center justify-around overflow-y-auto rounded-2xl bg-white px-6 py-10 dark:bg-gray-900">
         <IconX className="absolute right-3 top-3  h-6 w-6 cursor-pointer text-gray-400" onClick={onClose} />
-        <div className="flex flex-col items-center justify-start">
-          <div>
+        <div className="flex w-full min-w-0 flex-col items-center justify-start">
+          <div className="max-w-full whitespace-pre-wrap break-words text-center">
             {currentRowDetail.word.split('').map((t, index) => (
-              <Letter key={`${index}-${t}`} letter={t} visible state="normal" />
+              <Letter
+                key={`${index}-${t}`}
+                letter={t}
+                visible
+                state="normal"
+                maxFontSize={currentRowDetail.word.includes(' ') ? 32 : Infinity}
+              />
             ))}
           </div>
           <div className="relative flex h-8 items-center">

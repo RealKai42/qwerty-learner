@@ -3,6 +3,7 @@ import type { WordWithIndex } from '@/typings'
 import type { LetterMistakes } from '@/utils/db/record'
 import '@/utils/db/review-record'
 import { mergeLetterMistake } from '@/utils/db/utils'
+import { hasTextItems } from '@/utils/practice'
 import shuffle from '@/utils/shuffle'
 import { createContext } from 'react'
 
@@ -20,6 +21,7 @@ export const initialState: TypingState = {
     time: 0,
     accuracy: 0,
     wpm: 0,
+    cpm: 0,
   },
   isTyping: false,
   isFinished: false,
@@ -198,7 +200,10 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
 
       state.timerData.time = newTime
       state.timerData.accuracy = Math.round((state.chapterData.correctCount / inputSum) * 100)
-      state.timerData.wpm = Math.round((state.chapterData.wordCount / newTime) * 60)
+      state.timerData.cpm = Math.round((state.chapterData.correctCount / newTime) * 60)
+      state.timerData.wpm = hasTextItems(state.chapterData.words)
+        ? Math.round((state.chapterData.correctCount / 5 / newTime) * 60)
+        : Math.round((state.chapterData.wordCount / newTime) * 60)
       break
     }
     case TypingStateActionType.ADD_WORD_RECORD_ID: {
@@ -220,6 +225,14 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     default: {
       return state
     }
+  }
+  if (hasTextItems(state.chapterData.words)) {
+    const elapsed = Math.max(state.timerData.time, 1)
+    if (state.isFinished) state.timerData.time = elapsed
+    const attempts = state.chapterData.correctCount + state.chapterData.wrongCount
+    state.timerData.accuracy = attempts ? Math.round((state.chapterData.correctCount / attempts) * 100) : 0
+    state.timerData.cpm = Math.round((state.chapterData.correctCount / elapsed) * 60)
+    state.timerData.wpm = Math.round((state.chapterData.correctCount / 5 / elapsed) * 60)
   }
 }
 

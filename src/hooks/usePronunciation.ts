@@ -1,8 +1,10 @@
+import useSpeech from '@/hooks/useSpeech'
 import { pronunciationConfigAtom } from '@/store'
-import type { PronunciationType } from '@/typings'
+import type { PracticeContentType, PronunciationType } from '@/typings'
 import { addHowlListener } from '@/utils'
 import { romajiToHiragana } from '@/utils/kana'
 import noop from '@/utils/noop'
+import { practiceContentType } from '@/utils/practice'
 import type { Howl } from 'howler'
 import { useAtomValue } from 'jotai'
 import { useEffect, useMemo, useState } from 'react'
@@ -11,41 +13,60 @@ import type { HookOptions } from 'use-sound/dist/types'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
 export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
+  const encoded = encodeURIComponent(word)
   switch (pronunciation) {
     case 'uk':
-      return `${pronunciationApi}${word}&type=1`
+      return `${pronunciationApi}${encoded}&type=1`
     case 'us':
-      return `${pronunciationApi}${word}&type=2`
+      return `${pronunciationApi}${encoded}&type=2`
     case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
+      return `${pronunciationApi}${encodeURIComponent(romajiToHiragana(word))}&le=jap`
     case 'zh':
-      return `${pronunciationApi}${word}&le=zh`
+      return `${pronunciationApi}${encoded}&le=zh`
     case 'ja':
-      return `${pronunciationApi}${word}&le=jap`
+      return `${pronunciationApi}${encoded}&le=jap`
     case 'de':
-      return `${pronunciationApi}${word}&le=de`
+      return `${pronunciationApi}${encoded}&le=de`
     case 'hapin':
     case 'kk':
-      return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
+      return `${pronunciationApi}${encoded}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
     case 'id':
-      return `${pronunciationApi}${word}&le=id`
+      return `${pronunciationApi}${encoded}&le=id`
     default:
       return ''
   }
 }
 
-export default function usePronunciationSound(word: string, isLoop?: boolean) {
+export default function usePronunciationSound(word: string, isLoop?: boolean, contentType?: PracticeContentType) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
   const [isPlaying, setIsPlaying] = useState(false)
+  const useSentenceSpeech =
+    ['us', 'uk'].includes(pronunciationConfig.type) && practiceContentType({ name: word, contentType }) === 'sentence'
+  const speechOptions = useMemo(
+    () => ({
+      lang: pronunciationConfig.type === 'uk' ? 'en-GB' : 'en-US',
+      volume: pronunciationConfig.volume,
+      rate: pronunciationConfig.rate,
+      loop,
+    }),
+    [pronunciationConfig.type, pronunciationConfig.volume, pronunciationConfig.rate, loop],
+  )
+  const speech = useSpeech(useSentenceSpeech ? word : '', speechOptions)
 
-  const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
-    html5: true,
-    format: ['mp3'],
-    loop,
-    volume: pronunciationConfig.volume,
-    rate: pronunciationConfig.rate,
-  } as HookOptions)
+  const [play, { stop, sound }] = useSound(
+    useSentenceSpeech
+      ? 'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA='
+      : generateWordSoundSrc(word, pronunciationConfig.type),
+    {
+      preload: !useSentenceSpeech,
+      html5: true,
+      format: ['mp3'],
+      loop,
+      volume: pronunciationConfig.volume,
+      rate: pronunciationConfig.rate,
+    } as HookOptions,
+  )
 
   useEffect(() => {
     if (!sound) return
@@ -69,14 +90,17 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     }
   }, [sound])
 
-  return { play, stop, isPlaying }
+  return useSentenceSpeech
+    ? { play: speech.speak, stop: speech.cancel, isPlaying: speech.speaking, available: speech.available }
+    : { play, stop, isPlaying, available: true }
 }
 
-export function usePrefetchPronunciationSound(word: string | undefined) {
+export function usePrefetchPronunciationSound(word: string | undefined, contentType?: PracticeContentType) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
 
   useEffect(() => {
     if (!word) return
+    if (['us', 'uk'].includes(pronunciationConfig.type) && practiceContentType({ name: word, contentType }) === 'sentence') return
 
     const soundUrl = generateWordSoundSrc(word, pronunciationConfig.type)
     if (soundUrl === '') return
@@ -99,5 +123,5 @@ export function usePrefetchPronunciationSound(word: string | undefined) {
         head.removeChild(audio)
       }
     }
-  }, [pronunciationConfig.type, word])
+  }, [pronunciationConfig.type, word, contentType])
 }

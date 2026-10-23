@@ -1,4 +1,6 @@
 import memoApi from './server/memo-api.cjs'
+import memoDictionaryPlugin from './server/memo-dictionary-plugin.cjs'
+import runtimeConfig from './server/runtime-config.cjs'
 import react from '@vitejs/plugin-react'
 import { promises as fs } from 'fs'
 import { getLastCommit } from 'git-last-commit'
@@ -13,18 +15,22 @@ import type { PluginOption } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig(async ({ mode }) => {
   const memoOptions = { root: process.cwd(), env: { ...loadEnv(mode, process.cwd(), ''), ...process.env } }
+  const backendEnabled = memoOptions.env.QWERTY_BACKEND !== '0'
   const latestCommitHash = await new Promise<string>((resolve) => {
     return getLastCommit((err, commit) => resolve(err ? 'unknown' : commit.shortHash))
   })
   return {
     plugins: [
+      memoDictionaryPlugin(process.cwd()),
       {
         name: 'memo-api',
         configureServer(server) {
-          server.middlewares.use(memoApi.createMemoMiddleware(memoOptions))
+          server.middlewares.use(runtimeConfig.createRuntimeConfigMiddleware(backendEnabled))
+          server.middlewares.use(memoApi.createMemoMiddleware({ ...memoOptions, enabled: backendEnabled }))
         },
         configurePreviewServer(server) {
-          server.middlewares.use(memoApi.createMemoMiddleware(memoOptions))
+          server.middlewares.use(runtimeConfig.createRuntimeConfigMiddleware(backendEnabled))
+          server.middlewares.use(memoApi.createMemoMiddleware({ ...memoOptions, enabled: backendEnabled }))
         },
       },
       react({ babel: { plugins: [jotaiDebugLabel, jotaiReactRefresh] } }),

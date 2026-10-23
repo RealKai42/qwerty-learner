@@ -58,13 +58,16 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
+    "dev": "node scripts/vite.cjs",
+    "start": "node scripts/vite.cjs",
+    "preview": "node scripts/vite.cjs preview",
+    "serve": "node scripts/serve-memo.cjs",
     "start:memo": "node scripts/serve-memo.cjs",
     "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",
     "test:e2e": "playwright test",
     "test:memo": "node --test tests/memo-api.test.cjs",
+    "test:runtime": "node --test tests/runtime-server.test.cjs",
     "test:memo:e2e": "playwright test --config playwright.memo.config.ts",
     "lint": "eslint .",
     "prettier": "prettier --write .",

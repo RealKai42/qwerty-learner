@@ -1,6 +1,7 @@
 import { CHAPTER_LENGTH } from '@/constants'
 import type { Dictionary, Word } from '@/typings'
 import type { CustomDictionary } from '@/typings/memo'
+import type { StoredDictionary } from '@/typings/personal'
 import { db } from '@/utils/db/core'
 import { memoStudyDate } from '@/utils/memo-study-day'
 import type { Table } from 'dexie'
@@ -11,7 +12,7 @@ export function isMemoDictionary(dictionary: Pick<Dictionary, 'id' | 'source'>):
   return dictionary.source === 'maimemo' || dictionary.id.startsWith('maimemo-')
 }
 
-export function isExpiredMemoDictionary(dictionary: CustomDictionary, today = memoStudyDate()): boolean {
+export function isExpiredMemoDictionary(dictionary: StoredDictionary, today = memoStudyDate()): dictionary is CustomDictionary {
   return isMemoDictionary(dictionary) && dictionary.id !== MEMO_HISTORY_ID && dictionary.studyDate !== today
 }
 
@@ -27,7 +28,7 @@ export async function putStudyRecord<T extends { dict: string; originalDict?: st
   // Serialize late practice writes with imports that archive the original daily book.
   return db.transaction('rw', db.customDictionaries, table, async () => {
     const history = await db.customDictionaries.get(MEMO_HISTORY_ID)
-    if (history?.historySources?.[record.dict]) {
+    if (history?.source === 'maimemo' && history.historySources?.[record.dict]) {
       record.originalDict ??= record.dict
       record.dict = MEMO_HISTORY_ID
     }
@@ -58,9 +59,11 @@ export async function rolloverMemoDictionaries(now?: Date): Promise<void> {
   await db.transaction('rw', db.customDictionaries, db.wordRecords, db.chapterRecords, db.reviewRecords, async () => {
     const today = memoStudyDate(now ?? new Date())
     const dictionaries = await db.customDictionaries.orderBy('studyDate').toArray()
-    const expired = dictionaries.filter((dictionary) => isExpiredMemoDictionary(dictionary, today))
+    const expired = dictionaries.filter((dictionary): dictionary is CustomDictionary => isExpiredMemoDictionary(dictionary, today))
     if (!expired.length) return
-    const previous = dictionaries.find((dictionary) => dictionary.id === MEMO_HISTORY_ID)
+    const previous = dictionaries.find(
+      (dictionary): dictionary is CustomDictionary => dictionary.source === 'maimemo' && dictionary.id === MEMO_HISTORY_ID,
+    )
     const words = mergeMemoWords([
       ...(previous?.words ?? []),
       ...(previous?.wordArchive ?? []),

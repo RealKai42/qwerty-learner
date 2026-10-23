@@ -1,6 +1,6 @@
 import { dictionaries, idDictionaryMap } from '@/resources/dictionary'
 import type { Dictionary } from '@/typings'
-import type { CustomDictionary } from '@/typings/memo'
+import type { StoredDictionary } from '@/typings/personal'
 import { atom } from 'jotai'
 
 export const customDictionariesAtom = atom<Dictionary[]>([])
@@ -18,10 +18,10 @@ export const dictionaryMapAtom = atom((get) => {
   return map
 })
 
-export function dictionaryMetadata(record: CustomDictionary): Dictionary {
+export function dictionaryMetadata(record: StoredDictionary): Dictionary {
   return {
     source: record.source,
-    aliases: Object.keys(record.historySources ?? {}),
+    aliases: record.source === 'maimemo' ? Object.keys(record.historySources ?? {}) : [],
     id: record.id,
     name: record.source === 'maimemo' && record.id !== 'maimemo-history' ? `今日词汇 · ${record.studyDate}` : record.name,
     description: record.description,

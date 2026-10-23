@@ -3,6 +3,7 @@ import DictRequest from './DictRequest'
 import DictionaryComponent from './DictionaryWithoutCover'
 import { LanguageTabSwitcher } from './LanguageTabSwitcher'
 import MemoImport from './MemoImport'
+import PracticeImport from './PracticeImport'
 import Layout from '@/components/Layout'
 import Setting from '@/pages/Typing/components/Setting'
 import { currentDictInfoAtom } from '@/store'
@@ -20,7 +21,7 @@ import { useImmer } from 'use-immer'
 import IconInfo from '~icons/ic/outline-info'
 import IconX from '~icons/tabler/x'
 
-export type GalleryTabType = LanguageCategoryType | 'maimemo'
+export type GalleryTabType = LanguageCategoryType | 'maimemo' | 'custom'
 export type GalleryState = {
   currentLanguageTab: GalleryTabType
 }
@@ -38,15 +39,20 @@ export default function GalleryPage() {
   const [galleryState, setGalleryState] = useImmer<GalleryState>(initialGalleryState)
   const [isImportOpen, setIsImportOpen] = useState(false)
   const [isMemoSettingsOpen, setIsMemoSettingsOpen] = useState(false)
+  const [isPracticeImportOpen, setIsPracticeImportOpen] = useState(false)
   const navigate = useNavigate()
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const dictionaries = useAtomValue(dictionariesAtom)
   const isMemoTab = galleryState.currentLanguageTab === 'maimemo'
-  const memoDictionaries = useMemo(() => dictionaries.filter(isMemoDictionary), [dictionaries])
+  const isCustomTab = galleryState.currentLanguageTab === 'custom'
+  const personalDictionaries = useMemo(
+    () => dictionaries.filter((dictionary) => (isMemoTab ? isMemoDictionary(dictionary) : dictionary.source === 'custom')),
+    [dictionaries, isMemoTab],
+  )
 
   const { groupedByCategoryAndTag } = useMemo(() => {
     const currentLanguageCategoryDicts = dictionaries.filter(
-      (dict) => !isMemoDictionary(dict) && dict.languageCategory === galleryState.currentLanguageTab,
+      (dict) => !isMemoDictionary(dict) && dict.source !== 'custom' && dict.languageCategory === galleryState.currentLanguageTab,
     )
     const groupedByCategory = Object.entries(groupBy(currentLanguageCategoryDicts, (dict) => dict.category))
     const groupedByCategoryAndTag = groupedByCategory.map(
@@ -62,12 +68,16 @@ export default function GalleryPage() {
     navigate('/')
   }, [navigate])
 
-  useHotkeys('enter,esc', onBack, { preventDefault: true, enabled: !isImportOpen && !isMemoSettingsOpen })
+  useHotkeys('enter,esc', onBack, { preventDefault: true, enabled: !isImportOpen && !isMemoSettingsOpen && !isPracticeImportOpen })
 
   useEffect(() => {
     if (currentDictInfo) {
       setGalleryState((state) => {
-        state.currentLanguageTab = isMemoDictionary(currentDictInfo) ? 'maimemo' : currentDictInfo.languageCategory
+        state.currentLanguageTab = isMemoDictionary(currentDictInfo)
+          ? 'maimemo'
+          : currentDictInfo.source === 'custom'
+          ? 'custom'
+          : currentDictInfo.languageCategory
       })
     }
   }, [currentDictInfo, setGalleryState])
@@ -88,22 +98,25 @@ export default function GalleryPage() {
                       <MemoImport onOpenChange={setIsImportOpen} />
                     </>
                   )}
+                  {isCustomTab && <PracticeImport onOpenChange={setIsPracticeImportOpen} />}
                   <DictRequest />
                 </div>
               </div>
               <ScrollArea.Root className="flex-1 overflow-y-auto">
                 <ScrollArea.Viewport className="h-full w-full ">
                   <div className="mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
-                    {isMemoTab ? (
-                      memoDictionaries.length ? (
+                    {isMemoTab || isCustomTab ? (
+                      personalDictionaries.length ? (
                         <div className="mt-4 grid gap-x-5 gap-y-10 px-1 pb-4 sm:grid-cols-1 md:grid-cols-2 dic3:grid-cols-3">
-                          {memoDictionaries.map((dictionary) => (
+                          {personalDictionaries.map((dictionary) => (
                             <DictionaryComponent key={dictionary.id} dictionary={dictionary} />
                           ))}
                         </div>
                       ) : (
                         <p className="py-10 text-sm text-gray-500">
-                          尚无墨墨词书。请先在墨墨设置中配置 Token，再导入今日词汇；导入时会将旧词书合并到“往日词汇”。
+                          {isMemoTab
+                            ? '尚无墨墨词书。请先在墨墨设置中配置 Token，再导入今日词汇；导入时会将旧词书合并到“往日词汇”。'
+                            : '尚无自定义词书。点击“导入短语/句子”，粘贴英文或选择文件即可创建。'}
                         </p>
                       )
                     ) : (

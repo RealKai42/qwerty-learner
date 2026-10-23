@@ -1,5 +1,5 @@
 import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord } from './record'
-import type { CustomDictionary } from '@/typings/memo'
+import type { StoredDictionary } from '@/typings/personal'
 import Dexie from 'dexie'
 import type { Table } from 'dexie'
 
@@ -9,7 +9,7 @@ class RecordDB extends Dexie {
   reviewRecords!: Table<IReviewRecord, number>
   revisionDictRecords!: Table<IRevisionDictRecord, number>
   revisionWordRecords!: Table<IWordRecord, number>
-  customDictionaries!: Table<CustomDictionary, string>
+  customDictionaries!: Table<StoredDictionary, string>
 
   constructor() {
     super('RecordDB')

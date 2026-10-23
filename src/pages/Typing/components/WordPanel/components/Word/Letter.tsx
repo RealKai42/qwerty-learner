@@ -22,16 +22,19 @@ export type LetterProps = {
   letter: string
   state?: LetterState
   visible?: boolean
+  active?: boolean
+  maxFontSize?: number
 }
 
-const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible = true }) => {
+const Letter: React.FC<LetterProps> = ({ letter, state = 'normal', visible = true, active = false, maxFontSize = Infinity }) => {
   const fontSizeConfig = useAtomValue(fontSizeConfigAtom)
   return (
     <span
+      data-active={active || undefined}
       className={`m-0 p-0 font-mono font-normal ${
         stateClassNameMap[(letter === EXPLICIT_SPACE) as unknown as string][state]
-      } pr-0.8 duration-0 dark:text-opacity-80`}
-      style={{ fontSize: fontSizeConfig.foreignFont.toString() + 'px' }}
+      } pr-0.8 duration-0 dark:text-opacity-80 ${active ? 'border-b-2 border-indigo-400' : ''}`}
+      style={{ fontSize: Math.min(fontSizeConfig.foreignFont, maxFontSize).toString() + 'px' }}
     >
       {visible ? letter : '_'}
     </span>

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import type { MemoSettings } from '@/typings/memo'
 import { memoSettingsRequest } from '@/utils/memo'
+import { backendEnabled } from '@/utils/runtime-config'
 import { useEffect, useState } from 'react'
 
 export default function MemoSetting() {
@@ -84,7 +85,9 @@ export default function MemoSetting() {
           className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-900"
         />
         <p className="text-xs leading-relaxed text-gray-500">
-          在墨墨 App 的开放 API 页面获取 Token。配置保存在当前个人服务，刷新后仍然有效；学习数据备份不包含 Token。
+          在墨墨 App 的开放 API 页面获取 Token。
+          {backendEnabled ? '配置保存在当前个人服务，刷新后仍然有效；' : 'Token 仅保存在当前浏览器，刷新后仍然有效；'}
+          学习数据备份不包含 Token。
         </p>
         <div className="flex gap-3">
           <Button type="submit" disabled={loading || saving || !token.trim()}>

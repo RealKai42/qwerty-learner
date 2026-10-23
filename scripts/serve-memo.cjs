@@ -2,16 +2,21 @@ const fs = require('node:fs')
 const http = require('node:http')
 const path = require('node:path')
 const { authorizeMemoRequest, createMemoMiddleware } = require('../server/memo-api.cjs')
+const { createRuntimeConfigMiddleware, parseBackendArgs } = require('../server/runtime-config.cjs')
+
+const { backendEnabled, args } = parseBackendArgs(process.argv.slice(2))
+if (args.length) throw new Error(`不支持的参数：${args.join(' ')}。可使用 --backend 或 --no-backend。`)
 
 const root = path.resolve(__dirname, '..')
 const build = path.join(root, 'build')
 const host = process.env.MEMO_HOST || '127.0.0.1'
 const port = Number(process.env.PORT || 5173)
-if (!['127.0.0.1', 'localhost', '::1'].includes(host) && !process.env.MEMO_ACCESS_PASSWORD) {
+if (backendEnabled && !['127.0.0.1', 'localhost', '::1'].includes(host) && !process.env.MEMO_ACCESS_PASSWORD) {
   throw new Error('远程访问需要配置 MEMO_ACCESS_PASSWORD；本机使用请保留默认 MEMO_HOST。')
 }
 if (!fs.existsSync(path.join(build, 'index.html'))) throw new Error('请先运行 npm run build。')
-const middleware = createMemoMiddleware({ root })
+const middleware = createMemoMiddleware({ root, enabled: backendEnabled })
+const runtimeConfig = createRuntimeConfigMiddleware(backendEnabled)
 const contentTypes = {
   '.html': 'text/html',
   '.js': 'text/javascript',
@@ -24,10 +29,10 @@ const contentTypes = {
   '.woff2': 'font/woff2',
 }
 
-http
-  .createServer((request, response) => {
-    try {
-      if (!authorizeMemoRequest(request, response)) return
+const server = http.createServer((request, response) => {
+  try {
+    if (backendEnabled && !authorizeMemoRequest(request, response)) return
+    runtimeConfig(request, response, () =>
       middleware(request, response, () => {
         if (!['GET', 'HEAD'].includes(request.method)) return response.writeHead(405).end()
         const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname)
@@ -44,9 +49,12 @@ http
         const stream = fs.createReadStream(filename)
         stream.on('error', () => response.destroy())
         stream.pipe(response)
-      })
-    } catch {
-      response.writeHead(400).end('Bad request')
-    }
-  })
-  .listen(port, host, () => console.log(`Personal vocabulary: http://${host}:${port}`))
+      }),
+    )
+  } catch {
+    response.writeHead(400).end('Bad request')
+  }
+})
+server.listen(port, host, () =>
+  console.log(`Qwerty Learner (${backendEnabled ? 'backend' : 'frontend only'}): http://${host}:${server.address().port}`),
+)

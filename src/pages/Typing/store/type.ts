@@ -30,6 +30,7 @@ export type TimerData = {
   time: number
   accuracy: number
   wpm: number
+  cpm: number
 }
 
 export type WrongWordData = {

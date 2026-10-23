@@ -8,7 +8,7 @@ export async function wordListFetcher(url: string): Promise<Word[]> {
     let dictionary = await db.customDictionaries.get(parsed.hostname)
     if (!dictionary) {
       const history = await db.customDictionaries.get(MEMO_HISTORY_ID)
-      if (history?.historySources?.[parsed.hostname]) dictionary = history
+      if (history?.source === 'maimemo' && history.historySources?.[parsed.hostname]) dictionary = history
     }
     if (!dictionary) throw new Error('个人词书不存在，请重新导入。')
     return parsed.searchParams.get('archive') === '1' ? dictionary.wordArchive : dictionary.words

@@ -4,12 +4,14 @@ import { memoResponseOptions } from '@/typings/memo'
 import { db } from '@/utils/db/core'
 import { rolloverMemoDictionaries, wordKey } from '@/utils/db/memo-rollover'
 import { memoStudyDate } from '@/utils/memo-study-day'
+import { backendEnabled } from '@/utils/runtime-config'
 
 export function memoResponseType(response: string): MemoResponseType {
   return memoResponseOptions.find((option) => option.value === response)?.value ?? 'OTHER'
 }
 
 export async function fetchMemoToday(): Promise<MemoToday> {
+  if (!backendEnabled) return (await import('./memo-browser')).fetchMemoBrowserToday()
   let response: Response
   try {
     response = await fetch('/api/memo/today', { method: 'POST', headers: { Accept: 'application/json' } })
@@ -36,7 +38,8 @@ export async function saveMemoDictionary(snapshot: MemoToday, types: MemoRespons
     const now = new Date()
     if (snapshot.date !== memoStudyDate(now)) throw new Error('已跨过北京时间 04:00，请重新读取今日词汇。')
     await rolloverMemoDictionaries(now)
-    const previous = await db.customDictionaries.get(id)
+    const stored = await db.customDictionaries.get(id)
+    const previous = stored?.source === 'maimemo' ? stored : undefined
     const updatedAt = Math.max(Date.now(), (previous?.updatedAt ?? 0) + 1)
     const archive = new Map((previous?.wordArchive ?? []).map((word) => [wordKey(word.name), word]))
     words.forEach((word) => archive.set(wordKey(word.name), word))
@@ -70,6 +73,7 @@ export async function saveMemoDictionary(snapshot: MemoToday, types: MemoRespons
 }
 
 export async function memoSettingsRequest(method = 'GET', token?: string): Promise<MemoSettings> {
+  if (!backendEnabled) return (await import('./memo-browser')).browserMemoSettings(method, token)
   let response: Response
   try {
     response = await fetch('/api/memo/settings', {

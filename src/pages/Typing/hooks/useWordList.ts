@@ -1,6 +1,7 @@
 import { CHAPTER_LENGTH } from '@/constants'
 import { currentChapterAtom, currentDictInfoAtom, reviewModeInfoAtom } from '@/store'
 import type { Word, WordWithIndex } from '@/typings/index'
+import { practiceContentType } from '@/utils/practice'
 import { wordListFetcher } from '@/utils/wordListFetcher'
 import { useAtom, useAtomValue } from 'jotai'
 import { useMemo } from 'react'
@@ -52,11 +53,12 @@ export function useWordList(): UseWordListResult {
       }
       return {
         ...word,
+        contentType: practiceContentType(word, currentDictInfo.language),
         index,
         trans,
       }
     })
-  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter])
+  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter, currentDictInfo.language])
 
   return { words, isLoading, error }
 }

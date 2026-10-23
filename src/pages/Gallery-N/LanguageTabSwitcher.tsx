@@ -20,6 +20,7 @@ const options: LanguageTabOption[] = [
   { id: 'en', name: '英语', flag: enFlag },
   { id: 'ja', name: '日语', flag: jpFlag },
   { id: 'maimemo', name: '墨墨每日词汇' },
+  { id: 'custom', name: '自定义词书' },
   { id: 'de', name: '德语', flag: deFlag },
   { id: 'kk', name: '哈萨克语', flag: kkFlag },
   { id: 'id', name: '印尼语', flag: idFlag },

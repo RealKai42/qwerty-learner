@@ -15,7 +15,7 @@ export type DictionaryResource = {
 }
 
 export type Dictionary = {
-  source?: 'maimemo'
+  source?: 'maimemo' | 'custom'
   aliases?: string[]
   // Ignore obsolete chapter statistics when an imported word list changes.
   wordListRevision?: number

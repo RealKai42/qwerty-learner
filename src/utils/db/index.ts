@@ -5,6 +5,8 @@ import { ChapterRecord, ReviewRecord, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
 import { currentChapterAtom, currentDictIdAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
+import type { PracticeContentType } from '@/typings'
+import { hasTextItems } from '@/utils/practice'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext } from 'react'
 
@@ -40,6 +42,10 @@ export function useSaveChapterRecord() {
         wordRecordIds ?? [],
       )
       chapterRecord.dictionaryRevision = dictionaryRevision
+      if (hasTextItems(words)) {
+        chapterRecord.statisticsVersion = 2
+        chapterRecord.characterCount = correctCount
+      }
       void putStudyRecord(db.chapterRecords, chapterRecord)
     },
     [currentChapter, dictID, isRevision, dictionaryRevision],
@@ -66,11 +72,17 @@ export function useSaveWordRecord() {
       wrongCount,
       letterTimeArray,
       letterMistake,
+      contentType,
+      practiceText,
+      characterCount,
     }: {
       word: string
       wrongCount: number
       letterTimeArray: number[]
       letterMistake: LetterMistakes
+      contentType?: PracticeContentType
+      practiceText?: string
+      characterCount?: number
     }) => {
       const timing = []
       for (let i = 1; i < letterTimeArray.length; i++) {
@@ -79,6 +91,12 @@ export function useSaveWordRecord() {
       }
 
       const wordRecord = new WordRecord(word, dictID, isRevision ? -1 : currentChapter, timing, wrongCount, letterMistake)
+      if (contentType && contentType !== 'word') {
+        wordRecord.contentType = contentType
+        wordRecord.practiceText = practiceText
+        wordRecord.characterCount = characterCount
+        wordRecord.statisticsVersion = 2
+      }
 
       let dbID = -1
       try {

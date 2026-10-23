@@ -71,7 +71,9 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
             errorLetters,
             errorChar: Object.entries(errorLetters)
               .sort((a, b) => b[1] - a[1])
-              .map(([index]) => groupRecord.word[Number(index)]),
+              .map(
+                ([index]) => (groupRecord.records.find((record) => record.practiceText)?.practiceText ?? groupRecord.word)[Number(index)],
+              ),
 
             latestErrorTime: groupRecord.records.reduce((acc, cur) => {
               acc = Math.max(acc, cur.timeStamp)

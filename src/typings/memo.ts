@@ -32,4 +32,4 @@ export type CustomDictionary = Dictionary & {
   >
 }
 
-export type MemoSettings = { configured: boolean; source: 'saved' | 'environment' | 'none' }
+export type MemoSettings = { configured: boolean; source: 'saved' | 'environment' | 'browser' | 'none' }

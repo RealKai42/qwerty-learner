@@ -71,7 +71,9 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
       <div className="text relative flex h-40 flex-col gap-2">
         <h3 className="text-2xl font-semibold">{dict.name}</h3>
         <p className="mt-1">{dict.chapterCount} 章节</p>
-        <p>共 {dict.length} 词</p>
+        <p>
+          共 {dict.length} {dict.source === 'custom' ? '条' : '词'}
+        </p>
         <p>{dict.description}</p>
         <div className="absolute bottom-5 right-4">
           <ToggleGroup type="single" value={curTab} onValueChange={handleTabChange}>

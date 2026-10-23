@@ -1,10 +1,9 @@
 const { timingSafeEqual } = require('node:crypto')
-const fs = require('node:fs/promises')
 const http = require('node:http')
 const https = require('node:https')
-const path = require('node:path')
 const { MemoError } = require('./memo-error.cjs')
 const { createMemoSettingsStore } = require('./memo-settings.cjs')
+const { loadWordIndex } = require('./memo-word-index.cjs')
 
 const API_BASE = 'https://open.maimemo.com/open/api/v1'
 const API_PATH = '/api/memo/today'
@@ -57,28 +56,6 @@ function requestMemo(endpoint, token, body) {
     request.on('error', () => reject(new MemoError('连接墨墨失败，请检查网络后重试。')))
     request.end(JSON.stringify(body))
   })
-}
-
-async function loadWordIndex(root) {
-  const directory = path.join(root, 'public/dicts')
-  const preferred = ['CET4_T.json', 'CET6_T.json', 'IELTS_T.json', 'TOEFL_T.json']
-  const files = (await fs.readdir(directory)).filter((name) => name.endsWith('.json')).sort()
-  const ordered = [...preferred.filter((name) => files.includes(name)), ...files.filter((name) => !preferred.includes(name))]
-  const index = new Map()
-  for (const filename of ordered) {
-    const entries = JSON.parse(await fs.readFile(path.join(directory, filename), 'utf8'))
-    if (!Array.isArray(entries)) continue
-    for (const entry of entries) {
-      if (!entry || typeof entry.name !== 'string' || !/^[a-z]/i.test(entry.name)) continue
-      const key = entry.name.trim().toLowerCase()
-      const existing = index.get(key) || { trans: [], usphone: '', ukphone: '' }
-      if (!existing.trans.length && Array.isArray(entry.trans)) existing.trans = entry.trans.filter((item) => typeof item === 'string')
-      if (!existing.usphone && typeof entry.usphone === 'string') existing.usphone = entry.usphone
-      if (!existing.ukphone && typeof entry.ukphone === 'string') existing.ukphone = entry.ukphone
-      index.set(key, existing)
-    }
-  }
-  return index
 }
 
 function createTodayLoader({
@@ -174,8 +151,9 @@ function authorizeMemoRequest(request, response, env = process.env) {
 }
 
 function createMemoMiddleware(options) {
-  const settings = options.settings || createMemoSettingsStore({ root: options.root || process.cwd(), env: options.env })
-  const loadToday = options.loadToday || createTodayLoader({ ...options, settings })
+  const enabled = options.enabled !== false
+  const settings = enabled ? options.settings || createMemoSettingsStore({ root: options.root || process.cwd(), env: options.env }) : null
+  const loadToday = enabled ? options.loadToday || createTodayLoader({ ...options, settings }) : null
   return async function memoMiddleware(request, response, next) {
     // Vite serves project files during development; never expose the private configuration.
     let decodedPath
@@ -194,6 +172,10 @@ function createMemoMiddleware(options) {
     response.setHeader('Cache-Control', 'no-store')
     response.setHeader('Content-Type', 'application/json; charset=utf-8')
     response.setHeader('X-Content-Type-Options', 'nosniff')
+    if (!enabled) {
+      response.writeHead(404).end(JSON.stringify({ error: '墨墨后端未启用。' }))
+      return
+    }
     try {
       if (!authorizeMemoRequest(request, response, options.env)) return
       if (pathname === SETTINGS_PATH) {

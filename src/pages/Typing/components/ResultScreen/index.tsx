@@ -230,6 +230,11 @@ const ResultScreen = () => {
                 <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={state.timerData.accuracy} />
                 <RemarkRing remark={timeString} caption="章节耗时" />
                 <RemarkRing remark={state.timerData.wpm + ''} caption="WPM" />
+                {state.chapterData.words.some((word) => word.contentType === 'phrase' || word.contentType === 'sentence') && (
+                  <div className="text-center text-sm text-gray-500">
+                    {state.timerData.cpm} CPM · {state.chapterData.wordCount} 条
+                  </div>
+                )}
               </div>
               <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
                 <div className="customized-scrollbar z-20 ml-8 mr-1 flex h-80 flex-row flex-wrap content-start gap-4 overflow-y-auto overflow-x-hidden pr-7 pt-9">
