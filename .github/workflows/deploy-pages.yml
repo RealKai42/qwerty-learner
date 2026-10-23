@@ -31,5 +31,5 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
         with:
-          source-repo: git@github.com:Kaiyiwing/qwerty-learner.git
+          source-repo: git@github.com:RealKai42/qwerty-learner.git
           destination-repo: git@gitee.com:KaiyiWing/qwerty-learner.git

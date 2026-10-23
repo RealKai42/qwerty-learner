@@ -29,29 +29,26 @@ export default function DictRequest() {
       {showPanel && (
         <InfoPanel
           openState={showPanel}
-          title="寻找更多词典？"
+          title="想要添加更多词典？"
           icon={IconBook2}
           buttonClassName="bg-indigo-500 hover:bg-indigo-400"
           iconClassName="text-indigo-500 bg-indigo-100 dark:text-indigo-300 dark:bg-indigo-500"
           onClose={onClosePanel}
         >
-          <div className="space-y-5">
-            <div className="rounded-lg bg-white p-4 shadow-sm dark:bg-gray-800">
-              <h4 className="mb-3 font-semibold text-gray-900 dark:text-white">👨‍💻 具备编程技能？</h4>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                您可以参考我们的
-                <a
-                  href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/toBuildDict.md"
-                  className="mx-1 font-medium text-blue-500 hover:text-blue-600"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  词典贡献指南
-                </a>
-                ，为开源项目贡献新的词典内容。
-              </p>
-            </div>
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            如果您具备一定的编程技能，欢迎参考我们的
+            <a
+              href="https://github.com/RealKai42/qwerty-learner/blob/master/docs/toBuildDict.md"
+              className="mx-1 font-medium text-blue-500 hover:text-blue-600"
+              target="_blank"
+              rel="noreferrer"
+            >
+              词典贡献指南
+            </a>
+            ，按照指引为开源项目贡献新的词典内容。我们非常欢迎社区贡献！
+          </p>
 
+          {/* 
             <div className="rounded-lg bg-gradient-to-r from-blue-50 to-indigo-50 p-4 shadow-sm dark:from-gray-800 dark:to-gray-700">
               <h4 className="mb-3 font-semibold text-gray-900 dark:text-white">🚀 尝试 QwertyLearner.ai</h4>
               <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">
@@ -104,10 +101,11 @@ export default function DictRequest() {
                 的独立衍生版本，开源版将持续维持开源与开放运营。
               </p>
             </div>
-          </div>
+            */}
         </InfoPanel>
       )}
       <button
+        type="button"
         onClick={onOpenPanel}
         className="group flex items-center space-x-2 rounded-lg border border-indigo-200 bg-gradient-to-r from-indigo-50 to-blue-50 px-4 py-2.5 text-sm font-medium text-indigo-600 shadow-sm transition-all duration-200 hover:scale-105 hover:border-indigo-300 hover:from-indigo-100 hover:to-blue-100 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:border-indigo-400 dark:from-gray-800 dark:to-gray-700 dark:text-indigo-400 dark:hover:from-gray-700 dark:hover:to-gray-600"
       >
