@@ -107,7 +107,8 @@ export class ChapterRecord implements IChapterRecord {
   }
 
   get inputAccuracy() {
-    return Math.round((this.correctCount / this.correctCount + this.wrongCount) * 100)
+    const total = this.correctCount + this.wrongCount
+    return total > 0 ? Math.round((this.correctCount / total) * 100) : 0
   }
 
   get wordAccuracy() {
