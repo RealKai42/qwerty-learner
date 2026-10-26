@@ -36,11 +36,10 @@ function Root() {
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth <= 600
-      if (!isMobile) {
-        window.location.href = '/'
-      }
-      setIsMobile(isMobile)
+      // Only keep the breakpoint state in sync. Navigation between desktop and
+      // mobile routes is handled by the Routes below (`/*` -> /mobile or /),
+      // so forcing a full page reload here is unnecessary and drops app state.
+      setIsMobile(window.innerWidth <= 600)
     }
 
     window.addEventListener('resize', handleResize)
