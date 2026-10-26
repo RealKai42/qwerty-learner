@@ -4,7 +4,6 @@ import { StickerButton } from '../DonatingCard/components/StickerButton'
 import { useChapterNumber, useDayFromFirstWordRecord, useSumWrongCount, useWordNumber } from './hooks/useWordStats'
 import { DONATE_DATE } from '@/constants'
 import { reportDonateCard } from '@/utils'
-import noop from '@/utils/noop'
 import { Dialog, Transition } from '@headlessui/react'
 import dayjs from 'dayjs'
 import type React from 'react'
@@ -57,6 +56,13 @@ export const DonateCard = () => {
     })
 
     setShow(false)
+    // Persist the dismissal so the same 30-day cooldown also applies to
+    // "remind me later"; otherwise the card reappears every 5 chapters forever.
+    try {
+      window.localStorage.setItem(DONATE_DATE, dayjs().format())
+    } catch {
+      /* localStorage may be unavailable (private mode); fall back to old behavior. */
+    }
   }
 
   const onAmountChange = (amount: AmountType) => {
@@ -82,9 +88,7 @@ export const DonateCard = () => {
       <Dialog
         as="div"
         className="relative z-50"
-        onClose={() => {
-          noop()
-        }}
+        onClose={onClickRemindMeLater}
       >
         <Transition.Child
           as={Fragment}
@@ -151,6 +155,7 @@ export const DonateCard = () => {
                       type="button"
                       className={`my-btn-primary ${!amount && 'invisible'} w-36 bg-amber-500 font-medium transition-all`}
                       onClick={onClickHasDonated}
+                      disabled={!amount}
                     >
                       我已捐赠
                     </button>
