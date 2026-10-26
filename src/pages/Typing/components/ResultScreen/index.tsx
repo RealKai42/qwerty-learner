@@ -315,7 +315,7 @@ const ResultScreen = () => {
               {!isLastChapter && !isReviewMode && (
                 <Tooltip content="快捷键：enter">
                   <button
-                    className={`{ isLastChapter ? 'cursor-not-allowed opacity-50' : ''} my-btn-primary h-12 text-base font-bold `}
+                    className={`${isLastChapter ? 'cursor-not-allowed opacity-50' : ''} my-btn-primary h-12 text-base font-bold`}
                     type="button"
                     onClick={nextButtonHandler}
                     title="下一章节"
