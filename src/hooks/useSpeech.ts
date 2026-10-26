@@ -75,6 +75,8 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
     const synth = window.speechSynthesis
     if (speaking) {
       synth.cancel()
+      // cancel() does not emit the utterance's end event, so reset here.
+      setSpeaking(false)
     }
   }, [speaking])
 
