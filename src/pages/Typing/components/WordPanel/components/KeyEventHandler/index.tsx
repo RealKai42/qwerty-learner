@@ -9,6 +9,12 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
 
   const onKeydown = useCallback(
     (e: KeyboardEvent) => {
+      // IME composition (pinyin etc.) and long-press auto-repeat are not real
+      // character input; counting them would mark every composing keystroke as
+      // a wrong letter and pollute accuracy/WPM/SRS records.
+      if (e.isComposing || e.keyCode === 229) return
+      if (e.repeat) return
+
       const char = e.key
 
       if (isChineseSymbol(char)) {
@@ -17,6 +23,10 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
       }
 
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        // isLegal already guarantees a single printable character; keep the
+        // guard explicit so future changes cannot append a multi-char key.
+        if (char.length !== 1) return
+        e.preventDefault()
         updateInput({ type: 'add', value: char, event: e })
       }
     },

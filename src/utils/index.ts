@@ -34,9 +34,44 @@ const bannedKeys = [
   'PageUp',
   'Clear',
   'Home',
+  // Function / non-character keys: these are not text input. Pressing one must
+  // not count as a wrong letter (and F5/F11 would also reload the page).
+  'F1',
+  'F2',
+  'F3',
+  'F4',
+  'F5',
+  'F6',
+  'F7',
+  'F8',
+  'F9',
+  'F10',
+  'F11',
+  'F12',
+  'Insert',
+  'PrintScreen',
+  'ScrollLock',
+  'Pause',
+  'NumLock',
+  'ContextMenu',
+  'Dead',
+  'Unidentified',
+  'Process',
+  'Compose',
 ]
 
+/**
+ * Whether a 'KeyboardEvent.key' value can be treated as typed input.
+ *
+ * Only printable single characters are input:
+ * - multi-character keys ('F5', 'Dead', 'Unidentified', 'Process', ...) never are;
+ * - control characters (U+0000-U+001F) and DEL (U+007F) never are;
+ * - space (U+0020) is valid input (words/phrases may contain spaces).
+ */
 export const isLegal = (key: string): boolean => {
+  if (typeof key !== 'string') return false
+  if (key.length !== 1) return false
+  if (key < ' ' || key === '\u007f') return false
   if (bannedKeys.includes(key)) return false
   return true
 }
