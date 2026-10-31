@@ -66,14 +66,16 @@ export default function GalleryPage() {
         <div className="relative mb-auto mt-auto flex w-full flex-1 flex-col overflow-y-auto pl-20">
           <IconX className="absolute right-20 top-10 mr-2 h-7 w-7 cursor-pointer text-gray-400" onClick={onBack} />
           <div className="mt-20 flex w-full flex-1 flex-col items-center justify-center overflow-y-auto">
-            <div className="flex h-full flex-col overflow-y-auto">
+            {/* 宽度必须封顶：父级是 items-center，一旦本列比容器宽，
+                会向两侧同时溢出，左边那截既被裁掉又滚不到。 */}
+            <div className="flex h-full min-w-0 max-w-full flex-col overflow-y-auto">
               <div className="flex h-20 w-full items-center justify-between pb-6 pr-20">
                 <LanguageTabSwitcher />
                 <DictRequest />
               </div>
               <ScrollArea.Root className="flex-1 overflow-y-auto">
                 <ScrollArea.Viewport className="h-full w-full ">
-                  <div className="mr-4 flex flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
+                  <div className="mr-4 flex w-full min-w-0 flex-1 flex-col items-start justify-start gap-14 overflow-y-auto">
                     {groupedByCategoryAndTag.map(([category, groupeByTag]) => (
                       <DictionaryGroup key={category} groupedDictsByTag={groupeByTag} />
                     ))}
@@ -89,6 +91,11 @@ export default function GalleryPage() {
                   </div>
                 </ScrollArea.Viewport>
                 <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
+                {/* 没有水平滚动条时 Radix 会把 viewport 设为 overflow-x: hidden，
+                    标签或卡片一旦超出可视宽度就再也够不着，必须声明出来。 */}
+                <ScrollArea.Scrollbar className="flex h-2 touch-none select-none bg-transparent" orientation="horizontal">
+                  <ScrollArea.Thumb className="rounded-full bg-gray-300 dark:bg-gray-600" />
+                </ScrollArea.Scrollbar>
               </ScrollArea.Root>
               {/* todo: 增加导航 */}
               {/* <div className="mt-20 h-40 w-40 text-center ">

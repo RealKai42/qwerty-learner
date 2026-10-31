@@ -56,6 +56,8 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   name: '美音',
   isLoop: false,
   isTransRead: false,
+  // 单词发音结束后自动接着朗读释义。默认关闭，避免改变已有用户的听感。
+  isAutoTransRead: false,
   transVolume: 1,
   rate: 1,
 })
@@ -67,6 +69,11 @@ export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom
 export const pronunciationIsTransReadAtom = atom((get) => get(pronunciationConfigAtom).isTransRead)
 
 export const randomConfigAtom = atomForConfig('randomConfig', {
+  isOpen: false,
+})
+
+/** 章节练完后不停下来结算，直接进入下一章；练到最后一章则回到第一章。 */
+export const continuousModeConfigAtom = atomForConfig('continuousMode', {
   isOpen: false,
 })
 
@@ -89,7 +96,10 @@ export const phoneticConfigAtom = atomForConfig('phoneticConfig', {
   type: 'us' as PhoneticType,
 })
 
-export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.matchMedia('(prefers-color-scheme: dark)').matches)
+/** 该键存在与否被用来判断用户是否手动设置过主题，见 src/index.tsx 里跟随系统的逻辑。 */
+export const DARK_MODE_STORAGE_KEY = 'isOpenDarkModeAtom'
+
+export const isOpenDarkModeAtom = atomWithStorage(DARK_MODE_STORAGE_KEY, window.matchMedia('(prefers-color-scheme: dark)').matches)
 
 export const isShowSkipAtom = atom(false)
 

@@ -51,4 +51,12 @@ export type TypingState = {
   isLoopSingleWord: boolean
   // 是否正在保存数据
   isSavingRecord: boolean
+  /**
+   * 本次换章是否应该直接续着练下去。
+   *
+   * 换章后词表变化会触发 SETUP_CHAPTER，而它返回的是全新的 initialState，
+   * 会把 isTyping 抹成 false，于是弹出「按任意键开始」打断连续练习。
+   * 由 NEXT_CHAPTER 置位，SETUP_CHAPTER 消费后清除。
+   */
+  shouldResumeAfterSetup: boolean
 }

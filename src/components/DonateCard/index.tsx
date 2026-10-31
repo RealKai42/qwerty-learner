@@ -57,6 +57,10 @@ export const DonateCard = () => {
     })
 
     setShow(false)
+    // 与「我已捐赠」一样记录时间。显示逻辑里已有「30 天内不再打扰」的判断，
+    // 但此前只有捐赠路径会写入，「下次再说」只关掉当前这次，
+    // 每满 5 章仍会再弹，与按钮名称不符。
+    window.localStorage.setItem(DONATE_DATE, dayjs().format())
   }
 
   const onAmountChange = (amount: AmountType) => {

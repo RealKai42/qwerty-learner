@@ -16,8 +16,10 @@ export default function DictTagSwitcher({ tagList, currentTag, onChangeCurrentTa
   )
 
   return (
-    <RadioGroup value={currentTag} onChange={onChangeTag}>
-      <div className="flex items-center space-x-4">
+    <RadioGroup value={currentTag} onChange={onChangeTag} className="w-full min-w-0">
+      {/* 标签是筛选器，数量多时（如 Code 分类有 13 个）换行展开，
+          不用横向滚动——滚动会把可选项藏起来。 */}
+      <div className="flex flex-wrap items-center gap-3">
         {tagList.map((option) => (
           <RadioGroup.Option
             key={option}

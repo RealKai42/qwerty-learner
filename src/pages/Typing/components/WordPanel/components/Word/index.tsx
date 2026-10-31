@@ -22,7 +22,7 @@ import {
   wordDictationConfigAtom,
 } from '@/store'
 import type { Word } from '@/typings'
-import { CTRL, getUtcStringForMixpanel } from '@/utils'
+import { MOD, getUtcStringForMixpanel } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
@@ -31,7 +31,15 @@ import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
-export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
+export default function WordComponent({
+  word,
+  onFinish,
+  onPronunciationEnd,
+}: {
+  word: Word
+  onFinish: () => void
+  onPronunciationEnd?: () => void
+}) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
   const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
@@ -118,7 +126,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     [],
   )
   useHotkeys(
-    'ctrl+j',
+    'mod+j',
     () => {
       if (state.isTyping) {
         wordPronunciationIconRef.current?.play()
@@ -305,8 +313,14 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           </div>
           {pronunciationIsOpen && (
             <div className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform ">
-              <Tooltip content={`快捷键${CTRL} + J`}>
-                <WordPronunciationIcon word={word} lang={currentLanguage} ref={wordPronunciationIconRef} className="h-full w-full" />
+              <Tooltip content={`快捷键${MOD} + J`}>
+                <WordPronunciationIcon
+                  word={word}
+                  lang={currentLanguage}
+                  ref={wordPronunciationIconRef}
+                  className="h-full w-full"
+                  onPlayEnd={onPronunciationEnd}
+                />
               </Tooltip>
             </div>
           )}

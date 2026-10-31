@@ -2,3 +2,5 @@ build
 node_modules
 public/dicts
 stats.html
+src-tauri/target
+src-tauri/gen

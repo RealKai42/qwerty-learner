@@ -3,13 +3,24 @@ import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
+import type { TranslationRef } from './components/Translation'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
+import {
+  continuousModeConfigAtom,
+  currentChapterAtom,
+  currentDictInfoAtom,
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopWordConfigAtom,
+  phoneticConfigAtom,
+  pronunciationConfigAtom,
+  reviewModeInfoAtom,
+} from '@/store'
 import type { Word } from '@/typings'
-import { useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useContext, useMemo, useState } from 'react'
+import { useAtom, useAtomValue, useSetAtom } from 'jotai'
+import { useCallback, useContext, useMemo, useRef, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
@@ -25,6 +36,9 @@ export default function WordPanel() {
 
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
+  const continuousModeConfig = useAtomValue(continuousModeConfigAtom)
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const [, setCurrentChapter] = useAtom(currentChapterAtom)
 
   const prevIndex = useMemo(() => {
     const newIndex = state.chapterData.index - 1
@@ -73,6 +87,14 @@ export default function WordPanel() {
       }
     } else {
       // 用户完成当前章节
+      // 连续练习：不弹结算页，直接续上下一章，最后一章后回到第一章。
+      // 复习模式有自己的收尾逻辑，不参与。
+      if (continuousModeConfig.isOpen && !isReviewMode) {
+        setCurrentChapter((old) => (old >= currentDictInfo.chapterCount - 1 ? 0 : old + 1))
+        dispatch({ type: TypingStateActionType.NEXT_CHAPTER })
+        return
+      }
+
       dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
       if (isReviewMode) {
         setReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
@@ -88,6 +110,9 @@ export default function WordPanel() {
     isReviewMode,
     updateReviewRecord,
     setReviewModeInfo,
+    continuousModeConfig.isOpen,
+    currentDictInfo.chapterCount,
+    setCurrentChapter,
   ])
 
   const onSkipWord = useCallback(
@@ -104,7 +129,7 @@ export default function WordPanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
+    'mod + Shift + ArrowLeft',
     (e) => {
       e.preventDefault()
       onSkipWord('prev')
@@ -113,7 +138,7 @@ export default function WordPanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowRight',
+    'mod + Shift + ArrowRight',
     (e) => {
       e.preventDefault()
       onSkipWord('next')
@@ -148,6 +173,17 @@ export default function WordPanel() {
     return isShowTranslation || state.isTransVisible
   }, [isShowTranslation, state.isTransVisible])
 
+  const translationRef = useRef<TranslationRef>(null)
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+
+  const onPronunciationEnd = useCallback(() => {
+    if (!pronunciationConfig.isAutoTransRead) return
+    // 释义被隐藏时（默写模式等）不朗读，否则等于直接把答案念出来。
+    if (!shouldShowTranslation) return
+
+    translationRef.current?.speak()
+  }, [pronunciationConfig.isAutoTransRead, shouldShowTranslation])
+
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
       <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">
@@ -171,9 +207,10 @@ export default function WordPanel() {
               </div>
             )}
             <div className="relative">
-              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
+              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} onPronunciationEnd={onPronunciationEnd} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
+                ref={translationRef}
                 trans={currentWord.trans.join('；')}
                 showTrans={shouldShowTranslation}
                 onMouseEnter={() => handleShowTranslation(true)}

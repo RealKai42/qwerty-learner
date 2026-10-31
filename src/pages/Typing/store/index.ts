@@ -27,6 +27,7 @@ export const initialState: TypingState = {
   isTransVisible: true,
   isLoopSingleWord: false,
   isSavingRecord: false,
+  shouldResumeAfterSetup: false,
 }
 
 export const initialUserInputLog: UserInputLog = {
@@ -101,6 +102,8 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       newState.chapterData.index = initialIndex
       newState.chapterData.words = words
       newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      // 连续练习换章时保持练习状态，避免被「按任意键开始」打断。
+      newState.isTyping = state.shouldResumeAfterSetup
 
       return newState
     }
@@ -182,6 +185,8 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       const newState = structuredClone(initialState)
       newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
       newState.isTyping = true
+      // 换章会让词表变化并触发 SETUP_CHAPTER，这里告诉它别把练习状态清掉。
+      newState.shouldResumeAfterSetup = true
       newState.isTransVisible = state.isTransVisible
       return newState
     }

@@ -1,43 +1,66 @@
 import { pronunciationConfigAtom } from '@/store'
 import type { PronunciationType } from '@/typings'
 import { addHowlListener } from '@/utils'
+import { toCachedAudioSrc } from '@/utils/desktop'
 import { romajiToHiragana } from '@/utils/kana'
 import noop from '@/utils/noop'
 import type { Howl } from 'howler'
 import { useAtomValue } from 'jotai'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
-export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
+
+/**
+ * 有道 TTS 读不了带下划线的词，会直接返回 500（`returned null audio`），
+ * 而编程、AI 等词库用下划线代替空格（如 `Computer_Vision`），换成空格即可正常发音。
+ * 同时补上转义：词条里可能出现空格、`&` 等会破坏查询串的字符。
+ */
+function toAudioParam(word: string): string {
+  return encodeURIComponent(word.replace(/_/g, ' ').trim())
+}
+
+function generateRemoteWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
   switch (pronunciation) {
     case 'uk':
-      return `${pronunciationApi}${word}&type=1`
+      return `${pronunciationApi}${toAudioParam(word)}&type=1`
     case 'us':
-      return `${pronunciationApi}${word}&type=2`
+      return `${pronunciationApi}${toAudioParam(word)}&type=2`
     case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
+      return `${pronunciationApi}${toAudioParam(romajiToHiragana(word))}&le=jap`
     case 'zh':
-      return `${pronunciationApi}${word}&le=zh`
+      return `${pronunciationApi}${toAudioParam(word)}&le=zh`
     case 'ja':
-      return `${pronunciationApi}${word}&le=jap`
+      return `${pronunciationApi}${toAudioParam(word)}&le=jap`
     case 'de':
-      return `${pronunciationApi}${word}&le=de`
+      return `${pronunciationApi}${toAudioParam(word)}&le=de`
     case 'hapin':
     case 'kk':
-      return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
+      return `${pronunciationApi}${toAudioParam(word)}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
     case 'id':
-      return `${pronunciationApi}${word}&le=id`
+      return `${pronunciationApi}${toAudioParam(word)}&le=id`
     default:
       return ''
   }
 }
 
-export default function usePronunciationSound(word: string, isLoop?: boolean) {
+export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
+  // 桌面端改指向本地缓存协议，Web 端原样返回远端地址。
+  return toCachedAudioSrc(generateRemoteWordSoundSrc(word, pronunciation))
+}
+
+export default function usePronunciationSound(word: string, isLoop?: boolean, onPlayEnd?: () => void) {
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const loop = useMemo(() => (typeof isLoop === 'boolean' ? isLoop : pronunciationConfig.isLoop), [isLoop, pronunciationConfig.isLoop])
   const [isPlaying, setIsPlaying] = useState(false)
+
+  // 用 ref 读取：注册监听的 effect 只依赖 sound，其清理函数会 unload 音频，
+  // 把这两个值加进依赖会导致切换设置时误卸载正在使用的实例。
+  const onPlayEndRef = useRef(onPlayEnd)
+  onPlayEndRef.current = onPlayEnd
+  const loopRef = useRef(loop)
+  loopRef.current = loop
 
   const [play, { stop, sound }] = useSound(generateWordSoundSrc(word, pronunciationConfig.type), {
     html5: true,
@@ -58,7 +81,13 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     const unListens: Array<() => void> = []
 
     unListens.push(addHowlListener(sound, 'play', () => setIsPlaying(true)))
-    unListens.push(addHowlListener(sound, 'end', () => setIsPlaying(false)))
+    unListens.push(
+      addHowlListener(sound, 'end', () => {
+        setIsPlaying(false)
+        // 循环播放时 end 每轮都会触发，此时不该接续后续动作。
+        if (!loopRef.current) onPlayEndRef.current?.()
+      }),
+    )
     unListens.push(addHowlListener(sound, 'pause', () => setIsPlaying(false)))
     unListens.push(addHowlListener(sound, 'playerror', () => setIsPlaying(false)))
 
