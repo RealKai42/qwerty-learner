@@ -188,6 +188,21 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 > 此脚本依赖于 `homebrew`，请确保自己电脑上可以执行`brew`命令
 
+### 桌面端（Tauri）
+
+桌面端代码位于 `src-tauri/`，基于 Tauri 2。它复用同一套前端代码，`yarn build` 的产物会被直接打进桌面应用。
+
+> 构建桌面端需要额外安装 [Rust 工具链](https://rustup.rs)。Tauri CLI 已作为项目依赖提供，**不需要**全局安装 `tauri-cli`。
+
+1. 在项目根目录执行 `yarn install` 下载依赖，会一并装好 Tauri CLI
+2. 执行 `yarn tauri:dev` 启动桌面端开发模式，前端仍由 Vite 提供热更新（`http://localhost:5173`）
+3. 执行 `yarn tauri:build` 构建当前平台的安装包，产物在 `src-tauri/target/release/bundle/`
+4. macOS 上如需同时支持 Apple Silicon 与 Intel，执行 `yarn tauri:build:universal`，产物为 universal 二进制
+
+> 桌面端安装包默认未签名与公证。macOS 首次打开会被 Gatekeeper 拦截，需要到「系统设置 → 隐私与安全性」中手动放行。
+>
+> 推送 `v*` 标签或手动触发 `.github/workflows/desktop-macos.yml`，可以产出 macOS universal 的 `.app` 与 `.dmg`。
+
 ## 🏆 荣誉
 
 - Github 全球趋势榜上榜项目
