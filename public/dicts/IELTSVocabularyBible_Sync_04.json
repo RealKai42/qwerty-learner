@@ -1,0 +1,562 @@
+[
+  {
+    "name": "galaxy",
+    "trans": [
+      "n. 星系；[the G-] 银河系"
+    ],
+    "usphone": "ˈɡæləksi",
+    "ukphone": "ˈɡæləksi"
+  },
+  {
+    "name": "cosmos",
+    "trans": [
+      "n. 宇宙"
+    ],
+    "usphone": "ˈkɒzmɒs",
+    "ukphone": "ˈkɒzmɒs"
+  },
+  {
+    "name": "universe",
+    "trans": [
+      "n. 宇宙；万物，世界"
+    ],
+    "usphone": "ˈjuːnɪvɜːs",
+    "ukphone": "ˈjuːnɪvɜːs"
+  },
+  {
+    "name": "interstellar",
+    "trans": [
+      "adj. 星际的"
+    ],
+    "usphone": "ˌɪntəˈstelə",
+    "ukphone": "ˌɪntəˈstelə"
+  },
+  {
+    "name": "terrestrial",
+    "trans": [
+      "adj. 地球的；（动植物）陆地的"
+    ],
+    "usphone": "təˈrestriəl",
+    "ukphone": "təˈrestriəl"
+  },
+  {
+    "name": "celestial",
+    "trans": [
+      "adj. 天上的"
+    ],
+    "usphone": "səˈlestiəl",
+    "ukphone": "səˈlestiəl"
+  },
+  {
+    "name": "astronomy",
+    "trans": [
+      "n. 天文学"
+    ],
+    "usphone": "əˈstrɒnəmi",
+    "ukphone": "əˈstrɒnəmi"
+  },
+  {
+    "name": "astrology",
+    "trans": [
+      "n. 占星学；占星术"
+    ],
+    "usphone": "əˈstrɒlədʒi",
+    "ukphone": "əˈstrɒlədʒi"
+  },
+  {
+    "name": "astronaut",
+    "trans": [
+      "n. 宇航员"
+    ],
+    "usphone": "ˈæstrənɔːt",
+    "ukphone": "ˈæstrənɔːt"
+  },
+  {
+    "name": "comet",
+    "trans": [
+      "n. 彗星"
+    ],
+    "usphone": "ˈkɒmɪt",
+    "ukphone": "ˈkɒmɪt"
+  },
+  {
+    "name": "meteorite",
+    "trans": [
+      "n. 陨石"
+    ],
+    "usphone": "ˈmiːtiəraɪt",
+    "ukphone": "ˈmiːtiəraɪt"
+  },
+  {
+    "name": "crater",
+    "trans": [
+      "n. （撞击或爆炸形成的）坑"
+    ],
+    "usphone": "ˈkreɪtə",
+    "ukphone": "ˈkreɪtə"
+  },
+  {
+    "name": "dust",
+    "trans": [
+      "n. 尘土，灰尘，粉尘"
+    ],
+    "usphone": "dʌst",
+    "ukphone": "dʌst"
+  },
+  {
+    "name": "ash",
+    "trans": [
+      "n. 灰烬"
+    ],
+    "usphone": "æʃ",
+    "ukphone": "æʃ"
+  },
+  {
+    "name": "envelope",
+    "trans": [
+      "n. 外裹物，外层"
+    ],
+    "usphone": "ˈenvələʊp",
+    "ukphone": "ˈenvələʊp"
+  },
+  {
+    "name": "chunk",
+    "trans": [
+      "n. 厚块"
+    ],
+    "usphone": "tʃʌŋk",
+    "ukphone": "tʃʌŋk"
+  },
+  {
+    "name": "spacecraft",
+    "trans": [
+      "n. 宇宙飞船"
+    ],
+    "usphone": "ˈspeɪskrɑːft",
+    "ukphone": "ˈspeɪskrɑːft"
+  },
+  {
+    "name": "spaceship",
+    "trans": [
+      "n. 宇宙飞船"
+    ],
+    "usphone": "ˈspeɪsʃɪp",
+    "ukphone": "ˈspeɪsʃɪp"
+  },
+  {
+    "name": "probe",
+    "trans": [
+      "n. 太空探测器；详尽调查"
+    ],
+    "usphone": "prəʊb",
+    "ukphone": "prəʊb"
+  },
+  {
+    "name": "module",
+    "trans": [
+      "n. （航天器上各个独立的）舱；模块"
+    ],
+    "usphone": "ˈmɒdjuːl",
+    "ukphone": "ˈmɒdjuːl"
+  },
+  {
+    "name": "propulsion",
+    "trans": [
+      "n. 推进力"
+    ],
+    "usphone": "prəˈpʌlʃən",
+    "ukphone": "prəˈpʌlʃən"
+  },
+  {
+    "name": "pressure",
+    "trans": [
+      "n. 压力"
+    ],
+    "usphone": "ˈpreʃə",
+    "ukphone": "ˈpreʃə"
+  },
+  {
+    "name": "dynamics",
+    "trans": [
+      "n. 动力学；动态"
+    ],
+    "usphone": "daɪˈnæmɪks",
+    "ukphone": "daɪˈnæmɪks"
+  },
+  {
+    "name": "motion",
+    "trans": [
+      "n. 动作；移动"
+    ],
+    "usphone": "ˈməʊʃən",
+    "ukphone": "ˈməʊʃən"
+  },
+  {
+    "name": "vent",
+    "trans": [
+      "n. 排气口 v. 排放；发泄"
+    ],
+    "usphone": "vent",
+    "ukphone": "vent"
+  },
+  {
+    "name": "tail",
+    "trans": [
+      "n. 尾部"
+    ],
+    "usphone": "teɪl",
+    "ukphone": "teɪl"
+  },
+  {
+    "name": "curve",
+    "trans": [
+      "n. 曲线，弧线"
+    ],
+    "usphone": "kɜːv",
+    "ukphone": "kɜːv"
+  },
+  {
+    "name": "exploration",
+    "trans": [
+      "n. 探索"
+    ],
+    "usphone": "ˌekspləˈreɪʃən",
+    "ukphone": "ˌekspləˈreɪʃən"
+  },
+  {
+    "name": "expedition",
+    "trans": [
+      "n. 远征，探险"
+    ],
+    "usphone": "ˌekspɪˈdɪʃən",
+    "ukphone": "ˌekspɪˈdɪʃən"
+  },
+  {
+    "name": "flyby",
+    "trans": [
+      "n. （航天器对行星或卫星的）飞掠"
+    ],
+    "usphone": "ˈflaɪbaɪ",
+    "ukphone": "ˈflaɪbaɪ"
+  },
+  {
+    "name": "observatory",
+    "trans": [
+      "n. 天文台"
+    ],
+    "usphone": "əbˈzɜːvətəri",
+    "ukphone": "əbˈzɜːvətəri"
+  },
+  {
+    "name": "telescope",
+    "trans": [
+      "n. 望远镜"
+    ],
+    "usphone": "ˈtelɪskəʊp",
+    "ukphone": "ˈtelɪskəʊp"
+  },
+  {
+    "name": "spectacle",
+    "trans": [
+      "n. 壮观的景象；奇观；[~s] 眼镜"
+    ],
+    "usphone": "ˈspektəkəl",
+    "ukphone": "ˈspektəkəl"
+  },
+  {
+    "name": "orbit",
+    "trans": [
+      "n. 轨道"
+    ],
+    "usphone": "ˈɔːbɪt",
+    "ukphone": "ˈɔːbɪt"
+  },
+  {
+    "name": "ecliptic",
+    "trans": [
+      "n. 黄道"
+    ],
+    "usphone": "ɪˈklɪptɪk",
+    "ukphone": "ɪˈklɪptɪk"
+  },
+  {
+    "name": "diameter",
+    "trans": [
+      "n. 直径"
+    ],
+    "usphone": "daɪˈæmɪtə",
+    "ukphone": "daɪˈæmɪtə"
+  },
+  {
+    "name": "radius",
+    "trans": [
+      "n. 半径"
+    ],
+    "usphone": "ˈreɪdiəs",
+    "ukphone": "ˈreɪdiəs"
+  },
+  {
+    "name": "substance",
+    "trans": [
+      "n. 物质；实质，要旨"
+    ],
+    "usphone": "ˈsʌbstəns",
+    "ukphone": "ˈsʌbstəns"
+  },
+  {
+    "name": "particle",
+    "trans": [
+      "n. 颗粒，微粒；极小量"
+    ],
+    "usphone": "ˈpɑːtɪkəl",
+    "ukphone": "ˈpɑːtɪkəl"
+  },
+  {
+    "name": "molecule",
+    "trans": [
+      "n. 分子"
+    ],
+    "usphone": "ˈmɒlɪkjuːl",
+    "ukphone": "ˈmɒlɪkjuːl"
+  },
+  {
+    "name": "atom",
+    "trans": [
+      "n. 原子"
+    ],
+    "usphone": "ˈætəm",
+    "ukphone": "ˈætəm"
+  },
+  {
+    "name": "ion",
+    "trans": [
+      "n. 离子"
+    ],
+    "usphone": "ˈaɪən",
+    "ukphone": "ˈaɪən"
+  },
+  {
+    "name": "electron",
+    "trans": [
+      "n. 电子"
+    ],
+    "usphone": "ɪˈlektrɒn",
+    "ukphone": "ɪˈlektrɒn"
+  },
+  {
+    "name": "quantum",
+    "trans": [
+      "n. 量子"
+    ],
+    "usphone": "ˈkwɒntəm",
+    "ukphone": "ˈkwɒntəm"
+  },
+  {
+    "name": "liquid",
+    "trans": [
+      "n. 液体 adj. 液态的"
+    ],
+    "usphone": "ˈlɪkwɪd",
+    "ukphone": "ˈlɪkwɪd"
+  },
+  {
+    "name": "fluid",
+    "trans": [
+      "n. 液体，流体 adj. 流动的"
+    ],
+    "usphone": "ˈfluːɪd",
+    "ukphone": "ˈfluːɪd"
+  },
+  {
+    "name": "solid",
+    "trans": [
+      "n. 固体 adj. 固体的；牢固的"
+    ],
+    "usphone": "ˈsɒlɪd",
+    "ukphone": "ˈsɒlɪd"
+  },
+  {
+    "name": "synthesis",
+    "trans": [
+      "n. 合成；综合"
+    ],
+    "usphone": "ˈsɪnθəsɪs",
+    "ukphone": "ˈsɪnθəsɪs"
+  },
+  {
+    "name": "formation",
+    "trans": [
+      "n. 形成"
+    ],
+    "usphone": "fɔːˈmeɪʃən",
+    "ukphone": "fɔːˈmeɪʃən"
+  },
+  {
+    "name": "method",
+    "trans": [
+      "n. 方法"
+    ],
+    "usphone": "ˈmeθəd",
+    "ukphone": "ˈmeθəd"
+  },
+  {
+    "name": "spectrum",
+    "trans": [
+      "n. 光谱；范围"
+    ],
+    "usphone": "ˈspektrəm",
+    "ukphone": "ˈspektrəm"
+  },
+  {
+    "name": "dimension",
+    "trans": [
+      "n. 范围；维（度）"
+    ],
+    "usphone": "daɪˈmenʃən",
+    "ukphone": "daɪˈmenʃən"
+  },
+  {
+    "name": "frequency",
+    "trans": [
+      "n. 频率；发生次数"
+    ],
+    "usphone": "ˈfriːkwənsi",
+    "ukphone": "ˈfriːkwənsi"
+  },
+  {
+    "name": "signal",
+    "trans": [
+      "n. 信号"
+    ],
+    "usphone": "ˈsɪɡnəl",
+    "ukphone": "ˈsɪɡnəl"
+  },
+  {
+    "name": "antenna",
+    "trans": [
+      "n. 天线"
+    ],
+    "usphone": "ænˈtenə",
+    "ukphone": "ænˈtenə"
+  },
+  {
+    "name": "circuit",
+    "trans": [
+      "n. 线路，电路；巡回"
+    ],
+    "usphone": "ˈsɜːkɪt",
+    "ukphone": "ˈsɜːkɪt"
+  },
+  {
+    "name": "refraction",
+    "trans": [
+      "n. 折射"
+    ],
+    "usphone": "rɪˈfrækʃən",
+    "ukphone": "rɪˈfrækʃən"
+  },
+  {
+    "name": "ultraviolet",
+    "trans": [
+      "n. 紫外辐射 adj. 紫外线的"
+    ],
+    "usphone": "ˌʌltrəˈvaɪələt",
+    "ukphone": "ˌʌltrəˈvaɪələt"
+  },
+  {
+    "name": "radioactive",
+    "trans": [
+      "adj. 放射性的"
+    ],
+    "usphone": "ˌreɪdiəʊˈæktɪv",
+    "ukphone": "ˌreɪdiəʊˈæktɪv"
+  },
+  {
+    "name": "distinct",
+    "trans": [
+      "adj. 明显的；截然不同的"
+    ],
+    "usphone": "dɪˈstɪŋkt",
+    "ukphone": "dɪˈstɪŋkt"
+  },
+  {
+    "name": "discernible",
+    "trans": [
+      "adj. 可辨别的，看得清的"
+    ],
+    "usphone": "dɪˈsɜːnɪbəl",
+    "ukphone": "dɪˈsɜːnɪbəl"
+  },
+  {
+    "name": "invisible",
+    "trans": [
+      "adj. 看不见的"
+    ],
+    "usphone": "ɪnˈvɪzəbəl",
+    "ukphone": "ɪnˈvɪzəbəl"
+  },
+  {
+    "name": "collision",
+    "trans": [
+      "n. 碰撞事故；冲突"
+    ],
+    "usphone": "kəˈlɪʒən",
+    "ukphone": "kəˈlɪʒən"
+  },
+  {
+    "name": "squash",
+    "trans": [
+      "v. 压扁 n. 壁球"
+    ],
+    "usphone": "skwɒʃ",
+    "ukphone": "skwɒʃ"
+  },
+  {
+    "name": "fragment",
+    "trans": [
+      "n. 碎片，片断"
+    ],
+    "usphone": "ˈfræɡmənt",
+    "ukphone": "ˈfræɡmənt"
+  },
+  {
+    "name": "despair",
+    "trans": [
+      "v./n. 绝望"
+    ],
+    "usphone": "dɪˈspeə",
+    "ukphone": "dɪˈspeə"
+  },
+  {
+    "name": "desperate",
+    "trans": [
+      "adj. 绝望的；极需要的"
+    ],
+    "usphone": "ˈdespərət",
+    "ukphone": "ˈdespərət"
+  },
+  {
+    "name": "overwhelming",
+    "trans": [
+      "adj. 压倒性的"
+    ],
+    "usphone": "ˌəʊvəˈwelmɪŋ",
+    "ukphone": "ˌəʊvəˈwelmɪŋ"
+  },
+  {
+    "name": "cataclysmic",
+    "trans": [
+      "adj. 剧变的；灾难性的"
+    ],
+    "usphone": "ˌkætəˈklɪzmɪk",
+    "ukphone": "ˌkætəˈklɪzmɪk"
+  },
+  {
+    "name": "hopeless",
+    "trans": [
+      "adj. 无望的；极差的"
+    ],
+    "usphone": "ˈhəʊpləs",
+    "ukphone": "ˈhəʊpləs"
+  }
+]

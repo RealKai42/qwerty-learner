@@ -1,0 +1,1818 @@
+[
+  {
+    "name": "atmosphere",
+    "trans": [
+      "n. 大气层，大气圈；气氛"
+    ],
+    "usphone": "ˈætməsfɪə",
+    "ukphone": "ˈætməsfɪə"
+  },
+  {
+    "name": "hydrosphere",
+    "trans": [
+      "n. 水圈；大气中的水汽"
+    ],
+    "usphone": "ˈhaɪdrəʊsfɪə",
+    "ukphone": "ˈhaɪdrəʊsfɪə"
+  },
+  {
+    "name": "lithosphere",
+    "trans": [
+      "n. 岩石圈"
+    ],
+    "usphone": "ˈlɪθəʊsfɪə",
+    "ukphone": "ˈlɪθəʊsfɪə"
+  },
+  {
+    "name": "oxygen",
+    "trans": [
+      "n. 氧气"
+    ],
+    "usphone": "ˈɒksɪdʒən",
+    "ukphone": "ˈɒksɪdʒən"
+  },
+  {
+    "name": "oxide",
+    "trans": [
+      "n. 氧化物"
+    ],
+    "usphone": "ˈɒksaɪd",
+    "ukphone": "ˈɒksaɪd"
+  },
+  {
+    "name": "carbon dioxide",
+    "trans": [
+      "n. 二氧化碳"
+    ],
+    "usphone": "ˈkɑːbən daɪˈɒksaɪd",
+    "ukphone": "ˈkɑːbən daɪˈɒksaɪd"
+  },
+  {
+    "name": "hydrogen",
+    "trans": [
+      "n. 氢气"
+    ],
+    "usphone": "ˈhaɪdrədʒən",
+    "ukphone": "ˈhaɪdrədʒən"
+  },
+  {
+    "name": "core",
+    "trans": [
+      "n. 中心，核心；地核"
+    ],
+    "usphone": "kɔː",
+    "ukphone": "kɔː"
+  },
+  {
+    "name": "crust",
+    "trans": [
+      "n. 地壳；外壳"
+    ],
+    "usphone": "krʌst",
+    "ukphone": "krʌst"
+  },
+  {
+    "name": "mantle",
+    "trans": [
+      "n. 地幔；斗篷，披风"
+    ],
+    "usphone": "ˈmæntl",
+    "ukphone": "ˈmæntl"
+  },
+  {
+    "name": "longitude",
+    "trans": [
+      "n. 经度"
+    ],
+    "usphone": "ˈlɒndʒɪtjuːd",
+    "ukphone": "ˈlɒndʒɪtjuːd"
+  },
+  {
+    "name": "latitude",
+    "trans": [
+      "n. 纬度"
+    ],
+    "usphone": "ˈlætɪtjuːd",
+    "ukphone": "ˈlætɪtjuːd"
+  },
+  {
+    "name": "horizon",
+    "trans": [
+      "n. 地平线；眼界，见识"
+    ],
+    "usphone": "həˈraɪzən",
+    "ukphone": "həˈraɪzən"
+  },
+  {
+    "name": "altitude",
+    "trans": [
+      "n. 高度，海拔"
+    ],
+    "usphone": "ˈæltɪtjuːd",
+    "ukphone": "ˈæltɪtjuːd"
+  },
+  {
+    "name": "disaster",
+    "trans": [
+      "n. 灾难"
+    ],
+    "usphone": "dɪˈzɑːstə",
+    "ukphone": "dɪˈzɑːstə"
+  },
+  {
+    "name": "mishap",
+    "trans": [
+      "n. 小灾难"
+    ],
+    "usphone": "ˈmɪshæp",
+    "ukphone": "ˈmɪshæp"
+  },
+  {
+    "name": "catastrophic",
+    "trans": [
+      "adj. 灾难性的"
+    ],
+    "usphone": "ˌkætəˈstrɒfɪk",
+    "ukphone": "ˌkætəˈstrɒfɪk"
+  },
+  {
+    "name": "calamity",
+    "trans": [
+      "n. 灾难，不幸的事"
+    ],
+    "usphone": "kəˈlæməti",
+    "ukphone": "kəˈlæməti"
+  },
+  {
+    "name": "endanger",
+    "trans": [
+      "v. 使遭受危险，危及"
+    ],
+    "usphone": "ɪnˈdeɪndʒə",
+    "ukphone": "ɪnˈdeɪndʒə"
+  },
+  {
+    "name": "jeopardise",
+    "trans": [
+      "v. 危害，危及"
+    ],
+    "usphone": "ˈdʒepədaɪz",
+    "ukphone": "ˈdʒepədaɪz"
+  },
+  {
+    "name": "destructive",
+    "trans": [
+      "adj. 破坏性的，有害的"
+    ],
+    "usphone": "dɪˈstrʌktɪv",
+    "ukphone": "dɪˈstrʌktɪv"
+  },
+  {
+    "name": "El Nino",
+    "trans": [
+      "n. 厄尔尼诺现象"
+    ],
+    "usphone": "el ˈniːnjəʊ",
+    "ukphone": "el ˈniːnjəʊ"
+  },
+  {
+    "name": "greenhouse",
+    "trans": [
+      "n. 温室，暖房"
+    ],
+    "usphone": "ˈɡriːnhaʊs",
+    "ukphone": "ˈɡriːnhaʊs"
+  },
+  {
+    "name": "phenomenon",
+    "trans": [
+      "n. 现象"
+    ],
+    "usphone": "fɪˈnɒmɪnən",
+    "ukphone": "fɪˈnɒmɪnən"
+  },
+  {
+    "name": "pebble",
+    "trans": [
+      "n. 鹅卵石"
+    ],
+    "usphone": "ˈpebl",
+    "ukphone": "ˈpebl"
+  },
+  {
+    "name": "magnet",
+    "trans": [
+      "n. 磁铁，吸铁石"
+    ],
+    "usphone": "ˈmæɡnɪt",
+    "ukphone": "ˈmæɡnɪt"
+  },
+  {
+    "name": "ore",
+    "trans": [
+      "n. 矿石；矿"
+    ],
+    "usphone": "ɔː",
+    "ukphone": "ɔː"
+  },
+  {
+    "name": "mineral",
+    "trans": [
+      "n. 矿物，矿物质；矿产"
+    ],
+    "usphone": "ˈmɪnərəl",
+    "ukphone": "ˈmɪnərəl"
+  },
+  {
+    "name": "marble",
+    "trans": [
+      "n. 大理石；弹球"
+    ],
+    "usphone": "ˈmɑːbl",
+    "ukphone": "ˈmɑːbl"
+  },
+  {
+    "name": "quartz",
+    "trans": [
+      "n. 石英"
+    ],
+    "usphone": "kwɔːts",
+    "ukphone": "kwɔːts"
+  },
+  {
+    "name": "granite",
+    "trans": [
+      "n. 花岗岩"
+    ],
+    "usphone": "ˈɡrænɪt",
+    "ukphone": "ˈɡrænɪt"
+  },
+  {
+    "name": "gust",
+    "trans": [
+      "n. 一阵狂风；迸发"
+    ],
+    "usphone": "ɡʌst",
+    "ukphone": "ɡʌst"
+  },
+  {
+    "name": "breeze",
+    "trans": [
+      "n. 微风，和风"
+    ],
+    "usphone": "briːz",
+    "ukphone": "briːz"
+  },
+  {
+    "name": "monsoon",
+    "trans": [
+      "n. 季风；雨季"
+    ],
+    "usphone": "mɒnˈsuːn",
+    "ukphone": "mɒnˈsuːn"
+  },
+  {
+    "name": "gale",
+    "trans": [
+      "n. 大风"
+    ],
+    "usphone": "ɡeɪl",
+    "ukphone": "ɡeɪl"
+  },
+  {
+    "name": "hurricane",
+    "trans": [
+      "n. 飓风；暴风"
+    ],
+    "usphone": "ˈhʌrɪkən",
+    "ukphone": "ˈhʌrɪkən"
+  },
+  {
+    "name": "tornado",
+    "trans": [
+      "n. 龙卷风"
+    ],
+    "usphone": "tɔːˈneɪdəʊ",
+    "ukphone": "tɔːˈneɪdəʊ"
+  },
+  {
+    "name": "typhoon",
+    "trans": [
+      "n. 台风"
+    ],
+    "usphone": "taɪˈfuːn",
+    "ukphone": "taɪˈfuːn"
+  },
+  {
+    "name": "volcano",
+    "trans": [
+      "n. 火山"
+    ],
+    "usphone": "vɒlˈkeɪnəʊ",
+    "ukphone": "vɒlˈkeɪnəʊ"
+  },
+  {
+    "name": "erupt",
+    "trans": [
+      "v. 爆发，喷发；突然出现"
+    ],
+    "usphone": "ɪˈrʌpt",
+    "ukphone": "ɪˈrʌpt"
+  },
+  {
+    "name": "magma",
+    "trans": [
+      "n. 岩浆"
+    ],
+    "usphone": "ˈmæɡmə",
+    "ukphone": "ˈmæɡmə"
+  },
+  {
+    "name": "thermodynamic",
+    "trans": [
+      "adj. 热力的；热力学的"
+    ],
+    "usphone": "ˌθɜːməʊdaɪˈnæmɪk",
+    "ukphone": "ˌθɜːməʊdaɪˈnæmɪk"
+  },
+  {
+    "name": "smog",
+    "trans": [
+      "n. 烟雾，雾霾"
+    ],
+    "usphone": "smɒɡ",
+    "ukphone": "smɒɡ"
+  },
+  {
+    "name": "fume",
+    "trans": [
+      "n. 烟，气体"
+    ],
+    "usphone": "fjuːm",
+    "ukphone": "fjuːm"
+  },
+  {
+    "name": "mist",
+    "trans": [
+      "n. 薄雾；水汽；使视线模糊的东西"
+    ],
+    "usphone": "mɪst",
+    "ukphone": "mɪst"
+  },
+  {
+    "name": "tsunami",
+    "trans": [
+      "n. 海啸"
+    ],
+    "usphone": "tsuːˈnɑːmi",
+    "ukphone": "tsuːˈnɑːmi"
+  },
+  {
+    "name": "drought",
+    "trans": [
+      "n. 干旱，旱灾"
+    ],
+    "usphone": "draʊt",
+    "ukphone": "draʊt"
+  },
+  {
+    "name": "flooding",
+    "trans": [
+      "n. 洪水泛滥"
+    ],
+    "usphone": "ˈflʌdɪŋ",
+    "ukphone": "ˈflʌdɪŋ"
+  },
+  {
+    "name": "torrent",
+    "trans": [
+      "n. 激流，洪流"
+    ],
+    "usphone": "ˈtɒrənt",
+    "ukphone": "ˈtɒrənt"
+  },
+  {
+    "name": "earthquake",
+    "trans": [
+      "n. 地震"
+    ],
+    "usphone": "ˈɜːθkweɪk",
+    "ukphone": "ˈɜːθkweɪk"
+  },
+  {
+    "name": "seismic",
+    "trans": [
+      "adj. 地震的，地震引起的"
+    ],
+    "usphone": "ˈsaɪzmɪk",
+    "ukphone": "ˈsaɪzmɪk"
+  },
+  {
+    "name": "avalanche",
+    "trans": [
+      "n. 雪崩"
+    ],
+    "usphone": "ˈævəlɑːnʃ",
+    "ukphone": "ˈævəlɑːnʃ"
+  },
+  {
+    "name": "terrain",
+    "trans": [
+      "n. 地形"
+    ],
+    "usphone": "təˈreɪn",
+    "ukphone": "təˈreɪn"
+  },
+  {
+    "name": "landscape",
+    "trans": [
+      "n. 风景，地貌"
+    ],
+    "usphone": "ˈlændskeɪp",
+    "ukphone": "ˈlændskeɪp"
+  },
+  {
+    "name": "continent",
+    "trans": [
+      "n. 大陆；洲"
+    ],
+    "usphone": "ˈkɒntɪnənt",
+    "ukphone": "ˈkɒntɪnənt"
+  },
+  {
+    "name": "cave",
+    "trans": [
+      "n. 洞穴，山洞"
+    ],
+    "usphone": "keɪv",
+    "ukphone": "keɪv"
+  },
+  {
+    "name": "cliff",
+    "trans": [
+      "n. 悬崖，峭壁"
+    ],
+    "usphone": "klɪf",
+    "ukphone": "klɪf"
+  },
+  {
+    "name": "glacier",
+    "trans": [
+      "n. 冰河，冰川"
+    ],
+    "usphone": "ˈɡlæsiə",
+    "ukphone": "ˈɡlæsiə"
+  },
+  {
+    "name": "swamp",
+    "trans": [
+      "n. 沼泽，湿地"
+    ],
+    "usphone": "swɒmp",
+    "ukphone": "swɒmp"
+  },
+  {
+    "name": "delta",
+    "trans": [
+      "n. 三角洲"
+    ],
+    "usphone": "ˈdeltə",
+    "ukphone": "ˈdeltə"
+  },
+  {
+    "name": "plain",
+    "trans": [
+      "n. 平原"
+    ],
+    "usphone": "pleɪn",
+    "ukphone": "pleɪn"
+  },
+  {
+    "name": "plateau",
+    "trans": [
+      "n. 高原"
+    ],
+    "usphone": "ˈplætəʊ",
+    "ukphone": "ˈplætəʊ"
+  },
+  {
+    "name": "oasis",
+    "trans": [
+      "n. 绿洲；宜人之地"
+    ],
+    "usphone": "əʊˈeɪsɪs",
+    "ukphone": "əʊˈeɪsɪs"
+  },
+  {
+    "name": "globe",
+    "trans": [
+      "n. 球体；地球仪；地球"
+    ],
+    "usphone": "ɡləʊb",
+    "ukphone": "ɡləʊb"
+  },
+  {
+    "name": "hemisphere",
+    "trans": [
+      "n. 半球"
+    ],
+    "usphone": "ˈhemɪsfɪə",
+    "ukphone": "ˈhemɪsfɪə"
+  },
+  {
+    "name": "equator",
+    "trans": [
+      "n. 赤道"
+    ],
+    "usphone": "ɪˈkweɪtə",
+    "ukphone": "ɪˈkweɪtə"
+  },
+  {
+    "name": "Arctic",
+    "trans": [
+      "adj. 极冷的；北极的"
+    ],
+    "usphone": "ˈɑːktɪk",
+    "ukphone": "ˈɑːktɪk"
+  },
+  {
+    "name": "Antarctic",
+    "trans": [
+      "adj. 南极的"
+    ],
+    "usphone": "ænˈtɑːktɪk",
+    "ukphone": "ænˈtɑːktɪk"
+  },
+  {
+    "name": "pole",
+    "trans": [
+      "n. 地极；截然相反的两极之一"
+    ],
+    "usphone": "pəʊl",
+    "ukphone": "pəʊl"
+  },
+  {
+    "name": "polar",
+    "trans": [
+      "adj. 极地的，近极地的；对立的"
+    ],
+    "usphone": "ˈpəʊlə",
+    "ukphone": "ˈpəʊlə"
+  },
+  {
+    "name": "axis",
+    "trans": [
+      "n. 轴，轴线"
+    ],
+    "usphone": "ˈæksɪs",
+    "ukphone": "ˈæksɪs"
+  },
+  {
+    "name": "deteriorate",
+    "trans": [
+      "v. 恶化，变坏"
+    ],
+    "usphone": "dɪˈtɪəriəreɪt",
+    "ukphone": "dɪˈtɪəriəreɪt"
+  },
+  {
+    "name": "aggravate",
+    "trans": [
+      "v. 加重，加剧，使恶化"
+    ],
+    "usphone": "ˈæɡrəveɪt",
+    "ukphone": "ˈæɡrəveɪt"
+  },
+  {
+    "name": "degrade",
+    "trans": [
+      "v. 降解；降低身份；使恶化"
+    ],
+    "usphone": "dɪˈɡreɪd",
+    "ukphone": "dɪˈɡreɪd"
+  },
+  {
+    "name": "upgrade",
+    "trans": [
+      "v. 使升级；提高，改善"
+    ],
+    "usphone": "ʌpˈɡreɪd",
+    "ukphone": "ʌpˈɡreɪd"
+  },
+  {
+    "name": "erode",
+    "trans": [
+      "v. 侵蚀，腐蚀"
+    ],
+    "usphone": "ɪˈrəʊd",
+    "ukphone": "ɪˈrəʊd"
+  },
+  {
+    "name": "Mediterranean",
+    "trans": [
+      "adj. 地中海的；地中海地区的"
+    ],
+    "usphone": "ˌmedɪtəˈreɪniən",
+    "ukphone": "ˌmedɪtəˈreɪniən"
+  },
+  {
+    "name": "Atlantic",
+    "trans": [
+      "adj. 大西洋的"
+    ],
+    "usphone": "ətˈlæntɪk",
+    "ukphone": "ətˈlæntɪk"
+  },
+  {
+    "name": "Pacific",
+    "trans": [
+      "adj. 平静的，和平的；太平洋的"
+    ],
+    "usphone": "pəˈsɪfɪk",
+    "ukphone": "pəˈsɪfɪk"
+  },
+  {
+    "name": "ocean",
+    "trans": [
+      "n. 海洋；洋"
+    ],
+    "usphone": "ˈəʊʃən",
+    "ukphone": "ˈəʊʃən"
+  },
+  {
+    "name": "marine",
+    "trans": [
+      "adj. 海生的，海洋的；海事的"
+    ],
+    "usphone": "məˈriːn",
+    "ukphone": "məˈriːn"
+  },
+  {
+    "name": "navigation",
+    "trans": [
+      "n. 航行；航海"
+    ],
+    "usphone": "ˌnævɪˈɡeɪʃən",
+    "ukphone": "ˌnævɪˈɡeɪʃən"
+  },
+  {
+    "name": "gulf",
+    "trans": [
+      "n. 海湾"
+    ],
+    "usphone": "ɡʌlf",
+    "ukphone": "ɡʌlf"
+  },
+  {
+    "name": "beach",
+    "trans": [
+      "n. 海滩，河滩"
+    ],
+    "usphone": "biːtʃ",
+    "ukphone": "biːtʃ"
+  },
+  {
+    "name": "coast",
+    "trans": [
+      "n. 海岸，海滨"
+    ],
+    "usphone": "kəʊst",
+    "ukphone": "kəʊst"
+  },
+  {
+    "name": "shore",
+    "trans": [
+      "n. 岸，滨"
+    ],
+    "usphone": "ʃɔː",
+    "ukphone": "ʃɔː"
+  },
+  {
+    "name": "tide",
+    "trans": [
+      "n. 趋势，潮流；潮汐"
+    ],
+    "usphone": "taɪd",
+    "ukphone": "taɪd"
+  },
+  {
+    "name": "current",
+    "trans": [
+      "n. 水流，潮流；电流；气流"
+    ],
+    "usphone": "ˈkʌrənt",
+    "ukphone": "ˈkʌrənt"
+  },
+  {
+    "name": "brook",
+    "trans": [
+      "n. 小河，溪"
+    ],
+    "usphone": "brʊk",
+    "ukphone": "brʊk"
+  },
+  {
+    "name": "stream",
+    "trans": [
+      "n. 小河，溪；流"
+    ],
+    "usphone": "striːm",
+    "ukphone": "striːm"
+  },
+  {
+    "name": "source",
+    "trans": [
+      "n. 河的源头；根源"
+    ],
+    "usphone": "sɔːs",
+    "ukphone": "sɔːs"
+  },
+  {
+    "name": "shallow",
+    "trans": [
+      "adj. 浅的；肤浅的，浅薄的"
+    ],
+    "usphone": "ˈʃæləʊ",
+    "ukphone": "ˈʃæləʊ"
+  },
+  {
+    "name": "superficial",
+    "trans": [
+      "adj. 表面的，表层的"
+    ],
+    "usphone": "ˌsuːpəˈfɪʃəl",
+    "ukphone": "ˌsuːpəˈfɪʃəl"
+  },
+  {
+    "name": "flat",
+    "trans": [
+      "adj. 平坦的；扁平的；单调的"
+    ],
+    "usphone": "flæt",
+    "ukphone": "flæt"
+  },
+  {
+    "name": "smooth",
+    "trans": [
+      "adj. 光滑的；平稳的；流畅的"
+    ],
+    "usphone": "smuːð",
+    "ukphone": "smuːð"
+  },
+  {
+    "name": "rough",
+    "trans": [
+      "adj. 粗糙的；粗略的"
+    ],
+    "usphone": "rʌf",
+    "ukphone": "rʌf"
+  },
+  {
+    "name": "sandy",
+    "trans": [
+      "adj. 铺满沙的；含沙的"
+    ],
+    "usphone": "ˈsændi",
+    "ukphone": "ˈsændi"
+  },
+  {
+    "name": "stony",
+    "trans": [
+      "adj. 石头的；多石的"
+    ],
+    "usphone": "ˈstəʊni",
+    "ukphone": "ˈstəʊni"
+  },
+  {
+    "name": "vertical",
+    "trans": [
+      "adj. 垂直的，直立的"
+    ],
+    "usphone": "ˈvɜːtɪkəl",
+    "ukphone": "ˈvɜːtɪkəl"
+  },
+  {
+    "name": "steep",
+    "trans": [
+      "adj. 陡峭的，陡直的"
+    ],
+    "usphone": "stiːp",
+    "ukphone": "stiːp"
+  },
+  {
+    "name": "parallel",
+    "trans": [
+      "adj. 平行的；相似"
+    ],
+    "usphone": "ˈpærəlel",
+    "ukphone": "ˈpærəlel"
+  },
+  {
+    "name": "narrow",
+    "trans": [
+      "adj. 狭窄的；有局限的"
+    ],
+    "usphone": "ˈnærəʊ",
+    "ukphone": "ˈnærəʊ"
+  },
+  {
+    "name": "Oceania",
+    "trans": [
+      "n. 大洋洲"
+    ],
+    "usphone": "ˌəʊʃiˈɑːniə",
+    "ukphone": "ˌəʊʃiˈɑːniə"
+  },
+  {
+    "name": "mainland",
+    "trans": [
+      "n. 大陆，本土"
+    ],
+    "usphone": "ˈmeɪnlænd",
+    "ukphone": "ˈmeɪnlænd"
+  },
+  {
+    "name": "peninsula",
+    "trans": [
+      "n. 半岛"
+    ],
+    "usphone": "pɪˈnɪnsjʊlə",
+    "ukphone": "pɪˈnɪnsjʊlə"
+  },
+  {
+    "name": "climate",
+    "trans": [
+      "n. 气候；风气，思潮，环境"
+    ],
+    "usphone": "ˈklaɪmɪt",
+    "ukphone": "ˈklaɪmɪt"
+  },
+  {
+    "name": "weather",
+    "trans": [
+      "n. 天气，气象"
+    ],
+    "usphone": "ˈweðə",
+    "ukphone": "ˈweðə"
+  },
+  {
+    "name": "meteorology",
+    "trans": [
+      "n. 气象学"
+    ],
+    "usphone": "ˌmiːtiəˈrɒlədʒi",
+    "ukphone": "ˌmiːtiəˈrɒlədʒi"
+  },
+  {
+    "name": "mild",
+    "trans": [
+      "adj. 温和的；不严重的"
+    ],
+    "usphone": "maɪld",
+    "ukphone": "maɪld"
+  },
+  {
+    "name": "heating",
+    "trans": [
+      "n. 供暖；暖气装置"
+    ],
+    "usphone": "ˈhiːtɪŋ",
+    "ukphone": "ˈhiːtɪŋ"
+  },
+  {
+    "name": "moderate",
+    "trans": [
+      "adj. 适度的；温和的；中等的"
+    ],
+    "usphone": "ˈmɒdərɪt",
+    "ukphone": "ˈmɒdərɪt"
+  },
+  {
+    "name": "warm",
+    "trans": [
+      "adj. 温暖的"
+    ],
+    "usphone": "wɔːm",
+    "ukphone": "wɔːm"
+  },
+  {
+    "name": "thermal",
+    "trans": [
+      "adj. 热量的"
+    ],
+    "usphone": "ˈθɜːməl",
+    "ukphone": "ˈθɜːməl"
+  },
+  {
+    "name": "tropics",
+    "trans": [
+      "n. 热带地区"
+    ],
+    "usphone": "ˈtrɒpɪks",
+    "ukphone": "ˈtrɒpɪks"
+  },
+  {
+    "name": "arid",
+    "trans": [
+      "adj. 干燥的，干旱的；枯燥的"
+    ],
+    "usphone": "ˈærɪd",
+    "ukphone": "ˈærɪd"
+  },
+  {
+    "name": "moist",
+    "trans": [
+      "adj. 潮湿的，湿润的"
+    ],
+    "usphone": "mɔɪst",
+    "ukphone": "mɔɪst"
+  },
+  {
+    "name": "damp",
+    "trans": [
+      "adj. 潮湿的，湿气重的"
+    ],
+    "usphone": "dæmp",
+    "ukphone": "dæmp"
+  },
+  {
+    "name": "humid",
+    "trans": [
+      "adj. 潮湿的，湿热的"
+    ],
+    "usphone": "ˈhjuːmɪd",
+    "ukphone": "ˈhjuːmɪd"
+  },
+  {
+    "name": "snowy",
+    "trans": [
+      "adj. 下雪多的；被雪覆盖的"
+    ],
+    "usphone": "ˈsnəʊi",
+    "ukphone": "ˈsnəʊi"
+  },
+  {
+    "name": "frost",
+    "trans": [
+      "n. 霜；霜冻；严寒"
+    ],
+    "usphone": "frɒst",
+    "ukphone": "frɒst"
+  },
+  {
+    "name": "hail",
+    "trans": [
+      "n. 雹，冰雹"
+    ],
+    "usphone": "heɪl",
+    "ukphone": "heɪl"
+  },
+  {
+    "name": "thaw",
+    "trans": [
+      "v. 解冻，融解，融化"
+    ],
+    "usphone": "θɔː",
+    "ukphone": "θɔː"
+  },
+  {
+    "name": "chill",
+    "trans": [
+      "n. 寒冷；害怕"
+    ],
+    "usphone": "tʃɪl",
+    "ukphone": "tʃɪl"
+  },
+  {
+    "name": "freeze",
+    "trans": [
+      "v. 结冰；霜冻；严寒期"
+    ],
+    "usphone": "friːz",
+    "ukphone": "friːz"
+  },
+  {
+    "name": "frigid",
+    "trans": [
+      "adj. 寒冷的"
+    ],
+    "usphone": "ˈfrɪdʒɪd",
+    "ukphone": "ˈfrɪdʒɪd"
+  },
+  {
+    "name": "tremble",
+    "trans": [
+      "v. 战栗，颤抖"
+    ],
+    "usphone": "ˈtrembəl",
+    "ukphone": "ˈtrembəl"
+  },
+  {
+    "name": "shiver",
+    "trans": [
+      "v. 颤抖，哆嗦，发抖"
+    ],
+    "usphone": "ˈʃɪvə",
+    "ukphone": "ˈʃɪvə"
+  },
+  {
+    "name": "thunder",
+    "trans": [
+      "n. 雷；雷声"
+    ],
+    "usphone": "ˈθʌndə",
+    "ukphone": "ˈθʌndə"
+  },
+  {
+    "name": "lightning",
+    "trans": [
+      "n. 闪电"
+    ],
+    "usphone": "ˈlaɪtnɪŋ",
+    "ukphone": "ˈlaɪtnɪŋ"
+  },
+  {
+    "name": "stormy",
+    "trans": [
+      "adj. 有暴风雨的；争吵激烈的；波涛汹涌的"
+    ],
+    "usphone": "ˈstɔːmi",
+    "ukphone": "ˈstɔːmi"
+  },
+  {
+    "name": "downpour",
+    "trans": [
+      "n. 倾盆大雨"
+    ],
+    "usphone": "ˈdaʊnpɔː",
+    "ukphone": "ˈdaʊnpɔː"
+  },
+  {
+    "name": "rainfall",
+    "trans": [
+      "n. 降雨量"
+    ],
+    "usphone": "ˈreɪnfɔːl",
+    "ukphone": "ˈreɪnfɔːl"
+  },
+  {
+    "name": "sprinkle",
+    "trans": [
+      "v. 撒，洒；下小雨"
+    ],
+    "usphone": "ˈsprɪŋkl",
+    "ukphone": "ˈsprɪŋkl"
+  },
+  {
+    "name": "rainbow",
+    "trans": [
+      "n. 虹，彩虹"
+    ],
+    "usphone": "ˈreɪnbəʊ",
+    "ukphone": "ˈreɪnbəʊ"
+  },
+  {
+    "name": "shower",
+    "trans": [
+      "n. 阵雨；淋浴"
+    ],
+    "usphone": "ˈʃaʊə",
+    "ukphone": "ˈʃaʊə"
+  },
+  {
+    "name": "Celsius",
+    "trans": [
+      "adj. 摄氏的"
+    ],
+    "usphone": "ˈselsiəs",
+    "ukphone": "ˈselsiəs"
+  },
+  {
+    "name": "temperature",
+    "trans": [
+      "n. 气温；体温；温度"
+    ],
+    "usphone": "ˈtemprɪtʃə",
+    "ukphone": "ˈtemprɪtʃə"
+  },
+  {
+    "name": "forecast",
+    "trans": [
+      "n. 预测，预报"
+    ],
+    "usphone": "ˈfɔːkɑːst",
+    "ukphone": "ˈfɔːkɑːst"
+  },
+  {
+    "name": "peak",
+    "trans": [
+      "n. 山峰；顶点"
+    ],
+    "usphone": "piːk",
+    "ukphone": "piːk"
+  },
+  {
+    "name": "mount",
+    "trans": [
+      "v. 渐渐增加；爬上，登上"
+    ],
+    "usphone": "maʊnt",
+    "ukphone": "maʊnt"
+  },
+  {
+    "name": "mountain",
+    "trans": [
+      "n. 山，山岳，高山"
+    ],
+    "usphone": "ˈmaʊntɪn",
+    "ukphone": "ˈmaʊntɪn"
+  },
+  {
+    "name": "range",
+    "trans": [
+      "n. 山脉；范围"
+    ],
+    "usphone": "reɪndʒ",
+    "ukphone": "reɪndʒ"
+  },
+  {
+    "name": "ridge",
+    "trans": [
+      "n. 山脊，山脉"
+    ],
+    "usphone": "rɪdʒ",
+    "ukphone": "rɪdʒ"
+  },
+  {
+    "name": "slope",
+    "trans": [
+      "n. 山坡；斜坡"
+    ],
+    "usphone": "sləʊp",
+    "ukphone": "sləʊp"
+  },
+  {
+    "name": "valley",
+    "trans": [
+      "n. 山谷，溪谷"
+    ],
+    "usphone": "ˈvæli",
+    "ukphone": "ˈvæli"
+  },
+  {
+    "name": "hillside",
+    "trans": [
+      "n. 山腰，山坡"
+    ],
+    "usphone": "ˈhɪlsaɪd",
+    "ukphone": "ˈhɪlsaɪd"
+  },
+  {
+    "name": "overlook",
+    "trans": [
+      "v. 俯瞰，远眺；未注意到"
+    ],
+    "usphone": "ˌəʊvəˈlʊk",
+    "ukphone": "ˌəʊvəˈlʊk"
+  },
+  {
+    "name": "southern",
+    "trans": [
+      "adj. 南部的；南方的"
+    ],
+    "usphone": "ˈsʌðən",
+    "ukphone": "ˈsʌðən"
+  },
+  {
+    "name": "southeast",
+    "trans": [
+      "n. 东南方；东南部"
+    ],
+    "usphone": "ˌsaʊθˈiːst",
+    "ukphone": "ˌsaʊθˈiːst"
+  },
+  {
+    "name": "southwest",
+    "trans": [
+      "n. 西南方；西南部"
+    ],
+    "usphone": "ˌsaʊθˈwest",
+    "ukphone": "ˌsaʊθˈwest"
+  },
+  {
+    "name": "northeast",
+    "trans": [
+      "n. 东北方；东北部"
+    ],
+    "usphone": "ˌnɔːθˈiːst",
+    "ukphone": "ˌnɔːθˈiːst"
+  },
+  {
+    "name": "northwest",
+    "trans": [
+      "n. 西北方；西北部"
+    ],
+    "usphone": "ˌnɔːθˈwest",
+    "ukphone": "ˌnɔːθˈwest"
+  },
+  {
+    "name": "eastern",
+    "trans": [
+      "adj. 东部的；东方的"
+    ],
+    "usphone": "ˈiːstən",
+    "ukphone": "ˈiːstən"
+  },
+  {
+    "name": "oriental",
+    "trans": [
+      "adj. 东方的（尤指中国和日本的）"
+    ],
+    "usphone": "ˌɔːriˈentl",
+    "ukphone": "ˌɔːriˈentl"
+  },
+  {
+    "name": "inevitable",
+    "trans": [
+      "adj. 不可避免的，必然的"
+    ],
+    "usphone": "ɪnˈevɪtəbl",
+    "ukphone": "ɪnˈevɪtəbl"
+  },
+  {
+    "name": "irreversible",
+    "trans": [
+      "adj. 不可逆转的；不可挽回的"
+    ],
+    "usphone": "ˌɪrɪˈvɜːsɪbəl",
+    "ukphone": "ˌɪrɪˈvɜːsɪbəl"
+  },
+  {
+    "name": "irregularly",
+    "trans": [
+      "adv. 不规则地；不合常规地"
+    ],
+    "usphone": "ɪˈreɡjʊləli",
+    "ukphone": "ɪˈreɡjʊləli"
+  },
+  {
+    "name": "inappropriate",
+    "trans": [
+      "adj. 不合适的"
+    ],
+    "usphone": "ˌɪnəˈprəʊpriɪt",
+    "ukphone": "ˌɪnəˈprəʊpriɪt"
+  },
+  {
+    "name": "abnormal",
+    "trans": [
+      "adj. 不正常的，反常的；变态的"
+    ],
+    "usphone": "æbˈnɔːməl",
+    "ukphone": "æbˈnɔːməl"
+  },
+  {
+    "name": "sediment",
+    "trans": [
+      "n. 沉淀物；沉积物"
+    ],
+    "usphone": "ˈsedɪmənt",
+    "ukphone": "ˈsedɪmənt"
+  },
+  {
+    "name": "silt",
+    "trans": [
+      "n. 淤泥，泥沙"
+    ],
+    "usphone": "sɪlt",
+    "ukphone": "sɪlt"
+  },
+  {
+    "name": "muddy",
+    "trans": [
+      "adj. 泥泞的；浑浊的"
+    ],
+    "usphone": "ˈmʌdi",
+    "ukphone": "ˈmʌdi"
+  },
+  {
+    "name": "clay",
+    "trans": [
+      "n. 黏土，陶土"
+    ],
+    "usphone": "kleɪ",
+    "ukphone": "kleɪ"
+  },
+  {
+    "name": "dirt",
+    "trans": [
+      "n. 污垢，灰尘；泥土"
+    ],
+    "usphone": "dɜːt",
+    "ukphone": "dɜːt"
+  },
+  {
+    "name": "rural",
+    "trans": [
+      "adj. 农村的，乡村的；田园的"
+    ],
+    "usphone": "ˈrʊərəl",
+    "ukphone": "ˈrʊərəl"
+  },
+  {
+    "name": "suburb",
+    "trans": [
+      "n. 郊区，郊外，近郊"
+    ],
+    "usphone": "ˈsʌbɜːb",
+    "ukphone": "ˈsʌbɜːb"
+  },
+  {
+    "name": "outskirts",
+    "trans": [
+      "n. 郊区，市郊"
+    ],
+    "usphone": "ˈaʊtskɜːts",
+    "ukphone": "ˈaʊtskɜːts"
+  },
+  {
+    "name": "remote",
+    "trans": [
+      "adj. 遥远的；偏僻的；疏远的"
+    ],
+    "usphone": "rɪˈməʊt",
+    "ukphone": "rɪˈməʊt"
+  },
+  {
+    "name": "desolate",
+    "trans": [
+      "adj. 荒凉的"
+    ],
+    "usphone": "ˈdesələt",
+    "ukphone": "ˈdesələt"
+  },
+  {
+    "name": "distant",
+    "trans": [
+      "adj. 疏远的；遥远的"
+    ],
+    "usphone": "ˈdɪstənt",
+    "ukphone": "ˈdɪstənt"
+  },
+  {
+    "name": "adjacent",
+    "trans": [
+      "adj. 邻近的，毗连的"
+    ],
+    "usphone": "əˈdʒeɪsənt",
+    "ukphone": "əˈdʒeɪsənt"
+  },
+  {
+    "name": "toxic",
+    "trans": [
+      "adj. 有毒的"
+    ],
+    "usphone": "ˈtɒksɪk",
+    "ukphone": "ˈtɒksɪk"
+  },
+  {
+    "name": "pollution",
+    "trans": [
+      "n. 污染"
+    ],
+    "usphone": "pəˈljuːʃən",
+    "ukphone": "pəˈljuːʃən"
+  },
+  {
+    "name": "pollutant",
+    "trans": [
+      "n. 污染物质"
+    ],
+    "usphone": "pəˈljuːtənt",
+    "ukphone": "pəˈljuːtənt"
+  },
+  {
+    "name": "contaminate",
+    "trans": [
+      "v. 弄脏，污染"
+    ],
+    "usphone": "kənˈtæmɪneɪt",
+    "ukphone": "kənˈtæmɪneɪt"
+  },
+  {
+    "name": "geology",
+    "trans": [
+      "n. 地质学；地质状况"
+    ],
+    "usphone": "dʒiˈɒlədʒi",
+    "ukphone": "dʒiˈɒlədʒi"
+  },
+  {
+    "name": "border",
+    "trans": [
+      "n. 边界；边界地区；镶边"
+    ],
+    "usphone": "ˈbɔːdə",
+    "ukphone": "ˈbɔːdə"
+  },
+  {
+    "name": "margin",
+    "trans": [
+      "n. 边缘；页边空白；余地"
+    ],
+    "usphone": "ˈmɑːdʒɪn",
+    "ukphone": "ˈmɑːdʒɪn"
+  },
+  {
+    "name": "fringe",
+    "trans": [
+      "n. 边缘；刘海儿"
+    ],
+    "usphone": "frɪndʒ",
+    "ukphone": "frɪndʒ"
+  },
+  {
+    "name": "plate",
+    "trans": [
+      "n. 板块；盘"
+    ],
+    "usphone": "pleɪt",
+    "ukphone": "pleɪt"
+  },
+  {
+    "name": "debris",
+    "trans": [
+      "n. 碎片，残骸"
+    ],
+    "usphone": "ˈdebriː",
+    "ukphone": "ˈdebriː"
+  },
+  {
+    "name": "crack",
+    "trans": [
+      "v. 破裂；发出爆裂声"
+    ],
+    "usphone": "kræk",
+    "ukphone": "kræk"
+  },
+  {
+    "name": "gap",
+    "trans": [
+      "n. 缺口，裂缝；差距；空白"
+    ],
+    "usphone": "ɡæp",
+    "ukphone": "ɡæp"
+  },
+  {
+    "name": "splendid",
+    "trans": [
+      "adj. 极好的；壮观的"
+    ],
+    "usphone": "ˈsplendɪd",
+    "ukphone": "ˈsplendɪd"
+  },
+  {
+    "name": "grand",
+    "trans": [
+      "adj. 宏大的；豪华的，宏伟的；极好的"
+    ],
+    "usphone": "ɡrænd",
+    "ukphone": "ɡrænd"
+  },
+  {
+    "name": "magnificent",
+    "trans": [
+      "adj. 壮丽的，宏伟的；令人印象深刻的"
+    ],
+    "usphone": "mæɡˈnɪfɪsənt",
+    "ukphone": "mæɡˈnɪfɪsənt"
+  },
+  {
+    "name": "super",
+    "trans": [
+      "adj. 超级的，极好的"
+    ],
+    "usphone": "ˈsuːpə",
+    "ukphone": "ˈsuːpə"
+  },
+  {
+    "name": "interesting",
+    "trans": [
+      "adj. 有趣的；引人入胜的"
+    ],
+    "usphone": "ˈɪntrɪstɪŋ",
+    "ukphone": "ˈɪntrɪstɪŋ"
+  },
+  {
+    "name": "dramatic",
+    "trans": [
+      "adj. 戏剧的；引人注目的"
+    ],
+    "usphone": "drəˈmætɪk",
+    "ukphone": "drəˈmætɪk"
+  },
+  {
+    "name": "wilderness",
+    "trans": [
+      "n. 荒野"
+    ],
+    "usphone": "ˈwɪldənɪs",
+    "ukphone": "ˈwɪldənɪs"
+  },
+  {
+    "name": "desert",
+    "trans": [
+      "n. 沙漠"
+    ],
+    "usphone": "ˈdezət",
+    "ukphone": "ˈdezət"
+  },
+  {
+    "name": "deforest",
+    "trans": [
+      "v. 毁掉森林"
+    ],
+    "usphone": "diːˈfɒrɪst",
+    "ukphone": "diːˈfɒrɪst"
+  },
+  {
+    "name": "barren",
+    "trans": [
+      "adj. 贫瘠的，荒芜的；不结果实的"
+    ],
+    "usphone": "ˈbærən",
+    "ukphone": "ˈbærən"
+  },
+  {
+    "name": "fertile",
+    "trans": [
+      "adj. 肥沃的，富饶的"
+    ],
+    "usphone": "ˈfɜːtaɪl",
+    "ukphone": "ˈfɜːtaɪl"
+  },
+  {
+    "name": "fertilise",
+    "trans": [
+      "v. 施肥于"
+    ],
+    "usphone": "ˈfɜːtɪlaɪz",
+    "ukphone": "ˈfɜːtɪlaɪz"
+  },
+  {
+    "name": "solar",
+    "trans": [
+      "adj. 太阳的，日光的"
+    ],
+    "usphone": "ˈsəʊlə",
+    "ukphone": "ˈsəʊlə"
+  },
+  {
+    "name": "lunar",
+    "trans": [
+      "adj. 月亮的，月球的"
+    ],
+    "usphone": "ˈluːnə",
+    "ukphone": "ˈluːnə"
+  },
+  {
+    "name": "calendar",
+    "trans": [
+      "n. 日历；历法"
+    ],
+    "usphone": "ˈkælɪndə",
+    "ukphone": "ˈkælɪndə"
+  },
+  {
+    "name": "sunrise",
+    "trans": [
+      "n. 日出"
+    ],
+    "usphone": "ˈsʌnraɪz",
+    "ukphone": "ˈsʌnraɪz"
+  },
+  {
+    "name": "sunset",
+    "trans": [
+      "n. 日落"
+    ],
+    "usphone": "ˈsʌnset",
+    "ukphone": "ˈsʌnset"
+  },
+  {
+    "name": "eclipse",
+    "trans": [
+      "n. 日食；月食"
+    ],
+    "usphone": "ɪˈklɪps",
+    "ukphone": "ɪˈklɪps"
+  },
+  {
+    "name": "dusk",
+    "trans": [
+      "n. 黄昏，傍晚"
+    ],
+    "usphone": "dʌsk",
+    "ukphone": "dʌsk"
+  },
+  {
+    "name": "heaven",
+    "trans": [
+      "n. 天堂；极乐之地；天空"
+    ],
+    "usphone": "ˈhevn",
+    "ukphone": "ˈhevn"
+  },
+  {
+    "name": "paradise",
+    "trans": [
+      "n. 天堂；乐园，福地"
+    ],
+    "usphone": "ˈpærədaɪs",
+    "ukphone": "ˈpærədaɪs"
+  },
+  {
+    "name": "drip",
+    "trans": [
+      "v. 滴出（液体）；滴下"
+    ],
+    "usphone": "drɪp",
+    "ukphone": "drɪp"
+  },
+  {
+    "name": "drown",
+    "trans": [
+      "v. （使）淹死；浸泡"
+    ],
+    "usphone": "draʊn",
+    "ukphone": "draʊn"
+  },
+  {
+    "name": "blow",
+    "trans": [
+      "v. 吹；（风）吹"
+    ],
+    "usphone": "bləʊ",
+    "ukphone": "bləʊ"
+  },
+  {
+    "name": "puff",
+    "trans": [
+      "n. （吹出的）一股，一缕"
+    ],
+    "usphone": "pʌf",
+    "ukphone": "pʌf"
+  },
+  {
+    "name": "gush",
+    "trans": [
+      "v. 涌出"
+    ],
+    "usphone": "ɡʌʃ",
+    "ukphone": "ɡʌʃ"
+  },
+  {
+    "name": "dense",
+    "trans": [
+      "adj. 密集的；稠密的"
+    ],
+    "usphone": "dens",
+    "ukphone": "dens"
+  },
+  {
+    "name": "intensity",
+    "trans": [
+      "n. 强度；强烈"
+    ],
+    "usphone": "ɪnˈtensɪti",
+    "ukphone": "ɪnˈtensɪti"
+  },
+  {
+    "name": "intensive",
+    "trans": [
+      "adj. 加强的，集中的，密集的"
+    ],
+    "usphone": "ɪnˈtensɪv",
+    "ukphone": "ɪnˈtensɪv"
+  },
+  {
+    "name": "emerge",
+    "trans": [
+      "v. 浮现，露出；暴露"
+    ],
+    "usphone": "ɪˈmɜːdʒ",
+    "ukphone": "ɪˈmɜːdʒ"
+  },
+  {
+    "name": "flash",
+    "trans": [
+      "v. （使）闪光；（使）闪现；快速发送"
+    ],
+    "usphone": "flæʃ",
+    "ukphone": "flæʃ"
+  },
+  {
+    "name": "float",
+    "trans": [
+      "v. 漂浮；飘浮"
+    ],
+    "usphone": "fləʊt",
+    "ukphone": "fləʊt"
+  },
+  {
+    "name": "environment",
+    "trans": [
+      "n. 自然环境；环境，周围状况"
+    ],
+    "usphone": "ɪnˈvaɪrənmənt",
+    "ukphone": "ɪnˈvaɪrənmənt"
+  },
+  {
+    "name": "surrounding",
+    "trans": [
+      "adj. 周围的，附近的"
+    ],
+    "usphone": "səˈraʊndɪŋ",
+    "ukphone": "səˈraʊndɪŋ"
+  },
+  {
+    "name": "condition",
+    "trans": [
+      "n. 条件；情况，状态"
+    ],
+    "usphone": "kənˈdɪʃən",
+    "ukphone": "kənˈdɪʃən"
+  },
+  {
+    "name": "situation",
+    "trans": [
+      "n. 情况，处境，形势"
+    ],
+    "usphone": "ˌsɪtjuˈeɪʃən",
+    "ukphone": "ˌsɪtjuˈeɪʃən"
+  },
+  {
+    "name": "nature",
+    "trans": [
+      "n. 大自然；本性；性质"
+    ],
+    "usphone": "ˈneɪtʃə",
+    "ukphone": "ˈneɪtʃə"
+  },
+  {
+    "name": "natural",
+    "trans": [
+      "adj. 自然的；天然的"
+    ],
+    "usphone": "ˈnætʃrəl",
+    "ukphone": "ˈnætʃrəl"
+  },
+  {
+    "name": "artificial",
+    "trans": [
+      "adj. 人造的"
+    ],
+    "usphone": "ˌɑːtɪˈfɪʃəl",
+    "ukphone": "ˌɑːtɪˈfɪʃəl"
+  },
+  {
+    "name": "synthetic",
+    "trans": [
+      "adj. 人造的，合成的"
+    ],
+    "usphone": "sɪnˈθetɪk",
+    "ukphone": "sɪnˈθetɪk"
+  },
+  {
+    "name": "petrol",
+    "trans": [
+      "n. 汽油"
+    ],
+    "usphone": "ˈpetrəl",
+    "ukphone": "ˈpetrəl"
+  },
+  {
+    "name": "gas",
+    "trans": [
+      "n. 气体；汽油"
+    ],
+    "usphone": "ɡæs",
+    "ukphone": "ɡæs"
+  },
+  {
+    "name": "gasoline",
+    "trans": [
+      "n. 汽油"
+    ],
+    "usphone": "ˈɡæsəliːn",
+    "ukphone": "ˈɡæsəliːn"
+  },
+  {
+    "name": "petroleum",
+    "trans": [
+      "n. 石油"
+    ],
+    "usphone": "pɪˈtrəʊliəm",
+    "ukphone": "pɪˈtrəʊliəm"
+  }
+]
