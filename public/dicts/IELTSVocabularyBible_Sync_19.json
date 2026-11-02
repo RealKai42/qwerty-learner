@@ -1,0 +1,994 @@
+[
+  {
+    "name": "pioneer",
+    "trans": [
+      "n. 先驱，开创者"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "prophet",
+    "trans": [
+      "n. 先知；预言家"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "herald",
+    "trans": [
+      "n. 使者，传令官；先驱，预兆 / v. 预告；宣布"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "heir",
+    "trans": [
+      "n. 后嗣；继承人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "successor",
+    "trans": [
+      "n. 接替者，继任者"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "generation",
+    "trans": [
+      "n. 一代；一代人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "surname",
+    "trans": [
+      "n. 姓 / v. 给......起别名"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "gender",
+    "trans": [
+      "n. 性别"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sex",
+    "trans": [
+      "n. 性别；性行为"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "female",
+    "trans": [
+      "adj. 女子的；雌性的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "male",
+    "trans": [
+      "adj. 男子的；雄性的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "couple",
+    "trans": [
+      "n. 夫妻，情侣；两个，几个"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "spouse",
+    "trans": [
+      "n. 配偶"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "husband",
+    "trans": [
+      "n. 丈夫"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wife",
+    "trans": [
+      "n. 妻子"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "gay",
+    "trans": [
+      "adj. 同性恋者（尤指男性）；快乐的；艳丽的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lesbian",
+    "trans": [
+      "n. 同性恋者（女性）"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "niece",
+    "trans": [
+      "n. 侄女；外甥女"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nephew",
+    "trans": [
+      "n. 侄子；外甥"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "twin",
+    "trans": [
+      "n. 双胞胎之一"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "grandfather",
+    "trans": [
+      "n. 祖父；外祖父"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "grandmother",
+    "trans": [
+      "n. 祖母；外祖母"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "grandchild",
+    "trans": [
+      "n. 孙子女；外孙子女"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "grandson",
+    "trans": [
+      "n. 孙子；外孙"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "granddaughter",
+    "trans": [
+      "n. 孙女；外孙女"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "father-in-law",
+    "trans": [
+      "n. 岳父；公公"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mother-in-law",
+    "trans": [
+      "n. 岳母；婆婆"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sister-in-law",
+    "trans": [
+      "n. 嫂子；弟媳；大/小姑子；大/小姨子"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "brother-in-law",
+    "trans": [
+      "n. 姐夫；妹夫；大伯/小叔；大/小舅子"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sibling",
+    "trans": [
+      "n. 兄、弟、姐、妹"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cousin",
+    "trans": [
+      "n. 堂（表）兄/弟/姐/妹"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "embryo",
+    "trans": [
+      "n. 胚胎 / adj. 胚胎的；初期的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "infant",
+    "trans": [
+      "n. 婴儿 / adj. 供婴儿用的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "orphan",
+    "trans": [
+      "n. 孤儿 / v. 使成为孤儿"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "juvenile",
+    "trans": [
+      "adj. 少年的 / n. 少年"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "youngster",
+    "trans": [
+      "n. 年轻人；少年"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "youth",
+    "trans": [
+      "n. 青年时期；青春；青年"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "adolescence",
+    "trans": [
+      "n. 青春期"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "teenager",
+    "trans": [
+      "n. 13至19岁的青少年"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "gang",
+    "trans": [
+      "n. 一帮，一伙（常指闹事青年）"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "kin",
+    "trans": [
+      "n. 家属，亲戚"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "folk",
+    "trans": [
+      "n. 人们；家属"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "relative",
+    "trans": [
+      "n. 亲戚"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "relation",
+    "trans": [
+      "n. 亲戚"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "intimate",
+    "trans": [
+      "adj. 亲密的；个人隐私的 / n. 密友，至交"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dear",
+    "trans": [
+      "adj. 亲爱的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "darling",
+    "trans": [
+      "n. 亲爱的（人）"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lover",
+    "trans": [
+      "n. 爱好者；（婚外的）情人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "beloved",
+    "trans": [
+      "adj. 深受喜爱的 / n. 爱人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "madam",
+    "trans": [
+      "n. 夫人，女士"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hostess",
+    "trans": [
+      "n. 女主人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "landlady",
+    "trans": [
+      "n. 女房东；女地主"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mistress",
+    "trans": [
+      "n. 女主人；情妇"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "housewife",
+    "trans": [
+      "n. 家庭主妇"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "widow",
+    "trans": [
+      "n. 寡妇"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "maid",
+    "trans": [
+      "n. 女佣；少女"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "maiden",
+    "trans": [
+      "n. 少女"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "household",
+    "trans": [
+      "n. 家庭，一户；家务"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "chore",
+    "trans": [
+      "n. 家庭杂务；乏味的工作"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "host",
+    "trans": [
+      "n. 主人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "landlord",
+    "trans": [
+      "n. 房东；地主"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "guest",
+    "trans": [
+      "n. 客人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "customer",
+    "trans": [
+      "n. 顾客"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "client",
+    "trans": [
+      "n. 客户，委托人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tenant",
+    "trans": [
+      "n. 房客；租户"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "encounter",
+    "trans": [
+      "v./n. 遭遇；偶遇"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "chase",
+    "trans": [
+      "v./n. 追逐；追求"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "appointment",
+    "trans": [
+      "n. 约会；指派"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "accompany",
+    "trans": [
+      "v. 陪伴；伴随"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dependent",
+    "trans": [
+      "adj. 依靠的，依赖的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "propose",
+    "trans": [
+      "v. 提议；求婚"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "engagement",
+    "trans": [
+      "n. 婚约；约定"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "marry",
+    "trans": [
+      "v. 结婚"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "marriage",
+    "trans": [
+      "n. 婚姻"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "married",
+    "trans": [
+      "adj. 已婚的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wedding",
+    "trans": [
+      "n. 婚礼"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "honeymoon",
+    "trans": [
+      "n. 蜜月"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "respective",
+    "trans": [
+      "adj. 各自的，分别的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "each",
+    "trans": [
+      "det./pron. 每个，各自"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "individual",
+    "trans": [
+      "n. 个人，个体"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "single",
+    "trans": [
+      "adj. 单一的；单身的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sole",
+    "trans": [
+      "adj. 仅有的，唯一的"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "divorce",
+    "trans": [
+      "v./n. 离婚；脱离"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "separate",
+    "trans": [
+      "adj. 分开的 / v. 分离"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "neighbourhood",
+    "trans": [
+      "n. 街坊；居住区"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "member",
+    "trans": [
+      "n. 成员"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "membership",
+    "trans": [
+      "n. 成员资格"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "boss",
+    "trans": [
+      "n. 老板"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "manager",
+    "trans": [
+      "n. 经理"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "supervisor",
+    "trans": [
+      "n. 主管，监督人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "subordinate",
+    "trans": [
+      "n. 下级，下属"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "partner",
+    "trans": [
+      "n. 伙伴，搭档"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mate",
+    "trans": [
+      "n. 伙伴；伴侣"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "colleague",
+    "trans": [
+      "n. 同事"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "comrade",
+    "trans": [
+      "n. 同志；同事，伙伴"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "acquaintance",
+    "trans": [
+      "n. 相识的人；了解"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "friendship",
+    "trans": [
+      "n. 友谊"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "affection",
+    "trans": [
+      "n. 喜爱，感情"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "stranger",
+    "trans": [
+      "n. 陌生人"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "apprentice",
+    "trans": [
+      "n. 学徒"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "deputy",
+    "trans": [
+      "n. 代理人，副手"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hero",
+    "trans": [
+      "n. 男主角；英雄"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "heroine",
+    "trans": [
+      "n. 女主角；女英雄"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "proponent",
+    "trans": [
+      "n. 拥护者"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "opponent",
+    "trans": [
+      "n. 反对者"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "committee",
+    "trans": [
+      "n. 委员会"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "council",
+    "trans": [
+      "n. 委员会；议会"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "actor",
+    "trans": [
+      "n. 演员"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "actress",
+    "trans": [
+      "n. 女演员"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "delegate",
+    "trans": [
+      "n. 代表 / v. 授权，委派"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "chancellor",
+    "trans": [
+      "n. 总理；财政大臣"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "specialist",
+    "trans": [
+      "n. 专家；专科医生"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "commander",
+    "trans": [
+      "n. 指挥官"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "director",
+    "trans": [
+      "n. 董事；导演；主任"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "consultant",
+    "trans": [
+      "n. 顾问"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "butcher",
+    "trans": [
+      "n. 屠夫"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "groom",
+    "trans": [
+      "n. 马夫；新郎"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bridegroom",
+    "trans": [
+      "n. 新郎"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bride",
+    "trans": [
+      "n. 新娘"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hostage",
+    "trans": [
+      "n. 人质"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "toil",
+    "trans": [
+      "n. 苦工；辛勤劳作"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "beggar",
+    "trans": [
+      "n. 乞丐"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "slave",
+    "trans": [
+      "n. 奴隶"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "coward",
+    "trans": [
+      "n. 懦夫，胆小鬼"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  }
+]

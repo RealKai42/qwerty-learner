@@ -1,0 +1,1370 @@
+[
+  {
+    "name": "economy",
+    "trans": [
+      "n. 经济；节约"
+    ],
+    "usphone": "iˈkɒnəmi",
+    "ukphone": "iˈkɒnəmi"
+  },
+  {
+    "name": "trade",
+    "trans": [
+      "n. 贸易 v. 交换"
+    ],
+    "usphone": "treɪd",
+    "ukphone": "treɪd"
+  },
+  {
+    "name": "market",
+    "trans": [
+      "n. 市场；市场需求"
+    ],
+    "usphone": "ˈmɑːkɪt",
+    "ukphone": "ˈmɑːkɪt"
+  },
+  {
+    "name": "industry",
+    "trans": [
+      "n. 工业；产业；勤劳"
+    ],
+    "usphone": "ˈɪndəstri",
+    "ukphone": "ˈɪndəstri"
+  },
+  {
+    "name": "merchant",
+    "trans": [
+      "n. 商人 adj. 商业的"
+    ],
+    "usphone": "ˈmɜːtʃənt",
+    "ukphone": "ˈmɜːtʃənt"
+  },
+  {
+    "name": "financial",
+    "trans": [
+      "adj. 财政的；金融的"
+    ],
+    "usphone": "faɪˈnænʃəl",
+    "ukphone": "faɪˈnænʃəl"
+  },
+  {
+    "name": "fund",
+    "trans": [
+      "v. 资助 n. 基金；[-s] 资金"
+    ],
+    "usphone": "fʌnd",
+    "ukphone": "fʌnd"
+  },
+  {
+    "name": "donate",
+    "trans": [
+      "v. 捐赠，捐献"
+    ],
+    "usphone": "dəʊˈneɪt",
+    "ukphone": "dəʊˈneɪt"
+  },
+  {
+    "name": "endow",
+    "trans": [
+      "v. 捐赠；赋予"
+    ],
+    "usphone": "ɪnˈdaʊ",
+    "ukphone": "ɪnˈdaʊ"
+  },
+  {
+    "name": "commercial",
+    "trans": [
+      "adj. 商业的 n. 商业广告"
+    ],
+    "usphone": "kəˈmɜːʃəl",
+    "ukphone": "kəˈmɜːʃəl"
+  },
+  {
+    "name": "advertise",
+    "trans": [
+      "v. 做广告"
+    ],
+    "usphone": "ˈædvətaɪz",
+    "ukphone": "ˈædvətaɪz"
+  },
+  {
+    "name": "slogan",
+    "trans": [
+      "n. 标语，口号"
+    ],
+    "usphone": "ˈsləʊɡən",
+    "ukphone": "ˈsləʊɡən"
+  },
+  {
+    "name": "purchase",
+    "trans": [
+      "n./v. 购买"
+    ],
+    "usphone": "ˈpɜːtʃɪs",
+    "ukphone": "ˈpɜːtʃɪs"
+  },
+  {
+    "name": "lease",
+    "trans": [
+      "n. 租约 v. 出租；租用"
+    ],
+    "usphone": "liːs",
+    "ukphone": "liːs"
+  },
+  {
+    "name": "afford",
+    "trans": [
+      "v. 负担得起；提供，给予"
+    ],
+    "usphone": "əˈfɔːd",
+    "ukphone": "əˈfɔːd"
+  },
+  {
+    "name": "retail",
+    "trans": [
+      "n. 零售 v. 零售；以......价格零售"
+    ],
+    "usphone": "ˈriːteɪl",
+    "ukphone": "ˈriːteɪl"
+  },
+  {
+    "name": "chain",
+    "trans": [
+      "n. 连锁店；一连串"
+    ],
+    "usphone": "tʃeɪn",
+    "ukphone": "tʃeɪn"
+  },
+  {
+    "name": "grocery",
+    "trans": [
+      "n. 食品杂货店"
+    ],
+    "usphone": "ˈɡrəʊsəri",
+    "ukphone": "ˈɡrəʊsəri"
+  },
+  {
+    "name": "discount",
+    "trans": [
+      "n. 折扣"
+    ],
+    "usphone": "ˈdɪskaʊnt n. dɪsˈkaʊnt v.",
+    "ukphone": "ˈdɪskaʊnt n. dɪsˈkaʊnt v."
+  },
+  {
+    "name": "promotion",
+    "trans": [
+      "n. 促销活动；晋升"
+    ],
+    "usphone": "prəˈməʊʃən",
+    "ukphone": "prəˈməʊʃən"
+  },
+  {
+    "name": "voucher",
+    "trans": [
+      "n. 代金券"
+    ],
+    "usphone": "ˈvaʊtʃə",
+    "ukphone": "ˈvaʊtʃə"
+  },
+  {
+    "name": "coupon",
+    "trans": [
+      "n. 优惠券"
+    ],
+    "usphone": "ˈkuːpɒn",
+    "ukphone": "ˈkuːpɒn"
+  },
+  {
+    "name": "currency",
+    "trans": [
+      "n. 货币；通用，流行"
+    ],
+    "usphone": "ˈkʌrənsi",
+    "ukphone": "ˈkʌrənsi"
+  },
+  {
+    "name": "exchange",
+    "trans": [
+      "n. 交换；兑换"
+    ],
+    "usphone": "ɪksˈtʃeɪndʒ",
+    "ukphone": "ɪksˈtʃeɪndʒ"
+  },
+  {
+    "name": "swap",
+    "trans": [
+      "v./n. 交换"
+    ],
+    "usphone": "swɒp",
+    "ukphone": "swɒp"
+  },
+  {
+    "name": "receipt",
+    "trans": [
+      "n. 收据；收到"
+    ],
+    "usphone": "rɪˈsiːt",
+    "ukphone": "rɪˈsiːt"
+  },
+  {
+    "name": "invoice",
+    "trans": [
+      "n. 发票 v. 开发票给"
+    ],
+    "usphone": "ˈɪnvɔɪs",
+    "ukphone": "ˈɪnvɔɪs"
+  },
+  {
+    "name": "tax",
+    "trans": [
+      "n. 税 v. 对......征税"
+    ],
+    "usphone": "tæks",
+    "ukphone": "tæks"
+  },
+  {
+    "name": "levy",
+    "trans": [
+      "n. 税款 v. 征收，征（税）"
+    ],
+    "usphone": "ˈlevi",
+    "ukphone": "ˈlevi"
+  },
+  {
+    "name": "tariff",
+    "trans": [
+      "n. 关税；（公共服务的）收费"
+    ],
+    "usphone": "ˈtærɪf",
+    "ukphone": "ˈtærɪf"
+  },
+  {
+    "name": "duty",
+    "trans": [
+      "n. 职责；义务；关税"
+    ],
+    "usphone": "ˈdjuːti",
+    "ukphone": "ˈdjuːti"
+  },
+  {
+    "name": "impose",
+    "trans": [
+      "v. 强加；征收（税款）"
+    ],
+    "usphone": "ɪmˈpəʊz",
+    "ukphone": "ɪmˈpəʊz"
+  },
+  {
+    "name": "consume",
+    "trans": [
+      "v. 消耗；吃，喝"
+    ],
+    "usphone": "kənˈsjuːm",
+    "ukphone": "kənˈsjuːm"
+  },
+  {
+    "name": "spend",
+    "trans": [
+      "v. 花费 n. 开支"
+    ],
+    "usphone": "spend",
+    "ukphone": "spend"
+  },
+  {
+    "name": "cost",
+    "trans": [
+      "v. 需付费 n. 费用；代价；[-s] 成本"
+    ],
+    "usphone": "kɒst",
+    "ukphone": "kɒst"
+  },
+  {
+    "name": "expense",
+    "trans": [
+      "n. 费用，花费"
+    ],
+    "usphone": "ɪkˈspens",
+    "ukphone": "ɪkˈspens"
+  },
+  {
+    "name": "revenue",
+    "trans": [
+      "n. （公司、组织的）收入；（政府的）税收"
+    ],
+    "usphone": "ˈrevənjuː",
+    "ukphone": "ˈrevənjuː"
+  },
+  {
+    "name": "gross",
+    "trans": [
+      "adj. 总的，毛的"
+    ],
+    "usphone": "ɡrəʊs",
+    "ukphone": "ɡrəʊs"
+  },
+  {
+    "name": "recession",
+    "trans": [
+      "n. 经济衰退"
+    ],
+    "usphone": "rɪˈseʃən",
+    "ukphone": "rɪˈseʃən"
+  },
+  {
+    "name": "depression",
+    "trans": [
+      "n. 沮丧；萧条期"
+    ],
+    "usphone": "dɪˈpreʃən",
+    "ukphone": "dɪˈpreʃən"
+  },
+  {
+    "name": "crisis",
+    "trans": [
+      "n. 危机"
+    ],
+    "usphone": "ˈkraɪsɪs",
+    "ukphone": "ˈkraɪsɪs"
+  },
+  {
+    "name": "security",
+    "trans": [
+      "n. 安全工作；安全；[securities] 证券"
+    ],
+    "usphone": "sɪˈkjʊərəti",
+    "ukphone": "sɪˈkjʊərəti"
+  },
+  {
+    "name": "bond",
+    "trans": [
+      "n. 债券"
+    ],
+    "usphone": "bɒnd",
+    "ukphone": "bɒnd"
+  },
+  {
+    "name": "debt",
+    "trans": [
+      "n. 债务"
+    ],
+    "usphone": "det",
+    "ukphone": "det"
+  },
+  {
+    "name": "deficit",
+    "trans": [
+      "n. 赤字，逆差"
+    ],
+    "usphone": "ˈdefɪsɪt",
+    "ukphone": "ˈdefɪsɪt"
+  },
+  {
+    "name": "inflation",
+    "trans": [
+      "n. 通货膨胀"
+    ],
+    "usphone": "ɪnˈfleɪʃən",
+    "ukphone": "ɪnˈfleɪʃən"
+  },
+  {
+    "name": "deflation",
+    "trans": [
+      "n. 通货紧缩"
+    ],
+    "usphone": "diːˈfleɪʃən",
+    "ukphone": "diːˈfleɪʃən"
+  },
+  {
+    "name": "dwindle",
+    "trans": [
+      "v. 缩小，减少"
+    ],
+    "usphone": "ˈdwɪndl",
+    "ukphone": "ˈdwɪndl"
+  },
+  {
+    "name": "decrease",
+    "trans": [
+      "n. 减少"
+    ],
+    "usphone": "ˈdiːkriːs n. dɪˈkriːs v.",
+    "ukphone": "ˈdiːkriːs n. dɪˈkriːs v."
+  },
+  {
+    "name": "downsize",
+    "trans": [
+      "v. 使精简；裁员"
+    ],
+    "usphone": "ˈdaʊnsaɪz",
+    "ukphone": "ˈdaʊnsaɪz"
+  },
+  {
+    "name": "decline",
+    "trans": [
+      "v./n. 下降"
+    ],
+    "usphone": "dɪˈklaɪn",
+    "ukphone": "dɪˈklaɪn"
+  },
+  {
+    "name": "diminish",
+    "trans": [
+      "v. （使）减少；贬低"
+    ],
+    "usphone": "dɪˈmɪnɪʃ",
+    "ukphone": "dɪˈmɪnɪʃ"
+  },
+  {
+    "name": "reduce",
+    "trans": [
+      "v. 减少，减小"
+    ],
+    "usphone": "rɪˈdjuːs",
+    "ukphone": "rɪˈdjuːs"
+  },
+  {
+    "name": "increase",
+    "trans": [
+      "n. 增加"
+    ],
+    "usphone": "ˈɪnkriːs n. ɪnˈkriːs v.",
+    "ukphone": "ˈɪnkriːs n. ɪnˈkriːs v."
+  },
+  {
+    "name": "increment",
+    "trans": [
+      "n. 增加量；定期的加薪"
+    ],
+    "usphone": "ˈɪnkrɪmənt",
+    "ukphone": "ˈɪnkrɪmənt"
+  },
+  {
+    "name": "growth",
+    "trans": [
+      "n. 增长；生长"
+    ],
+    "usphone": "ɡrəʊθ",
+    "ukphone": "ɡrəʊθ"
+  },
+  {
+    "name": "escalate",
+    "trans": [
+      "v. （使）逐步升级，（使）不断恶化"
+    ],
+    "usphone": "ˈeskəleɪt",
+    "ukphone": "ˈeskəleɪt"
+  },
+  {
+    "name": "expand",
+    "trans": [
+      "v. 扩充，扩大；扩展"
+    ],
+    "usphone": "ɪkˈspænd",
+    "ukphone": "ɪkˈspænd"
+  },
+  {
+    "name": "influx",
+    "trans": [
+      "n. 流入，涌进"
+    ],
+    "usphone": "ˈɪnflʌks",
+    "ukphone": "ˈɪnflʌks"
+  },
+  {
+    "name": "affluent",
+    "trans": [
+      "adj. 富裕的，富足的"
+    ],
+    "usphone": "ˈæfluənt",
+    "ukphone": "ˈæfluənt"
+  },
+  {
+    "name": "enrich",
+    "trans": [
+      "v. 使富有；充实"
+    ],
+    "usphone": "ɪnˈrɪtʃ",
+    "ukphone": "ɪnˈrɪtʃ"
+  },
+  {
+    "name": "sufficient",
+    "trans": [
+      "adj. 足够的"
+    ],
+    "usphone": "səˈfɪʃənt",
+    "ukphone": "səˈfɪʃənt"
+  },
+  {
+    "name": "adequate",
+    "trans": [
+      "adj. 足够的；合格的"
+    ],
+    "usphone": "ˈædɪkwət",
+    "ukphone": "ˈædɪkwət"
+  },
+  {
+    "name": "spare",
+    "trans": [
+      "adj. 多余的，空闲的 v. 剩余"
+    ],
+    "usphone": "speə",
+    "ukphone": "speə"
+  },
+  {
+    "name": "saving",
+    "trans": [
+      "n. 节约，节省"
+    ],
+    "usphone": "ˈseɪvɪŋ",
+    "ukphone": "ˈseɪvɪŋ"
+  },
+  {
+    "name": "redundant",
+    "trans": [
+      "adj. 多余的；被裁减的"
+    ],
+    "usphone": "rɪˈdʌndənt",
+    "ukphone": "rɪˈdʌndənt"
+  },
+  {
+    "name": "lack",
+    "trans": [
+      "n. 缺乏，不足 v. 缺少"
+    ],
+    "usphone": "læk",
+    "ukphone": "læk"
+  },
+  {
+    "name": "company",
+    "trans": [
+      "n. 公司；陪伴；剧团"
+    ],
+    "usphone": "ˈkʌmpəni",
+    "ukphone": "ˈkʌmpəni"
+  },
+  {
+    "name": "firm",
+    "trans": [
+      "n. 公司 adj. 坚定的；坚固的"
+    ],
+    "usphone": "fɜːm",
+    "ukphone": "fɜːm"
+  },
+  {
+    "name": "enterprise",
+    "trans": [
+      "n. 企业；事业"
+    ],
+    "usphone": "ˈentəpraɪz",
+    "ukphone": "ˈentəpraɪz"
+  },
+  {
+    "name": "agent",
+    "trans": [
+      "n. 代理人，代理商"
+    ],
+    "usphone": "ˈeɪdʒənt",
+    "ukphone": "ˈeɪdʒənt"
+  },
+  {
+    "name": "entity",
+    "trans": [
+      "n. 实体，独立存在物"
+    ],
+    "usphone": "ˈentəti",
+    "ukphone": "ˈentəti"
+  },
+  {
+    "name": "invest",
+    "trans": [
+      "v. 投资；投入"
+    ],
+    "usphone": "ɪnˈvest",
+    "ukphone": "ɪnˈvest"
+  },
+  {
+    "name": "input",
+    "trans": [
+      "n. 输入信息；投入物"
+    ],
+    "usphone": "ˈɪnpʊt",
+    "ukphone": "ˈɪnpʊt"
+  },
+  {
+    "name": "product",
+    "trans": [
+      "n. 产品；产物"
+    ],
+    "usphone": "ˈprɒdʌkt",
+    "ukphone": "ˈprɒdʌkt"
+  },
+  {
+    "name": "acquisition",
+    "trans": [
+      "n. 获得；（对公司的）并购"
+    ],
+    "usphone": "ˌækwɪˈzɪʃən",
+    "ukphone": "ˌækwɪˈzɪʃən"
+  },
+  {
+    "name": "goods",
+    "trans": [
+      "n. 商品，货物"
+    ],
+    "usphone": "ɡʊdz",
+    "ukphone": "ɡʊdz"
+  },
+  {
+    "name": "cargo",
+    "trans": [
+      "n. 货物"
+    ],
+    "usphone": "ˈkɑːɡəʊ",
+    "ukphone": "ˈkɑːɡəʊ"
+  },
+  {
+    "name": "insure",
+    "trans": [
+      "v. 确保；给......上保险"
+    ],
+    "usphone": "ɪnˈʃʊə",
+    "ukphone": "ɪnˈʃʊə"
+  },
+  {
+    "name": "guarantee",
+    "trans": [
+      "v. 担保；确保 n. 保证；保修单"
+    ],
+    "usphone": "ˌɡærənˈtiː",
+    "ukphone": "ˌɡærənˈtiː"
+  },
+  {
+    "name": "reliable",
+    "trans": [
+      "adj. 可靠的，可信赖的"
+    ],
+    "usphone": "rɪˈlaɪəbl",
+    "ukphone": "rɪˈlaɪəbl"
+  },
+  {
+    "name": "negotiation",
+    "trans": [
+      "n. 谈判，协商"
+    ],
+    "usphone": "nɪˌɡəʊʃiˈeɪʃən",
+    "ukphone": "nɪˌɡəʊʃiˈeɪʃən"
+  },
+  {
+    "name": "attend",
+    "trans": [
+      "v. 参加，出席"
+    ],
+    "usphone": "əˈtend",
+    "ukphone": "əˈtend"
+  },
+  {
+    "name": "absent",
+    "trans": [
+      "adj. 不在场的，缺席的；心不在焉的"
+    ],
+    "usphone": "ˈæbsənt",
+    "ukphone": "ˈæbsənt"
+  },
+  {
+    "name": "sale",
+    "trans": [
+      "n. 卖，销售；销售额"
+    ],
+    "usphone": "seɪl",
+    "ukphone": "seɪl"
+  },
+  {
+    "name": "wholesale",
+    "trans": [
+      "n. 批发"
+    ],
+    "usphone": "ˈhəʊlseɪl",
+    "ukphone": "ˈhəʊlseɪl"
+  },
+  {
+    "name": "auction",
+    "trans": [
+      "v./n. 拍卖"
+    ],
+    "usphone": "ˈɔːkʃən",
+    "ukphone": "ˈɔːkʃən"
+  },
+  {
+    "name": "bid",
+    "trans": [
+      "v./n. 出价；投标"
+    ],
+    "usphone": "bɪd",
+    "ukphone": "bɪd"
+  },
+  {
+    "name": "deal",
+    "trans": [
+      "v. 买卖；[～with] 处理 n. 协议；大量"
+    ],
+    "usphone": "diːl",
+    "ukphone": "diːl"
+  },
+  {
+    "name": "transaction",
+    "trans": [
+      "n. （一笔）交易，业务"
+    ],
+    "usphone": "trænˈzækʃən",
+    "ukphone": "trænˈzækʃən"
+  },
+  {
+    "name": "turnover",
+    "trans": [
+      "n. （人员）流动率；营业额"
+    ],
+    "usphone": "ˈtɜːnˌəʊvə",
+    "ukphone": "ˈtɜːnˌəʊvə"
+  },
+  {
+    "name": "dump",
+    "trans": [
+      "v. 丢弃，倾倒；倾销"
+    ],
+    "usphone": "dʌmp",
+    "ukphone": "dʌmp"
+  },
+  {
+    "name": "export",
+    "trans": [
+      "v. 出口 n. 出口；出口商品"
+    ],
+    "usphone": "ɪkˈspɔːt v. ˈekspɔːt n.",
+    "ukphone": "ɪkˈspɔːt v. ˈekspɔːt n."
+  },
+  {
+    "name": "import",
+    "trans": [
+      "v. 进口 n. 进口；进口商品"
+    ],
+    "usphone": "ɪmˈpɔːt v. ˈɪmpɔːt n.",
+    "ukphone": "ɪmˈpɔːt v. ˈɪmpɔːt n."
+  },
+  {
+    "name": "quota",
+    "trans": [
+      "n. 限额，配额；定额"
+    ],
+    "usphone": "ˈkwəʊtə",
+    "ukphone": "ˈkwəʊtə"
+  },
+  {
+    "name": "share",
+    "trans": [
+      "n. 股份，股票；一份 v. 分享；分担"
+    ],
+    "usphone": "ʃeə",
+    "ukphone": "ʃeə"
+  },
+  {
+    "name": "benefit",
+    "trans": [
+      "n. 益处 v. 有利于；获益"
+    ],
+    "usphone": "ˈbenɪfɪt",
+    "ukphone": "ˈbenɪfɪt"
+  },
+  {
+    "name": "interest",
+    "trans": [
+      "n. 兴趣；利益；利息 v. 使感兴趣"
+    ],
+    "usphone": "ˈɪntrɪst",
+    "ukphone": "ˈɪntrɪst"
+  },
+  {
+    "name": "dividend",
+    "trans": [
+      "n. 股息，红利"
+    ],
+    "usphone": "ˈdɪvɪdend",
+    "ukphone": "ˈdɪvɪdend"
+  },
+  {
+    "name": "stock",
+    "trans": [
+      "n. 股本；股票；库存"
+    ],
+    "usphone": "stɒk",
+    "ukphone": "stɒk"
+  },
+  {
+    "name": "account",
+    "trans": [
+      "n. 账户；解释"
+    ],
+    "usphone": "əˈkaʊnt",
+    "ukphone": "əˈkaʊnt"
+  },
+  {
+    "name": "deposit",
+    "trans": [
+      "n. 存款；押金"
+    ],
+    "usphone": "dɪˈpɒzɪt",
+    "ukphone": "dɪˈpɒzɪt"
+  },
+  {
+    "name": "instalment",
+    "trans": [
+      "n. （分期付款的）一期付款"
+    ],
+    "usphone": "ɪnˈstɔːlmənt",
+    "ukphone": "ɪnˈstɔːlmənt"
+  },
+  {
+    "name": "cheque",
+    "trans": [
+      "n. 支票"
+    ],
+    "usphone": "tʃek",
+    "ukphone": "tʃek"
+  },
+  {
+    "name": "cash",
+    "trans": [
+      "n. 现金 v. 兑现（支票）"
+    ],
+    "usphone": "kæʃ",
+    "ukphone": "kæʃ"
+  },
+  {
+    "name": "coin",
+    "trans": [
+      "n. 硬币 v. 铸币；创造（新词语）"
+    ],
+    "usphone": "kɔɪn",
+    "ukphone": "kɔɪn"
+  },
+  {
+    "name": "shilling",
+    "trans": [
+      "n. 先令"
+    ],
+    "usphone": "ˈʃɪlɪŋ",
+    "ukphone": "ˈʃɪlɪŋ"
+  },
+  {
+    "name": "copper",
+    "trans": [
+      "n. 铜；[~s] 铜币；警察"
+    ],
+    "usphone": "ˈkɒpə",
+    "ukphone": "ˈkɒpə"
+  },
+  {
+    "name": "treasure",
+    "trans": [
+      "n. 金银财宝；宝物"
+    ],
+    "usphone": "ˈtreʒə",
+    "ukphone": "ˈtreʒə"
+  },
+  {
+    "name": "wealth",
+    "trans": [
+      "n. 财富；丰富"
+    ],
+    "usphone": "welθ",
+    "ukphone": "welθ"
+  },
+  {
+    "name": "estate",
+    "trans": [
+      "n. 地产；遗产"
+    ],
+    "usphone": "ɪˈsteɪt",
+    "ukphone": "ɪˈsteɪt"
+  },
+  {
+    "name": "possess",
+    "trans": [
+      "v. 占用，拥有；影响，控制"
+    ],
+    "usphone": "pəˈzes",
+    "ukphone": "pəˈzes"
+  },
+  {
+    "name": "legacy",
+    "trans": [
+      "n. 遗赠，遗产"
+    ],
+    "usphone": "ˈleɡəsi",
+    "ukphone": "ˈleɡəsi"
+  },
+  {
+    "name": "descend",
+    "trans": [
+      "v. 下降，下来"
+    ],
+    "usphone": "dɪˈsend",
+    "ukphone": "dɪˈsend"
+  },
+  {
+    "name": "worthy",
+    "trans": [
+      "adj. 有价值的；值得"
+    ],
+    "usphone": "ˈwɜːði",
+    "ukphone": "ˈwɜːði"
+  },
+  {
+    "name": "valuable",
+    "trans": [
+      "adj. 很值钱的，贵重的；很重要的"
+    ],
+    "usphone": "ˈvæljuəbl",
+    "ukphone": "ˈvæljuəbl"
+  },
+  {
+    "name": "cheap",
+    "trans": [
+      "adj. 廉价的；质劣价低的"
+    ],
+    "usphone": "tʃiːp",
+    "ukphone": "tʃiːp"
+  },
+  {
+    "name": "incentive",
+    "trans": [
+      "n. 刺激，激励"
+    ],
+    "usphone": "ɪnˈsentɪv",
+    "ukphone": "ɪnˈsentɪv"
+  },
+  {
+    "name": "accelerate",
+    "trans": [
+      "v. （使）加速"
+    ],
+    "usphone": "əkˈseləreɪt",
+    "ukphone": "əkˈseləreɪt"
+  },
+  {
+    "name": "prompt",
+    "trans": [
+      "v. 促使 adj. 迅速的"
+    ],
+    "usphone": "prɒmpt",
+    "ukphone": "prɒmpt"
+  },
+  {
+    "name": "salary",
+    "trans": [
+      "n. 工资，（尤指按月领的）薪水"
+    ],
+    "usphone": "ˈsæləri",
+    "ukphone": "ˈsæləri"
+  },
+  {
+    "name": "income",
+    "trans": [
+      "n. 收入"
+    ],
+    "usphone": "ˈɪnkʌm",
+    "ukphone": "ˈɪnkʌm"
+  },
+  {
+    "name": "wage",
+    "trans": [
+      "n. （通常指按周领的）工钱"
+    ],
+    "usphone": "weɪdʒ",
+    "ukphone": "weɪdʒ"
+  },
+  {
+    "name": "payment",
+    "trans": [
+      "n. 支付；支付的款项"
+    ],
+    "usphone": "ˈpeɪmənt",
+    "ukphone": "ˈpeɪmənt"
+  },
+  {
+    "name": "refund",
+    "trans": [
+      "n. 退款"
+    ],
+    "usphone": "ˈriːfʌnd n. rɪˈfʌnd v.",
+    "ukphone": "ˈriːfʌnd n. rɪˈfʌnd v."
+  },
+  {
+    "name": "reimburse",
+    "trans": [
+      "v. 赔偿，补偿"
+    ],
+    "usphone": "ˌriːɪmˈbɜːs",
+    "ukphone": "ˌriːɪmˈbɜːs"
+  },
+  {
+    "name": "payroll",
+    "trans": [
+      "n. 工资名单"
+    ],
+    "usphone": "ˈpeɪrəʊl",
+    "ukphone": "ˈpeɪrəʊl"
+  },
+  {
+    "name": "remuneration",
+    "trans": [
+      "n. 报酬"
+    ],
+    "usphone": "rɪˌmjuːnəˈreɪʃən",
+    "ukphone": "rɪˌmjuːnəˈreɪʃən"
+  },
+  {
+    "name": "subsidy",
+    "trans": [
+      "n. 津贴，补贴"
+    ],
+    "usphone": "ˈsʌbsɪdi",
+    "ukphone": "ˈsʌbsɪdi"
+  },
+  {
+    "name": "earn",
+    "trans": [
+      "v. 赚得；赢得；获得"
+    ],
+    "usphone": "ɜːn",
+    "ukphone": "ɜːn"
+  },
+  {
+    "name": "undertaking",
+    "trans": [
+      "n. 任务，事业；许诺"
+    ],
+    "usphone": "ˌʌndəˈteɪkɪŋ",
+    "ukphone": "ˌʌndəˈteɪkɪŋ"
+  },
+  {
+    "name": "career",
+    "trans": [
+      "n. 职业，事业；职业生涯"
+    ],
+    "usphone": "kəˈrɪə",
+    "ukphone": "kəˈrɪə"
+  },
+  {
+    "name": "profession",
+    "trans": [
+      "n. 职业"
+    ],
+    "usphone": "prəˈfeʃən",
+    "ukphone": "prəˈfeʃən"
+  },
+  {
+    "name": "occupation",
+    "trans": [
+      "n. 占领；职业"
+    ],
+    "usphone": "ˌɒkjʊˈpeɪʃən",
+    "ukphone": "ˌɒkjʊˈpeɪʃən"
+  },
+  {
+    "name": "job",
+    "trans": [
+      "n. 职业，工作"
+    ],
+    "usphone": "dʒɒb",
+    "ukphone": "dʒɒb"
+  },
+  {
+    "name": "vocation",
+    "trans": [
+      "n. （认为特别适合自己的）职业；使命感"
+    ],
+    "usphone": "vəʊˈkeɪʃən",
+    "ukphone": "vəʊˈkeɪʃən"
+  },
+  {
+    "name": "labour",
+    "trans": [
+      "n. 劳动，体力劳动"
+    ],
+    "usphone": "ˈleɪbə",
+    "ukphone": "ˈleɪbə"
+  },
+  {
+    "name": "workforce",
+    "trans": [
+      "n. 劳动力；全体员工"
+    ],
+    "usphone": "ˈwɜːkfɔːs",
+    "ukphone": "ˈwɜːkfɔːs"
+  },
+  {
+    "name": "workaholic",
+    "trans": [
+      "n. 工作狂"
+    ],
+    "usphone": "ˌwɜːkəˈhɒlɪk",
+    "ukphone": "ˌwɜːkəˈhɒlɪk"
+  },
+  {
+    "name": "personnel",
+    "trans": [
+      "n. 人员，职员；人事部门"
+    ],
+    "usphone": "ˌpɜːsəˈnel",
+    "ukphone": "ˌpɜːsəˈnel"
+  },
+  {
+    "name": "clerk",
+    "trans": [
+      "n. 店员；办事员；接待员"
+    ],
+    "usphone": "klɑːk",
+    "ukphone": "klɑːk"
+  },
+  {
+    "name": "interview",
+    "trans": [
+      "n. 面试；采访 v. 对......进行面试；采访"
+    ],
+    "usphone": "ˈɪntəvjuː",
+    "ukphone": "ˈɪntəvjuː"
+  },
+  {
+    "name": "resume",
+    "trans": [
+      "n. （求职用的）履历，简历；摘要"
+    ],
+    "usphone": "ˈrezjʊmeɪ",
+    "ukphone": "ˈrezjʊmeɪ"
+  },
+  {
+    "name": "recommend",
+    "trans": [
+      "v. 推荐，介绍；劝告，建议"
+    ],
+    "usphone": "ˌrekəˈmend",
+    "ukphone": "ˌrekəˈmend"
+  },
+  {
+    "name": "employ",
+    "trans": [
+      "v. 雇用；采用"
+    ],
+    "usphone": "ɪmˈplɔɪ",
+    "ukphone": "ɪmˈplɔɪ"
+  },
+  {
+    "name": "hire",
+    "trans": [
+      "v. 雇用；租用 n. 租赁（业）"
+    ],
+    "usphone": "ˈhaɪə",
+    "ukphone": "ˈhaɪə"
+  },
+  {
+    "name": "fire",
+    "trans": [
+      "v. 解雇 n. 火"
+    ],
+    "usphone": "ˈfaɪə",
+    "ukphone": "ˈfaɪə"
+  },
+  {
+    "name": "lay-off",
+    "trans": [
+      "n. （因岗位不足的）解雇，裁员；歇工期"
+    ],
+    "usphone": "ˈleɪɒf",
+    "ukphone": "ˈleɪɒf"
+  },
+  {
+    "name": "dismiss",
+    "trans": [
+      "v. 解雇；解散；（法官）驳回"
+    ],
+    "usphone": "dɪsˈmɪs",
+    "ukphone": "dɪsˈmɪs"
+  },
+  {
+    "name": "discharge",
+    "trans": [
+      "v. 解雇"
+    ],
+    "usphone": "dɪsˈtʃɑːdʒ v. ˈdɪstʃɑːdʒ n.",
+    "ukphone": "dɪsˈtʃɑːdʒ v. ˈdɪstʃɑːdʒ n."
+  },
+  {
+    "name": "resign",
+    "trans": [
+      "v. 辞去，辞职"
+    ],
+    "usphone": "rɪˈzaɪn",
+    "ukphone": "rɪˈzaɪn"
+  },
+  {
+    "name": "sack",
+    "trans": [
+      "n. 大口袋 v. 开除"
+    ],
+    "usphone": "sæk",
+    "ukphone": "sæk"
+  },
+  {
+    "name": "retire",
+    "trans": [
+      "v. （使）退休"
+    ],
+    "usphone": "rɪˈtaɪə",
+    "ukphone": "rɪˈtaɪə"
+  },
+  {
+    "name": "result",
+    "trans": [
+      "n. 后果，结果 v. 导致"
+    ],
+    "usphone": "rɪˈzʌlt",
+    "ukphone": "rɪˈzʌlt"
+  },
+  {
+    "name": "failure",
+    "trans": [
+      "n. 失败；失败的人/事"
+    ],
+    "usphone": "ˈfeɪljə",
+    "ukphone": "ˈfeɪljə"
+  },
+  {
+    "name": "abortion",
+    "trans": [
+      "n. 人工流产；（计划等）中途失败"
+    ],
+    "usphone": "əˈbɔːʃən",
+    "ukphone": "əˈbɔːʃən"
+  },
+  {
+    "name": "loss",
+    "trans": [
+      "n. 遗失；损失；亏损"
+    ],
+    "usphone": "lɒs",
+    "ukphone": "lɒs"
+  },
+  {
+    "name": "opportunity",
+    "trans": [
+      "n. 机会，时机"
+    ],
+    "usphone": "ˌɒpəˈtjuːnəti",
+    "ukphone": "ˌɒpəˈtjuːnəti"
+  },
+  {
+    "name": "chance",
+    "trans": [
+      "n. 机会；可能性"
+    ],
+    "usphone": "tʃɑːns",
+    "ukphone": "tʃɑːns"
+  },
+  {
+    "name": "choose",
+    "trans": [
+      "v. 选择"
+    ],
+    "usphone": "tʃuːz",
+    "ukphone": "tʃuːz"
+  },
+  {
+    "name": "change",
+    "trans": [
+      "n. 改变"
+    ],
+    "usphone": "tʃeɪndʒ",
+    "ukphone": "tʃeɪndʒ"
+  },
+  {
+    "name": "solve",
+    "trans": [
+      "v. 解答；解决"
+    ],
+    "usphone": "sɒlv",
+    "ukphone": "sɒlv"
+  },
+  {
+    "name": "develop",
+    "trans": [
+      "v. 发展；开发"
+    ],
+    "usphone": "dɪˈveləp",
+    "ukphone": "dɪˈveləp"
+  },
+  {
+    "name": "sustainable",
+    "trans": [
+      "adj. 可持续的"
+    ],
+    "usphone": "səˈsteɪnəbl",
+    "ukphone": "səˈsteɪnəbl"
+  },
+  {
+    "name": "improve",
+    "trans": [
+      "v. 改善，改进"
+    ],
+    "usphone": "ɪmˈpruːv",
+    "ukphone": "ɪmˈpruːv"
+  },
+  {
+    "name": "manage",
+    "trans": [
+      "v. 管理；设法做到"
+    ],
+    "usphone": "ˈmænɪdʒ",
+    "ukphone": "ˈmænɪdʒ"
+  },
+  {
+    "name": "regulate",
+    "trans": [
+      "v. 管理；调整"
+    ],
+    "usphone": "ˈreɡjʊleɪt",
+    "ukphone": "ˈreɡjʊleɪt"
+  },
+  {
+    "name": "sanction",
+    "trans": [
+      "n. 批准；制裁 v. 批准；对......实施制裁"
+    ],
+    "usphone": "ˈsæŋkʃən",
+    "ukphone": "ˈsæŋkʃən"
+  },
+  {
+    "name": "coordinate",
+    "trans": [
+      "v. 调和，协调"
+    ],
+    "usphone": "kəʊˈɔːdɪneɪt v. kəʊˈɔːdɪnət n.",
+    "ukphone": "kəʊˈɔːdɪneɪt v. kəʊˈɔːdɪnət n."
+  },
+  {
+    "name": "cooperate",
+    "trans": [
+      "v. 合作，协作"
+    ],
+    "usphone": "kəʊˈɒpəreɪt",
+    "ukphone": "kəʊˈɒpəreɪt"
+  },
+  {
+    "name": "collaborate",
+    "trans": [
+      "v. 合作"
+    ],
+    "usphone": "kəˈlæbəreɪt",
+    "ukphone": "kəˈlæbəreɪt"
+  }
+]

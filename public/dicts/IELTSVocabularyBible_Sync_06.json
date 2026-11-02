@@ -1,0 +1,978 @@
+[
+  {
+    "name": "reveal",
+    "trans": [
+      "v. 展现；显示，透露"
+    ],
+    "usphone": "rɪˈviːl",
+    "ukphone": "rɪˈviːl"
+  },
+  {
+    "name": "uncover",
+    "trans": [
+      "v. 揭露，发现"
+    ],
+    "usphone": "ʌnˈkʌvə",
+    "ukphone": "ʌnˈkʌvə"
+  },
+  {
+    "name": "expose",
+    "trans": [
+      "v. 使暴露；揭发，使曝光"
+    ],
+    "usphone": "ɪkˈspəʊz",
+    "ukphone": "ɪkˈspəʊz"
+  },
+  {
+    "name": "domain",
+    "trans": [
+      "n. （活动、学问等的）领域；领土，领地"
+    ],
+    "usphone": "dəˈmeɪn",
+    "ukphone": "dəˈmeɪn"
+  },
+  {
+    "name": "field",
+    "trans": [
+      "n. 领域"
+    ],
+    "usphone": "fiːld",
+    "ukphone": "fiːld"
+  },
+  {
+    "name": "realm",
+    "trans": [
+      "n. 领域"
+    ],
+    "usphone": "relm",
+    "ukphone": "relm"
+  },
+  {
+    "name": "foundation",
+    "trans": [
+      "n. 基础；地基；基金会"
+    ],
+    "usphone": "faʊnˈdeɪʃən",
+    "ukphone": "faʊnˈdeɪʃən"
+  },
+  {
+    "name": "specialise",
+    "trans": [
+      "v. 专攻"
+    ],
+    "usphone": "ˈspeʃəlaɪz",
+    "ukphone": "ˈspeʃəlaɪz"
+  },
+  {
+    "name": "absorb",
+    "trans": [
+      "v. 理解；掌握"
+    ],
+    "usphone": "əbˈsɜːb",
+    "ukphone": "əbˈsɜːb"
+  },
+  {
+    "name": "concentrate",
+    "trans": [
+      "v. 集中（心思）；（使）浓缩"
+    ],
+    "usphone": "ˈkɒnsəntreɪt",
+    "ukphone": "ˈkɒnsəntreɪt"
+  },
+  {
+    "name": "focus",
+    "trans": [
+      "v. （把......）集中（于）n. 焦点"
+    ],
+    "usphone": "ˈfəʊkəs",
+    "ukphone": "ˈfəʊkəs"
+  },
+  {
+    "name": "utilise",
+    "trans": [
+      "v. 利用"
+    ],
+    "usphone": "ˈjuːtəlaɪz",
+    "ukphone": "ˈjuːtəlaɪz"
+  },
+  {
+    "name": "usage",
+    "trans": [
+      "n. 使用；（词语的）用法"
+    ],
+    "usphone": "ˈjuːsɪdʒ",
+    "ukphone": "ˈjuːsɪdʒ"
+  },
+  {
+    "name": "tester",
+    "trans": [
+      "n. 测试仪；测试员"
+    ],
+    "usphone": "ˈtestə",
+    "ukphone": "ˈtestə"
+  },
+  {
+    "name": "apply",
+    "trans": [
+      "v. 应用；适用"
+    ],
+    "usphone": "əˈplaɪ",
+    "ukphone": "əˈplaɪ"
+  },
+  {
+    "name": "device",
+    "trans": [
+      "n. 装置，设备；手段，策略"
+    ],
+    "usphone": "dɪˈvaɪs",
+    "ukphone": "dɪˈvaɪs"
+  },
+  {
+    "name": "appliance",
+    "trans": [
+      "n. 应用；（家用）器具"
+    ],
+    "usphone": "əˈplaɪəns",
+    "ukphone": "əˈplaɪəns"
+  },
+  {
+    "name": "facility",
+    "trans": [
+      "n. 设备；便利"
+    ],
+    "usphone": "fəˈsɪlɪti",
+    "ukphone": "fəˈsɪlɪti"
+  },
+  {
+    "name": "equipment",
+    "trans": [
+      "n. 设备"
+    ],
+    "usphone": "ɪˈkwɪpmənt",
+    "ukphone": "ɪˈkwɪpmənt"
+  },
+  {
+    "name": "instrument",
+    "trans": [
+      "n. 仪器；工具；乐器"
+    ],
+    "usphone": "ˈɪnstrəmənt",
+    "ukphone": "ˈɪnstrəmənt"
+  },
+  {
+    "name": "tool",
+    "trans": [
+      "n. 工具"
+    ],
+    "usphone": "tuːl",
+    "ukphone": "tuːl"
+  },
+  {
+    "name": "gauge",
+    "trans": [
+      "n. 测量仪器 v. 测量；判断"
+    ],
+    "usphone": "ɡeɪdʒ",
+    "ukphone": "ɡeɪdʒ"
+  },
+  {
+    "name": "measure",
+    "trans": [
+      "v. 测量 n. 衡量；措施"
+    ],
+    "usphone": "ˈmeʒə",
+    "ukphone": "ˈmeʒə"
+  },
+  {
+    "name": "calculate",
+    "trans": [
+      "v. 计算；考虑，打算"
+    ],
+    "usphone": "ˈkælkjʊleɪt",
+    "ukphone": "ˈkælkjʊleɪt"
+  },
+  {
+    "name": "compute",
+    "trans": [
+      "v. 计算；估计"
+    ],
+    "usphone": "kəmˈpjuːt",
+    "ukphone": "kəmˈpjuːt"
+  },
+  {
+    "name": "count",
+    "trans": [
+      "v. 计算"
+    ],
+    "usphone": "kaʊnt",
+    "ukphone": "kaʊnt"
+  },
+  {
+    "name": "estimate",
+    "trans": [
+      "n. 估价；估计；评价"
+    ],
+    "usphone": "ˈestɪmət",
+    "ukphone": "ˈestɪmət"
+  },
+  {
+    "name": "assess",
+    "trans": [
+      "v. 评估；估算"
+    ],
+    "usphone": "əˈses",
+    "ukphone": "əˈses"
+  },
+  {
+    "name": "evaluate",
+    "trans": [
+      "v. 评价，评估"
+    ],
+    "usphone": "ɪˈvæljʊeɪt",
+    "ukphone": "ɪˈvæljʊeɪt"
+  },
+  {
+    "name": "accessory",
+    "trans": [
+      "n. 附件，配件"
+    ],
+    "usphone": "əkˈsesəri",
+    "ukphone": "əkˈsesəri"
+  },
+  {
+    "name": "byproduct",
+    "trans": [
+      "n. 副产品"
+    ],
+    "usphone": "ˈbaɪˌprɒdʌkt",
+    "ukphone": "ˈbaɪˌprɒdʌkt"
+  },
+  {
+    "name": "auxiliary",
+    "trans": [
+      "adj. 辅助的，协助的；备用的"
+    ],
+    "usphone": "ɔːɡˈzɪliəri",
+    "ukphone": "ɔːɡˈzɪliəri"
+  },
+  {
+    "name": "versatile",
+    "trans": [
+      "adj. 多功能的，多用途的"
+    ],
+    "usphone": "ˈvɜːsətaɪl",
+    "ukphone": "ˈvɜːsətaɪl"
+  },
+  {
+    "name": "add",
+    "trans": [
+      "v. 添加；附加"
+    ],
+    "usphone": "æd",
+    "ukphone": "æd"
+  },
+  {
+    "name": "accumulate",
+    "trans": [
+      "v. 积累；（数额）逐渐增加"
+    ],
+    "usphone": "əˈkjuːmjʊleɪt",
+    "ukphone": "əˈkjuːmjʊleɪt"
+  },
+  {
+    "name": "assemble",
+    "trans": [
+      "v. 集合，聚集"
+    ],
+    "usphone": "əˈsembl",
+    "ukphone": "əˈsembl"
+  },
+  {
+    "name": "gather",
+    "trans": [
+      "v. 聚集；采集"
+    ],
+    "usphone": "ˈɡæðə",
+    "ukphone": "ˈɡæðə"
+  },
+  {
+    "name": "attach",
+    "trans": [
+      "v. 使依附；附加；缚，系，贴"
+    ],
+    "usphone": "əˈtætʃ",
+    "ukphone": "əˈtætʃ"
+  },
+  {
+    "name": "belong",
+    "trans": [
+      "v. 应在（某处）；适合（某种情形）"
+    ],
+    "usphone": "bɪˈlɒŋ",
+    "ukphone": "bɪˈlɒŋ"
+  },
+  {
+    "name": "optics",
+    "trans": [
+      "n. 光学"
+    ],
+    "usphone": "ˈɒptɪks",
+    "ukphone": "ˈɒptɪks"
+  },
+  {
+    "name": "microscope",
+    "trans": [
+      "n. 显微镜"
+    ],
+    "usphone": "ˈmaɪkrəskəʊp",
+    "ukphone": "ˈmaɪkrəskəʊp"
+  },
+  {
+    "name": "lens",
+    "trans": [
+      "n. 透镜；（照相机等的）镜头"
+    ],
+    "usphone": "lenz",
+    "ukphone": "lenz"
+  },
+  {
+    "name": "radar",
+    "trans": [
+      "n. 雷达，无线电定位装置"
+    ],
+    "usphone": "ˈreɪdɑː",
+    "ukphone": "ˈreɪdɑː"
+  },
+  {
+    "name": "echo",
+    "trans": [
+      "n. 回声 v. 发回声；模仿；重复"
+    ],
+    "usphone": "ˈekəʊ",
+    "ukphone": "ˈekəʊ"
+  },
+  {
+    "name": "sensor",
+    "trans": [
+      "n. 传感器"
+    ],
+    "usphone": "ˈsensə",
+    "ukphone": "ˈsensə"
+  },
+  {
+    "name": "multimedia",
+    "trans": [
+      "n. 多媒体"
+    ],
+    "usphone": "ˌmʌltiˈmiːdiə",
+    "ukphone": "ˌmʌltiˈmiːdiə"
+  },
+  {
+    "name": "network",
+    "trans": [
+      "n. 网络；广播网，电视网"
+    ],
+    "usphone": "ˈnetwɜːk",
+    "ukphone": "ˈnetwɜːk"
+  },
+  {
+    "name": "browser",
+    "trans": [
+      "n. 浏览器"
+    ],
+    "usphone": "ˈbraʊzə",
+    "ukphone": "ˈbraʊzə"
+  },
+  {
+    "name": "dial",
+    "trans": [
+      "v. 拨（电话号码）"
+    ],
+    "usphone": "ˈdaɪəl",
+    "ukphone": "ˈdaɪəl"
+  },
+  {
+    "name": "microcomputer",
+    "trans": [
+      "n. 微型计算机"
+    ],
+    "usphone": "ˈmaɪkrəʊkəmˌpjuːtə",
+    "ukphone": "ˈmaɪkrəʊkəmˌpjuːtə"
+  },
+  {
+    "name": "laptop",
+    "trans": [
+      "n. 笔记本电脑"
+    ],
+    "usphone": "ˈlæptɒp",
+    "ukphone": "ˈlæptɒp"
+  },
+  {
+    "name": "software",
+    "trans": [
+      "n. 软件"
+    ],
+    "usphone": "ˈsɒftweə",
+    "ukphone": "ˈsɒftweə"
+  },
+  {
+    "name": "high-definition",
+    "trans": [
+      "adj. 高分辨率的"
+    ],
+    "usphone": "ˌhaɪ defɪˈnɪʃən",
+    "ukphone": "ˌhaɪ defɪˈnɪʃən"
+  },
+  {
+    "name": "keyboard",
+    "trans": [
+      "n. 键盘"
+    ],
+    "usphone": "ˈkiːbɔːd",
+    "ukphone": "ˈkiːbɔːd"
+  },
+  {
+    "name": "screen",
+    "trans": [
+      "n. 屏；屏幕 v. 遮蔽"
+    ],
+    "usphone": "skriːn",
+    "ukphone": "skriːn"
+  },
+  {
+    "name": "audio",
+    "trans": [
+      "adj. 声音的"
+    ],
+    "usphone": "ˈɔːdiəʊ",
+    "ukphone": "ˈɔːdiəʊ"
+  },
+  {
+    "name": "loudspeaker",
+    "trans": [
+      "n. 扬声器，喇叭"
+    ],
+    "usphone": "ˌlaʊdˈspiːkə",
+    "ukphone": "ˌlaʊdˈspiːkə"
+  },
+  {
+    "name": "vision",
+    "trans": [
+      "n. 视觉，视力"
+    ],
+    "usphone": "ˈvɪʒən",
+    "ukphone": "ˈvɪʒən"
+  },
+  {
+    "name": "microphone",
+    "trans": [
+      "n. 话筒，麦克风"
+    ],
+    "usphone": "ˈmaɪkrəfəʊn",
+    "ukphone": "ˈmaɪkrəfəʊn"
+  },
+  {
+    "name": "fantasy",
+    "trans": [
+      "n. 幻想"
+    ],
+    "usphone": "ˈfæntəsi",
+    "ukphone": "ˈfæntəsi"
+  },
+  {
+    "name": "cassette",
+    "trans": [
+      "n. 盒式磁带；底片盒"
+    ],
+    "usphone": "kəˈset",
+    "ukphone": "kəˈset"
+  },
+  {
+    "name": "science fiction",
+    "trans": [
+      "n. 科幻作品"
+    ],
+    "usphone": "ˌsaɪəns ˈfɪkʃən",
+    "ukphone": "ˌsaɪəns ˈfɪkʃən"
+  },
+  {
+    "name": "tape",
+    "trans": [
+      "n. 磁带，录音带；胶带"
+    ],
+    "usphone": "teɪp",
+    "ukphone": "teɪp"
+  },
+  {
+    "name": "pump",
+    "trans": [
+      "n. 泵 v.（用泵）抽"
+    ],
+    "usphone": "pʌmp",
+    "ukphone": "pʌmp"
+  },
+  {
+    "name": "binary",
+    "trans": [
+      "adj. 二进制的；二元的"
+    ],
+    "usphone": "ˈbaɪnəri",
+    "ukphone": "ˈbaɪnəri"
+  },
+  {
+    "name": "digital",
+    "trans": [
+      "adj. 数字的"
+    ],
+    "usphone": "ˈdɪdʒɪtəl",
+    "ukphone": "ˈdɪdʒɪtəl"
+  },
+  {
+    "name": "wireless",
+    "trans": [
+      "adj. 不用电线的，无线的"
+    ],
+    "usphone": "ˈwaɪələs",
+    "ukphone": "ˈwaɪələs"
+  },
+  {
+    "name": "generator",
+    "trans": [
+      "n. 发电机"
+    ],
+    "usphone": "ˈdʒenəreɪtə",
+    "ukphone": "ˈdʒenəreɪtə"
+  },
+  {
+    "name": "gear",
+    "trans": [
+      "n. 齿轮，传动装置 v. 使适合"
+    ],
+    "usphone": "ɡɪə",
+    "ukphone": "ɡɪə"
+  },
+  {
+    "name": "pivot",
+    "trans": [
+      "n. 枢轴，支点；中心，重点"
+    ],
+    "usphone": "ˈpɪvət",
+    "ukphone": "ˈpɪvət"
+  },
+  {
+    "name": "hydraulic",
+    "trans": [
+      "adj. 水力的，液压的"
+    ],
+    "usphone": "haɪˈdrɔːlɪk",
+    "ukphone": "haɪˈdrɔːlɪk"
+  },
+  {
+    "name": "drainage",
+    "trans": [
+      "n. 排水系统；排水"
+    ],
+    "usphone": "ˈdreɪnɪdʒ",
+    "ukphone": "ˈdreɪnɪdʒ"
+  },
+  {
+    "name": "sewage",
+    "trans": [
+      "n. （下水道的）污水"
+    ],
+    "usphone": "ˈsuːɪdʒ",
+    "ukphone": "ˈsuːɪdʒ"
+  },
+  {
+    "name": "ventilation",
+    "trans": [
+      "n. 通风；通风设备"
+    ],
+    "usphone": "ˌventɪˈleɪʃən",
+    "ukphone": "ˌventɪˈleɪʃən"
+  },
+  {
+    "name": "compress",
+    "trans": [
+      "v. 压紧，压缩"
+    ],
+    "usphone": "kəmˈpres",
+    "ukphone": "kəmˈpres"
+  },
+  {
+    "name": "condense",
+    "trans": [
+      "v. 简缩，精简；（使气体）凝结"
+    ],
+    "usphone": "kənˈdens",
+    "ukphone": "kənˈdens"
+  },
+  {
+    "name": "refine",
+    "trans": [
+      "v. 精炼，提纯"
+    ],
+    "usphone": "rɪˈfaɪn",
+    "ukphone": "rɪˈfaɪn"
+  },
+  {
+    "name": "simplify",
+    "trans": [
+      "v. 简化，精简"
+    ],
+    "usphone": "ˈsɪmplɪfaɪ",
+    "ukphone": "ˈsɪmplɪfaɪ"
+  },
+  {
+    "name": "purify",
+    "trans": [
+      "v. 净化，使纯净"
+    ],
+    "usphone": "ˈpjʊərɪfaɪ",
+    "ukphone": "ˈpjʊərɪfaɪ"
+  },
+  {
+    "name": "filter",
+    "trans": [
+      "v. 过滤；（光或声）透过 n. 过滤器"
+    ],
+    "usphone": "ˈfɪltə",
+    "ukphone": "ˈfɪltə"
+  },
+  {
+    "name": "distil",
+    "trans": [
+      "v. 蒸馏；提取......的精华"
+    ],
+    "usphone": "dɪˈstɪl",
+    "ukphone": "dɪˈstɪl"
+  },
+  {
+    "name": "mode",
+    "trans": [
+      "n. 模式；方式"
+    ],
+    "usphone": "məʊd",
+    "ukphone": "məʊd"
+  },
+  {
+    "name": "mould",
+    "trans": [
+      "v. 浇铸；塑造 n. 模子"
+    ],
+    "usphone": "məʊld",
+    "ukphone": "məʊld"
+  },
+  {
+    "name": "prototype",
+    "trans": [
+      "n. 原型；雏形"
+    ],
+    "usphone": "ˈprəʊtətaɪp",
+    "ukphone": "ˈprəʊtətaɪp"
+  },
+  {
+    "name": "framework",
+    "trans": [
+      "n. 框架，结构；体系"
+    ],
+    "usphone": "ˈfreɪmwɜːk",
+    "ukphone": "ˈfreɪmwɜːk"
+  },
+  {
+    "name": "aspect",
+    "trans": [
+      "n. （问题、事物等的）方面"
+    ],
+    "usphone": "ˈæspekt",
+    "ukphone": "ˈæspekt"
+  },
+  {
+    "name": "phase",
+    "trans": [
+      "n. 阶段，时期"
+    ],
+    "usphone": "feɪz",
+    "ukphone": "feɪz"
+  },
+  {
+    "name": "operate",
+    "trans": [
+      "v. 操作；运营；做手术"
+    ],
+    "usphone": "ˈɒpəreɪt",
+    "ukphone": "ˈɒpəreɪt"
+  },
+  {
+    "name": "facilitate",
+    "trans": [
+      "v. 使便利，促进"
+    ],
+    "usphone": "fəˈsɪlɪteɪt",
+    "ukphone": "fəˈsɪlɪteɪt"
+  },
+  {
+    "name": "transform",
+    "trans": [
+      "v. 使改变形态；使改观"
+    ],
+    "usphone": "trænsˈfɔːm",
+    "ukphone": "trænsˈfɔːm"
+  },
+  {
+    "name": "convert",
+    "trans": [
+      "v. （使）转变；（使）改变（信仰、观点等）"
+    ],
+    "usphone": "kənˈvɜːt",
+    "ukphone": "kənˈvɜːt"
+  },
+  {
+    "name": "alter",
+    "trans": [
+      "v. 改变，变更"
+    ],
+    "usphone": "ˈɔːltə",
+    "ukphone": "ˈɔːltə"
+  },
+  {
+    "name": "shift",
+    "trans": [
+      "v. 转移，变换 n. 转移，变换；轮班"
+    ],
+    "usphone": "ʃɪft",
+    "ukphone": "ʃɪft"
+  },
+  {
+    "name": "turn",
+    "trans": [
+      "v. 转；翻 n.（依次轮到的）机会"
+    ],
+    "usphone": "tɜːn",
+    "ukphone": "tɜːn"
+  },
+  {
+    "name": "adapt",
+    "trans": [
+      "v. 适应；改编"
+    ],
+    "usphone": "əˈdæpt",
+    "ukphone": "əˈdæpt"
+  },
+  {
+    "name": "adjust",
+    "trans": [
+      "v. 调节；改变（行为或观点）以适应"
+    ],
+    "usphone": "əˈdʒʌst",
+    "ukphone": "əˈdʒʌst"
+  },
+  {
+    "name": "pinpoint",
+    "trans": [
+      "v. 精确指明......的位置 n. 针尖；极小的事物"
+    ],
+    "usphone": "ˈpɪnpɔɪnt",
+    "ukphone": "ˈpɪnpɔɪnt"
+  },
+  {
+    "name": "accurate",
+    "trans": [
+      "adj. 准确的，正确无误的"
+    ],
+    "usphone": "ˈækjʊrət",
+    "ukphone": "ˈækjʊrət"
+  },
+  {
+    "name": "precise",
+    "trans": [
+      "adj. 精确的，准确的；一丝不苟的"
+    ],
+    "usphone": "prɪˈsaɪs",
+    "ukphone": "prɪˈsaɪs"
+  },
+  {
+    "name": "correct",
+    "trans": [
+      "adj. 正确的"
+    ],
+    "usphone": "kəˈrekt",
+    "ukphone": "kəˈrekt"
+  },
+  {
+    "name": "error",
+    "trans": [
+      "n. 错误，过失"
+    ],
+    "usphone": "ˈerə",
+    "ukphone": "ˈerə"
+  },
+  {
+    "name": "mistake",
+    "trans": [
+      "n. 错误 v. 误解"
+    ],
+    "usphone": "mɪˈsteɪk",
+    "ukphone": "mɪˈsteɪk"
+  },
+  {
+    "name": "flaw",
+    "trans": [
+      "n. 缺陷；错误"
+    ],
+    "usphone": "flɔː",
+    "ukphone": "flɔː"
+  },
+  {
+    "name": "wrong",
+    "trans": [
+      "adj. 错误的 adv. 错误地"
+    ],
+    "usphone": "rɒŋ",
+    "ukphone": "rɒŋ"
+  },
+  {
+    "name": "fault",
+    "trans": [
+      "n. 缺点；故障 v. 找出缺点"
+    ],
+    "usphone": "fɔːlt",
+    "ukphone": "fɔːlt"
+  },
+  {
+    "name": "stumble",
+    "trans": [
+      "v. 犯错误；绊脚；跌跌撞撞地走"
+    ],
+    "usphone": "ˈstʌmbəl",
+    "ukphone": "ˈstʌmbəl"
+  },
+  {
+    "name": "contingency",
+    "trans": [
+      "n. 意外事件，可能发生的事"
+    ],
+    "usphone": "kənˈtɪndʒənsi",
+    "ukphone": "kənˈtɪndʒənsi"
+  },
+  {
+    "name": "circumstance",
+    "trans": [
+      "n. 情况；环境；条件；[-s] 境遇"
+    ],
+    "usphone": "ˈsɜːkəmstəns",
+    "ukphone": "ˈsɜːkəmstəns"
+  },
+  {
+    "name": "technology",
+    "trans": [
+      "n. 技术"
+    ],
+    "usphone": "tekˈnɒlədʒi",
+    "ukphone": "tekˈnɒlədʒi"
+  },
+  {
+    "name": "technique",
+    "trans": [
+      "n. 技巧；技术"
+    ],
+    "usphone": "tekˈniːk",
+    "ukphone": "tekˈniːk"
+  },
+  {
+    "name": "polytechnic",
+    "trans": [
+      "adj./n. 有关多种工艺的 n. 理工学院"
+    ],
+    "usphone": "ˌpɒlɪˈteknɪk",
+    "ukphone": "ˌpɒlɪˈteknɪk"
+  },
+  {
+    "name": "engineer",
+    "trans": [
+      "n. 工程师，技师"
+    ],
+    "usphone": "ˌendʒɪˈnɪə",
+    "ukphone": "ˌendʒɪˈnɪə"
+  },
+  {
+    "name": "mechanic",
+    "trans": [
+      "n. 技工，机械师，机修工"
+    ],
+    "usphone": "məˈtʃænɪk",
+    "ukphone": "məˈtʃænɪk"
+  },
+  {
+    "name": "advance",
+    "trans": [
+      "n./v. 发展；前进"
+    ],
+    "usphone": "ədˈvɑːns",
+    "ukphone": "ədˈvɑːns"
+  },
+  {
+    "name": "innovate",
+    "trans": [
+      "v. 创新，改革"
+    ],
+    "usphone": "ˈɪnəveɪt",
+    "ukphone": "ˈɪnəveɪt"
+  },
+  {
+    "name": "breakthrough",
+    "trans": [
+      "n. 突破"
+    ],
+    "usphone": "ˌbreɪkˈθruː",
+    "ukphone": "ˌbreɪkˈθruː"
+  },
+  {
+    "name": "gizmo",
+    "trans": [
+      "n. 小装置"
+    ],
+    "usphone": "ˈɡɪzməʊ",
+    "ukphone": "ˈɡɪzməʊ"
+  },
+  {
+    "name": "patent",
+    "trans": [
+      "n./v. 专利，专利权 v. 得到......的专利权；给......专利证"
+    ],
+    "usphone": "ˈpeɪtnt",
+    "ukphone": "ˈpeɪtnt"
+  },
+  {
+    "name": "devise",
+    "trans": [
+      "v. 设计，发明"
+    ],
+    "usphone": "dɪˈvaɪz",
+    "ukphone": "dɪˈvaɪz"
+  },
+  {
+    "name": "invent",
+    "trans": [
+      "v. 发明，创造"
+    ],
+    "usphone": "ɪnˈvent",
+    "ukphone": "ɪnˈvent"
+  },
+  {
+    "name": "discover",
+    "trans": [
+      "v. 发现"
+    ],
+    "usphone": "dɪˈskʌvə",
+    "ukphone": "dɪˈskʌvə"
+  },
+  {
+    "name": "disclose",
+    "trans": [
+      "v. 揭露；公开，透露"
+    ],
+    "usphone": "dɪsˈkləʊz",
+    "ukphone": "dɪsˈkləʊz"
+  }
+]
