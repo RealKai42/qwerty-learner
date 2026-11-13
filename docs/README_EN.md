@@ -148,14 +148,6 @@ If you have decided the task you are willing to accomplish. Please create a draf
 
 After all, thanks for your contribution! 🎉
 
-## ☕️ Buy Me A Coffee
-
-Currently, QWERTY Learner is mainly maintained by three people in their spare time. In the future, we hope to purchase a separate domain and host an backend server for data synchronization. Therefore, if you like QWERTY Learner, please consider donation. This will definitely motivate us on the way of making QWERTY Learner better!
-
-<img src="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
-
-Note: we only accept donation from Alipay at present.
-
 ## 👨‍💻 Contributors
 
 <a href="https://github.com/Kaiyiwing/qwerty-learner/graphs/contributors">

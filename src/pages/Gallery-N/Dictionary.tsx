@@ -1,5 +1,6 @@
 import type { Dictionary } from '@/typings'
 import * as Progress from '@radix-ui/react-progress'
+import { useTranslation } from 'react-i18next'
 
 interface Props {
   dictionary: Dictionary
@@ -7,8 +8,9 @@ interface Props {
 }
 
 function DictionaryComponent({ dictionary, onClick }: Props) {
+  const { t } = useTranslation()
   return (
-    <div className="flex h-40 w-80 items-center justify-center" role="button" onClick={onClick} title="选择词典">
+    <div className="flex h-40 w-80 items-center justify-center" role="button" onClick={onClick} title={t('gallery.selectDict')}>
       <div className="h-full w-5/12 rounded-xl bg-gray-300">
         <div className="bg-gray-700"></div>
       </div>

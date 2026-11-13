@@ -1,14 +1,15 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingStateActionType, useTypingContext } from '../../store'
 import Tooltip from '@/components/Tooltip'
 import { randomConfigAtom } from '@/store'
 import { autoUpdate, offset, useFloating, useHover, useInteractions } from '@floating-ui/react'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { useTranslation } from 'react-i18next'
 
 export default function StartButton({ isLoading }: { isLoading: boolean }) {
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(TypingContext)!
+  const { t } = useTranslation()
+  const { state, dispatch } = useTypingContext()
   const randomConfig = useAtomValue(randomConfigAtom)
 
   const onToggleIsTyping = useCallback(() => {
@@ -19,7 +20,15 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
   }, [dispatch, randomConfig.isOpen])
 
-  useHotkeys('enter', onToggleIsTyping, { enableOnFormTags: true, preventDefault: true }, [onToggleIsTyping])
+  useHotkeys(
+    'enter',
+    onToggleIsTyping,
+    {
+      preventDefault: true,
+      enabled: (event) => !(event.target instanceof Element && event.target.closest('[role="dialog"]')),
+    },
+    [onToggleIsTyping],
+  )
 
   const [isShowReStartButton, setIsShowReStartButton] = useState(false)
   const { refs, context } = useFloating({
@@ -32,7 +41,10 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
   const { getReferenceProps, getFloatingProps } = useInteractions([hoverButton])
 
   return (
-    <Tooltip content={`${state.isTyping ? '暂停' : '开始'} （Enter）`} className="box-content h-7 w-8 px-6 py-1">
+    <Tooltip
+      content={`${state.isTyping ? t('typing.startButton.pause') : t('typing.startButton.start')} （Enter）`}
+      className="box-content h-7 w-8 px-6 py-1"
+    >
       <div
         ref={refs.setReference}
         {...getReferenceProps()}
@@ -50,7 +62,7 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
           } my-btn-primary w-20 shadow`}
           type="button"
           onClick={onToggleIsTyping}
-          aria-label={state.isTyping ? '暂停' : '开始'}
+          aria-label={state.isTyping ? t('typing.startButton.pause') : t('typing.startButton.start')}
         >
           <span className="font-medium">{state.isTyping ? 'Pause' : 'Start'}</span>
         </button>
@@ -62,7 +74,7 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
               } my-btn-primary mb-1 mt-1 w-18  transition-colors duration-200`}
               type="button"
               onClick={onClickRestart}
-              aria-label={'重新开始'}
+              aria-label={t('typing.startButton.restart')}
             >
               Restart
             </button>

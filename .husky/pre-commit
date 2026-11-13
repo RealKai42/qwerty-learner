@@ -1,6 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-bun run lint-staged
-bun run eslint . --fix
-bun run prettier --write .
+bun run lint
+bun run typecheck
+bun run test

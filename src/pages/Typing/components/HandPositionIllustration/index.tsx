@@ -1,10 +1,12 @@
 import standTypingHandPosition from '@/assets/standard_typing_hand_position.png'
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconKeyboard from '~icons/ic/round-keyboard'
 import IconX from '~icons/tabler/x'
 
 export default function HandPositionIllustration() {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
@@ -38,7 +40,7 @@ export default function HandPositionIllustration() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 bg-black/25" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -52,12 +54,12 @@ export default function HandPositionIllustration() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-200  transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all dark:bg-gray-800">
-                  <button type="button" onClick={() => setIsOpen(false)} title="关闭对话框">
+                <Dialog.Panel className="w-200 max-w-[calc(100vw-2rem)] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all dark:bg-gray-800">
+                  <button type="button" onClick={() => setIsOpen(false)} title={t('typing.handPosition.closeDialog')}>
                     <IconX className="absolute right-7 top-5 cursor-pointer text-gray-400" />
                   </button>
                   <Dialog.Title as="h3" className="text-center text-xl font-medium leading-6 text-gray-800 dark:text-gray-200">
-                    推荐打字指法图示
+                    {t('typing.handPosition.title')}
                   </Dialog.Title>
                   <div className="mt-8">
                     <img className="block " src={standTypingHandPosition} alt="" />

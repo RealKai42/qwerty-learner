@@ -7,12 +7,20 @@ import {
   phoneticConfigAtom,
   pronunciationConfigAtom,
   randomConfigAtom,
+  wordDictationConfigAtom,
 } from '@/store'
-import type { InfoPanelType } from '@/typings'
 import type { PronunciationType } from '@/typings'
 import { useAtomValue } from 'jotai'
 import mixpanel from 'mixpanel-browser'
 import { useCallback } from 'react'
+
+function safeTrack(event: string, props?: Record<string, unknown>) {
+  try {
+    mixpanel.track(event, props)
+  } catch {
+    // mixpanel.init() 未调用时 track() 会抛出异常，静默忽略
+  }
+}
 
 export type starAction = 'star' | 'dismiss'
 
@@ -20,21 +28,12 @@ export function recordStarAction(action: starAction) {
   const props = {
     action,
   }
-  mixpanel.track('star', props)
-}
-
-export type openInfoPanelLocation = 'footer' | 'resultScreen'
-export function recordOpenInfoPanelAction(type: InfoPanelType, location: openInfoPanelLocation) {
-  const props = {
-    type,
-    location,
-  }
-  mixpanel.track('openInfoPanel', props)
+  safeTrack('star', props)
 }
 
 export type shareType = 'open' | 'download'
 export function recordShareAction(type: shareType) {
-  mixpanel.track('share', { type })
+  safeTrack('share', { type })
 }
 
 export type analysisType = 'open'
@@ -43,7 +42,7 @@ export function recordAnalysisAction(type: analysisType) {
     type,
   }
 
-  mixpanel.track('analysis', props)
+  safeTrack('analysis', props)
 }
 
 export type errorBookType = 'open' | 'detail'
@@ -52,25 +51,16 @@ export function recordErrorBookAction(type: errorBookType) {
     type,
   }
 
-  mixpanel.track('error-book', props)
+  safeTrack('error-book', props)
 }
 
-export type donateCardInfo = {
-  type: 'donate' | 'dismiss'
-  chapterNumber: number
-  wordNumber: number
-  sumWrongCount: number
-  dayFromFirstWord: number
-  dayFromQwerty: number
-  amount: number
-}
-
-export function reportDonateCard(info: donateCardInfo) {
+export type favoriteAction = 'open' | 'add' | 'remove'
+export function recordFavoriteAction(type: favoriteAction) {
   const props = {
-    ...info,
+    type,
   }
 
-  mixpanel.track('donate-card', props)
+  safeTrack('favorite', props)
 }
 
 /**
@@ -119,6 +109,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
 
   const wordLogUploader = useCallback(
     (wordLog: { headword: string; timeStart: string; timeEnd: string; countInput: number; countCorrect: number; countTypo: number }) => {
@@ -127,7 +118,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
         order: typingState.chapterData.index + 1,
         chapter: (currentChapter + 1).toString(),
         wordlist: dictName,
-        modeDictation: !typingState.isWordVisible,
+        modeDictation: wordDictationConfig.isOpen,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
@@ -136,7 +127,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
         pronunciationAuto: pronunciationConfig.isOpen,
         pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
       }
-      mixpanel.track('Word', props)
+      safeTrack('Word', props)
     },
     [
       typingState,
@@ -148,6 +139,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
       pronunciationConfig.isOpen,
       pronunciationConfig.type,
       randomConfig.isOpen,
+      wordDictationConfig.isOpen,
     ],
   )
 
@@ -162,6 +154,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
 
   const chapterLogUploader = useCallback(() => {
     const props: ChapterLogUpload = {
@@ -172,7 +165,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
       countCorrect: typingState.chapterData.correctCount,
       chapter: (currentChapter + 1).toString(),
       wordlist: dictName,
-      modeDictation: !typingState.isWordVisible,
+      modeDictation: wordDictationConfig.isOpen,
       modeDark: isDarkMode,
       modeShuffle: randomConfig.isOpen,
       enabledKeyboardSound: keySoundsConfig.isOpen,
@@ -181,7 +174,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
       pronunciationAuto: pronunciationConfig.isOpen,
       pronunciationOption: pronunciationConfig.isOpen === false ? 'none' : pronunciationConfig.type,
     }
-    mixpanel.track('Chapter', props)
+    safeTrack('Chapter', props)
   }, [
     typingState,
     currentChapter,
@@ -192,6 +185,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
     pronunciationConfig.isOpen,
     pronunciationConfig.type,
     randomConfig.isOpen,
+    wordDictationConfig.isOpen,
   ])
   return chapterLogUploader
 }
@@ -214,7 +208,7 @@ export function recordDataAction({
     chapterCount,
   }
 
-  mixpanel.track('dataAction', props)
+  safeTrack('dataAction', props)
 }
 
 export function getUtcStringForMixpanel() {

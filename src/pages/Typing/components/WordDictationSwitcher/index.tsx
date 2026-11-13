@@ -4,6 +4,7 @@ import { Listbox, Popover, Switch, Transition } from '@headlessui/react'
 import { useAtom } from 'jotai'
 import { Fragment, useLayoutEffect, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { useTranslation } from 'react-i18next'
 import IconEyeSlash from '~icons/heroicons/eye-slash-solid'
 import IconEye from '~icons/heroicons/eye-solid'
 import IconCheck from '~icons/tabler/check'
@@ -11,24 +12,25 @@ import IconChevronDown from '~icons/tabler/chevron-down'
 
 const wordDictationTypeList: { name: string; type: WordDictationType }[] = [
   {
-    name: '全部隐藏',
+    name: 'hideAll',
     type: 'hideAll',
   },
   {
-    name: '隐藏元音',
+    name: 'hideVowel',
     type: 'hideVowel',
   },
   {
-    name: '隐藏辅音',
+    name: 'hideConsonant',
     type: 'hideConsonant',
   },
   {
-    name: '随机隐藏',
+    name: 'randomHide',
     type: 'randomHide',
   },
 ]
 
 export default function WordDictationSwitcher() {
+  const { t } = useTranslation()
   const [wordDictationConfig, setWordDictationConfig] = useAtom(wordDictationConfigAtom)
   const [currentType, setCurrentType] = useState(wordDictationTypeList[0])
 
@@ -72,7 +74,7 @@ export default function WordDictationSwitcher() {
               open ? 'bg-indigo-500 text-white' : ''
             }`}
             type="button"
-            aria-label="开关默写模式"
+            aria-label={t('typing.dictation.toggleLabel')}
           >
             {wordDictationConfig.isOpen ? <IconEye className="icon" /> : <IconEyeSlash className="icon" />}
           </Popover.Button>
@@ -88,18 +90,21 @@ export default function WordDictationSwitcher() {
             <Popover.Panel className="absolute left-1/2 z-10 mt-2 flex max-w-max -translate-x-1/2 px-4 ">
               <div className="shadow-upper box-border flex w-60 select-none flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 drop-shadow dark:bg-gray-800">
                 <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">开关默写模式</span>
+                  <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white/60">
+                    {t('typing.dictation.toggleLabel')}
+                  </span>
                   <div className="flex w-full flex-row items-center justify-between">
                     <Switch checked={wordDictationConfig.isOpen} onChange={onToggleWordDictation} className="switch-root">
                       <span aria-hidden="true" className="switch-thumb" />
                     </Switch>
-                    <span className="text-right text-xs font-normal leading-tight text-gray-600">{`默写已${
-                      wordDictationConfig.isOpen ? '开启' : '关闭'
-                    }`}</span>
+                    <span className="text-right text-xs font-normal leading-tight text-gray-600">
+                      {wordDictationConfig.isOpen ? t('typing.dictation.dictationOn') : t('typing.dictation.dictationOff')}
+                    </span>
                   </div>
                 </div>
 
                 <Transition
+                  as="div"
                   show={wordDictationConfig.isOpen}
                   className="flex w-full flex-col items-center justify-center gap-4"
                   enter="transition-all duration-300 ease-in"
@@ -110,12 +115,14 @@ export default function WordDictationSwitcher() {
                   leaveTo="max-h-0 opacity-0"
                 >
                   <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">默写模式</span>
+                    <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white/60">
+                      {t('typing.dictation.dictationMode')}
+                    </span>
                     <div className="flex w-full flex-row items-center justify-between">
                       <Listbox value={currentType.type} onChange={onChangeWordDictationType}>
                         <div className="relative">
                           <Listbox.Button className="listbox-button">
-                            <span>{currentType.name}</span>
+                            <span>{t(`typing.dictation.${currentType.name}`)}</span>
                             <span>
                               <IconChevronDown className="focus:outline-none" />
                             </span>
@@ -126,7 +133,7 @@ export default function WordDictationSwitcher() {
                                 <Listbox.Option key={item.name} value={item.type}>
                                   {({ selected }) => (
                                     <>
-                                      <span>{item.name}</span>
+                                      <span>{t(`typing.dictation.${item.name}`)}</span>
                                       {selected ? (
                                         <span className="listbox-options-icon">
                                           <IconCheck className="focus:outline-none" />

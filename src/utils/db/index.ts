@@ -1,20 +1,18 @@
-import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
+import type { IChapterRecord, IFavoriteRecord, IReviewRecord, IWordRecord, LetterMistakes } from './record'
 import { ChapterRecord, ReviewRecord, WordRecord } from './record'
-import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
+import { TypingStateActionType, useTypingContext } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store'
 import type { Table } from 'dexie'
 import Dexie from 'dexie'
 import { useAtomValue } from 'jotai'
-import { useCallback, useContext } from 'react'
+import { useCallback } from 'react'
 
 class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, number>
   chapterRecords!: Table<IChapterRecord, number>
   reviewRecords!: Table<IReviewRecord, number>
-
-  revisionDictRecords!: Table<IRevisionDictRecord, number>
-  revisionWordRecords!: Table<IWordRecord, number>
+  favoriteRecords!: Table<IFavoriteRecord, number>
 
   constructor() {
     super('RecordDB')
@@ -31,6 +29,12 @@ class RecordDB extends Dexie {
       chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
       reviewRecords: '++id,dict,createTime,isFinished',
     })
+    this.version(4).stores({
+      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
+      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
+      reviewRecords: '++id,dict,createTime,isFinished',
+      favoriteRecords: '++id,word,dict,chapter,timeStamp',
+    })
   }
 }
 
@@ -46,7 +50,7 @@ export function useSaveChapterRecord() {
   const dictID = useAtomValue(currentDictIdAtom)
 
   const saveChapterRecord = useCallback(
-    (typingState: TypingState) => {
+    async (typingState: TypingState) => {
       const {
         chapterData: { correctCount, wrongCount, userInputLogs, wordCount, words, wordRecordIds },
         timerData: { time },
@@ -64,7 +68,11 @@ export function useSaveChapterRecord() {
         words.length,
         wordRecordIds ?? [],
       )
-      db.chapterRecords.add(chapterRecord)
+      try {
+        await db.chapterRecords.add(chapterRecord)
+      } catch (e) {
+        console.error(e)
+      }
     },
     [currentChapter, dictID, isRevision],
   )
@@ -82,7 +90,7 @@ export function useSaveWordRecord() {
   const currentChapter = useAtomValue(currentChapterAtom)
   const dictID = useAtomValue(currentDictIdAtom)
 
-  const { dispatch } = useContext(TypingContext) ?? {}
+  const { dispatch } = useTypingContext()
 
   const saveWordRecord = useCallback(
     async ({
@@ -109,8 +117,7 @@ export function useSaveWordRecord() {
         dbID = await db.wordRecords.add(wordRecord)
       } catch (e) {
         console.error(e)
-      }
-      if (dispatch) {
+      } finally {
         dbID > 0 && dispatch({ type: TypingStateActionType.ADD_WORD_RECORD_ID, payload: dbID })
         dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: false })
       }

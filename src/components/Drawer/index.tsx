@@ -1,5 +1,5 @@
+import { cn } from '@/utils/ui'
 import { Dialog, Transition } from '@headlessui/react'
-import classNames from 'classnames'
 import { Fragment } from 'react'
 
 export type Placement = 'left' | 'top' | 'right' | 'bottom'
@@ -38,7 +38,7 @@ export default function Drawer(props: DrawerProps) {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-black bg-opacity-25" />
+          <div className="fixed inset-0 bg-black/25" />
         </Transition.Child>
 
         <div className="fixed inset-0 h-full w-full">
@@ -52,10 +52,10 @@ export default function Drawer(props: DrawerProps) {
             leaveTo={transitionDirection}
           >
             <Dialog.Panel
-              className={classNames(
+              className={cn(
                 `${placement}-0`,
                 props.classNames || '',
-                'absolute flex h-full w-[35rem] flex-col drop-shadow-2xl transition-all duration-300 ease-out',
+                'absolute flex h-full w-[35rem] max-w-[85vw] flex-col drop-shadow-2xl transition-all duration-300 ease-out',
               )}
             >
               {children}

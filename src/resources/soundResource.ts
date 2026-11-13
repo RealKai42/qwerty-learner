@@ -1,10 +1,11 @@
 import type { LanguagePronunciationMap, SoundResource } from '@/typings'
+import i18n from 'i18next'
 
 export const SOUND_URL_PREFIX = REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner/sounds/' : './sounds/'
 export const KEY_SOUND_URL_PREFIX = SOUND_URL_PREFIX + 'key-sound/'
 
 // will add more sound resource and add config ui in the future
-const videoList = import.meta.glob(['../../public/sounds/key-sound/*.(wav|mp3)'], {
+const videoList = import.meta.glob(['../../public/sounds/key-sound/*.{wav,mp3}'], {
   eager: false,
 })
 
@@ -33,20 +34,26 @@ export const keySoundResources: SoundResource[] = Object.keys(videoList)
     return a.key.localeCompare(b.key)
   })
 
-export const wrongSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'beep.wav' }]
+export const wrongSoundResources: SoundResource[] = [{ key: '1', name: i18n.t('resources.sound.sound1'), filename: 'beep.wav' }]
 
-export const correctSoundResources: SoundResource[] = [{ key: '1', name: '声音1', filename: 'correct.wav' }]
+export const correctSoundResources: SoundResource[] = [{ key: '1', name: i18n.t('resources.sound.sound1'), filename: 'correct.wav' }]
+
+export const favoriteSoundResources: SoundResource[] = [{ key: '1', name: i18n.t('resources.sound.favoriteAdd'), filename: 'favorite.wav' }]
+
+export const unfavoriteSoundResources: SoundResource[] = [
+  { key: '1', name: i18n.t('resources.sound.favoriteRemove'), filename: 'unfavorite.wav' },
+]
 
 export const LANG_PRON_MAP: LanguagePronunciationMap = {
   en: {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '美音',
+        name: i18n.t('resources.sound.usAccent'),
         pron: 'us',
       },
       {
-        name: '英音',
+        name: i18n.t('resources.sound.ukAccent'),
         pron: 'uk',
       },
     ],
@@ -55,11 +62,11 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '美音',
+        name: i18n.t('resources.sound.usAccent'),
         pron: 'us',
       },
       {
-        name: '英音',
+        name: i18n.t('resources.sound.ukAccent'),
         pron: 'uk',
       },
     ],
@@ -68,7 +75,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '德语',
+        name: i18n.t('resources.sound.german'),
         pron: 'de',
       },
     ],
@@ -77,7 +84,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '罗马音',
+        name: i18n.t('resources.sound.romaji'),
         pron: 'romaji',
       },
     ],
@@ -86,7 +93,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '哈拼',
+        name: i18n.t('resources.sound.hapin'),
         pron: 'hapin',
       },
     ],
@@ -95,7 +102,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '普通话',
+        name: i18n.t('resources.sound.mandarin'),
         pron: 'zh',
       },
     ],
@@ -104,7 +111,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '日语',
+        name: i18n.t('resources.sound.japanese'),
         pron: 'ja',
       },
     ],
@@ -113,7 +120,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '哈萨克语',
+        name: i18n.t('resources.sound.kazakh'),
         pron: 'kk',
       },
     ],
@@ -122,7 +129,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '印尼语',
+        name: i18n.t('resources.sound.indonesian'),
         pron: 'id',
       },
     ],

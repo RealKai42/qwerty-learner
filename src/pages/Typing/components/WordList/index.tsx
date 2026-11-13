@@ -1,4 +1,4 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingStateActionType, useTypingContext } from '../../store'
 import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
@@ -6,29 +6,34 @@ import { currentChapterAtom, currentDictInfoAtom, isReviewModeAtom } from '@/sto
 import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { atom, useAtomValue } from 'jotai'
-import { useContext, useState } from 'react'
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import ListIcon from '~icons/tabler/list'
 import IconX from '~icons/tabler/x'
 
 const currentDictTitle = atom((get) => {
   const isReviewMode = get(isReviewModeAtom)
+  const dictName = get(currentDictInfoAtom).name
+  const chapter = get(currentChapterAtom) + 1
 
-  if (isReviewMode) {
-    return `${get(currentDictInfoAtom).name} 错题复习`
-  } else {
-    return `${get(currentDictInfoAtom).name} 第 ${get(currentChapterAtom) + 1} 章`
-  }
+  // Note: i18n t() cannot be used inside a Jotai atom (not a React component).
+  // The title is computed in the component below using t() instead.
+  return { dictName, chapter, isReviewMode }
 })
 
 export default function WordList() {
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(TypingContext)!
+  const { t } = useTranslation()
+  const { state, dispatch } = useTypingContext()
 
   const [isOpen, setIsOpen] = useState(false)
-  const currentDictTitleValue = useAtomValue(currentDictTitle)
+  const titleData = useAtomValue(currentDictTitle)
+  const currentDictTitleValue = titleData.isReviewMode
+    ? t('typing.wordList.reviewTitle', { dictName: titleData.dictName })
+    : t('typing.wordList.chapterTitle', { dictName: titleData.dictName, chapter: titleData.chapter })
 
   function closeModal() {
     setIsOpen(false)
+    dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
   }
 
   function openModal() {
@@ -38,10 +43,11 @@ export default function WordList() {
 
   return (
     <>
-      <Tooltip content="List" placement="top" className="!absolute left-5 top-[50%] z-20">
+      <Tooltip content="List" placement="top" className="absolute! left-5 top-[50%] z-20">
         <button
           type="button"
           onClick={openModal}
+          aria-label={currentDictTitleValue}
           className="fixed left-0 top-[50%] z-20 rounded-lg rounded-l-none bg-indigo-50 px-2 py-3 text-lg hover:bg-indigo-200 focus:outline-none dark:bg-indigo-900 dark:hover:bg-indigo-800"
         >
           <ListIcon className="h-6 w-6 text-lg text-indigo-500 dark:text-white" />

@@ -1,0 +1,742 @@
+{
+  "analysis": {
+    "noPracticeData": "暂无练习数据",
+    "exerciseHeatmapTitle": "过去一年练习次数热力图",
+    "wordHeatmapTitle": "过去一年练习词数热力图",
+    "wpmTrendTitle": "过去一年WPM趋势图",
+    "accuracyTrendTitle": "过去一年正确率趋势图",
+    "accuracyName": "正确率(%)",
+    "keyErrorRankTitle": "按键错误次数排行",
+    "keyErrorName": "错误次数",
+    "heatmapTooltip": "{{date}} 练习 {{count}} 次",
+    "months": [
+      "一月",
+      "二月",
+      "三月",
+      "四月",
+      "五月",
+      "六月",
+      "七月",
+      "八月",
+      "九月",
+      "十月",
+      "十一月",
+      "十二月"
+    ],
+    "weekdays": [
+      "日",
+      "一",
+      "二",
+      "三",
+      "四",
+      "五",
+      "六"
+    ],
+    "yearTotal": "过去一年总计 {{count}} 次",
+    "legendLess": "少",
+    "legendMore": "多",
+    "switchToBarChart": "切换为柱状图",
+    "switchToKeyboardHeatmap": "切换为键盘热力图",
+    "statsTitle": "数据统计"
+  },
+  "errorBook": {
+    "tipClickWord": "Tip: 点击错误单词查看详细信息",
+    "word": "单词",
+    "translation": "释义",
+    "wrongCount": "错误次数",
+    "dictionary": "词典",
+    "exportFailed": "导出失败，请重试",
+    "exporting": "导出中...",
+    "export": "导出",
+    "dataLoadFailed": "数据加载失败",
+    "averageTime": "平均用时",
+    "practiceCount": "练习次数",
+    "correctCount": "正确次数",
+    "errorCount": "错误次数",
+    "errorProneLetters": "易错字母"
+  },
+  "favorites": {
+    "title": "收藏夹",
+    "word": "单词",
+    "translation": "释义",
+    "dictionary": "词库",
+    "empty": "还没有收藏任何单词",
+    "goPractice": "去练习",
+    "export": "导出",
+    "exporting": "导出中...",
+    "exportFailed": "导出失败，请重试",
+    "unfavorite": "取消收藏",
+    "favoriteToggle": "收藏/取消收藏",
+    "favoriteShortcutTip": "Tips: 收藏快捷键（{{key}}）",
+    "favoriteAdjacentTip": "收藏该词（{{key}}）",
+    "practice": "练习",
+    "practiceFailed": "练习启动失败",
+    "practiceEmpty": "该词库没有可练习的收藏词"
+  },
+  "gallery": {
+    "noDictsInCategory": "当前分类下没有可用的词典",
+    "chapterLabel": "第 {{index}} 章",
+    "practicedCount": "练习 {{count}} 次",
+    "notPracticed": "未练习",
+    "loading": "加载中...",
+    "chapterCount": "{{count}} 章节",
+    "wordCount": "共 {{count}} 词",
+    "wordCountShort": "{{count}} 词",
+    "chapterSelect": "章节选择",
+    "shortcutEnterEsc": "快捷键 Enter or Esc",
+    "confirmSelect": "完成选择",
+    "practiceCountShort": "练习 {{count}} 次",
+    "avgWrongCount": "平均错误数: {{count}}",
+    "viewErrors": "查看错题",
+    "errorReview": "错题回顾",
+    "selectDict": "选择词典",
+    "wantMoreDicts": "想要添加更多词典？",
+    "dictContributionPrefix": "如果您具备一定的编程技能，欢迎参考我们的",
+    "dictContributionGuide": "词典贡献指南",
+    "dictContributionSuffix": "，按照指引为开源项目贡献新的词典内容。我们非常欢迎社区贡献！",
+    "findMoreDicts": "寻找更多词典",
+    "errorEncountered": "好像遇到错误啦！尝试刷新下",
+    "noDataGoPractice": "暂无数据, 快去练习吧！",
+    "languageEn": "英语",
+    "languageJa": "日语",
+    "languageDe": "德语",
+    "languageKk": "哈萨克语",
+    "languageId": "印尼语",
+    "reviewDescription": "我们将使用您在该词典的历史练习数据、错误次数、练习时间来智能生成练习列表",
+    "reviewExperimental": "目前该生成方式还处于实验阶段，我们会逐步完善该生成方式",
+    "currentDictErrorCount": "当前词典错词数: {{count}}",
+    "continueProgress": "继续当前进度",
+    "startNewReview": "开始新的复习",
+    "reviewCreated": "创建于 {{time}}",
+    "copyrightNotice": "本项目的词典数据来自多个开源项目以及社区贡献者的无偿提供。我们深感感激并尊重每一位贡献者的知识产权。这些数据仅供个人学习和研究使用，严禁用于任何商业目的。如果你是数据的版权所有者，并且认为我们的使用方式侵犯了你的权利，请通过网站底部的电子邮件与我们联系。一旦收到有效的版权投诉，我们将在最短的时间内删除相关内容或寻求必要的许可。同时，我们也鼓励所有使用这些数据的人尊重版权所有者的权利，并且在使用这些数据时遵守所有相关的法律和规定。请注意，虽然我们尽力确保所有数据的合法性和准确性，但我们不能对任何数据的准确性、完整性、合法性或可靠性做出任何保证。使用这些数据的风险完全由用户自己承担。"
+  },
+  "typing": {
+    "mobileAlert": "Qwerty Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad 等平板电脑设备，可以使用外接键盘使用本软件。",
+    "skipWord": "跳过该词",
+    "autoBackupFailed": "自动备份失败",
+    "pressAnyKeyStart": "开始",
+    "pressAnyKeyContinue": "继续",
+    "pressAnyKeyPrefix": "按任意键",
+    "showFullWordTip": "按 Tab 快捷键显示完整单词",
+    "reviewMode": "错题复习",
+    "chapterFormat": "第 {{chapter}} 章",
+    "result": {
+      "accuracy": "正确率",
+      "chapterTime": "章节耗时",
+      "dictationChapter": "默写本章节",
+      "repeatChapter": "重复本章节",
+      "nextChapter": "下一章节",
+      "practiceOtherChapter": "练习其他章节",
+      "exportFailed": "导出失败，请稍后重试",
+      "dictationShortcut": "快捷键：shift + enter",
+      "repeatShortcut": "快捷键：space",
+      "nextShortcut": "快捷键：enter",
+      "conclusionGreat": "表现不错！",
+      "conclusionOnlyWrong": "只错了 {{count}} 个单词",
+      "conclusionPerfect": "全对了！",
+      "conclusionMinor": "有些小问题哦，下一次可以做得更好！",
+      "conclusionTooMany": "错误太多，再来一次如何？",
+      "readWord": "朗读 {{word}}"
+    },
+    "speed": {
+      "time": "时间",
+      "inputCount": "输入数",
+      "wpm": "WPM",
+      "correctCount": "正确数",
+      "accuracy": "正确率"
+    },
+    "switcher": {
+      "soundSetting": "音效设置",
+      "loopWord": "设置单个单词循环",
+      "dictationToggle": "开关默写模式",
+      "transVisibleToggle": "开关释义显示",
+      "errorBook": "错题本",
+      "favorites": "收藏夹",
+      "viewStats": "查看数据统计",
+      "darkModeToggle": "开关深色模式",
+      "handPosition": "指法图示",
+      "settings": "设置"
+    },
+    "dictChapter": {
+      "dictSwitch": "词典切换",
+      "chapterSwitch": "章节切换",
+      "chapterLabel": "第 {{chapter}} 章"
+    },
+    "startButton": {
+      "pause": "暂停",
+      "start": "开始",
+      "restart": "重新开始"
+    },
+    "pronunciation": {
+      "off": "关闭",
+      "switcherTooltip": "发音及音标切换",
+      "phoneticToggle": "开关音标显示",
+      "phoneticOn": "音标已开启",
+      "phoneticOff": "音标已关闭",
+      "wordPronToggle": "开关单词发音",
+      "pronOn": "发音已开启",
+      "pronOff": "发音已关闭",
+      "transPronToggle": "开关释义发音",
+      "loopPronToggle": "开关循环发音",
+      "loopOn": "循环已开启",
+      "loopOff": "循环已关闭",
+      "accentSelect": "单词发音口音",
+      "pronShortcutTip": "Tips: 朗读发音快捷键（{{key}}）"
+    },
+    "soundSwitcher": {
+      "label": "音效设置",
+      "keySoundToggle": "开关按键音",
+      "hintSoundToggle": "开关效果音"
+    },
+    "loopWord": {
+      "selectLoopTimes": "选择单词的循环次数",
+      "infinite": "无限"
+    },
+    "handPosition": {
+      "title": "推荐打字指法图示",
+      "closeDialog": "关闭对话框"
+    },
+    "dictation": {
+      "hideAll": "全部隐藏",
+      "hideVowel": "隐藏元音",
+      "hideConsonant": "隐藏辅音",
+      "randomHide": "随机隐藏",
+      "toggleLabel": "开关默写模式",
+      "dictationOn": "默写已开启",
+      "dictationOff": "默写已关闭",
+      "dictationMode": "默写模式"
+    },
+    "share": {
+      "shareResult": "分享你的成绩给朋友",
+      "save": "保存",
+      "slogan": "为键盘工作者设计的单词与肌肉记忆锻炼软件",
+      "idioms": [
+        {
+          "word": "快人一手",
+          "sentence": "速度快得就像比别人多长了一只手"
+        },
+        {
+          "word": "手落听雨",
+          "sentence": "雷霆手法，震撼观众"
+        },
+        {
+          "word": "疾如闪电",
+          "sentence": "打字速度极快，就像一道闪电在键盘上迅速穿梭"
+        },
+        {
+          "word": "手如疾风",
+          "sentence": "手速快得惊人，就像疾风一般"
+        },
+        {
+          "word": "精准如箭",
+          "sentence": "打字精度极高，就像一箭命中靶心一般准确"
+        },
+        {
+          "word": "狂飙突进",
+          "sentence": "打字速度快得让人感到狂飙突进的冲劲"
+        },
+        {
+          "word": "神速如风",
+          "sentence": "神速打字，如同风一样快"
+        },
+        {
+          "word": "招招到位",
+          "sentence": "打字精度和速度都十分到位，毫不出错。"
+        },
+        {
+          "word": "如履平地",
+          "sentence": "打字手法熟练，如履平地，行云流水"
+        },
+        {
+          "word": "声东击西",
+          "sentence": "打字技巧高超，声东击西，出奇制胜"
+        },
+        {
+          "word": "魔法使者",
+          "sentence": "打字速度快得让人难以置信，就像一名魔法使者。"
+        },
+        {
+          "word": "灵活多变",
+          "sentence": "打字姿势灵活多变，就像一只蛇一样柔韧。"
+        },
+        {
+          "word": "犹如飞鸟",
+          "sentence": "打字速度极快，就像一只飞鸟在键盘上翱翔。"
+        },
+        {
+          "word": "连珠妙语",
+          "sentence": "打字技巧娴熟，如同一连串妙语连珠。"
+        },
+        {
+          "word": "百毒不侵",
+          "sentence": "打字速度和准确度都非常高，就像身具百毒不侵的能力。"
+        },
+        {
+          "word": "攻守兼备",
+          "sentence": "打字速度和精度都非常出色，攻守兼备，所向披靡。"
+        },
+        {
+          "word": "跃然纸上",
+          "sentence": "打字手法灵活多变，跃然纸上，生动有趣。"
+        }
+      ]
+    },
+    "wordList": {
+      "reviewTitle": "{{dictName}} 错题复习",
+      "chapterTitle": "{{dictName}} 第 {{chapter}} 章"
+    },
+    "prevNextWord": {
+      "shortcut": "快捷键: {{key}}"
+    },
+    "tipAlert": {
+      "title": "插件冲突！",
+      "description": "如果多次输入失败，可能是与本地浏览器插件冲突，请关闭相关插件或切换浏览器试试"
+    },
+    "inputMethodAlert": "您正在使用输入法，请关闭输入法。",
+    "readTranslation": "朗读释义",
+    "errorBookButton": "查看错题本",
+    "favoritesButton": "查看收藏夹"
+  },
+  "settings": {
+    "openDialog": "打开设置对话框",
+    "title": "设置",
+    "closeDialog": "关闭对话框",
+    "tabSound": "音效设置",
+    "tabAdvanced": "高级设置",
+    "tabView": "显示设置",
+    "tabData": "数据设置",
+    "tabBackup": "备份",
+    "sound": {
+      "wordPronunciation": "单词发音",
+      "pronOn": "发音已开启",
+      "pronOff": "发音已关闭",
+      "volume": "音量",
+      "rate": "倍速",
+      "transPronunciation": "释义发音",
+      "keySound": "按键音",
+      "keySoundEffect": "按键音效",
+      "hintSound": "效果音"
+    },
+    "advanced": {
+      "randomChapter": "章节乱序",
+      "randomChapterDesc": "开启后，每次练习章节中单词会随机排序。下一章节生效",
+      "randomOn": "随机已开启",
+      "randomOff": "随机已关闭",
+      "showPrevNextWord": "练习时展示上一个/下一个单词",
+      "showPrevNextWordDesc": "开启后，练习中会在上方展示上一个/下一个单词",
+      "showWordOn": "展示单词已开启",
+      "showWordOff": "展示单词已关闭",
+      "ignoreCase": "是否忽略大小写",
+      "ignoreCaseDesc": "开启后，输入时不区分大小写，如输入\"hello\"和\"Hello\"都会被认为是正确的",
+      "ignoreCaseOn": "忽略大小写已开启",
+      "ignoreCaseOff": "忽略大小写已关闭",
+      "skipParentheses": "跳过括号内容",
+      "skipParenthesesDesc": "开启后，输入时无需输入括号及括号内的内容，如 word(s) 只需输入 word",
+      "skipParenthesesOn": "跳过括号已开启",
+      "skipParenthesesOff": "跳过括号已关闭",
+      "textSelectable": "是否允许选择文本",
+      "textSelectableDesc": "开启后，可以通过鼠标选择文本",
+      "textSelectableOn": "选择文本已开启",
+      "textSelectableOff": "选择文本已关闭",
+      "showHintInDictation": "是否允许默写模式下显示提示",
+      "showHintInDictationDesc": "开启后，可以通过鼠标 hover 单词显示正确答案",
+      "showHintOn": "显示提示已开启",
+      "showHintOff": "显示提示已关闭",
+      "shortcut": "快捷键",
+      "shortcutDesc": "自定义打字界面的快捷键，点击后按下组合键",
+      "prevWordShortcut": "上一个词",
+      "nextWordShortcut": "下一个词",
+      "favoriteCurrentShortcut": "收藏当前词",
+      "favoritePrevShortcut": "收藏上一个词",
+      "favoriteNextShortcut": "收藏下一个词",
+      "pronunciationShortcut": "发音",
+      "recording": "按下组合键..."
+    },
+    "view": {
+      "appearance": "外观",
+      "language": "语言",
+      "followSystem": "跟随系统",
+      "darkMode": "深色模式",
+      "fontSettings": "字体设置",
+      "foreignFont": "外语字体",
+      "foreignFontStyle": "外语字体样式",
+      "chineseFont": "中文字体",
+      "chineseFontStyle": "中文字体样式",
+      "resetFontSettings": "重置字体设置"
+    },
+    "data": {
+      "dataExport": "数据导出",
+      "dataExportDesc": "目前，用户的练习数据仅保存在本地。如果您需要在不同的设备、浏览器或者其他非官方部署上使用 Qwerty Learner，您需要手动进行数据同步和保存。为了保留您的练习进度，以及使用近期即将上线的数据分析和智能训练功能，我们建议您及时备份您的数据。",
+      "dataSecurityWarning": "为了您的数据安全，请不要修改导出的数据文件。",
+      "exportData": "导出数据",
+      "dataImport": "数据导入",
+      "dataImportDesc": "请注意，导入数据将 完全覆盖 当前数据。请谨慎操作。",
+      "importData": "导入数据"
+    },
+    "webdav": {
+      "backupConfig": "备份配置",
+      "backupConfigDesc": "配置 NAS 的 WebDAV 地址，每次完成章节后自动增量备份打字数据到 NAS。手动备份会创建新的完整备份文件。",
+      "enableBackup": "启用备份",
+      "webdavUrl": "WebDAV 地址",
+      "username": "用户名",
+      "password": "密码",
+      "autoBackup": "自动备份",
+      "autoBackupDesc": "启动时自动同步 & 章节完成后增量备份",
+      "testConnection": "测试连接",
+      "fullBackup": "完整备份",
+      "listBackups": "列出备份",
+      "connectionTestFailed": "连接测试失败",
+      "backupFailed": "备份失败",
+      "listBackupsFailed": "列出备份失败",
+      "restoreSuccessNew": "恢复成功，新增 {{count}} 条记录",
+      "restoreSuccessUpToDate": "恢复成功，本地数据已是最新",
+      "withSettings": "，含设置",
+      "restoreFailed": "恢复失败",
+      "confirmDeleteBackup": "确定要删除这个备份文件吗？",
+      "deleteFailed": "删除失败",
+      "lastBackupInfo": "上次备份: {{time}}，共 {{count}} 条记录",
+      "selectBackupToRestore": "选择备份文件恢复",
+      "close": "关闭",
+      "noBackupFiles": "暂无备份文件",
+      "restore": "恢复",
+      "delete": "删除"
+    }
+  },
+  "common": {
+    "syncNotice": {
+      "title": "数据同步",
+      "close": "关闭",
+      "syncedRecords": "已从其他设备同步 {{count}} 条记录",
+      "recentPractice": "最近练习：{{dictName}} 第 {{chapter}} 章",
+      "stayCurrentChapter": "留在当前章节",
+      "jumpToChapter": "跳转到第 {{chapter}} 章"
+    },
+    "starCard": {
+      "lightItUp": "点亮它！",
+      "bookmarkShortcut": "收藏快捷键 {{key}}",
+      "iWantToStar": "我想收藏",
+      "autoCloseIn": "{{countdown}}s 后自动关闭",
+      "closeTip": "关闭提示",
+      "encourageMessage": "坚持练习，提高语言能力。将「Qwerty Learner」保存到收藏夹，永不迷失！"
+    },
+    "infoPanel": {
+      "close": "关闭"
+    }
+  },
+  "resources": {
+    "sound": {
+      "sound1": "声音1",
+      "usAccent": "美音",
+      "ukAccent": "英音",
+      "german": "德语",
+      "romaji": "罗马音",
+      "hapin": "哈拼",
+      "mandarin": "普通话",
+      "japanese": "日语",
+      "kazakh": "哈萨克语",
+      "indonesian": "印尼语",
+      "favoriteAdd": "收藏音效",
+      "favoriteRemove": "取消收藏音效"
+    },
+    "font": {
+      "systemDefault": "系统默认",
+      "pingfang": "苹方"
+    }
+  },
+  "webdav": {
+    "operationInProgress": "数据操作正在进行中，请稍后再试",
+    "connectionSuccess": "连接成功",
+    "connectionFailed": "连接失败: HTTP {{status}}",
+    "connectionTimeout": "连接超时，请检查地址是否正确",
+    "connectionFailedError": "连接失败: {{error}}",
+    "noNewDataSkip": "没有新增数据，跳过备份",
+    "incrementalBackupSuccess": "增量备份成功，新增 {{count}} 条记录",
+    "backupFailedHttp": "备份失败: HTTP {{status}}",
+    "backupTimeout": "备份超时，请检查网络连接",
+    "backupFailedError": "备份失败: {{error}}",
+    "fullBackupSuccess": "完整备份成功: {{filename}}",
+    "fullBackupSuccessLatestNotUpdated": "备份成功（但最新备份文件未更新）: {{filename}}",
+    "remoteNoBackup": "远程无备份文件",
+    "downloadExistingFailed": "下载现有备份失败: HTTP {{status}}",
+    "downloadExistingError": "下载现有备份异常: {{error}}",
+    "listFilesFailed": "列出文件失败: HTTP {{status}}",
+    "listFilesError": "列出文件失败: {{error}}",
+    "listFilesTimeout": "列出文件超时，请检查网络连接",
+    "latestLabel": "最新",
+    "foundBackupFiles": "找到 {{count}} 个备份文件",
+    "restoreFailedUrlMismatch": "恢复失败：URL 不属于当前配置的 WebDAV 服务器",
+    "downloadFailed": "下载失败: HTTP {{status}}",
+    "downloadTimeout": "下载超时，请检查网络连接",
+    "backupFormatInvalidNoData": "备份文件格式无效：缺少 data 字段",
+    "backupFormatInvalidNotArray": "备份文件格式无效：数据字段应为数组",
+    "restoreSuccess": "恢复成功",
+    "restoreFailedError": "恢复失败: {{error}}",
+    "deleteFailedUrlMismatch": "删除失败：URL 不属于当前配置的 WebDAV 服务器",
+    "deleteSuccess": "删除成功",
+    "deleteFailedHttp": "删除失败: HTTP {{status}}",
+    "deleteFailedError": "删除失败: {{error}}",
+    "deleteTimeout": "删除超时，请检查网络连接",
+    "noBackupFile": "暂无备份文件",
+    "firstSyncUploaded": "首次同步：本地数据已上传",
+    "syncFailedHttp": "同步失败: HTTP {{status}}",
+    "remoteBackupInvalidNoData": "远程备份格式无效：缺少 data 字段",
+    "remoteBackupInvalidNotArray": "远程备份格式无效：数据字段应为数组",
+    "syncSuccess": "同步成功，合并 {{count}} 条远程记录",
+    "syncTimeout": "同步超时，请检查网络连接",
+    "syncFailedError": "同步失败: {{error}}",
+    "getBackupInfoTimeout": "获取备份信息超时，请检查网络连接",
+    "getBackupInfoFailed": "获取备份信息失败: {{error}}"
+  },
+  "app": {
+    "pageLoadFailed": "页面加载失败，",
+    "refreshRetry": "刷新重试",
+    "switchLanguage": "切换语言"
+  },
+  "mobile": {
+    "header": {
+      "officialSite": "官方网站",
+      "visitSite": "访问官网",
+      "site": "官网"
+    },
+    "breadcrumb": {
+      "navLabel": "面包屑导航",
+      "home": "首页",
+      "officialSite": "Qwerty Learner 官网"
+    },
+    "hero": {
+      "badge": "官方网站",
+      "titlePrefix1": "为",
+      "titleHighlight1": "键盘工作者",
+      "titlePrefix2": "设计的",
+      "titleHighlight2": "英语学习软件",
+      "subtitle": "结合打字练习与单词记忆，让英语学习变得高效而有趣",
+      "featureTags": [
+        "英语单词记忆训练",
+        "国际音标发音练习",
+        "CET 四六级词库",
+        "程序员专用词汇",
+        "免费在线学习",
+        "完全开源"
+      ],
+      "cta": "立即开始"
+    },
+    "detail": {
+      "phonetic": {
+        "title": "音标显示与发音功能",
+        "description": "帮助用户同时记忆单词的读音与音标"
+      },
+      "dictation": {
+        "title": "默写模式",
+        "description": "每章结束后可选择默写，巩固所学单词"
+      },
+      "realtime": {
+        "title": "实时反馈",
+        "description": "显示输入速度和正确率，量化技能提升"
+      },
+      "coder": {
+        "title": "为程序员定制",
+        "description": "内置编程相关词库，提高工作效率"
+      }
+    },
+    "features": {
+      "titlePrefix": "核心功能，",
+      "titleHighlight": "专业设计",
+      "subtitle": "每一个细节都为了更好的在线英语学习体验而精心打磨，适合程序员、学生、上班族等所有键盘工作者快速提升英语打字速度和英语单词记忆能力",
+      "phonetic": {
+        "title": "音标显示与发音功能",
+        "description": "方便用户在记忆单词时，同时记忆读音与音标。支持标准美式发音，帮助用户建立正确的语音记忆，提高听力和口语能力。"
+      },
+      "dictation": {
+        "title": "智能默写模式",
+        "description": "在用户完成一个章节的练习后，会弹出选项是否默写本章，方便用户巩固本章学习的单词。通过默写练习强化记忆效果。"
+      },
+      "stats": {
+        "title": "精准数据统计",
+        "description": "量化用户输入的速度和输入的正确率，让用户有感知的了解自己技能的提升。支持 WPM 统计、准确率分析和进度跟踪。"
+      },
+      "muscleMemory": {
+        "title": "英语肌肉记忆训练",
+        "description": "专为键盘工作者设计，将英语单词记忆与键盘输入的肌肉记忆锻炼相结合，在背诵单词的同时巩固打字技能。"
+      },
+      "errorCorrection": {
+        "title": "智能错误纠正",
+        "description": "为了避免造成错误的肌肉记忆，如果用户单词输入错误则需要重新输入单词，确保用户维持正确的肌肉记忆和拼写习惯。"
+      },
+      "multiPlatform": {
+        "title": "多平台无缝体验",
+        "description": "支持网页版和 VSCode 插件版本，随时随地开始练习。还提供了便捷的快速部署方案，满足不同用户的使用需求。"
+      }
+    },
+    "dictionary": {
+      "titlePrefix": "丰富词库，",
+      "titleHighlight": "应有尽有",
+      "subtitle": "涵盖 CET-4/6 四六级英语考试、雅思托福 GRE 考研英语、商务英语 BEC 考试以及专为程序员定制的 JavaScript/Java/Python 技术词库，满足不同用户的英语学习需求",
+      "exam": {
+        "title": "考试必备词库",
+        "cet4": "CET-4 大学英语四级",
+        "cet6": "CET-6 大学英语六级",
+        "toefl": "TOEFL 托福考试词汇",
+        "ielts": "IELTS 雅思考试词汇",
+        "gre": "GRE 研究生入学考试",
+        "gmat": "GMAT 商学院入学考试",
+        "sat": "SAT 学术能力评估测试"
+      },
+      "academic": {
+        "title": "学术专业词库",
+        "postgrad": "考研英语核心词汇",
+        "tem4": "专业四级英语 TEM-4",
+        "tem8": "专业八级英语 TEM-8",
+        "gaokao": "高考英语必备词汇",
+        "zhongkao": "中考英语重点词汇",
+        "pep": "人教版英语 3-9 年级"
+      },
+      "business": {
+        "title": "商务与多语言",
+        "becCore": "商务英语核心词汇",
+        "bec": "BEC 商务英语考试",
+        "wangluIelts": "王陆雅思王听力语料库",
+        "japanese": "日语常见词 N1-N5",
+        "kazakh": "哈萨克语基础3000词"
+      },
+      "coder": {
+        "title": "程序员专属词库与 API",
+        "description": "专为程序员量身定制的技术词汇和编程 API 练习，提高代码编写效率和技术英语水平",
+        "coderDictLabel": "编程词汇",
+        "coderDictDesc": "程序员常用词",
+        "jsApiDesc": "核心方法练习",
+        "nodeApiDesc": "服务端开发",
+        "javaApiDesc": "企业级开发",
+        "linuxCmdLabel": "命令行指令",
+        "linuxCmdDesc": "系统管理",
+        "updating": "持续更新更多编程语言 API"
+      },
+      "community": {
+        "title": "社区共建，持续增长",
+        "description": "我们的词库由活跃的开源社区持续贡献和维护，如果您需要特定的词库，欢迎在 GitHub 提出 Issue",
+        "cta": "立即体验丰富词库"
+      }
+    },
+    "coder": {
+      "titlePrefix": "专为",
+      "titleHighlight": "程序员",
+      "titleSuffix": "量身定制",
+      "subtitle": "内置程序员工作常用技术英语单词词库，包括算法数据结构、设计模式、云计算等技术词汇，提高英语打字速度。同时支持 JavaScript/Node.js/Java/Python/Linux 命令等多种编程语言 API 练习，帮助程序员快速熟悉常用编程接口",
+      "techVocab": {
+        "title": "编程技术词汇",
+        "description": "专门收录程序员工作中最常用的英语单词，包括算法、数据结构、设计模式、软件工程等领域的核心词汇",
+        "algoDs": "算法与数据结构词汇",
+        "architecture": "软件架构与设计模式",
+        "projectMgmt": "项目管理与协作工具",
+        "cloudDevops": "云计算与 DevOps 术语"
+      },
+      "apiPractice": {
+        "title": "API 方法练习",
+        "description": "支持多种主流编程语言的 API 练习，通过打字练习熟悉常用方法，提高编码效率和 API 记忆",
+        "jsApi": "Array, Object, Promise 等核心 API",
+        "nodeApi": "fs, http, express 等服务端 API",
+        "javaApi": "Collection, Stream 等企业级 API",
+        "linuxCmd": "常用命令行指令和系统管理"
+      },
+      "highlights": {
+        "fastApi": {
+          "title": "快速熟悉 API",
+          "description": "通过打字练习快速记忆编程 API，提高开发效率"
+        },
+        "techEnglish": {
+          "title": "技术英语提升",
+          "description": "专业技术词汇训练，提升阅读文档和交流能力"
+        },
+        "vscode": {
+          "title": "VSCode 插件",
+          "description": "支持 VSCode 插件版本，随时在开发环境中练习"
+        }
+      },
+      "community": {
+        "title": "社区驱动，持续更新",
+        "description": "我们的 API 词库主要依赖于社区贡献，更多编程语言的 API 正在逐步添加中，欢迎参与贡献",
+        "cta": "体验程序员专属功能",
+        "vscodeCta": "安装 VSCode 插件"
+      }
+    },
+    "awards": {
+      "badge": "荣誉成就",
+      "titlePrefix": "备受",
+      "titleHighlight": "认可",
+      "titleSuffix": "的优质项目",
+      "subtitle": "获得 GitHub 全球趋势榜第一名、V2EX 全站热搜、Gitee GVP 最有价值开源项目、少数派首页推荐等多个权威平台认可，成为 10 万+ 用户的首选免费英语学习软件",
+      "githubTrending": {
+        "title": "GitHub 趋势榜",
+        "description": "全球趋势榜第一名"
+      },
+      "v2ex": {
+        "title": "V2EX 热搜",
+        "description": "V2EX 全站热搜项目"
+      },
+      "giteeGvp": {
+        "title": "Gitee GVP",
+        "description": "最有价值开源项目"
+      },
+      "sspai": {
+        "title": "少数派推荐",
+        "description": "少数派首页推荐应用"
+      },
+      "openSource": {
+        "title": "开源社区认可",
+        "github": {
+          "title": "GitHub 全球趋势榜第一名",
+          "description": "获得全球开发者最高关注和认可"
+        },
+        "giteeGvp": {
+          "title": "Gitee 最有价值开源项目 (GVP)",
+          "description": "国内顶级开源项目认证"
+        },
+        "gitcode": {
+          "title": "GitCode G-Star 计划毕业项目",
+          "description": "开源摘星计划优秀项目"
+        }
+      },
+      "media": {
+        "title": "媒体平台推荐",
+        "v2ex": {
+          "title": "V2EX 全站热搜项目",
+          "description": "技术社区高度关注和讨论"
+        },
+        "sspai": {
+          "title": "少数派首页推荐",
+          "description": "优质应用推荐平台认可"
+        },
+        "gitee": {
+          "title": "Gitee 全站推荐项目",
+          "description": "国内领先代码托管平台推荐"
+        }
+      },
+      "stats": {
+        "title": "用户信赖，数据说话",
+        "starsDesc": "获得开发者广泛认可",
+        "monthlyUsers": "月活跃用户",
+        "usersDesc": "持续使用的学习者",
+        "contributors": "社区贡献者",
+        "contributorsDesc": "共同完善项目"
+      },
+      "join": {
+        "title": "加入我们的用户群体",
+        "description": "成为数万名用户中的一员，体验这款备受认可的英语学习工具，提升您的打字技能和英语水平",
+        "cta": "立即加入用户群体"
+      }
+    },
+    "cta": {
+      "titlePrefix": "立即开始",
+      "titleHighlight": "体验",
+      "subtitle": "开始你的英语学习之旅，让每一次打字都成为进步",
+      "button": "开始学习 →",
+      "desktopTip": "建议使用桌面端浏览器访问"
+    }
+  },
+  "pagination": {
+    "total": "共 {{count}} 条",
+    "perPage": "每页",
+    "perPageOption": "{{count}} 条",
+    "previous": "上一页",
+    "next": "下一页"
+  }
+}

@@ -1,0 +1,742 @@
+{
+  "analysis": {
+    "noPracticeData": "No practice data yet",
+    "exerciseHeatmapTitle": "Practice Sessions Heatmap (Past Year)",
+    "wordHeatmapTitle": "Words Practiced Heatmap (Past Year)",
+    "wpmTrendTitle": "WPM Trend (Past Year)",
+    "accuracyTrendTitle": "Accuracy Trend (Past Year)",
+    "accuracyName": "Accuracy (%)",
+    "keyErrorRankTitle": "Key Error Count Ranking",
+    "keyErrorName": "Error Count",
+    "heatmapTooltip": "{{count}} sessions on {{date}}",
+    "months": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "weekdays": [
+      "Sun",
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "yearTotal": "Total {{count}} sessions in the past year",
+    "legendLess": "Less",
+    "legendMore": "More",
+    "switchToBarChart": "Switch to Bar Chart",
+    "switchToKeyboardHeatmap": "Switch to Keyboard Heatmap",
+    "statsTitle": "Statistics"
+  },
+  "errorBook": {
+    "tipClickWord": "Tip: Click an incorrect word for details",
+    "word": "Word",
+    "translation": "Definition",
+    "wrongCount": "Error Count",
+    "dictionary": "Dictionary",
+    "exportFailed": "Export failed, please try again",
+    "exporting": "Exporting...",
+    "export": "Export",
+    "dataLoadFailed": "Data load failed",
+    "averageTime": "Average Time",
+    "practiceCount": "Practice Count",
+    "correctCount": "Correct Count",
+    "errorCount": "Error Count",
+    "errorProneLetters": "Error-Prone Letters"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "word": "Word",
+    "translation": "Definition",
+    "dictionary": "Dictionary",
+    "empty": "No favorite words yet",
+    "goPractice": "Go Practice",
+    "export": "Export",
+    "exporting": "Exporting...",
+    "exportFailed": "Export failed, please try again",
+    "unfavorite": "Unfavorite",
+    "favoriteToggle": "Favorite/Unfavorite",
+    "favoriteShortcutTip": "Tips: Favorite shortcut ({{key}})",
+    "favoriteAdjacentTip": "Favorite this word ({{key}})",
+    "practice": "Practice",
+    "practiceFailed": "Failed to start practice",
+    "practiceEmpty": "No practice words in this dictionary"
+  },
+  "gallery": {
+    "noDictsInCategory": "No dictionaries available in this category",
+    "chapterLabel": "Chapter {{index}}",
+    "practicedCount": "Practiced {{count}} times",
+    "notPracticed": "Not practiced",
+    "loading": "Loading...",
+    "chapterCount": "{{count}} chapters",
+    "wordCount": "{{count}} words in total",
+    "wordCountShort": "{{count}} words",
+    "chapterSelect": "Chapter Selection",
+    "shortcutEnterEsc": "Shortcut Enter or Esc",
+    "confirmSelect": "Confirm",
+    "practiceCountShort": "Practiced {{count}} times",
+    "avgWrongCount": "Avg errors: {{count}}",
+    "viewErrors": "View Errors",
+    "errorReview": "Error Review",
+    "selectDict": "Select Dictionary",
+    "wantMoreDicts": "Want to add more dictionaries?",
+    "dictContributionPrefix": "If you have programming skills, feel free to check our",
+    "dictContributionGuide": "Dictionary Contribution Guide",
+    "dictContributionSuffix": " and follow the instructions to contribute new dictionary content to this open-source project. Community contributions are very welcome!",
+    "findMoreDicts": "Find More Dictionaries",
+    "errorEncountered": "Something went wrong! Try refreshing the page",
+    "noDataGoPractice": "No data yet, go practice!",
+    "languageEn": "English",
+    "languageJa": "Japanese",
+    "languageDe": "German",
+    "languageKk": "Kazakh",
+    "languageId": "Indonesian",
+    "reviewDescription": "We will use your historical practice data, error count, and practice time for this dictionary to intelligently generate a practice list",
+    "reviewExperimental": "This generation method is still experimental. We will continue to improve it over time",
+    "currentDictErrorCount": "Error words in current dictionary: {{count}}",
+    "continueProgress": "Continue Current Progress",
+    "startNewReview": "Start New Review",
+    "reviewCreated": "Created at {{time}}",
+    "copyrightNotice": "The dictionary data in this project comes from multiple open-source projects and voluntary contributions from community members. We are deeply grateful and respect the intellectual property rights of every contributor. This data is provided solely for personal learning and research purposes and must not be used for any commercial purpose. If you are the copyright owner of any data and believe that our use infringes upon your rights, please contact us via the email address at the bottom of the website. Upon receiving a valid copyright complaint, we will remove the relevant content or seek necessary permissions as soon as possible. We also encourage all users of this data to respect the rights of copyright holders and to comply with all applicable laws and regulations when using the data. Please note that while we make every effort to ensure the legality and accuracy of all data, we cannot guarantee the accuracy, completeness, legality, or reliability of any data. The risk of using this data is entirely borne by the user."
+  },
+  "typing": {
+    "mobileAlert": "Qwerty Learner is designed to improve English typing efficiency for keyboard users. It is not yet optimized for mobile devices. Please use a desktop browser to access this app. If you are using a tablet device such as an iPad, you can use an external keyboard with this software.",
+    "skipWord": "Skip this word",
+    "autoBackupFailed": "Auto backup failed",
+    "pressAnyKeyStart": "start",
+    "pressAnyKeyContinue": "continue",
+    "pressAnyKeyPrefix": "Press any key to ",
+    "showFullWordTip": "Press Tab shortcut to show full word",
+    "reviewMode": "Error Review",
+    "chapterFormat": "Chapter {{chapter}}",
+    "result": {
+      "accuracy": "Accuracy",
+      "chapterTime": "Chapter Time",
+      "dictationChapter": "Dictation: This Chapter",
+      "repeatChapter": "Repeat This Chapter",
+      "nextChapter": "Next Chapter",
+      "practiceOtherChapter": "Practice Other Chapters",
+      "exportFailed": "Export failed, please try again later",
+      "dictationShortcut": "Shortcut: Shift + Enter",
+      "repeatShortcut": "Shortcut: Space",
+      "nextShortcut": "Shortcut: Enter",
+      "conclusionGreat": "Well done!",
+      "conclusionOnlyWrong": "Only {{count}} word(s) wrong",
+      "conclusionPerfect": "Perfect!",
+      "conclusionMinor": "A few mistakes, you can do better next time!",
+      "conclusionTooMany": "Too many errors, how about trying again?",
+      "readWord": "Read {{word}}"
+    },
+    "speed": {
+      "time": "Time",
+      "inputCount": "Input Count",
+      "wpm": "WPM",
+      "correctCount": "Correct Count",
+      "accuracy": "Accuracy"
+    },
+    "switcher": {
+      "soundSetting": "Sound Settings",
+      "loopWord": "Toggle Single Word Loop",
+      "dictationToggle": "Toggle Dictation Mode",
+      "transVisibleToggle": "Toggle Definition Display",
+      "errorBook": "Error Book",
+      "favorites": "Favorites",
+      "viewStats": "View Statistics",
+      "darkModeToggle": "Toggle Dark Mode",
+      "handPosition": "Finger Position Guide",
+      "settings": "Settings"
+    },
+    "dictChapter": {
+      "dictSwitch": "Switch Dictionary",
+      "chapterSwitch": "Switch Chapter",
+      "chapterLabel": "Chapter {{chapter}}"
+    },
+    "startButton": {
+      "pause": "Pause",
+      "start": "Start",
+      "restart": "Restart"
+    },
+    "pronunciation": {
+      "off": "Off",
+      "switcherTooltip": "Pronunciation & Phonetic Toggle",
+      "phoneticToggle": "Toggle Phonetic Display",
+      "phoneticOn": "Phonetic enabled",
+      "phoneticOff": "Phonetic disabled",
+      "wordPronToggle": "Toggle Word Pronunciation",
+      "pronOn": "Pronunciation enabled",
+      "pronOff": "Pronunciation disabled",
+      "transPronToggle": "Toggle Definition Pronunciation",
+      "loopPronToggle": "Toggle Loop Pronunciation",
+      "loopOn": "Loop enabled",
+      "loopOff": "Loop disabled",
+      "accentSelect": "Word Pronunciation Accent",
+      "pronShortcutTip": "Tips: Pronunciation shortcut ({{key}})"
+    },
+    "soundSwitcher": {
+      "label": "Sound Settings",
+      "keySoundToggle": "Toggle Key Sound",
+      "hintSoundToggle": "Toggle Effect Sound"
+    },
+    "loopWord": {
+      "selectLoopTimes": "Select word loop count",
+      "infinite": "Infinite"
+    },
+    "handPosition": {
+      "title": "Recommended Typing Finger Position Guide",
+      "closeDialog": "Close Dialog"
+    },
+    "dictation": {
+      "hideAll": "Hide All",
+      "hideVowel": "Hide Vowels",
+      "hideConsonant": "Hide Consonants",
+      "randomHide": "Random Hide",
+      "toggleLabel": "Toggle Dictation Mode",
+      "dictationOn": "Dictation enabled",
+      "dictationOff": "Dictation disabled",
+      "dictationMode": "Dictation Mode"
+    },
+    "share": {
+      "shareResult": "Share your results with friends",
+      "save": "Save",
+      "slogan": "A word and muscle memory training app designed for keyboard workers",
+      "idioms": [
+        {
+          "word": "Swift Hand",
+          "sentence": "Typing so fast it's like having an extra hand"
+        },
+        {
+          "word": "Thunder Fall",
+          "sentence": "Striking keys with thunderous precision"
+        },
+        {
+          "word": "Lightning Fast",
+          "sentence": "Typing speed like lightning across the keyboard"
+        },
+        {
+          "word": "Wind Rush",
+          "sentence": "Finger speed as astonishing as a rushing wind"
+        },
+        {
+          "word": "Arrow True",
+          "sentence": "Typing accuracy as precise as an arrow hitting the bullseye"
+        },
+        {
+          "word": "Surge Forward",
+          "sentence": "Typing speed with the momentum of a surging tide"
+        },
+        {
+          "word": "Wind Swift",
+          "sentence": "Typing as swift as the wind itself"
+        },
+        {
+          "word": "Perfect Strike",
+          "sentence": "Every keystroke lands perfectly, zero errors"
+        },
+        {
+          "word": "Smooth Flow",
+          "sentence": "Typing flows smoothly like walking on flat ground"
+        },
+        {
+          "word": "Feint Master",
+          "sentence": "Advanced technique, striking where least expected"
+        },
+        {
+          "word": "Spell Caster",
+          "sentence": "Typing speed so incredible, like a magic caster"
+        },
+        {
+          "word": "Flex Flow",
+          "sentence": "Flexible and adaptable typing posture, fluid as a snake"
+        },
+        {
+          "word": "Soaring Bird",
+          "sentence": "Typing as swiftly as a bird soaring over the keyboard"
+        },
+        {
+          "word": "Word Cascade",
+          "sentence": "Typing skill as fluent as a cascade of witty words"
+        },
+        {
+          "word": "Iron Shield",
+          "sentence": "Speed and accuracy so high, seemingly invincible"
+        },
+        {
+          "word": "Balanced Force",
+          "sentence": "Outstanding speed and precision, unbeatable in attack and defense"
+        },
+        {
+          "word": "Vivid Touch",
+          "sentence": "Flexible and vivid typing, lively and engaging"
+        }
+      ]
+    },
+    "wordList": {
+      "reviewTitle": "{{dictName}} Error Review",
+      "chapterTitle": "{{dictName}} Chapter {{chapter}}"
+    },
+    "prevNextWord": {
+      "shortcut": "Shortcut: {{key}}"
+    },
+    "tipAlert": {
+      "title": "Extension Conflict!",
+      "description": "If typing fails repeatedly, it may be conflicting with a browser extension. Please disable the relevant extension or try a different browser"
+    },
+    "inputMethodAlert": "You are using an input method. Please disable it.",
+    "readTranslation": "Read Definition",
+    "errorBookButton": "View Error Book",
+    "favoritesButton": "View Favorites"
+  },
+  "settings": {
+    "openDialog": "Open Settings Dialog",
+    "title": "Settings",
+    "closeDialog": "Close Dialog",
+    "tabSound": "Sound",
+    "tabAdvanced": "Advanced",
+    "tabView": "Display",
+    "tabData": "Data",
+    "tabBackup": "Backup",
+    "sound": {
+      "wordPronunciation": "Word Pronunciation",
+      "pronOn": "Pronunciation enabled",
+      "pronOff": "Pronunciation disabled",
+      "volume": "Volume",
+      "rate": "Speed",
+      "transPronunciation": "Definition Pronunciation",
+      "keySound": "Key Sound",
+      "keySoundEffect": "Key Sound Effect",
+      "hintSound": "Effect Sound"
+    },
+    "advanced": {
+      "randomChapter": "Shuffle Chapter",
+      "randomChapterDesc": "When enabled, words in each chapter will be randomly ordered. Takes effect from the next chapter",
+      "randomOn": "Shuffle enabled",
+      "randomOff": "Shuffle disabled",
+      "showPrevNextWord": "Show Previous/Next Word During Practice",
+      "showPrevNextWordDesc": "When enabled, the previous/next word will be displayed above during practice",
+      "showWordOn": "Word display enabled",
+      "showWordOff": "Word display disabled",
+      "ignoreCase": "Ignore Case",
+      "ignoreCaseDesc": "When enabled, case is ignored during input. For example, typing \"hello\" and \"Hello\" are both considered correct",
+      "ignoreCaseOn": "Ignore case enabled",
+      "ignoreCaseOff": "Ignore case disabled",
+      "skipParentheses": "Skip Parenthetical Content",
+      "skipParenthesesDesc": "When enabled, parentheses and their content can be skipped during input. For example, word(s) only requires typing word",
+      "skipParenthesesOn": "Skip parentheses enabled",
+      "skipParenthesesOff": "Skip parentheses disabled",
+      "textSelectable": "Allow Text Selection",
+      "textSelectableDesc": "When enabled, you can select text with the mouse",
+      "textSelectableOn": "Text selection enabled",
+      "textSelectableOff": "Text selection disabled",
+      "showHintInDictation": "Allow Hints in Dictation Mode",
+      "showHintInDictationDesc": "When enabled, hover over a word with the mouse to reveal the correct answer",
+      "showHintOn": "Hints enabled",
+      "showHintOff": "Hints disabled",
+      "shortcut": "Shortcuts",
+      "shortcutDesc": "Customize typing shortcuts. Click then press a key combination",
+      "prevWordShortcut": "Previous word",
+      "nextWordShortcut": "Next word",
+      "favoriteCurrentShortcut": "Favorite current word",
+      "favoritePrevShortcut": "Favorite previous word",
+      "favoriteNextShortcut": "Favorite next word",
+      "pronunciationShortcut": "Pronunciation",
+      "recording": "Press key combination..."
+    },
+    "view": {
+      "appearance": "Appearance",
+      "language": "Language",
+      "followSystem": "Follow System",
+      "darkMode": "Dark Mode",
+      "fontSettings": "Font Settings",
+      "foreignFont": "Foreign Language Font",
+      "foreignFontStyle": "Foreign Language Font Style",
+      "chineseFont": "Chinese Font",
+      "chineseFontStyle": "Chinese Font Style",
+      "resetFontSettings": "Reset Font Settings"
+    },
+    "data": {
+      "dataExport": "Data Export",
+      "dataExportDesc": "Currently, user practice data is only stored locally. If you need to use Qwerty Learner on different devices, browsers, or unofficial deployments, you must manually sync and save your data. To preserve your practice progress and to use upcoming data analysis and smart training features, we recommend backing up your data regularly.",
+      "dataSecurityWarning": "For data security, please do not modify the exported data file.",
+      "exportData": "Export Data",
+      "dataImport": "Data Import",
+      "dataImportDesc": "Please note that importing data will completely overwrite your current data. Proceed with caution.",
+      "importData": "Import Data"
+    },
+    "webdav": {
+      "backupConfig": "Backup Configuration",
+      "backupConfigDesc": "Configure your NAS WebDAV address. Typing data will be automatically backed up incrementally to your NAS after each chapter is completed. Manual backup creates a new full backup file.",
+      "enableBackup": "Enable Backup",
+      "webdavUrl": "WebDAV URL",
+      "username": "Username",
+      "password": "Password",
+      "autoBackup": "Auto Backup",
+      "autoBackupDesc": "Auto sync on startup & incremental backup after chapter completion",
+      "testConnection": "Test Connection",
+      "fullBackup": "Full Backup",
+      "listBackups": "List Backups",
+      "connectionTestFailed": "Connection test failed",
+      "backupFailed": "Backup failed",
+      "listBackupsFailed": "List backups failed",
+      "restoreSuccessNew": "Restore successful, {{count}} new record(s) added",
+      "restoreSuccessUpToDate": "Restore successful, local data is up to date",
+      "withSettings": ", including settings",
+      "restoreFailed": "Restore failed",
+      "confirmDeleteBackup": "Are you sure you want to delete this backup file?",
+      "deleteFailed": "Delete failed",
+      "lastBackupInfo": "Last backup: {{time}}, {{count}} record(s)",
+      "selectBackupToRestore": "Select a backup file to restore",
+      "close": "Close",
+      "noBackupFiles": "No backup files",
+      "restore": "Restore",
+      "delete": "Delete"
+    }
+  },
+  "common": {
+    "syncNotice": {
+      "title": "Data Sync",
+      "close": "Close",
+      "syncedRecords": "Synced {{count}} record(s) from other devices",
+      "recentPractice": "Recent practice: {{dictName}} Chapter {{chapter}}",
+      "stayCurrentChapter": "Stay on Current Chapter",
+      "jumpToChapter": "Jump to Chapter {{chapter}}"
+    },
+    "starCard": {
+      "lightItUp": "Light it up!",
+      "bookmarkShortcut": "Bookmark shortcut {{key}}",
+      "iWantToStar": "I want to star",
+      "autoCloseIn": "Auto-closing in {{countdown}}s",
+      "closeTip": "Close Tip",
+      "encourageMessage": "Keep practicing to improve your language skills. Bookmark Qwerty Learner so you never lose it!"
+    },
+    "infoPanel": {
+      "close": "Close"
+    }
+  },
+  "resources": {
+    "sound": {
+      "sound1": "Sound 1",
+      "usAccent": "US",
+      "ukAccent": "UK",
+      "german": "German",
+      "romaji": "Romaji",
+      "hapin": "Hapin",
+      "mandarin": "Mandarin",
+      "japanese": "Japanese",
+      "kazakh": "Kazakh",
+      "indonesian": "Indonesian",
+      "favoriteAdd": "Favorite sound",
+      "favoriteRemove": "Unfavorite sound"
+    },
+    "font": {
+      "systemDefault": "System Default",
+      "pingfang": "PingFang"
+    }
+  },
+  "webdav": {
+    "operationInProgress": "Data operation in progress, please try again later",
+    "connectionSuccess": "Connection successful",
+    "connectionFailed": "Connection failed: HTTP {{status}}",
+    "connectionTimeout": "Connection timed out, please check if the URL is correct",
+    "connectionFailedError": "Connection failed: {{error}}",
+    "noNewDataSkip": "No new data, skipping backup",
+    "incrementalBackupSuccess": "Incremental backup successful, {{count}} new record(s) added",
+    "backupFailedHttp": "Backup failed: HTTP {{status}}",
+    "backupTimeout": "Backup timed out, please check your network connection",
+    "backupFailedError": "Backup failed: {{error}}",
+    "fullBackupSuccess": "Full backup successful: {{filename}}",
+    "fullBackupSuccessLatestNotUpdated": "Backup successful (latest backup file not updated): {{filename}}",
+    "remoteNoBackup": "No backup files on remote",
+    "downloadExistingFailed": "Failed to download existing backup: HTTP {{status}}",
+    "downloadExistingError": "Error downloading existing backup: {{error}}",
+    "listFilesFailed": "Failed to list files: HTTP {{status}}",
+    "listFilesError": "Failed to list files: {{error}}",
+    "listFilesTimeout": "Listing files timed out, please check your network connection",
+    "latestLabel": "Latest",
+    "foundBackupFiles": "Found {{count}} backup file(s)",
+    "restoreFailedUrlMismatch": "Restore failed: URL does not belong to the currently configured WebDAV server",
+    "downloadFailed": "Download failed: HTTP {{status}}",
+    "downloadTimeout": "Download timed out, please check your network connection",
+    "backupFormatInvalidNoData": "Invalid backup format: missing data field",
+    "backupFormatInvalidNotArray": "Invalid backup format: data field should be an array",
+    "restoreSuccess": "Restore successful",
+    "restoreFailedError": "Restore failed: {{error}}",
+    "deleteFailedUrlMismatch": "Delete failed: URL does not belong to the currently configured WebDAV server",
+    "deleteSuccess": "Delete successful",
+    "deleteFailedHttp": "Delete failed: HTTP {{status}}",
+    "deleteFailedError": "Delete failed: {{error}}",
+    "deleteTimeout": "Delete timed out, please check your network connection",
+    "noBackupFile": "No backup files",
+    "firstSyncUploaded": "First sync: local data uploaded",
+    "syncFailedHttp": "Sync failed: HTTP {{status}}",
+    "remoteBackupInvalidNoData": "Invalid remote backup format: missing data field",
+    "remoteBackupInvalidNotArray": "Invalid remote backup format: data field should be an array",
+    "syncSuccess": "Sync successful, merged {{count}} remote record(s)",
+    "syncTimeout": "Sync timed out, please check your network connection",
+    "syncFailedError": "Sync failed: {{error}}",
+    "getBackupInfoTimeout": "Getting backup info timed out, please check your network connection",
+    "getBackupInfoFailed": "Failed to get backup info: {{error}}"
+  },
+  "app": {
+    "pageLoadFailed": "Page load failed,",
+    "refreshRetry": "Refresh to retry",
+    "switchLanguage": "Switch Language"
+  },
+  "mobile": {
+    "header": {
+      "officialSite": "Official Site",
+      "visitSite": "Visit Site",
+      "site": "Site"
+    },
+    "breadcrumb": {
+      "navLabel": "Breadcrumb Navigation",
+      "home": "Home",
+      "officialSite": "Qwerty Learner Official Site"
+    },
+    "hero": {
+      "badge": "Official Site",
+      "titlePrefix1": "Designed for ",
+      "titleHighlight1": "keyboard workers",
+      "titlePrefix2": "",
+      "titleHighlight2": "English learning software",
+      "subtitle": "Combine typing practice with vocabulary memorization to make English learning efficient and fun",
+      "featureTags": [
+        "English Vocabulary Training",
+        "IPA Pronunciation Practice",
+        "CET-4/6 Word Lists",
+        "Programmer Vocabulary",
+        "Free Online Learning",
+        "Fully Open Source"
+      ],
+      "cta": "Get Started"
+    },
+    "detail": {
+      "phonetic": {
+        "title": "Phonetic Display & Pronunciation",
+        "description": "Help users memorize word pronunciation and phonetics simultaneously"
+      },
+      "dictation": {
+        "title": "Dictation Mode",
+        "description": "Choose dictation after each chapter to reinforce learned words"
+      },
+      "realtime": {
+        "title": "Real-time Feedback",
+        "description": "Display typing speed and accuracy to quantify skill improvement"
+      },
+      "coder": {
+        "title": "Customized for Programmers",
+        "description": "Built-in programming vocabulary to boost work efficiency"
+      }
+    },
+    "features": {
+      "titlePrefix": "Core Features, ",
+      "titleHighlight": "Professional Design",
+      "subtitle": "Every detail is carefully crafted for a better online English learning experience, suitable for programmers, students, office workers, and all keyboard users to quickly improve English typing speed and vocabulary retention",
+      "phonetic": {
+        "title": "Phonetic Display & Pronunciation",
+        "description": "Help users memorize pronunciation and phonetics while learning words. Supports standard American pronunciation to help build correct phonetic memory and improve listening and speaking skills."
+      },
+      "dictation": {
+        "title": "Smart Dictation Mode",
+        "description": "After completing a chapter, users can choose to dictate the chapter to reinforce the words they've learned. Strengthen memory through dictation practice."
+      },
+      "stats": {
+        "title": "Precise Data Statistics",
+        "description": "Quantify typing speed and accuracy so users can track their skill improvement. Supports WPM statistics, accuracy analysis, and progress tracking."
+      },
+      "muscleMemory": {
+        "title": "English Muscle Memory Training",
+        "description": "Designed specifically for keyboard workers, combining English vocabulary memorization with keyboard muscle memory training to reinforce typing skills while learning words."
+      },
+      "errorCorrection": {
+        "title": "Smart Error Correction",
+        "description": "To avoid forming incorrect muscle memory, users must retype a word if they make a mistake, ensuring correct muscle memory and spelling habits are maintained."
+      },
+      "multiPlatform": {
+        "title": "Seamless Multi-platform Experience",
+        "description": "Supports web version and VSCode extension, so you can practice anytime, anywhere. Also provides convenient quick deployment solutions to meet different user needs."
+      }
+    },
+    "dictionary": {
+      "titlePrefix": "Rich Vocabulary, ",
+      "titleHighlight": "Everything You Need",
+      "subtitle": "Covering CET-4/6, IELTS, TOEFL, GRE, postgraduate English, Business English BEC, and custom JavaScript/Java/Python technical vocabulary for programmers, meeting diverse English learning needs",
+      "exam": {
+        "title": "Essential Exam Vocabulary",
+        "cet4": "CET-4 College English Test Band 4",
+        "cet6": "CET-6 College English Test Band 6",
+        "toefl": "TOEFL Test Vocabulary",
+        "ielts": "IELTS Test Vocabulary",
+        "gre": "GRE Graduate Record Examination",
+        "gmat": "GMAT Business School Admission",
+        "sat": "SAT Scholastic Assessment Test"
+      },
+      "academic": {
+        "title": "Academic & Professional Vocabulary",
+        "postgrad": "Postgraduate English Core Vocabulary",
+        "tem4": "TEM-4 Test for English Majors Band 4",
+        "tem8": "TEM-8 Test for English Majors Band 8",
+        "gaokao": "Essential Gaokao English Vocabulary",
+        "zhongkao": "Key Zhongkao English Vocabulary",
+        "pep": "PEP English Grades 3-9"
+      },
+      "business": {
+        "title": "Business & Multi-language",
+        "becCore": "Business English Core Vocabulary",
+        "bec": "BEC Business English Certificate",
+        "wangluIelts": "Wanglu IELTS Listening Corpus",
+        "japanese": "Common Japanese Words N1-N5",
+        "kazakh": "Kazakh Basic 3000 Words"
+      },
+      "coder": {
+        "title": "Programmer-exclusive Vocabulary & API",
+        "description": "Customized technical vocabulary and programming API practice for programmers, improving coding efficiency and technical English proficiency",
+        "coderDictLabel": "Programming Vocabulary",
+        "coderDictDesc": "Common programmer words",
+        "jsApiDesc": "Core method practice",
+        "nodeApiDesc": "Server-side development",
+        "javaApiDesc": "Enterprise development",
+        "linuxCmdLabel": "Command Line",
+        "linuxCmdDesc": "System administration",
+        "updating": "Continuously updating more programming language APIs"
+      },
+      "community": {
+        "title": "Community-built, Continuously Growing",
+        "description": "Our vocabulary is continuously contributed and maintained by an active open-source community. If you need a specific vocabulary, feel free to submit an Issue on GitHub",
+        "cta": "Try the Rich Vocabulary Now"
+      }
+    },
+    "coder": {
+      "titlePrefix": "Customized for ",
+      "titleHighlight": "Programmers",
+      "titleSuffix": "",
+      "subtitle": "Built-in technical English vocabulary commonly used by programmers, including algorithms, data structures, design patterns, cloud computing, and more to improve English typing speed. Also supports JavaScript/Node.js/Java/Python/Linux command and other programming language API practice to help programmers quickly familiarize themselves with common programming interfaces",
+      "techVocab": {
+        "title": "Programming Technical Vocabulary",
+        "description": "Specially includes the most commonly used English words in programmers' work, covering core vocabulary in algorithms, data structures, design patterns, software engineering, and more",
+        "algoDs": "Algorithm & Data Structure Vocabulary",
+        "architecture": "Software Architecture & Design Patterns",
+        "projectMgmt": "Project Management & Collaboration Tools",
+        "cloudDevops": "Cloud Computing & DevOps Terminology"
+      },
+      "apiPractice": {
+        "title": "API Method Practice",
+        "description": "Supports API practice for multiple mainstream programming languages, helping you familiarize yourself with common methods through typing practice and improve coding efficiency and API recall",
+        "jsApi": "Array, Object, Promise and other core APIs",
+        "nodeApi": "fs, http, express and other server-side APIs",
+        "javaApi": "Collection, Stream and other enterprise APIs",
+        "linuxCmd": "Common command-line instructions and system administration"
+      },
+      "highlights": {
+        "fastApi": {
+          "title": "Quickly Master APIs",
+          "description": "Memorize programming APIs quickly through typing practice, improving development efficiency"
+        },
+        "techEnglish": {
+          "title": "Technical English Improvement",
+          "description": "Professional technical vocabulary training to improve document reading and communication skills"
+        },
+        "vscode": {
+          "title": "VSCode Extension",
+          "description": "Supports VSCode extension version, practice anytime in your development environment"
+        }
+      },
+      "community": {
+        "title": "Community-driven, Continuously Updated",
+        "description": "Our API vocabulary mainly relies on community contributions. More programming language APIs are being added gradually. Contributions are welcome",
+        "cta": "Try Programmer-exclusive Features",
+        "vscodeCta": "Install VSCode Extension"
+      }
+    },
+    "awards": {
+      "badge": "Awards & Recognition",
+      "titlePrefix": "Widely ",
+      "titleHighlight": "Recognized",
+      "titleSuffix": " Quality Project",
+      "subtitle": "Recognized by GitHub Global Trending #1, V2EX Hot Topics, Gitee GVP Most Valuable Open Source Project, SSPai Homepage Recommendation, and many other authoritative platforms, becoming the preferred free English learning software for 100,000+ users",
+      "githubTrending": {
+        "title": "GitHub Trending",
+        "description": "Global Trending #1"
+      },
+      "v2ex": {
+        "title": "V2EX Hot",
+        "description": "V2EX Site-wide Hot Project"
+      },
+      "giteeGvp": {
+        "title": "Gitee GVP",
+        "description": "Most Valuable Open Source Project"
+      },
+      "sspai": {
+        "title": "SSPai Recommended",
+        "description": "SSPai Homepage Recommended App"
+      },
+      "openSource": {
+        "title": "Open Source Community Recognition",
+        "github": {
+          "title": "GitHub Global Trending #1",
+          "description": "Received the highest attention and recognition from developers worldwide"
+        },
+        "giteeGvp": {
+          "title": "Gitee Most Valuable Open Source Project (GVP)",
+          "description": "Top domestic open source project certification"
+        },
+        "gitcode": {
+          "title": "GitCode G-Star Program Graduate",
+          "description": "Outstanding project of the Open Source Star Program"
+        }
+      },
+      "media": {
+        "title": "Media Platform Recommendations",
+        "v2ex": {
+          "title": "V2EX Site-wide Hot Project",
+          "description": "Highly followed and discussed in the tech community"
+        },
+        "sspai": {
+          "title": "SSPai Homepage Recommendation",
+          "description": "Recognized by premium app recommendation platform"
+        },
+        "gitee": {
+          "title": "Gitee Site-wide Recommended Project",
+          "description": "Recommended by leading domestic code hosting platform"
+        }
+      },
+      "stats": {
+        "title": "Trusted by Users, Numbers Speak",
+        "starsDesc": "Widely recognized by developers",
+        "monthlyUsers": "Monthly Active Users",
+        "usersDesc": "Continuous learners",
+        "contributors": "Community Contributors",
+        "contributorsDesc": "Improving the project together"
+      },
+      "join": {
+        "title": "Join Our User Community",
+        "description": "Become one of tens of thousands of users and experience this highly acclaimed English learning tool to improve your typing skills and English proficiency",
+        "cta": "Join the Community Now"
+      }
+    },
+    "cta": {
+      "titlePrefix": "Start ",
+      "titleHighlight": "Experiencing",
+      "subtitle": "Begin your English learning journey, make every keystroke a step forward",
+      "button": "Start Learning →",
+      "desktopTip": "Desktop browser recommended"
+    }
+  },
+  "pagination": {
+    "total": "{{count}} items",
+    "perPage": "Per page",
+    "perPageOption": "{{count}} items",
+    "previous": "Previous page",
+    "next": "Next page"
+  }
+}

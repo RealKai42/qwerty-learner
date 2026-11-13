@@ -26,6 +26,7 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
 
   useEffect(() => {
     if (!wordList) return
+    let mounted = true
 
     db.wordRecords
       .where('wrongCount')
@@ -33,6 +34,8 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
       .filter((record) => record.dict === dict.id)
       .toArray()
       .then((records) => {
+        if (!mounted) return
+
         const groupRecords: groupRecord[] = []
 
         records.forEach((record) => {
@@ -82,6 +85,10 @@ export default function useErrorWordData(dict: Dictionary, reload: boolean) {
 
         setErrorData(res)
       })
+
+    return () => {
+      mounted = false
+    }
   }, [dict.id, wordList, reload])
 
   return { errorWordData, isLoading, error }

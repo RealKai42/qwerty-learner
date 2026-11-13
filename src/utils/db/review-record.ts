@@ -35,25 +35,25 @@ export async function generateNewWordReviewRecord(dictID: string, errorData: TEr
   const errorCountRankings = [...errorData].sort((a, b) => a.errorCount - b.errorCount)
   const latestErrorTimeRankings = [...errorData].sort((a, b) => a.latestErrorTime - b.latestErrorTime)
 
-  // 计算每个对象的排名得分
+  // Use Map for correct ranking with duplicate values
+  const errorCountRankMap = new Map(errorCountRankings.map((item, i) => [item, i + 1]))
+  const latestErrorTimeRankMap = new Map(latestErrorTimeRankings.map((item, i) => [item, i + 1]))
+
   const errorDataWithRank: TRankedErrorWordData[] = errorData.map((item) => ({
     ...item,
-    errorCountScore: errorCountRankings.indexOf(item) + 1,
-    latestErrorTimeScore: latestErrorTimeRankings.indexOf(item) + 1,
+    errorCountScore: errorCountRankMap.get(item) ?? 0,
+    latestErrorTimeScore: latestErrorTimeRankMap.get(item) ?? 0,
   }))
 
-  // 根据加权排名进行排序
   const errorCountWeight = 0.6
   const latestErrorTimeWeight = 0.4
 
+  // Higher score = more errors + more recent → review first
   const sortedWords: Word[] = errorDataWithRank
     .sort((a, b) => {
-      // 计算 a 和 b 的得分
       const scoreA = a.errorCountScore * errorCountWeight + a.latestErrorTimeScore * latestErrorTimeWeight
       const scoreB = b.errorCountScore * errorCountWeight + b.latestErrorTimeScore * latestErrorTimeWeight
-
-      // 根据得分进行排序
-      return scoreA - scoreB
+      return scoreB - scoreA
     })
     .map((item) => item.originData)
 
@@ -64,5 +64,5 @@ export async function generateNewWordReviewRecord(dictID: string, errorData: TEr
 }
 
 export async function putWordReviewRecord(record: ReviewRecord) {
-  db.reviewRecords.put(record)
+  await db.reviewRecords.put(record)
 }

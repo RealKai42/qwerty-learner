@@ -1,3 +1,19 @@
+/**
+ * NOTE: This XOR-based "encryption" is obfuscation, NOT real encryption.
+ *
+ * XOR with a hardcoded key is trivially reversible — anyone reading the
+ * source can decode the stored value. This prevents casual inspection of
+ * credentials in localStorage but provides NO protection against anyone
+ * with access to the JavaScript runtime or the source code.
+ *
+ * A production-grade solution would use the Web Crypto API with:
+ *   - SubtleCrypto.encrypt() / decrypt() with a key derived from a
+ *     per-user secret (e.g., session token or biometric)
+ *   - Or server-side credential storage entirely
+ *
+ * For a client-only offline-first app this is an inherent limitation:
+ * any key shipped in the bundle is extractable.
+ */
 const KEY = 'qwerty-learner-webdav-v1'
 
 function obfuscate(text: string): string {
@@ -42,7 +58,7 @@ export function createEncryptedStorage<T>(key: string): {
     setItem(_k, value) {
       localStorage.setItem(key, obfuscate(JSON.stringify(value)))
     },
-    removeItem(_k) {
+    removeItem() {
       localStorage.removeItem(key)
     },
   }

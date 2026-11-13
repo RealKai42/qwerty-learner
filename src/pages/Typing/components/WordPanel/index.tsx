@@ -1,20 +1,31 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingStateActionType, useTypingContext } from '../../store'
 import type { TypingState } from '../../store/type'
 import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
+import { useFavorite } from '@/hooks/useFavorite'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
+import {
+  currentChapterAtom,
+  currentDictInfoAtom,
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopWordConfigAtom,
+  phoneticConfigAtom,
+  reviewModeInfoAtom,
+  typingShortcutConfigAtom,
+} from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useContext, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { useTranslation } from 'react-i18next'
 
 export default function WordPanel() {
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(TypingContext)!
+  const { t } = useTranslation()
+  const { state, dispatch } = useTypingContext()
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const isShowPrevAndNextWord = useAtomValue(isShowPrevAndNextWordAtom)
   const [wordComponentKey, setWordComponentKey] = useState(0)
@@ -25,6 +36,10 @@ export default function WordPanel() {
 
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
+  const currentDictInfo = useAtomValue(currentDictInfoAtom)
+  const currentChapter = useAtomValue(currentChapterAtom)
+  const { toggle } = useFavorite()
+  const typingShortcutConfig = useAtomValue(typingShortcutConfigAtom)
 
   const prevIndex = useMemo(() => {
     const newIndex = state.chapterData.index - 1
@@ -70,6 +85,7 @@ export default function WordPanel() {
         } else {
           dispatch({ type: TypingStateActionType.NEXT_WORD })
         }
+        reloadCurrentWordComponent()
       }
     } else {
       // 用户完成当前章节
@@ -104,22 +120,55 @@ export default function WordPanel() {
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowLeft',
+    typingShortcutConfig.prevWord,
     (e) => {
       e.preventDefault()
       onSkipWord('prev')
     },
+    [typingShortcutConfig.prevWord, onSkipWord],
     { preventDefault: true },
   )
 
   useHotkeys(
-    'Ctrl + Shift + ArrowRight',
+    typingShortcutConfig.nextWord,
     (e) => {
       e.preventDefault()
       onSkipWord('next')
     },
+    [typingShortcutConfig.nextWord, onSkipWord],
     { preventDefault: true },
   )
+
+  const toggleAdjacentFavorite = useCallback(
+    (type: 'prev' | 'next') => {
+      const newIndex = state.chapterData.index + (type === 'prev' ? -1 : 1)
+      const word = state.chapterData.words[newIndex]
+      if (!word) return
+      void toggle(word.name, currentDictInfo.id, isReviewMode ? -1 : currentChapter)
+    },
+    [state.chapterData.index, state.chapterData.words, currentDictInfo.id, isReviewMode, currentChapter, toggle],
+  )
+
+  useHotkeys(
+    typingShortcutConfig.favoritePrev,
+    (e) => {
+      e.preventDefault()
+      toggleAdjacentFavorite('prev')
+    },
+    [typingShortcutConfig.favoritePrev, toggleAdjacentFavorite],
+    { preventDefault: true },
+  )
+
+  useHotkeys(
+    typingShortcutConfig.favoriteNext,
+    (e) => {
+      e.preventDefault()
+      toggleAdjacentFavorite('next')
+    },
+    [typingShortcutConfig.favoriteNext, toggleAdjacentFavorite],
+    { preventDefault: true },
+  )
+
   const [isShowTranslation, setIsHoveringTranslation] = useState(false)
 
   const handleShowTranslation = useCallback((checked: boolean) => {
@@ -150,11 +199,11 @@ export default function WordPanel() {
 
   return (
     <div className="container flex h-full w-full flex-col items-center justify-center">
-      <div className="container flex h-24 w-full shrink-0 grow-0 justify-between px-12 pt-10">
+      <div className="container flex h-16 w-full shrink-0 grow-0 justify-between px-6 pt-4 md:h-24 md:px-12 md:pt-10">
         {isShowPrevAndNextWord && state.isTyping && (
           <>
-            <PrevAndNextWord type="prev" />
-            <PrevAndNextWord type="next" />
+            <PrevAndNextWord type="prev" onToggleFavorite={toggleAdjacentFavorite} />
+            <PrevAndNextWord type="next" onToggleFavorite={toggleAdjacentFavorite} />
           </>
         )}
       </div>
@@ -165,7 +214,8 @@ export default function WordPanel() {
               <div className="absolute flex h-full w-full justify-center">
                 <div className="z-10 flex w-full items-center backdrop-blur-sm">
                   <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
-                    按任意键{state.timerData.time ? '继续' : '开始'}
+                    {t('typing.pressAnyKeyPrefix')}
+                    {state.timerData.time ? t('typing.pressAnyKeyContinue') : t('typing.pressAnyKeyStart')}
                   </p>
                 </div>
               </div>

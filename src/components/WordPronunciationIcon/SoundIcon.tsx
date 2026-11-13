@@ -17,8 +17,7 @@ export const SoundIcon = ({ duration = 500, animated = false, onClick, iconClass
     return () => {
       clearTimeout(timer)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [animated, animationFrameIndex])
+  }, [animated, animationFrameIndex, duration])
 
   const Icon = volumeIcons[animationFrameIndex]
 

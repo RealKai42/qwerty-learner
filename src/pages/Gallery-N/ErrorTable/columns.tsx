@@ -1,9 +1,12 @@
 import type { TErrorWordData } from '../hooks/useErrorWords'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import type { ColumnDef } from '@tanstack/react-table'
+import type { LegacyColumnDef } from '@tanstack/react-table/legacy'
+import type { TFunction } from 'i18next'
 import PhArrowsDownUpFill from '~icons/ph/arrows-down-up-fill'
 import DeleteIcon from '~icons/weui/delete-filled'
+
+type ErrorColumnDef = LegacyColumnDef<ErrorColumn>
 
 export type ErrorColumn = {
   word: string
@@ -12,14 +15,14 @@ export type ErrorColumn = {
   errorChar: string[]
 }
 
-export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnDef<ErrorColumn>[] => [
+export const errorColumns = (onDelete: (word: string) => Promise<void>, t: TFunction): ErrorColumnDef[] => [
   {
     accessorKey: 'word',
     size: 100,
     header: ({ column }) => {
       return (
         <Button variant="ghost" className="p-0" onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}>
-          单词
+          {t('errorBook.word')}
           <PhArrowsDownUpFill className="ml-1.5 h-4 w-4" />
         </Button>
       )
@@ -28,7 +31,7 @@ export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnD
   {
     accessorKey: 'trans',
     size: 500,
-    header: '释义',
+    header: t('errorBook.translation'),
   },
   {
     accessorKey: 'errorCount',
@@ -36,7 +39,7 @@ export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnD
     header: ({ column }) => {
       return (
         <Button variant="ghost" className="p-0" onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}>
-          错误次数
+          {t('errorBook.errorCount')}
           <PhArrowsDownUpFill className="ml-1.5 h-4 w-4" />
         </Button>
       )
@@ -47,7 +50,7 @@ export const errorColumns = (onDelete: (word: string) => Promise<void>): ColumnD
   },
   {
     accessorKey: 'errorChar',
-    header: '易错字母',
+    header: t('errorBook.errorProneLetters'),
     size: 100,
     cell: ({ row }) => {
       return (

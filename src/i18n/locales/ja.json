@@ -1,0 +1,742 @@
+{
+  "analysis": {
+    "noPracticeData": "練習データがありません",
+    "exerciseHeatmapTitle": "過去1年間の練習回数ヒートマップ",
+    "wordHeatmapTitle": "過去1年間の練習単語数ヒートマップ",
+    "wpmTrendTitle": "過去1年間のWPM推移グラフ",
+    "accuracyTrendTitle": "過去1年間の正確率推移グラフ",
+    "accuracyName": "正確率(%)",
+    "keyErrorRankTitle": "キー入力エラー回数ランキング",
+    "keyErrorName": "エラー回数",
+    "heatmapTooltip": "{{date}} 練習 {{count}} 回",
+    "months": [
+      "1月",
+      "2月",
+      "3月",
+      "4月",
+      "5月",
+      "6月",
+      "7月",
+      "8月",
+      "9月",
+      "10月",
+      "11月",
+      "12月"
+    ],
+    "weekdays": [
+      "日",
+      "月",
+      "火",
+      "水",
+      "木",
+      "金",
+      "土"
+    ],
+    "yearTotal": "過去1年間の合計 {{count}} 回",
+    "legendLess": "少",
+    "legendMore": "多",
+    "switchToBarChart": "棒グラフに切り替え",
+    "switchToKeyboardHeatmap": "キーボードヒートマップに切り替え",
+    "statsTitle": "データ統計"
+  },
+  "errorBook": {
+    "tipClickWord": "Tip: 間違えた単語をクリックして詳細を確認",
+    "word": "単語",
+    "translation": "意味",
+    "wrongCount": "エラー回数",
+    "dictionary": "辞書",
+    "exportFailed": "エクスポートに失敗しました。もう一度お試しください",
+    "exporting": "エクスポート中...",
+    "export": "エクスポート",
+    "dataLoadFailed": "データの読み込みに失敗しました",
+    "averageTime": "平均所要時間",
+    "practiceCount": "練習回数",
+    "correctCount": "正解回数",
+    "errorCount": "エラー回数",
+    "errorProneLetters": "間違いやすい文字"
+  },
+  "favorites": {
+    "title": "お気に入り",
+    "word": "単語",
+    "translation": "意味",
+    "dictionary": "辞書",
+    "empty": "お気に入りの単語はまだありません",
+    "goPractice": "練習へ",
+    "export": "エクスポート",
+    "exporting": "エクスポート中...",
+    "exportFailed": "エクスポートに失敗しました。もう一度お試しください",
+    "unfavorite": "お気に入りを解除",
+    "favoriteToggle": "お気に入り登録/解除",
+    "favoriteShortcutTip": "Tips: お気に入りショートカット（{{key}}）",
+    "favoriteAdjacentTip": "この単語をお気に入り（{{key}}）",
+    "practice": "練習",
+    "practiceFailed": "練習を開始できませんでした",
+    "practiceEmpty": "この辞書に練習できるお気に入りはありません"
+  },
+  "gallery": {
+    "noDictsInCategory": "現在のカテゴリに利用可能な辞書がありません",
+    "chapterLabel": "第 {{index}} 章",
+    "practicedCount": "練習 {{count}} 回",
+    "notPracticed": "未練習",
+    "loading": "読み込み中...",
+    "chapterCount": "{{count}} チャプター",
+    "wordCount": "全 {{count}} 語",
+    "wordCountShort": "{{count}} 語",
+    "chapterSelect": "チャプター選択",
+    "shortcutEnterEsc": "ショートカット Enter or Esc",
+    "confirmSelect": "選択を確認",
+    "practiceCountShort": "練習 {{count}} 回",
+    "avgWrongCount": "平均エラー数: {{count}}",
+    "viewErrors": "間違いを確認",
+    "errorReview": "間違いの復習",
+    "selectDict": "辞書を選択",
+    "wantMoreDicts": "もっと辞書を追加したいですか？",
+    "dictContributionPrefix": "プログラミングのスキルをお持ちの方は、",
+    "dictContributionGuide": "辞書貢献ガイド",
+    "dictContributionSuffix": "をご参照いただき、オープンソースプロジェクトに新しい辞書コンテンツを貢献していただくことができます。コミュニティからの貢献を大歓迎します！",
+    "findMoreDicts": "もっと辞書を探す",
+    "errorEncountered": "エラーが発生しました。ページを更新してお試しください",
+    "noDataGoPractice": "データがありません。練習を始めましょう！",
+    "languageEn": "英語",
+    "languageJa": "日本語",
+    "languageDe": "ドイツ語",
+    "languageKk": "カザフ語",
+    "languageId": "インドネシア語",
+    "reviewDescription": "この辞書での過去の練習データ、エラー回数、練習時間を基に、練習リストを自動生成します",
+    "reviewExperimental": "現在、この生成方式はまだ実験段階であり、順次改善していく予定です",
+    "currentDictErrorCount": "現在の辞書の間違い数: {{count}}",
+    "continueProgress": "現在の進捗を続ける",
+    "startNewReview": "新しい復習を開始",
+    "reviewCreated": "{{time}} に作成",
+    "copyrightNotice": "本プロジェクトの辞書データは、複数のオープンソースプロジェクトおよびコミュニティ貢献者の無償提供によるものです。私たちは各貢献者の知的財産権を深く尊重し、感謝の意を表します。これらのデータは個人の学習および研究目的にのみ使用され、いかなる商業目的にも使用することは厳禁されています。あなたがデータの著作権者であり、当プロジェクトの使用方法があなたの権利を侵害しているとお考えの場合は、ウェブサイト下部に記載のメールアドレスまでご連絡ください。有効な著作権侵害の申し立てを受領次第、速やかに該当コンテンツを削除するか、必要な許諾を取得いたします。また、これらのデータを使用するすべての方に対し、著作権者の権利を尊重し、関連する法令を遵守してデータを使用することを推奨します。なお、すべてのデータの合法性および正確性を確保するよう努めておりますが、いかなるデータの正確性、完全性、合法性、または信頼性についても保証するものではありません。これらのデータの使用に伴うリスクは、すべてユーザー自身が負担するものとします。"
+  },
+  "typing": {
+    "mobileAlert": "Qwerty Learner はキーボードユーザーの英語入力効率向上を目的としており、現在モバイル端末には対応していません。デスクトップブラウザでご利用ください。iPad などのタブレット端末をご使用の場合は、外付けキーボードで本ソフトウェアをご利用いただけます。",
+    "skipWord": "この単語をスキップ",
+    "autoBackupFailed": "自動バックアップに失敗しました",
+    "pressAnyKeyStart": "開始",
+    "pressAnyKeyContinue": "続行",
+    "pressAnyKeyPrefix": "いずれかのキーを押して",
+    "showFullWordTip": "Tab ショートカットで完全な単語を表示",
+    "reviewMode": "間違いの復習",
+    "chapterFormat": "第 {{chapter}} 章",
+    "result": {
+      "accuracy": "正確率",
+      "chapterTime": "チャプター所要時間",
+      "dictationChapter": "このチャプターを書き取り",
+      "repeatChapter": "このチャプターを繰り返す",
+      "nextChapter": "次のチャプター",
+      "practiceOtherChapter": "他のチャプターを練習",
+      "exportFailed": "エクスポートに失敗しました。後でもう一度お試しください",
+      "dictationShortcut": "ショートカット：shift + enter",
+      "repeatShortcut": "ショートカット：space",
+      "nextShortcut": "ショートカット：enter",
+      "conclusionGreat": "いい調子です！",
+      "conclusionOnlyWrong": "間違えたのは {{count}} 単語だけです",
+      "conclusionPerfect": "全問正解です！",
+      "conclusionMinor": "少しミスがありました。次回はもっと上手くできます！",
+      "conclusionTooMany": "間違いが多すぎます。もう一度やってみませんか？",
+      "readWord": "{{word}} を読み上げ"
+    },
+    "speed": {
+      "time": "時間",
+      "inputCount": "入力数",
+      "wpm": "WPM",
+      "correctCount": "正解数",
+      "accuracy": "正確率"
+    },
+    "switcher": {
+      "soundSetting": "音效設定",
+      "loopWord": "単語ループ設定",
+      "dictationToggle": "書き取りモードの切替",
+      "transVisibleToggle": "意味表示の切替",
+      "errorBook": "間違いノート",
+      "favorites": "お気に入り",
+      "viewStats": "統計データを確認",
+      "darkModeToggle": "ダークモードの切替",
+      "handPosition": "タイピング指配置図",
+      "settings": "設定"
+    },
+    "dictChapter": {
+      "dictSwitch": "辞書の切り替え",
+      "chapterSwitch": "チャプターの切り替え",
+      "chapterLabel": "第 {{chapter}} 章"
+    },
+    "startButton": {
+      "pause": "一時停止",
+      "start": "開始",
+      "restart": "やり直す"
+    },
+    "pronunciation": {
+      "off": "オフ",
+      "switcherTooltip": "発音・発音記号の切替",
+      "phoneticToggle": "発音記号表示の切替",
+      "phoneticOn": "発音記号オン",
+      "phoneticOff": "発音記号オフ",
+      "wordPronToggle": "単語発音の切替",
+      "pronOn": "発音オン",
+      "pronOff": "発音オフ",
+      "transPronToggle": "意味発音の切替",
+      "loopPronToggle": "ループ発音の切替",
+      "loopOn": "ループオン",
+      "loopOff": "ループオフ",
+      "accentSelect": "単語発音のアクセント",
+      "pronShortcutTip": "Tips: 読み上げショートカット（{{key}}）"
+    },
+    "soundSwitcher": {
+      "label": "音效設定",
+      "keySoundToggle": "キー入力音の切替",
+      "hintSoundToggle": "効果音の切替"
+    },
+    "loopWord": {
+      "selectLoopTimes": "単語のループ回数を選択",
+      "infinite": "無限"
+    },
+    "handPosition": {
+      "title": "推奨タイピング指配置図",
+      "closeDialog": "ダイアログを閉じる"
+    },
+    "dictation": {
+      "hideAll": "すべて隠す",
+      "hideVowel": "母音を隠す",
+      "hideConsonant": "子音を隠す",
+      "randomHide": "ランダムに隠す",
+      "toggleLabel": "書き取りモードの切替",
+      "dictationOn": "書き取りモードオン",
+      "dictationOff": "書き取りモードオフ",
+      "dictationMode": "書き取りモード"
+    },
+    "share": {
+      "shareResult": "結果を友達にシェア",
+      "save": "保存",
+      "slogan": "キーボードユーザーのための単語と筋肉記憶トレーニングアプリ",
+      "idioms": [
+        {
+          "word": "疾風迅雷",
+          "sentence": "打鍵速度が速く、まるで他人より手が多くあるよう"
+        },
+        {
+          "word": "雷鳴落下",
+          "sentence": "雷のような打鍵で観客を圧倒"
+        },
+        {
+          "word": "電光石火",
+          "sentence": "稲妻のようにキーボード上を素早く駆け抜ける打鍵速度"
+        },
+        {
+          "word": "疾風怒濤",
+          "sentence": "驚くほど速い指の動き、まるで疾風のよう"
+        },
+        {
+          "word": "百発百中",
+          "sentence": "矢が的に命中するように正確な打鍵精度"
+        },
+        {
+          "word": "突風前進",
+          "sentence": "突風のような勢いで打鍵速度が速い"
+        },
+        {
+          "word": "風神速攻",
+          "sentence": "風のように速い打鍵"
+        },
+        {
+          "word": "完璧無欠",
+          "sentence": "打鍵の精度と速度が完璧で、ミスがない"
+        },
+        {
+          "word": "行雲流水",
+          "sentence": "平地を歩くように滑らかな打鍵"
+        },
+        {
+          "word": "声東撃西",
+          "sentence": "高度なテクニックで予想外の角度から攻める"
+        },
+        {
+          "word": "魔法使い",
+          "sentence": "信じられないほど速い打鍵、まるで魔法使いのよう"
+        },
+        {
+          "word": "柔軟変化",
+          "sentence": "蛇のように柔軟で変化に富んだ打鍵姿勢"
+        },
+        {
+          "word": "飛鳥の如く",
+          "sentence": "飛鳥がキーボード上を舞うように速い打鍵"
+        },
+        {
+          "word": "連珠の妙",
+          "sentence": "連珠のように流暢な打鍵テクニック"
+        },
+        {
+          "word": "鉄壁の守り",
+          "sentence": "速度と正確さが非常に高く、無敵のよう"
+        },
+        {
+          "word": "攻守完璧",
+          "sentence": "速度と精度が優れ、攻守ともに完璧"
+        },
+        {
+          "word": "躍動打鍵",
+          "sentence": "柔軟で生き生きとした打鍵、生き生きと面白い"
+        }
+      ]
+    },
+    "wordList": {
+      "reviewTitle": "{{dictName}} 間違いの復習",
+      "chapterTitle": "{{dictName}} 第 {{chapter}} 章"
+    },
+    "prevNextWord": {
+      "shortcut": "ショートカット: {{key}}"
+    },
+    "tipAlert": {
+      "title": "拡張機能の競合！",
+      "description": "入力が何度も失敗する場合、ブラウザの拡張機能との競合が原因かもしれません。該当する拡張機能を無効にするか、別のブラウザでお試しください"
+    },
+    "inputMethodAlert": "入力方式が有効になっています。入力方式をオフにしてください。",
+    "readTranslation": "意味を読み上げ",
+    "errorBookButton": "間違いノートを確認",
+    "favoritesButton": "お気に入りを確認"
+  },
+  "settings": {
+    "openDialog": "設定ダイアログを開く",
+    "title": "設定",
+    "closeDialog": "ダイアログを閉じる",
+    "tabSound": "音效設定",
+    "tabAdvanced": "詳細設定",
+    "tabView": "表示設定",
+    "tabData": "データ設定",
+    "tabBackup": "バックアップ",
+    "sound": {
+      "wordPronunciation": "単語発音",
+      "pronOn": "発音オン",
+      "pronOff": "発音オフ",
+      "volume": "音量",
+      "rate": "速度",
+      "transPronunciation": "意味発音",
+      "keySound": "キー入力音",
+      "keySoundEffect": "キー入力音效",
+      "hintSound": "効果音"
+    },
+    "advanced": {
+      "randomChapter": "チャプターのランダム順",
+      "randomChapterDesc": "オンにすると、各チャプターの単語がランダムに並び替えられます。次のチャプターから適用されます",
+      "randomOn": "ランダム順オン",
+      "randomOff": "ランダム順オフ",
+      "showPrevNextWord": "練習中に前/次の単語を表示",
+      "showPrevNextWordDesc": "オンにすると、練習中に前/次の単語が上部に表示されます",
+      "showWordOn": "単語表示オン",
+      "showWordOff": "単語表示オフ",
+      "ignoreCase": "大文字小文字を区別しない",
+      "ignoreCaseDesc": "オンにすると、入力時に大文字小文字を区別しません。例えば「hello」と「Hello」はどちらも正解とみなされます",
+      "ignoreCaseOn": "大文字小文字無視オン",
+      "ignoreCaseOff": "大文字小文字無視オフ",
+      "skipParentheses": "括弧の内容をスキップ",
+      "skipParenthesesDesc": "オンにすると、入力時に括弧とその中の内容を省略できます。例：word(s) は word だけ入力すればよい",
+      "skipParenthesesOn": "括弧スキップオン",
+      "skipParenthesesOff": "括弧スキップオフ",
+      "textSelectable": "テキストの選択を許可",
+      "textSelectableDesc": "オンにすると、マウスでテキストを選択できます",
+      "textSelectableOn": "テキスト選択オン",
+      "textSelectableOff": "テキスト選択オフ",
+      "showHintInDictation": "書き取りモードでヒントを表示",
+      "showHintInDictationDesc": "オンにすると、マウスホバーで正解を確認できます",
+      "showHintOn": "ヒント表示オン",
+      "showHintOff": "ヒント表示オフ",
+      "shortcut": "ショートカット",
+      "shortcutDesc": "タイピング画面のショートカットを設定します。クリックしてからキーの組み合わせを押してください",
+      "prevWordShortcut": "前の単語",
+      "nextWordShortcut": "次の単語",
+      "favoriteCurrentShortcut": "現在の単語をお気に入り",
+      "favoritePrevShortcut": "前の単語をお気に入り",
+      "favoriteNextShortcut": "次の単語をお気に入り",
+      "pronunciationShortcut": "発音",
+      "recording": "キーの組み合わせを押してください..."
+    },
+    "view": {
+      "appearance": "外観",
+      "language": "言語",
+      "followSystem": "システムに従う",
+      "darkMode": "ダークモード",
+      "fontSettings": "フォント設定",
+      "foreignFont": "外国語フォント",
+      "foreignFontStyle": "外国語フォントスタイル",
+      "chineseFont": "中国語フォント",
+      "chineseFontStyle": "中国語フォントスタイル",
+      "resetFontSettings": "フォント設定をリセット"
+    },
+    "data": {
+      "dataExport": "データエクスポート",
+      "dataExportDesc": "現在、ユーザーの練習データはローカルにのみ保存されています。異なるデバイス、ブラウザ、または非公式デプロイ環境で Qwerty Learner を利用する場合、手動でデータを同期・保存する必要があります。練習の進捗を保持し、近日公開予定のデータ分析やインテリジェントトレーニング機能を利用するために、定期的なデータバックアップをお勧めします。",
+      "dataSecurityWarning": "データの安全のため、エクスポートされたデータファイルは変更しないでください。",
+      "exportData": "データをエクスポート",
+      "dataImport": "データインポート",
+      "dataImportDesc": "インポートすると現在のデータが完全に上書きされます。慎重に操作してください。",
+      "importData": "データをインポート"
+    },
+    "webdav": {
+      "backupConfig": "バックアップ設定",
+      "backupConfigDesc": "NAS の WebDAV アドレスを設定すると、チャプター完了後にタイピングデータが NAS に自動的に増分バックアップされます。手動バックアップでは新しい完全バックアップファイルが作成されます。",
+      "enableBackup": "バックアップを有効にする",
+      "webdavUrl": "WebDAV アドレス",
+      "username": "ユーザー名",
+      "password": "パスワード",
+      "autoBackup": "自動バックアップ",
+      "autoBackupDesc": "起動時に自動同期 & チャプター完了後に増分バックアップ",
+      "testConnection": "接続テスト",
+      "fullBackup": "完全バックアップ",
+      "listBackups": "バックアップ一覧",
+      "connectionTestFailed": "接続テストに失敗しました",
+      "backupFailed": "バックアップに失敗しました",
+      "listBackupsFailed": "バックアップ一覧の取得に失敗しました",
+      "restoreSuccessNew": "復元成功、{{count}} 件のレコードを新規追加しました",
+      "restoreSuccessUpToDate": "復元成功、ローカルデータは最新です",
+      "withSettings": "、設定を含む",
+      "restoreFailed": "復元に失敗しました",
+      "confirmDeleteBackup": "このバックアップファイルを削除してもよろしいですか？",
+      "deleteFailed": "削除に失敗しました",
+      "lastBackupInfo": "前回のバックアップ: {{time}}、計 {{count}} 件のレコード",
+      "selectBackupToRestore": "復元するバックアップファイルを選択",
+      "close": "閉じる",
+      "noBackupFiles": "バックアップファイルがありません",
+      "restore": "復元",
+      "delete": "削除"
+    }
+  },
+  "common": {
+    "syncNotice": {
+      "title": "データ同期",
+      "close": "閉じる",
+      "syncedRecords": "他のデバイスから {{count}} 件のレコードを同期しました",
+      "recentPractice": "最近の練習：{{dictName}} 第 {{chapter}} 章",
+      "stayCurrentChapter": "現在のチャプターに留まる",
+      "jumpToChapter": "第 {{chapter}} 章に移動"
+    },
+    "starCard": {
+      "lightItUp": "点灯しましょう！",
+      "bookmarkShortcut": "ブックマークショートカット {{key}}",
+      "iWantToStar": "お気に入りに追加",
+      "autoCloseIn": "{{countdown}}秒後に自動的に閉じます",
+      "closeTip": "ヒントを閉じる",
+      "encourageMessage": "練習を続けて、語学力を高めましょう。「Qwerty Learner」をブックマークに保存して、いつでもアクセス！"
+    },
+    "infoPanel": {
+      "close": "閉じる"
+    }
+  },
+  "resources": {
+    "sound": {
+      "sound1": "サウンド1",
+      "usAccent": "米語",
+      "ukAccent": "英語",
+      "german": "ドイツ語",
+      "romaji": "ローマ字",
+      "hapin": "ハピン",
+      "mandarin": "北京語",
+      "japanese": "日本語",
+      "kazakh": "カザフ語",
+      "indonesian": "インドネシア語",
+      "favoriteAdd": "お気に入り音",
+      "favoriteRemove": "お気に入り解除音"
+    },
+    "font": {
+      "systemDefault": "システムデフォルト",
+      "pingfang": "PingFang"
+    }
+  },
+  "webdav": {
+    "operationInProgress": "データ操作が進行中です。しばらくしてからもう一度お試しください",
+    "connectionSuccess": "接続成功",
+    "connectionFailed": "接続失敗: HTTP {{status}}",
+    "connectionTimeout": "接続がタイムアウトしました。アドレスが正しいか確認してください",
+    "connectionFailedError": "接続失敗: {{error}}",
+    "noNewDataSkip": "新規データがないため、バックアップをスキップしました",
+    "incrementalBackupSuccess": "増分バックアップ成功、{{count}} 件のレコードを新規追加しました",
+    "backupFailedHttp": "バックアップ失敗: HTTP {{status}}",
+    "backupTimeout": "バックアップがタイムアウトしました。ネットワーク接続を確認してください",
+    "backupFailedError": "バックアップ失敗: {{error}}",
+    "fullBackupSuccess": "完全バックアップ成功: {{filename}}",
+    "fullBackupSuccessLatestNotUpdated": "バックアップ成功（最新バックアップファイルは更新されませんでした）: {{filename}}",
+    "remoteNoBackup": "リモートにバックアップファイルがありません",
+    "downloadExistingFailed": "既存バックアップのダウンロード失敗: HTTP {{status}}",
+    "downloadExistingError": "既存バックアップのダウンロードエラー: {{error}}",
+    "listFilesFailed": "ファイル一覧の取得失敗: HTTP {{status}}",
+    "listFilesError": "ファイル一覧の取得失敗: {{error}}",
+    "listFilesTimeout": "ファイル一覧の取得がタイムアウトしました。ネットワーク接続を確認してください",
+    "latestLabel": "最新",
+    "foundBackupFiles": "{{count}} 件のバックアップファイルが見つかりました",
+    "restoreFailedUrlMismatch": "復元失敗：URL が現在設定されている WebDAV サーバーのものではありません",
+    "downloadFailed": "ダウンロード失敗: HTTP {{status}}",
+    "downloadTimeout": "ダウンロードがタイムアウトしました。ネットワーク接続を確認してください",
+    "backupFormatInvalidNoData": "バックアップファイルの形式が無効です：data フィールドがありません",
+    "backupFormatInvalidNotArray": "バックアップファイルの形式が無効です：データフィールドは配列である必要があります",
+    "restoreSuccess": "復元成功",
+    "restoreFailedError": "復元失敗: {{error}}",
+    "deleteFailedUrlMismatch": "削除失敗：URL が現在設定されている WebDAV サーバーのものではありません",
+    "deleteSuccess": "削除成功",
+    "deleteFailedHttp": "削除失敗: HTTP {{status}}",
+    "deleteFailedError": "削除失敗: {{error}}",
+    "deleteTimeout": "削除がタイムアウトしました。ネットワーク接続を確認してください",
+    "noBackupFile": "バックアップファイルがありません",
+    "firstSyncUploaded": "初回同期：ローカルデータをアップロードしました",
+    "syncFailedHttp": "同期失敗: HTTP {{status}}",
+    "remoteBackupInvalidNoData": "リモートバックアップの形式が無効です：data フィールドがありません",
+    "remoteBackupInvalidNotArray": "リモートバックアップの形式が無効です：データフィールドは配列である必要があります",
+    "syncSuccess": "同期成功、{{count}} 件のリモートレコードをマージしました",
+    "syncTimeout": "同期がタイムアウトしました。ネットワーク接続を確認してください",
+    "syncFailedError": "同期失敗: {{error}}",
+    "getBackupInfoTimeout": "バックアップ情報の取得がタイムアウトしました。ネットワーク接続を確認してください",
+    "getBackupInfoFailed": "バックアップ情報の取得に失敗しました: {{error}}"
+  },
+  "app": {
+    "pageLoadFailed": "ページの読み込みに失敗しました。",
+    "refreshRetry": "更新して再試行",
+    "switchLanguage": "言語を切り替え"
+  },
+  "mobile": {
+    "header": {
+      "officialSite": "公式サイト",
+      "visitSite": "サイトにアクセス",
+      "site": "公式"
+    },
+    "breadcrumb": {
+      "navLabel": "パンくずナビゲーション",
+      "home": "ホーム",
+      "officialSite": "Qwerty Learner 公式サイト"
+    },
+    "hero": {
+      "badge": "公式サイト",
+      "titlePrefix1": "",
+      "titleHighlight1": "キーボードワーカー",
+      "titlePrefix2": "のための",
+      "titleHighlight2": "英語学習ソフト",
+      "subtitle": "タイピング練習と単語記憶を組み合わせ、英語学習を効率的で楽しく",
+      "featureTags": [
+        "英単語記憶トレーニング",
+        "国際音声発音練習",
+        "CET-4/6 単語集",
+        "プログラマー専用語彙",
+        "無料オンライン学習",
+        "完全オープンソース"
+      ],
+      "cta": "今すぐ始める"
+    },
+    "detail": {
+      "phonetic": {
+        "title": "音声記号表示と発音機能",
+        "description": "単語の発音と音声記号を同時に記憶するのに役立ちます"
+      },
+      "dictation": {
+        "title": "書き取りモード",
+        "description": "各章の終了後に書き取りを選択し、学習した単語を定着"
+      },
+      "realtime": {
+        "title": "リアルタイムフィードバック",
+        "description": "入力速度と正確率を表示し、スキルの向上を数値化"
+      },
+      "coder": {
+        "title": "プログラマー向けカスタマイズ",
+        "description": "プログラミング関連の語彙を内蔵し、作業効率を向上"
+      }
+    },
+    "features": {
+      "titlePrefix": "コア機能、",
+      "titleHighlight": "プロフェッショナルな設計",
+      "subtitle": "すべての詳細がより良いオンライン英語学習体験のために丁寧に作られており、プログラマー、学生、会社員などすべてのキーボードワーカーが英語タイピング速度と英単語記憶力を迅速に向上させるのに適しています",
+      "phonetic": {
+        "title": "音声記号表示と発音機能",
+        "description": "単語を記憶する際、発音と音声記号を同時に記憶するのに便利です。標準的なアメリカ英語の発音をサポートし、正しい音声記憶の構築を助け、リスニングとスピーキング能力を向上させます。"
+      },
+      "dictation": {
+        "title": "スマート書き取りモード",
+        "description": "チャプターの練習を完了した後、そのチャプターの書き取りを選択でき、学習した単語の定着に役立ちます。書き取り練習で記憶効果を強化します。"
+      },
+      "stats": {
+        "title": "精密なデータ統計",
+        "description": "ユーザーの入力速度と正確率を数値化し、スキルの向上を実感できるようにします。WPM統計、正確率分析、進捗追跡をサポートします。"
+      },
+      "muscleMemory": {
+        "title": "英語筋肉記憶トレーニング",
+        "description": "キーボードワーカーのために特別に設計され、英単語の記憶とキーボード入力の筋肉記憶トレーニングを組み合わせ、単語を暗記しながらタイピングスキルを強化します。"
+      },
+      "errorCorrection": {
+        "title": "スマートエラー修正",
+        "description": "誤った筋肉記憶の形成を避けるため、単語の入力を間違えた場合は再入力が必要となり、正しい筋肉記憶とスペル習慣を維持します。"
+      },
+      "multiPlatform": {
+        "title": "シームレスなマルチプラットフォーム体験",
+        "description": "ウェブ版とVSCode拡張機能版をサポートし、いつでもどこでも練習を開始できます。また、便利なクイックデプロイソリューションも提供し、さまざまなユーザーのニーズに対応します。"
+      }
+    },
+    "dictionary": {
+      "titlePrefix": "豊富な語彙、",
+      "titleHighlight": "必要なものがすべて",
+      "subtitle": "CET-4/6、IELTS、TOEFL、GRE、大学院英語、ビジネス英語BEC、およびプログラマー向けのJavaScript/Java/Python技術語彙をカバーし、さまざまな英語学習ニーズに対応",
+      "exam": {
+        "title": "必須試験語彙",
+        "cet4": "CET-4 大学英語4級",
+        "cet6": "CET-6 大学英語6級",
+        "toefl": "TOEFL テスト語彙",
+        "ielts": "IELTS テスト語彙",
+        "gre": "GRE 大学院入学試験",
+        "gmat": "GMAT ビジネススクール入学",
+        "sat": "SAT 学力評価テスト"
+      },
+      "academic": {
+        "title": "学術・専門語彙",
+        "postgrad": "大学院英語核心語彙",
+        "tem4": "英語専攻4級 TEM-4",
+        "tem8": "英語専攻8級 TEM-8",
+        "gaokao": "大学入試必須英単語",
+        "zhongkao": "高校入試重要英単語",
+        "pep": "人教版英語 3-9年生"
+      },
+      "business": {
+        "title": "ビジネス・多言語",
+        "becCore": "ビジネス英語核心語彙",
+        "bec": "BEC ビジネス英語試験",
+        "wangluIelts": "王陸IELTSリスニング語料集",
+        "japanese": "日本語一般語彙 N1-N5",
+        "kazakh": "カザフ語基礎3000語"
+      },
+      "coder": {
+        "title": "プログラマー専用語彙とAPI",
+        "description": "プログラマーのためにカスタマイズされた技術語彙とプログラミングAPI練習、コーディング効率と技術英語力を向上",
+        "coderDictLabel": "プログラミング語彙",
+        "coderDictDesc": "プログラマー常用語",
+        "jsApiDesc": "コアメソッド練習",
+        "nodeApiDesc": "サーバーサイド開発",
+        "javaApiDesc": "エンタープライズ開発",
+        "linuxCmdLabel": "コマンドライン",
+        "linuxCmdDesc": "システム管理",
+        "updating": "より多くのプログラミング言語APIを継続的に更新中"
+      },
+      "community": {
+        "title": "コミュニティ共築、継続的成長",
+        "description": "語彙は活発なオープンソースコミュニティによって継続的に貢献・保守されています。特定の語彙が必要な場合は、GitHubでIssueを提出してください",
+        "cta": "豊富な語彙を今すぐ体験"
+      }
+    },
+    "coder": {
+      "titlePrefix": "",
+      "titleHighlight": "プログラマー",
+      "titleSuffix": "のためにカスタマイズ",
+      "subtitle": "プログラマーの仕事でよく使う技術英語語彙を内蔵し、アルゴリズム・データ構造、デザインパターン、クラウドコンピューティングなどの技術語彙を含み、英語タイピング速度を向上。JavaScript/Node.js/Java/Python/Linuxコマンドなど複数のプログラミング言語API練習もサポートし、プログラマーが一般的なプログラミングインターフェースに素早く慣れるのに役立ちます",
+      "techVocab": {
+        "title": "プログラミング技術語彙",
+        "description": "プログラマーの仕事で最もよく使われる英語単語を特別に収録し、アルゴリズム、データ構造、デザインパターン、ソフトウェアエンジニアリングなどの分野の核心語彙をカバー",
+        "algoDs": "アルゴリズムとデータ構造語彙",
+        "architecture": "ソフトウェアアーキテクチャとデザインパターン",
+        "projectMgmt": "プロジェクト管理とコラボレーションツール",
+        "cloudDevops": "クラウドコンピューティングとDevOps用語"
+      },
+      "apiPractice": {
+        "title": "APIメソッド練習",
+        "description": "複数の主要プログラミング言語のAPI練習をサポートし、タイピング練習で一般的なメソッドに慣れ、コーディング効率とAPI記憶を向上",
+        "jsApi": "Array, Object, Promise などのコアAPI",
+        "nodeApi": "fs, http, express などのサーバーサイドAPI",
+        "javaApi": "Collection, Stream などのエンタープライズAPI",
+        "linuxCmd": "一般的なコマンドライン指示とシステム管理"
+      },
+      "highlights": {
+        "fastApi": {
+          "title": "APIを素早く習得",
+          "description": "タイピング練習でプログラミングAPIを素早く記憶し、開発効率を向上"
+        },
+        "techEnglish": {
+          "title": "技術英語の向上",
+          "description": "専門的な技術語彙トレーニングで、ドキュメント読解とコミュニケーション能力を向上"
+        },
+        "vscode": {
+          "title": "VSCode拡張機能",
+          "description": "VSCode拡張機能版をサポートし、開発環境でいつでも練習"
+        }
+      },
+      "community": {
+        "title": "コミュニティ駆動、継続的更新",
+        "description": "API語彙は主にコミュニティの貢献に依存しています。より多くのプログラミング言語APIが順次追加されています。貢献をお待ちしています",
+        "cta": "プログラマー専用機能を体験",
+        "vscodeCta": "VSCode拡張機能をインストール"
+      }
+    },
+    "awards": {
+      "badge": "受賞・認知",
+      "titlePrefix": "広く",
+      "titleHighlight": "認知された",
+      "titleSuffix": "優良プロジェクト",
+      "subtitle": "GitHubグローバルトレンド1位、V2EX全站ホットトピック、Gitee GVP最有価値オープンソースプロジェクト、少数派ホームページ推薦など多くの権威あるプラットフォームに認知され、10万人以上のユーザーが選ぶ無料英語学習ソフト",
+      "githubTrending": {
+        "title": "GitHubトレンド",
+        "description": "グローバルトレンド1位"
+      },
+      "v2ex": {
+        "title": "V2EXホット",
+        "description": "V2EX全站ホットプロジェクト"
+      },
+      "giteeGvp": {
+        "title": "Gitee GVP",
+        "description": "最有価値オープンソースプロジェクト"
+      },
+      "sspai": {
+        "title": "少数派推薦",
+        "description": "少数派ホームページ推薦アプリ"
+      },
+      "openSource": {
+        "title": "オープンソースコミュニティ認知",
+        "github": {
+          "title": "GitHubグローバルトレンド1位",
+          "description": "世界中の開発者から最高の注目と認知を獲得"
+        },
+        "giteeGvp": {
+          "title": "Gitee最有価値オープンソースプロジェクト (GVP)",
+          "description": "国内トップクラスのオープンソースプロジェクト認証"
+        },
+        "gitcode": {
+          "title": "GitCode G-Star計画卒業プロジェクト",
+          "description": "オープンソーススター計画優秀プロジェクト"
+        }
+      },
+      "media": {
+        "title": "メディアプラットフォーム推薦",
+        "v2ex": {
+          "title": "V2EX全站ホットプロジェクト",
+          "description": "技術コミュニティで高い注目と議論"
+        },
+        "sspai": {
+          "title": "少数派ホームページ推薦",
+          "description": "優良アプリ推薦プラットフォームに認知"
+        },
+        "gitee": {
+          "title": "Gitee全站推薦プロジェクト",
+          "description": "国内大手コードホスティングプラットフォーム推薦"
+        }
+      },
+      "stats": {
+        "title": "ユーザーの信頼、数字が語る",
+        "starsDesc": "開発者から広く認知",
+        "monthlyUsers": "月間アクティブユーザー",
+        "usersDesc": "継続的に学習するユーザー",
+        "contributors": "コミュニティ貢献者",
+        "contributorsDesc": "共にプロジェクトを改善"
+      },
+      "join": {
+        "title": "ユーザーコミュニティに参加",
+        "description": "数万人のユーザーの一員になり、この高く評価された英語学習ツールを体験して、タイピングスキルと英語力を向上させましょう",
+        "cta": "今すぐコミュニティに参加"
+      }
+    },
+    "cta": {
+      "titlePrefix": "今すぐ",
+      "titleHighlight": "体験",
+      "subtitle": "英語学習の旅を始め、すべてのタイピングを進歩に",
+      "button": "学習を始める →",
+      "desktopTip": "デスクトップブラウザの使用をお勧めします"
+    }
+  },
+  "pagination": {
+    "total": "全{{count}}件",
+    "perPage": "表示件数",
+    "perPageOption": "{{count}}件",
+    "previous": "前のページ",
+    "next": "次のページ"
+  }
+}

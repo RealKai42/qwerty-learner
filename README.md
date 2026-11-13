@@ -132,41 +132,38 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 ## 运行项目
 
-本项目是基于`React`开发的，需要 node 环境来运行。
+本项目是基于`React`开发的，需要 bun 环境来运行。
 
 ### 环境准备
 
-1. NodeJS
+1. Bun
 2. Git
-3. Yarn
 
 > **验证是否已经拥有相关环境**
 >
-> 1. 手动验证  
+> 1. 手动验证
 >    请在命令行下执行以下命令，查看是否有对应版本输出
 >
 >    ```sh
->    node --version
+>    bun --version
 >    git --version
->    yarn --version
 >    ```
 >
-> 2. 脚本验证  
+> 2. 脚本验证
 >    使用我们提供的脚本对所需环境进行验证，如果确实依赖项会自动安装
 >    - Windows 用户可以直接执行 [pre-check.ps1](scripts/pre-check.ps1) 脚本
 >    - MacOS 用户可以直接执行 [pre-check.sh](scripts/pre-check.sh) 脚本
 
 如果有对应环境缺失，我们可以参考下列官方文档进行安装
 
-> - [NodeJS](https://nodejs.org/en/download)
+> - [Bun](https://bun.sh/)
 > - [Git](https://git-scm.com/downloads)
-> - [yarn](https://classic.yarnpkg.com/lang/en/docs/install)
 
 ### 手动安装
 
 1. 在命令行中执行 `git clone https://github.com/RealKai42/qwerty-learner.git` 将项目拉取到本地, 如果不使用 git 可能因为缺少依赖而无法运行
-2. 在命令行中执行 `cd qwerty-learner`，进入项目根目录，执行`yarn install`来下载依赖。
-3. 执行`yarn start`来启动项目，项目默认地址为`http://localhost:5173/`
+2. 在命令行中执行 `cd qwerty-learner`，进入项目根目录，执行`bun install`来下载依赖。
+3. 执行`bun run start`来启动项目，项目默认地址为`http://localhost:5173/`
 4. 在浏览器中打开`http://localhost:5173/`来访问项目。
 
 ### 脚本执行
@@ -256,16 +253,6 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 如果您确定了想要参与的工作，希望在有基本进展后提交 draft pr，我们可以在 draft pr 上进行讨论，也有利于听取其他 collaborator 的意见。
 
 再次感谢您对项目的贡献！🎉
-
-<br />
-
-## ☕️ Buy us a coffe
-
-非常感谢大家使用 Qwerty Learner, 目前该网站由三个人用业余时间在维护，我们希望在未来购买独立的域名(目前使用 vercel 部署)，并购买服务器以方便国内用户访问与云同步存储数据。
-
-如果您喜欢我们软件，非常感谢您对我们未来的支持!
-
-<img  src="https://github.com/Realkai42/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
 
 ## 👨‍💻 Contributors
 

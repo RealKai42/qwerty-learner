@@ -12,6 +12,7 @@ import type { Dictionary } from '@/typings'
 import range from '@/utils/range'
 import { useAtom, useSetAtom } from 'jotai'
 import { useCallback, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import IcOutlineCollectionsBookmark from '~icons/ic/outline-collections-bookmark'
 import MajesticonsPaperFoldTextLine from '~icons/majesticons/paper-fold-text-line'
@@ -24,6 +25,7 @@ enum Tab {
 }
 
 export default function DictDetail({ dictionary: dict }: { dictionary: Dictionary }) {
+  const { t } = useTranslation()
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const [curTab, setCurTab] = useState<Tab>(Tab.Chapters)
@@ -68,12 +70,12 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
 
   return (
     <div className="flex flex-col rounded-[4rem] px-4 py-3 pl-5 text-gray-800 dark:text-gray-300">
-      <div className="text relative flex h-40 flex-col gap-2">
+      <div className="text relative flex min-h-40 flex-col gap-2 md:h-40">
         <h3 className="text-2xl font-semibold">{dict.name}</h3>
-        <p className="mt-1">{dict.chapterCount} 章节</p>
-        <p>共 {dict.length} 词</p>
+        <p className="mt-1">{t('gallery.chapterCount', { count: dict.chapterCount })}</p>
+        <p>{t('gallery.wordCount', { count: dict.length })}</p>
         <p>{dict.description}</p>
-        <div className="absolute bottom-5 right-4">
+        <div className="mt-3 flex justify-end md:absolute md:bottom-5 md:right-4">
           <ToggleGroup type="single" value={curTab} onValueChange={handleTabChange}>
             <ToggleGroupItem
               value={Tab.Chapters}
@@ -81,7 +83,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
               className={`${curTab === Tab.Chapters ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
             >
               <MajesticonsPaperFoldTextLine className="mr-1.5 text-gray-500" />
-              章节选择
+              {t('gallery.chapterSelect')}
             </ToggleGroupItem>
             {errorWordData.length > 0 && (
               <>
@@ -91,7 +93,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
                   className={`${curTab === Tab.Errors ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
                 >
                   <IcOutlineCollectionsBookmark className="mr-1.5 text-gray-500" />
-                  查看错题
+                  {t('gallery.viewErrors')}
                 </ToggleGroupItem>
                 <ToggleGroupItem
                   value={Tab.Review}
@@ -99,7 +101,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
                   className={`${curTab === Tab.Review ? 'text-primary-foreground bg-primary' : ''} disabled:opacity-100`}
                 >
                   <PajamasReviewList className="mr-1.5 text-gray-500" />
-                  错题回顾
+                  {t('gallery.errorReview')}
                 </ToggleGroupItem>
               </>
             )}

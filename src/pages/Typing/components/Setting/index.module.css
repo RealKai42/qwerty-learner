@@ -1,3 +1,5 @@
+@reference "../../../../index.css";
+
 .tab-content {
   @apply flex w-full flex-col items-start justify-start gap-10 overflow-y-auto pb-40 pl-6 pr-9 pt-8;
 }
@@ -7,9 +9,17 @@
 }
 .section-label {
   @apply pb-0 text-xl font-medium text-gray-600;
+  color: #4b5563;
+}
+:global(.dark) .section-label {
+  color: #d1d5db;
 }
 .section-description {
   @apply -mt-1 pl-4 text-left text-xs font-normal leading-tight text-gray-600;
+  color: #4b5563;
+}
+:global(.dark) .section-description {
+  color: #9ca3af;
 }
 
 .block {
@@ -17,6 +27,10 @@
 }
 .block-label {
   @apply font-medium text-gray-600;
+  color: #4b5563;
+}
+:global(.dark) .block-label {
+  color: #9ca3af;
 }
 .switch-block {
   composes: block;

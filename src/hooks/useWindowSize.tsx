@@ -10,14 +10,21 @@ const useWindowSize = (initialWidth = Infinity, initialHeight = Infinity) => {
 
   useEffect(() => {
     if (isClient) {
+      let timer: ReturnType<typeof setTimeout>
       const handler = () => {
-        setState({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        })
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          setState({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          })
+        }, 150)
       }
       window.addEventListener('resize', handler)
-      return () => window.removeEventListener('resize', handler)
+      return () => {
+        clearTimeout(timer)
+        window.removeEventListener('resize', handler)
+      }
     } else {
       return undefined
     }

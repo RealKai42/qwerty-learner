@@ -6,10 +6,12 @@ import { timeStamp2String } from '@/utils'
 import { generateNewWordReviewRecord, useGetLatestReviewRecord } from '@/utils/db/review-record'
 import * as Progress from '@radix-ui/react-progress'
 import { useSetAtom } from 'jotai'
+import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import MdiRobotAngry from '~icons/mdi/robot-angry'
 
 export function ReviewDetail({ errorData, dict }: { errorData: TErrorWordData[]; dict: Dictionary }) {
+  const { t } = useTranslation()
   const latestReviewRecord = useGetLatestReviewRecord(dict.id)
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const setCurrentDictId = useSetAtom(currentDictIdAtom)
@@ -39,9 +41,9 @@ export function ReviewDetail({ errorData, dict }: { errorData: TErrorWordData[];
         <MdiRobotAngry fontSize={30} className="text-indigo-300 " />
         <blockquote>
           <p className="text-lg font-medium text-gray-600 dark:text-gray-300">
-            我们将使用您在该词典的历史练习数据、错误次数、练习时间来智能生成练习列表
+            {t('gallery.reviewDescription')}
             <br />
-            目前该生成方式还处于实验阶段，我们会逐步完善该生成方式
+            {t('gallery.reviewExperimental')}
           </p>
         </blockquote>
       </div>
@@ -63,20 +65,20 @@ export function ReviewDetail({ errorData, dict }: { errorData: TErrorWordData[];
                 {latestReviewRecord.index + 1}/{latestReviewRecord.words.length}
               </span>
             </div>
-            <div className="mt-1 text-sm font-normal text-gray-500">{`( 创建于 ${timeStamp2String(latestReviewRecord.createTime)} )`}</div>
+            <div className="mt-1 text-sm font-normal text-gray-500">{`(${t('gallery.reviewCreated', { time: timeStamp2String(latestReviewRecord.createTime) })})`}</div>
           </>
         )}
 
-        {!latestReviewRecord && <div>当前词典错词数: {errorData.length}</div>}
+        {!latestReviewRecord && <div>{t('gallery.currentDictErrorCount', { count: errorData.length })}</div>}
 
         <div className="mt-6 flex gap-10">
           {latestReviewRecord && (
             <Button size="sm" onClick={continueReview}>
-              继续当前进度
+              {t('gallery.continueProgress')}
             </Button>
           )}
           <Button size="sm" onClick={startReview}>
-            开始{latestReviewRecord && '新的'}复习
+            {t('gallery.startNewReview')}
           </Button>
         </div>
       </div>

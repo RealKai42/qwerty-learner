@@ -8,19 +8,16 @@ env:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.17.0]
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          bun-version: 1.3.0
       - name: Install Packages
-        run: yarn
+        run: bun install --frozen-lockfile
       - name: Build page
-        run: yarn build
+        run: bun run build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:

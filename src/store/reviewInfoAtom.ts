@@ -20,7 +20,7 @@ export function reviewInfoAtom(initialValue: TReviewInfoAtomData) {
 
       // update reviewRecord to indexdb
       if (newValue.reviewRecord?.id) {
-        putWordReviewRecord(newValue.reviewRecord)
+        putWordReviewRecord(newValue.reviewRecord).catch(console.error)
       }
       set(storageAtom, newValue)
     },

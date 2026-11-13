@@ -4,8 +4,10 @@ import { exportDatabase, importDatabase } from '@/utils/db/data-export'
 import * as Progress from '@radix-ui/react-progress'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useCallback, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function DataSetting() {
+  const { t } = useTranslation()
   const [isExporting, setIsExporting] = useState(false)
   const [exportProgress, setExportProgress] = useState(0)
 
@@ -58,18 +60,12 @@ export default function DataSetting() {
       <ScrollArea.Viewport className="h-full w-full px-3">
         <div className={styles.tabContent}>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>数据导出</span>
-            <span className={styles.sectionDescription}>
-              目前，用户的练习数据<strong>仅保存在本地</strong>。如果您需要在不同的设备、浏览器或者其他非官方部署上使用 Qwerty Learner，
-              您需要手动进行数据同步和保存。为了保留您的练习进度，以及使用近期即将上线的数据分析和智能训练功能，
-              我们建议您及时备份您的数据。
-            </span>
-            <span className="pl-4 text-left text-sm font-bold leading-tight text-red-500">
-              为了您的数据安全，请不要修改导出的数据文件。
-            </span>
+            <span className={styles.sectionLabel}>{t('settings.data.dataExport')}</span>
+            <span className={styles.sectionDescription}>{t('settings.data.dataExportDesc')}</span>
+            <span className="pl-4 text-left text-sm font-bold leading-tight text-red-500">{t('settings.data.dataSecurityWarning')}</span>
             <div className="flex h-3 w-full items-center justify-start px-5">
               <Progress.Root
-                className="translate-z-0 relative h-2 w-11/12 transform  overflow-hidden rounded-full bg-gray-200"
+                className="translate-z-0 relative h-2 w-11/12 transform  overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700"
                 value={exportProgress}
               >
                 <Progress.Indicator
@@ -77,28 +73,26 @@ export default function DataSetting() {
                   style={{ transform: `translateX(-${100 - exportProgress}%)` }}
                 />
               </Progress.Root>
-              <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${exportProgress}%`}</span>
+              <span className="ml-4 w-10 text-xs font-normal text-gray-600 dark:text-gray-400">{`${exportProgress}%`}</span>
             </div>
 
             <button
-              className="my-btn-primary ml-4 disabled:bg-gray-300"
+              className="my-btn-primary ml-4 disabled:bg-gray-300 dark:disabled:bg-gray-600"
               type="button"
               onClick={onClickExport}
               disabled={isExporting}
-              title="导出数据"
+              title={t('settings.data.exportData')}
             >
-              导出数据
+              {t('settings.data.exportData')}
             </button>
           </div>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>数据导入</span>
-            <span className={styles.sectionDescription}>
-              请注意，导入数据将<strong className="text-sm font-bold text-red-500"> 完全覆盖 </strong>当前数据。请谨慎操作。
-            </span>
+            <span className={styles.sectionLabel}>{t('settings.data.dataImport')}</span>
+            <span className={styles.sectionDescription}>{t('settings.data.dataImportDesc')}</span>
 
             <div className="flex h-3 w-full items-center justify-start px-5">
               <Progress.Root
-                className="translate-z-0 relative h-2 w-11/12 transform  overflow-hidden rounded-full bg-gray-200"
+                className="translate-z-0 relative h-2 w-11/12 transform  overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700"
                 value={importProgress}
               >
                 <Progress.Indicator
@@ -106,17 +100,17 @@ export default function DataSetting() {
                   style={{ transform: `translateX(-${100 - importProgress}%)` }}
                 />
               </Progress.Root>
-              <span className="ml-4 w-10 text-xs font-normal text-gray-600">{`${importProgress}%`}</span>
+              <span className="ml-4 w-10 text-xs font-normal text-gray-600 dark:text-gray-400">{`${importProgress}%`}</span>
             </div>
 
             <button
-              className="my-btn-primary ml-4 disabled:bg-gray-300"
+              className="my-btn-primary ml-4 disabled:bg-gray-300 dark:disabled:bg-gray-600"
               type="button"
               onClick={onClickImport}
               disabled={isImporting}
-              title="导入数据"
+              title={t('settings.data.importData')}
             >
-              导入数据
+              {t('settings.data.importData')}
             </button>
           </div>
         </div>

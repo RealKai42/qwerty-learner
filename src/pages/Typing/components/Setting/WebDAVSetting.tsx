@@ -1,14 +1,32 @@
 import styles from './index.module.css'
-import { webdavConfigAtom } from '@/store'
-import { deleteWebDAVBackup, fullBackupToWebDAV, getBackupInfo, listWebDAVBackups, restoreFromWebDAV, testWebDAVConnection } from '@/utils/webdav'
+import {
+  fontSizeConfigAtom,
+  foreignFontConfigAtom,
+  hintSoundsConfigAtom,
+  keySoundsConfigAtom,
+  translateFontConfigAtom,
+  webdavConfigAtom,
+} from '@/store'
+import { db } from '@/utils/db'
+import {
+  applyBackupSettings,
+  deleteWebDAVBackup,
+  fullBackupToWebDAV,
+  getBackupInfo,
+  mergeBackupIntoLocal,
+  listWebDAVBackups,
+  restoreFromWebDAV,
+  testWebDAVConnection,
+  withBackupLock,
+} from '@/utils/webdav'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { useAtom } from 'jotai'
 import { useCallback, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconCheck from '~icons/tabler/check'
 import IconCloud from '~icons/tabler/cloud'
 import IconCloudDownload from '~icons/tabler/cloud-download'
 import IconCloudUpload from '~icons/tabler/cloud-upload'
-import IconRefresh from '~icons/tabler/refresh'
 import IconTrash from '~icons/tabler/trash'
 
 interface BackupFile {
@@ -27,11 +45,17 @@ function formatSize(bytes: number): string {
 }
 
 export default function WebDAVSetting() {
+  const { t } = useTranslation()
   const [webdavConfig, setWebdavConfig] = useAtom(webdavConfigAtom)
+  const setFontSizeConfig = useAtom(fontSizeConfigAtom)[1]
+  const setKeySoundsConfig = useAtom(keySoundsConfigAtom)[1]
+  const setHintSoundsConfig = useAtom(hintSoundsConfigAtom)[1]
+  const setForeignFontConfig = useAtom(foreignFontConfigAtom)[1]
+  const setTranslateFontConfig = useAtom(translateFontConfigAtom)[1]
   const [testResult, setTestResult] = useState<{ success: boolean; message: string } | null>(null)
   const [backupResult, setBackupResult] = useState<{ success: boolean; message: string } | null>(null)
   const [restoreResult, setRestoreResult] = useState<{ success: boolean; message: string } | null>(null)
-  const [backupInfo, setBackupInfo] = useState<{ backupTime: string; recordCount: number } | null>(null)
+  const [backupInfo, setBackupInfo] = useState<{ backupTime: string; recordCount: number; hasSettings: boolean } | null>(null)
   const [backupFiles, setBackupFiles] = useState<BackupFile[]>([])
   const [showBackupList, setShowBackupList] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -60,22 +84,30 @@ export default function WebDAVSetting() {
   const handleTestConnection = useCallback(async () => {
     setIsLoading(true)
     setTestResult(null)
-    const result = await testWebDAVConnection(webdavConfig)
-    setTestResult(result)
+    try {
+      const result = await testWebDAVConnection(webdavConfig)
+      setTestResult(result)
+    } catch (e) {
+      setTestResult({ success: false, message: e instanceof Error ? e.message : t('settings.webdav.connectionTestFailed') })
+    }
     setIsLoading(false)
   }, [webdavConfig])
 
   const handleBackup = useCallback(async () => {
     setIsLoading(true)
     setBackupResult(null)
-    const { db } = await import('@/utils/db')
-    const wordRecords = await db.wordRecords.toArray()
-    const chapterRecords = await db.chapterRecords.toArray()
-    const reviewRecords = await db.reviewRecords.toArray()
-    const result = await fullBackupToWebDAV({ wordRecords, chapterRecords, reviewRecords }, webdavConfig)
-    setBackupResult(result)
-    if (result.success) {
-      await loadBackupInfo()
+    try {
+      const wordRecords = await db.wordRecords.toArray()
+      const chapterRecords = await db.chapterRecords.toArray()
+      const reviewRecords = await db.reviewRecords.toArray()
+      const favoriteRecords = await db.favoriteRecords.toArray()
+      const result = await fullBackupToWebDAV({ wordRecords, chapterRecords, reviewRecords, favoriteRecords }, webdavConfig)
+      setBackupResult(result)
+      if (result.success) {
+        await loadBackupInfo()
+      }
+    } catch (e) {
+      setBackupResult({ success: false, message: e instanceof Error ? e.message : t('settings.webdav.backupFailed') })
     }
     setIsLoading(false)
   }, [webdavConfig, loadBackupInfo])
@@ -83,61 +115,94 @@ export default function WebDAVSetting() {
   const handleListBackups = useCallback(async () => {
     setIsLoading(true)
     setShowBackupList(false)
-    const result = await listWebDAVBackups(webdavConfig)
-    if (result.success) {
-      setBackupFiles(result.files)
-      setShowBackupList(true)
-    } else {
-      setRestoreResult({ success: false, message: result.message })
+    try {
+      const result = await listWebDAVBackups(webdavConfig)
+      if (result.success) {
+        setBackupFiles(result.files)
+        setShowBackupList(true)
+      } else {
+        setRestoreResult({ success: false, message: result.message })
+      }
+    } catch (e) {
+      setRestoreResult({ success: false, message: e instanceof Error ? e.message : t('settings.webdav.listBackupsFailed') })
     }
     setIsLoading(false)
   }, [webdavConfig])
 
-  const handleRestore = useCallback(async (fileUrl: string) => {
-    setIsLoading(true)
-    setRestoreResult(null)
-    const result = await restoreFromWebDAV(webdavConfig, fileUrl)
-    if (result.success && result.data) {
-      const { db } = await import('@/utils/db')
-      const data = result.data
-      await db.wordRecords.clear()
-      await db.chapterRecords.clear()
-      await db.reviewRecords.clear()
-      if (data.wordRecords?.length) await db.wordRecords.bulkAdd(data.wordRecords as never[])
-      if (data.chapterRecords?.length) await db.chapterRecords.bulkAdd(data.chapterRecords as never[])
-      if (data.reviewRecords?.length) await db.reviewRecords.bulkAdd(data.reviewRecords as never[])
-      setRestoreResult({ success: true, message: '恢复成功，请刷新页面' })
-    } else {
-      setRestoreResult(result)
-    }
-    setIsLoading(false)
-  }, [webdavConfig])
+  const handleRestore = useCallback(
+    async (fileUrl: string) => {
+      setIsLoading(true)
+      setRestoreResult(null)
+      try {
+        await withBackupLock(async () => {
+          const result = await restoreFromWebDAV(webdavConfig, fileUrl)
+          if (!result.success || !result.data) {
+            setRestoreResult(result)
+            return
+          }
 
-  const handleDeleteBackup = useCallback(async (fileUrl: string) => {
-    if (!confirm('确定要删除这个备份文件吗？')) return
-    setIsLoading(true)
-    const result = await deleteWebDAVBackup(webdavConfig, fileUrl)
-    if (result.success) {
-      setBackupFiles((prev) => prev.filter((f) => f.url !== fileUrl))
-    }
-    setRestoreResult(result)
-    setIsLoading(false)
-  }, [webdavConfig])
+          const remoteData = result.data
+          const remoteNewCount = await mergeBackupIntoLocal(remoteData)
+
+          // Apply settings from backup if present
+          if (remoteData.settings) {
+            applyBackupSettings(remoteData.settings)
+            const s = remoteData.settings
+            // Update in-memory atoms so the UI reflects changes immediately
+            if (s.fontSizeConfig) setFontSizeConfig(s.fontSizeConfig)
+            if (s.keySoundsConfig) setKeySoundsConfig(s.keySoundsConfig as any)
+            if (s.hintSoundsConfig) setHintSoundsConfig(s.hintSoundsConfig as any)
+            if (s.foreignFontConfig) setForeignFontConfig(s.foreignFontConfig as any)
+            if (s.translateFontConfig) setTranslateFontConfig(s.translateFontConfig as any)
+          }
+
+          const hasSettings = !!remoteData.settings
+          const settingsMsg = hasSettings ? t('settings.webdav.withSettings') : ''
+          setRestoreResult({
+            success: true,
+            message:
+              remoteNewCount > 0
+                ? `${t('settings.webdav.restoreSuccessNew', { count: remoteNewCount })}${settingsMsg}`
+                : `${t('settings.webdav.restoreSuccessUpToDate')}${settingsMsg}`,
+          })
+        })
+      } catch (e) {
+        setRestoreResult({ success: false, message: e instanceof Error ? e.message : t('settings.webdav.restoreFailed') })
+      }
+      setIsLoading(false)
+    },
+    [webdavConfig],
+  )
+
+  const handleDeleteBackup = useCallback(
+    async (fileUrl: string) => {
+      if (!confirm(t('settings.webdav.confirmDeleteBackup'))) return
+      setIsLoading(true)
+      try {
+        const result = await deleteWebDAVBackup(webdavConfig, fileUrl)
+        if (result.success) {
+          setBackupFiles((prev) => prev.filter((f) => f.url !== fileUrl))
+        }
+        setRestoreResult(result)
+      } catch (e) {
+        setRestoreResult({ success: false, message: e instanceof Error ? e.message : t('settings.webdav.deleteFailed') })
+      }
+      setIsLoading(false)
+    },
+    [webdavConfig],
+  )
 
   return (
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto">
       <ScrollArea.Viewport className="h-full w-full px-3">
         <div className={styles.tabContent}>
           <div className={styles.section}>
-            <span className={styles.sectionLabel}>WebDAV 配置</span>
-            <span className={styles.sectionDescription}>
-              配置 NAS 的 WebDAV 地址，每次完成章节后自动增量备份打字数据到 NAS。
-              手动备份会创建新的完整备份文件。
-            </span>
+            <span className={styles.sectionLabel}>{t('settings.webdav.backupConfig')}</span>
+            <span className={styles.sectionDescription}>{t('settings.webdav.backupConfigDesc')}</span>
 
             <div className="flex flex-col gap-3 px-4">
               <div className="flex items-center gap-2">
-                <span className="w-20 text-sm text-gray-700 dark:text-gray-300">启用备份</span>
+                <span className="w-20 text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.enableBackup')}</span>
                 <button
                   type="button"
                   onClick={() => handleConfigChange('enabled', !webdavConfig.enabled)}
@@ -154,7 +219,7 @@ export default function WebDAVSetting() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-sm text-gray-700 dark:text-gray-300">WebDAV 地址</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.webdavUrl')}</span>
                 <input
                   type="text"
                   value={webdavConfig.url}
@@ -165,7 +230,7 @@ export default function WebDAVSetting() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-sm text-gray-700 dark:text-gray-300">用户名</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.username')}</span>
                 <input
                   type="text"
                   value={webdavConfig.username}
@@ -175,7 +240,7 @@ export default function WebDAVSetting() {
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-sm text-gray-700 dark:text-gray-300">密码</span>
+                <span className="text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.password')}</span>
                 <input
                   type="password"
                   value={webdavConfig.password}
@@ -185,7 +250,7 @@ export default function WebDAVSetting() {
               </div>
 
               <div className="flex items-center gap-2">
-                <span className="w-20 text-sm text-gray-700 dark:text-gray-300">自动备份</span>
+                <span className="w-20 text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.autoBackup')}</span>
                 <button
                   type="button"
                   onClick={() => handleConfigChange('autoBackup', !webdavConfig.autoBackup)}
@@ -199,7 +264,7 @@ export default function WebDAVSetting() {
                     }`}
                   />
                 </button>
-                <span className="text-xs text-gray-500 dark:text-gray-400">章节完成后自动增量备份</span>
+                <span className="text-xs text-gray-500 dark:text-gray-300">{t('settings.webdav.autoBackupDesc')}</span>
               </div>
 
               <div className="flex gap-2">
@@ -207,35 +272,37 @@ export default function WebDAVSetting() {
                   type="button"
                   onClick={handleTestConnection}
                   disabled={isLoading}
-                  className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300"
+                  className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300 dark:disabled:bg-gray-600"
                 >
                   <IconCheck fontSize={14} />
-                  测试连接
+                  {t('settings.webdav.testConnection')}
                 </button>
                 <button
                   type="button"
                   onClick={handleBackup}
                   disabled={isLoading || !webdavConfig.enabled}
-                  className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300"
+                  className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300 dark:disabled:bg-gray-600"
                 >
                   <IconCloudUpload fontSize={14} />
-                  完整备份
+                  {t('settings.webdav.fullBackup')}
                 </button>
                 <button
                   type="button"
                   onClick={handleListBackups}
                   disabled={isLoading || !webdavConfig.enabled}
-                  className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300"
+                  className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300 dark:disabled:bg-gray-600"
                 >
                   <IconCloud fontSize={14} />
-                  列出备份
+                  {t('settings.webdav.listBackups')}
                 </button>
               </div>
 
               {testResult && (
                 <div
                   className={`rounded-lg px-3 py-2 text-sm ${
-                    testResult.success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                    testResult.success
+                      ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                      : 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300'
                   }`}
                 >
                   {testResult.message}
@@ -245,7 +312,9 @@ export default function WebDAVSetting() {
               {backupResult && (
                 <div
                   className={`rounded-lg px-3 py-2 text-sm ${
-                    backupResult.success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                    backupResult.success
+                      ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                      : 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300'
                   }`}
                 >
                   {backupResult.message}
@@ -255,7 +324,9 @@ export default function WebDAVSetting() {
               {restoreResult && (
                 <div
                   className={`rounded-lg px-3 py-2 text-sm ${
-                    restoreResult.success ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                    restoreResult.success
+                      ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                      : 'bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-300'
                   }`}
                 >
                   {restoreResult.message}
@@ -265,7 +336,11 @@ export default function WebDAVSetting() {
               {backupInfo && (
                 <div className="rounded-lg bg-blue-50 px-3 py-2 dark:bg-blue-900/20">
                   <span className="text-sm text-blue-700 dark:text-blue-300">
-                    上次备份: {new Date(backupInfo.backupTime).toLocaleString()}，共 {backupInfo.recordCount} 条记录
+                    {t('settings.webdav.lastBackupInfo', {
+                      time: new Date(backupInfo.backupTime).toLocaleString(),
+                      count: backupInfo.recordCount,
+                    })}
+                    {backupInfo.hasSettings ? t('settings.webdav.withSettings') : ''}
                   </span>
                 </div>
               )}
@@ -273,29 +348,24 @@ export default function WebDAVSetting() {
               {showBackupList && (
                 <div className="flex flex-col gap-2 rounded-lg border border-gray-200 p-3 dark:border-gray-700">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm font-bold text-gray-700 dark:text-gray-300">选择备份文件恢复</span>
+                    <span className="text-sm font-bold text-gray-700 dark:text-gray-300">{t('settings.webdav.selectBackupToRestore')}</span>
                     <button
                       type="button"
                       onClick={() => setShowBackupList(false)}
-                      className="text-xs text-gray-500 hover:text-gray-700 dark:text-gray-400"
+                      className="text-xs text-gray-500 hover:text-gray-700 dark:text-gray-300"
                     >
-                      关闭
+                      {t('settings.webdav.close')}
                     </button>
                   </div>
                   {backupFiles.length === 0 ? (
-                    <span className="text-sm text-gray-500 dark:text-gray-400">暂无备份文件</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-300">{t('settings.webdav.noBackupFiles')}</span>
                   ) : (
                     <div className="flex max-h-60 flex-col gap-2 overflow-y-auto">
                       {backupFiles.map((file) => (
-                        <div
-                          key={file.url}
-                          className="flex items-center justify-between rounded-lg bg-gray-50 px-3 py-2 dark:bg-gray-700"
-                        >
+                        <div key={file.url} className="flex items-center justify-between rounded-lg bg-gray-50 px-3 py-2 dark:bg-gray-700">
                           <div className="flex flex-col">
-                            <span className="max-w-[200px] truncate text-xs font-medium text-gray-700 dark:text-gray-300">
-                              {file.name}
-                            </span>
-                            <div className="flex gap-2 text-xs text-gray-500 dark:text-gray-400">
+                            <span className="max-w-[200px] truncate text-xs font-medium text-gray-700 dark:text-gray-300">{file.name}</span>
+                            <div className="flex gap-2 text-xs text-gray-500 dark:text-gray-300">
                               <span>{file.date}</span>
                               <span>{formatSize(file.size)}</span>
                             </div>
@@ -305,19 +375,19 @@ export default function WebDAVSetting() {
                               type="button"
                               onClick={() => handleRestore(file.url)}
                               disabled={isLoading}
-                              className="flex items-center gap-1 rounded bg-indigo-500 px-2 py-1 text-xs text-white hover:bg-indigo-600 disabled:bg-gray-300"
+                              className="flex items-center gap-1 rounded bg-indigo-500 px-2 py-1 text-xs text-white hover:bg-indigo-600 disabled:bg-gray-300 dark:disabled:bg-gray-600"
                             >
                               <IconCloudDownload fontSize={12} />
-                              恢复
+                              {t('settings.webdav.restore')}
                             </button>
                             <button
                               type="button"
                               onClick={() => handleDeleteBackup(file.url)}
                               disabled={isLoading}
-                              className="flex items-center gap-1 rounded bg-red-500 px-2 py-1 text-xs text-white hover:bg-red-600 disabled:bg-gray-300"
+                              className="flex items-center gap-1 rounded bg-red-500 px-2 py-1 text-xs text-white hover:bg-red-600 disabled:bg-gray-300 dark:disabled:bg-gray-600"
                             >
                               <IconTrash fontSize={12} />
-                              删除
+                              {t('settings.webdav.delete')}
                             </button>
                           </div>
                         </div>

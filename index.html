@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
@@ -63,15 +63,6 @@
     <meta property="og:site_name" content="Qwerty Learner" />
     <meta property="og:locale" content="zh_CN" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://qwerty.kaiyi.cool/" />
-    <meta property="twitter:title" content="Qwerty Learner 官网 — 为键盘工作者设计的英语学习软件" />
-    <meta
-      property="twitter:description"
-      content="专为键盘工作者设计的免费英语学习软件，结合打字练习与单词记忆，支持音标发音、默写模式、多样词库，高效提升英语水平和打字技能。"
-    />
-    <meta property="twitter:image" content="https://qwerty.kaiyi.cool/og-image.png" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -183,12 +174,18 @@
     </script>
 
     <script>
-      // Dark mode init
-      if (
-        ('state' in localStorage && JSON.parse(localStorage.state).darkMode) ||
-        (!('state' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document.documentElement.classList.add('dark')
+      try {
+        var followSystem = JSON.parse(localStorage.getItem('darkModeFollowSystem') ?? 'true')
+        var isDark = followSystem
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : JSON.parse(localStorage.getItem('isOpenDarkModeAtom') ?? 'false')
+        if (isDark) {
+          document.documentElement.classList.add('dark')
+        }
+      } catch (e) {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark')
+        }
       }
     </script>
   </head>

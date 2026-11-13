@@ -17,9 +17,11 @@ interface LineChartsProps {
   data: [string, number][]
   name: string
   suffix?: string
+  yMin?: number
+  yMax?: number
 }
 
-const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name }) => {
+const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name, yMin, yMax }) => {
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
 
   const chartRef = useRef<HTMLDivElement>(null)
@@ -54,6 +56,8 @@ const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name }) => {
       },
       yAxis: {
         type: 'value',
+        min: yMin,
+        max: yMax,
         axisLabel: { formatter: (value: number) => value + (suffix || '') },
       },
       series: [
@@ -68,7 +72,10 @@ const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name }) => {
     }
 
     chart.setOption(option)
-  }, [data, title, suffix, name, isOpenDarkMode])
+    return () => {
+      chart.dispose()
+    }
+  }, [data, title, suffix, name, isOpenDarkMode, yMin, yMax])
 
   useEffect(() => {
     if (!chartRef.current) return
@@ -78,7 +85,7 @@ const LineCharts: FC<LineChartsProps> = ({ data, title, suffix, name }) => {
 
   return (
     <div className="flex h-full flex-col">
-      <div className="text-center text-xl font-bold text-gray-600	dark:text-white">{title}</div>
+      <div className="text-center text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">{title}</div>
       <div style={{ width: '100%', height: '100%' }} ref={chartRef} className="line-chart flex-grow"></div>
     </div>
   )

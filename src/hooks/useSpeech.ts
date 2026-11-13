@@ -1,32 +1,17 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+
+const VALID_UTTERANCE_PROPS = ['lang', 'voice', 'volume', 'rate', 'pitch'] as const
 
 export type UseSpeechResult = {
-  /**
-   * Speak speaking
-   * @param {boolean} [abort=false] Whether to cancel other speak
-   */
   speak: (abort?: boolean) => void
-  /**
-   * Cancel speaking
-   */
   cancel: () => void
-  /**
-   * Whether currently speaking
-   */
   speaking: boolean
 }
 
-/**
- * React hook for using the SpeechSynthesis API.
- * @param {string} text The text to be spoken.
- * @param {Partial<SpeechSynthesisUtterance>} option SpeechSynthesisUtterance API option. {@link https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance#instance_properties}
- * @returns {Object} An object containing `speak`, `cancel` methods and `speaking` state.
- * @throws {Error} If browser not support SpeechSynthesis API.
- * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API}
- */
 export default function useSpeech(text: string, option?: Partial<SpeechSynthesisUtterance>): UseSpeechResult {
   const [speaking, setSpeaking] = useState(false)
-  const [utterance, setUtterance] = useState<SpeechSynthesisUtterance | null>(null)
+  const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null)
+  const optionJson = useMemo(() => JSON.stringify(option), [option])
 
   useEffect(() => {
     const synth = window.speechSynthesis
@@ -36,40 +21,36 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
     }
 
     const newUtterance = new SpeechSynthesisUtterance(text)
-    Object.assign(newUtterance, option)
-    setUtterance(newUtterance)
+    if (option) {
+      for (const prop of VALID_UTTERANCE_PROPS) {
+        if (prop in option) {
+          ;(newUtterance as unknown as Record<string, unknown>)[prop] = option[prop]
+        }
+      }
+    }
+    const handleEnd = () => setSpeaking(false)
+    newUtterance.addEventListener('end', handleEnd)
+    utteranceRef.current = newUtterance
 
     return () => {
+      newUtterance.removeEventListener('end', handleEnd)
       synth.cancel()
       setSpeaking(false)
+      utteranceRef.current = null
     }
-  }, [option, text])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text, optionJson])
 
-  useEffect(() => {
-    if (utterance) {
-      const onend = () => {
-        setSpeaking(false)
-      }
-      utterance.addEventListener('end', onend)
-      return () => {
-        utterance.removeEventListener('end', onend)
-      }
+  const speak = useCallback((abort = false) => {
+    const utterance = utteranceRef.current
+    if (!utterance) return
+    const synth = window.speechSynthesis
+    if (abort && synth.speaking) {
+      synth.cancel()
     }
-  }, [utterance])
-
-  const speak = useCallback(
-    (abort = false) => {
-      if (utterance) {
-        const synth = window.speechSynthesis
-        if (abort && synth.speaking) {
-          synth.cancel()
-        }
-        setSpeaking(true)
-        synth.speak(utterance)
-      }
-    },
-    [utterance],
-  )
+    setSpeaking(true)
+    synth.speak(utterance)
+  }, [])
 
   const cancel = useCallback(() => {
     const synth = window.speechSynthesis

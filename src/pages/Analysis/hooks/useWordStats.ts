@@ -82,6 +82,8 @@ async function getChapterStats(startTimeStamp: number, endTimeStamp: number): Pr
   for (let i = 0; i < records.length; i++) {
     const date = dayjs(records[i].timeStamp * 1000).format('YYYY-MM-DD')
 
+    if (!data[date]) continue
+
     data[date].exerciseTime = data[date].exerciseTime + 1
     data[date].words = [...data[date].words, records[i].word]
     data[date].totalTime = data[date].totalTime + records[i].timing.reduce((acc, curr) => acc + curr, 0)

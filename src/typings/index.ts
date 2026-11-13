@@ -32,12 +32,6 @@ export type WordWithIndex = Word & {
   index: number
 }
 
-export type InfoPanelType = 'donate' | 'vsc' | 'community' | 'redBook'
-
-export type InfoPanelState = {
-  [key in InfoPanelType]: boolean
-}
-
 export type LoopWordTimesOption = 1 | 3 | 5 | 8 | typeof Number.MAX_SAFE_INTEGER
 
 export type WordDictationType = 'hideAll' | 'hideVowel' | 'hideConsonant' | 'randomHide'

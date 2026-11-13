@@ -1,9 +1,8 @@
-import { TypingContext } from '../../store'
-import { useContext, useEffect, useState } from 'react'
+import { useTypingContext } from '../../store'
+import { useEffect, useState } from 'react'
 
 export default function Progress({ className }: { className?: string }) {
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state } = useContext(TypingContext)!
+  const { state } = useTypingContext()
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState(0)
 

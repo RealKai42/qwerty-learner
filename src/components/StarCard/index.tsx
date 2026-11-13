@@ -4,11 +4,13 @@ import { IS_MAC_OS, recordStarAction } from '@/utils'
 import { Transition } from '@headlessui/react'
 import { useSetAtom } from 'jotai'
 import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconStar from '~icons/material-symbols/star'
 import IconStarOutline from '~icons/material-symbols/star-outline'
 import IconCircleX from '~icons/tabler/circle-x'
 
 export default function StarCard() {
+  const { t } = useTranslation()
   const [countdown, setCountdown] = useState(5)
   const [isCounting, setIsCounting] = useState(false)
   const setDismissStartCardDate = useSetAtom(dismissStartCardDateAtom)
@@ -16,7 +18,7 @@ export default function StarCard() {
 
   useLayoutEffect(() => {
     // 直接使用 jotai 的 dismissStartCardDate 其值先是默认值，然后才是 localStorage 中的值
-    const value = window.localStorage.getItem(DISMISS_START_CARD_DATE_KEY) as Date | null
+    const value = window.localStorage.getItem(DISMISS_START_CARD_DATE_KEY)
     if (value === null) {
       setIsShow(true)
     }
@@ -66,11 +68,11 @@ export default function StarCard() {
               <div className="flex flex-shrink-0 items-center">
                 <div className="ml-0.5">👈</div>
                 <IconStar className="h-4 w-4 text-indigo-600" />
-                <div className="ml-1 text-gray-600 dark:text-gray-300">点亮它！</div>
+                <div className="ml-1 text-gray-600 dark:text-gray-300">{t('common.starCard.lightItUp')}</div>
               </div>
             </div>
             <span className="w-full text-center text-gray-600 dark:text-gray-300">
-              收藏快捷键<span className="ml-2 text-indigo-600 dark:text-indigo-500">{IS_MAC_OS ? '⌘' : 'Ctrl'} + D</span>
+              {t('common.starCard.bookmarkShortcut', { key: IS_MAC_OS ? '⌘' : 'Ctrl' })}
             </span>
           </div>
         ) : (
@@ -79,18 +81,19 @@ export default function StarCard() {
               className="rounded-lg bg-indigo-600 px-6 py-2 text-lg text-white transition-colors duration-300 focus:outline-none"
               type="button"
               onClick={onClickWantStar}
-              title="我想收藏"
+              title={t('common.starCard.iWantToStar')}
             >
-              我想收藏
+              {t('common.starCard.iWantToStar')}
             </button>
           </div>
         )}
       </>
     )
-  }, [isCounting, onClickWantStar])
+  }, [isCounting, onClickWantStar, t])
 
   return (
     <Transition
+      as="div"
       appear
       show={isShow}
       enter="transition ease-out duration-300 transform"
@@ -103,19 +106,12 @@ export default function StarCard() {
     >
       <div className="fixed right-1 top-4 flex w-150 flex-col items-center justify-evenly rounded-2xl bg-white p-12 shadow-2xl dark:bg-gray-800">
         <div className="absolute right-3 top-3 flex h-5 items-center">
-          {isCounting && (
-            <span className="mx-1.5 dark:text-gray-100">
-              <span className="text-indigo-600">{countdown}s </span>
-              后自动关闭
-            </span>
-          )}
-          <button type="button" onClick={onClickCloseStar} title="关闭提示" aria-label="关闭提示">
+          {isCounting && <span className="mx-1.5 dark:text-gray-100">{t('common.starCard.autoCloseIn', { countdown })}</span>}
+          <button type="button" onClick={onClickCloseStar} title={t('common.starCard.closeTip')} aria-label={t('common.starCard.closeTip')}>
             <IconCircleX className="h-5 w-5 text-indigo-400" />
           </button>
         </div>
-        <span className="pb-4 text-xl text-gray-600 dark:text-gray-50">
-          坚持练习，提高语言能力。将 <span className="text-indigo-600">「Qwerty Learner」</span>保存到收藏夹，永不迷失！
-        </span>
+        <span className="pb-4 text-xl text-gray-600 dark:text-gray-50">{t('common.starCard.encourageMessage')}</span>
         {content}
       </div>
     </Transition>

@@ -11,13 +11,10 @@ export default function InputHandler({ updateInput }: { updateInput: (updateObj:
   const handler = useMemo(() => {
     switch (dictInfo.language) {
       case 'en':
-        return <KeyEventHandler updateInput={updateInput} />
       case 'de':
-        return <KeyEventHandler updateInput={updateInput} />
       case 'romaji':
         return <KeyEventHandler updateInput={updateInput} />
       case 'code':
-        return <TextAreaHandler updateInput={updateInput} />
       default:
         return <TextAreaHandler updateInput={updateInput} />
     }

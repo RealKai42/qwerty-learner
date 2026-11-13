@@ -10,24 +10,32 @@ import WordPanel from './components/WordPanel'
 import { useConfetti } from './hooks/useConfetti'
 import { useWordList } from './hooks/useWordList'
 import { TypingContext, TypingStateActionType, initialState, typingReducer } from './store'
-import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
 import { idDictionaryMap } from '@/resources/dictionary'
-import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom, webdavConfigAtom } from '@/store'
-import { IsDesktop, isLegal } from '@/utils'
-import { useSaveChapterRecord } from '@/utils/db'
+import {
+  currentChapterAtom,
+  currentDictIdAtom,
+  isReviewModeAtom,
+  randomConfigAtom,
+  reviewModeInfoAtom,
+  webdavBackupErrorAtom,
+  webdavConfigAtom,
+} from '@/store'
+import { isLegal } from '@/utils'
+import { db, useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
-import { incrementalBackupToWebDAV } from '@/utils/webdav'
+import { incrementalBackupToWebDAV, isBackupInProgress } from '@/utils/webdav'
+import i18n from 'i18next'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
-  const [state, dispatch] = useImmerReducer(typingReducer, structuredClone(initialState))
-  const [isLoading, setIsLoading] = useState<boolean>(true)
+  const [state, dispatch] = useImmerReducer(typingReducer, initialState)
   const { words } = useWordList()
+  const isLoading = !state.chapterData.words?.length
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const setCurrentChapter = useSetAtom(currentChapterAtom)
@@ -37,17 +45,6 @@ const App: React.FC = () => {
 
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
-
-  useEffect(() => {
-    // 检测用户设备
-    if (!IsDesktop()) {
-      setTimeout(() => {
-        alert(
-          ' Qwerty Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad 等平板电脑设备，可以使用外接键盘使用本软件。',
-        )
-      }, 500)
-    }
-  }, [])
 
   // 在组件挂载和currentDictId改变时，检查当前字典是否存在，如果不存在，则将其重置为默认值
   useEffect(() => {
@@ -75,12 +72,16 @@ const App: React.FC = () => {
   }, [dispatch])
 
   useEffect(() => {
-    state.chapterData.words?.length > 0 ? setIsLoading(false) : setIsLoading(true)
-  }, [state.chapterData.words])
-
-  useEffect(() => {
     if (!state.isTyping) {
       const onKeyDown = (e: KeyboardEvent) => {
+        const target = e.target
+        if (
+          e.defaultPrevented ||
+          e.isComposing ||
+          (target instanceof HTMLElement && (target.closest('input, textarea, select, [role="dialog"]') || target.isContentEditable))
+        ) {
+          return
+        }
         if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
           e.preventDefault()
           dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
@@ -92,62 +93,89 @@ const App: React.FC = () => {
     }
   }, [state.isTyping, isLoading, dispatch])
 
+  const isReviewModeRef = useRef(isReviewMode)
+  isReviewModeRef.current = isReviewMode
+  const reviewModeInfoRef = useRef(reviewModeInfo)
+  reviewModeInfoRef.current = reviewModeInfo
+  const randomConfigRef = useRef(randomConfig)
+  randomConfigRef.current = randomConfig
+
   useEffect(() => {
     if (words !== undefined) {
-      const initialIndex = isReviewMode && reviewModeInfo.reviewRecord?.index ? reviewModeInfo.reviewRecord.index : 0
-
+      const initialIndex =
+        isReviewModeRef.current && reviewModeInfoRef.current.reviewRecord?.index ? reviewModeInfoRef.current.reviewRecord.index : 0
       dispatch({
         type: TypingStateActionType.SETUP_CHAPTER,
-        payload: { words, shouldShuffle: randomConfig.isOpen, initialIndex },
+        payload: { words, shouldShuffle: randomConfigRef.current.isOpen, initialIndex },
       })
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [words])
+  }, [words, dispatch])
 
   const webdavConfig = useAtomValue(webdavConfigAtom)
+
+  // 自动备份（增量）— 带防抖和互斥锁
+  const backupTimerRef = useRef<number | null>(null)
+
+  const stateRef = useRef(state)
+  stateRef.current = state
+  const chapterLogUploaderRef = useRef(chapterLogUploader)
+  chapterLogUploaderRef.current = chapterLogUploader
 
   useEffect(() => {
     // 当用户完成章节后且完成 word Record 数据保存，记录 chapter Record 数据,
     if (state.isFinished && !state.isSavingRecord) {
-      chapterLogUploader()
-      saveChapterRecord(state)
-
-      // WebDAV 自动备份（增量）
-      if (webdavConfig.enabled && webdavConfig.autoBackup) {
-        const doBackup = async () => {
-          const { db } = await import('@/utils/db')
-          const wordRecords = await db.wordRecords.toArray()
-          const chapterRecords = await db.chapterRecords.toArray()
-          const reviewRecords = await db.reviewRecords.toArray()
-          await incrementalBackupToWebDAV({ wordRecords, chapterRecords, reviewRecords }, webdavConfig)
-        }
-        doBackup().catch(console.error)
-      }
+      chapterLogUploaderRef.current()
+      ;(async () => {
+        await saveChapterRecord(stateRef.current)
+      })()
     }
+  }, [state.isFinished, state.isSavingRecord, saveChapterRecord])
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [state.isFinished, state.isSavingRecord])
+  const setWebdavBackupError = useSetAtom(webdavBackupErrorAtom)
+  const webdavConfigRef = useRef(webdavConfig)
+  const timerTimeRef = useRef(state.timerData.time)
 
-  // 暂停时触发 WebDAV 备份
+  // Keep refs in sync so callbacks always read the latest values
+  webdavConfigRef.current = webdavConfig
+  timerTimeRef.current = state.timerData.time
+
+  // 暂停或完成章节时触发自动备份（防抖 3 秒 + 互斥锁）
   useEffect(() => {
-    if (!state.isTyping && state.timerData.time > 0 && !state.isFinished) {
-      if (webdavConfig.enabled && webdavConfig.autoBackup) {
-        const doBackup = async () => {
-          const { db } = await import('@/utils/db')
+    const config = webdavConfigRef.current
+    const shouldBackup = config.enabled && config.autoBackup && config.url
+    const isTrigger = (state.isFinished && !state.isSavingRecord) || (!state.isTyping && timerTimeRef.current > 0 && !state.isFinished)
+
+    if (shouldBackup && isTrigger) {
+      if (backupTimerRef.current) clearTimeout(backupTimerRef.current)
+      backupTimerRef.current = window.setTimeout(async () => {
+        if (isBackupInProgress()) return
+        try {
           const wordRecords = await db.wordRecords.toArray()
           const chapterRecords = await db.chapterRecords.toArray()
           const reviewRecords = await db.reviewRecords.toArray()
-          await incrementalBackupToWebDAV({ wordRecords, chapterRecords, reviewRecords }, webdavConfig)
+          const favoriteRecords = await db.favoriteRecords.toArray()
+          const result = await incrementalBackupToWebDAV(
+            { wordRecords, chapterRecords, reviewRecords, favoriteRecords },
+            webdavConfigRef.current,
+          )
+          if (!result.success) {
+            setWebdavBackupError(result.message)
+          } else {
+            setWebdavBackupError(null)
+          }
+        } catch (e) {
+          setWebdavBackupError(i18n.t('typing.autoBackupFailed'))
         }
-        doBackup().catch(console.error)
-      }
+      }, 3000)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [state.isTyping])
+    return () => {
+      if (backupTimerRef.current) clearTimeout(backupTimerRef.current)
+    }
+  }, [state.isTyping, state.isFinished, state.isSavingRecord, setWebdavBackupError])
 
   useEffect(() => {
     // 启动计时器
-    let intervalId: number
+    let intervalId: number | undefined
     if (state.isTyping) {
       intervalId = window.setInterval(() => {
         dispatch({ type: TypingStateActionType.TICK_TIMER })
@@ -160,7 +188,6 @@ const App: React.FC = () => {
 
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
-      {state.isFinished && <DonateCard />}
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>
@@ -168,7 +195,7 @@ const App: React.FC = () => {
           <PronunciationSwitcher />
           <Switcher />
           <StartButton isLoading={isLoading} />
-          <Tooltip content="跳过该词">
+          <Tooltip content={i18n.t('typing.skipWord')}>
             <button
               className={`${
                 state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'

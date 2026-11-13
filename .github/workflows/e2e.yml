@@ -4,32 +4,37 @@ on:
     branches:
       - master
       - dev/e2e
+  pull_request:
 jobs:
   e2e:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 18
-      - name: Cache node modules
+          bun-version: 1.3.0
+      - name: Cache bun modules
         uses: actions/cache@v3
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-bun-
       - name: Install dependencies
-        run: npm i
+        run: bun install --frozen-lockfile
+      - name: Check code
+        run: |
+          bun run lint
+          bun run test
+          bun run build
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: bunx playwright install --with-deps
       - name: Run all workflows
-        run: npm run test:e2e || echo "status=failure" >> $GITHUB_ENV
-        continue-on-error: true
-      - uses: actions/upload-artifact@v3
+        run: bun run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-      - name: Check workflows status
-        run: if [ "$status" = "failure" ]; then exit 1; fi

@@ -1,4 +1,5 @@
-import { test, expect, Page } from '@playwright/test'
+import { test, expect } from './fixtures'
+import type { Page } from '@playwright/test'
 
 const pressWord = async (page: Page, word: string) => {
   const letters = word.split('')
@@ -18,15 +19,16 @@ test.describe('Practice', () => {
   test.beforeEach(async ({ page }) => {
     test.slow()
     await page.goto('/')
-    await page.getByLabel('关闭提示').click()
+    await page.waitForLoadState('networkidle')
+    await expect(page.getByRole('button', { name: '开始', exact: true })).toBeVisible()
   })
 
   test('Press any key to start', async ({ page }) => {
-    await expect(await page.getByText('按任意键开始').isVisible()).toBeTruthy()
+    await expect(page.getByText('按任意键开始')).toBeVisible()
 
     await page.keyboard.press('Enter')
     await page.waitForTimeout(300)
-    await expect(await page.locator('p').getByText('按任意键开始').isHidden()).toBeTruthy()
+    await expect(page.locator('p').getByText('按任意键开始')).toBeHidden()
   })
 
   test('Enter the correct word', async ({ page }) => {
@@ -34,18 +36,18 @@ test.describe('Practice', () => {
 
     await pressWord(page, 'cancel')
 
-    await page.locator('div', { hasText: '正确率' }).locator('span', { hasText: '100' }).click()
+    await expect(page.getByText('正确率', { exact: true }).locator('..').locator('span').first()).toHaveText('100')
 
     // auto show next word: explosive
-    await expect(await page.locator('span', { hasText: /^e$/ }).first().isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^x$/ }).isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^p$/ }).isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^l$/ }).isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^o$/ }).isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^s$/ }).isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^i$/ }).isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^v$/ }).isVisible()).toBeTruthy()
-    await expect(await page.locator('span', { hasText: /^e$/ }).last().isVisible()).toBeTruthy()
+    await expect(page.locator('span', { hasText: /^e$/ }).first()).toBeVisible()
+    await expect(page.locator('span', { hasText: /^x$/ })).toBeVisible()
+    await expect(page.locator('span', { hasText: /^p$/ })).toBeVisible()
+    await expect(page.locator('span', { hasText: /^l$/ })).toBeVisible()
+    await expect(page.locator('span', { hasText: /^o$/ })).toBeVisible()
+    await expect(page.locator('span', { hasText: /^s$/ })).toBeVisible()
+    await expect(page.locator('span', { hasText: /^i$/ })).toBeVisible()
+    await expect(page.locator('span', { hasText: /^v$/ })).toBeVisible()
+    await expect(page.locator('span', { hasText: /^e$/ }).last()).toBeVisible()
   })
 
   test('Enter the wrong word', async ({ page }) => {
@@ -53,10 +55,10 @@ test.describe('Practice', () => {
 
     await pressWord(page, 'canca')
 
-    await page.locator('div', { hasText: '输入数' }).locator('span', { hasText: /^5$/ }).first().click()
-    await page.locator('div', { hasText: '正确数' }).locator('span', { hasText: /^4$/ }).first().click()
+    await expect(page.getByText('输入数', { exact: true }).locator('..').locator('span').first()).toHaveText('5')
+    await expect(page.getByText('正确数', { exact: true }).locator('..').locator('span').first()).toHaveText('4')
     await page.waitForTimeout(500)
-    await page.locator('div', { hasText: '正确率' }).locator('span', { hasText: /^80$/ }).click()
+    await expect(page.getByText('正确率', { exact: true }).locator('..').locator('span').first()).toHaveText('80')
   })
 
   test('Enter the correct letter, should show green color', async ({ page }) => {
@@ -111,11 +113,11 @@ test.describe('Practice', () => {
 
     await pressWords(page, chapter1)
 
-    await expect(await page.getByText('100%').isVisible()).toBeTruthy
-    await expect(await page.getByText('表现不错！全对了！').isVisible()).toBeTruthy()
+    await expect(page.getByText('100%', { exact: true })).toBeVisible()
+    await expect(page.getByText('表现不错！全对了！')).toBeVisible()
 
     await page.getByRole('button', { name: '下一章节' }).click()
 
-    await expect(await page.getByText('第 2 章').first().isVisible()).toBeTruthy()
+    await expect(page.getByRole('button', { name: '第 2 章', exact: true })).toBeVisible()
   })
 })

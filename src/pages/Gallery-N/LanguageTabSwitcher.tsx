@@ -8,6 +8,7 @@ import kkFlag from '@/assets/flags/kk.png'
 import type { LanguageCategoryType } from '@/typings'
 import { RadioGroup } from '@headlessui/react'
 import { useCallback, useContext } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export type LanguageTabOption = {
   id: LanguageCategoryType
@@ -16,17 +17,18 @@ export type LanguageTabOption = {
 }
 
 const options: LanguageTabOption[] = [
-  { id: 'en', name: '英语', flag: enFlag },
-  { id: 'ja', name: '日语', flag: jpFlag },
-  { id: 'de', name: '德语', flag: deFlag },
-  { id: 'kk', name: '哈萨克语', flag: kkFlag },
-  { id: 'id', name: '印尼语', flag: idFlag },
+  { id: 'en', name: 'gallery.languageEn', flag: enFlag },
+  { id: 'ja', name: 'gallery.languageJa', flag: jpFlag },
+  { id: 'de', name: 'gallery.languageDe', flag: deFlag },
+  { id: 'kk', name: 'gallery.languageKk', flag: kkFlag },
+  { id: 'id', name: 'gallery.languageId', flag: idFlag },
   { id: 'code', name: 'Code', flag: codeFlag },
 ]
 
 export function LanguageTabSwitcher() {
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   const { state, setState } = useContext(GalleryContext)!
+  const { t } = useTranslation()
 
   const onChangeTab = useCallback(
     (tab: string) => {
@@ -45,7 +47,9 @@ export function LanguageTabSwitcher() {
             {({ checked }) => (
               <div className={`flex items-center border-b-2 px-2 pb-1 ${checked ? 'border-indigo-500' : 'border-transparent'}`}>
                 <img src={option.flag} className="mr-1.5 h-7 w-7" />
-                <p className={`text-lg font-medium text-gray-700 dark:text-gray-200`}>{option.name}</p>
+                <p className={`text-lg font-medium text-gray-700 dark:text-gray-200`}>
+                  {option.id === 'code' ? option.name : t(option.name)}
+                </p>
               </div>
             )}
           </RadioGroup.Option>

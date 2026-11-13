@@ -3,9 +3,11 @@ import type { Dictionary } from '@/typings'
 import { useAtom, useSetAtom } from 'jotai'
 import type React from 'react'
 import { useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconCheckCircle from '~icons/heroicons/check-circle-solid'
 
 const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
+  const { t } = useTranslation()
   const buttonRef = useRef<HTMLButtonElement>(null)
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
   const setCurrentChapter = useSetAtom(currentChapterAtom)
@@ -22,17 +24,17 @@ const DictionaryCard: React.FC<DictionaryCardProps> = ({ dictionary }) => {
   return (
     <button
       ref={buttonRef}
-      className="relative w-48 overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 dark:bg-opacity-10 "
+      className="relative w-48 overflow-hidden rounded-md border border-gray-300 bg-gray-50 p-4 text-left shadow-lg focus:outline-none dark:border-gray-500 dark:bg-gray-700 "
       type="button"
       onClick={() => {
         setCurrentDictId(dictionary.id)
         setCurrentChapter(0)
       }}
-      title="选择词典"
+      title={t('gallery.selectDict')}
     >
-      <p className="mb-1 text-xl text-gray-800 dark:text-white dark:text-opacity-80">{dictionary.name}</p>
-      <p className="mb-1 text-xs text-gray-900 dark:text-white dark:text-opacity-90">{dictionary.description}</p>
-      <p className="text-sm font-bold text-gray-600 dark:text-white dark:text-opacity-60">{dictionary.length} 词</p>
+      <p className="mb-1 text-xl text-gray-800 dark:text-white/80">{dictionary.name}</p>
+      <p className="mb-1 text-xs text-gray-900 dark:text-white/90">{dictionary.description}</p>
+      <p className="text-sm font-bold text-gray-600 dark:text-white/60">{t('gallery.wordCountShort', { count: dictionary.length })}</p>
       {currentDictId === dictionary.id ? (
         <IconCheckCircle className="absolute -bottom-4 -right-4 h-18 w-18 text-6xl text-green-500 opacity-60 dark:text-green-300" />
       ) : null}

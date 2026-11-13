@@ -4,11 +4,13 @@ import { Popover, Transition } from '@headlessui/react'
 import * as RadioGroup from '@radix-ui/react-radio-group'
 import { useAtom } from 'jotai'
 import { Fragment, useCallback, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import IconRepeat from '~icons/tabler/repeat'
 import IconRepeatOff from '~icons/tabler/repeat-off'
 
 const loopOptions: LoopWordTimesOption[] = [1, 3, 5, 8, Number.MAX_SAFE_INTEGER]
 export default function LoopWordSwitcher() {
+  const { t } = useTranslation()
   const [{ times: loopTimes }, setLoopWordConfig] = useAtom(loopWordConfigAtom)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -34,7 +36,7 @@ export default function LoopWordSwitcher() {
             setIsOpen(!isOpen)
             e.currentTarget.blur()
           }}
-          aria-label="选择单词的循环次数"
+          aria-label={t('typing.loopWord.selectLoopTimes')}
         >
           <div className="relative">
             {loopTimes === 1 ? (
@@ -61,12 +63,14 @@ export default function LoopWordSwitcher() {
           <Popover.Panel className="absolute left-1/2 z-10 mt-2 flex max-w-max -translate-x-1/2 px-4 ">
             <div className="shadow-upper box-border flex w-60 select-none flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 drop-shadow dark:bg-gray-800">
               <div className="flex w-full  flex-col  items-start gap-2 py-0">
-                <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white dark:text-opacity-60">选择单词的循环次数</span>
+                <span className="text-sm font-normal leading-5 text-gray-900 dark:text-white/60">
+                  {t('typing.loopWord.selectLoopTimes')}
+                </span>
                 <div className="flex w-full flex-row items-center justify-between">
                   <RadioGroup.Root
                     className="flex w-full flex-col gap-2.5"
                     defaultValue={loopTimes.toString()}
-                    aria-label="选择单词的循环次数"
+                    aria-label={t('typing.loopWord.selectLoopTimes')}
                   >
                     {loopOptions.map((value, index) => (
                       <div className="flex w-full items-center" key={value}>
@@ -79,11 +83,11 @@ export default function LoopWordSwitcher() {
                           <RadioGroup.Indicator className="relative flex h-full w-full items-center justify-center after:block after:h-[11px] after:w-[11px] after:rounded-[50%] after:bg-indigo-600 after:content-['']" />
                         </RadioGroup.Item>
                         <label
-                          className="flex-1 cursor-pointer pl-[15px] text-[15px] leading-none dark:text-white dark:text-opacity-60"
+                          className="flex-1 cursor-pointer pl-[15px] text-[15px] leading-none dark:text-white/60"
                           htmlFor={`r${index}`}
                           onClick={() => onChangeLoopTimes(value)}
                         >
-                          {value === Number.MAX_SAFE_INTEGER ? '无限' : value}
+                          {value === Number.MAX_SAFE_INTEGER ? t('typing.loopWord.infinite') : value}
                         </label>
                       </div>
                     ))}

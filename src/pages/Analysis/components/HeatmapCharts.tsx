@@ -1,9 +1,11 @@
 import { isOpenDarkModeAtom } from '@/store'
 import { useAtom } from 'jotai'
 import type { FC } from 'react'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import type { Activity } from 'react-activity-calendar'
-import ActivityCalendar from 'react-activity-calendar'
+import { ActivityCalendar } from 'react-activity-calendar'
+import dayjs from 'dayjs'
+import { useTranslation } from 'react-i18next'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css'
 
@@ -12,22 +14,45 @@ interface HeatmapChartsProps {
   data: Activity[]
 }
 
+const WEEKS_PER_YEAR = 53
+
 const HeatmapCharts: FC<HeatmapChartsProps> = ({ data, title }) => {
+  // react-activity-calendar v3 throws on empty data; fall back to a single empty day
+  const safeData = data.length > 0 ? data : [{ date: dayjs().format('YYYY-MM-DD'), count: 0, level: 0 }]
   const [isOpenDarkMode] = useAtom(isOpenDarkModeAtom)
+  const { t } = useTranslation()
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [blockSize, setBlockSize] = useState(22)
+  const [narrow, setNarrow] = useState(false)
+
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const update = () => {
+      const width = el.clientWidth
+      // 160px horizontal padding + ~60px weekday/month labels
+      setBlockSize(Math.max(6, Math.min(22, Math.floor((width - 220) / WEEKS_PER_YEAR))))
+      setNarrow(width < 640)
+    }
+    update()
+    const observer = new ResizeObserver(update)
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="text-center text-xl font-bold text-gray-600	dark:text-white">{title}</div>
+    <div ref={containerRef} className="flex flex-col items-center justify-center">
+      <div className="text-center text-lg font-semibold text-gray-700 dark:text-gray-200 mb-4">{title}</div>
       <ActivityCalendar
-        fontSize={20}
-        blockSize={22}
+        fontSize={narrow ? 12 : 20}
+        blockSize={blockSize}
         blockRadius={7}
         style={{
-          padding: '40px 60px 20px 100px',
+          padding: narrow ? '20px 10px 10px 10px' : '40px 60px 20px 100px',
           color: isOpenDarkMode ? '#fff' : '#000',
         }}
         colorScheme={isOpenDarkMode ? 'dark' : 'light'}
-        data={data}
+        data={safeData}
         theme={{
           light: ['#f0f0f0', '#6366f1'],
           dark: ['hsl(0, 0%, 22%)', '#818cf8'],
@@ -35,17 +60,17 @@ const HeatmapCharts: FC<HeatmapChartsProps> = ({ data, title }) => {
         renderBlock={(block, activity) =>
           React.cloneElement(block, {
             'data-tooltip-id': 'react-tooltip',
-            'data-tooltip-html': `${activity.date} 练习 ${activity.count} 次`,
-          })
+            'data-tooltip-html': t('analysis.heatmapTooltip', { date: activity.date, count: activity.count }),
+          } as React.SVGProps<SVGRectElement>)
         }
         showWeekdayLabels={true}
         labels={{
-          months: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
-          weekdays: ['日', '一', '二', '三', '四', '五', '六'],
-          totalCount: '过去一年总计 {{count}} 次',
+          months: t('analysis.months', { returnObjects: true }) as string[],
+          weekdays: t('analysis.weekdays', { returnObjects: true }) as string[],
+          totalCount: t('analysis.yearTotal', { count: 0 }),
           legend: {
-            less: '少',
-            more: '多',
+            less: t('analysis.legendLess'),
+            more: t('analysis.legendMore'),
           },
         }}
       />

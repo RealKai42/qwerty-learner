@@ -4,7 +4,11 @@ import type { LetterMistakes } from '@/utils/db/record'
 import '@/utils/db/review-record'
 import { mergeLetterMistake } from '@/utils/db/utils'
 import shuffle from '@/utils/shuffle'
-import { createContext } from 'react'
+import { createContext, useContext } from 'react'
+
+function countWords(name: string): number {
+  return name.trim().split(/\s+/).length
+}
 
 export const initialState: TypingState = {
   chapterData: {
@@ -92,7 +96,11 @@ type Dispatch = (action: TypingStateAction) => void
 export const typingReducer = (state: TypingState, action: TypingStateAction) => {
   switch (action.type) {
     case TypingStateActionType.SETUP_CHAPTER: {
-      const newState = structuredClone(initialState)
+      const newState: TypingState = {
+        ...initialState,
+        chapterData: { ...initialState.chapterData, words: [], wordRecordIds: [], userInputLogs: [] },
+        timerData: { ...initialState.timerData },
+      }
       const words = action.payload.shouldShuffle ? shuffle(action.payload.words) : action.payload.words
       let initialIndex = action.payload.initialIndex ?? 0
       if (initialIndex >= words.length) {
@@ -100,7 +108,7 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       }
       newState.chapterData.index = initialIndex
       newState.chapterData.words = words
-      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...initialUserInputLog, index }))
 
       return newState
     }
@@ -131,8 +139,9 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       break
     }
     case TypingStateActionType.NEXT_WORD: {
+      const completedWord = state.chapterData.words[state.chapterData.index]
       state.chapterData.index += 1
-      state.chapterData.wordCount += 1
+      state.chapterData.wordCount += completedWord ? countWords(completedWord.name) : 1
       state.isShowSkip = false
 
       if (action?.payload?.updateReviewRecord) {
@@ -140,18 +149,24 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       }
       break
     }
-    case TypingStateActionType.LOOP_CURRENT_WORD:
+    case TypingStateActionType.LOOP_CURRENT_WORD: {
+      const currentWord = state.chapterData.words[state.chapterData.index]
       state.isShowSkip = false
-      state.chapterData.wordCount += 1
+      state.chapterData.wordCount += currentWord ? countWords(currentWord.name) : 1
       break
-    case TypingStateActionType.FINISH_CHAPTER:
-      state.chapterData.wordCount += 1
+    }
+    case TypingStateActionType.FINISH_CHAPTER: {
+      const lastWord = state.chapterData.words[state.chapterData.index]
+      state.chapterData.wordCount += lastWord ? countWords(lastWord.name) : 1
       state.isTyping = false
       state.isFinished = true
       state.isShowSkip = false
       break
+    }
     case TypingStateActionType.SKIP_WORD: {
+      const skippedWord = state.chapterData.words[state.chapterData.index]
       const newIndex = state.chapterData.index + 1
+      state.chapterData.wordCount += skippedWord ? countWords(skippedWord.name) : 1
       if (newIndex >= state.chapterData.words.length) {
         state.isTyping = false
         state.isFinished = true
@@ -171,16 +186,26 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       break
     }
     case TypingStateActionType.REPEAT_CHAPTER: {
-      const newState = structuredClone(initialState)
-      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      const newState: TypingState = {
+        ...initialState,
+        chapterData: { ...initialState.chapterData, words: [], wordRecordIds: [], userInputLogs: [] },
+        timerData: { ...initialState.timerData },
+      }
+      const words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
+      newState.chapterData.words = words
+      newState.chapterData.userInputLogs = words.map((_, index) => ({ ...initialUserInputLog, index }))
       newState.isTyping = true
-      newState.chapterData.words = action.shouldShuffle ? shuffle(state.chapterData.words) : state.chapterData.words
       newState.isTransVisible = state.isTransVisible
       return newState
     }
     case TypingStateActionType.NEXT_CHAPTER: {
-      const newState = structuredClone(initialState)
-      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      const newState: TypingState = {
+        ...initialState,
+        chapterData: { ...initialState.chapterData, words: [], wordRecordIds: [], userInputLogs: [] },
+        timerData: { ...initialState.timerData },
+      }
+      newState.chapterData.words = state.chapterData.words
+      newState.chapterData.userInputLogs = state.chapterData.words.map((_, index) => ({ ...initialUserInputLog, index }))
       newState.isTyping = true
       newState.isTransVisible = state.isTransVisible
       return newState
@@ -224,3 +249,11 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
 }
 
 export const TypingContext = createContext<{ state: TypingState; dispatch: Dispatch } | null>(null)
+
+export function useTypingContext() {
+  const value = useContext(TypingContext)
+  if (!value) {
+    throw new Error('useTypingContext must be used within a <TypingContext.Provider>')
+  }
+  return value
+}

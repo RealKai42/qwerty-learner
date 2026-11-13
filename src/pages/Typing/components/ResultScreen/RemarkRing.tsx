@@ -1,5 +1,5 @@
 import clamp from '@/utils/clamp'
-import classNames from 'classnames'
+import { cn } from '@/utils/ui'
 import { useMemo } from 'react'
 
 export type RemarkRingProps = {
@@ -34,7 +34,7 @@ export default function RemarkRing({ remark, caption, percentage = null, size = 
   }, [percentage, size])
   return (
     <div
-      className={classNames(
+      className={cn(
         'relative flex flex-shrink-0 flex-col items-center justify-center rounded-full border-8 border-indigo-200 bg-transparent dark:border-gray-700',
       )}
       style={{

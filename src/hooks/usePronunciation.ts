@@ -38,9 +38,24 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
   const [isPlaying, setIsPlaying] = useState(false)
   const howlRef = useRef<Howl | null>(null)
   const fallbackRef = useRef(false) // true if using TTS fallback
+  const playRequestedRef = useRef(false) // true if play() was called before audio loaded
+
+  const speakTTS = useCallback(() => {
+    const synth = window.speechSynthesis
+    if (!synth) return
+    const utterance = new SpeechSynthesisUtterance(word)
+    utterance.lang = 'en-US'
+    utterance.rate = pronunciationConfig.rate
+    utterance.volume = pronunciationConfig.volume
+    utterance.onstart = () => setIsPlaying(true)
+    utterance.onend = () => setIsPlaying(false)
+    utterance.onerror = () => setIsPlaying(false)
+    synth.speak(utterance)
+  }, [word, pronunciationConfig.rate, pronunciationConfig.volume])
 
   useEffect(() => {
     fallbackRef.current = false
+    playRequestedRef.current = false
     const src = generateWordSoundSrc(word, pronunciationConfig.type)
     if (!src) {
       howlRef.current = null
@@ -63,27 +78,25 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
     unListens.push(addHowlListener(howl, 'end', () => setIsPlaying(false)))
     unListens.push(addHowlListener(howl, 'pause', () => setIsPlaying(false)))
 
-    // Fallback to browser TTS when Youdao fails (loaderror or playerror)
-    const fallbackToTTS = () => {
-      fallbackRef.current = true
-      howlRef.current = null
-      const synth = window.speechSynthesis
-      if (!synth) {
-        setIsPlaying(false)
-        return
-      }
-      const utterance = new SpeechSynthesisUtterance(word)
-      utterance.lang = 'en-US'
-      utterance.rate = pronunciationConfig.rate
-      utterance.volume = pronunciationConfig.volume
-      utterance.onstart = () => setIsPlaying(true)
-      utterance.onend = () => setIsPlaying(false)
-      utterance.onerror = () => setIsPlaying(false)
-      synth.speak(utterance)
-    }
+    // loaderror: if play() was already called, immediately try TTS; otherwise just mark fallback
+    unListens.push(
+      addHowlListener(howl, 'loaderror', () => {
+        fallbackRef.current = true
+        howlRef.current = null
+        if (playRequestedRef.current) {
+          speakTTS()
+        }
+      }),
+    )
 
-    unListens.push(addHowlListener(howl, 'loaderror', fallbackToTTS))
-    unListens.push(addHowlListener(howl, 'playerror', fallbackToTTS))
+    // playerror: playback failed after user initiated, immediately fallback to TTS
+    unListens.push(
+      addHowlListener(howl, 'playerror', () => {
+        fallbackRef.current = true
+        howlRef.current = null
+        speakTTS()
+      }),
+    )
 
     return () => {
       setIsPlaying(false)
@@ -91,23 +104,16 @@ export default function usePronunciationSound(word: string, isLoop?: boolean) {
       howl.unload()
       howlRef.current = null
     }
-  }, [word, pronunciationConfig.type, loop, pronunciationConfig.volume, pronunciationConfig.rate])
+  }, [word, pronunciationConfig.type, loop, pronunciationConfig.volume, pronunciationConfig.rate, speakTTS])
 
   const play = useCallback(() => {
     if (fallbackRef.current) {
-      // Already using TTS fallback, re-speak
-      const synth = window.speechSynthesis
-      const utterance = new SpeechSynthesisUtterance(word)
-      utterance.lang = 'en-US'
-      utterance.rate = pronunciationConfig.rate
-      utterance.volume = pronunciationConfig.volume
-      utterance.onstart = () => setIsPlaying(true)
-      utterance.onend = () => setIsPlaying(false)
-      synth.speak(utterance)
+      speakTTS()
     } else {
+      playRequestedRef.current = true
       howlRef.current?.play()
     }
-  }, [word, pronunciationConfig.rate, pronunciationConfig.volume])
+  }, [speakTTS])
 
   const stop = useCallback(() => {
     if (fallbackRef.current) {

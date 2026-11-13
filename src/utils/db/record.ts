@@ -107,7 +107,8 @@ export class ChapterRecord implements IChapterRecord {
   }
 
   get inputAccuracy() {
-    return Math.round((this.correctCount / this.correctCount + this.wrongCount) * 100)
+    const total = this.correctCount + this.wrongCount
+    return total === 0 ? 0 : Math.round((this.correctCount / total) * 100)
   }
 
   get wordAccuracy() {
@@ -128,6 +129,21 @@ export interface IReviewRecord {
   words: Word[]
 }
 
+export interface IFavoriteRecord {
+  id?: number
+  // 收藏的单词原文（与词库 JSON 中 Word.name 一致）
+  word: string
+  // 与 IWordRecord.dict 语义一致, 为 dictKey
+  dict: string
+  // 收藏时所在章节; 复习/错题等场景为 -1
+  chapter: number | null
+  timeStamp: number
+  // Milliseconds; legacy favorites fall back to timeStamp * 1000 when merging.
+  updatedAt?: number
+  // Keep removals so another device's older backup cannot restore the favorite.
+  deleted?: boolean
+}
+
 export class ReviewRecord implements IReviewRecord {
   id?: number
   dict: string
@@ -142,44 +158,5 @@ export class ReviewRecord implements IReviewRecord {
     this.createTime = getUTCUnixTimestamp()
     this.words = words
     this.isFinished = false
-  }
-}
-
-export interface IRevisionDictRecord {
-  dict: string
-  revisionIndex: number
-  createdTime: number
-}
-
-export class RevisionDictRecord implements IRevisionDictRecord {
-  dict: string
-  revisionIndex: number
-  createdTime: number
-
-  constructor(dict: string, revisionIndex: number, createdTime: number) {
-    this.dict = dict
-    this.revisionIndex = revisionIndex
-    this.createdTime = createdTime
-  }
-}
-
-export interface IRevisionWordRecord {
-  word: string
-  timeStamp: number
-  dict: string
-  errorCount: number
-}
-
-export class RevisionWordRecord implements IRevisionWordRecord {
-  word: string
-  timeStamp: number
-  dict: string
-  errorCount: number
-
-  constructor(word: string, dict: string, errorCount: number) {
-    this.word = word
-    this.timeStamp = getUTCUnixTimestamp()
-    this.dict = dict
-    this.errorCount = errorCount
   }
 }

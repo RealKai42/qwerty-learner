@@ -2,18 +2,12 @@ import atomForConfig from './atomForConfig'
 import { reviewInfoAtom } from './reviewInfoAtom'
 import { DISMISS_START_CARD_DATE_KEY, defaultFontSizeConfig } from '@/constants'
 import { idDictionaryMap } from '@/resources/dictionary'
+import { foreignFontResources, translateFontResources } from '@/resources/fontResource'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
-import type {
-  Dictionary,
-  InfoPanelState,
-  LoopWordTimesOption,
-  PhoneticType,
-  PronunciationType,
-  WordDictationOpenBy,
-  WordDictationType,
-} from '@/typings'
+import type { Dictionary, LoopWordTimesOption, PhoneticType, PronunciationType, WordDictationOpenBy, WordDictationType } from '@/typings'
 import { createEncryptedStorage } from '@/utils/crypto'
 import type { ReviewRecord } from '@/utils/db/record'
+import { IS_MAC_OS } from '@/utils/platform'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
@@ -65,6 +59,14 @@ export const fontSizeConfigAtom = atomForConfig('fontsize', defaultFontSizeConfi
 
 export const foreignFontAtom = atom((get) => get(fontSizeConfigAtom).foreignFont)
 
+export const foreignFontConfigAtom = atomForConfig('foreignFontConfig', {
+  resource: foreignFontResources[0],
+})
+
+export const translateFontConfigAtom = atomForConfig('translateFontConfig', {
+  resource: translateFontResources[0],
+})
+
 export const pronunciationIsOpenAtom = atom((get) => get(pronunciationConfigAtom).isOpen)
 
 export const pronunciationIsTransReadAtom = atom((get) => get(pronunciationConfigAtom).isTransRead)
@@ -75,7 +77,18 @@ export const randomConfigAtom = atomForConfig('randomConfig', {
 
 export const isShowPrevAndNextWordAtom = atomWithStorage('isShowPrevAndNextWord', true)
 
+export const typingShortcutConfigAtom = atomForConfig('typingShortcutConfig', {
+  prevWord: 'arrowleft',
+  nextWord: 'arrowright',
+  favoriteCurrent: IS_MAC_OS ? 'meta+shift+l' : 'ctrl+shift+l',
+  favoritePrev: IS_MAC_OS ? 'meta+shift+arrowleft' : 'ctrl+shift+arrowleft',
+  favoriteNext: IS_MAC_OS ? 'meta+shift+arrowright' : 'ctrl+shift+arrowright',
+  pronunciation: IS_MAC_OS ? 'meta+j' : 'ctrl+j',
+})
+
 export const isIgnoreCaseAtom = atomWithStorage('isIgnoreCase', true)
+
+export const isSkipParenthesesAtom = atomWithStorage('isSkipParentheses', false)
 
 export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', true)
 
@@ -92,18 +105,29 @@ export const phoneticConfigAtom = atomForConfig('phoneticConfig', {
   type: 'us' as PhoneticType,
 })
 
-export const isOpenDarkModeAtom = atomWithStorage('isOpenDarkModeAtom', window.matchMedia('(prefers-color-scheme: dark)').matches)
+export const darkModeFollowSystemAtom = atomWithStorage('darkModeFollowSystem', true)
+
+export const systemDarkModeAtom = atom(window.matchMedia('(prefers-color-scheme: dark)').matches)
+
+export const isOpenDarkModeAtom = atom(
+  (get) => {
+    if (get(darkModeFollowSystemAtom)) {
+      return get(systemDarkModeAtom)
+    }
+    return get(isOpenDarkModeManualAtom)
+  },
+  (get, set, newValue: boolean | ((prev: boolean) => boolean)) => {
+    const resolved = typeof newValue === 'function' ? newValue(get(isOpenDarkModeAtom)) : newValue
+    set(darkModeFollowSystemAtom, false)
+    set(isOpenDarkModeManualAtom, resolved)
+  },
+)
+
+const isOpenDarkModeManualAtom = atomWithStorage('isOpenDarkModeAtom', window.matchMedia('(prefers-color-scheme: dark)').matches)
 
 export const isShowSkipAtom = atom(false)
 
 export const isInDevModeAtom = atom(false)
-
-export const infoPanelStateAtom = atom<InfoPanelState>({
-  donate: false,
-  vsc: false,
-  community: false,
-  redBook: false,
-})
 
 export const wordDictationConfigAtom = atomForConfig('wordDictationConfig', {
   isOpen: false,
@@ -112,9 +136,6 @@ export const wordDictationConfigAtom = atomForConfig('wordDictationConfig', {
 })
 
 export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_START_CARD_DATE_KEY, null)
-
-// Enhanced version promotion popup state
-export const hasSeenEnhancedPromotionAtom = atomWithStorage('hasSeenEnhancedPromotion', false)
 
 // WebDAV config persisted to localStorage
 const webdavPersistedAtom = atomForConfig('webdavConfig', {
@@ -143,6 +164,11 @@ export const webdavConfigAtom = atom(
     set(webdavCredentialsAtom, { username, password })
   },
 )
+
+/** Tracks the last auto-backup error message (null = no error) */
+export const webdavBackupErrorAtom = atom<string | null>(null)
+
+export const languageAtom = atomWithStorage('i18nextLng', 'zh')
 
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())

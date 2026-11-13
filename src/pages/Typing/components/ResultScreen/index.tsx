@@ -1,42 +1,33 @@
-import { TypingContext, TypingStateActionType } from '../../store'
+import { TypingStateActionType, useTypingContext } from '../../store'
 import ShareButton from '../ShareButton'
-import { AuthorButton } from './AuthorButton'
 import ConclusionBar from './ConclusionBar'
 import RemarkRing from './RemarkRing'
 import WordChip from './WordChip'
-import styles from './index.module.css'
 import Tooltip from '@/components/Tooltip'
 import {
   currentChapterAtom,
   currentDictInfoAtom,
-  infoPanelStateAtom,
   isReviewModeAtom,
   randomConfigAtom,
   reviewModeInfoAtom,
   wordDictationConfigAtom,
 } from '@/store'
-import type { InfoPanelType } from '@/typings'
-import { recordOpenInfoPanelAction } from '@/utils'
 import { Transition } from '@headlessui/react'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useContext, useEffect, useMemo } from 'react'
+import { useCallback, useEffect, useMemo } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import IexportWords from '~icons/icon-park-outline/excel'
-import IconCoffee from '~icons/mdi/coffee'
-import IconXiaoHongShu from '~icons/my-icons/xiaohongshu'
-import IconGithub from '~icons/simple-icons/github'
-import IconWechat from '~icons/simple-icons/wechat'
 import IconX from '~icons/tabler/x'
 
 const ResultScreen = () => {
-  // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
-  const { state, dispatch } = useContext(TypingContext)!
+  const { t } = useTranslation()
+  const { state, dispatch } = useTypingContext()
 
   const setWordDictationConfig = useSetAtom(wordDictationConfigAtom)
   const currentDictInfo = useAtomValue(currentDictInfoAtom)
   const [currentChapter, setCurrentChapter] = useAtom(currentChapterAtom)
-  const setInfoPanelState = useSetAtom(infoPanelStateAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const navigate = useNavigate()
 
@@ -69,10 +60,10 @@ const ResultScreen = () => {
         const ws = utils.json_to_sheet(exportData)
         const wb = utils.book_new()
         utils.book_append_sheet(wb, ws, 'Data')
-        writeFileXLSX(wb, `${currentDictInfo.name}第${currentChapter + 1}章.xlsx`)
+        writeFileXLSX(wb, `${currentDictInfo.name}${t('typing.chapterFormat', { chapter: currentChapter + 1 })}.xlsx`)
       })
       .catch(() => {
-        console.log('写入 xlsx 模块导入失败')
+        alert(t('typing.result.exportFailed'))
       })
   }, [currentChapter, currentDictInfo.name, state.chapterData])
 
@@ -88,10 +79,8 @@ const ResultScreen = () => {
   }, [currentChapter, currentDictInfo])
 
   const correctRate = useMemo(() => {
-    const chapterLength = state.chapterData.words.length
-    const correctCount = chapterLength - wrongWords.length
-    return Math.floor((correctCount / chapterLength) * 100)
-  }, [state.chapterData.words.length, wrongWords.length])
+    return state.timerData.accuracy
+  }, [state.timerData.accuracy])
 
   const mistakeLevel = useMemo(() => {
     if (correctRate >= 85) {
@@ -112,7 +101,7 @@ const ResultScreen = () => {
     return `${minuteString}:${secondString}`
   }, [state.timerData.time])
 
-  const repeatButtonHandler = useCallback(async () => {
+  const repeatButtonHandler = useCallback(() => {
     if (isReviewMode) {
       return
     }
@@ -128,7 +117,7 @@ const ResultScreen = () => {
     dispatch({ type: TypingStateActionType.REPEAT_CHAPTER, shouldShuffle: randomConfig.isOpen })
   }, [isReviewMode, setWordDictationConfig, dispatch, randomConfig.isOpen])
 
-  const dictationButtonHandler = useCallback(async () => {
+  const dictationButtonHandler = useCallback(() => {
     if (isReviewMode) {
       return
     }
@@ -177,6 +166,7 @@ const ResultScreen = () => {
       nextButtonHandler()
     },
     { preventDefault: true },
+    [nextButtonHandler],
   )
 
   useHotkeys(
@@ -187,6 +177,7 @@ const ResultScreen = () => {
       repeatButtonHandler()
     },
     { preventDefault: true },
+    [repeatButtonHandler],
   )
 
   useHotkeys(
@@ -195,14 +186,7 @@ const ResultScreen = () => {
       dictationButtonHandler()
     },
     { preventDefault: true },
-  )
-
-  const handleOpenInfoPanel = useCallback(
-    (modalType: InfoPanelType) => {
-      recordOpenInfoPanelAction(modalType, 'resultScreen')
-      setInfoPanelState((state) => ({ ...state, [modalType]: true }))
-    },
-    [setInfoPanelState],
+    [dictationButtonHandler],
   )
 
   return (
@@ -220,15 +204,19 @@ const ResultScreen = () => {
         <div className="flex h-screen items-center justify-center">
           <div className="my-card fixed flex w-[90vw] max-w-6xl flex-col overflow-hidden rounded-3xl bg-white pb-14 pl-10 pr-5 pt-10 shadow-lg dark:bg-gray-800 md:w-4/5 lg:w-3/5">
             <div className="text-center font-sans text-xl font-normal text-gray-900 dark:text-gray-400 md:text-2xl">
-              {`${currentDictInfo.name} ${isReviewMode ? '错题复习' : '第' + (currentChapter + 1) + '章'}`}
+              {`${currentDictInfo.name} ${isReviewMode ? t('typing.reviewMode') : t('typing.chapterFormat', { chapter: currentChapter + 1 })}`}
             </div>
             <button className="absolute right-7 top-5" onClick={exitButtonHandler}>
               <IconX className="text-gray-400" />
             </button>
             <div className="mt-10 flex flex-row gap-2 overflow-hidden">
               <div className="flex flex-shrink-0 flex-grow-0 flex-col gap-3 px-4 sm:px-1 md:px-2 lg:px-4">
-                <RemarkRing remark={`${state.timerData.accuracy}%`} caption="正确率" percentage={state.timerData.accuracy} />
-                <RemarkRing remark={timeString} caption="章节耗时" />
+                <RemarkRing
+                  remark={`${state.timerData.accuracy}%`}
+                  caption={t('typing.result.accuracy')}
+                  percentage={state.timerData.accuracy}
+                />
+                <RemarkRing remark={timeString} caption={t('typing.result.chapterTime')} />
                 <RemarkRing remark={state.timerData.wpm + ''} caption="WPM" />
               </div>
               <div className="z-10 ml-6 flex-1 overflow-visible rounded-xl bg-indigo-50 dark:bg-gray-700">
@@ -242,85 +230,48 @@ const ResultScreen = () => {
                 </div>
               </div>
               <div className="ml-2 flex flex-col items-center justify-end gap-3 text-xl">
-                <AuthorButton />
                 {!isReviewMode && (
                   <>
                     <ShareButton />
                     <IexportWords fontSize={18} className="cursor-pointer text-gray-500" onClick={exportWords}></IexportWords>
                   </>
                 )}
-                <IconXiaoHongShu
-                  fontSize={15}
-                  className="cursor-pointer text-gray-500 hover:text-red-500 focus:outline-none"
-                  onClick={(e) => {
-                    handleOpenInfoPanel('redBook')
-                    e.currentTarget.blur()
-                  }}
-                />
-
-                <button
-                  onClick={(e) => {
-                    handleOpenInfoPanel('donate')
-                    e.currentTarget.blur()
-                  }}
-                  className="cursor-pointer"
-                  type="button"
-                  title="捐赠我们的项目"
-                >
-                  <IconCoffee fontSize={17} className={`text-gray-500 hover:text-amber-500  focus:outline-none ${styles.imgShake}`} />
-                </button>
-
-                <button
-                  onClick={(e) => {
-                    handleOpenInfoPanel('community')
-                    e.currentTarget.blur()
-                  }}
-                  className="cursor-pointer text-gray-500 dark:text-gray-400"
-                  type="button"
-                  title="加入我们的社区"
-                >
-                  <IconWechat fontSize={16} className="text-gray-500 hover:text-green-500 focus:outline-none" />
-                </button>
-
-                <a href="https://github.com/Kaiyiwing/qwerty-learner" target="_blank" rel="noreferrer" className="leading-[0px]">
-                  <IconGithub fontSize={16} className="text-gray-500 hover:text-green-800 focus:outline-none" />
-                </a>
               </div>
             </div>
             <div className="mt-10 flex w-full justify-center gap-5 px-5 text-xl">
               {!isReviewMode && (
                 <>
-                  <Tooltip content="快捷键：shift + enter">
+                  <Tooltip content={t('typing.result.dictationShortcut')}>
                     <button
                       className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
                       type="button"
                       onClick={dictationButtonHandler}
-                      title="默写本章节"
+                      title={t('typing.result.dictationChapter')}
                     >
-                      默写本章节
+                      {t('typing.result.dictationChapter')}
                     </button>
                   </Tooltip>
-                  <Tooltip content="快捷键：space">
+                  <Tooltip content={t('typing.result.repeatShortcut')}>
                     <button
                       className="my-btn-primary h-12 border-2 border-solid border-gray-300 bg-white text-base text-gray-700 dark:border-gray-700 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-700"
                       type="button"
                       onClick={repeatButtonHandler}
-                      title="重复本章节"
+                      title={t('typing.result.repeatChapter')}
                     >
-                      重复本章节
+                      {t('typing.result.repeatChapter')}
                     </button>
                   </Tooltip>
                 </>
               )}
               {!isLastChapter && !isReviewMode && (
-                <Tooltip content="快捷键：enter">
+                <Tooltip content={t('typing.result.nextShortcut')}>
                   <button
                     className={`{ isLastChapter ? 'cursor-not-allowed opacity-50' : ''} my-btn-primary h-12 text-base font-bold `}
                     type="button"
                     onClick={nextButtonHandler}
-                    title="下一章节"
+                    title={t('typing.result.nextChapter')}
                   >
-                    下一章节
+                    {t('typing.result.nextChapter')}
                   </button>
                 </Tooltip>
               )}
@@ -330,9 +281,9 @@ const ResultScreen = () => {
                   className="my-btn-primary h-12 text-base font-bold"
                   type="button"
                   onClick={onNavigateToGallery}
-                  title="练习其他章节"
+                  title={t('typing.result.practiceOtherChapter')}
                 >
-                  练习其他章节
+                  {t('typing.result.practiceOtherChapter')}
                 </button>
               )}
             </div>

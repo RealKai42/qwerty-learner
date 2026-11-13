@@ -6,9 +6,7 @@
 
 ### 0.1 如果你没有任何编程基础 🚫💻
 
-我们推荐你加入 qwerty learner 社区群，在群中反映你的需求，我们的开发者会帮助你导入词典。
-
-![groupQRcode](../public/weChat-group.jpg)
+我们推荐你以 "Dictionary Request" 为开头发起 Issue，描述你的词典需求并提供词典来源。
 
 ### 0.2 如果你不会编程，但会使用 github🐙
 
@@ -112,7 +110,7 @@
 
 ### 1.4 测试 🧪
 
-使用 yarn 指令安装依赖，然后使用 yarn dev 启动开发服务器，访问 "http://localhost:5173"
+使用 bun install 安装依赖，然后使用 bun run dev 启动开发服务器，访问 "http://localhost:5173"
 
 如果你的词典已经成功导入，你将在词典列表中看到你的词典。🎉
 
