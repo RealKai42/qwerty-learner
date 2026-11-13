@@ -2,7 +2,7 @@ import { GalleryContext } from '.'
 import codeFlag from '@/assets/flags/code.png'
 import deFlag from '@/assets/flags/de.png'
 import enFlag from '@/assets/flags/en.png'
-import idFlag from '@/assets/flags/id.png'
+import idFlag from '@/assets/flags/id.svg'
 import jpFlag from '@/assets/flags/ja.png'
 import kkFlag from '@/assets/flags/kk.png'
 import type { LanguageCategoryType } from '@/typings'
@@ -46,7 +46,7 @@ export function LanguageTabSwitcher() {
           <RadioGroup.Option key={option.id} value={option.id} className="cursor-pointer">
             {({ checked }) => (
               <div className={`flex items-center border-b-2 px-2 pb-1 ${checked ? 'border-indigo-500' : 'border-transparent'}`}>
-                <img src={option.flag} className="mr-1.5 h-7 w-7" />
+                <img src={option.flag} alt="" aria-hidden="true" className="mr-1.5 h-7 w-7 shrink-0 object-contain" />
                 <p className={`text-lg font-medium text-gray-700 dark:text-gray-200`}>
                   {option.id === 'code' ? option.name : t(option.name)}
                 </p>

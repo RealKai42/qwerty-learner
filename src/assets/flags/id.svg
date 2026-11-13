@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+  <defs>
+    <clipPath id="flag">
+      <path d="M2 8C12 11 24 3 36 6V30C24 27 12 35 2 32Z" />
+    </clipPath>
+    <linearGradient id="folds" x1="2" y1="19" x2="36" y2="19" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000" stop-opacity=".3" />
+      <stop offset=".15" stop-color="#fff" stop-opacity=".18" />
+      <stop offset=".38" stop-color="#000" stop-opacity=".06" />
+      <stop offset=".53" stop-color="#000" stop-opacity=".2" />
+      <stop offset=".77" stop-color="#fff" stop-opacity=".16" />
+      <stop offset="1" stop-color="#000" stop-opacity=".26" />
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#flag)">
+    <path fill="#fff" d="M2 3h34v32H2z" />
+    <path fill="#E31B23" d="M2 8C12 11 24 3 36 6V18C24 15 12 23 2 20Z" />
+    <path fill="url(#folds)" d="M2 3h34v32H2z" />
+  </g>
+  <path d="M2 8C12 11 24 3 36 6V30C24 27 12 35 2 32Z" stroke="#111827" stroke-opacity=".4" stroke-width=".6" stroke-linejoin="round" />
+</svg>
