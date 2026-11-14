@@ -6,6 +6,11 @@ import { indexedDB, IDBKeyRange } from 'fake-indexeddb'
 import i18n from 'i18next'
 import { inflate } from 'pako'
 
+Dexie.dependencies.indexedDB = indexedDB
+Dexie.dependencies.IDBKeyRange = IDBKeyRange
+const settingsDB = new Dexie('QwertySettingsDB', { indexedDB, IDBKeyRange })
+settingsDB.version(1).stores({ settings: 'key' })
+
 // Exercise real Dexie transactions without importing the application's UI graph.
 const db = new Dexie('webdav-regression-tests', { indexedDB, IDBKeyRange })
 db.version(4).stores({
@@ -62,7 +67,7 @@ let latestWriteStatus: number
 let uploads: { url: string; backup: BackupData }[]
 
 beforeEach(async () => {
-  await Promise.all(db.tables.map((table) => table.clear()))
+  await Promise.all([...db.tables, ...settingsDB.tables].map((table) => table.clear()))
   storage.clear()
   remote = { backupVersion: '2.0', backupTime: '2026-01-01T00:00:00.000Z', data: emptyData() }
   rawBody = undefined
@@ -89,6 +94,7 @@ afterAll(async () => {
   globalThis.fetch = originalFetch
   Object.defineProperty(globalThis, 'localStorage', { configurable: true, value: originalStorage })
   await db.delete()
+  settingsDB.close()
 })
 
 const operations = {

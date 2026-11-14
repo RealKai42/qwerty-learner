@@ -5,7 +5,6 @@ import { idDictionaryMap } from '@/resources/dictionary'
 import { foreignFontResources, translateFontResources } from '@/resources/fontResource'
 import { correctSoundResources, keySoundResources, wrongSoundResources } from '@/resources/soundResource'
 import type { Dictionary, LoopWordTimesOption, PhoneticType, PronunciationType, WordDictationOpenBy, WordDictationType } from '@/typings'
-import { createEncryptedStorage } from '@/utils/crypto'
 import type { ReviewRecord } from '@/utils/db/record'
 import { IS_MAC_OS } from '@/utils/platform'
 import { atom } from 'jotai'
@@ -137,33 +136,7 @@ export const wordDictationConfigAtom = atomForConfig('wordDictationConfig', {
 
 export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_START_CARD_DATE_KEY, null)
 
-// WebDAV config persisted to localStorage
-const webdavPersistedAtom = atomForConfig('webdavConfig', {
-  enabled: false,
-  url: '',
-  autoBackup: true,
-})
-const webdavCredentialsAtom = atomWithStorage(
-  'webdavCredentials',
-  { username: '', password: '' },
-  createEncryptedStorage<{ username: string; password: string }>('webdavCredentials'),
-)
-
-type WebdavConfig = { enabled: boolean; url: string; username: string; password: string; autoBackup: boolean }
-
-export const webdavConfigAtom = atom(
-  (get) => {
-    const config = get(webdavPersistedAtom)
-    const creds = get(webdavCredentialsAtom)
-    return { ...config, username: creds.username, password: creds.password } as WebdavConfig
-  },
-  (get, set, newValue: WebdavConfig | ((prev: WebdavConfig) => WebdavConfig)) => {
-    const resolved = typeof newValue === 'function' ? newValue(get(webdavConfigAtom)) : newValue
-    const { username, password, ...rest } = resolved
-    set(webdavPersistedAtom, rest)
-    set(webdavCredentialsAtom, { username, password })
-  },
-)
+export { webdavConfigAtom, webdavConfigReadyAtom } from './webdavConfigAtom'
 
 /** Tracks the last auto-backup error message (null = no error) */
 export const webdavBackupErrorAtom = atom<string | null>(null)

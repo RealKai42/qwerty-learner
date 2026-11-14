@@ -1,3 +1,4 @@
+import { getLastWebdavBackupTime, setLastWebdavBackupTime } from './webdavSettings'
 import { db } from '@/utils/db'
 import { FAVORITES_SWR_KEY } from '@/utils/db/favorites'
 import type { IFavoriteRecord, IReviewRecord } from '@/utils/db/record'
@@ -34,7 +35,6 @@ export interface BackupData {
 }
 
 const BACKUP_FILENAME = 'qwerty-learner-backup-latest.jsonz'
-const LAST_BACKUP_TIME_KEY = 'webdavLastBackupTime'
 const FETCH_TIMEOUT_MS = 30000
 
 const BACKUP_SETTINGS_KEYS = ['fontsize', 'keySoundsConfig', 'hintSoundsConfig', 'foreignFontConfig', 'translateFontConfig']
@@ -338,7 +338,7 @@ export async function incrementalBackupToWebDAV(
       })
 
       if (response.ok) {
-        localStorage.setItem(LAST_BACKUP_TIME_KEY, backupStartTime)
+        await setLastWebdavBackupTime(backupStartTime)
         return { success: true, message: i18n.t('webdav.incrementalBackupSuccess', { count }) }
       }
       return { success: false, message: i18n.t('webdav.backupFailedHttp', { status: response.status }) }
@@ -399,7 +399,7 @@ export async function fullBackupToWebDAV(
       })
 
       if (response2.ok) {
-        localStorage.setItem(LAST_BACKUP_TIME_KEY, backupData.backupTime)
+        await setLastWebdavBackupTime(backupData.backupTime)
         return { success: true, message: i18n.t('webdav.fullBackupSuccess', { filename }) }
       }
       return { success: true, message: i18n.t('webdav.fullBackupSuccessLatestNotUpdated', { filename }) }
@@ -649,7 +649,7 @@ export async function startupSyncToWebDAV(
           body: compress(backupData),
         })
         if (response.ok) {
-          localStorage.setItem(LAST_BACKUP_TIME_KEY, new Date().toISOString())
+          await setLastWebdavBackupTime(new Date().toISOString())
           return { success: true, message: i18n.t('webdav.firstSyncUploaded'), syncedCount: 0 }
         }
         return { success: false, message: i18n.t('webdav.syncFailedHttp', { status: response.status }) }
@@ -665,7 +665,7 @@ export async function startupSyncToWebDAV(
       // Sync settings: remote wins if newer
       let settingsApplied = false
       if (remoteBackup.data.settings) {
-        const lastBackupTime = localStorage.getItem(LAST_BACKUP_TIME_KEY)
+        const lastBackupTime = await getLastWebdavBackupTime()
         const localTime = lastBackupTime ? new Date(lastBackupTime) : new Date(0)
         const remoteTime = new Date(remoteBackup.backupTime)
         if (remoteTime > localTime) {
@@ -687,7 +687,7 @@ export async function startupSyncToWebDAV(
       })
 
       if (response.ok) {
-        localStorage.setItem(LAST_BACKUP_TIME_KEY, new Date().toISOString())
+        await setLastWebdavBackupTime(new Date().toISOString())
         return {
           success: true,
           message: i18n.t('webdav.syncSuccess', { count: remoteNewCount }),

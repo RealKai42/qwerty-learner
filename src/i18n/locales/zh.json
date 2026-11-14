@@ -399,7 +399,12 @@
       "close": "关闭",
       "noBackupFiles": "暂无备份文件",
       "restore": "恢复",
-      "delete": "删除"
+      "delete": "删除",
+      "saveConfig": "保存配置",
+      "savingConfig": "正在保存…",
+      "saveConfigSuccess": "配置已保存",
+      "saveConfigFailed": "配置保存失败，请重试",
+      "loadingConfig": "正在读取配置…"
     }
   },
   "common": {

@@ -1,13 +1,12 @@
 import { isOpenDarkModeAtom } from '@/store'
+import dayjs from 'dayjs'
 import { useAtom } from 'jotai'
 import type { FC } from 'react'
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import type { Activity } from 'react-activity-calendar'
 import { ActivityCalendar } from 'react-activity-calendar'
-import dayjs from 'dayjs'
+import 'react-activity-calendar/tooltips.css'
 import { useTranslation } from 'react-i18next'
-import { Tooltip as ReactTooltip } from 'react-tooltip'
-import 'react-tooltip/dist/react-tooltip.css'
 
 interface HeatmapChartsProps {
   title: string
@@ -57,24 +56,22 @@ const HeatmapCharts: FC<HeatmapChartsProps> = ({ data, title }) => {
           light: ['#f0f0f0', '#6366f1'],
           dark: ['hsl(0, 0%, 22%)', '#818cf8'],
         }}
-        renderBlock={(block, activity) =>
-          React.cloneElement(block, {
-            'data-tooltip-id': 'react-tooltip',
-            'data-tooltip-html': t('analysis.heatmapTooltip', { date: activity.date, count: activity.count }),
-          } as React.SVGProps<SVGRectElement>)
-        }
+        tooltips={{
+          activity: {
+            text: (activity) => t('analysis.heatmapTooltip', { date: activity.date, count: activity.count }),
+          },
+        }}
         showWeekdayLabels={true}
         labels={{
           months: t('analysis.months', { returnObjects: true }) as string[],
           weekdays: t('analysis.weekdays', { returnObjects: true }) as string[],
-          totalCount: t('analysis.yearTotal', { count: 0 }),
+          totalCount: t('analysis.yearTotal', { count: safeData.reduce((total, activity) => total + activity.count, 0) }),
           legend: {
             less: t('analysis.legendLess'),
             more: t('analysis.legendMore'),
           },
         }}
       />
-      <ReactTooltip id="react-tooltip" />
     </div>
   )
 }

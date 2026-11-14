@@ -399,7 +399,12 @@
       "close": "Close",
       "noBackupFiles": "No backup files",
       "restore": "Restore",
-      "delete": "Delete"
+      "delete": "Delete",
+      "saveConfig": "Save settings",
+      "savingConfig": "Saving…",
+      "saveConfigSuccess": "Settings saved",
+      "saveConfigFailed": "Could not save settings. Please try again.",
+      "loadingConfig": "Loading settings…"
     }
   },
   "common": {

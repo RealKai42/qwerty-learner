@@ -6,6 +6,7 @@ import {
   keySoundsConfigAtom,
   translateFontConfigAtom,
   webdavConfigAtom,
+  webdavConfigReadyAtom,
 } from '@/store'
 import { db } from '@/utils/db'
 import {
@@ -20,7 +21,7 @@ import {
   withBackupLock,
 } from '@/utils/webdav'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { useAtom } from 'jotai'
+import { useAtom, useAtomValue } from 'jotai'
 import { useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import IconCheck from '~icons/tabler/check'
@@ -46,7 +47,12 @@ function formatSize(bytes: number): string {
 
 export default function WebDAVSetting() {
   const { t } = useTranslation()
-  const [webdavConfig, setWebdavConfig] = useAtom(webdavConfigAtom)
+  const [savedWebdavConfig, persistWebdavConfig] = useAtom(webdavConfigAtom)
+  const configReady = useAtomValue(webdavConfigReadyAtom)
+  const [webdavConfig, setWebdavConfig] = useState(savedWebdavConfig)
+  const [isDirty, setIsDirty] = useState(false)
+  const [isSaving, setIsSaving] = useState(false)
+  const [configResult, setConfigResult] = useState<{ success: boolean; message: string } | null>(null)
   const setFontSizeConfig = useAtom(fontSizeConfigAtom)[1]
   const setKeySoundsConfig = useAtom(keySoundsConfigAtom)[1]
   const setHintSoundsConfig = useAtom(hintSoundsConfigAtom)[1]
@@ -60,22 +66,42 @@ export default function WebDAVSetting() {
   const [showBackupList, setShowBackupList] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
+  useEffect(() => {
+    if (!isDirty) setWebdavConfig(savedWebdavConfig)
+  }, [savedWebdavConfig, isDirty])
+
   const handleConfigChange = useCallback(
     (field: keyof typeof webdavConfig, value: string | boolean) => {
       setWebdavConfig((prev) => ({ ...prev, [field]: value }))
+      setIsDirty(true)
+      setConfigResult(null)
     },
     [setWebdavConfig],
   )
 
+  const handleSaveConfig = useCallback(async () => {
+    setIsSaving(true)
+    setConfigResult(null)
+    try {
+      await persistWebdavConfig(webdavConfig)
+      setIsDirty(false)
+      setConfigResult({ success: true, message: t('settings.webdav.saveConfigSuccess') })
+    } catch {
+      setConfigResult({ success: false, message: t('settings.webdav.saveConfigFailed') })
+    } finally {
+      setIsSaving(false)
+    }
+  }, [persistWebdavConfig, webdavConfig, t])
+
   const loadBackupInfo = useCallback(async () => {
-    if (!webdavConfig.enabled || !webdavConfig.url) return
-    const result = await getBackupInfo(webdavConfig)
+    if (!savedWebdavConfig.enabled || !savedWebdavConfig.url) return
+    const result = await getBackupInfo(savedWebdavConfig)
     if (result.success && result.info) {
       setBackupInfo(result.info)
     } else {
       setBackupInfo(null)
     }
-  }, [webdavConfig])
+  }, [savedWebdavConfig])
 
   useEffect(() => {
     loadBackupInfo()
@@ -201,10 +227,16 @@ export default function WebDAVSetting() {
             <span className={styles.sectionDescription}>{t('settings.webdav.backupConfigDesc')}</span>
 
             <div className="flex flex-col gap-3 px-4">
+              {!configReady && (
+                <p role="status" className="text-sm text-gray-500">
+                  {t('settings.webdav.loadingConfig')}
+                </p>
+              )}
               <div className="flex items-center gap-2">
                 <span className="w-20 text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.enableBackup')}</span>
                 <button
                   type="button"
+                  disabled={!configReady || isSaving}
                   onClick={() => handleConfigChange('enabled', !webdavConfig.enabled)}
                   className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                     webdavConfig.enabled ? 'bg-indigo-500' : 'bg-gray-300 dark:bg-gray-600'
@@ -222,6 +254,7 @@ export default function WebDAVSetting() {
                 <span className="text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.webdavUrl')}</span>
                 <input
                   type="text"
+                  disabled={!configReady || isSaving}
                   value={webdavConfig.url}
                   onChange={(e) => handleConfigChange('url', e.target.value)}
                   placeholder="https://nas.local/webdav/"
@@ -233,6 +266,7 @@ export default function WebDAVSetting() {
                 <span className="text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.username')}</span>
                 <input
                   type="text"
+                  disabled={!configReady || isSaving}
                   value={webdavConfig.username}
                   onChange={(e) => handleConfigChange('username', e.target.value)}
                   className="rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"
@@ -243,6 +277,7 @@ export default function WebDAVSetting() {
                 <span className="text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.password')}</span>
                 <input
                   type="password"
+                  disabled={!configReady || isSaving}
                   value={webdavConfig.password}
                   onChange={(e) => handleConfigChange('password', e.target.value)}
                   className="rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200"
@@ -253,6 +288,7 @@ export default function WebDAVSetting() {
                 <span className="w-20 text-sm text-gray-700 dark:text-gray-300">{t('settings.webdav.autoBackup')}</span>
                 <button
                   type="button"
+                  disabled={!configReady || isSaving}
                   onClick={() => handleConfigChange('autoBackup', !webdavConfig.autoBackup)}
                   className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
                     webdavConfig.autoBackup ? 'bg-indigo-500' : 'bg-gray-300 dark:bg-gray-600'
@@ -270,6 +306,15 @@ export default function WebDAVSetting() {
               <div className="flex gap-2">
                 <button
                   type="button"
+                  onClick={handleSaveConfig}
+                  disabled={!configReady || !isDirty || isSaving || isLoading}
+                  className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300 dark:disabled:bg-gray-600"
+                >
+                  <IconCheck className="h-4 w-4" />
+                  {t(isSaving ? 'settings.webdav.savingConfig' : 'settings.webdav.saveConfig')}
+                </button>
+                <button
+                  type="button"
                   onClick={handleTestConnection}
                   disabled={isLoading}
                   className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300 dark:disabled:bg-gray-600"
@@ -280,7 +325,7 @@ export default function WebDAVSetting() {
                 <button
                   type="button"
                   onClick={handleBackup}
-                  disabled={isLoading || !webdavConfig.enabled}
+                  disabled={isLoading || isDirty || isSaving || !savedWebdavConfig.enabled}
                   className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300 dark:disabled:bg-gray-600"
                 >
                   <IconCloudUpload fontSize={14} />
@@ -289,13 +334,19 @@ export default function WebDAVSetting() {
                 <button
                   type="button"
                   onClick={handleListBackups}
-                  disabled={isLoading || !webdavConfig.enabled}
+                  disabled={isLoading || isDirty || isSaving || !savedWebdavConfig.enabled}
                   className="my-btn-primary flex items-center gap-1 text-sm disabled:bg-gray-300 dark:disabled:bg-gray-600"
                 >
                   <IconCloud fontSize={14} />
                   {t('settings.webdav.listBackups')}
                 </button>
               </div>
+
+              {configResult && (
+                <p role="status" className={`text-sm ${configResult.success ? 'text-green-600 dark:text-green-400' : 'text-red-500'}`}>
+                  {configResult.message}
+                </p>
+              )}
 
               {testResult && (
                 <div

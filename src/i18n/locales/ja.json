@@ -399,7 +399,12 @@
       "close": "閉じる",
       "noBackupFiles": "バックアップファイルがありません",
       "restore": "復元",
-      "delete": "削除"
+      "delete": "削除",
+      "saveConfig": "設定を保存",
+      "savingConfig": "保存中…",
+      "saveConfigSuccess": "設定を保存しました",
+      "saveConfigFailed": "設定を保存できませんでした。もう一度お試しください。",
+      "loadingConfig": "設定を読み込み中…"
     }
   },
   "common": {

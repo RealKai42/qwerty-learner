@@ -40,26 +40,32 @@ function deobfuscate(encoded: string): string {
   return new TextDecoder().decode(result)
 }
 
-export function createEncryptedStorage<T>(key: string): {
+export function createEncryptedStorage<T>(
+  key: string,
+  storage: Pick<Storage, 'getItem' | 'setItem' | 'removeItem'> = localStorage,
+): {
   getItem: (k: string, initialValue: T) => T
   setItem: (k: string, value: T) => void
   removeItem: (k: string) => void
 } {
+  const read = (initialValue: T): T => {
+    const stored = storage.getItem(key)
+    if (!stored) return initialValue
+    try {
+      return JSON.parse(deobfuscate(stored)) as T
+    } catch {
+      return initialValue
+    }
+  }
   return {
     getItem(_k, initialValue) {
-      const stored = localStorage.getItem(key)
-      if (!stored) return initialValue
-      try {
-        return JSON.parse(deobfuscate(stored)) as T
-      } catch {
-        return initialValue
-      }
+      return read(initialValue)
     },
     setItem(_k, value) {
-      localStorage.setItem(key, obfuscate(JSON.stringify(value)))
+      storage.setItem(key, obfuscate(JSON.stringify(value)))
     },
     removeItem() {
-      localStorage.removeItem(key)
+      storage.removeItem(key)
     },
   }
 }
