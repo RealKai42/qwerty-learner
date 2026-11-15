@@ -1,0 +1,5 @@
+.react-activity-calendar__tooltip {
+  /* The calendar portals to body, outside the statistics dialog's z-50 layer. */
+  z-index: 60;
+  pointer-events: none;
+}

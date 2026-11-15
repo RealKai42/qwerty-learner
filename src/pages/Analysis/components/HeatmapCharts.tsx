@@ -1,3 +1,4 @@
+import './HeatmapCharts.css'
 import { isOpenDarkModeAtom } from '@/store'
 import dayjs from 'dayjs'
 import { useAtom } from 'jotai'

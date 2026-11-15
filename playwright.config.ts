@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
 
+const production = process.env.E2E_PRODUCTION === '1'
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -73,9 +75,11 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: 'bun run start --host 127.0.0.1 --port 4173 --strictPort',
+    command: production
+      ? 'bun run build && bunx vite preview --host 127.0.0.1 --port 4173 --strictPort'
+      : 'bun run start --host 127.0.0.1 --port 4173 --strictPort',
     url: 'http://127.0.0.1:4173',
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: !production && !process.env.CI,
     env: { REACT_APP_DEPLOY_ENV: '' },
   },
 })
