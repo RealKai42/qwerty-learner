@@ -22,7 +22,6 @@ export function ErrorBook() {
   const navigate = useNavigate()
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
-  const [reload, setReload] = useState(false)
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -62,6 +61,16 @@ export function ErrorBook() {
   }, [currentPage, sortedRecords])
 
   useEffect(() => {
+    if (totalPages === 0) {
+      setCurrentPage(1)
+      return
+    }
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages)
+    }
+  }, [currentPage, totalPages])
+
+  useEffect(() => {
     db.wordRecords
       .where('wrongCount')
       .above(0)
@@ -87,11 +96,13 @@ export function ErrorBook() {
 
         setGroupedRecords(groups)
       })
-  }, [reload])
+  }, [])
 
   const handleDelete = async (word: string, dict: string) => {
-    await deleteWordRecord(word, dict)
-    setReload((prev) => !prev)
+    const deletedCount = await deleteWordRecord(word, dict)
+    if (!deletedCount) return
+
+    setGroupedRecords((prev) => prev.filter((record) => !(record.word === word && record.dict === dict)))
   }
 
   return (
