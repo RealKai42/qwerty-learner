@@ -2630,7 +2630,7 @@ const childrenEnglish: DictionaryResource[] = [
     description: '译林版四年级下册',
     category: '青少年英语',
     tags: ['译林版'],
-    url: './dicts/YiLin4_2.json',
+    url: '/dicts/YiLin4_2.json',
     length: 119,
     language: 'en',
     languageCategory: 'en',
