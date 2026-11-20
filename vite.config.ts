@@ -28,6 +28,11 @@ export default defineConfig(async ({ mode }) => {
         },
       }),
     ],
+    server: {
+      hmr: true,
+      host: true,
+      port: 6060,
+    },
     build: {
       minify: true,
       outDir: 'build',
