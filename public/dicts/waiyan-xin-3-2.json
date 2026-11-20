@@ -780,10 +780,9 @@
     ]
   },
   {
-    "name": "hasn't=has not",
+    "name": "hasn't(got)=has not(got)",
     "trans": [
-      "adv.没有",
-      "也作 got"
+      "adv.没有"
     ]
   },
   {

@@ -193,12 +193,78 @@ def strip_glosses(name):
         return " "
 
     updated = re.sub(r"\(([^)]*)\)", replace, name)
-    updated = re.sub(r"\s+([.,=])", r"\1", updated)
     updated = re.sub(r"\s+", " ", updated).strip()
     return updated, [note for note in notes if note]
 
 
+# These are different words, or the slash is part of the phrase. Do not collapse them.
+SKIP_NAMES = {
+    "actor/actress",
+    "bride/bridegroom",
+    "chairman/chairwoman",
+    "do/does",
+    "grandchild/grandson/granddaughter",
+    "grandfather/grandad/grandpa/grandmother/grandma",
+    "have/has",
+    "host/hostess",
+    "Mr/Mrs/Ms",
+    "salesman/saleswoman/salesperson",
+    "and/or",
+    "his/her",
+    "he/she",
+    "mouse/mice",
+    "a.m. / p.m.",
+    "re-use/conversion",
+    "gypsum/plaster",
+    "bidding/negotiation",
+    "building orientation/air sealing",
+    "campus violence/school bullying",
+    "think of sb./sth. as sth.",
+    "keep sb./sth. away",
+    "buyout/buy",
+    "plaza/square",
+    "shrub/bush",
+    "canopy/arbor",
+    "magazine/newspaper",
+    "term/semester",
+    "cook/chef",
+    "book/reserve",
+    "fix/repair",
+    "store/shop",
+    "sunny/bright/clear",
+    "mild/agreeable",
+    "popular/fashionable",
+    "travel/trip/tour/voyage",
+    "waiter / waitress",
+    "waiter/waitress",
+    "documentary/film",
+    "position/post",
+    "sportsman/athlete/player",
+    "chef/cook",
+    "front clerk/reception clerk",
+    "airhostess/stewardess",
+    "expensive/dear",
+    "second-hand/used",
+    "island/isle",
+    "centigrade/Celsius",
+    "pedestrian zones/auto-free zones/car-free zones",
+    "green roof/rain garden",
+    "cantilever/overhang",
+    "cold/flu",
+    "reporter/journalist",
+    "comitas (utilitas)",
+    "renew ( al )",
+    "hasn't(got)=has not(got)",
+    "not(isn't=is not)",
+    "am(I'm=I am)",
+    "he(he's=he is)",
+    "to break in on (upon)",
+}
+
+
 def normalize_name(name):
+    if name in SKIP_NAMES:
+        return name, []
     updated = unwrap_quotes(normalize_punctuation(name))
     updated = updated.replace("()", "-")
     updated, spelling_notes = expand_spellings(updated)

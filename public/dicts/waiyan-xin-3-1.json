@@ -6,10 +6,9 @@
     ]
   },
   {
-    "name": "am",
+    "name": "am(I'm=I am)",
     "trans": [
-      "adv.是（我是）",
-      "（I'm=I am）"
+      "adv.是（我是）"
     ]
   },
   {
@@ -292,7 +291,7 @@
     "name": "a",
     "trans": [
       "adv.一个，一",
-      "（an）"
+      "也作 an"
     ]
   },
   {
@@ -614,10 +613,9 @@
     ]
   },
   {
-    "name": "not",
+    "name": "not(isn't=is not)",
     "trans": [
-      "adv.不(不是）",
-      "（isn't=is not）"
+      "adv.不(不是）"
     ]
   },
   {
@@ -699,10 +697,9 @@
     ]
   },
   {
-    "name": "he",
+    "name": "he(he's=he is)",
     "trans": [
-      "adv.他(他是)",
-      "（he's=he is）"
+      "adv.他(他是)"
     ]
   },
   {

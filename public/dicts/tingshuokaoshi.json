@@ -162,10 +162,9 @@
     ]
   },
   {
-    "name": "waiter",
+    "name": "waiter/waitress",
     "trans": [
-      "男/女侍者",
-      "也作 waitress"
+      "男/女侍者"
     ]
   },
   {
@@ -434,10 +433,9 @@
     ]
   },
   {
-    "name": "magazine",
+    "name": "magazine/newspaper",
     "trans": [
-      "杂志",
-      "也作 newspaper"
+      "杂志"
     ]
   },
   {
@@ -477,10 +475,9 @@
     ]
   },
   {
-    "name": "term",
+    "name": "term/semester",
     "trans": [
-      "学期",
-      "也作 semester"
+      "学期"
     ]
   },
   {
@@ -617,10 +614,9 @@
     ]
   },
   {
-    "name": "cold",
+    "name": "cold/flu",
     "trans": [
-      "流感",
-      "也作 flu"
+      "流感"
     ]
   },
   {
@@ -864,10 +860,9 @@
     ]
   },
   {
-    "name": "front clerk",
+    "name": "front clerk/reception clerk",
     "trans": [
-      "总台接待员",
-      "也作 reception clerk"
+      "总台接待员"
     ]
   },
   {
@@ -985,10 +980,9 @@
     ]
   },
   {
-    "name": "cook",
+    "name": "cook/chef",
     "trans": [
-      "厨师",
-      "也作 chef"
+      "厨师"
     ]
   },
   {
@@ -1034,10 +1028,9 @@
     ]
   },
   {
-    "name": "book",
+    "name": "book/reserve",
     "trans": [
-      "预定",
-      "也作 reserve"
+      "预定"
     ]
   },
   {
@@ -1272,10 +1265,9 @@
     ]
   },
   {
-    "name": "fix",
+    "name": "fix/repair",
     "trans": [
-      "修理",
-      "也作 repair"
+      "修理"
     ]
   },
   {
@@ -1369,10 +1361,9 @@
     ]
   },
   {
-    "name": "book",
+    "name": "book/reserve",
     "trans": [
-      "预订",
-      "也作 reserve"
+      "预订"
     ]
   },
   {
@@ -1430,10 +1421,9 @@
     ]
   },
   {
-    "name": "airhostess",
+    "name": "airhostess/stewardess",
     "trans": [
-      "空姐",
-      "也作 stewardess"
+      "空姐"
     ]
   },
   {
@@ -1546,10 +1536,9 @@
     ]
   },
   {
-    "name": "store",
+    "name": "store/shop",
     "trans": [
-      "商店，杂货店",
-      "也作 shop"
+      "商店，杂货店"
     ]
   },
   {
@@ -1685,10 +1674,9 @@
     ]
   },
   {
-    "name": "expensive",
+    "name": "expensive/dear",
     "trans": [
-      "昂贵的",
-      "也作 dear"
+      "昂贵的"
     ]
   },
   {
@@ -1698,10 +1686,9 @@
     ]
   },
   {
-    "name": "popular",
+    "name": "popular/fashionable",
     "trans": [
-      "流行的，时尚的",
-      "也作 fashionable"
+      "流行的，时尚的"
     ]
   },
   {
@@ -1723,10 +1710,9 @@
     ]
   },
   {
-    "name": "second-hand",
+    "name": "second-hand/used",
     "trans": [
-      "二手的，旧的",
-      "也作 used"
+      "二手的，旧的"
     ]
   },
   {
@@ -1886,11 +1872,9 @@
     ]
   },
   {
-    "name": "sunny",
+    "name": "sunny/bright/clear",
     "trans": [
-      "阳光充足的",
-      "也作 bright",
-      "也作 clear"
+      "阳光充足的"
     ]
   },
   {
@@ -1930,10 +1914,9 @@
     ]
   },
   {
-    "name": "mild",
+    "name": "mild/agreeable",
     "trans": [
-      "温和的",
-      "也作 agreeable"
+      "温和的"
     ]
   },
   {
@@ -2268,12 +2251,9 @@
     ]
   },
   {
-    "name": "travel",
+    "name": "travel/trip/tour/voyage",
     "trans": [
-      "旅行",
-      "也作 trip",
-      "也作 tour",
-      "也作 voyage"
+      "旅行"
     ]
   },
   {
@@ -2449,10 +2429,9 @@
     ]
   },
   {
-    "name": "reporter",
+    "name": "reporter/journalist",
     "trans": [
-      "记者",
-      "也作 journalist"
+      "记者"
     ]
   },
   {
@@ -2516,10 +2495,9 @@
     ]
   },
   {
-    "name": "actor",
+    "name": "actor/actress",
     "trans": [
-      "男/女演员",
-      "也作 actress"
+      "男/女演员"
     ]
   },
   {
@@ -2535,10 +2513,9 @@
     ]
   },
   {
-    "name": "chef",
+    "name": "chef/cook",
     "trans": [
-      "厨师",
-      "也作 cook"
+      "厨师"
     ]
   },
   {
@@ -2572,11 +2549,9 @@
     ]
   },
   {
-    "name": "sportsman",
+    "name": "sportsman/athlete/player",
     "trans": [
-      "运动员",
-      "也作 athlete",
-      "也作 player"
+      "运动员"
     ]
   },
   {
@@ -2766,10 +2741,9 @@
     ]
   },
   {
-    "name": "position",
+    "name": "position/post",
     "trans": [
-      "职位",
-      "也作 post"
+      "职位"
     ]
   },
   {
@@ -2905,10 +2879,9 @@
     ]
   },
   {
-    "name": "documentary",
+    "name": "documentary/film",
     "trans": [
-      "记录片/文献片",
-      "也作 film"
+      "记录片/文献片"
     ]
   },
   {

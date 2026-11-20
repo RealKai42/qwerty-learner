@@ -199,10 +199,9 @@
         ]
     },
     {
-        "name": "actor",
+        "name": "actor/actress",
         "trans": [
-            "男演员/女演员",
-            "也作 actress"
+            "男演员/女演员"
         ]
     },
     {
@@ -2111,10 +2110,9 @@
         ]
     },
     {
-        "name": "bride",
+        "name": "bride/bridegroom",
         "trans": [
-            "新娘/新郎",
-            "也作 bridegroom"
+            "新娘/新郎"
         ]
     },
     {
@@ -2718,10 +2716,9 @@
         ]
     },
     {
-        "name": "chairman",
+        "name": "chairman/chairwoman",
         "trans": [
-            "主席/女主席",
-            "也作 chairwoman"
+            "主席/女主席"
         ]
     },
     {
@@ -4867,10 +4864,9 @@
         ]
     },
     {
-        "name": "do",
+        "name": "do/does",
         "trans": [
-            "做",
-            "也作 does"
+            "做"
         ]
     },
     {
@@ -7135,21 +7131,15 @@
         ]
     },
     {
-        "name": "grandchild",
+        "name": "grandchild/grandson/granddaughter",
         "trans": [
-            "孙子/孙女/外孙女",
-            "也作 grandson",
-            "也作 granddaughter"
+            "孙子/孙女/外孙女"
         ]
     },
     {
-        "name": "grandfather",
+        "name": "grandfather/grandad/grandpa/grandmother/grandma",
         "trans": [
-            "祖父/爷爷/外公/外婆/奶奶",
-            "也作 grandad",
-            "也作 grandpa",
-            "也作 grandmother",
-            "也作 grandma"
+            "祖父/爷爷/外公/外婆/奶奶"
         ]
     },
     {
@@ -7520,10 +7510,9 @@
         ]
     },
     {
-        "name": "have",
+        "name": "have/has",
         "trans": [
-            "有",
-            "也作 has"
+            "有"
         ]
     },
     {
@@ -7870,10 +7859,9 @@
         ]
     },
     {
-        "name": "host",
+        "name": "host/hostess",
         "trans": [
-            "主人/女主人",
-            "也作 hostess"
+            "主人/女主人"
         ]
     },
     {
@@ -10295,11 +10283,9 @@
         ]
     },
     {
-        "name": "Mr",
+        "name": "Mr/Mrs/Ms",
         "trans": [
-            "先生/夫人",
-            "也作 Mrs",
-            "也作 Ms"
+            "先生/夫人"
         ]
     },
     {
@@ -13691,11 +13677,9 @@
         ]
     },
     {
-        "name": "salesman",
+        "name": "salesman/saleswoman/salesperson",
         "trans": [
-            "推销员",
-            "也作 saleswoman",
-            "也作 salesperson"
+            "推销员"
         ]
     },
     {
