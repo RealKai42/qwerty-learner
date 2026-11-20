@@ -78,6 +78,9 @@ export const isShowAnswerOnHoverAtom = atomWithStorage('isShowAnswerOnHover', tr
 
 export const isTextSelectableAtom = atomWithStorage('isTextSelectable', false)
 
+// Display preference only; both spelling systems are always accepted as input.
+export const isKunreiShikiEnabledAtom = atomWithStorage('isKunreiShikiEnabled', false)
+
 export const reviewModeInfoAtom = reviewInfoAtom({
   isReviewMode: false,
   reviewRecord: undefined as ReviewRecord | undefined,
