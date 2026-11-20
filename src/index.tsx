@@ -36,11 +36,9 @@ function Root() {
 
   useEffect(() => {
     const handleResize = () => {
-      const isMobile = window.innerWidth <= 600
-      if (!isMobile) {
-        window.location.href = '/'
-      }
-      setIsMobile(isMobile)
+      // Routes already switch on this flag. Reloading here drops the
+      // current practice and, on GitHub Pages, leaves the basename.
+      setIsMobile(window.innerWidth <= 600)
     }
 
     window.addEventListener('resize', handleResize)
@@ -53,7 +51,7 @@ function Root() {
         <Suspense fallback={<Loading />}>
           <Routes>
             {isMobile ? (
-              <Route path="/*" element={<Navigate to="/mobile" />} />
+              <Route path="/*" element={<Navigate to="/mobile" replace />} />
             ) : (
               <>
                 <Route index element={<TypingPage />} />
@@ -64,7 +62,7 @@ function Root() {
                 <Route path="/*" element={<Navigate to="/" />} />
               </>
             )}
-            <Route path="/mobile" element={<MobilePage />} />
+            <Route path="/mobile" element={isMobile ? <MobilePage /> : <Navigate to="/" replace />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
