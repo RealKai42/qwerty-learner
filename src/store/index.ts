@@ -57,6 +57,11 @@ export const pronunciationConfigAtom = atomForConfig('pronunciation', {
   isLoop: false,
   isTransRead: false,
   transVolume: 1,
+  transRate: 1,
+  transSpeechMode: 'system' as 'system' | 'cantonese',
+  transVoiceURI: '',
+  transVoiceName: '',
+  transVoiceLang: '',
   rate: 1,
 })
 

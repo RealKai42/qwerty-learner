@@ -13,14 +13,16 @@ import { TypingContext, TypingStateActionType, initialState, typingReducer } fro
 import { DonateCard } from '@/components/DonateCard'
 import Header from '@/components/Header'
 import Tooltip from '@/components/Tooltip'
+import { DefinitionSpeechProvider } from '@/contexts/DefinitionSpeechContext'
 import { idDictionaryMap } from '@/resources/dictionary'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom, randomConfigAtom, reviewModeInfoAtom } from '@/store'
 import { IsDesktop, isLegal } from '@/utils'
+import { stopAllPlayback } from '@/utils/audioPlaybackCoordinator'
 import { useSaveChapterRecord } from '@/utils/db'
 import { useMixPanelChapterLogUploader } from '@/utils/mixpanel'
 import { useAtom, useAtomValue, useSetAtom } from 'jotai'
 import type React from 'react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useState } from 'react'
 import { useImmerReducer } from 'use-immer'
 
 const App: React.FC = () => {
@@ -29,6 +31,7 @@ const App: React.FC = () => {
   const { words } = useWordList()
 
   const [currentDictId, setCurrentDictId] = useAtom(currentDictIdAtom)
+  const currentChapter = useAtomValue(currentChapterAtom)
   const setCurrentChapter = useSetAtom(currentChapterAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
   const chapterLogUploader = useMixPanelChapterLogUploader(state)
@@ -36,6 +39,13 @@ const App: React.FC = () => {
 
   const reviewModeInfo = useAtomValue(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
+  const currentWordName = state.chapterData.words[state.chapterData.index]?.name ?? ''
+  const playbackScopeKey = `${currentDictId}:${currentChapter}:${state.chapterData.index}:${currentWordName}:${state.isTyping}`
+
+  useLayoutEffect(() => {
+    stopAllPlayback()
+    return stopAllPlayback
+  }, [playbackScopeKey])
 
   useEffect(() => {
     // 检测用户设备
@@ -128,44 +138,46 @@ const App: React.FC = () => {
 
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
-      {state.isFinished && <DonateCard />}
-      {state.isFinished && <ResultScreen />}
-      <Layout>
-        <Header>
-          <DictChapterButton />
-          <PronunciationSwitcher />
-          <Switcher />
-          <StartButton isLoading={isLoading} />
-          <Tooltip content="跳过该词">
-            <button
-              className={`${
-                state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
-              } my-btn-primary transition-all duration-300 `}
-              onClick={skipWord}
-            >
-              Skip
-            </button>
-          </Tooltip>
-        </Header>
-        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-5">
-          <div className="container relative mx-auto flex h-full flex-col items-center">
-            <div className="container flex flex-grow items-center justify-center">
-              {isLoading ? (
-                <div className="flex flex-col items-center justify-center ">
-                  <div
-                    className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid  border-indigo-400 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                    role="status"
-                  ></div>
-                </div>
-              ) : (
-                !state.isFinished && <WordPanel />
-              )}
+      <DefinitionSpeechProvider scopeKey={playbackScopeKey}>
+        {state.isFinished && <DonateCard />}
+        {state.isFinished && <ResultScreen />}
+        <Layout>
+          <Header>
+            <DictChapterButton />
+            <PronunciationSwitcher />
+            <Switcher />
+            <StartButton isLoading={isLoading} />
+            <Tooltip content="跳过该词">
+              <button
+                className={`${
+                  state.isShowSkip ? 'bg-orange-400' : 'invisible w-0 bg-gray-300 px-0 opacity-0'
+                } my-btn-primary transition-all duration-300 `}
+                onClick={skipWord}
+              >
+                Skip
+              </button>
+            </Tooltip>
+          </Header>
+          <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-5">
+            <div className="container relative mx-auto flex h-full flex-col items-center">
+              <div className="container flex flex-grow items-center justify-center">
+                {isLoading ? (
+                  <div className="flex flex-col items-center justify-center ">
+                    <div
+                      className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid  border-indigo-400 border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                      role="status"
+                    ></div>
+                  </div>
+                ) : (
+                  !state.isFinished && <WordPanel />
+                )}
+              </div>
+              <Speed />
             </div>
-            <Speed />
           </div>
-        </div>
-      </Layout>
-      <WordList />
+        </Layout>
+        <WordList />
+      </DefinitionSpeechProvider>
     </TypingContext.Provider>
   )
 }

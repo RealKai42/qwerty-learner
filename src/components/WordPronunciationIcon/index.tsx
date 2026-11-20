@@ -21,12 +21,20 @@ export const WordPronunciationIcon = React.forwardRef<
       return word.name
     }
   }
-  const { play, stop, isPlaying } = usePronunciationSound(currentWord())
+  const { play, playOnce, stop, isPlaying } = usePronunciationSound(currentWord())
 
   const playSound = useCallback(() => {
     stop()
     play()
   }, [play, stop])
+
+  const playSoundOnce = useCallback(
+    (onEnd: () => void) => {
+      stop()
+      playOnce(onEnd)
+    },
+    [playOnce, stop],
+  )
 
   useEffect(() => {
     return stop
@@ -36,14 +44,17 @@ export const WordPronunciationIcon = React.forwardRef<
     ref,
     () => ({
       play: playSound,
+      playOnce: playSoundOnce,
+      stop,
     }),
-    [playSound],
+    [playSound, playSoundOnce, stop],
   )
 
   return (
     <SoundIcon
       animated={isPlaying}
       onClick={playSound}
+      ariaLabel={`朗读英文单词 ${word.name}`}
       className={`cursor-pointer text-gray-600 ${className}`}
       iconClassName={iconClassName}
     />
@@ -54,4 +65,6 @@ WordPronunciationIcon.displayName = 'WordPronunciationIcon'
 
 export type WordPronunciationIconRef = {
   play: () => void
+  playOnce: (onEnd: () => void) => void
+  stop: () => void
 }

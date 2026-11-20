@@ -5,8 +5,16 @@ import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
+import { useDefinitionSpeech } from '@/contexts/DefinitionSpeechContext'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
+import {
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopWordConfigAtom,
+  phoneticConfigAtom,
+  pronunciationConfigAtom,
+  reviewModeInfoAtom,
+} from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
@@ -22,6 +30,14 @@ export default function WordPanel() {
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
   const currentWord = state.chapterData.words[state.chapterData.index]
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
+  const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
+  const { speak: speakDefinition } = useDefinitionSpeech()
+  const definitionSpeechId = currentWord ? `main:${state.chapterData.index}:${currentWord.name}` : ''
+
+  const playAutomaticDefinition = useCallback(() => {
+    if (!currentWord || !pronunciationConfig.isTransRead) return
+    speakDefinition(currentWord.trans.join('；'), definitionSpeechId)
+  }, [currentWord, definitionSpeechId, pronunciationConfig.isTransRead, speakDefinition])
 
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
@@ -171,10 +187,11 @@ export default function WordPanel() {
               </div>
             )}
             <div className="relative">
-              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
+              <WordComponent word={currentWord} onFinish={onFinish} onAutoDefinition={playAutomaticDefinition} key={wordComponentKey} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
                 trans={currentWord.trans.join('；')}
+                speechId={definitionSpeechId}
                 showTrans={shouldShowTranslation}
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}

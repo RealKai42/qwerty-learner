@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 const volumeIcons = [VolumeIcon, VolumeLowIcon, VolumeMediumIcon, VolumeHighIcon]
 
-export const SoundIcon = ({ duration = 500, animated = false, onClick, iconClassName, className }: SoundIconProps) => {
+export const SoundIcon = ({ duration = 500, animated = false, onClick, iconClassName, className, ariaLabel, disabled }: SoundIconProps) => {
   const [animationFrameIndex, setAnimationFrameIndex] = useState(0)
 
   useEffect(() => {
@@ -23,7 +23,13 @@ export const SoundIcon = ({ duration = 500, animated = false, onClick, iconClass
   const Icon = volumeIcons[animationFrameIndex]
 
   return (
-    <button type="button" className={`focus:outline-none dark:fill-gray-400 dark:opacity-80 ${className}`} onClick={onClick}>
+    <button
+      type="button"
+      className={`focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 dark:fill-gray-400 dark:opacity-80 ${className}`}
+      onClick={onClick}
+      aria-label={ariaLabel}
+      disabled={disabled}
+    >
       <Icon className={iconClassName} />
     </button>
   )
@@ -35,4 +41,6 @@ export type SoundIconProps = {
   onClick?: MouseEventHandler<HTMLButtonElement>
   iconClassName?: string
   className?: string
+  ariaLabel?: string
+  disabled?: boolean
 }
