@@ -546,7 +546,7 @@ const chinaExam: DictionaryResource[] = [
   },
 
   {
-    id: 'frequently_used_words03',
+    id: 'frequently_used_words02',
     name: '超频单词level 2',
     description: '超频单词level 2',
     category: '中国考试',
