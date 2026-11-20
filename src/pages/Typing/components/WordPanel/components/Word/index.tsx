@@ -51,6 +51,60 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
+  const saveWordRecordRef = useRef(saveWordRecord)
+  saveWordRecordRef.current = saveWordRecord
+  const pendingRecordRef = useRef({
+    word: word.name,
+    wrongCount: 0,
+    letterTimeArray: [] as number[],
+    letterMistake: {} as WordState['letterMistake'],
+    saved: false,
+  })
+  const savePendingRecord = () => {
+    const pending = pendingRecordRef.current
+    if (pending.saved || pending.wrongCount <= 0) return
+    pending.saved = true
+    saveWordRecordRef.current({
+      word: pending.word,
+      wrongCount: pending.wrongCount,
+      letterTimeArray: pending.letterTimeArray.slice(),
+      letterMistake: structuredClone(pending.letterMistake),
+    })
+  }
+
+  useEffect(() => {
+    const pending = pendingRecordRef.current
+    if (pending.word !== word.name) {
+      pendingRecordRef.current = {
+        word: word.name,
+        wrongCount: 0,
+        letterTimeArray: [],
+        letterMistake: {},
+        saved: false,
+      }
+      return
+    }
+
+    pendingRecordRef.current = {
+      word: word.name,
+      wrongCount: wordState.wrongCount,
+      letterTimeArray: wordState.letterTimeArray,
+      letterMistake: wordState.letterMistake,
+      saved: pending.saved,
+    }
+  })
+
+  useEffect(() => {
+    return () => {
+      savePendingRecord()
+    }
+  }, [state.chapterData.index, word.name])
+
+  useEffect(() => {
+    // Skipping the last word finishes the chapter without changing its name.
+    if (!state.isFinished) return
+    savePendingRecord()
+  }, [state.isFinished])
 
   useEffect(() => {
     // run only when word changes
@@ -252,26 +306,20 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   }, [wordState.hasWrong, setWordState])
 
   useEffect(() => {
-    if (wordState.isFinished) {
-      dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
+    if (!wordState.isFinished) return
 
-      // wordLogUploader({
-      //   headword: word.name,
-      //   timeStart: wordState.startTime,
-      //   timeEnd: wordState.endTime,
-      //   countInput: wordState.correctCount + wordState.wrongCount,
-      //   countCorrect: wordState.correctCount,
-      //   countTypo: wordState.wrongCount,
-      // })
+    dispatch({ type: TypingStateActionType.SET_IS_SAVING_RECORD, payload: true })
+    const pending = pendingRecordRef.current
+    if (!pending.saved) {
+      pending.saved = true
       saveWordRecord({
         word: word.name,
         wrongCount: wordState.wrongCount,
         letterTimeArray: wordState.letterTimeArray,
         letterMistake: wordState.letterMistake,
       })
-
-      onFinish()
     }
+    onFinish()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.isFinished])
 
