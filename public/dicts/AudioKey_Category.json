@@ -1,0 +1,330 @@
+[
+    {
+      "name": "air",
+      "trans": ["气体"]
+    },
+    {
+      "name": "aircraft",
+      "trans": ["航空器"]
+    },
+    {
+      "name": "alarms",
+      "trans": ["警报"]
+    },
+    {
+      "name": "ambience",
+      "trans": ["环境"]
+    },
+    {
+      "name": "animals",
+      "trans": ["动物"]
+    },
+    {
+      "name": "archived",
+      "trans": ["归档"]
+    },
+    {
+      "name": "beeps",
+      "trans": ["提示音"]
+    },
+    {
+      "name": "bells",
+      "trans": ["钟铃"]
+    },
+    {
+      "name": "birds",
+      "trans": ["鸟类"]
+    },
+    {
+      "name": "boats",
+      "trans": ["船舶"]
+    },
+    {
+      "name": "bullets",
+      "trans": ["子弹"]
+    },
+    {
+      "name": "cartoon",
+      "trans": ["卡通"]
+    },
+    {
+      "name": "ceramics",
+      "trans": ["陶瓷"]
+    },
+    {
+      "name": "chains",
+      "trans": ["链条"]
+    },
+    {
+      "name": "chemicals",
+      "trans": ["化学"]
+    },
+    {
+      "name": "clocks",
+      "trans": ["钟表"]
+    },
+    {
+      "name": "cloth",
+      "trans": ["布料"]
+    },
+    {
+      "name": "communications",
+      "trans": ["通讯"]
+    },
+    {
+      "name": "computers",
+      "trans": ["电脑"]
+    },
+    {
+      "name": "creatures",
+      "trans": ["生物"]
+    },
+    {
+      "name": "crowds",
+      "trans": ["人群"]
+    },
+    {
+      "name": "designed",
+      "trans": ["声音设计"]
+    },
+    {
+      "name": "destruction",
+      "trans": ["拆除"]
+    },
+    {
+      "name": "dirt & sand",
+      "trans": ["沙土"]
+    },
+    {
+      "name": "doors",
+      "trans": ["门"]
+    },
+    {
+      "name": "drawers",
+      "trans": ["抽屉"]
+    },
+    {
+      "name": "electricity",
+      "trans": ["电流"]
+    },
+    {
+      "name": "equipment",
+      "trans": ["器具"]
+    },
+    {
+      "name": "explosions",
+      "trans": ["爆炸"]
+    },
+    {
+      "name": "farts",
+      "trans": ["放屁"]
+    },
+    {
+      "name": "fight",
+      "trans": ["打斗"]
+    },
+    {
+      "name": "fire",
+      "trans": ["火"]
+    },
+    {
+      "name": "fireworks",
+      "trans": ["烟花"]
+    },
+    {
+      "name": "foley",
+      "trans": ["拟音"]
+    },
+    {
+      "name": "food & drink",
+      "trans": ["食物"]
+    },
+    {
+      "name": "footsteps",
+      "trans": ["脚步"]
+    },
+    {
+      "name": "games",
+      "trans": ["游戏"]
+    },
+    {
+      "name": "geothermal",
+      "trans": ["地热"]
+    },
+    {
+      "name": "glass",
+      "trans": ["玻璃"]
+    },
+    {
+      "name": "gore",
+      "trans": ["血"]
+    },
+    {
+      "name": "guns",
+      "trans": ["枪炮"]
+    },
+    {
+      "name": "horns",
+      "trans": ["号角"]
+    },
+    {
+      "name": "human",
+      "trans": ["人"]
+    },
+    {
+      "name": "ice",
+      "trans": ["冰"]
+    },
+    {
+      "name": "lasers",
+      "trans": ["激光"]
+    },
+    {
+      "name": "leather",
+      "trans": ["皮革"]
+    },
+    {
+      "name": "liquid & mud",
+      "trans": ["液体与流体"]
+    },
+    {
+      "name": "machines",
+      "trans": ["机器"]
+    },
+    {
+      "name": "magic",
+      "trans": ["魔法"]
+    },
+    {
+      "name": "mechanical",
+      "trans": ["机械"]
+    },
+    {
+      "name": "metal",
+      "trans": ["金属"]
+    },
+    {
+      "name": "motors",
+      "trans": ["马达"]
+    },
+    {
+      "name": "movement",
+      "trans": ["移动"]
+    },
+    {
+      "name": "musical",
+      "trans": ["乐句"]
+    },
+    {
+      "name": "natural disaster",
+      "trans": ["自然灾害"]
+    },
+    {
+      "name": "objects",
+      "trans": ["物件"]
+    },
+    {
+      "name": "paper",
+      "trans": ["纸张"]
+    },
+    {
+      "name": "plastic",
+      "trans": ["塑料"]
+    },
+    {
+      "name": "rain",
+      "trans": ["雨"]
+    },
+    {
+      "name": "robots",
+      "trans": ["机器人"]
+    },
+    {
+      "name": "rocks",
+      "trans": ["岩石"]
+    },
+    {
+      "name": "rope",
+      "trans": ["绳索"]
+    },
+    {
+      "name": "rubber",
+      "trans": ["橡胶"]
+    },
+    {
+      "name": "scifi",
+      "trans": ["科幻"]
+    },
+    {
+      "name": "snow",
+      "trans": ["雪"]
+    },
+    {
+      "name": "sports",
+      "trans": ["运动"]
+    },
+    {
+      "name": "swooshes",
+      "trans": ["嗖嗖声"]
+    },
+    {
+      "name": "tools",
+      "trans": ["工具"]
+    },
+    {
+      "name": "toys",
+      "trans": ["玩具"]
+    },
+    {
+      "name": "trains",
+      "trans": ["火车"]
+    },
+    {
+      "name": "user interface",
+      "trans": ["用户界面"]
+    },
+    {
+      "name": "vegetation",
+      "trans": ["植物"]
+    },
+    {
+      "name": "vehicles",
+      "trans": ["车辆"]
+    },
+    {
+      "name": "voices",
+      "trans": ["语音"]
+    },
+    {
+      "name": "water",
+      "trans": ["水"]
+    },
+    {
+      "name": "weapons",
+      "trans": ["武器"]
+    },
+    {
+      "name": "weather",
+      "trans": ["天气"]
+    },
+    {
+      "name": "whistles",
+      "trans": ["哨音"]
+    },
+    {
+      "name": "wind",
+      "trans": ["风"]
+    },
+    {
+      "name": "windows",
+      "trans": ["窗户"]
+    },
+    {
+      "name": "wings",
+      "trans": ["翅膀"]
+    },
+    {
+      "name": "wood",
+      "trans": ["木头"]
+    }
+  ]

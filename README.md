@@ -22,6 +22,9 @@
   <a><img src="https://img.shields.io/github/stars/RealKai42/qwerty-learner"/></a>
   <a><img src="https://img.shields.io/github/forks/RealKai42/qwerty-learner"/></a>
 </p>
+<div align=center>
+<a href="https://trendshift.io/repositories/3239" target="_blank" class="trendshift-badge"><img src="https://trendshift.io/api/badge/repositories/3239" alt="RealKai42%2Fqwerty-learner | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+</div>
 
 <div align=center>
 <img  src="docs/Screenshot.png"/>
@@ -225,7 +228,7 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 - JavaScript API. [@sdu-gyf](https://github.com/sdu-gyf)
 - Node.js API. [@chrysalis1215](https://github.com/chrysalis1215)
-- Java API. [@darkSheep](https://github.com/SFAfreshman)
+- Java API. [@darkSheep](https://github.com/darkSheep404)
 - Linux Command. [@归谜](https://github.com/vhxubo)
 - C#: List API [@nidbCN](https://github.com/nidbCN)
 

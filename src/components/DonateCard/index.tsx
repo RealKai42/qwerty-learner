@@ -64,14 +64,16 @@ export const DonateCard = () => {
   }
 
   useLayoutEffect(() => {
-    if (chapterNumber && chapterNumber !== 0 && chapterNumber % 10 === 0) {
-      const storedDate = window.localStorage.getItem(DONATE_DATE)
-      const date = dayjs(storedDate)
+    if (chapterNumber && chapterNumber !== 0 && chapterNumber % 5 === 0) {
       const now = dayjs()
-      const diff = now.diff(date, 'day')
-      if (!storedDate || diff > 60) {
-        setShow(true)
+
+      const storedDonateDate = window.localStorage.getItem(DONATE_DATE)
+      if (storedDonateDate) {
+        const diff = now.diff(dayjs(storedDonateDate), 'day')
+        if (diff <= 30) return
       }
+
+      setShow(true)
     }
   }, [chapterNumber])
 
@@ -112,20 +114,27 @@ export const DonateCard = () => {
                   <h1 className="gradient-text w-full pt-3 text-center text-[2.4rem] font-bold">{`${chapterNumber} Chapters Achievement !`}</h1>
                   <div className="flex w-full flex-col gap-4 px-4">
                     <p className="mx-auto px-4 indent-4">
-                      您刚刚完成了<HighlightedText> {chapterNumber} </HighlightedText>章节的练习，Qwerty Learner 已经陪你走过
-                      <HighlightedText> {dayFromFirstWord} </HighlightedText> 天，一起完成了
+                      Qwerty Learner 已经陪伴您走过
+                      <HighlightedText> {dayFromFirstWord} </HighlightedText>天，一起完成了
                       <HighlightedText> {wordNumber} </HighlightedText>
-                      词的练习，帮助您纠正了 <HighlightedText> {sumWrongCount} </HighlightedText>次错误输入，让我们一起为您的进步欢呼
+                      个词的练习，帮您纠正了 <HighlightedText> {sumWrongCount} </HighlightedText>
+                      次错误输入。每一次练习，都是您在变得更好的证明
                       <IconParty className="ml-2 inline-block" fontSize={16} />
                       <IconParty className="inline-block" fontSize={16} />
                       <IconParty className="inline-block" fontSize={16} />
                       <br />
                     </p>
+                    <p className="mx-auto px-4 indent-4 font-bold">
+                      Qwerty Learner 坚持 <span className="font-medium ">开源、无广告、无商业化</span> 已经
+                      <HighlightedText className="text-indigo-500"> {dayFromQwerty} </HighlightedText>天。
+                    </p>
                     <p className="mx-auto px-4 indent-4">
-                      Qwerty Learner 已经坚持 <span className="font-medium ">开放源码、无广告、无商业化</span> 运营
-                      <HighlightedText className="text-indigo-500"> {dayFromQwerty} </HighlightedText> 天，
-                      我们的目标是为所有学习者提供一个高效、便捷、无干扰的学习环境。我们诚挚地邀请您考虑进行捐赠，捐赠将直接用于维持 Qwerty
-                      的日常运营以及未来发展，让 Qwerty 与您一起成长。
+                      随着越来越多的同学加入，服务器和维护成本也在不断增长，
+                      <span className="font-semibold text-indigo-600 dark:text-indigo-400">
+                        目前项目的运营成本仍由开发者个人承担，Qwerty 的长期运营需要您的一份力量
+                      </span>
+                      。如果 Qwerty 对您的学习有所帮助，希望您能考虑捐赠支持我们——哪怕是一杯咖啡的金额，都能帮助 Qwerty
+                      继续陪伴更多学习者成长。
                     </p>
                     <p className="mx-auto px-4 indent-4 ">
                       为了感谢您的慷慨，单次 50 rmb 及以上的捐赠， 我们将回赠 Qwerty 的定制贴纸 5 枚
@@ -146,7 +155,7 @@ export const DonateCard = () => {
                       我已捐赠
                     </button>
                     <button type="button" className="my-btn-primary w-36 font-medium" onClick={onClickRemindMeLater}>
-                      之后提醒我
+                      下次再说
                     </button>
                   </div>
                 </div>

@@ -1,0 +1,2242 @@
+[
+  {
+    "name": "lipid",
+    "trans": "油脂；脂质"
+  },
+  {
+    "name": "photosynthetic",
+    "trans": "adj. 光合的；光合作用的"
+  },
+  {
+    "name": "enzyme",
+    "trans": "酶"
+  },
+  {
+    "name": "extracellular",
+    "trans": "adj.细胞外的"
+  },
+  {
+    "name": "cytosol",
+    "trans": "胞液，细胞溶质"
+  },
+  {
+    "name": "detergent",
+    "trans": "清洁剂；去垢剂"
+  },
+  {
+    "name": "fluorescence",
+    "trans": "荧光；荧光性"
+  },
+  {
+    "name": "Fluorescence",
+    "trans": "荧光|萤光|光度"
+  },
+  {
+    "name": "Inherent fluorescence",
+    "trans": "固有荧光"
+  },
+  {
+    "name": "delayed fluorescence",
+    "trans": "延迟荧光|迟滞荧光|迟延荧光"
+  },
+  {
+    "name": "Rafts",
+    "trans": "皮筏|木筏"
+  },
+  {
+    "name": "Life Rafts",
+    "trans": "救生艇"
+  },
+  {
+    "name": "Lipid Rafts",
+    "trans": "脂筏|脂质筏|脂质浮排"
+  },
+  {
+    "name": "numerical",
+    "trans": "adj. 数字的；数值的；用数字表示的"
+  },
+  {
+    "name": "trypsin",
+    "trans": "胰蛋白酶；胰岛素"
+  },
+  {
+    "name": "Trypsin",
+    "trans": "胰蛋白酶|胰朊酶|胰蛋白"
+  },
+  {
+    "name": "insulin trypsin",
+    "trans": "胰岛素"
+  },
+  {
+    "name": "Trypsin Crystallized",
+    "trans": "释义：结晶胰蛋白酶[蛋白水解酶"
+  },
+  {
+    "name": "yeast",
+    "trans": "酵母；酵母片；泡沫；引起骚动因素"
+  },
+  {
+    "name": "detect",
+    "trans": "vt. 发现；察觉；探测"
+  },
+  {
+    "name": "halt",
+    "trans": "vi. 停止；踌躇，犹豫；立定 n. 停止；立定；休息 vt. 使停止；使立定"
+  },
+  {
+    "name": "convert",
+    "trans": "vt. 使转变；转换…；使…改变信仰 vi. 转变，变换；皈依n. 皈依者"
+  },
+  {
+    "name": "whereby",
+    "trans": "adv. 凭什么；靠那个"
+  },
+  {
+    "name": "amino",
+    "trans": "adj. 氨基的n. 氨基"
+  },
+  {
+    "name": "peptides",
+    "trans": "多肽类；缩氨酸"
+  },
+  {
+    "name": "dissolved gas",
+    "trans": "溶解气体"
+  },
+  {
+    "name": "dissolved",
+    "trans": "adj. 溶解的；溶化的v. 使溶解；使溶化"
+  },
+  {
+    "name": "sap",
+    "trans": "树液；活力；坑道；精力，元气 vt. 使衰竭；挖掘以破坏基础 vi. 挖坑道"
+  },
+  {
+    "name": "endocrine",
+    "trans": "激素；内分泌；内分泌物adj. 内分泌的；激素的"
+  },
+  {
+    "name": "pancreas",
+    "trans": "胰腺"
+  },
+  {
+    "name": "gland",
+    "trans": "腺"
+  },
+  {
+    "name": "glucouse",
+    "trans": "葡萄糖"
+  },
+  {
+    "name": "insulin",
+    "trans": "胰岛素"
+  },
+  {
+    "name": "regulate",
+    "trans": "vt. 调节，规定；有系统的管理；控制；校准"
+  },
+  {
+    "name": "paracrine",
+    "trans": "旁分泌；副分泌；旁泌性"
+  },
+  {
+    "name": "diffuse",
+    "trans": "adj. 散开的；弥漫的vt. 传播；扩散；漫射 vi. 传播；四散"
+  },
+  {
+    "name": "mediator",
+    "trans": "调停者；传递者；中介物"
+  },
+  {
+    "name": "autocrine",
+    "trans": "自分泌，自泌"
+  },
+  {
+    "name": "proliferation",
+    "trans": "增殖，扩散；分芽繁殖"
+  },
+  {
+    "name": "neuronal",
+    "trans": "adj. 神经元的"
+  },
+  {
+    "name": "axon",
+    "trans": "轴索，轴突"
+  },
+  {
+    "name": "synapse",
+    "trans": "突触"
+  },
+  {
+    "name": "spinal",
+    "trans": "adj. 脊骨的；脊髓的；脊柱的；尖刺的；针的 n. 脊椎麻醉"
+  },
+  {
+    "name": "cord",
+    "trans": "束缚；绳索vt. 用绳子捆绑"
+  },
+  {
+    "name": "toe",
+    "trans": "脚趾；足尖vt. 用脚尖走；以趾踏触vi. 动脚尖；用足尖跳舞"
+  },
+  {
+    "name": "neurotransmitter",
+    "trans": "神经递质；神经传递素"
+  },
+  {
+    "name": "intimate",
+    "trans": "adj. 亲密的；私人的；精通的 n. 至交；知己vt. 暗示; 通知；宣布"
+  },
+  {
+    "name": "lodge",
+    "trans": "旅馆；门房；集会处；山林小屋vt. 提出；寄存；借住；嵌入vi. 寄宿"
+  },
+  {
+    "name": "plasma membrane",
+    "trans": "质膜；浆膜"
+  },
+  {
+    "name": "embryonic",
+    "trans": "adj. 胚胎的；似胚胎的"
+  },
+  {
+    "name": "adjacent",
+    "trans": "adj. 邻近的，毗连的"
+  },
+  {
+    "name": "akin",
+    "trans": "adj. 同族的；同类的；类似的"
+  },
+  {
+    "name": "epithelial",
+    "trans": "adj. 上皮的；皮膜的"
+  },
+  {
+    "name": "bind",
+    "trans": "vi. 结合；装订；有约束力；过紧vt. 绑；约束；装订；凝固n. 捆绑；困境"
+  },
+  {
+    "name": "mediate",
+    "trans": "vi. 调解；斡旋；居中vt. 调停；传达adj. 间接的；居间的"
+  },
+  {
+    "name": "fatty acid",
+    "trans": "脂肪酸"
+  },
+  {
+    "name": "disorder",
+    "trans": "混乱；骚乱vt. 扰乱；使失调"
+  },
+  {
+    "name": "kinase",
+    "trans": "激酶；致活酶"
+  },
+  {
+    "name": "Kinase",
+    "trans": "激酶|致活酶"
+  },
+  {
+    "name": "thymidine kinase",
+    "trans": "胸腺嘧啶核苷漱酶|胸苷激酶|胸腺嘧啶脱氧核"
+  },
+  {
+    "name": "Glucose kinase",
+    "trans": "葡萄糖激酶"
+  },
+  {
+    "name": "trimeric",
+    "trans": "adj. 三聚物的"
+  },
+  {
+    "name": "circuit",
+    "trans": "电路，回路；环道；一圈；巡回vi. 环行vt. 绕回…环行"
+  },
+  {
+    "name": "ligand",
+    "trans": "配合基"
+  },
+  {
+    "name": "physiology",
+    "trans": "生理学；生理机能"
+  },
+  {
+    "name": "hijacking",
+    "trans": "劫持"
+  },
+  {
+    "name": "cholera",
+    "trans": "霍乱"
+  },
+  {
+    "name": "ion",
+    "trans": "离子"
+  },
+  {
+    "name": "Ion",
+    "trans": "离子|智能光网络|翼扬"
+  },
+  {
+    "name": "ion plating",
+    "trans": "离子电镀|离子镀|离子镀敷"
+  },
+  {
+    "name": "descript ion",
+    "trans": "品名"
+  },
+  {
+    "name": "stretch",
+    "trans": "\"n. 伸展，延伸adj. 可伸缩的vt. 伸展"
+  },
+  {
+    "name": "Stretch",
+    "trans": "伸展|拉伸|缩放"
+  },
+  {
+    "name": "reel stretch",
+    "trans": "卷圆压平|卷..."
+  },
+  {
+    "name": "stretch receptor",
+    "trans": "牵张感受器|伸展感受器|(肌肉的)牵张感受器"
+  },
+  {
+    "name": "hypertonic",
+    "trans": "adj. 高渗的；张力亢进的"
+  },
+  {
+    "name": "Hypertonic",
+    "trans": "张力亢进的|高渗的|高张的，高渗的"
+  },
+  {
+    "name": "Hypertonic incoordinate",
+    "trans": "高张性、不协调和延长的子宫收缩"
+  },
+  {
+    "name": "hypertonic gallbladder",
+    "trans": "胆囊张力过强"
+  },
+  {
+    "name": "hypotonic",
+    "trans": "adj. 低渗的；张力减退的"
+  },
+  {
+    "name": "Hypotonic",
+    "trans": "低张的|低渗的|低渗"
+  },
+  {
+    "name": "hypotonic hypoxia",
+    "trans": "低张性缺氧"
+  },
+  {
+    "name": "hypotonic duodenography",
+    "trans": "低张力十二指肠造影术|低张十二指肠造影"
+  },
+  {
+    "name": "isotonic",
+    "trans": "adj. 等张的，等压的"
+  },
+  {
+    "name": "Isotonic",
+    "trans": "等渗的|等张的，等渗的|等分的"
+  },
+  {
+    "name": "isotonic contraction",
+    "trans": "\" 等张力性收缩|等张收缩"
+  },
+  {
+    "name": "isotonic coefficient",
+    "trans": "等张系数|等渗系数|等渗透压系数"
+  },
+  {
+    "name": "osmosis",
+    "trans": "渗透；渗透性；渗透作用"
+  },
+  {
+    "name": "osmosis",
+    "trans": "渗透|渗透作用|渗透性"
+  },
+  {
+    "name": "electric osmosis",
+    "trans": "电渗透|电渗析|电渗析(现象) 英文："
+  },
+  {
+    "name": "electrolyte osmosis",
+    "trans": "电解质渗透"
+  },
+  {
+    "name": "aquaporin",
+    "trans": "水通道蛋白"
+  },
+  {
+    "name": "Aquaporin",
+    "trans": "水通道蛋白|肌肤水通道|水孔蛋白"
+  },
+  {
+    "name": "aquaporin AQP",
+    "trans": "水通道|水通道蛋白"
+  },
+  {
+    "name": "aquaporin(AQP)",
+    "trans": "水孔蛋白"
+  },
+  {
+    "name": "congenital",
+    "trans": "adj. 先天的，天生的；天赋的"
+  },
+  {
+    "name": "Congenital",
+    "trans": "先天性病|天生的|先天的"
+  },
+  {
+    "name": "Congenital Dysbolism",
+    "trans": "先天性代谢障碍：|先天性代谢障碍"
+  },
+  {
+    "name": "congenital malformation",
+    "trans": "先天畸形|先天性畸型|先天性畸形"
+  },
+  {
+    "name": "nephrogenic",
+    "trans": "adj. 肾发生的；肾原性的"
+  },
+  {
+    "name": "Nephrogenic",
+    "trans": "肾原性的|生肾的"
+  },
+  {
+    "name": "nephrogenic ridge",
+    "trans": "生肾脊"
+  },
+  {
+    "name": "nephrogenic cord",
+    "trans": "生肾索"
+  },
+  {
+    "name": "diabetes",
+    "trans": "糖尿病；多尿症"
+  },
+  {
+    "name": "Diabetes",
+    "trans": "糖尿病|??病|肠内营养混悬液"
+  },
+  {
+    "name": "Diabetes Mellitus",
+    "trans": "糖尿病|1型糖尿病|??病"
+  },
+  {
+    "name": "diabetes insipidus",
+    "trans": "尿崩症|尿崩病|糖尿病性尿崩症"
+  },
+  {
+    "name": "physician",
+    "trans": "医师；内科医师"
+  },
+  {
+    "name": "Physician",
+    "trans": "内科医生|内科医师|医师"
+  },
+  {
+    "name": "chief physician",
+    "trans": "主任医师|内科主任"
+  },
+  {
+    "name": "Specialist Physician",
+    "trans": "执业内科医生|内科医生|内科专家"
+  },
+  {
+    "name": "alternatively",
+    "trans": "adv. 非此即彼；二者择一地；作为一种选择"
+  },
+  {
+    "name": "Alternatively",
+    "trans": "\" 做为选择"
+  },
+  {
+    "name": "or alternatively",
+    "trans": "或者|换个|另一个办法"
+  },
+  {
+    "name": "a alternatively adva",
+    "trans": "做为选择，二者择一地"
+  },
+  {
+    "name": "abbreviation",
+    "trans": "缩写；缩写词"
+  },
+  {
+    "name": "Abbreviation",
+    "trans": "缩写|缩语和略语|简写"
+  },
+  {
+    "name": "acceptable abbreviation",
+    "trans": "允许的缩写代号|答应的缩写代号"
+  },
+  {
+    "name": "standard abbreviation",
+    "trans": "标准缩写"
+  },
+  {
+    "name": "calcium",
+    "trans": "钙"
+  },
+  {
+    "name": "Calcium",
+    "trans": "钙|钙：|钙离子"
+  },
+  {
+    "name": "calcium nitrate",
+    "trans": "\" 硝酸钙|酸钙|硝酸钙"
+  },
+  {
+    "name": "Calcium Malate",
+    "trans": "苹果酸钙|释义：苹果酸钙"
+  },
+  {
+    "name": "unsubscribe",
+    "trans": "取消订阅；注销；注销账户"
+  },
+  {
+    "name": "antiserum",
+    "trans": "抗血清"
+  },
+  {
+    "name": "Antiserum",
+    "trans": "抗血清|抗毒血清|免疫蛋白"
+  },
+  {
+    "name": "polyvalent antiserum",
+    "trans": "多价抗血清|释义：多价抗血清"
+  },
+  {
+    "name": "monospecific antiserum",
+    "trans": "单特异性抗血清|单一〔特异〕抗血清"
+  },
+  {
+    "name": "oocyte",
+    "trans": "卵母细胞"
+  },
+  {
+    "name": "Oocyte",
+    "trans": "卵母细胞|卵细胞|卵母细胞，卵原细胞"
+  },
+  {
+    "name": "oocyte recovery",
+    "trans": "卵母细胞复原"
+  },
+  {
+    "name": "oocyte maturation",
+    "trans": "卵母细胞的成熟|释义：卵母细胞成熟|卵母细胞成熟"
+  },
+  {
+    "name": "advocate",
+    "trans": "vt. 提倡，主张，拥护 n. 提倡者；支持者；律师"
+  },
+  {
+    "name": "derive",
+    "trans": "vt. 源于；得自 vi. 起源"
+  },
+  {
+    "name": "bracket",
+    "trans": "支架；括号；墙上凸出的托架 vt. 括在一起；把…归入同一类；排除"
+  },
+  {
+    "name": "refine",
+    "trans": "vt. 精炼，提纯；改善；使…文雅"
+  },
+  {
+    "name": "crude",
+    "trans": "原油；天然的物质adj. 粗糙的；天然的，未加工的；粗鲁的"
+  },
+  {
+    "name": "Crude",
+    "trans": "原油|天然的雨林|粗糙"
+  },
+  {
+    "name": "crude steel",
+    "trans": "粗钢|原钢"
+  },
+  {
+    "name": "crude fiber",
+    "trans": "\" 粗纤维|释义：粗纤维"
+  },
+  {
+    "name": "consistent",
+    "trans": "adj. 始终如一的，一致的；坚持的"
+  },
+  {
+    "name": "striking",
+    "trans": "adj. 显著的，突出的，惊人的；打击的；罢工的 v. 打(strike的ing形式)"
+  },
+  {
+    "name": "sustain",
+    "trans": "vt. 支撑，承担；维持；忍受；供养；证实"
+  },
+  {
+    "name": "moisture",
+    "trans": "潮湿；水分；降雨量；湿度"
+  },
+  {
+    "name": "laboratory",
+    "trans": "实验室，研究室"
+  },
+  {
+    "name": "perceive",
+    "trans": "vt. 察觉，感觉；理解；认知 vi. 感到，感知；认识到"
+  },
+  {
+    "name": "fabric",
+    "trans": "织物；构造；建筑物；组织；布"
+  },
+  {
+    "name": "synthetic",
+    "trans": "adj. 合成的，人造的；综合的n. 合成物"
+  },
+  {
+    "name": "bred",
+    "trans": "繁殖breed的过去式和过去分词"
+  },
+  {
+    "name": "probability",
+    "trans": "可能性"
+  },
+  {
+    "name": "Possibility",
+    "trans": "可能性"
+  },
+  {
+    "name": "feasibility",
+    "trans": "可能性"
+  },
+  {
+    "name": "soluble",
+    "trans": "adj. 可溶的，可溶解的；可解决的"
+  },
+  {
+    "name": "subunit",
+    "trans": "亚组；副族"
+  },
+  {
+    "name": "filamentous",
+    "trans": "adj. 纤维所成的；细丝状的；如丝的"
+  },
+  {
+    "name": "polymer",
+    "trans": "聚合物"
+  },
+  {
+    "name": "reassembly",
+    "trans": "adv. 重新装配的；重组的"
+  },
+  {
+    "name": "segment",
+    "trans": "vi. 分割 n. 段；部分vt. 分割"
+  },
+  {
+    "name": "shrink",
+    "trans": "vi. 收缩；畏缩 vt. 使缩小，使收缩 n. 收缩"
+  },
+  {
+    "name": "cytoplasm",
+    "trans": "细胞质"
+  },
+  {
+    "name": "conduit",
+    "trans": "导管；沟渠；导水管"
+  },
+  {
+    "name": "permeability",
+    "trans": "弥漫；渗透性；[物"
+  },
+  {
+    "name": "glaring",
+    "trans": "adj. 耀眼的；瞪视的；炯炯的"
+  },
+  {
+    "name": "gospel",
+    "trans": "真理；信条adj. 传播福音的；福音赞美诗的"
+  },
+  {
+    "name": "Gospel",
+    "trans": "福音 | 福音音乐 | 福音书"
+  },
+  {
+    "name": "Invitrogen",
+    "trans": "英杰公司；表达载体"
+  },
+  {
+    "name": "pigment",
+    "trans": "颜料；色素vt. 给…着色vi. 呈现颜色"
+  },
+  {
+    "name": "fuel",
+    "trans": "vi. 得到燃料vt. 供以燃料，加燃料 n. 燃料；刺激因素"
+  },
+  {
+    "name": "proteome",
+    "trans": "蛋白质组"
+  },
+  {
+    "name": "phylogenetic",
+    "trans": "adj.系统发生的；动植物种类史的"
+  },
+  {
+    "name": "phylogenetics",
+    "trans": "系统发生学；种系遗传学"
+  },
+  {
+    "name": "thinner",
+    "trans": "稀释剂，冲淡剂 adj. 薄的；细的；瘦的"
+  },
+  {
+    "name": "warfarin",
+    "trans": "华法令阻凝剂；杀鼠灵"
+  },
+  {
+    "name": "pharmacology",
+    "trans": "药物学，药理学"
+  },
+  {
+    "name": "tailor",
+    "trans": "vt. 剪裁；使合适 n. 裁缝 vi. 做裁缝"
+  },
+  {
+    "name": "pharmacogenetic",
+    "trans": "；遗传药理学；药物反应遗传学"
+  },
+  {
+    "name": "pharmacogenetics",
+    "trans": "遗传药理学；药物基因学"
+  },
+  {
+    "name": "disseminate",
+    "trans": "vt. 散布；宣传，传播vi. 散布；广为传播"
+  },
+  {
+    "name": "interface",
+    "trans": "接口；界面；接触面"
+  },
+  {
+    "name": "stagger",
+    "trans": "vt. 使交错；使犹豫vi. 蹒跚；犹豫n.交错安排adj. 交错的；错开的"
+  },
+  {
+    "name": "propel",
+    "trans": "vt. 推进；驱使；驱策；激励"
+  },
+  {
+    "name": "manipulate",
+    "trans": "vt. 操作；操纵；巧妙地处理；篡改"
+  },
+  {
+    "name": "atlas",
+    "trans": "地图集"
+  },
+  {
+    "name": "collaboration",
+    "trans": "合作；通敌；勾结"
+  },
+  {
+    "name": "algorithm",
+    "trans": "算法，运算法则"
+  },
+  {
+    "name": "hemoglobin",
+    "trans": "血红蛋白；血红素"
+  },
+  {
+    "name": "globin",
+    "trans": "球蛋白，珠朊"
+  },
+  {
+    "name": "subset",
+    "trans": "子集；子设备；小团体"
+  },
+  {
+    "name": "roundwood",
+    "trans": "圆材"
+  },
+  {
+    "name": "roundworm",
+    "trans": "蛔虫"
+  },
+  {
+    "name": "homologous",
+    "trans": "adj. 相应的；同源的；类似的；一致的"
+  },
+  {
+    "name": "ribosomal",
+    "trans": "adj. 核醣体的"
+  },
+  {
+    "name": "mitochondria",
+    "trans": "线粒体"
+  },
+  {
+    "name": "cytochrome",
+    "trans": "细胞色素"
+  },
+  {
+    "name": "colorectal",
+    "trans": "adj. 结肠直肠的"
+  },
+  {
+    "name": "soybean",
+    "trans": "大豆；黄豆"
+  },
+  {
+    "name": "query",
+    "trans": "疑问，质问；疑问号vt. 询问；对……表示疑问vi. 询问；表示怀疑"
+  },
+  {
+    "name": "advent",
+    "trans": "到来；出现；基督降临；基督降临节"
+  },
+  {
+    "name": "cystic",
+    "trans": "adj. 囊的；膀胱的，胆囊的；胞囊的"
+  },
+  {
+    "name": "fibrosis",
+    "trans": "纤维化，纤维变性"
+  },
+  {
+    "name": "taxonomy",
+    "trans": "分类学；分类法"
+  },
+  {
+    "name": "subsequent",
+    "trans": "adj. 后来的，随后的"
+  },
+  {
+    "name": "chloride",
+    "trans": "氯化物"
+  },
+  {
+    "name": "mucus",
+    "trans": "粘液；黏液"
+  },
+  {
+    "name": "airway",
+    "trans": "导气管；空中航线；通风孔"
+  },
+  {
+    "name": "respiratory",
+    "trans": "adj. 呼吸的"
+  },
+  {
+    "name": "hallmark",
+    "trans": "品质证明；特点vt. 给…盖上品质证明印记；使具有…标志"
+  },
+  {
+    "name": "opsin",
+    "trans": "视蛋白"
+  },
+  {
+    "name": "navigate",
+    "trans": "vt. 航行于；驾驶，操纵；使通过vi. 航行，航空"
+  },
+  {
+    "name": "prone",
+    "trans": "adj. 有…倾向的，易于…的；俯卧的"
+  },
+  {
+    "name": "substitution",
+    "trans": "代替；置换；代替物"
+  },
+  {
+    "name": "deleting",
+    "trans": "正在删除 v. 删除；擦去"
+  },
+  {
+    "name": "actin",
+    "trans": "肌动蛋白"
+  },
+  {
+    "name": "parameter",
+    "trans": "参数；参量；系数"
+  },
+  {
+    "name": "redundant",
+    "trans": "adj. 多余的，过剩的；冗长的，累赘的；被解雇的，失业的"
+  },
+  {
+    "name": "divergence",
+    "trans": "分歧"
+  },
+  {
+    "name": "intron",
+    "trans": "基因内区"
+  },
+  {
+    "name": "algorithms",
+    "trans": "算法；算法式"
+  },
+  {
+    "name": "motif",
+    "trans": "主题；动机；图形；主旨；意念"
+  },
+  {
+    "name": "accession",
+    "trans": "增加；就职；到达vt. 登记入册"
+  },
+  {
+    "name": "crystallography",
+    "trans": "结晶学"
+  },
+  {
+    "name": "resonance",
+    "trans": "共振；共鸣；反响"
+  },
+  {
+    "name": "spectroscopy",
+    "trans": "光谱学"
+  },
+  {
+    "name": "yield",
+    "trans": "vt. 出产；屈服；放弃vi. 屈服，投降n. 收益；产量"
+  },
+  {
+    "name": "weed",
+    "trans": "vt. 除草；铲除n. 杂草，野草；菸草vi. 除草"
+  },
+  {
+    "name": "apoptosis",
+    "trans": "细胞凋亡；细胞死亡"
+  },
+  {
+    "name": "engulf",
+    "trans": "vt. 吞没；吞食，狼吞虎咽"
+  },
+  {
+    "name": "debris",
+    "trans": "碎片，残骸"
+  },
+  {
+    "name": "placenta",
+    "trans": "胎盘；胎座"
+  },
+  {
+    "name": "dystrophin",
+    "trans": "肌营养不良蛋白；抗肌萎缩蛋白"
+  },
+  {
+    "name": "Huntingtin",
+    "trans": "变异亨廷顿蛋白 | 亨廷顿蛋白 | 蛋白"
+  },
+  {
+    "name": "chimpanzee",
+    "trans": "黑猩猩"
+  },
+  {
+    "name": "prairie",
+    "trans": "大草原；牧场"
+  },
+  {
+    "name": "rodent",
+    "trans": "adj. 咬的，嚼的；啮齿类的；侵蚀性的n. 啮齿动物"
+  },
+  {
+    "name": "hypothalamus",
+    "trans": "下丘脑"
+  },
+  {
+    "name": "vole",
+    "trans": "大满贯；野鼠 vi. 赢得大满贯"
+  },
+  {
+    "name": "promiscuity",
+    "trans": "乱交；混乱"
+  },
+  {
+    "name": "promiscuous",
+    "trans": "adj. 杂乱的；混杂的 adv. 偶然地；胡乱地"
+  },
+  {
+    "name": "deficit",
+    "trans": "赤字；不足额"
+  },
+  {
+    "name": "autism",
+    "trans": "孤独症；自我中心主义"
+  },
+  {
+    "name": "predisposition",
+    "trans": "易染病体质；素质；倾向"
+  },
+  {
+    "name": "variant",
+    "trans": "adj. 不同的；多样的n. 变体；转化"
+  },
+  {
+    "name": "reinforcement",
+    "trans": "加固；增援；援军；加强"
+  },
+  {
+    "name": "endeavor",
+    "trans": "努力；尽力vi. 努力；尽力"
+  },
+  {
+    "name": "initiating",
+    "trans": "开始"
+  },
+  {
+    "name": "rival",
+    "trans": "对手；竞争者vt. 与…竞争；比得上某人vi. 竞争adj. 竞争的"
+  },
+  {
+    "name": "scope",
+    "trans": "视野；眼界；范围；余地；导弹射程vt. 审视"
+  },
+  {
+    "name": "paramount",
+    "trans": "adj. 最重要的，主要的；至高无上的n. 最高统治者"
+  },
+  {
+    "name": "implication",
+    "trans": "暗示；牵连，卷入；含义"
+  },
+  {
+    "name": "zygote",
+    "trans": "受精卵；接合子"
+  },
+  {
+    "name": "automated",
+    "trans": "adj. 自动化的；机械化的v. 自动操作；自动化"
+  },
+  {
+    "name": "Nematoda",
+    "trans": "线虫类"
+  },
+  {
+    "name": "embryo",
+    "trans": "胚胎；胚芽；初期adj. 初期的；胚胎的"
+  },
+  {
+    "name": "corn",
+    "trans": "玉米；谷物；鸡眼vt. 腌；使成颗粒"
+  },
+  {
+    "name": "Zea mays",
+    "trans": "玉米；玉蜀黍"
+  },
+  {
+    "name": "Arabidopsis thaliana",
+    "trans": "拟南芥；阿拉伯芥；鼠耳芥"
+  },
+  {
+    "name": "archaea",
+    "trans": "古生菌"
+  },
+  {
+    "name": "halophile",
+    "trans": "喜盐生物"
+  },
+  {
+    "name": "thermophile",
+    "trans": "嗜热生物；喜温生物 adj. 嗜热的；喜温的"
+  },
+  {
+    "name": "thermophilic",
+    "trans": "adj. 适温的，喜温的"
+  },
+  {
+    "name": "submarine",
+    "trans": "潜水艇；海底生物adj. 水下的；海底的 v.潜水"
+  },
+  {
+    "name": "thermal",
+    "trans": "adj. 热的，热量的n. 上升暖气流"
+  },
+  {
+    "name": "vent",
+    "trans": "出口；通风孔; 发泄vt. 发泄感情；放出…；给…开孔vi.减轻压力；放出"
+  },
+  {
+    "name": "purebred",
+    "trans": "adj. 纯种的n. 纯种的动物"
+  },
+  {
+    "name": "shepherd",
+    "trans": "vt. 带领；看管；牧羊；指导n. 牧羊人；指导者；牧师"
+  },
+  {
+    "name": "border",
+    "trans": "边界；边境；国界vt. 接近；与…接壤；在…上镶边vi. 接界；近似"
+  },
+  {
+    "name": "breeds",
+    "trans": "品种；族类v. 养育；导致（breed的三单形式"
+  },
+  {
+    "name": "attenuate",
+    "trans": "adj. 稀薄的；细小的；减弱的vt. 使纤细vi.变弱"
+  },
+  {
+    "name": "canine",
+    "trans": "adj. 犬科的；犬的；似犬的；犬齿的n. 犬齿；犬"
+  },
+  {
+    "name": "pamper",
+    "trans": "vt. 纵容；使…过量；给…吃得过多"
+  },
+  {
+    "name": "detrimental",
+    "trans": "adj. 有害的；不利的n. 有害的人；不受欢迎的求婚者"
+  },
+  {
+    "name": "tandem",
+    "trans": "串联；串座双人自行车adj. 串联的adv. 一前一后地；纵排地"
+  },
+  {
+    "name": "depict",
+    "trans": "vt. 描画；描述"
+  },
+  {
+    "name": "meiotic",
+    "trans": "adj. 减数分裂的"
+  },
+  {
+    "name": "centimorgan",
+    "trans": "厘摩"
+  },
+  {
+    "name": "Alzheimer",
+    "trans": "老年痴呆症"
+  },
+  {
+    "name": "red tape",
+    "trans": "繁文缛节；官样文章"
+  },
+  {
+    "name": "stiff",
+    "trans": "adj. 严厉的；坚硬的adv. 彻底地n. 死尸；流通票据 vi. 在商业上惨败"
+  },
+  {
+    "name": "congress",
+    "trans": "国会；会议；代表大会；社交"
+  },
+  {
+    "name": "modify",
+    "trans": "vt. 修改，修饰；更改vi. 修改"
+  },
+  {
+    "name": "pipet",
+    "trans": "移液管；吸量管；球管 vt. 用移液管移"
+  },
+  {
+    "name": "ingenious",
+    "trans": "adj. 心灵手巧的；有独创性的；机灵的，精制的"
+  },
+  {
+    "name": "painstaking",
+    "trans": "adj. 勤勉的；小心的；艰苦的n. 辛苦；勤勉"
+  },
+  {
+    "name": "dideoxy",
+    "trans": "双脱氧法"
+  },
+  {
+    "name": "deoxy",
+    "trans": "adj. 脱氧的；灭氧的"
+  },
+  {
+    "name": "purple",
+    "trans": "adj. 紫色的；帝王的；华而不实的n. 紫色vi. 变成紫色vt. 使成紫色"
+  },
+  {
+    "name": "align",
+    "trans": "vt. 使结盟；使成一行；匹配vi. 排列；排成一行"
+  },
+  {
+    "name": "skeptic",
+    "trans": "怀疑论者；怀疑者；无神论者"
+  },
+  {
+    "name": "outfit",
+    "trans": "用具；机构；全套装备vi. 得到装备vt. 配备；供应"
+  },
+  {
+    "name": "reagent",
+    "trans": "试剂；反应物"
+  },
+  {
+    "name": "therapeutic",
+    "trans": "adj. 治疗的；治疗学的；有益于健康的n. 治疗剂；治疗学家"
+  },
+  {
+    "name": "simultaneously",
+    "trans": "adv. 同时地"
+  },
+  {
+    "name": "nucleus",
+    "trans": "核，核心；原子核"
+  },
+  {
+    "name": "nucleus",
+    "trans": "细胞核"
+  },
+  {
+    "name": "splice",
+    "trans": "vt. 接合；拼接；使结婚n. 接合；结婚"
+  },
+  {
+    "name": "precursor",
+    "trans": "先驱，前导"
+  },
+  {
+    "name": "substantially",
+    "trans": "adv. 实质上；大体上；充分地"
+  },
+  {
+    "name": "muscular",
+    "trans": "adj. 肌肉发达的；肌肉的；强健的"
+  },
+  {
+    "name": "dystrophia",
+    "trans": "营养不良；营养障碍；发育不全"
+  },
+  {
+    "name": "dystrophy",
+    "trans": "营养障碍；营养失调"
+  },
+  {
+    "name": "cluster",
+    "trans": "丛；串；簇；群vi. 丛生；群聚vt. 使聚集；聚集在某人的周围"
+  },
+  {
+    "name": "appendage",
+    "trans": "附加物；下属；附器"
+  },
+  {
+    "name": "epigenetic",
+    "trans": "adj. 后生的；外成的；渐成说的"
+  },
+  {
+    "name": "spill",
+    "trans": "vt. 使流出；使摔下vi. 溢出，摔下；涌流n. 溢出，溢出量；摔下；小塞子"
+  },
+  {
+    "name": "predate",
+    "trans": "vt. 在日期上早于"
+  },
+  {
+    "name": "intriguing",
+    "trans": "adj. 迷人的；有趣的v. 引起…的兴趣；私通"
+  },
+  {
+    "name": "versatile",
+    "trans": "adj. 多才多艺的；通用的，万能的；多面手的"
+  },
+  {
+    "name": "forensic",
+    "trans": "adj. 辩论的；法院的；适于法庭的"
+  },
+  {
+    "name": "variability",
+    "trans": "可变性，变化性；变异性"
+  },
+  {
+    "name": "paternity",
+    "trans": "父权；父系；父系后裔"
+  },
+  {
+    "name": "mitochondrial",
+    "trans": "adj. 线粒体的"
+  },
+  {
+    "name": "contradict",
+    "trans": "vt. 反驳；否定；与…矛盾；与…抵触vi. 反驳；否认；发生矛盾"
+  },
+  {
+    "name": "trace",
+    "trans": "vi. 追溯；沿路走vt. 追踪，查探；描绘；回溯n. 痕迹，微量；迹线；缰绳"
+  },
+  {
+    "name": "probe",
+    "trans": "探针；调查vi. 调查；探测vt. 探查；用探针探测"
+  },
+  {
+    "name": "bioterror",
+    "trans": "生物恐怖者"
+  },
+  {
+    "name": "upheaval",
+    "trans": "剧变；隆起；举起"
+  },
+  {
+    "name": "Upheaval",
+    "trans": "隆起 | 剧变 | 起来"
+  },
+  {
+    "name": "track",
+    "trans": "足迹，踪迹；轨道； vt. 追踪；通过；用纤拉vi. 走；追踪；留下足迹"
+  },
+  {
+    "name": "prosecute",
+    "trans": "vt. 贯彻；从事；检举；依法进行vi. 告发；起诉；作检察官"
+  },
+  {
+    "name": "poachers",
+    "trans": "偷猎者；侵入者"
+  },
+  {
+    "name": "timeline",
+    "trans": "时间轴，时间线；大事年表"
+  },
+  {
+    "name": "spectrum",
+    "trans": "光谱；频谱；余象；范围"
+  },
+  {
+    "name": "scrutiny",
+    "trans": "监视；详细审查；细看；选票复查"
+  },
+  {
+    "name": "biases",
+    "trans": "偏差，偏见 v. 偏见"
+  },
+  {
+    "name": "perplexing",
+    "trans": "adj. 令人困惑的；复杂的，令人费解的"
+  },
+  {
+    "name": "lenses",
+    "trans": "柔性焦距透镜组"
+  },
+  {
+    "name": "contact lenses",
+    "trans": "隐形眼镜"
+  },
+  {
+    "name": "disposable Contact Lenses",
+    "trans": "一次性隐形眼镜"
+  },
+  {
+    "name": "assailant",
+    "trans": "攻击者adj. 袭击的；攻击的"
+  },
+  {
+    "name": "allegation",
+    "trans": "辩解；主张，断言"
+  },
+  {
+    "name": "consensual",
+    "trans": "adj. 交感的；在双方同意下成立的"
+  },
+  {
+    "name": "corroborate",
+    "trans": "vt. 证实；使坚固"
+  },
+  {
+    "name": "shred",
+    "trans": "碎片；少量剩余；最少量；破布 vt. 切成条状；用碎纸机撕毁vi. 撕碎"
+  },
+  {
+    "name": "lick",
+    "trans": "vt. 舔；卷过；鞭打vi. 舔；轻轻拍打n. 舔；打；少许"
+  },
+  {
+    "name": "shard",
+    "trans": "鞘翅；陶瓷碎片"
+  },
+  {
+    "name": "implicate",
+    "trans": "vt. 暗示；使牵连其中；含有…的意思 n. 包含的东西"
+  },
+  {
+    "name": "impartial",
+    "trans": "adj. 不偏不倚的；公平的，公正的"
+  },
+  {
+    "name": "exonerate",
+    "trans": "vt. 使免罪"
+  },
+  {
+    "name": "drastic",
+    "trans": "adj. 激烈的；猛烈的 n. 烈性泻药"
+  },
+  {
+    "name": "polymorphism",
+    "trans": "多态性；多形性；同质多晶"
+  },
+  {
+    "name": "milepost",
+    "trans": "里程碑；里程标志"
+  },
+  {
+    "name": "roadmap",
+    "trans": "路标"
+  },
+  {
+    "name": "allele",
+    "trans": "等位基因"
+  },
+  {
+    "name": "genotype",
+    "trans": "基因型；遗传型"
+  },
+  {
+    "name": "Amelogenin",
+    "trans": "釉原蛋白 | 成釉蛋白 | 质蛋白 |牙釉质蛋白"
+  },
+  {
+    "name": "Tetranucleotide",
+    "trans": "四核甙酸 | 四核苷酸"
+  },
+  {
+    "name": "homozygous",
+    "trans": "adj. 纯合子的；同型结合的"
+  },
+  {
+    "name": "heterozygous",
+    "trans": "adj. 杂合的"
+  },
+  {
+    "name": "flanking",
+    "trans": "下齿面加工;侧面攻击adj. 侧翼的v. 侧面相接;侧面攻击(flank的ing形式)"
+  },
+  {
+    "name": "lane",
+    "trans": "小巷；航线；车道；罚球区"
+  },
+  {
+    "name": "semen",
+    "trans": "精液；精子"
+  },
+  {
+    "name": "deposited",
+    "trans": "储存；存放；放置adj. 存放的；堆积的"
+  },
+  {
+    "name": "perpetrate",
+    "trans": "vt. 犯；做"
+  },
+  {
+    "name": "swab",
+    "trans": "医用海绵，纱布;拭子;拖把，擦帚；无赖 vt. 打扫，擦拭；涂抹于"
+  },
+  {
+    "name": "scraping",
+    "trans": "刮擦声；抹去adj. 刮擦的；吝啬的v. 刮，擦"
+  },
+  {
+    "name": "vaginal",
+    "trans": "adj. 阴道的；叶鞘的"
+  },
+  {
+    "name": "sperm",
+    "trans": "精液；精子；鲸蜡油"
+  },
+  {
+    "name": "precede",
+    "trans": "vt. 领先，在…之前；优于，高于vi. 领先，在前面"
+  },
+  {
+    "name": "postulate",
+    "trans": "vt. 要求；假定；视…为理所当然 n. 假定；基本条件"
+  },
+  {
+    "name": "metabolic",
+    "trans": "adj. 新陈代谢的；变化的"
+  },
+  {
+    "name": "single out",
+    "trans": "挑出；挑选"
+  },
+  {
+    "name": "degrade",
+    "trans": "vt. 使……丢脸；使……降级；使……降解；贬低 vi. 退化；降低"
+  },
+  {
+    "name": "uncrumple",
+    "trans": "vt. 使回复到平整状态；去掉…的皱纹"
+  },
+  {
+    "name": "unscrupulous",
+    "trans": "adj. 肆无忌惮的；寡廉鲜耻的；不讲道德的"
+  },
+  {
+    "name": "tamper",
+    "trans": "vi. 损害；削弱；干预；玩弄；篡改；贿赂 vt. 篡改n. 填塞者；捣棒"
+  },
+  {
+    "name": "tamper with",
+    "trans": "篡改；贿赂；胡乱摆弄"
+  },
+  {
+    "name": "prosecutor",
+    "trans": "检察官；公诉人；起诉人；实行者"
+  },
+  {
+    "name": "alibis",
+    "trans": "不在场证明"
+  },
+  {
+    "name": "alibi",
+    "trans": "托辞；犯罪现场；辩解vi. 辩解；找借口vt. 为…辩解"
+  },
+  {
+    "name": "juror",
+    "trans": "审查委员，陪审员"
+  },
+  {
+    "name": "jurors",
+    "trans": "陪审员"
+  },
+  {
+    "name": "fallacies",
+    "trans": "错误，谬论"
+  },
+  {
+    "name": "fallacy",
+    "trans": "谬论，谬误"
+  },
+  {
+    "name": "Caucasians",
+    "trans": "高加索人；白种人"
+  },
+  {
+    "name": "caucasian",
+    "trans": "白种人；高加索人adj. 高加索的；白种人的"
+  },
+  {
+    "name": "Hispanic",
+    "trans": "adj. 西班牙的"
+  },
+  {
+    "name": "casualties",
+    "trans": "伤亡；人员伤亡"
+  },
+  {
+    "name": "casualty",
+    "trans": "意外事故；伤亡人员；急诊室"
+  },
+  {
+    "name": "analyst",
+    "trans": "分析者；精神分析医师；分解者"
+  },
+  {
+    "name": "mitochondrion",
+    "trans": "线粒体"
+  },
+  {
+    "name": "organelle",
+    "trans": "细胞器；细胞器官"
+  },
+  {
+    "name": "anecdotal",
+    "trans": "adj. 轶事一样的；轶事的；多轶事的"
+  },
+  {
+    "name": "fondness",
+    "trans": "溺爱；爱好"
+  },
+  {
+    "name": "fondness for",
+    "trans": "喜欢；喜爱"
+  },
+  {
+    "name": "viral",
+    "trans": "adj. 滤过性毒菌引起的；滤过性毒菌的"
+  },
+  {
+    "name": "immunodeficiency",
+    "trans": "免疫缺陷"
+  },
+  {
+    "name": "inadvertently",
+    "trans": "adv. 非故意地；不注意地"
+  },
+  {
+    "name": "hantavirus",
+    "trans": "汉坦病毒"
+  },
+  {
+    "name": "avian",
+    "trans": "adj. 鸟类的；鸟的n. 鸟"
+  },
+  {
+    "name": "tuberculosis",
+    "trans": "肺结核；结核病"
+  },
+  {
+    "name": "peruvian",
+    "trans": "adj. 秘鲁人的；秘鲁的n. 秘鲁人"
+  },
+  {
+    "name": "homicide",
+    "trans": "杀人；杀人犯"
+  },
+  {
+    "name": "warden",
+    "trans": "看守人；典狱官；区长；学监"
+  },
+  {
+    "name": "poacher",
+    "trans": "偷猎者；侵入者；炖蛋锅"
+  },
+  {
+    "name": "carcass",
+    "trans": "尸体；畜体；残骸"
+  },
+  {
+    "name": "freezer",
+    "trans": "冰箱；冷冻库；制冷工"
+  },
+  {
+    "name": "trophies",
+    "trans": "奖杯；战利品 v. 授予…战利品；以战利品装饰"
+  },
+  {
+    "name": "polymorphic",
+    "trans": "adj.多态的；多形的；多形态的；多晶形的"
+  },
+  {
+    "name": "reside",
+    "trans": "vt. 住，居住；属于"
+  },
+  {
+    "name": "estimate",
+    "trans": "vi. 估计，估价n. 估计，估价；判断，看法vt. 估计，判断，评价"
+  },
+  {
+    "name": "primate",
+    "trans": "大主教；灵长类的动物；首领adj. 首要的；灵长目动物的"
+  },
+  {
+    "name": "scenario",
+    "trans": "情节；剧本；方案"
+  },
+  {
+    "name": "anatomically",
+    "trans": "adv. 结构上；解剖学上"
+  },
+  {
+    "name": "controversy",
+    "trans": "争论；辩论；论战"
+  },
+  {
+    "name": "malignant",
+    "trans": "adj. 恶性的；有恶意的；有害的"
+  },
+  {
+    "name": "spine",
+    "trans": "脊柱，脊椎；刺；书脊"
+  },
+  {
+    "name": "skull",
+    "trans": "头盖骨，脑壳"
+  },
+  {
+    "name": "notochord",
+    "trans": "脊索"
+  },
+  {
+    "name": "devastate",
+    "trans": "vt. 毁坏；毁灭"
+  },
+  {
+    "name": "line",
+    "trans": "绳；路线，航线 vt. 划线于；排成一行；使…起皱纹 vi. 排队；站成一排"
+  },
+  {
+    "name": "carcinoma",
+    "trans": "癌"
+  },
+  {
+    "name": "mitosis",
+    "trans": "间接核分裂，有丝分裂"
+  },
+  {
+    "name": "trigger",
+    "trans": "vt. 触发；引发，引起 vi. 松开扳柄n. 触发器；扳机；制滑机"
+  },
+  {
+    "name": "islet",
+    "trans": "小岛"
+  },
+  {
+    "name": "islet cell",
+    "trans": "岛细胞；胰岛细胞"
+  },
+  {
+    "name": "span",
+    "trans": "跨度，跨距；范围vt. 跨越；持续；以手指测量"
+  },
+  {
+    "name": "quiescent",
+    "trans": "adj. 静止的；不活动的；沉寂的"
+  },
+  {
+    "name": "slough",
+    "trans": "蜕下的皮；绝境；泥沼；腐肉 vt. 使陷入泥沼；抛弃vi.在泥浆中跋涉"
+  },
+  {
+    "name": "slough off",
+    "trans": "丢弃；抛弃"
+  },
+  {
+    "name": "shed",
+    "trans": "vt.散发；流出；摆脱；倾吐vi. 流出；脱落；散布n. 小屋，棚；分水岭"
+  },
+  {
+    "name": "lymphocyte",
+    "trans": "淋巴细胞；淋巴球"
+  },
+  {
+    "name": "fetus",
+    "trans": "胎儿，胎"
+  },
+  {
+    "name": "myriad",
+    "trans": "adj. 无数的；种种的n. 无数，极大数量；无数的人或物"
+  },
+  {
+    "name": "gamete",
+    "trans": "配子，配偶子"
+  },
+  {
+    "name": "trauma",
+    "trans": "外伤；创伤"
+  },
+  {
+    "name": "dermal",
+    "trans": "adj. 真皮的；皮肤的"
+  },
+  {
+    "name": "epidermis",
+    "trans": "上皮，表皮"
+  },
+  {
+    "name": "dermis",
+    "trans": "皮肤，真皮"
+  },
+  {
+    "name": "subcutaneous",
+    "trans": "adj. 皮下的；皮下用的"
+  },
+  {
+    "name": "sebaceous",
+    "trans": "adj. 分泌脂质的；脂肪的，脂肪质的；似油脂或皮脂的"
+  },
+  {
+    "name": "rod",
+    "trans": "棒；枝条；惩罚；权力"
+  },
+  {
+    "name": "mitotic",
+    "trans": "adj. 有丝分裂的；间接核分裂的"
+  },
+  {
+    "name": "inflammatory",
+    "trans": "adj. 炎症性的；煽动性的；激动的"
+  },
+  {
+    "name": "phagocytosis",
+    "trans": "吞噬作用"
+  },
+  {
+    "name": "fibroblast",
+    "trans": "纤维原细胞；纤维组织母细胞"
+  },
+  {
+    "name": "collagen",
+    "trans": "胶原，胶原质"
+  },
+  {
+    "name": "fibronectin",
+    "trans": "纤连蛋白"
+  },
+  {
+    "name": "matrix",
+    "trans": "矩阵；基质；模型；脉石；母体；子宫"
+  },
+  {
+    "name": "deposit",
+    "trans": "存款；保证金；沉淀物vt. 存放；使沉积vi. 沉淀"
+  },
+  {
+    "name": "paralysis",
+    "trans": "麻痹；停顿；无力"
+  },
+  {
+    "name": "liver",
+    "trans": "肝脏；生活者，居民"
+  },
+  {
+    "name": "ploidy",
+    "trans": "倍性；倍数性"
+  },
+  {
+    "name": "diploid",
+    "trans": "二倍体；倍数染色体adj. 双倍的；倍数的；双重的"
+  },
+  {
+    "name": "haploid",
+    "trans": "单倍体adj. 单一的"
+  },
+  {
+    "name": "replicate",
+    "trans": "vt. 复制；折叠vi. 重复；折转adj. 复制的n. 复制品"
+  },
+  {
+    "name": "duplicate",
+    "trans": "vt. 复制；使加倍n. 复制品adj. 二重的vi. 重复；复制"
+  },
+  {
+    "name": "fidelity",
+    "trans": "保真度；忠诚；尽责；精确"
+  },
+  {
+    "name": "segregant",
+    "trans": "vt. 隔离"
+  },
+  {
+    "name": "progeny",
+    "trans": "后裔；子孙；成果"
+  },
+  {
+    "name": "ovaries",
+    "trans": "卵巢，子房"
+  },
+  {
+    "name": "ovary",
+    "trans": "子房；卵巢"
+  },
+  {
+    "name": "testes",
+    "trans": "睾丸"
+  },
+  {
+    "name": "testis",
+    "trans": "睾丸 testis: 睾丸 | 证人 | 睪丸"
+  },
+  {
+    "name": "metaphase",
+    "trans": "中期adj. 中期的；转位期的"
+  },
+  {
+    "name": "transit",
+    "trans": "运输；经过vt. 运送vi. 经过"
+  },
+  {
+    "name": "microtubule",
+    "trans": "微管"
+  },
+  {
+    "name": "surveillance",
+    "trans": "监督；监视"
+  },
+  {
+    "name": "Surveillance",
+    "trans": "监督 | 监视 | 管制"
+  },
+  {
+    "name": "aneuploidy",
+    "trans": "非整倍性；异倍体性；异倍性"
+  },
+  {
+    "name": "prevent",
+    "trans": "vt. 预防，防止；阻止vi. 妨碍，阻止"
+  },
+  {
+    "name": "prevention",
+    "trans": "预防；阻止；妨碍"
+  },
+  {
+    "name": "protooncogene",
+    "trans": "原癌基因"
+  },
+  {
+    "name": "proto-oncogene",
+    "trans": "原癌基因"
+  },
+  {
+    "name": "suppressor",
+    "trans": "消除器；抑制器"
+  },
+  {
+    "name": "ultraviolet",
+    "trans": "adj. 紫外的；紫外线的n. 紫外线辐射，紫外光"
+  },
+  {
+    "name": "vulnerable",
+    "trans": "adj. 有弱点的；易受伤害的；易受攻击的，易受…的攻击"
+  },
+  {
+    "name": "sarcoma",
+    "trans": "肉瘤，恶性毒瘤"
+  },
+  {
+    "name": "prostate",
+    "trans": "adj. 前列腺的n. 前列腺"
+  },
+  {
+    "name": "nuclei",
+    "trans": "核心，核子；原子核"
+  },
+  {
+    "name": "bud",
+    "trans": "芽，萌芽；蓓蕾vi. 发芽，萌芽 vt. 使发芽"
+  },
+  {
+    "name": "spindle",
+    "trans": "轴；纺锤，锭子adj. 细长的；锭子的 vt. 装锭子于vi. 变细长"
+  },
+  {
+    "name": "metastasis",
+    "trans": "转移；新陈代谢；[地质"
+  },
+  {
+    "name": "angiogenesis",
+    "trans": "血管生成；血管再生术"
+  },
+  {
+    "name": "benign",
+    "trans": "adj. 良性的；吉利的；和蔼的，亲切的"
+  },
+  {
+    "name": "thrombospondin",
+    "trans": "血小板反应蛋白 | 凝血酶敏感蛋白 | 血栓粘合素"
+  },
+  {
+    "name": "Angiostatin",
+    "trans": "血管抑素 | 血管生成抑制因子 | 血管抑制素"
+  },
+  {
+    "name": "Endostatin",
+    "trans": "人内皮抑素 | 内皮抑制素 | 因子"
+  },
+  {
+    "name": "vascular",
+    "trans": "adj. 血管的"
+  },
+  {
+    "name": "endothelial",
+    "trans": "adj. 内皮的"
+  },
+  {
+    "name": "oncogene",
+    "trans": "致癌基因"
+  },
+  {
+    "name": "avascular",
+    "trans": "adj. 无血管的"
+  },
+  {
+    "name": "retina",
+    "trans": "视网膜"
+  },
+  {
+    "name": "lymph",
+    "trans": "node淋巴结"
+  },
+  {
+    "name": "suppression",
+    "trans": "抑制；镇压；压抑"
+  },
+  {
+    "name": "transducer",
+    "trans": "传感器，变换器，换能器"
+  },
+  {
+    "name": "leukemia",
+    "trans": "白血病"
+  },
+  {
+    "name": "identical",
+    "trans": "adj. 同一的；完全相同的n. 完全相同的事物"
+  },
+  {
+    "name": "mutant",
+    "trans": "突变体；突变异种adj. 突变的"
+  },
+  {
+    "name": "ribbon",
+    "trans": "缎带；带状物；带；绶带；勋表vi. 形成带状vt. 把…撕成条带"
+  },
+  {
+    "name": "clamp",
+    "trans": "vt. 夹紧，固定住n. 夹钳，螺丝钳"
+  },
+  {
+    "name": "antigen",
+    "trans": "抗原"
+  },
+  {
+    "name": "cascade",
+    "trans": "小瀑布；喷流；层叠vi. 像瀑布般冲下或倾泻v. 使瀑布似地落下"
+  },
+  {
+    "name": "retinoblastoma",
+    "trans": "成视网膜细胞瘤；眼癌"
+  },
+  {
+    "name": "laser",
+    "trans": "激光"
+  },
+  {
+    "name": "cryotreatment",
+    "trans": "\" 低温处理"
+  },
+  {
+    "name": "retinal",
+    "trans": "adj. 视网膜的n. 视黄醛"
+  },
+  {
+    "name": "afflict",
+    "trans": "vt. 折磨；使痛苦；使苦恼"
+  },
+  {
+    "name": "propelled",
+    "trans": "adj. 推进的v. 推动；驱使"
+  },
+  {
+    "name": "tyrosine",
+    "trans": "酪氨酸"
+  },
+  {
+    "name": "neuroblastoma",
+    "trans": "成神经细胞瘤"
+  },
+  {
+    "name": "epidermal",
+    "trans": "adj. 表皮的；外皮的"
+  },
+  {
+    "name": "Herceptin",
+    "trans": "赫塞汀"
+  },
+  {
+    "name": "Trastuzumab",
+    "trans": "曲妥珠单抗 | 赫赛汀 | 抗体"
+  },
+  {
+    "name": "thyroid",
+    "trans": "甲状腺；甲状软骨；甲状腺剂adj. 甲状腺的；盾状的"
+  },
+  {
+    "name": "bladder",
+    "trans": "膀胱；囊状物，可充气的囊袋"
+  },
+  {
+    "name": "ovarian",
+    "trans": "adj. 卵巢的；子房的"
+  },
+  {
+    "name": "telomere",
+    "trans": "端粒"
+  },
+  {
+    "name": "senescence",
+    "trans": "衰老"
+  },
+  {
+    "name": "familial",
+    "trans": "adj. 家庭的；家族的；遗传的"
+  },
+  {
+    "name": "sporadic",
+    "trans": "adj. 零星的；分散的；不定时发生的"
+  },
+  {
+    "name": "succumb",
+    "trans": "vi. 屈服；被压垮；死"
+  },
+  {
+    "name": "colon",
+    "trans": "结肠；冒号（用于引语、说明、例证等之前)"
+  },
+  {
+    "name": "preventive",
+    "trans": "预防药；预防法adj. 预防的，防止的"
+  },
+  {
+    "name": "anchor",
+    "trans": "锚；靠山；抛锚停泊vt. 抛锚；使固定；主持vi. 抛锚adj. 末捧的"
+  },
+  {
+    "name": "intestine",
+    "trans": "adj. 内部的；国内的n. 肠"
+  },
+  {
+    "name": "menopause",
+    "trans": "更年期；活动终止期"
+  },
+  {
+    "name": "melanoma",
+    "trans": "黑素瘤；胎记瘤"
+  },
+  {
+    "name": "gallbladder",
+    "trans": "胆囊"
+  },
+  {
+    "name": "bile duct",
+    "trans": "胆道，胆管"
+  },
+  {
+    "name": "spontaneous",
+    "trans": "adj. 自发的；自然的；无意识的"
+  },
+  {
+    "name": "epstein-barr",
+    "trans": "病毒 | 巴尔二氐 | 艾巴氏"
+  },
+  {
+    "name": "mononucleosis",
+    "trans": "单核细胞增多症；单核白血球增多症"
+  },
+  {
+    "name": "alkylating",
+    "trans": "烷基化v. 使烷基化"
+  },
+  {
+    "name": "alkylate",
+    "trans": "烷基化物vt. 使烷基化"
+  },
+  {
+    "name": "asbestos",
+    "trans": "石棉adj. 石棉的"
+  },
+  {
+    "name": "aromatic",
+    "trans": "adj. 芳香的，芬芳的；芳香族的n. 芳香植物；芳香剂"
+  },
+  {
+    "name": "cavity",
+    "trans": "洞，凹处；腔"
+  },
+  {
+    "name": "blader",
+    "trans": "平路机；推土机；叶片安装工"
+  },
+  {
+    "name": "esophagus",
+    "trans": "食管；食道"
+  },
+  {
+    "name": "vinyl",
+    "trans": "乙烯基"
+  },
+  {
+    "name": "angiosarcoma",
+    "trans": "血管肉瘤"
+  },
+  {
+    "name": "gastrointestinal",
+    "trans": "adj. 胃肠的"
+  },
+  {
+    "name": "nitrate",
+    "trans": "硝酸盐vt. 用硝酸处理"
+  },
+  {
+    "name": "estrogen",
+    "trans": "雌性激素"
+  },
+  {
+    "name": "diethylstilbestrol",
+    "trans": "己烯雌酚；乙芪酚"
+  },
+  {
+    "name": "clinical",
+    "trans": "adj. 临床的；诊所的"
+  },
+  {
+    "name": "agent",
+    "trans": "代理人，代理商；药剂；特工 vt. 由…作中介；由…代理adj. 代理的"
+  },
+  {
+    "name": "a cast of thousands",
+    "trans": "人数众多"
+  },
+  {
+    "name": "embryogenesis",
+    "trans": "胚胎形成，胚胎发生"
+  },
+  {
+    "name": "blastocyst",
+    "trans": "囊胚；胚包"
+  },
+  {
+    "name": "hollow",
+    "trans": "adj. 空的；凹的；虚伪的n. 洞；山谷vi. 形成空洞adv. 无用地；彻底地"
+  },
+  {
+    "name": "pyknosis",
+    "trans": "固缩；细胞致密变化"
+  },
+  {
+    "name": "bleb",
+    "trans": "疱疹；水泡；气泡"
+  },
+  {
+    "name": "shrinkage",
+    "trans": "收缩；减低"
+  },
+  {
+    "name": "phagocyte",
+    "trans": "噬菌细胞"
+  },
+  {
+    "name": "lyse",
+    "trans": "vt. 溶化；溶解vi. 病状渐退；细胞溶解"
+  },
+  {
+    "name": "ectoderm",
+    "trans": "外胚层，外细胞层"
+  },
+  {
+    "name": "endoderm",
+    "trans": "内胚层；内皮层；下胚层"
+  },
+  {
+    "name": "mesoderm",
+    "trans": "中胚层；中胚叶"
+  },
+  {
+    "name": "peripheral",
+    "trans": "adj. 外围的；次要的"
+  },
+  {
+    "name": "mammary",
+    "trans": "adj. 乳腺的；乳房的"
+  },
+  {
+    "name": "pituitary",
+    "trans": "垂体；脑垂体adj. 脑垂体的；脑垂体分泌失调引起的"
+  },
+  {
+    "name": "enamel",
+    "trans": "珐琅；瓷釉；搪瓷；指甲油 vt. 涂以瓷釉；彩饰"
+  },
+  {
+    "name": "cartilage",
+    "trans": "软骨"
+  },
+  {
+    "name": "connective",
+    "trans": "adj. 连合的，连接的n. 连接词；连接物"
+  },
+  {
+    "name": "morphological",
+    "trans": "adj. 形态学的"
+  },
+  {
+    "name": "intricate",
+    "trans": "adj. 复杂的；错综的，缠结的"
+  },
+  {
+    "name": "syndactyly",
+    "trans": "并指；并趾"
+  },
+  {
+    "name": "fused",
+    "trans": "adj. 装有保险丝的；熔化的，熔凝的 v. 混合；熔解"
+  },
+  {
+    "name": "surgically",
+    "trans": "adv. 如外科手术般地"
+  }
+]
