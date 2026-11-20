@@ -646,10 +646,9 @@
         ]
     },
     {
-        "name": "re-use",
+        "name": "re-use/conversion",
         "trans": [
-            "转换",
-            "也作 conversion"
+            "转换"
         ]
     },
     {
@@ -977,10 +976,9 @@
         "ukphone": "'mɔːtə"
     },
     {
-        "name": "gypsum",
+        "name": "gypsum/plaster",
         "trans": [
-            "石膏",
-            "也作 plaster"
+            "石膏"
         ]
     },
     {
@@ -1164,10 +1162,9 @@
         ]
     },
     {
-        "name": "plaza",
+        "name": "plaza/square",
         "trans": [
-            "广场",
-            "也作 square"
+            "广场"
         ]
     },
     {
@@ -1310,11 +1307,9 @@
         ]
     },
     {
-        "name": "pedestrian zones",
+        "name": "pedestrian zones/auto-free zones/car-free zones",
         "trans": [
-            "步行区",
-            "也作 auto-free zones",
-            "也作 car-free zones"
+            "步行区"
         ]
     },
     {
@@ -1576,10 +1571,9 @@
         "ukphone": "wʊd"
     },
     {
-        "name": "cantilever",
+        "name": "cantilever/overhang",
         "trans": [
-            "悬挑",
-            "也作 overhang"
+            "悬挑"
         ]
     },
     {
@@ -1906,10 +1900,9 @@
         ]
     },
     {
-        "name": "green roof",
+        "name": "green roof/rain garden",
         "trans": [
-            "绿色屋面/雨水花园",
-            "也作 rain garden"
+            "绿色屋面/雨水花园"
         ]
     },
     {
@@ -1919,10 +1912,9 @@
         ]
     },
     {
-        "name": "building orientation",
+        "name": "building orientation/air sealing",
         "trans": [
-            "建筑朝向/气密性",
-            "也作 air sealing"
+            "建筑朝向/气密性"
         ]
     },
     {
@@ -2300,10 +2292,9 @@
         "ukphone": "step"
     },
     {
-        "name": "shrub",
+        "name": "shrub/bush",
         "trans": [
-            "灌木",
-            "也作 bush"
+            "灌木"
         ]
     },
     {
@@ -2415,10 +2406,9 @@
         ]
     },
     {
-        "name": "comitas",
+        "name": "comitas (utilitas)",
         "trans": [
-            "实用",
-            "也作 utilitas"
+            "实用"
         ]
     },
     {
@@ -2498,10 +2488,9 @@
         ]
     },
     {
-        "name": "bidding",
+        "name": "bidding/negotiation",
         "trans": [
-            "投标/谈判",
-            "也作 negotiation"
+            "投标/谈判"
         ]
     },
     {
@@ -3031,7 +3020,7 @@
         "ukphone": "sloup"
     },
     {
-        "name": "demolition= demolishment",
+        "name": "demolition = demolishment",
         "trans": [
             "拆除"
         ]
@@ -3513,10 +3502,9 @@
         ]
     },
     {
-        "name": "canopy",
+        "name": "canopy/arbor",
         "trans": [
-            "树冠",
-            "也作 arbor"
+            "树冠"
         ]
     },
     {

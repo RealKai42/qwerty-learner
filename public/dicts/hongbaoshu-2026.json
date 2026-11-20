@@ -11835,10 +11835,9 @@
 	{
 		"usphone": "/ˈsɛntɪˌɡred/",
 		"ukphone": "/ˈsentɪɡreɪd/",
-		"name": "centigrade",
+		"name": "centigrade/Celsius",
 		"trans": [
-			"摄氏度 (noun)",
-			"也作 Celsius"
+			"摄氏度 (noun)"
 		]
 	},
 	{
@@ -24973,10 +24972,10 @@
 	{
 		"usphone": "/ɛsˈθɛtɪk/",
 		"ukphone": "/i:sˈθetɪk/",
-		"name": "esthetic",
+		"name": "aesthetic",
 		"trans": [
 			"美学的 (adj.)",
-			"也作 aesthetic"
+			"也作 esthetic"
 		]
 	},
 	{

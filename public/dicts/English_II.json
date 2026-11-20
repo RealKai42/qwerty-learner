@@ -1,16 +1,14 @@
 [
     {
-        "name": "ability to",
+        "name": "inability to",
         "trans": [
-            "（没）有…的能力",
-            "（in）"
+            "（没）有…的能力"
         ]
     },
     {
-        "name": "capacity to",
+        "name": "incapacity to",
         "trans": [
-            "（没）有…的能力",
-            "（in）"
+            "（没）有…的能力"
         ]
     },
     {
@@ -20783,10 +20781,9 @@
         "ukphone": "ɒn"
     },
     {
-        "name": "on average",
+        "name": "on the average",
         "trans": [
-            "根据平均标准；平均而言",
-            "（the）"
+            "根据平均标准；平均而言"
         ]
     },
     {
@@ -29372,8 +29369,8 @@
         "trans": "打扰；打断，闯进"
     },
     {
-        "name": "to break in on",
-        "trans": "打扰；打断，闯进；（upon）"
+        "name": "to break in on (upon)",
+        "trans": "打扰；打断，闯进"
     },
     {
         "name": "to break into",
@@ -29456,8 +29453,8 @@
         "trans": "共计，达到；归结为；涉及，谈到"
     },
     {
-        "name": "to come to terms",
-        "trans": "达成协议；妥协，习惯于；（with）"
+        "name": "to come to terms with",
+        "trans": "达成协议；妥协，习惯于"
     },
     {
         "name": "to come up",
@@ -29560,8 +29557,8 @@
         "trans": "与…有分歧，不一致"
     },
     {
-        "name": "to disapprove",
-        "trans": "不同意；（of）"
+        "name": "to disapprove of",
+        "trans": "不同意"
     },
     {
         "name": "to disapprove of",
@@ -29704,8 +29701,8 @@
         "trans": "与…有关"
     },
     {
-        "name": "to hold good",
-        "trans": "（对…）适用；（for）"
+        "name": "to hold good for",
+        "trans": "（对…）适用"
     },
     {
         "name": "to identify... as",
@@ -29852,8 +29849,8 @@
         "trans": "打开；开办，开辟，开发；坦诚地谈话"
     },
     {
-        "name": "to opt out",
-        "trans": "决定不参加…，决定（从…）退出；（of）"
+        "name": "to opt out of",
+        "trans": "决定不参加…，决定（从…）退出"
     },
     {
         "name": "to pay attention to",
@@ -30192,12 +30189,12 @@
         "trans": "开，接通（水源，电源，煤气等）"
     },
     {
-        "name": "to turn one's back",
-        "trans": "报答…回报…；（on）"
+        "name": "to turn one's back on",
+        "trans": "报答…回报…"
     },
     {
-        "name": "to turn out",
-        "trans": "原来是，（最后）证明是；（to be）"
+        "name": "to turn out to be",
+        "trans": "原来是，（最后）证明是"
     },
     {
         "name": "to use up",
@@ -30656,8 +30653,8 @@
         "ukphone": "tɜːn"
     },
     {
-        "name": "turn off",
-        "trans": "（使）失去兴趣；（使）不再喜欢；（使）厌烦；也作 somebody"
+        "name": "turn somebody off",
+        "trans": "（使）失去兴趣；（使）不再喜欢；（使）厌烦"
     },
     {
         "name": "turn aside from",
