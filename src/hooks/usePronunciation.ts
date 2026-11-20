@@ -10,25 +10,46 @@ import useSound from 'use-sound'
 import type { HookOptions } from 'use-sound/dist/types'
 
 const pronunciationApi = 'https://dict.youdao.com/dictvoice?audio='
+
+// Youdao returns HTTP 500 for parentheses, quotation marks, and an encoded "&".
+// Apostrophes inside a word, as in "don't", still pronounce.
+function spokenWord(word: string): string {
+  const withoutAmpersand = word.replace(/&/g, ' and ')
+  const withoutMarks = withoutAmpersand.replace(/[()（）「」"“”]/g, '')
+  const withoutLooseQuotes = withoutMarks.replace(/['‘’]+/g, (marks, offset, text) => {
+    const before = text[offset - 1] ?? ''
+    const after = text[offset + marks.length] ?? ''
+    if (/[A-Za-z]/.test(before) && /[A-Za-z]/.test(after)) return marks
+    return ''
+  })
+  return withoutLooseQuotes.replace(/\s+/g, ' ').trim()
+}
+
 export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
+  // "marui/marui" becomes まるい/まるい, which Youdao rejects. Read the first form.
+  const source = pronunciation === 'romaji' || pronunciation === 'ja' ? word.split('/')[0] : word
+  const cleaned = spokenWord(source)
+  if (!cleaned) return ''
+  const spoken = pronunciation === 'romaji' ? romajiToHiragana(cleaned) : cleaned
+
   switch (pronunciation) {
     case 'uk':
-      return `${pronunciationApi}${word}&type=1`
+      return `${pronunciationApi}${spoken}&type=1`
     case 'us':
-      return `${pronunciationApi}${word}&type=2`
+      return `${pronunciationApi}${spoken}&type=2`
     case 'romaji':
-      return `${pronunciationApi}${romajiToHiragana(word)}&le=jap`
+      return `${pronunciationApi}${spoken}&le=jap`
     case 'zh':
-      return `${pronunciationApi}${word}&le=zh`
+      return `${pronunciationApi}${spoken}&le=zh`
     case 'ja':
-      return `${pronunciationApi}${word}&le=jap`
+      return `${pronunciationApi}${spoken}&le=jap`
     case 'de':
-      return `${pronunciationApi}${word}&le=de`
+      return `${pronunciationApi}${spoken}&le=de`
     case 'hapin':
     case 'kk':
-      return `${pronunciationApi}${word}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
+      return `${pronunciationApi}${spoken}&le=ru` // 有道不支持哈萨克语, 暂时用俄语发音兜底
     case 'id':
-      return `${pronunciationApi}${word}&le=id`
+      return `${pronunciationApi}${spoken}&le=id`
     default:
       return ''
   }
