@@ -387,9 +387,10 @@
         "ukphone": "rɒk"
     },
     {
-        "name": "run out (of)",
+        "name": "run out",
         "trans": [
-            "用尽，耗尽"
+            "用尽，耗尽",
+            "（of）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1281,9 +1282,10 @@
         "ukphone": ""
     },
     {
-        "name": "get on well (with)",
+        "name": "get on well",
         "trans": [
-            "和睦相处，关系良好"
+            "和睦相处，关系良好",
+            "（with）"
         ],
         "usphone": "",
         "ukphone": ""

@@ -42,7 +42,7 @@
         "ukphone": "kɑːm"
     },
     {
-        "name": "calm(...)down",
+        "name": "calm down",
         "trans": [
             "（使）平静下来；（使）镇定下来"
         ],
@@ -383,9 +383,10 @@
         "ukphone": "pæk"
     },
     {
-        "name": "pack (sth) up",
+        "name": "pack up",
         "trans": [
-            "将（东西）装箱打包"
+            "将（东西）装箱打包",
+            "（sth）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -873,9 +874,10 @@
         "ukphone": "'spænɪʃ"
     },
     {
-        "name": "play a part (in)",
+        "name": "play a part",
         "trans": [
-            "扮演一个角色；参与"
+            "扮演一个角色；参与",
+            "（in）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1802,9 +1804,10 @@
         "ukphone": "'ʃeltə"
     },
     {
-        "name": "a (great) number of",
+        "name": "a number of",
         "trans": [
-            "许多；大量的"
+            "许多；大量的",
+            "也作 great"
         ],
         "usphone": "",
         "ukphone": ""

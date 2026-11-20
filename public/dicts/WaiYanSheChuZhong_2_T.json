@@ -1193,9 +1193,10 @@
         "ukphone": ""
     },
     {
-        "name": "bike (=bicycle)",
+        "name": "bike",
         "trans": [
-            "自行车"
+            "自行车",
+            "也作 bicycle"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1842,9 +1843,10 @@
         "ukphone": "frɒm; frəm"
     },
     {
-        "name": "metre (AmE meter)",
+        "name": "metre",
         "trans": [
-            "米"
+            "米",
+            "（AmE meter）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -2123,9 +2125,10 @@
         "ukphone": "stɔː"
     },
     {
-        "name": "movie theater (BrE theatre)",
+        "name": "movie theater",
         "trans": [
-            "电影院"
+            "电影院",
+            "（BrE theatre）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -3279,9 +3282,10 @@
         "ukphone": "ˈnɔɪzɪ"
     },
     {
-        "name": "pop (=popular)",
+        "name": "pop",
         "trans": [
-            "流行的；受欢迎的"
+            "流行的；受欢迎的",
+            "也作 popular"
         ],
         "usphone": "",
         "ukphone": ""
@@ -3391,9 +3395,10 @@
         "ukphone": "mjuː'zɪʃ(ə)n"
     },
     {
-        "name": "centre (AmE center)",
+        "name": "centre",
         "trans": [
-            "中心"
+            "中心",
+            "（AmE center）"
         ],
         "usphone": "",
         "ukphone": ""

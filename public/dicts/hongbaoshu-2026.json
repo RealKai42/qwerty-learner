@@ -468,9 +468,10 @@
 	{
 		"usphone": "/əˈmʌŋst/",
 		"ukphone": "/əˈmʌŋst/",
-		"name": "among(st)",
+		"name": "among",
 		"trans": [
-			"在...之间 (prep.)"
+			"在...之间 (prep.)",
+			"也作 amongst"
 		]
 	},
 	{
@@ -925,9 +926,10 @@
 	{
 		"usphone": "/ɪnˈkwaɪɚ/",
 		"ukphone": "/ɪnˈkwaɪə/",
-		"name": "enquire/inquire",
+		"name": "enquire",
 		"trans": [
-			"询问， 打听 (vt.)"
+			"询问， 打听 (vt.)",
+			"也作 inquire"
 		]
 	},
 	{
@@ -941,9 +943,10 @@
 	{
 		"usphone": "/ɪnˈrol/",
 		"ukphone": "/ɪnˈrəʊl/",
-		"name": "enrol(l)",
+		"name": "enrol",
 		"trans": [
-			"登记， 注册 (vt.)"
+			"登记， 注册 (vt.)",
+			"也作 enroll"
 		]
 	},
 	{
@@ -1055,9 +1058,10 @@
 	{
 		"usphone": "/ɪnˈkwaɪərɪ/",
 		"ukphone": "/ɪnˈkwaɪəri/",
-		"name": "inquiry/enquiry",
+		"name": "inquiry",
 		"trans": [
-			"调查， 询问 (noun)"
+			"调查， 询问 (noun)",
+			"也作 enquiry"
 		]
 	},
 	{
@@ -2484,9 +2488,10 @@
 	{
 		"usphone": "/fᴜlˈfɪl/",
 		"ukphone": "/fulˈfɪl/",
-		"name": "fulfil(l)",
+		"name": "fulfil",
 		"trans": [
-			"履行， 实现 (vt.)"
+			"履行， 实现 (vt.)",
+			"也作 fulfill"
 		]
 	},
 	{
@@ -2791,9 +2796,10 @@
 	{
 		"usphone": "/ˈlaɪsəns/",
 		"ukphone": "/ˈlaɪsəns/",
-		"name": "license(c)e",
+		"name": "license",
 		"trans": [
-			"许可证， 许可证 (noun)"
+			"许可证， 许可证 (noun)",
+			"也作 licence"
 		]
 	},
 	{
@@ -2863,9 +2869,10 @@
 	{
 		"usphone": "/əˈpɑlədʒaɪz/",
 		"ukphone": "/əˈpɒlədʒaɪz/",
-		"name": "apologize(s)e",
+		"name": "apologize",
 		"trans": [
-			"道歉 (vt.)"
+			"道歉 (vt.)",
+			"也作 apologise"
 		]
 	},
 	{
@@ -3191,9 +3198,10 @@
 	{
 		"usphone": "/ˌɪnflʊˈenzə/",
 		"ukphone": "/ɪnfluˈenzə/",
-		"name": "flu/influenza",
+		"name": "flu",
 		"trans": [
-			"流感 (noun)"
+			"流感 (noun)",
+			"也作 influenza"
 		]
 	},
 	{
@@ -3496,9 +3504,10 @@
 	{
 		"usphone": "/ˈspeskræft/",
 		"ukphone": "/ˈspeɪskrɑ:ft/",
-		"name": "spacecraft/spaceship",
+		"name": "spacecraft",
 		"trans": [
-			"航天器， 飞船 (noun)"
+			"航天器， 飞船 (noun)",
+			"也作 spaceship"
 		]
 	},
 	{
@@ -3850,9 +3859,10 @@
 	{
 		"usphone": "/ɪnˈdʌstriəˌlaɪz/",
 		"ukphone": "/ɪnˈdʌstrɪəlaɪz/",
-		"name": "industrialize(s)e",
+		"name": "industrialize",
 		"trans": [
-			"工业化 (vt.)"
+			"工业化 (vt.)",
+			"也作 industrialise"
 		]
 	},
 	{
@@ -4794,17 +4804,19 @@
 	{
 		"usphone": "/ˈɑnɚ/",
 		"ukphone": "/ˈɒnə/",
-		"name": "honour/honor",
+		"name": "honour",
 		"trans": [
-			"荣誉， 尊敬 (noun)"
+			"荣誉， 尊敬 (noun)",
+			"也作 honor"
 		]
 	},
 	{
 		"usphone": "/ˈɑnərəbl/",
 		"ukphone": "/ˈɒnərəbl/",
-		"name": "honourable/honorable",
+		"name": "honourable",
 		"trans": [
-			"可尊敬的， 体面的 (adj.)"
+			"可尊敬的， 体面的 (adj.)",
+			"也作 honorable"
 		]
 	},
 	{
@@ -5749,9 +5761,10 @@
 	{
 		"usphone": "/ˈmitɚ/",
 		"ukphone": "/ˈmi:tə/",
-		"name": "metre/meter",
+		"name": "metre",
 		"trans": [
-			"米 (noun)"
+			"米 (noun)",
+			"也作 meter"
 		]
 	},
 	{
@@ -6314,9 +6327,10 @@
 	{
 		"usphone": "/kəˈnɛkʃən/",
 		"ukphone": "/kəˈnekʃən/",
-		"name": "connection/connexion",
+		"name": "connection",
 		"trans": [
-			"联系， 关系 (noun)"
+			"联系， 关系 (noun)",
+			"也作 connexion"
 		]
 	},
 	{
@@ -6611,9 +6625,10 @@
 	{
 		"usphone": "/rɪˈflɛkʃən/",
 		"ukphone": "/rɪˈflekʃən/",
-		"name": "reflection/reflexion",
+		"name": "reflection",
 		"trans": [
-			"反思， 反映 (noun)"
+			"反思， 反映 (noun)",
+			"也作 reflexion"
 		]
 	},
 	{
@@ -6860,9 +6875,10 @@
 	{
 		"usphone": "/ˈflevɚ/",
 		"ukphone": "/ˈfleɪvə/",
-		"name": "flavor/flavour",
+		"name": "flavor",
 		"trans": [
-			"味道， 风味 (noun)"
+			"味道， 风味 (noun)",
+			"也作 flavour"
 		]
 	},
 	{
@@ -7942,9 +7958,10 @@
 	{
 		"usphone": "/əˈpɔl/",
 		"ukphone": "/əˈpɔ:l/",
-		"name": "appall/appal",
+		"name": "appall",
 		"trans": [
-			"震惊， 使恐惧 (vt.)"
+			"震惊， 使恐惧 (vt.)",
+			"也作 appal"
 		]
 	},
 	{
@@ -8320,7 +8337,7 @@
 	{
 		"usphone": "/ɪnˈstɔl/",
 		"ukphone": "/ɪnˈstɔ:l/",
-		"name": "install/install",
+		"name": "install",
 		"trans": [
 			"安装， 安装 (vt.)"
 		]
@@ -8457,9 +8474,10 @@
 	{
 		"usphone": "/ˈmɪnəˌmaɪz/",
 		"ukphone": "/ˈmɪnɪmaɪz/",
-		"name": "minimize/minimiz(s)e",
+		"name": "minimize",
 		"trans": [
-			"最小化， 减少 (vt.)"
+			"最小化， 减少 (vt.)",
+			"也作 minimise"
 		]
 	},
 	{
@@ -8724,9 +8742,10 @@
 	{
 		"usphone": "/ˈdʒʌdʒmənt/",
 		"ukphone": "/ˈdʒʌdʒmənt/",
-		"name": "judgment/judg(e)ment",
+		"name": "judgment",
 		"trans": [
-			"判断， 判决 (noun)"
+			"判断， 判决 (noun)",
+			"也作 judgement"
 		]
 	},
 	{
@@ -9133,9 +9152,10 @@
 	{
 		"usphone": "/ˈlebɚ/",
 		"ukphone": "/ˈleɪbə/",
-		"name": "labo(u)r",
+		"name": "labor",
 		"trans": [
-			"劳动， 劳动者 (noun)"
+			"劳动， 劳动者 (noun)",
+			"也作 labour"
 		]
 	},
 	{
@@ -9693,9 +9713,10 @@
 	{
 		"usphone": "/ˈwæɡən/",
 		"ukphone": "/ˈwæɡən/",
-		"name": "wagon/wag(g)on",
+		"name": "wagon",
 		"trans": [
-			"货车， 车辆 (noun)"
+			"货车， 车辆 (noun)",
+			"也作 waggon"
 		]
 	},
 	{
@@ -9918,9 +9939,10 @@
 	{
 		"usphone": "/ˈrelrod/",
 		"ukphone": "/ˈreɪlrəʊd/",
-		"name": "railroad/railway",
+		"name": "railroad",
 		"trans": [
-			"铁路 (noun)"
+			"铁路 (noun)",
+			"也作 railway"
 		]
 	},
 	{
@@ -10318,9 +10340,10 @@
 	{
 		"usphone": "/ˈjutlˌaɪz/",
 		"ukphone": "/ˈju:təlaɪz/",
-		"name": "utilize(s)e",
+		"name": "utilize",
 		"trans": [
-			"利用， 利用 (vt.)"
+			"利用， 利用 (vt.)",
+			"也作 utilise"
 		]
 	},
 	{
@@ -10502,9 +10525,10 @@
 	{
 		"usphone": "/ˈhɑrbɚ/",
 		"ukphone": "/ˈhɑ:bə/",
-		"name": "harbor/harbour",
+		"name": "harbor",
 		"trans": [
-			"港口， 港湾 (noun)"
+			"港口， 港湾 (noun)",
+			"也作 harbour"
 		]
 	},
 	{
@@ -10670,9 +10694,10 @@
 	{
 		"usphone": "/məˈnuvɚ/",
 		"ukphone": "/məˈnu:və/",
-		"name": "manoeuvre/maneuver",
+		"name": "manoeuvre",
 		"trans": [
-			"机动， 策略 (noun, vt.)"
+			"机动， 策略 (noun, vt.)",
+			"也作 maneuver"
 		]
 	},
 	{
@@ -10758,9 +10783,10 @@
 	{
 		"usphone": "/ˈodɚ/",
 		"ukphone": "/ˈəʊdə/",
-		"name": "odor/odour",
+		"name": "odor",
 		"trans": [
-			"气味， 气味 (noun)"
+			"气味， 气味 (noun)",
+			"也作 odour"
 		]
 	},
 	{
@@ -11014,9 +11040,10 @@
 	{
 		"usphone": "/tɔrdz/",
 		"ukphone": "/təˈwɔ:dz/",
-		"name": "toward(s)",
+		"name": "toward",
 		"trans": [
-			"朝向， 向着 (prep.)"
+			"朝向， 向着 (prep.)",
+			"也作 towards"
 		]
 	},
 	{
@@ -11078,9 +11105,10 @@
 	{
 		"usphone": "/tɛkˈnɑlədʒɪ/",
 		"ukphone": "/tekˈnɒlədʒi/",
-		"name": "technology/tech",
+		"name": "technology",
 		"trans": [
-			"技术， 科技 (noun)"
+			"技术， 科技 (noun)",
+			"也作 tech"
 		]
 	},
 	{
@@ -11782,9 +11810,10 @@
 	{
 		"usphone": "/ˈsɛntɚ/",
 		"ukphone": "/ˈsentə/",
-		"name": "center/centre",
+		"name": "center",
 		"trans": [
-			"中心， 中心点 (noun)"
+			"中心， 中心点 (noun)",
+			"也作 centre"
 		]
 	},
 	{
@@ -11806,17 +11835,19 @@
 	{
 		"usphone": "/ˈsɛntɪˌɡred/",
 		"ukphone": "/ˈsentɪɡreɪd/",
-		"name": "centigrade/Celsius",
+		"name": "centigrade",
 		"trans": [
-			"摄氏度 (noun)"
+			"摄氏度 (noun)",
+			"也作 Celsius"
 		]
 	},
 	{
 		"usphone": "/ˈsɛntəˌmitɚ/",
 		"ukphone": "/ˈsentɪˌmi:tə/",
-		"name": "centimeter/centimetre",
+		"name": "centimeter",
 		"trans": [
-			"厘米 (noun)"
+			"厘米 (noun)",
+			"也作 centimetre"
 		]
 	},
 	{
@@ -12726,9 +12757,10 @@
 	{
 		"usphone": "/ˈdʒɛnərəlaɪz/",
 		"ukphone": "/ˈdʒenərəlaɪz/",
-		"name": "generalize(s)e",
+		"name": "generalize",
 		"trans": [
-			"概括， 推广 (vt.)"
+			"概括， 推广 (vt.)",
+			"也作 generalise"
 		]
 	},
 	{
@@ -13214,9 +13246,10 @@
 	{
 		"usphone": "/ˈvepɚ/",
 		"ukphone": "/ˈveɪpə/",
-		"name": "vapor/vapour",
+		"name": "vapor",
 		"trans": [
-			"蒸汽， 气体 (noun)"
+			"蒸汽， 气体 (noun)",
+			"也作 vapour"
 		]
 	},
 	{
@@ -13262,9 +13295,10 @@
 	{
 		"usphone": "/ˈkætəlɔɡ/",
 		"ukphone": "/ˈkætəlɒɡ/",
-		"name": "catalog/catalogue",
+		"name": "catalog",
 		"trans": [
-			"目录， 图录 (noun)"
+			"目录， 图录 (noun)",
+			"也作 catalogue"
 		]
 	},
 	{
@@ -13406,9 +13440,10 @@
 	{
 		"usphone": "/ fænˈtæstɪkəl /",
 		"ukphone": "/ fænˈtæstɪkəl /",
-		"name": "fantastic(al)",
+		"name": "fantastic",
 		"trans": [
-			"极好的， 极妙的 (adj.)"
+			"极好的， 极妙的 (adj.)",
+			"也作 fantastical"
 		]
 	},
 	{
@@ -16534,9 +16569,10 @@
 	{
 		"usphone": "/ˈkærɪktəˌraɪz/",
 		"ukphone": "/ˈkærəktəraɪz/",
-		"name": "characterize(s)e",
+		"name": "characterize",
 		"trans": [
-			"描绘， 描述 (vt.)"
+			"描绘， 描述 (vt.)",
+			"也作 characterise"
 		]
 	},
 	{
@@ -17070,9 +17106,10 @@
 	{
 		"usphone": "/dʒel/",
 		"ukphone": "/dʒeɪl/",
-		"name": "gaol/jail",
+		"name": "gaol",
 		"trans": [
-			"监狱 (noun)"
+			"监狱 (noun)",
+			"也作 jail"
 		]
 	},
 	{
@@ -18390,9 +18427,10 @@
 	{
 		"usphone": "/ˈθɪətɚ/",
 		"ukphone": "/ˈθɪətə/",
-		"name": "theater/theatre",
+		"name": "theater",
 		"trans": [
-			"剧院 (noun)"
+			"剧院 (noun)",
+			"也作 theatre"
 		]
 	},
 	{
@@ -20382,9 +20420,10 @@
 	{
 		"usphone": "/ˈænəˌlɔɡ/",
 		"ukphone": "/ˈænəlɒɡ/",
-		"name": "analog/analogue",
+		"name": "analog",
 		"trans": [
-			"模拟的 (adj.), 模拟器 (noun)"
+			"模拟的 (adj.), 模拟器 (noun)",
+			"也作 analogue"
 		]
 	},
 	{
@@ -20398,9 +20437,10 @@
 	{
 		"usphone": "/ˈænəˌlaɪz/",
 		"ukphone": "/ˈænəlaɪz/",
-		"name": "analyze/analyse",
+		"name": "analyze",
 		"trans": [
-			"分析 (vt.)"
+			"分析 (vt.)",
+			"也作 analyse"
 		]
 	},
 	{
@@ -20414,9 +20454,10 @@
 	{
 		"usphone": "/ˌænəˈlɪtɪkl/",
 		"ukphone": "/ˌænəˈlɪtɪkəl/",
-		"name": "analytic/analytical",
+		"name": "analytic",
 		"trans": [
-			"分析的 (adj.)"
+			"分析的 (adj.)",
+			"也作 analytical"
 		]
 	},
 	{
@@ -22006,9 +22047,10 @@
 	{
 		"usphone": "/plaʊ/",
 		"ukphone": "/plaʊ/",
-		"name": "plough/plow",
+		"name": "plough",
 		"trans": [
-			"犁 (noun), 耕地 (vt.)"
+			"犁 (noun), 耕地 (vt.)",
+			"也作 plow"
 		]
 	},
 	{
@@ -22054,9 +22096,10 @@
 	{
 		"usphone": "/ˈfaɪbɚ/",
 		"ukphone": "/ˈfaɪbə/",
-		"name": "fiber/fibre",
+		"name": "fiber",
 		"trans": [
-			"纤维 (noun)"
+			"纤维 (noun)",
+			"也作 fibre"
 		]
 	},
 	{
@@ -22702,9 +22745,10 @@
 	{
 		"usphone": "/ˌmɛməˈrændəm/",
 		"ukphone": "/ˌmeməˈrændəm/",
-		"name": "memo/memorandum",
+		"name": "memo",
 		"trans": [
-			"备忘录 (noun)"
+			"备忘录 (noun)",
+			"也作 memorandum"
 		]
 	},
 	{
@@ -24488,9 +24532,10 @@
 	{
 		"usphone": "/tʃɛk/",
 		"ukphone": "/tʃek/",
-		"name": "cheque/check",
+		"name": "cheque",
 		"trans": [
-			"支票 (noun)"
+			"支票 (noun)",
+			"也作 check"
 		]
 	},
 	{
@@ -24928,9 +24973,10 @@
 	{
 		"usphone": "/ɛsˈθɛtɪk/",
 		"ukphone": "/i:sˈθetɪk/",
-		"name": "(a)esthetic",
+		"name": "esthetic",
 		"trans": [
-			"美学的 (adj.)"
+			"美学的 (adj.)",
+			"也作 aesthetic"
 		]
 	},
 	{
@@ -25752,9 +25798,10 @@
 	{
 		"usphone": "/əˈmɪdst/",
 		"ukphone": "/əˈmɪdst/",
-		"name": "amid(st)",
+		"name": "amid",
 		"trans": [
-			"在...中间 (prep.)"
+			"在...中间 (prep.)",
+			"也作 amidst"
 		]
 	},
 	{
@@ -26008,9 +26055,10 @@
 	{
 		"usphone": "/ɡræm/",
 		"ukphone": "/ɡræm/",
-		"name": "gram(me)",
+		"name": "gram",
 		"trans": [
-			"克 (noun)"
+			"克 (noun)",
+			"也作 gramme"
 		]
 	},
 	{
@@ -28610,9 +28658,10 @@
 	{
 		"usphone": "/ˈprogræm/",
 		"ukphone": "/ˈprəʊɡræm/",
-		"name": "program(me)",
+		"name": "program",
 		"trans": [
-			"节目，程序 (noun)"
+			"节目，程序 (noun)",
+			"也作 programme"
 		]
 	},
 	{
@@ -30266,7 +30315,7 @@
 	{
 		"usphone": "/ˈɑrtəˌfækt/",
 		"ukphone": "/ˈɑ:tɪfækt/",
-		"name": "artifact/artifact",
+		"name": "artifact",
 		"trans": [
 			"文物 (n.) - 历史物品"
 		]
@@ -30306,9 +30355,11 @@
 	{
 		"usphone": "/dɪˈstɪl/",
 		"ukphone": "/dɪsˈtɪl/",
-		"name": "distill/distil(l)",
+		"name": "distill",
 		"trans": [
-			"蒸馏 (vt.) - 通过加热分离液体"
+			"蒸馏 (vt.) - 通过加热分离液体",
+			"也作 distill",
+			"也作 distil"
 		]
 	},
 	{
@@ -30514,9 +30565,10 @@
 	{
 		"usphone": "/ˈmobəlaɪz/",
 		"ukphone": "/ˈməʊbəlaɪz/",
-		"name": "mobilize/mobiliz(s)e",
+		"name": "mobilize",
 		"trans": [
-			"动员 (vt.) - 组织行动"
+			"动员 (vt.) - 组织行动",
+			"也作 mobilise"
 		]
 	},
 	{
@@ -30530,9 +30582,10 @@
 	{
 		"usphone": "/mold/",
 		"ukphone": "/məʊld/",
-		"name": "mo(u)ld",
+		"name": "mold",
 		"trans": [
-			"模具 (n.) - 形状模型"
+			"模具 (n.) - 形状模型",
+			"也作 mould"
 		]
 	},
 	{
@@ -31474,9 +31527,10 @@
 	{
 		"usphone": "/ˌsɪstəˈmætɪk(ə)l/",
 		"ukphone": "/ˌsɪstəˈmætɪk(ə)l/",
-		"name": "systematic(al)",
+		"name": "systematic",
 		"trans": [
-			"系统的 (adj.) - 有序的"
+			"系统的 (adj.) - 有序的",
+			"也作 systematical"
 		]
 	},
 	{
@@ -31642,9 +31696,10 @@
 	{
 		"usphone": "/ˈkozɪ/",
 		"ukphone": "/ˈkəʊzi/",
-		"name": "cosy/cozy",
+		"name": "cosy",
 		"trans": [
-			"舒适的 (adj.) - 令人放松的"
+			"舒适的 (adj.) - 令人放松的",
+			"也作 cozy"
 		]
 	},
 	{
@@ -33042,9 +33097,10 @@
 	{
 		"usphone": "/ˈsɪmpəθaɪz/",
 		"ukphone": "/ˈsɪmpəθaɪz/",
-		"name": "sympathize(s)e",
+		"name": "sympathize",
 		"trans": [
-			"同情 (vi.) - 分享他人的痛苦"
+			"同情 (vi.) - 分享他人的痛苦",
+			"也作 sympathise"
 		]
 	},
 	{
@@ -35690,9 +35746,10 @@
 	{
 		"usphone": "/rɪˈfrɪdʒəreɪtə/",
 		"ukphone": "/rɪˈfrɪdʒəreɪtə/",
-		"name": "refrigerator/fridge",
+		"name": "refrigerator",
 		"trans": [
-			"冰箱 (n.) - 冷藏设备"
+			"冰箱 (n.) - 冷藏设备",
+			"也作 fridge"
 		]
 	},
 	{
@@ -35794,9 +35851,10 @@
 	{
 		"usphone": "/ˈɡæsəli:n/",
 		"ukphone": "/ˈɡæsəli:n/",
-		"name": "gasoline/gasolene",
+		"name": "gasoline",
 		"trans": [
-			"汽油 (n.) - 发动机燃料"
+			"汽油 (n.) - 发动机燃料",
+			"也作 gasolene"
 		]
 	},
 	{
@@ -35890,7 +35948,7 @@
 	{
 		"usphone": "/ɡreɪ/",
 		"ukphone": "/ɡreɪ/",
-		"name": "gray/gray",
+		"name": "gray",
 		"trans": [
 			"灰色的 (adj.) - 中性颜色"
 		]
@@ -35938,17 +35996,19 @@
 	{
 		"usphone": "/dʒɪmˈneɪzɪəm/",
 		"ukphone": "/dʒɪmˈneɪzɪəm/",
-		"name": "gymnasium/gym",
+		"name": "gymnasium",
 		"trans": [
-			"体育馆 (n.) - 锻炼场所"
+			"体育馆 (n.) - 锻炼场所",
+			"也作 gym"
 		]
 	},
 	{
 		"usphone": "/ˈhæmbɜ:ɡə/",
 		"ukphone": "/ˈhæmbɜ:ɡə/",
-		"name": "hamburger/burger",
+		"name": "hamburger",
 		"trans": [
-			"汉堡包 (n.) - 快餐食品"
+			"汉堡包 (n.) - 快餐食品",
+			"也作 burger"
 		]
 	},
 	{
@@ -36010,9 +36070,10 @@
 	{
 		"usphone": "/heɪ/",
 		"ukphone": "/heɪ/",
-		"name": "hi/hey",
+		"name": "hi",
 		"trans": [
-			"喂 (int.) - 打招呼"
+			"喂 (int.) - 打招呼",
+			"也作 hey"
 		]
 	},
 	{
@@ -36322,9 +36383,10 @@
 	{
 		"usphone": "/ˈkɪləˌmi:tə/",
 		"ukphone": "/ˈkɪləˌmi:tə/",
-		"name": "kilometer/kilometre",
+		"name": "kilometer",
 		"trans": [
-			"千米 (n.) - 距离单位"
+			"千米 (n.) - 距离单位",
+			"也作 kilometre"
 		]
 	},
 	{
@@ -36346,9 +36408,10 @@
 	{
 		"usphone": "/ləˈbɒrətri/",
 		"ukphone": "/ləˈbɒrətri/",
-		"name": "lab/laboratory",
+		"name": "lab",
 		"trans": [
-			"实验室 (n.) - 实验场所"
+			"实验室 (n.) - 实验场所",
+			"也作 laboratory"
 		]
 	},
 	{
@@ -36506,9 +36569,10 @@
 	{
 		"usphone": "/ˈli:tə/",
 		"ukphone": "/ˈli:tə/",
-		"name": "liter/litre",
+		"name": "liter",
 		"trans": [
-			"升 (n.) - 容积单位"
+			"升 (n.) - 容积单位",
+			"也作 litre"
 		]
 	},
 	{
@@ -36690,9 +36754,10 @@
 	{
 		"usphone": "/ˈmɪlimi:tɚ/",
 		"ukphone": "/ˈmɪlɪˌmi:tə/",
-		"name": "millimetre/millimeter",
+		"name": "millimetre",
 		"trans": [
-			"毫米 (n.) - 距离单位"
+			"毫米 (n.) - 距离单位",
+			"也作 millimeter"
 		]
 	},
 	{
@@ -36778,9 +36843,10 @@
 	{
 		"usphone": "/ˈnebɚ/",
 		"ukphone": "/ˈneɪbə/",
-		"name": "neighbor/neighbour",
+		"name": "neighbor",
 		"trans": [
-			"邻居 (n.) - 居住附近的人"
+			"邻居 (n.) - 居住附近的人",
+			"也作 neighbour"
 		]
 	},
 	{
@@ -38266,9 +38332,10 @@
 	{
 		"usphone": "/ˈsʌlfɚ/",
 		"ukphone": "/ˈsʌlfə/",
-		"name": "sulfur/sulphur",
+		"name": "sulfur",
 		"trans": [
-			"硫磺 (n.) - 化学元素"
+			"硫磺 (n.) - 化学元素",
+			"也作 sulphur"
 		]
 	},
 	{
@@ -38522,9 +38589,10 @@
 	{
 		"usphone": "/ˈtrɑlɪ/",
 		"ukphone": "/ˈtrɒli/",
-		"name": "trolley/trolly",
+		"name": "trolley",
 		"trans": [
-			"手推车 (n.) - 移动物品车辆"
+			"手推车 (n.) - 移动物品车辆",
+			"也作 trolly"
 		]
 	},
 	{
@@ -38570,9 +38638,10 @@
 	{
 		"usphone": "/ˈtu:mɚ/",
 		"ukphone": "/ˈtju:mə/",
-		"name": "tumor/tumour",
+		"name": "tumor",
 		"trans": [
-			"肿瘤 (n.) - 异常增生组织"
+			"肿瘤 (n.) - 异常增生组织",
+			"也作 tumour"
 		]
 	},
 	{
@@ -38858,9 +38927,10 @@
 	{
 		"usphone": "/ˈwɪski/",
 		"ukphone": "/ˈwɪski/",
-		"name": "whisky/whiskey",
+		"name": "whisky",
 		"trans": [
-			"威士忌 (n.) - 蒸馏酒"
+			"威士忌 (n.) - 蒸馏酒",
+			"也作 whiskey"
 		]
 	},
 	{

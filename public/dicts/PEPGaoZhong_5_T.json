@@ -433,9 +433,10 @@
         "ukphone": "ˈpɒzətɪv"
     },
     {
-        "name": "(be)strict with...",
+        "name": "strict with...",
         "trans": [
-            "对……严格的"
+            "对……严格的",
+            "（be）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1065,7 +1066,7 @@
         "ukphone": "ˈstætʃu:"
     },
     {
-        "name": "Buckingham  Palace",
+        "name": "Buckingham Palace",
         "trans": [
             "白金汉宫"
         ],
@@ -2035,9 +2036,10 @@
         "ukphone": ""
     },
     {
-        "name": "so as to (do sth)",
+        "name": "so as to",
         "trans": [
-            "为了（做）……"
+            "为了（做）……",
+            "（do sth）"
         ],
         "usphone": "",
         "ukphone": ""

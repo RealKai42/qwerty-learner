@@ -162,9 +162,10 @@
     ]
   },
   {
-    "name": "waiter/waitress",
+    "name": "waiter",
     "trans": [
-      "男/女侍者"
+      "男/女侍者",
+      "也作 waitress"
     ]
   },
   {
@@ -270,9 +271,10 @@
     ]
   },
   {
-    "name": "package/parcel",
+    "name": "package",
     "trans": [
-      "包裹"
+      "包裹",
+      "也作 parcel"
     ]
   },
   {
@@ -432,9 +434,10 @@
     ]
   },
   {
-    "name": "magazine/newspaper",
+    "name": "magazine",
     "trans": [
-      "杂志"
+      "杂志",
+      "也作 newspaper"
     ]
   },
   {
@@ -474,9 +477,10 @@
     ]
   },
   {
-    "name": "term/semester",
+    "name": "term",
     "trans": [
-      "学期"
+      "学期",
+      "也作 semester"
     ]
   },
   {
@@ -576,9 +580,10 @@
     ]
   },
   {
-    "name": "ICU /intensive care unit",
+    "name": "ICU",
     "trans": [
-      "特护病房"
+      "特护病房",
+      "也作 intensive care unit"
     ]
   },
   {
@@ -612,9 +617,10 @@
     ]
   },
   {
-    "name": "cold/flu",
+    "name": "cold",
     "trans": [
-      "流感"
+      "流感",
+      "也作 flu"
     ]
   },
   {
@@ -858,9 +864,10 @@
     ]
   },
   {
-    "name": "front clerk/reception clerk",
+    "name": "front clerk",
     "trans": [
-      "总台接待员"
+      "总台接待员",
+      "也作 reception clerk"
     ]
   },
   {
@@ -978,9 +985,10 @@
     ]
   },
   {
-    "name": "cook/chef",
+    "name": "cook",
     "trans": [
-      "厨师"
+      "厨师",
+      "也作 chef"
     ]
   },
   {
@@ -1026,9 +1034,10 @@
     ]
   },
   {
-    "name": "book/reserve",
+    "name": "book",
     "trans": [
-      "预定"
+      "预定",
+      "也作 reserve"
     ]
   },
   {
@@ -1086,9 +1095,10 @@
     ]
   },
   {
-    "name": "booking office/ticket office",
+    "name": "booking office",
     "trans": [
-      "售票处"
+      "售票处",
+      "也作 ticket office"
     ]
   },
   {
@@ -1104,15 +1114,17 @@
     ]
   },
   {
-    "name": "coach/carriage",
+    "name": "coach",
     "trans": [
-      "车厢"
+      "车厢",
+      "也作 carriage"
     ]
   },
   {
-    "name": "sidewalk/pavement",
+    "name": "sidewalk",
     "trans": [
-      "人行道"
+      "人行道",
+      "也作 pavement"
     ]
   },
   {
@@ -1260,9 +1272,10 @@
     ]
   },
   {
-    "name": "fix/repair",
+    "name": "fix",
     "trans": [
-      "修理"
+      "修理",
+      "也作 repair"
     ]
   },
   {
@@ -1356,9 +1369,10 @@
     ]
   },
   {
-    "name": "book/reserve",
+    "name": "book",
     "trans": [
-      "预订"
+      "预订",
+      "也作 reserve"
     ]
   },
   {
@@ -1416,9 +1430,10 @@
     ]
   },
   {
-    "name": "airhostess/stewardess",
+    "name": "airhostess",
     "trans": [
-      "空姐"
+      "空姐",
+      "也作 stewardess"
     ]
   },
   {
@@ -1470,9 +1485,10 @@
     ]
   },
   {
-    "name": "luggage/baggage",
+    "name": "luggage",
     "trans": [
-      "行李"
+      "行李",
+      "也作 baggage"
     ]
   },
   {
@@ -1530,9 +1546,10 @@
     ]
   },
   {
-    "name": "store/shop",
+    "name": "store",
     "trans": [
-      "商店，杂货店"
+      "商店，杂货店",
+      "也作 shop"
     ]
   },
   {
@@ -1668,9 +1685,10 @@
     ]
   },
   {
-    "name": "expensive/dear",
+    "name": "expensive",
     "trans": [
-      "昂贵的"
+      "昂贵的",
+      "也作 dear"
     ]
   },
   {
@@ -1680,9 +1698,10 @@
     ]
   },
   {
-    "name": "popular/fashionable",
+    "name": "popular",
     "trans": [
-      "流行的，时尚的"
+      "流行的，时尚的",
+      "也作 fashionable"
     ]
   },
   {
@@ -1704,9 +1723,10 @@
     ]
   },
   {
-    "name": "second-hand/used",
+    "name": "second-hand",
     "trans": [
-      "二手的，旧的"
+      "二手的，旧的",
+      "也作 used"
     ]
   },
   {
@@ -1866,9 +1886,11 @@
     ]
   },
   {
-    "name": "sunny/bright/clear",
+    "name": "sunny",
     "trans": [
-      "阳光充足的"
+      "阳光充足的",
+      "也作 bright",
+      "也作 clear"
     ]
   },
   {
@@ -1908,9 +1930,10 @@
     ]
   },
   {
-    "name": "mild/agreeable",
+    "name": "mild",
     "trans": [
-      "温和的"
+      "温和的",
+      "也作 agreeable"
     ]
   },
   {
@@ -2130,9 +2153,10 @@
     ]
   },
   {
-    "name": "vacation/holiday",
+    "name": "vacation",
     "trans": [
-      "假日"
+      "假日",
+      "也作 holiday"
     ]
   },
   {
@@ -2244,15 +2268,20 @@
     ]
   },
   {
-    "name": "travel/trip/tour/voyage",
+    "name": "travel",
     "trans": [
-      "旅行"
+      "旅行",
+      "也作 trip",
+      "也作 tour",
+      "也作 voyage"
     ]
   },
   {
-    "name": "plane/airplane/aeroplane",
+    "name": "plane",
     "trans": [
-      "飞机"
+      "飞机",
+      "也作 airplane",
+      "也作 aeroplane"
     ]
   },
   {
@@ -2268,9 +2297,10 @@
     ]
   },
   {
-    "name": "subway/underground",
+    "name": "subway",
     "trans": [
-      "地铁"
+      "地铁",
+      "也作 underground"
     ]
   },
   {
@@ -2286,9 +2316,10 @@
     ]
   },
   {
-    "name": "freeway/expressway",
+    "name": "freeway",
     "trans": [
-      "高速公路"
+      "高速公路",
+      "也作 expressway"
     ]
   },
   {
@@ -2418,9 +2449,10 @@
     ]
   },
   {
-    "name": "reporter/journalist",
+    "name": "reporter",
     "trans": [
-      "记者"
+      "记者",
+      "也作 journalist"
     ]
   },
   {
@@ -2484,9 +2516,10 @@
     ]
   },
   {
-    "name": "actor/actress",
+    "name": "actor",
     "trans": [
-      "男/女演员"
+      "男/女演员",
+      "也作 actress"
     ]
   },
   {
@@ -2502,9 +2535,10 @@
     ]
   },
   {
-    "name": "chef/cook",
+    "name": "chef",
     "trans": [
-      "厨师"
+      "厨师",
+      "也作 cook"
     ]
   },
   {
@@ -2538,9 +2572,11 @@
     ]
   },
   {
-    "name": "sportsman/athlete/player",
+    "name": "sportsman",
     "trans": [
-      "运动员"
+      "运动员",
+      "也作 athlete",
+      "也作 player"
     ]
   },
   {
@@ -2730,9 +2766,10 @@
     ]
   },
   {
-    "name": "position/post",
+    "name": "position",
     "trans": [
-      "职位"
+      "职位",
+      "也作 post"
     ]
   },
   {
@@ -2868,9 +2905,10 @@
     ]
   },
   {
-    "name": "documentary/film",
+    "name": "documentary",
     "trans": [
-      "记录片/文献片"
+      "记录片/文献片",
+      "也作 film"
     ]
   },
   {
@@ -3156,9 +3194,10 @@
     ]
   },
   {
-    "name": "lift/elevator",
+    "name": "lift",
     "trans": [
-      "电梯"
+      "电梯",
+      "也作 elevator"
     ]
   },
   {

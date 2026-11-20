@@ -1119,9 +1119,11 @@
         "ukphone": "'bɒðə"
     },
     {
-        "name": "(be) bound to (do)",
+        "name": "bound to",
         "trans": [
-            "一定或注定（做）……"
+            "一定或注定（做）……",
+            "（be）",
+            "（do）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1828,9 +1830,10 @@
         "ukphone": "daɪ'næmɪk"
     },
     {
-        "name": "set out (to do)",
+        "name": "set out",
         "trans": [
-            "开始（做）"
+            "开始（做）",
+            "（to do）"
         ],
         "usphone": "",
         "ukphone": ""

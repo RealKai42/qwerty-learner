@@ -6,9 +6,10 @@
     ]
   },
   {
-    "name": "am(I'm=I am)",
+    "name": "am",
     "trans": [
-      "adv.是（我是）"
+      "adv.是（我是）",
+      "（I'm=I am）"
     ]
   },
   {
@@ -42,7 +43,7 @@
     ]
   },
   {
-    "name": "How are you? ",
+    "name": "How are you?",
     "trans": [
       "adv.你好么？"
     ]
@@ -72,7 +73,7 @@
     ]
   },
   {
-    "name": "you ",
+    "name": "you",
     "trans": [
       "adv.你；你们"
     ]
@@ -114,7 +115,7 @@
     ]
   },
   {
-    "name": "ha ha ",
+    "name": "ha ha",
     "trans": [
       "adv.哈哈"
     ]
@@ -246,7 +247,7 @@
     ]
   },
   {
-    "name": "it ",
+    "name": "it",
     "trans": [
       "adv.它"
     ]
@@ -288,9 +289,10 @@
     ]
   },
   {
-    "name": "a(an)",
+    "name": "a",
     "trans": [
-      "adv.一个，一"
+      "adv.一个，一",
+      "（an）"
     ]
   },
   {
@@ -612,9 +614,10 @@
     ]
   },
   {
-    "name": "not(isn't=is not)",
+    "name": "not",
     "trans": [
-      "adv.不(不是）"
+      "adv.不(不是）",
+      "（isn't=is not）"
     ]
   },
   {
@@ -696,9 +699,10 @@
     ]
   },
   {
-    "name": "he(he's=he is)",
+    "name": "he",
     "trans": [
-      "adv.他(他是)"
+      "adv.他(他是)",
+      "（he's=he is）"
     ]
   },
   {

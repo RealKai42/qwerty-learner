@@ -146,15 +146,17 @@
         ]
     },
     {
-        "name": "undergraduate (bachelor's) degree",
+        "name": "undergraduate degree",
         "trans": [
-            "本科学位"
+            "本科学位",
+            "也作 bachelor's"
         ]
     },
     {
-        "name": "grade point average(GPA)",
+        "name": "grade point average",
         "trans": [
-            "平均绩点"
+            "平均绩点",
+            "也作 GPA"
         ]
     },
     {
@@ -644,9 +646,10 @@
         ]
     },
     {
-        "name": "re-use/conversion",
+        "name": "re-use",
         "trans": [
-            "转换"
+            "转换",
+            "也作 conversion"
         ]
     },
     {
@@ -974,9 +977,10 @@
         "ukphone": "'mɔːtə"
     },
     {
-        "name": "gypsum/plaster",
+        "name": "gypsum",
         "trans": [
-            "石膏"
+            "石膏",
+            "也作 plaster"
         ]
     },
     {
@@ -1160,9 +1164,10 @@
         ]
     },
     {
-        "name": "plaza/square",
+        "name": "plaza",
         "trans": [
-            "广场"
+            "广场",
+            "也作 square"
         ]
     },
     {
@@ -1196,9 +1201,10 @@
         "ukphone": "'neɪbə,hʊd"
     },
     {
-        "name": "CBD(Central Business District)",
+        "name": "CBD",
         "trans": [
-            "中央商务中心"
+            "中央商务中心",
+            "（Central Business District）"
         ]
     },
     {
@@ -1304,9 +1310,11 @@
         ]
     },
     {
-        "name": "pedestrian zones/auto-free zones/car-free zones",
+        "name": "pedestrian zones",
         "trans": [
-            "步行区"
+            "步行区",
+            "也作 auto-free zones",
+            "也作 car-free zones"
         ]
     },
     {
@@ -1568,9 +1576,10 @@
         "ukphone": "wʊd"
     },
     {
-        "name": "cantilever/overhang",
+        "name": "cantilever",
         "trans": [
-            "悬挑"
+            "悬挑",
+            "也作 overhang"
         ]
     },
     {
@@ -1802,9 +1811,10 @@
         ]
     },
     {
-        "name": "heating,ventilating,air conditioning(HVAC)",
+        "name": "heating,ventilating,air conditioning",
         "trans": [
-            "采暖 ，通风，空调"
+            "采暖 ，通风，空调",
+            "也作 HVAC"
         ]
     },
     {
@@ -1896,9 +1906,10 @@
         ]
     },
     {
-        "name": "green roof/rain garden",
+        "name": "green roof",
         "trans": [
-            "绿色屋面/雨水花园"
+            "绿色屋面/雨水花园",
+            "也作 rain garden"
         ]
     },
     {
@@ -1908,9 +1919,10 @@
         ]
     },
     {
-        "name": "building orientation/air sealing",
+        "name": "building orientation",
         "trans": [
-            "建筑朝向/气密性"
+            "建筑朝向/气密性",
+            "也作 air sealing"
         ]
     },
     {
@@ -2288,9 +2300,10 @@
         "ukphone": "step"
     },
     {
-        "name": "shrub/bush",
+        "name": "shrub",
         "trans": [
-            "灌木"
+            "灌木",
+            "也作 bush"
         ]
     },
     {
@@ -2402,9 +2415,10 @@
         ]
     },
     {
-        "name": "comitas (utilitas)",
+        "name": "comitas",
         "trans": [
-            "实用"
+            "实用",
+            "也作 utilitas"
         ]
     },
     {
@@ -2484,9 +2498,10 @@
         ]
     },
     {
-        "name": "bidding/negotiation",
+        "name": "bidding",
         "trans": [
-            "投标/谈判"
+            "投标/谈判",
+            "也作 negotiation"
         ]
     },
     {
@@ -2628,27 +2643,31 @@
         ]
     },
     {
-        "name": "non-dimensional element (point)",
+        "name": "non-dimensional element",
         "trans": [
-            "无维度元素 (点)"
+            "无维度元素 (点)",
+            "也作 point"
         ]
     },
     {
-        "name": "two dimensional element(line and plane)",
+        "name": "two dimensional element",
         "trans": [
-            "二维元素 (直线和平面)"
+            "二维元素 (直线和平面)",
+            "（line and plane）"
         ]
     },
     {
-        "name": "three dimensional element (volume and space)",
+        "name": "three dimensional element",
         "trans": [
-            "三维元素 (体积和空间)"
+            "三维元素 (体积和空间)",
+            "（volume and space）"
         ]
     },
     {
-        "name": "four dimension (time and motion)",
+        "name": "four dimension",
         "trans": [
-            "四维 (时间和运动)"
+            "四维 (时间和运动)",
+            "（time and motion）"
         ]
     },
     {
@@ -3012,7 +3031,7 @@
         "ukphone": "sloup"
     },
     {
-        "name": "demolition = demolishment",
+        "name": "demolition= demolishment",
         "trans": [
             "拆除"
         ]
@@ -3494,9 +3513,10 @@
         ]
     },
     {
-        "name": "canopy/arbor",
+        "name": "canopy",
         "trans": [
-            "树冠"
+            "树冠",
+            "也作 arbor"
         ]
     },
     {

@@ -6636,9 +6636,10 @@
         "ukphone": "'daɪəlekt"
     },
     {
-        "name": "dialog(ue)",
+        "name": "dialog",
         "trans": [
-            "n.对话"
+            "n.对话",
+            "也作 dialogue"
         ]
     },
     {
@@ -9260,15 +9261,17 @@
         "ukphone": "'feɪvə"
     },
     {
-        "name": "favo(u)rable",
+        "name": "favorable",
         "trans": [
-            "adj.赞同的"
+            "adj.赞同的",
+            "也作 favourable"
         ]
     },
     {
-        "name": "favo(u)rite",
+        "name": "favorite",
         "trans": [
-            "adj.最喜欢的"
+            "adj.最喜欢的",
+            "也作 favourite"
         ]
     },
     {
@@ -10374,9 +10377,10 @@
         "ukphone": "fjʊəl"
     },
     {
-        "name": "fulfil(l)",
+        "name": "fulfil",
         "trans": [
-            "v.履行"
+            "v.履行",
+            "也作 fulfill"
         ]
     },
     {
@@ -11018,7 +11022,7 @@
         "ukphone": "greɪn"
     },
     {
-        "name": "gram()",
+        "name": "gram-",
         "trans": [
             "n.克"
         ]

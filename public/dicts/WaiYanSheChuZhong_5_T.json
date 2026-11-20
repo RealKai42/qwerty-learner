@@ -2021,9 +2021,10 @@
         "ukphone": ""
     },
     {
-        "name": "stop sb. (from) doing sth.",
+        "name": "stop sb. doing sth.",
         "trans": [
-            "阻止某人做某事"
+            "阻止某人做某事",
+            "也作 from"
         ],
         "usphone": "",
         "ukphone": ""
@@ -2429,9 +2430,10 @@
         "ukphone": ""
     },
     {
-        "name": "keep sb./sth. away",
+        "name": "keep sb.",
         "trans": [
-            "（使）避开；（使）不靠近"
+            "（使）避开；（使）不靠近",
+            "也作 sth. away"
         ],
         "usphone": "",
         "ukphone": ""

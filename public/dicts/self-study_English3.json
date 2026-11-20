@@ -19192,7 +19192,7 @@
         "ukphone": "[ˈɔːθə(r)]"
     },
     {
-        "name": "no more(...)than",
+        "name": "no more than",
         "trans": [
             "不超过（…）"
         ]
@@ -19664,9 +19664,10 @@
         "ukphone": "[smɒɡ]"
     },
     {
-        "name": "turn (somebody) off",
+        "name": "turn off",
         "trans": [
-            "使（某人）厌烦"
+            "使（某人）厌烦",
+            "也作 somebody"
         ]
     },
     {
@@ -37937,7 +37938,7 @@
         ]
     },
     {
-        "name": "make  request for",
+        "name": "make request for",
         "trans": [
             "请求"
         ]

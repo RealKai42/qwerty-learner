@@ -36,9 +36,10 @@
         ]
     },
     {
-        "name": "leave (irr.)",
+        "name": "leave",
         "trans": [
-            "zurücklassen"
+            "zurücklassen",
+            "（irr.）"
         ]
     },
     {
@@ -132,9 +133,10 @@
         ]
     },
     {
-        "name": "withdraw (irr.)",
+        "name": "withdraw",
         "trans": [
-            "zurückziehen"
+            "zurückziehen",
+            "（irr.）"
         ]
     },
     {
@@ -348,9 +350,10 @@
         ]
     },
     {
-        "name": "take care (of)",
+        "name": "take care",
         "trans": [
-            "achtgeben (auf)"
+            "achtgeben (auf)",
+            "（of）"
         ]
     },
     {
@@ -660,9 +663,10 @@
         ]
     },
     {
-        "name": "wear (irr.)",
+        "name": "wear",
         "trans": [
-            "tragen"
+            "tragen",
+            "（irr.）"
         ]
     },
     {
@@ -792,9 +796,10 @@
         ]
     },
     {
-        "name": "grow (irr.)",
+        "name": "grow",
         "trans": [
-            "züchten"
+            "züchten",
+            "（irr.）"
         ]
     },
     {
@@ -1008,9 +1013,10 @@
         ]
     },
     {
-        "name": "lean (irr.)",
+        "name": "lean",
         "trans": [
-            "sich neigen"
+            "sich neigen",
+            "（irr.）"
         ]
     },
     {
@@ -1164,9 +1170,10 @@
         ]
     },
     {
-        "name": "rise (irr.)",
+        "name": "rise",
         "trans": [
-            "aufstehen"
+            "aufstehen",
+            "（irr.）"
         ]
     },
     {
@@ -1254,9 +1261,10 @@
         ]
     },
     {
-        "name": "light (irr.)",
+        "name": "light",
         "trans": [
-            "anzünden"
+            "anzünden",
+            "（irr.）"
         ]
     },
     {
@@ -1548,9 +1556,10 @@
         ]
     },
     {
-        "name": "too (nachgestellt)",
+        "name": "too",
         "trans": [
-            "auch"
+            "auch",
+            "也作 nachgestellt"
         ]
     },
     {
@@ -1860,9 +1869,10 @@
         ]
     },
     {
-        "name": "pay attention (to)",
+        "name": "pay attention",
         "trans": [
-            "aufpassen (auf)"
+            "aufpassen (auf)",
+            "（to）"
         ]
     },
     {
@@ -1962,15 +1972,17 @@
         ]
     },
     {
-        "name": "spread (irr.)",
+        "name": "spread",
         "trans": [
-            "sich ausbreiten"
+            "sich ausbreiten",
+            "（irr.）"
         ]
     },
     {
-        "name": "split (irr.)",
+        "name": "split",
         "trans": [
-            "spalten"
+            "spalten",
+            "（irr.）"
         ]
     },
     {
@@ -1980,9 +1992,10 @@
         ]
     },
     {
-        "name": "wake (irr.)",
+        "name": "wake",
         "trans": [
-            "aufwecken"
+            "aufwecken",
+            "（irr.）"
         ]
     },
     {
@@ -2280,9 +2293,10 @@
         ]
     },
     {
-        "name": "spend (irr.)",
+        "name": "spend",
         "trans": [
-            "ausgeben"
+            "ausgeben",
+            "（irr.）"
         ]
     },
     {
@@ -2706,9 +2720,10 @@
         ]
     },
     {
-        "name": "build (irr.)",
+        "name": "build",
         "trans": [
-            "bauen"
+            "bauen",
+            "（irr.）"
         ]
     },
     {
@@ -2850,9 +2865,10 @@
         ]
     },
     {
-        "name": "mean (irr.)",
+        "name": "mean",
         "trans": [
-            "meinen"
+            "meinen",
+            "（irr.）"
         ]
     },
     {
@@ -2988,9 +3004,10 @@
         ]
     },
     {
-        "name": "meet (irr.)",
+        "name": "meet",
         "trans": [
-            "treffen"
+            "treffen",
+            "（irr.）"
         ]
     },
     {
@@ -3012,9 +3029,10 @@
         ]
     },
     {
-        "name": "begin (irr.)",
+        "name": "begin",
         "trans": [
-            "beginnen"
+            "beginnen",
+            "（irr.）"
         ]
     },
     {
@@ -3024,9 +3042,10 @@
         ]
     },
     {
-        "name": "see (irr.)",
+        "name": "see",
         "trans": [
-            "verstehen"
+            "verstehen",
+            "（irr.）"
         ]
     },
     {
@@ -3072,9 +3091,10 @@
         ]
     },
     {
-        "name": "keep (irr.)",
+        "name": "keep",
         "trans": [
-            "behalten"
+            "behalten",
+            "（irr.）"
         ]
     },
     {
@@ -3198,9 +3218,10 @@
         ]
     },
     {
-        "name": "bite (irr.)",
+        "name": "bite",
         "trans": [
-            "beißen"
+            "beißen",
+            "（irr.）"
         ]
     },
     {
@@ -3252,9 +3273,10 @@
         ]
     },
     {
-        "name": "get (irr.)",
+        "name": "get",
         "trans": [
-            "werden"
+            "werden",
+            "（irr.）"
         ]
     },
     {
@@ -4020,9 +4042,10 @@
         ]
     },
     {
-        "name": "bend (irr.)",
+        "name": "bend",
         "trans": [
-            "biegen"
+            "biegen",
+            "（irr.）"
         ]
     },
     {
@@ -4086,9 +4109,10 @@
         ]
     },
     {
-        "name": "bind (irr.)",
+        "name": "bind",
         "trans": [
-            "binden"
+            "binden",
+            "（irr.）"
         ]
     },
     {
@@ -4188,9 +4212,10 @@
         ]
     },
     {
-        "name": "leaf (irr.)",
+        "name": "leaf",
         "trans": [
-            "Blatt"
+            "Blatt",
+            "（irr.）"
         ]
     },
     {
@@ -4344,9 +4369,10 @@
         ]
     },
     {
-        "name": "bleed (irr.)",
+        "name": "bleed",
         "trans": [
-            "bluten"
+            "bluten",
+            "（irr.）"
         ]
     },
     {
@@ -4560,9 +4586,10 @@
         ]
     },
     {
-        "name": "burn (irr.)",
+        "name": "burn",
         "trans": [
-            "verbrennen"
+            "verbrennen",
+            "（irr.）"
         ]
     },
     {
@@ -4626,9 +4653,10 @@
         ]
     },
     {
-        "name": "mailman (irr.)",
+        "name": "mailman",
         "trans": [
-            "Briefträger(US)"
+            "Briefträger(US)",
+            "（irr.）"
         ]
     },
     {
@@ -4644,9 +4672,10 @@
         ]
     },
     {
-        "name": "bring (irr.)",
+        "name": "bring",
         "trans": [
-            "herbeibringen"
+            "herbeibringen",
+            "（irr.）"
         ]
     },
     {
@@ -4752,9 +4781,10 @@
         ]
     },
     {
-        "name": "spell (irr.)",
+        "name": "spell",
         "trans": [
-            "buchstabieren"
+            "buchstabieren",
+            "（irr.）"
         ]
     },
     {
@@ -4944,15 +4974,17 @@
         ]
     },
     {
-        "name": "Chinese (s.)",
+        "name": "Chinese",
         "trans": [
-            "Chinese"
+            "Chinese",
+            "（s.）"
         ]
     },
     {
-        "name": "Chinese (pl.)",
+        "name": "Chinese",
         "trans": [
-            "Chinesen"
+            "Chinesen",
+            "（pl.）"
         ]
     },
     {
@@ -5412,9 +5444,10 @@
         ]
     },
     {
-        "name": "think (irr.)",
+        "name": "think",
         "trans": [
-            "denken"
+            "denken",
+            "（irr.）"
         ]
     },
     {
@@ -5808,9 +5841,10 @@
         ]
     },
     {
-        "name": "thief (irr.)",
+        "name": "thief",
         "trans": [
-            "Dieb"
+            "Dieb",
+            "（irr.）"
         ]
     },
     {
@@ -6366,9 +6400,10 @@
         ]
     },
     {
-        "name": "wife (irr.)",
+        "name": "wife",
         "trans": [
-            "Frau (Gattin)"
+            "Frau (Gattin)",
+            "（irr.）"
         ]
     },
     {
@@ -6510,9 +6545,10 @@
         ]
     },
     {
-        "name": "speed (irr.)",
+        "name": "speed",
         "trans": [
-            "eilen"
+            "eilen",
+            "（irr.）"
         ]
     },
     {
@@ -7698,15 +7734,17 @@
         ]
     },
     {
-        "name": "railroad (Am.)",
+        "name": "railroad",
         "trans": [
-            "Eisenbahn"
+            "Eisenbahn",
+            "（Am.）"
         ]
     },
     {
-        "name": "railway (Br.)",
+        "name": "railway",
         "trans": [
-            "Eisenbahn"
+            "Eisenbahn",
+            "（Br.）"
         ]
     },
     {
@@ -8076,9 +8114,10 @@
         ]
     },
     {
-        "name": "hold (irr.)",
+        "name": "hold",
         "trans": [
-            "halten"
+            "halten",
+            "（irr.）"
         ]
     },
     {
@@ -8928,15 +8967,17 @@
         ]
     },
     {
-        "name": "bear (irr.)",
+        "name": "bear",
         "trans": [
-            "tragen"
+            "tragen",
+            "（irr.）"
         ]
     },
     {
-        "name": "stand (irr.)",
+        "name": "stand",
         "trans": [
-            "stehen"
+            "stehen",
+            "（irr.）"
         ]
     },
     {
@@ -9000,9 +9041,10 @@
         ]
     },
     {
-        "name": "tell (irr.)",
+        "name": "tell",
         "trans": [
-            "sagen"
+            "sagen",
+            "（irr.）"
         ]
     },
     {
@@ -9144,9 +9186,10 @@
         ]
     },
     {
-        "name": "eat (irr.)",
+        "name": "eat",
         "trans": [
-            "essen"
+            "essen",
+            "（irr.）"
         ]
     },
     {
@@ -9390,21 +9433,24 @@
         ]
     },
     {
-        "name": "drive (irr.)",
+        "name": "drive",
         "trans": [
-            "Vieh treiben"
+            "Vieh treiben",
+            "（irr.）"
         ]
     },
     {
-        "name": "go (irr.)",
+        "name": "go",
         "trans": [
-            "gehen"
+            "gehen",
+            "（irr.）"
         ]
     },
     {
-        "name": "ride (irr.)",
+        "name": "ride",
         "trans": [
-            "reiten"
+            "reiten",
+            "（irr.）"
         ]
     },
     {
@@ -9468,9 +9514,10 @@
         ]
     },
     {
-        "name": "fall (irr.)",
+        "name": "fall",
         "trans": [
-            "fallen"
+            "fallen",
+            "（irr.）"
         ]
     },
     {
@@ -9606,9 +9653,10 @@
         ]
     },
     {
-        "name": "catch (irr.)",
+        "name": "catch",
         "trans": [
-            "fangen"
+            "fangen",
+            "（irr.）"
         ]
     },
     {
@@ -9678,9 +9726,10 @@
         ]
     },
     {
-        "name": "sweep (irr.)",
+        "name": "sweep",
         "trans": [
-            "kehren"
+            "kehren",
+            "（irr.）"
         ]
     },
     {
@@ -9978,9 +10027,10 @@
         ]
     },
     {
-        "name": "find (irr.)",
+        "name": "find",
         "trans": [
-            "finden"
+            "finden",
+            "（irr.）"
         ]
     },
     {
@@ -10008,15 +10058,17 @@
         ]
     },
     {
-        "name": "fish (sg.)",
+        "name": "fish",
         "trans": [
-            "Fisch"
+            "Fisch",
+            "（sg.）"
         ]
     },
     {
-        "name": "fish (pl.)",
+        "name": "fish",
         "trans": [
-            "Fische"
+            "Fische",
+            "（pl.）"
         ]
     },
     {
@@ -10110,9 +10162,10 @@
         ]
     },
     {
-        "name": "fly (irr.)",
+        "name": "fly",
         "trans": [
-            "fliegen"
+            "fliegen",
+            "（irr.）"
         ]
     },
     {
@@ -10122,9 +10175,10 @@
         ]
     },
     {
-        "name": "flee (irr.)",
+        "name": "flee",
         "trans": [
-            "fliehen"
+            "fliehen",
+            "（irr.）"
         ]
     },
     {
@@ -10152,9 +10206,10 @@
         ]
     },
     {
-        "name": "swear (irr.)",
+        "name": "swear",
         "trans": [
-            "schwören"
+            "schwören",
+            "（irr.）"
         ]
     },
     {
@@ -10404,9 +10459,10 @@
         ]
     },
     {
-        "name": "French (pl.)",
+        "name": "French",
         "trans": [
-            "Franzosen"
+            "Franzosen",
+            "（pl.）"
         ]
     },
     {
@@ -10422,9 +10478,10 @@
         ]
     },
     {
-        "name": "woman (irr.)",
+        "name": "woman",
         "trans": [
-            "Frau"
+            "Frau",
+            "（irr.）"
         ]
     },
     {
@@ -10596,9 +10653,10 @@
         ]
     },
     {
-        "name": "freeze (irr.)",
+        "name": "freeze",
         "trans": [
-            "frieren"
+            "frieren",
+            "（irr.）"
         ]
     },
     {
@@ -10710,9 +10768,10 @@
         ]
     },
     {
-        "name": "feel (irr.)",
+        "name": "feel",
         "trans": [
-            "fühlen"
+            "fühlen",
+            "（irr.）"
         ]
     },
     {
@@ -10728,15 +10787,17 @@
         ]
     },
     {
-        "name": "lead (irr.)",
+        "name": "lead",
         "trans": [
-            "führen"
+            "führen",
+            "（irr.）"
         ]
     },
     {
-        "name": "show (irr.)",
+        "name": "show",
         "trans": [
-            "zeigen"
+            "zeigen",
+            "（irr.）"
         ]
     },
     {
@@ -10902,9 +10963,10 @@
         ]
     },
     {
-        "name": "foot (irr.)",
+        "name": "foot",
         "trans": [
-            "Fuß"
+            "Fuß",
+            "（irr.）"
         ]
     },
     {
@@ -10956,9 +11018,10 @@
         ]
     },
     {
-        "name": "feed (irr.)",
+        "name": "feed",
         "trans": [
-            "füttern"
+            "füttern",
+            "（irr.）"
         ]
     },
     {
@@ -11112,9 +11175,10 @@
         ]
     },
     {
-        "name": "give (irr.)",
+        "name": "give",
         "trans": [
-            "schenken"
+            "schenken",
+            "（irr.）"
         ]
     },
     {
@@ -12000,15 +12064,17 @@
         ]
     },
     {
-        "name": "businessmen (pl.)",
+        "name": "businessmen",
         "trans": [
-            "Geschäftsleute"
+            "Geschäftsleute",
+            "（pl.）"
         ]
     },
     {
-        "name": "businessman (irr.)",
+        "name": "businessman",
         "trans": [
-            "Geschäftsmann"
+            "Geschäftsmann",
+            "（irr.）"
         ]
     },
     {
@@ -12558,9 +12624,10 @@
         ]
     },
     {
-        "name": "win (irr.)",
+        "name": "win",
         "trans": [
-            "gewinnen"
+            "gewinnen",
+            "（irr.）"
         ]
     },
     {
@@ -12702,9 +12769,10 @@
         ]
     },
     {
-        "name": "shine (irr.)",
+        "name": "shine",
         "trans": [
-            "scheinen"
+            "scheinen",
+            "（irr.）"
         ]
     },
     {
@@ -12774,9 +12842,10 @@
         ]
     },
     {
-        "name": "slide (irr.)",
+        "name": "slide",
         "trans": [
-            "gleiten"
+            "gleiten",
+            "（irr.）"
         ]
     },
     {
@@ -12924,9 +12993,10 @@
         ]
     },
     {
-        "name": "dig (irr.)",
+        "name": "dig",
         "trans": [
-            "graben"
+            "graben",
+            "（irr.）"
         ]
     },
     {
@@ -13410,9 +13480,10 @@
         ]
     },
     {
-        "name": "have (irr.)",
+        "name": "have",
         "trans": [
-            "haben"
+            "haben",
+            "（irr.）"
         ]
     },
     {
@@ -13446,9 +13517,10 @@
         ]
     },
     {
-        "name": "half (irr.)",
+        "name": "half",
         "trans": [
-            "Hälfte"
+            "Hälfte",
+            "（irr.）"
         ]
     },
     {
@@ -13530,9 +13602,10 @@
         ]
     },
     {
-        "name": "deal in (irr.)",
+        "name": "deal in",
         "trans": [
-            "handeln mit"
+            "handeln mit",
+            "（irr.）"
         ]
     },
     {
@@ -13590,9 +13663,10 @@
         ]
     },
     {
-        "name": "hang (irr.)",
+        "name": "hang",
         "trans": [
-            "hängen"
+            "hängen",
+            "（irr.）"
         ]
     },
     {
@@ -13926,9 +14000,10 @@
         ]
     },
     {
-        "name": "gentleman (irr.)",
+        "name": "gentleman",
         "trans": [
-            "Herr"
+            "Herr",
+            "（irr.）"
         ]
     },
     {
@@ -14178,9 +14253,10 @@
         ]
     },
     {
-        "name": "take (irr.)",
+        "name": "take",
         "trans": [
-            "nehmen"
+            "nehmen",
+            "（irr.）"
         ]
     },
     {
@@ -14394,9 +14470,10 @@
         ]
     },
     {
-        "name": "hear (irr.)",
+        "name": "hear",
         "trans": [
-            "hören"
+            "hören",
+            "（irr.）"
         ]
     },
     {
@@ -15372,15 +15449,17 @@
         ]
     },
     {
-        "name": "Irishman (irr.)",
+        "name": "Irishman",
         "trans": [
-            "Ire"
+            "Ire",
+            "（irr.）"
         ]
     },
     {
-        "name": "Irish (pl.)",
+        "name": "Irish",
         "trans": [
-            "Iren"
+            "Iren",
+            "（pl.）"
         ]
     },
     {
@@ -15816,9 +15895,10 @@
         ]
     },
     {
-        "name": "fight (irr.)",
+        "name": "fight",
         "trans": [
-            "kämpfen"
+            "kämpfen",
+            "（irr.）"
         ]
     },
     {
@@ -15918,9 +15998,10 @@
         ]
     },
     {
-        "name": "buy (irr.)",
+        "name": "buy",
         "trans": [
-            "kaufen"
+            "kaufen",
+            "（irr.）"
         ]
     },
     {
@@ -16020,9 +16101,10 @@
         ]
     },
     {
-        "name": "know (irr.)",
+        "name": "know",
         "trans": [
-            "wissen"
+            "wissen",
+            "（irr.）"
         ]
     },
     {
@@ -16068,9 +16150,10 @@
         ]
     },
     {
-        "name": "child (irr.)",
+        "name": "child",
         "trans": [
-            "Kind"
+            "Kind",
+            "（irr.）"
         ]
     },
     {
@@ -16194,9 +16277,10 @@
         ]
     },
     {
-        "name": "stick (irr.)",
+        "name": "stick",
         "trans": [
-            "stecken"
+            "stecken",
+            "（irr.）"
         ]
     },
     {
@@ -16308,9 +16392,10 @@
         ]
     },
     {
-        "name": "kneel (irr.)",
+        "name": "kneel",
         "trans": [
-            "knien"
+            "knien",
+            "（irr.）"
         ]
     },
     {
@@ -16398,9 +16483,10 @@
         ]
     },
     {
-        "name": "come (irr.)",
+        "name": "come",
         "trans": [
-            "kommen"
+            "kommen",
+            "（irr.）"
         ]
     },
     {
@@ -16602,9 +16688,10 @@
         ]
     },
     {
-        "name": "cost (irr.)",
+        "name": "cost",
         "trans": [
-            "kosten"
+            "kosten",
+            "（irr.）"
         ]
     },
     {
@@ -16716,9 +16803,10 @@
         ]
     },
     {
-        "name": "creep (irr.)",
+        "name": "creep",
         "trans": [
-            "kriechen"
+            "kriechen",
+            "（irr.）"
         ]
     },
     {
@@ -17118,15 +17206,17 @@
         ]
     },
     {
-        "name": "let (irr.)",
+        "name": "let",
         "trans": [
-            "lassen"
+            "lassen",
+            "（irr.）"
         ]
     },
     {
-        "name": "make (irr.)",
+        "name": "make",
         "trans": [
-            "veranlassen"
+            "veranlassen",
+            "（irr.）"
         ]
     },
     {
@@ -17154,9 +17244,10 @@
         ]
     },
     {
-        "name": "run (irr.)",
+        "name": "run",
         "trans": [
-            "rennen"
+            "rennen",
+            "（irr.）"
         ]
     },
     {
@@ -17196,9 +17287,10 @@
         ]
     },
     {
-        "name": "ring (irr.)",
+        "name": "ring",
         "trans": [
-            "läuten"
+            "läuten",
+            "（irr.）"
         ]
     },
     {
@@ -17268,15 +17360,17 @@
         ]
     },
     {
-        "name": "lay (irr.)",
+        "name": "lay",
         "trans": [
-            "legen"
+            "legen",
+            "（irr.）"
         ]
     },
     {
-        "name": "put (irr.)",
+        "name": "put",
         "trans": [
-            "stellen"
+            "stellen",
+            "（irr.）"
         ]
     },
     {
@@ -17286,9 +17380,10 @@
         ]
     },
     {
-        "name": "teach (irr.)",
+        "name": "teach",
         "trans": [
-            "lehren"
+            "lehren",
+            "（irr.）"
         ]
     },
     {
@@ -17358,9 +17453,10 @@
         ]
     },
     {
-        "name": "lend (irr.)",
+        "name": "lend",
         "trans": [
-            "verleihen"
+            "verleihen",
+            "（irr.）"
         ]
     },
     {
@@ -17412,9 +17508,10 @@
         ]
     },
     {
-        "name": "learn (irr.)",
+        "name": "learn",
         "trans": [
-            "lernen"
+            "lernen",
+            "（irr.）"
         ]
     },
     {
@@ -17424,9 +17521,10 @@
         ]
     },
     {
-        "name": "read (irr.)",
+        "name": "read",
         "trans": [
-            "lesen"
+            "lesen",
+            "（irr.）"
         ]
     },
     {
@@ -17520,9 +17618,10 @@
         ]
     },
     {
-        "name": "lie (irr.)",
+        "name": "lie",
         "trans": [
-            "liegen"
+            "liegen",
+            "（irr.）"
         ]
     },
     {
@@ -17640,9 +17739,10 @@
         ]
     },
     {
-        "name": "burst (irr.)",
+        "name": "burst",
         "trans": [
-            "platzen"
+            "platzen",
+            "（irr.）"
         ]
     },
     {
@@ -17700,15 +17800,17 @@
         ]
     },
     {
-        "name": "gay (happy)",
+        "name": "gay",
         "trans": [
-            "lustig"
+            "lustig",
+            "也作 happy"
         ]
     },
     {
-        "name": "do (irr.)",
+        "name": "do",
         "trans": [
-            "tun"
+            "tun",
+            "（irr.）"
         ]
     },
     {
@@ -17754,9 +17856,10 @@
         ]
     },
     {
-        "name": "grind (irr.)",
+        "name": "grind",
         "trans": [
-            "mahlen"
+            "mahlen",
+            "（irr.）"
         ]
     },
     {
@@ -17814,9 +17917,10 @@
         ]
     },
     {
-        "name": "man (irr.)",
+        "name": "man",
         "trans": [
-            "Mensch"
+            "Mensch",
+            "（irr.）"
         ]
     },
     {
@@ -17976,9 +18080,10 @@
         ]
     },
     {
-        "name": "mouse (irr.)",
+        "name": "mouse",
         "trans": [
-            "Maus"
+            "Maus",
+            "（irr.）"
         ]
     },
     {
@@ -18228,9 +18333,10 @@
         ]
     },
     {
-        "name": "knife (irr.)",
+        "name": "knife",
         "trans": [
-            "Messer"
+            "Messer",
+            "（irr.）"
         ]
     },
     {
@@ -18618,7 +18724,7 @@
         ]
     },
     {
-        "name": "would you like to ... ?",
+        "name": "would you like to... ?",
         "trans": [
             "möchtest du ... ?"
         ]
@@ -19086,9 +19192,10 @@
         ]
     },
     {
-        "name": "sew (irr.)",
+        "name": "sew",
         "trans": [
-            "nähen"
+            "nähen",
+            "（irr.）"
         ]
     },
     {
@@ -19380,7 +19487,7 @@
         ]
     },
     {
-        "name": "not so ... as",
+        "name": "not so... as",
         "trans": [
             "nicht so wie"
         ]
@@ -20088,9 +20195,10 @@
         ]
     },
     {
-        "name": "penny (irr.)",
+        "name": "penny",
         "trans": [
-            "Penny"
+            "Penny",
+            "（irr.）"
         ]
     },
     {
@@ -20196,9 +20304,10 @@
         ]
     },
     {
-        "name": "used to (do)",
+        "name": "used to",
         "trans": [
-            "pflegte zu (tun)"
+            "pflegte zu (tun)",
+            "（do）"
         ]
     },
     {
@@ -20382,9 +20491,10 @@
         ]
     },
     {
-        "name": "policeman (irr.)",
+        "name": "policeman",
         "trans": [
-            "Polizist"
+            "Polizist",
+            "（irr.）"
         ]
     },
     {
@@ -20958,9 +21068,10 @@
         ]
     },
     {
-        "name": "shelf (irr.)",
+        "name": "shelf",
         "trans": [
-            "Regal"
+            "Regal",
+            "（irr.）"
         ]
     },
     {
@@ -21252,9 +21363,10 @@
         ]
     },
     {
-        "name": "smell (irr.)",
+        "name": "smell",
         "trans": [
-            "riechen"
+            "riechen",
+            "（irr.）"
         ]
     },
     {
@@ -21588,9 +21700,10 @@
         ]
     },
     {
-        "name": "sow (irr.)",
+        "name": "sow",
         "trans": [
-            "säen"
+            "säen",
+            "（irr.）"
         ]
     },
     {
@@ -21612,9 +21725,10 @@
         ]
     },
     {
-        "name": "say (irr.)",
+        "name": "say",
         "trans": [
-            "sagen"
+            "sagen",
+            "（irr.）"
         ]
     },
     {
@@ -21780,15 +21894,17 @@
         ]
     },
     {
-        "name": "sheep (irr.)",
+        "name": "sheep",
         "trans": [
-            "Schaf"
+            "Schaf",
+            "（irr.）"
         ]
     },
     {
-        "name": "sheep (pl.)",
+        "name": "sheep",
         "trans": [
-            "Schafe"
+            "Schafe",
+            "（pl.）"
         ]
     },
     {
@@ -22002,9 +22118,10 @@
         ]
     },
     {
-        "name": "send (irr.)",
+        "name": "send",
         "trans": [
-            "schicken"
+            "schicken",
+            "（irr.）"
         ]
     },
     {
@@ -22038,9 +22155,10 @@
         ]
     },
     {
-        "name": "shoot (irr.)",
+        "name": "shoot",
         "trans": [
-            "schießen"
+            "schießen",
+            "（irr.）"
         ]
     },
     {
@@ -22104,9 +22222,10 @@
         ]
     },
     {
-        "name": "sleep (irr.)",
+        "name": "sleep",
         "trans": [
-            "schlafen"
+            "schlafen",
+            "（irr.）"
         ]
     },
     {
@@ -22152,15 +22271,17 @@
         ]
     },
     {
-        "name": "beat (irr.)",
+        "name": "beat",
         "trans": [
-            "schlagen"
+            "schlagen",
+            "（irr.）"
         ]
     },
     {
-        "name": "strike (irr.)",
+        "name": "strike",
         "trans": [
-            "schlagen"
+            "schlagen",
+            "（irr.）"
         ]
     },
     {
@@ -22254,9 +22375,10 @@
         ]
     },
     {
-        "name": "shut (irr.)",
+        "name": "shut",
         "trans": [
-            "schließen"
+            "schließen",
+            "（irr.）"
         ]
     },
     {
@@ -22392,9 +22514,10 @@
         ]
     },
     {
-        "name": "cut (irr.)",
+        "name": "cut",
         "trans": [
-            "schneiden"
+            "schneiden",
+            "（irr.）"
         ]
     },
     {
@@ -22470,21 +22593,24 @@
         ]
     },
     {
-        "name": "Scotsman (irr.)",
+        "name": "Scotsman",
         "trans": [
-            "Schotte"
+            "Schotte",
+            "（irr.）"
         ]
     },
     {
-        "name": "Scots (pl.)",
+        "name": "Scots",
         "trans": [
-            "Schotten (pl.)"
+            "Schotten (pl.)",
+            "（pl.）"
         ]
     },
     {
-        "name": "Scotswoman (irr.)",
+        "name": "Scotswoman",
         "trans": [
-            "Schottin"
+            "Schottin",
+            "（irr.）"
         ]
     },
     {
@@ -22542,9 +22668,10 @@
         ]
     },
     {
-        "name": "write (irr.)",
+        "name": "write",
         "trans": [
-            "schreiben"
+            "schreiben",
+            "（irr.）"
         ]
     },
     {
@@ -22698,9 +22825,10 @@
         ]
     },
     {
-        "name": "shake (irr.)",
+        "name": "shake",
         "trans": [
-            "schütteln"
+            "schütteln",
+            "（irr.）"
         ]
     },
     {
@@ -22818,9 +22946,10 @@
         ]
     },
     {
-        "name": "swell (irr.)",
+        "name": "swell",
         "trans": [
-            "schwellen"
+            "schwellen",
+            "（irr.）"
         ]
     },
     {
@@ -22902,9 +23031,10 @@
         ]
     },
     {
-        "name": "swim (irr.)",
+        "name": "swim",
         "trans": [
-            "schwimmen"
+            "schwimmen",
+            "（irr.）"
         ]
     },
     {
@@ -23196,9 +23326,10 @@
         ]
     },
     {
-        "name": "broadcast (irr.)",
+        "name": "broadcast",
         "trans": [
-            "senden (im Radio)"
+            "senden (im Radio)",
+            "（irr.）"
         ]
     },
     {
@@ -23220,9 +23351,10 @@
         ]
     },
     {
-        "name": "set (irr.)",
+        "name": "set",
         "trans": [
-            "stellen"
+            "stellen",
+            "（irr.）"
         ]
     },
     {
@@ -23340,9 +23472,10 @@
         ]
     },
     {
-        "name": "arise (irr.)",
+        "name": "arise",
         "trans": [
-            "sich erheben"
+            "sich erheben",
+            "（irr.）"
         ]
     },
     {
@@ -23418,9 +23551,10 @@
         ]
     },
     {
-        "name": "spin (irr.)",
+        "name": "spin",
         "trans": [
-            "spinnen"
+            "spinnen",
+            "（irr.）"
         ]
     },
     {
@@ -23502,9 +23636,10 @@
         ]
     },
     {
-        "name": "meet with (irr.)",
+        "name": "meet with",
         "trans": [
-            "sich treffen"
+            "sich treffen",
+            "（irr.）"
         ]
     },
     {
@@ -23532,9 +23667,10 @@
         ]
     },
     {
-        "name": "fall in love (with)",
+        "name": "fall in love",
         "trans": [
-            "sich verlieben (in)"
+            "sich verlieben (in)",
+            "（with）"
         ]
     },
     {
@@ -23706,15 +23842,17 @@
         ]
     },
     {
-        "name": "sing (irr.)",
+        "name": "sing",
         "trans": [
-            "singen"
+            "singen",
+            "（irr.）"
         ]
     },
     {
-        "name": "sink (irr.)",
+        "name": "sink",
         "trans": [
-            "sinken"
+            "sinken",
+            "（irr.）"
         ]
     },
     {
@@ -23742,9 +23880,10 @@
         ]
     },
     {
-        "name": "sit (irr.)",
+        "name": "sit",
         "trans": [
-            "sitzen"
+            "sitzen",
+            "（irr.）"
         ]
     },
     {
@@ -24234,9 +24373,10 @@
         ]
     },
     {
-        "name": "speak (irr.)",
+        "name": "speak",
         "trans": [
-            "sprechen"
+            "sprechen",
+            "（irr.）"
         ]
     },
     {
@@ -24246,9 +24386,10 @@
         ]
     },
     {
-        "name": "spring (irr.)",
+        "name": "spring",
         "trans": [
-            "springen"
+            "springen",
+            "（irr.）"
         ]
     },
     {
@@ -24372,9 +24513,10 @@
         ]
     },
     {
-        "name": "sting (irr.)",
+        "name": "sting",
         "trans": [
-            "stechen (Insekt)"
+            "stechen (Insekt)",
+            "（irr.）"
         ]
     },
     {
@@ -24402,9 +24544,10 @@
         ]
     },
     {
-        "name": "steal (irr.)",
+        "name": "steal",
         "trans": [
-            "stehlen"
+            "stehlen",
+            "（irr.）"
         ]
     },
     {
@@ -24492,9 +24635,10 @@
         ]
     },
     {
-        "name": "vote (for)",
+        "name": "vote",
         "trans": [
-            "stimmen (für)"
+            "stimmen (für)",
+            "（for）"
         ]
     },
     {
@@ -24660,9 +24804,10 @@
         ]
     },
     {
-        "name": "knit (irr.)",
+        "name": "knit",
         "trans": [
-            "stricken"
+            "stricken",
+            "（irr.）"
         ]
     },
     {
@@ -25482,9 +25627,10 @@
         ]
     },
     {
-        "name": "dream (irr.)",
+        "name": "dream",
         "trans": [
-            "träumen"
+            "träumen",
+            "（irr.）"
         ]
     },
     {
@@ -25524,9 +25670,10 @@
         ]
     },
     {
-        "name": "tread (irr.)",
+        "name": "tread",
         "trans": [
-            "treten"
+            "treten",
+            "（irr.）"
         ]
     },
     {
@@ -25560,9 +25707,10 @@
         ]
     },
     {
-        "name": "drink (irr.)",
+        "name": "drink",
         "trans": [
-            "trinken"
+            "trinken",
+            "（irr.）"
         ]
     },
     {
@@ -25824,9 +25972,10 @@
         ]
     },
     {
-        "name": "undertake (irr.)",
+        "name": "undertake",
         "trans": [
-            "übernehmen"
+            "übernehmen",
+            "（irr.）"
         ]
     },
     {
@@ -25902,9 +26051,10 @@
         ]
     },
     {
-        "name": "overcome (irr.)",
+        "name": "overcome",
         "trans": [
-            "überwinden"
+            "überwinden",
+            "（irr.）"
         ]
     },
     {
@@ -25962,7 +26112,7 @@
         ]
     },
     {
-        "name": "for ...'s sake",
+        "name": "for...'s sake",
         "trans": [
             "um ... willen"
         ]
@@ -26028,9 +26178,10 @@
         ]
     },
     {
-        "name": "upset (irr.)",
+        "name": "upset",
         "trans": [
-            "umwerfen"
+            "umwerfen",
+            "（irr.）"
         ]
     },
     {
@@ -26562,9 +26713,10 @@
         ]
     },
     {
-        "name": "lodging(s)",
+        "name": "lodging",
         "trans": [
-            "Unterkunft"
+            "Unterkunft",
+            "也作 lodgings"
         ]
     },
     {
@@ -26742,9 +26894,10 @@
         ]
     },
     {
-        "name": "forbid (irr.)",
+        "name": "forbid",
         "trans": [
-            "verbieten"
+            "verbieten",
+            "（irr.）"
         ]
     },
     {
@@ -26802,9 +26955,10 @@
         ]
     },
     {
-        "name": "spoil (irr.)",
+        "name": "spoil",
         "trans": [
-            "verwöhnen"
+            "verwöhnen",
+            "（irr.）"
         ]
     },
     {
@@ -26910,9 +27064,10 @@
         ]
     },
     {
-        "name": "forget (irr.)",
+        "name": "forget",
         "trans": [
-            "vergessen"
+            "vergessen",
+            "（irr.）"
         ]
     },
     {
@@ -26922,9 +27077,10 @@
         ]
     },
     {
-        "name": "shed (irr.)",
+        "name": "shed",
         "trans": [
-            "vergießen"
+            "vergießen",
+            "（irr.）"
         ]
     },
     {
@@ -26994,9 +27150,10 @@
         ]
     },
     {
-        "name": "sell (irr.)",
+        "name": "sell",
         "trans": [
-            "verkaufen"
+            "verkaufen",
+            "（irr.）"
         ]
     },
     {
@@ -27060,15 +27217,17 @@
         ]
     },
     {
-        "name": "leave (iir.)",
+        "name": "leave",
         "trans": [
-            "verlassen"
+            "verlassen",
+            "（iir.）"
         ]
     },
     {
-        "name": "hurt (irr.)",
+        "name": "hurt",
         "trans": [
-            "weh tun"
+            "weh tun",
+            "（irr.）"
         ]
     },
     {
@@ -27096,9 +27255,10 @@
         ]
     },
     {
-        "name": "be in love (with)",
+        "name": "be in love",
         "trans": [
-            "verliebt sein (in)"
+            "verliebt sein (in)",
+            "（with）"
         ]
     },
     {
@@ -27366,9 +27526,10 @@
         ]
     },
     {
-        "name": "hide (irr.)",
+        "name": "hide",
         "trans": [
-            "verstecken"
+            "verstecken",
+            "（irr.）"
         ]
     },
     {
@@ -27384,9 +27545,10 @@
         ]
     },
     {
-        "name": "understand (irr.)",
+        "name": "understand",
         "trans": [
-            "verstehen"
+            "verstehen",
+            "（irr.）"
         ]
     },
     {
@@ -27564,9 +27726,10 @@
         ]
     },
     {
-        "name": "forgive (irr.)",
+        "name": "forgive",
         "trans": [
-            "verzeihen"
+            "verzeihen",
+            "（irr.）"
         ]
     },
     {
@@ -27840,7 +28003,7 @@
         ]
     },
     {
-        "name": "from ... to",
+        "name": "from... to",
         "trans": [
             "von ... bis"
         ]
@@ -28158,9 +28321,10 @@
         ]
     },
     {
-        "name": "choose (irr.)",
+        "name": "choose",
         "trans": [
-            "wählen"
+            "wählen",
+            "（irr.）"
         ]
     },
     {
@@ -28482,7 +28646,7 @@
         ]
     },
     {
-        "name": "neither ... nor",
+        "name": "neither... nor",
         "trans": [
             "weder ... noch"
         ]
@@ -28566,9 +28730,10 @@
         ]
     },
     {
-        "name": "blow (irr.)",
+        "name": "blow",
         "trans": [
-            "wehen"
+            "wehen",
+            "（irr.）"
         ]
     },
     {
@@ -28626,9 +28791,10 @@
         ]
     },
     {
-        "name": "weep (irr.)",
+        "name": "weep",
         "trans": [
-            "weinen"
+            "weinen",
+            "（irr.）"
         ]
     },
     {
@@ -28788,9 +28954,10 @@
         ]
     },
     {
-        "name": "who(m)",
+        "name": "who",
         "trans": [
-            "wen"
+            "wen",
+            "也作 whom"
         ]
     },
     {
@@ -28836,15 +29003,17 @@
         ]
     },
     {
-        "name": "become (irr.)",
+        "name": "become",
         "trans": [
-            "werden"
+            "werden",
+            "（irr.）"
         ]
     },
     {
-        "name": "throw (irr.)",
+        "name": "throw",
         "trans": [
-            "werfen"
+            "werfen",
+            "（irr.）"
         ]
     },
     {
@@ -28938,9 +29107,10 @@
         ]
     },
     {
-        "name": "bet (irr.)",
+        "name": "bet",
         "trans": [
-            "wetten"
+            "wetten",
+            "（irr.）"
         ]
     },
     {
@@ -28956,9 +29126,10 @@
         ]
     },
     {
-        "name": "whisk(e)y",
+        "name": "whisky",
         "trans": [
-            "Whisky"
+            "Whisky",
+            "也作 whiskey"
         ]
     },
     {
@@ -28968,9 +29139,10 @@
         ]
     },
     {
-        "name": "wind (irr.)",
+        "name": "wind",
         "trans": [
-            "wickeln"
+            "wickeln",
+            "（irr.）"
         ]
     },
     {
@@ -29214,9 +29386,10 @@
         ]
     },
     {
-        "name": "dwell (irr.)",
+        "name": "dwell",
         "trans": [
-            "wohnen"
+            "wohnen",
+            "（irr.）"
         ]
     },
     {
@@ -29238,9 +29411,10 @@
         ]
     },
     {
-        "name": "wolf (irr.)",
+        "name": "wolf",
         "trans": [
-            "Wolf"
+            "Wolf",
+            "（irr.）"
         ]
     },
     {
@@ -29388,9 +29562,10 @@
         ]
     },
     {
-        "name": "pay (irr.)",
+        "name": "pay",
         "trans": [
-            "zahlen"
+            "zahlen",
+            "（irr.）"
         ]
     },
     {
@@ -29406,9 +29581,10 @@
         ]
     },
     {
-        "name": "tooth (irr.)",
+        "name": "tooth",
         "trans": [
-            "Zahn"
+            "Zahn",
+            "（irr.）"
         ]
     },
     {
@@ -29514,9 +29690,10 @@
         ]
     },
     {
-        "name": "draw (irr.)",
+        "name": "draw",
         "trans": [
-            "ziehen"
+            "ziehen",
+            "（irr.）"
         ]
     },
     {
@@ -29592,15 +29769,17 @@
         ]
     },
     {
-        "name": "break (irr.)",
+        "name": "break",
         "trans": [
-            "zerbrechen"
+            "zerbrechen",
+            "（irr.）"
         ]
     },
     {
-        "name": "tear (irr.)",
+        "name": "tear",
         "trans": [
-            "zerreißen"
+            "zerreißen",
+            "（irr.）"
         ]
     },
     {
@@ -29832,9 +30011,10 @@
         ]
     },
     {
-        "name": "breed (irr.)",
+        "name": "breed",
         "trans": [
-            "züchten"
+            "züchten",
+            "（irr.）"
         ]
     },
     {
@@ -29880,9 +30060,10 @@
         ]
     },
     {
-        "name": "listen (to)",
+        "name": "listen",
         "trans": [
-            "zuhören"
+            "zuhören",
+            "（to）"
         ]
     },
     {
