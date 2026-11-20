@@ -113,5 +113,12 @@ export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_STA
 // Enhanced version promotion popup state
 export const hasSeenEnhancedPromotionAtom = atomWithStorage('hasSeenEnhancedPromotion', false)
 
+// Word completion pause configuration
+export const wordCompletionPauseConfigAtom = atomForConfig('wordCompletionPauseConfig', {
+  isEnabled: false,
+  duration: 2500, // 2.5 seconds
+  playPronunciation: true,
+})
+
 // for dev test
 //   dismissStartCardDateAtom = atom<Date | null>(new Date())
