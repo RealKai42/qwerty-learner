@@ -78,18 +78,19 @@ const App: React.FC = () => {
   }, [state.chapterData.words])
 
   useEffect(() => {
-    if (!state.isTyping) {
-      const onKeyDown = (e: KeyboardEvent) => {
-        if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
-          e.preventDefault()
-          dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
-        }
-      }
-      window.addEventListener('keydown', onKeyDown)
+    // The result screen owns Enter and Space. A letter there must not resume the timer.
+    if (state.isTyping || state.isFinished) return
 
-      return () => window.removeEventListener('keydown', onKeyDown)
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (!isLoading && e.key !== 'Enter' && (isLegal(e.key) || e.key === ' ') && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        e.preventDefault()
+        dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: true })
+      }
     }
-  }, [state.isTyping, isLoading, dispatch])
+    window.addEventListener('keydown', onKeyDown)
+
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [state.isTyping, state.isFinished, isLoading, dispatch])
 
   useEffect(() => {
     if (words !== undefined) {
