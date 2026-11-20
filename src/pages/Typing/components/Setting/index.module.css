@@ -1,5 +1,65 @@
 .tab-content {
-  @apply flex w-full flex-col items-start justify-start gap-10 overflow-y-auto pb-40 pl-6 pr-9 pt-8;
+  @apply flex w-full flex-col items-start justify-start gap-10 pb-8 pl-6 pr-9 pt-8;
+}
+
+.setting-scroll-frame {
+  position: relative;
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+}
+
+.setting-scroll {
+  height: 100%;
+  min-height: 0;
+  width: 100%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+
+.setting-scroll::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.setting-scroll-track {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  bottom: 8px;
+  width: 8px;
+  border-radius: 999px;
+  background: #e5e5e5;
+}
+
+.setting-scroll-thumb {
+  width: 100%;
+  border-radius: 999px;
+  background: #525252;
+  cursor: grab;
+}
+
+:global(html.dark) .setting-scroll-track {
+  background: #374151;
+}
+
+:global(html.dark) .setting-scroll-thumb {
+  background: #d4d4d8;
+}
+
+.setting-scroll-hint {
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  bottom: 0;
+  left: 0;
+  height: 36px;
+  background: linear-gradient(to bottom, transparent, #fff);
+}
+
+:global(html.dark) .setting-scroll-hint {
+  background: linear-gradient(to bottom, transparent, #1f2937);
 }
 
 .section {
