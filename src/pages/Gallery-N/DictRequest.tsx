@@ -38,7 +38,7 @@ export default function DictRequest() {
           <p className="text-sm text-gray-600 dark:text-gray-300">
             如果您具备一定的编程技能，欢迎参考我们的
             <a
-              href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/docs/toBuildDict.md"
+              href="https://github.com/RealKai42/qwerty-learner/blob/master/docs/toBuildDict.md"
               className="mx-1 font-medium text-blue-500 hover:text-blue-600"
               target="_blank"
               rel="noreferrer"
