@@ -270,9 +270,10 @@
     ]
   },
   {
-    "name": "package/parcel",
+    "name": "package",
     "trans": [
-      "包裹"
+      "包裹",
+      "也作 parcel"
     ]
   },
   {
@@ -576,9 +577,10 @@
     ]
   },
   {
-    "name": "ICU /intensive care unit",
+    "name": "ICU",
     "trans": [
-      "特护病房"
+      "特护病房",
+      "也作 intensive care unit"
     ]
   },
   {
@@ -1086,9 +1088,10 @@
     ]
   },
   {
-    "name": "booking office/ticket office",
+    "name": "booking office",
     "trans": [
-      "售票处"
+      "售票处",
+      "也作 ticket office"
     ]
   },
   {
@@ -1104,15 +1107,17 @@
     ]
   },
   {
-    "name": "coach/carriage",
+    "name": "coach",
     "trans": [
-      "车厢"
+      "车厢",
+      "也作 carriage"
     ]
   },
   {
-    "name": "sidewalk/pavement",
+    "name": "sidewalk",
     "trans": [
-      "人行道"
+      "人行道",
+      "也作 pavement"
     ]
   },
   {
@@ -1470,9 +1475,10 @@
     ]
   },
   {
-    "name": "luggage/baggage",
+    "name": "luggage",
     "trans": [
-      "行李"
+      "行李",
+      "也作 baggage"
     ]
   },
   {
@@ -2130,9 +2136,10 @@
     ]
   },
   {
-    "name": "vacation/holiday",
+    "name": "vacation",
     "trans": [
-      "假日"
+      "假日",
+      "也作 holiday"
     ]
   },
   {
@@ -2250,9 +2257,11 @@
     ]
   },
   {
-    "name": "plane/airplane/aeroplane",
+    "name": "plane",
     "trans": [
-      "飞机"
+      "飞机",
+      "也作 airplane",
+      "也作 aeroplane"
     ]
   },
   {
@@ -2268,9 +2277,10 @@
     ]
   },
   {
-    "name": "subway/underground",
+    "name": "subway",
     "trans": [
-      "地铁"
+      "地铁",
+      "也作 underground"
     ]
   },
   {
@@ -2286,9 +2296,10 @@
     ]
   },
   {
-    "name": "freeway/expressway",
+    "name": "freeway",
     "trans": [
-      "高速公路"
+      "高速公路",
+      "也作 expressway"
     ]
   },
   {
@@ -3156,9 +3167,10 @@
     ]
   },
   {
-    "name": "lift/elevator",
+    "name": "lift",
     "trans": [
-      "电梯"
+      "电梯",
+      "也作 elevator"
     ]
   },
   {

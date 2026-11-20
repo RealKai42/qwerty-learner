@@ -1698,7 +1698,7 @@
         ]
     },
     {
-        "name": "(be) famous for",
+        "name": "be famous for",
         "trans": [
             "以……而著名"
         ]
@@ -1712,7 +1712,7 @@
         "ukphone": "vjuː"
     },
     {
-        "name": "(be) known as",
+        "name": "be known as",
         "trans": [
             "以……而出名"
         ]
@@ -2598,7 +2598,7 @@
         "ukphone": "'eɪb(ə)l"
     },
     {
-        "name": "(be) able to",
+        "name": "be able to",
         "trans": [
             "能够；有能力"
         ]
@@ -3364,7 +3364,7 @@
         "ukphone": "'sɪmɪlə"
     },
     {
-        "name": "(be) similar to",
+        "name": "be similar to",
         "trans": [
             "与…相类似的"
         ]
@@ -3432,7 +3432,7 @@
         "ukphone": "rɪ'spɑːnsəbl"
     },
     {
-        "name": "(be) responsible for",
+        "name": "be responsible for",
         "trans": [
             "对……负责"
         ]
@@ -3762,7 +3762,7 @@
         "ukphone": "streɪndʒ"
     },
     {
-        "name": "(be) afraid of",
+        "name": "be afraid of",
         "trans": [
             "害怕，畏惧"
         ]
@@ -5006,7 +5006,7 @@
         "ukphone": "'ɪntrəstɪd"
     },
     {
-        "name": "(be) interested in",
+        "name": "be interested in",
         "trans": [
             "对…感兴趣"
         ]
@@ -5586,7 +5586,7 @@
         "ukphone": "ˈkeəfl"
     },
     {
-        "name": "(be) careful with",
+        "name": "be careful with",
         "trans": [
             "小心对待；谨慎处理"
         ]
@@ -6608,7 +6608,7 @@
         "ukphone": "pliːzd"
     },
     {
-        "name": "(be)pleasedwith",
+        "name": "be pleased with",
         "trans": [
             "（对…）感到高兴；满意"
         ]
@@ -7398,7 +7398,7 @@
         ]
     },
     {
-        "name": "(be) wrong with",
+        "name": "be wrong with",
         "trans": [
             "有问题，有毛病"
         ]
@@ -7464,7 +7464,7 @@
         "ukphone": "ʌnə'weə"
     },
     {
-        "name": "(be) unaware of",
+        "name": "be unaware of",
         "trans": [
             "没意识到，未察觉"
         ]
@@ -7750,7 +7750,7 @@
         "ukphone": "'ɑːftəwədz"
     },
     {
-        "name": "(be) angry with",
+        "name": "be angry with",
         "trans": [
             "对…发怒，对…生气"
         ]
@@ -8346,7 +8346,7 @@
         "ukphone": "bɜːst"
     },
     {
-        "name": "burst out (doing)",
+        "name": "burst out doing",
         "trans": [
             "突然开始(做某事)"
         ]
@@ -9018,7 +9018,7 @@
         ]
     },
     {
-        "name": "(be) amazed at",
+        "name": "be amazed at",
         "trans": [
             "对…感到惊奇"
         ]
@@ -9224,9 +9224,10 @@
         "ukphone": "ˈvaɪələntli"
     },
     {
-        "name": "(not) at all",
+        "name": "at all",
         "trans": [
-            "一点（也不）；完全（不)"
+            "一点（也不）；完全（不)",
+            "（not）"
         ]
     },
     {

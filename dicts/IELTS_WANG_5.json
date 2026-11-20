@@ -7360,9 +7360,10 @@
         "ukphone": null
     },
     {
-        "name": "RA(research assistant)",
+        "name": "RA",
         "trans": [
-            "研究助理"
+            "研究助理",
+            "（research assistant）"
         ],
         "usphone": null,
         "ukphone": null

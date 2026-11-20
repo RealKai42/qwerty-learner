@@ -1,20 +1,21 @@
 [
     {
-        "name": "(in)ability to",
+        "name": "inability to",
         "trans": [
             "（没）有…的能力"
         ]
     },
     {
-        "name": "(in)capacity to",
+        "name": "incapacity to",
         "trans": [
             "（没）有…的能力"
         ]
     },
     {
-        "name": "a/an",
+        "name": "a",
         "trans": [
-            "art.一个"
+            "art.一个",
+            "也作 an"
         ]
     },
     {
@@ -2321,9 +2322,10 @@
         ]
     },
     {
-        "name": "attitude toward(s)",
+        "name": "attitude toward",
         "trans": [
-            "对…的态度；意见"
+            "对…的态度；意见",
+            "也作 towards"
         ]
     },
     {
@@ -4797,9 +4799,10 @@
         ]
     },
     {
-        "name": "CD(compact disc)",
+        "name": "CD",
         "trans": [
-            "激光唱盘"
+            "激光唱盘",
+            "（compact disc）"
         ]
     },
     {
@@ -5747,9 +5750,10 @@
         "ukphone": "kə'lɪʒn"
     },
     {
-        "name": "colo(u)rful",
+        "name": "colorful",
         "trans": [
-            "a.艳丽的；丰富多彩的，吸引人的"
+            "a.艳丽的；丰富多彩的，吸引人的",
+            "也作 colourful"
         ]
     },
     {
@@ -10225,9 +10229,10 @@
         "ukphone": "ɪn'rɪtʃ"
     },
     {
-        "name": "enrol(l)ment",
+        "name": "enrolment",
         "trans": [
-            "n.登记，接收，招生；招收人数，入学人数"
+            "n.登记，接收，招生；招收人数，入学人数",
+            "也作 enrollment"
         ]
     },
     {
@@ -20208,7 +20213,7 @@
         ]
     },
     {
-        "name": "no more(......)than",
+        "name": "no more than",
         "trans": [
             "仅仅，不过"
         ]
@@ -20374,9 +20379,10 @@
         "ukphone": "nɒt"
     },
     {
-        "name": "not (never) for a moment",
+        "name": "not for a moment",
         "trans": [
-            "通常；多半"
+            "通常；多半",
+            "也作 never"
         ]
     },
     {
@@ -20775,7 +20781,7 @@
         "ukphone": "ɒn"
     },
     {
-        "name": "on (the) average",
+        "name": "on the average",
         "trans": [
             "根据平均标准；平均而言"
         ]
@@ -21240,9 +21246,10 @@
         ]
     },
     {
-        "name": "over and over (again)",
+        "name": "over and over",
         "trans": [
-            "反复"
+            "反复",
+            "（again）"
         ]
     },
     {
@@ -29446,7 +29453,7 @@
         "trans": "共计，达到；归结为；涉及，谈到"
     },
     {
-        "name": "to come to terms (with)",
+        "name": "to come to terms with",
         "trans": "达成协议；妥协，习惯于"
     },
     {
@@ -29550,7 +29557,7 @@
         "trans": "与…有分歧，不一致"
     },
     {
-        "name": "to disapprove (of)",
+        "name": "to disapprove of",
         "trans": "不同意"
     },
     {
@@ -29694,7 +29701,7 @@
         "trans": "与…有关"
     },
     {
-        "name": "to hold good (for)",
+        "name": "to hold good for",
         "trans": "（对…）适用"
     },
     {
@@ -29842,7 +29849,7 @@
         "trans": "打开；开办，开辟，开发；坦诚地谈话"
     },
     {
-        "name": "to opt out (of)",
+        "name": "to opt out of",
         "trans": "决定不参加…，决定（从…）退出"
     },
     {
@@ -30182,11 +30189,11 @@
         "trans": "开，接通（水源，电源，煤气等）"
     },
     {
-        "name": "to turn one's back (on)",
+        "name": "to turn one's back on",
         "trans": "报答…回报…"
     },
     {
-        "name": "to turn out (to be)",
+        "name": "to turn out to be",
         "trans": "原来是，（最后）证明是"
     },
     {
@@ -30646,7 +30653,7 @@
         "ukphone": "tɜːn"
     },
     {
-        "name": "turn (somebody) off",
+        "name": "turn somebody off",
         "trans": "（使）失去兴趣；（使）不再喜欢；（使）厌烦"
     },
     {
@@ -31824,7 +31831,7 @@
         "trans": "（巴赫）《平均律钢琴曲集》"
     },
     {
-        "name": "well()tempered",
+        "name": "well-tempered",
         "trans": "脾气好的；（键盘乐器）调到平均律的"
     },
     {
@@ -32148,8 +32155,8 @@
         "trans": "以…为目的"
     },
     {
-        "name": "with a view towards (/to)",
-        "trans": "以…为目的"
+        "name": "with a view towards",
+        "trans": "以…为目的；（to）"
     },
     {
         "name": "with regard to",

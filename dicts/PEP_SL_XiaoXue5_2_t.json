@@ -224,33 +224,37 @@
         "ukphone": "ˈbɜːθdeɪ"
     },
     {
-        "name": "fifth (5th)",
+        "name": "fifth",
         "trans": [
-            "第五"
+            "第五",
+            "（5th）"
         ],
         "usphone": "fɪfθ",
         "ukphone": "fɪfθ"
     },
     {
-        "name": "tenth (10th)",
+        "name": "tenth",
         "trans": [
-            "第十"
+            "第十",
+            "（10th）"
         ],
         "usphone": "tenθ",
         "ukphone": "tenθ"
     },
     {
-        "name": "twelfth (12th)",
+        "name": "twelfth",
         "trans": [
-            "第十二"
+            "第十二",
+            "（12th）"
         ],
         "usphone": "twɛlfθ",
         "ukphone": "twɛlfθ"
     },
     {
-        "name": "twenty-fifth (25th)",
+        "name": "twenty-fifth",
         "trans": [
-            "第二十五"
+            "第二十五",
+            "（25th）"
         ],
         "usphone": "ˈtwɛnti fɪfθ",
         "ukphone": "ˈtwɛnti fɪfθ"
@@ -696,9 +700,10 @@
         "ukphone": "lɜːnd tuː swɪm"
     },
     {
-        "name": "fifteenth (15th)",
+        "name": "fifteenth",
         "trans": [
-            "第十五"
+            "第十五",
+            "（15th）"
         ],
         "usphone": "ˌfɪfˈtiːnθ",
         "ukphone": "fɪfˈtiːnθ"

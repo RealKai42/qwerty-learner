@@ -1,8 +1,9 @@
 [
     {
-        "name": "a/an",
+        "name": "a",
         "trans": [
-            "一个"
+            "一个",
+            "也作 an"
         ]
     },
     {
@@ -306,9 +307,10 @@
         ]
     },
     {
-        "name": "advertisement/ad",
+        "name": "advertisement",
         "trans": [
-            "广告"
+            "广告",
+            "也作 ad"
         ]
     },
     {
@@ -426,9 +428,10 @@
         ]
     },
     {
-        "name": "AI/artificial intelligence",
+        "name": "AI",
         "trans": [
-            "人工智能"
+            "人工智能",
+            "也作 artificial intelligence"
         ]
     },
     {
@@ -744,9 +747,10 @@
         ]
     },
     {
-        "name": "anybody/anyone",
+        "name": "anybody",
         "trans": [
-            "任何人"
+            "任何人",
+            "也作 anyone"
         ]
     },
     {
@@ -792,9 +796,10 @@
         ]
     },
     {
-        "name": "apologise(apologize)",
+        "name": "apologise",
         "trans": [
-            "道歉（两种写法都可以）"
+            "道歉（两种写法都可以）",
+            "也作 apologize"
         ]
     },
     {
@@ -1068,9 +1073,10 @@
         ]
     },
     {
-        "name": "ATM/Automatic Teller Machine",
+        "name": "ATM",
         "trans": [
-            "自动取款机"
+            "自动取款机",
+            "也作 Automatic Teller Machine"
         ]
     },
     {
@@ -1152,9 +1158,10 @@
         ]
     },
     {
-        "name": "auto/automobile",
+        "name": "auto",
         "trans": [
-            "汽车/机动车"
+            "汽车/机动车",
+            "也作 automobile"
         ]
     },
     {
@@ -1170,9 +1177,10 @@
         ]
     },
     {
-        "name": "autumn/fall",
+        "name": "autumn",
         "trans": [
-            "秋天/秋季"
+            "秋天/秋季",
+            "也作 fall"
         ]
     },
     {
@@ -1482,9 +1490,10 @@
         ]
     },
     {
-        "name": "be (am, is, are)",
+        "name": "be",
         "trans": [
-            "是"
+            "是",
+            "（am, is, are）"
         ]
     },
     {
@@ -1704,9 +1713,10 @@
         ]
     },
     {
-        "name": "bike/bicycle",
+        "name": "bike",
         "trans": [
-            "自行车"
+            "自行车",
+            "也作 bicycle"
         ]
     },
     {
@@ -4860,9 +4870,10 @@
         ]
     },
     {
-        "name": "doctor/Dr.",
+        "name": "doctor",
         "trans": [
-            "医生"
+            "医生",
+            "也作 Dr."
         ]
     },
     {
@@ -4926,9 +4937,10 @@
         ]
     },
     {
-        "name": "dorm/dormitory",
+        "name": "dorm",
         "trans": [
-            "宿舍"
+            "宿舍",
+            "也作 dormitory"
         ]
     },
     {
@@ -5712,9 +5724,10 @@
         ]
     },
     {
-        "name": "everyone/everybody",
+        "name": "everyone",
         "trans": [
-            "每个人/每个人"
+            "每个人/每个人",
+            "也作 everybody"
         ]
     },
     {
@@ -5742,9 +5755,10 @@
         ]
     },
     {
-        "name": "exam/examination",
+        "name": "exam",
         "trans": [
-            "考试"
+            "考试",
+            "也作 examination"
         ]
     },
     {
@@ -6012,7 +6026,7 @@
         ]
     },
     {
-        "name": "\"false\"",
+        "name": "false",
         "trans": [
             "错误的"
         ]
@@ -6678,9 +6692,10 @@
         ]
     },
     {
-        "name": "fridge/refrigerator",
+        "name": "fridge",
         "trans": [
-            "冰箱"
+            "冰箱",
+            "也作 refrigerator"
         ]
     },
     {
@@ -7302,9 +7317,10 @@
         ]
     },
     {
-        "name": "gym/gymnasium",
+        "name": "gym",
         "trans": [
-            "健身房"
+            "健身房",
+            "也作 gymnasium"
         ]
     },
     {
@@ -7806,9 +7822,10 @@
         ]
     },
     {
-        "name": "honour\\honor",
+        "name": "honour",
         "trans": [
-            "荣誉"
+            "荣誉",
+            "也作 honor"
         ]
     },
     {
@@ -8520,9 +8537,10 @@
         ]
     },
     {
-        "name": "IOT/Internet of things",
+        "name": "IOT",
         "trans": [
-            "物联网"
+            "物联网",
+            "也作 Internet of things"
         ]
     },
     {
@@ -8550,9 +8568,10 @@
         ]
     },
     {
-        "name": "IT/information technology",
+        "name": "IT",
         "trans": [
-            "信息技术"
+            "信息技术",
+            "也作 information technology"
         ]
     },
     {
@@ -8772,9 +8791,10 @@
         ]
     },
     {
-        "name": "kilo/kilogramme",
+        "name": "kilo",
         "trans": [
-            "千克/公斤"
+            "千克/公斤",
+            "也作 kilogramme"
         ]
     },
     {
@@ -8856,9 +8876,10 @@
         ]
     },
     {
-        "name": "lab/laboratory",
+        "name": "lab",
         "trans": [
-            "实验室"
+            "实验室",
+            "也作 laboratory"
         ]
     },
     {
@@ -9654,9 +9675,10 @@
         ]
     },
     {
-        "name": "maths/mathematics",
+        "name": "maths",
         "trans": [
-            "数学"
+            "数学",
+            "也作 mathematics"
         ]
     },
     {
@@ -10176,9 +10198,10 @@
         ]
     },
     {
-        "name": "mother/mum",
+        "name": "mother",
         "trans": [
-            "母亲"
+            "母亲",
+            "也作 mum"
         ]
     },
     {
@@ -10902,55 +10925,55 @@
         ]
     },
     {
-        "name": "oneself ",
+        "name": "oneself",
         "trans": [
             "自己"
         ]
     },
     {
-        "name": "onion ",
+        "name": "onion",
         "trans": [
             "洋葱"
         ]
     },
     {
-        "name": "online ",
+        "name": "online",
         "trans": [
             "在线"
         ]
     },
     {
-        "name": "only ",
+        "name": "only",
         "trans": [
             "只有"
         ]
     },
     {
-        "name": "onto ",
+        "name": "onto",
         "trans": [
             "到...上面"
         ]
     },
     {
-        "name": "open ",
+        "name": "open",
         "trans": [
             "打开"
         ]
     },
     {
-        "name": "opera ",
+        "name": "opera",
         "trans": [
             "歌剧"
         ]
     },
     {
-        "name": "operate ",
+        "name": "operate",
         "trans": [
             "操作"
         ]
     },
     {
-        "name": "opinion ",
+        "name": "opinion",
         "trans": [
             "意见"
         ]
@@ -11430,15 +11453,17 @@
         ]
     },
     {
-        "name": "PC/personal computer",
+        "name": "PC",
         "trans": [
-            "个人电脑"
+            "个人电脑",
+            "也作 personal computer"
         ]
     },
     {
-        "name": "PE/physical education",
+        "name": "PE",
         "trans": [
-            "体育教育"
+            "体育教育",
+            "也作 physical education"
         ]
     },
     {
@@ -11616,9 +11641,10 @@
         ]
     },
     {
-        "name": "phone/telephone",
+        "name": "phone",
         "trans": [
-            "电话"
+            "电话",
+            "也作 telephone"
         ]
     },
     {
@@ -11766,9 +11792,10 @@
         ]
     },
     {
-        "name": "plane/aeroplane",
+        "name": "plane",
         "trans": [
-            "飞机"
+            "飞机",
+            "也作 aeroplane"
         ]
     },
     {
@@ -14682,9 +14709,10 @@
         ]
     },
     {
-        "name": "somebody/someone",
+        "name": "somebody",
         "trans": [
-            "某人/有人"
+            "某人/有人",
+            "也作 someone"
         ]
     },
     {
@@ -15846,9 +15874,10 @@
         ]
     },
     {
-        "name": "television/TV",
+        "name": "television",
         "trans": [
-            "电视"
+            "电视",
+            "也作 TV"
         ]
     },
     {
@@ -16854,9 +16883,10 @@
         ]
     },
     {
-        "name": "until/till",
+        "name": "until",
         "trans": [
-            "直到"
+            "直到",
+            "也作 till"
         ]
     },
     {

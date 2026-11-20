@@ -146,15 +146,17 @@
         ]
     },
     {
-        "name": "undergraduate (bachelor's) degree",
+        "name": "undergraduate degree",
         "trans": [
-            "本科学位"
+            "本科学位",
+            "也作 bachelor's"
         ]
     },
     {
-        "name": "grade point average(GPA)",
+        "name": "grade point average",
         "trans": [
-            "平均绩点"
+            "平均绩点",
+            "也作 GPA"
         ]
     },
     {
@@ -1196,9 +1198,10 @@
         "ukphone": "'neɪbə,hʊd"
     },
     {
-        "name": "CBD(Central Business District)",
+        "name": "CBD",
         "trans": [
-            "中央商务中心"
+            "中央商务中心",
+            "（Central Business District）"
         ]
     },
     {
@@ -1802,9 +1805,10 @@
         ]
     },
     {
-        "name": "heating,ventilating,air conditioning(HVAC)",
+        "name": "heating,ventilating,air conditioning",
         "trans": [
-            "采暖 ，通风，空调"
+            "采暖 ，通风，空调",
+            "也作 HVAC"
         ]
     },
     {
@@ -2628,27 +2632,31 @@
         ]
     },
     {
-        "name": "non-dimensional element (point)",
+        "name": "non-dimensional element",
         "trans": [
-            "无维度元素 (点)"
+            "无维度元素 (点)",
+            "也作 point"
         ]
     },
     {
-        "name": "two dimensional element(line and plane)",
+        "name": "two dimensional element",
         "trans": [
-            "二维元素 (直线和平面)"
+            "二维元素 (直线和平面)",
+            "（line and plane）"
         ]
     },
     {
-        "name": "three dimensional element (volume and space)",
+        "name": "three dimensional element",
         "trans": [
-            "三维元素 (体积和空间)"
+            "三维元素 (体积和空间)",
+            "（volume and space）"
         ]
     },
     {
-        "name": "four dimension (time and motion)",
+        "name": "four dimension",
         "trans": [
-            "四维 (时间和运动)"
+            "四维 (时间和运动)",
+            "（time and motion）"
         ]
     },
     {

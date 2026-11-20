@@ -1304,9 +1304,10 @@
         "ukphone": null
     },
     {
-        "name": "joining fee(s)",
+        "name": "joining fee",
         "trans": [
-            "加盟费"
+            "加盟费",
+            "也作 fees"
         ],
         "usphone": null,
         "ukphone": null
@@ -3336,9 +3337,10 @@
         "ukphone": "ˈoʊvəˈfɪl"
     },
     {
-        "name": "archaeology/archeology",
+        "name": "archaeology",
         "trans": [
-            "考古学"
+            "考古学",
+            "也作 archeology"
         ],
         "usphone": null,
         "ukphone": null
@@ -4448,9 +4450,10 @@
         "ukphone": null
     },
     {
-        "name": "local hero(es)",
+        "name": "local hero",
         "trans": [
-            "当地的英雄"
+            "当地的英雄",
+            "也作 heroes"
         ],
         "usphone": null,
         "ukphone": null
@@ -5168,9 +5171,10 @@
         "ukphone": null
     },
     {
-        "name": "tent(ed) accommodation",
+        "name": "tent accommodation",
         "trans": [
-            "帐篷住宿"
+            "帐篷住宿",
+            "也作 tented"
         ],
         "usphone": null,
         "ukphone": null
@@ -5184,9 +5188,10 @@
         "ukphone": null
     },
     {
-        "name": "stress level(s)",
+        "name": "stress level",
         "trans": [
-            "压力水平"
+            "压力水平",
+            "也作 levels"
         ],
         "usphone": null,
         "ukphone": null
@@ -5248,9 +5253,10 @@
         "ukphone": null
     },
     {
-        "name": "shuttle bus(es)",
+        "name": "shuttle bus",
         "trans": [
-            "班车"
+            "班车",
+            "也作 buses"
         ],
         "usphone": null,
         "ukphone": null

@@ -1095,9 +1095,9 @@
         "trans": "伤感喜剧"
     },
     {
-        "name": "situation comedy (sitcom)",
+        "name": "situation comedy",
         "ukphone": "",
-        "trans": "情景喜剧"
+        "trans": "情景喜剧；也作 sitcom"
     },
     {
         "name": "tragedy",
@@ -3565,9 +3565,9 @@
         "trans": "电影节"
     },
     {
-        "name": "IMAX (Image Maximum)",
+        "name": "IMAX",
         "ukphone": "/ˈaɪmæks/",
-        "trans": "abbr. 巨幕电影"
+        "trans": "abbr. 巨幕电影；（Image Maximum）"
     },
     {
         "name": "late movie",
@@ -17000,14 +17000,14 @@
         "trans": "读卡器"
     },
     {
-        "name": "CD (compact disc)",
+        "name": "CD",
         "ukphone": "/ˌsiː ˈdiː/",
-        "trans": "abbr. 光盘；激光唱片"
+        "trans": "abbr. 光盘；激光唱片；（compact disc）"
     },
     {
-        "name": "CD-ROM (compact disc read-only memory)",
+        "name": "CD-ROM",
         "ukphone": "/ˌsiː diː ˈrɒm/",
-        "trans": "abbr. 光驱（只读光盘驱动器）"
+        "trans": "abbr. 光驱（只读光盘驱动器）；（compact disc read-only memory）"
     },
     {
         "name": "copycat",
@@ -17020,9 +17020,9 @@
         "trans": "n. 细线，带【搭配】telephone cord 电话线"
     },
     {
-        "name": "CPU (central processing unit)",
+        "name": "CPU",
         "ukphone": "/ˌsiː piː ˈjuː/",
-        "trans": "abbr. 中央处理器【搭配】CPU cooling fan 中央处理器散热风扇"
+        "trans": "abbr. 中央处理器【搭配】CPU cooling fan 中央处理器散热风扇；（central processing unit）"
     },
     {
         "name": "expandable",
@@ -20700,9 +20700,9 @@
         "trans": "n. 证明书；（学历、资历）资格；证件【搭配】professional credential职业资格证书"
     },
     {
-        "name": "CV (curriculum vitae)",
+        "name": "CV",
         "ukphone": "/ˌsi ˈvi/",
-        "trans": "n. 履历表"
+        "trans": "n. 履历表；（curriculum vitae）"
     },
     {
         "name": "degree",
@@ -24660,9 +24660,9 @@
         "trans": "n. 采购员"
     },
     {
-        "name": "CEO (Chief Executive Officer)",
+        "name": "CEO",
         "ukphone": "/ˌsiːiːˈəʊ/",
-        "trans": "abbr. 首席执行官【搭配】CEO Council 理事会"
+        "trans": "abbr. 首席执行官【搭配】CEO Council 理事会；（Chief Executive Officer）"
     },
     {
         "name": "controller",
@@ -24670,9 +24670,9 @@
         "trans": "n. 财务总管；主管【搭配】business controller 业务主任"
     },
     {
-        "name": "GM (General Manager)",
+        "name": "GM",
         "ukphone": "/dʒiːem/",
-        "trans": "abbr. 总经理【搭配】GM assistant 总经理助理"
+        "trans": "abbr. 总经理【搭配】GM assistant 总经理助理；（General Manager）"
     },
     {
         "name": "manager",
@@ -26810,9 +26810,9 @@
         "trans": "操作系统"
     },
     {
-        "name": "PDA (personal digital assistant)",
+        "name": "PDA",
         "ukphone": "/ˌpi di ˈeɪ/",
-        "trans": "n. 个人数字助理"
+        "trans": "n. 个人数字助理；（personal digital assistant）"
     },
     {
         "name": "pocket-sized",
@@ -27005,9 +27005,9 @@
         "trans": "n. 死亡率【搭配】mortality rate 死亡率"
     },
     {
-        "name": "NPG (negative population growth)",
+        "name": "NPG",
         "ukphone": "/ˌen pi ˈdʒi/",
-        "trans": "abbr. 人口负增长"
+        "trans": "abbr. 人口负增长；（negative population growth）"
     },
     {
         "name": "random sampling",
@@ -27020,9 +27020,9 @@
         "trans": "人口动态统计"
     },
     {
-        "name": "ZPG (zero population growth)",
+        "name": "ZPG",
         "ukphone": "/ˌzi pi ˈdʒi/",
-        "trans": "abbr. 人口零增长"
+        "trans": "abbr. 人口零增长；（zero population growth）"
     },
     {
         "name": "annuity",
@@ -27035,9 +27035,9 @@
         "trans": "adj. 孤独的，凄凉的；/ˈdesəˌleɪt/\n v. 使孤独凄凉【同义】deserted adj. 荒凉的"
     },
     {
-        "name": "dink (Double Income No Kids)",
+        "name": "dink",
         "ukphone": "/dɪŋk/",
-        "trans": "abbr. 丁克一族【搭配】dink family 丁克家庭"
+        "trans": "abbr. 丁克一族【搭配】dink family 丁克家庭；（Double Income No Kids）"
     },
     {
         "name": "disease prevention",
