@@ -75,8 +75,8 @@ export default function Setting() {
                   </div>
 
                   <Tab.Group vertical>
-                    <div className="flex h-120 w-full ">
-                      <Tab.List className="flex h-full w-52 flex-col items-start space-y-3  border-r border-neutral-100 bg-stone-50 px-6 py-3 dark:border-transparent dark:bg-gray-900">
+                    <div className="flex h-120 min-h-0 w-full">
+                      <Tab.List className="flex h-full w-52 shrink-0 flex-col items-start space-y-3 border-r border-neutral-100 bg-stone-50 px-6 py-3 dark:border-transparent dark:bg-gray-900">
                         <Tab
                           className={({ selected }) =>
                             classNames(
@@ -123,17 +123,17 @@ export default function Setting() {
                         </Tab>
                       </Tab.List>
 
-                      <Tab.Panels className="h-full w-full flex-1">
-                        <Tab.Panel className="flex h-full w-full  focus:outline-none">
+                      <Tab.Panels className="h-full min-h-0 w-full flex-1 overflow-hidden">
+                        <Tab.Panel className="flex h-full min-h-0 w-full focus:outline-none">
                           <SoundSetting />
                         </Tab.Panel>
-                        <Tab.Panel className="flex h-full focus:outline-none">
+                        <Tab.Panel className="flex h-full min-h-0 w-full focus:outline-none">
                           <AdvancedSetting />
                         </Tab.Panel>
-                        <Tab.Panel className="flex h-full focus:outline-none">
+                        <Tab.Panel className="flex h-full min-h-0 w-full focus:outline-none">
                           <ViewSetting />
                         </Tab.Panel>
-                        <Tab.Panel className="flex h-full focus:outline-none">
+                        <Tab.Panel className="flex h-full min-h-0 w-full focus:outline-none">
                           <DataSetting />
                         </Tab.Panel>
                       </Tab.Panels>
