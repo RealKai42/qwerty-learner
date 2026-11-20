@@ -1,4 +1,4 @@
-name: Deployment to Github/Gitee pages
+name: Deployment to GitHub Pages
 on:
   push:
     branches:
@@ -26,10 +26,3 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build
-      - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE }}
-        with:
-          source-repo: git@github.com:RealKai42/qwerty-learner.git
-          destination-repo: git@gitee.com:KaiyiWing/qwerty-learner.git
