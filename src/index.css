@@ -9,12 +9,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #faf9ff;
+  color: #000;
   @apply transition-colors duration-300;
   user-select: none;
 }
 
 html.dark body {
   @apply bg-gray-900;
+}
+
+/* Theme follows the `dark` class, not the OS. A dark OS otherwise paints
+   the body foreground light while this background stays light. The
+   explicit black is unchanged in dark mode, so text that only sets
+   `dark:text-*` keeps its existing contrast. */
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 code {
