@@ -240,7 +240,7 @@
     ]
   },
   {
-    "name": "does ",
+    "name": "does",
     "trans": [
       "adv.do的第三人称单数形式"
     ]
@@ -780,9 +780,10 @@
     ]
   },
   {
-    "name": "hasn't(got)=has not(got)",
+    "name": "hasn't=has not",
     "trans": [
-      "adv.没有"
+      "adv.没有",
+      "也作 got"
     ]
   },
   {

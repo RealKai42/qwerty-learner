@@ -48,7 +48,7 @@
         "ukphone": "tʃes"
     },
     {
-        "name": "play  chess",
+        "name": "play chess",
         "trans": [
             "下国际象棋"
         ],
@@ -64,7 +64,7 @@
         "ukphone": "spiːk"
     },
     {
-        "name": "speak  English",
+        "name": "speak English",
         "trans": [
             "说英语"
         ],
@@ -146,7 +146,7 @@
         "ukphone": "tɔːk"
     },
     {
-        "name": "talk to ...",
+        "name": "talk to...",
         "trans": [
             "跟……说"
         ],
@@ -267,9 +267,10 @@
         "ukphone": "tə'deɪ"
     },
     {
-        "name": "help (sb) with sth",
+        "name": "help with sth",
         "trans": [
-            "在某方面帮助（某人）"
+            "在某方面帮助（某人）",
+            "（sb）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -547,9 +548,10 @@
         "ukphone": "'həʊmwɜːk"
     },
     {
-        "name": "do (one's) homework",
+        "name": "do homework",
         "trans": [
-            "做作业"
+            "做作业",
+            "也作 one's"
         ],
         "usphone": "",
         "ukphone": ""
@@ -605,7 +607,7 @@
         "ukphone": "'aɪðə; 'iː-"
     },
     {
-        "name": "Either...or ......",
+        "name": "Either...or......",
         "trans": [
             "要么……要么……；或者……或者……"
         ],
@@ -1001,9 +1003,10 @@
         "ukphone": "ə'raɪv"
     },
     {
-        "name": "(be) on time",
+        "name": "on time",
         "trans": [
-            "准时"
+            "准时",
+            "（be）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1164,9 +1167,10 @@
         "ukphone": "bɪ'fɔː"
     },
     {
-        "name": "make (one's) bed",
+        "name": "make bed",
         "trans": [
-            "铺床"
+            "铺床",
+            "也作 one's"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1244,9 +1248,10 @@
         "ukphone": "strɪkt"
     },
     {
-        "name": "be strict (with sb)",
+        "name": "be strict",
         "trans": [
-            "（对某人）要求严格"
+            "（对某人）要求严格",
+            "（with sb）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1453,7 +1458,7 @@
         "ukphone": "'æfrɪkə"
     },
     {
-        "name": "South  Africa",
+        "name": "South Africa",
         "trans": [
             "南非"
         ],
@@ -1573,9 +1578,10 @@
         "ukphone": "ˈdeɪndʒə(r)"
     },
     {
-        "name": "be in (great) danger",
+        "name": "be in danger",
         "trans": [
-            "处于（极大）危险之中"
+            "处于（极大）危险之中",
+            "也作 great"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1637,9 +1643,10 @@
         "ukphone": "'əʊvə"
     },
     {
-        "name": "(be) made of",
+        "name": "made of",
         "trans": [
-            "由……制成的"
+            "由……制成的",
+            "（be）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1782,7 +1789,7 @@
         "ukphone": "tiː"
     },
     {
-        "name": "drink  tea",
+        "name": "drink tea",
         "trans": [
             "喝茶"
         ],
@@ -2086,9 +2093,10 @@
         "ukphone": "bæk"
     },
     {
-        "name": "call(sb)back",
+        "name": "call back",
         "trans": [
-            "回电话"
+            "回电话",
+            "（sb）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -2198,9 +2206,10 @@
         "ukphone": "vəˈkeɪʃn"
     },
     {
-        "name": "on(a)vacation",
+        "name": "on vacation",
         "trans": [
-            "度假"
+            "度假",
+            "（a）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -3077,7 +3086,7 @@
         "ukphone": "bəʊl"
     },
     {
-        "name": "one(large)bowl of",
+        "name": "onelarge bowl of",
         "trans": [
             "一（大）碗"
         ],
@@ -3373,9 +3382,10 @@
         "ukphone": "kwaɪt"
     },
     {
-        "name": "quite a lot(of...)",
+        "name": "quite a lot",
         "trans": [
-            "许多"
+            "许多",
+            "（of...）"
         ],
         "usphone": "",
         "ukphone": ""

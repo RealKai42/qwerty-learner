@@ -112,7 +112,7 @@
         "ukphone": "æm"
     },
     {
-        "name": "I'm = I am",
+        "name": "I'm= I am",
         "trans": [
             "我是"
         ],
@@ -1045,9 +1045,10 @@
         "ukphone": "'ɒrɪn(d)ʒ"
     },
     {
-        "name": "colour (AmE color)",
+        "name": "colour",
         "trans": [
-            "颜色"
+            "颜色",
+            "（AmE color）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1141,9 +1142,10 @@
         "ukphone": "'bɜːθdeɪ"
     },
     {
-        "name": "favourite (AmE favorite)",
+        "name": "favourite",
         "trans": [
-            "最喜爱的"
+            "最喜爱的",
+            "（AmE favorite）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1293,7 +1295,7 @@
         "ukphone": "əs; ʌs"
     },
     {
-        "name": "let's = let us",
+        "name": "let's= let us",
         "trans": [
             "让我们"
         ],
@@ -1680,9 +1682,10 @@
         "ukphone": "'ʌŋk(ə)l"
     },
     {
-        "name": "photo (= photograph)",
+        "name": "photo",
         "trans": [
-            "照片，相片"
+            "照片，相片",
+            "也作 photograph"
         ],
         "usphone": "",
         "ukphone": ""
@@ -1859,9 +1862,10 @@
         "ukphone": "pə'liːs"
     },
     {
-        "name": "theatre (AmE theater)",
+        "name": "theatre",
         "trans": [
-            "剧院"
+            "剧院",
+            "（AmE theater）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -2035,9 +2039,10 @@
         "ukphone": "'pɪktʃə"
     },
     {
-        "name": "television (= TV)",
+        "name": "television",
         "trans": [
-            "电视；电视机"
+            "电视；电视机",
+            "也作 TV"
         ],
         "usphone": "",
         "ukphone": ""
@@ -2252,9 +2257,10 @@
         "ukphone": "'saɪəns"
     },
     {
-        "name": "lab (= laboratory)",
+        "name": "lab",
         "trans": [
-            "实验室"
+            "实验室",
+            "也作 laboratory"
         ],
         "usphone": "",
         "ukphone": ""
@@ -2951,17 +2957,19 @@
         "ukphone": ""
     },
     {
-        "name": "maths (AmE math)",
+        "name": "maths",
         "trans": [
-            "数学"
+            "数学",
+            "（AmE math）"
         ],
         "usphone": "",
         "ukphone": ""
     },
     {
-        "name": "PE (= physical education)",
+        "name": "PE",
         "trans": [
-            "体育；体育课"
+            "体育；体育课",
+            "（physical education）"
         ],
         "usphone": "",
         "ukphone": ""
@@ -3690,9 +3698,10 @@
         "ukphone": "ə'baʊt"
     },
     {
-        "name": "kilo (= kilogram)",
+        "name": "kilo",
         "trans": [
-            "千克；公斤"
+            "千克；公斤",
+            "也作 kilogram"
         ],
         "usphone": "",
         "ukphone": ""
@@ -4444,7 +4453,7 @@
         "ukphone": ""
     },
     {
-        "name": "can't = cannot",
+        "name": "can't= cannot",
         "trans": [
             "不能"
         ],
@@ -4983,9 +4992,10 @@
         "ukphone": "'dʌmplɪŋ"
     },
     {
-        "name": "programme (AmE program)",
+        "name": "programme",
         "trans": [
-            "（电视）节目"
+            "（电视）节目",
+            "（AmE program）"
         ],
         "usphone": "",
         "ukphone": ""

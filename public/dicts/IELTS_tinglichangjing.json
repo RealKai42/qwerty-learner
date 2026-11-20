@@ -5480,9 +5480,10 @@
         "usphone": "ɪkˈstɛnʃən"
     },
     {
-        "name": "renew ( al )",
+        "name": "renew",
         "trans": [
-            "续借"
+            "续借",
+            "（al）"
         ],
         "ukphone": "rɪˈnjuː ( æl )",
         "usphone": "rɪˈnu ( æl )"
@@ -7824,7 +7825,7 @@
         "usphone": "pɪɡ teɪl"
     },
     {
-        "name": "wear ...hair in a bun",
+        "name": "wear...hair in a bun",
         "trans": [
             "盘头"
         ],
@@ -9072,9 +9073,10 @@
         "usphone": "θru"
     },
     {
-        "name": "cross (over)",
+        "name": "cross",
         "trans": [
-            "穿过（某条街道）"
+            "穿过（某条街道）",
+            "也作 over"
         ],
         "ukphone": "krɒs (ˈəʊvə)",
         "usphone": "krɔs (ˈoʊvər)"

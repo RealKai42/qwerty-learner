@@ -29200,9 +29200,10 @@
         "usphone": "sʌk"
     },
     {
-        "name": "and/or",
+        "name": "and",
         "trans": [
-            "conj.及（或）"
+            "conj.及（或）",
+            "也作 or"
         ],
         "ukphone": "ˈænˈdɔ:",
         "usphone": "ˈænˈdɔr"
@@ -99632,9 +99633,10 @@
         "usphone": "lɪmp"
     },
     {
-        "name": "his/her",
+        "name": "his",
         "trans": [
-            "无"
+            "无",
+            "也作 her"
         ],
         "ukphone": "",
         "usphone": ""
@@ -130096,9 +130098,10 @@
         "usphone": "ˈriˈsɛl"
     },
     {
-        "name": "he/she",
+        "name": "he",
         "trans": [
-            "无"
+            "无",
+            "也作 she"
         ],
         "ukphone": "",
         "usphone": ""

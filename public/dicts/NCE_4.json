@@ -778,10 +778,11 @@
         ]
     },
     {
-        "name": "espionage(title)",
+        "name": "espionage",
         "ukphone": "",
         "trans": [
-            "n.间谍活动"
+            "n.间谍活动",
+            "也作 title"
         ]
     },
     {
@@ -1606,10 +1607,11 @@
         ]
     },
     {
-        "name": "secrecy (title)",
+        "name": "secrecy",
         "ukphone": "",
         "trans": [
-            "n.秘密"
+            "n.秘密",
+            "也作 title"
         ]
     },
     {
@@ -1989,10 +1991,11 @@
         ]
     },
     {
-        "name": "porpoise(title)",
+        "name": "porpoise",
         "ukphone": "",
         "trans": [
-            "n.海豚"
+            "n.海豚",
+            "也作 title"
         ]
     },
     {
