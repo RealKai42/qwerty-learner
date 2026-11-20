@@ -22,8 +22,6 @@ export function ErrorBook() {
   const navigate = useNavigate()
   const currentRowDetail = useAtomValue(currentRowDetailAtom)
   const { deleteWordRecord } = useDeleteWordRecord()
-  const [reload, setReload] = useState(false)
-  const [paraphrases, setParaphrases] = useState<any[]>([])
 
   const onBack = useCallback(() => {
     navigate('/')
@@ -63,6 +61,16 @@ export function ErrorBook() {
   }, [currentPage, sortedRecords])
 
   useEffect(() => {
+    if (totalPages === 0) {
+      setCurrentPage(1)
+      return
+    }
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages)
+    }
+  }, [currentPage, totalPages])
+
+  useEffect(() => {
     db.wordRecords
       .where('wrongCount')
       .above(0)
@@ -88,15 +96,13 @@ export function ErrorBook() {
 
         setGroupedRecords(groups)
       })
-  }, [reload])
+  }, [])
 
   const handleDelete = async (word: string, dict: string) => {
-    await deleteWordRecord(word, dict)
-    setReload((prev) => !prev)
-  }
+    const deletedCount = await deleteWordRecord(word, dict)
+    if (!deletedCount) return
 
-  const handleWordUpdate = (paraphrases: object) => {
-    setParaphrases((prevWords) => [...prevWords, paraphrases])
+    setGroupedRecords((prev) => prev.filter((record) => !(record.word === word && record.dict === dict)))
   }
 
   return (
@@ -114,7 +120,7 @@ export function ErrorBook() {
               <span className="basis-6/12">释义</span>
               <HeadWrongNumber className="basis-1/12" sortType={sortType} setSortType={setSort} />
               <span className="basis-1/12">词典</span>
-              <DropdownExport renderRecords={renderRecords} paraphrases={paraphrases} />
+              <DropdownExport renderRecords={sortedRecords} />
             </div>
             <ScrollArea.Root className="flex-1 overflow-y-auto pt-5">
               <ScrollArea.Viewport className="h-full  ">
@@ -124,7 +130,6 @@ export function ErrorBook() {
                       key={`${record.dict}-${record.word}`}
                       record={record}
                       onDelete={() => handleDelete(record.word, record.dict)}
-                      onWordUpdate={handleWordUpdate}
                     />
                   ))}
                 </div>

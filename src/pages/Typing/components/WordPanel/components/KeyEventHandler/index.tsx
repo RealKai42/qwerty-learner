@@ -9,6 +9,9 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
 
   const onKeydown = useCallback(
     (e: KeyboardEvent) => {
+      // Composition and auto-repeat are not committed letters.
+      if (e.isComposing || e.keyCode === 229 || e.repeat) return
+
       const char = e.key
 
       if (isChineseSymbol(char)) {
@@ -17,6 +20,8 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
       }
 
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+        // Firefox uses these unmodified keys for find-as-you-type.
+        if (char === "'" || char === '/') e.preventDefault()
         updateInput({ type: 'add', value: char, event: e })
       }
     },

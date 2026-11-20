@@ -25,8 +25,8 @@
     },
     {
         "name": "early",
-        "trans":   [
-                  "早"
+        "trans": [
+            "早"
         ],
         "usphone": "ˈɜrli",
         "ukphone": "ˈɜːli"
@@ -152,7 +152,7 @@
         "ukphone": "mɔː"
     },
     {
-        "name": "New Year’s Day",
+        "name": "New Year's Day",
         "trans": [
             "新年"
         ],
@@ -168,7 +168,7 @@
         "ukphone": "tri ˈplɑːntɪŋ deɪ"
     },
     {
-        "name": "Mother’s Day",
+        "name": "Mother's Day",
         "trans": [
             "母亲节"
         ],
@@ -176,7 +176,7 @@
         "ukphone": "ˈmʌðəz deɪ"
     },
     {
-        "name": "Children’s Day",
+        "name": "Children's Day",
         "trans": [
             "儿童节"
         ],
@@ -184,7 +184,7 @@
         "ukphone": "ˈtʃɪldrənz deɪ"
     },
     {
-        "name": "Father’s Day",
+        "name": "Father's Day",
         "trans": [
             "父亲节"
         ],
@@ -192,7 +192,7 @@
         "ukphone": "ˈfɑːðəz deɪ"
     },
     {
-        "name": "Teachers’ Day",
+        "name": "Teachers' Day",
         "trans": [
             "教师节"
         ],
@@ -520,277 +520,251 @@
         "ukphone": "wʌn"
     },
     {
-    "name": "went to the beach",
-    "trans": [
-        "过去式：去海边"
-    ],
-    "usphone": "wɛnt tu ðə bitʃ",
-    "ukphone": "wɛnt tu ðiː biːtʃ"
-},
-
-{
-    "name": "drank cold drinks",
-    "trans": [
-        "过去式：喝冷饮"
-    ],
-    "usphone": "dræŋk koʊld drɪŋks",
-    "ukphone": "dræŋk kəʊld drɪŋks"
-},
-
-{
-    "name": "swam",
-    "trans": [
-        "swim的过去式：游泳"
-    ],
-    "usphone": "swæm",
-    "ukphone": "swæm"
-},
-
-{
-    "name": "ate ice cream",
-    "trans": [
-        "过去式：吃冰激凌"
-    ],
-    "usphone": "ˈeɪt aɪs krim",
-    "ukphone": "eɪt aɪs kriːm"
-},
-
-{
-    "name": "the Stone Forest",
-    "trans": [
-        "石林"
-    ],
-    "usphone": "ðə ston ˈfɔrɪst",
-    "ukphone": "ðiː stəʊn ˈfɒrɪst"
-},
-
-{
-    "name": "bought some gifts",
-    "trans": [
-        "过去式：买礼物"
-    ],
-    "usphone": "bɔt sʌm ɡɪfts",
-    "ukphone": "bɔt sʌm ɡɪfts"
-},
-
-{
-    "name": "took photos",
-    "trans": [
-        "过去式：拍照片"
-    ],
-    "usphone": "tʊk ˈfoʊtoʊz",
-    "ukphone": "tʊk ˈfəʊtəʊz"
-},
-
-{
-    "name": "saw flowers",
-    "trans": [
-        "过去式：赏花"
-    ],
-    "usphone": "sɔ flaʊərz",
-    "ukphone": "sɔː flaʊəz"
-},
-
-{
-    "name": "slept",
-    "trans": [
-        "sleep的过去式：睡觉"
-    ],
-    "usphone": "slɛpt",
-    "ukphone": "slɛpt"
-},
-
-{
-    "name": "delicious",
-    "trans": [
-        "美味的；可口的"
-    ],
-    "usphone": "dɪˈlɪʃəs",
-    "ukphone": "dɪˈlɪʃəs"
-},
-
-{
-    "name": "felt happy",
-    "trans": [
-        "过去式：觉得高兴"
-    ],
-    "usphone": "fɛlt ˈhæpi",
-    "ukphone": "fɛlt ˈhæpi"
-},
-
-{
-    "name": "sad",
-    "trans": [
-        "悲哀的；难过的"
-    ],
-    "usphone": "sæd",
-    "ukphone": "sæd"
-},
-
-{
-    "name": "left",
-    "trans": [
-        "leave的过去式：离开"
-    ],
-    "usphone": "lɛft",
-    "ukphone": "lɛft"
-},
-
-{
-    "name": "French fries",
-    "trans": [
-        "法式炸薯条"
-    ],
-    "usphone": "frɛntʃ fraɪz",
-    "ukphone": "frɛntʃ fraɪz"
-},
-{
-    "name": "were",
-    "trans": [
-        "are的过去式：是"
-    ],
-    "usphone": "wər",
-    "ukphone": "wər"
-},
-{
-    "name": "was born",
-    "trans": [
-        "过去式：出生"
-    ],
-    "usphone": "wɑz bɔrn",
-    "ukphone": "wɒz bɔːrn"
-},
-{
-    "name": "started to speak",
-    "trans": [
-        "过去式：开始说话"
-    ],
-    "usphone": "ˈstɑrtɪd tu spiːk",
-    "ukphone": "ˈstɑːtɪd tu spiːk"
-},
-{
-    "name": "learned to walk",
-    "trans": [
-        "过去式：学走路"
-    ],
-    "usphone": "lɜːrnd tu wɔːk",
-    "ukphone": "lɜːnd tuː wɔːk"
-},
-
-{
-    "name": "learned to ride a bike",
-    "trans": [
-        "过去式：学骑自行车"
-    ],
-    "usphone": "lɜːrnd tu raɪd ə ˈbaɪk",
-    "ukphone": "lɜːnd tuː raɪd ə baɪk"
-},
-
-{
-    "name": "went to kindergarten",
-    "trans": [
-        "过去式：上幼儿园"
-    ],
-    "usphone": "wɛnt tu ˈkɪndərˌɡɑːrdən",
-    "ukphone": "wɛnt tuː ˈkɪndəˌɡɑːtən"
-},
-
-{
-    "name": "went to school",
-    "trans": [
-        "过去式：上学"
-    ],
-    "usphone": "wɛnt tu skul",
-    "ukphone": "wɛnt tuː skuːl"
-},
-
-{
-    "name": "learned to swim",
-    "trans": [
-        "过去式：学游泳"
-    ],
-    "usphone": "lɜːrnd tu swɪm",
-    "ukphone": "lɜːnd tuː swɪm"
-},
-
-{
-    "name": "fifteenth (15th)",
-    "trans": [
-        "第十五"
-    ],
-    "usphone": "ˌfɪfˈtiːnθ",
-    "ukphone": "fɪfˈtiːnθ"
-},
-
-{
-    "name": "started to buy things",
-    "trans": [
-        "过去式：开始学买东西"
-    ],
-    "usphone": "ˈstɑrtɪd tu baɪ θɪŋz",
-    "ukphone": "ˈstɑːtɪd tuː baɪ θɪŋz"
-},
-
-{
-    "name": "started to study English",
-    "trans": [
-        "过去式：开始学英语"
-    ],
-    "usphone": "ˈstɑrtɪd tu ˈstʌdi ˈɪŋɡlɪʃ",
-    "ukphone": "ˈstɑːtɪd tuː ˈstʌdi ˈɪŋɡlɪʃ"
-},
-
-{
-    "name": "started to use a computer",
-    "trans": [
-        "过去式：开始使用电脑"
-    ],
-    "usphone": "ˈstɑrtɪd tuː juz ə kəmˈpjuːtər",
-    "ukphone": "ˈstɑːtɪd tuː juːz ə kəmˈpjuːtə(r)"
-},
-
-{
-    "name": "all over",
-    "trans": [
-        "到处；各处"
-    ],
-    "usphone": "ɔːl ˈoʊvər",
-    "ukphone": "ɔːl ˈəʊvə(r)"
-},
-
-{
-    "name": "out of",
-    "trans": [
-        "离开（某处）"
-    ],
-    "usphone": "aʊt əv",
-    "ukphone": "aʊt əv"
-},
-
-{
-    "name": "into",
-    "trans": [
-        "进入；到……里"
-    ],
-    "usphone": "ˈɪntuː",
-    "ukphone": "ˈɪntuː"
-},
-
-{
-    "name": "chopsticks",
-    "trans": [
-        "筷子"
-    ],
-    "usphone": "ˈtʃɑpˌstɪks",
-    "ukphone": "ˈtʃɒp.stɪks"
-},
-
-{
-    "name": "wet",
-    "trans": [
-        "湿的，潮湿的"
-    ],
-    "usphone": "wɛt",
-    "ukphone": "wɛt"
-}
+        "name": "went to the beach",
+        "trans": [
+            "过去式：去海边"
+        ],
+        "usphone": "wɛnt tu ðə bitʃ",
+        "ukphone": "wɛnt tu ðiː biːtʃ"
+    },
+    {
+        "name": "drank cold drinks",
+        "trans": [
+            "过去式：喝冷饮"
+        ],
+        "usphone": "dræŋk koʊld drɪŋks",
+        "ukphone": "dræŋk kəʊld drɪŋks"
+    },
+    {
+        "name": "swam",
+        "trans": [
+            "swim的过去式：游泳"
+        ],
+        "usphone": "swæm",
+        "ukphone": "swæm"
+    },
+    {
+        "name": "ate ice cream",
+        "trans": [
+            "过去式：吃冰激凌"
+        ],
+        "usphone": "ˈeɪt aɪs krim",
+        "ukphone": "eɪt aɪs kriːm"
+    },
+    {
+        "name": "the Stone Forest",
+        "trans": [
+            "石林"
+        ],
+        "usphone": "ðə ston ˈfɔrɪst",
+        "ukphone": "ðiː stəʊn ˈfɒrɪst"
+    },
+    {
+        "name": "bought some gifts",
+        "trans": [
+            "过去式：买礼物"
+        ],
+        "usphone": "bɔt sʌm ɡɪfts",
+        "ukphone": "bɔt sʌm ɡɪfts"
+    },
+    {
+        "name": "took photos",
+        "trans": [
+            "过去式：拍照片"
+        ],
+        "usphone": "tʊk ˈfoʊtoʊz",
+        "ukphone": "tʊk ˈfəʊtəʊz"
+    },
+    {
+        "name": "saw flowers",
+        "trans": [
+            "过去式：赏花"
+        ],
+        "usphone": "sɔ flaʊərz",
+        "ukphone": "sɔː flaʊəz"
+    },
+    {
+        "name": "slept",
+        "trans": [
+            "sleep的过去式：睡觉"
+        ],
+        "usphone": "slɛpt",
+        "ukphone": "slɛpt"
+    },
+    {
+        "name": "delicious",
+        "trans": [
+            "美味的；可口的"
+        ],
+        "usphone": "dɪˈlɪʃəs",
+        "ukphone": "dɪˈlɪʃəs"
+    },
+    {
+        "name": "felt happy",
+        "trans": [
+            "过去式：觉得高兴"
+        ],
+        "usphone": "fɛlt ˈhæpi",
+        "ukphone": "fɛlt ˈhæpi"
+    },
+    {
+        "name": "sad",
+        "trans": [
+            "悲哀的；难过的"
+        ],
+        "usphone": "sæd",
+        "ukphone": "sæd"
+    },
+    {
+        "name": "left",
+        "trans": [
+            "leave的过去式：离开"
+        ],
+        "usphone": "lɛft",
+        "ukphone": "lɛft"
+    },
+    {
+        "name": "French fries",
+        "trans": [
+            "法式炸薯条"
+        ],
+        "usphone": "frɛntʃ fraɪz",
+        "ukphone": "frɛntʃ fraɪz"
+    },
+    {
+        "name": "were",
+        "trans": [
+            "are的过去式：是"
+        ],
+        "usphone": "wər",
+        "ukphone": "wər"
+    },
+    {
+        "name": "was born",
+        "trans": [
+            "过去式：出生"
+        ],
+        "usphone": "wɑz bɔrn",
+        "ukphone": "wɒz bɔːrn"
+    },
+    {
+        "name": "started to speak",
+        "trans": [
+            "过去式：开始说话"
+        ],
+        "usphone": "ˈstɑrtɪd tu spiːk",
+        "ukphone": "ˈstɑːtɪd tu spiːk"
+    },
+    {
+        "name": "learned to walk",
+        "trans": [
+            "过去式：学走路"
+        ],
+        "usphone": "lɜːrnd tu wɔːk",
+        "ukphone": "lɜːnd tuː wɔːk"
+    },
+    {
+        "name": "learned to ride a bike",
+        "trans": [
+            "过去式：学骑自行车"
+        ],
+        "usphone": "lɜːrnd tu raɪd ə ˈbaɪk",
+        "ukphone": "lɜːnd tuː raɪd ə baɪk"
+    },
+    {
+        "name": "went to kindergarten",
+        "trans": [
+            "过去式：上幼儿园"
+        ],
+        "usphone": "wɛnt tu ˈkɪndərˌɡɑːrdən",
+        "ukphone": "wɛnt tuː ˈkɪndəˌɡɑːtən"
+    },
+    {
+        "name": "went to school",
+        "trans": [
+            "过去式：上学"
+        ],
+        "usphone": "wɛnt tu skul",
+        "ukphone": "wɛnt tuː skuːl"
+    },
+    {
+        "name": "learned to swim",
+        "trans": [
+            "过去式：学游泳"
+        ],
+        "usphone": "lɜːrnd tu swɪm",
+        "ukphone": "lɜːnd tuː swɪm"
+    },
+    {
+        "name": "fifteenth (15th)",
+        "trans": [
+            "第十五"
+        ],
+        "usphone": "ˌfɪfˈtiːnθ",
+        "ukphone": "fɪfˈtiːnθ"
+    },
+    {
+        "name": "started to buy things",
+        "trans": [
+            "过去式：开始学买东西"
+        ],
+        "usphone": "ˈstɑrtɪd tu baɪ θɪŋz",
+        "ukphone": "ˈstɑːtɪd tuː baɪ θɪŋz"
+    },
+    {
+        "name": "started to study English",
+        "trans": [
+            "过去式：开始学英语"
+        ],
+        "usphone": "ˈstɑrtɪd tu ˈstʌdi ˈɪŋɡlɪʃ",
+        "ukphone": "ˈstɑːtɪd tuː ˈstʌdi ˈɪŋɡlɪʃ"
+    },
+    {
+        "name": "started to use a computer",
+        "trans": [
+            "过去式：开始使用电脑"
+        ],
+        "usphone": "ˈstɑrtɪd tuː juz ə kəmˈpjuːtər",
+        "ukphone": "ˈstɑːtɪd tuː juːz ə kəmˈpjuːtə(r)"
+    },
+    {
+        "name": "all over",
+        "trans": [
+            "到处；各处"
+        ],
+        "usphone": "ɔːl ˈoʊvər",
+        "ukphone": "ɔːl ˈəʊvə(r)"
+    },
+    {
+        "name": "out of",
+        "trans": [
+            "离开（某处）"
+        ],
+        "usphone": "aʊt əv",
+        "ukphone": "aʊt əv"
+    },
+    {
+        "name": "into",
+        "trans": [
+            "进入；到……里"
+        ],
+        "usphone": "ˈɪntuː",
+        "ukphone": "ˈɪntuː"
+    },
+    {
+        "name": "chopsticks",
+        "trans": [
+            "筷子"
+        ],
+        "usphone": "ˈtʃɑpˌstɪks",
+        "ukphone": "ˈtʃɒp.stɪks"
+    },
+    {
+        "name": "wet",
+        "trans": [
+            "湿的，潮湿的"
+        ],
+        "usphone": "wɛt",
+        "ukphone": "wɛt"
+    }
 ]

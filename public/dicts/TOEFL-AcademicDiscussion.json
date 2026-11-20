@@ -1,0 +1,1250 @@
+[
+  {
+    "name": "vital",
+    "trans": [
+      "【表达「重要/关键」（替代 important / significant / crucial）】极其重要的，关键的"
+    ]
+  },
+  {
+    "name": "key",
+    "trans": [
+      "【表达「重要/关键」（替代 important / significant / crucial）】关键的"
+    ]
+  },
+  {
+    "name": "core",
+    "trans": [
+      "【表达「重要/关键」（替代 important / significant / crucial）】核心的"
+    ]
+  },
+  {
+    "name": "prime",
+    "trans": [
+      "【表达「重要/关键」（替代 important / significant / crucial）】主要的，首要的"
+    ]
+  },
+  {
+    "name": "central",
+    "trans": [
+      "【表达「重要/关键」（替代 important / significant / crucial）】最核心的，最重要的"
+    ]
+  },
+  {
+    "name": "undermine",
+    "trans": [
+      "【表达「破坏/削弱」（替代 destroy / damage / negatively affect）】破坏，削弱"
+    ]
+  },
+  {
+    "name": "erode",
+    "trans": [
+      "【表达「破坏/削弱」（替代 destroy / damage / negatively affect）】侵蚀，削弱"
+    ]
+  },
+  {
+    "name": "harm",
+    "trans": [
+      "【表达「破坏/削弱」（替代 destroy / damage / negatively affect）】伤害，损害"
+    ]
+  },
+  {
+    "name": "weaken",
+    "trans": [
+      "【表达「破坏/削弱」（替代 destroy / damage / negatively affect）】削弱"
+    ]
+  },
+  {
+    "name": "hinder",
+    "trans": [
+      "【表达「破坏/削弱」（替代 destroy / damage / negatively affect）】阻碍，妨碍"
+    ]
+  },
+  {
+    "name": "merit",
+    "trans": [
+      "【表达「优势/好处」（替代 advantage / benefit）】优点，价值"
+    ]
+  },
+  {
+    "name": "virtue",
+    "trans": [
+      "【表达「优势/好处」（替代 advantage / benefit）】美德，优点"
+    ]
+  },
+  {
+    "name": "edge",
+    "trans": [
+      "【表达「优势/好处」（替代 advantage / benefit）】优势"
+    ]
+  },
+  {
+    "name": "gain",
+    "trans": [
+      "【表达「优势/好处」（替代 advantage / benefit）】收获，好处"
+    ]
+  },
+  {
+    "name": "upside",
+    "trans": [
+      "【表达「优势/好处」（替代 advantage / benefit）】好处，正面"
+    ]
+  },
+  {
+    "name": "flaw",
+    "trans": [
+      "【表达「缺点/问题」（替代 disadvantage / problem / drawback）】缺陷，瑕疵"
+    ]
+  },
+  {
+    "name": "pitfall",
+    "trans": [
+      "【表达「缺点/问题」（替代 disadvantage / problem / drawback）】陷阱，隐患"
+    ]
+  },
+  {
+    "name": "downside",
+    "trans": [
+      "【表达「缺点/问题」（替代 disadvantage / problem / drawback）】缺点，负面"
+    ]
+  },
+  {
+    "name": "defect",
+    "trans": [
+      "【表达「缺点/问题」（替代 disadvantage / problem / drawback）】缺点，缺陷"
+    ]
+  },
+  {
+    "name": "risk",
+    "trans": [
+      "【表达「缺点/问题」（替代 disadvantage / problem / drawback）】风险"
+    ]
+  },
+  {
+    "name": "notion",
+    "trans": [
+      "【表达「观点/想法」（替代 opinion / idea / viewpoint / perspective）】概念，观念"
+    ]
+  },
+  {
+    "name": "claim",
+    "trans": [
+      "【表达「观点/想法」（替代 opinion / idea / viewpoint / perspective）】主张，声称"
+    ]
+  },
+  {
+    "name": "stance",
+    "trans": [
+      "【表达「观点/想法」（替代 opinion / idea / viewpoint / perspective）】立场，态度"
+    ]
+  },
+  {
+    "name": "view",
+    "trans": [
+      "【表达「观点/想法」（替代 opinion / idea / viewpoint / perspective）】观点，看法"
+    ]
+  },
+  {
+    "name": "belief",
+    "trans": [
+      "【表达「观点/想法」（替代 opinion / idea / viewpoint / perspective）】信念，相信"
+    ]
+  },
+  {
+    "name": "grant",
+    "trans": [
+      "【表达「提供/给予」（替代 give / provide / offer）】授予，给予"
+    ]
+  },
+  {
+    "name": "yield",
+    "trans": [
+      "【表达「提供/给予」（替代 give / provide / offer）】产生，产出"
+    ]
+  },
+  {
+    "name": "equip",
+    "trans": [
+      "【表达「提供/给予」（替代 give / provide / offer）】装备，配备"
+    ]
+  },
+  {
+    "name": "supply",
+    "trans": [
+      "【表达「提供/给予」（替代 give / provide / offer）】提供，供给"
+    ]
+  },
+  {
+    "name": "deliver",
+    "trans": [
+      "【表达「提供/给予」（替代 give / provide / offer）】交付，递送"
+    ]
+  },
+  {
+    "name": "foster",
+    "trans": [
+      "【表达「增加/促进」（替代 increase / improve / promote）】培养，促进"
+    ]
+  },
+  {
+    "name": "boost",
+    "trans": [
+      "【表达「增加/促进」（替代 increase / improve / promote）】提升，促进"
+    ]
+  },
+  {
+    "name": "enhance",
+    "trans": [
+      "【表达「增加/促进」（替代 increase / improve / promote）】增强，提升"
+    ]
+  },
+  {
+    "name": "elevate",
+    "trans": [
+      "【表达「增加/促进」（替代 increase / improve / promote）】提升，抬高"
+    ]
+  },
+  {
+    "name": "nurture",
+    "trans": [
+      "【表达「增加/促进」（替代 increase / improve / promote）】培养，哺育"
+    ]
+  },
+  {
+    "name": "deepen",
+    "trans": [
+      "【表达「增加/促进」（替代 increase / improve / promote）】加深"
+    ]
+  },
+  {
+    "name": "curb",
+    "trans": [
+      "【表达「减少/消除」（替代 reduce / remove / get rid of）】控制，限制"
+    ]
+  },
+  {
+    "name": "offset",
+    "trans": [
+      "【表达「减少/消除」（替代 reduce / remove / get rid of）】抵消，补偿"
+    ]
+  },
+  {
+    "name": "ease",
+    "trans": [
+      "【表达「减少/消除」（替代 reduce / remove / get rid of）】减轻，缓和"
+    ]
+  },
+  {
+    "name": "lessen",
+    "trans": [
+      "【表达「减少/消除」（替代 reduce / remove / get rid of）】减少，减轻"
+    ]
+  },
+  {
+    "name": "trim",
+    "trans": [
+      "【表达「减少/消除」（替代 reduce / remove / get rid of）】削减，修剪"
+    ]
+  },
+  {
+    "name": "trigger",
+    "trans": [
+      "【表达「导致/引起」（替代 cause / lead to / result in）】引发，触发"
+    ]
+  },
+  {
+    "name": "spark",
+    "trans": [
+      "【表达「导致/引起」（替代 cause / lead to / result in）】激发，点燃"
+    ]
+  },
+  {
+    "name": "breed",
+    "trans": [
+      "【表达「导致/引起」（替代 cause / lead to / result in）】滋生，繁殖"
+    ]
+  },
+  {
+    "name": "fuel",
+    "trans": [
+      "【表达「导致/引起」（替代 cause / lead to / result in）】激化，加油"
+    ]
+  },
+  {
+    "name": "prompt",
+    "trans": [
+      "【表达「导致/引起」（替代 cause / lead to / result in）】促使，推动"
+    ]
+  },
+  {
+    "name": "lasting",
+    "trans": [
+      "【表达「持续/长久」（替代 long-lasting / permanent / for a long time）】持久的"
+    ]
+  },
+  {
+    "name": "endure",
+    "trans": [
+      "【表达「持续/长久」（替代 long-lasting / permanent / for a long time）】持久，忍受"
+    ]
+  },
+  {
+    "name": "durable",
+    "trans": [
+      "【表达「持续/长久」（替代 long-lasting / permanent / for a long time）】耐用的"
+    ]
+  },
+  {
+    "name": "ongoing",
+    "trans": [
+      "【表达「持续/长久」（替代 long-lasting / permanent / for a long time）】进行中的，持续的"
+    ]
+  },
+  {
+    "name": "sustained",
+    "trans": [
+      "【表达「持续/长久」（替代 long-lasting / permanent / for a long time）】持续的"
+    ]
+  },
+  {
+    "name": "yet",
+    "trans": [
+      "【表达「尽管/然而」（逻辑词替换，增加多样性）】然而"
+    ]
+  },
+  {
+    "name": "still",
+    "trans": [
+      "【表达「尽管/然而」（逻辑词替换，增加多样性）】仍然，然而"
+    ]
+  },
+  {
+    "name": "nonetheless",
+    "trans": [
+      "【表达「尽管/然而」（逻辑词替换，增加多样性）】尽管如此，然而"
+    ]
+  },
+  {
+    "name": "even so",
+    "trans": [
+      "【表达「尽管/然而」（逻辑词替换，增加多样性）】即便如此"
+    ]
+  },
+  {
+    "name": "granted",
+    "trans": [
+      "【表达「尽管/然而」（逻辑词替换，增加多样性）】诚然，的确"
+    ]
+  },
+  {
+    "name": "hence",
+    "trans": [
+      "【表达「因此/所以」（逻辑词替换，增加多样性）】因此"
+    ]
+  },
+  {
+    "name": "thus",
+    "trans": [
+      "【表达「因此/所以」（逻辑词替换，增加多样性）】因此"
+    ]
+  },
+  {
+    "name": "as a result",
+    "trans": [
+      "【表达「因此/所以」（逻辑词替换，增加多样性）】结果，因此"
+    ]
+  },
+  {
+    "name": "evident",
+    "trans": [
+      "【表达「明显/清楚」（替代 obvious / clear / apparently）】明显的，清楚的"
+    ]
+  },
+  {
+    "name": "plain",
+    "trans": [
+      "【表达「明显/清楚」（替代 obvious / clear / apparently）】明白的，朴素的"
+    ]
+  },
+  {
+    "name": "stark",
+    "trans": [
+      "【表达「明显/清楚」（替代 obvious / clear / apparently）】鲜明的，赤裸裸的"
+    ]
+  },
+  {
+    "name": "vivid",
+    "trans": [
+      "【表达「明显/清楚」（替代 obvious / clear / apparently）】生动的，清晰的"
+    ]
+  },
+  {
+    "name": "diverse",
+    "trans": [
+      "【表达「各种各样」（替代 many / various / a lot of）】多样化的"
+    ]
+  },
+  {
+    "name": "broad",
+    "trans": [
+      "【表达「各种各样」（替代 many / various / a lot of）】宽广的，广泛的"
+    ]
+  },
+  {
+    "name": "varied",
+    "trans": [
+      "【表达「各种各样」（替代 many / various / a lot of）】多变的，各种各样的"
+    ]
+  },
+  {
+    "name": "ample",
+    "trans": [
+      "【表达「各种各样」（替代 many / various / a lot of）】充足的，丰富的"
+    ]
+  },
+  {
+    "name": "vast",
+    "trans": [
+      "【表达「各种各样」（替代 many / various / a lot of）】巨大的，辽阔的"
+    ]
+  },
+  {
+    "name": "thrive",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】繁荣，茁壮成长"
+    ]
+  },
+  {
+    "name": "pursue",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】追求，从事"
+    ]
+  },
+  {
+    "name": "adapt",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】适应，改写"
+    ]
+  },
+  {
+    "name": "retain",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】保留，保持"
+    ]
+  },
+  {
+    "name": "convey",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】传达，表达"
+    ]
+  },
+  {
+    "name": "assess",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】评估，估算"
+    ]
+  },
+  {
+    "name": "impose",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】强加，征税"
+    ]
+  },
+  {
+    "name": "embrace",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】拥抱，接受"
+    ]
+  },
+  {
+    "name": "render",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】致使，呈现"
+    ]
+  },
+  {
+    "name": "delegate",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】委派，代表"
+    ]
+  },
+  {
+    "name": "neglect",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】忽视，忽略"
+    ]
+  },
+  {
+    "name": "displace",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】取代，替代"
+    ]
+  },
+  {
+    "name": "sway",
+    "trans": [
+      "【高频好拼动词（万能工具箱）】摇摆，动摇，影响"
+    ]
+  },
+  {
+    "name": "tangible",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】有形的，切实的"
+    ]
+  },
+  {
+    "name": "feasible",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】可行的"
+    ]
+  },
+  {
+    "name": "finite",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】有限的"
+    ]
+  },
+  {
+    "name": "obsolete",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】淘汰的，废弃的"
+    ]
+  },
+  {
+    "name": "rigid",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】僵硬的，死板的"
+    ]
+  },
+  {
+    "name": "steep",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】陡峭的，急剧的，高昂的"
+    ]
+  },
+  {
+    "name": "mutual",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】相互的，共同的"
+    ]
+  },
+  {
+    "name": "collective",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】集体的，共同的"
+    ]
+  },
+  {
+    "name": "remedy",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】补救，治疗"
+    ]
+  },
+  {
+    "name": "barrier",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】障碍，屏障"
+    ]
+  },
+  {
+    "name": "hub",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】中心，枢纽"
+    ]
+  },
+  {
+    "name": "trait",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】特点，特征"
+    ]
+  },
+  {
+    "name": "tenure",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】任期，终身教职"
+    ]
+  },
+  {
+    "name": "morale",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】士气，斗志"
+    ]
+  },
+  {
+    "name": "equity",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】公平，公正"
+    ]
+  },
+  {
+    "name": "hype",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】大肆宣传，炒作"
+    ]
+  },
+  {
+    "name": "friction",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】摩擦，冲突"
+    ]
+  },
+  {
+    "name": "prosperity",
+    "trans": [
+      "【高频好拼形容词/名词（锦上添花）】繁荣，兴旺"
+    ]
+  },
+  {
+    "name": "campus",
+    "trans": [
+      "【教育与学习】校园"
+    ]
+  },
+  {
+    "name": "tuition",
+    "trans": [
+      "【教育与学习】学费"
+    ]
+  },
+  {
+    "name": "curriculum",
+    "trans": [
+      "【教育与学习】课程"
+    ]
+  },
+  {
+    "name": "literacy",
+    "trans": [
+      "【教育与学习】读写能力，素养"
+    ]
+  },
+  {
+    "name": "diploma",
+    "trans": [
+      "【教育与学习】毕业证书，文凭"
+    ]
+  },
+  {
+    "name": "semester",
+    "trans": [
+      "【教育与学习】学期"
+    ]
+  },
+  {
+    "name": "pupil",
+    "trans": [
+      "【教育与学习】小学生，学生"
+    ]
+  },
+  {
+    "name": "faculty",
+    "trans": [
+      "【教育与学习】教职员工"
+    ]
+  },
+  {
+    "name": "syllabus",
+    "trans": [
+      "【教育与学习】教学大纲"
+    ]
+  },
+  {
+    "name": "peer",
+    "trans": [
+      "【教育与学习】同龄人，同行"
+    ]
+  },
+  {
+    "name": "mentor",
+    "trans": [
+      "【教育与学习】导师"
+    ]
+  },
+  {
+    "name": "grade",
+    "trans": [
+      "【教育与学习】年级，成绩"
+    ]
+  },
+  {
+    "name": "lecture",
+    "trans": [
+      "【教育与学习】讲座，授课"
+    ]
+  },
+  {
+    "name": "dropout",
+    "trans": [
+      "【教育与学习】辍学，辍学者"
+    ]
+  },
+  {
+    "name": "employer",
+    "trans": [
+      "【职场与商业】雇主"
+    ]
+  },
+  {
+    "name": "employee",
+    "trans": [
+      "【职场与商业】员工"
+    ]
+  },
+  {
+    "name": "intern",
+    "trans": [
+      "【职场与商业】实习生"
+    ]
+  },
+  {
+    "name": "recruit",
+    "trans": [
+      "【职场与商业】招聘，招募"
+    ]
+  },
+  {
+    "name": "resume",
+    "trans": [
+      "【职场与商业】简历"
+    ]
+  },
+  {
+    "name": "promotion",
+    "trans": [
+      "【职场与商业】晋升，推广"
+    ]
+  },
+  {
+    "name": "bonus",
+    "trans": [
+      "【职场与商业】奖金，红利"
+    ]
+  },
+  {
+    "name": "revenue",
+    "trans": [
+      "【职场与商业】收入，岁入"
+    ]
+  },
+  {
+    "name": "startup",
+    "trans": [
+      "【职场与商业】初创企业"
+    ]
+  },
+  {
+    "name": "workforce",
+    "trans": [
+      "【职场与商业】劳动力"
+    ]
+  },
+  {
+    "name": "payroll",
+    "trans": [
+      "【职场与商业】工资单，在职人员名单"
+    ]
+  },
+  {
+    "name": "output",
+    "trans": [
+      "【职场与商业】产出，产量"
+    ]
+  },
+  {
+    "name": "deadline",
+    "trans": [
+      "【职场与商业】截止日期"
+    ]
+  },
+  {
+    "name": "policy",
+    "trans": [
+      "【政府与政策】政策，方针"
+    ]
+  },
+  {
+    "name": "subsidy",
+    "trans": [
+      "【政府与政策】补贴，津贴"
+    ]
+  },
+  {
+    "name": "reform",
+    "trans": [
+      "【政府与政策】改革"
+    ]
+  },
+  {
+    "name": "welfare",
+    "trans": [
+      "【政府与政策】福利"
+    ]
+  },
+  {
+    "name": "mandate",
+    "trans": [
+      "【政府与政策】授权，强制执行"
+    ]
+  },
+  {
+    "name": "budget",
+    "trans": [
+      "【政府与政策】预算"
+    ]
+  },
+  {
+    "name": "funding",
+    "trans": [
+      "【政府与政策】资金，拨款"
+    ]
+  },
+  {
+    "name": "regulate",
+    "trans": [
+      "【政府与政策】管制，调整"
+    ]
+  },
+  {
+    "name": "enforce",
+    "trans": [
+      "【政府与政策】实施，执行"
+    ]
+  },
+  {
+    "name": "taxpayer",
+    "trans": [
+      "【政府与政策】纳税人"
+    ]
+  },
+  {
+    "name": "legislation",
+    "trans": [
+      "【政府与政策】立法，法律"
+    ]
+  },
+  {
+    "name": "incentive",
+    "trans": [
+      "【政府与政策】激励，刺激"
+    ]
+  },
+  {
+    "name": "emission",
+    "trans": [
+      "【环境与可持续】排放，排放物"
+    ]
+  },
+  {
+    "name": "habitat",
+    "trans": [
+      "【环境与可持续】栖息地"
+    ]
+  },
+  {
+    "name": "smog",
+    "trans": [
+      "【环境与可持续】雾霾，烟雾"
+    ]
+  },
+  {
+    "name": "carbon",
+    "trans": [
+      "【环境与可持续】碳"
+    ]
+  },
+  {
+    "name": "toxic",
+    "trans": [
+      "【环境与可持续】有毒的"
+    ]
+  },
+  {
+    "name": "renewable",
+    "trans": [
+      "【环境与可持续】可再生的"
+    ]
+  },
+  {
+    "name": "ecosystem",
+    "trans": [
+      "【环境与可持续】生态系统"
+    ]
+  },
+  {
+    "name": "landfill",
+    "trans": [
+      "【环境与可持续】垃圾填埋场"
+    ]
+  },
+  {
+    "name": "drought",
+    "trans": [
+      "【环境与可持续】干旱"
+    ]
+  },
+  {
+    "name": "conservation",
+    "trans": [
+      "【环境与可持续】保护，保存"
+    ]
+  },
+  {
+    "name": "footprint",
+    "trans": [
+      "【环境与可持续】足迹，脚印"
+    ]
+  },
+  {
+    "name": "platform",
+    "trans": [
+      "【科技与数字生活】平台"
+    ]
+  },
+  {
+    "name": "device",
+    "trans": [
+      "【科技与数字生活】设备，装置"
+    ]
+  },
+  {
+    "name": "software",
+    "trans": [
+      "【科技与数字生活】软件"
+    ]
+  },
+  {
+    "name": "hardware",
+    "trans": [
+      "【科技与数字生活】硬件"
+    ]
+  },
+  {
+    "name": "digital",
+    "trans": [
+      "【科技与数字生活】数字的"
+    ]
+  },
+  {
+    "name": "update",
+    "trans": [
+      "【科技与数字生活】更新"
+    ]
+  },
+  {
+    "name": "upgrade",
+    "trans": [
+      "【科技与数字生活】升级"
+    ]
+  },
+  {
+    "name": "database",
+    "trans": [
+      "【科技与数字生活】数据库"
+    ]
+  },
+  {
+    "name": "bandwidth",
+    "trans": [
+      "【科技与数字生活】带宽"
+    ]
+  },
+  {
+    "name": "streaming",
+    "trans": [
+      "【科技与数字生活】流媒体"
+    ]
+  },
+  {
+    "name": "automation",
+    "trans": [
+      "【科技与数字生活】自动化"
+    ]
+  },
+  {
+    "name": "resident",
+    "trans": [
+      "【社区与城市生活】居民"
+    ]
+  },
+  {
+    "name": "urban",
+    "trans": [
+      "【社区与城市生活】城市的"
+    ]
+  },
+  {
+    "name": "rural",
+    "trans": [
+      "【社区与城市生活】农村的"
+    ]
+  },
+  {
+    "name": "suburb",
+    "trans": [
+      "【社区与城市生活】郊区"
+    ]
+  },
+  {
+    "name": "commute",
+    "trans": [
+      "【社区与城市生活】通勤"
+    ]
+  },
+  {
+    "name": "housing",
+    "trans": [
+      "【社区与城市生活】住房"
+    ]
+  },
+  {
+    "name": "transit",
+    "trans": [
+      "【社区与城市生活】公共交通，运输"
+    ]
+  },
+  {
+    "name": "district",
+    "trans": [
+      "【社区与城市生活】地区，行政区"
+    ]
+  },
+  {
+    "name": "landmark",
+    "trans": [
+      "【社区与城市生活】地标"
+    ]
+  },
+  {
+    "name": "infrastructure",
+    "trans": [
+      "【社区与城市生活】基础设施"
+    ]
+  },
+  {
+    "name": "density",
+    "trans": [
+      "【社区与城市生活】密度"
+    ]
+  },
+  {
+    "name": "bond",
+    "trans": [
+      "【家庭与个人成长】纽带，结合"
+    ]
+  },
+  {
+    "name": "sibling",
+    "trans": [
+      "【家庭与个人成长】兄弟姐妹"
+    ]
+  },
+  {
+    "name": "adolescent",
+    "trans": [
+      "【家庭与个人成长】青少年"
+    ]
+  },
+  {
+    "name": "guardian",
+    "trans": [
+      "【家庭与个人成长】监护人"
+    ]
+  },
+  {
+    "name": "household",
+    "trans": [
+      "【家庭与个人成长】家庭，户"
+    ]
+  },
+  {
+    "name": "upbringing",
+    "trans": [
+      "【家庭与个人成长】抚养，教养"
+    ]
+  },
+  {
+    "name": "discipline",
+    "trans": [
+      "【家庭与个人成长】纪律，学科"
+    ]
+  },
+  {
+    "name": "maturity",
+    "trans": [
+      "【家庭与个人成长】成熟"
+    ]
+  },
+  {
+    "name": "leisure",
+    "trans": [
+      "【家庭与个人成长】闲暇，空闲"
+    ]
+  },
+  {
+    "name": "milestone",
+    "trans": [
+      "【家庭与个人成长】里程碑"
+    ]
+  },
+  {
+    "name": "income",
+    "trans": [
+      "【经济与消费】收入"
+    ]
+  },
+  {
+    "name": "profit",
+    "trans": [
+      "【经济与消费】利润"
+    ]
+  },
+  {
+    "name": "budget",
+    "trans": [
+      "【经济与消费】预算"
+    ]
+  },
+  {
+    "name": "inflation",
+    "trans": [
+      "【经济与消费】通货膨胀"
+    ]
+  },
+  {
+    "name": "consumer",
+    "trans": [
+      "【经济与消费】消费者"
+    ]
+  },
+  {
+    "name": "commerce",
+    "trans": [
+      "【经济与消费】商业，贸易"
+    ]
+  },
+  {
+    "name": "surplus",
+    "trans": [
+      "【经济与消费】盈余，过剩"
+    ]
+  },
+  {
+    "name": "poverty",
+    "trans": [
+      "【经济与消费】贫困"
+    ]
+  },
+  {
+    "name": "luxury",
+    "trans": [
+      "【经济与消费】奢侈品"
+    ]
+  },
+  {
+    "name": "recession",
+    "trans": [
+      "【经济与消费】经济衰退"
+    ]
+  },
+  {
+    "name": "livelihood",
+    "trans": [
+      "【经济与消费】生计，谋生手段"
+    ]
+  },
+  {
+    "name": "trend",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】趋势，走向"
+    ]
+  },
+  {
+    "name": "shift",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】转变，轮班"
+    ]
+  },
+  {
+    "name": "gap",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】差距，裂口"
+    ]
+  },
+  {
+    "name": "outcome",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】结果，成果"
+    ]
+  },
+  {
+    "name": "factor",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】因素，要素"
+    ]
+  },
+  {
+    "name": "norm",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】常态，规范"
+    ]
+  },
+  {
+    "name": "insight",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】洞察力，见解"
+    ]
+  },
+  {
+    "name": "scope",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】范围，余地"
+    ]
+  },
+  {
+    "name": "era",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】时代，纪元"
+    ]
+  },
+  {
+    "name": "crisis",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】危机"
+    ]
+  },
+  {
+    "name": "burden",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】负担"
+    ]
+  },
+  {
+    "name": "asset",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】资产，有用的东西"
+    ]
+  },
+  {
+    "name": "stake",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】利益，股份，赌注"
+    ]
+  },
+  {
+    "name": "ratio",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】比例，比率"
+    ]
+  },
+  {
+    "name": "status",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】地位，状态"
+    ]
+  },
+  {
+    "name": "spectrum",
+    "trans": [
+      "【跨话题万能场景名词（任何话题都可能用到）】光谱，范围"
+    ]
+  }
+]

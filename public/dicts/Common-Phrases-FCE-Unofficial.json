@@ -120,7 +120,7 @@
         ]
     },
     {
-        "name": "attract one’s attention",
+        "name": "attract one's attention",
         "trans": [
             "phrase. 吸引注意"
         ]
@@ -150,7 +150,7 @@
         ]
     },
     {
-        "name": "at one’s disposal",
+        "name": "at one's disposal",
         "trans": [
             "phrase. 供某人支配"
         ]
@@ -516,7 +516,7 @@
         ]
     },
     {
-        "name": "broaden one’s horizon",
+        "name": "broaden one's horizon",
         "trans": [
             "phrase. 拓宽视野"
         ]
@@ -582,13 +582,13 @@
         ]
     },
     {
-        "name": "catch one’s attention",
+        "name": "catch one's attention",
         "trans": [
             "phrase. 引起注意"
         ]
     },
     {
-        "name": "catch one’s eyes",
+        "name": "catch one's eyes",
         "trans": [
             "phrase. 吸引某人的眼球"
         ]
@@ -660,7 +660,7 @@
         ]
     },
     {
-        "name": "convert …into",
+        "name": "convert ...into",
         "trans": [
             "phrase. 转换为"
         ]
@@ -894,7 +894,7 @@
         ]
     },
     {
-        "name": "follow one’s example",
+        "name": "follow one's example",
         "trans": [
             "phrase. 以某人为榜样"
         ]
@@ -948,7 +948,7 @@
         ]
     },
     {
-        "name": "get one’s nerves",
+        "name": "get one's nerves",
         "trans": [
             "phrase. 让某人紧张"
         ]
@@ -1512,7 +1512,7 @@
         ]
     },
     {
-        "name": "live up to one’s expectations",
+        "name": "live up to one's expectations",
         "trans": [
             "phrase. 达到某人的期望"
         ]
@@ -1692,7 +1692,7 @@
         ]
     },
     {
-        "name": "make one’s way",
+        "name": "make one's way",
         "trans": [
             "phrase. 前往"
         ]
@@ -1746,7 +1746,7 @@
         ]
     },
     {
-        "name": "make up one’s mind",
+        "name": "make up one's mind",
         "trans": [
             "phrase. 下定决心"
         ]
@@ -1800,9 +1800,9 @@
         ]
     },
     {
-    "name": "no doubt",
-    "trans": [
-        "phrase. 毫无疑问"
+        "name": "no doubt",
+        "trans": [
+            "phrase. 毫无疑问"
         ]
     },
     {
@@ -1848,7 +1848,7 @@
         ]
     },
     {
-        "name": "on one’s way",
+        "name": "on one's way",
         "trans": [
             "phrase. 在路上"
         ]
@@ -2068,7 +2068,8 @@
         "trans": [
             "phrase. 用完某物"
         ]
-    }, {
+    },
+    {
         "name": "run the risk of",
         "trans": [
             "phrase. 冒...的风险"
@@ -2536,7 +2537,6 @@
             "phrase. 就我所知"
         ]
     },
-
     {
         "name": "under normal circumstances",
         "trans": [
