@@ -1,5 +1,5 @@
-import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordRecord, LetterMistakes } from './record'
-import { ChapterRecord, ReviewRecord, WordRecord } from './record'
+import type { IChapterRecord, IReviewRecord, IRevisionDictRecord, IWordProficiency, IWordRecord, LetterMistakes } from './record'
+import { ChapterRecord, ReviewRecord, WordProficiency, WordRecord } from './record'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import type { TypingState } from '@/pages/Typing/store/type'
 import { currentChapterAtom, currentDictIdAtom, isReviewModeAtom } from '@/store'
@@ -12,6 +12,7 @@ class RecordDB extends Dexie {
   wordRecords!: Table<IWordRecord, number>
   chapterRecords!: Table<IChapterRecord, number>
   reviewRecords!: Table<IReviewRecord, number>
+  wordProficiency!: Table<IWordProficiency, number>
 
   revisionDictRecords!: Table<IRevisionDictRecord, number>
   revisionWordRecords!: Table<IWordRecord, number>
@@ -31,6 +32,12 @@ class RecordDB extends Dexie {
       chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
       reviewRecords: '++id,dict,createTime,isFinished',
     })
+    this.version(4).stores({
+      wordRecords: '++id,word,timeStamp,dict,chapter,wrongCount,[dict+chapter]',
+      chapterRecords: '++id,timeStamp,dict,chapter,time,[dict+chapter]',
+      reviewRecords: '++id,dict,createTime,isFinished',
+      wordProficiency: '++id,word,dict,status,rememberedUntil,[word+dict]',
+    })
   }
 }
 
@@ -39,6 +46,7 @@ export const db = new RecordDB()
 db.wordRecords.mapToClass(WordRecord)
 db.chapterRecords.mapToClass(ChapterRecord)
 db.reviewRecords.mapToClass(ReviewRecord)
+db.wordProficiency.mapToClass(WordProficiency)
 
 export function useSaveChapterRecord() {
   const currentChapter = useAtomValue(currentChapterAtom)
@@ -132,4 +140,79 @@ export function useDeleteWordRecord() {
   }, [])
 
   return { deleteWordRecord }
+}
+
+export function useSaveWordProficiency() {
+  const dictID = useAtomValue(currentDictIdAtom)
+
+  const saveWordProficiency = useCallback(
+    async ({ word, status, rememberedDays = 7 }: { word: string; status: 'known' | 'remembered' | 'unknown'; rememberedDays?: number }) => {
+      try {
+        // 计算记忆到期时间（如果状态是"remembered"）
+        const rememberedUntil = status === 'remembered' ? Date.now() + rememberedDays * 24 * 60 * 60 * 1000 : undefined
+
+        // 查找是否已存在该单词的熟练度记录
+        const existingRecord = await db.wordProficiency.where({ word, dict: dictID }).first()
+
+        if (existingRecord) {
+          // 更新现有记录
+          await db.wordProficiency.update(existingRecord.id as number, {
+            status,
+            rememberedUntil,
+            timeStamp: Date.now(),
+          })
+        } else {
+          // 创建新记录
+          const proficiency = new WordProficiency(word, dictID, status, rememberedUntil)
+          await db.wordProficiency.add(proficiency)
+        }
+
+        return true
+      } catch (e) {
+        console.error('保存单词熟练度时出错：', e)
+        return false
+      }
+    },
+    [dictID],
+  )
+
+  return saveWordProficiency
+}
+
+export function useGetWordProficiency() {
+  const dictID = useAtomValue(currentDictIdAtom)
+
+  const getWordProficiency = useCallback(
+    async (word: string) => {
+      try {
+        const record = await db.wordProficiency.where({ word, dict: dictID }).first()
+        return record || { status: 'unknown', rememberedUntil: undefined }
+      } catch (e) {
+        console.error('获取单词熟练度时出错：', e)
+        return { status: 'unknown', rememberedUntil: undefined }
+      }
+    },
+    [dictID],
+  )
+
+  return getWordProficiency
+}
+
+export function useResetWordProficiency() {
+  const dictID = useAtomValue(currentDictIdAtom)
+
+  const resetWordProficiency = useCallback(
+    async (word: string) => {
+      try {
+        const deletedCount = await db.wordProficiency.where({ word, dict: dictID }).delete()
+        return deletedCount > 0
+      } catch (e) {
+        console.error('重置单词熟练度时出错：', e)
+        return false
+      }
+    },
+    [dictID],
+  )
+
+  return resetWordProficiency
 }
