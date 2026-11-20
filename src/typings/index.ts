@@ -19,12 +19,26 @@ export const PRONUNCIATION_PHONETIC_MAP: Pronunciation2PhoneticMap = {
   id: 'id',
 }
 
+/** 语块 / chunk: a common phrase that contains the word, e.g. "cancel a meeting" */
+export type WordChunk = {
+  en: string
+  zh?: string
+}
+
 export type Word = {
   name: string
   trans: string[]
   usphone: string
   ukphone: string
   notation?: string
+  /** 词性 / part of speech, e.g. ["v.", "n."] (optional, falls back to parsing trans or online lookup) */
+  pos?: string[]
+  /** 语块 / chunks (optional, falls back to enrichment overlay or online lookup) */
+  chunks?: WordChunk[]
+  /** 图片地址 / image URL (optional) */
+  image?: string
+  /** 搜图关键词 / keyword used to search an image when no image URL is given */
+  imageQuery?: string
 }
 
 export type WordWithIndex = Word & {

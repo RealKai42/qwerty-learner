@@ -108,6 +108,17 @@ export const wordDictationConfigAtom = atomForConfig('wordDictationConfig', {
   openBy: 'auto' as WordDictationOpenBy,
 })
 
+/** 单词扩展信息（图片 / 词性 / 语块）设置 */
+export const wordExtrasConfigAtom = atomForConfig('wordExtrasConfig', {
+  showImage: true,
+  showPos: true,
+  showChunks: true,
+  /** 本地没有数据时，是否在线查询（Datamuse / dictionaryapi.dev / Openverse / Wikipedia） */
+  onlineLookup: true,
+  /** 可选：Pixabay API key，填了会优先用 Pixabay 搜图，图片质量更好 */
+  pixabayKey: '',
+})
+
 export const dismissStartCardDateAtom = atomWithStorage<Date | null>(DISMISS_START_CARD_DATE_KEY, null)
 
 // Enhanced version promotion popup state
