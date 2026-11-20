@@ -1,5 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
+function containsChinese(text: string): boolean {
+  return /[\u4e00-\u9fff]/.test(text)
+}
+
+function chineseVoice(synth: SpeechSynthesis): SpeechSynthesisVoice | undefined {
+  return synth.getVoices().find((voice) => voice.lang.toLowerCase().replace('_', '-').startsWith('zh'))
+}
+
 export type UseSpeechResult = {
   /**
    * Speak speaking
@@ -58,19 +66,45 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
 
       const start = () => {
         const session = ++sessionRef.current
-        const utterance = new SpeechSynthesisUtterance(text)
-        if (option) Object.assign(utterance, option)
-
-        // end/error from a cancelled utterance belong to an older session.
-        const stop = () => {
+        const speakNow = () => {
           if (sessionRef.current !== session) return
-          setSpeaking(false)
-        }
-        utterance.addEventListener('end', stop)
-        utterance.addEventListener('error', stop)
 
-        setSpeaking(true)
-        synth.speak(utterance)
+          const utterance = new SpeechSynthesisUtterance(text)
+          if (option) Object.assign(utterance, option)
+          if (containsChinese(text)) {
+            utterance.lang = 'zh-CN'
+            const voice = chineseVoice(synth)
+            if (voice) utterance.voice = voice
+          }
+
+          // end/error from a cancelled utterance belong to an older session.
+          const stop = () => {
+            if (sessionRef.current !== session) return
+            setSpeaking(false)
+          }
+          utterance.addEventListener('end', stop)
+          utterance.addEventListener('error', stop)
+
+          setSpeaking(true)
+          synth.speak(utterance)
+        }
+
+        // Chrome fills getVoices() only after voiceschanged. Speaking before
+        // that uses the default voice and often drops Chinese text.
+        if (containsChinese(text) && synth.getVoices().length === 0) {
+          let started = false
+          const once = () => {
+            if (started) return
+            started = true
+            synth.removeEventListener('voiceschanged', once)
+            speakNow()
+          }
+          synth.addEventListener('voiceschanged', once)
+          window.setTimeout(once, 300)
+          return
+        }
+
+        speakNow()
       }
 
       if (abort && (synth.speaking || synth.pending)) {

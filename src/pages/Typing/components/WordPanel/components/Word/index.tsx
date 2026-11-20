@@ -129,10 +129,11 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   )
 
   useEffect(() => {
-    if (wordState.inputWord.length === 0 && state.isTyping) {
-      wordPronunciationIconRef.current?.play && wordPronunciationIconRef.current?.play()
-    }
-  }, [state.isTyping, wordState.inputWord.length, wordPronunciationIconRef.current?.play])
+    if (!state.isTyping) return
+    // Play when practice starts or the word changes. Waiting for an empty
+    // input skips the reading if the first letter arrives first.
+    wordPronunciationIconRef.current?.play()
+  }, [state.isTyping, state.chapterData.index, word.name])
 
   const getLetterVisible = useCallback(
     (index: number) => {
