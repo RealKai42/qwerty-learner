@@ -36,7 +36,11 @@ const bannedKeys = [
   'Home',
 ]
 
+// A typed letter is one printable character. Named keys such as "F5" stay
+// with the browser, so they are not counted as mistakes.
 export const isLegal = (key: string): boolean => {
+  if (typeof key !== 'string' || key.length !== 1) return false
+  if (key < ' ' || key === '\u007f') return false
   if (bannedKeys.includes(key)) return false
   return true
 }
