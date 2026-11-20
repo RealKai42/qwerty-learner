@@ -19,6 +19,12 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
         return
       }
 
+      // 处理删除键
+      if (char === 'Backspace') {
+        updateInput({ type: 'delete', length: 1, event: e })
+        return
+      }
+
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         // Firefox uses these unmodified keys for find-as-you-type.
         if (char === "'" || char === '/') e.preventDefault()

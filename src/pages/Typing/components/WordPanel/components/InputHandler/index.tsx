@@ -36,6 +36,7 @@ export type WordAddAction = {
 export type WordDeleteAction = {
   type: 'delete'
   length: number
+  event?: FormEvent<HTMLTextAreaElement> | KeyboardEvent
 }
 
 // composition api is not ready yet
