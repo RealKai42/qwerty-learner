@@ -7,6 +7,7 @@ import {
   phoneticConfigAtom,
   pronunciationConfigAtom,
   randomConfigAtom,
+  wordDictationConfigAtom,
 } from '@/store'
 import type { InfoPanelType } from '@/typings'
 import type { PronunciationType } from '@/typings'
@@ -119,6 +120,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
 
   const wordLogUploader = useCallback(
     (wordLog: { headword: string; timeStart: string; timeEnd: string; countInput: number; countCorrect: number; countTypo: number }) => {
@@ -127,7 +129,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
         order: typingState.chapterData.index + 1,
         chapter: (currentChapter + 1).toString(),
         wordlist: dictName,
-        modeDictation: !typingState.isWordVisible,
+        modeDictation: wordDictationConfig.isOpen,
         modeDark: isDarkMode,
         modeShuffle: randomConfig.isOpen,
         enabledKeyboardSound: keySoundsConfig.isOpen,
@@ -148,6 +150,7 @@ export function useMixPanelWordLogUploader(typingState: TypingState) {
       pronunciationConfig.isOpen,
       pronunciationConfig.type,
       randomConfig.isOpen,
+      wordDictationConfig.isOpen,
     ],
   )
 
@@ -162,6 +165,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const pronunciationConfig = useAtomValue(pronunciationConfigAtom)
   const randomConfig = useAtomValue(randomConfigAtom)
+  const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
 
   const chapterLogUploader = useCallback(() => {
     const props: ChapterLogUpload = {
@@ -172,7 +176,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
       countCorrect: typingState.chapterData.correctCount,
       chapter: (currentChapter + 1).toString(),
       wordlist: dictName,
-      modeDictation: !typingState.isWordVisible,
+      modeDictation: wordDictationConfig.isOpen,
       modeDark: isDarkMode,
       modeShuffle: randomConfig.isOpen,
       enabledKeyboardSound: keySoundsConfig.isOpen,
@@ -192,6 +196,7 @@ export function useMixPanelChapterLogUploader(typingState: TypingState) {
     pronunciationConfig.isOpen,
     pronunciationConfig.type,
     randomConfig.isOpen,
+    wordDictationConfig.isOpen,
   ])
   return chapterLogUploader
 }
