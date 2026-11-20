@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 export type UseSpeechResult = {
   /**
@@ -26,7 +26,17 @@ export type UseSpeechResult = {
  */
 export default function useSpeech(text: string, option?: Partial<SpeechSynthesisUtterance>): UseSpeechResult {
   const [speaking, setSpeaking] = useState(false)
-  const [utterance, setUtterance] = useState<SpeechSynthesisUtterance | null>(null)
+  const sessionRef = useRef(0)
+  const restartTimerRef = useRef<number | null>(null)
+
+  const invalidate = useCallback((synth: SpeechSynthesis | undefined) => {
+    if (restartTimerRef.current !== null) {
+      window.clearTimeout(restartTimerRef.current)
+      restartTimerRef.current = null
+    }
+    sessionRef.current += 1
+    synth?.cancel()
+  }, [])
 
   useEffect(() => {
     const synth = window.speechSynthesis
@@ -35,48 +45,57 @@ export default function useSpeech(text: string, option?: Partial<SpeechSynthesis
       return
     }
 
-    const newUtterance = new SpeechSynthesisUtterance(text)
-    Object.assign(newUtterance, option)
-    setUtterance(newUtterance)
-
     return () => {
-      synth.cancel()
+      invalidate(synth)
       setSpeaking(false)
     }
-  }, [option, text])
-
-  useEffect(() => {
-    if (utterance) {
-      const onend = () => {
-        setSpeaking(false)
-      }
-      utterance.addEventListener('end', onend)
-      return () => {
-        utterance.removeEventListener('end', onend)
-      }
-    }
-  }, [utterance])
+  }, [invalidate, option, text])
 
   const speak = useCallback(
     (abort = false) => {
-      if (utterance) {
-        const synth = window.speechSynthesis
-        if (abort && synth.speaking) {
-          synth.cancel()
+      const synth = window.speechSynthesis
+      if (!synth || typeof SpeechSynthesisUtterance === 'undefined') return
+
+      const start = () => {
+        const session = ++sessionRef.current
+        const utterance = new SpeechSynthesisUtterance(text)
+        if (option) Object.assign(utterance, option)
+
+        // end/error from a cancelled utterance belong to an older session.
+        const stop = () => {
+          if (sessionRef.current !== session) return
+          setSpeaking(false)
         }
+        utterance.addEventListener('end', stop)
+        utterance.addEventListener('error', stop)
+
         setSpeaking(true)
         synth.speak(utterance)
       }
+
+      if (abort && (synth.speaking || synth.pending)) {
+        // cancel() does not emit end. Some browsers also drop a speak()
+        // issued in the same turn, so restart on the next turn.
+        invalidate(synth)
+        setSpeaking(true)
+        restartTimerRef.current = window.setTimeout(() => {
+          restartTimerRef.current = null
+          start()
+        }, 0)
+        return
+      }
+
+      start()
     },
-    [utterance],
+    [invalidate, option, text],
   )
 
   const cancel = useCallback(() => {
     const synth = window.speechSynthesis
-    if (speaking) {
-      synth.cancel()
-    }
-  }, [speaking])
+    if (!synth) return
+    invalidate(synth)
+    setSpeaking(false)
+  }, [invalidate])
 
   return {
     speak,
