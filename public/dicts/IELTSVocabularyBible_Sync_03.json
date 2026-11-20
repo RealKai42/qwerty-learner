@@ -1,0 +1,1346 @@
+[
+  {
+    "name": "biologist",
+    "trans": [
+      "n. 生物学家"
+    ],
+    "usphone": "baɪˈblɒdʒɪst",
+    "ukphone": "baɪˈblɒdʒɪst"
+  },
+  {
+    "name": "zoologist",
+    "trans": [
+      "n. 动物学家"
+    ],
+    "usphone": "zuːˈblɒdʒɪst",
+    "ukphone": "zuːˈblɒdʒɪst"
+  },
+  {
+    "name": "ecologist",
+    "trans": [
+      "n. 生态学家"
+    ],
+    "usphone": "iˈkɒlədʒɪst",
+    "ukphone": "iˈkɒlədʒɪst"
+  },
+  {
+    "name": "botanist",
+    "trans": [
+      "n. 植物学家"
+    ],
+    "usphone": "ˈbɒtənɪst",
+    "ukphone": "ˈbɒtənɪst"
+  },
+  {
+    "name": "mammal",
+    "trans": [
+      "n. 哺乳动物"
+    ],
+    "usphone": "ˈmæməl",
+    "ukphone": "ˈmæməl"
+  },
+  {
+    "name": "primate",
+    "trans": [
+      "n. 灵长目动物"
+    ],
+    "usphone": "ˈpraɪmeɪt",
+    "ukphone": "ˈpraɪmeɪt"
+  },
+  {
+    "name": "vertebrate",
+    "trans": [
+      "n. 脊椎动物"
+    ],
+    "usphone": "ˈvɜːtɪbrət",
+    "ukphone": "ˈvɜːtɪbrət"
+  },
+  {
+    "name": "reptile",
+    "trans": [
+      "n. 爬行动物"
+    ],
+    "usphone": "ˈreptaɪl",
+    "ukphone": "ˈreptaɪl"
+  },
+  {
+    "name": "amphibian",
+    "trans": [
+      "n. 两栖动物；水陆两用车"
+    ],
+    "usphone": "æmˈfɪbiən",
+    "ukphone": "æmˈfɪbiən"
+  },
+  {
+    "name": "carnivore",
+    "trans": [
+      "n. 食肉动物"
+    ],
+    "usphone": "ˈkɑːnɪvɔː",
+    "ukphone": "ˈkɑːnɪvɔː"
+  },
+  {
+    "name": "herbivore",
+    "trans": [
+      "n. 食草动物"
+    ],
+    "usphone": "ˈhɜːbɪvɔː",
+    "ukphone": "ˈhɜːbɪvɔː"
+  },
+  {
+    "name": "creature",
+    "trans": [
+      "n. 生物，动物"
+    ],
+    "usphone": "ˈkriːtʃə",
+    "ukphone": "ˈkriːtʃə"
+  },
+  {
+    "name": "wildlife",
+    "trans": [
+      "n. 野生动物；野生生物"
+    ],
+    "usphone": "ˈwaɪldlaɪf",
+    "ukphone": "ˈwaɪldlaɪf"
+  },
+  {
+    "name": "fauna",
+    "trans": [
+      "n. （尤指某一地区的）动物群"
+    ],
+    "usphone": "ˈfɔːnə",
+    "ukphone": "ˈfɔːnə"
+  },
+  {
+    "name": "flora",
+    "trans": [
+      "n. （尤指某一地区的）植物群"
+    ],
+    "usphone": "ˈflɔːrə",
+    "ukphone": "ˈflɔːrə"
+  },
+  {
+    "name": "species",
+    "trans": [
+      "n. （单复数同形）种，物种"
+    ],
+    "usphone": "ˈspiːʃiːz",
+    "ukphone": "ˈspiːʃiːz"
+  },
+  {
+    "name": "flock",
+    "trans": [
+      "n. （羊或鸟）群 v.聚集"
+    ],
+    "usphone": "flɒk",
+    "ukphone": "flɒk"
+  },
+  {
+    "name": "herd",
+    "trans": [
+      "n. 兽群，畜群"
+    ],
+    "usphone": "hɜːd",
+    "ukphone": "hɜːd"
+  },
+  {
+    "name": "swarm",
+    "trans": [
+      "n. （蜜蜂等昆虫的）一大群；（迅速移动的）人群"
+    ],
+    "usphone": "swɔːm",
+    "ukphone": "swɔːm"
+  },
+  {
+    "name": "throng",
+    "trans": [
+      "n. 人群，一大群人 v.群集"
+    ],
+    "usphone": "θrɒŋ",
+    "ukphone": "θrɒŋ"
+  },
+  {
+    "name": "crowd",
+    "trans": [
+      "n. 人群；观众；一伙人"
+    ],
+    "usphone": "kraʊd",
+    "ukphone": "kraʊd"
+  },
+  {
+    "name": "beast",
+    "trans": [
+      "n. 兽，野兽；凶残的人，畜生"
+    ],
+    "usphone": "biːst",
+    "ukphone": "biːst"
+  },
+  {
+    "name": "brute",
+    "trans": [
+      "n. 粗野的人，残忍的人"
+    ],
+    "usphone": "bruːt",
+    "ukphone": "bruːt"
+  },
+  {
+    "name": "cruel",
+    "trans": [
+      "adj. 残酷的，残忍的，残暴的"
+    ],
+    "usphone": "ˈkruːəl",
+    "ukphone": "ˈkruːəl"
+  },
+  {
+    "name": "originate",
+    "trans": [
+      "v. 发源，来自；创始"
+    ],
+    "usphone": "əˈrɪdʒɪneɪt",
+    "ukphone": "əˈrɪdʒɪneɪt"
+  },
+  {
+    "name": "derive",
+    "trans": [
+      "v. 得到；（使）源自"
+    ],
+    "usphone": "dɪˈraɪv",
+    "ukphone": "dɪˈraɪv"
+  },
+  {
+    "name": "stem",
+    "trans": [
+      "v. 起源于，来自"
+    ],
+    "usphone": "stem",
+    "ukphone": "stem"
+  },
+  {
+    "name": "ancestor",
+    "trans": [
+      "n. 祖宗，祖先"
+    ],
+    "usphone": "ˈænsəstə",
+    "ukphone": "ˈænsəstə"
+  },
+  {
+    "name": "descendant",
+    "trans": [
+      "n. 后裔，后代"
+    ],
+    "usphone": "dɪˈsɛndənt",
+    "ukphone": "dɪˈsɛndənt"
+  },
+  {
+    "name": "offspring",
+    "trans": [
+      "n. （单复数同形）后代，子孙；产物"
+    ],
+    "usphone": "ˈɒfˌsprɪŋ",
+    "ukphone": "ˈɒfˌsprɪŋ"
+  },
+  {
+    "name": "subgroup",
+    "trans": [
+      "n. 子群"
+    ],
+    "usphone": "ˈsʌbɡruːp",
+    "ukphone": "ˈsʌbɡruːp"
+  },
+  {
+    "name": "feed",
+    "trans": [
+      "v. 供养；喂，饲养；进食"
+    ],
+    "usphone": "fiːd",
+    "ukphone": "fiːd"
+  },
+  {
+    "name": "breed",
+    "trans": [
+      "v. 饲养；繁殖 n.品种"
+    ],
+    "usphone": "briːd",
+    "ukphone": "briːd"
+  },
+  {
+    "name": "interbreed",
+    "trans": [
+      "v. （使）品种间杂交，（使）生混种"
+    ],
+    "usphone": "ˌɪntəˈbriːd",
+    "ukphone": "ˌɪntəˈbriːd"
+  },
+  {
+    "name": "hybridise",
+    "trans": [
+      "v. （使）杂交"
+    ],
+    "usphone": "ˈhaɪbrɪdaɪz",
+    "ukphone": "ˈhaɪbrɪdaɪz"
+  },
+  {
+    "name": "proliferate",
+    "trans": [
+      "v. 迅速增殖；剧增"
+    ],
+    "usphone": "prəˈlɪfəreɪt",
+    "ukphone": "prəˈlɪfəreɪt"
+  },
+  {
+    "name": "sterility",
+    "trans": [
+      "n. 不生育"
+    ],
+    "usphone": "stəˈrɪlɪti",
+    "ukphone": "stəˈrɪlɪti"
+  },
+  {
+    "name": "mate",
+    "trans": [
+      "v. 交配 n.配偶"
+    ],
+    "usphone": "meɪt",
+    "ukphone": "meɪt"
+  },
+  {
+    "name": "courtship",
+    "trans": [
+      "n. 求偶"
+    ],
+    "usphone": "ˈkɔːtʃɪp",
+    "ukphone": "ˈkɔːtʃɪp"
+  },
+  {
+    "name": "lay",
+    "trans": [
+      "v. 产（卵）；放置；铺设"
+    ],
+    "usphone": "leɪ",
+    "ukphone": "leɪ"
+  },
+  {
+    "name": "hatch",
+    "trans": [
+      "v./n. 孵化"
+    ],
+    "usphone": "hætʃ",
+    "ukphone": "hætʃ"
+  },
+  {
+    "name": "fin",
+    "trans": [
+      "n. 鳍"
+    ],
+    "usphone": "fɪn",
+    "ukphone": "fɪn"
+  },
+  {
+    "name": "wing",
+    "trans": [
+      "n. 翼，翅膀"
+    ],
+    "usphone": "wɪŋ",
+    "ukphone": "wɪŋ"
+  },
+  {
+    "name": "brood",
+    "trans": [
+      "n. 一窝幼鸟 v.孵（蛋）"
+    ],
+    "usphone": "bruːd",
+    "ukphone": "bruːd"
+  },
+  {
+    "name": "plume",
+    "trans": [
+      "n. 羽毛"
+    ],
+    "usphone": "pluːm",
+    "ukphone": "pluːm"
+  },
+  {
+    "name": "spawn",
+    "trans": [
+      "n. （鱼、蛙等的）卵 v.产卵；引起"
+    ],
+    "usphone": "spɔːn",
+    "ukphone": "spɔːn"
+  },
+  {
+    "name": "feather",
+    "trans": [
+      "n. 羽毛，翎毛"
+    ],
+    "usphone": "ˈfeðə",
+    "ukphone": "ˈfeðə"
+  },
+  {
+    "name": "fur",
+    "trans": [
+      "n. （动物的）软毛；（用于制衣等的）毛皮"
+    ],
+    "usphone": "fɜː",
+    "ukphone": "fɜː"
+  },
+  {
+    "name": "mature",
+    "trans": [
+      "adj. 成熟的 v.成熟"
+    ],
+    "usphone": "məˈtjʊə",
+    "ukphone": "məˈtjʊə"
+  },
+  {
+    "name": "bristle",
+    "trans": [
+      "n. 鬃毛；（刷子的）毛"
+    ],
+    "usphone": "ˈbrɪsəl",
+    "ukphone": "ˈbrɪsəl"
+  },
+  {
+    "name": "skin",
+    "trans": [
+      "n. 皮肤；外皮"
+    ],
+    "usphone": "skɪn",
+    "ukphone": "skɪn"
+  },
+  {
+    "name": "claw",
+    "trans": [
+      "n. 爪；钳；螯；爪状物"
+    ],
+    "usphone": "klɔː",
+    "ukphone": "klɔː"
+  },
+  {
+    "name": "curl",
+    "trans": [
+      "n. 鬃发；卷曲；螺旋状物 v.（使）卷曲"
+    ],
+    "usphone": "kɜːl",
+    "ukphone": "kɜːl"
+  },
+  {
+    "name": "paw",
+    "trans": [
+      "n. （动物的）脚掌，爪子"
+    ],
+    "usphone": "pɔː",
+    "ukphone": "pɔː"
+  },
+  {
+    "name": "beak",
+    "trans": [
+      "n. 鸟嘴，喙"
+    ],
+    "usphone": "biːk",
+    "ukphone": "biːk"
+  },
+  {
+    "name": "insect",
+    "trans": [
+      "n. 昆虫"
+    ],
+    "usphone": "ˈɪnsekt",
+    "ukphone": "ˈɪnsekt"
+  },
+  {
+    "name": "worm",
+    "trans": [
+      "n. 蠕虫"
+    ],
+    "usphone": "wɜːm",
+    "ukphone": "wɜːm"
+  },
+  {
+    "name": "pest",
+    "trans": [
+      "n. 害虫；有害动物"
+    ],
+    "usphone": "pest",
+    "ukphone": "pest"
+  },
+  {
+    "name": "parasite",
+    "trans": [
+      "n. 寄生虫"
+    ],
+    "usphone": "ˈpærəsaɪt",
+    "ukphone": "ˈpærəsaɪt"
+  },
+  {
+    "name": "tortoise",
+    "trans": [
+      "n. 龟，陆龟"
+    ],
+    "usphone": "ˈtɔːtəs",
+    "ukphone": "ˈtɔːtəs"
+  },
+  {
+    "name": "turtle",
+    "trans": [
+      "n. 海龟"
+    ],
+    "usphone": "ˈtɜːtl",
+    "ukphone": "ˈtɜːtl"
+  },
+  {
+    "name": "whale",
+    "trans": [
+      "n. 鲸鱼"
+    ],
+    "usphone": "weɪl",
+    "ukphone": "weɪl"
+  },
+  {
+    "name": "spider",
+    "trans": [
+      "n. 蜘蛛"
+    ],
+    "usphone": "ˈspaɪdə",
+    "ukphone": "ˈspaɪdə"
+  },
+  {
+    "name": "butterfly",
+    "trans": [
+      "n. 蝴蝶"
+    ],
+    "usphone": "ˈbʌtəflaɪ",
+    "ukphone": "ˈbʌtəflaɪ"
+  },
+  {
+    "name": "mosquito",
+    "trans": [
+      "n. 蚊子"
+    ],
+    "usphone": "məˈskiːtəʊ",
+    "ukphone": "məˈskiːtəʊ"
+  },
+  {
+    "name": "cricket",
+    "trans": [
+      "n. 蟋蟀"
+    ],
+    "usphone": "ˈkrɪkɪt",
+    "ukphone": "ˈkrɪkɪt"
+  },
+  {
+    "name": "penguin",
+    "trans": [
+      "n. 企鹅"
+    ],
+    "usphone": "ˈpeŋɡwɪn",
+    "ukphone": "ˈpeŋɡwɪn"
+  },
+  {
+    "name": "seal",
+    "trans": [
+      "n. 海豹；封条；图章 v.密封"
+    ],
+    "usphone": "siːl",
+    "ukphone": "siːl"
+  },
+  {
+    "name": "kangaroo",
+    "trans": [
+      "n. 袋鼠"
+    ],
+    "usphone": "ˌkæŋɡəˈruː",
+    "ukphone": "ˌkæŋɡəˈruː"
+  },
+  {
+    "name": "camel",
+    "trans": [
+      "n. 骆驼"
+    ],
+    "usphone": "ˈkæməl",
+    "ukphone": "ˈkæməl"
+  },
+  {
+    "name": "panda",
+    "trans": [
+      "n. 熊猫"
+    ],
+    "usphone": "ˈpændə",
+    "ukphone": "ˈpændə"
+  },
+  {
+    "name": "elephant",
+    "trans": [
+      "n. 象"
+    ],
+    "usphone": "ˈelɪfənt",
+    "ukphone": "ˈelɪfənt"
+  },
+  {
+    "name": "trunk",
+    "trans": [
+      "n. 象鼻"
+    ],
+    "usphone": "trʌŋk",
+    "ukphone": "trʌŋk"
+  },
+  {
+    "name": "ivory",
+    "trans": [
+      "n. 象牙"
+    ],
+    "usphone": "ˈaɪvəri",
+    "ukphone": "ˈaɪvəri"
+  },
+  {
+    "name": "horn",
+    "trans": [
+      "n. （牛、羊等动物的）角；（乐器）号"
+    ],
+    "usphone": "hɔːn",
+    "ukphone": "hɔːn"
+  },
+  {
+    "name": "bear",
+    "trans": [
+      "n. 熊"
+    ],
+    "usphone": "beə",
+    "ukphone": "beə"
+  },
+  {
+    "name": "wolf",
+    "trans": [
+      "n. 狼"
+    ],
+    "usphone": "wʊlf",
+    "ukphone": "wʊlf"
+  },
+  {
+    "name": "dragon",
+    "trans": [
+      "n. 龙；悍妇"
+    ],
+    "usphone": "ˈdræɡən",
+    "ukphone": "ˈdræɡən"
+  },
+  {
+    "name": "fox",
+    "trans": [
+      "n. 狐狸；狡猾的人"
+    ],
+    "usphone": "fɒks",
+    "ukphone": "fɒks"
+  },
+  {
+    "name": "cub",
+    "trans": [
+      "n. 幼兽"
+    ],
+    "usphone": "kʌb",
+    "ukphone": "kʌb"
+  },
+  {
+    "name": "calf",
+    "trans": [
+      "n. 幼兽；小牛"
+    ],
+    "usphone": "kɑːf",
+    "ukphone": "kɑːf"
+  },
+  {
+    "name": "pup",
+    "trans": [
+      "n. 幼小动物"
+    ],
+    "usphone": "pʌp",
+    "ukphone": "pʌp"
+  },
+  {
+    "name": "lamb",
+    "trans": [
+      "n. 小羊，羔羊"
+    ],
+    "usphone": "læm",
+    "ukphone": "læm"
+  },
+  {
+    "name": "cattle",
+    "trans": [
+      "n. 牛"
+    ],
+    "usphone": "ˈkætl",
+    "ukphone": "ˈkætl"
+  },
+  {
+    "name": "ox",
+    "trans": [
+      "n. （阉割的）公牛"
+    ],
+    "usphone": "ɒks",
+    "ukphone": "ɒks"
+  },
+  {
+    "name": "bull",
+    "trans": [
+      "n. 公牛"
+    ],
+    "usphone": "bʊl",
+    "ukphone": "bʊl"
+  },
+  {
+    "name": "buffalo",
+    "trans": [
+      "n. 水牛；野牛"
+    ],
+    "usphone": "ˈbʌfələʊ",
+    "ukphone": "ˈbʌfələʊ"
+  },
+  {
+    "name": "horse",
+    "trans": [
+      "n. 马"
+    ],
+    "usphone": "hɔːs",
+    "ukphone": "hɔːs"
+  },
+  {
+    "name": "zebra",
+    "trans": [
+      "n. 斑马"
+    ],
+    "usphone": "ˈziːbrə",
+    "ukphone": "ˈziːbrə"
+  },
+  {
+    "name": "donkey",
+    "trans": [
+      "n. 驴；傻瓜"
+    ],
+    "usphone": "ˈdɒŋki",
+    "ukphone": "ˈdɒŋki"
+  },
+  {
+    "name": "saddle",
+    "trans": [
+      "n. 鞍，马鞍；车座"
+    ],
+    "usphone": "ˈsædl",
+    "ukphone": "ˈsædl"
+  },
+  {
+    "name": "harness",
+    "trans": [
+      "n. 马具，挽具"
+    ],
+    "usphone": "ˈhɑːnɪs",
+    "ukphone": "ˈhɑːnɪs"
+  },
+  {
+    "name": "falcon",
+    "trans": [
+      "n. 隼，猎鹰"
+    ],
+    "usphone": "ˈfɔːlkən",
+    "ukphone": "ˈfɔːlkən"
+  },
+  {
+    "name": "hawk",
+    "trans": [
+      "n. 鹰，隼"
+    ],
+    "usphone": "hɔːk",
+    "ukphone": "hɔːk"
+  },
+  {
+    "name": "eagle",
+    "trans": [
+      "n. 雕"
+    ],
+    "usphone": "ˈiːɡl",
+    "ukphone": "ˈiːɡl"
+  },
+  {
+    "name": "owl",
+    "trans": [
+      "n. 猫头鹰"
+    ],
+    "usphone": "aʊl",
+    "ukphone": "aʊl"
+  },
+  {
+    "name": "swallow",
+    "trans": [
+      "n. 燕子"
+    ],
+    "usphone": "ˈswɒləʊ",
+    "ukphone": "ˈswɒləʊ"
+  },
+  {
+    "name": "sparrow",
+    "trans": [
+      "n. 麻雀"
+    ],
+    "usphone": "ˈspærəʊ",
+    "ukphone": "ˈspærəʊ"
+  },
+  {
+    "name": "pigeon",
+    "trans": [
+      "n. 鸽子"
+    ],
+    "usphone": "ˈpɪdʒɪn",
+    "ukphone": "ˈpɪdʒɪn"
+  },
+  {
+    "name": "crow",
+    "trans": [
+      "n. 乌鸦"
+    ],
+    "usphone": "krəʊ",
+    "ukphone": "krəʊ"
+  },
+  {
+    "name": "swan",
+    "trans": [
+      "n. 天鹅"
+    ],
+    "usphone": "swɒn",
+    "ukphone": "swɒn"
+  },
+  {
+    "name": "goose",
+    "trans": [
+      "n. 鹅；鹅肉"
+    ],
+    "usphone": "ɡuːs",
+    "ukphone": "ɡuːs"
+  },
+  {
+    "name": "cock",
+    "trans": [
+      "n. 雄禽；公鸡"
+    ],
+    "usphone": "kɒk",
+    "ukphone": "kɒk"
+  },
+  {
+    "name": "mouse",
+    "trans": [
+      "n. 老鼠"
+    ],
+    "usphone": "maʊs",
+    "ukphone": "maʊs"
+  },
+  {
+    "name": "rat",
+    "trans": [
+      "n. 老鼠；卑鄙的人"
+    ],
+    "usphone": "ræt",
+    "ukphone": "ræt"
+  },
+  {
+    "name": "squirrel",
+    "trans": [
+      "n. 松鼠"
+    ],
+    "usphone": "ˈskwɪrəl",
+    "ukphone": "ˈskwɪrəl"
+  },
+  {
+    "name": "hare",
+    "trans": [
+      "n. 野兔"
+    ],
+    "usphone": "heə",
+    "ukphone": "heə"
+  },
+  {
+    "name": "frog",
+    "trans": [
+      "n. 蛙"
+    ],
+    "usphone": "frɒɡ",
+    "ukphone": "frɒɡ"
+  },
+  {
+    "name": "behaviour",
+    "trans": [
+      "n. 行为；活动方式"
+    ],
+    "usphone": "bɪˈheɪvjə",
+    "ukphone": "bɪˈheɪvjə"
+  },
+  {
+    "name": "bite",
+    "trans": [
+      "v./n. 咬；（昆虫）叮；吞饵"
+    ],
+    "usphone": "baɪt",
+    "ukphone": "baɪt"
+  },
+  {
+    "name": "sting",
+    "trans": [
+      "v. 刺，叮；（使）感觉刺痛 n.刺，螫针"
+    ],
+    "usphone": "stɪŋ",
+    "ukphone": "stɪŋ"
+  },
+  {
+    "name": "bark",
+    "trans": [
+      "v. （狗等）吠；大声嚷 n.树皮"
+    ],
+    "usphone": "bɑːk",
+    "ukphone": "bɑːk"
+  },
+  {
+    "name": "roar",
+    "trans": [
+      "n./v. 吼叫，咆哮"
+    ],
+    "usphone": "rɔː",
+    "ukphone": "rɔː"
+  },
+  {
+    "name": "rub",
+    "trans": [
+      "v. 擦；摩擦 n.困难，障碍"
+    ],
+    "usphone": "rʌb",
+    "ukphone": "rʌb"
+  },
+  {
+    "name": "creep",
+    "trans": [
+      "v. 爬行；悄悄地缓慢行进"
+    ],
+    "usphone": "kriːp",
+    "ukphone": "kriːp"
+  },
+  {
+    "name": "crawl",
+    "trans": [
+      "v. 爬，爬行；卑躬屈膝"
+    ],
+    "usphone": "krɔːl",
+    "ukphone": "krɔːl"
+  },
+  {
+    "name": "habitat",
+    "trans": [
+      "n. （动植物的）生活环境，栖息地"
+    ],
+    "usphone": "ˈhæbɪtæt",
+    "ukphone": "ˈhæbɪtæt"
+  },
+  {
+    "name": "nest",
+    "trans": [
+      "n. 巢，窝，穴"
+    ],
+    "usphone": "nest",
+    "ukphone": "nest"
+  },
+  {
+    "name": "hive",
+    "trans": [
+      "n. 蜂房；繁忙的场所 v.（使）入蜂箱"
+    ],
+    "usphone": "haɪv",
+    "ukphone": "haɪv"
+  },
+  {
+    "name": "cell",
+    "trans": [
+      "n. 蜂房巢室；细胞；单人牢房"
+    ],
+    "usphone": "sel",
+    "ukphone": "sel"
+  },
+  {
+    "name": "cage",
+    "trans": [
+      "n. 笼子"
+    ],
+    "usphone": "keɪdʒ",
+    "ukphone": "keɪdʒ"
+  },
+  {
+    "name": "stable",
+    "trans": [
+      "n. 马厩；牛棚 adj.稳定的"
+    ],
+    "usphone": "ˈsteɪbəl",
+    "ukphone": "ˈsteɪbəl"
+  },
+  {
+    "name": "barn",
+    "trans": [
+      "n. 谷仓；牲口棚"
+    ],
+    "usphone": "bɑːn",
+    "ukphone": "bɑːn"
+  },
+  {
+    "name": "hedge",
+    "trans": [
+      "n. 树篱；障碍物"
+    ],
+    "usphone": "hedʒ",
+    "ukphone": "hedʒ"
+  },
+  {
+    "name": "barrier",
+    "trans": [
+      "n. 障碍；屏障"
+    ],
+    "usphone": "ˈbæriə",
+    "ukphone": "ˈbæriə"
+  },
+  {
+    "name": "bar",
+    "trans": [
+      "n. 栅，栏杆；条，长块"
+    ],
+    "usphone": "bɑː",
+    "ukphone": "bɑː"
+  },
+  {
+    "name": "anatomy",
+    "trans": [
+      "n. 解剖学"
+    ],
+    "usphone": "əˈnætəmi",
+    "ukphone": "əˈnætəmi"
+  },
+  {
+    "name": "epidemic",
+    "trans": [
+      "n. 流行病；（坏事的）盛行 adj.流行性的"
+    ],
+    "usphone": "ˌepɪˈdemɪk",
+    "ukphone": "ˌepɪˈdemɪk"
+  },
+  {
+    "name": "gene",
+    "trans": [
+      "n. 基因"
+    ],
+    "usphone": "dʒiːn",
+    "ukphone": "dʒiːn"
+  },
+  {
+    "name": "germ",
+    "trans": [
+      "n. 微生物，细菌"
+    ],
+    "usphone": "dʒɜːm",
+    "ukphone": "dʒɜːm"
+  },
+  {
+    "name": "bacteria",
+    "trans": [
+      "n. （bacterium的复数）细菌"
+    ],
+    "usphone": "bækˈtɪəriə",
+    "ukphone": "bækˈtɪəriə"
+  },
+  {
+    "name": "virus",
+    "trans": [
+      "n. 病毒"
+    ],
+    "usphone": "ˈvaɪrəs",
+    "ukphone": "ˈvaɪrəs"
+  },
+  {
+    "name": "microbe",
+    "trans": [
+      "n. 微生物"
+    ],
+    "usphone": "ˈmaɪkrəʊb",
+    "ukphone": "ˈmaɪkrəʊb"
+  },
+  {
+    "name": "metabolism",
+    "trans": [
+      "n. 新陈代谢"
+    ],
+    "usphone": "məˈtæbəlɪzəm",
+    "ukphone": "məˈtæbəlɪzəm"
+  },
+  {
+    "name": "protein",
+    "trans": [
+      "n. 蛋白质"
+    ],
+    "usphone": "ˈprəʊtiːn",
+    "ukphone": "ˈprəʊtiːn"
+  },
+  {
+    "name": "vitamin",
+    "trans": [
+      "n. 维生素"
+    ],
+    "usphone": "ˈvɪtəmɪn",
+    "ukphone": "ˈvɪtəmɪn"
+  },
+  {
+    "name": "intelligence",
+    "trans": [
+      "n. 智慧，智力；情报"
+    ],
+    "usphone": "ɪnˈtelɪdʒəns",
+    "ukphone": "ɪnˈtelɪdʒəns"
+  },
+  {
+    "name": "functional",
+    "trans": [
+      "adj. 功能的；起作用的"
+    ],
+    "usphone": "ˈfʌŋkʃənəl",
+    "ukphone": "ˈfʌŋkʃənəl"
+  },
+  {
+    "name": "secrete",
+    "trans": [
+      "v. 分泌"
+    ],
+    "usphone": "sɪˈkriːt",
+    "ukphone": "sɪˈkriːt"
+  },
+  {
+    "name": "excrete",
+    "trans": [
+      "v. 排泄；分泌"
+    ],
+    "usphone": "ɪkˈskriːt",
+    "ukphone": "ɪkˈskriːt"
+  },
+  {
+    "name": "devour",
+    "trans": [
+      "v. 吞食，狼吞虎咽地吃"
+    ],
+    "usphone": "dɪˈvaʊə",
+    "ukphone": "dɪˈvaʊə"
+  },
+  {
+    "name": "instinct",
+    "trans": [
+      "n. 本能，天性；直觉"
+    ],
+    "usphone": "ˈɪnstɪŋkt",
+    "ukphone": "ˈɪnstɪŋkt"
+  },
+  {
+    "name": "intuitive",
+    "trans": [
+      "adj. 直觉的"
+    ],
+    "usphone": "ɪnˈtjuːɪtɪv",
+    "ukphone": "ɪnˈtjuːɪtɪv"
+  },
+  {
+    "name": "potential",
+    "trans": [
+      "n. 潜力 adj.潜在的"
+    ],
+    "usphone": "pəˈtenʃəl",
+    "ukphone": "pəˈtenʃəl"
+  },
+  {
+    "name": "sensitive",
+    "trans": [
+      "adj. 灵敏的；过敏的；易担忧的"
+    ],
+    "usphone": "ˈsensɪtɪv",
+    "ukphone": "ˈsensɪtɪv"
+  },
+  {
+    "name": "flexible",
+    "trans": [
+      "adj. 可弯曲的；灵活的"
+    ],
+    "usphone": "ˈfleksəbəl",
+    "ukphone": "ˈfleksəbəl"
+  },
+  {
+    "name": "acoustic",
+    "trans": [
+      "adj. 听觉的；声音的"
+    ],
+    "usphone": "əˈkuːstɪk",
+    "ukphone": "əˈkuːstɪk"
+  },
+  {
+    "name": "optical",
+    "trans": [
+      "adj. 视觉的；光学的"
+    ],
+    "usphone": "ˈɒptɪkəl",
+    "ukphone": "ˈɒptɪkəl"
+  },
+  {
+    "name": "nocturnal",
+    "trans": [
+      "adj. 夜间发生的；夜间活动的"
+    ],
+    "usphone": "nɒkˈtɜːnəl",
+    "ukphone": "nɒkˈtɜːnəl"
+  },
+  {
+    "name": "dormant",
+    "trans": [
+      "adj. 睡着的；休眠的；冬眠的"
+    ],
+    "usphone": "ˈdɔːmənt",
+    "ukphone": "ˈdɔːmənt"
+  },
+  {
+    "name": "hibernation",
+    "trans": [
+      "n. 冬眠"
+    ],
+    "usphone": "ˌhaɪbəˈneɪʃən",
+    "ukphone": "ˌhaɪbəˈneɪʃən"
+  },
+  {
+    "name": "track",
+    "trans": [
+      "v. 追踪 n.足迹，踪迹；轨道"
+    ],
+    "usphone": "træk",
+    "ukphone": "træk"
+  },
+  {
+    "name": "trace",
+    "trans": [
+      "v. 追踪；查出；追溯 n.痕迹；少许"
+    ],
+    "usphone": "treɪs",
+    "ukphone": "treɪs"
+  },
+  {
+    "name": "alternate",
+    "trans": [
+      "v. （使）交替，（使）轮流"
+    ],
+    "usphone": "ˈɔːltəneɪt",
+    "ukphone": "ˈɔːltəneɪt"
+  },
+  {
+    "name": "prey",
+    "trans": [
+      "n. 被捕食的动物，猎物 v.捕食"
+    ],
+    "usphone": "preɪ",
+    "ukphone": "preɪ"
+  },
+  {
+    "name": "predator",
+    "trans": [
+      "n. 掠夺者；捕食性动物"
+    ],
+    "usphone": "ˈpredətə",
+    "ukphone": "ˈpredətə"
+  },
+  {
+    "name": "victim",
+    "trans": [
+      "n. 受害者；牺牲者"
+    ],
+    "usphone": "ˈvɪktɪm",
+    "ukphone": "ˈvɪktɪm"
+  },
+  {
+    "name": "captive",
+    "trans": [
+      "n. 俘虏 adj.被关押的；受控制的"
+    ],
+    "usphone": "ˈkæptɪv",
+    "ukphone": "ˈkæptɪv"
+  },
+  {
+    "name": "defensive",
+    "trans": [
+      "adj. 防御性的"
+    ],
+    "usphone": "dɪˈfensɪv",
+    "ukphone": "dɪˈfensɪv"
+  },
+  {
+    "name": "undergo",
+    "trans": [
+      "v. 经历，经受"
+    ],
+    "usphone": "ˌʌndəˈɡəʊ",
+    "ukphone": "ˌʌndəˈɡəʊ"
+  },
+  {
+    "name": "suffer",
+    "trans": [
+      "v. 遭受；受折磨；变糟"
+    ],
+    "usphone": "ˈsʌfə",
+    "ukphone": "ˈsʌfə"
+  },
+  {
+    "name": "vulnerable",
+    "trans": [
+      "adj. 易受伤的，脆弱的；易受影响的"
+    ],
+    "usphone": "ˈvʌlnərəbəl",
+    "ukphone": "ˈvʌlnərəbəl"
+  },
+  {
+    "name": "subsistence",
+    "trans": [
+      "n. 勉强维持生活"
+    ],
+    "usphone": "səbˈsɪstəns",
+    "ukphone": "səbˈsɪstəns"
+  },
+  {
+    "name": "exist",
+    "trans": [
+      "v. 存在；生存"
+    ],
+    "usphone": "ɪɡˈzɪst",
+    "ukphone": "ɪɡˈzɪst"
+  },
+  {
+    "name": "exterminate",
+    "trans": [
+      "v. 消灭，根除"
+    ],
+    "usphone": "ɪkˈstɜːmɪneɪt",
+    "ukphone": "ɪkˈstɜːmɪneɪt"
+  },
+  {
+    "name": "tame",
+    "trans": [
+      "v. 驯养；制服 adj.驯服的；乏味的"
+    ],
+    "usphone": "teɪm",
+    "ukphone": "teɪm"
+  },
+  {
+    "name": "keeper",
+    "trans": [
+      "n. 看守人；饲养员"
+    ],
+    "usphone": "ˈkiːpə",
+    "ukphone": "ˈkiːpə"
+  },
+  {
+    "name": "shepherd",
+    "trans": [
+      "n. 牧羊人，羊倌"
+    ],
+    "usphone": "ˈʃepəd",
+    "ukphone": "ˈʃepəd"
+  }
+]

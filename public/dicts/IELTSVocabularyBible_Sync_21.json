@@ -1,0 +1,3338 @@
+[
+  {
+    "name": "feel",
+    "trans": [
+      "v. 感觉，感知；触碰"
+    ],
+    "usphone": "fiːl",
+    "ukphone": "fiːl"
+  },
+  {
+    "name": "mood",
+    "trans": [
+      "n. 心情，情绪；气氛"
+    ],
+    "usphone": "muːd",
+    "ukphone": "muːd"
+  },
+  {
+    "name": "emotion",
+    "trans": [
+      "n. 情绪，情感，感情"
+    ],
+    "usphone": "ɪˈməʊʃən",
+    "ukphone": "ɪˈməʊʃən"
+  },
+  {
+    "name": "temper",
+    "trans": [
+      "n. 坏脾气；情绪，心情 v. 使缓和"
+    ],
+    "usphone": "ˈtempə",
+    "ukphone": "ˈtempə"
+  },
+  {
+    "name": "manner",
+    "trans": [
+      "n. 举止；礼貌；方式；风俗"
+    ],
+    "usphone": "ˈmænə",
+    "ukphone": "ˈmænə"
+  },
+  {
+    "name": "attitude",
+    "trans": [
+      "n. 态度，看法"
+    ],
+    "usphone": "ˈætɪtjuːd",
+    "ukphone": "ˈætɪtjuːd"
+  },
+  {
+    "name": "character",
+    "trans": [
+      "n. 性格；特征；人物，角色"
+    ],
+    "usphone": "ˈkærɪktə",
+    "ukphone": "ˈkærɪktə"
+  },
+  {
+    "name": "personality",
+    "trans": [
+      "n. 个性，人格"
+    ],
+    "usphone": "ˌpɜːsəˈnælɪti",
+    "ukphone": "ˌpɜːsəˈnælɪti"
+  },
+  {
+    "name": "trait",
+    "trans": [
+      "n. 特性，特点"
+    ],
+    "usphone": "treɪt",
+    "ukphone": "treɪt"
+  },
+  {
+    "name": "virtue",
+    "trans": [
+      "n. 美德，德行；优点"
+    ],
+    "usphone": "ˈvɜːtʃuː",
+    "ukphone": "ˈvɜːtʃuː"
+  },
+  {
+    "name": "feature",
+    "trans": [
+      "n. 特征；面容的一部分 v. 以......为特色"
+    ],
+    "usphone": "ˈfiːtʃə",
+    "ukphone": "ˈfiːtʃə"
+  },
+  {
+    "name": "stature",
+    "trans": [
+      "n. 身高，身材；（精神、道德等的）高度"
+    ],
+    "usphone": "ˈstætʃə",
+    "ukphone": "ˈstætʃə"
+  },
+  {
+    "name": "flesh",
+    "trans": [
+      "n. 肉；人类"
+    ],
+    "usphone": "fleʃ",
+    "ukphone": "fleʃ"
+  },
+  {
+    "name": "mankind",
+    "trans": [
+      "n. 人类；男人"
+    ],
+    "usphone": "mænˈkaɪnd",
+    "ukphone": "mænˈkaɪnd"
+  },
+  {
+    "name": "human",
+    "trans": [
+      "adj. 人类的；有人性的 n. 人类"
+    ],
+    "usphone": "ˈhjuːmən",
+    "ukphone": "ˈhjuːmən"
+  },
+  {
+    "name": "bone",
+    "trans": [
+      "n. 骨；骨骼"
+    ],
+    "usphone": "bəʊn",
+    "ukphone": "bəʊn"
+  },
+  {
+    "name": "backbone",
+    "trans": [
+      "n. 脊柱；骨干，中坚；骨气"
+    ],
+    "usphone": "ˈbækbəʊn",
+    "ukphone": "ˈbækbəʊn"
+  },
+  {
+    "name": "skeleton",
+    "trans": [
+      "n. 骨骼，骨架；框架，梗概"
+    ],
+    "usphone": "ˈskelɪtən",
+    "ukphone": "ˈskelɪtən"
+  },
+  {
+    "name": "brain",
+    "trans": [
+      "n. 脑；[~s]智慧，智力"
+    ],
+    "usphone": "breɪn",
+    "ukphone": "breɪn"
+  },
+  {
+    "name": "mind",
+    "trans": [
+      "n. 头脑；思考能力；思维；意见；记忆力"
+    ],
+    "usphone": "maɪnd",
+    "ukphone": "maɪnd"
+  },
+  {
+    "name": "physical",
+    "trans": [
+      "adj. 身体的；物质的；物理的"
+    ],
+    "usphone": "ˈfɪzɪkəl",
+    "ukphone": "ˈfɪzɪkəl"
+  },
+  {
+    "name": "mental",
+    "trans": [
+      "adj. 精神的，思想上的；智力的"
+    ],
+    "usphone": "ˈmentl",
+    "ukphone": "ˈmentl"
+  },
+  {
+    "name": "cheek",
+    "trans": [
+      "n. 面颊，颊"
+    ],
+    "usphone": "tʃiːk",
+    "ukphone": "tʃiːk"
+  },
+  {
+    "name": "forehead",
+    "trans": [
+      "n. 额"
+    ],
+    "usphone": "ˈfɔːhed",
+    "ukphone": "ˈfɔːhed"
+  },
+  {
+    "name": "brow",
+    "trans": [
+      "n. 额；眉，眉毛"
+    ],
+    "usphone": "braʊ",
+    "ukphone": "braʊ"
+  },
+  {
+    "name": "eyelash",
+    "trans": [
+      "n. 眼睫毛"
+    ],
+    "usphone": "ˈaɪlæʃ",
+    "ukphone": "ˈaɪlæʃ"
+  },
+  {
+    "name": "skull",
+    "trans": [
+      "n. 头脑；头骨"
+    ],
+    "usphone": "skʌl",
+    "ukphone": "skʌl"
+  },
+  {
+    "name": "lip",
+    "trans": [
+      "n. 嘴唇；（洞口、伤口等的）边缘"
+    ],
+    "usphone": "lɪp",
+    "ukphone": "lɪp"
+  },
+  {
+    "name": "mouth",
+    "trans": [
+      "n. 口，嘴；河口"
+    ],
+    "usphone": "maʊθ",
+    "ukphone": "maʊθ"
+  },
+  {
+    "name": "tongue",
+    "trans": [
+      "n. 舌头；语言"
+    ],
+    "usphone": "tʌŋ",
+    "ukphone": "tʌŋ"
+  },
+  {
+    "name": "throat",
+    "trans": [
+      "n. 喉咙；窄路；嗓子，嗓音"
+    ],
+    "usphone": "θrəʊt",
+    "ukphone": "θrəʊt"
+  },
+  {
+    "name": "gorge",
+    "trans": [
+      "n. 咽喉；暴食；山峡，峡谷 v. 狼吞虎咽"
+    ],
+    "usphone": "ɡɔːdʒ",
+    "ukphone": "ɡɔːdʒ"
+  },
+  {
+    "name": "chin",
+    "trans": [
+      "n. （指人的）颊，下巴"
+    ],
+    "usphone": "tʃɪn",
+    "ukphone": "tʃɪn"
+  },
+  {
+    "name": "jaw",
+    "trans": [
+      "n. 颌；下巴；狭窄入口；唠叨"
+    ],
+    "usphone": "dʒɔː",
+    "ukphone": "dʒɔː"
+  },
+  {
+    "name": "neck",
+    "trans": [
+      "n. 脖子；衣领；海峡"
+    ],
+    "usphone": "nek",
+    "ukphone": "nek"
+  },
+  {
+    "name": "beard",
+    "trans": [
+      "n. 胡须"
+    ],
+    "usphone": "bɪəd",
+    "ukphone": "bɪəd"
+  },
+  {
+    "name": "shoulder",
+    "trans": [
+      "n. 肩，肩膀"
+    ],
+    "usphone": "ˈʃəʊldə",
+    "ukphone": "ˈʃəʊldə"
+  },
+  {
+    "name": "limb",
+    "trans": [
+      "n. 肢；树枝"
+    ],
+    "usphone": "lɪm",
+    "ukphone": "lɪm"
+  },
+  {
+    "name": "elbow",
+    "trans": [
+      "n. 肘部；弯头；扶手 v. 用肘挤"
+    ],
+    "usphone": "ˈelbəʊ",
+    "ukphone": "ˈelbəʊ"
+  },
+  {
+    "name": "wrist",
+    "trans": [
+      "n. 腕，腕关节"
+    ],
+    "usphone": "rɪst",
+    "ukphone": "rɪst"
+  },
+  {
+    "name": "thumb",
+    "trans": [
+      "n. 拇指"
+    ],
+    "usphone": "θʌm",
+    "ukphone": "θʌm"
+  },
+  {
+    "name": "palm",
+    "trans": [
+      "n. 手掌"
+    ],
+    "usphone": "pɑːm",
+    "ukphone": "pɑːm"
+  },
+  {
+    "name": "finger",
+    "trans": [
+      "n. 手指"
+    ],
+    "usphone": "ˈfɪŋɡə",
+    "ukphone": "ˈfɪŋɡə"
+  },
+  {
+    "name": "fist",
+    "trans": [
+      "n. 拳头"
+    ],
+    "usphone": "fɪst",
+    "ukphone": "fɪst"
+  },
+  {
+    "name": "chest",
+    "trans": [
+      "n. 胸膛"
+    ],
+    "usphone": "tʃest",
+    "ukphone": "tʃest"
+  },
+  {
+    "name": "abdomen",
+    "trans": [
+      "n. 腹部"
+    ],
+    "usphone": "ˈæbdəmən",
+    "ukphone": "ˈæbdəmən"
+  },
+  {
+    "name": "rib",
+    "trans": [
+      "n. 肋骨"
+    ],
+    "usphone": "rɪb",
+    "ukphone": "rɪb"
+  },
+  {
+    "name": "waist",
+    "trans": [
+      "n. 腰，腰部"
+    ],
+    "usphone": "weɪst",
+    "ukphone": "weɪst"
+  },
+  {
+    "name": "organ",
+    "trans": [
+      "n. 器官"
+    ],
+    "usphone": "ˈɔːɡən",
+    "ukphone": "ˈɔːɡən"
+  },
+  {
+    "name": "liver",
+    "trans": [
+      "n. 肝脏"
+    ],
+    "usphone": "ˈlɪvə",
+    "ukphone": "ˈlɪvə"
+  },
+  {
+    "name": "stomach",
+    "trans": [
+      "n. 胃"
+    ],
+    "usphone": "ˈstʌmək",
+    "ukphone": "ˈstʌmək"
+  },
+  {
+    "name": "womb",
+    "trans": [
+      "n. 子宫"
+    ],
+    "usphone": "wuːm",
+    "ukphone": "wuːm"
+  },
+  {
+    "name": "kidney",
+    "trans": [
+      "n. 肾脏"
+    ],
+    "usphone": "ˈkɪdni",
+    "ukphone": "ˈkɪdni"
+  },
+  {
+    "name": "lung",
+    "trans": [
+      "n. 肺"
+    ],
+    "usphone": "lʌŋ",
+    "ukphone": "lʌŋ"
+  },
+  {
+    "name": "gland",
+    "trans": [
+      "n. 腺"
+    ],
+    "usphone": "ɡlænd",
+    "ukphone": "ɡlænd"
+  },
+  {
+    "name": "chamber",
+    "trans": [
+      "n. （人体内、动植物体内或机器中的）室，腔；议院"
+    ],
+    "usphone": "ˈtʃeɪmbə",
+    "ukphone": "ˈtʃeɪmbə"
+  },
+  {
+    "name": "intestine",
+    "trans": [
+      "n. 肠"
+    ],
+    "usphone": "ɪnˈtestɪn",
+    "ukphone": "ɪnˈtestɪn"
+  },
+  {
+    "name": "muscle",
+    "trans": [
+      "n. 肌肉"
+    ],
+    "usphone": "ˈmʌsəl",
+    "ukphone": "ˈmʌsəl"
+  },
+  {
+    "name": "thigh",
+    "trans": [
+      "n. 大腿，股"
+    ],
+    "usphone": "θaɪ",
+    "ukphone": "θaɪ"
+  },
+  {
+    "name": "joint",
+    "trans": [
+      "n. 接合处；关节 adj. 共同的，联合的"
+    ],
+    "usphone": "dʒɔɪnt",
+    "ukphone": "dʒɔɪnt"
+  },
+  {
+    "name": "knee",
+    "trans": [
+      "n. 膝盖，膝"
+    ],
+    "usphone": "niː",
+    "ukphone": "niː"
+  },
+  {
+    "name": "lap",
+    "trans": [
+      "n. （人坐着时的）大腿部；下摆；环节；一圈"
+    ],
+    "usphone": "læp",
+    "ukphone": "læp"
+  },
+  {
+    "name": "ankle",
+    "trans": [
+      "n. 踝关节，踝"
+    ],
+    "usphone": "ˈæŋkəl",
+    "ukphone": "ˈæŋkəl"
+  },
+  {
+    "name": "heel",
+    "trans": [
+      "n. 足跟"
+    ],
+    "usphone": "hiːl",
+    "ukphone": "hiːl"
+  },
+  {
+    "name": "toe",
+    "trans": [
+      "n. 脚趾，足尖"
+    ],
+    "usphone": "təʊ",
+    "ukphone": "təʊ"
+  },
+  {
+    "name": "pore",
+    "trans": [
+      "n. 毛孔；小孔，气孔 v. 凝视；沉思"
+    ],
+    "usphone": "pɔː",
+    "ukphone": "pɔː"
+  },
+  {
+    "name": "pulse",
+    "trans": [
+      "n. 脉搏；脉冲"
+    ],
+    "usphone": "pʌls",
+    "ukphone": "pʌls"
+  },
+  {
+    "name": "artery",
+    "trans": [
+      "n. 动脉；干线"
+    ],
+    "usphone": "ˈɑːtəri",
+    "ukphone": "ˈɑːtəri"
+  },
+  {
+    "name": "nerve",
+    "trans": [
+      "n. 神经；紧张，焦虑"
+    ],
+    "usphone": "nɜːv",
+    "ukphone": "nɜːv"
+  },
+  {
+    "name": "hormone",
+    "trans": [
+      "n. 荷尔蒙，激素"
+    ],
+    "usphone": "ˈhɔːməʊn",
+    "ukphone": "ˈhɔːməʊn"
+  },
+  {
+    "name": "immune",
+    "trans": [
+      "adj. 免疫的；不受影响的；免除的"
+    ],
+    "usphone": "ɪˈmjuːn",
+    "ukphone": "ɪˈmjuːn"
+  },
+  {
+    "name": "stimulus",
+    "trans": [
+      "n. 刺激（物）；促进因素"
+    ],
+    "usphone": "ˈstɪmjələs",
+    "ukphone": "ˈstɪmjələs"
+  },
+  {
+    "name": "biorhythm",
+    "trans": [
+      "n. 生物节律"
+    ],
+    "usphone": "ˈbaɪəʊˌrɪðəm",
+    "ukphone": "ˈbaɪəʊˌrɪðəm"
+  },
+  {
+    "name": "lifestyle",
+    "trans": [
+      "n. 生活方式"
+    ],
+    "usphone": "ˈlaɪfstaɪl",
+    "ukphone": "ˈlaɪfstaɪl"
+  },
+  {
+    "name": "habit",
+    "trans": [
+      "n. 习惯"
+    ],
+    "usphone": "ˈhæbɪt",
+    "ukphone": "ˈhæbɪt"
+  },
+  {
+    "name": "sense",
+    "trans": [
+      "n. 感官；感觉"
+    ],
+    "usphone": "sens",
+    "ukphone": "sens"
+  },
+  {
+    "name": "sight",
+    "trans": [
+      "n. 视力；看见；景物"
+    ],
+    "usphone": "saɪt",
+    "ukphone": "saɪt"
+  },
+  {
+    "name": "eyesight",
+    "trans": [
+      "n. 视力"
+    ],
+    "usphone": "ˈaɪsaɪt",
+    "ukphone": "ˈaɪsaɪt"
+  },
+  {
+    "name": "view",
+    "trans": [
+      "n. 视野；见解；风景；察看"
+    ],
+    "usphone": "vjuː",
+    "ukphone": "vjuː"
+  },
+  {
+    "name": "visual",
+    "trans": [
+      "adj. 视力的，视觉的"
+    ],
+    "usphone": "ˈvɪʒuəl",
+    "ukphone": "ˈvɪʒuəl"
+  },
+  {
+    "name": "visible",
+    "trans": [
+      "adj. 看得见的，可见的"
+    ],
+    "usphone": "ˈvɪzəbl",
+    "ukphone": "ˈvɪzəbl"
+  },
+  {
+    "name": "vague",
+    "trans": [
+      "adj. 含糊的；不清楚的，模糊的"
+    ],
+    "usphone": "veɪɡ",
+    "ukphone": "veɪɡ"
+  },
+  {
+    "name": "blind",
+    "trans": [
+      "adj. 盲目的；瞎的；未察觉的"
+    ],
+    "usphone": "blaɪnd",
+    "ukphone": "blaɪnd"
+  },
+  {
+    "name": "dumb",
+    "trans": [
+      "adj. 哑的；不肯开口的"
+    ],
+    "usphone": "dʌm",
+    "ukphone": "dʌm"
+  },
+  {
+    "name": "aural",
+    "trans": [
+      "adj. 耳的；听觉的"
+    ],
+    "usphone": "ˈɔːrəl",
+    "ukphone": "ˈɔːrəl"
+  },
+  {
+    "name": "dental",
+    "trans": [
+      "adj. 牙的，牙科的"
+    ],
+    "usphone": "ˈdentl",
+    "ukphone": "ˈdentl"
+  },
+  {
+    "name": "awake",
+    "trans": [
+      "adj. 醒着的；警觉的"
+    ],
+    "usphone": "əˈweɪk",
+    "ukphone": "əˈweɪk"
+  },
+  {
+    "name": "yawn",
+    "trans": [
+      "v. 打呵欠；裂开 n. 呵欠"
+    ],
+    "usphone": "jɔːn",
+    "ukphone": "jɔːn"
+  },
+  {
+    "name": "nap",
+    "trans": [
+      "n. 小睡；绒毛"
+    ],
+    "usphone": "næp",
+    "ukphone": "næp"
+  },
+  {
+    "name": "doze",
+    "trans": [
+      "v. 小睡，打盹儿"
+    ],
+    "usphone": "dəʊz",
+    "ukphone": "dəʊz"
+  },
+  {
+    "name": "quiet",
+    "trans": [
+      "adj. 安静的；寂静的；平静的"
+    ],
+    "usphone": "ˈkwaɪət",
+    "ukphone": "ˈkwaɪət"
+  },
+  {
+    "name": "asleep",
+    "trans": [
+      "adj. 睡着的；不活跃的；麻木的"
+    ],
+    "usphone": "əˈsliːp",
+    "ukphone": "əˈsliːp"
+  },
+  {
+    "name": "cripple",
+    "trans": [
+      "n. 跛子；残疾人 v. 使跛"
+    ],
+    "usphone": "ˈkrɪpl",
+    "ukphone": "ˈkrɪpl"
+  },
+  {
+    "name": "lame",
+    "trans": [
+      "adj. 病的，跛的；（解释或借口）无说服力的"
+    ],
+    "usphone": "leɪm",
+    "ukphone": "leɪm"
+  },
+  {
+    "name": "dwarf",
+    "trans": [
+      "n. （童话中的）小矮人；侏儒 adj. 矮小的"
+    ],
+    "usphone": "dwɔːf",
+    "ukphone": "dwɔːf"
+  },
+  {
+    "name": "pregnancy",
+    "trans": [
+      "n. 怀孕，妊娠"
+    ],
+    "usphone": "ˈpreɡnənsi",
+    "ukphone": "ˈpreɡnənsi"
+  },
+  {
+    "name": "moan",
+    "trans": [
+      "n./v. 呻吟；哀悼"
+    ],
+    "usphone": "məʊn",
+    "ukphone": "məʊn"
+  },
+  {
+    "name": "born",
+    "trans": [
+      "adj. 天生的；与生俱来的 v. [be-]出生"
+    ],
+    "usphone": "bɔːn",
+    "ukphone": "bɔːn"
+  },
+  {
+    "name": "condom",
+    "trans": [
+      "n. 避孕套"
+    ],
+    "usphone": "ˈkɒndəm",
+    "ukphone": "ˈkɒndəm"
+  },
+  {
+    "name": "infection",
+    "trans": [
+      "n. 传染；传染病；影响"
+    ],
+    "usphone": "ɪnˈfekʃən",
+    "ukphone": "ɪnˈfekʃən"
+  },
+  {
+    "name": "clone",
+    "trans": [
+      "v. 克隆 n. 克隆动物（或植物）"
+    ],
+    "usphone": "kləʊn",
+    "ukphone": "kləʊn"
+  },
+  {
+    "name": "detriment",
+    "trans": [
+      "n. 损害；损害物"
+    ],
+    "usphone": "ˈdetrɪmənt",
+    "ukphone": "ˈdetrɪmənt"
+  },
+  {
+    "name": "symptom",
+    "trans": [
+      "n. 征兆；症状"
+    ],
+    "usphone": "ˈsɪmptəm",
+    "ukphone": "ˈsɪmptəm"
+  },
+  {
+    "name": "disease",
+    "trans": [
+      "n. 疾病"
+    ],
+    "usphone": "dɪˈziːz",
+    "ukphone": "dɪˈziːz"
+  },
+  {
+    "name": "illness",
+    "trans": [
+      "n. 病，疾病"
+    ],
+    "usphone": "ˈɪlnəs",
+    "ukphone": "ˈɪlnəs"
+  },
+  {
+    "name": "broken",
+    "trans": [
+      "adj. 弄坏的；破碎的"
+    ],
+    "usphone": "ˈbrəʊkən",
+    "ukphone": "ˈbrəʊkən"
+  },
+  {
+    "name": "disable",
+    "trans": [
+      "v. 使丧失能力，使伤残"
+    ],
+    "usphone": "dɪsˈeɪbəl",
+    "ukphone": "dɪsˈeɪbəl"
+  },
+  {
+    "name": "invalid",
+    "trans": [
+      "n. 病弱者，伤残者 adj. 病弱的，伤残的"
+    ],
+    "usphone": "ˈɪnvəlɪd",
+    "ukphone": "ˈɪnvəlɪd"
+  },
+  {
+    "name": "patient",
+    "trans": [
+      "n. 病人 adj. 有耐心的，能忍耐的"
+    ],
+    "usphone": "ˈpeɪʃənt",
+    "ukphone": "ˈpeɪʃənt"
+  },
+  {
+    "name": "dysfunction",
+    "trans": [
+      "n. （身体）功能障碍"
+    ],
+    "usphone": "dɪsˈfʌŋkʃən",
+    "ukphone": "dɪsˈfʌŋkʃən"
+  },
+  {
+    "name": "diabetes",
+    "trans": [
+      "n. 糖尿病"
+    ],
+    "usphone": "ˌdaɪəˈbiːtiːz",
+    "ukphone": "ˌdaɪəˈbiːtiːz"
+  },
+  {
+    "name": "obesity",
+    "trans": [
+      "n. （过度）肥胖；肥胖症"
+    ],
+    "usphone": "əʊˈbiːsəti",
+    "ukphone": "əʊˈbiːsəti"
+  },
+  {
+    "name": "overweight",
+    "trans": [
+      "adj. 超重的，过胖的 n. 超重 v. 使超重；过于重视"
+    ],
+    "usphone": "ˌəʊvəˈweɪt",
+    "ukphone": "ˌəʊvəˈweɪt"
+  },
+  {
+    "name": "hypertension",
+    "trans": [
+      "n. 高血压"
+    ],
+    "usphone": "ˌhaɪpəˈtenʃən",
+    "ukphone": "ˌhaɪpəˈtenʃən"
+  },
+  {
+    "name": "paralyse",
+    "trans": [
+      "v. 使麻痹；使瘫痪；使无助"
+    ],
+    "usphone": "ˈpærəlaɪz",
+    "ukphone": "ˈpærəlaɪz"
+  },
+  {
+    "name": "dizzy",
+    "trans": [
+      "adj. 头晕目眩的，眩晕的 v. 使眩晕"
+    ],
+    "usphone": "ˈdɪzi",
+    "ukphone": "ˈdɪzi"
+  },
+  {
+    "name": "insane",
+    "trans": [
+      "adj. 患精神病的；疯狂的"
+    ],
+    "usphone": "ɪnˈseɪn",
+    "ukphone": "ɪnˈseɪn"
+  },
+  {
+    "name": "insomnia",
+    "trans": [
+      "n. 失眠，失眠症"
+    ],
+    "usphone": "ɪnˈsɒmniə",
+    "ukphone": "ɪnˈsɒmniə"
+  },
+  {
+    "name": "allergy",
+    "trans": [
+      "n. 敏感症；过敏性"
+    ],
+    "usphone": "ˈælədʒi",
+    "ukphone": "ˈælədʒi"
+  },
+  {
+    "name": "heart attack",
+    "trans": [
+      "n. 心脏病发作"
+    ],
+    "usphone": "hɑːt əˈtæk",
+    "ukphone": "hɑːt əˈtæk"
+  },
+  {
+    "name": "cancer",
+    "trans": [
+      "n. 癌"
+    ],
+    "usphone": "ˈkænsə",
+    "ukphone": "ˈkænsə"
+  },
+  {
+    "name": "arthritis",
+    "trans": [
+      "n. 关节炎"
+    ],
+    "usphone": "ɑːˈθraɪtɪs",
+    "ukphone": "ɑːˈθraɪtɪs"
+  },
+  {
+    "name": "pimple",
+    "trans": [
+      "n. 粉刺，丘疹"
+    ],
+    "usphone": "ˈpɪmpəl",
+    "ukphone": "ˈpɪmpəl"
+  },
+  {
+    "name": "stroke",
+    "trans": [
+      "n. 中风；击打；一笔（画）"
+    ],
+    "usphone": "strəʊk",
+    "ukphone": "strəʊk"
+  },
+  {
+    "name": "plague",
+    "trans": [
+      "n. 瘟疫"
+    ],
+    "usphone": "pleɪɡ",
+    "ukphone": "pleɪɡ"
+  },
+  {
+    "name": "flu",
+    "trans": [
+      "n. 流行性感冒"
+    ],
+    "usphone": "fluː",
+    "ukphone": "fluː"
+  },
+  {
+    "name": "fever",
+    "trans": [
+      "n. 狂热；发烧，发热 v. （使）发烧；（使）狂热"
+    ],
+    "usphone": "ˈfiːvə",
+    "ukphone": "ˈfiːvə"
+  },
+  {
+    "name": "headache",
+    "trans": [
+      "n. 头痛"
+    ],
+    "usphone": "ˈhedeɪk",
+    "ukphone": "ˈhedeɪk"
+  },
+  {
+    "name": "swell",
+    "trans": [
+      "v. 肿胀，膨胀；（使）增加"
+    ],
+    "usphone": "swel",
+    "ukphone": "swel"
+  },
+  {
+    "name": "choke",
+    "trans": [
+      "v. （使）窒息；阻塞；说不出话"
+    ],
+    "usphone": "tʃəʊk",
+    "ukphone": "tʃəʊk"
+  },
+  {
+    "name": "injure",
+    "trans": [
+      "v. 伤害，使遭受损伤；损害"
+    ],
+    "usphone": "ˈɪndʒə",
+    "ukphone": "ˈɪndʒə"
+  },
+  {
+    "name": "injury",
+    "trans": [
+      "n. 伤害；损害"
+    ],
+    "usphone": "ˈɪndʒəri",
+    "ukphone": "ˈɪndʒəri"
+  },
+  {
+    "name": "hurt",
+    "trans": [
+      "v. 损害；伤害；（使）疼痛"
+    ],
+    "usphone": "hɜːt",
+    "ukphone": "hɜːt"
+  },
+  {
+    "name": "bleed",
+    "trans": [
+      "v. 流血；榨取；给......放血；放掉（水或气体）"
+    ],
+    "usphone": "bliːd",
+    "ukphone": "bliːd"
+  },
+  {
+    "name": "bruise",
+    "trans": [
+      "n. 淤伤；伤痕 v. 擦伤"
+    ],
+    "usphone": "bruːz",
+    "ukphone": "bruːz"
+  },
+  {
+    "name": "scar",
+    "trans": [
+      "n. 疤痕，伤疤"
+    ],
+    "usphone": "skɑː",
+    "ukphone": "skɑː"
+  },
+  {
+    "name": "wound",
+    "trans": [
+      "n. 创伤，伤害；伤口"
+    ],
+    "usphone": "wuːnd",
+    "ukphone": "wuːnd"
+  },
+  {
+    "name": "trauma",
+    "trans": [
+      "n. 外伤，身体上的伤；精神创伤；痛苦经历"
+    ],
+    "usphone": "ˈtrɔːmə",
+    "ukphone": "ˈtrɔːmə"
+  },
+  {
+    "name": "lump",
+    "trans": [
+      "n. 块；肿块 v. 使成块状"
+    ],
+    "usphone": "lʌmp",
+    "ukphone": "lʌmp"
+  },
+  {
+    "name": "pain",
+    "trans": [
+      "n. 痛苦；疼痛 v. 使痛苦"
+    ],
+    "usphone": "peɪn",
+    "ukphone": "peɪn"
+  },
+  {
+    "name": "death",
+    "trans": [
+      "n. 死，死亡；毁灭"
+    ],
+    "usphone": "deθ",
+    "ukphone": "deθ"
+  },
+  {
+    "name": "mortal",
+    "trans": [
+      "adj. 必死的；致命的 n. 凡人，人类"
+    ],
+    "usphone": "ˈmɔːtl",
+    "ukphone": "ˈmɔːtl"
+  },
+  {
+    "name": "demise",
+    "trans": [
+      "n. 死亡；君权的转移或授予，禅让 v. 遗赠；转让"
+    ],
+    "usphone": "dɪˈmaɪz",
+    "ukphone": "dɪˈmaɪz"
+  },
+  {
+    "name": "doom",
+    "trans": [
+      "n. 厄运；毁灭 v. 使注定失败（或死亡等）"
+    ],
+    "usphone": "duːm",
+    "ukphone": "duːm"
+  },
+  {
+    "name": "fatal",
+    "trans": [
+      "adj. 致命的；毁灭性的；决定性的"
+    ],
+    "usphone": "ˈfeɪtl",
+    "ukphone": "ˈfeɪtl"
+  },
+  {
+    "name": "lethal",
+    "trans": [
+      "adj. 致命的"
+    ],
+    "usphone": "ˈliːθəl",
+    "ukphone": "ˈliːθəl"
+  },
+  {
+    "name": "corpus",
+    "trans": [
+      "n. 尸体；文集；本金"
+    ],
+    "usphone": "ˈkɔːpəs",
+    "ukphone": "ˈkɔːpəs"
+  },
+  {
+    "name": "overwork",
+    "trans": [
+      "n. 过度操劳；过度工作 v. （使）过度工作"
+    ],
+    "usphone": "ˌəʊvəˈwɜːk",
+    "ukphone": "ˌəʊvəˈwɜːk"
+  },
+  {
+    "name": "tire",
+    "trans": [
+      "v. （使）感到疲劳；厌烦"
+    ],
+    "usphone": "ˈtaɪə",
+    "ukphone": "ˈtaɪə"
+  },
+  {
+    "name": "exhaust",
+    "trans": [
+      "v. 使精疲力竭；用完，耗尽"
+    ],
+    "usphone": "ɪɡˈzɔːst",
+    "ukphone": "ɪɡˈzɔːst"
+  },
+  {
+    "name": "fatigue",
+    "trans": [
+      "n. 疲劳 v. （使）疲劳"
+    ],
+    "usphone": "fəˈtiːɡ",
+    "ukphone": "fəˈtiːɡ"
+  },
+  {
+    "name": "faint",
+    "trans": [
+      "adj. 模糊的；微弱的；虚弱的 v. 晕倒"
+    ],
+    "usphone": "feɪnt",
+    "ukphone": "feɪnt"
+  },
+  {
+    "name": "feeble",
+    "trans": [
+      "adj. 虚弱的，无力的；微弱的"
+    ],
+    "usphone": "ˈfiːbəl",
+    "ukphone": "ˈfiːbəl"
+  },
+  {
+    "name": "weary",
+    "trans": [
+      "adj. 疲倦的；厌烦的"
+    ],
+    "usphone": "ˈwɪəri",
+    "ukphone": "ˈwɪəri"
+  },
+  {
+    "name": "weaken",
+    "trans": [
+      "v. 减弱，削弱；变软弱"
+    ],
+    "usphone": "ˈwiːkən",
+    "ukphone": "ˈwiːkən"
+  },
+  {
+    "name": "uncomfortable",
+    "trans": [
+      "adj. 不舒服的；不自在的"
+    ],
+    "usphone": "ʌnˈkʌmftəbəl",
+    "ukphone": "ʌnˈkʌmftəbəl"
+  },
+  {
+    "name": "unconscious",
+    "trans": [
+      "adj. 失去知觉的；无意识的"
+    ],
+    "usphone": "ʌnˈkɒnʃəs",
+    "ukphone": "ʌnˈkɒnʃəs"
+  },
+  {
+    "name": "chronic",
+    "trans": [
+      "adj. 慢性的；长期的"
+    ],
+    "usphone": "ˈkrɒnɪk",
+    "ukphone": "ˈkrɒnɪk"
+  },
+  {
+    "name": "acute",
+    "trans": [
+      "adj. （疾病）急性的；敏锐的，深刻的"
+    ],
+    "usphone": "əˈkjuːt",
+    "ukphone": "əˈkjuːt"
+  },
+  {
+    "name": "sore",
+    "trans": [
+      "adj. 疼痛的；恼火的；严重的"
+    ],
+    "usphone": "sɔː",
+    "ukphone": "sɔː"
+  },
+  {
+    "name": "sorrow",
+    "trans": [
+      "n. 悲伤，悲痛"
+    ],
+    "usphone": "ˈsɒrəʊ",
+    "ukphone": "ˈsɒrəʊ"
+  },
+  {
+    "name": "suffering",
+    "trans": [
+      "n. 苦难，折磨"
+    ],
+    "usphone": "ˈsʌfərɪŋ",
+    "ukphone": "ˈsʌfərɪŋ"
+  },
+  {
+    "name": "lament",
+    "trans": [
+      "n. 悲伤，哀悼 v. 哀悼；对......感到悔恨"
+    ],
+    "usphone": "ləˈment",
+    "ukphone": "ləˈment"
+  },
+  {
+    "name": "fitness",
+    "trans": [
+      "n. 健康；适合"
+    ],
+    "usphone": "ˈfɪtnəs",
+    "ukphone": "ˈfɪtnəs"
+  },
+  {
+    "name": "hospital",
+    "trans": [
+      "n. 医院"
+    ],
+    "usphone": "ˈhɒspɪtl",
+    "ukphone": "ˈhɒspɪtl"
+  },
+  {
+    "name": "therapy",
+    "trans": [
+      "n. 治疗"
+    ],
+    "usphone": "ˈθerəpi",
+    "ukphone": "ˈθerəpi"
+  },
+  {
+    "name": "health care",
+    "trans": [
+      "n. 医疗保健"
+    ],
+    "usphone": "helθ keə",
+    "ukphone": "helθ keə"
+  },
+  {
+    "name": "sanitary",
+    "trans": [
+      "adj. 卫生的；清洁的"
+    ],
+    "usphone": "ˈsænətəri",
+    "ukphone": "ˈsænətəri"
+  },
+  {
+    "name": "medical",
+    "trans": [
+      "adj. 医学的，医疗的"
+    ],
+    "usphone": "ˈmedɪkəl",
+    "ukphone": "ˈmedɪkəl"
+  },
+  {
+    "name": "curative",
+    "trans": [
+      "adj. 治疗的 n. 药品"
+    ],
+    "usphone": "ˈkjʊərətɪv",
+    "ukphone": "ˈkjʊərətɪv"
+  },
+  {
+    "name": "hygiene",
+    "trans": [
+      "n. 卫生（学）；保健（学）"
+    ],
+    "usphone": "ˈhaɪdʒiːn",
+    "ukphone": "ˈhaɪdʒiːn"
+  },
+  {
+    "name": "clinic",
+    "trans": [
+      "n. 诊所；门诊部"
+    ],
+    "usphone": "ˈklɪnɪk",
+    "ukphone": "ˈklɪnɪk"
+  },
+  {
+    "name": "physician",
+    "trans": [
+      "n. 内科医生"
+    ],
+    "usphone": "fɪˈzɪʃən",
+    "ukphone": "fɪˈzɪʃən"
+  },
+  {
+    "name": "surgeon",
+    "trans": [
+      "n. 外科医生"
+    ],
+    "usphone": "ˈsɜːdʒən",
+    "ukphone": "ˈsɜːdʒən"
+  },
+  {
+    "name": "operation",
+    "trans": [
+      "n. 手术；操作；运转，经营"
+    ],
+    "usphone": "ˌɒpəˈreɪʃən",
+    "ukphone": "ˌɒpəˈreɪʃən"
+  },
+  {
+    "name": "cure",
+    "trans": [
+      "v. 治好，治愈 n. 疗法；治疗"
+    ],
+    "usphone": "kjʊə",
+    "ukphone": "kjʊə"
+  },
+  {
+    "name": "heal",
+    "trans": [
+      "v. 治愈；愈合"
+    ],
+    "usphone": "hiːl",
+    "ukphone": "hiːl"
+  },
+  {
+    "name": "treatment",
+    "trans": [
+      "n. 治疗，疗法；待遇"
+    ],
+    "usphone": "ˈtriːtmənt",
+    "ukphone": "ˈtriːtmənt"
+  },
+  {
+    "name": "check",
+    "trans": [
+      "v. 检查，核对 n. [美] 账单"
+    ],
+    "usphone": "tʃek",
+    "ukphone": "tʃek"
+  },
+  {
+    "name": "prescription",
+    "trans": [
+      "n. 处方，药方；秘诀"
+    ],
+    "usphone": "prɪˈskrɪpʃən",
+    "ukphone": "prɪˈskrɪpʃən"
+  },
+  {
+    "name": "transplant",
+    "trans": [
+      "v. 移植"
+    ],
+    "usphone": "trænsˈplɑːnt",
+    "ukphone": "trænsˈplɑːnt"
+  },
+  {
+    "name": "X-ray",
+    "trans": [
+      "n. X 射线；用 X 射线进行的临床检查 v. 用 X 射线检查"
+    ],
+    "usphone": "ˈeks reɪ",
+    "ukphone": "ˈeks reɪ"
+  },
+  {
+    "name": "injection",
+    "trans": [
+      "n. 注射；注射物；单射（函数）"
+    ],
+    "usphone": "ɪnˈdʒekʃən",
+    "ukphone": "ɪnˈdʒekʃən"
+  },
+  {
+    "name": "precaution",
+    "trans": [
+      "n. 预防，警惕；预防措施"
+    ],
+    "usphone": "prɪˈkɔːʃən",
+    "ukphone": "prɪˈkɔːʃən"
+  },
+  {
+    "name": "vaccinate",
+    "trans": [
+      "v. 给......接种疫苗，预防接种"
+    ],
+    "usphone": "ˈvæksɪneɪt",
+    "ukphone": "ˈvæksɪneɪt"
+  },
+  {
+    "name": "quarantine",
+    "trans": [
+      "v. 对......进行隔离检疫 n. 检疫；隔离检疫期"
+    ],
+    "usphone": "ˈkwɒrəntiːn",
+    "ukphone": "ˈkwɒrəntiːn"
+  },
+  {
+    "name": "segregate",
+    "trans": [
+      "v. 隔离"
+    ],
+    "usphone": "ˈseɡrɪɡeɪt",
+    "ukphone": "ˈseɡrɪɡeɪt"
+  },
+  {
+    "name": "isolate",
+    "trans": [
+      "v. 使隔离，使孤立，使脱离"
+    ],
+    "usphone": "ˈaɪsəleɪt",
+    "ukphone": "ˈaɪsəleɪt"
+  },
+  {
+    "name": "pharmacy",
+    "trans": [
+      "n. 药店；药剂学"
+    ],
+    "usphone": "ˈfɑːməsi",
+    "ukphone": "ˈfɑːməsi"
+  },
+  {
+    "name": "medicine",
+    "trans": [
+      "n. 药；医学"
+    ],
+    "usphone": "ˈmedɪsən",
+    "ukphone": "ˈmedɪsən"
+  },
+  {
+    "name": "remedy",
+    "trans": [
+      "n. 药物，治疗法；解决方法"
+    ],
+    "usphone": "ˈremədi",
+    "ukphone": "ˈremədi"
+  },
+  {
+    "name": "drug",
+    "trans": [
+      "n. 毒品；药"
+    ],
+    "usphone": "drʌɡ",
+    "ukphone": "drʌɡ"
+  },
+  {
+    "name": "pill",
+    "trans": [
+      "n. 药丸，丸剂"
+    ],
+    "usphone": "pɪl",
+    "ukphone": "pɪl"
+  },
+  {
+    "name": "antibiotic",
+    "trans": [
+      "n. 抗生素"
+    ],
+    "usphone": "ˌæntibaɪˈɒtɪk",
+    "ukphone": "ˌæntibaɪˈɒtɪk"
+  },
+  {
+    "name": "acupuncture",
+    "trans": [
+      "n. 针灸，中医针灸疗法"
+    ],
+    "usphone": "ˈækjʊpʌŋktʃə",
+    "ukphone": "ˈækjʊpʌŋktʃə"
+  },
+  {
+    "name": "penicillin",
+    "trans": [
+      "n. 青霉素"
+    ],
+    "usphone": "ˌpenɪˈsɪlɪn",
+    "ukphone": "ˌpenɪˈsɪlɪn"
+  },
+  {
+    "name": "morphine",
+    "trans": [
+      "n. 吗啡"
+    ],
+    "usphone": "ˈmɔːfiːn",
+    "ukphone": "ˈmɔːfiːn"
+  },
+  {
+    "name": "dose",
+    "trans": [
+      "n. （药物的）一剂 v. 给......服药"
+    ],
+    "usphone": "dəʊs",
+    "ukphone": "dəʊs"
+  },
+  {
+    "name": "recovery",
+    "trans": [
+      "n. 恢复，痊愈"
+    ],
+    "usphone": "rɪˈkʌvəri",
+    "ukphone": "rɪˈkʌvəri"
+  },
+  {
+    "name": "refresh",
+    "trans": [
+      "v. 使恢复精神"
+    ],
+    "usphone": "rɪˈfreʃ",
+    "ukphone": "rɪˈfreʃ"
+  },
+  {
+    "name": "relief",
+    "trans": [
+      "n. 宽慰，轻松；减轻，缓解"
+    ],
+    "usphone": "rɪˈliːf",
+    "ukphone": "rɪˈliːf"
+  },
+  {
+    "name": "relieve",
+    "trans": [
+      "v. 救济；减轻，解除（痛苦、不快等）"
+    ],
+    "usphone": "rɪˈliːv",
+    "ukphone": "rɪˈliːv"
+  },
+  {
+    "name": "alleviate",
+    "trans": [
+      "v. 减轻（痛苦等），缓解"
+    ],
+    "usphone": "əˈliːvieɪt",
+    "ukphone": "əˈliːvieɪt"
+  },
+  {
+    "name": "resume",
+    "trans": [
+      "v. 重新开始，（中断后）继续"
+    ],
+    "usphone": "rɪˈzjuːm",
+    "ukphone": "rɪˈzjuːm"
+  },
+  {
+    "name": "ease",
+    "trans": [
+      "v. 减轻，放松，缓和 n. 容易；悠闲"
+    ],
+    "usphone": "iːz",
+    "ukphone": "iːz"
+  },
+  {
+    "name": "relax",
+    "trans": [
+      "v. 放松"
+    ],
+    "usphone": "rɪˈlæks",
+    "ukphone": "rɪˈlæks"
+  },
+  {
+    "name": "normal",
+    "trans": [
+      "adj. 正常的；正规的，规范的"
+    ],
+    "usphone": "ˈnɔːməl",
+    "ukphone": "ˈnɔːməl"
+  },
+  {
+    "name": "common",
+    "trans": [
+      "adj. 共同的；普通的，平常的"
+    ],
+    "usphone": "ˈkɒmən",
+    "ukphone": "ˈkɒmən"
+  },
+  {
+    "name": "usual",
+    "trans": [
+      "adj. 通常的，惯常的"
+    ],
+    "usphone": "ˈjuːʒuəl",
+    "ukphone": "ˈjuːʒuəl"
+  },
+  {
+    "name": "optimistic",
+    "trans": [
+      "adj. 乐观的，乐观主义的"
+    ],
+    "usphone": "ˌɒptɪˈmɪstɪk",
+    "ukphone": "ˌɒptɪˈmɪstɪk"
+  },
+  {
+    "name": "pessimistic",
+    "trans": [
+      "adj. 悲观的，悲观主义的"
+    ],
+    "usphone": "ˌpesɪˈmɪstɪk",
+    "ukphone": "ˌpesɪˈmɪstɪk"
+  },
+  {
+    "name": "positive",
+    "trans": [
+      "adj. 肯定的；积极的；绝对的"
+    ],
+    "usphone": "ˈpɒzətɪv",
+    "ukphone": "ˈpɒzətɪv"
+  },
+  {
+    "name": "negative",
+    "trans": [
+      "adj. 怀疑的；消极的"
+    ],
+    "usphone": "ˈneɡətɪv",
+    "ukphone": "ˈneɡətɪv"
+  },
+  {
+    "name": "passive",
+    "trans": [
+      "adj. 被动的，消极的"
+    ],
+    "usphone": "ˈpæsɪv",
+    "ukphone": "ˈpæsɪv"
+  },
+  {
+    "name": "enthusiastic",
+    "trans": [
+      "adj. 热心的，热情的"
+    ],
+    "usphone": "ɪnˌθjuːziˈæstɪk",
+    "ukphone": "ɪnˌθjuːziˈæstɪk"
+  },
+  {
+    "name": "indifferent",
+    "trans": [
+      "adj. 漠不关心的；无关紧要的；平庸的；中立的"
+    ],
+    "usphone": "ɪnˈdɪfərənt",
+    "ukphone": "ɪnˈdɪfərənt"
+  },
+  {
+    "name": "apathetic",
+    "trans": [
+      "adj. 无动于衷的，漠不关心的"
+    ],
+    "usphone": "ˌæpəˈθɛtɪk",
+    "ukphone": "ˌæpəˈθɛtɪk"
+  },
+  {
+    "name": "negligible",
+    "trans": [
+      "adj. 可以忽略的，微不足道的"
+    ],
+    "usphone": "ˈneɡlɪdʒəbl",
+    "ukphone": "ˈneɡlɪdʒəbl"
+  },
+  {
+    "name": "happiness",
+    "trans": [
+      "n. 幸福，快乐；适当"
+    ],
+    "usphone": "ˈhæpinəs",
+    "ukphone": "ˈhæpinəs"
+  },
+  {
+    "name": "delight",
+    "trans": [
+      "v. （使）高兴；爱好 n. 乐趣"
+    ],
+    "usphone": "dɪˈlaɪt",
+    "ukphone": "dɪˈlaɪt"
+  },
+  {
+    "name": "merry",
+    "trans": [
+      "adj. 愉快的，欢乐的；微醉的"
+    ],
+    "usphone": "ˈmeri",
+    "ukphone": "ˈmeri"
+  },
+  {
+    "name": "fun",
+    "trans": [
+      "n. 乐趣；玩笑 adj. 有趣的"
+    ],
+    "usphone": "fʌn",
+    "ukphone": "fʌn"
+  },
+  {
+    "name": "joke",
+    "trans": [
+      "n. 笑话；玩笑 v. 说笑话；开玩笑"
+    ],
+    "usphone": "dʒəʊk",
+    "ukphone": "dʒəʊk"
+  },
+  {
+    "name": "laughter",
+    "trans": [
+      "n. 笑，笑声"
+    ],
+    "usphone": "ˈlɑːftə",
+    "ukphone": "ˈlɑːftə"
+  },
+  {
+    "name": "joy",
+    "trans": [
+      "n. 欢乐，喜悦；乐趣"
+    ],
+    "usphone": "dʒɔɪ",
+    "ukphone": "dʒɔɪ"
+  },
+  {
+    "name": "please",
+    "trans": [
+      "v. 使高兴，取悦 adv. 请"
+    ],
+    "usphone": "pliːz",
+    "ukphone": "pliːz"
+  },
+  {
+    "name": "rejoice",
+    "trans": [
+      "v. （使）高兴，（使）欢喜"
+    ],
+    "usphone": "rɪˈdʒɔɪs",
+    "ukphone": "rɪˈdʒɔɪs"
+  },
+  {
+    "name": "thrill",
+    "trans": [
+      "n. 激动 v.（使）激动；感到紧张"
+    ],
+    "usphone": "θrɪl",
+    "ukphone": "θrɪl"
+  },
+  {
+    "name": "cheer",
+    "trans": [
+      "v. 使振作；（向……）欢呼"
+    ],
+    "usphone": "tʃɪə",
+    "ukphone": "tʃɪə"
+  },
+  {
+    "name": "pleasure",
+    "trans": [
+      "n. 愉快，高兴；荣幸（用于回答对方的感谢）"
+    ],
+    "usphone": "ˈpleʒə",
+    "ukphone": "ˈpleʒə"
+  },
+  {
+    "name": "agreeable",
+    "trans": [
+      "adj. 使人愉快的；（欣然）同意的"
+    ],
+    "usphone": "ə'ɡriːəbl",
+    "ukphone": "ə'ɡriːəbl"
+  },
+  {
+    "name": "exhilarate",
+    "trans": [
+      "v. 使高兴，使兴奋"
+    ],
+    "usphone": "ɪɡˈzɪləreɪt",
+    "ukphone": "ɪɡˈzɪləreɪt"
+  },
+  {
+    "name": "satisfactory",
+    "trans": [
+      "adj. 令人满意的"
+    ],
+    "usphone": "ˌsætɪsˈfæktəri",
+    "ukphone": "ˌsætɪsˈfæktəri"
+  },
+  {
+    "name": "desirable",
+    "trans": [
+      "adj. 可取的，值得拥有的，合意的"
+    ],
+    "usphone": "dɪˈzaɪərəbl",
+    "ukphone": "dɪˈzaɪərəbl"
+  },
+  {
+    "name": "exciting",
+    "trans": [
+      "adj. 令人兴奋的，使人激动的"
+    ],
+    "usphone": "ɪkˈsaɪtɪŋ",
+    "ukphone": "ɪkˈsaɪtɪŋ"
+  },
+  {
+    "name": "keen",
+    "trans": [
+      "adj. 强烈的；敏锐的；渴望的；[尤英]有强烈兴趣的"
+    ],
+    "usphone": "kiːn",
+    "ukphone": "kiːn"
+  },
+  {
+    "name": "zeal",
+    "trans": [
+      "n. 热心，热情，热忱"
+    ],
+    "usphone": "ziːl",
+    "ukphone": "ziːl"
+  },
+  {
+    "name": "lively",
+    "trans": [
+      "adj. 活泼的；活跃的；栩栩如生的"
+    ],
+    "usphone": "ˈlaɪvli",
+    "ukphone": "ˈlaɪvli"
+  },
+  {
+    "name": "lovely",
+    "trans": [
+      "adj. 可爱的；令人愉快的"
+    ],
+    "usphone": "ˈlʌvli",
+    "ukphone": "ˈlʌvli"
+  },
+  {
+    "name": "fond",
+    "trans": [
+      "adj. 喜爱的；溺爱的"
+    ],
+    "usphone": "fɒnd",
+    "ukphone": "fɒnd"
+  },
+  {
+    "name": "favour",
+    "trans": [
+      "n. 偏爱；赞同；恩惠，帮助"
+    ],
+    "usphone": "ˈfeɪvə",
+    "ukphone": "ˈfeɪvə"
+  },
+  {
+    "name": "surprising",
+    "trans": [
+      "adj. 令人惊讶的，出人意料"
+    ],
+    "usphone": "səˈpraɪzɪŋ",
+    "ukphone": "səˈpraɪzɪŋ"
+  },
+  {
+    "name": "startle",
+    "trans": [
+      "v. 使大吃一惊 n. 吃惊"
+    ],
+    "usphone": "ˈstɑːtl",
+    "ukphone": "ˈstɑːtl"
+  },
+  {
+    "name": "amazing",
+    "trans": [
+      "adj. 令人惊叹的，惊人的"
+    ],
+    "usphone": "əˈmeɪzɪŋ",
+    "ukphone": "əˈmeɪzɪŋ"
+  },
+  {
+    "name": "astound",
+    "trans": [
+      "v. 使大吃一惊，使惊骇"
+    ],
+    "usphone": "əˈstaʊnd",
+    "ukphone": "əˈstaʊnd"
+  },
+  {
+    "name": "hectic",
+    "trans": [
+      "adj. 兴奋活跃的，忙乱的，繁忙的"
+    ],
+    "usphone": "ˈhektɪk",
+    "ukphone": "ˈhektɪk"
+  },
+  {
+    "name": "liberal",
+    "trans": [
+      "adj. 慷慨的，大方的；自由主义的"
+    ],
+    "usphone": "ˈlɪbərəl",
+    "ukphone": "ˈlɪbərəl"
+  },
+  {
+    "name": "generous",
+    "trans": [
+      "adj. 慷慨的；宽厚的"
+    ],
+    "usphone": "ˈdʒenərəs",
+    "ukphone": "ˈdʒenərəs"
+  },
+  {
+    "name": "gentle",
+    "trans": [
+      "adj. 温和的；柔和的；文雅的；出身名门的"
+    ],
+    "usphone": "ˈdʒentl",
+    "ukphone": "ˈdʒentl"
+  },
+  {
+    "name": "mysterious",
+    "trans": [
+      "adj. 神秘的；不可思议的"
+    ],
+    "usphone": "mɪˈstɪəriəs",
+    "ukphone": "mɪˈstɪəriəs"
+  },
+  {
+    "name": "curious",
+    "trans": [
+      "adj. 好奇的，好求知的"
+    ],
+    "usphone": "ˈkjʊəriəs",
+    "ukphone": "ˈkjʊəriəs"
+  },
+  {
+    "name": "humble",
+    "trans": [
+      "adj. 谦虚的；卑微的"
+    ],
+    "usphone": "ˈhʌmbəl",
+    "ukphone": "ˈhʌmbəl"
+  },
+  {
+    "name": "modest",
+    "trans": [
+      "adj. 谦虚的，谦逊的"
+    ],
+    "usphone": "ˈmɒdɪst",
+    "ukphone": "ˈmɒdɪst"
+  },
+  {
+    "name": "humorous",
+    "trans": [
+      "adj. 富于幽默感的，诙谐的"
+    ],
+    "usphone": "ˈhjuːmərəs",
+    "ukphone": "ˈhjuːmərəs"
+  },
+  {
+    "name": "polite",
+    "trans": [
+      "adj. 有礼貌的；客气的"
+    ],
+    "usphone": "pəˈlaɪt",
+    "ukphone": "pəˈlaɪt"
+  },
+  {
+    "name": "frank",
+    "trans": [
+      "adj. 坦白的，直率的"
+    ],
+    "usphone": "fræŋk",
+    "ukphone": "fræŋk"
+  },
+  {
+    "name": "daring",
+    "trans": [
+      "adj. 勇敢的，大胆的"
+    ],
+    "usphone": "ˈdeərɪŋ",
+    "ukphone": "ˈdeərɪŋ"
+  },
+  {
+    "name": "manly",
+    "trans": [
+      "adj. 有男子气概的；果断的"
+    ],
+    "usphone": "ˈmænli",
+    "ukphone": "ˈmænli"
+  },
+  {
+    "name": "direct",
+    "trans": [
+      "adj. 直接的；直率的"
+    ],
+    "usphone": "dɪˈrekt",
+    "ukphone": "dɪˈrekt"
+  },
+  {
+    "name": "earnest",
+    "trans": [
+      "adj. 认真的，诚恳的"
+    ],
+    "usphone": "ˈɜːnɪst",
+    "ukphone": "ˈɜːnɪst"
+  },
+  {
+    "name": "honesty",
+    "trans": [
+      "n. 诚实，正直"
+    ],
+    "usphone": "ˈɒnɪsti",
+    "ukphone": "ˈɒnɪsti"
+  },
+  {
+    "name": "proud",
+    "trans": [
+      "adj. 骄傲的，自豪的；令人自豪的"
+    ],
+    "usphone": "praʊd",
+    "ukphone": "praʊd"
+  },
+  {
+    "name": "rational",
+    "trans": [
+      "adj. 理性的；合理的"
+    ],
+    "usphone": "ˈreɪʃənəl",
+    "ukphone": "ˈreɪʃənəl"
+  },
+  {
+    "name": "seriously",
+    "trans": [
+      "adv. 严肃地；认真地；严重地"
+    ],
+    "usphone": "ˈsɪəriəsli",
+    "ukphone": "ˈsɪəriəsli"
+  },
+  {
+    "name": "stern",
+    "trans": [
+      "adj. 严厉的；坚定的"
+    ],
+    "usphone": "stɜːn",
+    "ukphone": "stɜːn"
+  },
+  {
+    "name": "friendly",
+    "trans": [
+      "adj. 友好的，友善的"
+    ],
+    "usphone": "ˈfriːndli",
+    "ukphone": "ˈfriːndli"
+  },
+  {
+    "name": "hospitable",
+    "trans": [
+      "adj. 好客的；热情友好的"
+    ],
+    "usphone": "ˈhɒspɪtəbl",
+    "ukphone": "ˈhɒspɪtəbl"
+  },
+  {
+    "name": "romantic",
+    "trans": [
+      "adj. 浪漫的；充满传奇色彩的"
+    ],
+    "usphone": "ˌrɒmənˈtɑːk",
+    "ukphone": "ˌrɒmənˈtɑːk"
+  },
+  {
+    "name": "freedom",
+    "trans": [
+      "n. 自由，独立自主"
+    ],
+    "usphone": "ˈfriːdəm",
+    "ukphone": "ˈfriːdəm"
+  },
+  {
+    "name": "careful",
+    "trans": [
+      "adj. 仔细的，细致的；小心的，谨慎的"
+    ],
+    "usphone": "ˈkɛrfl",
+    "ukphone": "ˈkɛrfl"
+  },
+  {
+    "name": "concern",
+    "trans": [
+      "n. 关心；忧虑 v. 涉及；使担忧；关心"
+    ],
+    "usphone": "kənˈsɜːrn",
+    "ukphone": "kənˈsɜːrn"
+  },
+  {
+    "name": "confidence",
+    "trans": [
+      "n. 自信；信任"
+    ],
+    "usphone": "ˈkɒnfɪdəns",
+    "ukphone": "ˈkɒnfɪdəns"
+  },
+  {
+    "name": "considerate",
+    "trans": [
+      "adj. 考虑周到的，体谅的"
+    ],
+    "usphone": "kənˈsɪdərət",
+    "ukphone": "kənˈsɪdərət"
+  },
+  {
+    "name": "thoughtful",
+    "trans": [
+      "adj. 认真思考的；考虑周到的，体贴的"
+    ],
+    "usphone": "ˈθɔːtfəl",
+    "ukphone": "ˈθɔːtfəl"
+  },
+  {
+    "name": "sympathetic",
+    "trans": [
+      "adj. 同情的；和谐的"
+    ],
+    "usphone": "ˌsɪmpəˈθetɪk",
+    "ukphone": "ˌsɪmpəˈθetɪk"
+  },
+  {
+    "name": "ready",
+    "trans": [
+      "adj. 准备好的；愿意的"
+    ],
+    "usphone": "ˈredi",
+    "ukphone": "ˈredi"
+  },
+  {
+    "name": "apologise",
+    "trans": [
+      "v. 道歉，赔罪"
+    ],
+    "usphone": "əˈpɒlədʒaɪz",
+    "ukphone": "əˈpɒlədʒaɪz"
+  },
+  {
+    "name": "apology",
+    "trans": [
+      "n. 道歉；辩解"
+    ],
+    "usphone": "əˈpɒlədʒi",
+    "ukphone": "əˈpɒlədʒi"
+  },
+  {
+    "name": "mercy",
+    "trans": [
+      "n. 仁慈，宽容，怜悯"
+    ],
+    "usphone": "ˈmɜːsi",
+    "ukphone": "ˈmɜːsi"
+  },
+  {
+    "name": "admire",
+    "trans": [
+      "v. 赞美，钦佩，仰慕"
+    ],
+    "usphone": "ədˈmaɪə",
+    "ukphone": "ədˈmaɪə"
+  },
+  {
+    "name": "remarkable",
+    "trans": [
+      "adj. 值得注意的；非凡的，卓越的"
+    ],
+    "usphone": "rɪˈmɑːkəbəl",
+    "ukphone": "rɪˈmɑːkəbəl"
+  },
+  {
+    "name": "grateful",
+    "trans": [
+      "adj. 感激的；表示感激的"
+    ],
+    "usphone": "ˈɡreɪtfəl",
+    "ukphone": "ˈɡreɪtfəl"
+  },
+  {
+    "name": "gratitude",
+    "trans": [
+      "n. 感激，感谢，感恩"
+    ],
+    "usphone": "ˈɡrætɪtjuːd",
+    "ukphone": "ˈɡrætɪtjuːd"
+  },
+  {
+    "name": "eager",
+    "trans": [
+      "adj. 渴望的，热切的"
+    ],
+    "usphone": "ˈiːɡə",
+    "ukphone": "ˈiːɡə"
+  },
+  {
+    "name": "sound",
+    "trans": [
+      "adj. 健全的；（睡眠）酣畅的；合理的"
+    ],
+    "usphone": "saʊnd",
+    "ukphone": "saʊnd"
+  },
+  {
+    "name": "picturesque",
+    "trans": [
+      "adj. 如画的；独特的"
+    ],
+    "usphone": "ˌpɪktʃəˈresk",
+    "ukphone": "ˌpɪktʃəˈresk"
+  },
+  {
+    "name": "promising",
+    "trans": [
+      "adj. 大有希望的，有前途的"
+    ],
+    "usphone": "ˈprɒmɪsɪŋ",
+    "ukphone": "ˈprɒmɪsɪŋ"
+  },
+  {
+    "name": "prominent",
+    "trans": [
+      "adj. 突出的，显著的；重要的，杰出的"
+    ],
+    "usphone": "ˈprɒmɪnənt",
+    "ukphone": "ˈprɒmɪnənt"
+  },
+  {
+    "name": "awesome",
+    "trans": [
+      "adj. 卓越的，引起敬畏的"
+    ],
+    "usphone": "ˈɔːsəm",
+    "ukphone": "ˈɔːsəm"
+  },
+  {
+    "name": "arduous",
+    "trans": [
+      "adj. 辛勤的；费力的；陡峭的"
+    ],
+    "usphone": "ˈɑːdjuəs",
+    "ukphone": "ˈɑːdjuəs"
+  },
+  {
+    "name": "tough",
+    "trans": [
+      "adj. 艰难的；坚强的，坚韧不拔的；强硬的"
+    ],
+    "usphone": "tʌf",
+    "ukphone": "tʌf"
+  },
+  {
+    "name": "robust",
+    "trans": [
+      "adj. 强壮的，强健的"
+    ],
+    "usphone": "rəˈbʌst",
+    "ukphone": "rəˈbʌst"
+  },
+  {
+    "name": "sturdy",
+    "trans": [
+      "adj. 强健的；坚定的"
+    ],
+    "usphone": "ˈstɜːdi",
+    "ukphone": "ˈstɜːdi"
+  },
+  {
+    "name": "steadfast",
+    "trans": [
+      "adj. 坚定的"
+    ],
+    "usphone": "ˈstedfɑːst",
+    "ukphone": "ˈstedfɑːst"
+  },
+  {
+    "name": "tender",
+    "trans": [
+      "adj. 脆弱的；温柔的；软弱的；疼痛的"
+    ],
+    "usphone": "ˈtendə",
+    "ukphone": "ˈtendə"
+  },
+  {
+    "name": "temperate",
+    "trans": [
+      "adj. （气候）温和的；温带的；有节制的；心平气和的"
+    ],
+    "usphone": "ˈtempərət",
+    "ukphone": "ˈtempərət"
+  },
+  {
+    "name": "delicate",
+    "trans": [
+      "adj. 精致的；微妙的；脆弱的"
+    ],
+    "usphone": "ˈdelɪkət",
+    "ukphone": "ˈdelɪkət"
+  },
+  {
+    "name": "mundane",
+    "trans": [
+      "adj. 平凡的，世俗的；世界的"
+    ],
+    "usphone": "mʌnˈdeɪn",
+    "ukphone": "mʌnˈdeɪn"
+  },
+  {
+    "name": "naive",
+    "trans": [
+      "adj. 天真的；幼稚的"
+    ],
+    "usphone": "naɪˈiːv",
+    "ukphone": "naɪˈiːv"
+  },
+  {
+    "name": "childish",
+    "trans": [
+      "adj. 孩子般的；幼稚的"
+    ],
+    "usphone": "ˈtʃaɪldɪʃ",
+    "ukphone": "ˈtʃaɪldɪʃ"
+  },
+  {
+    "name": "sincere",
+    "trans": [
+      "adj. 真诚的，诚挚的"
+    ],
+    "usphone": "sɪnˈsɪə",
+    "ukphone": "sɪnˈsɪə"
+  },
+  {
+    "name": "liable",
+    "trans": [
+      "adj. 有责任的；有……倾向的，可能的"
+    ],
+    "usphone": "ˈlaɪəbl",
+    "ukphone": "ˈlaɪəbl"
+  },
+  {
+    "name": "trustworthy",
+    "trans": [
+      "adj. 值得信赖的，可靠的"
+    ],
+    "usphone": "ˈtrʌstˌwɜːði",
+    "ukphone": "ˈtrʌstˌwɜːði"
+  },
+  {
+    "name": "enterprising",
+    "trans": [
+      "adj. 有事业心的，有进取心的；有魄力的"
+    ],
+    "usphone": "ˈentəpraɪzɪŋ",
+    "ukphone": "ˈentəpraɪzɪŋ"
+  },
+  {
+    "name": "sane",
+    "trans": [
+      "adj. 心智健全的；理智的"
+    ],
+    "usphone": "seɪn",
+    "ukphone": "seɪn"
+  },
+  {
+    "name": "strenuous",
+    "trans": [
+      "adj. 发奋的；繁重的，艰苦的"
+    ],
+    "usphone": "ˈstrenjuəs",
+    "ukphone": "ˈstrenjuəs"
+  },
+  {
+    "name": "rigorous",
+    "trans": [
+      "adj. 严格的，严厉的；一丝不苟的"
+    ],
+    "usphone": "ˈrɪɡərəs",
+    "ukphone": "ˈrɪɡərəs"
+  },
+  {
+    "name": "strict",
+    "trans": [
+      "adj. 严格的；严厉的"
+    ],
+    "usphone": "strɪkt",
+    "ukphone": "strɪkt"
+  },
+  {
+    "name": "severe",
+    "trans": [
+      "adj. 严厉的；十分严重的；艰巨的"
+    ],
+    "usphone": "sɪˈvɪə",
+    "ukphone": "sɪˈvɪə"
+  },
+  {
+    "name": "mutual",
+    "trans": [
+      "adj. 相互的，彼此的；共同的"
+    ],
+    "usphone": "ˈmjuːtʃuəl",
+    "ukphone": "ˈmjuːtʃuəl"
+  },
+  {
+    "name": "resemble",
+    "trans": [
+      "v. 与……相像，类似"
+    ],
+    "usphone": "rɪˈzembəl",
+    "ukphone": "rɪˈzembəl"
+  },
+  {
+    "name": "similar",
+    "trans": [
+      "adj. 相似的，类似的"
+    ],
+    "usphone": "ˈsɪmɪlə",
+    "ukphone": "ˈsɪmɪlə"
+  },
+  {
+    "name": "familiar",
+    "trans": [
+      "adj. 熟悉的"
+    ],
+    "usphone": "fəˈmɪliə",
+    "ukphone": "fəˈmɪliə"
+  },
+  {
+    "name": "naked",
+    "trans": [
+      "adj. 裸体的，赤条条的"
+    ],
+    "usphone": "ˈneɪkɪd",
+    "ukphone": "ˈneɪkɪd"
+  },
+  {
+    "name": "bare",
+    "trans": [
+      "adj. 赤裸的；无遮蔽的"
+    ],
+    "usphone": "beə",
+    "ukphone": "beə"
+  },
+  {
+    "name": "private",
+    "trans": [
+      "adj. 私人的，个人的；私下的"
+    ],
+    "usphone": "ˈpraɪvɪt",
+    "ukphone": "ˈpraɪvɪt"
+  },
+  {
+    "name": "intuition",
+    "trans": [
+      "n. 直觉"
+    ],
+    "usphone": "ˌɪntjuːˈɪʃən",
+    "ukphone": "ˌɪntjuːˈɪʃən"
+  },
+  {
+    "name": "spontaneous",
+    "trans": [
+      "adj. 自发的，自然的，本能的；自然产生的"
+    ],
+    "usphone": "spɒnˈteɪniəs",
+    "ukphone": "spɒnˈteɪniəs"
+  },
+  {
+    "name": "implicit",
+    "trans": [
+      "adj. 暗示的，含蓄的；不怀疑的，无保留的"
+    ],
+    "usphone": "ɪmˈplɪsɪt",
+    "ukphone": "ɪmˈplɪsɪt"
+  },
+  {
+    "name": "illusion",
+    "trans": [
+      "n. 错觉；幻想"
+    ],
+    "usphone": "ɪˈluːʒən",
+    "ukphone": "ɪˈluːʒən"
+  },
+  {
+    "name": "imaginary",
+    "trans": [
+      "adj. 想象的，虚构的"
+    ],
+    "usphone": "ɪˈmædʒɪnəri",
+    "ukphone": "ɪˈmædʒɪnəri"
+  },
+  {
+    "name": "fancy",
+    "trans": [
+      "n. 想象（力）；爱好 v. 认为，想象"
+    ],
+    "usphone": "ˈfænsi",
+    "ukphone": "ˈfænsi"
+  },
+  {
+    "name": "fate",
+    "trans": [
+      "n. 命运，宿命"
+    ],
+    "usphone": "feɪt",
+    "ukphone": "feɪt"
+  },
+  {
+    "name": "fortune",
+    "trans": [
+      "n. 命运；运气；财产"
+    ],
+    "usphone": "ˈfɔːtʃuːn",
+    "ukphone": "ˈfɔːtʃuːn"
+  },
+  {
+    "name": "agony",
+    "trans": [
+      "n. 极度的痛苦；挣扎"
+    ],
+    "usphone": "ˈæɡəni",
+    "ukphone": "ˈæɡəni"
+  },
+  {
+    "name": "grief",
+    "trans": [
+      "n. 极度悲伤"
+    ],
+    "usphone": "ɡriːf",
+    "ukphone": "ɡriːf"
+  },
+  {
+    "name": "grieve",
+    "trans": [
+      "v. （使）悲痛"
+    ],
+    "usphone": "ɡriːv",
+    "ukphone": "ɡriːv"
+  },
+  {
+    "name": "miserable",
+    "trans": [
+      "adj. 极不愉快的，痛苦的"
+    ],
+    "usphone": "ˈmɪzərəbl",
+    "ukphone": "ˈmɪzərəbl"
+  },
+  {
+    "name": "distress",
+    "trans": [
+      "n. 悲痛；穷困，不幸 v. 使伤心，使忧虑"
+    ],
+    "usphone": "dɪˈstres",
+    "ukphone": "dɪˈstres"
+  },
+  {
+    "name": "sadness",
+    "trans": [
+      "n. 悲痛，悲哀"
+    ],
+    "usphone": "ˈsædnəs",
+    "ukphone": "ˈsædnəs"
+  },
+  {
+    "name": "gloomy",
+    "trans": [
+      "adj. 幽暗的；令人沮丧的"
+    ],
+    "usphone": "ˈɡluːmi",
+    "ukphone": "ˈɡluːmi"
+  },
+  {
+    "name": "frown",
+    "trans": [
+      "n. 皱眉，不悦 v. 皱眉，表示不悦"
+    ],
+    "usphone": "fraʊn",
+    "ukphone": "fraʊn"
+  },
+  {
+    "name": "disappoint",
+    "trans": [
+      "v. 使失望；使受挫折"
+    ],
+    "usphone": "ˌdɪsəˈpɔɪnt",
+    "ukphone": "ˌdɪsəˈpɔɪnt"
+  },
+  {
+    "name": "rage",
+    "trans": [
+      "n. 盛怒，狂怒"
+    ],
+    "usphone": "reɪdʒ",
+    "ukphone": "reɪdʒ"
+  },
+  {
+    "name": "discourage",
+    "trans": [
+      "v. 使灰心，使气馁；劝阻"
+    ],
+    "usphone": "dɪsˈkʌrɪdʒ",
+    "ukphone": "dɪsˈkʌrɪdʒ"
+  },
+  {
+    "name": "wretched",
+    "trans": [
+      "adj. 不幸的，可怜的，悲惨的；恶劣的"
+    ],
+    "usphone": "ˈretʃɪd",
+    "ukphone": "ˈretʃɪd"
+  },
+  {
+    "name": "frustrating",
+    "trans": [
+      "adj. 令人灰心的，使人沮丧的"
+    ],
+    "usphone": "frʌˈstreɪtɪŋ",
+    "ukphone": "frʌˈstreɪtɪŋ"
+  },
+  {
+    "name": "mourn",
+    "trans": [
+      "v. （因失去……而）哀痛，哀悼"
+    ],
+    "usphone": "mɔːn",
+    "ukphone": "mɔːn"
+  },
+  {
+    "name": "irritate",
+    "trans": [
+      "v. 激怒，使急躁；刺激"
+    ],
+    "usphone": "ˈɪrɪteɪt",
+    "ukphone": "ˈɪrɪteɪt"
+  },
+  {
+    "name": "anger",
+    "trans": [
+      "n. 怒，怒气 v. 使发怒"
+    ],
+    "usphone": "ˈæŋɡə",
+    "ukphone": "ˈæŋɡə"
+  },
+  {
+    "name": "hate",
+    "trans": [
+      "v. 恨，憎恨；不喜欢"
+    ],
+    "usphone": "heɪt",
+    "ukphone": "heɪt"
+  },
+  {
+    "name": "furious",
+    "trans": [
+      "adj. 狂怒的，暴怒的"
+    ],
+    "usphone": "ˈfjʊəriəs",
+    "ukphone": "ˈfjʊəriəs"
+  },
+  {
+    "name": "hatred",
+    "trans": [
+      "n. 憎恶，憎恨，仇恨"
+    ],
+    "usphone": "ˈheɪtrɪd",
+    "ukphone": "ˈheɪtrɪd"
+  },
+  {
+    "name": "nuisance",
+    "trans": [
+      "n. 讨厌或麻烦的人（或事物）"
+    ],
+    "usphone": "ˈnjuːsəns",
+    "ukphone": "ˈnjuːsəns"
+  },
+  {
+    "name": "disgust",
+    "trans": [
+      "v. 使厌恶，使作呕 n. 厌恶，嫌恶"
+    ],
+    "usphone": "dɪsˈɡʌst",
+    "ukphone": "dɪsˈɡʌst"
+  },
+  {
+    "name": "vex",
+    "trans": [
+      "v. 使烦恼，使恼火"
+    ],
+    "usphone": "veks",
+    "ukphone": "veks"
+  },
+  {
+    "name": "harass",
+    "trans": [
+      "v. 烦扰"
+    ],
+    "usphone": "ˈhærəs",
+    "ukphone": "ˈhærəs"
+  },
+  {
+    "name": "bore",
+    "trans": [
+      "v. 烦扰；钻孔 n. 讨厌的人；令人生厌的事"
+    ],
+    "usphone": "bɔː",
+    "ukphone": "bɔː"
+  },
+  {
+    "name": "bother",
+    "trans": [
+      "v. 花费时间精力（做某事）；（使）苦恼 n. 麻烦，困难"
+    ],
+    "usphone": "ˈbɒðə",
+    "ukphone": "ˈbɒðə"
+  },
+  {
+    "name": "troublesome",
+    "trans": [
+      "adj. 令人烦恼的；麻烦的"
+    ],
+    "usphone": "ˈtrʌbəlsəm",
+    "ukphone": "ˈtrʌbəlsəm"
+  },
+  {
+    "name": "awful",
+    "trans": [
+      "adj. 令人不愉快的，极讨厌的"
+    ],
+    "usphone": "ˈɔːfəl",
+    "ukphone": "ˈɔːfəl"
+  },
+  {
+    "name": "unpleasant",
+    "trans": [
+      "adj. 令人不愉快的，讨厌的"
+    ],
+    "usphone": "ʌnˈplezənt",
+    "ukphone": "ʌnˈplezənt"
+  },
+  {
+    "name": "adverse",
+    "trans": [
+      "adj. 敌对的，不友好的；不利的"
+    ],
+    "usphone": "ˈædvɜːs",
+    "ukphone": "ˈædvɜːs"
+  },
+  {
+    "name": "hostile",
+    "trans": [
+      "adj. 怀有敌意的，不友善的；敌对的"
+    ],
+    "usphone": "ˈhɒstaɪl",
+    "ukphone": "ˈhɒstaɪl"
+  },
+  {
+    "name": "indignant",
+    "trans": [
+      "adj. 愤慨的，义愤的"
+    ],
+    "usphone": "ɪnˈdɪɡnənt",
+    "ukphone": "ɪnˈdɪɡnənt"
+  },
+  {
+    "name": "radical",
+    "trans": [
+      "adj. 激进的；根本的"
+    ],
+    "usphone": "ˈrædɪkəl",
+    "ukphone": "ˈrædɪkəl"
+  },
+  {
+    "name": "mad",
+    "trans": [
+      "adj. 发疯的；恼火的"
+    ],
+    "usphone": "mæd",
+    "ukphone": "mæd"
+  },
+  {
+    "name": "crazy",
+    "trans": [
+      "adj. 疯狂的；荒唐的"
+    ],
+    "usphone": "ˈkreɪzi",
+    "ukphone": "ˈkreɪzi"
+  },
+  {
+    "name": "wicked",
+    "trans": [
+      "adj. 邪恶的，缺德的"
+    ],
+    "usphone": "ˈwɪkst",
+    "ukphone": "ˈwɪkst"
+  },
+  {
+    "name": "vicious",
+    "trans": [
+      "adj. 邪恶的，不道德的"
+    ],
+    "usphone": "ˈvɪʃəs",
+    "ukphone": "ˈvɪʃəs"
+  },
+  {
+    "name": "vulgar",
+    "trans": [
+      "adj. 粗俗的，庸俗的"
+    ],
+    "usphone": "ˈvʌlɡə",
+    "ukphone": "ˈvʌlɡə"
+  },
+  {
+    "name": "mean",
+    "trans": [
+      "adj. 卑鄙的；吝啬的 v. 意思是"
+    ],
+    "usphone": "miːn",
+    "ukphone": "miːn"
+  },
+  {
+    "name": "ego",
+    "trans": [
+      "n. 自我，自尊；自负"
+    ],
+    "usphone": "ˈiːɡəʊ",
+    "ukphone": "ˈiːɡəʊ"
+  },
+  {
+    "name": "selfish",
+    "trans": [
+      "adj. 自私的，利己主义的"
+    ],
+    "usphone": "ˈselfɪʃ",
+    "ukphone": "ˈselfɪʃ"
+  },
+  {
+    "name": "nasty",
+    "trans": [
+      "adj. 下流的；肮脏的；险恶的"
+    ],
+    "usphone": "ˈnæsti",
+    "ukphone": "ˈnæsti"
+  },
+  {
+    "name": "rash",
+    "trans": [
+      "adj. 草率的，鲁莽的"
+    ],
+    "usphone": "ræʃ",
+    "ukphone": "ræʃ"
+  },
+  {
+    "name": "volatile",
+    "trans": [
+      "adj. 易变的，反复无常的；易挥发的"
+    ],
+    "usphone": "ˈvɒləteɪl",
+    "ukphone": "ˈvɒləteɪl"
+  },
+  {
+    "name": "weird",
+    "trans": [
+      "adj. 怪诞的，古怪的"
+    ],
+    "usphone": "ˈwɪəd",
+    "ukphone": "ˈwɪəd"
+  },
+  {
+    "name": "excessive",
+    "trans": [
+      "adj. 过分的，过多的"
+    ],
+    "usphone": "ɪkˈsesɪv",
+    "ukphone": "ɪkˈsesɪv"
+  },
+  {
+    "name": "anxiety",
+    "trans": [
+      "n. 焦虑，担心；渴望"
+    ],
+    "usphone": "ˈænɪˈzeɪti",
+    "ukphone": "ˈænɪˈzeɪti"
+  },
+  {
+    "name": "restless",
+    "trans": [
+      "adj. 不安定的，焦躁不安的，不耐烦的"
+    ],
+    "usphone": "ˈrestl̩s",
+    "ukphone": "ˈrestl̩s"
+  },
+  {
+    "name": "uneasy",
+    "trans": [
+      "adj. 心神不安的，忧虑的"
+    ],
+    "usphone": "ʌnˈiːzi",
+    "ukphone": "ʌnˈiːzi"
+  },
+  {
+    "name": "fear",
+    "trans": [
+      "v./n. 害怕；担心"
+    ],
+    "usphone": "fɪə",
+    "ukphone": "fɪə"
+  },
+  {
+    "name": "timid",
+    "trans": [
+      "adj. 胆小的，羞怯的"
+    ],
+    "usphone": "ˈtɪmɪd",
+    "ukphone": "ˈtɪmɪd"
+  },
+  {
+    "name": "fuss",
+    "trans": [
+      "n. 大惊小怪，无谓的纷扰"
+    ],
+    "usphone": "fʌs",
+    "ukphone": "fʌs"
+  },
+  {
+    "name": "insult",
+    "trans": [
+      "v. 侮辱，凌辱 n. /ˈɪnsʌlt/ 侮辱"
+    ],
+    "usphone": "ɪnˈsʌlt",
+    "ukphone": "ɪnˈsʌlt"
+  },
+  {
+    "name": "unkind",
+    "trans": [
+      "adj. 不仁慈的，不和善的，刻薄的"
+    ],
+    "usphone": "ʌnˈkaɪnd",
+    "ukphone": "ʌnˈkaɪnd"
+  },
+  {
+    "name": "envy",
+    "trans": [
+      "v./n. 羡慕；嫉妒"
+    ],
+    "usphone": "ˈenvi",
+    "ukphone": "ˈenvi"
+  },
+  {
+    "name": "jealous",
+    "trans": [
+      "adj. 嫉妒的，妒忌的"
+    ],
+    "usphone": "ˈdʒeləs",
+    "ukphone": "ˈdʒeləs"
+  },
+  {
+    "name": "doubt",
+    "trans": [
+      "n. 怀疑，疑问 v. 怀疑，不信"
+    ],
+    "usphone": "daʊt",
+    "ukphone": "daʊt"
+  },
+  {
+    "name": "suspicion",
+    "trans": [
+      "n. 怀疑，嫌疑"
+    ],
+    "usphone": "səˈspɪʃən",
+    "ukphone": "səˈspɪʃən"
+  },
+  {
+    "name": "sceptical",
+    "trans": [
+      "adj. 怀疑的"
+    ],
+    "usphone": "ˈskeptɪkəl",
+    "ukphone": "ˈskeptɪkəl"
+  },
+  {
+    "name": "unsatisfactory",
+    "trans": [
+      "adj. 不能令人满意的，不符合要求的，不足的"
+    ],
+    "usphone": "ˌʌnsætɪsˈfæktəri",
+    "ukphone": "ˌʌnsætɪsˈfæktəri"
+  },
+  {
+    "name": "unstable",
+    "trans": [
+      "adj. 不稳定的；易变的；不牢固的"
+    ],
+    "usphone": "ʌnˈsteɪbəl",
+    "ukphone": "ʌnˈsteɪbəl"
+  },
+  {
+    "name": "unsuitable",
+    "trans": [
+      "adj. 不合适的，不适宜的"
+    ],
+    "usphone": "ʌnˈsuːtəbəl",
+    "ukphone": "ʌnˈsuːtəbəl"
+  },
+  {
+    "name": "unwilling",
+    "trans": [
+      "adj. 不愿意的，不情愿的；勉强的"
+    ],
+    "usphone": "ʌnˈwɪlɪŋ",
+    "ukphone": "ʌnˈwɪlɪŋ"
+  },
+  {
+    "name": "reluctant",
+    "trans": [
+      "adj. 不情愿的；勉强的"
+    ],
+    "usphone": "rɪˈlʌktənt",
+    "ukphone": "rɪˈlʌktənt"
+  },
+  {
+    "name": "hesitate",
+    "trans": [
+      "v. 犹豫不决，踌躇；顾虑"
+    ],
+    "usphone": "ˈhezɪteɪt",
+    "ukphone": "ˈhezɪteɪt"
+  },
+  {
+    "name": "confuse",
+    "trans": [
+      "v. 使困惑，把（某人）弄糊涂；混淆"
+    ],
+    "usphone": "kənˈfjuːz",
+    "ukphone": "kənˈfjuːz"
+  },
+  {
+    "name": "guilty",
+    "trans": [
+      "adj. 有罪的；内疚的"
+    ],
+    "usphone": "ˈɡɪlti",
+    "ukphone": "ˈɡɪlti"
+  },
+  {
+    "name": "embarrass",
+    "trans": [
+      "v. 使尴尬，使窘迫，使局促不安"
+    ],
+    "usphone": "ɪmˈbærəs",
+    "ukphone": "ɪmˈbærəs"
+  },
+  {
+    "name": "regret",
+    "trans": [
+      "n. 遗憾；抱歉；悲叹 v. 后悔；痛惜，惋惜"
+    ],
+    "usphone": "rɪˈɡret",
+    "ukphone": "rɪˈɡret"
+  },
+  {
+    "name": "repent",
+    "trans": [
+      "v. 忏悔；后悔"
+    ],
+    "usphone": "rɪˈpent",
+    "ukphone": "rɪˈpent"
+  },
+  {
+    "name": "ashamed",
+    "trans": [
+      "adj. 惭愧的，感到难为情的；耻于……的"
+    ],
+    "usphone": "əˈʃeɪmd",
+    "ukphone": "əˈʃeɪmd"
+  },
+  {
+    "name": "sigh",
+    "trans": [
+      "n. 叹息，叹气"
+    ],
+    "usphone": "saɪ",
+    "ukphone": "saɪ"
+  },
+  {
+    "name": "weep",
+    "trans": [
+      "v. 哭泣；流泪；哀悼 n. 哭泣"
+    ],
+    "usphone": "wiːp",
+    "ukphone": "wiːp"
+  },
+  {
+    "name": "tolerance",
+    "trans": [
+      "n. 忍受，容忍，宽容"
+    ],
+    "usphone": "ˈtɒlərəns",
+    "ukphone": "ˈtɒlərəns"
+  },
+  {
+    "name": "ignorant",
+    "trans": [
+      "adj. 无知的，没有学识的，愚昧的"
+    ],
+    "usphone": "ˈɪɡnərənt",
+    "ukphone": "ˈɪɡnərənt"
+  },
+  {
+    "name": "endure",
+    "trans": [
+      "v. 忍耐，忍受；持久"
+    ],
+    "usphone": "ɪnˈdjʊə",
+    "ukphone": "ɪnˈdjʊə"
+  },
+  {
+    "name": "sly",
+    "trans": [
+      "adj. 狡猾的，狡诈的"
+    ],
+    "usphone": "slɑɪ",
+    "ukphone": "slɑɪ"
+  },
+  {
+    "name": "cunning",
+    "trans": [
+      "adj. 狡猾的；巧妙的"
+    ],
+    "usphone": "ˈkʌnɪŋ",
+    "ukphone": "ˈkʌnɪŋ"
+  },
+  {
+    "name": "arbitrary",
+    "trans": [
+      "adj. 武断的，专断的；任意的"
+    ],
+    "usphone": "ˈɑːrbɪteri",
+    "ukphone": "ˈɑːrbɪteri"
+  },
+  {
+    "name": "ridiculous",
+    "trans": [
+      "adj. 荒谬的，可笑的"
+    ],
+    "usphone": "rɪˈdɪkjʊləs",
+    "ukphone": "rɪˈdɪkjʊləs"
+  },
+  {
+    "name": "stupid",
+    "trans": [
+      "adj. 愚蠢的；麻木的；乏味的 n. 傻瓜，笨蛋"
+    ],
+    "usphone": "ˈstjuːpɪd",
+    "ukphone": "ˈstjuːpɪd"
+  },
+  {
+    "name": "awkward",
+    "trans": [
+      "adj. 笨拙的；尴尬的；棘手的；不合适的"
+    ],
+    "usphone": "ˈɔːkwəd",
+    "ukphone": "ˈɔːkwəd"
+  },
+  {
+    "name": "clumsy",
+    "trans": [
+      "adj. 笨拙的"
+    ],
+    "usphone": "ˈklʌmzi",
+    "ukphone": "ˈklʌmzi"
+  },
+  {
+    "name": "careless",
+    "trans": [
+      "adj. 粗心的；无忧无虑的；淡漠的"
+    ],
+    "usphone": "ˈkerələs",
+    "ukphone": "ˈkerələs"
+  },
+  {
+    "name": "oblivious",
+    "trans": [
+      "adj. 不知道的，未注意的"
+    ],
+    "usphone": "əˈblɪviəs",
+    "ukphone": "əˈblɪviəs"
+  },
+  {
+    "name": "naughty",
+    "trans": [
+      "adj. 淘气的，顽皮的"
+    ],
+    "usphone": "ˈnɔːti",
+    "ukphone": "ˈnɔːti"
+  },
+  {
+    "name": "greedy",
+    "trans": [
+      "adj. 贪吃的；贪婪的"
+    ],
+    "usphone": "ˈɡriːdi",
+    "ukphone": "ˈɡriːdi"
+  },
+  {
+    "name": "obtrusive",
+    "trans": [
+      "adj. 过分炫耀的，过分突出的，扎眼的"
+    ],
+    "usphone": "ˈɒbtruːsɪv",
+    "ukphone": "ˈɒbtruːsɪv"
+  },
+  {
+    "name": "slothful",
+    "trans": [
+      "adj. 偷懒的，懒散的"
+    ],
+    "usphone": "ˈsləʊθfəl",
+    "ukphone": "ˈsləʊθfəl"
+  },
+  {
+    "name": "sluggish",
+    "trans": [
+      "adj. 行动迟缓的"
+    ],
+    "usphone": "ˈslʌɡɪʃ",
+    "ukphone": "ˈslʌɡɪʃ"
+  },
+  {
+    "name": "impulse",
+    "trans": [
+      "n. 冲动，心血来潮"
+    ],
+    "usphone": "ˈɪmpʌls",
+    "ukphone": "ˈɪmpʌls"
+  },
+  {
+    "name": "rigid",
+    "trans": [
+      "adj. 固执的；严格的；刚硬的"
+    ],
+    "usphone": "ˈrɪdʒɪd",
+    "ukphone": "ˈrɪdʒɪd"
+  },
+  {
+    "name": "stubborn",
+    "trans": [
+      "adj. 顽固的，固执的"
+    ],
+    "usphone": "ˈstʌbən",
+    "ukphone": "ˈstʌbən"
+  },
+  {
+    "name": "stereotype",
+    "trans": [
+      "n. 老一套，模式化观念，刻板印象"
+    ],
+    "usphone": "ˈsteriətaɪp",
+    "ukphone": "ˈsteriətaɪp"
+  }
+]

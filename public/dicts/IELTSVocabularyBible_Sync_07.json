@@ -1,0 +1,634 @@
+[
+  {
+    "name": "culture",
+    "trans": [
+      "n. 文化，文明；教养"
+    ],
+    "usphone": "ˈkʌltʃə",
+    "ukphone": "ˈkʌltʃə"
+  },
+  {
+    "name": "civilisation",
+    "trans": [
+      "n. 文明"
+    ],
+    "usphone": "ˌsɪvəlaɪˈzeɪʃən",
+    "ukphone": "ˌsɪvəlaɪˈzeɪʃən"
+  },
+  {
+    "name": "renaissance",
+    "trans": [
+      "n. [the R-] 文艺复兴时期"
+    ],
+    "usphone": "rɪˈneɪsəns",
+    "ukphone": "rɪˈneɪsəns"
+  },
+  {
+    "name": "epic",
+    "trans": [
+      "n. 史诗 adj. 宏大的"
+    ],
+    "usphone": "ˈepɪk",
+    "ukphone": "ˈepɪk"
+  },
+  {
+    "name": "ideology",
+    "trans": [
+      "n. 意识形态，思想体系"
+    ],
+    "usphone": "ˌaɪdɪˈɒlədʒi",
+    "ukphone": "ˌaɪdɪˈɒlədʒi"
+  },
+  {
+    "name": "tradition",
+    "trans": [
+      "n. 传统"
+    ],
+    "usphone": "trəˈdɪʃən",
+    "ukphone": "trəˈdɪʃən"
+  },
+  {
+    "name": "convention",
+    "trans": [
+      "n. 惯例；大型会议"
+    ],
+    "usphone": "kənˈvenʃən",
+    "ukphone": "kənˈvenʃən"
+  },
+  {
+    "name": "custom",
+    "trans": [
+      "n. 习俗；（个人的）习惯"
+    ],
+    "usphone": "ˈkʌstəm",
+    "ukphone": "ˈkʌstəm"
+  },
+  {
+    "name": "feudalism",
+    "trans": [
+      "n. 封建主义；封建制度"
+    ],
+    "usphone": "ˈfjuːdəlɪzəm",
+    "ukphone": "ˈfjuːdəlɪzəm"
+  },
+  {
+    "name": "slavery",
+    "trans": [
+      "n. 奴隶制"
+    ],
+    "usphone": "ˈsleɪvəri",
+    "ukphone": "ˈsleɪvəri"
+  },
+  {
+    "name": "ethical",
+    "trans": [
+      "adj. 伦理的，道德的"
+    ],
+    "usphone": "ˈeθɪkəl",
+    "ukphone": "ˈeθɪkəl"
+  },
+  {
+    "name": "moral",
+    "trans": [
+      "adj. 道德上的；有道德的 n. [-s] 道德"
+    ],
+    "usphone": "ˈmɔːrəl",
+    "ukphone": "ˈmɔːrəl"
+  },
+  {
+    "name": "tribe",
+    "trans": [
+      "n. 部落"
+    ],
+    "usphone": "traɪb",
+    "ukphone": "traɪb"
+  },
+  {
+    "name": "aboriginal",
+    "trans": [
+      "n. [A-] 澳大利亚土著人 adj. 本土原有的；土著的"
+    ],
+    "usphone": "ˌæbəˈrɪdʒɪnəl",
+    "ukphone": "ˌæbəˈrɪdʒɪnəl"
+  },
+  {
+    "name": "inhabitant",
+    "trans": [
+      "n. 居民"
+    ],
+    "usphone": "ɪnˈhæbɪtənt",
+    "ukphone": "ɪnˈhæbɪtənt"
+  },
+  {
+    "name": "native",
+    "trans": [
+      "adj. 本土的 n. 本地人"
+    ],
+    "usphone": "ˈneɪtɪv",
+    "ukphone": "ˈneɪtɪv"
+  },
+  {
+    "name": "local",
+    "trans": [
+      "adj. 当地的 n. 当地人"
+    ],
+    "usphone": "ˈləʊkəl",
+    "ukphone": "ˈləʊkəl"
+  },
+  {
+    "name": "exotic",
+    "trans": [
+      "adj. 外来的；异国情调的"
+    ],
+    "usphone": "ɪɡˈzɒtɪk",
+    "ukphone": "ɪɡˈzɒtɪk"
+  },
+  {
+    "name": "foreigner",
+    "trans": [
+      "n. 外国人"
+    ],
+    "usphone": "ˈfɒrɪnə",
+    "ukphone": "ˈfɒrɪnə"
+  },
+  {
+    "name": "alien",
+    "trans": [
+      "n. 外侨；外星生物 adj. 外国的；陌生的"
+    ],
+    "usphone": "ˈeɪliən",
+    "ukphone": "ˈeɪliən"
+  },
+  {
+    "name": "anthropologist",
+    "trans": [
+      "n. 人类学家"
+    ],
+    "usphone": "ˌænθrəˈpɒlədʒɪst",
+    "ukphone": "ˌænθrəˈpɒlədʒɪst"
+  },
+  {
+    "name": "humanitarian",
+    "trans": [
+      "n. 人道主义者 adj. 人道主义的，博爱的"
+    ],
+    "usphone": "hjuːˌmænɪˈteəriən",
+    "ukphone": "hjuːˌmænɪˈteəriən"
+  },
+  {
+    "name": "heritage",
+    "trans": [
+      "n. （国家的）遗产"
+    ],
+    "usphone": "ˈherɪtɪdʒ",
+    "ukphone": "ˈherɪtɪdʒ"
+  },
+  {
+    "name": "inherit",
+    "trans": [
+      "v. 继承（财产等）；经遗传获得"
+    ],
+    "usphone": "ɪnˈherɪt",
+    "ukphone": "ɪnˈherɪt"
+  },
+  {
+    "name": "antique",
+    "trans": [
+      "n. 古董 adj. 古董的"
+    ],
+    "usphone": "ænˈtiːk",
+    "ukphone": "ænˈtiːk"
+  },
+  {
+    "name": "archaeology",
+    "trans": [
+      "n. 考古学"
+    ],
+    "usphone": "ˌɑːkiˈɒlədʒi",
+    "ukphone": "ˌɑːkiˈɒlədʒi"
+  },
+  {
+    "name": "excavate",
+    "trans": [
+      "v. 挖掘，发掘"
+    ],
+    "usphone": "ˈekskəveɪt",
+    "ukphone": "ˈekskəveɪt"
+  },
+  {
+    "name": "museum",
+    "trans": [
+      "n. 博物馆"
+    ],
+    "usphone": "mjuːˈziːəm",
+    "ukphone": "mjuːˈziːəm"
+  },
+  {
+    "name": "pottery",
+    "trans": [
+      "n. 陶器"
+    ],
+    "usphone": "ˈpɒtəri",
+    "ukphone": "ˈpɒtəri"
+  },
+  {
+    "name": "engrave",
+    "trans": [
+      "v. 在......上雕刻"
+    ],
+    "usphone": "ɪnˈɡreɪv",
+    "ukphone": "ɪnˈɡreɪv"
+  },
+  {
+    "name": "decorate",
+    "trans": [
+      "v. 装饰"
+    ],
+    "usphone": "ˈdekəreɪt",
+    "ukphone": "ˈdekəreɪt"
+  },
+  {
+    "name": "religion",
+    "trans": [
+      "n. 宗教，宗教信仰"
+    ],
+    "usphone": "rɪˈlɪdʒən",
+    "ukphone": "rɪˈlɪdʒən"
+  },
+  {
+    "name": "ritual",
+    "trans": [
+      "n. 仪式"
+    ],
+    "usphone": "ˈrɪtʃuəl",
+    "ukphone": "ˈrɪtʃuəl"
+  },
+  {
+    "name": "etiquette",
+    "trans": [
+      "n. 礼仪，礼节"
+    ],
+    "usphone": "ˈetɪket",
+    "ukphone": "ˈetɪket"
+  },
+  {
+    "name": "belief",
+    "trans": [
+      "n. 信念；信仰"
+    ],
+    "usphone": "bɪˈliːf",
+    "ukphone": "bɪˈliːf"
+  },
+  {
+    "name": "soul",
+    "trans": [
+      "n. 灵魂；心灵；精神"
+    ],
+    "usphone": "səʊl",
+    "ukphone": "səʊl"
+  },
+  {
+    "name": "spirit",
+    "trans": [
+      "n. 精神，心灵"
+    ],
+    "usphone": "ˈspɪrɪt",
+    "ukphone": "ˈspɪrɪt"
+  },
+  {
+    "name": "sacred",
+    "trans": [
+      "adj. 神圣的；宗教的"
+    ],
+    "usphone": "ˈseɪkrɪd",
+    "ukphone": "ˈseɪkrɪd"
+  },
+  {
+    "name": "hallowed",
+    "trans": [
+      "adj. 神圣的；受尊崇的"
+    ],
+    "usphone": "ˈhæləʊd",
+    "ukphone": "ˈhæləʊd"
+  },
+  {
+    "name": "holy",
+    "trans": [
+      "adj. 神圣的；圣洁的，虔诚的"
+    ],
+    "usphone": "ˈhəʊli",
+    "ukphone": "ˈhəʊli"
+  },
+  {
+    "name": "Pope",
+    "trans": [
+      "n. 教皇"
+    ],
+    "usphone": "pəʊp",
+    "ukphone": "pəʊp"
+  },
+  {
+    "name": "bishop",
+    "trans": [
+      "n. 主教"
+    ],
+    "usphone": "ˈbɪʃəp",
+    "ukphone": "ˈbɪʃəp"
+  },
+  {
+    "name": "missionary",
+    "trans": [
+      "n. 传教士"
+    ],
+    "usphone": "ˈmɪʃənəri",
+    "ukphone": "ˈmɪʃənəri"
+  },
+  {
+    "name": "priest",
+    "trans": [
+      "n. 牧师；神父；教士"
+    ],
+    "usphone": "priːst",
+    "ukphone": "priːst"
+  },
+  {
+    "name": "Bible",
+    "trans": [
+      "n. 基督教的《圣经》"
+    ],
+    "usphone": "ˈbaɪbəl",
+    "ukphone": "ˈbaɪbəl"
+  },
+  {
+    "name": "church",
+    "trans": [
+      "n. 教堂"
+    ],
+    "usphone": "tʃɜːtʃ",
+    "ukphone": "tʃɜːtʃ"
+  },
+  {
+    "name": "cathedral",
+    "trans": [
+      "n. 大教堂"
+    ],
+    "usphone": "kəˈθiːdrəl",
+    "ukphone": "kəˈθiːdrəl"
+  },
+  {
+    "name": "choir",
+    "trans": [
+      "n. 唱诗班"
+    ],
+    "usphone": "kwaɪə",
+    "ukphone": "kwaɪə"
+  },
+  {
+    "name": "monk",
+    "trans": [
+      "n. 僧侣"
+    ],
+    "usphone": "mʌŋk",
+    "ukphone": "mʌŋk"
+  },
+  {
+    "name": "temple",
+    "trans": [
+      "n. 寺院，庙宇"
+    ],
+    "usphone": "ˈtempəl",
+    "ukphone": "ˈtempəl"
+  },
+  {
+    "name": "pagoda",
+    "trans": [
+      "n. 佛塔"
+    ],
+    "usphone": "pəˈɡəʊdə",
+    "ukphone": "pəˈɡəʊdə"
+  },
+  {
+    "name": "empire",
+    "trans": [
+      "n. 帝国"
+    ],
+    "usphone": "ˈempaɪə",
+    "ukphone": "ˈempaɪə"
+  },
+  {
+    "name": "imperial",
+    "trans": [
+      "adj. 帝国的"
+    ],
+    "usphone": "ɪmˈpɪəriəl",
+    "ukphone": "ɪmˈpɪəriəl"
+  },
+  {
+    "name": "royal",
+    "trans": [
+      "adj. 皇家的；高贵的"
+    ],
+    "usphone": "ˈrɔɪəl",
+    "ukphone": "ˈrɔɪəl"
+  },
+  {
+    "name": "dynasty",
+    "trans": [
+      "n. 朝代"
+    ],
+    "usphone": "ˈdɪnəsti",
+    "ukphone": "ˈdɪnəsti"
+  },
+  {
+    "name": "chronology",
+    "trans": [
+      "n. 年表，事件发生顺序表；年代学"
+    ],
+    "usphone": "krəˈnɒlədʒi",
+    "ukphone": "krəˈnɒlədʒi"
+  },
+  {
+    "name": "emperor",
+    "trans": [
+      "n. 皇帝"
+    ],
+    "usphone": "ˈempərə",
+    "ukphone": "ˈempərə"
+  },
+  {
+    "name": "king",
+    "trans": [
+      "n. 国王"
+    ],
+    "usphone": "kɪŋ",
+    "ukphone": "kɪŋ"
+  },
+  {
+    "name": "queen",
+    "trans": [
+      "n. 王后；女王"
+    ],
+    "usphone": "kwiːn",
+    "ukphone": "kwiːn"
+  },
+  {
+    "name": "prince",
+    "trans": [
+      "n. 王子；亲王"
+    ],
+    "usphone": "prɪns",
+    "ukphone": "prɪns"
+  },
+  {
+    "name": "princess",
+    "trans": [
+      "n. 公主；王妃"
+    ],
+    "usphone": "prɪnˈses",
+    "ukphone": "prɪnˈses"
+  },
+  {
+    "name": "majesty",
+    "trans": [
+      "n. 威严，壮观；陛下"
+    ],
+    "usphone": "ˈmædʒəsti",
+    "ukphone": "ˈmædʒəsti"
+  },
+  {
+    "name": "nobility",
+    "trans": [
+      "n. 高尚的品质；贵族"
+    ],
+    "usphone": "nəʊˈbɪlɪti",
+    "ukphone": "nəʊˈbɪlɪti"
+  },
+  {
+    "name": "lord",
+    "trans": [
+      "n. （英国）贵族；[L-]阁下，大人；[the L-]上帝"
+    ],
+    "usphone": "lɔːd",
+    "ukphone": "lɔːd"
+  },
+  {
+    "name": "knight",
+    "trans": [
+      "n. 骑士 v. 封（某人）为爵士"
+    ],
+    "usphone": "naɪt",
+    "ukphone": "naɪt"
+  },
+  {
+    "name": "guardian",
+    "trans": [
+      "n. 保卫者；监护人 adj. 守护的"
+    ],
+    "usphone": "ˈɡɑːdiən",
+    "ukphone": "ˈɡɑːdiən"
+  },
+  {
+    "name": "nostalgia",
+    "trans": [
+      "n. 思乡之情；怀旧之情"
+    ],
+    "usphone": "nɒˈstældʒə",
+    "ukphone": "nɒˈstældʒə"
+  },
+  {
+    "name": "homesick",
+    "trans": [
+      "adj. 思乡的"
+    ],
+    "usphone": "ˈhəʊmsɪk",
+    "ukphone": "ˈhəʊmsɪk"
+  },
+  {
+    "name": "anecdote",
+    "trans": [
+      "n. 轶事，奇闻"
+    ],
+    "usphone": "ˈænɪkdəʊt",
+    "ukphone": "ˈænɪkdəʊt"
+  },
+  {
+    "name": "accident",
+    "trans": [
+      "n. 事故；意外，偶然的事"
+    ],
+    "usphone": "ˈæksɪdənt",
+    "ukphone": "ˈæksɪdənt"
+  },
+  {
+    "name": "incident",
+    "trans": [
+      "n. （尤指不寻常的、重要的或暴力的）事件；（两国间的）冲突"
+    ],
+    "usphone": "ˈɪnsɪdənt",
+    "ukphone": "ˈɪnsɪdənt"
+  },
+  {
+    "name": "celebrity",
+    "trans": [
+      "n. 名人；名誉"
+    ],
+    "usphone": "sɪˈlebrɪti",
+    "ukphone": "sɪˈlebrɪti"
+  },
+  {
+    "name": "status",
+    "trans": [
+      "n. 地位，身份"
+    ],
+    "usphone": "ˈsteɪtəs",
+    "ukphone": "ˈsteɪtəs"
+  },
+  {
+    "name": "background",
+    "trans": [
+      "n. 背景；（个人出身、受教育）经历"
+    ],
+    "usphone": "ˈbækɡraʊnd",
+    "ukphone": "ˈbækɡraʊnd"
+  },
+  {
+    "name": "experience",
+    "trans": [
+      "n. 经验；（一次）经历，体验"
+    ],
+    "usphone": "ɪkˈspɪəriəns",
+    "ukphone": "ɪkˈspɪəriəns"
+  },
+  {
+    "name": "thrive",
+    "trans": [
+      "v. 繁荣，兴旺发达；茁壮生长"
+    ],
+    "usphone": "θraɪv",
+    "ukphone": "θraɪv"
+  },
+  {
+    "name": "prosperity",
+    "trans": [
+      "n. 繁荣，兴旺"
+    ],
+    "usphone": "prɒˈsperɪti",
+    "ukphone": "prɒˈsperɪti"
+  },
+  {
+    "name": "setback",
+    "trans": [
+      "n. 挫折，阻碍"
+    ],
+    "usphone": "ˈsetbæk",
+    "ukphone": "ˈsetbæk"
+  },
+  {
+    "name": "adversity",
+    "trans": [
+      "n. 逆境"
+    ],
+    "usphone": "ædˈvɜːsɪti",
+    "ukphone": "ædˈvɜːsɪti"
+  }
+]

@@ -1,0 +1,810 @@
+[
+  {
+    "name": "law",
+    "trans": [
+      "n. 法律；规律；定理"
+    ],
+    "usphone": "lɔː",
+    "ukphone": "lɔː"
+  },
+  {
+    "name": "legal",
+    "trans": [
+      "adj. 法律的；合法的"
+    ],
+    "usphone": "lɪɡəl",
+    "ukphone": "lɪɡəl"
+  },
+  {
+    "name": "rule",
+    "trans": [
+      "n. 规则 v. 统治"
+    ],
+    "usphone": "ruːl",
+    "ukphone": "ruːl"
+  },
+  {
+    "name": "regulation",
+    "trans": [
+      "n. 规则，规定；管理"
+    ],
+    "usphone": "ˌreɡjɪˈleɪʃən",
+    "ukphone": "ˌreɡjɪˈleɪʃən"
+  },
+  {
+    "name": "item",
+    "trans": [
+      "n. 一项项目，条目"
+    ],
+    "usphone": "ˈaɪtəm",
+    "ukphone": "ˈaɪtəm"
+  },
+  {
+    "name": "treaty",
+    "trans": [
+      "n. 条约；协议"
+    ],
+    "usphone": "ˈtrɪti",
+    "ukphone": "ˈtrɪti"
+  },
+  {
+    "name": "agreement",
+    "trans": [
+      "n. 协定；同意"
+    ],
+    "usphone": "əˈɡriːmənt",
+    "ukphone": "əˈɡriːmənt"
+  },
+  {
+    "name": "charter",
+    "trans": [
+      "n. 宪章 v. 租，包（船、车、飞机等）"
+    ],
+    "usphone": "ˈtʃɑːtə",
+    "ukphone": "ˈtʃɑːtə"
+  },
+  {
+    "name": "protocol",
+    "trans": [
+      "n. 议定书，协议；礼仪"
+    ],
+    "usphone": "ˈprəʊtəkl",
+    "ukphone": "ˈprəʊtəkl"
+  },
+  {
+    "name": "norm",
+    "trans": [
+      "n. 标准；[-s] 行为准则，规范"
+    ],
+    "usphone": "nɔːm",
+    "ukphone": "nɔːm"
+  },
+  {
+    "name": "benchmark",
+    "trans": [
+      "n. 基准，水准点"
+    ],
+    "usphone": "ˈbentʃmɑːk",
+    "ukphone": "ˈbentʃmɑːk"
+  },
+  {
+    "name": "criteria",
+    "trans": [
+      "n. （复数）标准，准则"
+    ],
+    "usphone": "kraɪˈtɪəriə",
+    "ukphone": "kraɪˈtɪəriə"
+  },
+  {
+    "name": "standard",
+    "trans": [
+      "n. 标准"
+    ],
+    "usphone": "ˈstændɪd",
+    "ukphone": "ˈstændɪd"
+  },
+  {
+    "name": "permit",
+    "trans": [
+      "v. 允许，准许"
+    ],
+    "usphone": "pəˈmɪt",
+    "ukphone": "pəˈmɪt"
+  },
+  {
+    "name": "allow",
+    "trans": [
+      "v. 允许，准许"
+    ],
+    "usphone": "əˈlaʊ",
+    "ukphone": "əˈlaʊ"
+  },
+  {
+    "name": "admission",
+    "trans": [
+      "n. 承认；入场费；准许进入"
+    ],
+    "usphone": "ədˈmɪʃən",
+    "ukphone": "ədˈmɪʃən"
+  },
+  {
+    "name": "perform",
+    "trans": [
+      "v. 履行，执行"
+    ],
+    "usphone": "pəˈfɔːm",
+    "ukphone": "pəˈfɔːm"
+  },
+  {
+    "name": "enforce",
+    "trans": [
+      "v. 强制执行，强行实施；迫使"
+    ],
+    "usphone": "ɪnˈfɔːs",
+    "ukphone": "ɪnˈfɔːs"
+  },
+  {
+    "name": "default",
+    "trans": [
+      "v. 不支付，不履行； n. 违约；默认值"
+    ],
+    "usphone": "dɪˈfɔːlt",
+    "ukphone": "dɪˈfɔːlt"
+  },
+  {
+    "name": "reject",
+    "trans": [
+      "v. 拒绝接受；摒弃"
+    ],
+    "usphone": "rɪˈdʒekt",
+    "ukphone": "rɪˈdʒekt"
+  },
+  {
+    "name": "constraint",
+    "trans": [
+      "n. 约束，限制；克制"
+    ],
+    "usphone": "kənˈstreɪnt",
+    "ukphone": "kənˈstreɪnt"
+  },
+  {
+    "name": "official",
+    "trans": [
+      "adj. 正式的，官方的"
+    ],
+    "usphone": "əˈfɪʃəl",
+    "ukphone": "əˈfɪʃəl"
+  },
+  {
+    "name": "mandatory",
+    "trans": [
+      "adj. 法定的，强制的"
+    ],
+    "usphone": "ˈmændətəri",
+    "ukphone": "ˈmændətəri"
+  },
+  {
+    "name": "potent",
+    "trans": [
+      "adj. 很有效的，强有力的"
+    ],
+    "usphone": "ˈpəʊtənt",
+    "ukphone": "ˈpəʊtənt"
+  },
+  {
+    "name": "bound",
+    "trans": [
+      "adj. [be ~ to] 一定会，很可能，有义务"
+    ],
+    "usphone": "baʊnd",
+    "ukphone": "baʊnd"
+  },
+  {
+    "name": "obligation",
+    "trans": [
+      "n. 义务，责任"
+    ],
+    "usphone": "ˌɒblɪˈɡeɪʃən",
+    "ukphone": "ˌɒblɪˈɡeɪʃən"
+  },
+  {
+    "name": "court",
+    "trans": [
+      "n. 法院；庭院"
+    ],
+    "usphone": "kɔːt",
+    "ukphone": "kɔːt"
+  },
+  {
+    "name": "supreme",
+    "trans": [
+      "adj. 最高的；最大的"
+    ],
+    "usphone": "suːˈpriːm",
+    "ukphone": "suːˈpriːm"
+  },
+  {
+    "name": "enact",
+    "trans": [
+      "v. 通过（法律）；表演"
+    ],
+    "usphone": "ɪˈnækt",
+    "ukphone": "ɪˈnækt"
+  },
+  {
+    "name": "legislate",
+    "trans": [
+      "v. 立法，制定法律"
+    ],
+    "usphone": "ˈledʒɪsleɪt",
+    "ukphone": "ˈledʒɪsleɪt"
+  },
+  {
+    "name": "equity",
+    "trans": [
+      "n. 公平"
+    ],
+    "usphone": "ˈekwəti",
+    "ukphone": "ˈekwəti"
+  },
+  {
+    "name": "fair",
+    "trans": [
+      "adj. 公平的，公正的"
+    ],
+    "usphone": "feə",
+    "ukphone": "feə"
+  },
+  {
+    "name": "just",
+    "trans": [
+      "adj. 公正的；正义的"
+    ],
+    "usphone": "dʒʌst",
+    "ukphone": "dʒʌst"
+  },
+  {
+    "name": "prejudice",
+    "trans": [
+      "n. 偏见，成见"
+    ],
+    "usphone": "ˈpredʒʊdɪs",
+    "ukphone": "ˈpredʒʊdɪs"
+  },
+  {
+    "name": "discrimination",
+    "trans": [
+      "n. 歧视"
+    ],
+    "usphone": "dɪˌskrɪmɪˈneɪʃən",
+    "ukphone": "dɪˌskrɪmɪˈneɪʃən"
+  },
+  {
+    "name": "accuse",
+    "trans": [
+      "v. 控告，指责"
+    ],
+    "usphone": "əˈkjuːz",
+    "ukphone": "əˈkjuːz"
+  },
+  {
+    "name": "sue",
+    "trans": [
+      "v. 控告，提起诉讼"
+    ],
+    "usphone": "sjuː",
+    "ukphone": "sjuː"
+  },
+  {
+    "name": "prosecute",
+    "trans": [
+      "v. 检举，起诉"
+    ],
+    "usphone": "ˈprɒsɪkjuːt",
+    "ukphone": "ˈprɒsɪkjuːt"
+  },
+  {
+    "name": "condemn",
+    "trans": [
+      "v. 谴责，指责"
+    ],
+    "usphone": "kənˈdem",
+    "ukphone": "kənˈdem"
+  },
+  {
+    "name": "complain",
+    "trans": [
+      "v. 抱怨；投诉"
+    ],
+    "usphone": "kəmˈpleɪn",
+    "ukphone": "kəmˈpleɪn"
+  },
+  {
+    "name": "boycott",
+    "trans": [
+      "n./v. 抵制，拒绝购买"
+    ],
+    "usphone": "ˈbɔɪkɒt",
+    "ukphone": "ˈbɔɪkɒt"
+  },
+  {
+    "name": "session",
+    "trans": [
+      "n. 会议；会期"
+    ],
+    "usphone": "ˈseʃən",
+    "ukphone": "ˈseʃən"
+  },
+  {
+    "name": "mediate",
+    "trans": [
+      "v. 斡旋，调解"
+    ],
+    "usphone": "ˈmiːdieɪt",
+    "ukphone": "ˈmiːdieɪt"
+  },
+  {
+    "name": "plea",
+    "trans": [
+      "n. 辩解理由，借口；请求"
+    ],
+    "usphone": "pliː",
+    "ukphone": "pliː"
+  },
+  {
+    "name": "appeal",
+    "trans": [
+      "v./n. 呼吁；申诉"
+    ],
+    "usphone": "əˈpiːl",
+    "ukphone": "əˈpiːl"
+  },
+  {
+    "name": "contradict",
+    "trans": [
+      "v. 反驳；与......矛盾"
+    ],
+    "usphone": "ˌkɒntrəˈdɪkt",
+    "ukphone": "ˌkɒntrəˈdɪkt"
+  },
+  {
+    "name": "persuade",
+    "trans": [
+      "v. 说服；使相信"
+    ],
+    "usphone": "pəˈsweɪd",
+    "ukphone": "pəˈsweɪd"
+  },
+  {
+    "name": "controversy",
+    "trans": [
+      "n. 争议；辩论"
+    ],
+    "usphone": "ˈkɒntrəvɜːsi",
+    "ukphone": "ˈkɒntrəvɜːsi"
+  },
+  {
+    "name": "whisper",
+    "trans": [
+      "v. 低声说；私下谈论"
+    ],
+    "usphone": "ˈwɪspə",
+    "ukphone": "ˈwɪspə"
+  },
+  {
+    "name": "mutter",
+    "trans": [
+      "v. 轻声低语；小声抱怨"
+    ],
+    "usphone": "ˈmʌtə",
+    "ukphone": "ˈmʌtə"
+  },
+  {
+    "name": "murmur",
+    "trans": [
+      "v. 低声说 n. 咕哝，低语"
+    ],
+    "usphone": "ˈmɜːmə",
+    "ukphone": "ˈmɜːmə"
+  },
+  {
+    "name": "silent",
+    "trans": [
+      "adj. 沉默的；寂静无声的"
+    ],
+    "usphone": "ˈsaɪlənt",
+    "ukphone": "ˈsaɪlənt"
+  },
+  {
+    "name": "mute",
+    "trans": [
+      "adj. 缄默的；哑的；无声的 n. 哑巴"
+    ],
+    "usphone": "mjuːt",
+    "ukphone": "mjuːt"
+  },
+  {
+    "name": "investigate",
+    "trans": [
+      "v. 调查"
+    ],
+    "usphone": "ɪnˈvestɪɡeɪt",
+    "ukphone": "ɪnˈvestɪɡeɪt"
+  },
+  {
+    "name": "witness",
+    "trans": [
+      "n. 目击者，见证人 v. 目击"
+    ],
+    "usphone": "ˈwɪtnəs",
+    "ukphone": "ˈwɪtnəs"
+  },
+  {
+    "name": "commit",
+    "trans": [
+      "v. 犯（罪），做（坏事）"
+    ],
+    "usphone": "kəˈmɪt",
+    "ukphone": "kəˈmɪt"
+  },
+  {
+    "name": "sin",
+    "trans": [
+      "n. 罪孽 v. 犯戒律"
+    ],
+    "usphone": "sɪn",
+    "ukphone": "sɪn"
+  },
+  {
+    "name": "crime",
+    "trans": [
+      "n. 罪行；犯罪活动"
+    ],
+    "usphone": "kraɪm",
+    "ukphone": "kraɪm"
+  },
+  {
+    "name": "vice",
+    "trans": [
+      "n. 恶行；缺点"
+    ],
+    "usphone": "vaɪs",
+    "ukphone": "vaɪs"
+  },
+  {
+    "name": "bribe",
+    "trans": [
+      "n. 贿赂 v. 向......行贿"
+    ],
+    "usphone": "braɪb",
+    "ukphone": "braɪb"
+  },
+  {
+    "name": "rob",
+    "trans": [
+      "v. 抢劫；夺走"
+    ],
+    "usphone": "rɒb",
+    "ukphone": "rɒb"
+  },
+  {
+    "name": "pirate",
+    "trans": [
+      "n. 海盗；盗版者 v. 盗印，窃用"
+    ],
+    "usphone": "paɪˈreɪt",
+    "ukphone": "paɪˈreɪt"
+  },
+  {
+    "name": "steal",
+    "trans": [
+      "v. 偷，窃取；剽窃"
+    ],
+    "usphone": "stiːl",
+    "ukphone": "stiːl"
+  },
+  {
+    "name": "thief",
+    "trans": [
+      "n. 窃贼，偷窃犯"
+    ],
+    "usphone": "θiːf",
+    "ukphone": "θiːf"
+  },
+  {
+    "name": "murder",
+    "trans": [
+      "n./v. 谋杀"
+    ],
+    "usphone": "ˈmɜːdə",
+    "ukphone": "ˈmɜːdə"
+  },
+  {
+    "name": "suicide",
+    "trans": [
+      "n. 自杀"
+    ],
+    "usphone": "ˈsuːɪsaɪd",
+    "ukphone": "ˈsuːɪsaɪd"
+  },
+  {
+    "name": "deceive",
+    "trans": [
+      "v. 欺骗；蒙蔽，误导"
+    ],
+    "usphone": "dɪˈsiːv",
+    "ukphone": "dɪˈsiːv"
+  },
+  {
+    "name": "cheat",
+    "trans": [
+      "v. 欺骗；作弊 n. 作弊者"
+    ],
+    "usphone": "tʃiːt",
+    "ukphone": "tʃiːt"
+  },
+  {
+    "name": "fraud",
+    "trans": [
+      "n. 骗子；赝品；欺诈"
+    ],
+    "usphone": "frɔːd",
+    "ukphone": "frɔːd"
+  },
+  {
+    "name": "liar",
+    "trans": [
+      "n. 说谎的人"
+    ],
+    "usphone": "ˈlaɪə",
+    "ukphone": "ˈlaɪə"
+  },
+  {
+    "name": "trap",
+    "trans": [
+      "n. 陷阱；诡计 v. 诱骗"
+    ],
+    "usphone": "træp",
+    "ukphone": "træp"
+  },
+  {
+    "name": "trick",
+    "trans": [
+      "n. 诡计 v. 哄骗"
+    ],
+    "usphone": "trɪk",
+    "ukphone": "trɪk"
+  },
+  {
+    "name": "pretend",
+    "trans": [
+      "v. 假装；假扮"
+    ],
+    "usphone": "prɪˈtend",
+    "ukphone": "prɪˈtend"
+  },
+  {
+    "name": "fool",
+    "trans": [
+      "n. 蠢人，傻子 v. 欺骗"
+    ],
+    "usphone": "fuːl",
+    "ukphone": "fuːl"
+  },
+  {
+    "name": "stigma",
+    "trans": [
+      "n. 耻辱，污名"
+    ],
+    "usphone": "ˈstɪɡmə",
+    "ukphone": "ˈstɪɡmə"
+  },
+  {
+    "name": "confess",
+    "trans": [
+      "v. 供认；忏悔"
+    ],
+    "usphone": "kənˈfes",
+    "ukphone": "kənˈfes"
+  },
+  {
+    "name": "conform",
+    "trans": [
+      "v. 遵守；顺从；相符合"
+    ],
+    "usphone": "kənˈfɔːm",
+    "ukphone": "kənˈfɔːm"
+  },
+  {
+    "name": "reconcile",
+    "trans": [
+      "v. 使和解；调和"
+    ],
+    "usphone": "ˈrekənsaɪl",
+    "ukphone": "ˈrekənsaɪl"
+  },
+  {
+    "name": "obey",
+    "trans": [
+      "v. 服从，顺从"
+    ],
+    "usphone": "əʊˈbeɪ",
+    "ukphone": "əʊˈbeɪ"
+  },
+  {
+    "name": "succumb",
+    "trans": [
+      "v. 屈服，屈从"
+    ],
+    "usphone": "səˈkʌm",
+    "ukphone": "səˈkʌm"
+  },
+  {
+    "name": "penalty",
+    "trans": [
+      "n. 惩罚，处罚"
+    ],
+    "usphone": "ˈpenlti",
+    "ukphone": "ˈpenlti"
+  },
+  {
+    "name": "fine",
+    "trans": [
+      "n. 罚款 adj. 美好的"
+    ],
+    "usphone": "faɪn",
+    "ukphone": "faɪn"
+  },
+  {
+    "name": "mortgage",
+    "trans": [
+      "v. 抵押（房屋、土地）借款 n. 房屋抵押贷款"
+    ],
+    "usphone": "ˈmɔːɡɪdʒ",
+    "ukphone": "ˈmɔːɡɪdʒ"
+  },
+  {
+    "name": "ownership",
+    "trans": [
+      "n. 所有权，物主身份"
+    ],
+    "usphone": "ˈəʊnəʃɪp",
+    "ukphone": "ˈəʊnəʃɪp"
+  },
+  {
+    "name": "copyright",
+    "trans": [
+      "n. 版权"
+    ],
+    "usphone": "ˈkɒpiraɪt",
+    "ukphone": "ˈkɒpiraɪt"
+  },
+  {
+    "name": "privilege",
+    "trans": [
+      "n. 特权"
+    ],
+    "usphone": "ˈprɪvəlɪdʒ",
+    "ukphone": "ˈprɪvəlɪdʒ"
+  },
+  {
+    "name": "accredit",
+    "trans": [
+      "v. 把......归于；委任"
+    ],
+    "usphone": "əˈkredɪt",
+    "ukphone": "əˈkredɪt"
+  },
+  {
+    "name": "clue",
+    "trans": [
+      "n. 线索；提示"
+    ],
+    "usphone": "kluː",
+    "ukphone": "kluː"
+  },
+  {
+    "name": "access",
+    "trans": [
+      "n. 通路，入径；使用机会"
+    ],
+    "usphone": "ˈækses",
+    "ukphone": "ˈækses"
+  },
+  {
+    "name": "anonymous",
+    "trans": [
+      "adj. 匿名的"
+    ],
+    "usphone": "əˈnɒnɪməs",
+    "ukphone": "əˈnɒnɪməs"
+  },
+  {
+    "name": "false",
+    "trans": [
+      "adj. 不正确的；虚假的；伪造的"
+    ],
+    "usphone": "fɔːls",
+    "ukphone": "fɔːls"
+  },
+  {
+    "name": "genuine",
+    "trans": [
+      "adj. 真诚的；真正的"
+    ],
+    "usphone": "ˈdʒenjuːɪn",
+    "ukphone": "ˈdʒenjuːɪn"
+  },
+  {
+    "name": "procedure",
+    "trans": [
+      "n. 手续；程序"
+    ],
+    "usphone": "prəˈsiːdʒə",
+    "ukphone": "prəˈsiːdʒə"
+  },
+  {
+    "name": "routine",
+    "trans": [
+      "n. 例行公事；常规 adj. 惯例的"
+    ],
+    "usphone": "ruːˈtiːn",
+    "ukphone": "ruːˈtiːn"
+  },
+  {
+    "name": "consequence",
+    "trans": [
+      "n. 后果"
+    ],
+    "usphone": "ˈkɒnsɪkwəns",
+    "ukphone": "ˈkɒnsɪkwəns"
+  },
+  {
+    "name": "demand",
+    "trans": [
+      "v. 要求；需要 n. 需求"
+    ],
+    "usphone": "dɪˈmænd",
+    "ukphone": "dɪˈmænd"
+  },
+  {
+    "name": "request",
+    "trans": [
+      "n./v. 要求，请求"
+    ],
+    "usphone": "rɪˈkwest",
+    "ukphone": "rɪˈkwest"
+  },
+  {
+    "name": "require",
+    "trans": [
+      "v. 需要；命令，规定"
+    ],
+    "usphone": "rɪˈkwaɪə",
+    "ukphone": "rɪˈkwaɪə"
+  },
+  {
+    "name": "petition",
+    "trans": [
+      "v. 请求 n. 请愿书；上诉"
+    ],
+    "usphone": "pɪˈtɪʃn",
+    "ukphone": "pɪˈtɪʃn"
+  },
+  {
+    "name": "command",
+    "trans": [
+      "v. 命令；指挥 n. 命令；控制；运用能力"
+    ],
+    "usphone": "kəˈmænd",
+    "ukphone": "kəˈmænd"
+  },
+  {
+    "name": "instruct",
+    "trans": [
+      "v. 指导，讲授；通知；命令"
+    ],
+    "usphone": "ɪnˈstrʌkt",
+    "ukphone": "ɪnˈstrʌkt"
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "name": "daily",
+    "trans": [
+      "adj. adv. n. 每日的；每日；日报"
+    ],
+    "usphone": "ˈdeɪli",
+    "ukphone": "ˈdeɪli"
+  },
+  {
+    "name": "monthly",
+    "trans": [
+      "adj. adv. n. 每月的；每月一次；月刊"
+    ],
+    "usphone": "ˈmʌnθli",
+    "ukphone": "ˈmʌnθli"
+  },
+  {
+    "name": "quarterly",
+    "trans": [
+      "adj. adv. n. 季度的；按季度地；季刊"
+    ],
+    "usphone": "ˈkwɔːtəli",
+    "ukphone": "ˈkwɔːtəli"
+  },
+  {
+    "name": "annual",
+    "trans": [
+      "adj. n. 每年的；一年的；年报"
+    ],
+    "usphone": "ˈænjuəl",
+    "ukphone": "ˈænjuəl"
+  },
+  {
+    "name": "yearly",
+    "trans": [
+      "adj. adv. 每年的；每年地"
+    ],
+    "usphone": "ˈjɪəli",
+    "ukphone": "ˈjɪəli"
+  },
+  {
+    "name": "anniversary",
+    "trans": [
+      "n. 周年纪念日"
+    ],
+    "usphone": "ˌænɪˈvɜːsəri",
+    "ukphone": "ˌænɪˈvɜːsəri"
+  },
+  {
+    "name": "era",
+    "trans": [
+      "n. 时代，年代，纪元"
+    ],
+    "usphone": "ˈɪərə",
+    "ukphone": "ˈɪərə"
+  },
+  {
+    "name": "present",
+    "trans": [
+      "adj. n. 现在的；目前；礼物"
+    ],
+    "usphone": "ˈpreznt",
+    "ukphone": "ˈpreznt"
+  },
+  {
+    "name": "contemporary",
+    "trans": [
+      "adj. 当代的；同时代的"
+    ],
+    "usphone": "kənˈtemprəri",
+    "ukphone": "kənˈtemprəri"
+  },
+  {
+    "name": "medieval",
+    "trans": [
+      "adj. 中世纪的；守旧的"
+    ],
+    "usphone": "ˌmediˈiːvəl",
+    "ukphone": "ˌmediˈiːvəl"
+  },
+  {
+    "name": "century",
+    "trans": [
+      "n. 世纪；百年"
+    ],
+    "usphone": "ˈsentʃəri",
+    "ukphone": "ˈsentʃəri"
+  },
+  {
+    "name": "millennium",
+    "trans": [
+      "n. 一千年，千年期；千禧年"
+    ],
+    "usphone": "mɪˈleniəm",
+    "ukphone": "mɪˈleniəm"
+  },
+  {
+    "name": "million",
+    "trans": [
+      "num. n. 百万；大量"
+    ],
+    "usphone": "ˈmɪljən",
+    "ukphone": "ˈmɪljən"
+  },
+  {
+    "name": "billion",
+    "trans": [
+      "num. n. 十亿；大量"
+    ],
+    "usphone": "ˈbɪljən",
+    "ukphone": "ˈbɪljən"
+  },
+  {
+    "name": "dozen",
+    "trans": [
+      "n. 一打，十二个；十来个"
+    ],
+    "usphone": "ˈdʌzn",
+    "ukphone": "ˈdʌzn"
+  },
+  {
+    "name": "dawn",
+    "trans": [
+      "n. v. 黎明；开端；破晓"
+    ],
+    "usphone": "dɔːn",
+    "ukphone": "dɔːn"
+  },
+  {
+    "name": "midday",
+    "trans": [
+      "n. 正午，中午"
+    ],
+    "usphone": "ˌmɪdˈdeɪ",
+    "ukphone": "ˌmɪdˈdeɪ"
+  },
+  {
+    "name": "midnight",
+    "trans": [
+      "n. 午夜，子夜"
+    ],
+    "usphone": "ˈmɪdnaɪt",
+    "ukphone": "ˈmɪdnaɪt"
+  },
+  {
+    "name": "overnight",
+    "trans": [
+      "adv. adj. 在晚上；一夜之间；突然"
+    ],
+    "usphone": "ˌəʊvəˈnaɪt",
+    "ukphone": "ˌəʊvəˈnaɪt"
+  },
+  {
+    "name": "night",
+    "trans": [
+      "n. 夜，夜间"
+    ],
+    "usphone": "naɪt",
+    "ukphone": "naɪt"
+  },
+  {
+    "name": "modern",
+    "trans": [
+      "adj. 现代的；近代的"
+    ],
+    "usphone": "ˈmɒdn",
+    "ukphone": "ˈmɒdn"
+  },
+  {
+    "name": "recent",
+    "trans": [
+      "adj. 新近的，最近的"
+    ],
+    "usphone": "ˈriːsnt",
+    "ukphone": "ˈriːsnt"
+  },
+  {
+    "name": "up-to-date",
+    "trans": [
+      "adj. 直到目前的；现代的，最新的"
+    ],
+    "usphone": "ˌʌp tə ˈdeɪt",
+    "ukphone": "ˌʌp tə ˈdeɪt"
+  },
+  {
+    "name": "first",
+    "trans": [
+      "ord. adv. 第一；最初"
+    ],
+    "usphone": "fɜːst",
+    "ukphone": "fɜːst"
+  },
+  {
+    "name": "secondly",
+    "trans": [
+      "adv. 第二，其次"
+    ],
+    "usphone": "ˈsekəndli",
+    "ukphone": "ˈsekəndli"
+  },
+  {
+    "name": "finally",
+    "trans": [
+      "adv. 最后；终于；决定性地"
+    ],
+    "usphone": "ˈfaɪnəli",
+    "ukphone": "ˈfaɪnəli"
+  },
+  {
+    "name": "finish",
+    "trans": [
+      "v. n. 完成；结束；结尾"
+    ],
+    "usphone": "ˈfɪnɪʃ",
+    "ukphone": "ˈfɪnɪʃ"
+  },
+  {
+    "name": "immediately",
+    "trans": [
+      "adv. 立即；直接地"
+    ],
+    "usphone": "ɪˈmiːdiətli",
+    "ukphone": "ɪˈmiːdiətli"
+  },
+  {
+    "name": "instant",
+    "trans": [
+      "n. adj. 瞬间；立即的"
+    ],
+    "usphone": "ˈɪnstənt",
+    "ukphone": "ˈɪnstənt"
+  },
+  {
+    "name": "moment",
+    "trans": [
+      "n. 片刻；时刻"
+    ],
+    "usphone": "ˈməʊmənt",
+    "ukphone": "ˈməʊmənt"
+  },
+  {
+    "name": "minute",
+    "trans": [
+      "n. adj. 分钟；一会儿；细微的"
+    ],
+    "usphone": "ˈmɪnɪt (n.) maɪˈnjuːt (adj.)",
+    "ukphone": "ˈmɪnɪt (n.) maɪˈnjuːt (adj.)"
+  },
+  {
+    "name": "prior",
+    "trans": [
+      "adj. 在先的，在前的"
+    ],
+    "usphone": "ˈpraɪə",
+    "ukphone": "ˈpraɪə"
+  },
+  {
+    "name": "former",
+    "trans": [
+      "adj. pron. 以前的；前者的；前者"
+    ],
+    "usphone": "ˈfɔːmə",
+    "ukphone": "ˈfɔːmə"
+  },
+  {
+    "name": "preceding",
+    "trans": [
+      "adj. 在前的，在先的"
+    ],
+    "usphone": "prɪˈsiːdɪŋ",
+    "ukphone": "prɪˈsiːdɪŋ"
+  },
+  {
+    "name": "precedent",
+    "trans": [
+      "n. 先例；常规"
+    ],
+    "usphone": "ˈpresɪdənt",
+    "ukphone": "ˈpresɪdənt"
+  },
+  {
+    "name": "foremost",
+    "trans": [
+      "adj. 最前的；最重要的"
+    ],
+    "usphone": "ˈfɔːməʊst",
+    "ukphone": "ˈfɔːməʊst"
+  },
+  {
+    "name": "opening",
+    "trans": [
+      "adj. n. 开始的；开始，开端"
+    ],
+    "usphone": "ˈəʊpnɪŋ",
+    "ukphone": "ˈəʊpnɪŋ"
+  },
+  {
+    "name": "initially",
+    "trans": [
+      "adv. 最初"
+    ],
+    "usphone": "ɪˈnɪʃəli",
+    "ukphone": "ɪˈnɪʃəli"
+  },
+  {
+    "name": "intermediate",
+    "trans": [
+      "adj. 中间的"
+    ],
+    "usphone": "ˌɪntəˈmiːdiət",
+    "ukphone": "ˌɪntəˈmiːdiət"
+  },
+  {
+    "name": "midst",
+    "trans": [
+      "n. 中部，中间"
+    ],
+    "usphone": "mɪdst",
+    "ukphone": "mɪdst"
+  },
+  {
+    "name": "meantime",
+    "trans": [
+      "n. 其间"
+    ],
+    "usphone": "ˈmiːntaɪm",
+    "ukphone": "ˈmiːntaɪm"
+  },
+  {
+    "name": "meanwhile",
+    "trans": [
+      "adv. 同时，其间"
+    ],
+    "usphone": "ˈmiːnwaɪl",
+    "ukphone": "ˈmiːnwaɪl"
+  },
+  {
+    "name": "simultaneous",
+    "trans": [
+      "adj. 同时发生（或进行）的"
+    ],
+    "usphone": "ˌsɪmlˈteɪniəs",
+    "ukphone": "ˌsɪmlˈteɪniəs"
+  },
+  {
+    "name": "ongoing",
+    "trans": [
+      "adj. 进行中的；继续存在的"
+    ],
+    "usphone": "ˈɒŋɡəʊɪŋ",
+    "ukphone": "ˈɒŋɡəʊɪŋ"
+  },
+  {
+    "name": "everlasting",
+    "trans": [
+      "adj. 永恒的"
+    ],
+    "usphone": "ˌevəˈlɑːstɪŋ",
+    "ukphone": "ˌevəˈlɑːstɪŋ"
+  },
+  {
+    "name": "permanent",
+    "trans": [
+      "adj. 永久的"
+    ],
+    "usphone": "ˈpɜːmənənt",
+    "ukphone": "ˈpɜːmənənt"
+  },
+  {
+    "name": "punctual",
+    "trans": [
+      "adj. 准时的，守时的"
+    ],
+    "usphone": "ˈpʌŋktʃuəl",
+    "ukphone": "ˈpʌŋktʃuəl"
+  },
+  {
+    "name": "duration",
+    "trans": [
+      "n. 持续时间；期间"
+    ],
+    "usphone": "djuˈreɪʃn",
+    "ukphone": "djuˈreɪʃn"
+  },
+  {
+    "name": "consecutive",
+    "trans": [
+      "adj. 连续不断的"
+    ],
+    "usphone": "kənˈsekjətɪv",
+    "ukphone": "kənˈsekjətɪv"
+  },
+  {
+    "name": "periodically",
+    "trans": [
+      "adv. 周期性地，定期地"
+    ],
+    "usphone": "ˌpɪəriˈɒdɪkli",
+    "ukphone": "ˌpɪəriˈɒdɪkli"
+  },
+  {
+    "name": "imminent",
+    "trans": [
+      "adj. （尤指不愉快的事）即将发生的，逼近的"
+    ],
+    "usphone": "ˈɪmɪnənt",
+    "ukphone": "ˈɪmɪnənt"
+  },
+  {
+    "name": "incidentally",
+    "trans": [
+      "adv. 偶然地；顺便提一句"
+    ],
+    "usphone": "ˌɪnsɪˈdentəli",
+    "ukphone": "ˌɪnsɪˈdentəli"
+  },
+  {
+    "name": "subsequent",
+    "trans": [
+      "adj. 随后的，后来的"
+    ],
+    "usphone": "ˈsʌbsɪkwənt",
+    "ukphone": "ˈsʌbsɪkwənt"
+  },
+  {
+    "name": "chronological",
+    "trans": [
+      "adj. 按时间顺序的"
+    ],
+    "usphone": "ˌkrɒnəˈlɒdʒɪkl",
+    "ukphone": "ˌkrɒnəˈlɒdʒɪkl"
+  },
+  {
+    "name": "epoch",
+    "trans": [
+      "n. 时代，纪元；重要时期"
+    ],
+    "usphone": "ˈiːpɒk",
+    "ukphone": "ˈiːpɒk"
+  },
+  {
+    "name": "postpone",
+    "trans": [
+      "v. 推迟，延期"
+    ],
+    "usphone": "pəˈspəʊn",
+    "ukphone": "pəˈspəʊn"
+  },
+  {
+    "name": "premature",
+    "trans": [
+      "adj. 过早的；未成熟的"
+    ],
+    "usphone": "ˈpremətʃə",
+    "ukphone": "ˈpremətʃə"
+  }
+]

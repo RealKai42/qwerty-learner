@@ -1,0 +1,730 @@
+[
+  {
+    "name": "fashion",
+    "trans": [
+      "n. 时尚；制作，制成"
+    ],
+    "usphone": "ˈfæʃən",
+    "ukphone": "ˈfæʃən"
+  },
+  {
+    "name": "style",
+    "trans": [
+      "n. 风格；样式；时尚"
+    ],
+    "usphone": "staɪl",
+    "ukphone": "staɪl"
+  },
+  {
+    "name": "trend",
+    "trans": [
+      "n. 趋势，倾向"
+    ],
+    "usphone": "trend",
+    "ukphone": "trend"
+  },
+  {
+    "name": "tendency",
+    "trans": [
+      "n. 趋势；倾向，偏好"
+    ],
+    "usphone": "ˈtendənsi",
+    "ukphone": "ˈtendənsi"
+  },
+  {
+    "name": "current",
+    "trans": [
+      "n. 潮流，趋势 adj. 当前的"
+    ],
+    "usphone": "ˈkʌrənt",
+    "ukphone": "ˈkʌrənt"
+  },
+  {
+    "name": "popularity",
+    "trans": [
+      "n. 流行"
+    ],
+    "usphone": "ˌpɒpjʊˈlærɪti",
+    "ukphone": "ˌpɒpjʊˈlærɪti"
+  },
+  {
+    "name": "vogue",
+    "trans": [
+      "n. 流行"
+    ],
+    "usphone": "vəʊɡ",
+    "ukphone": "vəʊɡ"
+  },
+  {
+    "name": "prevail",
+    "trans": [
+      "v. 盛行；获胜"
+    ],
+    "usphone": "prɪˈveɪl",
+    "ukphone": "prɪˈveɪl"
+  },
+  {
+    "name": "model",
+    "trans": [
+      "n. 模型；模范；模特儿 v. 使模仿"
+    ],
+    "usphone": "ˈmɒdəl",
+    "ukphone": "ˈmɒdəl"
+  },
+  {
+    "name": "icon",
+    "trans": [
+      "n. 偶像；图标"
+    ],
+    "usphone": "ˈaɪkɒn",
+    "ukphone": "ˈaɪkɒn"
+  },
+  {
+    "name": "idol",
+    "trans": [
+      "n. 偶像，受到崇拜的人或物；神像"
+    ],
+    "usphone": "ˈaɪdəl",
+    "ukphone": "ˈaɪdəl"
+  },
+  {
+    "name": "luxury",
+    "trans": [
+      "n. 奢侈；奢侈品"
+    ],
+    "usphone": "ˈlʌkʃəri",
+    "ukphone": "ˈlʌkʃəri"
+  },
+  {
+    "name": "extravagant",
+    "trans": [
+      "adj. 奢侈的；过分的"
+    ],
+    "usphone": "ɪkˈstrævəɡənt",
+    "ukphone": "ɪkˈstrævəɡənt"
+  },
+  {
+    "name": "jewellery",
+    "trans": [
+      "n. 珠宝，首饰"
+    ],
+    "usphone": "ˈdʒuːəlri",
+    "ukphone": "ˈdʒuːəlri"
+  },
+  {
+    "name": "jewel",
+    "trans": [
+      "n. 宝石"
+    ],
+    "usphone": "ˈdʒuːəl",
+    "ukphone": "ˈdʒuːəl"
+  },
+  {
+    "name": "gem",
+    "trans": [
+      "n. 宝石；珍品"
+    ],
+    "usphone": "dʒem",
+    "ukphone": "dʒem"
+  },
+  {
+    "name": "jade",
+    "trans": [
+      "n. 玉石，翡翠"
+    ],
+    "usphone": "dʒeɪd",
+    "ukphone": "dʒeɪd"
+  },
+  {
+    "name": "adorn",
+    "trans": [
+      "v. 装饰，装扮"
+    ],
+    "usphone": "əˈdɔːn",
+    "ukphone": "əˈdɔːn"
+  },
+  {
+    "name": "ornament",
+    "trans": [
+      "n. 装饰品 v. 装饰"
+    ],
+    "usphone": "ˈɔːnəmənt",
+    "ukphone": "ˈɔːnəmənt"
+  },
+  {
+    "name": "embellish",
+    "trans": [
+      "v. 修饰"
+    ],
+    "usphone": "ɪmˈbelɪʃ",
+    "ukphone": "ɪmˈbelɪʃ"
+  },
+  {
+    "name": "embroider",
+    "trans": [
+      "v. 对（故事等）加以渲染；在......上刺绣"
+    ],
+    "usphone": "ɪmˈbrɔɪdə",
+    "ukphone": "ɪmˈbrɔɪdə"
+  },
+  {
+    "name": "hairdressing",
+    "trans": [
+      "n. 美发，理发"
+    ],
+    "usphone": "ˈheəˌdresɪŋ",
+    "ukphone": "ˈheəˌdresɪŋ"
+  },
+  {
+    "name": "pigment",
+    "trans": [
+      "n. 色素；颜料"
+    ],
+    "usphone": "ˈpɪɡmənt",
+    "ukphone": "ˈpɪɡmənt"
+  },
+  {
+    "name": "dye",
+    "trans": [
+      "n. 染料；（染上的）颜色 v. 染"
+    ],
+    "usphone": "daɪ",
+    "ukphone": "daɪ"
+  },
+  {
+    "name": "masquerade",
+    "trans": [
+      "n. 化装舞会 v. 化装；假扮"
+    ],
+    "usphone": "ˌmæskəˈreɪd",
+    "ukphone": "ˌmæskəˈreɪd"
+  },
+  {
+    "name": "veil",
+    "trans": [
+      "n. 面纱；遮蔽物"
+    ],
+    "usphone": "veɪl",
+    "ukphone": "veɪl"
+  },
+  {
+    "name": "costume",
+    "trans": [
+      "n. 戏服；（某历史时期或某地的）服装"
+    ],
+    "usphone": "ˈkɒstjuːm",
+    "ukphone": "ˈkɒstjuːm"
+  },
+  {
+    "name": "fascinate",
+    "trans": [
+      "v. 迷住"
+    ],
+    "usphone": "ˈfæsɪneɪt",
+    "ukphone": "ˈfæsɪneɪt"
+  },
+  {
+    "name": "decent",
+    "trans": [
+      "adj. 得体的；尚好的"
+    ],
+    "usphone": "ˈdiːsənt",
+    "ukphone": "ˈdiːsənt"
+  },
+  {
+    "name": "exquisite",
+    "trans": [
+      "adj. 精致的；雅致的"
+    ],
+    "usphone": "ɪkˈskwɪzɪt",
+    "ukphone": "ɪkˈskwɪzɪt"
+  },
+  {
+    "name": "grace",
+    "trans": [
+      "n. 优美，优雅"
+    ],
+    "usphone": "ɡreɪs",
+    "ukphone": "ɡreɪs"
+  },
+  {
+    "name": "elegance",
+    "trans": [
+      "n. 文雅，典雅"
+    ],
+    "usphone": "ˈelɪɡəns",
+    "ukphone": "ˈelɪɡəns"
+  },
+  {
+    "name": "perfect",
+    "trans": [
+      "adj. 完美的"
+    ],
+    "usphone": "ˈpɜːfɪkt",
+    "ukphone": "ˈpɜːfɪkt"
+  },
+  {
+    "name": "appearance",
+    "trans": [
+      "n. 外貌；出现"
+    ],
+    "usphone": "əˈpɪərəns",
+    "ukphone": "əˈpɪərəns"
+  },
+  {
+    "name": "cosmetics",
+    "trans": [
+      "n. 化妆品"
+    ],
+    "usphone": "kɒzˈmetɪks",
+    "ukphone": "kɒzˈmetɪks"
+  },
+  {
+    "name": "make-up",
+    "trans": [
+      "n. 化妆品；组成成分；性格"
+    ],
+    "usphone": "ˈmeɪkʌp",
+    "ukphone": "ˈmeɪkʌp"
+  },
+  {
+    "name": "handsome",
+    "trans": [
+      "adj. 数量大的；英俊的"
+    ],
+    "usphone": "ˈhænsəm",
+    "ukphone": "ˈhænsəm"
+  },
+  {
+    "name": "charming",
+    "trans": [
+      "adj. 迷人的"
+    ],
+    "usphone": "ˈtʃɑːmɪŋ",
+    "ukphone": "ˈtʃɑːmɪŋ"
+  },
+  {
+    "name": "pretty",
+    "trans": [
+      "adj. 漂亮的 adv. 相当地"
+    ],
+    "usphone": "ˈprɪti",
+    "ukphone": "ˈprɪti"
+  },
+  {
+    "name": "beautiful",
+    "trans": [
+      "adj. 美丽的"
+    ],
+    "usphone": "ˈbjuːtɪfəl",
+    "ukphone": "ˈbjuːtɪfəl"
+  },
+  {
+    "name": "ugly",
+    "trans": [
+      "adj. 丑陋的"
+    ],
+    "usphone": "ˈʌɡli",
+    "ukphone": "ˈʌɡli"
+  },
+  {
+    "name": "dress",
+    "trans": [
+      "n. 衣服；连衣裙"
+    ],
+    "usphone": "dres",
+    "ukphone": "dres"
+  },
+  {
+    "name": "clothe",
+    "trans": [
+      "v. 给......穿衣；为......提供衣服"
+    ],
+    "usphone": "kləʊð",
+    "ukphone": "kləʊð"
+  },
+  {
+    "name": "uniform",
+    "trans": [
+      "n. 制服 adj. 一致的"
+    ],
+    "usphone": "ˈjuːnɪfɔːm",
+    "ukphone": "ˈjuːnɪfɔːm"
+  },
+  {
+    "name": "purse",
+    "trans": [
+      "n. [尤英]钱包；[美]小手提包"
+    ],
+    "usphone": "pɜːs",
+    "ukphone": "pɜːs"
+  },
+  {
+    "name": "wallet",
+    "trans": [
+      "n. 钱包，皮夹子"
+    ],
+    "usphone": "ˈwɒlɪt",
+    "ukphone": "ˈwɒlɪt"
+  },
+  {
+    "name": "vest",
+    "trans": [
+      "n. [英]汗衫；[美]西装背心"
+    ],
+    "usphone": "vest",
+    "ukphone": "vest"
+  },
+  {
+    "name": "wrap",
+    "trans": [
+      "n. 披肩"
+    ],
+    "usphone": "ræp",
+    "ukphone": "ræp"
+  },
+  {
+    "name": "cloak",
+    "trans": [
+      "n. 斗篷；覆盖物"
+    ],
+    "usphone": "kləʊk",
+    "ukphone": "kləʊk"
+  },
+  {
+    "name": "collar",
+    "trans": [
+      "n. 衣领；项圈"
+    ],
+    "usphone": "ˈkɒlə",
+    "ukphone": "ˈkɒlə"
+  },
+  {
+    "name": "sleeve",
+    "trans": [
+      "n. 袖子"
+    ],
+    "usphone": "sliːv",
+    "ukphone": "sliːv"
+  },
+  {
+    "name": "sock",
+    "trans": [
+      "n. 短袜"
+    ],
+    "usphone": "sɒk",
+    "ukphone": "sɒk"
+  },
+  {
+    "name": "stocking",
+    "trans": [
+      "n. （女式）长筒袜"
+    ],
+    "usphone": "ˈstɒkɪŋ",
+    "ukphone": "ˈstɒkɪŋ"
+  },
+  {
+    "name": "slipper",
+    "trans": [
+      "n. 拖鞋"
+    ],
+    "usphone": "ˈslɪpə",
+    "ukphone": "ˈslɪpə"
+  },
+  {
+    "name": "boot",
+    "trans": [
+      "n. 靴子"
+    ],
+    "usphone": "buːt",
+    "ukphone": "buːt"
+  },
+  {
+    "name": "lace",
+    "trans": [
+      "n. 鞋带；花边"
+    ],
+    "usphone": "leɪs",
+    "ukphone": "leɪs"
+  },
+  {
+    "name": "tailor",
+    "trans": [
+      "n. 裁缝 v. 专门制作"
+    ],
+    "usphone": "ˈteɪlə",
+    "ukphone": "ˈteɪlə"
+  },
+  {
+    "name": "sew",
+    "trans": [
+      "v. 缝制，缝补"
+    ],
+    "usphone": "səʊ",
+    "ukphone": "səʊ"
+  },
+  {
+    "name": "spin",
+    "trans": [
+      "v. 纺；（使）旋转 n. 高速旋转；（乘车）兜风"
+    ],
+    "usphone": "spɪn",
+    "ukphone": "spɪn"
+  },
+  {
+    "name": "stitch",
+    "trans": [
+      "n. 针脚 v. 缝"
+    ],
+    "usphone": "stɪtʃ",
+    "ukphone": "stɪtʃ"
+  },
+  {
+    "name": "needle",
+    "trans": [
+      "n. 针"
+    ],
+    "usphone": "ˈniːdl",
+    "ukphone": "ˈniːdl"
+  },
+  {
+    "name": "pin",
+    "trans": [
+      "n. 别针，大头针 v. 别住，钉住"
+    ],
+    "usphone": "pɪn",
+    "ukphone": "pɪn"
+  },
+  {
+    "name": "string",
+    "trans": [
+      "n. 线；一串"
+    ],
+    "usphone": "strɪŋ",
+    "ukphone": "strɪŋ"
+  },
+  {
+    "name": "thread",
+    "trans": [
+      "n. 线；螺纹"
+    ],
+    "usphone": "θred",
+    "ukphone": "θred"
+  },
+  {
+    "name": "strap",
+    "trans": [
+      "n. 带子 v. 用带子系（或捆、扎）"
+    ],
+    "usphone": "stræp",
+    "ukphone": "stræp"
+  },
+  {
+    "name": "stripe",
+    "trans": [
+      "n. 条纹"
+    ],
+    "usphone": "straɪp",
+    "ukphone": "straɪp"
+  },
+  {
+    "name": "ribbon",
+    "trans": [
+      "n. 缎带，丝带"
+    ],
+    "usphone": "ˈrɪbən",
+    "ukphone": "ˈrɪbən"
+  },
+  {
+    "name": "belt",
+    "trans": [
+      "n. 腰带，皮带；地带，地区"
+    ],
+    "usphone": "belt",
+    "ukphone": "belt"
+  },
+  {
+    "name": "chain",
+    "trans": [
+      "n. 链子，链条"
+    ],
+    "usphone": "tʃeɪn",
+    "ukphone": "tʃeɪn"
+  },
+  {
+    "name": "bracelet",
+    "trans": [
+      "n. 手镯"
+    ],
+    "usphone": "ˈbreɪslɪt",
+    "ukphone": "ˈbreɪslɪt"
+  },
+  {
+    "name": "necklace",
+    "trans": [
+      "n. 项链"
+    ],
+    "usphone": "ˈneklɪs",
+    "ukphone": "ˈneklɪs"
+  },
+  {
+    "name": "bead",
+    "trans": [
+      "n. 珠子；（液体的）小滴 v. 形成珠状"
+    ],
+    "usphone": "biːd",
+    "ukphone": "biːd"
+  },
+  {
+    "name": "textile",
+    "trans": [
+      "n. 纺织品 adj. 纺织的"
+    ],
+    "usphone": "ˈtekstaɪl",
+    "ukphone": "ˈtekstaɪl"
+  },
+  {
+    "name": "velvet",
+    "trans": [
+      "n. 丝绒，天鹅绒"
+    ],
+    "usphone": "ˈvelvɪt",
+    "ukphone": "ˈvelvɪt"
+  },
+  {
+    "name": "wool",
+    "trans": [
+      "n. （羊等的）毛；毛线"
+    ],
+    "usphone": "wʊl",
+    "ukphone": "wʊl"
+  },
+  {
+    "name": "patch",
+    "trans": [
+      "n. 补丁；（与周围不同的）小片 v. 补缀"
+    ],
+    "usphone": "pætʃ",
+    "ukphone": "pætʃ"
+  },
+  {
+    "name": "rag",
+    "trans": [
+      "n. 破布"
+    ],
+    "usphone": "ræɡ",
+    "ukphone": "ræɡ"
+  },
+  {
+    "name": "shabby",
+    "trans": [
+      "adj. 破旧的；衣衫褴褛的"
+    ],
+    "usphone": "ˈʃæbi",
+    "ukphone": "ˈʃæbi"
+  },
+  {
+    "name": "tight",
+    "trans": [
+      "adj. 紧的"
+    ],
+    "usphone": "taɪt",
+    "ukphone": "taɪt"
+  },
+  {
+    "name": "colour",
+    "trans": [
+      "n. 颜色；颜料"
+    ],
+    "usphone": "ˈkʌlə",
+    "ukphone": "ˈkʌlə"
+  },
+  {
+    "name": "white",
+    "trans": [
+      "adj. 白的 n. 白色"
+    ],
+    "usphone": "waɪt",
+    "ukphone": "waɪt"
+  },
+  {
+    "name": "yellow",
+    "trans": [
+      "adj. 黄的 n. 黄色"
+    ],
+    "usphone": "ˈjeləʊ",
+    "ukphone": "ˈjeləʊ"
+  },
+  {
+    "name": "brown",
+    "trans": [
+      "adj. 褐色的 n. 褐色"
+    ],
+    "usphone": "braʊn",
+    "ukphone": "braʊn"
+  },
+  {
+    "name": "grey",
+    "trans": [
+      "adj. 灰色的 n. 灰色"
+    ],
+    "usphone": "ɡreɪ",
+    "ukphone": "ɡreɪ"
+  },
+  {
+    "name": "pink",
+    "trans": [
+      "adj. 粉红色的 n. 粉红色"
+    ],
+    "usphone": "pɪŋk",
+    "ukphone": "pɪŋk"
+  },
+  {
+    "name": "purple",
+    "trans": [
+      "adj. 紫的 n. 紫色"
+    ],
+    "usphone": "ˈpɜːpəl",
+    "ukphone": "ˈpɜːpəl"
+  },
+  {
+    "name": "tan",
+    "trans": [
+      "adj. 棕黄色的 n. 棕黄色；晒成的棕褐色"
+    ],
+    "usphone": "tæn",
+    "ukphone": "tæn"
+  },
+  {
+    "name": "fade",
+    "trans": [
+      "v. 逐渐消失；（使）褪色"
+    ],
+    "usphone": "feɪd",
+    "ukphone": "feɪd"
+  },
+  {
+    "name": "stain",
+    "trans": [
+      "v. 染污 n. 污渍"
+    ],
+    "usphone": "steɪn",
+    "ukphone": "steɪn"
+  },
+  {
+    "name": "blot",
+    "trans": [
+      "n. 污点"
+    ],
+    "usphone": "blɒt",
+    "ukphone": "blɒt"
+  },
+  {
+    "name": "figure",
+    "trans": [
+      "n. 身材；身影；重要人物；数字 v. 认为"
+    ],
+    "usphone": "ˈfɪɡə",
+    "ukphone": "ˈfɪɡə"
+  }
+]

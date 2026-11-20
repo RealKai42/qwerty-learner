@@ -1,0 +1,1378 @@
+[
+  {
+    "name": "food",
+    "trans": [
+      "n. 食物"
+    ],
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "diet",
+    "trans": [
+      "n. 日常饮食；（医生指定的）特别饮食；节食"
+    ],
+    "usphone": "daiot",
+    "ukphone": "daiot"
+  },
+  {
+    "name": "appetite",
+    "trans": [
+      "n. 食欲；强烈欲望"
+    ],
+    "usphone": "'eptat",
+    "ukphone": "'eptat"
+  },
+  {
+    "name": "treat",
+    "trans": [
+      "v. 请（客）；对待；治疗 n. 款待"
+    ],
+    "usphone": "tri:t",
+    "ukphone": "tri:t"
+  },
+  {
+    "name": "cater",
+    "trans": [
+      "v. 为......提供饮食；满足......的需要"
+    ],
+    "usphone": "ket",
+    "ukphone": "ket"
+  },
+  {
+    "name": "provision",
+    "trans": [
+      "n. 供应；预备；[~s] 食品供应"
+    ],
+    "usphone": "pra'visn",
+    "ukphone": "pra'visn"
+  },
+  {
+    "name": "edible",
+    "trans": [
+      "adj. 可以吃的"
+    ],
+    "usphone": "edbl",
+    "ukphone": "edbl"
+  },
+  {
+    "name": "recipe",
+    "trans": [
+      "n. 食谱；秘诀"
+    ],
+    "usphone": "resipi",
+    "ukphone": "resipi"
+  },
+  {
+    "name": "restaurant",
+    "trans": [
+      "n. 餐馆"
+    ],
+    "usphone": "restornt",
+    "ukphone": "restornt"
+  },
+  {
+    "name": "refectory",
+    "trans": [
+      "n. （学校或其他机构的）食堂，餐厅"
+    ],
+    "usphone": "ri'fektari",
+    "ukphone": "ri'fektari"
+  },
+  {
+    "name": "bar",
+    "trans": [
+      "n. 酒吧；吧台"
+    ],
+    "usphone": "ba:",
+    "ukphone": "ba:"
+  },
+  {
+    "name": "cafeteria",
+    "trans": [
+      "n. 自助餐厅"
+    ],
+    "usphone": "kefs'torai",
+    "ukphone": "kefs'torai"
+  },
+  {
+    "name": "buffet",
+    "trans": [
+      "n. 自助餐"
+    ],
+    "usphone": "bufet",
+    "ukphone": "bufet"
+  },
+  {
+    "name": "barbecue",
+    "trans": [
+      "n. 烧烤野餐；烤架 v. 烧烤"
+    ],
+    "usphone": "ba:bi:ku:",
+    "ukphone": "ba:bi:ku:"
+  },
+  {
+    "name": "supper",
+    "trans": [
+      "n. 晚餐"
+    ],
+    "usphone": "'sapə",
+    "ukphone": "'sapə"
+  },
+  {
+    "name": "banquet",
+    "trans": [
+      "n. 宴会"
+    ],
+    "usphone": "baenkwi",
+    "ukphone": "baenkwi"
+  },
+  {
+    "name": "refreshment",
+    "trans": [
+      "n. [~s] 茶点，点心"
+    ],
+    "usphone": "ri'frejmant",
+    "ukphone": "ri'frejmant"
+  },
+  {
+    "name": "snack",
+    "trans": [
+      "n. 快餐，小吃，零食"
+    ],
+    "usphone": "snak",
+    "ukphone": "snak"
+  },
+  {
+    "name": "appetiser",
+    "trans": [
+      "n. 开胃饮料，开胃小吃"
+    ],
+    "usphone": "'æpɪtɪzə",
+    "ukphone": "'æpɪtɪzə"
+  },
+  {
+    "name": "cuisine",
+    "trans": [
+      "n. 菜肴；烹饪"
+    ],
+    "usphone": "kwi'zi:n",
+    "ukphone": "kwi'zi:n"
+  },
+  {
+    "name": "menu",
+    "trans": [
+      "n. 菜单"
+    ],
+    "usphone": "menju",
+    "ukphone": "menju"
+  },
+  {
+    "name": "order",
+    "trans": [
+      "n. 订单；点的餐 v. 点（酒菜等）"
+    ],
+    "usphone": "o:də",
+    "ukphone": "o:də"
+  },
+  {
+    "name": "takeaway",
+    "trans": [
+      "n. [英] 外卖餐馆，外卖食物"
+    ],
+    "usphone": "'teikəwe",
+    "ukphone": "'teikəwe"
+  },
+  {
+    "name": "chef",
+    "trans": [
+      "n. 厨师"
+    ],
+    "usphone": "fe",
+    "ukphone": "fe"
+  },
+  {
+    "name": "gourmet",
+    "trans": [
+      "n. 美食家 adj. 美味佳肴的"
+    ],
+    "usphone": "'goumei",
+    "ukphone": "'goumei"
+  },
+  {
+    "name": "vegetarian",
+    "trans": [
+      "n. 素食者 adj. 素食的；无肉的"
+    ],
+    "usphone": "vedʒ'tearian",
+    "ukphone": "vedʒ'tearian"
+  },
+  {
+    "name": "cutlery",
+    "trans": [
+      "n. 餐具；刀具"
+    ],
+    "usphone": "kʌtɪləri",
+    "ukphone": "kʌtɪləri"
+  },
+  {
+    "name": "silver",
+    "trans": [
+      "n. 银；银器 adj. 银的；银色的"
+    ],
+    "usphone": "'silva",
+    "ukphone": "'silva"
+  },
+  {
+    "name": "ceramic",
+    "trans": [
+      "adj. 陶瓷的 n. 陶瓷制品"
+    ],
+    "usphone": "sə'kraemik",
+    "ukphone": "sə'kraemik"
+  },
+  {
+    "name": "porcelain",
+    "trans": [
+      "n. 瓷器；瓷"
+    ],
+    "usphone": "'pə:slən",
+    "ukphone": "'pə:slən"
+  },
+  {
+    "name": "bowl",
+    "trans": [
+      "n. 碗"
+    ],
+    "usphone": "bəul",
+    "ukphone": "bəul"
+  },
+  {
+    "name": "dish",
+    "trans": [
+      "n. 碟；菜肴"
+    ],
+    "usphone": "dɪʃ",
+    "ukphone": "dɪʃ"
+  },
+  {
+    "name": "saucer",
+    "trans": [
+      "n. 茶托，茶碟"
+    ],
+    "usphone": "'sə:sə",
+    "ukphone": "'sə:sə"
+  },
+  {
+    "name": "tray",
+    "trans": [
+      "n. 盘，托盘"
+    ],
+    "usphone": "treɪ",
+    "ukphone": "treɪ"
+  },
+  {
+    "name": "fork",
+    "trans": [
+      "n. 餐叉；分岔处"
+    ],
+    "usphone": "fɔk",
+    "ukphone": "fɔk"
+  },
+  {
+    "name": "knife",
+    "trans": [
+      "n. 刀"
+    ],
+    "usphone": "naɪf",
+    "ukphone": "naɪf"
+  },
+  {
+    "name": "spoon",
+    "trans": [
+      "n. 匙，调羹"
+    ],
+    "usphone": "spuːn",
+    "ukphone": "spuːn"
+  },
+  {
+    "name": "glass",
+    "trans": [
+      "n. 玻璃；玻璃杯"
+    ],
+    "usphone": "glas",
+    "ukphone": "glas"
+  },
+  {
+    "name": "mug",
+    "trans": [
+      "n. 大杯，马克杯"
+    ],
+    "usphone": "mʌɡ",
+    "ukphone": "mʌɡ"
+  },
+  {
+    "name": "kettle",
+    "trans": [
+      "n. 水壶；[美]锅"
+    ],
+    "usphone": "'kɛtl",
+    "ukphone": "'kɛtl"
+  },
+  {
+    "name": "pan",
+    "trans": [
+      "n. 平底锅；[美]烤盘"
+    ],
+    "usphone": "pæn",
+    "ukphone": "pæn"
+  },
+  {
+    "name": "pot",
+    "trans": [
+      "n. 锅；壶"
+    ],
+    "usphone": "pɒt",
+    "ukphone": "pɒt"
+  },
+  {
+    "name": "stove",
+    "trans": [
+      "n. 炉子"
+    ],
+    "usphone": "stəʊv",
+    "ukphone": "stəʊv"
+  },
+  {
+    "name": "oven",
+    "trans": [
+      "n. 烤炉，烤箱"
+    ],
+    "usphone": "'ʌvən",
+    "ukphone": "'ʌvən"
+  },
+  {
+    "name": "tin",
+    "trans": [
+      "n. 锡；罐头"
+    ],
+    "usphone": "tin",
+    "ukphone": "tin"
+  },
+  {
+    "name": "lid",
+    "trans": [
+      "n. 盖子"
+    ],
+    "usphone": "lid",
+    "ukphone": "lid"
+  },
+  {
+    "name": "drink",
+    "trans": [
+      "v. 饮，喝；喝酒 n. 饮料"
+    ],
+    "usphone": "drink",
+    "ukphone": "drink"
+  },
+  {
+    "name": "beverage",
+    "trans": [
+      "n. （水以外的）饮料"
+    ],
+    "usphone": "bevərdʒ",
+    "ukphone": "bevərdʒ"
+  },
+  {
+    "name": "juice",
+    "trans": [
+      "n. 果汁，菜汁"
+    ],
+    "usphone": "dʒu:s",
+    "ukphone": "dʒu:s"
+  },
+  {
+    "name": "soda",
+    "trans": [
+      "n. 无水碳酸钠；苏打水；[美]汽水"
+    ],
+    "usphone": "səudə",
+    "ukphone": "səudə"
+  },
+  {
+    "name": "coffee",
+    "trans": [
+      "n. 咖啡"
+    ],
+    "usphone": "kəfi",
+    "ukphone": "kəfi"
+  },
+  {
+    "name": "alcohol",
+    "trans": [
+      "n. 酒精，乙醇；酒"
+    ],
+    "usphone": "'ælkəhɔl",
+    "ukphone": "'ælkəhɔl"
+  },
+  {
+    "name": "liquor",
+    "trans": [
+      "n. 烈性酒"
+    ],
+    "usphone": "'likə",
+    "ukphone": "'likə"
+  },
+  {
+    "name": "whisky",
+    "trans": [
+      "n. 威士忌酒"
+    ],
+    "usphone": "'wisk",
+    "ukphone": "'wisk"
+  },
+  {
+    "name": "brandy",
+    "trans": [
+      "n. 白兰地酒"
+    ],
+    "usphone": "'brændi",
+    "ukphone": "'brændi"
+  },
+  {
+    "name": "drunk",
+    "trans": [
+      "adj. 醉的"
+    ],
+    "usphone": "drʌŋk",
+    "ukphone": "drʌŋk"
+  },
+  {
+    "name": "bean",
+    "trans": [
+      "n. 豆"
+    ],
+    "usphone": "bi:n",
+    "ukphone": "bi:n"
+  },
+  {
+    "name": "cucumber",
+    "trans": [
+      "n. 黄瓜"
+    ],
+    "usphone": "kju:kAmba",
+    "ukphone": "kju:kAmba"
+  },
+  {
+    "name": "tobacco",
+    "trans": [
+      "n. 烟草"
+    ],
+    "usphone": "ta'bakau",
+    "ukphone": "ta'bakau"
+  },
+  {
+    "name": "cigarette",
+    "trans": [
+      "n. 香烟"
+    ],
+    "usphone": "sigaret",
+    "ukphone": "sigaret"
+  },
+  {
+    "name": "sober",
+    "trans": [
+      "adj. 清醒的；头脑清醒的 v.（使）醒酒"
+    ],
+    "usphone": "sauba",
+    "ukphone": "sauba"
+  },
+  {
+    "name": "vegetable",
+    "trans": [
+      "n. 蔬菜"
+    ],
+    "usphone": "vedstabl",
+    "ukphone": "vedstabl"
+  },
+  {
+    "name": "tomato",
+    "trans": [
+      "n. 番茄"
+    ],
+    "usphone": "ta'mato",
+    "ukphone": "ta'mato"
+  },
+  {
+    "name": "potato",
+    "trans": [
+      "n. 马铃薯"
+    ],
+    "usphone": "pa'letau",
+    "ukphone": "pa'letau"
+  },
+  {
+    "name": "pea",
+    "trans": [
+      "n. 豌豆"
+    ],
+    "usphone": "pi:",
+    "ukphone": "pi:"
+  },
+  {
+    "name": "cabbage",
+    "trans": [
+      "n. 洋白菜，卷心菜，甘蓝"
+    ],
+    "usphone": "kabrdʒ",
+    "ukphone": "kabrdʒ"
+  },
+  {
+    "name": "onion",
+    "trans": [
+      "n. 洋葱"
+    ],
+    "usphone": "Anjon",
+    "ukphone": "Anjon"
+  },
+  {
+    "name": "mushroom",
+    "trans": [
+      "n. 蘑菇 v. 呈蘑菇状扩散"
+    ],
+    "usphone": "ma'frum",
+    "ukphone": "ma'frum"
+  },
+  {
+    "name": "eggplant",
+    "trans": [
+      "n. 茄子"
+    ],
+    "usphone": "egplant",
+    "ukphone": "egplant"
+  },
+  {
+    "name": "carrot",
+    "trans": [
+      "n. 胡萝卜"
+    ],
+    "usphone": "kærət",
+    "ukphone": "kærət"
+  },
+  {
+    "name": "turnip",
+    "trans": [
+      "n. 芜菁"
+    ],
+    "usphone": "tɜːnʃp",
+    "ukphone": "tɜːnʃp"
+  },
+  {
+    "name": "radish",
+    "trans": [
+      "n. 樱桃萝卜"
+    ],
+    "usphone": "rædɪʃ",
+    "ukphone": "rædɪʃ"
+  },
+  {
+    "name": "fruit",
+    "trans": [
+      "n. 水果；成果"
+    ],
+    "usphone": "fruːt",
+    "ukphone": "fruːt"
+  },
+  {
+    "name": "peel",
+    "trans": [
+      "v. 剥（水果、蔬菜等的）皮 n.（水果）皮"
+    ],
+    "usphone": "piːl",
+    "ukphone": "piːl"
+  },
+  {
+    "name": "strip",
+    "trans": [
+      "v. 剥去，除去 n. 条，带"
+    ],
+    "usphone": "strɪp",
+    "ukphone": "strɪp"
+  },
+  {
+    "name": "core",
+    "trans": [
+      "n. 果核"
+    ],
+    "usphone": "kɔː",
+    "ukphone": "kɔː"
+  },
+  {
+    "name": "hull",
+    "trans": [
+      "n. （果实等的）外壳；船体 v. 剥去（果实等的）外壳"
+    ],
+    "usphone": "hʌl",
+    "ukphone": "hʌl"
+  },
+  {
+    "name": "cherry",
+    "trans": [
+      "n. 樱桃；樱桃树"
+    ],
+    "usphone": "ˈtʃerɪ",
+    "ukphone": "ˈtʃerɪ"
+  },
+  {
+    "name": "berry",
+    "trans": [
+      "n. 浆果"
+    ],
+    "usphone": "'beri",
+    "ukphone": "'beri"
+  },
+  {
+    "name": "grape",
+    "trans": [
+      "n. 葡萄"
+    ],
+    "usphone": "graɪp",
+    "ukphone": "graɪp"
+  },
+  {
+    "name": "papaya",
+    "trans": [
+      "n. 番木瓜"
+    ],
+    "usphone": "pə'paɪə",
+    "ukphone": "pə'paɪə"
+  },
+  {
+    "name": "peach",
+    "trans": [
+      "n. 桃子"
+    ],
+    "usphone": "piːt",
+    "ukphone": "piːt"
+  },
+  {
+    "name": "pear",
+    "trans": [
+      "n. 梨"
+    ],
+    "usphone": "peə",
+    "ukphone": "peə"
+  },
+  {
+    "name": "plum",
+    "trans": [
+      "n. 李子；梅子"
+    ],
+    "usphone": "plʌm",
+    "ukphone": "plʌm"
+  },
+  {
+    "name": "orange",
+    "trans": [
+      "n. 橙子"
+    ],
+    "usphone": "ˈɔːrɪndʒ",
+    "ukphone": "ˈɔːrɪndʒ"
+  },
+  {
+    "name": "melon",
+    "trans": [
+      "n. 瓜，甜瓜"
+    ],
+    "usphone": "'melən",
+    "ukphone": "'melən"
+  },
+  {
+    "name": "lemon",
+    "trans": [
+      "n. 柠檬"
+    ],
+    "usphone": "'lemən",
+    "ukphone": "'lemən"
+  },
+  {
+    "name": "kiwi",
+    "trans": [
+      "n. 猕猴桃，奇异果"
+    ],
+    "usphone": "kiwi:",
+    "ukphone": "kiwi:"
+  },
+  {
+    "name": "crop",
+    "trans": [
+      "n. 庄稼；收成，产量"
+    ],
+    "usphone": "krop",
+    "ukphone": "krop"
+  },
+  {
+    "name": "corn",
+    "trans": [
+      "n. [英]（小麦等）谷物；[美]玉米"
+    ],
+    "usphone": "kɔːn",
+    "ukphone": "kɔːn"
+  },
+  {
+    "name": "grain",
+    "trans": [
+      "n. 谷物；颗粒"
+    ],
+    "usphone": "grain",
+    "ukphone": "grain"
+  },
+  {
+    "name": "wheat",
+    "trans": [
+      "n. 小麦"
+    ],
+    "usphone": "wit",
+    "ukphone": "wit"
+  },
+  {
+    "name": "reap",
+    "trans": [
+      "v. 收割；收获"
+    ],
+    "usphone": "rip",
+    "ukphone": "rip"
+  },
+  {
+    "name": "flour",
+    "trans": [
+      "n. 面粉；粉状物质"
+    ],
+    "usphone": "flau",
+    "ukphone": "flau"
+  },
+  {
+    "name": "porridge",
+    "trans": [
+      "n. 麦片粥"
+    ],
+    "usphone": "ˈpɔrɪdʒ",
+    "ukphone": "ˈpɔrɪdʒ"
+  },
+  {
+    "name": "paste",
+    "trans": [
+      "n. 糨糊；面团"
+    ],
+    "usphone": "pest",
+    "ukphone": "pest"
+  },
+  {
+    "name": "livestock",
+    "trans": [
+      "n. 家畜"
+    ],
+    "usphone": "laivstok",
+    "ukphone": "laivstok"
+  },
+  {
+    "name": "chicken",
+    "trans": [
+      "n. 鸡"
+    ],
+    "usphone": "tʃikən",
+    "ukphone": "tʃikən"
+  },
+  {
+    "name": "turkey",
+    "trans": [
+      "n. 火鸡"
+    ],
+    "usphone": "tʃuki",
+    "ukphone": "tʃuki"
+  },
+  {
+    "name": "beef",
+    "trans": [
+      "n. 牛肉"
+    ],
+    "usphone": "bi:",
+    "ukphone": "bi:"
+  },
+  {
+    "name": "dairy",
+    "trans": [
+      "n. 乳制品；乳品店 adj. 乳制的"
+    ],
+    "usphone": "'deari",
+    "ukphone": "'deari"
+  },
+  {
+    "name": "pork",
+    "trans": [
+      "n. 猪肉"
+    ],
+    "usphone": "pɔ:k",
+    "ukphone": "pɔ:k"
+  },
+  {
+    "name": "mutton",
+    "trans": [
+      "n. 羊肉"
+    ],
+    "usphone": "mʌtn",
+    "ukphone": "mʌtn"
+  },
+  {
+    "name": "sausage",
+    "trans": [
+      "n. 香肠"
+    ],
+    "usphone": "'spsidʒ",
+    "ukphone": "'spsidʒ"
+  },
+  {
+    "name": "milk",
+    "trans": [
+      "n. 奶 v. 挤奶"
+    ],
+    "usphone": "mɪlk",
+    "ukphone": "mɪlk"
+  },
+  {
+    "name": "yogurt",
+    "trans": [
+      "n. 酸奶"
+    ],
+    "usphone": "'jɒɡət",
+    "ukphone": "'jɒɡət"
+  },
+  {
+    "name": "cream",
+    "trans": [
+      "n. 奶油"
+    ],
+    "usphone": "kri:m",
+    "ukphone": "kri:m"
+  },
+  {
+    "name": "fish",
+    "trans": [
+      "n. 鱼 v. 钓鱼"
+    ],
+    "usphone": "fɪʃ",
+    "ukphone": "fɪʃ"
+  },
+  {
+    "name": "cheese",
+    "trans": [
+      "n. 奶酪"
+    ],
+    "usphone": "tʃiːz",
+    "ukphone": "tʃiːz"
+  },
+  {
+    "name": "pond",
+    "trans": [
+      "n. 池塘"
+    ],
+    "usphone": "pɒnd",
+    "ukphone": "pɒnd"
+  },
+  {
+    "name": "butter",
+    "trans": [
+      "n. 黄油 v. 涂黄油"
+    ],
+    "usphone": "'bʌtə",
+    "ukphone": "'bʌtə"
+  },
+  {
+    "name": "rod",
+    "trans": [
+      "n. 杆，竿"
+    ],
+    "usphone": "rɒd",
+    "ukphone": "rɒd"
+  },
+  {
+    "name": "salad",
+    "trans": [
+      "n. 色拉"
+    ],
+    "usphone": "'sæləd",
+    "ukphone": "'sæləd"
+  },
+  {
+    "name": "pie",
+    "trans": [
+      "n. 馅饼，派"
+    ],
+    "usphone": "pai",
+    "ukphone": "pai"
+  },
+  {
+    "name": "pizza",
+    "trans": [
+      "n. 比萨饼"
+    ],
+    "usphone": "'pitsa",
+    "ukphone": "'pitsa"
+  },
+  {
+    "name": "pasta",
+    "trans": [
+      "n. 意大利面食"
+    ],
+    "usphone": "'pasta",
+    "ukphone": "'pasta"
+  },
+  {
+    "name": "sandwich",
+    "trans": [
+      "v. 把......夹入 n. 三明治"
+    ],
+    "usphone": "'sanwridʒ",
+    "ukphone": "'sanwridʒ"
+  },
+  {
+    "name": "hamburger",
+    "trans": [
+      "n. 汉堡包；汉堡牛肉饼"
+    ],
+    "usphone": "'hamb3:ga",
+    "ukphone": "'hamb3:ga"
+  },
+  {
+    "name": "spaghetti",
+    "trans": [
+      "n. 意大利细面条"
+    ],
+    "usphone": "spa'geti",
+    "ukphone": "spa'geti"
+  },
+  {
+    "name": "soup",
+    "trans": [
+      "n. 汤"
+    ],
+    "usphone": "'su:p",
+    "ukphone": "'su:p"
+  },
+  {
+    "name": "pudding",
+    "trans": [
+      "n. [尤美]冷布丁；[尤英]热布丁糕"
+    ],
+    "usphone": "'pudin",
+    "ukphone": "'pudin"
+  },
+  {
+    "name": "loaf",
+    "trans": [
+      "n. 一条（面包） v. 游荡，闲逛"
+    ],
+    "usphone": "ləʊt",
+    "ukphone": "ləʊt"
+  },
+  {
+    "name": "biscuit",
+    "trans": [
+      "n. [英]饼干；[美]烤饼，小圆面包"
+    ],
+    "usphone": "'biskit",
+    "ukphone": "'biskit"
+  },
+  {
+    "name": "jam",
+    "trans": [
+      "n. 果酱"
+    ],
+    "usphone": "dʒæm",
+    "ukphone": "dʒæm"
+  },
+  {
+    "name": "nut",
+    "trans": [
+      "n. 坚果；螺母"
+    ],
+    "usphone": "nʌt",
+    "ukphone": "nʌt"
+  },
+  {
+    "name": "chocolate",
+    "trans": [
+      "n. 巧克力"
+    ],
+    "usphone": "tʃɒklɪt",
+    "ukphone": "tʃɒklɪt"
+  },
+  {
+    "name": "ice cream",
+    "trans": [
+      "n. 冰激凌"
+    ],
+    "usphone": "aɪs'kɪm",
+    "ukphone": "aɪs'kɪm"
+  },
+  {
+    "name": "vanilla",
+    "trans": [
+      "n. 香草 adj. 香草味的"
+    ],
+    "usphone": "və'nɪlə",
+    "ukphone": "və'nɪlə"
+  },
+  {
+    "name": "mustard",
+    "trans": [
+      "n. 芥末；芥菜"
+    ],
+    "usphone": "mʌstəd",
+    "ukphone": "mʌstəd"
+  },
+  {
+    "name": "wasabi",
+    "trans": [
+      "n. 山葵；山葵根"
+    ],
+    "usphone": "wə'saːbi",
+    "ukphone": "wə'saːbi"
+  },
+  {
+    "name": "pepper",
+    "trans": [
+      "n. 胡椒粉；柿子椒"
+    ],
+    "usphone": "'pepə",
+    "ukphone": "'pepə"
+  },
+  {
+    "name": "ginger",
+    "trans": [
+      "n. 姜"
+    ],
+    "usphone": "dʒɪndʒə",
+    "ukphone": "dʒɪndʒə"
+  },
+  {
+    "name": "garlic",
+    "trans": [
+      "n. 蒜"
+    ],
+    "usphone": "'ɡɑːlɪk",
+    "ukphone": "'ɡɑːlɪk"
+  },
+  {
+    "name": "scallion",
+    "trans": [
+      "n. 大葱"
+    ],
+    "usphone": "'skælɪən",
+    "ukphone": "'skælɪən"
+  },
+  {
+    "name": "vinegar",
+    "trans": [
+      "n. 醋"
+    ],
+    "usphone": "'vɪnɪɡə",
+    "ukphone": "'vɪnɪɡə"
+  },
+  {
+    "name": "salt",
+    "trans": [
+      "n. 盐"
+    ],
+    "usphone": "sɔːlt",
+    "ukphone": "sɔːlt"
+  },
+  {
+    "name": "sugar",
+    "trans": [
+      "n. 糖"
+    ],
+    "usphone": "'sʊɡə",
+    "ukphone": "'sʊɡə"
+  },
+  {
+    "name": "candy",
+    "trans": [
+      "n. 糖果"
+    ],
+    "usphone": "'kændi",
+    "ukphone": "'kændi"
+  },
+  {
+    "name": "honey",
+    "trans": [
+      "n. 蜂蜜"
+    ],
+    "usphone": "'hʌni",
+    "ukphone": "'hʌni"
+  },
+  {
+    "name": "flavour",
+    "trans": [
+      "n. 味道；口味；特色，风格"
+    ],
+    "usphone": "ˈflævər",
+    "ukphone": "ˈflævər"
+  },
+  {
+    "name": "sour",
+    "trans": [
+      "adj. 酸的；闷闷不乐的"
+    ],
+    "usphone": "sɔːr",
+    "ukphone": "sɔːr"
+  },
+  {
+    "name": "sweet",
+    "trans": [
+      "adj. 甜的；愉快的"
+    ],
+    "usphone": "swiːt",
+    "ukphone": "swiːt"
+  },
+  {
+    "name": "bitter",
+    "trans": [
+      "adj. 苦的；痛苦的；严寒的"
+    ],
+    "usphone": "ˈbɪtə",
+    "ukphone": "ˈbɪtə"
+  },
+  {
+    "name": "spicy",
+    "trans": [
+      "adj. 辣的"
+    ],
+    "usphone": "ˈspaɪsɪ",
+    "ukphone": "ˈspaɪsɪ"
+  },
+  {
+    "name": "delicious",
+    "trans": [
+      "adj. 美味的"
+    ],
+    "usphone": "dɪˈlɪʃəs",
+    "ukphone": "dɪˈlɪʃəs"
+  },
+  {
+    "name": "yummy",
+    "trans": [
+      "adj. 美味的"
+    ],
+    "usphone": "ˈjʌmi",
+    "ukphone": "ˈjʌmi"
+  },
+  {
+    "name": "tasty",
+    "trans": [
+      "adj. 美味的，可口的"
+    ],
+    "usphone": "ˈteɪstɪ",
+    "ukphone": "ˈteɪstɪ"
+  },
+  {
+    "name": "hunger",
+    "trans": [
+      "n. 饥饿；饥饿感；渴望"
+    ],
+    "usphone": "ˈhʌŋɡər",
+    "ukphone": "ˈhʌŋɡər"
+  },
+  {
+    "name": "thirsty",
+    "trans": [
+      "adj. 渴的；渴望的"
+    ],
+    "usphone": "ˈθɜːrstɪ",
+    "ukphone": "ˈθɜːrstɪ"
+  },
+  {
+    "name": "spice",
+    "trans": [
+      "n. (调味)香料；给生活增添情趣的事"
+    ],
+    "usphone": "spaɪs",
+    "ukphone": "spaɪs"
+  },
+  {
+    "name": "sauce",
+    "trans": [
+      "n. 酱汁"
+    ],
+    "usphone": "seɪs",
+    "ukphone": "seɪs"
+  },
+  {
+    "name": "ketchup",
+    "trans": [
+      "n. 番茄酱"
+    ],
+    "usphone": "ˈketʃup",
+    "ukphone": "ˈketʃup"
+  },
+  {
+    "name": "perfume",
+    "trans": [
+      "n. 香味，芳香；香水"
+    ],
+    "usphone": "ˈpɜːrfjuːm",
+    "ukphone": "ˈpɜːrfjuːm"
+  },
+  {
+    "name": "ingredient",
+    "trans": [
+      "n. 成分；(烹调用的)原料；因素"
+    ],
+    "usphone": "ɪnˈɡriːdiənt",
+    "ukphone": "ɪnˈɡriːdiənt"
+  },
+  {
+    "name": "supplement",
+    "trans": [
+      "n. 营养补充剂；补贴"
+    ],
+    "usphone": "ˈsʌpləmənt",
+    "ukphone": "ˈsʌpləmənt"
+  },
+  {
+    "name": "digest",
+    "trans": [
+      "v. 消化；理解，领悟"
+    ],
+    "usphone": "ˈdaɪdʒest",
+    "ukphone": "ˈdaɪdʒest"
+  },
+  {
+    "name": "cook",
+    "trans": [
+      "v. 烹调，烧，煮 n. 厨师"
+    ],
+    "usphone": "kʊk",
+    "ukphone": "kʊk"
+  },
+  {
+    "name": "bake",
+    "trans": [
+      "v. 烘烤；烤熟"
+    ],
+    "usphone": "beɪk",
+    "ukphone": "beɪk"
+  },
+  {
+    "name": "fry",
+    "trans": [
+      "v. 油煎"
+    ],
+    "usphone": "fraɪ",
+    "ukphone": "fraɪ"
+  },
+  {
+    "name": "roast",
+    "trans": [
+      "v. 烤 n. 烤肉"
+    ],
+    "usphone": "rəʊst",
+    "ukphone": "rəʊst"
+  },
+  {
+    "name": "toast",
+    "trans": [
+      "v. 向......祝酒，为......干杯；烤 n. 烤面包片"
+    ],
+    "usphone": "təʊst",
+    "ukphone": "təʊst"
+  },
+  {
+    "name": "suck",
+    "trans": [
+      "v. 吮吸"
+    ],
+    "usphone": "sʌk",
+    "ukphone": "sʌk"
+  },
+  {
+    "name": "swallow",
+    "trans": [
+      "v. 咽下，吞下"
+    ],
+    "usphone": "ˈswɒləʊ",
+    "ukphone": "ˈswɒləʊ"
+  },
+  {
+    "name": "lick",
+    "trans": [
+      "v. 舔"
+    ],
+    "usphone": "lɪk",
+    "ukphone": "lɪk"
+  },
+  {
+    "name": "chew",
+    "trans": [
+      "v. 咀嚼"
+    ],
+    "usphone": "tʃuː",
+    "ukphone": "tʃuː"
+  },
+  {
+    "name": "gum",
+    "trans": [
+      "n. 口香糖；树胶"
+    ],
+    "usphone": "ɡʌm",
+    "ukphone": "ɡʌm"
+  },
+  {
+    "name": "soak",
+    "trans": [
+      "v. 浸泡；使湿透"
+    ],
+    "usphone": "səʊk",
+    "ukphone": "səʊk"
+  },
+  {
+    "name": "dip",
+    "trans": [
+      "v. 蘸，浸"
+    ],
+    "usphone": "dɪp",
+    "ukphone": "dɪp"
+  },
+  {
+    "name": "squeeze",
+    "trans": [
+      "v. 挤压"
+    ],
+    "usphone": "ˈskwiːz",
+    "ukphone": "ˈskwiːz"
+  },
+  {
+    "name": "stir",
+    "trans": [
+      "v. 搅动；（使）行动"
+    ],
+    "usphone": "stɜː",
+    "ukphone": "stɜː"
+  },
+  {
+    "name": "grind",
+    "trans": [
+      "v. 碾碎 n. 枯燥乏味的事"
+    ],
+    "usphone": "ɡrɪnd",
+    "ukphone": "ɡrɪnd"
+  },
+  {
+    "name": "slice",
+    "trans": [
+      "n./v. 薄片；切片；切下"
+    ],
+    "usphone": "slaɪs",
+    "ukphone": "slaɪs"
+  }
+]

@@ -1,0 +1,3210 @@
+[
+  {
+    "name": "education",
+    "trans": [
+      "n. 教育；教育学"
+    ],
+    "usphone": "edjuˈkeɪʃən",
+    "ukphone": "edjuˈkeɪʃən"
+  },
+  {
+    "name": "primary",
+    "trans": [
+      "adj. 主要的；最初的；小学教育的"
+    ],
+    "usphone": "ˈpraɪməri",
+    "ukphone": "ˈpraɪməri"
+  },
+  {
+    "name": "secondary",
+    "trans": [
+      "adj. 中等教育的；次要的"
+    ],
+    "usphone": "ˈsekəndəri",
+    "ukphone": "ˈsekəndəri"
+  },
+  {
+    "name": "university",
+    "trans": [
+      "n. （综合性）大学"
+    ],
+    "usphone": "ˌjuːnɪˈvɜːsəti",
+    "ukphone": "ˌjuːnɪˈvɜːsəti"
+  },
+  {
+    "name": "college",
+    "trans": [
+      "n. 学院；大学"
+    ],
+    "usphone": "ˈkɒlɪdʒ",
+    "ukphone": "ˈkɒlɪdʒ"
+  },
+  {
+    "name": "institute",
+    "trans": [
+      "n. 研究所，学院"
+    ],
+    "usphone": "ˈɪnstɪtjuːt",
+    "ukphone": "ˈɪnstɪtjuːt"
+  },
+  {
+    "name": "academy",
+    "trans": [
+      "n. 专科院校；（美国的）私立中学；研究院，学会"
+    ],
+    "usphone": "əˈkædəmi",
+    "ukphone": "əˈkædəmi"
+  },
+  {
+    "name": "learn",
+    "trans": [
+      "v. 学习；得知"
+    ],
+    "usphone": "lɜːn",
+    "ukphone": "lɜːn"
+  },
+  {
+    "name": "study",
+    "trans": [
+      "v./n. 学习；研究"
+    ],
+    "usphone": "ˈstʌdi",
+    "ukphone": "ˈstʌdi"
+  },
+  {
+    "name": "acquire",
+    "trans": [
+      "v. 获得（技能、知识等）；购得"
+    ],
+    "usphone": "əˈkwaɪə",
+    "ukphone": "əˈkwaɪə"
+  },
+  {
+    "name": "knowledge",
+    "trans": [
+      "n. 知识，学识；知悉"
+    ],
+    "usphone": "ˈnɒlɪdʒ",
+    "ukphone": "ˈnɒlɪdʒ"
+  },
+  {
+    "name": "expertise",
+    "trans": [
+      "n. 专门知识，专门技能"
+    ],
+    "usphone": "ˌekspɜːˈtiːz",
+    "ukphone": "ˌekspɜːˈtiːz"
+  },
+  {
+    "name": "novice",
+    "trans": [
+      "n. 新手"
+    ],
+    "usphone": "ˈnɒvɪs",
+    "ukphone": "ˈnɒvɪs"
+  },
+  {
+    "name": "issue",
+    "trans": [
+      "n. 重要问题；发行 v. 公布，发出"
+    ],
+    "usphone": "ˈɪʃuː",
+    "ukphone": "ˈɪʃuː"
+  },
+  {
+    "name": "affair",
+    "trans": [
+      "n. 事件；[~s] 公共事务，政治事务"
+    ],
+    "usphone": "əˈfeə",
+    "ukphone": "əˈfeə"
+  },
+  {
+    "name": "controversial",
+    "trans": [
+      "adj. 有争议的"
+    ],
+    "usphone": "ˌkɒntrəˈvɜːʃəl",
+    "ukphone": "ˌkɒntrəˈvɜːʃəl"
+  },
+  {
+    "name": "recruit",
+    "trans": [
+      "v. 吸收（新成员）"
+    ],
+    "usphone": "rɪˈkruːt",
+    "ukphone": "rɪˈkruːt"
+  },
+  {
+    "name": "literate",
+    "trans": [
+      "adj. 有读写能力的"
+    ],
+    "usphone": "ˈlɪtərət",
+    "ukphone": "ˈlɪtərət"
+  },
+  {
+    "name": "illiteracy",
+    "trans": [
+      "n. 文盲"
+    ],
+    "usphone": "ɪˈlɪtərəsi",
+    "ukphone": "ɪˈlɪtərəsi"
+  },
+  {
+    "name": "numerate",
+    "trans": [
+      "adj. 识数的，有计算能力的"
+    ],
+    "usphone": "ˈnjuːmərət",
+    "ukphone": "ˈnjuːmərət"
+  },
+  {
+    "name": "problem",
+    "trans": [
+      "n. 习题；问题"
+    ],
+    "usphone": "ˈprɒbləm",
+    "ukphone": "ˈprɒbləm"
+  },
+  {
+    "name": "puzzle",
+    "trans": [
+      "n. 难题；谜 v. 使迷惑"
+    ],
+    "usphone": "ˈpʌzəl",
+    "ukphone": "ˈpʌzəl"
+  },
+  {
+    "name": "riddle",
+    "trans": [
+      "n. 谜，谜语"
+    ],
+    "usphone": "ˈrɪdəl",
+    "ukphone": "ˈrɪdəl"
+  },
+  {
+    "name": "obscure",
+    "trans": [
+      "adj. 难以理解的"
+    ],
+    "usphone": "əbˈskjʊə",
+    "ukphone": "əbˈskjʊə"
+  },
+  {
+    "name": "instil",
+    "trans": [
+      "v. 逐渐灌输"
+    ],
+    "usphone": "ɪnˈstɪl",
+    "ukphone": "ɪnˈstɪl"
+  },
+  {
+    "name": "cram",
+    "trans": [
+      "v. 把......塞进；（为应考）临时死记硬背"
+    ],
+    "usphone": "kræm",
+    "ukphone": "kræm"
+  },
+  {
+    "name": "emphasise",
+    "trans": [
+      "v. 强调，着重"
+    ],
+    "usphone": "ˈemfəsaɪz",
+    "ukphone": "ˈemfəsaɪz"
+  },
+  {
+    "name": "enhance",
+    "trans": [
+      "v. 提高，增强"
+    ],
+    "usphone": "ɪnˈhɑːns",
+    "ukphone": "ɪnˈhɑːns"
+  },
+  {
+    "name": "enable",
+    "trans": [
+      "v. 使能够"
+    ],
+    "usphone": "ɪˈneɪbəl",
+    "ukphone": "ɪˈneɪbəl"
+  },
+  {
+    "name": "inspire",
+    "trans": [
+      "v. 鼓舞；给......灵感"
+    ],
+    "usphone": "ɪnˈspaɪə",
+    "ukphone": "ɪnˈspaɪə"
+  },
+  {
+    "name": "motive",
+    "trans": [
+      "n. 动机，（行动的）缘由"
+    ],
+    "usphone": "ˈməʊtɪv",
+    "ukphone": "ˈməʊtɪv"
+  },
+  {
+    "name": "motivate",
+    "trans": [
+      "v. 激发，驱使"
+    ],
+    "usphone": "ˈməʊtɪveɪt",
+    "ukphone": "ˈməʊtɪveɪt"
+  },
+  {
+    "name": "stimulate",
+    "trans": [
+      "v. 刺激；激励"
+    ],
+    "usphone": "ˈstɪmjʊleɪt",
+    "ukphone": "ˈstɪmjʊleɪt"
+  },
+  {
+    "name": "spur",
+    "trans": [
+      "v. 鞭策，刺激 n. 马刺；刺激"
+    ],
+    "usphone": "spɜː",
+    "ukphone": "spɜː"
+  },
+  {
+    "name": "impetus",
+    "trans": [
+      "n. 推动，促进；动量；惯性"
+    ],
+    "usphone": "ˈɪmpɪtəs",
+    "ukphone": "ˈɪmpɪtəs"
+  },
+  {
+    "name": "indulge",
+    "trans": [
+      "v. 迁就，放任；沉湎；让......享受一下"
+    ],
+    "usphone": "ɪnˈdʌldʒ",
+    "ukphone": "ɪnˈdʌldʒ"
+  },
+  {
+    "name": "spoil",
+    "trans": [
+      "v. 宠坏，溺爱；破坏，糟蹋"
+    ],
+    "usphone": "spɔɪl",
+    "ukphone": "spɔɪl"
+  },
+  {
+    "name": "abuse",
+    "trans": [
+      "v./n. 滥用；虐待"
+    ],
+    "usphone": "əˈbjuːz",
+    "ukphone": "əˈbjuːz"
+  },
+  {
+    "name": "intelligent",
+    "trans": [
+      "adj. 聪明的，有才智的"
+    ],
+    "usphone": "ɪnˈtelɪdʒənt",
+    "ukphone": "ɪnˈtelɪdʒənt"
+  },
+  {
+    "name": "elite",
+    "trans": [
+      "n. 精英人物；精华；上层人士"
+    ],
+    "usphone": "eɪˈliːt",
+    "ukphone": "eɪˈliːt"
+  },
+  {
+    "name": "idiot",
+    "trans": [
+      "n. 白痴，傻瓜"
+    ],
+    "usphone": "ˈɪdiət",
+    "ukphone": "ˈɪdiət"
+  },
+  {
+    "name": "wisdom",
+    "trans": [
+      "n. 智慧；学问"
+    ],
+    "usphone": "ˈwɪzdəm",
+    "ukphone": "ˈwɪzdəm"
+  },
+  {
+    "name": "wit",
+    "trans": [
+      "n. 风趣的人；机智，风趣；智慧"
+    ],
+    "usphone": "wɪt",
+    "ukphone": "wɪt"
+  },
+  {
+    "name": "aptitude",
+    "trans": [
+      "n. 天生的才能，资质"
+    ],
+    "usphone": "ˈæptɪtjuːd",
+    "ukphone": "ˈæptɪtjuːd"
+  },
+  {
+    "name": "clever",
+    "trans": [
+      "adj. 聪明的；精明的"
+    ],
+    "usphone": "ˈklevə",
+    "ukphone": "ˈklevə"
+  },
+  {
+    "name": "smart",
+    "trans": [
+      "adj. 聪明的；智能的"
+    ],
+    "usphone": "smɑːt",
+    "ukphone": "smɑːt"
+  },
+  {
+    "name": "capable",
+    "trans": [
+      "adj. 有能力的，有才能的"
+    ],
+    "usphone": "ˈkeɪpəbəl",
+    "ukphone": "ˈkeɪpəbəl"
+  },
+  {
+    "name": "all-round",
+    "trans": [
+      "adj. 有多方面才能的，全面的"
+    ],
+    "usphone": "ˌɔːlˈraʊnd",
+    "ukphone": "ˌɔːlˈraʊnd"
+  },
+  {
+    "name": "excellent",
+    "trans": [
+      "adj. 优秀的，杰出的"
+    ],
+    "usphone": "ˈeksələnt",
+    "ukphone": "ˈeksələnt"
+  },
+  {
+    "name": "genius",
+    "trans": [
+      "n. 天才人物；天赋"
+    ],
+    "usphone": "ˈdʒiːniəs",
+    "ukphone": "ˈdʒiːniəs"
+  },
+  {
+    "name": "outstanding",
+    "trans": [
+      "adj. 突出的，杰出的"
+    ],
+    "usphone": "aʊtˈstændɪŋ",
+    "ukphone": "aʊtˈstændɪŋ"
+  },
+  {
+    "name": "brilliant",
+    "trans": [
+      "adj. 光辉的；聪颖的；（光线等）明亮的；非常好的"
+    ],
+    "usphone": "ˈbrɪljənt",
+    "ukphone": "ˈbrɪljənt"
+  },
+  {
+    "name": "prestige",
+    "trans": [
+      "n. 威望，声望"
+    ],
+    "usphone": "preˈstiːʒ",
+    "ukphone": "preˈstiːʒ"
+  },
+  {
+    "name": "reputation",
+    "trans": [
+      "n. 名誉，声誉"
+    ],
+    "usphone": "ˌrepjʊˈteɪʃən",
+    "ukphone": "ˌrepjʊˈteɪʃən"
+  },
+  {
+    "name": "eminent",
+    "trans": [
+      "adj. 著名的；杰出的"
+    ],
+    "usphone": "ˈemɪnənt",
+    "ukphone": "ˈemɪnənt"
+  },
+  {
+    "name": "notorious",
+    "trans": [
+      "adj. 声名狼藉的"
+    ],
+    "usphone": "nəʊˈtɔːriəs",
+    "ukphone": "nəʊˈtɔːriəs"
+  },
+  {
+    "name": "esteem",
+    "trans": [
+      "v. 尊重，尊敬"
+    ],
+    "usphone": "ɪˈstiːm",
+    "ukphone": "ɪˈstiːm"
+  },
+  {
+    "name": "respect",
+    "trans": [
+      "n./v. 尊敬，敬重"
+    ],
+    "usphone": "rɪˈspekt",
+    "ukphone": "rɪˈspekt"
+  },
+  {
+    "name": "diligent",
+    "trans": [
+      "adj. 勤勉的，勤奋的"
+    ],
+    "usphone": "ˈdɪlɪdʒənt",
+    "ukphone": "ˈdɪlɪdʒənt"
+  },
+  {
+    "name": "painstaking",
+    "trans": [
+      "adj. 极其仔细的，辛苦的"
+    ],
+    "usphone": "ˈpeɪnzˌteɪkɪŋ",
+    "ukphone": "ˈpeɪnzˌteɪkɪŋ"
+  },
+  {
+    "name": "skill",
+    "trans": [
+      "n. 技巧，技能"
+    ],
+    "usphone": "skɪl",
+    "ukphone": "skɪl"
+  },
+  {
+    "name": "approach",
+    "trans": [
+      "n. 方法 v. 接近"
+    ],
+    "usphone": "əˈprəʊtʃ",
+    "ukphone": "əˈprəʊtʃ"
+  },
+  {
+    "name": "scheme",
+    "trans": [
+      "n. 计划，方案；阴谋 v. 谋划"
+    ],
+    "usphone": "skiːm",
+    "ukphone": "skiːm"
+  },
+  {
+    "name": "headmaster",
+    "trans": [
+      "n. [英] 男校长"
+    ],
+    "usphone": "ˌhedˈmɑːstə",
+    "ukphone": "ˌhedˈmɑːstə"
+  },
+  {
+    "name": "principal",
+    "trans": [
+      "n. [美]（中小学）校长；[英]大学校长，学院院长 adj. 首要的"
+    ],
+    "usphone": "ˈprɪnsəpəl",
+    "ukphone": "ˈprɪnsəpəl"
+  },
+  {
+    "name": "dean",
+    "trans": [
+      "n. [大学的]学院院长，系主任"
+    ],
+    "usphone": "diːn",
+    "ukphone": "diːn"
+  },
+  {
+    "name": "faculty",
+    "trans": [
+      "n. [大学的]系，院；[美]（大学的）全体教员"
+    ],
+    "usphone": "ˈfækəlti",
+    "ukphone": "ˈfækəlti"
+  },
+  {
+    "name": "professor",
+    "trans": [
+      "n. 教授"
+    ],
+    "usphone": "prəˈfesə",
+    "ukphone": "prəˈfesə"
+  },
+  {
+    "name": "scholar",
+    "trans": [
+      "n. 学者"
+    ],
+    "usphone": "ˈskɒlə",
+    "ukphone": "ˈskɒlə"
+  },
+  {
+    "name": "scientist",
+    "trans": [
+      "n. 科学家"
+    ],
+    "usphone": "ˈsaɪəntɪst",
+    "ukphone": "ˈsaɪəntɪst"
+  },
+  {
+    "name": "mentor",
+    "trans": [
+      "n. 导师；顾问"
+    ],
+    "usphone": "ˈmentɔː",
+    "ukphone": "ˈmentɔː"
+  },
+  {
+    "name": "tutor",
+    "trans": [
+      "n. 家庭教师；（英国大学或学院中的）导师"
+    ],
+    "usphone": "ˈtjuːtə",
+    "ukphone": "ˈtjuːtə"
+  },
+  {
+    "name": "lecturer",
+    "trans": [
+      "n. [英]（大学的）讲师"
+    ],
+    "usphone": "ˈlektʃərə",
+    "ukphone": "ˈlektʃərə"
+  },
+  {
+    "name": "assistant",
+    "trans": [
+      "n. 助手，助理"
+    ],
+    "usphone": "əˈsɪstənt",
+    "ukphone": "əˈsɪstənt"
+  },
+  {
+    "name": "candidate",
+    "trans": [
+      "n. 候选人；求职者；[英]考生"
+    ],
+    "usphone": "ˈkændɪdət",
+    "ukphone": "ˈkændɪdət"
+  },
+  {
+    "name": "degree",
+    "trans": [
+      "n. 学位；学位课程；程度"
+    ],
+    "usphone": "dɪˈɡriː",
+    "ukphone": "dɪˈɡriː"
+  },
+  {
+    "name": "qualify",
+    "trans": [
+      "v. 使具备资格；使有权"
+    ],
+    "usphone": "ˈkwɒlɪfaɪ",
+    "ukphone": "ˈkwɒlɪfaɪ"
+  },
+  {
+    "name": "certify",
+    "trans": [
+      "v. 证明；颁发专业合格证书"
+    ],
+    "usphone": "ˈsɜːtɪfaɪ",
+    "ukphone": "ˈsɜːtɪfaɪ"
+  },
+  {
+    "name": "license",
+    "trans": [
+      "n. 执照，许可证"
+    ],
+    "usphone": "ˈlaɪsəns",
+    "ukphone": "ˈlaɪsəns"
+  },
+  {
+    "name": "permit",
+    "trans": [
+      "n. 许可证"
+    ],
+    "usphone": "ˈpɜːmɪt",
+    "ukphone": "ˈpɜːmɪt"
+  },
+  {
+    "name": "diploma",
+    "trans": [
+      "n. 毕业文凭"
+    ],
+    "usphone": "dɪˈpləʊmə",
+    "ukphone": "dɪˈpləʊmə"
+  },
+  {
+    "name": "diplomat",
+    "trans": [
+      "n. 外交官；善于交际的人"
+    ],
+    "usphone": "ˈdɪpləmæt",
+    "ukphone": "ˈdɪpləmæt"
+  },
+  {
+    "name": "ambassador",
+    "trans": [
+      "n. 大使"
+    ],
+    "usphone": "æmˈbæsədə",
+    "ukphone": "æmˈbæsədə"
+  },
+  {
+    "name": "pupil",
+    "trans": [
+      "n. 小学生；瞳孔"
+    ],
+    "usphone": "ˈpjuːpəl",
+    "ukphone": "ˈpjuːpəl"
+  },
+  {
+    "name": "graduate",
+    "trans": [
+      "n. 大学毕业生；[美]（大学、中学等的）毕业生"
+    ],
+    "usphone": "ˈɡrædʒʊət",
+    "ukphone": "ˈɡrædʒʊət"
+  },
+  {
+    "name": "ceremony",
+    "trans": [
+      "n. 典礼；礼节"
+    ],
+    "usphone": "ˈserɪməni",
+    "ukphone": "ˈserɪməni"
+  },
+  {
+    "name": "bachelor",
+    "trans": [
+      "n. 学士；单身汉"
+    ],
+    "usphone": "ˈbætʃələ",
+    "ukphone": "ˈbætʃələ"
+  },
+  {
+    "name": "master",
+    "trans": [
+      "n. 硕士；大师 v. 精通；控制"
+    ],
+    "usphone": "ˈmɑːstə",
+    "ukphone": "ˈmɑːstə"
+  },
+  {
+    "name": "doctor",
+    "trans": [
+      "n. 博士；医生"
+    ],
+    "usphone": "ˈdɒktə",
+    "ukphone": "ˈdɒktə"
+  },
+  {
+    "name": "fresher",
+    "trans": [
+      "n. [英]（大学）一年级新生"
+    ],
+    "usphone": "ˈfreʃə",
+    "ukphone": "ˈfreʃə"
+  },
+  {
+    "name": "sophomore",
+    "trans": [
+      "n. [美]（大学或高中）二年级学生"
+    ],
+    "usphone": "ˈsɒfəmɔː",
+    "ukphone": "ˈsɒfəmɔː"
+  },
+  {
+    "name": "junior",
+    "trans": [
+      "n. [美]（大学或高中）三年级学生；较年幼者 adj. 级别（或地位）较低的"
+    ],
+    "usphone": "ˈdʒuːniə",
+    "ukphone": "ˈdʒuːniə"
+  },
+  {
+    "name": "senior",
+    "trans": [
+      "n. [美]（大学或高中）毕业班学生；较年长者 adj. 级别（或地位）高的"
+    ],
+    "usphone": "ˈsiːniə",
+    "ukphone": "ˈsiːniə"
+  },
+  {
+    "name": "alumni",
+    "trans": [
+      "n. [alumnus 的复数形式] 毕业生，校友"
+    ],
+    "usphone": "əˈlʌmnaɪ",
+    "ukphone": "əˈlʌmnaɪ"
+  },
+  {
+    "name": "campus",
+    "trans": [
+      "n. （大专院校的）校园"
+    ],
+    "usphone": "ˈkæmpəs",
+    "ukphone": "ˈkæmpəs"
+  },
+  {
+    "name": "orientation",
+    "trans": [
+      "n. （学前、岗前等的）情况介绍，迎新会；方向"
+    ],
+    "usphone": "ˌɔːriənˈteɪʃən",
+    "ukphone": "ˌɔːriənˈteɪʃən"
+  },
+  {
+    "name": "platform",
+    "trans": [
+      "n. 平台；讲台"
+    ],
+    "usphone": "ˈplætfɔːm",
+    "ukphone": "ˈplætfɔːm"
+  },
+  {
+    "name": "coed",
+    "trans": [
+      "adj. 男女同校的 n.（男女同校的大学中的）女生"
+    ],
+    "usphone": "ˈkəʊˈed",
+    "ukphone": "ˈkəʊˈed"
+  },
+  {
+    "name": "register",
+    "trans": [
+      "v. 登记，注册 n. 登记表，注册簿"
+    ],
+    "usphone": "ˈredʒɪstə",
+    "ukphone": "ˈredʒɪstə"
+  },
+  {
+    "name": "roster",
+    "trans": [
+      "n. 花名册，登记表；执勤表"
+    ],
+    "usphone": "ˈrɒstə",
+    "ukphone": "ˈrɒstə"
+  },
+  {
+    "name": "enrol",
+    "trans": [
+      "v. 登记；注册（课程）；（使）加入"
+    ],
+    "usphone": "ɪnˈrəʊl",
+    "ukphone": "ɪnˈrəʊl"
+  },
+  {
+    "name": "matriculation",
+    "trans": [
+      "n. 注册入学"
+    ],
+    "usphone": "məˌtrɪkjʊˈleɪʃən",
+    "ukphone": "məˌtrɪkjʊˈleɪʃən"
+  },
+  {
+    "name": "accommodation",
+    "trans": [
+      "n. 住处；食宿招待"
+    ],
+    "usphone": "əˌkɒməˈdeɪʃən",
+    "ukphone": "əˌkɒməˈdeɪʃən"
+  },
+  {
+    "name": "dorm",
+    "trans": [
+      "n. 宿舍"
+    ],
+    "usphone": "dɔːm",
+    "ukphone": "dɔːm"
+  },
+  {
+    "name": "dining hall",
+    "trans": [
+      "n. 食堂"
+    ],
+    "usphone": "ˈdaɪnɪŋ hɔːl",
+    "ukphone": "ˈdaɪnɪŋ hɔːl"
+  },
+  {
+    "name": "canteen",
+    "trans": [
+      "n. 水壶；[英]食堂"
+    ],
+    "usphone": "kænˈtiːn",
+    "ukphone": "kænˈtiːn"
+  },
+  {
+    "name": "laboratory",
+    "trans": [
+      "n. 实验室，研究室"
+    ],
+    "usphone": "ləˈbɒrətəri",
+    "ukphone": "ləˈbɒrətəri"
+  },
+  {
+    "name": "experiment",
+    "trans": [
+      "n. 实验；试验"
+    ],
+    "usphone": "ɪkˈsperɪmənt",
+    "ukphone": "ɪkˈsperɪmənt"
+  },
+  {
+    "name": "data",
+    "trans": [
+      "n. [datum 的复数形式] 数据"
+    ],
+    "usphone": "ˈdeɪtə",
+    "ukphone": "ˈdeɪtə"
+  },
+  {
+    "name": "quantity",
+    "trans": [
+      "n. 数量"
+    ],
+    "usphone": "ˈkwɒntəti",
+    "ukphone": "ˈkwɒntəti"
+  },
+  {
+    "name": "quality",
+    "trans": [
+      "n. 质量"
+    ],
+    "usphone": "ˈkwɒləti",
+    "ukphone": "ˈkwɒləti"
+  },
+  {
+    "name": "library",
+    "trans": [
+      "n. 图书馆；（书、唱片等）个人收藏"
+    ],
+    "usphone": "ˈlaɪbrəri",
+    "ukphone": "ˈlaɪbrəri"
+  },
+  {
+    "name": "literature",
+    "trans": [
+      "n. 文学；文学作品；文献"
+    ],
+    "usphone": "ˈlɪtərətʃə",
+    "ukphone": "ˈlɪtərətʃə"
+  },
+  {
+    "name": "article",
+    "trans": [
+      "n. 文章"
+    ],
+    "usphone": "ˈɑːtɪkəl",
+    "ukphone": "ˈɑːtɪkəl"
+  },
+  {
+    "name": "author",
+    "trans": [
+      "n. 作者，作家"
+    ],
+    "usphone": "ˈɔːθə",
+    "ukphone": "ˈɔːθə"
+  },
+  {
+    "name": "tale",
+    "trans": [
+      "n. 故事，传说"
+    ],
+    "usphone": "teɪl",
+    "ukphone": "teɪl"
+  },
+  {
+    "name": "fiction",
+    "trans": [
+      "n. 小说；虚构，杜撰"
+    ],
+    "usphone": "ˈfɪkʃən",
+    "ukphone": "ˈfɪkʃən"
+  },
+  {
+    "name": "story",
+    "trans": [
+      "n. 故事，小说；（尤指口头的）叙述"
+    ],
+    "usphone": "ˈstɔːri",
+    "ukphone": "ˈstɔːri"
+  },
+  {
+    "name": "diary",
+    "trans": [
+      "n. 日记，日记簿"
+    ],
+    "usphone": "ˈdaɪəri",
+    "ukphone": "ˈdaɪəri"
+  },
+  {
+    "name": "poetry",
+    "trans": [
+      "n. 诗，诗歌，诗作"
+    ],
+    "usphone": "ˈpəʊətri",
+    "ukphone": "ˈpəʊətri"
+  },
+  {
+    "name": "magazine",
+    "trans": [
+      "n. 杂志，期刊"
+    ],
+    "usphone": "ˌmæɡəˈziːn",
+    "ukphone": "ˌmæɡəˈziːn"
+  },
+  {
+    "name": "journal",
+    "trans": [
+      "n. 日报，周报；（尤指专门学科的）杂志；日志"
+    ],
+    "usphone": "ˈdʒɜːnəl",
+    "ukphone": "ˈdʒɜːnəl"
+  },
+  {
+    "name": "coverage",
+    "trans": [
+      "n. 新闻报道；覆盖范围"
+    ],
+    "usphone": "ˈkʌvərɪdʒ",
+    "ukphone": "ˈkʌvərɪdʒ"
+  },
+  {
+    "name": "bibliography",
+    "trans": [
+      "n. 参考书目"
+    ],
+    "usphone": "ˌbɪbliˈɒɡrəfi",
+    "ukphone": "ˌbɪbliˈɒɡrəfi"
+  },
+  {
+    "name": "encyclopedia",
+    "trans": [
+      "n. 百科全书"
+    ],
+    "usphone": "ɪnˌsaɪkləʊˈpiːdiə",
+    "ukphone": "ɪnˌsaɪkləʊˈpiːdiə"
+  },
+  {
+    "name": "biography",
+    "trans": [
+      "n. 传记"
+    ],
+    "usphone": "baɪˈɒɡrəfi",
+    "ukphone": "baɪˈɒɡrəfi"
+  },
+  {
+    "name": "documentary",
+    "trans": [
+      "n. 纪录片 adj. 纪录的"
+    ],
+    "usphone": "ˌdɒkjʊˈmentəri",
+    "ukphone": "ˌdɒkjʊˈmentəri"
+  },
+  {
+    "name": "series",
+    "trans": [
+      "n. 连续；一系列；系列节目"
+    ],
+    "usphone": "ˈsɪəriːz",
+    "ukphone": "ˈsɪəriːz"
+  },
+  {
+    "name": "record",
+    "trans": [
+      "n. 记录；履历"
+    ],
+    "usphone": "ˈrekɔːd",
+    "ukphone": "ˈrekɔːd"
+  },
+  {
+    "name": "file",
+    "trans": [
+      "n. 档案 v. 把......归档"
+    ],
+    "usphone": "faɪl",
+    "ukphone": "faɪl"
+  },
+  {
+    "name": "profile",
+    "trans": [
+      "n. 概述；人物简介；侧面轮廓"
+    ],
+    "usphone": "ˈprəʊfaɪl",
+    "ukphone": "ˈprəʊfaɪl"
+  },
+  {
+    "name": "draft",
+    "trans": [
+      "n. 草稿；汇票 v. 起草"
+    ],
+    "usphone": "drɑːft",
+    "ukphone": "drɑːft"
+  },
+  {
+    "name": "sketch",
+    "trans": [
+      "n. 概略 v. 概述"
+    ],
+    "usphone": "sketʃ",
+    "ukphone": "sketʃ"
+  },
+  {
+    "name": "brochure",
+    "trans": [
+      "n. 小册子"
+    ],
+    "usphone": "ˈbrəʊʃə",
+    "ukphone": "ˈbrəʊʃə"
+  },
+  {
+    "name": "manual",
+    "trans": [
+      "n. 使用手册，指南 adj. 手工的"
+    ],
+    "usphone": "ˈmænjʊəl",
+    "ukphone": "ˈmænjʊəl"
+  },
+  {
+    "name": "frame",
+    "trans": [
+      "n. （画、镜子等的）框架；眼镜框；构架"
+    ],
+    "usphone": "freɪm",
+    "ukphone": "freɪm"
+  },
+  {
+    "name": "index",
+    "trans": [
+      "n. 指数；指标；索引 v. 为......编索引"
+    ],
+    "usphone": "ˈɪndeks",
+    "ukphone": "ˈɪndeks"
+  },
+  {
+    "name": "catalogue",
+    "trans": [
+      "n. 目录"
+    ],
+    "usphone": "ˈkætəlɒɡ",
+    "ukphone": "ˈkætəlɒɡ"
+  },
+  {
+    "name": "category",
+    "trans": [
+      "n. 种类，类别，范畴"
+    ],
+    "usphone": "ˈkætɪɡəri",
+    "ukphone": "ˈkætɪɡəri"
+  },
+  {
+    "name": "inventory",
+    "trans": [
+      "n. 库存；详细目录"
+    ],
+    "usphone": "ˈɪnvəntɔːri",
+    "ukphone": "ˈɪnvəntɔːri"
+  },
+  {
+    "name": "content",
+    "trans": [
+      "n. 内容；目录；含量"
+    ],
+    "usphone": "ˈkɒntent",
+    "ukphone": "ˈkɒntent"
+  },
+  {
+    "name": "context",
+    "trans": [
+      "n. 上下文，语境；背景，来龙去脉"
+    ],
+    "usphone": "ˈkɒntekst",
+    "ukphone": "ˈkɒntekst"
+  },
+  {
+    "name": "list",
+    "trans": [
+      "n. 一览表，目录 v. 列举；把......列表"
+    ],
+    "usphone": "lɪst",
+    "ukphone": "lɪst"
+  },
+  {
+    "name": "chapter",
+    "trans": [
+      "n. （书等的）章；（人生或历史的）重要时期"
+    ],
+    "usphone": "ˈtʃæptə",
+    "ukphone": "ˈtʃæptə"
+  },
+  {
+    "name": "volume",
+    "trans": [
+      "n. 容积，体积；卷，册；音量"
+    ],
+    "usphone": "ˈvɒljuːm",
+    "ukphone": "ˈvɒljuːm"
+  },
+  {
+    "name": "reel",
+    "trans": [
+      "n. 卷轴；卷筒；一卷胶卷"
+    ],
+    "usphone": "riːl",
+    "ukphone": "riːl"
+  },
+  {
+    "name": "subject",
+    "trans": [
+      "n. 科目；主题；实验对象"
+    ],
+    "usphone": "ˈsʌbdʒɪkt",
+    "ukphone": "ˈsʌbdʒɪkt"
+  },
+  {
+    "name": "object",
+    "trans": [
+      "n. 物体；目标"
+    ],
+    "usphone": "ˈɒbdʒɪkt",
+    "ukphone": "ˈɒbdʒɪkt"
+  },
+  {
+    "name": "major",
+    "trans": [
+      "n. [美]主修科目，专业 v. [美]主修 adj. 主要的"
+    ],
+    "usphone": "ˈmeɪdʒə",
+    "ukphone": "ˈmeɪdʒə"
+  },
+  {
+    "name": "minor",
+    "trans": [
+      "n. [美]辅修科目 adj. 不严重的"
+    ],
+    "usphone": "ˈmaɪnə",
+    "ukphone": "ˈmaɪnə"
+  },
+  {
+    "name": "sociology",
+    "trans": [
+      "n. 社会学"
+    ],
+    "usphone": "ˌsəʊsiˈɒlədʒi",
+    "ukphone": "ˌsəʊsiˈɒlədʒi"
+  },
+  {
+    "name": "politics",
+    "trans": [
+      "n. 政治学；政治；政治事务"
+    ],
+    "usphone": "ˈpɒlətɪks",
+    "ukphone": "ˈpɒlətɪks"
+  },
+  {
+    "name": "economics",
+    "trans": [
+      "n. 经济学"
+    ],
+    "usphone": "ˌiːkəˈnɒmɪks",
+    "ukphone": "ˌiːkəˈnɒmɪks"
+  },
+  {
+    "name": "marketing",
+    "trans": [
+      "n. 市场营销"
+    ],
+    "usphone": "ˈmɑːkɪtɪŋ",
+    "ukphone": "ˈmɑːkɪtɪŋ"
+  },
+  {
+    "name": "accounting",
+    "trans": [
+      "n. 会计"
+    ],
+    "usphone": "əˈkaʊntɪŋ",
+    "ukphone": "əˈkaʊntɪŋ"
+  },
+  {
+    "name": "audit",
+    "trans": [
+      "n. 审计 v. 旁听；审计"
+    ],
+    "usphone": "ˈɔːdɪt",
+    "ukphone": "ˈɔːdɪt"
+  },
+  {
+    "name": "statistics",
+    "trans": [
+      "n. 统计学"
+    ],
+    "usphone": "stəˈtɪstɪks",
+    "ukphone": "stəˈtɪstɪks"
+  },
+  {
+    "name": "psychology",
+    "trans": [
+      "n. 心理学；心理特征"
+    ],
+    "usphone": "saɪˈkɒlədʒi",
+    "ukphone": "saɪˈkɒlədʒi"
+  },
+  {
+    "name": "philosophy",
+    "trans": [
+      "n. 哲学"
+    ],
+    "usphone": "fɪˈlɒsəfi",
+    "ukphone": "fɪˈlɒsəfi"
+  },
+  {
+    "name": "logic",
+    "trans": [
+      "n. 逻辑；逻辑学"
+    ],
+    "usphone": "ˈlɒdʒɪk",
+    "ukphone": "ˈlɒdʒɪk"
+  },
+  {
+    "name": "biology",
+    "trans": [
+      "n. 生物学；生命机理"
+    ],
+    "usphone": "baɪˈɒlədʒi",
+    "ukphone": "baɪˈɒlədʒi"
+  },
+  {
+    "name": "physics",
+    "trans": [
+      "n. 物理学"
+    ],
+    "usphone": "ˈfɪzɪks",
+    "ukphone": "ˈfɪzɪks"
+  },
+  {
+    "name": "chemistry",
+    "trans": [
+      "n. 化学"
+    ],
+    "usphone": "ˈkemɪstri",
+    "ukphone": "ˈkemɪstri"
+  },
+  {
+    "name": "agriculture",
+    "trans": [
+      "n. 农业；农学"
+    ],
+    "usphone": "ˈæɡrɪkʌltʃə",
+    "ukphone": "ˈæɡrɪkʌltʃə"
+  },
+  {
+    "name": "logistics",
+    "trans": [
+      "n. 物流；后勤"
+    ],
+    "usphone": "ləˈdʒɪstɪks",
+    "ukphone": "ləˈdʒɪstɪks"
+  },
+  {
+    "name": "geography",
+    "trans": [
+      "n. 地理学；地形，地势"
+    ],
+    "usphone": "dʒiˈɒɡrəfi",
+    "ukphone": "dʒiˈɒɡrəfi"
+  },
+  {
+    "name": "history",
+    "trans": [
+      "n. 历史；历史学"
+    ],
+    "usphone": "ˈhɪstəri",
+    "ukphone": "ˈhɪstəri"
+  },
+  {
+    "name": "engineering",
+    "trans": [
+      "n. 工程；工程学"
+    ],
+    "usphone": "ˌendʒɪˈnɪərɪŋ",
+    "ukphone": "ˌendʒɪˈnɪərɪŋ"
+  },
+  {
+    "name": "mechanics",
+    "trans": [
+      "n. 力学；机械学"
+    ],
+    "usphone": "mɪˈkænɪks",
+    "ukphone": "mɪˈkænɪks"
+  },
+  {
+    "name": "electronics",
+    "trans": [
+      "n. 电子学；电子器件"
+    ],
+    "usphone": "ɪˌlekˈtrɒnɪks",
+    "ukphone": "ɪˌlekˈtrɒnɪks"
+  },
+  {
+    "name": "maths",
+    "trans": [
+      "n. 数学"
+    ],
+    "usphone": "mæθs",
+    "ukphone": "mæθs"
+  },
+  {
+    "name": "arithmetic",
+    "trans": [
+      "n. 算术"
+    ],
+    "usphone": "əˈrɪθmətɪk",
+    "ukphone": "əˈrɪθmətɪk"
+  },
+  {
+    "name": "geometry",
+    "trans": [
+      "n. 几何学"
+    ],
+    "usphone": "dʒiˈɒmətri",
+    "ukphone": "dʒiˈɒmətri"
+  },
+  {
+    "name": "algebra",
+    "trans": [
+      "n. 代数学，代数"
+    ],
+    "usphone": "ˈældʒɪbrə",
+    "ukphone": "ˈældʒɪbrə"
+  },
+  {
+    "name": "calculus",
+    "trans": [
+      "n. 微积分；结石"
+    ],
+    "usphone": "ˈkælkjʊləs",
+    "ukphone": "ˈkælkjʊləs"
+  },
+  {
+    "name": "plus",
+    "trans": [
+      "prep. 加上 adj. 正（数）的，在零以上的"
+    ],
+    "usphone": "plʌs",
+    "ukphone": "plʌs"
+  },
+  {
+    "name": "sum",
+    "trans": [
+      "n. 总数，总和；金额"
+    ],
+    "usphone": "sʌm",
+    "ukphone": "sʌm"
+  },
+  {
+    "name": "total",
+    "trans": [
+      "adj. 总的，全部的 n. 总数"
+    ],
+    "usphone": "ˈtəʊtəl",
+    "ukphone": "ˈtəʊtəl"
+  },
+  {
+    "name": "merger",
+    "trans": [
+      "n. 合并，归并"
+    ],
+    "usphone": "ˈmɜːdʒə",
+    "ukphone": "ˈmɜːdʒə"
+  },
+  {
+    "name": "equation",
+    "trans": [
+      "n. 相等；平衡，综合体；方程式，等式"
+    ],
+    "usphone": "ɪˈkweɪʒən",
+    "ukphone": "ɪˈkweɪʒən"
+  },
+  {
+    "name": "identical",
+    "trans": [
+      "adj. 同一的"
+    ],
+    "usphone": "aɪˈdentɪkəl",
+    "ukphone": "aɪˈdentɪkəl"
+  },
+  {
+    "name": "minus",
+    "trans": [
+      "adj. 负的，零以下的 prep. 减（去）"
+    ],
+    "usphone": "ˈmaɪnəs",
+    "ukphone": "ˈmaɪnəs"
+  },
+  {
+    "name": "subtract",
+    "trans": [
+      "v. 减去，减"
+    ],
+    "usphone": "səbˈtrækt",
+    "ukphone": "səbˈtrækt"
+  },
+  {
+    "name": "multiply",
+    "trans": [
+      "v. 乘，使相乘；（使）成倍增加；繁殖"
+    ],
+    "usphone": "ˈmʌltɪplaɪ",
+    "ukphone": "ˈmʌltɪplaɪ"
+  },
+  {
+    "name": "divide",
+    "trans": [
+      "v. 除以；除"
+    ],
+    "usphone": "dɪˈvaɪd",
+    "ukphone": "dɪˈvaɪd"
+  },
+  {
+    "name": "dividend",
+    "trans": [
+      "n. 被除数"
+    ],
+    "usphone": "ˈdɪvɪdend",
+    "ukphone": "ˈdɪvɪdend"
+  },
+  {
+    "name": "remainder",
+    "trans": [
+      "n. 余数；剩余部分"
+    ],
+    "usphone": "rɪˈmeɪndə",
+    "ukphone": "rɪˈmeɪndə"
+  },
+  {
+    "name": "rational",
+    "trans": [
+      "n. 有理数 adj.（数、式等）有理的"
+    ],
+    "usphone": "ˈræʃənəl",
+    "ukphone": "ˈræʃənəl"
+  },
+  {
+    "name": "parameter",
+    "trans": [
+      "n. 参数；起限定作用的因素"
+    ],
+    "usphone": "pəˈræmɪtə",
+    "ukphone": "pəˈræmɪtə"
+  },
+  {
+    "name": "variable",
+    "trans": [
+      "n. 变量；可变因素 adj. 易变的"
+    ],
+    "usphone": "ˈveəriəbəl",
+    "ukphone": "ˈveəriəbəl"
+  },
+  {
+    "name": "even",
+    "trans": [
+      "adj. 均匀的；偶数的；相等的 adv. 甚至"
+    ],
+    "usphone": "ˈiːvən",
+    "ukphone": "ˈiːvən"
+  },
+  {
+    "name": "odd",
+    "trans": [
+      "adj. 奇数的；古怪的"
+    ],
+    "usphone": "ɒd",
+    "ukphone": "ɒd"
+  },
+  {
+    "name": "mean",
+    "trans": [
+      "n. 平均数，平均值 adj. 平均的"
+    ],
+    "usphone": "miːn",
+    "ukphone": "miːn"
+  },
+  {
+    "name": "double",
+    "trans": [
+      "adj. 两倍的 n. 两倍数，两倍量 v.（使）加倍"
+    ],
+    "usphone": "ˈdʌbəl",
+    "ukphone": "ˈdʌbəl"
+  },
+  {
+    "name": "triple",
+    "trans": [
+      "adj. 三倍的 n. 三倍 v.（使）增至三倍"
+    ],
+    "usphone": "ˈtrɪpəl",
+    "ukphone": "ˈtrɪpəl"
+  },
+  {
+    "name": "quadruple",
+    "trans": [
+      "adj. 四倍的 n. 四倍 v.（使）成四倍"
+    ],
+    "usphone": "ˈkwɒdrʊpəl",
+    "ukphone": "ˈkwɒdrʊpəl"
+  },
+  {
+    "name": "multiple",
+    "trans": [
+      "n. 倍数 adj. 多样的，数量多的"
+    ],
+    "usphone": "ˈmʌltɪpəl",
+    "ukphone": "ˈmʌltɪpəl"
+  },
+  {
+    "name": "maximum",
+    "trans": [
+      "n. 最大值，最大限度"
+    ],
+    "usphone": "ˈmæksɪməm",
+    "ukphone": "ˈmæksɪməm"
+  },
+  {
+    "name": "minimum",
+    "trans": [
+      "n. 最小值，最低限度"
+    ],
+    "usphone": "ˈmɪnɪməm",
+    "ukphone": "ˈmɪnɪməm"
+  },
+  {
+    "name": "approximately",
+    "trans": [
+      "adv. 大约"
+    ],
+    "usphone": "əˈprɒksɪmətli",
+    "ukphone": "əˈprɒksɪmətli"
+  },
+  {
+    "name": "chart",
+    "trans": [
+      "n. 图，图表；海图"
+    ],
+    "usphone": "tʃɑːt",
+    "ukphone": "tʃɑːt"
+  },
+  {
+    "name": "graph",
+    "trans": [
+      "n. 图，图表"
+    ],
+    "usphone": "ɡrɑːf",
+    "ukphone": "ɡrɑːf"
+  },
+  {
+    "name": "diagram",
+    "trans": [
+      "n. 图表；示意图，图解"
+    ],
+    "usphone": "ˈdaɪəɡræm",
+    "ukphone": "ˈdaɪəɡræm"
+  },
+  {
+    "name": "table",
+    "trans": [
+      "n. 表格；桌子"
+    ],
+    "usphone": "ˈteɪbəl",
+    "ukphone": "ˈteɪbəl"
+  },
+  {
+    "name": "matrix",
+    "trans": [
+      "n. 矩阵；铸模"
+    ],
+    "usphone": "ˈmeɪtrɪks",
+    "ukphone": "ˈmeɪtrɪks"
+  },
+  {
+    "name": "rectangle",
+    "trans": [
+      "n. 长方形，矩形"
+    ],
+    "usphone": "ˈrektæŋɡəl",
+    "ukphone": "ˈrektæŋɡəl"
+  },
+  {
+    "name": "cube",
+    "trans": [
+      "n. 立方体；立方，三次幂；立方形的东西"
+    ],
+    "usphone": "kjuːb",
+    "ukphone": "kjuːb"
+  },
+  {
+    "name": "angle",
+    "trans": [
+      "n. 角；角度"
+    ],
+    "usphone": "ˈæŋɡəl",
+    "ukphone": "ˈæŋɡəl"
+  },
+  {
+    "name": "triangle",
+    "trans": [
+      "n. 三角形；三角关系"
+    ],
+    "usphone": "ˈtraɪæŋɡəl",
+    "ukphone": "ˈtraɪæŋɡəl"
+  },
+  {
+    "name": "diagonal",
+    "trans": [
+      "adj. 斜纹的；对角线的 n. 对角线；斜纹织物"
+    ],
+    "usphone": "daɪˈæɡənəl",
+    "ukphone": "daɪˈæɡənəl"
+  },
+  {
+    "name": "straight",
+    "trans": [
+      "adj. 直的 adv. 笔直地；直接"
+    ],
+    "usphone": "streɪt",
+    "ukphone": "streɪt"
+  },
+  {
+    "name": "circle",
+    "trans": [
+      "n. 圆"
+    ],
+    "usphone": "ˈsɜːkəl",
+    "ukphone": "ˈsɜːkəl"
+  },
+  {
+    "name": "round",
+    "trans": [
+      "adj. 圆的 n. 绕圈；一轮 adv. 环绕"
+    ],
+    "usphone": "raʊnd",
+    "ukphone": "raʊnd"
+  },
+  {
+    "name": "dot",
+    "trans": [
+      "n. 点，圆点 v. 在......上打点"
+    ],
+    "usphone": "dɒt",
+    "ukphone": "dɒt"
+  },
+  {
+    "name": "sphere",
+    "trans": [
+      "n. 球体；球状物；范围，领域"
+    ],
+    "usphone": "sfɪə",
+    "ukphone": "sfɪə"
+  },
+  {
+    "name": "cone",
+    "trans": [
+      "n. 圆锥体；锥形物"
+    ],
+    "usphone": "kəʊn",
+    "ukphone": "kəʊn"
+  },
+  {
+    "name": "extent",
+    "trans": [
+      "n. 广度，范围；程度"
+    ],
+    "usphone": "ɪkˈstent",
+    "ukphone": "ɪkˈstent"
+  },
+  {
+    "name": "width",
+    "trans": [
+      "n. 宽度"
+    ],
+    "usphone": "wɪdθ",
+    "ukphone": "wɪdθ"
+  },
+  {
+    "name": "length",
+    "trans": [
+      "n. 长度"
+    ],
+    "usphone": "leŋkθ",
+    "ukphone": "leŋkθ"
+  },
+  {
+    "name": "decimal",
+    "trans": [
+      "adj. 小数的；十进位的 n. 小数"
+    ],
+    "usphone": "ˈdesɪməl",
+    "ukphone": "ˈdesɪməl"
+  },
+  {
+    "name": "per cent",
+    "trans": [
+      "n. 百分之......"
+    ],
+    "usphone": "pə ˈsent",
+    "ukphone": "pə ˈsent"
+  },
+  {
+    "name": "proportion",
+    "trans": [
+      "n. 比例"
+    ],
+    "usphone": "prəˈpɔːʃən",
+    "ukphone": "prəˈpɔːʃən"
+  },
+  {
+    "name": "rate",
+    "trans": [
+      "n. 比率，率；速度"
+    ],
+    "usphone": "reɪt",
+    "ukphone": "reɪt"
+  },
+  {
+    "name": "ratio",
+    "trans": [
+      "n. 比（率）"
+    ],
+    "usphone": "ˈreɪʃiəʊ",
+    "ukphone": "ˈreɪʃiəʊ"
+  },
+  {
+    "name": "fraction",
+    "trans": [
+      "n. 分数；小部分；片断"
+    ],
+    "usphone": "ˈfrækʃən",
+    "ukphone": "ˈfrækʃən"
+  },
+  {
+    "name": "scale",
+    "trans": [
+      "n. 刻度；规模；[~s] 天平；鳞 v. 攀登"
+    ],
+    "usphone": "skeɪl",
+    "ukphone": "skeɪl"
+  },
+  {
+    "name": "ounce",
+    "trans": [
+      "n. 盎司；少量"
+    ],
+    "usphone": "aʊns",
+    "ukphone": "aʊns"
+  },
+  {
+    "name": "density",
+    "trans": [
+      "n. 密度；浓度"
+    ],
+    "usphone": "ˈdensəti",
+    "ukphone": "ˈdensəti"
+  },
+  {
+    "name": "Fahrenheit",
+    "trans": [
+      "adj. 华氏温标的"
+    ],
+    "usphone": "ˈfærənhaɪt",
+    "ukphone": "ˈfærənhaɪt"
+  },
+  {
+    "name": "mercury",
+    "trans": [
+      "n. 水银，汞；[M-]水星"
+    ],
+    "usphone": "ˈmɜːkjəri",
+    "ukphone": "ˈmɜːkjəri"
+  },
+  {
+    "name": "battery",
+    "trans": [
+      "n. 电池；（物品的）一组"
+    ],
+    "usphone": "ˈbætəri",
+    "ukphone": "ˈbætəri"
+  },
+  {
+    "name": "volt",
+    "trans": [
+      "n. 伏特（电压单位）"
+    ],
+    "usphone": "vəʊlt",
+    "ukphone": "vəʊlt"
+  },
+  {
+    "name": "radiate",
+    "trans": [
+      "v. 辐射，发散；从中心向四周散开"
+    ],
+    "usphone": "ˈreɪdieɪt",
+    "ukphone": "ˈreɪdieɪt"
+  },
+  {
+    "name": "emit",
+    "trans": [
+      "v. 散发（光、热、气等）；发出（声音）"
+    ],
+    "usphone": "ɪˈmɪt",
+    "ukphone": "ɪˈmɪt"
+  },
+  {
+    "name": "transparent",
+    "trans": [
+      "adj. 透明的；易看穿的"
+    ],
+    "usphone": "trænsˈpærənt",
+    "ukphone": "trænsˈpærənt"
+  },
+  {
+    "name": "hollow",
+    "trans": [
+      "adj. 空（心）的，中空的"
+    ],
+    "usphone": "ˈhɒləʊ",
+    "ukphone": "ˈhɒləʊ"
+  },
+  {
+    "name": "ozone",
+    "trans": [
+      "n. 臭氧"
+    ],
+    "usphone": "ˈəʊzəʊn",
+    "ukphone": "ˈəʊzəʊn"
+  },
+  {
+    "name": "gravity",
+    "trans": [
+      "n. 地球引力，重力"
+    ],
+    "usphone": "ˈɡrævəti",
+    "ukphone": "ˈɡrævəti"
+  },
+  {
+    "name": "friction",
+    "trans": [
+      "n. 摩擦；摩擦力；不和，矛盾"
+    ],
+    "usphone": "ˈfrɪkʃən",
+    "ukphone": "ˈfrɪkʃən"
+  },
+  {
+    "name": "eccentric",
+    "trans": [
+      "adj. 不同圆心的；古怪的"
+    ],
+    "usphone": "ɪkˈsentrɪk",
+    "ukphone": "ɪkˈsentrɪk"
+  },
+  {
+    "name": "displace",
+    "trans": [
+      "v. 移动......的位置；取代，替代"
+    ],
+    "usphone": "dɪsˈpleɪs",
+    "ukphone": "dɪsˈpleɪs"
+  },
+  {
+    "name": "boil",
+    "trans": [
+      "v. 煮沸，（使）沸腾 n. 沸点"
+    ],
+    "usphone": "bɔɪl",
+    "ukphone": "bɔɪl"
+  },
+  {
+    "name": "melt",
+    "trans": [
+      "v. （使）融化；（使）熔化"
+    ],
+    "usphone": "melt",
+    "ukphone": "melt"
+  },
+  {
+    "name": "dissolve",
+    "trans": [
+      "v. （使）溶解；解散"
+    ],
+    "usphone": "dɪˈzɒlv",
+    "ukphone": "dɪˈzɒlv"
+  },
+  {
+    "name": "rust",
+    "trans": [
+      "v. （使）生锈 n. 锈，铁锈"
+    ],
+    "usphone": "rʌst",
+    "ukphone": "rʌst"
+  },
+  {
+    "name": "ferment",
+    "trans": [
+      "v. （使）发酵；骚动"
+    ],
+    "usphone": "fɜːˈment",
+    "ukphone": "fɜːˈment"
+  },
+  {
+    "name": "dilute",
+    "trans": [
+      "v. 冲淡，稀释 adj. 稀释了的；减弱了的"
+    ],
+    "usphone": "daɪˈluːt",
+    "ukphone": "daɪˈluːt"
+  },
+  {
+    "name": "inherent",
+    "trans": [
+      "adj. 内在的，固有的"
+    ],
+    "usphone": "ɪnˈherənt",
+    "ukphone": "ɪnˈherənt"
+  },
+  {
+    "name": "acid",
+    "trans": [
+      "n. 酸 adj. 酸的；讽刺的，尖刻的"
+    ],
+    "usphone": "ˈæsɪd",
+    "ukphone": "ˈæsɪd"
+  },
+  {
+    "name": "noxious",
+    "trans": [
+      "adj. 有害的"
+    ],
+    "usphone": "ˈnɒkʃəs",
+    "ukphone": "ˈnɒkʃəs"
+  },
+  {
+    "name": "static",
+    "trans": [
+      "adj. 静态的；静力的"
+    ],
+    "usphone": "ˈstætɪk",
+    "ukphone": "ˈstætɪk"
+  },
+  {
+    "name": "inert",
+    "trans": [
+      "adj. 无生气的；惰性的，不活泼的"
+    ],
+    "usphone": "ɪˈnɜːt",
+    "ukphone": "ɪˈnɜːt"
+  },
+  {
+    "name": "formula",
+    "trans": [
+      "n. 公式，方程式；原则；配方；分子式"
+    ],
+    "usphone": "ˈfɔːmjʊlə",
+    "ukphone": "ˈfɔːmjʊlə"
+  },
+  {
+    "name": "component",
+    "trans": [
+      "n. 成分，组成部分"
+    ],
+    "usphone": "kəmˈpəʊnənt",
+    "ukphone": "kəmˈpəʊnənt"
+  },
+  {
+    "name": "compose",
+    "trans": [
+      "v. 组成；构成；创作（音乐）；写"
+    ],
+    "usphone": "kəmˈpəʊz",
+    "ukphone": "kəmˈpəʊz"
+  },
+  {
+    "name": "mixture",
+    "trans": [
+      "n. 混合（物）"
+    ],
+    "usphone": "ˈmɪkstʃə",
+    "ukphone": "ˈmɪkstʃə"
+  },
+  {
+    "name": "blend",
+    "trans": [
+      "v. 混合；（使）交融 n. 混合物"
+    ],
+    "usphone": "blend",
+    "ukphone": "blend"
+  },
+  {
+    "name": "theory",
+    "trans": [
+      "n. 理论；学说"
+    ],
+    "usphone": "ˈθɪəri",
+    "ukphone": "ˈθɪəri"
+  },
+  {
+    "name": "empirical",
+    "trans": [
+      "adj. 以实验为依据的；经验主义的"
+    ],
+    "usphone": "ɪmˈpɪrɪkəl",
+    "ukphone": "ɪmˈpɪrɪkəl"
+  },
+  {
+    "name": "practical",
+    "trans": [
+      "adj. 实际的；有用的；务实的；心灵手巧的"
+    ],
+    "usphone": "ˈpræktɪkəl",
+    "ukphone": "ˈpræktɪkəl"
+  },
+  {
+    "name": "doctrine",
+    "trans": [
+      "n. 学说；教义；信条"
+    ],
+    "usphone": "ˈdɒktrɪn",
+    "ukphone": "ˈdɒktrɪn"
+  },
+  {
+    "name": "principle",
+    "trans": [
+      "n. 原则；（科学）原理"
+    ],
+    "usphone": "ˈprɪnsəpəl",
+    "ukphone": "ˈprɪnsəpəl"
+  },
+  {
+    "name": "discipline",
+    "trans": [
+      "n. 纪律；训练"
+    ],
+    "usphone": "ˈdɪsɪplɪn",
+    "ukphone": "ˈdɪsɪplɪn"
+  },
+  {
+    "name": "term",
+    "trans": [
+      "n. 期限；术语；[尤英]学期"
+    ],
+    "usphone": "tɜːm",
+    "ukphone": "tɜːm"
+  },
+  {
+    "name": "semester",
+    "trans": [
+      "n. 学期"
+    ],
+    "usphone": "sɪˈmestə",
+    "ukphone": "sɪˈmestə"
+  },
+  {
+    "name": "timetable",
+    "trans": [
+      "n. 时间表；课程表"
+    ],
+    "usphone": "ˈtaɪmˌteɪbəl",
+    "ukphone": "ˈtaɪmˌteɪbəl"
+  },
+  {
+    "name": "schedule",
+    "trans": [
+      "n. 日程安排；[美]时刻表"
+    ],
+    "usphone": "ˈʃedjuːl",
+    "ukphone": "ˈʃedjuːl"
+  },
+  {
+    "name": "deadline",
+    "trans": [
+      "n. 截止日期"
+    ],
+    "usphone": "ˈdedlaɪn",
+    "ukphone": "ˈdedlaɪn"
+  },
+  {
+    "name": "course",
+    "trans": [
+      "n. 课程"
+    ],
+    "usphone": "kɔːs",
+    "ukphone": "kɔːs"
+  },
+  {
+    "name": "lesson",
+    "trans": [
+      "n. 一堂课；课程；教训"
+    ],
+    "usphone": "ˈlesən",
+    "ukphone": "ˈlesən"
+  },
+  {
+    "name": "curriculum",
+    "trans": [
+      "n. 课程；（学校等的）全部课程"
+    ],
+    "usphone": "kəˈrɪkjʊləm",
+    "ukphone": "kəˈrɪkjʊləm"
+  },
+  {
+    "name": "seminar",
+    "trans": [
+      "n. 研讨会；讨论课"
+    ],
+    "usphone": "ˈsemɪnɑː",
+    "ukphone": "ˈsemɪnɑː"
+  },
+  {
+    "name": "forum",
+    "trans": [
+      "n. 讨论会，论坛；公开讨论的广场"
+    ],
+    "usphone": "ˈfɔːrəm",
+    "ukphone": "ˈfɔːrəm"
+  },
+  {
+    "name": "syllabus",
+    "trans": [
+      "n. 教学大纲"
+    ],
+    "usphone": "ˈsɪləbəs",
+    "ukphone": "ˈsɪləbəs"
+  },
+  {
+    "name": "system",
+    "trans": [
+      "n. 系统；体系，制度"
+    ],
+    "usphone": "ˈsɪstəm",
+    "ukphone": "ˈsɪstəm"
+  },
+  {
+    "name": "rudimentary",
+    "trans": [
+      "adj. 基本的，粗浅的"
+    ],
+    "usphone": "ˌruːdɪˈmentəri",
+    "ukphone": "ˌruːdɪˈmentəri"
+  },
+  {
+    "name": "basic",
+    "trans": [
+      "adj. 基本的，基础的"
+    ],
+    "usphone": "ˈbeɪsɪk",
+    "ukphone": "ˈbeɪsɪk"
+  },
+  {
+    "name": "fundamental",
+    "trans": [
+      "adj. 基础的，基本的；根本的"
+    ],
+    "usphone": "ˌfʌndəˈmentəl",
+    "ukphone": "ˌfʌndəˈmentəl"
+  },
+  {
+    "name": "elementary",
+    "trans": [
+      "adj. 基本的；初级的"
+    ],
+    "usphone": "ˌelɪˈmentəri",
+    "ukphone": "ˌelɪˈmentəri"
+  },
+  {
+    "name": "profound",
+    "trans": [
+      "adj. （影响）深刻的，深远的；见解深刻的"
+    ],
+    "usphone": "prəˈfaʊnd",
+    "ukphone": "prəˈfaʊnd"
+  },
+  {
+    "name": "superficial",
+    "trans": [
+      "adj. 表面的，外表的；肤浅的"
+    ],
+    "usphone": "ˌsuːpəˈfɪʃəl",
+    "ukphone": "ˌsuːpəˈfɪʃəl"
+  },
+  {
+    "name": "surface",
+    "trans": [
+      "n. 表面；地面；水面"
+    ],
+    "usphone": "ˈsɜːfɪs",
+    "ukphone": "ˈsɜːfɪs"
+  },
+  {
+    "name": "compulsory",
+    "trans": [
+      "adj. 强制的"
+    ],
+    "usphone": "kəmˈpʌlsəri",
+    "ukphone": "kəmˈpʌlsəri"
+  },
+  {
+    "name": "prerequisite",
+    "trans": [
+      "n. 必备条件 adj. 必备的"
+    ],
+    "usphone": "ˌpriːˈrekwɪzɪt",
+    "ukphone": "ˌpriːˈrekwɪzɪt"
+  },
+  {
+    "name": "selective",
+    "trans": [
+      "adj. 选择性的"
+    ],
+    "usphone": "sɪˈlektɪv",
+    "ukphone": "sɪˈlektɪv"
+  },
+  {
+    "name": "elective",
+    "trans": [
+      "adj. 选举的；[美]选修的 n. [美]选修科目"
+    ],
+    "usphone": "ɪˈlektɪv",
+    "ukphone": "ɪˈlektɪv"
+  },
+  {
+    "name": "assignment",
+    "trans": [
+      "n. （布置的）作业；（分派的）任务"
+    ],
+    "usphone": "əˈsaɪnmənt",
+    "ukphone": "əˈsaɪnmənt"
+  },
+  {
+    "name": "submit",
+    "trans": [
+      "v. 服从；提交，呈递"
+    ],
+    "usphone": "səbˈmɪt",
+    "ukphone": "səbˈmɪt"
+  },
+  {
+    "name": "preview",
+    "trans": [
+      "n./v. 预习"
+    ],
+    "usphone": "ˈpriːvjuː",
+    "ukphone": "ˈpriːvjuː"
+  },
+  {
+    "name": "review",
+    "trans": [
+      "n./v. 回顾；复习"
+    ],
+    "usphone": "rɪˈvjuː",
+    "ukphone": "rɪˈvjuː"
+  },
+  {
+    "name": "revise",
+    "trans": [
+      "v. 修订，修改"
+    ],
+    "usphone": "rɪˈvaɪz",
+    "ukphone": "rɪˈvaɪz"
+  },
+  {
+    "name": "inspect",
+    "trans": [
+      "v. 检查；检阅，视察"
+    ],
+    "usphone": "ɪnˈspekt",
+    "ukphone": "ɪnˈspekt"
+  },
+  {
+    "name": "consult",
+    "trans": [
+      "v. 请教；查阅"
+    ],
+    "usphone": "kənˈsʌlt",
+    "ukphone": "kənˈsʌlt"
+  },
+  {
+    "name": "skim",
+    "trans": [
+      "v. 掠过，擦过；略读"
+    ],
+    "usphone": "skɪm",
+    "ukphone": "skɪm"
+  },
+  {
+    "name": "scan",
+    "trans": [
+      "v. 细看；浏览；扫描 n. 扫描检查；浏览"
+    ],
+    "usphone": "skæn",
+    "ukphone": "skæn"
+  },
+  {
+    "name": "scrutinise",
+    "trans": [
+      "v. 详细检查，仔细查看"
+    ],
+    "usphone": "ˈskruːtɪnaɪz",
+    "ukphone": "ˈskruːtɪnaɪz"
+  },
+  {
+    "name": "recite",
+    "trans": [
+      "v. 背诵，朗诵"
+    ],
+    "usphone": "rɪˈsaɪt",
+    "ukphone": "rɪˈsaɪt"
+  },
+  {
+    "name": "dictate",
+    "trans": [
+      "v. 让（某人）听写；命令，强行规定"
+    ],
+    "usphone": "dɪkˈteɪt",
+    "ukphone": "dɪkˈteɪt"
+  },
+  {
+    "name": "examination",
+    "trans": [
+      "n. 考试；细查"
+    ],
+    "usphone": "ɪɡˌzæmɪˈneɪʃən",
+    "ukphone": "ɪɡˌzæmɪˈneɪʃən"
+  },
+  {
+    "name": "test",
+    "trans": [
+      "n./v. 试验，检验"
+    ],
+    "usphone": "test",
+    "ukphone": "test"
+  },
+  {
+    "name": "quiz",
+    "trans": [
+      "n. 智力竞赛；小测验"
+    ],
+    "usphone": "kwɪz",
+    "ukphone": "kwɪz"
+  },
+  {
+    "name": "presentation",
+    "trans": [
+      "n. 陈述；表演，演出"
+    ],
+    "usphone": "ˌprezənˈteɪʃən",
+    "ukphone": "ˌprezənˈteɪʃən"
+  },
+  {
+    "name": "plagiarise",
+    "trans": [
+      "v. 抄袭"
+    ],
+    "usphone": "ˈpleɪdʒəraɪz",
+    "ukphone": "ˈpleɪdʒəraɪz"
+  },
+  {
+    "name": "copy",
+    "trans": [
+      "n. 复制品 v. 抄写；复制"
+    ],
+    "usphone": "ˈkɒpi",
+    "ukphone": "ˈkɒpi"
+  },
+  {
+    "name": "print",
+    "trans": [
+      "v. 打印 n. 印刷品；（冲印出来的）照片"
+    ],
+    "usphone": "prɪnt",
+    "ukphone": "prɪnt"
+  },
+  {
+    "name": "thesis",
+    "trans": [
+      "n. 论文"
+    ],
+    "usphone": "ˈθiːsɪs",
+    "ukphone": "ˈθiːsɪs"
+  },
+  {
+    "name": "essay",
+    "trans": [
+      "n. （学生为某门课程写的）短文，论说文；（关于政治、社会等的）小品文"
+    ],
+    "usphone": "ˈeseɪ",
+    "ukphone": "ˈeseɪ"
+  },
+  {
+    "name": "paper",
+    "trans": [
+      "n. 论文；纸"
+    ],
+    "usphone": "ˈpeɪpə",
+    "ukphone": "ˈpeɪpə"
+  },
+  {
+    "name": "dissertation",
+    "trans": [
+      "n. 专题论文；（尤指）学位论文"
+    ],
+    "usphone": "ˌdɪsəˈteɪʃən",
+    "ukphone": "ˌdɪsəˈteɪʃən"
+  },
+  {
+    "name": "project",
+    "trans": [
+      "n. （大中学学生的）专题研究；项目，方案"
+    ],
+    "usphone": "ˈprɒdʒekt",
+    "ukphone": "ˈprɒdʒekt"
+  },
+  {
+    "name": "heading",
+    "trans": [
+      "n. 标题；主题"
+    ],
+    "usphone": "ˈhedɪŋ",
+    "ukphone": "ˈhedɪŋ"
+  },
+  {
+    "name": "outset",
+    "trans": [
+      "n. 开端，开始"
+    ],
+    "usphone": "ˈaʊtset",
+    "ukphone": "ˈaʊtset"
+  },
+  {
+    "name": "outline",
+    "trans": [
+      "n. 概要；轮廓，略图"
+    ],
+    "usphone": "ˈaʊtlaɪn",
+    "ukphone": "ˈaʊtlaɪn"
+  },
+  {
+    "name": "point",
+    "trans": [
+      "n. 点；要点"
+    ],
+    "usphone": "pɔɪnt",
+    "ukphone": "pɔɪnt"
+  },
+  {
+    "name": "gist",
+    "trans": [
+      "n. 主旨，要点"
+    ],
+    "usphone": "dʒɪst",
+    "ukphone": "dʒɪst"
+  },
+  {
+    "name": "opinion",
+    "trans": [
+      "n. 看法；评价"
+    ],
+    "usphone": "əˈpɪnjən",
+    "ukphone": "əˈpɪnjən"
+  },
+  {
+    "name": "introduce",
+    "trans": [
+      "v. 介绍；引进"
+    ],
+    "usphone": "ˌɪntrəˈdjuːs",
+    "ukphone": "ˌɪntrəˈdjuːs"
+  },
+  {
+    "name": "reference",
+    "trans": [
+      "n. 参考；推荐函；提及，涉及"
+    ],
+    "usphone": "ˈrefərəns",
+    "ukphone": "ˈrefərəns"
+  },
+  {
+    "name": "cite",
+    "trans": [
+      "v. 引用"
+    ],
+    "usphone": "saɪt",
+    "ukphone": "saɪt"
+  },
+  {
+    "name": "elicit",
+    "trans": [
+      "v. 引出；探出，套出"
+    ],
+    "usphone": "ɪˈlɪsɪt",
+    "ukphone": "ɪˈlɪsɪt"
+  },
+  {
+    "name": "quote",
+    "trans": [
+      "v. 引用，引述；报（价）"
+    ],
+    "usphone": "kwəʊt",
+    "ukphone": "kwəʊt"
+  },
+  {
+    "name": "extract",
+    "trans": [
+      "n. 摘录"
+    ],
+    "usphone": "ˈekstrækt",
+    "ukphone": "ˈekstrækt"
+  },
+  {
+    "name": "abstract",
+    "trans": [
+      "n. 摘要 adj. 抽象的"
+    ],
+    "usphone": "ˈæbstrækt",
+    "ukphone": "ˈæbstrækt"
+  },
+  {
+    "name": "summary",
+    "trans": [
+      "n. 摘要，概要"
+    ],
+    "usphone": "ˈsʌməri",
+    "ukphone": "ˈsʌməri"
+  },
+  {
+    "name": "assume",
+    "trans": [
+      "v. 假定，设想；承担（责任）；取得（权力）"
+    ],
+    "usphone": "əˈsjuːm",
+    "ukphone": "əˈsjuːm"
+  },
+  {
+    "name": "presume",
+    "trans": [
+      "v. 假定，假设；料想"
+    ],
+    "usphone": "prɪˈzjuːm",
+    "ukphone": "prɪˈzjuːm"
+  },
+  {
+    "name": "suppose",
+    "trans": [
+      "v. 假定；认为"
+    ],
+    "usphone": "səˈpəʊz",
+    "ukphone": "səˈpəʊz"
+  },
+  {
+    "name": "hypothesis",
+    "trans": [
+      "n. 假说，假设"
+    ],
+    "usphone": "haɪˈpɒθəsɪs",
+    "ukphone": "haɪˈpɒθəsɪs"
+  },
+  {
+    "name": "postulate",
+    "trans": [
+      "v. 假定，假设"
+    ],
+    "usphone": "ˈpɒstjʊleɪt",
+    "ukphone": "ˈpɒstjʊleɪt"
+  },
+  {
+    "name": "speculate",
+    "trans": [
+      "v. 推测"
+    ],
+    "usphone": "ˈspekjʊleɪt",
+    "ukphone": "ˈspekjʊleɪt"
+  },
+  {
+    "name": "predict",
+    "trans": [
+      "v. 预测"
+    ],
+    "usphone": "prɪˈdɪkt",
+    "ukphone": "prɪˈdɪkt"
+  },
+  {
+    "name": "perceive",
+    "trans": [
+      "v. 感知，察觉，意识到"
+    ],
+    "usphone": "pəˈsiːv",
+    "ukphone": "pəˈsiːv"
+  },
+  {
+    "name": "detect",
+    "trans": [
+      "v. 察觉，发觉；侦察出"
+    ],
+    "usphone": "dɪˈtekt",
+    "ukphone": "dɪˈtekt"
+  },
+  {
+    "name": "discern",
+    "trans": [
+      "v. 觉察出；分辨出"
+    ],
+    "usphone": "dɪˈsɜːn",
+    "ukphone": "dɪˈsɜːn"
+  },
+  {
+    "name": "recognise",
+    "trans": [
+      "v. 认识，辨认出"
+    ],
+    "usphone": "ˈrekəɡnaɪz",
+    "ukphone": "ˈrekəɡnaɪz"
+  },
+  {
+    "name": "conscious",
+    "trans": [
+      "adj. 意识到的；有知觉的"
+    ],
+    "usphone": "ˈkɒnʃəs",
+    "ukphone": "ˈkɒnʃəs"
+  },
+  {
+    "name": "reckon",
+    "trans": [
+      "v. 估计；期望；认为"
+    ],
+    "usphone": "ˈrekən",
+    "ukphone": "ˈrekən"
+  },
+  {
+    "name": "deem",
+    "trans": [
+      "v. 认为，相信"
+    ],
+    "usphone": "diːm",
+    "ukphone": "diːm"
+  },
+  {
+    "name": "imply",
+    "trans": [
+      "v. 暗指，意味着"
+    ],
+    "usphone": "ɪmˈplaɪ",
+    "ukphone": "ɪmˈplaɪ"
+  },
+  {
+    "name": "deliberate",
+    "trans": [
+      "adj. 审慎的"
+    ],
+    "usphone": "dɪˈlɪbərət",
+    "ukphone": "dɪˈlɪbərət"
+  },
+  {
+    "name": "represent",
+    "trans": [
+      "v. 代表；象征"
+    ],
+    "usphone": "ˌreprɪˈzent",
+    "ukphone": "ˌreprɪˈzent"
+  },
+  {
+    "name": "insist",
+    "trans": [
+      "v. 坚持，坚决认为（或主张、要求）"
+    ],
+    "usphone": "ɪnˈsɪst",
+    "ukphone": "ɪnˈsɪst"
+  },
+  {
+    "name": "persist",
+    "trans": [
+      "v. 坚持不懈；持续存在"
+    ],
+    "usphone": "pəˈsɪst",
+    "ukphone": "pəˈsɪst"
+  },
+  {
+    "name": "infer",
+    "trans": [
+      "v. 推断，推理"
+    ],
+    "usphone": "ɪnˈfɜː",
+    "ukphone": "ɪnˈfɜː"
+  },
+  {
+    "name": "understand",
+    "trans": [
+      "v. 懂得，理解"
+    ],
+    "usphone": "ˌʌndəˈstænd",
+    "ukphone": "ˌʌndəˈstænd"
+  },
+  {
+    "name": "comprehend",
+    "trans": [
+      "v. 理解，领悟"
+    ],
+    "usphone": "ˌkɒmprɪˈhend",
+    "ukphone": "ˌkɒmprɪˈhend"
+  },
+  {
+    "name": "analyse",
+    "trans": [
+      "v. 分析"
+    ],
+    "usphone": "ˈænəlaɪz",
+    "ukphone": "ˈænəlaɪz"
+  },
+  {
+    "name": "diagnose",
+    "trans": [
+      "v. 判断；诊断"
+    ],
+    "usphone": "ˈdaɪəɡnəʊz",
+    "ukphone": "ˈdaɪəɡnəʊz"
+  },
+  {
+    "name": "deduce",
+    "trans": [
+      "v. 演绎，推论"
+    ],
+    "usphone": "dɪˈdjuːs",
+    "ukphone": "dɪˈdjuːs"
+  },
+  {
+    "name": "conclude",
+    "trans": [
+      "v. 推断出，得出结论；（使）结束"
+    ],
+    "usphone": "kənˈkluːd",
+    "ukphone": "kənˈkluːd"
+  },
+  {
+    "name": "analogy",
+    "trans": [
+      "n. 类比；类推"
+    ],
+    "usphone": "əˈnælədʒi",
+    "ukphone": "əˈnælədʒi"
+  },
+  {
+    "name": "compare",
+    "trans": [
+      "v. 比较；把......比作；比得上"
+    ],
+    "usphone": "kəmˈpeə",
+    "ukphone": "kəmˈpeə"
+  },
+  {
+    "name": "contrast",
+    "trans": [
+      "n. 对比；明显的差异"
+    ],
+    "usphone": "ˈkɒntrɑːst",
+    "ukphone": "ˈkɒntrɑːst"
+  },
+  {
+    "name": "overlap",
+    "trans": [
+      "v. 与......重叠；与......部分相同"
+    ],
+    "usphone": "ˌəʊvəˈlæp",
+    "ukphone": "ˌəʊvəˈlæp"
+  },
+  {
+    "name": "contradiction",
+    "trans": [
+      "n. 矛盾，不一致；反驳"
+    ],
+    "usphone": "ˌkɒntrəˈdɪkʃən",
+    "ukphone": "ˌkɒntrəˈdɪkʃən"
+  },
+  {
+    "name": "disagree",
+    "trans": [
+      "v. 有分歧；不同意"
+    ],
+    "usphone": "ˌdɪsəˈɡriː",
+    "ukphone": "ˌdɪsəˈɡriː"
+  },
+  {
+    "name": "differ",
+    "trans": [
+      "v. 不同，相异"
+    ],
+    "usphone": "ˈdɪfə",
+    "ukphone": "ˈdɪfə"
+  },
+  {
+    "name": "diverse",
+    "trans": [
+      "adj. 不一样的，多种多样的"
+    ],
+    "usphone": "daɪˈvɜːs",
+    "ukphone": "daɪˈvɜːs"
+  },
+  {
+    "name": "nuance",
+    "trans": [
+      "n. 细微差别"
+    ],
+    "usphone": "ˈnjuːɑːns",
+    "ukphone": "ˈnjuːɑːns"
+  },
+  {
+    "name": "inductive",
+    "trans": [
+      "adj. 归纳的；诱导的"
+    ],
+    "usphone": "ɪnˈdʌktɪv",
+    "ukphone": "ɪnˈdʌktɪv"
+  },
+  {
+    "name": "detail",
+    "trans": [
+      "n. 细节；（画等的）细部"
+    ],
+    "usphone": "ˈdiːteɪl",
+    "ukphone": "ˈdiːteɪl"
+  },
+  {
+    "name": "thorough",
+    "trans": [
+      "adj. 彻底的，详尽的"
+    ],
+    "usphone": "ˈθʌrə",
+    "ukphone": "ˈθʌrə"
+  },
+  {
+    "name": "example",
+    "trans": [
+      "n. 例子；榜样"
+    ],
+    "usphone": "ɪɡˈzɑːmpəl",
+    "ukphone": "ɪɡˈzɑːmpəl"
+  },
+  {
+    "name": "instance",
+    "trans": [
+      "n. 实例；情况，场合"
+    ],
+    "usphone": "ˈɪnstəns",
+    "ukphone": "ˈɪnstəns"
+  },
+  {
+    "name": "confirm",
+    "trans": [
+      "v. 证实；确保，巩固"
+    ],
+    "usphone": "kənˈfɜːm",
+    "ukphone": "kənˈfɜːm"
+  },
+  {
+    "name": "demonstrate",
+    "trans": [
+      "v. 示范，演示；证明"
+    ],
+    "usphone": "ˈdemənstreɪt",
+    "ukphone": "ˈdemənstreɪt"
+  },
+  {
+    "name": "survey",
+    "trans": [
+      "n. 民意调查"
+    ],
+    "usphone": "ˈsɜːveɪ",
+    "ukphone": "ˈsɜːveɪ"
+  },
+  {
+    "name": "illustrate",
+    "trans": [
+      "v. [用图等]说明；给（书）加插图（或图表）"
+    ],
+    "usphone": "ˈɪləstreɪt",
+    "ukphone": "ˈɪləstreɪt"
+  },
+  {
+    "name": "manifest",
+    "trans": [
+      "v. 显示，表明"
+    ],
+    "usphone": "ˈmænɪfest",
+    "ukphone": "ˈmænɪfest"
+  },
+  {
+    "name": "prove",
+    "trans": [
+      "v. 证明；结果是"
+    ],
+    "usphone": "pruːv",
+    "ukphone": "pruːv"
+  },
+  {
+    "name": "determine",
+    "trans": [
+      "v. 决定；下定决心；查明"
+    ],
+    "usphone": "dɪˈtɜːmɪn",
+    "ukphone": "dɪˈtɜːmɪn"
+  },
+  {
+    "name": "decide",
+    "trans": [
+      "v. 决定"
+    ],
+    "usphone": "dɪˈsaɪd",
+    "ukphone": "dɪˈsaɪd"
+  },
+  {
+    "name": "resolve",
+    "trans": [
+      "v. 决心，决定；（使）分解为；解决"
+    ],
+    "usphone": "rɪˈzɒlv",
+    "ukphone": "rɪˈzɒlv"
+  },
+  {
+    "name": "research",
+    "trans": [
+      "n. 调查；探索"
+    ],
+    "usphone": "rɪˈsɜːtʃ",
+    "ukphone": "rɪˈsɜːtʃ"
+  },
+  {
+    "name": "observe",
+    "trans": [
+      "v. 观察，观测；注意到"
+    ],
+    "usphone": "əbˈzɜːv",
+    "ukphone": "əbˈzɜːv"
+  },
+  {
+    "name": "inquire",
+    "trans": [
+      "v. 询问；调查"
+    ],
+    "usphone": "ɪnˈkwaɪə",
+    "ukphone": "ɪnˈkwaɪə"
+  },
+  {
+    "name": "query",
+    "trans": [
+      "n. 疑问；询问 v. 怀疑；询问"
+    ],
+    "usphone": "ˈkwɪəri",
+    "ukphone": "ˈkwɪəri"
+  },
+  {
+    "name": "questionnaire",
+    "trans": [
+      "n. 调查表，调查问卷"
+    ],
+    "usphone": "ˌkwestʃəˈneə",
+    "ukphone": "ˌkwestʃəˈneə"
+  },
+  {
+    "name": "achieve",
+    "trans": [
+      "v. 实现，达到"
+    ],
+    "usphone": "əˈtʃiːv",
+    "ukphone": "əˈtʃiːv"
+  },
+  {
+    "name": "accomplish",
+    "trans": [
+      "v. 达到（目的），完成"
+    ],
+    "usphone": "əˈkʌmplɪʃ",
+    "ukphone": "əˈkʌmplɪʃ"
+  },
+  {
+    "name": "attain",
+    "trans": [
+      "v. 获得；达到"
+    ],
+    "usphone": "əˈteɪn",
+    "ukphone": "əˈteɪn"
+  },
+  {
+    "name": "credit",
+    "trans": [
+      "n. 赊购；学分；信任"
+    ],
+    "usphone": "ˈkredɪt",
+    "ukphone": "ˈkredɪt"
+  },
+  {
+    "name": "grade",
+    "trans": [
+      "v. 给......分等级 n. 等级；成绩等级"
+    ],
+    "usphone": "ɡreɪd",
+    "ukphone": "ɡreɪd"
+  },
+  {
+    "name": "rank",
+    "trans": [
+      "n. 等级；排，列 v. 给......评级；位列"
+    ],
+    "usphone": "ræŋk",
+    "ukphone": "ræŋk"
+  },
+  {
+    "name": "row",
+    "trans": [
+      "n. （一）排，（一）行"
+    ],
+    "usphone": "rəʊ",
+    "ukphone": "rəʊ"
+  },
+  {
+    "name": "queue",
+    "trans": [
+      "n. 行列 v. 排队等候"
+    ],
+    "usphone": "kjuː",
+    "ukphone": "kjuː"
+  },
+  {
+    "name": "score",
+    "trans": [
+      "n. 得分，成绩"
+    ],
+    "usphone": "skɔː",
+    "ukphone": "skɔː"
+  },
+  {
+    "name": "mark",
+    "trans": [
+      "n. 分数；标记 v. 标志着；给......打分；在......上做记号"
+    ],
+    "usphone": "mɑːk",
+    "ukphone": "mɑːk"
+  },
+  {
+    "name": "grant",
+    "trans": [
+      "v. 授予；准予；承认"
+    ],
+    "usphone": "ɡrɑːnt",
+    "ukphone": "ɡrɑːnt"
+  },
+  {
+    "name": "praise",
+    "trans": [
+      "n. 赞美 v. 赞扬"
+    ],
+    "usphone": "preɪz",
+    "ukphone": "preɪz"
+  },
+  {
+    "name": "appreciate",
+    "trans": [
+      "v. 赏识；感激；意识到"
+    ],
+    "usphone": "əˈpriːʃieɪt",
+    "ukphone": "əˈpriːʃieɪt"
+  },
+  {
+    "name": "feedback",
+    "trans": [
+      "n. 反馈，反应"
+    ],
+    "usphone": "ˈfiːdbæk",
+    "ukphone": "ˈfiːdbæk"
+  },
+  {
+    "name": "underestimate",
+    "trans": [
+      "v. 低估"
+    ],
+    "usphone": "ˌʌndərˈestɪmeɪt",
+    "ukphone": "ˌʌndərˈestɪmeɪt"
+  },
+  {
+    "name": "overestimate",
+    "trans": [
+      "v. 高估"
+    ],
+    "usphone": "ˌəʊvərˈestɪmeɪt",
+    "ukphone": "ˌəʊvərˈestɪmeɪt"
+  },
+  {
+    "name": "apply",
+    "trans": [
+      "v. 申请"
+    ],
+    "usphone": "əˈplaɪ",
+    "ukphone": "əˈplaɪ"
+  },
+  {
+    "name": "fellowship",
+    "trans": [
+      "n. 研究生奖学金"
+    ],
+    "usphone": "ˈfeləʊʃɪp",
+    "ukphone": "ˈfeləʊʃɪp"
+  },
+  {
+    "name": "scholarship",
+    "trans": [
+      "n. 奖学金；学问，学识"
+    ],
+    "usphone": "ˈskɒləʃɪp",
+    "ukphone": "ˈskɒləʃɪp"
+  },
+  {
+    "name": "reward",
+    "trans": [
+      "n. 报答；赏金 v. 报答"
+    ],
+    "usphone": "rɪˈwɔːd",
+    "ukphone": "rɪˈwɔːd"
+  },
+  {
+    "name": "award",
+    "trans": [
+      "n. 奖；奖品"
+    ],
+    "usphone": "əˈwɔːd",
+    "ukphone": "əˈwɔːd"
+  },
+  {
+    "name": "prize",
+    "trans": [
+      "n. 奖赏 v. 珍视"
+    ],
+    "usphone": "praɪz",
+    "ukphone": "praɪz"
+  },
+  {
+    "name": "fee",
+    "trans": [
+      "n. 酬金；费用"
+    ],
+    "usphone": "fiː",
+    "ukphone": "fiː"
+  }
+]

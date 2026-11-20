@@ -1,0 +1,1490 @@
+[
+  {
+    "name": "violence",
+    "trans": [
+      "n. 暴力"
+    ],
+    "usphone": "ˈvaɪələns",
+    "ukphone": "ˈvaɪələns"
+  },
+  {
+    "name": "conflict",
+    "trans": [
+      "n. 斗争，冲突 / v. 冲突"
+    ],
+    "usphone": "ˈkɒnflɪkt",
+    "ukphone": "ˈkɒnflɪkt"
+  },
+  {
+    "name": "raid",
+    "trans": [
+      "n./v. 突袭；突然搜查"
+    ],
+    "usphone": "reɪd",
+    "ukphone": "reɪd"
+  },
+  {
+    "name": "enormity",
+    "trans": [
+      "n. 巨大；滔天大罪"
+    ],
+    "usphone": "ɪˈnɔːməti",
+    "ukphone": "ɪˈnɔːməti"
+  },
+  {
+    "name": "campaign",
+    "trans": [
+      "n. 战役；（社会、政治）运动 v. 参加（或领导）运动"
+    ],
+    "usphone": "kæmˈpeɪn",
+    "ukphone": "kæmˈpeɪn"
+  },
+  {
+    "name": "battle",
+    "trans": [
+      "n. 战斗，战役 v. 与......战斗"
+    ],
+    "usphone": "ˈbætl",
+    "ukphone": "ˈbætl"
+  },
+  {
+    "name": "struggle",
+    "trans": [
+      "v./n. 挣扎；奋力；奋斗"
+    ],
+    "usphone": "ˈstrʌɡl",
+    "ukphone": "ˈstrʌɡl"
+  },
+  {
+    "name": "explosion",
+    "trans": [
+      "n. 爆发；迸发；爆炸；激增"
+    ],
+    "usphone": "ɪkˈspləʊʒn",
+    "ukphone": "ɪkˈspləʊʒn"
+  },
+  {
+    "name": "bombard",
+    "trans": [
+      "v. 轰击，轰炸；连珠炮般质问（或批评）"
+    ],
+    "usphone": "bɒmˈbɑːd",
+    "ukphone": "bɒmˈbɑːd"
+  },
+  {
+    "name": "bomb",
+    "trans": [
+      "n. 炸弹 v. 轰炸"
+    ],
+    "usphone": "bɒm",
+    "ukphone": "bɒm"
+  },
+  {
+    "name": "blast",
+    "trans": [
+      "n. 爆炸 v. 炸毁"
+    ],
+    "usphone": "blɑːst",
+    "ukphone": "blɑːst"
+  },
+  {
+    "name": "burst",
+    "trans": [
+      "v. (使)爆裂；（使）胀开 n. 迸发；爆裂"
+    ],
+    "usphone": "bɜːst",
+    "ukphone": "bɜːst"
+  },
+  {
+    "name": "spark",
+    "trans": [
+      "n. 火花，火星"
+    ],
+    "usphone": "spɑːk",
+    "ukphone": "spɑːk"
+  },
+  {
+    "name": "twinkle",
+    "trans": [
+      "n./v. 闪烁，闪耀"
+    ],
+    "usphone": "ˈtwɪŋkl",
+    "ukphone": "ˈtwɪŋkl"
+  },
+  {
+    "name": "glitter",
+    "trans": [
+      "v. 闪闪发光，闪烁"
+    ],
+    "usphone": "ˈɡlɪtə(r)",
+    "ukphone": "ˈɡlɪtə(r)"
+  },
+  {
+    "name": "glow",
+    "trans": [
+      "v. 发出微弱稳定的光 n. 微弱稳定的光"
+    ],
+    "usphone": "ɡləʊ",
+    "ukphone": "ɡləʊ"
+  },
+  {
+    "name": "blade",
+    "trans": [
+      "n. 刃，锋；（螺旋桨的）叶片"
+    ],
+    "usphone": "bleɪd",
+    "ukphone": "bleɪd"
+  },
+  {
+    "name": "sword",
+    "trans": [
+      "n. 刀，剑"
+    ],
+    "usphone": "sɔːd",
+    "ukphone": "sɔːd"
+  },
+  {
+    "name": "ax",
+    "trans": [
+      "n. 斧子"
+    ],
+    "usphone": "æks",
+    "ukphone": "æks"
+  },
+  {
+    "name": "hammer",
+    "trans": [
+      "n. 锤，榔头 v. 用锤击"
+    ],
+    "usphone": "ˈhæmə(r)",
+    "ukphone": "ˈhæmə(r)"
+  },
+  {
+    "name": "bow",
+    "trans": [
+      "n. 弓；蝴蝶结"
+    ],
+    "usphone": "bəʊ",
+    "ukphone": "bəʊ"
+  },
+  {
+    "name": "arrow",
+    "trans": [
+      "n. 箭；箭头"
+    ],
+    "usphone": "ˈærəʊ",
+    "ukphone": "ˈærəʊ"
+  },
+  {
+    "name": "spear",
+    "trans": [
+      "n. 矛；标枪 v. 用尖物刺穿"
+    ],
+    "usphone": "spɪə(r)",
+    "ukphone": "spɪə(r)"
+  },
+  {
+    "name": "helmet",
+    "trans": [
+      "n. 头盔，防护帽"
+    ],
+    "usphone": "ˈhelmɪt",
+    "ukphone": "ˈhelmɪt"
+  },
+  {
+    "name": "shield",
+    "trans": [
+      "n. 盾；防护物 v. 保护"
+    ],
+    "usphone": "ʃiːld",
+    "ukphone": "ʃiːld"
+  },
+  {
+    "name": "equip",
+    "trans": [
+      "v. 配备，装备"
+    ],
+    "usphone": "ɪˈkwɪp",
+    "ukphone": "ɪˈkwɪp"
+  },
+  {
+    "name": "prepare",
+    "trans": [
+      "v. 使预备好；为......做准备"
+    ],
+    "usphone": "prɪˈpeə(r)",
+    "ukphone": "prɪˈpeə(r)"
+  },
+  {
+    "name": "provide",
+    "trans": [
+      "v. 供给，提供"
+    ],
+    "usphone": "prəˈvaɪd",
+    "ukphone": "prəˈvaɪd"
+  },
+  {
+    "name": "deploy",
+    "trans": [
+      "v. 部署"
+    ],
+    "usphone": "dɪˈplɔɪ",
+    "ukphone": "dɪˈplɔɪ"
+  },
+  {
+    "name": "hit",
+    "trans": [
+      "v. 击，打；碰撞；打击 n. 击，打；击中"
+    ],
+    "usphone": "hɪt",
+    "ukphone": "hɪt"
+  },
+  {
+    "name": "beat",
+    "trans": [
+      "v. 打；打败；（心脏等）跳动 n. 节拍；击鼓声"
+    ],
+    "usphone": "biːt",
+    "ukphone": "biːt"
+  },
+  {
+    "name": "strike",
+    "trans": [
+      "v. 打，击；突击；罢工 n. 罢工；打击"
+    ],
+    "usphone": "straɪk",
+    "ukphone": "straɪk"
+  },
+  {
+    "name": "punch",
+    "trans": [
+      "n. 打孔机；重拳击打 v. 给......打孔；拳打"
+    ],
+    "usphone": "pʌntʃ",
+    "ukphone": "pʌntʃ"
+  },
+  {
+    "name": "chop",
+    "trans": [
+      "v. 切碎（食物）；劈（木头）"
+    ],
+    "usphone": "tʃɒp",
+    "ukphone": "tʃɒp"
+  },
+  {
+    "name": "stab",
+    "trans": [
+      "v./n. （用刀等）刺，戳"
+    ],
+    "usphone": "stæb",
+    "ukphone": "stæb"
+  },
+  {
+    "name": "dilemma",
+    "trans": [
+      "n. （进退两难的）困境"
+    ],
+    "usphone": "dɪˈlemə",
+    "ukphone": "dɪˈlemə"
+  },
+  {
+    "name": "plight",
+    "trans": [
+      "n. 困境；誓约"
+    ],
+    "usphone": "plaɪt",
+    "ukphone": "plaɪt"
+  },
+  {
+    "name": "pitfall",
+    "trans": [
+      "n. 陷阱；危险，困难"
+    ],
+    "usphone": "ˈpɪtfɔːl",
+    "ukphone": "ˈpɪtfɔːl"
+  },
+  {
+    "name": "conspiracy",
+    "trans": [
+      "n. 阴谋，密谋，合谋"
+    ],
+    "usphone": "kənˈspɪrəsi",
+    "ukphone": "kənˈspɪrəsi"
+  },
+  {
+    "name": "destitute",
+    "trans": [
+      "adj. 赤贫的，一无所有的；缺乏的"
+    ],
+    "usphone": "ˈdestɪtjuːt",
+    "ukphone": "ˈdestɪtjuːt"
+  },
+  {
+    "name": "famine",
+    "trans": [
+      "n. 饥荒"
+    ],
+    "usphone": "ˈfæmɪn",
+    "ukphone": "ˈfæmɪn"
+  },
+  {
+    "name": "starve",
+    "trans": [
+      "v. （使）挨饿，饿死"
+    ],
+    "usphone": "stɑːv",
+    "ukphone": "stɑːv"
+  },
+  {
+    "name": "deprive",
+    "trans": [
+      "v. 剥夺"
+    ],
+    "usphone": "dɪˈpraɪv",
+    "ukphone": "dɪˈpraɪv"
+  },
+  {
+    "name": "seize",
+    "trans": [
+      "v. 抓住；夺取"
+    ],
+    "usphone": "siːz",
+    "ukphone": "siːz"
+  },
+  {
+    "name": "pursue",
+    "trans": [
+      "v. 追赶；追查；追求"
+    ],
+    "usphone": "pəˈsjuː",
+    "ukphone": "pəˈsjuː"
+  },
+  {
+    "name": "attack",
+    "trans": [
+      "v./n. 攻击，进攻"
+    ],
+    "usphone": "əˈtæk",
+    "ukphone": "əˈtæk"
+  },
+  {
+    "name": "offend",
+    "trans": [
+      "v. 冒犯；犯罪；违反"
+    ],
+    "usphone": "əˈfend",
+    "ukphone": "əˈfend"
+  },
+  {
+    "name": "aggressive",
+    "trans": [
+      "adj. 侵略的；好斗的；积极进取的"
+    ],
+    "usphone": "əˈɡresɪv",
+    "ukphone": "əˈɡresɪv"
+  },
+  {
+    "name": "invade",
+    "trans": [
+      "v. 入侵，侵略；侵扰"
+    ],
+    "usphone": "ɪnˈveɪd",
+    "ukphone": "ɪnˈveɪd"
+  },
+  {
+    "name": "trespass",
+    "trans": [
+      "v. 非法侵入 n. 罪过；非法侵入"
+    ],
+    "usphone": "ˈtrespəs",
+    "ukphone": "ˈtrespəs"
+  },
+  {
+    "name": "threat",
+    "trans": [
+      "n. 威胁，恐吓"
+    ],
+    "usphone": "θret",
+    "ukphone": "θret"
+  },
+  {
+    "name": "intrude",
+    "trans": [
+      "v. 闯入，侵入；侵扰"
+    ],
+    "usphone": "ɪnˈtruːd",
+    "ukphone": "ɪnˈtruːd"
+  },
+  {
+    "name": "violate",
+    "trans": [
+      "v. 违反，违背；侵犯；搅扰"
+    ],
+    "usphone": "ˈvaɪəleɪt",
+    "ukphone": "ˈvaɪəleɪt"
+  },
+  {
+    "name": "assault",
+    "trans": [
+      "n. 猛攻；（身体）侵犯 v. 袭击"
+    ],
+    "usphone": "əˈsɔːlt",
+    "ukphone": "əˈsɔːlt"
+  },
+  {
+    "name": "challenge",
+    "trans": [
+      "n. 挑战 v. 向......挑战"
+    ],
+    "usphone": "ˈtʃælɪndʒ",
+    "ukphone": "ˈtʃælɪndʒ"
+  },
+  {
+    "name": "siege",
+    "trans": [
+      "n. 包围，围攻"
+    ],
+    "usphone": "siːdʒ",
+    "ukphone": "siːdʒ"
+  },
+  {
+    "name": "surround",
+    "trans": [
+      "v. 包围；环绕"
+    ],
+    "usphone": "səˈraʊnd",
+    "ukphone": "səˈraʊnd"
+  },
+  {
+    "name": "enclose",
+    "trans": [
+      "v. 围住，包围；把......封入信封"
+    ],
+    "usphone": "ɪnˈkləʊz",
+    "ukphone": "ɪnˈkləʊz"
+  },
+  {
+    "name": "pause",
+    "trans": [
+      "n./v. 暂停，停顿"
+    ],
+    "usphone": "pɔːz",
+    "ukphone": "pɔːz"
+  },
+  {
+    "name": "halt",
+    "trans": [
+      "v. （使）停止，（使）停住 n. 停止，停住"
+    ],
+    "usphone": "hɔːlt",
+    "ukphone": "hɔːlt"
+  },
+  {
+    "name": "cease",
+    "trans": [
+      "v. 终止，停止"
+    ],
+    "usphone": "siːs",
+    "ukphone": "siːs"
+  },
+  {
+    "name": "oppose",
+    "trans": [
+      "v. 反对，抵制"
+    ],
+    "usphone": "əˈpəʊz",
+    "ukphone": "əˈpəʊz"
+  },
+  {
+    "name": "oppress",
+    "trans": [
+      "v. 压迫，压制；使压抑"
+    ],
+    "usphone": "əˈpres",
+    "ukphone": "əˈpres"
+  },
+  {
+    "name": "counter",
+    "trans": [
+      "v. 抵消；反击，反驳 adv. 相反地 n. 柜台"
+    ],
+    "usphone": "ˈkaʊntə(r)",
+    "ukphone": "ˈkaʊntə(r)"
+  },
+  {
+    "name": "deter",
+    "trans": [
+      "v. 阻止，威慑住"
+    ],
+    "usphone": "dɪˈtɜː(r)",
+    "ukphone": "dɪˈtɜː(r)"
+  },
+  {
+    "name": "forbid",
+    "trans": [
+      "v. 禁止；阻止"
+    ],
+    "usphone": "fəˈbɪd",
+    "ukphone": "fəˈbɪd"
+  },
+  {
+    "name": "prohibit",
+    "trans": [
+      "v. 禁止，不允许"
+    ],
+    "usphone": "prəˈhɪbɪt",
+    "ukphone": "prəˈhɪbɪt"
+  },
+  {
+    "name": "prevent",
+    "trans": [
+      "v. 预防，防止；阻止，阻碍"
+    ],
+    "usphone": "prɪˈvent",
+    "ukphone": "prɪˈvent"
+  },
+  {
+    "name": "revolt",
+    "trans": [
+      "n./v. 叛乱；反抗"
+    ],
+    "usphone": "rɪˈvəʊlt",
+    "ukphone": "rɪˈvəʊlt"
+  },
+  {
+    "name": "betray",
+    "trans": [
+      "v. 背叛，出卖；（无意中）泄露"
+    ],
+    "usphone": "bɪˈtreɪ",
+    "ukphone": "bɪˈtreɪ"
+  },
+  {
+    "name": "treason",
+    "trans": [
+      "n. 叛国罪，通敌罪"
+    ],
+    "usphone": "ˈtriːzn",
+    "ukphone": "ˈtriːzn"
+  },
+  {
+    "name": "rebel",
+    "trans": [
+      "n. 反叛者 / v. 造反；反抗"
+    ],
+    "usphone": "ˈrebl",
+    "ukphone": "ˈrebl"
+  },
+  {
+    "name": "traitor",
+    "trans": [
+      "n. 叛徒，卖国贼"
+    ],
+    "usphone": "ˈtreɪtə(r)",
+    "ukphone": "ˈtreɪtə(r)"
+  },
+  {
+    "name": "patriot",
+    "trans": [
+      "n. 爱国者"
+    ],
+    "usphone": "ˈpætriət",
+    "ukphone": "ˈpætriət"
+  },
+  {
+    "name": "blame",
+    "trans": [
+      "v. 责备，指责 n. 责任"
+    ],
+    "usphone": "bleɪm",
+    "ukphone": "bleɪm"
+  },
+  {
+    "name": "reproach",
+    "trans": [
+      "n. 责备，指责"
+    ],
+    "usphone": "rɪˈprəʊtʃ",
+    "ukphone": "rɪˈprəʊtʃ"
+  },
+  {
+    "name": "evidence",
+    "trans": [
+      "n. 证据；根据"
+    ],
+    "usphone": "ˈevɪdəns",
+    "ukphone": "ˈevɪdəns"
+  },
+  {
+    "name": "proof",
+    "trans": [
+      "n. 证明，证据"
+    ],
+    "usphone": "pruːf",
+    "ukphone": "pruːf"
+  },
+  {
+    "name": "terror",
+    "trans": [
+      "n. 恐惧，恐慌"
+    ],
+    "usphone": "ˈterə(r)",
+    "ukphone": "ˈterə(r)"
+  },
+  {
+    "name": "terrible",
+    "trans": [
+      "adj. 可怕的，糟糕的；极严重的"
+    ],
+    "usphone": "ˈterəbl",
+    "ukphone": "ˈterəbl"
+  },
+  {
+    "name": "terrific",
+    "trans": [
+      "adj. 极好的；很大的，很强的"
+    ],
+    "usphone": "təˈrɪfɪk",
+    "ukphone": "təˈrɪfɪk"
+  },
+  {
+    "name": "horrible",
+    "trans": [
+      "adj. 可怕的，恐怖的"
+    ],
+    "usphone": "ˈhɒrəbl",
+    "ukphone": "ˈhɒrəbl"
+  },
+  {
+    "name": "alarm",
+    "trans": [
+      "n. 惊恐，忧虑；警报；警报器"
+    ],
+    "usphone": "əˈlɑːm",
+    "ukphone": "əˈlɑːm"
+  },
+  {
+    "name": "tension",
+    "trans": [
+      "n. 紧张；拉紧状态"
+    ],
+    "usphone": "ˈtenʃn",
+    "ukphone": "ˈtenʃn"
+  },
+  {
+    "name": "turbulent",
+    "trans": [
+      "adj. 动荡的，混乱的；汹涌的"
+    ],
+    "usphone": "ˈtɜːbjələnt",
+    "ukphone": "ˈtɜːbjələnt"
+  },
+  {
+    "name": "turmoil",
+    "trans": [
+      "n. 混乱，骚乱"
+    ],
+    "usphone": "ˈtɜːmɔɪl",
+    "ukphone": "ˈtɜːmɔɪl"
+  },
+  {
+    "name": "scenario",
+    "trans": [
+      "n. 可能发生的情况；剧情梗概"
+    ],
+    "usphone": "sɪˈnɑːriəʊ",
+    "ukphone": "sɪˈnɑːriəʊ"
+  },
+  {
+    "name": "occasion",
+    "trans": [
+      "n. 场合；时机，机会"
+    ],
+    "usphone": "əˈkeɪʒn",
+    "ukphone": "əˈkeɪʒn"
+  },
+  {
+    "name": "dread",
+    "trans": [
+      "v. 极为害怕，非常担心 n. 恐惧"
+    ],
+    "usphone": "dred",
+    "ukphone": "dred"
+  },
+  {
+    "name": "frighten",
+    "trans": [
+      "v. 使害怕，使惊恐"
+    ],
+    "usphone": "ˈfraɪtn",
+    "ukphone": "ˈfraɪtn"
+  },
+  {
+    "name": "limit",
+    "trans": [
+      "n. 限度；界限 v. 限制"
+    ],
+    "usphone": "ˈlɪmɪt",
+    "ukphone": "ˈlɪmɪt"
+  },
+  {
+    "name": "boundary",
+    "trans": [
+      "n. 分界线，边界；界限"
+    ],
+    "usphone": "ˈbaʊndri",
+    "ukphone": "ˈbaʊndri"
+  },
+  {
+    "name": "compete",
+    "trans": [
+      "v. 竞争；参加（比赛）"
+    ],
+    "usphone": "kəmˈpiːt",
+    "ukphone": "kəmˈpiːt"
+  },
+  {
+    "name": "contest",
+    "trans": [
+      "v. 争取赢得；争辩 / n. 竞争；比赛"
+    ],
+    "usphone": "ˈkɒntest",
+    "ukphone": "ˈkɒntest"
+  },
+  {
+    "name": "contend",
+    "trans": [
+      "v. 竞争；争辩，主张"
+    ],
+    "usphone": "kənˈtend",
+    "ukphone": "kənˈtend"
+  },
+  {
+    "name": "rival",
+    "trans": [
+      "n. 竞争者，对手 v. 与......匹敌"
+    ],
+    "usphone": "ˈraɪvl",
+    "ukphone": "ˈraɪvl"
+  },
+  {
+    "name": "competitor",
+    "trans": [
+      "n. 竞争者，对手"
+    ],
+    "usphone": "kəmˈpetɪtə(r)",
+    "ukphone": "kəmˈpetɪtə(r)"
+  },
+  {
+    "name": "enemy",
+    "trans": [
+      "n. 敌人，仇敌；敌兵，敌军"
+    ],
+    "usphone": "ˈenəmi",
+    "ukphone": "ˈenəmi"
+  },
+  {
+    "name": "strategy",
+    "trans": [
+      "n. 策略；战略"
+    ],
+    "usphone": "ˈstrætədʒi",
+    "ukphone": "ˈstrætədʒi"
+  },
+  {
+    "name": "tactic",
+    "trans": [
+      "n. 策略，战术"
+    ],
+    "usphone": "ˈtæktɪk",
+    "ukphone": "ˈtæktɪk"
+  },
+  {
+    "name": "manoeuvre",
+    "trans": [
+      "n. 策略，巧计；军事演习"
+    ],
+    "usphone": "məˈnuːvə(r)",
+    "ukphone": "məˈnuːvə(r)"
+  },
+  {
+    "name": "blueprint",
+    "trans": [
+      "n. 蓝图；行动计划"
+    ],
+    "usphone": "ˈbluːprɪnt",
+    "ukphone": "ˈbluːprɪnt"
+  },
+  {
+    "name": "refute",
+    "trans": [
+      "v. 反驳，驳斥；否认"
+    ],
+    "usphone": "rɪˈfjuːt",
+    "ukphone": "rɪˈfjuːt"
+  },
+  {
+    "name": "warn",
+    "trans": [
+      "v. 警告；告诫"
+    ],
+    "usphone": "wɔːn",
+    "ukphone": "wɔːn"
+  },
+  {
+    "name": "might",
+    "trans": [
+      "n. 力量，威力"
+    ],
+    "usphone": "maɪt",
+    "ukphone": "maɪt"
+  },
+  {
+    "name": "force",
+    "trans": [
+      "n. 力量；武力 v. 强迫，迫使"
+    ],
+    "usphone": "fɔːs",
+    "ukphone": "fɔːs"
+  },
+  {
+    "name": "reinforce",
+    "trans": [
+      "v. 增援；增强，加强；加固"
+    ],
+    "usphone": "ˌriːɪnˈfɔːs",
+    "ukphone": "ˌriːɪnˈfɔːs"
+  },
+  {
+    "name": "compel",
+    "trans": [
+      "v. 强迫，迫使"
+    ],
+    "usphone": "kəmˈpel",
+    "ukphone": "kəmˈpel"
+  },
+  {
+    "name": "impair",
+    "trans": [
+      "v. 削弱；妨碍"
+    ],
+    "usphone": "ɪmˈpeə(r)",
+    "ukphone": "ɪmˈpeə(r)"
+  },
+  {
+    "name": "oblige",
+    "trans": [
+      "v. 迫使，强迫；帮忙"
+    ],
+    "usphone": "əˈblaɪdʒ",
+    "ukphone": "əˈblaɪdʒ"
+  },
+  {
+    "name": "mitigate",
+    "trans": [
+      "v. 减轻，缓和"
+    ],
+    "usphone": "ˈmɪtɪɡeɪt",
+    "ukphone": "ˈmɪtɪɡeɪt"
+  },
+  {
+    "name": "order",
+    "trans": [
+      "n. 次序；整齐 v. 命令"
+    ],
+    "usphone": "ˈɔːdə(r)",
+    "ukphone": "ˈɔːdə(r)"
+  },
+  {
+    "name": "protest",
+    "trans": [
+      "n. 抗议；申明 v. 抗议；申辩"
+    ],
+    "usphone": "ˈprəʊtest",
+    "ukphone": "ˈprəʊtest"
+  },
+  {
+    "name": "comfort",
+    "trans": [
+      "n. 安慰；舒适 v. 安慰，抚慰"
+    ],
+    "usphone": "ˈkʌmfət",
+    "ukphone": "ˈkʌmfət"
+  },
+  {
+    "name": "event",
+    "trans": [
+      "n. 事件，大事；公开活动"
+    ],
+    "usphone": "ɪˈvent",
+    "ukphone": "ɪˈvent"
+  },
+  {
+    "name": "casualty",
+    "trans": [
+      "n. 伤亡人员"
+    ],
+    "usphone": "ˈkæʒuəlti",
+    "ukphone": "ˈkæʒuəlti"
+  },
+  {
+    "name": "bury",
+    "trans": [
+      "v. 埋葬"
+    ],
+    "usphone": "ˈberi",
+    "ukphone": "ˈberi"
+  },
+  {
+    "name": "funeral",
+    "trans": [
+      "n. 葬礼"
+    ],
+    "usphone": "ˈfjuːnərəl",
+    "ukphone": "ˈfjuːnərəl"
+  },
+  {
+    "name": "grave",
+    "trans": [
+      "n. 坟墓"
+    ],
+    "usphone": "ɡreɪv",
+    "ukphone": "ɡreɪv"
+  },
+  {
+    "name": "tomb",
+    "trans": [
+      "n. 坟墓"
+    ],
+    "usphone": "tuːm",
+    "ukphone": "tuːm"
+  },
+  {
+    "name": "hell",
+    "trans": [
+      "n. 地狱"
+    ],
+    "usphone": "hel",
+    "ukphone": "hel"
+  },
+  {
+    "name": "maritime",
+    "trans": [
+      "adj. 海事的，海的"
+    ],
+    "usphone": "ˈmærɪtaɪm",
+    "ukphone": "ˈmærɪtaɪm"
+  },
+  {
+    "name": "naval",
+    "trans": [
+      "adj. 海军的"
+    ],
+    "usphone": "ˈneɪvl",
+    "ukphone": "ˈneɪvl"
+  },
+  {
+    "name": "fleet",
+    "trans": [
+      "n. 舰队"
+    ],
+    "usphone": "fliːt",
+    "ukphone": "fliːt"
+  },
+  {
+    "name": "troop",
+    "trans": [
+      "n. 部队"
+    ],
+    "usphone": "truːp",
+    "ukphone": "truːp"
+  },
+  {
+    "name": "landing",
+    "trans": [
+      "n. 着陆"
+    ],
+    "usphone": "ˈlændɪŋ",
+    "ukphone": "ˈlændɪŋ"
+  },
+  {
+    "name": "hover",
+    "trans": [
+      "v. 悬停"
+    ],
+    "usphone": "ˈhɒvə(r)",
+    "ukphone": "ˈhɒvə(r)"
+  },
+  {
+    "name": "proceed",
+    "trans": [
+      "v. 继续进行"
+    ],
+    "usphone": "prəˈsiːd",
+    "ukphone": "prəˈsiːd"
+  },
+  {
+    "name": "progress",
+    "trans": [
+      "n./v. 前进；进步"
+    ],
+    "usphone": "ˈprəʊɡres",
+    "ukphone": "ˈprəʊɡres"
+  },
+  {
+    "name": "military",
+    "trans": [
+      "adj. 军事的，军用的"
+    ],
+    "usphone": "ˈmɪlətri",
+    "ukphone": "ˈmɪlətri"
+  },
+  {
+    "name": "nuclear",
+    "trans": [
+      "adj. 原子核的；核能的；核武器的"
+    ],
+    "usphone": "ˈnjuːkliə(r)",
+    "ukphone": "ˈnjuːkliə(r)"
+  },
+  {
+    "name": "poison",
+    "trans": [
+      "n. 毒物，毒药 v. 毒害"
+    ],
+    "usphone": "ˈpɔɪzn",
+    "ukphone": "ˈpɔɪzn"
+  },
+  {
+    "name": "devastate",
+    "trans": [
+      "v. 毁坏，摧毁"
+    ],
+    "usphone": "ˈdevəsteɪt",
+    "ukphone": "ˈdevəsteɪt"
+  },
+  {
+    "name": "risk",
+    "trans": [
+      "n. 危险，风险 v. 冒着......的危险"
+    ],
+    "usphone": "rɪsk",
+    "ukphone": "rɪsk"
+  },
+  {
+    "name": "adventure",
+    "trans": [
+      "n. 冒险，冒险经历"
+    ],
+    "usphone": "ədˈventʃə(r)",
+    "ukphone": "ədˈventʃə(r)"
+  },
+  {
+    "name": "peril",
+    "trans": [
+      "n. 重大危险；险情"
+    ],
+    "usphone": "ˈperəl",
+    "ukphone": "ˈperəl"
+  },
+  {
+    "name": "catastrophe",
+    "trans": [
+      "n. 重大灾难，大祸"
+    ],
+    "usphone": "kəˈtæstrəfi",
+    "ukphone": "kəˈtæstrəfi"
+  },
+  {
+    "name": "collapse",
+    "trans": [
+      "n./v. 倒塌；崩溃"
+    ],
+    "usphone": "kəˈlæps",
+    "ukphone": "kəˈlæps"
+  },
+  {
+    "name": "torture",
+    "trans": [
+      "n. 拷问；痛苦，折磨 v. 拷问；使痛苦"
+    ],
+    "usphone": "ˈtɔːtʃə(r)",
+    "ukphone": "ˈtɔːtʃə(r)"
+  },
+  {
+    "name": "humiliate",
+    "trans": [
+      "v. 羞辱，使蒙羞"
+    ],
+    "usphone": "hjuːˈmɪlieɪt",
+    "ukphone": "hjuːˈmɪlieɪt"
+  },
+  {
+    "name": "damage",
+    "trans": [
+      "n./v. 损害；伤害"
+    ],
+    "usphone": "ˈdæmɪdʒ",
+    "ukphone": "ˈdæmɪdʒ"
+  },
+  {
+    "name": "harmful",
+    "trans": [
+      "adj. 有害的"
+    ],
+    "usphone": "ˈhɑːmfl",
+    "ukphone": "ˈhɑːmfl"
+  },
+  {
+    "name": "mislead",
+    "trans": [
+      "v. 误导，欺骗，使误入歧途"
+    ],
+    "usphone": "ˌmɪsˈliːd",
+    "ukphone": "ˌmɪsˈliːd"
+  },
+  {
+    "name": "disturb",
+    "trans": [
+      "v. 打扰；使焦虑；弄乱"
+    ],
+    "usphone": "dɪˈstɜːb",
+    "ukphone": "dɪˈstɜːb"
+  },
+  {
+    "name": "interfere",
+    "trans": [
+      "v. 干涉；妨碍"
+    ],
+    "usphone": "ˌɪntəˈfɪə(r)",
+    "ukphone": "ˌɪntəˈfɪə(r)"
+  },
+  {
+    "name": "interrupt",
+    "trans": [
+      "v. 打断；中断"
+    ],
+    "usphone": "ˌɪntəˈrʌpt",
+    "ukphone": "ˌɪntəˈrʌpt"
+  },
+  {
+    "name": "retreat",
+    "trans": [
+      "n./v. 撤退；退避"
+    ],
+    "usphone": "rɪˈtriːt",
+    "ukphone": "rɪˈtriːt"
+  },
+  {
+    "name": "shrink",
+    "trans": [
+      "v. 退缩；收缩，缩水；（使）减少"
+    ],
+    "usphone": "ʃrɪŋk",
+    "ukphone": "ʃrɪŋk"
+  },
+  {
+    "name": "withdraw",
+    "trans": [
+      "v. 收回；（使）撤退；提（款）"
+    ],
+    "usphone": "wɪðˈdrɔː",
+    "ukphone": "wɪðˈdrɔː"
+  },
+  {
+    "name": "withstand",
+    "trans": [
+      "v. 承受，顶住，经受住"
+    ],
+    "usphone": "wɪðˈstænd",
+    "ukphone": "wɪðˈstænd"
+  },
+  {
+    "name": "compromise",
+    "trans": [
+      "v. 妥协"
+    ],
+    "usphone": "ˈkɒmprəmaɪz",
+    "ukphone": "ˈkɒmprəmaɪz"
+  },
+  {
+    "name": "surrender",
+    "trans": [
+      "n./v. 投降；（被迫）放弃"
+    ],
+    "usphone": "səˈrendə(r)",
+    "ukphone": "səˈrendə(r)"
+  },
+  {
+    "name": "escape",
+    "trans": [
+      "n./v. 逃跑；逃脱；逃避"
+    ],
+    "usphone": "ɪˈskeɪp",
+    "ukphone": "ɪˈskeɪp"
+  },
+  {
+    "name": "avoid",
+    "trans": [
+      "v. 避免；躲开"
+    ],
+    "usphone": "əˈvɔɪd",
+    "ukphone": "əˈvɔɪd"
+  },
+  {
+    "name": "quit",
+    "trans": [
+      "v. 放弃，停止；辞去；离开"
+    ],
+    "usphone": "kwɪt",
+    "ukphone": "kwɪt"
+  },
+  {
+    "name": "abandon",
+    "trans": [
+      "v. 放弃；抛弃，丢弃"
+    ],
+    "usphone": "əˈbændən",
+    "ukphone": "əˈbændən"
+  },
+  {
+    "name": "forgo",
+    "trans": [
+      "v. 放弃"
+    ],
+    "usphone": "fɔːˈɡəʊ",
+    "ukphone": "fɔːˈɡəʊ"
+  },
+  {
+    "name": "discard",
+    "trans": [
+      "v. 丢弃，抛弃"
+    ],
+    "usphone": "dɪsˈkɑːd",
+    "ukphone": "dɪsˈkɑːd"
+  },
+  {
+    "name": "rid",
+    "trans": [
+      "adj. 摆脱，丢弃"
+    ],
+    "usphone": "rɪd",
+    "ukphone": "rɪd"
+  },
+  {
+    "name": "defend",
+    "trans": [
+      "v. 防御，保护；为......辩护"
+    ],
+    "usphone": "dɪˈfend",
+    "ukphone": "dɪˈfend"
+  },
+  {
+    "name": "safeguard",
+    "trans": [
+      "v. 保护，保卫 n. 保护措施"
+    ],
+    "usphone": "ˈseɪfɡɑːd",
+    "ukphone": "ˈseɪfɡɑːd"
+  },
+  {
+    "name": "defeat",
+    "trans": [
+      "v. 战胜，击败 n. 失败"
+    ],
+    "usphone": "dɪˈfiːt",
+    "ukphone": "dɪˈfiːt"
+  },
+  {
+    "name": "resist",
+    "trans": [
+      "v. 抵制，反对；抵御；忍住"
+    ],
+    "usphone": "rɪˈzɪst",
+    "ukphone": "rɪˈzɪst"
+  },
+  {
+    "name": "capture",
+    "trans": [
+      "n. 战利品 v. 捕获；夺得"
+    ],
+    "usphone": "ˈkæptʃə(r)",
+    "ukphone": "ˈkæptʃə(r)"
+  },
+  {
+    "name": "victory",
+    "trans": [
+      "n. 胜利，成功"
+    ],
+    "usphone": "ˈvɪktəri",
+    "ukphone": "ˈvɪktəri"
+  },
+  {
+    "name": "triumph",
+    "trans": [
+      "n. 伟大胜利，非凡的成功 v. 获得胜利"
+    ],
+    "usphone": "ˈtraɪʌmf",
+    "ukphone": "ˈtraɪʌmf"
+  },
+  {
+    "name": "conquer",
+    "trans": [
+      "v. 征服；克服，战胜"
+    ],
+    "usphone": "ˈkɒŋkə(r)",
+    "ukphone": "ˈkɒŋkə(r)"
+  },
+  {
+    "name": "monument",
+    "trans": [
+      "n. 纪念碑；历史遗迹；典范"
+    ],
+    "usphone": "ˈmɒnjumənt",
+    "ukphone": "ˈmɒnjumənt"
+  },
+  {
+    "name": "tablet",
+    "trans": [
+      "n. 碑，匾；药片"
+    ],
+    "usphone": "ˈtæblət",
+    "ukphone": "ˈtæblət"
+  },
+  {
+    "name": "statue",
+    "trans": [
+      "n. 雕像，塑像"
+    ],
+    "usphone": "ˈstætʃuː",
+    "ukphone": "ˈstætʃuː"
+  },
+  {
+    "name": "medal",
+    "trans": [
+      "n. 勋章，奖章"
+    ],
+    "usphone": "ˈmedl",
+    "ukphone": "ˈmedl"
+  },
+  {
+    "name": "honour",
+    "trans": [
+      "n. 尊敬，敬意；荣誉 v. 尊敬"
+    ],
+    "usphone": "ˈɒnə(r)",
+    "ukphone": "ˈɒnə(r)"
+  },
+  {
+    "name": "glorious",
+    "trans": [
+      "adj. 光荣的，荣耀的"
+    ],
+    "usphone": "ˈɡlɔːriəs",
+    "ukphone": "ˈɡlɔːriəs"
+  },
+  {
+    "name": "contribute",
+    "trans": [
+      "v. 捐献；（为......）作贡献；撰稿"
+    ],
+    "usphone": "kənˈtrɪbjuːt",
+    "ukphone": "kənˈtrɪbjuːt"
+  },
+  {
+    "name": "devote",
+    "trans": [
+      "v. 献身；投入"
+    ],
+    "usphone": "dɪˈvəʊt",
+    "ukphone": "dɪˈvəʊt"
+  },
+  {
+    "name": "owe",
+    "trans": [
+      "v. 欠；应把......归功于；欠（情），感激"
+    ],
+    "usphone": "əʊ",
+    "ukphone": "əʊ"
+  },
+  {
+    "name": "patrol",
+    "trans": [
+      "n./v. 巡逻，巡查"
+    ],
+    "usphone": "pəˈtrəʊl",
+    "ukphone": "pəˈtrəʊl"
+  },
+  {
+    "name": "guard",
+    "trans": [
+      "n. 卫兵，警卫员 v. 看守；守卫"
+    ],
+    "usphone": "ɡɑːd",
+    "ukphone": "ɡɑːd"
+  },
+  {
+    "name": "camouflage",
+    "trans": [
+      "v./n. 伪装"
+    ],
+    "usphone": "ˈkæməflɑːʒ",
+    "ukphone": "ˈkæməflɑːʒ"
+  },
+  {
+    "name": "obstacle",
+    "trans": [
+      "n. 障碍；障碍物"
+    ],
+    "usphone": "ˈɒbstəkl",
+    "ukphone": "ˈɒbstəkl"
+  },
+  {
+    "name": "burrow",
+    "trans": [
+      "n. 地洞，地道 v. 掘地洞"
+    ],
+    "usphone": "ˈbʌrəʊ",
+    "ukphone": "ˈbʌrəʊ"
+  },
+  {
+    "name": "spy",
+    "trans": [
+      "n. 同谋，特务 v. 搜集情报，从事间谍活动"
+    ],
+    "usphone": "spaɪ",
+    "ukphone": "spaɪ"
+  },
+  {
+    "name": "general",
+    "trans": [
+      "n. 将军 adj. 总的；一般性的"
+    ],
+    "usphone": "ˈdʒenrəl",
+    "ukphone": "ˈdʒenrəl"
+  },
+  {
+    "name": "soldier",
+    "trans": [
+      "n. 战士，士兵"
+    ],
+    "usphone": "ˈsəʊldʒə(r)",
+    "ukphone": "ˈsəʊldʒə(r)"
+  },
+  {
+    "name": "veteran",
+    "trans": [
+      "n. 老兵；老手"
+    ],
+    "usphone": "ˈvetərən",
+    "ukphone": "ˈvetərən"
+  },
+  {
+    "name": "scout",
+    "trans": [
+      "n. 侦察员，侦察机 v. 侦察，搜寻"
+    ],
+    "usphone": "skaʊt",
+    "ukphone": "skaʊt"
+  }
+]

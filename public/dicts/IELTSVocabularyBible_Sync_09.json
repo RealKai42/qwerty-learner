@@ -1,0 +1,1402 @@
+[
+  {
+    "name": "commentator",
+    "trans": [
+      "n. 评论员；实况解说员"
+    ],
+    "usphone": "ˈkɒmənteɪtə",
+    "ukphone": "ˈkɒmənteɪtə"
+  },
+  {
+    "name": "medium",
+    "trans": [
+      "n. 媒介 adj. 中间的，中等的"
+    ],
+    "usphone": "ˈmiːdiəm",
+    "ukphone": "ˈmiːdiəm"
+  },
+  {
+    "name": "press",
+    "trans": [
+      "n. 新闻界，记者；报刊；出版社"
+    ],
+    "usphone": "pres",
+    "ukphone": "pres"
+  },
+  {
+    "name": "journalist",
+    "trans": [
+      "n. 记者，新闻工作者"
+    ],
+    "usphone": "ˈdʒɜːnəlɪst",
+    "ukphone": "ˈdʒɜːnəlɪst"
+  },
+  {
+    "name": "critic",
+    "trans": [
+      "n. 批评家；挑剔的人"
+    ],
+    "usphone": "ˈkrɪtɪk",
+    "ukphone": "ˈkrɪtɪk"
+  },
+  {
+    "name": "exponent",
+    "trans": [
+      "n. 阐述者，倡导者，拥护者"
+    ],
+    "usphone": "ɪkˈspəʊnənt",
+    "ukphone": "ɪkˈspəʊnənt"
+  },
+  {
+    "name": "announcer",
+    "trans": [
+      "n. 广播员，播音员"
+    ],
+    "usphone": "əˈnaʊnsə",
+    "ukphone": "əˈnaʊnsə"
+  },
+  {
+    "name": "correspondent",
+    "trans": [
+      "n. 通信者；通讯员，记者"
+    ],
+    "usphone": "ˌkɒrɪˈspɒndənt",
+    "ukphone": "ˌkɒrɪˈspɒndənt"
+  },
+  {
+    "name": "messenger",
+    "trans": [
+      "n. 邮递员，信使"
+    ],
+    "usphone": "ˈmesɪndʒə",
+    "ukphone": "ˈmesɪndʒə"
+  },
+  {
+    "name": "editor",
+    "trans": [
+      "n. 编辑，校订者；（电台或电视台的）记者，编辑"
+    ],
+    "usphone": "ˈedɪtə",
+    "ukphone": "ˈedɪtə"
+  },
+  {
+    "name": "typist",
+    "trans": [
+      "n. 打字员"
+    ],
+    "usphone": "ˈtaɪpɪst",
+    "ukphone": "ˈtaɪpɪst"
+  },
+  {
+    "name": "handout",
+    "trans": [
+      "n. 传单；讲义"
+    ],
+    "usphone": "ˈhændaʊt",
+    "ukphone": "ˈhændaʊt"
+  },
+  {
+    "name": "leaflet",
+    "trans": [
+      "n. 传单 v. 散发传单"
+    ],
+    "usphone": "ˈliːflɪt",
+    "ukphone": "ˈliːflɪt"
+  },
+  {
+    "name": "propaganda",
+    "trans": [
+      "n. 宣传，鼓吹"
+    ],
+    "usphone": "ˌprɒpəˈɡændə",
+    "ukphone": "ˌprɒpəˈɡændə"
+  },
+  {
+    "name": "publish",
+    "trans": [
+      "v. 公布；出版，发行"
+    ],
+    "usphone": "ˈpʌblɪʃ",
+    "ukphone": "ˈpʌblɪʃ"
+  },
+  {
+    "name": "disseminate",
+    "trans": [
+      "v. 散布，传播"
+    ],
+    "usphone": "dɪˈsemɪneɪt",
+    "ukphone": "dɪˈsemɪneɪt"
+  },
+  {
+    "name": "foresee",
+    "trans": [
+      "v. 预见，预知"
+    ],
+    "usphone": "fɔːˈsiː",
+    "ukphone": "fɔːˈsiː"
+  },
+  {
+    "name": "anticipate",
+    "trans": [
+      "v. 预期，预料"
+    ],
+    "usphone": "ænˈtɪsɪpeɪt",
+    "ukphone": "ænˈtɪsɪpeɪt"
+  },
+  {
+    "name": "expect",
+    "trans": [
+      "v. 预料，预期"
+    ],
+    "usphone": "ɪkˈspekt",
+    "ukphone": "ɪkˈspekt"
+  },
+  {
+    "name": "await",
+    "trans": [
+      "v. 等候，期待；将降临到......身上"
+    ],
+    "usphone": "əˈweɪt",
+    "ukphone": "əˈweɪt"
+  },
+  {
+    "name": "pastime",
+    "trans": [
+      "n. 消遣，娱乐"
+    ],
+    "usphone": "ˈpɑːstaɪm",
+    "ukphone": "ˈpɑːstaɪm"
+  },
+  {
+    "name": "entertain",
+    "trans": [
+      "v. 娱乐；招待；心存，怀有"
+    ],
+    "usphone": "ˌentəˈteɪn",
+    "ukphone": "ˌentəˈteɪn"
+  },
+  {
+    "name": "recreation",
+    "trans": [
+      "n. 休闲，娱乐"
+    ],
+    "usphone": "ˌrekriˈeɪʃən",
+    "ukphone": "ˌrekriˈeɪʃən"
+  },
+  {
+    "name": "amuse",
+    "trans": [
+      "v. 逗乐；给......提供娱乐"
+    ],
+    "usphone": "əˈmjuːz",
+    "ukphone": "əˈmjuːz"
+  },
+  {
+    "name": "gossip",
+    "trans": [
+      "n. 闲聊；流言蜚语"
+    ],
+    "usphone": "ˈɡɒsɪp",
+    "ukphone": "ˈɡɒsɪp"
+  },
+  {
+    "name": "rumour",
+    "trans": [
+      "n. 谣言，传闻"
+    ],
+    "usphone": "ˈruːmə",
+    "ukphone": "ˈruːmə"
+  },
+  {
+    "name": "consensus",
+    "trans": [
+      "n. 共识，一致的意见"
+    ],
+    "usphone": "kənˈsensəs",
+    "ukphone": "kənˈsensəs"
+  },
+  {
+    "name": "festival",
+    "trans": [
+      "n. 节日；（音乐、电影等的）节"
+    ],
+    "usphone": "ˈfestɪvəl",
+    "ukphone": "ˈfestɪvəl"
+  },
+  {
+    "name": "feast",
+    "trans": [
+      "n. 盛宴；（宗教）节日"
+    ],
+    "usphone": "fiːst",
+    "ukphone": "fiːst"
+  },
+  {
+    "name": "programme",
+    "trans": [
+      "n. 节目；方案；（演出或活动的）程序 v. 为（系统）设定程序；计划"
+    ],
+    "usphone": "ˈprəʊɡræm",
+    "ukphone": "ˈprəʊɡræm"
+  },
+  {
+    "name": "rehearsal",
+    "trans": [
+      "n. 排练"
+    ],
+    "usphone": "rɪˈhɜːsəl",
+    "ukphone": "rɪˈhɜːsəl"
+  },
+  {
+    "name": "perform",
+    "trans": [
+      "v. 表演，演出"
+    ],
+    "usphone": "pəˈfɔːm",
+    "ukphone": "pəˈfɔːm"
+  },
+  {
+    "name": "imitate",
+    "trans": [
+      "v. 模仿，效仿"
+    ],
+    "usphone": "ˈɪmɪteɪt",
+    "ukphone": "ˈɪmɪteɪt"
+  },
+  {
+    "name": "mimic",
+    "trans": [
+      "v. 模仿；戏仿"
+    ],
+    "usphone": "ˈmɪmɪk",
+    "ukphone": "ˈmɪmɪk"
+  },
+  {
+    "name": "simulate",
+    "trans": [
+      "v. 模拟；假装，冒充"
+    ],
+    "usphone": "ˈsɪmjʊleɪt",
+    "ukphone": "ˈsɪmjʊleɪt"
+  },
+  {
+    "name": "circus",
+    "trans": [
+      "n. 马戏团；圆形广场（常用于地名）"
+    ],
+    "usphone": "ˈsɜːkəs",
+    "ukphone": "ˈsɜːkəs"
+  },
+  {
+    "name": "magic",
+    "trans": [
+      "n. 魔术；魔法"
+    ],
+    "usphone": "ˈmædʒɪk",
+    "ukphone": "ˈmædʒɪk"
+  },
+  {
+    "name": "drama",
+    "trans": [
+      "n. 戏，剧；戏剧艺术"
+    ],
+    "usphone": "ˈdrɑːmə",
+    "ukphone": "ˈdrɑːmə"
+  },
+  {
+    "name": "concert",
+    "trans": [
+      "n. 音乐会"
+    ],
+    "usphone": "ˈkɒnsət",
+    "ukphone": "ˈkɒnsət"
+  },
+  {
+    "name": "symphony",
+    "trans": [
+      "n. 交响乐"
+    ],
+    "usphone": "ˈsɪmfəni",
+    "ukphone": "ˈsɪmfəni"
+  },
+  {
+    "name": "orchestra",
+    "trans": [
+      "n. 管弦乐队"
+    ],
+    "usphone": "ˈɔːkɪstrə",
+    "ukphone": "ˈɔːkɪstrə"
+  },
+  {
+    "name": "film",
+    "trans": [
+      "n. 影片；胶卷"
+    ],
+    "usphone": "fɪlm",
+    "ukphone": "fɪlm"
+  },
+  {
+    "name": "movie",
+    "trans": [
+      "n. 电影"
+    ],
+    "usphone": "ˈmuːvi",
+    "ukphone": "ˈmuːvi"
+  },
+  {
+    "name": "X-rated",
+    "trans": [
+      "adj. X级的，青少年不宜的"
+    ],
+    "usphone": "ˈeks ˌreɪtɪd",
+    "ukphone": "ˈeks ˌreɪtɪd"
+  },
+  {
+    "name": "artist",
+    "trans": [
+      "n. 艺术家"
+    ],
+    "usphone": "ˈɑːtɪst",
+    "ukphone": "ˈɑːtɪst"
+  },
+  {
+    "name": "ballet",
+    "trans": [
+      "n. 芭蕾舞；芭蕾舞剧"
+    ],
+    "usphone": "ˈbæleɪ",
+    "ukphone": "ˈbæleɪ"
+  },
+  {
+    "name": "craftsman",
+    "trans": [
+      "n. 工匠，工艺师"
+    ],
+    "usphone": "ˈkrɑːftsmən",
+    "ukphone": "ˈkrɑːftsmən"
+  },
+  {
+    "name": "opera",
+    "trans": [
+      "n. 歌剧"
+    ],
+    "usphone": "ˈɒpərə",
+    "ukphone": "ˈɒpərə"
+  },
+  {
+    "name": "painter",
+    "trans": [
+      "n. 画家；油漆匠"
+    ],
+    "usphone": "ˈpeɪntə",
+    "ukphone": "ˈpeɪntə"
+  },
+  {
+    "name": "comedy",
+    "trans": [
+      "n. 喜剧"
+    ],
+    "usphone": "ˈkɒmədi",
+    "ukphone": "ˈkɒmədi"
+  },
+  {
+    "name": "role",
+    "trans": [
+      "n. 角色；作用；职能"
+    ],
+    "usphone": "rəʊl",
+    "ukphone": "rəʊl"
+  },
+  {
+    "name": "tragedy",
+    "trans": [
+      "n. 悲剧；悲惨的事"
+    ],
+    "usphone": "ˈtrædʒədi",
+    "ukphone": "ˈtrædʒədi"
+  },
+  {
+    "name": "scene",
+    "trans": [
+      "n. 景色；现场；（戏剧的）场面"
+    ],
+    "usphone": "siːn",
+    "ukphone": "siːn"
+  },
+  {
+    "name": "stage",
+    "trans": [
+      "n. 舞台；阶段；[the ~]戏剧演出"
+    ],
+    "usphone": "steɪdʒ",
+    "ukphone": "steɪdʒ"
+  },
+  {
+    "name": "portrait",
+    "trans": [
+      "n. 肖像，半身画像"
+    ],
+    "usphone": "ˈpɔːtrɪt",
+    "ukphone": "ˈpɔːtrɪt"
+  },
+  {
+    "name": "gallery",
+    "trans": [
+      "n. 美术馆"
+    ],
+    "usphone": "ˈɡæləri",
+    "ukphone": "ˈɡæləri"
+  },
+  {
+    "name": "exhibition",
+    "trans": [
+      "n. 展览"
+    ],
+    "usphone": "ˌeksɪˈbɪʃən",
+    "ukphone": "ˌeksɪˈbɪʃən"
+  },
+  {
+    "name": "aesthetic",
+    "trans": [
+      "adj. 审美的 n. 审美观"
+    ],
+    "usphone": "iːsˈθetɪk",
+    "ukphone": "iːsˈθetɪk"
+  },
+  {
+    "name": "collect",
+    "trans": [
+      "v. 收集；收藏"
+    ],
+    "usphone": "kəˈlekt",
+    "ukphone": "kəˈlekt"
+  },
+  {
+    "name": "select",
+    "trans": [
+      "v. 选择，挑选 adj. 精选的"
+    ],
+    "usphone": "sɪˈlekt",
+    "ukphone": "sɪˈlekt"
+  },
+  {
+    "name": "opt",
+    "trans": [
+      "v. 选择"
+    ],
+    "usphone": "ɒpt",
+    "ukphone": "ɒpt"
+  },
+  {
+    "name": "photograph",
+    "trans": [
+      "n. 照片，相片"
+    ],
+    "usphone": "ˈfəʊtəɡrɑːf",
+    "ukphone": "ˈfəʊtəɡrɑːf"
+  },
+  {
+    "name": "painting",
+    "trans": [
+      "n. 油画，绘画；作画；涂漆"
+    ],
+    "usphone": "ˈpeɪntɪŋ",
+    "ukphone": "ˈpeɪntɪŋ"
+  },
+  {
+    "name": "sculpture",
+    "trans": [
+      "n. 雕塑"
+    ],
+    "usphone": "ˈskʌlptʃə",
+    "ukphone": "ˈskʌlptʃə"
+  },
+  {
+    "name": "draw",
+    "trans": [
+      "v. 画；拉；拔出"
+    ],
+    "usphone": "drɔː",
+    "ukphone": "drɔː"
+  },
+  {
+    "name": "sketch",
+    "trans": [
+      "n. 素描，速写，草图 v. 画素描，画速写"
+    ],
+    "usphone": "sketʃ",
+    "ukphone": "sketʃ"
+  },
+  {
+    "name": "depict",
+    "trans": [
+      "v. 描述，描写；描绘"
+    ],
+    "usphone": "dɪˈpɪkt",
+    "ukphone": "dɪˈpɪkt"
+  },
+  {
+    "name": "describe",
+    "trans": [
+      "v. 描述，形容"
+    ],
+    "usphone": "dɪˈskraɪb",
+    "ukphone": "dɪˈskraɪb"
+  },
+  {
+    "name": "carve",
+    "trans": [
+      "v. 雕刻；切下"
+    ],
+    "usphone": "kɑːv",
+    "ukphone": "kɑːv"
+  },
+  {
+    "name": "improvise",
+    "trans": [
+      "v. 临时做；即兴创作"
+    ],
+    "usphone": "ˈɪmprəvaɪz",
+    "ukphone": "ˈɪmprəvaɪz"
+  },
+  {
+    "name": "musical",
+    "trans": [
+      "adj. 音乐的；悦耳的"
+    ],
+    "usphone": "ˈmjuːzɪkəl",
+    "ukphone": "ˈmjuːzɪkəl"
+  },
+  {
+    "name": "classical",
+    "trans": [
+      "adj. 古典的，传统的"
+    ],
+    "usphone": "ˈklæsɪkəl",
+    "ukphone": "ˈklæsɪkəl"
+  },
+  {
+    "name": "jazz",
+    "trans": [
+      "n. 爵士乐"
+    ],
+    "usphone": "dʒæz",
+    "ukphone": "dʒæz"
+  },
+  {
+    "name": "rock",
+    "trans": [
+      "n. 摇滚乐；岩石"
+    ],
+    "usphone": "rɒk",
+    "ukphone": "rɒk"
+  },
+  {
+    "name": "hip-hop",
+    "trans": [
+      "n. 嘻哈文化"
+    ],
+    "usphone": "ˈhɪp hɒp",
+    "ukphone": "ˈhɪp hɒp"
+  },
+  {
+    "name": "pop",
+    "trans": [
+      "n. 流行音乐，流行乐曲"
+    ],
+    "usphone": "pɒp",
+    "ukphone": "pɒp"
+  },
+  {
+    "name": "lyric",
+    "trans": [
+      "n. 抒情诗；[-s]歌词 adj. 抒情的"
+    ],
+    "usphone": "ˈlɪrɪk",
+    "ukphone": "ˈlɪrɪk"
+  },
+  {
+    "name": "band",
+    "trans": [
+      "n. 乐队；带；波段"
+    ],
+    "usphone": "bænd",
+    "ukphone": "bænd"
+  },
+  {
+    "name": "solo",
+    "trans": [
+      "n. 独奏，独唱 adj. 独奏的，独唱的；单独的"
+    ],
+    "usphone": "ˈsəʊləʊ",
+    "ukphone": "ˈsəʊləʊ"
+  },
+  {
+    "name": "melody",
+    "trans": [
+      "n. 乐曲；旋律"
+    ],
+    "usphone": "ˈmelədi",
+    "ukphone": "ˈmelədi"
+  },
+  {
+    "name": "rhythm",
+    "trans": [
+      "n. 节奏，韵律"
+    ],
+    "usphone": "ˈrɪðəm",
+    "ukphone": "ˈrɪðəm"
+  },
+  {
+    "name": "tone",
+    "trans": [
+      "n. 音色；声调；腔调"
+    ],
+    "usphone": "təʊn",
+    "ukphone": "təʊn"
+  },
+  {
+    "name": "tune",
+    "trans": [
+      "n. 曲调；短乐曲 v. 调试"
+    ],
+    "usphone": "tjuːn",
+    "ukphone": "tjuːn"
+  },
+  {
+    "name": "disc",
+    "trans": [
+      "n. 光碟；唱片；[英]（计算机）磁碟，磁盘"
+    ],
+    "usphone": "dɪsk",
+    "ukphone": "dɪsk"
+  },
+  {
+    "name": "piano",
+    "trans": [
+      "n. 钢琴"
+    ],
+    "usphone": "piˈænəʊ",
+    "ukphone": "piˈænəʊ"
+  },
+  {
+    "name": "violin",
+    "trans": [
+      "n. 小提琴"
+    ],
+    "usphone": "ˌvaɪəˈlɪn",
+    "ukphone": "ˌvaɪəˈlɪn"
+  },
+  {
+    "name": "cello",
+    "trans": [
+      "n. 大提琴"
+    ],
+    "usphone": "ˈtʃeləʊ",
+    "ukphone": "ˈtʃeləʊ"
+  },
+  {
+    "name": "guitar",
+    "trans": [
+      "n. 吉他"
+    ],
+    "usphone": "ɡɪˈtɑː",
+    "ukphone": "ɡɪˈtɑː"
+  },
+  {
+    "name": "harmonica",
+    "trans": [
+      "n. 口琴"
+    ],
+    "usphone": "hɑːˈmɒnɪkə",
+    "ukphone": "hɑːˈmɒnɪkə"
+  },
+  {
+    "name": "trumpet",
+    "trans": [
+      "n. 喇叭，小号"
+    ],
+    "usphone": "ˈtrʌmpɪt",
+    "ukphone": "ˈtrʌmpɪt"
+  },
+  {
+    "name": "drum",
+    "trans": [
+      "n. 鼓；鼓状物；大桶"
+    ],
+    "usphone": "drʌm",
+    "ukphone": "drʌm"
+  },
+  {
+    "name": "flute",
+    "trans": [
+      "n. 长笛"
+    ],
+    "usphone": "fluːt",
+    "ukphone": "fluːt"
+  },
+  {
+    "name": "competition",
+    "trans": [
+      "n. 竞争；比赛"
+    ],
+    "usphone": "ˌkɒmpɪˈtɪʃən",
+    "ukphone": "ˌkɒmpɪˈtɪʃən"
+  },
+  {
+    "name": "tournament",
+    "trans": [
+      "n. 锦标赛，联赛"
+    ],
+    "usphone": "ˈtʊənəmənt",
+    "ukphone": "ˈtʊənəmənt"
+  },
+  {
+    "name": "Olympic",
+    "trans": [
+      "adj. 奥林匹克运动会的 n.[the-s]奥林匹克运动会"
+    ],
+    "usphone": "əˈlɪmpɪk",
+    "ukphone": "əˈlɪmpɪk"
+  },
+  {
+    "name": "sponsor",
+    "trans": [
+      "n. 发起人；主办人；赞助人 v. 发起；主办；赞助"
+    ],
+    "usphone": "ˈspɒnsə",
+    "ukphone": "ˈspɒnsə"
+  },
+  {
+    "name": "patron",
+    "trans": [
+      "n. 赞助人；顾客，老主顾"
+    ],
+    "usphone": "ˈpeɪtrən",
+    "ukphone": "ˈpeɪtrən"
+  },
+  {
+    "name": "athlete",
+    "trans": [
+      "n. 运动员；[英]田径运动员"
+    ],
+    "usphone": "ˈæθliːt",
+    "ukphone": "ˈæθliːt"
+  },
+  {
+    "name": "champion",
+    "trans": [
+      "n. 冠军，第一名 v. 拥护，支持"
+    ],
+    "usphone": "ˈtʃæmpiən",
+    "ukphone": "ˈtʃæmpiən"
+  },
+  {
+    "name": "spectator",
+    "trans": [
+      "n. 观众"
+    ],
+    "usphone": "spekˈteɪtə",
+    "ukphone": "spekˈteɪtə"
+  },
+  {
+    "name": "volunteer",
+    "trans": [
+      "n. 志愿者 v. 自愿做"
+    ],
+    "usphone": "ˌvɒlənˈtɪə",
+    "ukphone": "ˌvɒlənˈtɪə"
+  },
+  {
+    "name": "famous",
+    "trans": [
+      "adj. 著名的，出名的"
+    ],
+    "usphone": "ˈfeɪməs",
+    "ukphone": "ˈfeɪməs"
+  },
+  {
+    "name": "well-known",
+    "trans": [
+      "adj. 众所周知的，出名的"
+    ],
+    "usphone": "ˌwel ˈnəʊn",
+    "ukphone": "ˌwel ˈnəʊn"
+  },
+  {
+    "name": "energetic",
+    "trans": [
+      "adj. 充满活力的，精力充沛的"
+    ],
+    "usphone": "ˌenəˈdʒetɪk",
+    "ukphone": "ˌenəˈdʒetɪk"
+  },
+  {
+    "name": "vigorous",
+    "trans": [
+      "adj. 充满活力的；活跃的，积极的"
+    ],
+    "usphone": "ˈvɪɡərəs",
+    "ukphone": "ˈvɪɡərəs"
+  },
+  {
+    "name": "stadium",
+    "trans": [
+      "n. 体育场，运动场"
+    ],
+    "usphone": "ˈsteɪdiəm",
+    "ukphone": "ˈsteɪdiəm"
+  },
+  {
+    "name": "gym",
+    "trans": [
+      "n. 体育活动；(= gymnasium) 健身房，体育馆"
+    ],
+    "usphone": "dʒɪm",
+    "ukphone": "dʒɪm"
+  },
+  {
+    "name": "training",
+    "trans": [
+      "n. 训练，锻炼；培训"
+    ],
+    "usphone": "ˈtreɪnɪŋ",
+    "ukphone": "ˈtreɪnɪŋ"
+  },
+  {
+    "name": "exercise",
+    "trans": [
+      "n. 锻炼，运动；习题，练习 v. 锻炼"
+    ],
+    "usphone": "ˈeksəsaɪz",
+    "ukphone": "ˈeksəsaɪz"
+  },
+  {
+    "name": "indoor",
+    "trans": [
+      "adj. 室内的"
+    ],
+    "usphone": "ˈɪndɔː",
+    "ukphone": "ˈɪndɔː"
+  },
+  {
+    "name": "outdoor",
+    "trans": [
+      "adj. 户外的，室外的"
+    ],
+    "usphone": "ˈaʊtdɔː",
+    "ukphone": "ˈaʊtdɔː"
+  },
+  {
+    "name": "motion",
+    "trans": [
+      "v. 做动作，示意"
+    ],
+    "usphone": "ˈməʊʃən",
+    "ukphone": "ˈməʊʃən"
+  },
+  {
+    "name": "mobile",
+    "trans": [
+      "adj. 可移动的；流动的"
+    ],
+    "usphone": "ˈməʊbaɪl",
+    "ukphone": "ˈməʊbaɪl"
+  },
+  {
+    "name": "movement",
+    "trans": [
+      "n. （身体部位的）活动；运动；移动"
+    ],
+    "usphone": "ˈmuːvmənt",
+    "ukphone": "ˈmuːvmənt"
+  },
+  {
+    "name": "yoga",
+    "trans": [
+      "n. 瑜伽"
+    ],
+    "usphone": "ˈjəʊɡə",
+    "ukphone": "ˈjəʊɡə"
+  },
+  {
+    "name": "sprawl",
+    "trans": [
+      "v. 伸开四肢坐着（或躺着）；延伸，蔓延 n.（城市）杂乱无序扩展的地区"
+    ],
+    "usphone": "sprɔːl",
+    "ukphone": "sprɔːl"
+  },
+  {
+    "name": "stretch",
+    "trans": [
+      "v. 伸展；伸长（胳膊、腿）"
+    ],
+    "usphone": "stretʃ",
+    "ukphone": "stretʃ"
+  },
+  {
+    "name": "strain",
+    "trans": [
+      "v. 拉紧；拉伤，扭伤 n. 张力，拉力；（精神上的）紧张"
+    ],
+    "usphone": "streɪn",
+    "ukphone": "streɪn"
+  },
+  {
+    "name": "chess",
+    "trans": [
+      "n. 国际象棋"
+    ],
+    "usphone": "tʃes",
+    "ukphone": "tʃes"
+  },
+  {
+    "name": "badminton",
+    "trans": [
+      "n. 羽毛球"
+    ],
+    "usphone": "ˈbædmɪntən",
+    "ukphone": "ˈbædmɪntən"
+  },
+  {
+    "name": "golf",
+    "trans": [
+      "n. 高尔夫球"
+    ],
+    "usphone": "ɡɒlf",
+    "ukphone": "ɡɒlf"
+  },
+  {
+    "name": "billiards",
+    "trans": [
+      "n. 台球"
+    ],
+    "usphone": "ˈbɪliədz",
+    "ukphone": "ˈbɪliədz"
+  },
+  {
+    "name": "soccer",
+    "trans": [
+      "n. （英式）足球"
+    ],
+    "usphone": "ˈsɒkə",
+    "ukphone": "ˈsɒkə"
+  },
+  {
+    "name": "tennis",
+    "trans": [
+      "n. 网球"
+    ],
+    "usphone": "ˈtenɪs",
+    "ukphone": "ˈtenɪs"
+  },
+  {
+    "name": "volleyball",
+    "trans": [
+      "n. 排球"
+    ],
+    "usphone": "ˈvɒlibɔːl",
+    "ukphone": "ˈvɒlibɔːl"
+  },
+  {
+    "name": "hockey",
+    "trans": [
+      "n. 曲棍球；冰球"
+    ],
+    "usphone": "ˈhɒki",
+    "ukphone": "ˈhɒki"
+  },
+  {
+    "name": "cricket",
+    "trans": [
+      "n. 板球"
+    ],
+    "usphone": "ˈkrɪkɪt",
+    "ukphone": "ˈkrɪkɪt"
+  },
+  {
+    "name": "goal",
+    "trans": [
+      "n. 球门；进球得分；目的"
+    ],
+    "usphone": "ɡəʊl",
+    "ukphone": "ɡəʊl"
+  },
+  {
+    "name": "bat",
+    "trans": [
+      "n. 球拍，球棒，球板"
+    ],
+    "usphone": "bæt",
+    "ukphone": "bæt"
+  },
+  {
+    "name": "racket",
+    "trans": [
+      "n. （网球、羽毛球等的）球拍"
+    ],
+    "usphone": "ˈrækɪt",
+    "ukphone": "ˈrækɪt"
+  },
+  {
+    "name": "kick",
+    "trans": [
+      "v./n. 踢"
+    ],
+    "usphone": "kɪk",
+    "ukphone": "kɪk"
+  },
+  {
+    "name": "knock",
+    "trans": [
+      "v. 敲，击；撞"
+    ],
+    "usphone": "nɒk",
+    "ukphone": "nɒk"
+  },
+  {
+    "name": "flip",
+    "trans": [
+      "v. 掷；（使）快速翻动 adj. 随便的，轻率的"
+    ],
+    "usphone": "flɪp",
+    "ukphone": "flɪp"
+  },
+  {
+    "name": "pitch",
+    "trans": [
+      "v. 投，掷 n. 球场；（棒球中的）投球"
+    ],
+    "usphone": "pɪtʃ",
+    "ukphone": "pɪtʃ"
+  },
+  {
+    "name": "throw",
+    "trans": [
+      "v. 投，掷，抛，扔"
+    ],
+    "usphone": "θrəʊ",
+    "ukphone": "θrəʊ"
+  },
+  {
+    "name": "toss",
+    "trans": [
+      "v. 扔，抛，掷；（使）颠簸"
+    ],
+    "usphone": "tɒs",
+    "ukphone": "tɒs"
+  },
+  {
+    "name": "slide",
+    "trans": [
+      "v. 滑动；逐渐降低 n. 滑行；下跌"
+    ],
+    "usphone": "slaɪd",
+    "ukphone": "slaɪd"
+  },
+  {
+    "name": "slip",
+    "trans": [
+      "v. 滑跤；滑落；溜 n. 滑倒"
+    ],
+    "usphone": "slɪp",
+    "ukphone": "slɪp"
+  },
+  {
+    "name": "glide",
+    "trans": [
+      "v. 滑动，掠过 n. 滑行"
+    ],
+    "usphone": "ɡlaɪd",
+    "ukphone": "ɡlaɪd"
+  },
+  {
+    "name": "tumble",
+    "trans": [
+      "v. 摔倒，滚下"
+    ],
+    "usphone": "ˈtʌmbəl",
+    "ukphone": "ˈtʌmbəl"
+  },
+  {
+    "name": "ski",
+    "trans": [
+      "v. 滑雪 n. 滑雪板"
+    ],
+    "usphone": "skiː",
+    "ukphone": "skiː"
+  },
+  {
+    "name": "skate",
+    "trans": [
+      "v. 滑冰"
+    ],
+    "usphone": "skeɪt",
+    "ukphone": "skeɪt"
+  },
+  {
+    "name": "cycling",
+    "trans": [
+      "n. 骑自行车运动"
+    ],
+    "usphone": "ˈsaɪklɪŋ",
+    "ukphone": "ˈsaɪklɪŋ"
+  },
+  {
+    "name": "dive",
+    "trans": [
+      "v. 跳水；潜水；俯冲"
+    ],
+    "usphone": "daɪv",
+    "ukphone": "daɪv"
+  },
+  {
+    "name": "drift",
+    "trans": [
+      "v. 飘移，漂流；流浪，漂泊"
+    ],
+    "usphone": "drɪft",
+    "ukphone": "drɪft"
+  },
+  {
+    "name": "jump",
+    "trans": [
+      "v. 跳；暴涨；跳过"
+    ],
+    "usphone": "dʒʌmp",
+    "ukphone": "dʒʌmp"
+  },
+  {
+    "name": "leap",
+    "trans": [
+      "v. 跳，跃 n. 跳跃"
+    ],
+    "usphone": "liːp",
+    "ukphone": "liːp"
+  },
+  {
+    "name": "plunge",
+    "trans": [
+      "v. 纵身投入；猛跌；（使）投身 n. 跳水；猛跌"
+    ],
+    "usphone": "plʌndʒ",
+    "ukphone": "plʌndʒ"
+  },
+  {
+    "name": "spring",
+    "trans": [
+      "v./n. 跳，跃"
+    ],
+    "usphone": "sprɪŋ",
+    "ukphone": "sprɪŋ"
+  },
+  {
+    "name": "hop",
+    "trans": [
+      "v. 跳上（或下）；单脚跳行；齐足跳行"
+    ],
+    "usphone": "hɒp",
+    "ukphone": "hɒp"
+  },
+  {
+    "name": "bounce",
+    "trans": [
+      "v. （使）反弹，（使）弹起；（使）跳动"
+    ],
+    "usphone": "baʊns",
+    "ukphone": "baʊns"
+  },
+  {
+    "name": "tent",
+    "trans": [
+      "n. 帐篷"
+    ],
+    "usphone": "tent",
+    "ukphone": "tent"
+  },
+  {
+    "name": "camp",
+    "trans": [
+      "n. 营地；阵营"
+    ],
+    "usphone": "kæmp",
+    "ukphone": "kæmp"
+  },
+  {
+    "name": "picnic",
+    "trans": [
+      "n. 野餐；野餐食物 v. 野餐"
+    ],
+    "usphone": "ˈpɪknɪk",
+    "ukphone": "ˈpɪknɪk"
+  },
+  {
+    "name": "hunt",
+    "trans": [
+      "v./n. 打猎；搜寻"
+    ],
+    "usphone": "hʌnt",
+    "ukphone": "hʌnt"
+  },
+  {
+    "name": "race",
+    "trans": [
+      "n. 赛跑，速度竞赛；人种，种族"
+    ],
+    "usphone": "reɪs",
+    "ukphone": "reɪs"
+  },
+  {
+    "name": "marathon",
+    "trans": [
+      "n. 马拉松赛跑；马拉松式的活动"
+    ],
+    "usphone": "ˈmærəθən",
+    "ukphone": "ˈmærəθən"
+  },
+  {
+    "name": "pedestrian",
+    "trans": [
+      "n. 步行者，行人"
+    ],
+    "usphone": "pəˈdestriən",
+    "ukphone": "pəˈdestriən"
+  },
+  {
+    "name": "pace",
+    "trans": [
+      "n. 步速，速度；步调，节奏 v. 来回踱步"
+    ],
+    "usphone": "peɪs",
+    "ukphone": "peɪs"
+  },
+  {
+    "name": "step",
+    "trans": [
+      "n. 步伐；步骤"
+    ],
+    "usphone": "step",
+    "ukphone": "step"
+  },
+  {
+    "name": "excursion",
+    "trans": [
+      "n. 远足，短程旅行"
+    ],
+    "usphone": "ɪkˈskɜːʃən",
+    "ukphone": "ɪkˈskɜːʃən"
+  },
+  {
+    "name": "cruise",
+    "trans": [
+      "v. 乘船游览；以平稳的速度行驶"
+    ],
+    "usphone": "kruːz",
+    "ukphone": "kruːz"
+  },
+  {
+    "name": "trip",
+    "trans": [
+      "v. 绊倒 n. 旅行；绊倒"
+    ],
+    "usphone": "trɪp",
+    "ukphone": "trɪp"
+  },
+  {
+    "name": "vacation",
+    "trans": [
+      "v. 休假 n. 休假；假期"
+    ],
+    "usphone": "vəˈkeɪʃən",
+    "ukphone": "vəˈkeɪʃən"
+  },
+  {
+    "name": "hike",
+    "trans": [
+      "v./n. 徒步旅行，远足"
+    ],
+    "usphone": "haɪk",
+    "ukphone": "haɪk"
+  },
+  {
+    "name": "jog",
+    "trans": [
+      "v. 慢跑"
+    ],
+    "usphone": "dʒɒɡ",
+    "ukphone": "dʒɒɡ"
+  },
+  {
+    "name": "stride",
+    "trans": [
+      "v. 大步走，阔步行走"
+    ],
+    "usphone": "straɪd",
+    "ukphone": "straɪd"
+  },
+  {
+    "name": "wander",
+    "trans": [
+      "v. 闲逛，漫步；走神，开小差"
+    ],
+    "usphone": "ˈwɒndə",
+    "ukphone": "ˈwɒndə"
+  },
+  {
+    "name": "linger",
+    "trans": [
+      "v. 逗留，流连；继续存留"
+    ],
+    "usphone": "ˈlɪŋɡə",
+    "ukphone": "ˈlɪŋɡə"
+  },
+  {
+    "name": "lag",
+    "trans": [
+      "v. 落后 n. 间隔，时间差"
+    ],
+    "usphone": "læɡ",
+    "ukphone": "læɡ"
+  },
+  {
+    "name": "climb",
+    "trans": [
+      "v. 攀登，爬"
+    ],
+    "usphone": "klaɪm",
+    "ukphone": "klaɪm"
+  },
+  {
+    "name": "pull",
+    "trans": [
+      "v. 拉，拖，扯；划（小船）"
+    ],
+    "usphone": "pʊl",
+    "ukphone": "pʊl"
+  },
+  {
+    "name": "drag",
+    "trans": [
+      "v. 拖，拉，拽"
+    ],
+    "usphone": "dræɡ",
+    "ukphone": "dræɡ"
+  },
+  {
+    "name": "bend",
+    "trans": [
+      "v. 俯身，弯腰；使弯曲"
+    ],
+    "usphone": "bend",
+    "ukphone": "bend"
+  },
+  {
+    "name": "bow",
+    "trans": [
+      "v./n. 鞠躬"
+    ],
+    "usphone": "baʊ",
+    "ukphone": "baʊ"
+  }
+]

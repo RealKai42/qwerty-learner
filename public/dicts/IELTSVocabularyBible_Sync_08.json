@@ -1,0 +1,546 @@
+[
+  {
+    "name": "language",
+    "trans": [
+      "n. 语言"
+    ],
+    "usphone": "ˈlæŋɡwɪdʒ",
+    "ukphone": "ˈlæŋɡwɪdʒ"
+  },
+  {
+    "name": "symbol",
+    "trans": [
+      "n. 象征；符号，记号"
+    ],
+    "usphone": "ˈsɪmbəl",
+    "ukphone": "ˈsɪmbəl"
+  },
+  {
+    "name": "sign",
+    "trans": [
+      "n./v. 符号；征兆，迹象；手势 v. 签（名）"
+    ],
+    "usphone": "saɪn",
+    "ukphone": "saɪn"
+  },
+  {
+    "name": "gesture",
+    "trans": [
+      "n. 手势，姿势"
+    ],
+    "usphone": "ˈdʒestʃə",
+    "ukphone": "ˈdʒestʃə"
+  },
+  {
+    "name": "handwriting",
+    "trans": [
+      "n. 笔迹；书写"
+    ],
+    "usphone": "ˈhændˌraɪtɪŋ",
+    "ukphone": "ˈhændˌraɪtɪŋ"
+  },
+  {
+    "name": "pictograph",
+    "trans": [
+      "n. 象形文字"
+    ],
+    "usphone": "ˈpɪktəˌɡræf",
+    "ukphone": "ˈpɪktəˌɡræf"
+  },
+  {
+    "name": "wedge",
+    "trans": [
+      "n. 楔子；楔形物；楔形文字"
+    ],
+    "usphone": "wedʒ",
+    "ukphone": "wedʒ"
+  },
+  {
+    "name": "knot",
+    "trans": [
+      "n. （绳、线等的）结；（树枝上的）节子"
+    ],
+    "usphone": "nɒt",
+    "ukphone": "nɒt"
+  },
+  {
+    "name": "linguistics",
+    "trans": [
+      "n. 语言学"
+    ],
+    "usphone": "lɪŋˈɡwɪstɪks",
+    "ukphone": "lɪŋˈɡwɪstɪks"
+  },
+  {
+    "name": "semantic",
+    "trans": [
+      "n. 语义的"
+    ],
+    "usphone": "sɪˈmæntɪk",
+    "ukphone": "sɪˈmæntɪk"
+  },
+  {
+    "name": "syntax",
+    "trans": [
+      "n. 句法"
+    ],
+    "usphone": "ˈsɪntæks",
+    "ukphone": "ˈsɪntæks"
+  },
+  {
+    "name": "grammar",
+    "trans": [
+      "n. 语法；语法书"
+    ],
+    "usphone": "ˈɡræmə",
+    "ukphone": "ˈɡræmə"
+  },
+  {
+    "name": "phonetics",
+    "trans": [
+      "n. 语音学"
+    ],
+    "usphone": "fəˈnetɪks",
+    "ukphone": "fəˈnetɪks"
+  },
+  {
+    "name": "pronounce",
+    "trans": [
+      "v. 发......的音；宣布"
+    ],
+    "usphone": "prəˈnaʊns",
+    "ukphone": "prəˈnaʊns"
+  },
+  {
+    "name": "intonation",
+    "trans": [
+      "n. 语调"
+    ],
+    "usphone": "ˌɪntəˈneɪʃən",
+    "ukphone": "ˌɪntəˈneɪʃən"
+  },
+  {
+    "name": "inflection",
+    "trans": [
+      "n. 语调的抑扬变化"
+    ],
+    "usphone": "ɪnˈflekʃən",
+    "ukphone": "ɪnˈflekʃən"
+  },
+  {
+    "name": "dialect",
+    "trans": [
+      "n. 方言，地方话"
+    ],
+    "usphone": "ˈdaɪəlekt",
+    "ukphone": "ˈdaɪəlekt"
+  },
+  {
+    "name": "accent",
+    "trans": [
+      "n. 重音；口音；读音符号"
+    ],
+    "usphone": "ˈæksənt",
+    "ukphone": "ˈæksənt"
+  },
+  {
+    "name": "utterance",
+    "trans": [
+      "n. 说话；话语"
+    ],
+    "usphone": "ˈʌtərəns",
+    "ukphone": "ˈʌtərəns"
+  },
+  {
+    "name": "oral",
+    "trans": [
+      "adj. 口头的"
+    ],
+    "usphone": "ˈɔːrəl",
+    "ukphone": "ˈɔːrəl"
+  },
+  {
+    "name": "verbal",
+    "trans": [
+      "adj. 口头的；言语的"
+    ],
+    "usphone": "ˈvɜːbəl",
+    "ukphone": "ˈvɜːbəl"
+  },
+  {
+    "name": "syllable",
+    "trans": [
+      "n. 音节"
+    ],
+    "usphone": "ˈsɪləbəl",
+    "ukphone": "ˈsɪləbəl"
+  },
+  {
+    "name": "phoneme",
+    "trans": [
+      "n. 音位"
+    ],
+    "usphone": "ˈfəʊniːm",
+    "ukphone": "ˈfəʊniːm"
+  },
+  {
+    "name": "vowel",
+    "trans": [
+      "n. 元音"
+    ],
+    "usphone": "ˈvaʊəl",
+    "ukphone": "ˈvaʊəl"
+  },
+  {
+    "name": "consonant",
+    "trans": [
+      "n. 辅音"
+    ],
+    "usphone": "ˈkɒnsənənt",
+    "ukphone": "ˈkɒnsənənt"
+  },
+  {
+    "name": "alphabet",
+    "trans": [
+      "n. 字母表，（一种语言的）全部字母"
+    ],
+    "usphone": "ˈælfəbet",
+    "ukphone": "ˈælfəbet"
+  },
+  {
+    "name": "logogram",
+    "trans": [
+      "n. 词符，缩记符"
+    ],
+    "usphone": "ˈlɒɡəɡræm",
+    "ukphone": "ˈlɒɡəɡræm"
+  },
+  {
+    "name": "vocabulary",
+    "trans": [
+      "n. 词汇"
+    ],
+    "usphone": "vəˈkæbjələri",
+    "ukphone": "vəˈkæbjələri"
+  },
+  {
+    "name": "dictionary",
+    "trans": [
+      "n. 词典，字典，辞典"
+    ],
+    "usphone": "ˈdɪkʃənəri",
+    "ukphone": "ˈdɪkʃənəri"
+  },
+  {
+    "name": "idiom",
+    "trans": [
+      "n. 习语"
+    ],
+    "usphone": "ˈɪdiəm",
+    "ukphone": "ˈɪdiəm"
+  },
+  {
+    "name": "phrase",
+    "trans": [
+      "n. 短语；习语"
+    ],
+    "usphone": "freɪz",
+    "ukphone": "freɪz"
+  },
+  {
+    "name": "clause",
+    "trans": [
+      "n. 分句，从句；条款"
+    ],
+    "usphone": "klɔːz",
+    "ukphone": "klɔːz"
+  },
+  {
+    "name": "expression",
+    "trans": [
+      "n. 词语；表达；表情"
+    ],
+    "usphone": "ɪkˈspreʃən",
+    "ukphone": "ɪkˈspreʃən"
+  },
+  {
+    "name": "tense",
+    "trans": [
+      "n. 时态 adj. 紧张的"
+    ],
+    "usphone": "tens",
+    "ukphone": "tens"
+  },
+  {
+    "name": "root",
+    "trans": [
+      "n. 词根，字根；根源"
+    ],
+    "usphone": "ruːt",
+    "ukphone": "ruːt"
+  },
+  {
+    "name": "prefix",
+    "trans": [
+      "n. 词首，前缀；前置代号"
+    ],
+    "usphone": "ˈpriːfɪks",
+    "ukphone": "ˈpriːfɪks"
+  },
+  {
+    "name": "suffix",
+    "trans": [
+      "n. 后缀，词尾；尾标"
+    ],
+    "usphone": "ˈsʌfɪks",
+    "ukphone": "ˈsʌfɪks"
+  },
+  {
+    "name": "abbreviation",
+    "trans": [
+      "n. 缩写形式"
+    ],
+    "usphone": "əˌbriːviˈeɪʃən",
+    "ukphone": "əˌbriːviˈeɪʃən"
+  },
+  {
+    "name": "synonym",
+    "trans": [
+      "n. 同义词"
+    ],
+    "usphone": "ˈsɪnənɪm",
+    "ukphone": "ˈsɪnənɪm"
+  },
+  {
+    "name": "antonym",
+    "trans": [
+      "n. 反义词"
+    ],
+    "usphone": "ˈæntənɪm",
+    "ukphone": "ˈæntənɪm"
+  },
+  {
+    "name": "noun",
+    "trans": [
+      "n. 名词"
+    ],
+    "usphone": "naʊn",
+    "ukphone": "naʊn"
+  },
+  {
+    "name": "singular",
+    "trans": [
+      "n. 单数 adj. 单数的；非凡的"
+    ],
+    "usphone": "ˈsɪŋɡjələ",
+    "ukphone": "ˈsɪŋɡjələ"
+  },
+  {
+    "name": "plural",
+    "trans": [
+      "n. 复数 adj. 复数的；多元的"
+    ],
+    "usphone": "ˈplʊərəl",
+    "ukphone": "ˈplʊərəl"
+  },
+  {
+    "name": "pronoun",
+    "trans": [
+      "n. 代词"
+    ],
+    "usphone": "ˈprəʊnaʊn",
+    "ukphone": "ˈprəʊnaʊn"
+  },
+  {
+    "name": "verb",
+    "trans": [
+      "n. 动词"
+    ],
+    "usphone": "vɜːb",
+    "ukphone": "vɜːb"
+  },
+  {
+    "name": "adjective",
+    "trans": [
+      "n. 形容词"
+    ],
+    "usphone": "ˈædʒɪktɪv",
+    "ukphone": "ˈædʒɪktɪv"
+  },
+  {
+    "name": "adverb",
+    "trans": [
+      "n. 副词"
+    ],
+    "usphone": "ˈædvɜːb",
+    "ukphone": "ˈædvɜːb"
+  },
+  {
+    "name": "preposition",
+    "trans": [
+      "n. 介词"
+    ],
+    "usphone": "ˌprepəˈzɪʃən",
+    "ukphone": "ˌprepəˈzɪʃən"
+  },
+  {
+    "name": "conjunction",
+    "trans": [
+      "n. 连词；结合"
+    ],
+    "usphone": "kənˈdʒʌŋkʃən",
+    "ukphone": "kənˈdʒʌŋkʃən"
+  },
+  {
+    "name": "consistent",
+    "trans": [
+      "adj. 一致的；（观点或看法）连贯的"
+    ],
+    "usphone": "kənˈsɪstənt",
+    "ukphone": "kənˈsɪstənt"
+  },
+  {
+    "name": "complicated",
+    "trans": [
+      "adj. 复杂的"
+    ],
+    "usphone": "ˈkɒmplɪkeɪtɪd",
+    "ukphone": "ˈkɒmplɪkeɪtɪd"
+  },
+  {
+    "name": "complex",
+    "trans": [
+      "adj. 复杂的"
+    ],
+    "usphone": "ˈkɒmpleks",
+    "ukphone": "ˈkɒmpleks"
+  },
+  {
+    "name": "compile",
+    "trans": [
+      "v. 编纂"
+    ],
+    "usphone": "kəmˈpaɪl",
+    "ukphone": "kəmˈpaɪl"
+  },
+  {
+    "name": "version",
+    "trans": [
+      "n. 译本；版本"
+    ],
+    "usphone": "ˈvɜːʃən",
+    "ukphone": "ˈvɜːʃən"
+  },
+  {
+    "name": "translate",
+    "trans": [
+      "v. 翻译；（使）转变"
+    ],
+    "usphone": "trænsˈleɪt",
+    "ukphone": "trænsˈleɪt"
+  },
+  {
+    "name": "paraphrase",
+    "trans": [
+      "v./n. 意译，改述"
+    ],
+    "usphone": "ˈpærəfreɪz",
+    "ukphone": "ˈpærəfreɪz"
+  },
+  {
+    "name": "interpret",
+    "trans": [
+      "v. 口译；解释，说明；领会，理解"
+    ],
+    "usphone": "ɪnˈtɜːprɪt",
+    "ukphone": "ɪnˈtɜːprɪt"
+  },
+  {
+    "name": "narrate",
+    "trans": [
+      "v. 讲（故事），叙述"
+    ],
+    "usphone": "nəˈreɪt",
+    "ukphone": "nəˈreɪt"
+  },
+  {
+    "name": "illuminate",
+    "trans": [
+      "v. 阐释，说明；照亮"
+    ],
+    "usphone": "ɪˈluːmɪneɪt",
+    "ukphone": "ɪˈluːmɪneɪt"
+  },
+  {
+    "name": "decipher",
+    "trans": [
+      "v. 译解；辨认"
+    ],
+    "usphone": "dɪˈsaɪfə",
+    "ukphone": "dɪˈsaɪfə"
+  },
+  {
+    "name": "eloquence",
+    "trans": [
+      "n. 雄辩；流利的口才"
+    ],
+    "usphone": "ˈeləkwəns",
+    "ukphone": "ˈeləkwəns"
+  },
+  {
+    "name": "communicate",
+    "trans": [
+      "v. 沟通，交流；传达"
+    ],
+    "usphone": "kəˈmjuːnɪkeɪt",
+    "ukphone": "kəˈmjuːnɪkeɪt"
+  },
+  {
+    "name": "discussion",
+    "trans": [
+      "n. 讨论，谈论"
+    ],
+    "usphone": "dɪˈskʌʃən",
+    "ukphone": "dɪˈskʌʃən"
+  },
+  {
+    "name": "brainstorm",
+    "trans": [
+      "n./v. 集体自由讨论，头脑风暴 v. 集思广益，进行头脑风暴"
+    ],
+    "usphone": "ˈbreɪnstɔːm",
+    "ukphone": "ˈbreɪnstɔːm"
+  },
+  {
+    "name": "debate",
+    "trans": [
+      "v./n. 辩论；争论，讨论"
+    ],
+    "usphone": "dɪˈbeɪt",
+    "ukphone": "dɪˈbeɪt"
+  },
+  {
+    "name": "commentary",
+    "trans": [
+      "n. 评论，评注；批评；实况报道"
+    ],
+    "usphone": "ˈkɒməntəri",
+    "ukphone": "ˈkɒməntəri"
+  },
+  {
+    "name": "negotiate",
+    "trans": [
+      "v. 协商，谈判"
+    ],
+    "usphone": "nɪˈɡəʊʃieɪt",
+    "ukphone": "nɪˈɡəʊʃieɪt"
+  },
+  {
+    "name": "contention",
+    "trans": [
+      "n. 争论，争辩；观点"
+    ],
+    "usphone": "kənˈtenʃən",
+    "ukphone": "kənˈtenʃən"
+  }
+]
