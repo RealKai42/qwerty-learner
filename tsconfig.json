@@ -16,6 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "types": ["node", "unplugin-icons/types/react"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
