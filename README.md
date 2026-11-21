@@ -320,7 +320,7 @@ JS API 来自于[react-code-game](https://github.com/webzhd/react-code-game) ，
 
 也感谢在项目初期跟我讨论 idea、提供建议并时不时 Push 一下我的朋友们，没有你们这个 idea 可能还得再拖一年（🐶
 
-感谢 [Pear Mini](https://github.com/pearmini) ，最开始跟我讨论 idea 给我项目支持，也是他的项目让我相信即使是一个学生的 idea 实现出来也可以很酷。 他的 [Gossip](https://github.com/pearmini/gossip) 项目完全是 Next Generation Slides 级别的创意！
+感谢 [Pear Mini](https://github.com/pearmini) ，最开始跟我讨论 idea 给我项目支持，也是他的项目让我相信即使是一个学生的 idea 实现出来也可以很酷。 他的 [Gossip](https://github.com/gossip-ink/gossip) 项目完全是 Next Generation Slides 级别的创意！
 
 感谢 [AZ](https://github.com/sailist)，鼓励我把 idea 实现出来（虽然我还是拖了很久），他无与伦比的行动力影响了我。他是一个非常酷的 lib maker，写了很多非常棒的 python 库，例如中文语音识别的框架[ASRFrame](https://github.com/sailist/ASRFrame)
 
