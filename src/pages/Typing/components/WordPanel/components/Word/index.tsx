@@ -187,7 +187,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     // Play when practice starts or the word changes. Waiting for an empty
     // input skips the reading if the first letter arrives first.
     wordPronunciationIconRef.current?.play()
-  }, [state.isTyping, state.chapterData.index, word.name])
+  }, [state.isTyping, state.chapterData.index, word.name, wordPronunciationIconRef.current?.play,])
 
   const getLetterVisible = useCallback(
     (index: number) => {
