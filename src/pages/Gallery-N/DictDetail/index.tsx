@@ -52,7 +52,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
       setCurrentDictId(dict.id)
       setCurrentChapter(index)
       setReviewModeInfo((old) => ({ ...old, isReviewMode: false }))
-      navigate('/')
+      navigate(-1)
     },
     [dict.id, navigate, setCurrentChapter, setCurrentDictId, setReviewModeInfo],
   )

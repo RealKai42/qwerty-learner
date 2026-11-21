@@ -52,6 +52,6 @@ module.exports = {
   rules: {
     'sort-imports': ['error', { ignoreDeclarationSort: true }],
     '@typescript-eslint/consistent-type-imports': 1,
-    'react/prop-types': 'off',
+    'react/prop-types': [2, { ignore: ['className', 'position'] }],
   },
 }
