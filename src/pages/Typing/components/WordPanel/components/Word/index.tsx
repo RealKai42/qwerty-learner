@@ -11,6 +11,7 @@ import type { WordPronunciationIconRef } from '@/components/WordPronunciationIco
 import { WordPronunciationIcon } from '@/components/WordPronunciationIcon'
 import { EXPLICIT_SPACE } from '@/constants'
 import useKeySounds from '@/hooks/useKeySounds'
+import { isRepeatSpacePending } from '@/pages/Typing/repeatSpace'
 import { TypingContext, TypingStateActionType } from '@/pages/Typing/store'
 import {
   currentChapterAtom,
@@ -144,6 +145,12 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     (updateAction: WordUpdateAction) => {
       switch (updateAction.type) {
         case 'add':
+          // The key that restarted the chapter is not the first letter.
+          if (updateAction.value === ' ' && isRepeatSpacePending()) {
+            updateAction.event.preventDefault()
+            return
+          }
+
           if (wordState.hasWrong) return
 
           if (updateAction.value === ' ') {
