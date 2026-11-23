@@ -26,8 +26,9 @@ function spokenWord(word: string): string {
 }
 
 export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
-  // "marui/marui" becomes まるい/まるい, which Youdao rejects. Read the first form.
-  const source = pronunciation === 'romaji' || pronunciation === 'ja' ? word.split('/')[0] : word
+  // Youdao rejects a slash. television/TV and aus/sprechen both 500.
+  // Read the first spelling. The headword on screen is unchanged.
+  const source = word.split('/')[0]
   const cleaned = spokenWord(source)
   if (!cleaned) return ''
   const spoken = pronunciation === 'romaji' ? romajiToHiragana(cleaned) : cleaned
