@@ -101,6 +101,9 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       newState.chapterData.index = initialIndex
       newState.chapterData.words = words
       newState.chapterData.userInputLogs = words.map((_, index) => ({ ...structuredClone(initialUserInputLog), index }))
+      // Next Chapter starts practice before this list arrives. Keep that going,
+      // so the first letter is typed instead of only dismissing the idle screen.
+      newState.isTyping = state.isTyping
 
       return newState
     }
