@@ -39,7 +39,12 @@ export function romajiToHiragana(romaji: string): string {
       }
 
       if (substringLength == 1) {
-        result += substring
+        // Apostrophes split ん from the next syllable (min'na). A leading ~
+        // marks a suffix (~betsu). Neither is spoken, and Youdao rejects them.
+        const mark = substring[0]
+        if (mark !== "'" && mark !== '\u2019' && mark !== '~' && mark !== '\uFF5E' && mark !== '\u301C') {
+          result += mark
+        }
 
         currentOffset += 1
         break
