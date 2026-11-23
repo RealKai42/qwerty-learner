@@ -19,9 +19,6 @@ export default defineConfig({
     trace: 'on-first-retry',
     colorScheme: 'light',
     ...devices['Desktop Chrome'],
-    // The Chromium pinned by Playwright 1.40 does not launch on this macOS.
-    // CI uses that Chromium on Ubuntu. Local runs use the installed Chrome.
-    ...(process.env.CI ? {} : { channel: 'chrome' as const }),
   },
   webServer: {
     command: 'yarn build && yarn vite preview --host 127.0.0.1 --port 4173 --strictPort',

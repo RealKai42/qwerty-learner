@@ -8,8 +8,7 @@ on:
 
 jobs:
   mainline:
-    # Playwright 1.40 installs libasound2. Ubuntu 26.04 only ships libasound2t64.
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
