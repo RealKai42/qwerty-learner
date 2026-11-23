@@ -6,8 +6,8 @@ import React from 'react'
 
 export const WordPronunciationIcon = React.forwardRef<
   WordPronunciationIconRef,
-  { word: Word; lang: string; className?: string; iconClassName?: string }
->(({ word, lang, className, iconClassName }, ref) => {
+  { word: Word; lang: string; className?: string; iconClassName?: string; autoPlay?: boolean }
+>(({ word, lang, className, iconClassName, autoPlay = false }, ref) => {
   const currentWord = () => {
     if (lang === 'hapin') {
       if (/[\u0400-\u04FF]/.test(word.notation || '')) {
@@ -31,6 +31,13 @@ export const WordPronunciationIcon = React.forwardRef<
   useEffect(() => {
     return stop
   }, [word, stop])
+
+  useEffect(() => {
+    // `play` is recreated when this word's Howl exists. Calling it then
+    // queues playback if the file is still downloading.
+    if (!autoPlay) return
+    play()
+  }, [autoPlay, play])
 
   useImperativeHandle(
     ref,

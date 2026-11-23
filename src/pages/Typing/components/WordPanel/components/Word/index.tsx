@@ -222,13 +222,6 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     { enableOnFormTags: true, preventDefault: true },
   )
 
-  useEffect(() => {
-    if (!state.isTyping) return
-    // Play when practice starts or the word changes. Waiting for an empty
-    // input skips the reading if the first letter arrives first.
-    wordPronunciationIconRef.current?.play()
-  }, [state.isTyping, state.chapterData.index, word.name])
-
   const getLetterVisible = useCallback(
     (index: number) => {
       if (wordState.letterStates[index] === 'correct' || (isShowAnswerOnHover && isHoveringWord)) return true
@@ -395,7 +388,13 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
           {pronunciationIsOpen && (
             <div className="absolute -right-12 top-1/2 h-9 w-9 -translate-y-1/2 transform ">
               <Tooltip content={`快捷键${CTRL} + J`}>
-                <WordPronunciationIcon word={word} lang={currentLanguage} ref={wordPronunciationIconRef} className="h-full w-full" />
+                <WordPronunciationIcon
+                  word={word}
+                  lang={currentLanguage}
+                  autoPlay={state.isTyping}
+                  ref={wordPronunciationIconRef}
+                  className="h-full w-full"
+                />
               </Tooltip>
             </div>
           )}
