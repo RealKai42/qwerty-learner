@@ -1,3 +1,4 @@
+import { beginIgnoringRepeatSpace } from '../../repeatSpace'
 import { TypingContext, TypingStateActionType } from '../../store'
 import ShareButton from '../ShareButton'
 import { AuthorButton } from './AuthorButton'
@@ -179,15 +180,21 @@ const ResultScreen = () => {
     { preventDefault: true },
   )
 
-  useHotkeys(
-    'space',
-    (e) => {
-      // 火狐浏览器的阻止事件无效，会导致按空格键后 再次输入正确的第一个字母会报错
-      e.stopPropagation()
-      repeatButtonHandler()
-    },
-    { preventDefault: true },
-  )
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return
+      if (event.key !== ' ' && event.code !== 'Space') return
+
+      // Capture runs before Firefox chooses a new focus target for this key.
+      event.preventDefault()
+      event.stopImmediatePropagation()
+      beginIgnoringRepeatSpace()
+      void repeatButtonHandler()
+    }
+
+    window.addEventListener('keydown', onKeyDown, true)
+    return () => window.removeEventListener('keydown', onKeyDown, true)
+  }, [repeatButtonHandler])
 
   useHotkeys(
     'shift+enter',
