@@ -63,6 +63,7 @@
     "build": "cross-env CI=false vite build --base=./",
     "test": "echo \"No tests\"",
     "test:e2e": "playwright test",
+    "test:e2e:mainline": "playwright test -c playwright.mainline.config.ts",
     "lint": "eslint .",
     "prettier": "prettier --write .",
     "prepare": "husky install"
