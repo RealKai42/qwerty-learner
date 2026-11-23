@@ -45,10 +45,19 @@ export const isLegal = (key: string): boolean => {
   return true
 }
 
-export const isChineseSymbol = (val: string): boolean =>
-  /[\u3002|\uff1f|\uff01|\uff0c|\u3001|\uff1b|\uff1a|\u201c|\u201d|\u2018|\u2019|\uff08|\uff09|\u300a|\u300b|\u3008|\u3009|\u3010|\u3011|\u300e|\u300f|\u300c|\u300d|\ufe43|\ufe44|\u3014|\u3015|\u2026|\u2014|\uff5e|\ufe4f|\uffe5]/.test(
-    val,
-  )
+// Text a CJK IME commits: punctuation, kana, hanzi, fullwidth forms, ellipsis, and em dash.
+// Curly quotes are folded to straight quotes separately, so don't / it's still complete.
+// "|" is not included. The old character class matched it only because "|" is literal inside [].
+const IME_TEXT = /[\u3000-\u303f\u3040-\u30ff\u31f0-\u31ff\u3400-\u9fff\uf900-\ufaff\uff00-\uffef\u2026\u2014\ufe43\ufe44\ufe4f]/
+
+export function isImeText(value: string): boolean {
+  return IME_TEXT.test(value)
+}
+
+// Smart quotes from an IME or the OS. Words in this app use straight quotes.
+export function straightenQuotes(value: string): string {
+  return value.replace(/[\u2018\u2019\u201a\u201b]/g, "'").replace(/[\u201c\u201d\u201e\u201f]/g, '"')
+}
 
 export const IsDesktop = () => {
   const userAgentInfo = navigator.userAgent

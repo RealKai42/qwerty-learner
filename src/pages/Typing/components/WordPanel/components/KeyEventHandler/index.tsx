@@ -1,9 +1,15 @@
 import type { WordUpdateAction } from '../InputHandler'
 import { TypingContext } from '@/pages/Typing/store'
-import { isChineseSymbol, isLegal } from '@/utils'
+import { isImeText, isLegal } from '@/utils'
 import { useCallback, useContext, useEffect } from 'react'
 
-export default function KeyEventHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
+export default function KeyEventHandler({
+  updateInput,
+  onImeText,
+}: {
+  updateInput: (updateObj: WordUpdateAction) => void
+  onImeText?: () => void
+}) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state } = useContext(TypingContext)!
 
@@ -13,11 +19,6 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
       if (e.isComposing || e.keyCode === 229 || e.repeat) return
 
       const char = e.key
-
-      if (isChineseSymbol(char)) {
-        alert('您正在使用输入法，请关闭输入法。')
-        return
-      }
 
       if (isLegal(char) && !e.altKey && !e.ctrlKey && !e.metaKey) {
         // Firefox uses these unmodified keys for find-as-you-type.
@@ -31,11 +32,18 @@ export default function KeyEventHandler({ updateInput }: { updateInput: (updateO
   useEffect(() => {
     if (!state.isTyping) return
 
+    // A committed IME string often never arrives as a keydown.
+    const onCompositionEnd = (event: CompositionEvent) => {
+      if (isImeText(event.data)) onImeText?.()
+    }
+
     window.addEventListener('keydown', onKeydown)
+    window.addEventListener('compositionend', onCompositionEnd)
     return () => {
       window.removeEventListener('keydown', onKeydown)
+      window.removeEventListener('compositionend', onCompositionEnd)
     }
-  }, [onKeydown, state.isTyping])
+  }, [onKeydown, onImeText, state.isTyping])
 
   return <></>
 }
