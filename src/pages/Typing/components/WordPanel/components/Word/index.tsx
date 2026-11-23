@@ -22,7 +22,7 @@ import {
   wordDictationConfigAtom,
 } from '@/store'
 import type { Word } from '@/typings'
-import { CTRL, getUtcStringForMixpanel } from '@/utils'
+import { CTRL, getUtcStringForMixpanel, isImeText, straightenQuotes } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
@@ -50,6 +50,21 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const currentChapter = useAtomValue(currentChapterAtom)
 
   const [showTipAlert, setShowTipAlert] = useState(false)
+  const [showImeTip, setShowImeTip] = useState(false)
+  const imeTipTimerRef = useRef<number>()
+  // These languages are typed in Latin or ASCII. A CJK IME character is noise
+  // unless the word itself asks for that character. Chinese and Japanese answers are not in this set.
+  const guardImeNoise = currentLanguage === 'en' || currentLanguage === 'de' || currentLanguage === 'romaji' || currentLanguage === 'code'
+
+  const showImeTipForAWhile = useCallback(() => {
+    setShowImeTip(true)
+    window.clearTimeout(imeTipTimerRef.current)
+    imeTipTimerRef.current = window.setTimeout(() => setShowImeTip(false), 4000)
+  }, [])
+
+  useEffect(() => {
+    return () => window.clearTimeout(imeTipTimerRef.current)
+  }, [])
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
   const saveWordRecordRef = useRef(saveWordRecord)
   saveWordRecordRef.current = saveWordRecord
@@ -148,6 +163,31 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
       }
     },
     [wordState.hasWrong, setWordState],
+  )
+
+  const handleUpdateInput = useCallback(
+    (action: WordUpdateAction) => {
+      if (action.type !== 'add' || !guardImeNoise) {
+        updateInput(action)
+        return
+      }
+
+      // Curly quotes still complete don't / it's. Other IME text is not a mistake.
+      const value = straightenQuotes(action.value)
+      if (isImeText(value)) {
+        const start = wordState.inputWord.length
+        const expected = wordState.displayWord.slice(start, start + value.length)
+        const same = isIgnoreCase ? expected.toLowerCase() === value.toLowerCase() : expected === value
+        if (!same) {
+          showImeTipForAWhile()
+          return
+        }
+      }
+
+      setShowImeTip(false)
+      updateInput(value === action.value ? action : { ...action, value })
+    },
+    [guardImeNoise, isIgnoreCase, showImeTipForAWhile, updateInput, wordState.displayWord, wordState.inputWord.length],
   )
 
   const handleHoverWord = useCallback((checked: boolean) => {
@@ -331,7 +371,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
 
   return (
     <>
-      <InputHandler updateInput={updateInput} />
+      <InputHandler updateInput={handleUpdateInput} onImeText={showImeTipForAWhile} />
       <div
         lang={currentLanguageCategory !== 'code' ? currentLanguageCategory : 'en'}
         className="flex flex-col items-center justify-center pb-1 pt-4"
@@ -362,6 +402,13 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         </div>
       </div>
       <TipAlert className="fixed bottom-10 right-3" show={showTipAlert} setShow={setShowTipAlert} />
+      <TipAlert
+        className="fixed bottom-10 left-4"
+        show={showImeTip}
+        setShow={setShowImeTip}
+        title="请关闭输入法"
+        description="这次输入已忽略，不计错，练习也不会暂停。"
+      />
     </>
   )
 }

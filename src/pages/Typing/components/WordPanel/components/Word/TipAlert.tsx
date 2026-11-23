@@ -7,9 +7,17 @@ export type ITipAlert = {
   className?: string
   show: boolean
   setShow: (show: boolean) => void
+  title?: string
+  description?: string
 }
 
-export const TipAlert: FC<ITipAlert> = ({ className, show, setShow }) => {
+export const TipAlert: FC<ITipAlert> = ({
+  className,
+  show,
+  setShow,
+  title = '插件冲突！',
+  description = '如果多次输入失败，可能是与本地浏览器插件冲突，请关闭相关插件或切换浏览器试试',
+}) => {
   const onClose = useCallback(() => {
     setShow(false)
   }, [setShow])
@@ -20,8 +28,8 @@ export const TipAlert: FC<ITipAlert> = ({ className, show, setShow }) => {
         <div className={`alert z-10 w-fit cursor-pointer pr-5 ${className}`} onClick={onClose}>
           <Alert variant="destructive" className="relative">
             <PhWarning className="h-4 w-4" />
-            <AlertTitle>插件冲突！</AlertTitle>
-            <AlertDescription>如果多次输入失败，可能是与本地浏览器插件冲突，请关闭相关插件或切换浏览器试试</AlertDescription>
+            <AlertTitle>{title}</AlertTitle>
+            <AlertDescription>{description}</AlertDescription>
           </Alert>
         </div>
       )}

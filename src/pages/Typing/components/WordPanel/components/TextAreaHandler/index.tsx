@@ -45,9 +45,6 @@ export default function TextAreaHandler({ updateInput }: { updateInput: (updateO
       spellCheck="false"
       onInput={onInput}
       onBlur={onBlur}
-      onCompositionStart={() => {
-        alert('您正在使用输入法，请关闭输入法。')
-      }}
     ></textarea>
   )
 }

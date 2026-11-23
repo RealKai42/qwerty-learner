@@ -5,23 +5,25 @@ import { useAtomValue } from 'jotai'
 import type { FormEvent } from 'react'
 import { useMemo } from 'react'
 
-export default function InputHandler({ updateInput }: { updateInput: (updateObj: WordUpdateAction) => void }) {
+export default function InputHandler({
+  updateInput,
+  onImeText,
+}: {
+  updateInput: (updateObj: WordUpdateAction) => void
+  onImeText?: () => void
+}) {
   const dictInfo = useAtomValue(currentDictInfoAtom)
 
   const handler = useMemo(() => {
     switch (dictInfo.language) {
       case 'en':
-        return <KeyEventHandler updateInput={updateInput} />
       case 'de':
-        return <KeyEventHandler updateInput={updateInput} />
       case 'romaji':
-        return <KeyEventHandler updateInput={updateInput} />
-      case 'code':
-        return <TextAreaHandler updateInput={updateInput} />
+        return <KeyEventHandler updateInput={updateInput} onImeText={onImeText} />
       default:
         return <TextAreaHandler updateInput={updateInput} />
     }
-  }, [dictInfo.language, updateInput])
+  }, [dictInfo.language, onImeText, updateInput])
 
   return <>{handler}</>
 }
