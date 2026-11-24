@@ -9,7 +9,7 @@ import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
-import { useCallback, useContext, useMemo, useState } from 'react'
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export default function WordPanel() {
@@ -20,6 +20,10 @@ export default function WordPanel() {
   const [wordComponentKey, setWordComponentKey] = useState(0)
   const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
+  // Looping the same word keeps this index. Skip, previous, and a new chapter do not.
+  useEffect(() => {
+    setCurrentWordExerciseCount(0)
+  }, [state.chapterData.index, state.chapterData.words])
   const currentWord = state.chapterData.words[state.chapterData.index]
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
 
