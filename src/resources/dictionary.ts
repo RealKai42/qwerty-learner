@@ -760,6 +760,41 @@ const internationalExam: DictionaryResource[] = [
     languageCategory: 'en',
   },
   {
+    id: 'ielts-leonwang-22',
+    name: 'Leon Wang 雅思词汇（22章）',
+    description: 'Leon Wang 雅思词表，按原网站 22 个主题章节整理',
+    category: '国际考试',
+    tags: ['IELTS'],
+    url: '/dicts/IELTS_LeonWang.json',
+    length: 3568,
+    language: 'en',
+    languageCategory: 'en',
+    chapters: [
+      { title: '时间与存在', length: 227 },
+      { title: '植物研究', length: 130 },
+      { title: '动物保护', length: 168 },
+      { title: '太空探索', length: 70 },
+      { title: '学校教育', length: 401 },
+      { title: '科技文明', length: 122 },
+      { title: '文化历史', length: 79 },
+      { title: '语言演化', length: 68 },
+      { title: '文化娱乐', length: 175 },
+      { title: '物品材料', length: 135 },
+      { title: '时尚潮流', length: 91 },
+      { title: '饮食健康', length: 172 },
+      { title: '建筑场所', length: 132 },
+      { title: '交通旅行', length: 139 },
+      { title: '国家政府', length: 135 },
+      { title: '社会经济', length: 171 },
+      { title: '法律法规', length: 101 },
+      { title: '沙场争锋', length: 186 },
+      { title: '社会角色', length: 124 },
+      { title: '行为动作', length: 268 },
+      { title: '身心健康', length: 417 },
+      { title: '时间日期', length: 57 },
+    ],
+  },
+  {
     id: 'ielts',
     name: 'IELTS',
     description: '雅思词库',
@@ -4334,7 +4369,7 @@ export const dictionaryResources: DictionaryResource[] = [
 
 export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({
   ...resource,
-  chapterCount: calcChapterCount(resource.length),
+  chapterCount: resource.chapters?.length ?? calcChapterCount(resource.length),
 }))
 
 /**
