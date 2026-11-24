@@ -9,6 +9,9 @@ export type PhoneticProps = {
 function Phonetic({ word }: PhoneticProps) {
   const phoneticConfig = useAtomValue(phoneticConfigAtom)
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
+  // owe's American phonetic is the single letter "o". Empty values stay hidden.
+  const usphone = word.usphone?.trim()
+  const ukphone = word.ukphone?.trim()
 
   return (
     <div
@@ -16,8 +19,8 @@ function Phonetic({ word }: PhoneticProps) {
         isTextSelectable && 'select-text'
       }`}
     >
-      {phoneticConfig.type === 'us' && word.usphone && word.usphone.length > 1 && <span>{`AmE: [${word.usphone}]`}</span>}
-      {phoneticConfig.type === 'uk' && word.ukphone && word.ukphone.length > 1 && <span>{`BrE: [${word.ukphone}]`}</span>}
+      {phoneticConfig.type === 'us' && usphone && <span>{`AmE: [${usphone}]`}</span>}
+      {phoneticConfig.type === 'uk' && ukphone && <span>{`BrE: [${ukphone}]`}</span>}
     </div>
   )
 }
