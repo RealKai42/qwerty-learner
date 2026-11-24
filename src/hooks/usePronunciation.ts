@@ -22,7 +22,12 @@ function spokenWord(word: string): string {
     if (/[A-Za-z]/.test(before) && /[A-Za-z]/.test(after)) return marks
     return ''
   })
-  return withoutLooseQuotes.replace(/\s+/g, ' ').trim()
+  // Youdao rejects a space before ! or ?. "goodbye !" and "Auf Wiedersehen !"
+  // return 500. "goodbye!" and "Auf Wiedersehen!" return 200.
+  return withoutLooseQuotes
+    .replace(/\s+/g, ' ')
+    .replace(/ ([!?])/g, '$1')
+    .trim()
 }
 
 export function generateWordSoundSrc(word: string, pronunciation: Exclude<PronunciationType, false>): string {
