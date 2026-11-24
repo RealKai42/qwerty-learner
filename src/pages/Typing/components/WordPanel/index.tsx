@@ -26,15 +26,6 @@ export default function WordPanel() {
   const setReviewModeInfo = useSetAtom(reviewModeInfoAtom)
   const isReviewMode = useAtomValue(isReviewModeAtom)
 
-  const prevIndex = useMemo(() => {
-    const newIndex = state.chapterData.index - 1
-    return newIndex < 0 ? 0 : newIndex
-  }, [state.chapterData.index])
-  const nextIndex = useMemo(() => {
-    const newIndex = state.chapterData.index + 1
-    return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
-  }, [state.chapterData.index, state.chapterData.words.length])
-
   usePrefetchPronunciationSound(nextWord?.name)
 
   const reloadCurrentWordComponent = useCallback(() => {
@@ -92,15 +83,9 @@ export default function WordPanel() {
 
   const onSkipWord = useCallback(
     (type: 'prev' | 'next') => {
-      if (type === 'prev') {
-        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: prevIndex })
-      }
-
-      if (type === 'next') {
-        dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex: nextIndex })
-      }
+      dispatch({ type: TypingStateActionType.STEP_WORD, direction: type })
     },
-    [dispatch, prevIndex, nextIndex],
+    [dispatch],
   )
 
   useHotkeys(

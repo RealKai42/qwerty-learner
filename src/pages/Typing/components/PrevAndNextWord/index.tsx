@@ -20,9 +20,8 @@ export default function PrevAndNextWord({ type }: LastAndNextWordProps) {
   const onClickWord = useCallback(() => {
     if (!word) return
 
-    if (type === 'prev') dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
-    if (type === 'next') dispatch({ type: TypingStateActionType.SKIP_2_WORD_INDEX, newIndex })
-  }, [type, dispatch, newIndex, word])
+    dispatch({ type: TypingStateActionType.STEP_WORD, direction: type })
+  }, [type, dispatch, word])
 
   const headWord = useMemo(() => {
     if (!word) return ''

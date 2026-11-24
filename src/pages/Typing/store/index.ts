@@ -48,7 +48,7 @@ export enum TypingStateActionType {
   FINISH_CHAPTER = 'FINISH_CHAPTER',
   INCREASE_WRONG_WORD = 'INCREASE_WRONG_WORD',
   SKIP_WORD = 'SKIP_WORD',
-  SKIP_2_WORD_INDEX = 'SKIP_2_WORD_INDEX',
+  STEP_WORD = 'STEP_WORD',
   REPEAT_CHAPTER = 'REPEAT_CHAPTER',
   NEXT_CHAPTER = 'NEXT_CHAPTER',
   TOGGLE_WORD_VISIBLE = 'TOGGLE_WORD_VISIBLE',
@@ -77,7 +77,7 @@ export type TypingStateAction =
   | { type: TypingStateActionType.LOOP_CURRENT_WORD }
   | { type: TypingStateActionType.FINISH_CHAPTER }
   | { type: TypingStateActionType.SKIP_WORD }
-  | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
+  | { type: TypingStateActionType.STEP_WORD; direction: 'prev' | 'next' }
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
   | { type: TypingStateActionType.NEXT_CHAPTER }
   | { type: TypingStateActionType.TOGGLE_TRANS_VISIBLE }
@@ -164,13 +164,18 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
       state.isShowSkip = false
       break
     }
-    case TypingStateActionType.SKIP_2_WORD_INDEX: {
-      const newIndex = action.newIndex
-      if (newIndex >= state.chapterData.words.length) {
+    case TypingStateActionType.STEP_WORD: {
+      // Move from the index at this dispatch. A rendered "next index" stays
+      // put on the last word, and a second press before paint repeats it.
+      const delta = action.direction === 'next' ? 1 : -1
+      const newIndex = state.chapterData.index + delta
+      if (action.direction === 'next' && newIndex >= state.chapterData.words.length) {
         state.isTyping = false
         state.isFinished = true
+      } else if (newIndex >= 0 && newIndex < state.chapterData.words.length) {
+        state.chapterData.index = newIndex
       }
-      state.chapterData.index = newIndex
+      state.isShowSkip = false
       break
     }
     case TypingStateActionType.REPEAT_CHAPTER: {
