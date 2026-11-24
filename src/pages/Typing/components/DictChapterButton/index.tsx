@@ -35,7 +35,9 @@ export const DictChapterButton = () => {
               onKeyDown={handleKeyDown}
               className="rounded-lg px-3 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
             >
-              第 {currentChapter + 1} 章
+              {currentDictInfo.chapters?.[currentChapter]?.title
+                ? `第 ${currentChapter + 1} 章 · ${currentDictInfo.chapters[currentChapter].title}`
+                : `第 ${currentChapter + 1} 章`}
             </Listbox.Button>
             <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
               <Listbox.Options className="listbox-options z-10 w-32">
@@ -48,7 +50,7 @@ export const DictChapterButton = () => {
                             <IconCheck className="focus:outline-none" />
                           </span>
                         ) : null}
-                        <span>第 {index + 1} 章</span>
+                        <span>{currentDictInfo.chapters?.[index]?.title ? `第 ${index + 1} 章 · ${currentDictInfo.chapters[index].title}` : `第 ${index + 1} 章`}</span>
                       </div>
                     )}
                   </Listbox.Option>
