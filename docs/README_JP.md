@@ -286,7 +286,7 @@ JS API は [react-code-game](https://github.com/webzhd/react-code-game) から�
 
 プロジェクトの初期段階でアイデアを議論し、提案を提供し、時折プッシュしてくれた友人たちにも感謝します。彼らがいなければ、このアイデアはさらに 1 年遅れることになったかもしれません（🐶
 
-[Pear Mini](https://github.com/pearmini) に感謝します。最初にアイデアを議論し、プロジェクトにサポートを提供してくれました。また、彼のプロジェクトは、学生のアイデアでもクールなものになることを信じさせてくれました。彼の [Gossip](https://github.com/pearmini/gossip) プロジェクトは次世代のプレゼンテーションツールです！
+[Pear Mini](https://github.com/pearmini) に感謝します。最初にアイデアを議論し、プロジェクトにサポートを提供してくれました。また、彼のプロジェクトは、学生のアイデアでもクールなものになることを信じさせてくれました。彼の [Gossip](https://github.com/gossip-ink/gossip) プロジェクトは次世代のプレゼンテーションツールです！
 
 [AZ](https://github.com/sailist) に感謝します。アイデアを実現するように励ましてくれました（ただし、私はまだしばらく遅れました）。彼の無比の行動力は私に影響を与えました。彼は非常にクールなライブラリメーカーであり、多くの優れた Python パッケージを作成しています。たとえば、中国語音声認識のフレームワーク [ASRFrame](https://github.com/sailist/ASRFrame) などです。
 
