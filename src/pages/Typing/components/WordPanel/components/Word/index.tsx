@@ -17,6 +17,7 @@ import {
   currentChapterAtom,
   currentDictInfoAtom,
   isIgnoreCaseAtom,
+  isKunreiShikiEnabledAtom,
   isShowAnswerOnHoverAtom,
   isTextSelectableAtom,
   pronunciationIsOpenAtom,
@@ -25,6 +26,7 @@ import {
 import type { Word } from '@/typings'
 import { CTRL, getUtcStringForMixpanel, isImeText, straightenQuotes } from '@/utils'
 import { useSaveWordRecord } from '@/utils/db'
+import { hepburnToKunreiShiki } from '@/utils/kana'
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
@@ -49,6 +51,8 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const currentLanguageCategory = useAtomValue(currentDictInfoAtom).languageCategory
   const currentChapter = useAtomValue(currentChapterAtom)
+  // 日语训令式拼写模式下, 目标拼写由默认的黑本式转换为训令式
+  const isKunreiShikiEnabled = useAtomValue(isKunreiShikiEnabledAtom)
 
   const [showTipAlert, setShowTipAlert] = useState(false)
   const [showImeTip, setShowImeTip] = useState(false)
@@ -128,6 +132,9 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     try {
       headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
       headword = headword.replace(new RegExp('…', 'g'), '..')
+      if (isKunreiShikiEnabled && currentLanguage === 'romaji') {
+        headword = hepburnToKunreiShiki(headword)
+      }
     } catch (e) {
       console.error('word.name is not a string', word)
       headword = ''
@@ -139,7 +146,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
     newWordState.startTime = getUtcStringForMixpanel()
     newWordState.randomLetterVisible = headword.split('').map(() => Math.random() > 0.4)
     setWordState(newWordState)
-  }, [word, setWordState])
+  }, [word, setWordState, isKunreiShikiEnabled, currentLanguage])
 
   const updateInput = useCallback(
     (updateAction: WordUpdateAction) => {
