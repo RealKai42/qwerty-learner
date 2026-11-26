@@ -4,6 +4,7 @@ import PrevAndNextWord from '../PrevAndNextWord'
 import Progress from '../Progress'
 import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
+import WordExtras from './components/WordExtras'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
 import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
@@ -149,7 +150,7 @@ export default function WordPanel() {
       </div>
       <div className="container flex flex-grow flex-col items-center justify-center">
         {currentWord && (
-          <div className="relative flex w-full justify-center">
+          <div className="relative flex w-full flex-col items-center">
             {!state.isTyping && (
               <div className="absolute flex h-full w-full justify-center">
                 <div className="z-10 flex w-full items-center backdrop-blur-sm">
@@ -169,6 +170,7 @@ export default function WordPanel() {
                 onMouseLeave={() => handleShowTranslation(false)}
               />
             </div>
+            <WordExtras word={currentWord} nextWord={nextWord} showTrans={shouldShowTranslation} />
           </div>
         )}
       </div>
