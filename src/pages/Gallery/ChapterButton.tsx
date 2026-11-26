@@ -4,7 +4,7 @@ import type React from 'react'
 import { useEffect, useRef } from 'react'
 import IconCheckCircle from '~icons/heroicons/check-circle-solid'
 
-export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, wordCount, onClick }) => {
+export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, wordCount, title, onClick }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
 
   const entry = useIntersectionObserver(buttonRef, {})
@@ -29,7 +29,7 @@ export const ChapterButton: React.FC<ChapterButtonProps> = ({ index, selected, w
       onClick={onClick}
       title="选择章节"
     >
-      <p className="w-full pb-2 text-lg text-gray-800 dark:text-white dark:text-opacity-80">Chapter {index + 1}</p>
+      <p className="w-full truncate pb-2 text-lg text-gray-800 dark:text-white dark:text-opacity-80" title={title}>Chapter {index + 1}{title ? ' · ' + title : ''}</p>
       <p className="text-xs font-medium text-gray-600 dark:text-white dark:text-opacity-60">单词数: {wordCount}</p>
       {chapterStatus !== null && (
         <>
@@ -63,5 +63,6 @@ export type ChapterButtonProps = {
   index: number
   selected: boolean
   wordCount: number
+  title?: string
   onClick: () => void
 }

@@ -117,6 +117,7 @@ export default function DictDetail({ dictionary: dict }: { dictionary: Dictionar
                     index={index}
                     checked={chapter === index}
                     dictID={dict.id}
+                    title={dict.chapters?.[index]?.title}
                     onChange={onChangeChapter}
                   />
                 ))}

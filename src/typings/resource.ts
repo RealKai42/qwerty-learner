@@ -1,5 +1,10 @@
 import type { LanguageCategoryType, LanguageType, PronunciationType } from '.'
 
+export type DictionaryChapter = {
+  title: string
+  length: number
+}
+
 export type DictionaryResource = {
   id: string
   name: string
@@ -10,6 +15,7 @@ export type DictionaryResource = {
   length: number
   language: LanguageType
   languageCategory: LanguageCategoryType
+  chapters?: DictionaryChapter[]
   //override default pronunciation when not undefined
   defaultPronIndex?: number
 }

@@ -35,7 +35,11 @@ export function useWordList(): UseWordListResult {
     } else if (isReviewMode) {
       newWords = reviewRecord?.words ?? []
     } else if (wordList) {
-      newWords = wordList.slice(currentChapter * CHAPTER_LENGTH, (currentChapter + 1) * CHAPTER_LENGTH)
+      const chapterStart = currentDictInfo.chapters
+        ? currentDictInfo.chapters.slice(0, currentChapter).reduce((total, chapter) => total + chapter.length, 0)
+        : currentChapter * CHAPTER_LENGTH
+      const chapterLength = currentDictInfo.chapters?.[currentChapter]?.length ?? CHAPTER_LENGTH
+      newWords = wordList.slice(chapterStart, chapterStart + chapterLength)
     } else {
       newWords = []
     }
@@ -56,7 +60,7 @@ export function useWordList(): UseWordListResult {
         trans,
       }
     })
-  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter])
+  }, [isFirstChapter, isReviewMode, wordList, reviewRecord?.words, currentChapter, currentDictInfo])
 
   return { words, isLoading, error }
 }
