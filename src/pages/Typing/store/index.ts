@@ -18,7 +18,7 @@ export const initialState: TypingState = {
   },
   timerData: {
     time: 0,
-    accuracy: 0,
+    accuracy: 100,
     wpm: 0,
   },
   isTyping: false,
@@ -199,14 +199,13 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.TICK_TIMER: {
       const increment = action.addTime === undefined ? 1 : action.addTime
       const newTime = state.timerData.time + increment
-      const inputSum =
-        state.chapterData.correctCount + state.chapterData.wrongCount === 0
-          ? 1
-          : state.chapterData.correctCount + state.chapterData.wrongCount
+      const typedCount = state.chapterData.correctCount + state.chapterData.wrongCount
 
       state.timerData.time = newTime
-      state.timerData.accuracy = Math.round((state.chapterData.correctCount / inputSum) * 100)
-      state.timerData.wpm = Math.round((state.chapterData.wordCount / newTime) * 60)
+      // No keystrokes is not a miss. Dividing 0 by a stand-in 1 showed 0%.
+      state.timerData.accuracy = typedCount === 0 ? 100 : Math.round((state.chapterData.correctCount / typedCount) * 100)
+      // The chapter can end before the first second. Dividing by zero is NaN.
+      state.timerData.wpm = newTime === 0 ? 0 : Math.round((state.chapterData.wordCount / newTime) * 60)
       break
     }
     case TypingStateActionType.ADD_WORD_RECORD_ID: {
